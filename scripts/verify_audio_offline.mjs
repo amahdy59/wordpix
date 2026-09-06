@@ -1,7 +1,7 @@
 import { chromium, expect } from "@playwright/test";
 import assert from "node:assert/strict";
 
-// Read-only production check: plays one clip, verifies persisted bytes, reloads
+// Isolated guest check: plays one clip, verifies persisted bytes, reloads
 // to clear the in-memory audio cache, then plays the same clip without a network.
 // Optional second URL serves a local build under the first URL's browser origin.
 // Service workers are blocked to prove IndexedDB playback independently of CacheStorage.
@@ -38,9 +38,9 @@ try {
   page.on("console", (message) => {
     if (message.type() === "error") console.error(message.text());
   });
-  await page.goto(`${baseURL.replace(/\/$/, "")}/#/learn/bathroom/study/learn`);
-  const reveal = () => page.getByRole("button", { name: /^Reveal Word/ }).click();
-  await reveal();
+  await page.goto(`${baseURL.replace(/\/$/, "")}/#/learn/bathroom/study/learn/learn-essential`);
+  const play = () => page.getByRole("button", { name: "Listen to Toilet", exact: true }).click();
+  await play();
   await page.waitForFunction(() => window.audioEvidence.some((url) => url.startsWith("https:")));
   const url = await page.evaluate(() =>
     window.audioEvidence.find((url) => url.startsWith("https:"))
@@ -72,9 +72,12 @@ try {
     .toBeGreaterThan(0);
   console.log("PASS: CDN clip played and nonempty audio persisted in IndexedDB.", url);
   await page.reload();
-  await page.getByRole("button", { name: /^Reveal Word/ }).waitFor();
+  await page.getByRole("button", { name: "Listen to Toilet", exact: true }).waitFor();
   await context.setOffline(true);
-  await reveal();
+  await page
+    .getByRole("combobox", { name: "Toilet learning status", exact: true })
+    .selectOption("review");
+  await play();
   await page
     .waitForFunction(() => window.audioEvidence.some((url) => url.startsWith("blob:")))
     .catch(async (error) => {
@@ -90,6 +93,12 @@ try {
   assert(played.some((url) => url.startsWith("blob:")));
   assert(!played.some((url) => url.startsWith("https:")));
   console.log("PASS: after reload, the app played the persisted clip offline through a blob URL.");
+  await context.setOffline(false);
+  await page.reload();
+  await expect(
+    page.getByRole("combobox", { name: "Toilet learning status", exact: true })
+  ).toHaveValue("review");
+  console.log("PASS: a guest study status saved offline survived reconnection and reload.");
 } finally {
   await browser.close();
 }

@@ -18,11 +18,13 @@ import { ReadyCelebration } from "../onboarding/ReadyCelebration";
 // Synchronous core tab views
 import { HomeDashboard } from "../core/HomeDashboard";
 import { ExploreWorlds } from "../core/ExploreWorlds";
-import { ReviewMasteryReview } from "../review/ReviewMasteryReview";
 import { ProfileStats } from "../core/ProfileStats";
 import { SkillExerciseHub } from "../core/SkillExerciseHub";
 
 // Lazy-loaded lesson and exercise screens
+const ReviewMasteryReview = lazy(() =>
+  import("../review/ReviewMasteryReview").then((m) => ({ default: m.ReviewMasteryReview }))
+);
 const LessonWorldEntry = lazy(() =>
   import("../lesson/LessonWorldEntry").then((m) => ({ default: m.LessonWorldEntry }))
 );
