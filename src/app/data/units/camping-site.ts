@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tɛnt/",
     cefr: "A2",
     img: "/word-images/camping-site/tent.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A temporary shelter made from fabric and supported by poles.",
     topic: "camping-site",
   },
   {
@@ -22,7 +21,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsliːpɪŋ bæɡ/",
     cefr: "B1",
     img: "/word-images/camping-site/sleeping-bag.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A warm padded bag used for sleeping outdoors.",
     topic: "camping-site",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɛər ˈmætrɪs/",
     cefr: "B1",
     img: "/word-images/camping-site/air-mattress.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A soft inflatable mattress used for sleeping.",
     topic: "camping-site",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tɑːrp/",
     cefr: "A2",
     img: "/word-images/camping-site/tarp.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A waterproof sheet placed over or beside a tent for protection.",
     topic: "camping-site",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhæmək/",
     cefr: "A2",
     img: "/word-images/camping-site/hammock.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A hanging bed made from fabric or netting.",
     topic: "camping-site",
   },
   {
@@ -58,7 +57,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tɛnt poʊl/",
     cefr: "B1",
     img: "/word-images/camping-site/tent-pole.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long support used to hold up part of a tent.",
     topic: "camping-site",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tɛnt pɛɡ/",
     cefr: "B1",
     img: "/word-images/camping-site/tent-peg.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small pointed piece used to fasten a tent to the ground.",
     topic: "camping-site",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/reɪn flaɪ/",
     cefr: "B1",
     img: "/word-images/camping-site/rain-fly.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A waterproof cover placed over a tent to keep out rain.",
     topic: "camping-site",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɡraʊndˌʃiːt/",
     cefr: "B1",
     img: "/word-images/camping-site/groundsheet.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sheet placed under a tent to protect its floor.",
     topic: "camping-site",
   },
   {
@@ -103,7 +102,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkæmpˌfaɪər/",
     cefr: "A2",
     img: "/word-images/camping-site/campfire.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An outdoor fire built for warmth, cooking, or light.",
     topic: "camping-site",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfaɪərˌwʊd/",
     cefr: "A2",
     img: "/word-images/camping-site/firewood.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Pieces of dry wood used as fuel for a fire.",
     topic: "camping-site",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmætʃɪz/",
     cefr: "A2",
     img: "/word-images/camping-site/matches.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Small sticks used to make a flame.",
     topic: "camping-site",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlaɪtər/",
     cefr: "A2",
     img: "/word-images/camping-site/lighter.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small tool that produces a flame for lighting things.",
     topic: "camping-site",
   },
   {
@@ -139,7 +138,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡrɪl/",
     cefr: "A2",
     img: "/word-images/camping-site/grill.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A metal surface used for cooking over a fire.",
     topic: "camping-site",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kæmp stoʊv/",
     cefr: "B1",
     img: "/word-images/camping-site/camp-stove.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small portable stove used for cooking outdoors.",
     topic: "camping-site",
   },
   {
@@ -157,7 +156,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkuːlər/",
     cefr: "A2",
     img: "/word-images/camping-site/cooler.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An insulated container used to keep food and drinks cold.",
     topic: "camping-site",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɔːtər dʒʌɡ/",
     cefr: "B1",
     img: "/word-images/camping-site/water-jug.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large container used for carrying drinking water.",
     topic: "camping-site",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈθɜːrməs/",
     cefr: "A2",
     img: "/word-images/camping-site/thermos.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A container that keeps a drink hot or cold for hours.",
     topic: "camping-site",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkæmpɪŋ pɒt/",
     cefr: "B1",
     img: "/word-images/camping-site/camping-pot.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A strong container used for cooking over a fire.",
     topic: "camping-site",
   },
   {
@@ -193,7 +192,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌmɑːrʃˈmæloʊ/",
     cefr: "B1",
     img: "/word-images/camping-site/marshmallow.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A soft sweet food that becomes sticky when heated.",
     topic: "camping-site",
   },
   {
@@ -202,7 +201,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈskjuːər/",
     cefr: "A2",
     img: "/word-images/camping-site/skewer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A pointed stick used for holding food over a fire.",
     topic: "camping-site",
   },
   {
@@ -211,7 +210,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkʌmpəs/",
     cefr: "A2",
     img: "/word-images/camping-site/compass.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool used to find directions with a magnetic needle.",
     topic: "camping-site",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/mæp/",
     cefr: "A2",
     img: "/word-images/camping-site/map.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A drawing that shows places, routes, and geographical features.",
     topic: "camping-site",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌdʒiːpiːˈɛs dɪˈvaɪs/",
     cefr: "B1",
     img: "/word-images/camping-site/gps-device.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An electronic device that uses satellites to show a location.",
     topic: "camping-site",
   },
   {
@@ -238,7 +237,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈflæʃˌlaɪt/",
     cefr: "B1",
     img: "/word-images/camping-site/flashlight.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small battery-powered light.",
     topic: "camping-site",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhɛdˌlæmp/",
     cefr: "A2",
     img: "/word-images/camping-site/headlamp.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A light worn on the head so both hands remain free.",
     topic: "camping-site",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlæntərn/",
     cefr: "A2",
     img: "/word-images/camping-site/lantern.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A portable lamp used for light while camping.",
     topic: "camping-site",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɪˈnɒkjʊlərz/",
     cefr: "B1",
     img: "/word-images/camping-site/binoculars.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An instrument used for seeing distant objects more clearly.",
     topic: "camping-site",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɪsəl/",
     cefr: "A2",
     img: "/word-images/camping-site/whistle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small object blown to make a loud signal.",
     topic: "camping-site",
   },
   {
@@ -283,7 +282,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɪɡnəl ˈmɪrər/",
     cefr: "B1",
     img: "/word-images/camping-site/signal-mirror.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A reflective object used to send a signal with sunlight.",
     topic: "camping-site",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/treɪl ˈmɑːrkər/",
     cefr: "B1",
     img: "/word-images/camping-site/trail-marker.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sign or object that marks a route or location.",
     topic: "camping-site",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhaɪkɪŋ buːts/",
     cefr: "B1",
     img: "/word-images/camping-site/hiking-boots.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Strong shoes designed for walking on rough ground.",
     topic: "camping-site",
   },
   {
@@ -319,7 +318,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɔːkɪŋ stɪk/",
     cefr: "B1",
     img: "/word-images/camping-site/walking-stick.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A stick used for support while walking.",
     topic: "camping-site",
   },
   {
@@ -328,7 +327,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɔːtər ˈbɒtəl/",
     cefr: "B1",
     img: "/word-images/camping-site/water-bottle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A container used for carrying drinking water.",
     topic: "camping-site",
   },
   {
@@ -337,7 +336,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɒkɪt naɪf/",
     cefr: "B1",
     img: "/word-images/camping-site/pocket-knife.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small folding tool with a sharp blade.",
     topic: "camping-site",
   },
   {
@@ -346,7 +345,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/roʊp/",
     cefr: "A2",
     img: "/word-images/camping-site/rope.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A strong cord used for tying or securing things.",
     topic: "camping-site",
   },
   {
@@ -355,7 +354,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌkærəˈbiːnər/",
     cefr: "A2",
     img: "/word-images/camping-site/carabiner.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A metal clip used to connect climbing equipment or ropes.",
     topic: "camping-site",
   },
   {
@@ -364,7 +363,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/draɪ bæɡ/",
     cefr: "B1",
     img: "/word-images/camping-site/dry-bag.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A waterproof bag used to keep items dry.",
     topic: "camping-site",
   },
   {
@@ -373,7 +372,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fɜːrst eɪd kɪt/",
     cefr: "B2",
     img: "/word-images/camping-site/first-aid-kit.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A collection of supplies for treating injuries.",
     topic: "camping-site",
   },
   {
@@ -382,7 +381,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsʌnˌskriːn/",
     cefr: "A2",
     img: "/word-images/camping-site/sunscreen.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A cream that protects skin from the sun.",
     topic: "camping-site",
   },
   {
@@ -391,7 +390,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/treɪl/",
     cefr: "A2",
     img: "/word-images/camping-site/trail.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A path through a natural area for walking.",
     topic: "camping-site",
   },
   {
@@ -400,7 +399,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈrɪvər/",
     cefr: "A2",
     img: "/word-images/camping-site/river.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A natural flow of water moving through the land.",
     topic: "camping-site",
   },
   {
@@ -409,7 +408,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɔːtərˌfɔːl/",
     cefr: "A2",
     img: "/word-images/camping-site/waterfall.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Water falling from a high place to a lower one.",
     topic: "camping-site",
   },
   {
@@ -418,7 +417,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmaʊntɪn/",
     cefr: "A2",
     img: "/word-images/camping-site/mountain.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A high area of land with steep slopes.",
     topic: "camping-site",
   },
   {
@@ -427,7 +426,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈvæli/",
     cefr: "A2",
     img: "/word-images/camping-site/valley.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Low land between hills or mountains.",
     topic: "camping-site",
   },
   {
@@ -436,7 +435,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/paɪn triː/",
     cefr: "B1",
     img: "/word-images/camping-site/pine-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tall evergreen tree with thin needle-like leaves.",
     topic: "camping-site",
   },
   {
@@ -445,7 +444,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwaɪldˌflaʊər/",
     cefr: "B1",
     img: "/word-images/camping-site/wildflower.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A wild flower that grows without being planted.",
     topic: "camping-site",
   },
   {
@@ -454,7 +453,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmʌʃruːm/",
     cefr: "A2",
     img: "/word-images/camping-site/mushroom.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A living organism with a cap and stem, often found in soil.",
     topic: "camping-site",
   },
   {
@@ -463,7 +462,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/rɒk/",
     cefr: "A2",
     img: "/word-images/camping-site/rock.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A hard natural material found on the ground.",
     topic: "camping-site",
   },
   {
@@ -472,7 +471,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/klɪf/",
     cefr: "A2",
     img: "/word-images/camping-site/cliff.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A steep wall of rock or earth.",
     topic: "camping-site",
   },
   {
@@ -481,7 +480,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɛdoʊ/",
     cefr: "A2",
     img: "/word-images/camping-site/meadow.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An open area of grass, often surrounded by trees.",
     topic: "camping-site",
   },
   {
@@ -490,7 +489,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/leɪk/",
     cefr: "A2",
     img: "/word-images/camping-site/lake.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large area of water surrounded by land.",
     topic: "camping-site",
   },
   {
@@ -499,7 +498,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhaɪkɪŋ/",
     cefr: "A2",
     img: "/word-images/camping-site/hiking.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Walking for a long distance in the countryside.",
     topic: "camping-site",
   },
   {
@@ -508,7 +507,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfɪʃɪŋ/",
     cefr: "A2",
     img: "/word-images/camping-site/fishing.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Catching fish as a sport or activity.",
     topic: "camping-site",
   },
   {
@@ -517,7 +516,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈswɪmɪŋ/",
     cefr: "A2",
     img: "/word-images/camping-site/swimming.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Moving through water for exercise or pleasure.",
     topic: "camping-site",
   },
   {
@@ -526,7 +525,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kəˈnuːɪŋ/",
     cefr: "A2",
     img: "/word-images/camping-site/canoeing.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Travelling on water in a narrow boat moved with a paddle.",
     topic: "camping-site",
   },
   {
@@ -535,7 +534,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɜːrd ˈwɒtʃɪŋ/",
     cefr: "B1",
     img: "/word-images/camping-site/bird-watching.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Watching birds to identify and enjoy them.",
     topic: "camping-site",
   },
   {
@@ -544,7 +543,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/stɑːr ˈɡeɪzɪŋ/",
     cefr: "B1",
     img: "/word-images/camping-site/star-gazing.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Looking at stars in the night sky.",
     topic: "camping-site",
   },
   {
@@ -553,7 +552,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fəˈtɒɡrəfi/",
     cefr: "B1",
     img: "/word-images/camping-site/photography.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Taking pictures with a camera.",
     topic: "camping-site",
   },
   {
@@ -562,7 +561,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/rɒk ˈklaɪmɪŋ/",
     cefr: "B1",
     img: "/word-images/camping-site/rock-climbing.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Climbing natural rock surfaces as a sport.",
     topic: "camping-site",
   },
   {
@@ -571,7 +570,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmaʊntɪn ˈbaɪkɪŋ/",
     cefr: "B2",
     img: "/word-images/camping-site/mountain-biking.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Riding a bicycle over rough outdoor paths.",
     topic: "camping-site",
   },
   {
@@ -580,7 +579,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkʊkɪŋ/",
     cefr: "A2",
     img: "/word-images/camping-site/cooking.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Preparing food using heat.",
     topic: "camping-site",
   },
   {
@@ -589,7 +588,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/haɪk/",
     cefr: "A2",
     img: "/word-images/camping-site/hike.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long walk through the countryside.",
     topic: "camping-site",
   },
   {
@@ -598,7 +597,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fɪʃ/",
     cefr: "A2",
     img: "/word-images/camping-site/fish.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An animal caught with a fishing line or net.",
     topic: "camping-site",
   },
   {
@@ -607,7 +606,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kʊk/",
     cefr: "A2",
     img: "/word-images/camping-site/cook.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To prepare food using heat.",
     topic: "camping-site",
   },
   {
@@ -616,7 +615,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/roʊst ˌmɑːrʃˈmæloʊ/",
     cefr: "B2",
     img: "/word-images/camping-site/roast-marshmallow.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To cook food over a fire until it is hot and browned.",
     topic: "camping-site",
   },
   {
@@ -625,7 +624,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/stɑːr ɡeɪz/",
     cefr: "B1",
     img: "/word-images/camping-site/star-gaze.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To look at stars in the night sky.",
     topic: "camping-site",
   },
   {
@@ -634,7 +633,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpædəl/",
     cefr: "A2",
     img: "/word-images/camping-site/paddle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A short pole with a wide blade used to move a boat.",
     topic: "camping-site",
   },
   {
@@ -643,7 +642,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɛt ʌp tɛnt/",
     cefr: "B2",
     img: "/word-images/camping-site/set-up-tent.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To prepare and arrange a tent so it is ready to use.",
     topic: "camping-site",
   },
   {
@@ -652,7 +651,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪkˈsplɔːr/",
     cefr: "A2",
     img: "/word-images/camping-site/explore.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To travel around a place to discover it.",
     topic: "camping-site",
   },
 ];
