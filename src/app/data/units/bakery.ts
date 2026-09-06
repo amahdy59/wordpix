@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/waɪt brɛd/",
     cefr: "B1",
     img: "/word-images/bakery/white-bread.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A soft loaf of bread made from finely ground white flour.",
     topic: "bakery",
   },
   {
@@ -22,7 +21,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hoʊl wiːt brɛd/",
     cefr: "B2",
     img: "/word-images/bakery/whole-wheat-bread.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Bread made with flour that includes more of the grain.",
     topic: "bakery",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bæˈɡɛt/",
     cefr: "A2",
     img: "/word-images/bakery/baguette.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long, thin loaf with a crisp crust.",
     topic: "bakery",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsaʊərdoʊ/",
     cefr: "A2",
     img: "/word-images/bakery/sourdough.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Bread made with fermented dough and a slightly sour taste.",
     topic: "bakery",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/raɪ brɛd/",
     cefr: "B1",
     img: "/word-images/bakery/rye-bread.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Bread made with rye flour, often darker and denser.",
     topic: "bakery",
   },
   {
@@ -58,7 +57,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpiːtə/",
     cefr: "A2",
     img: "/word-images/bakery/pita.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A round pocket of bread that can hold fillings.",
     topic: "bakery",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/foʊˈkɑːtʃə/",
     cefr: "A2",
     img: "/word-images/bakery/focaccia.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flat Italian bread baked with olive oil and herbs.",
     topic: "bakery",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tʃəˈbɑːtə/",
     cefr: "A2",
     img: "/word-images/bakery/ciabatta.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An Italian loaf with a crisp crust and open texture.",
     topic: "bakery",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/briˈoʊʃ/",
     cefr: "A2",
     img: "/word-images/bakery/brioche.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A soft, sweet bread enriched with butter and eggs.",
     topic: "bakery",
   },
   {
@@ -94,7 +93,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈflætbrɛd/",
     cefr: "A2",
     img: "/word-images/bakery/flatbread.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Bread made in a wide, thin shape.",
     topic: "bakery",
   },
   {
@@ -103,7 +102,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kwɑːˈsɑːnt/",
     cefr: "A2",
     img: "/word-images/bakery/croissant.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A light, flaky pastry shaped like a crescent.",
     topic: "bakery",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmʌfɪn/",
     cefr: "A2",
     img: "/word-images/bakery/muffin.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small sweet baked cake, often with fruit or chocolate.",
     topic: "bakery",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdoʊnʌt/",
     cefr: "A2",
     img: "/word-images/bakery/donut.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small ring-shaped sweet cake, usually fried or baked.",
     topic: "bakery",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdeɪnɪʃ/",
     cefr: "A2",
     img: "/word-images/bakery/danish.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sweet pastry filled or topped with fruit or icing.",
     topic: "bakery",
   },
   {
@@ -139,7 +138,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɪnəmən roʊl/",
     cefr: "B1",
     img: "/word-images/bakery/cinnamon-roll.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sweet pastry rolled with sugar and cinnamon.",
     topic: "bakery",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/eɪˈklɛr/",
     cefr: "A2",
     img: "/word-images/bakery/clair.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long pastry filled with cream and covered with icing.",
     topic: "bakery",
   },
   {
@@ -157,7 +156,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/skoʊn/",
     cefr: "A2",
     img: "/word-images/bakery/scone.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small crumbly baked cake often served with tea.",
     topic: "bakery",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstruːdəl/",
     cefr: "A2",
     img: "/word-images/bakery/strudel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A pastry filled with fruit, nuts, or sweet spiced mixture.",
     topic: "bakery",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌmækəˈrɑːn/",
     cefr: "A2",
     img: "/word-images/bakery/macaron.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small colourful almond meringue cookie with a soft filling.",
     topic: "bakery",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/prəˈfɪtəroʊl/",
     cefr: "B1",
     img: "/word-images/bakery/profiterole.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small pastry filled with cream and covered with sauce.",
     topic: "bakery",
   },
   {
@@ -193,7 +192,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbɜːrθdeɪ keɪk/",
     cefr: "B1",
     img: "/word-images/bakery/birthday-cake.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large decorated cake made for a birthday celebration.",
     topic: "bakery",
   },
   {
@@ -202,7 +201,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɛdɪŋ keɪk/",
     cefr: "B1",
     img: "/word-images/bakery/wedding-cake.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large decorated cake made for a wedding.",
     topic: "bakery",
   },
   {
@@ -211,7 +210,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkʌpkeɪk/",
     cefr: "A2",
     img: "/word-images/bakery/cupcake.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small individual cake with icing.",
     topic: "bakery",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃiːzkeɪk/",
     cefr: "B1",
     img: "/word-images/bakery/cheesecake.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A rich cake made with soft cheese.",
     topic: "bakery",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃɑːklɪt keɪk/",
     cefr: "B1",
     img: "/word-images/bakery/chocolate-cake.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sweet cake containing chocolate or cocoa.",
     topic: "bakery",
   },
   {
@@ -238,7 +237,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkærət keɪk/",
     cefr: "B1",
     img: "/word-images/bakery/carrot-cake.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sweet cake made with grated carrots and spices.",
     topic: "bakery",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈæpəl paɪ/",
     cefr: "B1",
     img: "/word-images/bakery/apple-pie.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A baked pastry filled with cooked apples.",
     topic: "bakery",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃɛri paɪ/",
     cefr: "B1",
     img: "/word-images/bakery/cherry-pie.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A baked pastry filled with cherries.",
     topic: "bakery",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlɛmən tɑːrt/",
     cefr: "B1",
     img: "/word-images/bakery/lemon-tart.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small pastry with a sour lemon filling.",
     topic: "bakery",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbraʊni/",
     cefr: "A2",
     img: "/word-images/bakery/brownie.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small rich chocolate cake with a soft centre.",
     topic: "bakery",
   },
   {
@@ -283,7 +282,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃɑːklɪt tʃɪp ˈkʊki/",
     cefr: "B2",
     img: "/word-images/bakery/chocolate-chip-cookie.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A cookie containing pieces of chocolate.",
     topic: "bakery",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈʃʊɡər ˈkʊki/",
     cefr: "B1",
     img: "/word-images/bakery/sugar-cookie.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sweet round cookie made with sugar.",
     topic: "bakery",
   },
   {
@@ -301,7 +300,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdʒɪndʒərbrɛd/",
     cefr: "B1",
     img: "/word-images/bakery/gingerbread.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sweet spiced cookie often shaped like a person.",
     topic: "bakery",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈʃɔːrtbrɛd/",
     cefr: "B1",
     img: "/word-images/bakery/shortbread.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A crisp buttery cookie with a simple shape.",
     topic: "bakery",
   },
   {
@@ -319,7 +318,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈoʊtmiːl ˈkʊki/",
     cefr: "B1",
     img: "/word-images/bakery/oatmeal-cookie.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A crisp cookie made with oats and often a little sugar.",
     topic: "bakery",
   },
   {
@@ -328,7 +327,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈweɪfər/",
     cefr: "A2",
     img: "/word-images/bakery/wafer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A thin crisp food often served with cream or ice cream.",
     topic: "bakery",
   },
   {
@@ -337,7 +336,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbɪskɪt/",
     cefr: "A2",
     img: "/word-images/bakery/biscuit.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small plain baked item, often eaten with tea.",
     topic: "bakery",
   },
   {
@@ -346,7 +345,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈprɛtsəl/",
     cefr: "A2",
     img: "/word-images/bakery/pretzel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A twisted baked snack covered with salt.",
     topic: "bakery",
   },
   {
@@ -355,7 +354,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkrækər/",
     cefr: "A2",
     img: "/word-images/bakery/cracker.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A thin crisp baked food eaten with cheese or spreads.",
     topic: "bakery",
   },
   {
@@ -364,7 +363,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡrəˈnoʊlə bɑːr/",
     cefr: "B1",
     img: "/word-images/bakery/granola-bar.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A baked bar made with oats, nuts, or dried fruit.",
     topic: "bakery",
   },
   {
@@ -400,7 +399,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɛɡz/",
     cefr: "A2",
     img: "/word-images/bakery/eggs.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Foods produced by chickens and used in baking.",
     topic: "bakery",
   },
   {
@@ -409,7 +408,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/jiːst/",
     cefr: "A2",
     img: "/word-images/bakery/yeast.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A living ingredient that makes dough rise.",
     topic: "bakery",
   },
   {
@@ -418,7 +417,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbeɪkɪŋ ˈpaʊdər/",
     cefr: "B1",
     img: "/word-images/bakery/baking-powder.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A powder added to dough to help it rise.",
     topic: "bakery",
   },
   {
@@ -427,7 +426,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃɑːklɪt/",
     cefr: "A2",
     img: "/word-images/bakery/chocolate.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sweet food made from roasted and ground cocoa beans.",
     topic: "bakery",
   },
   {
@@ -436,7 +435,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/vəˈnɪlə/",
     cefr: "A2",
     img: "/word-images/bakery/vanilla.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A fragrant flavouring made from vanilla plants.",
     topic: "bakery",
   },
   {
@@ -445,7 +444,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kriːm/",
     cefr: "A2",
     img: "/word-images/bakery/cream.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The thick fatty part of milk.",
     topic: "bakery",
   },
   {
@@ -454,7 +453,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkoʊkoʊ ˈpaʊdər/",
     cefr: "B1",
     img: "/word-images/bakery/cocoa-powder.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A fine brown powder made from ground cocoa beans.",
     topic: "bakery",
   },
   {
@@ -463,7 +462,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɪnəmən/",
     cefr: "A2",
     img: "/word-images/bakery/cinnamon.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sweet-smelling spice made from tree bark.",
     topic: "bakery",
   },
   {
@@ -490,7 +489,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɪksər/",
     cefr: "A2",
     img: "/word-images/bakery/mixer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine that mixes ingredients together.",
     topic: "bakery",
   },
   {
@@ -535,7 +534,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpaɪpɪŋ bæɡ/",
     cefr: "B1",
     img: "/word-images/bakery/piping-bag.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A cone-shaped bag used for decorating cakes with icing.",
     topic: "bakery",
   },
   {
@@ -544,7 +543,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmʌfɪn tɪn/",
     cefr: "B1",
     img: "/word-images/bakery/muffin-tin.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tray with round holes for baking small cakes.",
     topic: "bakery",
   },
   {
@@ -553,7 +552,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkuːlɪŋ ræk/",
     cefr: "B1",
     img: "/word-images/bakery/cooling-rack.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A metal frame where baked food cools.",
     topic: "bakery",
   },
   {
@@ -562,7 +561,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/brɛd ˈbæskɪt/",
     cefr: "B1",
     img: "/word-images/bakery/bread-basket.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A container used for carrying or displaying bread.",
     topic: "bakery",
   },
   {
@@ -580,7 +579,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtaɪmər/",
     cefr: "A2",
     img: "/word-images/bakery/timer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that measures or signals the end of baking time.",
     topic: "bakery",
   },
   {
@@ -598,7 +597,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/keɪk/",
     cefr: "A2",
     img: "/word-images/bakery/cake.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sweet baked food that may be decorated or filled.",
     topic: "bakery",
   },
   {
@@ -607,7 +606,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkʊki/",
     cefr: "A2",
     img: "/word-images/bakery/cookie.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small sweet baked food, often flat and crisp.",
     topic: "bakery",
   },
   {
@@ -616,7 +615,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/paɪ/",
     cefr: "A2",
     img: "/word-images/bakery/pie.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A baked dish with a pastry crust and sweet or savoury filling.",
     topic: "bakery",
   },
   {

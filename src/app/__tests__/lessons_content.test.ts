@@ -40,7 +40,7 @@ describe("Vocabulary descriptions", () => {
 
   it("tracks placeholder debt and prevents it from increasing", () => {
     const placeholders = vocabulary.filter((word) => word.description === PLACEHOLDER_DESCRIPTION);
-    expect(placeholders.length, "Vocabulary placeholder debt increased").toBeLessThanOrEqual(10949);
+    expect(placeholders.length, "Vocabulary placeholder debt increased").toBeLessThanOrEqual(10892);
     expect(
       placeholders.filter((word) =>
         [
@@ -52,6 +52,7 @@ describe("Vocabulary descriptions", () => {
           "park",
           "playground",
           "classroom",
+          "bakery",
         ].includes(word.topic)
       ),
       "Completed unit definitions must not regress to placeholders"
