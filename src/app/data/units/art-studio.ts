@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɛnsəl/",
     cefr: "A2",
     img: "/word-images/art-studio/pencil.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A thin writing tool with a pointed graphite tip.",
     topic: "art-studio",
   },
   {
@@ -22,7 +21,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪˈreɪsər/",
     cefr: "A2",
     img: "/word-images/art-studio/eraser.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool used to remove pencil marks from paper.",
     topic: "art-studio",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈskɛtʃˌbʊk/",
     cefr: "B1",
     img: "/word-images/art-studio/sketchbook.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A book of blank pages for drawing or writing.",
     topic: "art-studio",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃɑːrˌkoʊl/",
     cefr: "A2",
     img: "/word-images/art-studio/charcoal.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A black material used for making dark, soft drawings.",
     topic: "art-studio",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pæˈstɛl/",
     cefr: "A2",
     img: "/word-images/art-studio/pastel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A soft coloured stick used for drawing or adding colour.",
     topic: "art-studio",
   },
   {
@@ -58,7 +57,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkʌlərd ˈpɛnsəl/",
     cefr: "B1",
     img: "/word-images/art-studio/colored-pencil.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A pencil filled with coloured material for drawing.",
     topic: "art-studio",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/faɪn ˈlaɪnər/",
     cefr: "B1",
     img: "/word-images/art-studio/fine-liner.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A pen with a very thin tip for detailed lines.",
     topic: "art-studio",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈblɛndɪŋ stʌmp/",
     cefr: "B1",
     img: "/word-images/art-studio/blending-stump.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A paper tool used to spread and soften drawing marks.",
     topic: "art-studio",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdrɔːɪŋ bɔːrd/",
     cefr: "B1",
     img: "/word-images/art-studio/drawing-board.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flat surface that supports paper while an artist draws.",
     topic: "art-studio",
   },
   {
@@ -94,7 +93,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɡræfaɪt/",
     cefr: "A2",
     img: "/word-images/art-studio/graphite.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A soft grey material used in pencils and drawing sticks.",
     topic: "art-studio",
   },
   {
@@ -103,7 +102,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpeɪntˌbrʌʃ/",
     cefr: "B1",
     img: "/word-images/art-studio/paintbrush.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool with hairs used to spread paint.",
     topic: "art-studio",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpælɪt/",
     cefr: "A2",
     img: "/word-images/art-studio/palette.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flat board used to hold and mix paint.",
     topic: "art-studio",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈiːzəl/",
     cefr: "A2",
     img: "/word-images/art-studio/easel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A stand used to hold a canvas while an artist works.",
     topic: "art-studio",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkænvəs/",
     cefr: "A2",
     img: "/word-images/art-studio/canvas.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A strong cloth-covered surface used for painting.",
     topic: "art-studio",
   },
   {
@@ -139,7 +138,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/əˈkrɪlɪk peɪnt/",
     cefr: "B1",
     img: "/word-images/art-studio/acrylic-paint.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A quick-drying paint that uses water as its liquid.",
     topic: "art-studio",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɔːtərˌkʌlər/",
     cefr: "B1",
     img: "/word-images/art-studio/watercolor.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Paint made with colours mixed into water.",
     topic: "art-studio",
   },
   {
@@ -157,7 +156,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɔɪl peɪnt/",
     cefr: "B1",
     img: "/word-images/art-studio/oil-paint.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Paint made with oil and used to create rich colours.",
     topic: "art-studio",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpælɪt naɪf/",
     cefr: "B1",
     img: "/word-images/art-studio/palette-knife.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flat tool used to mix paint or spread it on a surface.",
     topic: "art-studio",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/peɪnt tjuːb/",
     cefr: "B1",
     img: "/word-images/art-studio/paint-tube.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A container of paint that can be squeezed out.",
     topic: "art-studio",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dʒɑːr əv ˈwɔːtər/",
     cefr: "B2",
     img: "/word-images/art-studio/jar-of-water.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A container holding water for cleaning paintbrushes.",
     topic: "art-studio",
   },
   {
@@ -193,7 +192,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kleɪ/",
     cefr: "A2",
     img: "/word-images/art-studio/clay.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A soft material shaped by hand to make objects.",
     topic: "art-studio",
   },
   {
@@ -202,7 +201,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈskʌlptɪŋ tuːl/",
     cefr: "B1",
     img: "/word-images/art-studio/sculpting-tool.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool used to shape or smooth clay.",
     topic: "art-studio",
   },
   {
@@ -211,7 +210,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/waɪər ˈɑːrmətʃər/",
     cefr: "B1",
     img: "/word-images/art-studio/wire-armature.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A wire structure that supports a clay sculpture.",
     topic: "art-studio",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈplæstər/",
     cefr: "A2",
     img: "/word-images/art-studio/plaster.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A white material that becomes hard and is used for casting shapes.",
     topic: "art-studio",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/moʊld/",
     cefr: "A2",
     img: "/word-images/art-studio/mold.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A container used to give a material a particular shape.",
     topic: "art-studio",
   },
   {
@@ -238,7 +237,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃɪzəl/",
     cefr: "A2",
     img: "/word-images/art-studio/chisel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sharp tool used to cut or shape hard material.",
     topic: "art-studio",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɑːrvɪŋ naɪf/",
     cefr: "B1",
     img: "/word-images/art-studio/carving-knife.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sharp tool used for cutting and shaping clay or wood.",
     topic: "art-studio",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɒdəlɪŋ stænd/",
     cefr: "B1",
     img: "/word-images/art-studio/modeling-stand.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A stand that supports clay while it is shaped.",
     topic: "art-studio",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kɪln/",
     cefr: "A2",
     img: "/word-images/art-studio/kiln.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A special oven used to fire clay and make it hard.",
     topic: "art-studio",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡleɪz/",
     cefr: "A2",
     img: "/word-images/art-studio/glaze.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A glassy coating put on clay and hardened by heat.",
     topic: "art-studio",
   },
   {
@@ -283,7 +282,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈprɪntɪŋ prɛs/",
     cefr: "B1",
     img: "/word-images/art-studio/printing-press.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine used to press inked designs onto paper.",
     topic: "art-studio",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪŋk ˈroʊlər/",
     cefr: "B1",
     img: "/word-images/art-studio/ink-roller.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A roller used to spread ink evenly over a printing surface.",
     topic: "art-studio",
   },
   {
@@ -301,7 +300,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstɛnsəl/",
     cefr: "A2",
     img: "/word-images/art-studio/stencil.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A thin sheet with cut-out shapes used for spraying or painting designs.",
     topic: "art-studio",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/stæmp/",
     cefr: "A2",
     img: "/word-images/art-studio/stamp.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A carved or raised object used to print the same design repeatedly.",
     topic: "art-studio",
   },
   {
@@ -319,7 +318,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwʊdˌkʌt blɒk/",
     cefr: "B1",
     img: "/word-images/art-studio/woodcut-block.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A block of wood carved with a design for printing.",
     topic: "art-studio",
   },
   {
@@ -328,7 +327,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/skriːn/",
     cefr: "A2",
     img: "/word-images/art-studio/screen.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flat surface or material used to receive a printed image.",
     topic: "art-studio",
   },
   {
@@ -337,7 +336,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈskwiːdʒiː/",
     cefr: "A2",
     img: "/word-images/art-studio/squeegee.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A rubber blade used to push ink across a screen.",
     topic: "art-studio",
   },
   {
@@ -346,7 +345,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbreɪər/",
     cefr: "A2",
     img: "/word-images/art-studio/brayer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A roller used to spread ink over a block or plate.",
     topic: "art-studio",
   },
   {
@@ -355,7 +354,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌrɛdʒɪˈstreɪʃən mɑːrk/",
     cefr: "B2",
     img: "/word-images/art-studio/registration-mark.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A mark used to align layers of colour in printing.",
     topic: "art-studio",
   },
   {
@@ -364,7 +363,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pruːf/",
     cefr: "A2",
     img: "/word-images/art-studio/proof.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An early printed copy used to check a design before final printing.",
     topic: "art-studio",
   },
   {
@@ -373,7 +372,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡluː/",
     cefr: "A2",
     img: "/word-images/art-studio/glue.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sticky substance used to join materials together.",
     topic: "art-studio",
   },
   {
@@ -382,7 +381,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɪzərz/",
     cefr: "A2",
     img: "/word-images/art-studio/scissors.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool with two blades used for cutting paper or fabric.",
     topic: "art-studio",
   },
   {
@@ -391,7 +390,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈruːlər/",
     cefr: "A2",
     img: "/word-images/art-studio/ruler.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A straight tool used for measuring and drawing lines.",
     topic: "art-studio",
   },
   {
@@ -400,7 +399,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kræft ˈpeɪpər/",
     cefr: "B1",
     img: "/word-images/art-studio/craft-paper.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Strong paper used for drawing, folding, and making crafts.",
     topic: "art-studio",
   },
   {
@@ -409,7 +408,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmæskɪŋ teɪp/",
     cefr: "B1",
     img: "/word-images/art-studio/masking-tape.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tape used to cover areas and prevent paint from reaching them.",
     topic: "art-studio",
   },
   {
@@ -418,7 +417,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/spreɪ peɪnt/",
     cefr: "B1",
     img: "/word-images/art-studio/spray-paint.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Paint stored in a pressurised can and sprayed through a nozzle.",
     topic: "art-studio",
   },
   {
@@ -427,7 +426,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈvɑːrnɪʃ/",
     cefr: "A2",
     img: "/word-images/art-studio/varnish.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A clear coating that protects a painted or wooden surface.",
     topic: "art-studio",
   },
   {
@@ -436,7 +435,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɜːrpənˌtaɪn/",
     cefr: "B1",
     img: "/word-images/art-studio/turpentine.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A strong liquid used to thin or clean some oil paints.",
     topic: "art-studio",
   },
   {
@@ -454,7 +453,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ræɡ/",
     cefr: "A2",
     img: "/word-images/art-studio/rag.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A piece of cloth used for cleaning or wiping.",
     topic: "art-studio",
   },
   {
@@ -463,7 +462,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/skɛtʃ/",
     cefr: "A2",
     img: "/word-images/art-studio/sketch.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A quick simple drawing showing an idea or subject.",
     topic: "art-studio",
   },
   {
@@ -472,7 +471,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɔːrtrɪt/",
     cefr: "A2",
     img: "/word-images/art-studio/portrait.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A drawing or painting of a person.",
     topic: "art-studio",
   },
   {
@@ -481,7 +480,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlændskeɪp/",
     cefr: "A2",
     img: "/word-images/art-studio/landscape.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A picture showing natural scenery such as hills or fields.",
     topic: "art-studio",
   },
   {
@@ -490,7 +489,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/stɪl laɪf/",
     cefr: "B1",
     img: "/word-images/art-studio/still-life.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A picture of objects arranged on a table or surface.",
     topic: "art-studio",
   },
   {
@@ -499,7 +498,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈæbstrækt/",
     cefr: "A2",
     img: "/word-images/art-studio/abstract.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Art that uses shapes, colours, or forms instead of realistic subjects.",
     topic: "art-studio",
   },
   {
@@ -508,7 +507,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌkɒmpəˈzɪʃən/",
     cefr: "B1",
     img: "/word-images/art-studio/composition.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The way parts of an artwork are arranged together.",
     topic: "art-studio",
   },
   {
@@ -517,7 +516,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pərˈspɛktɪv/",
     cefr: "B1",
     img: "/word-images/art-studio/perspective.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A way of showing depth and distance in a flat picture.",
     topic: "art-studio",
   },
   {
@@ -526,7 +525,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈʃeɪdɪŋ/",
     cefr: "A2",
     img: "/word-images/art-studio/shading.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The use of light and dark marks to show shape.",
     topic: "art-studio",
   },
   {
@@ -535,7 +534,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhaɪˌlaɪt/",
     cefr: "A2",
     img: "/word-images/art-studio/highlight.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A light area in a picture where light falls.",
     topic: "art-studio",
   },
   {
@@ -544,7 +543,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɛkstʃər/",
     cefr: "A2",
     img: "/word-images/art-studio/texture.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The way a surface looks or feels.",
     topic: "art-studio",
   },
   {
@@ -553,7 +552,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɑːrkər/",
     cefr: "A2",
     img: "/word-images/art-studio/marker.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A pen with a thick coloured tip.",
     topic: "art-studio",
   },
   {
@@ -562,7 +561,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪŋk/",
     cefr: "A2",
     img: "/word-images/art-studio/ink.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A liquid used for writing, drawing, or printing.",
     topic: "art-studio",
   },
   {
@@ -571,7 +570,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpeɪpər/",
     cefr: "A2",
     img: "/word-images/art-studio/paper.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A thin flat material used for writing or drawing.",
     topic: "art-studio",
   },
   {
@@ -580,7 +579,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/drɔː/",
     cefr: "A2",
     img: "/word-images/art-studio/draw.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To make a picture with lines or marks.",
     topic: "art-studio",
   },
   {
@@ -589,7 +588,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/peɪnt/",
     cefr: "A2",
     img: "/word-images/art-studio/paint.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To cover a surface with paint.",
     topic: "art-studio",
   },
   {
@@ -598,7 +597,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/skʌlpt/",
     cefr: "A2",
     img: "/word-images/art-studio/sculpt.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To make an object by shaping a material such as clay.",
     topic: "art-studio",
   },
   {
@@ -607,7 +606,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʃeɪd/",
     cefr: "A2",
     img: "/word-images/art-studio/shade.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To make an area darker with lines or colour.",
     topic: "art-studio",
   },
   {
@@ -616,7 +615,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/blɛnd/",
     cefr: "A2",
     img: "/word-images/art-studio/blend.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To mix colours or marks smoothly together.",
     topic: "art-studio",
   },
   {
@@ -625,7 +624,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈaʊtˌlaɪn/",
     cefr: "A2",
     img: "/word-images/art-studio/outline.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The outer line that shows the shape of something.",
     topic: "art-studio",
   },
   {
@@ -634,7 +633,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/treɪs/",
     cefr: "A2",
     img: "/word-images/art-studio/trace.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To copy a shape by following its outer lines.",
     topic: "art-studio",
   },
 ];
