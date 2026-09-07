@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdɛskˌtɒp kəmˈpjuːtər/",
     cefr: "B2",
     img: "/word-images/computer-lab/desktop-computer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A computer designed to stay on a desk rather than be carried.",
     topic: "computer-lab",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɒnɪtər/",
     cefr: "A2",
     img: "/word-images/computer-lab/monitor.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A screen that displays images and information from a computer.",
     topic: "computer-lab",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkiːˌbɔːrd/",
     cefr: "A2",
     img: "/word-images/computer-lab/keyboard.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A set of keys used to type letters, numbers, and commands.",
     topic: "computer-lab",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/maʊs/",
     cefr: "A2",
     img: "/word-images/computer-lab/mouse.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small pointing device used to move and select items on a screen.",
     topic: "computer-lab",
   },
   {
@@ -58,7 +57,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtrækˌpæd/",
     cefr: "A2",
     img: "/word-images/computer-lab/trackpad.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flat touch surface used to control a pointer on a laptop.",
     topic: "computer-lab",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɛbˌkæm/",
     cefr: "A2",
     img: "/word-images/computer-lab/webcam.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small camera that sends live video to a computer.",
     topic: "computer-lab",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhɛdˌsɛt/",
     cefr: "A2",
     img: "/word-images/computer-lab/headset.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Headphones with a microphone for listening and speaking.",
     topic: "computer-lab",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈprɪntər/",
     cefr: "A2",
     img: "/word-images/computer-lab/printer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine that puts digital documents onto paper.",
     topic: "computer-lab",
   },
   {
@@ -94,7 +93,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈskænər/",
     cefr: "A2",
     img: "/word-images/computer-lab/scanner.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that turns a paper image or document into a digital file.",
     topic: "computer-lab",
   },
   {
@@ -103,7 +102,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌjuːɛsˈbiː draɪv/",
     cefr: "B1",
     img: "/word-images/computer-lab/usb-drive.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small device that stores and transfers files through a USB port.",
     topic: "computer-lab",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪkˈstɜːrnəl hɑːrd draɪv/",
     cefr: "B2",
     img: "/word-images/computer-lab/external-hard-drive.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A separate storage device for keeping large amounts of data.",
     topic: "computer-lab",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɒpəˌreɪtɪŋ ˈsɪstəm/",
     cefr: "B2",
     img: "/word-images/computer-lab/operating-system.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The main software that controls a computer and its programs.",
     topic: "computer-lab",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbraʊzər/",
     cefr: "A2",
     img: "/word-images/computer-lab/browser.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A program used to open and explore websites.",
     topic: "computer-lab",
   },
   {
@@ -139,7 +138,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɜːrtʃ ˈɛndʒɪn/",
     cefr: "B1",
     img: "/word-images/computer-lab/search-engine.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A service that finds webpages matching words that you type into a search box.",
     topic: "computer-lab",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/æp/",
     cefr: "A2",
     img: "/word-images/computer-lab/app.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A software program made for a particular task.",
     topic: "computer-lab",
   },
   {
@@ -157,7 +156,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈaɪkɒn/",
     cefr: "A2",
     img: "/word-images/computer-lab/icon.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small picture that represents a program, file, or action.",
     topic: "computer-lab",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɛnjuː/",
     cefr: "A2",
     img: "/word-images/computer-lab/menu.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A list of commands or choices in a program.",
     topic: "computer-lab",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtuːlˌbɑːr/",
     cefr: "A2",
     img: "/word-images/computer-lab/toolbar.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A row of buttons that gives quick access to common commands.",
     topic: "computer-lab",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɜːrsər/",
     cefr: "A2",
     img: "/word-images/computer-lab/cursor.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A marker that shows where the pointer or next typed character is.",
     topic: "computer-lab",
   },
   {
@@ -193,7 +192,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfoʊldər/",
     cefr: "A2",
     img: "/word-images/computer-lab/folder.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A digital container used to organise files on your computer.",
     topic: "computer-lab",
   },
   {
@@ -202,7 +201,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/faɪl/",
     cefr: "A2",
     img: "/word-images/computer-lab/file.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A named collection of digital information saved on a device.",
     topic: "computer-lab",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tæb/",
     cefr: "A2",
     img: "/word-images/computer-lab/tab.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A page in a browser or a labelled section in a program.",
     topic: "computer-lab",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwaɪfaɪ ˈraʊtər/",
     cefr: "B2",
     img: "/word-images/computer-lab/wi-fi-router.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that shares an internet connection with nearby devices wirelessly.",
     topic: "computer-lab",
   },
   {
@@ -238,7 +237,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈiːθərˌnɛt ˈkeɪbəl/",
     cefr: "B1",
     img: "/word-images/computer-lab/ethernet-cable.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A cable that connects a computer or other device to a wired network.",
     topic: "computer-lab",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɜːrvər/",
     cefr: "A2",
     img: "/word-images/computer-lab/server.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A computer that provides data or services to other computers.",
     topic: "computer-lab",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmoʊdɛm/",
     cefr: "A2",
     img: "/word-images/computer-lab/modem.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that connects a local network to an internet service.",
     topic: "computer-lab",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈnɛtwɜːrk swɪtʃ/",
     cefr: "B1",
     img: "/word-images/computer-lab/network-switch.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that connects several wired devices on one network.",
     topic: "computer-lab",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhɒtˌspɒt/",
     cefr: "A2",
     img: "/word-images/computer-lab/hotspot.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A place or device that provides wireless internet access.",
     topic: "computer-lab",
   },
   {
@@ -283,7 +282,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfaɪərˌwɔːl/",
     cefr: "A2",
     img: "/word-images/computer-lab/firewall.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Software or hardware that blocks unwanted network traffic.",
     topic: "computer-lab",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/klaʊd ˈstɔːrɪdʒ/",
     cefr: "B1",
     img: "/word-images/computer-lab/cloud-storage.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Online space used to save and access your files from different devices.",
     topic: "computer-lab",
   },
   {
@@ -301,7 +300,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdaʊnˌloʊd/",
     cefr: "A2",
     img: "/word-images/computer-lab/download.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To copy data from the internet to your device.",
     topic: "computer-lab",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈʌpˌloʊd/",
     cefr: "A2",
     img: "/word-images/computer-lab/upload.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To send data from your device to an online service.",
     topic: "computer-lab",
   },
   {
@@ -328,7 +327,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpaʊər strɪp/",
     cefr: "B1",
     img: "/word-images/computer-lab/power-strip.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device with several sockets for powering electrical equipment safely.",
     topic: "computer-lab",
   },
   {
@@ -337,7 +336,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɜːrdʒ prəˈtɛktər/",
     cefr: "B2",
     img: "/word-images/computer-lab/surge-protector.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that protects equipment from sudden increases in voltage.",
     topic: "computer-lab",
   },
   {
@@ -346,7 +345,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌjuːɛsˈbiː ˈkeɪbəl/",
     cefr: "B1",
     img: "/word-images/computer-lab/usb-cable.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A cable used to connect devices or transfer power and data.",
     topic: "computer-lab",
   },
   {
@@ -355,7 +354,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/əˈdæptər/",
     cefr: "A2",
     img: "/word-images/computer-lab/adapter.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that lets equipment with different connectors work together.",
     topic: "computer-lab",
   },
   {
@@ -364,7 +363,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/maʊs pæd/",
     cefr: "B1",
     img: "/word-images/computer-lab/mouse-pad.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A smooth surface that helps a computer mouse move accurately.",
     topic: "computer-lab",
   },
   {
@@ -373,7 +372,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlæpˌtɒp stænd/",
     cefr: "B1",
     img: "/word-images/computer-lab/laptop-stand.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A support that raises a laptop to a more comfortable height.",
     topic: "computer-lab",
   },
   {
@@ -382,7 +381,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdɒkɪŋ ˈsteɪʃən/",
     cefr: "B2",
     img: "/word-images/computer-lab/docking-station.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that connects a laptop to several accessories at once.",
     topic: "computer-lab",
   },
   {
@@ -391,7 +390,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstaɪləs/",
     cefr: "A2",
     img: "/word-images/computer-lab/stylus.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A pen-shaped tool used to write or draw on a touch screen.",
     topic: "computer-lab",
   },
   {
@@ -400,7 +399,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/skriːn prəˈtɛktər/",
     cefr: "B2",
     img: "/word-images/computer-lab/screen-protector.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A thin cover that helps protect a screen from scratches.",
     topic: "computer-lab",
   },
   {
@@ -409,7 +408,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtaɪpɪŋ/",
     cefr: "A2",
     img: "/word-images/computer-lab/typing.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The action of entering words with a keyboard.",
     topic: "computer-lab",
   },
   {
@@ -418,7 +417,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈskroʊlɪŋ/",
     cefr: "A2",
     img: "/word-images/computer-lab/scrolling.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Moving through a page or list to see more content.",
     topic: "computer-lab",
   },
   {
@@ -427,7 +426,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈklɪkɪŋ/",
     cefr: "A2",
     img: "/word-images/computer-lab/clicking.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Pressing a mouse button or screen control to choose something.",
     topic: "computer-lab",
   },
   {
@@ -436,7 +435,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdræɡɪŋ/",
     cefr: "A2",
     img: "/word-images/computer-lab/dragging.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Moving an item by holding it while moving the pointer.",
     topic: "computer-lab",
   },
   {
@@ -445,7 +444,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɒpiɪŋ/",
     cefr: "A2",
     img: "/word-images/computer-lab/copying.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Making a duplicate of text or data so you can use another copy.",
     topic: "computer-lab",
   },
   {
@@ -454,7 +453,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpeɪstɪŋ/",
     cefr: "A2",
     img: "/word-images/computer-lab/pasting.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Putting copied or cut content into a new place.",
     topic: "computer-lab",
   },
   {
@@ -463,7 +462,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈseɪvɪŋ/",
     cefr: "A2",
     img: "/word-images/computer-lab/saving.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Storing changes so they can be opened again later.",
     topic: "computer-lab",
   },
   {
@@ -472,7 +471,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈprɪntɪŋ/",
     cefr: "A2",
     img: "/word-images/computer-lab/printing.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Making a paper copy of a digital document.",
     topic: "computer-lab",
   },
   {
@@ -481,7 +480,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɛdɪtɪŋ/",
     cefr: "A2",
     img: "/word-images/computer-lab/editing.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Changing text, images, or other digital content to improve or correct it.",
     topic: "computer-lab",
   },
   {
@@ -490,7 +489,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɜːrtʃɪŋ/",
     cefr: "A2",
     img: "/word-images/computer-lab/searching.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Looking for information by entering words or questions.",
     topic: "computer-lab",
   },
   {
@@ -499,7 +498,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpæsˌwɜːrd/",
     cefr: "A2",
     img: "/word-images/computer-lab/password.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A secret group of characters used to protect an account.",
     topic: "computer-lab",
   },
   {
@@ -508,7 +507,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈjuːzərˌneɪm/",
     cefr: "A2",
     img: "/word-images/computer-lab/username.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A name that identifies a person on a computer or service.",
     topic: "computer-lab",
   },
   {
@@ -517,7 +516,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/lɒɡ ɪn/",
     cefr: "B1",
     img: "/word-images/computer-lab/log-in.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To enter an account by providing its required details, such as a password.",
     topic: "computer-lab",
   },
   {
@@ -526,7 +525,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/lɒɡ aʊt/",
     cefr: "B1",
     img: "/word-images/computer-lab/log-out.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To leave an account so it is no longer open on the device.",
     topic: "computer-lab",
   },
   {
@@ -535,7 +534,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʌpˈdeɪt/",
     cefr: "A2",
     img: "/word-images/computer-lab/update.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A newer version of software that fixes or improves it.",
     topic: "computer-lab",
   },
   {
@@ -544,7 +543,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbækˌʌp/",
     cefr: "A2",
     img: "/word-images/computer-lab/backup.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An extra copy of data kept in case the original is lost.",
     topic: "computer-lab",
   },
   {
@@ -553,7 +552,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌæntɪˈvaɪrəs/",
     cefr: "A2",
     img: "/word-images/computer-lab/antivirus.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Software that detects and removes harmful computer programs.",
     topic: "computer-lab",
   },
   {
@@ -562,7 +561,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/spæm/",
     cefr: "A2",
     img: "/word-images/computer-lab/spam.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Unwanted messages, often sent in large numbers to many people.",
     topic: "computer-lab",
   },
   {
@@ -571,7 +570,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɒpˌʌp/",
     cefr: "B1",
     img: "/word-images/computer-lab/pop-up.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small window that appears over a webpage or program.",
     topic: "computer-lab",
   },
   {
@@ -580,7 +579,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈprɪvəsi ˈsɛtɪŋz/",
     cefr: "B2",
     img: "/word-images/computer-lab/privacy-settings.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Controls that decide what information an app or service can collect.",
     topic: "computer-lab",
   },
   {
@@ -589,7 +588,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kəmˈpjuːtər/",
     cefr: "A2",
     img: "/word-images/computer-lab/computer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An electronic machine that stores and processes information.",
     topic: "computer-lab",
   },
   {
@@ -607,7 +606,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈiːmeɪl/",
     cefr: "A2",
     img: "/word-images/computer-lab/email.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A message sent electronically through the internet to another person or group.",
     topic: "computer-lab",
   },
   {
@@ -616,7 +615,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdɒkjʊmənt/",
     cefr: "A2",
     img: "/word-images/computer-lab/document.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A digital file containing written or visual information.",
     topic: "computer-lab",
   },
   {
@@ -625,7 +624,8 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsprɛdˌʃiːt/",
     cefr: "B1",
     img: "/word-images/computer-lab/spreadsheet.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description:
+      "A file that organises information in rows and columns for calculations and records.",
     topic: "computer-lab",
   },
   {
@@ -634,7 +634,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌprɛzənˈteɪʃən/",
     cefr: "B1",
     img: "/word-images/computer-lab/presentation.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A set of slides used to explain a topic to an audience.",
     topic: "computer-lab",
   },
   {
@@ -643,7 +643,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/taɪp/",
     cefr: "A2",
     img: "/word-images/computer-lab/type.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To enter letters or symbols using a keyboard.",
     topic: "computer-lab",
   },
   {
@@ -652,7 +652,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/klɪk/",
     cefr: "A2",
     img: "/word-images/computer-lab/click.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To press a mouse button or screen control once.",
     topic: "computer-lab",
   },
   {
@@ -661,7 +661,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/skroʊl/",
     cefr: "A2",
     img: "/word-images/computer-lab/scroll.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To move through content on a screen to see more information.",
     topic: "computer-lab",
   },
   {
@@ -670,7 +670,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/seɪv/",
     cefr: "A2",
     img: "/word-images/computer-lab/save.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To store a file or the latest changes.",
     topic: "computer-lab",
   },
   {
@@ -679,7 +679,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɜːrtʃ/",
     cefr: "A2",
     img: "/word-images/computer-lab/search.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To look for information in a program or online.",
     topic: "computer-lab",
   },
   {
@@ -688,7 +688,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/koʊd/",
     cefr: "A2",
     img: "/word-images/computer-lab/code.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Instructions written for a computer to follow when running a program.",
     topic: "computer-lab",
   },
 ];
