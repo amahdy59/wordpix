@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈnjuːzˌruːm/",
     cefr: "A2",
     img: "/word-images/newspaper-office/newsroom.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A room where journalists work together to prepare news stories.",
     topic: "newspaper-office",
   },
   {
@@ -22,7 +21,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɛdɪtərz dɛsk/",
     cefr: "B1",
     img: "/word-images/newspaper-office/editor-s-desk.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The editor’s work area for checking and organising articles before publication.",
     topic: "newspaper-office",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwaɪtˌbɔːrd/",
     cefr: "B1",
     img: "/word-images/newspaper-office/whiteboard.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A smooth board used for writing notes and planning ideas.",
     topic: "newspaper-office",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɪnˌbɔːrd/",
     cefr: "A2",
     img: "/word-images/newspaper-office/pinboard.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A board where papers and notices are attached with pins.",
     topic: "newspaper-office",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kəmˈpjuːtər ˈtɜːrmɪnəl/",
     cefr: "B2",
     img: "/word-images/newspaper-office/computer-terminal.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A computer station used to write, edit, or send news.",
     topic: "newspaper-office",
   },
   {
@@ -58,7 +57,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɛlɪˌfoʊn/",
     cefr: "A2",
     img: "/word-images/newspaper-office/telephone.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device used to speak with someone who is far away.",
     topic: "newspaper-office",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɒfi kʌp/",
     cefr: "B1",
     img: "/word-images/newspaper-office/coffee-cup.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small container used for drinking coffee or other drinks.",
     topic: "newspaper-office",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfaɪlɪŋ ˈkæbɪnɪt/",
     cefr: "B1",
     img: "/word-images/newspaper-office/filing-cabinet.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A piece of furniture used to store documents in drawers.",
     topic: "newspaper-office",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈnoʊtˌpæd/",
     cefr: "A2",
     img: "/word-images/newspaper-office/notepad.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small pad of paper used for writing quick notes.",
     topic: "newspaper-office",
   },
   {
@@ -94,7 +93,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wɔːl klɒk/",
     cefr: "B1",
     img: "/word-images/newspaper-office/wall-clock.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A clock fixed to a wall that shows the current time.",
     topic: "newspaper-office",
   },
   {
@@ -103,7 +102,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈnjuːzˌpeɪpər/",
     cefr: "A2",
     img: "/word-images/newspaper-office/newspaper.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A printed or digital publication containing recent news and information.",
     topic: "newspaper-office",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhɛdˌlaɪn/",
     cefr: "A2",
     img: "/word-images/newspaper-office/headline.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large title that introduces the main point of a news story.",
     topic: "newspaper-office",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɑːrtɪkəl/",
     cefr: "A2",
     img: "/word-images/newspaper-office/article.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A piece of writing about a particular subject or event.",
     topic: "newspaper-office",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɒləm/",
     cefr: "A2",
     img: "/word-images/newspaper-office/column.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A regular newspaper article written by the same writer.",
     topic: "newspaper-office",
   },
   {
@@ -139,7 +138,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfoʊtəˌɡræf/",
     cefr: "B1",
     img: "/word-images/newspaper-office/photograph.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A picture made with a camera to record a person, place, or event.",
     topic: "newspaper-office",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkæpʃən/",
     cefr: "A2",
     img: "/word-images/newspaper-office/caption.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Words placed beside a picture to explain what it shows.",
     topic: "newspaper-office",
   },
   {
@@ -157,7 +156,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈklæsɪfaɪd æd/",
     cefr: "B1",
     img: "/word-images/newspaper-office/classified-ad.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small advertisement grouped with similar notices in a newspaper.",
     topic: "newspaper-office",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌɛdɪˈtɔːriəl/",
     cefr: "A2",
     img: "/word-images/newspaper-office/editorial.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An article that gives a publication’s opinion about an issue.",
     topic: "newspaper-office",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/frʌnt peɪdʒ/",
     cefr: "B1",
     img: "/word-images/newspaper-office/front-page.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The first page of a newspaper showing its most important stories.",
     topic: "newspaper-office",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bæk peɪdʒ/",
     cefr: "B1",
     img: "/word-images/newspaper-office/back-page.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The last page of a newspaper, often with special features.",
     topic: "newspaper-office",
   },
   {
@@ -193,7 +192,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/rɪˈpɔːrtər/",
     cefr: "A2",
     img: "/word-images/newspaper-office/reporter.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A journalist who gathers information and writes news stories.",
     topic: "newspaper-office",
   },
   {
@@ -202,7 +201,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɛdɪtər/",
     cefr: "A2",
     img: "/word-images/newspaper-office/editor.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who checks, improves, and chooses written material.",
     topic: "newspaper-office",
   },
   {
@@ -211,7 +210,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fəˈtɒɡrəfər/",
     cefr: "B1",
     img: "/word-images/newspaper-office/photographer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who takes photographs, especially for newspapers and news reports.",
     topic: "newspaper-office",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɒləmɪst/",
     cefr: "A2",
     img: "/word-images/newspaper-office/columnist.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A writer who regularly contributes a column to a publication.",
     topic: "newspaper-office",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kɑːrˈtuːnɪst/",
     cefr: "B1",
     img: "/word-images/newspaper-office/cartoonist.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An artist who creates cartoons for newspapers, magazines, or online news.",
     topic: "newspaper-office",
   },
   {
@@ -238,7 +237,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpruːfˌriːdər/",
     cefr: "B1",
     img: "/word-images/newspaper-office/proofreader.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who checks writing for spelling, grammar, and printing mistakes.",
     topic: "newspaper-office",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɒpi ˈɛdɪtər/",
     cefr: "B1",
     img: "/word-images/newspaper-office/copy-editor.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An editor who improves the accuracy, clarity, and style of text.",
     topic: "newspaper-office",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌkɒrɪˈspɒndənt/",
     cefr: "B1",
     img: "/word-images/newspaper-office/correspondent.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A journalist who reports from a particular place or subject area.",
     topic: "newspaper-office",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɪntɜːrn/",
     cefr: "A2",
     img: "/word-images/newspaper-office/intern.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A student or trainee working temporarily to gain experience.",
     topic: "newspaper-office",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpʌblɪʃər/",
     cefr: "A2",
     img: "/word-images/newspaper-office/publisher.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person or company that produces and distributes publications.",
     topic: "newspaper-office",
   },
   {
@@ -283,7 +282,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/prɛs pæs/",
     cefr: "B1",
     img: "/word-images/newspaper-office/press-pass.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An identity card allowing a journalist to enter an event.",
     topic: "newspaper-office",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈnoʊtˌbʊk/",
     cefr: "A2",
     img: "/word-images/newspaper-office/notebook.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A book of blank pages for recording information and ideas.",
     topic: "newspaper-office",
   },
   {
@@ -301,7 +300,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pɛn/",
     cefr: "A2",
     img: "/word-images/newspaper-office/pen.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool that uses ink to write on paper.",
     topic: "newspaper-office",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/vɔɪs rɪˈkɔːrdər/",
     cefr: "B1",
     img: "/word-images/newspaper-office/voice-recorder.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that records spoken sounds so a journalist can listen later.",
     topic: "newspaper-office",
   },
   {
@@ -319,7 +318,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkæmərə/",
     cefr: "A2",
     img: "/word-images/newspaper-office/camera.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that takes photographs or records video.",
     topic: "newspaper-office",
   },
   {
@@ -337,7 +336,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmaɪkrəˌfoʊn/",
     cefr: "B1",
     img: "/word-images/newspaper-office/microphone.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that changes sound into an electrical recording or signal.",
     topic: "newspaper-office",
   },
   {
@@ -346,7 +345,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtraɪˌpɒd/",
     cefr: "A2",
     img: "/word-images/newspaper-office/tripod.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A three-legged stand that keeps a camera steady.",
     topic: "newspaper-office",
   },
   {
@@ -355,7 +354,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/prɛs rɪˈliːs/",
     cefr: "B1",
     img: "/word-images/newspaper-office/press-release.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An official statement sent to journalists to announce news or an event.",
     topic: "newspaper-office",
   },
   {
@@ -364,7 +363,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɪntərˌvjuː noʊts/",
     cefr: "B2",
     img: "/word-images/newspaper-office/interview-notes.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Written points that record what someone said during an interview.",
     topic: "newspaper-office",
   },
   {
@@ -373,7 +372,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dræft/",
     cefr: "A2",
     img: "/word-images/newspaper-office/draft.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An early version of writing that can still be changed.",
     topic: "newspaper-office",
   },
   {
@@ -382,7 +381,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdɛdˌlaɪn/",
     cefr: "A2",
     img: "/word-images/newspaper-office/deadline.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The latest time by which something must be finished.",
     topic: "newspaper-office",
   },
   {
@@ -391,7 +390,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈleɪˌaʊt/",
     cefr: "A2",
     img: "/word-images/newspaper-office/layout.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The arrangement of text, pictures, and spaces on a page.",
     topic: "newspaper-office",
   },
   {
@@ -400,7 +399,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pruːf/",
     cefr: "A2",
     img: "/word-images/newspaper-office/proof.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A test copy checked before a publication is printed.",
     topic: "newspaper-office",
   },
   {
@@ -409,7 +408,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈprɪntɪŋ prɛs/",
     cefr: "B1",
     img: "/word-images/newspaper-office/printing-press.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine that produces many printed copies of a publication.",
     topic: "newspaper-office",
   },
   {
@@ -418,7 +417,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪŋk/",
     cefr: "A2",
     img: "/word-images/newspaper-office/ink.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Coloured liquid or paste used for writing and printing.",
     topic: "newspaper-office",
   },
   {
@@ -427,7 +426,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpeɪpər roʊl/",
     cefr: "B1",
     img: "/word-images/newspaper-office/paper-roll.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long continuous sheet of paper wound around a tube.",
     topic: "newspaper-office",
   },
   {
@@ -436,7 +435,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfoʊldɪŋ məˈʃiːn/",
     cefr: "B2",
     img: "/word-images/newspaper-office/folding-machine.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine that folds printed paper into the required shape.",
     topic: "newspaper-office",
   },
   {
@@ -445,7 +444,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dɪˈlɪvəri trʌk/",
     cefr: "B1",
     img: "/word-images/newspaper-office/delivery-truck.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A vehicle used to carry newspapers or goods to different places.",
     topic: "newspaper-office",
   },
   {
@@ -454,7 +453,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈnjuːzˌstænd/",
     cefr: "A2",
     img: "/word-images/newspaper-office/newsstand.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small shop or stand that sells newspapers and magazines.",
     topic: "newspaper-office",
   },
   {
@@ -463,7 +462,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbreɪkɪŋ njuːz/",
     cefr: "B1",
     img: "/word-images/newspaper-office/breaking-news.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Important news reported while an event is still happening or developing.",
     topic: "newspaper-office",
   },
   {
@@ -472,7 +471,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfiːtʃər ˈstɔːri/",
     cefr: "B1",
     img: "/word-images/newspaper-office/feature-story.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A longer article that explores a person, place, or topic.",
     topic: "newspaper-office",
   },
   {
@@ -481,7 +480,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/əˈpɪnjən piːs/",
     cefr: "B1",
     img: "/word-images/newspaper-office/opinion-piece.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An article in which a writer explains a personal view.",
     topic: "newspaper-office",
   },
   {
@@ -490,7 +489,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/rɪˈvjuː/",
     cefr: "A2",
     img: "/word-images/newspaper-office/review.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An article that evaluates a book, film, product, or event.",
     topic: "newspaper-office",
   },
   {
@@ -499,7 +498,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɪntərˌvjuː/",
     cefr: "A2",
     img: "/word-images/newspaper-office/interview.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A conversation in which one person asks another questions.",
     topic: "newspaper-office",
   },
   {
@@ -508,7 +507,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪnˌvɛstɪˈɡeɪʃən/",
     cefr: "B1",
     img: "/word-images/newspaper-office/investigation.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A careful search for facts about a serious or complex matter.",
     topic: "newspaper-office",
   },
   {
@@ -517,7 +516,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɛðər rɪˈpɔːrt/",
     cefr: "B1",
     img: "/word-images/newspaper-office/weather-report.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Information about current or expected weather conditions in a particular place.",
     topic: "newspaper-office",
   },
   {
@@ -526,7 +525,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/spɔːrts skɔːr/",
     cefr: "B1",
     img: "/word-images/newspaper-office/sports-score.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The number of points or goals achieved in a sports game.",
     topic: "newspaper-office",
   },
   {
@@ -535,7 +534,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/oʊˈbɪtʃuˌɛri/",
     cefr: "A2",
     img: "/word-images/newspaper-office/obituary.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A published notice about someone who has died.",
     topic: "newspaper-office",
   },
   {
@@ -544,7 +543,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌædvərˈtaɪzmənt/",
     cefr: "B1",
     img: "/word-images/newspaper-office/advertisement.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A public message designed to promote a product or service.",
     topic: "newspaper-office",
   },
   {
@@ -553,7 +552,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈklæsɪfaɪd/",
     cefr: "B1",
     img: "/word-images/newspaper-office/classified.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An advertisement placed under a category with similar short notices.",
     topic: "newspaper-office",
   },
   {
@@ -562,7 +561,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kɑːrˈtuːn/",
     cefr: "A2",
     img: "/word-images/newspaper-office/cartoon.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A humorous drawing or comic strip, often about current events.",
     topic: "newspaper-office",
   },
   {
@@ -571,7 +570,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfoʊtoʊ/",
     cefr: "A2",
     img: "/word-images/newspaper-office/photo.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A picture captured with a camera for a record, report, or memory.",
     topic: "newspaper-office",
   },
   {
@@ -580,7 +579,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdʒɜːrnəlɪst/",
     cefr: "B1",
     img: "/word-images/newspaper-office/journalist.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who collects, checks, and reports news for the public.",
     topic: "newspaper-office",
   },
   {
@@ -589,7 +588,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈprɪntər/",
     cefr: "A2",
     img: "/word-images/newspaper-office/printer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine that produces paper copies of digital documents.",
     topic: "newspaper-office",
   },
   {
@@ -598,7 +597,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈleɪˌaʊt dɪˈzaɪnər/",
     cefr: "B2",
     img: "/word-images/newspaper-office/layout-designer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who arranges text and images for publication pages.",
     topic: "newspaper-office",
   },
   {
@@ -607,7 +606,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɔːrs/",
     cefr: "A2",
     img: "/word-images/newspaper-office/source.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person, document, or place that provides information.",
     topic: "newspaper-office",
   },
   {
@@ -616,7 +615,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpʌblɪʃ/",
     cefr: "A2",
     img: "/word-images/newspaper-office/publish.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To prepare and make writing available to the public.",
     topic: "newspaper-office",
   },
   {
@@ -625,7 +624,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/prɪnt/",
     cefr: "A2",
     img: "/word-images/newspaper-office/print.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To produce words or images on paper using a machine.",
     topic: "newspaper-office",
   },
   {
@@ -634,7 +633,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dɪˈstrɪbjuːt/",
     cefr: "B1",
     img: "/word-images/newspaper-office/distribute.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To deliver publications or information to many people in different places.",
     topic: "newspaper-office",
   },
   {
@@ -643,7 +642,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/səbˈskraɪb/",
     cefr: "A2",
     img: "/word-images/newspaper-office/subscribe.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To pay regularly to receive a publication or service.",
     topic: "newspaper-office",
   },
   {
@@ -652,7 +651,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpruːfˌriːd/",
     cefr: "A2",
     img: "/word-images/newspaper-office/proofread.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To read writing carefully and correct errors before publication.",
     topic: "newspaper-office",
   },
   {
@@ -661,7 +660,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɑːrkaɪv/",
     cefr: "A2",
     img: "/word-images/newspaper-office/archive.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A collection of records kept for future reference.",
     topic: "newspaper-office",
   },
 ];
