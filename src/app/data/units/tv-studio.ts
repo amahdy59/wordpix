@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkæmərə/",
     cefr: "A2",
     img: "/word-images/tv-studio/camera.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device used to record moving pictures and sound.",
     topic: "tv-studio",
   },
   {
@@ -22,7 +21,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtraɪˌpɒd/",
     cefr: "A2",
     img: "/word-images/tv-studio/tripod.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A three-legged stand that keeps a camera steady.",
     topic: "tv-studio",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/buːm ˈmaɪkrəˌfoʊn/",
     cefr: "B2",
     img: "/word-images/tv-studio/boom-microphone.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A microphone on a long pole held above the people being recorded.",
     topic: "tv-studio",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈspɒtˌlaɪt/",
     cefr: "A2",
     img: "/word-images/tv-studio/spotlight.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A strong focused light that shines on one part of a stage.",
     topic: "tv-studio",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɒftˌbɒks laɪt/",
     cefr: "B1",
     img: "/word-images/tv-studio/softbox-light.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A light with a cover that creates soft, even illumination.",
     topic: "tv-studio",
   },
   {
@@ -58,7 +57,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɛlɪˌprɒmptər/",
     cefr: "B1",
     img: "/word-images/tv-studio/teleprompter.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A screen that shows a presenter the words to say.",
     topic: "tv-studio",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡriːn skriːn/",
     cefr: "B1",
     img: "/word-images/tv-studio/green-screen.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A green background used to add different images during editing.",
     topic: "tv-studio",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdɒli/",
     cefr: "A2",
     img: "/word-images/tv-studio/dolly.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A wheeled platform used to move a camera smoothly.",
     topic: "tv-studio",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dʒɪb kreɪn/",
     cefr: "B1",
     img: "/word-images/tv-studio/jib-crane.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A movable arm that carries a camera for high or sweeping shots.",
     topic: "tv-studio",
   },
   {
@@ -94,7 +93,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɒnɪtər wɔːl/",
     cefr: "B1",
     img: "/word-images/tv-studio/monitor-wall.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A group of screens showing several video feeds at once.",
     topic: "tv-studio",
   },
   {
@@ -103,7 +102,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈæŋkər dɛsk/",
     cefr: "B1",
     img: "/word-images/tv-studio/anchor-desk.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The desk where a news presenter sits during a broadcast.",
     topic: "tv-studio",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbækˌɡraʊnd sɛt/",
     cefr: "B1",
     img: "/word-images/tv-studio/background-set.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The scenery placed behind people in a television program or recorded scene.",
     topic: "tv-studio",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/steɪdʒ/",
     cefr: "A2",
     img: "/word-images/tv-studio/stage.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An area where performers or presenters appear on camera.",
     topic: "tv-studio",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈplætˌfɔːrm/",
     cefr: "A2",
     img: "/word-images/tv-studio/platform.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A raised surface used for equipment, sets, or performances.",
     topic: "tv-studio",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/prɒps/",
     cefr: "A2",
     img: "/word-images/tv-studio/props.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Objects used by performers or placed in a scene.",
     topic: "tv-studio",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈloʊɡoʊ/",
     cefr: "A2",
     img: "/word-images/tv-studio/logo.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A design that identifies a company, channel, or program.",
     topic: "tv-studio",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbækˌdrɒp/",
     cefr: "A2",
     img: "/word-images/tv-studio/backdrop.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A background placed behind a subject or scene.",
     topic: "tv-studio",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/flɔːr ˈmɑːrkɪŋ/",
     cefr: "B1",
     img: "/word-images/tv-studio/floor-marking.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A visible mark showing where a person or object should stand.",
     topic: "tv-studio",
   },
   {
@@ -193,7 +192,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dɪˈrɛktər/",
     cefr: "A2",
     img: "/word-images/tv-studio/director.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The person who controls how a television production is made.",
     topic: "tv-studio",
   },
   {
@@ -202,7 +201,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/prəˈdjuːsər/",
     cefr: "A2",
     img: "/word-images/tv-studio/producer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The person who organises the people, money, and work for a program.",
     topic: "tv-studio",
   },
   {
@@ -211,7 +210,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkæmərə ˈɒpəˌreɪtər/",
     cefr: "B2",
     img: "/word-images/tv-studio/camera-operator.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who controls a camera during filming or broadcasting.",
     topic: "tv-studio",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/saʊnd ˌɛndʒɪˈnɪər/",
     cefr: "B1",
     img: "/word-images/tv-studio/sound-engineer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who records, mixes, and improves the program’s sound.",
     topic: "tv-studio",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlaɪtɪŋ tɛkˈnɪʃən/",
     cefr: "B2",
     img: "/word-images/tv-studio/lighting-technician.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who sets up and controls lights for a production.",
     topic: "tv-studio",
   },
   {
@@ -238,7 +237,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmeɪkʌp ˈɑːrtɪst/",
     cefr: "B1",
     img: "/word-images/tv-studio/makeup-artist.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who applies makeup for performers or presenters before filming begins.",
     topic: "tv-studio",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɛt dɪˈzaɪnər/",
     cefr: "B1",
     img: "/word-images/tv-studio/set-designer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who plans and creates the scenery for a production.",
     topic: "tv-studio",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/skrɪpt ˈraɪtər/",
     cefr: "B1",
     img: "/word-images/tv-studio/script-writer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who writes the words and action for a program.",
     topic: "tv-studio",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɛdɪtər/",
     cefr: "A2",
     img: "/word-images/tv-studio/editor.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who selects and arranges recorded material.",
     topic: "tv-studio",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/steɪdʒ ˈmænɪdʒər/",
     cefr: "B1",
     img: "/word-images/tv-studio/stage-manager.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who coordinates people and equipment backstage during a production.",
     topic: "tv-studio",
   },
   {
@@ -283,7 +282,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/laɪv ˈbrɔːdˌkæst/",
     cefr: "B1",
     img: "/word-images/tv-studio/live-broadcast.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A program transmitted while the event is happening in real time.",
     topic: "tv-studio",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/rɪˈkɔːrdɪŋ/",
     cefr: "A2",
     img: "/word-images/tv-studio/recording.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A stored copy of video or sound that can be played again later.",
     topic: "tv-studio",
   },
   {
@@ -301,7 +300,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsætəˌlaɪt dɪʃ/",
     cefr: "B1",
     img: "/word-images/tv-studio/satellite-dish.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A curved antenna that receives television signals from a satellite in space.",
     topic: "tv-studio",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ænˈtɛnə/",
     cefr: "A2",
     img: "/word-images/tv-studio/antenna.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that sends or receives radio and television signals.",
     topic: "tv-studio",
   },
   {
@@ -319,7 +318,8 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/trænzˈmɪtər/",
     cefr: "B1",
     img: "/word-images/tv-studio/transmitter.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description:
+      "Equipment that sends a radio, television, or communication signal over a distance.",
     topic: "tv-studio",
   },
   {
@@ -328,7 +328,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɪɡnəl/",
     cefr: "A2",
     img: "/word-images/tv-studio/signal.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An electrical or radio message that carries information.",
     topic: "tv-studio",
   },
   {
@@ -337,7 +337,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃænəl/",
     cefr: "A2",
     img: "/word-images/tv-studio/channel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A television service or a numbered path for a signal.",
     topic: "tv-studio",
   },
   {
@@ -346,7 +346,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfriːkwənsi/",
     cefr: "A2",
     img: "/word-images/tv-studio/frequency.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The number of times a radio wave repeats each second.",
     topic: "tv-studio",
   },
   {
@@ -355,7 +355,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbrɔːdˌkæst ˈtaʊər/",
     cefr: "B2",
     img: "/word-images/tv-studio/broadcast-tower.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tall structure that sends radio or television signals across a wide area.",
     topic: "tv-studio",
   },
   {
@@ -364,7 +364,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kənˈtroʊl ruːm/",
     cefr: "B1",
     img: "/word-images/tv-studio/control-room.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A room where staff monitor and control a television broadcast.",
     topic: "tv-studio",
   },
   {
@@ -373,7 +373,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmaɪkrəˌfoʊn/",
     cefr: "B1",
     img: "/word-images/tv-studio/microphone.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that changes sound into an electrical recording or signal.",
     topic: "tv-studio",
   },
   {
@@ -391,7 +391,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɪksər/",
     cefr: "A2",
     img: "/word-images/tv-studio/mixer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Equipment used to combine and control different sound sources.",
     topic: "tv-studio",
   },
   {
@@ -400,7 +400,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈæmplɪˌfaɪər/",
     cefr: "A2",
     img: "/word-images/tv-studio/amplifier.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that makes an audio signal stronger.",
     topic: "tv-studio",
   },
   {
@@ -418,7 +418,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/saʊnd bɔːrd/",
     cefr: "B1",
     img: "/word-images/tv-studio/sound-board.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A panel used to adjust the volume and quality of sounds.",
     topic: "tv-studio",
   },
   {
@@ -427,7 +427,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/klɪp ɒn mɪk/",
     cefr: "B2",
     img: "/word-images/tv-studio/clip-on-mic.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small microphone attached to a person’s clothing for clear speech.",
     topic: "tv-studio",
   },
   {
@@ -436,7 +436,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pɒp ˈfɪltər/",
     cefr: "B1",
     img: "/word-images/tv-studio/pop-filter.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A screen that reduces popping sounds when someone speaks into a microphone.",
     topic: "tv-studio",
   },
   {
@@ -445,7 +445,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɔːdiˌoʊ ˈkeɪbəl/",
     cefr: "B1",
     img: "/word-images/tv-studio/audio-cable.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A cable that carries sound from one device to another.",
     topic: "tv-studio",
   },
   {
@@ -454,7 +454,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈiːkwəˌlaɪzər/",
     cefr: "A2",
     img: "/word-images/tv-studio/equalizer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A control that adjusts different ranges of sound frequencies.",
     topic: "tv-studio",
   },
   {
@@ -463,7 +463,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɛdɪtɪŋ swiːt/",
     cefr: "B1",
     img: "/word-images/tv-studio/editing-suite.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A room or computer system used to edit recorded media.",
     topic: "tv-studio",
   },
   {
@@ -472,7 +472,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtaɪmˌlaɪn/",
     cefr: "A2",
     img: "/word-images/tv-studio/timeline.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A display showing the order and length of clips in an edit.",
     topic: "tv-studio",
   },
   {
@@ -481,7 +481,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kʌt/",
     cefr: "A2",
     img: "/word-images/tv-studio/cut.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To remove part of a recording or change to another shot.",
     topic: "tv-studio",
   },
   {
@@ -490,7 +490,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/trænˈzɪʃən/",
     cefr: "B1",
     img: "/word-images/tv-studio/transition.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A change from one video shot or scene to another.",
     topic: "tv-studio",
   },
   {
@@ -499,7 +499,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈspɛʃəl ɪˈfɛkt/",
     cefr: "B1",
     img: "/word-images/tv-studio/special-effect.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An image or sound created to produce an unusual result.",
     topic: "tv-studio",
   },
   {
@@ -508,7 +508,8 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkʌlər ˈɡreɪdɪŋ/",
     cefr: "B1",
     img: "/word-images/tv-studio/color-grading.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description:
+      "Adjusting video colours to create a consistent visual style across different shots.",
     topic: "tv-studio",
   },
   {
@@ -517,7 +518,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsʌbˌtaɪtəl/",
     cefr: "A2",
     img: "/word-images/tv-studio/subtitle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Text on screen showing spoken words or translations.",
     topic: "tv-studio",
   },
   {
@@ -526,7 +527,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈvɔɪsˌoʊvər/",
     cefr: "A2",
     img: "/word-images/tv-studio/voiceover.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Spoken words recorded to accompany images without showing the speaker.",
     topic: "tv-studio",
   },
   {
@@ -535,7 +536,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈrɛndər/",
     cefr: "A2",
     img: "/word-images/tv-studio/render.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To process a project into a finished video or audio file.",
     topic: "tv-studio",
   },
   {
@@ -544,7 +545,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɛkspɔːrt/",
     cefr: "A2",
     img: "/word-images/tv-studio/export.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To save a finished project in a chosen file format.",
     topic: "tv-studio",
   },
   {
@@ -553,7 +554,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɒnɪtər/",
     cefr: "A2",
     img: "/word-images/tv-studio/monitor.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A screen that displays images or information from equipment.",
     topic: "tv-studio",
   },
   {
@@ -562,7 +563,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/buːm mɪk/",
     cefr: "B1",
     img: "/word-images/tv-studio/boom-mic.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A microphone mounted on a pole to record sound from above.",
     topic: "tv-studio",
   },
   {
@@ -571,7 +572,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈklæpərˌbɔːrd/",
     cefr: "B1",
     img: "/word-images/tv-studio/clapperboard.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A board snapped before filming to identify and synchronise a shot.",
     topic: "tv-studio",
   },
   {
@@ -580,7 +581,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈæŋkər/",
     cefr: "A2",
     img: "/word-images/tv-studio/anchor.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A presenter who leads a television news program.",
     topic: "tv-studio",
   },
   {
@@ -589,7 +590,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/rɪˈpɔːrtər/",
     cefr: "A2",
     img: "/word-images/tv-studio/reporter.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A journalist who gathers information and presents news.",
     topic: "tv-studio",
   },
   {
@@ -598,7 +599,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkæmərəˌmæn/",
     cefr: "A2",
     img: "/word-images/tv-studio/cameraman.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who operates a camera during filming.",
     topic: "tv-studio",
   },
   {
@@ -607,7 +608,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tɛkˈnɪʃən/",
     cefr: "B1",
     img: "/word-images/tv-studio/technician.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who maintains and operates technical equipment during a production.",
     topic: "tv-studio",
   },
   {
@@ -616,7 +617,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/laɪv/",
     cefr: "A2",
     img: "/word-images/tv-studio/live.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Broadcast or performed at the same time as it happens.",
     topic: "tv-studio",
   },
   {
@@ -625,7 +626,8 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kəˈmɜːrʃəl/",
     cefr: "B1",
     img: "/word-images/tv-studio/commercial.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description:
+      "A short advertisement shown between television programs to promote a product or service.",
     topic: "tv-studio",
   },
   {
@@ -634,7 +636,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɪntərˌvjuː/",
     cefr: "A2",
     img: "/word-images/tv-studio/interview.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A conversation in which one person asks another questions.",
     topic: "tv-studio",
   },
   {
@@ -643,7 +645,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɛɡmənt/",
     cefr: "A2",
     img: "/word-images/tv-studio/segment.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "One part of a television program that focuses on a particular topic.",
     topic: "tv-studio",
   },
   {
@@ -652,7 +654,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhɛdˌlaɪn/",
     cefr: "A2",
     img: "/word-images/tv-studio/headline.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A short title that introduces the main news story.",
     topic: "tv-studio",
   },
   {
@@ -661,7 +663,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɛðər mæp/",
     cefr: "B1",
     img: "/word-images/tv-studio/weather-map.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A map showing weather conditions across an area during a news forecast.",
     topic: "tv-studio",
   },
 ];
