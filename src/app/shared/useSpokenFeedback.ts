@@ -1,8 +1,7 @@
 import { useCallback, useEffect, useRef } from "react";
 import { useAccessibility } from "./useAccessibilityPreferences";
 import { buildFeedbackSequence } from "../exercises/feedbackSpeech";
-import { audioUrl, audioKey } from "./assetUrls";
-import { getCachedAudio } from "../../lib/persistence/db";
+import { useAudio } from "./useAudio";
 
 const CHIME_CLEARANCE_MS = 180;
 
@@ -26,68 +25,26 @@ export interface SpokenFeedback {
   delayFor: (correct: boolean) => number;
 }
 
-/**
- * Resolves a text string to its cached blob URL if offline,
- * or its remote CDN URL / local fallback if online.
- */
-async function resolveAudioSource(text: string): Promise<string | null> {
-  // We can't import audioHash synchronously because it uses crypto API,
-  // but audioKey handles it asynchronously.
-  const key = await audioKey(text);
-  if (!key) return null;
-
-  // Derive the hash from the key (audio/xx/HASH.mp3 -> HASH)
-  const hash = key.split("/").pop()?.replace(".mp3", "");
-  if (!hash) return null;
-
-  // Check if we have it in IndexedDB (offline support)
-  const cacheKey = `eleven:XfNU2rGpBa01ckF309OY:${text.toLowerCase().trim()}`;
-  const cachedBlob = await getCachedAudio(cacheKey);
-  if (cachedBlob) {
-    return URL.createObjectURL(cachedBlob);
-  }
-
-  // Try the CDN
-  const remoteUrl = await audioUrl(text);
-
-  // If we are strictly offline (and it wasn't in DB), we might try a local public folder fallback
-  // specifically for feedback stems which we copied to public/audio/feedback.
-  // We prioritize the CDN URL if available, but if fetch fails, the audio element
-  // onerror can't easily switch sources seamlessly. For now, we return the remote CDN URL.
-  // To handle offline properly, the service worker caches CDN requests.
-  return remoteUrl ?? `/audio/feedback/${hash}.mp3`;
-}
-
 export function useSpokenFeedback(): SpokenFeedback {
   const { accessibility } = useAccessibility();
-  // Feedback is always enabled if accessibility preferences allow it,
-  // since we rely on pre-generated audio rather than local TTS voices.
+  // Feedback is always enabled if accessibility preferences allow it
   const enabled = accessibility.spokenFeedback !== false;
 
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const variantRef = useRef(0);
-  const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const sequenceQueueRef = useRef<string[]>([]);
   const isPlayingRef = useRef(false);
 
   const onCompleteRef = useRef<(() => void) | null>(null);
 
-  const cancel = useCallback(() => {
-    if (timerRef.current !== null) {
-      clearTimeout(timerRef.current);
-      timerRef.current = null;
-    }
-    sequenceQueueRef.current = [];
-    isPlayingRef.current = false;
-    onCompleteRef.current = null;
-    if (currentAudioRef.current) {
-      currentAudioRef.current.pause();
-      currentAudioRef.current.src = "";
-      currentAudioRef.current = null;
-    }
-  }, []);
+  const playNextInSequenceRef = useRef<() => void>();
 
-  const playNextInSequence = useCallback(async function playNextInSequence() {
+  const { speak, stop } = useAudio({
+    onEnded: () => playNextInSequenceRef.current?.(),
+    onError: () => playNextInSequenceRef.current?.(),
+  });
+
+  const playNextInSequence = useCallback(() => {
     if (sequenceQueueRef.current.length === 0) {
       isPlayingRef.current = false;
       const onComplete = onCompleteRef.current;
@@ -97,33 +54,23 @@ export function useSpokenFeedback(): SpokenFeedback {
     }
 
     const nextText = sequenceQueueRef.current.shift();
-    if (!nextText) return;
+    if (nextText) speak(nextText);
+  }, [speak]);
 
-    try {
-      const src = await resolveAudioSource(nextText);
-      if (!src) {
-        // Skip this clip if we can't resolve it, move to next
-        playNextInSequence();
-        return;
-      }
+  useEffect(() => {
+    playNextInSequenceRef.current = playNextInSequence;
+  }, [playNextInSequence]);
 
-      const audio = new Audio(src);
-      currentAudioRef.current = audio;
-
-      audio.onended = () => {
-        playNextInSequence();
-      };
-
-      audio.onerror = () => {
-        // If it fails to load, gracefully skip to the next part of the sequence
-        playNextInSequence();
-      };
-
-      await audio.play();
-    } catch (err) {
-      playNextInSequence();
+  const cancel = useCallback(() => {
+    if (timerRef.current !== null) {
+      clearTimeout(timerRef.current);
+      timerRef.current = null;
     }
-  }, []);
+    sequenceQueueRef.current = [];
+    isPlayingRef.current = false;
+    onCompleteRef.current = null;
+    stop();
+  }, [stop]);
 
   const speakFeedback = useCallback(
     (input: SpeakInput, onComplete?: () => void) => {
