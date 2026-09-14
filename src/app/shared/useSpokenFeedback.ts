@@ -21,13 +21,13 @@ interface SpeakInput {
 
 export interface SpokenFeedback {
   enabled: boolean;
-  speakFeedback: (input: SpeakInput) => void;
+  speakFeedback: (input: SpeakInput, onComplete?: () => void) => void;
   cancel: () => void;
   delayFor: (correct: boolean) => number;
 }
 
-/** 
- * Resolves a text string to its cached blob URL if offline, 
+/**
+ * Resolves a text string to its cached blob URL if offline,
  * or its remote CDN URL / local fallback if online.
  */
 async function resolveAudioSource(text: string): Promise<string | null> {
@@ -49,10 +49,10 @@ async function resolveAudioSource(text: string): Promise<string | null> {
 
   // Try the CDN
   const remoteUrl = await audioUrl(text);
-  
+
   // If we are strictly offline (and it wasn't in DB), we might try a local public folder fallback
   // specifically for feedback stems which we copied to public/audio/feedback.
-  // We prioritize the CDN URL if available, but if fetch fails, the audio element 
+  // We prioritize the CDN URL if available, but if fetch fails, the audio element
   // onerror can't easily switch sources seamlessly. For now, we return the remote CDN URL.
   // To handle offline properly, the service worker caches CDN requests.
   return remoteUrl ?? `/audio/feedback/${hash}.mp3`;
@@ -60,7 +60,7 @@ async function resolveAudioSource(text: string): Promise<string | null> {
 
 export function useSpokenFeedback(): SpokenFeedback {
   const { accessibility } = useAccessibility();
-  // Feedback is always enabled if accessibility preferences allow it, 
+  // Feedback is always enabled if accessibility preferences allow it,
   // since we rely on pre-generated audio rather than local TTS voices.
   const enabled = accessibility.spokenFeedback !== false;
 
@@ -109,7 +109,7 @@ export function useSpokenFeedback(): SpokenFeedback {
 
       const audio = new Audio(src);
       currentAudioRef.current = audio;
-      
+
       audio.onended = () => {
         playNextInSequence();
       };
