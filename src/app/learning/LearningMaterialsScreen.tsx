@@ -4,6 +4,7 @@ import { useAudio } from "../shared/useAudio";
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { BackButton } from "../shared/BackButton";
+import { Select } from "../shared/Select";
 import { StudyShell } from "./study/StudyShell";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, type VocabularyItem } from "../data/lessons";
 import { loadLearningMaterials } from "./registry";
@@ -879,18 +880,16 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
             >
               Part of speech:
             </label>
-            <select
-              id="pos-filter"
+            <Select
+              ariaLabel="Filter by part of speech"
               value={posFilter}
-              onChange={(e) => setPosFilter(e.target.value)}
-              className="px-3.5 py-2 bg-background border border-border rounded-xl text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
-            >
-              {partsOfSpeech.map((pos) => (
-                <option key={pos} value={pos}>
-                  {pos === "all" ? "All parts of speech" : pos}
-                </option>
-              ))}
-            </select>
+              onChange={(value) => setPosFilter(value)}
+              options={partsOfSpeech.map((pos) => ({
+                value: pos,
+                label: pos === "all" ? "All parts of speech" : pos,
+              }))}
+              className="bg-background border border-border rounded-xl text-sm font-medium focus-within:outline-none focus-within:ring-2 focus-within:ring-primary"
+            />
           </div>
         )}
       </div>

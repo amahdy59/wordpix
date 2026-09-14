@@ -7,6 +7,7 @@ import { WordImage } from "../../shared/WordImage";
 import { useAudio } from "../../shared/useAudio";
 import { getLexiconEntry, hasArabicGloss } from "../../data/lexiconDictionary";
 import { WordInspectorModal } from "../../shared/WordInspectorModal";
+import { Select } from "../../shared/Select";
 import type { VocabularyItem } from "../../data/lessons";
 
 interface Props {
@@ -117,20 +118,22 @@ export function LearnArea({
             className="min-h-11 w-full rounded-xl border border-border bg-background pe-3 ps-10 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           />
         </label>
-        <label className="grid grid-cols-[auto_1fr] items-center gap-2 text-sm font-semibold text-foreground">
-          <span>Show</span>
-          <select
+        <div className="grid grid-cols-[auto_1fr] items-center gap-2 text-sm font-semibold text-foreground">
+          <span aria-hidden="true">Show</span>
+          <Select
             value={filter}
-            onChange={(event) => setFilter(event.target.value as "all" | StudyWordStatus)}
-            className="min-h-11 min-w-0 rounded-xl border border-border bg-background px-3 text-sm text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            <option value="all">All words</option>
-            <option value="new">New</option>
-            <option value="learning">Learning</option>
-            <option value="comfortable">Learned</option>
-            <option value="review">Review again</option>
-          </select>
-        </label>
+            onChange={(value) => setFilter(value as "all" | StudyWordStatus)}
+            options={[
+              { value: "all", label: "All words" },
+              { value: "new", label: "New" },
+              { value: "learning", label: "Learning" },
+              { value: "comfortable", label: "Learned" },
+              { value: "review", label: "Review again" },
+            ]}
+            ariaLabel="Show words by status filter"
+            className="rounded-xl border border-border bg-background text-sm text-foreground focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-primary"
+          />
+        </div>
       </section>
       <p className="sr-only" role="status" aria-live="polite">
         {announcement}
@@ -206,26 +209,27 @@ export function LearnArea({
                 >
                   View examples
                 </button>
-                <label className="grid grid-cols-[auto_1fr] items-center gap-2 border-t border-border pt-3 text-sm font-semibold text-foreground">
-                  <span>Status</span>
-                  <select
+                <div className="grid grid-cols-[auto_1fr] items-center gap-2 border-t border-border pt-3 text-sm font-semibold text-foreground">
+                  <span aria-hidden="true">Status</span>
+                  <Select
                     value={status}
-                    onChange={(event) => setWordStatus(word, event.target.value as StudyWordStatus)}
-                    aria-label={`${word.label} learning status`}
-                    className={`min-h-11 min-w-0 rounded-xl border px-3 text-sm font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                    onChange={(value) => setWordStatus(word, value as StudyWordStatus)}
+                    ariaLabel={`${word.label} learning status`}
+                    options={[
+                      { value: "new", label: "New" },
+                      { value: "learning", label: "Learning" },
+                      { value: "comfortable", label: "Learned" },
+                      { value: "review", label: "Review again" },
+                    ]}
+                    className={`rounded-xl border font-bold focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-primary ${
                       learned
                         ? "border-primary bg-primary text-primary-foreground"
                         : status === "review"
                           ? "border-wp-amber bg-wp-amber/15 text-foreground"
                           : "border-border bg-background text-foreground"
                     }`}
-                  >
-                    <option value="new">New</option>
-                    <option value="learning">Learning</option>
-                    <option value="comfortable">Learned</option>
-                    <option value="review">Review again</option>
-                  </select>
-                </label>
+                  />
+                </div>
               </div>
             </article>
           );

@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { UnitLearningMaterials, RewriteExercise, MatchingExercise } from "./types";
 import { CheckCircle2, XCircle } from "lucide-react";
 import type { UnitStudyProgress } from "./study/types";
+import { Select } from "../shared/Select";
 
 const CARD = "bg-card rounded-3xl border border-border p-5 sm:p-6 shadow-xs";
 
@@ -543,30 +544,23 @@ function MatchingExerciseComponent({ exercises }: { exercises: MatchingExercise[
               <p className="text-sm text-foreground leading-relaxed">{ex.definition}</p>
             </div>
             <div className="sm:w-1/3 shrink-0">
-              <select
+              <Select
                 value={selected}
-                onChange={(e) => {
-                  setAnswers((p) => ({ ...p, [ex.word]: e.target.value }));
+                onChange={(value) => {
+                  setAnswers((p) => ({ ...p, [ex.word]: value }));
                   setChecked(false);
                 }}
-                aria-label={`Match word for definition ${i + 1}`}
-                className={`w-full rounded-xl border px-3.5 py-2.5 bg-background text-sm font-medium outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] ${
+                ariaLabel={`Match word for definition ${i + 1}`}
+                placeholder="Select a word..."
+                options={words.map((w) => ({ value: w, label: w }))}
+                className={`w-full rounded-xl border bg-background text-sm font-medium focus-within:ring-2 focus-within:ring-primary ${
                   checked
                     ? isCorrect
                       ? "border-wp-green bg-wp-green-light/20 text-wp-green font-bold"
                       : "border-destructive bg-destructive/10 text-destructive font-bold"
                     : "border-border text-foreground"
                 }`}
-              >
-                <option value="" disabled>
-                  Select a word…
-                </option>
-                {words.map((w) => (
-                  <option key={w} value={w}>
-                    {w}
-                  </option>
-                ))}
-              </select>
+              />
             </div>
           </div>
         );
