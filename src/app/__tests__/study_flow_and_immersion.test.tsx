@@ -69,10 +69,8 @@ describe("Study vocabulary grid", () => {
     expect(screen.getAllByRole("listitem")).toHaveLength(2);
     expect(screen.getByRole("heading", { name: "Bed" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Pillow" })).toBeInTheDocument();
-    await userEvent.selectOptions(
-      screen.getByRole("combobox", { name: "Bed learning status" }),
-      "comfortable"
-    );
+    await userEvent.click(screen.getByRole("combobox", { name: "Bed learning status" }));
+    await userEvent.click(screen.getByRole("option", { name: "Learned" }));
     const update = onProgressUpdate.mock.calls[0][0];
     expect(update(mockProgress).wordStatus.bed).toBe("comfortable");
   });
@@ -88,10 +86,8 @@ describe("Study vocabulary grid", () => {
         onNextActivity={vi.fn()}
       />
     );
-    await userEvent.selectOptions(
-      screen.getByRole("combobox", { name: "Bed learning status" }),
-      "review"
-    );
+    await userEvent.click(screen.getByRole("combobox", { name: "Bed learning status" }));
+    await userEvent.click(screen.getByRole("option", { name: "Review again" }));
     const update = onProgressUpdate.mock.calls[0][0];
     expect(update(mockProgress).reviewWordIds).toContain("bed");
   });
@@ -112,10 +108,8 @@ describe("Study vocabulary grid", () => {
     expect(screen.queryByRole("heading", { name: "Bed" })).not.toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Pillow" })).toBeInTheDocument();
 
-    await userEvent.selectOptions(
-      screen.getByRole("combobox", { name: "Pillow learning status" }),
-      "review"
-    );
+    await userEvent.click(screen.getByRole("combobox", { name: "Pillow learning status" }));
+    await userEvent.click(screen.getByRole("option", { name: "Review again" }));
     expect(screen.getByRole("status")).toHaveTextContent("Pillow marked review.");
   });
 });
