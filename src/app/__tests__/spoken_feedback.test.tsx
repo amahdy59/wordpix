@@ -1,5 +1,5 @@
 import { describe, expect, it, vi, beforeEach, afterEach } from "vitest";
-import { act, renderHook, waitFor } from "@testing-library/react";
+import { renderHook, act } from "@testing-library/react";
 import { ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 
 let spokenFeedbackPref = true;
@@ -47,11 +47,11 @@ describe("useSpokenFeedback", () => {
     globalThis.__mockAudioInstances = [];
     vi.stubGlobal("Audio", MockAudio);
   });
-  
+
   afterEach(() => {
     vi.useRealTimers();
     vi.unstubAllGlobals();
-    delete (globalThis as any).__mockAudioInstances;
+    delete (globalThis as unknown as { __mockAudioInstances?: unknown[] }).__mockAudioInstances;
   });
 
   it("speaks the answer back, just after the chime", async () => {
@@ -81,7 +81,7 @@ describe("useSpokenFeedback", () => {
 
     act(() => result.current.speakFeedback({ correct: true, targetLabel: "Faucet" }));
     act(() => result.current.speakFeedback({ correct: true, targetLabel: "Mirror" }));
-    
+
     await act(async () => {
       vi.advanceTimersByTime(200);
       await Promise.resolve();
@@ -99,10 +99,10 @@ describe("useSpokenFeedback", () => {
       vi.advanceTimersByTime(200);
       await Promise.resolve();
     });
-    
+
     const audioInstance = globalThis.__mockAudioInstances[0];
     expect(audioInstance).toBeDefined();
-    
+
     act(() => result.current.cancel());
     expect(audioInstance.pause).toHaveBeenCalled();
   });

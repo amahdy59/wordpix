@@ -6,7 +6,18 @@ import jsxA11y from "eslint-plugin-jsx-a11y";
 import i18next from "eslint-plugin-i18next";
 
 export default tseslint.config(
-  { ignores: ["dist", "node_modules", "src/imports/**", "scripts/**", "scratch/**"] },
+  {
+    ignores: [
+      "dist",
+      "node_modules",
+      "src/imports/**",
+      "scripts/**",
+      "scratch/**",
+      "*.cjs",
+      "*.mjs",
+      "*.js",
+    ],
+  },
 
   js.configs.recommended,
   ...tseslint.configs.recommended,
