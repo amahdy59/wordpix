@@ -77,6 +77,8 @@ export function Select({
     <div ref={containerRef} className={`relative ${className}`}>
       <button
         type="button"
+        role="combobox"
+        aria-controls="listbox"
         aria-haspopup="listbox"
         aria-expanded={isOpen}
         aria-label={ariaLabel}
