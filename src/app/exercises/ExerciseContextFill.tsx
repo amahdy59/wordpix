@@ -14,6 +14,7 @@ import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { Keyboard, CheckCircle2, XCircle, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useI18n } from "../context/I18nContext";
 
 interface Props {
   step: number;
@@ -28,6 +29,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   lessonId,
   dispatch,
 }: Props) {
+  const { t } = useI18n();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
   const { accessibility } = useAccessibility();
@@ -102,6 +104,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       playIncorrect,
       currentTargetWord.id,
       currentTargetWord.label,
+      currentTargetWord.topic,
       options,
       spoken,
       dispatch,
@@ -150,7 +153,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         <>
           <span className="uppercase tracking-wider">{group.name}</span>
           <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full">
-            Sentence {queue.position} of {queue.total}
+            {t("exercise.sentenceOf", { current: queue.position, total: queue.total })}
           </span>
         </>
       }
@@ -158,13 +161,13 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
             <Keyboard className="size-4" aria-hidden />
-            <span>Press 1&#8211;{options.length} to choose a word</span>
+            <span>{t("exercise.pressNumberToChooseWord", { count: options.length })}</span>
           </div>
         </div>
       }
     >
       <div className="relative flex flex-col gap-3 sm:gap-4 w-full max-w-2xl mx-auto my-auto">
-        <h2 className="sr-only">Choose the correct word that matches the picture</h2>
+        <h2 className="sr-only">{t("exercise.chooseCorrectWord")}</h2>
 
         {/* Image with centered feedback overlay */}
         <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[3/2] sm:aspect-[16/9] max-h-[38dvh] sm:max-h-[46dvh]">
@@ -224,7 +227,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                     onClick={handleContinue}
                     className="flex items-center gap-2 px-6 min-h-[44px] rounded-full bg-white text-foreground font-sans font-bold text-sm shadow-lg hover:bg-white/90 transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white"
                   >
-                    Continue
+                    {t("action.continue")}
                     <ArrowRight className="size-4" aria-hidden />
                   </motion.button>
                 )}

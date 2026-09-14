@@ -3,6 +3,7 @@ import { supabase } from "../../lib/supabase/client";
 import { migrateGuestToAccount } from "../../lib/persistence/sync";
 import { User, X } from "lucide-react";
 import { useModalA11y } from "../../app/shared/useModalA11y";
+import { useI18n } from "../../app/context/I18nContext";
 
 interface AuthModalProps {
   onClose: () => void;
@@ -17,6 +18,7 @@ type AuthState =
 type AuthMode = "login" | "signup";
 
 export function AuthModal({ onClose }: AuthModalProps) {
+  const { t } = useI18n();
   const containerRef = useModalA11y({ isOpen: true, onDismiss: onClose });
 
   const [syncUserId, setSyncUserId] = useState<string>();
@@ -122,7 +124,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium mb-1 text-foreground" htmlFor="email">
-              Email address
+              {t("auth.email")}
             </label>
             <input
               id="email"
@@ -136,7 +138,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
           </div>
           <div>
             <label className="block text-sm font-medium mb-1 text-foreground" htmlFor="password">
-              Password
+              {t("auth.password")}
             </label>
             <input
               id="password"

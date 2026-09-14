@@ -6,29 +6,46 @@ import { ArrowRight, Check, BookOpen, Target, Sparkles, Layers, HelpCircle } fro
 import { useProgress } from "../data/progress";
 import { PlacementQuizModal } from "./PlacementQuizModal";
 import type { LearnerGoal } from "../context/LearnerContext";
+import { useI18n } from "../context/I18nContext";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
 const LEVELS = [
-  { id: "a1", title: "Beginner", subtitle: "New to English vocabulary", tag: "A1" },
-  { id: "a2", title: "Elementary", subtitle: "Know basic words already", tag: "A2" },
-  { id: "b1", title: "Intermediate", subtitle: "Expanding everyday vocabulary", tag: "B1" },
-];
+  {
+    id: "a1",
+    titleKey: "onboarding.levelA1Title",
+    subtitleKey: "onboarding.levelA1Subtitle",
+    tag: "A1",
+  },
+  {
+    id: "a2",
+    titleKey: "onboarding.levelA2Title",
+    subtitleKey: "onboarding.levelA2Subtitle",
+    tag: "A2",
+  },
+  {
+    id: "b1",
+    titleKey: "onboarding.levelB1Title",
+    subtitleKey: "onboarding.levelB1Subtitle",
+    tag: "B1",
+  },
+] as const;
 
 const DAILY_GOAL_OPTIONS = [5, 10, 20] as const;
 
-const GOAL_OPTIONS: Array<{ id: LearnerGoal; label: string }> = [
-  { id: "everyday", label: "Everyday English" },
-  { id: "travel", label: "Travel & Vacations" },
-  { id: "work", label: "Work & Career" },
-  { id: "school", label: "School & Studies" },
-  { id: "conversation", label: "Fluency & Chat" },
-  { id: "kids", label: "Children's English" },
+const GOAL_OPTIONS: Array<{ id: LearnerGoal; labelKey: string }> = [
+  { id: "everyday", labelKey: "onboarding.goalEveryday" },
+  { id: "travel", labelKey: "onboarding.goalTravel" },
+  { id: "work", labelKey: "onboarding.goalWork" },
+  { id: "school", labelKey: "onboarding.goalSchool" },
+  { id: "conversation", labelKey: "onboarding.goalConversation" },
+  { id: "kids", labelKey: "onboarding.goalKids" },
 ];
 
 export function LanguageSelect({ dispatch }: Props) {
+  const { t } = useI18n();
   const [level, setLevel] = useState<"A1" | "A2" | "B1">("A1");
   const [goalMinutes, setGoalMinutes] = useState<number>(10);
   const [selectedGoal, setSelectedGoal] = useState<LearnerGoal>("everyday");
@@ -59,7 +76,9 @@ export function LanguageSelect({ dispatch }: Props) {
           <div className="size-10 rounded-2xl bg-primary flex items-center justify-center shadow-md">
             <BookOpen className="size-5 text-primary-foreground" />
           </div>
-          <span className="font-sans font-black text-white text-xl tracking-tight">WordPix</span>
+          <span className="font-sans font-black text-white text-xl tracking-tight">
+            {t("app.title")}
+          </span>
         </div>
 
         <div className="relative z-10 flex flex-col gap-6 my-auto">
@@ -68,25 +87,24 @@ export function LanguageSelect({ dispatch }: Props) {
           </div>
           <div>
             <h2 className="font-sans font-black text-3xl xl:text-4xl text-white leading-tight">
-              Personalize Your Pace
+              {t("onboarding.paceTitle")}
             </h2>
             <p className="font-sans text-white/70 text-base mt-2 leading-relaxed">
-              We adapt lesson depth and daily review schedules to match your selected proficiency
-              level and daily practice commitment.
+              {t("onboarding.paceSubtitle")}
             </p>
           </div>
           <div className="bg-white/10 rounded-2xl p-4 border border-white/15 backdrop-blur-md flex items-center gap-3">
             <Sparkles className="size-6 text-wp-amber shrink-0" />
             <div className="text-xs font-sans text-white/90">
-              <span className="font-bold">Daily Goal:</span> {goalMinutes} minutes per day keeps
-              your vocabulary memory fresh!
+              <span className="font-bold">{t("onboarding.dailyGoalLabel")}</span>{" "}
+              {t("onboarding.dailyGoalFresh", { minutes: goalMinutes })}
             </div>
           </div>
         </div>
 
         <div className="relative z-10 flex items-center gap-2 text-white/60 text-xs font-sans font-semibold">
           <Layers className="size-4" />
-          <span>Step 2 of 2: Learning Goal Configuration</span>
+          <span>{t("onboarding.step2Config")}</span>
         </div>
       </div>
 
@@ -94,10 +112,10 @@ export function LanguageSelect({ dispatch }: Props) {
       <div className="flex-1 flex flex-col justify-between p-6 md:p-8 xl:p-12 min-h-dvh md:min-h-0 overflow-y-auto">
         <header className="w-full flex items-center justify-between z-10 shrink-0 mb-4">
           <span className="font-sans font-black text-foreground text-lg tracking-tight">
-            Your Goal
+            {t("onboarding.yourGoal")}
           </span>
           <span className="text-xs font-sans font-semibold text-muted-foreground bg-muted px-3 py-1 rounded-full border border-border">
-            Step 2 of 2
+            {t("onboarding.step2")}
           </span>
         </header>
 
@@ -105,17 +123,17 @@ export function LanguageSelect({ dispatch }: Props) {
         <main className="flex-1 flex flex-col items-start w-full max-w-md mx-auto md:mx-0 gap-6 z-10">
           <div>
             <h1 className="font-sans font-black text-foreground text-2xl md:text-3xl leading-tight">
-              Choose Your Level
+              {t("onboarding.chooseLevel")}
             </h1>
             <p className="font-sans text-muted-foreground text-sm mt-1">
-              Pick your starting point and daily practice pace.
+              {t("onboarding.chooseLevelDesc")}
             </p>
           </div>
 
           {/* Level Cards */}
           <div
             role="radiogroup"
-            aria-label="Select proficiency level"
+            aria-label={t("onboarding.selectProficiency")}
             className="w-full flex flex-col gap-2.5"
           >
             {LEVELS.map((item) => {
@@ -145,10 +163,10 @@ export function LanguageSelect({ dispatch }: Props) {
                     </div>
                     <div>
                       <p className="font-sans font-bold text-foreground text-base leading-tight">
-                        {item.title}
+                        {t(item.titleKey)}
                       </p>
                       <p className="font-sans text-muted-foreground text-xs mt-0.5">
-                        {item.subtitle}
+                        {t(item.subtitleKey)}
                       </p>
                     </div>
                   </div>
@@ -168,7 +186,7 @@ export function LanguageSelect({ dispatch }: Props) {
               className="w-full py-2.5 px-4 rounded-xl border border-primary/30 bg-primary/5 hover:bg-primary/10 text-primary font-sans font-bold text-xs flex items-center justify-center gap-2 transition-colors min-h-[44px]"
             >
               <HelpCircle className="size-4" />
-              <span>I&apos;m not sure — test my level</span>
+              <span>{t("onboarding.testMyLevel")}</span>
             </button>
           </div>
 
@@ -185,7 +203,7 @@ export function LanguageSelect({ dispatch }: Props) {
             aria-labelledby="daily-goal-heading"
           >
             <h2 id="daily-goal-heading" className="font-sans font-bold text-foreground text-sm">
-              How long per day?
+              {t("onboarding.howLongHeading")}
             </h2>
             <div className="grid grid-cols-3 gap-2">
               {DAILY_GOAL_OPTIONS.map((minutes) => {
@@ -202,7 +220,7 @@ export function LanguageSelect({ dispatch }: Props) {
                         : "bg-wp-card border-border text-foreground hover:border-primary/50"
                     }`}
                   >
-                    {minutes} min
+                    {`${minutes} ${t("onboarding.min")}`}
                   </button>
                 );
               })}
@@ -217,7 +235,7 @@ export function LanguageSelect({ dispatch }: Props) {
             aria-labelledby="goal-group-heading"
           >
             <h2 id="goal-group-heading" className="font-sans font-bold text-foreground text-sm">
-              Why are you learning?
+              {t("onboarding.whyLearningHeading")}
             </h2>
             <div className="grid grid-cols-2 gap-2">
               {GOAL_OPTIONS.map((g) => (
@@ -231,7 +249,7 @@ export function LanguageSelect({ dispatch }: Props) {
                       : "bg-wp-card border-border text-muted-foreground hover:border-primary/40"
                   }`}
                 >
-                  {g.label}
+                  {t(g.labelKey)}
                 </button>
               ))}
             </div>
@@ -247,7 +265,7 @@ export function LanguageSelect({ dispatch }: Props) {
               focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
               shadow-sm transition-all flex items-center justify-center gap-2"
           >
-            <span>Start Learning</span>
+            <span>{t("onboarding.startLearning")}</span>
             <ArrowRight className="size-5" />
           </button>
         </footer>

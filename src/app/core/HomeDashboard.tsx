@@ -91,10 +91,13 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           </div>
           <div>
             <h1 className="font-sans font-black text-foreground text-xl lg:text-2xl leading-tight">
-              {greeting}, Learner!
+              {t("dashboard.welcomeLearner", { greeting })}
             </h1>
             <p className="font-sans font-medium text-muted-foreground text-xs lg:text-sm mt-0.5">
-              Level {progress.englishLevel} · Goal: {num(progress.dailyGoalMinutes)} min/day
+              {t("dashboard.levelGoal", {
+                level: progress.englishLevel,
+                goal: num(progress.dailyGoalMinutes),
+              })}
             </p>
           </div>
         </div>
@@ -130,16 +133,19 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 font-sans font-bold text-sm text-foreground">
                   <Target className="size-4 text-primary" aria-hidden />
-                  <span>Daily Vocabulary Target</span>
+                  <span>{t("dashboard.dailyTarget")}</span>
                 </div>
                 {isDailyTargetMet ? (
                   <Badge variant="green" size="sm" className="flex items-center gap-1 font-bold">
                     <Trophy className="size-3.5" />
-                    <span>Target Met!</span>
+                    <span>{t("dashboard.targetMet")}</span>
                   </Badge>
                 ) : (
                   <Badge variant="muted" size="sm">
-                    {num(todayReviewedCount)} / {num(dailyWordTarget)} words
+                    {t("dashboard.wordsProgress", {
+                      current: num(todayReviewedCount),
+                      total: num(dailyWordTarget),
+                    })}
                   </Badge>
                 )}
               </div>
@@ -160,10 +166,16 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
               <Card variant="primary">
                 <div className="flex items-center justify-between">
                   <span className="font-sans font-semibold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full">
-                    {activeUnit.name} · ~{num(estimatedMinutes)} min
+                    {t("dashboard.unitEstimate", {
+                      unit: activeUnit.name,
+                      min: num(estimatedMinutes),
+                    })}
                   </span>
                   <span className="font-sans text-xs font-bold text-muted-foreground">
-                    {num(lessonWordsSeen)} of {num(activeLesson.wordIds.length)} words
+                    {t("dashboard.wordsOfTotal", {
+                      current: num(lessonWordsSeen),
+                      total: num(activeLesson.wordIds.length),
+                    })}
                   </span>
                 </div>
 
@@ -217,12 +229,12 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                         area: "learn",
                       })
                     }
-                    title={`Study materials for ${activeUnit.name}`}
-                    aria-label={`Study materials for ${activeUnit.name}`}
+                    title={t("dashboard.studyGuideAria", { unit: activeUnit.name })}
+                    aria-label={t("dashboard.studyGuideAria", { unit: activeUnit.name })}
                     className="w-full sm:w-auto px-5 py-3.5 bg-secondary text-primary hover:bg-primary/10 border border-primary/20 rounded-2xl font-sans font-bold text-sm min-h-[52px] flex items-center justify-center gap-2 transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
                   >
                     <Library className="size-4 shrink-0" />
-                    <span>Study Guide</span>
+                    <span>{t("dashboard.studyGuide")}</span>
                   </motion.button>
                 </div>
               </Card>
@@ -239,23 +251,23 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
                     <RotateCcw className="size-4 text-primary" />
-                    <span>Spaced Repetition Review</span>
+                    <span>{t("dashboard.srsReview")}</span>
                   </div>
                   {dueWords.length > 0 ? (
                     <Badge variant="amber" size="sm">
-                      {num(dueWords.length)} Due Today
+                      {t("dashboard.dueToday", { count: num(dueWords.length) })}
                     </Badge>
                   ) : (
                     <Badge variant="green" size="sm">
                       <CheckCircle2 className="size-3.5" />
-                      <span>All Caught Up</span>
+                      <span>{t("dashboard.allCaughtUp")}</span>
                     </Badge>
                   )}
                 </div>
                 <p className="font-sans text-muted-foreground text-xs leading-relaxed mt-2">
                   {dueWords.length > 0
-                    ? `You have ${num(dueWords.length)} vocabulary items scheduled for retention practice based on your forgetting curve.`
-                    : "Excellent memory retention! You have reviewed all active vocabulary items for today."}
+                    ? t("dashboard.retentionPractice", { count: num(dueWords.length) })
+                    : t("dashboard.excellentRetention")}
                 </p>
                 <motion.button
                   whileHover={{ scale: 1.015 }}

@@ -12,6 +12,7 @@ import { useAudio } from "../shared/useAudio";
 import { useSound } from "../shared/useSound";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { shuffleArray } from "../../utils/shuffle";
+import { useI18n } from "../context/I18nContext";
 import {
   isChoiceCorrect,
   isEntryCorrect,
@@ -30,8 +31,6 @@ interface Props {
 
 type Verdict = "correct" | "incorrect" | "acknowledged";
 
-const OPTION_KEY_HINT = "Press 1 to 9 to choose an option";
-
 /**
  * Runs an ExerciseDefinition.
  *
@@ -44,6 +43,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
   definition,
   dispatch,
 }: Props) {
+  const { t } = useI18n();
   const { accessibility } = useAccessibility();
   const { speak } = useAudio();
   const { playCorrect, playIncorrect, playClick } = useSound();
@@ -140,30 +140,38 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
     return undefined;
   }, [verdict, next]);
 
-  // Number keys select options, matching the core lesson exercises.
+  // Keyboard shortcut: number keys 1-9 pick choice options.
   useEffect(() => {
-    if (!task || task.kind !== "choice" || verdict) return undefined;
+    if (verdict !== null || !task || task.kind !== "choice") return;
+
     const onKey = (e: KeyboardEvent) => {
-      if (e.ctrlKey || e.metaKey || e.altKey || e.repeat) return;
       const target = e.target as HTMLElement | null;
-      if (target && (["INPUT", "TEXTAREA"].includes(target.tagName) || target.isContentEditable))
+      if (
+        target?.tagName === "INPUT" ||
+        target?.tagName === "TEXTAREA" ||
+        target?.isContentEditable
+      ) {
         return;
-      if (!/^[1-9]$/.test(e.key)) return;
-      const option = task.options[Number(e.key) - 1];
-      if (!option) return;
+      }
+      const num = Number.parseInt(e.key, 10);
+      if (Number.isNaN(num) || num < 1) return;
+      const opt = task.options[num - 1];
+      if (!opt) return;
       e.preventDefault();
       playClick();
-      setChoice(option.id);
+      setChoice(opt.id);
     };
+
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [task, verdict, playClick]);
 
-  const answered = results.length;
-  const score = results.filter(Boolean).length;
-  const gradedCount = definition.tasks.filter(isGraded).length;
+  if (!task || finished) {
+    const scoredTasks = definition.tasks.filter(isGraded);
+    const gradedCount = scoredTasks.length;
+    const score = results.filter(Boolean).length;
+    const answered = results.length;
 
-  if (finished || !task) {
     return (
       <div className="min-h-dvh bg-background flex flex-col">
         <LessonHeader
@@ -179,20 +187,24 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
             className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col items-center gap-2 text-center"
           >
             <CheckCircle2 className="size-12 text-wp-green" aria-hidden />
-            <h2 className="font-sans font-black text-foreground text-2xl">Exercise complete</h2>
+            <h2 className="font-sans font-black text-foreground text-2xl">
+              {t("skillRunner.exerciseComplete")}
+            </h2>
             {gradedCount > 0 ? (
               <p className="font-sans text-sm text-muted-foreground">
-                {formatNumber(score, accessibility.numeralSystem)} of{" "}
-                {formatNumber(answered, accessibility.numeralSystem)} correct.
+                {t("skillRunner.scoreResult", {
+                  score: formatNumber(score, accessibility.numeralSystem),
+                  total: formatNumber(answered, accessibility.numeralSystem),
+                })}
               </p>
             ) : (
               <p className="font-sans text-sm text-muted-foreground">
-                This drill is practice and is not scored.
+                {t("skillRunner.practiceNotScored")}
               </p>
             )}
           </div>
           <PrimaryButton
-            label="Back to Exercise Hub"
+            label={t("skillRunner.backToHub")}
             onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
           />
         </main>
@@ -225,8 +237,10 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
 
         <div className="flex flex-wrap items-center justify-between gap-3">
           <span className="font-sans font-bold text-sm text-foreground">
-            Question {formatNumber(index + 1, accessibility.numeralSystem)} of{" "}
-            {formatNumber(definition.tasks.length, accessibility.numeralSystem)}
+            {t("exercise.questionOf", {
+              current: formatNumber(index + 1, accessibility.numeralSystem),
+              total: formatNumber(definition.tasks.length, accessibility.numeralSystem),
+            })}
           </span>
           {definition.timeLimitSeconds !== undefined && (
             <ExerciseTimer countdown={countdown} enabled={timed} />
@@ -253,11 +267,11 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
             <button
               type="button"
               onClick={() => speak(task.audioText as string)}
-              aria-label="Replay the audio"
+              aria-label={t("exercise.replayAudio")}
               className="shrink-0 flex items-center gap-1.5 min-h-[44px] px-3 rounded-xl border border-border bg-wp-card text-xs font-sans font-bold hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <Volume2 className="size-4" aria-hidden />
-              <span>Replay</span>
+              <span>{t("exercise.replay")}</span>
             </button>
           )}
         </div>
@@ -301,19 +315,32 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
         <div className="flex flex-col gap-2">
           {verdict ? (
             <PrimaryButton
-              label={index + 1 >= definition.tasks.length ? "See results" : "Next question"}
+              label={
+                index + 1 >= definition.tasks.length
+                  ? t("skillRunner.seeResults")
+                  : t("skillRunner.nextQuestion")
+              }
               onClick={next}
             />
           ) : (
-            <PrimaryButton label="Check answer" onClick={check} disabled={!canCheck} />
+            <PrimaryButton
+              label={t("skillRunner.checkAnswer")}
+              onClick={check}
+              disabled={!canCheck}
+            />
           )}
           {task.kind === "order" && arrangement.length > 0 && !verdict && (
-            <SecondaryButton label="Clear my sentence" onClick={() => setArrangement([])} />
+            <SecondaryButton
+              label={t("skillRunner.clearMySentence")}
+              onClick={() => setArrangement([])}
+            />
           )}
         </div>
 
         {task.kind === "choice" && (
-          <p className="font-sans text-xs text-muted-foreground text-center">{OPTION_KEY_HINT}</p>
+          <p className="font-sans text-xs text-muted-foreground text-center">
+            {t("skillRunner.optionKeyHint")}
+          </p>
         )}
       </main>
     </div>
@@ -358,6 +385,7 @@ function TaskBody({
   placements,
   setPlacements,
 }: BodyProps) {
+  const { t } = useI18n();
   if (task.kind === "choice") {
     return (
       <div role="group" aria-label={task.prompt} className="flex flex-col gap-2.5">
@@ -383,7 +411,9 @@ function TaskBody({
   if (task.kind === "multi") {
     return (
       <fieldset className="flex flex-col gap-2.5">
-        <legend className="sr-only">{task.prompt}. Choose all that apply.</legend>
+        <legend className="sr-only">
+          {t("skillRunner.chooseAllThatApply", { prompt: task.prompt })}
+        </legend>
         {task.options.map((option) => {
           const checked = multi.includes(option.id);
           return (
@@ -412,7 +442,7 @@ function TaskBody({
     return (
       <div className="flex flex-col gap-2">
         <label htmlFor="task-entry" className="font-sans font-bold text-sm text-foreground">
-          Your answer
+          {t("skillRunner.yourAnswer")}
         </label>
         <input
           id="task-entry"
@@ -440,7 +470,7 @@ function TaskBody({
         >
           {arrangement.length === 0 ? (
             <span className="font-sans text-muted-foreground text-sm">
-              Choose words below to build the sentence.
+              {t("skillRunner.buildSentencePrompt")}
             </span>
           ) : (
             arrangement.map((token, i) => (
@@ -449,7 +479,7 @@ function TaskBody({
                 type="button"
                 disabled={disabled}
                 onClick={() => setArrangement(arrangement.filter((_, j) => j !== i))}
-                aria-label={`Remove ${token} from position ${i + 1}`}
+                aria-label={t("skillRunner.removeWordAria", { token, pos: i + 1 })}
                 className="bg-primary text-primary-foreground px-3 min-h-[44px] min-w-[44px] rounded-xl font-sans font-bold text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 {token}
@@ -458,14 +488,18 @@ function TaskBody({
           )}
         </div>
 
-        <div className="flex gap-2 flex-wrap" role="group" aria-label="Available words">
+        <div
+          className="flex gap-2 flex-wrap"
+          role="group"
+          aria-label={t("skillRunner.availableWordsAria")}
+        >
           {remaining.map((token, i) => (
             <button
               key={`${token}-pool-${i}`}
               type="button"
               disabled={disabled}
               onClick={() => setArrangement([...arrangement, token])}
-              aria-label={`Add ${token}`}
+              aria-label={t("skillRunner.addWordAria", { token })}
               className="bg-wp-card border border-border px-3.5 min-h-[44px] min-w-[44px] rounded-xl font-sans font-semibold text-sm hover:border-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               {token}
@@ -487,7 +521,7 @@ function TaskBody({
             <span className="font-sans font-bold text-sm text-foreground">{item.label}</span>
             <div
               role="group"
-              aria-label={`Category for ${item.label}`}
+              aria-label={t("skillRunner.categoryForAria", { item: item.label })}
               className="flex gap-2 flex-wrap"
             >
               {task.buckets.map((bucket) => (
@@ -518,7 +552,7 @@ function TaskBody({
     <div className="flex flex-col gap-3">
       <div className="bg-secondary border border-primary/20 rounded-2xl p-4 flex flex-col gap-2">
         <span className="font-sans font-bold text-xs uppercase tracking-wider text-primary">
-          What to aim for
+          {t("skillRunner.whatToAimFor")}
         </span>
         <ul className="flex flex-col gap-1 list-disc ps-5">
           {task.guidance.map((line) => (
@@ -529,14 +563,14 @@ function TaskBody({
         </ul>
         <p className="font-sans text-xs text-muted-foreground mt-1">
           <RotateCcw className="inline size-3 me-1" aria-hidden />
-          Nothing here is marked — WordPix cannot grade open answers.
+          {t("skillRunner.cannotGradeOpen")}
         </p>
       </div>
 
       {task.freeText && (
         <>
           <label htmlFor="practice-entry" className="font-sans font-bold text-sm text-foreground">
-            Your notes (kept on this screen only)
+            {t("skillRunner.notesLabel")}
           </label>
           <textarea
             id="practice-entry"

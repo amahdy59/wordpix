@@ -3,7 +3,7 @@ import type { Action } from "../types";
 import { resolveGroup, resolveUnitForLesson, type VocabularyItem } from "../data/lessons";
 import { ExitConfirmModal } from "../shared/ExitConfirmModal";
 import { useAudio } from "../shared/useAudio";
-import { useAccessibility } from "../shared/useAccessibilityPreferences";
+import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { ChevronRight, ChevronLeft, Mic, CheckCircle2, BookOpen, X } from "lucide-react";
 import { WordImage } from "../shared/WordImage";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
@@ -11,6 +11,7 @@ import { useSpeechRecognition } from "../shared/useSpeechRecognition";
 import { getLexiconEntry, hasArabicGloss } from "../data/lexiconDictionary";
 import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { WordDetailsContent } from "../shared/WordDetailsContent";
+import { useI18n } from "../context/I18nContext";
 
 interface Props {
   step: number;
@@ -25,6 +26,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   lessonId,
   dispatch,
 }: Props) {
+  const { t } = useI18n();
   const [activeWordIndex, setActiveWordIndex] = useState<number>(0);
   const [inspectedWord, setInspectedWord] = useState<VocabularyItem | null>(null);
   const [desktopDetails, setDesktopDetails] = useState(false);
@@ -227,13 +229,15 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               resetSpeech();
               dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id });
             }}
-            aria-label={`Back to ${unit.name}`}
+            aria-label={t("listenRepeat.backToUnit", { unit: unit.name })}
             className="justify-self-start inline-flex items-center gap-2 min-h-11 min-w-11 rounded-xl px-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <ChevronLeft className="size-5 rtl:rotate-180" aria-hidden />
-            <span className="hidden lg:inline">Back to {unit.name.replace(/^The /, "")}</span>
+            <span className="hidden lg:inline">
+              {t("listenRepeat.backToUnit", { unit: unit.name.replace(/^The /, "") })}
+            </span>
           </button>
-          <h1 className="font-bold text-foreground text-center">Listen &amp; repeat</h1>
+          <h1 className="font-bold text-foreground text-center">{t("listenRepeat.title")}</h1>
           <div className="justify-self-end flex items-center gap-4">
             <div className="hidden lg:block">{modeSelector}</div>
             <button
@@ -245,7 +249,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               }}
               className="min-h-11 min-w-11 px-2 rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
-              Exit
+              {t("listenRepeat.exit")}
             </button>
           </div>
         </div>
@@ -253,7 +257,10 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         <div className="flex justify-between gap-4 mt-4 text-sm font-semibold">
           <span>{unit.name}</span>
           <span>
-            {activeWordIndex + 1} of {words.length}
+            {t("exercise.positionOf", {
+              current: formatNumber(activeWordIndex + 1, accessibility.numeralSystem),
+              total: formatNumber(words.length, accessibility.numeralSystem),
+            })}
           </span>
         </div>
         <div
@@ -368,7 +375,11 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                     aria-label={`${isPlaying || continuous ? "Stop" : "Play"} audio pronunciation for ${currentWord.label}`}
                     className="flex items-center justify-center gap-2 px-3 py-2 min-h-[48px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-md hover:bg-primary/90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
                   >
-                    <span>{isPlaying || continuous ? "Stop audio" : "Listen"}</span>
+                    <span>
+                      {isPlaying || continuous
+                        ? t("listenRepeat.stopAudio")
+                        : t("listenRepeat.listen")}
+                    </span>
                   </button>
 
                   {/* Microphone Practice Button */}
@@ -398,10 +409,10 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                     >
                       <span>
                         {attempt?.matched
-                          ? "Recognized"
+                          ? t("listenRepeat.recognized")
                           : isListening
-                            ? "Stop listening"
-                            : "Practice speaking"}
+                            ? t("listenRepeat.stopListening")
+                            : t("listenRepeat.practiceSpeaking")}
                       </span>
                     </button>
                   }
@@ -410,13 +421,12 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
               {!attempt && speechStatus === "idle" && (
                 <p className="font-sans text-xs text-muted-foreground">
-                  Speaking is optional. Your microphone starts only when you choose Practice
-                  speaking.
+                  {t("listenRepeat.speakingOptional")}
                 </p>
               )}
 
               <div className="mt-2">
-                <p className="text-sm font-semibold mb-2">Playback</p>
+                <p className="text-sm font-semibold mb-2">{t("listenRepeat.playback")}</p>
                 <ListenSelector
                   label="Playback"
                   options={["Manual", "Continuous"]}
@@ -445,7 +455,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                 className="w-full flex items-center justify-start gap-2 py-3 px-4 min-h-[48px] rounded-xl bg-secondary border border-border text-primary text-xs sm:text-sm font-sans font-semibold hover:bg-primary/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
               >
                 <BookOpen className="size-4" aria-hidden />
-                <span>Word details</span>
+                <span>{t("listenRepeat.wordDetails")}</span>
                 <ChevronRight className="size-5 ms-auto" aria-hidden />
               </button>
             </div>
@@ -459,7 +469,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                 <div className="shrink-0 flex items-center justify-between gap-3 p-4 border-b border-border bg-wp-card">
                   <div className="min-w-0">
                     <p className="text-xs font-bold uppercase tracking-wide text-primary">
-                      Word details
+                      {t("listenRepeat.wordDetails")}
                     </p>
                     <h2 className="font-black text-xl text-foreground truncate">
                       {inspectedWord.label}
@@ -493,7 +503,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               <div className="flex items-center gap-2">
                 <Mic className="size-4 text-primary motion-safe:animate-bounce" aria-hidden />
                 <span className="font-sans text-xs font-bold text-primary">
-                  Listening... Say &ldquo;{currentWord.label}&rdquo; clearly!
+                  {t("listenRepeat.listeningPrompt", { word: currentWord.label })}
                 </span>
               </div>
               <div className="flex items-center gap-1">
@@ -519,7 +529,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="size-3.5 text-wp-green" aria-hidden />
                 <span className="font-sans text-xs font-bold text-wp-green">
-                  Word recognized. Nice work!
+                  {t("listenRepeat.wordRecognized")}
                 </span>
               </div>
             </div>
@@ -531,41 +541,40 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               className="bg-wp-amber/10 border border-wp-amber/30 rounded-xl px-3 py-2"
             >
               <p className="font-sans text-xs font-bold text-wp-amber">
-                Try again—say &ldquo;{currentWord.label}&rdquo; slowly, or continue without
-                speaking.
+                {t("listenRepeat.tryAgainPrompt", { word: currentWord.label })}
               </p>
             </div>
           )}
 
           {speechStatus === "denied" && (
             <p role="status" className="font-sans text-muted-foreground text-xs text-center">
-              Microphone access is blocked. You can continue without speaking.
+              {t("listenRepeat.micBlocked")}
             </p>
           )}
           {speechStatus === "no-speech" && (
             <p role="status" className="font-sans text-muted-foreground text-xs text-center">
-              I couldn&rsquo;t hear you. Try again or continue without speaking.
+              {t("listenRepeat.couldNotHear")}
             </p>
           )}
           {speechStatus === "error" && (
             <p role="status" className="font-sans text-muted-foreground text-xs text-center">
-              Speaking practice is unavailable right now. You can continue normally.
+              {t("listenRepeat.speakingUnavailable")}
             </p>
           )}
 
           {speechStatus === "unsupported" && (
             <p className="text-sm text-muted-foreground" role="status">
-              Speaking practice is not supported in this browser. You can listen and repeat aloud.
+              {t("listenRepeat.speakingUnsupported")}
             </p>
           )}
           {!isSupported && (
             <p className="font-sans text-muted-foreground text-xs text-center">
-              Speech synthesis is not supported in this browser.
+              {t("listenRepeat.synthesisUnsupported")}
             </p>
           )}
           {(isError || playbackError) && (
             <p className="font-sans text-wp-rose text-xs text-center">
-              Audio playback failed. Choose Listen to try again.
+              {t("listenRepeat.audioPlaybackFailed")}
             </p>
           )}
         </div>
@@ -574,27 +583,29 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           aria-label="Keyboard shortcuts"
           className="hidden lg:flex justify-center items-center gap-5 mt-5 text-sm text-muted-foreground"
         >
-          <span className="font-semibold text-foreground">Keyboard shortcuts</span>
+          <span className="font-semibold text-foreground">
+            {t("listenRepeat.keyboardShortcuts")}
+          </span>
           <span className="flex items-center gap-2">
             <kbd className="min-w-9 h-8 px-2 grid place-items-center rounded-lg border border-border bg-wp-card shadow-wp-xs font-mono text-foreground">
-              ←
+              {`←`}
             </kbd>
             <kbd className="min-w-9 h-8 px-2 grid place-items-center rounded-lg border border-border bg-wp-card shadow-wp-xs font-mono text-foreground">
-              →
+              {`→`}
             </kbd>
-            Change word
+            {t("listenRepeat.changeWord")}
           </span>
           <span className="flex items-center gap-2">
             <kbd className="h-8 px-3 grid place-items-center rounded-lg border border-border bg-wp-card shadow-wp-xs font-mono text-foreground">
-              Space
+              {`Space`}
             </kbd>
-            Listen or pause
+            {t("listenRepeat.listenOrPause")}
           </span>
           <span className="flex items-center gap-2">
             <kbd className="h-8 px-3 grid place-items-center rounded-lg border border-border bg-wp-card shadow-wp-xs font-mono text-foreground">
-              Esc
+              {`Esc`}
             </kbd>
-            Close details
+            {t("listenRepeat.closeDetails")}
           </span>
         </div>
       </section>

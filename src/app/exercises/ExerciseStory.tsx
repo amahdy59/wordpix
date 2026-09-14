@@ -28,6 +28,7 @@ import {
 import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { getOrGenerateStoryBundle } from "../data/storyTalesDictionary";
 import { resolveAssetUrl } from "../../utils/assetUrl";
+import { useI18n } from "../context/I18nContext";
 
 interface Props {
   step: number;
@@ -44,6 +45,7 @@ export const ExerciseStory = memo(function ExerciseStory({
   lessonId,
   dispatch,
 }: Props) {
+  const { t } = useI18n();
   const group = resolveGroup(lessonId);
   const storyText = group.story || "No reading material available for this lesson yet. Stay tuned!";
   const [activeSection, setActiveSection] = useState<ContextSection>("passage");
@@ -243,7 +245,7 @@ export const ExerciseStory = memo(function ExerciseStory({
           onClick={() => setActiveSection("visual-flow")}
           className="flex items-center justify-center gap-2 w-full min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
         >
-          <span>Next: Explore Visual Flow</span>
+          <span>{t("story.nextVisualFlow")}</span>
           <ArrowRight className="size-5" aria-hidden />
         </button>
       )}
@@ -256,7 +258,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             className="flex items-center justify-center gap-1.5 px-4 min-h-[56px] rounded-2xl bg-secondary text-foreground border border-border font-sans font-bold text-sm hover:bg-secondary/80 transition-colors cursor-pointer"
           >
             <ArrowLeft className="size-4" aria-hidden />
-            <span>Previous</span>
+            <span>{t("story.previous")}</span>
           </button>
           <button
             ref={nextBtnRef}
@@ -264,7 +266,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             onClick={() => setActiveSection("dialogue")}
             className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
-            <span>Next: Conversational Dialogue</span>
+            <span>{t("story.nextDialogue")}</span>
             <ArrowRight className="size-5" aria-hidden />
           </button>
         </div>
@@ -278,7 +280,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             className="flex items-center justify-center gap-1.5 px-4 min-h-[56px] rounded-2xl bg-secondary text-foreground border border-border font-sans font-bold text-sm hover:bg-secondary/80 transition-colors cursor-pointer"
           >
             <ArrowLeft className="size-4" aria-hidden />
-            <span>Previous</span>
+            <span>{t("story.previous")}</span>
           </button>
           <button
             ref={nextBtnRef}
@@ -286,7 +288,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             onClick={() => setActiveSection("story-tales")}
             className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
-            <span>Next: 3-Part Extended Story</span>
+            <span>{t("story.nextStory")}</span>
             <ArrowRight className="size-5" aria-hidden />
           </button>
         </div>
@@ -300,7 +302,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             className="flex items-center justify-center gap-1.5 px-4 min-h-[56px] rounded-2xl bg-secondary text-foreground border border-border font-sans font-bold text-sm hover:bg-secondary/80 transition-colors cursor-pointer"
           >
             <ArrowLeft className="size-4" aria-hidden />
-            <span>Previous</span>
+            <span>{t("story.previous")}</span>
           </button>
           <button
             ref={nextBtnRef}
@@ -311,7 +313,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             }}
             className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
-            <span>Next: Take Story &amp; Vocabulary Quiz</span>
+            <span>{t("story.nextQuiz")}</span>
             <ArrowRight className="size-5" aria-hidden />
           </button>
         </div>
@@ -325,7 +327,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             className="flex items-center justify-center gap-1.5 px-4 min-h-[56px] rounded-2xl bg-secondary text-foreground border border-border font-sans font-bold text-sm hover:bg-secondary/80 transition-colors cursor-pointer"
           >
             <ArrowLeft className="size-4" aria-hidden />
-            <span>Review Story</span>
+            <span>{t("story.reviewStory")}</span>
           </button>
           <button
             ref={nextBtnRef}
@@ -333,7 +335,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             onClick={() => dispatch({ type: "LESSON_NEXT" })}
             className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
-            <span>Complete Story Suite &amp; Continue</span>
+            <span>{t("story.completeAndContinue")}</span>
             <ArrowRight className="size-5" aria-hidden />
           </button>
         </div>
@@ -373,7 +375,7 @@ export const ExerciseStory = memo(function ExerciseStory({
           <span className="uppercase tracking-wider">{group.name}</span>
           <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
             <BookOpen className="size-3" aria-hidden />
-            <span>Mastery Suite</span>
+            <span>{t("story.masterySuite")}</span>
           </span>
         </>
       }
@@ -400,7 +402,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             }
           >
             <BookOpen className="size-3.5 shrink-0 text-primary" aria-hidden />
-            <span className="truncate">1. Scene</span>
+            <span className="truncate">{t("story.tabScene")}</span>
           </button>
 
           <button
@@ -415,7 +417,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             }
           >
             <Layers className="size-3.5 shrink-0 text-primary" aria-hidden />
-            <span className="truncate">2. Visual Flow</span>
+            <span className="truncate">{t("story.tabVisualFlow")}</span>
           </button>
 
           <button
@@ -430,7 +432,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             }
           >
             <MessageSquare className="size-3.5 shrink-0 text-primary" aria-hidden />
-            <span className="truncate">3. Dialogue</span>
+            <span className="truncate">{t("story.tabDialogue")}</span>
           </button>
 
           <button
@@ -445,7 +447,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             }
           >
             <Sparkles className="size-3.5 shrink-0 text-wp-amber" aria-hidden />
-            <span className="truncate">4. 3-Part Story</span>
+            <span className="truncate">{t("story.tabStory")}</span>
           </button>
 
           <button
@@ -460,7 +462,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             }
           >
             <HelpCircle className="size-3.5 shrink-0 text-primary" aria-hidden />
-            <span className="truncate">5. Quiz</span>
+            <span className="truncate">{t("story.tabQuiz")}</span>
           </button>
         </nav>
 
@@ -483,7 +485,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                   <div>
                     <span className="text-[11px] font-sans font-bold uppercase tracking-wider text-wp-amber flex items-center gap-1">
                       <Sparkles className="size-3" />
-                      <span>{group.name} in Context</span>
+                      <span>{t("story.inContext", { group: group.name })}</span>
                     </span>
                     <h2 className="font-sans font-black text-white text-lg sm:text-xl leading-tight drop-shadow-md">
                       {group.name}
@@ -507,12 +509,12 @@ export const ExerciseStory = memo(function ExerciseStory({
                     {isPlaying ? (
                       <>
                         <Square className="size-4 fill-current" aria-hidden />
-                        <span>Stop</span>
+                        <span>{t("story.stop")}</span>
                       </>
                     ) : (
                       <>
                         <Volume2 className="size-4" aria-hidden />
-                        <span>Listen Aloud</span>
+                        <span>{t("story.listenAloud")}</span>
                       </>
                     )}
                   </button>
@@ -525,7 +527,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                 </p>
                 <div className="flex items-center gap-2 text-xs font-sans font-medium text-muted-foreground pt-2 border-t border-border/60">
                   <Info className="size-3.5 text-primary shrink-0" />
-                  <span>Tap any highlighted word to hear its accurate native pronunciation.</span>
+                  <span>{t("story.tapWordHint")}</span>
                 </div>
               </div>
             </article>
@@ -539,12 +541,11 @@ export const ExerciseStory = memo(function ExerciseStory({
               <div className="flex items-center gap-2">
                 <Layers className="size-4 text-primary" />
                 <h3 className="font-sans font-bold text-foreground text-sm">
-                  Interactive Word Explorer ({words.length} items)
+                  {t("story.wordExplorer", { count: words.length })}
                 </h3>
               </div>
               <p className="font-sans text-xs text-muted-foreground">
-                Tap any card to view authentic Oxford/Cambridge dictionary insights, collocations,
-                and real-world context sentences.
+                {t("story.wordExplorerDesc")}
               </p>
             </div>
 
@@ -614,7 +615,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                 <div className="flex items-center gap-2">
                   <MessageSquare className="size-4 text-primary" />
                   <h3 className="font-sans font-bold text-foreground text-sm">
-                    Casual Conversation Practice (Alex &amp; Sam)
+                    {t("story.dialogueTitle")}
                   </h3>
                 </div>
                 <button
@@ -628,7 +629,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                   className="flex items-center gap-1.5 text-xs font-sans font-bold text-primary bg-secondary px-3 py-1.5 rounded-xl border border-primary/20 hover:bg-primary/10 cursor-pointer min-h-[36px]"
                 >
                   <Play className="size-3.5" />
-                  <span>Play Dialogue</span>
+                  <span>{t("story.playDialogue")}</span>
                 </button>
               </div>
 
@@ -678,10 +679,11 @@ export const ExerciseStory = memo(function ExerciseStory({
                 <Sparkles className="size-5" />
               </div>
               <div className="flex-1">
-                <h4 className="font-sans font-bold text-foreground text-sm">Active Spoken Drill</h4>
+                <h4 className="font-sans font-bold text-foreground text-sm">
+                  {t("story.spokenDrillTitle")}
+                </h4>
                 <p className="font-sans text-xs text-muted-foreground mt-0.5">
-                  Try reading the dialogue aloud with Alex &amp; Sam to build natural English
-                  fluency.
+                  {t("story.spokenDrillDesc")}
                 </p>
               </div>
             </div>
@@ -700,7 +702,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                   </span>
                   <div>
                     <span className="text-[11px] font-sans font-bold uppercase tracking-wider text-primary">
-                      Extended 3-Part Story
+                      {t("story.extendedStoryBadge")}
                     </span>
                     <h3 className="font-sans font-black text-foreground text-lg sm:text-xl">
                       {storyBundle.themeTitle}
@@ -727,19 +729,18 @@ export const ExerciseStory = memo(function ExerciseStory({
                   {isPlaying ? (
                     <>
                       <Square className="size-4 fill-current" />
-                      <span>Stop Story</span>
+                      <span>{t("story.stopStory")}</span>
                     </>
                   ) : (
                     <>
                       <Volume2 className="size-4" />
-                      <span>Play Full 3 Parts</span>
+                      <span>{t("story.playFullParts")}</span>
                     </>
                   )}
                 </button>
               </div>
               <p className="font-sans text-xs text-muted-foreground leading-relaxed">
-                Immerse yourself in this complete 3-chapter narrative designed to anchor all
-                vocabulary words naturally into long-term memory.
+                {t("story.extendedStoryDesc")}
               </p>
             </div>
 
@@ -824,10 +825,10 @@ export const ExerciseStory = memo(function ExerciseStory({
                   </span>
                   <div>
                     <h3 className="font-sans font-black text-foreground text-base sm:text-lg">
-                      Vocabulary &amp; Story Comprehension Quiz
+                      {t("story.quizTitle")}
                     </h3>
                     <p className="font-sans text-xs text-muted-foreground">
-                      2 Vocabulary Mastery Questions + 1 Story Plot Question
+                      {t("story.quizSubtitle")}
                     </p>
                   </div>
                 </div>
@@ -835,7 +836,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                 <div className="flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-xl border border-border">
                   <Award className="size-4 text-wp-amber" />
                   <span className="font-sans font-bold text-xs text-foreground">
-                    Score: {score} / {storyBundle.quiz.length}
+                    {t("story.quizScore", { score, total: storyBundle.quiz.length })}
                   </span>
                 </div>
               </div>
@@ -852,7 +853,10 @@ export const ExerciseStory = memo(function ExerciseStory({
                       key={q.id}
                       type="button"
                       onClick={() => setActiveQuizIndex(qIndex)}
-                      aria-label={`Jump to Question ${qIndex + 1}`}
+                      aria-label={t("exercise.questionOf", {
+                        current: qIndex + 1,
+                        total: storyBundle.quiz.length,
+                      })}
                       className={`flex-1 py-1.5 px-2 rounded-xl text-xs font-sans font-bold flex items-center justify-center gap-1.5 border transition-all cursor-pointer min-h-[36px] ${
                         isCurrent
                           ? "border-primary bg-primary text-primary-foreground shadow-sm"
@@ -884,19 +888,22 @@ export const ExerciseStory = memo(function ExerciseStory({
                   {/* Question Header */}
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <span className="text-xs font-sans font-bold text-primary bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
-                      Question {activeQuizIndex + 1} of {storyBundle.quiz.length}
+                      {t("exercise.questionOf", {
+                        current: activeQuizIndex + 1,
+                        total: storyBundle.quiz.length,
+                      })}
                     </span>
 
                     <span className="text-xs font-sans font-bold text-muted-foreground bg-secondary px-2.5 py-1 rounded-full border border-border flex items-center gap-1">
                       {isVocabQuestion ? (
                         <>
                           <Sparkles className="size-3 text-wp-amber" />
-                          <span>Vocabulary Focus</span>
+                          <span>{t("story.vocabFocus")}</span>
                         </>
                       ) : (
                         <>
                           <BookOpen className="size-3 text-primary" />
-                          <span>Story Comprehension</span>
+                          <span>{t("story.storyComprehension")}</span>
                         </>
                       )}
                     </span>
@@ -957,7 +964,9 @@ export const ExerciseStory = memo(function ExerciseStory({
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-1.5 text-xs font-sans font-bold text-foreground">
                           <Info className="size-4 text-primary" />
-                          <span>{isCorrect ? "Well done!" : "Context Explanation:"}</span>
+                          <span>
+                            {isCorrect ? t("story.wellDone") : t("story.contextExplanation")}
+                          </span>
                         </div>
                         <button
                           type="button"
@@ -991,7 +1000,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                       className="px-4 py-2 min-h-[44px] rounded-xl font-sans font-bold text-xs bg-secondary text-foreground border border-border hover:bg-secondary/80 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer flex items-center gap-1.5"
                     >
                       <ArrowLeft className="size-3.5" />
-                      <span>Previous Question</span>
+                      <span>{t("story.prevQuestion")}</span>
                     </button>
 
                     {activeQuizIndex < storyBundle.quiz.length - 1 ? (
@@ -1004,14 +1013,14 @@ export const ExerciseStory = memo(function ExerciseStory({
                         }
                         className="px-5 py-2 min-h-[44px] rounded-xl font-sans font-bold text-xs bg-primary text-primary-foreground hover:opacity-90 transition-opacity cursor-pointer flex items-center gap-1.5"
                       >
-                        <span>Next Question</span>
+                        <span>{t("story.nextQuestion")}</span>
                         <ChevronRight className="size-4" />
                       </button>
                     ) : (
                       isQuizComplete && (
                         <span className="text-xs font-sans font-bold text-wp-emerald flex items-center gap-1">
                           <CheckCircle2 className="size-4" />
-                          <span>All Questions Answered!</span>
+                          <span>{t("story.allQuestionsAnswered")}</span>
                         </span>
                       )
                     )}
@@ -1030,12 +1039,14 @@ export const ExerciseStory = memo(function ExerciseStory({
                     </div>
                     <div>
                       <h4 className="font-sans font-black text-foreground text-base sm:text-lg">
-                        Story &amp; Vocabulary Quiz Complete!
+                        {t("story.quizComplete")}
                       </h4>
                       <p className="font-sans text-xs text-muted-foreground">
-                        You scored {score} of {storyBundle.quiz.length} correct (
-                        {Math.round((score / storyBundle.quiz.length) * 100)}%). Outstanding
-                        retention!
+                        {t("story.quizCompleteDesc", {
+                          score,
+                          total: storyBundle.quiz.length,
+                          percent: Math.round((score / storyBundle.quiz.length) * 100),
+                        })}
                       </p>
                     </div>
                   </div>
@@ -1049,7 +1060,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                     className="flex items-center gap-1.5 px-4 py-2 min-h-[44px] rounded-xl bg-secondary text-foreground border border-border font-sans font-semibold text-xs hover:bg-secondary/80 cursor-pointer"
                   >
                     <RotateCcw className="size-3.5" />
-                    <span>Retake Quiz</span>
+                    <span>{t("story.retakeQuiz")}</span>
                   </button>
                 </div>
               </div>

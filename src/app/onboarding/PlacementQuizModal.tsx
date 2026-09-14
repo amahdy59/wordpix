@@ -2,14 +2,15 @@ import { memo, useState } from "react";
 import { createPortal } from "react-dom";
 import { WordImage } from "../shared/WordImage";
 import { BEDROOM_VOCABULARY } from "../data/lessons";
+import { useModalA11y } from "../shared/useModalA11y";
+import { Sparkles, X } from "lucide-react";
+import { useI18n, type TranslationValues } from "../context/I18nContext";
 
 // Placement always starts from the default world's vocabulary — there is only
 // one world to place a learner into today. This is also why bedroom is the
 // one unit kept in the main bundle: placement runs before a learner has
 // chosen anything, so its words cannot be fetched on demand.
 const PLACEMENT_VOCABULARY = BEDROOM_VOCABULARY;
-import { useModalA11y } from "../shared/useModalA11y";
-import { Sparkles, X } from "lucide-react";
 
 interface Props {
   isOpen: boolean;
@@ -17,21 +18,29 @@ interface Props {
   onCompleteLevel: (level: "A1" | "A2" | "B1") => void;
 }
 
-const QUESTIONS = [
+const QUESTIONS: Array<{
+  targetId: string;
+  promptKey: string;
+  promptArgs?: TranslationValues;
+  level: "A1" | "A2" | "B1";
+}> = [
   {
     targetId: "pillow",
-    prompt: "Which picture shows a 'pillow'?",
-    level: "A1" as const,
+    promptKey: "onboarding.quizPrompt1",
+    promptArgs: { word: "pillow" },
+    level: "A1",
   },
   {
     targetId: "nightstand",
-    prompt: "Complete: 'I put my lamp on the _______.'",
-    level: "A2" as const,
+    promptKey: "onboarding.quizPrompt2",
+    promptArgs: { sentence: "I put my lamp on the _______." },
+    level: "A2",
   },
   {
     targetId: "wardrobe",
-    prompt: "Build: 'This is a wardrobe.'",
-    level: "B1" as const,
+    promptKey: "onboarding.quizPrompt3",
+    promptArgs: { sentence: "This is a wardrobe." },
+    level: "B1",
   },
 ];
 
@@ -40,6 +49,7 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
   onClose,
   onCompleteLevel,
 }: Props) {
+  const { t } = useI18n();
   const [stepIndex, setStepIndex] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
   const containerRef = useModalA11y({ isOpen, onDismiss: onClose });
@@ -80,7 +90,7 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
         <button
           type="button"
           onClick={onClose}
-          aria-label="Close level placement check"
+          aria-label={t("onboarding.closePlacementAria")}
           className="absolute top-4 end-4 size-10 min-h-[44px] min-w-[44px] rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
         >
           <X className="size-5" aria-hidden />
@@ -89,20 +99,20 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
         <div>
           <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider mb-1">
             <Sparkles className="size-4 text-wp-amber" />
-            <span>Adaptive Level Check ({stepIndex + 1}/3)</span>
+            <span>{t("onboarding.adaptiveCheck", { current: stepIndex + 1, total: 3 })}</span>
           </div>
           <h2 id="placement-modal-title" className="font-sans font-black text-foreground text-2xl">
-            Test Your Level
+            {t("onboarding.testYourLevel")}
           </h2>
           <p className="font-sans text-muted-foreground text-xs mt-1">
-            Answer 3 quick visual questions to auto-set your starting difficulty.
+            {t("onboarding.testYourLevelDesc")}
           </p>
         </div>
 
         {/* Question Prompt */}
         <div className="bg-muted p-4 rounded-2xl border border-border">
           <p className="font-sans font-bold text-foreground text-base text-center">
-            {currentQ.prompt}
+            {t(currentQ.promptKey, currentQ.promptArgs)}
           </p>
         </div>
 
@@ -129,7 +139,7 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
                   printing the answer under each picture makes it unanswerable
                   as an assessment. */}
               <span className="font-sans font-semibold text-xs text-muted-foreground">
-                Option {idx + 1}
+                {t("onboarding.optionNum", { num: idx + 1 })}
               </span>
             </button>
           ))}

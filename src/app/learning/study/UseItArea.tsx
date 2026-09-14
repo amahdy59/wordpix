@@ -17,6 +17,7 @@ import {
   AlertTriangle,
   Globe,
 } from "lucide-react";
+import { useI18n } from "../../../i18n";
 
 interface Props {
   node: StudyNode | undefined;
@@ -62,19 +63,20 @@ export function UseItArea({
   onCompleteNode,
   onNextActivity,
 }: Props) {
+  const { t } = useI18n();
+
   if (!node) {
     return (
       <div className="p-4 sm:p-6 md:p-8 max-w-4xl mx-auto w-full space-y-6">
         <div>
           <span className="text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block">
-            Use in Context
+            {t("study.useInContext")}
           </span>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-foreground mt-2">
-            Apply in Everyday Situations
+            {t("study.applyEveryday")}
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground mt-1.5 leading-relaxed max-w-2xl">
-            Explore authentic reading passages, spoken dialogues, idioms, common mistakes, and
-            cultural insights.
+            {t("study.applyEverydayDesc")}
           </p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
@@ -120,7 +122,7 @@ export function UseItArea({
           </span>
           <div className="min-w-0">
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-muted-foreground">
-              Use in Context · {currentIndex + 1} of {allNodes.length}
+              {t("study.useInContextStep", { current: currentIndex + 1, total: allNodes.length })}
             </span>
             <h1 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-foreground truncate">
               {node.title}
@@ -179,7 +181,7 @@ export function UseItArea({
             onClick={onNextActivity}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
           >
-            <span>Continue to next activity</span>
+            <span>{t("study.continueNext")}</span>
             <ArrowRight className="size-4" aria-hidden />
           </button>
         )}

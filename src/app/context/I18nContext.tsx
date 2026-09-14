@@ -102,10 +102,19 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }
 
-export function useI18n() {
+const defaultContext: I18nContextType = {
+  interfaceLang: "en",
+  learningLang: "en",
+  dir: "ltr",
+  setInterfaceLang: () => {},
+  t: (key: string, values?: TranslationValues) => {
+    const raw = lookup(en, key);
+    if (!raw) return key;
+    return interpolate(raw, values);
+  },
+};
+
+export function useI18n(): I18nContextType {
   const context = useContext(I18nContext);
-  if (!context) {
-    throw new Error("useI18n must be used within an I18nProvider");
-  }
-  return context;
+  return context ?? defaultContext;
 }

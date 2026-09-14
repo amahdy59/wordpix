@@ -3,18 +3,22 @@ import type { UnitLearningMaterials, RewriteExercise, MatchingExercise } from ".
 import { CheckCircle2, XCircle } from "lucide-react";
 import type { UnitStudyProgress } from "./study/types";
 import { Select } from "../shared/Select";
+import { useI18n } from "../context/I18nContext";
 
 const CARD = "bg-card rounded-3xl border border-border p-5 sm:p-6 shadow-xs";
 
 export function VocabularyDetailsSection({ materials }: { materials: UnitLearningMaterials }) {
+  const { t } = useI18n();
   return (
     <div className="space-y-6">
       {materials.registerLabels && materials.registerLabels.length > 0 && (
         <section className={CARD}>
           <div className="border-b border-border/60 pb-3 mb-4">
-            <h2 className="font-bold text-lg text-foreground">Register &amp; Formality Labels</h2>
+            <h2 className="font-bold text-lg text-foreground">
+              {t("learningMaterials.registerFormalityTitle")}
+            </h2>
             <p className="text-xs text-muted-foreground mt-0.5">
-              Appropriate social contexts, degrees of formality, and speech tones.
+              {t("learningMaterials.registerFormalityDesc")}
             </p>
           </div>
           <ul className="space-y-3.5">
@@ -38,9 +42,11 @@ export function VocabularyDetailsSection({ materials }: { materials: UnitLearnin
       {materials.visualVocabularyMap && materials.visualVocabularyMap.length > 0 && (
         <section className={CARD}>
           <div className="border-b border-border/60 pb-3 mb-4">
-            <h2 className="font-bold text-lg text-foreground">Visual Vocabulary Map</h2>
+            <h2 className="font-bold text-lg text-foreground">
+              {t("learningMaterials.vocabMapTitle")}
+            </h2>
             <p className="text-xs text-muted-foreground mt-0.5">
-              Related words connected by topic and category.
+              {t("learningMaterials.vocabMapDesc")}
             </p>
           </div>
           <div className="grid gap-3.5 sm:grid-cols-2">
@@ -68,13 +74,16 @@ export function VocabularyDetailsSection({ materials }: { materials: UnitLearnin
 }
 
 export function PronunciationSection({ materials }: { materials: UnitLearningMaterials }) {
+  const { t } = useI18n();
   if (!materials.pronunciationGuide) return null;
   return (
     <section className={CARD}>
       <div className="border-b border-border/60 pb-3 mb-4">
-        <h2 className="font-bold text-lg text-foreground">Pronunciation Guide</h2>
+        <h2 className="font-bold text-lg text-foreground">
+          {t("learningMaterials.pronunciationGuideTitle")}
+        </h2>
         <p className="text-xs text-muted-foreground mt-0.5">
-          Stress patterns and phonetic International Phonetic Alphabet (IPA) transcriptions.
+          {t("learningMaterials.pronunciationGuideDesc")}
         </p>
       </div>
       <div className="grid gap-3 sm:grid-cols-2">
@@ -98,28 +107,39 @@ export function PronunciationSection({ materials }: { materials: UnitLearningMat
 }
 
 export function PriorityTiersSection({ materials }: { materials: UnitLearningMaterials }) {
+  const { t } = useI18n();
   if (!materials.priorityTiers) return null;
-  const t = materials.priorityTiers;
+  const tiers = materials.priorityTiers;
   return (
     <section className={CARD}>
       <div className="border-b border-border/60 pb-3 mb-4">
-        <h2 className="font-bold text-lg text-foreground">Vocabulary Priority Tiers</h2>
+        <h2 className="font-bold text-lg text-foreground">
+          {t("learningMaterials.priorityTiersTitle")}
+        </h2>
         <p className="text-xs text-muted-foreground mt-0.5">
-          Focus your effort on high-frequency core words first.
+          {t("learningMaterials.priorityTiersDesc")}
         </p>
       </div>
       <div className="space-y-3">
         <div className="border border-destructive/30 bg-destructive/5 p-4 rounded-2xl">
-          <p className="font-bold text-destructive text-sm">🔴 Essential (Must Learn)</p>
-          <p className="text-sm mt-1 text-foreground leading-relaxed">{t.essential.join(", ")}</p>
+          <p className="font-bold text-destructive text-sm">
+            {t("learningMaterials.tierEssential")}
+          </p>
+          <p className="text-sm mt-1 text-foreground leading-relaxed">
+            {tiers.essential.join(", ")}
+          </p>
         </div>
         <div className="border border-wp-amber/30 bg-wp-amber/5 p-4 rounded-2xl">
-          <p className="font-bold text-wp-amber text-sm">🟡 Important (Should Learn)</p>
-          <p className="text-sm mt-1 text-foreground leading-relaxed">{t.important.join(", ")}</p>
+          <p className="font-bold text-wp-amber text-sm">{t("learningMaterials.tierImportant")}</p>
+          <p className="text-sm mt-1 text-foreground leading-relaxed">
+            {tiers.important.join(", ")}
+          </p>
         </div>
         <div className="border border-wp-green/30 bg-wp-green/5 p-4 rounded-2xl">
-          <p className="font-bold text-wp-green text-sm">🟢 Good to Know (Nice to Have)</p>
-          <p className="text-sm mt-1 text-foreground leading-relaxed">{t.goodToKnow.join(", ")}</p>
+          <p className="font-bold text-wp-green text-sm">{t("learningMaterials.tierGoodToKnow")}</p>
+          <p className="text-sm mt-1 text-foreground leading-relaxed">
+            {tiers.goodToKnow.join(", ")}
+          </p>
         </div>
       </div>
     </section>
@@ -127,14 +147,17 @@ export function PriorityTiersSection({ materials }: { materials: UnitLearningMat
 }
 
 export function CollocationsSection({ materials }: { materials: UnitLearningMaterials }) {
+  const { t } = useI18n();
   return (
     <div className="space-y-6">
       {materials.collocations && materials.collocations.length > 0 && (
         <section className={CARD}>
           <div className="border-b border-border/60 pb-3 mb-4">
-            <h2 className="font-bold text-lg text-foreground">Common Collocations</h2>
+            <h2 className="font-bold text-lg text-foreground">
+              {t("learningMaterials.commonCollocations")}
+            </h2>
             <p className="text-xs text-muted-foreground mt-0.5">
-              High-frequency word combinations used in daily communication.
+              {t("learningMaterials.commonCollocationsDesc")}
             </p>
           </div>
           <ul className="space-y-4">
@@ -154,9 +177,11 @@ export function CollocationsSection({ materials }: { materials: UnitLearningMate
       {materials.collocationsQuiz && materials.collocationsQuiz.length > 0 && (
         <section className={CARD}>
           <div className="border-b border-border/60 pb-3 mb-4">
-            <h2 className="font-bold text-lg text-foreground">Collocations Quiz</h2>
+            <h2 className="font-bold text-lg text-foreground">
+              {t("learningMaterials.collocationsQuiz")}
+            </h2>
             <p className="text-xs text-muted-foreground mt-0.5">
-              Test your knowledge of natural word pairings.
+              {t("learningMaterials.collocationsQuizDesc")}
             </p>
           </div>
           <div className="space-y-4">
@@ -171,13 +196,16 @@ export function CollocationsSection({ materials }: { materials: UnitLearningMate
 }
 
 export function SynonymsAntonymsSection({ materials }: { materials: UnitLearningMaterials }) {
+  const { t } = useI18n();
   if (!materials.synonymsAntonyms) return null;
   return (
     <section className={CARD}>
       <div className="border-b border-border/60 pb-3 mb-4">
-        <h2 className="font-bold text-lg text-foreground">Synonyms &amp; Antonyms</h2>
+        <h2 className="font-bold text-lg text-foreground">
+          {t("learningMaterials.synonymsAntonyms")}
+        </h2>
         <p className="text-xs text-muted-foreground mt-0.5">
-          Expand your vocabulary range with closely related and opposite words.
+          {t("learningMaterials.synonymsAntonymsDesc")}
         </p>
       </div>
       <div className="overflow-x-auto rounded-2xl border border-border bg-background">
@@ -185,13 +213,13 @@ export function SynonymsAntonymsSection({ materials }: { materials: UnitLearning
           <thead>
             <tr className="border-b border-border bg-secondary/30">
               <th className="text-start font-bold text-xs uppercase tracking-wider text-muted-foreground py-3 px-4">
-                Word
+                {t("learningMaterials.colWord")}
               </th>
               <th className="text-start font-bold text-xs uppercase tracking-wider text-muted-foreground py-3 px-4">
-                Synonym (S)
+                {t("learningMaterials.colSynonym")}
               </th>
               <th className="text-start font-bold text-xs uppercase tracking-wider text-muted-foreground py-3 px-4">
-                Antonym (A)
+                {t("learningMaterials.colAntonym")}
               </th>
             </tr>
           </thead>
@@ -211,6 +239,7 @@ export function SynonymsAntonymsSection({ materials }: { materials: UnitLearning
 }
 
 export function AdditionalExercisesSection({ materials }: { materials: UnitLearningMaterials }) {
+  const { t } = useI18n();
   if (!materials.additionalExercises) return null;
   const ex = materials.additionalExercises;
   return (
@@ -218,9 +247,9 @@ export function AdditionalExercisesSection({ materials }: { materials: UnitLearn
       {ex.matching && ex.matching.length > 0 && (
         <section className={CARD}>
           <div className="border-b border-border/60 pb-3 mb-4">
-            <h2 className="font-bold text-lg text-foreground">Matching</h2>
+            <h2 className="font-bold text-lg text-foreground">{t("learningMaterials.matching")}</h2>
             <p className="text-xs text-muted-foreground mt-0.5">
-              Connect definitions to their correct vocabulary terms.
+              {t("learningMaterials.matchingDesc")}
             </p>
           </div>
           <MatchingExerciseComponent exercises={ex.matching} />
@@ -230,9 +259,11 @@ export function AdditionalExercisesSection({ materials }: { materials: UnitLearn
       {ex.multipleChoice && ex.multipleChoice.length > 0 && (
         <section className={CARD}>
           <div className="border-b border-border/60 pb-3 mb-4">
-            <h2 className="font-bold text-lg text-foreground">Multiple Choice</h2>
+            <h2 className="font-bold text-lg text-foreground">
+              {t("learningMaterials.multipleChoice")}
+            </h2>
             <p className="text-xs text-muted-foreground mt-0.5">
-              Choose the best option for each question.
+              {t("learningMaterials.multipleChoiceDesc")}
             </p>
           </div>
           <div className="space-y-4">
@@ -246,9 +277,11 @@ export function AdditionalExercisesSection({ materials }: { materials: UnitLearn
       {ex.rewrite && ex.rewrite.length > 0 && (
         <section className={CARD}>
           <div className="border-b border-border/60 pb-3 mb-4">
-            <h2 className="font-bold text-lg text-foreground">Rewrite the Sentence</h2>
+            <h2 className="font-bold text-lg text-foreground">
+              {t("learningMaterials.rewriteSentence")}
+            </h2>
             <p className="text-xs text-muted-foreground mt-0.5">
-              Rephrase sentences using key targeted vocabulary.
+              {t("learningMaterials.rewriteSentenceDesc")}
             </p>
           </div>
           <RewriteExerciseComponent exercises={ex.rewrite} />
@@ -259,6 +292,7 @@ export function AdditionalExercisesSection({ materials }: { materials: UnitLearn
 }
 
 function RewriteExerciseComponent({ exercises }: { exercises: RewriteExercise[] }) {
+  const { t } = useI18n();
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState(false);
   const normalise = (val: string) =>
@@ -275,8 +309,10 @@ function RewriteExerciseComponent({ exercises }: { exercises: RewriteExercise[] 
         return (
           <div key={ex.id} className="p-4 rounded-2xl border border-border bg-background">
             <p className="text-sm text-foreground font-medium mb-2.5">
-              {i + 1}. {ex.sentence} (Use:{" "}
-              <span className="font-bold text-primary">"{ex.hintWord}"</span>)
+              {i + 1}. {ex.sentence}{" "}
+              <span className="font-bold text-primary">
+                {t("learningMaterials.rewriteUseHint", { hint: ex.hintWord })}
+              </span>
             </p>
             <input
               type="text"
@@ -297,7 +333,7 @@ function RewriteExerciseComponent({ exercises }: { exercises: RewriteExercise[] 
             />
             {checked && !isCorrect && (
               <p className="text-wp-green text-xs sm:text-sm font-bold mt-2">
-                Correct: {ex.answer}
+                {t("learningMaterials.correctLabel")} {ex.answer}
               </p>
             )}
           </div>
@@ -308,20 +344,21 @@ function RewriteExerciseComponent({ exercises }: { exercises: RewriteExercise[] 
         onClick={() => setChecked(true)}
         className="rounded-xl bg-primary text-primary-foreground font-bold px-5 py-2.5 outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-primary/90 transition-colors min-h-[44px] shadow-xs"
       >
-        Check Answers
+        {t("learningMaterials.checkAnswers")}
       </button>
     </div>
   );
 }
 
 export function ErrorCorrectionSection({ materials }: { materials: UnitLearningMaterials }) {
+  const { t } = useI18n();
   if (!materials.errorCorrection) return null;
   return (
     <section className={CARD}>
       <div className="border-b border-border/60 pb-3 mb-4">
-        <h2 className="font-bold text-lg text-foreground">Find the Mistake</h2>
+        <h2 className="font-bold text-lg text-foreground">{t("learningMaterials.findMistake")}</h2>
         <p className="text-xs text-muted-foreground mt-0.5">
-          Spot inaccuracies and understand standard natural phrasing.
+          {t("learningMaterials.findMistakeDesc")}
         </p>
       </div>
       <ul className="space-y-3">
@@ -330,7 +367,10 @@ export function ErrorCorrectionSection({ materials }: { materials: UnitLearningM
             <p className="text-sm text-destructive line-through font-medium">
               {i + 1}. {item.wrong}
             </p>
-            <p className="text-sm text-wp-green font-bold mt-1.5">✓ {item.right}</p>
+            <p className="text-sm text-wp-green font-bold mt-1.5">
+              {`✓ `}
+              {item.right}
+            </p>
           </li>
         ))}
       </ul>
@@ -339,13 +379,16 @@ export function ErrorCorrectionSection({ materials }: { materials: UnitLearningM
 }
 
 export function WritingPromptsSection({ materials }: { materials: UnitLearningMaterials }) {
+  const { t } = useI18n();
   if (!materials.writingPrompts) return null;
   return (
     <section className={CARD}>
       <div className="border-b border-border/60 pb-3 mb-4">
-        <h2 className="font-bold text-lg text-foreground">Writing Prompts</h2>
+        <h2 className="font-bold text-lg text-foreground">
+          {t("learningMaterials.writingPrompts")}
+        </h2>
         <p className="text-xs text-muted-foreground mt-0.5">
-          Practice open-ended communicative expression.
+          {t("learningMaterials.writingPromptsDesc")}
         </p>
       </div>
       <div className="space-y-4">
@@ -355,7 +398,9 @@ export function WritingPromptsSection({ materials }: { materials: UnitLearningMa
             <p className="text-sm mt-2 text-foreground leading-relaxed">{p.prompt}</p>
             {p.suggestedVocabulary && (
               <p className="text-xs text-muted-foreground mt-3 bg-secondary/40 p-2.5 rounded-xl">
-                <span className="font-bold text-foreground">Suggested words: </span>
+                <span className="font-bold text-foreground">
+                  {t("learningMaterials.suggestedWords")}{" "}
+                </span>
                 {p.suggestedVocabulary.join(", ")}
               </p>
             )}
@@ -377,6 +422,7 @@ export function SelfAssessmentSection({
   onProgressUpdate?: (p: UnitStudyProgress) => void;
   completionNodeId?: string;
 }) {
+  const { t } = useI18n();
   if (!materials.selfAssessment) return null;
 
   const handleScore = (itemId: string, score: number) => {
@@ -402,12 +448,10 @@ export function SelfAssessmentSection({
     <section className={CARD} aria-labelledby="self-assessment-heading">
       <div className="border-b border-border/60 pb-3 mb-4">
         <h2 id="self-assessment-heading" className="font-bold text-lg sm:text-xl text-foreground">
-          Self-Assessment &amp; Can-Do Checklist
+          {t("learningMaterials.selfAssessment")}
         </h2>
         <p className="text-xs text-muted-foreground mt-0.5">
-          Rate your confidence: <span className="font-bold text-foreground">1</span> = Recognize ·{" "}
-          <span className="font-bold text-foreground">2</span> = Can use ·{" "}
-          <span className="font-bold text-foreground">3</span> = Can explain
+          {t("learningMaterials.selfAssessmentDesc")}
         </p>
       </div>
 
@@ -475,6 +519,7 @@ export function MultipleChoice({
   correctIndex: number;
   explanation?: string;
 }) {
+  const { t } = useI18n();
   const [picked, setPicked] = useState<number | null>(null);
   const answered = picked !== null;
 
@@ -517,7 +562,7 @@ export function MultipleChoice({
           role="status"
           className="mt-3.5 pt-3 border-t border-border/60 text-xs sm:text-sm text-muted-foreground leading-relaxed"
         >
-          <span className="font-bold text-foreground">Explanation: </span>
+          <span className="font-bold text-foreground">{t("learningMaterials.explanation")} </span>
           {explanation}
         </div>
       )}
@@ -526,6 +571,7 @@ export function MultipleChoice({
 }
 
 function MatchingExerciseComponent({ exercises }: { exercises: MatchingExercise[] }) {
+  const { t } = useI18n();
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState(false);
   const words = exercises.map((ex) => ex.word).sort();
@@ -551,7 +597,7 @@ function MatchingExerciseComponent({ exercises }: { exercises: MatchingExercise[
                   setChecked(false);
                 }}
                 ariaLabel={`Match word for definition ${i + 1}`}
-                placeholder="Select a word..."
+                placeholder={t("learningMaterials.selectWord")}
                 options={words.map((w) => ({ value: w, label: w }))}
                 className={`w-full rounded-xl border bg-background text-sm font-medium focus-within:ring-2 focus-within:ring-primary ${
                   checked
@@ -570,7 +616,7 @@ function MatchingExerciseComponent({ exercises }: { exercises: MatchingExercise[
         onClick={() => setChecked(true)}
         className="rounded-xl bg-primary text-primary-foreground font-bold px-5 py-2.5 outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-primary/90 transition-colors min-h-[44px] shadow-xs"
       >
-        Check Answers
+        {t("learningMaterials.checkAnswers")}
       </button>
     </div>
   );

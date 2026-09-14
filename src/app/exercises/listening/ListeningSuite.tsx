@@ -11,6 +11,7 @@ import { useProgress } from "../../data/progress";
 import { useAccessibility } from "../../shared/useAccessibilityPreferences";
 import { useCountdown } from "../../shared/useCountdown";
 import { ExerciseTimer } from "../../shared/ExerciseTimer";
+import { useI18n } from "../../context/I18nContext";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -24,6 +25,7 @@ const MAX_REPLAYS = 3;
 export const ExListeningDictationSprint = memo(function ExListeningDictationSprint({
   dispatch,
 }: Props) {
+  const { t } = useI18n();
   const { accessibility } = useAccessibility();
   const timed = accessibility.timedExercises;
   const { speak } = useAudio();
@@ -88,7 +90,7 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
           >
             {/* Was "Replays Left: {replays}/3" seeded from useState(2), so it
                 opened claiming 2 of 3 before anything had been used. */}
-            Replays left: {replaysLeft} of {MAX_REPLAYS}
+            {t("suites.replaysLeft", { current: replaysLeft, total: MAX_REPLAYS })}
           </button>
         </div>
 
@@ -97,15 +99,15 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
           className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col gap-4"
         >
           <h2 className="font-sans font-bold text-foreground text-xl">
-            &ldquo;The cat is sleeping on the{" "}
+            {`“The cat is sleeping on the `}
             <span className="underline text-primary decoration-primary decoration-2 underline-offset-4">
               {typed || "_______"}
             </span>
-            .&rdquo;
+            {`.”`}
           </h2>
 
           <label htmlFor="dictation-entry" className="sr-only">
-            Type the missing word
+            {t("suites.typeMissingWord")}
           </label>
           <input
             id="dictation-entry"
@@ -149,6 +151,7 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
 
 // 7. Lesson Results (Listening)
 export const ExListeningResults = memo(function ExListeningResults({ dispatch }: Props) {
+  const { t } = useI18n();
   const { progress } = useProgress();
   const strongWords = Object.values(progress.wordMemory).filter(
     (w) => w.mastery === "strong"
@@ -159,27 +162,28 @@ export const ExListeningResults = memo(function ExListeningResults({ dispatch }:
       <div className="size-24 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center shadow-2xl mb-4">
         <Trophy className="size-12 text-wp-amber" />
       </div>
-      <h1 className="font-sans font-black text-foreground text-3xl">Listening Module Complete!</h1>
+      <h1 className="font-sans font-black text-foreground text-3xl">
+        {t("suites.listeningComplete")}
+      </h1>
       <p className="font-sans text-muted-foreground text-sm mt-1 max-w-md">
-        Skill drills are practice, not graded work. Your totals below come from your lesson
-        sessions.
+        {t("suites.listeningCompleteDesc")}
       </p>
       <div className="grid grid-cols-3 gap-3 w-full max-w-md my-6">
         <div className="bg-wp-card border border-border p-3 rounded-2xl">
           <p className="font-sans font-black text-2xl text-primary">{progress.xp}</p>
-          <p className="font-sans text-[11px] text-muted-foreground">Total XP</p>
+          <p className="font-sans text-[11px] text-muted-foreground">{t("suites.totalXp")}</p>
         </div>
         <div className="bg-wp-card border border-border p-3 rounded-2xl">
           <p className="font-sans font-black text-2xl text-wp-blue">{progress.streak}</p>
-          <p className="font-sans text-[11px] text-muted-foreground">Day Streak</p>
+          <p className="font-sans text-[11px] text-muted-foreground">{t("suites.dayStreak")}</p>
         </div>
         <div className="bg-wp-card border border-border p-3 rounded-2xl">
           <p className="font-sans font-black text-2xl text-wp-green">{strongWords}</p>
-          <p className="font-sans text-[11px] text-muted-foreground">Words Strong</p>
+          <p className="font-sans text-[11px] text-muted-foreground">{t("suites.wordsStrong")}</p>
         </div>
       </div>
       <PrimaryButton
-        label="Return to Explore Worlds"
+        label={t("action.returnToExplore")}
         onClick={() => dispatch({ type: "GO", to: "explore" })}
       />
     </div>

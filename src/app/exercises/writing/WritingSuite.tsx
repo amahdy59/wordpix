@@ -11,6 +11,7 @@ import { useAccessibility } from "../../shared/useAccessibilityPreferences";
 import { useCountdown } from "../../shared/useCountdown";
 import { ExerciseTimer } from "../../shared/ExerciseTimer";
 import { shuffleArray } from "../../../utils/shuffle";
+import { useI18n } from "../../context/I18nContext";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -18,18 +19,20 @@ interface Props {
 
 // 8. Writing Results
 export const ExWritingResults = memo(function ExWritingResults({ dispatch }: Props) {
+  const { t } = useI18n();
   return (
     <div className="min-h-dvh bg-secondary flex flex-col items-center justify-center p-6 text-center">
       <div className="size-24 rounded-3xl bg-primary/20 border border-primary/30 flex items-center justify-center shadow-2xl mb-4">
         <PenTool className="size-12 text-primary" />
       </div>
-      <h1 className="font-sans font-black text-foreground text-3xl">Writing Complete!</h1>
+      <h1 className="font-sans font-black text-foreground text-3xl">
+        {t("suites.writingComplete")}
+      </h1>
       <p className="font-sans text-muted-foreground text-sm mt-1 max-w-md">
-        Writing drills are self-checked practice and are not scored. Head back to a lesson to earn
-        XP toward your streak.
+        {t("suites.writingCompleteDesc")}
       </p>
       <PrimaryButton
-        label="Return to Explore"
+        label={t("action.returnToExplore")}
         onClick={() => dispatch({ type: "GO", to: "explore" })}
       />
     </div>
@@ -45,6 +48,7 @@ export const ExWritingResults = memo(function ExWritingResults({ dispatch }: Pro
 const SPRINT_SECONDS = 60;
 
 export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatch }: Props) {
+  const { t } = useI18n();
   const { accessibility } = useAccessibility();
   const timed = accessibility.timedExercises;
   const { playCorrect, playIncorrect } = useSound();
@@ -101,7 +105,10 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
             className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col items-center gap-2 text-center"
           >
             <span className="font-sans font-black text-foreground text-3xl">
-              {correct.length} of {correct.length + missed.length} spelled correctly
+              {t("suites.spelledCorrectly", {
+                correct: correct.length,
+                total: correct.length + missed.length,
+              })}
             </span>
             <p className="font-sans text-sm text-muted-foreground">
               {missed.length === 0
@@ -133,7 +140,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <span className="font-sans font-bold text-sm text-foreground">
-            Word {index + 1} of {words.length}
+            {t("suites.wordOf", { current: index + 1, total: words.length })}
           </span>
           <ExerciseTimer countdown={countdown} enabled={timed} label="Sprint time remaining" />
         </div>
@@ -149,7 +156,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
 
         <form onSubmit={submit} className="flex flex-col gap-3">
           <label htmlFor="sprint-entry" className="font-sans font-bold text-sm text-foreground">
-            Type the word for this picture
+            {t("suites.typeWordForPicture")}
           </label>
           <input
             id="sprint-entry"

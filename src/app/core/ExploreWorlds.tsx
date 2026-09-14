@@ -26,7 +26,7 @@ interface Props {
 
 export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
   const { progress } = useProgress();
-  const { dir } = useI18n();
+  const { t, dir } = useI18n();
   const isRtl = dir === "rtl";
   const [selectedModuleId, setSelectedModuleId] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -43,6 +43,8 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
 
   const tabListId = useId();
   const searchInputId = useId();
+
+  const num = (n: number) => n;
 
   // Aggregate stats per module
   const moduleStats = useMemo(() => {
@@ -176,25 +178,29 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           <div className="flex flex-col gap-1.5">
             <div className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider">
               <Compass className="size-4.5" />
-              <span>Structured Curriculum Pathway</span>
+              <span>{t("explore.pathwayBadge")}</span>
             </div>
             <h1 className="font-sans font-black text-foreground text-2xl sm:text-3xl leading-tight">
-              5-Level Progressive Mastery
+              {t("explore.pageTitle")}
             </h1>
             <p className="font-sans font-medium text-muted-foreground text-sm max-w-xl leading-relaxed">
-              Step through 5 progressive levels from everyday essentials to advanced specialist
-              scenarios.
+              {t("explore.pageSubtitle")}
             </p>
           </div>
 
           <div className="flex flex-col sm:items-end gap-2 shrink-0 bg-primary/5 p-4 rounded-2xl border border-primary/20">
             <div className="flex items-center gap-2">
               <Award className="size-5 text-primary" />
-              <span className="font-bold text-foreground text-sm">Curriculum Mastery</span>
+              <span className="font-bold text-foreground text-sm">
+                {t("explore.curriculumMastery")}
+              </span>
             </div>
             <span className="font-black text-2xl text-primary">{overallStats.percent}%</span>
             <span className="text-xs text-muted-foreground font-medium">
-              {overallStats.masteredWords} / {overallStats.totalWords} words mastered
+              {t("explore.masteryFraction", {
+                mastered: num(overallStats.masteredWords),
+                total: num(overallStats.totalWords),
+              })}
             </span>
           </div>
         </div>
@@ -204,7 +210,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           {/* Search Input */}
           <div className="relative flex-1 max-w-md">
             <label htmlFor={searchInputId} className="sr-only">
-              Search units or vocabulary
+              {t("explore.searchLabel")}
             </label>
             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none text-muted-foreground">
               <Search className="size-4" />
@@ -214,7 +220,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
               type="search"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search topics (e.g., Kitchen, Airport, Body)..."
+              placeholder={t("explore.searchPlaceholder")}
               className="w-full bg-wp-card text-foreground placeholder:text-muted-foreground border border-border rounded-xl py-2.5 ps-10 pe-9 text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue min-h-[44px]"
             />
             {searchQuery && (
@@ -247,7 +253,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                   : "bg-wp-card text-foreground hover:bg-muted/50 border-border"
               }`}
             >
-              <span>All Levels</span>
+              <span>{t("explore.allLevels")}</span>
               <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-white/20">
                 {COURSE_MODULES.length}
               </span>
@@ -270,7 +276,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                       : "bg-wp-card text-foreground hover:bg-muted/50 border-border"
                   }`}
                 >
-                  <span>Level {mod.level}</span>
+                  <span>{t("explore.levelTab", { level: mod.level })}</span>
                   <span
                     className={`text-[10px] px-1.5 py-0.5 rounded-full ${
                       isSelected ? "bg-white/20 text-white" : "bg-primary/10 text-primary"
@@ -291,14 +297,14 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           <div className="p-8 text-center bg-wp-card rounded-2xl border border-border flex flex-col items-center gap-3">
             <Compass className="size-8 text-muted-foreground opacity-50" />
             <p className="font-bold text-foreground">
-              No units found matching &quot;{searchQuery}&quot;
+              {t("explore.noUnitsFound", { query: searchQuery })}
             </p>
             <button
               type="button"
               onClick={() => setSearchQuery("")}
               className="text-xs font-semibold text-primary underline focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue min-h-[44px] flex items-center"
             >
-              Clear search filter
+              {t("explore.clearSearch")}
             </button>
           </div>
         ) : (
@@ -334,7 +340,10 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                         {module.levelBadge}
                       </Badge>
                       <span className="text-xs font-semibold text-muted-foreground">
-                        {stats.unitCount} Units · {stats.totalWords} Vocabulary Items
+                        {t("explore.moduleStats", {
+                          units: num(stats.unitCount),
+                          words: num(stats.totalWords),
+                        })}
                       </span>
                     </div>
                     <h2 className="font-sans font-black text-foreground text-xl sm:text-2xl">
@@ -348,10 +357,13 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                   <div className="flex items-center gap-3 shrink-0">
                     <div className="hidden sm:flex flex-col items-end gap-1">
                       <span className="text-xs font-bold text-foreground">
-                        {stats.percent}% Complete
+                        {t("explore.percentComplete", { percent: stats.percent })}
                       </span>
                       <span className="text-[11px] text-muted-foreground">
-                        {stats.masteredWords}/{stats.totalWords} mastered
+                        {t("explore.masteredCount", {
+                          mastered: num(stats.masteredWords),
+                          total: num(stats.totalWords),
+                        })}
                       </span>
                     </div>
                     <div
@@ -429,7 +441,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                                   className="absolute top-2.5 start-2.5 shadow-wp-xs"
                                 >
                                   <CheckCircle2 className="size-3.5" />
-                                  <span>Mastered</span>
+                                  <span>{t("gamification.mastered")}</span>
                                 </Badge>
                               ) : (
                                 <Badge
@@ -438,7 +450,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                                   className="absolute top-2.5 start-2.5 shadow-wp-xs"
                                 >
                                   <Sparkles className="size-3.5" />
-                                  <span>Level {module.level}</span>
+                                  <span>{t("explore.levelBadge", { level: module.level })}</span>
                                 </Badge>
                               )}
                             </div>
@@ -450,7 +462,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                                   {unit.name}
                                 </h3>
                                 <span className="font-sans text-xs text-muted-foreground font-semibold">
-                                  {totalWords} Words
+                                  {t("explore.wordsBadge", { count: num(totalWords) })}
                                 </span>
                               </div>
                               <p className="font-sans text-muted-foreground text-xs leading-relaxed line-clamp-2">
@@ -478,7 +490,11 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                                   className="flex-1 bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-2.5 px-3.5 font-sans font-bold text-wp-text-on-blue text-xs sm:text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-colors flex items-center justify-center gap-1.5 min-h-[44px]"
                                 >
                                   <Play className="size-3.5 shrink-0" />
-                                  <span>{wordsPracticedCount > 0 ? "Continue" : "Start Unit"}</span>
+                                  <span>
+                                    {wordsPracticedCount > 0
+                                      ? t("action.continue")
+                                      : t("explore.startUnit")}
+                                  </span>
                                   <ArrowRight className="size-3.5 rtl:rotate-180 shrink-0" />
                                 </motion.button>
 
@@ -494,12 +510,12 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                                       area: "learn",
                                     })
                                   }
-                                  title={`Study materials for ${unit.name}`}
-                                  aria-label={`Study materials for ${unit.name}`}
+                                  title={t("dashboard.studyGuideAria", { unit: unit.name })}
+                                  aria-label={t("dashboard.studyGuideAria", { unit: unit.name })}
                                   className="px-3.5 py-2.5 bg-secondary text-primary hover:bg-primary/10 border border-primary/20 rounded-xl font-sans font-bold text-xs sm:text-sm min-h-[44px] flex items-center justify-center gap-1.5 transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue shrink-0"
                                 >
                                   <Library className="size-4 shrink-0" />
-                                  <span>Study</span>
+                                  <span>{t("explore.studyButton")}</span>
                                 </motion.button>
                               </div>
                             </div>

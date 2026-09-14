@@ -15,6 +15,7 @@ import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { HelpCircle, Keyboard, CheckCircle2, XCircle, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useI18n } from "../context/I18nContext";
 
 interface Props {
   step: number;
@@ -29,6 +30,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   lessonId,
   dispatch,
 }: Props) {
+  const { t } = useI18n();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
   const { accessibility } = useAccessibility();
@@ -95,6 +97,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       playIncorrect,
       currentTargetWord.id,
       currentTargetWord.label,
+      currentTargetWord.topic,
       options,
       spoken,
       dispatch,
@@ -144,9 +147,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
           <span className="uppercase tracking-wider">{group.name}</span>
           <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
             <HelpCircle className="size-3" aria-hidden />
-            <span>
-              Question {queue.position} of {queue.total}
-            </span>
+            <span>{t("exercise.questionOf", { current: queue.position, total: queue.total })}</span>
           </span>
         </>
       }
@@ -159,7 +160,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         <div className="w-full hidden pointer-fine:flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
             <Keyboard className="size-4" aria-hidden />
-            <span>Press 1-{options.length} to choose an option</span>
+            <span>{t("exercise.pressNumberToChoose", { count: options.length })}</span>
           </div>
         </div>
       }
@@ -168,9 +169,11 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         {/* Question card */}
         <div className="bg-wp-card border border-border rounded-2xl p-4 sm:p-5 shadow-wp-xs shrink-0 flex flex-col gap-3">
           <div className="flex items-center justify-between gap-3">
-            <h2 className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl flex-1 text-balance">
-              Which picture shows &ldquo;
-              <span className="text-primary">{currentTargetWord.label}</span>&rdquo;?
+            <h2
+              className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl flex-1 text-balance"
+              data-question="Which picture shows"
+            >
+              {t("exercise.whichPictureShows", { word: currentTargetWord.label })}
             </h2>
             <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full shrink-0 whitespace-nowrap">
               /{currentTargetWord.phonetic}/
@@ -317,7 +320,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 onClick={handleContinue}
                 className="flex items-center gap-1.5 px-4 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
               >
-                Continue
+                {t("action.continue")}
                 <ArrowRight className="size-4" aria-hidden />
               </button>
             </motion.div>

@@ -13,6 +13,7 @@ import {
 import { getWords } from "../data/vocabulary";
 import { useProgress } from "../data/progress";
 import { useSound } from "../shared/useSound";
+import { useI18n } from "../../i18n";
 
 interface Props {
   sessionId?: string;
@@ -35,6 +36,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
 }: Props) {
   const { progress, recordSessionCompletion, recordUnitAssessmentCompletion } = useProgress();
   const { playLevelUp } = useSound();
+  const { t } = useI18n();
 
   const group = resolveGroup(lessonId, wordQueue);
 
@@ -202,10 +204,10 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
 
           <div className="hidden lg:block text-center">
             <h2 className="font-sans font-bold text-foreground text-2xl">
-              Session Results Breakdown
+              {t("lesson.sessionBreakdown")}
             </h2>
             <p className="font-sans text-muted-foreground text-sm mt-1">
-              Here is your performance for the {group.name} group.
+              {t("lesson.performanceForGroup", { group: group.name })}
             </p>
           </div>
 
@@ -249,7 +251,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             <div className="w-full bg-wp-card border border-border rounded-2xl p-4 flex flex-col gap-1.5 shadow-wp-xs">
               <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider mb-0.5">
                 <Sparkles className="size-4 text-wp-amber" aria-hidden />
-                <span>How you earned {xp} XP</span>
+                <span>{t("lesson.howEarnedXp", { xp })}</span>
               </div>
               <dl className="flex flex-col gap-1">
                 {[
@@ -279,13 +281,15 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           <div className="w-full bg-wp-card border border-primary/30 rounded-2xl p-4 flex flex-col gap-2 shadow-wp-xs">
             <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider">
               <Sparkles className="size-4 text-wp-amber" aria-hidden />
-              <span>Word Memory Progress</span>
+              <span>{t("lesson.wordMemoryProgress")}</span>
             </div>
             <div className="flex items-center justify-between">
-              <span className="font-sans font-bold text-foreground text-sm">Words Practiced</span>
+              <span className="font-sans font-bold text-foreground text-sm">
+                {t("lesson.wordsPracticed")}
+              </span>
               <span className="font-sans font-bold text-wp-green text-xs bg-wp-green-light px-2.5 py-0.5 rounded-full flex items-center gap-1">
                 <ShieldCheck className="size-3.5" />
-                SM-2 Scheduled
+                {t("lesson.sm2Scheduled")}
               </span>
             </div>
           </div>
@@ -294,7 +298,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           <div className="w-full flex flex-col gap-2">
             <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
               <Layers className="size-4 text-primary" />
-              <span>Words in Session</span>
+              <span>{t("lesson.wordsInSession")}</span>
             </div>
             <div className="flex flex-col gap-1.5 w-full">
               {groupWords.map((w) => (

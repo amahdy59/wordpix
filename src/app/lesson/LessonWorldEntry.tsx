@@ -18,6 +18,7 @@ import { getWords } from "../data/vocabulary";
 import { GroupThumbnail } from "./GroupThumbnail";
 import { hasLearningMaterials } from "../learning/registry";
 import { useProgress } from "../data/progress";
+import { useI18n } from "../../i18n";
 
 interface Props {
   unitId?: string;
@@ -34,6 +35,7 @@ const STEP_LABELS = [
 ];
 
 export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatch }: Props) {
+  const { t } = useI18n();
   const world = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
   const { progress } = useProgress();
 
@@ -129,33 +131,33 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
             className="min-h-11 min-w-11 px-3 inline-flex items-center justify-center gap-2 rounded-xl border border-border focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <ArrowRight className="size-5 rotate-180 rtl:rotate-0" aria-hidden />
-            <span className="hidden sm:inline">Back</span>
+            <span className="hidden sm:inline">{t("action.back")}</span>
           </button>
           <div className="min-w-0">
             <h1 className="font-bold text-foreground text-xl">{world.name}</h1>
-            <p className="text-muted-foreground text-sm">Choose a vocabulary group</p>
+            <p className="text-muted-foreground text-sm">{t("lesson.chooseVocabGroup")}</p>
           </div>
         </div>
         <span className="shrink-0 inline-flex items-center gap-1 font-semibold text-sm bg-secondary text-primary px-3 py-2 rounded-xl">
-          A1<span className="hidden sm:inline"> Beginner</span>
+          {`A1`}
+          <span className="hidden sm:inline"> {t("lesson.levelBeginner")}</span>
         </span>
       </header>
       <section aria-label="Word groups" className="flex-1 overflow-y-auto min-h-0">
         <div className="w-full max-w-[1040px] mx-auto p-4 lg:p-8 pb-[max(6rem,env(safe-area-inset-bottom))]">
           <div className="mb-6">
             <p className="text-primary font-bold text-sm uppercase tracking-wider">
-              WordPix Immersion
+              {t("lesson.immersionBadge")}
             </p>
             <h2 className="font-black text-foreground text-3xl sm:text-4xl mt-2">
-              Select a Word Group
+              {t("lesson.selectWordGroup")}
             </h2>
-            <p className="text-muted-foreground mt-2">
-              Choose a group to continue your learning path.
-            </p>
+            <p className="text-muted-foreground mt-2">{t("lesson.chooseGroupDesc")}</p>
             <div className="flex flex-wrap gap-3 mt-4">
               <button type="button" onClick={handleTakeAssessment} className={secondaryAction}>
                 <GraduationCap className="size-5" aria-hidden />
-                Test out<span className="hidden sm:inline">of this unit</span>
+                {t("lesson.testOut")}
+                <span className="hidden sm:inline"> {t("lesson.ofThisUnit")}</span>
               </button>
               {hasLearningMaterials(world.id) && (
                 <button
@@ -171,14 +173,14 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                   className={secondaryAction}
                 >
                   <Library className="size-5" aria-hidden />
-                  Study materials
+                  {t("lesson.studyMaterialsBtn")}
                 </button>
               )}
             </div>
           </div>
           <div className="rounded-xl bg-secondary/50 p-4 mb-4 sm:hidden">
             <p className="font-semibold text-foreground">
-              {startedGroups} of {world.groups.length} groups started
+              {t("lesson.groupsStarted", { started: startedGroups, total: world.groups.length })}
             </p>
             <div
               role="progressbar"
@@ -354,7 +356,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                         >
                           <div className="px-3 py-2 border-b border-border/60 mb-1">
                             <p className="font-sans font-bold text-xs text-foreground uppercase tracking-wider">
-                              Lesson Options
+                              {t("lesson.lessonOptions")}
                             </p>
                             <p className="font-sans text-xs text-muted-foreground truncate">
                               {g.name}
@@ -373,10 +375,10 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                             </div>
                             <div className="flex-1">
                               <p className="font-sans font-semibold text-sm leading-tight text-foreground">
-                                Read Story
+                                {t("lesson.readStory")}
                               </p>
                               <p className="font-sans text-xs text-muted-foreground">
-                                Jump to story & quiz
+                                {t("lesson.jumpToStory")}
                               </p>
                             </div>
                           </button>
@@ -393,10 +395,10 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                             </div>
                             <div className="flex-1">
                               <p className="font-sans font-semibold text-sm leading-tight text-foreground">
-                                Browse Words
+                                {t("lesson.browseWords")}
                               </p>
                               <p className="font-sans text-xs text-muted-foreground">
-                                Vocabulary flashcards & audio
+                                {t("lesson.browseWordsDesc")}
                               </p>
                             </div>
                           </button>
@@ -413,10 +415,10 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                             </div>
                             <div className="flex-1">
                               <p className="font-sans font-semibold text-sm leading-tight text-foreground">
-                                Practice All Drills
+                                {t("lesson.practiceAllDrills")}
                               </p>
                               <p className="font-sans text-xs text-muted-foreground">
-                                Complete 6-step curriculum
+                                {t("lesson.complete6Step")}
                               </p>
                             </div>
                           </button>
@@ -435,7 +437,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                               <div className="flex items-center gap-2">
                                 <ListOrdered className="size-4 text-primary" />
                                 <span className="font-sans font-medium text-xs">
-                                  Jump to Step...
+                                  {t("lesson.jumpToStep")}
                                 </span>
                               </div>
                               <ChevronRight

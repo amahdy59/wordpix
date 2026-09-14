@@ -21,12 +21,14 @@ import { useAuth } from "../context/AuthContext";
 import { AuthModal } from "../../features/auth/AuthModal";
 import { staggerContainer, staggerItem } from "../shared/animations";
 import { LearnerAvatar } from "../shared/LearnerAvatar";
+import { useI18n } from "../context/I18nContext";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
 export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: Props) {
+  const { t } = useI18n();
   const { progress } = useProgress();
   const { theme, resolvedTheme, toggleTheme } = useTheme();
   const { user, signOut } = useAuth();
@@ -101,15 +103,15 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
 
           <div className="flex flex-col items-center md:items-start gap-1">
             <h1 className="font-sans font-black text-foreground text-2xl md:text-3xl">
-              Learner Profile
+              {t("profile.title")}
             </h1>
             <p className="font-sans font-medium text-muted-foreground text-sm">
-              Level {progress.englishLevel} · Goal: {progress.goal}
+              {t("profile.levelGoal", { level: progress.englishLevel, goal: progress.goal })}
             </p>
             <div className="flex items-center gap-2 mt-1">
               <span className="bg-secondary text-primary font-sans font-semibold text-xs px-3 py-1 rounded-full border border-primary/20 flex items-center gap-1.5">
                 <Flame className="size-3.5 text-wp-amber" />
-                {progress.streak}-day streak active
+                {t("profile.streakActive", { streak: progress.streak })}
               </span>
             </div>
           </div>
@@ -122,7 +124,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
             whileTap={{ scale: 0.95 }}
             type="button"
             onClick={toggleTheme}
-            aria-label={`Theme: ${theme}. Activate to change theme.`}
+            aria-label={`${t("settings.themeLabel")}: ${theme}. ${t("settings.themeActivate")}`}
             className="p-3 min-h-[44px] rounded-2xl bg-wp-card border border-border text-foreground hover:bg-muted transition-colors shadow-wp-xs flex items-center gap-2 font-sans font-bold text-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             {resolvedTheme === "dark" ? (
@@ -140,7 +142,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
             className="p-3 min-h-[44px] rounded-2xl bg-wp-card border border-border text-foreground hover:bg-muted transition-colors shadow-wp-xs flex items-center gap-2 font-sans font-bold text-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Sliders className="size-4 text-muted-foreground" />
-            <span>Settings</span>
+            <span>{t("profile.settings")}</span>
           </motion.button>
 
           {user ? (
@@ -163,16 +165,16 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
               className="px-4 min-h-[44px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-xs flex items-center gap-2 shadow-wp-xs hover:opacity-90 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <UserIcon className="size-4" />
-              <span>Sign In / Sync</span>
+              <span>{t("profile.signInSync")}</span>
             </motion.button>
           )}
         </motion.div>
       </header>
 
       {/* Stats grid */}
-      <motion.section variants={staggerItem} aria-label="Genuine memory statistics">
+      <motion.section variants={staggerItem} aria-label={t("profile.statsAria")}>
         <h2 className="font-sans font-bold text-foreground text-lg mb-3">
-          Adaptive Memory &amp; Retention Measures
+          {t("profile.retentionMeasures")}
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           {STATS.map(({ value, label, icon: Icon, color }) => (

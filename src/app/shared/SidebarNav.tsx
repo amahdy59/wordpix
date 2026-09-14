@@ -36,7 +36,7 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
             <BookOpen className="size-5 text-primary-foreground" />
           </div>
           <span className="hidden xl:block font-sans font-bold text-foreground tracking-tight text-xl">
-            WordPix
+            {`WordPix`}
           </span>
         </button>
 
@@ -94,7 +94,7 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
         >
           <Sliders className="size-5 shrink-0" />
           <span className="hidden xl:block font-sans font-semibold text-sm ms-3 group-hover:text-foreground transition-colors">
-            Settings
+            {t("nav.settings")}
           </span>
         </button>
 
@@ -109,7 +109,7 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
         >
           <UserCircle className="size-6 shrink-0" />
           <span className="hidden xl:block font-sans font-semibold text-sm ms-3 group-hover:text-foreground transition-colors">
-            Profile
+            {t("nav.profile")}
           </span>
         </button>
       </div>

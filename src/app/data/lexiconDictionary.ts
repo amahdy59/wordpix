@@ -36,15 +36,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
   toilet: {
     id: "toilet",
     arabic: "مرحاض",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the toilet now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The toilet is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new toilet.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the toilet", "clean the toilet", "buy a toilet"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -52,28 +44,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A bowl fitted with a water supply and a drain, used for urination and defecation.",
-        ar: "مرحاض",
-        sentences: [
-          {
-            en: "The toilet is clean.",
-            ar: "المرحاض نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   sink: {
     id: "sink",
     arabic: "حوض",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the sink now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The sink is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new sink.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the sink", "clean the sink", "buy a sink"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -81,28 +60,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A bowl attached to the wall or floor, with pipes to supply and carry away water.",
-        ar: "حوض",
-        sentences: [
-          {
-            en: "The sink is clean.",
-            ar: "الحوض نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   bathtub: {
     id: "bathtub",
     arabic: "حوض الاستحمام",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the bathtub now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The bathtub is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new bathtub.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the bathtub", "clean the bathtub", "buy a bathtub"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -110,13 +76,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A long plastic or metal container that you fill with water to sit in and wash yourself.",
-        ar: "حوض الاستحمام",
-        sentences: [
-          {
-            en: "The bathtub is clean.",
-            ar: "الحوض الاستحمام نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
@@ -141,40 +102,35 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         example: "He stood under the outdoor beach shower to rinse off sticky saltwater and sand.",
       },
     ],
+    sentences: [],
+    exampleSentence: "",
+    exampleArabic: "",
+  },
+  mirror: {
+    id: "mirror",
+    arabic: "مِرْآة",
+    phonetic: "/ˈmɪrər/",
+    partOfSpeech: "noun",
+    collocations: ["look in the mirror", "rearview mirror", "bathroom mirror", "broken mirror"],
     sentences: [
       {
-        context: "Coastal Facilities",
-        en: "Swimmers lined up at the outdoor beach shower to rinse sand and saltwater from their skin and hair.",
-        ar: "اصْطَفَّ السَّابِحُونَ عِنْدَ دُشِّ الشَّاطِئِ الخَارِجِيِّ لِغَسْلِ الرِّمَالِ وَالمِلْحِ عَنْ أَجْسَامِهِمْ.",
+        context: "Everyday Usage",
+        en: "She looked in the mirror to check her hair.",
+        ar: "نَظَرَتْ فِي المِرْآةِ لِتَتَفَقَّدَ شَعْرَهَا.",
       },
       {
-        context: "Foot Wash Post",
-        en: "Convenient low foot showers near the boardwalk ramp allow visitors to clean their feet before getting into cars.",
-        ar: "تُتِيحُ مِرَشَّاتُ القَدَمِ المُنْخَفِضَةُ قُرْبَ المَمْشَى لِلزُّوَّارِ غَسْلَ أَرْجُلِهِمْ قَبْلَ رُكُوبِ السَّيَّارَاتِ.",
-      },
-      {
-        context: "Freshwater Rinse",
-        en: "A quick rinse under the freshwater shower prevents skin irritation caused by dried ocean brine.",
-        ar: "يَمْنَعُ الشَّطْفُ السَّرِيعُ تَحْتَ المَاءِ العَذْبِ تَهَيُّجَ الجِلْدِ النَّاتِجَ عَنْ مِلْحِ البَحْرِ.",
+        context: "General",
+        en: "The bathroom mirror was fogged up after the hot shower.",
+        ar: "كَانَتْ مِرْآةُ الحَمَّامِ ضَبَابِيَّةً بَعْدَ الِاسْتِحْمَامِ بِالمَاءِ السَّاخِنِ.",
       },
     ],
-    exampleSentence:
-      "Swimmers lined up at the outdoor beach shower to rinse sand and saltwater from their skin and hair.",
-    exampleArabic:
-      "اصْطَفَّ السَّابِحُونَ عِنْدَ دُشِّ الشَّاطِئِ الخَارِجِيِّ لِغَسْلِ الرِّمَالِ وَالمِلْحِ عَنْ أَجْسَامِهِمْ.",
+    exampleSentence: "She looked in the mirror to check her hair.",
+    exampleArabic: "نَظَرَتْ فِي المِرْآةِ لِتَتَفَقَّدَ شَعْرَهَا.",
   },
   faucet: {
     id: "faucet",
     arabic: "صنبور",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the faucet now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The faucet is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new faucet.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the faucet", "clean the faucet", "buy a faucet"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -182,28 +138,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A device that controls the flow of liquid, especially water, from a pipe.",
-        ar: "صنبور",
-        sentences: [
-          {
-            en: "The faucet is clean.",
-            ar: "الصنبور نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   drain: {
     id: "drain",
     arabic: "بالوعة",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the drain now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The drain is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new drain.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the drain", "clean the drain", "buy a drain"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -211,28 +154,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A hole or pipe through which liquid is carried away.",
-        ar: "بالوعة",
-        sentences: [
-          {
-            en: "The drain is clean.",
-            ar: "البالوعة نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   bidet: {
     id: "bidet",
     arabic: "شطاف",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the bidet now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The bidet is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new bidet.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the bidet", "clean the bidet", "buy a bidet"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -240,28 +170,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A small low bath in which a person can wash their lower body.",
-        ar: "شطاف",
-        sentences: [
-          {
-            en: "The bidet is clean.",
-            ar: "الشطاف نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   showerhead: {
     id: "showerhead",
     arabic: "رأس الدش",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the showerhead now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The showerhead is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new showerhead.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the showerhead", "clean the showerhead", "buy a showerhead"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -269,28 +186,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "The part of a shower that water flows out of.",
-        ar: "رأس الدش",
-        sentences: [
-          {
-            en: "The showerhead is clean.",
-            ar: "الرأس الدش نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   soap: {
     id: "soap",
     arabic: "صابون",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the soap now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The soap is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new soap.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the soap", "clean the soap", "buy a soap"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -298,28 +202,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A substance used for washing the body or other things.",
-        ar: "صابون",
-        sentences: [
-          {
-            en: "The soap is clean.",
-            ar: "الصابون نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   shampoo: {
     id: "shampoo",
     arabic: "شامبو",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the shampoo now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The shampoo is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new shampoo.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the shampoo", "clean the shampoo", "buy a shampoo"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -327,28 +218,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A liquid soap used for washing your hair.",
-        ar: "شامبو",
-        sentences: [
-          {
-            en: "The shampoo is clean.",
-            ar: "الشامبو نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   conditioner: {
     id: "conditioner",
     arabic: "بلسم الشعر",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the conditioner now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The conditioner is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new conditioner.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the conditioner", "clean the conditioner", "buy a conditioner"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -356,28 +234,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A liquid used after washing hair to make it soft and shiny.",
-        ar: "بلسم الشعر",
-        sentences: [
-          {
-            en: "The conditioner is clean.",
-            ar: "البلسم الشعر نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   toothpaste: {
     id: "toothpaste",
     arabic: "معجون أسنان",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the toothpaste now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The toothpaste is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new toothpaste.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the toothpaste", "clean the toothpaste", "buy a toothpaste"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -385,28 +250,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A paste used with a toothbrush to clean your teeth.",
-        ar: "معجون أسنان",
-        sentences: [
-          {
-            en: "The toothpaste is clean.",
-            ar: "المعجون أسنان نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   toothbrush: {
     id: "toothbrush",
     arabic: "فرشاة أسنان",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the toothbrush now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The toothbrush is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new toothbrush.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the toothbrush", "clean the toothbrush", "buy a toothbrush"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -414,28 +266,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A small brush with a long handle used to clean teeth.",
-        ar: "فرشاة أسنان",
-        sentences: [
-          {
-            en: "The toothbrush is clean.",
-            ar: "الفرشاة أسنان نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   deodorant: {
     id: "deodorant",
     arabic: "مزيل عرق",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the deodorant now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The deodorant is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new deodorant.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the deodorant", "clean the deodorant", "buy a deodorant"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -443,28 +282,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A substance applied to the skin to prevent body odor.",
-        ar: "مزيل عرق",
-        sentences: [
-          {
-            en: "The deodorant is clean.",
-            ar: "المزيل عرق نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   lotion: {
     id: "lotion",
     arabic: "لوشن",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the lotion now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The lotion is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new lotion.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the lotion", "clean the lotion", "buy a lotion"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -472,28 +298,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A thick smooth liquid applied to the skin for medicinal or cosmetic purposes.",
-        ar: "لوشن",
-        sentences: [
-          {
-            en: "The lotion is clean.",
-            ar: "اللوشن نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   mouthwash: {
     id: "mouthwash",
     arabic: "غسول الفم",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the mouthwash now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The mouthwash is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new mouthwash.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the mouthwash", "clean the mouthwash", "buy a mouthwash"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -501,28 +314,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A liquid used to clean the mouth and make the breath smell fresh.",
-        ar: "غسول الفم",
-        sentences: [
-          {
-            en: "The mouthwash is clean.",
-            ar: "الغسول الفم نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   "bath-towel": {
     id: "bath-towel",
     arabic: "منشفة استحمام",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the bath towel now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The bath towel is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new bath towel.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the bath towel", "clean the bath towel", "buy a bath towel"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -530,28 +330,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A large towel used to dry the body after taking a bath or shower.",
-        ar: "منشفة استحمام",
-        sentences: [
-          {
-            en: "The bath towel is clean.",
-            ar: "المنشفة استحمام نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   "hand-towel": {
     id: "hand-towel",
     arabic: "منشفة يد",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the hand towel now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The hand towel is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new hand towel.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the hand towel", "clean the hand towel", "buy a hand towel"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -559,28 +346,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A small towel used for drying the hands.",
-        ar: "منشفة يد",
-        sentences: [
-          {
-            en: "The hand towel is clean.",
-            ar: "المنشفة يد نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   washcloth: {
     id: "washcloth",
     arabic: "منشفة وجه",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the washcloth now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The washcloth is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new washcloth.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the washcloth", "clean the washcloth", "buy a washcloth"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -588,28 +362,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A small cloth used to wash the face and body.",
-        ar: "منشفة وجه",
-        sentences: [
-          {
-            en: "The washcloth is clean.",
-            ar: "المنشفة وجه نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   "bath-mat": {
     id: "bath-mat",
     arabic: "سجادة حمام",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the bath mat now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The bath mat is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new bath mat.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the bath mat", "clean the bath mat", "buy a bath mat"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -617,28 +378,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A small rug placed on the floor next to a bathtub or shower to stand on.",
-        ar: "سجادة حمام",
-        sentences: [
-          {
-            en: "The bath mat is clean.",
-            ar: "السجادة حمام نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   bathrobe: {
     id: "bathrobe",
     arabic: "روب استحمام",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the bathrobe now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The bathrobe is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new bathrobe.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the bathrobe", "clean the bathrobe", "buy a bathrobe"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -646,28 +394,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A loose piece of clothing worn before or after taking a bath.",
-        ar: "روب استحمام",
-        sentences: [
-          {
-            en: "The bathrobe is clean.",
-            ar: "الروب استحمام نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   "shower-curtain": {
     id: "shower-curtain",
     arabic: "ستارة الدش",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the shower curtain now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The shower curtain is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new shower curtain.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the shower curtain", "clean the shower curtain", "buy a shower curtain"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -675,57 +410,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A curtain hung around a shower to keep water from splashing out.",
-        ar: "ستارة الدش",
-        sentences: [
-          {
-            en: "The shower curtain is clean.",
-            ar: "الستارة الدش نظيف.",
-          },
-        ],
-      },
-    ],
-  },
-  mirror: {
-    id: "mirror",
-    arabic: "مرآة",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the mirror now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The mirror is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new mirror.", ar: "يرجى شراء واحد جديد." },
-    ],
-    collocations: ["use the mirror", "clean the mirror", "buy a mirror"],
-    phrasalVerbs: [],
-    partOfSpeech: "noun",
-    audio: "/audio/en-US/mirror.mp3",
-    meanings: [
-      {
-        en: "A piece of glass with a shiny metallic backing that reflects images.",
-        ar: "مرآة",
-        sentences: [
-          {
-            en: "The mirror is clean.",
-            ar: "المرآة نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   comb: {
     id: "comb",
     arabic: "مشط",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the comb now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The comb is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new comb.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the comb", "clean the comb", "buy a comb"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -733,28 +426,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A tool with a row of teeth used for untangling or arranging hair.",
-        ar: "مشط",
-        sentences: [
-          {
-            en: "The comb is clean.",
-            ar: "المشط نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   hairbrush: {
     id: "hairbrush",
     arabic: "فرشاة شعر",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the hairbrush now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The hairbrush is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new hairbrush.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the hairbrush", "clean the hairbrush", "buy a hairbrush"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -762,28 +442,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A brush used for grooming and smoothing hair.",
-        ar: "فرشاة شعر",
-        sentences: [
-          {
-            en: "The hairbrush is clean.",
-            ar: "الفرشاة شعر نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   hairdryer: {
     id: "hairdryer",
     arabic: "مجفف شعر",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the hairdryer now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The hairdryer is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new hairdryer.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the hairdryer", "clean the hairdryer", "buy a hairdryer"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -791,28 +458,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "An electrical machine used to dry hair by blowing warm air over it.",
-        ar: "مجفف شعر",
-        sentences: [
-          {
-            en: "The hairdryer is clean.",
-            ar: "المجفف شعر نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   razor: {
     id: "razor",
     arabic: "شفرة حلاقة",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the razor now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The razor is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new razor.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the razor", "clean the razor", "buy a razor"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -820,28 +474,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "An instrument with a sharp blade used to remove hair from the skin.",
-        ar: "شفرة حلاقة",
-        sentences: [
-          {
-            en: "The razor is clean.",
-            ar: "الشفرة حلاقة نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   tweezers: {
     id: "tweezers",
     arabic: "ملقط",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the tweezers now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The tweezers is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new tweezers.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the tweezers", "clean the tweezers", "buy a tweezers"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -849,28 +490,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A small tool consisting of two pointed arms used for picking up small objects or plucking hairs.",
-        ar: "ملقط",
-        sentences: [
-          {
-            en: "The tweezers is clean.",
-            ar: "الملقط نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   "nail-clippers": {
     id: "nail-clippers",
     arabic: "قصافة أظافر",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the nail clippers now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The nail clippers is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new nail clippers.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the nail clippers", "clean the nail clippers", "buy a nail clippers"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -878,28 +506,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A tool used for trimming fingernails and toenails.",
-        ar: "قصافة أظافر",
-        sentences: [
-          {
-            en: "The nail clippers is clean.",
-            ar: "القصافة أظافر نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   "cotton-swab": {
     id: "cotton-swab",
     arabic: "عود قطن",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the cotton swab now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The cotton swab is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new cotton swab.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the cotton swab", "clean the cotton swab", "buy a cotton swab"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -907,28 +522,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A small stick with cotton on each end, used for cleaning or applying makeup.",
-        ar: "عود قطن",
-        sentences: [
-          {
-            en: "The cotton swab is clean.",
-            ar: "العود قطن نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   "toilet-paper": {
     id: "toilet-paper",
     arabic: "ورق تواليت",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the toilet paper now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The toilet paper is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new toilet paper.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the toilet paper", "clean the toilet paper", "buy a toilet paper"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -936,28 +538,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "Soft paper in a long roll used for cleaning oneself after using the toilet.",
-        ar: "ورق تواليت",
-        sentences: [
-          {
-            en: "The toilet paper is clean.",
-            ar: "الورق تواليت نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   plunger: {
     id: "plunger",
     arabic: "مكبس",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the plunger now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The plunger is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new plunger.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the plunger", "clean the plunger", "buy a plunger"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -965,28 +554,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A tool with a rubber cup on a handle, used to unblock pipes.",
-        ar: "مكبس",
-        sentences: [
-          {
-            en: "The plunger is clean.",
-            ar: "المكبس نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   "toilet-brush": {
     id: "toilet-brush",
     arabic: "فرشاة مرحاض",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the toilet brush now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The toilet brush is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new toilet brush.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the toilet brush", "clean the toilet brush", "buy a toilet brush"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -994,28 +570,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A brush used for cleaning the inside of a toilet bowl.",
-        ar: "فرشاة مرحاض",
-        sentences: [
-          {
-            en: "The toilet brush is clean.",
-            ar: "الفرشاة مرحاض نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   "trash-can": {
     id: "trash-can",
     arabic: "سلة مهملات",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the trash can now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The trash can is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new trash can.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the trash can", "clean the trash can", "buy a trash can"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -1023,28 +586,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A container used for holding waste.",
-        ar: "سلة مهملات",
-        sentences: [
-          {
-            en: "The trash can is clean.",
-            ar: "السلة مهملات نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   scale: {
     id: "scale",
     arabic: "ميزان",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the scale now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The scale is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new scale.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the scale", "clean the scale", "buy a scale"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -1052,28 +602,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A device used for weighing people or objects.",
-        ar: "ميزان",
-        sentences: [
-          {
-            en: "The scale is clean.",
-            ar: "الميزان نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   "laundry-basket": {
     id: "laundry-basket",
     arabic: "سلة غسيل",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the laundry basket now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The laundry basket is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new laundry basket.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the laundry basket", "clean the laundry basket", "buy a laundry basket"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -1081,28 +618,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A basket used to hold dirty clothes before they are washed.",
-        ar: "سلة غسيل",
-        sentences: [
-          {
-            en: "The laundry basket is clean.",
-            ar: "السلة غسيل نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   sponge: {
     id: "sponge",
     arabic: "إسفنجة",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the sponge now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The sponge is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new sponge.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the sponge", "clean the sponge", "buy a sponge"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -1110,28 +634,15 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A piece of soft, porous material used for washing or cleaning.",
-        ar: "إسفنجة",
-        sentences: [
-          {
-            en: "The sponge is clean.",
-            ar: "الإسفنجة نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
   loofah: {
     id: "loofah",
     arabic: "ليفة",
-    sentences: [
-      {
-        context: "Daily Needs",
-        en: "I need to use the loofah now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
-      },
-      { context: "Cleaning", en: "The loofah is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new loofah.", ar: "يرجى شراء واحد جديد." },
-    ],
+    sentences: [],
     collocations: ["use the loofah", "clean the loofah", "buy a loofah"],
     phrasalVerbs: [],
     partOfSpeech: "noun",
@@ -1139,13 +650,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     meanings: [
       {
         en: "A rough object used for rubbing and washing the body.",
-        ar: "ليفة",
-        sentences: [
-          {
-            en: "The loofah is clean.",
-            ar: "الليفة نظيف.",
-          },
-        ],
+        ar: "",
+        sentences: [],
       },
     ],
   },
@@ -27726,11 +27232,6 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         en: "She slipped into a bright pair of waterproof flip-flops to stroll from the changing room to the shore.",
         ar: "ارْتَدَتْ صَنْدَلَ شَاطِئٍ مُقَاوِمًا لِلْمَاءِ لِتَسِيرَ مِنْ غُرْفَةِ تَبْدِيلِ المَلَابِسِ إِلَى الشَّاطِئِ.",
       },
-      {
-        context: "Easy Cleaning",
-        en: "A quick rinse under the outdoor beach shower washes all sand right off your flexible flip-flops.",
-        ar: "يَغْسِلُ الشَّطْفُ السَّرِيعُ تَحْتَ دُشِّ الشَّاطِئِ كُلَّ الرِّمَالِ عَنْ صَنْدَلِ البَحْرِ.",
-      },
     ],
     exampleSentence:
       "Rubber flip-flops are the quintessential summer footwear for walking comfortably across sunbaked sands.",
@@ -37062,7 +36563,6 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleSentence: "Hand your car keys to the attendant at the circular driveway.",
     exampleArabic: "سَلِّمْ مَفَاتِيحَ سَيَّارَتِكَ لِعَامِلِ خِدْمَةِ رَكْنِ السَّيَّارَات.",
   },
-
   "post-office": {
     id: "post-office",
     arabic: "مَكْتَبُ البَرِيد",
@@ -37955,7 +37455,6 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "اقْرَأِ النَّصَّ عَلَى اللَّوْحَةِ التِّذْكَارِيَّةِ التَّارِيخِيَّةِ بِجَانِبِ النَّصْب.",
   },
-
   runway: {
     id: "runway",
     arabic: "مُدَرَّجُ الطَّائِرَات",

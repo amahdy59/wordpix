@@ -4,6 +4,7 @@ import type { WordMetaEntry, UnitLearningMaterials } from "../types";
 import { useAudio } from "../../shared/useAudio";
 import { Volume2, ChevronDown, ChevronUp, Eye } from "lucide-react";
 import { WordImage } from "../../shared/WordImage";
+import { useI18n } from "../../../i18n";
 
 interface Props {
   word: VocabularyItem;
@@ -22,6 +23,7 @@ export function VocabularyCard({
   onReveal,
   immersionMode = false,
 }: Props) {
+  const { t } = useI18n();
   const [speechRate, setSpeechRate] = useState<0.8 | 1.0 | 1.2>(1.0);
   const { speak, stop } = useAudio({ lang: "en-US", rate: speechRate });
   const [showDetails, setShowDetails] = useState(false);
@@ -53,7 +55,7 @@ export function VocabularyCard({
         {!isRevealed ? (
           <div className="w-full flex flex-col items-center space-y-3">
             <p className="text-muted-foreground text-sm font-medium">
-              Try to recall this word in English before revealing.
+              {t("study.tryRecallBefore")}
             </p>
             <button
               type="button"
@@ -61,9 +63,9 @@ export function VocabularyCard({
               className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary/90 transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px] shadow-xs"
             >
               <Eye className="size-5" aria-hidden />
-              <span>Reveal Word</span>
+              <span>{t("study.revealWord")}</span>
               <kbd className="hidden sm:inline-flex ms-1 px-2 py-0.5 text-xs bg-primary-foreground/20 rounded font-mono font-normal">
-                Space
+                {t("study.space")}
               </kbd>
             </button>
           </div>
@@ -103,9 +105,9 @@ export function VocabularyCard({
                 onClick={cycleSpeed}
                 className="px-2.5 py-1 text-xs font-mono font-bold rounded-xl bg-secondary text-muted-foreground hover:text-foreground hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                 aria-label={`Speech playback speed: ${speechRate.toFixed(1)}x. Click to change.`}
-                title="Change speech playback speed"
+                title={`Change speech playback speed`}
               >
-                {speechRate.toFixed(1)}x
+                {`${speechRate.toFixed(1)}x`}
               </button>
             </div>
 
@@ -118,7 +120,9 @@ export function VocabularyCard({
                 className="w-full flex items-center justify-between py-2 px-3 text-sm font-bold text-muted-foreground hover:text-foreground hover:bg-secondary/60 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl min-h-[44px]"
               >
                 <span>
-                  {showDetails ? "Hide Meaning & Collocations" : "Show Meaning & Collocations"}
+                  {showDetails
+                    ? t("study.hideMeaningCollocations")
+                    : t("study.showMeaningCollocations")}
                 </span>
                 {showDetails ? (
                   <ChevronUp className="size-4 text-muted-foreground" aria-hidden />
@@ -135,7 +139,7 @@ export function VocabularyCard({
                   {word.description && (
                     <div>
                       <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1">
-                        Meaning
+                        {t("study.meaning")}
                       </h4>
                       <p className="text-foreground text-sm leading-relaxed">{word.description}</p>
                     </div>
@@ -152,7 +156,7 @@ export function VocabularyCard({
                           className="text-xs font-bold text-primary hover:underline py-1.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary min-h-[44px] flex items-center gap-1.5"
                         >
                           <Eye className="size-3.5" />
-                          <span>Reveal Arabic Meaning</span>
+                          <span>{t("study.revealArabicMeaning")}</span>
                         </button>
                       ) : (
                         <div
@@ -170,7 +174,7 @@ export function VocabularyCard({
                   {meta?.collocations && meta.collocations.length > 0 && (
                     <div>
                       <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1.5">
-                        Useful with
+                        {t("study.usefulWith")}
                       </h4>
                       <div className="flex flex-wrap gap-2">
                         {meta.collocations.map((col, i) => (

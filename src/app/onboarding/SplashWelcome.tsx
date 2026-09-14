@@ -4,6 +4,7 @@ import { HomeIndicator } from "../shared/HomeIndicator";
 import { useProgress } from "../data/progress";
 import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
 import { Sparkles, ArrowRight, BookOpen, Layers, CheckCircle2, Globe } from "lucide-react";
+import { useI18n } from "../context/I18nContext";
 
 const imgHero = "./scene-images/splash-hero.jpg";
 
@@ -12,6 +13,7 @@ interface Props {
 }
 
 export function SplashWelcome({ dispatch }: Props) {
+  const { t } = useI18n();
   const { setPreferences } = useProgress();
   const flagshipWorld = COURSE_UNITS[DEFAULT_UNIT_ID];
   const advance = () => dispatch({ type: "ONBOARD_NEXT" });
@@ -37,15 +39,11 @@ export function SplashWelcome({ dispatch }: Props) {
         column beside it, and this one is hidden below `md` anyway.
       */}
       <aside
-        aria-label="About WordPix"
+        aria-label={t("onboarding.aboutWordPix")}
         className="hidden md:flex md:w-1/2 bg-wp-panel text-wp-text-on-panel relative overflow-hidden flex-col justify-between p-8 xl:p-12"
       >
         <div className="absolute inset-0 opacity-40">
-          <img
-            alt="Preview of WordPix visual scenes"
-            className="object-cover size-full"
-            src={imgHero}
-          />
+          <img alt={t("onboarding.previewAlt")} className="object-cover size-full" src={imgHero} />
           <div className="absolute inset-0 bg-gradient-to-t from-wp-panel via-wp-panel/70 to-transparent" />
         </div>
 
@@ -54,23 +52,25 @@ export function SplashWelcome({ dispatch }: Props) {
           <div className="size-10 rounded-2xl bg-primary flex items-center justify-center shadow-md">
             <BookOpen className="size-5 text-white" />
           </div>
-          <span className="font-sans font-black text-white text-xl tracking-tight">WordPix</span>
+          <span className="font-sans font-black text-white text-xl tracking-tight">
+            {t("app.title")}
+          </span>
         </div>
 
         {/* Center Feature Highlights */}
         <div className="relative z-10 flex flex-col gap-4 my-auto">
           <div className="inline-flex items-center gap-2 bg-white/10 text-white px-3.5 py-1.5 rounded-full border border-white/20 backdrop-blur-md self-start text-xs font-sans font-semibold">
             <Sparkles className="size-3.5 text-wp-amber" />
-            <span>Visual English Learning Engine</span>
+            <span>{t("onboarding.visualEngine")}</span>
           </div>
           <h2 className="font-sans font-black text-3xl xl:text-4xl text-white leading-tight">
-            Learn English Through Real-World Pictures
+            {t("onboarding.learnPictures")}
           </h2>
           <div className="flex flex-col gap-2.5 mt-2">
             {[
-              "Interactive 2D scene discovery & audio pronunciation",
-              "Visual language immersion matching drills",
-              "Adaptive memory reviews",
+              t("onboarding.featureScene"),
+              t("onboarding.featureDrills"),
+              t("onboarding.featureReviews"),
             ].map((text, i) => (
               <div
                 key={i}
@@ -87,7 +87,10 @@ export function SplashWelcome({ dispatch }: Props) {
         <div className="relative z-10 flex items-center gap-2 text-wp-text-on-panel-muted text-xs font-sans font-semibold">
           <Globe className="size-4" />
           <span>
-            Start with {flagshipWorld.name} ({flagshipWorld.wordIds.length} words)
+            {t("onboarding.startWithWorld", {
+              world: flagshipWorld.name,
+              count: flagshipWorld.wordIds.length,
+            })}
           </span>
         </div>
       </aside>
@@ -101,11 +104,11 @@ export function SplashWelcome({ dispatch }: Props) {
               <BookOpen className="size-4 text-white" />
             </div>
             <span className="font-sans font-bold text-foreground text-base tracking-tight">
-              WordPix
+              {t("app.title")}
             </span>
           </div>
           <span className="text-xs font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full border border-border">
-            Step 1 of 2
+            {t("onboarding.step1")}
           </span>
         </header>
 
@@ -113,34 +116,33 @@ export function SplashWelcome({ dispatch }: Props) {
         <main className="flex-1 flex flex-col items-center md:items-start justify-center w-full max-w-md mx-auto md:mx-0 py-6 text-center md:text-start gap-6 z-10">
           <div className="hidden md:flex items-center justify-between w-full">
             <span className="text-xs font-sans font-bold text-secondary-foreground bg-secondary px-3 py-1 rounded-full border border-primary/30">
-              Welcome to WordPix
+              {t("onboarding.welcomeWordPix")}
             </span>
             <span className="text-xs font-sans font-semibold text-muted-foreground">
-              Step 1 of 2
+              {t("onboarding.step1")}
             </span>
           </div>
 
           <div className="md:hidden inline-flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-full border border-primary/30 shadow-wp-xs">
             <Sparkles className="size-3.5 text-primary motion-safe:animate-pulse" />
             <span className="font-sans font-semibold text-xs text-secondary-foreground">
-              Visual English Learning Engine
+              {t("onboarding.visualEngine")}
             </span>
           </div>
 
           <div className="flex flex-col gap-2">
             <h1 className="font-sans font-black text-foreground text-3xl md:text-4xl leading-tight tracking-tight">
-              Master Vocabulary Faster
+              {t("onboarding.masterFaster")}
             </h1>
             <p className="font-sans font-medium text-muted-foreground text-base leading-relaxed">
-              Connect words directly to pictures without translation. Practice listening, speaking,
-              spelling, and sentence building.
+              {t("onboarding.connectWords")}
             </p>
           </div>
 
           {/* Mobile Hero Illustration (Hidden on Desktop) */}
           <div className="md:hidden w-full h-48 relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted">
             <img
-              alt={`${flagshipWorld.name} scene as shown in a WordPix lesson`}
+              alt={t("onboarding.sceneAlt", { world: flagshipWorld.name })}
               className="absolute inset-0 object-cover size-full"
               src={imgHero}
             />
@@ -148,7 +150,10 @@ export function SplashWelcome({ dispatch }: Props) {
             <div className="absolute bottom-3 start-4 flex items-center gap-2 text-white">
               <Layers className="size-4" />
               <span className="font-sans font-bold text-xs">
-                {flagshipWorld.wordIds.length} {flagshipWorld.name} Words Ready
+                {t("onboarding.wordsReady", {
+                  count: flagshipWorld.wordIds.length,
+                  world: flagshipWorld.name,
+                })}
               </span>
             </div>
           </div>
@@ -163,7 +168,7 @@ export function SplashWelcome({ dispatch }: Props) {
               focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
               shadow-sm transition-all flex items-center justify-center gap-2"
           >
-            <span>Get Started</span>
+            <span>{t("action.getStarted")}</span>
             <ArrowRight className="size-5" />
           </button>
           <button
@@ -171,7 +176,7 @@ export function SplashWelcome({ dispatch }: Props) {
             onClick={skip}
             className="w-full mt-2 py-2.5 font-sans font-semibold text-muted-foreground hover:text-foreground text-sm min-h-[44px] rounded-lg transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            Skip setup — use default settings
+            {t("onboarding.skipSetup")}
           </button>
         </footer>
 

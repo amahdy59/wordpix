@@ -14,6 +14,7 @@ import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { REVIEW_GROUP_ID, resolveUnitIdForWord, type VocabularyItem } from "../data/lessons";
 import { getWords, loadUnitVocabulary } from "../data/vocabulary";
+import { useI18n } from "../context/I18nContext";
 
 import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { WordImage } from "../shared/WordImage";
@@ -27,6 +28,7 @@ interface Props {
 }
 
 export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch }: Props) {
+  const { t } = useI18n();
   const { progress } = useProgress();
   const [loadedCount, setLoadedCount] = useState(0);
   const [loadError, setLoadError] = useState(false);
@@ -43,65 +45,54 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
       if (uId) unitIds.add(uId);
     }
     if (unitIds.size === 0) return;
-    let isCancelled = false;
-    setLoadError(false);
-    Promise.all([...unitIds].map((id) => loadUnitVocabulary(id)))
+
+    let cancelled = false;
+    Promise.all(Array.from(unitIds).map((uId) => loadUnitVocabulary(uId)))
       .then(() => {
-        if (!isCancelled) {
-          setLoadedCount((c) => c + 1);
-        }
+        if (!cancelled) setLoadedCount((prev) => prev + 1);
       })
-      .catch(() => {
-        if (!isCancelled) setLoadError(true);
+      .catch((err) => {
+        if (!cancelled) {
+          console.error("Failed to load review vocabulary", err);
+          setLoadError(true);
+        }
       });
     return () => {
-      isCancelled = true;
+      cancelled = true;
     };
   }, [progress.wordMemory]);
 
   const memoryItems = useMemo(() => {
-    // Recompute whenever vocabulary chunks finish async preloading
-    if (loadedCount < 0) return [];
-    const memory = progress.wordMemory;
-    const items: Array<{
-      word: VocabularyItem;
-      status: "overdue" | "today" | "upcoming";
-      daysDiff: number;
-      mastery: string;
-    }> = [];
-
-    Object.keys(memory).forEach((wordId) => {
-      const wordState = memory[wordId];
-      const wordObj = getWords([wordId])[0];
-      if (!wordObj || !wordState) return;
-
-      const nextDateStr = wordState.nextReviewAt
-        ? getLocalDateString(new Date(wordState.nextReviewAt))
-        : todayStr;
-
-      const diff = calculateDaysBetween(todayStr, nextDateStr);
-
-      const status: "overdue" | "today" | "upcoming" =
-        diff < 0 ? "overdue" : diff === 0 ? "today" : "upcoming";
-
-      items.push({
-        word: wordObj,
-        status,
-        daysDiff: Math.abs(diff),
-        mastery: wordState.mastery,
-      });
+    void loadedCount;
+    const entries = Object.entries(progress.wordMemory);
+    if (entries.length === 0) return [];
+    return entries.flatMap(([wordId, entry]) => {
+      const word = getWords([wordId])[0];
+      if (!word) return [];
+      const nextDate = entry.nextReviewAt ? entry.nextReviewAt.split("T")[0] : todayStr;
+      const daysDiff = calculateDaysBetween(todayStr, nextDate);
+      return [{ word, entry, daysDiff }];
     });
-
-    return items;
   }, [progress.wordMemory, todayStr, loadedCount]);
 
-  const overdueList = memoryItems
-    .filter((i) => i.status === "overdue")
-    .sort((a, b) => b.daysDiff - a.daysDiff);
-  const dueTodayList = memoryItems.filter((i) => i.status === "today");
-  const upcomingList = memoryItems
-    .filter((i) => i.status === "upcoming")
-    .sort((a, b) => a.daysDiff - b.daysDiff);
+  const overdueList = useMemo(
+    () =>
+      memoryItems
+        .filter((item) => item.daysDiff < 0)
+        .sort((a, b) => a.daysDiff - b.daysDiff)
+        .map((item) => ({ ...item, daysDiff: Math.abs(item.daysDiff) })),
+    [memoryItems]
+  );
+
+  const dueTodayList = useMemo(
+    () => memoryItems.filter((item) => item.daysDiff === 0),
+    [memoryItems]
+  );
+
+  const upcomingList = useMemo(
+    () => memoryItems.filter((item) => item.daysDiff > 0).sort((a, b) => a.daysDiff - b.daysDiff),
+    [memoryItems]
+  );
 
   const totalDue = overdueList.length + dueTodayList.length;
 
@@ -123,27 +114,27 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
   const sections = [
     {
       key: "overdue",
-      title: "Overdue",
+      title: t("masteryReview.overdue"),
       items: overdueList,
       Icon: AlertCircle,
       tint: "bg-wp-rose/5 border-wp-rose/20",
-      note: "Review these first",
+      note: t("masteryReview.overdueNote"),
     },
     {
       key: "today",
-      title: "Due today",
+      title: t("masteryReview.dueToday"),
       items: dueTodayList,
       Icon: Clock,
       tint: "bg-wp-amber/5 border-wp-amber/20",
-      note: "Ready to review",
+      note: t("masteryReview.dueTodayNote"),
     },
     {
       key: "upcoming",
-      title: "Upcoming",
+      title: t("masteryReview.upcoming"),
       items: upcomingList,
       Icon: CheckCircle2,
       tint: "bg-primary/5 border-primary/20",
-      note: "Scheduled for later",
+      note: t("masteryReview.upcomingNote"),
     },
   ];
   const focus =
@@ -155,37 +146,40 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
         <div>
           <p className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider mb-2">
             <BookOpen className="size-4" aria-hidden />
-            Daily vocabulary review
+            {t("masteryReview.badge")}
           </p>
           <h1 className="font-black text-foreground text-2xl md:text-3xl leading-tight">
-            Keep your vocabulary fresh
+            {t("masteryReview.title")}
           </h1>
-          <p className="text-muted-foreground text-sm mt-2">
-            Review words at the right time to remember them for longer.
-          </p>
+          <p className="text-muted-foreground text-sm mt-2">{t("masteryReview.subtitle")}</p>
         </div>
         <p className="flex items-center gap-2 text-sm font-bold text-foreground shrink-0">
           <Flame className="size-5 text-primary" aria-hidden />
-          {progress.streak} day streak
+          {t("masteryReview.dayStreak", { count: progress.streak })}
         </p>
       </header>
       {loadError && (
         <p role="alert" className="text-foreground">
-          Some vocabulary could not load. Reload the page to try again.
+          {t("masteryReview.loadError")}
         </p>
       )}
       <section
-        aria-label="Today's review"
+        aria-label={t("masteryReview.todayReview")}
         className="rounded-2xl border border-primary/15 bg-secondary p-4 md:p-6 flex items-center gap-4 md:gap-8"
       >
         <div className="size-28 md:size-36 rounded-full border-8 border-primary/20 border-t-primary flex flex-col items-center justify-center shrink-0 text-foreground">
           <span className="text-3xl md:text-4xl font-black">{totalDue}</span>
-          <span className="text-xs font-semibold">words due</span>
+          <span className="text-xs font-semibold">{t("masteryReview.wordsDue")}</span>
         </div>
         <div className="min-w-0 flex-1">
-          <h2 className="hidden sm:block text-xl font-bold text-foreground mb-1">Today's review</h2>
+          <h2 className="hidden sm:block text-xl font-bold text-foreground mb-1">
+            {t("masteryReview.todayReview")}
+          </h2>
           <p className="text-sm text-foreground">
-            {overdueList.length} overdue · {dueTodayList.length} due today
+            {t("masteryReview.countsSummary", {
+              overdue: overdueList.length,
+              due: dueTodayList.length,
+            })}
           </p>
           <button
             type="button"
@@ -193,21 +187,21 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
             disabled={totalDue === 0 || loadError}
             className={`mt-3 min-h-12 rounded-xl px-4 md:px-6 bg-primary text-primary-foreground font-bold text-sm flex items-center justify-center gap-2 disabled:opacity-60 ${focus}`}
           >
-            {totalDue ? `Review ${sessionSize} now` : "All caught up"}
+            {totalDue
+              ? t("masteryReview.reviewNow", { count: sessionSize })
+              : t("masteryReview.allCaughtUp")}
             <ArrowRight className="size-4 shrink-0" aria-hidden />
           </button>
         </div>
         <p className="hidden lg:block max-w-48 text-sm text-foreground bg-primary/5 rounded-xl p-4">
-          A little and often helps you remember for longer.
+          {t("masteryReview.retentionTip")}
         </p>
       </section>
       {memoryItems.length === 0 && !loadError && (
         <section className="rounded-2xl border border-border p-6 text-center text-foreground">
           <RotateCcw className="size-7 mx-auto mb-3 text-primary" aria-hidden />
-          <h2 className="font-bold">No memory data yet</h2>
-          <p className="text-sm text-muted-foreground mt-2">
-            Complete a lesson to build your personalized review schedule.
-          </p>
+          <h2 className="font-bold">{t("masteryReview.noDataTitle")}</h2>
+          <p className="text-sm text-muted-foreground mt-2">{t("masteryReview.noDataDesc")}</p>
         </section>
       )}
       {sections
@@ -222,7 +216,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
               <Icon className="size-5 shrink-0" aria-hidden />
               <h2 className="font-bold">{title}</h2>
               <span className="text-xs rounded-full bg-wp-card px-2 py-1">
-                {items.length} words
+                {t("masteryReview.wordsCount", { count: items.length })}
               </span>
               <span className="hidden md:block ms-auto text-xs">{note}</span>
             </div>
@@ -246,10 +240,14 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
                     </span>
                     <span className="block mt-1 text-xs text-muted-foreground">
                       {key === "overdue"
-                        ? `${daysDiff} ${daysDiff === 1 ? "day" : "days"} overdue`
+                        ? daysDiff === 1
+                          ? t("masteryReview.oneDayOverdue")
+                          : t("masteryReview.daysOverdue", { count: daysDiff })
                         : key === "today"
-                          ? "Due today"
-                          : `In ${daysDiff} ${daysDiff === 1 ? "day" : "days"}`}
+                          ? t("masteryReview.dueToday")
+                          : daysDiff === 1
+                            ? t("masteryReview.inOneDay")
+                            : t("masteryReview.inDays", { count: daysDiff })}
                     </span>
                   </span>
                   <ChevronRight className="size-4 shrink-0 text-primary" aria-hidden />
@@ -264,29 +262,30 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
                 onClick={() => setExpanded((value) => ({ ...value, [key]: !value[key] }))}
                 className={`${items.length <= 3 ? "md:hidden" : ""} min-h-11 mt-2 px-2 text-primary text-sm font-semibold rounded-lg ${focus}`}
               >
-                {expanded[key] ? "Show fewer" : `View all ${items.length}`}
+                {expanded[key]
+                  ? t("masteryReview.showFewer")
+                  : t("masteryReview.viewAll", { count: items.length })}
               </button>
             )}
           </section>
         ))}
       <section
-        aria-label="Skill drills"
+        aria-label={t("masteryReview.skillDrillsTitle")}
         className="border-t border-border pt-5 flex flex-col sm:flex-row sm:items-center gap-4"
       >
         <Layers className="hidden sm:block size-10 text-primary shrink-0" aria-hidden />
         <div className="flex-1">
-          <h2 className="font-bold text-lg text-foreground">Skill Drills</h2>
-          <p className="text-muted-foreground text-sm mt-1">
-            Extra listening, reading, speaking and writing practice, separate from your review
-            schedule.
-          </p>
+          <h2 className="font-bold text-lg text-foreground">
+            {t("masteryReview.skillDrillsTitle")}
+          </h2>
+          <p className="text-muted-foreground text-sm mt-1">{t("masteryReview.skillDrillsDesc")}</p>
         </div>
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
           className={`min-h-12 px-5 rounded-xl border border-primary/20 bg-secondary text-primary font-bold text-sm flex items-center justify-center gap-2 ${focus}`}
         >
-          Browse drills
+          {t("masteryReview.browseDrills")}
           <ArrowRight className="size-4" aria-hidden />
         </button>
       </section>

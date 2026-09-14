@@ -6,46 +6,48 @@ import {
   SynonymsAntonymsSection,
 } from "../ExtraSections";
 import { ChevronDown, LibraryBig } from "lucide-react";
+import { useI18n } from "../../../i18n";
 
 interface Props {
   materials: UnitLearningMaterials;
 }
 
 export function ReferenceArea({ materials }: Props) {
+  const { t } = useI18n();
   const sections = [
     {
       id: "vocabulary",
-      title: "Vocabulary reference",
-      description: "Words, frequency and common collocations",
+      title: t("study.vocabRefSection"),
+      description: t("study.vocabRefSectionDesc"),
       visible: Boolean(materials.wordMeta?.length),
       content: <ReferenceSection materials={materials} />,
       open: true,
     },
     {
       id: "details",
-      title: "Vocabulary details",
-      description: "Register, formality and visual relationships",
+      title: t("study.vocabDetailsSection"),
+      description: t("study.vocabDetailsSectionDesc"),
       visible: Boolean(materials.registerLabels?.length || materials.visualVocabularyMap?.length),
       content: <VocabularyDetailsSection materials={materials} />,
     },
     {
       id: "pronunciation",
-      title: "Pronunciation guide",
-      description: "Stress and IPA support",
+      title: t("study.pronunciationSection"),
+      description: t("study.pronunciationSectionDesc"),
       visible: Boolean(materials.pronunciationGuide?.length),
       content: <PronunciationSection materials={materials} />,
     },
     {
       id: "formation",
-      title: "Word formation",
-      description: "Related forms and word families",
+      title: t("study.formationSection"),
+      description: t("study.formationSectionDesc"),
       visible: Boolean(materials.wordFormation?.length),
       content: <WordFormationSection materials={materials} />,
     },
     {
       id: "synonyms",
-      title: "Synonyms and antonyms",
-      description: "Compare closely related meanings",
+      title: t("study.synonymsSection"),
+      description: t("study.synonymsSectionDesc"),
       visible: Boolean(materials.synonymsAntonyms?.length),
       content: <SynonymsAntonymsSection materials={materials} />,
     },
@@ -60,12 +62,13 @@ export function ReferenceArea({ materials }: Props) {
           </span>
           <div>
             <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
-              Language toolkit
+              {t("study.languageToolkit")}
             </p>
-            <h2 className="mt-1 text-2xl font-black tracking-tight md:text-3xl">Reference</h2>
+            <h2 className="mt-1 text-2xl font-black tracking-tight md:text-3xl">
+              {t("study.referenceTitle")}
+            </h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground md:text-base">
-              Browse the details you need without losing your place. Expand one section at a time,
-              or keep several open while comparing language patterns.
+              {t("study.referenceDesc")}
             </p>
           </div>
         </div>

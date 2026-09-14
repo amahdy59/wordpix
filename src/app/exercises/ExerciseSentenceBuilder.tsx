@@ -12,6 +12,7 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { motion, AnimatePresence } from "framer-motion";
+import { useI18n } from "../context/I18nContext";
 
 interface Props {
   step: number;
@@ -26,6 +27,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
   lessonId,
   dispatch,
 }: Props) {
+  const { t } = useI18n();
   const [placed, setPlaced] = useState<string[]>([]);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
   const { accessibility } = useAccessibility();
@@ -142,9 +144,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
           <span className="uppercase tracking-wider">{group.name}</span>
           <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
             <PenTool className="size-3" aria-hidden />
-            <span>
-              Sentence {queue.position} of {queue.total}
-            </span>
+            <span>{t("exercise.sentenceOf", { current: queue.position, total: queue.total })}</span>
           </span>
         </>
       }
@@ -184,7 +184,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
         <div className="bg-wp-card rounded-2xl border-2 border-primary/30 p-3 sm:p-4 w-full flex flex-col gap-1.5 shadow-wp-xs">
           <div className="flex items-center justify-between">
             <span className="font-sans font-bold text-[10px] text-primary uppercase tracking-wider flex items-center gap-1.5">
-              Sentence Assembly Canvas
+              {t("exercise.sentenceAssemblyCanvas")}
               {/* Correctness is never color-only: an icon carries the same
                   signal for colorblind learners. */}
               {feedback === "correct" && (
@@ -201,9 +201,9 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                 className="flex items-center gap-1.5 text-[11px] font-sans font-bold text-muted-foreground hover:text-foreground hover:bg-secondary/60 bg-wp-card border border-border min-h-[44px] px-2.5 rounded-lg transition-colors focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
               >
                 <Undo2 className="size-3.5" aria-hidden />
-                <span>Undo</span>
+                <span>{t("exercise.undo")}</span>
                 <kbd className="hidden sm:inline font-sans font-semibold text-muted-foreground/70 border border-border rounded px-1 ms-0.5">
-                  ⌫
+                  {`⌫`}
                 </kbd>
               </button>
             )}
@@ -233,7 +233,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
             ))}
             {placed.length === 0 && (
               <span className="text-muted-foreground text-xs sm:text-sm font-sans font-medium px-2">
-                Your sentence will appear here
+                {t("exercise.sentencePlaceholder")}
               </span>
             )}
           </div>
@@ -256,7 +256,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
               wiping the canvas and asking the learner to guess again. */}
           {feedback === "incorrect" && (
             <p className="font-sans text-sm text-foreground font-bold mt-1">
-              Correct order: <span className="text-wp-green">{answer.join(" ")}</span>
+              {t("exercise.correctOrder")} <span className="text-wp-green">{answer.join(" ")}</span>
             </p>
           )}
         </div>
@@ -319,7 +319,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                 onClick={handleContinue}
                 className="flex items-center gap-1.5 px-4 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
               >
-                Continue
+                {t("action.continue")}
                 <ArrowRight className="size-4" aria-hidden />
               </button>
             </motion.div>

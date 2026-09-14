@@ -9,6 +9,7 @@ import { getLexiconEntry, hasArabicGloss } from "../../data/lexiconDictionary";
 import { WordInspectorModal } from "../../shared/WordInspectorModal";
 import { Select } from "../../shared/Select";
 import type { VocabularyItem } from "../../data/lessons";
+import { useI18n } from "../../../i18n";
 
 interface Props {
   node: StudyNode;
@@ -27,7 +28,11 @@ export function LearnArea({
   onNextActivity,
   immersionMode = false,
 }: Props) {
-  const words = getWords(node.wordIds || [], materials.unitId);
+  const { t } = useI18n();
+  const words = useMemo(
+    () => getWords(node.wordIds || [], materials.unitId),
+    [node.wordIds, materials.unitId]
+  );
   const [inspectedWord, setInspectedWord] = useState<VocabularyItem | null>(null);
   const [playingWordId, setPlayingWordId] = useState<string | null>(null);
   const [query, setQuery] = useState("");
@@ -79,9 +84,7 @@ export function LearnArea({
     onNextActivity();
   };
   if (!words.length)
-    return (
-      <p className="p-8 text-center text-muted-foreground">No vocabulary found for this topic.</p>
-    );
+    return <p className="p-8 text-center text-muted-foreground">{t("study.noVocabFound")}</p>;
 
   return (
     <div className="w-full max-w-7xl mx-auto p-4 md:p-6 flex flex-col gap-5">
@@ -89,23 +92,21 @@ export function LearnArea({
         <div>
           <p className="text-xs font-bold uppercase tracking-wider text-primary flex items-center gap-2">
             <BookOpen className="size-4" aria-hidden />
-            Learn the whole set
+            {t("study.learnWholeSet")}
           </p>
           <h1 className="text-2xl font-black text-foreground mt-1">{node.title}</h1>
-          <p className="text-sm text-muted-foreground mt-1">
-            Browse every word, hear its pronunciation, and choose what needs more practice.
-          </p>
+          <p className="text-sm text-muted-foreground mt-1">{t("study.learnWholeSetDesc")}</p>
         </div>
         <p className="shrink-0 text-sm font-semibold text-foreground">
-          {studiedCount} of {words.length} in progress or learned
+          {t("study.progressCount", { studied: studiedCount, total: words.length })}
         </p>
       </header>
       <section
-        aria-label="Filter vocabulary"
+        aria-label={t("study.filterVocabulary")}
         className="grid gap-3 rounded-2xl border border-border bg-wp-card p-3 sm:grid-cols-[minmax(0,1fr)_12rem]"
       >
         <label className="relative block">
-          <span className="sr-only">Search words</span>
+          <span className="sr-only">{t("study.searchWords")}</span>
           <Search
             className="pointer-events-none absolute start-3 top-1/2 size-5 -translate-y-1/2 text-muted-foreground"
             aria-hidden
@@ -114,23 +115,23 @@ export function LearnArea({
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search words"
+            placeholder={t("study.searchWords")}
             className="min-h-11 w-full rounded-xl border border-border bg-background pe-3 ps-10 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           />
         </label>
         <div className="grid grid-cols-[auto_1fr] items-center gap-2 text-sm font-semibold text-foreground">
-          <span aria-hidden="true">Show</span>
+          <span aria-hidden="true">{t("study.show")}</span>
           <Select
             value={filter}
             onChange={(value) => setFilter(value as "all" | StudyWordStatus)}
             options={[
-              { value: "all", label: "All words" },
-              { value: "new", label: "New" },
-              { value: "learning", label: "Learning" },
-              { value: "comfortable", label: "Learned" },
-              { value: "review", label: "Review again" },
+              { value: "all", label: t("study.allWords") },
+              { value: "new", label: t("study.statusNew") },
+              { value: "learning", label: t("study.statusLearning") },
+              { value: "comfortable", label: t("study.statusLearned") },
+              { value: "review", label: t("study.statusReviewAgain") },
             ]}
-            ariaLabel="Show words by status filter"
+            ariaLabel={t("study.showByStatus")}
             className="rounded-xl border border-border bg-background text-sm text-foreground focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-primary"
           />
         </div>
@@ -178,7 +179,11 @@ export function LearnArea({
                       setPlayingWordId(word.id);
                       speak(word.label);
                     }}
-                    aria-label={`${isPlaying && playingWordId === word.id ? "Stop" : "Listen to"} ${word.label}`}
+                    aria-label={
+                      isPlaying && playingWordId === word.id
+                        ? t("study.stop")
+                        : t("study.listenTo", { label: word.label })
+                    }
                     aria-pressed={isPlaying && playingWordId === word.id}
                     className="size-11 grid place-items-center rounded-xl bg-primary text-primary-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
@@ -207,19 +212,19 @@ export function LearnArea({
                   onClick={() => setInspectedWord(word)}
                   className="min-h-11 text-start text-primary font-semibold rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
                 >
-                  View examples
+                  {t("study.viewExamples")}
                 </button>
                 <div className="grid grid-cols-[auto_1fr] items-center gap-2 border-t border-border pt-3 text-sm font-semibold text-foreground">
-                  <span aria-hidden="true">Status</span>
+                  <span aria-hidden="true">{t("study.status")}</span>
                   <Select
                     value={status}
                     onChange={(value) => setWordStatus(word, value as StudyWordStatus)}
-                    ariaLabel={`${word.label} learning status`}
+                    ariaLabel={t("study.wordLearningStatus", { word: word.label })}
                     options={[
-                      { value: "new", label: "New" },
-                      { value: "learning", label: "Learning" },
-                      { value: "comfortable", label: "Learned" },
-                      { value: "review", label: "Review again" },
+                      { value: "new", label: t("study.statusNew") },
+                      { value: "learning", label: t("study.statusLearning") },
+                      { value: "comfortable", label: t("study.statusLearned") },
+                      { value: "review", label: t("study.statusReviewAgain") },
                     ]}
                     className={`rounded-xl border font-bold focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-primary ${
                       learned
@@ -237,7 +242,7 @@ export function LearnArea({
       </div>
       {visibleWords.length === 0 && (
         <div className="rounded-2xl border border-dashed border-border p-8 text-center">
-          <p className="font-semibold text-foreground">No words match these filters.</p>
+          <p className="font-semibold text-foreground">{t("study.noMatchFilters")}</p>
           <button
             type="button"
             onClick={() => {
@@ -246,20 +251,18 @@ export function LearnArea({
             }}
             className="mt-2 min-h-11 rounded-xl px-4 font-semibold text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
           >
-            Clear filters
+            {t("study.clearFilters")}
           </button>
         </div>
       )}
       <footer className="border border-border bg-background rounded-2xl p-3 flex flex-col sm:flex-row sm:items-center gap-3 justify-between">
-        <p className="text-sm text-muted-foreground">
-          You can return anytime. Your status choices save automatically.
-        </p>
+        <p className="text-sm text-muted-foreground">{t("study.autoSaveNote")}</p>
         <button
           type="button"
           onClick={finish}
           className="min-h-12 px-6 rounded-xl bg-primary text-primary-foreground font-bold flex items-center justify-center gap-2"
         >
-          Continue to next activity
+          {t("study.continueNext")}
           <ArrowRight className="size-4" aria-hidden />
         </button>
       </footer>

@@ -56,3 +56,21 @@ Lower the placeholder ceiling by the exact number completed and add the units to
 ## Review cadence
 
 Use batches of three to five units for normal work. Ten-unit batches are acceptable only when split into independently tested commits. Stop the batch when a dictionary sense is ambiguous, a definition is generic, or an automated gate fails; resolve that unit before continuing.
+
+## Full-table workflow
+
+The complete placeholder inventory is in `vocabulary-definition-review.csv`. Review it in a spreadsheet, revise the proposed definition into original WordPix copy, resolve the automated flags, and set `approved` to `yes` only for finished rows.
+
+Preview a bulk update without changing files:
+
+```bash
+python scripts/apply_vocabulary_definition_review.py docs/vocabulary-definition-review.csv
+```
+
+Apply every approved row in one validated pass:
+
+```bash
+python scripts/apply_vocabulary_definition_review.py docs/vocabulary-definition-review.csv --write
+```
+
+The importer changes only `PLACEHOLDER_DESCRIPTION` values and stops before writing if any approved row is invalid or cannot be matched exactly once. Run the automated review and repository gates after applying it.

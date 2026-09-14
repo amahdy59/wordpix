@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+﻿import { useState, useEffect } from "react";
 import { X, Sparkles } from "lucide-react";
 import { resolveAssetUrl } from "../../utils/assetUrl";
+import { useI18n } from "../context/I18nContext";
 
 interface ReleaseNotes {
   version: string;
@@ -8,12 +9,11 @@ interface ReleaseNotes {
 }
 
 export function ReleaseNotesCard() {
+  const { t } = useI18n();
   const [releaseData, setReleaseData] = useState<ReleaseNotes | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Root-absolute ignores the configured base, so this 404ed under
-    // /wordpix/ and every load logged a JSON parse error on the 404 body.
     fetch(resolveAssetUrl("/release-notes.json"))
       .then((res) => res.json())
       .then((data: ReleaseNotes) => {
@@ -39,7 +39,7 @@ export function ReleaseNotesCard() {
         <button
           onClick={handleDismiss}
           className="text-primary hover:bg-primary/20 p-2 rounded-full transition-colors flex items-center justify-center min-w-[44px] min-h-[44px]"
-          aria-label="Dismiss release notes"
+          aria-label={t("releaseNotes.dismiss")}
         >
           <X className="size-5" />
         </button>
@@ -49,7 +49,7 @@ export function ReleaseNotesCard() {
           <Sparkles className="size-4" />
         </div>
         <h3 className="font-sans font-bold text-foreground text-lg">
-          What's New in v{releaseData.version}
+          {t("releaseNotes.whatsNewInVersion", { version: releaseData.version })}
         </h3>
       </div>
       <ul className="flex flex-col gap-2">
@@ -64,7 +64,7 @@ export function ReleaseNotesCard() {
         onClick={handleDismiss}
         className="mt-4 bg-primary text-primary-foreground font-bold text-sm px-4 py-3 min-h-[44px] rounded-xl hover:opacity-90 transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary w-full sm:w-auto"
       >
-        Got it!
+        {t("releaseNotes.gotIt")}
       </button>
     </div>
   );

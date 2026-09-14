@@ -27,7 +27,7 @@ describe("Vocabulary descriptions", () => {
       .forEach((word) => {
         expect(word.description, `${word.id} has no description`).toBeTruthy();
         expect(word.description, `${word.id} contains placeholder copy`).not.toMatch(
-          /known as|needs manual|undefined/i
+          /needs manual|undefined|^this refers to the .+ used in this context\.$/i
         );
         expect(word.description.length, `${word.id} too short`).toBeGreaterThan(25);
         expect(word.description.length, `${word.id} too long to listen to`).toBeLessThan(350);

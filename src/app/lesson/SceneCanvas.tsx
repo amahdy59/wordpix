@@ -1,5 +1,6 @@
 import { memo } from "react";
 import { ArrowLeft, BookOpen, Sparkles, List } from "lucide-react";
+import { useI18n } from "../../i18n";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { AudioButton } from "../shared/AudioButton";
@@ -30,6 +31,7 @@ export const SceneCanvas = memo(function SceneCanvas({
   onClose,
   onBrowseWords,
 }: Props) {
+  const { t } = useI18n();
   return (
     <section
       className="relative flex-1 lg:flex-[3] min-w-0 min-h-0 flex flex-col bg-background h-full overflow-hidden"
@@ -59,7 +61,7 @@ export const SceneCanvas = memo(function SceneCanvas({
           aria-label={`Browse all ${groupName} words`}
         >
           <List className="size-4" aria-hidden />
-          Words
+          {t("lesson.words")}
         </button>
       </div>
 
@@ -73,7 +75,7 @@ export const SceneCanvas = memo(function SceneCanvas({
             aria-label="Back to lesson overview"
           >
             <ArrowLeft className="size-4" aria-hidden />
-            Back
+            {t("action.back")}
           </button>
           <div
             className="size-9 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs"
@@ -86,7 +88,7 @@ export const SceneCanvas = memo(function SceneCanvas({
               {groupName}
             </h1>
             <p className="font-sans text-muted-foreground text-xs mt-0.5">
-              Viewing {activeWord.label}
+              {t("lesson.viewingWord", { word: activeWord.label })}
             </p>
           </div>
         </div>
@@ -140,7 +142,7 @@ export const SceneCanvas = memo(function SceneCanvas({
               </div>
 
               <span className="font-sans text-muted-foreground text-xs font-medium truncate">
-                Pronunciation: /{activeWord.phonetic}/
+                {t("lesson.pronunciation", { phonetic: activeWord.phonetic })}
               </span>
 
               {activeWord.topic && (
@@ -162,8 +164,9 @@ export const SceneCanvas = memo(function SceneCanvas({
               type="button"
               onClick={onPlayGame}
               className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl px-5 py-3 font-sans font-bold text-wp-text-on-blue text-sm shrink-0 min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all hidden lg:block"
+              data-action="Play Game"
             >
-              Play Game
+              {t("lesson.playGame")}
             </button>
           </div>
         </div>
@@ -174,11 +177,12 @@ export const SceneCanvas = memo(function SceneCanvas({
         <button
           type="button"
           onClick={onPlayGame}
+          data-action="Play Game"
           className="w-full bg-wp-blue rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-base min-h-[48px]
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
             motion-safe:transition-opacity hover:opacity-90 active:opacity-80"
         >
-          Play Game →
+          {`${t("lesson.playGame")} →`}
         </button>
       </div>
 

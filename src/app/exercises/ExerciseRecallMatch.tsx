@@ -15,6 +15,7 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { motion, AnimatePresence } from "framer-motion";
+import { useI18n } from "../context/I18nContext";
 
 interface Props {
   step: number;
@@ -29,6 +30,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   lessonId,
   dispatch,
 }: Props) {
+  const { t } = useI18n();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
 
@@ -127,6 +129,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       feedback,
       currentTargetWord.id,
       currentTargetWord.label,
+      currentTargetWord.topic,
       playCorrect,
       playIncorrect,
       stop,
@@ -181,9 +184,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       subtitle={
         <>
           <span>{group.name}</span>
-          <span>
-            {queue.position} of {queue.total}
-          </span>
+          <span>{t("exercise.positionOf", { current: queue.position, total: queue.total })}</span>
         </>
       }
       // The keyboard hint is shown only where there is a keyboard.
@@ -195,7 +196,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         <div className="w-full hidden pointer-fine:flex items-center justify-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-muted-foreground font-medium">
             <Keyboard className="size-4" aria-hidden />
-            <span>Press 1-{displayCards.length} to choose · R to replay audio</span>
+            <span>{t("exercise.pressNumberRecall", { count: displayCards.length })}</span>
           </div>
         </div>
       }
@@ -205,14 +206,14 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           <button
             type="button"
             onClick={replayAudio}
-            aria-label="Replay audio"
+            aria-label={t("exercise.replayAudio")}
             className="min-h-12 px-6 rounded-xl border border-border bg-wp-card text-primary font-bold flex items-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Volume2
               className={`size-5 ${isPlaying ? "motion-safe:animate-pulse" : ""}`}
               aria-hidden
             />
-            Replay
+            {t("exercise.replay")}
           </button>
           <p className="sr-only" role="status">
             {isPlaying
@@ -353,7 +354,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 onClick={handleContinue}
                 className="flex items-center gap-1.5 px-4 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
               >
-                Continue
+                {t("action.continue")}
                 <ArrowRight className="size-4" aria-hidden />
               </button>
             </motion.div>

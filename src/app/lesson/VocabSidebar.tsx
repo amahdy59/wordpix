@@ -1,4 +1,5 @@
 import { memo, useState } from "react";
+import { useI18n } from "../../i18n";
 import { AudioButton } from "../shared/AudioButton";
 import { WordImage } from "../shared/WordImage";
 import type { TopicCategory, VocabularyItem } from "../data/lessons";
@@ -24,11 +25,11 @@ interface Props {
   onMobileClose?: () => void;
 }
 
-const MASTERY_BADGES: Record<MasteryLevel, { label: string; bg: string; text: string } | null> = {
+const MASTERY_BADGES: Record<MasteryLevel, { bg: string; text: string } | null> = {
   0: null,
-  1: { label: "Recognized", bg: "bg-wp-brand/10", text: "text-primary border-wp-brand/20" },
-  2: { label: "Practiced", bg: "bg-wp-amber/10", text: "text-wp-amber border-wp-amber/20" },
-  3: { label: "Mastered", bg: "bg-wp-teal/10", text: "text-wp-teal border-wp-teal/20" },
+  1: { bg: "bg-wp-brand/10", text: "text-primary border-wp-brand/20" },
+  2: { bg: "bg-wp-amber/10", text: "text-wp-amber border-wp-amber/20" },
+  3: { bg: "bg-wp-teal/10", text: "text-wp-teal border-wp-teal/20" },
 };
 
 /**
@@ -50,6 +51,7 @@ export const VocabSidebar = memo(function VocabSidebar({
   mobileOpen = false,
   onMobileClose,
 }: Props) {
+  const { t } = useI18n();
   const [selectedTopic, setSelectedTopic] = useState<string>("all");
   const { progress } = useProgress();
   const { speak } = useAudio();
@@ -74,12 +76,12 @@ export const VocabSidebar = memo(function VocabSidebar({
           <div>
             <h2 className="font-sans font-bold text-foreground text-base">{groupName}</h2>
             <p className="font-sans text-muted-foreground text-xs mt-0.5">
-              {filteredVocabulary.length} words · Select to view &amp; listen
+              {t("lesson.wordsSelectListen", { count: filteredVocabulary.length })}
             </p>
           </div>
           <div className="flex items-center gap-2">
             <span className="font-sans font-semibold text-xs px-2.5 py-1 rounded-full bg-secondary text-primary">
-              Level 1 · A1
+              {t("lesson.level1A1")}
             </span>
             {mobileOpen && (
               <button
@@ -107,7 +109,7 @@ export const VocabSidebar = memo(function VocabSidebar({
                 : "bg-muted text-muted-foreground hover:text-foreground"
             }`}
           >
-            All ({vocabulary.length})
+            {t("lesson.allCount", { count: vocabulary.length })}
           </button>
           {topics.map((topic) => {
             const count = vocabulary.filter((v) => v.topic === topic.id).length;
@@ -184,7 +186,11 @@ export const VocabSidebar = memo(function VocabSidebar({
                       <span
                         className={`font-sans font-semibold text-[10px] px-2 py-0.5 rounded-full border ${badge.bg} ${badge.text}`}
                       >
-                        {badge.label}
+                        {levelNum === 1
+                          ? t("gamification.recognized")
+                          : levelNum === 2
+                            ? t("gamification.practiced")
+                            : t("gamification.mastered")}
                       </span>
                     )}
                   </div>
@@ -215,7 +221,7 @@ export const VocabSidebar = memo(function VocabSidebar({
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
             shadow-wp-xs transition-all flex items-center justify-center gap-2"
         >
-          <span>Play Game →</span>
+          <span>{`${t("lesson.playGame")} →`}</span>
         </button>
       </div>
     </aside>

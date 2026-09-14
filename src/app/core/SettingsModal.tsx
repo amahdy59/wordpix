@@ -121,10 +121,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 id="settings-dialog-title"
                 className="font-sans font-black text-foreground text-xl md:text-2xl leading-tight"
               >
-                Settings &amp; Accessibility
+                {t("settings.title")}
               </h2>
               <p className="font-sans text-xs text-muted-foreground mt-0.5">
-                Manage theme modes, audio rates, text sizing, and learning accessibility.
+                {t("settings.subtitle")}
               </p>
             </div>
           </div>
@@ -132,7 +132,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
           <button
             type="button"
             onClick={onClose}
-            aria-label="Close settings"
+            aria-label={t("settings.closeLabel")}
             className="size-11 min-h-[44px] min-w-[44px] rounded-full border border-border bg-wp-card text-muted-foreground hover:text-foreground flex items-center justify-center transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
           >
             <X className="size-5" />
@@ -145,22 +145,24 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
           <section className="flex flex-col gap-3">
             <h3 className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
               <Eye className="size-4 text-primary" />
-              <span>Appearance &amp; WCAG 2.2 AAA Contrast</span>
+              <span>{t("settings.appearanceHeading")}</span>
             </h3>
 
             <div className="bg-muted/30 rounded-2xl p-4 border border-border flex flex-col gap-4">
               {/* Light / Dark Mode Toggle */}
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <span className="font-sans font-bold text-foreground text-sm">Theme Mode</span>
+                  <span className="font-sans font-bold text-foreground text-sm">
+                    {t("settings.themeMode")}
+                  </span>
                   <p className="font-sans text-xs text-muted-foreground">
-                    Cycle between Dark, Light, and following your system setting.
+                    {t("settings.themeModeHint")}
                   </p>
                 </div>
                 <button
                   type="button"
                   onClick={toggleTheme}
-                  aria-label={`Theme: ${theme}. Activate to change theme.`}
+                  aria-label={`${t("settings.themeLabel")}: ${theme}. ${t("settings.themeActivate")}`}
                   className="px-4 py-2.5 min-h-[44px] rounded-xl bg-wp-card border border-border hover:border-primary font-sans font-bold text-xs text-foreground flex items-center gap-2 shadow-xs transition-all shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   {/* resolvedTheme, not theme: "system" is neither "dark" nor
@@ -220,10 +222,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
-                    Learner Mode (UI Expression)
+                    {t("settings.learnerMode")}
                   </span>
                   <p className="font-sans text-xs text-muted-foreground">
-                    Adjust density, typography, and illustration style based on age.
+                    {t("settings.learnerModeHint")}
                   </p>
                 </div>
                 <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
@@ -237,7 +239,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                         : "text-muted-foreground hover:text-foreground"
                     }`}
                   >
-                    Child
+                    {t("settings.child")}
                   </button>
                   <button
                     type="button"
@@ -249,7 +251,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                         : "text-muted-foreground hover:text-foreground"
                     }`}
                   >
-                    Adult
+                    {t("settings.adult")}
                   </button>
                 </div>
               </div>
@@ -260,10 +262,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
-                    High Contrast Mode (AAA 7:1)
+                    {t("settings.highContrast")}
                   </span>
                   <p className="font-sans text-xs text-muted-foreground">
-                    Boost contrast ratios to 7:1 for enhanced visual readability.
+                    {t("settings.highContrastHint")}
                   </p>
                 </div>
                 <button
@@ -276,7 +278,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       : "bg-muted text-muted-foreground border-border"
                   }`}
                 >
-                  {highContrast ? "Enabled (7:1)" : "Disabled"}
+                  {highContrast ? t("settings.enabledContrast") : t("settings.disabled")}
                 </button>
               </div>
 
@@ -285,9 +287,11 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               {/* Reduce Motion */}
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <span className="font-sans font-bold text-foreground text-sm">Reduce Motion</span>
+                  <span className="font-sans font-bold text-foreground text-sm">
+                    {t("settings.reduceMotion")}
+                  </span>
                   <p className="font-sans text-xs text-muted-foreground">
-                    Minimize or disable animations across the app.
+                    {t("settings.reduceMotionHint")}
                   </p>
                 </div>
                 <button
@@ -300,7 +304,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       : "bg-muted text-muted-foreground border-border"
                   }`}
                 >
-                  {reduceMotion ? "Enabled" : "Disabled"}
+                  {reduceMotion ? t("settings.enabled") : t("settings.disabled")}
                 </button>
               </div>
             </div>
@@ -310,7 +314,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
           <section className="flex flex-col gap-3">
             <h3 className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
               <Type className="size-4 text-wp-blue" />
-              <span>Typography &amp; Bidi Numerals</span>
+              <span>{t("settings.typographyHeading")}</span>
             </h3>
 
             <div className="bg-muted/30 rounded-2xl p-4 border border-border flex flex-col gap-4">
@@ -318,10 +322,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
-                    Text Size Scaling
+                    {t("settings.textSize")}
                   </span>
                   <p className="font-sans text-xs text-muted-foreground">
-                    Resize text up to 150% without loss of function.
+                    {t("settings.textSizeHint")}
                   </p>
                 </div>
                 <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
@@ -349,10 +353,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
-                    Numeral System
+                    {t("settings.numeralSystem")}
                   </span>
                   <p className="font-sans text-xs text-muted-foreground">
-                    Switch between Western (1, 2, 3) and Arabic-Indic (١, ٢, ٣) numerals.
+                    {t("settings.numeralSystemHint")}
                   </p>
                 </div>
                 <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
@@ -362,7 +366,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     aria-pressed={numeralSystem === "western"}
                     className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${numeralSystem === "western" ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}
                   >
-                    1, 2, 3
+                    {"1, 2, 3"}
                   </button>
                   <button
                     type="button"
@@ -370,7 +374,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     aria-pressed={numeralSystem === "arabic"}
                     className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${numeralSystem === "arabic" ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}
                   >
-                    ١, ٢, ٣
+                    {"١, ٢, ٣"}
                   </button>
                 </div>
               </div>
@@ -381,7 +385,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
           <section className="flex flex-col gap-3">
             <h3 className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
               <Volume2 className="size-4 text-wp-amber" />
-              <span>Audio Speech &amp; Inclusive Modalities</span>
+              <span>{t("settings.audioHeading")}</span>
             </h3>
 
             <div className="bg-muted/30 rounded-2xl p-4 border border-border flex flex-col gap-4">
@@ -389,10 +393,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
-                    Pronunciation Speech Rate
+                    {t("settings.speechRate")}
                   </span>
                   <p className="font-sans text-xs text-muted-foreground">
-                    Control audio playback speed for learning clarity.
+                    {t("settings.speechRateHint")}
                   </p>
                 </div>
                 <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
@@ -408,7 +412,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                           : "text-muted-foreground hover:text-foreground"
                       }`}
                     >
-                      {sp}x
+                      {`${sp}x`}
                     </button>
                   ))}
                 </div>
@@ -422,7 +426,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   <div className="flex items-center gap-2">
                     <Sparkles className="size-4 text-wp-amber" aria-hidden />
                     <span className="font-sans font-bold text-foreground text-sm">
-                      ElevenLabs HD Voice &amp; TTS Engine
+                      {t("settings.elevenLabsTitle")}
                     </span>
                   </div>
                   <div className="flex items-center gap-1.5 flex-wrap">
@@ -433,7 +437,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       className="px-2.5 py-1 min-h-[36px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
                     >
                       <Volume2 className="size-3" aria-hidden />
-                      <span>Test &ldquo;Light switch&rdquo;</span>
+                      <span>{t("settings.testLightSwitch")}</span>
                     </button>
                     <button
                       type="button"
@@ -442,7 +446,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       className="px-2.5 py-1 min-h-[36px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
                     >
                       <Volume2 className="size-3" aria-hidden />
-                      <span>Test &ldquo;Vase&rdquo;</span>
+                      <span>{t("settings.testVase")}</span>
                     </button>
                     <button
                       type="button"
@@ -451,20 +455,19 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       className="px-2.5 py-1 min-h-[36px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
                     >
                       <Volume2 className="size-3" aria-hidden />
-                      <span>Test Sentence</span>
+                      <span>{t("settings.testSentence")}</span>
                     </button>
                   </div>
                 </div>
                 <p className="font-sans text-xs text-muted-foreground leading-relaxed">
-                  Using <strong>Alice HD</strong> neural educator voice with offline IndexedDB
-                  caching, backed by prioritized Edge/Chrome Natural TTS.
+                  {t("settings.audioEngineDesc")}
                 </p>
                 <div className="flex flex-col gap-1.5 mt-1">
                   <label
                     htmlFor="elevenlabs-key-input"
                     className="text-xs font-sans font-semibold text-foreground"
                   >
-                    ElevenLabs API Key (Optional Override)
+                    {t("settings.elevenLabsKey")}
                   </label>
                   <div className="flex items-center gap-2">
                     <input
@@ -481,7 +484,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                         onClick={() => handleSaveApiKey("")}
                         className="text-xs text-muted-foreground hover:text-wp-rose px-2 py-1 font-sans font-semibold"
                       >
-                        Clear
+                        {t("settings.clear")}
                       </button>
                     ) : null}
                   </div>
@@ -495,10 +498,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="font-sans font-bold text-foreground text-sm">
-                      Include Speaking Drills
+                      {t("settings.speakingDrills")}
                     </span>
                     <p className="font-sans text-xs text-muted-foreground">
-                      Disable if practicing in quiet environments.
+                      {t("settings.speakingDrillsHint")}
                     </p>
                   </div>
                   <button
@@ -511,18 +514,17 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                         : "bg-muted text-muted-foreground border-border"
                     }`}
                   >
-                    {includeSpeaking ? "Enabled" : "Disabled"}
+                    {includeSpeaking ? t("settings.enabled") : t("settings.disabled")}
                   </button>
                 </div>
 
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="font-sans font-bold text-foreground text-sm">
-                      Timed Exercises
+                      {t("settings.timedExercises")}
                     </span>
                     <p className="font-sans text-xs text-muted-foreground">
-                      Turn off to remove every countdown. Timers can also be paused or extended
-                      while running.
+                      {t("settings.timedExercisesHint")}
                     </p>
                   </div>
                   <button
@@ -542,11 +544,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="font-sans font-bold text-foreground text-sm">
-                      Move On Automatically
+                      {t("settings.autoAdvance")}
                     </span>
                     <p className="font-sans text-xs text-muted-foreground">
-                      Lessons advance a moment after each answer. Turn off to move on with a button
-                      instead.
+                      {t("settings.autoAdvanceHint")}
                     </p>
                   </div>
                   <button
@@ -566,12 +567,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 <div className="flex items-center justify-between gap-3">
                   <div>
                     <span className="font-sans font-bold text-foreground text-sm">
-                      Speak Answers Aloud
+                      {t("settings.speakAnswers")}
                     </span>
                     <p className="font-sans text-xs text-muted-foreground">
-                      Says the word after each answer &mdash; &ldquo;Correct! This is a
-                      faucet.&rdquo; / &ldquo;These are pliers.&rdquo; Turn off to keep the chime
-                      only.
+                      {t("settings.speakAnswersHint")}
                     </p>
                   </div>
                   <button
@@ -591,10 +590,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="font-sans font-bold text-foreground text-sm">
-                      Include Listening Drills
+                      {t("settings.listeningDrills")}
                     </span>
                     <p className="font-sans text-xs text-muted-foreground">
-                      Disable if hard-of-hearing or without headphones.
+                      {t("settings.listeningDrillsHint")}
                     </p>
                   </div>
                   <button
@@ -607,7 +606,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                         : "bg-muted text-muted-foreground border-border"
                     }`}
                   >
-                    {includeListening ? "Enabled" : "Disabled"}
+                    {includeListening ? t("settings.enabled") : t("settings.disabled")}
                   </button>
                 </div>
               </div>
@@ -618,17 +617,17 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
           <section className="flex flex-col gap-3">
             <h3 className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
               <ShieldCheck className="size-4 text-wp-teal" />
-              <span>Target Level &amp; Daily Goals</span>
+              <span>{t("settings.goalsHeading")}</span>
             </h3>
 
             <div className="bg-muted/30 rounded-2xl p-4 border border-border flex flex-col gap-4">
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
-                    Target English Level
+                    {t("settings.targetLevel")}
                   </span>
                   <p className="font-sans text-xs text-muted-foreground">
-                    Current level: {state.preferences.englishLevel}
+                    {t("settings.currentLevel", { level: state.preferences.englishLevel })}
                   </p>
                 </div>
                 <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
@@ -655,7 +654,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
           <section className="flex flex-col gap-3">
             <h3 className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
               <CloudDownload className="size-4 text-primary" />
-              <span>Offline Readiness &amp; Storage</span>
+              <span>{t("settings.offlineHeading")}</span>
             </h3>
 
             <div className="bg-muted/30 rounded-2xl p-4 border border-border flex flex-col gap-3">
@@ -679,7 +678,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   className="px-4 py-2.5 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-xs shadow-xs hover:opacity-90 disabled:opacity-50 transition-all shrink-0 flex items-center justify-center gap-2 min-h-[44px]"
                 >
                   {isPreloading ? (
-                    <span>Downloading {preloadProgress}%…</span>
+                    <span>{t("settings.downloadingProgress", { progress: preloadProgress })}</span>
                   ) : preloadDone ? (
                     <>
                       <CheckCircle2 className="size-4 text-wp-green" />
@@ -688,7 +687,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   ) : (
                     <>
                       <CloudDownload className="size-4" />
-                      <span>Preload All Units</span>
+                      <span>{t("settings.preloadUnits")}</span>
                     </>
                   )}
                 </button>
@@ -716,11 +715,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
             <div className="bg-wp-rose/10 border border-wp-rose/20 rounded-2xl p-4 flex items-center justify-between gap-4">
               <div>
                 <span className="font-sans font-bold text-wp-rose text-sm">
-                  Reset Progress Data
+                  {t("settings.resetHeading")}
                 </span>
-                <p className="font-sans text-xs text-muted-foreground">
-                  Reset local memory progress and streak data back to zero.
-                </p>
+                <p className="font-sans text-xs text-muted-foreground">{t("settings.resetHint")}</p>
               </div>
 
               {confirmReset ? (
@@ -734,14 +731,14 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     }}
                     className="px-3 py-1.5 rounded-xl bg-wp-rose text-wp-text-on-rose text-xs font-sans font-bold shadow-xs"
                   >
-                    Confirm Reset
+                    {t("settings.confirmReset")}
                   </button>
                   <button
                     type="button"
                     onClick={() => setConfirmReset(false)}
                     className="px-3 py-1.5 rounded-xl bg-wp-card text-muted-foreground text-xs font-sans font-bold border border-border"
                   >
-                    Cancel
+                    {t("settings.cancel")}
                   </button>
                 </div>
               ) : (
@@ -750,7 +747,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   onClick={() => setConfirmReset(true)}
                   className="px-3 py-1.5 rounded-xl bg-wp-card text-wp-rose border border-wp-rose/30 font-sans font-bold text-xs hover:bg-wp-rose/20 transition-all shrink-0"
                 >
-                  Reset Data
+                  {t("settings.resetData")}
                 </button>
               )}
             </div>
@@ -764,7 +761,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
             onClick={onClose}
             className="w-full sm:w-auto px-6 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            Done
+            {t("settings.done")}
           </button>
         </div>
       </div>

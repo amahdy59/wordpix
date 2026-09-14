@@ -6,6 +6,7 @@ import type { VocabularyItem } from "../data/lessons";
 import { getLexiconEntry } from "../data/lexiconDictionary";
 import { useAudio } from "./useAudio";
 import { useModalA11y } from "./useModalA11y";
+import { useI18n } from "../context/I18nContext";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { WordDetailsContent } from "./WordDetailsContent";
 
@@ -26,6 +27,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
   isOpen,
   onClose,
 }: Props) {
+  const { t } = useI18n();
   const { speak } = useAudio();
   const closeBtnRef = useRef<HTMLButtonElement>(null);
   const containerRef = useModalA11y({ isOpen, onDismiss: onClose });
@@ -91,7 +93,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
                 className="flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-4 py-2 min-h-[44px] rounded-full bg-primary text-primary-foreground font-sans font-bold text-xs sm:text-sm shadow-md hover:opacity-90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white shrink-0 cursor-pointer"
               >
                 <Volume2 className="size-4" />
-                <span>Listen</span>
+                <span>{t("action.listen")}</span>
               </button>
             </div>
           </div>
@@ -105,7 +107,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
               onClick={onClose}
               className="w-full sm:w-auto px-6 py-2.5 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-xs hover:opacity-90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
             >
-              Done
+              {t("action.done")}
             </button>
           </div>
         </motion.div>

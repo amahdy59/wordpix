@@ -1,3 +1,4 @@
+/* eslint-disable i18next/no-literal-string -- Standalone bilingual fallback parachute when React context is broken */
 import { Component, type ReactNode, type ErrorInfo } from "react";
 import { AlertTriangle, RefreshCw } from "lucide-react";
 

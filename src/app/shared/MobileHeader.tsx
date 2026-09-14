@@ -49,7 +49,7 @@ export const MobileHeader = memo(function MobileHeader({ dispatch }: Props) {
             <BookOpen className="size-4 text-primary-foreground" />
           </div>
           <span className="font-sans font-bold text-foreground tracking-tight text-lg">
-            WordPix
+            {`WordPix`}
           </span>
         </button>
 

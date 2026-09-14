@@ -3,12 +3,14 @@ import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
 import { Sparkles, CheckCircle2, ArrowRight, UserCircle, BookOpen, Layers } from "lucide-react";
+import { useI18n } from "../context/I18nContext";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
 export function ReadyCelebration({ dispatch }: Props) {
+  const { t } = useI18n();
   const flagshipWorld = COURSE_UNITS[DEFAULT_UNIT_ID];
   return (
     <div className="bg-background flex flex-col md:flex-row min-h-dvh md:min-h-[560px] relative overflow-hidden">
@@ -20,7 +22,9 @@ export function ReadyCelebration({ dispatch }: Props) {
           <div className="size-10 rounded-2xl bg-primary flex items-center justify-center shadow-md">
             <BookOpen className="size-5 text-primary-foreground" />
           </div>
-          <span className="font-sans font-black text-white text-xl tracking-tight">WordPix</span>
+          <span className="font-sans font-black text-white text-xl tracking-tight">
+            {t("app.title")}
+          </span>
         </div>
 
         <div className="relative z-10 flex flex-col items-center text-center gap-6 my-auto">
@@ -35,18 +39,17 @@ export function ReadyCelebration({ dispatch }: Props) {
           </div>
           <div>
             <h2 className="font-sans font-black text-3xl text-white leading-tight">
-              Environment Initialized
+              {t("onboarding.envInitialized")}
             </h2>
             <p className="font-sans text-white/70 text-sm mt-2 max-w-xs mx-auto">
-              Your visual English learning engine is ready. Time to dive into your first lesson
-              group!
+              {t("onboarding.envEngineReady")}
             </p>
           </div>
         </div>
 
         <div className="relative z-10 flex items-center gap-2 text-white/60 text-xs font-sans font-semibold">
           <Layers className="size-4" />
-          <span>Ready to Learn: {flagshipWorld.name} World</span>
+          <span>{t("onboarding.readyToLearn", { world: flagshipWorld.name })}</span>
         </div>
       </div>
 
@@ -66,16 +69,15 @@ export function ReadyCelebration({ dispatch }: Props) {
           <div className="flex flex-col items-center md:items-start gap-2">
             <div className="inline-flex items-center gap-2 bg-wp-green-light text-wp-green px-3.5 py-1.5 rounded-full border border-wp-green/20">
               <CheckCircle2 className="size-4" />
-              <span className="font-sans font-bold text-xs">Environment Ready</span>
+              <span className="font-sans font-bold text-xs">{t("onboarding.envReady")}</span>
             </div>
 
             <h1 className="font-sans font-black text-foreground text-3xl md:text-4xl leading-tight tracking-tight mt-1">
-              Welcome to WordPix!
+              {t("onboarding.welcomeWordPixExclamation")}
             </h1>
 
             <p className="font-sans font-medium text-muted-foreground text-base max-w-xs md:max-w-none mt-1">
-              Your visual English learning environment is initialized. Let&apos;s start your first
-              interactive word group lesson!
+              {t("onboarding.envInitializedDesc")}
             </p>
           </div>
 
@@ -86,7 +88,7 @@ export function ReadyCelebration({ dispatch }: Props) {
           >
             <Sparkles className="size-5 motion-safe:animate-pulse" />
             <span className="font-sans font-bold text-xs text-foreground uppercase tracking-widest">
-              Level 1 · {flagshipWorld.name}
+              {t("onboarding.levelWorld", { level: 1, world: flagshipWorld.name })}
             </span>
             <Sparkles className="size-5 motion-safe:animate-pulse" />
           </div>
@@ -100,7 +102,7 @@ export function ReadyCelebration({ dispatch }: Props) {
               focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
               shadow-sm transition-all flex items-center justify-center gap-2"
           >
-            <span>Start Learning Group →</span>
+            <span>{t("onboarding.startLearningGroup")}</span>
             <ArrowRight className="size-5" />
           </button>
         </footer>

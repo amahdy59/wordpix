@@ -25,6 +25,7 @@ import type { UnitStudyProgress, StudyArea } from "./types";
 import type { Action } from "../../types";
 import { WordInspectorModal } from "../../shared/WordInspectorModal";
 import type { VocabularyItem } from "../../data/lessons";
+import { useI18n } from "../../../i18n";
 
 const STUDY_AREAS: StudyArea[] = ["learn", "use", "practice", "review", "reference"];
 
@@ -45,6 +46,7 @@ export function StudyShell({
   initialNodeId,
   dispatch,
 }: Props) {
+  const { t } = useI18n();
   const [progress, setProgress] = useState<UnitStudyProgress>(() => loadStudyProgress(unitId));
 
   // The curriculum adapter
@@ -345,7 +347,9 @@ export function StudyShell({
             aria-label={`Unit mastery progress: ${overallProgress}%`}
           >
             <span className="size-2 rounded-full bg-primary" aria-hidden />
-            <span className="text-foreground">{overallProgress}% Done</span>
+            <span className="text-foreground">
+              {t("study.percentDone", { percent: overallProgress })}
+            </span>
           </div>
 
           {/* Quick Area Jump Tabs (Desktop) */}
@@ -358,7 +362,7 @@ export function StudyShell({
                   : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
               }`}
             >
-              Overview
+              {t("study.overview")}
             </button>
             {STUDY_AREAS.map((area) => {
               const isActive = currentArea === area;
@@ -386,7 +390,7 @@ export function StudyShell({
             aria-label="Open study curriculum contents menu"
           >
             <Menu className="size-4" aria-hidden />
-            <span>Contents</span>
+            <span>{t("study.contents")}</span>
           </button>
         </div>
       </header>
@@ -425,12 +429,12 @@ export function StudyShell({
                 }`}
               >
                 <ArrowLeft className="size-4 shrink-0" aria-hidden />
-                <span className="truncate">{unit.name} Overview</span>
+                <span className="truncate">{t("study.unitOverview", { unit: unit.name })}</span>
               </button>
 
               <div className="mt-3.5 pt-3 border-t border-border/60">
                 <div className="mb-1.5 flex items-center justify-between text-xs font-bold">
-                  <span className="text-muted-foreground">Course Completion</span>
+                  <span className="text-muted-foreground">{t("study.courseCompletion")}</span>
                   <span className="text-primary font-bold">{overallProgress}%</span>
                 </div>
                 <div className="h-2 overflow-hidden rounded-full bg-secondary">
@@ -577,7 +581,7 @@ export function StudyShell({
                                   isActive ? "text-primary-foreground/80" : "text-muted-foreground"
                                 }`}
                               >
-                                {node.estimatedMinutes} min
+                                {t("study.minutesShort", { minutes: node.estimatedMinutes })}
                               </span>
                             )}
                           </span>
@@ -672,7 +676,7 @@ export function StudyShell({
           aria-current={currentArea === "home" ? "page" : undefined}
         >
           <BookOpen className="size-4 mb-0.5" aria-hidden />
-          <span>Home</span>
+          <span>{t("study.home")}</span>
         </button>
         {STUDY_AREAS.map((area) => {
           const isActive = currentArea === area;

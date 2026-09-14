@@ -1,6 +1,7 @@
-import { memo } from "react";
+import { memo, useMemo } from "react";
 import { createPortal } from "react-dom";
 import { Keyboard, X } from "lucide-react";
+import { useI18n } from "../context/I18nContext";
 import { useModalA11y } from "./useModalA11y";
 
 interface Props {
@@ -8,19 +9,23 @@ interface Props {
   onClose: () => void;
 }
 
-const SHORTCUTS = [
-  { key: "1 – 4", description: "Select multiple-choice / flashcard option" },
-  { key: "Space / R", description: "Replay audio pronunciation" },
-  { key: "Enter", description: "Submit answer / continue to next step" },
-  { key: "Esc", description: "Close dialogs or cancel current action" },
-  { key: "?", description: "Toggle this keyboard shortcuts cheat-sheet" },
-];
-
 export const KeyboardShortcutsModal = memo(function KeyboardShortcutsModal({
   isOpen,
   onClose,
 }: Props) {
   const containerRef = useModalA11y({ isOpen, onDismiss: onClose });
+  const { t } = useI18n();
+
+  const shortcuts = useMemo(
+    () => [
+      { key: "1 – 4", description: t("shortcuts.optionSelect") },
+      { key: "Space / R", description: t("shortcuts.replayAudio") },
+      { key: "Enter", description: t("shortcuts.submitContinue") },
+      { key: "Esc", description: t("shortcuts.closeCancel") },
+      { key: "?", description: t("shortcuts.toggleCheatSheet") },
+    ],
+    [t]
+  );
 
   if (!isOpen) return null;
 
@@ -43,13 +48,13 @@ export const KeyboardShortcutsModal = memo(function KeyboardShortcutsModal({
               <Keyboard className="size-5" />
             </div>
             <h2 id="shortcuts-modal-title" className="font-sans font-black text-foreground text-xl">
-              Keyboard Shortcuts
+              {t("shortcuts.title")}
             </h2>
           </div>
           <button
             type="button"
             onClick={onClose}
-            aria-label="Close shortcuts modal"
+            aria-label={t("shortcuts.closeAria")}
             className="wp-touch-target size-11 min-h-[44px] min-w-[44px] rounded-full hover:bg-muted text-muted-foreground hover:text-foreground flex items-center justify-center transition-colors focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
           >
             <X className="size-5" />
@@ -57,7 +62,7 @@ export const KeyboardShortcutsModal = memo(function KeyboardShortcutsModal({
         </div>
 
         <ul className="flex flex-col gap-2.5 divide-y divide-border/40">
-          {SHORTCUTS.map(({ key, description }) => (
+          {shortcuts.map(({ key, description }) => (
             <li key={key} className="flex items-center justify-between pt-2.5 first:pt-0">
               <span className="font-sans text-xs sm:text-sm text-foreground font-medium">
                 {description}
@@ -74,7 +79,7 @@ export const KeyboardShortcutsModal = memo(function KeyboardShortcutsModal({
           onClick={onClose}
           className="w-full bg-primary hover:opacity-90 active:opacity-80 rounded-xl py-3 font-sans font-bold text-primary-foreground text-sm min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all shadow-sm"
         >
-          Got it
+          {t("action.gotIt")}
         </button>
       </div>
     </div>,

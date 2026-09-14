@@ -2,6 +2,7 @@ import { BookOpen, Layers, Volume2, Zap } from "lucide-react";
 import type { VocabularyItem } from "../data/lessons";
 import { getLexiconEntry, hasArabicGloss } from "../data/lexiconDictionary";
 import { useAudio } from "./useAudio";
+import { useI18n } from "../context/I18nContext";
 
 export function WordDetailsContent({
   word,
@@ -12,6 +13,7 @@ export function WordDetailsContent({
   bilingual?: boolean;
   className?: string;
 }) {
+  const { t } = useI18n();
   const { speak } = useAudio();
   const entry = getLexiconEntry(word.id, word.label);
   return (
@@ -32,7 +34,7 @@ export function WordDetailsContent({
           </p>
         ) : bilingual ? (
           <p className="font-sans text-sm text-muted-foreground italic">
-            Translation not available yet
+            {t("wordDetails.translationNotAvailable")}
           </p>
         ) : null}
         <span className="text-xs font-sans font-bold px-3 py-1 bg-primary/10 text-primary rounded-full uppercase tracking-wider border border-primary/20 shrink-0">
@@ -45,7 +47,7 @@ export function WordDetailsContent({
         <div className="flex flex-col gap-2.5">
           <span className="font-sans text-xs font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
             <Layers className="size-3.5 text-primary" />
-            <span>Essential Collocations & Word Partners ({entry.collocations.length})</span>
+            <span>{t("wordDetails.collocations", { count: entry.collocations.length })}</span>
           </span>
           <div className="flex flex-wrap gap-2">
             {entry.collocations.map((col, idx) => (
@@ -69,7 +71,7 @@ export function WordDetailsContent({
         <div className="flex flex-col gap-2.5">
           <span className="font-sans text-xs font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
             <Zap className="size-3.5 text-primary" />
-            <span>Related Phrasal Verbs ({entry.phrasalVerbs.length})</span>
+            <span>{t("wordDetails.phrasalVerbs", { count: entry.phrasalVerbs.length })}</span>
           </span>
           <div className="grid grid-cols-1 gap-2.5">
             {entry.phrasalVerbs.map((pv, idx) => (
@@ -111,7 +113,7 @@ export function WordDetailsContent({
         <div className="flex flex-col gap-2.5">
           <span className="font-sans text-xs font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
             <BookOpen className="size-3.5 text-primary" />
-            <span>Real-World Usage Contexts ({entry.sentences.length})</span>
+            <span>{t("wordDetails.usageContexts", { count: entry.sentences.length })}</span>
           </span>
           <div className="flex flex-col gap-3">
             {entry.sentences.map((sentence, idx) => (
@@ -126,7 +128,7 @@ export function WordDetailsContent({
                     </span>
                   ) : (
                     <span className="text-[11px] font-sans font-bold text-muted-foreground uppercase">
-                      Context {idx + 1}
+                      {t("wordDetails.contextNum", { num: idx + 1 })}
                     </span>
                   )}
                   <button
@@ -136,7 +138,7 @@ export function WordDetailsContent({
                     className="flex items-center gap-1 text-xs font-sans font-bold text-primary hover:underline min-h-[44px] px-2"
                   >
                     <Volume2 className="size-3.5" />
-                    <span>Play</span>
+                    <span>{t("wordDetails.play")}</span>
                   </button>
                 </div>
 

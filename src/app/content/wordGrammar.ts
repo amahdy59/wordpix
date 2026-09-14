@@ -1234,3 +1234,23 @@ export function contrastSentence(label: string, topic?: string): string {
   if (kind === "plural") return `Those are ${phrase}.`;
   return `That's ${phrase}.`;
 }
+
+export function contrastParts(
+  label: string,
+  topic?: string
+): { before: string; word: string; after: string } {
+  const kind = classifyLabel(label, topic);
+  const word = spokenLabel(label, kind);
+  switch (kind) {
+    case "count":
+      return { before: `That's ${articleFor(label)} `, word, after: "." };
+    case "pair":
+      return { before: "That's a pair of ", word, after: "." };
+    case "plural":
+      return { before: "Those are ", word, after: "." };
+    case "term":
+      return { before: `That's ${OPEN_QUOTE}`, word, after: `${CLOSE_QUOTE}.` };
+    default:
+      return { before: "That's ", word, after: "." };
+  }
+}

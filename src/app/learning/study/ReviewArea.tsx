@@ -8,6 +8,7 @@ import { WordImage } from "../../shared/WordImage";
 import type { UnitStudyProgress } from "./types";
 import { useAudio } from "../../shared/useAudio";
 import { Volume2 } from "lucide-react";
+import { useI18n } from "../../../i18n";
 
 interface Props {
   materials: UnitLearningMaterials;
@@ -16,6 +17,7 @@ interface Props {
 }
 
 export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
+  const { t } = useI18n();
   const vocab = useMemo(() => loadedUnitVocabulary(materials.unitId), [materials.unitId]);
   const { speak, stop } = useAudio({ lang: "en-US", rate: 0.9 });
   const [revealedWordIds, setRevealedWordIds] = useState<Set<string>>(new Set());
@@ -47,16 +49,15 @@ export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
           </span>
           <div className="min-w-0">
             <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-              Review Queue &amp; Confidence
+              {t("study.reviewQueueConfidence")}
             </span>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-foreground truncate">
-              Difficult Words &amp; Review
+              {t("study.difficultWordsReview")}
             </h1>
           </div>
         </div>
         <p className="text-xs sm:text-sm text-muted-foreground mt-2 max-w-2xl leading-relaxed">
-          Strengthen vocabulary retention. Words you marked for practice or missed in exercises
-          appear here for focused recall.
+          {t("study.reviewDesc")}
         </p>
       </div>
 
@@ -72,12 +73,9 @@ export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
               className="font-bold text-lg text-foreground flex items-center gap-2"
             >
               <RotateCcw className="size-5 text-wp-amber" aria-hidden />
-              <span>Due for Review ({weakWords.length})</span>
+              <span>{t("study.dueForReview", { count: weakWords.length })}</span>
             </h3>
-            <p className="text-xs text-muted-foreground mt-1">
-              Use the image as a prompt, recall the English word, then reveal the answer. Remove it
-              only when you remembered it before revealing.
-            </p>
+            <p className="text-xs text-muted-foreground mt-1">{t("study.dueForReviewDesc")}</p>
           </div>
 
           <ul className="space-y-3.5">
@@ -118,7 +116,7 @@ export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
                         </div>
                       ) : (
                         <p className="font-bold text-sm sm:text-base text-foreground">
-                          Recall the English word
+                          {t("study.recallEnglishWord")}
                         </p>
                       )}
                       {revealed && word!.phonetic && (
@@ -141,7 +139,7 @@ export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
                         className="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-primary text-primary-foreground font-bold text-xs hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] shadow-2xs"
                       >
                         <Eye className="size-4" aria-hidden />
-                        <span>Reveal answer</span>
+                        <span>{t("study.revealAnswer")}</span>
                       </button>
                     ) : (
                       <>
@@ -149,13 +147,13 @@ export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
                           onClick={() => toggleReveal(word!.id, false)}
                           className="px-4 py-2.5 rounded-2xl border border-border text-foreground font-bold text-xs hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                         >
-                          Keep practicing
+                          {t("study.keepPracticing")}
                         </button>
                         <button
                           onClick={() => handleClearWord(word!.id)}
                           className="px-5 py-2.5 rounded-2xl bg-primary/10 border border-primary/30 text-primary font-bold text-xs hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                         >
-                          I remembered it
+                          {t("study.rememberedIt")}
                         </button>
                       </>
                     )}
@@ -178,13 +176,10 @@ export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
               id="all-caught-up-heading"
               className="font-bold text-lg text-foreground flex items-center gap-2 justify-center sm:justify-start"
             >
-              <span>All caught up!</span>
+              <span>{t("study.allCaughtUp")}</span>
               <Sparkles className="size-4 text-wp-amber" aria-hidden />
             </h3>
-            <p className="text-sm text-muted-foreground mt-1">
-              You don&apos;t have any difficult words queued for review. Any words you struggle with
-              during Learn or Practice will automatically appear here.
-            </p>
+            <p className="text-sm text-muted-foreground mt-1">{t("study.allCaughtUpDesc")}</p>
           </div>
         </section>
       )}
