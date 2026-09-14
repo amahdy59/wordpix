@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef } from "react";
 import { useAccessibility } from "./useAccessibilityPreferences";
 import { buildFeedbackSequence } from "../exercises/feedbackSpeech";
 import { useAudio } from "./useAudio";
+import { audioUrl } from "./assetUrls";
 
 const CHIME_CLEARANCE_MS = 180;
 
@@ -93,6 +94,16 @@ export function useSpokenFeedback(): SpokenFeedback {
       });
 
       sequenceQueueRef.current = sequence;
+
+      // Aggressively preload the sequence URLs so the browser fetches the media
+      // during the 180ms chime clearance, eliminating the gap between sentences.
+      sequence.forEach(async (text) => {
+        const url = await audioUrl(text);
+        if (url) {
+          const audio = new Audio(url);
+          audio.preload = "auto";
+        }
+      });
 
       timerRef.current = setTimeout(() => {
         timerRef.current = null;
