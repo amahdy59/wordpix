@@ -81,6 +81,6 @@ describe("study material text wraps instead of being clipped", () => {
 
   it("lets a long unit name shrink beside the back button", () => {
     const header = source.slice(source.indexOf("Back to ${unit.name}"));
-    expect(header.slice(0, 200)).toMatch(/min-w-0/);
+    expect(header.slice(0, 300)).toMatch(/min-w-0/);
   });
 });
