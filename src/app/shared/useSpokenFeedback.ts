@@ -33,41 +33,42 @@ export function useSpokenFeedback(): SpokenFeedback {
 
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const variantRef = useRef(0);
-  const sequenceQueueRef = useRef<string[]>([]);
   const isPlayingRef = useRef(false);
+  const currentAudioRef = useRef<HTMLAudioElement | null>(null);
+  const nextAudioTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const requestRef = useRef(0);
 
   const onCompleteRef = useRef<(() => void) | null>(null);
 
-  const playNextInSequenceRef = useRef<() => void>();
-
   const { speak, stop } = useAudio({
-    onEnded: () => playNextInSequenceRef.current?.(),
-    onError: () => playNextInSequenceRef.current?.(),
-  });
-
-  const playNextInSequence = useCallback(() => {
-    if (sequenceQueueRef.current.length === 0) {
+    onEnded: () => {
       isPlayingRef.current = false;
       const onComplete = onCompleteRef.current;
       onCompleteRef.current = null;
       if (onComplete) onComplete();
-      return;
-    }
-
-    const nextText = sequenceQueueRef.current.shift();
-    if (nextText) speak(nextText);
-  }, [speak]);
-
-  useEffect(() => {
-    playNextInSequenceRef.current = playNextInSequence;
-  }, [playNextInSequence]);
+    },
+    onError: () => {
+      isPlayingRef.current = false;
+      const onComplete = onCompleteRef.current;
+      onCompleteRef.current = null;
+      if (onComplete) onComplete();
+    },
+  });
 
   const cancel = useCallback(() => {
+    requestRef.current += 1;
     if (timerRef.current !== null) {
       clearTimeout(timerRef.current);
       timerRef.current = null;
     }
-    sequenceQueueRef.current = [];
+    if (nextAudioTimerRef.current !== null) {
+      clearTimeout(nextAudioTimerRef.current);
+      nextAudioTimerRef.current = null;
+    }
+    if (currentAudioRef.current) {
+      currentAudioRef.current.pause();
+      currentAudioRef.current = null;
+    }
     isPlayingRef.current = false;
     onCompleteRef.current = null;
     stop();
@@ -82,6 +83,9 @@ export function useSpokenFeedback(): SpokenFeedback {
 
       cancel();
 
+      const generation = requestRef.current;
+      const isCurrent = () => requestRef.current === generation;
+
       onCompleteRef.current = onComplete || null;
 
       const sequence = buildFeedbackSequence({
@@ -93,25 +97,83 @@ export function useSpokenFeedback(): SpokenFeedback {
         variant: variantRef.current++,
       });
 
-      sequenceQueueRef.current = sequence;
+      // Aggressively resolve URLs for gapless overlap
+      Promise.all(sequence.map(audioUrl)).then((urls) => {
+        if (!isCurrent()) return;
 
-      // Aggressively preload the sequence URLs so the browser fetches the media
-      // during the 180ms chime clearance, eliminating the gap between sentences.
-      sequence.forEach(async (text) => {
-        const url = await audioUrl(text);
-        if (url) {
-          const audio = new Audio(url);
-          audio.preload = "auto";
-        }
+        timerRef.current = setTimeout(() => {
+          timerRef.current = null;
+          if (!isCurrent()) return;
+          isPlayingRef.current = true;
+
+          let currentIndex = 0;
+
+          const playNext = () => {
+            if (!isCurrent()) return;
+            if (currentIndex >= sequence.length) {
+              isPlayingRef.current = false;
+              const complete = onCompleteRef.current;
+              onCompleteRef.current = null;
+              if (complete) complete();
+              return;
+            }
+
+            const url = urls[currentIndex];
+
+            if (!url) {
+              // CDN hash miss: fallback to useAudio TTS for the remainder of the sentence
+              speak(sequence.slice(currentIndex).join(" "));
+              return;
+            }
+
+            const audio = new Audio(url);
+            currentAudioRef.current = audio;
+
+            let triggeredNext = false;
+            const triggerNext = () => {
+              if (triggeredNext) return;
+              triggeredNext = true;
+              currentIndex++;
+              playNext();
+            };
+
+            audio.onplaying = () => {
+              if (!isCurrent()) return;
+              if (currentIndex < sequence.length - 1) {
+                // Overlap the next audio to hide silence padding at the end of the stem
+                const overlap = 0.15;
+                let delay = audio.duration - overlap;
+                if (!Number.isFinite(delay) || delay < 0) delay = 0;
+
+                nextAudioTimerRef.current = setTimeout(() => {
+                  nextAudioTimerRef.current = null;
+                  triggerNext();
+                }, delay * 1000);
+              }
+            };
+
+            audio.onended = () => {
+              if (!isCurrent()) return;
+              triggerNext();
+            };
+
+            audio.onerror = () => {
+              if (!isCurrent()) return;
+              // File missing on CDN, fallback to useAudio TTS
+              speak(sequence.slice(currentIndex).join(" "));
+            };
+
+            audio.play().catch(() => {
+              if (!isCurrent()) return;
+              speak(sequence.slice(currentIndex).join(" "));
+            });
+          };
+
+          playNext();
+        }, CHIME_CLEARANCE_MS);
       });
-
-      timerRef.current = setTimeout(() => {
-        timerRef.current = null;
-        isPlayingRef.current = true;
-        playNextInSequence();
-      }, CHIME_CLEARANCE_MS);
     },
-    [enabled, cancel, playNextInSequence]
+    [enabled, cancel, speak]
   );
 
   const delayFor = useCallback(

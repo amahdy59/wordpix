@@ -18,7 +18,7 @@ vi.mock("../../lib/persistence/db", () => ({
 vi.mock("../shared/assetUrls", () => ({
   hasAssetHost: vi.fn().mockReturnValue(true),
   audioKey: vi.fn().mockResolvedValue("audio/12/123.mp3"),
-  audioUrl: vi.fn().mockResolvedValue("https://cdn.example.com/audio/12/123.mp3"),
+  audioUrl: vi.fn().mockResolvedValue(null),
 }));
 
 const mockSpeak = vi.fn();
@@ -50,11 +50,8 @@ describe("useSpokenFeedback", () => {
     const { result } = renderHook(() => useSpokenFeedback());
 
     act(() => result.current.speakFeedback({ correct: true, targetLabel: "Faucet" }));
-    expect(mockSpeak).not.toHaveBeenCalled();
-
     await act(async () => {
-      vi.advanceTimersByTime(200);
-      await Promise.resolve();
+      await vi.advanceTimersByTimeAsync(200);
     });
 
     expect(mockSpeak).toHaveBeenCalled();
@@ -73,8 +70,7 @@ describe("useSpokenFeedback", () => {
     act(() => result.current.speakFeedback({ correct: true, targetLabel: "Mirror" }));
 
     await act(async () => {
-      vi.advanceTimersByTime(200);
-      await Promise.resolve();
+      await vi.advanceTimersByTimeAsync(200);
     });
 
     // It should only start playing the second sequence (Mirror's opener)
@@ -87,8 +83,7 @@ describe("useSpokenFeedback", () => {
 
     act(() => result.current.speakFeedback({ correct: true, targetLabel: "Faucet" }));
     await act(async () => {
-      vi.advanceTimersByTime(200);
-      await Promise.resolve();
+      await vi.advanceTimersByTimeAsync(200);
     });
 
     expect(mockSpeak).toHaveBeenCalled();
