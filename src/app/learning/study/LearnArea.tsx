@@ -151,12 +151,12 @@ export function LearnArea({
             <article
               key={word.id}
               role="listitem"
-              className="bg-wp-card rounded-2xl border border-border shadow-wp-xs overflow-hidden flex flex-col"
+              className="bg-wp-card rounded-2xl border border-border shadow-wp-xs flex flex-col relative focus-within:z-20"
             >
               <WordImage
                 word={word}
                 altMode="decorative"
-                className="w-full aspect-[3/2] max-h-56 object-cover"
+                className="w-full aspect-[3/2] max-h-56 object-cover rounded-t-[15px]"
               />
               <div className="p-4 flex flex-col gap-3 flex-1">
                 <div className="flex items-start gap-3">

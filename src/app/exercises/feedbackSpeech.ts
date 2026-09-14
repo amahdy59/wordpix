@@ -1,4 +1,4 @@
-import { contrastSentence, identifySentence } from "../content/wordGrammar";
+import { contrastSentence, identifySentence, contrastParts, identifyParts } from "../content/wordGrammar";
 
 /**
  * The sentence spoken back after an answer.
@@ -78,4 +78,34 @@ export function buildFeedbackSpeech({
 
   const chosen = contrastSentence(chosenLabel, chosenTopic ?? targetTopic);
   return `${pick(CORRECTION)} ${chosen} ${target}`;
+}
+
+export function buildFeedbackSequence({
+  correct,
+  targetLabel,
+  targetTopic,
+  chosenLabel,
+  chosenTopic,
+  variant = 0,
+}: FeedbackSpeechInput): string[] {
+  const targetId = identifyParts(targetLabel, targetTopic);
+  const pick = <T>(list: readonly T[]): T => list[Math.abs(Math.floor(variant)) % list.length] as T;
+
+  if (correct) {
+    return [`${pick(PRAISE)} ${targetId.before}`, targetId.word];
+  }
+
+  const sameWord =
+    chosenLabel != null && chosenLabel.toLowerCase().trim() === targetLabel.toLowerCase().trim();
+  if (!chosenLabel || sameWord) {
+    return [`${pick(CORRECTION)} ${targetId.before}`, targetId.word];
+  }
+
+  const chosenCont = contrastParts(chosenLabel, chosenTopic ?? targetTopic);
+  return [
+    `${pick(CORRECTION)} ${chosenCont.before}`,
+    chosenCont.word,
+    targetId.before,
+    targetId.word,
+  ];
 }
