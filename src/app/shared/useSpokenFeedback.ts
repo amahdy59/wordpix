@@ -70,6 +70,8 @@ export function useSpokenFeedback(): SpokenFeedback {
   const sequenceQueueRef = useRef<string[]>([]);
   const isPlayingRef = useRef(false);
 
+  const onCompleteRef = useRef<(() => void) | null>(null);
+
   const cancel = useCallback(() => {
     if (timerRef.current !== null) {
       clearTimeout(timerRef.current);
@@ -77,6 +79,7 @@ export function useSpokenFeedback(): SpokenFeedback {
     }
     sequenceQueueRef.current = [];
     isPlayingRef.current = false;
+    onCompleteRef.current = null;
     if (currentAudioRef.current) {
       currentAudioRef.current.pause();
       currentAudioRef.current.src = "";
@@ -87,6 +90,9 @@ export function useSpokenFeedback(): SpokenFeedback {
   const playNextInSequence = useCallback(async function playNextInSequence() {
     if (sequenceQueueRef.current.length === 0) {
       isPlayingRef.current = false;
+      const onComplete = onCompleteRef.current;
+      onCompleteRef.current = null;
+      if (onComplete) onComplete();
       return;
     }
 
@@ -120,17 +126,22 @@ export function useSpokenFeedback(): SpokenFeedback {
   }, []);
 
   const speakFeedback = useCallback(
-    ({ correct, targetLabel, targetTopic, chosenLabel, chosenTopic }: SpeakInput) => {
-      if (!enabled) return;
+    (input: SpeakInput, onComplete?: () => void) => {
+      if (!enabled) {
+        if (onComplete) onComplete();
+        return;
+      }
 
       cancel();
 
+      onCompleteRef.current = onComplete || null;
+
       const sequence = buildFeedbackSequence({
-        correct,
-        targetLabel,
-        targetTopic,
-        chosenLabel,
-        chosenTopic,
+        correct: input.correct,
+        targetLabel: input.targetLabel,
+        targetTopic: input.targetTopic,
+        chosenLabel: input.chosenLabel,
+        chosenTopic: input.chosenTopic,
         variant: variantRef.current++,
       });
 

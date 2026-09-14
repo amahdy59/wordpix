@@ -73,22 +73,23 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       if (correct) playCorrect();
       else playIncorrect();
 
-      spoken.speakFeedback({
-        correct,
-        targetLabel: currentTargetWord.label,
-        targetTopic: currentTargetWord.topic,
-        chosenLabel: options.find((o) => o.id === id)?.label,
-        chosenTopic: currentTargetWord.topic,
-      });
+      spoken.speakFeedback(
+        {
+          correct,
+          targetLabel: currentTargetWord.label,
+          targetTopic: currentTargetWord.topic,
+          chosenLabel: options.find((o) => o.id === id)?.label,
+          chosenTopic: currentTargetWord.topic,
+        },
+        () => {
+          // Extra 200ms pause after voice finishes so it doesn't snap instantly
+          autoAdvance.schedule(
+            spoken.enabled ? 200 : correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect
+          );
+        }
+      );
 
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
-      autoAdvance.schedule(
-        spoken.enabled
-          ? spoken.delayFor(correct)
-          : correct
-            ? ADVANCE_DELAY_MS.correct
-            : ADVANCE_DELAY_MS.incorrect
-      );
     },
     [
       feedback,

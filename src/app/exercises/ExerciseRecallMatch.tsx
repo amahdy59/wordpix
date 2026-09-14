@@ -108,22 +108,22 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       // The prompt voice and the feedback voice share the browser's one
       // synthesis queue, so silence the prompt before answering over it.
       stop();
-      spoken.speakFeedback({
-        correct,
-        targetLabel: currentTargetWord.label,
-        targetTopic: currentTargetWord.topic,
-        chosenLabel: card.label,
-        chosenTopic: currentTargetWord.topic,
-      });
+      spoken.speakFeedback(
+        {
+          correct,
+          targetLabel: currentTargetWord.label,
+          targetTopic: currentTargetWord.topic,
+          chosenLabel: card.label,
+          chosenTopic: currentTargetWord.topic,
+        },
+        () => {
+          autoAdvance.schedule(
+            spoken.enabled ? 200 : correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect
+          );
+        }
+      );
 
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
-      autoAdvance.schedule(
-        spoken.enabled
-          ? spoken.delayFor(correct)
-          : correct
-            ? ADVANCE_DELAY_MS.correct
-            : ADVANCE_DELAY_MS.incorrect
-      );
     },
     [
       feedback,

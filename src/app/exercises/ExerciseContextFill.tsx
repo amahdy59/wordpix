@@ -80,22 +80,22 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       if (correct) playCorrect();
       else playIncorrect();
 
-      spoken.speakFeedback({
-        correct,
-        targetLabel: currentTargetWord.label,
-        targetTopic: currentTargetWord.topic,
-        chosenLabel: options.find((o) => o.id === id)?.label,
-        chosenTopic: currentTargetWord.topic,
-      });
+      spoken.speakFeedback(
+        {
+          correct,
+          targetLabel: currentTargetWord.label,
+          targetTopic: currentTargetWord.topic,
+          chosenLabel: options.find((o) => o.id === id)?.label,
+          chosenTopic: currentTargetWord.topic,
+        },
+        () => {
+          autoAdvance.schedule(
+            spoken.enabled ? 200 : correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect
+          );
+        }
+      );
 
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
-      autoAdvance.schedule(
-        spoken.enabled
-          ? spoken.delayFor(correct)
-          : correct
-            ? ADVANCE_DELAY_MS.correct
-            : ADVANCE_DELAY_MS.incorrect
-      );
     },
     [
       feedback,
