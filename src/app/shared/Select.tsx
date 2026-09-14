@@ -103,7 +103,7 @@ export function Select({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.15 }}
-            className="absolute z-50 w-full min-w-[200px] mt-1 bg-wp-card border border-border shadow-wp-lg rounded-2xl overflow-hidden right-0"
+            className="absolute z-50 w-full min-w-[200px] mt-1 bg-wp-card border border-border shadow-wp-lg rounded-2xl overflow-hidden end-0"
           >
             <ul
               ref={listboxRef}
