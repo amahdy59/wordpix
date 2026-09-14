@@ -141,7 +141,8 @@ export function useSpokenFeedback(): SpokenFeedback {
               if (!isCurrent()) return;
               if (currentIndex < sequence.length - 1) {
                 // Overlap the next audio to hide silence padding at the end of the stem
-                const overlap = 0.15;
+                // Increased to 350ms (0.35) for a tighter, more natural merge
+                const overlap = 0.35;
                 let delay = audio.duration - overlap;
                 if (!Number.isFinite(delay) || delay < 0) delay = 0;
 
