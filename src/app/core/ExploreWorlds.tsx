@@ -1,4 +1,4 @@
-﻿import { memo, useState, useId, useMemo } from "react";
+import { memo, useState, useId, useMemo } from "react";
 import {
   Compass,
   ArrowRight,
@@ -159,8 +159,11 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
 
   const filteredSpecialModules = useMemo(() => {
     let modules = COURSE_MODULES.filter(m => m.isSpecialSection);
+    if (selectedModuleId !== "all") {
+      modules = modules.filter((m) => m.id === selectedModuleId);
+    }
     return filterModulesByQuery(modules, searchQuery);
-  }, [searchQuery]);
+  }, [searchQuery, selectedModuleId]);
 
   return (
     <motion.div
@@ -284,13 +287,42 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                 </button>
               );
             })}
+
+            {COURSE_MODULES.filter(m => m.isSpecialSection).map((mod) => {
+              const stat = moduleStats[mod.id] || { percent: 0 };
+              const isSelected = selectedModuleId === mod.id;
+
+              return (
+                <button
+                  key={mod.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={isSelected}
+                  onClick={() => setSelectedModuleId(mod.id)}
+                  className={`min-h-[44px] px-3.5 py-2 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue ${
+                    isSelected
+                      ? "bg-wp-blue text-wp-text-on-blue border-wp-blue shadow-wp-xs"
+                      : "bg-wp-card text-foreground hover:bg-muted/50 border-border"
+                  }`}
+                >
+                  <span>{mod.title}</span>
+                  <span
+                    className={`text-[10px] px-1.5 py-0.5 rounded-full ${
+                      isSelected ? "bg-white/20 text-white" : "bg-primary/10 text-primary"
+                    }`}
+                  >
+                    {stat.percent}%
+                  </span>
+                </button>
+              );
+            })}
           </div>
         </div>
       </motion.header>
 
       {/* Modules & Their Grouped Units */}
       <div className="flex flex-col gap-8">
-        {filteredModules.length === 0 ? (
+        {filteredModules.length === 0 && filteredSpecialModules.length === 0 ? (
           <div className="p-8 text-center bg-wp-card rounded-2xl border border-border flex flex-col items-center gap-3">
             <Compass className="size-8 text-muted-foreground opacity-50" />
             <p className="font-bold text-foreground">
