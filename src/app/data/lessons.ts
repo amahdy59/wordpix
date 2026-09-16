@@ -37006,9 +37006,9 @@ export const COURSE_MODULES: CourseModule[] = [
     ],
   },
   {
-    id: "module-6",
-    level: 6,
-    levelBadge: "Level 6 \u2014 Islamic Studies",
+    id: "module-islamic",
+    level: 99,
+    levelBadge: "Special Section: Islamic Studies",
     title: "Islamic Studies",
     titleAr: "Islamic Studies",
     description: "Explore vocabulary for Islamic Studies",

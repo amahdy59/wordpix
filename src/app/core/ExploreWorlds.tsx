@@ -276,7 +276,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                       : "bg-wp-card text-foreground hover:bg-muted/50 border-border"
                   }`}
                 >
-                  <span>{t("explore.levelTab", { level: mod.level })}</span>
+                  <span>{mod.level === 99 ? mod.title : t("explore.levelTab", { level: mod.level })}</span>
                   <span
                     className={`text-[10px] px-1.5 py-0.5 rounded-full ${
                       isSelected ? "bg-white/20 text-white" : "bg-primary/10 text-primary"
