@@ -121,7 +121,8 @@ const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
   "first-aid-room": () => import("./units/first-aid-room").then((m) => m.FIRST_AID_ROOM_LEARNING),
   "five-senses": () => import("./units/five-senses").then((m) => m.FIVE_SENSES_LEARNING),
   footwear: () => import("./units/footwear").then((m) => m.FOOTWEAR_LEARNING),
-  forest: () => import("./units/forest").then((m) => m.FOREST_LEARNING),
+  forest: () => import('./units/forest').then((m) => m.FOREST_LEARNING),
+    "hadith-niyyah": () => import('./units/hadith-niyyah').then((m) => m.HADITH_NIYYAH_LEARNING),
   "formal-business-wear": () =>
     import("./units/formal-business-wear").then((m) => m.FORMAL_BUSINESS_WEAR_LEARNING),
   "freelancing-remote-work": () =>

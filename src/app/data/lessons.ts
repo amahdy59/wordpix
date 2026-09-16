@@ -22853,8 +22853,8 @@ export const HADITH_NIYYAH_GROUPS: Lesson[] = [
     name: "Hadith: Niyyah",
     description: "Learn vocabulary from the Hadith of Intention.",
     topicId: "hadith-niyyah-1",
-    wordIds: ["judged", "motive", "rewarded", "attain", "hijrah"],
-    story: "In this section, you will learn about judged, motive, rewarded, attain, hijrah.",
+    wordIds: ["judged", "motive", "intend", "migration", "worldly", "gain", "marry"],
+    story: "In this section, you will learn about judged, motive niyyah, intend, migration hijrah, worldly, gain, marry.",
   }
 ];
 
@@ -22864,7 +22864,7 @@ export const HADITH_NIYYAH_TOPICS = HADITH_NIYYAH_GROUPS.map((g) => ({
   itemsCount: g.wordIds.length,
 }));
 
-export const COURSE_UNITS: Record<string, CourseUnit> = { "hadith-niyyah": { id: "hadith-niyyah", name: "Islamic Studies - Niyyah", description: "Islamic studies and terminology.", topics: HADITH_NIYYAH_TOPICS, groups: HADITH_NIYYAH_GROUPS, wordIds: ["judged", "motive", "rewarded", "attain", "hijrah"] },
+export const COURSE_UNITS: Record<string, CourseUnit> = { "hadith-niyyah": { id: "hadith-niyyah", name: "Islamic Studies - Niyyah", description: "Islamic studies and terminology.", topics: HADITH_NIYYAH_TOPICS, groups: HADITH_NIYYAH_GROUPS, wordIds: ["judged", "motive", "intend", "migration", "worldly", "gain", "marry"] },
   bathroom: {
     id: "bathroom",
     name: "The Bathroom",
@@ -36747,6 +36747,7 @@ export const COURSE_UNITS: Record<string, CourseUnit> = { "hadith-niyyah": { id:
 export interface CourseModule {
   id: string;
   level: number;
+  isSpecialSection?: boolean;
   levelBadge: string;
   title: string;
   titleAr: string;
@@ -37007,7 +37008,8 @@ export const COURSE_MODULES: CourseModule[] = [
   },
   {
     id: "module-islamic",
-    level: 99,
+    level: 0,
+    isSpecialSection: true,
     levelBadge: "Special Section: Islamic Studies",
     title: "Islamic Studies",
     titleAr: "Islamic Studies",

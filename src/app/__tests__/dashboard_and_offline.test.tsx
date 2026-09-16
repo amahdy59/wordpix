@@ -66,7 +66,7 @@ describe("SettingsModal Offline Preloader", () => {
     renderWithProviders(<SettingsModal isOpen={true} onClose={onClose} />);
 
     expect(screen.getByText(/Offline Readiness & Storage/i)).toBeInTheDocument();
-    expect(screen.getByText(/Load vocabulary \(200 units\)/i)).toBeInTheDocument();
+    expect(screen.getByText(/Load vocabulary \(201 units\)/i)).toBeInTheDocument();
 
     const preloadBtn = screen.getByRole("button", { name: /Preload All Units/i });
     expect(preloadBtn).toBeInTheDocument();
