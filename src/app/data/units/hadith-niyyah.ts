@@ -1,0 +1,67 @@
+import type { VocabularyItem } from "../lessons";
+
+export const VOCABULARY: VocabularyItem[] = [
+  {
+    id: "judged",
+    label: "judged",
+    phonetic: "/dʒʌdʒd/",
+    cefr: "B1",
+    img: "/word-images/islamic-studies/judged.avif",
+    description: "Evaluated after careful thought. Example: Actions are judged by intentions.",
+    topic: "hadith-niyyah",
+  },
+  {
+    id: "motive",
+    label: "motive / niyyah",
+    phonetic: "/ˈmoʊtɪv/",
+    cefr: "B1",
+    img: "/word-images/islamic-studies/motive.avif",
+    description: "The reason behind an action; niyyah is the intention held in the heart.",
+    topic: "hadith-niyyah",
+  },
+  {
+    id: "intend",
+    label: "intend",
+    phonetic: "/ɪnˈtɛnd/",
+    cefr: "B1",
+    img: "/word-images/islamic-studies/intend.avif",
+    description: "To have something as a plan or purpose. Example: I intend to learn English.",
+    topic: "hadith-niyyah",
+  },
+  {
+    id: "migration",
+    label: "migration / hijrah",
+    phonetic: "/maɪˈɡreɪʃən/",
+    cefr: "B1",
+    img: "/word-images/islamic-studies/migration.avif",
+    description: "Moving to another place to live; hijrah can mean migration for faith.",
+    topic: "hadith-niyyah",
+  },
+  {
+    id: "worldly",
+    label: "worldly",
+    phonetic: "/ˈwɜːrldli/",
+    cefr: "B1",
+    img: "/word-images/islamic-studies/worldly.avif",
+    description: "Related to material life rather than spiritual matters. Example: worldly gain.",
+    topic: "hadith-niyyah",
+  },
+  {
+    id: "gain",
+    label: "gain",
+    phonetic: "/ɡeɪn/",
+    cefr: "B1",
+    img: "/word-images/islamic-studies/gain.avif",
+    description: "To obtain something useful; also, something obtained. Example: gain knowledge.",
+    topic: "hadith-niyyah",
+  },
+  {
+    id: "marry",
+    label: "marry",
+    phonetic: "/ˈmæri/",
+    cefr: "B1",
+    img: "/word-images/islamic-studies/marry.avif",
+    description: "To become someone's spouse through a legal or religious union.",
+    topic: "hadith-niyyah",
+  }
+];

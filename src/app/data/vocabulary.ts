@@ -98,6 +98,7 @@ const LOADERS: Record<string, () => Promise<VocabularyItem[]>> = {
   "five-senses": () => import("./units/five-senses").then((m) => m.VOCABULARY),
   footwear: () => import("./units/footwear").then((m) => m.VOCABULARY),
   forest: () => import("./units/forest").then((m) => m.VOCABULARY),
+  "hadith-niyyah": () => import("./units/hadith-niyyah").then((m) => m.VOCABULARY),
   "formal-business-wear": () => import("./units/formal-business-wear").then((m) => m.VOCABULARY),
   "freelancing-remote-work": () =>
     import("./units/freelancing-remote-work").then((m) => m.VOCABULARY),

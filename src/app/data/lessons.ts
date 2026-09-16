@@ -22847,7 +22847,24 @@ export const SPACE_CENTER_TOPICS = SPACE_CENTER_GROUPS.map((g) => ({
   itemsCount: g.wordIds.length,
 }));
 
-export const COURSE_UNITS: Record<string, CourseUnit> = {
+export const HADITH_NIYYAH_GROUPS: Lesson[] = [
+  {
+    id: "hadith-niyyah-1",
+    name: "Hadith: Niyyah",
+    description: "Learn vocabulary from the Hadith of Intention.",
+    topicId: "hadith-niyyah-1",
+    wordIds: ["judged", "motive", "rewarded", "attain", "hijrah"],
+    story: "In this section, you will learn about judged, motive, rewarded, attain, hijrah.",
+  }
+];
+
+export const HADITH_NIYYAH_TOPICS = HADITH_NIYYAH_GROUPS.map((g) => ({
+  id: g.id,
+  name: g.name,
+  itemsCount: g.wordIds.length,
+}));
+
+export const COURSE_UNITS: Record<string, CourseUnit> = { "hadith-niyyah": { id: "hadith-niyyah", name: "Islamic Studies - Niyyah", description: "Islamic studies and terminology.", topics: HADITH_NIYYAH_TOPICS, groups: HADITH_NIYYAH_GROUPS, wordIds: ["judged", "motive", "rewarded", "attain", "hijrah"] },
   bathroom: {
     id: "bathroom",
     name: "The Bathroom",
@@ -36723,6 +36740,10 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
   },
 };
 
+
+
+
+
 export interface CourseModule {
   id: string;
   level: number;
@@ -36984,6 +37005,15 @@ export const COURSE_MODULES: CourseModule[] = [
       "space-center",
     ],
   },
+  {
+    id: "module-6",
+    level: 6,
+    levelBadge: "Level 6 \u2014 Islamic Studies",
+    title: "Islamic Studies",
+    titleAr: "Islamic Studies",
+    description: "Explore vocabulary for Islamic Studies",
+    unitIds: ["hadith-niyyah"],
+  }
 ];
 
 export const DEFAULT_UNIT_ID = "bedroom";
