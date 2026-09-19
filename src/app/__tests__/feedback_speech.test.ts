@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { buildFeedbackSequence, buildFeedbackSpeech } from "../exercises/feedbackSpeech";
+import {
+  buildFeedbackSequence,
+  buildFeedbackSpeech,
+  CORRECT_FEEDBACK,
+  INCORRECT_FEEDBACK,
+} from "../exercises/feedbackSpeech";
 
 describe("brief spoken feedback", () => {
   it("keeps correct feedback short and encouraging", () => {
@@ -16,27 +21,48 @@ describe("brief spoken feedback", () => {
       variant: 0,
     });
 
-    expect(line).toBe("Not quite.");
+    expect(line).toBe("Try again.");
     expect(line).not.toMatch(/faucet|mirror|this is|that is/i);
   });
 
   it("rotates brief praise so repeated questions do not grate", () => {
     const lines = new Set(
-      Array.from({ length: 5 }, (_, variant) =>
+      Array.from({ length: CORRECT_FEEDBACK.length }, (_, variant) =>
         buildFeedbackSpeech({ correct: true, targetLabel: "Faucet", variant })
       )
     );
     expect(lines).toEqual(
-      new Set(["Excellent!", "Great job!", "Well done!", "Nice work!", "Exactly!"])
+      new Set([
+        "Excellent!",
+        "Great job!",
+        "Good job!",
+        "Well done!",
+        "Nice work!",
+        "That's right!",
+        "You got it!",
+        "Correct!",
+        "Great work!",
+        "Nicely done!",
+        "Exactly!",
+      ])
     );
   });
 
   it("rotates kind correction phrases", () => {
     expect(
-      Array.from({ length: 3 }, (_, variant) =>
+      Array.from({ length: INCORRECT_FEEDBACK.length }, (_, variant) =>
         buildFeedbackSpeech({ correct: false, targetLabel: "Faucet", variant })
       )
-    ).toEqual(["Not quite.", "Almost.", "Try again."]);
+    ).toEqual([
+      "Try again.",
+      "Not quite.",
+      "Almost.",
+      "One more try.",
+      "So close!",
+      "Keep trying.",
+      "Have another go.",
+      "Let's try again.",
+    ]);
   });
 
   it("builds one audio segment so feedback remains gapless", () => {
@@ -47,7 +73,7 @@ describe("brief spoken feedback", () => {
         chosenLabel: "Eggs",
         variant: 2,
       })
-    ).toEqual(["Try again."]);
+    ).toEqual(["Almost."]);
   });
 
   it("survives any counter a caller passes", () => {

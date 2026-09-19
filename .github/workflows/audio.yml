@@ -21,6 +21,7 @@ on:
         type: choice
         default: words
         options:
+          - feedback
           - words
           - materials
           - lexicon

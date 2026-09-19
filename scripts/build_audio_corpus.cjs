@@ -12,6 +12,8 @@
  *
  *   words     — distinct vocabulary labels. The core teaching audio, played
  *               constantly. Generate first.
+ *   feedback  — brief correct/incorrect response phrases. Kept in a shared
+ *               catalog with the app so the requested CDN hashes always exist.
  *   materials — passage, comprehension questions, phrases, dialogue,
  *               corrections and cloze from the Figma learning materials.
  *   lexicon   — dictionary example sentences and collocations. The bulk of the
@@ -67,7 +69,10 @@ const requestedUnits = (() => {
 })();
 
 function collect() {
-  const tiers = { words: [], materials: [], lexicon: [], stories: [] };
+  const tiers = { feedback: [], words: [], materials: [], lexicon: [], stories: [] };
+
+  const feedback = JSON.parse(read("src/app/exercises/feedbackPhrases.json"));
+  tiers.feedback.push(...feedback.correct, ...feedback.incorrect);
 
   // Vocabulary is one file per unit (src/app/data/units/<id>.ts)
   const unitsDir = path.join(ROOT, "src/app/data/units");

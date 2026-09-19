@@ -1,3 +1,5 @@
+import feedbackPhrases from "./feedbackPhrases.json";
+
 /**
  * Short spoken outcome feedback after an answer.
  *
@@ -8,11 +10,9 @@
  * identify a missed target without forcing extra speech on every learner.
  */
 
-/** Openers for a correct answer, rotated so repetition does not grate. */
-const PRAISE = ["Excellent!", "Great job!", "Well done!", "Nice work!", "Exactly!"] as const;
-
-/** Openers for a wrong answer. Kind, brief, and never scolding. */
-const CORRECTION = ["Not quite.", "Almost.", "Try again."] as const;
+/** Shared with the audio corpus builder so text and content hashes cannot drift. */
+export const CORRECT_FEEDBACK = feedbackPhrases.correct;
+export const INCORRECT_FEEDBACK = feedbackPhrases.incorrect;
 
 export interface FeedbackSpeechInput {
   correct: boolean;
@@ -35,10 +35,10 @@ export interface FeedbackSpeechInput {
 
 export function buildFeedbackSpeech({ correct, variant = 0 }: FeedbackSpeechInput): string {
   const pick = <T>(list: readonly T[]): T => list[Math.abs(Math.floor(variant)) % list.length] as T;
-  return correct ? pick(PRAISE) : pick(CORRECTION);
+  return correct ? pick(CORRECT_FEEDBACK) : pick(INCORRECT_FEEDBACK);
 }
 
 export function buildFeedbackSequence({ correct, variant = 0 }: FeedbackSpeechInput): string[] {
   const pick = <T>(list: readonly T[]): T => list[Math.abs(Math.floor(variant)) % list.length] as T;
-  return [correct ? pick(PRAISE) : pick(CORRECTION)];
+  return [correct ? pick(CORRECT_FEEDBACK) : pick(INCORRECT_FEEDBACK)];
 }

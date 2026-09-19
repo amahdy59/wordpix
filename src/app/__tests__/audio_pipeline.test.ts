@@ -54,6 +54,9 @@ describe("audio ledger", () => {
  */
 describe("audio generation workflow", () => {
   const workflow = read(".github/workflows/audio.yml");
+  const feedbackGenerator = read("scripts/generate_feedback_audio.cjs");
+  const corpusGenerator = read("scripts/generate_audio.cjs");
+  const feedbackUploader = read("scripts/upload_feedback_audio.cjs");
 
   it("never runs on push or pull request", () => {
     expect(workflow).not.toMatch(/^\s*push:/m);
@@ -77,5 +80,20 @@ describe("audio generation workflow", () => {
 
   it("serialises runs so two of them cannot both write the ledger", () => {
     expect(workflow).toMatch(/concurrency:/);
+  });
+
+  it("offers a bounded feedback-only generation tier", () => {
+    expect(workflow).toMatch(/- feedback/);
+    expect(workflow).toMatch(/--tier=\$TIER/);
+  });
+
+  it("generates only complete standalone feedback phrases", () => {
+    expect(feedbackGenerator).toContain("feedbackPhrases.json");
+    expect(feedbackGenerator).not.toMatch(/This is an?|These are|The word is/);
+  });
+
+  it("never deletes an audio object from R2", () => {
+    expect(corpusGenerator).not.toMatch(/r2\.remove\(|request\(["']DELETE["']/);
+    expect(feedbackUploader).not.toMatch(/r2\.remove\(|request\(["']DELETE["']/);
   });
 });
