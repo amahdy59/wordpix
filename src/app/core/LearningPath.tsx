@@ -1,0 +1,211 @@
+import { memo, useMemo } from "react";
+import { ArrowRight, BookOpen, CheckCircle2, Library, Route, Sparkles } from "lucide-react";
+import type { Action } from "../types";
+import { COURSE_UNITS, type CourseUnit } from "../data/lessons";
+import { FOUNDATION_SEQUENCE } from "../data/curriculumSequence";
+import { getUnitCurriculumDesign } from "../learning/curriculumModel";
+import { useProgress } from "../data/progress";
+import { useLearner } from "../context/LearnerContext";
+import { useI18n } from "../context/I18nContext";
+import { Badge, ProgressBar } from "../shared";
+
+interface Props {
+  dispatch: React.Dispatch<Action>;
+}
+
+interface PathUnit {
+  unit: CourseUnit;
+  mastered: number;
+  percent: number;
+}
+
+const PHASES = [
+  { key: "learn.phaseFoundations", start: 0, end: 6 },
+  { key: "learn.phasePeoplePlaces", start: 6, end: 12 },
+  { key: "learn.phaseInteraction", start: 12, end: FOUNDATION_SEQUENCE.length },
+] as const;
+
+export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
+  const { t } = useI18n();
+  const { progress } = useProgress();
+  const { state: learnerState } = useLearner();
+
+  const pathUnits = useMemo<PathUnit[]>(
+    () =>
+      FOUNDATION_SEQUENCE.map((unitId) => COURSE_UNITS[unitId])
+        .filter((unit): unit is CourseUnit => Boolean(unit))
+        .map((unit) => {
+          const mastered = unit.wordIds.filter(
+            (wordId) => (progress.wordMastery[wordId] ?? 0) >= 3
+          ).length;
+          return {
+            unit,
+            mastered,
+            percent: unit.wordIds.length ? Math.round((mastered / unit.wordIds.length) * 100) : 0,
+          };
+        }),
+    [progress.wordMastery]
+  );
+
+  const hasStartedLearning = Object.keys(progress.wordMemory).length > 0;
+  const preferredUnit = COURSE_UNITS[learnerState.preferences.startingUnitId];
+  const nextPathUnit = pathUnits.find((item) => item.percent < 100) ?? pathUnits.at(-1);
+  const recommendedUnit = !hasStartedLearning && preferredUnit ? preferredUnit : nextPathUnit?.unit;
+  const totalWords = pathUnits.reduce((sum, item) => sum + item.unit.wordIds.length, 0);
+  const masteredWords = pathUnits.reduce((sum, item) => sum + item.mastered, 0);
+  const pathPercent = totalWords ? Math.round((masteredWords / totalWords) * 100) : 0;
+
+  if (!recommendedUnit) return null;
+
+  return (
+    <div className="mx-auto flex w-full max-w-5xl flex-col gap-6 p-0 sm:p-2 lg:p-4">
+      <header className="grid gap-5 rounded-3xl border border-primary/25 bg-wp-card p-5 shadow-wp-sm sm:p-6 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div className="min-w-0">
+          <div className="mb-2 flex items-center gap-2 text-xs font-bold text-primary">
+            <Route className="size-4" aria-hidden />
+            <span>{t("learn.pathBadge")}</span>
+          </div>
+          <h1 className="font-sans text-2xl font-black leading-tight text-foreground sm:text-3xl">
+            {t("learn.title")}
+          </h1>
+          <p className="mt-2 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
+            {t("learn.subtitle")}
+          </p>
+          <div className="mt-4 max-w-xl">
+            <ProgressBar
+              progressPercent={pathPercent}
+              label={t("learn.foundationProgress")}
+              labelRight={`${pathPercent}%`}
+              ariaLabel={t("learn.foundationProgressAria", {
+                mastered: masteredWords,
+                total: totalWords,
+              })}
+            />
+          </div>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "library" })}
+          className="flex min-h-[48px] items-center justify-center gap-2 rounded-xl border border-border bg-background px-5 py-3 text-sm font-bold text-foreground hover:border-primary/40 hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+        >
+          <Library className="size-5" aria-hidden />
+          <span>{t("learn.browseLibrary")}</span>
+        </button>
+      </header>
+
+      <section
+        aria-labelledby="recommended-heading"
+        className="grid gap-5 rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 sm:p-6 lg:grid-cols-[1fr_auto] lg:items-center"
+      >
+        <div>
+          <div className="mb-2 flex items-center gap-2 text-xs font-bold text-primary">
+            <Sparkles className="size-4" aria-hidden />
+            <span>{t("learn.recommended")}</span>
+          </div>
+          <h2 id="recommended-heading" className="text-xl font-black text-foreground sm:text-2xl">
+            {recommendedUnit.name}
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            {getUnitCurriculumDesign(recommendedUnit).outcome}
+          </p>
+        </div>
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: recommendedUnit.id })}
+          className="flex min-h-[52px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-md hover:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary lg:w-auto"
+        >
+          <BookOpen className="size-5" aria-hidden />
+          <span>{t("learn.continueUnit")}</span>
+          <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+        </button>
+      </section>
+
+      <div className="flex flex-col gap-8">
+        {PHASES.map((phase, phaseIndex) => {
+          const units = pathUnits.slice(phase.start, phase.end);
+          return (
+            <section key={phase.key} aria-labelledby={`path-phase-${phaseIndex}`}>
+              <div className="mb-3 flex items-baseline justify-between gap-3">
+                <h2
+                  id={`path-phase-${phaseIndex}`}
+                  className="font-sans text-lg font-black text-foreground sm:text-xl"
+                >
+                  {t(phase.key)}
+                </h2>
+                <span className="text-xs font-semibold text-muted-foreground">
+                  {t("learn.stepsRange", { start: phase.start + 1, end: phase.end })}
+                </span>
+              </div>
+
+              <ol className="grid gap-3">
+                {units.map(({ unit, mastered, percent }, index) => {
+                  const step = phase.start + index + 1;
+                  const design = getUnitCurriculumDesign(unit);
+                  const isCurrent = unit.id === recommendedUnit.id;
+                  const isComplete = percent === 100;
+
+                  return (
+                    <li key={unit.id}>
+                      <button
+                        type="button"
+                        onClick={() =>
+                          dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
+                        }
+                        className={`grid min-h-[96px] w-full grid-cols-[auto_1fr_auto] items-center gap-3 rounded-2xl border p-4 text-start transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:gap-4 ${
+                          isCurrent
+                            ? "border-primary/50 bg-primary/10 shadow-wp-xs"
+                            : "border-border bg-wp-card hover:border-primary/35 hover:bg-muted/30"
+                        }`}
+                        aria-current={isCurrent ? "step" : undefined}
+                      >
+                        <span
+                          className={`flex size-11 shrink-0 items-center justify-center rounded-xl text-sm font-black ${
+                            isComplete
+                              ? "bg-wp-green text-wp-text-on-green"
+                              : isCurrent
+                                ? "bg-primary text-primary-foreground"
+                                : "bg-muted text-foreground"
+                          }`}
+                        >
+                          {isComplete ? <CheckCircle2 className="size-5" aria-hidden /> : step}
+                        </span>
+
+                        <span className="min-w-0">
+                          <span className="flex flex-wrap items-center gap-2">
+                            <span className="font-sans text-sm font-black text-foreground sm:text-base">
+                              {unit.name}
+                            </span>
+                            <Badge variant="primary" size="sm">
+                              {design.cefr}
+                            </Badge>
+                          </span>
+                          <span className="mt-1 line-clamp-2 block text-xs leading-relaxed text-muted-foreground sm:text-sm">
+                            {design.outcome}
+                          </span>
+                          {(mastered > 0 || isCurrent) && (
+                            <span className="mt-2 block text-xs font-semibold text-primary">
+                              {t("learn.wordsMastered", {
+                                mastered,
+                                total: unit.wordIds.length,
+                              })}
+                            </span>
+                          )}
+                        </span>
+
+                        <ArrowRight
+                          className="size-5 shrink-0 text-muted-foreground rtl:rotate-180"
+                          aria-hidden
+                        />
+                      </button>
+                    </li>
+                  );
+                })}
+              </ol>
+            </section>
+          );
+        })}
+      </div>
+    </div>
+  );
+});

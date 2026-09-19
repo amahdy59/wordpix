@@ -30,10 +30,11 @@ export type RouteIntent =
 
 const STATIC_ROUTES: Record<string, { title: string; getScreen: () => Screen }> = {
   "#/home": { title: "WordPix — Home", getScreen: () => ({ id: "home" }) },
-  "#/explore": { title: "WordPix — Explore Worlds", getScreen: () => ({ id: "explore" }) },
-  "#/learn": { title: "WordPix — Explore Worlds", getScreen: () => ({ id: "explore" }) },
-  "#/practice": { title: "WordPix — Daily Review", getScreen: () => ({ id: "practice" }) },
-  "#/review": { title: "WordPix — Daily Review", getScreen: () => ({ id: "practice" }) },
+  "#/explore": { title: "WordPix — Learning Path", getScreen: () => ({ id: "explore" }) },
+  "#/learn": { title: "WordPix — Learning Path", getScreen: () => ({ id: "explore" }) },
+  "#/library": { title: "WordPix — Vocabulary Library", getScreen: () => ({ id: "library" }) },
+  "#/practice": { title: "WordPix — Skill Practice", getScreen: () => ({ id: "practice" }) },
+  "#/review": { title: "WordPix — Daily Review", getScreen: () => ({ id: "review" }) },
   "#/profile": { title: "WordPix — Learner Profile", getScreen: () => ({ id: "profile" }) },
   "#/skills": { title: "WordPix — Skill Exercises", getScreen: () => ({ id: "skill-hub" }) },
   "#/onboarding": {
@@ -63,8 +64,10 @@ const SKILL_EXERCISE_PATTERN = /^#\/skills\/([a-z-]+)$/;
 export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "onboarding") return { hash: "#/onboarding", title: "WordPix — Onboarding" };
   if (screen.id === "home") return { hash: "#/home", title: "WordPix — Home" };
-  if (screen.id === "explore") return { hash: "#/explore", title: "WordPix — Explore Worlds" };
-  if (screen.id === "practice") return { hash: "#/practice", title: "WordPix — Daily Review" };
+  if (screen.id === "explore") return { hash: "#/learn", title: "WordPix — Learning Path" };
+  if (screen.id === "library") return { hash: "#/library", title: "WordPix — Vocabulary Library" };
+  if (screen.id === "practice") return { hash: "#/practice", title: "WordPix — Skill Practice" };
+  if (screen.id === "review") return { hash: "#/review", title: "WordPix — Daily Review" };
   if (screen.id === "profile") return { hash: "#/profile", title: "WordPix — Learner Profile" };
   if (screen.id === "lesson-entry") {
     const world = COURSE_UNITS[screen.unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];

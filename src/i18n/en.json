@@ -8,8 +8,9 @@
   "nav": {
     "label": "Main navigation",
     "home": "Home",
-    "explore": "Lessons",
-    "practice": "Review",
+    "explore": "Learn",
+    "library": "Library",
+    "practice": "Practice",
     "profile": "Profile",
     "settings": "Settings"
   },
@@ -26,7 +27,7 @@
     "gotIt": "Got It",
     "listen": "Listen",
     "done": "Done",
-    "returnToExplore": "Return to Explore Worlds"
+    "returnToExplore": "Return to learning path"
   },
   "auth": {
     "email": "Email address",
@@ -134,21 +135,40 @@
     "retentionPractice": "You have {count} vocabulary items scheduled for retention practice based on your forgetting curve.",
     "excellentRetention": "Excellent memory retention! You have reviewed all active vocabulary items for today."
   },
+  "learn": {
+    "pathBadge": "Guided English pathway",
+    "title": "Your learning path",
+    "subtitle": "Build useful English step by step. Each unit prepares you for the language and final task in the next one.",
+    "foundationProgress": "Foundation pathway",
+    "foundationProgressAria": "Foundation progress: {mastered} of {total} words mastered",
+    "browseLibrary": "Browse vocabulary library",
+    "recommended": "Recommended next",
+    "continueUnit": "Open recommended unit",
+    "phaseFoundations": "Core foundations",
+    "phasePeoplePlaces": "People and familiar places",
+    "phaseInteraction": "Everyday interaction",
+    "stepsRange": "Steps {start}–{end}",
+    "wordsMastered": "{mastered} of {total} words mastered"
+  },
   "explore": {
-    "title": "Explore Worlds",
+    "title": "Vocabulary Library",
     "complete": "Complete",
     "inProgress": "In Progress",
     "locked": "Locked",
     "wordsCount": "words",
-    "pathwayBadge": "Structured Curriculum Pathway",
-    "pageTitle": "5-Level Progressive Mastery",
-    "pageSubtitle": "Step through 5 progressive levels from everyday essentials to advanced specialist scenarios.",
-    "curriculumMastery": "Curriculum Mastery",
+    "pathwayBadge": "Optional topic library",
+    "pageTitle": "Browse English by topic",
+    "pageSubtitle": "Explore themed vocabulary collections at your own pace. Your guided sequence remains in Learn.",
+    "curriculumMastery": "Library mastery",
     "masteryFraction": "{mastered} / {total} words mastered",
     "searchLabel": "Search units or vocabulary",
     "searchPlaceholder": "Search units, topics, or words…",
-    "allLevels": "All Levels",
-    "levelTab": "Level {level}",
+    "allLevels": "All collections",
+    "levelTab": "Collection {level}",
+    "collectionNavigation": "Filter vocabulary collections",
+    "collectionBadge": "Collection {number}",
+    "collectionProgress": "Collection {number} progress",
+    "collectionProgressAria": "Collection {number} progress: {percent}%",
     "noUnitsFound": "No units found matching “{query}”",
     "clearSearch": "Clear search filter",
     "moduleStats": "{units} Units · {words} Vocabulary Items",
@@ -553,7 +573,8 @@
   "releaseNotes": {
     "whatsNewInVersion": "What's New in v{version}",
     "dismiss": "Dismiss release notes",
-    "gotIt": "Got it!"
+    "gotIt": "Got it!",
+    "showDetails": "Show release details"
   },
   "masteryReview": {
     "badge": "Daily vocabulary review",

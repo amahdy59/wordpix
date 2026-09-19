@@ -18,6 +18,31 @@ function seedStorage(lang: "en" | "ar" = "en") {
 }
 
 test.describe("Multi-Viewport RTL & Dark Mode Matrix", () => {
+  test("keeps navigation readable at 320px and the former 1024px rail breakpoint", async ({
+    page,
+  }) => {
+    await seedStorage("en")(page);
+
+    await page.setViewportSize({ width: 320, height: 720 });
+    await page.goto("/");
+    await expect(page.getByRole("navigation", { name: "Main navigation" })).toBeVisible();
+    await expect(page.getByRole("button", { name: "Library", exact: true })).toBeVisible();
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 2)
+    ).toBe(false);
+
+    await page.setViewportSize({ width: 1024, height: 768 });
+    await expect(page.getByRole("complementary", { name: "Sidebar navigation" })).toBeVisible();
+    await expect(page.getByText("System", { exact: true })).toBeVisible();
+    const sidebarWidth = await page
+      .getByRole("complementary", { name: "Sidebar navigation" })
+      .evaluate((element) => element.getBoundingClientRect().width);
+    expect(sidebarWidth).toBe(240);
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 2)
+    ).toBe(false);
+  });
+
   test("loads cleanly, verifies no horizontal overflow, and tests RTL mirroring", async ({
     page,
   }) => {

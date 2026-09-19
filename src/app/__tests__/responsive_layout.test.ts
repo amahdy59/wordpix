@@ -65,6 +65,15 @@ describe("AppShell responsive components", () => {
     expect(source).toMatch(/sticky/);
     expect(source).toMatch(/top-0/);
     expect(source).toMatch(/h-dvh/);
+    expect(source).toMatch(/w-\[240px\]/);
+    expect(source).not.toMatch(/w-\[80px\]/);
+  });
+
+  it("keeps five mobile destinations flexible at 320px", () => {
+    const source = stripComments(read("shared/BottomTabBar.tsx"));
+    expect(source).toMatch(/min-w-\[56px\]/);
+    expect(source).toMatch(/flex-1/);
+    expect(source).not.toMatch(/w-\[72px\]/);
   });
 
   it("MobileHeader is sticky at viewport top on mobile", () => {
@@ -99,10 +108,10 @@ describe("Card Grid Responsive Aspect Ratios", () => {
 describe("HomeDashboard 2-Column Responsive Desktop Grid", () => {
   const source = stripComments(read("core/HomeDashboard.tsx"));
 
-  it("adapts from single column on mobile to 12-column grid on lg+ screens", () => {
-    expect(source).toMatch(/grid\s+grid-cols-1\s+lg:grid-cols-12/);
-    expect(source).toMatch(/lg:col-span-7/);
-    expect(source).toMatch(/lg:col-span-5/);
+  it("keeps the dashboard single-column beside the 1024px sidebar and splits at xl", () => {
+    expect(source).toMatch(/grid\s+grid-cols-1\s+xl:grid-cols-12/);
+    expect(source).toMatch(/xl:col-span-7/);
+    expect(source).toMatch(/xl:col-span-5/);
   });
 });
 

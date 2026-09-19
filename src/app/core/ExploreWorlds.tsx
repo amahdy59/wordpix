@@ -173,14 +173,14 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
       variants={staggerContainer}
       initial="hidden"
       animate="visible"
-      className="flex flex-col gap-6 max-w-5xl mx-auto w-full p-4 sm:p-6 lg:p-8"
+      className="flex flex-col gap-6 max-w-5xl mx-auto w-full p-0 sm:p-2 lg:p-4"
     >
       {/* Page Header with Course Level Summary */}
       <motion.header variants={staggerItem} className="flex flex-col gap-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-wp-card border-2 border-primary/30 p-6 rounded-3xl shadow-wp-md">
           <div className="flex flex-col gap-1.5">
             <div className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider">
-              <Compass className="size-4.5" />
+              <Library className="size-4.5" />
               <span>{t("explore.pathwayBadge")}</span>
             </div>
             <h1 className="font-sans font-black text-foreground text-2xl sm:text-3xl leading-tight">
@@ -209,9 +209,9 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
         </div>
 
         {/* Search & Level Quick Filter Bar */}
-        <div className="flex flex-col md:flex-row items-stretch md:items-center gap-3 justify-between">
+        <div className="flex flex-col items-stretch gap-3">
           {/* Search Input */}
-          <div className="relative flex-1 max-w-md">
+          <div className="relative w-full">
             <label htmlFor={searchInputId} className="sr-only">
               {t("explore.searchLabel")}
             </label>
@@ -238,17 +238,16 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
             )}
           </div>
 
-          {/* Level Filter Tabs */}
+          {/* Collection filters are buttons, not tabs: they refine this view. */}
           <div
-            role="tablist"
+            role="group"
             id={tabListId}
-            aria-label="Course levels navigation"
+            aria-label={t("explore.collectionNavigation")}
             className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none snap-x"
           >
             <button
               type="button"
-              role="tab"
-              aria-selected={selectedModuleId === "all"}
+              aria-pressed={selectedModuleId === "all"}
               onClick={() => setSelectedModuleId("all")}
               className={`min-h-[44px] px-3.5 py-2 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue ${
                 selectedModuleId === "all"
@@ -263,15 +262,13 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
             </button>
 
             {COURSE_MODULES.filter((m) => !m.isSpecialSection).map((mod) => {
-              const stat = moduleStats[mod.id] || { percent: 0 };
               const isSelected = selectedModuleId === mod.id;
 
               return (
                 <button
                   key={mod.id}
                   type="button"
-                  role="tab"
-                  aria-selected={isSelected}
+                  aria-pressed={isSelected}
                   onClick={() => setSelectedModuleId(mod.id)}
                   className={`min-h-[44px] px-3.5 py-2 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue ${
                     isSelected
@@ -280,27 +277,18 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                   }`}
                 >
                   <span>{t("explore.levelTab", { level: mod.level })}</span>
-                  <span
-                    className={`text-[10px] px-1.5 py-0.5 rounded-full ${
-                      isSelected ? "bg-white/20 text-white" : "bg-primary/10 text-primary"
-                    }`}
-                  >
-                    {stat.percent}%
-                  </span>
                 </button>
               );
             })}
 
             {COURSE_MODULES.filter((m) => m.isSpecialSection).map((mod) => {
-              const stat = moduleStats[mod.id] || { percent: 0 };
               const isSelected = selectedModuleId === mod.id;
 
               return (
                 <button
                   key={mod.id}
                   type="button"
-                  role="tab"
-                  aria-selected={isSelected}
+                  aria-pressed={isSelected}
                   onClick={() => setSelectedModuleId(mod.id)}
                   className={`min-h-[44px] px-3.5 py-2 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue ${
                     isSelected
@@ -309,13 +297,6 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                   }`}
                 >
                   <span>{mod.title}</span>
-                  <span
-                    className={`text-[10px] px-1.5 py-0.5 rounded-full ${
-                      isSelected ? "bg-white/20 text-white" : "bg-primary/10 text-primary"
-                    }`}
-                  >
-                    {stat.percent}%
-                  </span>
                 </button>
               );
             })}
@@ -370,7 +351,9 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                     <div className="flex flex-col gap-1">
                       <div className="flex items-center gap-2 flex-wrap">
                         <Badge variant="primary" size="sm">
-                          {module.levelBadge}
+                          {module.isSpecialSection
+                            ? module.title
+                            : t("explore.collectionBadge", { number: module.level })}
                         </Badge>
                         <span className="text-xs font-semibold text-muted-foreground">
                           {t("explore.moduleStats", {
@@ -413,9 +396,12 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                   <div className="px-2">
                     <ProgressBar
                       progressPercent={stats.percent}
-                      label={`Level ${module.level} Progress`}
+                      label={t("explore.collectionProgress", { number: module.level })}
                       labelRight={`${stats.percent}% (${stats.masteredWords}/${stats.totalWords} words)`}
-                      ariaLabel={`Level ${module.level} progress: ${stats.percent}%`}
+                      ariaLabel={t("explore.collectionProgressAria", {
+                        number: module.level,
+                        percent: stats.percent,
+                      })}
                     />
                   </div>
 

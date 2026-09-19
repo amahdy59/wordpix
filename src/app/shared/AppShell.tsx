@@ -13,8 +13,8 @@ interface Props {
 /**
  * Responsive application shell for all main tabbed screens.
  *
- * Mobile  (<768px): Sticky mobile header, bottom tab bar pinned at viewport bottom, safe-area aware.
- * Desktop (768px+): Adaptive sidebar on the left.
+ * Mobile/tablet (<1024px): Sticky header and safe-area-aware bottom navigation.
+ * Desktop (1024px+): Fully labelled sidebar; no intermediate clipped icon rail.
  */
 export const AppShell = memo(function AppShell({ activeTab, dispatch, children }: Props) {
   return (

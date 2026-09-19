@@ -8,8 +8,9 @@
   "nav": {
     "label": "التنقل الرئيسي",
     "home": "الرئيسية",
-    "explore": "الدروس",
-    "practice": "المراجعة",
+    "explore": "التعلّم",
+    "library": "المكتبة",
+    "practice": "التدريب",
     "profile": "الملف الشخصي",
     "settings": "الإعدادات"
   },
@@ -26,7 +27,7 @@
     "gotIt": "فهمت ذلك",
     "listen": "استمع",
     "done": "تم",
-    "returnToExplore": "العودة إلى استكشاف العوالم"
+    "returnToExplore": "العودة إلى مسار التعلّم"
   },
   "auth": {
     "email": "البريد الإلكتروني",
@@ -134,21 +135,40 @@
     "retentionPractice": "لديك {count} مفردة مجدولة للتمرين بهدف تعزيز التذكر والحفظ.",
     "excellentRetention": "ذاكرة ممتازة! لقد راجعت جميع مفرداتك المقررة لهذا اليوم."
   },
+  "learn": {
+    "pathBadge": "مسار إنجليزي موجّه",
+    "title": "مسار تعلّمك",
+    "subtitle": "ابنِ لغتك الإنجليزية المفيدة خطوة بخطوة. تهيئك كل وحدة للغة والمهمة النهائية في الوحدة التالية.",
+    "foundationProgress": "المسار التأسيسي",
+    "foundationProgressAria": "تقدم المسار التأسيسي: أتقنت {mastered} من {total} كلمة",
+    "browseLibrary": "تصفح مكتبة المفردات",
+    "recommended": "الخطوة التالية المقترحة",
+    "continueUnit": "افتح الوحدة المقترحة",
+    "phaseFoundations": "الأسس الرئيسية",
+    "phasePeoplePlaces": "الأشخاص والأماكن المألوفة",
+    "phaseInteraction": "التفاعل اليومي",
+    "stepsRange": "الخطوات {start}–{end}",
+    "wordsMastered": "أتقنت {mastered} من {total} كلمة"
+  },
   "explore": {
-    "title": "استكشف العوالم",
+    "title": "مكتبة المفردات",
     "complete": "مكتمل",
     "inProgress": "قيد التقدم",
     "locked": "مغلق",
     "wordsCount": "كلمة",
-    "pathwayBadge": "مسار المنهج المنظم",
-    "pageTitle": "إتقان تدريجي من 5 مستويات",
-    "pageSubtitle": "تدرج عبر 5 مستويات من الأساسيات اليومية وحتى السيناريوهات التخصصية المتقدمة.",
-    "curriculumMastery": "إتقان المنهج",
+    "pathwayBadge": "مكتبة مواضيع اختيارية",
+    "pageTitle": "تصفح الإنجليزية حسب الموضوع",
+    "pageSubtitle": "استكشف مجموعات المفردات حسب الموضوع وبالسرعة التي تناسبك. يبقى مسارك الموجّه في قسم التعلّم.",
+    "curriculumMastery": "إتقان المكتبة",
     "masteryFraction": "{mastered} / {total} كلمة متقنة",
     "searchLabel": "ابحث عن وحدة أو مفردات",
     "searchPlaceholder": "ابحث عن وحدات، مواضيع، أو كلمات…",
-    "allLevels": "جميع المستويات",
-    "levelTab": "المستوى {level}",
+    "allLevels": "جميع المجموعات",
+    "levelTab": "المجموعة {level}",
+    "collectionNavigation": "تصفية مجموعات المفردات",
+    "collectionBadge": "المجموعة {number}",
+    "collectionProgress": "تقدم المجموعة {number}",
+    "collectionProgressAria": "تقدم المجموعة {number}: {percent}%",
     "noUnitsFound": "لم يتم العثور على وحدات مطابقة لـ “{query}”",
     "clearSearch": "مسح تصفية البحث",
     "moduleStats": "{units} وحدات · {words} مفردة",
@@ -553,7 +573,8 @@
   "releaseNotes": {
     "whatsNewInVersion": "ما الجديد في الإصدار {version}",
     "dismiss": "تجاهل ملاحظات الإصدار",
-    "gotIt": "فهمت ذلك!"
+    "gotIt": "فهمت ذلك!",
+    "showDetails": "عرض تفاصيل الإصدار"
   },
   "masteryReview": {
     "badge": "المراجعة اليومية للمفردات",

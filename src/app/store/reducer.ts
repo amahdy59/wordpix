@@ -2,7 +2,14 @@ import type { Screen, Action, OnboardStep } from "../types";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, resolveGroup, resolveUnitForLesson } from "../data/lessons";
 
 export const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
-export const TABBED_IDS: ReadonlySet<string> = new Set(["home", "explore", "practice", "profile"]);
+export const TABBED_IDS: ReadonlySet<string> = new Set([
+  "home",
+  "explore",
+  "library",
+  "practice",
+  "review",
+  "profile",
+]);
 
 export const STORAGE_KEY = "wordpix:learner-state:v4";
 
@@ -142,8 +149,12 @@ export function describeScreen(screen: Screen, t: (key: string) => string): stri
       return t("nav.home");
     case "explore":
       return t("nav.explore");
+    case "library":
+      return t("nav.library");
     case "practice":
       return t("nav.practice");
+    case "review":
+      return t("dashboard.review");
     case "profile":
       return t("nav.profile");
     case "lesson":

@@ -1,7 +1,13 @@
 import { describe, expect, it, beforeEach } from "vitest";
 import { render, screen, act } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { I18nProvider, useI18n, lookup, interpolate, SUPPORTED_LANGS } from "../context/I18nContext";
+import {
+  I18nProvider,
+  useI18n,
+  lookup,
+  interpolate,
+  SUPPORTED_LANGS,
+} from "../context/I18nContext";
 import en from "../../i18n/en.json";
 import ar from "../../i18n/ar.json";
 
@@ -58,7 +64,9 @@ describe("Translation bundles", () => {
     [en, ar].forEach((bundle) => {
       flatten(bundle).forEach((key) => {
         const value = lookup(bundle, key) ?? "";
-        expect(value, `${key} hardcodes a number: "${value}"`).not.toMatch(/\b\d+\s*(words?|day|كلمات|أيام)/i);
+        expect(value, `${key} hardcodes a number: "${value}"`).not.toMatch(
+          /\b\d+\s*(words?|day|كلمات|أيام)/i
+        );
       });
     });
   });
@@ -178,6 +186,7 @@ describe("Navigation labels come from the bundle", () => {
     expect(TABS.map((tab) => tab.labelKey)).toEqual([
       "nav.home",
       "nav.explore",
+      "nav.library",
       "nav.practice",
       "nav.profile",
     ]);

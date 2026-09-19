@@ -34,9 +34,10 @@ export function ReleaseNotesCard() {
   };
 
   return (
-    <div className="bg-primary/10 border border-primary/20 rounded-2xl p-4 lg:p-5 shadow-wp-xs relative overflow-hidden mb-6">
-      <div className="absolute top-0 end-0 p-2">
+    <aside className="relative mb-2 rounded-2xl border border-primary/20 bg-primary/5 p-3 pe-14 shadow-wp-xs">
+      <div className="absolute inset-y-0 end-1 flex items-center">
         <button
+          type="button"
           onClick={handleDismiss}
           className="text-primary hover:bg-primary/20 p-2 rounded-full transition-colors flex items-center justify-center min-w-[44px] min-h-[44px]"
           aria-label={t("releaseNotes.dismiss")}
@@ -44,28 +45,32 @@ export function ReleaseNotesCard() {
           <X className="size-5" />
         </button>
       </div>
-      <div className="flex items-center gap-2 mb-3">
-        <div className="bg-primary text-primary-foreground p-1.5 rounded-lg">
-          <Sparkles className="size-4" />
-        </div>
-        <h3 className="font-sans font-bold text-foreground text-lg">
-          {t("releaseNotes.whatsNewInVersion", { version: releaseData.version })}
-        </h3>
-      </div>
-      <ul className="flex flex-col gap-2">
-        {releaseData.notes.slice(0, 3).map((note, index) => (
-          <li key={index} className="flex items-start gap-2 text-sm text-foreground/90 font-medium">
-            <div className="size-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
-            <p className="leading-relaxed">{note}</p>
-          </li>
-        ))}
-      </ul>
-      <button
-        onClick={handleDismiss}
-        className="mt-4 bg-primary text-primary-foreground font-bold text-sm px-4 py-3 min-h-[44px] rounded-xl hover:opacity-90 transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary w-full sm:w-auto"
-      >
-        {t("releaseNotes.gotIt")}
-      </button>
-    </div>
+      <details className="group">
+        <summary className="flex min-h-[44px] cursor-pointer list-none items-center gap-3 rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary">
+          <div className="bg-primary text-primary-foreground p-1.5 rounded-lg shrink-0">
+            <Sparkles className="size-4" />
+          </div>
+          <span className="min-w-0 flex-1">
+            <span className="block font-sans text-sm font-bold text-foreground">
+              {t("releaseNotes.whatsNewInVersion", { version: releaseData.version })}
+            </span>
+            <span className="block text-xs font-medium text-muted-foreground group-open:hidden">
+              {t("releaseNotes.showDetails")}
+            </span>
+          </span>
+        </summary>
+        <ul className="mt-2 flex flex-col gap-2 ps-11">
+          {releaseData.notes.slice(0, 3).map((note, index) => (
+            <li
+              key={index}
+              className="flex items-start gap-2 text-sm text-foreground/90 font-medium"
+            >
+              <div className="size-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
+              <p className="leading-relaxed">{note}</p>
+            </li>
+          ))}
+        </ul>
+      </details>
+    </aside>
   );
 }

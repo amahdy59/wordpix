@@ -1,7 +1,7 @@
 // Shared TypeScript types for the WordPix app state machine
 
 export type OnboardStep = "splash" | "language" | "ready";
-export type TabId = "home" | "explore" | "practice" | "profile";
+export type TabId = "home" | "explore" | "library" | "practice" | "profile";
 
 export type LearnerMode =
   "NEW_LESSON" | "SMART_REVIEW" | "SKILL_PRACTICE" | "UNIT_ASSESSMENT" | "PRE_LESSON_ASSESSMENT";
@@ -59,7 +59,9 @@ export type Screen =
   | { id: "onboarding"; step: OnboardStep }
   | { id: "home" }
   | { id: "explore" }
+  | { id: "library" }
   | { id: "practice" }
+  | { id: "review" }
   | { id: "profile" }
   | { id: "lesson-entry"; unitId?: string }
   /** Self-paced word browsing for one group — no session, no scoring. */
@@ -91,7 +93,13 @@ export type Screen =
 
 /** Every destination GO can reach. Previously widened by an `as TabId` cast. */
 export type GoTarget =
-  TabId | "lesson-entry" | "lesson-complete" | "skill-hub" | "onboarding" | "learning-materials";
+  | TabId
+  | "review"
+  | "lesson-entry"
+  | "lesson-complete"
+  | "skill-hub"
+  | "onboarding"
+  | "learning-materials";
 
 export type Action =
   | { type: "ONBOARD_NEXT" }

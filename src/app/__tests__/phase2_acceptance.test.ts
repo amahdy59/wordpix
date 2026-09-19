@@ -8,7 +8,7 @@ describe("Phase 2 Acceptance Criteria Verification", () => {
   it("AC 1: Streak engine uses local calendar dates and prevents UTC midnight bugs", () => {
     const today = new Date();
     const todayStr = getLocalDateString(today);
-    
+
     // Initial active date
     const initial = updateStreak({ currentStreak: 0, lastActiveDate: null }, today);
     expect(initial.currentStreak).toBe(1);
@@ -21,11 +21,28 @@ describe("Phase 2 Acceptance Criteria Verification", () => {
 
   it("AC 2: URL Hash router maps tabs to valid URLs and survives deep links", () => {
     expect(screenToHash({ id: "home" })).toEqual({ hash: "#/home", title: "WordPix — Home" });
-    expect(screenToHash({ id: "explore" })).toEqual({ hash: "#/explore", title: "WordPix — Explore Worlds" });
-    expect(screenToHash({ id: "profile" })).toEqual({ hash: "#/profile", title: "WordPix — Learner Profile" });
+    expect(screenToHash({ id: "explore" })).toEqual({
+      hash: "#/learn",
+      title: "WordPix — Learning Path",
+    });
+    expect(screenToHash({ id: "library" })).toEqual({
+      hash: "#/library",
+      title: "WordPix — Vocabulary Library",
+    });
+    expect(screenToHash({ id: "profile" })).toEqual({
+      hash: "#/profile",
+      title: "WordPix — Learner Profile",
+    });
 
     expect(hashToScreen("#/home")).toEqual({ screen: { id: "home" }, title: "WordPix — Home" });
-    expect(hashToScreen("#/profile")).toEqual({ screen: { id: "profile" }, title: "WordPix — Learner Profile" });
+    expect(hashToScreen("#/library")).toEqual({
+      screen: { id: "library" },
+      title: "WordPix — Vocabulary Library",
+    });
+    expect(hashToScreen("#/profile")).toEqual({
+      screen: { id: "profile" },
+      title: "WordPix — Learner Profile",
+    });
   });
 
   it("AC 3: Assessment-safe image fallback masks label text in assessment mode", () => {

@@ -17,6 +17,7 @@ import { ReadyCelebration } from "../onboarding/ReadyCelebration";
 
 // Synchronous core tab views
 import { HomeDashboard } from "../core/HomeDashboard";
+import { LearningPath } from "../core/LearningPath";
 import { ExploreWorlds } from "../core/ExploreWorlds";
 import { ProfileStats } from "../core/ProfileStats";
 import { SkillExerciseHub } from "../core/SkillExerciseHub";
@@ -205,8 +206,10 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       if (state.step === "ready") return <ReadyCelebration dispatch={dispatch} />;
     }
     if (state.id === "home") return <HomeDashboard dispatch={dispatch} />;
-    if (state.id === "explore") return <ExploreWorlds dispatch={dispatch} />;
-    if (state.id === "practice") return <ReviewMasteryReview dispatch={dispatch} />;
+    if (state.id === "explore") return <LearningPath dispatch={dispatch} />;
+    if (state.id === "library") return <ExploreWorlds dispatch={dispatch} />;
+    if (state.id === "practice") return <SkillExerciseHub dispatch={dispatch} />;
+    if (state.id === "review") return <ReviewMasteryReview dispatch={dispatch} />;
     if (state.id === "profile") return <ProfileStats dispatch={dispatch} />;
     if (state.id === "lesson-entry")
       return <LessonWorldEntry unitId={state.unitId ?? DEFAULT_UNIT_ID} dispatch={dispatch} />;
@@ -285,7 +288,10 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       {TABBED_IDS.has(state.id) && (
         <>
           <SkipLink />
-          <AppShell activeTab={state.id as TabId} dispatch={dispatch}>
+          <AppShell
+            activeTab={(state.id === "review" ? "practice" : state.id) as TabId}
+            dispatch={dispatch}
+          >
             {animatedContent}
           </AppShell>
         </>

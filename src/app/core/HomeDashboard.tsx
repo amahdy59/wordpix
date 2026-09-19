@@ -123,10 +123,10 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        className="grid grid-cols-1 lg:grid-cols-12 gap-6 max-w-5xl mx-auto w-full mt-4"
+        className="grid grid-cols-1 xl:grid-cols-12 gap-6 max-w-5xl mx-auto w-full mt-4"
       >
         {/* LEFT COLUMN: Main Learning Loop (lg:col-span-7) */}
-        <div className="lg:col-span-7 flex flex-col gap-6">
+        <div className="xl:col-span-7 flex flex-col gap-6">
           {/* SECTION 0: DAILY TARGET PROGRESS */}
           <motion.div variants={staggerItem}>
             <Card variant="default" className="border-primary/20 bg-primary/5">
@@ -243,7 +243,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         </div>
 
         {/* RIGHT COLUMN: Review Queue & Spaced Repetition (lg:col-span-5) */}
-        <div className="lg:col-span-5 flex flex-col gap-6">
+        <div className="xl:col-span-5 flex flex-col gap-6">
           {/* SECTION 2: REVIEW */}
           <motion.div variants={staggerItem}>
             <Section id="section-review" title={t("dashboard.review")}>
@@ -282,7 +282,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                         wordQueue: dueWords.slice(0, 15).map((w: WordLearningState) => w.wordId),
                       });
                     } else {
-                      dispatch({ type: "GO", to: "practice" });
+                      dispatch({ type: "GO", to: "review" });
                     }
                   }}
                   className="w-full bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-sm min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"

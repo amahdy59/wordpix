@@ -24,18 +24,23 @@ export function useTheme() {
   const resolvedTheme = theme === "system" ? (systemIsDark ? "dark" : "light") : theme;
 
   const toggleTheme = () => {
-    const nextTheme: ThemeMode = theme === "system" ? "dark" : theme === "dark" ? "light" : "system";
+    const nextTheme: ThemeMode =
+      theme === "system" ? "dark" : theme === "dark" ? "light" : "system";
     setPreferences({ theme: nextTheme });
   };
 
-  return { theme, resolvedTheme, setTheme: (mode: ThemeMode) => setPreferences({ theme: mode }), toggleTheme };
+  return {
+    theme,
+    resolvedTheme,
+    setTheme: (mode: ThemeMode) => setPreferences({ theme: mode }),
+    toggleTheme,
+  };
 }
 
 interface ThemeToggleProps {
   /**
-   * Icon-only rendering for the 80px icon rail. With the label the control is
-   * 92px wide, which overflowed the sidebar by 7px on each side.
-   * If "responsive", it is compact below lg, and expanded on lg+.
+   * Icon-only rendering for compact utility surfaces. If "responsive", it is
+   * compact below lg and labelled on lg+, matching the app shell breakpoint.
    */
   compact?: boolean | "responsive";
 }
@@ -66,9 +71,9 @@ export const ThemeToggle = memo(function ThemeToggle({ compact = false }: ThemeT
       aria-label={label}
       title={isCompact ? label : undefined}
       className={`flex items-center justify-center rounded-xl border border-border bg-wp-card text-foreground hover:bg-muted text-xs font-sans font-bold transition-all min-h-[44px] min-w-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-        isCompact 
-          ? "size-11 shrink-0" 
-          : isResponsive 
+        isCompact
+          ? "size-11 shrink-0"
+          : isResponsive
             ? "size-11 shrink-0 lg:w-full lg:h-auto lg:gap-3 lg:px-3 lg:py-3 lg:justify-start lg:border-transparent lg:bg-transparent"
             : "gap-1.5 px-3 py-1.5"
       }`}
@@ -77,7 +82,13 @@ export const ThemeToggle = memo(function ThemeToggle({ compact = false }: ThemeT
         {icon}
       </div>
       {!isCompact && (
-        <span className={isResponsive ? "hidden lg:block ms-1 font-semibold text-sm text-muted-foreground group-hover:text-foreground transition-colors" : ""}>
+        <span
+          className={
+            isResponsive
+              ? "hidden lg:block ms-1 font-semibold text-sm text-muted-foreground group-hover:text-foreground transition-colors"
+              : ""
+          }
+        >
           {themeLabel}
         </span>
       )}
