@@ -3,7 +3,13 @@ import { render, screen, fireEvent, cleanup } from "@testing-library/react";
 import { LessonWorldEntry } from "../lesson/LessonWorldEntry";
 import { COURSE_UNITS } from "../data/lessons";
 import { I18nProvider } from "../context/I18nContext";
-const progress = vi.hoisted(() => ({ wordMemory: {}, wordMastery: {} as Record<string, number> }));
+import { createInitialWordState, type WordLearningState } from "../../features/gamification/sm2";
+import { selectPracticeWordQueue } from "../lesson/lessonSequence";
+
+const progress = vi.hoisted(() => ({
+  wordMemory: {} as Record<string, WordLearningState>,
+  wordMastery: {} as Record<string, number>,
+}));
 vi.mock("../data/progress", () => ({ useProgress: () => ({ progress }) }));
 
 describe("word group learning state", () => {
@@ -11,14 +17,19 @@ describe("word group learning state", () => {
     it(`offers one ${state} action with truthful progress`, () => {
       cleanup();
       const group = COURSE_UNITS.bedroom.groups[0];
-      progress.wordMastery = Object.fromEntries(
-        (state === "Review"
-          ? group.wordIds
-          : state === "Continue"
-            ? group.wordIds.slice(0, 1)
-            : []
-        ).map((id) => [id, 1])
+      const familiarIds =
+        state === "Review" ? group.wordIds : state === "Continue" ? group.wordIds.slice(0, 1) : [];
+      progress.wordMemory = Object.fromEntries(
+        familiarIds.map((id) => [
+          id,
+          {
+            ...createInitialWordState(id),
+            exposures: 1,
+            mastery: "familiar" as const,
+          },
+        ])
       );
+      progress.wordMastery = Object.fromEntries(familiarIds.map((id) => [id, 1]));
       const dispatch = vi.fn();
       render(
         <I18nProvider>
@@ -41,7 +52,7 @@ describe("word group learning state", () => {
         expect.objectContaining({
           type: "START_LESSON",
           lessonId: group.id,
-          wordQueue: group.wordIds,
+          wordQueue: selectPracticeWordQueue(group.wordIds, progress.wordMemory),
         })
       );
     });

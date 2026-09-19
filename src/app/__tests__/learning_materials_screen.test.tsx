@@ -31,7 +31,7 @@ describe("LearningMaterialsScreen", () => {
 
     await waitFor(() =>
       expect(
-        screen.getByRole("heading", { level: 1, name: /Essential words/i })
+        screen.getByRole("heading", { level: 1, name: /Essential language/i })
       ).toBeInTheDocument()
     );
     expect(screen.queryByText(/Your Study Path/i)).not.toBeInTheDocument();

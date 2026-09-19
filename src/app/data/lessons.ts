@@ -1,3 +1,5 @@
+import { FOUNDATION_SEQUENCE } from "./curriculumSequence";
+
 // Centralized Lesson Vocabulary Data Layer for WordPix
 // Synchronized from Figma Design (Node 44:2 — The Bedroom)
 
@@ -22854,8 +22856,9 @@ export const HADITH_NIYYAH_GROUPS: Lesson[] = [
     description: "Learn vocabulary from the Hadith of Intention.",
     topicId: "hadith-niyyah-1",
     wordIds: ["judged", "motive", "intend", "migration", "worldly", "gain", "marry"],
-    story: "In this section, you will learn about judged, motive niyyah, intend, migration hijrah, worldly, gain, marry.",
-  }
+    story:
+      "In this section, you will learn about judged, motive niyyah, intend, migration hijrah, worldly, gain, marry.",
+  },
 ];
 
 export const HADITH_NIYYAH_TOPICS = HADITH_NIYYAH_GROUPS.map((g) => ({
@@ -22864,7 +22867,15 @@ export const HADITH_NIYYAH_TOPICS = HADITH_NIYYAH_GROUPS.map((g) => ({
   itemsCount: g.wordIds.length,
 }));
 
-export const COURSE_UNITS: Record<string, CourseUnit> = { "hadith-niyyah": { id: "hadith-niyyah", name: "Islamic Studies - Niyyah", description: "Islamic studies and terminology.", topics: HADITH_NIYYAH_TOPICS, groups: HADITH_NIYYAH_GROUPS, wordIds: ["judged", "motive", "intend", "migration", "worldly", "gain", "marry"] },
+export const COURSE_UNITS: Record<string, CourseUnit> = {
+  "hadith-niyyah": {
+    id: "hadith-niyyah",
+    name: "Islamic Studies - Niyyah",
+    description: "Islamic studies and terminology.",
+    topics: HADITH_NIYYAH_TOPICS,
+    groups: HADITH_NIYYAH_GROUPS,
+    wordIds: ["judged", "motive", "intend", "migration", "worldly", "gain", "marry"],
+  },
   bathroom: {
     id: "bathroom",
     name: "The Bathroom",
@@ -36740,10 +36751,6 @@ export const COURSE_UNITS: Record<string, CourseUnit> = { "hadith-niyyah": { id:
   },
 };
 
-
-
-
-
 export interface CourseModule {
   id: string;
   level: number;
@@ -37015,7 +37022,7 @@ export const COURSE_MODULES: CourseModule[] = [
     titleAr: "Islamic Studies",
     description: "Explore vocabulary for Islamic Studies",
     unitIds: ["hadith-niyyah"],
-  }
+  },
 ];
 
 export const DEFAULT_UNIT_ID = "bedroom";
@@ -37045,6 +37052,27 @@ export const REVIEW_GROUP_ID = "daily-review";
 
 /** Every group across every registered world. */
 export const ALL_GROUPS = Object.values(COURSE_UNITS).flatMap((world) => world.groups);
+
+/**
+ * Prerequisite-aware order for Continue and Next actions.
+ *
+ * The catalogue order is thematic and the object happens to start with a
+ * special section. It is not a learning progression. Foundation concepts lead
+ * here, followed by every remaining general-English unit in module order;
+ * special sections stay independently browsable and are never auto-selected.
+ */
+const CATALOGUE_UNIT_SEQUENCE = COURSE_MODULES.filter((module) => !module.isSpecialSection).flatMap(
+  (module) => module.unitIds
+);
+const FOUNDATION_UNIT_IDS = new Set<string>(FOUNDATION_SEQUENCE);
+export const LEARNING_PATH_UNIT_IDS = [
+  ...FOUNDATION_SEQUENCE,
+  ...CATALOGUE_UNIT_SEQUENCE.filter((id) => !FOUNDATION_UNIT_IDS.has(id)),
+].filter((id, index, all) => all.indexOf(id) === index && Boolean(COURSE_UNITS[id]));
+
+export const LEARNING_PATH_GROUPS = LEARNING_PATH_UNIT_IDS.flatMap(
+  (unitId) => COURSE_UNITS[unitId]?.groups ?? []
+);
 
 /**
  * Resolves a group id to the group it names, searching every world rather
@@ -37114,8 +37142,8 @@ export function resolveUnitForLesson(lessonId: string): CourseUnit {
  */
 export function nextGroupToStudy(isMastered: (wordId: string) => boolean): Lesson {
   return (
-    ALL_GROUPS.find((g) => g.wordIds.some((id) => !isMastered(id))) ??
-    ALL_GROUPS[ALL_GROUPS.length - 1]
+    LEARNING_PATH_GROUPS.find((g) => g.wordIds.some((id) => !isMastered(id))) ??
+    LEARNING_PATH_GROUPS[LEARNING_PATH_GROUPS.length - 1]
   );
 }
 
@@ -37124,9 +37152,9 @@ export function nextGroupToStudy(isMastered: (wordId: string) => boolean): Lesso
  * Used when a user explicitly requests to move to the next group.
  */
 export function getNextGroupChronological(lessonId: string): Lesson {
-  const currentIndex = ALL_GROUPS.findIndex((g) => g.id === lessonId);
-  if (currentIndex === -1 || currentIndex === ALL_GROUPS.length - 1) {
-    return ALL_GROUPS[ALL_GROUPS.length - 1]; // stay on the last group if there's no next
+  const currentIndex = LEARNING_PATH_GROUPS.findIndex((g) => g.id === lessonId);
+  if (currentIndex === -1 || currentIndex === LEARNING_PATH_GROUPS.length - 1) {
+    return LEARNING_PATH_GROUPS[LEARNING_PATH_GROUPS.length - 1]; // stay on the last group if there's no next
   }
-  return ALL_GROUPS[currentIndex + 1];
+  return LEARNING_PATH_GROUPS[currentIndex + 1];
 }

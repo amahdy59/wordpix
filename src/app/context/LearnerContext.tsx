@@ -420,25 +420,33 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
   );
 
   const recordUnitAssessmentCompletion = useCallback(
-    (passed: boolean, unitWordIds: string[]) => {
-      if (!passed) return; // If failed, we could record standard XP, but let's keep it simple and just exit or just let them get XP from the normal `recordSessionCompletion`?
-      // Wait, if they pass, we want to force all words in the unit to 'strong'.
+    (passed: boolean, assessedWordIds: string[]) => {
+      if (!passed) return;
       updateStateAndPersist((prev) => {
         const updatedMemory = { ...prev.wordMemory };
+        const now = new Date();
+        const reviewDate = new Date(now.getTime() + 3 * 24 * 60 * 60 * 1000).toISOString();
 
-        unitWordIds.forEach((wordId) => {
+        // A sampled checkpoint is evidence for the sampled objectives only.
+        // Passing makes those items provisionally familiar; spaced retrieval,
+        // not a one-off test, is what can promote them to strong.
+        assessedWordIds.forEach((wordId) => {
           const existingState = updatedMemory[wordId] || createInitialWordState(wordId);
+          if (existingState.mastery === "strong") return;
           updatedMemory[wordId] = {
             ...existingState,
             exposures: existingState.exposures + 1,
-            lastSeenAt: new Date().toISOString(),
-            mastery: "strong",
-            intervalDays: 14,
+            correctRecalls: existingState.correctRecalls + 1,
+            currentStreak: existingState.currentStreak + 1,
+            lastSeenAt: now.toISOString(),
+            lastReviewedAt: now.toISOString(),
+            nextReviewAt: reviewDate,
+            mastery: "familiar",
+            intervalDays: Math.max(3, existingState.intervalDays),
           };
         });
 
-        // Add a bonus XP for testing out?
-        const bonusXp = 50;
+        const bonusXp = 25;
         const nextXp = prev.learnerProgress.xp + bonusXp;
 
         return {

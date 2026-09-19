@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { reducer } from "../store/reducer";
 import {
   ALL_GROUPS,
+  LEARNING_PATH_GROUPS,
   BEDROOM_GROUPS,
   BEDROOM_VOCABULARY,
   REVIEW_GROUP_ID,
@@ -113,25 +114,25 @@ describe("every group's words exist", () => {
 
 describe("nextGroupToStudy", () => {
   it("starts at the first group when nothing is mastered", () => {
-    expect(nextGroupToStudy(() => false).id).toBe(ALL_GROUPS[0].id);
+    expect(nextGroupToStudy(() => false).id).toBe(LEARNING_PATH_GROUPS[0].id);
   });
 
   it("moves on once a group is fully mastered", () => {
-    const first = ALL_GROUPS[0];
+    const first = LEARNING_PATH_GROUPS[0];
     const next = nextGroupToStudy((id) => first.wordIds.includes(id));
-    expect(next.id).toBe(ALL_GROUPS[1].id);
+    expect(next.id).toBe(LEARNING_PATH_GROUPS[1].id);
   });
 
   it("does not get stuck on the first group forever", () => {
     // The bug this replaces: Home always resumed ALL_GROUPS[0].
     const everythingMastered = nextGroupToStudy(() => true);
-    expect(everythingMastered.id).toBe(ALL_GROUPS[ALL_GROUPS.length - 1].id);
+    expect(everythingMastered.id).toBe(LEARNING_PATH_GROUPS[LEARNING_PATH_GROUPS.length - 1].id);
   });
 
   it("skips a mastered group even when a later one is untouched", () => {
-    const [first, second] = ALL_GROUPS;
+    const [first, second] = LEARNING_PATH_GROUPS;
     const mastered = new Set([...first.wordIds, ...second.wordIds]);
-    expect(nextGroupToStudy((id) => mastered.has(id)).id).toBe(ALL_GROUPS[2].id);
+    expect(nextGroupToStudy((id) => mastered.has(id)).id).toBe(LEARNING_PATH_GROUPS[2].id);
   });
 });
 

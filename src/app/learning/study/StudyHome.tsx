@@ -16,10 +16,12 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { useI18n } from "../../../i18n";
+import { getCurriculumStageLabel, type UnitCurriculumDesign } from "../curriculumModel";
 
 interface Props {
   unit: CourseUnit;
   nodes: StudyNode[];
+  curriculumDesign: UnitCurriculumDesign;
   progress: UnitStudyProgress;
   onContinue: () => void;
   onSelectArea: (area: StudyArea) => void;
@@ -51,6 +53,7 @@ const AREA_META: Record<StudyArea, { label: string; description: string; icon: t
 export function StudyHome({
   unit,
   nodes,
+  curriculumDesign,
   progress,
   onContinue,
   onSelectArea,
@@ -58,7 +61,7 @@ export function StudyHome({
   dispatch,
 }: Props) {
   const { t } = useI18n();
-  const coreNodes = nodes.filter((n) => n.area !== "reference");
+  const coreNodes = nodes.filter((n) => n.area !== "reference" && n.isCore !== false);
   const completedCoreNodes = progress.completedNodeIds.filter((id) =>
     coreNodes.some((n) => n.id === id)
   );
@@ -100,6 +103,44 @@ export function StudyHome({
             {t("study.unitDescription", { unit: unit.name.toLowerCase() })}
           </p>
         </div>
+
+        <section
+          aria-labelledby="unit-outcome-heading"
+          className="rounded-2xl sm:rounded-3xl border border-primary/30 bg-primary/5 p-4 sm:p-6"
+        >
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="rounded-full bg-primary px-3 py-1 text-xs font-black text-primary-foreground">
+              CEFR {curriculumDesign.cefr}
+            </span>
+            <span className="rounded-full border border-primary/30 bg-card px-3 py-1 text-xs font-bold text-foreground">
+              GSE {curriculumDesign.gseRange[0]}–{curriculumDesign.gseRange[1]}
+            </span>
+            <span className="rounded-full border border-border bg-card px-3 py-1 text-xs font-bold capitalize text-muted-foreground">
+              {curriculumDesign.archetype} pathway
+            </span>
+          </div>
+          <h2 id="unit-outcome-heading" className="mt-4 text-lg font-black text-foreground">
+            What you will be able to do
+          </h2>
+          <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+            {curriculumDesign.outcome}
+          </p>
+          <ul className="mt-4 grid gap-2 sm:grid-cols-2" aria-label="Unit can-do goals">
+            {curriculumDesign.canDo.map((goal) => (
+              <li
+                key={goal}
+                className="flex items-start gap-2 text-sm leading-relaxed text-foreground"
+              >
+                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-wp-green" aria-hidden />
+                <span>{goal}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 border-t border-primary/20 pt-3 text-sm font-semibold text-foreground">
+            <span className="text-primary">Final mission: </span>
+            {curriculumDesign.finalTask}
+          </p>
+        </section>
 
         {unit.heroImage && (
           <div className="rounded-2xl sm:rounded-3xl overflow-hidden bg-muted h-36 sm:h-52 relative border border-border/60 shadow-xs">
@@ -248,6 +289,12 @@ export function StudyHome({
                               <span className="font-bold text-sm text-foreground block truncate">
                                 {node.title}
                               </span>
+                              {node.stage && (
+                                <span className="text-[11px] font-bold uppercase tracking-wide text-primary block mt-0.5">
+                                  {getCurriculumStageLabel(node.stage)}
+                                  {node.isCore === false ? " · Optional" : ""}
+                                </span>
+                              )}
                               {node.description && (
                                 <span className="text-xs text-muted-foreground block truncate">
                                   {node.description}

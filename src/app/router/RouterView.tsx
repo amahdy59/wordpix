@@ -62,8 +62,7 @@ const ExerciseStory = lazy(() =>
 );
 
 import { SKILL_EXERCISES } from "../exercises/registry";
-
-type ExStep = "listen" | "recall" | "fill" | "builder" | "quiz" | "story";
+import { getLessonSequence, type ExerciseStep } from "../lesson/lessonSequence";
 
 const LoadingFallback = () => {
   const { t } = useI18n();
@@ -132,16 +131,14 @@ function LessonRoute({
   dispatch: React.Dispatch<Action>;
 }) {
   const { state: learnerState } = useLearner();
-  const isBeginner =
-    learnerState.preferences.englishLevel === "A1" ||
-    learnerState.preferences.englishLevel === "A2";
   const isAssessment = state.mode === "UNIT_ASSESSMENT" || state.mode === "PRE_LESSON_ASSESSMENT";
 
   const exSequence = isAssessment
     ? (["quiz"] as const)
-    : isBeginner
-      ? (["listen", "recall", "fill", "quiz", "story"] as const)
-      : (["listen", "recall", "fill", "builder", "quiz", "story"] as const);
+    : getLessonSequence(
+        learnerState.preferences.englishLevel,
+        learnerState.accessibility.includeListening
+      );
 
   const { lessonId, wordQueue } = state;
   // Joined, not the array itself: `wordQueue` is rebuilt by the reducer on
@@ -175,7 +172,7 @@ function LessonRoute({
 
   if (activeGroupWords.length === 0) return <ExploreWorlds dispatch={dispatch} />;
 
-  const ex: ExStep = exSequence[state.step];
+  const ex: ExerciseStep = exSequence[state.step];
   const drillProps = {
     words: activeGroupWords,
     step: state.step,

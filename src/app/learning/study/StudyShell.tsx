@@ -13,8 +13,9 @@ import {
 } from "lucide-react";
 import type { UnitLearningMaterials } from "../types";
 import type { CourseUnit } from "../../data/lessons";
-import { loadStudyProgress, saveStudyProgress } from "./progress";
+import { loadStudyProgress, saveStudyProgress, syncStudyProgressWithWordMemory } from "./progress";
 import { generateCurriculum } from "./curriculum";
+import { getUnitCurriculumDesign } from "../curriculumModel";
 import { StudyHome } from "./StudyHome";
 import { LearnArea } from "./LearnArea";
 import { UseItArea } from "./UseItArea";
@@ -26,6 +27,7 @@ import type { Action } from "../../types";
 import { WordInspectorModal } from "../../shared/WordInspectorModal";
 import type { VocabularyItem } from "../../data/lessons";
 import { useI18n } from "../../../i18n";
+import { useLearner } from "../../context/LearnerContext";
 
 const STUDY_AREAS: StudyArea[] = ["learn", "use", "practice", "review", "reference"];
 
@@ -47,10 +49,21 @@ export function StudyShell({
   dispatch,
 }: Props) {
   const { t } = useI18n();
-  const [progress, setProgress] = useState<UnitStudyProgress>(() => loadStudyProgress(unitId));
+  const { state: learnerState } = useLearner();
+  const [progress, setProgress] = useState<UnitStudyProgress>(() =>
+    syncStudyProgressWithWordMemory(
+      loadStudyProgress(unitId),
+      learnerState.wordMemory,
+      unit.wordIds
+    )
+  );
 
   // The curriculum adapter
-  const nodes = generateCurriculum(materials);
+  const nodes = React.useMemo(() => generateCurriculum(materials, unit), [materials, unit]);
+  const curriculumDesign = React.useMemo(
+    () => getUnitCurriculumDesign(unit, materials),
+    [materials, unit]
+  );
 
   // Navigation state is URL/state-driven. Area-only links open the first activity.
   const requestedArea = STUDY_AREAS.includes(initialArea as StudyArea)
@@ -109,6 +122,12 @@ export function StudyShell({
   useEffect(() => {
     saveStudyProgress(progress);
   }, [progress]);
+
+  useEffect(() => {
+    setProgress((current) =>
+      syncStudyProgressWithWordMemory(current, learnerState.wordMemory, unit.wordIds)
+    );
+  }, [learnerState.wordMemory, unit.wordIds]);
 
   // Scroll reset & focus transfer on route/activity change
   useEffect(() => {
@@ -205,7 +224,9 @@ export function StudyShell({
     if (!activeNode) return;
     completeNode(activeNode.id);
     const activeIndex = nodes.findIndex((node) => node.id === activeNode.id);
-    const nextNode = nodes.slice(activeIndex + 1).find((node) => node.area !== "reference");
+    const nextNode = nodes
+      .slice(activeIndex + 1)
+      .find((node) => node.area !== "reference" && node.isCore !== false);
     if (nextNode) handleNodeSelect(nextNode.id);
     else handleBackToHome();
   };
@@ -252,7 +273,7 @@ export function StudyShell({
     );
   };
 
-  const coreNodes = nodes.filter((n) => n.area !== "reference");
+  const coreNodes = nodes.filter((n) => n.area !== "reference" && n.isCore !== false);
   const overallProgress = coreNodes.length
     ? Math.round(
         coreNodes.reduce((total, node) => total + nodeProgress(node.id), 0) / coreNodes.length
@@ -607,6 +628,7 @@ export function StudyShell({
             <StudyHome
               unit={unit}
               nodes={nodes}
+              curriculumDesign={curriculumDesign}
               progress={progress}
               onContinue={handleContinue}
               onSelectArea={handleAreaSelect}

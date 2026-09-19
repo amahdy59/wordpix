@@ -22,7 +22,7 @@ describe("Lesson Actions Dropdown & Navigation", () => {
     expect(triggerButtons[0]).toHaveAttribute("aria-expanded", "false");
   });
 
-  it("opens menu and allows jumping directly to Read Story (step 5)", () => {
+  it("opens menu and allows jumping directly to Read Story", () => {
     const dispatch = vi.fn();
     render(
       <I18nProvider>
@@ -46,7 +46,7 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       expect.objectContaining({
         type: "START_LESSON",
         unitId: "bedroom",
-        initialStep: 5,
+        initialStep: 4,
       })
     );
   });

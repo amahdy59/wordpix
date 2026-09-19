@@ -1,4 +1,5 @@
 import { UnitStudyProgress, StudyWordStatus, StudyNode } from "./types";
+import type { WordLearningState } from "../../../features/gamification/sm2";
 
 const STORAGE_KEY = "wordpix.studyProgress.v1";
 
@@ -134,6 +135,43 @@ export function clearReviewWord(progress: UnitStudyProgress, wordId: string): Un
 }
 
 /**
+ * Projects the canonical SM-2 memory record into the study-path view.
+ * Node completion and learner confidence remain local UI state, but vocabulary
+ * mastery and due dates come from the same record used by lessons and review.
+ */
+export function syncStudyProgressWithWordMemory(
+  progress: UnitStudyProgress,
+  wordMemory: Record<string, WordLearningState>,
+  unitWordIds: string[],
+  now = new Date()
+): UnitStudyProgress {
+  const nextWordStatus = { ...progress.wordStatus };
+  const reviewIds = new Set(progress.reviewWordIds);
+  const nowIso = now.toISOString();
+
+  unitWordIds.forEach((wordId) => {
+    const memory = wordMemory[wordId];
+    if (!memory || memory.exposures === 0) return;
+    const isDue = Boolean(memory.nextReviewAt && memory.nextReviewAt <= nowIso);
+    if (isDue) {
+      nextWordStatus[wordId] = "review";
+      reviewIds.add(wordId);
+      return;
+    }
+    if (progress.wordStatus[wordId] === "review") return; // preserve explicit self-assessment
+    nextWordStatus[wordId] =
+      memory.mastery === "familiar" || memory.mastery === "strong" ? "comfortable" : "learning";
+    reviewIds.delete(wordId);
+  });
+
+  return {
+    ...progress,
+    wordStatus: nextWordStatus,
+    reviewWordIds: [...reviewIds],
+  };
+}
+
+/**
  * Calculates genuine activity completion: ratio of completed core curriculum nodes.
  */
 export function getCoreActivityProgress(
@@ -144,7 +182,7 @@ export function getCoreActivityProgress(
   totalCount: number;
   percent: number;
 } {
-  const coreNodes = nodes.filter((n) => n.area !== "reference");
+  const coreNodes = nodes.filter((n) => n.area !== "reference" && n.isCore !== false);
   const completedCount = progress.completedNodeIds.filter((id) =>
     coreNodes.some((n) => n.id === id)
   ).length;

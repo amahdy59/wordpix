@@ -19,36 +19,37 @@ import { GroupThumbnail } from "./GroupThumbnail";
 import { hasLearningMaterials } from "../learning/registry";
 import { useProgress } from "../data/progress";
 import { useI18n } from "../../i18n";
+import { useLearner } from "../context/LearnerContext";
+import { getUnitCurriculumDesign } from "../learning/curriculumModel";
+import { getLessonStepLabels, getStoryStepIndex, selectPracticeWordQueue } from "./lessonSequence";
+import { buildUnitAssessmentSample } from "./assessmentBlueprint";
 
 interface Props {
   unitId?: string;
   dispatch: React.Dispatch<Action>;
 }
 
-const STEP_LABELS = [
-  { step: 0, icon: "👁️", name: "1. Scene & Meaning", desc: "Visual discovery" },
-  { step: 1, icon: "🎧", name: "2. Listen & Choose", desc: "Phonetic audio practice" },
-  { step: 2, icon: "✍️", name: "3. Spell the Word", desc: "Letter formation" },
-  { step: 3, icon: "🧠", name: "4. Recall & Match", desc: "Active memory retrieval" },
-  { step: 4, icon: "🧩", name: "5. Word in Context", desc: "Bilingual sentence cloze" },
-  { step: 5, icon: "📖", name: "6. Story & Quiz", desc: "Integrated narrative immersion" },
-];
-
 export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatch }: Props) {
   const { t } = useI18n();
   const world = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
   const { progress } = useProgress();
+  const { state: learnerState } = useLearner();
+  const curriculum = getUnitCurriculumDesign(world);
+  const stepLabels = getLessonStepLabels(
+    learnerState.preferences.englishLevel,
+    learnerState.accessibility.includeListening
+  );
 
   const [openMenuId, setOpenMenuId] = useState<string | null>(null);
   const [expandedStepMenuId, setExpandedStepMenuId] = useState<string | null>(null);
 
-  const isWordLearned = (id: string) => {
-    return (
-      (progress?.wordMemory?.[id]?.exposures || 0) > 0 || (progress?.wordMastery?.[id] || 0) > 0
-    );
+  const isWordStarted = (id: string) => (progress?.wordMemory?.[id]?.exposures || 0) > 0;
+  const isWordSecure = (id: string) => {
+    const mastery = progress?.wordMemory?.[id]?.mastery;
+    return mastery === "familiar" || mastery === "strong";
   };
 
-  const startedGroups = world.groups.filter((g) => g.wordIds.some(isWordLearned)).length;
+  const startedGroups = world.groups.filter((g) => g.wordIds.some(isWordStarted)).length;
   const secondaryAction =
     "min-h-12 rounded-xl border border-border bg-wp-card px-4 py-2 text-foreground font-semibold inline-flex items-center justify-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:bg-secondary";
 
@@ -92,7 +93,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
       lessonId: group.id,
       unitId: world.id,
       mode: "NEW_LESSON",
-      wordQueue: group.wordIds,
+      wordQueue: selectPracticeWordQueue(group.wordIds, progress.wordMemory),
       initialStep,
     });
   };
@@ -107,9 +108,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
   };
 
   const handleTakeAssessment = () => {
-    const allWordIds = world.wordIds;
-    const shuffled = [...allWordIds].sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, 20);
+    const selected = buildUnitAssessmentSample(world.groups);
 
     dispatch({
       type: "START_LESSON",
@@ -139,8 +138,11 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
           </div>
         </div>
         <span className="shrink-0 inline-flex items-center gap-1 font-semibold text-sm bg-secondary text-primary px-3 py-2 rounded-xl">
-          {`A1`}
-          <span className="hidden sm:inline"> {t("lesson.levelBeginner")}</span>
+          {curriculum.cefr}
+          <span className="hidden sm:inline">
+            {" "}
+            · GSE {curriculum.gseRange[0]}–{curriculum.gseRange[1]}
+          </span>
         </span>
       </header>
       <section aria-label="Word groups" className="flex-1 overflow-y-auto min-h-0">
@@ -153,6 +155,25 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
               {t("lesson.selectWordGroup")}
             </h2>
             <p className="text-muted-foreground mt-2">{t("lesson.chooseGroupDesc")}</p>
+            <div className="mt-4 rounded-2xl border border-primary/30 bg-primary/5 p-4 sm:p-5">
+              <p className="text-xs font-black uppercase tracking-wider text-primary">
+                Unit outcome
+              </p>
+              <p className="mt-1 text-sm font-semibold leading-relaxed text-foreground">
+                {curriculum.outcome}
+              </p>
+              {hasLearningMaterials(world.id) && (
+                <button
+                  type="button"
+                  onClick={() =>
+                    dispatch({ type: "GO", to: "learning-materials", unitId: world.id })
+                  }
+                  className="mt-4 min-h-12 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                >
+                  Start guided learning path
+                </button>
+              )}
+            </div>
             <div className="flex flex-wrap gap-3 mt-4">
               <button type="button" onClick={handleTakeAssessment} className={secondaryAction}>
                 <GraduationCap className="size-5" aria-hidden />
@@ -201,9 +222,9 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
           </div>
           <ul className="flex flex-col gap-4">
             {world.groups.map((g, index) => {
-              const learnedCount = g.wordIds.filter(isWordLearned).length;
+              const learnedCount = g.wordIds.filter(isWordSecure).length;
               const isCompleted = learnedCount === g.wordIds.length && g.wordIds.length > 0;
-              const hasStarted = learnedCount > 0 && !isCompleted;
+              const hasStarted = g.wordIds.some(isWordStarted) && !isCompleted;
               const action = isCompleted ? "Review" : hasStarted ? "Continue" : "Start";
               const count = learnedCount
                 ? `${learnedCount} of ${g.wordIds.length} learned`
@@ -367,7 +388,15 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                           <button
                             type="button"
                             role="menuitem"
-                            onClick={() => handleStartGroup(g.id, 5)}
+                            onClick={() =>
+                              handleStartGroup(
+                                g.id,
+                                getStoryStepIndex(
+                                  learnerState.preferences.englishLevel,
+                                  learnerState.accessibility.includeListening
+                                )
+                              )
+                            }
                             className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                           >
                             <div className="size-8 rounded-lg bg-wp-amber/10 text-wp-amber flex items-center justify-center shrink-0">
@@ -449,7 +478,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
 
                             {expandedStepMenuId === g.id && (
                               <div className="ps-2 pe-1 py-1 space-y-0.5 max-h-48 overflow-y-auto">
-                                {STEP_LABELS.map((item) => (
+                                {stepLabels.map((item) => (
                                   <button
                                     key={item.step}
                                     type="button"
@@ -460,7 +489,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                                     <span className="text-sm">{item.icon}</span>
                                     <div className="flex-1 min-w-0">
                                       <p className="font-sans font-medium text-xs truncate">
-                                        {item.name}
+                                        {item.step + 1}. {item.name}
                                       </p>
                                     </div>
                                   </button>

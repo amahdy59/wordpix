@@ -4,16 +4,12 @@ import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
 import { Trophy, Star, CheckCircle2, Layers, Sparkles, ShieldCheck } from "lucide-react";
-import {
-  COURSE_UNITS,
-  resolveGroup,
-  resolveUnitForLesson,
-  getNextGroupChronological,
-} from "../data/lessons";
+import { resolveGroup, resolveUnitForLesson, getNextGroupChronological } from "../data/lessons";
 import { getWords } from "../data/vocabulary";
 import { useProgress } from "../data/progress";
 import { useSound } from "../shared/useSound";
 import { useI18n } from "../../i18n";
+import { ASSESSMENT_PASS_PERCENT } from "./assessmentBlueprint";
 
 interface Props {
   sessionId?: string;
@@ -48,27 +44,20 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
 
   const isAssessment = mode === "UNIT_ASSESSMENT";
   const isPreLessonAssessment = mode === "PRE_LESSON_ASSESSMENT";
+  const attemptedWordIds = new Set(attempts.map((attempt) => attempt.wordId));
+  const hasFullCoverage = wordQueue.every((wordId) => attemptedWordIds.has(wordId));
   const assessmentPassed =
     (isAssessment || isPreLessonAssessment) &&
-    accuracy === 100 &&
-    attempts.length === wordQueue.length;
+    accuracy >= ASSESSMENT_PASS_PERCENT &&
+    hasFullCoverage;
 
   useEffect(() => {
     if (isAssessment) {
-      if (unitId && assessmentPassed) {
-        // Find all word IDs in the entire unit
-        const unit =
-          Object.values(COURSE_UNITS).find((u) => u.id === unitId) || COURSE_UNITS[unitId || ""];
-        if (unit) {
-          const allWordIds = unit.wordIds;
-          recordUnitAssessmentCompletion(true, allWordIds);
-        }
-      }
+      if (assessmentPassed) recordUnitAssessmentCompletion(true, wordQueue);
       recordSessionCompletion(sessionId, attempts, wordQueue);
     } else if (isPreLessonAssessment) {
       if (assessmentPassed) {
-        // Instantly master the words in this group
-        recordUnitAssessmentCompletion(true, group.wordIds);
+        recordUnitAssessmentCompletion(true, wordQueue);
       }
       recordSessionCompletion(sessionId, attempts, wordQueue);
     } else {
@@ -91,7 +80,6 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
     isPreLessonAssessment,
     assessmentPassed,
     unitId,
-    group.wordIds,
   ]);
 
   // Read the credited amount back out of the ledger rather than recomputing it.
@@ -135,8 +123,8 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             <p className="font-sans font-semibold text-white/60 text-base mt-2">
               {isAssessment
                 ? assessmentPassed
-                  ? `You answered every word correctly in this unit test.`
-                  : `You need 100% to test out of this unit.`
+                  ? `You demonstrated the sampled objectives. They are scheduled for spaced review.`
+                  : `Reach ${ASSESSMENT_PASS_PERCENT}% across the sampled objectives to pass this checkpoint.`
                 : isStrongSession
                   ? `You recalled these ${groupWords.length} words well in this session.`
                   : `You completed practice for ${groupWords.length} words.`}
@@ -182,8 +170,8 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             <p className="font-sans font-semibold text-muted-foreground text-sm">
               {isAssessment
                 ? assessmentPassed
-                  ? `Answered every word correctly in this unit test.`
-                  : `You need 100% to test out of this unit.`
+                  ? `You demonstrated the sampled objectives. They are scheduled for spaced review.`
+                  : `Reach ${ASSESSMENT_PASS_PERCENT}% across the sampled objectives to pass this checkpoint.`
                 : isStrongSession
                   ? `Recalled ${groupWords.length} vocabulary words well in this session.`
                   : `Completed session for ${groupWords.length} words.`}
