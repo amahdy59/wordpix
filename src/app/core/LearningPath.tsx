@@ -1,5 +1,13 @@
-import { memo, useMemo } from "react";
-import { ArrowRight, BookOpen, CheckCircle2, Library, Route, Sparkles } from "lucide-react";
+import { memo, useMemo, useState } from "react";
+import {
+  ArrowRight,
+  BookOpen,
+  CheckCircle2,
+  ChevronDown,
+  Library,
+  Route,
+  Sparkles,
+} from "lucide-react";
 import type { Action } from "../types";
 import { COURSE_UNITS, type CourseUnit } from "../data/lessons";
 import { FOUNDATION_SEQUENCE } from "../data/curriculumSequence";
@@ -54,6 +62,13 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
   const totalWords = pathUnits.reduce((sum, item) => sum + item.unit.wordIds.length, 0);
   const masteredWords = pathUnits.reduce((sum, item) => sum + item.mastered, 0);
   const pathPercent = totalWords ? Math.round((masteredWords / totalWords) * 100) : 0;
+
+  const recommendedIndex = pathUnits.findIndex((item) => item.unit.id === recommendedUnit?.id);
+  const currentPhaseIndex = Math.max(
+    0,
+    PHASES.findIndex((phase) => recommendedIndex >= phase.start && recommendedIndex < phase.end)
+  );
+  const [expandedPhase, setExpandedPhase] = useState(currentPhaseIndex);
 
   if (!recommendedUnit) return null;
 
@@ -121,87 +136,112 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         </button>
       </section>
 
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-4">
         {PHASES.map((phase, phaseIndex) => {
           const units = pathUnits.slice(phase.start, phase.end);
+          const isExpanded = expandedPhase === phaseIndex;
+          const completedCount = units.filter((item) => item.percent === 100).length;
           return (
-            <section key={phase.key} aria-labelledby={`path-phase-${phaseIndex}`}>
-              <div className="mb-3 flex items-baseline justify-between gap-3">
-                <h2
-                  id={`path-phase-${phaseIndex}`}
-                  className="font-sans text-lg font-black text-foreground sm:text-xl"
-                >
-                  {t(phase.key)}
-                </h2>
-                <span className="text-xs font-semibold text-muted-foreground">
-                  {t("learn.stepsRange", { start: phase.start + 1, end: phase.end })}
+            <section
+              key={phase.key}
+              aria-labelledby={`path-phase-${phaseIndex}`}
+              className="rounded-2xl border border-border bg-wp-card p-3 sm:p-4"
+            >
+              <button
+                type="button"
+                onClick={() => setExpandedPhase(isExpanded ? -1 : phaseIndex)}
+                aria-expanded={isExpanded}
+                aria-controls={`path-phase-content-${phaseIndex}`}
+                className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-xl px-2 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <span>
+                  <span
+                    id={`path-phase-${phaseIndex}`}
+                    className="block font-sans text-lg font-black text-foreground sm:text-xl"
+                  >
+                    {t(phase.key)}
+                  </span>
+                  <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
+                    {t("learn.phaseSummary", {
+                      complete: completedCount,
+                      total: units.length,
+                      start: phase.start + 1,
+                      end: phase.end,
+                    })}
+                  </span>
                 </span>
-              </div>
+                <ChevronDown
+                  className={`size-5 shrink-0 text-muted-foreground transition-transform ${isExpanded ? "rotate-180" : ""}`}
+                  aria-hidden
+                />
+              </button>
 
-              <ol className="grid gap-3">
-                {units.map(({ unit, mastered, percent }, index) => {
-                  const step = phase.start + index + 1;
-                  const design = getUnitCurriculumDesign(unit);
-                  const isCurrent = unit.id === recommendedUnit.id;
-                  const isComplete = percent === 100;
+              {isExpanded && (
+                <ol id={`path-phase-content-${phaseIndex}`} className="mt-3 grid gap-3">
+                  {units.map(({ unit, mastered, percent }, index) => {
+                    const step = phase.start + index + 1;
+                    const design = getUnitCurriculumDesign(unit);
+                    const isCurrent = unit.id === recommendedUnit.id;
+                    const isComplete = percent === 100;
 
-                  return (
-                    <li key={unit.id}>
-                      <button
-                        type="button"
-                        onClick={() =>
-                          dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
-                        }
-                        className={`grid min-h-[96px] w-full grid-cols-[auto_1fr_auto] items-center gap-3 rounded-2xl border p-4 text-start transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:gap-4 ${
-                          isCurrent
-                            ? "border-primary/50 bg-primary/10 shadow-wp-xs"
-                            : "border-border bg-wp-card hover:border-primary/35 hover:bg-muted/30"
-                        }`}
-                        aria-current={isCurrent ? "step" : undefined}
-                      >
-                        <span
-                          className={`flex size-11 shrink-0 items-center justify-center rounded-xl text-sm font-black ${
-                            isComplete
-                              ? "bg-wp-green text-wp-text-on-green"
-                              : isCurrent
-                                ? "bg-primary text-primary-foreground"
-                                : "bg-muted text-foreground"
+                    return (
+                      <li key={unit.id}>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
+                          }
+                          className={`grid min-h-[96px] w-full grid-cols-[auto_1fr_auto] items-center gap-3 rounded-2xl border p-4 text-start transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:gap-4 ${
+                            isCurrent
+                              ? "border-primary/50 bg-primary/10 shadow-wp-xs"
+                              : "border-border bg-wp-card hover:border-primary/35 hover:bg-muted/30"
                           }`}
+                          aria-current={isCurrent ? "step" : undefined}
                         >
-                          {isComplete ? <CheckCircle2 className="size-5" aria-hidden /> : step}
-                        </span>
-
-                        <span className="min-w-0">
-                          <span className="flex flex-wrap items-center gap-2">
-                            <span className="font-sans text-sm font-black text-foreground sm:text-base">
-                              {unit.name}
-                            </span>
-                            <Badge variant="primary" size="sm">
-                              {design.cefr}
-                            </Badge>
+                          <span
+                            className={`flex size-11 shrink-0 items-center justify-center rounded-xl text-sm font-black ${
+                              isComplete
+                                ? "bg-wp-green text-wp-text-on-green"
+                                : isCurrent
+                                  ? "bg-primary text-primary-foreground"
+                                  : "bg-muted text-foreground"
+                            }`}
+                          >
+                            {isComplete ? <CheckCircle2 className="size-5" aria-hidden /> : step}
                           </span>
-                          <span className="mt-1 line-clamp-2 block text-xs leading-relaxed text-muted-foreground sm:text-sm">
-                            {design.outcome}
-                          </span>
-                          {(mastered > 0 || isCurrent) && (
-                            <span className="mt-2 block text-xs font-semibold text-primary">
-                              {t("learn.wordsMastered", {
-                                mastered,
-                                total: unit.wordIds.length,
-                              })}
-                            </span>
-                          )}
-                        </span>
 
-                        <ArrowRight
-                          className="size-5 shrink-0 text-muted-foreground rtl:rotate-180"
-                          aria-hidden
-                        />
-                      </button>
-                    </li>
-                  );
-                })}
-              </ol>
+                          <span className="min-w-0">
+                            <span className="flex flex-wrap items-center gap-2">
+                              <span className="font-sans text-sm font-black text-foreground sm:text-base">
+                                {unit.name}
+                              </span>
+                              <Badge variant="primary" size="sm">
+                                {design.cefr}
+                              </Badge>
+                            </span>
+                            <span className="mt-1 line-clamp-2 block text-xs leading-relaxed text-muted-foreground sm:text-sm">
+                              {design.outcome}
+                            </span>
+                            {(mastered > 0 || isCurrent) && (
+                              <span className="mt-2 block text-xs font-semibold text-primary">
+                                {t("learn.wordsMastered", {
+                                  mastered,
+                                  total: unit.wordIds.length,
+                                })}
+                              </span>
+                            )}
+                          </span>
+
+                          <ArrowRight
+                            className="size-5 shrink-0 text-muted-foreground rtl:rotate-180"
+                            aria-hidden
+                          />
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ol>
+              )}
             </section>
           );
         })}

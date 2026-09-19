@@ -32,15 +32,9 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
   const [selectedModuleId, setSelectedModuleId] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
-  // Initialize expanded modules for all available modules dynamically
-  const [expandedModules, setExpandedModules] = useState<Record<string, boolean>>(() => {
-    const initial: Record<string, boolean> = {};
-    COURSE_MODULES.forEach((mod, idx) => {
-      // Expand level 1 by default, or all if preferred
-      initial[mod.id] = idx === 0 || mod.level === 1;
-    });
-    return initial;
-  });
+  // Collections begin collapsed so the library opens as an overview instead
+  // of rendering dozens of competing unit cards before the learner chooses.
+  const [expandedModules, setExpandedModules] = useState<Record<string, boolean>>({});
 
   const tabListId = useId();
   const searchInputId = useId();
@@ -191,20 +185,30 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
             </p>
           </div>
 
-          <div className="flex flex-col sm:items-end gap-2 shrink-0 bg-primary/5 p-4 rounded-2xl border border-primary/20">
+          <div className="flex shrink-0 flex-col gap-1.5 rounded-2xl border border-primary/20 bg-primary/5 p-4 sm:items-end">
             <div className="flex items-center gap-2">
               <Award className="size-5 text-primary" />
               <span className="font-bold text-foreground text-sm">
-                {t("explore.curriculumMastery")}
+                {overallStats.masteredWords > 0
+                  ? t("explore.curriculumMastery")
+                  : t("explore.topicsAvailable")}
               </span>
             </div>
-            <span className="font-black text-2xl text-primary">{overallStats.percent}%</span>
-            <span className="text-xs text-muted-foreground font-medium">
-              {t("explore.masteryFraction", {
-                mastered: num(overallStats.masteredWords),
-                total: num(overallStats.totalWords),
-              })}
-            </span>
+            {overallStats.masteredWords > 0 ? (
+              <>
+                <span className="font-black text-2xl text-primary">{overallStats.percent}%</span>
+                <span className="text-xs text-muted-foreground font-medium">
+                  {t("explore.masteryFraction", {
+                    mastered: num(overallStats.masteredWords),
+                    total: num(overallStats.totalWords),
+                  })}
+                </span>
+              </>
+            ) : (
+              <span className="font-black text-2xl text-primary">
+                {num(overallStats.totalUnits)}
+              </span>
+            )}
           </div>
         </div>
 
@@ -269,7 +273,10 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                   key={mod.id}
                   type="button"
                   aria-pressed={isSelected}
-                  onClick={() => setSelectedModuleId(mod.id)}
+                  onClick={() => {
+                    setSelectedModuleId(mod.id);
+                    setExpandedModules({ [mod.id]: true });
+                  }}
                   className={`min-h-[44px] px-3.5 py-2 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue ${
                     isSelected
                       ? "bg-wp-blue text-wp-text-on-blue border-wp-blue shadow-wp-xs"
@@ -289,7 +296,10 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                   key={mod.id}
                   type="button"
                   aria-pressed={isSelected}
-                  onClick={() => setSelectedModuleId(mod.id)}
+                  onClick={() => {
+                    setSelectedModuleId(mod.id);
+                    setExpandedModules({ [mod.id]: true });
+                  }}
                   className={`min-h-[44px] px-3.5 py-2 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue ${
                     isSelected
                       ? "bg-wp-blue text-wp-text-on-blue border-wp-blue shadow-wp-xs"
@@ -330,7 +340,8 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                 unitCount: 0,
                 completedUnits: 0,
               };
-              const isExpanded = expandedModules[module.id] ?? false;
+              const isExpanded =
+                Boolean(searchQuery.trim()) || (expandedModules[module.id] ?? false);
               const units = module.unitIds
                 .map((id) => COURSE_UNITS[id])
                 .filter(Boolean) as CourseUnit[];
@@ -371,17 +382,19 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                     </div>
 
                     <div className="flex items-center gap-3 shrink-0">
-                      <div className="hidden sm:flex flex-col items-end gap-1">
-                        <span className="text-xs font-bold text-foreground">
-                          {t("explore.percentComplete", { percent: stats.percent })}
-                        </span>
-                        <span className="text-[11px] text-muted-foreground">
-                          {t("explore.masteredCount", {
-                            mastered: num(stats.masteredWords),
-                            total: num(stats.totalWords),
-                          })}
-                        </span>
-                      </div>
+                      {stats.masteredWords > 0 && (
+                        <div className="hidden flex-col items-end gap-1 sm:flex">
+                          <span className="text-xs font-bold text-foreground">
+                            {t("explore.percentComplete", { percent: stats.percent })}
+                          </span>
+                          <span className="text-[11px] text-muted-foreground">
+                            {t("explore.masteredCount", {
+                              mastered: num(stats.masteredWords),
+                              total: num(stats.totalWords),
+                            })}
+                          </span>
+                        </div>
+                      )}
                       <div
                         className={`p-2 rounded-full bg-wp-card border border-border transition-transform duration-200 ${
                           isExpanded ? "rotate-180" : ""
@@ -392,18 +405,19 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                     </div>
                   </button>
 
-                  {/* Module Progress Bar */}
-                  <div className="px-2">
-                    <ProgressBar
-                      progressPercent={stats.percent}
-                      label={t("explore.collectionProgress", { number: module.level })}
-                      labelRight={`${stats.percent}% (${stats.masteredWords}/${stats.totalWords} words)`}
-                      ariaLabel={t("explore.collectionProgressAria", {
-                        number: module.level,
-                        percent: stats.percent,
-                      })}
-                    />
-                  </div>
+                  {stats.masteredWords > 0 && (
+                    <div className="px-2">
+                      <ProgressBar
+                        progressPercent={stats.percent}
+                        label={t("explore.collectionProgress", { number: module.level })}
+                        labelRight={`${stats.percent}% (${stats.masteredWords}/${stats.totalWords} words)`}
+                        ariaLabel={t("explore.collectionProgressAria", {
+                          number: module.level,
+                          percent: stats.percent,
+                        })}
+                      />
+                    </div>
+                  )}
 
                   {/* Units Grid / List */}
                   <AnimatePresence initial={false}>
@@ -430,10 +444,10 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                           return (
                             <div
                               key={unit.id}
-                              className="bg-wp-card rounded-2xl border border-border p-4 flex flex-col justify-between gap-4 shadow-wp-xs hover:border-primary/50 transition-colors relative overflow-hidden"
+                              className="relative flex flex-col justify-between gap-3 overflow-hidden rounded-2xl border border-border bg-wp-card p-3.5 shadow-wp-xs transition-colors hover:border-primary/50"
                             >
                               {/* Unit Image Banner with responsive aspect ratio */}
-                              <div className="relative aspect-[16/9] min-h-[140px] max-h-[190px] rounded-xl overflow-hidden shrink-0 border border-border shadow-wp-xs">
+                              <div className="relative aspect-[16/9] min-h-[120px] max-h-[170px] shrink-0 overflow-hidden rounded-xl border border-border shadow-wp-xs">
                                 {unit.heroImage ? (
                                   <img
                                     alt={`${unit.name} visual learning scene`}
@@ -493,19 +507,21 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                                     {t("explore.wordsBadge", { count: num(totalWords) })}
                                   </span>
                                 </div>
-                                <p className="font-sans text-muted-foreground text-xs leading-relaxed line-clamp-2">
-                                  {unit.description}
+                                <p className="line-clamp-2 font-sans text-xs leading-relaxed text-muted-foreground">
+                                  {curriculum.outcome}
                                 </p>
                               </div>
 
                               {/* Progress & Action CTA */}
-                              <div className="flex flex-col gap-2.5 pt-1 border-t border-border/60">
-                                <ProgressBar
-                                  progressPercent={unitPercent}
-                                  label="Unit progress"
-                                  labelRight={`${unitPercent}%`}
-                                  ariaLabel={`${unit.name} progress: ${unitPercent}%`}
-                                />
+                              <div className="flex flex-col gap-2.5 border-t border-border/60 pt-2.5">
+                                {wordsPracticedCount > 0 && (
+                                  <ProgressBar
+                                    progressPercent={unitPercent}
+                                    label="Unit progress"
+                                    labelRight={`${unitPercent}%`}
+                                    ariaLabel={`${unit.name} progress: ${unitPercent}%`}
+                                  />
+                                )}
 
                                 <div className="flex items-center gap-2">
                                   <motion.button

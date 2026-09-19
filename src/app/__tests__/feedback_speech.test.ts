@@ -1,116 +1,60 @@
 import { describe, expect, it } from "vitest";
-import { buildFeedbackSpeech } from "../exercises/feedbackSpeech";
+import { buildFeedbackSequence, buildFeedbackSpeech } from "../exercises/feedbackSpeech";
 
-describe("buildFeedbackSpeech", () => {
-  it("names the word on a correct answer", () => {
-    const line = buildFeedbackSpeech({ correct: true, targetLabel: "Faucet", variant: 0 });
-    expect(line).toBe("Correct! This is a faucet.");
+describe("brief spoken feedback", () => {
+  it("keeps correct feedback short and encouraging", () => {
+    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Faucet", variant: 0 })).toBe(
+      "Excellent!"
+    );
   });
 
-  it("names both words on a wrong answer, ending on the right one", () => {
+  it("keeps corrective feedback short without naming either option", () => {
     const line = buildFeedbackSpeech({
       correct: false,
       targetLabel: "Faucet",
       chosenLabel: "Mirror",
       variant: 0,
     });
-    expect(line).toBe("Not quite. That's a mirror. This is a faucet.");
-    // Ending on the target is the point: it is the word worth remembering.
-    expect(line.trimEnd().endsWith("faucet.")).toBe(true);
+
+    expect(line).toBe("Not quite.");
+    expect(line).not.toMatch(/faucet|mirror|this is|that is/i);
   });
 
-  it("picks the article from the sound of the word", () => {
-    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Umbrella", variant: 0 })).toBe(
-      "Correct! This is an umbrella."
+  it("rotates brief praise so repeated questions do not grate", () => {
+    const lines = new Set(
+      Array.from({ length: 5 }, (_, variant) =>
+        buildFeedbackSpeech({ correct: true, targetLabel: "Faucet", variant })
+      )
     );
-    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Towel", variant: 0 })).toBe(
-      "Correct! This is a towel."
-    );
-    // Sound, not spelling: the old rule read these off the first letter and
-    // said "a hourglass" and "an uniform" to learners.
-    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Hourglass", variant: 0 })).toBe(
-      "Correct! This is an hourglass."
-    );
-    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Uniform", variant: 0 })).toBe(
-      "Correct! This is a uniform."
+    expect(lines).toEqual(
+      new Set(["Excellent!", "Great job!", "Well done!", "Nice work!", "Exactly!"])
     );
   });
 
-  it("agrees with the number and countability of the word", () => {
-    // The bug this suite was extended for. Every one of these used to come
-    // back as "This is a <label>."
-    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Pliers", variant: 0 })).toBe(
-      "Correct! This is a pair of pliers."
-    );
-    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Eggs", variant: 0 })).toBe(
-      "Correct! These are eggs."
-    );
-    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Water", variant: 0 })).toBe(
-      "Correct! This is water."
-    );
+  it("rotates kind correction phrases", () => {
     expect(
-      buildFeedbackSpeech({
-        correct: true,
-        targetLabel: "Run",
-        targetTopic: "movement-verbs",
-        variant: 0,
-      })
-    ).toBe("Correct! The word is “run”.");
+      Array.from({ length: 3 }, (_, variant) =>
+        buildFeedbackSpeech({ correct: false, targetLabel: "Faucet", variant })
+      )
+    ).toEqual(["Not quite.", "Almost.", "Try again."]);
   });
 
-  it("keeps both halves of a contrast in agreement", () => {
+  it("builds one audio segment so feedback remains gapless", () => {
     expect(
-      buildFeedbackSpeech({
+      buildFeedbackSequence({
         correct: false,
         targetLabel: "Pliers",
         chosenLabel: "Eggs",
-        variant: 0,
+        variant: 2,
       })
-    ).toBe("Not quite. Those are eggs. This is a pair of pliers.");
-  });
-
-  it("lowercases multi-word labels", () => {
-    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Bath Towel", variant: 0 })).toBe(
-      "Correct! This is a bath towel."
-    );
-  });
-
-  it("rotates the opener so repetition does not grate", () => {
-    const openers = new Set(
-      Array.from({ length: 5 }, (_, i) =>
-        buildFeedbackSpeech({ correct: true, targetLabel: "Faucet", variant: i })
-      )
-    );
-    expect(openers.size).toBeGreaterThan(1);
-  });
-
-  it("still names the target when nothing was chosen", () => {
-    const line = buildFeedbackSpeech({
-      correct: false,
-      targetLabel: "Faucet",
-      chosenLabel: null,
-      variant: 0,
-    });
-    expect(line).toBe("Not quite. This is a faucet.");
-  });
-
-  it("does not contrast a word with itself", () => {
-    // Defensive: if the choice and the answer carry the same label, "That's a
-    // faucet. This is a faucet." would be nonsense.
-    const line = buildFeedbackSpeech({
-      correct: false,
-      targetLabel: "Faucet",
-      chosenLabel: "faucet",
-      variant: 0,
-    });
-    expect(line).toBe("Not quite. This is a faucet.");
+    ).toEqual(["Try again."]);
   });
 
   it("survives any counter a caller passes", () => {
     for (const variant of [0, 7, 1000, -3, 2.7]) {
       const line = buildFeedbackSpeech({ correct: true, targetLabel: "Faucet", variant });
-      expect(line).toMatch(/This is a faucet\.$/);
       expect(line).not.toMatch(/undefined/);
+      expect(line.length).toBeLessThan(20);
     }
   });
 });

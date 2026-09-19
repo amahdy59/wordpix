@@ -187,27 +187,23 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           <span>{t("exercise.positionOf", { current: queue.position, total: queue.total })}</span>
         </>
       }
-      // The keyboard hint is shown only where there is a keyboard.
-      // `pointer-fine` asks the device directly, which a width breakpoint only
-      // guesses at: a tablet in landscape is wide and still has nothing to
-      // press "1" with, and telling a learner to press a key they do not have
-      // is noise in the one strip of the screen reserved for what to do next.
-      footer={
-        <div className="w-full hidden pointer-fine:flex items-center justify-center text-xs font-sans font-semibold text-muted-foreground px-1">
-          <div className="flex items-center gap-1.5 text-muted-foreground font-medium">
-            <Keyboard className="size-4" aria-hidden />
-            <span>{t("exercise.pressNumberRecall", { count: displayCards.length })}</span>
-          </div>
-        </div>
-      }
     >
-      <div className="relative flex flex-col gap-4 md:gap-6 w-full max-w-5xl mx-auto">
-        <div className="flex flex-col items-center gap-2">
+      <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-3 sm:gap-4">
+        <div className="flex flex-col items-center justify-between gap-3 sm:flex-row">
+          <div className="text-center sm:text-start">
+            <p className="font-sans text-sm font-bold text-foreground sm:text-base">
+              {t("exercise.choosePictureHeard")}
+            </p>
+            <div className="mt-1 hidden items-center gap-1.5 text-xs font-medium text-muted-foreground pointer-fine:flex">
+              <Keyboard className="size-4" aria-hidden />
+              <span>{t("exercise.pressNumberRecall", { count: displayCards.length })}</span>
+            </div>
+          </div>
           <button
             type="button"
             onClick={replayAudio}
             aria-label={t("exercise.replayAudio")}
-            className="min-h-12 px-6 rounded-xl border border-border bg-wp-card text-primary font-bold flex items-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="flex min-h-12 shrink-0 items-center gap-2 rounded-xl border border-border bg-wp-card px-6 font-bold text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Volume2
               className={`size-5 ${isPlaying ? "motion-safe:animate-pulse" : ""}`}
@@ -226,7 +222,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         <div
           role="group"
           aria-label="Choose matching picture for audio prompt"
-          className="grid grid-cols-2 [@media(min-width:640px)_and_(max-height:700px)]:grid-cols-4 gap-3 sm:gap-4 md:gap-5 w-full"
+          className="grid w-full grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4 lg:gap-5"
         >
           {displayCards.map((card, idx) => {
             const isSelected = selectedId === card.id;
@@ -258,7 +254,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleCardClick(card)}
-                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full aspect-[4/5] sm:aspect-[16/9] min-h-[110px] max-h-[min(32dvh,300px)] block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary shadow-wp-sm ${cardStateStyle}`}
+                className={`group relative block aspect-[4/3] min-h-[110px] w-full overflow-hidden rounded-2xl shadow-wp-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary sm:aspect-[16/10] lg:aspect-[4/3] lg:max-h-[260px] ${cardStateStyle}`}
               >
                 <span
                   aria-hidden
@@ -346,7 +342,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             >
               <span className="font-sans font-semibold text-foreground text-sm">
                 {feedback === "correct"
-                  ? `✓ That is "${currentTargetWord.label}".`
+                  ? "✓ Excellent!"
                   : `✕ The picture you heard was "${currentTargetWord.label}".`}
               </span>
               <button

@@ -148,6 +148,7 @@
     "phasePeoplePlaces": "People and familiar places",
     "phaseInteraction": "Everyday interaction",
     "stepsRange": "Steps {start}–{end}",
+    "phaseSummary": "Steps {start}–{end} · {complete} of {total} complete",
     "wordsMastered": "{mastered} of {total} words mastered"
   },
   "explore": {
@@ -160,6 +161,7 @@
     "pageTitle": "Browse English by topic",
     "pageSubtitle": "Explore themed vocabulary collections at your own pace. Your guided sequence remains in Learn.",
     "curriculumMastery": "Library mastery",
+    "topicsAvailable": "Topic units available",
     "masteryFraction": "{mastered} / {total} words mastered",
     "searchLabel": "Search units or vocabulary",
     "searchPlaceholder": "Search units, topics, or words…",
@@ -194,6 +196,8 @@
     "settings": "Settings",
     "signInSync": "Sign In / Sync",
     "retentionMeasures": "Adaptive Memory & Retention Measures",
+    "statsEmptyTitle": "Your learning insights will appear here",
+    "statsEmptyHint": "Complete your first practice session to begin tracking recall, mastery, and review timing.",
     "statsAria": "Genuine memory statistics"
   },
   "wordDetails": {
@@ -277,8 +281,8 @@
     "timedExercisesHint": "Turn off to remove every countdown. Timers can also be paused or extended while running.",
     "autoAdvance": "Move On Automatically",
     "autoAdvanceHint": "Lessons advance a moment after each answer. Turn off to move on with a button instead.",
-    "speakAnswers": "Speak Answers Aloud",
-    "speakAnswersHint": "Says the word after each answer — “Correct! This is a faucet.” / “These are pliers.” Turn off to keep the chime only.",
+    "speakAnswers": "Brief Spoken Feedback",
+    "speakAnswersHint": "Plays a short phrase such as “Excellent!” or “Try again.” after each answer. Turn off to keep the chime only.",
     "listeningDrills": "Include Listening Drills",
     "listeningDrillsHint": "Disable if hard-of-hearing or without headphones.",
     "goalsHeading": "Target Level & Daily Goals",
@@ -614,6 +618,7 @@
     "pressNumberToChoose": "Press 1–{count} to choose an option",
     "pressNumberToChooseWord": "Press 1–{count} to choose a word",
     "pressNumberRecall": "Press 1–{count} to choose · R to replay audio",
+    "choosePictureHeard": "Choose the picture you hear",
     "whichPictureShows": "Which picture shows “{word}”?",
     "chooseCorrectWord": "Choose the correct word that matches the picture",
     "sentenceAssemblyCanvas": "Sentence Assembly Canvas",

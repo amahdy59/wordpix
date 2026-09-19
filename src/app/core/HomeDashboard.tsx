@@ -4,7 +4,6 @@ import {
   RotateCcw,
   WifiOff,
   CheckCircle2,
-  Trophy,
   Library,
   Target,
   BookOpen,
@@ -118,6 +117,37 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         )}
       </header>
 
+      <section
+        aria-label={t("dashboard.dailyTarget")}
+        className="flex flex-wrap items-center gap-x-3 gap-y-2 rounded-2xl border border-border bg-wp-card px-4 py-3"
+      >
+        <div className="flex items-center gap-2 text-sm font-bold text-foreground">
+          <Target className="size-4 text-primary" aria-hidden />
+          <span>{t("dashboard.dailyTarget")}</span>
+        </div>
+        <div
+          className="h-2 min-w-24 flex-1 overflow-hidden rounded-full bg-muted"
+          role="progressbar"
+          aria-label={`Daily word target: ${todayReviewedCount} of ${dailyWordTarget} words`}
+          aria-valuemin={0}
+          aria-valuemax={dailyWordTarget}
+          aria-valuenow={Math.min(todayReviewedCount, dailyWordTarget)}
+        >
+          <div
+            className="h-full rounded-full bg-primary motion-safe:transition-all"
+            style={{ width: `${dailyTargetPct}%` }}
+          />
+        </div>
+        <span className="text-xs font-bold text-muted-foreground">
+          {isDailyTargetMet
+            ? t("dashboard.targetMet")
+            : t("dashboard.wordsProgress", {
+                current: num(todayReviewedCount),
+                total: num(dailyWordTarget),
+              })}
+        </span>
+      </section>
+
       {/* Main Content: 1 Column on Mobile/Tablet, 2 Column Grid on Desktop (lg+) */}
       <motion.div
         variants={staggerContainer}
@@ -127,39 +157,6 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
       >
         {/* LEFT COLUMN: Main Learning Loop (lg:col-span-7) */}
         <div className="xl:col-span-7 flex flex-col gap-6">
-          {/* SECTION 0: DAILY TARGET PROGRESS */}
-          <motion.div variants={staggerItem}>
-            <Card variant="default" className="border-primary/20 bg-primary/5">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2 font-sans font-bold text-sm text-foreground">
-                  <Target className="size-4 text-primary" aria-hidden />
-                  <span>{t("dashboard.dailyTarget")}</span>
-                </div>
-                {isDailyTargetMet ? (
-                  <Badge variant="green" size="sm" className="flex items-center gap-1 font-bold">
-                    <Trophy className="size-3.5" />
-                    <span>{t("dashboard.targetMet")}</span>
-                  </Badge>
-                ) : (
-                  <Badge variant="muted" size="sm">
-                    {t("dashboard.wordsProgress", {
-                      current: num(todayReviewedCount),
-                      total: num(dailyWordTarget),
-                    })}
-                  </Badge>
-                )}
-              </div>
-              <div className="mt-2.5">
-                <ProgressBar
-                  progressPercent={dailyTargetPct}
-                  label="Today's words practiced"
-                  labelRight={`${dailyTargetPct}%`}
-                  ariaLabel={`Daily word target: ${todayReviewedCount} of ${dailyWordTarget} words (${dailyTargetPct}%)`}
-                />
-              </div>
-            </Card>
-          </motion.div>
-
           {/* SECTION 1: TODAY'S LESSON */}
           <motion.div variants={staggerItem}>
             <Section id="section-today" title={t("dashboard.today")}>
@@ -247,54 +244,54 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           {/* SECTION 2: REVIEW */}
           <motion.div variants={staggerItem}>
             <Section id="section-review" title={t("dashboard.review")}>
-              <Card variant="default">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
-                    <RotateCcw className="size-4 text-primary" />
-                    <span>{t("dashboard.srsReview")}</span>
-                  </div>
-                  {dueWords.length > 0 ? (
+              {dueWords.length > 0 ? (
+                <Card variant="default">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
+                      <RotateCcw className="size-4 text-primary" />
+                      <span>{t("dashboard.srsReview")}</span>
+                    </div>
                     <Badge variant="amber" size="sm">
                       {t("dashboard.dueToday", { count: num(dueWords.length) })}
                     </Badge>
-                  ) : (
-                    <Badge variant="green" size="sm">
-                      <CheckCircle2 className="size-3.5" />
-                      <span>{t("dashboard.allCaughtUp")}</span>
-                    </Badge>
-                  )}
-                </div>
-                <p className="font-sans text-muted-foreground text-xs leading-relaxed mt-2">
-                  {dueWords.length > 0
-                    ? t("dashboard.retentionPractice", { count: num(dueWords.length) })
-                    : t("dashboard.excellentRetention")}
-                </p>
-                <motion.button
-                  whileHover={{ scale: 1.015 }}
-                  whileTap={{ scale: 0.98 }}
-                  type="button"
-                  onClick={() => {
-                    if (dueWords.length > 0) {
+                  </div>
+                  <p className="font-sans text-muted-foreground text-xs leading-relaxed mt-2">
+                    {t("dashboard.retentionPractice", { count: num(dueWords.length) })}
+                  </p>
+                  <motion.button
+                    whileHover={{ scale: 1.015 }}
+                    whileTap={{ scale: 0.98 }}
+                    type="button"
+                    onClick={() =>
                       dispatch({
                         type: "START_LESSON",
                         lessonId: REVIEW_GROUP_ID,
                         mode: "SMART_REVIEW",
                         wordQueue: dueWords.slice(0, 15).map((w: WordLearningState) => w.wordId),
-                      });
-                    } else {
-                      dispatch({ type: "GO", to: "review" });
+                      })
                     }
-                  }}
-                  className="w-full bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-sm min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
+                    className="w-full bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-sm min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
+                  >
+                    <span>{`Review ${num(Math.min(15, dueWords.length))} Words Now`}</span>
+                    <ArrowRight className="size-4 rtl:rotate-180" />
+                  </motion.button>
+                </Card>
+              ) : (
+                <div
+                  role="status"
+                  className="flex items-start gap-3 rounded-2xl border border-wp-green/30 bg-wp-green-light/30 px-4 py-3"
                 >
-                  <span>
-                    {dueWords.length > 0
-                      ? `Review ${num(Math.min(15, dueWords.length))} Words Now`
-                      : t("dashboard.startReview")}
-                  </span>
-                  <ArrowRight className="size-4 rtl:rotate-180" />
-                </motion.button>
-              </Card>
+                  <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-wp-green" aria-hidden />
+                  <div className="min-w-0">
+                    <Badge variant="green" size="sm">
+                      <span>{t("dashboard.allCaughtUp")}</span>
+                    </Badge>
+                    <p className="mt-1 font-sans text-xs leading-relaxed text-muted-foreground">
+                      {t("dashboard.excellentRetention")}
+                    </p>
+                  </div>
+                </div>
+              )}
             </Section>
           </motion.div>
         </div>

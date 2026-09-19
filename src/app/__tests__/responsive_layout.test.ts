@@ -90,10 +90,11 @@ describe("AppShell responsive components", () => {
 });
 
 describe("Card Grid Responsive Aspect Ratios", () => {
-  it("ExerciseRecallMatch uses portrait mobile and landscape desktop image containers", () => {
+  it("ExerciseRecallMatch uses compact landscape image containers at every breakpoint", () => {
     const source = stripComments(read("exercises/ExerciseRecallMatch.tsx"));
-    expect(source).toMatch(/aspect-\[4\/5\]/);
-    expect(source).toMatch(/sm:aspect-\[16\/9\]/);
+    expect(source).toMatch(/aspect-\[4\/3\]/);
+    expect(source).toMatch(/sm:aspect-\[16\/10\]/);
+    expect(source).toMatch(/lg:grid-cols-4/);
     expect(source).toContain("object-cover");
     expect(source).not.toMatch(/grid-rows-2/);
   });
@@ -102,6 +103,23 @@ describe("Card Grid Responsive Aspect Ratios", () => {
     const source = stripComments(read("exercises/ExerciseQuickQuiz.tsx"));
     expect(source).toMatch(/aspect-\[4\/3\]/);
     expect(source).not.toMatch(/grid-rows-2/);
+  });
+});
+
+describe("Information architecture avoids nested shells", () => {
+  it("lets RouterView own the single AppShell around Practice", () => {
+    const hub = stripComments(read("core/SkillExerciseHub.tsx"));
+    const router = stripComments(read("router/RouterView.tsx"));
+
+    expect(hub).not.toContain("<AppShell");
+    expect(router).toMatch(/state\.id === "practice"/);
+    expect(router).toMatch(/<AppShell/);
+  });
+
+  it("does not vertically center media drills in unused viewport space", () => {
+    const shell = stripComments(read("shared/ExerciseShell.tsx"));
+    expect(shell).toMatch(/max-w-7xl/);
+    expect(shell).not.toMatch(/max-w-7xl[^\n]*my-auto/);
   });
 });
 
@@ -121,6 +139,22 @@ describe("ExploreWorlds 3-Column Responsive Grid", () => {
   it("supports 3-column layout on xl screens and responsive aspect ratio for banners", () => {
     expect(source).toMatch(/xl:grid-cols-3/);
     expect(source).toMatch(/aspect-\[16\/9\]/);
+  });
+
+  it("starts collections collapsed and suppresses empty progress bars", () => {
+    expect(source).toMatch(/useState<Record<string, boolean>>\(\{\}\)/);
+    expect(source).toMatch(/stats\.masteredWords > 0/);
+    expect(source).toMatch(/wordsPracticedCount > 0/);
+  });
+});
+
+describe("Learning path progressive disclosure", () => {
+  const source = stripComments(read("core/LearningPath.tsx"));
+
+  it("opens one pathway phase at a time", () => {
+    expect(source).toMatch(/expandedPhase/);
+    expect(source).toMatch(/aria-expanded=\{isExpanded\}/);
+    expect(source).toMatch(/isExpanded &&/);
   });
 });
 

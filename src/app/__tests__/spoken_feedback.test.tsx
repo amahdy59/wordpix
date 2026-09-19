@@ -46,7 +46,7 @@ describe("useSpokenFeedback", () => {
     vi.unstubAllGlobals();
   });
 
-  it("speaks the answer back, just after the chime", async () => {
+  it("speaks brief feedback just after the chime", async () => {
     const { result } = renderHook(() => useSpokenFeedback());
 
     act(() => result.current.speakFeedback({ correct: true, targetLabel: "Faucet" }));
@@ -73,9 +73,9 @@ describe("useSpokenFeedback", () => {
       await vi.advanceTimersByTimeAsync(200);
     });
 
-    // It should only start playing the second sequence (Mirror's opener)
+    // It should only start the latest brief feedback sequence.
     expect(mockSpeak).toHaveBeenCalledTimes(1);
-    expect(mockSpeak.mock.calls[0][0]).not.toMatch(/Faucet/i);
+    expect(mockSpeak.mock.calls[0][0]).toBe("Great job!");
   });
 
   it("silences an utterance already in flight on cancel", async () => {
@@ -92,10 +92,11 @@ describe("useSpokenFeedback", () => {
     expect(mockStop).toHaveBeenCalled();
   });
 
-  it("holds feedback on screen long enough to finish the sentence", () => {
+  it("keeps brief spoken feedback readable without slowing the drill", () => {
     const { result } = renderHook(() => useSpokenFeedback());
     expect(result.current.delayFor(true)).toBe(SPOKEN_ADVANCE_DELAY_MS.correct);
     expect(result.current.delayFor(false)).toBe(SPOKEN_ADVANCE_DELAY_MS.incorrect);
     expect(result.current.delayFor(true)).toBeGreaterThan(ADVANCE_DELAY_MS.correct);
+    expect(result.current.delayFor(false)).toBeLessThan(2000);
   });
 });

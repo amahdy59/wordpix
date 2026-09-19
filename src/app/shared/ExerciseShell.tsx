@@ -19,7 +19,7 @@ interface Props {
   lessonId: string;
   dispatch: React.Dispatch<Action>;
   children: React.ReactNode;
-  footer: React.ReactNode;
+  footer?: React.ReactNode;
   /** Optional current / total progress inside the exercise to drive progress bar dynamically */
   progress?: { current: number; total: number } | number;
   /** Noun used by the progress bar, for example "Word" or "Question". */
@@ -91,38 +91,27 @@ export const ExerciseShell = memo(function ExerciseShell({
           onClose={() => setShowExitModal(true)}
         />
 
-        {/* Expansive Main Content Area with adaptive scroll for all viewports */}
+        {/* Adaptive activity stage: compact and top-anchored when space is abundant. */}
         <Content
           className="flex-1 overflow-y-auto overflow-x-hidden px-3 sm:px-6 lg:px-10 py-3 sm:py-6 flex flex-col items-center min-h-0 w-full scroll-smooth"
           aria-label={`${group.name}: ${title} exercise`}
         >
-          {/*
-            Content flows from the top on a phone and only centres once there
-            is genuinely room to spare.
-
-            `min-h-full justify-center my-auto` centred every drill inside a
-            box at least as tall as the viewport. On a desktop that reads as
-            balance; on a 390x844 phone it pushed a third of the screen into
-            empty space above the picture and another slab below it, so the
-            exercise floated in a void with its controls shoved off the fold.
-          */}
           <div
             className={
               layout === "media"
-                ? "w-full max-w-[1440px] mx-auto flex flex-col gap-4 my-auto py-1"
-                : "w-full max-w-4xl mx-auto flex flex-col gap-3.5 sm:gap-5 justify-start sm:justify-center sm:min-h-full sm:my-auto pb-4 sm:pb-8"
+                ? "w-full max-w-7xl mx-auto flex flex-col gap-4 justify-start pb-3"
+                : "w-full max-w-4xl mx-auto flex flex-col gap-3.5 sm:gap-5 justify-start pb-4 sm:pb-8"
             }
           >
             {children}
           </div>
         </Content>
 
-        {/* Pinned Footer */}
-        <footer
-          className={`shrink-0 px-3 sm:px-6 lg:px-10 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] pt-3 border-t border-border/60 bg-background flex flex-col mx-auto w-full ${layout === "media" ? "max-w-[1520px]" : "max-w-6xl sm:pb-6"}`}
-        >
-          <div className="flex flex-col gap-1.5 w-full">{footer}</div>
-        </footer>
+        {footer && (
+          <footer className="shrink-0 mx-auto flex w-full max-w-6xl flex-col border-t border-border/60 bg-background px-3 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] pt-3 sm:px-6 sm:pb-6 lg:px-10">
+            <div className="flex w-full flex-col gap-1.5">{footer}</div>
+          </footer>
+        )}
 
         <HomeIndicator />
       </div>

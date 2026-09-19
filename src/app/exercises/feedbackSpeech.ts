@@ -1,45 +1,18 @@
-import {
-  contrastSentence,
-  identifySentence,
-  contrastParts,
-  identifyParts,
-} from "../content/wordGrammar";
-
 /**
- * The sentence spoken back after an answer.
+ * Short spoken outcome feedback after an answer.
  *
- * A chime tells a learner *that* they were right. It cannot tell them *what*
- * the thing was called, which is the entire point of a vocabulary drill — so
- * the earcon stays and this is said on top of it, naming the word every time.
- *
- * Three rules shape the wording.
- *
- * It always names the target, on right answers and wrong ones alike. Hearing
- * "faucet" spoken in a full sentence is the repetition that builds the word,
- * and a learner who guessed correctly still needs to hear it.
- *
- * A wrong answer names both words, in the order wrong-then-right. Naming only
- * the correct one leaves the mistake unaddressed; naming both draws the
- * contrast that makes the next attempt better. Saying it in that order ends
- * the sentence on the word worth remembering.
- *
- * And the opener rotates. This plays after every single question — the same
- * five words several hundred times a session stops being encouragement and
- * starts being noise, so praise varies while the informative half does not.
- *
- * The naming half is built by `wordGrammar`, not here. It used to be a
- * lowercase label with `a` or `an` glued on, which is right for `Lamp` and
- * wrong for most of the corpus: "Correct! This is a pliers." was read aloud to
- * learners, as were "a water", "a run" and "a Monday". Pass `targetTopic` and
- * `chosenTopic` wherever the caller has them — the topic is what tells the
- * classifier that `Slides` are sandals in one unit and glass plates in another.
+ * Vocabulary pronunciation belongs to the prompt and Replay controls. Repeating
+ * a full identification sentence after every answer made the interaction slow
+ * and unnatural, especially when the learner had already heard the word. Keep
+ * this channel to a brief, encouraging outcome; the visual result can still
+ * identify a missed target without forcing extra speech on every learner.
  */
 
 /** Openers for a correct answer, rotated so repetition does not grate. */
-const PRAISE = ["Correct!", "Well done!", "That's right.", "Nice work!", "Exactly."] as const;
+const PRAISE = ["Excellent!", "Great job!", "Well done!", "Nice work!", "Exactly!"] as const;
 
 /** Openers for a wrong answer. Kind, brief, and never scolding. */
-const CORRECTION = ["Not quite.", "Close.", "Almost."] as const;
+const CORRECTION = ["Not quite.", "Almost.", "Try again."] as const;
 
 export interface FeedbackSpeechInput {
   correct: boolean;
@@ -60,52 +33,12 @@ export interface FeedbackSpeechInput {
   variant?: number;
 }
 
-export function buildFeedbackSpeech({
-  correct,
-  targetLabel,
-  targetTopic,
-  chosenLabel,
-  chosenTopic,
-  variant = 0,
-}: FeedbackSpeechInput): string {
-  const target = identifySentence(targetLabel, targetTopic);
-  // A negative or fractional counter would index out of the array; floor and
-  // take the absolute value so any caller's counter is safe.
+export function buildFeedbackSpeech({ correct, variant = 0 }: FeedbackSpeechInput): string {
   const pick = <T>(list: readonly T[]): T => list[Math.abs(Math.floor(variant)) % list.length] as T;
-
-  if (correct) return `${pick(PRAISE)} ${target}`;
-
-  // The learner picked the right word but the drill scored it wrong, or the
-  // chosen label is simply unknown — either way there is no contrast to draw.
-  const sameWord =
-    chosenLabel != null && chosenLabel.toLowerCase().trim() === targetLabel.toLowerCase().trim();
-  if (!chosenLabel || sameWord) return `${pick(CORRECTION)} ${target}`;
-
-  const chosen = contrastSentence(chosenLabel, chosenTopic ?? targetTopic);
-  return `${pick(CORRECTION)} ${chosen} ${target}`;
+  return correct ? pick(PRAISE) : pick(CORRECTION);
 }
 
-export function buildFeedbackSequence({
-  correct,
-  targetLabel,
-  targetTopic,
-  chosenLabel,
-  chosenTopic,
-  variant = 0,
-}: FeedbackSpeechInput): string[] {
-  const targetId = identifyParts(targetLabel, targetTopic);
+export function buildFeedbackSequence({ correct, variant = 0 }: FeedbackSpeechInput): string[] {
   const pick = <T>(list: readonly T[]): T => list[Math.abs(Math.floor(variant)) % list.length] as T;
-
-  if (correct) {
-    return [`${pick(PRAISE)} ${targetId.before}`, targetLabel];
-  }
-
-  const sameWord =
-    chosenLabel != null && chosenLabel.toLowerCase().trim() === targetLabel.toLowerCase().trim();
-  if (!chosenLabel || sameWord) {
-    return [`${pick(CORRECTION)} ${targetId.before}`, targetLabel];
-  }
-
-  const chosenCont = contrastParts(chosenLabel, chosenTopic ?? targetTopic);
-  return [`${pick(CORRECTION)} ${chosenCont.before}`, chosenLabel, targetId.before, targetLabel];
+  return [correct ? pick(PRAISE) : pick(CORRECTION)];
 }

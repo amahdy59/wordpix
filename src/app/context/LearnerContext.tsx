@@ -62,8 +62,8 @@ export interface AccessibilityPreferences {
    */
   autoAdvance: boolean;
   /**
-   * When true, each answer is spoken back as a sentence naming the word, on
-   * top of the existing chime.
+   * When true, each answer receives a brief spoken encouragement on top of the
+   * existing chime. Vocabulary pronunciation remains available through Replay.
    *
    * Switchable because sound that plays automatically after every question has
    * to be (WCAG 1.4.2, Audio Control), and because a learner on a train wants

@@ -148,6 +148,7 @@
     "phasePeoplePlaces": "الأشخاص والأماكن المألوفة",
     "phaseInteraction": "التفاعل اليومي",
     "stepsRange": "الخطوات {start}–{end}",
+    "phaseSummary": "الخطوات {start}–{end} · اكتملت {complete} من {total}",
     "wordsMastered": "أتقنت {mastered} من {total} كلمة"
   },
   "explore": {
@@ -160,6 +161,7 @@
     "pageTitle": "تصفح الإنجليزية حسب الموضوع",
     "pageSubtitle": "استكشف مجموعات المفردات حسب الموضوع وبالسرعة التي تناسبك. يبقى مسارك الموجّه في قسم التعلّم.",
     "curriculumMastery": "إتقان المكتبة",
+    "topicsAvailable": "وحدات موضوعية متاحة",
     "masteryFraction": "{mastered} / {total} كلمة متقنة",
     "searchLabel": "ابحث عن وحدة أو مفردات",
     "searchPlaceholder": "ابحث عن وحدات، مواضيع، أو كلمات…",
@@ -194,6 +196,8 @@
     "settings": "الإعدادات",
     "signInSync": "تسجيل الدخول / المزامنة",
     "retentionMeasures": "مقاييس الذاكرة التكيفية والحفظ",
+    "statsEmptyTitle": "ستظهر مؤشرات تعلمك هنا",
+    "statsEmptyHint": "أكمل أول جلسة تدريب لبدء تتبع التذكر والإتقان ومواعيد المراجعة.",
     "statsAria": "إحصائيات الذاكرة"
   },
   "wordDetails": {
@@ -277,8 +281,8 @@
     "timedExercisesHint": "أوقف هذا الخيار لإزالة المؤقتات والعد التنازلي.",
     "autoAdvance": "الانتقال التلقائي",
     "autoAdvanceHint": "التقدم تلقائياً بعد الإجابة. أوقف الخيار للتقدم يدوياً بالزر.",
-    "speakAnswers": "نطق الإجابات صوتياً",
-    "speakAnswersHint": "نطق الكلمة بعد كل إجابة. أوقف الخيار للاكتفاء بنغمة التنبيه.",
+    "speakAnswers": "ملاحظات صوتية قصيرة",
+    "speakAnswersHint": "تشغيل عبارة قصيرة مثل «ممتاز!» أو «حاول مرة أخرى» بعد كل إجابة. أوقف الخيار للاكتفاء بنغمة التنبيه.",
     "listeningDrills": "تضمين تمارين الاستماع",
     "listeningDrillsHint": "عطّلها لضعاف السمع أو عند عدم توفر سماعات.",
     "goalsHeading": "المستوى المستهدف والأهداف اليومية",
@@ -614,6 +618,7 @@
     "pressNumberToChoose": "اضغط 1–{count} لاختيار خيار",
     "pressNumberToChooseWord": "اضغط 1–{count} لاختيار كلمة",
     "pressNumberRecall": "اضغط 1–{count} للاختيار · R لإعادة تشغيل الصوت",
+    "choosePictureHeard": "اختر الصورة التي تسمعها",
     "whichPictureShows": "أي صورة توضح “{word}”؟",
     "chooseCorrectWord": "اختر الكلمة الصحيحة المطابقة للصورة",
     "sentenceAssemblyCanvas": "مساحة تركيب الجملة",

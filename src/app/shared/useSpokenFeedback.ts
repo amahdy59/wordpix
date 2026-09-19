@@ -7,8 +7,8 @@ import { audioUrl } from "./assetUrls";
 const CHIME_CLEARANCE_MS = 180;
 
 export const SPOKEN_ADVANCE_DELAY_MS = {
-  correct: 2400,
-  incorrect: 3600,
+  correct: 1200,
+  incorrect: 1500,
 } as const;
 
 interface SpeakInput {

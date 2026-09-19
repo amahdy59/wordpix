@@ -9,6 +9,7 @@ test("library defers the dictionary until review opens", async ({ page }) => {
     localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "library" }));
   });
   await page.goto("/");
+  await page.getByRole("button", { name: /Beginner Basics/ }).click();
   await expect(page.getByText("The Garden", { exact: true })).toBeVisible();
   expect(dictionaryRequests).toHaveLength(0);
 
@@ -31,5 +32,17 @@ test("learn path links to the optional library", async ({ page }) => {
   await page.getByRole("heading", { name: "Your learning path" }).waitFor({ timeout: 15000 });
   await page.getByRole("button", { name: "Browse vocabulary library" }).click();
   await expect(page).toHaveURL(/#\/library$/);
-  await page.getByText("The Garden").waitFor({ timeout: 10000 });
+  await page.getByRole("button", { name: /Beginner Basics/ }).click();
+  await page.getByText("The Garden", { exact: true }).waitFor({ timeout: 10000 });
+});
+
+test("practice renders one application shell", async ({ page }) => {
+  await page.addInitScript(() => {
+    localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "practice" }));
+  });
+
+  await page.goto("/#/practice");
+  await expect(page.getByRole("heading", { name: "Skill Exercise Hub" })).toBeVisible();
+  await expect(page.getByRole("navigation", { name: "Main navigation" })).toHaveCount(1);
+  await expect(page.locator("#main-content")).toHaveCount(1);
 });
