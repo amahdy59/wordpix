@@ -4,6 +4,7 @@ import { HomeIndicator } from "../shared/HomeIndicator";
 import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
 import { Sparkles, CheckCircle2, ArrowRight, UserCircle, BookOpen, Layers } from "lucide-react";
 import { useI18n } from "../context/I18nContext";
+import { useLearner } from "../context/LearnerContext";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -11,7 +12,9 @@ interface Props {
 
 export function ReadyCelebration({ dispatch }: Props) {
   const { t } = useI18n();
-  const flagshipWorld = COURSE_UNITS[DEFAULT_UNIT_ID];
+  const { state: learnerState } = useLearner();
+  const startingUnitId = learnerState.preferences.startingUnitId;
+  const flagshipWorld = COURSE_UNITS[startingUnitId] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
   return (
     <div className="bg-background flex flex-col md:flex-row min-h-dvh md:min-h-[560px] relative overflow-hidden">
       <StatusBar />
@@ -97,7 +100,7 @@ export function ReadyCelebration({ dispatch }: Props) {
         <footer className="w-full max-w-md mx-auto md:mx-0 pt-4 shrink-0 z-10">
           <button
             type="button"
-            onClick={() => dispatch({ type: "ONBOARD_NEXT" })}
+            onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: flagshipWorld.id })}
             className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 font-sans font-bold text-wp-text-on-blue text-base min-h-[52px]
               focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
               shadow-sm transition-all flex items-center justify-center gap-2"

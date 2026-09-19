@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { generateCurriculum, MAX_ACTIVE_WORDS_PER_LESSON } from "../learning/study/curriculum";
-import { getUnitCurriculumDesign } from "../learning/curriculumModel";
+import { FOUNDATION_UNIT_DESIGNS, getUnitCurriculumDesign } from "../learning/curriculumModel";
+import { FOUNDATION_SEQUENCE } from "../data/curriculumSequence";
 import { buildUnitAssessmentSample, ASSESSMENT_PASS_PERCENT } from "../lesson/assessmentBlueprint";
 import {
   getLessonSequence,
@@ -11,6 +12,8 @@ import { initialStudyProgress, syncStudyProgressWithWordMemory } from "../learni
 import { createInitialWordState } from "../../features/gamification/sm2";
 import type { CourseUnit, Lesson } from "../data/lessons";
 import type { UnitLearningMaterials } from "../learning/types";
+import { getStartingUnitForLevel, recommendPlacement } from "../onboarding/placementRecommendation";
+import { emitLearningEvent, LEARNING_ANALYTICS_EVENT } from "../analytics/learningAnalytics";
 
 const groups: Lesson[] = [
   { id: "g1", name: "Objects", description: "", topicId: "objects", wordIds: ["a", "b", "c"] },
@@ -65,9 +68,59 @@ describe("action-oriented curriculum", () => {
     expect(design.canDo.length).toBeGreaterThanOrEqual(3);
     expect(design.finalTask).not.toBe("");
   });
+
+  it("gives every foundation unit an authored communicative outcome and final task", () => {
+    expect(Object.keys(FOUNDATION_UNIT_DESIGNS).sort()).toEqual([...FOUNDATION_SEQUENCE].sort());
+    for (const design of Object.values(FOUNDATION_UNIT_DESIGNS)) {
+      expect(design.canDo).toHaveLength(3);
+      expect(design.languageFunctions.length).toBeGreaterThanOrEqual(3);
+      expect(design.grammarFocus.length).toBeGreaterThanOrEqual(3);
+      expect(design.finalTask).toMatch(/[.!]$/);
+    }
+  });
 });
 
 describe("lesson and assessment progression", () => {
+  it("recommends a recoverable starting point without awarding mastery", () => {
+    expect(recommendPlacement(0)).toEqual({
+      level: "A1",
+      startingUnitId: "numbers-counting",
+      correctCount: 0,
+      totalQuestions: 3,
+    });
+    expect(recommendPlacement(2).startingUnitId).toBe("supermarket");
+    expect(recommendPlacement(3).startingUnitId).toBe("business-communication");
+    expect(getStartingUnitForLevel("A1")).toBe("numbers-counting");
+    expect(getStartingUnitForLevel("A2")).toBe("supermarket");
+    expect(getStartingUnitForLevel("B1")).toBe("business-communication");
+  });
+
+  it("emits a versioned, ephemeral placement event", () => {
+    let detail: unknown;
+    window.addEventListener(
+      LEARNING_ANALYTICS_EVENT,
+      ((event: CustomEvent) => {
+        detail = event.detail;
+      }) as EventListener,
+      { once: true }
+    );
+    emitLearningEvent(
+      {
+        name: "placement_completed",
+        properties: { recommendedLevel: "A1", scoreBand: "emerging" },
+      },
+      new Date("2026-09-19T00:00:00.000Z")
+    );
+    expect(detail).toEqual({
+      version: 1,
+      occurredAt: "2026-09-19T00:00:00.000Z",
+      event: {
+        name: "placement_completed",
+        properties: { recommendedLevel: "A1", scoreBand: "emerging" },
+      },
+    });
+  });
+
   it("keeps the displayed story jump aligned with the actual beginner route", () => {
     expect(getLessonSequence("A1")).toEqual(["listen", "recall", "fill", "quiz", "story"]);
     expect(getStoryStepIndex("A1")).toBe(4);

@@ -5,6 +5,8 @@ import { BEDROOM_VOCABULARY } from "../data/lessons";
 import { useModalA11y } from "../shared/useModalA11y";
 import { Sparkles, X } from "lucide-react";
 import { useI18n, type TranslationValues } from "../context/I18nContext";
+import { recommendPlacement, type PlacementRecommendation } from "./placementRecommendation";
+import { emitLearningEvent } from "../analytics/learningAnalytics";
 
 // Placement always starts from the default world's vocabulary — there is only
 // one world to place a learner into today. This is also why bedroom is the
@@ -15,7 +17,7 @@ const PLACEMENT_VOCABULARY = BEDROOM_VOCABULARY;
 interface Props {
   isOpen: boolean;
   onClose: () => void;
-  onCompleteLevel: (level: "A1" | "A2" | "B1") => void;
+  onComplete: (recommendation: PlacementRecommendation) => void;
 }
 
 const QUESTIONS: Array<{
@@ -47,7 +49,7 @@ const QUESTIONS: Array<{
 export const PlacementQuizModal = memo(function PlacementQuizModal({
   isOpen,
   onClose,
-  onCompleteLevel,
+  onComplete,
 }: Props) {
   const { t } = useI18n();
   const [stepIndex, setStepIndex] = useState(0);
@@ -70,9 +72,20 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
       setStepIndex((i) => i + 1);
     } else {
       // Determine level recommendation
-      const assignedLevel: "A1" | "A2" | "B1" =
-        newCorrect >= 3 ? "B1" : newCorrect >= 2 ? "A2" : "A1";
-      onCompleteLevel(assignedLevel);
+      const recommendation = recommendPlacement(newCorrect, QUESTIONS.length);
+      emitLearningEvent({
+        name: "placement_completed",
+        properties: {
+          recommendedLevel: recommendation.level,
+          scoreBand:
+            recommendation.level === "B1"
+              ? "ready"
+              : recommendation.level === "A2"
+                ? "developing"
+                : "emerging",
+        },
+      });
+      onComplete(recommendation);
       onClose();
     }
   };

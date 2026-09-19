@@ -7,6 +7,9 @@ import { useProgress } from "../data/progress";
 import { PlacementQuizModal } from "./PlacementQuizModal";
 import type { LearnerGoal } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
+import { getStartingUnitForLevel, type PlacementRecommendation } from "./placementRecommendation";
+import { COURSE_UNITS } from "../data/lessons";
+import { emitLearningEvent } from "../analytics/learningAnalytics";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -50,15 +53,29 @@ export function LanguageSelect({ dispatch }: Props) {
   const [goalMinutes, setGoalMinutes] = useState<number>(10);
   const [selectedGoal, setSelectedGoal] = useState<LearnerGoal>("everyday");
   const [isPlacementOpen, setIsPlacementOpen] = useState(false);
+  const [placement, setPlacement] = useState<PlacementRecommendation | null>(null);
   const { setPreferences } = useProgress();
 
   const handleStart = () => {
-    setPreferences({ englishLevel: level, dailyGoalMinutes: goalMinutes, goal: selectedGoal });
+    setPreferences({
+      englishLevel: level,
+      startingUnitId: getStartingUnitForLevel(level),
+      dailyGoalMinutes: goalMinutes,
+      goal: selectedGoal,
+    });
     dispatch({ type: "ONBOARD_NEXT" });
   };
 
-  const handlePlacementComplete = (recommendedLevel: "A1" | "A2" | "B1") => {
-    setLevel(recommendedLevel);
+  const handlePlacementComplete = (recommendation: PlacementRecommendation) => {
+    setPlacement(recommendation);
+    setLevel(recommendation.level);
+    emitLearningEvent({
+      name: "recommendation_viewed",
+      properties: {
+        recommendedLevel: recommendation.level,
+        startingUnitId: recommendation.startingUnitId,
+      },
+    });
   };
 
   return (
@@ -67,7 +84,7 @@ export function LanguageSelect({ dispatch }: Props) {
       <PlacementQuizModal
         isOpen={isPlacementOpen}
         onClose={() => setIsPlacementOpen(false)}
-        onCompleteLevel={handlePlacementComplete}
+        onComplete={handlePlacementComplete}
       />
 
       {/* ── Desktop Left Hero Column ────────────────────────────────────────── */}
@@ -188,6 +205,28 @@ export function LanguageSelect({ dispatch }: Props) {
               <HelpCircle className="size-4" />
               <span>{t("onboarding.testMyLevel")}</span>
             </button>
+            {placement && (
+              <div
+                role="status"
+                className="rounded-2xl border border-primary/30 bg-primary/5 p-4 text-start"
+              >
+                <p className="font-sans text-sm font-bold text-foreground">
+                  {t("onboarding.placementRecommendation", {
+                    level: placement.level,
+                    unit: COURSE_UNITS[placement.startingUnitId]?.name ?? placement.startingUnitId,
+                  })}
+                </p>
+                <p className="mt-1 font-sans text-xs leading-relaxed text-muted-foreground">
+                  {t("onboarding.placementReason", {
+                    correct: placement.correctCount,
+                    total: placement.totalQuestions,
+                  })}
+                </p>
+                <p className="mt-2 font-sans text-xs font-semibold text-primary">
+                  {t("onboarding.placementOverride")}
+                </p>
+              </div>
+            )}
           </div>
 
           {/* Learning Goal Selector */}

@@ -17,6 +17,7 @@ export type LearnerExpression = "child" | "adult";
 
 export interface LearnerPreferences {
   englishLevel: "A1" | "A2" | "B1";
+  startingUnitId: string;
   dailyGoalMinutes: number;
   goal: LearnerGoal;
   theme: ThemePreference;
@@ -125,6 +126,7 @@ export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
   version: 1,
   preferences: {
     englishLevel: "A1",
+    startingUnitId: "numbers-counting",
     dailyGoalMinutes: 10,
     goal: "everyday",
     theme: "system",
@@ -173,6 +175,8 @@ function migrateState(savedData: unknown): LearnerStateSchema {
     version: 1,
     preferences: {
       englishLevel: (saved.preferences as Partial<LearnerPreferences>)?.englishLevel ?? "A1",
+      startingUnitId:
+        (saved.preferences as Partial<LearnerPreferences>)?.startingUnitId ?? "numbers-counting",
       dailyGoalMinutes: (saved.preferences as Partial<LearnerPreferences>)?.dailyGoalMinutes ?? 10,
       goal: (saved.preferences as Partial<LearnerPreferences>)?.goal ?? "everyday",
       theme: (saved.preferences as Partial<LearnerPreferences>)?.theme ?? "system",
