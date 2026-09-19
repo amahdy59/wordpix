@@ -487,8 +487,11 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                                   >
                                     <Sparkles className="size-3.5" />
                                     <span>
-                                      {curriculum.cefr} · GSE {curriculum.gseRange[0]}–
-                                      {curriculum.gseRange[1]}
+                                      {t("explore.cefrGseBadge", {
+                                        cefr: curriculum.cefr,
+                                        start: curriculum.gseRange[0],
+                                        end: curriculum.gseRange[1],
+                                      })}
                                     </span>
                                   </Badge>
                                 )}

@@ -140,8 +140,10 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
         <span className="shrink-0 inline-flex items-center gap-1 font-semibold text-sm bg-secondary text-primary px-3 py-2 rounded-xl">
           {curriculum.cefr}
           <span className="hidden sm:inline">
-            {" "}
-            · GSE {curriculum.gseRange[0]}–{curriculum.gseRange[1]}
+            {t("lesson.gseRange", {
+              start: curriculum.gseRange[0],
+              end: curriculum.gseRange[1],
+            })}
           </span>
         </span>
       </header>
@@ -157,7 +159,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
             <p className="text-muted-foreground mt-2">{t("lesson.chooseGroupDesc")}</p>
             <div className="mt-4 rounded-2xl border border-primary/30 bg-primary/5 p-4 sm:p-5">
               <p className="text-xs font-black uppercase tracking-wider text-primary">
-                Unit outcome
+                {t("lesson.unitOutcome")}
               </p>
               <p className="mt-1 text-sm font-semibold leading-relaxed text-foreground">
                 {curriculum.outcome}
@@ -170,7 +172,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                   }
                   className="mt-4 min-h-12 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
-                  Start guided learning path
+                  {t("lesson.startGuidedPath")}
                 </button>
               )}
             </div>

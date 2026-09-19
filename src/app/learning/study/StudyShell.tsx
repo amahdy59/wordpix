@@ -50,12 +50,12 @@ export function StudyShell({
 }: Props) {
   const { t } = useI18n();
   const { state: learnerState } = useLearner();
-  const [progress, setProgress] = useState<UnitStudyProgress>(() =>
-    syncStudyProgressWithWordMemory(
-      loadStudyProgress(unitId),
-      learnerState.wordMemory,
-      unit.wordIds
-    )
+  const [storedProgress, setStoredProgress] = useState<UnitStudyProgress>(() =>
+    loadStudyProgress(unitId)
+  );
+  const progress = React.useMemo(
+    () => syncStudyProgressWithWordMemory(storedProgress, learnerState.wordMemory, unit.wordIds),
+    [learnerState.wordMemory, storedProgress, unit.wordIds]
   );
 
   // The curriculum adapter
@@ -122,12 +122,6 @@ export function StudyShell({
   useEffect(() => {
     saveStudyProgress(progress);
   }, [progress]);
-
-  useEffect(() => {
-    setProgress((current) =>
-      syncStudyProgressWithWordMemory(current, learnerState.wordMemory, unit.wordIds)
-    );
-  }, [learnerState.wordMemory, unit.wordIds]);
 
   // Scroll reset & focus transfer on route/activity change
   useEffect(() => {
@@ -206,14 +200,14 @@ export function StudyShell({
         area: node.area,
         nodeId: node.id,
       });
-      setProgress((prev) => ({ ...prev, lastNodeId: node.id }));
+      setStoredProgress((prev) => ({ ...prev, lastNodeId: node.id }));
       setExpandedAreas((current) => new Set(current).add(node.area));
       setIsMobileDrawerOpen(false);
     }
   };
 
   const completeNode = (nodeId: string) => {
-    setProgress((current) =>
+    setStoredProgress((current) =>
       current.completedNodeIds.includes(nodeId)
         ? current
         : { ...current, completedNodeIds: [...current.completedNodeIds, nodeId] }
@@ -643,7 +637,7 @@ export function StudyShell({
                   node={activeNode}
                   materials={materials}
                   progress={progress}
-                  onProgressUpdate={setProgress}
+                  onProgressUpdate={setStoredProgress}
                   onNextActivity={handleNextActivity}
                   immersionMode={immersionMode}
                 />
@@ -664,7 +658,7 @@ export function StudyShell({
                 <PracticeArea
                   materials={materials}
                   progress={progress}
-                  onProgressUpdate={setProgress}
+                  onProgressUpdate={setStoredProgress}
                   nodeId={activeNode?.id ?? "practice-session"}
                   onNextActivity={handleNextActivity}
                 />
@@ -673,7 +667,7 @@ export function StudyShell({
                 <ReviewArea
                   materials={materials}
                   progress={progress}
-                  onProgressUpdate={setProgress}
+                  onProgressUpdate={setStoredProgress}
                 />
               )}
               {currentArea === "reference" && <ReferenceArea materials={materials} />}

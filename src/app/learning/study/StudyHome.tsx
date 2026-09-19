@@ -116,11 +116,11 @@ export function StudyHome({
               GSE {curriculumDesign.gseRange[0]}–{curriculumDesign.gseRange[1]}
             </span>
             <span className="rounded-full border border-border bg-card px-3 py-1 text-xs font-bold capitalize text-muted-foreground">
-              {curriculumDesign.archetype} pathway
+              {t("study.pathwayType", { type: curriculumDesign.archetype })}
             </span>
           </div>
           <h2 id="unit-outcome-heading" className="mt-4 text-lg font-black text-foreground">
-            What you will be able to do
+            {t("study.outcomeHeading")}
           </h2>
           <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
             {curriculumDesign.outcome}
@@ -137,7 +137,7 @@ export function StudyHome({
             ))}
           </ul>
           <p className="mt-4 border-t border-primary/20 pt-3 text-sm font-semibold text-foreground">
-            <span className="text-primary">Final mission: </span>
+            <span className="text-primary">{t("study.finalMissionLabel")} </span>
             {curriculumDesign.finalTask}
           </p>
         </section>
