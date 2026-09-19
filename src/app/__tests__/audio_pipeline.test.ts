@@ -68,6 +68,13 @@ describe("audio generation workflow", () => {
     expect(workflow).toMatch(/--max-chars=/);
   });
 
+  it("keeps dry runs isolated from R2", () => {
+    const reconcileStep = workflow.match(
+      /- name: Reconcile the ledger against the bucket[\s\S]*?(?=\n\s{6}- name:)/
+    );
+    expect(reconcileStep?.[0]).toMatch(/if:.*inputs\.dry_run != true/);
+  });
+
   it("reconciles the ledger against the bucket before spending", () => {
     // Without this, a ledger entry whose object is missing means the clip is
     // skipped for good and the app falls back to synthesis with nothing to

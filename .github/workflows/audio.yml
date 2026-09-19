@@ -75,6 +75,7 @@ jobs:
         run: node scripts/build_audio_corpus.cjs
 
       - name: Reconcile the ledger against the bucket
+        if: ${{ inputs.dry_run != true }}
         env:
           R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
