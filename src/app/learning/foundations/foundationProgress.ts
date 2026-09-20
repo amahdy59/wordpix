@@ -106,7 +106,8 @@ export function completeFoundationLesson(
 ): FoundationProgress {
   const previous = progress[lessonId];
   const score = total > 0 ? clampPercent((correct / total) * 100) : 0;
-  const mastered = previous?.status === "mastered" || score >= masteryThreshold;
+  const mastered =
+    previous?.status === "mastered" || masteryThreshold === 0 || score >= masteryThreshold;
   return {
     ...progress,
     [lessonId]: {

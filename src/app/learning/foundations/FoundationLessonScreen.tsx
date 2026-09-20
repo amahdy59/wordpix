@@ -85,7 +85,11 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
   const progress = Math.round((stepIndex / Math.max(1, steps.length - 1)) * 100);
   const correct = Object.values(questionResults).filter(Boolean).length;
   const scorePercent = Math.round((correct / Math.max(1, lesson.questions.length)) * 100);
-  const mastered = savedProgress?.status === "mastered" || scorePercent >= lesson.masteryThreshold;
+  const usesQualitativeRouting = lesson.completionMode === "qualitative-routing";
+  const mastered =
+    usesQualitativeRouting ||
+    savedProgress?.status === "mastered" ||
+    scorePercent >= lesson.masteryThreshold;
 
   useEffect(() => () => stop(), [stop]);
   useEffect(() => {
@@ -196,7 +200,11 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
             </h1>
           </div>
           <span className="hidden rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary sm:inline">
-            {lesson.audioOnly ? "Listen" : "Sounds + letters"}
+            {lesson.reviewStatus === "pilot"
+              ? "Pronunciation pilot"
+              : lesson.audioOnly
+                ? "Listen"
+                : "Sounds + letters"}
           </span>
         </div>
       </header>
@@ -254,6 +262,12 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
               <p className="mx-auto mt-3 max-w-md text-base font-semibold leading-relaxed text-foreground">
                 {lesson.goal}
               </p>
+              {lesson.reviewStatus === "pilot" && (
+                <p className="mx-auto mt-3 max-w-md rounded-xl border border-primary/25 bg-primary/5 px-4 py-3 text-sm font-bold leading-relaxed text-foreground">
+                  Optional pilot · You may listen, point, or choose. Speaking and recording are not
+                  required.
+                </p>
+              )}
               {hintOpen && (
                 <div
                   id="lesson-hint"
@@ -563,14 +577,33 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                 className={`mt-5 rounded-2xl border p-4 text-start ${mastered ? "border-[var(--feedback-success-border)] bg-[var(--feedback-success-surface)]" : "border-[var(--feedback-warning)] bg-[var(--feedback-warning-surface)]"}`}
               >
                 <p className="text-xs font-black uppercase tracking-wide text-foreground">
-                  {mastered ? "Mastered" : "Practice recommended"}
+                  {usesQualitativeRouting
+                    ? "Learning evidence saved"
+                    : mastered
+                      ? "Mastered"
+                      : "Practice recommended"}
                 </p>
                 <p className="mt-1 font-bold text-foreground">
-                  {mastered
+                  {usesQualitativeRouting
+                    ? "This lesson records communication evidence without using an accent, speed, or pronunciation score as a gate."
+                    : mastered
                     ? `Score: ${scorePercent}%. You are ready for the next lesson.`
                     : `Score: ${scorePercent}%. Try once more to reach ${lesson.masteryThreshold}%.`}
                 </p>
               </div>
+              {usesQualitativeRouting && (
+                <div className="mt-4 rounded-2xl border border-border bg-muted/40 p-4 text-start">
+                  <p className="text-xs font-black uppercase tracking-wide text-primary">
+                    Evidence noticed
+                  </p>
+                  <p className="mt-1 font-semibold leading-relaxed text-foreground">
+                    {lesson.evidenceDimensions.join(" · ")}
+                  </p>
+                  <p className="mt-2 text-sm font-semibold leading-relaxed text-muted-foreground">
+                    Pilot curriculum: phonetic and accessibility review remain part of the release gate.
+                  </p>
+                </div>
+              )}
               {mastered && nextLesson && (
                 <div className="mt-5 rounded-2xl bg-primary/5 p-4 text-start">
                   <p className="text-xs font-black uppercase tracking-wide text-primary">Up next</p>

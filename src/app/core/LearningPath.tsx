@@ -126,29 +126,29 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <div>
             <div className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-primary">
               <Headphones className="size-4" aria-hidden />
-              <span>Learn to read · Levels 0–1</span>
+              <span>Learn to read and communicate · Levels 0–13</span>
             </div>
             <div className="flex flex-wrap items-center gap-2">
               <h2
                 id="listening-foundations-heading"
                 className="text-xl font-black text-foreground sm:text-2xl"
               >
-                Sounds to First Reading
+                Sounds, Reading, and Clear Communication
               </h2>
               <Badge variant="primary" size="sm">
                 Pre-A1
               </Badge>
             </div>
             <p className="mt-2 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
-              Follow one clear path from careful listening to the first short words. Every current
-              lesson remains open for testing while the complete curriculum is prepared.
+              Follow the core path from careful listening to first words, or test the optional
+              pronunciation pilot. Every lesson remains open and progress is saved locally.
             </p>
             <div className="mt-4 max-w-xl">
               <ProgressBar
                 progressPercent={foundationPercent}
-                label="Lessons mastered"
+                label="Lessons completed"
                 labelRight={`${completedFoundationLessons.length}/${FOUNDATION_LESSONS.length}`}
-                ariaLabel={`${completedFoundationLessons.length} of ${FOUNDATION_LESSONS.length} foundation lessons complete`}
+                ariaLabel={`${completedFoundationLessons.length} of ${FOUNDATION_LESSONS.length} lessons complete`}
               />
             </div>
           </div>
@@ -228,7 +228,12 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                           </p>
                         </div>
                         <span className="rounded-full bg-muted px-3 py-1 text-xs font-bold text-muted-foreground">
-                          {unitMastered}/{unit.lessons.length} mastered
+                          {unitMastered}/{unit.lessons.length}{" "}
+                          {unit.lessons.some(
+                            (lesson) => lesson.completionMode === "qualitative-routing"
+                          )
+                            ? "completed"
+                            : "mastered"}
                         </span>
                       </div>
                       <ol className="mt-3 grid gap-2 sm:grid-cols-2">
@@ -264,14 +269,18 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                                   </span>
                                   <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
                                     {isComplete
-                                      ? `Mastered · best ${lessonProgress.bestScorePercent}%`
+                                      ? lesson.completionMode === "qualitative-routing"
+                                        ? "Completed · evidence saved"
+                                        : `Mastered · best ${lessonProgress.bestScorePercent}%`
                                       : needsPractice
                                         ? `Practice again · best ${lessonProgress.bestScorePercent}%`
                                         : lessonProgress?.status === "in-progress"
                                           ? `Resume · step ${lessonProgress.currentStep + 1}`
                                           : isRecommended
                                             ? "Start here"
-                                            : lesson.audioOnly
+                                            : lesson.reviewStatus === "pilot"
+                                              ? "Pilot · qualitative progress"
+                                              : lesson.audioOnly
                                               ? "Listen and respond"
                                               : "Sounds, letters, and words"}
                                   </span>

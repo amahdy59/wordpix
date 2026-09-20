@@ -48,7 +48,7 @@ const questionSchema = z
 
 const lessonSchema = z.object({
   id: z.string().min(1),
-  level: z.union([z.literal(0), z.literal(1)]),
+  level: z.number().int().min(0).max(15),
   unitId: z.string().min(1),
   number: z.number().int().positive(),
   title: z.string().min(1),
@@ -57,7 +57,11 @@ const lessonSchema = z.object({
   instruction: z.string().min(1),
   audioOnly: z.boolean(),
   prerequisites: z.array(z.string().min(1)),
-  masteryThreshold: z.number().int().min(1).max(100),
+  masteryThreshold: z.number().int().min(0).max(100),
+  completionMode: z.enum(["score-threshold", "qualitative-routing"]),
+  reviewStatus: z.enum(["approved", "pilot", "draft"]),
+  evidenceDimensions: z.array(z.string().min(1)).min(1),
+  nonGoals: z.array(z.string().min(1)).min(1),
   models: z.array(
     z.object({
       audio: z.string().min(1),
@@ -76,7 +80,7 @@ export const foundationCurriculumSchema = z
     stages: z.array(
       z.object({
         id: z.string().min(1),
-        level: z.union([z.literal(0), z.literal(1)]),
+        level: z.number().int().min(0).max(15),
         title: z.string().min(1),
         description: z.string().min(1),
         units: z.array(

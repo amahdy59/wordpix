@@ -8,6 +8,7 @@ import {
   FOUNDATION_PICTURE_WORDS,
   FOUNDATION_STAGES,
   LEVEL_ONE_UNITS,
+  LEVEL_THIRTEEN_UNITS,
   LEVEL_ZERO_UNITS,
   getFoundationLesson,
 } from "../learning/foundations/foundationCurriculum";
@@ -35,13 +36,15 @@ describe("foundation curriculum", () => {
       "blend-and-segment",
     ]);
     expect(LEVEL_ONE_UNITS[0].lessons).toHaveLength(8);
-    expect(FOUNDATION_LESSONS).toHaveLength(16);
+    expect(LEVEL_THIRTEEN_UNITS[0].lessons).toHaveLength(12);
+    expect(FOUNDATION_LESSONS).toHaveLength(28);
   });
 
-  it("organizes every lesson once in a clear two-stage journey", () => {
+  it("organizes every lesson once across the core and pronunciation tracks", () => {
     expect(FOUNDATION_STAGES.map((stage) => stage.title)).toEqual([
       "Listening foundations",
       "First letters and words",
+      "Pronunciation and comprehensibility",
     ]);
     const stagedLessonIds: string[] = [];
     for (const stage of FOUNDATION_STAGES) {
@@ -138,13 +141,25 @@ describe("foundation curriculum", () => {
       ])
     );
 
-    expect(texts.size).toBe(133);
+    expect(texts.size).toBe(181);
     for (const text of texts) {
       const key = await audioKey(text);
       expect(key).not.toBeNull();
       const path = resolve(process.cwd(), "public", key!);
       expect(existsSync(path)).toBe(true);
       expect(statSync(path).size).toBeGreaterThan(0);
+    }
+  });
+
+  it("keeps the pronunciation pilot qualitative and accent affirming", () => {
+    const lessons = LEVEL_THIRTEEN_UNITS[0].lessons;
+    expect(lessons).toHaveLength(12);
+    for (const lesson of lessons) {
+      expect(lesson.completionMode).toBe("qualitative-routing");
+      expect(lesson.masteryThreshold).toBe(0);
+      expect(lesson.reviewStatus).toBe("pilot");
+      expect(lesson.evidenceDimensions.length).toBeGreaterThan(1);
+      expect(lesson.nonGoals.join(" ")).toMatch(/accent|speed|diagnos/i);
     }
   });
 

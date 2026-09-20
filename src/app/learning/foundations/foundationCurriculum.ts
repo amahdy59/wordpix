@@ -1,4 +1,5 @@
 import { validateFoundationCurriculum } from "./foundationCurriculumSchema.ts";
+import { PRONUNCIATION_LESSON_DRAFTS } from "./pronunciationCurriculum.ts";
 
 export const FOUNDATION_CURRICULUM_SCHEMA_VERSION = 1 as const;
 
@@ -18,7 +19,22 @@ export type FoundationLessonId =
   | "blend-satp"
   | "read-satp"
   | "spell-satp"
-  | "satp-mastery";
+  | "satp-mastery"
+  | "pronunciation-goals"
+  | "meaningful-contrasts"
+  | "clear-word-endings"
+  | "consonant-sequences"
+  | "word-stress"
+  | "syllable-prominence"
+  | "vowel-clarity"
+  | "important-information"
+  | "meaning-chunks"
+  | "connected-speech"
+  | "communication-repair"
+  | "pronunciation-portfolio";
+
+export type CurriculumReviewStatus = "approved" | "pilot" | "draft";
+export type CurriculumCompletionMode = "score-threshold" | "qualitative-routing";
 
 export interface FoundationModel {
   audio: string;
@@ -46,7 +62,7 @@ export interface FoundationQuestion {
 
 export interface FoundationLesson {
   id: FoundationLessonId;
-  level: 0 | 1;
+  level: number;
   unitId: string;
   number: number;
   title: string;
@@ -56,11 +72,34 @@ export interface FoundationLesson {
   audioOnly: boolean;
   prerequisites: readonly FoundationLessonId[];
   masteryThreshold: number;
+  completionMode: CurriculumCompletionMode;
+  reviewStatus: CurriculumReviewStatus;
+  evidenceDimensions: readonly string[];
+  nonGoals: readonly string[];
   models: readonly FoundationModel[];
   questions: readonly FoundationQuestion[];
 }
 
-type FoundationLessonDraft = Omit<FoundationLesson, "prerequisites" | "masteryThreshold">;
+export type FoundationLessonDraft = Omit<
+  FoundationLesson,
+  | "prerequisites"
+  | "masteryThreshold"
+  | "completionMode"
+  | "reviewStatus"
+  | "evidenceDimensions"
+  | "nonGoals"
+> &
+  Partial<
+    Pick<
+      FoundationLesson,
+      | "prerequisites"
+      | "masteryThreshold"
+      | "completionMode"
+      | "reviewStatus"
+      | "evidenceDimensions"
+      | "nonGoals"
+    >
+  >;
 
 export interface FoundationPictureWord {
   word: string;
@@ -748,13 +787,30 @@ const FOUNDATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
   },
 ] as const;
 
-export const FOUNDATION_LESSONS: readonly FoundationLesson[] = FOUNDATION_LESSON_DRAFTS.map(
+const CORE_FOUNDATION_LESSONS: readonly FoundationLesson[] = FOUNDATION_LESSON_DRAFTS.map(
   (lesson, index) => ({
     ...lesson,
     prerequisites: index === 0 ? [] : [FOUNDATION_LESSON_DRAFTS[index - 1].id],
     masteryThreshold: 80,
+    completionMode: "score-threshold",
+    reviewStatus: "approved",
+    evidenceDimensions: ["listening", "decoding"],
+    nonGoals: ["speed pressure", "accent conformity"],
   })
 );
+
+export const FOUNDATION_LESSONS: readonly FoundationLesson[] = [
+  ...CORE_FOUNDATION_LESSONS,
+  ...PRONUNCIATION_LESSON_DRAFTS.map((lesson) => ({
+    ...lesson,
+    prerequisites: lesson.prerequisites ?? [],
+    masteryThreshold: 0,
+    completionMode: "qualitative-routing" as const,
+    reviewStatus: "pilot" as const,
+    evidenceDimensions: lesson.evidenceDimensions ?? ["comprehensibility", "participation"],
+    nonGoals: lesson.nonGoals ?? ["accent ranking", "diagnosis", "speed scoring"],
+  })),
+];
 
 const picture = (word: string, path: string): FoundationPictureWord => ({
   word,
@@ -878,6 +934,15 @@ export const LEVEL_ONE_UNITS = [
     lessons: FOUNDATION_LESSONS.filter((lesson) => lesson.level === 1),
   },
 ] as const;
+export const LEVEL_THIRTEEN_UNITS = [
+  {
+    id: "13.1",
+    title: "Advanced pronunciation and comprehensibility",
+    outcome:
+      "Build communication clarity, flexible listening, phrasing, and repair without ranking accents.",
+    lessons: FOUNDATION_LESSONS.filter((lesson) => lesson.level === 13),
+  },
+] as const;
 
 export const FOUNDATION_STAGES = [
   {
@@ -895,6 +960,14 @@ export const FOUNDATION_STAGES = [
     description:
       "Connect speech sounds to print, then use the letters to read and spell the first short words.",
     units: LEVEL_ONE_UNITS,
+  },
+  {
+    id: "pronunciation-and-comprehensibility",
+    level: 13,
+    title: "Pronunciation and comprehensibility",
+    description:
+      "An optional pilot track for clearer communication. Accent identity is respected, speaking is never required, and progress is not reduced to a speed or accent score.",
+    units: LEVEL_THIRTEEN_UNITS,
   },
 ] as const;
 
