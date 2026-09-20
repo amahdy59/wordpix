@@ -37,15 +37,20 @@ function encodeKey(key) {
 }
 
 function readConfig(env = process.env) {
-  const accountId = env.R2_ACCOUNT_ID;
-  const accessKeyId = env.R2_ACCESS_KEY_ID;
-  const secretAccessKey = env.R2_SECRET_ACCESS_KEY;
-  const bucket = env.R2_BUCKET;
+  // Local workspaces may contain credentials for several products. Prefer
+  // the generic CI names, then fall back specifically to WordPix so another
+  // application's bucket can never be selected accidentally.
+  const accountId = env.R2_ACCOUNT_ID || env.CLOUDFLARE_ACCOUNT_ID;
+  const accessKeyId = env.R2_ACCESS_KEY_ID || env.WORDPIX_R2_ACCESS_KEY_ID;
+  const secretAccessKey = env.R2_SECRET_ACCESS_KEY || env.WORDPIX_R2_SECRET_ACCESS_KEY;
+  const bucket = env.R2_BUCKET || env.WORDPIX_R2_BUCKET_NAME;
+  const endpoint = env.R2_ENDPOINT || (accountId ? `https://${accountId}.r2.cloudflarestorage.com` : "");
   const missing = Object.entries({
-    R2_ACCOUNT_ID: accountId,
-    R2_ACCESS_KEY_ID: accessKeyId,
-    R2_SECRET_ACCESS_KEY: secretAccessKey,
-    R2_BUCKET: bucket,
+    "R2_ACCOUNT_ID or CLOUDFLARE_ACCOUNT_ID": accountId,
+    "R2_ACCESS_KEY_ID or WORDPIX_R2_ACCESS_KEY_ID": accessKeyId,
+    "R2_SECRET_ACCESS_KEY or WORDPIX_R2_SECRET_ACCESS_KEY": secretAccessKey,
+    "R2_BUCKET or WORDPIX_R2_BUCKET_NAME": bucket,
+    "R2_ENDPOINT or derived account endpoint": endpoint,
   })
     .filter(([, v]) => !v)
     .map(([k]) => k);
@@ -61,7 +66,7 @@ function readConfig(env = process.env) {
     accessKeyId,
     secretAccessKey,
     bucket,
-    endpoint: `https://${accountId}.r2.cloudflarestorage.com`,
+    endpoint: endpoint.replace(/\/$/, ""),
   };
 }
 

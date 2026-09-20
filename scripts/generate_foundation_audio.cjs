@@ -9,7 +9,7 @@
 const fs = require("fs");
 const path = require("path");
 const { loadEnv } = require("./lib/env.cjs");
-const { createClient } = require("./lib/r2.cjs");
+const { createClient, readConfig } = require("./lib/r2.cjs");
 const { AUDIO_PROFILE } = require("./lib/assetKey.cjs");
 
 loadEnv();
@@ -42,7 +42,12 @@ async function main() {
   const plannedChars = corpus.reduce((sum, entry) => sum + entry.chars, 0);
   if (plannedChars > MAX_CHARS) throw new Error(`Foundation corpus is ${plannedChars} characters; budget is ${MAX_CHARS}.`);
 
-  const haveR2 = ["R2_ACCOUNT_ID", "R2_ACCESS_KEY_ID", "R2_SECRET_ACCESS_KEY", "R2_BUCKET"].every((name) => process.env[name]);
+  let haveR2 = true;
+  try {
+    readConfig();
+  } catch {
+    haveR2 = false;
+  }
   console.log(`clips      : ${corpus.length}`);
   console.log(`characters : ${plannedChars.toLocaleString()}`);
   console.log(`R2 upload  : ${haveR2 ? "enabled" : "not configured (local files only)"}`);
