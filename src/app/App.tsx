@@ -61,6 +61,10 @@ function AppInner() {
       dispatch({ type: "OPEN_SKILL_EXERCISE", exerciseId: screen.exerciseId });
       return;
     }
+    if (screen.id === "foundation-lesson") {
+      dispatch({ type: "START_FOUNDATION_LESSON", lessonId: screen.lessonId });
+      return;
+    }
     if (screen.id === "lesson") return; // Not reachable from a URL alone.
     if (screen.id === "learn-words") {
       dispatch({ type: "GO_LEARN_WORDS", lessonId: screen.lessonId });

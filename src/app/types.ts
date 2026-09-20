@@ -1,5 +1,7 @@
 // Shared TypeScript types for the WordPix app state machine
 
+import type { FoundationLessonId } from "./learning/foundations/foundationCurriculum";
+
 export type OnboardStep = "splash" | "language" | "ready";
 export type TabId = "home" | "explore" | "library" | "practice" | "profile";
 
@@ -68,6 +70,7 @@ export type Screen =
   | { id: "learn-words"; lessonId: string }
   /** Reference and self-paced practice for one unit, imported from Figma. */
   | { id: "learning-materials"; unitId?: string; area?: string; nodeId?: string }
+  | { id: "foundation-lesson"; lessonId: FoundationLessonId }
   | { id: "skill-hub" }
   | { id: "skill-exercise"; exerciseId: SkillExerciseId }
   | {
@@ -109,6 +112,7 @@ export type Action =
   | { type: "OPEN_SKILL_EXERCISE"; exerciseId: SkillExerciseId }
   /** Enters self-paced word browsing for one group. */
   | { type: "GO_LEARN_WORDS"; lessonId: string }
+  | { type: "START_FOUNDATION_LESSON"; lessonId: FoundationLessonId }
   /**
    * `lessonId` is required, and deliberately so. It was optional, and three of
    * the four call sites omitted it — so the reducer fell back to the first

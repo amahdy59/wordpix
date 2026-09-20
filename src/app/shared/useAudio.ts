@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLearner } from "../context/LearnerContext";
 import { getCachedAudio, saveCachedAudio } from "../../lib/persistence/db";
-import { audioUrl, hasAssetHost } from "./assetUrls";
+import { audioKey, audioUrl, hasAssetHost } from "./assetUrls";
+import { resolveAssetUrl } from "../../utils/assetUrl";
+import { getPronunciationAssetSpec, hasPronunciationOverride } from "./pronunciationOverrides";
 
 export type AudioStatus = "idle" | "loading" | "playing" | "error" | "unsupported";
 
@@ -12,6 +14,8 @@ interface Options {
   rate?: number;
   pitch?: number;
   volume?: number;
+  /** Prefer a matching content-addressed clip bundled in public/audio. */
+  preferLocal?: boolean;
 }
 
 /** How long to wait for onstart before treating the utterance as failed. */
@@ -129,6 +133,7 @@ export function useAudio({
   rate,
   pitch = 1,
   volume = 1,
+  preferLocal = false,
   onEnded,
   onError,
 }: Options = {}) {
@@ -193,6 +198,8 @@ export function useAudio({
     (text: string, overrideLang?: string) => {
       const targetLang = overrideLang ?? lang;
       const cleanText = text.replace(/[-_]/g, " ").trim();
+      const pronunciationAsset = getPronunciationAssetSpec(cleanText);
+      const usesPronunciationOverride = hasPronunciationOverride(cleanText);
 
       const generation = ++requestRef.current;
       /** True while this call is still the one the learner is waiting on. */
@@ -313,7 +320,11 @@ export function useAudio({
        * miss simply 404s and falls through to the paths below.
        */
       const playPregenerated = async (): Promise<boolean> => {
-        const url = await audioUrl(cleanText);
+        const url = hasAssetHost()
+          ? await audioUrl(pronunciationAsset.text, pronunciationAsset.profile)
+          : preferLocal || usesPronunciationOverride
+            ? resolveAssetUrl(`/${await audioKey(pronunciationAsset.text, pronunciationAsset.profile)}`)
+            : null;
         if (!url) return false;
         const cacheKey = `cdn:${url}`;
 
@@ -531,7 +542,7 @@ export function useAudio({
       // With no bucket configured there is no clip to look for, and going
       // through the async chain anyway would only delay the voice — on a phone,
       // past the point where it can still play at all.
-      if (!hasAssetHost() && !apiKey) {
+      if (!hasAssetHost() && !apiKey && !preferLocal && !usesPronunciationOverride) {
         fallbackToSynthesis(cleanText, targetLang);
         return;
       }
@@ -542,7 +553,7 @@ export function useAudio({
           if (!played) playRemainingFallbacks();
         });
     },
-    [lang, effectiveRate, pitch, volume]
+    [lang, effectiveRate, pitch, volume, preferLocal]
   );
 
   const stop = useCallback(() => {

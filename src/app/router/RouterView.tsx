@@ -40,6 +40,11 @@ const LearningMaterialsScreen = lazy(() =>
     default: m.LearningMaterialsScreen,
   }))
 );
+const FoundationLessonScreen = lazy(() =>
+  import("../learning/foundations/FoundationLessonScreen").then((m) => ({
+    default: m.FoundationLessonScreen,
+  }))
+);
 
 const ExerciseListenRepeat = lazy(() =>
   import("../exercises/ExerciseListenRepeat").then((m) => ({ default: m.ExerciseListenRepeat }))
@@ -226,6 +231,8 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
         />
       );
     if (state.id === "skill-hub") return <SkillExerciseHub dispatch={dispatch} />;
+    if (state.id === "foundation-lesson")
+      return <FoundationLessonScreen lessonId={state.lessonId} dispatch={dispatch} />;
 
     if (state.id === "skill-exercise") {
       const SkillExercise = SKILL_EXERCISES[state.exerciseId];
@@ -250,14 +257,17 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
     return null;
   }
 
-  const stateKey = state.id + ("step" in state ? `-${state.step}` : "");
+  const stateKey =
+    state.id === "foundation-lesson"
+      ? `${state.id}-${state.lessonId}`
+      : state.id + ("step" in state ? `-${state.step}` : "");
   const animatedContent = (
     <AnimatePresence mode="wait">
       <motion.div
         key={stateKey}
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -10 }}
+        initial={{ y: 10 }}
+        animate={{ y: 0 }}
+        exit={{ y: -10 }}
         transition={{ duration: 0.2, ease: "easeInOut" }}
         className="flex-1 flex flex-col w-full min-h-full"
       >

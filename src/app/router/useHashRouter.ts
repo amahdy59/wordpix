@@ -2,6 +2,7 @@ import { useEffect, useCallback } from "react";
 import type { Screen, SkillExerciseId } from "../types";
 import { SKILL_EXERCISE_IDS } from "../exercises/registry";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, resolveUnitForLesson } from "../data/lessons";
+import { getFoundationLesson, isFoundationLessonId } from "../learning/foundations/foundationCurriculum";
 
 const SKILL_EXERCISE_ID_SET = new Set<string>(SKILL_EXERCISE_IDS);
 
@@ -60,6 +61,7 @@ const LEARNING_MATERIALS_PATTERN = new RegExp(
   `^#\\/learn\\/(${WORLD_ID_GROUP})\\/study(?:\\/([^/]+)(?:\\/([^/]+))?)?$`
 );
 const SKILL_EXERCISE_PATTERN = /^#\/skills\/([a-z-]+)$/;
+const FOUNDATION_LESSON_PATTERN = /^#\/foundations\/([a-z-]+)$/;
 
 export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "onboarding") return { hash: "#/onboarding", title: "WordPix — Onboarding" };
@@ -86,6 +88,10 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "skill-exercise") {
     return { hash: `#/skills/${screen.exerciseId}`, title: `WordPix — ${screen.exerciseId}` };
   }
+  if (screen.id === "foundation-lesson") {
+    const lesson = getFoundationLesson(screen.lessonId);
+    return { hash: `#/foundations/${lesson.id}`, title: `WordPix — ${lesson.title}` };
+  }
   if (screen.id === "lesson") {
     const world = resolveUnitForLesson(screen.lessonId);
     return {
@@ -102,6 +108,16 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
 
 export function hashToRoute(hash: string): RouteIntent | null {
   const normalized = hash.toLowerCase();
+
+  const foundationMatch = normalized.match(FOUNDATION_LESSON_PATTERN);
+  if (foundationMatch && isFoundationLessonId(foundationMatch[1])) {
+    const lesson = getFoundationLesson(foundationMatch[1]);
+    return {
+      kind: "screen",
+      screen: { id: "foundation-lesson", lessonId: lesson.id },
+      title: `WordPix — ${lesson.title}`,
+    };
+  }
 
   const stepMatch = normalized.match(LESSON_STEP_PATTERN);
   if (stepMatch) {

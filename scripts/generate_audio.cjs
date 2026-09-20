@@ -93,17 +93,17 @@ function writeLedger(ledger) {
   fs.rmSync(tmp, { force: true });
 }
 
-async function synthesise(text, apiKey) {
-  const url = `https://api.elevenlabs.io/v1/text-to-speech/${AUDIO_PROFILE.voiceId}`;
+async function synthesise(text, apiKey, profile = AUDIO_PROFILE) {
+  const url = `https://api.elevenlabs.io/v1/text-to-speech/${profile.voiceId}`;
   const res = await fetch(url, {
     method: "POST",
     headers: { "content-type": "application/json", "xi-api-key": apiKey },
     body: JSON.stringify({
       text,
-      model_id: AUDIO_PROFILE.modelId,
+      model_id: profile.modelId,
       voice_settings: {
-        stability: AUDIO_PROFILE.stability,
-        similarity_boost: AUDIO_PROFILE.similarityBoost,
+        stability: profile.stability,
+        similarity_boost: profile.similarityBoost,
       },
     }),
   });
@@ -273,7 +273,10 @@ async function main() {
           continue;
         }
 
-        const audio = await withRetry(() => synthesise(entry.text, apiKey), label);
+        const audio = await withRetry(
+          () => synthesise(entry.text, apiKey, entry.profile ?? AUDIO_PROFILE),
+          label
+        );
 
         // Save local backup copy for offline Google Drive archival
         try {

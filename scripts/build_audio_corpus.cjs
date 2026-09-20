@@ -30,8 +30,9 @@
  */
 const fs = require("fs");
 const path = require("path");
-const { audioHash } = require("./lib/assetKey.cjs");
+const { AUDIO_PROFILE, audioHash } = require("./lib/assetKey.cjs");
 const { normaliseAudioText } = require("./lib/audioText.cjs");
+const { getPronunciationAssetSpec } = require("./lib/pronunciationOverrides.cjs");
 
 const ROOT = path.join(__dirname, "..");
 const OUT = path.join(ROOT, "scratch", "audio_corpus.json");
@@ -141,15 +142,26 @@ for (const [tier, texts] of Object.entries(tiers)) {
   let added = 0;
   let chars = 0;
   for (const rawText of texts) {
-    const text = normaliseAudioText(rawText);
+    const displayText = normaliseAudioText(rawText);
     // Single characters and empty strings are not worth a network round trip.
-    if (text.length < 2) continue;
-    if (SPEAKER_LABEL.test(text) || SCENE_DIRECTION.test(text)) continue;
-    const hash = audioHash(text);
+    if (displayText.length < 2) continue;
+    if (SPEAKER_LABEL.test(displayText) || SCENE_DIRECTION.test(displayText)) continue;
+    const pronunciation = getPronunciationAssetSpec(displayText, AUDIO_PROFILE);
+    const text = pronunciation.text;
+    const hash = audioHash(text, pronunciation.profile);
     if (seen.has(hash)) continue;
     // Earlier tiers win, so a word that also appears in a sentence list stays
     // classified as a word.
-    seen.set(hash, { hash, text, tier, chars: text.length });
+    seen.set(hash, {
+      hash,
+      text,
+      ...(text !== displayText ? { displayText } : {}),
+      ...(pronunciation.profile.modelId !== AUDIO_PROFILE.modelId
+        ? { profile: pronunciation.profile }
+        : {}),
+      tier,
+      chars: text.length,
+    });
     added += 1;
     chars += text.length;
   }

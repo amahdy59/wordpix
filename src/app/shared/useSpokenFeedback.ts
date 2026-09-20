@@ -98,7 +98,7 @@ export function useSpokenFeedback(): SpokenFeedback {
       });
 
       // Aggressively resolve URLs for gapless overlap
-      Promise.all(sequence.map(audioUrl)).then((urls) => {
+      Promise.all(sequence.map((text) => audioUrl(text))).then((urls) => {
         if (!isCurrent()) return;
 
         timerRef.current = setTimeout(() => {

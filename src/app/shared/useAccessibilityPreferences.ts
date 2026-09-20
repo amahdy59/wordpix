@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { useLearner, TEXT_SIZE_SCALE, type NumeralSystem } from "../context/LearnerContext";
 
 const BASE_ROOT_FONT_SIZE_PX = 16;
@@ -49,12 +49,10 @@ export function useApplyAccessibilityPreferences() {
     document.documentElement.dataset.learnerMode = expression;
   }, [expression]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     const applyTheme = () => {
-      const isDark =
-        theme === "dark" ||
-        (theme === "system" && mediaQuery.matches);
+      const isDark = theme === "dark" || (theme === "system" && mediaQuery.matches);
       document.documentElement.classList.toggle("dark", isDark);
     };
 

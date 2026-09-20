@@ -36,6 +36,13 @@ export const AUDIO_PROFILE = {
   similarityBoost: 0.75,
 } as const;
 
+export interface AudioProfile {
+  voiceId: string;
+  modelId: string;
+  stability: number;
+  similarityBoost: number;
+}
+
 /**
  * Public base URL of the asset bucket, e.g. https://assets.example.com.
  *
@@ -58,12 +65,12 @@ export function normaliseText(text: string): string {
   return String(text).replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ").trim();
 }
 
-function profileFingerprint(): string {
+function profileFingerprint(profile: AudioProfile = AUDIO_PROFILE): string {
   return [
-    AUDIO_PROFILE.voiceId,
-    AUDIO_PROFILE.modelId,
-    AUDIO_PROFILE.stability,
-    AUDIO_PROFILE.similarityBoost,
+    profile.voiceId,
+    profile.modelId,
+    profile.stability,
+    profile.similarityBoost,
   ].join("|");
 }
 
@@ -78,10 +85,13 @@ function toHex(buffer: ArrayBuffer): string {
  * — which is fine: localhost and the deployed HTTPS origin both qualify, and
  * anywhere else returns null so the caller falls back rather than throwing.
  */
-export async function audioHash(text: string): Promise<string | null> {
+export async function audioHash(
+  text: string,
+  profile: AudioProfile = AUDIO_PROFILE
+): Promise<string | null> {
   const subtle = globalThis.crypto?.subtle;
   if (!subtle) return null;
-  const payload = `${profileFingerprint()}\n${normaliseText(text)}`;
+  const payload = `${profileFingerprint(profile)}\n${normaliseText(text)}`;
   try {
     const digest = await subtle.digest("SHA-256", new TextEncoder().encode(payload));
     return toHex(digest);
@@ -91,8 +101,11 @@ export async function audioHash(text: string): Promise<string | null> {
 }
 
 /** Object key for a clip, sharded to match the generator. */
-export async function audioKey(text: string): Promise<string | null> {
-  const hash = await audioHash(text);
+export async function audioKey(
+  text: string,
+  profile: AudioProfile = AUDIO_PROFILE
+): Promise<string | null> {
+  const hash = await audioHash(text, profile);
   return hash ? `audio/${hash.slice(0, 2)}/${hash}.mp3` : null;
 }
 
@@ -100,9 +113,12 @@ export async function audioKey(text: string): Promise<string | null> {
  * Full CDN URL for a clip, or null when there is no bucket configured or no
  * crypto available to derive the key.
  */
-export async function audioUrl(text: string): Promise<string | null> {
+export async function audioUrl(
+  text: string,
+  profile: AudioProfile = AUDIO_PROFILE
+): Promise<string | null> {
   if (!hasAssetHost()) return null;
-  const key = await audioKey(text);
+  const key = await audioKey(text, profile);
   return key ? `${ASSET_BASE_URL}/${key}` : null;
 }
 

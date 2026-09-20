@@ -1,7 +1,18 @@
 import { afterEach, expect, it, vi } from "vitest";
 import { act, renderHook } from "@testing-library/react";
 import { useAudio } from "../shared/useAudio";
-vi.mock("../shared/assetUrls", () => ({ hasAssetHost: () => false, audioUrl: async () => null }));
+vi.mock("../shared/assetUrls", () => ({
+  hasAssetHost: () => false,
+  audioUrl: async () => null,
+  audioKey: async () => null,
+  normaliseText: (text: string) => text.trim(),
+  AUDIO_PROFILE: {
+    voiceId: "test",
+    modelId: "test",
+    stability: 0.7,
+    similarityBoost: 0.75,
+  },
+}));
 vi.mock("../context/LearnerContext", () => ({
   useLearner: () => ({ state: { accessibility: { speechRate: 1 } } }),
 }));

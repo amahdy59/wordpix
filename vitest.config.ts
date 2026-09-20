@@ -20,7 +20,13 @@ export default defineConfig({
         singleThread: true,
       },
     },
-    exclude: [...configDefaults.exclude, "tests/**", "e2e/**", "scratch/**"],
+    exclude: [
+      ...configDefaults.exclude,
+      "tests/**",
+      "e2e/**",
+      "scratch/**",
+      ".codex-integration-backup/**",
+    ],
   },
   resolve: {
     alias: {

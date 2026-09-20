@@ -1,5 +1,6 @@
 import type { Screen, Action, OnboardStep } from "../types";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, resolveGroup, resolveUnitForLesson } from "../data/lessons";
+import { getFoundationLesson } from "../learning/foundations/foundationCurriculum";
 
 export const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
 export const TABBED_IDS: ReadonlySet<string> = new Set([
@@ -53,6 +54,9 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "GO_LEARN_WORDS") {
     return { id: "learn-words", lessonId: action.lessonId };
+  }
+  if (action.type === "START_FOUNDATION_LESSON") {
+    return { id: "foundation-lesson", lessonId: action.lessonId };
   }
   if (action.type === "START_LESSON") {
     let queue =
@@ -169,6 +173,8 @@ export function describeScreen(screen: Screen, t: (key: string) => string): stri
       return "Skill exercises";
     case "skill-exercise":
       return screen.exerciseId;
+    case "foundation-lesson":
+      return `Foundations: ${getFoundationLesson(screen.lessonId).title}`;
     default:
       return "";
   }
