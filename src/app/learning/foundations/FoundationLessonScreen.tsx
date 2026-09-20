@@ -526,9 +526,24 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                           type="button"
                           onClick={() => choose(item.value)}
                           disabled={answered}
-                          className={`min-h-[64px] rounded-2xl border-2 border-primary bg-wp-card px-3 text-lg font-black text-primary hover:bg-primary/10 disabled:opacity-65 ${focusRing}`}
+                          className={`group min-h-[64px] overflow-hidden rounded-2xl border-2 border-primary bg-wp-card text-lg font-black text-primary hover:bg-primary/10 disabled:opacity-65 ${focusRing}`}
                         >
-                          {item.label}
+                          {item.image ? (
+                            <>
+                              <span className="block aspect-[4/3] overflow-hidden bg-primary/10">
+                                <img
+                                  src={resolveAssetUrl(item.image.src)}
+                                  alt=""
+                                  className="size-full object-cover transition duration-300 group-hover:scale-105"
+                                />
+                              </span>
+                              <span className="block border-t border-border px-3 py-3 capitalize">
+                                {item.label}
+                              </span>
+                            </>
+                          ) : (
+                            <span className="block px-3 py-4">{item.label}</span>
+                          )}
                         </button>
                       ))}
                     </div>
@@ -587,8 +602,8 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                   {usesQualitativeRouting
                     ? "This lesson records communication evidence without using an accent, speed, or pronunciation score as a gate."
                     : mastered
-                    ? `Score: ${scorePercent}%. You are ready for the next lesson.`
-                    : `Score: ${scorePercent}%. Try once more to reach ${lesson.masteryThreshold}%.`}
+                      ? `Score: ${scorePercent}%. You are ready for the next lesson.`
+                      : `Score: ${scorePercent}%. Try once more to reach ${lesson.masteryThreshold}%.`}
                 </p>
               </div>
               {usesQualitativeRouting && (
@@ -600,7 +615,8 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                     {lesson.evidenceDimensions.join(" · ")}
                   </p>
                   <p className="mt-2 text-sm font-semibold leading-relaxed text-muted-foreground">
-                    Pilot curriculum: phonetic and accessibility review remain part of the release gate.
+                    Pilot curriculum: phonetic and accessibility review remain part of the release
+                    gate.
                   </p>
                 </div>
               )}

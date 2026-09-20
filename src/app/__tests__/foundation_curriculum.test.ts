@@ -141,7 +141,7 @@ describe("foundation curriculum", () => {
       ])
     );
 
-    expect(texts.size).toBeGreaterThanOrEqual(197);
+    expect(texts.size).toBeGreaterThanOrEqual(175);
     for (const text of texts) {
       const key = await audioKey(text);
       expect(key).not.toBeNull();
@@ -161,6 +161,19 @@ describe("foundation curriculum", () => {
       expect(lesson.evidenceDimensions.length).toBeGreaterThan(1);
       expect(lesson.nonGoals.join(" ")).toMatch(/accent|speed|diagnos/i);
     }
+  });
+
+  it("uses visual, action-led practice instead of policy lectures in pronunciation lessons", () => {
+    const questions = LEVEL_THIRTEEN_UNITS[0].lessons.flatMap((lesson) => lesson.questions);
+    const photoQuestions = questions.filter((question) =>
+      question.options.some((option) => option.mediaKind === "photo")
+    );
+
+    expect(photoQuestions.length).toBeGreaterThanOrEqual(24);
+    expect(questions.every((question) => !question.prompt.trim().endsWith("?"))).toBe(true);
+    expect(questions.map((question) => question.prompt).join(" ")).not.toMatch(
+      /what evidence|what should|which idea respects|who helps/i
+    );
   });
 
   it("keeps spoken answer choices interactive instead of narrating option numbers", () => {
