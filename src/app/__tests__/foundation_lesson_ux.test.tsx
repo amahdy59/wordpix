@@ -49,6 +49,27 @@ describe("foundation lesson experience", () => {
     expect(screen.getByText("Yes. sun contains sss.")).toBeInTheDocument();
   });
 
+  it("keeps rhyme pictures visible and automatically plays each entered audio step", async () => {
+    const user = userEvent.setup();
+    const { container } = render(
+      <LearnerProvider>
+        <FoundationLessonScreen lessonId="rhyme-recognition" dispatch={vi.fn()} />
+      </LearnerProvider>
+    );
+
+    await user.click(screen.getByRole("button", { name: "Start lesson" }));
+    expect(audio.speak).toHaveBeenLastCalledWith("cat. hat.");
+    await user.click(screen.getByRole("button", { name: "Continue" }));
+    expect(audio.speak).toHaveBeenLastCalledWith("cat. sun.");
+    await user.click(screen.getByRole("button", { name: "Continue" }));
+
+    expect(
+      screen.getByRole("heading", { name: "Listen for the word with the same ending sound." })
+    ).toBeInTheDocument();
+    expect(container.querySelectorAll("img.blur-xl")).toHaveLength(0);
+    expect(container.querySelectorAll("img.blur-0").length).toBeGreaterThan(0);
+  });
+
   it("shows a clear recovery action when sound playback fails", () => {
     audio.status = "error";
     render(

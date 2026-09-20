@@ -47,6 +47,7 @@ export interface FoundationQuestion {
   prompt: string;
   audio: string;
   display?: string;
+  imageReveal?: "always" | "after-answer";
   options: readonly {
     value: string;
     label: string;
@@ -458,16 +459,17 @@ const FOUNDATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
       { audio: "cat. hat.", explanation: "Cat and hat rhyme. Their endings sound the same." },
       { audio: "cat. sun.", explanation: "Cat and sun do not rhyme." },
     ],
-    questions: rhymeQuestions.map(([target, first, second, answer]) =>
-      basic(
-        "Which word rhymes?",
+    questions: rhymeQuestions.map(([target, first, second, answer]) => ({
+      ...basic(
+        "Listen for the word with the same ending sound.",
         target,
         answer,
         spokenOptions(first, second),
         "Yes. The endings sound the same.",
         "Listen only to the ending chunk in each word."
-      )
-    ),
+      ),
+      imageReveal: "always" as const,
+    })),
   },
   {
     id: "same-beginning",

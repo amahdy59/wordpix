@@ -21,6 +21,7 @@ const questionSchema = z
     prompt: z.string().min(1),
     audio: z.string().min(1),
     display: z.string().min(1).optional(),
+    imageReveal: z.enum(["always", "after-answer"]).optional(),
     options: z.array(optionSchema).min(2),
     answer: z.string().min(1),
     correctFeedback: z.string().min(1),

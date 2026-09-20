@@ -95,7 +95,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
     "The goal is easier communication when it matters to the learner, never erasing an accent.",
     [
       photoQuestion(
-        "Tap the picture for teacher.",
+        "Listen, then choose the matching picture.",
         "teacher",
         1,
         ["teacher", "show"],
@@ -103,7 +103,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "Look for the person teaching a class."
       ),
       photoQuestion(
-        "Tap the picture for show.",
+        "Listen, then choose the matching picture.",
         "show",
         2,
         ["teacher", "show"],
@@ -147,7 +147,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "The word begins with mmm."
       ),
       photoQuestion(
-        "Listen closely, then tap pig or big.",
+        "Listen closely, then choose the matching picture.",
         "pig",
         1,
         ["pig", "big"],
@@ -167,7 +167,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
     "The lesson values understandable meaning, not exaggerated or unnatural speech.",
     [
       photoQuestion(
-        "Listen for the last sound. Tap dog.",
+        "Listen to the whole word, then choose its picture.",
         "dog",
         1,
         ["dog", "saw"],
@@ -175,7 +175,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "Listen all the way to the end of the word."
       ),
       photoQuestion(
-        "Listen for the last sound. Tap saw.",
+        "Listen to the whole word, then choose its picture.",
         "saw",
         2,
         ["dog", "saw"],
@@ -203,7 +203,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
     "Learners may listen, point, type, sign, or speak. Production is optional unless it is the chosen goal.",
     [
       photoQuestion(
-        "Tap blue.",
+        "Listen for the beginning, then choose the picture.",
         "blue",
         1,
         ["blue", "bread"],
@@ -211,7 +211,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "Listen to the beginning: b-l-ue."
       ),
       photoQuestion(
-        "Tap bread.",
+        "Listen for the beginning, then choose the picture.",
         "bread",
         2,
         ["blue", "bread"],
@@ -219,7 +219,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "Listen to the beginning: b-r-ead."
       ),
       photoQuestion(
-        "Listen to the message: bring green milk. Tap milk.",
+        "Listen to the message, then choose what to bring.",
         "Bring green milk.",
         2,
         ["green", "milk"],
@@ -239,7 +239,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
     "Stress is taught through familiar words and meaning, never as a reason to reject a legitimate accent.",
     [
       photoQuestion(
-        "Listen and tap teacher.",
+        "Listen, then choose the word with two beats.",
         "teacher",
         1,
         ["teacher", "store"],
@@ -247,7 +247,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "Tap the beats as you listen: TEA-cher."
       ),
       photoQuestion(
-        "Listen and tap store.",
+        "Listen, then choose the word with one beat.",
         "store",
         2,
         ["teacher", "store"],
@@ -255,7 +255,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "One word, one beat: store."
       ),
       question(
-        "Tap the beat pattern for teacher.",
+        "Listen, then choose the matching beat pattern.",
         "teacher",
         2,
         ["●", "● ·"],
@@ -275,7 +275,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
     "Reduced syllables are explored through listening and familiar vocabulary, not rigid accent rules.",
     [
       photoQuestion(
-        "Tap the word with two beats.",
+        "Listen, then choose the word with two beats.",
         "teacher",
         1,
         ["teacher", "rice"],
@@ -283,7 +283,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "Tap once for TEA and once for cher."
       ),
       photoQuestion(
-        "Tap the word with one beat.",
+        "Listen, then choose the word with one beat.",
         "rice",
         2,
         ["teacher", "rice"],
@@ -291,7 +291,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "Say it gently to yourself: rice."
       ),
       question(
-        "Match teacher to its beat pattern.",
+        "Listen, then choose the matching beat pattern.",
         "teacher",
         2,
         ["●", "● ·"],
@@ -347,7 +347,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
     "Prominence is flexible and meaning-driven; there is no single accent pattern to copy.",
     [
       photoQuestion(
-        "You need the blue one. Tap blue.",
+        "Listen, then choose the colour that stands out.",
         "I need the blue one.",
         1,
         ["blue", "brown", "green"],
@@ -355,7 +355,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "The colour tells you which one to choose."
       ),
       photoQuestion(
-        "Not blue—the green one. Tap green.",
+        "Listen, then choose the corrected colour.",
         "Not blue. The green one.",
         3,
         ["blue", "brown", "green"],
@@ -363,7 +363,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "Listen for the word after not blue."
       ),
       photoQuestion(
-        "Bring the brown one. Tap brown.",
+        "Listen, then choose the key colour.",
         "Bring the brown one.",
         2,
         ["blue", "brown", "green"],
@@ -383,7 +383,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
     "Phrasing supports meaning; learners are not rewarded for dramatic performance or speed.",
     [
       photoQuestion(
-        "After lunch, go to the park. Tap the place.",
+        "Listen to both chunks, then choose the destination.",
         "After lunch, go to the park.",
         1,
         ["park", "house", "store"],
@@ -391,7 +391,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "Listen after the short pause."
       ),
       photoQuestion(
-        "Before dinner, go to the store. Tap the place.",
+        "Listen to both chunks, then choose the destination.",
         "Before dinner, go to the store.",
         3,
         ["park", "house", "store"],
@@ -399,7 +399,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "The message has a time chunk and a place chunk."
       ),
       photoQuestion(
-        "When school ends, go home. Tap house.",
+        "Listen to both chunks, then match the destination.",
         "When school ends, go home.",
         2,
         ["park", "house", "store"],
@@ -419,7 +419,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
     "Natural variation is expected. Speed is never the sole goal or gate.",
     [
       photoQuestion(
-        "Listen: a small dog. Tap small.",
+        "Listen to the short phrase, then choose the size.",
         "A small dog.",
         1,
         ["small", "big"],
@@ -427,7 +427,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "Listen to the whole phrase, not one sound at a time."
       ),
       photoQuestion(
-        "Listen: a big dog. Tap big.",
+        "Listen to the short phrase, then choose the size.",
         "A big dog.",
         2,
         ["small", "big"],
@@ -455,7 +455,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
     "A repair request is not proof that an accent or speaker is wrong.",
     [
       photoQuestion(
-        "I mean the key—the thing that opens a door. Tap key.",
+        "Listen to the extra clue, then choose the object.",
         "I mean the key. It opens a door.",
         1,
         ["key", "map", "show"],
@@ -463,7 +463,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "Use the clue: it opens a door."
       ),
       photoQuestion(
-        "Let me show you on the map. Tap map.",
+        "Listen, then choose the tool that explains the place.",
         "Let me show you on the map.",
         2,
         ["key", "map", "show"],
@@ -491,7 +491,7 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
     "Recordings are optional and private by default. One score never defines communication ability.",
     [
       photoQuestion(
-        "Finish with a picture match. Tap sun.",
+        "Finish with a picture match. Listen, then choose.",
         "sun",
         1,
         ["sun", "show"],
@@ -502,17 +502,17 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "You forget a word. Choose a helpful strategy.",
         "You forget a word. Choose a helpful strategy.",
         1,
-        ["Use a picture", "Give up"],
+        ["Use a picture", "Say it faster"],
         "Yes. A picture can help you share the meaning.",
         "Choose a tool that keeps communication moving."
       ),
       question(
-        "You want more practice. Choose the next step.",
-        "You want more practice. Choose the next step.",
-        2,
-        ["Stop forever", "Try another lesson"],
-        "Great. Choose another lesson when you are ready.",
-        "Pick the action that gives you more practice."
+        "A friend looks unsure. Choose a helpful repair.",
+        "A friend looks unsure. Choose a helpful repair.",
+        1,
+        ["Add a clear clue", "Speak much faster"],
+        "Yes. A clear clue gives the listener useful information.",
+        "Choose the action that makes the message easier to understand."
       ),
     ],
     ["reflection", "strategy use", "learner agency", "transfer"]

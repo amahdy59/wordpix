@@ -126,15 +126,24 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
     setHeardOptions(new Set());
   };
 
+  const playStepAudio = (nextStep: Step) => {
+    if (nextStep.kind === "model") speak(lesson.models[nextStep.index].audio);
+    if (nextStep.kind === "question") speak(lesson.questions[nextStep.index].audio);
+  };
+
   const advance = () => {
+    const nextIndex = Math.min(stepIndex + 1, steps.length - 1);
     resetStepInteraction();
-    setStepIndex((current) => Math.min(current + 1, steps.length - 1));
+    setStepIndex(nextIndex);
+    playStepAudio(steps[nextIndex]);
   };
 
   const goBack = () => {
     if (stepIndex === 0) return;
+    const previousIndex = Math.max(0, stepIndex - 1);
     resetStepInteraction();
-    setStepIndex((current) => Math.max(0, current - 1));
+    setStepIndex(previousIndex);
+    playStepAudio(steps[previousIndex]);
   };
 
   const choose = (value: string) => {
@@ -449,6 +458,8 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                       {question.options.map((item, index) => {
                         const heard = heardOptions.has(item.value);
                         const isAnswer = item.value === question.answer;
+                        const revealImage =
+                          question.imageReveal === "always" || (answered && isAnswer);
                         return (
                           <div
                             key={item.value}
@@ -474,7 +485,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                                 <img
                                   src={resolveAssetUrl(item.image.src)}
                                   alt=""
-                                  className={`size-full object-cover transition duration-500 ${answered && isAnswer ? "blur-0 scale-100" : "scale-110 blur-xl"}`}
+                                  className={`size-full object-cover transition duration-500 ${revealImage ? "scale-100 blur-0" : "scale-110 blur-xl"}`}
                                 />
                               ) : (
                                 <Volume2 className="size-12" aria-hidden />
