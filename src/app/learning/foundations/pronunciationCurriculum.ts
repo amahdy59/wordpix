@@ -1,10 +1,11 @@
 import type { FoundationLessonDraft, FoundationQuestion } from "./foundationCurriculum";
+import { PRONUNCIATION_IMAGE_FILES } from "./pronunciationImageVersions";
 
 const options = (...labels: string[]): FoundationQuestion["options"] =>
   labels.map((label, index) => ({ value: String(index + 1), label, mediaKind: "symbol" }));
 
 const pronunciationImage = (word: string) => ({
-  src: `/word-images/pronunciation/${word}.webp`,
+  src: `/word-images/pronunciation/${PRONUNCIATION_IMAGE_FILES[word as keyof typeof PRONUNCIATION_IMAGE_FILES] ?? `${word}.webp`}`,
   alt: word,
 });
 
