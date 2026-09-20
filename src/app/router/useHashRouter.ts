@@ -2,7 +2,10 @@ import { useEffect, useCallback } from "react";
 import type { Screen, SkillExerciseId } from "../types";
 import { SKILL_EXERCISE_IDS } from "../exercises/registry";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, resolveUnitForLesson } from "../data/lessons";
-import { getFoundationLesson, isFoundationLessonId } from "../learning/foundations/foundationCurriculum";
+import {
+  getFoundationLesson,
+  isFoundationLessonId,
+} from "../learning/foundations/foundationCurriculum";
 
 const SKILL_EXERCISE_ID_SET = new Set<string>(SKILL_EXERCISE_IDS);
 
@@ -63,6 +66,19 @@ const LEARNING_MATERIALS_PATTERN = new RegExp(
 const SKILL_EXERCISE_PATTERN = /^#\/skills\/([a-z-]+)$/;
 const FOUNDATION_LESSON_PATTERN = /^#\/foundations\/([a-z-]+)$/;
 
+/**
+ * Preserve shared/bookmarked names from the pronunciation curriculum while
+ * keeping the shorter canonical lesson IDs used by application state.
+ */
+const FOUNDATION_LESSON_ALIASES: Readonly<
+  Record<string, Parameters<typeof getFoundationLesson>[0]>
+> = {
+  "pronunciation-minimal-pairs": "vowel-clarity",
+  "pronunciation-word-stress": "word-stress",
+  "pronunciation-connected-speech": "connected-speech",
+  "pronunciation-communication-repair": "communication-repair",
+};
+
 export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "onboarding") return { hash: "#/onboarding", title: "WordPix — Onboarding" };
   if (screen.id === "home") return { hash: "#/home", title: "WordPix — Home" };
@@ -110,8 +126,12 @@ export function hashToRoute(hash: string): RouteIntent | null {
   const normalized = hash.toLowerCase();
 
   const foundationMatch = normalized.match(FOUNDATION_LESSON_PATTERN);
-  if (foundationMatch && isFoundationLessonId(foundationMatch[1])) {
-    const lesson = getFoundationLesson(foundationMatch[1]);
+  const requestedFoundationId = foundationMatch?.[1];
+  const foundationId = requestedFoundationId
+    ? (FOUNDATION_LESSON_ALIASES[requestedFoundationId] ?? requestedFoundationId)
+    : undefined;
+  if (foundationId && isFoundationLessonId(foundationId)) {
+    const lesson = getFoundationLesson(foundationId);
     return {
       kind: "screen",
       screen: { id: "foundation-lesson", lessonId: lesson.id },

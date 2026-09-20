@@ -74,6 +74,17 @@ describe("Hash round-tripping", () => {
     expect(hashToRoute("#/nowhere")).toBeNull();
   });
 
+  it("keeps shared pronunciation lesson aliases working", () => {
+    expect(hashToScreen("#/foundations/pronunciation-minimal-pairs")?.screen).toEqual({
+      id: "foundation-lesson",
+      lessonId: "vowel-clarity",
+    });
+    expect(hashToScreen("#/foundations/pronunciation-word-stress")?.screen).toEqual({
+      id: "foundation-lesson",
+      lessonId: "word-stress",
+    });
+  });
+
   it("gives onboarding its required step, not a bare id", () => {
     const resolved = hashToScreen("#/onboarding");
     expect(resolved?.screen).toEqual({ id: "onboarding", step: "splash" });
