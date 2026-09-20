@@ -822,6 +822,11 @@ const generatedPicture = (word: string): FoundationPictureWord => ({
   src: `/foundation-images/${word}-photorealistic-v1.avif`,
 });
 
+const pronunciationPicture = (word: string): FoundationPictureWord => ({
+  word,
+  src: `/word-images/pronunciation/${word}.webp`,
+});
+
 /**
  * Familiar-object previews for young learners. These are deliberately shown
  * before practice, not beside scored listening choices, so they teach
@@ -889,6 +894,46 @@ export const FOUNDATION_PICTURE_WORDS: Partial<
   ],
   "sound-t": [picture("cat", "pet-shop"), picture("hat", "costume-shop")],
   "sound-p": [picture("pen", "classroom"), picture("cup", "kitchen")],
+  "pronunciation-goals": [pronunciationPicture("teacher"), pronunciationPicture("show")],
+  "meaningful-contrasts": [
+    pronunciationPicture("cap"),
+    pronunciationPicture("map"),
+    pronunciationPicture("pig"),
+    pronunciationPicture("big"),
+  ],
+  "clear-word-endings": [pronunciationPicture("dog"), pronunciationPicture("saw")],
+  "consonant-sequences": [
+    pronunciationPicture("blue"),
+    pronunciationPicture("bread"),
+    pronunciationPicture("green"),
+    pronunciationPicture("milk"),
+  ],
+  "word-stress": [pronunciationPicture("teacher"), pronunciationPicture("store")],
+  "syllable-prominence": [pronunciationPicture("teacher"), pronunciationPicture("rice")],
+  "vowel-clarity": [
+    pronunciationPicture("pin"),
+    pronunciationPicture("pen"),
+    pronunciationPicture("pat"),
+    pronunciationPicture("tap"),
+    pronunciationPicture("sap"),
+  ],
+  "important-information": [
+    pronunciationPicture("blue"),
+    pronunciationPicture("brown"),
+    pronunciationPicture("green"),
+  ],
+  "meaning-chunks": [
+    pronunciationPicture("park"),
+    pronunciationPicture("house"),
+    pronunciationPicture("store"),
+  ],
+  "connected-speech": [pronunciationPicture("small"), pronunciationPicture("big")],
+  "communication-repair": [
+    pronunciationPicture("key"),
+    pronunciationPicture("map"),
+    pronunciationPicture("show"),
+  ],
+  "pronunciation-portfolio": [pronunciationPicture("sun")],
 };
 
 export const FOUNDATION_LESSON_IDS = FOUNDATION_LESSONS.map((lesson) => lesson.id);

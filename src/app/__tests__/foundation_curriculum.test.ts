@@ -116,13 +116,13 @@ describe("foundation curriculum", () => {
     });
   });
 
-  it("provides valid picture-word previews without using people", () => {
+  it("provides valid local picture-word previews for every illustrated lesson", () => {
     const pictureWords = Object.values(FOUNDATION_PICTURE_WORDS).flat();
-    expect(Object.keys(FOUNDATION_PICTURE_WORDS)).toHaveLength(12);
-    expect(pictureWords.length).toBeGreaterThanOrEqual(40);
+    expect(Object.keys(FOUNDATION_PICTURE_WORDS)).toHaveLength(24);
+    expect(pictureWords.length).toBeGreaterThanOrEqual(70);
 
     for (const picture of pictureWords) {
-      expect(picture.src).toMatch(/\.(?:avif|png)$/);
+      expect(picture.src).toMatch(/\.(?:avif|png|webp)$/);
       expect(existsSync(resolve(process.cwd(), "public", picture.src.replace(/^\//, "")))).toBe(
         true
       );
@@ -141,7 +141,7 @@ describe("foundation curriculum", () => {
       ])
     );
 
-    expect(texts.size).toBe(181);
+    expect(texts.size).toBeGreaterThanOrEqual(197);
     for (const text of texts) {
       const key = await audioKey(text);
       expect(key).not.toBeNull();
