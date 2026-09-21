@@ -17,12 +17,18 @@
     "definition": "To do random, unplanned work or activities or spend time idly.",
     "arabicTranslation": "قرد"
   },
-  "gorilla": { "arabicTranslation": "غوريلا" },
+  "gorilla": {
+    "arabicTranslation": "غوريلا",
+    "definition": "A very large African ape with dark fur and great strength."
+  },
   "sloth": {
     "definition": "A disinclination to work or exert yourself.",
     "arabicTranslation": "كسلان"
   },
-  "tree-frog": { "arabicTranslation": "" },
+  "tree-frog": {
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «تريي فروج»",
+    "definition": "A small frog adapted to climb and live in trees."
+  },
   "anaconda": {
     "definition": "Large arboreal boa of tropical South America.",
     "arabicTranslation": "أناكوندا"
@@ -48,7 +54,10 @@
     "exampleUsage": "The butterfly was identified during the lesson.",
     "arabicTranslation": "فراشة"
   },
-  "beetle": { "arabicTranslation": "خنفساء" },
+  "beetle": {
+    "arabicTranslation": "خنفساء",
+    "definition": "An insect whose front wings form hard protective covers."
+  },
   "ant": {
     "definition": "A small insect with six legs that lives in organised groups.",
     "exampleUsage": "The ant was identified during the lesson.",
@@ -124,12 +133,18 @@
     "definition": "A woody climbing usually tropical plant.",
     "arabicTranslation": "ليانا"
   },
-  "canopy": { "arabicTranslation": "مظلّة" },
+  "canopy": {
+    "arabicTranslation": "مظلّة",
+    "definition": "A rooflike covering that provides shade or shelter."
+  },
   "root": {
     "definition": "The part of a plant that grows underground and takes in water.",
     "arabicTranslation": "جذر"
   },
-  "trunk": { "arabicTranslation": "صندوق السيارة" },
+  "trunk": {
+    "arabicTranslation": "صندوق السيارة",
+    "definition": "The main woody stem of a tree."
+  },
   "leaf": {
     "definition": "A flat green part of a plant that uses light to make food.",
     "arabicTranslation": "ورقة نبات"
@@ -154,7 +169,10 @@
     "definition": "A situation fraught with difficulties and imponderables.",
     "arabicTranslation": "مستنقع"
   },
-  "mud": { "definition": "To soil with mud, muck, or mire.", "arabicTranslation": "طين" },
+  "mud": {
+    "definition": "To soil with mud, muck, or mire.",
+    "arabicTranslation": "طين"
+  },
   "rock": {
     "definition": "A hard natural material found on the ground.",
     "arabicTranslation": "صخرة"
@@ -163,7 +181,10 @@
     "definition": "To hollow out as if making a cave or opening.",
     "arabicTranslation": "كهف"
   },
-  "cliff": { "definition": "A steep wall of rock or earth.", "arabicTranslation": "" },
+  "cliff": {
+    "definition": "A steep wall of rock or earth.",
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «كليفف»"
+  },
   "ravine": {
     "definition": "A deep narrow steep-sided valley (especially one formed by running water).",
     "arabicTranslation": "وادٍ ضيق"
@@ -176,7 +197,10 @@
     "definition": "Vegetation growing above the forest floor and beneath the canopy forms a shaded layer of small trees, shrubs, and young saplings.",
     "arabicTranslation": "طبقة نباتية سفلية"
   },
-  "forest-floor": { "arabicTranslation": "طابق غابة" },
+  "forest-floor": {
+    "arabicTranslation": "طابق غابة",
+    "definition": "The ground beneath trees in a forest."
+  },
   "clearing": {
     "definition": "A tract of land with few or no trees in the middle of a wooded area.",
     "arabicTranslation": "فسحة في الغابة"
@@ -205,31 +229,55 @@
     "definition": "A site where people on holiday can pitch a tent.",
     "arabicTranslation": "موقع تخييم"
   },
-  "roar": { "definition": "A deep prolonged loud noise.", "arabicTranslation": "زئير" },
+  "roar": {
+    "arabicTranslation": "زئير",
+    "definition": "A deep prolonged loud noise."
+  },
   "screech": {
     "definition": "A high-pitched noise resembling a human cry.",
     "arabicTranslation": "صرير حاد"
   },
-  "buzz": { "arabicTranslation": "طنين" },
+  "buzz": {
+    "arabicTranslation": "طنين",
+    "definition": "To make a low humming sound, like a flying insect."
+  },
   "chirp": {
     "definition": "A sharp sound made by small birds or insects.",
     "exampleUsage": "The chirp was identified during the lesson.",
     "arabicTranslation": "زقزقة"
   },
-  "rustle": { "arabicTranslation": "حفيف" },
+  "rustle": {
+    "arabicTranslation": "حفيف",
+    "definition": "To make a soft dry sound as leaves or fabric move."
+  },
   "splash": {
     "definition": "A small quantity of something moist or liquid.",
     "arabicTranslation": "صوت رذاذ الماء"
   },
-  "echo": { "definition": "An imitation or repetition.", "arabicTranslation": "صدى" },
+  "echo": {
+    "arabicTranslation": "صدى",
+    "definition": "An imitation or repetition."
+  },
   "humidity": {
     "definition": "The amount of water vapour in the air.",
     "arabicTranslation": "رطوبة"
   },
-  "heat": { "arabicTranslation": "حرارة" },
-  "shadow": { "definition": "A premonition of something adverse.", "arabicTranslation": "ظل" },
-  "banana-plant": { "arabicTranslation": "" },
-  "rubber-tree": { "arabicTranslation": "" },
+  "heat": {
+    "arabicTranslation": "حرارة",
+    "definition": "Warmth or a high temperature."
+  },
+  "shadow": {
+    "definition": "A premonition of something adverse.",
+    "arabicTranslation": "ظل"
+  },
+  "banana-plant": {
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «بانانا بلانت»",
+    "definition": "A large tropical plant that produces bunches of bananas."
+  },
+  "rubber-tree": {
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «روببير تريي»",
+    "definition": "A tropical tree that produces latex used to make natural rubber."
+  },
   "rope-bridge": {
     "definition": "A bridge built from ropes instead of rigid beams carries people across a gap or stretch of water.",
     "arabicTranslation": "قوس القدم حبل"

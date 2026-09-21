@@ -1,5 +1,8 @@
 {
-  "house": { "definition": "A social unit living together.", "arabicTranslation": "منزل" },
+  "house": {
+    "definition": "A social unit living together.",
+    "arabicTranslation": "منزل"
+  },
   "apartment": {
     "definition": "A suite of rooms usually on one floor of an apartment house.",
     "arabicTranslation": "شقة"
@@ -28,7 +31,10 @@
     "definition": "Floor consisting of a large unpartitioned space over a factory or warehouse or other commercial space.",
     "arabicTranslation": "شقة علوية مفتوحة"
   },
-  "cottage": { "definition": "A small house with a single story.", "arabicTranslation": "كوخ" },
+  "cottage": {
+    "definition": "A small house with a single story.",
+    "arabicTranslation": "كوخ"
+  },
   "duplex": {
     "definition": "A house with two units sharing a common wall.",
     "arabicTranslation": "منزل دوبلكس"
@@ -39,9 +45,12 @@
   },
   "retail-store": {
     "definition": "A physical shop open to the public buys merchandise from suppliers and sells it directly to individuals for their own use.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريتايل ستوري»"
   },
-  "warehouse": { "arabicTranslation": "مستودع" },
+  "warehouse": {
+    "arabicTranslation": "مستودع",
+    "definition": "A large building used for storing goods."
+  },
   "factory": {
     "definition": "A plant consisting of one or more buildings with facilities for manufacturing.",
     "arabicTranslation": "مصنع"
@@ -72,7 +81,10 @@
     "definition": "A house where a farmer and family live.",
     "arabicTranslation": "ريفي"
   },
-  "ranch": { "arabicTranslation": "منزل ريفي" },
+  "ranch": {
+    "arabicTranslation": "منزل ريفي",
+    "definition": "A large farm where animals are raised."
+  },
   "cabin": {
     "definition": "To confine to a small space, such as a cabin.",
     "arabicTranslation": "كوخ خشبي"
@@ -92,11 +104,20 @@
   },
   "mobile-home": {
     "definition": "A spacious trailer-style house can be hooked up to utilities, kept in one location, and occupied as a permanent home.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أسلوب أو طراز يُسمّى «موبيلي هومي»"
   },
-  "castle": { "definition": "A large and stately mansion.", "arabicTranslation": "قلعة" },
-  "mansion": { "definition": "A large and imposing house.", "arabicTranslation": "قصر" },
-  "bungalow": { "definition": "A small house with a single story.", "arabicTranslation": "بنغلو" },
+  "castle": {
+    "arabicTranslation": "قلعة",
+    "definition": "A large and stately mansion."
+  },
+  "mansion": {
+    "arabicTranslation": "قصر",
+    "definition": "A large and imposing house."
+  },
+  "bungalow": {
+    "definition": "A small house with a single story.",
+    "arabicTranslation": "بنغلو"
+  },
   "square-footage": {
     "definition": "The area of a floor or property measured in square feet.",
     "exampleUsage": "The listing states the apartment's square footage.",
@@ -115,7 +136,10 @@
     "definition": "A room or building equipped with one or more toilets.",
     "arabicTranslation": "حمامات"
   },
-  "garage": { "definition": "To keep or store in a garage.", "arabicTranslation": "مرآب" },
+  "garage": {
+    "arabicTranslation": "مرآب",
+    "definition": "A building or room used to keep a vehicle."
+  },
   "pool": {
     "definition": "An organization of people or resources that can be shared.",
     "arabicTranslation": "مسبح"
@@ -128,5 +152,8 @@
     "definition": "Space in which vehicles can be parked.",
     "arabicTranslation": "موقف سيارات"
   },
-  "storage": { "definition": "Depositing in a warehouse.", "arabicTranslation": "تخزين" }
+  "storage": {
+    "arabicTranslation": "تخزين",
+    "definition": "Depositing in a warehouse."
+  }
 }

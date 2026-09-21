@@ -1,5 +1,8 @@
 {
-  "cleaning": { "definition": "The act of making something clean.", "arabicTranslation": "تنظيف" },
+  "cleaning": {
+    "definition": "The act of making something clean.",
+    "arabicTranslation": "تنظيف"
+  },
   "filling": {
     "definition": "(dentistry) a dental appliance consisting of any of various substances (as metal or plastic) inserted into a prepared cavity in a tooth.",
     "arabicTranslation": "حشوة"
@@ -10,7 +13,7 @@
   },
   "root-canal": {
     "definition": "A narrow passage inside a tooth’s root lets nerves and blood vessels reach its soft inner chamber.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «رووت كانال»"
   },
   "crown": {
     "definition": "The part of a tooth above the gum that is covered with enamel.",
@@ -24,7 +27,10 @@
     "definition": "To fix or set securely or deeply.",
     "arabicTranslation": "زرعة أسنان"
   },
-  "whitening": { "definition": "Changing to a lighter color.", "arabicTranslation": "تبييض" },
+  "whitening": {
+    "arabicTranslation": "تبييض",
+    "definition": "Changing to a lighter color."
+  },
   "bonding": {
     "definition": "(dentistry) a technique for repairing a tooth.",
     "arabicTranslation": "ترميم لاصق"
@@ -33,7 +39,10 @@
     "definition": "A kind of sealing material that is used to form a hard coating on a porous surface (as a coat of paint or varnish used to size a surface).",
     "arabicTranslation": "مادة مانعة للتسوس"
   },
-  "veneer": { "arabicTranslation": "قشرة أسنان" },
+  "veneer": {
+    "arabicTranslation": "قشرة أسنان",
+    "definition": "A thin covering placed over the front of a tooth to improve its appearance."
+  },
   "inlay": {
     "definition": "(dentistry) a filling consisting of a solid substance (as gold or porcelain) fitted to a cavity in a tooth and cemented into place.",
     "arabicTranslation": "حشوة داخلية"
@@ -70,7 +79,8 @@
   },
   "drill": {
     "definition": "A tool with a rotating bit used for making holes.",
-    "arabicTranslation": "مثقاب"
+    "arabicTranslation": "مثقاب",
+    "exampleUsage": "The drill was used during the activity."
   },
   "probe": {
     "definition": "An inquiry into unfamiliar or questionable activities.",
@@ -89,34 +99,72 @@
     "exampleUsage": "The dental X-ray machine was operated by trained staff.",
     "arabicTranslation": "جهاز أشعة سينية"
   },
-  "curing-light": { "arabicTranslation": "" },
+  "curing-light": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كورينج ليغت»",
+    "definition": "A light used to harden certain dental fillings and adhesives."
+  },
   "forceps": {
     "definition": "An extractor consisting of a pair of pincers used in medical treatment (especially for the delivery of babies).",
     "arabicTranslation": "ملقط جراحي"
   },
-  "impression-tray": { "arabicTranslation": "صينية طبعة أسنان" },
+  "impression-tray": {
+    "arabicTranslation": "صينية طبعة أسنان",
+    "definition": "A holder used to take a mold of the teeth and gums."
+  },
   "polisher": {
     "definition": "A power tool used to buff surfaces.",
-    "arabicTranslation": "أداة تلميع"
+    "arabicTranslation": "أداة تلميع",
+    "exampleUsage": "The polisher was used during the activity."
   },
   "elevator": {
     "definition": "Lifting device consisting of a platform or cage that is raised and lowered mechanically in a vertical shaft in order to move people from one floor to another in a building.",
-    "arabicTranslation": "مصعد"
+    "arabicTranslation": "مصعد",
+    "exampleUsage": "The elevator was used during the activity."
   },
-  "luxator": { "arabicTranslation": "أداة لوكساتور" },
-  "periosteal-elevator": { "arabicTranslation": "" },
-  "bone-file": { "arabicTranslation": "" },
-  "dental-handpiece": { "arabicTranslation": "" },
-  "ultrasonic-scaler": { "arabicTranslation": "" },
-  "apex-locator": { "arabicTranslation": "" },
-  "molar": { "definition": "Grinding tooth with a broad crown.", "arabicTranslation": "ضرس" },
-  "incisor": { "definition": "A tooth for cutting or gnawing.", "arabicTranslation": "قاطع" },
+  "luxator": {
+    "arabicTranslation": "أداة لوكساتور",
+    "definition": "A thin dental tool used to loosen a tooth before removal."
+  },
+  "periosteal-elevator": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بيريوستيال يليفاتور»",
+    "definition": "A dental tool used to lift soft tissue away from bone."
+  },
+  "bone-file": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بوني فيلي»",
+    "definition": "A dental instrument used to smooth rough edges of bone."
+  },
+  "dental-handpiece": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «دينتال هاندبييكي»",
+    "definition": "A powered dental tool that holds a drill or other rotating tip."
+  },
+  "ultrasonic-scaler": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ولتراسونيك سكالير»",
+    "definition": "A dental tool that uses vibration to remove deposits from teeth."
+  },
+  "apex-locator": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ابيكس لوكاتور»",
+    "definition": "A device used to measure the length of a tooth's root canal."
+  },
+  "molar": {
+    "definition": "Grinding tooth with a broad crown.",
+    "arabicTranslation": "ضرس"
+  },
+  "incisor": {
+    "definition": "A tooth for cutting or gnawing.",
+    "arabicTranslation": "قاطع"
+  },
   "canine": {
     "definition": "Of or relating to a pointed conical tooth.",
     "arabicTranslation": "ناب"
   },
-  "wisdom-tooth": { "arabicTranslation": "ضرس العقل" },
-  "gum": { "arabicTranslation": "علكة" },
+  "wisdom-tooth": {
+    "arabicTranslation": "ضرس العقل",
+    "definition": "One of the last molar teeth to grow at the back of the mouth."
+  },
+  "gum": {
+    "arabicTranslation": "علكة",
+    "definition": "Soft tissue around the base of the teeth."
+  },
   "enamel": {
     "definition": "Hard white substance covering the crown of a tooth.",
     "arabicTranslation": "مينا الأسنان"
@@ -129,12 +177,18 @@
     "definition": "Any bundle of nerve fibers running to various organs and tissues of the body.",
     "arabicTranslation": "عصب"
   },
-  "jaw": { "arabicTranslation": "فك" },
+  "jaw": {
+    "arabicTranslation": "فك",
+    "definition": "The bones and muscles of the mouth used for biting and chewing."
+  },
   "palate": {
     "definition": "The upper surface of the mouth that separates the oral and nasal cavities.",
     "arabicTranslation": "حنك"
   },
-  "premolar": { "definition": "A tooth having two cusps or points.", "arabicTranslation": "ضاحك" },
+  "premolar": {
+    "definition": "A tooth having two cusps or points.",
+    "arabicTranslation": "ضاحك"
+  },
   "bicuspid": {
     "definition": "Having two cusps or points (especially a molar tooth).",
     "arabicTranslation": "ضاحك"
@@ -144,13 +198,22 @@
     "exampleUsage": "The glossary uses the term \"Gingiva\" in an educational description.",
     "arabicTranslation": "لثة"
   },
-  "alveolar-bone": { "arabicTranslation": "" },
-  "dental-pulp": { "arabicTranslation": "" },
+  "alveolar-bone": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «الفيولار بوني»",
+    "definition": "The part of the jawbone that holds tooth roots in place."
+  },
+  "dental-pulp": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «دينتال بولب»",
+    "definition": "Soft tissue inside a tooth containing nerves and blood vessels."
+  },
   "tooth-socket": {
     "definition": "A bony hollow in the alveolar ridge, the raised part of the jaw, anchors a tooth.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «تووث سوكيت»"
   },
-  "dental-arch": { "arabicTranslation": "قوس أسنان" },
+  "dental-arch": {
+    "arabicTranslation": "قوس أسنان",
+    "definition": "The curved arrangement of teeth in the upper or lower jaw."
+  },
   "maxilla": {
     "definition": "The jaw in vertebrates that is fused to the cranium.",
     "arabicTranslation": "فك علوي"
@@ -167,12 +230,21 @@
     "definition": "A dental appliance that holds teeth (or a prosthesis) in position after orthodontic treatment.",
     "arabicTranslation": "مثبّت أسنان"
   },
-  "aligner": { "arabicTranslation": "قالب تقويم شفاف" },
-  "bracket": { "arabicTranslation": "دعامة" },
-  "wire": { "definition": "To provide with electrical circuits.", "arabicTranslation": "سلك" },
+  "aligner": {
+    "arabicTranslation": "قالب تقويم شفاف",
+    "definition": "A removable clear tray used to gradually move teeth into position."
+  },
+  "bracket": {
+    "arabicTranslation": "دعامة",
+    "definition": "A small piece attached to a tooth to hold an orthodontic wire."
+  },
+  "wire": {
+    "definition": "To provide with electrical circuits.",
+    "arabicTranslation": "سلك"
+  },
   "rubber-band": {
     "definition": "A flexible loop used to hold things together.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «روببير باند»"
   },
   "spacer": {
     "definition": "A small component holds two parts at a set distance from each other.",
@@ -180,19 +252,33 @@
   },
   "expander": {
     "definition": "An electronic device that increases the dynamic range of the audio signal.",
-    "arabicTranslation": "موسّع الفك"
+    "arabicTranslation": "موسّع الفك",
+    "exampleUsage": "The expander was used during the activity."
   },
-  "headgear": { "arabicTranslation": "جهاز تقويم خارجي" },
+  "headgear": {
+    "arabicTranslation": "جهاز تقويم خارجي",
+    "definition": "An external orthodontic appliance used to guide jaw or tooth movement."
+  },
   "mold": {
     "definition": "A container used to give a material a particular shape.",
     "arabicTranslation": "قالب"
   },
-  "ceramic-braces": { "arabicTranslation": "" },
-  "lingual-braces": { "arabicTranslation": "" },
-  "invisalign": { "arabicTranslation": "إنفزلاين" },
+  "ceramic-braces": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كيراميك براكيس»",
+    "definition": "Orthodontic braces with tooth-colored or clear brackets."
+  },
+  "lingual-braces": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «لينجوال براكيس»",
+    "definition": "Braces fixed to the inner surfaces of the teeth."
+  },
+  "invisalign": {
+    "arabicTranslation": "إنفزلاين",
+    "definition": "A brand of clear removable trays used to straighten teeth."
+  },
   "bite-plate": {
     "definition": "A removable dental device worn against the palate to diagnose or treat problems with the teeth or jaw.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «بيتي بلاتي»",
+    "exampleUsage": "The bite plate was used during the activity."
   },
   "power-chain": {
     "definition": "An elastic orthodontic chain connected across braces to apply controlled force to teeth.",
@@ -221,7 +307,10 @@
     "definition": "A soft substance put on a toothbrush to clean your teeth.",
     "arabicTranslation": "معجون أسنان"
   },
-  "floss": { "definition": "To use dental floss to clean.", "arabicTranslation": "ينظف بالخيط" },
+  "floss": {
+    "arabicTranslation": "ينظف بالخيط",
+    "definition": "To clean between teeth using a thin thread or strip."
+  },
   "mouthwash": {
     "definition": "A liquid used to rinse the mouth and help keep it clean.",
     "arabicTranslation": "غسول فم"
@@ -236,7 +325,10 @@
     "exampleUsage": "The water flosser uses a narrow stream of water for cleaning.",
     "arabicTranslation": "جهاز تنظيف الأسنان بالماء"
   },
-  "fluoride": { "definition": "A salt of hydrofluoric acid.", "arabicTranslation": "فلورايد" },
+  "fluoride": {
+    "arabicTranslation": "فلورايد",
+    "definition": "A salt of hydrofluoric acid."
+  },
   "plaque": {
     "definition": "(pathology) a small abnormal patch on or inside the body.",
     "arabicTranslation": "لوحة تذكارية"
@@ -245,10 +337,13 @@
     "definition": "A member of the Mongolian people of central Asia who invaded Russia in the 13th century.",
     "arabicTranslation": "جير الأسنان"
   },
-  "cavity": { "definition": "Soft decayed area in a tooth.", "arabicTranslation": "تجويف" },
+  "cavity": {
+    "arabicTranslation": "تجويف",
+    "definition": "Soft decayed area in a tooth."
+  },
   "electric-toothbrush": {
     "definition": "A toothbrush whose handle contains a motor that rapidly moves the bristled head.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «يليكتريك تووثبروش»"
   },
   "dental-pick": {
     "definition": "A small pointed dental or oral-hygiene tool used to examine or clean specific areas around teeth.",
@@ -285,8 +380,14 @@
     "exampleUsage": "The patient sat in the dental chair.",
     "arabicTranslation": "كرسي أسنان"
   },
-  "light": { "definition": "Characterized by or emitting light.", "arabicTranslation": "" },
-  "bib": { "arabicTranslation": "مريلة" },
+  "light": {
+    "definition": "Characterized by or emitting light.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ليغت»"
+  },
+  "bib": {
+    "arabicTranslation": "مريلة",
+    "definition": "A protective cloth placed over a patient's chest during dental treatment."
+  },
   "tray": {
     "definition": "An open receptacle for holding or displaying or serving articles or food.",
     "arabicTranslation": "صينية"
@@ -325,19 +426,22 @@
   },
   "intraoral-camera": {
     "definition": "An instrument used in dental clinics to take images of the inside of the mouth for diagnostic purposes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «ينتراورال كاميرا»",
+    "exampleUsage": "The intraoral camera was used during the activity."
   },
   "amalgam-separator": {
     "definition": "A device used in dental clinics to separate amalgam fillings from the tooth.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «امالجام سيباراتور»",
+    "exampleUsage": "The amalgam separator was used during the activity."
   },
   "nitrous-oxide-system": {
     "definition": "A system used in dental clinics to provide nitrous oxide gas for dental procedures.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نظام يُسمّى «نيترووس وكسيدي سيستيم»"
   },
   "dental-compressor": {
     "definition": "A device used in dental clinics to compress teeth for dental procedures.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «دينتال كومبريسسور»",
+    "exampleUsage": "The dental compressor was used during the activity."
   },
   "suction-unit": {
     "definition": "A unit used in dental clinics to suction blood from the gums for dental procedures.",

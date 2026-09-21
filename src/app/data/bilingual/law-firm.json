@@ -1,19 +1,19 @@
 {
   "lawyer": {
     "definition": "A professional person authorized to practice law.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «لاويير»"
   },
   "attorney": {
     "definition": "A professional person authorized to practice law.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «اتتورنيي»"
   },
   "judge": {
     "definition": "A public official authorized to decide questions brought before a court of justice.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جودجي»"
   },
   "paralegal": {
     "definition": "A person with specialized training who assists lawyers.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «باراليجال»"
   },
   "legal-secretary": {
     "definition": "An administrative professional who supports lawyers with documents, scheduling, correspondence, and office procedures.",
@@ -22,23 +22,23 @@
   },
   "notary": {
     "definition": "Someone legally empowered to witness signatures and certify a document's validity and to take depositions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "وثيقة يُسمّى «نوتاري»"
   },
   "mediator": {
     "definition": "A negotiator who acts as a link between parties.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «ميدياتور»"
   },
   "arbitrator": {
     "definition": "Someone chosen to judge and decide a disputed issue.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اربيتراتور»"
   },
   "public-defender": {
     "definition": "A government-paid lawyer represents people in criminal court when they cannot afford to hire private counsel.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح قانوني يُسمّى «بوبليك ديفيندير»"
   },
   "prosecutor": {
     "definition": "A government official who conducts criminal prosecutions on behalf of the state.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بروسيكوتور»"
   },
   "reception": {
     "definition": "The manner in which something is greeted.",
@@ -70,7 +70,7 @@
   },
   "war-room": {
     "definition": "A dedicated room where leaders coordinate strategy for a military operation or political campaign.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «وار رووم»"
   },
   "deposition-room": {
     "definition": "A room used for a formal out-of-court session in which sworn testimony is recorded as part of legal proceedings.",
@@ -79,7 +79,7 @@
   },
   "waiting-area": {
     "definition": "A room in a place such as an airport or hotel where people sit until they are ready to leave or be served.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «وايتينج اريا»"
   },
   "records-room": {
     "definition": "A secure room used to store and manage official records or files.",
@@ -88,11 +88,11 @@
   },
   "criminal-law": {
     "definition": "The area of law that identifies criminal acts and sets the penalties for them.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح قانوني يُسمّى «كريمينال لاو»"
   },
   "civil-law": {
     "definition": "This area of law resolves noncriminal conflicts involving people, businesses, agreements, possessions, and family relationships.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح قانوني يُسمّى «كيفيل لاو»"
   },
   "family-law": {
     "definition": "This area of law sets rules for marriage, separation, care of children, and bringing children into new families. It also covers other legal matters between family members within a particular place.",
@@ -105,7 +105,7 @@
   },
   "tax-law": {
     "definition": "The systematic study of tax rules, their policy consequences, economic effects, and differences across countries.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نظام يُسمّى «تاكس لاو»"
   },
   "immigration-law": {
     "definition": "The area of law dealing with entry, residence, citizenship, and immigration status under a country's legal system.",
@@ -124,17 +124,24 @@
   },
   "environmental-law": {
     "definition": "The system of laws that safeguards nature by limiting pollution and managing the use of land, water, and other resources.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح قانوني يُسمّى «ينفيرونمينتال لاو»"
   },
   "intellectual-property": {
     "definition": "Legal protections give creators control over the use of their original works and inventions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ينتيلليكتوال بروبيرتي»"
   },
-  "consult": { "definition": "To get or ask advice from.", "arabicTranslation": "" },
-  "represent": { "definition": "To be a delegate or spokesperson for.", "arabicTranslation": "" },
+  "consult": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كونسولت»",
+    "definition": "To seek advice from a professional or discuss a matter together."
+  },
+  "represent": {
+    "definition": "To be a delegate or spokesperson for.",
+    "arabicTranslation": "شخص يُسمّى «ريبريسينت»"
+  },
   "file": {
     "definition": "A named collection of digital information saved on a device.",
-    "arabicTranslation": "ملف"
+    "arabicTranslation": "ملف",
+    "exampleUsage": "The file was used during the activity."
   },
   "appeal": {
     "definition": "(law) a legal proceeding in which the appellant resorts to a higher court for the purpose of obtaining a review of a lower court decision and a reversal of the lower court's judgment or the granting of a new trial.",
@@ -144,8 +151,14 @@
     "definition": "To discuss the terms of an arrangement.",
     "arabicTranslation": "يتفاوض"
   },
-  "litigate": { "definition": "To institute legal proceedings against.", "arabicTranslation": "" },
-  "settle": { "arabicTranslation": "" },
+  "litigate": {
+    "definition": "To institute legal proceedings against.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليتيجاتي»"
+  },
+  "settle": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سيتتلي»",
+    "definition": "To resolve a legal dispute by agreement without a full trial."
+  },
   "draft": {
     "definition": "An early version of writing that can still be changed.",
     "arabicTranslation": "مسودة"
@@ -154,5 +167,8 @@
     "definition": "An article that evaluates a book, film, product, or event.",
     "arabicTranslation": "مراجعة"
   },
-  "advise": { "arabicTranslation": "" }
+  "advise": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ادفيسي»",
+    "definition": "To give someone a recommendation based on knowledge or experience."
+  }
 }

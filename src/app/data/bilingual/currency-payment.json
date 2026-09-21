@@ -1,43 +1,55 @@
 {
-  "us-dollar": { "arabicTranslation": "" },
+  "us-dollar": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وس دوللار»",
+    "definition": "The basic unit of money used in the United States."
+  },
   "euro": {
     "definition": "The basic monetary unit of most members of the European Union (introduced in 1999).",
     "arabicTranslation": "يورو"
   },
   "british-pound": {
     "definition": "The standard currency unit of Great Britain and Northern Ireland is divided into 100 pence.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بريتيش بووند»"
   },
-  "japanese-yen": { "arabicTranslation": "" },
-  "chinese-yuan": { "arabicTranslation": "" },
+  "japanese-yen": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جابانيسي يين»",
+    "definition": "The basic unit of money used in Japan."
+  },
+  "chinese-yuan": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تشينيسي يوان»",
+    "definition": "The basic unit of money used in China."
+  },
   "swiss-franc": {
     "definition": "The official currency used in Switzerland.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سويسس فرانك»"
   },
   "canadian-dollar": {
     "definition": "The dollar is Canada’s standard unit for measuring and exchanging money.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كاناديان دوللار»"
   },
   "australian-dollar": {
     "definition": "The dollar serves as the standard monetary unit in Australia and Nauru.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اوستراليان دوللار»"
   },
   "indian-rupee": {
     "definition": "The Indian rupee is India’s standard monetary unit, divided into 100 paise.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ينديان روبيي»"
   },
-  "brazilian-real": { "arabicTranslation": "" },
+  "brazilian-real": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «برازيليان ريال»",
+    "definition": "The basic unit of money used in Brazil."
+  },
   "cash": {
     "definition": "Prompt payment for goods or services in currency or by check.",
     "arabicTranslation": "نقد"
   },
   "credit-card": {
     "definition": "A plastic or metal payment card from a bank or other lender lets its holder buy goods and services with borrowed money up to a set limit, then repay the balance, usually with interest, an extra charge for borrowing.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كريديت كارد»"
   },
   "debit-card": {
     "definition": "A payment card that lets you buy goods or withdraw cash using funds taken directly from your bank account.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديبيت كارد»"
   },
   "check": {
     "definition": "A written order directing a bank to pay money.",
@@ -47,12 +59,19 @@
     "definition": "A specified sum transferred between bank accounts through a regulated payment network, such as SWIFT or a national settlement system.",
     "arabicTranslation": "تحويل سلك"
   },
-  "mobile-payment": { "arabicTranslation": "" },
+  "mobile-payment": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «موبيلي بايمينت»",
+    "definition": "A payment made with a phone or other mobile device."
+  },
   "contactless": {
     "definition": "Operating without touch, as when a card makes a payment or a device takes a measurement remotely.",
-    "arabicTranslation": "دون تلامس"
+    "arabicTranslation": "دون تلامس",
+    "exampleUsage": "The contactless was used during the activity."
   },
-  "apple-pay": { "arabicTranslation": "" },
+  "apple-pay": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اببلي باي»",
+    "definition": "A phone payment service used to pay at a shop or online."
+  },
   "paypal": {
     "definition": "To send money to another person using PayPal, an online payment service.",
     "arabicTranslation": "باي بال"
@@ -81,26 +100,38 @@
     "definition": "A draft in excess of the credit balance.",
     "arabicTranslation": "سحب على المكشوف"
   },
-  "minimum-payment": { "arabicTranslation": "" },
+  "minimum-payment": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مينيموم بايمينت»",
+    "definition": "The smallest amount due on a credit balance by a given date."
+  },
   "due-date": {
     "definition": "In education, it describes work or events scheduled for completion by a particular date, which serves as the deadline.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «دوي داتي»"
   },
   "late-fee": {
     "definition": "A set of rules for calculating charges after a payment is late, including grace periods, maximum amounts, and higher fees for longer delays.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لاتي فيي»"
   },
-  "refund": { "arabicTranslation": "استرداد" },
-  "chargeback": { "arabicTranslation": "استرجاع دفعة" },
+  "refund": {
+    "arabicTranslation": "استرداد",
+    "definition": "Money returned to someone after they return a purchase or overpay."
+  },
+  "chargeback": {
+    "arabicTranslation": "استرجاع دفعة",
+    "definition": "A payment reversal requested through a card issuer after a dispute."
+  },
   "online-banking": {
     "definition": "Managing a bank account through internet services, such as checking balances, transferring money, and paying bills, is known as online banking.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ونليني بانكينج»"
   },
   "mobile-app": {
     "definition": "A software program built to work on a smartphone or tablet, usually obtained through an app store or another digital platform.",
-    "arabicTranslation": ""
+    "arabicTranslation": "برنامج يُسمّى «موبيلي ابب»"
   },
-  "digital-wallet": { "arabicTranslation": "" },
+  "digital-wallet": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديجيتال والليت»",
+    "definition": "An app that stores payment details for electronic purchases."
+  },
   "blockchain": {
     "definition": "A shared digital ledger records transactions in blocks linked by cryptography, creating a chain that network participants maintain and cannot alter.",
     "arabicTranslation": "سلسلة الكتل"
@@ -109,7 +140,10 @@
     "definition": "A digital currency maintained by a shared transaction record and protected by mathematical techniques, allowing direct payments without central control.",
     "arabicTranslation": "بيتكوين"
   },
-  "ethereum": { "arabicTranslation": "إيثريوم" },
+  "ethereum": {
+    "arabicTranslation": "إيثريوم",
+    "definition": "A blockchain network and its associated digital currency, ether."
+  },
   "nft": {
     "definition": "A non-fungible token, meaning a unique digital record on a blockchain that can represent ownership or a claim connected with a digital item.",
     "exampleUsage": "The technology lesson explains what an NFT record represents.",

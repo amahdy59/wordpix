@@ -9,12 +9,21 @@
     "exampleUsage": "The turkey was identified during the lesson.",
     "arabicTranslation": "ديك رومي"
   },
-  "duck": { "definition": "Flesh of a duck (domestic or wild).", "arabicTranslation": "بطة" },
-  "goose": { "definition": "Flesh of a goose (domestic or wild).", "arabicTranslation": "أوزة" },
-  "quail": { "arabicTranslation": "سمان" },
+  "duck": {
+    "definition": "Flesh of a duck (domestic or wild).",
+    "arabicTranslation": "بطة"
+  },
+  "goose": {
+    "definition": "Flesh of a goose (domestic or wild).",
+    "arabicTranslation": "أوزة"
+  },
+  "quail": {
+    "arabicTranslation": "سمان",
+    "definition": "A small game bird sometimes raised for its meat and eggs."
+  },
   "chicken-breast": {
     "definition": "An unusual outward curve of the breastbone caused by rickets, a disease that weakens growing bones.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «تشيكين برياست»"
   },
   "drumstick": {
     "definition": "The lower joint of the leg of a fowl.",
@@ -38,12 +47,18 @@
     "definition": "Cattle that are reared for their meat.",
     "arabicTranslation": "لحم بقري"
   },
-  "pork": { "definition": "Meat from a domestic hog or pig.", "arabicTranslation": "لحم خنزير" },
+  "pork": {
+    "definition": "Meat from a domestic hog or pig.",
+    "arabicTranslation": "لحم خنزير"
+  },
   "lamb": {
     "definition": "A young sheep with soft wool and a short tail.",
     "arabicTranslation": "لحم ضأن"
   },
-  "veal": { "arabicTranslation": "لحم عجل" },
+  "veal": {
+    "arabicTranslation": "لحم عجل",
+    "definition": "Meat from a young calf, used as food."
+  },
   "steak": {
     "definition": "A slice of meat cut from the fleshy part of an animal or large fish.",
     "exampleUsage": "The steak was identified during the lesson.",
@@ -55,9 +70,12 @@
   },
   "ground-beef": {
     "definition": "Beef processed into very small pieces for use in cooking.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عملية يُسمّى «جرووند بييف»"
   },
-  "ribs": { "definition": "Cut of meat including one or more ribs.", "arabicTranslation": "ضلوع" },
+  "ribs": {
+    "definition": "Cut of meat including one or more ribs.",
+    "arabicTranslation": "ضلوع"
+  },
   "tenderloin": {
     "definition": "The tender meat of the loin muscle on each side of the vertebral column.",
     "arabicTranslation": "فيليه"
@@ -66,60 +84,70 @@
     "definition": "A cut of meat from the breast or lower chest especially of beef.",
     "arabicTranslation": "صدر لحم"
   },
-  "salmon": { "definition": "A tributary of the Snake River in Idaho.", "arabicTranslation": "" },
+  "salmon": {
+    "definition": "A tributary of the Snake River in Idaho.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سالمون»"
+  },
   "tuna": {
     "definition": "Tropical American prickly pear of Jamaica.",
     "arabicTranslation": "تونة"
   },
-  "cod": { "definition": "Payable by the recipient on delivery.", "arabicTranslation": "" },
+  "cod": {
+    "definition": "Payable by the recipient on delivery.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كود»"
+  },
   "shrimp": {
     "exampleUsage": "The shrimp was identified during the lesson.",
-    "arabicTranslation": "روبيان"
+    "arabicTranslation": "روبيان",
+    "definition": "A small sea animal with a curved body, many legs, and a hard shell."
   },
-  "lobster": { "arabicTranslation": "كركند" },
+  "lobster": {
+    "arabicTranslation": "كركند",
+    "definition": "A large sea animal with a hard shell and two strong claws."
+  },
   "crab": {
     "definition": "A stroke of the oar that either misses the water or digs too deeply.",
     "arabicTranslation": "سلطعون"
   },
   "oyster": {
     "definition": "Marine mollusks having a rough irregular shell.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ويستير»"
   },
   "mussel": {
     "definition": "Black marine bivalves usually steamed in wine.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «موسسيل»"
   },
   "clam": {
     "definition": "Burrowing marine mollusk living on sand or mud.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كلام»"
   },
   "scallop": {
     "definition": "Thin slice of meat (especially veal) usually fried or broiled.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سكاللوب»"
   },
   "bacon": {
     "definition": "Back and sides of a hog salted and dried or smoked.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «باكون»"
   },
   "sausage": {
     "definition": "Highly seasoned minced meat stuffed in casings.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ساوساجي»"
   },
   "ham": {
     "definition": "Meat cut from the thigh of a hog (usually smoked).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هام»"
   },
   "salami": {
     "definition": "Highly seasoned fatty sausage of pork and beef usually dried.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سالامي»"
   },
   "prosciutto": {
     "definition": "Italian salt-cured ham usually sliced paper thin.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بروسكيوتتو»"
   },
   "pepperoni": {
     "definition": "A pork and beef sausage (or a thin slice of this sausage).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيببيروني»"
   },
   "hot-dog": {
     "definition": "A cooked sausage, often served in a long split bread roll.",
@@ -128,40 +156,55 @@
   },
   "jerky": {
     "definition": "Meat (especially beef) cut in strips and dried in the sun.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جيركي»"
   },
-  "chorizo": { "definition": "A spicy Spanish pork sausage.", "arabicTranslation": "" },
-  "pastrami": { "definition": "Highly seasoned cut of smoked beef.", "arabicTranslation": "" },
+  "chorizo": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تشوريزو»",
+    "definition": "A spicy Spanish pork sausage."
+  },
+  "pastrami": {
+    "definition": "Highly seasoned cut of smoked beef.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «باسترامي»"
+  },
   "fillet": {
     "definition": "A boneless steak cut from the tenderloin of beef.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «فيلليت»"
   },
-  "chop": { "definition": "To form or shape by chopping.", "arabicTranslation": "يفرم" },
+  "chop": {
+    "arabicTranslation": "يفرم",
+    "definition": "A cut of meat with a bone, usually from the rib or loin."
+  },
   "cutlet": {
     "definition": "Thin slice of meat (especially veal) usually fried or broiled.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كوتليت»"
   },
   "medallion": {
     "definition": "A circular helping of food (especially a boneless cut of meat).",
-    "arabicTranslation": ""
+    "arabicTranslation": "طعام يُسمّى «ميدالليون»"
   },
   "shank": {
     "definition": "A cut of meat (beef or veal or mutton or lamb) from the upper part of the leg.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «شانك»"
   },
   "loin": {
     "definition": "A cut of meat taken from the side and back of an animal between the ribs and the rump.",
     "exampleUsage": "The loin was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لوين»"
   },
   "rack": {
     "definition": "Rib section of a forequarter of veal or pork or especially lamb or mutton.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «راك»"
   },
-  "ground": { "definition": "The solid part of the earth's surface.", "arabicTranslation": "" },
+  "ground": {
+    "definition": "The solid part of the earth's surface.",
+    "arabicTranslation": "سطح يُسمّى «جرووند»"
+  },
   "diced": {
     "definition": "Cut food into small, even, box-shaped pieces for cooking.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طعام يُسمّى «ديكيد»"
   },
-  "sliced": { "arabicTranslation": "" }
+  "sliced": {
+    "arabicTranslation": "طعام يُسمّى «سليكيد»",
+    "definition": "Cut into thin, flat pieces."
+  }
 }

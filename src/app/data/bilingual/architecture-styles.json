@@ -33,7 +33,7 @@
   },
   "beaux-arts": {
     "definition": "A grand style in architecture and the fine arts drew on a Paris school’s classical designs, symmetry, lavish ornament, and monumental scale, flourishing in the late nineteenth and early twentieth centuries.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أسلوب أو طراز يُسمّى «بياوكس-ارتس»"
   },
   "palladian": {
     "definition": "Referring to or relating to or having the style of architecture created by Andrea Palladio.",
@@ -41,11 +41,11 @@
   },
   "art-nouveau": {
     "definition": "An international art movement from around 1900 brought graceful curves and plant-inspired forms into buildings and everyday objects.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نبات يُسمّى «ارت نووفياو»"
   },
   "art-deco": {
     "definition": "A design movement popular during the 1920s and 1930s, known for simplified shapes and geometric patterns suitable for factory production.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شكل يُسمّى «ارت ديكو»"
   },
   "bauhaus": {
     "definition": "A German style of architecture begun by Walter Gropius in 1918.",
@@ -65,12 +65,18 @@
     "exampleUsage": "The office tower reflects the International Style with its glass façade and clean lines.",
     "arabicTranslation": "الطراز الدولي في العمارة"
   },
-  "mid-century-modern": { "arabicTranslation": "منتصف قرن حديث" },
+  "mid-century-modern": {
+    "arabicTranslation": "منتصف قرن حديث",
+    "definition": "A design style from the mid-twentieth century with simple shapes and open spaces."
+  },
   "postmodern": {
     "definition": "Of or relating to postmodernism.",
     "arabicTranslation": "ما بعد حداثي"
   },
-  "deconstructivist": { "arabicTranslation": "تفكيكي" },
+  "deconstructivist": {
+    "arabicTranslation": "تفكيكي",
+    "definition": "Describing architecture with fragmented forms and unexpected angles."
+  },
   "high-tech": {
     "definition": "Using highly advanced technology in equipment, systems, or working methods.",
     "arabicTranslation": "تقنية مرتفع"
@@ -79,7 +85,10 @@
     "definition": "Of or relating to artistic minimalism.",
     "arabicTranslation": "تبسيطي"
   },
-  "sustainable": { "definition": "Capable of being sustained.", "arabicTranslation": "مستدام" },
+  "sustainable": {
+    "arabicTranslation": "مستدام",
+    "definition": "Capable of being sustained."
+  },
   "parametric": {
     "definition": "Of or relating to or in terms of a parameter.",
     "arabicTranslation": "بارامتري"
@@ -88,11 +97,26 @@
     "definition": "Relating to architecture designed to harmonize with its site, materials, and natural surroundings.",
     "arabicTranslation": "عضوي"
   },
-  "biophilic": { "arabicTranslation": "محبّ للطبيعة" },
-  "smart-building": { "arabicTranslation": "مبنى ذكي" },
-  "adaptive-reuse": { "arabicTranslation": "إعادة استخدام تكيفي" },
-  "net-zero": { "arabicTranslation": "صفر صافي" },
-  "passive-house": { "arabicTranslation": "منزل سلبي" },
+  "biophilic": {
+    "arabicTranslation": "محبّ للطبيعة",
+    "definition": "Designed to connect people with plants, natural light, and nature."
+  },
+  "smart-building": {
+    "arabicTranslation": "مبنى ذكي",
+    "definition": "A building that uses connected systems to control its operations."
+  },
+  "adaptive-reuse": {
+    "arabicTranslation": "إعادة استخدام تكيفي",
+    "definition": "The practice of giving an existing building a new purpose."
+  },
+  "net-zero": {
+    "arabicTranslation": "صفر صافي",
+    "definition": "Producing or saving enough energy to balance the energy used overall."
+  },
+  "passive-house": {
+    "arabicTranslation": "منزل سلبي",
+    "definition": "A highly insulated building designed to need very little heating or cooling."
+  },
   "modular": {
     "definition": "Constructed with standardized units or dimensions allowing flexibility and variety in use.",
     "arabicTranslation": "وحداتي"
@@ -109,9 +133,18 @@
     "definition": "A burial chamber (usually underground).",
     "arabicTranslation": "قبو معماري"
   },
-  "cantilever": { "definition": "To project as a cantilever.", "arabicTranslation": "كابولي" },
-  "facade": { "definition": "The face or front of a building.", "arabicTranslation": "واجهة" },
-  "atrium": { "definition": "The central area in a building.", "arabicTranslation": "ردهة داخلية" },
+  "cantilever": {
+    "arabicTranslation": "كابولي",
+    "definition": "A beam or structure supported at only one end, projecting outward."
+  },
+  "facade": {
+    "definition": "The face or front of a building.",
+    "arabicTranslation": "واجهة"
+  },
+  "atrium": {
+    "definition": "The central area in a building.",
+    "arabicTranslation": "ردهة داخلية"
+  },
   "skylight": {
     "definition": "A window in a roof to admit daylight.",
     "arabicTranslation": "نافذة سقفية"
@@ -124,5 +157,8 @@
     "definition": "A porch or entrance to a building consisting of a covered and often columned area.",
     "arabicTranslation": "رواق مدخل"
   },
-  "minaret": { "definition": "Slender tower with balconies.", "arabicTranslation": "مئذنة" }
+  "minaret": {
+    "arabicTranslation": "مئذنة",
+    "definition": "Slender tower with balconies."
+  }
 }

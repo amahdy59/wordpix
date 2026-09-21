@@ -17,14 +17,21 @@
   },
   "elevator": {
     "definition": "Lifting device consisting of a platform or cage that is raised and lowered mechanically in a vertical shaft in order to move people from one floor to another in a building.",
-    "arabicTranslation": "مصعد"
+    "arabicTranslation": "مصعد",
+    "exampleUsage": "The elevator was used during the activity."
   },
   "turnstile": {
     "definition": "A gate consisting of a post that acts as a pivot for rotating arms.",
     "arabicTranslation": "بوابة دوارة"
   },
-  "mezzanine": { "arabicTranslation": "طابق نصفي" },
-  "concourse": { "definition": "A large gathering of people.", "arabicTranslation": "ردهة رئيسية" },
+  "mezzanine": {
+    "arabicTranslation": "طابق نصفي",
+    "definition": "An intermediate floor between the main floors of a station or building."
+  },
+  "concourse": {
+    "arabicTranslation": "ردهة رئيسية",
+    "definition": "A large gathering of people."
+  },
   "entrance": {
     "definition": "Something that provides access (to get in or get out).",
     "arabicTranslation": "مدخل"
@@ -33,8 +40,14 @@
     "definition": "To pass from physical life and lose all bodily attributes and functions necessary to sustain life.",
     "arabicTranslation": "مخرج"
   },
-  "car": { "definition": "Where passengers ride up and down.", "arabicTranslation": "سيارة" },
-  "seat": { "arabicTranslation": "مقعد" },
+  "car": {
+    "definition": "Where passengers ride up and down.",
+    "arabicTranslation": "سيارة"
+  },
+  "seat": {
+    "arabicTranslation": "مقعد",
+    "definition": "A place designed for one person to sit."
+  },
   "handrail": {
     "definition": "A railing at the side of a staircase or balcony to prevent people from falling.",
     "arabicTranslation": "درابزين"
@@ -49,7 +62,7 @@
   },
   "emergency-brake": {
     "definition": "A hand-operated brake that typically engages the wheels through a mechanical linkage.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يميرجينكي براكي»"
   },
   "connecting-door": {
     "definition": "A door between connected train cars that allows authorized movement from one car to another where permitted.",
@@ -70,11 +83,17 @@
     "definition": "To tap a telephone or telegraph wire to get information.",
     "arabicTranslation": "تمرير البطاقة أو اللمس"
   },
-  "fare": { "definition": "An agenda of things to do.", "arabicTranslation": "أجرة" },
-  "gate": { "definition": "A movable barrier in a fence or wall.", "arabicTranslation": "بوابة" },
+  "fare": {
+    "arabicTranslation": "أجرة",
+    "definition": "An agenda of things to do."
+  },
+  "gate": {
+    "definition": "A movable barrier in a fence or wall.",
+    "arabicTranslation": "بوابة"
+  },
   "top-up": {
     "definition": "To add enough of something to restore it to the level needed, especially money or credit in an account.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «توب وب»"
   },
   "single-ride": {
     "definition": "A ticket or fare valid for one journey on a transport system.",
@@ -93,7 +112,8 @@
   },
   "contactless": {
     "definition": "Operating without touch, as when a card makes a payment or a device takes a measurement remotely.",
-    "arabicTranslation": "دون تلامس"
+    "arabicTranslation": "دون تلامس",
+    "exampleUsage": "The contactless was used during the activity."
   },
   "line-map": {
     "definition": "A diagram showing the routes, stations, and connections of a transit system.",
@@ -147,7 +167,10 @@
     "definition": "A passenger train that is ridden primarily by passengers who travel regularly from one place to another.",
     "arabicTranslation": "متنقل يومي"
   },
-  "tourist": { "definition": "A person who travels for pleasure.", "arabicTranslation": "سائح" },
+  "tourist": {
+    "definition": "A person who travels for pleasure.",
+    "arabicTranslation": "سائح"
+  },
   "busker": {
     "definition": "A person who entertains people for money in public places (as by singing or dancing), usually while asking for money.",
     "arabicTranslation": "فنان شارع"
@@ -174,7 +197,7 @@
   },
   "rush-hour": {
     "definition": "It refers to the periods at the start and end of the workday when large numbers of people commute.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «روش هوور»"
   },
   "queue": {
     "definition": "To form a queue, form a line, stand in line.",
@@ -187,7 +210,8 @@
   },
   "cctv": {
     "definition": "A CCTV installation consists of cameras, recording devices, and related equipment serving a specific location.",
-    "arabicTranslation": "مراقبة تلفزيونية مغلقة"
+    "arabicTranslation": "مراقبة تلفزيونية مغلقة",
+    "exampleUsage": "The cctv was used during the activity."
   },
   "emergency-phone": {
     "definition": "A telephone placed outdoors for urgent calls.",
@@ -195,11 +219,13 @@
   },
   "fire-extinguisher": {
     "definition": "A portable or fixed device that releases a suitable substance to put out or contain a small fire.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «فيري يكستينجويشير»",
+    "exampleUsage": "The fire extinguisher was used during the activity."
   },
   "defibrillator": {
     "definition": "An electronic device that administers an electric shock of preset voltage to the heart through the chest wall in an attempt to restore the normal rhythm of the heart during ventricular fibrillation.",
-    "arabicTranslation": "جهاز مزيل الرجفان"
+    "arabicTranslation": "جهاز مزيل الرجفان",
+    "exampleUsage": "The defibrillator was used during the activity."
   },
   "help-point": {
     "definition": "A fixed station where passengers can contact staff or emergency assistance.",

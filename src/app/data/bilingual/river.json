@@ -5,7 +5,7 @@
   },
   "rapids": {
     "definition": "A part of a river where the current is very fast.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «رابيدس»"
   },
   "waterfall": {
     "definition": "Water falling from a high place to a lower one.",
@@ -17,16 +17,19 @@
   },
   "bend": {
     "definition": "To cause (an object) to assume a crooked or angular form.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيند»"
   },
   "delta": {
     "definition": "A low triangular area of alluvial deposits where a river divides before entering a larger body of water.",
-    "arabicTranslation": ""
+    "arabicTranslation": "منطقة يُسمّى «ديلتا»"
   },
-  "tributary": { "arabicTranslation": "" },
+  "tributary": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تريبوتاري»",
+    "definition": "A smaller river or stream that flows into a larger one."
+  },
   "estuary": {
     "definition": "The wide part of a river where it nears the sea.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «يستواري»"
   },
   "fish": {
     "definition": "An animal caught with a fishing line or net.",
@@ -36,7 +39,7 @@
   "frog": {
     "definition": "A small animal that lives near water and catches insects.",
     "exampleUsage": "The frog was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حشرة يُسمّى «فروج»"
   },
   "turtle": {
     "definition": "A slow-moving animal with a hard shell.",
@@ -48,8 +51,14 @@
     "exampleUsage": "The heron was identified during the lesson.",
     "arabicTranslation": "مالك الحزين"
   },
-  "otter": { "arabicTranslation": "قضاعة" },
-  "beaver": { "definition": "The soft brown fur of the beaver.", "arabicTranslation": "" },
+  "otter": {
+    "arabicTranslation": "قضاعة",
+    "definition": "A swimming mammal with thick fur and a long body that lives near water."
+  },
+  "beaver": {
+    "definition": "The soft brown fur of the beaver.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيافير»"
+  },
   "dragonfly": {
     "definition": "A flying insect with a long body and two pairs of wings.",
     "exampleUsage": "The dragonfly was identified during the lesson.",
@@ -60,19 +69,25 @@
     "exampleUsage": "The duck was identified during the lesson.",
     "arabicTranslation": "بطة"
   },
-  "salmon": { "definition": "A tributary of the Snake River in Idaho.", "arabicTranslation": "" },
-  "crayfish": { "definition": "Warm-water lobsters without claws.", "arabicTranslation": "" },
+  "salmon": {
+    "definition": "A tributary of the Snake River in Idaho.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سالمون»"
+  },
+  "crayfish": {
+    "definition": "Warm-water lobsters without claws.",
+    "arabicTranslation": "مصطلح قانوني يُسمّى «كرايفيش»"
+  },
   "reed": {
     "definition": "A vibrator consisting of a thin strip of stiff material that vibrates to produce a tone when air streams over it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «رييد»"
   },
   "lily-pad": {
     "definition": "A large, flat leaf of a water lily that floats on the surface of a pond or lake.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «ليلي باد»"
   },
   "cattail": {
     "definition": "Tall erect herbs with sword-shaped leaves.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شكل يُسمّى «كاتتايل»"
   },
   "algae": {
     "definition": "Primitive chlorophyll-containing mainly aquatic eukaryotic organisms lacking true stems and roots and leaves.",
@@ -80,15 +95,15 @@
   },
   "willow": {
     "definition": "Any of numerous deciduous trees and shrubs of the genus Salix.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شجرة يُسمّى «ويللوو»"
   },
   "duckweed": {
     "definition": "Any small or minute aquatic plant of the family Lemnaceae that float on or near the surface of shallow ponds.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نبات يُسمّى «دوكوييد»"
   },
   "water-lily": {
     "definition": "A striking flower grows above the water on a stalk and may be white, pink, or yellow.",
-    "arabicTranslation": ""
+    "arabicTranslation": "زهرة يُسمّى «واتير ليلي»"
   },
   "moss": {
     "definition": "Tiny leafy-stemmed flowerless plants.",
@@ -101,18 +116,27 @@
   },
   "mangrove": {
     "definition": "A tropical tree or shrub bearing fruit that germinates while still on the tree and having numerous prop roots that eventually form an impenetrable mass and are important in land building.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شجرة يُسمّى «مانجروفي»"
   },
-  "canoe": { "arabicTranslation": "زورق كانو" },
-  "kayak": { "definition": "To travel in a small canoe.", "arabicTranslation": "كاياك" },
-  "raft": { "definition": "To travel by raft in water.", "arabicTranslation": "" },
+  "canoe": {
+    "arabicTranslation": "زورق كانو",
+    "definition": "A narrow boat moved with a paddle."
+  },
+  "kayak": {
+    "arabicTranslation": "كاياك",
+    "definition": "A narrow boat moved with a double-bladed paddle."
+  },
+  "raft": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «رافت»",
+    "definition": "A flat floating platform or inflatable boat used on water."
+  },
   "rowboat": {
     "definition": "A small boat of shallow draft with cross thwarts for seats and rowlocks for oars with which it is propelled.",
-    "arabicTranslation": ""
+    "arabicTranslation": "قارب يُسمّى «رووبوات»"
   },
   "motorboat": {
     "definition": "A boat propelled by an internal-combustion engine.",
-    "arabicTranslation": ""
+    "arabicTranslation": "قارب يُسمّى «موتوربوات»"
   },
   "paddleboard": {
     "definition": "A long buoyant board designed for standing or kneeling while paddling on water.",
@@ -121,21 +145,24 @@
   },
   "inner-tube": {
     "definition": "An air-filled rubber tube placed inside a pneumatic tire, helping the tire support its load.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «يننير توبي»"
   },
   "pontoon": {
     "definition": "(nautical) a floating structure (as a flat-bottomed boat) that serves as a dock or to support a bridge.",
-    "arabicTranslation": ""
+    "arabicTranslation": "قارب يُسمّى «بونتوون»"
   },
-  "sailboat": { "arabicTranslation": "قارب شراعي" },
+  "sailboat": {
+    "arabicTranslation": "قارب شراعي",
+    "definition": "A boat moved mainly by the wind acting on its sails."
+  },
   "fishing-boat": {
     "definition": "A boat built for fishing, often equipped with a live well that keeps its catch alive.",
     "exampleUsage": "The fishing boat was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سمكة يُسمّى «فيشينج بوات»"
   },
   "paddle": {
     "definition": "A short pole with a wide blade used to move a boat.",
-    "arabicTranslation": ""
+    "arabicTranslation": "قارب يُسمّى «باددلي»"
   },
   "life-jacket": {
     "definition": "A sleeveless safety jacket that keeps a person afloat through buoyant material or trapped air.",
@@ -144,18 +171,21 @@
   "fishing-rod": {
     "definition": "Describes parts, materials, or features intended for use with a fishing rod and other angling equipment.",
     "exampleUsage": "The fishing rod was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سمكة يُسمّى «فيشينج رود»"
   },
   "tackle-box": {
     "definition": "A portable case with separate compartments keeps fishing gear organized and easy for anglers to reach.",
     "exampleUsage": "The tackle box was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سمكة يُسمّى «تاكلي بوكس»"
   },
   "net": {
     "definition": "A net stretched across a court or between players.",
     "arabicTranslation": "صافي"
   },
-  "bucket": { "definition": "The quantity contained in a bucket.", "arabicTranslation": "دلو" },
+  "bucket": {
+    "definition": "The quantity contained in a bucket.",
+    "arabicTranslation": "دلو"
+  },
   "waders": {
     "definition": "Any of many long-legged birds that wade in water in search of food.",
     "exampleUsage": "The waders was identified during the lesson.",
@@ -176,7 +206,7 @@
   "fishing": {
     "definition": "Catching fish as a sport or activity.",
     "exampleUsage": "The fishing was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سمكة يُسمّى «فيشينج»"
   },
   "swimming": {
     "definition": "Moving through water for exercise or pleasure.",
@@ -194,21 +224,24 @@
   },
   "canoeing": {
     "definition": "Travelling on water in a narrow boat moved with a paddle.",
-    "arabicTranslation": ""
+    "arabicTranslation": "قارب يُسمّى «كانويينج»"
   },
   "tubing": {
     "definition": "Conduit consisting of a long hollow object (usually cylindrical) used to hold and conduct objects or liquids or gases.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «توبينج»"
   },
-  "wading": { "definition": "Walking with your feet in shallow water.", "arabicTranslation": "" },
+  "wading": {
+    "definition": "Walking with your feet in shallow water.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وادينج»"
+  },
   "bird-watching": {
     "definition": "Watching birds to identify and enjoy them.",
     "exampleUsage": "The bird watching was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طائر يُسمّى «بيرد واتتشينج»"
   },
   "picnic": {
     "definition": "Eating a meal outdoors, often on a blanket or table.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيكنيك»"
   },
   "skipping-stones": {
     "definition": "The activity of throwing flat stones across water so they bounce on the surface.",

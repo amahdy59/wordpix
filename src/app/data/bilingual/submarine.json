@@ -5,24 +5,29 @@
   },
   "conning-tower": {
     "definition": "An armored control room on a warship from which the vessel is directed.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «كوننينج تووير»"
   },
   "periscope": {
     "definition": "An optical instrument that provides a view of an otherwise obstructed field.",
-    "arabicTranslation": "منظار بيريسكوبي"
+    "arabicTranslation": "منظار بيريسكوبي",
+    "exampleUsage": "The periscope was used during the activity."
   },
-  "hatch": { "arabicTranslation": "فتحة دخول" },
+  "hatch": {
+    "arabicTranslation": "فتحة دخول",
+    "definition": "A door or opening in a vehicle, ship, or spacecraft."
+  },
   "porthole": {
     "definition": "A window in a ship or airplane.",
     "arabicTranslation": "نافذة دائرية"
   },
   "ballast-tank": {
     "definition": "A space station where ballast tanks can be stored for underwater operations.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «باللاست تانك»"
   },
   "propeller": {
     "definition": "A mechanical device that rotates to push against air or water.",
-    "arabicTranslation": "مروحة دافعة"
+    "arabicTranslation": "مروحة دافعة",
+    "exampleUsage": "The propeller was used during the activity."
   },
   "rudder": {
     "definition": "A hinged vertical airfoil mounted at the tail of an aircraft and used to make horizontal course changes.",
@@ -30,7 +35,7 @@
   },
   "torpedo-tube": {
     "definition": "A launch tube set near a vessel’s waterline is used to fire a torpedo.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «توربيدو توبي»"
   },
   "sonar-dome": {
     "definition": "A space station where sonar domes can be used for underwater observation.",
@@ -38,7 +43,8 @@
   },
   "control-panel": {
     "definition": "A flat section of a device holds the buttons, switches, and dials that control its operation.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «كونترول بانيل»",
+    "exampleUsage": "The control panel was used during the activity."
   },
   "navigation-screen": {
     "definition": "An electronic display that shows information used to determine and monitor a vessel's position and route.",
@@ -69,17 +75,20 @@
   },
   "throttle": {
     "definition": "A valve that regulates the supply of fuel to the engine.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ثروتتلي»"
   },
   "communication-radio": {
     "definition": "A radio system used for sending and receiving voice or data messages.",
     "exampleUsage": "The communication radio was tested before departure.",
     "arabicTranslation": "جهاز اتصال لاسلكي"
   },
-  "alarm": { "definition": "To fill with apprehension or alarm.", "arabicTranslation": "إنذار" },
+  "alarm": {
+    "definition": "To fill with apprehension or alarm.",
+    "arabicTranslation": "إنذار"
+  },
   "bunk-bed": {
     "definition": "A pair of beds is arranged vertically, with one bed positioned above the other.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بونك بيد»"
   },
   "galley": {
     "definition": "A large medieval vessel with a single deck propelled by sails and oars with guns at stern and prow.",
@@ -87,7 +96,7 @@
   },
   "mess-hall": {
     "definition": "A large shared dining facility where members of an organized group eat meals together, especially in military or residential settings.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «ميسس هالل»"
   },
   "storage-locker": {
     "definition": "A small secured cupboard or compartment used to store equipment or personal items.",
@@ -96,7 +105,8 @@
   },
   "shower": {
     "definition": "A place or device that sprays water over you so you can wash your body.",
-    "arabicTranslation": "دُش"
+    "arabicTranslation": "دُش",
+    "exampleUsage": "The shower was used during the activity."
   },
   "laundry": {
     "definition": "Garments or white goods that can be cleaned by laundering.",
@@ -104,7 +114,7 @@
   },
   "recreation-room": {
     "definition": "A room in a house or apartment set aside for games, relaxation, and casual time with others.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «ريكرياتيون رووم»"
   },
   "captain-s-cabin": {
     "definition": "The private room or sleeping area assigned to the captain of a vessel.",
@@ -134,12 +144,18 @@
     "exampleUsage": "The radio operator received a routine message.",
     "arabicTranslation": "مشغّل اللاسلكي"
   },
-  "cook": { "definition": "To prepare food using heat.", "arabicTranslation": "طاهٍ" },
+  "cook": {
+    "arabicTranslation": "طاهٍ",
+    "definition": "To prepare food by heating it."
+  },
   "medic": {
     "definition": "Any of several Old World herbs of the genus Medicago having small flowers and trifoliate compound leaves.",
     "arabicTranslation": "مسعف"
   },
-  "diver": { "definition": "A person who works underwater.", "arabicTranslation": "غواص" },
+  "diver": {
+    "definition": "A person who works underwater.",
+    "arabicTranslation": "غواص"
+  },
   "technician": {
     "definition": "A person who maintains and operates technical equipment during a production.",
     "arabicTranslation": "فني"
@@ -182,7 +198,8 @@
   },
   "echo-sounder": {
     "definition": "A device measures underwater distances by sending a sound pulse and timing its returning echo.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «يتشو سووندير»",
+    "exampleUsage": "The echo sounder was used during the activity."
   },
   "current-meter": {
     "definition": "An instrument that measures the speed, and sometimes direction, of moving water.",
@@ -193,7 +210,10 @@
     "definition": "A book in which the log is written.",
     "arabicTranslation": "سجل الرحلة"
   },
-  "whale": { "arabicTranslation": "حوت" },
+  "whale": {
+    "arabicTranslation": "حوت",
+    "definition": "A very large marine mammal that breathes air through a blowhole."
+  },
   "shark": {
     "definition": "A person who is unusually skilled in certain ways.",
     "arabicTranslation": "قرش"
@@ -214,7 +234,7 @@
   },
   "sea-turtle": {
     "definition": "Large turtles that spend most of their lives in tropical or subtropical oceans come ashore mainly to lay eggs on sandy beaches.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سيا تورتلي»"
   },
   "coral": {
     "definition": "The hard stony skeleton of a Mediterranean coral that has a delicate red or pink color and is used for jewelry.",
@@ -235,18 +255,26 @@
   },
   "sonar": {
     "definition": "A measuring instrument that sends out an acoustic pulse in water and measures distances in terms of the time for the echo of the pulse to return.",
-    "arabicTranslation": "سونار"
+    "arabicTranslation": "سونار",
+    "exampleUsage": "The sonar was used during the activity."
   },
-  "radio": { "arabicTranslation": "إذاعة" },
+  "radio": {
+    "arabicTranslation": "إذاعة",
+    "definition": "A device used to send and receive messages by radio waves."
+  },
   "engine": {
     "definition": "Something used to achieve a purpose.",
     "exampleUsage": "The glossary uses the term \"Engine\" in an educational description.",
     "arabicTranslation": "محرك"
   },
-  "pump": { "arabicTranslation": "مضخة" },
+  "pump": {
+    "arabicTranslation": "مضخة",
+    "definition": "A machine that moves water or other fluid through a system."
+  },
   "valve": {
     "definition": "Control consisting of a mechanical device for controlling the flow of a fluid.",
-    "arabicTranslation": "صمام"
+    "arabicTranslation": "صمام",
+    "exampleUsage": "The valve was used during the activity."
   },
   "officer": {
     "definition": "Any person in the armed services who holds a position of authority or command.",

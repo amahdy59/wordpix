@@ -1,7 +1,7 @@
 {
   "front-desk": {
     "definition": "A service desk near a building’s entrance where visitors register, ask questions, or request assistance.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مبنى يُسمّى «فرونت ديسك»"
   },
   "lobby": {
     "definition": "A large entrance or reception room or area.",
@@ -11,7 +11,11 @@
     "definition": "A secretary whose main duty is to answer the telephone and receive visitors.",
     "arabicTranslation": "موظف استقبال"
   },
-  "bell": { "definition": "A device that makes a ringing sound.", "arabicTranslation": "جرس" },
+  "bell": {
+    "definition": "A device that makes a ringing sound.",
+    "arabicTranslation": "جرس",
+    "exampleUsage": "The bell was used during the activity."
+  },
   "key-card": {
     "definition": "A plastic or electronic card used to unlock a hotel-room door.",
     "exampleUsage": "The guest used the key card to open the room.",
@@ -22,7 +26,10 @@
     "exampleUsage": "The porter loaded the suitcases onto a luggage cart.",
     "arabicTranslation": "عربة أمتعة"
   },
-  "doorman": { "definition": "A man who guards an entrance.", "arabicTranslation": "بواب" },
+  "doorman": {
+    "arabicTranslation": "بواب",
+    "definition": "A man who guards an entrance."
+  },
   "chandelier": {
     "definition": "A decorative light with several arms hanging from the ceiling.",
     "arabicTranslation": "ثريا"
@@ -35,16 +42,23 @@
     "definition": "A small room (or recess) or cabinet used for storage space.",
     "arabicTranslation": "خزانة"
   },
-  "safe": { "definition": "Free from danger or the risk of harm.", "arabicTranslation": "خزنة" },
+  "safe": {
+    "definition": "Free from danger or the risk of harm.",
+    "arabicTranslation": "خزنة"
+  },
   "mini-bar": {
     "definition": "A small refrigerator or cabinet in a hotel room containing snacks and drinks that may be charged to the guest.",
     "exampleUsage": "The hotel room's mini-bar contained labeled snacks and beverages.",
     "arabicTranslation": "ميني بار؛ ثلاجة صغيرة للضيافة"
   },
-  "iron": { "arabicTranslation": "مكواة" },
+  "iron": {
+    "arabicTranslation": "مكواة",
+    "definition": "A heated appliance used to smooth wrinkles in clothes."
+  },
   "hair-dryer": {
     "definition": "An electrical device that blows warm air to dry your hair.",
-    "arabicTranslation": "مجفف شعر"
+    "arabicTranslation": "مجفف شعر",
+    "exampleUsage": "The hair dryer was used during the activity."
   },
   "bathtub": {
     "definition": "A large container that you fill with water and sit in to wash your body.",
@@ -52,7 +66,8 @@
   },
   "shower": {
     "definition": "A place or device that sprays water over you so you can wash your body.",
-    "arabicTranslation": "دُش"
+    "arabicTranslation": "دُش",
+    "exampleUsage": "The shower was used during the activity."
   },
   "towel": {
     "definition": "A piece of absorbent cloth used for drying your body or other things.",
@@ -90,7 +105,10 @@
     "definition": "A room or establishment where alcoholic drinks are served over a counter.",
     "arabicTranslation": "حانة"
   },
-  "rooftop": { "definition": "The top of a (usually flat) roof.", "arabicTranslation": "سطح" },
+  "rooftop": {
+    "definition": "The top of a (usually flat) roof.",
+    "arabicTranslation": "سطح"
+  },
   "conference-room": {
     "definition": "A room in a school or office set aside for organized meetings and formal discussion.",
     "arabicTranslation": "غرفة مؤتمر"
@@ -176,7 +194,8 @@
   },
   "elevator": {
     "definition": "Lifting device consisting of a platform or cage that is raised and lowered mechanically in a vertical shaft in order to move people from one floor to another in a building.",
-    "arabicTranslation": "مصعد"
+    "arabicTranslation": "مصعد",
+    "exampleUsage": "The elevator was used during the activity."
   },
   "hallway": {
     "definition": "An interior passage or corridor onto which rooms open.",
@@ -188,7 +207,8 @@
   },
   "vending-machine": {
     "definition": "A machine that dispenses products after a customer inserts payment.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «فيندينج ماتشيني»",
+    "exampleUsage": "The vending machine was used during the activity."
   },
   "bellhop": {
     "definition": "Someone employed as an errand boy and luggage carrier around hotels.",

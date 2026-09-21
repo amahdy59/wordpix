@@ -1,10 +1,28 @@
 {
-  "seam": { "definition": "To put together with a seam.", "arabicTranslation": "درزة" },
-  "dart": { "definition": "To move along rapidly and lightly.", "arabicTranslation": "بنسة خياطة" },
-  "pleat": { "definition": "To pleat or gather into a ruffle.", "arabicTranslation": "" },
-  "gather": { "definition": "To assemble or get together.", "arabicTranslation": "" },
-  "hem": { "definition": "The edge of a piece of cloth.", "arabicTranslation": "حاشية" },
-  "collar": { "definition": "Anything worn or placed about the neck.", "arabicTranslation": "طوق" },
+  "seam": {
+    "arabicTranslation": "درزة",
+    "definition": "The line where two pieces of fabric are sewn together."
+  },
+  "dart": {
+    "definition": "To move along rapidly and lightly.",
+    "arabicTranslation": "بنسة خياطة"
+  },
+  "pleat": {
+    "definition": "To pleat or gather into a ruffle.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بليات»"
+  },
+  "gather": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جاثير»",
+    "definition": "To draw fabric together into small folds with stitches."
+  },
+  "hem": {
+    "arabicTranslation": "حاشية",
+    "definition": "The edge of a piece of cloth."
+  },
+  "collar": {
+    "definition": "Anything worn or placed about the neck.",
+    "arabicTranslation": "طوق"
+  },
   "cuff": {
     "definition": "The lap consisting of a turned-back hem encircling the end of the sleeve or leg.",
     "arabicTranslation": "سوار عريض"
@@ -13,23 +31,38 @@
     "definition": "The part of a garment that is attached at the armhole and that provides a cloth covering for the arm.",
     "arabicTranslation": "غلاف كوب"
   },
-  "bodice": { "definition": "Part of a dress above the waist.", "arabicTranslation": "" },
+  "bodice": {
+    "definition": "Part of a dress above the waist.",
+    "arabicTranslation": "جزء يُسمّى «بوديكي»"
+  },
   "waistband": {
     "definition": "A band of material around the waist that strengthens a skirt or trousers.",
     "arabicTranslation": "حزام خصر"
   },
-  "zipper": { "arabicTranslation": "سحّاب" },
-  "button": { "definition": "Any artifact that resembles a button.", "arabicTranslation": "زر" },
+  "zipper": {
+    "arabicTranslation": "سحّاب",
+    "definition": "A fastener with two rows of teeth that join when a slider moves along them."
+  },
+  "button": {
+    "definition": "Any artifact that resembles a button.",
+    "arabicTranslation": "زر"
+  },
   "snap": {
     "definition": "The tendency of a body to return to its original shape after it has been stretched or compressed.",
     "arabicTranslation": "فرقعة الأصابع"
   },
   "hook-and-eye": {
     "definition": "A clothing fastener made from a small hook that catches on a matching loop.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هووك اند ييي»"
   },
-  "velcro": { "arabicTranslation": "فيلكرو" },
-  "buckle": { "definition": "To fasten with a buckle or buckles.", "arabicTranslation": "إبزيم" },
+  "velcro": {
+    "arabicTranslation": "فيلكرو",
+    "definition": "A hook-and-loop fastener used to join two surfaces."
+  },
+  "buckle": {
+    "definition": "To fasten with a buckle or buckles.",
+    "arabicTranslation": "إبزيم"
+  },
   "lace-up": {
     "definition": "Fastened or decorated with laces threaded through holes or loops.",
     "exampleUsage": "The design uses a lace-up front.",
@@ -37,11 +70,11 @@
   },
   "toggle": {
     "definition": "A fastener consisting of a peg or pin or crosspiece that is inserted into an eye at the end of a rope or a chain or a cable in order to fasten it to something (as another rope or chain or cable).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «توججلي»"
   },
   "drawstring": {
     "definition": "A tie consisting of a cord that goes through a seam around an opening.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «دراوسترينج»"
   },
   "magnetic-clasp": {
     "definition": "A fastener that uses magnets to hold two parts together.",
@@ -52,7 +85,10 @@
     "definition": "Elaboration of an interpretation by the use of decorative (sometimes fictitious) detail.",
     "arabicTranslation": "تطريز"
   },
-  "beading": { "arabicTranslation": "" },
+  "beading": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيادينج»",
+    "definition": "Decoration made by attaching small beads to fabric."
+  },
   "sequin": {
     "definition": "Adornment consisting of a small piece of shiny material used to decorate clothing.",
     "arabicTranslation": "ترتر"
@@ -64,25 +100,31 @@
   },
   "fringe": {
     "definition": "To decorate with or as if with a surrounding fringe.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فرينجي»"
   },
-  "ruffle": { "definition": "To pleat or gather into a ruffle.", "arabicTranslation": "" },
+  "ruffle": {
+    "definition": "To pleat or gather into a ruffle.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «روففلي»"
+  },
   "ribbon": {
     "definition": "Any long object resembling a thin line.",
     "arabicTranslation": "شريط"
   },
-  "piping": { "arabicTranslation": "" },
+  "piping": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيبينج»",
+    "definition": "A narrow strip of fabric sewn into an edge or seam for decoration."
+  },
   "smocking": {
     "definition": "Embroidery consisting of ornamental needlework on a garment that is made by gathering the cloth tightly in stitches.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سموكينج»"
   },
   "monogram": {
     "definition": "A graphic symbol consisting of 2 or more letters combined (usually your initials).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مونوجرام»"
   },
   "haute-couture": {
     "definition": "Exclusive fashion houses create luxurious garments specifically tailored to each customer's measurements.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هاوتي كووتوري»"
   },
   "pr-t-porter": {
     "definition": "A French fashion term meaning ready-to-wear clothing produced in standard sizes rather than custom-made for one person.",
@@ -104,18 +146,21 @@
   },
   "trend": {
     "definition": "A general direction in which something tends to move.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تريند»"
   },
   "silhouette": {
     "definition": "To project on a background, such as a screen, like a silhouette.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سيلهوويتتي»"
   },
   "colorway": {
     "definition": "A particular combination or arrangement of colors used in a design or product.",
     "exampleUsage": "The shoe is available in a second colorway.",
     "arabicTranslation": "توليفة لونية"
   },
-  "capsule": { "arabicTranslation": "كبسولة" },
+  "capsule": {
+    "arabicTranslation": "كبسولة",
+    "definition": "A small coordinated collection of clothing pieces that work together."
+  },
   "sustainable-fashion": {
     "definition": "An approach to clothing design and production that aims to reduce environmental harm and improve social responsibility across the product life cycle.",
     "exampleUsage": "The class discussed material choices in sustainable fashion.",

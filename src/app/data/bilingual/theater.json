@@ -117,7 +117,10 @@
     "exampleUsage": "The glossary uses the term \"Sword\" in an educational description.",
     "arabicTranslation": "سيف"
   },
-  "goblet": { "definition": "A drinking glass with a base and stem.", "arabicTranslation": "كأس" },
+  "goblet": {
+    "definition": "A drinking glass with a base and stem.",
+    "arabicTranslation": "كأس"
+  },
   "throne": {
     "definition": "The chair of state for a monarch, bishop, etc.",
     "arabicTranslation": "عرش"
@@ -130,14 +133,23 @@
     "definition": "A portable lamp used for light while camping.",
     "arabicTranslation": "فانوس"
   },
-  "banner": { "arabicTranslation": "لافتة" },
+  "banner": {
+    "arabicTranslation": "لافتة",
+    "definition": "A long piece of fabric or paper displaying words or images."
+  },
   "treasure-chest": {
     "definition": "A box designed to resemble a chest used for storing valuable objects, often used as a stage prop.",
     "exampleUsage": "A painted treasure chest stood at the side of the set.",
     "arabicTranslation": "صندوق كنز"
   },
-  "actor": { "definition": "A person who acts and gets things done.", "arabicTranslation": "ممثل" },
-  "actress": { "arabicTranslation": "ممثلة" },
+  "actor": {
+    "definition": "A person who acts and gets things done.",
+    "arabicTranslation": "ممثل"
+  },
+  "actress": {
+    "arabicTranslation": "ممثلة",
+    "definition": "A woman who performs a role in a film, play, or television show."
+  },
   "director": {
     "definition": "The person who controls how a television production is made.",
     "arabicTranslation": "مخرج"
@@ -180,7 +192,7 @@
   },
   "opening-night": {
     "definition": "It marks the first official public performance of a play, film, concert, or other production, after rehearsals or previews.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وبينينج نيغت»"
   },
   "monologue": {
     "definition": "A (usually long) dramatic speech by a single actor.",
@@ -204,7 +216,7 @@
   },
   "standing-ovation": {
     "definition": "A public display of strong approval occurs when an audience stands and applauds, usually to celebrate an outstanding performance, speech, or accomplishment.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ستاندينج وفاتيون»"
   },
   "encore": {
     "definition": "An extra or repeated performance.",
@@ -212,7 +224,7 @@
   },
   "curtain-call": {
     "definition": "A post-performance return to the stage allows actors or other performers to acknowledge the audience’s applause.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كورتاين كالل»"
   },
   "wing": {
     "definition": "A stage area out of sight of the audience.",
@@ -222,7 +234,10 @@
     "definition": "A recessed area before a stage where musicians play while performers act or sing.",
     "arabicTranslation": "حلقة تداول أوركسترا"
   },
-  "playwright": { "definition": "A person who writes plays.", "arabicTranslation": "كاتب مسرحي" },
+  "playwright": {
+    "arabicTranslation": "كاتب مسرحي",
+    "definition": "A person who writes plays."
+  },
   "stagehand": {
     "definition": "An employee of a theater who performs work involved in putting on a theatrical production.",
     "arabicTranslation": "عامل مسرح"
@@ -235,7 +250,10 @@
     "definition": "An actor able to replace a regular performer when required.",
     "arabicTranslation": "ممثل بديل"
   },
-  "script": { "arabicTranslation": "نص مسرحي" },
+  "script": {
+    "arabicTranslation": "نص مسرحي",
+    "definition": "The written dialogue and stage directions for a play."
+  },
   "makeup": {
     "definition": "Cosmetics applied to the face to improve or change your appearance.",
     "arabicTranslation": "مكياج"

@@ -55,7 +55,10 @@
     "definition": "Passageway between seating areas as in an auditorium or passenger vehicle or between areas of shelves of goods as in stores.",
     "arabicTranslation": "ممر"
   },
-  "armrest": { "arabicTranslation": "مسند ذراع" },
+  "armrest": {
+    "arabicTranslation": "مسند ذراع",
+    "definition": "A support beside a seat on which a person rests an arm."
+  },
   "cup-holder": {
     "definition": "A small holder designed to keep a cup or bottle upright.",
     "exampleUsage": "Each cinema seat has a cup holder.",
@@ -63,11 +66,11 @@
   },
   "3d-glasses": {
     "definition": "Two lenses held in a frame that improve vision by correcting refractive errors, such as nearsightedness.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «3د جلاسسيس»"
   },
   "recliner": {
     "definition": "An armchair whose back can be lowered and foot can be raised to allow the sitter to recline in it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريكلينير»"
   },
   "balcony": {
     "definition": "An upper floor projecting from the rear over the main floor in an auditorium.",
@@ -75,7 +78,7 @@
   },
   "front-row": {
     "definition": "Seats nearest the stage, podium, or front of a room form the front row.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «فرونت روو»"
   },
   "back-row": {
     "definition": "The final row of seats farthest from the front or screen.",
@@ -92,7 +95,7 @@
   },
   "nachos": {
     "definition": "A tortilla chip topped with cheese and chili-pepper and broiled.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ناتشوس»"
   },
   "candy": {
     "definition": "A rich sweet made of flavored sugar and often combined with fruit or nuts.",
@@ -127,7 +130,7 @@
   },
   "movie": {
     "definition": "A form of entertainment that enacts a story by sound and a sequence of images giving the illusion of continuous movement.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «موفيي»"
   },
   "trailer": {
     "definition": "A vehicle without an engine that is pulled by another vehicle.",
@@ -135,22 +138,31 @@
   },
   "credits": {
     "definition": "A short note recognizing a source of information or of a quoted passage.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كريديتس»"
   },
   "director": {
     "definition": "The person who controls how a television production is made.",
     "arabicTranslation": "مخرج"
   },
-  "actor": { "definition": "A person who acts and gets things done.", "arabicTranslation": "ممثل" },
-  "actress": { "arabicTranslation": "ممثلة" },
-  "scene": { "definition": "The place where some action occurs.", "arabicTranslation": "مشهد" },
+  "actor": {
+    "definition": "A person who acts and gets things done.",
+    "arabicTranslation": "ممثل"
+  },
+  "actress": {
+    "arabicTranslation": "ممثلة",
+    "definition": "A woman who performs a role in a film, play, or television show."
+  },
+  "scene": {
+    "definition": "The place where some action occurs.",
+    "arabicTranslation": "مشهد"
+  },
   "soundtrack": {
     "definition": "Sound recording on a narrow strip of a motion picture film.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سووندتراك»"
   },
   "subtitle": {
     "definition": "Text on screen showing spoken words or translations.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سوبتيتلي»"
   },
   "animation": {
     "definition": "The condition of living or the state of being alive.",
@@ -158,26 +170,35 @@
   },
   "comedy": {
     "definition": "Light and humorous drama with a happy ending.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كوميدي»"
   },
   "drama": {
     "definition": "A dramatic work intended for performance by actors on a stage.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «دراما»"
   },
-  "action": { "definition": "The series of events that form a plot.", "arabicTranslation": "فعل" },
-  "horror": { "definition": "Something that inspires horror.", "arabicTranslation": "" },
-  "romance": { "definition": "Relating to languages derived from Latin.", "arabicTranslation": "" },
+  "action": {
+    "definition": "The series of events that form a plot.",
+    "arabicTranslation": "فعل"
+  },
+  "horror": {
+    "definition": "Something that inspires horror.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هوررور»"
+  },
+  "romance": {
+    "definition": "Relating to languages derived from Latin.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «رومانكي»"
+  },
   "thriller": {
     "definition": "A suspenseful adventure story or play or movie.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ثريللير»"
   },
   "documentary": {
     "definition": "Relating to or consisting of or derived from documents.",
-    "arabicTranslation": ""
+    "arabicTranslation": "وثيقة يُسمّى «دوكومينتاري»"
   },
   "fantasy": {
     "definition": "Fiction with a large amount of imagination in it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فانتاسي»"
   },
   "science-fiction": {
     "definition": "A genre of stories about imagined science, technology, space, future societies, or other speculative ideas.",
@@ -186,7 +207,7 @@
   },
   "musical": {
     "definition": "Characteristic of or resembling or accompanied by music.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «موسيكال»"
   },
   "ticket": {
     "definition": "A printed or electronic pass that allows entry to a ride or park.",
@@ -194,18 +215,24 @@
   },
   "showtime": {
     "definition": "The time at which something is supposed to begin.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «شووتيمي»"
   },
   "premiere": {
     "definition": "The first public performance of a play or movie.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بريمييري»"
   },
   "poster": {
     "definition": "A large printed sheet fixed flat against a wall for decoration.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بوستير»"
   },
-  "marquee": { "definition": "Large and often sumptuous tent.", "arabicTranslation": "" },
-  "rating": { "definition": "An appraisal of the value of something.", "arabicTranslation": "" },
+  "marquee": {
+    "definition": "Large and often sumptuous tent.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ماركيي»"
+  },
+  "rating": {
+    "definition": "An appraisal of the value of something.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «راتينج»"
+  },
   "review": {
     "definition": "An article that evaluates a book, film, product, or event.",
     "arabicTranslation": "مراجعة"
@@ -216,7 +243,7 @@
   },
   "applause": {
     "definition": "A demonstration of approval by clapping the hands together.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اببلاوسي»"
   },
   "intermission": {
     "definition": "The act of suspending activity temporarily.",

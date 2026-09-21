@@ -1,50 +1,65 @@
 {
   "wrench": {
     "definition": "A tool used for turning nuts, bolts, or pipes.",
-    "arabicTranslation": "مفتاح ربط"
+    "arabicTranslation": "مفتاح ربط",
+    "exampleUsage": "The wrench was used during the activity."
   },
   "screwdriver": {
     "definition": "A hand tool with a handle and a tip for turning screws.",
-    "arabicTranslation": "مفك براغي"
+    "arabicTranslation": "مفك براغي",
+    "exampleUsage": "The screwdriver was used during the activity."
   },
   "socket-set": {
     "definition": "A collection of tools used for turning different sizes of nuts.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «سوكيت سيت»",
+    "exampleUsage": "The socket set was used during the activity."
   },
   "pliers": {
     "definition": "A hand tool with two handles used for gripping or cutting.",
-    "arabicTranslation": "كماشة"
+    "arabicTranslation": "كماشة",
+    "exampleUsage": "The pliers was used during the activity."
   },
-  "jack": { "definition": "To lift with a special device.", "arabicTranslation": "" },
+  "jack": {
+    "definition": "To lift with a special device.",
+    "arabicTranslation": "جهاز يُسمّى «جاك»",
+    "exampleUsage": "The jack was used during the activity."
+  },
   "torque-wrench": {
     "definition": "A wrench fitted with a gauge that measures the torque, or turning force, applied to a fastener.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «توركي ورينتش»"
   },
   "hammer": {
     "definition": "A tool with a heavy head used for hitting nails.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «هاممير»",
+    "exampleUsage": "The hammer was used during the activity."
   },
   "pry-bar": {
     "definition": "A long metal hand tool has a curved or claw-shaped end that lets you separate objects or lift them using leverage.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «بري بار»",
+    "exampleUsage": "The pry bar was used during the activity."
   },
   "multimeter": {
     "definition": "A portable instrument that tests several features of electricity, including voltage, current, and resistance, in a circuit.",
-    "arabicTranslation": "ملتيميتر"
+    "arabicTranslation": "ملتيميتر",
+    "exampleUsage": "The multimeter was used during the activity."
   },
   "drill": {
     "definition": "A tool with a rotating bit used for making holes.",
-    "arabicTranslation": "مثقاب"
+    "arabicTranslation": "مثقاب",
+    "exampleUsage": "The drill was used during the activity."
   },
   "engine": {
     "definition": "Something used to achieve a purpose.",
     "exampleUsage": "The glossary uses the term \"Engine\" in an educational description.",
     "arabicTranslation": "محرك"
   },
-  "tire": { "arabicTranslation": "إطار سيارة" },
+  "tire": {
+    "arabicTranslation": "إطار سيارة",
+    "definition": "A rubber covering around a wheel that grips the road."
+  },
   "brake-pad": {
     "definition": "A replaceable pad presses against one side of a rotating brake disk, creating friction that slows the wheel.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «براكي باد»"
   },
   "battery": {
     "definition": "A collection of related things intended for use together.",
@@ -52,19 +67,20 @@
   },
   "alternator": {
     "definition": "An old term for an electric generator that produces alternating current (especially in automobiles).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «التيرناتور»"
   },
   "radiator": {
     "definition": "A mechanism consisting of a metal honeycomb through which hot fluids circulate.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «رادياتور»"
   },
   "muffler": {
     "definition": "A tubular acoustic device inserted in the exhaust system that is designed to reduce noise.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «موففلير»",
+    "exampleUsage": "The muffler was used during the activity."
   },
   "spark-plug": {
     "definition": "An engine component mounted in the cylinder head produces a high-voltage spark that ignites the mixture of air and fuel.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سبارك بلوج»"
   },
   "air-filter": {
     "definition": "A component that removes dust from air as the air flows through it.",
@@ -72,7 +88,8 @@
   },
   "oil-filter": {
     "definition": "A device that strains dirt and other harmful material from the oil circulating through an engine.",
-    "arabicTranslation": "يرشّح زيت"
+    "arabicTranslation": "يرشّح زيت",
+    "exampleUsage": "The oil filter was used during the activity."
   },
   "transmission": {
     "definition": "The gears that transmit power from an automobile engine via the driveshaft to the live axle.",
@@ -80,7 +97,7 @@
   },
   "suspension": {
     "definition": "A mixture in which fine particles are suspended in a fluid where they are supported by buoyancy.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «سوسبينسيون»"
   },
   "exhaust": {
     "definition": "System consisting of the parts of an engine through which burned gases or steam are discharged.",
@@ -88,18 +105,24 @@
   },
   "cooling-system": {
     "definition": "Used to lower temperature by sending heat away through connected parts.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «كوولينج سيستيم»"
   },
-  "steering": { "definition": "The act of steering a ship.", "arabicTranslation": "" },
+  "steering": {
+    "arabicTranslation": "سفينة يُسمّى «ستييرينج»",
+    "definition": "The act of steering a ship."
+  },
   "fuel-system": {
     "definition": "Equipment in a car or aircraft carries fuel to the engine for use.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طائرة يُسمّى «فويل سيستيم»"
   },
   "electrical": {
     "definition": "Relating to or concerned with electricity.",
     "arabicTranslation": "أعمال كهربائية"
   },
-  "brakes": { "definition": "To cause to stop by applying the brakes.", "arabicTranslation": "" },
+  "brakes": {
+    "definition": "To cause to stop by applying the brakes.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «براكيس»"
+  },
   "drivetrain": {
     "definition": "The group of vehicle components that transfers power from the engine or motor to the wheels.",
     "exampleUsage": "The mechanic inspected the drivetrain for unusual vibration.",
@@ -110,7 +133,10 @@
     "exampleUsage": "The technician tested the AC system during the service.",
     "arabicTranslation": "نظام تكييف الهواء"
   },
-  "lift": { "definition": "The act of raising something.", "arabicTranslation": "يرفع" },
+  "lift": {
+    "arabicTranslation": "يرفع",
+    "definition": "The act of raising something."
+  },
   "diagnostic-scanner": {
     "definition": "An electronic tool used by trained technicians to read vehicle fault codes and system data.",
     "exampleUsage": "The mechanic connected a diagnostic scanner to the vehicle.",
@@ -118,16 +144,18 @@
   },
   "air-compressor": {
     "definition": "A machine that draws in air at normal atmospheric pressure and compresses it to produce higher-pressure air.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «اير كومبريسسور»",
+    "exampleUsage": "The air compressor was used during the activity."
   },
   "creeper": {
     "definition": "Any of various small insectivorous birds of the Northern Hemisphere that climb up a tree trunk supporting themselves on stiff tail feathers and their feet.",
     "exampleUsage": "The creeper was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طائر يُسمّى «كرييبير»"
   },
   "toolbox": {
     "definition": "A box or chest or cabinet for holding hand tools.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «توولبوكس»",
+    "exampleUsage": "The toolbox was used during the activity."
   },
   "oil-drain": {
     "definition": "An opening, plug, or collection point used during maintenance to remove used engine oil.",
@@ -141,11 +169,11 @@
   },
   "balancer": {
     "definition": "An acrobat who balances themself in difficult positions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بالانكير»"
   },
   "welder": {
     "definition": "A skilled worker who joins pieces of metal using heat.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عامل يُسمّى «ويلدير»"
   },
   "grinder": {
     "definition": "A large sandwich made of a long crusty roll split lengthwise and filled with meats and cheese (and tomato and onion and lettuce and condiments).",
@@ -171,19 +199,20 @@
   },
   "grease": {
     "definition": "A thick fatty oil (especially one used to lubricate machinery).",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «جرياسي»",
+    "exampleUsage": "The grease was used during the activity."
   },
   "gasket": {
     "definition": "Seal consisting of a ring for packing pistons or sealing a pipe joint.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جاسكيت»"
   },
   "bolt": {
     "definition": "A metal fastener with a threaded shaft and a nut.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بولت»"
   },
   "nut": {
     "definition": "A small (usually square or hexagonal) metal block with internal screw thread to be fitted onto a bolt.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نوت»"
   },
   "washer": {
     "definition": "A person who washes things for a living.",
@@ -196,11 +225,12 @@
   },
   "oil-change": {
     "definition": "Routine servicing removes contaminated lubricant from an engine or other machine and replaces it with fresh oil, often along with a new oil filter.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «ويل تشانجي»",
+    "exampleUsage": "The oil change was used during the activity."
   },
   "tire-rotation": {
     "definition": "A routine vehicle service shifts each tire to a different wheel position, spreading wear more evenly and helping the tires last longer.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «تيري روتاتيون»"
   },
   "brake-repair": {
     "definition": "Professional maintenance or replacement work performed on a vehicle's braking system.",
@@ -209,24 +239,30 @@
   },
   "tune-up": {
     "definition": "Make careful adjustments to improve how something operates.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «توني وب»"
   },
   "alignment": {
     "definition": "An organization of people (or countries) involved in a pact or treaty.",
     "arabicTranslation": "ضبط المحاذاة"
   },
-  "inspection": { "definition": "A formal or official examination.", "arabicTranslation": "فحص" },
-  "bodywork": { "definition": "The exterior body of a motor vehicle.", "arabicTranslation": "" },
+  "inspection": {
+    "definition": "A formal or official examination.",
+    "arabicTranslation": "فحص"
+  },
+  "bodywork": {
+    "definition": "The exterior body of a motor vehicle.",
+    "arabicTranslation": "مركبة يُسمّى «بوديوورك»"
+  },
   "paint-job": {
     "definition": "The work of covering a building, piece of furniture, or piece of equipment with paint to improve its appearance or preserve it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مبنى يُسمّى «باينت جوب»"
   },
   "tow-truck": {
     "definition": "A specialized vehicle uses a winch, hook, boom, or wheel lift to move cars that are broken, damaged, or parked illegally.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «توو تروك»"
   },
   "estimate": {
     "definition": "A statement indicating the likely cost of some job.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يستيماتي»"
   }
 }

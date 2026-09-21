@@ -1,22 +1,31 @@
 {
   "violin": {
     "definition": "Bowed stringed instrument that is the highest member of the violin family.",
-    "arabicTranslation": "كمان"
+    "arabicTranslation": "كمان",
+    "exampleUsage": "The violin was used during the activity."
   },
   "viola": {
     "definition": "Any of the numerous plants of the genus Viola.",
     "arabicTranslation": "فيولا"
   },
-  "cello": { "definition": "A large stringed instrument.", "arabicTranslation": "تشيلو" },
+  "cello": {
+    "arabicTranslation": "تشيلو",
+    "exampleUsage": "The cello was used during the activity.",
+    "definition": "A large stringed instrument."
+  },
   "double-bass": {
     "definition": "The largest and lowest-pitched common member of the orchestral string family.",
     "exampleUsage": "The double bass played the lowest notes in the string section.",
     "arabicTranslation": "كونترباص"
   },
-  "harp": { "arabicTranslation": "قيثارة" },
+  "harp": {
+    "arabicTranslation": "قيثارة",
+    "definition": "A large string instrument played by plucking its strings."
+  },
   "guitar": {
     "definition": "A stringed instrument usually having six strings.",
-    "arabicTranslation": "غيتار"
+    "arabicTranslation": "غيتار",
+    "exampleUsage": "The guitar was used during the activity."
   },
   "bow": {
     "definition": "An appearance by actors or performers at the end of the concert or play in order to acknowledge the applause of the audience.",
@@ -24,7 +33,8 @@
   },
   "string": {
     "definition": "Stringed instruments that are played with a bow.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «سترينج»",
+    "exampleUsage": "The string was used during the activity."
   },
   "tuning-peg": {
     "definition": "A small peg or mechanism turned to adjust the tension and pitch of a musical instrument string.",
@@ -33,19 +43,36 @@
   },
   "chin-rest": {
     "definition": "A fitted support that lets a violinist rest the chin while holding and playing the instrument.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «تشين ريست»",
+    "exampleUsage": "The chin rest was used during the activity."
   },
-  "flute": { "definition": "A high-pitched woodwind instrument.", "arabicTranslation": "ناي فلوت" },
+  "flute": {
+    "definition": "A high-pitched woodwind instrument.",
+    "arabicTranslation": "ناي فلوت",
+    "exampleUsage": "The flute was used during the activity."
+  },
   "clarinet": {
     "definition": "A single-reed instrument with a straight tube.",
-    "arabicTranslation": "كلارينيت"
+    "arabicTranslation": "كلارينيت",
+    "exampleUsage": "The clarinet was used during the activity."
   },
-  "oboe": { "definition": "A slender double-reed instrument.", "arabicTranslation": "أوبوا" },
-  "bassoon": { "arabicTranslation": "باسون" },
-  "piccolo": { "arabicTranslation": "" },
+  "oboe": {
+    "definition": "A slender double-reed instrument.",
+    "arabicTranslation": "أوبوا",
+    "exampleUsage": "The oboe was used during the activity."
+  },
+  "bassoon": {
+    "arabicTranslation": "باسون",
+    "definition": "A long, low-pitched woodwind instrument played with a double reed."
+  },
+  "piccolo": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيككولو»",
+    "definition": "A small flute that makes very high notes."
+  },
   "recorder": {
     "definition": "A tubular wind instrument with 8 finger holes and a fipple mouthpiece.",
-    "arabicTranslation": "ناي ريكوردر"
+    "arabicTranslation": "ناي ريكوردر",
+    "exampleUsage": "The recorder was used during the activity."
   },
   "saxophone": {
     "definition": "A single-reed woodwind with a conical bore.",
@@ -53,11 +80,11 @@
   },
   "reed": {
     "definition": "A vibrator consisting of a thin strip of stiff material that vibrates to produce a tone when air streams over it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «رييد»"
   },
   "mouthpiece": {
     "definition": "A part that goes over or into the mouth of a person.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «مووثبييكي»"
   },
   "key": {
     "definition": "(basketball) a space (including the foul line) in front of the basket at each end of a basketball court.",
@@ -70,49 +97,69 @@
   },
   "trombone": {
     "definition": "A brass instrument consisting of a long tube whose length can be varied by a U-shaped slide.",
-    "arabicTranslation": "ترومبون"
+    "arabicTranslation": "ترومبون",
+    "exampleUsage": "The trombone was used during the activity."
   },
   "french-horn": {
     "definition": "A brass instrument has a gradually widening tube wound into a spiral, with valves that alter the notes.",
-    "arabicTranslation": "بوق فرنسي"
+    "arabicTranslation": "بوق فرنسي",
+    "exampleUsage": "The french horn was used during the activity."
   },
-  "tuba": { "definition": "The lowest brass wind instrument.", "arabicTranslation": "توبا" },
+  "tuba": {
+    "definition": "The lowest brass wind instrument.",
+    "arabicTranslation": "توبا",
+    "exampleUsage": "The tuba was used during the activity."
+  },
   "cornet": {
     "definition": "A brass musical instrument with a brilliant tone.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة موسيقية يُسمّى «كورنيت»",
+    "exampleUsage": "The cornet was used during the activity."
   },
-  "bugle": { "arabicTranslation": "" },
+  "bugle": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بوجلي»",
+    "definition": "A simple brass instrument often used to play military calls."
+  },
   "valve": {
     "definition": "A structure in a hollow organ (like the heart) with a flap to insure one-way flow of fluid through it.",
     "arabicTranslation": "صمام"
   },
-  "bell": { "definition": "A device that makes a ringing sound.", "arabicTranslation": "جرس" },
-  "mute": { "arabicTranslation": "" },
+  "bell": {
+    "definition": "A device that makes a ringing sound.",
+    "arabicTranslation": "جرس",
+    "exampleUsage": "The bell was used during the activity."
+  },
+  "mute": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «موتي»",
+    "definition": "To turn off or reduce sound from a microphone or instrument."
+  },
   "slide": {
     "definition": "A smooth surface children slide down for fun.",
     "arabicTranslation": "شريحة مجهرية"
   },
   "drum": {
     "exampleUsage": "The glossary uses the term \"Drum\" in an educational description.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «دروم»",
+    "definition": "A percussion instrument played by striking a stretched surface."
   },
   "snare-drum": {
     "definition": "A shallow drum has tightly stretched heads and wires held against the lower head. Striking it produces a sharp, rattling sound.",
     "exampleUsage": "The glossary uses the term \"Snare Drum\" in an educational description.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سناري دروم»"
   },
   "bass-drum": {
     "definition": "A large percussion instrument with two heads produces a deep, indefinite-pitched sound.",
     "exampleUsage": "The glossary uses the term \"Bass Drum\" in an educational description.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «باسس دروم»"
   },
   "timpani": {
     "definition": "A large hemispherical brass or copper percussion instrument with a drumhead that can be tuned by adjusting the tension on it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «تيمباني»",
+    "exampleUsage": "The timpani was used during the activity."
   },
   "cymbal": {
     "definition": "A percussion instrument consisting of a concave brass disk.",
-    "arabicTranslation": "صنج"
+    "arabicTranslation": "صنج",
+    "exampleUsage": "The cymbal was used during the activity."
   },
   "triangle": {
     "definition": "Something approximating the shape of a triangle.",
@@ -120,7 +167,8 @@
   },
   "xylophone": {
     "definition": "A percussion instrument with wooden bars tuned to produce a chromatic scale and with resonators.",
-    "arabicTranslation": "إكسيليفون"
+    "arabicTranslation": "إكسيليفون",
+    "exampleUsage": "The xylophone was used during the activity."
   },
   "tambourine": {
     "definition": "A shallow drum with a single drumhead and with metallic disks in the sides.",
@@ -128,7 +176,8 @@
   },
   "gong": {
     "definition": "A percussion instrument consisting of a metal plate that is struck with a softheaded drumstick.",
-    "arabicTranslation": "غونغ"
+    "arabicTranslation": "غونغ",
+    "exampleUsage": "The gong was used during the activity."
   },
   "drumstick": {
     "definition": "A stick used for playing a drum.",
@@ -137,7 +186,7 @@
   },
   "concert-hall": {
     "definition": "The professional and social world surrounding formal live music, from venue design and concert planning to audience traditions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كونكيرت هالل»"
   },
   "stage": {
     "definition": "A large platform on which people can stand and can be seen by an audience.",
@@ -145,7 +194,7 @@
   },
   "music-stand": {
     "definition": "A lightweight support keeps pages of written music open and visible while someone plays.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «موسيك ستاند»"
   },
   "conductor-s-podium": {
     "definition": "A small raised platform on which an orchestra conductor stands so musicians can see the conducting gestures.",
@@ -154,19 +203,20 @@
   },
   "baton": {
     "definition": "A thin tapered rod used by a conductor to lead an orchestra or choir.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «باتون»"
   },
   "sheet-music": {
     "definition": "A visual record of a musical work shows performers its notes, rhythms, volume changes, and other instructions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «شييت موسيك»"
   },
   "score": {
     "definition": "A number or letter indicating quality (especially of a student's performance).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سكوري»"
   },
   "tuning-fork": {
     "definition": "A metal tool with two prongs produces a steady pitch when struck and helps musicians tune their instruments.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «تونينج فورك»",
+    "exampleUsage": "The tuning fork was used during the activity."
   },
   "metronome": {
     "definition": "Clicking pendulum indicates the exact tempo of a piece of music.",
@@ -182,9 +232,12 @@
   },
   "concertmaster": {
     "definition": "A principal violinist leads the first violin section, connects the players with the conductor, tunes the orchestra, and coordinates bowing, phrasing, and cues.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كونكيرتماستير»"
   },
-  "soloist": { "definition": "A musician who performs a solo.", "arabicTranslation": "" },
+  "soloist": {
+    "definition": "A musician who performs a solo.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سولويست»"
+  },
   "first-chair": {
     "definition": "The leading player in a section of an orchestra, usually seated closest to the conductor.",
     "exampleUsage": "The first-chair violinist led the section.",
@@ -197,15 +250,15 @@
   },
   "accompanist": {
     "definition": "A person who provides musical accompaniment (usually on a piano).",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «اككومبانيست»"
   },
   "composer": {
     "definition": "A person who composes music, usually as a profession.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «كومبوسير»"
   },
   "arranger": {
     "definition": "A person who brings order and organization to an enterprise.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «اررانجير»"
   },
   "page-turner": {
     "definition": "A person who turns the pages of printed music for a performer whose hands are occupied playing.",
@@ -218,11 +271,11 @@
   },
   "podium": {
     "definition": "A platform raised above the surrounding level to give prominence to the person on it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «بوديوم»"
   },
   "symphony": {
     "definition": "A long and complex sonata for symphony orchestra.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سيمفوني»"
   },
   "rehearsal": {
     "definition": "A practice session in preparation for a public performance (as of a play or speech or concert).",

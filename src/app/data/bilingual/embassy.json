@@ -45,7 +45,10 @@
     "definition": "Any authorization to pass or go somewhere.",
     "arabicTranslation": "جواز سفر"
   },
-  "visa": { "definition": "To provide (a passport) with a visa.", "arabicTranslation": "تأشيرة" },
+  "visa": {
+    "definition": "To provide (a passport) with a visa.",
+    "arabicTranslation": "تأشيرة"
+  },
   "application-form": {
     "definition": "A document with set questions and spaces for people requesting admission, work, services, or financial help.",
     "arabicTranslation": "شكل طلب"
@@ -80,15 +83,18 @@
   },
   "computer": {
     "definition": "A machine for performing calculations automatically.",
-    "arabicTranslation": "حاسوب"
+    "arabicTranslation": "حاسوب",
+    "exampleUsage": "The computer was used during the activity."
   },
   "printer": {
     "definition": "(computer science) an output device that prints the results of data processing.",
-    "arabicTranslation": "طابعة"
+    "arabicTranslation": "طابعة",
+    "exampleUsage": "The printer was used during the activity."
   },
   "telephone": {
     "definition": "A device used to speak with someone who is far away.",
-    "arabicTranslation": "هاتف"
+    "arabicTranslation": "هاتف",
+    "exampleUsage": "The telephone was used during the activity."
   },
   "fax-machine": {
     "definition": "A device that sends and receives copies of documents through a telephone or communications line.",
@@ -97,16 +103,21 @@
   },
   "scanner": {
     "definition": "A device that turns a paper image or document into a digital file.",
-    "arabicTranslation": "ماسح ضوئي"
+    "arabicTranslation": "ماسح ضوئي",
+    "exampleUsage": "The scanner was used during the activity."
   },
   "filing-cabinet": {
     "definition": "A piece of furniture used to store documents in drawers.",
     "arabicTranslation": "خزانة ملفات"
   },
-  "safe": { "definition": "Free from danger or the risk of harm.", "arabicTranslation": "خزنة" },
+  "safe": {
+    "definition": "Free from danger or the risk of harm.",
+    "arabicTranslation": "خزنة"
+  },
   "shredder": {
     "definition": "A device that shreds documents (usually in order to prevent the wrong people from reading them).",
-    "arabicTranslation": "آلة تمزيق الورق"
+    "arabicTranslation": "آلة تمزيق الورق",
+    "exampleUsage": "The shredder was used during the activity."
   },
   "laminator": {
     "definition": "A person who makes laminates (especially plastic laminates).",
@@ -119,11 +130,13 @@
   },
   "metal-detector": {
     "definition": "A device that signals when metal is nearby, helping check food for stray pieces or locate metal buried underground.",
-    "arabicTranslation": "كاشف معدن"
+    "arabicTranslation": "كاشف معدن",
+    "exampleUsage": "The metal detector was used during the activity."
   },
   "x-ray-machine": {
     "definition": "A device that produces X-rays, allowing images of structures inside the body.",
-    "arabicTranslation": "جهاز أشعة سينية"
+    "arabicTranslation": "جهاز أشعة سينية",
+    "exampleUsage": "The x-ray machine was used during the activity."
   },
   "security-guard": {
     "definition": "A person who protects a building and its people.",
@@ -144,7 +157,8 @@
   },
   "alarm-system": {
     "definition": "A device or network of devices that identifies dangers such as break-ins, fires, or equipment problems and then issues a sound, light, or remote alert.",
-    "arabicTranslation": "نظام إنذار"
+    "arabicTranslation": "نظام إنذار",
+    "exampleUsage": "The alarm system was used during the activity."
   },
   "intercom": {
     "definition": "A communication system linking different rooms within a building or ship etc.",
@@ -154,7 +168,10 @@
     "definition": "Laminated glass made with inner layers that absorb the force of bullets and help stop them.",
     "arabicTranslation": "زجاج مضاد للرصاص"
   },
-  "ambassador": { "definition": "A diplomat of the highest rank.", "arabicTranslation": "سفير" },
+  "ambassador": {
+    "definition": "A diplomat of the highest rank.",
+    "arabicTranslation": "سفير"
+  },
   "consul": {
     "definition": "A diplomat appointed by a government to protect its commercial interests and help its citizens in a foreign country.",
     "arabicTranslation": "قنصل"
@@ -202,7 +219,10 @@
     "definition": "A drawing that shows places, routes, and geographical features.",
     "arabicTranslation": "خريطة"
   },
-  "globe": { "definition": "A round model or map of the Earth.", "arabicTranslation": "كرة أرضية" },
+  "globe": {
+    "definition": "A round model or map of the Earth.",
+    "arabicTranslation": "كرة أرضية"
+  },
   "clock-with-time-zones": {
     "definition": "A clock or display that shows the current time in several different regions of the world.",
     "exampleUsage": "The lobby has a clock with time zones for major world capitals.",
@@ -220,7 +240,10 @@
     "definition": "A set of printed pages bound together for reading.",
     "arabicTranslation": "كتاب"
   },
-  "gift": { "arabicTranslation": "هدية" },
+  "gift": {
+    "arabicTranslation": "هدية",
+    "definition": "Something given freely to another person."
+  },
   "certificate": {
     "definition": "To present someone with a certificate.",
     "arabicTranslation": "شهادة"
@@ -281,5 +304,8 @@
     "definition": "An organization of people (or countries) involved in a pact or treaty.",
     "arabicTranslation": "تحالف"
   },
-  "summit": { "definition": "The highest level or degree attainable.", "arabicTranslation": "قمة" }
+  "summit": {
+    "definition": "The highest level or degree attainable.",
+    "arabicTranslation": "قمة"
+  }
 }

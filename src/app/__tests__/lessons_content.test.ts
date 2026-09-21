@@ -25,8 +25,19 @@ describe("Vocabulary descriptions", () => {
     const translated = vocabulary.filter((word) => word.arabicTranslation);
     const examples = vocabulary.filter((word) => word.exampleUsage);
 
-    expect(translated).toHaveLength(7180);
-    expect(examples).toHaveLength(2965);
+    // Full bilingual catalogue imported — 10332 words have Arabic translations
+    // (one intentional exclusion: "1099" has no Arabic equivalent).
+    // Generic "The term X was used in Y lesson." examples have been stripped;
+    // 3464 words have curated example sentences from the approved catalogue.
+    expect(translated).toHaveLength(10332);
+    expect(examples).toHaveLength(3464);
+    expect(
+      vocabulary.filter(
+        (word) =>
+          word.arabicTranslation !== undefined && word.description === PLACEHOLDER_DESCRIPTION
+      ),
+      "Imported bilingual words must have definitions"
+    ).toHaveLength(0);
     translated.forEach((word) => {
       expect(word.arabicTranslation, `${word.topic}/${word.id} has a non-Arabic gloss`).toMatch(
         /[؀-ۿ]/

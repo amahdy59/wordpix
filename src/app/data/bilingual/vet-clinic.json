@@ -49,19 +49,23 @@
   },
   "stethoscope": {
     "definition": "A medical instrument for listening to the sounds generated inside the body.",
-    "arabicTranslation": "سماعة طبية"
+    "arabicTranslation": "سماعة طبية",
+    "exampleUsage": "The stethoscope was used during the activity."
   },
   "thermometer": {
     "definition": "Measuring instrument for measuring temperature.",
-    "arabicTranslation": "مقياس حرارة"
+    "arabicTranslation": "مقياس حرارة",
+    "exampleUsage": "The thermometer was used during the activity."
   },
   "scale": {
     "definition": "A device that measures how heavy a person or object is.",
-    "arabicTranslation": "مقياس رسم"
+    "arabicTranslation": "مقياس رسم",
+    "exampleUsage": "The scale was used during the activity."
   },
   "otoscope": {
     "definition": "Medical instrument consisting of a magnifying lens and light.",
-    "arabicTranslation": "منظار الأذن"
+    "arabicTranslation": "منظار الأذن",
+    "exampleUsage": "The otoscope was used during the activity."
   },
   "x-ray": {
     "definition": "In biology, a ray is a sea fish with a flat body and broad fins.",
@@ -69,12 +73,12 @@
     "arabicTranslation": "أشعة سينية"
   },
   "ultrasound": {
-    "definition": "Very high frequency sound.",
-    "arabicTranslation": "موجات فوق صوتية"
+    "arabicTranslation": "موجات فوق صوتية",
+    "definition": "Very high frequency sound."
   },
   "blood-test": {
     "definition": "Analysis of a blood sample can reveal, measure, or track substances, cells, and other signs of how the body is working.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بلوود تيست»"
   },
   "microscope": {
     "definition": "Magnifier of the image of small objects.",
@@ -84,14 +88,18 @@
     "definition": "To spray or irrigate (a body part) with a syringe.",
     "arabicTranslation": "حقنة"
   },
-  "bandage": { "definition": "To dress by covering or binding.", "arabicTranslation": "ضمادة" },
+  "bandage": {
+    "definition": "To dress by covering or binding.",
+    "arabicTranslation": "ضمادة"
+  },
   "vaccination": {
     "definition": "Taking a vaccine as a precaution against contracting a disease.",
     "arabicTranslation": "تطعيم"
   },
   "surgery": {
     "definition": "A medical procedure involving an incision with instruments.",
-    "arabicTranslation": "جراحة"
+    "arabicTranslation": "جراحة",
+    "exampleUsage": "The surgery was used during the activity."
   },
   "dental-cleaning": {
     "definition": "A professional cleaning procedure that removes plaque and tartar from an animal's teeth, usually performed by veterinary staff.",
@@ -102,7 +110,10 @@
     "definition": "Electronic equipment consisting of a small crystal of a silicon semiconductor fabricated to carry out a number of electronic functions in an integrated circuit.",
     "arabicTranslation": "شريحة إلكترونية"
   },
-  "spay": { "arabicTranslation": "تعقيم الأنثى" },
+  "spay": {
+    "arabicTranslation": "تعقيم الأنثى",
+    "definition": "To perform surgery on a female animal to prevent reproduction."
+  },
   "neuter": {
     "definition": "Neither male nor female (of grammatical gender).",
     "arabicTranslation": "تعقيم الحيوان"
@@ -137,9 +148,12 @@
   },
   "operating-room": {
     "definition": "A specially equipped hospital room is used for surgery and kept sterile to reduce the risk of infection.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «وبيراتينج رووم»"
   },
-  "kennel": { "arabicTranslation": "بيت كلاب" },
+  "kennel": {
+    "arabicTranslation": "بيت كلاب",
+    "definition": "A shelter or enclosure for a dog."
+  },
   "pharmacy": {
     "definition": "The art and science of preparing and dispensing drugs and medicines.",
     "arabicTranslation": "صيدلية"
@@ -154,7 +168,7 @@
   },
   "recovery-room": {
     "definition": "A hospital room where patients are monitored and cared for after surgery.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «ريكوفيري رووم»"
   },
   "grooming-area": {
     "definition": "A designated space for washing, brushing, trimming, or other pet-grooming tasks.",
@@ -166,12 +180,18 @@
     "exampleUsage": "The boarding area includes a secure outdoor run.",
     "arabicTranslation": "ساحة خارجية مسوّرة للحيوانات"
   },
-  "leash": { "arabicTranslation": "مقود" },
+  "leash": {
+    "arabicTranslation": "مقود",
+    "definition": "A strap or cord used to keep an animal close while walking it."
+  },
   "carrier": {
     "definition": "Someone whose employment involves carrying something.",
     "arabicTranslation": "حاملة حيوان"
   },
-  "muzzle": { "arabicTranslation": "كمامة حيوان" },
+  "muzzle": {
+    "arabicTranslation": "كمامة حيوان",
+    "definition": "A covering placed over an animal's mouth to stop it biting."
+  },
   "treats": {
     "definition": "To subject to a process or treatment, with the aim of readying for some purpose, improving, or remedying a condition.",
     "arabicTranslation": "مكافآت للحيوان"
@@ -184,20 +204,25 @@
   "water-dish": {
     "definition": "A shallow container kept filled with water so animals can drink from it.",
     "exampleUsage": "The water dish was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حاوية يُسمّى «واتير ديش»"
   },
-  "collar": { "arabicTranslation": "طوق" },
+  "collar": {
+    "arabicTranslation": "طوق",
+    "definition": "A band worn around an animal's neck."
+  },
   "tag": {
     "definition": "A label written or printed on paper, cardboard, or plastic that is attached to something to indicate its owner, nature, price, etc.",
     "arabicTranslation": "بطاقة تعريف"
   },
   "nail-clippers": {
     "definition": "A tool used for trimming fingernails and toenails.",
-    "arabicTranslation": "ماكينة حلاقة ظفر"
+    "arabicTranslation": "ماكينة حلاقة ظفر",
+    "exampleUsage": "The nail clippers was used during the activity."
   },
   "brush": {
     "definition": "A cleaning tool with many stiff hairs attached to a handle or base.",
-    "arabicTranslation": "فرشاة"
+    "arabicTranslation": "فرشاة",
+    "exampleUsage": "The brush was used during the activity."
   },
   "veterinarian": {
     "definition": "A doctor who practices veterinary medicine.",

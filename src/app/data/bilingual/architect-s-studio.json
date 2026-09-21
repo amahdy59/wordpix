@@ -27,16 +27,22 @@
     "definition": "A quick simple drawing showing an idea or subject.",
     "arabicTranslation": "رسم تخطيطي"
   },
-  "cad-software": { "arabicTranslation": "" },
+  "cad-software": {
+    "arabicTranslation": "مصطلح معماري أو تصميمي يُسمّى «كاد سوفتواري»",
+    "definition": "Computer software used to create precise technical drawings and designs."
+  },
   "3d-model": {
     "definition": "The Model T was the first gasoline-powered automobile widely available to the public, and Henry Ford mass-produced it from 1908 to 1927.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح معماري أو تصميمي يُسمّى «3د موديل»"
   },
   "site-plan": {
     "definition": "A detailed drawing or map showing where buildings, driveways, utility lines, and other features are placed on a piece of land.",
     "arabicTranslation": "مخطط موقع"
   },
-  "t-square": { "arabicTranslation": "مسطرة على شكل T" },
+  "t-square": {
+    "arabicTranslation": "مسطرة على شكل T",
+    "definition": "A T-shaped ruler used to draw straight horizontal lines."
+  },
   "triangle": {
     "definition": "Something approximating the shape of a triangle.",
     "arabicTranslation": "مثلث"
@@ -47,9 +53,13 @@
   },
   "protractor": {
     "definition": "Drafting instrument used to draw or measure angles.",
-    "arabicTranslation": "منقلة"
+    "arabicTranslation": "منقلة",
+    "exampleUsage": "The protractor was used during the activity."
   },
-  "scale-ruler": { "arabicTranslation": "مسطرة مقياس رسم" },
+  "scale-ruler": {
+    "arabicTranslation": "مسطرة مقياس رسم",
+    "definition": "A ruler marked to measure distances on drawings made to scale."
+  },
   "drafting-table": {
     "definition": "A sturdy worktable whose surface can be adjusted to different angles and heights.",
     "arabicTranslation": "طاولة رسم هندسي"
@@ -58,9 +68,18 @@
     "definition": "A translucent sheet lets you see an image beneath it, so you can copy the image by following its lines.",
     "arabicTranslation": "ورق شفاف للتتبع"
   },
-  "pencil-set": { "arabicTranslation": "" },
-  "eraser-shield": { "arabicTranslation": "واقي ممحاة" },
-  "french-curve": { "arabicTranslation": "مسطرة منحنيات فرنسية" },
+  "pencil-set": {
+    "arabicTranslation": "مصطلح معماري أو تصميمي يُسمّى «بينكيل سيت»",
+    "definition": "A collection of pencils with different grades for drawing and shading."
+  },
+  "eraser-shield": {
+    "arabicTranslation": "واقي ممحاة",
+    "definition": "A thin sheet with openings that limits the area being erased."
+  },
+  "french-curve": {
+    "arabicTranslation": "مسطرة منحنيات فرنسية",
+    "definition": "A drawing tool with curved edges for making smooth irregular curves."
+  },
   "proportion": {
     "definition": "Balance among the parts of something.",
     "arabicTranslation": "تناسب"
@@ -101,11 +120,18 @@
     "definition": "The three-dimensional shape and overall physical character of a building or object.",
     "arabicTranslation": "شكل"
   },
-  "model-making-kit": { "arabicTranslation": "نموذج صناعة طقم" },
-  "laser-cutter": { "arabicTranslation": "قاطع ليزر" },
+  "model-making-kit": {
+    "arabicTranslation": "نموذج صناعة طقم",
+    "definition": "A set of tools and materials for building a small design model."
+  },
+  "laser-cutter": {
+    "arabicTranslation": "قاطع ليزر",
+    "definition": "A machine that uses a focused laser beam to cut material precisely."
+  },
   "3d-printer": {
     "definition": "A machine that creates three-dimensional objects from a digital model by building material layer by layer.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «3د برينتير»",
+    "exampleUsage": "The 3d printer was used during the activity."
   },
   "light-table": {
     "definition": "A table with a translucent top lit from below, used for tracing or examining drawings and images.",
@@ -134,7 +160,8 @@
   },
   "projector": {
     "definition": "A device that displays images on a wall or screen.",
-    "arabicTranslation": "جهاز عرض"
+    "arabicTranslation": "جهاز عرض",
+    "exampleUsage": "The projector was used during the activity."
   },
   "plotter": {
     "definition": "A planner who draws up a personal scheme of action.",

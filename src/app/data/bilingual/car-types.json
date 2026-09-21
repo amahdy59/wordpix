@@ -3,10 +3,13 @@
     "definition": "A car that is closed and that has front and rear seats and two or four doors.",
     "arabicTranslation": "سيارة سيدان"
   },
-  "hatchback": { "definition": "A car having a hatchback door.", "arabicTranslation": "" },
+  "hatchback": {
+    "definition": "A car having a hatchback door.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هاتتشباك»"
+  },
   "coupe": {
     "definition": "A car with two doors and front seats and a luggage compartment.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «كووبي»"
   },
   "convertible": {
     "definition": "Designed to be changed from one use or form to another.",
@@ -14,28 +17,32 @@
   },
   "station-wagon": {
     "definition": "A car with an extended body, a rear hatch, and a cargo area behind the back seat.",
-    "arabicTranslation": ""
+    "arabicTranslation": "منطقة يُسمّى «ستاتيون واجون»"
   },
   "crossover": {
     "definition": "The appropriation of a new style (especially in popular music) by combining elements of different genres in order to appeal to a wider audience.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أسلوب أو طراز يُسمّى «كروسسوفير»"
   },
   "suv": {
     "definition": "A high-performance four-wheel drive car built on a truck chassis.",
     "arabicTranslation": "سيارة رياضية متعددة الاستخدامات"
   },
-  "minivan": { "definition": "A small box-shaped passenger van.", "arabicTranslation": "" },
+  "minivan": {
+    "definition": "A small box-shaped passenger van.",
+    "arabicTranslation": "شكل يُسمّى «مينيفان»"
+  },
   "sports-car": {
     "definition": "Applied to non-automotive things, it suggests exceptional speed, strong performance, or an aggressive style associated with sports cars.",
     "arabicTranslation": "سيارة رياضي"
   },
   "luxury-car": {
     "definition": "A high-end automobile combines exceptional comfort, modern technology, premium materials, and strong performance, usually under a prestigious brand and at a substantial price.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «لوكسوري كار»"
   },
   "pickup-truck": {
     "definition": "A light-duty vehicle has a passenger cab separated from an uncovered cargo bed. It is used to carry goods, tools, and equipment.",
-    "arabicTranslation": "شاحنة استلام"
+    "arabicTranslation": "شاحنة استلام",
+    "exampleUsage": "The pickup truck was used during the activity."
   },
   "van": {
     "definition": "(Great Britain) a closed railroad car that carries baggage or freight.",
@@ -52,15 +59,15 @@
   },
   "tow-truck": {
     "definition": "A specialized vehicle uses a winch, hook, boom, or wheel lift to move cars that are broken, damaged, or parked illegally.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «توو تروك»"
   },
   "dump-truck": {
     "definition": "A truck with a container that carries and unloads loose materials.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حاوية يُسمّى «دومب تروك»"
   },
   "flatbed": {
     "definition": "Freight car without permanent sides or roof.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فلاتبيد»"
   },
   "tanker": {
     "definition": "A motor vehicle designed to carry liquefied loads, dry bulk cargo or gases on roads.",
@@ -77,9 +84,12 @@
   },
   "electric-car": {
     "definition": "A road vehicle driven wholly or mainly by electric motors that draw power from rechargeable batteries, rather than burning fossil fuels in an engine.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «يليكتريك كار»"
   },
-  "hybrid": { "definition": "A composite of mixed origin.", "arabicTranslation": "" },
+  "hybrid": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هيبريد»",
+    "definition": "A composite of mixed origin."
+  },
   "muscle-car": {
     "definition": "A high-performance car, especially an American model, traditionally known for a powerful engine and strong straight-line acceleration.",
     "exampleUsage": "The museum displayed a classic muscle car.",
@@ -92,43 +102,52 @@
   },
   "race-car": {
     "definition": "A high-speed car designed to compete against others on a racecourse.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «راكي كار»"
   },
   "off-road-vehicle": {
     "definition": "A vehicle designed to travel on rough surfaces away from ordinary paved roads.",
     "exampleUsage": "The off-road vehicle was shown on a closed demonstration course.",
     "arabicTranslation": "مركبة للطرق الوعرة"
   },
-  "limousine": { "arabicTranslation": "" },
+  "limousine": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليمووسيني»",
+    "definition": "A long luxury car, often driven by a hired driver."
+  },
   "hearse": {
     "definition": "A vehicle for carrying a coffin to a church or a cemetery.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «هيارسي»"
   },
   "armored-car": {
     "definition": "A heavily protected truck carries cash or other valuable goods behind reinforced doors and secure locks.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ارموريد كار»"
   },
   "golf-cart": {
     "definition": "A small motorized vehicle transports golfers around a course as they play.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «جولف كارت»"
   },
   "motorcycle": {
     "definition": "A motor vehicle with two wheels and a strong frame.",
     "arabicTranslation": "دراجة نارية"
   },
-  "scooter": { "definition": "A motorboat resembling a motor scooter.", "arabicTranslation": "" },
+  "scooter": {
+    "definition": "A motorboat resembling a motor scooter.",
+    "arabicTranslation": "قارب يُسمّى «سكووتير»"
+  },
   "moped": {
     "definition": "A motorbike that can be pedaled or driven by a low-powered gasoline engine.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «موبيد»"
   },
   "dirt-bike": {
     "definition": "A motorcycle built for riding off roads across rough, uneven ground.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديرت بيكي»"
   },
-  "chopper": { "definition": "A grounder that bounces high in the air.", "arabicTranslation": "" },
+  "chopper": {
+    "definition": "A grounder that bounces high in the air.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تشوببير»"
+  },
   "cruiser": {
     "definition": "A car in which policemen cruise the streets.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شجرة يُسمّى «كرويسير»"
   },
   "sport-bike": {
     "definition": "A motorcycle designed for responsive handling and performance, with a forward-leaning riding position.",
@@ -147,6 +166,6 @@
   },
   "vespa": {
     "definition": "Type genus of the Vespidae: various hornets and yellow jackets.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فيسبا»"
   }
 }

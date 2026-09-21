@@ -8,7 +8,10 @@
     "definition": "A piece of furniture used to store documents in drawers.",
     "arabicTranslation": "خزانة ملفات"
   },
-  "cubicle": { "definition": "Small room in which a monk or nun lives.", "arabicTranslation": "" },
+  "cubicle": {
+    "definition": "Small room in which a monk or nun lives.",
+    "arabicTranslation": "غرفة يُسمّى «كوبيكلي»"
+  },
   "standing-desk": {
     "definition": "A desk high enough to be used while standing, sometimes adjustable between sitting and standing heights.",
     "exampleUsage": "The standing desk can be lowered for seated work.",
@@ -24,43 +27,51 @@
   },
   "bulletin-board": {
     "definition": "A board where notices and student work are displayed.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بولليتين بوارد»"
   },
   "partition": {
     "definition": "(computer science) the part of a hard disk that is dedicated to a particular operating system or application and accessed as a single unit.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نظام يُسمّى «بارتيتيون»"
   },
   "computer": {
     "definition": "A machine for performing calculations automatically.",
-    "arabicTranslation": "حاسوب"
+    "arabicTranslation": "حاسوب",
+    "exampleUsage": "The computer was used during the activity."
   },
   "monitor": {
     "definition": "Display produced by a device that takes signals and displays them on a television screen or a computer monitor.",
-    "arabicTranslation": "شاشة مراقبة"
+    "arabicTranslation": "شاشة مراقبة",
+    "exampleUsage": "The monitor was used during the activity."
   },
   "keyboard": {
     "definition": "Device consisting of a set of keys on a piano or organ or typewriter or typesetting machine or computer or the like.",
-    "arabicTranslation": "لوحة مفاتيح"
+    "arabicTranslation": "لوحة مفاتيح",
+    "exampleUsage": "The keyboard was used during the activity."
   },
   "mouse": {
     "definition": "A hand-operated electronic device that controls the coordinates of a cursor on your computer screen as you move it around on a pad.",
-    "arabicTranslation": "فأرة حاسوب"
+    "arabicTranslation": "فأرة حاسوب",
+    "exampleUsage": "The mouse was used during the activity."
   },
   "printer": {
     "definition": "(computer science) an output device that prints the results of data processing.",
-    "arabicTranslation": "طابعة"
+    "arabicTranslation": "طابعة",
+    "exampleUsage": "The printer was used during the activity."
   },
   "scanner": {
     "definition": "A device that turns a paper image or document into a digital file.",
-    "arabicTranslation": "ماسح ضوئي"
+    "arabicTranslation": "ماسح ضوئي",
+    "exampleUsage": "The scanner was used during the activity."
   },
   "projector": {
     "definition": "A device that displays images on a wall or screen.",
-    "arabicTranslation": "جهاز عرض"
+    "arabicTranslation": "جهاز عرض",
+    "exampleUsage": "The projector was used during the activity."
   },
   "shredder": {
     "definition": "A device that shreds documents (usually in order to prevent the wrong people from reading them).",
-    "arabicTranslation": "آلة تمزيق الورق"
+    "arabicTranslation": "آلة تمزيق الورق",
+    "exampleUsage": "The shredder was used during the activity."
   },
   "fax-machine": {
     "definition": "A device that sends and receives copies of documents through a telephone or communications line.",
@@ -69,23 +80,24 @@
   },
   "copier": {
     "definition": "Apparatus that makes copies of typed, written or drawn material.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «كوبيير»"
   },
   "headset": {
     "definition": "Headphones with a microphone for listening and speaking.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هيادسيت»"
   },
   "webcam": {
     "definition": "A small camera that sends live video to a computer.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ويبكام»"
   },
   "router": {
     "definition": "(computer science) a device that forwards data packets between computer networks.",
-    "arabicTranslation": "موجّه"
+    "arabicTranslation": "موجّه",
+    "exampleUsage": "The router was used during the activity."
   },
   "server": {
     "definition": "A computer that provides data or services to other computers.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سيرفير»"
   },
   "usb-drive": {
     "definition": "A small portable digital storage device that connects through a USB port.",
@@ -94,11 +106,13 @@
   },
   "external-hard-drive": {
     "definition": "A separate storage device for keeping large amounts of data.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «يكستيرنال هارد دريفي»",
+    "exampleUsage": "The external hard drive was used during the activity."
   },
   "docking-station": {
     "definition": "A device that connects a laptop to several accessories at once.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «دوكينج ستاتيون»",
+    "exampleUsage": "The docking station was used during the activity."
   },
   "phone-system": {
     "definition": "A modern phone system uses internet technology to connect callers and control how calls are handled.",
@@ -106,7 +120,8 @@
   },
   "video-conferencing": {
     "definition": "Live sound and video connect people in separate places through networked devices with cameras and microphones.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «فيديو كونفيرينكينج»",
+    "exampleUsage": "The video conferencing was used during the activity."
   },
   "reception": {
     "definition": "The manner in which something is greeted.",
@@ -150,11 +165,11 @@
   },
   "dress-code": {
     "definition": "An official rule sets out the clothing permitted in a particular environment, such as a school or workplace.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «دريسس كودي»"
   },
   "happy-hour": {
     "definition": "A period when a bar offers alcoholic drinks for less than usual.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مشروب يُسمّى «هاببي هوور»"
   },
   "team-building": {
     "definition": "Activities intended to improve communication, cooperation, and working relationships within a team.",
@@ -163,7 +178,7 @@
   },
   "performance-review": {
     "definition": "A formal assessment of a worker’s job during a defined period, usually led by a manager to help improve their work.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عامل يُسمّى «بيرفورمانكي ريفييو»"
   },
   "onboarding": {
     "definition": "The process of introducing and integrating a new employee into an organization, role, and workplace systems.",
@@ -187,7 +202,8 @@
   },
   "water-cooler": {
     "definition": "A machine that cools water and provides it for people to drink.",
-    "arabicTranslation": "صندوق تبريد ماء"
+    "arabicTranslation": "صندوق تبريد ماء",
+    "exampleUsage": "The water cooler was used during the activity."
   },
   "office-party": {
     "definition": "A social gathering organized for employees at or by a workplace.",

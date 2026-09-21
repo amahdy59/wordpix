@@ -7,20 +7,29 @@
     "definition": "The part of the skull that encloses the brain.",
     "arabicTranslation": "قحف"
   },
-  "jaw-bone": { "arabicTranslation": "" },
+  "jaw-bone": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «جاو بوني»",
+    "definition": "The bone that forms the lower or upper part of the mouth."
+  },
   "cheekbone": {
     "definition": "The arch of bone beneath the eye that forms the prominence of the cheek.",
     "arabicTranslation": "عظم الوجنة"
   },
-  "eye-socket": { "arabicTranslation": "محجر العين" },
+  "eye-socket": {
+    "arabicTranslation": "محجر العين",
+    "definition": "The bony hollow in the skull that holds an eye."
+  },
   "nasal-bone": {
     "definition": "This elongated, rectangular bone provides the nose’s bony bridge.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «ناسال بوني»"
   },
-  "temple-bone": { "arabicTranslation": "" },
+  "temple-bone": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «تيمبلي بوني»",
+    "definition": "A bone at the side and base of the skull near the ear."
+  },
   "foramen-magnum": {
     "definition": "A large opening in the skull’s base allows the spinal cord to continue into the brain.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «فورامين ماجنوم»"
   },
   "mandible": {
     "definition": "The jaw in vertebrates that is hinged to open the mouth.",
@@ -38,9 +47,18 @@
     "definition": "One of the bony segments of the spinal column.",
     "arabicTranslation": "فقرة"
   },
-  "cervical-spine": { "arabicTranslation": "" },
-  "thoracic-spine": { "arabicTranslation": "" },
-  "lumbar-spine": { "arabicTranslation": "" },
+  "cervical-spine": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كيرفيكال سبيني»",
+    "definition": "The part of the backbone located in the neck."
+  },
+  "thoracic-spine": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ثوراكيك سبيني»",
+    "definition": "The part of the backbone located behind the chest."
+  },
+  "lumbar-spine": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «لومبار سبيني»",
+    "definition": "The lower back portion of the backbone."
+  },
   "sacrum": {
     "definition": "Wedge-shaped bone consisting of five fused vertebrae forming the posterior part of the pelvis.",
     "exampleUsage": "The glossary uses the term \"Sacrum\" in an educational description.",
@@ -58,7 +76,10 @@
     "definition": "The flat bone that articulates with the clavicles and the first seven pairs of ribs.",
     "arabicTranslation": "عظم القص"
   },
-  "ribcage": { "arabicTranslation": "القفص الصدري" },
+  "ribcage": {
+    "arabicTranslation": "القفص الصدري",
+    "definition": "The ribs and breastbone that protect the heart and lungs."
+  },
   "clavicle": {
     "definition": "Bone linking the scapula and sternum.",
     "arabicTranslation": "ترقوة"
@@ -93,11 +114,11 @@
   },
   "shoulder-joint": {
     "definition": "A ball-and-socket joint connects the rounded head of the upper-arm bone to a hollow in the shoulder blade.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «شوولدير جوينت»"
   },
   "elbow-joint": {
     "definition": "A synovial hinge joint, lubricated to allow smooth movement, connects the upper arm with the forearm. It joins the humerus to the ulna and radius, letting the arm bend and straighten.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «يلبوو جوينت»"
   },
   "pelvis": {
     "definition": "The structure of the vertebrate skeleton supporting the lower limbs in humans and the hind limbs or corresponding parts in other vertebrates.",
@@ -127,20 +148,26 @@
     "definition": "Of or relating to the metatarsus.",
     "arabicTranslation": "عظام مشط القدم"
   },
-  "toe-bones": { "arabicTranslation": "" },
+  "toe-bones": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «توي بونيس»",
+    "definition": "The small bones that form the toes of the foot."
+  },
   "hip-joint": {
     "definition": "A rounded end of the thigh bone fits into a hollow in the pelvis, forming a joint that supports body weight as the leg moves.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «هيب جوينت»"
   },
   "knee-joint": {
     "definition": "This joint connects the femur, or thighbone, with the tibia, or shinbone. The patella, commonly called the kneecap, lies at its front. Together, these structures allow the lower leg to bend, straighten, and rotate slightly.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «كنيي جوينت»"
   },
   "joint": {
     "definition": "(anatomy) the point of connection between two bones or elements of a skeleton (especially if it allows motion).",
     "arabicTranslation": "مفصل"
   },
-  "cartilage": { "arabicTranslation": "غضروف" },
+  "cartilage": {
+    "arabicTranslation": "غضروف",
+    "definition": "Flexible tissue that cushions joints and supports body parts."
+  },
   "ligament": {
     "definition": "A sheet or band of tough fibrous tissue connecting bones or cartilages or supporting muscles or organs.",
     "arabicTranslation": "رباط"
@@ -151,7 +178,7 @@
   },
   "bone-marrow": {
     "definition": "Soft, blood-rich tissue inside bones makes blood cells and stores fat, especially in their spongy inner spaces.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «بوني مارروو»"
   },
   "periosteum": {
     "definition": "A dense fibrous membrane covering the surface of bones (except at their extremities) and serving as an attachment for tendons and muscles.",
@@ -159,7 +186,7 @@
   },
   "synovial-fluid": {
     "definition": "A thick, slippery fluid made by the lining of joints and tendon sheaths helps them move smoothly.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «سينوفيال فلويد»"
   },
   "disc": {
     "definition": "Something with a round shape resembling a flat circular plate.",
@@ -169,20 +196,26 @@
     "definition": "(anatomy) a disk of cartilage that serves as a cushion between the ends of bones that meet at a joint.",
     "arabicTranslation": "غضروف هلالي"
   },
-  "bursa": { "definition": "A city in northwestern Turkey.", "arabicTranslation": "جراب زلالي" },
+  "bursa": {
+    "definition": "A city in northwestern Turkey.",
+    "arabicTranslation": "جراب زلالي"
+  },
   "calcium": {
     "definition": "A white metallic element that burns with a brilliant light.",
     "arabicTranslation": "كالسيوم"
   },
   "vitamin-d": {
     "definition": "Once treated as a single vitamin, B vitamin now refers to a group of several distinct vitamins.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «فيتامين د»"
   },
   "osteoporosis": {
     "definition": "Abnormal loss of bony tissue resulting in fragile porous bones attributable to a lack of calcium.",
     "arabicTranslation": "هشاشة العظام"
   },
-  "fracture": { "arabicTranslation": "كسر" },
+  "fracture": {
+    "arabicTranslation": "كسر",
+    "definition": "A break or crack in a bone."
+  },
   "x-ray": {
     "definition": "High-energy electromagnetic radiation, carried in extremely short waves, can pass through many materials for medical imaging, security screening, and scientific analysis.",
     "arabicTranslation": "أشعة سينية"
@@ -191,11 +224,20 @@
     "definition": "The distinctive form in which a thing is made.",
     "arabicTranslation": "جبيرة جبسية"
   },
-  "splint": { "arabicTranslation": "جبيرة" },
+  "splint": {
+    "arabicTranslation": "جبيرة",
+    "definition": "A firm support used to keep an injured body part still."
+  },
   "bone-density": {
     "definition": "The mineral matter packed into bone indicates how compact it is and how well it can resist breaking.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «بوني دينسيتي»"
   },
-  "growth-plate": { "arabicTranslation": "" },
-  "skeleton-model": { "arabicTranslation": "نموذج هيكل عظمي" }
+  "growth-plate": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «جرووث بلاتي»",
+    "definition": "An area of developing tissue near the ends of a child's long bones."
+  },
+  "skeleton-model": {
+    "arabicTranslation": "نموذج هيكل عظمي",
+    "definition": "A physical model showing the bones of a body."
+  }
 }

@@ -1,20 +1,23 @@
 {
   "cobra": {
     "definition": "Venomous Asiatic and African elapid snakes that can expand the skin of the neck into a hood.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «كوبرا»"
   },
   "python": {
     "definition": "(Greek mythology) dragon killed by Apollo at Delphi.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «بيثون»"
   },
   "rattlesnake": {
     "definition": "Pit viper with horny segments at the end of the tail that rattle when shaken.",
     "arabicTranslation": "أفعى جرسية"
   },
-  "boa": { "definition": "A long thin fluffy scarf of feathers or fur.", "arabicTranslation": "" },
+  "boa": {
+    "definition": "A long thin fluffy scarf of feathers or fur.",
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «بوا»"
+  },
   "viper": {
     "definition": "Venomous Old World snakes characterized by hollow venom-conducting fangs in the upper jaw.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «فيبير»"
   },
   "corn-snake": {
     "definition": "A nonvenomous North American snake with orange, reddish, or brown blotched coloring, commonly kept in zoological collections and as a pet.",
@@ -32,7 +35,7 @@
   },
   "mamba": {
     "definition": "Arboreal snake of central and southern Africa whose bite is often fatal.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «مامبا»"
   },
   "garter-snake": {
     "definition": "A generally small, slender North American snake of the genus Thamnophis, often marked with lengthwise stripes.",
@@ -42,7 +45,7 @@
   "gecko": {
     "definition": "Any of various small chiefly tropical and usually nocturnal insectivorous terrestrial lizards typically with immovable eyelids.",
     "exampleUsage": "The gecko was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حشرة يُسمّى «جيكو»"
   },
   "iguana": {
     "definition": "Large herbivorous tropical American arboreal lizards with a spiny crest along the back.",
@@ -52,10 +55,13 @@
     "definition": "Lizard of Africa and Madagascar able to change skin color and having a projectile tongue.",
     "arabicTranslation": "حرباء"
   },
-  "monitor": { "arabicTranslation": "شاشة مراقبة" },
+  "monitor": {
+    "arabicTranslation": "شاشة مراقبة",
+    "definition": "A large lizard with a long neck, strong limbs, and a long tail."
+  },
   "skink": {
     "definition": "Alert agile lizard with reduced limbs and an elongated body covered with shiny scales.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «سكينك»"
   },
   "bearded-dragon": {
     "definition": "An Australian lizard with spiny scales around the throat that can form a beard-like display.",
@@ -65,7 +71,7 @@
   "anole": {
     "definition": "Small arboreal tropical American insectivorous lizards with the ability to change skin color.",
     "exampleUsage": "The anole was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حشرة يُسمّى «انولي»"
   },
   "komodo-dragon": {
     "definition": "The world's largest living lizard, native to several Indonesian islands.",
@@ -74,7 +80,7 @@
   },
   "basilisk": {
     "definition": "(classical mythology) a serpent (or lizard or dragon) able to kill with its breath or glance.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «باسيليسك»"
   },
   "horned-lizard": {
     "definition": "A broad-bodied lizard, mainly from North and Central America, with pointed scales or horns around the head.",
@@ -92,7 +98,7 @@
   },
   "sea-turtle": {
     "definition": "Large turtles that spend most of their lives in tropical or subtropical oceans come ashore mainly to lay eggs on sandy beaches.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «سيا تورتلي»"
   },
   "snapping-turtle": {
     "definition": "A large freshwater turtle with powerful jaws and a long tail, known for defensive snapping when threatened.",
@@ -102,20 +108,20 @@
   "crocodile": {
     "definition": "Large voracious aquatic reptile having a long snout with massive jaws and sharp teeth and a body covered with bony plates.",
     "exampleUsage": "The crocodile was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "زاحف يُسمّى «كروكوديلي»"
   },
   "alligator": {
     "definition": "To crack and acquire the appearance of alligator hide, as from weathering or improper application.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «الليجاتور»"
   },
   "caiman": {
     "definition": "A semiaquatic reptile of Central and South America that resembles an alligator but has a more heavily armored belly.",
     "exampleUsage": "The caiman was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "زاحف يُسمّى «كايمان»"
   },
   "terrapin": {
     "definition": "Any of various edible North American web-footed turtles living in fresh or brackish water.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «تيررابين»"
   },
   "softshell": {
     "definition": "A freshwater turtle with a flattened body and a flexible leathery shell rather than a hard scaly shell.",
@@ -129,20 +135,30 @@
   },
   "scale": {
     "definition": "A device that measures how heavy a person or object is.",
-    "arabicTranslation": "مقياس رسم"
+    "arabicTranslation": "مقياس رسم",
+    "exampleUsage": "The scale was used during the activity."
   },
-  "shell": { "definition": "A rigid covering that envelops an object.", "arabicTranslation": "" },
+  "shell": {
+    "definition": "A rigid covering that envelops an object.",
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «شيلل»"
+  },
   "fang": {
     "definition": "An appendage of insects that is capable of injecting venom.",
     "exampleUsage": "The fang was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حشرة يُسمّى «فانج»"
   },
-  "tongue": { "arabicTranslation": "لسان" },
-  "tail": { "definition": "The time of the last part of something.", "arabicTranslation": "" },
+  "tongue": {
+    "arabicTranslation": "لسان",
+    "definition": "The muscular part of the mouth used for tasting, speaking, and swallowing."
+  },
+  "tail": {
+    "definition": "The time of the last part of something.",
+    "arabicTranslation": "جزء يُسمّى «تايل»"
+  },
   "claw": {
     "definition": "Sharp curved horny process on the toe of a bird or some mammals or reptiles.",
     "exampleUsage": "The claw was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طائر يُسمّى «كلاو»"
   },
   "eye": {
     "definition": "Good discernment (either visually or as if visually).",
@@ -157,9 +173,9 @@
     "arabicTranslation": "جلد"
   },
   "venom": {
-    "definition": "Toxin secreted by animals.",
     "exampleUsage": "The venom was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «فينوم»",
+    "definition": "Toxin secreted by animals."
   },
   "terrarium": {
     "definition": "A vivarium in which selected living plants are kept and observed.",
@@ -172,11 +188,11 @@
   "water-dish": {
     "definition": "A shallow container kept filled with water so animals can drink from it.",
     "exampleUsage": "The water dish was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حاوية يُسمّى «واتير ديش»"
   },
   "branch": {
     "definition": "A woody part that grows from a tree trunk or large branch.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شجرة يُسمّى «برانتش»"
   },
   "rock": {
     "definition": "A hard natural material found on the ground.",
@@ -193,40 +209,55 @@
   "hide": {
     "definition": "The dressed skin of an animal (especially a large animal).",
     "exampleUsage": "The hide was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «هيدي»"
   },
   "log": {
     "definition": "A written record of messages sent or received.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «لوج»"
   },
   "misting-system": {
     "definition": "An engineered setup that sprays tiny water droplets to control heat, moisture, or airborne particles in enclosed settings.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «ميستينج سيستيم»"
   },
   "shed": {
     "definition": "A small farm building used for storage or animals.",
     "exampleUsage": "The shed was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مبنى يُسمّى «شيد»"
   },
-  "bask": { "definition": "To derive or receive pleasure from.", "arabicTranslation": "" },
+  "bask": {
+    "definition": "To derive or receive pleasure from.",
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «باسك»"
+  },
   "hunt": {
     "definition": "An association of huntsmen who hunt for sport.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «هونت»"
   },
-  "swim": { "arabicTranslation": "" },
-  "burrow": { "definition": "To move through by or as by digging.", "arabicTranslation": "" },
-  "climb": { "definition": "The act of climbing something.", "arabicTranslation": "" },
+  "swim": {
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «سويم»",
+    "definition": "To move through water using the arms, legs, or body."
+  },
+  "burrow": {
+    "definition": "To move through by or as by digging.",
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «بورروو»"
+  },
+  "climb": {
+    "definition": "The act of climbing something.",
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «كليمب»"
+  },
   "camouflage": {
     "definition": "An outward semblance that misrepresents the true nature of something.",
     "arabicTranslation": "تمويه"
   },
-  "hiss": { "definition": "To express or utter with a hiss.", "arabicTranslation": "" },
+  "hiss": {
+    "definition": "To express or utter with a hiss.",
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «هيسس»"
+  },
   "strike": {
     "definition": "A group's refusal to work in protest against low pay or bad work conditions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «ستريكي»"
   },
   "coil": {
     "definition": "A structure consisting of something wound in a continuous series of loops.",
-    "arabicTranslation": ""
+    "arabicTranslation": "هيكل يُسمّى «كويل»"
   }
 }

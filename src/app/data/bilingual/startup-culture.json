@@ -5,23 +5,23 @@
   },
   "founder": {
     "definition": "To break down, literally or metaphorically.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فووندير»"
   },
   "co-founder": {
     "definition": "A person who starts an organization, company, or institution together with others. Co-founders share the work of creating it and often retain major ownership or leadership roles.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «كو-فووندير»"
   },
   "ceo": {
     "definition": "The corporate executive responsible for the operations of the firm.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كيو»"
   },
   "cto": {
     "definition": "A senior executive sets an organization’s technology direction, system design, and approach to developing new ideas; the title is usually shortened to CTO, meaning chief technology officer.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «كتو»"
   },
   "mvp": {
     "definition": "The player judged to be the most important to the sport.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مفب»"
   },
   "pitch-deck": {
     "definition": "A short presentation that explains a business, product, problem, solution, market, and plan to an audience such as investors or partners.",
@@ -34,9 +34,12 @@
   },
   "mission-statement": {
     "definition": "A concise formal statement explains an organization’s purpose, values, and main goals. It helps members make decisions and shows stakeholders what the organization intends to achieve.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «ميسسيون ستاتيمينت»"
   },
-  "vision": { "arabicTranslation": "الرؤية" },
+  "vision": {
+    "arabicTranslation": "الرؤية",
+    "definition": "An idea of what an organization hopes to achieve in the future."
+  },
   "seed-round": {
     "definition": "An early stage of startup financing used to support initial development and growth.",
     "exampleUsage": "The case study describes a seed round as early startup funding.",
@@ -44,15 +47,15 @@
   },
   "series-a": {
     "definition": "A set of items arranged in a particular order or appearing one after another.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «سيرييس ا»"
   },
   "angel-investor": {
     "definition": "A private person funds a young company in return for a share of its ownership and may provide advice.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «انجيل ينفيستور»"
   },
   "venture-capital": {
     "definition": "Specialized investors finance young, innovative, rapidly growing, or risky firms that cannot yet borrow from banks or sell shares publicly.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فينتوري كابيتال»"
   },
   "crowdfunding": {
     "definition": "Funding from a large number of small backers.",
@@ -60,14 +63,20 @@
   },
   "bootstrap": {
     "definition": "A strap that is looped and sewn to the top of a boot for pulling it on.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بووتستراب»"
   },
-  "valuation": { "definition": "An appraisal of the value of something.", "arabicTranslation": "" },
+  "valuation": {
+    "definition": "An appraisal of the value of something.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فالواتيون»"
+  },
   "equity": {
     "definition": "The difference between the market value of a property and the claims held against it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يكيتي»"
   },
-  "dilution": { "arabicTranslation": "" },
+  "dilution": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديلوتيون»",
+    "definition": "A decrease in an owner's share when a company issues more shares."
+  },
   "term-sheet": {
     "definition": "A document outlining the main proposed terms of a business investment or financial agreement before final contracts are completed.",
     "exampleUsage": "The founders reviewed the term sheet with qualified legal advisers.",
@@ -75,14 +84,17 @@
   },
   "traction": {
     "definition": "(orthopedics) the act of pulling on a bone or limb (as in a fracture) to relieve pressure or align parts in a special way during healing.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «تراكتيون»"
   },
   "user-acquisition": {
     "definition": "The process of attracting and gaining new users or customers for a product or service.",
     "exampleUsage": "The startup measured the cost of user acquisition.",
     "arabicTranslation": "اكتساب المستخدمين"
   },
-  "retention": { "definition": "The act of retaining something.", "arabicTranslation": "" },
+  "retention": {
+    "definition": "The act of retaining something.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريتينتيون»"
+  },
   "churn-rate": {
     "definition": "The percentage of customers or users who stop using a service during a given period.",
     "exampleUsage": "The team tracks churn rate each month.",
@@ -100,11 +112,12 @@
   },
   "pivot": {
     "definition": "The act of turning on (or as if on) a pivot.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيفوت»"
   },
   "scale": {
     "definition": "A device that measures how heavy a person or object is.",
-    "arabicTranslation": "مقياس رسم"
+    "arabicTranslation": "مقياس رسم",
+    "exampleUsage": "The scale was used during the activity."
   },
   "runway": {
     "definition": "A bar or pair of parallel bars of rolled steel making the railway along which railroad cars or other vehicles can roll.",
@@ -115,18 +128,33 @@
     "exampleUsage": "The financial model tracks the startup's monthly burn rate.",
     "arabicTranslation": "معدل استهلاك النقد"
   },
-  "disrupt": { "arabicTranslation": "" },
-  "iterate": { "definition": "To say, state, or perform again.", "arabicTranslation": "" },
-  "lean": { "arabicTranslation": "" },
-  "agile": { "definition": "Moving quickly and lightly.", "arabicTranslation": "" },
-  "sprint": { "arabicTranslation": "" },
+  "disrupt": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديسروبت»",
+    "definition": "To change an industry by introducing a new way of doing things."
+  },
+  "iterate": {
+    "definition": "To say, state, or perform again.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يتيراتي»"
+  },
+  "lean": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليان»",
+    "definition": "Using limited resources efficiently while testing ideas quickly."
+  },
+  "agile": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اجيلي»",
+    "definition": "Moving quickly and lightly."
+  },
+  "sprint": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سبرينت»",
+    "definition": "A short period of focused work to complete a set of tasks."
+  },
   "standup": {
     "definition": "A brief meeting or status update in which participants remain standing to keep it focused and short.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «ستاندوب»"
   },
   "retrospective": {
     "definition": "Concerned with or related to the past.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريتروسبيكتيفي»"
   },
   "okr": {
     "definition": "Objectives and Key Results, a goal-setting method that pairs a clear objective with measurable results used to track progress.",
@@ -135,10 +163,10 @@
   },
   "north-star": {
     "definition": "A bright star called Polaris lies close to the north celestial pole and has long helped people navigate the Northern Hemisphere.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نورث ستار»"
   },
   "unicorn": {
     "definition": "An imaginary creature represented as a white horse with a long horn growing from its forehead.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ونيكورن»"
   }
 }

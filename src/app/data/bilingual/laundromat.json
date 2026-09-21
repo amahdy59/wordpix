@@ -1,7 +1,7 @@
 {
   "washing-machine": {
     "definition": "An electric appliance that cleans clothes by moving them through water and detergent. It then rinses the clothes and spins them to remove excess water.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «واشينج ماتشيني»"
   },
   "dryer": {
     "definition": "(of liquor) having a low residual sugar content because of decomposition of sugar during fermentation.",
@@ -19,7 +19,8 @@
   },
   "spin-cycle": {
     "definition": "The stage of a washing-machine program when the drum rotates rapidly to extract water from the clothes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «سبين كيكلي»",
+    "exampleUsage": "The spin cycle was used during the activity."
   },
   "rinse": {
     "definition": "The removal of soap with clean water in the final stage of washing.",
@@ -31,19 +32,21 @@
   },
   "tumble-dry": {
     "definition": "Dry laundry by rotating it inside a drum while heated air removes its moisture.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تومبلي دري»"
   },
   "coin-slot": {
     "definition": "An opening in a machine where coins are inserted to start or play a game.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «كوين سلوت»",
+    "exampleUsage": "The coin slot was used during the activity."
   },
   "start-button": {
     "definition": "A physical button that begins a device's operation or starts a process when pressed.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «ستارت بوتتون»",
+    "exampleUsage": "The start button was used during the activity."
   },
   "detergent": {
     "definition": "A surface-active chemical widely used in industry and laundering.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة كيميائية يُسمّى «ديتيرجينت»"
   },
   "fabric-softener": {
     "definition": "A laundry product used during washing or rinsing to make fabrics feel softer and reduce static.",
@@ -69,13 +72,19 @@
     "exampleUsage": "The lint roller removed pet hair from the jacket.",
     "arabicTranslation": "بكرة إزالة الوبر"
   },
-  "clothespin": { "arabicTranslation": "" },
+  "clothespin": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كلوثيسبين»",
+    "definition": "A small clip used to fasten laundry to a drying line."
+  },
   "mesh-bag": {
     "definition": "A bag made from net-like fabric, often used to protect small or delicate laundry items during washing.",
     "exampleUsage": "Delicate socks were placed in a mesh bag.",
     "arabicTranslation": "كيس شبكي للغسيل"
   },
-  "shirt": { "arabicTranslation": "قميص" },
+  "shirt": {
+    "arabicTranslation": "قميص",
+    "definition": "A garment worn on the upper body, usually with sleeves."
+  },
   "pants": {
     "definition": "(used in the plural) underpants worn by women.",
     "arabicTranslation": "بنطال"
@@ -96,26 +105,38 @@
     "definition": "Clothing of a distinctive style or for a particular occasion.",
     "arabicTranslation": "فستان"
   },
-  "jacket": { "arabicTranslation": "سترة" },
+  "jacket": {
+    "arabicTranslation": "سترة",
+    "definition": "A short outer garment worn over other clothes."
+  },
   "jeans": {
     "definition": "A coarse durable twill-weave cotton fabric.",
     "arabicTranslation": "جينز"
   },
-  "sort": { "definition": "An approximate definition or example.", "arabicTranslation": "" },
+  "sort": {
+    "definition": "An approximate definition or example.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سورت»"
+  },
   "load": {
     "definition": "An amount of alcohol sufficient to intoxicate.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لواد»"
   },
   "unload": {
     "definition": "To remove the load from (a container or vehicle).",
-    "arabicTranslation": ""
+    "arabicTranslation": "حاوية يُسمّى «ونلواد»"
   },
   "fold": {
     "definition": "An angular or rounded shape made by folding.",
     "arabicTranslation": "يطوي برفق"
   },
-  "iron": { "arabicTranslation": "مكواة" },
-  "hang": { "definition": "A special way of doing something.", "arabicTranslation": "" },
+  "iron": {
+    "arabicTranslation": "مكواة",
+    "definition": "A heated appliance used to smooth wrinkles in clothes."
+  },
+  "hang": {
+    "definition": "A special way of doing something.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هانج»"
+  },
   "stain-treat": {
     "definition": "To apply a suitable cleaning treatment to a stain before or during laundering.",
     "exampleUsage": "She treated the stain according to the garment-care label.",
@@ -126,7 +147,10 @@
     "exampleUsage": "The care instructions recommend a short pre-soak for the muddy uniform.",
     "arabicTranslation": "نقع مسبق"
   },
-  "spin": { "arabicTranslation": "" },
+  "spin": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سبين»",
+    "definition": "To rotate quickly around a central point."
+  },
   "dry": {
     "definition": "(of liquor) having a low residual sugar content because of decomposition of sugar during fermentation.",
     "arabicTranslation": "جاف"
@@ -136,18 +160,28 @@
     "exampleUsage": "Clean clothes were folded on the folding table.",
     "arabicTranslation": "طاولة طي الملابس"
   },
-  "cart": { "definition": "To transport something in a cart.", "arabicTranslation": "عربة" },
-  "bench": { "definition": "The reserve players on a team.", "arabicTranslation": "مقعد" },
+  "cart": {
+    "definition": "To transport something in a cart.",
+    "arabicTranslation": "عربة"
+  },
+  "bench": {
+    "definition": "The reserve players on a team.",
+    "arabicTranslation": "مقعد"
+  },
   "vending-machine": {
     "definition": "A machine that dispenses products after a customer inserts payment.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «فيندينج ماتشيني»",
+    "exampleUsage": "The vending machine was used during the activity."
   },
   "change-machine": {
     "definition": "A machine that exchanges bills or larger coins for smaller coins or tokens.",
     "exampleUsage": "The change machine provided coins for the laundry machines.",
     "arabicTranslation": "آلة صرف العملات"
   },
-  "sign": { "definition": "A board showing rules or information.", "arabicTranslation": "علامة" },
+  "sign": {
+    "definition": "A board showing rules or information.",
+    "arabicTranslation": "علامة"
+  },
   "floor-drain": {
     "definition": "An opening in a floor that allows water or other liquid to flow into a drainage system.",
     "exampleUsage": "The floor drain helps remove spilled water.",
@@ -155,7 +189,7 @@
   },
   "lost-and-found": {
     "definition": "A place where lost objects and people are reported or collected.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «لوست اند فووند»"
   },
   "label": {
     "definition": "A brief description given for purposes of identification.",
@@ -165,7 +199,10 @@
     "definition": "Exquisitely fine and subtle and pleasing.",
     "arabicTranslation": "رقيق"
   },
-  "cotton": { "definition": "Fabric woven from cotton fibers.", "arabicTranslation": "قطن" },
+  "cotton": {
+    "definition": "Fabric woven from cotton fibers.",
+    "arabicTranslation": "قطن"
+  },
   "wool": {
     "definition": "Soft hair from sheep, used to make warm cloth.",
     "arabicTranslation": "صوف"
@@ -202,7 +239,11 @@
   },
   "timer": {
     "definition": "A device that measures or signals the end of baking time.",
-    "arabicTranslation": "مؤقت"
+    "arabicTranslation": "مؤقت",
+    "exampleUsage": "The timer was used during the activity."
   },
-  "basket": { "definition": "The quantity contained in a basket.", "arabicTranslation": "" }
+  "basket": {
+    "definition": "The quantity contained in a basket.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «باسكيت»"
+  }
 }

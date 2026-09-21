@@ -3,8 +3,14 @@
     "definition": "A casual knitted shirt, usually made of cotton, has short or absent sleeves, a round neckline, and no collar, and is worn informally.",
     "arabicTranslation": "قميص تي شيرت"
   },
-  "shirt": { "arabicTranslation": "قميص" },
-  "blouse": { "arabicTranslation": "بلوزة" },
+  "shirt": {
+    "arabicTranslation": "قميص",
+    "definition": "A garment worn on the upper body, usually with sleeves."
+  },
+  "blouse": {
+    "arabicTranslation": "بلوزة",
+    "definition": "A loose shirt-like garment usually worn by women."
+  },
   "sweater": {
     "definition": "A crocheted or knitted garment covering the upper part of the body.",
     "arabicTranslation": "سترة صوفية"
@@ -15,11 +21,11 @@
   },
   "tank-top": {
     "definition": "A close-fitting sleeveless shirt has broad shoulder straps, a low neckline, and no opening down the front. It is often worn over a shirt or blouse.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تانك توب»"
   },
   "polo-shirt": {
     "definition": "A knitted shirt with short sleeves has a soft collar and several buttons below the neck. Polo players originally wore this style, which is now common in casual and semi-formal clothing.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أسلوب أو طراز يُسمّى «بولو شيرت»"
   },
   "cardigan": {
     "definition": "Knitted jacket that is fastened up the front with buttons or a zipper.",
@@ -71,19 +77,37 @@
     "definition": "An island (part of Campania) in the Bay of Naples in southern Italy.",
     "arabicTranslation": "بنطال كابري"
   },
-  "culottes": { "arabicTranslation": "بنطال كولوت واسع" },
-  "jacket": { "arabicTranslation": "سترة" },
-  "coat": { "definition": "A thin layer covering something.", "arabicTranslation": "معطف" },
+  "culottes": {
+    "arabicTranslation": "بنطال كولوت واسع",
+    "definition": "Loose shorts that look like a skirt when worn."
+  },
+  "jacket": {
+    "arabicTranslation": "سترة",
+    "definition": "A short outer garment worn over other clothes."
+  },
+  "coat": {
+    "definition": "A thin layer covering something.",
+    "arabicTranslation": "معطف"
+  },
   "raincoat": {
     "definition": "A waterproof coat worn in rainy weather.",
     "arabicTranslation": "معطف مطر"
   },
-  "windbreaker": { "arabicTranslation": "سترة واقية من الرياح" },
-  "parka": { "arabicTranslation": "معطف باركا" },
-  "blazer": { "arabicTranslation": "سترة رسمية" },
+  "windbreaker": {
+    "arabicTranslation": "سترة واقية من الرياح",
+    "definition": "A lightweight jacket designed to block the wind."
+  },
+  "parka": {
+    "arabicTranslation": "معطف باركا",
+    "definition": "A warm coat, often with a hood, worn in cold weather."
+  },
+  "blazer": {
+    "arabicTranslation": "سترة رسمية",
+    "definition": "A smart jacket worn as part of a suit or with other clothes."
+  },
   "trench-coat": {
     "definition": "A long overcoat made from water-resistant fabric usually has a belt, wide lapels, and two overlapping rows of buttons.",
-    "arabicTranslation": ""
+    "arabicTranslation": "قماش يُسمّى «ترينتش كوات»"
   },
   "puffer-jacket": {
     "definition": "A warm jacket filled with insulating material and divided into padded sections.",
@@ -99,7 +123,10 @@
     "definition": "Tanned skin of a sheep with the fleece left on.",
     "arabicTranslation": "سترة صوف صناعي"
   },
-  "dress": { "definition": "Suitable for formal occasions.", "arabicTranslation": "فستان" },
+  "dress": {
+    "definition": "Suitable for formal occasions.",
+    "arabicTranslation": "فستان"
+  },
   "sundress": {
     "definition": "A light loose sleeveless summer dress with a wide neckline and thin shoulder straps that expose the arms and shoulders.",
     "arabicTranslation": "فستان صيفي"
@@ -118,7 +145,10 @@
     "definition": "One-piece garment fashioned after a parachutist's uniform.",
     "arabicTranslation": "بدلة قطعة واحدة"
   },
-  "romper": { "definition": "A person who romps or frolics.", "arabicTranslation": "رومبر" },
+  "romper": {
+    "definition": "A person who romps or frolics.",
+    "arabicTranslation": "رومبر"
+  },
   "overalls": {
     "definition": "(usually plural) work clothing consisting of denim trousers (usually with a bib and shoulder straps).",
     "arabicTranslation": "أوفرول"

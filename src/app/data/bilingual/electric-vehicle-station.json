@@ -4,7 +4,11 @@
     "exampleUsage": "The car stopped at a charging station during the trip.",
     "arabicTranslation": "محطة شحن مركبات كهربائية"
   },
-  "connector": { "definition": "An instrumentality that connects.", "arabicTranslation": "موصل" },
+  "connector": {
+    "definition": "An instrumentality that connects.",
+    "arabicTranslation": "موصل",
+    "exampleUsage": "The connector was used during the activity."
+  },
   "plug": {
     "definition": "A small object that fits into a socket to connect an appliance to electricity.",
     "arabicTranslation": "قابس"
@@ -15,7 +19,8 @@
   },
   "adapter": {
     "definition": "A device that lets equipment with different connectors work together.",
-    "arabicTranslation": "مهايئ"
+    "arabicTranslation": "مهايئ",
+    "exampleUsage": "The adapter was used during the activity."
   },
   "level-1": {
     "definition": "To level a surface is to flatten it by removing bumps and uneven parts.",
@@ -47,11 +52,12 @@
   },
   "electric-motor": {
     "definition": "A machine that converts electrical energy into rotational motion, usually by using coils and magnets to create a turning force.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «يليكتريك موتور»",
+    "exampleUsage": "The electric motor was used during the activity."
   },
   "regenerative-braking": {
     "definition": "A braking system in electric and hybrid vehicles that changes some energy from motion into electricity and stores it in the battery.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «ريجينيراتيفي براكينج»"
   },
   "inverter": {
     "definition": "An electrical converter that converts direct current into alternating current.",
@@ -90,10 +96,14 @@
     "exampleUsage": "The charging cable reaches the marked parking spot.",
     "arabicTranslation": "مكان لوقوف السيارة"
   },
-  "canopy": { "arabicTranslation": "مظلّة" },
+  "canopy": {
+    "arabicTranslation": "مظلّة",
+    "definition": "A rooflike covering that provides shade or shelter."
+  },
   "solar-panel": {
     "definition": "A device with linked semiconductor cells that changes sunlight directly into electrical power.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «سولار بانيل»",
+    "exampleUsage": "The solar panel was used during the activity."
   },
   "lighting": {
     "definition": "Having abundant light or illumination.",
@@ -127,11 +137,12 @@
   },
   "mobile-app": {
     "definition": "A software program built to work on a smartphone or tablet, usually obtained through an app store or another digital platform.",
-    "arabicTranslation": ""
+    "arabicTranslation": "برنامج يُسمّى «موبيلي ابب»"
   },
   "qr-code": {
     "definition": "A QR code uses a shared standard that defines its square pattern, information capacity, versions, and error correction, so different devices and apps can scan it reliably.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «كر كودي»",
+    "exampleUsage": "The qr code was used during the activity."
   },
   "account": {
     "definition": "A record or narrative description of past events.",
@@ -170,7 +181,8 @@
   },
   "state-of-charge": {
     "definition": "A device indicator shows the amount of electrical charge remaining in its battery.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «ستاتي وف تشارجي»",
+    "exampleUsage": "The state of charge was used during the activity."
   },
   "range": {
     "definition": "An area in which something acts or operates or has power or control:.",
@@ -214,16 +226,21 @@
   },
   "emergency-stop": {
     "definition": "Describes a device or control built to halt machinery at once during an emergency, reducing the risk of injury or damage.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «يميرجينكي ستوب»",
+    "exampleUsage": "The emergency stop was used during the activity."
   },
   "ventilation": {
     "definition": "A mechanical system in a building that provides fresh air.",
     "arabicTranslation": "تهوية"
   },
-  "inspection": { "definition": "A formal or official examination.", "arabicTranslation": "فحص" },
+  "inspection": {
+    "definition": "A formal or official examination.",
+    "arabicTranslation": "فحص"
+  },
   "firmware-update": {
     "definition": "A manufacturer-provided software package changes the built-in instructions that control a hardware device. It may fix faults, close security gaps, or add new functions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «فيرمواري وبداتي»",
+    "exampleUsage": "The firmware update was used during the activity."
   },
   "weatherproof": {
     "definition": "Able to withstand exposure to weather without damage.",

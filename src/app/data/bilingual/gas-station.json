@@ -1,7 +1,8 @@
 {
   "gas-pump": {
     "definition": "A device at a service station pumps gasoline from storage tanks located beneath the ground.",
-    "arabicTranslation": "مضخة وقود"
+    "arabicTranslation": "مضخة وقود",
+    "exampleUsage": "The gas pump was used during the activity."
   },
   "nozzle": {
     "definition": "A projecting spout from which a fluid is discharged.",
@@ -16,16 +17,23 @@
     "definition": "German engineer (born in France) who invented the diesel engine (1858-1913).",
     "arabicTranslation": "ديزل"
   },
-  "unleaded": { "arabicTranslation": "بنزين خالٍ من الرصاص" },
+  "unleaded": {
+    "arabicTranslation": "بنزين خالٍ من الرصاص",
+    "definition": "Describing gasoline that does not contain added lead."
+  },
   "premium": {
     "definition": "The amount that something in scarce supply is valued above its nominal value.",
     "arabicTranslation": "قسط تأمين"
   },
   "fuel-gauge": {
     "definition": "An instrument fitted to a vehicle or container that indicates how much fuel is left in its tank.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «فويل جاوجي»",
+    "exampleUsage": "The fuel gauge was used during the activity."
   },
-  "receipt": { "arabicTranslation": "إيصال" },
+  "receipt": {
+    "arabicTranslation": "إيصال",
+    "definition": "A written or digital record showing that a payment was made."
+  },
   "card-reader": {
     "definition": "An electronic device that reads information from a payment, access, or identification card.",
     "exampleUsage": "The card reader displayed a payment prompt.",
@@ -36,18 +44,30 @@
     "exampleUsage": "The price sign showed the fuel prices clearly.",
     "arabicTranslation": "لافتة الأسعار"
   },
-  "snacks": { "arabicTranslation": "وجبات خفيفة" },
-  "drinks": { "definition": "Any large deep body of water.", "arabicTranslation": "مشروبات" },
+  "snacks": {
+    "arabicTranslation": "وجبات خفيفة",
+    "definition": "Small amounts of food eaten between meals."
+  },
+  "drinks": {
+    "arabicTranslation": "مشروبات",
+    "definition": "Any large deep body of water."
+  },
   "coffee": {
     "definition": "A beverage consisting of an infusion of ground coffee beans.",
     "arabicTranslation": "قهوة"
   },
-  "ice": { "definition": "Water frozen into a hard solid state.", "arabicTranslation": "ثلج" },
+  "ice": {
+    "definition": "Water frozen into a hard solid state.",
+    "arabicTranslation": "ثلج"
+  },
   "candy": {
     "definition": "A rich sweet made of flavored sugar and often combined with fruit or nuts.",
     "arabicTranslation": "حلوى"
   },
-  "chips": { "definition": "Strips of potato fried in deep fat.", "arabicTranslation": "رقائق" },
+  "chips": {
+    "definition": "Strips of potato fried in deep fat.",
+    "arabicTranslation": "رقائق"
+  },
   "gum": {
     "definition": "Any of various substances (soluble in water) that exude from certain plants.",
     "arabicTranslation": "علكة"
@@ -67,7 +87,8 @@
   },
   "air-pump": {
     "definition": "A device used to push air into a container or draw it out.",
-    "arabicTranslation": "مضخة هواء"
+    "arabicTranslation": "مضخة هواء",
+    "exampleUsage": "The air pump was used during the activity."
   },
   "windshield-fluid": {
     "definition": "A cleaning liquid stored in a vehicle and sprayed onto the windshield to help remove dirt.",
@@ -92,7 +113,10 @@
     "exampleUsage": "The gas station has a car wash beside the pumps.",
     "arabicTranslation": "مغسلة سيارات"
   },
-  "vacuum": { "arabicTranslation": "مكنسة شفط" },
+  "vacuum": {
+    "arabicTranslation": "مكنسة شفط",
+    "definition": "A machine that removes dirt by sucking in air."
+  },
   "tire-pressure": {
     "definition": "The amount of air pressure inside a vehicle tire.",
     "exampleUsage": "The driver checked the tire pressure before a long trip.",
@@ -102,7 +126,10 @@
     "definition": "A liquid added to the water in a cooling system to lower its freezing point.",
     "arabicTranslation": "مانع تجمد"
   },
-  "funnel": { "definition": "To move or pour through a funnel.", "arabicTranslation": "قمع" },
+  "funnel": {
+    "definition": "To move or pour through a funnel.",
+    "arabicTranslation": "قمع"
+  },
   "canopy": {
     "definition": "The umbrellalike part of a parachute that fills with air.",
     "arabicTranslation": "مظلّة"
@@ -126,7 +153,8 @@
   },
   "atm": {
     "definition": "An unattended machine (outside some banks) that dispenses money when a personal coded card is used.",
-    "arabicTranslation": "جهاز صراف آلي"
+    "arabicTranslation": "جهاز صراف آلي",
+    "exampleUsage": "The atm was used during the activity."
   },
   "squeegee": {
     "definition": "T-shaped cleaning implement with a rubber edge across the top.",
@@ -137,8 +165,14 @@
     "exampleUsage": "A water hose was available beside the service area.",
     "arabicTranslation": "خرطوم مياه"
   },
-  "car": { "definition": "A motor vehicle with four wheels.", "arabicTranslation": "سيارة" },
-  "truck": { "definition": "To convey (goods etc.) by truck.", "arabicTranslation": "شاحنة" },
+  "car": {
+    "definition": "A motor vehicle with four wheels.",
+    "arabicTranslation": "سيارة"
+  },
+  "truck": {
+    "definition": "To convey (goods etc.) by truck.",
+    "arabicTranslation": "شاحنة"
+  },
   "suv": {
     "definition": "A high-performance four-wheel drive car built on a truck chassis.",
     "arabicTranslation": "سيارة رياضية متعددة الاستخدامات"
@@ -147,7 +181,10 @@
     "definition": "(Great Britain) a closed railroad car that carries baggage or freight.",
     "arabicTranslation": "شاحنة صغيرة"
   },
-  "motorcycle": { "arabicTranslation": "دراجة نارية" },
+  "motorcycle": {
+    "arabicTranslation": "دراجة نارية",
+    "definition": "A two-wheeled motor vehicle ridden by one or two people."
+  },
   "rv": {
     "definition": "A motorized wheeled vehicle used for camping or other recreational activities.",
     "arabicTranslation": "مركبة ترفيهية"
@@ -156,7 +193,10 @@
     "definition": "A vehicle without an engine that is pulled by another vehicle.",
     "arabicTranslation": "مقطورة"
   },
-  "bus": { "definition": "A car that is old and unreliable.", "arabicTranslation": "حافلة" },
+  "bus": {
+    "definition": "A car that is old and unreliable.",
+    "arabicTranslation": "حافلة"
+  },
   "sedan": {
     "definition": "A car that is closed and that has front and rear seats and two or four doors.",
     "arabicTranslation": "سيارة سيدان"
@@ -169,7 +209,10 @@
     "definition": "Being present (at a meeting or event, etc.).",
     "arabicTranslation": "مرافق خدمة"
   },
-  "cashier": { "definition": "To discard or do away with.", "arabicTranslation": "أمين صندوق" },
+  "cashier": {
+    "arabicTranslation": "أمين صندوق",
+    "definition": "A worker who takes payments and gives change or receipts."
+  },
   "customer": {
     "definition": "A person who pays for goods or services.",
     "arabicTranslation": "عميل"
@@ -179,7 +222,10 @@
     "exampleUsage": "An adult was pumping gas while the engine was switched off.",
     "arabicTranslation": "تعبئة الوقود"
   },
-  "paying": { "arabicTranslation": "الدفع" },
+  "paying": {
+    "arabicTranslation": "الدفع",
+    "definition": "Giving money in exchange for goods or services."
+  },
   "checking-oil": {
     "definition": "The act of examining a vehicle's engine-oil level or condition.",
     "exampleUsage": "The mechanic was checking the oil during the service.",

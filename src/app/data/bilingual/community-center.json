@@ -9,7 +9,7 @@
   },
   "art-room": {
     "definition": "A dedicated classroom or studio where students create visual art under a teacher’s guidance.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «ارت رووم»"
   },
   "music-room": {
     "definition": "A room equipped or reserved for practicing, teaching, or performing music.",
@@ -55,7 +55,7 @@
   },
   "language-class": {
     "definition": "A class uses a language other than the students’ native language for instruction, immersing them in that language.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لانجواجي كلاسس»"
   },
   "tutoring": {
     "definition": "Individual instruction helps a learner master academic skills, usually through one-on-one lessons or small-group sessions.",
@@ -88,7 +88,7 @@
   },
   "table-tennis": {
     "definition": "A racket game similar to tennis, it is played across a table with paddles and a lightweight hollow ball.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لعبة يُسمّى «تابلي تيننيس»"
   },
   "swimming": {
     "definition": "Moving through water for exercise or pleasure.",
@@ -123,7 +123,7 @@
   },
   "talent-show": {
     "definition": "A public school or community event gives students a stage to perform skills such as singing, dancing, or magic. The performances entertain an audience and may be judged as a competition.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تالينت شوو»"
   },
   "holiday-party": {
     "definition": "A social gathering held to celebrate a holiday or festive season.",
@@ -134,15 +134,21 @@
     "definition": "Small workplace where handcrafts or manufacturing are done.",
     "arabicTranslation": "ورشة"
   },
-  "seminar": { "definition": "Any meeting for an exchange of ideas.", "arabicTranslation": "ندوة" },
+  "seminar": {
+    "definition": "Any meeting for an exchange of ideas.",
+    "arabicTranslation": "ندوة"
+  },
   "concert": {
     "definition": "A performance of music by players or singers not involving theatrical staging.",
     "arabicTranslation": "حفل موسيقي"
   },
-  "exhibition": { "arabicTranslation": "معرض" },
+  "exhibition": {
+    "arabicTranslation": "معرض",
+    "definition": "A public display of art, objects, or information."
+  },
   "farmers-market": {
     "definition": "A regularly scheduled place, often outdoors, where local farmers sell fresh produce and other farm goods directly to consumers.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «فارميرس ماركيت»"
   },
   "blood-drive": {
     "definition": "An organized event where eligible volunteers donate blood for medical use.",
@@ -155,24 +161,29 @@
   },
   "bulletin-board": {
     "definition": "A board where notices and student work are displayed.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بولليتين بوارد»"
   },
   "water-fountain": {
     "definition": "A public device that supplies drinking water.",
-    "arabicTranslation": "نافورة ماء"
+    "arabicTranslation": "نافورة ماء",
+    "exampleUsage": "The water fountain was used during the activity."
   },
   "locker": {
     "definition": "A small locked compartment for a student’s belongings.",
     "arabicTranslation": "خزانة"
   },
-  "bench": { "arabicTranslation": "مقعد" },
+  "bench": {
+    "arabicTranslation": "مقعد",
+    "definition": "A long seat that can hold more than one person."
+  },
   "stage": {
     "definition": "Any distinct time period in a sequence of events.",
     "arabicTranslation": "مرحلة"
   },
   "projector": {
     "definition": "A device that displays images on a wall or screen.",
-    "arabicTranslation": "جهاز عرض"
+    "arabicTranslation": "جهاز عرض",
+    "exampleUsage": "The projector was used during the activity."
   },
   "whiteboard": {
     "definition": "To build, examine, or clarify ideas together by writing or drawing on a whiteboard.",
@@ -180,7 +191,8 @@
   },
   "microphone": {
     "definition": "A device that changes sound into an electrical recording or signal.",
-    "arabicTranslation": "ميكروفون"
+    "arabicTranslation": "ميكروفون",
+    "exampleUsage": "The microphone was used during the activity."
   },
   "instructor": {
     "definition": "A person whose occupation is teaching.",
@@ -202,7 +214,10 @@
     "definition": "A young person who has not become an adult.",
     "arabicTranslation": "طفل"
   },
-  "senior": { "arabicTranslation": "كبير السن" },
+  "senior": {
+    "arabicTranslation": "كبير السن",
+    "definition": "An older person, often one who has reached retirement age."
+  },
   "lifeguard": {
     "definition": "An attendant employed at a beach or pool to protect swimmers from accidents.",
     "arabicTranslation": "منقذ سباحة"

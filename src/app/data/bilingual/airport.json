@@ -12,14 +12,17 @@
     "definition": "Any authorization to pass or go somewhere.",
     "arabicTranslation": "جواز سفر"
   },
-  "visa": { "definition": "To provide (a passport) with a visa.", "arabicTranslation": "تأشيرة" },
+  "visa": {
+    "definition": "To provide (a passport) with a visa.",
+    "arabicTranslation": "تأشيرة"
+  },
   "luggage": {
     "definition": "Cases used to carry belongings when traveling.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لوججاجي»"
   },
   "suitcase": {
     "definition": "A portable rectangular container for carrying clothes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حاوية يُسمّى «سويتكاسي»"
   },
   "carry-on": {
     "definition": "A small bag or item that a passenger is permitted to take into the aircraft cabin under airline rules.",
@@ -41,15 +44,17 @@
   },
   "metal-detector": {
     "definition": "A device that signals when metal is nearby, helping check food for stray pieces or locate metal buried underground.",
-    "arabicTranslation": "كاشف معدن"
+    "arabicTranslation": "كاشف معدن",
+    "exampleUsage": "The metal detector was used during the activity."
   },
   "scanner": {
     "definition": "A device that turns a paper image or document into a digital file.",
-    "arabicTranslation": "ماسح ضوئي"
+    "arabicTranslation": "ماسح ضوئي",
+    "exampleUsage": "The scanner was used during the activity."
   },
   "terminal": {
     "definition": "Of or relating to or situated at the ends of a delivery route.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تيرمينال»"
   },
   "gate": {
     "definition": "Passageway (as in an air terminal) where passengers can embark or disembark.",
@@ -61,15 +66,15 @@
   },
   "control-tower": {
     "definition": "A raised, glass-enclosed workplace at an airport lets controllers watch aircraft as they arrive, depart, and move nearby.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طائرة يُسمّى «كونترول تووير»"
   },
   "hangar": {
     "definition": "A large structure at an airport where aircraft can be stored and maintained.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طائرة يُسمّى «هانجار»"
   },
   "departure-lounge": {
     "definition": "A waiting area where air travelers stay until their scheduled flight departs.",
-    "arabicTranslation": ""
+    "arabicTranslation": "منطقة يُسمّى «ديبارتوري لوونجي»"
   },
   "arrivals-hall": {
     "definition": "The airport area where arriving passengers enter after leaving baggage claim or border-control areas.",
@@ -83,7 +88,7 @@
   },
   "food-court": {
     "definition": "An area, often in a shopping mall, where several fast-food outlets surround a shared dining space.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طعام يُسمّى «فوود كوورت»"
   },
   "restroom": {
     "definition": "A public room containing toilets and washing facilities.",
@@ -91,7 +96,8 @@
   },
   "elevator": {
     "definition": "Lifting device consisting of a platform or cage that is raised and lowered mechanically in a vertical shaft in order to move people from one floor to another in a building.",
-    "arabicTranslation": "مصعد"
+    "arabicTranslation": "مصعد",
+    "exampleUsage": "The elevator was used during the activity."
   },
   "escalator": {
     "definition": "A stairway whose steps move continuously on a circulating belt.",
@@ -99,12 +105,12 @@
   },
   "airplane": {
     "definition": "An aircraft that has a fixed wing and is powered by propellers or jets.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طائرة يُسمّى «ايربلاني»"
   },
   "jet-engine": {
     "definition": "An engine that propels aircraft or missiles by burning fuel and forcing high-speed exhaust gases backward.",
     "exampleUsage": "The glossary uses the term \"jet engine\" in an educational description.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طائرة يُسمّى «جيت ينجيني»"
   },
   "wing": {
     "definition": "One of the horizontal airfoils on either side of the fuselage of an airplane.",
@@ -112,24 +118,28 @@
   },
   "cockpit": {
     "definition": "Compartment where the pilot sits while flying the aircraft.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طائرة يُسمّى «كوكبيت»"
   },
   "fuselage": {
     "definition": "The central body of an airplane that is designed to accommodate the crew and passengers (or cargo).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فوسيلاجي»"
   },
   "propeller": {
     "definition": "A mechanical device that rotates to push against air or water.",
-    "arabicTranslation": "مروحة دافعة"
+    "arabicTranslation": "مروحة دافعة",
+    "exampleUsage": "The propeller was used during the activity."
   },
-  "tail": { "definition": "The time of the last part of something.", "arabicTranslation": "" },
+  "tail": {
+    "definition": "The time of the last part of something.",
+    "arabicTranslation": "جزء يُسمّى «تايل»"
+  },
   "landing-gear": {
     "definition": "A set of fixed or retractable supports on an aircraft or spacecraft cushions touchdown and keeps the vehicle stable during takeoff, landing, and movement on the ground.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «لاندينج جيار»"
   },
   "window": {
     "definition": "A glass opening in the wall that lets daylight into the room.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «ويندوو»"
   },
   "aisle": {
     "definition": "Passageway between seating areas as in an auditorium or passenger vehicle or between areas of shelves of goods as in stores.",
@@ -145,7 +155,10 @@
     "exampleUsage": "The tray table was folded during takeoff.",
     "arabicTranslation": "طاولة قابلة للطي"
   },
-  "pilot": { "arabicTranslation": "" },
+  "pilot": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيلوت»",
+    "definition": "A person trained to fly and control an aircraft."
+  },
   "co-pilot": {
     "definition": "A qualified pilot who shares aircraft-operating duties with the captain and can take control when required.",
     "exampleUsage": "The co-pilot reviewed the flight information with the captain.",
@@ -162,7 +175,7 @@
   },
   "ground-crew": {
     "definition": "A team of mechanics and technicians responsible for maintaining aircraft while they remain on the ground.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طائرة يُسمّى «جرووند كريو»"
   },
   "air-traffic-controller": {
     "definition": "A trained professional who directs and coordinates aircraft movements to maintain safe separation.",
@@ -186,16 +199,20 @@
   },
   "mechanic": {
     "definition": "Resembling the action of a machine.",
-    "arabicTranslation": "ميكانيكي"
+    "arabicTranslation": "ميكانيكي",
+    "exampleUsage": "The mechanic was used during the activity."
   },
   "boarding": {
     "definition": "The act of passengers and crew getting aboard a ship or aircraft.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طائرة يُسمّى «بواردينج»"
   },
-  "takeoff": { "arabicTranslation": "" },
+  "takeoff": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تاكيوفف»",
+    "definition": "The moment when an aircraft leaves the ground and begins to fly."
+  },
   "landing": {
     "definition": "The act of coming down to the earth (or other surface).",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «لاندينج»"
   },
   "taxiing": {
     "definition": "The movement of an aircraft along the ground under its own power before takeoff or after landing.",
@@ -204,9 +221,12 @@
   },
   "turbulence": {
     "definition": "A state of violent disturbance and disorder (as in politics or social conditions generally).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «توربولينكي»"
   },
-  "announcement": { "definition": "A formal public statement.", "arabicTranslation": "" },
+  "announcement": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اننوونكيمينت»",
+    "definition": "A formal public statement."
+  },
   "fasten-seatbelt": {
     "definition": "To secure a seat belt by connecting its buckle and adjusting it as required by the transport operator.",
     "exampleUsage": "Passengers fastened their seatbelts when instructed by the crew.",
@@ -222,8 +242,15 @@
   },
   "oxygen-mask": {
     "definition": "A device worn over the nose and mouth delivers oxygen from a connected storage tank.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «وكسيجين ماسك»",
+    "exampleUsage": "The oxygen mask was used during the activity."
   },
-  "delay": { "definition": "Time during which some action is awaited.", "arabicTranslation": "" },
-  "layover": { "definition": "A brief stay in the course of a journey.", "arabicTranslation": "" }
+  "delay": {
+    "definition": "Time during which some action is awaited.",
+    "arabicTranslation": "فعل أو عملية يُسمّى «ديلاي»"
+  },
+  "layover": {
+    "definition": "A brief stay in the course of a journey.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لايوفير»"
+  }
 }

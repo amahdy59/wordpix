@@ -1,81 +1,111 @@
 {
-  "spring": { "definition": "The season between winter and summer.", "arabicTranslation": "نابض" },
-  "summer": { "definition": "The warmest season of the year.", "arabicTranslation": "" },
-  "autumn": { "definition": "The season between summer and winter.", "arabicTranslation": "" },
-  "winter": { "definition": "The coldest season of the year.", "arabicTranslation": "" },
+  "spring": {
+    "definition": "The season between winter and summer.",
+    "arabicTranslation": "نابض"
+  },
+  "summer": {
+    "definition": "The warmest season of the year.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سوممير»"
+  },
+  "autumn": {
+    "definition": "The season between summer and winter.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اوتومن»"
+  },
+  "winter": {
+    "definition": "The coldest season of the year.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وينتير»"
+  },
   "dry-season": {
     "definition": "A period in tropical or subtropical regions when rainfall drops sharply or stops, leaving mostly dry weather.",
     "arabicTranslation": "فصل جاف"
   },
   "rainy-season": {
     "definition": "One of the two main seasons in tropical climates, marked by frequent rainfall.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «رايني سياسون»"
   },
-  "monsoon": { "definition": "A seasonal wind in southern Asia.", "arabicTranslation": "" },
+  "monsoon": {
+    "definition": "A seasonal wind in southern Asia.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مونسوون»"
+  },
   "equinox": {
     "definition": "Either of two times of the year when the sun crosses the plane of the earth's equator and day and night are of equal length.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يكينوكس»"
   },
   "solstice": {
     "definition": "Either of the two times of the year when the sun is at its greatest distance from the celestial equator.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سولستيكي»"
   },
   "harvest": {
     "definition": "The gathering of crops when they are ready.",
     "arabicTranslation": "حصاد"
   },
-  "sunny": { "definition": "Having plenty of sunshine and few clouds.", "arabicTranslation": "" },
+  "sunny": {
+    "definition": "Having plenty of sunshine and few clouds.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سونني»"
+  },
   "cloudy": {
     "definition": "Covered with many clouds and little direct sunshine.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كلوودي»"
   },
   "rainy": {
     "definition": "Having or bringing rain from clouds in the sky.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «رايني»"
   },
   "snowy": {
     "definition": "Having or bringing snow from cold clouds in the sky.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سنووي»"
   },
   "windy": {
     "definition": "Having a lot of wind moving through the air.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ويندي»"
   },
-  "foggy": { "definition": "Covered by fog or containing thick fog.", "arabicTranslation": "" },
+  "foggy": {
+    "definition": "Covered by fog or containing thick fog.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فوججي»"
+  },
   "stormy": {
     "definition": "Having strong wind, rain, thunder, or lightning.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ستورمي»"
   },
   "humid": {
     "definition": "Containing or characterized by a great deal of water vapor.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هوميد»"
   },
-  "overcast": { "definition": "To make overcast or cloudy.", "arabicTranslation": "" },
-  "clear": { "definition": "Readily apparent to the mind.", "arabicTranslation": "صافٍ" },
-  "thunder": { "definition": "The loud sound that follows lightning.", "arabicTranslation": "" },
+  "overcast": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وفيركاست»",
+    "definition": "Covered with clouds across most or all of the sky."
+  },
+  "clear": {
+    "arabicTranslation": "صافٍ",
+    "definition": "Readily apparent to the mind."
+  },
+  "thunder": {
+    "definition": "The loud sound that follows lightning.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ثوندير»"
+  },
   "lightning": {
     "definition": "A bright flash of electricity in the sky.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليغتنينج»"
   },
   "tornado": {
     "definition": "A violent column of air that spins around and moves across land.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تورنادو»"
   },
   "hurricane": {
     "definition": "A very powerful storm with strong winds that forms over the sea.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هورريكاني»"
   },
   "blizzard": {
     "definition": "A severe snowstorm with strong winds and poor visibility.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بليززارد»"
   },
   "hail": {
     "definition": "Small balls of ice that fall from clouds during a storm.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هايل»"
   },
   "flood": {
     "definition": "A large amount of water covering normally dry land.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فلوود»"
   },
   "drought": {
     "definition": "A long period with very little or no rain.",
@@ -87,37 +117,43 @@
   },
   "ice-storm": {
     "definition": "Freezing rain turns to ice when it lands, coating roads, trees, buildings, and other surfaces during a storm.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شجرة يُسمّى «يكي ستورم»"
   },
-  "hot": { "arabicTranslation": "ساخن" },
+  "hot": {
+    "arabicTranslation": "ساخن",
+    "definition": "Having a high temperature or feeling too warm."
+  },
   "warm": {
     "definition": "Having or producing a comfortable and agreeable degree of heat or imparting or maintaining heat.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «وارم»"
   },
-  "cool": { "definition": "Neither warm nor very cold.", "arabicTranslation": "" },
+  "cool": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كوول»",
+    "definition": "Neither warm nor very cold."
+  },
   "cold": {
     "definition": "Having a low or inadequate temperature or feeling a sensation of coldness or having been made cold by e.g. ice or refrigeration.",
     "arabicTranslation": "بارد"
   },
   "freezing": {
     "definition": "The withdrawal of heat to change something from a liquid to a solid.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فرييزينج»"
   },
   "mild": {
     "definition": "Moderate in type or degree or effect or force.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ميلد»"
   },
   "chilly": {
     "definition": "Very hot and finely tapering pepper of special pungency.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تشيللي»"
   },
   "boiling": {
     "definition": "The application of heat to change something from a liquid to a gas.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بويلينج»"
   },
   "below-zero": {
     "definition": "Describes a temperature that falls below zero on the Celsius or Fahrenheit scale.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيلوو زيرو»"
   },
   "room-temperature": {
     "definition": "Describes a substance or condition at the usual indoor temperature, without deliberate cooling or heating.",
@@ -125,23 +161,28 @@
   },
   "thermometer": {
     "definition": "Measuring instrument for measuring temperature.",
-    "arabicTranslation": "مقياس حرارة"
+    "arabicTranslation": "مقياس حرارة",
+    "exampleUsage": "The thermometer was used during the activity."
   },
   "barometer": {
     "definition": "An instrument that measures air pressure and helps predict weather changes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «باروميتير»",
+    "exampleUsage": "The barometer was used during the activity."
   },
   "weather-vane": {
     "definition": "An instrument that points in the direction from which the wind is blowing.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «وياثير فاني»",
+    "exampleUsage": "The weather vane was used during the activity."
   },
   "rain-gauge": {
     "definition": "An instrument that collects and measures rainfall.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «راين جاوجي»",
+    "exampleUsage": "The rain gauge was used during the activity."
   },
   "anemometer": {
     "definition": "An instrument that measures the speed of the wind.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «انيموميتير»",
+    "exampleUsage": "The anemometer was used during the activity."
   },
   "weather-map": {
     "definition": "A map showing weather conditions across an area during a news forecast.",
@@ -153,7 +194,8 @@
   },
   "satellite": {
     "definition": "A machine sent into space to collect information and send it back.",
-    "arabicTranslation": "قمر صناعي"
+    "arabicTranslation": "قمر صناعي",
+    "exampleUsage": "The satellite was used during the activity."
   },
   "radar": {
     "definition": "A system that uses radio waves to detect objects or weather.",

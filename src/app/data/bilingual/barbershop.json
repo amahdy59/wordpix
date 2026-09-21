@@ -13,22 +13,28 @@
   },
   "crew-cut": {
     "definition": "A short, even haircut with the hair closely trimmed, traditionally associated with men.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كريو كوت»"
   },
   "pompadour": {
     "definition": "A hair style in which the front hair is swept up from the forehead.",
     "arabicTranslation": "تسريحة بومبادور"
   },
-  "undercut": { "definition": "To cut away the underpart of.", "arabicTranslation": "قصة أندركت" },
+  "undercut": {
+    "arabicTranslation": "قصة أندركت",
+    "definition": "A haircut with very short sides and longer hair on top."
+  },
   "flat-top": {
     "definition": "A flat-top barber shop is a type of barber shop that offers a wide range of haircut services.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فلات توب»"
   },
   "mullet": {
     "definition": "Highly valued lean flesh of marine or freshwater mullet.",
     "arabicTranslation": "قصة مولِت"
   },
-  "bob": { "definition": "A hair style for women and children.", "arabicTranslation": "قصة بوب" },
+  "bob": {
+    "definition": "A hair style for women and children.",
+    "arabicTranslation": "قصة بوب"
+  },
   "layers": {
     "definition": "An abstract place usually conceived as having depth.",
     "arabicTranslation": "طبقات الشعر"
@@ -37,42 +43,55 @@
     "definition": "Scissors for cutting hair or finger nails.",
     "arabicTranslation": "ماكينة حلاقة"
   },
-  "scissors": { "definition": "To cut with or as if with scissors.", "arabicTranslation": "مقص" },
+  "scissors": {
+    "definition": "To cut with or as if with scissors.",
+    "arabicTranslation": "مقص"
+  },
   "comb": {
     "definition": "A flat tool with a row of teeth, used to arrange or untangle hair.",
-    "arabicTranslation": "مشط"
+    "arabicTranslation": "مشط",
+    "exampleUsage": "The comb was used during the activity."
   },
   "razor": {
     "definition": "A tool with a sharp blade used to remove hair from the skin.",
     "exampleUsage": "The glossary uses the term \"Razor\" in an educational description.",
     "arabicTranslation": "شفرة حلاقة"
   },
-  "trimmer": { "definition": "Neat and smart in appearance.", "arabicTranslation": "آلة تشذيب" },
+  "trimmer": {
+    "arabicTranslation": "آلة تشذيب",
+    "definition": "Neat and smart in appearance."
+  },
   "shaving-brush": {
     "definition": "A small grooming brush used to spread shaving lather across the face before a razor is used.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «شافينج بروش»"
   },
   "spray-bottle": {
     "definition": "A bottle with a pump that sends liquid out in small drops.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سبراي بوتتلي»"
   },
   "cape": {
     "definition": "A strip of land projecting into a body of water.",
     "arabicTranslation": "رداء حلاقة"
   },
-  "strop": { "arabicTranslation": "سير شحذ" },
+  "strop": {
+    "arabicTranslation": "سير شحذ",
+    "definition": "A leather strip used to sharpen and smooth a straight razor."
+  },
   "haircut": {
     "definition": "The style in which hair has been cut.",
     "arabicTranslation": "قصة شعر"
   },
-  "shave": { "arabicTranslation": "حلاقة" },
+  "shave": {
+    "arabicTranslation": "حلاقة",
+    "definition": "The act of removing hair from the face or body with a razor."
+  },
   "beard-trim": {
     "definition": "Beard trimming is a common service offered by barbershop staff to maintain a neat appearance.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيارد تريم»"
   },
   "line-up": {
     "definition": "A line-up is a group of people waiting to be called for a haircut.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليني وب»"
   },
   "hot-towel": {
     "definition": "A hot towel is a type of product used to dry hair after a haircut.",
@@ -86,7 +105,10 @@
     "definition": "A learning process in which an organism's behavior becomes dependent on the occurrence of a stimulus in its environment.",
     "arabicTranslation": "ترطيب الشعر"
   },
-  "styling": { "arabicTranslation": "تصفيف" },
+  "styling": {
+    "arabicTranslation": "تصفيف",
+    "definition": "The act of arranging hair into a particular shape or look."
+  },
   "coloring": {
     "definition": "A visual attribute of things that results from the light they emit or transmit or reflect.",
     "arabicTranslation": "صبغ"
@@ -95,13 +117,22 @@
     "definition": "The most interesting or memorable part.",
     "arabicTranslation": "خصل ملوّنة"
   },
-  "gel": { "definition": "To apply a styling gel to.", "arabicTranslation": "جل" },
+  "gel": {
+    "arabicTranslation": "جل",
+    "definition": "A thick styling product used to hold hair in place."
+  },
   "pomade": {
     "definition": "Hairdressing consisting of a perfumed oil or ointment.",
     "arabicTranslation": "دهن تصفيف"
   },
-  "wax": { "arabicTranslation": "شمع" },
-  "mousse": { "definition": "To apply a styling gel to.", "arabicTranslation": "موس شعر" },
+  "wax": {
+    "arabicTranslation": "شمع",
+    "definition": "A hair-removal product or a styling product used to shape hair."
+  },
+  "mousse": {
+    "arabicTranslation": "موس شعر",
+    "definition": "A light foam used to give hair volume and hold."
+  },
   "hairspray": {
     "definition": "A cosmetic spray that keeps hair in place by leaving a thin coating on its surface.",
     "arabicTranslation": "مثبت شعر"
@@ -118,18 +149,22 @@
     "definition": "Oil paint containing pigment that is used by an artist.",
     "arabicTranslation": "زيت"
   },
-  "cream": { "definition": "The best people or things in a group.", "arabicTranslation": "كريمة" },
+  "cream": {
+    "definition": "The best people or things in a group.",
+    "arabicTranslation": "كريمة"
+  },
   "powder": {
     "definition": "To make into a powder by breaking up or cause to become dust.",
     "arabicTranslation": "بودرة"
   },
   "barber-chair": {
     "definition": "A substantial chair fixed to the floor can be raised, lowered, or reclined while supporting a barber’s customer.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «باربير تشاير»"
   },
   "footrest": {
     "definition": "A low seat or a stool to rest the feet of a seated person.",
-    "arabicTranslation": "مسند قدم"
+    "arabicTranslation": "مسند قدم",
+    "exampleUsage": "The footrest was used during the activity."
   },
   "headrest": {
     "definition": "A cushion attached to the top of the back of an automobile's seat to prevent whiplash.",
@@ -149,7 +184,8 @@
   },
   "sterilizer": {
     "definition": "A device for heating substances above their boiling point.",
-    "arabicTranslation": "جهاز تعقيم"
+    "arabicTranslation": "جهاز تعقيم",
+    "exampleUsage": "The sterilizer was used during the activity."
   },
   "pole": {
     "definition": "A long fiberglass sports implement used for pole vaulting.",
@@ -157,11 +193,11 @@
   },
   "waiting-bench": {
     "definition": "A waiting bench is a place where barbershop staff wait for clients to arrive.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «وايتينج بينتش»"
   },
   "magazine-rack": {
     "definition": "A stand with narrow sections for holding magazines.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ماجازيني راك»"
   },
   "barber": {
     "definition": "To perform the services of a barber: cut the hair and/or beard of.",
@@ -171,14 +207,17 @@
     "definition": "(computer science) any computer that is hooked up to a computer network.",
     "arabicTranslation": "عميل"
   },
-  "apprentice": { "definition": "To be or work as an apprentice.", "arabicTranslation": "متدرب" },
+  "apprentice": {
+    "definition": "To be or work as an apprentice.",
+    "arabicTranslation": "متدرب"
+  },
   "receptionist": {
     "definition": "A secretary whose main duty is to answer the telephone and receive visitors.",
     "arabicTranslation": "موظف استقبال"
   },
   "walk-in": {
     "definition": "Enter a place on foot rather than by riding in a vehicle.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «والك ين»"
   },
   "appointment": {
     "definition": "The act of putting a person into a non-elective position.",

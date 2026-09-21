@@ -3,22 +3,27 @@
     "definition": "A flatbottomed jar made of glass or plastic.",
     "arabicTranslation": "كأس مخبري"
   },
-  "flask": { "definition": "The quantity a flask will hold.", "arabicTranslation": "دورق" },
+  "flask": {
+    "definition": "The quantity a flask will hold.",
+    "arabicTranslation": "دورق"
+  },
   "test-tube": {
     "definition": "A slender glass or plastic container holds, combines, or warms small liquid samples in laboratory experiments.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حاوية يُسمّى «تيست توبي»"
   },
   "pipette": {
     "definition": "Measuring instrument consisting of a graduated glass tube used to measure or transfer precise volumes of a liquid by drawing the liquid up into the tube.",
-    "arabicTranslation": "ماصة"
+    "arabicTranslation": "ماصة",
+    "exampleUsage": "The pipette was used during the activity."
   },
   "graduated-cylinder": {
     "definition": "A narrow glass or plastic container has numbered marks for measuring liquid volume with reasonable accuracy.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حاوية يُسمّى «جرادواتيد كيليندير»"
   },
   "petri-dish": {
     "definition": "A petri dish is a laboratory instrument used to grow microorganisms in a controlled environment.",
-    "arabicTranslation": "طبق بتري"
+    "arabicTranslation": "طبق بتري",
+    "exampleUsage": "The petri dish was used during the activity."
   },
   "funnel": {
     "definition": "A conically shaped utensil having a narrow tube at the small end.",
@@ -26,15 +31,18 @@
   },
   "burette": {
     "definition": "Measuring instrument consisting of a graduated glass tube with a tap at the bottom.",
-    "arabicTranslation": "سحاحة"
+    "arabicTranslation": "سحاحة",
+    "exampleUsage": "The burette was used during the activity."
   },
   "erlenmeyer-flask": {
     "definition": "An Erlenmeyer flask is a laboratory instrument used to measure and control the temperature of solutions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «يرلينمييير فلاسك»",
+    "exampleUsage": "The erlenmeyer flask was used during the activity."
   },
   "volumetric-flask": {
     "definition": "A volumetric flask is a laboratory instrument used to measure and control the volume of solutions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «فولوميتريك فلاسك»",
+    "exampleUsage": "The volumetric flask was used during the activity."
   },
   "watch-glass": {
     "definition": "Used in laboratories, a watch glass is a shallow dish for evaporating liquids or covering a beaker.",
@@ -50,7 +58,8 @@
   },
   "bunsen-burner": {
     "definition": "A Bunsen burner is a laboratory instrument used to heat and vaporize substances.",
-    "arabicTranslation": "موقد بنسن"
+    "arabicTranslation": "موقد بنسن",
+    "exampleUsage": "The bunsen burner was used during the activity."
   },
   "centrifuge": {
     "definition": "An apparatus that uses centrifugal force to separate particles from a suspension.",
@@ -58,19 +67,22 @@
   },
   "hot-plate": {
     "definition": "A portable electric appliance provides a hot surface for heating, cooking, or keeping food warm.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طعام يُسمّى «هوت بلاتي»"
   },
   "scale": {
     "definition": "A device that measures how heavy a person or object is.",
-    "arabicTranslation": "مقياس رسم"
+    "arabicTranslation": "مقياس رسم",
+    "exampleUsage": "The scale was used during the activity."
   },
   "thermometer": {
     "definition": "Measuring instrument for measuring temperature.",
-    "arabicTranslation": "مقياس حرارة"
+    "arabicTranslation": "مقياس حرارة",
+    "exampleUsage": "The thermometer was used during the activity."
   },
   "ph-meter": {
     "definition": "An electronic device measures a solution’s acidity or alkalinity by sensing hydrogen-ion activity and reports the result on the pH scale, typically from zero to fourteen.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «ف ميتير»",
+    "exampleUsage": "The ph meter was used during the activity."
   },
   "spectrometer": {
     "definition": "Spectroscope for obtaining a mass spectrum by deflecting ions into a thin slit and measuring the ion current with an electrometer.",
@@ -82,7 +94,8 @@
   },
   "fume-hood": {
     "definition": "A fume hood is a laboratory instrument used to protect workers from harmful fumes and vapors.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «فومي هوود»",
+    "exampleUsage": "The fume hood was used during the activity."
   },
   "lab-coat": {
     "definition": "Protective outerwear worn over ordinary clothes in a laboratory helps shield the wearer from spills and contaminating substances.",
@@ -94,7 +107,7 @@
   },
   "latex-gloves": {
     "definition": "Latex gloves are a type of protective gear used in laboratory settings to protect hands from chemicals and oils.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة كيميائية يُسمّى «لاتيكس جلوفيس»"
   },
   "face-shield": {
     "definition": "A clear protective covering worn over the face to help keep droplets or splashes away from the eyes, nose, and mouth in schools, laboratories, and healthcare settings.",
@@ -102,11 +115,13 @@
   },
   "fire-extinguisher": {
     "definition": "A portable or fixed device that releases a suitable substance to put out or contain a small fire.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «فيري يكستينجويشير»",
+    "exampleUsage": "The fire extinguisher was used during the activity."
   },
   "eyewash-station": {
     "definition": "An eyewash station is a laboratory instrument used to remove or neutralize bodily fluids.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «يييواش ستاتيون»",
+    "exampleUsage": "The eyewash station was used during the activity."
   },
   "chemical-shower": {
     "definition": "An emergency safety shower used to rinse hazardous chemicals from a person's body or clothing.",
@@ -122,7 +137,10 @@
     "exampleUsage": "The hazard sign identified a corrosive-material area.",
     "arabicTranslation": "علامة خطر"
   },
-  "clamp": { "definition": "To fasten or fix with a clamp.", "arabicTranslation": "ملقط تثبيت" },
+  "clamp": {
+    "definition": "To fasten or fix with a clamp.",
+    "arabicTranslation": "ملقط تثبيت"
+  },
   "ring-stand": {
     "definition": "A heavy laboratory stand with a vertical metal rod used to support clamps, rings, and equipment.",
     "exampleUsage": "The clamp was attached securely to the ring stand.",
@@ -153,13 +171,17 @@
   },
   "magnifying-glass": {
     "definition": "A handheld tool uses a curved lens to make nearby details appear larger for close viewing or reading.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «ماجنيفيينج جلاسس»",
+    "exampleUsage": "The magnifying glass was used during the activity."
   },
   "acid": {
     "definition": "Any of various water-soluble compounds having a sour taste and capable of turning litmus red and reacting with a base to form a salt.",
     "arabicTranslation": "حمض"
   },
-  "base": { "definition": "Lowest support of a structure.", "arabicTranslation": "قاعدة كيميائية" },
+  "base": {
+    "definition": "Lowest support of a structure.",
+    "arabicTranslation": "قاعدة كيميائية"
+  },
   "solution": {
     "definition": "A homogeneous mixture of two or more substances.",
     "arabicTranslation": "محلول"
@@ -184,14 +206,17 @@
     "definition": "A smooth surface children slide down for fun.",
     "arabicTranslation": "شريحة مجهرية"
   },
-  "stain": { "definition": "To color with a liquid dye or tint.", "arabicTranslation": "صبغة" },
+  "stain": {
+    "definition": "To color with a liquid dye or tint.",
+    "arabicTranslation": "صبغة"
+  },
   "crystal": {
     "definition": "A protective cover that protects the face of a watch.",
     "arabicTranslation": "بلورة"
   },
   "lab-notebook": {
     "definition": "A ready-made notebook layout for recording an experiment, with sections for its purpose, materials, method, results, and conclusion.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «لاب نوتيبووك»"
   },
   "graph-paper": {
     "definition": "Paper printed with a regular grid helps you plot data and draw graphs.",
@@ -199,11 +224,13 @@
   },
   "calculator": {
     "definition": "A device used for doing mathematical calculations.",
-    "arabicTranslation": "آلة حاسبة"
+    "arabicTranslation": "آلة حاسبة",
+    "exampleUsage": "The calculator was used during the activity."
   },
   "computer": {
     "definition": "A machine for performing calculations automatically.",
-    "arabicTranslation": "حاسوب"
+    "arabicTranslation": "حاسوب",
+    "exampleUsage": "The computer was used during the activity."
   },
   "data-chart": {
     "definition": "A visual display uses bars, lines, or pie sections to present numbers and other information, making patterns easier to interpret and analyze.",
@@ -211,7 +238,8 @@
   },
   "timer": {
     "definition": "A device that measures or signals the end of baking time.",
-    "arabicTranslation": "مؤقت"
+    "arabicTranslation": "مؤقت",
+    "exampleUsage": "The timer was used during the activity."
   },
   "label": {
     "definition": "A radioactive isotope that is used in a compound in order to trace the mechanism of a chemical reaction.",
@@ -232,9 +260,13 @@
   },
   "autoclave": {
     "definition": "A device for heating substances above their boiling point.",
-    "arabicTranslation": "جهاز تعقيم بالبخار"
+    "arabicTranslation": "جهاز تعقيم بالبخار",
+    "exampleUsage": "The autoclave was used during the activity."
   },
-  "compound": { "definition": "Composed of more than one part.", "arabicTranslation": "مركب" },
+  "compound": {
+    "definition": "Composed of more than one part.",
+    "arabicTranslation": "مركب"
+  },
   "catalyst": {
     "definition": "(chemistry) a substance that initiates or accelerates a chemical reaction without itself being affected.",
     "arabicTranslation": "حفاز"
@@ -267,13 +299,16 @@
     "definition": "To extract by the process of distillation.",
     "arabicTranslation": "يستخلص"
   },
-  "sterilize": { "definition": "To make free from bacteria.", "arabicTranslation": "يعقّم" },
+  "sterilize": {
+    "arabicTranslation": "يعقّم",
+    "definition": "To remove or kill microorganisms on an object or surface."
+  },
   "document": {
     "definition": "A digital file containing written or visual information.",
     "arabicTranslation": "وثيقة"
   },
   "peer-review": {
     "definition": "A structured classroom exercise brings students together to read one another’s drafts and offer constructive feedback that improves the writing.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «بيير ريفييو»"
   }
 }

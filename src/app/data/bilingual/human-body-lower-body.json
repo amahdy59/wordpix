@@ -14,11 +14,11 @@
   },
   "hip-joint": {
     "definition": "A rounded end of the thigh bone fits into a hollow in the pelvis, forming a joint that supports body weight as the leg moves.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «هيب جوينت»"
   },
   "groin": {
     "definition": "The crease at the junction of the inner part of the thigh with the trunk together with the adjacent region and often including the external genitals.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «جروين»"
   },
   "inner-thigh": {
     "definition": "The side of the upper leg that faces toward the other leg.",
@@ -46,17 +46,20 @@
   },
   "knee": {
     "definition": "Hinge joint in the human leg connecting the tibia and fibula with the femur and protected in front by the patella.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كنيي»"
   },
   "kneecap": {
     "definition": "A small flat triangular bone in front of the knee that protects the knee joint.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «كنييكاب»"
   },
   "shin": {
     "definition": "The inner and thicker of the two bones of the human leg between the knee and ankle.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «شين»"
   },
-  "calf": { "definition": "Fine leather from the skin of a calf.", "arabicTranslation": "" },
+  "calf": {
+    "definition": "Fine leather from the skin of a calf.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كالف»"
+  },
   "tibia": {
     "definition": "The inner and thicker of the two bones of the human leg between the knee and ankle.",
     "arabicTranslation": "الظنبوب"
@@ -72,7 +75,7 @@
   },
   "popliteal": {
     "definition": "Of or relating to the area behind the knee joint.",
-    "arabicTranslation": ""
+    "arabicTranslation": "منطقة يُسمّى «بوبليتيال»"
   },
   "meniscus": {
     "definition": "(anatomy) a disk of cartilage that serves as a cushion between the ends of bones that meet at a joint.",
@@ -90,13 +93,22 @@
     "definition": "A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.",
     "arabicTranslation": "كاحل"
   },
-  "heel": { "definition": "To strike with the heel of the club.", "arabicTranslation": "كعب" },
-  "sole": { "definition": "The underside of the foot.", "arabicTranslation": "باطن القدم" },
+  "heel": {
+    "definition": "To strike with the heel of the club.",
+    "arabicTranslation": "كعب"
+  },
+  "sole": {
+    "arabicTranslation": "باطن القدم",
+    "definition": "The underside of the foot."
+  },
   "arch": {
     "definition": "A curved bony structure supporting or enclosing organs (especially the inner sides of the feet).",
     "arabicTranslation": "قوس"
   },
-  "instep": { "arabicTranslation": "مشط القدم" },
+  "instep": {
+    "arabicTranslation": "مشط القدم",
+    "definition": "The curved top part of a foot between the toes and ankle."
+  },
   "ball-of-foot": {
     "definition": "The padded area on the sole of the foot just behind the toes.",
     "exampleUsage": "The ball of the foot bears weight during walking.",
@@ -109,11 +121,11 @@
   },
   "plantar": {
     "definition": "Relating to or occurring on the undersurface of the foot.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «بلانتار»"
   },
   "metatarsal": {
     "definition": "Any bone of the foot between the ankle and the toes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «ميتاتارسال»"
   },
   "big-toe": {
     "definition": "The innermost and usually largest digit of the foot is called the big toe.",
@@ -121,9 +133,12 @@
   },
   "little-toe": {
     "definition": "The smallest toe, positioned at the outer edge of the foot.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ليتتلي توي»"
   },
-  "toenail": { "definition": "The nail at the end of a toe.", "arabicTranslation": "ظفر القدم" },
+  "toenail": {
+    "arabicTranslation": "ظفر القدم",
+    "definition": "The nail at the end of a toe."
+  },
   "toe-pad": {
     "definition": "The soft padded area on the underside of a toe.",
     "exampleUsage": "The toe pad cushions contact with the ground.",
@@ -136,11 +151,11 @@
   },
   "bunion": {
     "definition": "A painful swelling of the bursa of the first joint of the big toe.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بونيون»"
   },
   "callus": {
     "definition": "An area of skin that is thick or hard from continual pressure or friction (as the sole of the foot).",
-    "arabicTranslation": ""
+    "arabicTranslation": "منطقة يُسمّى «كاللوس»"
   },
   "blister": {
     "definition": "A flaw on a surface resulting when an applied substance does not adhere (as an air bubble in a coat of paint).",
@@ -155,23 +170,44 @@
     "exampleUsage": "The nail bed lies beneath the hard nail plate.",
     "arabicTranslation": "سرير الظفر"
   },
-  "walk": { "definition": "To move on foot at a regular pace.", "arabicTranslation": "" },
-  "run": { "arabicTranslation": "" },
-  "jump": { "definition": "A sudden and decisive increase.", "arabicTranslation": "" },
-  "squat": { "arabicTranslation": "" },
+  "walk": {
+    "definition": "To move on foot at a regular pace.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «والك»"
+  },
+  "run": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «رون»",
+    "definition": "To move quickly on foot, with both feet briefly off the ground."
+  },
+  "jump": {
+    "definition": "A sudden and decisive increase.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «جومب»"
+  },
+  "squat": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «سكات»",
+    "definition": "To bend the knees and lower the body toward the ground."
+  },
   "lunge": {
     "definition": "(fencing) an attacking thrust made with one foot forward and the back leg straight and with the sword arm outstretched forward.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «لونجي»"
   },
-  "kick": { "definition": "The act of delivering a blow with the foot.", "arabicTranslation": "" },
-  "kneel": { "definition": "To rest one's weight on one's knees.", "arabicTranslation": "" },
+  "kick": {
+    "definition": "The act of delivering a blow with the foot.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كيك»"
+  },
+  "kneel": {
+    "definition": "To rest one's weight on one's knees.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كنييل»"
+  },
   "crouch": {
     "definition": "The act of bending low with the limbs close to the body.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كرووتش»"
   },
   "stride": {
     "definition": "Significant progress (especially in the phrase ‘make strides’).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ستريدي»"
   },
-  "tiptoe": { "arabicTranslation": "" }
+  "tiptoe": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «تيبتوي»",
+    "definition": "To walk quietly on the front parts of the feet."
+  }
 }

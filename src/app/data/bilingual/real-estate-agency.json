@@ -4,12 +4,18 @@
     "exampleUsage": "The real-estate agent arranged a property viewing.",
     "arabicTranslation": "وكيل عقارات"
   },
-  "broker": { "arabicTranslation": "وسيط" },
+  "broker": {
+    "arabicTranslation": "وسيط",
+    "definition": "A person who helps clients buy, sell, or rent property."
+  },
   "appraiser": {
     "definition": "A person who estimates officially the worth or value or quality of things.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «اببرايسير»"
   },
-  "inspector": { "definition": "A high ranking police officer.", "arabicTranslation": "مفتش" },
+  "inspector": {
+    "definition": "A high ranking police officer.",
+    "arabicTranslation": "مفتش"
+  },
   "mortgage-lender": {
     "definition": "A bank, company, or other institution that provides loans secured by real property under agreed terms.",
     "exampleUsage": "The mortgage lender reviewed the adult applicant's documents.",
@@ -27,26 +33,32 @@
   },
   "developer": {
     "definition": "A person who develops real estate (especially someone who prepares a site for residential or commercial use).",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «ديفيلوبير»"
   },
   "contractor": {
     "definition": "Someone (a person or firm) who contracts to build things.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «كونتراكتور»"
   },
   "architect": {
     "definition": "A person who designs buildings and prepares their plans.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مبنى يُسمّى «ارتشيتيكت»"
   },
   "listing": {
     "definition": "A database containing an ordered array of items (names or topics).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليستينج»"
   },
   "open-house": {
     "definition": "A planned public event allows visitors to enter a property, institution, or venue, inspect it, and ask questions without making separate appointments.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وبين هووسي»"
   },
-  "showing": { "definition": "The display of a motion picture.", "arabicTranslation": "" },
-  "offer": { "definition": "The verbal act of offering.", "arabicTranslation": "" },
+  "showing": {
+    "definition": "The display of a motion picture.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «شووينج»"
+  },
+  "offer": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وففير»",
+    "definition": "The verbal act of offering."
+  },
   "counter-offer": {
     "definition": "A new offer made in response to an earlier offer, changing one or more proposed terms.",
     "exampleUsage": "The seller responded to the original price with a counter-offer.",
@@ -58,9 +70,12 @@
   },
   "appraisal": {
     "definition": "A document appraising the value of something (as for insurance or taxation).",
-    "arabicTranslation": ""
+    "arabicTranslation": "وثيقة يُسمّى «اببرايسال»"
   },
-  "inspection": { "definition": "A formal or official examination.", "arabicTranslation": "فحص" },
+  "inspection": {
+    "definition": "A formal or official examination.",
+    "arabicTranslation": "فحص"
+  },
   "closing": {
     "definition": "Approaching a particular destination.",
     "arabicTranslation": "إتمام الصفقة"
@@ -75,11 +90,11 @@
   },
   "down-payment": {
     "definition": "Part of a purchase price paid at the start, with the remaining amount paid or borrowed over time.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «دوون بايمينت»"
   },
   "interest-rate": {
     "definition": "A percentage showing what borrowing money costs or what saving and lending it can earn over a set period, usually one year.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ينتيريست راتي»"
   },
   "closing-costs": {
     "definition": "Fees and expenses connected with completing a real-estate purchase or mortgage, separate from the property's price.",
@@ -88,10 +103,16 @@
   },
   "equity": {
     "definition": "The difference between the market value of a property and the claims held against it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يكيتي»"
   },
-  "appreciation": { "definition": "An increase in price or value.", "arabicTranslation": "" },
-  "depreciation": { "definition": "A decrease in price or value.", "arabicTranslation": "" },
+  "appreciation": {
+    "definition": "An increase in price or value.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اببريكياتيون»"
+  },
+  "depreciation": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديبريكياتيون»",
+    "definition": "A decrease in price or value."
+  },
   "tax-assessment": {
     "definition": "An official valuation or calculation used by a government authority to determine property tax or another tax obligation.",
     "exampleUsage": "The property record includes the latest tax assessment.",
@@ -114,15 +135,15 @@
   },
   "purchase-agreement": {
     "definition": "A legally enforceable contract sets out what one party will purchase and what another will provide, along with the agreed terms.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «بورتشاسي اجرييمينت»"
   },
   "deed": {
     "definition": "A legal document signed and sealed and delivered to effect a transfer of property and to show the legal right to possess it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "وثيقة يُسمّى «دييد»"
   },
   "title": {
     "definition": "A legal document signed and sealed and delivered to effect a transfer of property and to show the legal right to possess it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "وثيقة يُسمّى «تيتلي»"
   },
   "mortgage-note": {
     "definition": "A legal document in which a borrower promises to repay a mortgage loan according to stated terms.",
@@ -131,9 +152,12 @@
   },
   "disclosure": {
     "definition": "The speech act of making something evident.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديسكلوسوري»"
   },
-  "survey": { "definition": "A detailed critical inspection.", "arabicTranslation": "" },
+  "survey": {
+    "definition": "A detailed critical inspection.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سورفيي»"
+  },
   "insurance-policy": {
     "definition": "A contract describing the coverage, conditions, limits, and responsibilities of an insurance agreement.",
     "exampleUsage": "The homeowner reviewed the insurance policy details.",
@@ -141,7 +165,7 @@
   },
   "tax-return": {
     "definition": "A document submitted to tax authorities that reports how much tax a person owes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «تاكس ريتورن»"
   },
   "proof-of-income": {
     "definition": "Documents or records used to show how much income a person receives.",

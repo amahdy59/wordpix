@@ -5,7 +5,7 @@
   },
   "nurse": {
     "definition": "To try to cure by special care of treatment, of an illness or injury.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «نورسي»"
   },
   "surgeon": {
     "definition": "A physician who specializes in surgery.",
@@ -13,7 +13,7 @@
   },
   "paramedic": {
     "definition": "A person trained to assist medical professionals and to give emergency medical treatment.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «باراميديك»"
   },
   "receptionist": {
     "definition": "A secretary whose main duty is to answer the telephone and receive visitors.",
@@ -25,49 +25,64 @@
   },
   "anesthesiologist": {
     "definition": "A specialist who administers an anesthetic to a patient before they are treated.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «انيسثيسيولوجيست»"
   },
   "radiologist": {
     "definition": "A medical specialist who uses radioactive substances and X-rays in the treatment of disease.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «راديولوجيست»"
   },
-  "pediatrician": { "definition": "A specialist in the care of babies.", "arabicTranslation": "" },
+  "pediatrician": {
+    "definition": "A specialist in the care of babies.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بيدياتريكيان»"
+  },
   "psychiatrist": {
     "definition": "A physician who specializes in psychiatry.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بسيتشياتريست»"
   },
   "midwife": {
     "definition": "A woman skilled in aiding the delivery of babies.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ميدويفي»"
   },
-  "orderly": { "definition": "Devoid of violence or disruption.", "arabicTranslation": "" },
+  "orderly": {
+    "definition": "Devoid of violence or disruption.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ورديرلي»"
+  },
   "ophthalmologist": {
     "definition": "A medical doctor specializing in the diagnosis and treatment of diseases of the eye.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «وفثالمولوجيست»"
   },
   "dermatologist": {
     "definition": "A doctor who specializes in the physiology and pathology of the skin.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ديرماتولوجيست»"
   },
-  "cardiologist": { "definition": "A specialist in cardiology.", "arabicTranslation": "" },
+  "cardiologist": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كارديولوجيست»",
+    "definition": "A specialist in cardiology."
+  },
   "neurologist": {
     "definition": "A medical specialist in the nervous system and the disorders affecting it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نظام يُسمّى «نيورولوجيست»"
   },
   "orthopedist": {
     "definition": "A specialist in correcting deformities of the skeletal system (especially in children).",
-    "arabicTranslation": ""
+    "arabicTranslation": "نظام يُسمّى «ورثوبيديست»"
   },
   "ent-specialist": {
     "definition": "A doctor specializing in conditions of the ear, nose, and throat, also called an otolaryngologist.",
     "exampleUsage": "The patient was referred to an ENT specialist.",
     "arabicTranslation": "اختصاصي أنف وأذن وحنجرة"
   },
-  "urologist": { "arabicTranslation": "" },
-  "oncologist": { "arabicTranslation": "" },
+  "urologist": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ورولوجيست»",
+    "definition": "A doctor who treats conditions of the urinary system."
+  },
+  "oncologist": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ونكولوجيست»",
+    "definition": "A doctor who specializes in diagnosing and treating cancer."
+  },
   "gastroenterologist": {
     "definition": "A physician who specializes in diseases of the gastrointestinal tract.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «جاستروينتيرولوجيست»"
   },
   "pulmonologist": {
     "definition": "A doctor specializing in diseases and conditions of the lungs and respiratory system.",
@@ -76,19 +91,20 @@
   },
   "physiotherapist": {
     "definition": "Therapist who treats injury or dysfunction with exercises and other physical treatments of the disorder.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «فيسيوثيرابيست»"
   },
   "dietitian": {
     "definition": "A specialist in the study of diet and nutrition.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «دييتيتيان»"
   },
   "lab-technician": {
     "definition": "A trained technical worker who prepares materials, operates laboratory instruments, conducts routine tests, and records findings under scientists’ or senior staff’s supervision.",
-    "arabicTranslation": "فني مختبر"
+    "arabicTranslation": "فني مختبر",
+    "exampleUsage": "The lab technician was used during the activity."
   },
   "emt": {
     "definition": "A trained emergency medical technician, or EMT, gives care before a patient reaches a hospital. An EMT can also take the patient there for more help.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «يمت»"
   },
   "emergency-room": {
     "definition": "A hospital or clinic area is prepared and staffed to treat people who need medical attention immediately.",
@@ -101,11 +117,11 @@
   },
   "operating-room": {
     "definition": "A specially equipped hospital room is used for surgery and kept sterile to reduce the risk of infection.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «وبيراتينج رووم»"
   },
   "recovery-room": {
     "definition": "A hospital room where patients are monitored and cared for after surgery.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «ريكوفيري رووم»"
   },
   "patient-room": {
     "definition": "A hospital room where a patient stays for care, observation, or recovery.",
@@ -119,20 +135,23 @@
   },
   "maternity-ward": {
     "definition": "A hospital ward where women receive care during pregnancy and childbirth, alongside care for their newborn infants.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ماتيرنيتي وارد»"
   },
-  "nursery": { "definition": "A child's room for a baby.", "arabicTranslation": "" },
+  "nursery": {
+    "arabicTranslation": "غرفة يُسمّى «نورسيري»",
+    "definition": "A child's room for a baby."
+  },
   "laboratory": {
     "definition": "A region resembling a laboratory inasmuch as it offers opportunities for observation and practice and experimentation.",
     "arabicTranslation": "مختبر"
   },
   "radiology": {
     "definition": "(radiology) examination of the inner structure of opaque objects using X rays or other penetrating radiation.",
-    "arabicTranslation": ""
+    "arabicTranslation": "هيكل يُسمّى «راديولوجي»"
   },
   "cafeteria": {
     "definition": "A restaurant where you serve yourself and pay a cashier.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كافيتيريا»"
   },
   "pharmacy": {
     "definition": "A retail shop where medicine and other articles are sold.",
@@ -160,7 +179,7 @@
   },
   "isolation-room": {
     "definition": "A hospital room used to separate a patient who may have, or has, an illness that can spread.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «يسولاتيون رووم»"
   },
   "sterilization-room": {
     "definition": "A controlled area where reusable medical instruments are cleaned, packaged, and sterilized.",
@@ -174,11 +193,12 @@
   },
   "blood-bank": {
     "definition": "A reserve of donated blood units is kept at a hospital or blood center for transfusions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بلوود بانك»"
   },
   "stethoscope": {
     "definition": "A medical instrument for listening to the sounds generated inside the body.",
-    "arabicTranslation": "سماعة طبية"
+    "arabicTranslation": "سماعة طبية",
+    "exampleUsage": "The stethoscope was used during the activity."
   },
   "syringe": {
     "definition": "To spray or irrigate (a body part) with a syringe.",
@@ -186,7 +206,8 @@
   },
   "thermometer": {
     "definition": "Measuring instrument for measuring temperature.",
-    "arabicTranslation": "مقياس حرارة"
+    "arabicTranslation": "مقياس حرارة",
+    "exampleUsage": "The thermometer was used during the activity."
   },
   "blood-pressure-monitor": {
     "definition": "A device used to measure and display blood pressure.",
@@ -200,37 +221,43 @@
   },
   "wheelchair": {
     "definition": "A movable chair mounted on large wheels.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «وهييلتشاير»"
   },
   "stretcher": {
     "definition": "A wooden framework on which canvas is stretched and fixed for oil painting.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ستريتتشير»"
   },
   "oxygen-mask": {
     "definition": "A device worn over the nose and mouth delivers oxygen from a connected storage tank.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «وكسيجين ماسك»",
+    "exampleUsage": "The oxygen mask was used during the activity."
   },
   "defibrillator": {
     "definition": "An electronic device that administers an electric shock of preset voltage to the heart through the chest wall in an attempt to restore the normal rhythm of the heart during ventricular fibrillation.",
-    "arabicTranslation": "جهاز مزيل الرجفان"
+    "arabicTranslation": "جهاز مزيل الرجفان",
+    "exampleUsage": "The defibrillator was used during the activity."
   },
   "scalpel": {
     "definition": "A thin straight surgical knife used in dissection and surgery.",
     "exampleUsage": "The glossary uses the term \"scalpel\" in an educational description.",
     "arabicTranslation": "مشرط"
   },
-  "bandage": { "definition": "To dress by covering or binding.", "arabicTranslation": "ضمادة" },
+  "bandage": {
+    "definition": "To dress by covering or binding.",
+    "arabicTranslation": "ضمادة"
+  },
   "cast": {
     "definition": "Container into which liquid is poured to create a given shape when it hardens.",
     "arabicTranslation": "جبيرة جبسية"
   },
   "ventilator": {
     "definition": "A device (such as a fan) that introduces fresh air or expels foul air.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «فينتيلاتور»",
+    "exampleUsage": "The ventilator was used during the activity."
   },
   "catheter": {
     "definition": "A thin flexible tube inserted into the body to permit introduction or withdrawal of fluids or to keep the passageway open.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كاثيتير»"
   },
   "pulse-oximeter": {
     "definition": "A noninvasive device that estimates blood oxygen saturation and pulse rate, usually from a fingertip.",
@@ -244,11 +271,11 @@
   },
   "nebulizer": {
     "definition": "A dispenser that turns a liquid (such as perfume) into a fine mist.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «نيبوليزير»"
   },
   "tourniquet": {
     "definition": "Bandage that stops the flow of blood from an artery by applying pressure.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «توورنيكيت»"
   },
   "surgical-mask": {
     "definition": "A disposable medical mask designed to reduce the spread of droplets and protect a clinical field from contamination.",
@@ -262,38 +289,47 @@
   },
   "heart": {
     "definition": "The hollow muscular organ located behind the sternum and between the lungs.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «هيارت»"
   },
   "lungs": {
     "definition": "Either of two saclike respiratory organs in the chest of vertebrates.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «لونجس»"
   },
   "brain": {
     "definition": "That which is responsible for one's thoughts, feelings, and conscious brain functions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شعور يُسمّى «براين»"
   },
-  "bone": { "definition": "Consisting of or made up of bone.", "arabicTranslation": "" },
+  "bone": {
+    "definition": "Consisting of or made up of bone.",
+    "arabicTranslation": "عظم يُسمّى «بوني»"
+  },
   "blood": {
     "definition": "The fluid (red in vertebrates) that is pumped through the body by the heart and contains plasma, blood cells, and platelets.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بلوود»"
   },
   "pulse": {
     "definition": "The rhythmic contraction and expansion of the arteries with each beat of the heart.",
-    "arabicTranslation": ""
+    "arabicTranslation": "فعل أو عملية يُسمّى «بولسي»"
   },
-  "fever": { "definition": "A rise in the temperature of the body.", "arabicTranslation": "" },
+  "fever": {
+    "definition": "A rise in the temperature of the body.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «فيفير»"
+  },
   "infection": {
     "definition": "(medicine) the invasion of the body by pathogenic microorganisms and their multiplication which can lead to tissue damage and disease.",
     "arabicTranslation": "عدوى"
   },
   "injury": {
     "definition": "Any physical damage to the body caused by violence or accident or fracture etc.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ينجوري»"
   },
-  "fracture": { "definition": "Breaking of hard tissue such as bone.", "arabicTranslation": "كسر" },
+  "fracture": {
+    "definition": "Breaking of hard tissue such as bone.",
+    "arabicTranslation": "كسر"
+  },
   "allergy": {
     "definition": "Hypersensitivity reaction to a particular allergen.",
-    "arabicTranslation": ""
+    "arabicTranslation": "فعل أو عملية يُسمّى «الليرجي»"
   },
   "rash": {
     "definition": "A series of unexpected and unpleasant occurrences.",
@@ -301,11 +337,11 @@
   },
   "liver": {
     "definition": "Large and complicated reddish-brown glandular organ located in the upper right portion of the abdominal cavity.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طبق يُسمّى «ليفير»"
   },
   "kidneys": {
     "definition": "Either of two bean-shaped excretory organs that filter wastes (especially urea) from the blood and excrete them and water in urine.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «كيدنييس»"
   },
   "spine": {
     "definition": "The part of a book's cover that encloses the inner side of the book's pages and that faces outward when the book is shelved.",
@@ -313,15 +349,15 @@
   },
   "stomach": {
     "definition": "An inclination or liking for things involving conflict or difficulty or unpleasantness.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ستوماتش»"
   },
   "intestines": {
     "definition": "The part of the alimentary canal between the stomach and the anus.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «ينتيستينيس»"
   },
   "muscles": {
     "definition": "One of the contractile organs of the body.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «موسكليس»"
   },
   "arteries": {
     "definition": "Blood vessels that carry blood away from the heart to tissues throughout the body.",
@@ -330,20 +366,23 @@
   },
   "appendix": {
     "definition": "Supplementary material that is collected and appended at the back of a book.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «اببينديكس»"
   },
   "inflammation": {
     "definition": "The state of being emotionally aroused and worked up.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شعور يُسمّى «ينفلامماتيون»"
   },
-  "nausea": { "definition": "The state that precedes vomiting.", "arabicTranslation": "" },
+  "nausea": {
+    "definition": "The state that precedes vomiting.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ناوسيا»"
+  },
   "examination": {
     "definition": "A set of questions or exercises evaluating skill or knowledge.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «يكساميناتيون»"
   },
   "diagnosis": {
     "definition": "Identifying the nature or cause of some phenomenon.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «دياجنوسيس»"
   },
   "prescription": {
     "definition": "A drug that is available only with written instructions from a doctor or dentist to a pharmacist.",
@@ -359,7 +398,7 @@
   },
   "blood-test": {
     "definition": "Analysis of a blood sample can reveal, measure, or track substances, cells, and other signs of how the body is working.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بلوود تيست»"
   },
   "injection": {
     "definition": "The act of putting a liquid into the body by means of a syringe.",
@@ -370,8 +409,8 @@
     "arabicTranslation": "تطعيم"
   },
   "ultrasound": {
-    "definition": "Very high frequency sound.",
-    "arabicTranslation": "موجات فوق صوتية"
+    "arabicTranslation": "موجات فوق صوتية",
+    "definition": "Very high frequency sound."
   },
   "mri-scan": {
     "definition": "A diagnostic imaging examination that uses strong magnetic fields and radio waves to create detailed images inside the body.",
@@ -389,61 +428,67 @@
   },
   "biopsy": {
     "definition": "Examination of tissues or liquids from the living body to determine the existence or cause of a disease.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بيوبسي»"
   },
   "dialysis": {
     "definition": "Separation of substances in solution by means of their unequal diffusion through semipermeable membranes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «دياليسيس»"
   },
   "transfusion": {
     "definition": "The introduction of blood or blood plasma into a vein or artery.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ترانسفوسيون»"
   },
   "chemotherapy": {
     "definition": "The use of chemical agents to treat or control disease (or mental illness).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة كيميائية يُسمّى «تشيموثيرابي»"
   },
   "endoscopy": {
     "definition": "Visual examination of the interior of a hollow body organ by use of an endoscope.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «يندوسكوبي»"
   },
   "ct-scan": {
     "definition": "A work titled CT scan is named after computed tomography, a medical procedure that creates images of the body.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كت سكان»"
   },
   "colonoscopy": {
     "definition": "Visual examination of the colon (with a colonoscope) from the cecum to the rectum.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كولونوسكوبي»"
   },
   "transplant": {
     "definition": "(surgery) tissue or organ transplanted from a donor to a recipient.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نبات يُسمّى «ترانسبلانت»"
   },
   "hospital-bed": {
     "definition": "A medical bed used in hospitals and similar care settings can be adjusted in height and position. It is designed to help staff care for patients, monitor their condition, and provide treatment.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «هوسبيتال بيد»"
   },
   "pillow": {
     "definition": "A soft rectangular pad that supports your head while you sleep.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بيللوو»"
   },
   "blanket": {
     "definition": "A thick woven cover, often wool, laid over you for warmth.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بلانكيت»"
   },
   "gown": {
     "definition": "The members of a university as distinguished from the other residents of the town in which the university is located.",
     "arabicTranslation": "ثوب طويل"
   },
-  "chart": { "arabicTranslation": "خريطة ملاحية" },
+  "chart": {
+    "arabicTranslation": "خريطة ملاحية",
+    "definition": "A record of a patient's medical information and treatment."
+  },
   "clipboard": {
     "definition": "A small writing board with a clip at the top for holding papers.",
     "arabicTranslation": "لوح كتابة"
   },
-  "medicine": { "definition": "Punishment for one's actions.", "arabicTranslation": "" },
+  "medicine": {
+    "arabicTranslation": "فعل أو عملية يُسمّى «ميديكيني»",
+    "definition": "Punishment for one's actions."
+  },
   "pills": {
     "definition": "Something that resembles a tablet of medicine in shape or size.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شكل يُسمّى «بيللس»"
   },
   "ointment": {
     "definition": "Semisolid preparation (usually containing a medicine) applied externally as a remedy or for soothing an irritation.",
@@ -456,11 +501,11 @@
   },
   "walker": {
     "definition": "New Zealand runner who in 1975 became the first person to run a mile in less than 3 minutes and 50 seconds (born in 1952).",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «والكير»"
   },
   "ambulance": {
     "definition": "A vehicle that takes people to and from hospitals.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «امبولانكي»"
   },
   "face-shield": {
     "definition": "A clear protective covering worn over the face to help keep droplets or splashes away from the eyes, nose, and mouth in schools, laboratories, and healthcare settings.",
@@ -468,7 +513,7 @@
   },
   "hand-sanitizer": {
     "definition": "A liquid or gel used to clean your hands when soap and water are unavailable.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «هاند سانيتيزير»"
   },
   "sharps-container": {
     "definition": "A puncture-resistant approved container for disposing of needles and other sharp medical items.",
@@ -477,7 +522,7 @@
   },
   "bedpan": {
     "definition": "A shallow vessel used by a bedridden patient for defecation and urination.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بيدبان»"
   },
   "patient-wristband": {
     "definition": "A hospital identification band worn by a patient and used to confirm important identity information.",

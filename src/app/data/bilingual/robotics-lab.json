@@ -1,12 +1,16 @@
 {
-  "motor": { "definition": "Causing or able to cause motion.", "arabicTranslation": "محرك" },
+  "motor": {
+    "definition": "Causing or able to cause motion.",
+    "arabicTranslation": "محرك"
+  },
   "sensor": {
     "definition": "Any device that receives a signal or stimulus (as heat or pressure or light or motion etc.) and responds to it in a distinctive manner.",
-    "arabicTranslation": "مستشعر"
+    "arabicTranslation": "مستشعر",
+    "exampleUsage": "The sensor was used during the activity."
   },
   "circuit-board": {
     "definition": "A rigid, nonconductive panel holds electronic parts in place and links them through metal tracks formed on its surface.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «كيركويت بوارد»"
   },
   "battery-pack": {
     "definition": "A group of battery cells and related components assembled to store and supply electrical energy.",
@@ -19,20 +23,24 @@
   },
   "wheel": {
     "definition": "A simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines).",
-    "arabicTranslation": "عجلة"
+    "arabicTranslation": "عجلة",
+    "exampleUsage": "The wheel was used during the activity."
   },
-  "axle": { "definition": "A shaft on which a wheel rotates.", "arabicTranslation": "محور" },
+  "axle": {
+    "definition": "A shaft on which a wheel rotates.",
+    "arabicTranslation": "محور"
+  },
   "frame": {
     "definition": "The supporting shape or structure of a building.",
     "arabicTranslation": "إطار"
   },
   "arm": {
     "definition": "Any projection that is thought to resemble a human arm.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «ارم»"
   },
   "gripper": {
     "definition": "A mechanical part that grips objects securely so they can be held, moved, or positioned accurately.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «جريببير»"
   },
   "camera-module": {
     "definition": "A compact electronic component containing a camera sensor and related optics or circuitry.",
@@ -41,38 +49,52 @@
   },
   "led": {
     "definition": "Diode such that light emitted at a p-n junction is proportional to the bias current.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «ليد»"
   },
-  "wire": { "definition": "The finishing line on a racetrack.", "arabicTranslation": "سلك" },
+  "wire": {
+    "definition": "The finishing line on a racetrack.",
+    "arabicTranslation": "سلك"
+  },
   "resistor": {
     "definition": "An electrical device that resists the flow of electrical current.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «ريسيستور»",
+    "exampleUsage": "The resistor was used during the activity."
   },
   "capacitor": {
     "definition": "An electrical device characterized by its capacity to store an electric charge.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «كاباكيتور»",
+    "exampleUsage": "The capacitor was used during the activity."
   },
   "transistor": {
     "definition": "A semiconductor device capable of amplification.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «ترانسيستور»",
+    "exampleUsage": "The transistor was used during the activity."
   },
-  "diode": { "definition": "A thermionic tube having two electrodes.", "arabicTranslation": "" },
+  "diode": {
+    "definition": "A thermionic tube having two electrodes.",
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «ديودي»"
+  },
   "microchip": {
     "definition": "Electronic equipment consisting of a small crystal of a silicon semiconductor fabricated to carry out a number of electronic functions in an integrated circuit.",
     "arabicTranslation": "شريحة إلكترونية"
   },
   "breadboard": {
     "definition": "A wooden or plastic board on which dough is kneaded or bread is sliced.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «بريادبوارد»"
   },
   "soldering-iron": {
     "definition": "A handheld tool with a heated tip used to melt and apply solder, a metal alloy that joins electrical parts.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «سولديرينج يرون»",
+    "exampleUsage": "The soldering iron was used during the activity."
   },
-  "solder": { "definition": "To join or fuse with solder.", "arabicTranslation": "" },
+  "solder": {
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «سولدير»",
+    "definition": "To join metal parts using a melted filler metal."
+  },
   "multimeter": {
     "definition": "A portable instrument that tests several features of electricity, including voltage, current, and resistance, in a circuit.",
-    "arabicTranslation": "ملتيميتر"
+    "arabicTranslation": "ملتيميتر",
+    "exampleUsage": "The multimeter was used during the activity."
   },
   "screwdriver-set": {
     "definition": "A collection of screwdrivers in different sizes or tip types.",
@@ -81,15 +103,18 @@
   },
   "pliers": {
     "definition": "A hand tool with two handles used for gripping or cutting.",
-    "arabicTranslation": "كماشة"
+    "arabicTranslation": "كماشة",
+    "exampleUsage": "The pliers was used during the activity."
   },
   "wire-cutter": {
     "definition": "A hand tool with two sharp edges designed to cut wire.",
-    "arabicTranslation": "قطّاعة سلك"
+    "arabicTranslation": "قطّاعة سلك",
+    "exampleUsage": "The wire cutter was used during the activity."
   },
   "wire-stripper": {
     "definition": "A handheld tool that lets electricians strip the protective coating from the exposed end of a cut wire.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «ويري ستريببير»",
+    "exampleUsage": "The wire stripper was used during the activity."
   },
   "hot-glue-gun": {
     "definition": "An electrically heated tool that melts adhesive sticks; it can cause burns and should be used only with appropriate supervision and safety precautions.",
@@ -98,19 +123,23 @@
   },
   "allen-key": {
     "definition": "A tool with a six-sided key used to turn certain screws.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «اللين كيي»",
+    "exampleUsage": "The allen key was used during the activity."
   },
   "wrench": {
     "definition": "A tool used for turning nuts, bolts, or pipes.",
-    "arabicTranslation": "مفتاح ربط"
+    "arabicTranslation": "مفتاح ربط",
+    "exampleUsage": "The wrench was used during the activity."
   },
   "tweezers": {
     "definition": "A small tool consisting of two pointed arms used for picking up small objects or plucking hairs.",
-    "arabicTranslation": "ملقط"
+    "arabicTranslation": "ملقط",
+    "exampleUsage": "The tweezers was used during the activity."
   },
   "magnifying-glass": {
     "definition": "A handheld tool uses a curved lens to make nearby details appear larger for close viewing or reading.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «ماجنيفيينج جلاسس»",
+    "exampleUsage": "The magnifying glass was used during the activity."
   },
   "helping-hands": {
     "definition": "A small workbench tool with adjustable clips used to hold components in position during assembly or inspection.",
@@ -119,39 +148,46 @@
   },
   "computer": {
     "definition": "A machine for performing calculations automatically.",
-    "arabicTranslation": "حاسوب"
+    "arabicTranslation": "حاسوب",
+    "exampleUsage": "The computer was used during the activity."
   },
   "monitor": {
     "definition": "Display produced by a device that takes signals and displays them on a television screen or a computer monitor.",
-    "arabicTranslation": "شاشة مراقبة"
+    "arabicTranslation": "شاشة مراقبة",
+    "exampleUsage": "The monitor was used during the activity."
   },
   "keyboard": {
     "definition": "Device consisting of a set of keys on a piano or organ or typewriter or typesetting machine or computer or the like.",
-    "arabicTranslation": "لوحة مفاتيح"
+    "arabicTranslation": "لوحة مفاتيح",
+    "exampleUsage": "The keyboard was used during the activity."
   },
   "mouse": {
     "definition": "A hand-operated electronic device that controls the coordinates of a cursor on your computer screen as you move it around on a pad.",
-    "arabicTranslation": "فأرة حاسوب"
+    "arabicTranslation": "فأرة حاسوب",
+    "exampleUsage": "The mouse was used during the activity."
   },
   "code-editor": {
     "definition": "A specialized software application for writing, viewing, and editing source code, with features that color code elements, align indentation, and support basic text changes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لون يُسمّى «كودي يديتور»"
   },
   "usb-cable": {
     "definition": "A cable used to connect devices or transfer power and data.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «وسب كابلي»",
+    "exampleUsage": "The usb cable was used during the activity."
   },
   "controller": {
     "definition": "A mechanism that controls the operation of a machine.",
-    "arabicTranslation": "متحكم"
+    "arabicTranslation": "متحكم",
+    "exampleUsage": "The controller was used during the activity."
   },
   "joystick": {
     "definition": "A manual control consisting of a vertical handle that can move freely in two directions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «جويستيك»"
   },
   "humanoid-robot": {
     "definition": "A robot built with a humanlike body plan, usually featuring a torso, head, two arms, and two legs. Its machinery may remain visible, or synthetic skin may cover the outside.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «هومانويد روبوت»",
+    "exampleUsage": "The humanoid robot was used during the activity."
   },
   "drone": {
     "definition": "Stingless male bee in a colony of social bees (especially honeybees) whose sole function is to mate with the queen.",
@@ -159,7 +195,7 @@
   },
   "robotic-arm": {
     "definition": "Describing equipment that uses a robotic arm to handle objects without direct human control.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «روبوتيك ارم»"
   },
   "wheeled-robot": {
     "definition": "A robot that moves using wheels.",
@@ -198,7 +234,7 @@
   },
   "workbench": {
     "definition": "A strong worktable for a carpenter or mechanic.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «ووركبينتش»"
   },
   "storage-bin": {
     "definition": "A box or container used to organize and store parts or materials.",
@@ -207,19 +243,20 @@
   },
   "pegboard": {
     "definition": "A board perforated with regularly spaced holes into which pegs can be fitted.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «بيجبوارد»"
   },
   "safety-glasses": {
     "definition": "A label for eyewear made to shield the eyes from hazards, especially in science labs and workshops.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «سافيتي جلاسسيس»"
   },
   "lab-notebook": {
     "definition": "A ready-made notebook layout for recording an experiment, with sections for its purpose, materials, method, results, and conclusion.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «لاب نوتيبووك»"
   },
   "3d-printer": {
     "definition": "A device that converts digital text or images into printed pages by placing ink or toner on paper.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «3د برينتير»",
+    "exampleUsage": "The 3d printer was used during the activity."
   },
   "laser-cutter": {
     "definition": "A computer-controlled machine that uses a powerful laser to cut or engrave approved materials; it requires trained supervision, enclosure, and safety controls.",
@@ -228,11 +265,12 @@
   },
   "oscilloscope": {
     "definition": "Electronic equipment that provides visual images of varying electrical quantities.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «وسكيللوسكوبي»"
   },
   "power-supply": {
     "definition": "A device that converts energy from a source into the controlled voltage and current an electrical load needs is called a power supply.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «بووير سوببلي»",
+    "exampleUsage": "The power supply was used during the activity."
   },
   "testing-mat": {
     "definition": "A marked surface used to test robot movement, sensors, or navigation in a controlled area.",
@@ -245,15 +283,15 @@
   },
   "humanoid": {
     "definition": "An automaton that resembles a human being.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «هومانويد»"
   },
   "rover": {
     "definition": "A person who leads a wandering unsettled life.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «روفير»"
   },
   "chassis": {
     "definition": "The skeleton of a motor vehicle consisting of a steel frame supported on springs that holds the body and motor.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «تشاسسيس»"
   },
   "track": {
     "definition": "A line or route along which something travels or moves.",
@@ -261,34 +299,36 @@
   },
   "code": {
     "definition": "Instructions written for a computer to follow when running a program.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «كودي»"
   },
   "algorithm": {
     "definition": "A precise rule (or set of rules) specifying how to solve some problem.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «الجوريثم»"
   },
   "loop": {
     "definition": "(computer science) a single execution of a set of instructions that are to be repeated.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «لووب»"
   },
   "function": {
     "definition": "(mathematics) a mathematical relation such that each element of a given set (the domain of the function) is associated with an element of another set (the range of the function).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «فونكتيون»"
   },
   "debug": {
     "definition": "To locate and correct errors in a computer program code.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «ديبوج»"
   },
   "compile": {
     "definition": "To use a computer program to translate source code written in a particular programming language into computer-readable machine code that can be executed.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «كومبيلي»",
+    "exampleUsage": "The compile was used during the activity."
   },
   "variable": {
     "definition": "(used of a device) designed so that a property (as e.g. light) can be varied.",
-    "arabicTranslation": "متغير"
+    "arabicTranslation": "متغير",
+    "exampleUsage": "The variable was used during the activity."
   },
   "input": {
     "definition": "A statement that expresses a personal opinion or belief or adds information.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «ينبوت»"
   }
 }

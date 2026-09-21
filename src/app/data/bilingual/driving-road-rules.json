@@ -1,15 +1,15 @@
 {
   "stop-sign": {
     "definition": "A red, eight-sided road sign requires drivers to halt before crossing an intersection.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ستوب سيجن»"
   },
   "yield-sign": {
     "definition": "A traffic sign tells drivers to slow or stop when needed. They must give approaching traffic the right of way before continuing.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يييلد سيجن»"
   },
   "speed-limit": {
     "definition": "The highest speed at which motor vehicles may lawfully travel on a particular road or within a designated area, as set by signs or traffic law.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح قانوني يُسمّى «سبييد ليميت»"
   },
   "one-way": {
     "definition": "Allowing traffic to move in only one direction along a road or lane.",
@@ -23,7 +23,7 @@
   },
   "pedestrian-crossing": {
     "definition": "A specially marked part of a road provides a set place for people to cross. Paint, signs, traffic signals, or a raised surface may identify it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «بيديستريان كروسسينج»"
   },
   "school-zone": {
     "definition": "A road area near a school where special traffic rules or lower speed limits may apply.",
@@ -35,20 +35,26 @@
     "exampleUsage": "The construction zone had temporary signs and barriers.",
     "arabicTranslation": "منطقة أعمال طرق"
   },
-  "merge": { "arabicTranslation": "" },
+  "merge": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ميرجي»",
+    "definition": "To join a lane of traffic from another lane or road."
+  },
   "exit-sign": {
     "definition": "A road sign showing where a driver can leave a highway, road, or facility.",
     "exampleUsage": "The exit sign pointed toward the airport road.",
     "arabicTranslation": "لافتة مخرج"
   },
-  "lane": { "arabicTranslation": "" },
+  "lane": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لاني»",
+    "definition": "A marked strip of road used by one line of vehicles."
+  },
   "shoulder": {
     "definition": "A narrow edge of land (usually unpaved) along the side of a road.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «شوولدير»"
   },
   "median": {
     "definition": "Relating to or constituting the middle value of an ordered set of values (or the average of the middle two in a set with an even number of values).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ميديان»"
   },
   "curb": {
     "definition": "A stock exchange in New York, previously known as the New York Curb Exchange.",
@@ -56,53 +62,68 @@
   },
   "sidewalk": {
     "definition": "Walk consisting of a paved area for pedestrians.",
-    "arabicTranslation": ""
+    "arabicTranslation": "منطقة يُسمّى «سيديوالك»"
   },
   "crosswalk": {
     "definition": "A marked place where people cross a road safely.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «كروسسوالك»"
   },
   "traffic-light": {
     "definition": "The light’s current color tells drivers whether they may proceed, should use caution, or must stop.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لون يُسمّى «تراففيك ليغت»"
   },
   "roundabout": {
     "definition": "A road junction at which traffic streams circularly around a central island.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «رووندابووت»"
   },
   "overpass": {
     "definition": "Bridge formed by the upper level of a crossing of two highways at different levels.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وفيرباسس»"
   },
   "underpass": {
     "definition": "An underground tunnel or passage enabling pedestrians to cross a road or railway.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ونديرباسس»"
   },
-  "accelerate": { "arabicTranslation": "" },
-  "brake": { "definition": "To stop travelling by applying a brake.", "arabicTranslation": "" },
-  "steer": { "definition": "To direct (oneself) somewhere.", "arabicTranslation": "" },
+  "accelerate": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اككيليراتي»",
+    "definition": "To increase speed while driving or moving."
+  },
+  "brake": {
+    "definition": "To stop travelling by applying a brake.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «براكي»"
+  },
+  "steer": {
+    "definition": "To direct (oneself) somewhere.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ستيير»"
+  },
   "signal": {
     "definition": "An electrical or radio message that carries information.",
     "arabicTranslation": "إشارة"
   },
-  "overtake": { "definition": "To catch up with and possibly overtake.", "arabicTranslation": "" },
+  "overtake": {
+    "definition": "To catch up with and possibly overtake.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وفيرتاكي»"
+  },
   "park": {
     "definition": "A gear position that acts as a parking brake.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بارك»"
   },
   "reverse": {
     "definition": "Of the transmission gear causing backward movement in a motor vehicle.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «ريفيرسي»"
   },
   "u-turn": {
     "definition": "A vehicle makes a tight turn, reverses its direction, and continues along the road it came from.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «و-تورن»"
   },
   "yield": {
     "definition": "To move in order to make room for someone for something.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «يييلد»"
   },
-  "dui": { "definition": "A pair who associate with one another.", "arabicTranslation": "" },
+  "dui": {
+    "definition": "A pair who associate with one another.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «دوي»"
+  },
   "seat-belt-law": {
     "definition": "A law requiring vehicle occupants to use seat belts under specified conditions.",
     "exampleUsage": "The road-safety lesson explains the local seat-belt law.",
@@ -115,7 +136,7 @@
   },
   "blind-spot": {
     "definition": "An area hidden from a person’s view, particularly beside and behind a vehicle where mirrors provide no clear view.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «بليند سبوت»"
   },
   "defensive-driving": {
     "definition": "A safety-focused approach to driving that emphasizes awareness, anticipation of hazards, and compliance with traffic rules.",
@@ -124,7 +145,7 @@
   },
   "road-rage": {
     "definition": "Aggressive or violent acts committed by drivers during disputes on the road.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «رواد راجي»"
   },
   "hit-and-run": {
     "definition": "A traffic incident in which a driver involved in a collision leaves without fulfilling legal duties such as stopping or reporting.",

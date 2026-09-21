@@ -19,8 +19,14 @@
     "definition": "A facial expression characteristic of a person laughing.",
     "arabicTranslation": "يضحك"
   },
-  "giggle": { "definition": "A foolish or nervous laugh.", "arabicTranslation": "يقهقه بخفة" },
-  "chuckle": { "definition": "A soft partly suppressed laugh.", "arabicTranslation": "يضحك بخفوت" },
+  "giggle": {
+    "arabicTranslation": "يقهقه بخفة",
+    "definition": "A foolish or nervous laugh."
+  },
+  "chuckle": {
+    "definition": "A soft partly suppressed laugh.",
+    "arabicTranslation": "يضحك بخفوت"
+  },
   "wink": {
     "definition": "A very short time (as the time it takes the eye to blink or the heart to beat).",
     "arabicTranslation": "يغمز"
@@ -49,9 +55,18 @@
     "definition": "A loud utterance of emotion (especially when inarticulate).",
     "arabicTranslation": "يبكي"
   },
-  "sob": { "definition": "Convulsive gasp made while weeping.", "arabicTranslation": "ينتحب" },
-  "whimper": { "arabicTranslation": "ينتحب بخفوت" },
-  "grimace": { "definition": "A contorted facial expression.", "arabicTranslation": "تكشيرة" },
+  "sob": {
+    "definition": "Convulsive gasp made while weeping.",
+    "arabicTranslation": "ينتحب"
+  },
+  "whimper": {
+    "arabicTranslation": "ينتحب بخفوت",
+    "definition": "To make a quiet, weak crying sound."
+  },
+  "grimace": {
+    "definition": "A contorted facial expression.",
+    "arabicTranslation": "تكشيرة"
+  },
   "quiver": {
     "definition": "To shake with fast, tremulous movements.",
     "arabicTranslation": "يرتجف"
@@ -60,13 +75,22 @@
     "definition": "To droop, sink, or settle from or as if from pressure or loss of tautness.",
     "arabicTranslation": "يتدلّى"
   },
-  "gloom": { "definition": "A state of partial or total darkness.", "arabicTranslation": "كآبة" },
-  "scowl": { "definition": "To frown with displeasure.", "arabicTranslation": "يقطّب" },
+  "gloom": {
+    "definition": "A state of partial or total darkness.",
+    "arabicTranslation": "كآبة"
+  },
+  "scowl": {
+    "arabicTranslation": "يقطّب",
+    "definition": "To look at someone with an angry or disapproving expression."
+  },
   "glare": {
     "definition": "A light within the field of vision that is brighter than the brightness to which the eyes are adapted.",
     "arabicTranslation": "نظرة حادة"
   },
-  "snarl": { "arabicTranslation": "زمجرة" },
+  "snarl": {
+    "arabicTranslation": "زمجرة",
+    "definition": "To show the teeth and make an angry sound."
+  },
   "clench-jaw": {
     "definition": "To tighten the jaw muscles or press the teeth together, often because of stress, anger, or determination.",
     "exampleUsage": "He clenched his jaw when he heard the frustrating news.",
@@ -91,7 +115,10 @@
     "exampleUsage": "She gritted her teeth and finished the difficult climb.",
     "arabicTranslation": "يَصِرّ على أسنانه"
   },
-  "stare": { "definition": "A fixed look with eyes open wide.", "arabicTranslation": "يحدّق" },
+  "stare": {
+    "definition": "A fixed look with eyes open wide.",
+    "arabicTranslation": "يحدّق"
+  },
   "squint": {
     "definition": "Abnormal alignment of one or both eyes.",
     "arabicTranslation": "يُضيّق عينيه"
@@ -115,7 +142,10 @@
     "exampleUsage": "His raised eyebrows showed that he was surprised.",
     "arabicTranslation": "حاجبان مرفوعان"
   },
-  "startle": { "definition": "A sudden involuntary movement.", "arabicTranslation": "يفزع" },
+  "startle": {
+    "definition": "A sudden involuntary movement.",
+    "arabicTranslation": "يفزع"
+  },
   "pale-face": {
     "definition": "A face that has lost some of its usual color, often because of fear, illness, or shock.",
     "exampleUsage": "Her pale face made her friends ask whether she felt well.",
@@ -125,12 +155,18 @@
     "definition": "Devoid of warmth and cordiality.",
     "arabicTranslation": "جامد من الصدمة"
   },
-  "shudder": { "arabicTranslation": "يرتعش" },
+  "shudder": {
+    "arabicTranslation": "يرتعش",
+    "definition": "To shake suddenly because of fear, cold, or disgust."
+  },
   "tremble": {
     "definition": "To move or jerk quickly and involuntarily up and down or sideways.",
     "arabicTranslation": "يرتجف"
   },
-  "blink": { "arabicTranslation": "يرمش" },
+  "blink": {
+    "arabicTranslation": "يرمش",
+    "definition": "To close and open the eyes quickly."
+  },
   "yawn": {
     "definition": "An involuntary intake of breath through a wide open mouth.",
     "arabicTranslation": "يتثاءب"
@@ -174,6 +210,6 @@
   },
   "thumbs-up": {
     "definition": "A hand gesture that raises the thumb signals approval, agreement, or praise for someone’s performance.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ثومبس وب»"
   }
 }

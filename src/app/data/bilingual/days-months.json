@@ -39,7 +39,10 @@
     "definition": "A day when a person does not have to go to work or school.",
     "arabicTranslation": "يوم إجازة"
   },
-  "january": { "definition": "The first month of the year.", "arabicTranslation": "يناير" },
+  "january": {
+    "arabicTranslation": "يناير",
+    "definition": "The first month of the year."
+  },
   "february": {
     "definition": "The month following January and preceding March.",
     "arabicTranslation": "فبراير"
@@ -80,7 +83,10 @@
     "definition": "The month following October and preceding December.",
     "arabicTranslation": "نوفمبر"
   },
-  "december": { "definition": "The last (12th) month of the year.", "arabicTranslation": "ديسمبر" },
+  "december": {
+    "definition": "The last (12th) month of the year.",
+    "arabicTranslation": "ديسمبر"
+  },
   "leap-year": {
     "definition": "A year with 366 days, including an extra day in February.",
     "arabicTranslation": "سنة كبيسة"
@@ -110,15 +116,21 @@
     "arabicTranslation": "فصل من ثلاثة فصول دراسية"
   },
   "biannual": {
-    "definition": "Happening twice in one year.",
-    "arabicTranslation": "مرتين في السنة"
+    "arabicTranslation": "مرتين في السنة",
+    "definition": "Occurring or payable twice each year."
   },
-  "today": { "definition": "The day that is happening now.", "arabicTranslation": "اليوم" },
+  "today": {
+    "definition": "The day that is happening now.",
+    "arabicTranslation": "اليوم"
+  },
   "tomorrow": {
     "definition": "The day immediately after the present day.",
     "arabicTranslation": "غدًا"
   },
-  "yesterday": { "definition": "The day immediately before today.", "arabicTranslation": "أمس" },
+  "yesterday": {
+    "definition": "The day immediately before today.",
+    "arabicTranslation": "أمس"
+  },
   "this-week": {
     "definition": "The seven-day period that includes the present day, according to the calendar system being used.",
     "exampleUsage": "We have two lessons this week.",

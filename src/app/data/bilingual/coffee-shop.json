@@ -103,7 +103,10 @@
     "exampleUsage": "She chose a cake slice from the display case.",
     "arabicTranslation": "شريحة كعك"
   },
-  "sandwich": { "arabicTranslation": "شطيرة" },
+  "sandwich": {
+    "arabicTranslation": "شطيرة",
+    "definition": "Food made by placing a filling between slices of bread."
+  },
   "bagel": {
     "definition": "(Yiddish) glazed yeast-raised doughnut-shaped roll with hard crust.",
     "arabicTranslation": "خبز بيغل"
@@ -141,19 +144,23 @@
   },
   "tamper": {
     "definition": "A tool for tamping (e.g., for tamping tobacco into a pipe bowl or a charge into a drill hole etc.).",
-    "arabicTranslation": "مدك القهوة"
+    "arabicTranslation": "مدك القهوة",
+    "exampleUsage": "The tamper was used during the activity."
   },
   "scale": {
     "definition": "A device that measures how heavy a person or object is.",
-    "arabicTranslation": "مقياس رسم"
+    "arabicTranslation": "مقياس رسم",
+    "exampleUsage": "The scale was used during the activity."
   },
   "timer": {
     "definition": "A device that measures or signals the end of baking time.",
-    "arabicTranslation": "مؤقت"
+    "arabicTranslation": "مؤقت",
+    "exampleUsage": "The timer was used during the activity."
   },
   "thermometer": {
     "definition": "Measuring instrument for measuring temperature.",
-    "arabicTranslation": "مقياس حرارة"
+    "arabicTranslation": "مقياس حرارة",
+    "exampleUsage": "The thermometer was used during the activity."
   },
   "lid": {
     "definition": "A movable top or cover (hinged or separate) for closing the opening at the top of a box, chest, jar, pan, etc.",
@@ -175,7 +182,10 @@
     "definition": "A small pitcher for serving cream.",
     "arabicTranslation": "مبيض قهوة"
   },
-  "syrup": { "definition": "A thick sweet sticky liquid.", "arabicTranslation": "شراب منكّه" },
+  "syrup": {
+    "arabicTranslation": "شراب منكّه",
+    "definition": "A thick sweet sticky liquid."
+  },
   "stirrer": {
     "definition": "A person who spreads frightening rumors and stirs up trouble.",
     "arabicTranslation": "عود تقليب"

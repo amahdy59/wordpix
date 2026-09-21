@@ -17,7 +17,10 @@
     "definition": "A sandal with a sole made of rope or rubber and a cloth upper part.",
     "arabicTranslation": "إسبادريل"
   },
-  "moccasins": { "arabicTranslation": "موكاسين" },
+  "moccasins": {
+    "arabicTranslation": "موكاسين",
+    "definition": "Soft leather shoes with soles sewn to the upper part."
+  },
   "boat-shoes": {
     "definition": "Low casual shoes originally designed to provide grip on boat decks, often with non-marking rubber soles.",
     "exampleUsage": "The boat shoes had textured rubber soles.",
@@ -53,14 +56,23 @@
     "exampleUsage": "The Derby shoes had visible open lacing.",
     "arabicTranslation": "أحذية ديربي"
   },
-  "loafers": { "arabicTranslation": "حذاء لوفر" },
-  "brogues": { "arabicTranslation": "حذاء بروغ" },
+  "loafers": {
+    "arabicTranslation": "حذاء لوفر",
+    "definition": "Low shoes that slip on without laces."
+  },
+  "brogues": {
+    "arabicTranslation": "حذاء بروغ",
+    "definition": "Sturdy shoes decorated with small punched holes."
+  },
   "monk-strap": {
     "definition": "A shoe fastened with one or more straps and buckles instead of laces.",
     "exampleUsage": "The monk-strap shoe had a single metal buckle.",
     "arabicTranslation": "حذاء بحزام ومشبك"
   },
-  "pumps": { "arabicTranslation": "حذاء نسائي مغلق" },
+  "pumps": {
+    "arabicTranslation": "حذاء نسائي مغلق",
+    "definition": "Women's low-cut shoes, often with a heel."
+  },
   "stilettos": {
     "definition": "A small dagger with a tapered blade.",
     "arabicTranslation": "كعب رفيع مرتفع"
@@ -105,7 +117,10 @@
     "exampleUsage": "The cowboy boots had stitched leather patterns.",
     "arabicTranslation": "أحذية رعاة البقر"
   },
-  "rain-boots": { "definition": "Waterproof shoes worn in wet weather.", "arabicTranslation": "" },
+  "rain-boots": {
+    "definition": "Waterproof shoes worn in wet weather.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «راين بووتس»"
+  },
   "snow-boots": {
     "definition": "Insulated, often waterproof boots designed to keep feet warm and dry in snow.",
     "exampleUsage": "She wore snow boots on the icy path.",
@@ -113,7 +128,7 @@
   },
   "hiking-boots": {
     "definition": "Strong shoes designed for walking on rough ground.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هيكينج بووتس»"
   },
   "work-boots": {
     "definition": "Strong boots designed to protect and support the feet during physical work.",

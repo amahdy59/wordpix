@@ -3,7 +3,10 @@
     "definition": "A pill in the form of a small rounded gelatinous container with medicine inside.",
     "arabicTranslation": "كبسولة"
   },
-  "syrup": { "definition": "A thick sweet sticky liquid.", "arabicTranslation": "شراب منكّه" },
+  "syrup": {
+    "arabicTranslation": "شراب منكّه",
+    "definition": "A thick sweet sticky liquid."
+  },
   "cream": {
     "definition": "To put on cream, as on one's face or body.",
     "arabicTranslation": "كريمة"
@@ -46,15 +49,15 @@
   },
   "nasal-spray": {
     "definition": "A medication used in pharmacies to treat nasal conditions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ناسال سبراي»"
   },
   "ear-drops": {
     "definition": "A medication used in pharmacies to treat ear disorders.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «يار دروبس»"
   },
   "ointment-tube": {
     "definition": "A container used in pharmacies to store ointment for oral use.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حاوية يُسمّى «وينتمينت توبي»"
   },
   "lotion": {
     "definition": "A smooth liquid put on the skin to protect or soften it.",
@@ -70,19 +73,22 @@
   },
   "cash-register": {
     "definition": "A store machine that records purchases, adds their prices, and prints a receipt for the customer.",
-    "arabicTranslation": "سجل نقد"
+    "arabicTranslation": "سجل نقد",
+    "exampleUsage": "The cash register was used during the activity."
   },
   "medicine-shelf": {
     "definition": "A shelf used in pharmacies to store medications for oral use.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ميديكيني شيلف»"
   },
   "scale": {
     "definition": "A device that measures how heavy a person or object is.",
-    "arabicTranslation": "مقياس رسم"
+    "arabicTranslation": "مقياس رسم",
+    "exampleUsage": "The scale was used during the activity."
   },
   "mortar-and-pestle": {
     "definition": "A tool used in pharmacies to mix mortar and pestle for construction.",
-    "arabicTranslation": "هاون ومدقّة"
+    "arabicTranslation": "هاون ومدقّة",
+    "exampleUsage": "The mortar and pestle was used during the activity."
   },
   "pill-counter": {
     "definition": "A device or tray used by pharmacy staff to count solid-dose medicines accurately.",
@@ -91,7 +97,8 @@
   },
   "label-printer": {
     "definition": "A compact device produces self-adhesive labels for identifying and organizing materials in classrooms and homes.",
-    "arabicTranslation": "طابعة علامة"
+    "arabicTranslation": "طابعة علامة",
+    "exampleUsage": "The label printer was used during the activity."
   },
   "barcode-scanner": {
     "definition": "An electronic device that reads printed barcodes to identify products or records.",
@@ -100,31 +107,43 @@
   },
   "computer": {
     "definition": "A machine for performing calculations automatically.",
-    "arabicTranslation": "حاسوب"
+    "arabicTranslation": "حاسوب",
+    "exampleUsage": "The computer was used during the activity."
   },
-  "pill-cutter": { "arabicTranslation": "قطّاعة حبّة دواء" },
-  "pill-organizer": { "definition": "A device for organizing pills.", "arabicTranslation": "" },
+  "pill-cutter": {
+    "arabicTranslation": "قطّاعة حبّة دواء",
+    "exampleUsage": "The pill cutter was used during the activity.",
+    "definition": "A small tool used to divide a pill into smaller pieces."
+  },
+  "pill-organizer": {
+    "definition": "A device for organizing pills.",
+    "arabicTranslation": "جهاز يُسمّى «بيلل ورجانيزير»",
+    "exampleUsage": "The pill organizer was used during the activity."
+  },
   "medicine-cabinet": {
     "definition": "Home health supplies include medicines, vitamins, and first aid materials kept in a medicine cabinet.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «ميديكيني كابينيت»"
   },
   "refrigerated-medicine": {
     "definition": "Medicines kept at a low temperature for preservation.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ريفريجيراتيد ميديكيني»"
   },
   "pharmacist-coat": {
-    "definition": "A coat worn by pharmacists.",
-    "arabicTranslation": "معطف صيدلي"
+    "arabicTranslation": "معطف صيدلي",
+    "definition": "A coat worn by pharmacists."
   },
   "pharmacy-counter": {
-    "definition": "A counter used in pharmacies.",
-    "arabicTranslation": "منضدة صيدلية"
+    "arabicTranslation": "منضدة صيدلية",
+    "definition": "A counter used in pharmacies."
   },
   "digital-scale": {
     "definition": "Involving electronic technology that measures weight or quantity and presents the result on a scale.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ديجيتال سكالي»"
   },
-  "patient-profile": { "definition": "A record of a patient's health.", "arabicTranslation": "" },
+  "patient-profile": {
+    "definition": "A record of a patient's health.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «باتيينت بروفيلي»"
+  },
   "bandage": {
     "definition": "A piece of soft material that covers and protects an injured part of the body.",
     "arabicTranslation": "ضمادة"
@@ -135,23 +154,26 @@
   },
   "thermometer": {
     "definition": "Measuring instrument for measuring temperature.",
-    "arabicTranslation": "مقياس حرارة"
+    "arabicTranslation": "مقياس حرارة",
+    "exampleUsage": "The thermometer was used during the activity."
   },
   "blood-pressure-monitor": {
     "definition": "A device used to measure blood pressure.",
-    "arabicTranslation": "جهاز قياس ضغط الدم"
+    "arabicTranslation": "جهاز قياس ضغط الدم",
+    "exampleUsage": "The blood pressure monitor was used during the activity."
   },
   "glucose-meter": {
     "definition": "A device used to measure glucose levels in blood.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «جلوكوسي ميتير»",
+    "exampleUsage": "The glucose meter was used during the activity."
   },
   "pregnancy-test": {
     "definition": "A medical test used to find out whether a person is pregnant.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «بريجنانكي تيست»"
   },
   "hand-sanitizer": {
     "definition": "A liquid or gel used to clean your hands when soap and water are unavailable.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «هاند سانيتيزير»"
   },
   "disinfectant": {
     "definition": "An agent (as heat or radiation or a chemical) that destroys microorganisms that might carry disease.",
@@ -175,7 +197,7 @@
   },
   "herbal-remedy": {
     "definition": "A preparation made from medicinal plants or other botanical materials is used to treat illness or support health.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نبات يُسمّى «هيربال ريميدي»"
   },
   "antibiotic": {
     "definition": "Of or relating to antibiotic drugs.",
@@ -209,10 +231,13 @@
     "definition": "A moisturizing product spread over the skin after bathing to prevent dryness.",
     "arabicTranslation": "غسول أو لوشن جسم"
   },
-  "sunscreen": { "definition": "A cream spread on the skin.", "arabicTranslation": "واقي شمس" },
+  "sunscreen": {
+    "arabicTranslation": "واقي شمس",
+    "definition": "A cream spread on the skin."
+  },
   "lip-balm": {
     "definition": "A soft product put on the lips to stop them becoming dry or sore.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ليب بالم»"
   },
   "deodorant": {
     "definition": "A product put on the body to prevent or hide unpleasant smells.",
@@ -220,7 +245,7 @@
   },
   "contact-lens-solution": {
     "definition": "A solution used to apply contact lenses.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كونتاكت لينس سولوتيون»"
   },
   "vitamin": {
     "definition": "Any of a group of organic substances essential in small quantities to normal metabolism.",
@@ -234,14 +259,17 @@
     "definition": "A dietary supplement containing live bacteria, usually taken after a course of antibiotics to replenish the damaged gastrointestinal flora.",
     "arabicTranslation": "بروبيوتيك"
   },
-  "laxative": { "definition": "Stimulating evacuation of feces.", "arabicTranslation": "مُليّن" },
+  "laxative": {
+    "definition": "Stimulating evacuation of feces.",
+    "arabicTranslation": "مُليّن"
+  },
   "cough-syrup": {
     "definition": "A sweet-tasting liquid medicine taken by mouth to ease coughing and irritation in the chest.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كووغ سيروب»"
   },
   "throat-lozenge": {
     "definition": "A lozenge used to relieve throat pain.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ثروات لوزينجي»"
   },
   "insulin": {
     "definition": "Hormone secreted by the isles of Langerhans in the pancreas.",
@@ -249,11 +277,12 @@
   },
   "drug-interaction-checker": {
     "definition": "A tool used to check for drug interactions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «دروج ينتيراكتيون تشيكير»",
+    "exampleUsage": "The drug interaction checker was used during the activity."
   },
   "compounding-area": {
     "definition": "A place where pharmaceutical products are compounded.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «كومبووندينج اريا»"
   },
   "clean-room": {
     "definition": "A specially engineered workspace keeps dust, chemical vapors, microbes, and other pollutants at extremely low levels for research and precision manufacturing.",
@@ -268,7 +297,10 @@
     "exampleUsage": "The pharmacy technician entered the prescription information under pharmacist supervision.",
     "arabicTranslation": "فني صيدلة"
   },
-  "cashier": { "definition": "To discard or do away with.", "arabicTranslation": "أمين صندوق" },
+  "cashier": {
+    "arabicTranslation": "أمين صندوق",
+    "definition": "A worker who takes payments and gives change or receipts."
+  },
   "customer": {
     "definition": "A person who pays for goods or services.",
     "arabicTranslation": "عميل"
@@ -287,7 +319,10 @@
     "exampleUsage": "The stock clerk checked the shelf inventory.",
     "arabicTranslation": "موظف مخزون"
   },
-  "consultant": { "definition": "An expert who gives advice.", "arabicTranslation": "استشاري" },
+  "consultant": {
+    "arabicTranslation": "استشاري",
+    "definition": "An expert who gives advice."
+  },
   "security-guard": {
     "definition": "A person who protects a building and its people.",
     "arabicTranslation": "حارس أمن"
@@ -338,7 +373,7 @@
   },
   "waiting-area": {
     "definition": "A room in a place such as an airport or hotel where people sit until they are ready to leave or be served.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «وايتينج اريا»"
   },
   "prescription-drop-off": {
     "definition": "A counter or service point where a prescription is submitted to a pharmacy for processing.",
@@ -357,13 +392,16 @@
   },
   "shopping-basket": {
     "definition": "A portable basket used in a shop to hold items while you choose and purchase them.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «شوببينج باسكيت»"
   },
   "bag": {
     "definition": "A flexible container with a single opening.",
     "arabicTranslation": "كيس"
   },
-  "receipt": { "arabicTranslation": "إيصال" },
+  "receipt": {
+    "arabicTranslation": "إيصال",
+    "definition": "A written or digital record showing that a payment was made."
+  },
   "loyalty-card": {
     "definition": "A card or account that records purchases or provides customer rewards at a business.",
     "exampleUsage": "The customer scanned a loyalty card for store points.",
@@ -402,10 +440,14 @@
     "definition": "Something that resembles a tablet of medicine in shape or size.",
     "arabicTranslation": "حبّة دواء"
   },
-  "mortar": { "arabicTranslation": "هاون" },
+  "mortar": {
+    "arabicTranslation": "هاون",
+    "definition": "A bowl in which substances are crushed with a pestle."
+  },
   "pestle": {
     "definition": "A club-shaped hand tool for grinding and mixing substances in a mortar.",
-    "arabicTranslation": "مدقة"
+    "arabicTranslation": "مدقة",
+    "exampleUsage": "The pestle was used during the activity."
   },
   "medicine-bottle": {
     "definition": "A container designed to hold medicine and carry its label and safety information.",

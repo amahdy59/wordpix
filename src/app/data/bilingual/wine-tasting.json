@@ -3,20 +3,29 @@
     "definition": "A visual attribute of things that results from the light they emit or transmit or reflect.",
     "arabicTranslation": "لون"
   },
-  "clarity": { "definition": "The quality of clear water.", "arabicTranslation": "صفاء" },
+  "clarity": {
+    "arabicTranslation": "صفاء",
+    "definition": "The quality of clear water."
+  },
   "viscosity": {
     "definition": "Resistance of a liquid to shear forces (and hence to flow).",
     "arabicTranslation": "لزوجة"
   },
-  "legs": { "arabicTranslation": "آثار السائل على الكأس" },
-  "rim": { "arabicTranslation": "جنط" },
+  "legs": {
+    "arabicTranslation": "آثار السائل على الكأس",
+    "definition": "The streams of wine that run down a glass after it is swirled."
+  },
+  "rim": {
+    "arabicTranslation": "جنط",
+    "definition": "The upper edge of a wine glass that touches the mouth."
+  },
   "opacity": {
     "definition": "The quality of being opaque to a degree.",
     "arabicTranslation": "عتامة"
   },
   "hue": {
     "definition": "The quality of a color as determined by its dominant wavelength.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لون يُسمّى «هوي»"
   },
   "depth": {
     "definition": "The extent downward or backward or inward.",
@@ -26,7 +35,10 @@
     "definition": "A light within the field of vision that is brighter than the brightness to which the eyes are adapted.",
     "arabicTranslation": "لمعان"
   },
-  "sediment": { "arabicTranslation": "رواسب" },
+  "sediment": {
+    "arabicTranslation": "رواسب",
+    "definition": "Small solid particles that settle at the bottom of a liquid."
+  },
   "aroma": {
     "definition": "Any property detected by the olfactory system.",
     "arabicTranslation": "رائحة عطرية"
@@ -59,7 +71,10 @@
     "definition": "Characteristic of a nonwoody herb or plant part.",
     "arabicTranslation": "عشبي"
   },
-  "mineral": { "arabicTranslation": "معدني" },
+  "mineral": {
+    "arabicTranslation": "معدني",
+    "definition": "A flavor or aroma in wine that suggests stone or chalk."
+  },
   "oaky": {
     "definition": "Having an aroma or flavor associated with contact with oak wood during production or storage.",
     "exampleUsage": "The educational tasting chart uses 'oaky' to describe a wood-related aroma.",
@@ -74,7 +89,10 @@
     "definition": "Any of various complex phenolic substances of plant origin.",
     "arabicTranslation": "تانين"
   },
-  "acidity": { "definition": "The property of being acidic.", "arabicTranslation": "حموضة" },
+  "acidity": {
+    "arabicTranslation": "حموضة",
+    "definition": "The property of being acidic."
+  },
   "sweetness": {
     "definition": "The property of tasting as if it contains sugar.",
     "arabicTranslation": "حلاوة"
@@ -103,7 +121,10 @@
     "definition": "The linear extent in space from one end to the other.",
     "arabicTranslation": "استمرار النكهة"
   },
-  "dry": { "definition": "Without a mucous or watery discharge.", "arabicTranslation": "جاف" },
+  "dry": {
+    "definition": "Without a mucous or watery discharge.",
+    "arabicTranslation": "جاف"
+  },
   "sweet": {
     "definition": "(used of wines) having a high residual sugar content.",
     "arabicTranslation": "حلو"
@@ -120,15 +141,21 @@
     "definition": "Smooth and soft to sight or hearing or touch or taste.",
     "arabicTranslation": "مخملي"
   },
-  "bold": { "arabicTranslation": "قوي" },
+  "bold": {
+    "arabicTranslation": "قوي",
+    "definition": "Having a strong, intense flavor or character."
+  },
   "delicate": {
     "definition": "Exquisitely fine and subtle and pleasing.",
     "arabicTranslation": "رقيق"
   },
-  "rich": { "arabicTranslation": "غني" },
+  "rich": {
+    "arabicTranslation": "غني",
+    "definition": "Having a full, concentrated flavor and texture."
+  },
   "light": {
     "definition": "(used of color) having a relatively small amount of coloring agent.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لون يُسمّى «ليغت»"
   },
   "full-bodied": {
     "definition": "Describing a taste or flavor that is rich, powerful, rounded, and complex.",
@@ -160,7 +187,7 @@
   },
   "main-course": {
     "definition": "The principal dish in a formal meal is served as the meal’s main part, after the opening courses.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طبق يُسمّى «ماين كوورسي»"
   },
   "palate-cleanser": {
     "definition": "A neutral food or drink used between different tastes to reduce lingering flavors in the mouth.",

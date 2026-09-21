@@ -11,16 +11,34 @@
     "definition": "To cook something by letting steam pass over it.",
     "arabicTranslation": "يطبخ بالبخار"
   },
-  "blanch": { "definition": "To cook (vegetables) briefly.", "arabicTranslation": "يسلق سريعًا" },
-  "poach": { "definition": "To cook in a simmering liquid.", "arabicTranslation": "يسلق برفق" },
+  "blanch": {
+    "arabicTranslation": "يسلق سريعًا",
+    "definition": "To put food briefly in boiling water, then cool it quickly."
+  },
+  "poach": {
+    "definition": "To cook in a simmering liquid.",
+    "arabicTranslation": "يسلق برفق"
+  },
   "stew": {
     "definition": "To cook slowly and for a long time in liquid.",
     "arabicTranslation": "يخنة أو يطهو ببطء"
   },
-  "braise": { "arabicTranslation": "يطهو ببطء مع سائل" },
-  "pressure-cook": { "arabicTranslation": "طاهٍ ضغط" },
-  "double-boil": { "arabicTranslation": "" },
-  "parboil": { "definition": "To cook (vegetables) briefly.", "arabicTranslation": "" },
+  "braise": {
+    "arabicTranslation": "يطهو ببطء مع سائل",
+    "definition": "To cook food slowly in a covered pan with a small amount of liquid."
+  },
+  "pressure-cook": {
+    "arabicTranslation": "طاهٍ ضغط",
+    "definition": "To cook food quickly using steam held under high pressure."
+  },
+  "double-boil": {
+    "arabicTranslation": "طريقة يُسمّى «دووبلي بويل»",
+    "definition": "To heat food gently in a bowl or pan above hot water."
+  },
+  "parboil": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «باربويل»",
+    "definition": "To boil food partly before finishing it another way."
+  },
   "bake": {
     "definition": "To cook and make edible by putting in a hot oven.",
     "arabicTranslation": "يخبز"
@@ -33,19 +51,25 @@
     "definition": "A metal surface used for cooking over a fire.",
     "arabicTranslation": "يشوي"
   },
-  "broil": { "arabicTranslation": "يشوي بحرارة مباشرة" },
+  "broil": {
+    "arabicTranslation": "يشوي بحرارة مباشرة",
+    "definition": "To cook food with direct heat from above."
+  },
   "toast": {
     "definition": "A celebrity who receives much acclaim and attention.",
     "arabicTranslation": "يحمّص"
   },
-  "char": { "definition": "A human female employed to do housework.", "arabicTranslation": "" },
+  "char": {
+    "definition": "A human female employed to do housework.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تشار»"
+  },
   "smoke": {
     "definition": "A hot vapor containing fine particles of carbon being produced by combustion.",
     "arabicTranslation": "يدخّن الطعام"
   },
   "dehydrate": {
     "definition": "To preserve by removing all water and liquids from.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديهيدراتي»"
   },
   "barbecue": {
     "definition": "To cook outdoors on a barbecue grill.",
@@ -53,13 +77,28 @@
   },
   "rotisserie": {
     "definition": "An oven or broiler equipped with a rotating spit on which meat cooks as it turns.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «روتيسسيريي»"
   },
-  "fry": { "definition": "To cook in hot fat or oil.", "arabicTranslation": "يقلي" },
-  "deep-fry": { "arabicTranslation": "" },
-  "saut-": { "arabicTranslation": "يشوّح" },
-  "stir-fry": { "arabicTranslation": "يقلي مع التحريك" },
-  "pan-fry": { "arabicTranslation": "" },
+  "fry": {
+    "arabicTranslation": "يقلي",
+    "definition": "To cook food in hot oil or fat."
+  },
+  "deep-fry": {
+    "arabicTranslation": "طريقة يُسمّى «دييب فري»",
+    "definition": "To cook food while it is fully covered in hot oil."
+  },
+  "saut-": {
+    "arabicTranslation": "يشوّح",
+    "definition": "To cook food quickly in a little hot oil while stirring or tossing it."
+  },
+  "stir-fry": {
+    "arabicTranslation": "يقلي مع التحريك",
+    "definition": "To cook small pieces of food quickly in a hot pan while stirring."
+  },
+  "pan-fry": {
+    "arabicTranslation": "طريقة يُسمّى «بان فري»",
+    "definition": "To cook food in a pan with a small amount of oil or fat."
+  },
   "shallow-fry": {
     "definition": "To cook food in a small amount of hot oil or fat rather than completely covering it.",
     "exampleUsage": "Shallow-fry the vegetables until both sides are lightly browned.",
@@ -69,10 +108,13 @@
     "definition": "To burn slightly and superficially so as to affect color.",
     "arabicTranslation": "يحمّر السطح سريعًا"
   },
-  "flambe": { "definition": "To pour liquor over and ignite (a dish).", "arabicTranslation": "" },
+  "flambe": {
+    "definition": "To pour liquor over and ignite (a dish).",
+    "arabicTranslation": "طبق يُسمّى «فلامبي»"
+  },
   "tempura": {
     "definition": "Vegetables and seafood dipped in batter and deep-fried.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طعام يُسمّى «تيمبورا»"
   },
   "flash-fry": {
     "definition": "To fry food very quickly on both sides in very hot oil.",
@@ -83,16 +125,34 @@
     "definition": "The irregular motion of waves (usually caused by wind blowing in a direction opposite to the tide).",
     "arabicTranslation": "يفرم"
   },
-  "dice": { "arabicTranslation": "يقطّع مكعبات" },
-  "mince": { "definition": "Food chopped into small bits.", "arabicTranslation": "يفرم ناعمًا" },
-  "slice": { "arabicTranslation": "يقطّع شرائح" },
+  "dice": {
+    "arabicTranslation": "يقطّع مكعبات",
+    "definition": "Small cubes marked with numbers used in games."
+  },
+  "mince": {
+    "arabicTranslation": "يفرم ناعمًا",
+    "definition": "Food chopped into small bits."
+  },
+  "slice": {
+    "arabicTranslation": "يقطّع شرائح",
+    "definition": "To cut food into thin, flat pieces."
+  },
   "julienne": {
     "definition": "A clear soup garnished with julienne vegetables.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جوليينني»"
   },
-  "grate": { "arabicTranslation": "يبشر" },
-  "peel": { "arabicTranslation": "يقشّر" },
-  "zest": { "definition": "Vigorous and enthusiastic enjoyment.", "arabicTranslation": "" },
+  "grate": {
+    "arabicTranslation": "يبشر",
+    "definition": "To shred food into small pieces using a grater."
+  },
+  "peel": {
+    "arabicTranslation": "يقشّر",
+    "definition": "To remove the outer skin from fruit or vegetables."
+  },
+  "zest": {
+    "definition": "Vigorous and enthusiastic enjoyment.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «زيست»"
+  },
   "crush": {
     "definition": "To compress with violence, out of natural shape or condition.",
     "arabicTranslation": "يسحق"
@@ -101,19 +161,40 @@
     "definition": "To mix colours or marks smoothly together.",
     "arabicTranslation": "يمزج"
   },
-  "mix": { "definition": "To mix together different elements.", "arabicTranslation": "يخلط" },
-  "stir": { "definition": "To mix or add by stirring.", "arabicTranslation": "يحرّك" },
-  "fold": { "arabicTranslation": "يطوي برفق" },
-  "knead": { "definition": "To mix into a homogeneous mass.", "arabicTranslation": "يعجن" },
+  "mix": {
+    "definition": "To mix together different elements.",
+    "arabicTranslation": "يخلط"
+  },
+  "stir": {
+    "arabicTranslation": "يحرّك",
+    "definition": "To mix food or liquid by moving a spoon around in it."
+  },
+  "fold": {
+    "arabicTranslation": "يطوي برفق",
+    "definition": "To mix a light ingredient gently into a heavier mixture."
+  },
+  "knead": {
+    "definition": "To mix into a homogeneous mass.",
+    "arabicTranslation": "يعجن"
+  },
   "beat": {
     "definition": "A regular route for a sentry or policeman.",
     "arabicTranslation": "يخفق"
   },
-  "cream": { "definition": "The best people or things in a group.", "arabicTranslation": "كريمة" },
-  "toss": { "arabicTranslation": "" },
-  "marinate": { "arabicTranslation": "يتبّل بالنقع" },
+  "cream": {
+    "definition": "The best people or things in a group.",
+    "arabicTranslation": "كريمة"
+  },
+  "toss": {
+    "arabicTranslation": "طريقة يُسمّى «توسس»",
+    "definition": "To turn ingredients over lightly to mix or coat them."
+  },
+  "marinate": {
+    "arabicTranslation": "يتبّل بالنقع",
+    "definition": "To leave food in a seasoned liquid so it gains flavor."
+  },
   "glaze": {
     "definition": "A glassy coating put on clay and hardened by heat.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جلازي»"
   }
 }

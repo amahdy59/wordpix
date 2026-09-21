@@ -9,7 +9,7 @@
   },
   "teaching-assistant": {
     "definition": "A helper who supports a teacher in the classroom.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «تياتشينج اسسيستانت»"
   },
   "dean": {
     "definition": "A man who is the senior member of a group.",
@@ -23,8 +23,14 @@
     "definition": "The British cabinet minister responsible for finance.",
     "arabicTranslation": "رئيس الجامعة"
   },
-  "advisor": { "definition": "An expert who gives advice.", "arabicTranslation": "مرشد" },
-  "tutor": { "arabicTranslation": "مدرس خصوصي" },
+  "advisor": {
+    "arabicTranslation": "مرشد",
+    "definition": "An expert who gives advice."
+  },
+  "tutor": {
+    "arabicTranslation": "مدرس خصوصي",
+    "definition": "A person who teaches or helps one student or a small group."
+  },
   "researcher": {
     "definition": "A scientist who devotes themself to doing research.",
     "arabicTranslation": "باحث"
@@ -62,14 +68,17 @@
     "definition": "Something that is required in advance.",
     "arabicTranslation": "متطلب سابق"
   },
-  "elective": { "arabicTranslation": "مقرر اختياري" },
+  "elective": {
+    "arabicTranslation": "مقرر اختياري",
+    "definition": "A course that a student can choose rather than one they must take."
+  },
   "core-course": {
     "definition": "A course that anchors an academic curriculum by providing required or foundational learning.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كوري كوورسي»"
   },
   "credit-hour": {
     "definition": "A measure of academic credit based on attending one class hour each week throughout a semester.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كريديت هوور»"
   },
   "grade": {
     "definition": "A mark or result showing how well work was done.",
@@ -104,13 +113,16 @@
   },
   "final-exam": {
     "definition": "An examination at the end of a course or academic term measures students’ understanding of all the material.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «فينال يكسام»"
   },
   "quiz": {
     "definition": "An examination consisting of a few short questions.",
     "arabicTranslation": "اختبار قصير"
   },
-  "rubric": { "arabicTranslation": "معيار تقييم" },
+  "rubric": {
+    "arabicTranslation": "معيار تقييم",
+    "definition": "A set of criteria used to assess a piece of work."
+  },
   "bachelor-s": {
     "definition": "An undergraduate academic degree awarded after completing a university or college program.",
     "exampleUsage": "She is studying for a bachelor's degree in engineering.",

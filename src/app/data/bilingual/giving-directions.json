@@ -1,25 +1,31 @@
 {
   "left": {
     "definition": "Location near or direction toward the left side.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليفت»"
   },
   "right": {
     "definition": "Location near or direction toward the right side.",
     "arabicTranslation": "حق"
   },
-  "straight": { "arabicTranslation": "" },
-  "forward": { "definition": "At or near or directed toward the front.", "arabicTranslation": "" },
+  "straight": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سترايغت»",
+    "definition": "Continuing in one direction without turning."
+  },
+  "forward": {
+    "definition": "At or near or directed toward the front.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فوروارد»"
+  },
   "backward": {
     "definition": "In a manner or order or direction the reverse of normal.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «باكوارد»"
   },
   "up": {
     "definition": "Being or moving higher in position or greater in some value.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وب»"
   },
   "down": {
     "definition": "Spatially or metaphorically from a higher to a lower level or position.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «دوون»"
   },
   "turn": {
     "definition": "The act of changing or reversing the direction of the course.",
@@ -27,40 +33,43 @@
   },
   "stop": {
     "definition": "A punctuation mark (‘.’) placed at the end of a declarative sentence to indicate a full stop or after abbreviations.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «ستوب»"
   },
   "go": {
     "definition": "To move away from a place into another direction.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «جو»"
   },
-  "north": { "arabicTranslation": "" },
+  "north": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نورث»",
+    "definition": "The direction toward the North Pole."
+  },
   "south": {
     "definition": "The direction corresponding to the southward cardinal compass point.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سووث»"
   },
   "east": {
     "definition": "The region of the United States lying to the north of the Ohio River and to the east of the Mississippi River.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ياست»"
   },
   "west": {
     "definition": "The countries of (originally) Europe and (now including) North America and South America.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ويست»"
   },
   "northeast": {
     "definition": "The compass point midway between north and east.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نورثياست»"
   },
   "northwest": {
     "definition": "The compass point midway between north and west.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نورثويست»"
   },
   "southeast": {
     "definition": "The compass point midway between south and east.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سووثياست»"
   },
   "southwest": {
     "definition": "The compass point midway between south and west.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سووثويست»"
   },
   "compass": {
     "definition": "An area in which something acts or operates or has power or control:.",
@@ -72,56 +81,83 @@
   },
   "near": {
     "definition": "Not far distant in time or space or degree or circumstances.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نيار»"
   },
-  "far": { "definition": "At or to a certain point or degree.", "arabicTranslation": "" },
+  "far": {
+    "definition": "At or to a certain point or degree.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فار»"
+  },
   "close": {
     "definition": "Not far distant in time or space or degree or circumstances.",
     "arabicTranslation": "قريب"
   },
-  "nearby": { "definition": "Not far away in relative terms.", "arabicTranslation": "قريب" },
+  "nearby": {
+    "definition": "Not far away in relative terms.",
+    "arabicTranslation": "قريب"
+  },
   "distant": {
     "definition": "Separated in space or coming from or going to a distance.",
     "arabicTranslation": "بعيد"
   },
-  "here": { "arabicTranslation": "" },
-  "there": { "definition": "A location other than here.", "arabicTranslation": "" },
-  "everywhere": { "definition": "To or in any or all places.", "arabicTranslation": "" },
-  "nowhere": { "arabicTranslation": "" },
-  "somewhere": { "definition": "An indefinite or unknown location.", "arabicTranslation": "" },
+  "here": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هيري»",
+    "definition": "At this place or in this location."
+  },
+  "there": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ثيري»",
+    "definition": "A location other than here."
+  },
+  "everywhere": {
+    "arabicTranslation": "مكان يُسمّى «يفيريوهيري»",
+    "definition": "In all places or throughout an area."
+  },
+  "nowhere": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نووهيري»",
+    "definition": "In no place; not anywhere."
+  },
+  "somewhere": {
+    "definition": "An indefinite or unknown location.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سوميوهيري»"
+  },
   "intersection": {
     "definition": "The set of elements common to two or more sets.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ينتيرسيكتيون»"
   },
-  "corner": { "definition": "The intersection of two streets.", "arabicTranslation": "" },
+  "corner": {
+    "definition": "The intersection of two streets.",
+    "arabicTranslation": "شجرة يُسمّى «كورنير»"
+  },
   "block": {
     "definition": "Housing in a large building that is divided into separate units.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مبنى يُسمّى «بلوك»"
   },
   "crosswalk": {
     "definition": "A marked place where people cross a road safely.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «كروسسوالك»"
   },
   "traffic-light": {
     "definition": "The light’s current color tells drivers whether they may proceed, should use caution, or must stop.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لون يُسمّى «تراففيك ليغت»"
   },
-  "roundabout": { "definition": "Deviating from a straight course.", "arabicTranslation": "" },
+  "roundabout": {
+    "definition": "Deviating from a straight course.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «رووندابووت»"
+  },
   "one-way": {
     "definition": "Moving one way means following a single direction, with no change of course or return.",
     "arabicTranslation": "اتجاه واحد"
   },
   "dead-end": {
     "definition": "A street that ends without connecting to another street is called a dead end. It does not allow traffic to pass through to a different route.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شجرة يُسمّى «دياد يند»"
   },
   "highway": {
     "definition": "A major road for any form of motor transport.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هيغواي»"
   },
   "sidewalk": {
     "definition": "Walk consisting of a paved area for pedestrians.",
-    "arabicTranslation": ""
+    "arabicTranslation": "منطقة يُسمّى «سيديوالك»"
   },
   "building": {
     "definition": "A structure that has a roof and walls and stands more or less permanently in one place.",
@@ -133,7 +169,7 @@
   },
   "monument": {
     "definition": "A structure erected to commemorate persons or events.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «مونومينت»"
   },
   "fountain": {
     "definition": "A structure that sends water upward and lets it fall back down.",
@@ -142,16 +178,22 @@
   "statue": {
     "definition": "A carved figure made to look like a person or animal.",
     "exampleUsage": "The statue was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «ستاتوي»"
   },
-  "tower": { "definition": "A structure taller than its diameter.", "arabicTranslation": "" },
+  "tower": {
+    "definition": "A structure taller than its diameter.",
+    "arabicTranslation": "هيكل يُسمّى «تووير»"
+  },
   "church": {
     "definition": "A place for public (especially Christian) worship.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سفينة يُسمّى «تشورتش»"
   },
-  "park": { "definition": "To maneuver a vehicle into a parking space.", "arabicTranslation": "" },
+  "park": {
+    "definition": "To maneuver a vehicle into a parking space.",
+    "arabicTranslation": "مركبة يُسمّى «بارك»"
+  },
   "school": {
     "definition": "A building where young people receive education.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مبنى يُسمّى «ستشوول»"
   }
 }

@@ -1,40 +1,64 @@
 {
-  "coin": { "arabicTranslation": "" },
+  "coin": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كوين»",
+    "definition": "A small round piece of metal used as money."
+  },
   "bill": {
     "definition": "An itemized statement of money owed for goods shipped or services rendered.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سفينة يُسمّى «بيلل»"
   },
   "penny": {
     "definition": "A fractional monetary unit of Ireland and the United Kingdom.",
-    "arabicTranslation": ""
+    "arabicTranslation": "فعل أو عملية يُسمّى «بينني»"
   },
   "nickel": {
     "definition": "A United States coin worth one twentieth of a dollar.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نيكيل»"
   },
   "dime": {
     "definition": "A United States coin worth one tenth of a dollar.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديمي»"
   },
-  "quarter": { "arabicTranslation": "" },
-  "dollar": { "definition": "A United States coin worth one dollar.", "arabicTranslation": "" },
+  "quarter": {
+    "arabicTranslation": "جزء يُسمّى «كارتير»",
+    "definition": "A United States coin worth twenty-five cents."
+  },
+  "dollar": {
+    "definition": "A United States coin worth one dollar.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «دوللار»"
+  },
   "euro": {
     "definition": "The basic monetary unit of most members of the European Union (introduced in 1999).",
     "arabicTranslation": "يورو"
   },
-  "pound": { "definition": "United States writer who lived in Europe.", "arabicTranslation": "" },
-  "yen": { "definition": "A yearning for something or to do something.", "arabicTranslation": "" },
+  "pound": {
+    "definition": "United States writer who lived in Europe.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بووند»"
+  },
+  "yen": {
+    "definition": "A yearning for something or to do something.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يين»"
+  },
   "bank-account": {
     "definition": "Money kept with a bank can be accessed through this account by a person or organization. It supports withdrawals and payments, including transfers, checks, and debit-card purchases.",
     "arabicTranslation": "حساب بنك"
   },
-  "savings": { "arabicTranslation": "" },
+  "savings": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سافينجس»",
+    "definition": "Money kept aside for future use rather than spent now."
+  },
   "checking": {
     "definition": "A bank account lets you write checks, pay bills, and withdraw money for everyday needs. It is meant for spending, not saving.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تشيكينج»"
   },
-  "deposit": { "definition": "To put into a bank account.", "arabicTranslation": "إيداع" },
-  "withdrawal": { "arabicTranslation": "" },
+  "deposit": {
+    "arabicTranslation": "إيداع",
+    "definition": "Money put into a bank account."
+  },
+  "withdrawal": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ويثدراوال»",
+    "definition": "Money taken out of a bank account."
+  },
   "atm": {
     "definition": "A means of digital communications that is capable of very high speeds.",
     "arabicTranslation": "جهاز صراف آلي"
@@ -47,26 +71,38 @@
     "definition": "A message that is stated or declared.",
     "arabicTranslation": "كشف حساب"
   },
-  "interest": { "definition": "A fixed charge for borrowing money.", "arabicTranslation": "" },
+  "interest": {
+    "definition": "A fixed charge for borrowing money.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ينتيريست»"
+  },
   "transfer": {
     "definition": "A person who transfers or is transferred from one position to another.",
     "arabicTranslation": "تحويل"
   },
-  "cash": { "arabicTranslation": "نقد" },
+  "cash": {
+    "arabicTranslation": "نقد",
+    "definition": "Money in the form of notes and coins."
+  },
   "credit-card": {
     "definition": "A plastic or metal payment card from a bank or other lender lets its holder buy goods and services with borrowed money up to a set limit, then repay the balance, usually with interest, an extra charge for borrowing.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كريديت كارد»"
   },
   "debit-card": {
     "definition": "A payment card that lets you buy goods or withdraw cash using funds taken directly from your bank account.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديبيت كارد»"
   },
   "check": {
     "definition": "A written order directing a bank to pay money.",
     "arabicTranslation": "شيك"
   },
-  "receipt": { "arabicTranslation": "إيصال" },
-  "change": { "definition": "The action of changing something.", "arabicTranslation": "" },
+  "receipt": {
+    "arabicTranslation": "إيصال",
+    "definition": "A written or digital record showing that a payment was made."
+  },
+  "change": {
+    "definition": "The action of changing something.",
+    "arabicTranslation": "فعل أو عملية يُسمّى «تشانجي»"
+  },
   "tip": {
     "definition": "An indication of potential opportunity.",
     "arabicTranslation": "إكرامية"
@@ -81,7 +117,7 @@
   },
   "price": {
     "definition": "The property of having material worth (often indicated by the amount of money something would bring if sold).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «بريكي»"
   },
   "cost": {
     "definition": "The property of having material worth (often indicated by the amount of money something would bring if sold).",
@@ -89,37 +125,55 @@
   },
   "discount": {
     "definition": "Interest on an annual basis deducted in advance on a loan.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديسكوونت»"
   },
-  "sale": { "definition": "A particular instance of selling.", "arabicTranslation": "" },
-  "tax": { "arabicTranslation": "" },
+  "sale": {
+    "definition": "A particular instance of selling.",
+    "arabicTranslation": "جزء يُسمّى «سالي»"
+  },
+  "tax": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تاكس»",
+    "definition": "Money collected by a government to pay for public services."
+  },
   "budget": {
     "definition": "A sum of money allocated for a particular purpose.",
     "arabicTranslation": "ميزانية"
   },
   "expense": {
     "definition": "Amounts paid for goods and services that may be currently tax deductible (as opposed to capital expenditures).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يكسبينسي»"
   },
-  "affordable": { "definition": "That you have the financial means for.", "arabicTranslation": "" },
-  "expensive": { "definition": "High in price or charging high prices.", "arabicTranslation": "" },
+  "affordable": {
+    "definition": "That you have the financial means for.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اففوردابلي»"
+  },
+  "expensive": {
+    "definition": "High in price or charging high prices.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يكسبينسيفي»"
+  },
   "cheap": {
     "definition": "Relatively low in price or charging low prices.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تشياب»"
   },
   "income": {
     "definition": "The financial gain (earned or unearned) accruing over a given period of time.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ينكومي»"
   },
-  "salary": { "arabicTranslation": "" },
-  "wage": { "arabicTranslation": "" },
+  "salary": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سالاري»",
+    "definition": "A fixed amount of money paid regularly for a job."
+  },
+  "wage": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «واجي»",
+    "definition": "Money paid for work, often calculated by the hour."
+  },
   "debt": {
     "definition": "The state of owing something (especially money).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديبت»"
   },
   "loan": {
     "definition": "The temporary provision of money (usually at interest).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لوان»"
   },
   "mortgage": {
     "definition": "A conditional conveyance of property as security for the repayment of a loan.",
@@ -129,10 +183,16 @@
     "definition": "Promise of reimbursement in the case of loss.",
     "arabicTranslation": "تأمين"
   },
-  "investment": { "arabicTranslation": "" },
-  "profit": { "arabicTranslation": "" },
+  "investment": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ينفيستمينت»",
+    "definition": "Money put into an asset or business in the hope of a return."
+  },
+  "profit": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بروفيت»",
+    "definition": "Money left after a business pays its costs."
+  },
   "loss": {
     "definition": "The amount by which the cost of a business exceeds its revenue.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لوسس»"
   }
 }

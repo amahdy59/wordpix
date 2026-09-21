@@ -1,14 +1,32 @@
 {
-  "oily-skin": { "arabicTranslation": "" },
-  "dry-skin": { "arabicTranslation": "جلد جاف" },
-  "combination-skin": { "arabicTranslation": "" },
-  "sensitive-skin": { "arabicTranslation": "" },
+  "oily-skin": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ويلي سكين»",
+    "definition": "Skin that produces a lot of oil and may look shiny."
+  },
+  "dry-skin": {
+    "arabicTranslation": "جلد جاف",
+    "definition": "Skin that lacks enough moisture and may feel rough or tight."
+  },
+  "combination-skin": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كومبيناتيون سكين»",
+    "definition": "Skin that is oily in some areas and dry or normal in others."
+  },
+  "sensitive-skin": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «سينسيتيفي سكين»",
+    "definition": "Skin that reacts easily to products, temperature, or touch."
+  },
   "normal-skin": {
     "definition": "Skin that has its usual structure and functions, with no signs of disease or other abnormal changes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "هيكل يُسمّى «نورمال سكين»"
   },
-  "acne-prone": { "arabicTranslation": "معرّض لحب الشباب" },
-  "mature-skin": { "arabicTranslation": "جلد ناضج" },
+  "acne-prone": {
+    "arabicTranslation": "معرّض لحب الشباب",
+    "definition": "Likely to develop pimples or other acne spots."
+  },
+  "mature-skin": {
+    "arabicTranslation": "جلد ناضج",
+    "definition": "Skin that shows changes associated with aging."
+  },
   "fair-skin": {
     "definition": "Skin that is relatively light in natural color.",
     "exampleUsage": "People with fair skin may choose different shades of makeup based on their undertone.",
@@ -32,7 +50,10 @@
     "definition": "Generic term for inflammatory conditions of the skin.",
     "arabicTranslation": "أكزيما"
   },
-  "rash": { "definition": "Any red eruption of the skin.", "arabicTranslation": "طفح جلدي" },
+  "rash": {
+    "arabicTranslation": "طفح جلدي",
+    "definition": "Any red eruption of the skin."
+  },
   "sunburn": {
     "definition": "Redness of the skin caused by exposure to the rays of the sun.",
     "arabicTranslation": "حروق الشمس"
@@ -45,10 +66,13 @@
     "definition": "An injury that doesn't break the skin but results in some discoloration.",
     "arabicTranslation": "كدمة"
   },
-  "scar": { "arabicTranslation": "ندبة" },
+  "scar": {
+    "arabicTranslation": "ندبة",
+    "definition": "A mark left on the skin after a wound has healed."
+  },
   "stretch-mark": {
     "definition": "A narrow line that forms when the skin stretches beyond its usual limits.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ستريتتش مارك»"
   },
   "wrinkles": {
     "definition": "A slight depression or fold in the smoothness of a surface.",
@@ -98,7 +122,7 @@
   },
   "hair-spray": {
     "definition": "A cosmetic product applied as a fine mist to keep a hairstyle in its intended shape.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أسلوب أو طراز يُسمّى «هاير سبراي»"
   },
   "mousse": {
     "definition": "A rich, frothy, creamy dessert made with whipped egg whites and heavy cream.",
@@ -106,15 +130,18 @@
   },
   "comb": {
     "definition": "A flat tool with a row of teeth, used to arrange or untangle hair.",
-    "arabicTranslation": "مشط"
+    "arabicTranslation": "مشط",
+    "exampleUsage": "The comb was used during the activity."
   },
   "brush": {
     "definition": "A cleaning tool with many stiff hairs attached to a handle or base.",
-    "arabicTranslation": "فرشاة"
+    "arabicTranslation": "فرشاة",
+    "exampleUsage": "The brush was used during the activity."
   },
   "hair-dryer": {
     "definition": "An electrical device that blows warm air to dry your hair.",
-    "arabicTranslation": "مجفف شعر"
+    "arabicTranslation": "مجفف شعر",
+    "exampleUsage": "The hair dryer was used during the activity."
   },
   "flat-iron": {
     "definition": "An electrically heated hair tool with two flat plates used to straighten hair.",
@@ -133,7 +160,7 @@
   },
   "bobby-pin": {
     "definition": "A flat wire hairpin with prongs that press together, used to secure short hair in place.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «بوببي بين»"
   },
   "hair-tie": {
     "definition": "An elastic band used to hold hair together, such as in a ponytail.",
@@ -161,7 +188,10 @@
     "definition": "A cosmetic product applied to the skin to restore moisture and help prevent dryness.",
     "arabicTranslation": "مرطّب"
   },
-  "sunscreen": { "definition": "A cream spread on the skin.", "arabicTranslation": "واقي شمس" },
+  "sunscreen": {
+    "arabicTranslation": "واقي شمس",
+    "definition": "A cream spread on the skin."
+  },
   "exfoliant": {
     "definition": "A skin-care product or substance used to remove dead cells from the surface of the skin.",
     "exampleUsage": "The label says the exfoliant is intended for gentle surface cleansing.",
@@ -179,10 +209,10 @@
   },
   "lip-balm": {
     "definition": "A soft product put on the lips to stop them becoming dry or sore.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ليب بالم»"
   },
   "night-cream": {
     "definition": "A moisturizer applied at night helps keep skin hydrated and supports its repair during sleep.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «نيغت كريام»"
   }
 }

@@ -3,18 +3,22 @@
     "definition": "A writing implement with a point from which ink flows.",
     "arabicTranslation": "قلم"
   },
-  "pencil": { "definition": "A cosmetic in a long thin stick.", "arabicTranslation": "قلم رصاص" },
+  "pencil": {
+    "definition": "A cosmetic in a long thin stick.",
+    "arabicTranslation": "قلم رصاص"
+  },
   "highlighter": {
     "definition": "A bright pen used to mark important words.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هيغليغتير»"
   },
   "marker": {
     "definition": "Some conspicuous object used to distinguish or mark something.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ماركير»"
   },
   "eraser": {
     "definition": "A tool used to remove pencil marks from paper.",
-    "arabicTranslation": "ممحاة"
+    "arabicTranslation": "ممحاة",
+    "exampleUsage": "The eraser was used during the activity."
   },
   "mechanical-pencil": {
     "definition": "A pencil that holds a thin replaceable lead and advances it through a mechanism rather than being sharpened.",
@@ -23,11 +27,13 @@
   },
   "fountain-pen": {
     "definition": "A writing instrument stores liquid ink in a reservoir or cartridge and feeds it to a nib by capillary action.",
-    "arabicTranslation": "قلم نافورة"
+    "arabicTranslation": "قلم نافورة",
+    "exampleUsage": "The fountain pen was used during the activity."
   },
   "felt-tip-pen": {
     "definition": "A writing or drawing tool has a tip made from felt fibers and works on paper at home or school.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «فيلت-تيب بين»",
+    "exampleUsage": "The felt-tip pen was used during the activity."
   },
   "correction-tape": {
     "definition": "A thin strip of opaque material rolled over printed or written text to cover a mistake.",
@@ -45,7 +51,7 @@
   },
   "notebook": {
     "definition": "A book with blank pages for recording notes or memoranda.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نوتيبووك»"
   },
   "legal-pad": {
     "definition": "A pad of lined writing paper, traditionally yellow in the United States, often used for notes.",
@@ -54,7 +60,7 @@
   },
   "sticky-note": {
     "definition": "A small piece of paper with a removable sticky back.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ستيكي نوتي»"
   },
   "index-card": {
     "definition": "A small card used for notes or study facts.",
@@ -64,10 +70,13 @@
     "definition": "A flat (usually rectangular) container for a letter, thin package, etc.",
     "arabicTranslation": "مظروف"
   },
-  "folder": { "definition": "A small book usually having a paper cover.", "arabicTranslation": "" },
+  "folder": {
+    "definition": "A small book usually having a paper cover.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فولدير»"
+  },
   "binder": {
     "definition": "A thick cover with rings that holds loose pages.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيندير»"
   },
   "manila-folder": {
     "definition": "A paper file folder, traditionally made from light-brown manila card, used to organize documents.",
@@ -80,11 +89,12 @@
   },
   "stapler": {
     "definition": "A tool that pushes metal staples through paper.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «ستابلير»",
+    "exampleUsage": "The stapler was used during the activity."
   },
   "paper-clip": {
     "definition": "A small bent piece of metal used to hold papers.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بابير كليب»"
   },
   "binder-clip": {
     "definition": "A spring-loaded metal clip with folding handles used to hold a stack of papers together.",
@@ -93,15 +103,15 @@
   },
   "rubber-band": {
     "definition": "A flexible loop used to hold things together.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «روببير باند»"
   },
   "pushpin": {
     "definition": "A tack for attaching papers to a bulletin board or drawing board.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بوشبين»"
   },
   "thumbtack": {
     "definition": "A small pin used to attach paper to a board.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ثومبتاك»"
   },
   "tape": {
     "definition": "A strip of sticky material used to attach things.",
@@ -109,12 +119,16 @@
   },
   "glue-stick": {
     "definition": "A small tube of glue used to join paper.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جلوي ستيك»"
   },
-  "fastener": { "definition": "A person who fastens or makes fast.", "arabicTranslation": "" },
+  "fastener": {
+    "definition": "A person who fastens or makes fast.",
+    "arabicTranslation": "شخص يُسمّى «فاستينير»"
+  },
   "magnet": {
     "definition": "(physics) a device that attracts iron and produces a magnetic field.",
-    "arabicTranslation": "مغناطيس"
+    "arabicTranslation": "مغناطيس",
+    "exampleUsage": "The magnet was used during the activity."
   },
   "desk-organizer": {
     "definition": "A tray, container, or stand designed to keep office supplies arranged on a desk.",
@@ -143,7 +157,7 @@
   },
   "mouse-pad": {
     "definition": "A smooth surface that helps a computer mouse move accurately.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «مووسي باد»"
   },
   "wrist-rest": {
     "definition": "A padded support placed in front of a keyboard or mouse to support the wrist area during computer use.",
@@ -181,9 +195,12 @@
   },
   "bubble-wrap": {
     "definition": "To surround an object with bubble wrap, protecting it from damage while it is stored or shipped.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سفينة يُسمّى «بوببلي وراب»"
   },
-  "box": { "definition": "A (usually rectangular) container.", "arabicTranslation": "صندوق" },
+  "box": {
+    "definition": "A (usually rectangular) container.",
+    "arabicTranslation": "صندوق"
+  },
   "padded-envelope": {
     "definition": "An envelope lined with cushioning material to protect its contents during delivery.",
     "exampleUsage": "The small device was placed in a padded envelope.",
@@ -196,14 +213,15 @@
   },
   "postage-meter": {
     "definition": "A device for large mailings that prints the required postage on each item and records the total amount charged.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «بوستاجي ميتير»",
+    "exampleUsage": "The postage meter was used during the activity."
   },
   "mail-slot": {
     "definition": "An opening, usually built into a door, allows letters and other mail to be delivered.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مايل سلوت»"
   },
   "letter-opener": {
     "definition": "A small, blunt knife used to open envelopes or separate the uncut pages of books.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليتتير وبينير»"
   }
 }

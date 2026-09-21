@@ -29,7 +29,7 @@
   },
   "elevator-shaft": {
     "definition": "A tall, enclosed space in a building allows an elevator to travel between its floors.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مبنى يُسمّى «يليفاتور شافت»"
   },
   "load-bearing-wall": {
     "definition": "A wall designed to support weight from parts of a building above it in addition to its own weight.",
@@ -52,7 +52,10 @@
     "definition": "A small rectangular block used to build walls.",
     "arabicTranslation": "طوب"
   },
-  "timber": { "arabicTranslation": "خشب إنشائي" },
+  "timber": {
+    "arabicTranslation": "خشب إنشائي",
+    "definition": "Wood prepared for use in building or making things."
+  },
   "stone": {
     "definition": "Building material consisting of a piece of rock hewn in a definite shape for a special purpose.",
     "arabicTranslation": "حجر"
@@ -73,7 +76,10 @@
     "definition": "Steel bars placed inside concrete to make it stronger.",
     "arabicTranslation": "حديد تسليح"
   },
-  "excavation": { "arabicTranslation": "حفر" },
+  "excavation": {
+    "arabicTranslation": "حفر",
+    "definition": "The act of digging out earth for construction or investigation."
+  },
   "pouring-foundation": {
     "definition": "The construction stage in which concrete is placed into prepared forms to create a building foundation.",
     "exampleUsage": "The crew scheduled the foundation pour after the forms were inspected.",
@@ -108,10 +114,13 @@
     "definition": "The inside lower horizontal surface (as of a room, hallway, tent, or other structure).",
     "arabicTranslation": "أرضيات"
   },
-  "inspection": { "definition": "A formal or official examination.", "arabicTranslation": "فحص" },
+  "inspection": {
+    "definition": "A formal or official examination.",
+    "arabicTranslation": "فحص"
+  },
   "general-contractor": {
     "definition": "The lead contractor manages an entire construction project by arranging materials, hiring and overseeing subcontractors, setting the schedule, and ensuring the work meets the design and building laws.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مبنى يُسمّى «جينيرال كونتراكتور»"
   },
   "foreman": {
     "definition": "A person who supervises a group of workers.",
@@ -137,7 +146,10 @@
     "definition": "A person who makes articles of iron.",
     "arabicTranslation": "عامل حديد"
   },
-  "crane-operator": { "definition": "A person who operates a crane.", "arabicTranslation": "" },
+  "crane-operator": {
+    "definition": "A person who operates a crane.",
+    "arabicTranslation": "شخص يُسمّى «كراني وبيراتور»"
+  },
   "surveyor": {
     "definition": "An engineer who determines the boundaries and elevations of land or structures.",
     "arabicTranslation": "مسّاح"

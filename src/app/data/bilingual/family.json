@@ -15,10 +15,22 @@
     "definition": "A male with the same parents as someone else.",
     "arabicTranslation": "أخ"
   },
-  "son": { "arabicTranslation": "ابن" },
-  "daughter": { "arabicTranslation": "ابنة" },
-  "parents": { "arabicTranslation": "والدان" },
-  "siblings": { "definition": "A person's brother or sister.", "arabicTranslation": "إخوة وأخوات" },
+  "son": {
+    "arabicTranslation": "ابن",
+    "definition": "A person's male child or male offspring."
+  },
+  "daughter": {
+    "arabicTranslation": "ابنة",
+    "definition": "A person's female child or female offspring."
+  },
+  "parents": {
+    "arabicTranslation": "والدان",
+    "definition": "A person's mother and father or other primary caregivers."
+  },
+  "siblings": {
+    "arabicTranslation": "إخوة وأخوات",
+    "definition": "A person's brother or sister."
+  },
   "baby": {
     "definition": "A very young child who cannot yet walk well.",
     "arabicTranslation": "رضيع"
@@ -27,8 +39,14 @@
     "definition": "To bring two objects, ideas, or people together.",
     "arabicTranslation": "توأم"
   },
-  "mom": { "definition": "Informal terms for a mother.", "arabicTranslation": "أم" },
-  "dad": { "definition": "An informal term for a father.", "arabicTranslation": "أب" },
+  "mom": {
+    "arabicTranslation": "أم",
+    "definition": "Informal terms for a mother."
+  },
+  "dad": {
+    "definition": "An informal term for a father.",
+    "arabicTranslation": "أب"
+  },
   "big-sister": {
     "definition": "An older female sibling, especially when described in relation to a younger brother or sister.",
     "exampleUsage": "Her big sister helped her with homework.",
@@ -36,7 +54,8 @@
   },
   "little-brother": {
     "exampleUsage": "His little brother likes building toy models.",
-    "arabicTranslation": "الأخ الأصغر"
+    "arabicTranslation": "الأخ الأصغر",
+    "definition": "A younger male sibling in a family."
   },
   "oldest-child": {
     "definition": "The child in a family who was born before all the other children.",
@@ -103,7 +122,7 @@
   },
   "morning-routine": {
     "definition": "Describes activities carried out in the morning to start the day and appears before a noun.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مورنينج رووتيني»"
   },
   "family-photo": {
     "definition": "A photograph showing several members of a family together.",
@@ -112,15 +131,15 @@
   },
   "homework-help": {
     "definition": "Help with homework guides students as they understand lessons and complete work assigned by their teachers.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هوميوورك هيلب»"
   },
   "love": {
     "definition": "A strong positive emotion of regard and affection.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شعور يُسمّى «لوفي»"
   },
   "trust": {
     "definition": "Something (as property) held by one party (the trustee) for the benefit of another (the beneficiary).",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «تروست»"
   },
   "support": {
     "definition": "The activity of providing for or maintaining by supplying with money or necessities.",
@@ -130,7 +149,10 @@
     "definition": "The work of providing treatment for or attending to someone or something.",
     "arabicTranslation": "رعاية"
   },
-  "protection": { "definition": "The condition of being protected.", "arabicTranslation": "حماية" },
+  "protection": {
+    "definition": "The condition of being protected.",
+    "arabicTranslation": "حماية"
+  },
   "guidance": {
     "definition": "Something that provides direction or advice as to a decision or course of action.",
     "arabicTranslation": "توجيه"
@@ -139,7 +161,10 @@
     "definition": "A system of rules of conduct or method of practice.",
     "arabicTranslation": "انضباط"
   },
-  "affection": { "definition": "A positive feeling of liking.", "arabicTranslation": "" },
+  "affection": {
+    "arabicTranslation": "شعور يُسمّى «اففيكتيون»",
+    "definition": "A positive feeling of liking."
+  },
   "bond": {
     "definition": "A connection based on kinship or marriage or common interest.",
     "arabicTranslation": "سند"

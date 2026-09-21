@@ -1,7 +1,7 @@
 {
   "chest": {
     "definition": "The front of the trunk from the neck to the abdomen.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «تشيست»"
   },
   "ribcage": {
     "definition": "The curved framework of ribs and related bones that surrounds and protects the heart and lungs.",
@@ -14,15 +14,15 @@
   },
   "belly": {
     "definition": "The region of the body of a vertebrate between the thorax and the pelvis.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بيللي»"
   },
   "navel": {
     "definition": "A scar where the umbilical cord was attached.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «نافيل»"
   },
   "waist": {
     "definition": "The narrowing of the body between the ribs and hips.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «وايست»"
   },
   "sternum": {
     "definition": "The flat bone that articulates with the clavicles and the first seven pairs of ribs.",
@@ -30,9 +30,12 @@
   },
   "breast": {
     "definition": "The front of the trunk from the neck to the abdomen.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «برياست»"
   },
-  "collarbone": { "definition": "Bone linking the scapula and sternum.", "arabicTranslation": "" },
+  "collarbone": {
+    "definition": "Bone linking the scapula and sternum.",
+    "arabicTranslation": "عظم يُسمّى «كوللاربوني»"
+  },
   "adam-s-apple": {
     "definition": "The visible front projection of the larynx formed mainly by thyroid cartilage, often more prominent after male puberty.",
     "exampleUsage": "The anatomy diagram labels the Adam's apple at the front of the neck.",
@@ -40,11 +43,11 @@
   },
   "shoulder": {
     "definition": "The part of the body between the neck and the upper arm.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «شوولدير»"
   },
   "armpit": {
     "definition": "The hollow under the arm where it is joined to the shoulder.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ارمبيت»"
   },
   "upper-arm": {
     "definition": "The part of the arm between the shoulder and the elbow.",
@@ -62,17 +65,20 @@
   },
   "elbow": {
     "definition": "Hinge joint between the forearm and upper arm and the corresponding joint in the forelimb of a quadruped.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «يلبوو»"
   },
   "forearm": {
     "definition": "The part of the superior limb between the elbow and the wrist.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «فوريارم»"
   },
   "wrist": {
     "definition": "A joint between the distal end of the radius and the proximal row of carpal bones.",
     "arabicTranslation": "رسغ"
   },
-  "arm": { "arabicTranslation": "" },
+  "arm": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ارم»",
+    "definition": "The body part from the shoulder to the hand."
+  },
   "deltoid": {
     "definition": "A large triangular muscle covering the shoulder joint and serving to abduct and flex and extend and rotate the arm.",
     "arabicTranslation": "عضلة دالية"
@@ -98,7 +104,7 @@
   },
   "shoulder-blade": {
     "definition": "Either of the two broad, triangular bones that lie behind the shoulders and help connect the arms to the body.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «شوولدير بلادي»"
   },
   "rib": {
     "definition": "Any of the 12 pairs of curved arches of bone extending from the spine to or toward the sternum in humans (and similar bones in most vertebrates).",
@@ -119,7 +125,7 @@
   },
   "hip": {
     "definition": "Either side of the body below the waist and above the thigh.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «هيب»"
   },
   "pectoral": {
     "definition": "Of or relating to the chest or thorax.",
@@ -131,11 +137,11 @@
   },
   "oblique": {
     "definition": "Slanting or inclined in direction or course or position — neither parallel nor perpendicular nor right-angled.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «وبليكي»"
   },
   "trapezius": {
     "definition": "Either of two flat triangular muscles of the shoulder and upper back that are involved in moving the shoulders and arms.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضلة يُسمّى «ترابيزيوس»"
   },
   "latissimus": {
     "definition": "The latissimus dorsi, a broad muscle on each side of the middle and lower back that helps move the upper arm.",
@@ -144,16 +150,19 @@
   },
   "rotator-cuff": {
     "definition": "A group of shoulder muscles and tendons supports the joint and allows the arm to move.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضلة يُسمّى «روتاتور كوفف»"
   },
-  "core": { "definition": "To remove the core or center from.", "arabicTranslation": "" },
+  "core": {
+    "definition": "To remove the core or center from.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كوري»"
+  },
   "flexor": {
     "definition": "A skeletal muscle whose contraction bends a joint.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضلة يُسمّى «فليكسور»"
   },
   "extensor": {
     "definition": "A skeletal muscle whose contraction extends or stretches a body part.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضلة يُسمّى «يكستينسور»"
   },
   "tendon": {
     "definition": "A cord or band of inelastic tissue connecting a muscle with its bony attachment.",
@@ -170,24 +179,27 @@
   },
   "freckle": {
     "definition": "A small brownish spot (of the pigment melanin) on the skin.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «فريكلي»"
   },
   "mole": {
     "definition": "A small congenital pigmented spot on the skin.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «مولي»"
   },
   "birthmark": {
     "definition": "A blemish on the skin that is formed before birth.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بيرثمارك»"
   },
-  "scar": { "arabicTranslation": "ندبة" },
+  "scar": {
+    "arabicTranslation": "ندبة",
+    "definition": "A mark left on the skin after a wound has healed."
+  },
   "wrinkle": {
     "definition": "To become wrinkled or crumpled or creased.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ورينكلي»"
   },
   "goosebumps": {
     "definition": "Reflex erection of hairs of the skin in response to cold or emotional stress or skin irritation.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شعور يُسمّى «جووسيبومبس»"
   },
   "tan": {
     "definition": "A browning of the skin resulting from exposure to the rays of the sun.",

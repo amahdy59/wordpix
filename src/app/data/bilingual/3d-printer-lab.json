@@ -98,7 +98,8 @@
   },
   "computer": {
     "definition": "A machine for performing calculations automatically.",
-    "arabicTranslation": "حاسوب"
+    "arabicTranslation": "حاسوب",
+    "exampleUsage": "The computer was used during the activity."
   },
   "3d-software": {
     "definition": "Computer software used to create, prepare, or manage three-dimensional models for printing.",
@@ -107,7 +108,8 @@
   },
   "mouse": {
     "definition": "A hand-operated electronic device that controls the coordinates of a cursor on your computer screen as you move it around on a pad.",
-    "arabicTranslation": "فأرة حاسوب"
+    "arabicTranslation": "فأرة حاسوب",
+    "exampleUsage": "The mouse was used during the activity."
   },
   "graphics-tablet": {
     "definition": "A flat computer input device that lets a person draw or write with an electronic pen.",
@@ -116,15 +118,18 @@
   },
   "ruler": {
     "definition": "A straight tool used for measuring and drawing lines.",
-    "arabicTranslation": "مسطرة"
+    "arabicTranslation": "مسطرة",
+    "exampleUsage": "The ruler was used during the activity."
   },
   "caliper": {
     "definition": "An instrument for measuring the distance between two points.",
-    "arabicTranslation": "قَدَمة قياس"
+    "arabicTranslation": "قَدَمة قياس",
+    "exampleUsage": "The caliper was used during the activity."
   },
   "protractor": {
     "definition": "Drafting instrument used to draw or measure angles.",
-    "arabicTranslation": "منقلة"
+    "arabicTranslation": "منقلة",
+    "exampleUsage": "The protractor was used during the activity."
   },
   "grid-paper": {
     "definition": "Paper printed with evenly spaced lines that form squares for drawing, measuring, or planning.",
@@ -145,7 +150,8 @@
   },
   "file": {
     "definition": "A named collection of digital information saved on a device.",
-    "arabicTranslation": "ملف"
+    "arabicTranslation": "ملف",
+    "exampleUsage": "The file was used during the activity."
   },
   "craft-knife": {
     "definition": "A small sharp cutting tool used for precise craft and model-making work.",
@@ -154,16 +160,22 @@
   },
   "pliers": {
     "definition": "A hand tool with two handles used for gripping or cutting.",
-    "arabicTranslation": "كماشة"
+    "arabicTranslation": "كماشة",
+    "exampleUsage": "The pliers was used during the activity."
   },
   "tweezers": {
     "definition": "A small tool consisting of two pointed arms used for picking up small objects or plucking hairs.",
-    "arabicTranslation": "ملقط"
+    "arabicTranslation": "ملقط",
+    "exampleUsage": "The tweezers was used during the activity."
   },
-  "paint": { "definition": "To cover a surface with paint.", "arabicTranslation": "طلاء" },
+  "paint": {
+    "definition": "To cover a surface with paint.",
+    "arabicTranslation": "طلاء"
+  },
   "paintbrush": {
     "definition": "A tool with hairs used to spread paint.",
-    "arabicTranslation": "فرشاة طلاء"
+    "arabicTranslation": "فرشاة طلاء",
+    "exampleUsage": "The paintbrush was used during the activity."
   },
   "primer": {
     "definition": "The first or preliminary coat of paint or size applied to a surface.",
@@ -201,7 +213,8 @@
   },
   "cookie-cutter": {
     "definition": "A shaped tool used to cut dough or soft material into a particular outline.",
-    "arabicTranslation": "قطّاعة بسكويت"
+    "arabicTranslation": "قطّاعة بسكويت",
+    "exampleUsage": "The cookie cutter was used during the activity."
   },
   "whistle": {
     "definition": "A small object blown to make a loud signal.",
@@ -221,7 +234,8 @@
   },
   "storage-shelf": {
     "definition": "A horizontal surface used for storing tools, materials, or finished parts.",
-    "arabicTranslation": "رف تخزين"
+    "arabicTranslation": "رف تخزين",
+    "exampleUsage": "The storage shelf was used during the activity."
   },
   "ventilation-fan": {
     "definition": "A fan that moves air into or out of a room or enclosure to improve ventilation.",
@@ -248,7 +262,8 @@
   },
   "label-maker": {
     "definition": "A small device that prints adhesive labels for identifying items.",
-    "arabicTranslation": "صانع علامة"
+    "arabicTranslation": "صانع علامة",
+    "exampleUsage": "The label maker was used during the activity."
   },
   "zip-bag": {
     "definition": "A resealable plastic bag with a press-to-close or sliding zip seal.",
@@ -256,7 +271,7 @@
   },
   "desiccant-pack": {
     "definition": "A small packet containing material that absorbs moisture from the surrounding air.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «ديسيككانت باك»"
   },
   "frame": {
     "definition": "The supporting shape or structure of a building.",
@@ -264,37 +279,54 @@
   },
   "fan": {
     "definition": "A rotating device that moves air to cool or ventilate parts of the printer.",
-    "arabicTranslation": "مروحة"
+    "arabicTranslation": "مروحة",
+    "exampleUsage": "The fan was used during the activity."
   },
   "display": {
     "definition": "A screen or panel that shows printer information, menus, and settings.",
     "arabicTranslation": "شاشة عرض"
   },
-  "pla": { "arabicTranslation": "بولي لاكتيك أسيد (PLA)" },
+  "pla": {
+    "arabicTranslation": "بولي لاكتيك أسيد (PLA)",
+    "definition": "A common plastic filament used for making objects with a 3D printer."
+  },
   "abs": {
     "definition": "Any of a class of composite plastics used to make car bodies and cases for computers and other appliances.",
     "arabicTranslation": "بلاستيك ABS"
   },
-  "petg": { "arabicTranslation": "بلاستيك PETG" },
-  "tpu": { "arabicTranslation": "بولي يوريثان حراري (TPU)" },
+  "petg": {
+    "arabicTranslation": "بلاستيك PETG",
+    "definition": "A strong, slightly flexible plastic filament used in 3D printing."
+  },
+  "tpu": {
+    "arabicTranslation": "بولي يوريثان حراري (TPU)",
+    "definition": "A flexible plastic filament used to print bendable objects."
+  },
   "carbon-fiber": {
     "definition": "A lightweight material made from extremely thin carbon strands arranged in a highly ordered structure. It is usually added to plastics and other materials to make composite parts stronger and stiffer.",
     "arabicTranslation": "ألياف كربون"
   },
-  "wood-fill": { "arabicTranslation": "حشو خشب" },
+  "wood-fill": {
+    "arabicTranslation": "حشو خشب",
+    "definition": "A 3D printing filament blended with wood particles for a woodlike finish."
+  },
   "design": {
     "definition": "The act of working out the form of something (as by making a sketch or outline or plan).",
     "arabicTranslation": "تصميم"
   },
   "slice": {
     "definition": "To convert a 3D model into printable layers and machine instructions.",
-    "arabicTranslation": "يقطّع شرائح"
+    "arabicTranslation": "يقطّع شرائح",
+    "exampleUsage": "The slice was used during the activity."
   },
   "print": {
     "definition": "To create a three-dimensional object by depositing or curing material layer by layer.",
     "arabicTranslation": "طباعة"
   },
-  "layer": { "arabicTranslation": "طبقة" },
+  "layer": {
+    "arabicTranslation": "طبقة",
+    "definition": "One thin level of material added during a 3D print."
+  },
   "support": {
     "definition": "Temporary printed structures that hold overhangs or difficult shapes during printing.",
     "arabicTranslation": "دعم"

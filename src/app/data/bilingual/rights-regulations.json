@@ -1,7 +1,7 @@
 {
   "freedom-of-speech": {
     "definition": "The civil liberty to share opinions and information openly without government suppression, while still following generally applicable laws.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح قانوني يُسمّى «فرييدوم وف سبييتش»"
   },
   "right-to-privacy": {
     "definition": "The legal or human-rights principle that protects people against unjustified intrusion into their private life, information, or communications.",
@@ -10,7 +10,7 @@
   },
   "due-process": {
     "definition": "Fair legal procedures must come first when the government may take a person’s life, freedom, or property. The Constitution requires these protections.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «دوي بروكيسس»"
   },
   "equal-protection": {
     "definition": "A legal principle requiring laws and government actions to protect people equally without unjustified discrimination.",
@@ -19,11 +19,11 @@
   },
   "right-to-vote": {
     "definition": "A legal entitlement to vote protected by the Fifteenth Amendment and extended to women by the Nineteenth Amendment.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريغت تو فوتي»"
   },
   "freedom-of-religion": {
     "definition": "A civil liberty, or basic freedom protected by law, allows people to hold, practice, and express religious beliefs and worship without government coercion, discrimination, or restriction.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح قانوني يُسمّى «فرييدوم وف ريليجيون»"
   },
   "right-to-counsel": {
     "definition": "The legal right in certain proceedings to receive help from a lawyer or legal representative.",
@@ -77,7 +77,10 @@
     "definition": "Acting according to certain accepted standards.",
     "arabicTranslation": "امتثال"
   },
-  "enforcement": { "arabicTranslation": "إنفاذ" },
+  "enforcement": {
+    "arabicTranslation": "إنفاذ",
+    "definition": "The act of making sure a rule or law is obeyed."
+  },
   "adjudication": {
     "definition": "The final judgment in a legal proceeding.",
     "arabicTranslation": "فصل قضائي"
@@ -102,7 +105,10 @@
     "definition": "(criminal law) a final judgment of guilty in a criminal case and the punishment that is imposed.",
     "arabicTranslation": "إدانة"
   },
-  "acquittal": { "arabicTranslation": "براءة" },
+  "acquittal": {
+    "arabicTranslation": "براءة",
+    "definition": "A court decision that a person is not guilty of a charge."
+  },
   "parole": {
     "definition": "(law) a conditional release from imprisonment that entitles the person to serve the remainder of the sentence outside the prison as long as the terms of release are complied with.",
     "arabicTranslation": "إفراج مشروط"
@@ -123,25 +129,40 @@
     "definition": "A written agreement between two states or sovereigns.",
     "arabicTranslation": "معاهدة"
   },
-  "convention": { "arabicTranslation": "اتفاقية" },
+  "convention": {
+    "arabicTranslation": "اتفاقية",
+    "definition": "A formal agreement between countries or groups."
+  },
   "sovereignty": {
     "definition": "Government free from external control.",
     "arabicTranslation": "سيادة"
   },
-  "diplomacy": { "arabicTranslation": "دبلوماسية" },
-  "sanctions": { "definition": "Formal and explicit approval.", "arabicTranslation": "عقوبات" },
+  "diplomacy": {
+    "arabicTranslation": "دبلوماسية",
+    "definition": "The work of managing relations between countries through discussion."
+  },
+  "sanctions": {
+    "arabicTranslation": "عقوبات",
+    "definition": "Formal and explicit approval."
+  },
   "extradition": {
     "definition": "The surrender of an accused or convicted person by one state or country to another (usually under the provisions of a statute or treaty).",
     "arabicTranslation": "تسليم مطلوبين"
   },
-  "asylum": { "definition": "A shelter from danger or hardship.", "arabicTranslation": "لجوء" },
-  "refugee": { "definition": "An exile who flees for safety.", "arabicTranslation": "لاجئ" },
+  "asylum": {
+    "definition": "A shelter from danger or hardship.",
+    "arabicTranslation": "لجوء"
+  },
+  "refugee": {
+    "definition": "An exile who flees for safety.",
+    "arabicTranslation": "لاجئ"
+  },
   "human-rights": {
     "definition": "Basic freedoms and protections that belong to every person simply because they are human. They are considered universal, meaning they apply to everyone, inalienable, meaning they cannot justly be taken away, and indivisible, meaning they should not be separated into more or less important parts.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «هومان ريغتس»"
   },
   "geneva-convention": {
     "definition": "Geneva Convention is a multilateral treaty that aims to regulate trade, investment, and economic relations among member states.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جينيفا كونفينتيون»"
   }
 }

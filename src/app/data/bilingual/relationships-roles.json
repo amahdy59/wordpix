@@ -1,26 +1,32 @@
 {
   "friend": {
     "definition": "A person of any age who plays or spends time with you.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «فرييند»"
   },
   "best-friend": {
     "definition": "A person's closest and most trusted companion, linked by emotional closeness, mutual loyalty, and a lasting friendship.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «بيست فرييند»"
   },
   "acquaintance": {
     "definition": "Personal knowledge or information about someone or something.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «اككاينتانكي»"
   },
   "classmate": {
     "definition": "An acquaintance that you go to school with.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كلاسسماتي»"
   },
   "colleague": {
     "definition": "A person who is member of one's class or profession.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «كوللياجوي»"
   },
-  "neighbor": { "definition": "A nearby object of the same kind.", "arabicTranslation": "" },
-  "teammate": { "definition": "A fellow member of a team.", "arabicTranslation": "" },
+  "neighbor": {
+    "definition": "A nearby object of the same kind.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نييغبور»"
+  },
+  "teammate": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تيامماتي»",
+    "definition": "A fellow member of a team."
+  },
   "roommate": {
     "definition": "An associate who shares a room with you.",
     "arabicTranslation": "زميل سكن"
@@ -32,17 +38,32 @@
   },
   "companion": {
     "definition": "A friend who is frequently in the company of another.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كومبانيون»"
   },
-  "partner": { "definition": "A person's partner in marriage.", "arabicTranslation": "" },
-  "spouse": { "definition": "A person's partner in marriage.", "arabicTranslation": "زوج أو زوجة" },
-  "husband": { "arabicTranslation": "زوج" },
-  "wife": { "arabicTranslation": "زوجة" },
+  "partner": {
+    "definition": "A person's partner in marriage.",
+    "arabicTranslation": "شخص يُسمّى «بارتنير»"
+  },
+  "spouse": {
+    "definition": "A person's partner in marriage.",
+    "arabicTranslation": "زوج أو زوجة"
+  },
+  "husband": {
+    "arabicTranslation": "زوج",
+    "definition": "A married man in relation to his spouse."
+  },
+  "wife": {
+    "arabicTranslation": "زوجة",
+    "definition": "A married woman in relation to her spouse."
+  },
   "boyfriend": {
     "definition": "A man who is the lover of a man or woman.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بويفرييند»"
   },
-  "girlfriend": { "arabicTranslation": "" },
+  "girlfriend": {
+    "arabicTranslation": "سفينة يُسمّى «جيرلفرييند»",
+    "definition": "A woman in a romantic relationship with someone."
+  },
   "fianc-": {
     "definition": "A man who is engaged to be married.",
     "exampleUsage": "Her fiancé attended the family celebration.",
@@ -60,17 +81,23 @@
   },
   "soulmate": {
     "definition": "A person you love deeply and feel is right for a lasting romantic relationship.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «سوولماتي»"
   },
-  "boss": { "definition": "A person responsible for hiring workers.", "arabicTranslation": "" },
+  "boss": {
+    "definition": "A person responsible for hiring workers.",
+    "arabicTranslation": "شخص يُسمّى «بوسس»"
+  },
   "manager": {
     "definition": "A person who controls resources and expenditures.",
     "arabicTranslation": "مدير"
   },
-  "employee": { "definition": "A worker who is hired to perform a job.", "arabicTranslation": "" },
+  "employee": {
+    "definition": "A worker who is hired to perform a job.",
+    "arabicTranslation": "عامل يُسمّى «يمبلوييي»"
+  },
   "supervisor": {
     "definition": "A program that controls the execution of other programs.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سوبيرفيسور»"
   },
   "intern": {
     "definition": "A student or trainee working temporarily to gain experience.",
@@ -78,12 +105,15 @@
   },
   "mentor": {
     "definition": "To serve as a teacher or trusted counselor.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مينتور»"
   },
-  "apprentice": { "definition": "To be or work as an apprentice.", "arabicTranslation": "متدرب" },
+  "apprentice": {
+    "definition": "To be or work as an apprentice.",
+    "arabicTranslation": "متدرب"
+  },
   "assistant": {
     "definition": "A person who contributes to the fulfillment of a need or furtherance of an effort or purpose.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «اسسيستانت»"
   },
   "director": {
     "definition": "The person who controls how a television production is made.",
@@ -93,16 +123,25 @@
     "definition": "Someone whose task is to see that work goes harmoniously.",
     "arabicTranslation": "منسق"
   },
-  "teacher": { "definition": "A personified abstraction that teaches.", "arabicTranslation": "" },
-  "student": { "definition": "A person who studies at a school.", "arabicTranslation": "طالب" },
+  "teacher": {
+    "definition": "A personified abstraction that teaches.",
+    "arabicTranslation": "شخص يُسمّى «تياتشير»"
+  },
+  "student": {
+    "definition": "A person who studies at a school.",
+    "arabicTranslation": "طالب"
+  },
   "coach": {
     "definition": "A person who trains players in a sport.",
     "arabicTranslation": "حافلة سفر"
   },
-  "captain": { "definition": "The leader of a group of people.", "arabicTranslation": "قبطان" },
+  "captain": {
+    "definition": "The leader of a group of people.",
+    "arabicTranslation": "قبطان"
+  },
   "leader": {
     "definition": "A person who rules or guides or inspires others.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «ليادير»"
   },
   "volunteer": {
     "definition": "A person who freely helps without being paid.",
@@ -114,7 +153,7 @@
   },
   "president": {
     "definition": "The person who holds the office of head of state of the United States government.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «بريسيدينت»"
   },
   "secretary": {
     "definition": "An assistant who handles correspondence and clerical work for a boss or an organization.",
@@ -122,6 +161,6 @@
   },
   "treasurer": {
     "definition": "An officer charged with receiving and disbursing funds.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ترياسورير»"
   }
 }

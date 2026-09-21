@@ -1,5 +1,8 @@
 {
-  "hand": { "definition": "A card player in a game of bridge.", "arabicTranslation": "يد" },
+  "hand": {
+    "definition": "A card player in a game of bridge.",
+    "arabicTranslation": "يد"
+  },
   "palm": {
     "definition": "The inner surface of the hand from the wrist to the base of the fingers.",
     "arabicTranslation": "نخيل"
@@ -31,7 +34,7 @@
   },
   "middle-finger": {
     "definition": "The central finger of the hand, positioned between the index finger and the ring finger.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ميددلي فينجير»"
   },
   "ring-finger": {
     "definition": "It is the fourth digit on either hand, positioned between the middle and little fingers.",
@@ -39,9 +42,12 @@
   },
   "little-finger": {
     "definition": "This is the hand’s shortest digit, commonly called the pinky, on the side near the ulna, or forearm bone. It contributes to the precise grip used to hold small objects.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «ليتتلي فينجير»"
   },
-  "fingertip": { "definition": "The end (tip) of a finger.", "arabicTranslation": "طرف الإصبع" },
+  "fingertip": {
+    "arabicTranslation": "طرف الإصبع",
+    "definition": "The end (tip) of a finger."
+  },
   "fingerprint": {
     "definition": "A print made by an impression of the ridges in the skin of a finger.",
     "arabicTranslation": "بصمة إصبع"
@@ -54,7 +60,10 @@
     "definition": "The dead skin at the base of a fingernail or toenail.",
     "arabicTranslation": "جلدة حول الظفر"
   },
-  "joint": { "arabicTranslation": "مفصل" },
+  "joint": {
+    "arabicTranslation": "مفصل",
+    "definition": "The place where two bones meet and allow movement."
+  },
   "phalanx": {
     "definition": "Any of the bones of the fingers or toes.",
     "arabicTranslation": "سلامية"
@@ -68,15 +77,30 @@
     "definition": "An angular or rounded shape made by folding.",
     "arabicTranslation": "ثنية"
   },
-  "lifeline": { "arabicTranslation": "خط الحياة" },
-  "grip": { "definition": "An intellectual hold or understanding.", "arabicTranslation": "قبضة" },
-  "pinch": { "definition": "A painful or straitened circumstance.", "arabicTranslation": "قرصة" },
-  "grasp": { "definition": "An intellectual hold or understanding.", "arabicTranslation": "إمساك" },
+  "lifeline": {
+    "arabicTranslation": "خط الحياة",
+    "definition": "A line in the palm that palm readers associate with a person's life."
+  },
+  "grip": {
+    "definition": "An intellectual hold or understanding.",
+    "arabicTranslation": "قبضة"
+  },
+  "pinch": {
+    "definition": "A painful or straitened circumstance.",
+    "arabicTranslation": "قرصة"
+  },
+  "grasp": {
+    "definition": "An intellectual hold or understanding.",
+    "arabicTranslation": "إمساك"
+  },
   "squeeze": {
     "definition": "The act of gripping and pressing firmly.",
     "arabicTranslation": "عصر"
   },
-  "clench": { "arabicTranslation": "قبض بإحكام" },
+  "clench": {
+    "arabicTranslation": "قبض بإحكام",
+    "definition": "To close the hand or teeth tightly."
+  },
   "point": {
     "definition": "A geometric element that has position but no extension.",
     "arabicTranslation": "يشير"
@@ -101,15 +125,30 @@
     "definition": "The part of the leg of a human being below the ankle joint.",
     "arabicTranslation": "قدم"
   },
-  "heel": { "definition": "The back part of the human foot.", "arabicTranslation": "كعب" },
-  "sole": { "definition": "The underside of the foot.", "arabicTranslation": "باطن القدم" },
-  "arch": { "arabicTranslation": "قوس" },
-  "instep": { "arabicTranslation": "مشط القدم" },
+  "heel": {
+    "definition": "The back part of the human foot.",
+    "arabicTranslation": "كعب"
+  },
+  "sole": {
+    "arabicTranslation": "باطن القدم",
+    "definition": "The underside of the foot."
+  },
+  "arch": {
+    "arabicTranslation": "قوس",
+    "definition": "The curved raised part along the bottom of a foot."
+  },
+  "instep": {
+    "arabicTranslation": "مشط القدم",
+    "definition": "The curved top part of a foot between the toes and ankle."
+  },
   "ankle": {
     "definition": "A gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus.",
     "arabicTranslation": "كاحل"
   },
-  "toe": { "arabicTranslation": "إصبع القدم" },
+  "toe": {
+    "arabicTranslation": "إصبع القدم",
+    "definition": "One of the small digits at the end of a foot."
+  },
   "ball": {
     "definition": "A round object thrown, kicked, or used in games.",
     "arabicTranslation": "مقدمة باطن القدم"
@@ -118,10 +157,13 @@
     "definition": "A structure built over water or a low place for people to cross.",
     "arabicTranslation": "قوس القدم"
   },
-  "toenail": { "definition": "The nail at the end of a toe.", "arabicTranslation": "ظفر القدم" },
+  "toenail": {
+    "arabicTranslation": "ظفر القدم",
+    "definition": "The nail at the end of a toe."
+  },
   "manicure": {
-    "definition": "To trim carefully and neatly.",
-    "arabicTranslation": "عناية بالأظافر"
+    "arabicTranslation": "عناية بالأظافر",
+    "definition": "A treatment that cleans, shapes, and cares for fingernails."
   },
   "pedicure": {
     "definition": "Professional care for the feet and toenails.",
@@ -151,7 +193,7 @@
   },
   "pumice-stone": {
     "definition": "A lightweight volcanic rock with many small cavities forms when lava containing trapped gas cools and hardens quickly. Its rough surface makes it useful for scrubbing, while crushed pumice stone can be added to lightweight concrete.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «بوميكي ستوني»"
   },
   "cuticle-oil": {
     "definition": "A cosmetic oil applied around the base of the nails to moisturize the cuticle area.",

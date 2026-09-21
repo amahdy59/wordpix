@@ -1,7 +1,8 @@
 {
   "solar-panel": {
     "definition": "A device with linked semiconductor cells that changes sunlight directly into electrical power.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «سولار بانيل»",
+    "exampleUsage": "The solar panel was used during the activity."
   },
   "inverter": {
     "definition": "An electrical converter that converts direct current into alternating current.",
@@ -21,7 +22,10 @@
     "exampleUsage": "The solar panels were fastened to a metal mounting frame.",
     "arabicTranslation": "إطار تثبيت"
   },
-  "tracker": { "definition": "A person who tracks down game.", "arabicTranslation": "متعقّب" },
+  "tracker": {
+    "definition": "A person who tracks down game.",
+    "arabicTranslation": "متعقّب"
+  },
   "junction-box": {
     "definition": "An enclosed box that protects points where electrical wires or circuits are joined.",
     "exampleUsage": "The technician inspected the sealed junction box.",
@@ -34,7 +38,8 @@
   },
   "transformer": {
     "definition": "An electrical device by which alternating current of one voltage is changed to another voltage.",
-    "arabicTranslation": "محوّل كهربائي"
+    "arabicTranslation": "محوّل كهربائي",
+    "exampleUsage": "The transformer was used during the activity."
   },
   "grid-connection": {
     "definition": "The electrical link between a power-generating system and the public electricity network.",
@@ -43,37 +48,45 @@
   },
   "drill": {
     "definition": "A tool with a rotating bit used for making holes.",
-    "arabicTranslation": "مثقاب"
+    "arabicTranslation": "مثقاب",
+    "exampleUsage": "The drill was used during the activity."
   },
   "wrench": {
     "definition": "A tool used for turning nuts, bolts, or pipes.",
-    "arabicTranslation": "مفتاح ربط"
+    "arabicTranslation": "مفتاح ربط",
+    "exampleUsage": "The wrench was used during the activity."
   },
   "wire-cutter": {
     "definition": "A hand tool with two sharp edges designed to cut wire.",
-    "arabicTranslation": "قطّاعة سلك"
+    "arabicTranslation": "قطّاعة سلك",
+    "exampleUsage": "The wire cutter was used during the activity."
   },
   "crimping-tool": {
     "definition": "A hand tool used to press a connector tightly onto a wire or cable.",
     "exampleUsage": "The technician used the correct crimping tool for the cable connector.",
     "arabicTranslation": "أداة كبس الوصلات"
   },
-  "cable-tie": { "arabicTranslation": "" },
+  "cable-tie": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كابلي تيي»",
+    "definition": "A plastic strip that tightens around cables to hold them together."
+  },
   "conduit": {
     "definition": "A passage (a pipe or tunnel) through which water or electric wires can pass.",
     "arabicTranslation": "قناة أسلاك"
   },
   "ground-rod": {
     "definition": "A metal rod driven into the earth acts as a grounding electrode, providing a low-resistance route for fault current to disperse safely.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جرووند رود»"
   },
   "multimeter": {
     "definition": "A portable instrument that tests several features of electricity, including voltage, current, and resistance, in a circuit.",
-    "arabicTranslation": "ملتيميتر"
+    "arabicTranslation": "ملتيميتر",
+    "exampleUsage": "The multimeter was used during the activity."
   },
   "level": {
     "definition": "A tool used to check whether a surface is horizontal or vertical.",
-    "arabicTranslation": "مستوٍ"
+    "arabicTranslation": "مستوٍ",
+    "exampleUsage": "The level was used during the activity."
   },
   "ladder": {
     "definition": "Ascending stages by which somebody or something can progress.",
@@ -83,14 +96,18 @@
     "definition": "A room where staff monitor and control a television broadcast.",
     "arabicTranslation": "غرفة عامل ضابط"
   },
-  "security-fence": { "arabicTranslation": "" },
+  "security-fence": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سيكوريتي فينكي»",
+    "definition": "A barrier built to prevent unauthorized entry into an area."
+  },
   "access-road": {
     "definition": "A short connecting road lets drivers enter or leave an expressway.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اككيسس رواد»"
   },
   "gate": {
     "definition": "To control with a valve or other device that functions like a gate.",
-    "arabicTranslation": "بوابة"
+    "arabicTranslation": "بوابة",
+    "exampleUsage": "The gate was used during the activity."
   },
   "weather-station": {
     "definition": "A site in a network of stations that measures and records meteorological conditions.",
@@ -104,16 +121,26 @@
     "definition": "A subsidiary station where electricity is transformed for distribution by a low-voltage network.",
     "arabicTranslation": "محطة فرعية"
   },
-  "cable-tray": { "arabicTranslation": "مسار للكابلات" },
-  "lightning-rod": { "arabicTranslation": "" },
+  "cable-tray": {
+    "arabicTranslation": "مسار للكابلات",
+    "definition": "A support structure that holds and routes electrical cables."
+  },
+  "lightning-rod": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليغتنينج رود»",
+    "definition": "A metal conductor that helps protect a building from lightning."
+  },
   "grounding-system": {
     "definition": "Describing a system that directs unwanted electrical current into the ground, reducing the risk of equipment damage and electric shock.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نظام يُسمّى «جرووندينج سيستيم»"
   },
-  "sunlight": { "arabicTranslation": "ضوء الشمس" },
+  "sunlight": {
+    "arabicTranslation": "ضوء الشمس",
+    "definition": "The light and energy that come from the sun."
+  },
   "solar-cell": {
     "definition": "A device that produces electricity from light through the photovoltaic effect, usually with semiconductor materials such as silicon.",
-    "arabicTranslation": "خلية شمسي"
+    "arabicTranslation": "خلية شمسي",
+    "exampleUsage": "The solar cell was used during the activity."
   },
   "electricity": {
     "definition": "Energy made available by the flow of electric charge through a conductor.",
@@ -135,16 +162,34 @@
     "definition": "A unit of power equal to 1000 watts.",
     "arabicTranslation": "كيلوواط"
   },
-  "energy-meter": { "arabicTranslation": "عداد طاقة" },
+  "energy-meter": {
+    "arabicTranslation": "عداد طاقة",
+    "definition": "A device that measures the amount of electrical energy used or produced."
+  },
   "power-line": {
     "definition": "A cable that carries electricity from generating stations to homes, businesses, and other users.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بووير ليني»"
   },
-  "distribution-panel": { "arabicTranslation": "" },
-  "cleaning-brush": { "arabicTranslation": "فرشاة تنظيف" },
-  "water-hose": { "arabicTranslation": "خرطوم مياه" },
-  "inspection-drone": { "arabicTranslation": "طائرة مسيّرة فحص" },
-  "thermal-camera": { "arabicTranslation": "كاميرا حرارية" },
+  "distribution-panel": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديستريبوتيون بانيل»",
+    "definition": "A board that divides electrical power among different circuits."
+  },
+  "cleaning-brush": {
+    "arabicTranslation": "فرشاة تنظيف",
+    "definition": "A brush used to remove dirt from a surface."
+  },
+  "water-hose": {
+    "arabicTranslation": "خرطوم مياه",
+    "definition": "A flexible tube used to carry water to a place."
+  },
+  "inspection-drone": {
+    "arabicTranslation": "طائرة مسيّرة فحص",
+    "definition": "A drone used to inspect equipment or an area from the air."
+  },
+  "thermal-camera": {
+    "arabicTranslation": "كاميرا حرارية",
+    "definition": "A camera that shows temperature differences using infrared light."
+  },
   "safety-vest": {
     "definition": "A bright protective garment that makes a worker easy to see.",
     "arabicTranslation": "سترة بلا أكمام سلامة"
@@ -159,7 +204,8 @@
   },
   "tool-belt": {
     "definition": "A belt worn around the waist keeps hand tools close in pockets and loops. It is useful for carpentry, repairs, and crafts.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «توول بيلت»",
+    "exampleUsage": "The tool belt was used during the activity."
   },
   "logbook": {
     "definition": "A book in which the log is written.",
@@ -171,13 +217,16 @@
   },
   "open-field": {
     "definition": "A field of study that researchers have only partly explored and have not yet organized around well-developed theories.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «وبين فييلد»"
   },
   "clear-sky": {
     "definition": "A sky without clouds, allowing the sun or stars to be seen.",
     "arabicTranslation": "سماء صافٍ"
   },
-  "shadow": { "definition": "Shade within clear boundaries.", "arabicTranslation": "ظل" },
+  "shadow": {
+    "definition": "Shade within clear boundaries.",
+    "arabicTranslation": "ظل"
+  },
   "cloud": {
     "definition": "A group of many things in the air or on the ground.",
     "arabicTranslation": "سحابة"
@@ -205,15 +254,25 @@
   },
   "fence-post": {
     "definition": "A post anchored in the ground supports the rails, boards, wires, mesh, or panels that make up a fence.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فينكي بوست»"
   },
-  "battery": { "definition": "A device that produces electricity.", "arabicTranslation": "بطارية" },
+  "battery": {
+    "definition": "A device that produces electricity.",
+    "arabicTranslation": "بطارية",
+    "exampleUsage": "The battery was used during the activity."
+  },
   "cable": {
     "definition": "A conductor for transmitting electrical or optical signals or electric power.",
     "arabicTranslation": "كابل"
   },
-  "mounting-rack": { "arabicTranslation": "" },
-  "meter": { "arabicTranslation": "عداد" },
+  "mounting-rack": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «موونتينج راك»",
+    "definition": "A frame that holds equipment such as solar panels in place."
+  },
+  "meter": {
+    "arabicTranslation": "عداد",
+    "definition": "A metric unit of length equal to one hundred centimeters."
+  },
   "grid": {
     "definition": "A system of high tension cables by which electrical power is distributed throughout a region.",
     "arabicTranslation": "شبكة كهربائية"
@@ -222,12 +281,18 @@
     "definition": "The quantity of unbalanced electricity in a body (either positive or negative) and construed as an excess or deficiency of electrons.",
     "arabicTranslation": "شحن"
   },
-  "discharge": { "definition": "The sudden giving off of energy.", "arabicTranslation": "تفريغ" },
+  "discharge": {
+    "definition": "The sudden giving off of energy.",
+    "arabicTranslation": "تفريغ"
+  },
   "clean-energy": {
     "definition": "Energy produced with little or no greenhouse gas emissions and limited environmental damage over its full life cycle, including energy from wind, sunlight, water, some nuclear plants, and biomass.",
     "arabicTranslation": "طاقة ينظف"
   },
-  "renewable": { "arabicTranslation": "متجدد" },
+  "renewable": {
+    "arabicTranslation": "متجدد",
+    "definition": "Able to be replaced naturally as it is used, like sunlight or wind."
+  },
   "carbon": {
     "definition": "An abundant nonmetallic tetravalent element occurring in three allotropic forms: amorphous carbon and graphite and diamond.",
     "arabicTranslation": "كربون"
@@ -248,5 +313,8 @@
     "definition": "An occurrence of improvement by virtue of preventing loss or injury or other change.",
     "arabicTranslation": "حفاظ"
   },
-  "recycle": { "definition": "To use again after processing.", "arabicTranslation": "إعادة تدوير" }
+  "recycle": {
+    "definition": "To use again after processing.",
+    "arabicTranslation": "إعادة تدوير"
+  }
 }

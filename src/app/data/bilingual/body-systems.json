@@ -44,7 +44,7 @@
   },
   "white-blood-cell": {
     "definition": "A blood cell containing a nucleus that mainly protects the body from infection.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «وهيتي بلوود كيلل»"
   },
   "antibody": {
     "definition": "Any of a large variety of proteins normally present in the body or produced in response to an antigen which it neutralizes, thus producing an immune response.",
@@ -56,7 +56,7 @@
   },
   "lymph-node": {
     "definition": "A small immune organ produces lymph and lymphocytes, white blood cells carried through the lymphatic system.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «ليمف نودي»"
   },
   "tonsil": {
     "definition": "Either of two masses of lymphatic tissue one on each side of the oral pharynx.",
@@ -68,11 +68,11 @@
   },
   "bone-marrow": {
     "definition": "Soft, blood-rich tissue inside bones makes blood cells and stores fat, especially in their spongy inner spaces.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «بوني مارروو»"
   },
   "immune-response": {
     "definition": "A coordinated biological reaction in which the immune system detects and attacks harmful substances, disease-causing organisms, or abnormal cells.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «يمموني ريسبونسي»"
   },
   "vaccine": {
     "definition": "Immunogen consisting of a suspension of weakened or dead pathogenic cells injected in order to stimulate the production of antibodies.",
@@ -99,7 +99,10 @@
     "exampleUsage": "The urethra was identified during the lesson.",
     "arabicTranslation": "إحليل"
   },
-  "urine": { "arabicTranslation": "بول" },
+  "urine": {
+    "arabicTranslation": "بول",
+    "definition": "Liquid waste made by the kidneys and passed out of the body."
+  },
   "filtration": {
     "definition": "The process whereby fluids pass through a filter or a filtering medium.",
     "arabicTranslation": "ترشيح"
@@ -108,7 +111,10 @@
     "definition": "Any of the small tubules that are the excretory units of the vertebrate kidney.",
     "arabicTranslation": "نفرون"
   },
-  "renal": { "definition": "Of or relating to the kidneys.", "arabicTranslation": "كلوي" },
+  "renal": {
+    "definition": "Of or relating to the kidneys.",
+    "arabicTranslation": "كلوي"
+  },
   "toxin": {
     "definition": "A poisonous substance produced during the metabolism and growth of certain microorganisms and some higher plant and animal species.",
     "exampleUsage": "The toxin was identified during the lesson.",
@@ -144,12 +150,18 @@
     "exampleUsage": "The fetus was identified during the lesson.",
     "arabicTranslation": "جنين"
   },
-  "pregnancy": { "definition": "The state of being pregnant.", "arabicTranslation": "حمل" },
+  "pregnancy": {
+    "arabicTranslation": "حمل",
+    "definition": "The state of being pregnant."
+  },
   "birth": {
     "definition": "The time when something begins (especially life).",
     "arabicTranslation": "ميلاد"
   },
-  "growth": { "definition": "Something grown or growing.", "arabicTranslation": "نمو" },
+  "growth": {
+    "arabicTranslation": "نمو",
+    "definition": "Something grown or growing."
+  },
   "puberty": {
     "definition": "The time of life when sex glands become functional.",
     "arabicTranslation": "بلوغ"
@@ -169,15 +181,15 @@
   },
   "hair-follicle": {
     "definition": "A small tube-shaped cavity surrounds a hair root and connects with tiny muscles and sebaceous glands, which release oil.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضلة يُسمّى «هاير فولليكلي»"
   },
   "sweat-gland": {
     "definition": "A small organ in the skin that releases sweat, cooling the body and helping remove some waste while keeping the skin moist.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «سويات جلاند»"
   },
   "oil-gland": {
     "definition": "A small organ produces and releases an oily substance.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «ويل جلاند»"
   },
   "melanin": {
     "definition": "Insoluble pigments that account for the color of e.g. skin and scales and feathers.",

@@ -1,9 +1,13 @@
 {
   "sewing-machine": {
     "definition": "A machine that joins fabric and other flexible materials by passing thread through them in linked stitches, usually with one thread above and another below.",
-    "arabicTranslation": "آلة خياطة"
+    "arabicTranslation": "آلة خياطة",
+    "exampleUsage": "The sewing machine was used during the activity."
   },
-  "needle": { "arabicTranslation": "إبرة" },
+  "needle": {
+    "arabicTranslation": "إبرة",
+    "definition": "A thin pointed tool used for sewing or shaping clay."
+  },
   "thread": {
     "definition": "A fine cord of twisted fibers (of cotton or silk or wool or nylon etc.) used in sewing and weaving.",
     "arabicTranslation": "خيط"
@@ -12,7 +16,10 @@
     "definition": "A winder around which thread or tape or film or other flexible materials can be wound.",
     "arabicTranslation": "مكوك خيط"
   },
-  "thimble": { "definition": "As much as a thimble will hold.", "arabicTranslation": "كشتبان" },
+  "thimble": {
+    "definition": "As much as a thimble will hold.",
+    "arabicTranslation": "كشتبان"
+  },
   "pin-cushion": {
     "definition": "A small padded object used to hold sewing pins and needles safely when they are not in use.",
     "exampleUsage": "The tailor returned the pins to the pin cushion.",
@@ -20,7 +27,7 @@
   },
   "straight-pin": {
     "definition": "A short, rigid wire with a pointed tip is used to fasten pieces of cloth or paper together.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سترايغت بين»"
   },
   "seam-ripper": {
     "definition": "A small sewing tool with a pointed hook used to cut and remove stitches.",
@@ -39,13 +46,17 @@
   },
   "tape-measure": {
     "definition": "A flexible strip used for measuring length.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تابي مياسوري»"
   },
   "ruler": {
     "definition": "A straight tool used for measuring and drawing lines.",
-    "arabicTranslation": "مسطرة"
+    "arabicTranslation": "مسطرة",
+    "exampleUsage": "The ruler was used during the activity."
   },
-  "pattern": { "arabicTranslation": "نمط" },
+  "pattern": {
+    "arabicTranslation": "نمط",
+    "definition": "A paper template used to cut fabric pieces for a garment."
+  },
   "fabric-marker": {
     "definition": "A pen, pencil, chalk, or other tool used to mark temporary lines or points on fabric.",
     "exampleUsage": "The fabric marker showed where the seam should be sewn.",
@@ -79,7 +90,10 @@
     "exampleUsage": "The French curve helped shape the armhole line.",
     "arabicTranslation": "مسطرة منحنيات فرنسية"
   },
-  "cotton": { "definition": "Fabric woven from cotton fibers.", "arabicTranslation": "قطن" },
+  "cotton": {
+    "definition": "Fabric woven from cotton fibers.",
+    "arabicTranslation": "قطن"
+  },
   "silk": {
     "definition": "A fabric made from the fine threads produced by certain insect larvae.",
     "exampleUsage": "The silk was identified during the lesson.",
@@ -97,8 +111,14 @@
     "definition": "(used in the plural) close-fitting trousers of heavy denim for manual work or casual wear.",
     "arabicTranslation": "دنيم"
   },
-  "leather": { "definition": "To whip with a leather strap.", "arabicTranslation": "جلد" },
-  "chiffon": { "definition": "A sheer fabric of silk or rayon.", "arabicTranslation": "شيفون" },
+  "leather": {
+    "arabicTranslation": "جلد",
+    "definition": "A strong material made from animal hide."
+  },
+  "chiffon": {
+    "definition": "A sheer fabric of silk or rayon.",
+    "arabicTranslation": "شيفون"
+  },
   "polyester": {
     "definition": "Any of numerous synthetic resins.",
     "arabicTranslation": "بوليستر"
@@ -111,17 +131,26 @@
     "definition": "A cut pile fabric with vertical ribs.",
     "arabicTranslation": "قماش كوردروي"
   },
-  "button": { "arabicTranslation": "زر" },
-  "zipper": { "arabicTranslation": "سحّاب" },
+  "button": {
+    "arabicTranslation": "زر",
+    "definition": "A small fastener sewn to clothing and passed through a hole."
+  },
+  "zipper": {
+    "arabicTranslation": "سحّاب",
+    "definition": "A fastener with two rows of teeth that join when a slider moves along them."
+  },
   "hook-and-eye": {
     "definition": "A clothing fastener made from a small hook that catches on a matching loop.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هووك اند ييي»"
   },
   "snap": {
     "definition": "The tendency of a body to return to its original shape after it has been stretched or compressed.",
     "arabicTranslation": "فرقعة الأصابع"
   },
-  "buckle": { "definition": "To fasten with a buckle or buckles.", "arabicTranslation": "إبزيم" },
+  "buckle": {
+    "definition": "To fasten with a buckle or buckles.",
+    "arabicTranslation": "إبزيم"
+  },
   "ribbon": {
     "definition": "Any long object resembling a thin line.",
     "arabicTranslation": "شريط"
@@ -134,7 +163,10 @@
     "definition": "A stretchable loop is used to fasten or bundle items together.",
     "arabicTranslation": "حلقة مطاط مرن"
   },
-  "velcro": { "definition": "Nylon fabric used as a fastening.", "arabicTranslation": "فيلكرو" },
+  "velcro": {
+    "definition": "Nylon fabric used as a fastening.",
+    "arabicTranslation": "فيلكرو"
+  },
   "bias-tape": {
     "definition": "A narrow strip of fabric cut diagonally across the grain and used to bind or finish fabric edges.",
     "exampleUsage": "The tailor used bias tape to finish the edge neatly.",
@@ -153,15 +185,30 @@
     "definition": "The lap consisting of a turned-back hem encircling the end of the sleeve or leg.",
     "arabicTranslation": "سوار عريض"
   },
-  "hem": { "definition": "The edge of a piece of cloth.", "arabicTranslation": "حاشية" },
-  "pocket": { "arabicTranslation": "جيب" },
-  "lapel": { "definition": "Lap at the front of a coat.", "arabicTranslation": "طية ياقة" },
+  "hem": {
+    "arabicTranslation": "حاشية",
+    "definition": "The edge of a piece of cloth."
+  },
+  "pocket": {
+    "arabicTranslation": "جيب",
+    "definition": "A small fabric compartment sewn into clothing to hold things."
+  },
+  "lapel": {
+    "arabicTranslation": "طية ياقة",
+    "definition": "Lap at the front of a coat."
+  },
   "waistband": {
     "definition": "A band of material around the waist that strengthens a skirt or trousers.",
     "arabicTranslation": "حزام خصر"
   },
-  "seam": { "definition": "To put together with a seam.", "arabicTranslation": "درزة" },
-  "dart": { "definition": "To move along rapidly and lightly.", "arabicTranslation": "بنسة خياطة" },
+  "seam": {
+    "arabicTranslation": "درزة",
+    "definition": "The line where two pieces of fabric are sewn together."
+  },
+  "dart": {
+    "definition": "To move along rapidly and lightly.",
+    "arabicTranslation": "بنسة خياطة"
+  },
   "lining": {
     "definition": "The act of attaching an inside lining (to a garment or curtain etc.).",
     "arabicTranslation": "بطانة"
@@ -178,11 +225,12 @@
   },
   "ironing-board": {
     "definition": "A narrow, padded surface on folding legs supports garments while they are pressed with an iron.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «يرونينج بوارد»"
   },
   "steam-iron": {
     "definition": "An electric household device heats water and presses fabric to remove wrinkles and form neat creases.",
-    "arabicTranslation": "مكواة يطبخ بالبخار"
+    "arabicTranslation": "مكواة يطبخ بالبخار",
+    "exampleUsage": "The steam iron was used during the activity."
   },
   "hanging-rack": {
     "definition": "A horizontal rail or frame used to hang clothing on hangers.",
@@ -203,15 +251,24 @@
   },
   "order-form": {
     "definition": "A written request for products or services records the selected items, required quantities, and purchaser’s details.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وردير فورم»"
   },
-  "receipt": { "arabicTranslation": "إيصال" },
+  "receipt": {
+    "arabicTranslation": "إيصال",
+    "definition": "A written or digital record showing that a payment was made."
+  },
   "scissors": {
     "definition": "A gymnastic exercise performed on the pommel horse when the gymnast moves their legs as the blades of scissors move.",
     "arabicTranslation": "مقص"
   },
-  "pin": { "definition": "To attach or fasten with pins.", "arabicTranslation": "دبوس" },
-  "iron": { "definition": "To press and smooth with a heated iron.", "arabicTranslation": "مكواة" },
+  "pin": {
+    "definition": "To attach or fasten with pins.",
+    "arabicTranslation": "دبوس"
+  },
+  "iron": {
+    "definition": "To press and smooth with a heated iron.",
+    "arabicTranslation": "مكواة"
+  },
   "fabric": {
     "definition": "Artifact made by weaving or felting or knitting or crocheting natural or synthetic fibers.",
     "arabicTranslation": "قماش"
@@ -225,19 +282,34 @@
     "exampleUsage": "Interfacing helped the collar keep its shape.",
     "arabicTranslation": "بطانة تقوية داخلية"
   },
-  "dress": { "definition": "To dress in a certain manner.", "arabicTranslation": "فستان" },
+  "dress": {
+    "arabicTranslation": "فستان",
+    "definition": "A one-piece garment worn on the body, often with a skirt."
+  },
   "suit": {
     "definition": "A set of garments (usually including a jacket and trousers or skirt) for outerwear all of the same fabric and color.",
     "arabicTranslation": "بدلة"
   },
-  "skirt": { "definition": "A garment hanging from the waist.", "arabicTranslation": "تنورة" },
+  "skirt": {
+    "definition": "A garment hanging from the waist.",
+    "arabicTranslation": "تنورة"
+  },
   "trousers": {
     "definition": "A garment (or part of a garment) designed for or relating to trousers.",
     "arabicTranslation": "بنطال"
   },
-  "jacket": { "arabicTranslation": "سترة" },
-  "shirt": { "arabicTranslation": "قميص" },
-  "blouse": { "arabicTranslation": "بلوزة" },
+  "jacket": {
+    "arabicTranslation": "سترة",
+    "definition": "A short outer garment worn over other clothes."
+  },
+  "shirt": {
+    "arabicTranslation": "قميص",
+    "definition": "A garment worn on the upper body, usually with sleeves."
+  },
+  "blouse": {
+    "arabicTranslation": "بلوزة",
+    "definition": "A loose shirt-like garment usually worn by women."
+  },
   "vest": {
     "definition": "A man's sleeveless garment worn underneath a coat.",
     "arabicTranslation": "سترة بلا أكمام"

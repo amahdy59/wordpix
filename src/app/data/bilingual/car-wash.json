@@ -1,7 +1,8 @@
 {
   "automatic-wash": {
     "definition": "Automatic wash refers to a washing machine that automatically performs the washing process.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «اوتوماتيك واش»",
+    "exampleUsage": "The automatic wash was used during the activity."
   },
   "hand-wash": {
     "definition": "Hand wash refers to washing a person's hands with soap.",
@@ -9,19 +10,22 @@
   },
   "self-service": {
     "definition": "A system or method lets customers complete tasks or get goods and services without ongoing help from staff. Standard steps or technology usually guide the process.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نظام يُسمّى «سيلف سيرفيكي»"
   },
   "touchless": {
     "definition": "Touchless refers to a washing machine that does not require the person to touch the washing cycle.",
-    "arabicTranslation": "دون لمس"
+    "arabicTranslation": "دون لمس",
+    "exampleUsage": "The touchless was used during the activity."
   },
   "foam-wash": {
     "definition": "Foam wash refers to a washing machine that uses foam to clean surfaces.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «فوام واش»",
+    "exampleUsage": "The foam wash was used during the activity."
   },
   "wax-wash": {
     "definition": "Wax wash refers to a washing machine that uses wax to clean surfaces.",
-    "arabicTranslation": "غسيل شمع"
+    "arabicTranslation": "غسيل شمع",
+    "exampleUsage": "The wax wash was used during the activity."
   },
   "undercarriage": {
     "definition": "Framework that serves as a support for the body of a vehicle.",
@@ -32,26 +36,41 @@
     "exampleUsage": "The wheel wash removed mud from the rims.",
     "arabicTranslation": "غسيل العجلات"
   },
-  "rinse": { "definition": "To wash off soap or remaining dirt.", "arabicTranslation": "شطف" },
-  "dry": { "definition": "Free from liquid or moisture.", "arabicTranslation": "جاف" },
+  "rinse": {
+    "definition": "To wash off soap or remaining dirt.",
+    "arabicTranslation": "شطف"
+  },
+  "dry": {
+    "arabicTranslation": "جاف",
+    "definition": "Free from liquid or moisture."
+  },
   "pressure-washer": {
     "definition": "Pressure washer refers to a washing machine that uses pressure to clean surfaces.",
-    "arabicTranslation": "غسالة ضغط"
+    "arabicTranslation": "غسالة ضغط",
+    "exampleUsage": "The pressure washer was used during the activity."
   },
   "foam-cannon": {
     "definition": "Foam cannon refers to a cleaning tool that uses foam to clean surfaces.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «فوام كاننون»",
+    "exampleUsage": "The foam cannon was used during the activity."
   },
   "brush": {
     "definition": "A cleaning tool with many stiff hairs attached to a handle or base.",
-    "arabicTranslation": "فرشاة"
+    "arabicTranslation": "فرشاة",
+    "exampleUsage": "The brush was used during the activity."
   },
   "roller": {
     "definition": "A small wheel without spokes (as on a roller skate).",
     "arabicTranslation": "أسطوانة"
   },
-  "dryer": { "definition": "Free from liquid or moisture.", "arabicTranslation": "مجفف" },
-  "vacuum": { "arabicTranslation": "مكنسة شفط" },
+  "dryer": {
+    "arabicTranslation": "مجفف",
+    "definition": "Free from liquid or moisture."
+  },
+  "vacuum": {
+    "arabicTranslation": "مكنسة شفط",
+    "definition": "A machine that removes dirt by sucking in air."
+  },
   "air-freshener": {
     "definition": "Air freshener refers to a cleaning product that uses air to freshen surfaces.",
     "arabicTranslation": "معطر جو"
@@ -60,15 +79,21 @@
     "definition": "A piece of absorbent cloth used for drying your body or other things.",
     "arabicTranslation": "منشفة"
   },
-  "bucket": { "definition": "The quantity contained in a bucket.", "arabicTranslation": "دلو" },
+  "bucket": {
+    "definition": "The quantity contained in a bucket.",
+    "arabicTranslation": "دلو"
+  },
   "car-soap": {
     "definition": "Car soap refers to a cleaning product that is used on cars.",
     "arabicTranslation": "صابون سيارة"
   },
-  "wax": { "arabicTranslation": "شمع" },
+  "wax": {
+    "arabicTranslation": "شمع",
+    "definition": "A protective coating applied to a car to make its surface shine."
+  },
   "tire-shine": {
     "definition": "Tire shine refers to a cleaning product that is used on tires.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تيري شيني»"
   },
   "glass-cleaner": {
     "definition": "Glass cleaner refers to a cleaning product that is used on glass surfaces.",
@@ -78,10 +103,13 @@
     "definition": "Interior cleaner refers to a cleaning product that is used on interior surfaces.",
     "arabicTranslation": "عامل نظافة داخلي"
   },
-  "polish": { "definition": "To make (a surface) shine.", "arabicTranslation": "تلميع" },
+  "polish": {
+    "arabicTranslation": "تلميع",
+    "definition": "A substance used to make a surface smooth and shiny."
+  },
   "clay-bar": {
     "definition": "Clay bar refers to a cleaning product that is used to remove clay from surfaces.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «كلاي بار»"
   },
   "microfiber": {
     "definition": "A very fine synthetic fabric used for cleaning and drying surfaces without scratching them.",
@@ -97,14 +125,18 @@
     "exampleUsage": "The protectant helped keep the dashboard from fading.",
     "arabicTranslation": "مادة واقية"
   },
-  "hood": { "definition": "The folding roof of a carriage.", "arabicTranslation": "غطاء المحرك" },
+  "hood": {
+    "definition": "The folding roof of a carriage.",
+    "arabicTranslation": "غطاء المحرك"
+  },
   "roof": {
     "definition": "The inner top surface of a covered area or hollow space.",
     "arabicTranslation": "سقف"
   },
   "trunk": {
     "definition": "Compartment in an automobile that carries luggage or shopping or tools.",
-    "arabicTranslation": "صندوق السيارة"
+    "arabicTranslation": "صندوق السيارة",
+    "exampleUsage": "The trunk was used during the activity."
   },
   "bumper": {
     "definition": "A glass filled to the brim (especially as a toast).",
@@ -112,9 +144,13 @@
   },
   "wheel": {
     "definition": "A simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines).",
-    "arabicTranslation": "عجلة"
+    "arabicTranslation": "عجلة",
+    "exampleUsage": "The wheel was used during the activity."
   },
-  "tire": { "arabicTranslation": "إطار سيارة" },
+  "tire": {
+    "arabicTranslation": "إطار سيارة",
+    "definition": "A rubber covering around a wheel that grips the road."
+  },
   "windshield": {
     "definition": "Transparent screen (as of glass) to protect occupants of a vehicle.",
     "arabicTranslation": "زجاج أمامي"
@@ -137,7 +173,8 @@
   },
   "coin-machine": {
     "definition": "A machine that begins operating when a person inserts a coin into its designated slot.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «كوين ماتشيني»",
+    "exampleUsage": "The coin machine was used during the activity."
   },
   "token": {
     "definition": "Something serving as a sign of something else.",
@@ -145,13 +182,17 @@
   },
   "timer": {
     "definition": "A device that measures or signals the end of baking time.",
-    "arabicTranslation": "مؤقت"
+    "arabicTranslation": "مؤقت",
+    "exampleUsage": "The timer was used during the activity."
   },
   "drain": {
     "definition": "An opening and pipe that carry used water away from a sink, bath, or shower.",
     "arabicTranslation": "مصرف"
   },
-  "sign": { "definition": "A board showing rules or information.", "arabicTranslation": "علامة" },
+  "sign": {
+    "definition": "A board showing rules or information.",
+    "arabicTranslation": "علامة"
+  },
   "menu-board": {
     "definition": "A display that lists the available wash services and their prices or features.",
     "exampleUsage": "The driver checked the menu board before choosing a wash.",
@@ -159,7 +200,7 @@
   },
   "waiting-area": {
     "definition": "A room in a place such as an airport or hotel where people sit until they are ready to leave or be served.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «وايتينج اريا»"
   },
   "pre-rinse": {
     "definition": "A first rinse with water that loosens dirt before the main washing step.",
@@ -200,5 +241,8 @@
     "exampleUsage": "She wiped the dash with a soft cloth.",
     "arabicTranslation": "مسح لوحة القيادة"
   },
-  "freshen": { "arabicTranslation": "ينعش" }
+  "freshen": {
+    "arabicTranslation": "ينعش",
+    "definition": "To make something smell or feel clean and pleasant again."
+  }
 }

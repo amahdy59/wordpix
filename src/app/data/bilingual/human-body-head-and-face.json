@@ -8,7 +8,10 @@
     "definition": "The bony skeleton of the head of vertebrates.",
     "arabicTranslation": "جمجمة"
   },
-  "scalp": { "definition": "The skin that covers the top of the head.", "arabicTranslation": "" },
+  "scalp": {
+    "definition": "The skin that covers the top of the head.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «سكالب»"
+  },
   "temple": {
     "definition": "The flat area on either side of the forehead.",
     "arabicTranslation": "ذراع النظارة"
@@ -19,24 +22,33 @@
   },
   "forehead": {
     "definition": "The large cranial bone forming the front part of the cranium: includes the upper part of the orbits.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عظم يُسمّى «فوريهياد»"
   },
   "jaw": {
     "definition": "The part of the skull of a vertebrate that frames the mouth and holds the teeth.",
     "arabicTranslation": "فك"
   },
-  "chin": { "definition": "The protruding part of the lower jaw.", "arabicTranslation": "" },
+  "chin": {
+    "definition": "The protruding part of the lower jaw.",
+    "arabicTranslation": "جزء يُسمّى «تشين»"
+  },
   "neck": {
     "definition": "The part of an organism (human or animal) that connects the head to the rest of the body.",
     "exampleUsage": "The neck was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «نيك»"
   },
-  "throat": { "definition": "The passage to the stomach and lungs.", "arabicTranslation": "" },
+  "throat": {
+    "definition": "The passage to the stomach and lungs.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ثروات»"
+  },
   "eye": {
     "definition": "Good discernment (either visually or as if visually).",
     "arabicTranslation": "عين"
   },
-  "eyebrow": { "definition": "The arch of hair above each eye.", "arabicTranslation": "" },
+  "eyebrow": {
+    "definition": "The arch of hair above each eye.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «يييبروو»"
+  },
   "eyelid": {
     "definition": "Either of two folds of skin that can be moved to cover or open the eye.",
     "arabicTranslation": "جفن"
@@ -63,7 +75,7 @@
   },
   "tear-duct": {
     "definition": "A blocked tear duct prevents tears from draining into the nose, leaving the eyes unusually watery.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «تيار دوكت»"
   },
   "eye-socket": {
     "definition": "The bony cavity in the skull that contains and protects the eye, also called the orbit.",
@@ -85,11 +97,11 @@
   },
   "mouth": {
     "definition": "The externally visible part of the oral cavity on the face and the system of organs surrounding the opening.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «مووث»"
   },
   "lip": {
     "definition": "Either the outer margin or the inner margin of the aperture of a gastropod's shell.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ليب»"
   },
   "upper-lip": {
     "definition": "The upper of the two soft edges surrounding the mouth.",
@@ -101,20 +113,29 @@
     "exampleUsage": "The lower lip forms the bottom edge of the mouth.",
     "arabicTranslation": "الشفة السفلى"
   },
-  "tongue": { "arabicTranslation": "لسان" },
+  "tongue": {
+    "arabicTranslation": "لسان",
+    "definition": "The muscular part of the mouth used for tasting, speaking, and swallowing."
+  },
   "palate": {
     "definition": "The upper surface of the mouth that separates the oral and nasal cavities.",
     "arabicTranslation": "حنك"
   },
-  "gums": { "arabicTranslation": "" },
-  "ear": { "arabicTranslation": "أذن" },
+  "gums": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «جومس»",
+    "definition": "The soft tissue around the teeth in the mouth."
+  },
+  "ear": {
+    "arabicTranslation": "أذن",
+    "definition": "The body part used to hear sounds and help with balance."
+  },
   "earlobe": {
     "definition": "The fleshy pendulous part of the external human ear.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «يارلوبي»"
   },
   "ear-canal": {
     "definition": "A narrow passage in the outer ear carries sound from the auricle to the eardrum.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «يار كانال»"
   },
   "eardrum": {
     "definition": "The membrane in the ear that vibrates to sound.",
@@ -123,13 +144,16 @@
   },
   "inner-ear": {
     "definition": "The deepest region of the ear contains the cochlea for hearing and structures that control balance.",
-    "arabicTranslation": ""
+    "arabicTranslation": "هيكل يُسمّى «يننير يار»"
   },
   "outer-ear": {
     "definition": "The visible part of the ear gathers sound and carries it into the middle ear. In people, it mainly includes the auricle, or outer flap, and the ear canal.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «ووتير يار»"
   },
-  "hearing": { "arabicTranslation": "" },
+  "hearing": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «هيارينج»",
+    "definition": "The ability to notice and understand sounds."
+  },
   "sound-wave": {
     "definition": "A mechanical wave, meaning a moving disturbance that needs matter to travel, carries alternating regions of pressure through a material and can produce hearing in humans and other animals.",
     "exampleUsage": "The sound wave was identified during the lesson.",
@@ -147,7 +171,10 @@
     "definition": "Toothlike structure in invertebrates found in the mouth or alimentary canal or on a shell.",
     "arabicTranslation": "سن"
   },
-  "incisor": { "definition": "A tooth for cutting or gnawing.", "arabicTranslation": "قاطع" },
+  "incisor": {
+    "definition": "A tooth for cutting or gnawing.",
+    "arabicTranslation": "قاطع"
+  },
   "canine": {
     "definition": "Of or relating to a pointed conical tooth.",
     "arabicTranslation": "ناب"
@@ -157,7 +184,10 @@
     "exampleUsage": "The molar was identified during the lesson.",
     "arabicTranslation": "ضرس"
   },
-  "premolar": { "definition": "A tooth having two cusps or points.", "arabicTranslation": "ضاحك" },
+  "premolar": {
+    "definition": "A tooth having two cusps or points.",
+    "arabicTranslation": "ضاحك"
+  },
   "wisdom-tooth": {
     "definition": "One of the last adult molar teeth at the back of the mouth, usually appearing in late adolescence or early adulthood.",
     "exampleUsage": "The dental X-ray showed the position of a wisdom tooth.",
@@ -181,7 +211,7 @@
   },
   "hairline": {
     "definition": "The natural margin formed by hair on the head.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «هايرليني»"
   },
   "part": {
     "definition": "A line of scalp that can be seen when sections of hair are combed in opposite directions.",
@@ -189,24 +219,30 @@
   },
   "strand": {
     "definition": "A necklace made by stringing objects together.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ستراند»"
   },
   "beard": {
     "definition": "The hair growing on the lower part of a man's face.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «بيارد»"
   },
   "mustache": {
     "definition": "An unshaved growth of hair on the upper lip.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «موستاتشي»"
   },
   "sideburns": {
     "definition": "Facial hair that has grown down the side of a man's face in front of the ears (especially when the rest of the beard is shaved off).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «سيديبورنس»"
   },
   "stubble": {
     "definition": "Material consisting of seed coverings and small pieces of stem or leaves that have been separated from the seeds.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «ستوببلي»"
   },
-  "goatee": { "definition": "A small chin beard trimmed to a point.", "arabicTranslation": "" },
-  "braid": { "definition": "To form or weave into a braid or braids.", "arabicTranslation": "" }
+  "goatee": {
+    "definition": "A small chin beard trimmed to a point.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «جواتيي»"
+  },
+  "braid": {
+    "definition": "To form or weave into a braid or braids.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «برايد»"
+  }
 }

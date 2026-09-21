@@ -1,7 +1,8 @@
 {
   "microphone": {
     "definition": "A device that changes sound into an electrical recording or signal.",
-    "arabicTranslation": "ميكروفون"
+    "arabicTranslation": "ميكروفون",
+    "exampleUsage": "The microphone was used during the activity."
   },
   "mixing-console": {
     "definition": "A control surface used to combine, adjust, and route several audio signals.",
@@ -19,23 +20,26 @@
   },
   "antenna": {
     "definition": "A device that sends or receives radio and television signals.",
-    "arabicTranslation": "هوائي"
+    "arabicTranslation": "هوائي",
+    "exampleUsage": "The antenna was used during the activity."
   },
   "amplifier": {
     "definition": "A device that makes an audio signal stronger.",
-    "arabicTranslation": "مضخم"
+    "arabicTranslation": "مضخم",
+    "exampleUsage": "The amplifier was used during the activity."
   },
   "equalizer": {
     "definition": "A control that adjusts different ranges of sound frequencies.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يكاليزير»"
   },
   "compressor": {
     "definition": "An electronic device that reduces the dynamic range of an audio signal.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «كومبريسسور»",
+    "exampleUsage": "The compressor was used during the activity."
   },
   "pop-filter": {
     "definition": "A screen that reduces popping sounds when someone speaks into a microphone.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بوب فيلتير»"
   },
   "sound-booth": {
     "definition": "A small enclosed room designed to reduce outside noise during recording or broadcasting.",
@@ -54,7 +58,8 @@
   },
   "computer": {
     "definition": "A machine for performing calculations automatically.",
-    "arabicTranslation": "حاسوب"
+    "arabicTranslation": "حاسوب",
+    "exampleUsage": "The computer was used during the activity."
   },
   "script-stand": {
     "definition": "A stand or holder that supports a script where a presenter can read it easily.",
@@ -107,7 +112,7 @@
   },
   "waveform": {
     "definition": "The shape of a wave illustrated graphically by plotting the values of the period quantity against time.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شكل يُسمّى «وافيفورم»"
   },
   "playback-button": {
     "definition": "A control that starts playing recorded audio or video.",
@@ -123,10 +128,13 @@
     "definition": "A list of musical selections for performance or for broadcast by radio.",
     "arabicTranslation": "قائمة تشغيل"
   },
-  "jingle": { "arabicTranslation": "" },
+  "jingle": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جينجلي»",
+    "definition": "A short, catchy tune used in an advertisement or show."
+  },
   "sound-effect": {
     "definition": "A created or changed sound added to a film, show, game, or other media to reinforce what viewers see or what the story conveys.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لعبة يُسمّى «سووند يففيكت»"
   },
   "station-id": {
     "definition": "A short announcement or audio element that identifies a radio station.",
@@ -140,7 +148,7 @@
   },
   "news-bulletin": {
     "definition": "A brief, formal report on radio or television gives the public clear, direct updates about current events.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نيوس بولليتين»"
   },
   "weather-update": {
     "definition": "A short broadcast giving recent weather conditions or forecast information.",
@@ -173,7 +181,7 @@
   },
   "producer": {
     "definition": "The person who organises the people, money, and work for a program.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «برودوكير»"
   },
   "sound-engineer": {
     "definition": "A person who records, mixes, and improves the program’s sound.",
@@ -182,7 +190,7 @@
   },
   "news-anchor": {
     "definition": "A broadcaster who presents a news program, introduces its reports, and reads the main headlines on television or radio.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نيوس انتشور»"
   },
   "traffic-reporter": {
     "definition": "A broadcaster who gives information about road and traffic conditions.",
@@ -229,13 +237,16 @@
   },
   "podcast": {
     "definition": "A digital audio file made available on the Internet for downloading to a computer or portable media player.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بودكاست»"
   },
   "streaming": {
     "definition": "(computer science) using or relating to a form of continuous tape transport.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ستريامينج»"
   },
-  "listener": { "definition": "A person who listens attentively.", "arabicTranslation": "" },
+  "listener": {
+    "definition": "A person who listens attentively.",
+    "arabicTranslation": "شخص يُسمّى «ليستينير»"
+  },
   "frequency-dial": {
     "definition": "A control used to select or display a radio frequency.",
     "exampleUsage": "The frequency dial showed the selected station.",
@@ -243,7 +254,8 @@
   },
   "volume-knob": {
     "definition": "A control on an electronic device used to raise or lower the loudness of its audio output.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «فولومي كنوب»",
+    "exampleUsage": "The volume knob was used during the activity."
   },
   "tuner": {
     "definition": "An electronic receiver that detects and demodulates and amplifies transmitted signals.",
@@ -251,7 +263,7 @@
   },
   "turntable": {
     "definition": "A circular horizontal platform that rotates a phonograph record while it is being played.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تورنتابلي»"
   },
   "soundproof-booth": {
     "definition": "An enclosed recording space designed to greatly reduce the transmission of outside sound.",
@@ -277,21 +289,24 @@
     "exampleUsage": "The producer held up a cue card.",
     "arabicTranslation": "بطاقة تذكير"
   },
-  "script": { "arabicTranslation": "نص مسرحي" },
+  "script": {
+    "arabicTranslation": "نص مسرحي",
+    "definition": "The written words that presenters read during a broadcast."
+  },
   "frequency": {
     "definition": "The number of times a radio wave repeats each second.",
     "arabicTranslation": "تردد"
   },
   "channel": {
     "definition": "A television service or a numbered path for a signal.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تشاننيل»"
   },
   "commercial": {
     "definition": "A short advertisement shown between television programs to promote a product or service.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كومميركيال»"
   },
   "interview": {
     "definition": "A conversation in which one person asks another questions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «ينتيرفييو»"
   }
 }

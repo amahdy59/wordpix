@@ -1,6 +1,12 @@
 {
-  "hello": { "definition": "An expression of greeting.", "arabicTranslation": "مرحبًا" },
-  "goodbye": { "arabicTranslation": "وداعًا" },
+  "hello": {
+    "arabicTranslation": "مرحبًا",
+    "definition": "An expression of greeting."
+  },
+  "goodbye": {
+    "arabicTranslation": "وداعًا",
+    "definition": "A word or expression used when leaving someone."
+  },
   "nice-to-meet-you": {
     "definition": "A polite expression used when meeting someone for the first time.",
     "exampleUsage": "'Nice to meet you,' she said after being introduced.",
@@ -18,11 +24,11 @@
   },
   "good-morning": {
     "definition": "A polite phrase used to greet someone or say goodbye in the morning.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جوود مورنينج»"
   },
   "good-night": {
     "definition": "A customary phrase used to bid someone farewell at night.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جوود نيغت»"
   },
   "welcome": {
     "definition": "Giving pleasure or satisfaction or received with pleasure or freely granted.",
@@ -30,16 +36,19 @@
   },
   "take-care": {
     "definition": "To take care of someone or something means to be responsible for it or handle what needs to be done.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تاكي كاري»"
   },
-  "cheers": { "arabicTranslation": "تحية أو شكر" },
+  "cheers": {
+    "arabicTranslation": "تحية أو شكر",
+    "definition": "A friendly expression said before drinking together."
+  },
   "please": {
     "definition": "To give pleasure to or be pleasing to.",
     "arabicTranslation": "من فضلك"
   },
   "thank-you": {
     "definition": "A polite spoken phrase used to acknowledge and express appreciation for something someone has done.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ثانك يوو»"
   },
   "you-re-welcome": {
     "definition": "A polite reply to someone who has thanked you.",
@@ -48,10 +57,16 @@
   },
   "excuse-me": {
     "definition": "A polite expression used to gain attention, interrupt someone, or move past others in a classroom.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «يكسكوسي مي»"
   },
-  "sorry": { "arabicTranslation": "آسف" },
-  "pardon": { "arabicTranslation": "عفوًا" },
+  "sorry": {
+    "arabicTranslation": "آسف",
+    "definition": "An expression used to apologize or show sympathy."
+  },
+  "pardon": {
+    "arabicTranslation": "عفوًا",
+    "definition": "A polite word used to ask for repetition or excuse oneself."
+  },
   "after-you": {
     "definition": "A polite expression inviting another person to go before you.",
     "exampleUsage": "He held the door open and said, 'After you.'",
@@ -64,13 +79,16 @@
   },
   "my-pleasure": {
     "definition": "My pleasure is a common expression used in social situations to express a sense of joy or satisfaction.",
-    "arabicTranslation": ""
+    "arabicTranslation": "فعل أو عملية يُسمّى «مي بلياسوري»"
   },
   "bless-you": {
     "definition": "Bless You is a polite way to express gratitude or goodwill to someone, often used in social situations.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بليسس يوو»"
   },
-  "apology": { "arabicTranslation": "اعتذار" },
+  "apology": {
+    "arabicTranslation": "اعتذار",
+    "definition": "A statement expressing regret for doing something wrong."
+  },
   "forgiveness": {
     "definition": "Compassionate feelings that support a willingness to forgive.",
     "arabicTranslation": "تسامح"
@@ -99,23 +117,38 @@
     "definition": "A statement that solves a problem or explains how to solve the problem.",
     "arabicTranslation": "حل"
   },
-  "peace": { "arabicTranslation": "سلام" },
+  "peace": {
+    "arabicTranslation": "سلام",
+    "definition": "A state of calm or freedom from conflict."
+  },
   "reconciliation": {
     "definition": "Getting two things to correspond.",
     "arabicTranslation": "مصالحة"
   },
-  "listening": { "definition": "The act of hearing attentively.", "arabicTranslation": "استماع" },
-  "sharing": { "arabicTranslation": "مشاركة" },
+  "listening": {
+    "definition": "The act of hearing attentively.",
+    "arabicTranslation": "استماع"
+  },
+  "sharing": {
+    "arabicTranslation": "مشاركة",
+    "definition": "Giving others part of something or using it together."
+  },
   "taking-turns": {
     "definition": "A way for group members to complete tasks one after another, rather than working on them simultaneously.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تاكينج تورنس»"
   },
-  "cooperation": { "definition": "Joint operation or action.", "arabicTranslation": "تعاون" },
+  "cooperation": {
+    "arabicTranslation": "تعاون",
+    "definition": "Joint operation or action."
+  },
   "respect": {
     "definition": "Behavior intended to please your parents.",
     "arabicTranslation": "احترام"
   },
-  "honesty": { "definition": "The quality of being honest.", "arabicTranslation": "صدق" },
+  "honesty": {
+    "arabicTranslation": "صدق",
+    "definition": "The quality of being honest."
+  },
   "kindness": {
     "definition": "The quality of being warmhearted and considerate and humane and sympathetic.",
     "arabicTranslation": "لطف"

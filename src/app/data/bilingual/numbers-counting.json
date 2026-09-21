@@ -107,7 +107,10 @@
     "definition": "The cardinal number that is the product of ten and nine.",
     "arabicTranslation": "تسعون"
   },
-  "hundred": { "definition": "Being ten more than ninety.", "arabicTranslation": "مئة" },
+  "hundred": {
+    "arabicTranslation": "مئة",
+    "definition": "Being ten more than ninety."
+  },
   "thousand": {
     "definition": "The cardinal number that is the product of 10 and 100.",
     "arabicTranslation": "ألف"
@@ -123,26 +126,45 @@
   },
   "second": {
     "definition": "A part or voice or instrument or orchestra section lower in pitch than or subordinate to the first.",
-    "arabicTranslation": "الثاني"
+    "arabicTranslation": "الثاني",
+    "exampleUsage": "The second was used during the activity."
   },
   "third": {
     "definition": "One of three equal parts of a divisible whole.",
     "arabicTranslation": "الثالث"
   },
-  "fourth": { "definition": "Following the third position.", "arabicTranslation": "الرابع" },
+  "fourth": {
+    "arabicTranslation": "الرابع",
+    "definition": "Following the third position."
+  },
   "fifth": {
     "definition": "Position five in a countable series of things.",
     "arabicTranslation": "الخامس"
   },
-  "sixth": { "definition": "One part in six equal parts.", "arabicTranslation": "السادس" },
-  "seventh": { "definition": "One part in seven equal parts.", "arabicTranslation": "السابع" },
-  "eighth": { "definition": "One part in eight equal parts.", "arabicTranslation": "الثامن" },
+  "sixth": {
+    "arabicTranslation": "السادس",
+    "definition": "One part in six equal parts."
+  },
+  "seventh": {
+    "definition": "One part in seven equal parts.",
+    "arabicTranslation": "السابع"
+  },
+  "eighth": {
+    "definition": "One part in eight equal parts.",
+    "arabicTranslation": "الثامن"
+  },
   "ninth": {
     "definition": "Position nine in a countable series of things.",
     "arabicTranslation": "التاسع"
   },
-  "tenth": { "arabicTranslation": "العاشر" },
-  "addition": { "definition": "The arithmetic operation of summing.", "arabicTranslation": "جمع" },
+  "tenth": {
+    "arabicTranslation": "العاشر",
+    "definition": "The position after ninth in a sequence."
+  },
+  "addition": {
+    "definition": "The arithmetic operation of summing.",
+    "arabicTranslation": "جمع"
+  },
   "subtraction": {
     "definition": "An arithmetic operation in which the difference between two numbers is calculated.",
     "arabicTranslation": "طرح"
@@ -155,7 +177,10 @@
     "definition": "One of the portions into which something is regarded as divided and which together constitute a whole.",
     "arabicTranslation": "قسمة"
   },
-  "equals": { "definition": "To be identical or equivalent to.", "arabicTranslation": "يساوي" },
+  "equals": {
+    "definition": "To be identical or equivalent to.",
+    "arabicTranslation": "يساوي"
+  },
   "plus": {
     "definition": "A sign indicating the operation of addition.",
     "arabicTranslation": "زائد"
@@ -168,7 +193,10 @@
     "definition": "An arithmetic operation that is the inverse of division.",
     "arabicTranslation": "ضرب"
   },
-  "divided-by": { "arabicTranslation": "" },
+  "divided-by": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديفيديد بي»",
+    "definition": "Used to show that one number is being split into equal parts."
+  },
   "percentage": {
     "definition": "A proportion in relation to a whole (which is usually the amount per hundred).",
     "exampleUsage": "A high percentage of the class passed the test.",

@@ -1,7 +1,8 @@
 {
   "sewing-machine": {
     "definition": "A machine that joins fabric and other flexible materials by passing thread through them in linked stitches, usually with one thread above and another below.",
-    "arabicTranslation": "آلة خياطة"
+    "arabicTranslation": "آلة خياطة",
+    "exampleUsage": "The sewing machine was used during the activity."
   },
   "dress-form": {
     "definition": "A body-shaped stand used by dressmakers and designers to fit, drape, and display garments.",
@@ -23,7 +24,8 @@
   },
   "serger": {
     "definition": "A sewing machine that overcasts the raw edges of a fabric with a V-shaped stitch.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «سيرجير»",
+    "exampleUsage": "The serger was used during the activity."
   },
   "embroidery-machine": {
     "definition": "A sewing machine designed to create decorative stitched designs, often using programmed patterns.",
@@ -42,9 +44,13 @@
   },
   "needle": {
     "definition": "A slender pointer for indicating the reading on the scale of a measuring instrument.",
-    "arabicTranslation": "إبرة"
+    "arabicTranslation": "إبرة",
+    "exampleUsage": "The needle was used during the activity."
   },
-  "thread": { "arabicTranslation": "خيط" },
+  "thread": {
+    "arabicTranslation": "خيط",
+    "definition": "A long, thin strand used for sewing fabric."
+  },
   "scissors": {
     "definition": "A gymnastic exercise performed on the pommel horse when the gymnast moves their legs as the blades of scissors move.",
     "arabicTranslation": "مقص"
@@ -69,7 +75,10 @@
     "exampleUsage": "The designer used a measuring tape to record the sleeve length.",
     "arabicTranslation": "شريط قياس"
   },
-  "thimble": { "definition": "As much as a thimble will hold.", "arabicTranslation": "كشتبان" },
+  "thimble": {
+    "definition": "As much as a thimble will hold.",
+    "arabicTranslation": "كشتبان"
+  },
   "bobbin": {
     "definition": "A winder around which thread or tape or film or other flexible materials can be wound.",
     "arabicTranslation": "مكوك خيط"
@@ -93,31 +102,43 @@
     "exampleUsage": "Pattern making turns a design idea into precise garment pieces.",
     "arabicTranslation": "صناعة الباترون"
   },
-  "muslin": { "arabicTranslation": "" },
+  "muslin": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «موسلين»",
+    "definition": "A plain, lightweight cotton fabric often used to make test garments."
+  },
   "toile": {
     "definition": "Originally made in France, toile is fabric printed with repeated pastoral or historical scenes, usually in one color on a pale ground.",
-    "arabicTranslation": ""
+    "arabicTranslation": "قماش يُسمّى «تويلي»"
   },
-  "fitting": { "arabicTranslation": "تجربة المقاس" },
+  "fitting": {
+    "arabicTranslation": "تجربة المقاس",
+    "definition": "A session to check and adjust how clothing sits on a person."
+  },
   "alteration": {
     "definition": "The act of making something different (as e.g. the size of a garment).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «التيراتيون»"
   },
-  "sample": { "arabicTranslation": "عينة" },
+  "sample": {
+    "arabicTranslation": "عينة",
+    "definition": "A trial garment made to test a design before production."
+  },
   "prototype": {
     "definition": "A standard or typical example.",
     "arabicTranslation": "نموذج أولي"
   },
   "production": {
     "definition": "The act or process of producing something.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عملية يُسمّى «برودوكتيون»"
   },
   "fashion-designer": {
     "definition": "A person who creates concepts and designs for clothing, accessories, or fashion collections.",
     "exampleUsage": "The fashion designer reviewed the fabric samples.",
     "arabicTranslation": "مصمم أزياء"
   },
-  "seamstress": { "definition": "A woman who makes or mends dresses.", "arabicTranslation": "" },
+  "seamstress": {
+    "definition": "A woman who makes or mends dresses.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سيامستريسس»"
+  },
   "tailor": {
     "definition": "To style and tailor in a certain fashion.",
     "arabicTranslation": "خياط"
@@ -134,7 +155,7 @@
   },
   "stylist": {
     "definition": "An artist who is a master of a particular style.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أسلوب أو طراز يُسمّى «ستيليست»"
   },
   "fashion-illustrator": {
     "definition": "An artist who creates drawings that communicate clothing and fashion ideas.",
@@ -143,8 +164,14 @@
   },
   "merchandiser": {
     "definition": "A businessperson engaged in retail trade.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «ميرتشانديسير»"
   },
-  "buyer": { "arabicTranslation": "" },
-  "model": { "definition": "To display (clothes) as a mannequin.", "arabicTranslation": "نموذج" }
+  "buyer": {
+    "arabicTranslation": "شخص يُسمّى «بويير»",
+    "definition": "A person who chooses products for a store to sell."
+  },
+  "model": {
+    "definition": "To display (clothes) as a mannequin.",
+    "arabicTranslation": "نموذج"
+  }
 }

@@ -1,33 +1,48 @@
 {
-  "tall": { "definition": "Great in vertical dimension.", "arabicTranslation": "طويل" },
-  "short": { "arabicTranslation": "قصير" },
+  "tall": {
+    "arabicTranslation": "طويل",
+    "definition": "Great in vertical dimension."
+  },
+  "short": {
+    "arabicTranslation": "قصير",
+    "definition": "Having less height or length than usual."
+  },
   "average-height": {
     "definition": "Having a height near the typical range for a particular adult population, without implying better or worse appearance.",
     "exampleUsage": "The description notes that the character is of average height.",
     "arabicTranslation": "متوسط الطول"
   },
-  "slim": { "definition": "Being of delicate or slender build.", "arabicTranslation": "" },
+  "slim": {
+    "definition": "Being of delicate or slender build.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سليم»"
+  },
   "thin": {
     "definition": "Relatively thin in consistency or low in density.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ثين»"
   },
   "heavy": {
     "definition": "Unusually great in degree or quantity or number.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هيافي»"
   },
-  "stocky": { "definition": "Having a short and solid form or stature.", "arabicTranslation": "" },
+  "stocky": {
+    "definition": "Having a short and solid form or stature.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ستوكي»"
+  },
   "muscular": {
     "definition": "Of or relating to or consisting of muscle.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضلة يُسمّى «موسكولار»"
   },
-  "petite": { "definition": "A garment size for short or slender women.", "arabicTranslation": "" },
+  "petite": {
+    "definition": "A garment size for short or slender women.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيتيتي»"
+  },
   "athletic": {
     "definition": "Relating to or befitting athletics or athletes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اثليتيك»"
   },
   "straight-hair": {
     "definition": "Hair that naturally follows a mostly straight pattern, with little curling or waving along its length.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سترايغت هاير»"
   },
   "curly-hair": {
     "definition": "Hair that naturally forms curls or ringlets.",
@@ -76,11 +91,11 @@
   },
   "blonde": {
     "definition": "Being or having light colored skin and hair and usually blue or grey eyes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لون يُسمّى «بلوندي»"
   },
   "brunette": {
     "definition": "Marked by dark or relatively dark pigmentation of hair or skin or eyes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «برونيتتي»"
   },
   "black-hair": {
     "definition": "Hair whose natural or dyed color appears black.",
@@ -94,7 +109,7 @@
   },
   "auburn": {
     "definition": "(of hair) colored a moderate reddish-brown.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طبق يُسمّى «اوبورن»"
   },
   "gray-hair": {
     "definition": "Hair appears gray when white strands mix with strands that still contain pigment, usually as part of aging.",
@@ -107,7 +122,7 @@
   },
   "highlighted": {
     "definition": "In academic writing, it draws readers’ attention to an important point, finding, or claim.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هيغليغتيد»"
   },
   "dyed-hair": {
     "definition": "Hair whose color has been changed using a coloring product.",
@@ -116,15 +131,24 @@
   },
   "natural-color": {
     "definition": "The color an object, substance, or organism naturally has before people alter, process, or enhance it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «ناتورال كولور»"
   },
   "ponytail": {
     "definition": "A hair style that draws the hair back so that it hangs down in back of the head like a pony's tail.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أسلوب أو طراز يُسمّى «بونيتايل»"
   },
-  "braid": { "definition": "To form or weave into a braid or braids.", "arabicTranslation": "" },
-  "bun": { "definition": "Small rounded bread either plain or sweet.", "arabicTranslation": "" },
-  "pigtails": { "arabicTranslation": "" },
+  "braid": {
+    "definition": "To form or weave into a braid or braids.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «برايد»"
+  },
+  "bun": {
+    "definition": "Small rounded bread either plain or sweet.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بون»"
+  },
+  "pigtails": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيجتايلس»",
+    "definition": "Hair arranged in two bunches, one on each side of the head."
+  },
   "bob-cut": {
     "definition": "A hairstyle in which the hair is cut to around jaw or neck length in a generally even shape.",
     "exampleUsage": "The hairstyle guide shows a chin-length bob cut.",
@@ -132,18 +156,24 @@
   },
   "crew-cut": {
     "definition": "A short, even haircut with the hair closely trimmed, traditionally associated with men.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كريو كوت»"
   },
-  "afro": { "definition": "A rounded thickly curled hairdo.", "arabicTranslation": "" },
+  "afro": {
+    "definition": "A rounded thickly curled hairdo.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «افرو»"
+  },
   "dreadlocks": {
     "definition": "One of many long thin braids of hair radiating from the scalp.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «دريادلوكس»"
   },
   "bangs": {
     "definition": "A border of hair that is cut short and hangs across the forehead.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بانجس»"
   },
-  "bald": { "definition": "Lacking hair on all or most of the scalp.", "arabicTranslation": "" },
+  "bald": {
+    "definition": "Lacking hair on all or most of the scalp.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بالد»"
+  },
   "blue-eyes": {
     "definition": "Eyes whose irises appear blue.",
     "exampleUsage": "The character in the illustration has blue eyes.",
@@ -181,7 +211,7 @@
   },
   "almond-shaped": {
     "definition": "Having a rounded form that narrows to points at both ends, resembling an almond.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «الموند-شابيد»"
   },
   "round-eyes": {
     "definition": "Eyes whose visible shape appears relatively rounded.",
@@ -215,12 +245,15 @@
   },
   "dimples": {
     "definition": "A small natural hollow in the cheek or chin.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديمبليس»"
   },
-  "freckles": { "arabicTranslation": "" },
+  "freckles": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فريكليس»",
+    "definition": "Small brown spots that appear naturally on the skin."
+  },
   "double-chin": {
     "definition": "A rounded fold of fatty tissue that forms beneath the lower jaw.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «دووبلي تشين»"
   },
   "cleft-chin": {
     "definition": "A chin with a visible central dimple or groove.",

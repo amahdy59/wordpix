@@ -28,7 +28,7 @@
   },
   "dim-lighting": {
     "definition": "A low level of light in a place makes fine details difficult to see while still allowing people to move around safely.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «ديم ليغتينج»"
   },
   "ventilation": {
     "definition": "A mechanical system in a building that provides fresh air.",
@@ -56,7 +56,10 @@
     "definition": "The plug in the mouth of a bottle (especially a wine bottle).",
     "arabicTranslation": "فلين"
   },
-  "capsule": { "arabicTranslation": "كبسولة" },
+  "capsule": {
+    "arabicTranslation": "كبسولة",
+    "definition": "A thin covering around the top of a wine bottle."
+  },
   "label": {
     "definition": "A brief description given for purposes of identification.",
     "arabicTranslation": "علامة"
@@ -83,7 +86,10 @@
     "definition": "Several things grouped together or considered as a whole.",
     "arabicTranslation": "مجموعة"
   },
-  "decanter": { "arabicTranslation": "دورق تقديم" },
+  "decanter": {
+    "arabicTranslation": "دورق تقديم",
+    "definition": "A glass container used to serve wine after pouring it from a bottle."
+  },
   "wine-glass": {
     "definition": "A stemmed drinking glass traditionally used for wine.",
     "exampleUsage": "The glassware display included an empty wine glass.",
@@ -123,7 +129,10 @@
     "exampleUsage": "The museum exhibit shows a wine thermometer used for temperature monitoring.",
     "arabicTranslation": "مقياس حرارة للنبيذ"
   },
-  "bordeaux": { "definition": "A port city in southwestern France.", "arabicTranslation": "بوردو" },
+  "bordeaux": {
+    "definition": "A port city in southwestern France.",
+    "arabicTranslation": "بوردو"
+  },
   "burgundy": {
     "definition": "Red table wine from the Burgundy region of France (or any similar wine made elsewhere).",
     "arabicTranslation": "بورغوندي"

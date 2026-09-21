@@ -3,7 +3,10 @@
     "definition": "The sense that allows a person to see light, color, shape, and movement with the eyes.",
     "arabicTranslation": "الرؤية"
   },
-  "eye": { "definition": "The organ used for seeing.", "arabicTranslation": "عين" },
+  "eye": {
+    "arabicTranslation": "عين",
+    "definition": "The organ used for seeing."
+  },
   "pupil": {
     "definition": "The contractile aperture in the center of the iris of the eye.",
     "arabicTranslation": "بؤبؤ"
@@ -65,8 +68,14 @@
     "definition": "The number of times a radio wave repeats each second.",
     "arabicTranslation": "تردد"
   },
-  "echo": { "definition": "To ring or echo with sound.", "arabicTranslation": "صدى" },
-  "vibration": { "arabicTranslation": "اهتزاز" },
+  "echo": {
+    "arabicTranslation": "صدى",
+    "definition": "A sound heard again after it reflects from a surface."
+  },
+  "vibration": {
+    "arabicTranslation": "اهتزاز",
+    "definition": "A rapid back-and-forth movement that can often be felt."
+  },
   "auditory-nerve": {
     "definition": "A combined sensory nerve carries signals from the hair cells responsible for hearing and balance to the brain.",
     "arabicTranslation": "عصب سمعي"
@@ -79,7 +88,10 @@
     "definition": "Either one of the two external openings to the nasal cavity in the nose.",
     "arabicTranslation": "فتحة الأنف"
   },
-  "olfactory": { "definition": "Of or relating to olfaction.", "arabicTranslation": "شَمّي" },
+  "olfactory": {
+    "arabicTranslation": "شَمّي",
+    "definition": "Of or relating to olfaction."
+  },
   "aroma": {
     "definition": "Any property detected by the olfactory system.",
     "arabicTranslation": "رائحة عطرية"
@@ -92,12 +104,18 @@
     "definition": "The sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form.",
     "arabicTranslation": "رائحة"
   },
-  "scent": { "definition": "A distinctive odor that is pleasant.", "arabicTranslation": "رائحة" },
+  "scent": {
+    "definition": "A distinctive odor that is pleasant.",
+    "arabicTranslation": "رائحة"
+  },
   "stench": {
     "definition": "A distinctive odor that is offensively unpleasant.",
     "arabicTranslation": "رائحة كريهة"
   },
-  "pungent": { "arabicTranslation": "نفّاذ" },
+  "pungent": {
+    "arabicTranslation": "نفّاذ",
+    "definition": "Having a very strong and sharp smell or taste."
+  },
   "nasal-cavity": {
     "definition": "Either of the two hollow passages inside the nose, located above the mouth and extending back to the throat.",
     "arabicTranslation": "تجويف أنفي"
@@ -118,7 +136,10 @@
     "definition": "Having an acidic taste like lemon or vinegar.",
     "arabicTranslation": "حامض"
   },
-  "salty": { "arabicTranslation": "مالح" },
+  "salty": {
+    "arabicTranslation": "مالح",
+    "definition": "Tasting of salt or containing a lot of salt."
+  },
   "bitter": {
     "definition": "Causing a sharp and acrid taste experience.",
     "arabicTranslation": "مُرّ"
@@ -153,11 +174,17 @@
     "arabicTranslation": "ضغط"
   },
   "temperature": {
-    "definition": "How hot or cold something is.",
-    "arabicTranslation": "درجة الحرارة"
+    "arabicTranslation": "درجة الحرارة",
+    "definition": "How hot or cold something is."
   },
-  "texture": { "definition": "The way a surface looks or feels.", "arabicTranslation": "ملمس" },
-  "pain": { "definition": "A somatic sensation of acute discomfort.", "arabicTranslation": "ألم" },
+  "texture": {
+    "definition": "The way a surface looks or feels.",
+    "arabicTranslation": "ملمس"
+  },
+  "pain": {
+    "definition": "A somatic sensation of acute discomfort.",
+    "arabicTranslation": "ألم"
+  },
   "tickle": {
     "definition": "A cutaneous sensation often resulting from light stroking.",
     "arabicTranslation": "دغدغة"
@@ -174,17 +201,44 @@
     "definition": "Having or caused by an irregular surface.",
     "arabicTranslation": "خشن"
   },
-  "bright": { "definition": "Having strong or striking color.", "arabicTranslation": "ساطع" },
+  "bright": {
+    "definition": "Having strong or striking color.",
+    "arabicTranslation": "ساطع"
+  },
   "loud": {
     "definition": "Characterized by or producing sound of great volume or intensity.",
     "arabicTranslation": "مرتفع الصوت"
   },
-  "fragrant": { "arabicTranslation": "عَطِر" },
-  "delicious": { "definition": "Variety of sweet eating apples.", "arabicTranslation": "لذيذ" },
-  "soft": { "arabicTranslation": "طري" },
-  "dark": { "definition": "(used of color) having a dark hue.", "arabicTranslation": "داكن" },
-  "quiet": { "arabicTranslation": "هادئ" },
-  "stinky": { "definition": "Having an unpleasant smell.", "arabicTranslation": "كريه الرائحة" },
-  "bland": { "definition": "Lacking taste or flavor or tang.", "arabicTranslation": "عديم النكهة" },
-  "hard": { "arabicTranslation": "صلب" }
+  "fragrant": {
+    "arabicTranslation": "عَطِر",
+    "definition": "Having a pleasant and noticeable smell."
+  },
+  "delicious": {
+    "definition": "Variety of sweet eating apples.",
+    "arabicTranslation": "لذيذ"
+  },
+  "soft": {
+    "arabicTranslation": "طري",
+    "definition": "Easy to press or bend, and not hard to the touch."
+  },
+  "dark": {
+    "definition": "(used of color) having a dark hue.",
+    "arabicTranslation": "داكن"
+  },
+  "quiet": {
+    "arabicTranslation": "هادئ",
+    "definition": "Making little or no sound."
+  },
+  "stinky": {
+    "arabicTranslation": "كريه الرائحة",
+    "definition": "Having an unpleasant smell."
+  },
+  "bland": {
+    "definition": "Lacking taste or flavor or tang.",
+    "arabicTranslation": "عديم النكهة"
+  },
+  "hard": {
+    "arabicTranslation": "صلب",
+    "definition": "Firm and difficult to press, bend, or cut."
+  }
 }

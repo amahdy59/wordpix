@@ -3,8 +3,14 @@
     "definition": "(astrology) a person who is born while the sun is in Leo.",
     "arabicTranslation": "أسد"
   },
-  "elephant": { "arabicTranslation": "فيل" },
-  "giraffe": { "arabicTranslation": "زرافة" },
+  "elephant": {
+    "arabicTranslation": "فيل",
+    "definition": "A very large mammal with a trunk, tusks, and wide ears."
+  },
+  "giraffe": {
+    "arabicTranslation": "زرافة",
+    "definition": "A tall African mammal with a very long neck and spotted coat."
+  },
   "zebra": {
     "definition": "Any of several fleet black-and-white striped African equines.",
     "arabicTranslation": "حمار وحشي"
@@ -26,7 +32,10 @@
     "definition": "Long-legged spotted cat of Africa and southwestern Asia having nonretractile claws.",
     "arabicTranslation": "فهد صائد"
   },
-  "leopard": { "arabicTranslation": "نمر مرقط" },
+  "leopard": {
+    "arabicTranslation": "نمر مرقط",
+    "definition": "A large wild cat with a spotted coat."
+  },
   "wildebeest": {
     "definition": "Large African antelope having a head with horns like an ox and a long tufted tail.",
     "arabicTranslation": "نوّ"
@@ -39,7 +48,10 @@
     "definition": "African wild swine with warty protuberances on the face and large protruding tusks.",
     "arabicTranslation": "خنزير ثؤلولي"
   },
-  "mongoose": { "definition": "Agile grizzled Old World viverrine.", "arabicTranslation": "نمس" },
+  "mongoose": {
+    "definition": "Agile grizzled Old World viverrine.",
+    "arabicTranslation": "نمس"
+  },
   "hyena": {
     "definition": "Doglike nocturnal mammal of Africa and southern Asia that feeds chiefly on carrion.",
     "exampleUsage": "The hyena was identified during the lesson.",
@@ -91,7 +103,7 @@
   "watering-hole": {
     "definition": "A natural pool or shallow lake that provides wild animals with a place to drink.",
     "exampleUsage": "The watering hole was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مشروب يُسمّى «واتيرينج هولي»"
   },
   "horizon": {
     "definition": "The range of interest or activity that can be anticipated.",
@@ -156,7 +168,8 @@
   },
   "crane": {
     "definition": "A tall machine with a long arm used to lift heavy materials.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «كراني»",
+    "exampleUsage": "The crane was used during the activity."
   },
   "heron": {
     "definition": "Grey or white wading bird with long neck and long legs and (usually) long bill.",
@@ -169,7 +182,8 @@
   },
   "binoculars": {
     "definition": "An instrument used for seeing distant objects more clearly.",
-    "arabicTranslation": "منظار ثنائي"
+    "arabicTranslation": "منظار ثنائي",
+    "exampleUsage": "The binoculars was used during the activity."
   },
   "camera": {
     "definition": "Equipment for taking photographs (usually consisting of a lightproof box with a lens at one end and light-sensitive film at the other).",
@@ -226,14 +240,20 @@
   },
   "rainy-season": {
     "definition": "One of the two main seasons in tropical climates, marked by frequent rainfall.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «رايني سياسون»"
   },
   "food-chain": {
     "definition": "A linked series of organisms in an ecosystem transfers energy and nutrients as each member consumes the one before it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «فوود تشاين»"
   },
-  "camouflage": { "definition": "To disguise by camouflaging.", "arabicTranslation": "تمويه" },
-  "territory": { "definition": "An area of knowledge or interest.", "arabicTranslation": "إقليم" },
+  "camouflage": {
+    "arabicTranslation": "تمويه",
+    "definition": "Colors or patterns that help an animal blend into its surroundings."
+  },
+  "territory": {
+    "definition": "An area of knowledge or interest.",
+    "arabicTranslation": "إقليم"
+  },
   "den": {
     "definition": "The habitation of wild animals.",
     "exampleUsage": "The den was identified during the lesson.",

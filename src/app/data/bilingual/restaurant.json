@@ -5,11 +5,11 @@
   },
   "chair": {
     "definition": "A single seat with a back and four legs, for one person.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «تشاير»"
   },
   "booth": {
     "definition": "A table (in a restaurant or bar) surrounded by two high-backed benches.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بووث»"
   },
   "menu": {
     "definition": "A list of commands or choices in a program.",
@@ -25,7 +25,7 @@
   },
   "candle": {
     "definition": "A wax cylinder with a wick that gives light when it burns.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كاندلي»"
   },
   "centerpiece": {
     "definition": "The central or most important feature.",
@@ -57,10 +57,13 @@
     "definition": "Table consisting of a horizontal surface over which business is transacted.",
     "arabicTranslation": "منضدة"
   },
-  "plate": { "definition": "A flat round item used for serving a meal.", "arabicTranslation": "" },
+  "plate": {
+    "definition": "A flat round item used for serving a meal.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بلاتي»"
+  },
   "bowl": {
     "definition": "A deep round item used for serving soup, cereal, or salad.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بوول»"
   },
   "glass": {
     "definition": "A clear drinking vessel without a handle.",
@@ -68,7 +71,8 @@
   },
   "fork": {
     "definition": "A handheld eating tool with several narrow pointed teeth.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «فورك»",
+    "exampleUsage": "The fork was used during the activity."
   },
   "knife": {
     "definition": "A handheld tool with a sharp blade used for slicing ingredients.",
@@ -77,19 +81,20 @@
   },
   "spoon": {
     "definition": "A handheld eating tool with a small rounded end for liquids or soft meals.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «سبوون»",
+    "exampleUsage": "The spoon was used during the activity."
   },
   "cup": {
     "definition": "A small drinking vessel, usually with a handle.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مشروب يُسمّى «كوب»"
   },
   "saucer": {
     "definition": "A small shallow item placed beneath a drinking vessel.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مشروب يُسمّى «ساوكير»"
   },
   "mug": {
     "definition": "A sturdy drinking vessel with a handle, often used for hot drinks.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مشروب يُسمّى «موج»"
   },
   "chopsticks": {
     "definition": "One of a pair of slender sticks used as oriental tableware to eat food with.",
@@ -106,7 +111,7 @@
   },
   "pitcher": {
     "definition": "A large vessel with a handle and spout for serving drinks.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مشروب يُسمّى «بيتتشير»"
   },
   "wine-glass": {
     "definition": "A stemmed drinking glass traditionally used for wine.",
@@ -121,13 +126,22 @@
     "definition": "To serve as a waiter or waitress in a restaurant.",
     "arabicTranslation": "نادلة"
   },
-  "chef": { "arabicTranslation": "طاهٍ" },
-  "cook": { "definition": "To prepare food using heat.", "arabicTranslation": "طاهٍ" },
+  "chef": {
+    "arabicTranslation": "طاهٍ",
+    "definition": "A professional cook, especially one in charge of a kitchen."
+  },
+  "cook": {
+    "arabicTranslation": "طاهٍ",
+    "definition": "To prepare food by heating it."
+  },
   "host": {
     "definition": "A technical name for the bread used in the service of Mass or Holy Communion.",
     "arabicTranslation": "مضيف"
   },
-  "hostess": { "arabicTranslation": "مضيفة المطعم" },
+  "hostess": {
+    "arabicTranslation": "مضيفة المطعم",
+    "definition": "A woman who greets guests and helps seat them at a restaurant."
+  },
   "busser": {
     "definition": "A restaurant worker clears used dishes, wipes and resets tables, and helps waiters serve diners.",
     "arabicTranslation": "مساعد النادل"
@@ -138,7 +152,8 @@
   },
   "dishwasher": {
     "definition": "A machine that cleans plates, cups, and cutlery automatically.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «ديشواشير»",
+    "exampleUsage": "The dishwasher was used during the activity."
   },
   "manager": {
     "definition": "A person who controls resources and expenditures.",
@@ -158,7 +173,7 @@
   },
   "main-course": {
     "definition": "The principal dish in a formal meal is served as the meal’s main part, after the opening courses.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طبق يُسمّى «ماين كوورسي»"
   },
   "dessert": {
     "definition": "A dish served as the last course of a meal.",
@@ -170,18 +185,28 @@
   },
   "special": {
     "definition": "A dish or meal given prominence in e.g. a restaurant.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طبق يُسمّى «سبيكيال»"
   },
-  "bill": { "definition": "A cutting tool with a sharp edge.", "arabicTranslation": "" },
-  "check": { "arabicTranslation": "شيك" },
+  "bill": {
+    "definition": "A cutting tool with a sharp edge.",
+    "arabicTranslation": "أداة يُسمّى «بيلل»",
+    "exampleUsage": "The bill was used during the activity."
+  },
+  "check": {
+    "arabicTranslation": "شيك",
+    "definition": "A written bill showing the cost of food or services."
+  },
   "tip": {
     "definition": "To give a tip or gratuity to in return for a service, beyond the compensation agreed on.",
     "arabicTranslation": "إكرامية"
   },
-  "receipt": { "arabicTranslation": "إيصال" },
+  "receipt": {
+    "arabicTranslation": "إيصال",
+    "definition": "A written or digital record showing that a payment was made."
+  },
   "reservation": {
     "definition": "The act of reserving (a place or passage) or engaging the services of (a person or group).",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «ريسيرفاتيون»"
   },
   "order-pad": {
     "definition": "A small pad or digital device used by restaurant staff to record customer orders.",
@@ -190,11 +215,11 @@
   },
   "oven": {
     "definition": "An enclosed heated compartment used to roast or bake meals.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «وفين»"
   },
   "stove": {
     "definition": "A cooking appliance with heated burners on its top surface.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «ستوفي»"
   },
   "grill": {
     "definition": "A metal surface used for cooking over a fire.",
@@ -206,27 +231,30 @@
   },
   "pot": {
     "definition": "A deep round cooking vessel with handles, used for boiling or simmering.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بوت»"
   },
   "pan": {
     "definition": "A shallow round cooking vessel with a long handle.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بان»"
   },
   "cutting-board": {
     "definition": "A flat protective surface used when chopping ingredients.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «كوتتينج بوارد»"
   },
   "ladle": {
     "definition": "A long-handled tool with a deep rounded end for serving soup.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «لادلي»",
+    "exampleUsage": "The ladle was used during the activity."
   },
   "spatula": {
     "definition": "A flat handheld tool used to lift, turn, or spread ingredients.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «سباتولا»",
+    "exampleUsage": "The spatula was used during the activity."
   },
   "whisk": {
     "definition": "A wire kitchen tool used to beat ingredients and add air.",
-    "arabicTranslation": "يخفق"
+    "arabicTranslation": "يخفق",
+    "exampleUsage": "The whisk was used during the activity."
   },
   "mixer": {
     "definition": "A party of people assembled to promote sociability and communal activity.",
@@ -234,11 +262,11 @@
   },
   "refrigerator": {
     "definition": "A tall electric appliance that keeps fresh groceries cold.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريفريجيراتور»"
   },
   "freezer": {
     "definition": "A very cold appliance that keeps groceries frozen for long storage.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فرييزير»"
   },
   "sink": {
     "definition": "A bowl with taps and a drain, used for washing your hands or face.",
@@ -250,7 +278,7 @@
   },
   "salad": {
     "definition": "Food mixtures either arranged on a plate or tossed and served with a moist dressing.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طعام يُسمّى «سالاد»"
   },
   "steak": {
     "definition": "A slice of meat cut from the fleshy part of an animal or large fish.",
@@ -259,7 +287,7 @@
   },
   "pasta": {
     "definition": "A dough-based food shaped into noodles, tubes, or other forms.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طعام يُسمّى «باستا»"
   },
   "pizza": {
     "definition": "Italian open pie made of thin bread dough spread with a spiced mixture of e.g. tomato sauce and cheese.",
@@ -280,19 +308,19 @@
   },
   "rice": {
     "definition": "Small pale grains that become soft when boiled.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريكي»"
   },
   "bread": {
     "definition": "A baked staple made from dough, commonly sliced for sandwiches.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «برياد»"
   },
   "sauce": {
     "definition": "Flavorful relish or dressing or topping served as an accompaniment to food.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طعام يُسمّى «ساوكي»"
   },
   "dressing": {
-    "definition": "Savory dressings for salads.",
-    "arabicTranslation": "ارتداء الملابس"
+    "arabicTranslation": "ارتداء الملابس",
+    "definition": "Savory dressings for salads."
   },
   "garnish": {
     "definition": "Something (such as parsley) added to a dish for flavor or decoration.",

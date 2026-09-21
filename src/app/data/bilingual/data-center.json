@@ -49,7 +49,8 @@
   },
   "switch": {
     "definition": "Control consisting of a mechanical or electrical or electronic device for making or breaking or changing the connections in a circuit.",
-    "arabicTranslation": "مبدّل شبكي"
+    "arabicTranslation": "مبدّل شبكي",
+    "exampleUsage": "The switch was used during the activity."
   },
   "router": {
     "definition": "A worker who routes shipments for distribution and delivery.",
@@ -73,7 +74,10 @@
     "definition": "A type of network technology for local area networks.",
     "arabicTranslation": "إيثرنت"
   },
-  "bandwidth": { "arabicTranslation": "عرض النطاق" },
+  "bandwidth": {
+    "arabicTranslation": "عرض النطاق",
+    "definition": "The amount of data a network connection can carry in a given time."
+  },
   "latency": {
     "definition": "(computer science) the time it takes for a specific block of data on a data track to rotate around to the read/write head.",
     "arabicTranslation": "زمن الاستجابة"
@@ -88,13 +92,17 @@
   },
   "hard-drive": {
     "definition": "A storage device that preserves digital information without power and lets computers save and retrieve files.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «هارد دريفي»",
+    "exampleUsage": "The hard drive was used during the activity."
   },
   "ssd": {
     "definition": "A solid-state drive stores data in flash memory chips rather than spinning magnetic disks, providing faster access, lower delay, and greater resistance to mechanical failure.",
     "arabicTranslation": "قرص حالة صلبة"
   },
-  "raid": { "arabicTranslation": "مصفوفة أقراص مستقلة" },
+  "raid": {
+    "arabicTranslation": "مصفوفة أقراص مستقلة",
+    "definition": "A storage system that combines multiple drives for speed or resilience."
+  },
   "nas": {
     "definition": "A silvery soft waxy metallic element of the alkali metal group.",
     "arabicTranslation": "تخزين متصل بالشبكة"
@@ -109,20 +117,26 @@
   },
   "tape-drive": {
     "definition": "A device moves magnetic tape across read/write heads, allowing recorded information to be played or stored.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «تابي دريفي»",
+    "exampleUsage": "The tape drive was used during the activity."
   },
   "cloud-storage": {
     "definition": "Online space used to save and access your files from different devices.",
-    "arabicTranslation": "تخزين سحابة"
+    "arabicTranslation": "تخزين سحابة",
+    "exampleUsage": "The cloud storage was used during the activity."
   },
-  "snapshot": { "arabicTranslation": "لقطة حالة" },
+  "snapshot": {
+    "arabicTranslation": "لقطة حالة",
+    "definition": "A saved copy of data or system state from a particular moment."
+  },
   "replication": {
     "definition": "The repetition of an experiment in order to test the validity of its conclusion.",
     "arabicTranslation": "نسخ متماثل"
   },
   "air-conditioner": {
     "definition": "A device that adjusts the temperature and moisture inside a building, usually by cooling and drying the air. Some models also improve indoor air quality.",
-    "arabicTranslation": "بلسم هواء"
+    "arabicTranslation": "بلسم هواء",
+    "exampleUsage": "The air conditioner was used during the activity."
   },
   "chiller": {
     "definition": "Excitation that makes your hair stand up or that chills your bones.",
@@ -130,11 +144,13 @@
   },
   "cooling-tower": {
     "definition": "An industrial cooling system lowers the temperature of hot water by letting some of it evaporate. The cooled water can then be reused to remove heat from machinery.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «كوولينج تووير»",
+    "exampleUsage": "The cooling tower was used during the activity."
   },
   "fan": {
     "definition": "A device for creating a current of air by movement of a surface or surfaces.",
-    "arabicTranslation": "مروحة"
+    "arabicTranslation": "مروحة",
+    "exampleUsage": "The fan was used during the activity."
   },
   "vent": {
     "definition": "To expose to cool or cold air so as to cool or freshen.",
@@ -142,7 +158,8 @@
   },
   "heat-exchanger": {
     "definition": "A device passes heat from one moving fluid to another while keeping the two fluids separate.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «هيات يكستشانجير»",
+    "exampleUsage": "The heat exchanger was used during the activity."
   },
   "containment": {
     "definition": "A policy of creating strategic alliances in order to check the expansion of a hostile power or ideology or to force it to negotiate peacefully.",
@@ -176,11 +193,12 @@
   },
   "cctv": {
     "definition": "A CCTV installation consists of cameras, recording devices, and related equipment serving a specific location.",
-    "arabicTranslation": "مراقبة تلفزيونية مغلقة"
+    "arabicTranslation": "مراقبة تلفزيونية مغلقة",
+    "exampleUsage": "The cctv was used during the activity."
   },
   "fire-suppression": {
     "definition": "The coordinated methods and equipment used to put out unwanted fires or keep them from spreading after they begin.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طريقة يُسمّى «فيري سوببريسسيون»"
   },
   "access-log": {
     "definition": "A record showing who or what accessed a system or location and when.",
@@ -217,11 +235,12 @@
   },
   "alert": {
     "definition": "Engaged in or accustomed to close observation.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اليرت»"
   },
   "uptime": {
     "definition": "A period of time when something (as a machine or factory) is functioning and available for use.",
-    "arabicTranslation": "زمن التشغيل"
+    "arabicTranslation": "زمن التشغيل",
+    "exampleUsage": "The uptime was used during the activity."
   },
   "maintenance": {
     "definition": "Means of maintenance of a family or group.",

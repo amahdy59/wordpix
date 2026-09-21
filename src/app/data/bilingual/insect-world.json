@@ -7,7 +7,7 @@
   "bee": {
     "definition": "A flying insect that collects nectar and makes honey.",
     "exampleUsage": "The bee was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حشرة يُسمّى «بيي»"
   },
   "butterfly": {
     "definition": "A flying insect with colourful wings.",
@@ -33,7 +33,10 @@
     "definition": "To fly or go in a manner resembling a beetle.",
     "arabicTranslation": "خنفساء"
   },
-  "fly": { "definition": "To travel through the air.", "arabicTranslation": "" },
+  "fly": {
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «فلي»",
+    "definition": "An insect with one pair of wings and large eyes."
+  },
   "mosquito": {
     "definition": "Two-winged insect whose female has a long proboscis to pierce the skin and suck the blood of humans and animals.",
     "exampleUsage": "The mosquito was identified during the lesson.",
@@ -41,7 +44,8 @@
   },
   "cricket": {
     "exampleUsage": "The cricket was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حشرة يُسمّى «كريكيت»",
+    "definition": "An insect known for the chirping sound made by its wings."
   },
   "wing": {
     "definition": "A group within a political party or legislature or other organization that holds distinct views or has a particular function.",
@@ -49,7 +53,8 @@
   },
   "antenna": {
     "definition": "A device that sends or receives radio and television signals.",
-    "arabicTranslation": "هوائي"
+    "arabicTranslation": "هوائي",
+    "exampleUsage": "The antenna was used during the activity."
   },
   "leg": {
     "definition": "A structure in animals that is similar to a human leg and used for locomotion.",
@@ -79,7 +84,7 @@
   },
   "stinger": {
     "definition": "A sharp organ of offense or defense (as of a wasp or stingray or scorpion) often connected with a poison gland.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «ستينجير»"
   },
   "proboscis": {
     "definition": "The human nose (especially when it is large).",
@@ -87,39 +92,48 @@
   },
   "hive": {
     "definition": "To move together in a hive or as if in a hive.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «هيفي»"
   },
   "anthill": {
     "definition": "A mound of earth made by ants as they dig their nest.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «انثيلل»"
   },
   "web": {
     "definition": "An intricate network suggesting something that was formed by weaving or interweaving.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «ويب»"
   },
   "cocoon": {
     "definition": "To retreat as if into a cocoon, as from an unfriendly environment.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «كوكوون»"
   },
-  "nest": { "definition": "A kind of gun emplacement.", "arabicTranslation": "عش" },
-  "burrow": { "definition": "To move through by or as by digging.", "arabicTranslation": "" },
+  "nest": {
+    "arabicTranslation": "عش",
+    "definition": "A kind of gun emplacement."
+  },
+  "burrow": {
+    "definition": "To move through by or as by digging.",
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «بورروو»"
+  },
   "leaf": {
     "definition": "A flat green part of a plant that uses light to make food.",
     "arabicTranslation": "ورقة نبات"
   },
-  "bark": { "definition": "The rough outer covering of a tree trunk.", "arabicTranslation": "" },
+  "bark": {
+    "definition": "The rough outer covering of a tree trunk.",
+    "arabicTranslation": "شجرة يُسمّى «بارك»"
+  },
   "soil": {
     "definition": "Material in the top layer of the surface of the earth in which plants can grow (especially with reference to its quality or use).",
-    "arabicTranslation": ""
+    "arabicTranslation": "نبات يُسمّى «سويل»"
   },
   "pond-surface": {
     "definition": "The topmost layer of a pond is the boundary where its water meets the air.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «بوند سورفاكي»"
   },
   "larva": {
     "definition": "The immature free-living form of most invertebrates and amphibians and fish which at hatching from the egg is fundamentally unlike its parent and must metamorphose.",
     "exampleUsage": "The larva was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سمكة يُسمّى «لارفا»"
   },
   "caterpillar": {
     "definition": "A young insect that looks like a worm before becoming a butterfly or moth.",
@@ -129,7 +143,7 @@
   "pupa": {
     "definition": "An insect in the inactive stage of development (when it is not feeding) intermediate between larva and adult.",
     "exampleUsage": "The pupa was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حشرة يُسمّى «بوبا»"
   },
   "chrysalis": {
     "definition": "Pupa of a moth or butterfly enclosed in a cocoon.",
@@ -148,41 +162,65 @@
   "nymph": {
     "definition": "A larva of an insect with incomplete metamorphosis (as the dragonfly or mayfly).",
     "exampleUsage": "The nymph was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حشرة يُسمّى «نيمف»"
   },
   "adult": {
-    "definition": "(of animals) fully developed.",
     "exampleUsage": "The adult was identified during the lesson.",
-    "arabicTranslation": "بالغ"
+    "arabicTranslation": "بالغ",
+    "definition": "(of animals) fully developed."
   },
   "swarm": {
     "definition": "A group of many things in the air or on the ground.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «سوارم»"
   },
-  "pollinate": { "definition": "To fertilize by transferring pollen.", "arabicTranslation": "" },
-  "sting": { "arabicTranslation": "" },
-  "crawl": { "arabicTranslation": "" },
-  "buzz": { "arabicTranslation": "طنين" },
-  "dig": { "definition": "To turn up, loosen, or remove earth.", "arabicTranslation": "" },
-  "spin": { "definition": "To form a web by making a thread.", "arabicTranslation": "" },
+  "pollinate": {
+    "definition": "To fertilize by transferring pollen.",
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «بولليناتي»"
+  },
+  "sting": {
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «ستينج»",
+    "definition": "A sharp painful injury caused by an insect or animal."
+  },
+  "crawl": {
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «كراول»",
+    "definition": "To move forward close to the ground on hands, knees, or legs."
+  },
+  "buzz": {
+    "arabicTranslation": "طنين",
+    "definition": "To make a low humming sound, like a flying insect."
+  },
+  "dig": {
+    "definition": "To turn up, loosen, or remove earth.",
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «ديج»"
+  },
+  "spin": {
+    "definition": "To form a web by making a thread.",
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «سبين»"
+  },
   "camouflage": {
     "definition": "An outward semblance that misrepresents the true nature of something.",
     "arabicTranslation": "تمويه"
   },
-  "migrate": { "definition": "To move periodically or seasonally.", "arabicTranslation": "" },
-  "hibernate": { "arabicTranslation": "" },
+  "migrate": {
+    "definition": "To move periodically or seasonally.",
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «ميجراتي»"
+  },
+  "hibernate": {
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «هيبيرناتي»",
+    "definition": "To spend the winter in a state of greatly reduced activity."
+  },
   "earthworm": {
     "definition": "Terrestrial worm that burrows into and helps aerate soil.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «يارثوورم»"
   },
   "snail": {
     "definition": "A small slow-moving animal with a spiral shell.",
     "exampleUsage": "The snail was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «سنايل»"
   },
   "slug": {
     "definition": "An amount of an alcoholic drink (usually liquor) that is poured or gulped.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مشروب يُسمّى «سلوج»"
   },
   "centipede": {
     "definition": "Chiefly nocturnal predacious arthropod having a flattened body of 15 to 173 segments each with a pair of legs, the foremost pair being modified as prehensors.",
@@ -190,12 +228,12 @@
   },
   "millipede": {
     "definition": "Any of numerous herbivorous nonpoisonous arthropods having a cylindrical body of 20 to 100 or more segments most with two pairs of legs.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «ميلليبيدي»"
   },
   "aphid": {
     "definition": "Any of various small plant-sucking insects.",
     "exampleUsage": "The aphid was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حشرة يُسمّى «افيد»"
   },
   "praying-mantis": {
     "definition": "A predatory insect with a long body and large front legs held in a folded position that resembles hands in prayer.",
@@ -209,10 +247,10 @@
   "moth": {
     "definition": "Typically crepuscular or nocturnal insect having a stout body and feathery or hairlike antennae.",
     "exampleUsage": "The moth was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حشرة يُسمّى «موث»"
   },
   "wasp": {
     "definition": "Social or solitary hymenopterans typically having a slender body with the abdomen attached by a narrow stalk and having a formidable sting.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «واسب»"
   }
 }

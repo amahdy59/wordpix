@@ -1,14 +1,17 @@
 {
   "cargo-ship": {
     "definition": "A large vessel built to carry goods for trade across oceans and along coastlines.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كارجو شيب»"
   },
   "fishing-boat": {
     "definition": "A boat built for fishing, often equipped with a live well that keeps its catch alive.",
     "exampleUsage": "The fishing boat was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سمكة يُسمّى «فيشينج بوات»"
   },
-  "sailboat": { "arabicTranslation": "قارب شراعي" },
+  "sailboat": {
+    "arabicTranslation": "قارب شراعي",
+    "definition": "A boat moved mainly by the wind acting on its sails."
+  },
   "tugboat": {
     "definition": "A powerful small boat designed to pull or push larger ships.",
     "arabicTranslation": "قاطرة بحرية"
@@ -17,14 +20,23 @@
     "definition": "A boat that transports people or vehicles across a body of water and operates on a regular schedule.",
     "arabicTranslation": "عبّارة"
   },
-  "yacht": { "arabicTranslation": "يخت" },
+  "yacht": {
+    "arabicTranslation": "يخت",
+    "definition": "A boat used for pleasure trips or racing."
+  },
   "kayak": {
     "definition": "A small canoe consisting of a light frame made watertight with animal skins.",
     "exampleUsage": "The kayak was identified during the lesson.",
     "arabicTranslation": "كاياك"
   },
-  "canoe": { "arabicTranslation": "زورق كانو" },
-  "speedboat": { "arabicTranslation": "قارب سريع" },
+  "canoe": {
+    "arabicTranslation": "زورق كانو",
+    "definition": "A narrow boat moved with a paddle."
+  },
+  "speedboat": {
+    "arabicTranslation": "قارب سريع",
+    "definition": "A fast motorboat designed for travel or recreation."
+  },
   "lifeboat": {
     "definition": "A strong sea boat designed to rescue people from a sinking ship.",
     "arabicTranslation": "قارب نجاة"
@@ -35,7 +47,7 @@
   },
   "container-ship": {
     "definition": "A large vessel transports goods packed into standardized shipping boxes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سفينة يُسمّى «كونتاينير شيب»"
   },
   "dock": {
     "definition": "Landing in a harbor next to a pier where ships are loaded and unloaded or repaired.",
@@ -45,7 +57,10 @@
     "definition": "A platform built out from the shore into the water and supported by piles.",
     "arabicTranslation": "رصيف بحري"
   },
-  "wharf": { "definition": "To come into or dock at a wharf.", "arabicTranslation": "مرسى شحن" },
+  "wharf": {
+    "definition": "To come into or dock at a wharf.",
+    "arabicTranslation": "مرسى شحن"
+  },
   "jetty": {
     "definition": "A protective structure of stone or concrete.",
     "arabicTranslation": "رصيف ممتد"
@@ -83,7 +98,8 @@
   },
   "crane": {
     "definition": "A tall machine with a long arm used to lift heavy materials.",
-    "arabicTranslation": ""
+    "arabicTranslation": "آلة يُسمّى «كراني»",
+    "exampleUsage": "The crane was used during the activity."
   },
   "forklift": {
     "definition": "A vehicle with lifting forks used to move heavy loads.",
@@ -103,7 +119,10 @@
     "exampleUsage": "Workers rolled the cart down the loading ramp.",
     "arabicTranslation": "منحدر تحميل"
   },
-  "warehouse": { "arabicTranslation": "مستودع" },
+  "warehouse": {
+    "arabicTranslation": "مستودع",
+    "definition": "A large building used for storing goods."
+  },
   "freight": {
     "definition": "The charge for transporting something by common carrier.",
     "arabicTranslation": "شحن"
@@ -114,7 +133,7 @@
   },
   "mooring-line": {
     "definition": "A line used in boating secures a vessel or other object in one place.",
-    "arabicTranslation": ""
+    "arabicTranslation": "قارب يُسمّى «موورينج ليني»"
   },
   "buoy": {
     "definition": "A float attached by rope to the seabed to mark channels in a harbor or underwater hazards.",
@@ -136,10 +155,14 @@
     "definition": "A system that uses radio waves to detect objects or weather.",
     "arabicTranslation": "رادار"
   },
-  "radio": { "definition": "To transmit messages via radio waves.", "arabicTranslation": "إذاعة" },
+  "radio": {
+    "definition": "To transmit messages via radio waves.",
+    "arabicTranslation": "إذاعة"
+  },
   "binoculars": {
     "definition": "An instrument used for seeing distant objects more clearly.",
-    "arabicTranslation": "منظار ثنائي"
+    "arabicTranslation": "منظار ثنائي",
+    "exampleUsage": "The binoculars was used during the activity."
   },
   "flag": {
     "definition": "A piece of cloth attached to a pole as a symbol.",
@@ -147,7 +170,7 @@
   },
   "signal-light": {
     "definition": "A colored lamp on a traffic signal that directs vehicles and pedestrians through an intersection.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لون يُسمّى «سيجنال ليغت»"
   },
   "horn": {
     "definition": "Any hard protuberance from the head of an organism that is similar to or suggestive of a horn.",
@@ -156,24 +179,27 @@
   "fishing-rod": {
     "definition": "Describes parts, materials, or features intended for use with a fishing rod and other angling equipment.",
     "exampleUsage": "The fishing rod was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سمكة يُسمّى «فيشينج رود»"
   },
   "fishing-net": {
     "definition": "A tangled mass of fishing netting is treated as something to manage, repair, or discard rather than as an active tool.",
     "exampleUsage": "The fishing net was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سمكة يُسمّى «فيشينج نيت»"
   },
   "tackle-box": {
     "definition": "A portable case with separate compartments keeps fishing gear organized and easy for anglers to reach.",
     "exampleUsage": "The tackle box was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سمكة يُسمّى «تاكلي بوكس»"
   },
   "bait": {
     "definition": "Something used to lure fish or other animals into danger so they can be trapped or killed.",
     "exampleUsage": "The bait was identified during the lesson.",
     "arabicTranslation": "طُعم"
   },
-  "hook": { "arabicTranslation": "خطاف" },
+  "hook": {
+    "arabicTranslation": "خطاف",
+    "definition": "A curved piece of metal used to catch, hang, or lift things."
+  },
   "reel": {
     "definition": "Winder consisting of a revolving spool with a handle.",
     "arabicTranslation": "بكرة صيد"
@@ -211,7 +237,8 @@
   },
   "crab": {
     "exampleUsage": "The crab was identified during the lesson.",
-    "arabicTranslation": "سلطعون"
+    "arabicTranslation": "سلطعون",
+    "definition": "A sea animal with a hard shell, ten legs, and two claws."
   },
   "lobster-trap": {
     "definition": "A cage-like fishing device designed to catch lobsters.",
@@ -242,7 +269,10 @@
     "definition": "A cargo ship designed to carry crude oil in bulk.",
     "arabicTranslation": "ناقلة"
   },
-  "submarine": { "arabicTranslation": "غواصة" },
+  "submarine": {
+    "arabicTranslation": "غواصة",
+    "definition": "A vessel that can travel underwater."
+  },
   "container": {
     "definition": "A large box used for storing or transporting materials.",
     "arabicTranslation": "حاوية"
@@ -251,9 +281,18 @@
     "definition": "The naval officer in command of a military ship.",
     "arabicTranslation": "قبطان"
   },
-  "sailor": { "definition": "Any member of a ship's crew.", "arabicTranslation": "بحار" },
-  "cargo": { "definition": "Goods carried by a large vehicle.", "arabicTranslation": "حمولة" },
-  "navigation": { "arabicTranslation": "ملاحة" },
+  "sailor": {
+    "arabicTranslation": "بحار",
+    "definition": "Any member of a ship's crew."
+  },
+  "cargo": {
+    "definition": "Goods carried by a large vehicle.",
+    "arabicTranslation": "حمولة"
+  },
+  "navigation": {
+    "arabicTranslation": "ملاحة",
+    "definition": "The process of planning and following a route."
+  },
   "shipping-lane": {
     "definition": "A recognized route through the sea commonly used by commercial vessels.",
     "exampleUsage": "The map marks the main shipping lane outside the harbor.",

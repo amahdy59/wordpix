@@ -1,8 +1,20 @@
 {
-  "in": { "definition": "To or toward the inside of.", "arabicTranslation": "" },
-  "on": { "arabicTranslation": "" },
-  "under": { "arabicTranslation": "" },
-  "behind": { "definition": "In or to or toward the rear.", "arabicTranslation": "" },
+  "in": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ين»",
+    "definition": "Inside a place or enclosed area."
+  },
+  "on": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ون»",
+    "definition": "Touching and supported by the surface of something."
+  },
+  "under": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وندير»",
+    "definition": "Below something else, often covered or sheltered by it."
+  },
+  "behind": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيهيند»",
+    "definition": "In or to or toward the rear."
+  },
   "in-front-of": {
     "definition": "In a position that is ahead of or facing the front side of something.",
     "exampleUsage": "The bicycle is in front of the building.",
@@ -13,65 +25,113 @@
     "exampleUsage": "The library is next to the park.",
     "arabicTranslation": "بجانب"
   },
-  "between": { "arabicTranslation": "" },
-  "above": { "definition": "An earlier section of a written text.", "arabicTranslation": "" },
-  "below": { "definition": "(in writing) at a later place.", "arabicTranslation": "" },
+  "between": {
+    "arabicTranslation": "مكان يُسمّى «بيتويين»",
+    "definition": "In the space separating two people or things."
+  },
+  "above": {
+    "definition": "An earlier section of a written text.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ابوفي»"
+  },
+  "below": {
+    "definition": "(in writing) at a later place.",
+    "arabicTranslation": "مكان يُسمّى «بيلوو»"
+  },
   "inside": {
     "definition": "Relating to or being on the side closer to the center or within a defined space.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ينسيدي»"
   },
   "outside": {
     "definition": "Relating to or being on or near the outer side or limit.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ووتسيدي»"
   },
   "beside": {
     "definition": "Shows that one thing is next to or very near another thing.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيسيدي»"
   },
-  "near": { "arabicTranslation": "" },
-  "far": { "arabicTranslation": "" },
-  "opposite": { "arabicTranslation": "" },
+  "near": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نيار»",
+    "definition": "At a short distance from someone or something."
+  },
+  "far": {
+    "arabicTranslation": "مكان يُسمّى «فار»",
+    "definition": "At a great distance from a person or place."
+  },
+  "opposite": {
+    "arabicTranslation": "مكان يُسمّى «وببوسيتي»",
+    "definition": "On the other side, facing someone or something."
+  },
   "against": {
     "definition": "Touching a surface while resting or leaning against it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «اجاينست»"
   },
-  "around": { "arabicTranslation": "" },
+  "around": {
+    "arabicTranslation": "منطقة يُسمّى «ارووند»",
+    "definition": "On every side of something, or moving in a circle."
+  },
   "among": {
     "definition": "Shows that something is shared or happens within a group of people or things.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «امونج»"
   },
-  "within": { "arabicTranslation": "" },
-  "beyond": { "definition": "Farther along in space or time or degree.", "arabicTranslation": "" },
+  "within": {
+    "arabicTranslation": "مكان يُسمّى «ويثين»",
+    "definition": "Inside a place, area, or stated limit."
+  },
+  "beyond": {
+    "definition": "Farther along in space or time or degree.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بييوند»"
+  },
   "into": {
     "definition": "Showing movement from outside to inside a place or thing.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «ينتو»"
   },
   "out-of": {
     "definition": "Moving from within a container, boundary, or enclosed area to a location beyond it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حاوية يُسمّى «ووت وف»"
   },
   "onto": {
     "definition": "Being aware of someone or something, or trying to discover more about it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ونتو»"
   },
-  "off": { "definition": "Below a satisfactory level.", "arabicTranslation": "" },
-  "through": { "arabicTranslation": "" },
-  "across": { "arabicTranslation": "" },
-  "along": { "arabicTranslation": "" },
-  "over": { "definition": "Beyond the top or upper surface or edge.", "arabicTranslation": "" },
+  "off": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وفف»",
+    "definition": "Below a satisfactory level."
+  },
+  "through": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ثرووغ»",
+    "definition": "Moving into one side of something and out the other."
+  },
+  "across": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اكروسس»",
+    "definition": "From one side of an area to the other."
+  },
+  "along": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «الونج»",
+    "definition": "Following the length or direction of something."
+  },
+  "over": {
+    "definition": "Beyond the top or upper surface or edge.",
+    "arabicTranslation": "سطح يُسمّى «وفير»"
+  },
   "past": {
     "definition": "A earlier period in someone's life (especially one that they have reason to keep secret).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «باست»"
   },
   "toward": {
     "definition": "Moving in the direction of a place or goal.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «تووارد»"
   },
-  "top": { "definition": "The upper part of anything.", "arabicTranslation": "" },
-  "bottom": { "definition": "Situated at the bottom or lowest position.", "arabicTranslation": "" },
+  "top": {
+    "arabicTranslation": "جزء يُسمّى «توب»",
+    "definition": "The upper part of anything."
+  },
+  "bottom": {
+    "definition": "Situated at the bottom or lowest position.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بوتتوم»"
+  },
   "left": {
     "definition": "Being or located on or directed toward the side of the body to the west when facing north.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليفت»"
   },
   "right": {
     "definition": "Being or located on or directed toward the side of the body to the east when facing north.",
@@ -83,19 +143,22 @@
   },
   "middle": {
     "definition": "An area that is approximately central within some larger region.",
-    "arabicTranslation": ""
+    "arabicTranslation": "منطقة يُسمّى «ميددلي»"
   },
-  "corner": { "definition": "A place off to the side of an area.", "arabicTranslation": "" },
+  "corner": {
+    "definition": "A place off to the side of an area.",
+    "arabicTranslation": "منطقة يُسمّى «كورنير»"
+  },
   "edge": {
     "definition": "The outside limit of an object or area or surface.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «يدجي»"
   },
   "side": {
     "definition": "A place within a region identified relative to a center or reference location.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «سيدي»"
   },
   "end": {
     "definition": "The surface at either extremity of a three-dimensional object.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «يند»"
   }
 }

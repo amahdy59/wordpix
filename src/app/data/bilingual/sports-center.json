@@ -1,7 +1,7 @@
 {
   "soccer": {
     "definition": "A football game in which two teams of 11 players try to kick or head a ball into the opponents' goal.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لعبة يُسمّى «سوككير»"
   },
   "basketball": {
     "definition": "A game played on a court by two opposing teams of 5 players.",
@@ -9,7 +9,7 @@
   },
   "tennis": {
     "definition": "A game played with rackets by two or four players who hit a ball back and forth over a net that divides the court.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لعبة يُسمّى «تيننيس»"
   },
   "volleyball": {
     "definition": "A game in which two teams hit an inflated ball over a high net using their hands.",
@@ -21,15 +21,15 @@
   },
   "football": {
     "definition": "Any of various games played with a ball (round or oval) in which two teams try to kick or carry or propel the ball into each other's goal.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لعبة يُسمّى «فووتبالل»"
   },
   "rugby": {
     "definition": "A form of football played with an oval ball.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «روجبي»"
   },
   "cricket": {
     "definition": "A game played with a ball and bat by two teams of 11 players.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لعبة يُسمّى «كريكيت»"
   },
   "badminton": {
     "definition": "A game played by hitting a shuttlecock over a net.",
@@ -37,19 +37,28 @@
   },
   "table-tennis": {
     "definition": "A racket game similar to tennis, it is played across a table with paddles and a lightweight hollow ball.",
-    "arabicTranslation": ""
+    "arabicTranslation": "لعبة يُسمّى «تابلي تيننيس»"
   },
-  "golf": { "arabicTranslation": "" },
+  "golf": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جولف»",
+    "definition": "A sport in which players hit a small ball into a series of holes."
+  },
   "bowling": {
     "definition": "(cricket) the act of delivering a cricket ball to the batsman.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بوولينج»"
   },
   "ball": {
     "definition": "A round object thrown, kicked, or used in games.",
     "arabicTranslation": "مقدمة باطن القدم"
   },
-  "racket": { "definition": "A bat used to hit a ball in some sports.", "arabicTranslation": "" },
-  "bat": { "definition": "A wooden stick used to hit a ball.", "arabicTranslation": "" },
+  "racket": {
+    "definition": "A bat used to hit a ball in some sports.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «راكيت»"
+  },
+  "bat": {
+    "definition": "A wooden stick used to hit a ball.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بات»"
+  },
   "helmet": {
     "definition": "A hard covering worn to protect the head.",
     "arabicTranslation": "خوذة"
@@ -59,10 +68,13 @@
     "exampleUsage": "The football player wore a shin guard under each sock.",
     "arabicTranslation": "واقي الساق"
   },
-  "knee-pad": { "definition": "Protective pads worn over the knees.", "arabicTranslation": "" },
+  "knee-pad": {
+    "definition": "Protective pads worn over the knees.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كنيي باد»"
+  },
   "glove": {
     "definition": "The handwear used by fielders in playing baseball.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جلوفي»"
   },
   "net": {
     "definition": "A net stretched across a court or between players.",
@@ -94,44 +106,47 @@
   },
   "running": {
     "definition": "Moving quickly on foot during play or exercise.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «روننينج»"
   },
   "sprinting": {
     "definition": "Running as fast as possible over a short distance.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سبرينتينج»"
   },
   "relay-race": {
     "definition": "A team race divides the course into sections, with each runner completing one before handing an object to a teammate.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريلاي راكي»"
   },
   "hurdles": {
     "definition": "A footrace in which contestants must negotiate a series of hurdles.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هوردليس»"
   },
   "long-jump": {
     "definition": "An athletics event where a competitor sprints down a runway, takes off from a marked board, and lands in a sandpit. The recorded distance runs from the board to the nearest mark left in the sand.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لونج جومب»"
   },
   "high-jump": {
     "definition": "Connected with high jump, including its equipment, competitions, and training for clearing a high bar.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هيغ جومب»"
   },
   "javelin": {
     "definition": "An athletic competition in which a javelin is thrown as far as possible.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جافيلين»"
   },
   "discus": {
     "definition": "An athletic competition in which a disk-shaped object is thrown as far as possible.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شكل يُسمّى «ديسكوس»"
   },
   "pole-vault": {
     "definition": "A track-and-field event in which competitors use a flexible pole to clear a high crossbar.",
     "arabicTranslation": "قبو معماري عمود"
   },
-  "marathon": { "definition": "Any long and arduous undertaking.", "arabicTranslation": "" },
+  "marathon": {
+    "definition": "Any long and arduous undertaking.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ماراثون»"
+  },
   "starting-block": {
     "definition": "Describes equipment or actions associated with starting a track race from a starting block.",
-    "arabicTranslation": ""
+    "arabicTranslation": "فعل أو عملية يُسمّى «ستارتينج بلوك»"
   },
   "finish-line": {
     "definition": "A visible line marks the point where a race officially ends.",
@@ -143,9 +158,12 @@
   },
   "diving-board": {
     "definition": "A flexible platform that springs upward when a swimmer jumps from it to dive.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديفينج بوارد»"
   },
-  "lane": { "definition": "A well-defined track or path.", "arabicTranslation": "" },
+  "lane": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لاني»",
+    "definition": "A well-defined track or path."
+  },
   "kickboard": {
     "definition": "A floating board held during swimming practice to support the upper body while focusing on leg movement.",
     "exampleUsage": "The swimmer used a kickboard during the supervised lesson.",
@@ -158,11 +176,11 @@
   },
   "backstroke": {
     "definition": "A swimming stroke that resembles the crawl except the swimmer lies on his or her back.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «باكستروكي»"
   },
   "freestyle": {
     "definition": "A race (as in swimming) in which each contestant has a free choice of the style to use.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أسلوب أو طراز يُسمّى «فرييستيلي»"
   },
   "butterfly-stroke": {
     "definition": "A swimming technique in which the swimmer faces downward, moves both arms over the water together, and uses a simultaneous dolphin kick.",
@@ -170,7 +188,7 @@
   },
   "water-polo": {
     "definition": "A team sport in which swimmers compete in a pool, passing and throwing an inflated ball into the opposing team's goal.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «واتير بولو»"
   },
   "synchronized-swimming": {
     "definition": "A sport in which swimmers perform coordinated routines in the water, often to music; it is now commonly called artistic swimming.",
@@ -185,10 +203,13 @@
     "definition": "A room in a sports facility or workplace where people change clothes and leave personal belongings in lockers.",
     "arabicTranslation": "غرفة خزانة"
   },
-  "bench": { "definition": "To lift a weight using a bench press.", "arabicTranslation": "مقعد" },
+  "bench": {
+    "definition": "To lift a weight using a bench press.",
+    "arabicTranslation": "مقعد"
+  },
   "bleachers": {
     "definition": "(used in the plural) an outdoor grandstand without a roof.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بلياتشيرس»"
   },
   "track": {
     "definition": "A line or route along which something travels or moves.",
@@ -196,14 +217,24 @@
   },
   "field": {
     "definition": "To catch or pick up (balls) in baseball or cricket.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فييلد»"
   },
-  "court": { "definition": "A room in which a law court sits.", "arabicTranslation": "" },
-  "ring": { "arabicTranslation": "خاتم" },
-  "mat": { "definition": "A thick flat pad used as a floor covering.", "arabicTranslation": "" },
+  "court": {
+    "definition": "A room in which a law court sits.",
+    "arabicTranslation": "غرفة يُسمّى «كوورت»"
+  },
+  "ring": {
+    "arabicTranslation": "خاتم",
+    "definition": "A roped square area where boxing or wrestling takes place."
+  },
+  "mat": {
+    "definition": "A thick flat pad used as a floor covering.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مات»"
+  },
   "treadmill": {
     "definition": "An exercise device consisting of an endless belt on which a person can walk or jog without changing place.",
-    "arabicTranslation": "جهاز مشي"
+    "arabicTranslation": "جهاز مشي",
+    "exampleUsage": "The treadmill was used during the activity."
   },
   "weight-room": {
     "definition": "A gym room containing equipment for strength and resistance training.",
@@ -212,18 +243,25 @@
   },
   "shower": {
     "definition": "A place or device that sprays water over you so you can wash your body.",
-    "arabicTranslation": "دُش"
+    "arabicTranslation": "دُش",
+    "exampleUsage": "The shower was used during the activity."
   },
-  "athlete": { "definition": "A person trained to compete in sports.", "arabicTranslation": "" },
+  "athlete": {
+    "definition": "A person trained to compete in sports.",
+    "arabicTranslation": "شخص يُسمّى «اثليتي»"
+  },
   "coach": {
     "definition": "A person who trains players in a sport.",
     "arabicTranslation": "حافلة سفر"
   },
   "referee": {
     "definition": "(sports) the chief official (as in boxing or American football) who is expected to ensure fair play.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريفيريي»"
   },
-  "teammate": { "definition": "A fellow member of a team.", "arabicTranslation": "" },
+  "teammate": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تيامماتي»",
+    "definition": "A fellow member of a team."
+  },
   "warm-up": {
     "definition": "Light or gradually increasing activity performed before more demanding exercise to prepare the body.",
     "exampleUsage": "The coach led a short warm-up before practice.",
@@ -235,7 +273,7 @@
   },
   "score": {
     "definition": "A number or letter indicating quality (especially of a student's performance).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سكوري»"
   },
   "pass": {
     "definition": "(American football) a play that involves one player throwing the ball to a teammate.",
@@ -243,7 +281,7 @@
   },
   "kick": {
     "definition": "A rhythmic thrusting movement of the legs as in swimming or calisthenics.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كيك»"
   },
   "throw": {
     "definition": "The act of throwing (propelling something with a rapid movement of the arm and wrist).",
@@ -255,6 +293,6 @@
   },
   "dribble": {
     "definition": "To run or flow slowly, as in drops or in an unsteady stream.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «دريببلي»"
   }
 }

@@ -21,14 +21,17 @@
   "swordfish": {
     "definition": "Flesh of swordfish usually served as steaks.",
     "exampleUsage": "The glossary uses the term \"swordfish\" in an educational description.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سمكة يُسمّى «سووردفيش»"
   },
   "seahorse": {
     "definition": "Either of two large northern marine mammals having ivory tusks and tough hide over thick blubber.",
     "exampleUsage": "The seahorse was identified during the lesson.",
     "arabicTranslation": "فرس البحر"
   },
-  "eel": { "arabicTranslation": "" },
+  "eel": {
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «ييل»",
+    "definition": "A long, narrow fish that resembles a snake and lives in water."
+  },
   "manta-ray": {
     "definition": "A very large ray with broad triangular fins that feeds mainly by filtering tiny organisms from water.",
     "exampleUsage": "A manta ray glided through the large exhibit.",
@@ -41,7 +44,7 @@
   "piranha": {
     "definition": "Small voraciously carnivorous freshwater fishes of South America that attack and destroy living animals.",
     "exampleUsage": "The piranha was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سمكة يُسمّى «بيرانها»"
   },
   "barracuda": {
     "definition": "Any voracious marine fish of the genus Sphyraena having an elongated cylindrical body and large mouth with projecting lower jaw and long strong teeth.",
@@ -51,14 +54,17 @@
   "catfish": {
     "definition": "Any of numerous mostly freshwater bottom-living fishes of Eurasia and North America with barbels like whiskers around the mouth.",
     "exampleUsage": "The catfish was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سمكة يُسمّى «كاتفيش»"
   },
   "dolphin": {
     "definition": "Large slender food and game fish widely distributed in warm seas (especially around Hawaii).",
     "exampleUsage": "The dolphin was identified during the lesson.",
     "arabicTranslation": "دلفين"
   },
-  "whale": { "arabicTranslation": "حوت" },
+  "whale": {
+    "arabicTranslation": "حوت",
+    "definition": "A very large marine mammal that breathes air through a blowhole."
+  },
   "sea-lion": {
     "definition": "A marine mammal with external ear flaps and strong flippers that can move on land as well as swim.",
     "exampleUsage": "The sea lion rested on a platform.",
@@ -71,7 +77,7 @@
   "walrus": {
     "definition": "Either of two large northern marine mammals having ivory tusks and tough hide over thick blubber.",
     "exampleUsage": "The walrus was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "حيوان ثديي يُسمّى «والروس»"
   },
   "beluga-whale": {
     "definition": "A small white toothed whale of Arctic and sub-Arctic waters, known for a rounded forehead.",
@@ -80,7 +86,7 @@
   },
   "orca": {
     "definition": "Predatory black-and-white toothed whale with large dorsal fin.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «وركا»"
   },
   "manatee": {
     "definition": "Sirenian mammal of tropical coastal waters of America.",
@@ -89,7 +95,7 @@
   },
   "narwhal": {
     "definition": "Small Arctic whale the male having a long spiral ivory tusk.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «ناروهال»"
   },
   "sea-otter": {
     "definition": "A marine mammal with dense fur that often floats on its back and feeds on shellfish and other sea animals.",
@@ -117,11 +123,18 @@
     "exampleUsage": "A sea urchin was visible among the rocks.",
     "arabicTranslation": "قنفذ البحر"
   },
-  "lobster": { "arabicTranslation": "كركند" },
-  "crab": { "definition": "The fourth sign of the zodiac.", "arabicTranslation": "سلطعون" },
+  "lobster": {
+    "arabicTranslation": "كركند",
+    "definition": "A large sea animal with a hard shell and two strong claws."
+  },
+  "crab": {
+    "definition": "The fourth sign of the zodiac.",
+    "arabicTranslation": "سلطعون"
+  },
   "shrimp": {
     "exampleUsage": "The shrimp was identified during the lesson.",
-    "arabicTranslation": "روبيان"
+    "arabicTranslation": "روبيان",
+    "definition": "A small sea animal with a curved body, many legs, and a hard shell."
   },
   "anemone": {
     "definition": "Any woodland plant of the genus Anemone grown for its beautiful flowers and whorls of dissected leaves.",
@@ -134,7 +147,7 @@
   },
   "nautilus": {
     "definition": "A submarine that is propelled by nuclear power.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «ناوتيلوس»"
   },
   "coral": {
     "definition": "A variable color averaging a deep pink.",
@@ -170,7 +183,7 @@
   },
   "mangrove": {
     "definition": "A tropical tree or shrub bearing fruit that germinates while still on the tree and having numerous prop roots that eventually form an impenetrable mass and are important in land building.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شجرة يُسمّى «مانجروفي»"
   },
   "shipwreck": {
     "definition": "To cause to experience shipwreck.",
@@ -182,7 +195,7 @@
   },
   "open-ocean": {
     "definition": "The broad, deep sea beyond the coastal waters, where land is far from view.",
-    "arabicTranslation": ""
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «وبين وكيان»"
   },
   "glass-tunnel": {
     "definition": "A transparent enclosed walkway that lets visitors pass through or beneath an aquarium exhibit.",
@@ -199,12 +212,18 @@
     "exampleUsage": "Children watched the fish through the viewing window.",
     "arabicTranslation": "نافذة مشاهدة"
   },
-  "tank": { "definition": "As much as a tank will hold.", "arabicTranslation": "" },
+  "tank": {
+    "arabicTranslation": "كائن أو عنصر طبيعي يُسمّى «تانك»",
+    "definition": "As much as a tank will hold."
+  },
   "filter": {
     "definition": "To remove by passing through a filter.",
     "arabicTranslation": "يرشّح"
   },
-  "pump": { "arabicTranslation": "مضخة" },
+  "pump": {
+    "arabicTranslation": "مضخة",
+    "definition": "A machine that circulates water through an aquarium."
+  },
   "lighting": {
     "definition": "Having abundant light or illumination.",
     "arabicTranslation": "إضاءة"
@@ -230,6 +249,6 @@
   },
   "guided-tour": {
     "definition": "A planned visit to a place or institution led by a guide who explains what participants are seeing.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «جويديد توور»"
   }
 }

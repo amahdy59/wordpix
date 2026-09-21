@@ -3,7 +3,10 @@
     "definition": "An area where merchandise (such as cars) can be displayed.",
     "arabicTranslation": "صالة عرض"
   },
-  "lot": { "definition": "(Old Testament) nephew of Abraham.", "arabicTranslation": "ساحة سيارات" },
+  "lot": {
+    "definition": "(Old Testament) nephew of Abraham.",
+    "arabicTranslation": "ساحة سيارات"
+  },
   "service-center": {
     "definition": "A facility where vehicles are inspected, maintained, or repaired by trained staff.",
     "exampleUsage": "The dealership's service center is behind the showroom.",
@@ -11,11 +14,11 @@
   },
   "parts-department": {
     "definition": "A business division that provides replacement parts, often for vehicles or equipment.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «بارتس ديبارتمينت»"
   },
   "finance-office": {
     "definition": "The department responsible for managing a school or district’s funds, budgets, and financial records.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «فينانكي وففيكي»"
   },
   "waiting-room": {
     "definition": "A room where customers sit while waiting for service or an appointment.",
@@ -43,21 +46,24 @@
   },
   "test-drive": {
     "definition": "A trial drive taken to determine whether a vehicle is safe and suitable to buy.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مركبة يُسمّى «تيست دريفي»"
   },
   "trade-in": {
     "definition": "A used item, especially a vehicle, offered to a seller as part of the payment for another one.",
     "exampleUsage": "The document shows the assessed value of the trade-in.",
     "arabicTranslation": "سيارة مستبدلة ضمن صفقة"
   },
-  "financing": { "arabicTranslation": "تمويل" },
+  "financing": {
+    "arabicTranslation": "تمويل",
+    "definition": "Money or a loan arranged to pay for a purchase."
+  },
   "lease": {
     "definition": "A contract granting use or occupation of property during a specified time for a specified payment.",
     "arabicTranslation": "تأجير"
   },
   "down-payment": {
     "definition": "The initial portion of an asset’s purchase price that a buyer pays, often stated as a percentage of the total cost, is called a down payment.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «دوون بايمينت»"
   },
   "monthly-payment": {
     "definition": "An amount of money due each month under a loan, lease, or payment agreement.",
@@ -71,15 +77,24 @@
   },
   "sticker-price": {
     "definition": "The price printed on a product or catalog before any discounts are applied.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ستيكير بريكي»"
   },
   "negotiation": {
     "definition": "A discussion intended to produce an agreement.",
     "arabicTranslation": "تفاوض"
   },
-  "closing": { "arabicTranslation": "إتمام الصفقة" },
-  "new": { "arabicTranslation": "جديد" },
-  "used": { "definition": "Employed in accomplishing something.", "arabicTranslation": "مستعمل" },
+  "closing": {
+    "arabicTranslation": "إتمام الصفقة",
+    "definition": "The final stage of a sale when documents are signed and ownership changes."
+  },
+  "new": {
+    "arabicTranslation": "جديد",
+    "definition": "Recently made or available, and not previously owned or used."
+  },
+  "used": {
+    "definition": "Employed in accomplishing something.",
+    "arabicTranslation": "مستعمل"
+  },
   "certified-pre-owned": {
     "definition": "Describing a used vehicle that has passed an inspection program and meets requirements set by a manufacturer or dealer program.",
     "exampleUsage": "The brochure explains what the certified pre-owned program includes.",
@@ -90,8 +105,8 @@
     "arabicTranslation": "عرض تجريبي"
   },
   "mileage": {
-    "definition": "Distance measured in miles.",
-    "arabicTranslation": "عدد الكيلومترات"
+    "arabicTranslation": "عدد الكيلومترات",
+    "definition": "Distance measured in miles."
   },
   "carfax": {
     "definition": "A brand name associated with vehicle-history reports that summarize recorded information about used vehicles.",
@@ -107,7 +122,10 @@
     "exampleUsage": "The contract explains what the extended warranty covers.",
     "arabicTranslation": "ضمان ممتد"
   },
-  "recall": { "arabicTranslation": "استدعاء للصيانة" },
+  "recall": {
+    "arabicTranslation": "استدعاء للصيانة",
+    "definition": "A request for owners to return a product so a safety fault can be fixed."
+  },
   "lemon-law": {
     "definition": "A law that may give consumers remedies when a newly purchased vehicle has serious defects that cannot be fixed after reasonable attempts.",
     "exampleUsage": "The consumer guide explains the state's lemon-law protections.",
@@ -115,25 +133,43 @@
   },
   "sales-associate": {
     "definition": "An employee who works with customers helps them choose, purchase, and understand the products or services a business offers.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ساليس اسسوكياتي»"
   },
   "finance-manager": {
     "definition": "A dealership employee who handles financing documents, payment options, and related contracts.",
     "exampleUsage": "The finance manager reviewed the contract terms with the adult buyer.",
     "arabicTranslation": "مدير التمويل"
   },
-  "service-advisor": { "arabicTranslation": "مرشد خدمة" },
+  "service-advisor": {
+    "arabicTranslation": "مرشد خدمة",
+    "definition": "A person who discusses vehicle repairs with customers at a dealership."
+  },
   "technician": {
     "definition": "A person who maintains and operates technical equipment during a production.",
     "arabicTranslation": "فني"
   },
-  "general-manager": { "arabicTranslation": "" },
+  "general-manager": {
+    "arabicTranslation": "سفينة يُسمّى «جينيرال ماناجير»",
+    "definition": "The person responsible for the overall operation of a business."
+  },
   "receptionist": {
     "definition": "A secretary whose main duty is to answer the telephone and receive visitors.",
     "arabicTranslation": "موظف استقبال"
   },
-  "detailer": { "arabicTranslation": "مختص تنظيف وتلميع السيارات" },
-  "parts-specialist": { "arabicTranslation": "" },
-  "lot-attendant": { "arabicTranslation": "مرافق خدمة ساحة سيارات" },
-  "title-clerk": { "arabicTranslation": "" }
+  "detailer": {
+    "arabicTranslation": "مختص تنظيف وتلميع السيارات",
+    "definition": "A worker who thoroughly cleans and finishes the inside and outside of cars."
+  },
+  "parts-specialist": {
+    "arabicTranslation": "سفينة يُسمّى «بارتس سبيكياليست»",
+    "definition": "A worker who identifies and supplies the correct vehicle parts."
+  },
+  "lot-attendant": {
+    "arabicTranslation": "مرافق خدمة ساحة سيارات",
+    "definition": "A worker who parks, moves, and prepares cars on a dealership lot."
+  },
+  "title-clerk": {
+    "arabicTranslation": "سفينة يُسمّى «تيتلي كليرك»",
+    "definition": "A worker who handles documents that establish ownership of a vehicle."
+  }
 }

@@ -3,24 +3,31 @@
     "definition": "A portable set of medical supplies and equipment provides immediate help for minor injuries or sudden illness while professional care is unavailable.",
     "arabicTranslation": "أول إسعاف طقم"
   },
-  "bandage": { "definition": "To dress by covering or binding.", "arabicTranslation": "ضمادة" },
+  "bandage": {
+    "definition": "To dress by covering or binding.",
+    "arabicTranslation": "ضمادة"
+  },
   "gauze": {
     "definition": "(medicine) bleached cotton cloth of plain weave used for bandages and dressings.",
     "arabicTranslation": "شاش"
   },
   "adhesive-tape": {
     "definition": "A thin, bendable strip with adhesive on one side sticks objects or surfaces together, seals them, or keeps them in place.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «ادهيسيفي تابي»"
   },
   "antiseptic-wipe": {
     "definition": "A disposable wipe containing an antiseptic solution for cleaning intact skin or, when labeled for it, small areas around minor injuries.",
     "exampleUsage": "The first-aid cabinet contained individually wrapped antiseptic wipes.",
     "arabicTranslation": "منديل مطهّر"
   },
-  "scissors": { "definition": "To cut with or as if with scissors.", "arabicTranslation": "مقص" },
+  "scissors": {
+    "definition": "To cut with or as if with scissors.",
+    "arabicTranslation": "مقص"
+  },
   "tweezers": {
     "definition": "A small tool consisting of two pointed arms used for picking up small objects or plucking hairs.",
-    "arabicTranslation": "ملقط"
+    "arabicTranslation": "ملقط",
+    "exampleUsage": "The tweezers was used during the activity."
   },
   "safety-pin": {
     "definition": "A small metal pin with a spring and a guard that locks its point can hold fabric, bandages, labels, or other light items temporarily.",
@@ -32,7 +39,7 @@
   },
   "triangular-bandage": {
     "definition": "A broad, triangle-shaped cloth supports an injured forearm by resting around the wearer’s neck.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شكل يُسمّى «تريانجولار بانداجي»"
   },
   "gauze-pad": {
     "definition": "A sterile or clean absorbent square of woven material used to cover or cushion a wound.",
@@ -76,17 +83,25 @@
   },
   "stretcher": {
     "definition": "A mechanical device used to make something larger (as shoes or gloves) by stretching it.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «ستريتتشير»",
+    "exampleUsage": "The stretcher was used during the activity."
   },
   "wheelchair": {
     "definition": "A movable chair mounted on large wheels.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «وهييلتشاير»"
   },
-  "crutch": { "definition": "Anything that serves as an expedient.", "arabicTranslation": "" },
-  "splint": { "arabicTranslation": "جبيرة" },
+  "crutch": {
+    "definition": "Anything that serves as an expedient.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كروتتش»"
+  },
+  "splint": {
+    "arabicTranslation": "جبيرة",
+    "definition": "A firm support used to keep an injured body part still."
+  },
   "neck-brace": {
     "definition": "A supportive device worn around the neck helps keep the neck stable.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «نيك براكي»",
+    "exampleUsage": "The neck brace was used during the activity."
   },
   "ice-pack": {
     "definition": "A flexible container of ice or gel placed on an injury helps relieve pain and limit swelling.",
@@ -99,11 +114,13 @@
   },
   "stethoscope": {
     "definition": "A medical instrument for listening to the sounds generated inside the body.",
-    "arabicTranslation": "سماعة طبية"
+    "arabicTranslation": "سماعة طبية",
+    "exampleUsage": "The stethoscope was used during the activity."
   },
   "thermometer": {
     "definition": "Measuring instrument for measuring temperature.",
-    "arabicTranslation": "مقياس حرارة"
+    "arabicTranslation": "مقياس حرارة",
+    "exampleUsage": "The thermometer was used during the activity."
   },
   "pulse-oximeter": {
     "definition": "A small noninvasive device that estimates blood oxygen saturation and pulse rate, usually by clipping onto a fingertip.",
@@ -142,11 +159,11 @@
   },
   "penlight": {
     "definition": "A small flashlight resembling a fountain pen.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بينليغت»"
   },
   "tongue-depressor": {
     "definition": "A small, flat wooden stick allows a clinician to hold the tongue down while inspecting the mouth and throat.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «تونجوي ديبريسسور»"
   },
   "plaster": {
     "definition": "A white material that becomes hard and is used for casting shapes.",
@@ -164,19 +181,19 @@
   },
   "saline-solution": {
     "definition": "A sterile mixture of salt and water used in medicine can wash wounds or deliver fluids through a vein.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «ساليني سولوتيون»"
   },
   "hydrogen-peroxide": {
     "definition": "This clear liquid compound, usually dissolved in water, is used to disinfect, bleach, and oxidize materials.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «هيدروجين بيروكسيدي»"
   },
   "iodine": {
     "definition": "A tincture consisting of a solution of iodine in ethyl alcohol.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «يوديني»"
   },
   "cotton-swab": {
     "definition": "A small stick with cotton at each end, used for careful cleaning or applying products.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كوتتون سواب»"
   },
   "sterile-gloves": {
     "definition": "Disposable gloves processed to be free of viable microorganisms and used for procedures requiring sterile technique.",
@@ -185,7 +202,8 @@
   },
   "syringe": {
     "definition": "A medical instrument used to inject or withdraw fluids.",
-    "arabicTranslation": "حقنة"
+    "arabicTranslation": "حقنة",
+    "exampleUsage": "The syringe was used during the activity."
   },
   "suture-kit": {
     "definition": "A set of sterile instruments and materials intended for wound suturing by trained healthcare professionals.",
@@ -209,7 +227,7 @@
   },
   "rubbing-alcohol": {
     "definition": "A poisonous liquid made with isopropyl alcohol or denatured ethanol for use on the skin.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «روببينج الكوهول»"
   },
   "burn-gel": {
     "definition": "A gel product labeled for cooling or covering certain minor burns; significant burns need professional medical assessment.",
@@ -223,11 +241,13 @@
   },
   "defibrillator": {
     "definition": "An electronic device that administers an electric shock of preset voltage to the heart through the chest wall in an attempt to restore the normal rhythm of the heart during ventricular fibrillation.",
-    "arabicTranslation": "جهاز مزيل الرجفان"
+    "arabicTranslation": "جهاز مزيل الرجفان",
+    "exampleUsage": "The defibrillator was used during the activity."
   },
   "oxygen-mask": {
     "definition": "A device worn over the nose and mouth delivers oxygen from a connected storage tank.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «وكسيجين ماسك»",
+    "exampleUsage": "The oxygen mask was used during the activity."
   },
   "oxygen-tank": {
     "definition": "A high-pressure cylinder containing medical oxygen for use by appropriately trained or authorized people.",
@@ -241,7 +261,7 @@
   },
   "tourniquet": {
     "definition": "Bandage that stops the flow of blood from an artery by applying pressure.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «توورنيكيت»"
   },
   "emergency-blanket": {
     "definition": "A lightweight insulating blanket designed to reduce heat loss in an emergency.",
@@ -252,7 +272,10 @@
     "definition": "A small object blown to make a loud signal.",
     "arabicTranslation": "صافرة"
   },
-  "flashlight": { "definition": "A small battery-powered light.", "arabicTranslation": "" },
+  "flashlight": {
+    "definition": "A small battery-powered light.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «فلاشليغت»"
+  },
   "emergency-phone": {
     "definition": "A telephone placed outdoors for urgent calls.",
     "arabicTranslation": "هاتف طوارئ"
@@ -302,7 +325,8 @@
   },
   "soap-dispenser": {
     "definition": "A device that dispenses liquid soap when its pump or sensor is activated.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «سواب ديسبينسير»",
+    "exampleUsage": "The soap dispenser was used during the activity."
   },
   "waste-bin": {
     "definition": "A container used for ordinary waste; medical facilities use separate approved containers for hazardous or clinical waste.",
@@ -311,7 +335,7 @@
   },
   "medicine-cabinet": {
     "definition": "Home health supplies include medicines, vitamins, and first aid materials kept in a medicine cabinet.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «ميديكيني كابينيت»"
   },
   "wall-chart": {
     "definition": "A large chart displayed on a wall to present reference information or instructions.",
@@ -320,7 +344,7 @@
   },
   "hand-sanitizer": {
     "definition": "A liquid or gel used to clean your hands when soap and water are unavailable.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «هاند سانيتيزير»"
   },
   "privacy-screen": {
     "definition": "A movable screen used to give a patient visual privacy during care.",
@@ -349,7 +373,8 @@
   },
   "fire-extinguisher": {
     "definition": "A portable or fixed device that releases a suitable substance to put out or contain a small fire.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «فيري يكستينجويشير»",
+    "exampleUsage": "The fire extinguisher was used during the activity."
   },
   "sharps-container": {
     "definition": "A puncture-resistant approved container used for disposing of needles and other sharp medical items.",
@@ -364,67 +389,94 @@
     "definition": "An injury that doesn't break the skin but results in some discoloration.",
     "arabicTranslation": "كدمة"
   },
-  "burn": { "definition": "Pain that feels hot as if it were on fire.", "arabicTranslation": "" },
-  "sprain": { "definition": "To twist suddenly so as to sprain.", "arabicTranslation": "" },
-  "fracture": { "definition": "Breaking of hard tissue such as bone.", "arabicTranslation": "كسر" },
-  "nosebleed": { "arabicTranslation": "" },
+  "burn": {
+    "definition": "Pain that feels hot as if it were on fire.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «بورن»"
+  },
+  "sprain": {
+    "definition": "To twist suddenly so as to sprain.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «سبراين»"
+  },
+  "fracture": {
+    "definition": "Breaking of hard tissue such as bone.",
+    "arabicTranslation": "كسر"
+  },
+  "nosebleed": {
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «نوسيبلييد»",
+    "definition": "Bleeding from the inside of the nose."
+  },
   "bee-sting": {
     "definition": "An injury or small-area reaction follows when a bee's stinger pierces the skin. It commonly causes pain, swelling, and redness, but some people develop a strong allergic response.",
-    "arabicTranslation": ""
+    "arabicTranslation": "فعل أو عملية يُسمّى «بيي ستينج»"
   },
-  "rash": { "definition": "Any red eruption of the skin.", "arabicTranslation": "طفح جلدي" },
+  "rash": {
+    "arabicTranslation": "طفح جلدي",
+    "definition": "Any red eruption of the skin."
+  },
   "blister": {
     "definition": "(botany) a swelling on a plant similar to that on the skin.",
     "arabicTranslation": "نفطة"
   },
   "splinter": {
     "definition": "A small thin sharp bit of wood or glass or metal.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «سبلينتير»"
   },
-  "concussion": { "definition": "Injury to the brain caused by a blow.", "arabicTranslation": "" },
+  "concussion": {
+    "definition": "Injury to the brain caused by a blow.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كونكوسسيون»"
+  },
   "dislocation": {
     "definition": "An event that results in a displacement or discontinuity.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «ديسلوكاتيون»"
   },
   "fainting": {
     "definition": "A brief loss of consciousness occurs when blood flow to the brain falls, usually because of changes in automatic body control or circulation, and lasts seconds to minutes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «فاينتينج»"
   },
   "choking": {
     "definition": "Causing difficulty in breathing especially through lack of fresh air and presence of heat.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «تشوكينج»"
   },
   "allergic-reaction": {
     "definition": "A response from the immune system, the body’s defense system, to a usually harmless substance can cause itching, sneezing, or swelling.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نظام يُسمّى «الليرجيك رياكتيون»"
   },
   "heat-stroke": {
     "definition": "A life-threatening condition in which the body overheats and cannot regulate its temperature normally, requiring urgent emergency medical care.",
     "exampleUsage": "Suspected heat stroke is a medical emergency requiring immediate professional help.",
     "arabicTranslation": "ضربة حرارة"
   },
-  "hypothermia": { "arabicTranslation": "" },
+  "hypothermia": {
+    "arabicTranslation": "غرفة يُسمّى «هيبوثيرميا»",
+    "definition": "A dangerous drop in body temperature caused by exposure to cold."
+  },
   "tape": {
     "definition": "A strip of sticky material used to attach things.",
     "arabicTranslation": "شريط لاصق"
   },
   "antiseptic": {
     "definition": "Thoroughly clean and free of or destructive to disease-causing organisms.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «انتيسيبتيك»"
   },
-  "sling": { "definition": "Bandage to support an injured forearm.", "arabicTranslation": "" },
+  "sling": {
+    "definition": "Bandage to support an injured forearm.",
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «سلينج»"
+  },
   "compress": {
     "definition": "A cloth pad or dressing (with or without medication) applied firmly to some part of the body (to relieve discomfort or reduce fever).",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «كومبريسس»"
   },
-  "gloves": { "definition": "Handwear: covers the hand and wrist.", "arabicTranslation": "قفازات" },
+  "gloves": {
+    "definition": "Handwear: covers the hand and wrist.",
+    "arabicTranslation": "قفازات"
+  },
   "cpr": {
     "definition": "An emergency procedure consisting of external cardiac massage and artificial respiration.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «كبر»"
   },
   "wound-care": {
     "definition": "A healthcare field focused on evaluating and treating recent or persistent wounds through proven methods and coordinated care.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طريقة يُسمّى «وووند كاري»"
   },
   "check-pulse": {
     "definition": "To assess whether a pulse or heartbeat can be detected as part of a medical or emergency assessment.",
@@ -437,11 +489,11 @@
   },
   "elevate": {
     "definition": "To give a promotion to or assign to a higher position.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «يليفاتي»"
   },
   "immobilize": {
     "definition": "To hold as reserve or withdraw from circulation.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح طبي أو تشريحي يُسمّى «يمموبيليزي»"
   },
   "call-emergency": {
     "definition": "To contact the local emergency-services number or emergency response system for urgent professional help.",
@@ -450,6 +502,7 @@
   },
   "monitor": {
     "definition": "Display produced by a device that takes signals and displays them on a television screen or a computer monitor.",
-    "arabicTranslation": "شاشة مراقبة"
+    "arabicTranslation": "شاشة مراقبة",
+    "exampleUsage": "The monitor was used during the activity."
   }
 }

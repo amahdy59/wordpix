@@ -7,23 +7,38 @@
     "definition": "The father of your father or mother.",
     "arabicTranslation": "جد"
   },
-  "grandma": { "definition": "The mother of your father or mother.", "arabicTranslation": "" },
-  "grandpa": { "definition": "The father of your father or mother.", "arabicTranslation": "" },
+  "grandma": {
+    "definition": "The mother of your father or mother.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جراندما»"
+  },
+  "grandpa": {
+    "definition": "The father of your father or mother.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جراندبا»"
+  },
   "great-grandmother": {
     "definition": "A person’s great-grandmother is the mother of one of their grandparents, placing her two generations earlier in the family line.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «جريات-جراندموثير»"
   },
   "great-grandfather": {
     "definition": "The male parent of a person's grandparent, making him that person's ancestor three generations back.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «جريات-جراندفاثير»"
   },
   "nana": {
     "definition": "People may call a caring older woman Nana, even when she is not their grandmother.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نانا»"
   },
-  "papa": { "definition": "An informal term for a father.", "arabicTranslation": "" },
-  "granny": { "definition": "The mother of your father or mother.", "arabicTranslation": "" },
-  "grandparent": { "definition": "A parent of your father or mother.", "arabicTranslation": "" },
+  "papa": {
+    "definition": "An informal term for a father.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بابا»"
+  },
+  "granny": {
+    "definition": "The mother of your father or mother.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جرانني»"
+  },
+  "grandparent": {
+    "definition": "A parent of your father or mother.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جراندبارينت»"
+  },
   "aunt": {
     "definition": "The sister of your father or mother.",
     "arabicTranslation": "عمة أو خالة"
@@ -36,12 +51,21 @@
     "definition": "The child of your aunt or uncle.",
     "arabicTranslation": "ابن أو ابنة العم أو الخال"
   },
-  "first-cousin": { "arabicTranslation": "ابن أو ابنة العم أو الخال أول" },
-  "second-cousin": { "arabicTranslation": "ابن أو ابنة العم أو الخال الثاني" },
-  "great-aunt": { "arabicTranslation": "" },
+  "first-cousin": {
+    "arabicTranslation": "ابن أو ابنة العم أو الخال أول",
+    "definition": "The child of a person's aunt or uncle."
+  },
+  "second-cousin": {
+    "arabicTranslation": "ابن أو ابنة العم أو الخال الثاني",
+    "definition": "A person who shares great-grandparents with someone else."
+  },
+  "great-aunt": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جريات-اونت»",
+    "definition": "The sister of a person's grandparent."
+  },
   "great-uncle": {
     "definition": "A male relative who is the sibling of someone’s grandparent, two generations above them in a family tree.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شجرة يُسمّى «جريات-ونكلي»"
   },
   "niece": {
     "definition": "A daughter of your brother or sister.",
@@ -51,59 +75,77 @@
     "definition": "A son of your brother or sister.",
     "arabicTranslation": "ابن الأخ أو الأخت"
   },
-  "cousin-in-law": { "arabicTranslation": "" },
+  "cousin-in-law": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كووسين-ين-لاو»",
+    "definition": "A relative related through marriage to a person's cousin or spouse."
+  },
   "mother-in-law": {
     "definition": "The mother of someone's spouse, making her a relative connected through marriage rather than birth.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «موثير-ين-لاو»"
   },
   "father-in-law": {
     "definition": "The parent of someone's spouse, who becomes a relative through marriage.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فاثير-ين-لاو»"
   },
   "sister-in-law": {
     "definition": "A female spouse of someone’s brother or sister.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سيستير-ين-لاو»"
   },
   "brother-in-law": {
     "definition": "In broader family usage, a man may become a relative through remarriage or an unusual family connection, such as being married to your spouse's sibling or being the brother of your sibling's spouse.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بروثير-ين-لاو»"
   },
   "son-in-law": {
     "definition": "A daughter's husband, viewed as a male relative gained through marriage.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سون-ين-لاو»"
   },
   "daughter-in-law": {
     "definition": "A woman married to a person's son, regarded in relation to that parent as a family member.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «داوغتير-ين-لاو»"
   },
   "in-laws": {
     "definition": "Relatives connected to you through marriage, especially your spouse’s parents and other close family members.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ين-لاوس»"
   },
-  "spouse-s-family": { "arabicTranslation": "" },
-  "extended-in-laws": { "arabicTranslation": "" },
-  "family-in-law": { "arabicTranslation": "" },
+  "spouse-s-family": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سبووسي'س فاميلي»",
+    "definition": "The relatives of a person's husband or wife."
+  },
+  "extended-in-laws": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يكستينديد ين-لاوس»",
+    "definition": "Relatives connected through marriage beyond immediate in-laws."
+  },
+  "family-in-law": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فاميلي-ين-لاو»",
+    "definition": "The family members gained through marriage."
+  },
   "reunion": {
     "definition": "A party of former associates who have come together again.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «ريونيون»"
   },
-  "holiday-dinner": { "arabicTranslation": "" },
+  "holiday-dinner": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هوليداي ديننير»",
+    "definition": "A special meal shared with family or friends on a holiday."
+  },
   "thanksgiving": {
     "definition": "Fourth Thursday in November in the United States.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ثانكسجيفينج»"
   },
   "christmas": {
     "definition": "A Christian holiday celebrating the birth of Christ.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تشريستماس»"
   },
   "easter": {
     "definition": "A Christian celebration of the Resurrection of Christ.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ياستير»"
   },
-  "birthday-celebration": { "arabicTranslation": "" },
+  "birthday-celebration": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيرثداي كيليبراتيون»",
+    "definition": "An event held to mark the day someone was born."
+  },
   "anniversary": {
     "definition": "The date on which an event occurred in some previous year (or the celebration of it).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اننيفيرساري»"
   },
   "barbecue": {
     "definition": "To cook outdoors on a barbecue grill.",
@@ -111,7 +153,10 @@
   },
   "picnic": {
     "definition": "Eating a meal outdoors, often on a blanket or table.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بيكنيك»"
   },
-  "family-wedding": { "arabicTranslation": "زفاف عائلة" }
+  "family-wedding": {
+    "arabicTranslation": "زفاف عائلة",
+    "definition": "A marriage ceremony attended by relatives of the couple."
+  }
 }

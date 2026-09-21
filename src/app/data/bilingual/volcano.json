@@ -5,18 +5,24 @@
   },
   "lava": {
     "definition": "Rock that in its molten form (as magma) issues from volcanoes.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لافا»"
   },
-  "magma": { "definition": "Molten rock in the earth's crust.", "arabicTranslation": "" },
+  "magma": {
+    "definition": "Molten rock in the earth's crust.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ماجما»"
+  },
   "vent": {
     "definition": "A hole for the escape of gas or air.",
     "arabicTranslation": "فتحة تهوية"
   },
   "caldera": {
     "definition": "A large crater caused by the violent explosion of a volcano that collapses into a depression.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كالديرا»"
   },
-  "cone": { "arabicTranslation": "قُمع" },
+  "cone": {
+    "arabicTranslation": "قُمع",
+    "definition": "The roughly cone-shaped hill built around a volcano's opening."
+  },
   "lava-tube": {
     "definition": "A tunnel-like passage formed when the surface of a lava flow cools and hardens while molten lava continues moving beneath it.",
     "exampleUsage": "Researchers mapped a lava tube from outside its unstable sections.",
@@ -28,7 +34,7 @@
   },
   "geyser": {
     "definition": "A spring that discharges hot water and steam.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جييسير»"
   },
   "fumarole": {
     "definition": "An opening in or near a volcano that releases steam and volcanic gases.",
@@ -37,11 +43,11 @@
   },
   "eruption": {
     "definition": "The sudden occurrence of a violent discharge of steam and volcanic material.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «يروبتيون»"
   },
   "lava-flow": {
     "definition": "The movement of molten rock from an opening or crack in a volcano over a period during an eruption.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «لافا فلوو»"
   },
   "ash-cloud": {
     "definition": "A cloud of fine rock, mineral, and volcanic glass particles thrown into the atmosphere by an eruption.",
@@ -53,12 +59,18 @@
     "exampleUsage": "Authorities keep people away from areas threatened by pyroclastic flows.",
     "arabicTranslation": "تدفّق فتاتي بركاني"
   },
-  "tremor": { "arabicTranslation": "" },
+  "tremor": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تريمور»",
+    "definition": "A small shaking movement of the ground."
+  },
   "earthquake": {
     "definition": "Shaking and vibration at the surface of the earth resulting from underground movement along a fault plane or from volcanic activity.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «يارثكاكي»"
   },
-  "explosion": { "definition": "The act of exploding or bursting.", "arabicTranslation": "" },
+  "explosion": {
+    "definition": "The act of exploding or bursting.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يكسبلوسيون»"
+  },
   "steam-vent": {
     "definition": "An opening in rock or soil allows steam and gases from heated underground areas to escape.",
     "arabicTranslation": "فتحة تهوية يطبخ بالبخار"
@@ -72,27 +84,30 @@
     "definition": "The release of a gas from a source into the surrounding atmosphere.",
     "arabicTranslation": "انبعاث وقود"
   },
-  "basalt": { "definition": "The commonest type of solidified lava.", "arabicTranslation": "" },
+  "basalt": {
+    "definition": "The commonest type of solidified lava.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «باسالت»"
+  },
   "obsidian": {
     "definition": "Acid or granitic glass formed by the rapid cooling of lava without crystallization.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وبسيديان»"
   },
   "pumice": {
     "definition": "A light glass formed on the surface of some lavas.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «بوميكي»"
   },
   "granite": {
     "definition": "Plutonic igneous rock having visibly crystalline texture.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جرانيتي»"
   },
   "limestone": {
     "definition": "A sedimentary rock consisting mainly of calcium that was deposited by the remains of marine animals.",
     "exampleUsage": "The limestone was identified during the lesson.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليميستوني»"
   },
   "tuff": {
     "definition": "Hard volcanic rock composed of compacted volcanic ash.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «توفف»"
   },
   "lava-rock": {
     "definition": "Rock formed when molten lava cools and becomes solid.",
@@ -101,17 +116,21 @@
   },
   "volcanic-glass": {
     "definition": "A natural form of glass created when molten lava cools too quickly for crystals to form.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فولكانيك جلاسس»"
   },
   "mineral-crystal": {
     "definition": "A naturally formed solid mineral with an ordered internal structure and a recognizable crystal shape or pattern.",
     "exampleUsage": "A mineral crystal was visible in the rock sample.",
     "arabicTranslation": "بلورة معدنية"
   },
-  "fossil": { "definition": "Characteristic of a fossil.", "arabicTranslation": "أحفورة" },
+  "fossil": {
+    "arabicTranslation": "أحفورة",
+    "definition": "Characteristic of a fossil."
+  },
   "seismograph": {
     "definition": "A measuring instrument for detecting and measuring the intensity and direction and duration of movements of the ground (as an earthquake).",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «سييسموجراف»",
+    "exampleUsage": "The seismograph was used during the activity."
   },
   "tiltmeter": {
     "definition": "An instrument that measures very small changes in the slope or tilt of the ground.",
@@ -163,20 +182,29 @@
   },
   "volcanic-island": {
     "definition": "Describes an island built by volcanic eruptions, as well as features or processes connected with that island.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عملية يُسمّى «فولكانيك يسلاند»"
   },
   "mountain-peak": {
     "definition": "The highest point or summit of a mountain.",
     "exampleUsage": "Snow remained near the mountain peak.",
     "arabicTranslation": "قمة جبل"
   },
-  "valley": { "definition": "Low land between hills or mountains.", "arabicTranslation": "" },
-  "cliff": { "definition": "A steep wall of rock or earth.", "arabicTranslation": "" },
+  "valley": {
+    "definition": "Low land between hills or mountains.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فالليي»"
+  },
+  "cliff": {
+    "definition": "A steep wall of rock or earth.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كليفف»"
+  },
   "cave": {
     "definition": "A geological formation consisting of an underground enclosure with access from the surface of the ground or from the sea.",
     "arabicTranslation": "كهف"
   },
-  "lake": { "definition": "A large area of water surrounded by land.", "arabicTranslation": "" },
+  "lake": {
+    "definition": "A large area of water surrounded by land.",
+    "arabicTranslation": "منطقة يُسمّى «لاكي»"
+  },
   "steam-cloud": {
     "definition": "A visible cloud formed when water vapor condenses into tiny droplets.",
     "exampleUsage": "A steam cloud rose where hot ground heated water.",
@@ -189,7 +217,7 @@
   },
   "rock-formation": {
     "definition": "The natural creation of rock inside Earth’s crust occurs when melted material cools, sediments harden, or existing rock changes under heat and pressure.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «روك فورماتيون»"
   },
   "evacuation-route": {
     "definition": "A planned path used to move people away from a dangerous area during an emergency.",
@@ -198,7 +226,8 @@
   },
   "warning-siren": {
     "definition": "A device that produces a loud siren to alert people that a hazard is present.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «وارنينج سيرين»",
+    "exampleUsage": "The warning siren was used during the activity."
   },
   "gas-mask": {
     "definition": "Protective respiratory equipment designed to filter certain harmful gases, vapors, or particles when fitted and used for its approved purpose.",
@@ -221,7 +250,7 @@
   },
   "helicopter": {
     "definition": "An aircraft without wings that obtains its lift from the rotation of overhead blades.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طائرة يُسمّى «هيليكوبتير»"
   },
   "rescue-team": {
     "definition": "A trained group organized to help people in dangerous or emergency situations.",
@@ -237,18 +266,21 @@
     "exampleUsage": "Only authorized personnel entered the marked hazard zone.",
     "arabicTranslation": "منطقة خطر"
   },
-  "mantle": { "definition": "The cloak as a symbol of authority.", "arabicTranslation": "" },
+  "mantle": {
+    "definition": "The cloak as a symbol of authority.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مانتلي»"
+  },
   "sulfur": {
     "definition": "An abundant tasteless odorless multivalent nonmetallic element.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سولفور»"
   },
   "quartz": {
     "definition": "A hard glossy mineral consisting of silicon dioxide in crystal form.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كارتز»"
   },
   "feldspar": {
     "definition": "Any of a group of hard crystalline minerals that consist of aluminum silicates of potassium or sodium or calcium or barium.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فيلدسبار»"
   },
   "crystal": {
     "definition": "A rock formed by the solidification of a substance.",
@@ -266,6 +298,6 @@
   },
   "dormant": {
     "definition": "(of e.g. volcanoes) not erupting and not extinct.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «دورمانت»"
   }
 }

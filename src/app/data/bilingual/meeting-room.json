@@ -11,7 +11,8 @@
   },
   "microphone": {
     "definition": "A device that changes sound into an electrical recording or signal.",
-    "arabicTranslation": "ميكروفون"
+    "arabicTranslation": "ميكروفون",
+    "exampleUsage": "The microphone was used during the activity."
   },
   "camera": {
     "definition": "Equipment for taking photographs (usually consisting of a lightproof box with a lens at one end and light-sensitive film at the other).",
@@ -19,11 +20,11 @@
   },
   "flip-chart": {
     "definition": "Used for presentations, a flip chart has large sheets attached along the top so a speaker can reveal information one page at a time.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فليب تشارت»"
   },
   "marker": {
     "definition": "Some conspicuous object used to distinguish or mark something.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ماركير»"
   },
   "remote-clicker": {
     "definition": "A handheld wireless control used to change presentation slides from a distance.",
@@ -37,31 +38,31 @@
   },
   "agenda": {
     "definition": "A list of matters to be taken up (as at a meeting).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اجيندا»"
   },
   "staff-meeting": {
     "definition": "Describing materials, activities, or decisions connected with a meeting of an organization's staff.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «ستافف مييتينج»"
   },
   "board-meeting": {
     "definition": "A formal session in which an organization’s directors review its affairs, set long-term plans, and ensure that it is properly governed.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «بوارد مييتينج»"
   },
   "one-on-one": {
     "definition": "Involving or intended for direct communication between two people and no one else.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وني-ون-وني»"
   },
   "brainstorm": {
     "definition": "The clear (and often sudden) understanding of a complex situation.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «براينستورم»"
   },
   "stand-up": {
     "definition": "To fail to appear for a scheduled meeting or date, particularly without warning the other person.",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «ستاند-وب»"
   },
   "town-hall": {
     "definition": "A public building houses a town’s local government offices and provides rooms for council meetings.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «توون هالل»"
   },
   "workshop": {
     "definition": "Small workplace where handcrafts or manufacturing are done.",
@@ -69,23 +70,23 @@
   },
   "webinar": {
     "definition": "A live seminar held online allows participants to learn and interact in real time.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «ويبينار»"
   },
   "kick-off": {
     "definition": "A planned meeting or ceremony that officially marks the beginning of an event, project, process, or active period.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عملية يُسمّى «كيك-وفف»"
   },
   "retrospective": {
     "definition": "Concerned with or related to the past.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريتروسبيكتيفي»"
   },
   "slide-deck": {
     "definition": "A physical set of photographic slides or transparencies designed for display through a slide projector, especially in traditional classrooms.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «سليدي ديك»"
   },
   "handout": {
     "definition": "An announcement distributed to members of the press in order to supplement or replace an oral presentation.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مكان يُسمّى «هاندووت»"
   },
   "report": {
     "definition": "The act of informing by verbal report.",
@@ -95,22 +96,25 @@
     "definition": "To represent by means of a graph.",
     "arabicTranslation": "خريطة ملاحية"
   },
-  "graph": { "definition": "To represent by means of a graph.", "arabicTranslation": "رسم بياني" },
+  "graph": {
+    "definition": "To represent by means of a graph.",
+    "arabicTranslation": "رسم بياني"
+  },
   "diagram": {
     "definition": "A drawing intended to explain how something works.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «دياجرام»"
   },
   "flowchart": {
     "definition": "A diagram of the sequence of operations in a computer program or an accounting system.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نظام يُسمّى «فلووتشارت»"
   },
   "timeline": {
     "definition": "A display showing the order and length of clips in an edit.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تيميليني»"
   },
   "spreadsheet": {
     "definition": "A file that organises information in rows and columns for calculations and records.",
-    "arabicTranslation": ""
+    "arabicTranslation": "عضو يُسمّى «سبريادشييت»"
   },
   "dashboard": {
     "definition": "Protective covering consisting of a panel to protect people from the splashing water or mud etc.",
@@ -126,11 +130,20 @@
   },
   "vote": {
     "definition": "A choice that is made by counting the number of people in favor of each alternative.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فوتي»"
   },
-  "approve": { "arabicTranslation": "" },
-  "reject": { "definition": "To not accept something given or offered.", "arabicTranslation": "" },
-  "table": { "arabicTranslation": "طاولة" },
+  "approve": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اببروفي»",
+    "definition": "To officially accept or agree to a plan or request."
+  },
+  "reject": {
+    "definition": "To not accept something given or offered.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريجيكت»"
+  },
+  "table": {
+    "arabicTranslation": "طاولة",
+    "definition": "A large flat piece of furniture around which people meet."
+  },
   "follow-up": {
     "definition": "A later action, message, or meeting used to continue or complete something discussed earlier.",
     "exampleUsage": "The team scheduled a follow-up after the meeting.",
@@ -138,26 +151,42 @@
   },
   "assign": {
     "definition": "To give an assignment to (a person) to a post, or assign a task to (a person).",
-    "arabicTranslation": ""
+    "arabicTranslation": "شخص يُسمّى «اسسيجن»"
   },
   "minute": {
     "definition": "Characterized by painstaking care and detailed examination.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مينوتي»"
   },
-  "adjourn": { "definition": "To break from a meeting or gathering.", "arabicTranslation": "" },
-  "zoom": { "arabicTranslation": "" },
-  "teams": { "arabicTranslation": "" },
+  "adjourn": {
+    "definition": "To break from a meeting or gathering.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ادجوورن»"
+  },
+  "zoom": {
+    "arabicTranslation": "غرفة يُسمّى «زووم»",
+    "definition": "A video meeting service used for remote calls."
+  },
+  "teams": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تيامس»",
+    "definition": "A Microsoft service for online meetings and team messages."
+  },
   "screen-share": {
     "definition": "To transmit the contents of one device's screen so other participants can view it.",
     "exampleUsage": "The presenter used screen share to show the document.",
     "arabicTranslation": "مشاركة الشاشة"
   },
-  "mute": { "arabicTranslation": "" },
+  "mute": {
+    "arabicTranslation": "غرفة يُسمّى «موتي»",
+    "definition": "To turn off or reduce sound from a microphone or instrument."
+  },
   "unmute": {
     "definition": "Restoring a device's sound output by turning off its mute setting.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «ونموتي»",
+    "exampleUsage": "The unmute was used during the activity."
   },
-  "chat": { "definition": "To talk informally with another person.", "arabicTranslation": "" },
+  "chat": {
+    "definition": "To talk informally with another person.",
+    "arabicTranslation": "شخص يُسمّى «تشات»"
+  },
   "breakout-room": {
     "definition": "A smaller physical or virtual meeting space used by a subset of participants for separate discussion.",
     "exampleUsage": "The workshop divided participants into a breakout room.",
@@ -170,7 +199,7 @@
   },
   "recording": {
     "definition": "A stored copy of video or sound that can be played again later.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريكوردينج»"
   },
   "virtual-background": {
     "definition": "A digital image or effect displayed behind a person during a video call instead of the real surroundings.",

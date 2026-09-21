@@ -6,7 +6,8 @@
   },
   "voice-command": {
     "definition": "A spoken request that directs a device or program to carry out an action.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جهاز يُسمّى «فويكي كومماند»",
+    "exampleUsage": "The voice command was used during the activity."
   },
   "wake-word": {
     "definition": "A word or short phrase that activates a voice-controlled device so it starts listening for a command.",
@@ -23,7 +24,8 @@
   },
   "timer": {
     "definition": "A device that measures or signals the end of baking time.",
-    "arabicTranslation": "مؤقت"
+    "arabicTranslation": "مؤقت",
+    "exampleUsage": "The timer was used during the activity."
   },
   "playlist": {
     "definition": "A list of musical selections for performance or for broadcast by radio.",
@@ -67,8 +69,14 @@
     "exampleUsage": "The motion sensor turns the hallway light on at night.",
     "arabicTranslation": "مستشعر حركة"
   },
-  "schedule": { "arabicTranslation": "جدول" },
-  "scene": { "definition": "The place where some action occurs.", "arabicTranslation": "مشهد" },
+  "schedule": {
+    "arabicTranslation": "جدول",
+    "definition": "A plan showing when events or activities will happen."
+  },
+  "scene": {
+    "definition": "The place where some action occurs.",
+    "arabicTranslation": "مشهد"
+  },
   "brightness": {
     "definition": "The location of a visual perception along a continuum from black to white.",
     "arabicTranslation": "سطوع"
@@ -104,11 +112,13 @@
   },
   "alarm-system": {
     "definition": "A device or network of devices that identifies dangers such as break-ins, fires, or equipment problems and then issues a sound, light, or remote alert.",
-    "arabicTranslation": "نظام إنذار"
+    "arabicTranslation": "نظام إنذار",
+    "exampleUsage": "The alarm system was used during the activity."
   },
   "keypad": {
     "definition": "A keyboard that is a data input device for computers.",
-    "arabicTranslation": "لوحة أرقام"
+    "arabicTranslation": "لوحة أرقام",
+    "exampleUsage": "The keypad was used during the activity."
   },
   "fingerprint": {
     "definition": "A print made by an impression of the ridges in the skin of a finger.",
@@ -121,26 +131,32 @@
   },
   "cloud-storage": {
     "definition": "Online space used to save and access your files from different devices.",
-    "arabicTranslation": "تخزين سحابة"
+    "arabicTranslation": "تخزين سحابة",
+    "exampleUsage": "The cloud storage was used during the activity."
   },
   "night-vision": {
     "definition": "The capacity to see clearly when light levels are low, such as at night.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نيغت فيسيون»"
   },
   "smart-thermostat": {
     "definition": "An internet-linked control device adjusts a building's heating, cooling, and airflow according to settings, household routines, and conditions such as outdoor temperature.",
-    "arabicTranslation": "منظّم حرارة ذكي"
+    "arabicTranslation": "منظّم حرارة ذكي",
+    "exampleUsage": "The smart thermostat was used during the activity."
   },
   "temperature-sensor": {
     "definition": "A device that senses temperature, measures its value, and sends the result as a signal for display or automatic control.",
-    "arabicTranslation": "مستشعر درجة الحرارة"
+    "arabicTranslation": "مستشعر درجة الحرارة",
+    "exampleUsage": "The temperature sensor was used during the activity."
   },
   "humidity-sensor": {
     "definition": "A device that measures the amount of water vapor in the air.",
     "exampleUsage": "The humidity sensor showed that the bathroom air was very humid.",
     "arabicTranslation": "مستشعر رطوبة"
   },
-  "zone": { "definition": "To separate or apportion into sections.", "arabicTranslation": "منطقة" },
+  "zone": {
+    "definition": "To separate or apportion into sections.",
+    "arabicTranslation": "منطقة"
+  },
   "eco-mode": {
     "definition": "A setting designed to reduce energy or resource use while a device operates.",
     "exampleUsage": "The thermostat switches to eco mode when the house is empty.",
@@ -162,7 +178,8 @@
   },
   "fan": {
     "definition": "A device for creating a current of air by movement of a surface or surfaces.",
-    "arabicTranslation": "مروحة"
+    "arabicTranslation": "مروحة",
+    "exampleUsage": "The fan was used during the activity."
   },
   "streaming-device": {
     "definition": "A device that receives media over the internet and plays it on a television or other screen.",
@@ -181,7 +198,8 @@
   },
   "projector": {
     "definition": "A device that displays images on a wall or screen.",
-    "arabicTranslation": "جهاز عرض"
+    "arabicTranslation": "جهاز عرض",
+    "exampleUsage": "The projector was used during the activity."
   },
   "gaming-console": {
     "definition": "An electronic system designed mainly for playing video games on a screen.",
@@ -195,11 +213,13 @@
   },
   "hdmi": {
     "definition": "Describes devices, cables, and connectors that follow the HDMI standard for sending digital video and audio.",
-    "arabicTranslation": "منفذ HDMI"
+    "arabicTranslation": "منفذ HDMI",
+    "exampleUsage": "The hdmi was used during the activity."
   },
   "bluetooth": {
     "definition": "A hardware component uses Bluetooth to let nearby devices exchange information through radio signals.",
-    "arabicTranslation": "بلوتوث"
+    "arabicTranslation": "بلوتوث",
+    "exampleUsage": "The bluetooth was used during the activity."
   },
   "wi-fi": {
     "definition": "A technology that lets devices connect wirelessly to a local network and the internet.",

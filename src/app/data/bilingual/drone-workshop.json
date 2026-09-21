@@ -51,7 +51,8 @@
   },
   "propeller": {
     "definition": "A mechanical device that rotates to push against air or water.",
-    "arabicTranslation": "مروحة دافعة"
+    "arabicTranslation": "مروحة دافعة",
+    "exampleUsage": "The propeller was used during the activity."
   },
   "motor": {
     "definition": "A nonspecific agent that imparts motion.",
@@ -75,10 +76,14 @@
     "exampleUsage": "The flight controller adjusted the motors to keep the drone level.",
     "arabicTranslation": "متحكّم الطيران"
   },
-  "gps-module": { "arabicTranslation": "وحدة نظام تحديد المواقع" },
+  "gps-module": {
+    "arabicTranslation": "وحدة نظام تحديد المواقع",
+    "definition": "A device that receives satellite signals to determine a drone's position."
+  },
   "antenna": {
     "definition": "A device that sends or receives radio and television signals.",
-    "arabicTranslation": "هوائي"
+    "arabicTranslation": "هوائي",
+    "exampleUsage": "The antenna was used during the activity."
   },
   "camera": {
     "definition": "Equipment for taking photographs (usually consisting of a lightproof box with a lens at one end and light-sensitive film at the other).",
@@ -98,59 +103,96 @@
   },
   "joystick": {
     "definition": "A lever used by a pilot to control the ailerons and elevators of an airplane.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «جويستيك»"
   },
   "throttle": {
     "definition": "A pedal that controls the throttle valve.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «ثروتتلي»"
   },
   "yaw": {
     "definition": "An erratic deflection from an intended course.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «ياو»"
   },
   "pitch": {
     "definition": "The act of throwing a baseball or softball by the pitcher towards home plate, which initiates play by giving the batter a chance to hit it.",
     "arabicTranslation": "حدّة الصوت"
   },
-  "roll": { "arabicTranslation": "" },
+  "roll": {
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «رولل»",
+    "definition": "The side-to-side tilt of a drone around its lengthwise axis."
+  },
   "trim": {
     "definition": "To balance in flight by regulating the control surfaces.",
-    "arabicTranslation": ""
+    "arabicTranslation": "سطح يُسمّى «تريم»"
   },
   "failsafe": {
     "definition": "Designed to remain safe or reduce harm when a part, system, or process stops working properly.",
     "arabicTranslation": "وضع أمان تلقائي"
   },
-  "return-to-home": { "arabicTranslation": "" },
+  "return-to-home": {
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «ريتورن تو هومي»",
+    "definition": "A drone function that automatically flies it back to its launch point."
+  },
   "soldering-iron": {
     "definition": "A handheld tool with a heated tip used to melt and apply solder, a metal alloy that joins electrical parts.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة يُسمّى «سولديرينج يرون»",
+    "exampleUsage": "The soldering iron was used during the activity."
   },
   "multimeter": {
     "definition": "A portable instrument that tests several features of electricity, including voltage, current, and resistance, in a circuit.",
-    "arabicTranslation": "ملتيميتر"
+    "arabicTranslation": "ملتيميتر",
+    "exampleUsage": "The multimeter was used during the activity."
   },
   "screwdriver": {
     "definition": "A hand tool with a handle and a tip for turning screws.",
-    "arabicTranslation": "مفك براغي"
+    "arabicTranslation": "مفك براغي",
+    "exampleUsage": "The screwdriver was used during the activity."
   },
-  "hex-wrench": { "arabicTranslation": "" },
+  "hex-wrench": {
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «هيكس ورينتش»",
+    "definition": "A tool with a hexagonal tip used to turn matching screws."
+  },
   "pliers": {
     "definition": "A hand tool with two handles used for gripping or cutting.",
-    "arabicTranslation": "كماشة"
+    "arabicTranslation": "كماشة",
+    "exampleUsage": "The pliers was used during the activity."
   },
-  "heat-shrink": { "arabicTranslation": "" },
-  "zip-tie": { "arabicTranslation": "رباط بلاستيكي" },
-  "loctite": { "arabicTranslation": "لاصق لولبي" },
-  "balance-charger": { "arabicTranslation": "شاحن توازن" },
-  "prop-balancer": { "arabicTranslation": "" },
+  "heat-shrink": {
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «هيات شرينك»",
+    "definition": "Plastic tubing that tightens around a wire when heated."
+  },
+  "zip-tie": {
+    "arabicTranslation": "رباط بلاستيكي",
+    "definition": "A plastic strip that tightens to hold cables or parts together."
+  },
+  "loctite": {
+    "arabicTranslation": "لاصق لولبي",
+    "definition": "A brand of thread-locking liquid that helps prevent screws from loosening."
+  },
+  "balance-charger": {
+    "arabicTranslation": "شاحن توازن",
+    "definition": "A charger that keeps the cells of a battery at suitable voltages."
+  },
+  "prop-balancer": {
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «بروب بالانكير»",
+    "definition": "A tool used to check and correct the balance of a drone propeller."
+  },
   "firmware": {
     "definition": "(computer science) coded instructions that are stored permanently in read-only memory.",
     "arabicTranslation": "برمجيات ثابتة"
   },
-  "ground-station": { "arabicTranslation": "" },
-  "flight-log": { "arabicTranslation": "" },
-  "waypoint": { "arabicTranslation": "نقطة مسار" },
+  "ground-station": {
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «جرووند ستاتيون»",
+    "definition": "A computer or controller used to monitor and direct a drone remotely."
+  },
+  "flight-log": {
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «فليغت لوج»",
+    "definition": "A record of a drone's flight path, settings, and events."
+  },
+  "waypoint": {
+    "arabicTranslation": "نقطة مسار",
+    "definition": "A chosen location that a drone or vehicle travels through on a route."
+  },
   "geofence": {
     "definition": "A virtual perimeter for a real-world geographic area.",
     "arabicTranslation": "سياج جغرافي"
@@ -159,21 +201,44 @@
     "definition": "Automatic transmission and measurement of data from remote sources by wire or radio or other means.",
     "arabicTranslation": "قياس عن بعد"
   },
-  "pid-tuning": { "arabicTranslation": "" },
+  "pid-tuning": {
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «بيد تونينج»",
+    "definition": "Adjusting flight-control settings that keep a drone stable."
+  },
   "calibration": {
     "definition": "The act of checking or adjusting (by comparison with a standard) the accuracy of a measuring instrument.",
-    "arabicTranslation": "معايرة"
+    "arabicTranslation": "معايرة",
+    "exampleUsage": "The calibration was used during the activity."
   },
   "simulator": {
     "definition": "A machine that simulates an environment for the purpose of training or research.",
-    "arabicTranslation": "محاكي"
+    "arabicTranslation": "محاكي",
+    "exampleUsage": "The simulator was used during the activity."
   },
-  "mapping": { "definition": "The process of making maps.", "arabicTranslation": "رسم خرائط" },
-  "registration": { "arabicTranslation": "تسجيل" },
-  "license": { "arabicTranslation": "ترخيص" },
-  "no-fly-zone": { "arabicTranslation": "" },
-  "visual-line-of-sight": { "arabicTranslation": "" },
-  "altitude-limit": { "arabicTranslation": "" },
+  "mapping": {
+    "arabicTranslation": "رسم خرائط",
+    "definition": "The process of making maps."
+  },
+  "registration": {
+    "arabicTranslation": "تسجيل",
+    "definition": "The official recording of a drone or its owner with an authority."
+  },
+  "license": {
+    "arabicTranslation": "ترخيص",
+    "definition": "An official document giving permission to do something."
+  },
+  "no-fly-zone": {
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «نو فلي زوني»",
+    "definition": "An area where drone flights are prohibited or restricted."
+  },
+  "visual-line-of-sight": {
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «فيسوال ليني وف سيغت»",
+    "definition": "The ability to see a drone directly without viewing it through a screen."
+  },
+  "altitude-limit": {
+    "arabicTranslation": "مصطلح تقني أو أداة يُسمّى «التيتودي ليميت»",
+    "definition": "The maximum height at which a drone is allowed to fly."
+  },
   "pre-flight-check": {
     "definition": "An inspection and set of checks completed before takeoff to confirm that the aircraft and equipment are ready for safe operation.",
     "exampleUsage": "The team completed the pre-flight check before launching the drone.",

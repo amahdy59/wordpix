@@ -1,20 +1,23 @@
 {
   "millimeter": {
     "definition": "A metric unit of length equal to one thousandth of a meter.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ميلليميتير»"
   },
   "centimeter": {
     "definition": "A metric unit of length equal to one hundredth of a meter.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كينتيميتير»"
   },
-  "meter": { "arabicTranslation": "عداد" },
+  "meter": {
+    "arabicTranslation": "عداد",
+    "definition": "A metric unit of length equal to one hundred centimeters."
+  },
   "kilometer": {
     "definition": "A metric unit of length equal to 1000 meters (or 0.621371 miles).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كيلوميتير»"
   },
   "inch": {
     "definition": "A unit of length equal to one twelfth of a foot.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ينتش»"
   },
   "foot": {
     "definition": "The part of the leg of a human being below the ankle joint.",
@@ -22,34 +25,44 @@
   },
   "yard": {
     "definition": "The enclosed land around a house or other building.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مبنى يُسمّى «يارد»"
   },
-  "mile": { "definition": "A unit of length used in navigation.", "arabicTranslation": "" },
+  "mile": {
+    "definition": "A unit of length used in navigation.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ميلي»"
+  },
   "ruler": {
     "definition": "A straight tool used for measuring and drawing lines.",
-    "arabicTranslation": "مسطرة"
+    "arabicTranslation": "مسطرة",
+    "exampleUsage": "The ruler was used during the activity."
   },
   "tape-measure": {
     "definition": "A flexible strip used for measuring length.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تابي مياسوري»"
   },
   "gram": {
     "definition": "A metric unit of weight equal to one thousandth of a kilogram.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جرام»"
   },
-  "kilogram": { "arabicTranslation": "" },
-  "milligram": { "definition": "One thousandth (1/1,000) gram.", "arabicTranslation": "" },
+  "kilogram": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كيلوجرام»",
+    "definition": "A metric unit of mass equal to one thousand grams."
+  },
+  "milligram": {
+    "definition": "One thousandth (1/1,000) gram.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ميلليجرام»"
+  },
   "ton": {
     "definition": "A United States unit of weight equivalent to 2000 pounds.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تون»"
   },
   "ounce": {
     "definition": "A unit of apothecary weight equal to 480 grains or one twelfth of a troy pound.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وونكي»"
   },
   "pound": {
     "definition": "A nontechnical unit of force equal to the mass of 1 pound with an acceleration of free fall equal to 32 feet/sec/sec.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بووند»"
   },
   "stone": {
     "definition": "An avoirdupois unit used to measure the weight of a human body.",
@@ -57,7 +70,8 @@
   },
   "scale": {
     "definition": "A device that measures how heavy a person or object is.",
-    "arabicTranslation": "مقياس رسم"
+    "arabicTranslation": "مقياس رسم",
+    "exampleUsage": "The scale was used during the activity."
   },
   "balance": {
     "definition": "Harmonious arrangement or relation of parts or elements within a whole (as in a design).",
@@ -65,27 +79,27 @@
   },
   "heavy": {
     "definition": "Unusually great in degree or quantity or number.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هيافي»"
   },
   "milliliter": {
     "definition": "A metric unit of volume equal to one thousandth of a liter.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ميلليليتير»"
   },
   "liter": {
     "definition": "A metric unit of capacity, formerly defined as the volume of one kilogram of pure water under standard conditions.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ليتير»"
   },
   "gallon": {
     "definition": "A British imperial capacity measure (liquid or dry) equal to 4 quarts or 4.545 liters.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جاللون»"
   },
   "quart": {
     "definition": "A United States liquid unit equal to 32 fluid ounces.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كارت»"
   },
   "pint": {
     "definition": "A United States liquid unit equal to 16 fluid ounces.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بينت»"
   },
   "tablespoon": {
     "definition": "As much as a tablespoon will hold.",
@@ -97,31 +111,31 @@
   },
   "fluid-ounce": {
     "definition": "A British imperial measure of volume can be used for liquids or dry materials. It equals eight fluid drams, or 28.416 cubic centimetres, which is 1.734 cubic inches.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مادة يُسمّى «فلويد وونكي»"
   },
   "barrel": {
     "definition": "The quantity that a barrel (of any size) will hold.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بارريل»"
   },
   "celsius": {
     "definition": "Swedish astronomer who devised the centigrade thermometer (1701-1744).",
-    "arabicTranslation": ""
+    "arabicTranslation": "طبق يُسمّى «كيلسيوس»"
   },
   "fahrenheit": {
     "definition": "Of or relating to a temperature scale proposed by the inventor of the mercury thermometer.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فاهرينهييت»"
   },
   "kelvin": {
     "definition": "British physicist who invented the Kelvin scale of temperature and pioneered undersea telegraphy (1824-1907).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كيلفين»"
   },
   "degree": {
     "definition": "A unit of temperature on a specified scale.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديجريي»"
   },
   "boiling-point": {
     "definition": "The temperature at which a liquid changes into gas under a stated pressure, commonly the pressure of air at sea level.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بويلينج بوينت»"
   },
   "freezing-point": {
     "definition": "The temperature at which a liquid becomes a solid under specified conditions.",
@@ -138,32 +152,52 @@
   },
   "thermometer": {
     "definition": "Measuring instrument for measuring temperature.",
-    "arabicTranslation": "مقياس حرارة"
+    "arabicTranslation": "مقياس حرارة",
+    "exampleUsage": "The thermometer was used during the activity."
   },
   "heat": {
     "definition": "A form of energy that is transferred by a difference in temperature.",
     "arabicTranslation": "حرارة"
   },
-  "millisecond": { "definition": "One thousandth (10^-3) of a second.", "arabicTranslation": "" },
+  "millisecond": {
+    "definition": "One thousandth (10^-3) of a second.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ميلليسيكوند»"
+  },
   "second": {
     "definition": "A part or voice or instrument or orchestra section lower in pitch than or subordinate to the first.",
-    "arabicTranslation": "الثاني"
+    "arabicTranslation": "الثاني",
+    "exampleUsage": "The second was used during the activity."
   },
   "minute": {
     "definition": "A unit of time equal to 60 seconds or 1/60th of an hour.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «مينوتي»"
   },
-  "hour": { "definition": "A period of time equal to 1/24th of a day.", "arabicTranslation": "" },
-  "day": { "definition": "A point or period in time.", "arabicTranslation": "يوم" },
+  "hour": {
+    "definition": "A period of time equal to 1/24th of a day.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «هوور»"
+  },
+  "day": {
+    "arabicTranslation": "يوم",
+    "definition": "A point or period in time."
+  },
   "speed": {
     "definition": "A rate (usually rapid) at which something happens.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سبييد»"
   },
-  "velocity": { "definition": "Distance travelled per unit time.", "arabicTranslation": "" },
-  "acceleration": { "definition": "An increase in rate of change.", "arabicTranslation": "" },
-  "distance": { "arabicTranslation": "" },
+  "velocity": {
+    "definition": "Distance travelled per unit time.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فيلوكيتي»"
+  },
+  "acceleration": {
+    "definition": "An increase in rate of change.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «اككيليراتيون»"
+  },
+  "distance": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديستانكي»",
+    "definition": "The amount of space between two places or objects."
+  },
   "rate": {
     "definition": "A magnitude or frequency relative to a time unit.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «راتي»"
   }
 }

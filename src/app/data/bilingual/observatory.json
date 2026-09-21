@@ -1,19 +1,20 @@
 {
   "optical-telescope": {
     "definition": "A telescope built for astronomy gathers and records visible light from stars, planets, galaxies, and other distant objects in space.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «وبتيكال تيليسكوبي»"
   },
   "reflecting-telescope": {
     "definition": "An optical telescope that uses a large concave mirror to form an image, which its eyepiece enlarges.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريفليكتينج تيليسكوبي»"
   },
   "refracting-telescope": {
     "definition": "An optical telescope creates an image by bending incoming light through lenses and bringing it to a focus.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ريفراكتينج تيليسكوبي»"
   },
   "radio-telescope": {
     "definition": "An astronomical instrument detects radio waves emitted by stars, galaxies, and other objects beyond Earth.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «راديو تيليسكوبي»",
+    "exampleUsage": "The radio telescope was used during the activity."
   },
   "telescope-mount": {
     "definition": "A mechanical support that holds a telescope and allows it to point accurately at different parts of the sky.",
@@ -22,7 +23,8 @@
   },
   "eyepiece": {
     "definition": "Combination of lenses at the viewing end of optical instruments.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «يييبييكي»",
+    "exampleUsage": "The eyepiece was used during the activity."
   },
   "finder-scope": {
     "definition": "A small auxiliary telescope with a wide field of view used to help aim a larger telescope.",
@@ -31,47 +33,57 @@
   },
   "lens": {
     "definition": "A transparent optical device used to converge or diverge transmitted light and to form images.",
-    "arabicTranslation": "عدسة"
+    "arabicTranslation": "عدسة",
+    "exampleUsage": "The lens was used during the activity."
   },
   "tripod": {
     "definition": "A three-legged stand that keeps a camera steady.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تريبود»"
   },
   "star": {
     "definition": "Any celestial body visible (as a point of light) from the Earth at night.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ستار»"
   },
   "planet": {
     "definition": "(astronomy) any of the nine large celestial bodies in the solar system that revolve around the sun and shine by reflected light.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نظام يُسمّى «بلانيت»"
   },
-  "moon": { "definition": "The natural satellite of the Earth.", "arabicTranslation": "قمر" },
+  "moon": {
+    "definition": "The natural satellite of the Earth.",
+    "arabicTranslation": "قمر"
+  },
   "sun": {
     "definition": "The star that is the source of light and heat for the planets in the solar system.",
     "arabicTranslation": "شمس"
   },
   "comet": {
     "definition": "(astronomy) a relatively small extraterrestrial body consisting of a frozen mass that travels around the sun in a highly elliptical orbit.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كوميت»"
   },
   "asteroid": {
     "definition": "Any of numerous small celestial bodies composed of rock and metal that move around the sun (mainly between the orbits of Mars and Jupiter).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «استيرويد»"
   },
   "nebula": {
     "definition": "A medicinal liquid preparation intended for use in an atomizer.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «نيبولا»"
   },
-  "galaxy": { "definition": "(astronomy) a collection of star systems.", "arabicTranslation": "" },
+  "galaxy": {
+    "definition": "(astronomy) a collection of star systems.",
+    "arabicTranslation": "نظام يُسمّى «جالاكسي»"
+  },
   "constellation": {
     "definition": "A configuration of stars as seen from the earth.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «كونستيللاتيون»"
   },
   "meteor": {
     "definition": "A streak of light in the sky at night that results when a meteoroid hits the earth's atmosphere and air friction causes the meteoroid to melt or vaporize or explode.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ميتيور»"
   },
-  "dome": { "definition": "A stadium that has a roof.", "arabicTranslation": "قُبّة" },
+  "dome": {
+    "arabicTranslation": "قُبّة",
+    "definition": "A stadium that has a roof."
+  },
   "rotating-roof": {
     "definition": "A roof or dome structure that can turn so an opening can align with a telescope's viewing direction.",
     "exampleUsage": "The observatory's rotating roof turned toward the target.",
@@ -92,7 +104,7 @@
   },
   "lecture-hall": {
     "definition": "A large room at a school or college built for teaching many students at once.",
-    "arabicTranslation": ""
+    "arabicTranslation": "غرفة يُسمّى «ليكتوري هالل»"
   },
   "gift-shop": {
     "definition": "A retail shop offering a varied selection of items suitable for giving as presents.",
@@ -100,13 +112,16 @@
   },
   "parking-area": {
     "definition": "An area set aside for leaving cars when their drivers are elsewhere.",
-    "arabicTranslation": ""
+    "arabicTranslation": "منطقة يُسمّى «باركينج اريا»"
   },
   "pathway": {
     "definition": "A bundle of myelinated nerve fibers following a path through the brain.",
     "arabicTranslation": "ممر"
   },
-  "spectrograph": { "definition": "A photographic record of a spectrum.", "arabicTranslation": "" },
+  "spectrograph": {
+    "definition": "A photographic record of a spectrum.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سبيكتروجراف»"
+  },
   "ccd-camera": {
     "definition": "A digital camera using a charge-coupled device sensor, commonly used for scientific imaging and astronomy.",
     "exampleUsage": "The CCD camera recorded a long-exposure image of the galaxy.",
@@ -114,7 +129,7 @@
   },
   "star-chart": {
     "definition": "A diagram maps the positions of stars within a selected region of the sky.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ستار تشارت»"
   },
   "planetarium-projector": {
     "definition": "A projector designed to display stars, planets, or other astronomical images on a planetarium dome.",
@@ -123,7 +138,8 @@
   },
   "computer-monitor": {
     "definition": "A screen device that presents visual information sent from a computer.",
-    "arabicTranslation": "شاشة مراقبة حاسوب"
+    "arabicTranslation": "شاشة مراقبة حاسوب",
+    "exampleUsage": "The computer monitor was used during the activity."
   },
   "data-server": {
     "definition": "A computer system that stores, manages, or provides data to other computers over a network.",
@@ -146,43 +162,55 @@
   },
   "mercury": {
     "definition": "The smallest planet and the nearest to the sun.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ميركوري»"
   },
-  "venus": { "definition": "The second nearest planet to the sun.", "arabicTranslation": "" },
-  "earth": { "definition": "The 3rd planet from the sun.", "arabicTranslation": "" },
+  "venus": {
+    "definition": "The second nearest planet to the sun.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «فينوس»"
+  },
+  "earth": {
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يارث»",
+    "definition": "The 3rd planet from the sun."
+  },
   "mars": {
     "definition": "A small reddish planet that is the 4th from the sun and is periodically visible to the naked eye.",
-    "arabicTranslation": ""
+    "arabicTranslation": "طبق يُسمّى «مارس»"
   },
   "jupiter": {
     "definition": "The largest planet and the 5th from the sun.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جوبيتير»"
   },
   "saturn": {
     "definition": "A giant planet that is surrounded by three planar concentric rings of ice particles.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «ساتورن»"
   },
   "uranus": {
     "definition": "A giant planet with a ring of ice particles.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «ورانوس»"
   },
   "neptune": {
     "definition": "A giant planet with a ring of ice particles.",
-    "arabicTranslation": ""
+    "arabicTranslation": "جزء يُسمّى «نيبتوني»"
   },
   "pluto": {
     "definition": "A large asteroid that was once thought to be the farthest known planet from the sun.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «بلوتو»"
   },
   "asteroid-belt": {
     "definition": "A zone of the Solar System between Mars and Jupiter contains most of the asteroids identified so far.",
-    "arabicTranslation": ""
+    "arabicTranslation": "نظام يُسمّى «استيرويد بيلت»"
   },
-  "star-gazing": { "definition": "Looking at stars in the night sky.", "arabicTranslation": "" },
-  "photography": { "definition": "Taking pictures with a camera.", "arabicTranslation": "تصوير" },
+  "star-gazing": {
+    "definition": "Looking at stars in the night sky.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ستار جازينج»"
+  },
+  "photography": {
+    "definition": "Taking pictures with a camera.",
+    "arabicTranslation": "تصوير"
+  },
   "data-analysis": {
     "definition": "Careful examination of information reveals patterns, helps answer questions, and guides the conclusions people draw.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «داتا اناليسيس»"
   },
   "public-viewing": {
     "definition": "An organized session in which members of the public observe the sky through observatory equipment.",
@@ -198,7 +226,10 @@
     "definition": "A speech that is open to the public.",
     "arabicTranslation": "محاضرة"
   },
-  "research": { "arabicTranslation": "بحث" },
+  "research": {
+    "arabicTranslation": "بحث",
+    "definition": "Careful study done to find facts or answer a question."
+  },
   "sky-mapping": {
     "definition": "The process of recording or displaying the positions of stars, galaxies, and other objects in the sky.",
     "exampleUsage": "Students used software for a sky-mapping exercise.",
@@ -211,28 +242,34 @@
   },
   "meteor-shower": {
     "definition": "A recurring sky display occurs when Earth crosses a comet’s debris trail, causing numerous meteors to glow as they burn in the atmosphere.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ميتيور شووير»"
   },
-  "telescope": { "definition": "To crush together or collapse.", "arabicTranslation": "" },
+  "telescope": {
+    "definition": "To crush together or collapse.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «تيليسكوبي»"
+  },
   "camera": {
     "definition": "Equipment for taking photographs (usually consisting of a lightproof box with a lens at one end and light-sensitive film at the other).",
     "arabicTranslation": "كاميرا"
   },
   "photometer": {
     "definition": "Measuring instrument for measuring the luminous intensity of a source by comparing it (visually or photoelectrically) with a standard source.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «فوتوميتير»",
+    "exampleUsage": "The photometer was used during the activity."
   },
   "computer": {
     "definition": "A machine for performing calculations automatically.",
-    "arabicTranslation": "حاسوب"
+    "arabicTranslation": "حاسوب",
+    "exampleUsage": "The computer was used during the activity."
   },
   "antenna": {
     "definition": "A device that sends or receives radio and television signals.",
-    "arabicTranslation": "هوائي"
+    "arabicTranslation": "هوائي",
+    "exampleUsage": "The antenna was used during the activity."
   },
   "magnitude": {
     "definition": "The property of relative size or extent (whether large or small).",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ماجنيتودي»"
   },
   "orbit": {
     "definition": "An area in which something acts or operates or has power or control:.",
@@ -246,16 +283,23 @@
   "spectrum": {
     "definition": "An ordered array of the components of an emission or wave.",
     "exampleUsage": "The glossary uses the term \"Spectrum\" in an educational description.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «سبيكتروم»"
   },
-  "rotation": { "definition": "The act of rotating as if on an axis.", "arabicTranslation": "" },
+  "rotation": {
+    "definition": "The act of rotating as if on an axis.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «روتاتيون»"
+  },
   "eclipse": {
     "definition": "To cause an eclipse of (a celestial body) by intervention.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «يكليبسي»"
   },
   "transit": {
     "definition": "A surveying instrument for measuring horizontal and vertical angles, consisting of a small telescope mounted on a tripod.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أداة أو جهاز يُسمّى «ترانسيت»",
+    "exampleUsage": "The transit was used during the activity."
   },
-  "discovery": { "definition": "The act of discovering something.", "arabicTranslation": "" }
+  "discovery": {
+    "definition": "The act of discovering something.",
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «ديسكوفيري»"
+  }
 }

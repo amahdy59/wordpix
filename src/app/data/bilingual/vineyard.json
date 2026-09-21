@@ -1,7 +1,7 @@
 {
   "cabernet-sauvignon": {
     "definition": "A highly regarded style of red wine that originated in Bordeaux, France.",
-    "arabicTranslation": ""
+    "arabicTranslation": "أسلوب أو طراز يُسمّى «كابيرنيت ساوفيجنون»"
   },
   "merlot": {
     "definition": "Black wine grape originally from the region of Bordeaux.",
@@ -61,12 +61,18 @@
     "exampleUsage": "The viticulture class discussed how soil and climate contribute to terroir.",
     "arabicTranslation": "تيروار؛ خصائص البيئة الزراعية للمكان"
   },
-  "slope": { "definition": "An elevated geological formation.", "arabicTranslation": "منحدر" },
+  "slope": {
+    "definition": "An elevated geological formation.",
+    "arabicTranslation": "منحدر"
+  },
   "irrigation": {
     "definition": "Supplying dry land with water by means of ditches etc.",
     "arabicTranslation": "ريّ"
   },
-  "canopy": { "arabicTranslation": "مظلّة" },
+  "canopy": {
+    "arabicTranslation": "مظلّة",
+    "definition": "A rooflike covering that provides shade or shelter."
+  },
   "root-stock": {
     "definition": "The rooted lower part of a plant onto which another variety is grafted.",
     "exampleUsage": "The vine variety was grafted onto disease-resistant rootstock.",
@@ -104,7 +110,7 @@
   },
   "growing-season": {
     "definition": "It is the period of the year when a crop has the best conditions for growth.",
-    "arabicTranslation": ""
+    "arabicTranslation": "مصطلح مرتبط بالموضوع يُسمّى «جرووينج سياسون»"
   },
   "dormancy": {
     "definition": "A state of quiet (but possibly temporary) inaction.",
@@ -124,10 +130,13 @@
     "exampleUsage": "The harvest crew used hand-picking for selected grape bunches.",
     "arabicTranslation": "قطف يدوي"
   },
-  "vintner": { "arabicTranslation": "منتج نبيذ" },
+  "vintner": {
+    "arabicTranslation": "منتج نبيذ",
+    "definition": "A person who makes or sells wine."
+  },
   "viticulturist": {
-    "definition": "A cultivator of grape vine.",
-    "arabicTranslation": "أخصائي زراعة كروم"
+    "arabicTranslation": "أخصائي زراعة كروم",
+    "definition": "A cultivator of grape vine."
   },
   "cellar-master": {
     "definition": "A person responsible for managing a wine cellar and supervising storage or production operations.",
@@ -145,7 +154,8 @@
   },
   "winemaker": {
     "exampleUsage": "The glossary uses the term \"Winemaker\" in an educational description.",
-    "arabicTranslation": "صانع نبيذ"
+    "arabicTranslation": "صانع نبيذ",
+    "definition": "A person who produces wine from grapes."
   },
   "harvest-crew": {
     "definition": "A group of workers who collect ripe crops during harvest.",
@@ -153,8 +163,8 @@
     "arabicTranslation": "فريق الحصاد"
   },
   "enologist": {
-    "definition": "A specialist in wine making.",
-    "arabicTranslation": "أخصائي علم النبيذ"
+    "arabicTranslation": "أخصائي علم النبيذ",
+    "definition": "A specialist in wine making."
   },
   "cooper": {
     "definition": "United States industrialist who built the first American locomotive.",
