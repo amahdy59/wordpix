@@ -1,0 +1,314 @@
+{
+  "print-head": {
+    "definition": "The moving assembly that carries the nozzle and related parts used to place printing material.",
+    "exampleUsage": "The print head moves across the machine while each layer is formed.",
+    "arabicTranslation": "رأس الطباعة"
+  },
+  "build-plate": {
+    "definition": "The flat surface that supports an object while a 3D printer builds it layer by layer.",
+    "exampleUsage": "Clean the build plate before starting a new print.",
+    "arabicTranslation": "منصّة الطباعة"
+  },
+  "filament-spool": {
+    "definition": "A reel that holds printing filament and allows it to feed into a 3D printer.",
+    "exampleUsage": "Place the filament spool on its holder before loading the printer.",
+    "arabicTranslation": "بَكَرَة خيط الطباعة"
+  },
+  "extruder": {
+    "definition": "The printer assembly that grips, feeds, and directs filament toward the heated printing end.",
+    "exampleUsage": "The extruder feeds filament steadily during the print.",
+    "arabicTranslation": "وحدة بثق الخيط"
+  },
+  "nozzle": {
+    "definition": "A projecting spout from which a fluid is discharged.",
+    "arabicTranslation": "فُوّهة"
+  },
+  "stepper-motor": {
+    "definition": "An electric motor that turns in small controlled steps to position machine parts accurately.",
+    "exampleUsage": "A stepper motor moves the printer carriage to precise positions.",
+    "arabicTranslation": "مُحرّك خُطوي"
+  },
+  "belt": {
+    "definition": "Endless loop of flexible material between two rotating shafts or pulleys.",
+    "arabicTranslation": "حزام"
+  },
+  "guide-rail": {
+    "definition": "A straight rail that keeps a moving printer part traveling along a controlled path.",
+    "exampleUsage": "The carriage slides smoothly along the guide rail.",
+    "arabicTranslation": "سِكّة توجيه"
+  },
+  "cooling-fan": {
+    "definition": "A fan that moves air to cool printer parts or freshly deposited material during printing.",
+    "exampleUsage": "The cooling fan helps the new layer become firm quickly.",
+    "arabicTranslation": "مروحة تبريد"
+  },
+  "lcd-screen": {
+    "definition": "A liquid-crystal display that shows printer information, menus, and settings.",
+    "exampleUsage": "Use the LCD screen to choose the printing settings.",
+    "arabicTranslation": "شاشة بلّورية سائلة (LCD)"
+  },
+  "pla-filament": {
+    "definition": "A common thermoplastic printing material made mainly from polylactic acid and valued for easy printing.",
+    "exampleUsage": "The class used PLA filament for a simple prototype.",
+    "arabicTranslation": "خيط PLA من حمض متعدد اللاكتيك"
+  },
+  "abs-filament": {
+    "definition": "A tough thermoplastic printing material made from acrylonitrile, butadiene, and styrene.",
+    "exampleUsage": "The enclosure helps reduce warping when printing with ABS filament.",
+    "arabicTranslation": "خيط ABS من أكريلونيتريل بوتادين ستايرين"
+  },
+  "petg-filament": {
+    "definition": "A durable thermoplastic printing material that is easy to print and resists many chemicals.",
+    "exampleUsage": "PETG filament is useful for many practical printed parts.",
+    "arabicTranslation": "خيط PETG للطباعة"
+  },
+  "resin": {
+    "definition": "Any of a class of solid or semisolid viscous substances obtained either as exudations from certain plants or prepared by polymerization of simple molecules.",
+    "arabicTranslation": "راتنج"
+  },
+  "nylon": {
+    "definition": "A strong synthetic plastic material that can be used as flexible, durable 3D-printing filament.",
+    "exampleUsage": "Nylon can be used when a printed part needs strength and flexibility.",
+    "arabicTranslation": "نايلون"
+  },
+  "flexible-filament": {
+    "definition": "An elastic printing material that can bend or stretch after it has been printed.",
+    "exampleUsage": "Flexible filament is useful for making soft grips and protective parts.",
+    "arabicTranslation": "خيط طباعة مرن"
+  },
+  "wood-filament": {
+    "definition": "A composite printing material that mixes a plastic base with wood particles to create a wood-like finish.",
+    "exampleUsage": "The wood filament gave the model a natural-looking surface.",
+    "arabicTranslation": "خيط طباعة مركّب بجزيئات الخشب"
+  },
+  "metal-filament": {
+    "definition": "A composite printing material that mixes a plastic base with metal particles for a metallic appearance or added weight.",
+    "exampleUsage": "The metal filament made the decorative part look more like real metal.",
+    "arabicTranslation": "خيط طباعة مركّب بجزيئات معدنية"
+  },
+  "support-material": {
+    "definition": "Temporary printed material that holds overhangs or difficult shapes in place and is removed after printing.",
+    "exampleUsage": "The printer added support material beneath the model's overhang.",
+    "arabicTranslation": "مادة دعم للطباعة ثلاثية الأبعاد"
+  },
+  "glue-stick": {
+    "definition": "A solid adhesive in a twist-up tube used for clean, controlled gluing.",
+    "exampleUsage": "The student used a glue stick to attach the paper template.",
+    "arabicTranslation": "عصا غراء"
+  },
+  "computer": {
+    "definition": "A machine for performing calculations automatically.",
+    "arabicTranslation": "حاسوب"
+  },
+  "3d-software": {
+    "definition": "Computer software used to create, prepare, or manage three-dimensional models for printing.",
+    "exampleUsage": "The designer opened the model in 3D software before printing it.",
+    "arabicTranslation": "برنامج تصميم وطباعة ثلاثية الأبعاد"
+  },
+  "mouse": {
+    "definition": "A hand-operated electronic device that controls the coordinates of a cursor on your computer screen as you move it around on a pad.",
+    "arabicTranslation": "فأرة حاسوب"
+  },
+  "graphics-tablet": {
+    "definition": "A flat computer input device that lets a person draw or write with an electronic pen.",
+    "exampleUsage": "The designer sketched the new shape on a graphics tablet.",
+    "arabicTranslation": "لوح رسم رقمي"
+  },
+  "ruler": {
+    "definition": "A straight tool used for measuring and drawing lines.",
+    "arabicTranslation": "مسطرة"
+  },
+  "caliper": {
+    "definition": "An instrument for measuring the distance between two points.",
+    "arabicTranslation": "قَدَمة قياس"
+  },
+  "protractor": {
+    "definition": "Drafting instrument used to draw or measure angles.",
+    "arabicTranslation": "منقلة"
+  },
+  "grid-paper": {
+    "definition": "Paper printed with evenly spaced lines that form squares for drawing, measuring, or planning.",
+    "exampleUsage": "The student sketched the design on grid paper before modeling it.",
+    "arabicTranslation": "ورق شبكي"
+  },
+  "sketchbook": {
+    "definition": "A book of blank pages for drawing or writing.",
+    "arabicTranslation": "دفتر رسم"
+  },
+  "reference-model": {
+    "definition": "An accepted abstract model provides a standard way to describe, study, create, or compare systems and events within a field.",
+    "arabicTranslation": "نموذج مرجعي"
+  },
+  "sandpaper": {
+    "definition": "Stiff paper coated with powdered emery or sand.",
+    "arabicTranslation": "ورق صنفرة"
+  },
+  "file": {
+    "definition": "A named collection of digital information saved on a device.",
+    "arabicTranslation": "ملف"
+  },
+  "craft-knife": {
+    "definition": "A small sharp cutting tool used for precise craft and model-making work.",
+    "exampleUsage": "The glossary uses the term \"Craft Knife\" in an educational description.",
+    "arabicTranslation": "سكين حِرفي"
+  },
+  "pliers": {
+    "definition": "A hand tool with two handles used for gripping or cutting.",
+    "arabicTranslation": "كماشة"
+  },
+  "tweezers": {
+    "definition": "A small tool consisting of two pointed arms used for picking up small objects or plucking hairs.",
+    "arabicTranslation": "ملقط"
+  },
+  "paint": { "definition": "To cover a surface with paint.", "arabicTranslation": "طلاء" },
+  "paintbrush": {
+    "definition": "A tool with hairs used to spread paint.",
+    "arabicTranslation": "فرشاة طلاء"
+  },
+  "primer": {
+    "definition": "The first or preliminary coat of paint or size applied to a surface.",
+    "arabicTranslation": "طلاء تمهيدي"
+  },
+  "acetone": {
+    "definition": "A volatile solvent commonly used for cleaning and, with some plastics, smoothing printed surfaces.",
+    "exampleUsage": "Acetone is handled carefully in a well-ventilated work area.",
+    "arabicTranslation": "أسيتون"
+  },
+  "uv-curing-lamp": {
+    "definition": "A lamp that produces ultraviolet light to harden UV-sensitive resin.",
+    "exampleUsage": "The finished resin part was placed under a UV curing lamp.",
+    "arabicTranslation": "مصباح معالجة بالأشعة فوق البنفسجية"
+  },
+  "figurine": {
+    "definition": "A small carved or molded figure.",
+    "arabicTranslation": "تمثال صغير"
+  },
+  "phone-case": {
+    "definition": "A protective cover designed to fit around a mobile phone.",
+    "arabicTranslation": "غلاف هاتف"
+  },
+  "gear": {
+    "definition": "A mechanism for transmitting motion for some specific purpose (as the steering gear of a vehicle).",
+    "arabicTranslation": "ترس"
+  },
+  "bracket": {
+    "definition": "A support or mounting piece used to hold parts of a 3D printer or printed assembly in position.",
+    "arabicTranslation": "دعامة"
+  },
+  "keychain": {
+    "definition": "A small ring or chain keeps physical keys together for easier carrying. In technology, a keychain is a digital store that manages and protects authentication keys and other information used to control access.",
+    "arabicTranslation": "حلقة مفاتيح"
+  },
+  "cookie-cutter": {
+    "definition": "A shaped tool used to cut dough or soft material into a particular outline.",
+    "arabicTranslation": "قطّاعة بسكويت"
+  },
+  "whistle": {
+    "definition": "A small object blown to make a loud signal.",
+    "arabicTranslation": "صافرة"
+  },
+  "chess-piece": {
+    "definition": "Each movable object in chess has defined movement rules and serves a distinct strategic purpose.",
+    "arabicTranslation": "قطعة شطرنج"
+  },
+  "architectural-model": {
+    "definition": "A physical scale representation of a building or architectural design.",
+    "arabicTranslation": "نموذج معماري"
+  },
+  "workstation": {
+    "definition": "A desktop digital computer that is conventionally considered to be more powerful than a microcomputer.",
+    "arabicTranslation": "محطة عمل"
+  },
+  "storage-shelf": {
+    "definition": "A horizontal surface used for storing tools, materials, or finished parts.",
+    "arabicTranslation": "رف تخزين"
+  },
+  "ventilation-fan": {
+    "definition": "A fan that moves air into or out of a room or enclosure to improve ventilation.",
+    "arabicTranslation": "مروحة تهوية"
+  },
+  "fire-extinguisher": {
+    "definition": "A portable device that releases a substance used to put out a small fire.",
+    "exampleUsage": "A fire extinguisher is kept near the workshop exit for emergencies.",
+    "arabicTranslation": "طفاية حريق"
+  },
+  "safety-glasses": {
+    "definition": "Protective eyewear worn to shield the eyes from particles, splashes, or other hazards.",
+    "exampleUsage": "Students wear safety glasses while working with tools and materials.",
+    "arabicTranslation": "نظارات واقية"
+  },
+  "gloves": {
+    "definition": "The handwear used by fielders in playing baseball.",
+    "arabicTranslation": "قفازات"
+  },
+  "trash-bin": {
+    "definition": "A container used for collecting waste before it is removed.",
+    "exampleUsage": "Put scraps and other waste in the trash bin.",
+    "arabicTranslation": "سلة مهملات"
+  },
+  "label-maker": {
+    "definition": "A small device that prints adhesive labels for identifying items.",
+    "arabicTranslation": "صانع علامة"
+  },
+  "zip-bag": {
+    "definition": "A resealable plastic bag with a press-to-close or sliding zip seal.",
+    "arabicTranslation": "كيس سحّاب"
+  },
+  "desiccant-pack": {
+    "definition": "A small packet containing material that absorbs moisture from the surrounding air.",
+    "arabicTranslation": ""
+  },
+  "frame": {
+    "definition": "The supporting shape or structure of a building.",
+    "arabicTranslation": "إطار"
+  },
+  "fan": {
+    "definition": "A rotating device that moves air to cool or ventilate parts of the printer.",
+    "arabicTranslation": "مروحة"
+  },
+  "display": {
+    "definition": "A screen or panel that shows printer information, menus, and settings.",
+    "arabicTranslation": "شاشة عرض"
+  },
+  "pla": { "arabicTranslation": "بولي لاكتيك أسيد (PLA)" },
+  "abs": {
+    "definition": "Any of a class of composite plastics used to make car bodies and cases for computers and other appliances.",
+    "arabicTranslation": "بلاستيك ABS"
+  },
+  "petg": { "arabicTranslation": "بلاستيك PETG" },
+  "tpu": { "arabicTranslation": "بولي يوريثان حراري (TPU)" },
+  "carbon-fiber": {
+    "definition": "A lightweight material made from extremely thin carbon strands arranged in a highly ordered structure. It is usually added to plastics and other materials to make composite parts stronger and stiffer.",
+    "arabicTranslation": "ألياف كربون"
+  },
+  "wood-fill": { "arabicTranslation": "حشو خشب" },
+  "design": {
+    "definition": "The act of working out the form of something (as by making a sketch or outline or plan).",
+    "arabicTranslation": "تصميم"
+  },
+  "slice": {
+    "definition": "To convert a 3D model into printable layers and machine instructions.",
+    "arabicTranslation": "يقطّع شرائح"
+  },
+  "print": {
+    "definition": "To create a three-dimensional object by depositing or curing material layer by layer.",
+    "arabicTranslation": "طباعة"
+  },
+  "layer": { "arabicTranslation": "طبقة" },
+  "support": {
+    "definition": "Temporary printed structures that hold overhangs or difficult shapes during printing.",
+    "arabicTranslation": "دعم"
+  },
+  "infill": {
+    "definition": "Material placed in a hollow, gap, or depression helps restore a structure, object, or geological formation.",
+    "arabicTranslation": "حشو داخلي"
+  },
+  "calibrate": {
+    "definition": "To make fine adjustments or divide into marked intervals for optimal measuring.",
+    "arabicTranslation": "يُعاير"
+  },
+  "prototype": {
+    "definition": "An early model made to test the form, fit, or function of a design.",
+    "arabicTranslation": "نموذج أولي"
+  }
+}

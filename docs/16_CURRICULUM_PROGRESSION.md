@@ -34,6 +34,32 @@ The runtime model lives in `src/app/learning/curriculumModel.ts`. The foundation
 recommendation order lives in `src/app/data/curriculumSequence.ts`, separate
 from the thematic Explore catalogue.
 
+## Learner path visibility and authoring status
+
+The Learn screen exposes the complete general English unit route on request:
+the 18 authored foundation units first, followed by every remaining general
+English catalogue unit in module order. Specialist sections are visible at the
+end as optional study and do not change the next-unit recommendation.
+
+This is a complete _unit index_, not a claim that every unit has received the
+same curriculum review. Foundation units have authored outcomes and final
+tasks. Other units currently use archetype-based outcomes and broad catalogue
+grouping. Before treating those later stages as a validated progression,
+review each unit's CEFR fit, high-frequency active language, prerequisites,
+scenario task, age appropriateness, and transfer assessment. Keep low-frequency
+or specialist vocabulary available as extension rather than making it a gate.
+
+When a unit lacks explicit priority tiers, the study adapter uses its existing
+editorial 1–3 frequency metadata: 3 is essential, 2 is supporting, and 1 is
+optional extension. Unrated words retain authored subtopic order. This is a
+provisional teaching order, not a corpus-validated CEFR assignment. The learner
+view marks unreviewed levels as suggested.
+
+The review area presents the unit's final task and can-do checks. Completing
+that activity records self-reported transfer practice only; it never awards
+word mastery or claims that the learner's response was scored. Authored and
+externally validated performance tasks remain a content-authoring priority.
+
 ## Progress and assessment rules
 
 - SM-2 word memory is the canonical vocabulary mastery record.

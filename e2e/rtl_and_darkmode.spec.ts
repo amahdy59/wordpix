@@ -18,6 +18,18 @@ function seedStorage(lang: "en" | "ar" = "en") {
 }
 
 test.describe("Multi-Viewport RTL & Dark Mode Matrix", () => {
+  test("full learning path remains usable when expanded on a narrow screen", async ({ page }) => {
+    await seedStorage("en")(page);
+    await page.setViewportSize({ width: 320, height: 720 });
+    await page.goto("/");
+    await page.getByRole("button", { name: /View full learning path/i }).click();
+    await expect(page.getByRole("button", { name: /Specialist settings/i })).toBeVisible();
+    await page.getByRole("button", { name: /Specialist settings/i }).click();
+    await expect(page.getByRole("button", { name: /Airport/i }).first()).toBeVisible();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 2)).toBe(
+      true
+    );
+  });
   test("keeps navigation readable at 320px and the former 1024px rail breakpoint", async ({
     page,
   }) => {

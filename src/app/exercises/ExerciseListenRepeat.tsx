@@ -217,6 +217,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     />
   );
   const lexiconEntry = getLexiconEntry(currentWord.id, currentWord.label, unit.id);
+  const arabicTranslation = currentWord.arabicTranslation ?? lexiconEntry.arabic;
 
   return (
     <div className="h-dvh bg-background flex flex-col overflow-hidden">
@@ -351,13 +352,13 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                   {/* Dropped entirely when there is no gloss: an English string
                     in here would be laid out right-to-left and announced as
                     Arabic. */}
-                  {bilingual && hasArabicGloss(lexiconEntry) && (
+                  {bilingual && hasArabicGloss({ arabic: arabicTranslation }) && (
                     <p
                       className="font-arabic font-bold text-foreground text-lg sm:text-xl mt-2 lg:mt-4 text-start self-start"
                       dir="rtl"
                       lang="ar"
                     >
-                      {lexiconEntry.arabic}
+                      {arabicTranslation}
                     </p>
                   )}
                 </div>
@@ -490,6 +491,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                 </div>
                 <WordDetailsContent
                   word={inspectedWord}
+                  unitId={unit.id}
                   bilingual={bilingual}
                   className="bg-wp-card"
                 />

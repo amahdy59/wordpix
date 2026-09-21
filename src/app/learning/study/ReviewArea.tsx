@@ -6,21 +6,28 @@ import { CheckCircle2, Trophy, RotateCcw, Sparkles, Eye } from "lucide-react";
 import { SelfAssessmentSection } from "../ExtraSections";
 import { WordImage } from "../../shared/WordImage";
 import type { UnitStudyProgress } from "./types";
+import type { UnitCurriculumDesign } from "../curriculumModel";
 import { useAudio } from "../../shared/useAudio";
 import { Volume2 } from "lucide-react";
 import { useI18n } from "../../../i18n";
 
 interface Props {
   materials: UnitLearningMaterials;
+  curriculumDesign: UnitCurriculumDesign;
   progress: UnitStudyProgress;
   onProgressUpdate: (p: UnitStudyProgress) => void;
 }
 
-export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
+export function ReviewArea({ materials, curriculumDesign, progress, onProgressUpdate }: Props) {
   const { t } = useI18n();
   const vocab = useMemo(() => loadedUnitVocabulary(materials.unitId), [materials.unitId]);
   const { speak, stop } = useAudio({ lang: "en-US", rate: 0.9 });
   const [revealedWordIds, setRevealedWordIds] = useState<Set<string>>(new Set());
+  const reviewNodeId = materials.selfAssessment?.length ? "review-assessment" : "review-difficult";
+  const transferPractised = progress.completedNodeIds.includes(reviewNodeId);
+  const [taskChecks, setTaskChecks] = useState<boolean[]>(() =>
+    curriculumDesign.canDo.map(() => transferPractised)
+  );
 
   const weakWords = useMemo(() => {
     return progress.reviewWordIds.map((id) => vocab.find((v) => v.id === id)).filter(Boolean);
@@ -184,12 +191,59 @@ export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
         </section>
       )}
 
+      <section
+        className="rounded-3xl border border-primary/30 bg-primary/5 p-5 sm:p-7"
+        aria-labelledby="transfer-task-heading"
+      >
+        <h2 id="transfer-task-heading" className="text-xl font-black text-foreground">
+          {t("study.transferTaskHeading")}
+        </h2>
+        <p className="mt-2 text-sm leading-relaxed text-foreground">{curriculumDesign.finalTask}</p>
+        <p className="mt-2 text-sm text-muted-foreground">{t("study.transferTaskInstructions")}</p>
+        <div className="mt-4 grid gap-3">
+          {curriculumDesign.canDo.map((goal, index) => (
+            <label
+              key={goal}
+              className="flex min-h-11 items-center gap-3 rounded-xl border border-border bg-card p-3 text-sm text-foreground"
+            >
+              <input
+                type="checkbox"
+                checked={taskChecks[index] ?? false}
+                disabled={transferPractised}
+                onChange={(event) =>
+                  setTaskChecks((current) =>
+                    current.map((value, item) => (item === index ? event.target.checked : value))
+                  )
+                }
+                className="size-5 shrink-0 accent-primary"
+              />
+              <span>{goal}</span>
+            </label>
+          ))}
+        </div>
+        <button
+          type="button"
+          disabled={
+            transferPractised || !curriculumDesign.canDo.every((_, index) => taskChecks[index])
+          }
+          onClick={() =>
+            onProgressUpdate({
+              ...progress,
+              completedNodeIds: Array.from(new Set([...progress.completedNodeIds, reviewNodeId])),
+            })
+          }
+          className="mt-4 min-h-11 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-50"
+        >
+          {transferPractised ? t("study.transferTaskRecorded") : t("study.transferTaskDone")}
+        </button>
+        <p className="mt-2 text-xs text-muted-foreground">{t("study.transferTaskNote")}</p>
+      </section>
+
       {/* Self Assessment Section */}
       <SelfAssessmentSection
         materials={materials}
         progress={progress}
         onProgressUpdate={onProgressUpdate}
-        completionNodeId="review-assessment"
       />
     </div>
   );

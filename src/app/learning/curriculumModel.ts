@@ -17,6 +17,7 @@ export type SkillStrand =
   "listening" | "reading" | "spoken-interaction" | "spoken-production" | "writing" | "mediation";
 
 export interface UnitCurriculumDesign {
+  reviewStatus: "authored" | "provisional";
   cefr: CefrLevel;
   gseRange: readonly [number, number];
   archetype: CurriculumArchetype;
@@ -411,7 +412,10 @@ export function getUnitCurriculumDesign(
 
   const designs: Record<
     CurriculumArchetype,
-    Omit<UnitCurriculumDesign, "cefr" | "gseRange" | "archetype" | "grammarFocus" | "prerequisites">
+    Omit<
+      UnitCurriculumDesign,
+      "cefr" | "gseRange" | "archetype" | "grammarFocus" | "prerequisites" | "reviewStatus"
+    >
   > = {
     place: {
       outcome: `Use practical English to navigate ${topic} and complete a familiar task.`,
@@ -470,6 +474,7 @@ export function getUnitCurriculumDesign(
   return {
     ...base,
     ...authoredFoundation,
+    reviewStatus: authoredFoundation ? "authored" : "provisional",
     outcome: `${authoredFoundation?.outcome ?? base.outcome}${passageNote}`,
     cefr,
     gseRange: LEVEL_TO_GSE[cefr],

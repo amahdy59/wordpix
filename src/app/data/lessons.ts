@@ -27,6 +27,10 @@ export interface VocabularyItem {
    * contain its own label or a stem of it.
    */
   description: string;
+  /** Unit-specific Arabic gloss imported from the reviewed bilingual catalogue. */
+  arabicTranslation?: string;
+  /** Unit-specific English usage example imported from the reviewed catalogue. */
+  exampleUsage?: string;
   hasWoman?: boolean;
 }
 

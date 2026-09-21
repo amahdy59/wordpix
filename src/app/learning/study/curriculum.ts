@@ -94,11 +94,45 @@ export function generateCurriculum(
   const curriculum = getUnitCurriculumDesign(unit, materials);
   const seen = new Set<string>();
 
+  // The Figma metadata gives an editorial 1–3 frequency rating for most units.
+  // Respect authored tiers first; otherwise use those ratings, leaving unrated
+  // words in their existing subtopic order rather than guessing their priority.
+  const normalizeWord = (value: string) => value.trim().toLowerCase().replace(/\s+/g, "-");
+  const unitIdsByName = new Map(unit.wordIds.map((id) => [normalizeWord(id), id]));
+  const frequency = new Map(
+    (materials.wordMeta ?? []).map((entry) => [normalizeWord(entry.word), entry.frequency])
+  );
+  const sourceTiers = materials.priorityTiers ?? {
+    essential: unit.wordIds.filter((id) => frequency.get(normalizeWord(id)) === 3),
+    important: unit.wordIds.filter((id) => frequency.get(normalizeWord(id)) === 2),
+    goodToKnow: unit.wordIds.filter((id) => frequency.get(normalizeWord(id)) === 1),
+  };
+  const toUnitIds = (ids: string[]) =>
+    ids.flatMap((id) => {
+      const unitId = unitIdsByName.get(normalizeWord(id));
+      return unitId ? [unitId] : [];
+    });
+  const tiers = {
+    essential: toUnitIds(sourceTiers.essential),
+    important: toUnitIds(sourceTiers.important),
+    goodToKnow: toUnitIds(sourceTiers.goodToKnow),
+  };
+  const extensionIds = new Set(tiers.goodToKnow.map(normalizeWord));
+
   addVocabularySequence(
     nodes,
     "learn-essential",
     "Essential language",
-    materials.priorityTiers?.essential ?? [],
+    tiers.essential,
+    seen,
+    curriculum
+  );
+
+  addVocabularySequence(
+    nodes,
+    "learn-important",
+    "Useful supporting language",
+    tiers.important,
     seen,
     curriculum
   );
@@ -108,7 +142,7 @@ export function generateCurriculum(
       nodes,
       `learn-${subtopic.id}`,
       subtopic.title,
-      subtopic.wordIds,
+      subtopic.wordIds.filter((id) => !extensionIds.has(normalizeWord(id))),
       seen,
       curriculum
     );
@@ -116,17 +150,9 @@ export function generateCurriculum(
 
   addVocabularySequence(
     nodes,
-    "learn-important",
-    "Useful supporting language",
-    materials.priorityTiers?.important ?? [],
-    seen,
-    curriculum
-  );
-  addVocabularySequence(
-    nodes,
     "learn-extension",
     "Extension language",
-    materials.priorityTiers?.goodToKnow ?? [],
+    tiers.goodToKnow,
     seen,
     curriculum
   );
@@ -135,7 +161,7 @@ export function generateCurriculum(
     nodes,
     "learn-remaining",
     "More useful words",
-    unit.wordIds,
+    unit.wordIds.filter((id) => !extensionIds.has(normalizeWord(id))),
     seen,
     curriculum
   );

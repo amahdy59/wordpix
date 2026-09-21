@@ -1,0 +1,247 @@
+{
+  "server-rack": {
+    "definition": "A metal frame or cabinet designed to hold servers and other computer equipment in organized rows.",
+    "exampleUsage": "Technicians installed the new server in the server rack.",
+    "arabicTranslation": "حامل خوادم"
+  },
+  "blade-server": {
+    "definition": "A thin modular server designed to slide into a shared enclosure with other server modules.",
+    "exampleUsage": "The blade server shares power and cooling with other modules.",
+    "arabicTranslation": "خادم نصلي"
+  },
+  "cable-tray": {
+    "definition": "A support system that holds and routes groups of electrical or data cables.",
+    "exampleUsage": "Network cables run neatly along the cable tray.",
+    "arabicTranslation": "مسار للكابلات"
+  },
+  "raised-floor": {
+    "definition": "A floor built above the structural floor to create space underneath for cables, cooling air, or services.",
+    "exampleUsage": "Cables pass beneath the raised floor in the data center.",
+    "arabicTranslation": "أرضية مرتفعة"
+  },
+  "hot-aisle": {
+    "definition": "A row between server racks where warm exhaust air is directed and collected.",
+    "exampleUsage": "Warm air leaves the servers into the hot aisle.",
+    "arabicTranslation": "ممر هواء ساخن"
+  },
+  "cold-aisle": {
+    "definition": "A row between server racks where cool air is supplied to equipment intakes.",
+    "exampleUsage": "The server fronts face the cold aisle.",
+    "arabicTranslation": "ممر هواء بارد"
+  },
+  "ups": {
+    "definition": "Being or moving higher in position or greater in some value.",
+    "arabicTranslation": "مزود طاقة غير منقطعة"
+  },
+  "generator": {
+    "definition": "A person who originates or causes or initiates something.",
+    "arabicTranslation": "مولّد"
+  },
+  "pdu": {
+    "definition": "A power distribution unit that delivers and manages electrical power for multiple pieces of equipment.",
+    "exampleUsage": "The rack PDU supplies power to several servers.",
+    "arabicTranslation": "وحدة توزيع الطاقة (PDU)"
+  },
+  "patch-panel": {
+    "definition": "A panel with many connection points used to organize and route network or communication cables.",
+    "exampleUsage": "The technician labeled every port on the patch panel.",
+    "arabicTranslation": "لوحة توصيل"
+  },
+  "switch": {
+    "definition": "Control consisting of a mechanical or electrical or electronic device for making or breaking or changing the connections in a circuit.",
+    "arabicTranslation": "مبدّل شبكي"
+  },
+  "router": {
+    "definition": "A worker who routes shipments for distribution and delivery.",
+    "arabicTranslation": "موجّه"
+  },
+  "firewall": {
+    "definition": "Software or hardware that blocks unwanted network traffic.",
+    "arabicTranslation": "جدار حماية"
+  },
+  "load-balancer": {
+    "definition": "A system that distributes network requests or computing work across multiple servers.",
+    "exampleUsage": "The load balancer sends requests to available servers.",
+    "arabicTranslation": "موازن أحمال"
+  },
+  "fiber-optic": {
+    "definition": "Relating to thin glass or plastic fibers that carry data as pulses of light.",
+    "exampleUsage": "The data center uses fiber-optic links between network devices.",
+    "arabicTranslation": "ألياف ضوئية"
+  },
+  "ethernet": {
+    "definition": "A type of network technology for local area networks.",
+    "arabicTranslation": "إيثرنت"
+  },
+  "bandwidth": { "arabicTranslation": "عرض النطاق" },
+  "latency": {
+    "definition": "(computer science) the time it takes for a specific block of data on a data track to rotate around to the read/write head.",
+    "arabicTranslation": "زمن الاستجابة"
+  },
+  "dns": {
+    "definition": "A distributed system called DNS organizes internet names in levels and translates domain names into numerical IP addresses. It also provides other information about internet resources.",
+    "arabicTranslation": "نظام أسماء النطاقات"
+  },
+  "vpn": {
+    "definition": "A VPN creates an encrypted connection through a public network, allowing people to reach a private network or communicate securely from a distance.",
+    "arabicTranslation": "شبكة خاصة افتراضية"
+  },
+  "hard-drive": {
+    "definition": "A storage device that preserves digital information without power and lets computers save and retrieve files.",
+    "arabicTranslation": ""
+  },
+  "ssd": {
+    "definition": "A solid-state drive stores data in flash memory chips rather than spinning magnetic disks, providing faster access, lower delay, and greater resistance to mechanical failure.",
+    "arabicTranslation": "قرص حالة صلبة"
+  },
+  "raid": { "arabicTranslation": "مصفوفة أقراص مستقلة" },
+  "nas": {
+    "definition": "A silvery soft waxy metallic element of the alkali metal group.",
+    "arabicTranslation": "تخزين متصل بالشبكة"
+  },
+  "san": {
+    "definition": "A Japanese honorific added to a person's given or family name to show general respect in neutral or polite situations.",
+    "arabicTranslation": "شبكة منطقة تخزين"
+  },
+  "backup": {
+    "definition": "An extra copy of data kept in case the original is lost.",
+    "arabicTranslation": "نسخة احتياطية"
+  },
+  "tape-drive": {
+    "definition": "A device moves magnetic tape across read/write heads, allowing recorded information to be played or stored.",
+    "arabicTranslation": ""
+  },
+  "cloud-storage": {
+    "definition": "Online space used to save and access your files from different devices.",
+    "arabicTranslation": "تخزين سحابة"
+  },
+  "snapshot": { "arabicTranslation": "لقطة حالة" },
+  "replication": {
+    "definition": "The repetition of an experiment in order to test the validity of its conclusion.",
+    "arabicTranslation": "نسخ متماثل"
+  },
+  "air-conditioner": {
+    "definition": "A device that adjusts the temperature and moisture inside a building, usually by cooling and drying the air. Some models also improve indoor air quality.",
+    "arabicTranslation": "بلسم هواء"
+  },
+  "chiller": {
+    "definition": "Excitation that makes your hair stand up or that chills your bones.",
+    "arabicTranslation": "مُبرِّد"
+  },
+  "cooling-tower": {
+    "definition": "An industrial cooling system lowers the temperature of hot water by letting some of it evaporate. The cooled water can then be reused to remove heat from machinery.",
+    "arabicTranslation": ""
+  },
+  "fan": {
+    "definition": "A device for creating a current of air by movement of a surface or surfaces.",
+    "arabicTranslation": "مروحة"
+  },
+  "vent": {
+    "definition": "To expose to cool or cold air so as to cool or freshen.",
+    "arabicTranslation": "فتحة تهوية"
+  },
+  "heat-exchanger": {
+    "definition": "A device passes heat from one moving fluid to another while keeping the two fluids separate.",
+    "arabicTranslation": ""
+  },
+  "containment": {
+    "definition": "A policy of creating strategic alliances in order to check the expansion of a hostile power or ideology or to force it to negotiate peacefully.",
+    "arabicTranslation": "احتواء"
+  },
+  "thermostat": {
+    "definition": "To control the temperature with a thermostat.",
+    "arabicTranslation": "منظّم حرارة"
+  },
+  "humidity-control": {
+    "definition": "Maintaining moisture in indoor air at a desired level by adding or removing water vapor.",
+    "arabicTranslation": "عامل ضابط رطوبة"
+  },
+  "water-cooling": {
+    "definition": "A cooling method that uses circulating liquid, usually water in a closed system, to remove heat from equipment.",
+    "exampleUsage": "The facility uses water cooling for high-density computing equipment.",
+    "arabicTranslation": "تبريد بالماء"
+  },
+  "badge-reader": {
+    "definition": "An electronic device that checks an identification badge before allowing access.",
+    "exampleUsage": "The badge reader unlocked the secure door for an authorized employee.",
+    "arabicTranslation": "قارئ بطاقات تعريف"
+  },
+  "biometric": {
+    "definition": "Related to measuring distinctive physical or behavioral traits to identify or confirm a living person’s identity.",
+    "arabicTranslation": "بيومتري"
+  },
+  "mantrap": {
+    "definition": "A very attractive or seductive looking woman.",
+    "arabicTranslation": "بوابة أمنية مزدوجة"
+  },
+  "cctv": {
+    "definition": "A CCTV installation consists of cameras, recording devices, and related equipment serving a specific location.",
+    "arabicTranslation": "مراقبة تلفزيونية مغلقة"
+  },
+  "fire-suppression": {
+    "definition": "The coordinated methods and equipment used to put out unwanted fires or keep them from spreading after they begin.",
+    "arabicTranslation": ""
+  },
+  "access-log": {
+    "definition": "A record showing who or what accessed a system or location and when.",
+    "exampleUsage": "The security team reviewed the access log after the alert.",
+    "arabicTranslation": "سجل الوصول"
+  },
+  "cage": {
+    "definition": "Something that restricts freedom as a cage restricts movement.",
+    "arabicTranslation": "قفص"
+  },
+  "lock": {
+    "definition": "Enclosure consisting of a section of canal that can be closed to control the water level.",
+    "arabicTranslation": "قفل"
+  },
+  "guard": {
+    "definition": "An adult who watches children to keep them safe.",
+    "arabicTranslation": "حارس"
+  },
+  "monitoring": {
+    "definition": "The act of observing something (and sometimes keeping a record of it).",
+    "arabicTranslation": "مراقبة"
+  },
+  "technician": {
+    "definition": "A person who maintains and operates technical equipment during a production.",
+    "arabicTranslation": "فني"
+  },
+  "administrator": {
+    "definition": "A person who administers a business.",
+    "arabicTranslation": "مسؤول نظام"
+  },
+  "dashboard": {
+    "definition": "Protective covering consisting of a panel to protect people from the splashing water or mud etc.",
+    "arabicTranslation": "لوحة معلومات"
+  },
+  "alert": {
+    "definition": "Engaged in or accustomed to close observation.",
+    "arabicTranslation": ""
+  },
+  "uptime": {
+    "definition": "A period of time when something (as a machine or factory) is functioning and available for use.",
+    "arabicTranslation": "زمن التشغيل"
+  },
+  "maintenance": {
+    "definition": "Means of maintenance of a family or group.",
+    "arabicTranslation": "صيانة"
+  },
+  "migration": {
+    "definition": "The movement of persons from one country or locality to another.",
+    "arabicTranslation": "هجرة"
+  },
+  "deployment": {
+    "definition": "The distribution of forces in preparation for battle or work.",
+    "arabicTranslation": "نشر"
+  },
+  "redundancy": {
+    "definition": "The attribute of being superfluous and unneeded.",
+    "arabicTranslation": "تكرار احتياطي"
+  },
+  "failover": {
+    "definition": "The automatic or planned transfer of service to a backup system when the main system stops working.",
+    "exampleUsage": "The failover system kept the service running during maintenance.",
+    "arabicTranslation": "تحويل تلقائي إلى نظام احتياطي"
+  }
+}

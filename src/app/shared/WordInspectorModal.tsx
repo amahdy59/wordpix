@@ -98,7 +98,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
             </div>
           </div>
 
-          <WordDetailsContent word={word} bilingual={bilingual} />
+          <WordDetailsContent word={word} unitId={unitId} bilingual={bilingual} />
 
           {/* Bottom Footer */}
           <div className="p-4 border-t border-border bg-muted/20 flex items-center justify-end">

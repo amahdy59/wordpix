@@ -169,7 +169,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
               <Card variant="primary">
                 <div className="flex items-center justify-between">
                   <span className="font-sans font-semibold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full">
-                    Core path · Level {recommendedFoundationLesson.level}
+                    {t("dashboard.corePathLevel", { level: recommendedFoundationLesson.level })}
                   </span>
                   <span className="font-sans text-xs font-bold text-muted-foreground">
                     {recommendedFoundationProgress?.status === "in-progress"
@@ -226,7 +226,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     className="w-full sm:w-auto px-5 py-3.5 bg-secondary text-primary hover:bg-primary/10 border border-primary/20 rounded-2xl font-sans font-bold text-sm min-h-[52px] flex items-center justify-center gap-2 transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
                   >
                     <Library className="size-4 shrink-0" />
-                    <span>Optional picture practice</span>
+                    <span>{t("dashboard.optionalPicturePractice")}</span>
                   </motion.button>
                 </div>
               </Card>
@@ -289,7 +289,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                       onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
                       className="mt-2 min-h-11 rounded-xl border border-wp-green/30 bg-background px-4 py-2 text-sm font-bold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                     >
-                      Practise a skill
+                      {t("dashboard.practiseSkill")}
                     </button>
                   </div>
                 </div>

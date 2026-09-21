@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ArrowLeft,
   ArrowRight,
@@ -40,7 +40,7 @@ const focusRing =
   "focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary";
 
 export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
-  const { interfaceLang } = useI18n();
+  const { interfaceLang, t } = useI18n();
   const { state, recordFoundationCheckpoint, recordFoundationCompletion } = useLearner();
   const lesson = getFoundationLesson(lessonId);
   const steps = useMemo<Step[]>(
@@ -131,7 +131,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
     stepIndex,
   ]);
 
-  const resetStepInteraction = () => {
+  const resetStepInteraction = useCallback(() => {
     stop();
     setAttempts(0);
     setAnswered(false);
@@ -142,26 +142,29 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
     setConfidence(null);
     setHintOpen(false);
     setHeardOptions(new Set());
-  };
+  }, [stop]);
 
-  const playStepAudio = (nextStep: Step) => {
-    if (nextStep.kind === "model") speak(lesson.models[nextStep.index].audio);
-    if (nextStep.kind === "question") speak(lesson.questions[nextStep.index].audio);
-  };
+  const playStepAudio = useCallback(
+    (nextStep: Step) => {
+      if (nextStep.kind === "model") speak(lesson.models[nextStep.index].audio);
+      if (nextStep.kind === "question") speak(lesson.questions[nextStep.index].audio);
+    },
+    [lesson.models, lesson.questions, speak]
+  );
 
-  const advance = () => {
+  const advance = useCallback(() => {
     const nextIndex = Math.min(stepIndex + 1, steps.length - 1);
     resetStepInteraction();
     setStepIndex(nextIndex);
     playStepAudio(steps[nextIndex]);
-  };
+  }, [playStepAudio, resetStepInteraction, stepIndex, steps]);
 
   useEffect(() => {
     if (!answered || step.kind !== "question" || !state.accessibility.autoAdvance) return;
     const delay = attempts >= 2 ? 1600 : 700;
     const timeout = window.setTimeout(advance, delay);
     return () => window.clearTimeout(timeout);
-  }, [answered, attempts, state.accessibility.autoAdvance]);
+  }, [advance, answered, attempts, state.accessibility.autoAdvance, step.kind]);
 
   const goBack = () => {
     if (stepIndex === 0) return;
@@ -228,7 +231,11 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
           </button>
           <div className="min-w-0 flex-1">
             <p className="text-xs font-black uppercase tracking-wide text-primary">
-              Level {lesson.level} · Unit {lesson.unitId} · Lesson {lesson.number}
+              {t("foundation.lessonPosition", {
+                level: lesson.level,
+                unit: lesson.unitId,
+                lesson: lesson.number,
+              })}
             </p>
             <h1 className="truncate text-lg font-black text-foreground sm:text-xl">
               {lesson.title}
@@ -236,10 +243,10 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
           </div>
           <span className="hidden rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary sm:inline">
             {lesson.reviewStatus === "pilot"
-              ? "Pronunciation pilot"
+              ? t("foundation.pronunciationPilot")
               : lesson.audioOnly
-                ? "Listen"
-                : "Sounds + letters"}
+                ? t("foundation.listen")
+                : t("foundation.soundsLetters")}
           </span>
         </div>
       </header>
@@ -247,16 +254,16 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
       <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col px-4 py-5 sm:px-6 sm:py-7">
         <ProgressBar
           progressPercent={progress}
-          label="Lesson progress"
+          label={t("foundation.lessonProgress")}
           labelRight={`${progress}%`}
-          ariaLabel={`Lesson ${progress}% complete`}
+          ariaLabel={t("foundation.lessonProgressAria", { progress })}
         />
         {isError && (
           <div
             role="alert"
             className="mt-3 rounded-xl border border-[var(--feedback-warning)] bg-[var(--feedback-warning-surface)] px-4 py-3 text-sm font-bold text-foreground"
           >
-            Sound could not play. Check the device volume, then tap the sound button to retry.
+            {t("foundation.soundError")}
           </div>
         )}
         {stepIndex > 0 && (
@@ -266,7 +273,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
             className={`mt-3 flex min-h-11 w-fit items-center gap-2 rounded-xl px-3 font-bold text-foreground hover:bg-muted ${focusRing}`}
           >
             <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-            Back one step
+            {t("foundation.backStep")}
           </button>
         )}
         <div className="flex flex-1 flex-col justify-center py-6">
@@ -302,22 +309,20 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                   lang="ar"
                   className="mx-auto mt-3 max-w-md rounded-xl border border-primary/20 bg-primary/5 px-4 py-3 text-sm font-bold leading-relaxed text-foreground"
                 >
-                  استمع إلى النماذج، ثم استخدم الصور والأصوات لاختيار الإجابة. يمكنك فتح التلميح في
-                  أي وقت.
+                  {t("foundation.arabicLessonHelp")}
                 </p>
               )}
               {isPronunciationLesson && (
                 <div className="mx-auto mt-4 max-w-md rounded-2xl border border-primary/25 bg-primary/5 px-4 py-3 text-start">
                   <p className="text-xs font-black uppercase tracking-wide text-primary">
-                    By the end, I can
+                    {t("foundation.canDoHeading")}
                   </p>
                   <p className="mt-1 font-bold leading-relaxed text-foreground">{canDoGoal}</p>
                 </div>
               )}
               {lesson.reviewStatus === "pilot" && (
                 <p className="mx-auto mt-3 max-w-md rounded-xl border border-primary/25 bg-primary/5 px-4 py-3 text-sm font-bold leading-relaxed text-foreground">
-                  Optional pilot · You may listen, point, or choose. Speaking and recording are not
-                  required.
+                  {t("foundation.pilotNote")}
                 </p>
               )}
               {hintOpen && (
@@ -334,7 +339,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                   <div className="flex items-center justify-center gap-2">
                     <Sparkles className="size-5 text-primary" aria-hidden />
                     <h3 id="picture-words-heading" className="font-black text-foreground">
-                      Tap a picture to hear it
+                      {t("foundation.tapPicture")}
                     </h3>
                   </div>
                   <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">
@@ -366,7 +371,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                   onClick={() => openLesson("pronunciation-portfolio")}
                   className={`mt-5 min-h-[52px] w-full rounded-2xl border-2 border-primary bg-background px-5 font-bold text-primary ${focusRing}`}
                 >
-                  Take the optional 2-minute skills check
+                  {t("foundation.skillsCheck")}
                 </button>
               )}
               <button
@@ -374,7 +379,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                 onClick={advance}
                 className={`${lesson.id === "pronunciation-goals" ? "mt-3" : "mt-5"} flex min-h-[56px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 font-bold text-primary-foreground ${focusRing}`}
               >
-                <Play className="size-5" aria-hidden /> Start lesson
+                <Play className="size-5" aria-hidden /> {t("foundation.startLesson")}
               </button>
             </section>
           )}
@@ -388,10 +393,10 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                   aria-labelledby="model-heading"
                 >
                   <p className="text-xs font-black uppercase tracking-wider text-primary">
-                    Watch and listen · Example {step.index + 1}
+                    {t("foundation.exampleNumber", { number: step.index + 1 })}
                   </p>
                   <h2 id="model-heading" className="mt-2 text-2xl font-black text-foreground">
-                    Let’s learn it together
+                    {t("foundation.learnTogether")}
                   </h2>
                   {model.image && (
                     <img
@@ -434,7 +439,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                     onClick={advance}
                     className={`mt-6 min-h-[52px] w-full rounded-2xl bg-primary px-5 font-bold text-primary-foreground ${focusRing}`}
                   >
-                    Continue
+                    {t("action.continue")}
                   </button>
                 </section>
               );
@@ -458,12 +463,16 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                   <p className="text-xs font-black uppercase tracking-wider text-primary">
                     {isPronunciationLesson
                       ? step.index >= independentCheckStart
-                        ? "Independent check"
-                        : "Guided practice"
+                        ? t("foundation.independentCheck")
+                        : t("foundation.guidedPractice")
                       : step.index >= challengeStart
-                        ? "Challenge round"
-                        : "Your turn"}{" "}
-                    · {step.index + 1} of {lesson.questions.length}
+                        ? t("foundation.challengeRound")
+                        : t("foundation.yourTurn")}{" "}
+                    ·{" "}
+                    {t("foundation.questionCount", {
+                      current: step.index + 1,
+                      total: lesson.questions.length,
+                    })}
                   </p>
                   <h2 id="question-heading" className="mt-2 text-2xl font-black text-foreground">
                     {question.prompt}
@@ -517,7 +526,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                   )}
                   {responseMode === "rhythm" ? (
                     <div className="mt-7 rounded-3xl border border-border bg-wp-card p-5 shadow-wp-xs">
-                      <p className="font-bold text-foreground">Tap once for each beat you hear</p>
+                      <p className="font-bold text-foreground">{t("foundation.tapEachBeat")}</p>
                       <div
                         className="mt-4 flex min-h-12 items-center justify-center gap-2"
                         aria-live="polite"
@@ -525,7 +534,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                       >
                         {rhythmTaps === 0 ? (
                           <span className="text-sm font-semibold text-muted-foreground">
-                            No beats tapped yet
+                            {t("foundation.noBeats")}
                           </span>
                         ) : (
                           Array.from({ length: rhythmTaps }, (_, index) => (
@@ -545,7 +554,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                         disabled={answered || rhythmTaps >= question.options.length}
                         className={`mt-4 min-h-[64px] w-full rounded-2xl border-2 border-primary bg-primary/10 text-lg font-black text-primary disabled:opacity-60 ${focusRing}`}
                       >
-                        Tap the beat
+                        {t("foundation.tapBeat")}
                       </button>
                       <div className="mt-3 grid grid-cols-2 gap-3">
                         <button
@@ -554,7 +563,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                           disabled={answered || rhythmTaps === 0}
                           className={`min-h-12 rounded-xl border border-border font-bold text-foreground disabled:opacity-50 ${focusRing}`}
                         >
-                          Reset taps
+                          {t("foundation.resetTaps")}
                         </button>
                         <button
                           type="button"
@@ -562,14 +571,14 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                           disabled={answered || rhythmTaps === 0}
                           className={`min-h-12 rounded-xl bg-primary font-bold text-primary-foreground disabled:opacity-50 ${focusRing}`}
                         >
-                          Check rhythm
+                          {t("foundation.checkRhythm")}
                         </button>
                       </div>
                     </div>
                   ) : responseMode === "ordering" ? (
                     <div className="mt-7 rounded-3xl border border-border bg-wp-card p-5 shadow-wp-xs">
                       <p className="font-bold text-foreground">
-                        Build the message in listening order
+                        {t("foundation.buildListeningOrder")}
                       </p>
                       <div
                         className="mt-4 flex min-h-16 flex-wrap items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-primary/35 bg-primary/5 p-3"
@@ -587,7 +596,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                       >
                         {orderedChoices.length === 0 ? (
                           <span className="text-sm font-semibold text-muted-foreground">
-                            Choose the first chunk below
+                            {t("foundation.chooseFirstChunk")}
                           </span>
                         ) : (
                           orderedChoices.map((value, index) => (
@@ -621,7 +630,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                           disabled={answered || orderedChoices.length === 0}
                           className={`min-h-12 rounded-xl border border-border font-bold text-foreground disabled:opacity-50 ${focusRing}`}
                         >
-                          Undo
+                          {t("foundation.undo")}
                         </button>
                         <button
                           type="button"
@@ -629,7 +638,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                           disabled={answered || orderedChoices.length !== question.options.length}
                           className={`min-h-12 rounded-xl bg-primary font-bold text-primary-foreground disabled:opacity-50 ${focusRing}`}
                         >
-                          Check order
+                          {t("foundation.checkOrder")}
                         </button>
                       </div>
                     </div>
@@ -781,7 +790,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                       onClick={advance}
                       className={`mt-4 min-h-[52px] w-full rounded-2xl bg-primary px-5 font-bold text-primary-foreground ${focusRing}`}
                     >
-                      Next activity
+                      {t("foundation.nextActivity")}
                     </button>
                   )}
                 </section>
@@ -794,12 +803,13 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                 <Check className="size-8" aria-hidden />
               </div>
               <p className="mt-5 text-xs font-black uppercase tracking-wider text-primary">
-                Lesson complete
+                {t("foundation.lessonComplete")}
               </p>
-              <h2 className="mt-2 text-2xl font-black text-foreground sm:text-3xl">You did it!</h2>
+              <h2 className="mt-2 text-2xl font-black text-foreground sm:text-3xl">
+                {t("foundation.youDidIt")}
+              </h2>
               <p className="mt-3 font-semibold text-muted-foreground">
-                You answered {correct} of {lesson.questions.length} on your first or second try.
-                Practice is how strong listening and reading grow.
+                {t("foundation.summaryScore", { correct, total: lesson.questions.length })}
               </p>
               <div
                 className={`mt-5 rounded-2xl border p-4 text-start ${mastered ? "border-[var(--feedback-success-border)] bg-[var(--feedback-success-surface)]" : "border-[var(--feedback-warning)] bg-[var(--feedback-warning-surface)]"}`}
@@ -822,7 +832,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
               {usesQualitativeRouting && (
                 <div className="mt-4 rounded-2xl border border-border bg-muted/40 p-4 text-start">
                   <p className="text-xs font-black uppercase tracking-wide text-primary">
-                    Skill results
+                    {t("foundation.skillResults")}
                   </p>
                   <ul className="mt-2 space-y-2">
                     {lesson.evidenceDimensions.map((dimension, index) => {
@@ -835,27 +845,27 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                           <span
                             className={`rounded-full px-3 py-1 text-xs font-black ${result ? "bg-[var(--feedback-success-surface)] text-foreground" : "bg-[var(--feedback-warning-surface)] text-foreground"}`}
                           >
-                            {result ? "Demonstrated" : "Keep practising"}
+                            {result ? t("foundation.demonstrated") : t("foundation.keepPractising")}
                           </span>
                         </li>
                       );
                     })}
                   </ul>
                   <p className="mt-2 text-sm font-semibold leading-relaxed text-muted-foreground">
-                    These results guide your next practice. They do not grade your accent.
+                    {t("foundation.resultsNote")}
                   </p>
                 </div>
               )}
               {usesQualitativeRouting && (
                 <fieldset className="mt-4 rounded-2xl border border-border p-4 text-start">
                   <legend className="px-2 text-xs font-black uppercase tracking-wide text-primary">
-                    How did this feel?
+                    {t("foundation.confidenceHeading")}
                   </legend>
                   <div className="grid gap-2 sm:grid-cols-3">
                     {[
-                      ["again", "I want more practice"],
-                      ["supported", "I can do it with help"],
-                      ["ready", "I can try this independently"],
+                      ["again", t("foundation.confidenceAgain")],
+                      ["supported", t("foundation.confidenceSupported")],
+                      ["ready", t("foundation.confidenceReady")],
                     ].map(([value, label]) => (
                       <button
                         key={value}
@@ -871,17 +881,19 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                   {confidence && (
                     <p className="mt-3 text-sm font-semibold text-muted-foreground" role="status">
                       {confidence === "again"
-                        ? "Recommendation: repeat this lesson before moving on."
+                        ? t("foundation.recommendRepeat")
                         : confidence === "supported"
-                          ? "Recommendation: move on, then return during review."
-                          : "Recommendation: continue and revisit this skill in the final check."}
+                          ? t("foundation.recommendReview")
+                          : t("foundation.recommendContinue")}
                     </p>
                   )}
                 </fieldset>
               )}
               {mastered && nextLesson && (
                 <div className="mt-5 rounded-2xl bg-primary/5 p-4 text-start">
-                  <p className="text-xs font-black uppercase tracking-wide text-primary">Up next</p>
+                  <p className="text-xs font-black uppercase tracking-wide text-primary">
+                    {t("foundation.upNext")}
+                  </p>
                   <p className="mt-1 font-black text-foreground">{nextLesson.title}</p>
                 </div>
               )}
@@ -892,9 +904,9 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
               >
                 {mastered
                   ? nextLesson
-                    ? "Start next lesson"
-                    : "Back to curriculum"
-                  : "Practice this lesson again"}
+                    ? t("foundation.startNext")
+                    : t("foundation.backCurriculum")
+                  : t("foundation.practiceAgain")}
                 {mastered && <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />}
               </button>
               <div className="mt-3 grid grid-cols-2 gap-3">
@@ -904,7 +916,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                     onClick={() => openLesson(previousLesson.id)}
                     className={`min-h-12 rounded-xl border border-border px-3 font-bold text-foreground ${focusRing}`}
                   >
-                    Previous lesson
+                    {t("foundation.previousLesson")}
                   </button>
                 )}
                 <button
@@ -912,7 +924,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                   onClick={() => dispatch({ type: "GO", to: "explore" })}
                   className={`min-h-12 rounded-xl border border-border px-3 font-bold text-foreground ${previousLesson ? "" : "col-span-2"} ${focusRing}`}
                 >
-                  View curriculum
+                  {t("foundation.viewCurriculum")}
                 </button>
               </div>
             </section>
@@ -920,7 +932,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
         </div>
       </div>
       <div className="sr-only" aria-live="polite">
-        {isPlaying ? "Audio playing" : ""}
+        {isPlaying ? t("foundation.audioPlaying") : ""}
       </div>
     </div>
   );

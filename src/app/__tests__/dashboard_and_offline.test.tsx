@@ -48,7 +48,7 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
     expect(screen.getByText("Recommended next")).toBeInTheDocument();
   });
 
-  it("uses progressive disclosure for the core path and optional picture worlds", async () => {
+  it("lets learners reveal the complete general English route", async () => {
     const user = userEvent.setup();
     renderWithProviders(<LearningPath dispatch={vi.fn()} />);
 
@@ -56,7 +56,7 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
     expect(
       screen.queryByRole("heading", { name: "Pronunciation and comprehensibility" })
     ).not.toBeInTheDocument();
-    expect(screen.queryByText("Picture-word mastery")).not.toBeInTheDocument();
+    expect(screen.queryByText("General English words mastered")).not.toBeInTheDocument();
 
     await user.click(
       screen.getByRole("button", {
@@ -67,12 +67,9 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
       screen.getByRole("heading", { name: "Pronunciation and comprehensibility" })
     ).toBeInTheDocument();
 
-    const pictureWorldToggle = screen
-      .getAllByRole("button", { name: /Explore picture worlds/i })
-      .find((button) => button.getAttribute("aria-controls") === "picture-world-path");
-    expect(pictureWorldToggle).toBeDefined();
-    await user.click(pictureWorldToggle!);
-    expect(screen.getByText("Picture-word mastery")).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: /View full learning path/i }));
+    expect(screen.getByText("General English words mastered")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Specialist settings/i })).toBeInTheDocument();
   });
 });
 

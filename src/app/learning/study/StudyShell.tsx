@@ -666,6 +666,7 @@ export function StudyShell({
               {currentArea === "review" && (
                 <ReviewArea
                   materials={materials}
+                  curriculumDesign={curriculumDesign}
                   progress={progress}
                   onProgressUpdate={setStoredProgress}
                 />

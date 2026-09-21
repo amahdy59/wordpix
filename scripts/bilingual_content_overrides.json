@@ -1,0 +1,636 @@
+{
+  "airport": {
+    "boarding-pass": { "arabicTranslation": "بطاقة صعود الطائرة" },
+    "baggage-claim": { "arabicTranslation": "منطقة استلام الأمتعة" }
+  },
+  "beach": {
+    "ocean": { "arabicTranslation": "محيط" },
+    "shore": { "arabicTranslation": "شاطئ" },
+    "cove": { "arabicTranslation": "خليج صغير" },
+    "beach-chair": { "arabicTranslation": "كرسي شاطئ" },
+    "swimsuit": { "arabicTranslation": "ملابس سباحة" },
+    "bikini": { "arabicTranslation": "بيكيني" },
+    "surfing": { "arabicTranslation": "ركوب الأمواج" },
+    "snorkeling": { "arabicTranslation": "غطس سطحي بأنبوب تنفس" },
+    "sailing": { "arabicTranslation": "إبحار شراعي" },
+    "windsurfing": { "arabicTranslation": "تزلج شراعي على الماء" },
+    "sandcastle": { "arabicTranslation": "قلعة رملية" },
+    "sunbathing": { "arabicTranslation": "تشمس" },
+    "shell-collecting": { "arabicTranslation": "جمع الأصداف" },
+    "bonfire": { "arabicTranslation": "نار مخيم" },
+    "boardwalk": { "arabicTranslation": "ممشى خشبي" }
+  },
+  "restaurant": {
+    "place-setting": { "arabicTranslation": "ترتيب أدوات المائدة" },
+    "salt-shaker": { "arabicTranslation": "مملحة" },
+    "pepper-shaker": { "arabicTranslation": "مرشة فلفل" },
+    "chopsticks": { "arabicTranslation": "عيدان الأكل" },
+    "waiter": { "arabicTranslation": "نادل" },
+    "waitress": { "arabicTranslation": "نادلة" },
+    "chef": { "arabicTranslation": "طاهٍ" },
+    "hostess": { "arabicTranslation": "مضيفة المطعم" },
+    "busser": { "arabicTranslation": "مساعد النادل" },
+    "dessert": { "arabicTranslation": "حلوى" },
+    "side-dish": { "arabicTranslation": "طبق جانبي" },
+    "fryer": { "arabicTranslation": "قلاية" },
+    "soup": { "arabicTranslation": "حساء" },
+    "burger": { "arabicTranslation": "برغر" },
+    "sushi": { "arabicTranslation": "سوشي" }
+  },
+  "days-months": {
+    "monday": {
+      "definition": "The day after Sunday and before Tuesday.",
+      "arabicTranslation": "الاثنين"
+    },
+    "tuesday": {
+      "definition": "The day after Monday and before Wednesday.",
+      "arabicTranslation": "الثلاثاء"
+    },
+    "wednesday": {
+      "definition": "The day after Tuesday and before Thursday.",
+      "arabicTranslation": "الأربعاء"
+    },
+    "thursday": {
+      "definition": "The day after Wednesday and before Friday.",
+      "arabicTranslation": "الخميس"
+    },
+    "friday": {
+      "definition": "The day after Thursday and before Saturday.",
+      "arabicTranslation": "الجمعة"
+    },
+    "saturday": {
+      "definition": "The day after Friday and before Sunday.",
+      "arabicTranslation": "السبت"
+    },
+    "sunday": {
+      "definition": "The day after Saturday and before Monday.",
+      "arabicTranslation": "الأحد"
+    },
+    "weekday": {
+      "definition": "A day that is not part of the weekend in a particular place.",
+      "arabicTranslation": "يوم من أيام الأسبوع غير عطلة نهاية الأسبوع"
+    },
+    "weekend": {
+      "definition": "The days at the end of a working week when many people do not work.",
+      "arabicTranslation": "عطلة نهاية الأسبوع"
+    },
+    "day-off": {
+      "definition": "A day when a person does not have to go to work or school.",
+      "arabicTranslation": "يوم إجازة"
+    },
+    "january": { "arabicTranslation": "يناير" },
+    "february": { "arabicTranslation": "فبراير" },
+    "march": { "arabicTranslation": "مارس" },
+    "april": { "arabicTranslation": "أبريل" },
+    "may": { "arabicTranslation": "مايو" },
+    "june": { "arabicTranslation": "يونيو" },
+    "july": { "arabicTranslation": "يوليو" },
+    "august": { "arabicTranslation": "أغسطس" },
+    "september": { "arabicTranslation": "سبتمبر" },
+    "october": { "arabicTranslation": "أكتوبر" },
+    "november": { "arabicTranslation": "نوفمبر" },
+    "december": { "arabicTranslation": "ديسمبر" },
+    "leap-year": {
+      "definition": "A year with 366 days, including an extra day in February.",
+      "arabicTranslation": "سنة كبيسة"
+    },
+    "fiscal-year": {
+      "definition": "A twelve-month period used to plan and report an organization's finances.",
+      "arabicTranslation": "سنة مالية"
+    },
+    "academic-year": {
+      "definition": "The part of the year when a school or university holds classes.",
+      "arabicTranslation": "سنة دراسية"
+    },
+    "calendar-year": {
+      "definition": "The twelve-month period from January 1 to December 31.",
+      "arabicTranslation": "سنة تقويمية"
+    },
+    "quarter": {
+      "definition": "One of four three-month periods in a year.",
+      "arabicTranslation": "ربع سنة"
+    },
+    "semester": { "arabicTranslation": "فصل دراسي" },
+    "trimester": { "arabicTranslation": "فصل من ثلاثة فصول دراسية" },
+    "biannual": {
+      "definition": "Happening twice in one year.",
+      "arabicTranslation": "مرتين في السنة"
+    },
+    "today": { "definition": "The day that is happening now.", "arabicTranslation": "اليوم" },
+    "tomorrow": {
+      "definition": "The day immediately after the present day.",
+      "arabicTranslation": "غدًا"
+    },
+    "yesterday": { "definition": "The day immediately before today.", "arabicTranslation": "أمس" },
+    "date": {
+      "definition": "A particular day shown by its day, month, and year.",
+      "arabicTranslation": "تاريخ"
+    },
+    "appointment": {
+      "definition": "A planned meeting with a person at a particular time.",
+      "arabicTranslation": "موعد"
+    },
+    "planner": {
+      "definition": "A notebook or calendar used to organize tasks, dates, and appointments.",
+      "arabicTranslation": "مفكرة تخطيط"
+    },
+    "diary": {
+      "definition": "A book in which someone writes about what happens each day.",
+      "arabicTranslation": "مفكرة يومية"
+    },
+    "agenda": {
+      "definition": "A list of topics to discuss during a meeting.",
+      "arabicTranslation": "جدول أعمال"
+    },
+    "deadline": { "arabicTranslation": "موعد نهائي" },
+    "schedule": {
+      "definition": "A plan that shows when activities or events will happen.",
+      "arabicTranslation": "جدول زمني"
+    },
+    "event": {
+      "definition": "Something planned to happen at a particular time, such as a celebration or meeting.",
+      "arabicTranslation": "فعالية"
+    }
+  },
+  "fruits": {
+    "banana": {
+      "definition": "A long, curved fruit with yellow skin and soft, sweet flesh.",
+      "arabicTranslation": "موز"
+    },
+    "orange": {
+      "definition": "A round citrus fruit with orange skin and juicy sections inside.",
+      "arabicTranslation": "برتقال"
+    },
+    "grape": {
+      "definition": "A small, round fruit that grows in bunches and can be green or purple.",
+      "arabicTranslation": "عنب"
+    },
+    "watermelon": {
+      "definition": "A large fruit with green skin, red or yellow flesh, and many seeds.",
+      "arabicTranslation": "بطيخ"
+    },
+    "pineapple": {
+      "definition": "A large tropical fruit with rough skin, yellow flesh, and pointed leaves.",
+      "arabicTranslation": "أناناس"
+    },
+    "mango": {
+      "definition": "A sweet tropical fruit with yellow-orange flesh and one large seed."
+    },
+    "peach": {
+      "definition": "A soft, sweet fruit with fuzzy skin and one large stone inside.",
+      "arabicTranslation": "خوخ"
+    },
+    "pear": {
+      "definition": "A sweet fruit with a narrow top and rounded bottom.",
+      "arabicTranslation": "كمثرى"
+    },
+    "blueberry": { "arabicTranslation": "توت أزرق" },
+    "raspberry": { "arabicTranslation": "توت العليق" },
+    "blackberry": {
+      "definition": "A soft, dark-purple berry made of many small juicy parts.",
+      "arabicTranslation": "توت أسود"
+    },
+    "cranberry": {
+      "definition": "A small, tart red berry often used in juice or sauce.",
+      "arabicTranslation": "توت بري أحمر"
+    },
+    "gooseberry": {
+      "definition": "A small green or red berry with a tart taste, often used in jam.",
+      "arabicTranslation": "عنب الثعلب"
+    },
+    "mulberry": {
+      "definition": "A small, sweet berry that grows on a tree and can be red, purple, or black.",
+      "arabicTranslation": "توت شامي"
+    },
+    "boysenberry": {
+      "definition": "A large, dark berry related to blackberries and raspberries.",
+      "arabicTranslation": "توت بويسن"
+    },
+    "lingonberry": {
+      "definition": "A small, tart red berry that grows on low plants in northern regions.",
+      "arabicTranslation": "توت لينغون الأحمر"
+    },
+    "elderberry": {
+      "definition": "A small, dark berry from the elder tree, often cooked into syrup or jam.",
+      "arabicTranslation": "ثمار البيلسان"
+    },
+    "papaya": {
+      "definition": "A tropical fruit with yellow-orange skin, orange flesh, and black seeds.",
+      "arabicTranslation": "بابايا"
+    },
+    "passion-fruit": {
+      "definition": "A round tropical fruit with a tough skin and fragrant, seedy pulp inside.",
+      "arabicTranslation": "باشن فروت"
+    },
+    "guava": {
+      "definition": "A round tropical fruit with green or yellow skin and fragrant flesh.",
+      "arabicTranslation": "جوافة"
+    },
+    "coconut": {
+      "definition": "A large brown fruit with a hard shell, white flesh, and liquid inside."
+    },
+    "lychee": {
+      "definition": "A small fruit with rough red skin, sweet white flesh, and one seed.",
+      "arabicTranslation": "ليتشي"
+    },
+    "star-fruit": {
+      "definition": "A yellow tropical fruit whose slices look like stars.",
+      "arabicTranslation": "فاكهة النجمة"
+    },
+    "jackfruit": {
+      "definition": "A very large tropical fruit with a rough skin and sweet yellow pieces inside.",
+      "arabicTranslation": "جاك فروت"
+    },
+    "durian": {
+      "definition": "A large tropical fruit with a spiky shell and strong-smelling flesh.",
+      "arabicTranslation": "دوريان"
+    },
+    "rambutan": {
+      "definition": "A small tropical fruit with a red hairy skin and sweet white flesh.",
+      "arabicTranslation": "رامبوتان"
+    },
+    "lemon": {
+      "definition": "A yellow citrus fruit with sour juice.",
+      "arabicTranslation": "ليمون"
+    },
+    "lime": {
+      "definition": "A small green citrus fruit with sour juice.",
+      "arabicTranslation": "ليمون أخضر"
+    },
+    "grapefruit": {
+      "definition": "A large citrus fruit with a thick rind and tart pink or yellow flesh.",
+      "arabicTranslation": "جريب فروت"
+    },
+    "tangerine": {
+      "definition": "A small orange citrus fruit with sweet flesh and easy-to-peel skin.",
+      "arabicTranslation": "يوسفي"
+    },
+    "mandarin": {
+      "definition": "A small sweet citrus fruit with a loose, easy-to-peel orange skin.",
+      "arabicTranslation": "يوسفي"
+    },
+    "clementine": { "arabicTranslation": "كليمنتين" },
+    "kumquat": {
+      "definition": "A small orange citrus fruit that can be eaten with its sweet peel.",
+      "arabicTranslation": "كمكوات"
+    },
+    "pomelo": {
+      "definition": "A very large citrus fruit with thick skin and pale, mildly sweet sections.",
+      "arabicTranslation": "بوميلو"
+    },
+    "clementine": {
+      "definition": "A small, sweet type of mandarin orange with thin, easy-to-peel skin.",
+      "arabicTranslation": "كليمنتين"
+    },
+    "blood-orange": {
+      "definition": "A type of orange with red or dark-red flesh inside.",
+      "arabicTranslation": "برتقال دموي"
+    },
+    "cherry": {
+      "definition": "A small, round fruit with red or dark skin and one hard stone inside."
+    },
+    "plum": {
+      "definition": "A small, smooth-skinned fruit with sweet flesh and one stone inside.",
+      "arabicTranslation": "برقوق"
+    },
+    "apricot": {
+      "definition": "A small orange fruit with soft skin, sweet flesh, and one stone inside.",
+      "arabicTranslation": "مشمش"
+    },
+    "nectarine": {
+      "definition": "A sweet fruit like a peach but with smooth skin.",
+      "arabicTranslation": "خوخ أملس"
+    },
+    "date": {
+      "definition": "A small, sweet brown fruit that grows on a palm tree.",
+      "arabicTranslation": "تمر"
+    },
+    "fig": {
+      "definition": "A soft fruit with thin skin and many tiny seeds inside.",
+      "arabicTranslation": "تين"
+    },
+    "avocado": {
+      "definition": "A fruit with green flesh, thick skin, and one large seed.",
+      "arabicTranslation": "أفوكادو"
+    },
+    "persimmon": {
+      "definition": "A sweet orange fruit with smooth skin and soft flesh when ripe.",
+      "arabicTranslation": "كاكي"
+    },
+    "olive": {
+      "definition": "A small green or black fruit often eaten after curing or pressed for oil.",
+      "arabicTranslation": "زيتونة"
+    },
+    "pomegranate": {
+      "definition": "A round fruit with a thick skin and many juicy red seeds inside.",
+      "arabicTranslation": "رمان"
+    }
+  },
+  "vegetables": {
+    "potato": { "arabicTranslation": "بطاطس" },
+    "beet": {
+      "definition": "A round root vegetable with dark-red flesh, often eaten cooked or raw.",
+      "arabicTranslation": "شمندر"
+    },
+    "turnip": {
+      "definition": "A round root vegetable with white or purple skin and pale flesh.",
+      "arabicTranslation": "لفت"
+    },
+    "radish": {
+      "definition": "A small, crisp root vegetable with a sharp taste, often eaten raw.",
+      "arabicTranslation": "فجل"
+    },
+    "parsnip": {
+      "definition": "A pale root vegetable shaped like a carrot, with a sweet taste.",
+      "arabicTranslation": "جزر أبيض"
+    },
+    "yam": {
+      "definition": "A starchy edible tuber with rough skin, often cooked like a potato.",
+      "arabicTranslation": "يام"
+    },
+    "rutabaga": {
+      "definition": "A large round root vegetable with purple skin and yellow flesh.",
+      "arabicTranslation": "لفت سويدي"
+    },
+    "ginger": {
+      "definition": "A knobby, spicy root used to flavor food and drinks.",
+      "arabicTranslation": "زنجبيل",
+      "exampleUsage": "She grated fresh ginger into the soup."
+    },
+    "lettuce": { "arabicTranslation": "خس" },
+    "spinach": {
+      "definition": "A leafy green vegetable eaten raw or cooked.",
+      "arabicTranslation": "سبانخ"
+    },
+    "kale": {
+      "definition": "A leafy green vegetable with curly leaves.",
+      "arabicTranslation": "كرنب أجعد"
+    },
+    "arugula": {
+      "definition": "A leafy salad vegetable with a slightly peppery taste.",
+      "arabicTranslation": "جرجير"
+    },
+    "cabbage": {
+      "definition": "A leafy vegetable with a tightly packed, round head.",
+      "arabicTranslation": "ملفوف"
+    },
+    "chard": {
+      "definition": "A leafy green vegetable with broad leaves and thick edible stems.",
+      "arabicTranslation": "سلق"
+    },
+    "romaine": {
+      "definition": "A type of lettuce with long, crisp leaves.",
+      "arabicTranslation": "خس روماني"
+    },
+    "watercress": {
+      "definition": "A leafy green vegetable that grows in water and has a peppery taste.",
+      "arabicTranslation": "جرجير مائي"
+    },
+    "broccoli": {
+      "definition": "A green vegetable with a thick stem and clusters of small flower buds.",
+      "arabicTranslation": "بروكلي"
+    },
+    "cauliflower": {
+      "definition": "A vegetable with a firm white head made of tightly packed flower buds.",
+      "arabicTranslation": "قرنبيط"
+    },
+    "kohlrabi": {
+      "definition": "A vegetable with a round, swollen stem and crisp flesh.",
+      "arabicTranslation": "كرنب ساقي"
+    },
+    "zucchini": {
+      "definition": "A long green summer squash with soft skin, eaten cooked or raw.",
+      "arabicTranslation": "كوسا"
+    },
+    "pumpkin": { "arabicTranslation": "قرع عسل" },
+    "cucumber": {
+      "definition": "A long green vegetable with crisp, watery flesh, often eaten raw.",
+      "arabicTranslation": "خيار"
+    },
+    "gourd": {
+      "definition": "A fruit with a hard shell, grown for food, containers, or decoration.",
+      "arabicTranslation": "قرع"
+    },
+    "bell-pepper": {
+      "definition": "A mild, hollow pepper that may be green, red, yellow, or orange.",
+      "arabicTranslation": "فلفل رومي"
+    },
+    "chili-pepper": {
+      "definition": "A small pepper with a hot taste, used to add heat to food.",
+      "arabicTranslation": "فلفل حار"
+    },
+    "eggplant": {
+      "definition": "A vegetable with smooth, usually purple skin and soft flesh when cooked.",
+      "arabicTranslation": "باذنجان"
+    },
+    "serrano": {
+      "definition": "A small, hot chili pepper that is green or red.",
+      "arabicTranslation": "فلفل سيرانو"
+    },
+    "cayenne": { "arabicTranslation": "فلفل كايين" },
+    "paprika": {
+      "definition": "A red spice made from dried and ground peppers.",
+      "arabicTranslation": "بابريكا"
+    },
+    "onion": { "arabicTranslation": "بصل" },
+    "garlic": {
+      "definition": "A strongly flavored bulb made of cloves, used to season food.",
+      "arabicTranslation": "ثوم"
+    },
+    "leek": {
+      "definition": "A vegetable with a long white stem and flat green leaves, related to onions.",
+      "arabicTranslation": "كراث"
+    },
+    "shallot": {
+      "definition": "A small onion-like vegetable with a mild flavor, used in cooking.",
+      "arabicTranslation": "بصل شالوت"
+    },
+    "scallion": {
+      "definition": "A young onion with a long green stem and a small white base.",
+      "arabicTranslation": "بصل أخضر"
+    },
+    "chive": {
+      "definition": "A thin green herb with a mild onion flavor, often cut into small pieces.",
+      "arabicTranslation": "ثوم معمر"
+    },
+    "asparagus": {
+      "definition": "A green vegetable eaten as young, tender stalks.",
+      "arabicTranslation": "هليون"
+    },
+    "celery": {
+      "definition": "A crisp vegetable with long pale-green stalks and leaves.",
+      "arabicTranslation": "كرفس"
+    },
+    "artichoke": {
+      "definition": "A vegetable with thick leaves surrounding a tender edible center.",
+      "arabicTranslation": "خرشوف"
+    },
+    "fennel": {
+      "definition": "A vegetable with a pale bulb and feathery leaves, with a mild anise flavor.",
+      "arabicTranslation": "شمر"
+    }
+  },
+  "library": {
+    "novel": {
+      "arabicTranslation": "رواية",
+      "exampleUsage": "She borrowed a novel about a family adventure."
+    },
+    "encyclopedia": {
+      "arabicTranslation": "موسوعة",
+      "exampleUsage": "He used an encyclopedia to learn about planets."
+    },
+    "atlas": {
+      "arabicTranslation": "أطلس خرائط",
+      "exampleUsage": "She opened the atlas to find a map of Africa."
+    },
+    "biography": {
+      "arabicTranslation": "سيرة شخص",
+      "exampleUsage": "He read a biography of a famous scientist."
+    },
+    "step-stool": {
+      "definition": "A small stool with one or two steps, used to reach high shelves.",
+      "arabicTranslation": "مقعد صغير بدرجات",
+      "exampleUsage": "The librarian used a step stool to reach the top shelf."
+    },
+    "cart": {
+      "definition": "A wheeled frame used to move books and other items around a library.",
+      "exampleUsage": "The librarian pushed a cart of books between the shelves."
+    },
+    "armchair": {
+      "arabicTranslation": "كرسي بذراعين",
+      "exampleUsage": "She sat in an armchair to read by the window."
+    },
+    "fiction": {
+      "arabicTranslation": "أدب خيالي",
+      "exampleUsage": "The fiction shelves contain made-up stories."
+    },
+    "non-fiction": {
+      "arabicTranslation": "كتب غير خيالية",
+      "exampleUsage": "He chose a non-fiction book about birds."
+    },
+    "periodicals": {
+      "definition": "Magazines and newspapers published regularly, such as every week or month.",
+      "arabicTranslation": "دوريات",
+      "exampleUsage": "The newest periodicals are displayed near the entrance."
+    },
+    "media-center": {
+      "definition": "A room with books, computers, and other media for learning and research.",
+      "arabicTranslation": "مركز مصادر التعلم",
+      "exampleUsage": "The students used computers in the media center."
+    },
+    "help-desk": {
+      "definition": "A counter where library staff answer questions and help visitors find resources.",
+      "arabicTranslation": "مكتب المساعدة",
+      "exampleUsage": "Ask at the help desk if you cannot find a book."
+    },
+    "archive": {
+      "arabicTranslation": "أرشيف",
+      "exampleUsage": "The archive holds old photographs and letters."
+    },
+    "reading": {
+      "arabicTranslation": "القراءة",
+      "exampleUsage": "Reading helps her learn new words."
+    },
+    "borrowing": {
+      "definition": "Taking a library item home for a limited time and returning it later.",
+      "arabicTranslation": "استعارة الكتب",
+      "exampleUsage": "Borrowing books is free with a library card."
+    },
+    "returning": {
+      "definition": "Bringing a borrowed library item back after using it.",
+      "arabicTranslation": "إرجاع الكتب",
+      "exampleUsage": "Returning books on time helps other readers."
+    },
+    "searching": {
+      "arabicTranslation": "البحث",
+      "exampleUsage": "She is searching the catalog for a history book."
+    },
+    "studying": {
+      "arabicTranslation": "الدراسة",
+      "exampleUsage": "The students are studying quietly at the tables."
+    },
+    "browsing": {
+      "definition": "Looking through books or shelves without searching for one specific title.",
+      "arabicTranslation": "تصفّح الكتب",
+      "exampleUsage": "He spent an hour browsing the new books."
+    },
+    "reserving": {
+      "definition": "Asking the library to hold a book so you can borrow it later.",
+      "arabicTranslation": "حجز الكتب",
+      "exampleUsage": "Reserving the book means she can collect it when it is available."
+    },
+    "typing": {
+      "arabicTranslation": "الكتابة على لوحة المفاتيح",
+      "exampleUsage": "He is typing a search term into the catalog."
+    },
+    "whispering": {
+      "definition": "Speaking very quietly so that other people in the library are not disturbed.",
+      "arabicTranslation": "الهمس",
+      "exampleUsage": "The children were whispering in the reading room."
+    },
+    "bookmark": {
+      "arabicTranslation": "علامة كتاب",
+      "exampleUsage": "She placed a bookmark between the pages."
+    },
+    "book-cover": {
+      "definition": "The protective outer part of a book that shows its title and often a picture.",
+      "arabicTranslation": "غلاف الكتاب",
+      "exampleUsage": "The book cover shows a bright picture of the sea."
+    },
+    "librarian": {
+      "arabicTranslation": "أمين مكتبة",
+      "exampleUsage": "The librarian helped him find a book."
+    },
+    "assistant": {
+      "arabicTranslation": "مساعد المكتبة",
+      "exampleUsage": "The assistant returned the books to their shelves."
+    },
+    "reader": {
+      "arabicTranslation": "قارئ",
+      "exampleUsage": "The reader sat quietly with a book."
+    },
+    "researcher": {
+      "definition": "A person who studies a subject carefully to discover or check information.",
+      "exampleUsage": "The researcher examined old newspapers in the library."
+    },
+    "author": {
+      "definition": "A person who writes a book, story, or other written work.",
+      "arabicTranslation": "مؤلف",
+      "exampleUsage": "The author signed her new book at the library."
+    },
+    "storyteller": {
+      "arabicTranslation": "راوي قصص",
+      "exampleUsage": "The storyteller read a tale to the children."
+    },
+    "cleaner": {
+      "definition": "A person who cleans the library and keeps its rooms tidy.",
+      "exampleUsage": "The cleaner wiped the tables after closing time."
+    },
+    "reference-book": {
+      "definition": "A book used to look up facts, such as a dictionary or encyclopedia.",
+      "exampleUsage": "She checked a reference book to confirm the date."
+    },
+    "stamp": {
+      "definition": "A small tool used to print an official mark on a library item or paper.",
+      "exampleUsage": "The librarian used a stamp to mark the return date."
+    },
+    "catalog": {
+      "definition": "A searchable list of the books and other items held by a library.",
+      "arabicTranslation": "فهرس المكتبة",
+      "exampleUsage": "He searched the catalog for books about space."
+    },
+    "computer": {
+      "definition": "An electronic device used to search the catalog, read, or write.",
+      "exampleUsage": "She used the computer to search for a book."
+    },
+    "printer": {
+      "definition": "A machine that produces paper copies of documents or pictures.",
+      "exampleUsage": "He printed his assignment using the library printer."
+    },
+    "guard": {
+      "definition": "A person who watches over the library and helps keep people and property safe.",
+      "exampleUsage": "The guard checked the entrance before closing."
+    },
+    "bean-bag": { "arabicTranslation": "مقعد مملوء بحبيبات" }
+  }
+}

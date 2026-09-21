@@ -11,9 +11,15 @@ import {
   RotateCcw,
 } from "lucide-react";
 import type { Action } from "../types";
-import { COURSE_UNITS, type CourseUnit } from "../data/lessons";
+import {
+  COURSE_MODULES,
+  COURSE_UNITS,
+  LEARNING_PATH_UNIT_IDS,
+  type CourseUnit,
+} from "../data/lessons";
 import { FOUNDATION_SEQUENCE } from "../data/curriculumSequence";
 import { getUnitCurriculumDesign } from "../learning/curriculumModel";
+import { recommendPathUnit } from "../learning/recommendPathUnit";
 import { useProgress } from "../data/progress";
 import { useLearner } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
@@ -32,42 +38,64 @@ interface Props {
 
 interface PathUnit {
   unit: CourseUnit;
+  familiar: number;
   mastered: number;
+  due: number;
   percent: number;
 }
 
-const PHASES = [
-  { key: "learn.phaseFoundations", start: 0, end: 6 },
-  { key: "learn.phasePeoplePlaces", start: 6, end: 12 },
-  { key: "learn.phaseInteraction", start: 12, end: FOUNDATION_SEQUENCE.length },
-] as const;
+const foundationPhases = [
+  { titleKey: "learn.phaseFoundations", start: 0, end: 6 },
+  { titleKey: "learn.phasePeoplePlaces", start: 6, end: 12 },
+  { titleKey: "learn.phaseInteraction", start: 12, end: FOUNDATION_SEQUENCE.length },
+];
+
+const PHASES = COURSE_MODULES.filter((module) => !module.isSpecialSection).reduce(
+  (phases, module) => {
+    const foundationIds = new Set<string>(FOUNDATION_SEQUENCE);
+    const count = module.unitIds.filter((id) => !foundationIds.has(id) && COURSE_UNITS[id]).length;
+    const start = phases.at(-1)?.end ?? FOUNDATION_SEQUENCE.length;
+    if (count) phases.push({ titleKey: `learn.module${module.level}`, start, end: start + count });
+    return phases;
+  },
+  foundationPhases
+);
 
 export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
   const { t } = useI18n();
   const { progress } = useProgress();
   const { state: learnerState } = useLearner();
 
-  const pathUnits = useMemo<PathUnit[]>(
-    () =>
-      FOUNDATION_SEQUENCE.map((unitId) => COURSE_UNITS[unitId])
-        .filter((unit): unit is CourseUnit => Boolean(unit))
-        .map((unit) => {
-          const mastered = unit.wordIds.filter(
-            (wordId) => (progress.wordMastery[wordId] ?? 0) >= 3
-          ).length;
-          return {
-            unit,
-            mastered,
-            percent: unit.wordIds.length ? Math.round((mastered / unit.wordIds.length) * 100) : 0,
-          };
-        }),
-    [progress.wordMastery]
-  );
+  const pathUnits = useMemo<PathUnit[]>(() => {
+    const now = new Date().toISOString();
+    return LEARNING_PATH_UNIT_IDS.map((unitId) => COURSE_UNITS[unitId])
+      .filter((unit): unit is CourseUnit => Boolean(unit))
+      .map((unit) => {
+        const familiar = unit.wordIds.filter((wordId) =>
+          ["familiar", "strong"].includes(progress.wordMemory[wordId]?.mastery ?? "new")
+        ).length;
+        const mastered = unit.wordIds.filter(
+          (wordId) => (progress.wordMastery[wordId] ?? 0) >= 3
+        ).length;
+        const due = unit.wordIds.filter((wordId) => {
+          const nextReviewAt = progress.wordMemory[wordId]?.nextReviewAt;
+          return Boolean(nextReviewAt && nextReviewAt <= now);
+        }).length;
+        return {
+          unit,
+          familiar,
+          mastered,
+          due,
+          percent: unit.wordIds.length ? Math.round((mastered / unit.wordIds.length) * 100) : 0,
+        };
+      });
+  }, [progress.wordMastery, progress.wordMemory]);
 
-  const hasStartedLearning = Object.keys(progress.wordMemory).length > 0;
-  const preferredUnit = COURSE_UNITS[learnerState.preferences.startingUnitId];
-  const nextPathUnit = pathUnits.find((item) => item.percent < 100) ?? pathUnits.at(-1);
-  const recommendedUnit = !hasStartedLearning && preferredUnit ? preferredUnit : nextPathUnit?.unit;
+  const recommendedUnit = recommendPathUnit(
+    pathUnits.map((item) => item.unit),
+    learnerState.preferences.startingUnitId,
+    progress.wordMemory
+  );
   const totalWords = pathUnits.reduce((sum, item) => sum + item.unit.wordIds.length, 0);
   const masteredWords = pathUnits.reduce((sum, item) => sum + item.mastered, 0);
   const pathPercent = totalWords ? Math.round((masteredWords / totalWords) * 100) : 0;
@@ -116,7 +144,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           className="flex min-h-[48px] items-center justify-center gap-2 rounded-xl border border-border bg-background px-5 py-3 text-sm font-bold text-foreground hover:border-primary/40 hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <Library className="size-5" aria-hidden />
-          <span>Explore picture worlds</span>
+          <span>{t("learn.pictureWorlds")}</span>
         </button>
       </header>
 
@@ -128,29 +156,31 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <div>
             <div className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-primary">
               <Headphones className="size-4" aria-hidden />
-              <span>Learn to read and communicate · Levels 0–13</span>
+              <span>{t("learn.readingLevels")}</span>
             </div>
             <div className="flex flex-wrap items-center gap-2">
               <h2
                 id="listening-foundations-heading"
                 className="text-xl font-black text-foreground sm:text-2xl"
               >
-                Sounds, Reading, and Clear Communication
+                {t("learn.readingTitle")}
               </h2>
               <Badge variant="primary" size="sm">
-                Pre-A1
+                {t("learn.preA1")}
               </Badge>
             </div>
             <p className="mt-2 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
-              Follow the core path from careful listening to first words, or test the optional
-              pronunciation pilot. Every lesson remains open and progress is saved locally.
+              {t("learn.readingDescription")}
             </p>
             <div className="mt-4 max-w-xl">
               <ProgressBar
                 progressPercent={foundationPercent}
-                label="Lessons completed"
+                label={t("learn.lessonsCompleted")}
                 labelRight={`${completedFoundationLessons.length}/${FOUNDATION_LESSONS.length}`}
-                ariaLabel={`${completedFoundationLessons.length} of ${FOUNDATION_LESSONS.length} lessons complete`}
+                ariaLabel={t("learn.lessonsCompletedAria", {
+                  complete: completedFoundationLessons.length,
+                  total: FOUNDATION_LESSONS.length,
+                })}
               />
             </div>
           </div>
@@ -168,14 +198,14 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
             )}
             <span>
               {hasFoundationProgress
-                ? `Continue: ${nextFoundationLesson.shortTitle}`
-                : "Start Lesson 1"}
+                ? t("learn.continueFoundation", { lesson: nextFoundationLesson.shortTitle })
+                : t("learn.startFoundation")}
             </span>
             <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
           </button>
         </div>
 
-        <div className="mt-6 grid gap-5" aria-label="Foundation curriculum stages">
+        <div className="mt-6 grid gap-5" aria-label={t("learn.foundationStages")}>
           {FOUNDATION_STAGES.filter(
             (stage) =>
               showAllFoundationLessons ||
@@ -201,7 +231,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                   </span>
                   <div>
                     <p className="text-xs font-black uppercase tracking-wide text-primary">
-                      Level {stage.level}
+                      {t("learn.levelNumber", { level: stage.level })}
                     </p>
                     <h3
                       id={`foundation-stage-${stage.id}`}
@@ -228,7 +258,9 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                       >
                         <div className="flex flex-wrap items-start justify-between gap-2">
                           <div>
-                            <p className="text-xs font-black text-primary">Unit {unit.id}</p>
+                            <p className="text-xs font-black text-primary">
+                              {t("learn.unitNumber", { unit: unit.id })}
+                            </p>
                             <h4
                               id={`foundation-unit-${unit.id.replace(".", "-")}`}
                               className="mt-0.5 font-black text-foreground"
@@ -244,8 +276,8 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                             {unit.lessons.some(
                               (lesson) => lesson.completionMode === "qualitative-routing"
                             )
-                              ? "completed"
-                              : "mastered"}
+                              ? t("learn.completed")
+                              : t("learn.mastered")}
                           </span>
                         </div>
                         <ol className="mt-3 grid gap-2 sm:grid-cols-2">
@@ -285,19 +317,25 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                                     <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
                                       {isComplete
                                         ? lesson.completionMode === "qualitative-routing"
-                                          ? "Completed · evidence saved"
-                                          : `Mastered · best ${lessonProgress.bestScorePercent}%`
+                                          ? t("learn.completedEvidence")
+                                          : t("learn.masteredScore", {
+                                              score: lessonProgress.bestScorePercent,
+                                            })
                                         : needsPractice
-                                          ? `Practice again · best ${lessonProgress.bestScorePercent}%`
+                                          ? t("learn.practiceScore", {
+                                              score: lessonProgress.bestScorePercent,
+                                            })
                                           : lessonProgress?.status === "in-progress"
-                                            ? `Resume · step ${lessonProgress.currentStep + 1}`
+                                            ? t("learn.resumeStep", {
+                                                step: lessonProgress.currentStep + 1,
+                                              })
                                             : isRecommended
-                                              ? "Start here"
+                                              ? t("learn.startHere")
                                               : lesson.reviewStatus === "pilot"
-                                                ? "Pilot · qualitative progress"
+                                                ? t("learn.pilotProgress")
                                                 : lesson.audioOnly
-                                                  ? "Listen and respond"
-                                                  : "Sounds, letters, and words"}
+                                                  ? t("learn.listenRespond")
+                                                  : t("learn.soundsLettersWords")}
                                     </span>
                                   </span>
                                   <ArrowRight
@@ -322,9 +360,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
             aria-expanded={showAllFoundationLessons}
             className="min-h-12 rounded-xl border border-primary/25 bg-background px-5 py-3 text-sm font-bold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            {showAllFoundationLessons
-              ? "Show only my current stage"
-              : "Explore all lessons and the optional pronunciation course"}
+            {showAllFoundationLessons ? t("learn.currentFoundation") : t("learn.allFoundation")}
           </button>
         </div>
       </section>
@@ -336,7 +372,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         <div>
           <div className="mb-2 flex items-center gap-2 text-xs font-bold text-primary">
             <Sparkles className="size-4" aria-hidden />
-            <span>Recommended picture world</span>
+            <span>{t("learn.recommendedWorld")}</span>
           </div>
           <h2 id="recommended-heading" className="text-xl font-black text-foreground sm:text-2xl">
             {recommendedUnit.name}
@@ -365,13 +401,13 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
       >
         <span>
           <span className="block text-xs font-black uppercase tracking-wide text-primary">
-            Optional practice
+            {t("learn.routeBadge")}
           </span>
           <span className="mt-1 block text-xl font-black text-foreground">
-            Explore picture worlds
+            {t("learn.routeToggle")}
           </span>
           <span className="mt-1 block text-sm font-medium text-muted-foreground">
-            Browse topic-based vocabulary separately from your core reading path.
+            {t("learn.routeHint")}
           </span>
         </span>
         <ChevronDown
@@ -384,19 +420,18 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         <div id="picture-world-path" className="contents">
           <div className="rounded-2xl border border-border bg-wp-card p-4 sm:p-5">
             <p className="text-xs font-black uppercase tracking-wide text-primary">
-              Explore by topic
+              {t("learn.routeLabel")}
             </p>
-            <h2 className="mt-1 text-xl font-black text-foreground">Picture worlds</h2>
+            <h2 className="mt-1 text-xl font-black text-foreground">{t("learn.routeHeading")}</h2>
             <p className="mt-1 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
-              Build useful vocabulary through familiar places and interests. These topics support
-              the reading journey, but they do not replace its ordered lessons.
+              {t("learn.routeDescription")}
             </p>
             <div className="mt-4 max-w-xl">
               <ProgressBar
                 progressPercent={pathPercent}
-                label="Picture-word mastery"
+                label={t("learn.routeMastery")}
                 labelRight={`${masteredWords}/${totalWords}`}
-                ariaLabel={t("learn.foundationProgressAria", {
+                ariaLabel={t("learn.routeMasteryAria", {
                   mastered: masteredWords,
                   total: totalWords,
                 })}
@@ -411,7 +446,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
               const completedCount = units.filter((item) => item.percent === 100).length;
               return (
                 <section
-                  key={phase.key}
+                  key={phase.titleKey}
                   aria-labelledby={`path-phase-${phaseIndex}`}
                   className="rounded-2xl border border-border bg-wp-card p-3 sm:p-4"
                 >
@@ -427,7 +462,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                         id={`path-phase-${phaseIndex}`}
                         className="block font-sans text-lg font-black text-foreground sm:text-xl"
                       >
-                        {t(phase.key)}
+                        {t(phase.titleKey)}
                       </span>
                       <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
                         {t("learn.phaseSummary", {
@@ -446,7 +481,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
 
                   {isExpanded && (
                     <ol id={`path-phase-content-${phaseIndex}`} className="mt-3 grid gap-3">
-                      {units.map(({ unit, mastered, percent }, index) => {
+                      {units.map(({ unit, familiar, mastered, due, percent }, index) => {
                         const step = phase.start + index + 1;
                         const design = getUnitCurriculumDesign(unit);
                         const isCurrent = unit.id === recommendedUnit.id;
@@ -488,16 +523,20 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                                     {unit.name}
                                   </span>
                                   <Badge variant="primary" size="sm">
-                                    {design.cefr}
+                                    {design.reviewStatus === "authored"
+                                      ? design.cefr
+                                      : t("study.suggestedLevel", { level: design.cefr })}
                                   </Badge>
                                 </span>
                                 <span className="mt-1 line-clamp-2 block text-xs leading-relaxed text-muted-foreground sm:text-sm">
                                   {design.outcome}
                                 </span>
-                                {(mastered > 0 || isCurrent) && (
+                                {(familiar > 0 || mastered > 0 || isCurrent) && (
                                   <span className="mt-2 block text-xs font-semibold text-primary">
-                                    {t("learn.wordsMastered", {
+                                    {t("learn.wordProgress", {
+                                      familiar,
                                       mastered,
+                                      due,
                                       total: unit.wordIds.length,
                                     })}
                                   </span>
@@ -517,6 +556,34 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 </section>
               );
             })}
+            {COURSE_MODULES.filter((module) => module.isSpecialSection).map((module) => (
+              <section
+                key={module.id}
+                className="rounded-2xl border border-border bg-wp-card p-4 sm:p-5"
+              >
+                <h3 className="text-lg font-black text-foreground">{module.title}</h3>
+                <p className="mt-1 text-sm text-muted-foreground">{t("learn.specialNote")}</p>
+                <ul className="mt-3 grid gap-2">
+                  {module.unitIds
+                    .map((id) => COURSE_UNITS[id])
+                    .filter((unit): unit is CourseUnit => Boolean(unit))
+                    .map((unit) => (
+                      <li key={unit.id}>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
+                          }
+                          className="flex min-h-12 w-full items-center justify-between rounded-xl border border-border px-4 py-3 text-start font-bold text-foreground hover:bg-muted/30 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                        >
+                          {unit.name}
+                          <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+                        </button>
+                      </li>
+                    ))}
+                </ul>
+              </section>
+            ))}
           </div>
         </div>
       )}

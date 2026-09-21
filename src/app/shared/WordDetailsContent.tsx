@@ -6,16 +6,34 @@ import { useI18n } from "../context/I18nContext";
 
 export function WordDetailsContent({
   word,
+  unitId,
   bilingual = true,
   className = "",
 }: {
   word: VocabularyItem;
+  unitId?: string;
   bilingual?: boolean;
   className?: string;
 }) {
   const { t } = useI18n();
   const { speak } = useAudio();
-  const entry = getLexiconEntry(word.id, word.label);
+  const baseEntry = getLexiconEntry(word.id, word.label, unitId);
+  const entry = {
+    ...baseEntry,
+    arabic: word.arabicTranslation ?? baseEntry.arabic,
+    sentences: word.exampleUsage
+      ? [
+          {
+            context: "Example",
+            en: word.exampleUsage,
+            ar: baseEntry.sentences.find((sentence) => sentence.en === word.exampleUsage)?.ar ?? "",
+          },
+        ]
+      : word.arabicTranslation !== undefined
+        ? []
+        : baseEntry.sentences,
+    exampleSentence: word.exampleUsage ?? baseEntry.exampleSentence,
+  };
   return (
     <div
       className={`flex-1 min-h-0 p-4 sm:p-6 overflow-y-auto overscroll-contain touch-pan-y flex flex-col gap-4 ${className}`}
@@ -145,7 +163,7 @@ export function WordDetailsContent({
                 <p className="font-sans text-foreground text-sm sm:text-base leading-relaxed">
                   &ldquo;{sentence.en}&rdquo;
                 </p>
-                {bilingual && (
+                {bilingual && sentence.ar && (
                   <p
                     className="font-arabic text-muted-foreground text-xs sm:text-sm"
                     dir="rtl"

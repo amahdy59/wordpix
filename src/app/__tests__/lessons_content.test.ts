@@ -21,6 +21,101 @@ const wordsOf = (unit: CourseUnit) => unitWords.get(unit.id) ?? [];
 const vocabulary = units.flatMap(wordsOf);
 
 describe("Vocabulary descriptions", () => {
+  it("loads the reviewed unit-scoped bilingual catalogue without unsafe rows", () => {
+    const translated = vocabulary.filter((word) => word.arabicTranslation);
+    const examples = vocabulary.filter((word) => word.exampleUsage);
+
+    expect(translated).toHaveLength(7180);
+    expect(examples).toHaveLength(2963);
+    translated.forEach((word) => {
+      expect(word.arabicTranslation, `${word.topic}/${word.id} has a non-Arabic gloss`).toMatch(
+        /[؀-ۿ]/
+      );
+    });
+    examples.forEach((word) => {
+      expect(
+        word.description,
+        `${word.topic}/${word.id} retained generic catalogue copy`
+      ).not.toMatch(/^A term used in the .+ context\.$/i);
+      expect(
+        word.exampleUsage,
+        `${word.topic}/${word.id} retained a generic catalogue example`
+      ).not.toMatch(/^The term .+ was used in the .+ lesson\.$/i);
+    });
+
+    const library = new Map((unitWords.get("library") ?? []).map((word) => [word.id, word]));
+    expect(library.get("novel")?.arabicTranslation).toBe("رواية");
+    expect(library.get("author")?.description).toBe(
+      "A person who writes a book, story, or other written work."
+    );
+    expect(library.get("cart")?.description).toContain("move books");
+    expect(library.get("borrowing")?.arabicTranslation).toBe("استعارة الكتب");
+    expect(
+      unitWords.get("freelancing-remote-work")?.find((word) => word.id === "1099")
+        ?.arabicTranslation
+    ).toBe("");
+    expect(unitWords.get("fruits")?.find((word) => word.id === "banana")?.arabicTranslation).toBe(
+      "موز"
+    );
+    expect(unitWords.get("fruits")?.find((word) => word.id === "cherry")?.description).toContain(
+      "fruit"
+    );
+    expect(
+      unitWords.get("vegetables")?.find((word) => word.id === "cucumber")?.arabicTranslation
+    ).toBe("خيار");
+    expect(
+      unitWords.get("days-months")?.find((word) => word.id === "appointment")?.description
+    ).toContain("planned meeting");
+    expect(unitWords.get("days-months")?.find((word) => word.id === "schedule")?.description).toBe(
+      "A plan that shows when activities or events will happen."
+    );
+    expect(unitWords.get("vegetables")?.find((word) => word.id === "ginger")?.exampleUsage).toBe(
+      "She grated fresh ginger into the soup."
+    );
+
+    const correctedFruitImages = [
+      "lemon",
+      "lime",
+      "grapefruit",
+      "tangerine",
+      "mandarin",
+      "clementine",
+      "kumquat",
+      "blood-orange",
+      "yuzu",
+      "cherry",
+      "apricot",
+      "date",
+      "fig",
+      "olive",
+      "avocado",
+      "persimmon",
+      "pomegranate",
+    ];
+    correctedFruitImages.forEach((id) => {
+      expect(unitWords.get("fruits")?.find((word) => word.id === id)?.img).toBe(
+        `/word-images/fruits/${id}-reviewed.avif`
+      );
+    });
+
+    for (const [unitId, reviewedCount] of [
+      ["fruits", 50],
+      ["vegetables", 60],
+      ["days-months", 49],
+    ] as const) {
+      const reviewed = (unitWords.get(unitId) ?? []).filter(
+        (word) => word.arabicTranslation !== undefined
+      );
+      expect(reviewed, `${unitId} catalogue coverage`).toHaveLength(reviewedCount);
+      reviewed.forEach((word) => {
+        expect(word.arabicTranslation, `${unitId}/${word.id} missing Arabic`).toBeTruthy();
+        expect(word.description, `${unitId}/${word.id} missing definition`).not.toBe(
+          PLACEHOLDER_DESCRIPTION
+        );
+      });
+    }
+  }, 60000);
+
   it("validates every completed editorial description", () => {
     vocabulary
       .filter((word) => word.description !== PLACEHOLDER_DESCRIPTION)

@@ -146,6 +146,7 @@ export function LearnArea({
       >
         {visibleWords.map((word) => {
           const entry = getLexiconEntry(word.id, word.label, materials.unitId);
+          const arabic = word.arabicTranslation ?? entry.arabic;
           const status = progress?.wordStatus[word.id] || "new";
           const learned = status === "learning" || status === "comfortable";
           return (
@@ -193,13 +194,13 @@ export function LearnArea({
                     />
                   </button>
                 </div>
-                {!immersionMode && hasArabicGloss(entry) && (
+                {!immersionMode && hasArabicGloss({ arabic }) && (
                   <p
                     dir="rtl"
                     lang="ar"
                     className="font-arabic font-bold text-lg text-foreground text-start"
                   >
-                    {entry.arabic}
+                    {arabic}
                   </p>
                 )}
                 <p className="text-sm leading-relaxed text-muted-foreground flex-1">

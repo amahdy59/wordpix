@@ -1,5 +1,10 @@
 import type { VocabularyItem } from "./lessons";
 import { VOCABULARY as BEDROOM_VOCABULARY } from "./units/bedroom";
+import {
+  BEDROOM_BILINGUAL_CONTENT,
+  loadBilingualUnit,
+  type UnitBilingualContent,
+} from "./bilingualCatalogue.generated";
 
 /**
  * Loads a unit's vocabulary on demand, and answers word lookups for whatever
@@ -254,10 +259,28 @@ function register(unitId: string, words: VocabularyItem[]): VocabularyItem[] {
   return words;
 }
 
+function applyBilingualContent(
+  words: VocabularyItem[],
+  content: UnitBilingualContent
+): VocabularyItem[] {
+  return words.map((word) => {
+    const reviewed = content[word.id];
+    if (!reviewed) return word;
+    return {
+      ...word,
+      description: reviewed.definition ?? word.description,
+      // Empty means the catalogue row was rejected; do not fall back to the
+      // global lexicon, where repeated ids can select another unit's sense.
+      arabicTranslation: reviewed.arabicTranslation ?? "",
+      exampleUsage: reviewed.exampleUsage,
+    };
+  });
+}
+
 // The default unit is in the main bundle already: the placement quiz and the
 // splash screen both read it before a learner has chosen anything, so
 // deferring it would buy a round trip and save nothing.
-register("bedroom", BEDROOM_VOCABULARY);
+register("bedroom", applyBilingualContent(BEDROOM_VOCABULARY, BEDROOM_BILINGUAL_CONTENT));
 
 export function isUnitLoaded(unitId: string): boolean {
   return byUnit.has(unitId);
@@ -268,7 +291,8 @@ export async function loadUnitVocabulary(unitId: string): Promise<VocabularyItem
   if (loaded) return loaded;
   const loader = LOADERS[unitId];
   if (!loader) return [];
-  return register(unitId, await loader());
+  const [words, bilingualContent] = await Promise.all([loader(), loadBilingualUnit(unitId)]);
+  return register(unitId, applyBilingualContent(words, bilingualContent));
 }
 
 /** A unit's words, or an empty array if it has not been loaded yet. */

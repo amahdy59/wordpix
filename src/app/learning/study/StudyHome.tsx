@@ -110,15 +110,22 @@ export function StudyHome({
         >
           <div className="flex flex-wrap items-center gap-2">
             <span className="rounded-full bg-primary px-3 py-1 text-xs font-black text-primary-foreground">
-              CEFR {curriculumDesign.cefr}
+              {curriculumDesign.reviewStatus === "authored"
+                ? `CEFR ${curriculumDesign.cefr}`
+                : t("study.suggestedLevel", { level: curriculumDesign.cefr })}
             </span>
-            <span className="rounded-full border border-primary/30 bg-card px-3 py-1 text-xs font-bold text-foreground">
-              GSE {curriculumDesign.gseRange[0]}–{curriculumDesign.gseRange[1]}
-            </span>
+            {curriculumDesign.reviewStatus === "authored" && (
+              <span className="rounded-full border border-primary/30 bg-card px-3 py-1 text-xs font-bold text-foreground">
+                GSE {curriculumDesign.gseRange[0]}–{curriculumDesign.gseRange[1]}
+              </span>
+            )}
             <span className="rounded-full border border-border bg-card px-3 py-1 text-xs font-bold capitalize text-muted-foreground">
               {t("study.pathwayType", { type: curriculumDesign.archetype })}
             </span>
           </div>
+          {curriculumDesign.reviewStatus === "provisional" && (
+            <p className="mt-3 text-sm text-muted-foreground">{t("study.provisionalUnit")}</p>
+          )}
           <h2 id="unit-outcome-heading" className="mt-4 text-lg font-black text-foreground">
             {t("study.outcomeHeading")}
           </h2>

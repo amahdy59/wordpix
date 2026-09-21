@@ -1,0 +1,198 @@
+{
+  "quadcopter": {
+    "definition": "A multirotor aircraft or drone that uses four rotors to create lift and control movement.",
+    "exampleUsage": "The quadcopter lifted straight up from the marked landing area.",
+    "arabicTranslation": "طائرة مسيّرة رباعية المراوح"
+  },
+  "hexacopter": {
+    "definition": "A multirotor aircraft or drone that uses six rotors for lift and control.",
+    "exampleUsage": "The hexacopter carried a camera for the mapping flight.",
+    "arabicTranslation": "طائرة مسيّرة سداسية المراوح"
+  },
+  "fixed-wing": {
+    "definition": "An aircraft or drone with stationary wings that creates lift mainly by moving forward through the air.",
+    "exampleUsage": "The fixed-wing drone covered a large area during the survey.",
+    "arabicTranslation": "طائرة مسيّرة ثابتة الجناح"
+  },
+  "racing-drone": {
+    "definition": "A small, fast drone designed for competitive flying around a marked course, often using a live camera view.",
+    "exampleUsage": "The racing drone passed quickly through the final gate.",
+    "arabicTranslation": "طائرة مسيّرة للسباقات"
+  },
+  "fpv-drone": {
+    "definition": "A drone flown using a live video feed from an onboard camera so the pilot sees from the aircraft's viewpoint.",
+    "exampleUsage": "The pilot watched the FPV drone's camera feed on a display.",
+    "arabicTranslation": "طائرة مسيّرة بمنظور الشخص الأول (FPV)"
+  },
+  "nano-drone": {
+    "definition": "A very small, lightweight drone designed for short-range flying, training, or indoor use.",
+    "exampleUsage": "The nano drone was small enough to fly safely in the practice room.",
+    "arabicTranslation": "طائرة مسيّرة صغيرة جدًا"
+  },
+  "delivery-drone": {
+    "definition": "An unmanned aircraft designed to carry and deliver small packages or supplies.",
+    "exampleUsage": "The delivery drone carried a small parcel to the test site.",
+    "arabicTranslation": "طائرة مسيّرة للتوصيل"
+  },
+  "survey-drone": {
+    "definition": "A drone equipped with cameras or sensors to collect measurements and images for mapping or inspection.",
+    "exampleUsage": "The survey drone collected images for a map of the site.",
+    "arabicTranslation": "طائرة مسيّرة للمسح"
+  },
+  "agricultural-drone": {
+    "definition": "A drone used in farming for tasks such as crop monitoring, mapping, spraying, or spreading materials.",
+    "exampleUsage": "The agricultural drone photographed the field to check crop health.",
+    "arabicTranslation": "طائرة مسيّرة زراعية"
+  },
+  "underwater-drone": {
+    "definition": "A remotely controlled or autonomous vehicle that moves underwater and uses cameras or sensors to inspect or explore.",
+    "exampleUsage": "The underwater drone inspected the structure below the surface.",
+    "arabicTranslation": "مركبة مسيّرة تحت الماء"
+  },
+  "propeller": {
+    "definition": "A mechanical device that rotates to push against air or water.",
+    "arabicTranslation": "مروحة دافعة"
+  },
+  "motor": {
+    "definition": "A nonspecific agent that imparts motion.",
+    "arabicTranslation": "محرك"
+  },
+  "frame": {
+    "definition": "The supporting shape or structure of a building.",
+    "arabicTranslation": "إطار"
+  },
+  "battery": {
+    "definition": "A collection of related things intended for use together.",
+    "arabicTranslation": "بطارية"
+  },
+  "esc": {
+    "definition": "An electronic speed controller that regulates the power and speed of an electric motor in a drone.",
+    "exampleUsage": "Each motor is connected to an ESC that controls its speed.",
+    "arabicTranslation": "وحدة تحكّم إلكترونية في السرعة (ESC)"
+  },
+  "flight-controller": {
+    "definition": "The onboard computer that reads sensors and commands, then stabilizes and controls a drone's movement.",
+    "exampleUsage": "The flight controller adjusted the motors to keep the drone level.",
+    "arabicTranslation": "متحكّم الطيران"
+  },
+  "gps-module": { "arabicTranslation": "وحدة نظام تحديد المواقع" },
+  "antenna": {
+    "definition": "A device that sends or receives radio and television signals.",
+    "arabicTranslation": "هوائي"
+  },
+  "camera": {
+    "definition": "Equipment for taking photographs (usually consisting of a lightproof box with a lens at one end and light-sensitive film at the other).",
+    "arabicTranslation": "كاميرا"
+  },
+  "gimbal": {
+    "definition": "An appliance that allows an object (such as a ship's compass) to remain horizontal even as its support tips.",
+    "arabicTranslation": "مثبت كاميرا"
+  },
+  "transmitter": {
+    "definition": "Equipment that sends a radio, television, or communication signal over a distance.",
+    "arabicTranslation": "جهاز إرسال"
+  },
+  "receiver": {
+    "definition": "Set that receives radio or tv signals.",
+    "arabicTranslation": "جهاز استقبال"
+  },
+  "joystick": {
+    "definition": "A lever used by a pilot to control the ailerons and elevators of an airplane.",
+    "arabicTranslation": ""
+  },
+  "throttle": {
+    "definition": "A pedal that controls the throttle valve.",
+    "arabicTranslation": ""
+  },
+  "yaw": {
+    "definition": "An erratic deflection from an intended course.",
+    "arabicTranslation": ""
+  },
+  "pitch": {
+    "definition": "The act of throwing a baseball or softball by the pitcher towards home plate, which initiates play by giving the batter a chance to hit it.",
+    "arabicTranslation": "حدّة الصوت"
+  },
+  "roll": { "arabicTranslation": "" },
+  "trim": {
+    "definition": "To balance in flight by regulating the control surfaces.",
+    "arabicTranslation": ""
+  },
+  "failsafe": {
+    "definition": "Designed to remain safe or reduce harm when a part, system, or process stops working properly.",
+    "arabicTranslation": "وضع أمان تلقائي"
+  },
+  "return-to-home": { "arabicTranslation": "" },
+  "soldering-iron": {
+    "definition": "A handheld tool with a heated tip used to melt and apply solder, a metal alloy that joins electrical parts.",
+    "arabicTranslation": ""
+  },
+  "multimeter": {
+    "definition": "A portable instrument that tests several features of electricity, including voltage, current, and resistance, in a circuit.",
+    "arabicTranslation": "ملتيميتر"
+  },
+  "screwdriver": {
+    "definition": "A hand tool with a handle and a tip for turning screws.",
+    "arabicTranslation": "مفك براغي"
+  },
+  "hex-wrench": { "arabicTranslation": "" },
+  "pliers": {
+    "definition": "A hand tool with two handles used for gripping or cutting.",
+    "arabicTranslation": "كماشة"
+  },
+  "heat-shrink": { "arabicTranslation": "" },
+  "zip-tie": { "arabicTranslation": "رباط بلاستيكي" },
+  "loctite": { "arabicTranslation": "لاصق لولبي" },
+  "balance-charger": { "arabicTranslation": "شاحن توازن" },
+  "prop-balancer": { "arabicTranslation": "" },
+  "firmware": {
+    "definition": "(computer science) coded instructions that are stored permanently in read-only memory.",
+    "arabicTranslation": "برمجيات ثابتة"
+  },
+  "ground-station": { "arabicTranslation": "" },
+  "flight-log": { "arabicTranslation": "" },
+  "waypoint": { "arabicTranslation": "نقطة مسار" },
+  "geofence": {
+    "definition": "A virtual perimeter for a real-world geographic area.",
+    "arabicTranslation": "سياج جغرافي"
+  },
+  "telemetry": {
+    "definition": "Automatic transmission and measurement of data from remote sources by wire or radio or other means.",
+    "arabicTranslation": "قياس عن بعد"
+  },
+  "pid-tuning": { "arabicTranslation": "" },
+  "calibration": {
+    "definition": "The act of checking or adjusting (by comparison with a standard) the accuracy of a measuring instrument.",
+    "arabicTranslation": "معايرة"
+  },
+  "simulator": {
+    "definition": "A machine that simulates an environment for the purpose of training or research.",
+    "arabicTranslation": "محاكي"
+  },
+  "mapping": { "definition": "The process of making maps.", "arabicTranslation": "رسم خرائط" },
+  "registration": { "arabicTranslation": "تسجيل" },
+  "license": { "arabicTranslation": "ترخيص" },
+  "no-fly-zone": { "arabicTranslation": "" },
+  "visual-line-of-sight": { "arabicTranslation": "" },
+  "altitude-limit": { "arabicTranslation": "" },
+  "pre-flight-check": {
+    "definition": "An inspection and set of checks completed before takeoff to confirm that the aircraft and equipment are ready for safe operation.",
+    "exampleUsage": "The team completed the pre-flight check before launching the drone.",
+    "arabicTranslation": "فحص ما قبل الطيران"
+  },
+  "spotter": {
+    "definition": "A worker employed at a dry-cleaning establishment to remove spots.",
+    "arabicTranslation": "مراقب"
+  },
+  "insurance": {
+    "definition": "Promise of reimbursement in the case of loss.",
+    "arabicTranslation": "تأمين"
+  },
+  "airspace": {
+    "definition": "The atmosphere above a nation that is deemed to be under its jurisdiction.",
+    "arabicTranslation": "مجال جوي"
+  },
+  "faa": {
+    "definition": "An agency in the Department of Transportation that is responsible for the safety of civilian aviation.",
+    "arabicTranslation": "إدارة الطيران الفدرالية"
+  }
+}

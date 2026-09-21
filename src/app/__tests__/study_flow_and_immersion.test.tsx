@@ -3,6 +3,8 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { LearnArea } from "../learning/study/LearnArea";
 import { VocabularyCard } from "../learning/study/VocabularyCard";
+import { ReviewArea } from "../learning/study/ReviewArea";
+import { getUnitCurriculumDesign } from "../learning/curriculumModel";
 import type { StudyNode, UnitStudyProgress } from "../learning/study/types";
 import type { UnitLearningMaterials } from "../learning/types";
 import type { VocabularyItem } from "../data/lessons";
@@ -54,6 +56,24 @@ const mockWord: VocabularyItem & { arabic: string } = {
 };
 
 describe("Study vocabulary grid", () => {
+  it("records final-task practice without awarding word mastery", async () => {
+    const onProgressUpdate = vi.fn();
+    render(
+      <ReviewArea
+        materials={mockMaterials}
+        curriculumDesign={getUnitCurriculumDesign({ id: "bedroom", name: "Bedroom" })}
+        progress={mockProgress}
+        onProgressUpdate={onProgressUpdate}
+      />
+    );
+    const done = screen.getByRole("button", { name: "Mark this practice done" });
+    expect(done).toBeDisabled();
+    for (const box of screen.getAllByRole("checkbox")) await userEvent.click(box);
+    await userEvent.click(done);
+    expect(onProgressUpdate).toHaveBeenCalledWith(
+      expect.objectContaining({ completedNodeIds: ["review-difficult"], wordStatus: {} })
+    );
+  });
   it("shows the whole lesson and marks a word learned", async () => {
     const onProgressUpdate = vi.fn();
     render(
