@@ -1,6 +1,6 @@
 import { createRequire } from "node:module";
 import { existsSync, statSync } from "node:fs";
-import { resolve } from "node:path";
+import { basename, resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import { audioKey } from "../shared/assetUrls";
 import {
@@ -36,13 +36,20 @@ describe("pronunciation overrides", () => {
     }
   });
 
-  it("keeps every corrected immutable clip in the local backup", async () => {
+  it("keeps every corrected immutable clip in the tracked override backup", async () => {
     for (const override of PRONUNCIATION_OVERRIDES) {
       const label = override.matches[0];
       const corrected = getPronunciationAssetSpec(label);
       const correctedKey = await audioKey(corrected.text, corrected.profile);
       expect(correctedKey).toBeTruthy();
-      const backup = resolve(__dirname, "../../..", "audio_backup", correctedKey!);
+      const backup = resolve(
+        __dirname,
+        "../../..",
+        "assets",
+        "audio-batches",
+        "pronunciation-overrides",
+        basename(correctedKey!)
+      );
       expect(existsSync(backup), `${label} corrected backup must exist`).toBe(true);
       expect(statSync(backup).size).toBeGreaterThan(0);
     }
