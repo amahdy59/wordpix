@@ -78,6 +78,8 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
     PHASES.findIndex((phase) => recommendedIndex >= phase.start && recommendedIndex < phase.end)
   );
   const [expandedPhase, setExpandedPhase] = useState(currentPhaseIndex);
+  const [showAllFoundationLessons, setShowAllFoundationLessons] = useState(false);
+  const [showPictureWorldPath, setShowPictureWorldPath] = useState(false);
   const foundationProgress = learnerState.foundationProgress;
   const completedFoundationLessons = FOUNDATION_LESSONS.filter(
     (lesson) => foundationProgress[lesson.id]?.status === "mastered"
@@ -174,132 +176,156 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         </div>
 
         <div className="mt-6 grid gap-5" aria-label="Foundation curriculum stages">
-          {FOUNDATION_STAGES.map((stage, stageIndex) => (
-            <section
-              key={stage.id}
-              className="relative rounded-3xl border border-primary/25 bg-wp-card p-4 sm:p-5"
-              aria-labelledby={`foundation-stage-${stage.id}`}
-            >
-              <div className="flex items-start gap-3">
-                <span
-                  className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-primary text-base font-black text-primary-foreground"
-                  aria-hidden
-                >
-                  {stageIndex + 1}
-                </span>
-                <div>
-                  <p className="text-xs font-black uppercase tracking-wide text-primary">
-                    Level {stage.level}
-                  </p>
-                  <h3
-                    id={`foundation-stage-${stage.id}`}
-                    className="mt-0.5 text-lg font-black text-foreground sm:text-xl"
+          {FOUNDATION_STAGES.filter(
+            (stage) =>
+              showAllFoundationLessons ||
+              stage.units.some((unit) =>
+                unit.lessons.some((lesson) => lesson.id === nextFoundationLesson.id)
+              )
+          ).map((stage) => {
+            const stageIndex = FOUNDATION_STAGES.findIndex(
+              (candidate) => candidate.id === stage.id
+            );
+            return (
+              <section
+                key={stage.id}
+                className="relative rounded-3xl border border-primary/25 bg-wp-card p-4 sm:p-5"
+                aria-labelledby={`foundation-stage-${stage.id}`}
+              >
+                <div className="flex items-start gap-3">
+                  <span
+                    className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-primary text-base font-black text-primary-foreground"
+                    aria-hidden
                   >
-                    {stage.title}
-                  </h3>
-                  <p className="mt-1 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
-                    {stage.description}
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-4 grid gap-3">
-                {stage.units.map((unit) => {
-                  const unitMastered = unit.lessons.filter(
-                    (lesson) => foundationProgress[lesson.id]?.status === "mastered"
-                  ).length;
-                  return (
-                    <section
-                      key={unit.id}
-                      className="rounded-2xl border border-border bg-background p-3 sm:p-4"
-                      aria-labelledby={`foundation-unit-${unit.id.replace(".", "-")}`}
+                    {stageIndex + 1}
+                  </span>
+                  <div>
+                    <p className="text-xs font-black uppercase tracking-wide text-primary">
+                      Level {stage.level}
+                    </p>
+                    <h3
+                      id={`foundation-stage-${stage.id}`}
+                      className="mt-0.5 text-lg font-black text-foreground sm:text-xl"
                     >
-                      <div className="flex flex-wrap items-start justify-between gap-2">
-                        <div>
-                          <p className="text-xs font-black text-primary">Unit {unit.id}</p>
-                          <h4
-                            id={`foundation-unit-${unit.id.replace(".", "-")}`}
-                            className="mt-0.5 font-black text-foreground"
-                          >
-                            {unit.title}
-                          </h4>
-                          <p className="mt-1 text-xs font-semibold leading-relaxed text-muted-foreground">
-                            {unit.outcome}
-                          </p>
+                      {stage.title}
+                    </h3>
+                    <p className="mt-1 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
+                      {stage.description}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-4 grid gap-3">
+                  {stage.units.map((unit) => {
+                    const unitMastered = unit.lessons.filter(
+                      (lesson) => foundationProgress[lesson.id]?.status === "mastered"
+                    ).length;
+                    return (
+                      <section
+                        key={unit.id}
+                        className="rounded-2xl border border-border bg-background p-3 sm:p-4"
+                        aria-labelledby={`foundation-unit-${unit.id.replace(".", "-")}`}
+                      >
+                        <div className="flex flex-wrap items-start justify-between gap-2">
+                          <div>
+                            <p className="text-xs font-black text-primary">Unit {unit.id}</p>
+                            <h4
+                              id={`foundation-unit-${unit.id.replace(".", "-")}`}
+                              className="mt-0.5 font-black text-foreground"
+                            >
+                              {unit.title}
+                            </h4>
+                            <p className="mt-1 text-xs font-semibold leading-relaxed text-muted-foreground">
+                              {unit.outcome}
+                            </p>
+                          </div>
+                          <span className="rounded-full bg-muted px-3 py-1 text-xs font-bold text-muted-foreground">
+                            {unitMastered}/{unit.lessons.length}{" "}
+                            {unit.lessons.some(
+                              (lesson) => lesson.completionMode === "qualitative-routing"
+                            )
+                              ? "completed"
+                              : "mastered"}
+                          </span>
                         </div>
-                        <span className="rounded-full bg-muted px-3 py-1 text-xs font-bold text-muted-foreground">
-                          {unitMastered}/{unit.lessons.length}{" "}
-                          {unit.lessons.some(
-                            (lesson) => lesson.completionMode === "qualitative-routing"
-                          )
-                            ? "completed"
-                            : "mastered"}
-                        </span>
-                      </div>
-                      <ol className="mt-3 grid gap-2 sm:grid-cols-2">
-                        {unit.lessons.map((lesson) => {
-                          const lessonProgress = foundationProgress[lesson.id];
-                          const isComplete = lessonProgress?.status === "mastered";
-                          const needsPractice = lessonProgress?.status === "needs-practice";
-                          const isRecommended = lesson.id === nextFoundationLesson.id;
-                          return (
-                            <li key={lesson.id}>
-                              <button
-                                type="button"
-                                onClick={() =>
-                                  dispatch({ type: "START_FOUNDATION_LESSON", lessonId: lesson.id })
-                                }
-                                className={`flex min-h-[68px] w-full items-center gap-3 rounded-xl border p-3 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${isRecommended ? "border-primary/55 bg-primary/10 shadow-wp-xs" : "border-border bg-wp-card hover:border-primary/45 hover:bg-primary/5"}`}
-                                aria-current={isRecommended ? "step" : undefined}
-                              >
-                                <span
-                                  className={`flex size-10 shrink-0 items-center justify-center rounded-xl text-sm font-black ${isComplete ? "bg-wp-green text-wp-text-on-green" : isRecommended ? "bg-primary text-primary-foreground" : "bg-primary/10 text-primary"}`}
+                        <ol className="mt-3 grid gap-2 sm:grid-cols-2">
+                          {unit.lessons.map((lesson) => {
+                            const lessonProgress = foundationProgress[lesson.id];
+                            const isComplete = lessonProgress?.status === "mastered";
+                            const needsPractice = lessonProgress?.status === "needs-practice";
+                            const isRecommended = lesson.id === nextFoundationLesson.id;
+                            return (
+                              <li key={lesson.id}>
+                                <button
+                                  type="button"
+                                  onClick={() =>
+                                    dispatch({
+                                      type: "START_FOUNDATION_LESSON",
+                                      lessonId: lesson.id,
+                                    })
+                                  }
+                                  className={`flex min-h-[68px] w-full items-center gap-3 rounded-xl border p-3 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${isRecommended ? "border-primary/55 bg-primary/10 shadow-wp-xs" : "border-border bg-wp-card hover:border-primary/45 hover:bg-primary/5"}`}
+                                  aria-current={isRecommended ? "step" : undefined}
                                 >
-                                  {isComplete ? (
-                                    <CheckCircle2 className="size-5" aria-hidden />
-                                  ) : needsPractice ? (
-                                    <RotateCcw className="size-5" aria-hidden />
-                                  ) : (
-                                    lesson.number
-                                  )}
-                                </span>
-                                <span className="min-w-0 flex-1">
-                                  <span className="block font-black leading-snug text-foreground">
-                                    {lesson.shortTitle}
+                                  <span
+                                    className={`flex size-10 shrink-0 items-center justify-center rounded-xl text-sm font-black ${isComplete ? "bg-wp-green text-wp-text-on-green" : isRecommended ? "bg-primary text-primary-foreground" : "bg-primary/10 text-primary"}`}
+                                  >
+                                    {isComplete ? (
+                                      <CheckCircle2 className="size-5" aria-hidden />
+                                    ) : needsPractice ? (
+                                      <RotateCcw className="size-5" aria-hidden />
+                                    ) : (
+                                      lesson.number
+                                    )}
                                   </span>
-                                  <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
-                                    {isComplete
-                                      ? lesson.completionMode === "qualitative-routing"
-                                        ? "Completed · evidence saved"
-                                        : `Mastered · best ${lessonProgress.bestScorePercent}%`
-                                      : needsPractice
-                                        ? `Practice again · best ${lessonProgress.bestScorePercent}%`
-                                        : lessonProgress?.status === "in-progress"
-                                          ? `Resume · step ${lessonProgress.currentStep + 1}`
-                                          : isRecommended
-                                            ? "Start here"
-                                            : lesson.reviewStatus === "pilot"
-                                              ? "Pilot · qualitative progress"
-                                              : lesson.audioOnly
-                                              ? "Listen and respond"
-                                              : "Sounds, letters, and words"}
+                                  <span className="min-w-0 flex-1">
+                                    <span className="block font-black leading-snug text-foreground">
+                                      {lesson.shortTitle}
+                                    </span>
+                                    <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
+                                      {isComplete
+                                        ? lesson.completionMode === "qualitative-routing"
+                                          ? "Completed · evidence saved"
+                                          : `Mastered · best ${lessonProgress.bestScorePercent}%`
+                                        : needsPractice
+                                          ? `Practice again · best ${lessonProgress.bestScorePercent}%`
+                                          : lessonProgress?.status === "in-progress"
+                                            ? `Resume · step ${lessonProgress.currentStep + 1}`
+                                            : isRecommended
+                                              ? "Start here"
+                                              : lesson.reviewStatus === "pilot"
+                                                ? "Pilot · qualitative progress"
+                                                : lesson.audioOnly
+                                                  ? "Listen and respond"
+                                                  : "Sounds, letters, and words"}
+                                    </span>
                                   </span>
-                                </span>
-                                <ArrowRight
-                                  className="size-4 shrink-0 text-primary rtl:rotate-180"
-                                  aria-hidden
-                                />
-                              </button>
-                            </li>
-                          );
-                        })}
-                      </ol>
-                    </section>
-                  );
-                })}
-              </div>
-            </section>
-          ))}
+                                  <ArrowRight
+                                    className="size-4 shrink-0 text-primary rtl:rotate-180"
+                                    aria-hidden
+                                  />
+                                </button>
+                              </li>
+                            );
+                          })}
+                        </ol>
+                      </section>
+                    );
+                  })}
+                </div>
+              </section>
+            );
+          })}
+          <button
+            type="button"
+            onClick={() => setShowAllFoundationLessons((value) => !value)}
+            aria-expanded={showAllFoundationLessons}
+            className="min-h-12 rounded-xl border border-primary/25 bg-background px-5 py-3 text-sm font-bold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            {showAllFoundationLessons
+              ? "Show only my current stage"
+              : "Explore all lessons and the optional pronunciation course"}
+          </button>
         </div>
       </section>
 
@@ -330,136 +356,170 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         </button>
       </section>
 
-      <div className="rounded-2xl border border-border bg-wp-card p-4 sm:p-5">
-        <p className="text-xs font-black uppercase tracking-wide text-primary">Explore by topic</p>
-        <h2 className="mt-1 text-xl font-black text-foreground">Picture worlds</h2>
-        <p className="mt-1 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
-          Build useful vocabulary through familiar places and interests. These topics support the
-          reading journey, but they do not replace its ordered lessons.
-        </p>
-        <div className="mt-4 max-w-xl">
-          <ProgressBar
-            progressPercent={pathPercent}
-            label="Picture-word mastery"
-            labelRight={`${masteredWords}/${totalWords}`}
-            ariaLabel={t("learn.foundationProgressAria", {
-              mastered: masteredWords,
-              total: totalWords,
-            })}
-          />
-        </div>
-      </div>
+      <button
+        type="button"
+        onClick={() => setShowPictureWorldPath((value) => !value)}
+        aria-expanded={showPictureWorldPath}
+        aria-controls="picture-world-path"
+        className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-2xl border border-border bg-wp-card p-4 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5"
+      >
+        <span>
+          <span className="block text-xs font-black uppercase tracking-wide text-primary">
+            Optional practice
+          </span>
+          <span className="mt-1 block text-xl font-black text-foreground">
+            Explore picture worlds
+          </span>
+          <span className="mt-1 block text-sm font-medium text-muted-foreground">
+            Browse topic-based vocabulary separately from your core reading path.
+          </span>
+        </span>
+        <ChevronDown
+          className={`size-5 shrink-0 text-muted-foreground transition-transform ${showPictureWorldPath ? "rotate-180" : ""}`}
+          aria-hidden
+        />
+      </button>
 
-      <div className="flex flex-col gap-4">
-        {PHASES.map((phase, phaseIndex) => {
-          const units = pathUnits.slice(phase.start, phase.end);
-          const isExpanded = expandedPhase === phaseIndex;
-          const completedCount = units.filter((item) => item.percent === 100).length;
-          return (
-            <section
-              key={phase.key}
-              aria-labelledby={`path-phase-${phaseIndex}`}
-              className="rounded-2xl border border-border bg-wp-card p-3 sm:p-4"
-            >
-              <button
-                type="button"
-                onClick={() => setExpandedPhase(isExpanded ? -1 : phaseIndex)}
-                aria-expanded={isExpanded}
-                aria-controls={`path-phase-content-${phaseIndex}`}
-                className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-xl px-2 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-              >
-                <span>
-                  <span
-                    id={`path-phase-${phaseIndex}`}
-                    className="block font-sans text-lg font-black text-foreground sm:text-xl"
+      {showPictureWorldPath && (
+        <div id="picture-world-path" className="contents">
+          <div className="rounded-2xl border border-border bg-wp-card p-4 sm:p-5">
+            <p className="text-xs font-black uppercase tracking-wide text-primary">
+              Explore by topic
+            </p>
+            <h2 className="mt-1 text-xl font-black text-foreground">Picture worlds</h2>
+            <p className="mt-1 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
+              Build useful vocabulary through familiar places and interests. These topics support
+              the reading journey, but they do not replace its ordered lessons.
+            </p>
+            <div className="mt-4 max-w-xl">
+              <ProgressBar
+                progressPercent={pathPercent}
+                label="Picture-word mastery"
+                labelRight={`${masteredWords}/${totalWords}`}
+                ariaLabel={t("learn.foundationProgressAria", {
+                  mastered: masteredWords,
+                  total: totalWords,
+                })}
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            {PHASES.map((phase, phaseIndex) => {
+              const units = pathUnits.slice(phase.start, phase.end);
+              const isExpanded = expandedPhase === phaseIndex;
+              const completedCount = units.filter((item) => item.percent === 100).length;
+              return (
+                <section
+                  key={phase.key}
+                  aria-labelledby={`path-phase-${phaseIndex}`}
+                  className="rounded-2xl border border-border bg-wp-card p-3 sm:p-4"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setExpandedPhase(isExpanded ? -1 : phaseIndex)}
+                    aria-expanded={isExpanded}
+                    aria-controls={`path-phase-content-${phaseIndex}`}
+                    className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-xl px-2 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
-                    {t(phase.key)}
-                  </span>
-                  <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
-                    {t("learn.phaseSummary", {
-                      complete: completedCount,
-                      total: units.length,
-                      start: phase.start + 1,
-                      end: phase.end,
-                    })}
-                  </span>
-                </span>
-                <ChevronDown
-                  className={`size-5 shrink-0 text-muted-foreground transition-transform ${isExpanded ? "rotate-180" : ""}`}
-                  aria-hidden
-                />
-              </button>
+                    <span>
+                      <span
+                        id={`path-phase-${phaseIndex}`}
+                        className="block font-sans text-lg font-black text-foreground sm:text-xl"
+                      >
+                        {t(phase.key)}
+                      </span>
+                      <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
+                        {t("learn.phaseSummary", {
+                          complete: completedCount,
+                          total: units.length,
+                          start: phase.start + 1,
+                          end: phase.end,
+                        })}
+                      </span>
+                    </span>
+                    <ChevronDown
+                      className={`size-5 shrink-0 text-muted-foreground transition-transform ${isExpanded ? "rotate-180" : ""}`}
+                      aria-hidden
+                    />
+                  </button>
 
-              {isExpanded && (
-                <ol id={`path-phase-content-${phaseIndex}`} className="mt-3 grid gap-3">
-                  {units.map(({ unit, mastered, percent }, index) => {
-                    const step = phase.start + index + 1;
-                    const design = getUnitCurriculumDesign(unit);
-                    const isCurrent = unit.id === recommendedUnit.id;
-                    const isComplete = percent === 100;
+                  {isExpanded && (
+                    <ol id={`path-phase-content-${phaseIndex}`} className="mt-3 grid gap-3">
+                      {units.map(({ unit, mastered, percent }, index) => {
+                        const step = phase.start + index + 1;
+                        const design = getUnitCurriculumDesign(unit);
+                        const isCurrent = unit.id === recommendedUnit.id;
+                        const isComplete = percent === 100;
 
-                    return (
-                      <li key={unit.id}>
-                        <button
-                          type="button"
-                          onClick={() =>
-                            dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
-                          }
-                          className={`grid min-h-[96px] w-full grid-cols-[auto_1fr_auto] items-center gap-3 rounded-2xl border p-4 text-start transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:gap-4 ${
-                            isCurrent
-                              ? "border-primary/50 bg-primary/10 shadow-wp-xs"
-                              : "border-border bg-wp-card hover:border-primary/35 hover:bg-muted/30"
-                          }`}
-                          aria-current={isCurrent ? "step" : undefined}
-                        >
-                          <span
-                            className={`flex size-11 shrink-0 items-center justify-center rounded-xl text-sm font-black ${
-                              isComplete
-                                ? "bg-wp-green text-wp-text-on-green"
-                                : isCurrent
-                                  ? "bg-primary text-primary-foreground"
-                                  : "bg-muted text-foreground"
-                            }`}
-                          >
-                            {isComplete ? <CheckCircle2 className="size-5" aria-hidden /> : step}
-                          </span>
-
-                          <span className="min-w-0">
-                            <span className="flex flex-wrap items-center gap-2">
-                              <span className="font-sans text-sm font-black text-foreground sm:text-base">
-                                {unit.name}
+                        return (
+                          <li key={unit.id}>
+                            <button
+                              type="button"
+                              onClick={() =>
+                                dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
+                              }
+                              className={`grid min-h-[96px] w-full grid-cols-[auto_1fr_auto] items-center gap-3 rounded-2xl border p-4 text-start transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:gap-4 ${
+                                isCurrent
+                                  ? "border-primary/50 bg-primary/10 shadow-wp-xs"
+                                  : "border-border bg-wp-card hover:border-primary/35 hover:bg-muted/30"
+                              }`}
+                              aria-current={isCurrent ? "step" : undefined}
+                            >
+                              <span
+                                className={`flex size-11 shrink-0 items-center justify-center rounded-xl text-sm font-black ${
+                                  isComplete
+                                    ? "bg-wp-green text-wp-text-on-green"
+                                    : isCurrent
+                                      ? "bg-primary text-primary-foreground"
+                                      : "bg-muted text-foreground"
+                                }`}
+                              >
+                                {isComplete ? (
+                                  <CheckCircle2 className="size-5" aria-hidden />
+                                ) : (
+                                  step
+                                )}
                               </span>
-                              <Badge variant="primary" size="sm">
-                                {design.cefr}
-                              </Badge>
-                            </span>
-                            <span className="mt-1 line-clamp-2 block text-xs leading-relaxed text-muted-foreground sm:text-sm">
-                              {design.outcome}
-                            </span>
-                            {(mastered > 0 || isCurrent) && (
-                              <span className="mt-2 block text-xs font-semibold text-primary">
-                                {t("learn.wordsMastered", {
-                                  mastered,
-                                  total: unit.wordIds.length,
-                                })}
-                              </span>
-                            )}
-                          </span>
 
-                          <ArrowRight
-                            className="size-5 shrink-0 text-muted-foreground rtl:rotate-180"
-                            aria-hidden
-                          />
-                        </button>
-                      </li>
-                    );
-                  })}
-                </ol>
-              )}
-            </section>
-          );
-        })}
-      </div>
+                              <span className="min-w-0">
+                                <span className="flex flex-wrap items-center gap-2">
+                                  <span className="font-sans text-sm font-black text-foreground sm:text-base">
+                                    {unit.name}
+                                  </span>
+                                  <Badge variant="primary" size="sm">
+                                    {design.cefr}
+                                  </Badge>
+                                </span>
+                                <span className="mt-1 line-clamp-2 block text-xs leading-relaxed text-muted-foreground sm:text-sm">
+                                  {design.outcome}
+                                </span>
+                                {(mastered > 0 || isCurrent) && (
+                                  <span className="mt-2 block text-xs font-semibold text-primary">
+                                    {t("learn.wordsMastered", {
+                                      mastered,
+                                      total: unit.wordIds.length,
+                                    })}
+                                  </span>
+                                )}
+                              </span>
+
+                              <ArrowRight
+                                className="size-5 shrink-0 text-muted-foreground rtl:rotate-180"
+                                aria-hidden
+                              />
+                            </button>
+                          </li>
+                        );
+                      })}
+                    </ol>
+                  )}
+                </section>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </div>
   );
 });

@@ -110,6 +110,14 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     });
   };
 
+  const startReviewOrPractice = () => {
+    if (totalDue === 0) {
+      dispatch({ type: "GO", to: "skill-hub" });
+      return;
+    }
+    startReviewSession();
+  };
+
   const sessionSize = Math.min(REVIEW_SESSION_SIZE, totalDue);
   const sections = [
     {
@@ -183,13 +191,13 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
           </p>
           <button
             type="button"
-            onClick={startReviewSession}
-            disabled={totalDue === 0 || loadError}
+            onClick={startReviewOrPractice}
+            disabled={loadError}
             className={`mt-3 min-h-12 rounded-xl px-4 md:px-6 bg-primary text-primary-foreground font-bold text-sm flex items-center justify-center gap-2 disabled:opacity-60 ${focus}`}
           >
             {totalDue
               ? t("masteryReview.reviewNow", { count: sessionSize })
-              : t("masteryReview.allCaughtUp")}
+              : t("masteryReview.browseDrills")}
             <ArrowRight className="size-4 shrink-0" aria-hidden />
           </button>
         </div>

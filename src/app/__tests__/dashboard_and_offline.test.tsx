@@ -2,6 +2,7 @@ import { describe, expect, it, vi, beforeEach, afterEach } from "vitest";
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { HomeDashboard } from "../core/HomeDashboard";
+import { LearningPath } from "../core/LearningPath";
 import { SettingsModal } from "../core/SettingsModal";
 import { loadUnitVocabulary } from "../data/vocabulary";
 import { LearnerProvider } from "../context/LearnerContext";
@@ -43,6 +44,35 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
     await screen.findByRole("button", { name: "Dismiss release notes" });
     expect(screen.getByText("Daily Vocabulary Target")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Study materials for/i })).toBeInTheDocument();
+    expect(screen.getByText("Same or Different?")).toBeInTheDocument();
+    expect(screen.getByText("Recommended next")).toBeInTheDocument();
+  });
+
+  it("uses progressive disclosure for the core path and optional picture worlds", async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<LearningPath dispatch={vi.fn()} />);
+
+    expect(screen.getByRole("heading", { name: "Listening foundations" })).toBeInTheDocument();
+    expect(
+      screen.queryByRole("heading", { name: "Pronunciation and comprehensibility" })
+    ).not.toBeInTheDocument();
+    expect(screen.queryByText("Picture-word mastery")).not.toBeInTheDocument();
+
+    await user.click(
+      screen.getByRole("button", {
+        name: "Explore all lessons and the optional pronunciation course",
+      })
+    );
+    expect(
+      screen.getByRole("heading", { name: "Pronunciation and comprehensibility" })
+    ).toBeInTheDocument();
+
+    const pictureWorldToggle = screen
+      .getAllByRole("button", { name: /Explore picture worlds/i })
+      .find((button) => button.getAttribute("aria-controls") === "picture-world-path");
+    expect(pictureWorldToggle).toBeDefined();
+    await user.click(pictureWorldToggle!);
+    expect(screen.getByText("Picture-word mastery")).toBeInTheDocument();
   });
 });
 

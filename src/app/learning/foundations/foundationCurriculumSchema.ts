@@ -20,6 +20,7 @@ const questionSchema = z
   .object({
     prompt: z.string().min(1),
     audio: z.string().min(1),
+    responseMode: z.enum(["choice", "rhythm", "ordering"]).optional(),
     display: z.string().min(1).optional(),
     imageReveal: z.enum(["always", "after-answer"]).optional(),
     options: z.array(optionSchema).min(2),
@@ -29,12 +30,30 @@ const questionSchema = z
     visual: z.enum(["counters", "beats", "sound-chips", "letter-tiles"]).optional(),
   })
   .superRefine((question, context) => {
-    if (!question.options.some((option) => option.value === question.answer)) {
+    if (
+      question.responseMode !== "ordering" &&
+      !question.options.some((option) => option.value === question.answer)
+    ) {
       context.addIssue({
         code: "custom",
         path: ["answer"],
         message: "The answer must match one of the option values.",
       });
+    }
+    if (question.responseMode === "ordering") {
+      const answerParts = question.answer.split("|");
+      const optionValues = new Set(question.options.map((option) => option.value));
+      if (
+        answerParts.length !== question.options.length ||
+        answerParts.some((value) => !optionValues.has(value)) ||
+        new Set(answerParts).size !== answerParts.length
+      ) {
+        context.addIssue({
+          code: "custom",
+          path: ["answer"],
+          message: "An ordering answer must contain every option value exactly once.",
+        });
+      }
     }
     for (const [index, option] of question.options.entries()) {
       if (option.audio && option.mediaKind === "photo" && !option.image) {

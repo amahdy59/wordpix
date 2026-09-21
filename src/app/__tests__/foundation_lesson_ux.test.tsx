@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { LearnerProvider, __clearTestStateCache } from "../context/LearnerContext";
 import { FoundationLessonScreen } from "../learning/foundations/FoundationLessonScreen";
@@ -47,6 +47,9 @@ describe("foundation lesson experience", () => {
 
     expect(screen.getByRole("button", { name: "Correct answer: sun" })).toBeInTheDocument();
     expect(screen.getByText("Yes. sun contains sss.")).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "Continue" })).not.toBeInTheDocument();
+
+    await waitFor(() => expect(screen.getByText("Your turn · 2 of 6")).toBeInTheDocument());
   });
 
   it("keeps rhyme pictures visible and automatically plays each entered audio step", async () => {
@@ -81,5 +84,40 @@ describe("foundation lesson experience", () => {
     expect(screen.getByRole("alert")).toHaveTextContent(
       "Check the device volume, then tap the sound button to retry."
     );
+  });
+
+  it("offers an optional pronunciation skills check without blocking the course", async () => {
+    const user = userEvent.setup();
+    const dispatch = vi.fn();
+    render(
+      <LearnerProvider>
+        <FoundationLessonScreen lessonId="pronunciation-goals" dispatch={dispatch} />
+      </LearnerProvider>
+    );
+
+    expect(screen.getByText("By the end, I can")).toBeInTheDocument();
+    await user.click(
+      screen.getByRole("button", { name: "Take the optional 2-minute skills check" })
+    );
+    expect(dispatch).toHaveBeenCalledWith({
+      type: "START_FOUNDATION_LESSON",
+      lessonId: "pronunciation-portfolio",
+    });
+  });
+
+  it("offers private recording as an optional pronunciation aid", async () => {
+    const user = userEvent.setup();
+    render(
+      <LearnerProvider>
+        <FoundationLessonScreen lessonId="pronunciation-goals" dispatch={vi.fn()} />
+      </LearnerProvider>
+    );
+
+    await user.click(screen.getByRole("button", { name: "Start lesson" }));
+    await user.click(screen.getByRole("button", { name: "Continue" }));
+
+    expect(screen.getByText("Optional: record and compare")).toBeInTheDocument();
+    expect(screen.getByText(/stays in this browser tab/i)).toBeInTheDocument();
+    expect(screen.getByText(/listen and repeat aloud instead/i)).toBeInTheDocument();
   });
 });

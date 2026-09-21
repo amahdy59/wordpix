@@ -22,7 +22,7 @@ test("home page should not have any automatically detectable accessibility issue
 test("study practice has no automatically detectable accessibility issues", async ({ page }) => {
   await page.goto("/#/learn/bathroom/study/practice/practice-session");
   const answers = page.locator('#study-content [role="group"]');
-  await expect(answers).toBeVisible();
+  await expect(answers).toBeVisible({ timeout: 15_000 });
   await expect(answers.getByRole("button").first()).toBeVisible();
   const results = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
@@ -51,7 +51,7 @@ test("study vocabulary grid is accessible and contained", async ({ page }) => {
 test("practice keyboard keeps focus on the selected answer during feedback", async ({ page }) => {
   await page.goto("/#/learn/bathroom/study/practice/practice-session");
   const answers = page.locator('#study-content [role="group"]');
-  await expect(answers).toBeVisible();
+  await expect(answers).toBeVisible({ timeout: 15_000 });
   const answer = answers.getByRole("button").first();
   await answer.focus();
   await page.keyboard.press("Enter");

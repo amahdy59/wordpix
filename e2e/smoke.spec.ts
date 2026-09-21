@@ -30,7 +30,7 @@ test("learn path links to the optional library", async ({ page }) => {
   await page.goto("/");
   await page.waitForLoadState("networkidle");
   await page.getByRole("heading", { name: "Your learning path" }).waitFor({ timeout: 15000 });
-  await page.getByRole("button", { name: "Explore picture worlds" }).click();
+  await page.getByRole("button", { name: "Explore picture worlds", exact: true }).click();
   await expect(page).toHaveURL(/#\/library$/);
   await page.getByRole("button", { name: /Beginner Basics/ }).click();
   await page.getByText("The Garden", { exact: true }).waitFor({ timeout: 10000 });

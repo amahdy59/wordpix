@@ -46,6 +46,7 @@ export interface FoundationModel {
 export interface FoundationQuestion {
   prompt: string;
   audio: string;
+  responseMode?: "choice" | "rhythm" | "ordering";
   display?: string;
   imageReveal?: "always" | "after-answer";
   options: readonly {

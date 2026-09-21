@@ -163,6 +163,34 @@ describe("foundation curriculum", () => {
     }
   });
 
+  it("ends every pronunciation lesson with an independent check and a cumulative final check", () => {
+    const lessons = LEVEL_THIRTEEN_UNITS[0].lessons;
+    expect(lessons.every((lesson) => lesson.questions.length >= 3)).toBe(true);
+
+    const finalCheck = getFoundationLesson("pronunciation-portfolio");
+    expect(finalCheck.title).toContain("Pronunciation Communication Check");
+    expect(finalCheck.questions).toHaveLength(7);
+    expect(finalCheck.evidenceDimensions).toEqual([
+      "sound contrasts",
+      "meaningful endings",
+      "word stress",
+      "information focus",
+      "meaning chunks",
+      "intonation",
+      "communication repair",
+    ]);
+    expect(
+      LEVEL_THIRTEEN_UNITS[0].lessons
+        .flatMap((lesson) => lesson.questions)
+        .filter((question) => question.responseMode === "rhythm")
+    ).toHaveLength(3);
+    expect(
+      LEVEL_THIRTEEN_UNITS[0].lessons
+        .flatMap((lesson) => lesson.questions)
+        .filter((question) => question.responseMode === "ordering")
+    ).toHaveLength(2);
+  });
+
   it("uses visual, action-led practice instead of policy lectures in pronunciation lessons", () => {
     const questions = LEVEL_THIRTEEN_UNITS[0].lessons.flatMap((lesson) => lesson.questions);
     const photoQuestions = questions.filter((question) =>

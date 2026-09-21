@@ -6,5 +6,116 @@
       "modelId": "eleven_flash_v2"
     },
     "reason": "Keep the isolated vocabulary word on the short-a sound /ænt/, rather than ante or anti."
+  },
+  {
+    "matches": ["Atm", "ATM"],
+    "synthesisText": "A. T. M.",
+    "reason": "Read the banking acronym as three letters instead of attempting it as a word."
+  },
+  {
+    "matches": ["Hdmi", "HDMI"],
+    "synthesisText": "H. D. M. I.",
+    "reason": "Read the display-interface acronym as four letters."
+  },
+  {
+    "matches": ["OKR"],
+    "synthesisText": "O. K. R.",
+    "reason": "Read the business acronym as three letters."
+  },
+  {
+    "matches": ["Route Number"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"R UW1 T N AH1 M B ER0\">route number</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Prevent the isolated label from gaining unrelated trailing speech."
+  },
+  {
+    "matches": ["cell", "Cell"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"S EH1 L\">cell</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Keep the isolated word to one syllable without a trailing word."
+  },
+  {
+    "matches": ["Trek", "trek"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"T R EH1 K\">trek</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Keep the short-e vowel and prevent trailing speech."
+  },
+  {
+    "matches": ["Part", "part"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"P AA1 R T\">part</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Prevent an unrelated number from being appended to the isolated word."
+  },
+  {
+    "matches": ["Bat", "bat"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"B AE1 T\">bat</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Pin the isolated word to the short-a pronunciation without trailing speech."
+  },
+  {
+    "matches": ["Fins", "fins"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"F IH1 N Z\">fins</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Preserve the initial f and short-i sounds."
+  },
+  {
+    "matches": ["Foam", "foam"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"F OW1 M\">foam</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Preserve the final m rather than producing phone."
+  },
+  {
+    "matches": ["Van", "van"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"V AE1 N\">van</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Pin the initial v and short-a sounds."
+  },
+  {
+    "matches": ["Pet", "pet"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"P EH1 T\">pet</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Pin the isolated word to the short-e pronunciation."
+  },
+  {
+    "matches": ["Chew", "chew"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"CH UW1\">chew</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Preserve the initial ch sound."
+  },
+  {
+    "matches": ["Feta", "feta"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"F EH1 T AH0\">feta</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Use the common American English feta pronunciation."
+  },
+  {
+    "matches": ["Baton", "baton"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"B AH0 T AA1 N\">baton</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Keep both syllables and final n."
+  },
+  {
+    "matches": ["Sedan", "sedan"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"S IH0 D AE1 N\">sedan</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Prevent the isolated vehicle name from sounding like seven."
+  },
+  {
+    "matches": ["Tapir", "tapir"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"T EY1 P ER0\">tapir</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Use the standard American English two-syllable pronunciation."
+  },
+  {
+    "matches": ["Sixteen", "sixteen"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"S IH0 K S T IY1 N\">sixteen</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Make the full isolated number clearly recognizable."
+  },
+  {
+    "matches": ["Stand", "stand"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"S T AE1 N D\">stand</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Make every consonant in the isolated word explicit."
   }
 ]

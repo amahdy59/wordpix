@@ -46,10 +46,14 @@ describe("review dashboard", () => {
       wordQueue: ["overdue", "today"],
     });
   });
-  it("does not start future reviews when the due queue is empty", () => {
+  it("offers optional practice without starting future reviews when the due queue is empty", async () => {
     fixture.memory = { future: memory("future", 5) };
-    render(<ReviewMasteryReview dispatch={vi.fn()} />);
-    expect(screen.getByRole("button", { name: "All caught up" })).toBeDisabled();
+    const dispatch = vi.fn();
+    render(<ReviewMasteryReview dispatch={dispatch} />);
+    const practiceButtons = screen.getAllByRole("button", { name: "Browse drills" });
+    await userEvent.click(practiceButtons[0]);
+    expect(dispatch).toHaveBeenCalledWith({ type: "GO", to: "skill-hub" });
+    expect(dispatch).not.toHaveBeenCalledWith(expect.objectContaining({ type: "START_LESSON" }));
   });
   it("expands the queue and opens word details", async () => {
     fixture.memory = Object.fromEntries(

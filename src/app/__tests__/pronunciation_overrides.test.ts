@@ -30,8 +30,21 @@ describe("pronunciation overrides", () => {
   });
 
   it("keeps browser and generator resolution identical", () => {
-    for (const label of ["ant", "Ant", "apple"]) {
+    const labels = PRONUNCIATION_OVERRIDES.flatMap((override) => override.matches);
+    for (const label of [...labels, "apple"]) {
       expect(getPronunciationAssetText(label)).toBe(generator.getPronunciationAssetText(label));
+    }
+  });
+
+  it("keeps every corrected immutable clip in the local backup", async () => {
+    for (const override of PRONUNCIATION_OVERRIDES) {
+      const label = override.matches[0];
+      const corrected = getPronunciationAssetSpec(label);
+      const correctedKey = await audioKey(corrected.text, corrected.profile);
+      expect(correctedKey).toBeTruthy();
+      const backup = resolve(__dirname, "../../..", "audio_backup", correctedKey!);
+      expect(existsSync(backup), `${label} corrected backup must exist`).toBe(true);
+      expect(statSync(backup).size).toBeGreaterThan(0);
     }
   });
 

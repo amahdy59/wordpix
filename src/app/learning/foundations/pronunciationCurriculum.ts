@@ -23,12 +23,30 @@ const question = (
   answer: number,
   labels: readonly string[],
   feedback: string,
-  support: string
+  support: string,
+  responseMode: FoundationQuestion["responseMode"] = "choice"
 ): FoundationQuestion => ({
   prompt,
   audio,
   options: options(...labels),
   answer: String(answer),
+  correctFeedback: feedback,
+  support: ["Listen once more. There is no need to rush.", support],
+  responseMode,
+});
+
+const orderingQuestion = (
+  prompt: string,
+  audio: string,
+  chunks: readonly string[],
+  feedback: string,
+  support: string
+): FoundationQuestion => ({
+  prompt,
+  audio,
+  responseMode: "ordering",
+  options: options(...chunks),
+  answer: chunks.map((_, index) => String(index + 1)).join("|"),
   correctFeedback: feedback,
   support: ["Listen once more. There is no need to rush.", support],
 });
@@ -261,7 +279,8 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         2,
         ["●", "● ·"],
         "Yes: TEA-cher has one strong beat and one lighter beat.",
-        "The large dot is the stronger beat."
+        "The large dot is the stronger beat.",
+        "rhythm"
       ),
     ],
     ["stress perception", "word identification", "meaning"]
@@ -297,7 +316,8 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         2,
         ["●", "● ·"],
         "Correct: strong TEA, lighter cher.",
-        "The word has two parts."
+        "The word has two parts.",
+        "rhythm"
       ),
     ],
     ["syllable awareness", "prominence", "multimodal response"]
@@ -399,13 +419,12 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
         "Store is the place after the pause.",
         "The message has a time chunk and a place chunk."
       ),
-      photoQuestion(
-        "Listen to both chunks, then match the destination.",
+      orderingQuestion(
+        "Put the meaning chunks in the order you hear them.",
         "When school ends, go home.",
-        2,
-        ["park", "house", "store"],
-        "House matches home.",
-        "Listen for the action after the pause."
+        ["When school ends", "go home"],
+        "The time chunk comes before the action chunk.",
+        "Listen for what happens first, then what to do."
       ),
     ],
     ["phrasing", "syntax", "listener effort"]
@@ -485,37 +504,77 @@ export const PRONUNCIATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
   lesson(
     "pronunciation-portfolio",
     12,
-    "Lesson 13.12 · Pronunciation Growth Portfolio",
-    "My growth portfolio",
-    "Reflect on communication growth using learner-selected evidence and choose an appropriate next step.",
+    "Lesson 13.12 · Pronunciation Communication Check",
+    "Communication check",
+    "Show what you can understand and use across sounds, stress, phrasing, and communication repair.",
     "A portfolio can show what became easier, which strategies help, and what the learner wants to practise next.",
-    "Recordings are optional and private by default. One score never defines communication ability.",
+    "Work independently, use meaning, and take all the time you need. One result never defines communication ability.",
     [
       photoQuestion(
-        "Finish with a picture match. Listen, then choose.",
-        "sun",
+        "Listen for the beginning sound, then choose the matching picture.",
+        "cap",
         1,
-        ["sun", "show"],
-        "Sun—correct!",
-        "Listen for the first and last sounds."
+        ["cap", "map"],
+        "Cap begins with the sound you heard.",
+        "Compare the first sound in each word."
       ),
       question(
-        "You forget a word. Choose a helpful strategy.",
-        "You forget a word. Choose a helpful strategy.",
-        1,
-        ["Use a picture", "Say it faster"],
-        "Yes. A picture can help you share the meaning.",
-        "Choose a tool that keeps communication moving."
+        "Listen for the meaningful ending, then complete the message.",
+        "Two dogs.",
+        2,
+        ["dog", "dogs"],
+        "Dogs includes the plural ending needed after two.",
+        "Listen through to the end of the word."
       ),
       question(
-        "A friend looks unsure. Choose a helpful repair.",
-        "A friend looks unsure. Choose a helpful repair.",
-        1,
-        ["Add a clear clue", "Speak much faster"],
-        "Yes. A clear clue gives the listener useful information.",
-        "Choose the action that makes the message easier to understand."
+        "Listen, then choose the matching beat pattern.",
+        "teacher",
+        2,
+        ["●", "● ·"],
+        "Teacher has a strong first beat and a lighter second beat.",
+        "Tap the two beats as you listen.",
+        "rhythm"
+      ),
+      photoQuestion(
+        "Listen for the corrected information, then choose it.",
+        "Not blue. The green one.",
+        3,
+        ["blue", "brown", "green"],
+        "Green carries the corrected information.",
+        "Listen for the colour after not blue."
+      ),
+      orderingQuestion(
+        "Put the meaning chunks in the order you hear them.",
+        "After lunch, go to the park.",
+        ["After lunch", "go to the park"],
+        "The time chunk comes before the action chunk.",
+        "Listen for the short pause between the two ideas."
+      ),
+      question(
+        "Listen, then choose the matching speaking purpose.",
+        "Would you like the small one?",
+        2,
+        ["Flat command", "Gentle question"],
+        "The melody supports a friendly question.",
+        "Listen to how the voice moves at the end."
+      ),
+      question(
+        "You missed the last word. Choose the collaborative repair.",
+        "Could you say the last word again, please?",
+        2,
+        ["Speak properly", "Say the last word again, please"],
+        "This repair is specific, polite, and useful.",
+        "Ask for the exact part you missed."
       ),
     ],
-    ["reflection", "strategy use", "learner agency", "transfer"]
+    [
+      "sound contrasts",
+      "meaningful endings",
+      "word stress",
+      "information focus",
+      "meaning chunks",
+      "intonation",
+      "communication repair",
+    ]
   ),
 ];

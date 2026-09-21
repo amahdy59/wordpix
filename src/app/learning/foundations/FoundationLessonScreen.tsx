@@ -8,6 +8,7 @@ import {
   Play,
   Sparkles,
   Volume2,
+  X,
 } from "lucide-react";
 import type { Action } from "../../types";
 import { ProgressBar } from "../../shared";
@@ -21,6 +22,8 @@ import {
   type FoundationLessonId,
 } from "./foundationCurriculum";
 import { getFoundationActivityContract } from "./foundationActivities";
+import { PrivateRecordCompare } from "./PrivateRecordCompare";
+import { useI18n } from "../../context/I18nContext";
 
 interface Props {
   lessonId: FoundationLessonId;
@@ -37,6 +40,7 @@ const focusRing =
   "focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary";
 
 export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
+  const { interfaceLang } = useI18n();
   const { state, recordFoundationCheckpoint, recordFoundationCompletion } = useLearner();
   const lesson = getFoundationLesson(lessonId);
   const steps = useMemo<Step[]>(
@@ -61,6 +65,10 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
   const [attempts, setAttempts] = useState(0);
   const [answered, setAnswered] = useState(false);
   const [feedback, setFeedback] = useState<string | null>(null);
+  const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
+  const [rhythmTaps, setRhythmTaps] = useState(0);
+  const [orderedChoices, setOrderedChoices] = useState<readonly string[]>([]);
+  const [confidence, setConfidence] = useState<"again" | "supported" | "ready" | null>(null);
   const [questionResults, setQuestionResults] = useState<Readonly<Record<number, boolean>>>(() =>
     savedProgress?.status === "in-progress"
       ? Object.fromEntries(
@@ -90,6 +98,12 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
     usesQualitativeRouting ||
     savedProgress?.status === "mastered" ||
     scorePercent >= lesson.masteryThreshold;
+  const isPronunciationLesson = lesson.level === 13;
+  const canDoGoal = `${lesson.goal.charAt(0).toLowerCase()}${lesson.goal.slice(1)}`;
+  const independentCheckStart = Math.max(
+    0,
+    lesson.questions.length - (isPronunciationLesson ? 1 : 2)
+  );
 
   useEffect(() => () => stop(), [stop]);
   useEffect(() => {
@@ -122,6 +136,10 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
     setAttempts(0);
     setAnswered(false);
     setFeedback(null);
+    setSelectedChoice(null);
+    setRhythmTaps(0);
+    setOrderedChoices([]);
+    setConfidence(null);
     setHintOpen(false);
     setHeardOptions(new Set());
   };
@@ -138,6 +156,13 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
     playStepAudio(steps[nextIndex]);
   };
 
+  useEffect(() => {
+    if (!answered || step.kind !== "question" || !state.accessibility.autoAdvance) return;
+    const delay = attempts >= 2 ? 1600 : 700;
+    const timeout = window.setTimeout(advance, delay);
+    return () => window.clearTimeout(timeout);
+  }, [answered, attempts, state.accessibility.autoAdvance]);
+
   const goBack = () => {
     if (stepIndex === 0) return;
     const previousIndex = Math.max(0, stepIndex - 1);
@@ -150,6 +175,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
     if (step.kind !== "question" || answered) return;
     stop();
     const question = lesson.questions[step.index];
+    setSelectedChoice(value);
     if (value === question.answer) {
       setQuestionResults((results) => ({ ...results, [step.index]: true }));
       setFeedback(question.correctFeedback);
@@ -271,6 +297,23 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
               <p className="mx-auto mt-3 max-w-md text-base font-semibold leading-relaxed text-foreground">
                 {lesson.goal}
               </p>
+              {interfaceLang === "ar" && (
+                <p
+                  lang="ar"
+                  className="mx-auto mt-3 max-w-md rounded-xl border border-primary/20 bg-primary/5 px-4 py-3 text-sm font-bold leading-relaxed text-foreground"
+                >
+                  استمع إلى النماذج، ثم استخدم الصور والأصوات لاختيار الإجابة. يمكنك فتح التلميح في
+                  أي وقت.
+                </p>
+              )}
+              {isPronunciationLesson && (
+                <div className="mx-auto mt-4 max-w-md rounded-2xl border border-primary/25 bg-primary/5 px-4 py-3 text-start">
+                  <p className="text-xs font-black uppercase tracking-wide text-primary">
+                    By the end, I can
+                  </p>
+                  <p className="mt-1 font-bold leading-relaxed text-foreground">{canDoGoal}</p>
+                </div>
+              )}
               {lesson.reviewStatus === "pilot" && (
                 <p className="mx-auto mt-3 max-w-md rounded-xl border border-primary/25 bg-primary/5 px-4 py-3 text-sm font-bold leading-relaxed text-foreground">
                   Optional pilot · You may listen, point, or choose. Speaking and recording are not
@@ -317,10 +360,19 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                   </div>
                 </div>
               )}
+              {lesson.id === "pronunciation-goals" && (
+                <button
+                  type="button"
+                  onClick={() => openLesson("pronunciation-portfolio")}
+                  className={`mt-5 min-h-[52px] w-full rounded-2xl border-2 border-primary bg-background px-5 font-bold text-primary ${focusRing}`}
+                >
+                  Take the optional 2-minute skills check
+                </button>
+              )}
               <button
                 type="button"
                 onClick={advance}
-                className={`mt-5 flex min-h-[56px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 font-bold text-primary-foreground ${focusRing}`}
+                className={`${lesson.id === "pronunciation-goals" ? "mt-3" : "mt-5"} flex min-h-[56px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 font-bold text-primary-foreground ${focusRing}`}
               >
                 <Play className="size-5" aria-hidden /> Start lesson
               </button>
@@ -393,6 +445,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
               const question = lesson.questions[step.index];
               const challengeStart = Math.max(1, lesson.questions.length - 2);
               const activity = getFoundationActivityContract(question);
+              const responseMode = question.responseMode ?? "choice";
               const hasSpokenOptions = activity.kind === "listen-and-choose";
               const allOptionsHeard = question.options.every(
                 (item) => !item.audio || heardOptions.has(item.value)
@@ -403,8 +456,14 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                   aria-labelledby="question-heading"
                 >
                   <p className="text-xs font-black uppercase tracking-wider text-primary">
-                    {step.index >= challengeStart ? "Challenge round" : "Your turn"} ·{" "}
-                    {step.index + 1} of {lesson.questions.length}
+                    {isPronunciationLesson
+                      ? step.index >= independentCheckStart
+                        ? "Independent check"
+                        : "Guided practice"
+                      : step.index >= challengeStart
+                        ? "Challenge round"
+                        : "Your turn"}{" "}
+                    · {step.index + 1} of {lesson.questions.length}
                   </p>
                   <h2 id="question-heading" className="mt-2 text-2xl font-black text-foreground">
                     {question.prompt}
@@ -453,17 +512,140 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                             ? "Hear the target sound"
                             : "Tap to listen again"}
                   </p>
-                  {hasSpokenOptions ? (
+                  {isPronunciationLesson && state.accessibility.includeSpeaking && (
+                    <PrivateRecordCompare target={question.audio} />
+                  )}
+                  {responseMode === "rhythm" ? (
+                    <div className="mt-7 rounded-3xl border border-border bg-wp-card p-5 shadow-wp-xs">
+                      <p className="font-bold text-foreground">Tap once for each beat you hear</p>
+                      <div
+                        className="mt-4 flex min-h-12 items-center justify-center gap-2"
+                        aria-live="polite"
+                        aria-label={`${rhythmTaps} beats tapped`}
+                      >
+                        {rhythmTaps === 0 ? (
+                          <span className="text-sm font-semibold text-muted-foreground">
+                            No beats tapped yet
+                          </span>
+                        ) : (
+                          Array.from({ length: rhythmTaps }, (_, index) => (
+                            <span
+                              key={index}
+                              className="size-6 rounded-full bg-primary"
+                              aria-hidden
+                            />
+                          ))
+                        )}
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setRhythmTaps((count) => Math.min(question.options.length, count + 1))
+                        }
+                        disabled={answered || rhythmTaps >= question.options.length}
+                        className={`mt-4 min-h-[64px] w-full rounded-2xl border-2 border-primary bg-primary/10 text-lg font-black text-primary disabled:opacity-60 ${focusRing}`}
+                      >
+                        Tap the beat
+                      </button>
+                      <div className="mt-3 grid grid-cols-2 gap-3">
+                        <button
+                          type="button"
+                          onClick={() => setRhythmTaps(0)}
+                          disabled={answered || rhythmTaps === 0}
+                          className={`min-h-12 rounded-xl border border-border font-bold text-foreground disabled:opacity-50 ${focusRing}`}
+                        >
+                          Reset taps
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => choose(String(rhythmTaps))}
+                          disabled={answered || rhythmTaps === 0}
+                          className={`min-h-12 rounded-xl bg-primary font-bold text-primary-foreground disabled:opacity-50 ${focusRing}`}
+                        >
+                          Check rhythm
+                        </button>
+                      </div>
+                    </div>
+                  ) : responseMode === "ordering" ? (
+                    <div className="mt-7 rounded-3xl border border-border bg-wp-card p-5 shadow-wp-xs">
+                      <p className="font-bold text-foreground">
+                        Build the message in listening order
+                      </p>
+                      <div
+                        className="mt-4 flex min-h-16 flex-wrap items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-primary/35 bg-primary/5 p-3"
+                        aria-live="polite"
+                        aria-label={
+                          orderedChoices.length
+                            ? `Current order: ${orderedChoices
+                                .map(
+                                  (value) =>
+                                    question.options.find((option) => option.value === value)?.label
+                                )
+                                .join(", ")}`
+                            : "No chunks selected"
+                        }
+                      >
+                        {orderedChoices.length === 0 ? (
+                          <span className="text-sm font-semibold text-muted-foreground">
+                            Choose the first chunk below
+                          </span>
+                        ) : (
+                          orderedChoices.map((value, index) => (
+                            <span
+                              key={value}
+                              className="rounded-xl bg-primary px-4 py-2 font-bold text-primary-foreground"
+                            >
+                              {index + 1}.{" "}
+                              {question.options.find((item) => item.value === value)?.label}
+                            </span>
+                          ))
+                        )}
+                      </div>
+                      <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                        {question.options.map((item) => (
+                          <button
+                            key={item.value}
+                            type="button"
+                            onClick={() => setOrderedChoices((current) => [...current, item.value])}
+                            disabled={answered || orderedChoices.includes(item.value)}
+                            className={`min-h-[52px] rounded-xl border-2 border-primary bg-background px-3 font-bold text-primary disabled:opacity-45 ${focusRing}`}
+                          >
+                            {item.label}
+                          </button>
+                        ))}
+                      </div>
+                      <div className="mt-3 grid grid-cols-2 gap-3">
+                        <button
+                          type="button"
+                          onClick={() => setOrderedChoices((current) => current.slice(0, -1))}
+                          disabled={answered || orderedChoices.length === 0}
+                          className={`min-h-12 rounded-xl border border-border font-bold text-foreground disabled:opacity-50 ${focusRing}`}
+                        >
+                          Undo
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => choose(orderedChoices.join("|"))}
+                          disabled={answered || orderedChoices.length !== question.options.length}
+                          className={`min-h-12 rounded-xl bg-primary font-bold text-primary-foreground disabled:opacity-50 ${focusRing}`}
+                        >
+                          Check order
+                        </button>
+                      </div>
+                    </div>
+                  ) : hasSpokenOptions ? (
                     <div className="mt-6 grid grid-cols-2 gap-3" aria-label="Spoken answer choices">
                       {question.options.map((item, index) => {
                         const heard = heardOptions.has(item.value);
                         const isAnswer = item.value === question.answer;
+                        const isSelected = selectedChoice === item.value;
+                        const isWrongSelection = isSelected && !isAnswer;
                         const revealImage =
                           question.imageReveal === "always" || (answered && isAnswer);
                         return (
                           <div
                             key={item.value}
-                            className={`overflow-hidden rounded-2xl border-2 bg-wp-card shadow-wp-xs ${answered && isAnswer ? "border-[var(--feedback-success-border)]" : "border-border"}`}
+                            className={`relative overflow-hidden rounded-2xl border-2 bg-wp-card shadow-wp-xs ${answered && isAnswer ? "border-[var(--feedback-success)]" : isWrongSelection ? "border-[var(--feedback-error)]" : "border-border"}`}
                           >
                             <button
                               type="button"
@@ -501,27 +683,28 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                                   {item.label}
                                 </span>
                               )}
+                              {(isWrongSelection || (answered && isAnswer)) && (
+                                <span
+                                  className={`absolute end-2 top-2 flex size-9 items-center justify-center rounded-full text-white shadow-wp-xs ${isAnswer ? "bg-[var(--feedback-success)]" : "bg-[var(--feedback-error)]"}`}
+                                  aria-hidden
+                                >
+                                  {isAnswer ? (
+                                    <Check className="size-5" />
+                                  ) : (
+                                    <X className="size-5" />
+                                  )}
+                                </span>
+                              )}
                             </button>
                             <div
                               className={`flex min-h-12 w-full items-center justify-center gap-2 border-t border-border px-3 text-sm font-black ${allOptionsHeard ? "text-primary" : "text-muted-foreground"}`}
                               aria-hidden
                             >
-                              {answered ? (
-                                isAnswer ? (
-                                  <>
-                                    <Check className="size-4" />
-                                    Correct answer
-                                  </>
-                                ) : (
-                                  "Not this one"
-                                )
-                              ) : allOptionsHeard ? (
-                                "Tap your answer"
-                              ) : heard ? (
-                                "Heard"
-                              ) : (
-                                "Tap to listen"
-                              )}
+                              {allOptionsHeard
+                                ? "Tap your answer"
+                                : heard
+                                  ? "Heard"
+                                  : "Tap to listen"}
                             </div>
                           </div>
                         );
@@ -531,55 +714,74 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                     <div
                       className={`mt-7 grid gap-3 ${question.options.length > 2 ? "grid-cols-2 sm:grid-cols-3" : "grid-cols-2"}`}
                     >
-                      {question.options.map((item) => (
-                        <button
-                          key={item.value}
-                          type="button"
-                          onClick={() => choose(item.value)}
-                          disabled={answered}
-                          className={`group min-h-[64px] overflow-hidden rounded-2xl border-2 border-primary bg-wp-card text-lg font-black text-primary hover:bg-primary/10 disabled:opacity-65 ${focusRing}`}
-                        >
-                          {item.image ? (
-                            <>
-                              <span className="block aspect-[4/3] overflow-hidden bg-primary/10">
-                                <img
-                                  src={resolveAssetUrl(item.image.src)}
-                                  alt=""
-                                  className="size-full object-cover transition duration-300 group-hover:scale-105"
-                                />
+                      {question.options.map((item) => {
+                        const isAnswer = item.value === question.answer;
+                        const isSelected = selectedChoice === item.value;
+                        const isWrongSelection = isSelected && !isAnswer;
+                        const showCorrect = answered && isAnswer;
+                        return (
+                          <button
+                            key={item.value}
+                            type="button"
+                            onClick={() => choose(item.value)}
+                            disabled={answered}
+                            aria-label={
+                              showCorrect
+                                ? `Correct answer: ${item.label}`
+                                : isWrongSelection
+                                  ? `Incorrect answer: ${item.label}`
+                                  : undefined
+                            }
+                            className={`group relative min-h-[64px] overflow-hidden rounded-2xl border-2 bg-wp-card text-lg font-black text-primary hover:bg-primary/10 disabled:opacity-100 ${showCorrect ? "border-[var(--feedback-success)]" : isWrongSelection ? "border-[var(--feedback-error)]" : "border-primary"} ${focusRing}`}
+                          >
+                            {item.image ? (
+                              <>
+                                <span className="block aspect-[4/3] overflow-hidden bg-primary/10">
+                                  <img
+                                    src={resolveAssetUrl(item.image.src)}
+                                    alt=""
+                                    className="size-full object-cover transition duration-300 group-hover:scale-105"
+                                  />
+                                </span>
+                                <span className="block border-t border-border px-3 py-3 capitalize">
+                                  {item.label}
+                                </span>
+                              </>
+                            ) : (
+                              <span className="block px-3 py-4">{item.label}</span>
+                            )}
+                            {(isWrongSelection || showCorrect) && (
+                              <span
+                                className={`absolute end-2 top-2 flex size-9 items-center justify-center rounded-full text-white shadow-wp-xs ${showCorrect ? "bg-[var(--feedback-success)]" : "bg-[var(--feedback-error)]"}`}
+                                aria-hidden
+                              >
+                                {showCorrect ? (
+                                  <Check className="size-5" aria-hidden />
+                                ) : (
+                                  <X className="size-5" aria-hidden />
+                                )}
                               </span>
-                              <span className="block border-t border-border px-3 py-3 capitalize">
-                                {item.label}
-                              </span>
-                            </>
-                          ) : (
-                            <span className="block px-3 py-4">{item.label}</span>
-                          )}
-                        </button>
-                      ))}
+                            )}
+                          </button>
+                        );
+                      })}
                     </div>
                   )}
                   {feedback && (
-                    <div
-                      className={`mt-5 rounded-2xl border p-4 text-start ${answered ? "border-[var(--feedback-success-border)] bg-[var(--feedback-success-surface)]" : "border-[var(--feedback-warning)] bg-[var(--feedback-warning-surface)]"}`}
-                      role="status"
-                      aria-live="polite"
-                    >
-                      <p className="font-bold leading-relaxed text-foreground">
-                        {feedback}
-                        {answered && attempts >= 2
-                          ? ` The answer is ${question.options.find((item) => item.value === question.answer)?.label}.`
-                          : ""}
-                      </p>
-                    </div>
+                    <p className="sr-only" role="status" aria-live="polite">
+                      {feedback}
+                      {answered && attempts >= 2
+                        ? ` The answer is ${question.options.find((item) => item.value === question.answer)?.label}.`
+                        : ""}
+                    </p>
                   )}
-                  {answered && (
+                  {answered && !state.accessibility.autoAdvance && (
                     <button
                       type="button"
                       onClick={advance}
-                      className={`mt-3 min-h-[52px] w-full rounded-2xl bg-primary px-5 font-bold text-primary-foreground ${focusRing}`}
+                      className={`mt-4 min-h-[52px] w-full rounded-2xl bg-primary px-5 font-bold text-primary-foreground ${focusRing}`}
                     >
-                      Continue
+                      Next activity
                     </button>
                   )}
                 </section>
@@ -620,16 +822,62 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
               {usesQualitativeRouting && (
                 <div className="mt-4 rounded-2xl border border-border bg-muted/40 p-4 text-start">
                   <p className="text-xs font-black uppercase tracking-wide text-primary">
-                    Evidence noticed
+                    Skill results
                   </p>
-                  <p className="mt-1 font-semibold leading-relaxed text-foreground">
-                    {lesson.evidenceDimensions.join(" · ")}
-                  </p>
+                  <ul className="mt-2 space-y-2">
+                    {lesson.evidenceDimensions.map((dimension, index) => {
+                      const result = questionResults[index % Math.max(1, lesson.questions.length)];
+                      return (
+                        <li key={dimension} className="flex items-center justify-between gap-3">
+                          <span className="font-semibold capitalize text-foreground">
+                            {dimension}
+                          </span>
+                          <span
+                            className={`rounded-full px-3 py-1 text-xs font-black ${result ? "bg-[var(--feedback-success-surface)] text-foreground" : "bg-[var(--feedback-warning-surface)] text-foreground"}`}
+                          >
+                            {result ? "Demonstrated" : "Keep practising"}
+                          </span>
+                        </li>
+                      );
+                    })}
+                  </ul>
                   <p className="mt-2 text-sm font-semibold leading-relaxed text-muted-foreground">
-                    Pilot curriculum: phonetic and accessibility review remain part of the release
-                    gate.
+                    These results guide your next practice. They do not grade your accent.
                   </p>
                 </div>
+              )}
+              {usesQualitativeRouting && (
+                <fieldset className="mt-4 rounded-2xl border border-border p-4 text-start">
+                  <legend className="px-2 text-xs font-black uppercase tracking-wide text-primary">
+                    How did this feel?
+                  </legend>
+                  <div className="grid gap-2 sm:grid-cols-3">
+                    {[
+                      ["again", "I want more practice"],
+                      ["supported", "I can do it with help"],
+                      ["ready", "I can try this independently"],
+                    ].map(([value, label]) => (
+                      <button
+                        key={value}
+                        type="button"
+                        onClick={() => setConfidence(value as typeof confidence)}
+                        aria-pressed={confidence === value}
+                        className={`min-h-12 rounded-xl border px-3 text-sm font-bold ${confidence === value ? "border-primary bg-primary text-primary-foreground" : "border-border bg-background text-foreground"} ${focusRing}`}
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                  {confidence && (
+                    <p className="mt-3 text-sm font-semibold text-muted-foreground" role="status">
+                      {confidence === "again"
+                        ? "Recommendation: repeat this lesson before moving on."
+                        : confidence === "supported"
+                          ? "Recommendation: move on, then return during review."
+                          : "Recommendation: continue and revisit this skill in the final check."}
+                    </p>
+                  )}
+                </fieldset>
               )}
               {mastered && nextLesson && (
                 <div className="mt-5 rounded-2xl bg-primary/5 p-4 text-start">
