@@ -94,8 +94,28 @@ describe("action-oriented curriculum", () => {
       (node) => node.type === "vocabulary"
     );
     expect(vocabulary.flatMap((node) => node.wordIds)).toHaveLength(unit.wordIds.length);
-    expect(vocabulary.find((node) => node.wordIds?.includes("a"))?.id).toBe("learn-essential");
+    expect(vocabulary.find((node) => node.wordIds?.includes("a"))?.id).toBe("learn-objects");
     expect(vocabulary.find((node) => node.wordIds?.includes("c"))?.isCore).toBe(false);
+  });
+
+  it("preserves authored foundation order ahead of inferred frequency", async () => {
+    const numbers = COURSE_UNITS["numbers-counting"];
+    const content = await loadLearningMaterials(numbers.id);
+    const vocabulary = generateCurriculum(content!, numbers).filter(
+      (node) => node.type === "vocabulary"
+    );
+
+    expect(vocabulary[0].wordIds).toEqual([
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+    ]);
+    expect(vocabulary.findIndex((node) => node.wordIds?.includes("million"))).toBeGreaterThan(0);
   });
 
   it("keeps above-level reading optional instead of blocking the A1 path", () => {

@@ -46,6 +46,8 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
     expect(screen.getByRole("button", { name: /Study materials for/i })).toBeInTheDocument();
     expect(screen.getByText("Same or Different?")).toBeInTheDocument();
     expect(screen.getByText("Recommended next")).toBeInTheDocument();
+    expect(screen.getByText("Reviews unlock after your first lesson")).toBeInTheDocument();
+    expect(screen.queryByText(/Excellent memory retention/i)).not.toBeInTheDocument();
   });
 
   it("lets learners reveal the complete general English route", async () => {

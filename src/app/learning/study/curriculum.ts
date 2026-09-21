@@ -102,6 +102,7 @@ export function generateCurriculum(
   const frequency = new Map(
     (materials.wordMeta ?? []).map((entry) => [normalizeWord(entry.word), entry.frequency])
   );
+  const hasAuthoredTiers = materials.priorityTiers !== undefined;
   const sourceTiers = materials.priorityTiers ?? {
     essential: unit.wordIds.filter((id) => frequency.get(normalizeWord(id)) === 3),
     important: unit.wordIds.filter((id) => frequency.get(normalizeWord(id)) === 2),
@@ -119,23 +120,28 @@ export function generateCurriculum(
   };
   const extensionIds = new Set(tiers.goodToKnow.map(normalizeWord));
 
-  addVocabularySequence(
-    nodes,
-    "learn-essential",
-    "Essential language",
-    tiers.essential,
-    seen,
-    curriculum
-  );
+  // Explicit priority tiers are editorial sequencing. Inferred frequency
+  // ratings are not: preserve authored subtopic order and only use frequency
+  // to move optional extension words out of the core path.
+  if (hasAuthoredTiers) {
+    addVocabularySequence(
+      nodes,
+      "learn-essential",
+      "Essential language",
+      tiers.essential,
+      seen,
+      curriculum
+    );
 
-  addVocabularySequence(
-    nodes,
-    "learn-important",
-    "Useful supporting language",
-    tiers.important,
-    seen,
-    curriculum
-  );
+    addVocabularySequence(
+      nodes,
+      "learn-important",
+      "Useful supporting language",
+      tiers.important,
+      seen,
+      curriculum
+    );
+  }
 
   materials.subtopics?.forEach((subtopic) => {
     addVocabularySequence(

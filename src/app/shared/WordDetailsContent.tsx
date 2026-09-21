@@ -1,6 +1,10 @@
 import { BookOpen, Layers, Volume2, Zap } from "lucide-react";
 import type { VocabularyItem } from "../data/lessons";
-import { getLexiconEntry, hasArabicGloss } from "../data/lexiconDictionary";
+import {
+  getLexiconEntry,
+  getReviewedCollocations,
+  hasArabicGloss,
+} from "../data/lexiconDictionary";
 import { useAudio } from "./useAudio";
 import { useI18n } from "../context/I18nContext";
 
@@ -20,6 +24,7 @@ export function WordDetailsContent({
   const baseEntry = getLexiconEntry(word.id, word.label, unitId);
   const entry = {
     ...baseEntry,
+    collocations: getReviewedCollocations(baseEntry),
     arabic: word.arabicTranslation ?? baseEntry.arabic,
     sentences: word.exampleUsage
       ? [

@@ -282,6 +282,16 @@ export function __clearTestStateCache() {
   testStateCache = null;
 }
 
+export async function persistLearnerStateBeforeCleanup(
+  state: LearnerStateSchema,
+  cleanupLegacyState: () => void,
+  persist: (state: LearnerStateSchema) => Promise<boolean> = saveLearnerState
+): Promise<boolean> {
+  const saved = await persist(state);
+  if (saved) cleanupLegacyState();
+  return saved;
+}
+
 export function LearnerProvider({ children }: { children: React.ReactNode }) {
   const [state, setState] = useState<LearnerStateSchema | null>(() => {
     if (typeof process !== "undefined" && process.env.NODE_ENV === "test") {
@@ -301,12 +311,13 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
 
       try {
         let dbState = await getLearnerState();
+        let loadedLegacyState = false;
         if (!dbState) {
           try {
             const ls = localStorage.getItem(STORAGE_KEY);
             if (ls) {
               dbState = migrateState(JSON.parse(ls));
-              localStorage.removeItem(STORAGE_KEY);
+              loadedLegacyState = true;
             }
           } catch (e) {
             console.warn("Legacy localStorage read failed", e);
@@ -317,9 +328,11 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         }
 
         dbState = migrateLegacyFoundationProgress(migrateState(dbState));
-        await saveLearnerState(dbState);
-        localStorage.removeItem(LEGACY_FOUNDATION_COMPLETION_KEY);
-        localStorage.removeItem(LEGACY_FOUNDATION_LAST_OPENED_KEY);
+        await persistLearnerStateBeforeCleanup(dbState, () => {
+          if (loadedLegacyState) localStorage.removeItem(STORAGE_KEY);
+          localStorage.removeItem(LEGACY_FOUNDATION_COMPLETION_KEY);
+          localStorage.removeItem(LEGACY_FOUNDATION_LAST_OPENED_KEY);
+        });
 
         if (mounted) setState(dbState);
       } catch (err) {

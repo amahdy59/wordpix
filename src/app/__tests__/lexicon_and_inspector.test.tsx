@@ -1,6 +1,12 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { LEXICON_DICTIONARY, getLexiconEntry, hasArabicGloss } from "../data/lexiconDictionary";
+import {
+  LEXICON_DICTIONARY,
+  getLexiconEntry,
+  getReviewedCollocations,
+  hasArabicGloss,
+  hasReviewedLexiconExamples,
+} from "../data/lexiconDictionary";
 import { WordInspectorModal } from "../shared/WordInspectorModal";
 import type { VocabularyItem } from "../data/lessons";
 import { BEDROOM_VOCABULARY } from "../data/lessons";
@@ -35,7 +41,8 @@ describe("Lexicon Dictionary & Inspector", () => {
   it("provides graceful fallback for completely unknown words", () => {
     const fallback = getLexiconEntry("custom-gadget-xyz", "Custom Gadget XYZ");
     expect(fallback.id).toBe("custom-gadget-xyz");
-    expect(fallback.collocations.length).toBeGreaterThan(0);
+    expect(getReviewedCollocations(fallback)).toEqual([]);
+    expect(hasReviewedLexiconExamples(fallback)).toBe(false);
     // The English sentence has to be grammatical for whatever kind of word
     // reached the fallback, not `The ${label} is used in daily life.`
     expect(fallback.exampleSentence).toBe("This is a custom gadget XYZ.");

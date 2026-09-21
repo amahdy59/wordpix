@@ -32,6 +32,22 @@ export interface LexiconEntry {
   exampleArabic?: string;
 }
 
+const GENERIC_COLLOCATIONS = new Set(["use regularly", "check carefully", "keep handy"]);
+
+export function getReviewedCollocations(entry: Pick<LexiconEntry, "collocations">): string[] {
+  return entry.collocations.filter((collocation) => !GENERIC_COLLOCATIONS.has(collocation));
+}
+
+export function hasReviewedLexiconExamples(
+  entry: Pick<LexiconEntry, "collocations" | "sentences">
+): boolean {
+  const isGeneratedFallback =
+    getReviewedCollocations(entry).length === 0 &&
+    entry.sentences.length === 1 &&
+    entry.sentences[0]?.context === "Everyday Usage";
+  return entry.sentences.length > 0 && !isGeneratedFallback;
+}
+
 export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
   toilet: {
     id: "toilet",
@@ -37975,7 +37991,7 @@ export function getLexiconEntry(
       arabic: ext.ar,
       phonetic: ext.phonetic,
       partOfSpeech: ext.pos || "noun",
-      collocations: ext.collocations || ["use regularly", "check carefully", "keep handy"],
+      collocations: ext.collocations || [],
       sentences: [
         {
           context: "Everyday Usage",
@@ -38002,7 +38018,7 @@ export function getLexiconEntry(
     // absent translation is better said than faked.
     arabic: "",
     partOfSpeech: "noun",
-    collocations: ["use regularly", "check carefully", "keep handy"],
+    collocations: [],
     sentences: [
       {
         context: "Everyday Usage",

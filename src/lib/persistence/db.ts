@@ -125,13 +125,15 @@ export async function getLearnerState(): Promise<LearnerStateSchema | null> {
 /**
  * Saves the learner state to IndexedDB.
  */
-export async function saveLearnerState(state: LearnerStateSchema): Promise<void> {
+export async function saveLearnerState(state: LearnerStateSchema): Promise<boolean> {
   try {
     const db = await getDB();
-    if (!db) return;
+    if (!db) return false;
     await db.put("learner_state", state, LEARNER_STATE_KEY);
+    return true;
   } catch (e) {
     console.error("Failed to save learner state", e);
+    return false;
   }
 }
 

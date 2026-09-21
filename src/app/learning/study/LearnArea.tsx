@@ -5,7 +5,11 @@ import type { UnitLearningMaterials } from "../types";
 import { getWords } from "../../data/vocabulary";
 import { WordImage } from "../../shared/WordImage";
 import { useAudio } from "../../shared/useAudio";
-import { getLexiconEntry, hasArabicGloss } from "../../data/lexiconDictionary";
+import {
+  getLexiconEntry,
+  hasArabicGloss,
+  hasReviewedLexiconExamples,
+} from "../../data/lexiconDictionary";
 import { WordInspectorModal } from "../../shared/WordInspectorModal";
 import { Select } from "../../shared/Select";
 import type { VocabularyItem } from "../../data/lessons";
@@ -147,6 +151,9 @@ export function LearnArea({
         {visibleWords.map((word) => {
           const entry = getLexiconEntry(word.id, word.label, materials.unitId);
           const arabic = word.arabicTranslation ?? entry.arabic;
+          const hasExamples =
+            Boolean(word.exampleUsage) ||
+            (word.arabicTranslation === undefined && hasReviewedLexiconExamples(entry));
           const status = progress?.wordStatus[word.id] || "new";
           const learned = status === "learning" || status === "comfortable";
           return (
@@ -213,7 +220,7 @@ export function LearnArea({
                   onClick={() => setInspectedWord(word)}
                   className="min-h-11 text-start text-primary font-semibold rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
                 >
-                  {t("study.viewExamples")}
+                  {t(hasExamples ? "study.viewExamples" : "study.viewDetails")}
                 </button>
                 <div className="grid grid-cols-[auto_1fr] items-center gap-2 border-t border-border pt-3 text-sm font-semibold text-foreground">
                   <span aria-hidden="true">{t("study.status")}</span>

@@ -59,6 +59,10 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
     learnerState.foundationProgress[recommendedFoundationLesson.id];
   const activeUnit = useMemo(() => resolveUnitForLesson(activeLesson.id), [activeLesson.id]);
   const dueWords = useMemo(() => getDueWordsForReview(progress.wordMemory), [progress.wordMemory]);
+  const hasLearningHistory =
+    learnerState.learnerProgress.sessionsCompleted > 0 ||
+    Object.keys(progress.wordMemory).length > 0 ||
+    Object.keys(learnerState.foundationProgress).length > 0;
   const todayStr = getLocalDateString(new Date());
 
   const todayReviewedCount = useMemo(() => {
@@ -271,7 +275,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     <ArrowRight className="size-4 rtl:rotate-180" />
                   </motion.button>
                 </Card>
-              ) : (
+              ) : hasLearningHistory ? (
                 <div
                   role="status"
                   className="flex items-start gap-3 rounded-2xl border border-wp-green/30 bg-wp-green-light/30 px-4 py-3"
@@ -291,6 +295,21 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     >
                       {t("dashboard.practiseSkill")}
                     </button>
+                  </div>
+                </div>
+              ) : (
+                <div
+                  role="status"
+                  className="flex items-start gap-3 rounded-2xl border border-primary/25 bg-primary/5 px-4 py-3"
+                >
+                  <BookOpen className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
+                  <div className="min-w-0">
+                    <Badge variant="muted" size="sm">
+                      <span>{t("dashboard.reviewReadyTitle")}</span>
+                    </Badge>
+                    <p className="mt-1 font-sans text-xs leading-relaxed text-muted-foreground">
+                      {t("dashboard.reviewReadyDesc")}
+                    </p>
                   </div>
                 </div>
               )}

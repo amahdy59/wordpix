@@ -26,7 +26,7 @@ describe("Vocabulary descriptions", () => {
     const examples = vocabulary.filter((word) => word.exampleUsage);
 
     expect(translated).toHaveLength(7180);
-    expect(examples).toHaveLength(2963);
+    expect(examples).toHaveLength(2965);
     translated.forEach((word) => {
       expect(word.arabicTranslation, `${word.topic}/${word.id} has a non-Arabic gloss`).toMatch(
         /[؀-ۿ]/
