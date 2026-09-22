@@ -1,13 +1,5 @@
 import { memo, useMemo } from "react";
-import {
-  ArrowRight,
-  RotateCcw,
-  WifiOff,
-  CheckCircle2,
-  Library,
-  Target,
-  BookOpen,
-} from "lucide-react";
+import { ArrowRight, RotateCcw, WifiOff, CheckCircle2, Library, BookOpen } from "lucide-react";
 import { getDueWordsForReview, type WordLearningState } from "../../features/gamification/sm2";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
@@ -24,7 +16,7 @@ import {
   getFoundationLesson,
 } from "../learning/foundations/foundationCurriculum";
 import { getRecommendedFoundationLessonId } from "../learning/foundations/foundationProgress";
-import { PageContainer, Section, Card, Badge } from "../shared";
+import { PageContainer, Section, Card, Badge, ProgressBar } from "../shared";
 import { ReleaseNotesCard } from "./ReleaseNotesCard";
 import { LearnerAvatar } from "../shared/LearnerAvatar";
 import { staggerContainer, staggerItem } from "../shared/animations";
@@ -122,40 +114,32 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         {offline && !offline.ready && offline.cached === 0 && (
           <Badge variant="muted" size="md" className="flex">
             <WifiOff className="size-3.5" aria-hidden />
-            <span>{navigator.onLine ? "Media needs a connection" : "Not available offline"}</span>
+            <span>
+              {navigator.onLine
+                ? t("dashboard.offlineNeedsConnection")
+                : t("dashboard.offlineUnavailable")}
+            </span>
           </Badge>
         )}
       </header>
 
-      <section
-        aria-label={t("dashboard.dailyTarget")}
-        className="flex flex-wrap items-center gap-x-3 gap-y-2 rounded-2xl border border-border bg-wp-card px-4 py-3"
-      >
-        <div className="flex items-center gap-2 text-sm font-bold text-foreground">
-          <Target className="size-4 text-primary" aria-hidden />
-          <span>{t("dashboard.dailyTarget")}</span>
-        </div>
-        <div
-          className="h-2 min-w-24 flex-1 overflow-hidden rounded-full bg-muted"
-          role="progressbar"
-          aria-label={`Daily word target: ${todayReviewedCount} of ${dailyWordTarget} words`}
-          aria-valuemin={0}
-          aria-valuemax={dailyWordTarget}
-          aria-valuenow={Math.min(todayReviewedCount, dailyWordTarget)}
-        >
-          <div
-            className="h-full rounded-full bg-primary motion-safe:transition-all"
-            style={{ width: `${dailyTargetPct}%` }}
-          />
-        </div>
-        <span className="text-xs font-bold text-muted-foreground">
-          {isDailyTargetMet
-            ? t("dashboard.targetMet")
-            : t("dashboard.wordsProgress", {
-                current: num(todayReviewedCount),
-                total: num(dailyWordTarget),
-              })}
-        </span>
+      <section aria-label={t("dashboard.dailyTarget")} className="max-w-5xl mx-auto w-full">
+        <ProgressBar
+          progressPercent={dailyTargetPct}
+          label={t("dashboard.dailyTarget")}
+          labelRight={
+            isDailyTargetMet
+              ? t("dashboard.targetMet")
+              : t("dashboard.wordsProgress", {
+                  current: num(todayReviewedCount),
+                  total: num(dailyWordTarget),
+                })
+          }
+          ariaLabel={t("dashboard.dailyTargetAria", {
+            current: todayReviewedCount,
+            total: dailyWordTarget,
+          })}
+        />
       </section>
 
       {/* Main Content: 1 Column on Mobile/Tablet, 2 Column Grid on Desktop (lg+) */}
@@ -177,8 +161,10 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   </span>
                   <span className="font-sans text-xs font-bold text-muted-foreground">
                     {recommendedFoundationProgress?.status === "in-progress"
-                      ? `Resume step ${recommendedFoundationProgress.currentStep + 1}`
-                      : "Recommended next"}
+                      ? t("learn.resumeStep", {
+                          step: recommendedFoundationProgress.currentStep + 1,
+                        })
+                      : t("learn.recommended")}
                   </span>
                 </div>
 
@@ -207,8 +193,12 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     <BookOpen className="size-5 shrink-0" />
                     <span>
                       {recommendedFoundationProgress
-                        ? `Continue: ${recommendedFoundationLesson.shortTitle}`
-                        : `Start: ${recommendedFoundationLesson.shortTitle}`}
+                        ? t("dashboard.todayContinue", {
+                            title: recommendedFoundationLesson.shortTitle,
+                          })
+                        : t("dashboard.todayStart", {
+                            title: recommendedFoundationLesson.shortTitle,
+                          })}
                     </span>
                     <ArrowRight className="size-5 shrink-0 rtl:rotate-180" />
                   </motion.button>
@@ -271,7 +261,11 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     }
                     className="w-full bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-sm min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
                   >
-                    <span>{`Review ${num(Math.min(15, dueWords.length))} Words Now`}</span>
+                    <span>
+                      {t("dashboard.reviewNowWords", {
+                        count: num(Math.min(15, dueWords.length)),
+                      })}
+                    </span>
                     <ArrowRight className="size-4 rtl:rotate-180" />
                   </motion.button>
                 </Card>

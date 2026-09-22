@@ -1,6 +1,7 @@
 import { memo } from "react";
 import { BackButton } from "./BackButton";
 import { CloseButton } from "./CloseButton";
+import { ProgressBar } from "./ProgressBar";
 
 interface Props {
   title: string;
@@ -23,6 +24,10 @@ interface Props {
   total?: number;
   /** Noun announced for this progress value. */
   progressLabel?: string;
+  /** Localized accessible name for the progress bar. Defaults to `{progressLabel} progress`. */
+  progressAriaLabel?: string;
+  /** Localized value text, e.g. `Step 3 of 9`. Defaults to `{progressLabel} {current} of {total}`. */
+  progressAriaValueText?: string;
   onBack: () => void;
   onClose: () => void;
 }
@@ -37,6 +42,8 @@ export const LessonHeader = memo(function LessonHeader({
   current,
   total = 6,
   progressLabel = "Step",
+  progressAriaLabel,
+  progressAriaValueText,
   onBack,
   onClose,
 }: Props) {
@@ -57,7 +64,12 @@ export const LessonHeader = memo(function LessonHeader({
         <div className="shrink-0">
           <BackButton onClick={onBack} />
         </div>
-        <h1 className="wp-type-body-emphasis truncate text-center flex-1 min-w-0 px-2">{title}</h1>
+        <h1
+          title={title}
+          className="wp-type-body-emphasis truncate text-center flex-1 min-w-0 px-2"
+        >
+          {title}
+        </h1>
         <div className="shrink-0">
           <CloseButton onClick={onClose} />
         </div>
@@ -71,20 +83,11 @@ export const LessonHeader = memo(function LessonHeader({
       )}
 
       {/* Progress bar */}
-      <div
-        role="progressbar"
-        aria-label={`${progressLabel} progress`}
-        aria-valuenow={pct}
-        aria-valuemin={0}
-        aria-valuemax={100}
-        aria-valuetext={`${progressLabel} ${safeCurrent} of ${safeTotal}`}
-        className="bg-primary/20 h-[8px] relative rounded-full shrink-0 w-full overflow-hidden"
-      >
-        <div
-          className="bg-primary h-full rounded-full motion-safe:transition-all motion-safe:duration-500"
-          style={{ width: `${pct}%` }}
-        />
-      </div>
+      <ProgressBar
+        progressPercent={pct}
+        ariaLabel={progressAriaLabel ?? `${progressLabel} progress`}
+        ariaValueText={progressAriaValueText ?? `${progressLabel} ${safeCurrent} of ${safeTotal}`}
+      />
     </header>
   );
 });

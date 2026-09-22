@@ -139,7 +139,13 @@
     "reviewReadyDesc": "ابدأ درس التأسيس الموجّه لإنشاء جدول مراجعة مخصص لك.",
     "corePathLevel": "المسار الأساسي · المستوى {level}",
     "optionalPicturePractice": "تدريب اختياري بالصور",
-    "practiseSkill": "تدرّب على مهارة"
+    "practiseSkill": "تدرّب على مهارة",
+    "offlineNeedsConnection": "تحتاج الوسائط إلى اتصال",
+    "offlineUnavailable": "غير متاح دون اتصال",
+    "dailyTargetAria": "هدف الكلمات اليومي: {current} من {total} كلمة",
+    "todayContinue": "تابع: {title}",
+    "todayStart": "ابدأ: {title}",
+    "reviewNowWords": "مراجعة {count} كلمة الآن"
   },
   "learn": {
     "pathBadge": "مسار إنجليزي موجّه",
@@ -195,7 +201,13 @@
     "pilotProgress": "تجريبي · تقدم وصفي",
     "listenRespond": "استمع وأجب",
     "soundsLettersWords": "أصوات وحروف وكلمات",
-    "preA1": "ما قبل A1"
+    "preA1": "ما قبل A1",
+    "figmaBadge": "منهج فيغما",
+    "figmaTitle": "استوديو النطق الموسّع",
+    "figmaDesc": "68 درسًا منظمًا للاستماع والكلام المتصل والنبر والتواصل اليومي.",
+    "figmaItemHint": "استمع · تدرّب · طبّق",
+    "emptyRecommendedTitle": "لا توجد وحدة مقترحة حاليًا",
+    "emptyRecommendedDesc": "لا يحتوي مسار تعلّمك على وحدات مقترحة بعد. تصفح مكتبة المفردات أو عُد إلى الرئيسية للمتابعة."
   },
   "foundation": {
     "lessonPosition": "المستوى {level} · الوحدة {unit} · الدرس {lesson}",
@@ -428,7 +440,10 @@
     "title": "تحميل المفردات ({count} وحدة)",
     "description": "يحمّل المفردات لهذه الزيارة. لا يؤدي هذا الإجراء إلى تنزيل الصور أو الصوت أو أدلة الدراسة.",
     "done": "تم تحميل المفردات",
-    "error": "تعذر تحميل بعض المفردات. تحقق من اتصالك وحاول مرة أخرى."
+    "error": "تعذر تحميل بعض المفردات. تحقق من اتصالك وحاول مرة أخرى.",
+    "loading": "جارٍ تحميل تفاصيل القاموس…",
+    "loadErrorTitle": "تعذّر تحميل تفاصيل القاموس.",
+    "loadErrorDesc": "تحقق من اتصالك وحاول مرة أخرى."
   },
   "learningMaterials": {
     "loading": "جارٍ تحميل المواد التعليمية…",
@@ -818,7 +833,12 @@
     "removeWordAria": "إزالة {token} من الموضع {pos}",
     "addWordAria": "إضافة {token}",
     "availableWordsAria": "الكلمات المتاحة",
-    "categoryForAria": "تصنيف {item}"
+    "categoryForAria": "تصنيف {item}",
+    "correctAnnouncement": "صحيح.",
+    "incorrectAnnouncement": "ليس صحيحًا تمامًا.",
+    "acknowledgedAnnouncement": "تم التسجيل. لا توجد علامات هنا.",
+    "progressLabel": "تمرين",
+    "progressAria": "تمرين {current} من {total}"
   },
   "listenRepeat": {
     "backToUnit": "العودة إلى {unit}",
@@ -849,7 +869,31 @@
     "keyboardShortcuts": "اختصارات لوحة المفاتيح",
     "changeWord": "تغيير الكلمة",
     "listenOrPause": "استماع أو إيقاف مؤقت",
-    "closeDetails": "إغلاق التفاصيل"
+    "closeDetails": "إغلاق التفاصيل",
+    "wordProgress": "تقدم الكلمات",
+    "wordProgressText": "الكلمة {current} من {total}",
+    "playingWord": "تشغيل {word}",
+    "wordPosition": "الكلمة {current} من {total}: {word}",
+    "previousWord": "الكلمة السابقة",
+    "nextWord": "الكلمة التالية",
+    "continueToSentences": "متابعة إلى الجمل",
+    "closeWordDetails": "إغلاق تفاصيل الكلمة",
+    "pronunciationPractice": "تدريب النطق",
+    "playAudioFor": "تشغيل نطق {word}",
+    "stopAudioFor": "إيقاف نطق {word}",
+    "stopRecording": "إيقاف تسجيل الصوت",
+    "practiceSpeakingFor": "تدرّب على نطق {word}",
+    "detailsFor": "تفاصيل {word}",
+    "exerciseSection": "تمرين الاستماع والترديد لمجموعة {group}",
+    "playbackOptions": "خيارات الاستماع"
+  },
+  "router": {
+    "lessonWordsMissingTitle": "لا توجد كلمات متاحة لهذا الدرس",
+    "lessonWordsMissingDesc": "تعذر تحميل مفردات هذه الخطوة. حاول مجددًا من مسار التعلّم أو عُد إلى الرئيسية.",
+    "exerciseMissingTitle": "التمرين غير متاح",
+    "exerciseMissingDesc": "تعذر العثور على هذا التمرين. اختر تدريبًا آخر أو عُد إلى الرئيسية.",
+    "backToPath": "العودة إلى مسار التعلّم",
+    "backToHome": "العودة إلى الرئيسية"
   },
   "story": {
     "nextVisualFlow": "التالي: استكشف التدفق البصري",
@@ -891,6 +935,18 @@
     "quizCompleteDesc": "حصلت على {score} من {total} إجابة صحيحة ({percent}%). استيعاب ممتاز!",
     "retakeQuiz": "إعادة الاختبار",
     "wellDone": "أحسنت!",
-    "contextExplanation": "توضيح السياق:"
+    "contextExplanation": "توضيح السياق:",
+    "pronounceWord": "انطق {word}",
+    "listenToWord": "استمع إلى {word}",
+    "stopStoryAudio": "إيقاف صوت القصة",
+    "listenFullStoryAudio": "استمع إلى صوت القصة كاملاً",
+    "toggleArabicTranslation": "تبديل الترجمة العربية",
+    "hideArabic": "إخفاء العربية",
+    "showArabic": "العربية",
+    "listenToPassage": "استمع إلى {title}",
+    "listenToExplanation": "استمع إلى الشرح"
+  },
+  "wordInspector": {
+    "pronounce": "انطق {word}"
   }
 }

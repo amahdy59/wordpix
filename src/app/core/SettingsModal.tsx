@@ -1,4 +1,5 @@
 import { memo, useState } from "react";
+import { createPortal } from "react-dom";
 import {
   X,
   Sun,
@@ -18,6 +19,7 @@ import { useTheme } from "../shared/ThemeToggle";
 import { useI18n, SUPPORTED_LANGS } from "../context/I18nContext";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useAudio } from "../shared/useAudio";
+import { useModalA11y } from "../shared/useModalA11y";
 import { COURSE_UNITS } from "../data/lessons";
 import { loadUnitVocabulary } from "../data/vocabulary";
 
@@ -56,6 +58,11 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
   const [preloadProgress, setPreloadProgress] = useState(0);
   const [preloadDone, setPreloadDone] = useState(false);
   const [preloadError, setPreloadError] = useState(false);
+
+  // Trap Tab inside, close on Escape, mark the background inert, and restore
+  // focus on close — the same contract every other modal keeps. The hook is
+  // called before the early return below so hook order stays stable.
+  const containerRef = useModalA11y({ isOpen, onDismiss: onClose });
 
   const handlePreloadAll = async () => {
     if (isPreloading) return;
@@ -102,14 +109,18 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
   if (!isOpen) return null;
 
-  return (
-    <div
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="settings-dialog-title"
-      className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 overflow-y-auto animate-in fade-in duration-200"
-    >
-      <div className="bg-wp-card border-t sm:border border-border rounded-t-[28px] sm:rounded-3xl w-full max-w-2xl shadow-2xl overflow-hidden flex flex-col my-0 sm:my-auto max-h-[92dvh] pb-[env(safe-area-inset-bottom)] sm:pb-0">
+  // Portalled to <body> so the #root inert background marking applies to the
+  // whole app behind the dialog, matching the other modals.
+  return createPortal(
+    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 overflow-y-auto animate-in fade-in duration-200">
+      <div
+        ref={containerRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="settings-dialog-title"
+        tabIndex={-1}
+        className="bg-wp-card border-t sm:border border-border rounded-t-[28px] sm:rounded-3xl w-full max-w-2xl shadow-2xl overflow-hidden flex flex-col my-0 sm:my-auto max-h-[92dvh] pb-[env(safe-area-inset-bottom)] sm:pb-0 outline-none"
+      >
         {/* Modal Header */}
         <div className="p-5 md:p-6 border-b border-border flex items-center justify-between bg-muted/40 shrink-0">
           <div className="flex items-center gap-3">
@@ -434,7 +445,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       type="button"
                       onClick={() => speak("Light switch.")}
                       aria-label="Test pronunciation of Light switch"
-                      className="px-2.5 py-1 min-h-[36px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
+                      className="px-2.5 py-1 min-h-[44px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
                     >
                       <Volume2 className="size-3" aria-hidden />
                       <span>{t("settings.testLightSwitch")}</span>
@@ -443,7 +454,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       type="button"
                       onClick={() => speak("Vase.")}
                       aria-label="Test pronunciation of Vase"
-                      className="px-2.5 py-1 min-h-[36px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
+                      className="px-2.5 py-1 min-h-[44px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
                     >
                       <Volume2 className="size-3" aria-hidden />
                       <span>{t("settings.testVase")}</span>
@@ -452,7 +463,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       type="button"
                       onClick={() => speak("Hello! Welcome to WordPix.")}
                       aria-label="Test sentence voice"
-                      className="px-2.5 py-1 min-h-[36px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
+                      className="px-2.5 py-1 min-h-[44px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
                     >
                       <Volume2 className="size-3" aria-hidden />
                       <span>{t("settings.testSentence")}</span>
@@ -537,7 +548,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                         : "bg-muted text-muted-foreground border-border"
                     }`}
                   >
-                    {timedExercises ? "On" : "Off"}
+                    {timedExercises ? t("settings.enabled") : t("settings.disabled")}
                   </button>
                 </div>
 
@@ -560,7 +571,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                         : "bg-muted text-muted-foreground border-border"
                     }`}
                   >
-                    {autoAdvance ? "On" : "Off"}
+                    {autoAdvance ? t("settings.enabled") : t("settings.disabled")}
                   </button>
                 </div>
 
@@ -583,7 +594,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                         : "bg-muted text-muted-foreground border-border"
                     }`}
                   >
-                    {spokenFeedback ? "On" : "Off"}
+                    {spokenFeedback ? t("settings.enabled") : t("settings.disabled")}
                   </button>
                 </div>
 
@@ -765,6 +776,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 });

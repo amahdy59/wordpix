@@ -29,6 +29,11 @@ interface Options {
 /**
  * Number-key shortcuts for exercise option grids.
  *
+ * Single-key shortcuts (R, Space, 1-9) stay suspended while a modal owns the
+ * keyboard: primarily via the caller's `disabled` flag, and as defense in
+ * depth by detecting any open modal dialog or menu already in the DOM. The
+ * "?" cheatsheet toggle intentionally stays live so help can open anywhere.
+ *
  * Deliberately does NOT claim Space from a focused control: Space is the
  * standard activation key for a button, so preventDefault-ing it globally means
  * a keyboard user who tabs to an option and presses Space triggers audio replay
@@ -67,6 +72,16 @@ export function useExerciseHotkeys({
         toggleHelp();
         return;
       }
+
+      // A modal dialog or open menu vetoes every other single-key shortcut,
+      // even if the caller forgot `disabled`: R must not replay audio behind
+      // a dialog, and 1-9 must not answer the exercise behind it.
+      const overlayOpen =
+        typeof document !== "undefined" &&
+        document.querySelector(
+          '[role="dialog"][aria-modal="true"], [role="alertdialog"], [role="menu"]'
+        ) !== null;
+      if (overlayOpen) return;
 
       if (replay) {
         const focusIsOnAControl =

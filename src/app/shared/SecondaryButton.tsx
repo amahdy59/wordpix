@@ -4,21 +4,16 @@ interface Props {
   label: string;
   onClick?: () => void;
 }
-import { motion } from "framer-motion";
 
 /** White bordered secondary button — meets 44 px minimum touch target. */
 export const SecondaryButton = memo(function SecondaryButton({ label, onClick }: Props) {
   return (
-    <motion.button
+    <button
       type="button"
       onClick={onClick}
-      whileHover={{ scale: 1.015 }}
-      whileTap={{ scale: 0.96 }}
-      className="bg-wp-card border border-border text-foreground content-stretch flex h-[52px] items-center justify-center relative rounded-xl shrink-0 w-full active:opacity-80 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-xs hover:border-primary/40"
+      className="bg-wp-card border border-border text-foreground content-stretch flex h-[52px] items-center justify-center relative rounded-xl shrink-0 w-full active:opacity-80 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-xs hover:border-primary/40 transition-all duration-150 ease-out motion-safe:hover:scale-[1.015] motion-safe:active:scale-[0.96] motion-reduce:transition-none"
     >
-      <span className="wp-type-body text-current font-bold">
-        {label}
-      </span>
-    </motion.button>
+      <span className="wp-type-body text-current font-bold">{label}</span>
+    </button>
   );
 });

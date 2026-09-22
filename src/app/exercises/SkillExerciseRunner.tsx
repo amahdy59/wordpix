@@ -105,7 +105,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
 
     if (!isGraded(task)) {
       setVerdict("acknowledged");
-      setAnnouncement("Noted. Nothing here is marked.");
+      setAnnouncement(t("skillRunner.acknowledgedAnnouncement"));
       return;
     }
 
@@ -118,10 +118,12 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
 
     setVerdict(correct ? "correct" : "incorrect");
     setResults((r) => [...r, correct]);
-    setAnnouncement(correct ? "Correct." : "Not quite.");
+    setAnnouncement(
+      correct ? t("skillRunner.correctAnnouncement") : t("skillRunner.incorrectAnnouncement")
+    );
     if (correct) playCorrect();
     else playIncorrect();
-  }, [task, verdict, choice, entry, multi, arrangement, placements, playCorrect, playIncorrect]);
+  }, [task, verdict, choice, entry, multi, arrangement, placements, playCorrect, playIncorrect, t]);
 
   const next = useCallback(() => {
     resetAnswer();
@@ -129,16 +131,22 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
     else setIndex((i) => i + 1);
   }, [index, definition.tasks.length, finish, resetAnswer]);
 
-  // Auto-advance on correct answer
+  // Auto-advance on correct answer. Gated on the learner's auto-advance
+  // setting like every other drill, and disarmed under reduced motion so the
+  // feedback is never pulled away on a timer the learner asked to avoid.
+  const prefersReducedMotion =
+    typeof window !== "undefined" &&
+    typeof window.matchMedia === "function" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   useEffect(() => {
-    if (verdict === "correct") {
-      const timer = setTimeout(() => {
-        next();
-      }, 750);
-      return () => clearTimeout(timer);
-    }
-    return undefined;
-  }, [verdict, next]);
+    if (verdict !== "correct") return undefined;
+    if (!accessibility.autoAdvance) return undefined;
+    if (accessibility.reduceMotion || prefersReducedMotion) return undefined;
+    const timer = setTimeout(() => {
+      next();
+    }, 750);
+    return () => clearTimeout(timer);
+  }, [verdict, next, accessibility.autoAdvance, accessibility.reduceMotion, prefersReducedMotion]);
 
   // Keyboard shortcut: number keys 1-9 pick choice options.
   useEffect(() => {
@@ -178,6 +186,15 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
           title={definition.title}
           current={definition.step}
           total={definition.totalSteps}
+          progressLabel={t("skillRunner.progressLabel")}
+          progressAriaLabel={t("skillRunner.progressAria", {
+            current: definition.step,
+            total: definition.totalSteps,
+          })}
+          progressAriaValueText={t("skillRunner.progressAria", {
+            current: definition.step,
+            total: definition.totalSteps,
+          })}
           onBack={() => dispatch({ type: "GO", to: "skill-hub" })}
           onClose={() => dispatch({ type: "GO", to: "home" })}
         />
@@ -226,6 +243,15 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
         title={definition.title}
         current={index + 1}
         total={definition.tasks.length}
+        progressLabel={t("skillRunner.progressLabel")}
+        progressAriaLabel={t("skillRunner.progressAria", {
+          current: index + 1,
+          total: definition.tasks.length,
+        })}
+        progressAriaValueText={t("skillRunner.progressAria", {
+          current: index + 1,
+          total: definition.tasks.length,
+        })}
         onBack={() => dispatch({ type: "GO", to: "skill-hub" })}
         onClose={() => dispatch({ type: "GO", to: "home" })}
       />

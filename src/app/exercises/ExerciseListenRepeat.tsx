@@ -8,7 +8,10 @@ import { ChevronRight, ChevronLeft, Mic, CheckCircle2, BookOpen, X } from "lucid
 import { WordImage } from "../shared/WordImage";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useSpeechRecognition } from "../shared/useSpeechRecognition";
-import { getLexiconEntry, hasArabicGloss } from "../data/lexiconDictionary";
+// Type-only: erased at compile time, so the drill screen paints before the
+// 1.6 MB dictionary is parsed. The gloss enhances in place via dynamic
+// import() once the screen mounts.
+import type { LexiconEntry } from "../data/lexiconDictionary";
 import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { WordDetailsContent } from "../shared/WordDetailsContent";
 import { useI18n } from "../context/I18nContext";
@@ -36,6 +39,25 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   const [continuous, setContinuous] = useState(false);
   const [playbackError, setPlaybackError] = useState(false);
   const [showExit, setShowExit] = useState(false);
+  // Dictionary arrives on demand; the card renders from unit fields first.
+  const [lexicon, setLexicon] = useState<typeof import("../data/lexiconDictionary") | null>(null);
+  const [lexiconFailed, setLexiconFailed] = useState(false);
+  const [lexiconRetry, setLexiconRetry] = useState(0);
+
+  useEffect(() => {
+    let cancelled = false;
+    import("../data/lexiconDictionary").then(
+      (mod) => {
+        if (!cancelled) setLexicon(mod);
+      },
+      () => {
+        if (!cancelled) setLexiconFailed(true);
+      }
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, [lexiconRetry]);
   const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const unit = resolveUnitForLesson(lessonId);
   const { accessibility } = useAccessibility();
@@ -208,16 +230,45 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     touchStartX.current = null;
   };
 
+  const bilingualLabel = t("listenRepeat.bilingual");
+  const immersionLabel = t("listenRepeat.immersion");
+  const manualLabel = t("listenRepeat.manual");
+  const continuousLabel = t("listenRepeat.continuous");
   const modeSelector = (
     <ListenSelector
-      label="Learning mode"
-      options={["Bilingual", "Immersion"]}
-      selected={bilingual ? "Bilingual" : "Immersion"}
-      onChange={(value) => setBilingual(value === "Bilingual")}
+      label={t("listenRepeat.learningMode")}
+      options={[bilingualLabel, immersionLabel]}
+      selected={bilingual ? bilingualLabel : immersionLabel}
+      onChange={(value) => setBilingual(value === bilingualLabel)}
     />
   );
-  const lexiconEntry = getLexiconEntry(currentWord.id, currentWord.label, unit.id);
-  const arabicTranslation = currentWord.arabicTranslation ?? lexiconEntry.arabic;
+  const playbackSelector = (
+    <ListenSelector
+      label={t("listenRepeat.playback")}
+      options={[manualLabel, continuousLabel]}
+      selected={continuous ? continuousLabel : manualLabel}
+      onChange={(value) => {
+        resetSpeech();
+        if (value === manualLabel) pausePlayback();
+        else {
+          setPlaybackError(false);
+          setContinuous(true);
+        }
+      }}
+    />
+  );
+  const lexiconEntry: LexiconEntry | undefined = lexicon?.getLexiconEntry(
+    currentWord.id,
+    currentWord.label,
+    unit.id
+  );
+  const arabicTranslation = currentWord.arabicTranslation ?? lexiconEntry?.arabic;
+  // Before the dictionary arrives, unit-provided translations render as-is;
+  // the Arabic-script check applies once it is available.
+  const showArabicTranslation =
+    lexicon !== null
+      ? lexicon.hasArabicGloss({ arabic: arabicTranslation ?? "" })
+      : currentWord.arabicTranslation !== undefined && currentWord.arabicTranslation !== "";
 
   return (
     <div className="h-dvh bg-background flex flex-col overflow-hidden">
@@ -240,7 +291,6 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           </button>
           <h1 className="font-bold text-foreground text-center">{t("listenRepeat.title")}</h1>
           <div className="justify-self-end flex items-center gap-4">
-            <div className="hidden lg:block">{modeSelector}</div>
             <button
               type="button"
               onClick={() => {
@@ -254,7 +304,6 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             </button>
           </div>
         </div>
-        <div className="lg:hidden mt-3">{modeSelector}</div>
         <div className="flex justify-between gap-4 mt-4 text-sm font-semibold">
           <span>{unit.name}</span>
           <span>
@@ -266,11 +315,14 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         </div>
         <div
           role="progressbar"
-          aria-label="Word progress"
+          aria-label={t("listenRepeat.wordProgress")}
           aria-valuemin={0}
           aria-valuemax={words.length}
           aria-valuenow={activeWordIndex + 1}
-          aria-valuetext={`Word ${activeWordIndex + 1} of ${words.length}`}
+          aria-valuetext={t("listenRepeat.wordProgressText", {
+            current: activeWordIndex + 1,
+            total: words.length,
+          })}
           className="h-1.5 bg-primary/20 rounded-full mt-3 overflow-hidden"
         >
           <div
@@ -279,14 +331,27 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           />
         </div>
       </header>
+      <details className="shrink-0 mx-4 lg:mx-8 mt-3 rounded-xl border border-border bg-wp-card">
+        <summary className="flex min-h-[44px] cursor-pointer items-center px-4 text-sm font-bold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
+          {t("listenRepeat.playbackOptions")}
+        </summary>
+        <div className="flex flex-col gap-3 px-4 pb-4">
+          {modeSelector}
+          {playbackSelector}
+        </div>
+      </details>
       <section
-        aria-label={`${group.name} Listen & repeat exercise`}
+        aria-label={t("listenRepeat.exerciseSection", { group: group.name })}
         className="flex-1 min-h-0 overflow-y-auto p-4 lg:px-20 lg:py-8 pb-[max(1rem,env(safe-area-inset-bottom))]"
       >
         <div role="status" aria-live="polite" aria-atomic="true" className="sr-only">
           {isPlaying
-            ? `Playing ${currentWord.label}`
-            : `Word ${activeWordIndex + 1} of ${words.length}: ${currentWord.label}`}
+            ? t("listenRepeat.playingWord", { word: currentWord.label })
+            : t("listenRepeat.wordPosition", {
+                current: activeWordIndex + 1,
+                total: words.length,
+                word: currentWord.label,
+              })}
         </div>
 
         <div className="relative flex flex-col gap-4 w-full max-w-[1440px] mx-auto min-h-0">
@@ -300,7 +365,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           >
             <button
               type="button"
-              aria-label="Previous word"
+              aria-label={t("listenRepeat.previousWord")}
               disabled={activeWordIndex === 0}
               onClick={() => handleSelectWordIndex(activeWordIndex - 1)}
               className="absolute z-10 start-6 lg:-start-14 top-[calc(clamp(10rem,26dvh,22rem)/2+1rem)] lg:top-1/2 -translate-y-1/2 size-11 rounded-full bg-wp-card border border-border text-primary shadow-md grid place-items-center disabled:opacity-40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
@@ -309,7 +374,9 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             </button>
             <button
               type="button"
-              aria-label={isLastWord ? "Continue to sentences" : "Next word"}
+              aria-label={
+                isLastWord ? t("listenRepeat.continueToSentences") : t("listenRepeat.nextWord")
+              }
               onClick={() => {
                 if (isLastWord) {
                   pausePlayback();
@@ -343,7 +410,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                     </h2>
                     <span className="font-sans font-medium text-muted-foreground text-xs sm:text-sm font-mono">
                       /
-                      {lexiconEntry.phonetic
+                      {lexiconEntry?.phonetic
                         ? lexiconEntry.phonetic.replace(/^\/|\/$/g, "")
                         : currentWord.phonetic.replace(/^\/|\/$/g, "")}
                       /
@@ -352,7 +419,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                   {/* Dropped entirely when there is no gloss: an English string
                     in here would be laid out right-to-left and announced as
                     Arabic. */}
-                  {bilingual && hasArabicGloss({ arabic: arabicTranslation }) && (
+                  {bilingual && showArabicTranslation && (
                     <p
                       className="font-arabic font-bold text-foreground text-lg sm:text-xl mt-2 lg:mt-4 text-start self-start"
                       dir="rtl"
@@ -361,19 +428,40 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                       {arabicTranslation}
                     </p>
                   )}
+                  {lexiconFailed && (
+                    <div role="alert" className="flex flex-wrap items-center gap-2 mt-2 lg:mt-4">
+                      <p className="font-sans text-xs text-muted-foreground">
+                        {t("vocabularyPreload.loadErrorDesc")}
+                      </p>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setLexiconFailed(false);
+                          setLexiconRetry((count) => count + 1);
+                        }}
+                        className="min-h-[44px] px-4 rounded-xl bg-secondary border border-border text-primary font-sans font-bold text-xs sm:text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+                      >
+                        {t("action.tryAgain")}
+                      </button>
+                    </div>
+                  )}
                 </div>
 
                 {/* Action Buttons: Listen & Speak */}
                 <div
                   className="grid grid-cols-1 min-[360px]:grid-cols-2 lg:grid-cols-1 gap-3"
-                  aria-label="Pronunciation practice"
+                  aria-label={t("listenRepeat.pronunciationPractice")}
                 >
                   {/* Listen button */}
                   <button
                     type="button"
                     onClick={handleToggle}
                     aria-pressed={isPlaying || continuous}
-                    aria-label={`${isPlaying || continuous ? "Stop" : "Play"} audio pronunciation for ${currentWord.label}`}
+                    aria-label={
+                      isPlaying || continuous
+                        ? t("listenRepeat.stopAudioFor", { word: currentWord.label })
+                        : t("listenRepeat.playAudioFor", { word: currentWord.label })
+                    }
                     className="flex items-center justify-center gap-2 px-3 py-2 min-h-[48px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-md hover:bg-primary/90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
                   >
                     <span>
@@ -397,8 +485,8 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                       disabled={speechStatus === "unsupported"}
                       aria-label={
                         isListening
-                          ? "Stop recording speech"
-                          : `Practice speaking ${currentWord.label}`
+                          ? t("listenRepeat.stopRecording")
+                          : t("listenRepeat.practiceSpeakingFor", { word: currentWord.label })
                       }
                       className={`min-h-[48px] px-3 py-2 rounded-xl transition-all flex items-center justify-center gap-2 border font-sans font-bold text-sm shadow-xs focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer ${
                         attempt?.matched
@@ -426,22 +514,6 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                 </p>
               )}
 
-              <div className="mt-2">
-                <p className="text-sm font-semibold mb-2">{t("listenRepeat.playback")}</p>
-                <ListenSelector
-                  label="Playback"
-                  options={["Manual", "Continuous"]}
-                  selected={continuous ? "Continuous" : "Manual"}
-                  onChange={(value) => {
-                    resetSpeech();
-                    if (value === "Manual") pausePlayback();
-                    else {
-                      setPlaybackError(false);
-                      setContinuous(true);
-                    }
-                  }}
-                />
-              </div>
               <button
                 ref={detailsTriggerRef}
                 type="button"
@@ -464,7 +536,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             {inspectedWord && desktopDetails && (
               <aside
                 id="word-details-panel"
-                aria-label={`Details for ${inspectedWord.label}`}
+                aria-label={t("listenRepeat.detailsFor", { word: inspectedWord.label })}
                 className="hidden xl:flex min-h-0 max-h-[32rem] ms-4 border-s border-border bg-muted/20 rounded-e-2xl flex-col overflow-hidden"
               >
                 <div className="shrink-0 flex items-center justify-between gap-3 p-4 border-b border-border bg-wp-card">
@@ -483,7 +555,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                       setInspectedWord(null);
                       requestAnimationFrame(() => detailsTriggerRef.current?.focus());
                     }}
-                    aria-label="Close word details"
+                    aria-label={t("listenRepeat.closeWordDetails")}
                     className="size-11 grid place-items-center rounded-xl border border-border text-foreground hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
                     <X className="size-5" aria-hidden />
@@ -582,7 +654,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         </div>
 
         <div
-          aria-label="Keyboard shortcuts"
+          aria-label={t("listenRepeat.keyboardShortcuts")}
           className="hidden lg:flex justify-center items-center gap-5 mt-5 text-sm text-muted-foreground"
         >
           <span className="font-semibold text-foreground">

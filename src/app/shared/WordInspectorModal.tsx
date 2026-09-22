@@ -1,9 +1,11 @@
-import { memo, useRef } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { X, Volume2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { VocabularyItem } from "../data/lessons";
-import { getLexiconEntry } from "../data/lexiconDictionary";
+// No synchronous lexicon import: the 1.6 MB dictionary must not join the
+// initial bundle through this widely used modal. Details content loads it on
+// demand; the header below enhances its phonetic line the same way.
 import { useAudio } from "./useAudio";
 import { useModalA11y } from "./useModalA11y";
 import { useI18n } from "../context/I18nContext";
@@ -31,10 +33,31 @@ export const WordInspectorModal = memo(function WordInspectorModal({
   const { speak } = useAudio();
   const closeBtnRef = useRef<HTMLButtonElement>(null);
   const containerRef = useModalA11y({ isOpen, onDismiss: onClose });
+  // Reviewed phonetic for the header. The unit's own phonetic renders
+  // immediately and stays as the fallback, so a failed fetch changes nothing
+  // visible — the details body below carries the loading/error UI.
+  const [lexiconPhonetic, setLexiconPhonetic] = useState<string | null>(null);
+  useEffect(() => {
+    if (!word) return;
+    let cancelled = false;
+    const wordId = word.id;
+    const wordLabel = word.label;
+    import("../data/lexiconDictionary").then(
+      (mod) => {
+        if (!cancelled) {
+          setLexiconPhonetic(mod.getLexiconEntry(wordId, wordLabel, unitId).phonetic ?? null);
+        }
+      },
+      () => {
+        if (!cancelled) setLexiconPhonetic(null);
+      }
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, [word, unitId]);
 
   if (!isOpen || !word) return null;
-
-  const entry = getLexiconEntry(word.id, word.label, unitId);
 
   return createPortal(
     <AnimatePresence>
@@ -53,11 +76,16 @@ export const WordInspectorModal = memo(function WordInspectorModal({
           role="dialog"
           aria-modal="true"
           aria-labelledby="word-inspector-title"
+          tabIndex={-1}
           className={`${lessonPanel ? "lg:max-w-sm lg:h-dvh lg:!max-h-dvh lg:!rounded-none" : "max-w-xl sm:rounded-3xl"} relative w-full bg-wp-card border-t sm:border border-border rounded-t-[28px] lg:rounded-3xl shadow-wp-lg overflow-hidden flex flex-col max-h-[90dvh] z-10 pb-[env(safe-area-inset-bottom)] sm:pb-0 pointer-events-auto`}
         >
           {/* Top Header with Image & Close Button */}
           <div className="relative h-44 sm:h-52 w-full bg-muted overflow-hidden shrink-0">
-            <img src={resolveAssetUrl(word.img)} alt="" className="size-full object-cover" />
+            <img
+              src={resolveAssetUrl(word.img)}
+              alt={word.label}
+              className="size-full object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent" />
 
             {/* Close button */}
@@ -81,7 +109,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
                   {word.label}
                 </h2>
                 <p className="font-sans text-white/90 text-xs sm:text-sm drop-shadow font-mono break-words mt-0.5">
-                  {entry.phonetic || word.phonetic}
+                  {lexiconPhonetic || word.phonetic}
                 </p>
               </div>
 
@@ -89,7 +117,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
               <button
                 type="button"
                 onClick={() => speak(word.label)}
-                aria-label={`Pronounce ${word.label}`}
+                aria-label={t("wordInspector.pronounce", { word: word.label })}
                 className="flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-4 py-2 min-h-[44px] rounded-full bg-primary text-primary-foreground font-sans font-bold text-xs sm:text-sm shadow-md hover:opacity-90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white shrink-0 cursor-pointer"
               >
                 <Volume2 className="size-4" />

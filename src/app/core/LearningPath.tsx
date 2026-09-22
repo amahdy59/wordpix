@@ -124,7 +124,43 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
     (completedFoundationLessons.length / FOUNDATION_LESSONS.length) * 100
   );
 
-  if (!recommendedUnit) return null;
+  if (!recommendedUnit) {
+    return (
+      <div className="mx-auto flex w-full max-w-5xl flex-col gap-6 p-0 sm:p-2 lg:p-4">
+        <section
+          aria-labelledby="learning-path-empty-heading"
+          className="rounded-3xl border border-border bg-wp-card p-5 text-center sm:p-6"
+        >
+          <h1
+            id="learning-path-empty-heading"
+            className="font-sans text-xl font-black text-foreground sm:text-2xl"
+          >
+            {t("learn.emptyRecommendedTitle")}
+          </h1>
+          <p className="mx-auto mt-2 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
+            {t("learn.emptyRecommendedDesc")}
+          </p>
+          <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <button
+              type="button"
+              onClick={() => dispatch({ type: "GO", to: "library" })}
+              className="flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-md hover:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              <Library className="size-5" aria-hidden />
+              <span>{t("learn.browseLibrary")}</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => dispatch({ type: "GO", to: "home" })}
+              className="flex min-h-[48px] items-center justify-center rounded-2xl px-6 py-3 text-sm font-bold text-primary underline underline-offset-4 hover:bg-primary/5 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              {t("nav.home")}
+            </button>
+          </div>
+        </section>
+      </div>
+    );
+  }
 
   return (
     <div className="mx-auto flex w-full max-w-5xl flex-col gap-6 p-0 sm:p-2 lg:p-4">
@@ -145,7 +181,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "library" })}
-          className="flex min-h-[48px] items-center justify-center gap-2 rounded-xl border border-border bg-background px-5 py-3 text-sm font-bold text-foreground hover:border-primary/40 hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="flex min-h-[48px] items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold text-primary underline underline-offset-4 hover:bg-primary/5 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <Library className="size-5" aria-hidden />
           <span>{t("learn.pictureWorlds")}</span>
@@ -377,22 +413,20 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
               <p className="text-xs font-black uppercase tracking-wide text-primary">
-                Figma curriculum
+                {t("learn.figmaBadge")}
               </p>
               <h2
                 id="figma-pronunciation-heading"
                 className="mt-1 text-xl font-black text-foreground sm:text-2xl"
               >
-                Extended pronunciation studio
+                {t("learn.figmaTitle")}
               </h2>
               <p className="mt-2 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
-                68 structured lessons for listening, connected speech, stress, transfer, and
-                everyday communication.
+                {t("learn.figmaDesc", {
+                  total: FIGMA_PRONUNCIATION_LESSONS.length,
+                })}
               </p>
             </div>
-            <span className="rounded-full bg-primary/10 px-3 py-1 text-sm font-black text-primary">
-              0/68 started
-            </span>
           </div>
           <ol className="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {FIGMA_PRONUNCIATION_LESSONS.map((sourceLesson) => {
@@ -417,7 +451,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                         {activity.title}
                       </span>
                       <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
-                        Hear · practise · transfer
+                        {t("learn.figmaItemHint")}
                       </span>
                     </span>
                     <ArrowRight

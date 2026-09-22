@@ -1,6 +1,10 @@
 import React, { createContext, useContext, useState, useEffect, useCallback, useMemo } from "react";
 import en from "../../i18n/en.json";
-import ar from "../../i18n/ar.json";
+// NOTE: the Arabic bundle is intentionally NOT statically imported. It
+// arrives via dynamic import() on language switch (see getLocaleBundle), so
+// the initial bundle ships the default/fallback locale only. Static JSON
+// imports are inlined by Vite — importing both up front cost every first
+// paint ~59 KB of Arabic copy most sessions never display.
 
 export type InterfaceLang = "en" | "ar";
 export type LearningLang = "en";
@@ -20,11 +24,36 @@ export interface I18nContextType {
  * Single source of truth for copy.
  *
  * Translations previously existed in three places at once: a TRANSLATIONS map
- * inlined in this file, plus src/i18n/en.json and src/i18n/ar.json — and none
- * of the three were used, because t() and setInterfaceLang had zero consumers.
- * The JSON files are now the only copy store.
+ * inlined in this file, plus src/i18n/en.json and src/i18n/ar.json. The JSON
+ * files are now the only copy store: English ships synchronously (it is both
+ * the default language and the lookup fallback), every other locale loads on
+ * demand and is cached for the session, so both languages keep working
+ * offline after their first load.
  */
-const BUNDLES: Record<InterfaceLang, unknown> = { en, ar };
+type LazyLang = Exclude<InterfaceLang, "en">;
+
+/** Session cache: one promise per locale, shared across remounts. */
+const localeBundlePromises = new Map<LazyLang, Promise<unknown>>();
+
+/** Loads a non-default locale bundle on demand. Never called for "en". */
+function getLocaleBundle(lang: LazyLang): Promise<unknown> {
+  const cached = localeBundlePromises.get(lang);
+  if (cached) return cached;
+  const pending = (async (): Promise<unknown> => {
+    if (lang === "ar") {
+      const mod = (await import("../../i18n/ar.json")) as { default?: unknown };
+      return mod.default;
+    }
+    const _exhaustive: never = lang;
+    throw new Error(`No lazy bundle for locale: ${String(_exhaustive)}`);
+  })();
+  localeBundlePromises.set(lang, pending);
+  // A rejection must not poison the cache — the next switch retries.
+  void pending.catch(() => {
+    localeBundlePromises.delete(lang);
+  });
+  return pending;
+}
 
 const STORAGE_KEY = "wordpix:interface-lang";
 
@@ -68,16 +97,41 @@ const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
   const [interfaceLang, setInterfaceLangState] = useState<InterfaceLang>(readStoredLang);
+  const [lazyBundles, setLazyBundles] = useState<Partial<Record<LazyLang, unknown>>>({});
   const dir = interfaceLang === "ar" ? "rtl" : "ltr";
 
   const setInterfaceLang = useCallback((lang: InterfaceLang) => {
-    setInterfaceLangState(lang);
+    // Persist first so a reload mid-fetch still restores the choice.
     try {
       localStorage.setItem(STORAGE_KEY, lang);
     } catch {
       // Persistence is best-effort; the choice still applies this session.
     }
+    setInterfaceLangState(lang);
   }, []);
+
+  // Fetch the non-default locale whenever it becomes active (switch or a
+  // restored persisted choice). Until it resolves, t() serves the English
+  // fallback — a fully functional UI, never an empty one. A failure clears
+  // the cached promise so the next switch retries.
+  useEffect(() => {
+    if (interfaceLang === "en") return;
+    let cancelled = false;
+    void getLocaleBundle(interfaceLang).then(
+      (bundle) => {
+        if (cancelled) return;
+        setLazyBundles((prev) =>
+          prev[interfaceLang] !== undefined ? prev : { ...prev, [interfaceLang]: bundle }
+        );
+      },
+      () => {
+        // English fallback stands; the effect re-runs on the next switch.
+      }
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, [interfaceLang]);
 
   useEffect(() => {
     document.documentElement.lang = interfaceLang;
@@ -88,10 +142,12 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     (key: string, values?: TranslationValues): string => {
       // Fall back through the active language, then English, then the key
       // itself — a visible key is a better bug report than an empty string.
-      const template = lookup(BUNDLES[interfaceLang], key) ?? lookup(BUNDLES.en, key) ?? key;
+      const active = interfaceLang === "en" ? en : lazyBundles[interfaceLang];
+      const template =
+        (active !== undefined ? lookup(active, key) : undefined) ?? lookup(en, key) ?? key;
       return interpolate(template, values);
     },
-    [interfaceLang]
+    [interfaceLang, lazyBundles]
   );
 
   const value = useMemo<I18nContextType>(

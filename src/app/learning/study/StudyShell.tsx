@@ -589,7 +589,9 @@ export function StudyShell({
                             )}
                           </span>
                           <span className="min-w-0 flex-1">
-                            <span className="block truncate">{node.title}</span>
+                            <span title={node.title} className="block truncate">
+                              {node.title}
+                            </span>
                             {node.estimatedMinutes && (
                               <span
                                 className={`block text-xs ${

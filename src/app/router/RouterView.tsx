@@ -1,5 +1,5 @@
 import { lazy, Suspense, useMemo } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import type { Screen, Action, TabId } from "../types";
 import { resolveGroup, resolveUnitForLesson, DEFAULT_UNIT_ID } from "../data/lessons";
 import { getWords } from "../data/vocabulary";
@@ -15,12 +15,20 @@ import { SplashWelcome } from "../onboarding/SplashWelcome";
 import { LanguageSelect } from "../onboarding/LanguageSelect";
 import { ReadyCelebration } from "../onboarding/ReadyCelebration";
 
-// Synchronous core tab views
+// Synchronous core tab views (home is the default tab and stays eager)
 import { HomeDashboard } from "../core/HomeDashboard";
 import { LearningPath } from "../core/LearningPath";
-import { ExploreWorlds } from "../core/ExploreWorlds";
-import { ProfileStats } from "../core/ProfileStats";
-import { SkillExerciseHub } from "../core/SkillExerciseHub";
+
+// Non-default tabs are code-split so the initial bundle stays lean.
+const ExploreWorlds = lazy(() =>
+  import("../core/ExploreWorlds").then((m) => ({ default: m.ExploreWorlds }))
+);
+const ProfileStats = lazy(() =>
+  import("../core/ProfileStats").then((m) => ({ default: m.ProfileStats }))
+);
+const SkillExerciseHub = lazy(() =>
+  import("../core/SkillExerciseHub").then((m) => ({ default: m.SkillExerciseHub }))
+);
 
 // Lazy-loaded lesson and exercise screens
 const ReviewMasteryReview = lazy(() =>
@@ -109,7 +117,75 @@ export const SkipLink = () => {
   );
 };
 
+/**
+ * In-context error panel with recovery actions. Replaces the old silent
+ * redirect to the library: the learner is told what went wrong and can get
+ * back to the learning path or home without losing their place.
+ */
+function RouteErrorPanel({
+  title,
+  description,
+  dispatch,
+}: {
+  title: string;
+  description: string;
+  dispatch: React.Dispatch<Action>;
+}) {
+  const { t } = useI18n();
+  return (
+    <main className="flex-1 flex items-center justify-center p-6">
+      <div
+        role="alert"
+        className="w-full max-w-md rounded-3xl border border-border bg-wp-card p-6 text-center shadow-wp-sm"
+      >
+        <h1 className="font-sans text-xl font-black text-foreground">{title}</h1>
+        <p className="mt-2 text-sm font-medium leading-relaxed text-muted-foreground">
+          {description}
+        </p>
+        <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:justify-center">
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "explore" })}
+            className="flex min-h-[48px] flex-1 items-center justify-center rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-md hover:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            {t("router.backToPath")}
+          </button>
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "home" })}
+            className="flex min-h-[48px] flex-1 items-center justify-center rounded-2xl border border-border px-6 py-3 text-sm font-bold text-foreground hover:bg-muted/30 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            {t("router.backToHome")}
+          </button>
+        </div>
+      </div>
+    </main>
+  );
+}
+
 type LessonScreen = Extract<Screen, { id: "lesson" }>;
+
+function LessonRouteError({ dispatch }: { dispatch: React.Dispatch<Action> }) {
+  const { t } = useI18n();
+  return (
+    <RouteErrorPanel
+      title={t("router.lessonWordsMissingTitle")}
+      description={t("router.lessonWordsMissingDesc")}
+      dispatch={dispatch}
+    />
+  );
+}
+
+function UnknownSkillExerciseError({ dispatch }: { dispatch: React.Dispatch<Action> }) {
+  const { t } = useI18n();
+  return (
+    <RouteErrorPanel
+      title={t("router.exerciseMissingTitle")}
+      description={t("router.exerciseMissingDesc")}
+      dispatch={dispatch}
+    />
+  );
+}
 
 /** An empty list that keeps its identity, so a miss does not remount a drill. */
 const NO_WORDS: VocabularyItem[] = [];
@@ -181,7 +257,9 @@ function LessonRoute({
     );
   }
 
-  if (activeGroupWords.length === 0) return <ExploreWorlds dispatch={dispatch} />;
+  if (activeGroupWords.length === 0) {
+    return <LessonRouteError dispatch={dispatch} />;
+  }
 
   const ex: ExerciseStep = exSequence[state.step];
   const drillProps = {
@@ -245,7 +323,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
 
     if (state.id === "skill-exercise") {
       const SkillExercise = SKILL_EXERCISES[state.exerciseId];
-      if (!SkillExercise) return <ExploreWorlds dispatch={dispatch} />;
+      if (!SkillExercise) return <UnknownSkillExerciseError dispatch={dispatch} />;
       return <SkillExercise dispatch={dispatch} />;
     }
 
@@ -270,23 +348,23 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
     state.id === "foundation-lesson"
       ? `${state.id}-${state.lessonId}`
       : state.id + ("step" in state ? `-${state.step}` : "");
+  // Route transitions render immediately with a short enter motion only: the
+  // previous AnimatePresence mode="wait" held every navigation for a full exit
+  // animation first, which read as latency on every tab switch.
   const animatedContent = (
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={stateKey}
-        initial={{ y: 10 }}
-        animate={{ y: 0 }}
-        exit={{ y: -10 }}
-        transition={{ duration: 0.2, ease: "easeInOut" }}
-        className="flex-1 flex flex-col w-full min-h-full"
-      >
-        <Suspense fallback={<LoadingFallback />}>
-          <UnitVocabularyGate screen={state} fallback={<LoadingFallback />}>
-            {renderContent}
-          </UnitVocabularyGate>
-        </Suspense>
-      </motion.div>
-    </AnimatePresence>
+    <motion.div
+      key={stateKey}
+      initial={{ y: 10 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.2, ease: "easeInOut" }}
+      className="flex-1 flex flex-col w-full min-h-full"
+    >
+      <Suspense fallback={<LoadingFallback />}>
+        <UnitVocabularyGate screen={state} fallback={<LoadingFallback />}>
+          {renderContent}
+        </UnitVocabularyGate>
+      </Suspense>
+    </motion.div>
   );
 
   return (

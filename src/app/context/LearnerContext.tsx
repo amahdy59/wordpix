@@ -280,6 +280,11 @@ let testStateCache: LearnerStateSchema | null = null;
 
 export function __clearTestStateCache() {
   testStateCache = null;
+  if (pendingSaveTimer) {
+    clearTimeout(pendingSaveTimer);
+    pendingSaveTimer = null;
+  }
+  pendingSaveState = null;
 }
 
 export async function persistLearnerStateBeforeCleanup(
@@ -290,6 +295,37 @@ export async function persistLearnerStateBeforeCleanup(
   const saved = await persist(state);
   if (saved) cleanupLegacyState();
   return saved;
+}
+
+/**
+ * Trailing debounce for learner-state persistence (~500 ms).
+ *
+ * Per-step checkpoint writes and rapid successive updates coalesce into a
+ * single IndexedDB write of the latest state — the timing changes, the data
+ * does not. The mutation queue stays immediate: every update still calls
+ * queueMutation synchronously inside updateStateAndPersist.
+ */
+const SAVE_DEBOUNCE_MS = 500;
+
+let pendingSaveTimer: ReturnType<typeof setTimeout> | null = null;
+let pendingSaveState: LearnerStateSchema | null = null;
+
+function flushPendingLearnerSave(): void {
+  if (pendingSaveTimer) {
+    clearTimeout(pendingSaveTimer);
+    pendingSaveTimer = null;
+  }
+  const toSave = pendingSaveState;
+  pendingSaveState = null;
+  if (toSave) {
+    saveLearnerState(toSave).catch((e) => console.error("Failed to persist state", e));
+  }
+}
+
+function scheduleLearnerSave(state: LearnerStateSchema): void {
+  pendingSaveState = state;
+  if (pendingSaveTimer) clearTimeout(pendingSaveTimer);
+  pendingSaveTimer = setTimeout(flushPendingLearnerSave, SAVE_DEBOUNCE_MS);
 }
 
 export function LearnerProvider({ children }: { children: React.ReactNode }) {
@@ -346,6 +382,10 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     };
   }, []);
 
+  // Flush a trailing debounced write on unmount so the latest state is not
+  // lost together with the provider.
+  useEffect(() => () => flushPendingLearnerSave(), []);
+
   const updateStateAndPersist = useCallback(
     (
       updater: (prev: LearnerStateSchema) => {
@@ -365,7 +405,10 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
           testStateCache = nextState;
         }
 
-        saveLearnerState(nextState).catch((e) => console.error("Failed to persist state", e));
+        // Debounced: rapid updates (e.g. per-step checkpoints) coalesce into
+        // one write of the latest state. The mutation queue below stays
+        // immediate — sync intent is never delayed.
+        scheduleLearnerSave(nextState);
 
         if (mutationType && mutationPayload) {
           // @ts-expect-error TS2345: TypeScript cannot infer that mutationPayload matches mutationType here

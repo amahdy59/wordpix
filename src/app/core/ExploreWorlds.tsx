@@ -25,6 +25,33 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
+// Module scope: pure filter over static course data, so searching does not
+// rebuild the predicate closure on every keystroke render.
+function filterModulesByQuery(modules: CourseModule[], q: string) {
+  if (!q.trim()) return modules;
+  const lowerQ = q.toLowerCase().trim();
+  return modules
+    .map((mod) => {
+      const matchingUnitIds = mod.unitIds.filter((uid) => {
+        const unit = COURSE_UNITS[uid];
+        if (!unit) return false;
+        return (
+          unit.name.toLowerCase().includes(lowerQ) ||
+          unit.description.toLowerCase().includes(lowerQ) ||
+          unit.wordIds.some((id) => id.replace(/-/g, " ").includes(lowerQ))
+        );
+      });
+      if (matchingUnitIds.length === 0 && !mod.title.toLowerCase().includes(lowerQ)) {
+        return null;
+      }
+      return {
+        ...mod,
+        unitIds: matchingUnitIds.length > 0 ? matchingUnitIds : mod.unitIds,
+      };
+    })
+    .filter(Boolean) as CourseModule[];
+}
+
 export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
   const { progress } = useProgress();
   const { t, dir } = useI18n();
@@ -121,31 +148,6 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
   };
 
   // Filter modules based on level selection and search query
-  const filterModulesByQuery = (modules: CourseModule[], q: string) => {
-    if (!q.trim()) return modules;
-    const lowerQ = q.toLowerCase().trim();
-    return modules
-      .map((mod) => {
-        const matchingUnitIds = mod.unitIds.filter((uid) => {
-          const unit = COURSE_UNITS[uid];
-          if (!unit) return false;
-          return (
-            unit.name.toLowerCase().includes(lowerQ) ||
-            unit.description.toLowerCase().includes(lowerQ) ||
-            unit.wordIds.some((id) => id.replace(/-/g, " ").includes(lowerQ))
-          );
-        });
-        if (matchingUnitIds.length === 0 && !mod.title.toLowerCase().includes(lowerQ)) {
-          return null;
-        }
-        return {
-          ...mod,
-          unitIds: matchingUnitIds.length > 0 ? matchingUnitIds : mod.unitIds,
-        };
-      })
-      .filter(Boolean) as CourseModule[];
-  };
-
   const filteredModules = useMemo(() => {
     let modules = COURSE_MODULES.filter((m) => !m.isSpecialSection);
     if (selectedModuleId !== "all") {
@@ -161,6 +163,21 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
     }
     return filterModulesByQuery(modules, searchQuery);
   }, [searchQuery, selectedModuleId]);
+
+  // Static splits of the course catalogue: recomputing .filter() on every
+  // search keystroke is wasted work in a memo'd component that re-renders
+  // per keystroke.
+  const generalModules = useMemo(() => COURSE_MODULES.filter((m) => !m.isSpecialSection), []);
+  const specialModules = useMemo(() => COURSE_MODULES.filter((m) => m.isSpecialSection), []);
+
+  // Unit lookups per module, resolved once from the static course data.
+  const moduleUnits = useMemo(() => {
+    const map = new Map<string, CourseUnit[]>();
+    for (const mod of COURSE_MODULES) {
+      map.set(mod.id, mod.unitIds.map((id) => COURSE_UNITS[id]).filter(Boolean) as CourseUnit[]);
+    }
+    return map;
+  }, []);
 
   return (
     <motion.div
@@ -247,7 +264,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
             role="group"
             id={tabListId}
             aria-label={t("explore.collectionNavigation")}
-            className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none snap-x"
+            className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar snap-x"
           >
             <button
               type="button"
@@ -261,11 +278,11 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
             >
               <span>{t("explore.allLevels")}</span>
               <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-white/20">
-                {COURSE_MODULES.filter((m) => !m.isSpecialSection).length}
+                {generalModules.length}
               </span>
             </button>
 
-            {COURSE_MODULES.filter((m) => !m.isSpecialSection).map((mod) => {
+            {generalModules.map((mod) => {
               const isSelected = selectedModuleId === mod.id;
 
               return (
@@ -288,7 +305,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
               );
             })}
 
-            {COURSE_MODULES.filter((m) => m.isSpecialSection).map((mod) => {
+            {specialModules.map((mod) => {
               const isSelected = selectedModuleId === mod.id;
 
               return (
@@ -342,9 +359,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
               };
               const isExpanded =
                 Boolean(searchQuery.trim()) || (expandedModules[module.id] ?? false);
-              const units = module.unitIds
-                .map((id) => COURSE_UNITS[id])
-                .filter(Boolean) as CourseUnit[];
+              const units = moduleUnits.get(module.id) ?? [];
 
               return (
                 <motion.section
@@ -357,7 +372,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                     type="button"
                     onClick={() => toggleModuleExpand(module.id)}
                     aria-expanded={isExpanded}
-                    className="w-full flex items-center justify-between gap-4 p-2 rounded-2xl text-start hover:bg-muted/30 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue transition-colors"
+                    className="w-full flex items-center justify-between gap-4 p-2 min-h-[44px] rounded-2xl text-start hover:bg-muted/30 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue transition-colors"
                   >
                     <div className="flex flex-col gap-1">
                       <div className="flex items-center gap-2 flex-wrap">

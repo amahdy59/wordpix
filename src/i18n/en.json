@@ -139,7 +139,13 @@
     "reviewReadyDesc": "Start the guided foundations lesson to build your personalized review schedule.",
     "corePathLevel": "Core path · Level {level}",
     "optionalPicturePractice": "Optional picture practice",
-    "practiseSkill": "Practise a skill"
+    "practiseSkill": "Practise a skill",
+    "offlineNeedsConnection": "Media needs a connection",
+    "offlineUnavailable": "Not available offline",
+    "dailyTargetAria": "Daily word target: {current} of {total} words",
+    "todayContinue": "Continue: {title}",
+    "todayStart": "Start: {title}",
+    "reviewNowWords": "Review {count} Words Now"
   },
   "learn": {
     "pathBadge": "Guided English pathway",
@@ -195,7 +201,13 @@
     "pilotProgress": "Pilot · qualitative progress",
     "listenRespond": "Listen and respond",
     "soundsLettersWords": "Sounds, letters, and words",
-    "preA1": "Pre-A1"
+    "preA1": "Pre-A1",
+    "figmaBadge": "Figma curriculum",
+    "figmaTitle": "Extended pronunciation studio",
+    "figmaDesc": "68 structured lessons for listening, connected speech, stress, transfer, and everyday communication.",
+    "figmaItemHint": "Hear · practise · transfer",
+    "emptyRecommendedTitle": "No recommended unit right now",
+    "emptyRecommendedDesc": "Your learning path has no units to recommend yet. Browse the vocabulary library or return home to continue."
   },
   "foundation": {
     "lessonPosition": "Level {level} · Unit {unit} · Lesson {lesson}",
@@ -428,7 +440,10 @@
     "title": "Load vocabulary ({count} units)",
     "description": "Loads vocabulary for this visit. Images, audio and study guides are not downloaded by this action.",
     "done": "Vocabulary loaded",
-    "error": "Some vocabulary could not be loaded. Check your connection and try again."
+    "error": "Some vocabulary could not be loaded. Check your connection and try again.",
+    "loading": "Loading dictionary insights…",
+    "loadErrorTitle": "Dictionary insights unavailable.",
+    "loadErrorDesc": "Check your connection and try again."
   },
   "learningMaterials": {
     "loading": "Loading study materials…",
@@ -818,7 +833,12 @@
     "removeWordAria": "Remove {token} from position {pos}",
     "addWordAria": "Add {token}",
     "availableWordsAria": "Available words",
-    "categoryForAria": "Category for {item}"
+    "categoryForAria": "Category for {item}",
+    "correctAnnouncement": "Correct.",
+    "incorrectAnnouncement": "Not quite.",
+    "acknowledgedAnnouncement": "Noted. Nothing here is marked.",
+    "progressLabel": "Exercise",
+    "progressAria": "Exercise {current} of {total}"
   },
   "listenRepeat": {
     "backToUnit": "Back to {unit}",
@@ -849,7 +869,31 @@
     "keyboardShortcuts": "Keyboard shortcuts",
     "changeWord": "Change word",
     "listenOrPause": "Listen or pause",
-    "closeDetails": "Close details"
+    "closeDetails": "Close details",
+    "wordProgress": "Word progress",
+    "wordProgressText": "Word {current} of {total}",
+    "playingWord": "Playing {word}",
+    "wordPosition": "Word {current} of {total}: {word}",
+    "previousWord": "Previous word",
+    "nextWord": "Next word",
+    "continueToSentences": "Continue to sentences",
+    "closeWordDetails": "Close word details",
+    "pronunciationPractice": "Pronunciation practice",
+    "playAudioFor": "Play audio pronunciation for {word}",
+    "stopAudioFor": "Stop audio pronunciation for {word}",
+    "stopRecording": "Stop recording speech",
+    "practiceSpeakingFor": "Practice speaking {word}",
+    "detailsFor": "Details for {word}",
+    "exerciseSection": "{group} Listen & repeat exercise",
+    "playbackOptions": "Listening options"
+  },
+  "router": {
+    "lessonWordsMissingTitle": "No words available for this lesson",
+    "lessonWordsMissingDesc": "We could not load vocabulary for this step. Try again from the learning path or return home.",
+    "exerciseMissingTitle": "Exercise unavailable",
+    "exerciseMissingDesc": "This exercise could not be found. Choose another drill or return home.",
+    "backToPath": "Back to learning path",
+    "backToHome": "Back to home"
   },
   "story": {
     "nextVisualFlow": "Next: Explore Visual Flow",
@@ -891,6 +935,18 @@
     "quizCompleteDesc": "You scored {score} of {total} correct ({percent}%). Outstanding retention!",
     "retakeQuiz": "Retake Quiz",
     "wellDone": "Well done!",
-    "contextExplanation": "Context Explanation:"
+    "contextExplanation": "Context Explanation:",
+    "pronounceWord": "Pronounce {word}",
+    "listenToWord": "Listen to {word}",
+    "stopStoryAudio": "Stop story audio",
+    "listenFullStoryAudio": "Listen to full story audio",
+    "toggleArabicTranslation": "Toggle Arabic translation",
+    "hideArabic": "Hide Arabic",
+    "showArabic": "Arabic",
+    "listenToPassage": "Listen to {title}",
+    "listenToExplanation": "Listen to explanation"
+  },
+  "wordInspector": {
+    "pronounce": "Pronounce {word}"
   }
 }

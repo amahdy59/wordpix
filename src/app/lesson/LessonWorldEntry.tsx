@@ -247,7 +247,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                     aria-label={`${action} lesson: ${g.name}. Group ${index + 1}. ${isCompleted ? "Completed. " : hasStarted ? "In progress. " : ""}${count}.`}
                     className="min-w-0 flex-1 rounded-xl p-4 pb-14 sm:pb-4 flex items-center gap-3 sm:gap-6 text-start focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:bg-secondary/50"
                   >
-                    <span className="shrink-0 w-20 h-20 min-[380px]:w-24 min-[380px]:h-24 sm:w-28 sm:h-24 rounded-xl overflow-hidden bg-muted">
+                    <span className="shrink-0 w-20 h-20 sm:w-28 sm:h-24 rounded-xl overflow-hidden bg-muted">
                       {words[0] ? (
                         <GroupThumbnail
                           key={`${world.id}/${g.id}`}

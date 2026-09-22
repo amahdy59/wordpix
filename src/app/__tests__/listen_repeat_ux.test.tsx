@@ -35,6 +35,27 @@ vi.mock("../shared/useSpeechRecognition", () => ({
   }),
 }));
 
+// The 1.6 MB lexicon now loads via dynamic import(). This suite asserts the
+// *order* of the loaded sections, not the dictionary payload, so it uses a
+// minimal entry: 1 sentence + 3 reviewed collocations. Full-dictionary
+// integrity is covered by lexicon_and_inspector and figma catalog tests.
+vi.mock("../data/lexiconDictionary", () => ({
+  getLexiconEntry: () => ({
+    id: "shower",
+    arabic: "دش",
+    partOfSpeech: "noun",
+    collocations: ["take a shower", "hot shower", "cold shower", "use regularly"],
+    phrasalVerbs: [],
+    sentences: [
+      { context: "Example", en: "I take a shower every morning.", ar: "آخذ دشًا كل صباح." },
+    ],
+    exampleSentence: "I take a shower every morning.",
+  }),
+  getReviewedCollocations: (entry: { collocations: string[] }) =>
+    entry.collocations.filter((collocation) => collocation !== "use regularly"),
+  hasArabicGloss: (entry: { arabic: string }) => entry.arabic !== "",
+}));
+
 describe("Listen and repeat mobile focus", () => {
   beforeEach(() => {
     audio.speak.mockClear();
@@ -42,10 +63,12 @@ describe("Listen and repeat mobile focus", () => {
     speech.listen.mockClear();
   });
 
-  it("shows the reviewed meaning before examples and word partners", () => {
+  it("shows the reviewed meaning before examples and word partners", async () => {
     const shower = BATHROOM_VOCABULARY.find((word) => word.id === "shower")!;
     const { container } = render(<WordDetailsContent word={shower} unitId="bathroom" />);
     expect(screen.getByRole("region", { name: "Meaning" })).toHaveTextContent(shower.description);
+    // Examples/partners arrive via dynamic lexicon import — wait for them first.
+    await screen.findByText("Examples (1)");
     const text = container.textContent ?? "";
     expect(text.indexOf(shower.description)).toBeLessThan(text.indexOf("Examples (1)"));
     expect(text.indexOf("Examples (1)")).toBeLessThan(text.indexOf("Word partners (3)"));
@@ -221,7 +244,7 @@ describe("Listen and repeat mobile focus", () => {
       vi.useRealTimers();
     }
   });
-  it("removes translation from both the card and word details in Immersion", () => {
+  it("removes translation from both the card and word details in Immersion", async () => {
     render(
       <ExerciseListenRepeat
         step={1}
@@ -230,7 +253,8 @@ describe("Listen and repeat mobile focus", () => {
         dispatch={vi.fn()}
       />
     );
-    expect(document.querySelector('[lang="ar"]')).not.toBeNull();
+    // The Arabic gloss arrives via dynamic lexicon import — wait for it first.
+    await waitFor(() => expect(document.querySelector('[lang="ar"]')).not.toBeNull());
     fireEvent.click(screen.getAllByRole("button", { name: "Immersion" })[0]);
     expect(document.querySelector('[lang="ar"]')).toBeNull();
     fireEvent.click(screen.getByRole("button", { name: "Word details" }));

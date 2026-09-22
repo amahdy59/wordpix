@@ -195,7 +195,7 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
     -webkit-overflow-scrolling: touch;
-    mask-image: linear-gradient(to right, #000 calc(100% - 2rem), transparent 100%);
+    mask-image: linear-gradient(to right, #000 calc(100% - 1rem), transparent 100%);
   }
 
   .no-scrollbar::-webkit-scrollbar {
@@ -203,7 +203,7 @@
   }
 
   [dir="rtl"] .no-scrollbar {
-    mask-image: linear-gradient(to left, #000 calc(100% - 2rem), transparent 100%);
+    mask-image: linear-gradient(to left, #000 calc(100% - 1rem), transparent 100%);
   }
 
   /* ─── Shadow utilities ──────────────────────────────────────────────────── */
@@ -234,4 +234,40 @@
 html,
 body {
   overscroll-behavior-y: none;
+}
+
+/* ─── Forced colors (Windows High Contrast) ────────────────────────────────
+   Map focus, selection, and status surfaces to system colors so the UI stays
+   legible when the OS overrides author colors. No `forced-color-adjust: none`
+   — every element must honor the user's palette.
+   ─────────────────────────────────────────────────────────────────────────── */
+@media (forced-colors: active) {
+  *:focus-visible {
+    outline: 3px solid ButtonText;
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: SelectedItem;
+    color: SelectedItemText;
+  }
+
+  .wp-card-selected {
+    border: 3px solid SelectedItem;
+    background: Canvas;
+    color: CanvasText;
+    forced-color-adjust: auto;
+  }
+
+  [aria-selected="true"],
+  [aria-checked="true"],
+  [aria-current="true"] {
+    outline: 2px solid SelectedItem;
+    outline-offset: 1px;
+  }
+
+  .animate-wp-shake {
+    outline: 3px solid ButtonText;
+    outline-offset: 2px;
+  }
 }

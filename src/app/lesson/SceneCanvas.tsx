@@ -51,7 +51,10 @@ export const SceneCanvas = memo(function SceneCanvas({
         >
           <ArrowLeft className="size-5" aria-hidden />
         </button>
-        <p className="flex-1 font-sans font-bold text-foreground text-sm truncate px-1">
+        <p
+          title={groupName}
+          className="flex-1 font-sans font-bold text-foreground text-sm truncate px-1"
+        >
           {groupName}
         </p>
         <button
@@ -129,7 +132,10 @@ export const SceneCanvas = memo(function SceneCanvas({
 
             <div className="flex-1 min-w-0 flex flex-col gap-1">
               <div className="flex items-center gap-2">
-                <h2 className="font-sans font-black text-foreground text-xl lg:text-2xl leading-none truncate">
+                <h2
+                  title={activeWord.label}
+                  className="font-sans font-black text-foreground text-xl lg:text-2xl leading-none truncate"
+                >
                   {activeWord.label}
                 </h2>
                 <AudioButton
@@ -141,7 +147,10 @@ export const SceneCanvas = memo(function SceneCanvas({
                 />
               </div>
 
-              <span className="font-sans text-muted-foreground text-xs font-medium truncate">
+              <span
+                title={t("lesson.pronunciation", { phonetic: activeWord.phonetic })}
+                className="font-sans text-muted-foreground text-xs font-medium truncate"
+              >
                 {t("lesson.pronunciation", { phonetic: activeWord.phonetic })}
               </span>
 

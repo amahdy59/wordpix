@@ -97,7 +97,10 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               }`}
             >
               <Icon className="size-4 shrink-0" aria-hidden />
-              <span className="truncate">
+              <span
+                title={`${categoryLabel} (${formatNumber(count, numeralSystem)})`}
+                className="truncate"
+              >
                 {categoryLabel} ({formatNumber(count, numeralSystem)})
               </span>
             </button>

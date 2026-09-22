@@ -1,12 +1,15 @@
+import { useEffect, useState } from "react";
 import { BookOpen, Layers, Volume2, Zap } from "lucide-react";
 import type { VocabularyItem } from "../data/lessons";
-import {
-  getLexiconEntry,
-  getReviewedCollocations,
-  hasArabicGloss,
-} from "../data/lexiconDictionary";
+// Type-only: erased at compile time, so this never pulls the 1.6 MB
+// dictionary into the synchronous bundle. The runtime module arrives via
+// dynamic import() below, the first time word details actually open.
+import type { LexiconEntry } from "../data/lexiconDictionary";
 import { useAudio } from "./useAudio";
 import { useI18n } from "../context/I18nContext";
+
+/** Runtime shape of the lazily loaded dictionary module. */
+type LexiconModule = typeof import("../data/lexiconDictionary");
 
 export function WordDetailsContent({
   word,
@@ -21,10 +24,101 @@ export function WordDetailsContent({
 }) {
   const { t } = useI18n();
   const { speak } = useAudio();
-  const baseEntry = getLexiconEntry(word.id, word.label, unitId);
+  // The dictionary is fetched on demand so opening a lesson paints before
+  // parsing ~1.6 MB of entries. The module cache makes repeat opens free.
+  const [lexicon, setLexicon] = useState<LexiconModule | null>(null);
+  const [lexiconFailed, setLexiconFailed] = useState(false);
+  const [lexiconRetry, setLexiconRetry] = useState(0);
+
+  useEffect(() => {
+    let cancelled = false;
+    import("../data/lexiconDictionary").then(
+      (mod) => {
+        if (!cancelled) setLexicon(mod);
+      },
+      () => {
+        if (!cancelled) setLexiconFailed(true);
+      }
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, [lexiconRetry]);
+
+  const loaded = lexicon
+    ? { mod: lexicon, base: lexicon.getLexiconEntry(word.id, word.label, unitId) }
+    : null;
+
+  if (!loaded) {
+    return (
+      <div
+        className={`flex-1 min-h-0 p-4 sm:p-5 overflow-y-auto overscroll-contain touch-pan-y flex flex-col gap-4 ${className}`}
+      >
+        <section
+          aria-label={t("wordDetails.meaning")}
+          className="rounded-2xl border border-border bg-muted/30 p-4"
+        >
+          <h3 className="font-sans text-xs font-bold uppercase tracking-wide text-muted-foreground">
+            {t("wordDetails.meaning")}
+          </h3>
+          <p
+            className="mt-2 font-sans text-base leading-relaxed text-foreground"
+            lang="en"
+            dir="ltr"
+          >
+            {word.description}
+          </p>
+        </section>
+
+        {lexiconFailed ? (
+          <div
+            role="alert"
+            className="rounded-2xl border border-border bg-muted/30 p-4 flex flex-col gap-2"
+          >
+            <p className="font-sans text-sm font-bold text-foreground">
+              {t("vocabularyPreload.loadErrorTitle")}
+            </p>
+            <p className="font-sans text-sm text-muted-foreground">
+              {t("vocabularyPreload.loadErrorDesc")}
+            </p>
+            <button
+              type="button"
+              onClick={() => {
+                setLexiconFailed(false);
+                setLexiconRetry((count) => count + 1);
+              }}
+              className="mt-1 self-start min-h-[44px] px-4 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              {t("action.tryAgain")}
+            </button>
+          </div>
+        ) : (
+          <div
+            role="status"
+            className="flex flex-col gap-3"
+            aria-label={t("vocabularyPreload.loading")}
+          >
+            <p className="font-sans text-sm text-muted-foreground">
+              {t("vocabularyPreload.loading")}
+            </p>
+            <div
+              className="rounded-2xl border border-border bg-muted/30 p-4 motion-safe:animate-pulse"
+              aria-hidden="true"
+            >
+              <div className="h-4 w-2/3 rounded bg-muted" />
+              <div className="mt-2 h-4 w-full rounded bg-muted" />
+              <div className="mt-2 h-4 w-5/6 rounded bg-muted" />
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  const baseEntry: LexiconEntry = loaded.base;
   const entry = {
     ...baseEntry,
-    collocations: getReviewedCollocations(baseEntry),
+    collocations: loaded.mod.getReviewedCollocations(baseEntry),
     arabic: word.arabicTranslation ?? baseEntry.arabic,
     sentences: word.exampleUsage
       ? [
@@ -59,7 +153,7 @@ export function WordDetailsContent({
       its own, so the card stays when the gloss is missing and only
       the Arabic line drops out — see `hasArabicGloss`. */}
       <div className="bg-primary/5 border border-primary/20 rounded-2xl px-4 py-3 flex items-center justify-between gap-3">
-        {bilingual && hasArabicGloss(entry) ? (
+        {bilingual && loaded.mod.hasArabicGloss(entry) ? (
           <p
             className="font-arabic font-bold text-foreground text-lg sm:text-xl"
             dir="rtl"

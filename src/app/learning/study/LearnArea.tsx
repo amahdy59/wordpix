@@ -5,11 +5,10 @@ import type { UnitLearningMaterials } from "../types";
 import { getWords } from "../../data/vocabulary";
 import { WordImage } from "../../shared/WordImage";
 import { useAudio } from "../../shared/useAudio";
-import {
-  getLexiconEntry,
-  hasArabicGloss,
-  hasReviewedLexiconExamples,
-} from "../../data/lexiconDictionary";
+// Type-only: erased at compile time, so the word list paints before the
+// 1.6 MB dictionary is parsed. Glosses and example flags enhance in place
+// once the module arrives via dynamic import() below.
+import type { LexiconEntry } from "../../data/lexiconDictionary";
 import { WordInspectorModal } from "../../shared/WordInspectorModal";
 import { Select } from "../../shared/Select";
 import type { VocabularyItem } from "../../data/lessons";
@@ -42,6 +41,28 @@ export function LearnArea({
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<"all" | StudyWordStatus>("all");
   const [announcement, setAnnouncement] = useState("");
+  // Dictionary arrives on demand; the list renders from unit fields first
+  // and glosses enhance in place once the module resolves.
+  const [lexicon, setLexicon] = useState<typeof import("../../data/lexiconDictionary") | null>(
+    null
+  );
+  const [lexiconFailed, setLexiconFailed] = useState(false);
+  const [lexiconRetry, setLexiconRetry] = useState(0);
+
+  useEffect(() => {
+    let cancelled = false;
+    import("../../data/lexiconDictionary").then(
+      (mod) => {
+        if (!cancelled) setLexicon(mod);
+      },
+      () => {
+        if (!cancelled) setLexiconFailed(true);
+      }
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, [lexiconRetry]);
   const { speak, stop, isPlaying } = useAudio({
     lang: "en-US",
     rate: 0.95,
@@ -143,17 +164,49 @@ export function LearnArea({
       <p className="sr-only" role="status" aria-live="polite">
         {announcement}
       </p>
+      {lexiconFailed && (
+        <div
+          role="alert"
+          className="rounded-2xl border border-border bg-wp-card p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4"
+        >
+          <p className="font-sans text-sm text-muted-foreground flex-1">
+            {t("vocabularyPreload.loadErrorDesc")}
+          </p>
+          <button
+            type="button"
+            onClick={() => {
+              setLexiconFailed(false);
+              setLexiconRetry((count) => count + 1);
+            }}
+            className="min-h-[44px] px-4 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            {t("action.tryAgain")}
+          </button>
+        </div>
+      )}
       <div
         role="list"
         className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4"
         aria-label={`${node.title} vocabulary`}
       >
         {visibleWords.map((word) => {
-          const entry = getLexiconEntry(word.id, word.label, materials.unitId);
-          const arabic = word.arabicTranslation ?? entry.arabic;
+          const entry: LexiconEntry | undefined = lexicon?.getLexiconEntry(
+            word.id,
+            word.label,
+            materials.unitId
+          );
+          const arabic = word.arabicTranslation ?? entry?.arabic ?? "";
+          // Before the dictionary arrives, unit-provided translations render
+          // as-is; the Arabic-script check applies once it is available.
+          const showArabic = lexicon
+            ? lexicon.hasArabicGloss({ arabic })
+            : word.arabicTranslation !== undefined && word.arabicTranslation !== "";
           const hasExamples =
             Boolean(word.exampleUsage) ||
-            (word.arabicTranslation === undefined && hasReviewedLexiconExamples(entry));
+            (lexicon !== null &&
+              word.arabicTranslation === undefined &&
+              entry !== undefined &&
+              lexicon.hasReviewedLexiconExamples(entry));
           const status = progress?.wordStatus[word.id] || "new";
           const learned = status === "learning" || status === "comfortable";
           return (
@@ -172,7 +225,7 @@ export function LearnArea({
                   <div className="min-w-0 flex-1">
                     <h2 className="text-xl font-black text-foreground break-words">{word.label}</h2>
                     <p className="text-sm font-mono text-muted-foreground">
-                      {entry.phonetic || word.phonetic}
+                      {entry?.phonetic || word.phonetic}
                     </p>
                   </div>
                   <button
@@ -201,7 +254,7 @@ export function LearnArea({
                     />
                   </button>
                 </div>
-                {!immersionMode && hasArabicGloss({ arabic }) && (
+                {!immersionMode && showArabic && (
                   <p
                     dir="rtl"
                     lang="ar"
@@ -212,7 +265,7 @@ export function LearnArea({
                 )}
                 <p className="text-sm leading-relaxed text-muted-foreground flex-1">
                   {word.description ||
-                    entry.sentences?.[0]?.en ||
+                    entry?.sentences?.[0]?.en ||
                     "Explore examples and word partners in details."}
                 </p>
                 <button

@@ -117,7 +117,7 @@ export const ExerciseStory = memo(function ExerciseStory({
             key={i}
             type="button"
             onClick={() => handlePlayWord(matchedWord.label, matchedWord.id)}
-            aria-label={"Pronounce " + matchedWord.label}
+            aria-label={t("story.pronounceWord", { word: matchedWord.label })}
             className={
               "cursor-pointer inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md font-bold not-italic transition-all mx-0.5 border " +
               (activeWordId === matchedWord.id
@@ -388,7 +388,7 @@ export const ExerciseStory = memo(function ExerciseStory({
         {/* Top 5-Section Sequential Stepper Navigation */}
         <nav
           aria-label="Story and context sections"
-          className="flex items-center gap-1 sm:gap-1.5 bg-secondary/90 p-1.5 rounded-2xl border border-border overflow-x-auto scrollbar-none"
+          className="flex items-center gap-1 sm:gap-1.5 bg-secondary/90 p-1.5 rounded-2xl border border-border overflow-x-auto no-scrollbar"
         >
           <button
             type="button"
@@ -498,7 +498,9 @@ export const ExerciseStory = memo(function ExerciseStory({
                       if (isPlaying) stop();
                       else speak(storyText);
                     }}
-                    aria-label={isPlaying ? "Stop story audio" : "Listen to full story audio"}
+                    aria-label={
+                      isPlaying ? t("story.stopStoryAudio") : t("story.listenFullStoryAudio")
+                    }
                     className={
                       "flex items-center gap-2 px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm shadow-lg transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white cursor-pointer " +
                       (isPlaying
@@ -553,23 +555,17 @@ export const ExerciseStory = memo(function ExerciseStory({
               {words.map((item) => {
                 const isActive = activeWordId === item.id;
                 return (
-                  <div
+                  // Static card: the word-details action and the audio action
+                  // are sibling buttons, never nested, so there is exactly
+                  // one interactive role per control for keyboard and SR users.
+                  <article
                     key={item.id}
-                    role="button"
-                    tabIndex={0}
                     className={
-                      "bg-wp-card border rounded-2xl p-3 flex flex-col items-center gap-2.5 shadow-wp-xs transition-all text-center hover:border-primary/50 cursor-pointer " +
+                      "bg-wp-card border rounded-2xl p-3 flex flex-col items-center gap-2.5 shadow-wp-xs transition-all text-center " +
                       (isActive
                         ? "border-primary ring-2 ring-primary/20 bg-secondary"
                         : "border-border")
                     }
-                    onClick={() => setInspectedWord(item)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault();
-                        setInspectedWord(item);
-                      }
-                    }}
                   >
                     <div className="size-20 sm:size-24 rounded-xl overflow-hidden bg-muted shrink-0 border border-border relative">
                       <img
@@ -579,18 +575,19 @@ export const ExerciseStory = memo(function ExerciseStory({
                       />
                       <button
                         type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          handlePlayWord(item.label, item.id);
-                        }}
-                        aria-label={"Listen to " + item.label}
-                        className="absolute bottom-1.5 end-1.5 size-7 rounded-full bg-black/70 hover:bg-black/90 text-white flex items-center justify-center shadow-md cursor-pointer transition-transform active:scale-90"
+                        onClick={() => handlePlayWord(item.label, item.id)}
+                        aria-label={t("story.listenToWord", { word: item.label })}
+                        className="absolute bottom-1.5 end-1.5 size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/70 hover:bg-black/90 text-white flex items-center justify-center shadow-md cursor-pointer transition-transform active:scale-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white"
                       >
-                        <Volume2 className="size-3.5" />
+                        <Volume2 className="size-3.5" aria-hidden />
                       </button>
                     </div>
 
-                    <div className="flex flex-col items-center gap-0.5">
+                    <button
+                      type="button"
+                      onClick={() => setInspectedWord(item)}
+                      className="flex flex-col items-center justify-center gap-0.5 rounded-xl border border-transparent hover:border-primary/50 px-3 py-1 min-h-[44px] min-w-[44px] cursor-pointer focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+                    >
                       <span className="font-sans font-bold text-foreground text-sm leading-tight">
                         {item.label}
                       </span>
@@ -599,8 +596,8 @@ export const ExerciseStory = memo(function ExerciseStory({
                           /{item.phonetic}/
                         </span>
                       )}
-                    </div>
-                  </div>
+                    </button>
+                  </article>
                 );
               })}
             </div>
@@ -768,23 +765,27 @@ export const ExerciseStory = memo(function ExerciseStory({
                       <button
                         type="button"
                         onClick={() => toggleTranslation(idx)}
-                        aria-label="Toggle Arabic translation"
+                        aria-label={t("story.toggleArabicTranslation")}
                         className={
-                          "flex items-center gap-1 px-2.5 py-1 min-h-[36px] rounded-xl font-sans font-semibold text-xs border transition-colors cursor-pointer " +
+                          "flex items-center gap-1 px-2.5 py-1 min-h-[44px] rounded-xl font-sans font-semibold text-xs border transition-colors cursor-pointer " +
                           (expandedTranslations[idx]
                             ? "bg-primary/10 text-primary border-primary/30"
                             : "bg-secondary text-muted-foreground border-border hover:text-foreground")
                         }
                       >
                         <Languages className="size-3.5" />
-                        <span>{expandedTranslations[idx] ? "Hide Arabic" : "Arabic"}</span>
+                        <span>
+                          {expandedTranslations[idx]
+                            ? t("story.hideArabic")
+                            : t("story.showArabic")}
+                        </span>
                       </button>
 
                       <button
                         type="button"
                         onClick={() => speak(passage.title + ". " + passage.text)}
-                        aria-label={"Listen to " + passage.title}
-                        className="size-9 rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-primary/10 flex items-center justify-center shrink-0 transition-colors cursor-pointer"
+                        aria-label={t("story.listenToPassage", { title: passage.title })}
+                        className="size-11 min-h-[44px] min-w-[44px] rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-primary/10 flex items-center justify-center shrink-0 transition-colors cursor-pointer"
                       >
                         <Volume2 className="size-4" />
                       </button>
@@ -971,8 +972,8 @@ export const ExerciseStory = memo(function ExerciseStory({
                         <button
                           type="button"
                           onClick={() => speak(currentQ.explanation)}
-                          aria-label="Listen to explanation"
-                          className="size-7 rounded-lg bg-wp-card border border-border flex items-center justify-center text-primary hover:bg-secondary cursor-pointer"
+                          aria-label={t("story.listenToExplanation")}
+                          className="size-11 min-h-[44px] min-w-[44px] rounded-lg bg-wp-card border border-border flex items-center justify-center text-primary hover:bg-secondary cursor-pointer"
                         >
                           <Volume2 className="size-3.5" />
                         </button>

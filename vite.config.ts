@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
+import { visualizer } from "rollup-plugin-visualizer";
 
 function figmaAssetResolver() {
   return {
@@ -17,7 +18,16 @@ function figmaAssetResolver() {
 
 export default defineConfig({
   base: "/wordpix/",
-  plugins: [figmaAssetResolver(), react(), tailwindcss()],
+  plugins: [
+    figmaAssetResolver(),
+    react(),
+    tailwindcss(),
+    // Bundle analysis only: activated by `pnpm run analyze` (ANALYZE=1).
+    // Normal builds are unaffected.
+    ...(process.env.ANALYZE
+      ? [visualizer({ filename: "dist/bundle-stats.html", gzipSize: true })]
+      : []),
+  ],
   // Must stay in step with the "paths" block in tsconfig.json. Three of the
   // previous six aliases (@shared, @types, @constants) pointed at directories
   // that do not exist — the real locations are src/app/shared, src/app/types.ts,
@@ -70,6 +80,10 @@ export default defineConfig({
             return "course-lessons";
           }
           if (id.includes("src/i18n/")) {
+            // en.json ships synchronously (default + fallback locale); ar.json
+            // arrives via dynamic import() on language switch and must not be
+            // folded back into the initial chunk.
+            if (id.endsWith("/ar.json")) return "i18n-locale-ar";
             return "i18n-locales";
           }
         },

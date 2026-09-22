@@ -208,7 +208,10 @@ describe("Legacy inline translation map is gone", () => {
     // Copy lived in three places at once: this map plus both JSON files.
     expect(source).not.toContain("const TRANSLATIONS");
     expect(source).toContain('from "../../i18n/en.json"');
-    expect(source).toContain('from "../../i18n/ar.json"');
+    // Arabic ships lazily: no static import (Vite would inline ~59 KB into the
+    // initial bundle), only a dynamic import() on language switch.
+    expect(source).not.toContain('from "../../i18n/ar.json"');
+    expect(source).toContain('import("../../i18n/ar.json")');
   });
 });
 

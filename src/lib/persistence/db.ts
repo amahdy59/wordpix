@@ -75,6 +75,11 @@ interface WordPixDB extends DBSchema {
       blob: Blob;
       mimeType: string;
       createdAt: number;
+      /**
+       * Last playback hit. Absent on entries written before this field
+       * existed — callers fall back to `createdAt`. Powers LRU eviction.
+       */
+      lastAccessedAt?: number;
     };
   };
 }
@@ -171,7 +176,15 @@ export async function getCachedAudio(key: string): Promise<Blob | null> {
     const db = await getDB();
     if (!db) return null;
     const entry = await db.get("audio_cache", key);
-    return entry?.blob ?? null;
+    if (!entry) return null;
+    // Record the hit for LRU eviction. Best-effort: a failed touch must
+    // never break playback of an entry we already hold.
+    try {
+      await db.put("audio_cache", { ...entry, lastAccessedAt: Date.now() });
+    } catch (touchError) {
+      console.warn("Failed to record audio cache hit", touchError);
+    }
+    return entry.blob;
   } catch (e) {
     console.warn("Failed to retrieve audio from IndexedDB cache", e);
     return null;
@@ -179,18 +192,85 @@ export async function getCachedAudio(key: string): Promise<Blob | null> {
 }
 
 /**
+ * Bounds for the audio blob cache. Eviction touches the audio_cache store
+ * only — learner state and the mutation queue are never victims.
+ */
+export const AUDIO_CACHE_MAX_ENTRIES = 200;
+export const AUDIO_CACHE_MAX_BYTES = 96 * 1024 * 1024;
+
+function isQuotaExceededError(error: unknown): boolean {
+  if (error instanceof DOMException) {
+    return error.name === "QuotaExceededError" || error.code === 22;
+  }
+  if (error && typeof error === "object" && "name" in error) {
+    return (error as { name?: unknown }).name === "QuotaExceededError";
+  }
+  return false;
+}
+
+/**
+ * Deletes least-recently-used audio entries until the store is back under
+ * both caps. Returns the number of entries removed.
+ *
+ * NOTE: unexported helper kept internal so the only writers of audio_cache
+ * stay in this module.
+ */
+async function enforceAudioCacheCaps(
+  db: NonNullable<Awaited<ReturnType<typeof getDB>>>
+): Promise<number> {
+  const entries = await db.getAll("audio_cache");
+  if (entries.length <= AUDIO_CACHE_MAX_ENTRIES) {
+    const bytes = entries.reduce((total, entry) => total + entry.blob.size, 0);
+    if (bytes <= AUDIO_CACHE_MAX_BYTES) return 0;
+  }
+  const byRecency = [...entries].sort(
+    (a, b) => (a.lastAccessedAt ?? a.createdAt) - (b.lastAccessedAt ?? b.createdAt)
+  );
+  let count = entries.length;
+  let bytes = entries.reduce((total, entry) => total + entry.blob.size, 0);
+  let removed = 0;
+  for (const victim of byRecency) {
+    if (count <= AUDIO_CACHE_MAX_ENTRIES && bytes <= AUDIO_CACHE_MAX_BYTES) break;
+    await db.delete("audio_cache", victim.key);
+    count -= 1;
+    bytes -= victim.blob.size;
+    removed += 1;
+  }
+  return removed;
+}
+
+/**
  * Saves an audio blob to IndexedDB cache for permanent offline reuse.
+ *
+ * The store is capped (entry count + total bytes, LRU eviction) and a
+ * QuotaExceededError triggers one evict-and-retry before giving up. A dropped
+ * write only means the clip streams again next time — playback falls back to
+ * the network/TTS path, never to broken state.
  */
 export async function saveCachedAudio(key: string, blob: Blob): Promise<void> {
   try {
     const db = await getDB();
     if (!db) return;
-    await db.put("audio_cache", {
+    const record = {
       key,
       blob,
       mimeType: blob.type || "audio/mpeg",
       createdAt: Date.now(),
-    });
+      lastAccessedAt: Date.now(),
+    };
+    try {
+      await db.put("audio_cache", record);
+    } catch (putError) {
+      if (!isQuotaExceededError(putError)) throw putError;
+      console.warn("Audio cache quota exceeded; evicting LRU entries and retrying");
+      await enforceAudioCacheCaps(db);
+      await db.put("audio_cache", record);
+    }
+    try {
+      await enforceAudioCacheCaps(db);
+    } catch (capError) {
+      console.warn("Failed to enforce audio cache caps", capError);
+    }
   } catch (e) {
     console.warn("Failed to save audio to IndexedDB cache", e);
   }

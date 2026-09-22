@@ -11,8 +11,6 @@ interface Props {
  */
 export const PageContainer = memo(function PageContainer({ children, className = "" }: Props) {
   return (
-    <div className={`flex flex-col gap-6 w-full max-w-6xl mx-auto ${className}`}>
-      {children}
-    </div>
+    <div className={`flex flex-col gap-6 w-full max-w-5xl mx-auto ${className}`}>{children}</div>
   );
 });
