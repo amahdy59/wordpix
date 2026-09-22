@@ -27,6 +27,19 @@ export default defineConfig({
       "scratch/**",
       ".codex-integration-backup/**",
     ],
+    coverage: {
+      provider: "v8",
+      reporter: ["text", "html"],
+      include: ["src/**/*.{ts,tsx}"],
+      exclude: [
+        ...configDefaults.exclude,
+        "src/test/**",
+        "src/**/*.test.{ts,tsx}",
+        "src/imports/**",
+      ],
+      // Report-only: no thresholds enforced yet. Promote to gates
+      // once a baseline is recorded from CI artifacts.
+    },
   },
   resolve: {
     alias: {

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // Project-local OpenCode V2 config for WordPix.
+  // Global ~/.config/opencode/opencode.json(c) still applies underneath this.
+  // Field shapes follow https://opencode.ai/v2/docs/config — do not guess new fields.
+  "formatter": true,
+  "watcher": {
+    "ignore": ["dist/**", "coverage/**", "playwright-report/**", "test-results/**"],
+  },
+  "permissions": [
+    { "action": "skill", "resource": "*", "effect": "allow" },
+    { "action": "edit", "resource": ".env*", "effect": "deny" },
+    { "action": "edit", "resource": "*.pem", "effect": "deny" },
+    { "action": "edit", "resource": "*.key", "effect": "deny" },
+    { "action": "shell", "resource": "git push *", "effect": "ask" },
+  ],
+  "agents": {
+    "reviewer": {
+      "description": "Read-only review of WordPix diffs against docs/14 Template H",
+      "mode": "subagent",
+      "system": "Review the current diff for scope creep, product mismatch, accessibility (WCAG 2.2 AAA: 7:1 text, 44x44px targets, focus, keyboard, RTL), state ownership, runtime validation, offline data safety, auth/RLS, PII in logs, error recovery, bundle impact, missing tests, and unneeded dependencies. Return blocking / important / minor findings, suggested tests, and a merge recommendation with evidence. Do not edit files.",
+      "permissions": [{ "action": "edit", "resource": "*", "effect": "deny" }],
+    },
+  },
+  "mcp": {
+    "timeout": { "startup": 45000, "catalog": 30000 },
+    "servers": {
+      "playwright": {
+        "type": "local",
+        "command": ["npx", "-y", "@playwright/mcp"],
+      },
+    },
+  },
+}
