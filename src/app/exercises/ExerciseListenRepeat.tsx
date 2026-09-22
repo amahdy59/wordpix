@@ -291,6 +291,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           </button>
           <h1 className="font-bold text-foreground text-center">{t("listenRepeat.title")}</h1>
           <div className="justify-self-end flex items-center gap-4">
+            <div className="hidden lg:block">{modeSelector}</div>
             <button
               type="button"
               onClick={() => {
@@ -304,6 +305,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             </button>
           </div>
         </div>
+        <div className="lg:hidden mt-3">{modeSelector}</div>
         <div className="flex justify-between gap-4 mt-4 text-sm font-semibold">
           <span>{unit.name}</span>
           <span>
@@ -331,15 +333,6 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           />
         </div>
       </header>
-      <details className="shrink-0 mx-4 lg:mx-8 mt-3 rounded-xl border border-border bg-wp-card">
-        <summary className="flex min-h-[44px] cursor-pointer items-center px-4 text-sm font-bold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
-          {t("listenRepeat.playbackOptions")}
-        </summary>
-        <div className="flex flex-col gap-3 px-4 pb-4">
-          {modeSelector}
-          {playbackSelector}
-        </div>
-      </details>
       <section
         aria-label={t("listenRepeat.exerciseSection", { group: group.name })}
         className="flex-1 min-h-0 overflow-y-auto p-4 lg:px-20 lg:py-8 pb-[max(1rem,env(safe-area-inset-bottom))]"
@@ -513,6 +506,11 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                   {t("listenRepeat.speakingOptional")}
                 </p>
               )}
+
+              <div className="mt-2">
+                <p className="text-sm font-semibold mb-2">{t("listenRepeat.playback")}</p>
+                {playbackSelector}
+              </div>
 
               <button
                 ref={detailsTriggerRef}

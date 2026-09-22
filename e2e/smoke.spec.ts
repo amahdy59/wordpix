@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("library defers the dictionary until review opens", async ({ page }) => {
+test("library defers the dictionary until a lesson needs it", async ({ page }) => {
   const dictionaryRequests: string[] = [];
   page.on("request", (request) => {
     if (request.url().includes("lexicon-dictionary-")) dictionaryRequests.push(request.url());
@@ -13,9 +13,20 @@ test("library defers the dictionary until review opens", async ({ page }) => {
   await expect(page.getByText("The Garden", { exact: true })).toBeVisible();
   expect(dictionaryRequests).toHaveLength(0);
 
+  // The empty review screen has no words to look up, so it fetches nothing.
   await page.goto("/#/review");
   await expect(page.getByRole("heading", { name: "No memory data yet" })).toBeVisible();
-  expect(dictionaryRequests).toHaveLength(1);
+  expect(dictionaryRequests).toHaveLength(0);
+
+  // Starting a lesson needs dictionary insights — exactly one deferred fetch.
+  await page.goto("/#/learn/construction-site");
+  await page.getByRole("heading", { name: /Construction Site/i }).waitFor({ timeout: 15000 });
+  await page
+    .getByRole("button", { name: /^Start lesson:/ })
+    .first()
+    .click();
+  await expect(page.getByRole("heading", { name: "Listen & repeat" })).toBeVisible();
+  await expect.poll(() => dictionaryRequests.length, { timeout: 15000 }).toBe(1);
 });
 
 test("learn path links to the optional library", async ({ page }) => {
