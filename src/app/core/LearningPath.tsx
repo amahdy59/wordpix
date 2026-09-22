@@ -369,63 +369,68 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         </div>
       </section>
 
-      <section
-        aria-labelledby="figma-pronunciation-heading"
-        className="rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 sm:p-6"
-      >
-        <div className="flex flex-wrap items-start justify-between gap-4">
-          <div>
-            <p className="text-xs font-black uppercase tracking-wide text-primary">
-              Figma curriculum
-            </p>
-            <h2
-              id="figma-pronunciation-heading"
-              className="mt-1 text-xl font-black text-foreground sm:text-2xl"
-            >
-              Pronunciation and comprehensibility
-            </h2>
-            <p className="mt-2 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
-              68 structured lessons for listening, connected speech, stress, transfer, and everyday
-              communication.
-            </p>
+      {showAllFoundationLessons && (
+        <section
+          aria-labelledby="figma-pronunciation-heading"
+          className="rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 sm:p-6"
+        >
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <p className="text-xs font-black uppercase tracking-wide text-primary">
+                Figma curriculum
+              </p>
+              <h2
+                id="figma-pronunciation-heading"
+                className="mt-1 text-xl font-black text-foreground sm:text-2xl"
+              >
+                Extended pronunciation studio
+              </h2>
+              <p className="mt-2 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
+                68 structured lessons for listening, connected speech, stress, transfer, and
+                everyday communication.
+              </p>
+            </div>
+            <span className="rounded-full bg-primary/10 px-3 py-1 text-sm font-black text-primary">
+              0/68 started
+            </span>
           </div>
-          <span className="rounded-full bg-primary/10 px-3 py-1 text-sm font-black text-primary">
-            0/68 started
-          </span>
-        </div>
-        <ol className="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-          {FIGMA_PRONUNCIATION_LESSONS.map((sourceLesson) => {
-            const activity = getFigmaPronunciationActivityData(sourceLesson.number);
-            return (
-              <li key={sourceLesson.number}>
-                <button
-                  type="button"
-                  onClick={() =>
-                    dispatch({
-                      type: "OPEN_FIGMA_PRONUNCIATION",
-                      lessonNumber: sourceLesson.number,
-                    })
-                  }
-                  className="flex min-h-[68px] w-full items-center gap-3 rounded-xl border border-border bg-wp-card p-3 text-start hover:border-primary/45 hover:bg-primary/5 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-                >
-                  <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-sm font-black text-primary">
-                    {sourceLesson.number}
-                  </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="block truncate font-black text-foreground">
-                      {activity.title}
+          <ol className="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            {FIGMA_PRONUNCIATION_LESSONS.map((sourceLesson) => {
+              const activity = getFigmaPronunciationActivityData(sourceLesson.number);
+              return (
+                <li key={sourceLesson.number}>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      dispatch({
+                        type: "OPEN_FIGMA_PRONUNCIATION",
+                        lessonNumber: sourceLesson.number,
+                      })
+                    }
+                    className="flex min-h-[68px] w-full items-center gap-3 rounded-xl border border-border bg-wp-card p-3 text-start hover:border-primary/45 hover:bg-primary/5 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  >
+                    <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-sm font-black text-primary">
+                      {sourceLesson.number}
                     </span>
-                    <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
-                      Hear · practise · transfer
+                    <span className="min-w-0 flex-1">
+                      <span className="block truncate font-black text-foreground">
+                        {activity.title}
+                      </span>
+                      <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
+                        Hear · practise · transfer
+                      </span>
                     </span>
-                  </span>
-                  <ArrowRight className="size-4 shrink-0 text-primary rtl:rotate-180" aria-hidden />
-                </button>
-              </li>
-            );
-          })}
-        </ol>
-      </section>
+                    <ArrowRight
+                      className="size-4 shrink-0 text-primary rtl:rotate-180"
+                      aria-hidden
+                    />
+                  </button>
+                </li>
+              );
+            })}
+          </ol>
+        </section>
+      )}
 
       <section
         aria-labelledby="recommended-heading"
