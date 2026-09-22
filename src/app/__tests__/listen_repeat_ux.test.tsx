@@ -2,6 +2,8 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import { act, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { ExerciseListenRepeat } from "../exercises/ExerciseListenRepeat";
 import { BEDROOM_VOCABULARY } from "../data/lessons";
+import { VOCABULARY as BATHROOM_VOCABULARY } from "../data/units/bathroom";
+import { WordDetailsContent } from "../shared/WordDetailsContent";
 
 const audio = vi.hoisted(() => ({
   speak: vi.fn(),
@@ -38,6 +40,15 @@ describe("Listen and repeat mobile focus", () => {
     audio.speak.mockClear();
     audio.stop.mockClear();
     speech.listen.mockClear();
+  });
+
+  it("shows the reviewed meaning before examples and word partners", () => {
+    const shower = BATHROOM_VOCABULARY.find((word) => word.id === "shower")!;
+    const { container } = render(<WordDetailsContent word={shower} unitId="bathroom" />);
+    expect(screen.getByRole("region", { name: "Meaning" })).toHaveTextContent(shower.description);
+    const text = container.textContent ?? "";
+    expect(text.indexOf(shower.description)).toBeLessThan(text.indexOf("Examples (1)"));
+    expect(text.indexOf("Examples (1)")).toBeLessThan(text.indexOf("Word partners (3)"));
   });
 
   it("keeps the image clean and exposes one clearly labelled details action", () => {

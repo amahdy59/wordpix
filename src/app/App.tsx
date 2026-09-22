@@ -79,6 +79,10 @@ function AppInner() {
       dispatch({ type: "GO", to: screen.id, unitId: screen.unitId });
       return;
     }
+    if (screen.id === "figma-pronunciation-lesson") {
+      dispatch({ type: "OPEN_FIGMA_PRONUNCIATION", lessonNumber: screen.lessonNumber });
+      return;
+    }
     dispatch({ type: "GO", to: screen.id });
   }, []);
 

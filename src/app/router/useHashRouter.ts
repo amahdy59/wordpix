@@ -6,6 +6,7 @@ import {
   getFoundationLesson,
   isFoundationLessonId,
 } from "../learning/foundations/foundationCurriculum";
+import { getFigmaPronunciationLesson } from "../learning/foundations/figmaPronunciationCatalog";
 
 const SKILL_EXERCISE_ID_SET = new Set<string>(SKILL_EXERCISE_IDS);
 
@@ -65,6 +66,7 @@ const LEARNING_MATERIALS_PATTERN = new RegExp(
 );
 const SKILL_EXERCISE_PATTERN = /^#\/skills\/([a-z-]+)$/;
 const FOUNDATION_LESSON_PATTERN = /^#\/foundations\/([a-z-]+)$/;
+const FIGMA_PRONUNCIATION_PATTERN = /^#\/pronunciation\/lesson-(\d+)$/;
 
 /**
  * Preserve shared/bookmarked names from the pronunciation curriculum while
@@ -108,6 +110,13 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
     const lesson = getFoundationLesson(screen.lessonId);
     return { hash: `#/foundations/${lesson.id}`, title: `WordPix — ${lesson.title}` };
   }
+  if (screen.id === "figma-pronunciation-lesson") {
+    const lesson = getFigmaPronunciationLesson(screen.lessonNumber);
+    return {
+      hash: `#/pronunciation/lesson-${String(lesson.number).padStart(2, "0")}`,
+      title: `WordPix — ${lesson.sourceName}`,
+    };
+  }
   if (screen.id === "lesson") {
     const world = resolveUnitForLesson(screen.lessonId);
     return {
@@ -137,6 +146,20 @@ export function hashToRoute(hash: string): RouteIntent | null {
       screen: { id: "foundation-lesson", lessonId: lesson.id },
       title: `WordPix — ${lesson.title}`,
     };
+  }
+
+  const figmaMatch = normalized.match(FIGMA_PRONUNCIATION_PATTERN);
+  if (figmaMatch) {
+    const lessonNumber = Number(figmaMatch[1]);
+    if (Number.isInteger(lessonNumber) && lessonNumber >= 1 && lessonNumber <= 68) {
+      const lesson = getFigmaPronunciationLesson(lessonNumber);
+      return {
+        kind: "screen",
+        screen: { id: "figma-pronunciation-lesson", lessonNumber },
+        title: `WordPix — ${lesson.sourceName}`,
+      };
+    }
+    return null;
   }
 
   const stepMatch = normalized.match(LESSON_STEP_PATTERN);

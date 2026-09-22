@@ -189,18 +189,20 @@ const basic = (
 });
 
 const sameDifferentQuestions = [
-  ["map. map.", "same"],
-  ["dog. log.", "different"],
-  ["fan. fan.", "same"],
-  ["sock. sun.", "different"],
-  ["cat. cap.", "different"],
+  ["cat. cat.", "same"],
+  ["sun. sun.", "same"],
+  ["dog. dog.", "same"],
   ["pen. pen.", "same"],
+  ["ship. ship.", "same"],
+  ["cup. cup.", "same"],
+  ["cat. fish.", "different"],
+  ["dog. log.", "different"],
   ["pen. pin.", "different"],
-  ["fish. fan.", "different"],
-  ["hat. hat.", "same"],
-  ["cup. bus.", "different"],
-  ["map. mat.", "different"],
-  ["log. log.", "same"],
+  ["cap. cup.", "different"],
+  ["sheep. ship.", "different"],
+  ["pig. big.", "different"],
+  ["boat. coat.", "different"],
+  ["fan. van.", "different"],
 ] as const;
 
 const countQuestions = [
@@ -358,8 +360,8 @@ const FOUNDATION_LESSON_DRAFTS: readonly FoundationLessonDraft[] = [
     title: "Same or Different?",
     shortTitle: "Same or Different",
     audioOnly: true,
-    goal: "Are the two words the same or different?",
-    instruction: "Listen to both words from start to finish.",
+    goal: "Identify whether two familiar spoken words are exactly the same or different without relying on print.",
+    instruction: "Listen to both complete words, then choose Same or Different.",
     models: [
       {
         audio: "sun. sun.",

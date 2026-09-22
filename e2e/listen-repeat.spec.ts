@@ -61,6 +61,7 @@ for (const viewport of [
   { width: 320, height: 568 },
   { width: 390, height: 844 },
   { width: 768, height: 1024 },
+  { width: 1024, height: 768 },
   { width: 1440, height: 900 },
   { width: 1920, height: 1080 },
 ]) {
@@ -102,10 +103,11 @@ for (const viewport of [
     const details = page.getByRole("button", { name: "Word details", exact: true });
     await details.click();
     const detailsSurface =
-      viewport.width >= 1024
+      viewport.width >= 1280
         ? page.getByRole("complementary", { name: /^Details for / })
         : page.getByRole("dialog");
     await expect(detailsSurface).toBeVisible();
+    await expect(detailsSurface.getByRole("region", { name: "Meaning" })).toBeVisible();
     if (viewport.width < 1024) {
       await expect
         .poll(async () => {

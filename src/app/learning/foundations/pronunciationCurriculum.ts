@@ -1,5 +1,5 @@
 import type { FoundationLessonDraft, FoundationQuestion } from "./foundationCurriculum";
-import { PRONUNCIATION_IMAGE_FILES } from "./pronunciationImageVersions";
+import { PRONUNCIATION_IMAGE_FILES } from "./pronunciationImageVersions.ts";
 
 const options = (...labels: string[]): FoundationQuestion["options"] =>
   labels.map((label, index) => ({ value: String(index + 1), label, mediaKind: "symbol" }));

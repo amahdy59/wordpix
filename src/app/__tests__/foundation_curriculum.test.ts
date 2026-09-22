@@ -93,12 +93,12 @@ describe("foundation curriculum", () => {
   it("uses the complete authored Same or Different practice bank", () => {
     const lesson = getFoundationLesson("same-or-different");
     expect(lesson.models).toHaveLength(2);
-    expect(lesson.questions).toHaveLength(12);
+    expect(lesson.questions).toHaveLength(14);
     expect(lesson.questions.slice(-4).map((question) => question.audio)).toEqual([
-      "hat. hat.",
-      "cup. bus.",
-      "map. mat.",
-      "log. log.",
+      "sheep. ship.",
+      "pig. big.",
+      "boat. coat.",
+      "fan. van.",
     ]);
   });
 

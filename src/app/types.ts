@@ -71,6 +71,7 @@ export type Screen =
   /** Reference and self-paced practice for one unit, imported from Figma. */
   | { id: "learning-materials"; unitId?: string; area?: string; nodeId?: string }
   | { id: "foundation-lesson"; lessonId: FoundationLessonId }
+  | { id: "figma-pronunciation-lesson"; lessonNumber: number }
   | { id: "skill-hub" }
   | { id: "skill-exercise"; exerciseId: SkillExerciseId }
   | {
@@ -113,6 +114,7 @@ export type Action =
   /** Enters self-paced word browsing for one group. */
   | { type: "GO_LEARN_WORDS"; lessonId: string }
   | { type: "START_FOUNDATION_LESSON"; lessonId: FoundationLessonId }
+  | { type: "OPEN_FIGMA_PRONUNCIATION"; lessonNumber: number }
   /**
    * `lessonId` is required, and deliberately so. It was optional, and three of
    * the four call sites omitted it — so the reducer fell back to the first

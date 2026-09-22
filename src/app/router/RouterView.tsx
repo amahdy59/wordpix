@@ -45,6 +45,11 @@ const FoundationLessonScreen = lazy(() =>
     default: m.FoundationLessonScreen,
   }))
 );
+const FigmaPronunciationLessonScreen = lazy(() =>
+  import("../learning/foundations/FigmaPronunciationLessonScreen").then((m) => ({
+    default: m.FigmaPronunciationLessonScreen,
+  }))
+);
 
 const ExerciseListenRepeat = lazy(() =>
   import("../exercises/ExerciseListenRepeat").then((m) => ({ default: m.ExerciseListenRepeat }))
@@ -233,6 +238,10 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
     if (state.id === "skill-hub") return <SkillExerciseHub dispatch={dispatch} />;
     if (state.id === "foundation-lesson")
       return <FoundationLessonScreen lessonId={state.lessonId} dispatch={dispatch} />;
+    if (state.id === "figma-pronunciation-lesson")
+      return (
+        <FigmaPronunciationLessonScreen lessonNumber={state.lessonNumber} dispatch={dispatch} />
+      );
 
     if (state.id === "skill-exercise") {
       const SkillExercise = SKILL_EXERCISES[state.exerciseId];

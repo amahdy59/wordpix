@@ -41,15 +41,27 @@ export function WordDetailsContent({
   };
   return (
     <div
-      className={`flex-1 min-h-0 p-4 sm:p-6 overflow-y-auto overscroll-contain touch-pan-y flex flex-col gap-4 ${className}`}
+      className={`flex-1 min-h-0 p-4 sm:p-5 overflow-y-auto overscroll-contain touch-pan-y flex flex-col gap-4 ${className}`}
     >
+      <section
+        aria-label={t("wordDetails.meaning")}
+        className="rounded-2xl border border-border bg-muted/30 p-4"
+      >
+        <h3 className="font-sans text-xs font-bold uppercase tracking-wide text-muted-foreground">
+          {t("wordDetails.meaning")}
+        </h3>
+        <p className="mt-2 font-sans text-base leading-relaxed text-foreground" lang="en" dir="ltr">
+          {word.description}
+        </p>
+      </section>
+
       {/* Arabic Translation Card. The part of speech is worth showing on
       its own, so the card stays when the gloss is missing and only
       the Arabic line drops out — see `hasArabicGloss`. */}
-      <div className="bg-primary/5 border border-primary/20 rounded-2xl p-4 flex items-center justify-between gap-3">
+      <div className="bg-primary/5 border border-primary/20 rounded-2xl px-4 py-3 flex items-center justify-between gap-3">
         {bilingual && hasArabicGloss(entry) ? (
           <p
-            className="font-arabic font-black text-foreground text-xl sm:text-2xl"
+            className="font-arabic font-bold text-foreground text-lg sm:text-xl"
             dir="rtl"
             lang="ar"
           >
@@ -64,6 +76,57 @@ export function WordDetailsContent({
           {entry.partOfSpeech}
         </span>
       </div>
+
+      {entry.sentences && entry.sentences.length > 0 && (
+        <section
+          className="flex flex-col gap-2.5"
+          aria-label={t("wordDetails.usageContexts", { count: entry.sentences.length })}
+        >
+          <h3 className="font-sans text-xs font-bold text-muted-foreground uppercase tracking-wide flex items-center gap-1.5">
+            <BookOpen className="size-3.5 text-primary" aria-hidden="true" />
+            <span>{t("wordDetails.usageContexts", { count: entry.sentences.length })}</span>
+          </h3>
+          <div className="flex flex-col gap-3">
+            {entry.sentences.map((sentence, idx) => (
+              <div
+                key={idx}
+                className="bg-muted/40 border border-border rounded-2xl p-4 flex flex-col gap-2"
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <span className="text-xs font-sans font-bold text-primary uppercase tracking-wide">
+                    {sentence.context || t("wordDetails.contextNum", { num: idx + 1 })}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => speak(sentence.en)}
+                    aria-label={`Listen to example ${idx + 1}`}
+                    className="flex items-center gap-1 text-xs font-sans font-bold text-primary hover:underline min-h-[44px] px-2"
+                  >
+                    <Volume2 className="size-3.5" aria-hidden="true" />
+                    <span>{t("wordDetails.play")}</span>
+                  </button>
+                </div>
+                <p
+                  className="font-sans text-foreground text-sm sm:text-base leading-relaxed"
+                  lang="en"
+                  dir="ltr"
+                >
+                  &ldquo;{sentence.en}&rdquo;
+                </p>
+                {bilingual && sentence.ar && (
+                  <p
+                    className="font-arabic text-muted-foreground text-xs sm:text-sm"
+                    dir="rtl"
+                    lang="ar"
+                  >
+                    {sentence.ar}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Authentic Collocations (Up to 6) */}
       {entry.collocations && entry.collocations.length > 0 && (
@@ -125,58 +188,6 @@ export function WordDetailsContent({
                 <p className="font-sans text-xs text-muted-foreground italic">
                   &ldquo;{pv.example}&rdquo;
                 </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* 3+ Contextual Example Sentences */}
-      {entry.sentences && entry.sentences.length > 0 && (
-        <div className="flex flex-col gap-2.5">
-          <span className="font-sans text-xs font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
-            <BookOpen className="size-3.5 text-primary" />
-            <span>{t("wordDetails.usageContexts", { count: entry.sentences.length })}</span>
-          </span>
-          <div className="flex flex-col gap-3">
-            {entry.sentences.map((sentence, idx) => (
-              <div
-                key={idx}
-                className="bg-muted/40 border border-border rounded-2xl p-4 flex flex-col gap-2 transition-colors hover:border-primary/30"
-              >
-                <div className="flex items-center justify-between gap-2">
-                  {sentence.context ? (
-                    <span className="text-[11px] font-sans font-bold px-2.5 py-0.5 rounded-md bg-primary/10 text-primary uppercase tracking-wide">
-                      {sentence.context}
-                    </span>
-                  ) : (
-                    <span className="text-[11px] font-sans font-bold text-muted-foreground uppercase">
-                      {t("wordDetails.contextNum", { num: idx + 1 })}
-                    </span>
-                  )}
-                  <button
-                    type="button"
-                    onClick={() => speak(sentence.en)}
-                    aria-label={`Listen to example ${idx + 1}`}
-                    className="flex items-center gap-1 text-xs font-sans font-bold text-primary hover:underline min-h-[44px] px-2"
-                  >
-                    <Volume2 className="size-3.5" />
-                    <span>{t("wordDetails.play")}</span>
-                  </button>
-                </div>
-
-                <p className="font-sans text-foreground text-sm sm:text-base leading-relaxed">
-                  &ldquo;{sentence.en}&rdquo;
-                </p>
-                {bilingual && sentence.ar && (
-                  <p
-                    className="font-arabic text-muted-foreground text-xs sm:text-sm"
-                    dir="rtl"
-                    lang="ar"
-                  >
-                    {sentence.ar}
-                  </p>
-                )}
               </div>
             ))}
           </div>

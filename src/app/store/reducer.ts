@@ -58,6 +58,9 @@ export function reducer(state: Screen, action: Action): Screen {
   if (action.type === "START_FOUNDATION_LESSON") {
     return { id: "foundation-lesson", lessonId: action.lessonId };
   }
+  if (action.type === "OPEN_FIGMA_PRONUNCIATION") {
+    return { id: "figma-pronunciation-lesson", lessonNumber: action.lessonNumber };
+  }
   if (action.type === "START_LESSON") {
     let queue =
       action.wordQueue && action.wordQueue.length > 0

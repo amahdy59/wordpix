@@ -63,7 +63,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   const currentWord = words[activeWordIndex] || words[0];
   const isLastWord = activeWordIndex === words.length - 1;
   useEffect(() => {
-    const query = window.matchMedia("(min-width: 1024px)");
+    const query = window.matchMedia("(min-width: 1280px)");
     const update = () => setDesktopDetails(query.matches);
     update();
     query.addEventListener("change", update);
@@ -296,7 +296,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           <div
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
-            className={`w-full min-w-0 grid grid-cols-1 ${inspectedWord && desktopDetails ? "lg:grid-cols-[minmax(0,1.5fr)_minmax(18rem,0.9fr)_minmax(19rem,0.9fr)]" : "lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]"} gap-4 lg:gap-0 bg-wp-card border border-border rounded-2xl sm:rounded-3xl p-4 shadow-wp-md relative`}
+            className={`w-full min-w-0 grid grid-cols-1 ${inspectedWord && desktopDetails ? "lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)] xl:grid-cols-[minmax(0,1.5fr)_minmax(16rem,0.9fr)_minmax(20rem,1fr)]" : "lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]"} gap-4 lg:gap-0 bg-wp-card border border-border rounded-2xl sm:rounded-3xl p-4 shadow-wp-md relative`}
           >
             <button
               type="button"
@@ -465,7 +465,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               <aside
                 id="word-details-panel"
                 aria-label={`Details for ${inspectedWord.label}`}
-                className="hidden lg:flex min-h-0 max-h-[32rem] ms-4 border-s border-border bg-muted/20 rounded-e-2xl flex-col overflow-hidden"
+                className="hidden xl:flex min-h-0 max-h-[32rem] ms-4 border-s border-border bg-muted/20 rounded-e-2xl flex-col overflow-hidden"
               >
                 <div className="shrink-0 flex items-center justify-between gap-3 p-4 border-b border-border bg-wp-card">
                   <div className="min-w-0">
