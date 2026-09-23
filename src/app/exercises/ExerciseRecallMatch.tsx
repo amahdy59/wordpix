@@ -188,7 +188,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         </>
       }
     >
-      <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-3 sm:gap-4">
+      <div className="relative mx-auto flex w-full max-w-[2200px] flex-col gap-4 sm:gap-5">
         <div className="flex flex-col items-center justify-between gap-3 sm:flex-row">
           <div className="text-center sm:text-start">
             <p className="font-sans text-sm font-bold text-foreground sm:text-base">
@@ -222,7 +222,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         <div
           role="group"
           aria-label="Choose matching picture for audio prompt"
-          className="grid w-full grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4 lg:gap-5"
+          className="grid w-full grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4 xl:gap-6"
         >
           {displayCards.map((card, idx) => {
             const isSelected = selectedId === card.id;
@@ -254,7 +254,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleCardClick(card)}
-                className={`group relative block aspect-[4/3] min-h-[110px] w-full overflow-hidden rounded-2xl shadow-wp-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary sm:aspect-[16/10] lg:aspect-[4/3] lg:max-h-[260px] ${cardStateStyle}`}
+                className={`group relative block aspect-[4/3] min-h-[120px] w-full overflow-hidden rounded-2xl shadow-wp-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:aspect-[16/10] lg:aspect-[4/3] ${cardStateStyle}`}
               >
                 <span
                   aria-hidden

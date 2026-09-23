@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import {
   ArrowLeft,
   ArrowRight,
@@ -7,6 +7,7 @@ import {
   Play,
   RotateCcw,
   Sparkles,
+  Volume2,
 } from "lucide-react";
 import type { Action } from "../../types";
 import { useAudio } from "../../shared/useAudio";
@@ -21,6 +22,8 @@ import {
 } from "./figmaPronunciationCatalog";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
 import { getPronunciationAudioClip } from "./pronunciationAudioManifest";
+import { ADVANCE_DELAY_MS, useAutoAdvance } from "../../shared/useAutoAdvance";
+import { useSpokenFeedback } from "../../shared/useSpokenFeedback";
 
 interface Props {
   lessonNumber: number;
@@ -55,6 +58,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
   const [correctCount, setCorrectCount] = useState(0);
   const [completedScore, setCompletedScore] = useState<number | null>(null);
   const { speak, stop, isPlaying } = useAudio({ lang: "en-US", rate: 0.78, preferLocal: true });
+  const { speakFeedback, cancel: cancelSpokenFeedback } = useSpokenFeedback();
   const pool = rolePool(activity, stage);
   const target =
     stage === 0
@@ -74,19 +78,9 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     : [];
   const answerable = stage === 1 || stage === 2 || stage === 3 || stage === 4;
   const passed = answer === target?.label;
-  const selectAnswer = (value: string) => {
-    if (passed) return;
-    setAnswer(value);
-    if (value === target?.label) {
-      if (attempts === 0) setCorrectCount((count) => count + 1);
-      void speak(t("pronunciation.feedbackCorrectAudio"));
-    } else {
-      setAttempts((count) => count + 1);
-      void speak(t("pronunciation.feedbackRetryAudio"));
-    }
-  };
-  const advance = () => {
+  const advance = useCallback(() => {
     stop();
+    cancelSpokenFeedback();
     setAnswer(null);
     setAttempts(0);
     if (stage > 0 && trial < TRIALS_PER_STAGE - 1) {
@@ -108,9 +102,55 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     }
     recordPronunciationCheckpoint(`lesson-${String(lessonNumber).padStart(2, "0")}`, stage + 1);
     setStage((value) => (value + 1) as Stage);
+  }, [
+    correctCount,
+    lessonNumber,
+    recordPronunciationCheckpoint,
+    recordPronunciationCompletion,
+    cancelSpokenFeedback,
+    stage,
+    stop,
+    trial,
+  ]);
+  const autoAdvance = useAutoAdvance({
+    enabled: state.accessibility.autoAdvance,
+    onAdvance: advance,
+  });
+  const selectAnswer = (value: string) => {
+    if (passed) return;
+    const isCorrect = value === target?.label;
+    stop();
+    setAnswer(value);
+    if (isCorrect) {
+      if (attempts === 0) setCorrectCount((count) => count + 1);
+      speakFeedback({ correct: true, targetLabel: target?.label ?? activity.model }, () =>
+        autoAdvance.schedule(ADVANCE_DELAY_MS.correct)
+      );
+    } else {
+      setAttempts((count) => count + 1);
+      speakFeedback({
+        correct: false,
+        targetLabel: target?.label ?? activity.model,
+        chosenLabel: value,
+      });
+    }
+  };
+  const replayFeedback = () => {
+    if (!answer) return;
+    autoAdvance.cancel();
+    speakFeedback(
+      {
+        correct: passed,
+        targetLabel: target?.label ?? activity.model,
+        chosenLabel: passed ? null : answer,
+      },
+      passed ? () => autoAdvance.schedule(ADVANCE_DELAY_MS.correct) : undefined
+    );
   };
   const reset = () => {
     stop();
+    cancelSpokenFeedback();
+    autoAdvance.cancel();
     setCompletedScore(null);
     setStage(0);
     setTrial(0);
@@ -292,10 +332,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             </div>
           </section>
         )}
-        <section
-          className="rounded-3xl border border-border bg-card p-5 shadow-sm sm:p-7"
-          aria-live="polite"
-        >
+        <section className="rounded-3xl border border-border bg-card p-5 shadow-sm sm:p-7">
           <p className="text-sm font-black text-primary">
             {t("pronunciation.stage", { number: stage + 1, name: STAGES[stage] })}
           </p>
@@ -408,18 +445,28 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
           {answer && (
             <div
               role={passed ? "status" : "alert"}
-              className="mt-5 rounded-2xl bg-muted p-4 font-bold"
+              className={`mt-5 flex min-h-14 items-center justify-between gap-3 rounded-2xl border px-4 py-3 font-bold ${passed ? "border-feedback-success-border bg-feedback-success-surface" : "border-feedback-error-border bg-feedback-error-surface"}`}
             >
-              {passed ? (
-                <>
-                  <Check className="me-2 inline size-5 text-success-foreground" aria-hidden />
-                  {t("pronunciation.correct")}
-                </>
-              ) : attempts >= 2 ? (
-                t("pronunciation.support")
-              ) : (
-                t("pronunciation.retry")
-              )}
+              <span>
+                {passed ? (
+                  <>
+                    <Check className="me-2 inline size-5 text-feedback-success" aria-hidden />
+                    {t("pronunciation.correct")}
+                  </>
+                ) : attempts >= 2 ? (
+                  t("pronunciation.support")
+                ) : (
+                  t("pronunciation.retry")
+                )}
+              </span>
+              <button
+                type="button"
+                onClick={replayFeedback}
+                className="inline-flex min-h-11 shrink-0 items-center gap-2 rounded-xl px-3 text-sm font-black text-foreground hover:bg-background/70 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <Volume2 className="size-5" aria-hidden />
+                {t("pronunciation.replayFeedback")}
+              </button>
             </div>
           )}
           <div className="mt-6 flex justify-between gap-3">
@@ -427,7 +474,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               <RotateCcw className="me-2 inline size-4" aria-hidden />
               {t("pronunciation.reset")}
             </button>
-            {(stage === 0 || passed || attempts >= 2) && (
+            {(stage === 0 || (passed && !state.accessibility.autoAdvance) || attempts >= 2) && (
               <button
                 type="button"
                 onClick={advance}

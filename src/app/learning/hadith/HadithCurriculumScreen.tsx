@@ -47,7 +47,10 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
     FIGMA_HADITH_LESSONS[0];
 
   return (
-    <main className="min-h-dvh bg-background pb-24" aria-labelledby="hadith-curriculum-title">
+    <main
+      className="h-full min-h-0 overflow-y-auto bg-background pb-24 overscroll-y-contain"
+      aria-labelledby="hadith-curriculum-title"
+    >
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 p-4 sm:p-8">
         <button
           type="button"

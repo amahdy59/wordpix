@@ -90,12 +90,14 @@ describe("AppShell responsive components", () => {
 });
 
 describe("Card Grid Responsive Aspect Ratios", () => {
-  it("ExerciseRecallMatch uses compact landscape image containers at every breakpoint", () => {
+  it("ExerciseRecallMatch lets image choices expand across large viewports", () => {
     const source = stripComments(read("exercises/ExerciseRecallMatch.tsx"));
     expect(source).toMatch(/aspect-\[4\/3\]/);
     expect(source).toMatch(/sm:aspect-\[16\/10\]/);
     expect(source).toMatch(/lg:grid-cols-4/);
+    expect(source).toContain("max-w-[2200px]");
     expect(source).toContain("object-cover");
+    expect(source).not.toMatch(/max-h-\[260px\]/);
     expect(source).not.toMatch(/grid-rows-2/);
   });
 
@@ -118,8 +120,8 @@ describe("Information architecture avoids nested shells", () => {
 
   it("does not vertically center media drills in unused viewport space", () => {
     const shell = stripComments(read("shared/ExerciseShell.tsx"));
-    expect(shell).toMatch(/max-w-7xl/);
-    expect(shell).not.toMatch(/max-w-7xl[^\n]*my-auto/);
+    expect(shell).toMatch(/max-w-\[2200px\]/);
+    expect(shell).not.toMatch(/max-w-\[2200px\][^\n]*my-auto/);
   });
 });
 
