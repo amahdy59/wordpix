@@ -27,6 +27,23 @@ function collectText(node, output = []) {
   return output;
 }
 
+function collectVisualVocabulary(node, output = []) {
+  const imageRef = (node?.fills ?? []).find(
+    (fill) => fill?.type === "IMAGE" && fill.imageRef
+  )?.imageRef;
+  const name = node?.name?.trim() ?? "";
+  const match = name.match(/^Photograph\s*·\s*(.+)$/i);
+  if (imageRef && match) {
+    output.push({
+      label: match[1].replace(/\s*·\s*(?:vivid|clear|male|human|context).*$/i, "").trim(),
+      imageRef,
+      nodeId: node.id,
+    });
+  }
+  for (const child of node?.children ?? []) collectVisualVocabulary(child, output);
+  return output;
+}
+
 function stripNavigation(text) {
   const navigationEnd = text.slice(0, 18).lastIndexOf(">") + 2;
   return navigationEnd > 2 ? text.slice(navigationEnd) : text;
@@ -43,8 +60,10 @@ function inferStage(frame, text) {
     ["speak", /(?:speak:|stage 6 of 7|speaking activity|respectful dialogue)/i],
     ["check-review", /(?:check & review:|stage 7 of 7|lesson completed)/i],
   ];
-  return patterns.find(([, pattern]) => pattern.test(heading))?.[0]
-    ?? stageNames[Number(frame.name?.match(/^(\d+)/)?.[1] ?? 0) - 1];
+  return (
+    patterns.find(([, pattern]) => pattern.test(heading))?.[0] ??
+    stageNames[Number(frame.name?.match(/^(\d+)/)?.[1] ?? 0) - 1]
+  );
 }
 
 function arabicCharacterCount(value) {
@@ -64,15 +83,15 @@ function extractCanonicalSource(readText, lessonNumber) {
       (value) =>
         value !== arabic &&
         latinWordCount(value) >= 18 &&
-        !/^(source|contextual|learner flow|audio controls)/i.test(value),
+        !/^(source|contextual|learner flow|audio controls)/i.test(value)
     )
     .sort((a, b) => latinWordCount(b) - latinWordCount(a))[0];
   const citation = readText.find(
     (value) =>
       value !== translation &&
       /(?:source:|sunnah\.com\/|nawawi(?:'s)? forty|reported by|sahih (?:al-)?bukhari|sahih muslim|jami.{0,3}at-tirmidhi)/i.test(
-        value,
-      ),
+        value
+      )
   );
 
   if (!arabic || !translation) {
@@ -88,7 +107,7 @@ function extractCanonicalSource(readText, lessonNumber) {
 
 const response = await fetch(
   `https://api.figma.com/v1/files/${fileKey}/nodes?ids=${encodeURIComponent(pageId)}`,
-  { headers },
+  { headers }
 );
 if (!response.ok) throw new Error(`Figma page request failed: ${response.status}`);
 const payload = await response.json();
@@ -98,9 +117,7 @@ if (!page) throw new Error(`Figma page ${pageId} was not found`);
 const sections = (page.children ?? [])
   .map((section) => {
     const match = section.name?.match(/^Hadith (\d+) · (.+)$/);
-    return match
-      ? { section, number: Number(match[1]), title: match[2].trim() }
-      : null;
+    return match ? { section, number: Number(match[1]), title: match[2].trim() } : null;
   })
   .filter(Boolean)
   .sort((a, b) => a.number - b.number);
@@ -127,7 +144,7 @@ const lessons = sections.map(({ section, number, title }) => {
           text: stripNavigation(text),
         },
       ];
-    }),
+    })
   );
   for (const stageName of stageNames) {
     if (!stages[stageName]) {
@@ -136,7 +153,7 @@ const lessons = sections.map(({ section, number, title }) => {
   }
   const source = extractCanonicalSource(stages["read-listen"].text, number);
   stages["read-listen"].text = stages["read-listen"].text.filter(
-    (value) => value !== source.arabic && value !== source.translation && value !== source.citation,
+    (value) => value !== source.arabic && value !== source.translation && value !== source.citation
   );
 
   return {
@@ -150,15 +167,13 @@ const lessons = sections.map(({ section, number, title }) => {
 });
 
 const output = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   source: { fileKey, pageId, name: page.name },
+  visualVocabulary: collectVisualVocabulary(page),
   lessons,
 };
-const destination = path.join(
-  root,
-  "src/app/learning/hadith/figmaHadithContent.json",
-);
+const destination = path.join(root, "src/app/learning/hadith/figmaHadithContent.json");
 await fs.writeFile(destination, `${JSON.stringify(output, null, 2)}\n`, "utf8");
 console.log(
-  `Extracted ${lessons.length} Hadith lessons and ${lessons.length * 7} stages to ${destination}`,
+  `Extracted ${lessons.length} Hadith lessons and ${lessons.length * 7} stages to ${destination}`
 );

@@ -24,6 +24,7 @@ import {
 import type { FigmaHadithLesson } from "./figmaHadithCatalog";
 import { getHadithAudioAssets } from "./hadithAudioManifest";
 import { HadithPractice } from "./HadithPractice";
+import { HadithVocabularyStudy } from "./HadithVocabularyStudy";
 import { getHadithExerciseSet } from "./hadithExerciseCatalog";
 import type { HadithConfidence } from "./hadithProgress";
 
@@ -654,7 +655,9 @@ function CatalogHadithLessonScreen({
           </nav>
         </header>
 
-        {stage === "practice" && exerciseSet ? (
+        {stage === "vocabulary" ? (
+          <HadithVocabularyStudy lines={stageContent} />
+        ) : stage === "practice" && exerciseSet ? (
           <HadithPractice exerciseSet={exerciseSet} onScoreChange={setPracticeScore} />
         ) : stage === "read-listen" ? (
           <section

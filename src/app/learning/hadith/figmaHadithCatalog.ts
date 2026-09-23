@@ -27,12 +27,15 @@ const lessonSchema = z.object({
 });
 
 const catalogSchema = z.object({
-  schemaVersion: z.literal(1),
+  schemaVersion: z.literal(2),
   source: z.object({
     fileKey: z.string(),
     pageId: z.string(),
     name: z.string(),
   }),
+  visualVocabulary: z.array(
+    z.object({ label: z.string().min(1), imageRef: z.string().min(1), nodeId: z.string() })
+  ),
   lessons: z.array(lessonSchema).length(42),
 });
 
@@ -41,6 +44,21 @@ const parsed = catalogSchema.parse(content);
 export type FigmaHadithLesson = z.infer<typeof lessonSchema>;
 export const FIGMA_HADITH_SOURCE = parsed.source;
 export const FIGMA_HADITH_LESSONS: readonly FigmaHadithLesson[] = parsed.lessons;
+export const FIGMA_HADITH_VISUAL_VOCABULARY = parsed.visualVocabulary;
+
+const normalizeVisualLabel = (value: string) =>
+  value
+    .toLocaleLowerCase("en-US")
+    .replace(/[^a-z0-9 ]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+export function getHadithVisualVocabulary(terms: readonly string[]) {
+  const wanted = new Set(terms.map(normalizeVisualLabel));
+  return FIGMA_HADITH_VISUAL_VOCABULARY.filter((item) =>
+    wanted.has(normalizeVisualLabel(item.label))
+  );
+}
 
 export function getFigmaHadithLesson(id: string): FigmaHadithLesson | undefined {
   return FIGMA_HADITH_LESSONS.find((lesson) => lesson.id === id);

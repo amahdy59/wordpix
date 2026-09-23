@@ -1,10 +1,1022 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "source": {
     "fileKey": "gRlyhrMavAHXUAT5brWFWu",
     "pageId": "1092:2798",
     "name": "40 Hadith Curriculum · B1"
   },
+  "visualVocabulary": [
+    {
+      "label": "action",
+      "imageRef": "3e41d0e66922b55d107e4d9bbddc9c5991596ba2",
+      "nodeId": "1141:4909"
+    },
+    {
+      "label": "intention",
+      "imageRef": "e5dd73a4b49f81cb381cde2a1854c0521af9e13c",
+      "nodeId": "1141:4912"
+    },
+    {
+      "label": "motive",
+      "imageRef": "90fbd475198701588e3edb5d6b075f15f08aa388",
+      "nodeId": "1141:4915"
+    },
+    {
+      "label": "migrate",
+      "imageRef": "d0bfaad8b7d3efe08bfd35df1834198e542b99d8",
+      "nodeId": "1141:4918"
+    },
+    {
+      "label": "worldly gain",
+      "imageRef": "a7bf320b69acb43f711f0eed5cc134c66a6d35bb",
+      "nodeId": "1141:4921"
+    },
+    {
+      "label": "believe in",
+      "imageRef": "a9ca2e6dd2ae9c868351eddd6ed6bf7dd48f2b14",
+      "nodeId": "1141:4925"
+    },
+    {
+      "label": "perform",
+      "imageRef": "dec513a71579ff5cfe0bc24100c248da790f4ccb",
+      "nodeId": "1141:4928"
+    },
+    {
+      "label": "sign",
+      "imageRef": "d925b9667bd0c1724c0dc0422d66e1e40b2dcfe1",
+      "nodeId": "1141:4931"
+    },
+    {
+      "label": "questioner",
+      "imageRef": "f6d4f8eedf42ceec564650a932ea3dc9346f8062",
+      "nodeId": "1141:4934"
+    },
+    {
+      "label": "inform me about",
+      "imageRef": "4cd08b28bb711fd3b17ed92d737b947e050b055c",
+      "nodeId": "1141:4985"
+    },
+    {
+      "label": "testimony of faith",
+      "imageRef": "e77580438f4961bfca4475bd8f40505b01fce95e",
+      "nodeId": "1141:4938"
+    },
+    {
+      "label": "establish prayer",
+      "imageRef": "7f20af1b3cfebcbb48a6ddf96b4c18d02b45db2c",
+      "nodeId": "1141:4941"
+    },
+    {
+      "label": "pay zakat",
+      "imageRef": "41ac8cca78cbd7b0732cd044e31051f208db9ee6",
+      "nodeId": "1141:4944"
+    },
+    {
+      "label": "perform Hajj",
+      "imageRef": "fe0f3c6a173b830df3821f8cdbe11a22c5ca685e",
+      "nodeId": "1141:4947"
+    },
+    {
+      "label": "fast Ramadan",
+      "imageRef": "119a3171185c3a684012fa62e920aafcc3ed28ec",
+      "nodeId": "1141:4950"
+    },
+    {
+      "label": "brought together",
+      "imageRef": "824480a59f1a45c0745eb29d56bcf6a8b549ae8f",
+      "nodeId": "1141:4954"
+    },
+    {
+      "label": "for a like period",
+      "imageRef": "e84b600a5989dbeb352e42c98a8468bc4dfbcbd1",
+      "nodeId": "1141:4957"
+    },
+    {
+      "label": "write down",
+      "imageRef": "5c6577e4f19df52037f6d408eab95be0e345c068",
+      "nodeId": "1141:4960"
+    },
+    {
+      "label": "sustenance",
+      "imageRef": "c2c4de75df60dfdfe2481098feade3f81cd17815",
+      "nodeId": "1141:4963"
+    },
+    {
+      "label": "life span",
+      "imageRef": "8125f3cdeb0c34aa50c3b0633a9c59ab114661f2",
+      "nodeId": "1141:4966"
+    },
+    {
+      "label": "on the authority of",
+      "imageRef": "e94da53c30aaebb37c8e076a5df510bbcab55752",
+      "nodeId": "1141:4970"
+    },
+    {
+      "label": "innovates something",
+      "imageRef": "6f323ae39c0a791c9fa884bee1b32e7531885db7",
+      "nodeId": "1141:4973"
+    },
+    {
+      "label": "this matter of ours",
+      "imageRef": "0208217dd8ac0b21a57da1a121c3b71af1c4f719",
+      "nodeId": "1141:4976"
+    },
+    {
+      "label": "is not of it",
+      "imageRef": "32bdef467e8f4bea691254f99e1c37cb57769984",
+      "nodeId": "1141:4979"
+    },
+    {
+      "label": "will be rejected",
+      "imageRef": "cff9d53ecd6b670aac770fdfacafefd3934c9f08",
+      "nodeId": "1141:4982"
+    },
+    {
+      "label": "lawful",
+      "imageRef": "0aaae2ddfebf4c6716a5f118c74142922a728658",
+      "nodeId": "1141:4989"
+    },
+    {
+      "label": "unlawful",
+      "imageRef": "7cebf9e084adea38fb86d353d869966c2aad2aac",
+      "nodeId": "1141:4992"
+    },
+    {
+      "label": "doubtful matters",
+      "imageRef": "ba41c96554a98a240d908524ca7e7c9ee99781a5",
+      "nodeId": "1141:4995"
+    },
+    {
+      "label": "avoid",
+      "imageRef": "bcecbdc42e501056d196c7fdb53ec9dafc8083f0",
+      "nodeId": "1141:4998"
+    },
+    {
+      "label": "fall into",
+      "imageRef": "dd9e8d89943fb3446b968c65f1f990a927fc9f5a",
+      "nodeId": "1141:5001"
+    },
+    {
+      "label": "give sincere advice · balanced male context",
+      "imageRef": "267a30c0ed1d2b19c71f6e08643e73c45fabf770",
+      "nodeId": "1141:5005"
+    },
+    {
+      "label": "ask for advice",
+      "imageRef": "93d90a66e97f01fe9fe9112b84a90e0940b5ce99",
+      "nodeId": "1141:5008"
+    },
+    {
+      "label": "in private · balanced male context",
+      "imageRef": "8851f542f5c3ba874cee7878c78998fc5005ca03",
+      "nodeId": "1141:5011"
+    },
+    {
+      "label": "speak gently",
+      "imageRef": "539b6c042ed7a207784d3730f912bd3541473684",
+      "nodeId": "1141:5014"
+    },
+    {
+      "label": "accept advice · balanced male context",
+      "imageRef": "d4beb9a076ae558452c9284e5d8450834ac9c6d1",
+      "nodeId": "1141:5017"
+    },
+    {
+      "label": "be ordered to",
+      "imageRef": "61c237b520dcfcf992693980667643f7755fa60e",
+      "nodeId": "1141:5021"
+    },
+    {
+      "label": "fight against",
+      "imageRef": "4a3bde2f246b180a2ed6b28a83f9b971837b67ae",
+      "nodeId": "1141:5024"
+    },
+    {
+      "label": "testify that",
+      "imageRef": "649666ed54ef8b60c1af2ad29c57e384e84091d8",
+      "nodeId": "1141:5027"
+    },
+    {
+      "label": "gain protection",
+      "imageRef": "4639269259dc243058550035f854a5ca925df27b",
+      "nodeId": "1141:5030"
+    },
+    {
+      "label": "reckoning",
+      "imageRef": "51b088402687dedcaf278076c58e79ca53a3442f",
+      "nodeId": "1141:5033"
+    },
+    {
+      "label": "forbidden",
+      "imageRef": "234cbb270889a8f12c71343102d0a62a77828d5f",
+      "nodeId": "1141:5037"
+    },
+    {
+      "label": "avoid",
+      "imageRef": "e1b32d2cbfbe7f72d5b33eed20b1e06610d6b97b",
+      "nodeId": "1141:5040"
+    },
+    {
+      "label": "ordered to",
+      "imageRef": "515fc2484d3ec9c2c1a662f1c742dca3fd4760b2",
+      "nodeId": "1141:5043"
+    },
+    {
+      "label": "as much as you can",
+      "imageRef": "173fb3e047dc9793adf138468fb5f20d0f1c20bb",
+      "nodeId": "1141:5046"
+    },
+    {
+      "label": "excessive questioning",
+      "imageRef": "551c35f444c21a7f74af184f571ab10e0bbeeb23",
+      "nodeId": "1141:5049"
+    },
+    {
+      "label": "lawful",
+      "imageRef": "26d8e119ce2c557456dead497c56634a10c840e3",
+      "nodeId": "1141:5053"
+    },
+    {
+      "label": "provision",
+      "imageRef": "012fd0a795d8d42493a9af7edd9440c364d67ab8",
+      "nodeId": "1141:5056"
+    },
+    {
+      "label": "righteous deed",
+      "imageRef": "a234888d1392a0475464d274dd1ce5a409d373dc",
+      "nodeId": "1141:5059"
+    },
+    {
+      "label": "journeyed far",
+      "imageRef": "f2eb453f84c5b852a1ed4ff54e83d16f4a11216e",
+      "nodeId": "1141:5062"
+    },
+    {
+      "label": "supplication · realistic prayer scene",
+      "imageRef": "d79f463d73525d796a3ec7d47ea42f3fc17e8121",
+      "nodeId": "1141:5065"
+    },
+    {
+      "label": "accepts",
+      "imageRef": "d735a62fbd19494fd7b50906863ab548c1627eca",
+      "nodeId": "1161:5834"
+    },
+    {
+      "label": "believer",
+      "imageRef": "54df8d752ccf577e98f3dfe685239ab7f05bc190",
+      "nodeId": "1161:5837"
+    },
+    {
+      "label": "Messenger",
+      "imageRef": "127bd3078bbb96068ef97c4a96609777c057d47c",
+      "nodeId": "1161:5840"
+    },
+    {
+      "label": "disheveled and dusty",
+      "imageRef": "591c97f1bf713463864dcc8af1120b61bec65612",
+      "nodeId": "1161:5843"
+    },
+    {
+      "label": "nourished",
+      "imageRef": "757422263b46e12fe6e92568453df9f45ac6fc80",
+      "nodeId": "1161:5846"
+    },
+    {
+      "label": "doubt",
+      "imageRef": "11d8b14754b373b0dc041eb557d141b1448132ed",
+      "nodeId": "1141:5069"
+    },
+    {
+      "label": "clear choice",
+      "imageRef": "9643deaab519fb6425d4e368660ab818b43fb6dc",
+      "nodeId": "1141:5072"
+    },
+    {
+      "label": "feel sure",
+      "imageRef": "d747e597abecf6b13d623b27a6faf95022df2d09",
+      "nodeId": "1141:5075"
+    },
+    {
+      "label": "check first",
+      "imageRef": "abcb63880d2e9d40af787b2aa611b89f92f21b9b",
+      "nodeId": "1141:5078"
+    },
+    {
+      "label": "safer option",
+      "imageRef": "7beb4fe92c4d42f8629cce4d31f50c747cc2cb6a",
+      "nodeId": "1141:5081"
+    },
+    {
+      "label": "concern someone",
+      "imageRef": "fbdbbc89bf83e2115e55b0da3a68053d21bc08d6",
+      "nodeId": "1141:5085"
+    },
+    {
+      "label": "private matter",
+      "imageRef": "b3210639cfd101b6a20a17e0e35efe516621e3d5",
+      "nodeId": "1141:5088"
+    },
+    {
+      "label": "leave alone",
+      "imageRef": "9c274b9b13a6f1551c440b4d09a57f551d7a8e6e",
+      "nodeId": "1141:5091"
+    },
+    {
+      "label": "pay attention",
+      "imageRef": "45bdbff7015147386f485330bebb6c10633b1f25",
+      "nodeId": "1141:5094"
+    },
+    {
+      "label": "responsibility",
+      "imageRef": "e91562d5702281f5945f1512fa37c6163af03246",
+      "nodeId": "1141:5097"
+    },
+    {
+      "label": "hope you succeed · no-text human context",
+      "imageRef": "bb12a51f78616f3f2d208578e3d56a8ecd917e4c",
+      "nodeId": "1141:5101"
+    },
+    {
+      "label": "happy for you",
+      "imageRef": "2202d0de08e754fb4698121ec5c9c639529df34f",
+      "nodeId": "1141:5104"
+    },
+    {
+      "label": "share with you · no-text human context",
+      "imageRef": "253ae9fd0e75dde7d0ad6ba27b5119f9fdd40875",
+      "nodeId": "1141:5107"
+    },
+    {
+      "label": "both do well · balanced relevant context",
+      "imageRef": "dc3f7f179f243ac0a2b22c3efeb27dce5d4b2adf",
+      "nodeId": "1141:5110"
+    },
+    {
+      "label": "support you · no-text human context",
+      "imageRef": "3cbc4ae8b9bd616f1123759c50aaacc2b071ad0c",
+      "nodeId": "1141:5113"
+    },
+    {
+      "label": "life must be protected",
+      "imageRef": "13354ba176ada17db965d7202f990db32ed43a01",
+      "nodeId": "1141:5117"
+    },
+    {
+      "label": "no one may act alone",
+      "imageRef": "ae230b8fb1a7233a7dac52f58a1e3965153dbca2",
+      "nodeId": "1141:5120"
+    },
+    {
+      "label": "evidence",
+      "imageRef": "ac0b8ea9f7240abcc07ef53ab80c5142e2361029",
+      "nodeId": "1141:5123"
+    },
+    {
+      "label": "judge",
+      "imageRef": "9cad3f6815def6eb5d26c03ee62e6fd28fae6632",
+      "nodeId": "1141:5126"
+    },
+    {
+      "label": "rights",
+      "imageRef": "aedb71f726787a23746a798495074d9bbe6b5108",
+      "nodeId": "1141:5129"
+    },
+    {
+      "label": "speak well",
+      "imageRef": "e1147ea7b1c338c65b2d64930512f7f9a77f58b9",
+      "nodeId": "1141:5133"
+    },
+    {
+      "label": "keep silent",
+      "imageRef": "7d9c9f6762b9e05b446d41f481b64638d728f318",
+      "nodeId": "1141:5136"
+    },
+    {
+      "label": "neighbour",
+      "imageRef": "7e081e3f1ed9a26ab12fdcf706c07b285a0e0db0",
+      "nodeId": "1141:5139"
+    },
+    {
+      "label": "welcome a guest",
+      "imageRef": "70e81ade686b9d30fc911217331fc4bcd3eed902",
+      "nodeId": "1141:5142"
+    },
+    {
+      "label": "be generous",
+      "imageRef": "9b3f44b7b942c08b4ea19566f78dceee8fefb352",
+      "nodeId": "1141:5145"
+    },
+    {
+      "label": "feel angry",
+      "imageRef": "d33a82aac211553fbcaefcda1266f856e0029013",
+      "nodeId": "1141:5149"
+    },
+    {
+      "label": "need a pause",
+      "imageRef": "187273d67d6f166cc0de5a4698db926cefb512c0",
+      "nodeId": "1141:5152"
+    },
+    {
+      "label": "talk later",
+      "imageRef": "636d6093ff33595759b72402c3ff1a15e122b7ee",
+      "nodeId": "1141:5155"
+    },
+    {
+      "label": "calm down",
+      "imageRef": "7b588a388eb67696b4de30b789fcc5994ec94a8d",
+      "nodeId": "1141:5158"
+    },
+    {
+      "label": "not hurt anyone",
+      "imageRef": "fc99c8c08c6bffb1e5cd966640d45409859f34dd",
+      "nodeId": "1141:5161"
+    },
+    {
+      "label": "handle with care · balanced relevant context",
+      "imageRef": "4c473bbb3cab4d69890f28f52969088abfc66375",
+      "nodeId": "1141:5165"
+    },
+    {
+      "label": "reduce suffering · balanced relevant context",
+      "imageRef": "b3d4bae103514818aa87c291410d84a0a036b2fe",
+      "nodeId": "1141:5168"
+    },
+    {
+      "label": "right tool · balanced relevant context",
+      "imageRef": "64e08e7617522b7219ccac66415d1dc528343000",
+      "nodeId": "1141:5171"
+    },
+    {
+      "label": "prepare before · balanced relevant context",
+      "imageRef": "f635e4066e747a7fe21a99fe181b278d76563d20",
+      "nodeId": "1141:5174"
+    },
+    {
+      "label": "treat kindly · balanced relevant context",
+      "imageRef": "1b7ee67c65826030e108adf6f50bc68c4d753260",
+      "nodeId": "1141:5177"
+    },
+    {
+      "label": "made a mistake",
+      "imageRef": "fa2b3f7e721299b8ecad36fb73cbea66117a7a24",
+      "nodeId": "1141:5181"
+    },
+    {
+      "label": "sorry for",
+      "imageRef": "01dd0d0195fd09dcbf27ab868ef9971dbe3fdd34",
+      "nodeId": "1141:5184"
+    },
+    {
+      "label": "put it right",
+      "imageRef": "6c8b3cdf6ed7f044357ae94a3e923d8bafeccf66",
+      "nodeId": "1141:5187"
+    },
+    {
+      "label": "what good can I do",
+      "imageRef": "77648b4d5c826f56e2a05beb70423d2e79bd8560",
+      "nodeId": "1141:5190"
+    },
+    {
+      "label": "treat people well · balanced relevant context",
+      "imageRef": "3c077d6c58f3afd5c7cfe0517433f7bf71db6a98",
+      "nodeId": "1141:5193"
+    },
+    {
+      "label": "trust Allah",
+      "imageRef": "d3da8d9bc50f24ee3b8c2034735cdca9f96e1043",
+      "nodeId": "1141:5197"
+    },
+    {
+      "label": "ask for help",
+      "imageRef": "6013811c0e0e49d45b5bac965e1f38a09cedc91f",
+      "nodeId": "1141:5200"
+    },
+    {
+      "label": "do what I can",
+      "imageRef": "d582c87183022d91d814a093ff06f6f2080989f9",
+      "nodeId": "1141:5203"
+    },
+    {
+      "label": "beyond my control",
+      "imageRef": "55d8fae4cdbb84d1ef3c3fc82c99eedfc99cd6fd",
+      "nodeId": "1141:5206"
+    },
+    {
+      "label": "take the next step",
+      "imageRef": "c02a67894c08cb7e42cf105fab9eee8e43c222c8",
+      "nodeId": "1141:5209"
+    },
+    {
+      "label": "right thing",
+      "imageRef": "16da46514b22401ac68ae565f42eb6328a6a9e7b",
+      "nodeId": "1141:5213"
+    },
+    {
+      "label": "openly",
+      "imageRef": "70c726a44ddbda0083e2df426813ad978fecde65",
+      "nodeId": "1141:5216"
+    },
+    {
+      "label": "privacy",
+      "imageRef": "fce2b99220df9aa541ecd71178d3f6e759c491e4",
+      "nodeId": "1141:5219"
+    },
+    {
+      "label": "may harm someone",
+      "imageRef": "c678b6902eba7201515613b41b3071616b04c482",
+      "nodeId": "1141:5222"
+    },
+    {
+      "label": "better choice",
+      "imageRef": "b152dbda964d8aefd72c15a6032cb1051296e9d2",
+      "nodeId": "1141:5225"
+    },
+    {
+      "label": "believe in",
+      "imageRef": "69caa4e2dfb219a90513391e0f8d3342b9a1f9c6",
+      "nodeId": "1141:5229"
+    },
+    {
+      "label": "remain steadfast",
+      "imageRef": "e2a6604cc610affc355d7ab1fdf92728b63d9f20",
+      "nodeId": "1141:5232"
+    },
+    {
+      "label": "keep going",
+      "imageRef": "362459f7065cc2991935a831c39b0f077f9dbda9",
+      "nodeId": "1141:5235"
+    },
+    {
+      "label": "consistent action",
+      "imageRef": "5ea4a5957d3720f55ca9bf3af9ef2b3fdd6dc9f1",
+      "nodeId": "1141:5238"
+    },
+    {
+      "label": "ask for guidance",
+      "imageRef": "9e22f8e8192fe8e31a42669a5a08e8373846c4c1",
+      "nodeId": "1141:5241"
+    },
+    {
+      "label": "obligatory prayer",
+      "imageRef": "23da6fff4cd40b5fa40f52f779ddd944ec17193f",
+      "nodeId": "1141:5245"
+    },
+    {
+      "label": "fast in Ramadan",
+      "imageRef": "afe85c681265124231a949c1164b760da4a6f503",
+      "nodeId": "1141:5248"
+    },
+    {
+      "label": "lawful",
+      "imageRef": "ded6854187c4248b909b9fd199f5d53289b9e92f",
+      "nodeId": "1141:5251"
+    },
+    {
+      "label": "forbidden",
+      "imageRef": "bff4c3adc38ef9d735f198cd2115f5658691a9ee",
+      "nodeId": "1141:5254"
+    },
+    {
+      "label": "voluntary deed",
+      "imageRef": "ff1207de5633bfa709c3a29d45516be4e1736eb8",
+      "nodeId": "1141:5257"
+    },
+    {
+      "label": "purity",
+      "imageRef": "dca6ff5109f01c425c16854a420293e40cc6121f",
+      "nodeId": "1141:5261"
+    },
+    {
+      "label": "praise",
+      "imageRef": "c36f4ba85c4005b02ef18a354a1c7fde5ddb5152",
+      "nodeId": "1141:5264"
+    },
+    {
+      "label": "charity · balanced relevant context",
+      "imageRef": "7d2f0575c6e05d82f1772e74ad39f0b1e0f91ed7",
+      "nodeId": "1141:5267"
+    },
+    {
+      "label": "patience",
+      "imageRef": "f0a6544be3091c5d64b8791373c72c3b0ca97571",
+      "nodeId": "1141:5270"
+    },
+    {
+      "label": "proof · balanced relevant context",
+      "imageRef": "b9acfb7cdc8c97a896f7b9e530645b87eb1aa4d3",
+      "nodeId": "1141:5273"
+    },
+    {
+      "label": "oppress",
+      "imageRef": "903dff19c8435c1c50aa20618caa38088e204a27",
+      "nodeId": "1147:8454"
+    },
+    {
+      "label": "seek guidance",
+      "imageRef": "ef198f26d5b30ef4516921a09116084b4e54e59e",
+      "nodeId": "1147:8457"
+    },
+    {
+      "label": "feed",
+      "imageRef": "448768016c2d25dc4f676681fe18e20bc0615814",
+      "nodeId": "1147:8460"
+    },
+    {
+      "label": "forgive",
+      "imageRef": "f51d0ccb77df67228d7cbdae1320ee5fc89535bf",
+      "nodeId": "1147:8463"
+    },
+    {
+      "label": "take responsibility",
+      "imageRef": "2b6ea3b029fe029b0e36447f66d12b43a1c621b0",
+      "nodeId": "1147:8466"
+    },
+    {
+      "label": "give charity · balanced relevant context",
+      "imageRef": "c51d4be8a3312c84bfafef4cefd0e606ae226749",
+      "nodeId": "1147:8470"
+    },
+    {
+      "label": "remember Allah",
+      "imageRef": "498a994ddc28fd8c9fa9760b97fca4eed8072794",
+      "nodeId": "1147:8473"
+    },
+    {
+      "label": "good action",
+      "imageRef": "8222659b18c1493f3ae67f343844151cc90902df",
+      "nodeId": "1147:8476"
+    },
+    {
+      "label": "lawful relationship",
+      "imageRef": "6b3835bd06b14b7c00c3d16b65faa0e3f01e425b",
+      "nodeId": "1147:8479"
+    },
+    {
+      "label": "receive a reward · balanced relevant context",
+      "imageRef": "04fb94193c35446432764a17c3bd011d611d686a",
+      "nodeId": "1147:8482"
+    },
+    {
+      "label": "joint and daily duty",
+      "imageRef": "7d74484d3717aa486bfb50c3b1b25a06fe10c989",
+      "nodeId": "1164:8356"
+    },
+    {
+      "label": "judge fairly",
+      "imageRef": "62bbaad3535bd72cd701076ff4d040689f3d3994",
+      "nodeId": "1164:8359"
+    },
+    {
+      "label": "help with belongings",
+      "imageRef": "e71ff4541f3eb0f37a0ca0ff1aadd989c9de5888",
+      "nodeId": "1164:8362"
+    },
+    {
+      "label": "kind word",
+      "imageRef": "fc283032d84e6dcb44160cb1e01664b9edc2e033",
+      "nodeId": "1164:8365"
+    },
+    {
+      "label": "steps to prayer",
+      "imageRef": "73a1c277468a4c56e33d91ca5834a09943f6860c",
+      "nodeId": "1164:8368"
+    },
+    {
+      "label": "remove a danger",
+      "imageRef": "712c79e1d5198b55525f62e427924cef33c50c03",
+      "nodeId": "1164:8371"
+    },
+    {
+      "label": "good character",
+      "imageRef": "204dbeea72a3bbba9bc7336a6eea5d83fb2685a1",
+      "nodeId": "1169:10986"
+    },
+    {
+      "label": "feel at ease",
+      "imageRef": "51410905b99e714b74bcf0319533153b3a387bcc",
+      "nodeId": "1169:10989"
+    },
+    {
+      "label": "feel uneasy",
+      "imageRef": "5eb24447abbc4b5f7729789a115da25ba75f1db8",
+      "nodeId": "1169:10992"
+    },
+    {
+      "label": "conscience",
+      "imageRef": "6a77a419f655c6e57c98a99965a61ad54357ad4c",
+      "nodeId": "1169:10995"
+    },
+    {
+      "label": "wrongdoing",
+      "imageRef": "9c8ba8095ff03f6d80c5b8215c30601766a6ef11",
+      "nodeId": "1169:10998"
+    },
+    {
+      "label": "seek qualified advice",
+      "imageRef": "84feb6c1b751329f94744ca35ad80de5eae72ecc",
+      "nodeId": "1169:11001"
+    },
+    {
+      "label": "sermon",
+      "imageRef": "0907c096aacd791a4d821b7f02b54f3cd8421fb9",
+      "nodeId": "1169:11006"
+    },
+    {
+      "label": "counsel",
+      "imageRef": "333d96c2feaba60d673c175d2f17b64482bac82a",
+      "nodeId": "1169:11009"
+    },
+    {
+      "label": "obey a leader",
+      "imageRef": "ed291aed44d33dc8337b56dde7105eb9ab1819b0",
+      "nodeId": "1169:11012"
+    },
+    {
+      "label": "disagreement",
+      "imageRef": "c6d9d86e43711fedfbf15f4280e0f6ee7e837eb3",
+      "nodeId": "1169:11015"
+    },
+    {
+      "label": "hold firmly",
+      "imageRef": "3939d248fe70b1a0240f9465205ac74893ed71e3",
+      "nodeId": "1169:11018"
+    },
+    {
+      "label": "newly invented matter",
+      "imageRef": "00cec3d24773dfc02a885ca56f5b6d1d2fcba195",
+      "nodeId": "1169:11021"
+    },
+    {
+      "label": "great matter · balanced relevant context",
+      "imageRef": "4cd26905ecd2fb62c351e64718d5e957565c8de3",
+      "nodeId": "1169:11026"
+    },
+    {
+      "label": "doors of goodness",
+      "imageRef": "544af56bfe90a067ec128b65a284a34148019cb4",
+      "nodeId": "1169:11029"
+    },
+    {
+      "label": "fasting is a shield",
+      "imageRef": "0ca03dbf3795f6d4356494358b6ac8cd7998af93",
+      "nodeId": "1169:11032"
+    },
+    {
+      "label": "charity",
+      "imageRef": "a1b004f88790a08ba93edde8058386af51e9a306",
+      "nodeId": "1169:11035"
+    },
+    {
+      "label": "night prayer · balanced relevant context",
+      "imageRef": "6cda9a035cc2566b9c0d66f74b1a597c639811d0",
+      "nodeId": "1169:11038"
+    },
+    {
+      "label": "pillar · balanced relevant context",
+      "imageRef": "b5ca85cdc11cf6a9b5778970fb8baba80f1038b0",
+      "nodeId": "1169:11041"
+    },
+    {
+      "label": "restrain the tongue",
+      "imageRef": "7bbe0bcb4d055873d51cdfae34b584133446d150",
+      "nodeId": "1169:11044"
+    },
+    {
+      "label": "religious obligation",
+      "imageRef": "8f0d9edcba4d3278d8ed9c04451756ea73b2ea00",
+      "nodeId": "1178:9993"
+    },
+    {
+      "label": "neglect",
+      "imageRef": "d3f5c250533a5dac73f4388607e7d79eeac668be",
+      "nodeId": "1178:9996"
+    },
+    {
+      "label": "set a limit",
+      "imageRef": "787eb2d51e9a94a2f5d087993112c7bebc290624",
+      "nodeId": "1178:9999"
+    },
+    {
+      "label": "overstep",
+      "imageRef": "b9053463046280025ce50954892c81221b929ca4",
+      "nodeId": "1178:10002"
+    },
+    {
+      "label": "forbidden",
+      "imageRef": "33ef80145aa064ece8006b3282cd09d24f6fa61d",
+      "nodeId": "1178:10005"
+    },
+    {
+      "label": "remain silent",
+      "imageRef": "c85547fd7d90c264a00ae1fb9153fc0d55dfd28d",
+      "nodeId": "1178:10008"
+    },
+    {
+      "label": "renounce worldly things",
+      "imageRef": "965230a0b9e15647f4f26df4ba06c8b0231ba3fb",
+      "nodeId": "1186:10356"
+    },
+    {
+      "label": "possessions",
+      "imageRef": "a25a358fefed12fad8b961a61b0dd5cdf5ca931a",
+      "nodeId": "1186:10359"
+    },
+    {
+      "label": "attachment",
+      "imageRef": "bb56dc5de643fd203b9142cbdfff62bd92cad069",
+      "nodeId": "1186:10362"
+    },
+    {
+      "label": "love from Allah",
+      "imageRef": "7b728416f6c4c8f3ac956d71ed10557afe825bee",
+      "nodeId": "1186:10365"
+    },
+    {
+      "label": "love from people",
+      "imageRef": "7b7218effd1316b1d8aa488fee0360fb76d3280b",
+      "nodeId": "1186:10368"
+    },
+    {
+      "label": "cause harm",
+      "imageRef": "9b3431c39de66ca63d4147ed470526e34d18ae2a",
+      "nodeId": "1189:8751"
+    },
+    {
+      "label": "return harm",
+      "imageRef": "3f93c70559d1f61f71f94de6fd204678da5aa8a1",
+      "nodeId": "1189:8754"
+    },
+    {
+      "label": "avoid damage",
+      "imageRef": "b06d778a8a018bd196a6a5edd0d8b3f1c9f93e84",
+      "nodeId": "1189:8757"
+    },
+    {
+      "label": "protect rights",
+      "imageRef": "bf5ddc712b9ad796764a6be4a398bcf688066c50",
+      "nodeId": "1189:8760"
+    },
+    {
+      "label": "seek fair resolution",
+      "imageRef": "c2f1c790e6165e606d8112e1f762dfbd3636eef1",
+      "nodeId": "1189:8763"
+    },
+    {
+      "label": "neither nor",
+      "imageRef": "794e47fa075c96d8c28592389a1ddfa554fe5668",
+      "nodeId": "1189:8766"
+    },
+    {
+      "label": "make a claim",
+      "imageRef": "58c8613f5e82a2f21558bacde1d57530642e20e6",
+      "nodeId": "1190:9147"
+    },
+    {
+      "label": "provide proof",
+      "imageRef": "1d6bc905ed6a07f3413d5509344c8551297821b2",
+      "nodeId": "1190:9150"
+    },
+    {
+      "label": "deny a claim",
+      "imageRef": "acb6665bdac0e8be8e285fe32677cf0ed53a65a5",
+      "nodeId": "1190:9153"
+    },
+    {
+      "label": "take an oath",
+      "imageRef": "845bcd19146a73e8b9747c196ae369706f429f27",
+      "nodeId": "1190:9156"
+    },
+    {
+      "label": "property",
+      "imageRef": "d7b6086219991568dd35edf613cbe9fb18fac754",
+      "nodeId": "1190:9159"
+    },
+    {
+      "label": "see wrongdoing · boys-only school context",
+      "imageRef": "79152c19ff55ad44609dd32f047a65ecb7fa7bb1",
+      "nodeId": "1190:11471"
+    },
+    {
+      "label": "lawful action · authorized school safety",
+      "imageRef": "0ce4199ceaf4acce4387169f76a3231424c24e2f",
+      "nodeId": "1190:11474"
+    },
+    {
+      "label": "speak against · boys-only school context",
+      "imageRef": "4f8d355c5d71532467ee15dae58ff5a31d70abeb",
+      "nodeId": "1190:11477"
+    },
+    {
+      "label": "be able to · boys-only school context",
+      "imageRef": "4a8bbab0e3208fb30e0463ece764767f7291463d",
+      "nodeId": "1190:11480"
+    },
+    {
+      "label": "reject in the heart · boys-only school context",
+      "imageRef": "4d6ffec48818ed466684098c327cdc1a4a37cf8e",
+      "nodeId": "1190:11483"
+    },
+    {
+      "label": "envy",
+      "imageRef": "f82574d9c43d0d5ad1208a0d5ed78ed9f0208d48",
+      "nodeId": "1191:10805"
+    },
+    {
+      "label": "inflate prices",
+      "imageRef": "0204046936fc5729bf215c07a3c7ae8ff840858c",
+      "nodeId": "1191:10808"
+    },
+    {
+      "label": "hate one another",
+      "imageRef": "82a1bdfa8ffa5328249ec75d977065f7c6b301f8",
+      "nodeId": "1191:10811"
+    },
+    {
+      "label": "turn away",
+      "imageRef": "b506e8f3a2616a85dbf847ca2d4cf4c976214dfd",
+      "nodeId": "1191:10814"
+    },
+    {
+      "label": "undercut in trade",
+      "imageRef": "21d45b188450184518468c8646b52276770394d1",
+      "nodeId": "1191:10817"
+    },
+    {
+      "label": "hold in contempt",
+      "imageRef": "cd494b17f2224c8a9eff8d3afc644edc470495f4",
+      "nodeId": "1191:10820"
+    },
+    {
+      "label": "protect honour",
+      "imageRef": "ba9480c69c334619a0448e054e43e722b83715c1",
+      "nodeId": "1191:10823"
+    },
+    {
+      "label": "relieve hardship",
+      "imageRef": "a3586a92b42defd9f82f994774e46ff2e0919b3f",
+      "nodeId": "1193:10375"
+    },
+    {
+      "label": "person in need",
+      "imageRef": "9835a8fbc3a04f34a1cfbfda2d5a65b1458e9fa3",
+      "nodeId": "1193:10378"
+    },
+    {
+      "label": "offer help",
+      "imageRef": "67ffa95d9ee3a08fbc09b0c6bee34a4b92dd4179",
+      "nodeId": "1193:10381"
+    },
+    {
+      "label": "seek knowledge",
+      "imageRef": "5ead0e21d0e81ef736d6d3fe780426e9f638ebc1",
+      "nodeId": "1193:10384"
+    },
+    {
+      "label": "study together",
+      "imageRef": "16411d970843c6d60d853805fb663077c60a9138",
+      "nodeId": "1193:10387"
+    },
+    {
+      "label": "shield a fault",
+      "imageRef": "0be9fe5f1e5cd545294e1e70ee171605e4542c66",
+      "nodeId": "1193:10390"
+    },
+    {
+      "label": "actions not lineage",
+      "imageRef": "47ea51f4c50df752739921e5c098bdf7a8aeed00",
+      "nodeId": "1193:10393"
+    },
+    {
+      "label": "intend to",
+      "imageRef": "856b5b99a033c0529607b114767aec23fff611bf",
+      "nodeId": "1194:12768"
+    },
+    {
+      "label": "carry out",
+      "imageRef": "ea6a30af24ec7370b6317f0606bc07083ed11e21",
+      "nodeId": "1194:12771"
+    },
+    {
+      "label": "good deed",
+      "imageRef": "96a9df7fc4de3edb01cf589daa02bbbbfc9752ed",
+      "nodeId": "1194:12774"
+    },
+    {
+      "label": "wrong deed",
+      "imageRef": "14c64b5d3c22270c259f3046fc20dfe56fdc5839",
+      "nodeId": "1194:12777"
+    },
+    {
+      "label": "write down",
+      "imageRef": "23c456e11f8ee2910b6f973b5a85351478b77b63",
+      "nodeId": "1194:12780"
+    },
+    {
+      "label": "multiplied reward",
+      "imageRef": "e265325e82c4c5af18993ad3d1512eb7cf32780a",
+      "nodeId": "1194:12783"
+    }
+  ],
   "lessons": [
     {
       "id": "hadith-01",

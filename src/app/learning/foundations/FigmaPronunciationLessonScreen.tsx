@@ -79,8 +79,10 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     setAnswer(value);
     if (value === target?.label) {
       if (attempts === 0) setCorrectCount((count) => count + 1);
+      void speak(t("pronunciation.feedbackCorrectAudio"));
     } else {
       setAttempts((count) => count + 1);
+      void speak(t("pronunciation.feedbackRetryAudio"));
     }
   };
   const advance = () => {
@@ -271,7 +273,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               {t("pronunciation.picturePreviewDesc")}
             </p>
             <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
-              {activity.items.slice(0, 8).map((item) => (
+              {activity.items.map((item) => (
                 <figure
                   key={`${item.label}-${item.imageRef}`}
                   className="overflow-hidden rounded-2xl border border-border bg-muted"
@@ -369,7 +371,17 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                     lang="en"
                     dir="ltr"
                   >
-                    {stage === 2 ? (
+                    {stage === 1 ? (
+                      <>
+                        <img
+                          src={imageFor(item)}
+                          alt=""
+                          className="aspect-[16/9] w-full rounded-xl object-cover"
+                          aria-hidden
+                        />
+                        <span className="sr-only">{item.label}</span>
+                      </>
+                    ) : stage === 2 ? (
                       <>
                         <img
                           src={imageFor(item)}
