@@ -6,6 +6,7 @@ import {
   getPronunciationAudioClip,
   normalizePronunciationAudioLabel,
 } from "../learning/foundations/pronunciationAudioManifest";
+import { FIGMA_PRONUNCIATION_LESSONS } from "../learning/foundations/figmaPronunciationCatalog";
 
 describe("pronunciation audio manifest", () => {
   it("contains only immutable R2 audio keys", () => {
@@ -24,16 +25,18 @@ describe("pronunciation audio manifest", () => {
   });
 
   it("keeps unresolved labels explicit and disjoint from resolved labels", () => {
-    const unresolved = JSON.parse(
-      fs.readFileSync(path.resolve("assets/pronunciation-audio-unresolved.json"), "utf8")
-    ) as { totalPronunciationLabels: number; unresolved: Array<{ label: string }> };
-    const resolved = new Set(Object.keys(PRONUNCIATION_AUDIO_MANIFEST.clips));
-    const unresolvedKeys = unresolved.unresolved.map((entry) =>
-      normalizePronunciationAudioLabel(entry.label)
+    const sourceLabels = new Set(
+      FIGMA_PRONUNCIATION_LESSONS.flatMap((lesson) =>
+        lesson.images.map((item) => normalizePronunciationAudioLabel(item.label))
+      )
     );
-    expect(unresolved.totalPronunciationLabels).toBe(578);
+    const resolved = new Set(Object.keys(PRONUNCIATION_AUDIO_MANIFEST.clips));
+    const unresolvedKeys = [...sourceLabels].filter((key) => !resolved.has(key));
+
+    expect(sourceLabels.size).toBe(578);
     expect(unresolvedKeys).toHaveLength(292);
     expect(unresolvedKeys.every((key) => !resolved.has(key))).toBe(true);
+    expect([...resolved].every((key) => sourceLabels.has(key))).toBe(true);
   });
 
   it("uses a reconciliation script that cannot mutate R2", () => {
