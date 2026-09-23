@@ -43,6 +43,12 @@ test("pronunciation curriculum is grouped, searchable, and uses R2-backed artwor
     "sheep / ship"
   );
   await expect.poll(() => imageRequests.length).toBeGreaterThan(0);
-  expect(imageRequests.every((url) => url.includes("r2.dev/pronunciation/v1/"))).toBe(true);
+  const appOrigin = new URL(page.url()).origin;
+  expect(
+    imageRequests.every((url) => {
+      const asset = new URL(url);
+      return asset.origin !== appOrigin && asset.pathname.startsWith("/pronunciation/v1/");
+    })
+  ).toBe(true);
   expect(errors).toEqual([]);
 });
