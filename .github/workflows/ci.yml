@@ -10,6 +10,10 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    env:
+      # Both the production build and the later ANALYZE rebuild must use the
+      # same public asset origin. The analysis step overwrites dist before E2E.
+      VITE_ASSET_BASE_URL: ${{ vars.VITE_ASSET_BASE_URL }}
     steps:
       - uses: actions/checkout@v4
 
@@ -41,10 +45,6 @@ jobs:
 
       - name: Build Application
         run: pnpm run build
-        env:
-          # Public asset origin used by the production build. Keeping CI on
-          # the same asset topology catches broken R2 paths before deployment.
-          VITE_ASSET_BASE_URL: ${{ vars.VITE_ASSET_BASE_URL }}
 
       - name: Bundle analysis (report-only)
         run: pnpm run analyze
