@@ -91,22 +91,6 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
     }
   };
 
-  const [elevenLabsKey, setElevenLabsKey] = useState(() => {
-    if (typeof window === "undefined") return "";
-    return localStorage.getItem("wordpix_elevenlabs_key") || "";
-  });
-
-  const handleSaveApiKey = (key: string) => {
-    setElevenLabsKey(key);
-    if (typeof window !== "undefined") {
-      if (key.trim()) {
-        localStorage.setItem("wordpix_elevenlabs_key", key.trim());
-      } else {
-        localStorage.removeItem("wordpix_elevenlabs_key");
-      }
-    }
-  };
-
   if (!isOpen) return null;
 
   // Portalled to <body> so the #root inert background marking applies to the
@@ -346,7 +330,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       type="button"
                       onClick={() => setAccessibility({ textSize: sz })}
                       aria-pressed={textSize === sz}
-                      className={`px-2.5 py-1 rounded-lg text-xs font-sans font-bold transition-all ${
+                      className={`min-h-[44px] min-w-[44px] px-2.5 py-1 rounded-lg text-xs font-sans font-bold transition-all ${
                         textSize === sz
                           ? "bg-primary text-primary-foreground shadow-xs"
                           : "text-muted-foreground hover:text-foreground"
@@ -444,7 +428,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <button
                       type="button"
                       onClick={() => speak("Light switch.")}
-                      aria-label="Test pronunciation of Light switch"
+                      aria-label={t("settings.testLightSwitchLabel")}
                       className="px-2.5 py-1 min-h-[44px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
                     >
                       <Volume2 className="size-3" aria-hidden />
@@ -453,7 +437,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <button
                       type="button"
                       onClick={() => speak("Vase.")}
-                      aria-label="Test pronunciation of Vase"
+                      aria-label={t("settings.testVaseLabel")}
                       className="px-2.5 py-1 min-h-[44px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
                     >
                       <Volume2 className="size-3" aria-hidden />
@@ -462,7 +446,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <button
                       type="button"
                       onClick={() => speak("Hello! Welcome to WordPix.")}
-                      aria-label="Test sentence voice"
+                      aria-label={t("settings.testSentenceLabel")}
                       className="px-2.5 py-1 min-h-[44px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
                     >
                       <Volume2 className="size-3" aria-hidden />
@@ -473,33 +457,6 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 <p className="font-sans text-xs text-muted-foreground leading-relaxed">
                   {t("settings.audioEngineDesc")}
                 </p>
-                <div className="flex flex-col gap-1.5 mt-1">
-                  <label
-                    htmlFor="elevenlabs-key-input"
-                    className="text-xs font-sans font-semibold text-foreground"
-                  >
-                    {t("settings.elevenLabsKey")}
-                  </label>
-                  <div className="flex items-center gap-2">
-                    <input
-                      id="elevenlabs-key-input"
-                      type="password"
-                      value={elevenLabsKey}
-                      onChange={(e) => handleSaveApiKey(e.target.value)}
-                      placeholder="sk_... (paste to enable cloud Alice voice)"
-                      className="flex-1 bg-wp-card border border-border rounded-xl px-3 py-2 text-xs font-mono text-foreground focus:outline-none focus:border-primary"
-                    />
-                    {elevenLabsKey ? (
-                      <button
-                        type="button"
-                        onClick={() => handleSaveApiKey("")}
-                        className="text-xs text-muted-foreground hover:text-wp-rose px-2 py-1 font-sans font-semibold"
-                      >
-                        {t("settings.clear")}
-                      </button>
-                    ) : null}
-                  </div>
-                </div>
               </div>
 
               <hr className="border-border/60" />

@@ -81,7 +81,6 @@ function readConfig(env = process.env) {
 function sign({ config, method, key, query = "", payloadHash, extraHeaders = {}, now }) {
   const suffix = key ? `/${encodeKey(key)}` : "";
   const url = new URL(`${config.endpoint}/${config.bucket}${suffix}`);
-  if (query) url.search = `?${query}`;
   const amzDate = now.toISOString().replace(/[:-]|\.\d{3}/g, "");
   const dateStamp = amzDate.slice(0, 8);
 
@@ -113,6 +112,10 @@ function sign({ config, method, key, query = "", payloadHash, extraHeaders = {},
         .sort()
         .join("&")
     : "";
+  // Send the exact encoded query string that was signed. Assigning the raw
+  // value through URL.search leaves path separators in prefix values
+  // unescaped, which makes R2 canonicalize a different request.
+  if (canonicalQuery) url.search = `?${canonicalQuery}`;
 
   const canonicalRequest = [
     method,
@@ -191,6 +194,19 @@ function createClient(env = process.env) {
   return {
     config,
 
+    /**
+     * Reads object headers without downloading the object body.
+     *
+     * This is intentionally separate from exists(): reconciliation jobs need
+     * content type, length, ETag, and any x-amz-meta-* fields while ordinary
+     * callers should keep receiving a simple boolean.
+     */
+    async head(key) {
+      const res = await request("HEAD", key, { expect: [200, 404] });
+      if (res.status === 404) return null;
+      return Object.fromEntries(res.headers.entries());
+    },
+
     /** True when the object already exists, so callers can skip re-uploading. */
     async exists(key) {
       const res = await request("HEAD", key, { expect: [200, 404] });
@@ -221,6 +237,41 @@ function createClient(env = process.env) {
       const res = await request("GET", key, { expect: [200, 404] });
       if (res.status === 404) return null;
       return Buffer.from(await res.arrayBuffer());
+    },
+
+    /**
+     * Lists object keys below a prefix without downloading their contents.
+     *
+     * Asset audits use this to reconcile a generated corpus with R2. Keep the
+     * pagination here so callers cannot accidentally validate only the first
+     * 1,000 objects in a large media collection.
+     */
+    async list(prefix = "") {
+      const keys = [];
+      let continuationToken = "";
+
+      do {
+        const queryParts = ["list-type=2", `prefix=${prefix}`, "max-keys=1000"];
+        if (continuationToken) queryParts.push(`continuation-token=${continuationToken}`);
+        const res = await request("GET", "", {
+          query: queryParts.join("&"),
+          expect: [200],
+        });
+        const xml = await res.text();
+        const decodeXml = (value) =>
+          value
+            .replace(/&amp;/g, "&")
+            .replace(/&lt;/g, "<")
+            .replace(/&gt;/g, ">")
+            .replace(/&quot;/g, '"')
+            .replace(/&apos;/g, "'");
+        keys.push(...[...xml.matchAll(/<Key>([\s\S]*?)<\/Key>/g)].map((match) => decodeXml(match[1])));
+        continuationToken =
+          xml.match(/<NextContinuationToken>([\s\S]*?)<\/NextContinuationToken>/)?.[1] ?? "";
+        if (continuationToken) continuationToken = decodeXml(continuationToken);
+      } while (continuationToken);
+
+      return keys;
     },
 
     async remove(key) {

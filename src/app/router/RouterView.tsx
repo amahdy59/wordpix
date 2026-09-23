@@ -58,6 +58,11 @@ const FigmaPronunciationLessonScreen = lazy(() =>
     default: m.FigmaPronunciationLessonScreen,
   }))
 );
+const HadithLessonScreen = lazy(() =>
+  import("../learning/hadith/HadithLessonScreen").then((m) => ({
+    default: m.HadithLessonScreen,
+  }))
+);
 
 const ExerciseListenRepeat = lazy(() =>
   import("../exercises/ExerciseListenRepeat").then((m) => ({ default: m.ExerciseListenRepeat }))
@@ -320,6 +325,8 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       return (
         <FigmaPronunciationLessonScreen lessonNumber={state.lessonNumber} dispatch={dispatch} />
       );
+    if (state.id === "hadith-lesson")
+      return <HadithLessonScreen lessonId={state.lessonId} dispatch={dispatch} />;
 
     if (state.id === "skill-exercise") {
       const SkillExercise = SKILL_EXERCISES[state.exerciseId];
@@ -347,7 +354,9 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
   const stateKey =
     state.id === "foundation-lesson"
       ? `${state.id}-${state.lessonId}`
-      : state.id + ("step" in state ? `-${state.step}` : "");
+      : state.id === "hadith-lesson"
+        ? `${state.id}-${state.lessonId}`
+        : state.id + ("step" in state ? `-${state.step}` : "");
   // Route transitions render immediately with a short enter motion only: the
   // previous AnimatePresence mode="wait" held every navigation for a full exit
   // animation first, which read as latency on every tab switch.

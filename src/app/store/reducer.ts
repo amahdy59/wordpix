@@ -61,6 +61,9 @@ export function reducer(state: Screen, action: Action): Screen {
   if (action.type === "OPEN_FIGMA_PRONUNCIATION") {
     return { id: "figma-pronunciation-lesson", lessonNumber: action.lessonNumber };
   }
+  if (action.type === "OPEN_HADITH_LESSON") {
+    return { id: "hadith-lesson", lessonId: action.lessonId };
+  }
   if (action.type === "START_LESSON") {
     let queue =
       action.wordQueue && action.wordQueue.length > 0

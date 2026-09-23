@@ -1,0 +1,47 @@
+import fs from "node:fs";
+import path from "node:path";
+import { describe, expect, it } from "vitest";
+import {
+  PRONUNCIATION_AUDIO_MANIFEST,
+  getPronunciationAudioClip,
+  normalizePronunciationAudioLabel,
+} from "../learning/foundations/pronunciationAudioManifest";
+
+describe("pronunciation audio manifest", () => {
+  it("contains only immutable R2 audio keys", () => {
+    const entries = Object.values(PRONUNCIATION_AUDIO_MANIFEST.clips).flat();
+    expect(Object.keys(PRONUNCIATION_AUDIO_MANIFEST.clips)).toHaveLength(286);
+    expect(entries).toHaveLength(359);
+    expect(
+      entries.every((entry) => /^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/.test(entry.objectKey))
+    ).toBe(true);
+  });
+
+  it("normalizes typographic punctuation without guessing labels", () => {
+    expect(normalizePronunciationAudioLabel("  DON’T  ")).toBe("don't");
+    expect(getPronunciationAudioClip("cat")?.objectKey).toMatch(/^audio\//);
+    expect(getPronunciationAudioClip("definitely-not-a-corpus-label")).toBeNull();
+  });
+
+  it("keeps unresolved labels explicit and disjoint from resolved labels", () => {
+    const unresolved = JSON.parse(
+      fs.readFileSync(path.resolve("assets/pronunciation-audio-unresolved.json"), "utf8")
+    ) as { totalPronunciationLabels: number; unresolved: Array<{ label: string }> };
+    const resolved = new Set(Object.keys(PRONUNCIATION_AUDIO_MANIFEST.clips));
+    const unresolvedKeys = unresolved.unresolved.map((entry) =>
+      normalizePronunciationAudioLabel(entry.label)
+    );
+    expect(unresolved.totalPronunciationLabels).toBe(578);
+    expect(unresolvedKeys).toHaveLength(292);
+    expect(unresolvedKeys.every((key) => !resolved.has(key))).toBe(true);
+  });
+
+  it("uses a reconciliation script that cannot mutate R2", () => {
+    const script = fs.readFileSync(
+      path.resolve("scripts/reconcile_pronunciation_audio.cjs"),
+      "utf8"
+    );
+    expect(script).not.toMatch(/\br2\.(?:put|remove)\s*\(/);
+    expect(script).not.toContain("ELEVENLABS_API_KEY");
+  });
+});

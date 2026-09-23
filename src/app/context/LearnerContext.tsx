@@ -18,6 +18,19 @@ import {
   normalizeFoundationProgress,
   type FoundationProgress,
 } from "../learning/foundations/foundationProgress";
+import {
+  completePronunciationLesson,
+  normalizePronunciationProgress,
+  type PronunciationProgress,
+} from "../learning/foundations/pronunciationProgress";
+import {
+  checkpointHadithLesson,
+  completeHadithLesson,
+  normalizeHadithProgress,
+  type HadithConfidence,
+  type HadithProgress,
+} from "../learning/hadith/hadithProgress";
+import type { HadithStageId } from "../learning/hadith/hadithCurriculumStages";
 
 export type MasteryLevel = 0 | 1 | 2 | 3;
 export type LearnerGoal = "everyday" | "travel" | "work" | "school" | "conversation" | "kids";
@@ -129,6 +142,8 @@ export interface LearnerStateSchema {
   wordMemory: Record<string, WordLearningState>;
   sessionHistory: SessionRecord[];
   foundationProgress: FoundationProgress;
+  pronunciationProgress: PronunciationProgress;
+  hadithProgress: HadithProgress;
 }
 
 const STORAGE_KEY = "wordpix:learner:v2";
@@ -155,6 +170,8 @@ export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
   wordMemory: {},
   sessionHistory: [],
   foundationProgress: {},
+  pronunciationProgress: {},
+  hadithProgress: {},
 };
 
 /** Shape of whatever came out of localStorage: unknown until validated. */
@@ -207,6 +224,8 @@ function migrateState(savedData: unknown): LearnerStateSchema {
       ? (saved.sessionHistory as SessionRecord[])
       : [],
     foundationProgress: normalizeFoundationProgress(saved.foundationProgress),
+    pronunciationProgress: normalizePronunciationProgress(saved.pronunciationProgress),
+    hadithProgress: normalizeHadithProgress(saved.hadithProgress),
   };
 }
 
@@ -265,6 +284,22 @@ interface LearnerContextType {
     currentStep: number,
     questionResults: Readonly<Record<number, boolean>>,
     masteryThreshold: number
+  ) => void;
+  recordPronunciationCompletion: (
+    lessonId: string,
+    scorePercent: number,
+    currentStage: number
+  ) => void;
+  recordHadithCheckpoint: (
+    lessonId: string,
+    currentStage: number,
+    completedStage?: HadithStageId,
+    scorePercent?: number
+  ) => void;
+  recordHadithCompletion: (
+    lessonId: string,
+    scorePercent: number,
+    confidence: HadithConfidence
   ) => void;
   setPreferences: (patch: Partial<LearnerPreferences>) => void;
   setAccessibility: (patch: Partial<AccessibilityPreferences>) => void;
@@ -639,6 +674,77 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     [updateStateAndPersist]
   );
 
+  const recordPronunciationCompletion = useCallback(
+    (lessonId: string, scorePercent: number, currentStage: number) => {
+      updateStateAndPersist((prev) => {
+        const bonus = scorePercent >= 80 ? 20 : 8;
+        const nextXp = prev.learnerProgress.xp + bonus;
+        return {
+          nextState: {
+            ...prev,
+            pronunciationProgress: completePronunciationLesson(
+              prev.pronunciationProgress,
+              lessonId,
+              scorePercent,
+              currentStage
+            ),
+            learnerProgress: { ...prev.learnerProgress, xp: nextXp },
+          },
+          mutationType: "add_xp",
+          mutationPayload: { xp: nextXp },
+        };
+      });
+    },
+    [updateStateAndPersist]
+  );
+
+  const recordHadithCheckpoint = useCallback(
+    (
+      lessonId: string,
+      currentStage: number,
+      completedStage?: HadithStageId,
+      scorePercent?: number
+    ) => {
+      updateStateAndPersist((prev) => ({
+        nextState: {
+          ...prev,
+          hadithProgress: checkpointHadithLesson(
+            prev.hadithProgress,
+            lessonId,
+            currentStage,
+            completedStage,
+            scorePercent
+          ),
+        },
+      }));
+    },
+    [updateStateAndPersist]
+  );
+
+  const recordHadithCompletion = useCallback(
+    (lessonId: string, scorePercent: number, confidence: HadithConfidence) => {
+      updateStateAndPersist((prev) => {
+        const bonus = scorePercent >= 80 ? 20 : 8;
+        const nextXp = prev.learnerProgress.xp + bonus;
+        return {
+          nextState: {
+            ...prev,
+            hadithProgress: completeHadithLesson(
+              prev.hadithProgress,
+              lessonId,
+              scorePercent,
+              confidence
+            ),
+            learnerProgress: { ...prev.learnerProgress, xp: nextXp },
+          },
+          mutationType: "add_xp",
+          mutationPayload: { xp: nextXp },
+        };
+      });
+    },
+    [updateStateAndPersist]
+  );
+
   const setPreferences = useCallback(
     (patch: Partial<LearnerPreferences>) => {
       updateStateAndPersist((prev) => {
@@ -686,6 +792,9 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         recordUnitAssessmentCompletion,
         recordFoundationCheckpoint,
         recordFoundationCompletion,
+        recordPronunciationCompletion,
+        recordHadithCheckpoint,
+        recordHadithCompletion,
         setPreferences,
         setAccessibility,
         resetToZero,
@@ -698,6 +807,9 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       recordUnitAssessmentCompletion,
       recordFoundationCheckpoint,
       recordFoundationCompletion,
+      recordPronunciationCompletion,
+      recordHadithCheckpoint,
+      recordHadithCompletion,
       setPreferences,
       setAccessibility,
       resetToZero,
@@ -709,6 +821,9 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     recordUnitAssessmentCompletion,
     recordFoundationCheckpoint,
     recordFoundationCompletion,
+    recordPronunciationCompletion,
+    recordHadithCheckpoint,
+    recordHadithCompletion,
     setPreferences,
     setAccessibility,
     resetToZero,
@@ -732,6 +847,9 @@ const DEFAULT_FALLBACK_CONTEXT: LearnerContextType = {
   recordUnitAssessmentCompletion: () => {},
   recordFoundationCheckpoint: () => {},
   recordFoundationCompletion: () => {},
+  recordPronunciationCompletion: () => {},
+  recordHadithCheckpoint: () => {},
+  recordHadithCompletion: () => {},
   setPreferences: () => {},
   setAccessibility: () => {},
   resetToZero: () => {},

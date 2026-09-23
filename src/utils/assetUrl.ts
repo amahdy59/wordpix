@@ -25,10 +25,12 @@ export function resolveAssetUrl(path: string): string {
   // Media is uploaded to R2 under a stable prefix. Keep application assets
   // (for example /release-notes.json) on the Vite origin.
   if (
-    import.meta.env.MODE !== "test" &&
-    PUBLIC_ASSET_BASE_URL &&
-    /^(?:word-images|scene-images)\//.test(relative)
+    (import.meta.env.MODE !== "test" &&
+      PUBLIC_ASSET_BASE_URL &&
+      /^(?:word-images|scene-images)\//.test(relative)) ||
+    /^pronunciation\//.test(relative)
   ) {
+    if (/^pronunciation\//.test(relative)) return `${PUBLIC_ASSET_BASE_URL}/${relative}`;
     const r2Path = FIGMA_IMAGE_REPLACEMENTS[relative] ?? relative;
     return `${PUBLIC_ASSET_BASE_URL}/images/v1/${r2Path}`;
   }

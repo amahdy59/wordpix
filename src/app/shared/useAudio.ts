@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLearner } from "../context/LearnerContext";
 import { getCachedAudio, saveCachedAudio } from "../../lib/persistence/db";
-import { audioKey, audioUrl, hasAssetHost } from "./assetUrls";
+import { assetUrl, audioKey, audioUrl, hasAssetHost } from "./assetUrls";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { getPronunciationAssetSpec, hasPronunciationOverride } from "./pronunciationOverrides";
 
@@ -85,8 +85,8 @@ const audioCache = new Map<string, string>();
  *
  * Mobile Safari and Chrome only honour `speak()` inside the short window that
  * follows a tap. Every path in `speak` below is asynchronous before it reaches
- * synthesis — a SHA-256 digest, a CDN fetch, possibly an ElevenLabs round trip
- * — and by the time any of them resolves the window has closed, so the
+ * synthesis — a SHA-256 digest and a CDN fetch — and by the time either one
+ * resolves the window has closed, so the
  * fallback ran and produced silence. That is the whole of the "audio does not
  * work on my phone" report: not an error, just nothing.
  *
@@ -195,7 +195,7 @@ export function useAudio({
   }, []);
 
   const speak = useCallback(
-    (text: string, overrideLang?: string) => {
+    (text: string, overrideLang?: string, objectKey?: string) => {
       const targetLang = overrideLang ?? lang;
       const cleanText = text.replace(/[-_]/g, " ").trim();
       const pronunciationAsset = getPronunciationAssetSpec(cleanText);
@@ -320,11 +320,19 @@ export function useAudio({
        * miss simply 404s and falls through to the paths below.
        */
       const playPregenerated = async (): Promise<boolean> => {
-        const url = hasAssetHost()
-          ? await audioUrl(pronunciationAsset.text, pronunciationAsset.profile)
-          : preferLocal || usesPronunciationOverride
-            ? resolveAssetUrl(`/${await audioKey(pronunciationAsset.text, pronunciationAsset.profile)}`)
+        const explicitUrl =
+          objectKey && /^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/.test(objectKey)
+            ? assetUrl(objectKey)
             : null;
+        const url =
+          explicitUrl ??
+          (hasAssetHost()
+            ? await audioUrl(pronunciationAsset.text, pronunciationAsset.profile)
+            : preferLocal || usesPronunciationOverride
+              ? resolveAssetUrl(
+                  `/${await audioKey(pronunciationAsset.text, pronunciationAsset.profile)}`
+                )
+              : null);
         if (!url) return false;
         const cacheKey = `cdn:${url}`;
 
@@ -452,97 +460,14 @@ export function useAudio({
           });
       };
 
-      /**
-       * Only a key the learner supplied themselves.
-       *
-       * This used to fall back to import.meta.env.VITE_ELEVENLABS_API_KEY.
-       * Vite inlines every VITE_* value into the client bundle, so the shared
-       * account key was served to every visitor in plain JavaScript and could
-       * be lifted straight out of the deployed site. Pre-generated clips (see
-       * scripts/generate_audio.cjs) cover the vocabulary without any key at
-       * all; a learner who wants neural audio for arbitrary text can still
-       * paste their own, which stays in their browser.
-       */
-      const apiKey =
-        typeof window !== "undefined" ? localStorage.getItem("wordpix_elevenlabs_key") : null;
-
       const playRemainingFallbacks = () => {
-        if (apiKey) {
-          playWithLearnerKey(apiKey);
-          return;
-        }
         fallbackToSynthesis(cleanText, targetLang);
-      };
-
-      const playWithLearnerKey = (apiKey: string) => {
-        const voiceId =
-          (typeof window !== "undefined"
-            ? localStorage.getItem("wordpix_elevenlabs_voice_id")
-            : null) || "Xb7hH8MSUJpSbSDYk0k2";
-        const cacheKey = `eleven:${voiceId}:${cleanText.toLowerCase()}`;
-
-        if (audioCache.has(cacheKey)) {
-          publish("loading");
-          playBlobUrl(audioCache.get(cacheKey)!);
-          return;
-        }
-
-        publish("loading");
-        clearStall();
-        stallTimerRef.current = window.setTimeout(() => {
-          if (!isCurrent()) return;
-          setStatus((current) => (current === "loading" ? "error" : current));
-        }, SPEECH_START_TIMEOUT_MS * 2);
-
-        getCachedAudio(cacheKey)
-          .then((storedBlob) => {
-            if (storedBlob) {
-              const url = URL.createObjectURL(storedBlob);
-              cacheAudioUrl(cacheKey, url);
-              playBlobUrl(url);
-              return;
-            }
-
-            fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-                "xi-api-key": apiKey,
-              },
-              body: JSON.stringify({
-                text: cleanText,
-                model_id: "eleven_turbo_v2_5",
-                voice_settings: {
-                  stability: 0.7,
-                  similarity_boost: 0.75,
-                },
-              }),
-            })
-              .then((res) => {
-                if (!res.ok) throw new Error(`ElevenLabs API error: ${res.status}`);
-                return res.blob();
-              })
-              .then((blob) => {
-                saveCachedAudio(cacheKey, blob);
-                const url = URL.createObjectURL(blob);
-                cacheAudioUrl(cacheKey, url);
-                playBlobUrl(url);
-              })
-              .catch(() => {
-                fallbackToSynthesis(cleanText, targetLang);
-              });
-          })
-          .catch(() => {
-            fallbackToSynthesis(cleanText, targetLang);
-          });
-
-        return;
       };
 
       // With no bucket configured there is no clip to look for, and going
       // through the async chain anyway would only delay the voice — on a phone,
       // past the point where it can still play at all.
-      if (!hasAssetHost() && !apiKey && !preferLocal && !usesPronunciationOverride) {
+      if (!hasAssetHost() && !preferLocal && !usesPronunciationOverride) {
         fallbackToSynthesis(cleanText, targetLang);
         return;
       }

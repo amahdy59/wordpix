@@ -34,6 +34,7 @@ import { getRecommendedFoundationLessonId } from "../learning/foundations/founda
 import {
   FIGMA_PRONUNCIATION_LESSONS,
   getFigmaPronunciationActivityData,
+  getPronunciationChapter,
 } from "../learning/foundations/figmaPronunciationCatalog";
 
 interface Props {
@@ -426,11 +427,23 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                   total: FIGMA_PRONUNCIATION_LESSONS.length,
                 })}
               </p>
+              <p className="mt-2 text-sm font-black text-primary">
+                {t("learn.figmaProgress", {
+                  completed: Object.values(learnerState.pronunciationProgress).filter(
+                    (item) => item.status === "mastered"
+                  ).length,
+                  total: FIGMA_PRONUNCIATION_LESSONS.length,
+                })}
+              </p>
             </div>
           </div>
           <ol className="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {FIGMA_PRONUNCIATION_LESSONS.map((sourceLesson) => {
               const activity = getFigmaPronunciationActivityData(sourceLesson.number);
+              const status =
+                learnerState.pronunciationProgress[
+                  `lesson-${String(sourceLesson.number).padStart(2, "0")}`
+                ]?.status;
               return (
                 <li key={sourceLesson.number}>
                   <button
@@ -447,11 +460,18 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                       {sourceLesson.number}
                     </span>
                     <span className="min-w-0 flex-1">
+                      <span className="block text-[11px] font-black uppercase tracking-wide text-primary">
+                        {t(getPronunciationChapter(sourceLesson.number).titleKey)}
+                      </span>
                       <span className="block truncate font-black text-foreground">
                         {activity.title}
                       </span>
                       <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
-                        {t("learn.figmaItemHint")}
+                        {status === "mastered"
+                          ? t("learn.figmaMastered")
+                          : status === "needs-practice"
+                            ? t("learn.figmaReview")
+                            : t("learn.figmaItemHint")}
                       </span>
                     </span>
                     <ArrowRight

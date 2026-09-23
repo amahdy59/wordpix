@@ -7,6 +7,10 @@ import {
   isFoundationLessonId,
 } from "../learning/foundations/foundationCurriculum";
 import { getFigmaPronunciationLesson } from "../learning/foundations/figmaPronunciationCatalog";
+import {
+  HADITH_LESSON_COUNT,
+  getHadithLessonMetadata,
+} from "../learning/hadith/hadithLessonMetadata";
 
 const SKILL_EXERCISE_ID_SET = new Set<string>(SKILL_EXERCISE_IDS);
 
@@ -67,6 +71,7 @@ const LEARNING_MATERIALS_PATTERN = new RegExp(
 const SKILL_EXERCISE_PATTERN = /^#\/skills\/([a-z-]+)$/;
 const FOUNDATION_LESSON_PATTERN = /^#\/foundations\/([a-z-]+)$/;
 const FIGMA_PRONUNCIATION_PATTERN = /^#\/pronunciation\/lesson-(\d+)$/;
+const HADITH_LESSON_PATTERN = /^#\/hadith\/lesson-(\d+)$/;
 
 /**
  * Preserve shared/bookmarked names from the pronunciation curriculum while
@@ -117,6 +122,14 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
       title: `WordPix — ${lesson.sourceName}`,
     };
   }
+  if (screen.id === "hadith-lesson") {
+    const lessonNumber = Number(screen.lessonId.match(/\d+$/)?.[0] ?? 1);
+    const lesson = getHadithLessonMetadata(lessonNumber);
+    return {
+      hash: `#/hadith/lesson-${lesson?.number ?? 1}`,
+      title: `WordPix — ${lesson?.title ?? "Hadith lesson"}`,
+    };
+  }
   if (screen.id === "lesson") {
     const world = resolveUnitForLesson(screen.lessonId);
     return {
@@ -160,6 +173,21 @@ export function hashToRoute(hash: string): RouteIntent | null {
       };
     }
     return null;
+  }
+
+  const hadithMatch = normalized.match(HADITH_LESSON_PATTERN);
+  if (hadithMatch) {
+    const lessonNumber = Number(hadithMatch[1]);
+    if (!Number.isInteger(lessonNumber) || lessonNumber < 1 || lessonNumber > HADITH_LESSON_COUNT) {
+      return null;
+    }
+    const lesson = getHadithLessonMetadata(lessonNumber);
+    if (!lesson) return null;
+    return {
+      kind: "screen",
+      screen: { id: "hadith-lesson", lessonId: lesson.id },
+      title: `WordPix — ${lesson.title}`,
+    };
   }
 
   const stepMatch = normalized.match(LESSON_STEP_PATTERN);

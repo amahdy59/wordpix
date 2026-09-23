@@ -32,6 +32,7 @@ interface Props {
 export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatch }: Props) {
   const { t } = useI18n();
   const world = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
+  const isHadithUnit = world.id === "hadith-niyyah";
   const { progress } = useProgress();
   const { state: learnerState } = useLearner();
   const curriculum = getUnitCurriculumDesign(world);
@@ -88,6 +89,10 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
     const group = world.groups.find((g) => g.id === gId) ?? world.groups[0];
     setOpenMenuId(null);
     setExpandedStepMenuId(null);
+    if (isHadithUnit) {
+      dispatch({ type: "OPEN_HADITH_LESSON", lessonId: "hadith-01" });
+      return;
+    }
     dispatch({
       type: "START_LESSON",
       lessonId: group.id,
@@ -168,11 +173,13 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                 <button
                   type="button"
                   onClick={() =>
-                    dispatch({ type: "GO", to: "learning-materials", unitId: world.id })
+                    isHadithUnit
+                      ? dispatch({ type: "OPEN_HADITH_LESSON", lessonId: "hadith-01" })
+                      : dispatch({ type: "GO", to: "learning-materials", unitId: world.id })
                   }
                   className="mt-4 min-h-12 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
-                  {t("lesson.startGuidedPath")}
+                  {isHadithUnit ? t("hadith.startGuidedLesson") : t("lesson.startGuidedPath")}
                 </button>
               )}
             </div>
@@ -186,17 +193,19 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                 <button
                   type="button"
                   onClick={() =>
-                    dispatch({
-                      type: "GO",
-                      to: "learning-materials",
-                      unitId: world.id,
-                      area: "learn",
-                    })
+                    isHadithUnit
+                      ? dispatch({ type: "OPEN_HADITH_LESSON", lessonId: "hadith-01" })
+                      : dispatch({
+                          type: "GO",
+                          to: "learning-materials",
+                          unitId: world.id,
+                          area: "learn",
+                        })
                   }
                   className={secondaryAction}
                 >
                   <Library className="size-5" aria-hidden />
-                  {t("lesson.studyMaterialsBtn")}
+                  {isHadithUnit ? t("hadith.openLesson") : t("lesson.studyMaterialsBtn")}
                 </button>
               )}
             </div>

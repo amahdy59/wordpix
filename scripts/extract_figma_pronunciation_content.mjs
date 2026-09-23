@@ -36,6 +36,37 @@ function walk(node, output) {
   for (const child of node.children ?? []) walk(child, output);
 }
 
+const ITEM_ROLE = /^(TEACH|GUIDED|INDEPENDENT|TRANSFER)(?:\s*•\s*(CONTEXT))?$/i;
+
+function collectText(node, output = []) {
+  if (node?.type === "TEXT" && node.characters?.trim()) output.push(node.characters.trim());
+  for (const child of node?.children ?? []) collectText(child, output);
+  return output;
+}
+
+function collectLessonImages(node, parent = null, output = [], insideGallery = false) {
+  const isInsideGallery = insideGallery || node?.name === "word-image-gallery";
+  const imageRef = (node?.fills ?? []).find((fill) => fill?.imageRef)?.imageRef;
+  if (imageRef && parent && isInsideGallery) {
+    const text = collectText(parent);
+    const roleText = text.find((value) => ITEM_ROLE.test(value));
+    const roleMatch = roleText?.match(ITEM_ROLE);
+    const label = text.find((value) => value !== roleText)?.trim();
+    if (label && roleMatch) {
+      output.push({
+        label,
+        role: roleMatch[1].toLowerCase(),
+        context: Boolean(roleMatch[2]),
+        imageRef,
+      });
+    }
+  }
+  for (const child of node?.children ?? []) {
+    collectLessonImages(child, node, output, isInsideGallery);
+  }
+  return output;
+}
+
 const lessons = [];
 for (let offset = 0; offset < frames.length; offset += 20) {
   const batch = frames.slice(offset, offset + 20);
@@ -50,22 +81,38 @@ for (let offset = 0; offset < frames.length; offset += 20) {
     const document = payload.nodes?.[frame.id]?.document;
     const text = [];
     walk(document, text);
+    const images = collectLessonImages(document);
     lessons.push({
       number: Number(frame.name.match(/lesson-(\d+)/)?.[1]),
       nodeId: frame.id,
       sourceName: frame.name,
       section: frame.section,
       text,
+      images,
     });
   }
 }
 
 const output = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   source: { fileKey, pageId, name: page.name },
   imageRefs: [...imageRefs].sort(),
   lessons,
 };
 const destination = path.join(root, "src/app/learning/foundations/figmaPronunciationContent.json");
+const mappedImages = lessons.reduce((total, lesson) => total + lesson.images.length, 0);
+const mappedImageRefs = new Set(lessons.flatMap((lesson) => lesson.images.map((image) => image.imageRef)));
+const expectedImageUses = lessons.reduce(
+  (total, lesson) =>
+    total + lesson.text.filter((value) => ITEM_ROLE.test(value)).length,
+  0,
+);
+if (mappedImages !== expectedImageUses) {
+  throw new Error(
+    `Expected ${expectedImageUses} role-labelled learner images; mapped ${mappedImages}`,
+  );
+}
 await fs.writeFile(destination, `${JSON.stringify(output, null, 2)}\n`, "utf8");
-console.log(`Extracted ${lessons.length} lessons and ${imageRefs.size} image refs to ${destination}`);
+console.log(
+  `Extracted ${lessons.length} lessons, ${mappedImages} learner image uses (${mappedImageRefs.size} unique), and ${imageRefs.size} total image refs to ${destination}`,
+);

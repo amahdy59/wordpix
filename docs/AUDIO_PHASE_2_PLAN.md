@@ -21,6 +21,26 @@ The lexicon tier is currently global rather than unit-scoped: 7,171 clips and 28
 
 Objects already use content-addressed keys: `audio/<first-two-hash-characters>/<sha256>.mp3`. Keep the ElevenLabs key and R2 write credentials server/CI-only. The app should receive only the public `VITE_ASSET_BASE_URL`; configure R2 CORS and immutable caching on hashed objects.
 
+## Pronunciation manifest reconciliation
+
+Run `npm run audio:pronunciation:manifest` to reconstruct the pronunciation
+lookup from the existing corpora and R2 object list. The command is deliberately
+read-only against R2: it uses LIST and HEAD only, never calls ElevenLabs, and
+never uploads, replaces, or deletes an MP3.
+
+It writes three deterministic workspace artifacts:
+
+- `src/app/learning/foundations/pronunciationAudioManifest.json` — validated
+  mappings the browser can use immediately.
+- `assets/pronunciation-audio-unresolved.json` — lesson labels that cannot be
+  mapped safely and therefore retain speech-synthesis fallback.
+- `assets/pronunciation-audio-unmatched-r2.json` — existing bucket objects that
+  are not represented by the retained corpora. Do not assign these by filename
+  guesswork; content-addressed hashes are not reversible.
+
+Publishing `pronunciation/v1/audio-manifest.json` to R2 is an optional, separate
+release action. It must never be coupled to audio generation or deletion.
+
 ## Later phases
 
 - Phase 3: learning-material sentences, corrected forms and dialogues after content integrity review.

@@ -30,6 +30,26 @@ describe("Figma pronunciation source", () => {
       expect(activity.objective).toBeTruthy();
       expect(activity.model).toBeTruthy();
       expect(activity.teachWords.length).toBeGreaterThanOrEqual(2);
+      expect(activity.items.length).toBeGreaterThanOrEqual(activity.teachItems.length);
+      expect(activity.items.every((item) => item.imageRef.length === 40)).toBe(true);
+      expect(new Set(activity.items.map((item) => item.label.toLowerCase())).size).toBe(
+        activity.items.length
+      );
+    }
+  });
+
+  it("keeps every mapped image reachable in the uploaded pronunciation prefix", () => {
+    const mapped = FIGMA_PRONUNCIATION_LESSONS.flatMap((lesson) => lesson.images);
+    expect(new Set(mapped.map((item) => item.imageRef)).size).toBeGreaterThan(500);
+    expect(mapped.every((item) => item.label.trim().length > 0)).toBe(true);
+  });
+
+  it("has a complete progression contract for every lesson", () => {
+    for (const lesson of FIGMA_PRONUNCIATION_LESSONS) {
+      const roles = new Set(lesson.images.map((item) => item.role));
+      expect(lesson.images.length, `lesson ${lesson.number}`).toBeGreaterThanOrEqual(10);
+      expect(roles).toEqual(new Set(["teach", "guided", "independent", "transfer"]));
+      expect(lesson.images.every((item) => /^[0-9a-f]{40}$/i.test(item.imageRef))).toBe(true);
     }
   });
 });

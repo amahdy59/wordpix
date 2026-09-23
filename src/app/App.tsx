@@ -16,6 +16,7 @@ import { reducer, ariaLiveAnnounce, describeScreen, STORAGE_KEY } from "./store/
 import { RouterView } from "./router/RouterView";
 import { UpdatePrompt } from "./shared/UpdatePrompt";
 import { MotionConfig } from "framer-motion";
+import { purgeLegacyAudioCredentials } from "./shared/audioSecurity";
 
 function AppInner() {
   const { t } = useI18n();
@@ -83,12 +84,30 @@ function AppInner() {
       dispatch({ type: "OPEN_FIGMA_PRONUNCIATION", lessonNumber: screen.lessonNumber });
       return;
     }
-    dispatch({ type: "GO", to: screen.id });
+    if (screen.id === "hadith-lesson") {
+      dispatch({ type: "OPEN_HADITH_LESSON", lessonId: screen.lessonId });
+      return;
+    }
+    dispatch({
+      type: "GO",
+      to: screen.id as Exclude<
+        Screen["id"],
+        | "lesson-entry"
+        | "learning-materials"
+        | "hadith-lesson"
+        | "figma-pronunciation-lesson"
+        | "foundation-lesson"
+        | "skill-exercise"
+        | "lesson"
+        | "learn-words"
+      >,
+    });
   }, []);
 
   useHashRouter(state, handleRoute);
 
   useEffect(() => {
+    purgeLegacyAudioCredentials(typeof window === "undefined" ? undefined : window.localStorage);
     registerServiceWorker();
   }, []);
 
