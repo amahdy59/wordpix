@@ -36764,6 +36764,8 @@ export interface CourseModule {
   titleAr: string;
   description: string;
   unitIds: string[];
+  curriculumKind?: "hadith";
+  lessonCount?: number;
 }
 
 export const COURSE_MODULES: CourseModule[] = [
@@ -37025,7 +37027,9 @@ export const COURSE_MODULES: CourseModule[] = [
     title: "Islamic Studies",
     titleAr: "Islamic Studies",
     description: "Explore vocabulary for Islamic Studies",
-    unitIds: ["hadith-niyyah"],
+    curriculumKind: "hadith",
+    lessonCount: 42,
+    unitIds: [],
   },
 ];
 

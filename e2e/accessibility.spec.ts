@@ -48,6 +48,30 @@ test("study vocabulary grid is accessible and contained", async ({ page }) => {
   expect(results.violations).toEqual([]);
 });
 
+test("Hadith curriculum index has no automatically detectable accessibility issues", async ({
+  page,
+}) => {
+  await page.goto("/#/hadith");
+  await expect(page.getByRole("main")).toBeVisible();
+  await expect(page.getByRole("button", { name: /Actions and Intentions/i })).toBeVisible();
+  const results = await new AxeBuilder({ page })
+    .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
+    .analyze();
+  expect(results.violations).toEqual([]);
+});
+
+test("pronunciation curriculum index has no automatically detectable accessibility issues", async ({
+  page,
+}) => {
+  await page.goto("/#/pronunciation");
+  await expect(page.getByRole("main")).toBeVisible();
+  await expect(page.getByRole("searchbox")).toBeVisible();
+  const results = await new AxeBuilder({ page })
+    .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
+    .analyze();
+  expect(results.violations).toEqual([]);
+});
+
 test("practice keyboard keeps focus on the selected answer during feedback", async ({ page }) => {
   await page.goto("/#/learn/bathroom/study/practice/practice-session");
   const answers = page.locator('#study-content [role="group"]');

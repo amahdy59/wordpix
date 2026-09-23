@@ -10,6 +10,7 @@ import {
   X,
   Library,
   Play,
+  BookOpen,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Action } from "../types";
@@ -20,6 +21,7 @@ import { staggerContainer, staggerItem } from "../shared/animations";
 import { useI18n } from "../context/I18nContext";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { getUnitCurriculumDesign } from "../learning/curriculumModel";
+import { useLearner } from "../context/LearnerContext";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -32,6 +34,13 @@ function filterModulesByQuery(modules: CourseModule[], q: string) {
   const lowerQ = q.toLowerCase().trim();
   return modules
     .map((mod) => {
+      const moduleSearchText = [
+        mod.title,
+        mod.description,
+        mod.curriculumKind === "hadith" ? "hadith hadiths islamic studies" : "",
+      ]
+        .join(" ")
+        .toLowerCase();
       const matchingUnitIds = mod.unitIds.filter((uid) => {
         const unit = COURSE_UNITS[uid];
         if (!unit) return false;
@@ -41,7 +50,7 @@ function filterModulesByQuery(modules: CourseModule[], q: string) {
           unit.wordIds.some((id) => id.replace(/-/g, " ").includes(lowerQ))
         );
       });
-      if (matchingUnitIds.length === 0 && !mod.title.toLowerCase().includes(lowerQ)) {
+      if (matchingUnitIds.length === 0 && !moduleSearchText.includes(lowerQ)) {
         return null;
       }
       return {
@@ -54,6 +63,7 @@ function filterModulesByQuery(modules: CourseModule[], q: string) {
 
 export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
   const { progress } = useProgress();
+  const { state: learnerState } = useLearner();
   const { t, dir } = useI18n();
   const isRtl = dir === "rtl";
   const [selectedModuleId, setSelectedModuleId] = useState<string>("all");
@@ -104,6 +114,13 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
         }
       });
 
+      if (mod.curriculumKind === "hadith") {
+        unitCount = mod.lessonCount ?? 42;
+        completedUnits = Object.values(learnerState.hadithProgress).filter(
+          (entry) => entry.status === "mastered"
+        ).length;
+      }
+
       const pct = total > 0 ? Math.round((mastered / total) * 100) : 0;
       stats[mod.id] = {
         totalWords: total,
@@ -115,7 +132,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
     });
 
     return stats;
-  }, [progress.wordMastery]);
+  }, [learnerState.hadithProgress, progress.wordMastery]);
 
   // Overall course progress
   const overallStats = useMemo(() => {
@@ -360,6 +377,58 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
               const isExpanded =
                 Boolean(searchQuery.trim()) || (expandedModules[module.id] ?? false);
               const units = moduleUnits.get(module.id) ?? [];
+
+              if (module.curriculumKind === "hadith") {
+                const completedLessons = stats.completedUnits;
+                const totalLessons = module.lessonCount ?? 42;
+                const percent = Math.round((completedLessons / totalLessons) * 100);
+                return (
+                  <motion.section
+                    key={module.id}
+                    variants={staggerItem}
+                    className="rounded-3xl border-2 border-primary/35 bg-gradient-to-br from-primary/15 via-wp-card to-wp-card p-5 shadow-wp-sm sm:p-7"
+                    aria-labelledby="islamic-studies-heading"
+                  >
+                    <Badge variant="primary" size="sm">
+                      {t("hadith.curriculumBadge")}
+                    </Badge>
+                    <h2
+                      id="islamic-studies-heading"
+                      className="mt-3 text-2xl font-black text-foreground"
+                    >
+                      {t("hadith.curriculumTitle")}
+                    </h2>
+                    <p className="mt-2 max-w-2xl text-sm font-medium leading-6 text-muted-foreground">
+                      {t("hadith.curriculumDescription")}
+                    </p>
+                    <p className="mt-4 font-black text-primary">
+                      {t("hadith.curriculumCardDescription", {
+                        completed: completedLessons,
+                        total: totalLessons,
+                      })}
+                    </p>
+                    {completedLessons > 0 && (
+                      <div className="mt-4">
+                        <ProgressBar
+                          progressPercent={percent}
+                          label={t("hadith.curriculumProgressLabel")}
+                          labelRight={`${percent}%`}
+                          ariaLabel={t("hadith.curriculumProgressAria", { percent })}
+                        />
+                      </div>
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
+                      className="mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-90 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-auto"
+                    >
+                      <BookOpen className="size-5" aria-hidden />
+                      {t("hadith.viewCurriculum")}
+                      <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+                    </button>
+                  </motion.section>
+                );
+              }
 
               return (
                 <motion.section

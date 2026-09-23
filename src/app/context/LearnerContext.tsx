@@ -19,6 +19,7 @@ import {
   type FoundationProgress,
 } from "../learning/foundations/foundationProgress";
 import {
+  checkpointPronunciationLesson,
   completePronunciationLesson,
   normalizePronunciationProgress,
   type PronunciationProgress,
@@ -290,6 +291,7 @@ interface LearnerContextType {
     scorePercent: number,
     currentStage: number
   ) => void;
+  recordPronunciationCheckpoint: (lessonId: string, currentStage: number) => void;
   recordHadithCheckpoint: (
     lessonId: string,
     currentStage: number,
@@ -698,6 +700,22 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     [updateStateAndPersist]
   );
 
+  const recordPronunciationCheckpoint = useCallback(
+    (lessonId: string, currentStage: number) => {
+      updateStateAndPersist((prev) => ({
+        nextState: {
+          ...prev,
+          pronunciationProgress: checkpointPronunciationLesson(
+            prev.pronunciationProgress,
+            lessonId,
+            currentStage
+          ),
+        },
+      }));
+    },
+    [updateStateAndPersist]
+  );
+
   const recordHadithCheckpoint = useCallback(
     (
       lessonId: string,
@@ -793,6 +811,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         recordFoundationCheckpoint,
         recordFoundationCompletion,
         recordPronunciationCompletion,
+        recordPronunciationCheckpoint,
         recordHadithCheckpoint,
         recordHadithCompletion,
         setPreferences,
@@ -808,6 +827,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       recordFoundationCheckpoint,
       recordFoundationCompletion,
       recordPronunciationCompletion,
+      recordPronunciationCheckpoint,
       recordHadithCheckpoint,
       recordHadithCompletion,
       setPreferences,
@@ -822,6 +842,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     recordFoundationCheckpoint,
     recordFoundationCompletion,
     recordPronunciationCompletion,
+    recordPronunciationCheckpoint,
     recordHadithCheckpoint,
     recordHadithCompletion,
     setPreferences,
@@ -848,6 +869,7 @@ const DEFAULT_FALLBACK_CONTEXT: LearnerContextType = {
   recordFoundationCheckpoint: () => {},
   recordFoundationCompletion: () => {},
   recordPronunciationCompletion: () => {},
+  recordPronunciationCheckpoint: () => {},
   recordHadithCheckpoint: () => {},
   recordHadithCompletion: () => {},
   setPreferences: () => {},

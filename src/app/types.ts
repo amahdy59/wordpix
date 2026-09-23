@@ -71,7 +71,9 @@ export type Screen =
   /** Reference and self-paced practice for one unit, imported from Figma. */
   | { id: "learning-materials"; unitId?: string; area?: string; nodeId?: string }
   | { id: "foundation-lesson"; lessonId: FoundationLessonId }
+  | { id: "pronunciation-curriculum" }
   | { id: "figma-pronunciation-lesson"; lessonNumber: number }
+  | { id: "hadith-curriculum" }
   | { id: "hadith-lesson"; lessonId: string }
   | { id: "skill-hub" }
   | { id: "skill-exercise"; exerciseId: SkillExerciseId }
@@ -104,7 +106,9 @@ export type GoTarget =
   | "lesson-complete"
   | "skill-hub"
   | "onboarding"
-  | "learning-materials";
+  | "learning-materials"
+  | "pronunciation-curriculum"
+  | "hadith-curriculum";
 
 export type Action =
   | { type: "ONBOARD_NEXT" }

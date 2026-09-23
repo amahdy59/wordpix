@@ -29,8 +29,11 @@ interface Props {
 type Stage = 0 | 1 | 2 | 3 | 4;
 
 const STAGES = ["Preview", "Listen", "Meaning", "Use it", "Transfer"] as const;
+const TRIALS_PER_STAGE = 3;
 const rolePool = (activity: ReturnType<typeof getFigmaPronunciationActivityData>, stage: Stage) =>
-  stage === 4 ? [...activity.transferItems] : [...activity.teachItems, ...activity.guidedItems];
+  stage === 4 && activity.transferItems.length
+    ? [...activity.transferItems]
+    : [...activity.teachItems, ...activity.guidedItems, ...activity.independentItems];
 
 function imageFor(item: FigmaPronunciationImage) {
   return resolveAssetUrl(pronunciationImagePath(item.imageRef));
@@ -38,38 +41,61 @@ function imageFor(item: FigmaPronunciationImage) {
 
 export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props) {
   const { t } = useI18n();
-  const { state, recordPronunciationCompletion } = useLearner();
+  const { state, recordPronunciationCheckpoint, recordPronunciationCompletion } = useLearner();
   const activity = getFigmaPronunciationActivityData(lessonNumber);
   const progress = state.pronunciationProgress[`lesson-${String(lessonNumber).padStart(2, "0")}`];
-  const [stage, setStage] = useState<Stage>(0);
+  const restoredStage =
+    progress?.status === "in-progress"
+      ? (Math.min(4, Math.max(0, progress.currentStage)) as Stage)
+      : 0;
+  const [stage, setStage] = useState<Stage>(restoredStage);
+  const [trial, setTrial] = useState(0);
   const [answer, setAnswer] = useState<string | null>(null);
   const [attempts, setAttempts] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
   const [completedScore, setCompletedScore] = useState<number | null>(null);
   const { speak, stop, isPlaying } = useAudio({ lang: "en-US", rate: 0.78, preferLocal: true });
   const pool = rolePool(activity, stage);
-  const target = pool[0] ?? activity.items[0];
+  const target =
+    stage === 0
+      ? (activity.items.find(
+          (item) =>
+            item.label.toLocaleLowerCase("en-US") === activity.model.toLocaleLowerCase("en-US")
+        ) ?? activity.items[0])
+      : pool.length > 0
+        ? pool[(lessonNumber * 7 + Math.max(0, stage - 1) * 5 + trial * 3) % pool.length]
+        : activity.items[0];
   const audioClip = getPronunciationAudioClip(target?.label ?? activity.model, stage === 4);
   const choices = target
     ? seededPronunciationShuffle(
         [target, ...pool.filter((item) => item.label !== target.label).slice(0, 3)],
-        lessonNumber * 31 + stage * 17
+        lessonNumber * 31 + stage * 17 + trial * 13
       )
     : [];
   const answerable = stage === 1 || stage === 2 || stage === 3 || stage === 4;
   const passed = answer === target?.label;
   const selectAnswer = (value: string) => {
-    if (answer === value && passed) return;
+    if (passed) return;
     setAnswer(value);
-    if (value === target?.label) setCorrectCount((count) => count + 1);
-    else setAttempts((count) => count + 1);
+    if (value === target?.label) {
+      if (attempts === 0) setCorrectCount((count) => count + 1);
+    } else {
+      setAttempts((count) => count + 1);
+    }
   };
   const advance = () => {
     stop();
     setAnswer(null);
     setAttempts(0);
+    if (stage > 0 && trial < TRIALS_PER_STAGE - 1) {
+      setTrial((value) => value + 1);
+      return;
+    }
+    setTrial(0);
     if (stage === 4) {
-      const score = Math.round((correctCount / Math.max(1, STAGES.length - 1)) * 100);
+      const score = Math.round(
+        (correctCount / Math.max(1, (STAGES.length - 1) * TRIALS_PER_STAGE)) * 100
+      );
       setCompletedScore(score);
       recordPronunciationCompletion(
         `lesson-${String(lessonNumber).padStart(2, "0")}`,
@@ -78,12 +104,14 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
       );
       return;
     }
+    recordPronunciationCheckpoint(`lesson-${String(lessonNumber).padStart(2, "0")}`, stage + 1);
     setStage((value) => (value + 1) as Stage);
   };
   const reset = () => {
     stop();
     setCompletedScore(null);
     setStage(0);
+    setTrial(0);
     setAnswer(null);
     setAttempts(0);
     setCorrectCount(0);
@@ -157,7 +185,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               </button>
               <button
                 type="button"
-                onClick={() => dispatch({ type: "GO", to: "explore" })}
+                onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
                 className="min-h-11 rounded-xl bg-primary px-5 font-black text-primary-foreground focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 {t("pronunciation.back")}
@@ -177,7 +205,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
       <div className="mx-auto flex w-full max-w-4xl flex-col gap-5 p-4 sm:p-8">
         <button
           type="button"
-          onClick={() => dispatch({ type: "GO", to: "explore" })}
+          onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
           className="min-h-11 w-fit rounded-xl px-3 font-bold focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <ArrowLeft className="me-2 inline size-4" aria-hidden />
@@ -269,6 +297,14 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
           <p className="text-sm font-black text-primary">
             {t("pronunciation.stage", { number: stage + 1, name: STAGES[stage] })}
           </p>
+          {answerable && (
+            <p className="mt-1 text-xs font-bold text-muted-foreground">
+              {t("pronunciation.checkProgress", {
+                current: trial + 1,
+                total: TRIALS_PER_STAGE,
+              })}
+            </p>
+          )}
           <h2 className="mt-1 text-2xl font-black">
             {stage === 0 ? t("pronunciation.readyTitle") : t("pronunciation.testTitle")}
           </h2>
@@ -281,9 +317,36 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             {isPlaying ? t("pronunciation.playing") : t("pronunciation.play")}
           </button>
           {stage === 0 && (
-            <p className="mt-4 rounded-2xl bg-muted p-4 text-sm leading-6">
-              {t("pronunciation.previewPrompt", { count: activity.items.length })}
-            </p>
+            <div className="mt-4 space-y-3">
+              <p className="rounded-2xl bg-muted p-4 text-sm leading-6">
+                {t("pronunciation.previewPrompt", { count: activity.items.length })}
+              </p>
+              <div className="rounded-2xl border border-primary/25 bg-primary/5 p-4">
+                <h3 className="text-sm font-black text-foreground">
+                  {t("pronunciation.soundFocus")}
+                </h3>
+                <p className="mt-1 text-sm leading-6 text-muted-foreground" lang="en" dir="ltr">
+                  {activity.focus}
+                </p>
+                {activity.contrastPairs.length > 0 && (
+                  <ul
+                    className="mt-3 flex flex-wrap gap-2"
+                    aria-label={t("pronunciation.contrastPairs")}
+                  >
+                    {activity.contrastPairs.slice(0, 10).map(([first, second]) => (
+                      <li
+                        key={`${first}-${second}`}
+                        className="rounded-xl border border-border bg-card px-3 py-2 text-sm font-black text-foreground"
+                        lang="en"
+                        dir="ltr"
+                      >
+                        {first} / {second}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
           )}
           {answerable && (
             <>
@@ -301,7 +364,8 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                     type="button"
                     onClick={() => selectAnswer(item.label)}
                     aria-pressed={answer === item.label}
-                    className={`min-h-14 rounded-2xl border-2 px-4 text-start font-black focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary ${answer === item.label ? (item.label === target?.label ? "border-feedback-success bg-feedback-success-surface" : "border-destructive bg-destructive/10") : "border-border hover:border-primary"}`}
+                    disabled={passed}
+                    className={`min-h-14 rounded-2xl border-2 px-4 text-start font-black focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed ${answer === item.label ? (item.label === target?.label ? "border-feedback-success bg-feedback-success-surface" : "border-destructive bg-destructive/10") : "border-border hover:border-primary disabled:opacity-70"}`}
                     lang="en"
                     dir="ltr"
                   >

@@ -44,6 +44,13 @@ describe("Figma pronunciation source", () => {
     expect(mapped.every((item) => item.label.trim().length > 0)).toBe(true);
   });
 
+  it("preserves authored contrast banks and teaching focus", () => {
+    const sheepOrShip = getFigmaPronunciationActivityData(2);
+    expect(sheepOrShip.contrastPairs).toContainEqual(["sheep", "ship"]);
+    expect(sheepOrShip.contrastPairs).toContainEqual(["seat", "sit"]);
+    expect(sheepOrShip.focus).toMatch(/vowel|duration|tension/i);
+  });
+
   it("has a complete progression contract for every lesson", () => {
     for (const lesson of FIGMA_PRONUNCIATION_LESSONS) {
       const roles = new Set(lesson.images.map((item) => item.role));

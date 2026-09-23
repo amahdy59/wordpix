@@ -151,7 +151,10 @@ export function ariaLiveAnnounce(msg: string) {
   if (el) el.textContent = msg;
 }
 
-export function describeScreen(screen: Screen, t: (key: string) => string): string {
+export function describeScreen(
+  screen: Screen,
+  t: (key: string, options?: Record<string, string | number>) => string
+): string {
   switch (screen.id) {
     case "onboarding":
       return `${t("app.title")}: ${screen.step}`;
@@ -181,6 +184,17 @@ export function describeScreen(screen: Screen, t: (key: string) => string): stri
       return screen.exerciseId;
     case "foundation-lesson":
       return `Foundations: ${getFoundationLesson(screen.lessonId).title}`;
+    case "pronunciation-curriculum":
+      return t("pronunciation.curriculumTitle");
+    case "figma-pronunciation-lesson":
+      return t("pronunciation.badge", { current: screen.lessonNumber, total: 68 });
+    case "hadith-curriculum":
+      return t("hadith.curriculumTitle");
+    case "hadith-lesson":
+      return t("hadith.lessonProgress", {
+        current: Number(screen.lessonId.match(/\d+$/)?.[0] ?? 1),
+        total: 42,
+      });
     default:
       return "";
   }

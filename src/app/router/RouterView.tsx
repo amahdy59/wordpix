@@ -58,9 +58,19 @@ const FigmaPronunciationLessonScreen = lazy(() =>
     default: m.FigmaPronunciationLessonScreen,
   }))
 );
+const PronunciationCurriculumScreen = lazy(() =>
+  import("../learning/foundations/PronunciationCurriculumScreen").then((m) => ({
+    default: m.PronunciationCurriculumScreen,
+  }))
+);
 const HadithLessonScreen = lazy(() =>
   import("../learning/hadith/HadithLessonScreen").then((m) => ({
     default: m.HadithLessonScreen,
+  }))
+);
+const HadithCurriculumScreen = lazy(() =>
+  import("../learning/hadith/HadithCurriculumScreen").then((m) => ({
+    default: m.HadithCurriculumScreen,
   }))
 );
 
@@ -321,12 +331,15 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
     if (state.id === "skill-hub") return <SkillExerciseHub dispatch={dispatch} />;
     if (state.id === "foundation-lesson")
       return <FoundationLessonScreen lessonId={state.lessonId} dispatch={dispatch} />;
+    if (state.id === "pronunciation-curriculum")
+      return <PronunciationCurriculumScreen dispatch={dispatch} />;
     if (state.id === "figma-pronunciation-lesson")
       return (
         <FigmaPronunciationLessonScreen lessonNumber={state.lessonNumber} dispatch={dispatch} />
       );
     if (state.id === "hadith-lesson")
       return <HadithLessonScreen lessonId={state.lessonId} dispatch={dispatch} />;
+    if (state.id === "hadith-curriculum") return <HadithCurriculumScreen dispatch={dispatch} />;
 
     if (state.id === "skill-exercise") {
       const SkillExercise = SKILL_EXERCISES[state.exerciseId];

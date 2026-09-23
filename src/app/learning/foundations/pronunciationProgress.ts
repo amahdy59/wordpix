@@ -13,6 +13,26 @@ export type PronunciationProgress = Record<string, PronunciationLessonProgress>;
 
 const clamp = (value: number) => Math.max(0, Math.min(100, Math.round(value)));
 
+export function checkpointPronunciationLesson(
+  progress: PronunciationProgress,
+  lessonId: string,
+  currentStage: number,
+  now = new Date()
+): PronunciationProgress {
+  const previous = progress[lessonId];
+  return {
+    ...progress,
+    [lessonId]: {
+      status: previous?.status === "mastered" ? "mastered" : "in-progress",
+      currentStage: Math.max(0, Math.floor(currentStage)),
+      bestScorePercent: previous?.bestScorePercent ?? 0,
+      sessions: previous?.sessions ?? 0,
+      ...(previous?.nextReviewAt ? { nextReviewAt: previous.nextReviewAt } : {}),
+      updatedAt: now.toISOString(),
+    },
+  };
+}
+
 export function normalizePronunciationProgress(value: unknown): PronunciationProgress {
   if (!value || typeof value !== "object" || Array.isArray(value)) return {};
   const output: PronunciationProgress = {};

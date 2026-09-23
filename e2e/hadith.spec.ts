@@ -6,7 +6,7 @@ test("all Hadith routes use the requested lesson and one canonical source block"
 }) => {
   await page.goto("/#/hadith/lesson-42");
   await expect(page.getByRole("heading", { name: "Hope, Prayer, and Forgiveness" })).toBeVisible();
-  await expect(page.getByText("Lesson 42 of 42", { exact: true })).toBeVisible();
+  await expect(page.getByRole("main").getByText("Lesson 42 of 42", { exact: true })).toBeVisible();
 
   await page.getByRole("button", { name: /Read & Listen/ }).click();
   const canonical = page.getByText(/O son of Adam, so long as you call upon Me/i, {

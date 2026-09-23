@@ -36,6 +36,10 @@ describe("Hash round-tripping", () => {
       { id: "profile" },
       { id: "lesson-entry" },
       { id: "skill-hub" },
+      { id: "pronunciation-curriculum" },
+      { id: "figma-pronunciation-lesson", lessonNumber: 68 },
+      { id: "hadith-curriculum" },
+      { id: "hadith-lesson", lessonId: "hadith-42" },
       lessonAt(0),
       lessonAt(3),
       lessonAt(4),
@@ -83,6 +87,13 @@ describe("Hash round-tripping", () => {
       id: "foundation-lesson",
       lessonId: "word-stress",
     });
+  });
+
+  it("exposes dedicated pronunciation and Hadith curriculum indexes", () => {
+    expect(hashToScreen("#/pronunciation")?.screen).toEqual({
+      id: "pronunciation-curriculum",
+    });
+    expect(hashToScreen("#/hadith")?.screen).toEqual({ id: "hadith-curriculum" });
   });
 
   it("gives onboarding its required step, not a bare id", () => {

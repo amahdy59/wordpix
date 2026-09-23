@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { HADITH_EXERCISE_SETS } from "../learning/hadith/hadithExerciseCatalog";
+import {
+  HADITH_EXERCISE_SETS,
+  getHadithExerciseSet,
+} from "../learning/hadith/hadithExerciseCatalog";
+import { FIGMA_HADITH_LESSONS } from "../learning/hadith/figmaHadithCatalog";
 import {
   checkpointHadithLesson,
   completeHadithLesson,
@@ -7,7 +11,7 @@ import {
 } from "../learning/hadith/hadithProgress";
 
 describe("Hadith pilot exercises", () => {
-  it("provides three valid retrieval activities for lessons 2 through 5", () => {
+  it("preserves bespoke retrieval activities for lessons 2 through 5", () => {
     expect(HADITH_EXERCISE_SETS.map((set) => set.lessonId)).toEqual([
       "hadith-02",
       "hadith-03",
@@ -19,6 +23,27 @@ describe("Hadith pilot exercises", () => {
       for (const exercise of set.exercises) {
         if (exercise.type === "single-choice") {
           expect(exercise.options.some((option) => option.id === exercise.answerId)).toBe(true);
+        } else {
+          expect(new Set(exercise.answerOrder)).toEqual(
+            new Set(exercise.items.map((item) => item.id))
+          );
+        }
+      }
+    }
+  });
+
+  it("provides three validated, source-grounded activities for every catalog lesson", () => {
+    for (const lesson of FIGMA_HADITH_LESSONS) {
+      const set = getHadithExerciseSet(lesson.id);
+      expect(set?.lessonId).toBe(lesson.id);
+      expect(set?.exercises).toHaveLength(3);
+
+      for (const exercise of set?.exercises ?? []) {
+        if (exercise.type === "single-choice") {
+          expect(exercise.options.some((option) => option.id === exercise.answerId)).toBe(true);
+          expect(new Set(exercise.options.map((option) => option.label)).size).toBe(
+            exercise.options.length
+          );
         } else {
           expect(new Set(exercise.answerOrder)).toEqual(
             new Set(exercise.items.map((item) => item.id))

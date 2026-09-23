@@ -46,6 +46,14 @@ const STATIC_ROUTES: Record<string, { title: string; getScreen: () => Screen }> 
   "#/review": { title: "WordPix — Daily Review", getScreen: () => ({ id: "review" }) },
   "#/profile": { title: "WordPix — Learner Profile", getScreen: () => ({ id: "profile" }) },
   "#/skills": { title: "WordPix — Skill Exercises", getScreen: () => ({ id: "skill-hub" }) },
+  "#/pronunciation": {
+    title: "WordPix — Pronunciation Curriculum",
+    getScreen: () => ({ id: "pronunciation-curriculum" }),
+  },
+  "#/hadith": {
+    title: "WordPix — Hadith Curriculum",
+    getScreen: () => ({ id: "hadith-curriculum" }),
+  },
   "#/onboarding": {
     title: "WordPix — Welcome",
     // Onboarding needs its step: `{ id: "onboarding" }` alone renders nothing.
@@ -115,6 +123,9 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
     const lesson = getFoundationLesson(screen.lessonId);
     return { hash: `#/foundations/${lesson.id}`, title: `WordPix — ${lesson.title}` };
   }
+  if (screen.id === "pronunciation-curriculum") {
+    return { hash: "#/pronunciation", title: "WordPix — Pronunciation Curriculum" };
+  }
   if (screen.id === "figma-pronunciation-lesson") {
     const lesson = getFigmaPronunciationLesson(screen.lessonNumber);
     return {
@@ -129,6 +140,9 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
       hash: `#/hadith/lesson-${lesson?.number ?? 1}`,
       title: `WordPix — ${lesson?.title ?? "Hadith lesson"}`,
     };
+  }
+  if (screen.id === "hadith-curriculum") {
+    return { hash: "#/hadith", title: "WordPix — Hadith Curriculum" };
   }
   if (screen.id === "lesson") {
     const world = resolveUnitForLesson(screen.lessonId);

@@ -31,11 +31,6 @@ import {
   getFoundationLesson,
 } from "../learning/foundations/foundationCurriculum";
 import { getRecommendedFoundationLessonId } from "../learning/foundations/foundationProgress";
-import {
-  FIGMA_PRONUNCIATION_LESSONS,
-  getFigmaPronunciationActivityData,
-  getPronunciationChapter,
-} from "../learning/foundations/figmaPronunciationCatalog";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -406,85 +401,56 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         </div>
       </section>
 
-      {showAllFoundationLessons && (
-        <section
-          aria-labelledby="figma-pronunciation-heading"
-          className="rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 sm:p-6"
+      <section className="grid gap-4 md:grid-cols-2" aria-label={t("learn.specialCurricula")}>
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
+          className="group min-h-[180px] rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 text-start shadow-wp-xs hover:border-primary hover:bg-primary/10 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
         >
-          <div className="flex flex-wrap items-start justify-between gap-4">
-            <div>
-              <p className="text-xs font-black uppercase tracking-wide text-primary">
-                {t("learn.figmaBadge")}
-              </p>
-              <h2
-                id="figma-pronunciation-heading"
-                className="mt-1 text-xl font-black text-foreground sm:text-2xl"
-              >
-                {t("learn.figmaTitle")}
-              </h2>
-              <p className="mt-2 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
-                {t("learn.figmaDesc", {
-                  total: FIGMA_PRONUNCIATION_LESSONS.length,
-                })}
-              </p>
-              <p className="mt-2 text-sm font-black text-primary">
-                {t("learn.figmaProgress", {
-                  completed: Object.values(learnerState.pronunciationProgress).filter(
-                    (item) => item.status === "mastered"
-                  ).length,
-                  total: FIGMA_PRONUNCIATION_LESSONS.length,
-                })}
-              </p>
-            </div>
-          </div>
-          <ol className="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-            {FIGMA_PRONUNCIATION_LESSONS.map((sourceLesson) => {
-              const activity = getFigmaPronunciationActivityData(sourceLesson.number);
-              const status =
-                learnerState.pronunciationProgress[
-                  `lesson-${String(sourceLesson.number).padStart(2, "0")}`
-                ]?.status;
-              return (
-                <li key={sourceLesson.number}>
-                  <button
-                    type="button"
-                    onClick={() =>
-                      dispatch({
-                        type: "OPEN_FIGMA_PRONUNCIATION",
-                        lessonNumber: sourceLesson.number,
-                      })
-                    }
-                    className="flex min-h-[68px] w-full items-center gap-3 rounded-xl border border-border bg-wp-card p-3 text-start hover:border-primary/45 hover:bg-primary/5 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-                  >
-                    <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-sm font-black text-primary">
-                      {sourceLesson.number}
-                    </span>
-                    <span className="min-w-0 flex-1">
-                      <span className="block text-[11px] font-black uppercase tracking-wide text-primary">
-                        {t(getPronunciationChapter(sourceLesson.number).titleKey)}
-                      </span>
-                      <span className="block truncate font-black text-foreground">
-                        {activity.title}
-                      </span>
-                      <span className="mt-0.5 block text-xs font-semibold text-muted-foreground">
-                        {status === "mastered"
-                          ? t("learn.figmaMastered")
-                          : status === "needs-practice"
-                            ? t("learn.figmaReview")
-                            : t("learn.figmaItemHint")}
-                      </span>
-                    </span>
-                    <ArrowRight
-                      className="size-4 shrink-0 text-primary rtl:rotate-180"
-                      aria-hidden
-                    />
-                  </button>
-                </li>
-              );
+          <Headphones className="size-8 text-primary" aria-hidden />
+          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
+            {t("pronunciation.curriculumBadge")}
+          </p>
+          <h2 className="mt-1 text-xl font-black text-foreground">
+            {t("pronunciation.curriculumTitle")}
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+            {t("pronunciation.curriculumCardDescription", {
+              completed: Object.values(learnerState.pronunciationProgress).filter(
+                (item) => item.status === "mastered"
+              ).length,
+              total: 68,
             })}
-          </ol>
-        </section>
-      )}
+          </p>
+          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
+            {t("pronunciation.viewCurriculum")}
+            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+          </span>
+        </button>
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
+          className="group min-h-[180px] rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 text-start shadow-wp-xs hover:border-primary hover:bg-primary/10 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
+        >
+          <BookOpen className="size-8 text-primary" aria-hidden />
+          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
+            {t("hadith.curriculumBadge")}
+          </p>
+          <h2 className="mt-1 text-xl font-black text-foreground">{t("hadith.curriculumTitle")}</h2>
+          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+            {t("hadith.curriculumCardDescription", {
+              completed: Object.values(learnerState.hadithProgress).filter(
+                (item) => item.status === "mastered"
+              ).length,
+              total: 42,
+            })}
+          </p>
+          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
+            {t("hadith.viewCurriculum")}
+            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+          </span>
+        </button>
+      </section>
 
       <section
         aria-labelledby="recommended-heading"

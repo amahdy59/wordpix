@@ -64,10 +64,16 @@ function RichHadithLessonScreen({
   lesson: HadithLesson;
 }) {
   const { t } = useI18n();
-  const [stageIndex, setStageIndex] = useState(0);
+  const { state, recordHadithCheckpoint, recordHadithCompletion } = useLearner();
+  const savedProgress = state.hadithProgress[lesson.id];
+  const [stageIndex, setStageIndex] = useState(
+    Math.min(HADITH_STAGE_IDS.length - 1, Math.max(0, savedProgress?.currentStage ?? 0))
+  );
   const [warmupAnswer, setWarmupAnswer] = useState<string | null>(null);
   const [practiceAnswers, setPracticeAnswers] = useState<Record<string, string>>({});
-  const [confidence, setConfidence] = useState<string | null>(null);
+  const [confidence, setConfidence] = useState<HadithConfidence | null>(
+    savedProgress?.confidence ?? null
+  );
   const stage = HADITH_STAGE_IDS[stageIndex];
   const { speak, stop, isPlaying } = useAudio({ lang: "en-US", rate: 0.9, preferLocal: true });
   const practiceCorrect = useMemo(
@@ -75,6 +81,7 @@ function RichHadithLessonScreen({
     [lesson.practice, practiceAnswers]
   );
   const audioAssets = getHadithAudioAssets(lesson.id);
+  const practiceScore = Math.round((practiceCorrect / lesson.practice.length) * 100);
 
   const playTrack = (trackId: string) => {
     const isArabic = trackId === "arabic";
@@ -87,8 +94,20 @@ function RichHadithLessonScreen({
   };
 
   const goNext = () => {
-    if (stageIndex < HADITH_STAGE_IDS.length - 1) setStageIndex((value) => value + 1);
-    else dispatch({ type: "GO", to: "explore" });
+    if (stageIndex < HADITH_STAGE_IDS.length - 1) {
+      const nextStage = stageIndex + 1;
+      setStageIndex(nextStage);
+      recordHadithCheckpoint(
+        lesson.id,
+        nextStage,
+        stage,
+        stage === "practice" ? practiceScore : undefined
+      );
+      return;
+    }
+    if (!confidence) return;
+    recordHadithCompletion(lesson.id, practiceScore, confidence);
+    dispatch({ type: "GO", to: "hadith-curriculum" });
   };
 
   const reset = () => {
@@ -107,7 +126,7 @@ function RichHadithLessonScreen({
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 p-4 sm:p-8">
         <button
           type="button"
-          onClick={() => dispatch({ type: "GO", to: "explore" })}
+          onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
           className="min-h-11 w-fit rounded-xl px-3 font-bold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <ArrowLeft className="me-2 inline size-4 rtl:rotate-180" aria-hidden />
@@ -137,7 +156,10 @@ function RichHadithLessonScreen({
                 <li key={id}>
                   <button
                     type="button"
-                    onClick={() => setStageIndex(index)}
+                    onClick={() => {
+                      setStageIndex(index);
+                      recordHadithCheckpoint(lesson.id, index);
+                    }}
                     aria-current={index === stageIndex ? "step" : undefined}
                     className={`min-h-11 w-full rounded-xl px-2 text-xs font-black focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${index === stageIndex ? "bg-primary text-primary-foreground" : index < stageIndex ? "bg-primary/15 text-primary" : "bg-muted text-muted-foreground"}`}
                   >
@@ -454,7 +476,7 @@ function RichHadithLessonScreen({
                     key={value}
                     type="button"
                     aria-pressed={confidence === value}
-                    onClick={() => setConfidence(value)}
+                    onClick={() => setConfidence(value as HadithConfidence)}
                     className={`min-h-12 rounded-xl border px-3 text-sm font-bold focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${confidence === value ? "border-primary bg-primary text-primary-foreground" : "border-border hover:border-primary"}`}
                   >
                     {t(`hadith.confidence.${value}`)}
@@ -477,6 +499,12 @@ function RichHadithLessonScreen({
           <button
             type="button"
             onClick={goNext}
+            disabled={stage === "check-review" && !confidence}
+            aria-describedby={
+              stage === "check-review" && !confidence
+                ? "rich-hadith-confidence-required"
+                : undefined
+            }
             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-primary px-5 font-black text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             {stageIndex === HADITH_STAGE_IDS.length - 1
@@ -485,6 +513,14 @@ function RichHadithLessonScreen({
             <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
           </button>
         </div>
+        {stage === "check-review" && !confidence && (
+          <p
+            id="rich-hadith-confidence-required"
+            className="text-end text-sm font-semibold text-muted-foreground"
+          >
+            {t("hadith.chooseConfidence")}
+          </p>
+        )}
         <div className="sr-only" role="status" aria-live="polite">
           {isPlaying ? t("hadith.audioPlaying") : ""}
         </div>
@@ -506,7 +542,9 @@ function CatalogHadithLessonScreen({
   const { t } = useI18n();
   const { state, recordHadithCheckpoint, recordHadithCompletion } = useLearner();
   const savedProgress = state.hadithProgress[lesson.id];
-  const [stageIndex, setStageIndex] = useState(savedProgress?.currentStage ?? 0);
+  const [stageIndex, setStageIndex] = useState(
+    Math.min(HADITH_STAGE_IDS.length - 1, Math.max(0, savedProgress?.currentStage ?? 0))
+  );
   const [confidence, setConfidence] = useState<HadithConfidence | null>(
     savedProgress?.confidence ?? null
   );
@@ -533,7 +571,7 @@ function CatalogHadithLessonScreen({
       return;
     }
     if (lesson.number > 1) openLesson(lesson.number - 1);
-    else dispatch({ type: "GO", to: "explore" });
+    else dispatch({ type: "GO", to: "hadith-curriculum" });
   };
 
   const goNext = () => {
@@ -549,9 +587,9 @@ function CatalogHadithLessonScreen({
       return;
     }
     if (!confidence) return;
-    recordHadithCompletion(lesson.id, exerciseSet ? practiceScore : 100, confidence);
+    recordHadithCompletion(lesson.id, practiceScore, confidence);
     if (lesson.number < HADITH_LESSONS.length) openLesson(lesson.number + 1);
-    else dispatch({ type: "GO", to: "explore" });
+    else dispatch({ type: "GO", to: "hadith-curriculum" });
   };
 
   const playCanonicalText = (language: "ar" | "en") => {
@@ -571,7 +609,7 @@ function CatalogHadithLessonScreen({
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 p-4 sm:p-8">
         <button
           type="button"
-          onClick={() => dispatch({ type: "GO", to: "explore" })}
+          onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
           className="min-h-11 w-fit rounded-xl px-3 font-bold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <ArrowLeft className="me-2 inline size-4 rtl:rotate-180" aria-hidden />
@@ -600,7 +638,10 @@ function CatalogHadithLessonScreen({
                 <li key={id}>
                   <button
                     type="button"
-                    onClick={() => setStageIndex(index)}
+                    onClick={() => {
+                      setStageIndex(index);
+                      recordHadithCheckpoint(lesson.id, index);
+                    }}
                     aria-current={index === stageIndex ? "step" : undefined}
                     className={`min-h-11 w-full rounded-xl px-2 text-xs font-black focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${index === stageIndex ? "bg-primary text-primary-foreground" : index < stageIndex ? "bg-primary/15 text-primary" : "bg-muted text-muted-foreground"}`}
                   >

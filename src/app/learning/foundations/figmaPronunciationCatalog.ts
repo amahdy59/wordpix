@@ -65,6 +65,8 @@ export interface FigmaPronunciationActivityData {
   readonly contextItems: readonly FigmaPronunciationImage[];
   readonly teachWords: readonly string[];
   readonly transferWords: readonly string[];
+  readonly contrastPairs: readonly (readonly [string, string])[];
+  readonly focus: string;
 }
 
 const uniqueItems = (items: readonly FigmaPronunciationImage[]) => {
@@ -108,6 +110,19 @@ export function getFigmaPronunciationActivityData(number: number): FigmaPronunci
     teachItems[0]?.label ??
     items[0]?.label ??
     title;
+  const contrastLine = lesson.text.find((line) => line.includes("|") && /(?:\/|–|—)/.test(line));
+  const contrastPairs = (contrastLine?.split("|") ?? [])
+    .map((pair) =>
+      pair
+        .trim()
+        .split(/\s*(?:\/|–|—)\s*/)
+        .filter(Boolean)
+    )
+    .filter((pair): pair is [string, string] => pair.length === 2)
+    .map(([first, second]) => [first, second] as const);
+  const focus =
+    valueAfter(lesson.text, /^(?:Linguistic Focus|Acoustic Cue|Contrast Focus|Focus):/i) ??
+    objective;
   return {
     title,
     objective,
@@ -120,6 +135,8 @@ export function getFigmaPronunciationActivityData(number: number): FigmaPronunci
     contextItems,
     teachWords: [...teachItems, ...guidedItems].map((item) => item.label),
     transferWords: transferItems.map((item) => item.label),
+    contrastPairs,
+    focus,
   };
 }
 
