@@ -11,7 +11,7 @@ on:
 
   # 2. Scheduled heartbeat — catches silent regressions between pushes
   schedule:
-    - cron: "*/30 * * * *"   # every 30 minutes
+    - cron: "*/30 * * * *" # every 30 minutes
 
   # 3. Manual trigger with optional URL override
   workflow_dispatch:
@@ -22,9 +22,9 @@ on:
         default: ""
 
 permissions:
-  contents: write     # push auto-heal commits
-  issues: write       # open/close failure issues
-  actions: write      # re-trigger failed workflow runs
+  contents: write # push auto-heal commits
+  issues: write # open/close failure issues
+  actions: write # re-trigger failed workflow runs
 
 env:
   DEPLOY_URL: ${{ github.event.inputs.deploy_url || 'https://amahdy59.github.io/wordpix' }}
@@ -72,7 +72,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 12.4.2
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

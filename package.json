@@ -2,6 +2,7 @@
   "name": "wordpix",
   "private": true,
   "version": "0.1.0",
+  "packageManager": "pnpm@12.4.2",
   "type": "module",
   "scripts": {
     "assets:cors": "node scripts/setup_r2_cors.cjs",

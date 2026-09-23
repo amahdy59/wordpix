@@ -16,63 +16,63 @@ on:
   workflow_dispatch:
     inputs:
       units:
-        description: 'Units to sync, space separated (blank = all 182)'
+        description: "Units to sync, space separated (blank = all 182)"
         required: false
-        default: ''
+        default: ""
       images:
-        description: 'Download artwork'
+        description: "Download artwork"
         type: boolean
         default: true
       content:
-        description: 'Dump learning-material JSON'
+        description: "Dump learning-material JSON"
         type: boolean
         default: true
       force:
-        description: 'Re-download artwork that is already real'
+        description: "Re-download artwork that is already real"
         type: boolean
         default: false
       max_width:
-        description: 'Downscale card artwork wider than this'
+        description: "Downscale card artwork wider than this"
         required: false
-        default: '1024'
+        default: "1024"
       scene_width:
-        description: 'Downscale scene artwork wider than this'
+        description: "Downscale scene artwork wider than this"
         required: false
-        default: '1920'
+        default: "1920"
       quality:
-        description: 'AVIF quality (lower is smaller; 55 is the tuned default)'
+        description: "AVIF quality (lower is smaller; 55 is the tuned default)"
         required: false
-        default: '55'
+        default: "55"
       concurrency:
-        description: 'Parallel downloads'
+        description: "Parallel downloads"
         required: false
-        default: '16'
+        default: "16"
       retarget_paths:
-        description: 'Repoint lessons.ts at the new artwork and prune the old (turn OFF for batched runs)'
+        description: "Repoint lessons.ts at the new artwork and prune the old (turn OFF for batched runs)"
         type: boolean
         default: true
       branch:
-        description: 'Branch to push artwork to. Reuse the same name to RESUME a failed run.'
+        description: "Branch to push artwork to. Reuse the same name to RESUME a failed run."
         required: false
-        default: ''
+        default: ""
       checkpoint_every:
-        description: 'Commit and push after this many units (0 = only at the end)'
+        description: "Commit and push after this many units (0 = only at the end)"
         required: false
-        default: '10'
+        default: "10"
       probe:
-        description: 'Fetch one image, report the resolution actually available, and stop'
+        description: "Fetch one image, report the resolution actually available, and stop"
         type: boolean
         default: false
       include_new:
-        description: 'Also fetch units Figma has that the app does not'
+        description: "Also fetch units Figma has that the app does not"
         type: boolean
         default: false
       debug_pairing:
-        description: 'Print frame geometry for diagnosing unit/materials pairing'
+        description: "Print frame geometry for diagnosing unit/materials pairing"
         type: boolean
         default: false
       dry_run:
-        description: 'Report only, write nothing'
+        description: "Report only, write nothing"
         type: boolean
         default: false
 
@@ -95,13 +95,13 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 12.4.2
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'pnpm'
+          cache: "pnpm"
 
       - name: Install dependencies
         # sharp is a devDependency and needs its native binary, so the repo's

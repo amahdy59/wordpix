@@ -4,7 +4,9 @@ overrides:
   nanoid: ">=3.3.18"
 allowBuilds:
   esbuild: true
-  msw: set this to true or false
+  # MSW's optional postinstall only prints a sponsorship message; no runtime
+  # artifact is required, so CI deliberately keeps it disabled.
+  msw: false
 supportedArchitectures:
   os:
     - linux
