@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { Check, ChevronDown, Mic, Sparkles, Volume2 } from "lucide-react";
+import { ChevronDown, Mic, Sparkles, Volume2 } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import { useAudio } from "../../../shared/useAudio";
+import { SpeechRecordCompare } from "../../../shared/SpeechRecordCompare";
+import { TaskChecklist } from "../../../shared/TaskChecklist";
 import type { ParsedSpeakTask } from "../hadithLessonContent";
 
 interface Props {
@@ -122,6 +124,14 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
         </details>
       </header>
 
+      <SpeechRecordCompare
+        target={speakData.description || t("hadith.pilot.speak.description")}
+        modelText={modelText}
+        title={t("hadith.speakingStudio")}
+        description={t("hadith.speakingStudioHelp")}
+        maxDurationSeconds={90}
+      />
+
       {/* Interactive Speaking Self-Check */}
       <section
         className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8"
@@ -138,36 +148,13 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
           {t("hadith.speakChecklistDescription")}
         </p>
 
-        <div className="mt-5 grid gap-3 sm:grid-cols-2">
-          {speakData.checklist.map((item, index) => {
-            const isChecked = completedChecks.has(index);
-            return (
-              <button
-                key={index}
-                type="button"
-                role="checkbox"
-                aria-checked={isChecked}
-                onClick={() => toggleCheck(index)}
-                className={`flex min-h-12 w-full items-center gap-3.5 rounded-2xl border-2 p-4 text-start text-sm font-bold transition-all active:scale-[0.99] ${focusRing} ${
-                  isChecked
-                    ? "border-primary bg-primary/10 text-primary shadow-sm"
-                    : "border-border bg-background text-foreground hover:border-primary/40 hover:bg-muted/40"
-                }`}
-              >
-                <span
-                  className={`flex size-6 shrink-0 items-center justify-center rounded-lg border-2 transition-all ${
-                    isChecked
-                      ? "border-primary bg-primary text-primary-foreground"
-                      : "border-border bg-background"
-                  }`}
-                  aria-hidden
-                >
-                  {isChecked && <Check className="size-4 stroke-[3]" />}
-                </span>
-                <span>{item}</span>
-              </button>
-            );
-          })}
+        <div className="mt-5">
+          <TaskChecklist
+            items={speakData.checklist}
+            checked={completedChecks}
+            onToggle={toggleCheck}
+            columns={2}
+          />
         </div>
       </section>
     </section>

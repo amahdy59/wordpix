@@ -1,11 +1,12 @@
 import { CheckCircle2, ChevronDown, HelpCircle, Lightbulb, Target } from "lucide-react";
 import { useI18n } from "../../../../i18n";
-import type { HadithConfidence } from "../hadithProgress";
+import { getHadithReviewIntervalDays, type HadithConfidence } from "../hadithProgress";
 import type { ParsedReviewItem } from "../hadithLessonContent";
 
 interface Props {
   reviewItems: ParsedReviewItem[];
   confidence: HadithConfidence | null;
+  practiceScore: number;
   onSelectConfidence: (confidence: HadithConfidence) => void;
   confidenceError?: boolean;
 }
@@ -16,6 +17,7 @@ const focusRing =
 export function HadithReviewStage({
   reviewItems,
   confidence,
+  practiceScore,
   onSelectConfidence,
   confidenceError,
 }: Props) {
@@ -118,6 +120,7 @@ export function HadithReviewStage({
           <div className="mt-4 grid gap-3 sm:grid-cols-3">
             {(["again", "supported", "ready"] as const).map((value) => {
               const isSelected = confidence === value;
+              const reviewDays = getHadithReviewIntervalDays(practiceScore, value);
               return (
                 <button
                   key={value}
@@ -131,12 +134,23 @@ export function HadithReviewStage({
                       : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-muted/40"
                   }`}
                 >
-                  {t(`hadith.confidence.${value}`) ||
-                    (value === "again"
-                      ? "I need more practice"
-                      : value === "supported"
-                        ? "I can continue with support"
-                        : "I feel ready")}
+                  <span>
+                    <span className="block">
+                      {t(`hadith.confidence.${value}`) ||
+                        (value === "again"
+                          ? "I need more practice"
+                          : value === "supported"
+                            ? "I can continue with support"
+                            : "I feel ready")}
+                    </span>
+                    <span
+                      className={`mt-1 block text-xs ${isSelected ? "text-primary-foreground/90" : "text-muted-foreground"}`}
+                    >
+                      {reviewDays === 1
+                        ? t("hadith.reviewTomorrow")
+                        : t("hadith.reviewInDays", { days: reviewDays })}
+                    </span>
+                  </span>
                 </button>
               );
             })}
@@ -146,6 +160,18 @@ export function HadithReviewStage({
             <p className="mt-3 text-sm font-bold text-feedback-error-foreground" role="alert">
               {t("hadith.chooseConfidence") ||
                 "Choose a confidence level before completing the lesson."}
+            </p>
+          )}
+          {confidence && (
+            <p
+              className="mt-4 rounded-2xl border border-primary/25 bg-primary/5 p-4 text-sm font-bold text-foreground"
+              role="status"
+            >
+              {getHadithReviewIntervalDays(practiceScore, confidence) === 1
+                ? t("hadith.reviewPlanTomorrowConfirmed")
+                : t("hadith.reviewPlanConfirmed", {
+                    days: getHadithReviewIntervalDays(practiceScore, confidence),
+                  })}
             </p>
           )}
         </fieldset>

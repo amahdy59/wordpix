@@ -53,13 +53,18 @@ describe("Conversation & Debate (B1–C2) Curriculum", () => {
 
       // 3. Language Bank (exactly 10 items)
       expect(unit.languageBank).toHaveLength(10);
-      unit.languageBank.forEach((item) => {
+      unit.languageBank.forEach((item, itemIndex) => {
         expect(item.term).toBeTruthy();
         expect(item.termAr).not.toBe(item.term);
         expect(item.meaning).toBeTruthy();
         expect(item.meaningAr).not.toBe(item.meaning);
         expect(item.example).toBeTruthy();
         expect(item.imageDescription).toBeTruthy();
+        expect(item.imageSrc).toMatch(
+          new RegExp(
+            `^/conversation/v1/images/unit-${String(unit.unitNumber).padStart(2, "0")}/${String(itemIndex + 1).padStart(2, "0")}-[a-z0-9-]+\\.webp$`
+          )
+        );
       });
 
       // 4. Toolkit (4 functional templates)

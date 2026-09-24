@@ -1,4 +1,4 @@
-import { useState, type Dispatch, type KeyboardEvent } from "react";
+import { useEffect, useRef, useState, type Dispatch } from "react";
 import {
   ArrowLeft,
   MessageSquare,
@@ -8,11 +8,10 @@ import {
   HelpCircle,
   MessageSquareText,
   Award,
-  Check,
 } from "lucide-react";
 import type { Action } from "../../types";
 import { useLearner } from "../../context/LearnerContext";
-import { useI18n } from "../../context/I18nContext";
+import { useI18n } from "../../../i18n";
 import { getConversationUnit } from "./conversationCatalog";
 import { CONVERSATION_STAGE_IDS, type ConversationStageId } from "./conversationTypes";
 import { canCompleteConversationUnit } from "./conversationProgress";
@@ -23,6 +22,8 @@ import { ToolkitStage } from "./stages/ToolkitStage";
 import { QuizStage } from "./stages/QuizStage";
 import { DiscussionStage } from "./stages/DiscussionStage";
 import { ChallengeStage } from "./stages/ChallengeStage";
+import { LessonStageStepper } from "../../shared/LessonStageStepper";
+import { useLessonProgress } from "../../shared/useLessonProgress";
 
 interface Props {
   unitId: string;
@@ -53,24 +54,33 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
   } = useLearner();
   const { t } = useI18n();
   const unit = getConversationUnit(unitId);
+  const stagePanelRef = useRef<HTMLDivElement>(null);
   const progress = learnerState.conversationProgress?.[unitId];
-  const completedStages = new Set(progress?.completedStages ?? []);
   const isMastered = progress?.status === "mastered";
-  const firstIncompleteIndex = CONVERSATION_STAGE_IDS.findIndex(
-    (stage) => !completedStages.has(stage)
-  );
-  const maxUnlockedIndex = isMastered
-    ? CONVERSATION_STAGE_IDS.length - 1
-    : firstIncompleteIndex === -1
-      ? CONVERSATION_STAGE_IDS.length - 1
-      : firstIncompleteIndex;
-
-  const requestedInitialIndex = initialStage
-    ? CONVERSATION_STAGE_IDS.indexOf(initialStage)
-    : (progress?.currentStage ?? 0);
-  const initialIndex = Math.min(Math.max(0, requestedInitialIndex), maxUnlockedIndex);
+  const { completedStages, maxUnlockedIndex, initialIndex } = useLessonProgress({
+    stageIds: CONVERSATION_STAGE_IDS,
+    currentStage: progress?.currentStage,
+    requestedStage: initialStage ? CONVERSATION_STAGE_IDS.indexOf(initialStage) : undefined,
+    completedStages: progress?.completedStages,
+    isMastered,
+    lockFutureStages: true,
+  });
 
   const [activeStageIdx, setActiveStageIdx] = useState<number>(initialIndex);
+
+  const currentStageId = unit ? CONVERSATION_STAGE_IDS[activeStageIdx] : CONVERSATION_STAGE_IDS[0];
+  const stageAnnouncement = unit
+    ? t("conversation.stageAnnouncement", {
+        current: activeStageIdx + 1,
+        total: CONVERSATION_STAGE_IDS.length,
+        stage: t(`conversation.stages.${currentStageId}`),
+        level: unit.level,
+      })
+    : "";
+
+  useEffect(() => {
+    if (unit) stagePanelRef.current?.focus();
+  }, [activeStageIdx, unit]);
 
   if (!unit) {
     return (
@@ -87,8 +97,6 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
     );
   }
 
-  const currentStageId = CONVERSATION_STAGE_IDS[activeStageIdx];
-
   const navigateToStage = (newIdx: number) => {
     const clamped = Math.max(0, Math.min(maxUnlockedIndex, newIdx));
     setActiveStageIdx(clamped);
@@ -99,19 +107,6 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
     const clamped = Math.max(0, Math.min(CONVERSATION_STAGE_IDS.length - 1, newIdx));
     checkpointConversation(unit.id, clamped, currentStageId);
     setActiveStageIdx(clamped);
-  };
-
-  const handleStageKeyDown = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
-    if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
-    event.preventDefault();
-    const direction = event.key === "ArrowRight" ? 1 : -1;
-    const availableCount = maxUnlockedIndex + 1;
-    const nextIndex = (index + direction + availableCount) % availableCount;
-    navigateToStage(nextIndex);
-    const tabs = event.currentTarget.parentElement?.querySelectorAll<HTMLButtonElement>(
-      '[role="tab"]:not(:disabled)'
-    );
-    tabs?.[nextIndex]?.focus();
   };
 
   const handleVote = (optionId: string) => {
@@ -134,6 +129,9 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
       <h1 id="lesson-header-title" className="sr-only">
         {t("conversation.unitTitle", { number: unit.unitNumber, title: unit.title })}
       </h1>
+      <p className="sr-only" aria-live="polite">
+        {stageAnnouncement}
+      </p>
       {/* Sticky Header & Stepper */}
       <div className="sticky top-0 z-20 border-b border-border bg-background/95 backdrop-blur-md px-4 py-3 sm:px-8">
         <div className="mx-auto flex max-w-5xl flex-col gap-3">
@@ -158,59 +156,30 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
             </div>
           </div>
 
-          {/* Stepper Tabs Bar */}
-          <div
-            role="tablist"
-            aria-label={t("conversation.lessonStages")}
-            className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-1"
-          >
-            {STAGE_CONFIG.map((stage, idx) => {
-              const isActive = activeStageIdx === idx;
-              const isDone = completedStages.has(stage.id) || isMastered;
-              const isLocked = idx > maxUnlockedIndex;
-              const Icon = stage.icon;
-
-              return (
-                <button
-                  key={stage.id}
-                  type="button"
-                  role="tab"
-                  id={`tab-${stage.id}`}
-                  aria-selected={isActive}
-                  aria-current={isActive ? "step" : undefined}
-                  aria-controls={`panel-${stage.id}`}
-                  tabIndex={isActive ? 0 : -1}
-                  disabled={isLocked}
-                  onClick={() => navigateToStage(idx)}
-                  onKeyDown={(event) => handleStageKeyDown(event, idx)}
-                  className={`inline-flex min-h-[44px] shrink-0 items-center gap-2 rounded-2xl px-3.5 py-2 text-xs font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                    isActive
-                      ? "bg-primary text-primary-foreground shadow-wp-xs"
-                      : isDone
-                        ? "bg-accent/15 text-accent hover:bg-accent/25"
-                        : "bg-muted/40 text-muted-foreground hover:bg-muted hover:text-foreground disabled:cursor-not-allowed disabled:opacity-50"
-                  }`}
-                >
-                  {isDone && !isActive ? (
-                    <Check className="size-4 text-accent" aria-hidden />
-                  ) : (
-                    <Icon className="size-4 shrink-0" aria-hidden />
-                  )}
-                  <span>{t(`conversation.stages.${stage.id}`)}</span>
-                </button>
-              );
-            })}
-          </div>
+          <LessonStageStepper
+            stages={STAGE_CONFIG.map((stage, idx) => ({
+              id: stage.id,
+              label: t(`conversation.stages.${stage.id}`),
+              icon: stage.icon,
+              completed: completedStages.has(stage.id) || isMastered,
+              locked: idx > maxUnlockedIndex,
+            }))}
+            currentIndex={activeStageIdx}
+            onSelect={navigateToStage}
+            ariaLabel={t("conversation.lessonStages")}
+            stepLabel={(current, total) => t("conversation.stepOfTotal", { current, total })}
+          />
         </div>
       </div>
 
       {/* Main Stage Content */}
       <div
+        ref={stagePanelRef}
         id={`panel-${currentStageId}`}
         role="tabpanel"
-        aria-labelledby={`tab-${currentStageId}`}
+        aria-labelledby={`lesson-stage-${currentStageId}`}
         tabIndex={0}
-        className="mx-auto w-full max-w-5xl px-4 py-6 sm:px-8 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+        className="mx-auto w-full max-w-5xl scroll-mt-40 px-4 py-6 sm:px-8 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
       >
         {currentStageId === "warmup" && (
           <WarmupStage

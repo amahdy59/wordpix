@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { MessageSquareText, Globe2, ArrowRight, ArrowLeft, PenLine } from "lucide-react";
+import { MessageSquareText, ArrowRight, ArrowLeft, PenLine, Mic } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
-import { useI18n } from "../../../context/I18nContext";
+import { useI18n } from "../../../../i18n";
+import { SpeechRecordCompare } from "../../../shared/SpeechRecordCompare";
+import { BilingualTextBlock, LanguageToggle } from "../../../shared/BilingualText";
 
 interface Props {
   unit: ConversationUnit;
@@ -15,6 +17,7 @@ export function DiscussionStage({ unit, initialNotes, onSaveNotes, onNext, onPre
   const { t } = useI18n();
   const [showArabic, setShowArabic] = useState(false);
   const [notes, setNotes] = useState<string>(initialNotes);
+  const [practicePromptIndex, setPracticePromptIndex] = useState(0);
   const hasArabicTranslation = unit.discussion.some((item) =>
     /[\u0600-\u06ff]/.test(item.promptAr ?? "")
   );
@@ -28,20 +31,18 @@ export function DiscussionStage({ unit, initialNotes, onSaveNotes, onNext, onPre
           {t("conversation.discussionStage")}
         </span>
         {hasArabicTranslation && (
-          <button
-            type="button"
-            onClick={() => setShowArabic((prev) => !prev)}
-            className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border border-border bg-card px-3.5 py-1.5 text-xs font-bold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            <Globe2 className="size-4" aria-hidden />
-            {showArabic ? t("conversation.englishOnly") : t("conversation.arabicTranslation")}
-          </button>
+          <LanguageToggle
+            showArabic={showArabic}
+            onToggle={() => setShowArabic((prev) => !prev)}
+            showLabel={t("conversation.arabicTranslation")}
+            hideLabel={t("conversation.englishOnly")}
+          />
         )}
       </div>
 
       {/* 6 Discussion Prompts */}
       <div className="grid gap-4 sm:grid-cols-2">
-        {unit.discussion.map((item) => (
+        {unit.discussion.map((item, index) => (
           <article
             key={item.id}
             className="flex flex-col justify-between rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-wp-xs hover:border-primary/40"
@@ -55,21 +56,42 @@ export function DiscussionStage({ unit, initialNotes, onSaveNotes, onNext, onPre
                   {item.title}
                 </h2>
               </div>
-              <p className="mt-3 text-base font-semibold leading-relaxed text-foreground">
-                {item.prompt}
-              </p>
-              {showArabic && (
-                <p
-                  dir="rtl"
-                  className="mt-2 text-sm font-medium text-muted-foreground font-arabic leading-relaxed"
-                >
-                  {item.promptAr}
-                </p>
-              )}
+              <BilingualTextBlock
+                english={item.prompt}
+                arabic={item.promptAr}
+                showArabic={showArabic}
+                className="mt-3"
+                englishClassName="text-base font-semibold leading-relaxed text-foreground"
+                arabicClassName="text-sm font-medium leading-relaxed text-muted-foreground"
+              />
+              <button
+                type="button"
+                onClick={() => setPracticePromptIndex(index)}
+                aria-pressed={practicePromptIndex === index}
+                className={`mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border px-3 text-sm font-black transition-colors active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                  practicePromptIndex === index
+                    ? "border-primary bg-primary text-primary-foreground"
+                    : "border-border bg-background text-foreground hover:bg-muted"
+                }`}
+              >
+                <Mic className="size-4" aria-hidden />
+                {practicePromptIndex === index
+                  ? t("conversation.speakingPromptSelected")
+                  : t("conversation.practiceThisPrompt")}
+              </button>
             </div>
           </article>
         ))}
       </div>
+
+      <SpeechRecordCompare
+        key={unit.discussion[practicePromptIndex]?.id}
+        target={unit.discussion[practicePromptIndex]?.prompt ?? unit.discussion[0]?.prompt ?? ""}
+        modelText={unit.toolkit.phrases.map((phrase) => phrase.example).join(" ")}
+        title={t("conversation.discussionSpeakingStudio")}
+        description={t("conversation.discussionSpeakingHelp")}
+        maxDurationSeconds={90}
+      />
 
       {/* Reflection Notes Scratchpad */}
       <section

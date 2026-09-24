@@ -1,8 +1,9 @@
 import { useMemo, useState } from "react";
-import { Check, Image as ImageIcon, Volume2 } from "lucide-react";
+import { Check, Image as ImageIcon } from "lucide-react";
 import { resolveAssetUrl } from "../../../../utils/assetUrl";
 import { useI18n } from "../../../../i18n";
 import { useAudio } from "../../../shared/useAudio";
+import { AudioButton } from "../../../shared/AudioButton";
 import { getHadithVisualVocabulary } from "../figmaHadithCatalog";
 
 interface VocabularyItem {
@@ -19,8 +20,6 @@ interface LanguageItem {
 }
 
 const PART_OF_SPEECH = /^(?:noun(?: phrase)?|verb|adjective|adverb|phrase|expression)$/i;
-const focusRing =
-  "focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary";
 
 function section(lines: readonly string[], start: RegExp, end: RegExp): string[] {
   const startIndex = lines.findIndex((line) => start.test(line));
@@ -79,30 +78,6 @@ function valueAfter(lines: readonly string[], heading: RegExp) {
   return index >= 0 ? lines[index + 1] : undefined;
 }
 
-function AudioButton({ text, label }: { text: string; label?: string }) {
-  const { t } = useI18n();
-  const { speak, isPlaying, isError } = useAudio({ lang: "en-US", rate: 0.82, preferLocal: true });
-
-  return (
-    <button
-      type="button"
-      onClick={() => speak(text)}
-      aria-busy={isPlaying}
-      aria-label={label ?? t("hadith.playVocabulary", { word: text }) ?? `Listen to ${text}`}
-      className={`inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-1.5 rounded-xl border border-primary/40 bg-primary/5 px-3 text-xs font-black text-primary transition-all hover:bg-primary/10 active:scale-[0.98] ${focusRing}`}
-    >
-      <Volume2 className="size-4" aria-hidden />
-      <span className="hidden sm:inline">
-        {isPlaying
-          ? t("hadith.playing") || "Playing…"
-          : isError
-            ? t("hadith.audioRetry") || "Retry"
-            : t("hadith.listen") || "Listen"}
-      </span>
-    </button>
-  );
-}
-
 interface ImageWithFallbackProps {
   src: string;
   alt: string;
@@ -142,6 +117,13 @@ function ImageWithFallback({ src, alt, fallbackLabel }: ImageWithFallbackProps) 
 export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
   const { t } = useI18n();
   const [revealedImages, setRevealedImages] = useState<Set<string>>(new Set());
+  const [activeAudioText, setActiveAudioText] = useState<string | null>(null);
+  const audio = useAudio({ lang: "en-US", rate: 0.82, preferLocal: true });
+
+  const playAudio = (text: string) => {
+    setActiveAudioText(text);
+    audio.speak(text);
+  };
 
   const toggleReveal = (imageRef: string) => {
     setRevealedImages((prev) => {
@@ -246,7 +228,17 @@ export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
                           {item.partOfSpeech}
                         </span>
                       </div>
-                      <AudioButton text={item.term} />
+                      <AudioButton
+                        onPlay={() => playAudio(item.term)}
+                        isPlaying={audio.isPlaying && activeAudioText === item.term}
+                        isError={audio.isError && activeAudioText === item.term}
+                        label={
+                          t("hadith.playVocabulary", { word: item.term }) ||
+                          `Listen to ${item.term}`
+                        }
+                        size="sm"
+                        className="border-primary/40 bg-primary/5 text-primary hover:bg-primary/10"
+                      />
                     </div>
 
                     <p className="mt-3 text-sm font-semibold leading-relaxed text-foreground">
@@ -325,7 +317,23 @@ export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
                     {item.explanation}
                   </td>
                   <td className="p-3 text-end">
-                    <AudioButton text={item.expression.replace(/\+.*$/, "").trim()} />
+                    <AudioButton
+                      onPlay={() => playAudio(item.expression.replace(/\+.*$/, "").trim())}
+                      isPlaying={
+                        audio.isPlaying &&
+                        activeAudioText === item.expression.replace(/\+.*$/, "").trim()
+                      }
+                      isError={
+                        audio.isError &&
+                        activeAudioText === item.expression.replace(/\+.*$/, "").trim()
+                      }
+                      label={
+                        t("hadith.playVocabulary", { word: item.expression }) ||
+                        `Listen to ${item.expression}`
+                      }
+                      size="sm"
+                      className="border-primary/40 bg-primary/5 text-primary hover:bg-primary/10"
+                    />
                   </td>
                 </tr>
               ))}
@@ -341,7 +349,22 @@ export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
               className="rounded-2xl border border-border bg-background p-4 shadow-sm"
             >
               <div className="flex items-start justify-end">
-                <AudioButton text={item.expression.replace(/\+.*$/, "").trim()} />
+                <AudioButton
+                  onPlay={() => playAudio(item.expression.replace(/\+.*$/, "").trim())}
+                  isPlaying={
+                    audio.isPlaying &&
+                    activeAudioText === item.expression.replace(/\+.*$/, "").trim()
+                  }
+                  isError={
+                    audio.isError && activeAudioText === item.expression.replace(/\+.*$/, "").trim()
+                  }
+                  label={
+                    t("hadith.playVocabulary", { word: item.expression }) ||
+                    `Listen to ${item.expression}`
+                  }
+                  size="sm"
+                  className="border-primary/40 bg-primary/5 text-primary hover:bg-primary/10"
+                />
               </div>
               <p className="mt-1 text-base font-black text-foreground" lang="en" dir="ltr">
                 {item.expression}
@@ -427,7 +450,7 @@ export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
                     type="button"
                     onClick={() => toggleReveal(item.imageRef)}
                     aria-pressed={isRevealed}
-                    className={`flex min-h-12 w-full items-center justify-center gap-2 p-3 text-center text-xs font-black transition-colors ${focusRing} ${
+                    className={`flex min-h-12 w-full items-center justify-center gap-2 p-3 text-center text-xs font-black transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                       isRevealed
                         ? "bg-primary/10 text-primary"
                         : "bg-background text-foreground hover:bg-muted"

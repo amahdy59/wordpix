@@ -33,14 +33,14 @@ export const AudioButton = memo(function AudioButton({
   const stateClasses = isError
     ? "bg-muted border-border text-muted-foreground opacity-60 cursor-not-allowed"
     : isPlaying
-    ? "bg-primary border-primary text-primary-foreground shadow-wp-sm"
-    : "bg-secondary border-border text-primary hover:bg-primary hover:text-primary-foreground active:scale-95";
+      ? "bg-primary border-primary text-primary-foreground shadow-wp-sm"
+      : "bg-secondary border-border text-primary hover:bg-primary hover:text-primary-foreground active:scale-95";
 
   return (
     <button
       type="button"
       onClick={isError ? undefined : onPlay}
-      aria-label={isPlaying ? `Stop pronunciation of ${label}` : label}
+      aria-label={isPlaying ? `${label} (playing)` : label}
       aria-pressed={isPlaying}
       aria-busy={isPlaying}
       disabled={isError}
@@ -57,7 +57,7 @@ export const AudioButton = memo(function AudioButton({
       {isError ? (
         <VolumeX className={ICON_CLASSES[size]} aria-hidden />
       ) : isPlaying ? (
-        <Loader2 className={`${ICON_CLASSES[size]} animate-spin`} aria-hidden />
+        <Loader2 className={`${ICON_CLASSES[size]} motion-safe:animate-spin`} aria-hidden />
       ) : (
         <Volume2 className={ICON_CLASSES[size]} aria-hidden />
       )}

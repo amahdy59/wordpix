@@ -70,6 +70,8 @@ export interface FigmaPronunciationActivityData {
   /** Model and transfer sentences provide a meaningful final retrieval review. */
   readonly reviewSentences: readonly string[];
   readonly recoveryCue?: string;
+  /** Authored physical production guidance surfaced from the Figma curriculum. */
+  readonly articulationCues: readonly string[];
 }
 
 const uniqueItems = (items: readonly FigmaPronunciationImage[]) => {
@@ -103,6 +105,28 @@ const sentencesAfter = (lines: readonly string[], label: RegExp): readonly strin
     .filter((sentence) => sentence.length > 3)
     .slice(0, 4);
 };
+
+const ARTICULATION_HEADING =
+  /articulation|mouth architecture|tongue position|jaw elevation|lip rounding/i;
+const ARTICULATION_LANGUAGE =
+  /\b(?:lip|tongue|jaw|teeth|throat|vocal|voice|airflow|air stream|palate|alveolar|vibration|aspiration|syllable|stress|pitch)\b/i;
+
+function getArticulationCues(lines: readonly string[]): readonly string[] {
+  const headingIndex = lines.findIndex((line) => ARTICULATION_HEADING.test(line));
+  const candidates = headingIndex >= 0 ? lines.slice(headingIndex + 1, headingIndex + 24) : lines;
+  return candidates
+    .map((line) => line.trim().replace(/^[‘'“"]|[’'”"]$/g, ""))
+    .filter(
+      (line) =>
+        line.length >= 24 &&
+        line.length <= 260 &&
+        ARTICULATION_LANGUAGE.test(line) &&
+        !/^(?:objective|image guidelines|accessibility|validation|feedback|production guidance)/i.test(
+          line
+        )
+    )
+    .slice(0, 3);
+}
 
 export function getFigmaPronunciationActivityData(number: number): FigmaPronunciationActivityData {
   const lesson = getFigmaPronunciationLesson(number);
@@ -144,6 +168,13 @@ export function getFigmaPronunciationActivityData(number: number): FigmaPronunci
     ...sentencesAfter(lesson.text, /^Fresh Word Transfer Targets:/i),
   ];
   const recoveryCue = valueAfter(lesson.text, /^(?:Incorrect Feedback|Recovery Cue):?/i);
+  const extractedArticulationCues = getArticulationCues(lesson.text);
+  const articulationCues =
+    extractedArticulationCues.length > 0
+      ? extractedArticulationCues
+      : [recoveryCue, focus].filter((cue): cue is string =>
+          Boolean(cue && ARTICULATION_LANGUAGE.test(cue))
+        );
   return {
     title,
     objective,
@@ -160,6 +191,7 @@ export function getFigmaPronunciationActivityData(number: number): FigmaPronunci
     focus,
     reviewSentences,
     recoveryCue,
+    articulationCues,
   };
 }
 

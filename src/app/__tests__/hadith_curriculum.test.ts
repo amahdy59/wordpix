@@ -8,6 +8,7 @@ import {
 import { HADITH_AUDIO_ASSETS, HADITH_AUDIO_PROFILES } from "../learning/hadith/hadithAudioManifest";
 import { audioKey } from "../shared/assetUrls";
 import { parseHadithVocabulary } from "../learning/hadith/HadithVocabularyStudy";
+import { HADITH_THEMES, getHadithTheme } from "../learning/hadith/hadithThemes";
 
 describe("Hadith curriculum", () => {
   it("imports all 42 Figma lessons and keeps each Hadith in one canonical source block", () => {
@@ -37,6 +38,17 @@ describe("Hadith curriculum", () => {
     expect(getHadithLesson("hadith-01")?.title).toBe("Actions and Intentions");
     expect(getHadithLesson("hadith-42")?.title).toBe("Hope, Prayer, and Forgiveness");
     expect(getHadithLesson("hadith-99")).toBeUndefined();
+  });
+
+  it("organizes every lesson into one stable thematic chapter", () => {
+    expect(HADITH_THEMES).toHaveLength(7);
+    for (const lesson of HADITH_LESSONS) {
+      expect(getHadithTheme(lesson.number), `Hadith ${lesson.number}`).toBeDefined();
+    }
+    const covered = HADITH_THEMES.flatMap((theme) =>
+      Array.from({ length: theme.end - theme.start + 1 }, (_, index) => theme.start + index)
+    );
+    expect(covered).toEqual(Array.from({ length: 42 }, (_, index) => index + 1));
   });
 
   it("maps every canonical source to immutable Arabic and English audio keys", async () => {

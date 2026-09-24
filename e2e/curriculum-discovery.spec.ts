@@ -9,14 +9,30 @@ test("Hadith curriculum exposes all 42 lessons and opens the canonical source", 
   await page.goto("/#/hadith");
 
   await expect(page.getByRole("heading", { name: "Hadith English curriculum" })).toBeVisible();
-  const hadithList = page.getByRole("list", { name: "Hadith lessons" });
-  await expect(hadithList.getByRole("button")).toHaveCount(42);
+  const results = page.getByRole("tabpanel");
+  await expect(results.getByRole("button")).toHaveCount(42);
+  await expect(
+    page.getByRole("heading", { name: "Foundations, intention, and clear choices" })
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Spiritual growth, accountability, and hope" })
+  ).toBeAttached();
+  const allFilter = page.getByRole("tab", { name: "All: 42" });
+  await allFilter.focus();
+  await allFilter.press("ArrowRight");
+  await expect(page.getByRole("tab", { name: "Due for review: 0" })).toHaveAttribute(
+    "aria-selected",
+    "true"
+  );
+  await expect(page.getByRole("heading", { name: "No Hadith lessons found" })).toBeVisible();
+  await page.getByRole("tab", { name: "Due for review: 0" }).press("Home");
+  await expect(results.getByRole("button")).toHaveCount(42);
   const hadithScroller = page.getByRole("main", { name: "Hadith English curriculum" });
   expect(
     await hadithScroller.evaluate((element) => element.scrollHeight > element.clientHeight)
   ).toBe(true);
   await hadithScroller.evaluate((element) => element.scrollTo({ top: element.scrollHeight }));
-  await expect(hadithList.getByRole("button").last()).toBeVisible();
+  await expect(results.getByRole("button").last()).toBeVisible();
   await hadithScroller.evaluate((element) => element.scrollTo({ top: 0 }));
   await page.getByRole("button", { name: /Actions and Intentions/ }).click();
   await expect(page).toHaveURL(/#\/hadith\/lesson-1$/);
@@ -40,6 +56,12 @@ test("pronunciation curriculum is grouped, searchable, and uses R2-backed artwor
 
   await expect(page.getByRole("heading", { name: "Pronunciation curriculum" })).toBeVisible();
   await expect(page.getByRole("heading", { name: /Sound contrasts/i })).toBeVisible();
+  const chapterNavigation = page.getByRole("navigation", {
+    name: "Jump to a pronunciation chapter",
+  });
+  await expect(chapterNavigation.getByRole("button")).toHaveCount(8);
+  await chapterNavigation.getByRole("button", { name: "Chapter 8" }).click();
+  await expect(page.getByRole("heading", { name: /Transfer/i }).last()).toBeVisible();
   const pronunciationScroller = page.getByRole("main", { name: "Pronunciation curriculum" });
   expect(
     await pronunciationScroller.evaluate((element) => element.scrollHeight > element.clientHeight)

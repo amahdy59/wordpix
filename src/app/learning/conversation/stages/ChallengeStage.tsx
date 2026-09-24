@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Award, CheckSquare, Sparkles, ExternalLink, ArrowLeft, CheckCircle2 } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
-import { useI18n } from "../../../context/I18nContext";
+import { useI18n } from "../../../../i18n";
+import { SpeechRecordCompare } from "../../../shared/SpeechRecordCompare";
+import { TaskChecklist } from "../../../shared/TaskChecklist";
 
 interface Props {
   unit: ConversationUnit;
@@ -25,12 +27,17 @@ export function ChallengeStage({
   onExit,
 }: Props) {
   const { t } = useI18n();
-  const [completedTasks, setCompletedTasks] = useState<Record<number, boolean>>({});
+  const [completedTasks, setCompletedTasks] = useState<Set<number>>(new Set());
   const [response, setResponse] = useState(initialResponse);
   const [justCompleted, setJustCompleted] = useState(false);
 
   const toggleTask = (idx: number) => {
-    setCompletedTasks((prev) => ({ ...prev, [idx]: !prev[idx] }));
+    setCompletedTasks((prev) => {
+      const next = new Set(prev);
+      if (next.has(idx)) next.delete(idx);
+      else next.add(idx);
+      return next;
+    });
   };
 
   const handleFinishUnit = () => {
@@ -39,7 +46,9 @@ export function ChallengeStage({
     onComplete();
     setJustCompleted(true);
   };
-  const allTasksComplete = unit.speakingChallenge.tasks.every((_, index) => completedTasks[index]);
+  const allTasksComplete = unit.speakingChallenge.tasks.every((_, index) =>
+    completedTasks.has(index)
+  );
   const hasSubstantiveResponse = response.trim().length >= 20;
   const canFinish = prerequisitesComplete && allTasksComplete && hasSubstantiveResponse;
 
@@ -102,6 +111,14 @@ export function ChallengeStage({
         </p>
       </section>
 
+      <SpeechRecordCompare
+        target={unit.speakingChallenge.scenario}
+        modelText={unit.speakingChallenge.usefulFrames.join(" ")}
+        title={t("conversation.challengeSpeakingStudio")}
+        description={t("conversation.challengeSpeakingHelp")}
+        maxDurationSeconds={120}
+      />
+
       {/* Task Checklist */}
       <section
         className="rounded-2xl border border-border bg-card p-5 sm:p-7 shadow-wp-xs"
@@ -114,36 +131,13 @@ export function ChallengeStage({
           </h2>
         </div>
 
-        <ul className="mt-4 flex flex-col gap-3">
-          {unit.speakingChallenge.tasks.map((task, idx) => {
-            const isDone = completedTasks[idx] ?? false;
-            return (
-              <li key={idx}>
-                <button
-                  type="button"
-                  onClick={() => toggleTask(idx)}
-                  aria-pressed={isDone}
-                  className={`flex min-h-[48px] w-full items-center gap-3.5 rounded-xl border p-3.5 text-start transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
-                    isDone
-                      ? "border-accent/50 bg-accent/10 text-foreground font-semibold"
-                      : "border-border bg-background text-foreground hover:bg-muted/40"
-                  }`}
-                >
-                  <span
-                    className={`flex size-6 shrink-0 items-center justify-center rounded-lg border text-xs font-black ${
-                      isDone
-                        ? "border-accent bg-accent text-accent-foreground"
-                        : "border-muted-foreground/40 bg-muted text-muted-foreground"
-                    }`}
-                  >
-                    {isDone ? "✓" : idx + 1}
-                  </span>
-                  <span className="text-sm sm:text-base leading-snug">{task}</span>
-                </button>
-              </li>
-            );
-          })}
-        </ul>
+        <div className="mt-4">
+          <TaskChecklist
+            items={unit.speakingChallenge.tasks}
+            checked={completedTasks}
+            onToggle={toggleTask}
+          />
+        </div>
       </section>
 
       {/* Useful Frames Quick Reference */}

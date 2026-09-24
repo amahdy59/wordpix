@@ -7,6 +7,49 @@ interface Props {
   lessonNumber: number;
 }
 
+export function HadithOverviewSummary({ overview }: { overview: ParsedOverview }) {
+  const { t } = useI18n();
+  return (
+    <div className="grid gap-3 sm:grid-cols-3" role="group">
+      <div className="flex items-center gap-3 rounded-2xl border border-border bg-card p-3 shadow-sm">
+        <Clock3 className="size-5 shrink-0 text-primary" aria-hidden />
+        <div>
+          <p className="text-[11px] font-black uppercase tracking-wider text-muted-foreground">
+            {t("hadith.pilot.overview.timeLabel") || "Time"}
+          </p>
+          <p className="text-sm font-black text-foreground">
+            {t("hadith.minutes", { count: overview.estimatedMinutes }) ||
+              `${overview.estimatedMinutes} minutes`}
+          </p>
+        </div>
+      </div>
+      <div className="flex items-center gap-3 rounded-2xl border border-border bg-card p-3 shadow-sm">
+        <Target className="size-5 shrink-0 text-primary" aria-hidden />
+        <div>
+          <p className="text-[11px] font-black uppercase tracking-wider text-muted-foreground">
+            {t("hadith.pilot.overview.wordsLabel") || "Core Language"}
+          </p>
+          <p className="text-sm font-black text-foreground">
+            {t("hadith.pilot.overview.words", { count: overview.coreWordsCount }) ||
+              `${overview.coreWordsCount} words`}
+          </p>
+        </div>
+      </div>
+      <div className="flex items-center gap-3 rounded-2xl border border-border bg-card p-3 shadow-sm">
+        <Trophy className="size-5 shrink-0 text-primary" aria-hidden />
+        <div>
+          <p className="text-[11px] font-black uppercase tracking-wider text-muted-foreground">
+            {t("hadith.pilot.overview.goalLabel") || "Final Task"}
+          </p>
+          <p className="text-sm font-black text-foreground">
+            {t("hadith.pilot.overview.goal") || "Explain in clear English"}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function HadithOverviewStage({ overview, lessonNumber }: Props) {
   const { t } = useI18n();
 

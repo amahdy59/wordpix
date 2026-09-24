@@ -12,6 +12,8 @@ import type { Action } from "../../types";
 import { useLearner } from "../../context/LearnerContext";
 import { useI18n } from "../../../i18n";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
+import { CurriculumFilterTabs } from "../../shared/CurriculumFilterTabs";
+import { CurriculumHeroHeader } from "../../shared/CurriculumHeroHeader";
 import {
   FIGMA_PRONUNCIATION_LESSONS,
   PRONUNCIATION_CHAPTERS,
@@ -95,102 +97,62 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
           {t("pronunciation.backToLearningPath")}
         </button>
 
-        <header className="grid gap-6 rounded-3xl border-2 border-primary/35 bg-gradient-to-br from-primary/15 via-card to-card p-5 shadow-wp-sm sm:p-8 lg:grid-cols-[1fr_280px] lg:items-center">
-          <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
-              {t("pronunciation.curriculumBadge")}
-            </p>
-            <h1
-              id="pronunciation-curriculum-title"
-              className="mt-2 text-3xl font-black tracking-tight sm:text-4xl"
-            >
-              {t("pronunciation.curriculumTitle")}
-            </h1>
-            <p className="mt-3 max-w-3xl text-sm font-medium leading-7 text-muted-foreground sm:text-base">
-              {t("pronunciation.curriculumDescription")}
-            </p>
-            <p className="mt-4 font-black text-primary">
-              {t("pronunciation.curriculumProgress", {
-                completed,
-                total: FIGMA_PRONUNCIATION_LESSONS.length,
-              })}
-            </p>
-            <div
-              className="mt-4 grid grid-cols-3 gap-2"
-              aria-label={t("pronunciation.progressSummary")}
-            >
-              {[
-                [t("pronunciation.summaryMastered"), completed],
-                [t("pronunciation.summaryDue"), due],
-                [t("pronunciation.summaryLessons"), FIGMA_PRONUNCIATION_LESSONS.length],
-              ].map(([label, value]) => (
-                <div
-                  key={String(label)}
-                  className="rounded-2xl border border-border bg-card/80 p-3"
-                >
-                  <p className="text-xl font-black text-foreground">{value}</p>
-                  <p className="mt-1 text-xs font-bold leading-4 text-muted-foreground">{label}</p>
-                </div>
-              ))}
-            </div>
-            <div
-              className="mt-4 flex flex-wrap gap-2"
-              role="tablist"
-              aria-label={t("pronunciation.filtersLabel")}
-            >
-              {(["all", "due", "in-progress", "mastered"] as const).map((value) => {
-                const count =
-                  value === "all"
-                    ? FIGMA_PRONUNCIATION_LESSONS.length
-                    : value === "due"
-                      ? due
-                      : value === "mastered"
-                        ? completed
-                        : Object.values(state.pronunciationProgress).filter(
-                            (entry) => entry.status === "in-progress"
-                          ).length;
-                const label =
-                  value === "all"
-                    ? "filterAll"
-                    : value === "due"
-                      ? "filterDue"
-                      : value === "in-progress"
-                        ? "filterInProgress"
-                        : "filterMastered";
-                return (
-                  <button
-                    key={value}
-                    type="button"
-                    role="tab"
-                    aria-selected={filter === value}
-                    onClick={() => setFilter(value)}
-                    className={`min-h-11 rounded-xl border px-3 text-sm font-black focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary ${filter === value ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card"}`}
-                  >
-                    {t(`pronunciation.${label}`)} <span className="ms-1 opacity-80">{count}</span>
-                  </button>
-                );
-              })}
-            </div>
+        <CurriculumHeroHeader
+          titleId="pronunciation-curriculum-title"
+          badge={t("pronunciation.curriculumBadge")}
+          title={t("pronunciation.curriculumTitle")}
+          description={t("pronunciation.curriculumDescription")}
+          metrics={[
+            { label: t("pronunciation.summaryMastered"), value: completed },
+            { label: t("pronunciation.summaryDue"), value: due },
+            { label: t("pronunciation.summaryLessons"), value: FIGMA_PRONUNCIATION_LESSONS.length },
+          ]}
+          action={
             <button
               type="button"
               onClick={() =>
                 dispatch({ type: "OPEN_FIGMA_PRONUNCIATION", lessonNumber: nextLesson.number })
               }
-              className="mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-90 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-auto"
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-90 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-auto"
             >
               <Headphones className="size-5" aria-hidden />
               {t("pronunciation.continueCurriculum", { number: nextLesson.number })}
             </button>
-          </div>
-          <img
-            src={resolveAssetUrl(
-              `pronunciation/v1/lesson-${String(nextLesson.number).padStart(2, "0")}.png`
-            )}
-            alt=""
-            className="hidden aspect-[4/3] w-full rounded-2xl border border-border object-cover shadow-wp-sm lg:block"
-            aria-hidden
+          }
+          media={
+            <img
+              src={resolveAssetUrl(
+                `pronunciation/v1/lesson-${String(nextLesson.number).padStart(2, "0")}.png`
+              )}
+              alt=""
+              className="hidden aspect-[4/3] w-full rounded-2xl border border-border object-cover shadow-wp-sm lg:block"
+              aria-hidden
+            />
+          }
+        >
+          <CurriculumFilterTabs
+            label={t("pronunciation.filtersLabel")}
+            value={filter}
+            onChange={setFilter}
+            panelId="pronunciation-lesson-results"
+            options={[
+              {
+                value: "all",
+                label: t("pronunciation.filterAll"),
+                count: FIGMA_PRONUNCIATION_LESSONS.length,
+              },
+              { value: "due", label: t("pronunciation.filterDue"), count: due },
+              {
+                value: "in-progress",
+                label: t("pronunciation.filterInProgress"),
+                count: Object.values(state.pronunciationProgress).filter(
+                  (entry) => entry.status === "in-progress"
+                ).length,
+              },
+              { value: "mastered", label: t("pronunciation.filterMastered"), count: completed },
+            ]}
           />
-        </header>
+        </CurriculumHeroHeader>
 
         <div>
           <label htmlFor="pronunciation-search" className="text-sm font-bold text-foreground">
@@ -212,8 +174,37 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
           </div>
         </div>
 
+        {chapters.length > 1 && (
+          <nav
+            className="sticky top-2 z-10 rounded-2xl border border-border bg-background/95 p-2 shadow-wp-sm backdrop-blur"
+            aria-label={t("pronunciation.chapterJumpLabel")}
+          >
+            <div className="flex snap-x gap-2 overflow-x-auto pb-1">
+              {chapters.map((chapter) => (
+                <button
+                  key={chapter.start}
+                  type="button"
+                  onClick={() =>
+                    document
+                      .getElementById(`pronunciation-chapter-${chapter.index + 1}`)
+                      ?.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                  className="min-h-11 shrink-0 snap-start rounded-xl border border-border bg-card px-3 text-sm font-black text-foreground hover:border-primary/50 hover:bg-primary/5 active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                >
+                  {t("pronunciation.chapterShort", { number: chapter.index + 1 })}
+                </button>
+              ))}
+            </div>
+          </nav>
+        )}
+
         {chapters.length ? (
-          <div className="space-y-5">
+          <div
+            id="pronunciation-lesson-results"
+            role="tabpanel"
+            aria-labelledby={`pronunciation-lesson-results-tab-${filter}`}
+            className="space-y-5"
+          >
             {chapters.map((chapter) => {
               const chapterCompleted = chapter.lessons.filter(
                 (lesson) =>
@@ -223,7 +214,8 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
               return (
                 <section
                   key={chapter.start}
-                  className="rounded-3xl border border-border bg-card p-4 shadow-wp-xs sm:p-6"
+                  id={`pronunciation-chapter-${chapter.index + 1}`}
+                  className="scroll-mt-24 rounded-3xl border border-border bg-card p-4 shadow-wp-xs sm:p-6"
                 >
                   <div className="flex flex-wrap items-end justify-between gap-3">
                     <div>

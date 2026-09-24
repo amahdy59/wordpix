@@ -40,6 +40,14 @@ const persistedProgressEntrySchema = z.object({
 export type HadithLessonProgress = z.infer<typeof progressEntrySchema>;
 export type HadithProgress = Record<string, HadithLessonProgress>;
 
+export function getHadithReviewIntervalDays(
+  scorePercent: number,
+  confidence: HadithConfidence
+): number {
+  const mastered = clampScore(scorePercent) >= 80 && confidence !== "again";
+  return mastered ? 7 : confidence === "again" ? 1 : 3;
+}
+
 function clampScore(value: number): number {
   return Math.max(0, Math.min(100, Math.round(value)));
 }
@@ -111,7 +119,7 @@ export function completeHadithLesson(
   const previous = progress[lessonId];
   const score = clampScore(scorePercent);
   const mastered = score >= 80 && confidence !== "again";
-  const reviewDays = mastered ? 7 : confidence === "again" ? 1 : 3;
+  const reviewDays = getHadithReviewIntervalDays(score, confidence);
   return {
     ...progress,
     [lessonId]: {

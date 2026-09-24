@@ -7,6 +7,7 @@ import { FIGMA_HADITH_LESSONS } from "../learning/hadith/figmaHadithCatalog";
 import {
   checkpointHadithLesson,
   completeHadithLesson,
+  getHadithReviewIntervalDays,
   normalizeHadithProgress,
 } from "../learning/hadith/hadithProgress";
 
@@ -79,6 +80,13 @@ describe("Hadith offline progress", () => {
     expect(mastered["hadith-03"].nextReviewAt).toBe("2026-09-30T00:00:00.000Z");
     expect(retry["hadith-04"]).toMatchObject({ status: "needs-practice", sessions: 1 });
     expect(retry["hadith-04"].nextReviewAt).toBe("2026-09-24T00:00:00.000Z");
+  });
+
+  it("uses one shared interval rule for the review preview and persisted schedule", () => {
+    expect(getHadithReviewIntervalDays(100, "ready")).toBe(7);
+    expect(getHadithReviewIntervalDays(80, "supported")).toBe(7);
+    expect(getHadithReviewIntervalDays(79, "ready")).toBe(3);
+    expect(getHadithReviewIntervalDays(100, "again")).toBe(1);
   });
 
   it("drops malformed persisted entries at the runtime boundary", () => {

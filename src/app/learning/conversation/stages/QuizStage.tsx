@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { HelpCircle, CheckCircle2, XCircle, RotateCcw, ArrowRight, ArrowLeft } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
-import { useI18n } from "../../../context/I18nContext";
+import { useI18n } from "../../../../i18n";
+import { ChoiceOptionGroup } from "../../../shared/ChoiceOptionGroup";
 
 interface Props {
   unit: ConversationUnit;
@@ -119,47 +120,24 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Pro
               </div>
 
               {/* Options */}
-              <div
+              <ChoiceOptionGroup
                 className="mt-2 grid gap-2.5 sm:grid-cols-2"
-                role="radiogroup"
-                aria-label={t("conversation.questionOptions", { number: qIdx + 1 })}
-              >
-                {q.options.map((opt) => {
-                  const isThisOptionSelected = selected === opt.key;
-                  const isThisTheCorrectAnswer = opt.key === q.correctAnswer;
-
-                  let optionStyle =
-                    "border-border bg-background hover:bg-muted/40 hover:border-primary/40 text-foreground";
-                  if (hasAnswered) {
-                    if (isThisTheCorrectAnswer) {
-                      optionStyle = "border-accent/60 bg-accent/10 text-foreground font-bold";
-                    } else if (isThisOptionSelected && !isCorrect) {
-                      optionStyle = "border-destructive/60 bg-destructive/10 text-foreground";
-                    } else {
-                      optionStyle =
-                        "border-border/50 bg-background/50 opacity-60 text-muted-foreground";
-                    }
-                  }
-
-                  return (
-                    <button
-                      key={opt.key}
-                      type="button"
-                      disabled={hasAnswered}
-                      role="radio"
-                      aria-checked={isThisOptionSelected}
-                      aria-label={t("conversation.answerOption", { key: opt.key, text: opt.text })}
-                      onClick={() => handleSelectOption(qIdx, opt.key)}
-                      className={`flex min-h-[48px] items-center gap-3 rounded-xl border-2 p-3 text-start text-sm transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${optionStyle}`}
-                    >
-                      <span className="flex size-6 shrink-0 items-center justify-center rounded-md bg-muted font-black text-xs text-foreground">
-                        {opt.key}
-                      </span>
-                      <span className="leading-snug">{opt.text}</span>
-                    </button>
-                  );
-                })}
-              </div>
+                label={t("conversation.questionOptions", { number: qIdx + 1 })}
+                value={selected}
+                onChange={(option) => handleSelectOption(qIdx, option)}
+                disabled={hasAnswered}
+                correctValue={q.correctAnswer}
+                revealFeedback={hasAnswered}
+                options={q.options.map((option) => ({
+                  value: option.key,
+                  label: option.text,
+                  prefix: option.key,
+                  accessibleLabel: t("conversation.answerOption", {
+                    key: option.key,
+                    text: option.text,
+                  }),
+                }))}
+              />
 
               {/* Rationale feedback */}
               {hasAnswered && !isCorrect && (

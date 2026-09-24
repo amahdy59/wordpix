@@ -110,6 +110,13 @@ describe("Figma pronunciation source", () => {
     expect(getPronunciationContrastPartner(penOrPan, "men")).toBe("man");
   });
 
+  it("surfaces authored physical articulation guidance", () => {
+    const pAndB = getFigmaPronunciationActivityData(9);
+    expect(pAndB.articulationCues.length).toBeGreaterThan(0);
+    expect(pAndB.articulationCues.join(" ")).toMatch(/lip|voice|air|vibration/i);
+    expect(pAndB.articulationCues.length).toBeLessThanOrEqual(3);
+  });
+
   it("has a complete progression contract for every lesson", () => {
     for (const lesson of FIGMA_PRONUNCIATION_LESSONS) {
       const roles = new Set(lesson.images.map((item) => item.role));

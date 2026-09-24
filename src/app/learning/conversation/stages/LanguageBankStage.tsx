@@ -1,9 +1,12 @@
 import { useState } from "react";
-import { Sparkles, Volume2, Globe2, ArrowRight, ArrowLeft, Image as ImageIcon } from "lucide-react";
+import { Sparkles, Volume2, ArrowRight, ArrowLeft, Image as ImageIcon } from "lucide-react";
 import type { ConversationUnit, LanguageBankItem } from "../conversationTypes";
-import { useI18n } from "../../../context/I18nContext";
+import { useI18n } from "../../../../i18n";
 import { useLearner } from "../../../context/LearnerContext";
 import { resolveAssetUrl } from "../../../../utils/assetUrl";
+import { useAudio } from "../../../shared/useAudio";
+import { PlaybackSpeedControl } from "../../../shared/PlaybackSpeedControl";
+import { LanguageToggle } from "../../../shared/BilingualText";
 
 interface Props {
   unit: ConversationUnit;
@@ -16,42 +19,53 @@ export function LanguageBankStage({ unit, onNext, onPrev }: Props) {
   const { state: learnerState } = useLearner();
   const [showArabic, setShowArabic] = useState(false);
   const [audioStatus, setAudioStatus] = useState("");
+  const [playbackRate, setPlaybackRate] = useState(0.85);
   const listeningEnabled = learnerState.accessibility.includeListening;
+  const audio = useAudio({ lang: "en-US", rate: playbackRate, preferLocal: true });
   const hasArabicTranslation = unit.languageBank.some((item) =>
     /[\u0600-\u06ff]/.test(`${item.termAr ?? ""}${item.meaningAr ?? ""}`)
   );
 
   const handleSpeakTerm = (term: string) => {
-    if (!listeningEnabled || typeof window === "undefined" || !("speechSynthesis" in window)) {
+    if (!listeningEnabled || !audio.isSupported) {
       setAudioStatus(t("conversation.audioUnavailable"));
       return;
     }
-    const utterance = new SpeechSynthesisUtterance(term);
-    utterance.lang = "en-US";
-    utterance.rate = 0.85;
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(utterance);
+    audio.speak(term);
     setAudioStatus("");
   };
 
   return (
     <div className="flex flex-col gap-6 max-w-4xl mx-auto w-full py-2">
       {/* Stage Header */}
-      <div className="flex items-center justify-between gap-4">
+      <div className="flex flex-wrap items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
           <Sparkles className="size-4" aria-hidden />
           {t("conversation.languageBankStage")}
         </span>
-        {hasArabicTranslation && (
-          <button
-            type="button"
-            onClick={() => setShowArabic((prev) => !prev)}
-            className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border border-border bg-card px-3.5 py-1.5 text-xs font-bold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            <Globe2 className="size-4" aria-hidden />
-            {showArabic ? t("conversation.englishOnly") : t("conversation.arabicTranslation")}
-          </button>
-        )}
+        <div className="flex flex-wrap items-center gap-2">
+          <PlaybackSpeedControl
+            value={playbackRate}
+            onChange={(rate) => {
+              audio.stop();
+              setPlaybackRate(rate);
+            }}
+            label={t("conversation.playbackSpeed")}
+            options={[
+              { value: 0.85, label: t("conversation.slowSpeed") },
+              { value: 1, label: t("conversation.normalSpeed") },
+            ]}
+            disabled={!listeningEnabled}
+          />
+          {hasArabicTranslation && (
+            <LanguageToggle
+              showArabic={showArabic}
+              onToggle={() => setShowArabic((prev) => !prev)}
+              showLabel={t("conversation.arabicTranslation")}
+              hideLabel={t("conversation.englishOnly")}
+            />
+          )}
+        </div>
       </div>
 
       {/* Intro Note */}

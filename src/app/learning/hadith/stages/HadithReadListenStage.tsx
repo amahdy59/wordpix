@@ -1,4 +1,5 @@
-import { BookOpen, Headphones, Info, Volume2 } from "lucide-react";
+import { useState } from "react";
+import { BookOpen, Columns2, Headphones, Info, Rows3, Volume2 } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 
 interface Props {
@@ -24,13 +25,14 @@ export function HadithReadListenStage({
   isAudioError,
 }: Props) {
   const { t } = useI18n();
+  const [parallelReading, setParallelReading] = useState(false);
 
   return (
     <section
       className="mx-auto w-full max-w-5xl space-y-6"
       aria-labelledby="stage-readlisten-heading"
     >
-      <header className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+      <header className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <span className="text-xs font-black uppercase tracking-[0.18em] text-primary">
             {t("hadith.canonicalLabel") || "Complete Hadith"}
@@ -43,11 +45,35 @@ export function HadithReadListenStage({
             {t("hadith.completeText") || "Read and listen"}
           </h2>
         </div>
+        <div
+          className="inline-flex w-fit rounded-2xl border border-border bg-card p-1"
+          role="group"
+          aria-label={t("hadith.readingLayout")}
+        >
+          <button
+            type="button"
+            aria-pressed={!parallelReading}
+            onClick={() => setParallelReading(false)}
+            className={`inline-flex min-h-11 items-center gap-2 rounded-xl px-3 text-sm font-black ${focusRing} ${!parallelReading ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-muted"}`}
+          >
+            <Rows3 className="size-4" aria-hidden />
+            {t("hadith.stackedReading")}
+          </button>
+          <button
+            type="button"
+            aria-pressed={parallelReading}
+            onClick={() => setParallelReading(true)}
+            className={`inline-flex min-h-11 items-center gap-2 rounded-xl px-3 text-sm font-black ${focusRing} ${parallelReading ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-muted"}`}
+          >
+            <Columns2 className="size-4" aria-hidden />
+            {t("hadith.parallelReading")}
+          </button>
+        </div>
       </header>
 
-      <div className="grid gap-6 lg:grid-cols-[1.25fr_0.75fr]">
+      <div className={parallelReading ? "space-y-6" : "grid gap-6 lg:grid-cols-[1.25fr_0.75fr]"}>
         {/* Main Source Block Cards */}
-        <div className="space-y-6">
+        <div className={parallelReading ? "grid gap-6 md:grid-cols-2" : "space-y-6"}>
           {/* 1. Classical Arabic Card */}
           <article className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
             <div className="flex items-center justify-between gap-3">
@@ -140,7 +166,7 @@ export function HadithReadListenStage({
 
         {/* Listening Guide Sidebar */}
         <aside
-          className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8"
+          className={`rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8 ${parallelReading ? "mx-auto w-full max-w-5xl" : ""}`}
           aria-labelledby="listening-guide-heading"
         >
           <div className="flex items-center gap-2">
@@ -160,17 +186,17 @@ export function HadithReadListenStage({
               {
                 step: 1,
                 title: t("hadith.listenStepOne") || "Listen once for the main idea.",
-                tip: "Focus on the overall message before worrying about single words.",
+                tip: t("hadith.listenTipOne"),
               },
               {
                 step: 2,
                 title: t("hadith.listenStepTwo") || "Replay slowly and notice key expressions.",
-                tip: "Pay attention to purpose connectors and verbs.",
+                tip: t("hadith.listenTipTwo"),
               },
               {
                 step: 3,
                 title: t("hadith.listenStepThree") || "Read the translation and connect meaning.",
-                tip: "Relate the Arabic terms directly to the English phrases.",
+                tip: t("hadith.listenTipThree"),
               },
             ].map((item) => (
               <li

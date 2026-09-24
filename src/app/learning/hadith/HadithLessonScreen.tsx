@@ -16,6 +16,9 @@ import { HadithReadListenStage } from "./stages/HadithReadListenStage";
 import { HadithVocabularyStage } from "./stages/HadithVocabularyStage";
 import { HadithSpeakStage } from "./stages/HadithSpeakStage";
 import { HadithReviewStage } from "./stages/HadithReviewStage";
+import { HadithWarmupStage } from "./stages/HadithWarmupStage";
+import { HadithOverviewSummary } from "./stages/HadithOverviewStage";
+import { useLessonProgress } from "../../shared/useLessonProgress";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -36,10 +39,12 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
 
   const lesson = getHadithLesson(canonicalLessonId) ?? FIGMA_HADITH_LESSONS[0];
   const savedProgress = state.hadithProgress[lesson.id];
+  const { initialIndex } = useLessonProgress({
+    stageIds: HADITH_STAGE_IDS,
+    currentStage: savedProgress?.currentStage,
+  });
 
-  const [stageIndex, setStageIndex] = useState(
-    Math.min(HADITH_STAGE_IDS.length - 1, Math.max(0, savedProgress?.currentStage ?? 0))
-  );
+  const [stageIndex, setStageIndex] = useState(initialIndex);
   const [confidence, setConfidence] = useState<HadithConfidence | null>(
     savedProgress?.confidence ?? null
   );
@@ -206,6 +211,10 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
             </p>
           )}
 
+          <div className="mt-5">
+            <HadithOverviewSummary overview={parsedStages.overview} />
+          </div>
+
           {/* Accessible responsive lesson stepper */}
           <HadithStageStepper
             currentStageIndex={stageIndex}
@@ -217,13 +226,16 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
         {/* Stage Content Container */}
         <div ref={stageContainerRef} className="w-full">
           {stage === "read-listen" && (
-            <HadithReadListenStage
-              source={lesson.source}
-              onPlayAudio={playTrack}
-              isPlaying={isPlaying}
-              activeTrack={activeTrack}
-              isAudioError={isAudioError}
-            />
+            <div className="space-y-6">
+              <HadithWarmupStage warmup={parsedStages.warmup} />
+              <HadithReadListenStage
+                source={lesson.source}
+                onPlayAudio={playTrack}
+                isPlaying={isPlaying}
+                activeTrack={activeTrack}
+                isAudioError={isAudioError}
+              />
+            </div>
           )}
 
           {stage === "vocabulary" && (
@@ -240,6 +252,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
             <HadithReviewStage
               reviewItems={parsedStages.review}
               confidence={confidence}
+              practiceScore={practiceScore}
               onSelectConfidence={(c) => {
                 setConfidence(c);
                 setConfidenceError(false);

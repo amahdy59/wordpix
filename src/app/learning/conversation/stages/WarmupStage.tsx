@@ -1,7 +1,10 @@
 import { useState } from "react";
-import { MessageSquare, Vote, ArrowRight, CheckCircle2, Globe2 } from "lucide-react";
+import { MessageSquare, Vote, ArrowRight } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
-import { useI18n } from "../../../context/I18nContext";
+import { useI18n } from "../../../../i18n";
+import { ChoiceOptionGroup } from "../../../shared/ChoiceOptionGroup";
+import { BilingualTextBlock, LanguageToggle } from "../../../shared/BilingualText";
+import { PracticePollSnapshot } from "../PracticePollSnapshot";
 
 interface Props {
   unit: ConversationUnit;
@@ -30,14 +33,12 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
           {t("conversation.warmupStage")}
         </span>
         {hasArabicTranslation && (
-          <button
-            type="button"
-            onClick={() => setShowArabic((prev) => !prev)}
-            className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border border-border bg-card px-3.5 py-1.5 text-xs font-bold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            <Globe2 className="size-4" aria-hidden />
-            {showArabic ? t("conversation.englishOnly") : t("conversation.arabicTranslation")}
-          </button>
+          <LanguageToggle
+            showArabic={showArabic}
+            onToggle={() => setShowArabic((previous) => !previous)}
+            showLabel={t("conversation.arabicTranslation")}
+            hideLabel={t("conversation.englishOnly")}
+          />
         )}
       </div>
 
@@ -53,16 +54,13 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
           id="big-question-heading"
           className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-black text-foreground tracking-tight leading-snug"
         >
-          "{unit.warmup.bigQuestion}"
+          <BilingualTextBlock
+            english={`“${unit.warmup.bigQuestion}”`}
+            arabic={`“${unit.warmup.bigQuestionAr}”`}
+            showArabic={showArabic}
+            arabicClassName="text-primary"
+          />
         </h1>
-        {showArabic && (
-          <p
-            dir="rtl"
-            className="mt-3 text-lg sm:text-xl font-bold text-primary font-arabic leading-relaxed"
-          >
-            "{unit.warmup.bigQuestionAr}"
-          </p>
-        )}
       </section>
 
       {/* Discussion Activation Prompts */}
@@ -82,17 +80,12 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
               <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-xs text-primary">
                 {idx + 1}
               </span>
-              <div className="flex flex-col gap-1">
-                <span>{prompt.en}</span>
-                {showArabic && (
-                  <span
-                    dir="rtl"
-                    className="text-sm font-semibold text-muted-foreground font-arabic"
-                  >
-                    {prompt.ar}
-                  </span>
-                )}
-              </div>
+              <BilingualTextBlock
+                english={prompt.en}
+                arabic={prompt.ar}
+                showArabic={showArabic}
+                arabicClassName="text-sm font-semibold text-muted-foreground"
+              />
             </li>
           ))}
         </ol>
@@ -113,46 +106,34 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
           {t("conversation.quickVoteDescription")}
         </p>
 
-        <div
+        <ChoiceOptionGroup
           className="mt-5 grid gap-3 sm:grid-cols-3"
-          role="radiogroup"
-          aria-label={t("conversation.quickVoteOptions")}
-        >
-          {unit.warmup.quickVote.options.map((opt) => {
-            const isSelected = selectedVote === opt.id;
-            return (
-              <button
-                key={opt.id}
-                type="button"
-                role="radio"
-                aria-checked={isSelected}
-                aria-label={t("conversation.voteOption", { id: opt.id, text: opt.text })}
-                onClick={() => handleSelectVote(opt.id)}
-                className={`flex min-h-[72px] flex-col justify-center rounded-2xl border-2 p-4 text-start transition-all active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                  isSelected
-                    ? "border-primary bg-primary/15 text-foreground shadow-wp-sm ring-2 ring-primary/30"
-                    : "border-border bg-background text-foreground hover:border-primary/50 hover:bg-muted/40"
-                }`}
-              >
-                <div className="flex items-center justify-between gap-2">
-                  <span className="font-black text-xs text-primary uppercase tracking-wide">
-                    {t("conversation.option", { id: opt.id })}
-                  </span>
-                  {isSelected && <CheckCircle2 className="size-4 text-primary" aria-hidden />}
-                </div>
-                <p className="mt-1 text-sm font-bold leading-snug">{opt.text}</p>
-                {showArabic && (
-                  <p
-                    dir="rtl"
-                    className="mt-1 text-xs font-semibold text-muted-foreground font-arabic"
-                  >
-                    {opt.textAr}
-                  </p>
-                )}
-              </button>
-            );
-          })}
-        </div>
+          label={t("conversation.quickVoteOptions")}
+          value={selectedVote}
+          onChange={handleSelectVote}
+          options={unit.warmup.quickVote.options.map((option) => ({
+            value: option.id,
+            label: option.text,
+            accessibleLabel: t("conversation.voteOption", {
+              id: option.id,
+              text: option.text,
+            }),
+            prefix: option.id,
+            secondary: showArabic ? (
+              <bdi dir="rtl" lang="ar" className="font-arabic text-[1.15em] text-muted-foreground">
+                {option.textAr}
+              </bdi>
+            ) : undefined,
+          }))}
+        />
+
+        {selectedVote && (
+          <PracticePollSnapshot
+            unitNumber={unit.unitNumber}
+            options={unit.warmup.quickVote.options}
+            selectedOptionId={selectedVote}
+          />
+        )}
       </section>
 
       {/* Action Footer */}

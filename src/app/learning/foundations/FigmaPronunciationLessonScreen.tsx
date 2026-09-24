@@ -354,13 +354,28 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             })}
           >
             {STAGES.map((name, index) => (
-              <div
+              <button
                 key={name}
-                className={`h-2 rounded-full ${index <= stage ? "bg-primary" : "bg-muted"}`}
-                aria-label={name}
+                type="button"
+                onClick={() => {
+                  if (index <= stage) {
+                    stop();
+                    cancelSpokenFeedback();
+                    setStage(index as Stage);
+                    setTrial(0);
+                    setAnswer(null);
+                  }
+                }}
+                disabled={index > stage}
+                aria-current={index === stage ? "step" : undefined}
+                aria-label={t("pronunciation.stage", { number: index + 1, name })}
+                className={`min-h-11 rounded-xl transition-colors focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed ${index <= stage ? "bg-primary hover:bg-primary/80" : "bg-muted"}`}
               />
             ))}
           </div>
+          <p className="sr-only" aria-live="polite">
+            {t("pronunciation.stage", { number: stage + 1, name: STAGES[stage] })}
+          </p>
           {progress && (
             <p className="mt-3 text-sm font-bold text-primary">
               {t("pronunciation.previousBest", { score: progress.bestScorePercent })}
@@ -609,6 +624,27 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 >
                   {activity.focus}
                 </p>
+                {activity.articulationCues.length > 0 && (
+                  <div className="mt-4 border-t border-primary/20 pt-4">
+                    <h4 className="text-sm font-black text-foreground">
+                      {t("pronunciation.articulationTitle")}
+                    </h4>
+                    <ul className="mt-2 grid gap-2" lang="en" dir="ltr">
+                      {activity.articulationCues.map((cue) => (
+                        <li
+                          key={cue}
+                          className="flex gap-2 rounded-xl border border-border bg-card p-3 text-sm leading-6 text-foreground"
+                        >
+                          <span
+                            className="mt-2 size-2 shrink-0 rounded-full bg-primary"
+                            aria-hidden
+                          />
+                          <span>{cue}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
                 {activity.contrastPairs.length > 0 && (
                   <ul
                     className="mt-3 flex flex-wrap gap-2"
@@ -699,7 +735,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               </button>
             </div>
           )}
-          {answer && !passed && attempts >= 2 && activity.recoveryCue && (
+          {answer && !passed && (activity.recoveryCue || activity.articulationCues.length > 0) && (
             <aside
               className="mt-3 rounded-2xl border border-primary/30 bg-primary/5 p-4"
               role="note"
@@ -707,7 +743,15 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               <p className="text-sm font-black text-primary">
                 {t("pronunciation.recoveryCueTitle")}
               </p>
-              <p className="mt-1 text-sm leading-6">{activity.recoveryCue}</p>
+              <p className="mt-1 text-sm font-bold leading-6">
+                {t("pronunciation.confusionPair", {
+                  heard: answer,
+                  target: target?.label ?? activity.model,
+                })}
+              </p>
+              <p className="mt-1 text-sm leading-6" lang="en" dir="ltr">
+                {activity.recoveryCue ?? activity.articulationCues[0]}
+              </p>
             </aside>
           )}
           <div className="mt-6 flex justify-between gap-3">
