@@ -966,6 +966,16 @@
     "curriculumTitle": "Pronunciation curriculum",
     "curriculumDescription": "Build accurate, understandable speech through sound contrasts, listening discrimination, meaning checks, guided production, and transfer to new words.",
     "curriculumProgress": "{completed} of {total} lessons mastered",
+    "filtersLabel": "Filter pronunciation lessons",
+    "filterAll": "All",
+    "filterDue": "Due today",
+    "filterInProgress": "In progress",
+    "filterMastered": "Mastered",
+    "dueReview": "Due for review",
+    "progressSummary": "Pronunciation progress summary",
+    "summaryMastered": "Mastered",
+    "summaryDue": "Due today",
+    "summaryLessons": "Total lessons",
     "curriculumCardDescription": "{completed} of {total} structured lessons mastered · eight progressive chapters",
     "continueCurriculum": "Continue with lesson {number}",
     "viewCurriculum": "View all pronunciation lessons",
@@ -984,13 +994,25 @@
     "stageProgress": "Stage {current} of {total}",
     "previousBest": "Previous best: {score}%",
     "picturePreview": "Meet the words",
-    "picturePreviewDesc": "Look at each image and say the word once. The images disappear when listening is tested.",
+    "picturePreviewDesc": "Tap a word card to hear it. Listen, look, and repeat before you begin; you can replay every word whenever you need.",
+    "playWord": "Play pronunciation for {word}",
     "stage": "Stage {number} · {name}",
     "checkProgress": "Check {current} of {total} in this stage",
     "readyTitle": "Build a sound map",
     "testTitle": "Listen, notice, and choose",
     "playing": "Playing…",
     "play": "Play model pronunciation",
+    "playbackSpeed": "Playback speed",
+    "normalSpeed": "Normal",
+    "slowSpeed": "Careful",
+    "choiceLabel": "Option {number}: {word}",
+    "recoveryCueTitle": "Try this mouth cue",
+    "contrastHeroBadge": "Core contrast",
+    "contrastHeroTitle": "Hear the difference",
+    "soundGuide": "Sound guide",
+    "contrastHeroDescription": "Listen to both words side by side. Notice what changes before you practise choosing and saying them.",
+    "childContrastHint": "Tap each word, listen carefully, and notice how the sound changes.",
+    "listenToContrast": "Listen to this word",
     "previewPrompt": "You will practise {count} image-backed words through listening, meaning, usage, and a fresh transfer check.",
     "choosePicture": "Listen, then choose the picture that matches.",
     "chooseUsage": "Choose the word that fits the spoken meaning.",
@@ -1014,6 +1036,8 @@
     "resultReview": "Next review",
     "resultReady": "Checked",
     "resultPractised": "Applied",
+    "usageReviewTitle": "Use the words in context",
+    "usageReviewDescription": "Listen to each connected sentence, then say it aloud. Tap a sentence as many times as you need.",
     "reviewAgain": "Review again",
     "reviewInDays": "In {days} days",
     "reviewTomorrow": "Tomorrow",
@@ -1046,6 +1070,16 @@
     "badge": "Hadith {number} · B1",
     "minutes": "{count} minutes",
     "stageNavigation": "Hadith lesson stages",
+    "stepOfTotal": "Step {current} of {total}",
+    "stageLabels": {
+      "overview": "Overview",
+      "warm-up": "Warm-up",
+      "read-listen": "Read & Listen",
+      "vocabulary": "Vocabulary",
+      "practice": "Practice",
+      "speak": "Speak",
+      "check-review": "Check & Review"
+    },
     "lessonLabel": "Hadith lesson",
     "beginLesson": "Begin lesson",
     "learningOutcomes": "Learning outcomes",
@@ -1055,6 +1089,10 @@
     "playing": "Playing…",
     "listenArabic": "Listen to Arabic",
     "listenTranslation": "Listen to translation",
+    "listenSlowly": "Listen slowly",
+    "listen": "Listen",
+    "audioRetry": "Try audio again",
+    "audioError": "The R2 audio could not load. Check your connection, then try again; device speech remains available for vocabulary.",
     "listeningGuide": "Learner flow",
     "listenStepOne": "Listen once for the main idea.",
     "listenStepTwo": "Replay slowly and notice the highlighted expressions.",
@@ -1068,6 +1106,21 @@
     "phrasalVerbs": "Phrasal verbs",
     "collocationsAndIdioms": "Collocations and idioms",
     "vocabularyAudioCue": "Say each word after listening to its lesson audio.",
+    "vocabularyStudyInstructions": "Study the five core words first. Use the image, meaning, example, Arabic support, and pronunciation together; then review every expression in the complete language bank.",
+    "completeLanguageBank": "Complete language bank",
+    "completeLanguageBankDescription": "Every purpose pattern, extra word, phrasal verb, and collocation from this lesson is grouped below.",
+    "category": "Category",
+    "expression": "Word or expression",
+    "meaningOrExample": "Meaning or example",
+    "audio": "Audio",
+    "purposePatterns": "Purpose pattern",
+    "extraVocabulary": "Extra vocabulary",
+    "wordFamily": "Word family",
+    "synonymContrast": "Meaning contrast",
+    "commonError": "Common error",
+    "listenWord": "Listen to word",
+    "playVocabulary": "Play pronunciation for {word}",
+    "languageExtensions": "Phrasal verbs, collocations, and idioms",
     "word": "Word",
     "partOfSpeech": "Part of speech",
     "definition": "Definition and example",
@@ -1075,6 +1128,20 @@
     "practiceLabel": "Guided practice",
     "practiceTitle": "Use the language in context",
     "practiceInstructions": "Answer each retrieval question. For sequence activities, select items in order and select an item again to remove it.",
+    "discussionLabel": "Discussion and speaking",
+    "discussionTitle": "Make the Hadith useful in your life",
+    "discussionDescription": "Think first, then speak or write your own answer. Open a sample only after you have tried.",
+    "showSampleAnswer": "Show sample answer",
+    "discussion": {
+      "one": {
+        "question": "Can the same action have different intentions? Give one everyday example.",
+        "answer": "Yes. Two people can help with housework: one may want to support their family, while another may want praise. The action is similar, but the intention is different."
+      },
+      "two": {
+        "question": "Describe one helpful action you could do today. What is your intention?",
+        "answer": "I can help a classmate understand a task. My intention is to be useful and kind, not to receive attention."
+      }
+    },
     "selectedSequence": "Your selected sequence",
     "availableSequenceItems": "Available sequence items",
     "resetOrder": "Reset order",
@@ -1101,8 +1168,99 @@
     "progressRestored": "Saved progress restored",
     "chooseConfidence": "Choose a confidence level before completing the lesson.",
     "audioPlaying": "Audio is playing.",
+    "hintLabel": "Hint:",
+    "confidenceDescription": "Your self-rating calibrates the spaced review schedule for this lesson:",
+    "speakChecklistDescription": "Confirm each criterion after practicing your spoken response:",
     "startGuidedLesson": "Start Hadith lesson",
-    "openLesson": "Open Hadith lesson"
+    "openLesson": "Open Hadith lesson",
+    "pilot": {
+      "overview": {
+        "eyebrow": "Lesson map",
+        "title": "What this lesson will help you do",
+        "purpose": "Connect an action with the reason behind it, understand the Hadith's main message, and explain a personal purpose in clear English.",
+        "timeLabel": "Time",
+        "time": "About 25 minutes",
+        "wordsLabel": "Core language",
+        "words": "{count} core words + useful phrases",
+        "goalLabel": "Final task",
+        "goal": "Explain an action and its intention",
+        "outcomesTitle": "Your learning path",
+        "outcomes": {
+          "message": {
+            "title": "Understand",
+            "description": "Identify the main message without making detailed religious rulings."
+          },
+          "words": {
+            "title": "Build vocabulary",
+            "description": "Learn action, intention, motive, migrate, worldly gain, and connected expressions."
+          },
+          "language": {
+            "title": "Express purpose",
+            "description": "Use to, in order to, and because accurately."
+          },
+          "transfer": {
+            "title": "Use it",
+            "description": "Give a short, clear example from everyday life."
+          }
+        }
+      },
+      "warmup": {
+        "eyebrow": "Notice before reading",
+        "title": "One action, different reasons",
+        "description": "Start with a familiar situation. There is no score here—the goal is to notice the difference between an action and its intention.",
+        "scenario": "Two people help clean the same room.",
+        "prompt": "One wants to support the family. The other wants a reward. Their action looks the same, but their reasons are different.",
+        "question": "What changes between the two people?",
+        "choices": {
+          "support": "Their intention or motive",
+          "reward": "The physical action",
+          "unknown": "Nothing changes"
+        },
+        "feedback": "The action can look identical while the intention changes. Keep that contrast in mind as you read and listen.",
+        "previewTitle": "Preview three key ideas",
+        "preview": {
+          "intention": { "term": "intention (noun)", "meaning": "your clear reason or plan" },
+          "intend": { "term": "intend to (verb)", "meaning": "plan to carry out an action" },
+          "motive": { "term": "motive (noun)", "meaning": "the internal reason behind an action" }
+        }
+      },
+      "speak": {
+        "title": "Explain an action and its intention",
+        "description": "Choose a helpful or neutral everyday action. Speak for two or three sentences; your response is private and is not stored.",
+        "frameLabel": "Sentence frame",
+        "frame": "I [action]. I did it because [reason]. My intention was to [purpose].",
+        "model": "I helped my sibling with their studies. I did it because the homework was difficult. My intention was to help them understand.",
+        "checkTitle": "Self-check before continuing",
+        "checks": {
+          "action": "I named the action.",
+          "reason": "I explained the reason.",
+          "language": "I used to, because, intention, or motive.",
+          "clarity": "My pronunciation was easy to understand."
+        }
+      },
+      "review": {
+        "title": "Retrieve, check, and plan your review",
+        "description": "Answer from memory before opening each model answer. This strengthens recall more than rereading.",
+        "items": {
+          "message": {
+            "question": "What is the main message of the Hadith?",
+            "answer": "An action is connected to the intention or motive behind it."
+          },
+          "words": {
+            "question": "Can you explain the five core expressions?",
+            "answer": "Action is a deed; intention is a plan or purpose; motive is the internal reason; migrate means move to another place; worldly gain is a material benefit."
+          },
+          "connectors": {
+            "question": "How do to, in order to, and because express purpose or reason?",
+            "answer": "Use to or in order to before a verb: I study to learn. Use because before a clause: I study because I want to learn."
+          },
+          "transfer": {
+            "question": "Give a two-sentence everyday example.",
+            "answer": "I called my friend because they felt worried. My intention was to support them."
+          }
+        }
+      }
+    }
   },
   "wordInspector": {
     "pronounce": "Pronounce {word}"

@@ -57,7 +57,11 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
       <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
         {t("hadith.practiceLabel")}
       </p>
-      <h2 id="hadith-practice-heading" className="mt-2 text-2xl font-black">
+      <h2
+        id="hadith-practice-heading"
+        tabIndex={-1}
+        className="mt-2 text-2xl font-black tracking-tight text-foreground outline-none sm:text-3xl"
+      >
         {t("hadith.practiceTitle")}
       </h2>
       <p className="mt-3 text-sm font-semibold text-muted-foreground">
@@ -195,6 +199,34 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
           );
         })}
       </div>
+
+      {exerciseSet.lessonId === "hadith-01" && (
+        <section
+          className="mt-8 rounded-2xl border border-primary/25 bg-primary/5 p-4 sm:p-5"
+          aria-labelledby="hadith-discussion-heading"
+        >
+          <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
+            {t("hadith.discussionLabel")}
+          </p>
+          <h3 id="hadith-discussion-heading" className="mt-2 text-xl font-black">
+            {t("hadith.discussionTitle")}
+          </h3>
+          <p className="mt-2 text-sm text-muted-foreground">{t("hadith.discussionDescription")}</p>
+          <div className="mt-5 space-y-3">
+            {["one", "two"].map((question) => (
+              <details key={question} className="rounded-xl border border-border bg-card p-4">
+                <summary className="min-h-11 cursor-pointer list-none font-black focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
+                  {t(`hadith.discussion.${question}.question`)}{" "}
+                  <span className="ms-2 text-sm text-primary">{t("hadith.showSampleAnswer")}</span>
+                </summary>
+                <p className="mt-3 border-t border-border pt-3 text-sm leading-6 text-muted-foreground">
+                  {t(`hadith.discussion.${question}.answer`)}
+                </p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
 
       <p className="mt-6 font-black text-primary" role="status" aria-live="polite">
         {t("hadith.practiceProgress", {

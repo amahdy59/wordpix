@@ -59,7 +59,7 @@ test("correct pronunciation choices play reusable feedback and advance automatic
   await page.getByRole("button", { name: "Continue", exact: true }).click();
   await expect(page.getByText("Check 1 of 3 in this stage", { exact: true })).toBeVisible();
 
-  await page.getByRole("button", { name: "log", exact: true }).click();
+  await page.getByRole("button", { name: "Option 1: log", exact: true }).click();
   await expect(page.getByRole("status").filter({ hasText: "Correct" })).toBeVisible();
   const replay = page.getByRole("button", { name: "Replay feedback" });
   await expect(replay).toBeVisible();

@@ -30,6 +30,47 @@ export type HadithExerciseSet = z.infer<typeof setSchema>;
 
 export const HADITH_EXERCISE_SETS: readonly HadithExerciseSet[] = z.array(setSchema).parse([
   {
+    lessonId: "hadith-01",
+    exercises: [
+      {
+        id: "intention-meaning",
+        type: "single-choice",
+        prompt: "Which word means your clear reason or plan for doing something?",
+        options: [
+          { id: "intention", label: "intention" },
+          { id: "action", label: "action" },
+          { id: "gain", label: "worldly gain" },
+        ],
+        answerId: "intention",
+        feedback: "An intention is the purpose or plan behind an action.",
+      },
+      {
+        id: "hadith-message",
+        type: "single-choice",
+        prompt: "What main message does the Hadith teach about an action?",
+        options: [
+          { id: "intention", label: "Its intention gives it its purpose." },
+          { id: "reward", label: "It matters only when it brings a reward." },
+          { id: "speed", label: "It should always be completed quickly." },
+        ],
+        answerId: "intention",
+        feedback: "The Hadith connects each action with the intention behind it.",
+      },
+      {
+        id: "purpose-language",
+        type: "single-choice",
+        prompt: "Choose the best completion: “I study English ___ understand the lesson.”",
+        options: [
+          { id: "to", label: "to" },
+          { id: "because", label: "because" },
+          { id: "although", label: "although" },
+        ],
+        answerId: "to",
+        feedback: "Use “to” before a verb to express purpose.",
+      },
+    ],
+  },
+  {
     lessonId: "hadith-02",
     exercises: [
       {

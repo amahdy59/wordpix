@@ -1,5 +1,13 @@
-import { useMemo, useState } from "react";
-import { ArrowLeft, ArrowRight, CheckCircle2, Headphones, Search, Volume2 } from "lucide-react";
+import { useCallback, useMemo, useState } from "react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  CheckCircle2,
+  Headphones,
+  Search,
+  Volume2,
+  Clock3,
+} from "lucide-react";
 import type { Action } from "../../types";
 import { useLearner } from "../../context/LearnerContext";
 import { useI18n } from "../../../i18n";
@@ -18,10 +26,26 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
   const { t } = useI18n();
   const { state } = useLearner();
   const [query, setQuery] = useState("");
+  const [filter, setFilter] = useState<"all" | "due" | "in-progress" | "mastered">("all");
+  const [now] = useState(() => Date.now());
   const normalizedQuery = query.trim().toLocaleLowerCase("en-US");
   const completed = Object.values(state.pronunciationProgress).filter(
     (entry) => entry.status === "mastered"
   ).length;
+  const isDue = useCallback(
+    (nextReviewAt?: string) => {
+      if (!nextReviewAt) return false;
+      const dueDate = new Date(nextReviewAt);
+      const todayEnd = new Date(now);
+      todayEnd.setHours(23, 59, 59, 999);
+      return dueDate.getTime() <= todayEnd.getTime();
+    },
+    [now]
+  );
+  const due = FIGMA_PRONUNCIATION_LESSONS.filter((lesson) => {
+    const item = state.pronunciationProgress[`lesson-${String(lesson.number).padStart(2, "0")}`];
+    return isDue(item?.nextReviewAt);
+  }).length;
   const nextLesson =
     FIGMA_PRONUNCIATION_LESSONS.find((lesson) => {
       const status =
@@ -41,6 +65,11 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
         index,
         lessons: FIGMA_PRONUNCIATION_LESSONS.filter((lesson) => {
           if (lesson.number < chapter.start || lesson.number > chapter.end) return false;
+          const progress =
+            state.pronunciationProgress[`lesson-${String(lesson.number).padStart(2, "0")}`];
+          if (filter === "mastered" && progress?.status !== "mastered") return false;
+          if (filter === "in-progress" && progress?.status !== "in-progress") return false;
+          if (filter === "due" && !isDue(progress?.nextReviewAt)) return false;
           if (!normalizedQuery) return true;
           const activity = getFigmaPronunciationActivityData(lesson.number);
           return `${lesson.number} ${activity.title} ${activity.objective}`
@@ -48,7 +77,7 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
             .includes(normalizedQuery);
         }),
       })).filter((chapter) => chapter.lessons.length > 0),
-    [normalizedQuery]
+    [filter, isDue, normalizedQuery, state.pronunciationProgress]
   );
 
   return (
@@ -86,6 +115,62 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
                 total: FIGMA_PRONUNCIATION_LESSONS.length,
               })}
             </p>
+            <div
+              className="mt-4 grid grid-cols-3 gap-2"
+              aria-label={t("pronunciation.progressSummary")}
+            >
+              {[
+                [t("pronunciation.summaryMastered"), completed],
+                [t("pronunciation.summaryDue"), due],
+                [t("pronunciation.summaryLessons"), FIGMA_PRONUNCIATION_LESSONS.length],
+              ].map(([label, value]) => (
+                <div
+                  key={String(label)}
+                  className="rounded-2xl border border-border bg-card/80 p-3"
+                >
+                  <p className="text-xl font-black text-foreground">{value}</p>
+                  <p className="mt-1 text-xs font-bold leading-4 text-muted-foreground">{label}</p>
+                </div>
+              ))}
+            </div>
+            <div
+              className="mt-4 flex flex-wrap gap-2"
+              role="tablist"
+              aria-label={t("pronunciation.filtersLabel")}
+            >
+              {(["all", "due", "in-progress", "mastered"] as const).map((value) => {
+                const count =
+                  value === "all"
+                    ? FIGMA_PRONUNCIATION_LESSONS.length
+                    : value === "due"
+                      ? due
+                      : value === "mastered"
+                        ? completed
+                        : Object.values(state.pronunciationProgress).filter(
+                            (entry) => entry.status === "in-progress"
+                          ).length;
+                const label =
+                  value === "all"
+                    ? "filterAll"
+                    : value === "due"
+                      ? "filterDue"
+                      : value === "in-progress"
+                        ? "filterInProgress"
+                        : "filterMastered";
+                return (
+                  <button
+                    key={value}
+                    type="button"
+                    role="tab"
+                    aria-selected={filter === value}
+                    onClick={() => setFilter(value)}
+                    className={`min-h-11 rounded-xl border px-3 text-sm font-black focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary ${filter === value ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card"}`}
+                  >
+                    {t(`pronunciation.${label}`)} <span className="ms-1 opacity-80">{count}</span>
+                  </button>
+                );
+              })}
+            </div>
             <button
               type="button"
               onClick={() =>
@@ -202,15 +287,22 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
                               </span>
                               <span className="mt-2 inline-flex items-center gap-1 text-xs font-bold text-primary">
                                 <Volume2 className="size-4" aria-hidden />
-                                {progress?.status === "in-progress"
-                                  ? t("pronunciation.resumeStage", {
-                                      stage: progress.currentStage + 1,
-                                    })
-                                  : mastered
-                                    ? t("pronunciation.masteredScore", {
-                                        score: progress.bestScorePercent,
-                                      })
-                                    : t("pronunciation.lessonFormat")}
+                                {isDue(progress?.nextReviewAt) ? (
+                                  <>
+                                    <Clock3 className="size-4" aria-hidden />
+                                    {t("pronunciation.dueReview")}
+                                  </>
+                                ) : progress?.status === "in-progress" ? (
+                                  t("pronunciation.resumeStage", {
+                                    stage: progress.currentStage + 1,
+                                  })
+                                ) : mastered ? (
+                                  t("pronunciation.masteredScore", {
+                                    score: progress.bestScorePercent,
+                                  })
+                                ) : (
+                                  t("pronunciation.lessonFormat")
+                                )}
                               </span>
                             </span>
                             <ArrowRight

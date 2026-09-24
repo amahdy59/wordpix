@@ -67,6 +67,9 @@ export interface FigmaPronunciationActivityData {
   readonly transferWords: readonly string[];
   readonly contrastPairs: readonly (readonly [string, string])[];
   readonly focus: string;
+  /** Model and transfer sentences provide a meaningful final retrieval review. */
+  readonly reviewSentences: readonly string[];
+  readonly recoveryCue?: string;
 }
 
 const uniqueItems = (items: readonly FigmaPronunciationImage[]) => {
@@ -82,10 +85,23 @@ const uniqueItems = (items: readonly FigmaPronunciationImage[]) => {
 const valueAfter = (lines: readonly string[], label: RegExp): string | undefined => {
   const index = lines.findIndex((candidate) => label.test(candidate));
   if (index < 0) return undefined;
-  const inline = lines[index].replace(/^.*?:\s*/, "").trim();
-  if (inline) return inline;
+  if (/:\s*\S/.test(lines[index])) {
+    return lines[index].replace(/^.*?:\s*/, "").trim();
+  }
   const next = lines[index + 1]?.trim();
-  return next && !/^[A-Z][A-Za-z &/-]+:$/.test(next) ? next : undefined;
+  return next && !/^[A-Z][A-Za-z &/-]+:?$/.test(next)
+    ? next.replace(/^[‘'“"]|[’'”"]$/g, "").trim()
+    : undefined;
+};
+
+const sentencesAfter = (lines: readonly string[], label: RegExp): readonly string[] => {
+  const value = valueAfter(lines, label);
+  if (!value) return [];
+  return value
+    .split(/\s*\|\s*/)
+    .map((sentence) => sentence.trim())
+    .filter((sentence) => sentence.length > 3)
+    .slice(0, 4);
 };
 
 export function getFigmaPronunciationActivityData(number: number): FigmaPronunciationActivityData {
@@ -123,6 +139,11 @@ export function getFigmaPronunciationActivityData(number: number): FigmaPronunci
   const focus =
     valueAfter(lesson.text, /^(?:Linguistic Focus|Acoustic Cue|Contrast Focus|Focus):/i) ??
     objective;
+  const reviewSentences = [
+    ...sentencesAfter(lesson.text, /^Model Delivery:/i),
+    ...sentencesAfter(lesson.text, /^Fresh Word Transfer Targets:/i),
+  ];
+  const recoveryCue = valueAfter(lesson.text, /^(?:Incorrect Feedback|Recovery Cue):?/i);
   return {
     title,
     objective,
@@ -137,7 +158,22 @@ export function getFigmaPronunciationActivityData(number: number): FigmaPronunci
     transferWords: transferItems.map((item) => item.label),
     contrastPairs,
     focus,
+    reviewSentences,
+    recoveryCue,
   };
+}
+
+/** Returns the authored minimal-pair partner for a word, when one exists. */
+export function getPronunciationContrastPartner(
+  activity: FigmaPronunciationActivityData,
+  label: string
+): string | undefined {
+  const normalized = label.toLocaleLowerCase("en-US");
+  const pair = activity.contrastPairs.find(([first, second]) =>
+    [first, second].some((value) => value.toLocaleLowerCase("en-US") === normalized)
+  );
+  if (!pair) return undefined;
+  return pair[0].toLocaleLowerCase("en-US") === normalized ? pair[1] : pair[0];
 }
 
 export function pronunciationImagePath(imageRef: string): string {

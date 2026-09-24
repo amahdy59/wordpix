@@ -22,6 +22,18 @@ export function resolveAssetUrl(path: string): string {
 
   const relative = path.replace(/^\.?\//, "");
 
+  // Hadith picture vocabulary is authored from the Figma image manifest and
+  // uploaded to R2 with this exact key prefix. These files are intentionally
+  // not bundled in /public, so resolving them against Vite's base would turn
+  // every vocabulary image into a local 404.
+  if (
+    import.meta.env.MODE !== "test" &&
+    PUBLIC_ASSET_BASE_URL &&
+    /^hadith\/v1\/images\//.test(relative)
+  ) {
+    return `${PUBLIC_ASSET_BASE_URL}/${relative}`;
+  }
+
   // Media is uploaded to R2 under a stable prefix. Keep application assets
   // (for example /release-notes.json) on the Vite origin.
   if (

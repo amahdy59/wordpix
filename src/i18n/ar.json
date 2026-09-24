@@ -966,6 +966,16 @@
     "curriculumTitle": "منهج النطق",
     "curriculumDescription": "طوّر نطقًا دقيقًا ومفهومًا من خلال التمييز بين الأصوات، والاستماع، وفهم المعنى، والتدريب الموجّه، ثم التطبيق على كلمات جديدة.",
     "curriculumProgress": "أتقنت {completed} من أصل {total} درسًا",
+    "filtersLabel": "تصفية دروس النطق",
+    "filterAll": "الكل",
+    "filterDue": "مستحق اليوم",
+    "filterInProgress": "قيد التقدم",
+    "filterMastered": "متقن",
+    "dueReview": "مستحق للمراجعة",
+    "progressSummary": "ملخص تقدم النطق",
+    "summaryMastered": "متقنة",
+    "summaryDue": "مستحقة اليوم",
+    "summaryLessons": "إجمالي الدروس",
     "curriculumCardDescription": "أتقنت {completed} من أصل {total} درسًا منظّمًا ضمن ثمانية فصول متدرجة",
     "continueCurriculum": "متابعة الدرس {number}",
     "viewCurriculum": "عرض جميع دروس النطق",
@@ -984,13 +994,25 @@
     "stageProgress": "المرحلة {current} من {total}",
     "previousBest": "أفضل نتيجة سابقة: {score}%",
     "picturePreview": "تعرّف إلى الكلمات",
-    "picturePreviewDesc": "انظر إلى كل صورة وقل الكلمة مرة. تختفي الصور عند اختبار الاستماع.",
+    "picturePreviewDesc": "اضغط على بطاقة كلمة لسماعها. استمع وانظر وردد قبل البدء؛ يمكنك إعادة تشغيل كل كلمة متى احتجت.",
+    "playWord": "تشغيل نطق {word}",
     "stage": "المرحلة {number} · {name}",
     "checkProgress": "التحقق {current} من أصل {total} في هذه المرحلة",
     "readyTitle": "ابنِ خريطة للصوت",
     "testTitle": "استمع ولاحظ واختر",
     "playing": "جارٍ التشغيل…",
     "play": "تشغيل نطق النموذج",
+    "playbackSpeed": "سرعة التشغيل",
+    "normalSpeed": "عادية",
+    "slowSpeed": "متأنية",
+    "choiceLabel": "الخيار {number}: {word}",
+    "recoveryCueTitle": "جرب إرشاد وضع الفم هذا",
+    "contrastHeroBadge": "المقارنة الأساسية",
+    "contrastHeroTitle": "استمع إلى الفرق",
+    "soundGuide": "دليل الصوت",
+    "contrastHeroDescription": "استمع إلى الكلمتين جنبًا إلى جنب. لاحظ ما يتغير قبل أن تتدرب على الاختيار والنطق.",
+    "childContrastHint": "اضغط على كل كلمة، واستمع بعناية، ولاحظ كيف يتغير الصوت.",
+    "listenToContrast": "استمع إلى هذه الكلمة",
     "previewPrompt": "ستتدرّب على {count} كلمة مرتبطة بصورة عبر الاستماع والمعنى والاستخدام ثم اختبار نقل جديد.",
     "choosePicture": "استمع ثم اختر الصورة المطابقة.",
     "chooseUsage": "اختر الكلمة التي تناسب المعنى المنطوق.",
@@ -1014,6 +1036,8 @@
     "resultReview": "المراجعة التالية",
     "resultReady": "تم الاختبار",
     "resultPractised": "تم التطبيق",
+    "usageReviewTitle": "استخدم الكلمات في سياق",
+    "usageReviewDescription": "استمع إلى كل جملة مترابطة ثم قلها بصوت عالٍ. اضغط على الجملة بعدد المرات التي تحتاجها.",
     "reviewAgain": "مراجعة مرة أخرى",
     "reviewInDays": "بعد {days} أيام",
     "reviewTomorrow": "غدًا",
@@ -1046,6 +1070,16 @@
     "badge": "الحديث {number} · B1",
     "minutes": "{count} دقيقة",
     "stageNavigation": "مراحل درس الحديث",
+    "stepOfTotal": "المرحلة {current} من {total}",
+    "stageLabels": {
+      "overview": "نظرة عامة",
+      "warm-up": "تمهيد",
+      "read-listen": "اقرأ واستمع",
+      "vocabulary": "المفردات",
+      "practice": "تدريب",
+      "speak": "تحدث",
+      "check-review": "تحقق وراجع"
+    },
     "lessonLabel": "درس الحديث",
     "beginLesson": "ابدأ الدرس",
     "learningOutcomes": "نواتج التعلم",
@@ -1055,6 +1089,10 @@
     "playing": "يُشغّل الآن…",
     "listenArabic": "استمع إلى العربية",
     "listenTranslation": "استمع إلى الترجمة",
+    "listenSlowly": "استمع ببطء",
+    "listen": "استمع",
+    "audioRetry": "حاول تشغيل الصوت مجددًا",
+    "audioError": "تعذر تحميل الصوت من R2. تحقق من الاتصال ثم حاول مجددًا؛ يظل نطق الجهاز متاحًا للمفردات.",
     "listeningGuide": "مسار المتعلم",
     "listenStepOne": "استمع مرة لفهم الفكرة الرئيسة.",
     "listenStepTwo": "أعد الاستماع ببطء ولاحظ التعبيرات المستهدفة.",
@@ -1068,6 +1106,21 @@
     "phrasalVerbs": "الأفعال المركبة",
     "collocationsAndIdioms": "المتلازمات والتعابير الاصطلاحية",
     "vocabularyAudioCue": "انطق كل كلمة بعد الاستماع إلى صوت الدرس.",
+    "vocabularyStudyInstructions": "ادرس الكلمات الخمس الأساسية أولًا. اجمع بين الصورة والمعنى والمثال والدعم العربي والنطق، ثم راجع جميع التعبيرات في بنك اللغة الكامل.",
+    "completeLanguageBank": "بنك اللغة الكامل",
+    "completeLanguageBankDescription": "جُمعت أدناه جميع أنماط الغرض والكلمات الإضافية والأفعال المركبة والمتلازمات في هذا الدرس.",
+    "category": "الفئة",
+    "expression": "الكلمة أو التعبير",
+    "meaningOrExample": "المعنى أو المثال",
+    "audio": "الصوت",
+    "purposePatterns": "نمط الغرض",
+    "extraVocabulary": "مفردات إضافية",
+    "wordFamily": "عائلة الكلمة",
+    "synonymContrast": "فرق المعنى",
+    "commonError": "خطأ شائع",
+    "listenWord": "استمع إلى الكلمة",
+    "playVocabulary": "تشغيل نطق {word}",
+    "languageExtensions": "الأفعال المركبة والمتلازمات والتعابير",
     "word": "الكلمة",
     "partOfSpeech": "نوع الكلمة",
     "definition": "المعنى والمثال",
@@ -1075,6 +1128,20 @@
     "practiceLabel": "تدريب موجّه",
     "practiceTitle": "استخدم اللغة في سياقها",
     "practiceInstructions": "أجب عن كل سؤال استرجاع. في أنشطة الترتيب، اختر العناصر بالترتيب واختر العنصر مرة أخرى لإزالته.",
+    "discussionLabel": "نقاش وتحدث",
+    "discussionTitle": "اجعل معنى الحديث مفيدًا في حياتك",
+    "discussionDescription": "فكّر أولًا، ثم تحدث أو اكتب إجابتك. افتح المثال فقط بعد أن تحاول.",
+    "showSampleAnswer": "إظهار إجابة نموذجية",
+    "discussion": {
+      "one": {
+        "question": "هل يمكن أن يكون للفعل نفسه نيات مختلفة؟ أعط مثالًا يوميًا.",
+        "answer": "نعم. قد يساعد شخصان في أعمال المنزل؛ أحدهما لدعم أسرته والآخر ليحصل على المدح. الفعل متشابه، لكن النية مختلفة."
+      },
+      "two": {
+        "question": "صِف فعلًا مساعدًا يمكنك القيام به اليوم. ما نيتك؟",
+        "answer": "يمكنني مساعدة زميل في فهم مهمة. نيتي أن أكون نافعًا ولطيفًا، لا أن أحصل على الاهتمام."
+      }
+    },
     "selectedSequence": "الترتيب الذي اخترته",
     "availableSequenceItems": "عناصر الترتيب المتاحة",
     "resetOrder": "إعادة ضبط الترتيب",
@@ -1101,8 +1168,99 @@
     "progressRestored": "تمت استعادة التقدم المحفوظ",
     "chooseConfidence": "اختر مستوى الثقة قبل إكمال الدرس.",
     "audioPlaying": "الصوت قيد التشغيل.",
+    "hintLabel": "تلميح:",
+    "confidenceDescription": "يساعد تقييمك الذاتي على ضبط جدول المراجعة المتباعدة لهذا الدرس:",
+    "speakChecklistDescription": "أكد كل معيار بعد التدرب على إجابتك الشفهية:",
     "startGuidedLesson": "ابدأ درس الحديث",
-    "openLesson": "افتح درس الحديث"
+    "openLesson": "افتح درس الحديث",
+    "pilot": {
+      "overview": {
+        "eyebrow": "خريطة الدرس",
+        "title": "ما الذي سيساعدك هذا الدرس على فعله؟",
+        "purpose": "اربط الفعل بالسبب وراءه، وافهم الرسالة الأساسية للحديث، واشرح غرضًا شخصيًا بإنجليزية واضحة.",
+        "timeLabel": "الوقت",
+        "time": "نحو 25 دقيقة",
+        "wordsLabel": "اللغة الأساسية",
+        "words": "{count} كلمات أساسية وتعبيرات مفيدة",
+        "goalLabel": "المهمة النهائية",
+        "goal": "اشرح فعلًا ونيته",
+        "outcomesTitle": "مسار تعلمك",
+        "outcomes": {
+          "message": {
+            "title": "افهم",
+            "description": "حدد الرسالة الأساسية دون الدخول في أحكام دينية تفصيلية."
+          },
+          "words": {
+            "title": "ابنِ مفرداتك",
+            "description": "تعلم الفعل والنية والدافع والهجرة والكسب الدنيوي والتعبيرات المرتبطة."
+          },
+          "language": {
+            "title": "عبّر عن الغرض",
+            "description": "استخدم to وin order to وbecause بدقة."
+          },
+          "transfer": {
+            "title": "استخدم ما تعلمت",
+            "description": "قدّم مثالًا قصيرًا وواضحًا من الحياة اليومية."
+          }
+        }
+      },
+      "warmup": {
+        "eyebrow": "لاحظ قبل القراءة",
+        "title": "فعل واحد وأسباب مختلفة",
+        "description": "ابدأ بموقف مألوف. لا توجد درجة هنا؛ الهدف هو ملاحظة الفرق بين الفعل ونيته.",
+        "scenario": "يساعد شخصان في تنظيف الغرفة نفسها.",
+        "prompt": "يريد أحدهما دعم الأسرة، بينما يريد الآخر مكافأة. يبدو الفعل واحدًا لكن الأسباب مختلفة.",
+        "question": "ما الذي يتغير بين الشخصين؟",
+        "choices": {
+          "support": "النية أو الدافع",
+          "reward": "الفعل الجسدي",
+          "unknown": "لا شيء يتغير"
+        },
+        "feedback": "قد يبدو الفعل متطابقًا بينما تتغير النية. تذكّر هذا الفرق أثناء القراءة والاستماع.",
+        "previewTitle": "معاينة ثلاثة مفاهيم أساسية",
+        "preview": {
+          "intention": { "term": "intention (اسم)", "meaning": "سببك أو خطتك الواضحة" },
+          "intend": { "term": "intend to (فعل)", "meaning": "تخطط للقيام بفعل" },
+          "motive": { "term": "motive (اسم)", "meaning": "السبب الداخلي وراء الفعل" }
+        }
+      },
+      "speak": {
+        "title": "اشرح فعلًا ونيته",
+        "description": "اختر فعلًا يوميًا مساعدًا أو محايدًا. تحدث في جملتين أو ثلاث؛ إجابتك خاصة ولا تُخزن.",
+        "frameLabel": "إطار الجملة",
+        "frame": "I [action]. I did it because [reason]. My intention was to [purpose].",
+        "model": "I helped my sibling with their studies. I did it because the homework was difficult. My intention was to help them understand.",
+        "checkTitle": "تحقق ذاتيًا قبل المتابعة",
+        "checks": {
+          "action": "ذكرت الفعل.",
+          "reason": "شرحت السبب.",
+          "language": "استخدمت to أو because أو intention أو motive.",
+          "clarity": "كان نطقي سهل الفهم."
+        }
+      },
+      "review": {
+        "title": "استرجع وتحقق وخطط للمراجعة",
+        "description": "أجب من الذاكرة قبل فتح كل إجابة نموذجية. يقوي ذلك التذكر أكثر من إعادة القراءة.",
+        "items": {
+          "message": {
+            "question": "ما الرسالة الأساسية للحديث؟",
+            "answer": "يرتبط الفعل بالنية أو الدافع وراءه."
+          },
+          "words": {
+            "question": "هل يمكنك شرح التعبيرات الخمسة الأساسية؟",
+            "answer": "Action فعل؛ intention خطة أو غرض؛ motive سبب داخلي؛ migrate الانتقال إلى مكان آخر؛ worldly gain منفعة مادية."
+          },
+          "connectors": {
+            "question": "كيف تعبّر to وin order to وbecause عن الغرض أو السبب؟",
+            "answer": "استخدم to أو in order to قبل الفعل، واستخدم because قبل جملة تشرح السبب."
+          },
+          "transfer": {
+            "question": "قدّم مثالًا يوميًا من جملتين.",
+            "answer": "I called my friend because they felt worried. My intention was to support them."
+          }
+        }
+      }
+    }
   },
   "wordInspector": {
     "pronounce": "انطق {word}"

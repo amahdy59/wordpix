@@ -53,3 +53,47 @@ test("Hadith 2 practice scores retrieval and restores the next stage", async ({ 
   await expect(page.getByText("Saved progress restored", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: /Speak/ })).toHaveAttribute("aria-current", "step");
 });
+
+test("Hadith 1 pilot presents a complete visual and interactive learning flow", async ({
+  page,
+}) => {
+  await page.goto("/#/hadith/lesson-1");
+
+  await page.getByRole("button", { name: /Overview/ }).click();
+  await expect(
+    page.getByRole("heading", { name: "What this lesson will help you do" })
+  ).toBeVisible();
+
+  await page.getByRole("button", { name: /Warm-up/ }).click();
+  await page.getByRole("radio", { name: "Their intention or motive" }).click();
+  await expect(page.getByText(/action can look identical/i)).toBeVisible();
+
+  await page.getByRole("button", { name: /Read & Listen/ }).click();
+  await expect(page.getByRole("button", { name: "Listen slowly" })).toBeVisible();
+
+  await page.getByRole("button", { name: /Vocabulary/ }).click();
+  await expect(
+    page.getByRole("heading", { name: "Core expressions, pictures, and use" })
+  ).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Complete language bank" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Play pronunciation for action" })).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "Play pronunciation for carry out", exact: true })
+  ).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "Play pronunciation for thoughtful action", exact: true })
+  ).toBeVisible();
+
+  await page.getByRole("button", { name: /Practice/ }).click();
+  await expect(
+    page.getByRole("group", { name: /What main message does the Hadith teach about an action/ })
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Make the Hadith useful in your life" })
+  ).toBeVisible();
+
+  const results = await new AxeBuilder({ page })
+    .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
+    .analyze();
+  expect(results.violations).toEqual([]);
+});

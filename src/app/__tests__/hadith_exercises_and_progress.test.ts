@@ -11,8 +11,9 @@ import {
 } from "../learning/hadith/hadithProgress";
 
 describe("Hadith pilot exercises", () => {
-  it("preserves bespoke retrieval activities for lessons 2 through 5", () => {
+  it("preserves bespoke retrieval activities for lessons 1 through 5", () => {
     expect(HADITH_EXERCISE_SETS.map((set) => set.lessonId)).toEqual([
+      "hadith-01",
       "hadith-02",
       "hadith-03",
       "hadith-04",

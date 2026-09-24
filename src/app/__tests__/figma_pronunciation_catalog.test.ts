@@ -4,6 +4,7 @@ import {
   FIGMA_PRONUNCIATION_SOURCE,
   getFigmaPronunciationActivityData,
   getFigmaPronunciationLesson,
+  getPronunciationContrastPartner,
 } from "../learning/foundations/figmaPronunciationCatalog";
 
 describe("Figma pronunciation source", () => {
@@ -49,6 +50,15 @@ describe("Figma pronunciation source", () => {
     expect(sheepOrShip.contrastPairs).toContainEqual(["sheep", "ship"]);
     expect(sheepOrShip.contrastPairs).toContainEqual(["seat", "sit"]);
     expect(sheepOrShip.focus).toMatch(/vowel|duration|tension/i);
+  });
+
+  it("extracts authored recovery cues and maps contrast partners accurately", () => {
+    const penOrPan = getFigmaPronunciationActivityData(4);
+    expect(penOrPan.recoveryCue).toBeTruthy();
+    expect(penOrPan.recoveryCue).toMatch(/mouth|jaw|pan/i);
+    expect(getPronunciationContrastPartner(penOrPan, "pen")).toBe("pan");
+    expect(getPronunciationContrastPartner(penOrPan, "pan")).toBe("pen");
+    expect(getPronunciationContrastPartner(penOrPan, "men")).toBe("man");
   });
 
   it("has a complete progression contract for every lesson", () => {

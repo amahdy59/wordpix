@@ -7,6 +7,7 @@ import {
 } from "../learning/hadith/hadithCurriculum";
 import { HADITH_AUDIO_ASSETS, HADITH_AUDIO_PROFILES } from "../learning/hadith/hadithAudioManifest";
 import { audioKey } from "../shared/assetUrls";
+import { parseHadithVocabulary } from "../learning/hadith/HadithVocabularyStudy";
 
 describe("Hadith curriculum", () => {
   it("imports all 42 Figma lessons and keeps each Hadith in one canonical source block", () => {
@@ -56,5 +57,16 @@ describe("Hadith curriculum", () => {
         audioKey(curriculumLesson!.source.translation, HADITH_AUDIO_PROFILES.en)
       ).resolves.toBe(lesson.translation.objectKey);
     }
+  });
+
+  it("parses every Hadith 1 vocabulary record without dropping examples or Arabic support", () => {
+    const lines = getHadithLesson("hadith-01")!.stages.vocabulary.text;
+    expect(parseHadithVocabulary(lines)).toEqual([
+      expect.objectContaining({ term: "action", example: expect.stringContaining("Helping") }),
+      expect.objectContaining({ term: "intention", arabic: "النِّيَّات" }),
+      expect.objectContaining({ term: "motive" }),
+      expect.objectContaining({ term: "migrate" }),
+      expect.objectContaining({ term: "worldly gain" }),
+    ]);
   });
 });

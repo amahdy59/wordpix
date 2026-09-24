@@ -20,7 +20,7 @@ test("Hadith curriculum exposes all 42 lessons and opens the canonical source", 
   await hadithScroller.evaluate((element) => element.scrollTo({ top: 0 }));
   await page.getByRole("button", { name: /Actions and Intentions/ }).click();
   await expect(page).toHaveURL(/#\/hadith\/lesson-1$/);
-  await page.getByRole("button", { name: "3. Read & Listen" }).click();
+  await page.getByRole("button", { name: "Read & Listen" }).click();
   await expect(page.getByText("Complete Hadith", { exact: true })).toHaveCount(1);
   await expect(page.getByText(/Actions are \(judged\) by motives/)).toHaveCount(1);
   expect(errors).toEqual([]);

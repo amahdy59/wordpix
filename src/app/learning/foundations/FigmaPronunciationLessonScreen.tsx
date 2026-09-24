@@ -1,13 +1,15 @@
-import { useCallback, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowLeft,
   ArrowRight,
   Check,
+  ChevronDown,
   Image as ImageIcon,
   Play,
   RotateCcw,
   Sparkles,
   Volume2,
+  Gauge,
 } from "lucide-react";
 import type { Action } from "../../types";
 import { useAudio } from "../../shared/useAudio";
@@ -18,6 +20,7 @@ import {
   getFigmaPronunciationActivityData,
   pronunciationImagePath,
   seededPronunciationShuffle,
+  getPronunciationContrastPartner,
   type FigmaPronunciationImage,
 } from "./figmaPronunciationCatalog";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
@@ -45,6 +48,7 @@ function imageFor(item: FigmaPronunciationImage) {
 export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props) {
   const { t } = useI18n();
   const { state, recordPronunciationCheckpoint, recordPronunciationCompletion } = useLearner();
+  const childMode = state.preferences.expression === "child";
   const activity = getFigmaPronunciationActivityData(lessonNumber);
   const progress = state.pronunciationProgress[`lesson-${String(lessonNumber).padStart(2, "0")}`];
   const restoredStage =
@@ -57,7 +61,12 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
   const [attempts, setAttempts] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
   const [completedScore, setCompletedScore] = useState<number | null>(null);
-  const { speak, stop, isPlaying } = useAudio({ lang: "en-US", rate: 0.78, preferLocal: true });
+  const [slowPlayback, setSlowPlayback] = useState(false);
+  const { speak, stop, isPlaying } = useAudio({
+    lang: "en-US",
+    rate: slowPlayback ? 0.65 : 0.9,
+    preferLocal: true,
+  });
   const { speakFeedback, cancel: cancelSpokenFeedback } = useSpokenFeedback();
   const pool = rolePool(activity, stage);
   const target =
@@ -70,15 +79,50 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
         ? pool[(lessonNumber * 7 + Math.max(0, stage - 1) * 5 + trial * 3) % pool.length]
         : activity.items[0];
   const audioClip = getPronunciationAudioClip(target?.label ?? activity.model, stage === 4);
+  const contrastPartner = target
+    ? getPronunciationContrastPartner(activity, target.label)
+    : undefined;
+  const partnerItem = contrastPartner
+    ? activity.items.find(
+        (item) =>
+          item.label.toLocaleLowerCase("en-US") === contrastPartner.toLocaleLowerCase("en-US")
+      )
+    : undefined;
   const choices = target
     ? seededPronunciationShuffle(
-        [target, ...pool.filter((item) => item.label !== target.label).slice(0, 3)],
+        [
+          target,
+          ...(partnerItem ? [partnerItem] : []),
+          ...pool
+            .filter((item) => item.label !== target.label && item.label !== partnerItem?.label)
+            .slice(0, partnerItem ? 2 : 3),
+        ],
         lessonNumber * 31 + stage * 17 + trial * 13
       )
     : [];
+  // Scaffolding: Start with 2-AFC (the core minimal pair) for all learners in stages 1-2.
+  // In stages 3-4 (Use & Transfer), expand to 4 options for adult learners.
+  const visibleChoices =
+    childMode || stage <= 2 || choices.length <= 2 ? choices.slice(0, 2) : choices.slice(0, 4);
+  const contrastHero = activity.contrastPairs[0];
+  const contrastHeroItems = contrastHero
+    ?.map((label) =>
+      activity.items.find(
+        (item) => item.label.toLocaleLowerCase("en-US") === label.toLocaleLowerCase("en-US")
+      )
+    )
+    .filter(Boolean) as FigmaPronunciationImage[] | undefined;
   const answerable = stage === 1 || stage === 2 || stage === 3 || stage === 4;
   const passed = answer === target?.label;
-  const advance = useCallback(() => {
+  // Each new prompt begins with a model. Learners can still replay it, and auto-advance
+  // remains their explicit control over whether correct answers move forward automatically.
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      speak(target?.label ?? activity.model, undefined, audioClip?.objectKey);
+    }, 250);
+    return () => window.clearTimeout(timer);
+  }, [activity.model, audioClip?.objectKey, lessonNumber, speak, stage, target?.label, trial]);
+  const advance = () => {
     stop();
     cancelSpokenFeedback();
     setAnswer(null);
@@ -102,16 +146,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     }
     recordPronunciationCheckpoint(`lesson-${String(lessonNumber).padStart(2, "0")}`, stage + 1);
     setStage((value) => (value + 1) as Stage);
-  }, [
-    correctCount,
-    lessonNumber,
-    recordPronunciationCheckpoint,
-    recordPronunciationCompletion,
-    cancelSpokenFeedback,
-    stage,
-    stop,
-    trial,
-  ]);
+  };
   const autoAdvance = useAutoAdvance({
     enabled: state.accessibility.autoAdvance,
     onAdvance: advance,
@@ -135,6 +170,35 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
       });
     }
   };
+  const selectAnswerRef = useRef(selectAnswer);
+  useEffect(() => {
+    selectAnswerRef.current = selectAnswer;
+  });
+
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.target instanceof HTMLInputElement || event.target instanceof HTMLTextAreaElement)
+        return;
+      if (event.key === " " || event.key.toLowerCase() === "r") {
+        event.preventDefault();
+        speak(target?.label ?? activity.model, undefined, audioClip?.objectKey);
+      }
+      const index = Number(event.key) - 1;
+      if (answerable && Number.isInteger(index) && visibleChoices[index] && !answer) {
+        selectAnswerRef.current(visibleChoices[index].label);
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [
+    activity.model,
+    answer,
+    answerable,
+    audioClip?.objectKey,
+    speak,
+    target?.label,
+    visibleChoices,
+  ]);
   const replayFeedback = () => {
     if (!answer) return;
     autoAdvance.cancel();
@@ -233,6 +297,34 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 {t("pronunciation.back")}
               </button>
             </div>
+            {activity.reviewSentences.length > 0 && (
+              <section
+                className="mt-7 rounded-2xl border border-primary/25 bg-primary/5 p-5 text-start"
+                aria-labelledby="pronunciation-usage-review"
+              >
+                <h2 id="pronunciation-usage-review" className="text-lg font-black">
+                  {t("pronunciation.usageReviewTitle")}
+                </h2>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  {t("pronunciation.usageReviewDescription")}
+                </p>
+                <div className="mt-4 grid gap-3">
+                  {activity.reviewSentences.map((sentence) => (
+                    <button
+                      key={sentence}
+                      type="button"
+                      onClick={() => speak(sentence)}
+                      className="flex min-h-11 items-center gap-3 rounded-xl border border-border bg-card p-3 text-start font-bold hover:border-primary focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                      lang="en"
+                      dir="ltr"
+                    >
+                      <Volume2 className="size-5 shrink-0 text-primary" aria-hidden />
+                      {sentence}
+                    </button>
+                  ))}
+                </div>
+              </section>
+            )}
           </section>
         </div>
       </main>
@@ -298,9 +390,99 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             </p>
           )}
         </header>
+        {contrastHero && contrastHeroItems?.length === 2 && stage === 0 && (
+          <section
+            className="rounded-3xl border-2 border-primary/25 bg-card p-5 shadow-sm sm:p-7"
+            aria-labelledby="pronunciation-contrast-title"
+          >
+            <div className="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
+                  {t("pronunciation.contrastHeroBadge")}
+                </p>
+                <h2 id="pronunciation-contrast-title" className="mt-1 text-2xl font-black">
+                  {t("pronunciation.contrastHeroTitle")}
+                </h2>
+                <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
+                  {childMode
+                    ? t("pronunciation.childContrastHint")
+                    : t("pronunciation.contrastHeroDescription")}
+                </p>
+              </div>
+              <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary">
+                {activity.focus}
+              </span>
+            </div>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              {contrastHeroItems.map((item) => (
+                <button
+                  key={item.label}
+                  type="button"
+                  onClick={() =>
+                    speak(item.label, undefined, getPronunciationAudioClip(item.label)?.objectKey)
+                  }
+                  className="group flex min-h-24 items-center gap-4 rounded-2xl border border-border bg-muted/50 p-3 text-start hover:border-primary focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  lang="en"
+                  dir="ltr"
+                >
+                  <img
+                    src={imageFor(item)}
+                    alt=""
+                    className="size-20 rounded-xl object-cover"
+                    aria-hidden
+                  />
+                  <span className="min-w-0">
+                    <span className="block text-xl font-black">{item.label}</span>
+                    <span className="mt-1 inline-flex items-center gap-2 text-sm font-bold text-primary">
+                      <Volume2 className="size-4" aria-hidden />
+                      {t("pronunciation.listenToContrast")}
+                    </span>
+                  </span>
+                </button>
+              ))}
+            </div>
+          </section>
+        )}
+        {contrastHero && contrastHeroItems?.length === 2 && stage > 0 && (
+          <details className="group rounded-2xl border border-border bg-card/80 p-3 text-start shadow-xs">
+            <summary className="flex cursor-pointer items-center justify-between text-xs font-black uppercase tracking-wider text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+              <span className="flex items-center gap-2">
+                <Sparkles className="size-4 text-primary" aria-hidden />
+                {t("pronunciation.soundGuide")}: {contrastHero[0]} / {contrastHero[1]}
+              </span>
+              <ChevronDown
+                className="size-4 text-muted-foreground transition-transform group-open:rotate-180"
+                aria-hidden
+              />
+            </summary>
+            <div className="mt-3 grid gap-2 sm:grid-cols-2">
+              {contrastHeroItems.map((item) => (
+                <button
+                  key={item.label}
+                  type="button"
+                  onClick={() =>
+                    speak(item.label, undefined, getPronunciationAudioClip(item.label)?.objectKey)
+                  }
+                  className="flex min-h-12 items-center gap-3 rounded-xl border border-border bg-muted/50 p-2 text-start hover:border-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  lang="en"
+                  dir="ltr"
+                >
+                  <img
+                    src={imageFor(item)}
+                    alt=""
+                    className="size-10 rounded-lg object-cover"
+                    aria-hidden
+                  />
+                  <span className="min-w-0 font-bold">{item.label}</span>
+                  <Volume2 className="ms-auto size-4 text-primary" aria-hidden />
+                </button>
+              ))}
+            </div>
+          </details>
+        )}
         {stage === 0 && (
           <section
-            className="rounded-3xl border border-border bg-card p-5 shadow-sm"
+            className="rounded-3xl border border-border bg-card p-5 shadow-sm sm:p-7"
             aria-labelledby="picture-preview-title"
           >
             <div className="flex items-center gap-2">
@@ -312,23 +494,83 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             <p className="mt-2 text-sm text-muted-foreground">
               {t("pronunciation.picturePreviewDesc")}
             </p>
-            <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
-              {activity.items.map((item) => (
-                <figure
-                  key={`${item.label}-${item.imageRef}`}
-                  className="overflow-hidden rounded-2xl border border-border bg-muted"
-                >
-                  <img
-                    src={imageFor(item)}
-                    alt={item.label}
-                    className="aspect-square w-full object-cover"
-                    loading="lazy"
-                  />
-                  <figcaption className="p-2 text-center text-sm font-bold" lang="en" dir="ltr">
-                    {item.label}
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="mt-5 space-y-4">
+              <div>
+                <p className="text-xs font-black uppercase tracking-wider text-muted-foreground">
+                  {activity.focus}
+                </p>
+                <div className="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {activity.items.slice(0, 8).map((item) => (
+                    <button
+                      key={`${item.label}-${item.imageRef}`}
+                      type="button"
+                      onClick={() =>
+                        speak(
+                          item.label,
+                          undefined,
+                          getPronunciationAudioClip(item.label)?.objectKey
+                        )
+                      }
+                      aria-label={t("pronunciation.playWord", { word: item.label })}
+                      className="group overflow-hidden rounded-2xl border border-border bg-muted text-start hover:border-primary focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    >
+                      <img
+                        src={imageFor(item)}
+                        alt={item.label}
+                        className="aspect-square w-full object-cover transition-transform group-hover:scale-105"
+                        loading="lazy"
+                      />
+                      <span
+                        className="flex min-h-11 items-center justify-center gap-2 p-2 text-center text-sm font-bold"
+                        lang="en"
+                        dir="ltr"
+                      >
+                        <Volume2 className="size-4 text-primary" aria-hidden />
+                        {item.label}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+              {activity.items.length > 8 && (
+                <details className="group rounded-2xl border border-border bg-muted/30 p-3">
+                  <summary className="cursor-pointer text-xs font-black uppercase tracking-wider text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                    +{activity.items.length - 8} {t("pronunciation.picturePreview")}
+                  </summary>
+                  <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                    {activity.items.slice(8).map((item) => (
+                      <button
+                        key={`${item.label}-${item.imageRef}`}
+                        type="button"
+                        onClick={() =>
+                          speak(
+                            item.label,
+                            undefined,
+                            getPronunciationAudioClip(item.label)?.objectKey
+                          )
+                        }
+                        aria-label={t("pronunciation.playWord", { word: item.label })}
+                        className="group overflow-hidden rounded-2xl border border-border bg-muted text-start hover:border-primary focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                      >
+                        <img
+                          src={imageFor(item)}
+                          alt={item.label}
+                          className="aspect-square w-full object-cover transition-transform group-hover:scale-105"
+                          loading="lazy"
+                        />
+                        <span
+                          className="flex min-h-11 items-center justify-center gap-2 p-2 text-center text-sm font-bold"
+                          lang="en"
+                          dir="ltr"
+                        >
+                          <Volume2 className="size-4 text-primary" aria-hidden />
+                          {item.label}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </details>
+              )}
             </div>
           </section>
         )}
@@ -355,6 +597,25 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             <Play className="size-5" aria-hidden />
             {isPlaying ? t("pronunciation.playing") : t("pronunciation.play")}
           </button>
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-muted/60 p-3">
+            <span className="inline-flex items-center gap-2 text-sm font-bold">
+              <Gauge className="size-4 text-primary" aria-hidden />
+              {t("pronunciation.playbackSpeed")}
+            </span>
+            <div className="flex gap-2" role="group" aria-label={t("pronunciation.playbackSpeed")}>
+              {[false, true].map((slow) => (
+                <button
+                  key={String(slow)}
+                  type="button"
+                  aria-pressed={slowPlayback === slow}
+                  onClick={() => setSlowPlayback(slow)}
+                  className={`min-h-11 rounded-xl border px-4 text-sm font-black focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary ${slowPlayback === slow ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card"}`}
+                >
+                  {slow ? t("pronunciation.slowSpeed") : t("pronunciation.normalSpeed")}
+                </button>
+              ))}
+            </div>
+          </div>
           {stage === 0 && (
             <div className="mt-4 space-y-3">
               <p className="rounded-2xl bg-muted p-4 text-sm leading-6">
@@ -364,7 +625,11 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 <h3 className="text-sm font-black text-foreground">
                   {t("pronunciation.soundFocus")}
                 </h3>
-                <p className="mt-1 text-sm leading-6 text-muted-foreground" lang="en" dir="ltr">
+                <p
+                  className="mt-1 whitespace-pre-line text-sm leading-6 text-muted-foreground"
+                  lang="en"
+                  dir="ltr"
+                >
                   {activity.focus}
                 </p>
                 {activity.contrastPairs.length > 0 && (
@@ -397,12 +662,16 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                     : t("pronunciation.chooseHeard")}
               </p>
               <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                {choices.map((item) => (
+                {visibleChoices.map((item, choiceIndex) => (
                   <button
                     key={item.label}
                     type="button"
                     onClick={() => selectAnswer(item.label)}
                     aria-pressed={answer === item.label}
+                    aria-label={t("pronunciation.choiceLabel", {
+                      number: choiceIndex + 1,
+                      word: item.label,
+                    })}
                     disabled={passed}
                     className={`min-h-14 rounded-2xl border-2 px-4 text-start font-black focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed ${answer === item.label ? (item.label === target?.label ? "border-feedback-success bg-feedback-success-surface" : "border-destructive bg-destructive/10") : "border-border hover:border-primary disabled:opacity-70"}`}
                     lang="en"
@@ -416,7 +685,9 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                           className="aspect-[16/9] w-full rounded-xl object-cover"
                           aria-hidden
                         />
-                        <span className="sr-only">{item.label}</span>
+                        <span className="mt-2 block text-center text-base font-black">
+                          {item.label}
+                        </span>
                       </>
                     ) : stage === 2 ? (
                       <>
@@ -429,7 +700,15 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                         {item.label}
                       </>
                     ) : (
-                      item.label
+                      <>
+                        <img
+                          src={imageFor(item)}
+                          alt=""
+                          className="me-3 inline size-10 rounded-lg object-cover"
+                          aria-hidden
+                        />
+                        {item.label}
+                      </>
                     )}
                   </button>
                 ))}
@@ -468,6 +747,17 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 {t("pronunciation.replayFeedback")}
               </button>
             </div>
+          )}
+          {answer && !passed && attempts >= 2 && activity.recoveryCue && (
+            <aside
+              className="mt-3 rounded-2xl border border-primary/30 bg-primary/5 p-4"
+              role="note"
+            >
+              <p className="text-sm font-black text-primary">
+                {t("pronunciation.recoveryCueTitle")}
+              </p>
+              <p className="mt-1 text-sm leading-6">{activity.recoveryCue}</p>
+            </aside>
           )}
           <div className="mt-6 flex justify-between gap-3">
             <button type="button" onClick={reset} className="min-h-11 rounded-xl px-3 font-bold">
