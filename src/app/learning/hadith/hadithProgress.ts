@@ -1,6 +1,8 @@
 import { z } from "zod";
 import { HADITH_STAGE_IDS, type HadithStageId } from "./hadithCurriculumStages";
 
+const LEGACY_HADITH_STAGE_IDS = ["overview", "warm-up", ...HADITH_STAGE_IDS] as const;
+
 export const HADITH_CONFIDENCE_VALUES = ["again", "supported", "ready"] as const;
 export type HadithConfidence = (typeof HADITH_CONFIDENCE_VALUES)[number];
 export type HadithLessonStatus = "in-progress" | "needs-practice" | "mastered";
@@ -20,6 +22,21 @@ const progressEntrySchema = z.object({
   updatedAt: z.string(),
 });
 
+const persistedProgressEntrySchema = z.object({
+  status: z.enum(["in-progress", "needs-practice", "mastered"]),
+  currentStage: z
+    .number()
+    .int()
+    .min(0)
+    .max(LEGACY_HADITH_STAGE_IDS.length - 1),
+  completedStages: z.array(z.string()),
+  bestScorePercent: z.number(),
+  sessions: z.number().int().nonnegative(),
+  confidence: z.enum(HADITH_CONFIDENCE_VALUES).optional(),
+  nextReviewAt: z.string().optional(),
+  updatedAt: z.string(),
+});
+
 export type HadithLessonProgress = z.infer<typeof progressEntrySchema>;
 export type HadithProgress = Record<string, HadithLessonProgress>;
 
@@ -31,13 +48,25 @@ export function normalizeHadithProgress(value: unknown): HadithProgress {
   if (!value || typeof value !== "object" || Array.isArray(value)) return {};
   const output: HadithProgress = {};
   for (const [lessonId, candidate] of Object.entries(value)) {
-    const parsed = progressEntrySchema.safeParse(candidate);
+    const parsed = persistedProgressEntrySchema.safeParse(candidate);
     if (!parsed.success || !/^hadith-\d{2}$/.test(lessonId)) continue;
-    output[lessonId] = {
+    const isLegacy =
+      parsed.data.currentStage >= HADITH_STAGE_IDS.length ||
+      parsed.data.completedStages.some((stage) => stage === "overview" || stage === "warm-up");
+    const legacyStage = LEGACY_HADITH_STAGE_IDS[parsed.data.currentStage];
+    const migratedStage =
+      legacyStage && HADITH_STAGE_IDS.includes(legacyStage as HadithStageId)
+        ? HADITH_STAGE_IDS.indexOf(legacyStage as HadithStageId)
+        : 0;
+    const completedStages = parsed.data.completedStages.filter((stage): stage is HadithStageId =>
+      HADITH_STAGE_IDS.includes(stage as HadithStageId)
+    );
+    output[lessonId] = progressEntrySchema.parse({
       ...parsed.data,
-      completedStages: [...new Set(parsed.data.completedStages)],
+      currentStage: isLegacy ? migratedStage : parsed.data.currentStage,
+      completedStages: [...new Set(completedStages)],
       bestScorePercent: clampScore(parsed.data.bestScorePercent),
-    };
+    });
   }
   return output;
 }

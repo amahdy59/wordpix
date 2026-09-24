@@ -12,8 +12,6 @@ import { getHadithExerciseSet } from "./hadithExerciseCatalog";
 import type { HadithConfidence } from "./hadithProgress";
 import { getParsedHadithStages } from "./hadithLessonContent";
 import { HadithStageStepper } from "./HadithStageStepper";
-import { HadithOverviewStage } from "./stages/HadithOverviewStage";
-import { HadithWarmupStage } from "./stages/HadithWarmupStage";
 import { HadithReadListenStage } from "./stages/HadithReadListenStage";
 import { HadithVocabularyStage } from "./stages/HadithVocabularyStage";
 import { HadithSpeakStage } from "./stages/HadithSpeakStage";
@@ -208,7 +206,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
             </p>
           )}
 
-          {/* Accessible 7-Stage Responsive Stepper */}
+          {/* Accessible responsive lesson stepper */}
           <HadithStageStepper
             currentStageIndex={stageIndex}
             completedStages={savedProgress?.completedStages}
@@ -218,12 +216,6 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
 
         {/* Stage Content Container */}
         <div ref={stageContainerRef} className="w-full">
-          {stage === "overview" && (
-            <HadithOverviewStage overview={parsedStages.overview} lessonNumber={lesson.number} />
-          )}
-
-          {stage === "warm-up" && <HadithWarmupStage warmup={parsedStages.warmup} />}
-
           {stage === "read-listen" && (
             <HadithReadListenStage
               source={lesson.source}

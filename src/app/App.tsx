@@ -88,6 +88,14 @@ function AppInner() {
       dispatch({ type: "OPEN_HADITH_LESSON", lessonId: screen.lessonId });
       return;
     }
+    if (screen.id === "conversation-lesson") {
+      dispatch({
+        type: "OPEN_CONVERSATION_LESSON",
+        unitId: screen.unitId,
+        stage: screen.stage,
+      });
+      return;
+    }
     dispatch({
       type: "GO",
       to: screen.id as Exclude<
@@ -100,6 +108,7 @@ function AppInner() {
         | "skill-exercise"
         | "lesson"
         | "learn-words"
+        | "conversation-lesson"
       >,
     });
   }, []);

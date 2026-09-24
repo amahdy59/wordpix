@@ -72,6 +72,28 @@ test("pronunciation curriculum index has no automatically detectable accessibili
   expect(results.violations).toEqual([]);
 });
 
+test("conversation curriculum and warm-up have no detectable accessibility issues", async ({
+  page,
+}) => {
+  await page.goto("/#/conversation");
+  await expect(page.getByRole("main", { name: "Conversation & Debate" })).toBeVisible();
+
+  const curriculumResults = await new AxeBuilder({ page })
+    .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
+    .analyze();
+  expect(curriculumResults.violations).toEqual([]);
+
+  await page
+    .getByRole("button", { name: /Unit 01: Could You Live Without Your Smartphone/ })
+    .click();
+  await expect(page.getByRole("radiogroup", { name: "Quick vote options" })).toBeVisible();
+
+  const lessonResults = await new AxeBuilder({ page })
+    .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
+    .analyze();
+  expect(lessonResults.violations).toEqual([]);
+});
+
 test("practice keyboard keeps focus on the selected answer during feedback", async ({ page }) => {
   await page.goto("/#/learn/bathroom/study/practice/practice-session");
   const answers = page.locator('#study-content [role="group"]');

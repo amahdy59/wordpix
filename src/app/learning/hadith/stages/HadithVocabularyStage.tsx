@@ -294,11 +294,9 @@ export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
         {/* Desktop Table View */}
         <div className="mt-5 hidden overflow-x-auto rounded-2xl border border-border md:block">
           <table className="w-full border-collapse text-sm">
+            <caption className="sr-only">{t("hadith.languageBankTableCaption")}</caption>
             <thead className="bg-muted/70">
               <tr>
-                <th className="p-4 text-start font-black text-foreground">
-                  {t("hadith.category") || "Category"}
-                </th>
                 <th className="p-4 text-start font-black text-foreground">
                   {t("hadith.expression") || "Word or expression"}
                 </th>
@@ -316,9 +314,6 @@ export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
                   key={`${item.category}-${item.expression}`}
                   className="border-t border-border align-top transition-colors hover:bg-muted/30"
                 >
-                  <td className="p-4 text-xs font-black uppercase tracking-wide text-primary">
-                    {item.category}
-                  </td>
                   <td className="p-4 font-black text-foreground" lang="en" dir="ltr">
                     {item.expression}
                   </td>
@@ -345,13 +340,10 @@ export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
               key={`m-${item.category}-${item.expression}`}
               className="rounded-2xl border border-border bg-background p-4 shadow-sm"
             >
-              <div className="flex items-start justify-between gap-2">
-                <span className="rounded-md bg-primary/10 px-2 py-0.5 text-[10px] font-black uppercase tracking-wider text-primary">
-                  {item.category}
-                </span>
+              <div className="flex items-start justify-end">
                 <AudioButton text={item.expression.replace(/\+.*$/, "").trim()} />
               </div>
-              <p className="mt-2 text-base font-black text-foreground" lang="en" dir="ltr">
+              <p className="mt-1 text-base font-black text-foreground" lang="en" dir="ltr">
                 {item.expression}
               </p>
               <p

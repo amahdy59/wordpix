@@ -5,9 +5,58 @@ import {
   getFigmaPronunciationActivityData,
   getFigmaPronunciationLesson,
   getPronunciationContrastPartner,
+  getPronunciationQuestion,
 } from "../learning/foundations/figmaPronunciationCatalog";
+import {
+  getPronunciationAudioClip,
+  normalizePronunciationAudioLabel,
+} from "../learning/foundations/pronunciationAudioManifest";
 
 describe("Figma pronunciation source", () => {
+  it("keeps the spoken answer and its picture in every question across all stages and modes", () => {
+    for (const lesson of FIGMA_PRONUNCIATION_LESSONS) {
+      for (const stage of [1, 2, 3, 4] as const) {
+        for (const childMode of [false, true]) {
+          for (let trial = 0; trial < 3; trial++) {
+            const { target, choices } = getPronunciationQuestion(
+              lesson.number,
+              stage,
+              trial,
+              childMode
+            );
+            const context = `lesson ${lesson.number}, stage ${stage}, trial ${trial}, child ${childMode}`;
+            expect(
+              choices.filter((item) => item.label === target.label),
+              context
+            ).toEqual([target]);
+            expect(new Set(choices.map((item) => item.label.toLowerCase())).size, context).toBe(
+              choices.length
+            );
+            expect(choices.length, context).toBe(childMode || stage <= 2 ? 2 : 4);
+            const clip = getPronunciationAudioClip(target.label, stage === 4);
+            expect(clip, context).not.toBeNull();
+            expect(normalizePronunciationAudioLabel(clip!.displayText), context).toBe(
+              normalizePronunciationAudioLabel(target.label)
+            );
+            const partner = getPronunciationContrastPartner(
+              getFigmaPronunciationActivityData(lesson.number),
+              target.label
+            );
+            if (
+              partner &&
+              partner.toLowerCase() !== target.label.toLowerCase() &&
+              lesson.images.some((item) => item.label.toLowerCase() === partner.toLowerCase())
+            ) {
+              expect(
+                choices.map((item) => item.label.toLowerCase()),
+                context
+              ).toContain(partner.toLowerCase());
+            }
+          }
+        }
+      }
+    }
+  });
   it("contains the complete 68-lesson source in stable order", () => {
     expect(FIGMA_PRONUNCIATION_SOURCE.pageId).toBe("1126:3665");
     expect(FIGMA_PRONUNCIATION_LESSONS).toHaveLength(68);

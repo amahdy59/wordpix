@@ -64,6 +64,9 @@ export function reducer(state: Screen, action: Action): Screen {
   if (action.type === "OPEN_HADITH_LESSON") {
     return { id: "hadith-lesson", lessonId: action.lessonId };
   }
+  if (action.type === "OPEN_CONVERSATION_LESSON") {
+    return { id: "conversation-lesson", unitId: action.unitId, stage: action.stage };
+  }
   if (action.type === "START_LESSON") {
     let queue =
       action.wordQueue && action.wordQueue.length > 0
@@ -195,6 +198,10 @@ export function describeScreen(
         current: Number(screen.lessonId.match(/\d+$/)?.[0] ?? 1),
         total: 42,
       });
+    case "conversation-curriculum":
+      return "Conversation & Debate (B1–C2)";
+    case "conversation-lesson":
+      return `Conversation & Debate — ${screen.unitId}`;
     default:
       return "";
   }

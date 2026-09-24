@@ -1,14 +1,5 @@
-import {
-  BookA,
-  BookOpen,
-  Check,
-  CheckCircle2,
-  Headphones,
-  Mic,
-  Sparkles,
-  Target,
-  type LucideIcon,
-} from "lucide-react";
+import { BookA, Check, CheckCircle2, Headphones, Mic, Target, type LucideIcon } from "lucide-react";
+import { useEffect, useRef } from "react";
 import { useI18n } from "../../../i18n";
 import { HADITH_STAGE_IDS, type HadithStageId } from "./hadithCurriculumStages";
 
@@ -19,8 +10,6 @@ interface Props {
 }
 
 const STAGE_ICONS: Record<HadithStageId, LucideIcon> = {
-  overview: BookOpen,
-  "warm-up": Sparkles,
   "read-listen": Headphones,
   vocabulary: BookA,
   practice: CheckCircle2,
@@ -39,6 +28,16 @@ export function HadithStageStepper({
   const { t } = useI18n();
   const currentStageId = HADITH_STAGE_IDS[currentStageIndex];
   const completedSet = new Set(completedStages);
+  const currentButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    currentButtonRef.current?.scrollIntoView({
+      behavior: reduceMotion ? "auto" : "smooth",
+      block: "nearest",
+      inline: "center",
+    });
+  }, [currentStageIndex]);
 
   return (
     <nav className="mt-6 w-full space-y-3" aria-label={t("hadith.stageNavigation")}>
@@ -73,7 +72,7 @@ export function HadithStageStepper({
       </div>
 
       {/* Stepper Rail: scrollable on mobile, grid on desktop */}
-      <ol className="flex snap-x snap-mandatory gap-2 overflow-x-auto pb-2 no-scrollbar sm:grid sm:grid-cols-7 sm:overflow-visible sm:pb-0">
+      <ol className="flex snap-x snap-mandatory gap-2 overflow-x-auto pb-2 no-scrollbar sm:grid sm:grid-cols-5 sm:overflow-visible sm:pb-0">
         {HADITH_STAGE_IDS.map((id, index) => {
           const isCurrent = index === currentStageIndex;
           const isCompleted = completedSet.has(id) || index < currentStageIndex;
@@ -83,6 +82,7 @@ export function HadithStageStepper({
           return (
             <li key={id} className="min-w-[7.5rem] shrink-0 snap-start sm:min-w-0">
               <button
+                ref={isCurrent ? currentButtonRef : undefined}
                 type="button"
                 onClick={() => onSelectStage(index)}
                 aria-current={isCurrent ? "step" : undefined}

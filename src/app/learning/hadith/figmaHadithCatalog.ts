@@ -1,6 +1,6 @@
 import { z } from "zod";
 import content from "./figmaHadithContent.json";
-import { HADITH_STAGE_IDS } from "./hadithCurriculumStages";
+import { FIGMA_HADITH_STAGE_IDS } from "./hadithCurriculumStages";
 
 const stageSchema = z.object({
   nodeId: z.string(),
@@ -19,8 +19,8 @@ const lessonSchema = z.object({
     citation: z.string().min(1),
   }),
   stages: z.object(
-    Object.fromEntries(HADITH_STAGE_IDS.map((stage) => [stage, stageSchema])) as Record<
-      (typeof HADITH_STAGE_IDS)[number],
+    Object.fromEntries(FIGMA_HADITH_STAGE_IDS.map((stage) => [stage, stageSchema])) as Record<
+      (typeof FIGMA_HADITH_STAGE_IDS)[number],
       typeof stageSchema
     >
   ),

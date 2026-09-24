@@ -73,6 +73,16 @@ const HadithCurriculumScreen = lazy(() =>
     default: m.HadithCurriculumScreen,
   }))
 );
+const ConversationLessonScreen = lazy(() =>
+  import("../learning/conversation/ConversationLessonScreen").then((m) => ({
+    default: m.ConversationLessonScreen,
+  }))
+);
+const ConversationCurriculumScreen = lazy(() =>
+  import("../learning/conversation/ConversationCurriculumScreen").then((m) => ({
+    default: m.ConversationCurriculumScreen,
+  }))
+);
 
 const ExerciseListenRepeat = lazy(() =>
   import("../exercises/ExerciseListenRepeat").then((m) => ({ default: m.ExerciseListenRepeat }))
@@ -340,6 +350,16 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
     if (state.id === "hadith-lesson")
       return <HadithLessonScreen lessonId={state.lessonId} dispatch={dispatch} />;
     if (state.id === "hadith-curriculum") return <HadithCurriculumScreen dispatch={dispatch} />;
+    if (state.id === "conversation-lesson")
+      return (
+        <ConversationLessonScreen
+          unitId={state.unitId}
+          initialStage={state.stage}
+          dispatch={dispatch}
+        />
+      );
+    if (state.id === "conversation-curriculum")
+      return <ConversationCurriculumScreen dispatch={dispatch} />;
 
     if (state.id === "skill-exercise") {
       const SkillExercise = SKILL_EXERCISES[state.exerciseId];
@@ -369,7 +389,9 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       ? `${state.id}-${state.lessonId}`
       : state.id === "hadith-lesson"
         ? `${state.id}-${state.lessonId}`
-        : state.id + ("step" in state ? `-${state.step}` : "");
+        : state.id === "conversation-lesson"
+          ? `${state.id}-${state.unitId}-${state.stage ?? "resume"}`
+          : state.id + ("step" in state ? `-${state.step}` : "");
   // Route transitions render immediately with a short enter motion only: the
   // previous AnimatePresence mode="wait" held every navigation for a full exit
   // animation first, which read as latency on every tab switch.

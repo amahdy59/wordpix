@@ -23,10 +23,8 @@ describe("Hadith curriculum", () => {
     }
   });
 
-  it("provides the seven Figma lesson stages in order", () => {
+  it("uses the five focused learner stages in order", () => {
     expect(HADITH_STAGE_IDS).toEqual([
-      "overview",
-      "warm-up",
       "read-listen",
       "vocabulary",
       "practice",

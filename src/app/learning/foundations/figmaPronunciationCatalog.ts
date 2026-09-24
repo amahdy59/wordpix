@@ -180,6 +180,40 @@ export function pronunciationImagePath(imageRef: string): string {
   return `pronunciation/v1/images/${imageRef}.png`;
 }
 
+/** Choose the complete answer set before shuffling so scaffolding cannot remove the answer. */
+export function getPronunciationQuestion(
+  number: number,
+  stage: 1 | 2 | 3 | 4,
+  trial: number,
+  childMode: boolean
+) {
+  const activity = getFigmaPronunciationActivityData(number);
+  const pool =
+    stage === 4 && activity.transferItems.length
+      ? activity.transferItems
+      : [...activity.teachItems, ...activity.guidedItems, ...activity.independentItems];
+  const target = pool[(number * 7 + (stage - 1) * 5 + trial * 3) % pool.length];
+  if (!target) throw new Error(`Pronunciation lesson ${number} has no question targets`);
+  const partner = getPronunciationContrastPartner(activity, target.label);
+  const normalized = (label: string) => label.trim().toLocaleLowerCase("en-US");
+  const partnerItem = activity.items.find(
+    (item) => partner && normalized(item.label) === normalized(partner)
+  );
+  const candidates = uniqueItems([
+    target,
+    ...(partnerItem ? [partnerItem] : []),
+    ...pool,
+    ...activity.items,
+  ]);
+  const count = childMode || stage <= 2 ? 2 : 4;
+  const choices = seededPronunciationShuffle(
+    candidates.slice(0, count),
+    number * 31 + stage * 17 + trial * 13
+  );
+  if (choices.length < 2) throw new Error(`Pronunciation lesson ${number} needs a distractor`);
+  return { target, choices };
+}
+
 export function seededPronunciationShuffle<T>(values: readonly T[], seed: number): T[] {
   const output = [...values];
   let state = seed >>> 0;

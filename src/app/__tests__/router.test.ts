@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { hashToRoute, screenToHash, hashToScreen } from "../router/useHashRouter";
 import { reducer } from "../store/reducer";
 import type { Screen } from "../types";
+import { unitIdForScreen } from "../router/UnitVocabularyGate";
 
 function lessonAt(step: number): Screen {
   return {
@@ -40,6 +41,9 @@ describe("Hash round-tripping", () => {
       { id: "figma-pronunciation-lesson", lessonNumber: 68 },
       { id: "hadith-curriculum" },
       { id: "hadith-lesson", lessonId: "hadith-42" },
+      { id: "conversation-curriculum" },
+      { id: "conversation-lesson", unitId: "unit-01" },
+      { id: "conversation-lesson", unitId: "unit-01", stage: "quiz" },
       lessonAt(0),
       lessonAt(3),
       lessonAt(4),
@@ -94,6 +98,26 @@ describe("Hash round-tripping", () => {
       id: "pronunciation-curriculum",
     });
     expect(hashToScreen("#/hadith")?.screen).toEqual({ id: "hadith-curriculum" });
+    expect(hashToScreen("#/conversation")?.screen).toEqual({ id: "conversation-curriculum" });
+    expect(hashToScreen("#/conversation/unit-01")?.screen).toEqual({
+      id: "conversation-lesson",
+      unitId: "unit-01",
+      stage: undefined,
+    });
+    expect(hashToScreen("#/conversation/unit-01/quiz")?.screen).toEqual({
+      id: "conversation-lesson",
+      unitId: "unit-01",
+      stage: "quiz",
+    });
+  });
+
+  it("rejects invalid conversation units and stages", () => {
+    expect(hashToScreen("#/conversation/unit-41")).toBeNull();
+    expect(hashToScreen("#/conversation/unit-01/not-a-stage")).toBeNull();
+  });
+
+  it("does not route conversation lessons through the vocabulary data gate", () => {
+    expect(unitIdForScreen({ id: "conversation-lesson", unitId: "unit-01" })).toBeNull();
   });
 
   it("gives onboarding its required step, not a bare id", () => {

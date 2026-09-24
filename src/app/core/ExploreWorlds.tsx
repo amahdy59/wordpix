@@ -11,6 +11,7 @@ import {
   Library,
   Play,
   BookOpen,
+  MessagesSquare,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Action } from "../types";
@@ -38,6 +39,9 @@ function filterModulesByQuery(modules: CourseModule[], q: string) {
         mod.title,
         mod.description,
         mod.curriculumKind === "hadith" ? "hadith hadiths islamic studies" : "",
+        mod.curriculumKind === "conversation"
+          ? "conversation debate discourse b1 b2 c1 c2 speaking fluency discussion"
+          : "",
       ]
         .join(" ")
         .toLowerCase();
@@ -121,6 +125,13 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
         ).length;
       }
 
+      if (mod.curriculumKind === "conversation") {
+        unitCount = mod.lessonCount ?? 40;
+        completedUnits = Object.values(learnerState.conversationProgress ?? {}).filter(
+          (entry) => entry.status === "mastered"
+        ).length;
+      }
+
       const pct = total > 0 ? Math.round((mastered / total) * 100) : 0;
       stats[mod.id] = {
         totalWords: total,
@@ -132,7 +143,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
     });
 
     return stats;
-  }, [learnerState.hadithProgress, progress.wordMastery]);
+  }, [learnerState.hadithProgress, learnerState.conversationProgress, progress.wordMastery]);
 
   // Overall course progress
   const overallStats = useMemo(() => {
@@ -424,6 +435,58 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                     >
                       <BookOpen className="size-5" aria-hidden />
                       {t("hadith.viewCurriculum")}
+                      <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+                    </button>
+                  </motion.section>
+                );
+              }
+
+              if (module.curriculumKind === "conversation") {
+                const completedUnits = stats.completedUnits;
+                const totalUnits = module.lessonCount ?? 40;
+                const percent = Math.round((completedUnits / totalUnits) * 100);
+                return (
+                  <motion.section
+                    key={module.id}
+                    variants={staggerItem}
+                    className="rounded-3xl border-2 border-primary/35 bg-gradient-to-br from-primary/15 via-wp-card to-wp-card p-5 shadow-wp-sm sm:p-7"
+                    aria-labelledby="conversation-studies-heading"
+                  >
+                    <Badge variant="primary" size="sm">
+                      {t("conversation.badge")}
+                    </Badge>
+                    <h2
+                      id="conversation-studies-heading"
+                      className="mt-3 text-2xl font-black text-foreground"
+                    >
+                      {t("conversation.titleWithLevel")}
+                    </h2>
+                    <p className="mt-2 max-w-2xl text-sm font-medium leading-6 text-muted-foreground">
+                      {t("conversation.description")}
+                    </p>
+                    <p className="mt-4 font-black text-primary">
+                      {t("conversation.masteredUnits", {
+                        completed: completedUnits,
+                        total: totalUnits,
+                      })}
+                    </p>
+                    {completedUnits > 0 && (
+                      <div className="mt-4">
+                        <ProgressBar
+                          progressPercent={percent}
+                          label={t("conversation.progressLabel")}
+                          labelRight={`${percent}%`}
+                          ariaLabel={`${t("conversation.progressLabel")} ${percent}%`}
+                        />
+                      </div>
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
+                      className="mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-90 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-auto"
+                    >
+                      <MessagesSquare className="size-5" aria-hidden />
+                      <span>{t("conversation.exploreUnits")}</span>
                       <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
                     </button>
                   </motion.section>

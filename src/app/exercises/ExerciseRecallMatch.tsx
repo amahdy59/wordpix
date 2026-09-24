@@ -188,8 +188,8 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         </>
       }
     >
-      <div className="relative mx-auto flex w-full max-w-[2200px] flex-col gap-4 sm:gap-5">
-        <div className="flex flex-col items-center justify-between gap-3 sm:flex-row">
+      <div className="relative mx-auto flex min-h-[560px] w-full max-w-[2200px] flex-1 flex-col gap-4 sm:min-h-[640px] sm:gap-5 lg:min-h-[320px]">
+        <div className="flex shrink-0 flex-col items-center justify-between gap-3 sm:flex-row">
           <div className="text-center sm:text-start">
             <p className="font-sans text-sm font-bold text-foreground sm:text-base">
               {t("exercise.choosePictureHeard")}
@@ -222,7 +222,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         <div
           role="group"
           aria-label="Choose matching picture for audio prompt"
-          className="grid w-full grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4 xl:gap-6"
+          className="grid min-h-0 w-full flex-1 auto-rows-fr grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4 lg:grid-rows-1 xl:gap-6"
         >
           {displayCards.map((card, idx) => {
             const isSelected = selectedId === card.id;
@@ -254,7 +254,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleCardClick(card)}
-                className={`group relative block aspect-[4/3] min-h-[120px] w-full overflow-hidden rounded-2xl shadow-wp-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:aspect-[16/10] lg:aspect-[4/3] ${cardStateStyle}`}
+                className={`group relative block min-h-[120px] w-full overflow-hidden rounded-2xl shadow-wp-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${cardStateStyle}`}
               >
                 <span
                   aria-hidden

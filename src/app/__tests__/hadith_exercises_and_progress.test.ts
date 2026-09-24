@@ -33,14 +33,15 @@ describe("Hadith pilot exercises", () => {
     }
   });
 
-  it("provides three validated, source-grounded activities for every catalog lesson", () => {
+  it("provides ten validated activities including picture vocabulary for every lesson", () => {
     for (const lesson of FIGMA_HADITH_LESSONS) {
       const set = getHadithExerciseSet(lesson.id);
       expect(set?.lessonId).toBe(lesson.id);
-      expect(set?.exercises).toHaveLength(3);
+      expect(set?.exercises).toHaveLength(10);
+      expect(set?.exercises.filter((exercise) => exercise.type === "image-choice")).toHaveLength(1);
 
       for (const exercise of set?.exercises ?? []) {
-        if (exercise.type === "single-choice") {
+        if (exercise.type === "single-choice" || exercise.type === "image-choice") {
           expect(exercise.options.some((option) => option.id === exercise.answerId)).toBe(true);
           expect(new Set(exercise.options.map((option) => option.label)).size).toBe(
             exercise.options.length
@@ -57,13 +58,13 @@ describe("Hadith pilot exercises", () => {
 
 describe("Hadith offline progress", () => {
   it("checkpoints without mutating prior state and retains the best score", () => {
-    const initial = checkpointHadithLesson({}, "hadith-02", 4, "practice", 67);
-    const updated = checkpointHadithLesson(initial, "hadith-02", 5, "speak", 33);
+    const initial = checkpointHadithLesson({}, "hadith-02", 2, "practice", 67);
+    const updated = checkpointHadithLesson(initial, "hadith-02", 3, "speak", 33);
 
     expect(initial["hadith-02"].completedStages).toEqual(["practice"]);
     expect(updated["hadith-02"]).toMatchObject({
       status: "in-progress",
-      currentStage: 5,
+      currentStage: 3,
       completedStages: ["practice", "speak"],
       bestScorePercent: 67,
     });
@@ -82,5 +83,23 @@ describe("Hadith offline progress", () => {
 
   it("drops malformed persisted entries at the runtime boundary", () => {
     expect(normalizeHadithProgress({ bad: { status: "mastered" } })).toEqual({});
+  });
+
+  it("migrates saved seven-stage progress into the shorter lesson flow", () => {
+    const migrated = normalizeHadithProgress({
+      "hadith-02": {
+        status: "in-progress",
+        currentStage: 4,
+        completedStages: ["overview", "warm-up", "read-listen", "vocabulary"],
+        bestScorePercent: 60,
+        sessions: 0,
+        updatedAt: "2026-09-23T00:00:00.000Z",
+      },
+    });
+
+    expect(migrated["hadith-02"]).toMatchObject({
+      currentStage: 2,
+      completedStages: ["read-listen", "vocabulary"],
+    });
   });
 });

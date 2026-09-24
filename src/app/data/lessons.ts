@@ -36764,7 +36764,7 @@ export interface CourseModule {
   titleAr: string;
   description: string;
   unitIds: string[];
-  curriculumKind?: "hadith";
+  curriculumKind?: "hadith" | "conversation";
   lessonCount?: number;
 }
 
@@ -37029,6 +37029,19 @@ export const COURSE_MODULES: CourseModule[] = [
     description: "Explore vocabulary for Islamic Studies",
     curriculumKind: "hadith",
     lessonCount: 42,
+    unitIds: [],
+  },
+  {
+    id: "module-conversation",
+    level: 40,
+    isSpecialSection: true,
+    levelBadge: "B1–C2 · Conversation & Debate",
+    title: "Conversation & Debate (B1–C2)",
+    titleAr: "محادثة ومناظرة (B1–C2)",
+    description:
+      "40 substantive discussion units moving from expressing personal opinions to defending claims, analyzing assumptions, and navigating complex debates.",
+    curriculumKind: "conversation",
+    lessonCount: 40,
     unitIds: [],
   },
 ];

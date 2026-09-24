@@ -1,5 +1,10 @@
 import { z } from "zod";
-import { FIGMA_HADITH_LESSONS, getFigmaHadithLesson } from "./figmaHadithCatalog";
+import {
+  FIGMA_HADITH_LESSONS,
+  FIGMA_HADITH_VISUAL_VOCABULARY,
+  getFigmaHadithLesson,
+  type FigmaHadithLesson,
+} from "./figmaHadithCatalog";
 
 const choiceSchema = z.object({
   id: z.string(),
@@ -19,16 +24,35 @@ const sequenceSchema = z.object({
   feedback: z.string(),
 });
 
-const exerciseSchema = z.discriminatedUnion("type", [choiceSchema, sequenceSchema]);
+const imageChoiceSchema = z.object({
+  id: z.string(),
+  type: z.literal("image-choice"),
+  prompt: z.string(),
+  imageRef: z.string(),
+  options: z.array(z.object({ id: z.string(), label: z.string() })).min(3),
+  answerId: z.string(),
+  feedback: z.string(),
+});
+
+const authoredExerciseSchema = z.discriminatedUnion("type", [choiceSchema, sequenceSchema]);
+const exerciseSchema = z.discriminatedUnion("type", [
+  choiceSchema,
+  sequenceSchema,
+  imageChoiceSchema,
+]);
+const authoredSetSchema = z.object({
+  lessonId: z.string().regex(/^hadith-\d{2}$/),
+  exercises: z.array(authoredExerciseSchema).min(3),
+});
 const setSchema = z.object({
   lessonId: z.string().regex(/^hadith-\d{2}$/),
-  exercises: z.array(exerciseSchema).min(3),
+  exercises: z.array(exerciseSchema).min(10),
 });
 
 export type HadithExercise = z.infer<typeof exerciseSchema>;
 export type HadithExerciseSet = z.infer<typeof setSchema>;
 
-export const HADITH_EXERCISE_SETS: readonly HadithExerciseSet[] = z.array(setSchema).parse([
+export const HADITH_EXERCISE_SETS = z.array(authoredSetSchema).parse([
   {
     lessonId: "hadith-01",
     exercises: [
@@ -245,63 +269,179 @@ export const HADITH_EXERCISE_SETS: readonly HadithExerciseSet[] = z.array(setSch
   },
 ]);
 
-export function getHadithExerciseSet(lessonId: string): HadithExerciseSet | undefined {
-  const authored = HADITH_EXERCISE_SETS.find((set) => set.lessonId === lessonId);
-  if (authored) return authored;
+const normalize = (value: string) =>
+  value
+    .toLocaleLowerCase("en-US")
+    .replace(/[^a-z0-9 ]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 
+const excerpt = (value: string, fromEnd = false) => {
+  const words = value.replace(/\s+/g, " ").trim().split(" ");
+  const selected = fromEnd ? words.slice(-18) : words.slice(0, 18);
+  return `${fromEnd && words.length > 18 ? "…" : ""}${selected.join(" ")}${!fromEnd && words.length > 18 ? "…" : ""}`;
+};
+
+function stageExcerpt(
+  lesson: FigmaHadithLesson,
+  stage: "read-listen" | "vocabulary" | "practice" | "speak" | "check-review"
+) {
+  const meaningful = lesson.stages[stage].text
+    .map((line) => line.replace(/\s+/g, " ").trim())
+    .filter(
+      (line) => line.length >= 24 && !/^(?:step|continue|submit|practice complete)/i.test(line)
+    )
+    .sort((a, b) => b.length - a.length);
+  return excerpt(meaningful[0] ?? lesson.title);
+}
+
+function sourceChoice(
+  lesson: FigmaHadithLesson,
+  id: string,
+  prompt: string,
+  labelFor: (candidate: FigmaHadithLesson) => string,
+  feedback: string
+): HadithExercise {
+  const lessonIndex = FIGMA_HADITH_LESSONS.findIndex((candidate) => candidate.id === lesson.id);
+  const chosen: Array<{ id: string; label: string }> = [];
+  const seen = new Set<string>();
+
+  for (let offset = 0; offset < FIGMA_HADITH_LESSONS.length && chosen.length < 3; offset += 1) {
+    const candidate = FIGMA_HADITH_LESSONS[(lessonIndex + offset) % FIGMA_HADITH_LESSONS.length];
+    const label = labelFor(candidate);
+    if (seen.has(label)) continue;
+    seen.add(label);
+    chosen.push({ id: candidate.id, label });
+  }
+
+  return {
+    id,
+    type: "single-choice",
+    prompt,
+    options: chosen,
+    answerId: lesson.id,
+    feedback,
+  };
+}
+
+function pictureChoice(lesson: FigmaHadithLesson): HadithExercise {
+  const vocabularyLines = new Set(lesson.stages.vocabulary.text.map(normalize));
+  const lessonVisual = FIGMA_HADITH_VISUAL_VOCABULARY.find((item) => {
+    const baseLabel = item.label.split("·")[0].trim();
+    return vocabularyLines.has(normalize(item.label)) || vocabularyLines.has(normalize(baseLabel));
+  });
+  const fallbackIndex = ((lesson.number - 1) * 5) % FIGMA_HADITH_VISUAL_VOCABULARY.length;
+  const target = lessonVisual ?? FIGMA_HADITH_VISUAL_VOCABULARY[fallbackIndex];
+  const targetIndex = FIGMA_HADITH_VISUAL_VOCABULARY.indexOf(target);
+  const options: Array<{ id: string; label: string }> = [];
+  const seenLabels = new Set<string>();
+
+  for (
+    let offset = 0;
+    offset < FIGMA_HADITH_VISUAL_VOCABULARY.length && options.length < 3;
+    offset += 1
+  ) {
+    const candidate =
+      FIGMA_HADITH_VISUAL_VOCABULARY[
+        (targetIndex + offset * 17) % FIGMA_HADITH_VISUAL_VOCABULARY.length
+      ];
+    const label = candidate.label.split("·")[0].trim();
+    if (seenLabels.has(normalize(label))) continue;
+    seenLabels.add(normalize(label));
+    options.push({ id: candidate.imageRef, label });
+  }
+
+  const answer = target.label.split("·")[0].trim();
+  return {
+    id: "picture-vocabulary",
+    type: "image-choice",
+    prompt: lessonVisual
+      ? "Which word or expression from this lesson matches the picture?"
+      : "Spaced vocabulary review: Which word or expression matches the picture?",
+    imageRef: target.imageRef,
+    options,
+    answerId: target.imageRef,
+    feedback: `The picture represents “${answer}.”`,
+  };
+}
+
+function generatedExercises(lesson: FigmaHadithLesson): HadithExercise[] {
+  return [
+    pictureChoice(lesson),
+    sourceChoice(
+      lesson,
+      "lesson-message",
+      "Which main lesson did you just study?",
+      (candidate) => candidate.title,
+      `This lesson is “${lesson.title}.”`
+    ),
+    sourceChoice(
+      lesson,
+      "translation-opening",
+      "Which opening comes from this lesson’s English translation?",
+      (candidate) => excerpt(candidate.source.translation),
+      "The matching words come directly from the translation in Read & Listen."
+    ),
+    sourceChoice(
+      lesson,
+      "translation-ending",
+      "Which ending comes from this lesson’s English translation?",
+      (candidate) => excerpt(candidate.source.translation, true),
+      "The matching ending comes directly from the translation in Read & Listen."
+    ),
+    sourceChoice(
+      lesson,
+      "source-citation",
+      "Which source citation belongs to this lesson?",
+      (candidate) => candidate.source.citation,
+      `The source line for this lesson is: ${lesson.source.citation}`
+    ),
+    sourceChoice(
+      lesson,
+      "vocabulary-evidence",
+      "Which excerpt appears in this lesson’s vocabulary study?",
+      (candidate) => stageExcerpt(candidate, "vocabulary"),
+      "This wording is taken from the lesson’s vocabulary study."
+    ),
+    sourceChoice(
+      lesson,
+      "reading-evidence",
+      "Which learning note belongs to this lesson’s Read & Listen section?",
+      (candidate) => stageExcerpt(candidate, "read-listen"),
+      "This note is part of the Read & Listen section you studied."
+    ),
+    sourceChoice(
+      lesson,
+      "practice-evidence",
+      "Which language prompt belongs to this lesson?",
+      (candidate) => stageExcerpt(candidate, "practice"),
+      "This prompt comes from the lesson’s language practice."
+    ),
+    sourceChoice(
+      lesson,
+      "speaking-evidence",
+      "Which speaking prompt belongs to this lesson?",
+      (candidate) => stageExcerpt(candidate, "speak"),
+      "This prompt prepares you to use the lesson language aloud."
+    ),
+    sourceChoice(
+      lesson,
+      "review-evidence",
+      "Which review prompt belongs to this lesson?",
+      (candidate) => stageExcerpt(candidate, "check-review"),
+      "This prompt checks the lesson you have just studied."
+    ),
+  ];
+}
+
+export function getHadithExerciseSet(lessonId: string): HadithExerciseSet | undefined {
   const lesson = getFigmaHadithLesson(lessonId);
   if (!lesson) return undefined;
 
-  // Lessons without a bespoke exercise set still receive source-grounded
-  // retrieval practice. Every correct answer is copied from the validated
-  // Figma curriculum rather than inferred or generated as a religious claim.
-  const lessonIndex = FIGMA_HADITH_LESSONS.findIndex((candidate) => candidate.id === lesson.id);
-  const alternatives = [1, 2].map(
-    (offset) => FIGMA_HADITH_LESSONS[(lessonIndex + offset) % FIGMA_HADITH_LESSONS.length]
-  );
-  const optionLessons = [lesson, ...alternatives];
-  const excerpt = (value: string) => {
-    const words = value.replace(/\s+/g, " ").trim().split(" ");
-    return `${words.slice(0, 24).join(" ")}${words.length > 24 ? "…" : ""}`;
-  };
+  const authored = HADITH_EXERCISE_SETS.find((set) => set.lessonId === lessonId);
+  const exercises = authored
+    ? [...authored.exercises, ...generatedExercises(lesson).slice(0, 7)]
+    : generatedExercises(lesson);
 
-  return setSchema.parse({
-    lessonId: lesson.id,
-    exercises: [
-      {
-        id: "lesson-message",
-        type: "single-choice",
-        prompt: "Which main lesson did you just study?",
-        options: optionLessons.map((candidate) => ({
-          id: candidate.id,
-          label: candidate.title,
-        })),
-        answerId: lesson.id,
-        feedback: `This lesson is “${lesson.title}.” Return to Read & Listen if you want to review the complete source block.`,
-      },
-      {
-        id: "translation-evidence",
-        type: "single-choice",
-        prompt: "Which excerpt comes from this lesson’s English translation?",
-        options: optionLessons.map((candidate) => ({
-          id: candidate.id,
-          label: excerpt(candidate.source.translation),
-        })),
-        answerId: lesson.id,
-        feedback:
-          "The matching excerpt comes directly from the translation shown once in Read & Listen.",
-      },
-      {
-        id: "source-citation",
-        type: "single-choice",
-        prompt: "Which source citation belongs to this lesson?",
-        options: optionLessons.map((candidate) => ({
-          id: candidate.id,
-          label: candidate.source.citation,
-        })),
-        answerId: lesson.id,
-        feedback: `The source line for this lesson is: ${lesson.source.citation}`,
-      },
-    ],
-  });
+  return setSchema.parse({ lessonId: lesson.id, exercises });
 }

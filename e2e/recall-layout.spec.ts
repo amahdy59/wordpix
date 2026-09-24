@@ -40,9 +40,13 @@ for (const viewport of [
     await expect(cards.first()).toBeVisible();
 
     const box = await cards.first().boundingBox();
+    const choicesBox = await choices.boundingBox();
     expect(box).not.toBeNull();
+    expect(choicesBox).not.toBeNull();
     expect(box!.width).toBeGreaterThanOrEqual(viewport.minimumCardWidth);
     expect(box!.height).toBeGreaterThanOrEqual(120);
+    // Leave room only for the shell's bottom padding and mobile safe area.
+    expect(choicesBox!.y + choicesBox!.height).toBeGreaterThanOrEqual(viewport.height - 64);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(
       true
     );

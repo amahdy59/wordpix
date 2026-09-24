@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { Check, RotateCcw, X } from "lucide-react";
 import { useI18n } from "../../../i18n";
+import { resolveAssetUrl } from "../../../utils/assetUrl";
 import type { HadithExerciseSet } from "./hadithExerciseCatalog";
 
 interface Props {
@@ -16,7 +17,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
   const results = useMemo(
     () =>
       exerciseSet.exercises.map((exercise) => {
-        if (exercise.type === "single-choice") {
+        if (exercise.type === "single-choice" || exercise.type === "image-choice") {
           const answer = choices[exercise.id];
           return { answered: Boolean(answer), correct: answer === exercise.answerId };
         }
@@ -39,7 +40,9 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
     nextSequences: Record<string, string[]>
   ) => {
     const nextCorrect = exerciseSet.exercises.filter((exercise) => {
-      if (exercise.type === "single-choice") return nextChoices[exercise.id] === exercise.answerId;
+      if (exercise.type === "single-choice" || exercise.type === "image-choice") {
+        return nextChoices[exercise.id] === exercise.answerId;
+      }
       const answer = nextSequences[exercise.id] ?? [];
       return (
         answer.length === exercise.answerOrder.length &&
@@ -68,15 +71,50 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
         {t("hadith.practiceInstructions")}
       </p>
 
+      <div className="mt-5 rounded-2xl bg-muted/60 p-4">
+        <div className="flex items-center justify-between gap-3 text-sm font-black">
+          <span>{t("hadith.practiceCompletion")}</span>
+          <span>
+            {answered}/{exerciseSet.exercises.length}
+          </span>
+        </div>
+        <div
+          className="mt-2 h-2 overflow-hidden rounded-full bg-background"
+          role="progressbar"
+          aria-label={t("hadith.practiceCompletion")}
+          aria-valuemin={0}
+          aria-valuemax={exerciseSet.exercises.length}
+          aria-valuenow={answered}
+        >
+          <div
+            className="h-full rounded-full bg-primary transition-[width] motion-reduce:transition-none"
+            style={{ width: `${(answered / exerciseSet.exercises.length) * 100}%` }}
+          />
+        </div>
+      </div>
+
       <div className="mt-7 space-y-7">
         {exerciseSet.exercises.map((exercise, exerciseIndex) => {
           const result = results[exerciseIndex];
-          if (exercise.type === "single-choice") {
+          if (exercise.type === "single-choice" || exercise.type === "image-choice") {
             return (
               <fieldset key={exercise.id} className="rounded-2xl border border-border p-4 sm:p-5">
                 <legend className="px-2 text-sm font-black">
                   {exerciseIndex + 1}. {exercise.prompt}
                 </legend>
+                {exercise.type === "image-choice" && (
+                  <figure className="mx-auto mt-4 max-w-sm overflow-hidden rounded-2xl border border-border bg-muted shadow-wp-sm">
+                    <img
+                      src={resolveAssetUrl(`hadith/v1/images/${exercise.imageRef}.png`)}
+                      alt={t("hadith.practiceImageAlt")}
+                      className="aspect-[4/3] w-full object-cover"
+                      loading="lazy"
+                    />
+                    <figcaption className="p-3 text-center text-xs font-bold text-muted-foreground">
+                      {t("hadith.chooseMatchingWord")}
+                    </figcaption>
+                  </figure>
+                )}
                 <div className="mt-4 grid gap-3">
                   {exercise.options.map((option) => {
                     const selected = choices[exercise.id] === option.id;

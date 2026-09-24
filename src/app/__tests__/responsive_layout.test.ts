@@ -89,16 +89,17 @@ describe("AppShell responsive components", () => {
   });
 });
 
-describe("Card Grid Responsive Aspect Ratios", () => {
+describe("Card Grid Responsive Sizing", () => {
   it("ExerciseRecallMatch lets image choices expand across large viewports", () => {
     const source = stripComments(read("exercises/ExerciseRecallMatch.tsx"));
-    expect(source).toMatch(/aspect-\[4\/3\]/);
-    expect(source).toMatch(/sm:aspect-\[16\/10\]/);
+    expect(source).toMatch(/flex-1/);
+    expect(source).toMatch(/auto-rows-fr/);
     expect(source).toMatch(/lg:grid-cols-4/);
+    expect(source).toMatch(/lg:grid-rows-1/);
     expect(source).toContain("max-w-[2200px]");
     expect(source).toContain("object-cover");
+    expect(source).not.toMatch(/aspect-\[4\/3\]/);
     expect(source).not.toMatch(/max-h-\[260px\]/);
-    expect(source).not.toMatch(/grid-rows-2/);
   });
 
   it("ExerciseQuickQuiz uses aspect-[4/3] to prevent image squashing", () => {

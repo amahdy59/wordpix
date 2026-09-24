@@ -2,6 +2,44 @@ import fs from "node:fs";
 import path from "node:path";
 import { expect, test } from "@playwright/test";
 
+test("Pin or Pen includes the spoken led answer with an edge-to-edge image", async ({ page }) => {
+  const requests: string[] = [];
+  const errors: string[] = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.route("**/audio/**/*.mp3", async (route) => {
+    requests.push(route.request().url());
+    await route.fulfill({
+      body: fs.readFileSync(
+        path.resolve(
+          "public/audio/00/00d352d1588016d7ba44e0bf1547b1255f1960d25b7a23aec8ed1bd941ced8a9.mp3"
+        )
+      ),
+      contentType: "audio/mpeg",
+    });
+  });
+  await page.goto("/#/pronunciation/lesson-03");
+  await page.getByRole("button", { name: "Continue", exact: true }).click();
+  const answer = page.getByRole("button", { name: /^Option \d+: led$/ });
+  await expect(answer).toBeVisible();
+  await expect(page.getByRole("button", { name: /^Option \d+: lid$/ })).toBeVisible();
+  const clip = manifest.clips.led.find((clip) => clip.source === "derived-profile")!;
+  await expect.poll(() => requests.some((url) => url.endsWith(clip.objectKey))).toBe(true);
+  const layout = await answer.evaluate((button) => {
+    const image = button.querySelector("img")!;
+    return {
+      card: button.clientWidth,
+      image: image.getBoundingClientRect().width,
+      fit: getComputedStyle(image).objectFit,
+    };
+  });
+  expect(Math.abs(layout.card - layout.image)).toBeLessThanOrEqual(1);
+  expect(layout.fit).toBe("cover");
+  await answer.focus();
+  await page.keyboard.press("Space");
+  await expect(page.getByRole("status").filter({ hasText: "Correct" })).toBeVisible();
+  expect(errors).toEqual([]);
+});
+
 const manifest = JSON.parse(
   fs.readFileSync(
     path.resolve("src/app/learning/foundations/pronunciationAudioManifest.json"),
@@ -59,7 +97,7 @@ test("correct pronunciation choices play reusable feedback and advance automatic
   await page.getByRole("button", { name: "Continue", exact: true }).click();
   await expect(page.getByText("Check 1 of 3 in this stage", { exact: true })).toBeVisible();
 
-  await page.getByRole("button", { name: "Option 1: log", exact: true }).click();
+  await page.getByRole("button", { name: /^Option \d+: log$/ }).click();
   await expect(page.getByRole("status").filter({ hasText: "Correct" })).toBeVisible();
   const replay = page.getByRole("button", { name: "Replay feedback" });
   await expect(replay).toBeVisible();

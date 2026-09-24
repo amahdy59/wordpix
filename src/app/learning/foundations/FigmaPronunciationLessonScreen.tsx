@@ -19,8 +19,7 @@ import { PrivateRecordCompare } from "./PrivateRecordCompare";
 import {
   getFigmaPronunciationActivityData,
   pronunciationImagePath,
-  seededPronunciationShuffle,
-  getPronunciationContrastPartner,
+  getPronunciationQuestion,
   type FigmaPronunciationImage,
 } from "./figmaPronunciationCatalog";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
@@ -36,10 +35,7 @@ type Stage = 0 | 1 | 2 | 3 | 4;
 
 const STAGES = ["Preview", "Listen", "Meaning", "Use it", "Transfer"] as const;
 const TRIALS_PER_STAGE = 3;
-const rolePool = (activity: ReturnType<typeof getFigmaPronunciationActivityData>, stage: Stage) =>
-  stage === 4 && activity.transferItems.length
-    ? [...activity.transferItems]
-    : [...activity.teachItems, ...activity.guidedItems, ...activity.independentItems];
+const EMPTY_CHOICES: readonly FigmaPronunciationImage[] = [];
 
 function imageFor(item: FigmaPronunciationImage) {
   return resolveAssetUrl(pronunciationImagePath(item.imageRef));
@@ -68,42 +64,17 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     preferLocal: true,
   });
   const { speakFeedback, cancel: cancelSpokenFeedback } = useSpokenFeedback();
-  const pool = rolePool(activity, stage);
+  const question =
+    stage === 0 ? null : getPronunciationQuestion(lessonNumber, stage, trial, childMode);
   const target =
     stage === 0
       ? (activity.items.find(
           (item) =>
             item.label.toLocaleLowerCase("en-US") === activity.model.toLocaleLowerCase("en-US")
         ) ?? activity.items[0])
-      : pool.length > 0
-        ? pool[(lessonNumber * 7 + Math.max(0, stage - 1) * 5 + trial * 3) % pool.length]
-        : activity.items[0];
+      : question!.target;
   const audioClip = getPronunciationAudioClip(target?.label ?? activity.model, stage === 4);
-  const contrastPartner = target
-    ? getPronunciationContrastPartner(activity, target.label)
-    : undefined;
-  const partnerItem = contrastPartner
-    ? activity.items.find(
-        (item) =>
-          item.label.toLocaleLowerCase("en-US") === contrastPartner.toLocaleLowerCase("en-US")
-      )
-    : undefined;
-  const choices = target
-    ? seededPronunciationShuffle(
-        [
-          target,
-          ...(partnerItem ? [partnerItem] : []),
-          ...pool
-            .filter((item) => item.label !== target.label && item.label !== partnerItem?.label)
-            .slice(0, partnerItem ? 2 : 3),
-        ],
-        lessonNumber * 31 + stage * 17 + trial * 13
-      )
-    : [];
-  // Scaffolding: Start with 2-AFC (the core minimal pair) for all learners in stages 1-2.
-  // In stages 3-4 (Use & Transfer), expand to 4 options for adult learners.
-  const visibleChoices =
-    childMode || stage <= 2 || choices.length <= 2 ? choices.slice(0, 2) : choices.slice(0, 4);
+  const visibleChoices = question?.choices ?? EMPTY_CHOICES;
   const contrastHero = activity.contrastPairs[0];
   const contrastHeroItems = contrastHero
     ?.map((label) =>
@@ -177,14 +148,19 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.target instanceof HTMLInputElement || event.target instanceof HTMLTextAreaElement)
+      if (
+        event.target instanceof HTMLElement &&
+        event.target.closest(
+          "button, a, input, textarea, select, summary, [contenteditable='true']"
+        )
+      )
         return;
       if (event.key === " " || event.key.toLowerCase() === "r") {
         event.preventDefault();
         speak(target?.label ?? activity.model, undefined, audioClip?.objectKey);
       }
       const index = Number(event.key) - 1;
-      if (answerable && Number.isInteger(index) && visibleChoices[index] && !answer) {
+      if (answerable && Number.isInteger(index) && visibleChoices[index] && !passed) {
         selectAnswerRef.current(visibleChoices[index].label);
       }
     };
@@ -194,6 +170,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     activity.model,
     answer,
     answerable,
+    passed,
     audioClip?.objectKey,
     speak,
     target?.label,
@@ -673,52 +650,26 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                       word: item.label,
                     })}
                     disabled={passed}
-                    className={`min-h-14 rounded-2xl border-2 px-4 text-start font-black focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed ${answer === item.label ? (item.label === target?.label ? "border-feedback-success bg-feedback-success-surface" : "border-destructive bg-destructive/10") : "border-border hover:border-primary disabled:opacity-70"}`}
+                    className={`min-h-14 overflow-hidden rounded-2xl border-2 p-0 text-start font-black transition-colors focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed ${answer === item.label ? (item.label === target?.label ? "border-feedback-success bg-feedback-success-surface" : "border-destructive bg-destructive/10") : "border-border hover:border-primary disabled:opacity-70"}`}
                     lang="en"
                     dir="ltr"
                   >
-                    {stage === 1 ? (
-                      <>
-                        <img
-                          src={imageFor(item)}
-                          alt=""
-                          className="aspect-[16/9] w-full rounded-xl object-cover"
-                          aria-hidden
-                        />
-                        <span className="mt-2 block text-center text-base font-black">
-                          {item.label}
-                        </span>
-                      </>
-                    ) : stage === 2 ? (
-                      <>
-                        <img
-                          src={imageFor(item)}
-                          alt=""
-                          className="me-3 inline size-10 rounded-lg object-cover"
-                          aria-hidden
-                        />
-                        {item.label}
-                      </>
-                    ) : (
-                      <>
-                        <img
-                          src={imageFor(item)}
-                          alt=""
-                          className="me-3 inline size-10 rounded-lg object-cover"
-                          aria-hidden
-                        />
-                        {item.label}
-                      </>
-                    )}
+                    <img
+                      src={imageFor(item)}
+                      alt=""
+                      className="block aspect-[16/9] w-full object-cover"
+                      aria-hidden
+                    />
+                    <span className="flex min-h-11 items-center justify-center gap-2 px-3 py-2 text-center text-base font-black">
+                      {answer === item.label && passed && (
+                        <Check className="size-5 shrink-0" aria-hidden />
+                      )}
+                      {item.label}
+                    </span>
                   </button>
                 ))}
               </div>
             </>
-          )}
-          {stage === 2 && target && (
-            <p className="mt-4 text-xs text-muted-foreground">
-              {t("pronunciation.imageHiddenDuringListening")}
-            </p>
           )}
           {stage === 3 && <PrivateRecordCompare target={target?.label ?? activity.model} />}
           {answer && (

@@ -75,6 +75,12 @@ export type Screen =
   | { id: "figma-pronunciation-lesson"; lessonNumber: number }
   | { id: "hadith-curriculum" }
   | { id: "hadith-lesson"; lessonId: string }
+  | { id: "conversation-curriculum" }
+  | {
+      id: "conversation-lesson";
+      unitId: string;
+      stage?: import("./learning/conversation/conversationTypes").ConversationStageId;
+    }
   | { id: "skill-hub" }
   | { id: "skill-exercise"; exerciseId: SkillExerciseId }
   | {
@@ -108,7 +114,8 @@ export type GoTarget =
   | "onboarding"
   | "learning-materials"
   | "pronunciation-curriculum"
-  | "hadith-curriculum";
+  | "hadith-curriculum"
+  | "conversation-curriculum";
 
 export type Action =
   | { type: "ONBOARD_NEXT" }
@@ -121,6 +128,11 @@ export type Action =
   | { type: "START_FOUNDATION_LESSON"; lessonId: FoundationLessonId }
   | { type: "OPEN_FIGMA_PRONUNCIATION"; lessonNumber: number }
   | { type: "OPEN_HADITH_LESSON"; lessonId: string }
+  | {
+      type: "OPEN_CONVERSATION_LESSON";
+      unitId: string;
+      stage?: import("./learning/conversation/conversationTypes").ConversationStageId;
+    }
   /**
    * `lessonId` is required, and deliberately so. It was optional, and three of
    * the four call sites omitted it — so the reducer fell back to the first

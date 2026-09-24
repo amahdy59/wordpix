@@ -99,7 +99,7 @@ export const ExerciseShell = memo(function ExerciseShell({
           <div
             className={
               layout === "media"
-                ? "w-full max-w-[2200px] mx-auto flex flex-col gap-4 justify-start pb-3"
+                ? "w-full max-w-[2200px] mx-auto flex flex-1 min-h-0 flex-col gap-4 justify-start pb-3"
                 : "w-full max-w-4xl mx-auto flex flex-col gap-3.5 sm:gap-5 justify-start pb-4 sm:pb-8"
             }
           >

@@ -32,6 +32,15 @@ import {
   type HadithProgress,
 } from "../learning/hadith/hadithProgress";
 import type { HadithStageId } from "../learning/hadith/hadithCurriculumStages";
+import {
+  checkpointConversationUnit,
+  completeConversationUnit,
+  normalizeConversationProgress,
+  saveConversationChallengeResponse,
+  saveConversationNotes,
+  type ConversationProgress,
+} from "../learning/conversation/conversationProgress";
+import type { ConversationStageId } from "../learning/conversation/conversationTypes";
 
 export type MasteryLevel = 0 | 1 | 2 | 3;
 export type LearnerGoal = "everyday" | "travel" | "work" | "school" | "conversation" | "kids";
@@ -145,6 +154,7 @@ export interface LearnerStateSchema {
   foundationProgress: FoundationProgress;
   pronunciationProgress: PronunciationProgress;
   hadithProgress: HadithProgress;
+  conversationProgress: ConversationProgress;
 }
 
 const STORAGE_KEY = "wordpix:learner:v2";
@@ -173,6 +183,7 @@ export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
   foundationProgress: {},
   pronunciationProgress: {},
   hadithProgress: {},
+  conversationProgress: {},
 };
 
 /** Shape of whatever came out of localStorage: unknown until validated. */
@@ -227,6 +238,7 @@ function migrateState(savedData: unknown): LearnerStateSchema {
     foundationProgress: normalizeFoundationProgress(saved.foundationProgress),
     pronunciationProgress: normalizePronunciationProgress(saved.pronunciationProgress),
     hadithProgress: normalizeHadithProgress(saved.hadithProgress),
+    conversationProgress: normalizeConversationProgress(saved.conversationProgress),
   };
 }
 
@@ -303,6 +315,16 @@ interface LearnerContextType {
     scorePercent: number,
     confidence: HadithConfidence
   ) => void;
+  checkpointConversation: (
+    unitId: string,
+    currentStage: number,
+    completedStage?: ConversationStageId,
+    quizScore?: number,
+    voteOption?: string
+  ) => void;
+  recordConversationCompletion: (unitId: string) => void;
+  saveConversationReflection: (unitId: string, notes: string) => void;
+  saveConversationChallenge: (unitId: string, response: string) => void;
   setPreferences: (patch: Partial<LearnerPreferences>) => void;
   setAccessibility: (patch: Partial<AccessibilityPreferences>) => void;
   resetToZero: () => void;
@@ -763,6 +785,88 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     [updateStateAndPersist]
   );
 
+  const checkpointConversation = useCallback(
+    (
+      unitId: string,
+      currentStage: number,
+      completedStage?: ConversationStageId,
+      quizScore?: number,
+      voteOption?: string
+    ) => {
+      updateStateAndPersist((prev) => ({
+        nextState: {
+          ...prev,
+          conversationProgress: checkpointConversationUnit(
+            prev.conversationProgress,
+            unitId,
+            currentStage,
+            completedStage,
+            quizScore,
+            voteOption
+          ),
+        },
+      }));
+    },
+    [updateStateAndPersist]
+  );
+
+  const recordConversationCompletion = useCallback(
+    (unitId: string) => {
+      updateStateAndPersist((prev) => {
+        if (prev.conversationProgress[unitId]?.status === "mastered") {
+          return { nextState: prev };
+        }
+        const nextConversationProgress = completeConversationUnit(
+          prev.conversationProgress,
+          unitId
+        );
+        if (nextConversationProgress === prev.conversationProgress) {
+          return { nextState: prev };
+        }
+        const bonus = 25;
+        const nextXp = prev.learnerProgress.xp + bonus;
+        return {
+          nextState: {
+            ...prev,
+            conversationProgress: nextConversationProgress,
+            learnerProgress: { ...prev.learnerProgress, xp: nextXp },
+          },
+          mutationType: "add_xp",
+          mutationPayload: { xp: nextXp },
+        };
+      });
+    },
+    [updateStateAndPersist]
+  );
+
+  const saveConversationReflection = useCallback(
+    (unitId: string, notes: string) => {
+      updateStateAndPersist((prev) => ({
+        nextState: {
+          ...prev,
+          conversationProgress: saveConversationNotes(prev.conversationProgress, unitId, notes),
+        },
+      }));
+    },
+    [updateStateAndPersist]
+  );
+
+  const saveConversationChallenge = useCallback(
+    (unitId: string, response: string) => {
+      updateStateAndPersist((prev) => ({
+        nextState: {
+          ...prev,
+          conversationProgress: saveConversationChallengeResponse(
+            prev.conversationProgress,
+            unitId,
+            response
+          ),
+        },
+      }));
+    },
+    [updateStateAndPersist]
+  );
+
   const setPreferences = useCallback(
     (patch: Partial<LearnerPreferences>) => {
       updateStateAndPersist((prev) => {
@@ -814,6 +918,10 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         recordPronunciationCheckpoint,
         recordHadithCheckpoint,
         recordHadithCompletion,
+        checkpointConversation,
+        recordConversationCompletion,
+        saveConversationReflection,
+        saveConversationChallenge,
         setPreferences,
         setAccessibility,
         resetToZero,
@@ -830,6 +938,10 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       recordPronunciationCheckpoint,
       recordHadithCheckpoint,
       recordHadithCompletion,
+      checkpointConversation,
+      recordConversationCompletion,
+      saveConversationReflection,
+      saveConversationChallenge,
       setPreferences,
       setAccessibility,
       resetToZero,
@@ -845,6 +957,10 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     recordPronunciationCheckpoint,
     recordHadithCheckpoint,
     recordHadithCompletion,
+    checkpointConversation,
+    recordConversationCompletion,
+    saveConversationReflection,
+    saveConversationChallenge,
     setPreferences,
     setAccessibility,
     resetToZero,
@@ -872,6 +988,10 @@ const DEFAULT_FALLBACK_CONTEXT: LearnerContextType = {
   recordPronunciationCheckpoint: () => {},
   recordHadithCheckpoint: () => {},
   recordHadithCompletion: () => {},
+  checkpointConversation: () => {},
+  recordConversationCompletion: () => {},
+  saveConversationReflection: () => {},
+  saveConversationChallenge: () => {},
   setPreferences: () => {},
   setAccessibility: () => {},
   resetToZero: () => {},

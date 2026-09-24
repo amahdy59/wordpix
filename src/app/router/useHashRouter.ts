@@ -11,6 +11,8 @@ import {
   HADITH_LESSON_COUNT,
   getHadithLessonMetadata,
 } from "../learning/hadith/hadithLessonMetadata";
+import type { ConversationStageId } from "../learning/conversation/conversationTypes";
+import { CONVERSATION_STAGE_IDS } from "../learning/conversation/conversationTypes";
 
 const SKILL_EXERCISE_ID_SET = new Set<string>(SKILL_EXERCISE_IDS);
 
@@ -54,6 +56,10 @@ const STATIC_ROUTES: Record<string, { title: string; getScreen: () => Screen }> 
     title: "WordPix — Hadith Curriculum",
     getScreen: () => ({ id: "hadith-curriculum" }),
   },
+  "#/conversation": {
+    title: "WordPix — Conversation & Debate",
+    getScreen: () => ({ id: "conversation-curriculum" }),
+  },
   "#/onboarding": {
     title: "WordPix — Welcome",
     // Onboarding needs its step: `{ id: "onboarding" }` alone renders nothing.
@@ -80,6 +86,18 @@ const SKILL_EXERCISE_PATTERN = /^#\/skills\/([a-z-]+)$/;
 const FOUNDATION_LESSON_PATTERN = /^#\/foundations\/([a-z-]+)$/;
 const FIGMA_PRONUNCIATION_PATTERN = /^#\/pronunciation\/lesson-(\d+)$/;
 const HADITH_LESSON_PATTERN = /^#\/hadith\/lesson-(\d+)$/;
+const CONVERSATION_LESSON_PATTERN = /^#\/conversation\/(unit-\d{2})(?:\/([a-z-]+))?$/;
+
+function isConversationUnitId(value: string): boolean {
+  const match = /^unit-(\d{2})$/.exec(value);
+  if (!match) return false;
+  const unitNumber = Number(match[1]);
+  return unitNumber >= 1 && unitNumber <= 40;
+}
+
+function conversationUnitTitle(unitId: string): string {
+  return `WordPix — Conversation & Debate — Unit ${Number(unitId.slice(-2))}`;
+}
 
 /**
  * Preserve shared/bookmarked names from the pronunciation curriculum while
@@ -144,6 +162,16 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "hadith-curriculum") {
     return { hash: "#/hadith", title: "WordPix — Hadith Curriculum" };
   }
+  if (screen.id === "conversation-curriculum") {
+    return { hash: "#/conversation", title: "WordPix — Conversation & Debate" };
+  }
+  if (screen.id === "conversation-lesson") {
+    const stagePart = screen.stage ? `/${screen.stage}` : "";
+    return {
+      hash: `#/conversation/${screen.unitId}${stagePart}`,
+      title: conversationUnitTitle(screen.unitId),
+    };
+  }
   if (screen.id === "lesson") {
     const world = resolveUnitForLesson(screen.lessonId);
     return {
@@ -201,6 +229,23 @@ export function hashToRoute(hash: string): RouteIntent | null {
       kind: "screen",
       screen: { id: "hadith-lesson", lessonId: lesson.id },
       title: `WordPix — ${lesson.title}`,
+    };
+  }
+
+  const convMatch = normalized.match(CONVERSATION_LESSON_PATTERN);
+  if (convMatch) {
+    const unitId = convMatch[1];
+    if (!isConversationUnitId(unitId)) return null;
+    const rawStage = convMatch[2];
+    const stage =
+      rawStage && CONVERSATION_STAGE_IDS.includes(rawStage as ConversationStageId)
+        ? (rawStage as ConversationStageId)
+        : undefined;
+    if (rawStage && !stage) return null;
+    return {
+      kind: "screen",
+      screen: { id: "conversation-lesson", unitId, stage },
+      title: conversationUnitTitle(unitId),
     };
   }
 

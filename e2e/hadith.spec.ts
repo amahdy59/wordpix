@@ -31,12 +31,12 @@ test("Hadith lesson is accessible and contained on mobile", async ({ page }) => 
   expect(results.violations).toEqual([]);
 });
 
-test("Hadith 2 practice scores retrieval and restores the next stage", async ({ page }) => {
+test("Hadith 2 practice provides ten questions and restores the next stage", async ({ page }) => {
   await page.goto("/#/hadith/lesson-2");
   await page.getByRole("button", { name: /Practice/ }).click();
 
-  await page.getByRole("button", { name: "Jibril (Gabriel)" }).click();
-  await page.getByRole("button", { name: "Tell me and explain the topic" }).click();
+  await page.getByRole("button", { name: "Jibril (Gabriel)", exact: true }).click();
+  await page.getByRole("button", { name: "Tell me and explain the topic", exact: true }).click();
   for (const label of [
     "Arrival and scene",
     "Islam and its pillars",
@@ -46,7 +46,7 @@ test("Hadith 2 practice scores retrieval and restores the next stage", async ({ 
   ]) {
     await page.getByRole("button", { name: label, exact: true }).click();
   }
-  await expect(page.getByText("3 of 3 answered · score 100%", { exact: true })).toBeVisible();
+  await expect(page.getByText(/3 of 10 answered/)).toBeVisible();
   await page.getByRole("button", { name: "Continue", exact: true }).click();
   await page.waitForTimeout(700);
   await page.reload();
@@ -59,16 +59,8 @@ test("Hadith 1 pilot presents a complete visual and interactive learning flow", 
 }) => {
   await page.goto("/#/hadith/lesson-1");
 
-  await page.getByRole("button", { name: /Overview/ }).click();
-  await expect(
-    page.getByRole("heading", { name: "What this lesson will help you do" })
-  ).toBeVisible();
-
-  await page.getByRole("button", { name: /Warm-up/ }).click();
-  await page.getByRole("radio", { name: "Their intention or motive" }).click();
-  await expect(page.getByText(/action can look identical/i)).toBeVisible();
-
-  await page.getByRole("button", { name: /Read & Listen/ }).click();
+  await expect(page.getByRole("button", { name: /Overview/ })).toHaveCount(0);
+  await expect(page.getByRole("button", { name: /Warm-up/ })).toHaveCount(0);
   await expect(page.getByRole("button", { name: "Listen slowly" })).toBeVisible();
 
   await page.getByRole("button", { name: /Vocabulary/ }).click();
@@ -85,6 +77,8 @@ test("Hadith 1 pilot presents a complete visual and interactive learning flow", 
   ).toBeVisible();
 
   await page.getByRole("button", { name: /Practice/ }).click();
+  await expect(page.locator("fieldset")).toHaveCount(10);
+  await expect(page.getByAltText("Vocabulary picture clue")).toBeVisible();
   await expect(
     page.getByRole("group", { name: /What main message does the Hadith teach about an action/ })
   ).toBeVisible();
