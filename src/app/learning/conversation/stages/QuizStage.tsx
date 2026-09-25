@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { HelpCircle, RotateCcw, ArrowRight, ArrowLeft } from "lucide-react";
+import { HelpCircle, ArrowRight, ArrowLeft } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
 import { useI18n } from "../../../../i18n";
-import { QuizQuestionCard } from "../../../shared/QuizQuestionCard";
+import { CurriculumQuizEngine } from "../../../shared/CurriculumQuizEngine";
+import type { QuizQuestion, QuizResult } from "../../../shared/CurriculumQuizEngine";
 
 interface Props {
   unit: ConversationUnit;
@@ -14,92 +14,46 @@ interface Props {
 
 export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Props) {
   const { t } = useI18n();
-  const [userAnswers, setUserAnswers] = useState<Record<number, "A" | "B" | "C" | "D">>({});
 
-  const handleSelectOption = (qIdx: number, key: "A" | "B" | "C" | "D") => {
-    if (userAnswers[qIdx] !== undefined) return; // already answered
-    const nextAnswers = { ...userAnswers, [qIdx]: key };
-    setUserAnswers(nextAnswers);
+  // Map conversation quiz format → unified QuizQuestion shape
+  const questions: QuizQuestion[] = unit.quiz.map((q) => ({
+    id: q.id,
+    stem: q.question,
+    correctValue: q.correctAnswer,
+    explanation: q.explanation,
+    optionColumns: "two",
+    options: q.options.map((option) => ({
+      value: option.key,
+      label: option.text,
+      prefix: option.key,
+      accessibleLabel: t("conversation.answerOption", {
+        key: option.key,
+        text: option.text,
+      }),
+    })),
+  }));
 
-    // If all 10 are answered, compute and save score
-    if (Object.keys(nextAnswers).length === unit.quiz.length) {
-      let correctCount = 0;
-      unit.quiz.forEach((q, idx) => {
-        if (nextAnswers[idx] === q.correctAnswer) correctCount++;
-      });
-      onSaveScore(correctCount);
-    }
+  const handleComplete = (result: QuizResult) => {
+    onSaveScore(result.correct);
   };
-
-  const handleReset = () => {
-    setUserAnswers({});
-  };
-
-  const answeredCount = Object.keys(userAnswers).length;
-  const currentScore = unit.quiz.reduce((acc, q, idx) => {
-    return userAnswers[idx] === q.correctAnswer ? acc + 1 : acc;
-  }, 0);
-  const canContinue = answeredCount === unit.quiz.length || savedScore !== undefined;
 
   return (
     <div className="flex flex-col gap-6 max-w-4xl mx-auto w-full py-2">
       {/* Stage Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="flex flex-wrap items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
           <HelpCircle className="size-4" aria-hidden />
           {t("conversation.quizStage")}
         </span>
-
-        <div className="flex items-center gap-3">
+        {savedScore !== undefined && (
           <span className="text-xs font-bold text-muted-foreground">
-            {t("conversation.score", { score: currentScore, total: unit.quiz.length })}
-            {savedScore !== undefined && (
-              <span className="ms-1 font-medium text-muted-foreground/80">
-                ({t("conversation.bestScore", { score: savedScore, total: unit.quiz.length })})
-              </span>
-            )}
+            {t("conversation.bestScore", { score: savedScore, total: unit.quiz.length })}
           </span>
-          {answeredCount > 0 && (
-            <button
-              type="button"
-              onClick={handleReset}
-              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border border-border bg-card px-3 py-1.5 text-xs font-bold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
-            >
-              <RotateCcw className="size-3.5" aria-hidden />
-              <span>{t("conversation.retry")}</span>
-            </button>
-          )}
-        </div>
+        )}
       </div>
 
-      {/* Questions List */}
-      <div className="flex flex-col gap-5">
-        {unit.quiz.map((q, qIdx) => {
-          const selected = userAnswers[qIdx];
-          return (
-            <QuizQuestionCard
-              key={q.id}
-              id={`conversation-${q.id}`}
-              index={qIdx}
-              question={q.question}
-              value={selected}
-              correctValue={q.correctAnswer}
-              onChange={(option) => handleSelectOption(qIdx, option)}
-              optionColumns="two"
-              feedback={q.explanation}
-              options={q.options.map((option) => ({
-                value: option.key,
-                label: option.text,
-                prefix: option.key,
-                accessibleLabel: t("conversation.answerOption", {
-                  key: option.key,
-                  text: option.text,
-                }),
-              }))}
-            />
-          );
-        })}
-      </div>
+      {/* Unified Quiz Engine */}
+      <CurriculumQuizEngine questions={questions} onComplete={handleComplete} />
 
       {/* Stage Navigation Footer */}
       <div className="mt-2 flex items-center justify-between">
@@ -115,23 +69,12 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Pro
         <button
           type="button"
           onClick={onNext}
-          disabled={!canContinue}
-          aria-describedby={!canContinue ? "quiz-completion-requirement" : undefined}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <span>{t("conversation.continueDiscussion")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
       </div>
-      {!canContinue && (
-        <p
-          id="quiz-completion-requirement"
-          className="text-center text-sm font-semibold text-muted-foreground"
-          aria-live="polite"
-        >
-          {t("conversation.answerAll")}
-        </p>
-      )}
     </div>
   );
 }

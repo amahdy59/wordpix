@@ -1506,5 +1506,32 @@
   },
   "wordInspector": {
     "pronounce": "Pronounce {word}"
+  },
+  "vocabulary": {
+    "tableCaption": "Vocabulary and Collocations Table",
+    "imageHeader": "Image",
+    "wordHeader": "Word/Phrase",
+    "definitionHeader": "Definition",
+    "exampleHeader": "Example",
+    "typeHeader": "Type",
+    "wordFamily": "Word Family",
+    "meaningContrast": "Meaning Contrast",
+    "commonError": "Common Error"
+  },
+  "quiz": {
+    "questionOf": "Question {current} of {total}",
+    "reset": "Reset Quiz",
+    "checkAnswer": "Check Answer",
+    "previousQuestion": "Previous Question",
+    "nextQuestion": "Next Question",
+    "viewResults": "View Results",
+    "score": "Score",
+    "completedTitle": "Quiz Completed!",
+    "completedSubtitle": "Great job completing this practice exercise.",
+    "restart": "Restart Quiz",
+    "correctFeedback": "Correct! Excellent work.",
+    "incorrectFeedback": "Incorrect. Review the explanation below.",
+    "explanation": "Explanation",
+    "questionPillLabel": "Question {number}"
   }
 }

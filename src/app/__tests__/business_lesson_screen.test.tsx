@@ -113,4 +113,69 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     const c1Cards = screen.getAllByRole("article");
     expect(c1Cards.length).toBe(10);
   });
+
+  it("renders Figma Language Bank Table layout with all 5 columns and interactive controls", async () => {
+    const { BusinessVocabularyStage } =
+      await import("../learning/business/stages/BusinessVocabularyStage");
+    const { getBusinessUnit } = await import("../learning/business/businessCatalog");
+
+    const unit = getBusinessUnit("unit-01");
+    expect(unit).toBeDefined();
+    if (!unit) return;
+
+    const onNext = vi.fn();
+    render(
+      <I18nProvider>
+        <LearnerProvider>
+          <BusinessVocabularyStage unit={unit} onNext={onNext} />
+        </LearnerProvider>
+      </I18nProvider>
+    );
+
+    // 1. Table is default view matching Figma
+    const table = screen.getByRole("table");
+    expect(table).toBeDefined();
+
+    // 2. All 5 headers exist matching Figma
+    expect(screen.getByRole("columnheader", { name: "Image" })).toBeDefined();
+    expect(screen.getByRole("columnheader", { name: "Word/Phrase" })).toBeDefined();
+    expect(screen.getByRole("columnheader", { name: "Definition" })).toBeDefined();
+    expect(screen.getByRole("columnheader", { name: "Example" })).toBeDefined();
+    expect(screen.getByRole("columnheader", { name: "Type" })).toBeDefined();
+
+    // 3. All 15 rows rendered in the table (desktop + mobile both in DOM, hidden via CSS)
+    const rows = screen.getAllByRole("row");
+    // 1 header row + 15 item rows
+    expect(rows.length).toBe(16);
+
+    // Verify row content: term and definition
+    // Note: unified component renders both desktop table row and mobile card, so use getAllByText
+    expect(screen.getAllByText("role").length).toBeGreaterThan(0);
+    expect(
+      screen.getAllByText("your function or position in an organisation").length
+    ).toBeGreaterThan(0);
+
+    // 4. Test Type filter
+    const collocationFilter = screen.getByRole("button", { name: /Collocation/i });
+    fireEvent.click(collocationFilter);
+
+    // After filtering by Collocation (4 items), table should have 1 header + 4 rows = 5 rows
+    const filteredRows = screen.getAllByRole("row");
+    expect(filteredRows.length).toBe(5);
+
+    // 5. Test Search
+    const searchInput = screen.getByRole("searchbox", { name: "Search vocabulary" });
+    fireEvent.change(searchInput, { target: { value: "touch" } });
+    expect(screen.getAllByText("keep in touch").length).toBeGreaterThan(0);
+
+    // Reset filter
+    const allFilter = screen.getByRole("button", { name: /All/i });
+    fireEvent.click(allFilter);
+    fireEvent.change(searchInput, { target: { value: "" } });
+
+    // Continue button invokes onNext
+    const continueBtn = screen.getByRole("button", { name: /Continue to Usage Focus/i });
+    fireEvent.click(continueBtn);
+    expect(onNext).toHaveBeenCalledOnce();
+  });
 });

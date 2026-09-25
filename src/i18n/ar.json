@@ -1506,5 +1506,32 @@
   },
   "wordInspector": {
     "pronounce": "انطق {word}"
+  },
+  "vocabulary": {
+    "tableCaption": "جدول المفردات والتعبيرات اللغوية",
+    "imageHeader": "الصورة",
+    "wordHeader": "الكلمة / التعبير",
+    "definitionHeader": "المعنى / التعريف",
+    "exampleHeader": "مثال",
+    "typeHeader": "النوع",
+    "wordFamily": "عائلة الكلمة",
+    "meaningContrast": "الفروق الدلالية",
+    "commonError": "خطأ شائع"
+  },
+  "quiz": {
+    "questionOf": "السؤال {current} من {total}",
+    "reset": "إعادة الاختبار",
+    "checkAnswer": "تحقق من الإجابة",
+    "previousQuestion": "السؤال السابق",
+    "nextQuestion": "السؤال التالي",
+    "viewResults": "عرض النتائج",
+    "score": "النتيجة",
+    "completedTitle": "اكتمل الاختبار!",
+    "completedSubtitle": "أحسنت في إتمام هذا التدريب التطبيقي.",
+    "restart": "إعادة البدء",
+    "correctFeedback": "إجابة صحيحة! عمل رائع.",
+    "incorrectFeedback": "إجابة غير صحيحة. راجع الشرح أدناه.",
+    "explanation": "الشرح",
+    "questionPillLabel": "السؤال {number}"
   }
 }
