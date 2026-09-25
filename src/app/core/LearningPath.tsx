@@ -10,6 +10,7 @@ import {
   Headphones,
   RotateCcw,
   MessagesSquare,
+  Briefcase,
 } from "lucide-react";
 import type { Action } from "../types";
 import {
@@ -402,7 +403,10 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         </div>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-3" aria-label={t("learn.specialCurricula")}>
+      <section
+        className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
+        aria-label={t("learn.specialCurricula")}
+      >
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
@@ -471,6 +475,29 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           </p>
           <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
             {t("conversation.exploreUnits")}
+            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+          </span>
+        </button>
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
+          className="group min-h-[180px] rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 text-start shadow-wp-xs hover:border-primary hover:bg-primary/10 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
+        >
+          <Briefcase className="size-8 text-primary" aria-hidden />
+          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
+            {t("business.badge")}
+          </p>
+          <h2 className="mt-1 text-xl font-black text-foreground">{t("business.title")}</h2>
+          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+            {t("business.completedUnits", {
+              completed: Object.values(learnerState.businessProgress ?? {}).filter(
+                (item) => item.status === "mastered"
+              ).length,
+              total: 40,
+            })}
+          </p>
+          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
+            {t("business.exploreUnits")}
             <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
           </span>
         </button>

@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   checkpointPronunciationLesson,
   completePronunciationLesson,
+  migrateLegacyPronunciationProgress,
 } from "../learning/foundations/pronunciationProgress";
 
 describe("pronunciation curriculum progress", () => {
@@ -38,5 +39,47 @@ describe("pronunciation curriculum progress", () => {
       bestScorePercent: 90,
       sessions: 2,
     });
+  });
+
+  it("moves retired pilot evidence into the revised curriculum without false mastery", () => {
+    const migrated = migrateLegacyPronunciationProgress(
+      {
+        "meaningful-contrasts": {
+          status: "mastered",
+          sessions: 2,
+          updatedAt: "2026-09-20T00:00:00.000Z",
+        },
+        "pronunciation-portfolio": {
+          status: "in-progress",
+          sessions: 1,
+          updatedAt: "2026-09-21T00:00:00.000Z",
+        },
+      },
+      {}
+    );
+
+    expect(migrated["lesson-01"]).toMatchObject({
+      status: "in-progress",
+      currentStage: 0,
+      sessions: 2,
+    });
+    expect(migrated["lesson-68"]).toMatchObject({ status: "in-progress", sessions: 1 });
+  });
+
+  it("never overwrites newer progress in the revised curriculum", () => {
+    const migrated = migrateLegacyPronunciationProgress(
+      { "meaningful-contrasts": { status: "mastered", sessions: 3 } },
+      {
+        "lesson-01": {
+          status: "mastered",
+          currentStage: 4,
+          bestScorePercent: 95,
+          sessions: 1,
+          updatedAt: "2026-09-24T00:00:00.000Z",
+        },
+      }
+    );
+
+    expect(migrated["lesson-01"]).toMatchObject({ status: "mastered", bestScorePercent: 95 });
   });
 });

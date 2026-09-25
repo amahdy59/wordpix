@@ -1,5 +1,5 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
-import { CheckCircle2, XCircle, Volume2, Eye, EyeOff } from "lucide-react";
+import { Volume2, Eye, EyeOff } from "lucide-react";
 import { useAudio } from "../shared/useAudio";
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
@@ -12,6 +12,7 @@ import { BLANK_TOKEN, type PhraseKind, type UnitLearningMaterials } from "./type
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { InteractiveText } from "./study/InteractiveText";
 import { useI18n } from "../context/I18nContext";
+import { QuizQuestionCard } from "../shared/QuizQuestionCard";
 
 interface Props {
   unitId?: string;
@@ -337,52 +338,27 @@ function MultipleChoice({
 }) {
   const { t } = useI18n();
   const [picked, setPicked] = useState<number | null>(null);
-  const answered = picked !== null;
 
   return (
-    <div className="rounded-2xl border border-border p-4 sm:p-5 bg-background">
-      <p className="font-bold text-sm sm:text-base text-foreground mb-3">
-        {index + 1}. {question}
-      </p>
-      <ul className="space-y-2">
-        {options.map((option, i) => {
-          const isCorrect = i === correctIndex;
-          const isPicked = picked === i;
-          const state = !answered ? "idle" : isCorrect ? "correct" : isPicked ? "wrong" : "idle";
-          return (
-            <li key={option}>
-              <button
-                type="button"
-                disabled={answered}
-                onClick={() => setPicked(i)}
-                className={`w-full text-start rounded-xl border px-3.5 py-2.5 text-sm font-medium transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] flex items-center justify-between ${
-                  state === "correct"
-                    ? "border-wp-green bg-wp-green-light/20 text-wp-green font-bold"
-                    : state === "wrong"
-                      ? "border-destructive bg-destructive/10 text-destructive font-bold"
-                      : "border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 disabled:opacity-70"
-                }`}
-              >
-                <span className="inline-flex items-center gap-2.5">
-                  {state === "correct" && <CheckCircle2 className="size-4 shrink-0" aria-hidden />}
-                  {state === "wrong" && <XCircle className="size-4 shrink-0" aria-hidden />}
-                  <span>{option}</span>
-                </span>
-              </button>
-            </li>
-          );
-        })}
-      </ul>
-      {answered && (
-        <div
-          role="status"
-          className="mt-3.5 pt-3 border-t border-border/60 text-xs sm:text-sm text-muted-foreground leading-relaxed"
-        >
-          <span className="font-bold text-foreground">{t("learningMaterials.explanation")} </span>
+    <QuizQuestionCard
+      id={`materials-${index}-${question.slice(0, 24)}`}
+      index={index}
+      question={question}
+      value={picked === null ? undefined : String(picked)}
+      correctValue={String(correctIndex)}
+      onChange={(value) => setPicked(Number(value))}
+      feedback={
+        <>
+          <span className="font-black">{t("learningMaterials.explanation")} </span>
           {explanation}
-        </div>
-      )}
-    </div>
+        </>
+      }
+      options={options.map((option, optionIndex) => ({
+        value: String(optionIndex),
+        label: option,
+        accessibleLabel: option,
+      }))}
+    />
   );
 }
 

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { HelpCircle, CheckCircle2, XCircle, RotateCcw, ArrowRight, ArrowLeft } from "lucide-react";
+import { HelpCircle, RotateCcw, ArrowRight, ArrowLeft } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
 import { useI18n } from "../../../../i18n";
-import { ChoiceOptionGroup } from "../../../shared/ChoiceOptionGroup";
+import { QuizQuestionCard } from "../../../shared/QuizQuestionCard";
 
 interface Props {
   unit: ConversationUnit;
@@ -76,77 +76,27 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Pro
       <div className="flex flex-col gap-5">
         {unit.quiz.map((q, qIdx) => {
           const selected = userAnswers[qIdx];
-          const hasAnswered = selected !== undefined;
-          const isCorrect = selected === q.correctAnswer;
-
           return (
-            <article
+            <QuizQuestionCard
               key={q.id}
-              className="flex flex-col gap-3 rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-wp-xs"
-              aria-labelledby={`quiz-q-${qIdx}`}
-            >
-              <div className="flex items-start justify-between gap-3">
-                <div className="flex items-start gap-3">
-                  <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-xs text-primary mt-0.5">
-                    {qIdx + 1}
-                  </span>
-                  <h2
-                    id={`quiz-q-${qIdx}`}
-                    className="text-base sm:text-lg font-bold text-foreground leading-snug"
-                  >
-                    {q.question}
-                  </h2>
-                </div>
-
-                {hasAnswered && (
-                  <span
-                    className={`inline-flex shrink-0 items-center gap-1 text-xs font-black px-2.5 py-1 rounded-full ${
-                      isCorrect ? "bg-accent/15 text-accent" : "bg-destructive/15 text-destructive"
-                    }`}
-                  >
-                    {isCorrect ? (
-                      <>
-                        <CheckCircle2 className="size-3.5" aria-hidden />
-                        {t("conversation.correct")}
-                      </>
-                    ) : (
-                      <>
-                        <XCircle className="size-3.5" aria-hidden />
-                        {t("conversation.incorrect")}
-                      </>
-                    )}
-                  </span>
-                )}
-              </div>
-
-              {/* Options */}
-              <ChoiceOptionGroup
-                className="mt-2 grid gap-2.5 sm:grid-cols-2"
-                label={t("conversation.questionOptions", { number: qIdx + 1 })}
-                value={selected}
-                onChange={(option) => handleSelectOption(qIdx, option)}
-                disabled={hasAnswered}
-                correctValue={q.correctAnswer}
-                revealFeedback={hasAnswered}
-                options={q.options.map((option) => ({
-                  value: option.key,
-                  label: option.text,
-                  prefix: option.key,
-                  accessibleLabel: t("conversation.answerOption", {
-                    key: option.key,
-                    text: option.text,
-                  }),
-                }))}
-              />
-
-              {/* Rationale feedback */}
-              {hasAnswered && !isCorrect && (
-                <p className="mt-1 text-xs font-semibold text-muted-foreground">
-                  {t("conversation.correctAnswer", { answer: q.correctAnswer })}
-                  {q.explanation && <span> {q.explanation}</span>}
-                </p>
-              )}
-            </article>
+              id={`conversation-${q.id}`}
+              index={qIdx}
+              question={q.question}
+              value={selected}
+              correctValue={q.correctAnswer}
+              onChange={(option) => handleSelectOption(qIdx, option)}
+              optionColumns="two"
+              feedback={q.explanation}
+              options={q.options.map((option) => ({
+                value: option.key,
+                label: option.text,
+                prefix: option.key,
+                accessibleLabel: t("conversation.answerOption", {
+                  key: option.key,
+                  text: option.text,
+                }),
+              }))}
+            />
           );
         })}
       </div>

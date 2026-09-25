@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Check, Image as ImageIcon } from "lucide-react";
+import { Image as ImageIcon } from "lucide-react";
 import { resolveAssetUrl } from "../../../../utils/assetUrl";
 import { useI18n } from "../../../../i18n";
 import { useAudio } from "../../../shared/useAudio";
@@ -116,22 +116,12 @@ function ImageWithFallback({ src, alt, fallbackLabel }: ImageWithFallbackProps) 
 
 export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
   const { t } = useI18n();
-  const [revealedImages, setRevealedImages] = useState<Set<string>>(new Set());
   const [activeAudioText, setActiveAudioText] = useState<string | null>(null);
   const audio = useAudio({ lang: "en-US", rate: 0.82, preferLocal: true });
 
   const playAudio = (text: string) => {
     setActiveAudioText(text);
     audio.speak(text);
-  };
-
-  const toggleReveal = (imageRef: string) => {
-    setRevealedImages((prev) => {
-      const next = new Set(prev);
-      if (next.has(imageRef)) next.delete(imageRef);
-      else next.add(imageRef);
-      return next;
-    });
   };
 
   const vocabulary = useMemo(() => parseHadithVocabulary(lines), [lines]);
@@ -410,67 +400,6 @@ export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
           </aside>
         </div>
       </section>
-
-      {/* Picture Vocabulary Check (Dual-Coding Testing Effect) */}
-      {visuals.length > 0 && (
-        <section
-          className="rounded-3xl border border-border bg-card p-5 shadow-wp-sm sm:p-7"
-          aria-labelledby="picture-check-heading"
-        >
-          <div className="flex items-center gap-2">
-            <ImageIcon className="size-5 text-primary" aria-hidden />
-            <h3 id="picture-check-heading" className="text-xl font-black text-foreground">
-              {t("hadith.pictureVocabularyCheck") || "Picture vocabulary check"}
-            </h3>
-          </div>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {t("hadith.pictureVocabularyDescription") ||
-              "Choose a picture, name the word aloud, then reveal the answer to test your recall."}
-          </p>
-
-          <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-            {visuals.map((item) => {
-              const isRevealed = revealedImages.has(item.imageRef);
-              const assetUrl = resolveAssetUrl(`hadith/v1/images/${item.imageRef}.png`);
-
-              return (
-                <div
-                  key={item.imageRef}
-                  className="flex flex-col overflow-hidden rounded-2xl border-2 border-border bg-background shadow-sm transition-all hover:border-primary/40"
-                >
-                  <div className="aspect-square w-full overflow-hidden bg-muted">
-                    <ImageWithFallback
-                      src={assetUrl}
-                      alt={isRevealed ? item.label : "Vocabulary image"}
-                      fallbackLabel={item.label}
-                    />
-                  </div>
-
-                  <button
-                    type="button"
-                    onClick={() => toggleReveal(item.imageRef)}
-                    aria-pressed={isRevealed}
-                    className={`flex min-h-12 w-full items-center justify-center gap-2 p-3 text-center text-xs font-black transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                      isRevealed
-                        ? "bg-primary/10 text-primary"
-                        : "bg-background text-foreground hover:bg-muted"
-                    }`}
-                  >
-                    {isRevealed ? (
-                      <>
-                        <Check className="size-4 text-primary" aria-hidden />
-                        <span>{item.label}</span>
-                      </>
-                    ) : (
-                      <span>{t("hadith.revealWord") || "Reveal word"}</span>
-                    )}
-                  </button>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-      )}
     </section>
   );
 }

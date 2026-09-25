@@ -83,6 +83,16 @@ const ConversationCurriculumScreen = lazy(() =>
     default: m.ConversationCurriculumScreen,
   }))
 );
+const BusinessLessonScreen = lazy(() =>
+  import("../learning/business/BusinessLessonScreen").then((m) => ({
+    default: m.BusinessLessonScreen,
+  }))
+);
+const BusinessCurriculumScreen = lazy(() =>
+  import("../learning/business/BusinessCurriculumScreen").then((m) => ({
+    default: m.BusinessCurriculumScreen,
+  }))
+);
 
 const ExerciseListenRepeat = lazy(() =>
   import("../exercises/ExerciseListenRepeat").then((m) => ({ default: m.ExerciseListenRepeat }))
@@ -360,6 +370,15 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       );
     if (state.id === "conversation-curriculum")
       return <ConversationCurriculumScreen dispatch={dispatch} />;
+    if (state.id === "business-lesson")
+      return (
+        <BusinessLessonScreen
+          unitId={state.unitId}
+          initialStage={state.stage}
+          dispatch={dispatch}
+        />
+      );
+    if (state.id === "business-curriculum") return <BusinessCurriculumScreen dispatch={dispatch} />;
 
     if (state.id === "skill-exercise") {
       const SkillExercise = SKILL_EXERCISES[state.exerciseId];
@@ -391,7 +410,9 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
         ? `${state.id}-${state.lessonId}`
         : state.id === "conversation-lesson"
           ? `${state.id}-${state.unitId}-${state.stage ?? "resume"}`
-          : state.id + ("step" in state ? `-${state.step}` : "");
+          : state.id === "business-lesson"
+            ? `${state.id}-${state.unitId}-${state.stage ?? "resume"}`
+            : state.id + ("step" in state ? `-${state.step}` : "");
   // Route transitions render immediately with a short enter motion only: the
   // previous AnimatePresence mode="wait" held every navigation for a full exit
   // animation first, which read as latency on every tab switch.

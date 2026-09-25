@@ -3,10 +3,11 @@ import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Clock3, Search } from "l
 import type { Action } from "../../types";
 import { useLearner } from "../../context/LearnerContext";
 import { useI18n } from "../../../i18n";
-import { FIGMA_HADITH_LESSONS } from "./figmaHadithCatalog";
+import { FIGMA_HADITH_LESSONS, getHadithLessonThumbnail } from "./figmaHadithCatalog";
 import { HADITH_THEMES } from "./hadithThemes";
 import { CurriculumFilterTabs } from "../../shared/CurriculumFilterTabs";
 import { CurriculumHeroHeader } from "../../shared/CurriculumHeroHeader";
+import { resolveAssetUrl } from "../../../utils/assetUrl";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -165,6 +166,7 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
                     const progress = state.hadithProgress[lesson.id];
                     const isMastered = progress?.status === "mastered";
                     const isDue = Boolean(progress?.nextReviewAt && progress.nextReviewAt <= now);
+                    const thumbnail = getHadithLessonThumbnail(lesson);
                     return (
                       <li key={lesson.id}>
                         <button
@@ -172,18 +174,29 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
                           onClick={() =>
                             dispatch({ type: "OPEN_HADITH_LESSON", lessonId: lesson.id })
                           }
-                          className="grid min-h-[132px] w-full grid-cols-[auto_1fr_auto] items-start gap-4 rounded-2xl border border-border bg-card p-4 text-start shadow-wp-xs hover:border-primary/50 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                          className="grid min-h-[148px] w-full grid-cols-[5.5rem_1fr_auto] items-stretch gap-4 overflow-hidden rounded-2xl border border-border bg-card p-3 text-start shadow-wp-xs hover:border-primary/50 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:grid-cols-[7rem_1fr_auto]"
                         >
-                          <span
-                            className={`flex size-11 items-center justify-center rounded-xl font-black ${isMastered ? "bg-wp-green text-wp-text-on-green" : "bg-primary/10 text-primary"}`}
-                          >
-                            {isMastered ? (
-                              <CheckCircle2 className="size-5" aria-hidden />
-                            ) : (
-                              lesson.number
-                            )}
+                          <span className="relative min-h-28 overflow-hidden rounded-xl bg-muted">
+                            <img
+                              src={resolveAssetUrl(`hadith/v1/images/${thumbnail.imageRef}.png`)}
+                              alt=""
+                              width={224}
+                              height={224}
+                              loading={lesson.number <= 2 ? "eager" : "lazy"}
+                              decoding="async"
+                              className="size-full object-cover"
+                            />
+                            <span
+                              className={`absolute start-2 top-2 flex size-9 items-center justify-center rounded-lg font-black shadow-wp-sm ${isMastered ? "bg-wp-green text-wp-text-on-green" : "bg-card/95 text-primary"}`}
+                            >
+                              {isMastered ? (
+                                <CheckCircle2 className="size-5" aria-hidden />
+                              ) : (
+                                lesson.number
+                              )}
+                            </span>
                           </span>
-                          <span className="min-w-0">
+                          <span className="min-w-0 py-1">
                             <span className="block text-base font-black text-foreground">
                               {lesson.title}
                             </span>
@@ -204,7 +217,7 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
                             </span>
                           </span>
                           <ArrowRight
-                            className="mt-3 size-5 text-primary rtl:rotate-180"
+                            className="mt-3 size-5 self-start text-primary rtl:rotate-180"
                             aria-hidden
                           />
                         </button>

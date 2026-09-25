@@ -14,7 +14,7 @@ import { getParsedHadithStages } from "./hadithLessonContent";
 import { HadithStageStepper } from "./HadithStageStepper";
 import { HadithReadListenStage } from "./stages/HadithReadListenStage";
 import { HadithVocabularyStage } from "./stages/HadithVocabularyStage";
-import { HadithSpeakStage } from "./stages/HadithSpeakStage";
+import { HadithDiscussionStage } from "./stages/HadithDiscussionStage";
 import { HadithReviewStage } from "./stages/HadithReviewStage";
 import { HadithWarmupStage } from "./stages/HadithWarmupStage";
 import { HadithOverviewSummary } from "./stages/HadithOverviewStage";
@@ -246,7 +246,13 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
             <HadithPractice exerciseSet={exerciseSet} onScoreChange={setPracticeScore} />
           )}
 
-          {stage === "speak" && <HadithSpeakStage speak={parsedStages.speak} />}
+          {stage === "speak" && (
+            <HadithDiscussionStage
+              lessonTitle={lesson.title}
+              translation={lesson.source.translation}
+              reviewItems={parsedStages.review}
+            />
+          )}
 
           {stage === "check-review" && (
             <HadithReviewStage

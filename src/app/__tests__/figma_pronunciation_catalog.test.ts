@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   FIGMA_PRONUNCIATION_LESSONS,
   FIGMA_PRONUNCIATION_SOURCE,
+  PRONUNCIATION_CHAPTERS,
   getFigmaPronunciationActivityData,
   getFigmaPronunciationLesson,
   getPronunciationContrastPartner,
@@ -64,6 +65,25 @@ describe("Figma pronunciation source", () => {
       Array.from({ length: 68 }, (_, index) => index + 1)
     );
     expect(FIGMA_PRONUNCIATION_SOURCE.imageRefs).toHaveLength(650);
+  });
+
+  it("consolidates every useful legacy pronunciation topic into one revised chapter", () => {
+    expect(PRONUNCIATION_CHAPTERS).toHaveLength(8);
+    expect(PRONUNCIATION_CHAPTERS.flatMap((chapter) => chapter.legacyTopics)).toEqual([
+      "meaningful-contrasts",
+      "consonant-sequences",
+      "vowel-clarity",
+      "clear-word-endings",
+      "meaning-chunks",
+      "connected-speech",
+      "word-stress",
+      "syllable-prominence",
+      "important-information",
+      "pronunciation-goals",
+      "communication-repair",
+      "pronunciation-portfolio",
+    ]);
+    expect(new Set(PRONUNCIATION_CHAPTERS.map((chapter) => chapter.descriptionKey)).size).toBe(8);
   });
 
   it("exposes lesson-level source content without inventing runtime answers", () => {

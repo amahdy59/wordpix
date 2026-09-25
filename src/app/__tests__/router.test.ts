@@ -44,6 +44,9 @@ describe("Hash round-tripping", () => {
       { id: "conversation-curriculum" },
       { id: "conversation-lesson", unitId: "unit-01" },
       { id: "conversation-lesson", unitId: "unit-01", stage: "quiz" },
+      { id: "business-curriculum" },
+      { id: "business-lesson", unitId: "unit-01" },
+      { id: "business-lesson", unitId: "unit-01", stage: "exercises" },
       lessonAt(0),
       lessonAt(3),
       lessonAt(4),
@@ -84,12 +87,16 @@ describe("Hash round-tripping", () => {
 
   it("keeps shared pronunciation lesson aliases working", () => {
     expect(hashToScreen("#/foundations/pronunciation-minimal-pairs")?.screen).toEqual({
-      id: "foundation-lesson",
-      lessonId: "vowel-clarity",
+      id: "figma-pronunciation-lesson",
+      lessonNumber: 17,
     });
     expect(hashToScreen("#/foundations/pronunciation-word-stress")?.screen).toEqual({
-      id: "foundation-lesson",
-      lessonId: "word-stress",
+      id: "figma-pronunciation-lesson",
+      lessonNumber: 41,
+    });
+    expect(hashToScreen("#/foundations/pronunciation-portfolio")?.screen).toEqual({
+      id: "figma-pronunciation-lesson",
+      lessonNumber: 68,
     });
   });
 

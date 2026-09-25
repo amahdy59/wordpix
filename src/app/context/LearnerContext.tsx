@@ -21,7 +21,7 @@ import {
 import {
   checkpointPronunciationLesson,
   completePronunciationLesson,
-  normalizePronunciationProgress,
+  migrateLegacyPronunciationProgress,
   type PronunciationProgress,
 } from "../learning/foundations/pronunciationProgress";
 import {
@@ -41,6 +41,16 @@ import {
   type ConversationProgress,
 } from "../learning/conversation/conversationProgress";
 import type { ConversationStageId } from "../learning/conversation/conversationTypes";
+import {
+  checkpointBusinessUnit,
+  completeBusinessUnit,
+  normalizeBusinessProgress,
+  saveBusinessChecklist as applyBusinessChecklist,
+  saveBusinessConfidence as applyBusinessConfidence,
+  saveBusinessReflection as applyBusinessReflection,
+  type BusinessProgress,
+} from "../learning/business/businessProgress";
+import type { BusinessStageId } from "../learning/business/businessTypes";
 
 export type MasteryLevel = 0 | 1 | 2 | 3;
 export type LearnerGoal = "everyday" | "travel" | "work" | "school" | "conversation" | "kids";
@@ -155,6 +165,7 @@ export interface LearnerStateSchema {
   pronunciationProgress: PronunciationProgress;
   hadithProgress: HadithProgress;
   conversationProgress: ConversationProgress;
+  businessProgress: BusinessProgress;
 }
 
 const STORAGE_KEY = "wordpix:learner:v2";
@@ -184,6 +195,7 @@ export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
   pronunciationProgress: {},
   hadithProgress: {},
   conversationProgress: {},
+  businessProgress: {},
 };
 
 /** Shape of whatever came out of localStorage: unknown until validated. */
@@ -236,9 +248,13 @@ function migrateState(savedData: unknown): LearnerStateSchema {
       ? (saved.sessionHistory as SessionRecord[])
       : [],
     foundationProgress: normalizeFoundationProgress(saved.foundationProgress),
-    pronunciationProgress: normalizePronunciationProgress(saved.pronunciationProgress),
+    pronunciationProgress: migrateLegacyPronunciationProgress(
+      saved.foundationProgress,
+      saved.pronunciationProgress
+    ),
     hadithProgress: normalizeHadithProgress(saved.hadithProgress),
     conversationProgress: normalizeConversationProgress(saved.conversationProgress),
+    businessProgress: normalizeBusinessProgress(saved.businessProgress),
   };
 }
 
@@ -325,6 +341,16 @@ interface LearnerContextType {
   recordConversationCompletion: (unitId: string) => void;
   saveConversationReflection: (unitId: string, notes: string) => void;
   saveConversationChallenge: (unitId: string, response: string) => void;
+  checkpointBusiness: (
+    unitId: string,
+    currentStage: number,
+    completedStage?: BusinessStageId,
+    quizScore?: number
+  ) => void;
+  recordBusinessCompletion: (unitId: string) => void;
+  saveBusinessReflection: (unitId: string, promptId: string, text: string) => void;
+  saveBusinessChecklist: (unitId: string, checklist: string[]) => void;
+  saveBusinessConfidence: (unitId: string, rating: "not-yet" | "almost" | "ready") => void;
   setPreferences: (patch: Partial<LearnerPreferences>) => void;
   setAccessibility: (patch: Partial<AccessibilityPreferences>) => void;
   resetToZero: () => void;
@@ -867,6 +893,88 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     [updateStateAndPersist]
   );
 
+  const checkpointBusiness = useCallback(
+    (
+      unitId: string,
+      currentStage: number,
+      completedStage?: BusinessStageId,
+      quizScore?: number
+    ) => {
+      updateStateAndPersist((prev) => ({
+        nextState: {
+          ...prev,
+          businessProgress: checkpointBusinessUnit(
+            prev.businessProgress,
+            unitId,
+            currentStage,
+            completedStage,
+            quizScore
+          ),
+        },
+      }));
+    },
+    [updateStateAndPersist]
+  );
+
+  const recordBusinessCompletion = useCallback(
+    (unitId: string) => {
+      updateStateAndPersist((prev) => {
+        if (prev.businessProgress[unitId]?.status === "mastered") {
+          return { nextState: prev };
+        }
+        const nextBusinessProgress = completeBusinessUnit(prev.businessProgress, unitId);
+        const bonus = 25;
+        const nextXp = prev.learnerProgress.xp + bonus;
+        return {
+          nextState: {
+            ...prev,
+            businessProgress: nextBusinessProgress,
+            learnerProgress: { ...prev.learnerProgress, xp: nextXp },
+          },
+          mutationType: "add_xp",
+          mutationPayload: { xp: nextXp },
+        };
+      });
+    },
+    [updateStateAndPersist]
+  );
+
+  const saveBusinessReflection = useCallback(
+    (unitId: string, promptId: string, text: string) => {
+      updateStateAndPersist((prev) => ({
+        nextState: {
+          ...prev,
+          businessProgress: applyBusinessReflection(prev.businessProgress, unitId, promptId, text),
+        },
+      }));
+    },
+    [updateStateAndPersist]
+  );
+
+  const saveBusinessChecklist = useCallback(
+    (unitId: string, checklist: string[]) => {
+      updateStateAndPersist((prev) => ({
+        nextState: {
+          ...prev,
+          businessProgress: applyBusinessChecklist(prev.businessProgress, unitId, checklist),
+        },
+      }));
+    },
+    [updateStateAndPersist]
+  );
+
+  const saveBusinessConfidence = useCallback(
+    (unitId: string, rating: "not-yet" | "almost" | "ready") => {
+      updateStateAndPersist((prev) => ({
+        nextState: {
+          ...prev,
+          businessProgress: applyBusinessConfidence(prev.businessProgress, unitId, rating),
+        },
+      }));
+    },
+    [updateStateAndPersist]
+  );
+
   const setPreferences = useCallback(
     (patch: Partial<LearnerPreferences>) => {
       updateStateAndPersist((prev) => {
@@ -922,6 +1030,11 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         recordConversationCompletion,
         saveConversationReflection,
         saveConversationChallenge,
+        checkpointBusiness,
+        recordBusinessCompletion,
+        saveBusinessReflection,
+        saveBusinessChecklist,
+        saveBusinessConfidence,
         setPreferences,
         setAccessibility,
         resetToZero,
@@ -942,6 +1055,11 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       recordConversationCompletion,
       saveConversationReflection,
       saveConversationChallenge,
+      checkpointBusiness,
+      recordBusinessCompletion,
+      saveBusinessReflection,
+      saveBusinessChecklist,
+      saveBusinessConfidence,
       setPreferences,
       setAccessibility,
       resetToZero,
@@ -961,6 +1079,11 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     recordConversationCompletion,
     saveConversationReflection,
     saveConversationChallenge,
+    checkpointBusiness,
+    recordBusinessCompletion,
+    saveBusinessReflection,
+    saveBusinessChecklist,
+    saveBusinessConfidence,
     setPreferences,
     setAccessibility,
     resetToZero,
@@ -992,6 +1115,11 @@ const DEFAULT_FALLBACK_CONTEXT: LearnerContextType = {
   recordConversationCompletion: () => {},
   saveConversationReflection: () => {},
   saveConversationChallenge: () => {},
+  checkpointBusiness: () => {},
+  recordBusinessCompletion: () => {},
+  saveBusinessReflection: () => {},
+  saveBusinessChecklist: () => {},
+  saveBusinessConfidence: () => {},
   setPreferences: () => {},
   setAccessibility: () => {},
   resetToZero: () => {},

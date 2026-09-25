@@ -56,18 +56,16 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
 
     expect(screen.getByRole("heading", { name: "Listening foundations" })).toBeInTheDocument();
     expect(
-      screen.queryByRole("heading", { name: "Pronunciation and comprehensibility" })
+      screen.queryByRole("heading", { name: "First letters and words" })
     ).not.toBeInTheDocument();
     expect(screen.queryByText("General English words mastered")).not.toBeInTheDocument();
 
     await user.click(
       screen.getByRole("button", {
-        name: "Explore all lessons and the optional pronunciation course",
+        name: "Explore all reading foundation lessons",
       })
     );
-    expect(
-      screen.getByRole("heading", { name: "Pronunciation and comprehensibility" })
-    ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "First letters and words" })).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /View full learning path/i }));
     expect(screen.getByText("General English words mastered")).toBeInTheDocument();

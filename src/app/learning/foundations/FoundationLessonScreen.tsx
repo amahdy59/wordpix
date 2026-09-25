@@ -365,19 +365,10 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                   </div>
                 </div>
               )}
-              {lesson.id === "pronunciation-goals" && (
-                <button
-                  type="button"
-                  onClick={() => openLesson("pronunciation-portfolio")}
-                  className={`mt-5 min-h-[52px] w-full rounded-2xl border-2 border-primary bg-background px-5 font-bold text-primary ${focusRing}`}
-                >
-                  {t("foundation.skillsCheck")}
-                </button>
-              )}
               <button
                 type="button"
                 onClick={advance}
-                className={`${lesson.id === "pronunciation-goals" ? "mt-3" : "mt-5"} flex min-h-[56px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 font-bold text-primary-foreground ${focusRing}`}
+                className={`mt-5 flex min-h-[56px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-5 font-bold text-primary-foreground ${focusRing}`}
               >
                 <Play className="size-5" aria-hidden /> {t("foundation.startLesson")}
               </button>

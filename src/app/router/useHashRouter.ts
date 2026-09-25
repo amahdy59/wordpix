@@ -7,12 +7,15 @@ import {
   isFoundationLessonId,
 } from "../learning/foundations/foundationCurriculum";
 import { getFigmaPronunciationLesson } from "../learning/foundations/figmaPronunciationCatalog";
+import { LEGACY_PRONUNCIATION_LESSON_NUMBERS } from "../learning/foundations/pronunciationProgress";
 import {
   HADITH_LESSON_COUNT,
   getHadithLessonMetadata,
 } from "../learning/hadith/hadithLessonMetadata";
 import type { ConversationStageId } from "../learning/conversation/conversationTypes";
 import { CONVERSATION_STAGE_IDS } from "../learning/conversation/conversationTypes";
+import type { BusinessStageId } from "../learning/business/businessTypes";
+import { BUSINESS_STAGE_IDS } from "../learning/business/businessTypes";
 
 const SKILL_EXERCISE_ID_SET = new Set<string>(SKILL_EXERCISE_IDS);
 
@@ -60,6 +63,10 @@ const STATIC_ROUTES: Record<string, { title: string; getScreen: () => Screen }> 
     title: "WordPix — Conversation & Debate",
     getScreen: () => ({ id: "conversation-curriculum" }),
   },
+  "#/business": {
+    title: "WordPix — Beyond Business English",
+    getScreen: () => ({ id: "business-curriculum" }),
+  },
   "#/onboarding": {
     title: "WordPix — Welcome",
     // Onboarding needs its step: `{ id: "onboarding" }` alone renders nothing.
@@ -87,6 +94,7 @@ const FOUNDATION_LESSON_PATTERN = /^#\/foundations\/([a-z-]+)$/;
 const FIGMA_PRONUNCIATION_PATTERN = /^#\/pronunciation\/lesson-(\d+)$/;
 const HADITH_LESSON_PATTERN = /^#\/hadith\/lesson-(\d+)$/;
 const CONVERSATION_LESSON_PATTERN = /^#\/conversation\/(unit-\d{2})(?:\/([a-z-]+))?$/;
+const BUSINESS_LESSON_PATTERN = /^#\/business\/(unit-\d{2})(?:\/([a-z-]+))?$/;
 
 function isConversationUnitId(value: string): boolean {
   const match = /^unit-(\d{2})$/.exec(value);
@@ -99,19 +107,19 @@ function conversationUnitTitle(unitId: string): string {
   return `WordPix — Conversation & Debate — Unit ${Number(unitId.slice(-2))}`;
 }
 
-/**
- * Preserve shared/bookmarked names from the pronunciation curriculum while
- * keeping the shorter canonical lesson IDs used by application state.
- */
-const FOUNDATION_LESSON_ALIASES: Readonly<
-  Record<string, Parameters<typeof getFoundationLesson>[0]>
-> = {
-  "pronunciation-minimal-pairs": "vowel-clarity",
-  "pronunciation-word-stress": "word-stress",
-  "pronunciation-connected-speech": "connected-speech",
-  "pronunciation-communication-repair": "communication-repair",
-};
+function isBusinessUnitId(value: string): boolean {
+  const match = /^unit-(\d{2})$/.exec(value);
+  if (!match) return false;
+  const unitNumber = Number(match[1]);
+  return unitNumber >= 1 && unitNumber <= 40;
+}
 
+function businessUnitTitle(unitId: string): string {
+  return `WordPix — Beyond Business English — Unit ${Number(unitId.slice(-2))}`;
+}
+
+/** Keep retired pronunciation bookmarks useful by routing them into the
+ * closest lesson in the consolidated eight-chapter curriculum. */
 export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "onboarding") return { hash: "#/onboarding", title: "WordPix — Onboarding" };
   if (screen.id === "home") return { hash: "#/home", title: "WordPix — Home" };
@@ -172,6 +180,16 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
       title: conversationUnitTitle(screen.unitId),
     };
   }
+  if (screen.id === "business-curriculum") {
+    return { hash: "#/business", title: "WordPix — Beyond Business English" };
+  }
+  if (screen.id === "business-lesson") {
+    const stagePart = screen.stage ? `/${screen.stage}` : "";
+    return {
+      hash: `#/business/${screen.unitId}${stagePart}`,
+      title: businessUnitTitle(screen.unitId),
+    };
+  }
   if (screen.id === "lesson") {
     const world = resolveUnitForLesson(screen.lessonId);
     return {
@@ -191,11 +209,19 @@ export function hashToRoute(hash: string): RouteIntent | null {
 
   const foundationMatch = normalized.match(FOUNDATION_LESSON_PATTERN);
   const requestedFoundationId = foundationMatch?.[1];
-  const foundationId = requestedFoundationId
-    ? (FOUNDATION_LESSON_ALIASES[requestedFoundationId] ?? requestedFoundationId)
+  const consolidatedLessonNumber = requestedFoundationId
+    ? LEGACY_PRONUNCIATION_LESSON_NUMBERS[requestedFoundationId]
     : undefined;
-  if (foundationId && isFoundationLessonId(foundationId)) {
-    const lesson = getFoundationLesson(foundationId);
+  if (consolidatedLessonNumber) {
+    const lesson = getFigmaPronunciationLesson(consolidatedLessonNumber);
+    return {
+      kind: "screen",
+      screen: { id: "figma-pronunciation-lesson", lessonNumber: consolidatedLessonNumber },
+      title: `WordPix — ${lesson.sourceName}`,
+    };
+  }
+  if (requestedFoundationId && isFoundationLessonId(requestedFoundationId)) {
+    const lesson = getFoundationLesson(requestedFoundationId);
     return {
       kind: "screen",
       screen: { id: "foundation-lesson", lessonId: lesson.id },
@@ -246,6 +272,23 @@ export function hashToRoute(hash: string): RouteIntent | null {
       kind: "screen",
       screen: { id: "conversation-lesson", unitId, stage },
       title: conversationUnitTitle(unitId),
+    };
+  }
+
+  const businessMatch = normalized.match(BUSINESS_LESSON_PATTERN);
+  if (businessMatch) {
+    const unitId = businessMatch[1];
+    if (!isBusinessUnitId(unitId)) return null;
+    const rawStage = businessMatch[2];
+    const stage =
+      rawStage && BUSINESS_STAGE_IDS.includes(rawStage as BusinessStageId)
+        ? (rawStage as BusinessStageId)
+        : undefined;
+    if (rawStage && !stage) return null;
+    return {
+      kind: "screen",
+      screen: { id: "business-lesson", unitId, stage },
+      title: businessUnitTitle(unitId),
     };
   }
 

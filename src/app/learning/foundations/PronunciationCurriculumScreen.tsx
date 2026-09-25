@@ -225,6 +225,9 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
                       <h2 className="mt-1 text-xl font-black text-foreground">
                         {t(chapter.titleKey)}
                       </h2>
+                      <p className="mt-1 max-w-3xl text-sm font-medium leading-6 text-muted-foreground">
+                        {t(chapter.descriptionKey)}
+                      </p>
                     </div>
                     <p className="text-sm font-bold text-muted-foreground">
                       {t("pronunciation.chapterProgress", {

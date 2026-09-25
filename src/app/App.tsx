@@ -96,6 +96,14 @@ function AppInner() {
       });
       return;
     }
+    if (screen.id === "business-lesson") {
+      dispatch({
+        type: "OPEN_BUSINESS_LESSON",
+        unitId: screen.unitId,
+        stage: screen.stage,
+      });
+      return;
+    }
     dispatch({
       type: "GO",
       to: screen.id as Exclude<
@@ -109,6 +117,7 @@ function AppInner() {
         | "lesson"
         | "learn-words"
         | "conversation-lesson"
+        | "business-lesson"
       >,
     });
   }, []);

@@ -5,6 +5,7 @@ import { describe, expect, it } from "vitest";
 import { BilingualTextBlock, LanguageToggle } from "../shared/BilingualText";
 import { ChoiceOptionGroup } from "../shared/ChoiceOptionGroup";
 import { TaskChecklist } from "../shared/TaskChecklist";
+import { QuizQuestionCard } from "../shared/QuizQuestionCard";
 
 function ChoiceHarness() {
   const [value, setValue] = useState<"a" | "b" | "c">("a");
@@ -111,5 +112,31 @@ describe("shared learning controls", () => {
     );
     expect(screen.getByText("إجابة مدروسة")).toHaveAttribute("lang", "ar");
     expect(screen.getByText("إجابة مدروسة")).toHaveAttribute("dir", "rtl");
+  });
+
+  it("uses the shared quiz feedback pattern and locks a submitted answer", async () => {
+    const user = userEvent.setup();
+    render(
+      <QuizQuestionCard
+        id="shared-pattern"
+        index={0}
+        question="Which answer is correct?"
+        correctValue="b"
+        onChange={() => undefined}
+        value="a"
+        feedback="B is the supported answer."
+        options={[
+          { value: "a", label: "Answer A", accessibleLabel: "Answer A" },
+          { value: "b", label: "Answer B", accessibleLabel: "Answer B" },
+        ]}
+      />
+    );
+
+    expect(screen.getByRole("status")).toHaveTextContent("Not yet");
+    expect(screen.getByRole("status")).toHaveTextContent("B is the supported answer.");
+    const option = screen.getByRole("radio", { name: "Answer B" });
+    expect(option).toBeDisabled();
+    await user.click(option);
+    expect(option).toHaveAttribute("aria-checked", "false");
   });
 });

@@ -60,6 +60,24 @@ export function getHadithVisualVocabulary(terms: readonly string[]) {
   );
 }
 
+export function getHadithLessonThumbnail(lesson: FigmaHadithLesson) {
+  const vocabularyLines = new Set(lesson.stages.vocabulary.text.map(normalizeVisualLabel));
+  const matched = FIGMA_HADITH_VISUAL_VOCABULARY.find((item) => {
+    const baseLabel = item.label.split("·")[0].trim();
+    return (
+      vocabularyLines.has(normalizeVisualLabel(item.label)) ||
+      vocabularyLines.has(normalizeVisualLabel(baseLabel))
+    );
+  });
+
+  return (
+    matched ??
+    FIGMA_HADITH_VISUAL_VOCABULARY[
+      ((lesson.number - 1) * 5) % FIGMA_HADITH_VISUAL_VOCABULARY.length
+    ]
+  );
+}
+
 export function getFigmaHadithLesson(id: string): FigmaHadithLesson | undefined {
   return FIGMA_HADITH_LESSONS.find((lesson) => lesson.id === id);
 }

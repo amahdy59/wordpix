@@ -1,8 +1,9 @@
 import { useMemo, useState } from "react";
-import { Check, RotateCcw, X } from "lucide-react";
+import { RotateCcw, X } from "lucide-react";
 import { useI18n } from "../../../i18n";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
 import type { HadithExerciseSet } from "./hadithExerciseCatalog";
+import { QuizQuestionCard } from "../../shared/QuizQuestionCard";
 
 interface Props {
   exerciseSet: HadithExerciseSet;
@@ -98,64 +99,51 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
           const result = results[exerciseIndex];
           if (exercise.type === "single-choice" || exercise.type === "image-choice") {
             return (
-              <fieldset key={exercise.id} className="rounded-2xl border border-border p-4 sm:p-5">
-                <legend className="px-2 text-sm font-black">
-                  {exerciseIndex + 1}. {exercise.prompt}
-                </legend>
-                {exercise.type === "image-choice" && (
-                  <figure className="mx-auto mt-4 max-w-sm overflow-hidden rounded-2xl border border-border bg-muted shadow-wp-sm">
-                    <img
-                      src={resolveAssetUrl(`hadith/v1/images/${exercise.imageRef}.png`)}
-                      alt={t("hadith.practiceImageAlt")}
-                      className="aspect-[4/3] w-full object-cover"
-                      loading="lazy"
-                    />
-                    <figcaption className="p-3 text-center text-xs font-bold text-muted-foreground">
-                      {t("hadith.chooseMatchingWord")}
-                    </figcaption>
-                  </figure>
-                )}
-                <div className="mt-4 grid gap-3">
-                  {exercise.options.map((option) => {
-                    const selected = choices[exercise.id] === option.id;
-                    return (
-                      <button
-                        key={option.id}
-                        type="button"
-                        aria-pressed={selected}
-                        onClick={() => {
-                          const nextChoices = { ...choices, [exercise.id]: option.id };
-                          setChoices(nextChoices);
-                          publishScore(nextChoices, sequences);
-                        }}
-                        className={`min-h-12 rounded-xl border-2 px-4 text-start text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${selected ? "border-primary bg-primary/10" : "border-border hover:border-primary active:bg-muted"}`}
-                      >
-                        {option.label}
-                      </button>
-                    );
-                  })}
-                </div>
-                {result.answered && (
-                  <p
-                    className={`mt-4 flex gap-2 rounded-xl p-3 text-sm font-semibold ${result.correct ? "bg-feedback-success-surface text-feedback-success-foreground" : "bg-feedback-warning-surface text-feedback-warning-foreground"}`}
-                    role="status"
-                  >
-                    {result.correct ? (
-                      <Check className="size-5 shrink-0" aria-hidden />
-                    ) : (
-                      <X className="size-5 shrink-0" aria-hidden />
-                    )}
-                    <span>{exercise.feedback}</span>
-                  </p>
-                )}
-              </fieldset>
+              <QuizQuestionCard
+                key={exercise.id}
+                id={exercise.id}
+                index={exerciseIndex}
+                question={exercise.prompt}
+                value={choices[exercise.id]}
+                correctValue={exercise.answerId}
+                feedback={exercise.feedback}
+                onChange={(optionId) => {
+                  const nextChoices = { ...choices, [exercise.id]: optionId };
+                  setChoices(nextChoices);
+                  publishScore(nextChoices, sequences);
+                }}
+                options={exercise.options.map((option) => ({
+                  value: option.id,
+                  label: option.label,
+                  accessibleLabel: option.label,
+                }))}
+                media={
+                  exercise.type === "image-choice" ? (
+                    <figure className="mx-auto mt-4 max-w-sm overflow-hidden rounded-2xl border border-border bg-muted shadow-wp-sm">
+                      <img
+                        src={resolveAssetUrl(`hadith/v1/images/${exercise.imageRef}.png`)}
+                        alt={t("hadith.practiceImageAlt")}
+                        className="aspect-[4/3] w-full object-cover"
+                        loading="lazy"
+                      />
+                      <figcaption className="p-3 text-center text-xs font-bold text-muted-foreground">
+                        {t("hadith.chooseMatchingWord")}
+                      </figcaption>
+                    </figure>
+                  ) : undefined
+                }
+              />
             );
           }
 
           const selectedOrder = sequences[exercise.id] ?? [];
           const available = exercise.items.filter((item) => !selectedOrder.includes(item.id));
           return (
-            <fieldset key={exercise.id} className="rounded-2xl border border-border p-4 sm:p-5">
+            <fieldset
+              key={exercise.id}
+              data-quiz-question
+              className="rounded-2xl border border-border p-4 sm:p-5"
+            >
               <legend className="px-2 text-sm font-black">
                 {exerciseIndex + 1}. {exercise.prompt}
               </legend>
@@ -237,34 +225,6 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
           );
         })}
       </div>
-
-      {exerciseSet.lessonId === "hadith-01" && (
-        <section
-          className="mt-8 rounded-2xl border border-primary/25 bg-primary/5 p-4 sm:p-5"
-          aria-labelledby="hadith-discussion-heading"
-        >
-          <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
-            {t("hadith.discussionLabel")}
-          </p>
-          <h3 id="hadith-discussion-heading" className="mt-2 text-xl font-black">
-            {t("hadith.discussionTitle")}
-          </h3>
-          <p className="mt-2 text-sm text-muted-foreground">{t("hadith.discussionDescription")}</p>
-          <div className="mt-5 space-y-3">
-            {["one", "two"].map((question) => (
-              <details key={question} className="rounded-xl border border-border bg-card p-4">
-                <summary className="min-h-11 cursor-pointer list-none font-black focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
-                  {t(`hadith.discussion.${question}.question`)}{" "}
-                  <span className="ms-2 text-sm text-primary">{t("hadith.showSampleAnswer")}</span>
-                </summary>
-                <p className="mt-3 border-t border-border pt-3 text-sm leading-6 text-muted-foreground">
-                  {t(`hadith.discussion.${question}.answer`)}
-                </p>
-              </details>
-            ))}
-          </div>
-        </section>
-      )}
 
       <p className="mt-6 font-black text-primary" role="status" aria-live="polite">
         {t("hadith.practiceProgress", {

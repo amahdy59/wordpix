@@ -9,6 +9,7 @@ import { HADITH_AUDIO_ASSETS, HADITH_AUDIO_PROFILES } from "../learning/hadith/h
 import { audioKey } from "../shared/assetUrls";
 import { parseHadithVocabulary } from "../learning/hadith/HadithVocabularyStudy";
 import { HADITH_THEMES, getHadithTheme } from "../learning/hadith/hadithThemes";
+import { getHadithLessonThumbnail } from "../learning/hadith/figmaHadithCatalog";
 
 describe("Hadith curriculum", () => {
   it("imports all 42 Figma lessons and keeps each Hadith in one canonical source block", () => {
@@ -38,6 +39,15 @@ describe("Hadith curriculum", () => {
     expect(getHadithLesson("hadith-01")?.title).toBe("Actions and Intentions");
     expect(getHadithLesson("hadith-42")?.title).toBe("Hope, Prayer, and Forgiveness");
     expect(getHadithLesson("hadith-99")).toBeUndefined();
+  });
+
+  it("provides a real thumbnail asset for every Hadith lesson", () => {
+    for (const lesson of HADITH_LESSONS) {
+      expect(getHadithLessonThumbnail(lesson), lesson.id).toMatchObject({
+        imageRef: expect.stringMatching(/^[a-f0-9]+$/),
+        label: expect.any(String),
+      });
+    }
   });
 
   it("organizes every lesson into one stable thematic chapter", () => {

@@ -29,16 +29,91 @@ export const FIGMA_PRONUNCIATION_SOURCE = {
 
 export const FIGMA_PRONUNCIATION_LESSONS = FIGMA_PRONUNCIATION_SOURCE.lessons;
 
+export type ConsolidatedLegacyPronunciationTopic =
+  | "pronunciation-goals"
+  | "meaningful-contrasts"
+  | "clear-word-endings"
+  | "consonant-sequences"
+  | "word-stress"
+  | "syllable-prominence"
+  | "vowel-clarity"
+  | "important-information"
+  | "meaning-chunks"
+  | "connected-speech"
+  | "communication-repair"
+  | "pronunciation-portfolio";
+
+/**
+ * The revised eight-chapter pathway is the single pronunciation curriculum.
+ * `legacyTopics` records where the useful teaching goals from the retired
+ * Foundation Level 13 pilot now live, preventing them from being lost or
+ * accidentally reintroduced as a second course.
+ */
 export const PRONUNCIATION_CHAPTERS = [
-  { start: 1, end: 8, titleKey: "learn.pronunciationChapterContrast" },
-  { start: 9, end: 16, titleKey: "learn.pronunciationChapterConsonants" },
-  { start: 17, end: 24, titleKey: "learn.pronunciationChapterVowels" },
-  { start: 25, end: 32, titleKey: "learn.pronunciationChapterSyllables" },
-  { start: 33, end: 40, titleKey: "learn.pronunciationChapterConnected" },
-  { start: 41, end: 48, titleKey: "learn.pronunciationChapterStress" },
-  { start: 49, end: 58, titleKey: "learn.pronunciationChapterRhythm" },
-  { start: 59, end: 68, titleKey: "learn.pronunciationChapterTransfer" },
+  {
+    start: 1,
+    end: 8,
+    titleKey: "learn.pronunciationChapterContrast",
+    descriptionKey: "pronunciation.chapterDescriptionContrast",
+    legacyTopics: ["meaningful-contrasts"],
+  },
+  {
+    start: 9,
+    end: 16,
+    titleKey: "learn.pronunciationChapterConsonants",
+    descriptionKey: "pronunciation.chapterDescriptionConsonants",
+    legacyTopics: ["consonant-sequences"],
+  },
+  {
+    start: 17,
+    end: 24,
+    titleKey: "learn.pronunciationChapterVowels",
+    descriptionKey: "pronunciation.chapterDescriptionVowels",
+    legacyTopics: ["vowel-clarity"],
+  },
+  {
+    start: 25,
+    end: 32,
+    titleKey: "learn.pronunciationChapterSyllables",
+    descriptionKey: "pronunciation.chapterDescriptionSyllables",
+    legacyTopics: ["clear-word-endings"],
+  },
+  {
+    start: 33,
+    end: 40,
+    titleKey: "learn.pronunciationChapterConnected",
+    descriptionKey: "pronunciation.chapterDescriptionConnected",
+    legacyTopics: ["meaning-chunks", "connected-speech"],
+  },
+  {
+    start: 41,
+    end: 48,
+    titleKey: "learn.pronunciationChapterStress",
+    descriptionKey: "pronunciation.chapterDescriptionStress",
+    legacyTopics: ["word-stress", "syllable-prominence"],
+  },
+  {
+    start: 49,
+    end: 58,
+    titleKey: "learn.pronunciationChapterRhythm",
+    descriptionKey: "pronunciation.chapterDescriptionRhythm",
+    legacyTopics: ["important-information"],
+  },
+  {
+    start: 59,
+    end: 68,
+    titleKey: "learn.pronunciationChapterTransfer",
+    descriptionKey: "pronunciation.chapterDescriptionTransfer",
+    legacyTopics: ["pronunciation-goals", "communication-repair", "pronunciation-portfolio"],
+  },
 ] as const;
+
+const consolidatedLegacyTopics = new Set<ConsolidatedLegacyPronunciationTopic>(
+  PRONUNCIATION_CHAPTERS.flatMap((chapter) => chapter.legacyTopics)
+);
+if (consolidatedLegacyTopics.size !== 12) {
+  throw new Error("Every legacy pronunciation topic must be consolidated exactly once.");
+}
 
 export function getPronunciationChapter(number: number) {
   return (

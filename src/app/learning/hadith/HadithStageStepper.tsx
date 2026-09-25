@@ -1,4 +1,12 @@
-import { BookA, Check, CheckCircle2, Headphones, Mic, Target, type LucideIcon } from "lucide-react";
+import {
+  BookA,
+  Check,
+  CheckCircle2,
+  Headphones,
+  MessageCircle,
+  Target,
+  type LucideIcon,
+} from "lucide-react";
 import { useEffect, useRef } from "react";
 import { useI18n } from "../../../i18n";
 import { HADITH_STAGE_IDS, type HadithStageId } from "./hadithCurriculumStages";
@@ -13,7 +21,7 @@ const STAGE_ICONS: Record<HadithStageId, LucideIcon> = {
   "read-listen": Headphones,
   vocabulary: BookA,
   practice: CheckCircle2,
-  speak: Mic,
+  speak: MessageCircle,
   "check-review": Target,
 };
 

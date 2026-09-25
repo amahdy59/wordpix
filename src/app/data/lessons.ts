@@ -36764,7 +36764,7 @@ export interface CourseModule {
   titleAr: string;
   description: string;
   unitIds: string[];
-  curriculumKind?: "hadith" | "conversation";
+  curriculumKind?: "hadith" | "conversation" | "business";
   lessonCount?: number;
 }
 
@@ -37041,6 +37041,19 @@ export const COURSE_MODULES: CourseModule[] = [
     description:
       "40 substantive discussion units moving from expressing personal opinions to defending claims, analyzing assumptions, and navigating complex debates.",
     curriculumKind: "conversation",
+    lessonCount: 40,
+    unitIds: [],
+  },
+  {
+    id: "module-business",
+    level: 50,
+    isSpecialSection: true,
+    levelBadge: "B1–C2 · Beyond Business English",
+    title: "Beyond Business English (B1–C2)",
+    titleAr: "الإنجليزية المهنية المتقدمة (B1–C2)",
+    description:
+      "40 comprehensive workplace communication units spanning international onboarding, strategic negotiation, crisis communications, cross-cultural leadership, and executive presence.",
+    curriculumKind: "business",
     lessonCount: 40,
     unitIds: [],
   },

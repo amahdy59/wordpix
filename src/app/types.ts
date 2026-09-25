@@ -81,6 +81,12 @@ export type Screen =
       unitId: string;
       stage?: import("./learning/conversation/conversationTypes").ConversationStageId;
     }
+  | { id: "business-curriculum" }
+  | {
+      id: "business-lesson";
+      unitId: string;
+      stage?: import("./learning/business/businessTypes").BusinessStageId;
+    }
   | { id: "skill-hub" }
   | { id: "skill-exercise"; exerciseId: SkillExerciseId }
   | {
@@ -115,7 +121,8 @@ export type GoTarget =
   | "learning-materials"
   | "pronunciation-curriculum"
   | "hadith-curriculum"
-  | "conversation-curriculum";
+  | "conversation-curriculum"
+  | "business-curriculum";
 
 export type Action =
   | { type: "ONBOARD_NEXT" }
@@ -132,6 +139,11 @@ export type Action =
       type: "OPEN_CONVERSATION_LESSON";
       unitId: string;
       stage?: import("./learning/conversation/conversationTypes").ConversationStageId;
+    }
+  | {
+      type: "OPEN_BUSINESS_LESSON";
+      unitId: string;
+      stage?: import("./learning/business/businessTypes").BusinessStageId;
     }
   /**
    * `lessonId` is required, and deliberately so. It was optional, and three of

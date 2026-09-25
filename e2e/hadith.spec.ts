@@ -35,8 +35,8 @@ test("Hadith 2 practice provides ten questions and restores the next stage", asy
   await page.goto("/#/hadith/lesson-2");
   await page.getByRole("button", { name: /Practice/ }).click();
 
-  await page.getByRole("button", { name: "Jibril (Gabriel)", exact: true }).click();
-  await page.getByRole("button", { name: "Tell me and explain the topic", exact: true }).click();
+  await page.getByRole("radio", { name: "Jibril (Gabriel)", exact: true }).click();
+  await page.getByRole("radio", { name: "Tell me and explain the topic", exact: true }).click();
   for (const label of [
     "Arrival and scene",
     "Islam and its pillars",
@@ -51,7 +51,10 @@ test("Hadith 2 practice provides ten questions and restores the next stage", asy
   await page.waitForTimeout(700);
   await page.reload();
   await expect(page.getByText("Saved progress restored", { exact: true })).toBeVisible();
-  await expect(page.getByRole("button", { name: /Speak/ })).toHaveAttribute("aria-current", "step");
+  await expect(page.getByRole("button", { name: /Discussion/ })).toHaveAttribute(
+    "aria-current",
+    "step"
+  );
 });
 
 test("Hadith 1 pilot presents a complete visual and interactive learning flow", async ({
@@ -77,14 +80,18 @@ test("Hadith 1 pilot presents a complete visual and interactive learning flow", 
   ).toBeVisible();
 
   await page.getByRole("button", { name: /Practice/ }).click();
-  await expect(page.locator("fieldset")).toHaveCount(10);
+  await expect(page.locator("[data-quiz-question]")).toHaveCount(10);
   await expect(page.getByAltText("Vocabulary picture clue")).toBeVisible();
   await expect(
-    page.getByRole("group", { name: /What main message does the Hadith teach about an action/ })
+    page.getByRole("radiogroup", {
+      name: /What main message does the Hadith teach about an action/,
+    })
   ).toBeVisible();
+  await page.getByRole("button", { name: /Discussion/ }).click();
   await expect(
     page.getByRole("heading", { name: "Make the Hadith useful in your life" })
   ).toBeVisible();
+  await expect(page.getByText("Show sample answer", { exact: true })).toHaveCount(4);
 
   const results = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])

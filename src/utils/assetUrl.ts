@@ -29,7 +29,7 @@ export function resolveAssetUrl(path: string): string {
   if (
     import.meta.env.MODE !== "test" &&
     PUBLIC_ASSET_BASE_URL &&
-    /^(?:hadith|conversation)\/v1\/images\//.test(relative)
+    /^(?:hadith|conversation|business)\/v1\/(?:images|heroes)\//.test(relative)
   ) {
     return `${PUBLIC_ASSET_BASE_URL}/${relative}`;
   }

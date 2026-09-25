@@ -1,4 +1,4 @@
-import type { FoundationLessonId } from "./foundationCurriculum";
+import { isFoundationLessonId, type FoundationLessonId } from "./foundationCurriculum";
 
 export const FOUNDATION_PROGRESS_SCHEMA_VERSION = 1 as const;
 export const FOUNDATION_MASTERY_THRESHOLD = 80;
@@ -29,6 +29,7 @@ export function normalizeFoundationProgress(value: unknown): FoundationProgress 
 
   const normalized: FoundationProgress = {};
   for (const [lessonId, raw] of Object.entries(value)) {
+    if (!isFoundationLessonId(lessonId)) continue;
     if (!raw || typeof raw !== "object" || Array.isArray(raw)) continue;
     const record = raw as Partial<FoundationLessonProgress>;
     if (!isStatus(record.status)) continue;

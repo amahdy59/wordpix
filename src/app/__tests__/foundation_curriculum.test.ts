@@ -8,7 +8,6 @@ import {
   FOUNDATION_PICTURE_WORDS,
   FOUNDATION_STAGES,
   LEVEL_ONE_UNITS,
-  LEVEL_THIRTEEN_UNITS,
   LEVEL_ZERO_UNITS,
   getFoundationLesson,
 } from "../learning/foundations/foundationCurriculum";
@@ -36,15 +35,13 @@ describe("foundation curriculum", () => {
       "blend-and-segment",
     ]);
     expect(LEVEL_ONE_UNITS[0].lessons).toHaveLength(8);
-    expect(LEVEL_THIRTEEN_UNITS[0].lessons).toHaveLength(12);
-    expect(FOUNDATION_LESSONS).toHaveLength(28);
+    expect(FOUNDATION_LESSONS).toHaveLength(16);
   });
 
-  it("organizes every lesson once across the core and pronunciation tracks", () => {
+  it("organizes every lesson once across the two reading-foundation stages", () => {
     expect(FOUNDATION_STAGES.map((stage) => stage.title)).toEqual([
       "Listening foundations",
       "First letters and words",
-      "Pronunciation and comprehensibility",
     ]);
     const stagedLessonIds: string[] = [];
     for (const stage of FOUNDATION_STAGES) {
@@ -118,8 +115,8 @@ describe("foundation curriculum", () => {
 
   it("provides valid local picture-word previews for every illustrated lesson", () => {
     const pictureWords = Object.values(FOUNDATION_PICTURE_WORDS).flat();
-    expect(Object.keys(FOUNDATION_PICTURE_WORDS)).toHaveLength(24);
-    expect(pictureWords.length).toBeGreaterThanOrEqual(70);
+    expect(Object.keys(FOUNDATION_PICTURE_WORDS)).toHaveLength(12);
+    expect(pictureWords.length).toBeGreaterThanOrEqual(40);
 
     for (const picture of pictureWords) {
       expect(picture.src).toMatch(/\.(?:avif|png|webp)$/);
@@ -141,7 +138,7 @@ describe("foundation curriculum", () => {
       ])
     );
 
-    expect(texts.size).toBeGreaterThanOrEqual(175);
+    expect(texts.size).toBeGreaterThanOrEqual(100);
     for (const text of texts) {
       const key = await audioKey(text);
       expect(key).not.toBeNull();
@@ -151,57 +148,13 @@ describe("foundation curriculum", () => {
     }
   });
 
-  it("keeps the pronunciation pilot qualitative and accent affirming", () => {
-    const lessons = LEVEL_THIRTEEN_UNITS[0].lessons;
-    expect(lessons).toHaveLength(12);
-    for (const lesson of lessons) {
-      expect(lesson.completionMode).toBe("qualitative-routing");
-      expect(lesson.masteryThreshold).toBe(0);
-      expect(lesson.reviewStatus).toBe("pilot");
-      expect(lesson.evidenceDimensions.length).toBeGreaterThan(1);
-      expect(lesson.nonGoals.join(" ")).toMatch(/accent|speed|diagnos/i);
-    }
-  });
-
-  it("ends every pronunciation lesson with an independent check and a cumulative final check", () => {
-    const lessons = LEVEL_THIRTEEN_UNITS[0].lessons;
-    expect(lessons.every((lesson) => lesson.questions.length >= 3)).toBe(true);
-
-    const finalCheck = getFoundationLesson("pronunciation-portfolio");
-    expect(finalCheck.title).toContain("Pronunciation Communication Check");
-    expect(finalCheck.questions).toHaveLength(7);
-    expect(finalCheck.evidenceDimensions).toEqual([
-      "sound contrasts",
-      "meaningful endings",
-      "word stress",
-      "information focus",
-      "meaning chunks",
-      "intonation",
-      "communication repair",
-    ]);
-    expect(
-      LEVEL_THIRTEEN_UNITS[0].lessons
-        .flatMap((lesson) => lesson.questions)
-        .filter((question) => question.responseMode === "rhythm")
-    ).toHaveLength(3);
-    expect(
-      LEVEL_THIRTEEN_UNITS[0].lessons
-        .flatMap((lesson) => lesson.questions)
-        .filter((question) => question.responseMode === "ordering")
-    ).toHaveLength(2);
-  });
-
-  it("uses visual, action-led practice instead of policy lectures in pronunciation lessons", () => {
-    const questions = LEVEL_THIRTEEN_UNITS[0].lessons.flatMap((lesson) => lesson.questions);
+  it("uses visual, action-led practice throughout the reading foundations", () => {
+    const questions = FOUNDATION_LESSONS.flatMap((lesson) => lesson.questions);
     const photoQuestions = questions.filter((question) =>
       question.options.some((option) => option.mediaKind === "photo")
     );
 
     expect(photoQuestions.length).toBeGreaterThanOrEqual(24);
-    expect(questions.every((question) => !question.prompt.trim().endsWith("?"))).toBe(true);
-    expect(questions.map((question) => question.prompt).join(" ")).not.toMatch(
-      /what evidence|what should|which idea respects|who helps/i
-    );
   });
 
   it("keeps spoken answer choices interactive instead of narrating option numbers", () => {

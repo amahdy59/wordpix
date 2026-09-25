@@ -26,10 +26,10 @@ import { isUnitLoaded, loadUnitVocabulary } from "../data/vocabulary";
 
 /** The unit a screen belongs to, or null if the screen is not unit-scoped. */
 export function unitIdForScreen(screen: Screen): string | null {
-  // Conversation units own a separate curriculum catalogue and never depend
+  // Conversation and Business units own separate curriculum catalogues and never depend
   // on the visual-vocabulary chunks. Treating `unit-01` as a vocabulary unit
   // leaves the route behind this gate forever because no such loader exists.
-  if (screen.id === "conversation-lesson") return null;
+  if (screen.id === "conversation-lesson" || screen.id === "business-lesson") return null;
   if ("unitId" in screen && screen.unitId) return screen.unitId;
   if ("lessonId" in screen && screen.lessonId) return resolveUnitForLesson(screen.lessonId).id;
 
