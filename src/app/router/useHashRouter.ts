@@ -6,7 +6,10 @@ import {
   getFoundationLesson,
   isFoundationLessonId,
 } from "../learning/foundations/foundationCurriculum";
-import { getFigmaPronunciationLesson } from "../learning/foundations/figmaPronunciationCatalog";
+import {
+  PRONUNCIATION_LESSON_COUNT,
+  getPronunciationLessonMetadata,
+} from "../learning/foundations/pronunciationLessonMetadata";
 import { LEGACY_PRONUNCIATION_LESSON_NUMBERS } from "../learning/foundations/pronunciationProgress";
 import {
   HADITH_LESSON_COUNT,
@@ -153,7 +156,7 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
     return { hash: "#/pronunciation", title: "WordPix — Pronunciation Curriculum" };
   }
   if (screen.id === "figma-pronunciation-lesson") {
-    const lesson = getFigmaPronunciationLesson(screen.lessonNumber);
+    const lesson = getPronunciationLessonMetadata(screen.lessonNumber);
     return {
       hash: `#/pronunciation/lesson-${String(lesson.number).padStart(2, "0")}`,
       title: `WordPix — ${lesson.sourceName}`,
@@ -213,7 +216,7 @@ export function hashToRoute(hash: string): RouteIntent | null {
     ? LEGACY_PRONUNCIATION_LESSON_NUMBERS[requestedFoundationId]
     : undefined;
   if (consolidatedLessonNumber) {
-    const lesson = getFigmaPronunciationLesson(consolidatedLessonNumber);
+    const lesson = getPronunciationLessonMetadata(consolidatedLessonNumber);
     return {
       kind: "screen",
       screen: { id: "figma-pronunciation-lesson", lessonNumber: consolidatedLessonNumber },
@@ -232,8 +235,12 @@ export function hashToRoute(hash: string): RouteIntent | null {
   const figmaMatch = normalized.match(FIGMA_PRONUNCIATION_PATTERN);
   if (figmaMatch) {
     const lessonNumber = Number(figmaMatch[1]);
-    if (Number.isInteger(lessonNumber) && lessonNumber >= 1 && lessonNumber <= 68) {
-      const lesson = getFigmaPronunciationLesson(lessonNumber);
+    if (
+      Number.isInteger(lessonNumber) &&
+      lessonNumber >= 1 &&
+      lessonNumber <= PRONUNCIATION_LESSON_COUNT
+    ) {
+      const lesson = getPronunciationLessonMetadata(lessonNumber);
       return {
         kind: "screen",
         screen: { id: "figma-pronunciation-lesson", lessonNumber },

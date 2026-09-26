@@ -8,6 +8,7 @@ import { PlaybackSpeedControl } from "../../../shared/PlaybackSpeedControl";
 import { LanguageToggle } from "../../../shared/BilingualText";
 import { CurriculumVocabularyTable } from "../../../shared/CurriculumVocabularyTable";
 import type { VocabularyTableItem } from "../../../shared/CurriculumVocabularyTable";
+import { getCurriculumAudioKey } from "../../shared/curriculumAudioManifest";
 import { useState } from "react";
 
 interface Props {
@@ -35,7 +36,7 @@ export function LanguageBankStage({ unit, onNext, onPrev }: Props) {
       return;
     }
     setActiveAudioText(term);
-    audio.speak(term);
+    audio.speak(term, undefined, getCurriculumAudioKey(term) ?? undefined);
     setAudioStatus("");
   };
 

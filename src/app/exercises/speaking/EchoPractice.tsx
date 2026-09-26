@@ -161,7 +161,7 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
                       <span
                         className={`text-xs font-black px-2.5 py-1 rounded-full ${
                           attempt.accuracy >= 75
-                            ? "bg-wp-green text-white"
+                            ? "bg-wp-green text-wp-text-on-green"
                             : "bg-wp-amber text-wp-text-on-amber"
                         }`}
                       >

@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { Layers, ArrowRight, CheckCircle2 } from "lucide-react";
+import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
 
 interface Props {
@@ -70,6 +71,7 @@ function parseUsageCards(details: string[]): UsageMatrixCard[] {
 }
 
 export function BusinessUsageStage({ unit, onNext }: Props) {
+  const { t } = useI18n();
   const matrixCards = useMemo(
     () => parseUsageCards(unit.usageFocus.details),
     [unit.usageFocus.details]
@@ -81,10 +83,10 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
       <div className="flex items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
           <Layers className="size-4" aria-hidden />
-          Stage 4 · Usage Focus
+          {t("business.usage.stageTag")}
         </span>
         <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
-          {unit.level} · Functional Pattern
+          {t("business.usage.functionalPatternTag", { level: unit.level })}
         </span>
       </div>
 
@@ -94,13 +96,14 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
         aria-labelledby="usage-focus-title"
       >
         <p className="text-xs font-black uppercase tracking-widest text-primary">
-          Linguistic Framework
+          {t("business.usage.linguisticFramework")}
         </p>
         <h1
           id="usage-focus-title"
           className="mt-2 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
         >
-          {unit.usageFocus.title.replace(/^4\.\s*Usage Focus\s*[-—]?\s*/i, "") || "Usage Focus"}
+          {unit.usageFocus.title.replace(/^4\.\s*Usage Focus\s*[-—]?\s*/i, "") ||
+            t("business.stages.usage")}
         </h1>
         {unit.usageFocus.description && (
           <p className="mt-3 text-base font-medium text-muted-foreground leading-relaxed whitespace-pre-line">
@@ -131,7 +134,7 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
                 {card.context && (
                   <div className="mt-3">
                     <span className="block text-[10px] font-black uppercase tracking-widest text-muted-foreground">
-                      Context / Function
+                      {t("business.usage.contextFunctionLabel")}
                     </span>
                     <p className="mt-0.5 text-sm font-bold text-foreground">{card.context}</p>
                   </div>
@@ -139,7 +142,7 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
               </div>
 
               <div className="rounded-xl bg-card p-3.5 border border-border/70 text-sm font-medium text-foreground/90 italic font-serif leading-relaxed">
-                “{card.example}”
+                {`“${card.example}”`}
               </div>
             </div>
           ))}
@@ -153,7 +156,7 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
           onClick={onNext}
           className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
-          <span>Continue to Practice Exercises</span>
+          <span>{t("business.usage.continueToExercises")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
       </div>

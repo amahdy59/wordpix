@@ -282,7 +282,7 @@ export function StudyHome({
                             <span
                               className={`size-5 rounded-full border flex items-center justify-center shrink-0 transition-colors ${
                                 isDone
-                                  ? "border-wp-green bg-wp-green text-white"
+                                  ? "border-wp-green bg-wp-green text-wp-text-on-green"
                                   : "border-border group-hover:border-primary/50"
                               }`}
                             >

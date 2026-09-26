@@ -1,4 +1,4 @@
-﻿import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { CheckCircle2, XCircle, Check, HelpCircle } from "lucide-react";
 import type { SessionPhase } from "./types";
 import { useI18n } from "../../../context/I18nContext";
@@ -136,7 +136,7 @@ export function MultipleChoiceQuiz({
                 <div
                   className={`size-6 rounded-full border flex items-center justify-center shrink-0 text-xs font-bold ${
                     visualState === "correct"
-                      ? "border-wp-green bg-wp-green text-white"
+                      ? "border-wp-green bg-wp-green text-wp-text-on-green"
                       : visualState === "wrong"
                         ? "border-destructive/40 bg-destructive/10 text-destructive"
                         : "border-border text-muted-foreground bg-secondary/50"

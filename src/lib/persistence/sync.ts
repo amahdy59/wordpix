@@ -93,14 +93,18 @@ async function processOperation(op: SyncOperation, userId: string) {
         .eq("id", userId);
       if (profileError) throw profileError;
 
-      // 3. Update word memory for each word
-      for (const [wordId, state] of Object.entries(op.payload.wordMemory)) {
-        const { error: wordError } = await supabase.from("word_memory").upsert({
-          user_id: userId,
-          word_id: wordId, // Composite primary key (user_id, word_id)
-          state: state,
-          updated_at: new Date().toISOString(),
-        });
+      // 3. Batch upsert word memory for all words in a single request
+      const nowIso = new Date().toISOString();
+      const wordMemoryEntries = Object.entries(op.payload.wordMemory).map(([wordId, state]) => ({
+        user_id: userId,
+        word_id: wordId, // Composite primary key (user_id, word_id)
+        state: state,
+        updated_at: nowIso,
+      }));
+      if (wordMemoryEntries.length > 0) {
+        const { error: wordError } = await supabase
+          .from("word_memory")
+          .upsert(wordMemoryEntries, { onConflict: "user_id,word_id" });
         if (wordError) throw wordError;
       }
       break;

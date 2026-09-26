@@ -1,10 +1,13 @@
-import { memo, useState } from "react";
+import { lazy, memo, Suspense, useState } from "react";
 import { BookOpen, Sliders } from "lucide-react";
 import type { TabId, Action } from "../types";
 import { ThemeToggle } from "./ThemeToggle";
-import { SettingsModal } from "../core/SettingsModal";
 import { TABS } from "./BottomTabBar";
 import { useI18n } from "../context/I18nContext";
+
+const SettingsModal = lazy(() =>
+  import("../core/SettingsModal").then((m) => ({ default: m.SettingsModal }))
+);
 
 interface Props {
   activeTab: TabId;
@@ -21,7 +24,11 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
                  w-[240px] shrink-0 h-dvh sticky top-0 start-0 overflow-y-auto py-8 justify-between select-none z-30"
       aria-label="Sidebar navigation"
     >
-      <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
+      {showSettingsModal && (
+        <Suspense fallback={null}>
+          <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
+        </Suspense>
+      )}
 
       {/* Top Brand Logo */}
       <div className="flex flex-col items-stretch px-6 gap-6">

@@ -8,6 +8,8 @@
     "assets:cors": "node scripts/setup_r2_cors.cjs",
     "assets:cors:check": "node scripts/setup_r2_cors.cjs --check",
     "assets:upload": "node scripts/upload_assets.cjs",
+    "audio:curriculum:plan": "node scripts/generate_curriculum_words_audio.cjs --dry-run",
+    "audio:curriculum:generate": "node scripts/generate_curriculum_words_audio.cjs",
     "audio:foundations:build": "node --experimental-strip-types scripts/build_foundation_audio_corpus.ts",
     "audio:foundations:generate": "node scripts/generate_foundation_audio.cjs",
     "audio:hadith:plan": "node scripts/generate_hadith_audio.cjs --dry-run",

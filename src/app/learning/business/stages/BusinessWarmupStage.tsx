@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MessageSquare, ArrowRight, HelpCircle, CheckCircle2 } from "lucide-react";
+import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
 
 interface Props {
@@ -10,6 +11,7 @@ interface Props {
 }
 
 export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext }: Props) {
+  const { t } = useI18n();
   const [notes, setNotes] = useState<Record<string, string>>(savedNotes);
 
   const handleNoteChange = (id: string, text: string) => {
@@ -23,10 +25,10 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
       <div className="flex items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
           <MessageSquare className="size-4" aria-hidden />
-          Stage 1 · Warm-Up Discussions
+          {t("business.warmup.stageTag")}
         </span>
         <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
-          {unit.level} · {unit.sectionTitle}
+          {`${unit.level} · ${unit.sectionTitle}`}
         </span>
       </div>
 
@@ -48,19 +50,21 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
         )}
         <div className="p-6 sm:p-8">
           <p className="text-xs font-black uppercase tracking-widest text-primary">
-            Essential Question
+            {t("business.warmup.essentialQuestion")}
           </p>
           <h1
             id="big-question-heading"
             className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-black text-foreground tracking-tight leading-snug"
           >
-            “{unit.essentialQuestion}”
+            {`“${unit.essentialQuestion}”`}
           </h1>
           {unit.speakingGoal && (
             <div className="mt-4 flex items-start gap-2.5 rounded-xl bg-primary/10 p-3.5 text-sm font-semibold text-primary">
               <CheckCircle2 className="size-5 shrink-0 mt-0.5" aria-hidden />
               <div>
-                <span className="font-black uppercase tracking-wide me-1.5">Speaking Goal:</span>
+                <span className="font-black uppercase tracking-wide me-1.5">
+                  {t("business.warmup.speakingGoalLabel")}
+                </span>
                 <span>{unit.speakingGoal}</span>
               </div>
             </div>
@@ -76,7 +80,7 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
         <div className="flex items-center gap-2">
           <HelpCircle className="size-5 text-primary" aria-hidden />
           <h2 id="reflection-prompts-title" className="text-lg font-black text-foreground">
-            Reflect on Prior Workplace Experience
+            {t("business.warmup.reflectHeading")}
           </h2>
         </div>
         <p className="mt-2 text-sm text-muted-foreground font-medium">{unit.warmup.instructions}</p>
@@ -117,7 +121,7 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
           onClick={onNext}
           className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
-          <span>Continue to Case Scenario</span>
+          <span>{t("business.warmup.continueToScenario")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
       </div>

@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import { memo, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { WordImage } from "../shared/WordImage";
 import { BEDROOM_VOCABULARY } from "../data/lessons";
@@ -56,12 +56,21 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
   const [correctCount, setCorrectCount] = useState(0);
   const containerRef = useModalA11y({ isOpen, onDismiss: onClose });
 
-  if (!isOpen) return null;
-
-  const currentQ = QUESTIONS[stepIndex];
+  const currentQ = QUESTIONS[stepIndex] ?? QUESTIONS[0];
   const targetWord =
     PLACEMENT_VOCABULARY.find((v) => v.id === currentQ.targetId) ?? PLACEMENT_VOCABULARY[0];
-  const options = PLACEMENT_VOCABULARY.slice(0, 4);
+  const options = useMemo(() => {
+    const distractors = PLACEMENT_VOCABULARY.filter((v) => v.id !== targetWord.id);
+    const selectedDistractors = distractors.slice(stepIndex * 2, stepIndex * 2 + 3);
+    const finalDistractors =
+      selectedDistractors.length === 3 ? selectedDistractors : distractors.slice(0, 3);
+    const targetPos = stepIndex % 4;
+    const result = [...finalDistractors];
+    result.splice(targetPos, 0, targetWord);
+    return result;
+  }, [targetWord, stepIndex]);
+
+  if (!isOpen) return null;
 
   const handleSelectOption = (wordId: string) => {
     const isCorrect = wordId === targetWord.id;

@@ -11,6 +11,7 @@ import {
   CheckCircle2,
   Lock,
 } from "lucide-react";
+import { useI18n } from "../../../i18n";
 import type { BusinessStageId } from "./businessTypes";
 
 interface Props {
@@ -26,17 +27,82 @@ export const STAGE_CONFIG: {
   id: BusinessStageId;
   label: string;
   shortLabel: string;
+  labelKey: string;
+  shortLabelKey: string;
   icon: React.ComponentType<{ className?: string }>;
 }[] = [
-  { id: "recall", label: "Quick Recall", shortLabel: "Recall", icon: Zap },
-  { id: "warmup", label: "Warm-Up", shortLabel: "Warm-Up", icon: MessageSquare },
-  { id: "input", label: "Main Input", shortLabel: "Input", icon: BookOpen },
-  { id: "vocabulary", label: "Language Bank", shortLabel: "Vocab", icon: Sparkles },
-  { id: "usage", label: "Usage Focus", shortLabel: "Usage", icon: Layers },
-  { id: "exercises", label: "Exercise Set", shortLabel: "Quiz", icon: HelpCircle },
-  { id: "discussion", label: "Discussion", shortLabel: "Discuss", icon: MessageSquareText },
-  { id: "speaking", label: "Speaking Task", shortLabel: "Speak", icon: Mic },
-  { id: "review", label: "Review & Recycling", shortLabel: "Review", icon: Award },
+  {
+    id: "recall",
+    label: "Quick Recall",
+    shortLabel: "Recall",
+    labelKey: "business.stages.recall",
+    shortLabelKey: "business.stagesShort.recall",
+    icon: Zap,
+  },
+  {
+    id: "warmup",
+    label: "Warm-Up",
+    shortLabel: "Warm-Up",
+    labelKey: "business.stages.warmup",
+    shortLabelKey: "business.stagesShort.warmup",
+    icon: MessageSquare,
+  },
+  {
+    id: "input",
+    label: "Main Input",
+    shortLabel: "Input",
+    labelKey: "business.stages.input",
+    shortLabelKey: "business.stagesShort.input",
+    icon: BookOpen,
+  },
+  {
+    id: "vocabulary",
+    label: "Language Bank",
+    shortLabel: "Vocab",
+    labelKey: "business.stages.vocabulary",
+    shortLabelKey: "business.stagesShort.vocabulary",
+    icon: Sparkles,
+  },
+  {
+    id: "usage",
+    label: "Usage Focus",
+    shortLabel: "Usage",
+    labelKey: "business.stages.usage",
+    shortLabelKey: "business.stagesShort.usage",
+    icon: Layers,
+  },
+  {
+    id: "exercises",
+    label: "Exercise Set",
+    shortLabel: "Quiz",
+    labelKey: "business.stages.exercises",
+    shortLabelKey: "business.stagesShort.exercises",
+    icon: HelpCircle,
+  },
+  {
+    id: "discussion",
+    label: "Discussion",
+    shortLabel: "Discuss",
+    labelKey: "business.stages.discussion",
+    shortLabelKey: "business.stagesShort.discussion",
+    icon: MessageSquareText,
+  },
+  {
+    id: "speaking",
+    label: "Speaking Task",
+    shortLabel: "Speak",
+    labelKey: "business.stages.speaking",
+    shortLabelKey: "business.stagesShort.speaking",
+    icon: Mic,
+  },
+  {
+    id: "review",
+    label: "Review & Recycling",
+    shortLabel: "Review",
+    labelKey: "business.stages.review",
+    shortLabelKey: "business.stagesShort.review",
+    icon: Award,
+  },
 ];
 
 export function BusinessStageStepper({
@@ -47,6 +113,7 @@ export function BusinessStageStepper({
   isMastered = false,
   maxUnlockedIndex = 99,
 }: Props) {
+  const { t } = useI18n();
   const completedSet = new Set(completedStages);
 
   const stagesToRender = availableStages
@@ -59,7 +126,7 @@ export function BusinessStageStepper({
     <>
       {/* Mobile / Tablet Horizontal Stepper (< 1024px) */}
       <nav
-        aria-label="Lesson Stage Progress"
+        aria-label={t("business.stepperMobileAria")}
         className="flex lg:hidden w-full items-center gap-1.5 overflow-x-auto p-2 bg-card border-b border-border shadow-wp-xs"
       >
         {stagesToRender.map((stage, idx) => {
@@ -74,6 +141,7 @@ export function BusinessStageStepper({
               key={stage.id}
               type="button"
               disabled={isLocked}
+              aria-current={isCurrent ? "step" : undefined}
               onClick={() => onSelectStage(idx)}
               className={`flex min-h-[44px] items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
                 isCurrent
@@ -92,9 +160,7 @@ export function BusinessStageStepper({
               ) : (
                 <Icon className="size-3.5 shrink-0" aria-hidden />
               )}
-              <span>
-                {displayNum}. {stage.shortLabel}
-              </span>
+              <span>{`${displayNum}. ${t(stage.shortLabelKey)}`}</span>
             </button>
           );
         })}
@@ -102,15 +168,15 @@ export function BusinessStageStepper({
 
       {/* Desktop Vertical Sidebar (>= 1024px) */}
       <nav
-        aria-label="Lesson Path Steps"
+        aria-label={t("business.stepperNavAria")}
         className="hidden lg:flex flex-col gap-2 w-64 shrink-0 rounded-3xl border border-border bg-card p-4 shadow-wp-xs sticky top-4 h-fit"
       >
         <div className="px-3 py-2">
           <p className="text-xs font-black uppercase tracking-widest text-muted-foreground">
-            Lesson Path
+            {t("business.stepperTitle")}
           </p>
           <p className="text-sm font-black text-foreground mt-0.5">
-            {stagesToRender.length}-Step Progressive Arc
+            {t("business.stepperSubtitle", { count: stagesToRender.length })}
           </p>
         </div>
 
@@ -127,6 +193,7 @@ export function BusinessStageStepper({
                 key={stage.id}
                 type="button"
                 disabled={isLocked}
+                aria-current={isCurrent ? "step" : undefined}
                 onClick={() => onSelectStage(idx)}
                 className={`flex min-h-[44px] items-center justify-between gap-3 px-3.5 py-2.5 rounded-2xl text-start text-sm font-bold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
                   isCurrent
@@ -150,7 +217,7 @@ export function BusinessStageStepper({
                   >
                     {displayNum}
                   </span>
-                  <span className="truncate">{stage.label}</span>
+                  <span className="truncate">{t(stage.labelKey)}</span>
                 </div>
 
                 {isDone ? (

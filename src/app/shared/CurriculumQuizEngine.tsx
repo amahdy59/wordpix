@@ -174,7 +174,7 @@ export function CurriculumQuizEngine({
           >
             <span className="text-5xl font-black text-primary">{pct}%</span>
             <span className="text-sm font-semibold text-muted-foreground">
-              {correct} / {total} correct
+              {t("quiz.scoreSummary", { correct, total })}
             </span>
           </div>
 

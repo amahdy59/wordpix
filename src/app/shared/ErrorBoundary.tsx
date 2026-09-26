@@ -38,7 +38,11 @@ export class ErrorBoundary extends Component<Props, State> {
   private handleClearAndReload = (): void => {
     try {
       localStorage.removeItem("wordpix:learner-state:v4");
+      localStorage.removeItem("wordpix:learner:v2");
       sessionStorage.clear();
+      if (typeof indexedDB !== "undefined") {
+        indexedDB.deleteDatabase("wordpix_offline_db");
+      }
       window.location.hash = "#/home";
     } catch {
       // ignore

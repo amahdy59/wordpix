@@ -1,8 +1,11 @@
-import { memo, useState } from "react";
+import { lazy, memo, Suspense, useState } from "react";
 import { BookOpen, Sliders } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
-import { SettingsModal } from "../core/SettingsModal";
 import type { Action } from "../types";
+
+const SettingsModal = lazy(() =>
+  import("../core/SettingsModal").then((m) => ({ default: m.SettingsModal }))
+);
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -18,7 +21,11 @@ export const MobileHeader = memo(function MobileHeader({ dispatch }: Props) {
 
   return (
     <>
-      <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
+      {showSettingsModal && (
+        <Suspense fallback={null}>
+          <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
+        </Suspense>
+      )}
 
       {/*
         The safe-area inset is folded into the height rather than bought with

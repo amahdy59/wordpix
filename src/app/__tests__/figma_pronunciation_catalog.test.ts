@@ -7,6 +7,7 @@ import {
   getFigmaPronunciationLesson,
   getPronunciationContrastPartner,
   getPronunciationQuestion,
+  getStressBeatPattern,
 } from "../learning/foundations/figmaPronunciationCatalog";
 import {
   getPronunciationAudioClip,
@@ -144,5 +145,17 @@ describe("Figma pronunciation source", () => {
       expect(roles).toEqual(new Set(["teach", "guided", "independent", "transfer"]));
       expect(lesson.images.every((item) => /^[0-9a-f]{40}$/i.test(item.imageRef))).toBe(true);
     }
+  });
+
+  it("derives rhythmic syllable stress patterns for Chapter 6 lessons", () => {
+    expect(getStressBeatPattern(41, "table")).toBe("● ·");
+    expect(getStressBeatPattern(41, "doctor")).toBe("● ·");
+    expect(getStressBeatPattern(43, "about")).toBe("· ●");
+    expect(getStressBeatPattern(43, "ago")).toBe("· ●");
+    expect(getStressBeatPattern(43, "sofa")).toBe("● ·");
+    expect(getStressBeatPattern(44, "PHOtograph")).toBe("● ·");
+    expect(getStressBeatPattern(44, "phoTOGraphy")).toBe("· ●");
+    expect(getStressBeatPattern(1, "sheep")).toBeUndefined();
+    expect(getStressBeatPattern(9, "pat")).toBeUndefined();
   });
 });

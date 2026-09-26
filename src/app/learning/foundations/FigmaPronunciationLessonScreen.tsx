@@ -20,6 +20,7 @@ import {
   getFigmaPronunciationActivityData,
   pronunciationImagePath,
   getPronunciationQuestion,
+  getStressBeatPattern,
   type FigmaPronunciationImage,
 } from "./figmaPronunciationCatalog";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
@@ -39,6 +40,31 @@ const EMPTY_CHOICES: readonly FigmaPronunciationImage[] = [];
 
 function imageFor(item: FigmaPronunciationImage) {
   return resolveAssetUrl(pronunciationImagePath(item.imageRef));
+}
+
+function getCueBadge(cue: string): { labelKey: string; icon: string } | null {
+  const lower = cue.toLowerCase();
+  if (lower.includes("lip")) return { labelKey: "pronunciation.cueLips", icon: "👄" };
+  if (lower.includes("tongue") || lower.includes("palate") || lower.includes("alveolar"))
+    return { labelKey: "pronunciation.cueTongue", icon: "👅" };
+  if (lower.includes("voice") || lower.includes("vibrat") || lower.includes("throat"))
+    return { labelKey: "pronunciation.cueVocalCords", icon: "🎙️" };
+  if (
+    lower.includes("air") ||
+    lower.includes("breath") ||
+    lower.includes("puff") ||
+    lower.includes("pop")
+  )
+    return { labelKey: "pronunciation.cueAirflow", icon: "💨" };
+  if (
+    lower.includes("stress") ||
+    lower.includes("syllable") ||
+    lower.includes("beat") ||
+    lower.includes("pitch")
+  )
+    return { labelKey: "pronunciation.cueRhythmStress", icon: "🎵" };
+  if (lower.includes("jaw")) return { labelKey: "pronunciation.cueJaw", icon: "↕️" };
+  return null;
 }
 
 export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props) {
@@ -287,17 +313,19 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 </p>
                 <div className="mt-4 grid gap-3">
                   {activity.reviewSentences.map((sentence) => (
-                    <button
-                      key={sentence}
-                      type="button"
-                      onClick={() => speak(sentence)}
-                      className="flex min-h-11 items-center gap-3 rounded-xl border border-border bg-card p-3 text-start font-bold hover:border-primary focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                      lang="en"
-                      dir="ltr"
-                    >
-                      <Volume2 className="size-5 shrink-0 text-primary" aria-hidden />
-                      {sentence}
-                    </button>
+                    <div key={sentence} className="space-y-2">
+                      <button
+                        type="button"
+                        onClick={() => speak(sentence)}
+                        className="flex min-h-11 w-full items-center gap-3 rounded-xl border border-border bg-card p-3 text-start font-bold hover:border-primary focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                        lang="en"
+                        dir="ltr"
+                      >
+                        <Volume2 className="size-5 shrink-0 text-primary" aria-hidden />
+                        {sentence}
+                      </button>
+                      <PrivateRecordCompare target={sentence} />
+                    </div>
                   ))}
                 </div>
               </section>
@@ -630,18 +658,38 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                       {t("pronunciation.articulationTitle")}
                     </h4>
                     <ul className="mt-2 grid gap-2" lang="en" dir="ltr">
-                      {activity.articulationCues.map((cue) => (
-                        <li
-                          key={cue}
-                          className="flex gap-2 rounded-xl border border-border bg-card p-3 text-sm leading-6 text-foreground"
-                        >
-                          <span
-                            className="mt-2 size-2 shrink-0 rounded-full bg-primary"
-                            aria-hidden
-                          />
-                          <span>{cue}</span>
-                        </li>
-                      ))}
+                      {activity.articulationCues.map((cue) => {
+                        const badge = getCueBadge(cue);
+                        return (
+                          <li
+                            key={cue}
+                            className="flex flex-col gap-2 rounded-xl border border-border bg-card p-3 text-sm leading-6 text-foreground"
+                          >
+                            <div className="flex items-center justify-between gap-2">
+                              {badge ? (
+                                <span className="inline-flex items-center gap-1.5 text-xs font-black text-primary">
+                                  <span aria-hidden>{badge.icon}</span>
+                                  <span>{t(badge.labelKey)}</span>
+                                </span>
+                              ) : (
+                                <span
+                                  className="size-2 shrink-0 rounded-full bg-primary"
+                                  aria-hidden
+                                />
+                              )}
+                              <button
+                                type="button"
+                                onClick={() => speak(cue)}
+                                className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-primary"
+                              >
+                                <Volume2 className="size-3.5" aria-hidden />
+                                {t("pronunciation.listenToContrast")}
+                              </button>
+                            </div>
+                            <span>{cue}</span>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 )}
@@ -693,21 +741,34 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                     <img
                       src={imageFor(item)}
                       alt=""
-                      className="block aspect-[16/9] w-full object-cover"
+                      className="block aspect-[16/9] w-full object-cover transition-opacity duration-300"
                       aria-hidden
                     />
                     <span className="flex min-h-11 items-center justify-center gap-2 px-3 py-2 text-center text-base font-black">
                       {answer === item.label && passed && (
                         <Check className="size-5 shrink-0" aria-hidden />
                       )}
-                      {item.label}
+                      <span>{item.label}</span>
+                      {(() => {
+                        const beat = getStressBeatPattern(lessonNumber, item.label);
+                        return beat ? (
+                          <span
+                            className="ms-1 rounded-md bg-primary/10 px-2 py-0.5 font-mono text-xs font-bold text-primary"
+                            aria-label={t("pronunciation.rhythmBeatAria", { beat })}
+                          >
+                            {beat}
+                          </span>
+                        ) : null;
+                      })()}
                     </span>
                   </button>
                 ))}
               </div>
             </>
           )}
-          {stage === 3 && <PrivateRecordCompare target={target?.label ?? activity.model} />}
+          {(stage === 3 || stage === 4) && (
+            <PrivateRecordCompare target={target?.label ?? activity.model} />
+          )}
           {answer && (
             <div
               role={passed ? "status" : "alert"}
@@ -740,9 +801,19 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               className="mt-3 rounded-2xl border border-primary/30 bg-primary/5 p-4"
               role="note"
             >
-              <p className="text-sm font-black text-primary">
-                {t("pronunciation.recoveryCueTitle")}
-              </p>
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-sm font-black text-primary">
+                  {t("pronunciation.recoveryCueTitle")}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => speak(activity.recoveryCue ?? activity.articulationCues[0])}
+                  className="inline-flex min-h-8 items-center gap-1.5 rounded-lg border border-primary/30 bg-background px-2.5 py-1 text-xs font-bold text-primary hover:bg-primary/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-primary"
+                >
+                  <Volume2 className="size-3.5" aria-hidden />
+                  {t("pronunciation.listenToContrast")}
+                </button>
+              </div>
               <p className="mt-1 text-sm font-bold leading-6">
                 {t("pronunciation.confusionPair", {
                   heard: answer,

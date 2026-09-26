@@ -4,6 +4,7 @@ import { resolveAssetUrl } from "../../../utils/assetUrl";
 import { useI18n } from "../../../i18n";
 import { useAudio } from "../../shared/useAudio";
 import { getHadithVisualVocabulary } from "./figmaHadithCatalog";
+import { getCurriculumAudioKey } from "../shared/curriculumAudioManifest";
 
 interface VocabularyItem {
   term: string;
@@ -78,7 +79,7 @@ function AudioAction({ text }: { text: string }) {
   return (
     <button
       type="button"
-      onClick={() => speak(text)}
+      onClick={() => speak(text, undefined, getCurriculumAudioKey(text) ?? undefined)}
       aria-busy={isPlaying}
       aria-label={t("hadith.playVocabulary", { word: text })}
       className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 rounded-xl border border-primary px-3 text-sm font-black text-primary hover:bg-primary/10 active:bg-primary/15 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"

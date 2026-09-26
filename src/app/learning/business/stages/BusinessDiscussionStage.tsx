@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MessageSquareText, ArrowRight, HelpCircle } from "lucide-react";
+import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
 
 interface Props {
@@ -10,6 +11,7 @@ interface Props {
 }
 
 export function BusinessDiscussionStage({ unit, savedNotes = {}, onSaveNote, onNext }: Props) {
+  const { t } = useI18n();
   const [notes, setNotes] = useState<Record<string, string>>(savedNotes);
 
   const handleNoteChange = (id: string, text: string) => {
@@ -23,10 +25,10 @@ export function BusinessDiscussionStage({ unit, savedNotes = {}, onSaveNote, onN
       <div className="flex items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
           <MessageSquareText className="size-4" aria-hidden />
-          Stage 6 · Discussion Questions
+          {t("business.discussion.stageTag")}
         </span>
         <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
-          {unit.level} · Deep Strategic Analysis
+          {t("business.discussion.analysisTag", { level: unit.level })}
         </span>
       </div>
 
@@ -42,8 +44,7 @@ export function BusinessDiscussionStage({ unit, savedNotes = {}, onSaveNote, onN
           </h1>
         </div>
         <p className="mt-2 text-sm text-muted-foreground font-medium">
-          Write down your personal insights or prepare these discussion answers before your live
-          meetings or speaking task.
+          {t("business.discussion.subtitle")}
         </p>
       </section>
 
@@ -83,7 +84,7 @@ export function BusinessDiscussionStage({ unit, savedNotes = {}, onSaveNote, onN
           onClick={onNext}
           className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
-          <span>Continue to Speaking Task</span>
+          <span>{t("business.discussion.continueToSpeaking")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
       </div>

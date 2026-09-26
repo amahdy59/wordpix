@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Award, ArrowRight, RefreshCw, Calendar, CheckCircle2 } from "lucide-react";
+import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
 
 interface Props {
@@ -19,6 +20,7 @@ export function BusinessReviewStage({
   onCompleteUnit,
   onGoToUnit,
 }: Props) {
+  const { t } = useI18n();
   const [confidence, setConfidence] = useState<"not-yet" | "almost" | "ready" | undefined>(
     savedConfidence
   );
@@ -34,10 +36,10 @@ export function BusinessReviewStage({
       <div className="flex items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
           <Award className="size-4" aria-hidden />
-          Stage 8 · Review & Recycling
+          {t("business.review.stageTag")}
         </span>
         <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
-          {unit.level} · Long-Term Retention
+          {t("business.review.retentionTag", { level: unit.level })}
         </span>
       </div>
 
@@ -47,17 +49,17 @@ export function BusinessReviewStage({
         aria-labelledby="congrats-title"
       >
         <span className="inline-flex items-center gap-1 text-xs font-black uppercase tracking-widest text-accent">
-          <CheckCircle2 className="size-4" aria-hidden /> Lesson Completed
+          <CheckCircle2 className="size-4" aria-hidden />{" "}
+          {t("business.review.lessonCompletedBadge")}
         </span>
         <h1
           id="congrats-title"
           className="mt-2 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
         >
-          Congratulations! You've Completed {unit.title}
+          {t("business.review.congratsTitle", { title: unit.title })}
         </h1>
         <p className="mt-2 text-sm sm:text-base font-medium text-muted-foreground">
-          You have mastered {unit.languageBank.length} high-impact professional vocabulary items,
-          practiced real-world business dialogue, and applied targeted functional frameworks.
+          {t("business.review.congratsBody", { count: unit.languageBank.length })}
         </p>
       </section>
 
@@ -70,7 +72,7 @@ export function BusinessReviewStage({
           <div className="flex items-center gap-2 mb-3">
             <RefreshCw className="size-5 text-primary" aria-hidden />
             <h2 id="recycled-heading" className="text-lg font-black text-foreground">
-              Key Grammar & Phrasals Recycled
+              {t("business.review.recycledHeading")}
             </h2>
           </div>
 
@@ -96,11 +98,11 @@ export function BusinessReviewStage({
         <div className="flex items-center gap-2 mb-2">
           <Calendar className="size-5 text-primary" aria-hidden />
           <h2 id="spaced-rep-heading" className="text-lg font-black text-foreground">
-            Spaced Repetition & Self-Rating
+            {t("business.review.selfRatingHeading")}
           </h2>
         </div>
         <p className="text-sm text-muted-foreground font-medium mb-4">
-          Rate your confidence in applying this unit's language at work:
+          {t("business.review.selfRatingPrompt")}
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -136,7 +138,7 @@ export function BusinessReviewStage({
           onClick={onCompleteUnit}
           className="w-full sm:w-auto inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border border-border bg-muted/30 px-6 py-3 font-bold text-foreground hover:bg-muted/60 transition-all"
         >
-          <span>Return to Curriculum Hub</span>
+          <span>{t("business.returnToHub")}</span>
         </button>
 
         {nextUnitId && onGoToUnit && (
@@ -145,7 +147,7 @@ export function BusinessReviewStage({
             onClick={() => onGoToUnit(nextUnitId)}
             className="w-full sm:w-auto inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            <span>Proceed to Next Unit</span>
+            <span>{t("business.review.proceedToNextUnit")}</span>
             <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
           </button>
         )}

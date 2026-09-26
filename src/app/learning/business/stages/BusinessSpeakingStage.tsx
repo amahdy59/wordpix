@@ -12,6 +12,7 @@ import {
   RotateCcw,
   AlertCircle,
 } from "lucide-react";
+import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
 
 interface Props {
@@ -27,6 +28,7 @@ export function BusinessSpeakingStage({
   onSaveChecklist,
   onNext,
 }: Props) {
+  const { t } = useI18n();
   const [checkedItems, setCheckedItems] = useState<Set<string>>(new Set(savedChecklist));
 
   // Audio Recording State
@@ -72,7 +74,15 @@ export function BusinessSpeakingStage({
       }
 
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const recorder = new MediaRecorder(stream);
+      const supportedMimeType =
+        typeof MediaRecorder !== "undefined" && typeof MediaRecorder.isTypeSupported === "function"
+          ? (["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg"].find((type) =>
+              MediaRecorder.isTypeSupported(type)
+            ) ?? "")
+          : "";
+      const recorder = supportedMimeType
+        ? new MediaRecorder(stream, { mimeType: supportedMimeType })
+        : new MediaRecorder(stream);
       mediaRecorderRef.current = recorder;
 
       recorder.ondataavailable = (event) => {
@@ -82,7 +92,10 @@ export function BusinessSpeakingStage({
       };
 
       recorder.onstop = () => {
-        const audioBlob = new Blob(audioChunksRef.current, { type: "audio/webm" });
+        const mimeType = recorder.mimeType || supportedMimeType;
+        const audioBlob = mimeType
+          ? new Blob(audioChunksRef.current, { type: mimeType })
+          : new Blob(audioChunksRef.current);
         if (recordedAudioUrl) URL.revokeObjectURL(recordedAudioUrl);
         const url = URL.createObjectURL(audioBlob);
         setRecordedAudioUrl(url);
@@ -164,10 +177,10 @@ export function BusinessSpeakingStage({
       <div className="flex items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
           <Mic className="size-4" aria-hidden />
-          Stage 7 · Main Speaking Task
+          {t("business.speaking.stageTag")}
         </span>
         <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
-          {unit.level} · Real-World Simulation
+          {t("business.speaking.simulationTag", { level: unit.level })}
         </span>
       </div>
 
@@ -177,7 +190,7 @@ export function BusinessSpeakingStage({
         aria-labelledby="speaking-task-title"
       >
         <p className="text-xs font-black uppercase tracking-widest text-primary">
-          Roleplay & Simulation
+          {t("business.speaking.RolePlayBrief")}
         </p>
         <h1
           id="speaking-task-title"
@@ -191,9 +204,11 @@ export function BusinessSpeakingStage({
           <ShieldAlert className="size-5 shrink-0 mt-0.5 text-primary" aria-hidden />
           <div>
             <span className="text-xs font-black uppercase tracking-wide block mb-0.5 text-primary">
-              Key Speaking Principle
+              {t("business.speaking.keySpeakingPrinciple")}
             </span>
-            <p className="text-sm sm:text-base font-semibold italic">“{unit.speakingTask.rule}”</p>
+            <p className="text-sm sm:text-base font-semibold italic">
+              {`“${unit.speakingTask.rule}”`}
+            </p>
           </div>
         </div>
       </section>
@@ -207,7 +222,7 @@ export function BusinessSpeakingStage({
           <div className="flex items-center gap-2 mb-4">
             <Sparkles className="size-5 text-primary" aria-hidden />
             <h2 id="practice-steps-heading" className="text-lg font-black text-foreground">
-              Steps to Structure Your Delivery
+              {t("business.speaking.stepsHeading")}
             </h2>
           </div>
 
@@ -236,21 +251,22 @@ export function BusinessSpeakingStage({
           <div className="flex items-center gap-2">
             <Mic className="size-5 text-primary" aria-hidden />
             <h2 id="recording-studio-heading" className="text-lg font-black text-foreground">
-              Executive Speaking Practice
+              {t("business.speaking.VoicePractice")}
             </h2>
           </div>
-          <span className="text-xs font-bold text-muted-foreground uppercase">Audio Sandbox</span>
+          <span className="text-xs font-bold text-muted-foreground uppercase">
+            {t("business.speaking.audioSandbox")}
+          </span>
         </div>
         <p className="text-sm text-muted-foreground font-medium mb-6">
-          Deliver your response out loud. Record your pitch or statement, then listen back to
-          evaluate your confidence, strategic tone, and vocabulary usage.
+          {t("business.speaking.sandboxInstructions")}
         </p>
 
         {micError && (
           <div className="mb-5 flex items-start gap-2.5 rounded-2xl bg-destructive/10 border border-destructive/20 p-4 text-sm text-destructive font-medium">
             <AlertCircle className="size-5 shrink-0 mt-0.5" aria-hidden />
             <div>
-              <span className="font-bold block">Microphone Notice</span>
+              <span className="font-bold block">{t("business.speaking.micNoticeTitle")}</span>
               <span>{micError}</span>
             </div>
           </div>
@@ -285,7 +301,7 @@ export function BusinessSpeakingStage({
                 )}
               </div>
               <p className="text-xs font-bold text-muted-foreground">
-                Duration: {formatTime(recordSeconds)}
+                {t("business.speaking.durationLabel", { duration: formatTime(recordSeconds) })}
               </p>
             </div>
           </div>
@@ -299,7 +315,7 @@ export function BusinessSpeakingStage({
                 className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-5 py-2.5 font-bold text-primary-foreground shadow-wp-xs hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
               >
                 <Mic className="size-4" aria-hidden />
-                <span>Start Recording</span>
+                <span>{t("business.speaking.startRecording")}</span>
               </button>
             )}
 
@@ -310,7 +326,7 @@ export function BusinessSpeakingStage({
                 className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-destructive px-5 py-2.5 font-bold text-destructive-foreground shadow-wp-xs hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-destructive"
               >
                 <StopIcon className="size-4" aria-hidden />
-                <span>Finish & Listen</span>
+                <span>{t("business.speaking.finishAndListen")}</span>
               </button>
             )}
 
@@ -324,12 +340,12 @@ export function BusinessSpeakingStage({
                   {isPlaying ? (
                     <>
                       <Pause className="size-4" aria-hidden />
-                      <span>Pause Playback</span>
+                      <span>{t("business.speaking.pausePlayback")}</span>
                     </>
                   ) : (
                     <>
                       <Play className="size-4" aria-hidden />
-                      <span>Play My Delivery</span>
+                      <span>{t("business.speaking.playDelivery")}</span>
                     </>
                   )}
                 </button>
@@ -341,7 +357,7 @@ export function BusinessSpeakingStage({
                   title="Re-record response"
                 >
                   <RotateCcw className="size-3.5" aria-hidden />
-                  <span>Re-record</span>
+                  <span>{t("business.speaking.rerecord")}</span>
                 </button>
 
                 {/* The learner's private recording sandbox has no authored caption track */}
@@ -365,14 +381,17 @@ export function BusinessSpeakingStage({
       >
         <div className="flex items-center justify-between gap-4 mb-2">
           <h2 id="checklist-heading" className="text-lg font-black text-foreground">
-            Can-Do Self-Assessment Checklist
+            {t("business.speaking.SelfEvaluationChecklist")}
           </h2>
           <span className="text-xs font-bold text-accent">
-            {checkedItems.size} / {unit.speakingTask.checklist.length} Completed
+            {t("business.speaking.checklistCompletedCount", {
+              completed: checkedItems.size,
+              total: unit.speakingTask.checklist.length,
+            })}
           </span>
         </div>
         <p className="text-sm text-muted-foreground font-medium mb-5">
-          Listen to your delivery and check each criterion you demonstrated:
+          {t("business.speaking.checklistInstructions")}
         </p>
 
         <div className="flex flex-col gap-3">
@@ -410,7 +429,7 @@ export function BusinessSpeakingStage({
           onClick={onNext}
           className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
-          <span>Continue to Review & Confidence</span>
+          <span>{t("business.speaking.continueToReview")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
       </div>

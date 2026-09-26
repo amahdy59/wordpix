@@ -17,9 +17,11 @@ import { ReadyCelebration } from "../onboarding/ReadyCelebration";
 
 // Synchronous core tab views (home is the default tab and stays eager)
 import { HomeDashboard } from "../core/HomeDashboard";
-import { LearningPath } from "../core/LearningPath";
 
 // Non-default tabs are code-split so the initial bundle stays lean.
+const LearningPath = lazy(() =>
+  import("../core/LearningPath").then((m) => ({ default: m.LearningPath }))
+);
 const ExploreWorlds = lazy(() =>
   import("../core/ExploreWorlds").then((m) => ({ default: m.ExploreWorlds }))
 );

@@ -5,6 +5,7 @@ import { useI18n } from "../../../../i18n";
 import { useAudio } from "../../../shared/useAudio";
 import { AudioButton } from "../../../shared/AudioButton";
 import { getHadithVisualVocabulary } from "../figmaHadithCatalog";
+import { getCurriculumAudioKey } from "../../shared/curriculumAudioManifest";
 
 interface VocabularyItem {
   term: string;
@@ -121,7 +122,7 @@ export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
 
   const playAudio = (text: string) => {
     setActiveAudioText(text);
-    audio.speak(text);
+    audio.speak(text, undefined, getCurriculumAudioKey(text) ?? undefined);
   };
 
   const vocabulary = useMemo(() => parseHadithVocabulary(lines), [lines]);

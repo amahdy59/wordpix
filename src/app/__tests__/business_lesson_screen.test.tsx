@@ -178,4 +178,38 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     fireEvent.click(continueBtn);
     expect(onNext).toHaveBeenCalledOnce();
   });
+
+  it("sets aria-current='step' and does not mark uncompleted stages as completed when jumping via stepper", () => {
+    const dispatch = vi.fn();
+    render(
+      <I18nProvider>
+        <LearnerProvider>
+          <BusinessLessonScreen unitId="unit-01" dispatch={dispatch} />
+        </LearnerProvider>
+      </I18nProvider>
+    );
+
+    const desktopNav = screen.getByRole("navigation", { name: "Lesson Path Steps" });
+    const warmupBtn = within(desktopNav).getByRole("button", { name: /Warm-Up/i });
+    const inputBtn = within(desktopNav).getByRole("button", { name: /Main Input/i });
+    const vocabBtn = within(desktopNav).getByRole("button", { name: /Language Bank/i });
+
+    expect(warmupBtn.getAttribute("aria-current")).toBe("step");
+    expect(inputBtn.hasAttribute("disabled")).toBe(true);
+    expect(vocabBtn.hasAttribute("disabled")).toBe(true);
+
+    // Complete Stage 1 (Warm-Up) via the Continue CTA
+    fireEvent.click(screen.getByRole("button", { name: /Continue to Case Scenario/i }));
+
+    // Now on Stage 2 (Main Input); Stage 2 is current, Stage 3 (Language Bank) is still locked
+    expect(inputBtn.getAttribute("aria-current")).toBe("step");
+    expect(vocabBtn.hasAttribute("disabled")).toBe(true);
+
+    // Jump back to Stage 1 via the stepper without completing Stage 2
+    fireEvent.click(warmupBtn);
+    expect(warmupBtn.getAttribute("aria-current")).toBe("step");
+
+    // Stage 3 (Language Bank) must remain locked because Stage 2 was never completed
+    expect(vocabBtn.hasAttribute("disabled")).toBe(true);
+  });
 });

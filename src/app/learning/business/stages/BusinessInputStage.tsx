@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { BookOpen, ArrowRight, UserCheck, MessageSquareQuote, Volume2, Users } from "lucide-react";
+import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
 
 interface Props {
@@ -8,6 +9,7 @@ interface Props {
 }
 
 export function BusinessInputStage({ unit, onNext }: Props) {
+  const { t } = useI18n();
   const [playingIdx, setPlayingIdx] = useState<number | null>(null);
 
   // Extract unique speakers (excluding Narrator)
@@ -76,10 +78,10 @@ export function BusinessInputStage({ unit, onNext }: Props) {
       <div className="flex items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
           <BookOpen className="size-4" aria-hidden />
-          Stage 2 · Main Input
+          {t("business.input.stageTag")}
         </span>
         <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
-          {unit.level} · Authentic Workplace Scenario
+          {t("business.input.scenarioTag", { level: unit.level })}
         </span>
       </div>
 
@@ -89,7 +91,7 @@ export function BusinessInputStage({ unit, onNext }: Props) {
         aria-labelledby="case-study-title"
       >
         <p className="text-xs font-black uppercase tracking-widest text-primary">
-          Executive Briefing
+          {t("business.input.executiveBriefing")}
         </p>
         <h1
           id="case-study-title"
@@ -101,7 +103,7 @@ export function BusinessInputStage({ unit, onNext }: Props) {
         {unit.mainInput.context && (
           <div className="mt-4 rounded-2xl bg-muted/40 border border-border/80 p-4 sm:p-5">
             <span className="text-xs font-black uppercase tracking-wider text-muted-foreground block mb-1">
-              Context & Setting
+              {t("business.input.contextAndSetting")}
             </span>
             <p className="text-sm sm:text-base font-medium text-foreground leading-relaxed">
               {unit.mainInput.context}
@@ -114,7 +116,7 @@ export function BusinessInputStage({ unit, onNext }: Props) {
           <div className="mt-4 flex flex-wrap items-center gap-2 pt-3 border-t border-border/60">
             <span className="inline-flex items-center gap-1.5 text-xs font-bold text-muted-foreground">
               <Users className="size-3.5" aria-hidden />
-              Participants:
+              {t("business.input.participantsLabel")}
             </span>
             {speakers.map((spk, i) => (
               <span
@@ -137,10 +139,12 @@ export function BusinessInputStage({ unit, onNext }: Props) {
         <div className="flex items-center justify-between gap-2 mb-6">
           <div className="flex items-center gap-2">
             <MessageSquareQuote className="size-5 text-primary" aria-hidden />
-            <h2 className="text-lg font-black text-foreground">Executive Transcript</h2>
+            <h2 className="text-lg font-black text-foreground">
+              {t("business.input.executiveTranscript")}
+            </h2>
           </div>
           <span className="text-xs font-medium text-muted-foreground">
-            Target phrases are underlined
+            {t("business.input.targetPhrasesNote")}
           </span>
         </div>
 
@@ -210,7 +214,7 @@ export function BusinessInputStage({ unit, onNext }: Props) {
           onClick={onNext}
           className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
-          <span>Continue to Language Bank</span>
+          <span>{t("business.input.continueToVocab")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
       </div>

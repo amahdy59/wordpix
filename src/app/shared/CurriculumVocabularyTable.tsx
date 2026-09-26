@@ -140,7 +140,7 @@ export function CurriculumVocabularyTable({
                           onPlay={() => onPlayAudio(item.term)}
                           isPlaying={isItemPlaying}
                           isError={isItemError}
-                          label={`Play pronunciation for ${item.term}`}
+                          label={t("vocabulary.playPronunciation", { term: item.term })}
                           size="sm"
                           className="rounded-lg bg-primary/10 text-primary hover:bg-primary/20"
                         />
@@ -245,7 +245,7 @@ export function CurriculumVocabularyTable({
                           onPlay={() => onPlayAudio(item.term)}
                           isPlaying={isItemPlaying}
                           isError={isItemError}
-                          label={`Play pronunciation for ${item.term}`}
+                          label={t("vocabulary.playPronunciation", { term: item.term })}
                           size="sm"
                           className="rounded-lg bg-primary/10 text-primary hover:bg-primary/20"
                         />
@@ -270,7 +270,7 @@ export function CurriculumVocabularyTable({
 
               <div>
                 <p className="text-xs sm:text-sm font-medium text-muted-foreground leading-relaxed">
-                  <span className="font-bold text-foreground">Meaning: </span>
+                  <span className="font-bold text-foreground">{t("vocabulary.meaningPrefix")}</span>
                   {item.definition}
                 </p>
                 {showArabic && item.definitionAr && (

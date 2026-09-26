@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type Dispatch } from "react";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import type { Action } from "../../types";
+import { useI18n } from "../../../i18n";
 import { useLearner } from "../../context/LearnerContext";
 import { getBusinessUnit, BUSINESS_UNITS } from "./businessCatalog";
 import { BUSINESS_STAGE_IDS, type BusinessStageId } from "./businessTypes";
@@ -22,7 +23,10 @@ interface Props {
   dispatch: Dispatch<Action>;
 }
 
+const EMPTY_COMPLETED_STAGES: BusinessStageId[] = [];
+
 export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) {
+  const { t } = useI18n();
   const {
     state: learnerState,
     checkpointBusiness,
@@ -44,7 +48,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
     return BUSINESS_STAGE_IDS.filter((s) => s !== "recall");
   }, [unit]);
 
-  const completedStages = progress?.completedStages || [];
+  const completedStages = progress?.completedStages ?? EMPTY_COMPLETED_STAGES;
 
   const maxUnlockedIndex = useMemo(() => {
     if (isMastered) return availableStages.length - 1;
@@ -76,32 +80,41 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
 
   // Keyboard navigation: [ / ] or PageUp / PageDown
   useEffect(() => {
+    if (!unit) return;
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
         return;
       }
       if (e.key === "[" || e.key === "PageUp") {
         e.preventDefault();
-        setActiveStageIdx((prev) => Math.max(0, prev - 1));
+        setActiveStageIdx((prev) => {
+          const next = Math.max(0, prev - 1);
+          checkpointBusiness(unit.id, next);
+          return next;
+        });
       } else if (e.key === "]" || e.key === "PageDown") {
         e.preventDefault();
-        setActiveStageIdx((prev) => Math.min(maxUnlockedIndex, prev + 1));
+        setActiveStageIdx((prev) => {
+          const next = Math.min(maxUnlockedIndex, prev + 1);
+          checkpointBusiness(unit.id, next);
+          return next;
+        });
       }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [maxUnlockedIndex]);
+  }, [checkpointBusiness, maxUnlockedIndex, unit]);
 
   if (!unit) {
     return (
       <main className="flex h-full min-h-0 flex-col items-center justify-center p-6 text-center">
-        <h1 className="text-xl font-black text-foreground">Unit Not Found</h1>
+        <h1 className="text-xl font-black text-foreground">{t("business.unitNotFound")}</h1>
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
           className="mt-4 inline-flex min-h-[44px] items-center justify-center rounded-xl bg-primary px-5 py-2.5 font-bold text-primary-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
         >
-          Return to Curriculum Hub
+          {t("business.returnToHub")}
         </button>
       </main>
     );
@@ -110,7 +123,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
   const navigateToStage = (newIdx: number) => {
     const targetIdx = Math.max(0, Math.min(maxUnlockedIndex, newIdx));
     setActiveStageIdx(targetIdx);
-    checkpointBusiness(unit.id, targetIdx, currentStageId);
+    checkpointBusiness(unit.id, targetIdx);
   };
 
   const handleNext = () => {
@@ -144,7 +157,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
             aria-label="Back to Business English Curriculum"
           >
             <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
-            <span className="hidden sm:inline text-sm">Curriculum</span>
+            <span className="hidden sm:inline text-sm">{t("business.curriculumNavLabel")}</span>
           </button>
 
           <div className="h-4 w-px bg-border hidden sm:block" aria-hidden />
@@ -153,8 +166,11 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
             <span className="shrink-0 rounded-lg bg-primary/15 px-2 py-0.5 text-xs font-black text-primary uppercase">
               {unit.level}
             </span>
-            <span className="truncate text-sm sm:text-base font-black text-foreground">
-              Unit {unit.unitNumber}: {unit.title}
+            <span
+              id="lesson-header-title"
+              className="truncate text-sm sm:text-base font-black text-foreground"
+            >
+              {t("business.unitColonTitle", { number: unit.unitNumber, title: unit.title })}
             </span>
           </div>
         </div>
@@ -162,14 +178,18 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
         {isMastered && (
           <span className="inline-flex items-center gap-1.5 rounded-full bg-accent/15 px-3 py-1 text-xs font-black text-accent">
             <CheckCircle2 className="size-4" aria-hidden />
-            <span className="hidden sm:inline">Mastered</span>
+            <span className="hidden sm:inline">{t("business.masteredBadge")}</span>
           </span>
         )}
       </header>
 
       {/* Screen Reader Announcement */}
       <div className="sr-only" aria-live="polite">
-        Stage {activeStageIdx + 1} of {availableStages.length}: {currentStageId} loaded.
+        {t("business.stageLoadedAnnouncement", {
+          current: activeStageIdx + 1,
+          total: availableStages.length,
+          stage: currentStageId,
+        })}
       </div>
 
       {/* Workspace Area: Stepper + Content */}

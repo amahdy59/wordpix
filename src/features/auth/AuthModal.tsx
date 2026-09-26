@@ -116,7 +116,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
           </div>
         )}
         {state.status === "success" && (
-          <div className="mb-4 p-3 bg-green-500/10 text-green-600 text-sm rounded-lg" role="alert">
+          <div className="mb-4 p-3 bg-wp-green/10 text-wp-green text-sm rounded-lg" role="alert">
             {state.message}
           </div>
         )}

@@ -331,3 +331,21 @@ export function seededPronunciationShuffle<T>(values: readonly T[], seed: number
   }
   return output;
 }
+
+/**
+ * Returns rhythmic syllable beat indicators (e.g. "● ·" vs "· ●")
+ * for multisyllabic stress contrasts in Chapter 6 (Lessons 41–48).
+ */
+export function getStressBeatPattern(lessonNumber: number, label: string): string | undefined {
+  if (lessonNumber < 41 || lessonNumber > 48) return undefined;
+  if (/[A-Z]{2,}/.test(label)) {
+    return /^[A-Z]{2,}/.test(label) ? "● ·" : "· ●";
+  }
+  if (lessonNumber === 41) return "● ·";
+  if (lessonNumber === 43) {
+    const clean = label.trim().toLowerCase();
+    if (clean.startsWith("about") || clean.startsWith("ago")) return "· ●";
+    return "● ·";
+  }
+  return undefined;
+}

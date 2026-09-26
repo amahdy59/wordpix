@@ -685,7 +685,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                               )}
                               {(isWrongSelection || (answered && isAnswer)) && (
                                 <span
-                                  className={`absolute end-2 top-2 flex size-9 items-center justify-center rounded-full text-white shadow-wp-xs ${isAnswer ? "bg-[var(--feedback-success)]" : "bg-[var(--feedback-error)]"}`}
+                                  className={`absolute end-2 top-2 flex size-9 items-center justify-center rounded-full shadow-wp-xs ${isAnswer ? "bg-wp-green text-wp-text-on-green" : "bg-wp-rose text-wp-text-on-rose"}`}
                                   aria-hidden
                                 >
                                   {isAnswer ? (
@@ -752,7 +752,7 @@ export function FoundationLessonScreen({ lessonId, dispatch }: Props) {
                             )}
                             {(isWrongSelection || showCorrect) && (
                               <span
-                                className={`absolute end-2 top-2 flex size-9 items-center justify-center rounded-full text-white shadow-wp-xs ${showCorrect ? "bg-[var(--feedback-success)]" : "bg-[var(--feedback-error)]"}`}
+                                className={`absolute end-2 top-2 flex size-9 items-center justify-center rounded-full shadow-wp-xs ${showCorrect ? "bg-wp-green text-wp-text-on-green" : "bg-wp-rose text-wp-text-on-rose"}`}
                                 aria-hidden
                               >
                                 {showCorrect ? (

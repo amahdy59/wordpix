@@ -1,4 +1,5 @@
 import { HelpCircle, ArrowRight } from "lucide-react";
+import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
 import { CurriculumQuizEngine } from "../../../shared/CurriculumQuizEngine";
 import type { QuizQuestion, QuizResult } from "../../../shared/CurriculumQuizEngine";
@@ -11,6 +12,7 @@ interface Props {
 }
 
 export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, onNext }: Props) {
+  const { t } = useI18n();
   // Map BusinessExercise (A/B/C options) → unified QuizQuestion shape
   const questions: QuizQuestion[] = unit.exercises.map((ex) => ({
     id: ex.id,
@@ -35,11 +37,14 @@ export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, o
       <div className="flex items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
           <HelpCircle className="size-4" aria-hidden />
-          Stage 5 · Practice Exercise Set
+          {t("business.exercises.stageTag")}
         </span>
         {savedScore !== undefined && (
           <span className="text-xs font-bold text-muted-foreground">
-            Best: {savedScore}/{unit.exercises.length}
+            {t("business.exercises.bestScore", {
+              score: savedScore,
+              total: unit.exercises.length,
+            })}
           </span>
         )}
       </div>
@@ -54,7 +59,7 @@ export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, o
           onClick={onNext}
           className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
-          <span>Proceed to Discussion</span>
+          <span>{t("business.exercises.proceedToDiscussion")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
       </div>

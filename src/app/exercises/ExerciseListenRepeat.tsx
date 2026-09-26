@@ -485,7 +485,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                         attempt?.matched
                           ? "bg-wp-green text-wp-text-on-green border-wp-green"
                           : isListening
-                            ? "bg-wp-rose text-white border-wp-rose motion-safe:animate-pulse"
+                            ? "bg-wp-rose text-wp-text-on-rose border-wp-rose motion-safe:animate-pulse"
                             : "bg-wp-card text-foreground hover:bg-secondary border-border"
                       }`}
                     >

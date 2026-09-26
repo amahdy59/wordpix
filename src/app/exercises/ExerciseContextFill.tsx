@@ -225,7 +225,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                     transition={{ delay: 0.3 }}
                     type="button"
                     onClick={handleContinue}
-                    className="flex items-center gap-2 px-6 min-h-[44px] rounded-full bg-white text-foreground font-sans font-bold text-sm shadow-lg hover:bg-white/90 transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white"
+                    className="flex items-center gap-2 px-6 min-h-[44px] rounded-full bg-primary text-primary-foreground font-sans font-bold text-sm shadow-lg hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
                   >
                     {t("action.continue")}
                     <ArrowRight className="size-4" aria-hidden />

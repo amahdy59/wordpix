@@ -11,13 +11,20 @@ import {
   Hourglass,
 } from "lucide-react";
 import type { Action } from "../../types";
+import { useI18n } from "../../../i18n";
 import { useLearner } from "../../context/LearnerContext";
 import { BUSINESS_UNITS } from "./businessCatalog";
-import { BUSINESS_SECTION_MILESTONES, type BusinessCefrLevel } from "./businessTypes";
+import {
+  BUSINESS_SECTION_MILESTONES,
+  type BusinessCefrLevel,
+  type BusinessUnitProgress,
+} from "./businessTypes";
 
 interface Props {
   dispatch: Dispatch<Action>;
 }
+
+const EMPTY_BUSINESS_PROGRESS: Record<string, BusinessUnitProgress> = {};
 
 const CEFR_TABS: { id: "ALL" | BusinessCefrLevel; label: string; count: number }[] = [
   { id: "ALL", label: "All Units", count: BUSINESS_UNITS.length },
@@ -50,12 +57,13 @@ const DOMAIN_TAGS = [
 ] as const;
 
 export function BusinessCurriculumScreen({ dispatch }: Props) {
+  const { t } = useI18n();
   const { state: learnerState } = useLearner();
   const [selectedLevel, setSelectedLevel] = useState<"ALL" | BusinessCefrLevel>("ALL");
   const [selectedTag, setSelectedTag] = useState<string>("All Topics");
   const [searchQuery, setSearchQuery] = useState("");
 
-  const progressState = learnerState.businessProgress || {};
+  const progressState = learnerState.businessProgress ?? EMPTY_BUSINESS_PROGRESS;
 
   // Stats
   const masteredCount = useMemo(() => {
@@ -129,7 +137,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
           className="inline-flex min-h-[44px] w-fit items-center gap-2 rounded-xl px-3 font-bold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
-          <span>Back to Learning Path</span>
+          <span>{t("business.backToExplore")}</span>
         </button>
 
         {/* Hero Section */}
@@ -137,10 +145,10 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
           <div className="flex flex-wrap items-center gap-2.5">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/20 px-3 py-1 text-xs font-black text-primary uppercase tracking-wider">
               <Briefcase className="size-3.5" aria-hidden />
-              Executive English Curriculum
+              {t("business.heroBadge")}
             </span>
             <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2.5 py-0.5 text-xs font-bold text-muted-foreground">
-              40 Units · B1 to C2
+              {t("business.heroLevelPill")}
             </span>
           </div>
 
@@ -149,11 +157,10 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
               id="business-curriculum-title"
               className="text-2xl sm:text-4xl font-black text-foreground tracking-tight"
             >
-              Beyond Business English
+              {t("business.title")}
             </h1>
             <p className="mt-2 text-base sm:text-lg font-medium text-muted-foreground leading-relaxed max-w-3xl">
-              From conference introductions and progress updates to high-stakes supplier
-              negotiations, crisis communication, and executive strategy summits.
+              {t("business.heroSubtitle")}
             </p>
           </div>
 
@@ -163,9 +170,15 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
               <CheckCircle2 className="size-8 text-accent shrink-0" aria-hidden />
               <div>
                 <p className="text-xl font-black text-foreground">
-                  {masteredCount} / 40 ({completionPercent}%)
+                  {t("business.masteredStats", {
+                    mastered: masteredCount,
+                    total: 40,
+                    percent: completionPercent,
+                  })}
                 </p>
-                <p className="text-xs font-semibold text-muted-foreground">Units Mastered</p>
+                <p className="text-xs font-semibold text-muted-foreground">
+                  {t("business.unitsMasteredLabel")}
+                </p>
               </div>
             </div>
 
@@ -173,15 +186,22 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
               <Clock className="size-8 text-primary shrink-0" aria-hidden />
               <div>
                 <p className="text-xl font-black text-foreground">{inProgressCount}</p>
-                <p className="text-xs font-semibold text-muted-foreground">In Progress</p>
+                <p className="text-xs font-semibold text-muted-foreground">
+                  {t("business.inProgressBadge")}
+                </p>
               </div>
             </div>
 
             <div className="flex items-center justify-between gap-4 rounded-2xl bg-card p-4 border border-border sm:col-span-1">
               <div className="min-w-0">
-                <p className="text-xs font-bold text-muted-foreground uppercase">Next Lesson</p>
+                <p className="text-xs font-bold text-muted-foreground uppercase">
+                  {t("business.nextLessonLabel")}
+                </p>
                 <p className="text-sm font-black text-foreground truncate">
-                  Unit {continueUnit.unitNumber}: {continueUnit.title}
+                  {t("business.unitColonTitle", {
+                    number: continueUnit.unitNumber,
+                    title: continueUnit.title,
+                  })}
                 </p>
               </div>
               <button
@@ -194,7 +214,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                 }
                 className="shrink-0 inline-flex min-h-[44px] items-center gap-1.5 rounded-xl bg-primary px-4 py-2 font-bold text-primary-foreground shadow-wp-xs hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
               >
-                <span>Continue</span>
+                <span>{t("business.continueCta")}</span>
                 <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
               </button>
             </div>
@@ -210,10 +230,12 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
             <div className="flex items-center gap-2">
               <Award className="size-5 text-primary" aria-hidden />
               <h2 id="credentials-heading" className="text-lg font-black text-foreground">
-                Executive Milestone Credentials
+                {t("business.credentialsTitle")}
               </h2>
             </div>
-            <span className="text-xs font-bold text-muted-foreground">4 Tier Certifications</span>
+            <span className="text-xs font-bold text-muted-foreground">
+              {t("business.credentialsSubtitle")}
+            </span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
@@ -246,11 +268,14 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                     {isSectionCertified ? (
                       <span className="inline-flex items-center gap-1 rounded-full bg-accent/15 px-2 py-0.5 text-[10px] font-black text-accent uppercase">
                         <CheckCircle2 className="size-3" aria-hidden />
-                        Certified
+                        {t("business.certifiedBadge")}
                       </span>
                     ) : (
                       <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-[10px] font-bold text-muted-foreground">
-                        {sectionMastered}/{sectionUnits.length} Units
+                        {t("business.sectionUnitsCount", {
+                          mastered: sectionMastered,
+                          total: sectionUnits.length,
+                        })}
                       </span>
                     )}
                   </div>
@@ -340,7 +365,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
           >
             <span className="inline-flex items-center gap-1 text-xs font-bold text-muted-foreground me-1 shrink-0">
               <Tag className="size-3" aria-hidden />
-              Topics:
+              {t("business.topicsLabel")}
             </span>
             {DOMAIN_TAGS.map((tag) => {
               const isSelected = selectedTag === tag;
@@ -402,8 +427,8 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                           </span>
                           {unit.estimatedMinutes && (
                             <span className="inline-flex items-center gap-1 rounded-md bg-secondary px-2 py-0.5 text-xs font-bold text-foreground">
-                              <Hourglass className="size-3" aria-hidden />~{unit.estimatedMinutes}{" "}
-                              min
+                              <Hourglass className="size-3" aria-hidden />
+                              {t("business.estimatedMinutes", { minutes: unit.estimatedMinutes })}
                             </span>
                           )}
                         </div>
@@ -411,12 +436,15 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                         {isMastered ? (
                           <span className="inline-flex items-center gap-1 rounded-full bg-accent/15 px-2.5 py-0.5 text-xs font-black text-accent">
                             <CheckCircle2 className="size-3.5" aria-hidden />
-                            Mastered
+                            {t("business.masteredBadge")}
                           </span>
                         ) : isInProgress ? (
                           <span className="inline-flex items-center gap-1 rounded-full bg-primary/15 px-2.5 py-0.5 text-xs font-black text-primary">
                             <Clock className="size-3.5" aria-hidden />
-                            Stage {progress.currentStage + 1}/8
+                            {t("business.stageFraction", {
+                              current: progress.currentStage + 1,
+                              total: 8,
+                            })}
                           </span>
                         ) : null}
                       </div>
@@ -426,22 +454,24 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                       </h2>
 
                       <p className="text-sm font-semibold text-primary/90 italic">
-                        “{unit.essentialQuestion}”
+                        {`“${unit.essentialQuestion}”`}
                       </p>
 
                       <p className="text-xs sm:text-sm font-medium text-muted-foreground line-clamp-2">
-                        <span className="font-bold text-foreground">Goal: </span>
+                        <span className="font-bold text-foreground">
+                          {t("business.goalPrefix")}
+                        </span>
                         {unit.speakingGoal}
                       </p>
 
                       {unit.tags && unit.tags.length > 0 && (
                         <div className="flex flex-wrap gap-1.5 mt-1">
-                          {unit.tags.map((t, idx) => (
+                          {unit.tags.map((tag, idx) => (
                             <span
                               key={idx}
                               className="rounded-md bg-muted/60 px-2 py-0.5 text-[11px] font-bold text-muted-foreground"
                             >
-                              {t}
+                              {tag}
                             </span>
                           ))}
                         </div>
@@ -450,7 +480,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
 
                     <div className="mt-5 flex items-center justify-between pt-4 border-t border-border/80">
                       <span className="text-xs font-bold text-muted-foreground">
-                        {unit.languageBank.length} Terms · 8 Steps
+                        {t("business.termsAndSteps", { count: unit.languageBank.length })}
                       </span>
 
                       <button
@@ -464,7 +494,11 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                         className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl bg-primary px-4 py-2 font-bold text-primary-foreground shadow-wp-xs hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
                       >
                         <span>
-                          {isMastered ? "Review Unit" : isInProgress ? "Resume" : "Start Unit"}
+                          {isMastered
+                            ? t("business.reviewUnitCta")
+                            : isInProgress
+                              ? t("business.resumeCta")
+                              : t("business.startUnitCta")}
                         </span>
                         <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
                       </button>

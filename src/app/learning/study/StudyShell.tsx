@@ -570,7 +570,7 @@ export function StudyShell({
                               progressVal === 100
                                 ? isActive
                                   ? "border-primary-foreground bg-primary-foreground text-primary"
-                                  : "border-wp-green bg-wp-green text-white"
+                                  : "border-wp-green bg-wp-green text-wp-text-on-green"
                                 : isActive
                                   ? "border-primary-foreground/60"
                                   : "border-border"

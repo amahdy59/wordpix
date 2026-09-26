@@ -1,11 +1,13 @@
 import { useState, useMemo } from "react";
 import { BookOpen, Search, CheckCircle, ArrowRight } from "lucide-react";
+import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
 import { resolveAssetUrl } from "../../../../utils/assetUrl";
 import { useAudio } from "../../../shared/useAudio";
 import { useLearner } from "../../../context/LearnerContext";
 import { CurriculumVocabularyTable } from "../../../shared/CurriculumVocabularyTable";
 import type { VocabularyTableItem } from "../../../shared/CurriculumVocabularyTable";
+import { getCurriculumAudioKey } from "../../shared/curriculumAudioManifest";
 
 interface Props {
   unit: BusinessUnit;
@@ -13,6 +15,7 @@ interface Props {
 }
 
 export function BusinessVocabularyStage({ unit, onNext }: Props) {
+  const { t } = useI18n();
   const { state: learnerState } = useLearner();
   const [selectedType, setSelectedType] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -23,7 +26,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
   const handleSpeakTerm = (term: string) => {
     if (!listeningEnabled || !audio.isSupported) return;
     setActiveAudioText(term);
-    audio.speak(term);
+    audio.speak(term, undefined, getCurriculumAudioKey(term) ?? undefined);
   };
 
   // Extract unique types present in this unit
@@ -63,10 +66,10 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
       <div className="flex items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
           <BookOpen className="size-4" aria-hidden />
-          Stage 3 · Language Bank
+          {t("business.vocabStage.stageTag")}
         </span>
         <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
-          {unit.languageBank.length} Target Workplace Terms
+          {t("business.vocabStage.targetTermsCount", { count: unit.languageBank.length })}
         </span>
       </div>
 
@@ -77,11 +80,10 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
       >
         <div>
           <h1 id="vocab-stage-heading" className="text-xl sm:text-2xl font-black text-foreground">
-            3. Language Bank — Core Vocabulary
+            {t("business.vocabStage.heading")}
           </h1>
           <p className="mt-1 text-sm text-muted-foreground font-medium">
-            Reference matrix of target terminology, authentic workplace collocations, and idiomatic
-            expressions with concept artwork.
+            {t("business.vocabStage.subtitle")}
           </p>
         </div>
 
@@ -98,7 +100,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search terms, definitions, or examples..."
-              aria-label="Search vocabulary"
+              aria-label={t("business.vocabStage.searchAria")}
               className="w-full min-h-[44px] rounded-xl border border-border bg-background ps-9 pe-4 text-xs sm:text-sm font-medium text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary transition-all"
             />
           </div>
@@ -119,7 +121,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
                   : "bg-muted/30 text-muted-foreground border-border hover:bg-muted/60 hover:text-foreground"
               }`}
             >
-              All ({unit.languageBank.length})
+              {t("business.vocabStage.filterAll", { count: unit.languageBank.length })}
             </button>
             {availableTypes.map((type) => {
               const count = unit.languageBank.filter((i) => i.type === type).length;
@@ -136,7 +138,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
                       : "bg-muted/30 text-muted-foreground border-border hover:bg-muted/60 hover:text-foreground"
                   }`}
                 >
-                  {type} ({count})
+                  {`${type} (${count})`}
                 </button>
               );
             })}
@@ -151,14 +153,17 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
           aria-live="polite"
           aria-atomic="true"
         >
-          Showing {filteredItems.length} of {unit.languageBank.length} terms
+          {t("business.vocabStage.showingCount", {
+            shown: filteredItems.length,
+            total: unit.languageBank.length,
+          })}
         </p>
       )}
 
       {/* Unified Vocabulary Table */}
       {filteredItems.length === 0 ? (
         <div className="rounded-3xl border border-border bg-card p-12 text-center text-sm font-medium text-muted-foreground shadow-wp-xs">
-          No vocabulary terms match your filter criteria.
+          {t("business.vocabStage.emptyFilter")}
         </div>
       ) : (
         <CurriculumVocabularyTable
@@ -175,7 +180,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
         <p className="text-xs text-muted-foreground font-medium flex items-center gap-1.5">
           <CheckCircle className="size-4 text-primary" aria-hidden />
           <span>
-            All {unit.languageBank.length} terms cataloged with authentic workplace examples.
+            {t("business.vocabStage.catalogedFooter", { count: unit.languageBank.length })}
           </span>
         </p>
 
@@ -184,7 +189,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
           onClick={onNext}
           className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary w-full sm:w-auto"
         >
-          <span>Continue to Usage Focus</span>
+          <span>{t("business.vocabStage.continueToUsage")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
       </div>

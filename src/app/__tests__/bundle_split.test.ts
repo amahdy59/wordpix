@@ -116,3 +116,33 @@ describe("a link to a unit opens that unit", () => {
     expect(branch.slice(0, 300)).toMatch(/unitId: screen\.unitId/);
   });
 });
+
+describe("initial runtime bundle stays lean", () => {
+  it("keeps figmaPronunciationCatalog out of the synchronous hash router", () => {
+    const hashRouter = readFileSync(join(appDir, "router", "useHashRouter.ts"), "utf8");
+    expect(hashRouter).not.toMatch(/figmaPronunciationCatalog/);
+    expect(hashRouter).toMatch(/pronunciationLessonMetadata/);
+  });
+
+  it("keeps pronunciationLessonMetadata in exact sync with FIGMA_PRONUNCIATION_LESSONS", async () => {
+    const { FIGMA_PRONUNCIATION_LESSONS } =
+      await import("../learning/foundations/figmaPronunciationCatalog");
+    const { PRONUNCIATION_LESSON_COUNT, getPronunciationLessonMetadata } =
+      await import("../learning/foundations/pronunciationLessonMetadata");
+    expect(PRONUNCIATION_LESSON_COUNT).toBe(FIGMA_PRONUNCIATION_LESSONS.length);
+    for (const lesson of FIGMA_PRONUNCIATION_LESSONS) {
+      expect(getPronunciationLessonMetadata(lesson.number)).toEqual({
+        number: lesson.number,
+        sourceName: lesson.sourceName,
+      });
+    }
+  });
+
+  it("lazy-loads non-default tabs in RouterView", () => {
+    const routerView = readFileSync(join(appDir, "router", "RouterView.tsx"), "utf8");
+    expect(routerView).toMatch(/const LearningPath = lazy\(/);
+    expect(routerView).toMatch(/const ExploreWorlds = lazy\(/);
+    expect(routerView).toMatch(/const ProfileStats = lazy\(/);
+    expect(routerView).toMatch(/const SkillExerciseHub = lazy\(/);
+  });
+});
