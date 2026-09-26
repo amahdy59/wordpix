@@ -8,6 +8,7 @@
   "nav": {
     "label": "Main navigation",
     "home": "Home",
+    "learn": "Learn",
     "explore": "Learn",
     "library": "Library",
     "practice": "Practice",
@@ -136,7 +137,7 @@
     "retentionPractice": "You have {count} vocabulary items scheduled for retention practice based on your forgetting curve.",
     "excellentRetention": "Excellent memory retention! You have reviewed all active vocabulary items for today.",
     "reviewReadyTitle": "Reviews unlock after your first lesson",
-    "reviewReadyDesc": "Start the guided foundations lesson to build your personalized review schedule.",
+    "reviewReadyDesc": "Start your recommended picture lesson to build your personalized review schedule.",
     "corePathLevel": "Core path · Level {level}",
     "optionalPicturePractice": "Optional picture practice",
     "practiseSkill": "Practise a skill",
@@ -151,7 +152,7 @@
     "specialCurricula": "Specialized learning curricula",
     "pathBadge": "Guided English pathway",
     "title": "Your learning path",
-    "subtitle": "Follow your recommended reading lesson, then explore a complete picture-word route. You can open any unit at your pace.",
+    "subtitle": "Explore a complete picture-word route and specialized curricula at your pace.",
     "foundationProgress": "Foundation pathway",
     "foundationProgressAria": "Foundation progress: {mastered} of {total} words mastered",
     "browseLibrary": "Browse vocabulary library",
@@ -318,7 +319,13 @@
     "cefrGseBadge": "CEFR {cefr} · GSE {start}–{end}",
     "wordsBadge": "{count} Words",
     "studyButton": "Study",
-    "startUnit": "Start Unit"
+    "startUnit": "Start Unit",
+    "filterStatus": "Status:",
+    "unitsFound": "Found {count} units",
+    "statusAll": "All",
+    "statusMastered": "Mastered",
+    "statusInProgress": "In Progress",
+    "statusNotStarted": "Not Started"
   },
   "gamification": {
     "mastered": "Mastered",
@@ -1000,6 +1007,13 @@
     "noResultsDescription": "Try a different sound, word, or lesson title.",
     "soundFocus": "Sound focus",
     "contrastPairs": "Target sound contrasts",
+    "viewLessonDetails": "View pedagogical details for lesson {lesson}",
+    "detailsTooltip": "Lesson overview and articulation guidance",
+    "modalObjective": "Learning Objective",
+    "modalArticulation": "Mouth & Articulation Guidance",
+    "modalContrasts": "Target Sound Contrasts",
+    "modalStartLesson": "Start Lesson {number}",
+    "modalClose": "Close",
     "badge": "Pronunciation · Lesson {current} of {total}",
     "stageProgress": "Stage {current} of {total}",
     "previousBest": "Previous best: {score}%",
@@ -1590,7 +1604,13 @@
       "stageTag": "Stage 1 · Warm-Up Discussions",
       "essentialQuestion": "Essential Question",
       "speakingGoalLabel": "Speaking Goal:",
-      "reflectHeading": "Reflect on Prior Workplace Experience",
+      "reflectHeading": "Warm-Up Workplace Scenarios",
+      "instructionsFallback": "Select the most effective workplace approach for each question to activate your thinking and review strategic feedback.",
+      "feedbackTitle": "Strategic Workplace Feedback",
+      "recommendedBadge": "Recommended Best Practice",
+      "alternativeBadge": "Alternative Approach",
+      "selectedOptionNote": "You chose Option {key}. Review the strategic workplace feedback below:",
+      "questionsProgress": "{answered} of {total} questions explored",
       "continueToScenario": "Continue to Case Scenario"
     },
     "input": {
@@ -1704,6 +1724,9 @@
     "correctFeedback": "Correct! Excellent work.",
     "incorrectFeedback": "Incorrect. Review the explanation below.",
     "explanation": "Explanation",
-    "questionPillLabel": "Question {number}"
+    "questionPillLabel": "Question {number}",
+    "pageOf": "Page {current} of {total}",
+    "previousPage": "Previous",
+    "nextPage": "Next Questions"
   }
 }

@@ -1,10 +1,10 @@
 import type { Screen, Action, OnboardStep } from "../types";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, resolveGroup, resolveUnitForLesson } from "../data/lessons";
-import { getFoundationLesson } from "../learning/foundations/foundationCurriculum";
 
 export const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
 export const TABBED_IDS: ReadonlySet<string> = new Set([
   "home",
+  "learn",
   "explore",
   "library",
   "practice",
@@ -47,6 +47,8 @@ export function reducer(state: Screen, action: Action): Screen {
       }
       return state;
     }
+    // Normalise legacy "explore" dispatches to the canonical "learn" id.
+    if (action.to === "explore") return { id: "learn" };
     return { id: action.to };
   }
   if (action.type === "OPEN_SKILL_EXERCISE") {
@@ -54,9 +56,6 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "GO_LEARN_WORDS") {
     return { id: "learn-words", lessonId: action.lessonId };
-  }
-  if (action.type === "START_FOUNDATION_LESSON") {
-    return { id: "foundation-lesson", lessonId: action.lessonId };
   }
   if (action.type === "OPEN_FIGMA_PRONUNCIATION") {
     return { id: "figma-pronunciation-lesson", lessonNumber: action.lessonNumber };
@@ -166,8 +165,9 @@ export function describeScreen(
       return `${t("app.title")}: ${screen.step}`;
     case "home":
       return t("nav.home");
-    case "explore":
-      return t("nav.explore");
+    case "learn":
+    case "explore": // @deprecated — normalised to "learn" by the reducer on next dispatch
+      return t("nav.learn");
     case "library":
       return t("nav.library");
     case "practice":
@@ -188,8 +188,6 @@ export function describeScreen(
       return "Skill exercises";
     case "skill-exercise":
       return screen.exerciseId;
-    case "foundation-lesson":
-      return `Foundations: ${getFoundationLesson(screen.lessonId).title}`;
     case "pronunciation-curriculum":
       return t("pronunciation.curriculumTitle");
     case "figma-pronunciation-lesson":

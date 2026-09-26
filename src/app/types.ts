@@ -1,9 +1,7 @@
 // Shared TypeScript types for the WordPix app state machine
 
-import type { FoundationLessonId } from "./learning/foundations/foundationCurriculum";
-
 export type OnboardStep = "splash" | "language" | "ready";
-export type TabId = "home" | "explore" | "library" | "practice" | "profile";
+export type TabId = "home" | "learn" | "library" | "practice" | "profile";
 
 export type LearnerMode =
   "NEW_LESSON" | "SMART_REVIEW" | "SKILL_PRACTICE" | "UNIT_ASSESSMENT" | "PRE_LESSON_ASSESSMENT";
@@ -60,6 +58,8 @@ export interface AnswerAttempt {
 export type Screen =
   | { id: "onboarding"; step: OnboardStep }
   | { id: "home" }
+  | { id: "learn" }
+  /** @deprecated Persisted state may still use "explore". The router normalises it to "learn". */
   | { id: "explore" }
   | { id: "library" }
   | { id: "practice" }
@@ -70,7 +70,6 @@ export type Screen =
   | { id: "learn-words"; lessonId: string }
   /** Reference and self-paced practice for one unit, imported from Figma. */
   | { id: "learning-materials"; unitId?: string; area?: string; nodeId?: string }
-  | { id: "foundation-lesson"; lessonId: FoundationLessonId }
   | { id: "pronunciation-curriculum" }
   | { id: "figma-pronunciation-lesson"; lessonNumber: number }
   | { id: "hadith-curriculum" }
@@ -113,6 +112,8 @@ export type Screen =
 /** Every destination GO can reach. Previously widened by an `as TabId` cast. */
 export type GoTarget =
   | TabId
+  | "learn"
+  | "explore"
   | "review"
   | "lesson-entry"
   | "lesson-complete"
@@ -132,7 +133,6 @@ export type Action =
   | { type: "OPEN_SKILL_EXERCISE"; exerciseId: SkillExerciseId }
   /** Enters self-paced word browsing for one group. */
   | { type: "GO_LEARN_WORDS"; lessonId: string }
-  | { type: "START_FOUNDATION_LESSON"; lessonId: FoundationLessonId }
   | { type: "OPEN_FIGMA_PRONUNCIATION"; lessonNumber: number }
   | { type: "OPEN_HADITH_LESSON"; lessonId: string }
   | {

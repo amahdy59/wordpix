@@ -174,9 +174,9 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
                           onClick={() =>
                             dispatch({ type: "OPEN_HADITH_LESSON", lessonId: lesson.id })
                           }
-                          className="grid min-h-[148px] w-full grid-cols-[5.5rem_1fr_auto] items-stretch gap-4 overflow-hidden rounded-2xl border border-border bg-card p-3 text-start shadow-wp-xs hover:border-primary/50 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:grid-cols-[7rem_1fr_auto]"
+                          className="group flex min-h-[96px] w-full items-center justify-between gap-3.5 rounded-2xl border border-border bg-card p-3 text-start shadow-wp-xs transition-all hover:border-primary/50 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:gap-4 sm:p-3.5"
                         >
-                          <span className="relative min-h-28 overflow-hidden rounded-xl bg-muted">
+                          <span className="relative aspect-square w-16 shrink-0 overflow-hidden rounded-xl border border-border/60 bg-muted/40 shadow-wp-xs sm:w-20">
                             <img
                               src={resolveAssetUrl(`hadith/v1/images/${thumbnail.imageRef}.png`)}
                               alt=""
@@ -184,27 +184,31 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
                               height={224}
                               loading={lesson.number <= 2 ? "eager" : "lazy"}
                               decoding="async"
-                              className="size-full object-cover"
+                              className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                             />
                             <span
-                              className={`absolute start-2 top-2 flex size-9 items-center justify-center rounded-lg font-black shadow-wp-sm ${isMastered ? "bg-wp-green text-wp-text-on-green" : "bg-card/95 text-primary"}`}
+                              className={`absolute start-1 top-1 flex size-6 items-center justify-center rounded-md text-xs font-black shadow-wp-xs backdrop-blur-sm ${
+                                isMastered
+                                  ? "bg-wp-green text-wp-text-on-green"
+                                  : "border border-border/50 bg-card/90 text-foreground"
+                              }`}
                             >
                               {isMastered ? (
-                                <CheckCircle2 className="size-5" aria-hidden />
+                                <CheckCircle2 className="size-3.5" aria-hidden />
                               ) : (
                                 lesson.number
                               )}
                             </span>
                           </span>
-                          <span className="min-w-0 py-1">
-                            <span className="block text-base font-black text-foreground">
+                          <span className="min-w-0 flex-1 flex-col justify-center gap-1">
+                            <span className="block text-sm font-black text-foreground sm:text-base leading-snug">
                               {lesson.title}
                             </span>
-                            <span className="mt-1 line-clamp-2 block text-sm leading-6 text-muted-foreground">
+                            <span className="mt-0.5 line-clamp-1 block text-xs font-medium text-muted-foreground sm:text-sm">
                               {lessonPurpose(lesson.stages.overview.text)}
                             </span>
-                            <span className="mt-2 inline-flex items-center gap-1 text-xs font-bold text-primary">
-                              <Clock3 className="size-4" aria-hidden />
+                            <span className="mt-1 inline-flex items-center gap-1 text-xs font-bold text-primary">
+                              <Clock3 className="size-3.5" aria-hidden />
                               {isDue
                                 ? t("hadith.dueNow")
                                 : progress?.status === "in-progress"
@@ -217,7 +221,7 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
                             </span>
                           </span>
                           <ArrowRight
-                            className="mt-3 size-5 self-start text-primary rtl:rotate-180"
+                            className="size-5 shrink-0 text-muted-foreground/60 transition-colors group-hover:text-primary rtl:rotate-180"
                             aria-hidden
                           />
                         </button>

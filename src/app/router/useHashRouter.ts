@@ -3,10 +3,6 @@ import type { Screen, SkillExerciseId } from "../types";
 import { SKILL_EXERCISE_IDS } from "../exercises/registry";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, resolveUnitForLesson } from "../data/lessons";
 import {
-  getFoundationLesson,
-  isFoundationLessonId,
-} from "../learning/foundations/foundationCurriculum";
-import {
   PRONUNCIATION_LESSON_COUNT,
   getPronunciationLessonMetadata,
 } from "../learning/foundations/pronunciationLessonMetadata";
@@ -47,8 +43,8 @@ export type RouteIntent =
 
 const STATIC_ROUTES: Record<string, { title: string; getScreen: () => Screen }> = {
   "#/home": { title: "WordPix — Home", getScreen: () => ({ id: "home" }) },
-  "#/explore": { title: "WordPix — Learning Path", getScreen: () => ({ id: "explore" }) },
-  "#/learn": { title: "WordPix — Learning Path", getScreen: () => ({ id: "explore" }) },
+  "#/explore": { title: "WordPix — Learning Path", getScreen: () => ({ id: "learn" as const }) },
+  "#/learn": { title: "WordPix — Learning Path", getScreen: () => ({ id: "learn" as const }) },
   "#/library": { title: "WordPix — Vocabulary Library", getScreen: () => ({ id: "library" }) },
   "#/practice": { title: "WordPix — Skill Practice", getScreen: () => ({ id: "practice" }) },
   "#/review": { title: "WordPix — Daily Review", getScreen: () => ({ id: "review" }) },
@@ -126,7 +122,8 @@ function businessUnitTitle(unitId: string): string {
 export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "onboarding") return { hash: "#/onboarding", title: "WordPix — Onboarding" };
   if (screen.id === "home") return { hash: "#/home", title: "WordPix — Home" };
-  if (screen.id === "explore") return { hash: "#/learn", title: "WordPix — Learning Path" };
+  if (screen.id === "learn" || screen.id === "explore")
+    return { hash: "#/learn", title: "WordPix — Learning Path" };
   if (screen.id === "library") return { hash: "#/library", title: "WordPix — Vocabulary Library" };
   if (screen.id === "practice") return { hash: "#/practice", title: "WordPix — Skill Practice" };
   if (screen.id === "review") return { hash: "#/review", title: "WordPix — Daily Review" };
@@ -147,10 +144,6 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "skill-hub") return { hash: "#/skills", title: "WordPix — Skill Exercises" };
   if (screen.id === "skill-exercise") {
     return { hash: `#/skills/${screen.exerciseId}`, title: `WordPix — ${screen.exerciseId}` };
-  }
-  if (screen.id === "foundation-lesson") {
-    const lesson = getFoundationLesson(screen.lessonId);
-    return { hash: `#/foundations/${lesson.id}`, title: `WordPix — ${lesson.title}` };
   }
   if (screen.id === "pronunciation-curriculum") {
     return { hash: "#/pronunciation", title: "WordPix — Pronunciation Curriculum" };
@@ -221,14 +214,6 @@ export function hashToRoute(hash: string): RouteIntent | null {
       kind: "screen",
       screen: { id: "figma-pronunciation-lesson", lessonNumber: consolidatedLessonNumber },
       title: `WordPix — ${lesson.sourceName}`,
-    };
-  }
-  if (requestedFoundationId && isFoundationLessonId(requestedFoundationId)) {
-    const lesson = getFoundationLesson(requestedFoundationId);
-    return {
-      kind: "screen",
-      screen: { id: "foundation-lesson", lessonId: lesson.id },
-      title: `WordPix — ${lesson.title}`,
     };
   }
 

@@ -19,6 +19,7 @@ import {
   type BusinessCefrLevel,
   type BusinessUnitProgress,
 } from "./businessTypes";
+import { resolveAssetUrl } from "../../../utils/assetUrl";
 
 interface Props {
   dispatch: Dispatch<Action>;
@@ -193,16 +194,32 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
             </div>
 
             <div className="flex items-center justify-between gap-4 rounded-2xl bg-card p-4 border border-border sm:col-span-1">
-              <div className="min-w-0">
-                <p className="text-xs font-bold text-muted-foreground uppercase">
-                  {t("business.nextLessonLabel")}
-                </p>
-                <p className="text-sm font-black text-foreground truncate">
-                  {t("business.unitColonTitle", {
-                    number: continueUnit.unitNumber,
-                    title: continueUnit.title,
-                  })}
-                </p>
+              <div className="flex items-center gap-3 min-w-0">
+                {continueUnit.heroImageSrc && (
+                  <div className="size-12 shrink-0 overflow-hidden rounded-xl border border-border/80 bg-muted/40 relative">
+                    <img
+                      src={resolveAssetUrl(continueUnit.heroImageSrc)}
+                      alt=""
+                      aria-hidden="true"
+                      className="size-full object-cover"
+                      loading="lazy"
+                      onError={(e) => {
+                        (e.currentTarget as HTMLElement).style.display = "none";
+                      }}
+                    />
+                  </div>
+                )}
+                <div className="min-w-0">
+                  <p className="text-xs font-bold text-muted-foreground uppercase">
+                    {t("business.nextLessonLabel")}
+                  </p>
+                  <p className="text-sm font-black text-foreground truncate">
+                    {t("business.unitColonTitle", {
+                      number: continueUnit.unitNumber,
+                      title: continueUnit.title,
+                    })}
+                  </p>
+                </div>
               </div>
               <button
                 type="button"
@@ -405,11 +422,14 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                   {unit.heroImageSrc && (
                     <div className="relative h-40 w-full overflow-hidden bg-muted/40 border-b border-border/60">
                       <img
-                        src={unit.heroImageSrc}
+                        src={resolveAssetUrl(unit.heroImageSrc)}
                         alt=""
                         aria-hidden="true"
                         className="h-full w-full object-cover object-center transition-transform duration-300 hover:scale-105"
                         loading="lazy"
+                        onError={(e) => {
+                          (e.currentTarget as HTMLElement).style.display = "none";
+                        }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-60" />
                     </div>

@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { WordImage } from "../shared/WordImage";
 import { BEDROOM_VOCABULARY } from "../data/lessons";
 import { useModalA11y } from "../shared/useModalA11y";
+import { IconButton } from "../shared/IconButton";
 import { Sparkles, X } from "lucide-react";
 import { useI18n, type TranslationValues } from "../context/I18nContext";
 import { recommendPlacement, type PlacementRecommendation } from "./placementRecommendation";
@@ -109,14 +110,14 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
         tabIndex={-1}
         className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 w-full max-w-md shadow-2xl flex flex-col gap-4 sm:gap-5 relative outline-none max-h-[92dvh] overflow-y-auto"
       >
-        <button
-          type="button"
-          onClick={onClose}
+        <IconButton
+          icon={<X className="size-5" aria-hidden />}
           aria-label={t("onboarding.closePlacementAria")}
-          className="absolute top-4 end-4 size-10 min-h-[44px] min-w-[44px] rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
-        >
-          <X className="size-5" aria-hidden />
-        </button>
+          variant="outline"
+          size="sm"
+          onClick={onClose}
+          className="absolute top-4 end-4 rounded-full"
+        />
 
         <div>
           <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider mb-1">

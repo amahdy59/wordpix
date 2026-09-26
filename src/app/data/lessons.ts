@@ -1,4 +1,4 @@
-import { FOUNDATION_SEQUENCE } from "./curriculumSequence";
+import { CURRICULUM_SEQUENCE } from "./curriculumSequence";
 
 // Centralized Lesson Vocabulary Data Layer for WordPix
 // Synchronized from Figma Design (Node 44:2 — The Bedroom)
@@ -37090,19 +37090,21 @@ export const ALL_GROUPS = Object.values(COURSE_UNITS).flatMap((world) => world.g
 /**
  * Prerequisite-aware order for Continue and Next actions.
  *
- * The catalogue order is thematic and the object happens to start with a
- * special section. It is not a learning progression. Foundation concepts lead
- * here, followed by every remaining general-English unit in module order;
- * special sections stay independently browsable and are never auto-selected.
+ * Derived directly from CURRICULUM_SEQUENCE — the single source of truth
+ * for pedagogical ordering across all 200 vocabulary units. The old
+ * foundation+catalogue merge logic is no longer needed: CURRICULUM_SEQUENCE
+ * already covers every unit in the correct CEFR-aligned order.
+ *
+ * The filter guards against any unit id that was removed from COURSE_UNITS
+ * after the sequence was last updated — it keeps the runtime safe even if
+ * the two files drift temporarily.
+ *
+ * Special-section units (hadith-niyyah) are naturally excluded because they
+ * do not appear in CURRICULUM_SEQUENCE.
  */
-const CATALOGUE_UNIT_SEQUENCE = COURSE_MODULES.filter((module) => !module.isSpecialSection).flatMap(
-  (module) => module.unitIds
+export const LEARNING_PATH_UNIT_IDS = (CURRICULUM_SEQUENCE as readonly string[]).filter((id) =>
+  Boolean(COURSE_UNITS[id])
 );
-const FOUNDATION_UNIT_IDS = new Set<string>(FOUNDATION_SEQUENCE);
-export const LEARNING_PATH_UNIT_IDS = [
-  ...FOUNDATION_SEQUENCE,
-  ...CATALOGUE_UNIT_SEQUENCE.filter((id) => !FOUNDATION_UNIT_IDS.has(id)),
-].filter((id, index, all) => all.indexOf(id) === index && Boolean(COURSE_UNITS[id]));
 
 export const LEARNING_PATH_GROUPS = LEARNING_PATH_UNIT_IDS.flatMap(
   (unitId) => COURSE_UNITS[unitId]?.groups ?? []

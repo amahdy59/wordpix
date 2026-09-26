@@ -16,6 +16,7 @@ import { BusinessExerciseStage } from "./stages/BusinessExerciseStage";
 import { BusinessDiscussionStage } from "./stages/BusinessDiscussionStage";
 import { BusinessSpeakingStage } from "./stages/BusinessSpeakingStage";
 import { BusinessReviewStage } from "./stages/BusinessReviewStage";
+import { resolveAssetUrl } from "../../../utils/assetUrl";
 
 interface Props {
   unitId: string;
@@ -162,7 +163,21 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
 
           <div className="h-4 w-px bg-border hidden sm:block" aria-hidden />
 
-          <div className="flex items-center gap-2 min-w-0">
+          <div className="flex items-center gap-2.5 min-w-0">
+            {unit.heroImageSrc && (
+              <div className="size-8 shrink-0 overflow-hidden rounded-lg border border-border/80 bg-muted/40 relative hidden sm:block">
+                <img
+                  src={resolveAssetUrl(unit.heroImageSrc)}
+                  alt=""
+                  aria-hidden="true"
+                  className="size-full object-cover"
+                  loading="lazy"
+                  onError={(e) => {
+                    (e.currentTarget as HTMLElement).style.display = "none";
+                  }}
+                />
+              </div>
+            )}
             <span className="shrink-0 rounded-lg bg-primary/15 px-2 py-0.5 text-xs font-black text-primary uppercase">
               {unit.level}
             </span>

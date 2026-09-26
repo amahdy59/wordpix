@@ -34,9 +34,10 @@ function AppInner() {
       try {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (!saved) return fallback;
-        const parsed = JSON.parse(saved) as Screen;
+        const parsed = JSON.parse(saved) as { id?: string };
         if (!parsed || typeof parsed !== "object" || typeof parsed.id !== "string") return fallback;
-        return parsed;
+        if (parsed.id === "foundation-lesson") return { id: "learn" };
+        return parsed as Screen;
       } catch {
         return fallback;
       }
@@ -60,10 +61,6 @@ function AppInner() {
     }
     if (screen.id === "skill-exercise") {
       dispatch({ type: "OPEN_SKILL_EXERCISE", exerciseId: screen.exerciseId });
-      return;
-    }
-    if (screen.id === "foundation-lesson") {
-      dispatch({ type: "START_FOUNDATION_LESSON", lessonId: screen.lessonId });
       return;
     }
     if (screen.id === "lesson") return; // Not reachable from a URL alone.
@@ -112,7 +109,6 @@ function AppInner() {
         | "learning-materials"
         | "hadith-lesson"
         | "figma-pronunciation-lesson"
-        | "foundation-lesson"
         | "skill-exercise"
         | "lesson"
         | "learn-words"

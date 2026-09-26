@@ -8,6 +8,7 @@
   "nav": {
     "label": "التنقل الرئيسي",
     "home": "الرئيسية",
+    "learn": "التعلّم",
     "explore": "التعلّم",
     "library": "المكتبة",
     "practice": "التدريب",
@@ -136,7 +137,7 @@
     "retentionPractice": "لديك {count} مفردة مجدولة للتمرين بهدف تعزيز التذكر والحفظ.",
     "excellentRetention": "ذاكرة ممتازة! لقد راجعت جميع مفرداتك المقررة لهذا اليوم.",
     "reviewReadyTitle": "تُفتح المراجعات بعد درسك الأول",
-    "reviewReadyDesc": "ابدأ درس التأسيس الموجّه لإنشاء جدول مراجعة مخصص لك.",
+    "reviewReadyDesc": "ابدأ درس الصور المقترح لإنشاء جدول مراجعة مخصص لك.",
     "corePathLevel": "المسار الأساسي · المستوى {level}",
     "optionalPicturePractice": "تدريب اختياري بالصور",
     "practiseSkill": "تدرّب على مهارة",
@@ -151,7 +152,7 @@
     "specialCurricula": "مناهج التعلم المتخصصة",
     "pathBadge": "مسار إنجليزي موجّه",
     "title": "مسار تعلّمك",
-    "subtitle": "تابع درس القراءة المقترح، ثم استكشف مسار كلمات الصور الكامل. يمكنك فتح أي وحدة بالسرعة التي تناسبك.",
+    "subtitle": "استكشف مسار كلمات الصور الكامل والمناهج المتخصصة بالسرعة التي تناسبك.",
     "foundationProgress": "المسار التأسيسي",
     "foundationProgressAria": "تقدم المسار التأسيسي: أتقنت {mastered} من {total} كلمة",
     "browseLibrary": "تصفح مكتبة المفردات",
@@ -318,7 +319,13 @@
     "cefrGseBadge": "CEFR {cefr} · GSE {start}–{end}",
     "wordsBadge": "{count} كلمة",
     "studyButton": "دراسة",
-    "startUnit": "بدء الوحدة"
+    "startUnit": "بدء الوحدة",
+    "filterStatus": "الحالة:",
+    "unitsFound": "تم العثور على {count} وحدة",
+    "statusAll": "الكل",
+    "statusMastered": "متقنة",
+    "statusInProgress": "قيد التعلّم",
+    "statusNotStarted": "لم تبدأ"
   },
   "gamification": {
     "mastered": "متقن",
@@ -1000,6 +1007,13 @@
     "noResultsDescription": "جرّب صوتًا أو كلمة أو عنوان درس مختلفًا.",
     "soundFocus": "محور الصوت",
     "contrastPairs": "المقارنات الصوتية المستهدفة",
+    "viewLessonDetails": "عرض التفاصيل التربوية للدرس {lesson}",
+    "detailsTooltip": "نظرة عامة على الدرس وإرشادات وضع الفم",
+    "modalObjective": "الهدف التعليمي",
+    "modalArticulation": "إرشادات وضع الفم والنطق",
+    "modalContrasts": "المقارنات الصوتية المستهدفة",
+    "modalStartLesson": "بدء الدرس {number}",
+    "modalClose": "إغلاق",
     "badge": "النطق · الدرس {current} من {total}",
     "stageProgress": "المرحلة {current} من {total}",
     "previousBest": "أفضل نتيجة سابقة: {score}%",
@@ -1590,7 +1604,13 @@
       "stageTag": "المرحلة 1 · مناقشات التهيئة",
       "essentialQuestion": "السؤال الجوهري",
       "speakingGoalLabel": "هدف التحدث:",
-      "reflectHeading": "تأمل في خبرات العمل السابقة",
+      "reflectHeading": "سيناريوهات التهيئة في بيئة العمل",
+      "instructionsFallback": "اختر الأسلوب المهني الأكثر فاعلية لكل موقف لتنشيط تفكيرك والاطلاع على الملاحظات الاستراتيجية.",
+      "feedbackTitle": "ملاحظات استراتيجية لبيئة العمل",
+      "recommendedBadge": "أفضل الممارسات الموصى بها",
+      "alternativeBadge": "نهج بديل",
+      "selectedOptionNote": "لقد اخترت الخيار {key}. راجع الملاحظات الاستراتيجية أدناه:",
+      "questionsProgress": "تم استكشاف {answered} من {total} أسئلة",
       "continueToScenario": "المتابعة إلى سيناريو الحالة"
     },
     "input": {
@@ -1704,6 +1724,9 @@
     "correctFeedback": "إجابة صحيحة! عمل رائع.",
     "incorrectFeedback": "إجابة غير صحيحة. راجع الشرح أدناه.",
     "explanation": "الشرح",
-    "questionPillLabel": "السؤال {number}"
+    "questionPillLabel": "السؤال {number}",
+    "pageOf": "الصفحة {current} من {total}",
+    "previousPage": "السابق",
+    "nextPage": "الأسئلة التالية"
   }
 }

@@ -21,7 +21,7 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Pro
     stem: q.question,
     correctValue: q.correctAnswer,
     explanation: q.explanation,
-    optionColumns: "two",
+    optionColumns: "one",
     options: q.options.map((option) => ({
       value: option.key,
       label: option.text,
@@ -38,7 +38,7 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Pro
   };
 
   return (
-    <div className="flex flex-col gap-6 max-w-4xl mx-auto w-full py-2">
+    <div className="flex flex-col gap-6 max-w-6xl mx-auto w-full py-2">
       {/* Stage Header */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
@@ -52,8 +52,8 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Pro
         )}
       </div>
 
-      {/* Unified Quiz Engine */}
-      <CurriculumQuizEngine questions={questions} onComplete={handleComplete} />
+      {/* Unified Quiz Engine showing 3 questions at a time on desktop */}
+      <CurriculumQuizEngine questions={questions} onComplete={handleComplete} desktopPageSize={3} />
 
       {/* Stage Navigation Footer */}
       <div className="mt-2 flex items-center justify-between">

@@ -11,6 +11,7 @@ import { useModalA11y } from "./useModalA11y";
 import { useI18n } from "../context/I18nContext";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { WordDetailsContent } from "./WordDetailsContent";
+import { Button } from "./Button";
 
 interface Props {
   word: VocabularyItem | null;
@@ -114,15 +115,17 @@ export const WordInspectorModal = memo(function WordInspectorModal({
               </div>
 
               {/* Fast Pronounce Button */}
-              <button
+              <Button
                 type="button"
+                variant="primary"
+                size="sm"
+                iconLeft={<Volume2 className="size-4" />}
                 onClick={() => speak(word.label)}
                 aria-label={t("wordInspector.pronounce", { word: word.label })}
-                className="flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-4 py-2 min-h-[44px] rounded-full bg-primary text-primary-foreground font-sans font-bold text-xs sm:text-sm shadow-md hover:opacity-90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white shrink-0 cursor-pointer"
+                className="rounded-full shadow-md shrink-0 focus-visible:outline-white"
               >
-                <Volume2 className="size-4" />
-                <span>{t("action.listen")}</span>
-              </button>
+                {t("action.listen")}
+              </Button>
             </div>
           </div>
 
@@ -130,13 +133,15 @@ export const WordInspectorModal = memo(function WordInspectorModal({
 
           {/* Bottom Footer */}
           <div className="p-4 border-t border-border bg-muted/20 flex items-center justify-end">
-            <button
+            <Button
               type="button"
+              variant="primary"
+              size="md"
               onClick={onClose}
-              className="w-full sm:w-auto px-6 py-2.5 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-xs hover:opacity-90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+              className="w-full sm:w-auto"
             >
               {t("action.done")}
-            </button>
+            </Button>
           </div>
         </motion.div>
       </div>

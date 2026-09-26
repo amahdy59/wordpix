@@ -292,7 +292,7 @@ export function getPronunciationQuestion(
   number: number,
   stage: 1 | 2 | 3 | 4,
   trial: number,
-  childMode: boolean
+  childMode: boolean = false
 ) {
   const activity = getFigmaPronunciationActivityData(number);
   const pool =
@@ -348,4 +348,68 @@ export function getStressBeatPattern(lessonNumber: number, label: string): strin
     return "● ·";
   }
   return undefined;
+}
+
+export interface PronunciationCardPresentation {
+  readonly cleanTitle: string;
+  readonly phoneticBadge?: string;
+  readonly firstImage?: FigmaPronunciationImage;
+  readonly secondImage?: FigmaPronunciationImage;
+  readonly primaryWords: readonly string[];
+  readonly fallbackSymbols?: string;
+}
+
+export function getPronunciationCardPresentation(number: number): PronunciationCardPresentation {
+  const lesson = getFigmaPronunciationLesson(number);
+  const activity = getFigmaPronunciationActivityData(number);
+
+  // Clean title & phonetic badge extraction
+  const parenMatch = activity.title.match(/^(.*?)\s*\((.*?)\)$/);
+  const cleanTitle = parenMatch ? parenMatch[1].trim() : activity.title;
+  let phoneticBadge = parenMatch ? parenMatch[2].trim() : undefined;
+
+  if (!phoneticBadge) {
+    const focusMatch = activity.focus.match(/\/[^/]+\/(?:\s*(?:vs|–|—|\/)\s*\/[^/]+\/)?/);
+    if (focusMatch) {
+      phoneticBadge = focusMatch[0];
+    }
+  }
+
+  // Find dual images (prioritizing the authored minimal pair)
+  let firstImage: FigmaPronunciationImage | undefined;
+  let secondImage: FigmaPronunciationImage | undefined;
+  let primaryWords: string[] = [];
+
+  if (activity.contrastPairs.length > 0) {
+    const [w1, w2] = activity.contrastPairs[0];
+    const img1 = activity.items.find((item) => item.label.toLowerCase() === w1.toLowerCase());
+    const img2 = activity.items.find((item) => item.label.toLowerCase() === w2.toLowerCase());
+    if (img1 && img2) {
+      firstImage = img1;
+      secondImage = img2;
+      primaryWords = [w1, w2];
+    }
+  }
+
+  // Fallback to first available images in the lesson
+  if (!firstImage || !secondImage) {
+    const available = activity.items.length >= 2 ? activity.items : lesson.images;
+    if (available.length >= 2) {
+      firstImage = available[0];
+      secondImage = available[1];
+      primaryWords = [firstImage.label, secondImage.label];
+    } else if (available.length === 1) {
+      firstImage = available[0];
+      primaryWords = [firstImage.label];
+    }
+  }
+
+  return {
+    cleanTitle,
+    phoneticBadge,
+    firstImage,
+    secondImage,
+    primaryWords,
+    fallbackSymbols: phoneticBadge ?? (activity.contrastPairs[0]?.join(" · ") || cleanTitle),
+  };
 }

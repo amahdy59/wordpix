@@ -20,6 +20,7 @@ import {
   type BusinessProgress,
 } from "../learning/business/businessProgress";
 import { hashToRoute, screenToHash } from "../router/useHashRouter";
+import { resolveAssetUrl } from "../../utils/assetUrl";
 
 describe("Beyond Business English (B1–C2) Curriculum", () => {
   it("contains exactly 40 units across 4 CEFR sections", () => {
@@ -51,10 +52,24 @@ describe("Beyond Business English (B1–C2) Curriculum", () => {
 
   it("verifies locked 8-stage pedagogical structure in every unit", () => {
     BUSINESS_UNITS.forEach((unit) => {
-      // 1. Warm-up
+      // 1. Warm-up (multiple-choice questions with feedback, max 7 questions)
       expect(unit.essentialQuestion).toBeTruthy();
       expect(typeof unit.warmup.instructions).toBe("string");
       expect(Array.isArray(unit.warmup.prompts)).toBe(true);
+      expect(unit.warmup.prompts.length).toBeGreaterThanOrEqual(1);
+      expect(unit.warmup.prompts.length).toBeLessThanOrEqual(7);
+      unit.warmup.prompts.forEach((prompt) => {
+        expect(prompt.id).toBeTruthy();
+        expect(prompt.question).toBeTruthy();
+        expect(Array.isArray(prompt.options)).toBe(true);
+        expect(prompt.options!.length).toBeGreaterThanOrEqual(2);
+        prompt.options!.forEach((opt) => {
+          expect(opt.key).toBeTruthy();
+          expect(opt.text).toBeTruthy();
+        });
+        expect(prompt.correctAnswer).toBeTruthy();
+        expect(prompt.explanation).toBeTruthy();
+      });
 
       // 2. Workplace Input
       expect(unit.mainInput.title).toBeTruthy();
@@ -157,6 +172,13 @@ describe("Beyond Business English (B1–C2) Curriculum", () => {
           `^/business/v1/heroes/unit-${String(unit.unitNumber).padStart(2, "0")}-hero\\.webp$`
         )
       );
+      // Ensure thumbnail path resolves properly
+      const resolvedHero = resolveAssetUrl(unit.heroImageSrc!);
+      expect(resolvedHero).toBeTruthy();
+      expect(resolvedHero).toContain(
+        `business/v1/heroes/unit-${String(unit.unitNumber).padStart(2, "0")}-hero.webp`
+      );
+
       unit.languageBank.forEach((vocab) => {
         expect(vocab.imageSrc).toMatch(
           new RegExp(`^/business/v1/images/unit-${String(unit.unitNumber).padStart(2, "0")}/vocab-`)

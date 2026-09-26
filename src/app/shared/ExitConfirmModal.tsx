@@ -4,6 +4,8 @@ import { AlertTriangle } from "lucide-react";
 import { useModalA11y } from "./useModalA11y";
 import { useI18n } from "../context/I18nContext";
 
+import { Button } from "./Button";
+
 interface Props {
   isOpen: boolean;
   onCancel: () => void;
@@ -51,20 +53,19 @@ export const ExitConfirmModal = memo(function ExitConfirmModal({
         </div>
 
         <div className="flex flex-col w-full gap-2.5 mt-2">
-          <button
-            type="button"
-            onClick={onCancel}
-            className="w-full bg-primary hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-primary-foreground text-base min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all shadow-sm"
-          >
+          <Button type="button" variant="primary" size="lg" fullWidth onClick={onCancel}>
             {t("lesson.keepPracticing")}
-          </button>
-          <button
+          </Button>
+          <Button
             type="button"
+            variant="ghost"
+            size="md"
+            fullWidth
             onClick={onConfirm}
-            className="w-full bg-muted hover:bg-wp-rose-light hover:text-wp-rose text-muted-foreground rounded-xl py-3 font-sans font-semibold text-sm min-h-[44px] focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary transition-colors"
+            className="hover:bg-wp-rose-light hover:text-wp-rose"
           >
             {t("lesson.leaveLesson")}
-          </button>
+          </Button>
         </div>
       </div>
     </div>,

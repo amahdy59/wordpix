@@ -39,7 +39,7 @@ describe("CurriculumQuizEngine", () => {
   it("renders first question with progress pills (1..N) visible", () => {
     render(
       <I18nProvider>
-        <CurriculumQuizEngine questions={mockQuestions} />
+        <CurriculumQuizEngine questions={mockQuestions} desktopPageSize={1} />
       </I18nProvider>
     );
 
@@ -55,7 +55,7 @@ describe("CurriculumQuizEngine", () => {
   it("reveals feedback and explanation after selecting an option", async () => {
     render(
       <I18nProvider>
-        <CurriculumQuizEngine questions={mockQuestions} />
+        <CurriculumQuizEngine questions={mockQuestions} desktopPageSize={1} />
       </I18nProvider>
     );
 
@@ -76,7 +76,7 @@ describe("CurriculumQuizEngine", () => {
   it("advances to next question after answering", async () => {
     render(
       <I18nProvider>
-        <CurriculumQuizEngine questions={mockQuestions} />
+        <CurriculumQuizEngine questions={mockQuestions} desktopPageSize={1} />
       </I18nProvider>
     );
 
@@ -96,7 +96,7 @@ describe("CurriculumQuizEngine", () => {
   it("shows completion screen with score after last question", async () => {
     render(
       <I18nProvider>
-        <CurriculumQuizEngine questions={mockQuestions} />
+        <CurriculumQuizEngine questions={mockQuestions} desktopPageSize={1} />
       </I18nProvider>
     );
 
@@ -118,7 +118,11 @@ describe("CurriculumQuizEngine", () => {
     const onComplete = vi.fn();
     render(
       <I18nProvider>
-        <CurriculumQuizEngine questions={mockQuestions} onComplete={onComplete} />
+        <CurriculumQuizEngine
+          questions={mockQuestions}
+          desktopPageSize={1}
+          onComplete={onComplete}
+        />
       </I18nProvider>
     );
 

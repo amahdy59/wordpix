@@ -185,7 +185,7 @@ describe("Navigation labels come from the bundle", () => {
     const { TABS } = await import("../shared/BottomTabBar");
     expect(TABS.map((tab) => tab.labelKey)).toEqual([
       "nav.home",
-      "nav.explore",
+      "nav.learn",
       "nav.library",
       "nav.practice",
       "nav.profile",

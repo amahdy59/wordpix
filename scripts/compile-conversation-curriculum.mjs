@@ -252,7 +252,8 @@ function parseUnitFile(filePath) {
     const meaning = parts[2] || "";
     const example = parts[3] || "";
     const imageDescription = parts[4] || `Image showing ${term}`;
-    const imageSrc = findWordImage(term);
+    const slug = term.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "item";
+    const imageSrc = `/conversation/v1/images/unit-${String(unitNumber).padStart(2, "0")}/${String(idx + 1).padStart(2, "0")}-${slug}.webp`;
 
     return {
       id: `term-${unitNumber}-${idx + 1}`,
@@ -297,24 +298,45 @@ function parseUnitFile(filePath) {
     const qMatch = block.match(/^(?:\*\*)?(\d+)\.\s*([^*\n]+(?:\*\*)?)/);
     const qText = block.split(/\n/)[0].replace(/^(?:\*\*)?\d+\.\s*/, "").replace(/\*\*/g, "").trim();
 
-    // Parse options A, B, C, D
-    const optionMatches = Array.from(block.matchAll(/(?:^|\s+)([A-D])\.\s*([^A-D\n]+(?:\n(?![A-D]\.)[^\n]+)*)/g));
-    const options = ["A", "B", "C", "D"].map(letter => {
-      const found = optionMatches.find(m => m[1] === letter);
-      return {
-        key: letter,
-        text: found ? found[2].trim() : `Option ${letter}`
-      };
-    });
+    // Parse options A, B, C, D using robust marker indexing
+    const foundOptions = new Map();
+    const optionMarkers = Array.from(block.matchAll(/(?:^|[\s\*\n])([A-D])\.\s*/g));
+    if (optionMarkers.length >= 4) {
+      for (let i = 0; i < optionMarkers.length; i++) {
+        const letter = optionMarkers[i][1];
+        const start = optionMarkers[i].index + optionMarkers[i][0].length;
+        const end = (i + 1 < optionMarkers.length) ? optionMarkers[i + 1].index : block.length;
+        let optText = block.substring(start, end).trim();
+        optText = optText.replace(/\s+/g, " ").replace(/\s*\*\*.*$/, "").replace(/[\r\n]/g, " ").trim();
+        if (!foundOptions.has(letter)) {
+          foundOptions.set(letter, optText);
+        }
+      }
+    } else {
+      const fallbackMatches = Array.from(block.matchAll(/([A-D])\.\s*([^A-D\n]+(?:\n(?![A-D]\.)[^\n]+)*)/g));
+      fallbackMatches.forEach(m => {
+        if (!foundOptions.has(m[1])) {
+          foundOptions.set(m[1], m[2].replace(/\s+/g, " ").trim());
+        }
+      });
+    }
+
+    const options = ["A", "B", "C", "D"].map(letter => ({
+      key: letter,
+      text: foundOptions.get(letter) || `Option ${letter}`
+    }));
 
     const correctAnswer = answerMap.get(qNum) || "A";
+    const correctOpt = options.find(o => o.key === correctAnswer);
+    const correctText = correctOpt ? correctOpt.text : "";
+    const explanation = `Option ${correctAnswer} ("${correctText}") is the correct answer according to the lesson reading and language bank.`;
 
     return {
       id: `q-${unitNumber}-${qNum}`,
       question: qText,
       options,
       correctAnswer: correctAnswer,
-      explanation: undefined
+      explanation
     };
   });
 

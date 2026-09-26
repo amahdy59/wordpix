@@ -65,9 +65,18 @@ describe("action-oriented curriculum", () => {
     const catalogueIds = COURSE_MODULES.filter((module) => !module.isSpecialSection).flatMap(
       (module) => module.unitIds
     );
-    expect(LEARNING_PATH_UNIT_IDS.slice(0, FOUNDATION_SEQUENCE.length)).toEqual([
-      ...FOUNDATION_SEQUENCE,
-    ]);
+    // All 18 original foundation units must be present in the first CEFR stage
+    // (first 58 units of the path — Pre-A1 + A1). They are no longer required to
+    // appear in the old 18-unit block order; CURRICULUM_SEQUENCE is the canonical
+    // pedagogical ordering and the foundation units are distributed across Stage 1.
+    const earlyPathIds = new Set(LEARNING_PATH_UNIT_IDS.slice(0, 58));
+    for (const id of FOUNDATION_SEQUENCE) {
+      expect(
+        earlyPathIds.has(id),
+        `Foundation unit "${id}" must appear in first 58 path units`
+      ).toBe(true);
+    }
+    // Full catalogue coverage is unchanged.
     expect(new Set(LEARNING_PATH_UNIT_IDS)).toEqual(new Set(catalogueIds));
   });
   it("chunks active vocabulary and preserves every word exactly once", () => {

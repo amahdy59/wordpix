@@ -5,8 +5,9 @@ const assetsDir = path.resolve("dist/assets");
 const files = (await readdir(assetsDir)).filter((file) => file.endsWith(".js"));
 const budgets = [
   { pattern: /^index-/, limit: 900 * 1024, label: "initial runtime" },
-  { pattern: /^(?!index-)(?!conversationCatalog)(?!course-lessons)(?!lexicon-dictionary).*\.js$/, limit: 600 * 1024, label: "runtime chunk" },
+  { pattern: /^(?!index-)(?!conversationCatalog)(?!businessCatalog)(?!course-lessons)(?!lexicon-dictionary).*\.js$/, limit: 600 * 1024, label: "runtime chunk" },
   { pattern: /^conversationCatalog/, limit: 700 * 1024, label: "conversation data" },
+  { pattern: /^businessCatalog/, limit: 750 * 1024, label: "business data" },
   { pattern: /^course-lessons/, limit: 800 * 1024, label: "course data" },
   { pattern: /^lexicon-dictionary/, limit: 2 * 1024 * 1024, label: "lexicon data" },
 ];

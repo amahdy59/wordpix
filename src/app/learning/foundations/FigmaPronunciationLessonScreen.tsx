@@ -70,7 +70,6 @@ function getCueBadge(cue: string): { labelKey: string; icon: string } | null {
 export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props) {
   const { t } = useI18n();
   const { state, recordPronunciationCheckpoint, recordPronunciationCompletion } = useLearner();
-  const childMode = state.preferences.expression === "child";
   const activity = getFigmaPronunciationActivityData(lessonNumber);
   const progress = state.pronunciationProgress[`lesson-${String(lessonNumber).padStart(2, "0")}`];
   const restoredStage =
@@ -90,8 +89,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     preferLocal: true,
   });
   const { speakFeedback, cancel: cancelSpokenFeedback } = useSpokenFeedback();
-  const question =
-    stage === 0 ? null : getPronunciationQuestion(lessonNumber, stage, trial, childMode);
+  const question = stage === 0 ? null : getPronunciationQuestion(lessonNumber, stage, trial);
   const target =
     stage === 0
       ? (activity.items.find(
@@ -424,9 +422,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                   {t("pronunciation.contrastHeroTitle")}
                 </h2>
                 <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
-                  {childMode
-                    ? t("pronunciation.childContrastHint")
-                    : t("pronunciation.contrastHeroDescription")}
+                  {t("pronunciation.contrastHeroDescription")}
                 </p>
               </div>
               <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary">

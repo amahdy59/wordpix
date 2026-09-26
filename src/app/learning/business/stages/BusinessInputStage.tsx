@@ -2,6 +2,10 @@ import { useMemo, useState } from "react";
 import { BookOpen, ArrowRight, UserCheck, MessageSquareQuote, Volume2, Users } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
+import { RichPassageText } from "../../../shared/RichPassageText";
+import { VocabularyDetailModal } from "../../../shared/VocabularyDetailModal";
+import type { VocabularyTableItem } from "../../../shared/CurriculumVocabularyTable";
+import { resolveAssetUrl } from "../../../../utils/assetUrl";
 
 interface Props {
   unit: BusinessUnit;
@@ -11,6 +15,7 @@ interface Props {
 export function BusinessInputStage({ unit, onNext }: Props) {
   const { t } = useI18n();
   const [playingIdx, setPlayingIdx] = useState<number | null>(null);
+  const [activeTerm, setActiveTerm] = useState<string | null>(null);
 
   // Extract unique speakers (excluding Narrator)
   const speakers = useMemo(() => {
@@ -24,9 +29,38 @@ export function BusinessInputStage({ unit, onNext }: Props) {
   }, [unit.mainInput.dialogue]);
 
   // Set of target vocabulary terms for visual highlight
-  const targetTerms = useMemo(() => {
-    return unit.languageBank.map((item) => item.term.trim().toLowerCase());
+  const vocabTerms = useMemo(() => {
+    return unit.languageBank.map((item) => item.term);
   }, [unit.languageBank]);
+
+  const selectedVocabItem = useMemo<VocabularyTableItem | null>(() => {
+    if (!activeTerm) return null;
+    const norm = (s: string) => s.toLowerCase().trim().replace(/[-_]/g, " ");
+    const targetNorm = norm(activeTerm);
+
+    const match = unit.languageBank.find((i) => {
+      const bNorm = norm(i.term);
+      return (
+        bNorm === targetNorm ||
+        bNorm + "s" === targetNorm ||
+        targetNorm + "s" === bNorm ||
+        (bNorm.length >= 4 && targetNorm.includes(bNorm)) ||
+        (targetNorm.length >= 4 && bNorm.includes(targetNorm))
+      );
+    });
+
+    if (match) {
+      return {
+        id: match.id,
+        term: match.term,
+        type: match.type,
+        definition: match.definition,
+        example: match.example,
+        imageSrc: match.imageSrc ? resolveAssetUrl(match.imageSrc) : undefined,
+      };
+    }
+    return null;
+  }, [activeTerm, unit.languageBank]);
 
   const handleSpeak = (text: string, idx: number) => {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
@@ -39,37 +73,6 @@ export function BusinessInputStage({ unit, onNext }: Props) {
     utterance.onend = () => setPlayingIdx(null);
     utterance.onerror = () => setPlayingIdx(null);
     window.speechSynthesis.speak(utterance);
-  };
-
-  // Helper to highlight target vocabulary inside text
-  const renderHighlightedText = (text: string) => {
-    if (!targetTerms.length) return text;
-
-    // Build regex of longer terms first to prevent partial match collisions
-    const sortedTerms = [...targetTerms]
-      .filter((t) => t.length > 2)
-      .sort((a, b) => b.length - a.length);
-
-    if (!sortedTerms.length) return text;
-
-    const escaped = sortedTerms.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
-    const regex = new RegExp(`\\b(${escaped.join("|")})\\b`, "gi");
-    const parts = text.split(regex);
-
-    return parts.map((part, i) => {
-      const isTarget = sortedTerms.includes(part.toLowerCase());
-      if (isTarget) {
-        return (
-          <mark
-            key={i}
-            className="rounded bg-primary/20 px-1 py-0.5 font-bold text-foreground underline decoration-primary decoration-2 underline-offset-2"
-          >
-            {part}
-          </mark>
-        );
-      }
-      return part;
-    });
   };
 
   return (
@@ -199,7 +202,11 @@ export function BusinessInputStage({ unit, onNext }: Props) {
                     isNarrator ? "italic font-normal" : "font-medium text-foreground"
                   }`}
                 >
-                  {renderHighlightedText(line.text)}
+                  <RichPassageText
+                    text={line.text}
+                    vocabTerms={vocabTerms}
+                    onTermClick={(term) => setActiveTerm(term)}
+                  />
                 </p>
               </div>
             );
@@ -218,6 +225,13 @@ export function BusinessInputStage({ unit, onNext }: Props) {
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
       </div>
+
+      {/* Accessible Interactive Word Inspector Modal */}
+      <VocabularyDetailModal
+        item={selectedVocabItem}
+        isOpen={Boolean(activeTerm && selectedVocabItem)}
+        onClose={() => setActiveTerm(null)}
+      />
     </div>
   );
 }

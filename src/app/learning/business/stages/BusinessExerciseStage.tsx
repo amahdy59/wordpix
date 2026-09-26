@@ -19,6 +19,7 @@ export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, o
     stem: ex.question,
     correctValue: ex.correctAnswer,
     explanation: ex.explanation,
+    optionColumns: "one",
     options: ex.options.map((option) => ({
       value: option.key,
       label: option.text,
@@ -32,7 +33,7 @@ export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, o
   };
 
   return (
-    <div className="flex flex-col gap-6 max-w-4xl mx-auto w-full py-2">
+    <div className="flex flex-col gap-6 max-w-6xl mx-auto w-full py-2">
       {/* Stage Header */}
       <div className="flex items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
@@ -49,8 +50,8 @@ export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, o
         )}
       </div>
 
-      {/* Unified Quiz Engine */}
-      <CurriculumQuizEngine questions={questions} onComplete={handleComplete} />
+      {/* Unified Quiz Engine showing 3 questions at a time on desktop */}
+      <CurriculumQuizEngine questions={questions} onComplete={handleComplete} desktopPageSize={3} />
 
       {/* Proceed button (shown after engine reaches completion screen) */}
       <div className="flex justify-end">

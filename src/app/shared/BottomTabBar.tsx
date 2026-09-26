@@ -12,7 +12,7 @@ interface Props {
 /** Labels come from the i18n bundle so the tab bar mirrors the sidebar exactly. */
 export const TABS: { id: TabId; labelKey: string; icon: React.ElementType }[] = [
   { id: "home", labelKey: "nav.home", icon: Home },
-  { id: "explore", labelKey: "nav.explore", icon: Route },
+  { id: "learn", labelKey: "nav.learn", icon: Route },
   { id: "library", labelKey: "nav.library", icon: Library },
   { id: "practice", labelKey: "nav.practice", icon: Dumbbell },
   { id: "profile", labelKey: "nav.profile", icon: UserCircle },

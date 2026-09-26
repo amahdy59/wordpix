@@ -1,6 +1,6 @@
-import { useState, useId, useRef, useEffect } from "react";
+import { useState, useId, useRef, useEffect, type RefObject } from "react";
 import { CheckCircle2, XCircle, RotateCcw, Trophy, ArrowLeft, ArrowRight } from "lucide-react";
-import { useI18n } from "../../i18n";
+import { useI18n, type TranslationValues } from "../../i18n";
 import { ChoiceOptionGroup, type ChoiceOption } from "./ChoiceOptionGroup";
 
 // ─── Public Types ────────────────────────────────────────────────────────────
@@ -34,37 +34,193 @@ interface Props {
   onComplete?: (result: QuizResult) => void;
   onAnswerChange?: (result: QuizResult) => void;
   className?: string;
+  /**
+   * How many questions to show per page on desktop (≥1024px).
+   * On mobile, always shows 1 question at a time.
+   * Defaults to 3.
+   */
+  desktopPageSize?: number;
 }
 
 // ─── Pill status type ────────────────────────────────────────────────────────
 
-type PillStatus = "unanswered" | "correct" | "incorrect" | "active";
-
-function getPillStatus(
-  index: number,
-  current: number,
-  answers: Record<string, string>,
-  questions: readonly QuizQuestion[]
-): PillStatus {
-  const q = questions[index];
-  if (!q) return "unanswered";
-  if (index === current) return "active";
-  const answer = answers[q.id];
-  if (answer === undefined) return "unanswered";
-  return answer === q.correctValue ? "correct" : "incorrect";
-}
+type PillStatus = "unanswered" | "correct" | "incorrect" | "active" | "active-page";
 
 // ─── Pill colours ────────────────────────────────────────────────────────────
 
 const PILL_STYLES: Record<PillStatus, string> = {
   active:
     "border-primary bg-primary text-primary-foreground ring-2 ring-primary ring-offset-2 ring-offset-background",
+  "active-page":
+    "border-primary/60 bg-primary/10 text-primary ring-2 ring-primary/40 ring-offset-1 ring-offset-background",
   correct:
     "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground",
   incorrect:
     "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground",
   unanswered: "border-border bg-muted text-muted-foreground hover:bg-muted/80",
 };
+
+// ─── Single Question Card ─────────────────────────────────────────────────────
+
+interface QuestionCardProps {
+  question: QuizQuestion;
+  index: number;
+  total: number;
+  currentAnswer: string | undefined;
+  onAnswer: (value: string) => void;
+  engineId: string;
+  t: (key: string, values?: TranslationValues) => string;
+  headingRef?: RefObject<HTMLHeadingElement>;
+  /** Show "Question X of Y" counter label (mobile single-view mode). */
+  showCounter?: boolean;
+}
+
+function QuestionCard({
+  question,
+  index,
+  total,
+  currentAnswer,
+  onAnswer,
+  engineId,
+  t,
+  headingRef,
+  showCounter = true,
+}: QuestionCardProps) {
+  const answered = currentAnswer !== undefined;
+  const isCorrect = currentAnswer === question.correctValue;
+  const questionHeadingId = `${engineId}-q${question.id}`;
+  const feedbackId = `${engineId}-feedback-${question.id}`;
+
+  return (
+    <article
+      className="overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs"
+      aria-labelledby={questionHeadingId}
+    >
+      <div className="p-5 sm:p-6">
+        {/* Counter label (mobile single-question mode) */}
+        {showCounter && (
+          <p className="mb-3 text-xs font-bold uppercase tracking-wider text-muted-foreground">
+            {t("quiz.questionOf", {
+              current: index + 1,
+              total,
+            }) || `Question ${index + 1} of ${total}`}
+          </p>
+        )}
+
+        {/* Question stem */}
+        <h2
+          ref={headingRef}
+          id={questionHeadingId}
+          tabIndex={-1}
+          className="text-lg font-black leading-snug text-foreground focus-visible:outline-none sm:text-xl"
+        >
+          {/* Question number badge in desktop multi-question mode */}
+          {!showCounter && (
+            <span className="me-2 inline-flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
+              {index + 1}
+            </span>
+          )}
+          {question.stem}
+        </h2>
+
+        {/* Optional media */}
+        {question.media && <div className="mt-5">{question.media}</div>}
+
+        {/* Options or Custom Body */}
+        {question.customBody ? (
+          <div className="mt-5">
+            {question.customBody({
+              answered,
+              currentAnswer,
+              onAnswer,
+            })}
+          </div>
+        ) : question.options ? (
+          <ChoiceOptionGroup
+            className={`mt-5 grid gap-3 ${question.optionColumns === "two" ? "sm:grid-cols-2" : ""}`}
+            label={question.stem}
+            options={question.options}
+            value={currentAnswer}
+            onChange={onAnswer}
+            disabled={answered}
+            correctValue={question.correctValue}
+            revealFeedback={answered}
+          />
+        ) : null}
+      </div>
+
+      {/* Feedback Panel */}
+      {answered && (
+        <div
+          id={feedbackId}
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+          className={`border-t px-5 py-4 sm:px-6 ${
+            isCorrect
+              ? "border-feedback-success-border bg-feedback-success-surface"
+              : "border-feedback-error-border bg-feedback-error-surface"
+          }`}
+        >
+          <div className="flex gap-3">
+            {isCorrect ? (
+              <CheckCircle2
+                className="mt-0.5 size-5 shrink-0 text-feedback-success-foreground"
+                aria-hidden
+              />
+            ) : (
+              <XCircle
+                className="mt-0.5 size-5 shrink-0 text-feedback-error-foreground"
+                aria-hidden
+              />
+            )}
+            <p
+              className={`text-sm font-semibold leading-6 ${
+                isCorrect ? "text-feedback-success-foreground" : "text-feedback-error-foreground"
+              }`}
+            >
+              <span className="font-black">
+                {isCorrect
+                  ? t("quiz.correctFeedback") || "Correct! Excellent work."
+                  : t("quiz.incorrectFeedback") || "Incorrect. Review the explanation below."}
+              </span>
+            </p>
+          </div>
+
+          {question.explanation && (
+            <div className="mt-3 rounded-xl border border-border/60 bg-card p-3.5">
+              <p className="text-xs font-black uppercase tracking-wider text-muted-foreground">
+                {t("quiz.explanation") || "Explanation"}
+              </p>
+              <p className="mt-1.5 text-sm font-medium leading-relaxed text-foreground">
+                {question.explanation}
+              </p>
+            </div>
+          )}
+        </div>
+      )}
+    </article>
+  );
+}
+
+// ─── Media query hook ─────────────────────────────────────────────────────────
+
+function useIsDesktop(): boolean {
+  const [isDesktop, setIsDesktop] = useState(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return false;
+    return window.matchMedia("(min-width: 1024px)").matches;
+  });
+
+  useEffect(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return;
+    const mql = window.matchMedia("(min-width: 1024px)");
+    const handler = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
+    mql.addEventListener("change", handler);
+    return () => mql.removeEventListener("change", handler);
+  }, []);
+
+  return isDesktop;
+}
 
 // ─── Component ───────────────────────────────────────────────────────────────
 
@@ -73,20 +229,39 @@ export function CurriculumQuizEngine({
   onComplete,
   onAnswerChange,
   className = "",
+  desktopPageSize = 3,
 }: Props) {
   const { t } = useI18n();
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const isDesktop = useIsDesktop();
+
+  // Mobile: single-question navigation index
+  const [mobileIndex, setMobileIndex] = useState(0);
+  // Desktop: current page (0-based)
+  const [desktopPage, setDesktopPage] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [completed, setCompleted] = useState(false);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const completionRef = useRef<HTMLHeadingElement>(null);
   const engineId = useId();
 
-  const question = questions[currentIndex];
-  const isLastQuestion = currentIndex === questions.length - 1;
-  const currentAnswer = question ? answers[question.id] : undefined;
-  const answered = currentAnswer !== undefined;
-  const isCorrect = question ? currentAnswer === question.correctValue : false;
+  // ── Derived state ────────────────────────────────────────────────────────
+
+  const totalPages = Math.ceil(questions.length / desktopPageSize);
+  const desktopPageStart = desktopPage * desktopPageSize;
+  const desktopPageQuestions = questions.slice(
+    desktopPageStart,
+    desktopPageStart + desktopPageSize
+  );
+  const isLastDesktopPage = desktopPage === totalPages - 1;
+
+  // Mobile derived
+  const mobileQuestion = questions[mobileIndex];
+  const isMobileLastQuestion = mobileIndex === questions.length - 1;
+  const mobileCurrentAnswer = mobileQuestion ? answers[mobileQuestion.id] : undefined;
+  const mobileAnswered = mobileCurrentAnswer !== undefined;
+
+  // Desktop: are all questions on the current page answered?
+  const desktopPageAllAnswered = desktopPageQuestions.every((q) => answers[q.id] !== undefined);
 
   // Focus management: move focus to question heading on navigation
   useEffect(() => {
@@ -95,11 +270,11 @@ export function CurriculumQuizEngine({
     } else {
       completionRef.current?.focus();
     }
-  }, [currentIndex, completed]);
+  }, [mobileIndex, desktopPage, completed]);
 
-  const handleAnswer = (value: string) => {
-    if (!question || answered) return;
-    const nextAnswers = { ...answers, [question.id]: value };
+  const handleAnswer = (questionId: string, value: string) => {
+    if (answers[questionId] !== undefined) return;
+    const nextAnswers = { ...answers, [questionId]: value };
     setAnswers(nextAnswers);
     if (onAnswerChange) {
       const correct = questions.reduce((acc, q) => {
@@ -109,28 +284,46 @@ export function CurriculumQuizEngine({
     }
   };
 
-  const handleNext = () => {
-    if (isLastQuestion) {
-      // Compute result and fire callback
-      const correct = questions.reduce((acc, q) => {
-        return answers[q.id] === q.correctValue ? acc + 1 : acc;
-      }, 0);
-      setCompleted(true);
-      onComplete?.({ correct, total: questions.length });
+  const finishQuiz = (currentAnswers: Record<string, string>) => {
+    const correct = questions.reduce((acc, q) => {
+      return currentAnswers[q.id] === q.correctValue ? acc + 1 : acc;
+    }, 0);
+    setCompleted(true);
+    onComplete?.({ correct, total: questions.length });
+  };
+
+  const handleMobileNext = () => {
+    if (isMobileLastQuestion) {
+      finishQuiz(answers);
     } else {
-      setCurrentIndex((i) => i + 1);
+      setMobileIndex((i) => i + 1);
     }
   };
 
-  const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex((i) => i - 1);
+  const handleMobilePrev = () => {
+    if (mobileIndex > 0) {
+      setMobileIndex((i) => i - 1);
+    }
+  };
+
+  const handleDesktopNextPage = () => {
+    if (isLastDesktopPage) {
+      finishQuiz(answers);
+    } else {
+      setDesktopPage((p) => p + 1);
+    }
+  };
+
+  const handleDesktopPrevPage = () => {
+    if (desktopPage > 0) {
+      setDesktopPage((p) => p - 1);
     }
   };
 
   const handleReset = () => {
     setAnswers({});
-    setCurrentIndex(0);
+    setMobileIndex(0);
+    setDesktopPage(0);
     setCompleted(false);
   };
 
@@ -167,7 +360,7 @@ export function CurriculumQuizEngine({
             </p>
           </div>
 
-          {/* Score ring */}
+          {/* Score */}
           <div
             aria-label={`${t("quiz.score") || "Score"}: ${correct} out of ${total}`}
             className="flex flex-col items-center gap-1"
@@ -178,7 +371,7 @@ export function CurriculumQuizEngine({
             </span>
           </div>
 
-          {/* Per-question summary pills */}
+          {/* Per-question result pills */}
           <div className="flex flex-wrap justify-center gap-2" aria-label="Results summary">
             {questions.map((q, i) => {
               const ans = answers[q.id];
@@ -216,149 +409,81 @@ export function CurriculumQuizEngine({
     );
   }
 
-  if (!question) return null;
+  // ── Progress Pills (shared between mobile and desktop layouts) ────────────
 
-  const questionHeadingId = `${engineId}-q${question.id}`;
-  const feedbackId = `${engineId}-feedback-${question.id}`;
+  const progressPills = (
+    <ol aria-label="Question progress" className="flex flex-wrap gap-2">
+      {questions.map((q, i) => {
+        const isAnswered = answers[q.id] !== undefined;
+        const isCorrectAnswer = isAnswered && answers[q.id] === q.correctValue;
+        const isMobileActive = i === mobileIndex;
+        const pageStart = desktopPage * desktopPageSize;
+        const pageEnd = pageStart + desktopPageSize;
+        const isDesktopActivePage = i >= pageStart && i < pageEnd;
 
-  // ── Active Question ───────────────────────────────────────────────────────
+        const status: PillStatus = isAnswered
+          ? isCorrectAnswer
+            ? "correct"
+            : "incorrect"
+          : isMobileActive
+            ? "active"
+            : isDesktopActivePage
+              ? "active-page"
+              : "unanswered";
 
-  return (
-    <div className={`space-y-5 ${className}`}>
-      {/* Interactive Progress Pills */}
-      <ol aria-label="Question progress" className="flex flex-wrap gap-2">
-        {questions.map((q, i) => {
-          const status = getPillStatus(i, currentIndex, answers, questions);
-          return (
-            <li key={q.id}>
-              <button
-                type="button"
-                onClick={() => setCurrentIndex(i)}
-                aria-label={t("quiz.questionPillLabel", { number: i + 1 }) || `Question ${i + 1}`}
-                aria-current={status === "active" ? "step" : undefined}
-                className={`flex size-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-xl border-2 text-sm font-black transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${PILL_STYLES[status]}`}
-              >
-                {status === "correct" ? (
-                  <CheckCircle2 className="size-4" aria-hidden />
-                ) : status === "incorrect" ? (
-                  <XCircle className="size-4" aria-hidden />
-                ) : (
-                  i + 1
-                )}
-              </button>
-            </li>
-          );
-        })}
-      </ol>
-
-      {/* Question Card */}
-      <article
-        className="overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs"
-        aria-labelledby={questionHeadingId}
-      >
-        <div className="p-5 sm:p-6">
-          {/* Counter label */}
-          <p className="mb-3 text-xs font-bold uppercase tracking-wider text-muted-foreground">
-            {t("quiz.questionOf", {
-              current: currentIndex + 1,
-              total: questions.length,
-            }) || `Question ${currentIndex + 1} of ${questions.length}`}
-          </p>
-
-          {/* Question stem */}
-          <h2
-            ref={headingRef}
-            id={questionHeadingId}
-            tabIndex={-1}
-            className="text-lg font-black leading-snug text-foreground focus-visible:outline-none sm:text-xl"
-          >
-            {question.stem}
-          </h2>
-
-          {/* Optional media */}
-          {question.media && <div className="mt-5">{question.media}</div>}
-
-          {/* Options or Custom Body */}
-          {question.customBody ? (
-            <div className="mt-5">
-              {question.customBody({
-                answered,
-                currentAnswer,
-                onAnswer: handleAnswer,
-              })}
-            </div>
-          ) : question.options ? (
-            <ChoiceOptionGroup
-              className={`mt-5 grid gap-3 ${question.optionColumns === "two" ? "sm:grid-cols-2" : ""}`}
-              label={question.stem}
-              options={question.options}
-              value={currentAnswer}
-              onChange={handleAnswer}
-              disabled={answered}
-              correctValue={question.correctValue}
-              revealFeedback={answered}
-            />
-          ) : null}
-        </div>
-
-        {/* Feedback Panel */}
-        {answered && (
-          <div
-            id={feedbackId}
-            role="status"
-            aria-live="polite"
-            aria-atomic="true"
-            className={`border-t px-5 py-4 sm:px-6 ${
-              isCorrect
-                ? "border-feedback-success-border bg-feedback-success-surface"
-                : "border-feedback-error-border bg-feedback-error-surface"
-            }`}
-          >
-            <div className="flex gap-3">
-              {isCorrect ? (
-                <CheckCircle2
-                  className="mt-0.5 size-5 shrink-0 text-feedback-success-foreground"
-                  aria-hidden
-                />
+        return (
+          <li key={q.id}>
+            <button
+              type="button"
+              onClick={() => {
+                const page = Math.floor(i / desktopPageSize);
+                setDesktopPage(page);
+                setMobileIndex(i);
+              }}
+              aria-label={t("quiz.questionPillLabel", { number: i + 1 }) || `Question ${i + 1}`}
+              aria-current={isMobileActive ? "step" : undefined}
+              className={`flex size-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-xl border-2 text-sm font-black transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${PILL_STYLES[status]}`}
+            >
+              {status === "correct" ? (
+                <CheckCircle2 className="size-4" aria-hidden />
+              ) : status === "incorrect" ? (
+                <XCircle className="size-4" aria-hidden />
               ) : (
-                <XCircle
-                  className="mt-0.5 size-5 shrink-0 text-feedback-error-foreground"
-                  aria-hidden
-                />
+                i + 1
               )}
-              <p
-                className={`text-sm font-semibold leading-6 ${
-                  isCorrect ? "text-feedback-success-foreground" : "text-feedback-error-foreground"
-                }`}
-              >
-                <span className="font-black">
-                  {isCorrect
-                    ? t("quiz.correctFeedback") || "Correct! Excellent work."
-                    : t("quiz.incorrectFeedback") || "Incorrect. Review the explanation below."}
-                </span>
-              </p>
-            </div>
+            </button>
+          </li>
+        );
+      })}
+    </ol>
+  );
 
-            {question.explanation && (
-              <div className="mt-3 rounded-xl border border-border/60 bg-card p-3.5">
-                <p className="text-xs font-black uppercase tracking-wider text-muted-foreground">
-                  {t("quiz.explanation") || "Explanation"}
-                </p>
-                <p className="mt-1.5 text-sm font-medium leading-relaxed text-foreground">
-                  {question.explanation}
-                </p>
-              </div>
-            )}
-          </div>
-        )}
-      </article>
+  // ── Mobile Layout (single question at a time) ─────────────────────────────
 
-      {/* Navigation */}
+  const mobileLayout = (
+    <div className={`flex flex-col gap-5 ${className}`}>
+      {progressPills}
+
+      {mobileQuestion && (
+        <QuestionCard
+          question={mobileQuestion}
+          index={mobileIndex}
+          total={questions.length}
+          currentAnswer={mobileCurrentAnswer}
+          onAnswer={(value) => handleAnswer(mobileQuestion.id, value)}
+          engineId={engineId}
+          t={t}
+          headingRef={headingRef}
+          showCounter
+        />
+      )}
+
+      {/* Mobile Navigation */}
       <div className="flex items-center justify-between">
-        {currentIndex > 0 ? (
+        {mobileIndex > 0 ? (
           <button
             type="button"
-            onClick={handlePrev}
+            onClick={handleMobilePrev}
             className="inline-flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-card px-5 py-2.5 text-sm font-bold text-foreground transition-all hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
@@ -368,14 +493,14 @@ export function CurriculumQuizEngine({
           <div />
         )}
 
-        {answered && (
+        {mobileAnswered && (
           <button
             type="button"
-            onClick={handleNext}
+            onClick={handleMobileNext}
             className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-primary-foreground shadow-wp-sm transition-all hover:bg-primary/90 active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <span>
-              {isLastQuestion
+              {isMobileLastQuestion
                 ? t("quiz.viewResults") || "View Results"
                 : t("quiz.nextQuestion") || "Next Question"}
             </span>
@@ -385,4 +510,85 @@ export function CurriculumQuizEngine({
       </div>
     </div>
   );
+
+  // ── Desktop Layout (desktopPageSize questions per page) ──────────────────
+
+  const desktopLayout = (
+    <div className={`flex flex-col gap-5 ${className}`}>
+      {/* Progress pills + page indicator */}
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        {progressPills}
+        <span className="shrink-0 text-xs font-bold text-muted-foreground">
+          {t("quiz.pageOf", { current: desktopPage + 1, total: totalPages }) ||
+            `Page ${desktopPage + 1} of ${totalPages}`}
+        </span>
+      </div>
+
+      {/* Multi-question grid */}
+      <div
+        className={`grid gap-4 ${
+          desktopPageQuestions.length === 1
+            ? "grid-cols-1 max-w-2xl"
+            : desktopPageQuestions.length === 2
+              ? "grid-cols-2"
+              : "grid-cols-3"
+        }`}
+        aria-label={`Questions ${desktopPageStart + 1}–${Math.min(
+          desktopPageStart + desktopPageSize,
+          questions.length
+        )} of ${questions.length}`}
+      >
+        {desktopPageQuestions.map((q, pageIdx) => {
+          const globalIndex = desktopPageStart + pageIdx;
+          return (
+            <QuestionCard
+              key={q.id}
+              question={q}
+              index={globalIndex}
+              total={questions.length}
+              currentAnswer={answers[q.id]}
+              onAnswer={(value) => handleAnswer(q.id, value)}
+              engineId={engineId}
+              t={t}
+              headingRef={pageIdx === 0 ? headingRef : undefined}
+              showCounter={false}
+            />
+          );
+        })}
+      </div>
+
+      {/* Desktop Navigation */}
+      <div className="flex items-center justify-between">
+        {desktopPage > 0 ? (
+          <button
+            type="button"
+            onClick={handleDesktopPrevPage}
+            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-card px-5 py-2.5 text-sm font-bold text-foreground transition-all hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
+            <span>{t("quiz.previousPage") || "Previous"}</span>
+          </button>
+        ) : (
+          <div />
+        )}
+
+        {desktopPageAllAnswered && (
+          <button
+            type="button"
+            onClick={handleDesktopNextPage}
+            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-primary-foreground shadow-wp-sm transition-all hover:bg-primary/90 active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <span>
+              {isLastDesktopPage
+                ? t("quiz.viewResults") || "View Results"
+                : t("quiz.nextPage") || "Next Questions"}
+            </span>
+            <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+          </button>
+        )}
+      </div>
+    </div>
+  );
+
+  return isDesktop ? desktopLayout : mobileLayout;
 }

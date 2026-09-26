@@ -20,6 +20,8 @@ import { useI18n, SUPPORTED_LANGS } from "../context/I18nContext";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useAudio } from "../shared/useAudio";
 import { useModalA11y } from "../shared/useModalA11y";
+import { Button } from "../shared/Button";
+import { IconButton } from "../shared/IconButton";
 import { COURSE_UNITS } from "../data/lessons";
 import { loadUnitVocabulary } from "../data/vocabulary";
 
@@ -124,14 +126,14 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
             </div>
           </div>
 
-          <button
-            type="button"
-            onClick={onClose}
+          <IconButton
+            icon={<X className="size-5" />}
             aria-label={t("settings.closeLabel")}
-            className="size-11 min-h-[44px] min-w-[44px] rounded-full border border-border bg-wp-card text-muted-foreground hover:text-foreground flex items-center justify-center transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
-          >
-            <X className="size-5" />
-          </button>
+            variant="outline"
+            size="sm"
+            onClick={onClose}
+            className="rounded-full bg-wp-card"
+          />
         </div>
 
         {/* Modal Body (Scrollable Settings Sections) */}
@@ -213,46 +215,6 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
               <hr className="border-border/60" />
 
-              {/* Learner Expression (Child / Adult Mode) */}
-              <div className="flex items-center justify-between gap-4">
-                <div>
-                  <span className="font-sans font-bold text-foreground text-sm">
-                    {t("settings.learnerMode")}
-                  </span>
-                  <p className="font-sans text-xs text-muted-foreground">
-                    {t("settings.learnerModeHint")}
-                  </p>
-                </div>
-                <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
-                  <button
-                    type="button"
-                    onClick={() => setPreferences({ expression: "child" })}
-                    aria-pressed={state.preferences.expression === "child"}
-                    className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${
-                      state.preferences.expression === "child"
-                        ? "bg-primary text-primary-foreground shadow-xs"
-                        : "text-muted-foreground hover:text-foreground"
-                    }`}
-                  >
-                    {t("settings.child")}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setPreferences({ expression: "adult" })}
-                    aria-pressed={state.preferences.expression === "adult"}
-                    className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${
-                      state.preferences.expression === "adult"
-                        ? "bg-primary text-primary-foreground shadow-xs"
-                        : "text-muted-foreground hover:text-foreground"
-                    }`}
-                  >
-                    {t("settings.adult")}
-                  </button>
-                </div>
-              </div>
-
-              <hr className="border-border/60" />
-
               {/* High Contrast Mode */}
               <div className="flex items-center justify-between gap-4">
                 <div>
@@ -267,7 +229,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   type="button"
                   onClick={() => setAccessibility({ highContrast: !highContrast })}
                   aria-pressed={highContrast}
-                  className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
+                  className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                     highContrast
                       ? "bg-wp-green text-wp-text-on-green border-wp-green"
                       : "bg-muted text-muted-foreground border-border"
@@ -293,7 +255,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   type="button"
                   onClick={() => setAccessibility({ reduceMotion: !reduceMotion })}
                   aria-pressed={reduceMotion}
-                  className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
+                  className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                     reduceMotion
                       ? "bg-wp-green text-wp-text-on-green border-wp-green"
                       : "bg-muted text-muted-foreground border-border"
@@ -359,7 +321,11 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     type="button"
                     onClick={() => setAccessibility({ numeralSystem: "western" })}
                     aria-pressed={numeralSystem === "western"}
-                    className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${numeralSystem === "western" ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}
+                    className={`min-h-[44px] min-w-[44px] px-3 py-1.5 rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                      numeralSystem === "western"
+                        ? "bg-primary text-primary-foreground shadow-xs"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
                   >
                     {"1, 2, 3"}
                   </button>
@@ -367,7 +333,11 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     type="button"
                     onClick={() => setAccessibility({ numeralSystem: "arabic" })}
                     aria-pressed={numeralSystem === "arabic"}
-                    className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${numeralSystem === "arabic" ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}
+                    className={`min-h-[44px] min-w-[44px] px-3 py-1.5 rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                      numeralSystem === "arabic"
+                        ? "bg-primary text-primary-foreground shadow-xs"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
                   >
                     {"١, ٢, ٣"}
                   </button>
@@ -401,7 +371,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       type="button"
                       onClick={() => setAccessibility({ speechRate: sp })}
                       aria-pressed={speechRate === sp}
-                      className={`px-2.5 py-1 rounded-lg text-xs font-sans font-bold transition-all ${
+                      className={`min-h-[44px] min-w-[44px] px-2.5 py-1.5 rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                         speechRate === sp
                           ? "bg-primary text-primary-foreground shadow-xs"
                           : "text-muted-foreground hover:text-foreground"
@@ -476,7 +446,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     type="button"
                     onClick={() => setAccessibility({ includeSpeaking: !includeSpeaking })}
                     aria-pressed={includeSpeaking}
-                    className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
+                    className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                       includeSpeaking
                         ? "bg-wp-green text-wp-text-on-green border-wp-green"
                         : "bg-muted text-muted-foreground border-border"
@@ -568,7 +538,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     type="button"
                     onClick={() => setAccessibility({ includeListening: !includeListening })}
                     aria-pressed={includeListening}
-                    className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
+                    className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                       includeListening
                         ? "bg-wp-green text-wp-text-on-green border-wp-green"
                         : "bg-muted text-muted-foreground border-border"
@@ -604,10 +574,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       key={lvl}
                       type="button"
                       onClick={() => setPreferences({ englishLevel: lvl })}
-                      className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${
+                      className={`min-h-[44px] min-w-[44px] px-3 py-1.5 rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                         state.preferences.englishLevel === lvl
                           ? "bg-primary text-primary-foreground shadow-xs"
-                          : "text-muted-foreground"
+                          : "text-muted-foreground hover:text-foreground"
                       }`}
                     >
                       {lvl}
@@ -697,14 +667,14 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       setConfirmReset(false);
                       onClose();
                     }}
-                    className="px-3 py-1.5 rounded-xl bg-wp-rose text-wp-text-on-rose text-xs font-sans font-bold shadow-xs"
+                    className="px-3.5 py-2 min-h-[44px] rounded-xl bg-wp-rose text-wp-text-on-rose text-xs font-sans font-bold shadow-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-rose cursor-pointer"
                   >
                     {t("settings.confirmReset")}
                   </button>
                   <button
                     type="button"
                     onClick={() => setConfirmReset(false)}
-                    className="px-3 py-1.5 rounded-xl bg-wp-card text-muted-foreground text-xs font-sans font-bold border border-border"
+                    className="px-3.5 py-2 min-h-[44px] rounded-xl bg-wp-card text-muted-foreground text-xs font-sans font-bold border border-border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
                   >
                     {t("settings.cancel")}
                   </button>
@@ -713,7 +683,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 <button
                   type="button"
                   onClick={() => setConfirmReset(true)}
-                  className="px-3 py-1.5 rounded-xl bg-wp-card text-wp-rose border border-wp-rose/30 font-sans font-bold text-xs hover:bg-wp-rose/20 transition-all shrink-0"
+                  className="px-3.5 py-2 min-h-[44px] rounded-xl bg-wp-card text-wp-rose border border-wp-rose/30 font-sans font-bold text-xs hover:bg-wp-rose/20 transition-all shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-rose cursor-pointer"
                 >
                   {t("settings.resetData")}
                 </button>
@@ -724,13 +694,15 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
         {/* Modal Footer */}
         <div className="p-4 md:p-5 border-t border-border bg-muted/40 flex items-center justify-end shrink-0">
-          <button
+          <Button
             type="button"
+            variant="primary"
+            size="md"
             onClick={onClose}
-            className="w-full sm:w-auto px-6 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="w-full sm:w-auto px-6"
           >
             {t("settings.done")}
-          </button>
+          </Button>
         </div>
       </div>
     </div>,

@@ -50,11 +50,6 @@ const LearningMaterialsScreen = lazy(() =>
     default: m.LearningMaterialsScreen,
   }))
 );
-const FoundationLessonScreen = lazy(() =>
-  import("../learning/foundations/FoundationLessonScreen").then((m) => ({
-    default: m.FoundationLessonScreen,
-  }))
-);
 const FigmaPronunciationLessonScreen = lazy(() =>
   import("../learning/foundations/FigmaPronunciationLessonScreen").then((m) => ({
     default: m.FigmaPronunciationLessonScreen,
@@ -331,7 +326,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       if (state.step === "ready") return <ReadyCelebration dispatch={dispatch} />;
     }
     if (state.id === "home") return <HomeDashboard dispatch={dispatch} />;
-    if (state.id === "explore") return <LearningPath dispatch={dispatch} />;
+    if (state.id === "learn" || state.id === "explore") return <LearningPath dispatch={dispatch} />;
     if (state.id === "library") return <ExploreWorlds dispatch={dispatch} />;
     if (state.id === "practice") return <SkillExerciseHub dispatch={dispatch} />;
     if (state.id === "review") return <ReviewMasteryReview dispatch={dispatch} />;
@@ -351,8 +346,6 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
         />
       );
     if (state.id === "skill-hub") return <SkillExerciseHub dispatch={dispatch} />;
-    if (state.id === "foundation-lesson")
-      return <FoundationLessonScreen lessonId={state.lessonId} dispatch={dispatch} />;
     if (state.id === "pronunciation-curriculum")
       return <PronunciationCurriculumScreen dispatch={dispatch} />;
     if (state.id === "figma-pronunciation-lesson")
@@ -406,15 +399,13 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
   }
 
   const stateKey =
-    state.id === "foundation-lesson"
+    state.id === "hadith-lesson"
       ? `${state.id}-${state.lessonId}`
-      : state.id === "hadith-lesson"
-        ? `${state.id}-${state.lessonId}`
-        : state.id === "conversation-lesson"
+      : state.id === "conversation-lesson"
+        ? `${state.id}-${state.unitId}-${state.stage ?? "resume"}`
+        : state.id === "business-lesson"
           ? `${state.id}-${state.unitId}-${state.stage ?? "resume"}`
-          : state.id === "business-lesson"
-            ? `${state.id}-${state.unitId}-${state.stage ?? "resume"}`
-            : state.id + ("step" in state ? `-${state.step}` : "");
+          : state.id + ("step" in state ? `-${state.step}` : "");
   // Route transitions render immediately with a short enter motion only: the
   // previous AnimatePresence mode="wait" held every navigation for a full exit
   // animation first, which read as latency on every tab switch.
@@ -453,7 +444,13 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
         <>
           <SkipLink />
           <AppShell
-            activeTab={(state.id === "review" ? "practice" : state.id) as TabId}
+            activeTab={
+              (state.id === "review"
+                ? "practice"
+                : state.id === "explore"
+                  ? "learn"
+                  : state.id) as TabId
+            }
             dispatch={dispatch}
           >
             {animatedContent}

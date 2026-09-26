@@ -1,6 +1,8 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
+import { WARMUP_MCQ_DATA } from "./generate_business_warmups.mjs";
+
 const root = process.cwd();
 const rawUnits = JSON.parse(await fs.readFile(path.join(root, "scratch/parsed_units_raw.json"), "utf8"));
 const manifest = JSON.parse(await fs.readFile(path.join(root, "src/app/learning/business/businessImageManifest.json"), "utf8"));
@@ -143,6 +145,12 @@ function parseExercises(rawTexts, unitNumber) {
       ];
       q.correctAnswer = "A";
     }
+
+    if (!q.explanation || q.explanation.trim() === "") {
+      const correctOpt = q.options.find(o => o.key === q.correctAnswer);
+      const correctText = correctOpt ? correctOpt.text : "";
+      q.explanation = `Option ${q.correctAnswer} ("${correctText}") is the correct business response based on the scenario principles.`;
+    }
   }
 
   return questions;
@@ -205,14 +213,52 @@ for (const raw of rawUnits) {
   // Exercises
   const exercises = parseExercises(raw.exercises.texts || [], unitNumber);
 
-  // Warmup prompts
+  const cleanUnitTitle = cleanTitle(raw.title);
+
+  // Warmup prompts (Multiple Choice with Feedback)
   const warmupPrompts = (raw.warmup.prompts || [])
     .filter(p => !p.startsWith("1.") && p.length > 10)
-    .map((p, idx) => ({
-      id: `warmup-${unitNumber}-${idx + 1}`,
-      question: p.replace(/^Question\s*\d+:\s*/i, "").trim(),
+    .map((p, idx) => {
+      const id = `warmup-${unitNumber}-${idx + 1}`;
+      const mcq = WARMUP_MCQ_DATA[id];
+      if (mcq) {
+        return {
+          id,
+          question: mcq.question,
+          hint: "Choose the most effective workplace approach.",
+          options: mcq.options,
+          correctAnswer: mcq.correctAnswer,
+          explanation: mcq.explanation,
+        };
+      }
+      return {
+        id,
+        question: p.replace(/^Question\s*\d+:\s*/i, "").trim(),
+        hint: "Reflect on a real or past workplace scenario.",
+        options: [
+          { key: "A", text: "Proactively address the situation with clear communication." },
+          { key: "B", text: "Delay response until explicit directives are issued." },
+        ],
+        correctAnswer: "A",
+        explanation: "Proactive, direct communication is the recommended workplace approach.",
+      };
+    })
+    // Filter duplicates (e.g. Unit 11 raw duplicate)
+    .filter((prompt, pos, arr) => arr.findIndex(x => x.id === prompt.id) === pos);
+
+  if (warmupPrompts.length === 0) {
+    warmupPrompts.push({
+      id: `warmup-${unitNumber}-1`,
+      question: `How do you currently approach ${cleanUnitTitle.toLowerCase()} in your workplace?`,
       hint: "Reflect on a real or past workplace scenario.",
-    }));
+      options: [
+        { key: "A", text: "Proactively address the situation with clear communication." },
+        { key: "B", text: "Delay response until explicit directives are issued." },
+      ],
+      correctAnswer: "A",
+      explanation: "Proactive, direct communication is the recommended workplace approach.",
+    });
+  }
 
   // Discussion prompts
   const discussionPrompts = (raw.discussion.prompts || [])
@@ -230,10 +276,6 @@ for (const raw of rawUnits) {
   // Speaking task steps
   const speakSteps = (raw.speakingTask.texts || [])
     .filter(t => /^\d+\.\s*/.test(t) || (/^[A-Z]/.test(t) && t.length > 20 && !t.includes("Checklist") && !t.includes("Rule")))
-    .slice(0, 5);
-
-  const cleanUnitTitle = cleanTitle(raw.title);
-
   compiledUnits.push({
     id: `unit-${String(unitNumber).padStart(2, "0")}`,
     unitNumber,

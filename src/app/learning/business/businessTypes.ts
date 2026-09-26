@@ -77,6 +77,28 @@ export const businessDialogueLineSchema = z.object({
 });
 export type BusinessDialogueLine = z.infer<typeof businessDialogueLineSchema>;
 
+export const businessWarmupOptionSchema = z.object({
+  key: z.string(),
+  text: z.string(),
+});
+export type BusinessWarmupOption = z.infer<typeof businessWarmupOptionSchema>;
+
+export const businessWarmupPromptSchema = z.object({
+  id: z.string(),
+  question: z.string(),
+  hint: z.string().optional(),
+  options: z.array(businessWarmupOptionSchema).optional(),
+  correctAnswer: z.string().optional(),
+  explanation: z.string().optional(),
+});
+export type BusinessWarmupPrompt = z.infer<typeof businessWarmupPromptSchema>;
+
+export const businessWarmupSchema = z.object({
+  instructions: z.string(),
+  prompts: z.array(businessWarmupPromptSchema),
+});
+export type BusinessWarmup = z.infer<typeof businessWarmupSchema>;
+
 export const businessUnitSchema = z.object({
   id: z.string(),
   unitNumber: z.number().int().min(1).max(40),
@@ -93,16 +115,7 @@ export const businessUnitSchema = z.object({
   essentialQuestionAr: z.string().optional(),
   speakingGoal: z.string(),
   speakingGoalAr: z.string().optional(),
-  warmup: z.object({
-    instructions: z.string(),
-    prompts: z.array(
-      z.object({
-        id: z.string(),
-        question: z.string(),
-        hint: z.string().optional(),
-      })
-    ),
-  }),
+  warmup: businessWarmupSchema,
   mainInput: z.object({
     title: z.string(),
     context: z.string(),

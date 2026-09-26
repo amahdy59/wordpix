@@ -86,7 +86,12 @@ export function SplashWelcome({ dispatch }: Props) {
         {/* Footer Left */}
         <div className="relative z-10 flex items-center gap-2 text-wp-text-on-panel-muted text-xs font-sans font-semibold">
           <Globe className="size-4" />
-          <span>{t("onboarding.startWithFoundations")}</span>
+          <span>
+            {t("onboarding.startWithWorld", {
+              world: flagshipWorld.name,
+              count: flagshipWorld.wordIds.length,
+            })}
+          </span>
         </div>
       </aside>
 

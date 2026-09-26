@@ -4,6 +4,8 @@ import { migrateGuestToAccount } from "../../lib/persistence/sync";
 import { User, X } from "lucide-react";
 import { useModalA11y } from "../../app/shared/useModalA11y";
 import { useI18n } from "../../app/context/I18nContext";
+import { Button } from "../../app/shared/Button";
+import { IconButton } from "../../app/shared/IconButton";
 
 interface AuthModalProps {
   onClose: () => void;
@@ -85,14 +87,14 @@ export function AuthModal({ onClose }: AuthModalProps) {
         aria-modal="true"
         aria-labelledby="auth-title"
       >
-        <button
-          type="button"
-          onClick={onClose}
+        <IconButton
+          icon={<X className="size-5" aria-hidden />}
           aria-label="Close authentication modal"
-          className="absolute top-4 end-4 size-10 min-h-[44px] min-w-[44px] rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
-        >
-          <X className="size-5" aria-hidden />
-        </button>
+          variant="outline"
+          size="sm"
+          onClick={onClose}
+          className="absolute top-4 end-4 rounded-full"
+        />
         <div className="flex flex-col items-center gap-2 mb-6">
           <div className="p-3 bg-primary/10 text-primary rounded-full mb-2">
             <User className="size-8" />
@@ -151,11 +153,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
             />
           </div>
 
-          <button
-            type="submit"
-            disabled={isLoading}
-            className="w-full py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors disabled:opacity-50 min-h-[44px]"
-          >
+          <Button type="submit" loading={isLoading} disabled={isLoading} fullWidth size="md">
             {isLoading
               ? "Loading..."
               : syncUserId
@@ -163,7 +161,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
                 : isLogin
                   ? "Sign In"
                   : "Create Account"}
-          </button>
+          </Button>
         </form>
 
         <div className="mt-6 flex flex-col gap-3">

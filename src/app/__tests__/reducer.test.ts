@@ -14,7 +14,7 @@ describe("WordPix navigation and group lesson reducer", () => {
   });
 
   it("moves between tabs", () => {
-    expect(reducer({ id: "home" }, { type: "GO", to: "explore" })).toEqual({ id: "explore" });
+    expect(reducer({ id: "home" }, { type: "GO", to: "explore" })).toEqual({ id: "learn" });
   });
 
   it("starts a group lesson and advances/regresses step-by-step", () => {

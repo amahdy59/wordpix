@@ -44,7 +44,6 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
     await screen.findByRole("button", { name: "Dismiss release notes" });
     expect(screen.getByText("Daily Vocabulary Target")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Study materials for/i })).toBeInTheDocument();
-    expect(screen.getByText("Same or Different?")).toBeInTheDocument();
     expect(screen.getByText("Recommended next")).toBeInTheDocument();
     expect(screen.getByText("Reviews unlock after your first lesson")).toBeInTheDocument();
     expect(screen.queryByText(/Excellent memory retention/i)).not.toBeInTheDocument();
@@ -54,22 +53,17 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
     const user = userEvent.setup();
     renderWithProviders(<LearningPath dispatch={vi.fn()} />);
 
-    expect(screen.getByRole("heading", { name: "Listening foundations" })).toBeInTheDocument();
+    expect(
+      screen.queryByRole("heading", { name: "Listening foundations" })
+    ).not.toBeInTheDocument();
     expect(
       screen.queryByRole("heading", { name: "First letters and words" })
     ).not.toBeInTheDocument();
     expect(screen.queryByText("General English words mastered")).not.toBeInTheDocument();
 
-    await user.click(
-      screen.getByRole("button", {
-        name: "Explore all reading foundation lessons",
-      })
-    );
-    expect(screen.getByRole("heading", { name: "First letters and words" })).toBeInTheDocument();
-
     await user.click(screen.getByRole("button", { name: /View full learning path/i }));
     expect(screen.getByText("General English words mastered")).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Specialist settings/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /C1 Mastery/i })).toBeInTheDocument();
   });
 });
 

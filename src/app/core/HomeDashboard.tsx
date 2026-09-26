@@ -11,11 +11,6 @@ import { useOfflineReadiness } from "../shared/useOfflineReadiness";
 import { useI18n } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { useLearner } from "../context/LearnerContext";
-import {
-  FOUNDATION_LESSON_IDS,
-  getFoundationLesson,
-} from "../learning/foundations/foundationCurriculum";
-import { getRecommendedFoundationLessonId } from "../learning/foundations/foundationProgress";
 import { PageContainer, Section, Card, Badge, ProgressBar } from "../shared";
 import { ReleaseNotesCard } from "./ReleaseNotesCard";
 import { LearnerAvatar } from "../shared/LearnerAvatar";
@@ -44,17 +39,16 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
     () => nextGroupToStudy((wordId) => progress.wordMemory[wordId]?.mastery === "strong"),
     [progress.wordMemory]
   );
-  const recommendedFoundationLesson = getFoundationLesson(
-    getRecommendedFoundationLessonId(FOUNDATION_LESSON_IDS, learnerState.foundationProgress)
-  );
-  const recommendedFoundationProgress =
-    learnerState.foundationProgress[recommendedFoundationLesson.id];
   const activeUnit = useMemo(() => resolveUnitForLesson(activeLesson.id), [activeLesson.id]);
+  const lessonWordsSeen = useMemo(
+    () => activeLesson.wordIds.filter((wordId) => Boolean(progress.wordMemory[wordId])).length,
+    [activeLesson.wordIds, progress.wordMemory]
+  );
+  const estimatedMinutes = Math.max(2, Math.round(activeLesson.wordIds.length * 0.6));
   const dueWords = useMemo(() => getDueWordsForReview(progress.wordMemory), [progress.wordMemory]);
   const hasLearningHistory =
     learnerState.learnerProgress.sessionsCompleted > 0 ||
-    Object.keys(progress.wordMemory).length > 0 ||
-    Object.keys(learnerState.foundationProgress).length > 0;
+    Object.keys(progress.wordMemory).length > 0;
   const todayStr = getLocalDateString(new Date());
 
   const todayReviewedCount = useMemo(() => {
@@ -157,12 +151,16 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
               <Card variant="primary">
                 <div className="flex items-center justify-between">
                   <span className="font-sans font-semibold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full">
-                    {t("dashboard.corePathLevel", { level: recommendedFoundationLesson.level })}
+                    {t("dashboard.unitEstimate", {
+                      unit: activeUnit.name,
+                      min: num(estimatedMinutes),
+                    })}
                   </span>
                   <span className="font-sans text-xs font-bold text-muted-foreground">
-                    {recommendedFoundationProgress?.status === "in-progress"
-                      ? t("learn.resumeStep", {
-                          step: recommendedFoundationProgress.currentStep + 1,
+                    {lessonWordsSeen > 0
+                      ? t("dashboard.wordsOfTotal", {
+                          current: num(lessonWordsSeen),
+                          total: num(activeLesson.wordIds.length),
                         })
                       : t("learn.recommended")}
                   </span>
@@ -170,10 +168,10 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
 
                 <div>
                   <h2 className="font-sans font-black text-foreground text-2xl lg:text-3xl mt-4">
-                    {recommendedFoundationLesson.title}
+                    {activeLesson.name}
                   </h2>
                   <p className="font-sans text-muted-foreground text-sm mt-1 leading-relaxed">
-                    {recommendedFoundationLesson.goal}
+                    {activeLesson.description}
                   </p>
                 </div>
 
@@ -184,20 +182,23 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     type="button"
                     onClick={() =>
                       dispatch({
-                        type: "START_FOUNDATION_LESSON",
-                        lessonId: recommendedFoundationLesson.id,
+                        type: "START_LESSON",
+                        lessonId: activeLesson.id,
+                        unitId: activeUnit.id,
+                        mode: "NEW_LESSON",
+                        wordQueue: activeLesson.wordIds,
                       })
                     }
                     className="flex-1 w-full bg-primary hover:opacity-90 active:opacity-80 rounded-2xl py-3.5 font-sans font-black text-primary-foreground text-base min-h-[52px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-md transition-colors flex items-center justify-center gap-2"
                   >
                     <BookOpen className="size-5 shrink-0" />
                     <span>
-                      {recommendedFoundationProgress
+                      {lessonWordsSeen > 0
                         ? t("dashboard.todayContinue", {
-                            title: recommendedFoundationLesson.shortTitle,
+                            title: activeLesson.name,
                           })
                         : t("dashboard.todayStart", {
-                            title: recommendedFoundationLesson.shortTitle,
+                            title: activeLesson.name,
                           })}
                     </span>
                     <ArrowRight className="size-5 shrink-0 rtl:rotate-180" />
@@ -220,7 +221,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     className="w-full sm:w-auto px-5 py-3.5 bg-secondary text-primary hover:bg-primary/10 border border-primary/20 rounded-2xl font-sans font-bold text-sm min-h-[52px] flex items-center justify-center gap-2 transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
                   >
                     <Library className="size-4 shrink-0" />
-                    <span>{t("dashboard.optionalPicturePractice")}</span>
+                    <span>{t("dashboard.studyGuide")}</span>
                   </motion.button>
                 </div>
               </Card>

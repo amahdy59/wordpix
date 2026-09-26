@@ -9,16 +9,6 @@ import {
 import { calculateXPBreakdown, type XPBreakdown } from "../../features/gamification/xp";
 import { getLearnerState, saveLearnerState, queueMutation } from "../../lib/persistence/db";
 import {
-  isFoundationLessonId,
-  type FoundationLessonId,
-} from "../learning/foundations/foundationCurriculum";
-import {
-  checkpointFoundationLesson,
-  completeFoundationLesson,
-  normalizeFoundationProgress,
-  type FoundationProgress,
-} from "../learning/foundations/foundationProgress";
-import {
   checkpointPronunciationLesson,
   completePronunciationLesson,
   migrateLegacyPronunciationProgress,
@@ -161,7 +151,6 @@ export interface LearnerStateSchema {
   learnerProgress: LearnerProgressStats;
   wordMemory: Record<string, WordLearningState>;
   sessionHistory: SessionRecord[];
-  foundationProgress: FoundationProgress;
   pronunciationProgress: PronunciationProgress;
   hadithProgress: HadithProgress;
   conversationProgress: ConversationProgress;
@@ -191,7 +180,6 @@ export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
   },
   wordMemory: {},
   sessionHistory: [],
-  foundationProgress: {},
   pronunciationProgress: {},
   hadithProgress: {},
   conversationProgress: {},
@@ -199,7 +187,7 @@ export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
 };
 
 /** Shape of whatever came out of localStorage: unknown until validated. */
-type PersistedShape = Partial<Record<keyof LearnerStateSchema, unknown>>;
+type PersistedShape = Partial<Record<keyof LearnerStateSchema | "foundationProgress", unknown>>;
 
 function migrateState(savedData: unknown): LearnerStateSchema {
   if (!savedData || typeof savedData !== "object") return INITIAL_LEARNER_STATE;
@@ -247,7 +235,6 @@ function migrateState(savedData: unknown): LearnerStateSchema {
     sessionHistory: Array.isArray(saved.sessionHistory)
       ? (saved.sessionHistory as SessionRecord[])
       : [],
-    foundationProgress: normalizeFoundationProgress(saved.foundationProgress),
     pronunciationProgress: migrateLegacyPronunciationProgress(
       saved.foundationProgress,
       saved.pronunciationProgress
@@ -261,37 +248,6 @@ function migrateState(savedData: unknown): LearnerStateSchema {
 const LEGACY_FOUNDATION_COMPLETION_KEY = "wordpix:foundation:completed";
 const LEGACY_FOUNDATION_LAST_OPENED_KEY = "wordpix:foundation:last-opened";
 
-function migrateLegacyFoundationProgress(state: LearnerStateSchema): LearnerStateSchema {
-  if (typeof localStorage === "undefined") return state;
-  const legacyCompleted = (() => {
-    try {
-      const parsed: unknown = JSON.parse(
-        localStorage.getItem(LEGACY_FOUNDATION_COMPLETION_KEY) ?? "[]"
-      );
-      return Array.isArray(parsed)
-        ? parsed.filter(
-            (id): id is FoundationLessonId => typeof id === "string" && isFoundationLessonId(id)
-          )
-        : [];
-    } catch {
-      return [];
-    }
-  })();
-  const legacyLastOpened = localStorage.getItem(LEGACY_FOUNDATION_LAST_OPENED_KEY);
-  if (legacyCompleted.length === 0 && !legacyLastOpened) return state;
-
-  const now = new Date().toISOString();
-  let progress = { ...state.foundationProgress };
-  for (const lessonId of legacyCompleted) {
-    if (progress[lessonId]) continue;
-    progress = completeFoundationLesson(progress, lessonId, 1, 1, 0, {}, now);
-  }
-  if (legacyLastOpened && isFoundationLessonId(legacyLastOpened) && !progress[legacyLastOpened]) {
-    progress = checkpointFoundationLesson(progress, legacyLastOpened, 0, {}, now);
-  }
-  return { ...state, foundationProgress: progress };
-}
-
 interface LearnerContextType {
   state: LearnerStateSchema;
   addXP: (amount: number) => void;
@@ -301,19 +257,6 @@ interface LearnerContextType {
     wordQueue: string[]
   ) => void;
   recordUnitAssessmentCompletion: (passed: boolean, unitWordIds: string[]) => void;
-  recordFoundationCheckpoint: (
-    lessonId: FoundationLessonId,
-    currentStep: number,
-    questionResults: Readonly<Record<number, boolean>>
-  ) => void;
-  recordFoundationCompletion: (
-    lessonId: FoundationLessonId,
-    correct: number,
-    total: number,
-    currentStep: number,
-    questionResults: Readonly<Record<number, boolean>>,
-    masteryThreshold: number
-  ) => void;
   recordPronunciationCompletion: (
     lessonId: string,
     scorePercent: number,
@@ -448,7 +391,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
           }
         }
 
-        dbState = migrateLegacyFoundationProgress(migrateState(dbState));
+        dbState = migrateState(dbState);
         await persistLearnerStateBeforeCleanup(dbState, () => {
           if (loadedLegacyState) localStorage.removeItem(STORAGE_KEY);
           localStorage.removeItem(LEGACY_FOUNDATION_COMPLETION_KEY);
@@ -671,55 +614,6 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
           mutationPayload: { wordMemory: updatedMemory, xp: nextXp },
         };
       });
-    },
-    [updateStateAndPersist]
-  );
-
-  const recordFoundationCheckpoint = useCallback(
-    (
-      lessonId: FoundationLessonId,
-      currentStep: number,
-      questionResults: Readonly<Record<number, boolean>>
-    ) => {
-      updateStateAndPersist((prev) => ({
-        nextState: {
-          ...prev,
-          foundationProgress: checkpointFoundationLesson(
-            prev.foundationProgress,
-            lessonId,
-            currentStep,
-            questionResults
-          ),
-        },
-      }));
-    },
-    [updateStateAndPersist]
-  );
-
-  const recordFoundationCompletion = useCallback(
-    (
-      lessonId: FoundationLessonId,
-      correct: number,
-      total: number,
-      currentStep: number,
-      questionResults: Readonly<Record<number, boolean>>,
-      masteryThreshold: number
-    ) => {
-      updateStateAndPersist((prev) => ({
-        nextState: {
-          ...prev,
-          foundationProgress: completeFoundationLesson(
-            prev.foundationProgress,
-            lessonId,
-            correct,
-            total,
-            currentStep,
-            questionResults,
-            undefined,
-            masteryThreshold
-          ),
-        },
-      }));
     },
     [updateStateAndPersist]
   );
@@ -1020,8 +914,6 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         addXP,
         recordSessionCompletion,
         recordUnitAssessmentCompletion,
-        recordFoundationCheckpoint,
-        recordFoundationCompletion,
         recordPronunciationCompletion,
         recordPronunciationCheckpoint,
         recordHadithCheckpoint,
@@ -1045,8 +937,6 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       addXP,
       recordSessionCompletion,
       recordUnitAssessmentCompletion,
-      recordFoundationCheckpoint,
-      recordFoundationCompletion,
       recordPronunciationCompletion,
       recordPronunciationCheckpoint,
       recordHadithCheckpoint,
@@ -1069,8 +959,6 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     addXP,
     recordSessionCompletion,
     recordUnitAssessmentCompletion,
-    recordFoundationCheckpoint,
-    recordFoundationCompletion,
     recordPronunciationCompletion,
     recordPronunciationCheckpoint,
     recordHadithCheckpoint,
@@ -1105,8 +993,6 @@ const DEFAULT_FALLBACK_CONTEXT: LearnerContextType = {
   addXP: () => {},
   recordSessionCompletion: () => {},
   recordUnitAssessmentCompletion: () => {},
-  recordFoundationCheckpoint: () => {},
-  recordFoundationCompletion: () => {},
   recordPronunciationCompletion: () => {},
   recordPronunciationCheckpoint: () => {},
   recordHadithCheckpoint: () => {},

@@ -1,13 +1,5 @@
 import { useCallback, useMemo, useState } from "react";
-import {
-  ArrowLeft,
-  ArrowRight,
-  CheckCircle2,
-  Headphones,
-  Search,
-  Volume2,
-  Clock3,
-} from "lucide-react";
+import { ArrowLeft, Headphones, Search } from "lucide-react";
 import type { Action } from "../../types";
 import { useLearner } from "../../context/LearnerContext";
 import { useI18n } from "../../../i18n";
@@ -19,6 +11,8 @@ import {
   PRONUNCIATION_CHAPTERS,
   getFigmaPronunciationActivityData,
 } from "./figmaPronunciationCatalog";
+import { PronunciationLessonCard } from "./PronunciationLessonCard";
+import { PronunciationLessonInfoModal } from "./PronunciationLessonInfoModal";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -29,6 +23,7 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
   const { state } = useLearner();
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<"all" | "due" | "in-progress" | "mastered">("all");
+  const [selectedLessonForInfo, setSelectedLessonForInfo] = useState<number | null>(null);
   const [now] = useState(() => Date.now());
   const normalizedQuery = query.trim().toLocaleLowerCase("en-US");
   const completed = Object.values(state.pronunciationProgress).filter(
@@ -238,74 +233,26 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
                   </div>
                   <ol className="mt-4 grid gap-3 md:grid-cols-2">
                     {chapter.lessons.map((lesson) => {
-                      const activity = getFigmaPronunciationActivityData(lesson.number);
                       const progress =
                         state.pronunciationProgress[
                           `lesson-${String(lesson.number).padStart(2, "0")}`
                         ];
                       const mastered = progress?.status === "mastered";
                       return (
-                        <li key={lesson.number}>
-                          <button
-                            type="button"
-                            onClick={() =>
-                              dispatch({
-                                type: "OPEN_FIGMA_PRONUNCIATION",
-                                lessonNumber: lesson.number,
-                              })
-                            }
-                            className="grid min-h-[118px] w-full grid-cols-[auto_1fr_auto] items-start gap-3 rounded-2xl border border-border bg-background p-4 text-start hover:border-primary/50 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-                          >
-                            <span
-                              className={`flex size-11 items-center justify-center rounded-xl font-black ${mastered ? "bg-wp-green text-wp-text-on-green" : "bg-primary/10 text-primary"}`}
-                            >
-                              {mastered ? (
-                                <CheckCircle2 className="size-5" aria-hidden />
-                              ) : (
-                                lesson.number
-                              )}
-                            </span>
-                            <span className="min-w-0">
-                              <span
-                                className="block font-black text-foreground"
-                                lang="en"
-                                dir="ltr"
-                              >
-                                {activity.title}
-                              </span>
-                              <span
-                                className="mt-1 line-clamp-2 block text-sm leading-5 text-muted-foreground"
-                                lang="en"
-                                dir="ltr"
-                              >
-                                {activity.objective}
-                              </span>
-                              <span className="mt-2 inline-flex items-center gap-1 text-xs font-bold text-primary">
-                                <Volume2 className="size-4" aria-hidden />
-                                {isDue(progress?.nextReviewAt) ? (
-                                  <>
-                                    <Clock3 className="size-4" aria-hidden />
-                                    {t("pronunciation.dueReview")}
-                                  </>
-                                ) : progress?.status === "in-progress" ? (
-                                  t("pronunciation.resumeStage", {
-                                    stage: progress.currentStage + 1,
-                                  })
-                                ) : mastered ? (
-                                  t("pronunciation.masteredScore", {
-                                    score: progress.bestScorePercent,
-                                  })
-                                ) : (
-                                  t("pronunciation.lessonFormat")
-                                )}
-                              </span>
-                            </span>
-                            <ArrowRight
-                              className="mt-3 size-5 text-primary rtl:rotate-180"
-                              aria-hidden
-                            />
-                          </button>
-                        </li>
+                        <PronunciationLessonCard
+                          key={lesson.number}
+                          lesson={lesson}
+                          mastered={mastered}
+                          isDue={isDue(progress?.nextReviewAt)}
+                          progress={progress}
+                          onStartLesson={(number) =>
+                            dispatch({
+                              type: "OPEN_FIGMA_PRONUNCIATION",
+                              lessonNumber: number,
+                            })
+                          }
+                          onOpenDetails={(number) => setSelectedLessonForInfo(number)}
+                        />
                       );
                     })}
                   </ol>
@@ -327,6 +274,17 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
           </section>
         )}
       </div>
+
+      <PronunciationLessonInfoModal
+        lessonNumber={selectedLessonForInfo}
+        onClose={() => setSelectedLessonForInfo(null)}
+        onStartLesson={(lessonNumber) =>
+          dispatch({
+            type: "OPEN_FIGMA_PRONUNCIATION",
+            lessonNumber,
+          })
+        }
+      />
     </main>
   );
 }

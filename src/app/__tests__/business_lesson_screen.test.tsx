@@ -212,4 +212,76 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     // Stage 3 (Language Bank) must remain locked because Stage 2 was never completed
     expect(vocabBtn.hasAttribute("disabled")).toBe(true);
   });
+
+  it("renders multiple-choice warm-up questions with instant feedback and thumbnail image", async () => {
+    const { BusinessWarmupStage } = await import("../learning/business/stages/BusinessWarmupStage");
+    const { getBusinessUnit } = await import("../learning/business/businessCatalog");
+
+    const unit = getBusinessUnit("unit-01");
+    expect(unit).toBeDefined();
+    if (!unit) return;
+
+    const onNext = vi.fn();
+    const onSaveNote = vi.fn();
+
+    const { container } = render(
+      <I18nProvider>
+        <LearnerProvider>
+          <BusinessWarmupStage unit={unit} onSaveNote={onSaveNote} onNext={onNext} />
+        </LearnerProvider>
+      </I18nProvider>
+    );
+
+    // 1. Verify thumbnail image is rendered with resolved asset URL
+    const heroImg = container.querySelector("img");
+    expect(heroImg).not.toBeNull();
+    expect(heroImg?.getAttribute("src")).toContain("unit-01-hero.webp");
+
+    // 2. Warm-up questions must NOT have textareas; they must have multiple choice radiogroups
+    expect(screen.queryAllByRole("textbox")).toHaveLength(0);
+
+    const radioGroups = screen.getAllByRole("radiogroup");
+    expect(radioGroups.length).toBe(unit.warmup.prompts.length);
+    expect(radioGroups.length).toBeLessThanOrEqual(7);
+
+    // 3. Radio options exist for Question 1
+    const q1RadioButtons = within(radioGroups[0]).getAllByRole("radio");
+    expect(q1RadioButtons.length).toBeGreaterThanOrEqual(2);
+
+    // Initially, no feedback is revealed for Question 1
+    expect(screen.queryByText(/Strategic Workplace Feedback/i)).toBeNull();
+
+    // 4. Select an option
+    fireEvent.click(q1RadioButtons[0]);
+    expect(onSaveNote).toHaveBeenCalledWith("warmup-1-1", "A");
+
+    // 5. Instant feedback card is displayed with explanation
+    expect(screen.getByText(/Strategic Workplace Feedback/i)).toBeDefined();
+    expect(screen.getByText(unit.warmup.prompts[0].explanation!)).toBeDefined();
+
+    // 6. Continue to next stage invokes onNext
+    const continueBtn = screen.getByRole("button", { name: /Continue to Case Scenario/i });
+    fireEvent.click(continueBtn);
+    expect(onNext).toHaveBeenCalledOnce();
+  });
+
+  it("renders thumbnail image on unit cards in BusinessCurriculumScreen", () => {
+    const dispatch = vi.fn();
+    render(
+      <I18nProvider>
+        <LearnerProvider>
+          <BusinessCurriculumScreen dispatch={dispatch} />
+        </LearnerProvider>
+      </I18nProvider>
+    );
+
+    // Verify all unit cards contain hero thumbnail images with resolved sources
+    const cards = screen.getAllByRole("article");
+    expect(cards.length).toBe(40);
+
+    const firstCard = cards[0];
+    const cardImg = firstCard.querySelector("img");
+    expect(cardImg).not.toBeNull();
+    expect(cardImg?.getAttribute("src")).toContain("unit-01-hero.webp");
+  });
 });
