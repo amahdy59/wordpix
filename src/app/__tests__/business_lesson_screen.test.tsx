@@ -136,12 +136,12 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     const table = screen.getByRole("table");
     expect(table).toBeDefined();
 
-    // 2. All 5 headers exist matching Figma
+    // 2. All 4 core headers exist (Type column streamlined out of table)
     expect(screen.getByRole("columnheader", { name: "Image" })).toBeDefined();
     expect(screen.getByRole("columnheader", { name: "Word/Phrase" })).toBeDefined();
     expect(screen.getByRole("columnheader", { name: "Definition" })).toBeDefined();
     expect(screen.getByRole("columnheader", { name: "Example" })).toBeDefined();
-    expect(screen.getByRole("columnheader", { name: "Type" })).toBeDefined();
+    expect(screen.queryByRole("columnheader", { name: "Type" })).toBeNull();
 
     // 3. All 15 rows rendered in the table (desktop + mobile both in DOM, hidden via CSS)
     const rows = screen.getAllByRole("row");
@@ -169,7 +169,7 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     expect(screen.getAllByText("keep in touch").length).toBeGreaterThan(0);
 
     // Reset filter
-    const allFilter = screen.getByRole("button", { name: /All/i });
+    const allFilter = screen.getByRole("button", { name: /^all/i });
     fireEvent.click(allFilter);
     fireEvent.change(searchInput, { target: { value: "" } });
 

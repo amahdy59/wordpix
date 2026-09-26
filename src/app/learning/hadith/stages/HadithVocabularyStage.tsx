@@ -1,11 +1,15 @@
 import { useMemo, useState } from "react";
-import { Image as ImageIcon } from "lucide-react";
 import { resolveAssetUrl } from "../../../../utils/assetUrl";
 import { useI18n } from "../../../../i18n";
 import { useAudio } from "../../../shared/useAudio";
 import { AudioButton } from "../../../shared/AudioButton";
 import { getHadithVisualVocabulary } from "../figmaHadithCatalog";
 import { getCurriculumAudioKey } from "../../shared/curriculumAudioManifest";
+import {
+  CurriculumVocabularyTable,
+  type VocabularyTableItem,
+  type VocabularySidebars,
+} from "../../../shared/CurriculumVocabularyTable";
 
 interface VocabularyItem {
   term: string;
@@ -79,42 +83,6 @@ function valueAfter(lines: readonly string[], heading: RegExp) {
   return index >= 0 ? lines[index + 1] : undefined;
 }
 
-interface ImageWithFallbackProps {
-  src: string;
-  alt: string;
-  fallbackLabel: string;
-}
-
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions -- image error recovery needs an onError handler */
-function ImageWithFallback({ src, alt, fallbackLabel }: ImageWithFallbackProps) {
-  const [hasError, setHasError] = useState(false);
-
-  if (hasError || !src) {
-    return (
-      <div className="flex aspect-video sm:aspect-auto h-full min-h-36 w-full items-center justify-center bg-gradient-to-br from-primary/10 via-muted to-muted/80 p-4 text-center border-b sm:border-b-0 sm:border-s border-border">
-        <div className="space-y-1.5">
-          <div className="mx-auto flex size-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
-            <ImageIcon className="size-5" aria-hidden />
-          </div>
-          <p className="text-xs font-black uppercase tracking-wider text-muted-foreground">
-            {fallbackLabel}
-          </p>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <img
-      src={src}
-      alt={alt}
-      onError={() => setHasError(true)}
-      className="aspect-video sm:aspect-auto h-full w-full object-cover"
-    />
-  );
-}
-/* eslint-enable jsx-a11y/no-noninteractive-element-interactions */
-
 export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
   const { t } = useI18n();
   const [activeAudioText, setActiveAudioText] = useState<string | null>(null);
@@ -170,6 +138,34 @@ export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
     })),
   ];
 
+  const hadithTableItems: VocabularyTableItem[] = useMemo(() => {
+    return vocabulary.map((item) => {
+      const visual = visuals.find(
+        (candidate) => candidate.label.toLowerCase() === item.term.toLowerCase()
+      );
+      const assetUrl = visual ? resolveAssetUrl(`hadith/v1/images/${visual.imageRef}.png`) : "";
+      return {
+        id: item.term,
+        term: item.term,
+        termAr: item.arabic,
+        type: item.partOfSpeech,
+        definition: item.definition,
+        example: item.example ?? "",
+        imageSrc: assetUrl,
+        fallbackLabel: item.term,
+      };
+    });
+  }, [vocabulary, visuals]);
+
+  const hadithSidebars: VocabularySidebars = useMemo(
+    () => ({
+      wordFamily: valueAfter(lines, /^word family$/i),
+      meaningContrast: valueAfter(lines, /^synonym \/ contrast$/i),
+      commonError: valueAfter(lines, /^common error$/i),
+    }),
+    [lines]
+  );
+
   return (
     <section
       className="mx-auto w-full max-w-6xl space-y-6"
@@ -193,73 +189,18 @@ export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
         </p>
       </header>
 
-      {/* Core Word Cards (2 columns) */}
-      <div className="grid gap-4 lg:grid-cols-2">
-        {vocabulary.map((item) => {
-          const visual = visuals.find(
-            (candidate) => candidate.label.toLowerCase() === item.term.toLowerCase()
-          );
-          const assetUrl = visual ? resolveAssetUrl(`hadith/v1/images/${visual.imageRef}.png`) : "";
-
-          return (
-            <article
-              key={item.term}
-              className="overflow-hidden rounded-3xl border border-border bg-card shadow-wp-sm transition-all hover:border-primary/40"
-            >
-              <div className="grid sm:grid-cols-[12rem_1fr]">
-                <ImageWithFallback src={assetUrl} alt={item.term} fallbackLabel={item.term} />
-                <div className="p-5 flex flex-col justify-between">
-                  <div>
-                    <div className="flex items-start justify-between gap-3">
-                      <div>
-                        <h3 className="text-xl font-black text-foreground" lang="en" dir="ltr">
-                          {item.term}
-                        </h3>
-                        <span className="mt-1 inline-block rounded-md bg-primary/10 px-2 py-0.5 text-[11px] font-black uppercase tracking-wider text-primary">
-                          {item.partOfSpeech}
-                        </span>
-                      </div>
-                      <AudioButton
-                        onPlay={() => playAudio(item.term)}
-                        isPlaying={audio.isPlaying && activeAudioText === item.term}
-                        isError={audio.isError && activeAudioText === item.term}
-                        label={
-                          t("hadith.playVocabulary", { word: item.term }) ||
-                          `Listen to ${item.term}`
-                        }
-                        size="sm"
-                        className="border-primary/40 bg-primary/5 text-primary hover:bg-primary/10"
-                      />
-                    </div>
-
-                    <p className="mt-3 text-sm font-semibold leading-relaxed text-foreground">
-                      {item.definition}
-                    </p>
-
-                    {item.example && (
-                      <p
-                        className="mt-2 rounded-xl bg-muted/60 p-3 text-xs font-medium italic text-muted-foreground"
-                        lang="en"
-                        dir="ltr"
-                      >
-                        “{item.example}”
-                      </p>
-                    )}
-                  </div>
-
-                  <p
-                    className="mt-3 text-end font-serif text-lg font-bold text-primary"
-                    lang="ar"
-                    dir="rtl"
-                  >
-                    {item.arabic}
-                  </p>
-                </div>
-              </div>
-            </article>
-          );
-        })}
-      </div>
+      {/* Core Universal Vocabulary Table & Gallery */}
+      <CurriculumVocabularyTable
+        items={hadithTableItems}
+        sidebars={hadithSidebars}
+        onPlayAudio={playAudio}
+        activeAudioText={activeAudioText}
+        isPlaying={audio.isPlaying}
+        isAudioError={audio.isError}
+        showArabic={true}
+        allowViewToggle={true}
+        defaultView="table"
+      />
 
       {/* Complete Language Bank */}
       <section
@@ -369,36 +310,6 @@ export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
               </p>
             </div>
           ))}
-        </div>
-
-        {/* 3 Pedagogical Sidebars: Word Family, Contrast, Common Error */}
-        <div className="mt-6 grid gap-3 md:grid-cols-3">
-          <aside className="rounded-2xl border border-border bg-muted/50 p-4 shadow-sm">
-            <p className="text-xs font-black uppercase text-primary">
-              {t("hadith.wordFamily") || "Word family"}
-            </p>
-            <p className="mt-2 text-sm font-bold text-foreground" lang="en" dir="ltr">
-              {valueAfter(lines, /^word family$/i) || "N/A"}
-            </p>
-          </aside>
-
-          <aside className="rounded-2xl border border-border bg-muted/50 p-4 shadow-sm">
-            <p className="text-xs font-black uppercase text-primary">
-              {t("hadith.synonymContrast") || "Meaning contrast"}
-            </p>
-            <p className="mt-2 text-sm font-semibold text-muted-foreground" lang="en" dir="ltr">
-              {valueAfter(lines, /^synonym \/ contrast$/i) || "N/A"}
-            </p>
-          </aside>
-
-          <aside className="rounded-2xl border border-feedback-warning-border bg-feedback-warning-surface p-4 shadow-sm">
-            <p className="text-xs font-black uppercase text-feedback-warning-foreground">
-              {t("hadith.commonError") || "Common error"}
-            </p>
-            <p className="mt-2 text-sm font-semibold text-foreground" lang="en" dir="ltr">
-              {valueAfter(lines, /^common error$/i) || "N/A"}
-            </p>
-          </aside>
         </div>
       </section>
     </section>

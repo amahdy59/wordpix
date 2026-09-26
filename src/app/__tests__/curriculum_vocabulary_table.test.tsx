@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { I18nProvider } from "../context/I18nContext";
 import {
@@ -33,7 +33,7 @@ const mockSidebars = {
 };
 
 describe("CurriculumVocabularyTable", () => {
-  it("renders table with the five target headers: Image, Word/Phrase, Definition, Example, Type", () => {
+  it("renders table with the 4 core headers by default: Image, Word/Phrase, Definition, Example (Type omitted)", () => {
     render(
       <I18nProvider>
         <CurriculumVocabularyTable items={mockItems} />
@@ -45,10 +45,20 @@ describe("CurriculumVocabularyTable", () => {
     expect(screen.getByText("Word/Phrase")).toBeInTheDocument();
     expect(screen.getByText("Definition")).toBeInTheDocument();
     expect(screen.getByText("Example")).toBeInTheDocument();
+    expect(screen.queryByRole("columnheader", { name: "Type" })).not.toBeInTheDocument();
+  });
+
+  it("renders Type header when showType is true", () => {
+    render(
+      <I18nProvider>
+        <CurriculumVocabularyTable items={mockItems} showType={true} />
+      </I18nProvider>
+    );
+
     expect(screen.getByText("Type")).toBeInTheDocument();
   });
 
-  it("renders all vocabulary rows with terms, definitions, examples, and badges", () => {
+  it("renders all vocabulary rows with terms, definitions, and examples", () => {
     render(
       <I18nProvider>
         <CurriculumVocabularyTable items={mockItems} />
@@ -59,11 +69,8 @@ describe("CurriculumVocabularyTable", () => {
     expect(
       screen.getAllByText("your function or position in an organisation").length
     ).toBeGreaterThan(0);
-    expect(screen.getAllByText("What's your role in the project?").length).toBeGreaterThan(0);
-    expect(screen.getAllByText("Noun").length).toBeGreaterThan(0);
-
+    expect(screen.getAllByText(`"What's your role in the project?"`).length).toBeGreaterThan(0);
     expect(screen.getAllByText("work with clients").length).toBeGreaterThan(0);
-    expect(screen.getAllByText("Collocation").length).toBeGreaterThan(0);
   });
 
   it("triggers audio playback when pronunciation button is clicked", async () => {
@@ -105,5 +112,58 @@ describe("CurriculumVocabularyTable", () => {
 
     expect(screen.getByText("Common error")).toBeInTheDocument();
     expect(screen.getByText(mockSidebars.commonError)).toBeInTheDocument();
+  });
+
+  it("opens the accessible Image & Meaning Modal when enlarge button is clicked and closes on close button", async () => {
+    render(
+      <I18nProvider>
+        <CurriculumVocabularyTable items={mockItems} />
+      </I18nProvider>
+    );
+
+    const enlargeBtns = screen.getAllByRole("button", { name: /enlarge image for role/i });
+    expect(enlargeBtns.length).toBeGreaterThan(0);
+
+    // Click to open modal
+    await userEvent.click(enlargeBtns[0]);
+
+    const dialog = screen.getByRole("dialog");
+    expect(dialog).toBeInTheDocument();
+    expect(dialog).toHaveAttribute("aria-modal", "true");
+
+    // Modal displays term, definition and example inside dialog
+    expect(
+      within(dialog).getByText("your function or position in an organisation")
+    ).toBeInTheDocument();
+    expect(within(dialog).getByRole("heading", { name: "role" })).toBeInTheDocument();
+
+    // Close modal
+    const closeBtn = within(dialog).getByRole("button", { name: /close dialog/i });
+    await userEvent.click(closeBtn);
+
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+  });
+
+  it("toggles between Table View and Gallery View", async () => {
+    render(
+      <I18nProvider>
+        <CurriculumVocabularyTable items={mockItems} />
+      </I18nProvider>
+    );
+
+    // Starts in Table View
+    expect(screen.getByRole("table")).toBeInTheDocument();
+
+    const galleryBtn = screen.getByRole("button", { name: /gallery/i });
+    await userEvent.click(galleryBtn);
+
+    // Table is hidden in Gallery View
+    expect(screen.queryByRole("table")).not.toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 3, name: "role" })).toBeInTheDocument();
+
+    // Switch back to Table View
+    const tableBtn = screen.getByRole("button", { name: /table/i });
+    await userEvent.click(tableBtn);
+    expect(screen.getByRole("table")).toBeInTheDocument();
   });
 });
