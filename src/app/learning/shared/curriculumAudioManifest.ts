@@ -34,15 +34,42 @@ function getLowercaseClipIndex(): Map<string, string> {
   return lowercaseClipIndex;
 }
 
+export function cleanCurriculumTerm(term: string): string {
+  return String(term)
+    .replace(/^\d+[.)]\s*/, "")
+    .replace(/\s*[/(].*$/, "")
+    .replace(/[\u0600-\u06FF]/g, "")
+    .replace(/[-_]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 /**
  * Resolves a curriculum word, phrasal verb, or idiom to its content-addressed R2 objectKey.
  */
 export function getCurriculumAudioKey(term: string): string | null {
-  const clean = String(term).replace(/[-_]/g, " ").trim();
-  if (!clean) return null;
+  const directClean = String(term).replace(/[-_]/g, " ").trim();
+  if (!directClean) return null;
+
   const entry =
-    CURRICULUM_AUDIO_MANIFEST.clips[clean] ?? CURRICULUM_AUDIO_MANIFEST.clips[clean.toLowerCase()];
+    CURRICULUM_AUDIO_MANIFEST.clips[directClean] ??
+    CURRICULUM_AUDIO_MANIFEST.clips[directClean.toLowerCase()];
   if (entry) return entry.objectKey;
 
-  return getLowercaseClipIndex().get(clean.toLowerCase()) ?? null;
+  const fromIndex = getLowercaseClipIndex().get(directClean.toLowerCase());
+  if (fromIndex) return fromIndex;
+
+  // Try cleaned version (stripping Arabic, slashes, parenthesized translations)
+  const normalized = cleanCurriculumTerm(term);
+  if (normalized && normalized !== directClean) {
+    const normEntry =
+      CURRICULUM_AUDIO_MANIFEST.clips[normalized] ??
+      CURRICULUM_AUDIO_MANIFEST.clips[normalized.toLowerCase()];
+    if (normEntry) return normEntry.objectKey;
+
+    const fromNormIndex = getLowercaseClipIndex().get(normalized.toLowerCase());
+    if (fromNormIndex) return fromNormIndex;
+  }
+
+  return null;
 }

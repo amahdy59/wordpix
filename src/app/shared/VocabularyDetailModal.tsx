@@ -1,11 +1,44 @@
 import { memo, useState } from "react";
 import { createPortal } from "react-dom";
-import { X, Volume2, Image as ImageIcon } from "lucide-react";
+import { X, Volume2, Image as ImageIcon, Layers, Sparkles } from "lucide-react";
 import { useI18n } from "../../i18n";
 import { useModalA11y } from "./useModalA11y";
 import { useAudio } from "./useAudio";
 import { getCurriculumAudioKey } from "../learning/shared/curriculumAudioManifest";
 import type { VocabularyTableItem } from "./CurriculumVocabularyTable";
+
+function getRegisterBadge(register?: string) {
+  if (!register || register.toLowerCase() === "general") return null;
+  switch (register.toLowerCase()) {
+    case "formal":
+      return {
+        labelKey: "wordDetails.registerFormal",
+        defaultLabel: "Formal",
+        color: "bg-primary/10 text-primary border-primary/30",
+      };
+    case "casual":
+      return {
+        labelKey: "wordDetails.registerCasual",
+        defaultLabel: "Casual / Spoken",
+        color:
+          "bg-feedback-success-surface text-feedback-success-foreground border-feedback-success-border",
+      };
+    case "business":
+      return {
+        labelKey: "wordDetails.registerBusiness",
+        defaultLabel: "Business",
+        color: "bg-feedback-info-surface text-feedback-info-foreground border-feedback-info-border",
+      };
+    case "academic":
+      return {
+        labelKey: "wordDetails.registerAcademic",
+        defaultLabel: "Academic",
+        color: "bg-secondary text-secondary-foreground border-border",
+      };
+    default:
+      return null;
+  }
+}
 
 interface Props {
   item: VocabularyTableItem | null;
@@ -90,11 +123,24 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
           {/* Banner Word Tag & Title */}
           <div className="absolute bottom-3 start-4 end-4 sm:bottom-4 sm:start-6 sm:end-6 flex items-end justify-between gap-3">
             <div className="min-w-0 flex-1">
-              {item.type && (
-                <span className="inline-block rounded-md bg-primary/25 text-foreground text-xs font-black uppercase tracking-wider px-2.5 py-0.5 mb-1.5 backdrop-blur-sm border border-primary/40 shadow-xs">
-                  {item.type}
-                </span>
-              )}
+              <div className="flex flex-wrap items-center gap-1.5 mb-1.5">
+                {item.type && (
+                  <span className="inline-block rounded-md bg-primary/25 text-foreground text-xs font-black uppercase tracking-wider px-2.5 py-0.5 backdrop-blur-sm border border-primary/40 shadow-xs">
+                    {item.type}
+                  </span>
+                )}
+                {(() => {
+                  const reg = getRegisterBadge(item.register);
+                  if (!reg) return null;
+                  return (
+                    <span
+                      className={`inline-block rounded-md text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 backdrop-blur-sm border shadow-xs ${reg.color}`}
+                    >
+                      {t(reg.labelKey) || reg.defaultLabel}
+                    </span>
+                  );
+                })()}
+              </div>
               <h2
                 id="vocab-detail-modal-term"
                 className="text-2xl sm:text-3xl font-black text-foreground drop-shadow-sm tracking-tight break-words"
@@ -183,6 +229,127 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
               )}
             </div>
           )}
+
+          {/* Common Combinations / Collocations */}
+          {item.collocations && item.collocations.length > 0 && (
+            <div className="rounded-2xl border border-border/80 bg-muted/20 p-4">
+              <span className="text-xs font-black uppercase tracking-wider text-muted-foreground flex items-center gap-1.5 mb-2.5">
+                <Layers className="size-3.5 text-primary" aria-hidden="true" />
+                <span>
+                  {t("wordDetails.collocations", { count: item.collocations.length }) ||
+                    "Common Combinations"}
+                </span>
+              </span>
+              <div className="flex flex-wrap gap-2">
+                {item.collocations.map((col, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => audio.speak(col)}
+                    className="flex items-center gap-1.5 px-3 py-1.5 min-h-[44px] rounded-xl bg-card hover:bg-primary/10 text-foreground text-xs sm:text-sm font-semibold border border-border hover:border-primary/40 active:scale-95 transition-all cursor-pointer focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+                    aria-label={`Listen to combination: ${col}`}
+                  >
+                    <span>{col}</span>
+                    <Volume2 className="size-3 text-muted-foreground" aria-hidden="true" />
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Word Family Morphology */}
+          {item.wordFamily &&
+            Boolean(
+              item.wordFamily.noun ||
+              item.wordFamily.verb ||
+              item.wordFamily.adj ||
+              item.wordFamily.adv
+            ) && (
+              <div className="rounded-2xl border border-primary/20 bg-primary/5 p-4">
+                <span className="text-xs font-black uppercase tracking-wider text-primary flex items-center gap-1.5 mb-2.5">
+                  <Sparkles className="size-3.5" aria-hidden="true" />
+                  <span>{t("wordDetails.wordFamily") || "Word Family"}</span>
+                </span>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                  {item.wordFamily.noun && (
+                    <div className="flex flex-col bg-card border border-border/60 rounded-xl p-2.5">
+                      <span className="text-[10px] font-black uppercase tracking-wider text-muted-foreground">
+                        {t("wordDetails.posNoun") || "Noun"}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => audio.speak(item.wordFamily!.noun!)}
+                        className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+                        aria-label={`Listen to noun: ${item.wordFamily.noun}`}
+                      >
+                        <span className="truncate">{item.wordFamily.noun}</span>
+                        <Volume2
+                          className="size-3 text-muted-foreground shrink-0"
+                          aria-hidden="true"
+                        />
+                      </button>
+                    </div>
+                  )}
+                  {item.wordFamily.verb && (
+                    <div className="flex flex-col bg-card border border-border/60 rounded-xl p-2.5">
+                      <span className="text-[10px] font-black uppercase tracking-wider text-muted-foreground">
+                        {t("wordDetails.posVerb") || "Verb"}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => audio.speak(item.wordFamily!.verb!)}
+                        className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+                        aria-label={`Listen to verb: ${item.wordFamily.verb}`}
+                      >
+                        <span className="truncate">{item.wordFamily.verb}</span>
+                        <Volume2
+                          className="size-3 text-muted-foreground shrink-0"
+                          aria-hidden="true"
+                        />
+                      </button>
+                    </div>
+                  )}
+                  {item.wordFamily.adj && (
+                    <div className="flex flex-col bg-card border border-border/60 rounded-xl p-2.5">
+                      <span className="text-[10px] font-black uppercase tracking-wider text-muted-foreground">
+                        {t("wordDetails.posAdjective") || "Adjective"}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => audio.speak(item.wordFamily!.adj!)}
+                        className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+                        aria-label={`Listen to adjective: ${item.wordFamily.adj}`}
+                      >
+                        <span className="truncate">{item.wordFamily.adj}</span>
+                        <Volume2
+                          className="size-3 text-muted-foreground shrink-0"
+                          aria-hidden="true"
+                        />
+                      </button>
+                    </div>
+                  )}
+                  {item.wordFamily.adv && (
+                    <div className="flex flex-col bg-card border border-border/60 rounded-xl p-2.5">
+                      <span className="text-[10px] font-black uppercase tracking-wider text-muted-foreground">
+                        {t("wordDetails.posAdverb") || "Adverb"}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => audio.speak(item.wordFamily!.adv!)}
+                        className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+                        aria-label={`Listen to adverb: ${item.wordFamily.adv}`}
+                      >
+                        <span className="truncate">{item.wordFamily.adv}</span>
+                        <Volume2
+                          className="size-3 text-muted-foreground shrink-0"
+                          aria-hidden="true"
+                        />
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
         </div>
 
         {/* Footer with Done button */}

@@ -3,6 +3,7 @@ import type { Action } from "../types";
 import { useAudio } from "../shared/useAudio";
 import { resolveGroup, resolveUnitForLesson } from "../data/lessons";
 import { getWords } from "../data/vocabulary";
+import { getWordImageSrc } from "../shared/WordImage";
 import { SceneCanvas } from "./SceneCanvas";
 import { VocabSidebar } from "./VocabSidebar";
 
@@ -30,6 +31,17 @@ export const LearnWordsScreen = memo(function LearnWordsScreen({ lessonId, dispa
   const mountedRef = useRef(false);
 
   const activeWord = words.find((v) => v.id === activeId) ?? words[0];
+
+  // Preload group word images for instantaneous navigation
+  useEffect(() => {
+    words.forEach((w) => {
+      const src = getWordImageSrc(w, "hero");
+      if (src) {
+        const img = new Image();
+        img.src = src;
+      }
+    });
+  }, [words]);
 
   // Auto-speak the first word on mount
   useEffect(() => {

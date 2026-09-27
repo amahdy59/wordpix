@@ -53,7 +53,12 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Pro
       </div>
 
       {/* Unified Quiz Engine showing 3 questions at a time on desktop */}
-      <CurriculumQuizEngine questions={questions} onComplete={handleComplete} desktopPageSize={3} />
+      <CurriculumQuizEngine
+        questions={questions}
+        onComplete={handleComplete}
+        desktopPageSize={3}
+        unitId={unit.id}
+      />
 
       {/* Stage Navigation Footer */}
       <div className="mt-2 flex items-center justify-between">

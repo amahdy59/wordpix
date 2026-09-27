@@ -53,11 +53,44 @@ const normalizeVisualLabel = (value: string) =>
     .replace(/\s+/g, " ")
     .trim();
 
-export function getHadithVisualVocabulary(terms: readonly string[]) {
-  const wanted = new Set(terms.map(normalizeVisualLabel));
-  return FIGMA_HADITH_VISUAL_VOCABULARY.filter((item) =>
-    wanted.has(normalizeVisualLabel(item.label))
-  );
+export function getHadithVisualVocabulary(terms: readonly string[], lessonNumber?: number) {
+  const visualVocab = FIGMA_HADITH_VISUAL_VOCABULARY;
+  if (terms.length === 0 && lessonNumber) {
+    const chunkStart = ((lessonNumber - 1) * 5) % visualVocab.length;
+    return visualVocab.slice(chunkStart, chunkStart + 5);
+  }
+
+  const chunkStart = lessonNumber ? ((lessonNumber - 1) * 5) % visualVocab.length : -1;
+  const lessonChunk = chunkStart >= 0 ? visualVocab.slice(chunkStart, chunkStart + 5) : [];
+
+  return terms
+    .map((term, idx) => {
+      const normTerm = normalizeVisualLabel(term);
+
+      // 1. Direct or base label match in entire visual vocabulary
+      let match = visualVocab.find((v) => {
+        const base = v.label.split("·")[0].trim();
+        return (
+          normalizeVisualLabel(v.label) === normTerm || normalizeVisualLabel(base) === normTerm
+        );
+      });
+
+      // 2. Subphrase / substring match
+      if (!match) {
+        match = visualVocab.find((v) => {
+          const base = normalizeVisualLabel(v.label.split("·")[0].trim());
+          return normTerm.includes(base) || base.includes(normTerm);
+        });
+      }
+
+      // 3. Fallback to lesson-specific chunk position
+      if (!match && lessonChunk[idx]) {
+        match = lessonChunk[idx];
+      }
+
+      return match;
+    })
+    .filter((item): item is (typeof FIGMA_HADITH_VISUAL_VOCABULARY)[number] => Boolean(item));
 }
 
 export function getHadithLessonThumbnail(lesson: FigmaHadithLesson) {

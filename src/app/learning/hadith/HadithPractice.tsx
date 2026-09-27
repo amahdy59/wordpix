@@ -4,6 +4,7 @@ import { useI18n } from "../../../i18n";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
 import type { HadithExerciseSet } from "./hadithExerciseCatalog";
 import { QuizQuestionCard } from "../../shared/QuizQuestionCard";
+import { playCorrectSound, playIncorrectSound } from "../../shared/useSound";
 
 interface Props {
   exerciseSet: HadithExerciseSet;
@@ -185,12 +186,20 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
                       key={item.id}
                       type="button"
                       onClick={() => {
+                        const newOrder = [...selectedOrder, item.id];
                         const nextSequences = {
                           ...sequences,
-                          [exercise.id]: [...selectedOrder, item.id],
+                          [exercise.id]: newOrder,
                         };
                         setSequences(nextSequences);
                         publishScore(choices, nextSequences);
+                        if (newOrder.length === exercise.answerOrder.length) {
+                          const isCorrect = exercise.answerOrder.every(
+                            (id, idx) => id === newOrder[idx]
+                          );
+                          if (isCorrect) playCorrectSound();
+                          else playIncorrectSound();
+                        }
                       }}
                       className="min-h-11 rounded-xl border border-border px-3 text-sm font-bold hover:border-primary active:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                     >

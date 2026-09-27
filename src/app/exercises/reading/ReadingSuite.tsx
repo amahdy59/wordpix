@@ -18,14 +18,18 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
   const { t } = useI18n();
   const [selected, setSelected] = useState<string | null>(null);
   const [checked, setChecked] = useState(false);
-  const { playCorrect } = useSound();
+  const { playCorrect, playIncorrect } = useSound();
 
   const target = BEDROOM_VOCABULARY[1]; // Blanket
   const choices = ["Blanket", "Dresser", "Wardrobe", "Nightstand"];
 
   const handleCheck = () => {
     setChecked(true);
-    playCorrect();
+    if (selected === target.label) {
+      playCorrect();
+    } else {
+      playIncorrect();
+    }
   };
 
   return (

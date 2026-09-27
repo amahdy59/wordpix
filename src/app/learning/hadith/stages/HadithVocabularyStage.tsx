@@ -4,7 +4,7 @@ import { useI18n } from "../../../../i18n";
 import { useAudio } from "../../../shared/useAudio";
 import { AudioButton } from "../../../shared/AudioButton";
 import { getHadithVisualVocabulary } from "../figmaHadithCatalog";
-import { getCurriculumAudioKey } from "../../shared/curriculumAudioManifest";
+import { getCurriculumAudioKey, cleanCurriculumTerm } from "../../shared/curriculumAudioManifest";
 import {
   CurriculumVocabularyTable,
   type VocabularyTableItem,
@@ -24,7 +24,25 @@ interface LanguageItem {
   explanation: string;
 }
 
-const PART_OF_SPEECH = /^(?:noun(?: phrase)?|verb|adjective|adverb|phrase|expression)$/i;
+const PART_OF_SPEECH =
+  /^(?:noun(?: phrase)?|verb(?: phrase)?|adjective|adverb|phrase|expression|verbal noun|adverbial phrase|idiom)$/i;
+
+function cleanTerm(raw: string): string {
+  return raw
+    .replace(/^\d+[.)]\s*/, "")
+    .replace(/\s*\([^)]*\)/g, "")
+    .replace(/[\u0600-\u06FF]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizeVisualLabel(label: string): string {
+  return label
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
 
 function section(lines: readonly string[], start: RegExp, end: RegExp): string[] {
   const startIndex = lines.findIndex((line) => start.test(line));
@@ -33,30 +51,173 @@ function section(lines: readonly string[], start: RegExp, end: RegExp): string[]
   return lines.slice(startIndex + 1, endIndex < 0 ? undefined : endIndex);
 }
 
-export function parseHadithVocabulary(lines: readonly string[]): VocabularyItem[] {
-  const values = section(
-    lines,
-    /^word$/i,
-    /^(?:useful language|extra vocabulary|scholarship note)/i
-  ).slice(3);
+export function parseHadithVocabulary(
+  lines: readonly string[],
+  lessonNumber?: number
+): VocabularyItem[] {
   const items: VocabularyItem[] = [];
-  let index = 0;
-  while (index < values.length) {
-    const [term, partOfSpeech, definition] = values
-      .slice(index, index + 3)
-      .map((value) => value?.trim());
-    if (!term || !partOfSpeech || !definition || !PART_OF_SPEECH.test(partOfSpeech)) {
-      index += 1;
-      continue;
+
+  // Strategy 1: Structured table
+  const startIdx = lines.findIndex((l) =>
+    /^(?:word|term|expression|word\s*\/\s*phrase)$/i.test(l.trim())
+  );
+  if (startIdx >= 0) {
+    const endIdx = lines.findIndex(
+      (l, i) =>
+        i > startIdx &&
+        /^(?:useful language|extra vocabulary|scholarship note|useful b1|grammar|phrasal verbs|complete language|submit)/i.test(
+          l.trim()
+        )
+    );
+    const values = lines.slice(startIdx + 1, endIdx < 0 ? undefined : endIdx);
+    let headerSkip = 0;
+    while (
+      headerSkip < values.length &&
+      /^(?:part of speech|definition|arabic|meaning|example|b1 context|arabic match|arabic source|arabic equivalent)/i.test(
+        values[headerSkip]?.trim() ?? ""
+      )
+    ) {
+      headerSkip++;
     }
-    const hasExample = /^e\.g\.,?/i.test(values[index + 3] ?? "");
-    const example = hasExample ? values[index + 3].replace(/^e\.g\.,?\s*/i, "").trim() : undefined;
-    const arabic = values[index + (hasExample ? 4 : 3)]?.trim();
-    if (!arabic) break;
-    items.push({ term, partOfSpeech, definition, example, arabic });
-    index += hasExample ? 5 : 4;
+    const dataValues = values.slice(headerSkip);
+    let i = 0;
+    while (i < dataValues.length) {
+      const termRaw = dataValues[i]?.trim();
+      if (
+        !termRaw ||
+        /^(?:submit|proceed|grammar|phrasal|collocation|word family|synonym)/i.test(termRaw)
+      ) {
+        break;
+      }
+
+      let pos = "expression";
+      let def = "";
+      let example = "";
+      let arabic = "";
+
+      let offset = 1;
+      const next1 = dataValues[i + offset]?.trim();
+      if (next1 && PART_OF_SPEECH.test(next1)) {
+        pos = next1;
+        offset++;
+      }
+
+      const next2 = dataValues[i + offset]?.trim();
+      if (next2 && !PART_OF_SPEECH.test(next2) && !/[\u0600-\u06FF]/.test(next2)) {
+        def = next2;
+        offset++;
+      }
+
+      const next3 = dataValues[i + offset]?.trim();
+      if (next3 && /^e\.g\./i.test(next3)) {
+        example = next3.replace(/^e\.g\.,?\s*/i, "");
+        offset++;
+      }
+
+      const next4 = dataValues[i + offset]?.trim();
+      if (next4 && /[\u0600-\u06FF]/.test(next4)) {
+        arabic = next4;
+        offset++;
+      }
+
+      const cleaned = cleanTerm(termRaw);
+      if (cleaned && def) {
+        items.push({
+          term: cleaned,
+          partOfSpeech: pos,
+          definition: def,
+          example: example || undefined,
+          arabic,
+        });
+      }
+      i += Math.max(1, offset);
+    }
   }
-  return items;
+
+  // Strategy 2: Slash format e.g. "brought together / يُجْمَعُ خَلْقُهُ"
+  if (items.length < 3) {
+    let i = 0;
+    while (i < lines.length && items.length < 5) {
+      const line = lines[i]?.trim() ?? "";
+      if (
+        line.includes("/") &&
+        /[\u0600-\u06FF]/.test(line) &&
+        !/^(?:synonym|grammar)/i.test(line)
+      ) {
+        const parts = line.split("/").map((s) => s.trim());
+        const en = cleanTerm(parts[0]);
+        const ar = parts[1] || "";
+        let pos = "expression";
+        let def = "";
+
+        const peek = lines[i + 1]?.trim() ?? "";
+        if (PART_OF_SPEECH.test(peek)) {
+          pos = peek;
+          def = lines[i + 2]?.trim() ?? "";
+          i += 3;
+        } else if (peek && !peek.includes("/") && !/^useful|^extra|^scholarship/i.test(peek)) {
+          def = peek;
+          i += 2;
+        } else {
+          i++;
+        }
+        if (en && def) {
+          items.push({ term: en, partOfSpeech: pos, definition: def, arabic: ar });
+        }
+        continue;
+      }
+      i++;
+    }
+  }
+
+  // Strategy 3: Numbered format e.g. "1. Purity (الطهور)"
+  if (items.length < 3) {
+    let i = 0;
+    while (i < lines.length && items.length < 5) {
+      const line = lines[i]?.trim() ?? "";
+      if (
+        /^\d+[.)]\s+[A-Za-z]/.test(line) &&
+        line.length < 60 &&
+        !/^(?:step|stage|unit)/i.test(line)
+      ) {
+        const term = cleanTerm(line);
+        const arMatch = line.match(/[\u0600-\u06FF\s\-–]+/);
+        const arabic = arMatch ? arMatch[0].trim() : "";
+        let def = lines[i + 1]?.trim() ?? "";
+        let pos = "expression";
+        if (PART_OF_SPEECH.test(def)) {
+          pos = def;
+          def = lines[i + 2]?.trim() ?? "";
+          i += 3;
+        } else {
+          i += 2;
+        }
+        if (term && def) {
+          items.push({ term, partOfSpeech: pos, definition: def, arabic });
+        }
+        continue;
+      }
+      i++;
+    }
+  }
+
+  // Fallback to visuals if still < 3
+  if (items.length < 3 && lessonNumber) {
+    const chunkVisuals = getHadithVisualVocabulary([], lessonNumber);
+    for (const v of chunkVisuals) {
+      const baseLabel = cleanTerm(v.label.split("·")[0]);
+      if (!items.some((it) => it.term.toLowerCase() === baseLabel.toLowerCase())) {
+        items.push({
+          term: baseLabel,
+          partOfSpeech: "expression",
+          definition: `Core vocabulary expression: "${baseLabel}"`,
+          arabic: "",
+        });
+      }
+    }
+  }
+
+  return items.slice(0, 5);
 }
 
 function alternating(lines: readonly string[]): LanguageItem[] {
@@ -83,20 +244,34 @@ function valueAfter(lines: readonly string[], heading: RegExp) {
   return index >= 0 ? lines[index + 1] : undefined;
 }
 
-export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
+export function HadithVocabularyStage({
+  lines,
+  lessonNumber,
+}: {
+  lines: readonly string[];
+  lessonNumber?: number;
+}) {
   const { t } = useI18n();
   const [activeAudioText, setActiveAudioText] = useState<string | null>(null);
   const audio = useAudio({ lang: "en-US", rate: 0.82, preferLocal: true });
 
   const playAudio = (text: string) => {
+    const cleaned = cleanCurriculumTerm(text);
     setActiveAudioText(text);
-    audio.speak(text, undefined, getCurriculumAudioKey(text) ?? undefined);
+    audio.speak(cleaned, undefined, getCurriculumAudioKey(cleaned) ?? undefined);
   };
 
-  const vocabulary = useMemo(() => parseHadithVocabulary(lines), [lines]);
+  const vocabulary = useMemo(
+    () => parseHadithVocabulary(lines, lessonNumber),
+    [lines, lessonNumber]
+  );
   const visuals = useMemo(
-    () => getHadithVisualVocabulary(vocabulary.map((item) => item.term)),
-    [vocabulary]
+    () =>
+      getHadithVisualVocabulary(
+        vocabulary.map((item) => item.term),
+        lessonNumber
+      ),
+    [vocabulary, lessonNumber]
   );
   const useful = useMemo(
     () => alternating(section(lines, /^useful language/i, /^extra vocabulary/i)),
@@ -139,10 +314,15 @@ export function HadithVocabularyStage({ lines }: { lines: readonly string[] }) {
   ];
 
   const hadithTableItems: VocabularyTableItem[] = useMemo(() => {
-    return vocabulary.map((item) => {
-      const visual = visuals.find(
-        (candidate) => candidate.label.toLowerCase() === item.term.toLowerCase()
-      );
+    return vocabulary.map((item, idx) => {
+      const normItem = normalizeVisualLabel(item.term);
+      const visual =
+        visuals.find((candidate) => {
+          const normCand = normalizeVisualLabel(candidate.label.split("·")[0]);
+          return (
+            normCand === normItem || normCand.includes(normItem) || normItem.includes(normCand)
+          );
+        }) ?? visuals[idx];
       const assetUrl = visual ? resolveAssetUrl(`hadith/v1/images/${visual.imageRef}.png`) : "";
       return {
         id: item.term,

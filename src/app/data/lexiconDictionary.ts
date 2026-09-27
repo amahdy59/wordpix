@@ -17,6 +17,9 @@ export interface LexiconPhrasalVerb {
   example: string;
 }
 
+import type { WordFamily, WordRegister } from "../types";
+export type { WordFamily, WordRegister };
+
 export interface LexiconEntry {
   id: string;
   arabic: string;
@@ -30,6 +33,9 @@ export interface LexiconEntry {
   sentences: LexiconSentence[];
   exampleSentence?: string;
   exampleArabic?: string;
+  wordFamily?: WordFamily;
+  register?: WordRegister;
+  canDoScenario?: string;
 }
 
 const GENERIC_COLLOCATIONS = new Set(["use regularly", "check carefully", "keep handy"]);
@@ -51,48 +57,84 @@ export function hasReviewedLexiconExamples(
 export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
   toilet: {
     id: "toilet",
-    arabic: "مرحاض",
-    sentences: [],
-    collocations: ["use the toilet", "clean the toilet", "buy a toilet"],
-    phrasalVerbs: [],
+    arabic: "مِرْحَاض",
     partOfSpeech: "noun",
+    phonetic: "/ˈtɔɪ.lət/",
+    register: "general",
+    collocations: ["use the toilet", "flush the toilet", "public toilet", "clean the toilet"],
+    phrasalVerbs: [],
+    sentences: [
+      {
+        context: "Daily Routine",
+        en: "Remember to wash your hands after using the toilet.",
+        ar: "تَذَكَّرْ أَنْ تَغْسِلَ يَدَيْكَ بَعْدَ اسْتِخْدَامِ المِرْحَاضِ.",
+      },
+    ],
+    exampleSentence: "Remember to wash your hands after using the toilet.",
+    exampleArabic: "تَذَكَّرْ أَنْ تَغْسِلَ يَدَيْكَ بَعْدَ اسْتِخْدَامِ المِرْحَاضِ.",
     audio: "/audio/en-US/toilet.mp3",
     meanings: [
       {
         en: "A bowl fitted with a water supply and a drain, used for urination and defecation.",
-        ar: "",
+        ar: "وعاء صحي موصول بمصدر مياه ومصرف يُستخدم لقضاء الحاجة.",
         sentences: [],
       },
     ],
   },
   sink: {
     id: "sink",
-    arabic: "حوض",
-    sentences: [],
-    collocations: ["use the sink", "clean the sink", "buy a sink"],
-    phrasalVerbs: [],
+    arabic: "حَوْضُ الغَسِيل",
     partOfSpeech: "noun",
+    phonetic: "/sɪŋk/",
+    register: "general",
+    collocations: ["wash hands in the sink", "bathroom sink", "kitchen sink", "clogged sink"],
+    phrasalVerbs: [],
+    sentences: [
+      {
+        context: "Daily Routine",
+        en: "She stood at the bathroom sink to wash her face with warm water.",
+        ar: "وَقَفَتْ أَمَامَ حَوْضِ الحَمَّامِ لِتَغْسِلَ وَجْهَهَا بِمَاءٍ دَافِئٍ.",
+      },
+    ],
+    exampleSentence: "She stood at the bathroom sink to wash her face with warm water.",
+    exampleArabic: "وَقَفَتْ أَمَامَ حَوْضِ الحَمَّامِ لِتَغْسِلَ وَجْهَهَا بِمَاءٍ دَافِئٍ.",
     audio: "/audio/en-US/sink.mp3",
     meanings: [
       {
         en: "A bowl attached to the wall or floor, with pipes to supply and carry away water.",
-        ar: "",
+        ar: "حوض متصل بالجدار أو الأرضية مزود بأنابيب مياه ومصرف لغسل اليدين والوجه.",
         sentences: [],
       },
     ],
   },
   bathtub: {
     id: "bathtub",
-    arabic: "حوض الاستحمام",
-    sentences: [],
-    collocations: ["use the bathtub", "clean the bathtub", "buy a bathtub"],
-    phrasalVerbs: [],
+    arabic: "حَوْضُ الاسْتِحْمَام (بَانْيُو)",
     partOfSpeech: "noun",
+    phonetic: "/ˈbæθ.tʌb/",
+    register: "general",
+    collocations: [
+      "fill the bathtub",
+      "relax in the bathtub",
+      "clean the bathtub",
+      "soak in the bathtub",
+    ],
+    phrasalVerbs: [],
+    sentences: [
+      {
+        context: "Evening Relaxation",
+        en: "He filled the bathtub with warm water to relax after a long workday.",
+        ar: "مَلَأَ حَوْضَ الاسْتِحْمَامِ بِمَاءٍ دَافِئٍ لِلاسْتِرْخَاءِ بَعْدَ يَوْمِ عَمَلٍ طَوِيلٍ.",
+      },
+    ],
+    exampleSentence: "He filled the bathtub with warm water to relax after a long workday.",
+    exampleArabic:
+      "مَلَأَ حَوْضَ الاسْتِحْمَامِ بِمَاءٍ دَافِئٍ لِلاسْتِرْخَاءِ بَعْدَ يَوْمِ عَمَلٍ طَوِيلٍ.",
     audio: "/audio/en-US/bathtub.mp3",
     meanings: [
       {
         en: "A long plastic or metal container that you fill with water to sit in and wash yourself.",
-        ar: "",
+        ar: "وعاء كبير يُملأ بالماء للجلوس فيه والاستحمام.",
         sentences: [],
       },
     ],
@@ -37674,7 +37716,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
 };
 
 // Comprehensive Arabic gloss mapping for vocabulary items across units
-const EXTENDED_VOCABULARY_GLOSSES: Record<
+export const EXTENDED_VOCABULARY_GLOSSES: Record<
   string,
   {
     ar: string;
@@ -37683,6 +37725,9 @@ const EXTENDED_VOCABULARY_GLOSSES: Record<
     collocations?: string[];
     exampleEn?: string;
     exampleAr?: string;
+    wordFamily?: WordFamily;
+    register?: WordRegister;
+    canDoScenario?: string;
   }
 > = {
   pipe: {
@@ -37944,6 +37989,116 @@ const EXTENDED_VOCABULARY_GLOSSES: Record<
     exampleEn: "The painter climbed the ladder carefully to reach the ceiling trim.",
     exampleAr: "صَعِدَ الدَّهَّانُ السُّلَّمَ بِحَذَرٍ لِلْوُصُولِ إِلَى حَوَافِّ السَّقْفِ.",
   },
+  decision: {
+    ar: "قَرَار",
+    phonetic: "/dɪˈsɪʒ.ən/",
+    pos: "noun",
+    collocations: ["make a decision", "reach a decision", "tough decision", "final decision"],
+    wordFamily: { verb: "decide", noun: "decision", adj: "decisive", adv: "decisively" },
+    register: "formal",
+    exampleEn: "We need to make a firm decision before tomorrow's meeting.",
+    exampleAr: "نَحْتَاجُ إِلَى اتِّخَاذِ قَرَارٍ حَاسِمٍ قَبْلَ اجْتِمَاعِ الغَدِ.",
+    canDoScenario: "Discussing options and making a business or personal choice.",
+  },
+  appointment: {
+    ar: "مَوْعِد",
+    phonetic: "/əˈpɔɪnt.mənt/",
+    pos: "noun",
+    collocations: [
+      "book an appointment",
+      "cancel an appointment",
+      "doctor's appointment",
+      "scheduled appointment",
+    ],
+    wordFamily: { verb: "appoint", noun: "appointment" },
+    register: "general",
+    exampleEn: "I have a dentist appointment on Thursday morning.",
+    exampleAr: "لَدَيَّ مَوْعِدٌ مَعَ طَبِيبِ الأَسْنَانِ صَبَاحَ يَوْمِ الخَمِيسِ.",
+    canDoScenario: "Scheduling or rescheduling a professional consultation.",
+  },
+  reservation: {
+    ar: "حَجْز",
+    phonetic: "/ˌrez.ɚˈveɪ.ʃən/",
+    pos: "noun",
+    collocations: [
+      "make a reservation",
+      "confirm a reservation",
+      "hotel reservation",
+      "dinner reservation",
+    ],
+    wordFamily: { verb: "reserve", noun: "reservation", adj: "reserved" },
+    register: "general",
+    exampleEn: "I would like to make a dinner reservation for two people at seven o'clock.",
+    exampleAr: "أَوَدُّ حَجْزَ طَاوِلَةِ عَشَاءِ لِشَخْصَيْنِ فِي السَّاعَةِ السَّابِعَةِ.",
+    canDoScenario: "Booking transport, hotel stays, or restaurant seating.",
+  },
+  symptom: {
+    ar: "عَرَض (أَعْرَاض)",
+    phonetic: "/ˈsɪmp.təm/",
+    pos: "noun",
+    collocations: ["mild symptom", "severe symptom", "show symptoms", "common symptom"],
+    wordFamily: { noun: "symptom", adj: "symptomatic" },
+    register: "formal",
+    exampleEn: "A high fever and persistent dry cough are key symptoms of the infection.",
+    exampleAr:
+      "تُعَدُّ الحُمَّى الشَّدِيدَةُ وَالسُّعَالُ الجَافُّ المُسْتَمِرُّ مِنْ أَبْرَزِ أَعْرَاضِ العَدْوَى.",
+    canDoScenario: "Describing health conditions and physical discomfort to a doctor.",
+  },
+  recommendation: {
+    ar: "تَوْصِيَة / نَصِيحَة",
+    phonetic: "/ˌrek.ə.menˈdeɪ.ʃən/",
+    pos: "noun",
+    collocations: ["give a recommendation", "follow a recommendation", "strong recommendation"],
+    wordFamily: { verb: "recommend", noun: "recommendation", adj: "recommended" },
+    register: "formal",
+    exampleEn: "The doctor gave me a strong recommendation to get more restful sleep.",
+    exampleAr:
+      "قَدَّمَ لِي الطَّبِيبُ تَوْصِيَةً قَوِيَّةً بِالحُصُولِ عَلَى قِسْطٍ أَوْفَرَ مِنَ النَّوْمِ.",
+    canDoScenario: "Giving or receiving constructive guidance.",
+  },
+  colleague: {
+    ar: "زَمِيلُ عَمَل",
+    phonetic: "/ˈkɒl.iːɡ/",
+    pos: "noun",
+    collocations: ["work colleague", "trusted colleague", "senior colleague"],
+    register: "business",
+    exampleEn: "My colleague helped me finish the quarterly presentation on time.",
+    exampleAr:
+      "سَاعَدَنِي زَمِيلِي فِي العَمَلِ عَلَى إِنْهَاءِ العَرْضِ التَّقْدِيمِيِّ الفَصْلِيِّ فِي المَوْعِدِ المُحَدَّدِ.",
+    canDoScenario: "Collaborating with coworkers and introducing team members.",
+  },
+  pillow: {
+    ar: "وِسَادَة",
+    phonetic: "/ˈpɪl.oʊ/",
+    pos: "noun",
+    collocations: ["soft pillow", "feather pillow", "rest on a pillow"],
+    register: "general",
+    exampleEn: "She rested her head on a soft, comfortable pillow and fell asleep.",
+    exampleAr: "أَسْنَدَتْ رَأْسَهَا إِلَى وِسَادَةٍ نَاعِمَةٍ وَمُرِيحَةٍ ثُمَّ نَامَتْ.",
+    canDoScenario: "Describing bedroom furniture and sleeping comfort.",
+  },
+  blanket: {
+    ar: "بَطَّانِيَّة",
+    phonetic: "/ˈblæŋ.kɪt/",
+    pos: "noun",
+    collocations: ["warm blanket", "wool blanket", "wrap in a blanket"],
+    register: "general",
+    exampleEn: "He pulled the warm wool blanket over his shoulders on the cold winter night.",
+    exampleAr:
+      "سَحَبَ البَطَّانِيَّةَ الصُّوفِيَّةَ الدَّافِئَةَ فَوْقَ كَتِفَيْهِ فِي لَيْلَةِ الشِّتَاءِ البَارِدَةِ.",
+    canDoScenario: "Asking for extra bedding at a hotel or at home.",
+  },
+  lamp: {
+    ar: "مِصْبَاح",
+    phonetic: "/læmp/",
+    pos: "noun",
+    collocations: ["desk lamp", "bedside lamp", "turn on the lamp"],
+    register: "general",
+    exampleEn: "Please turn on the bedside lamp so we can read clearly.",
+    exampleAr:
+      "يُرْجَى تَشْغِيلُ مِصْبَاحِ السَّرِيرِ حَتَّى نَتَمَكَّنَ مِنَ القِرَاءَةِ بِوُضُوحٍ.",
+    canDoScenario: "Adjusting room lighting and requesting room amenities.",
+  },
 };
 
 export function getLexiconEntry(
@@ -37992,6 +38147,9 @@ export function getLexiconEntry(
       phonetic: ext.phonetic,
       partOfSpeech: ext.pos || "noun",
       collocations: ext.collocations || [],
+      wordFamily: ext.wordFamily,
+      register: ext.register,
+      canDoScenario: ext.canDoScenario,
       sentences: [
         {
           context: "Everyday Usage",

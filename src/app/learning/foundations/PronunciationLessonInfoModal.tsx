@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Headphones, Volume2, X, Sparkles } from "lucide-react";
+import { Headphones, Volume2, X, Sparkles, Lightbulb } from "lucide-react";
 import { useI18n } from "../../../i18n";
 import {
   getFigmaPronunciationActivityData,
@@ -123,6 +123,41 @@ export function PronunciationLessonInfoModal({
                   </li>
                 ))}
               </ul>
+            </div>
+          )}
+
+          {/* Arabic Speaker Specific L1 Guidance */}
+          {activity.arabicSpeakerTip && (
+            <div className="rounded-2xl border border-feedback-warning-border bg-feedback-warning-surface p-4">
+              <div className="flex items-center justify-between gap-2 text-xs font-black uppercase tracking-wider text-feedback-warning-foreground">
+                <div className="flex items-center gap-1.5">
+                  <Lightbulb className="size-4" aria-hidden />
+                  <span>
+                    {t("pronunciation.modalArabicSpeakerFocus") || "Arabic Speaker Focus"}
+                  </span>
+                </div>
+                <span
+                  className="font-arabic text-xs font-bold text-feedback-warning-foreground"
+                  dir="rtl"
+                  lang="ar"
+                >
+                  {activity.arabicSpeakerTip.titleAr}
+                </span>
+              </div>
+              <p
+                className="mt-2 text-sm font-medium leading-relaxed text-foreground"
+                lang="en"
+                dir="ltr"
+              >
+                {activity.arabicSpeakerTip.tipEn}
+              </p>
+              <p
+                className="mt-2 border-t border-feedback-warning-border/50 pt-2 font-arabic text-xs sm:text-sm font-semibold leading-relaxed text-foreground/85"
+                dir="rtl"
+                lang="ar"
+              >
+                {activity.arabicSpeakerTip.tipAr}
+              </p>
             </div>
           )}
 

@@ -1,5 +1,14 @@
 // Shared TypeScript types for the WordPix app state machine
 
+export interface WordFamily {
+  noun?: string;
+  verb?: string;
+  adj?: string;
+  adv?: string;
+}
+
+export type WordRegister = "formal" | "casual" | "business" | "academic" | "general";
+
 export type OnboardStep = "splash" | "language" | "ready";
 export type TabId = "home" | "learn" | "library" | "practice" | "profile";
 

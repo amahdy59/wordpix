@@ -240,9 +240,19 @@ export function useAudio({
         }
 
         synth.cancel();
+        if (synth.paused) {
+          synth.resume();
+        }
         publish("loading");
 
-        const utterance = new SpeechSynthesisUtterance(fallbackText);
+        const spokenFallbackText =
+          fallbackText
+            .replace(/^\d+[.)]\s*/, "")
+            .replace(/\s*[/(].*$/, "")
+            .replace(/[\u0600-\u06FF]/g, "")
+            .trim() || fallbackText;
+
+        const utterance = new SpeechSynthesisUtterance(spokenFallbackText);
         utterance.lang = fallbackLang;
         utterance.rate = effectiveRate;
         utterance.pitch = pitch;
@@ -363,8 +373,29 @@ export function useAudio({
         // A missing clip still 404s, `onerror` fires, and the caller falls
         // through to synthesis exactly as before.
         const played = await playStreamed(url);
-        if (played) cacheInBackground(url, cacheKey);
-        return played;
+        if (played) {
+          cacheInBackground(url, cacheKey);
+          return true;
+        }
+
+        // If the primary lookup was a miss, try capitalized variant for vocabulary words
+        // (curriculum vocabulary labels are stored capitalized in R2 e.g. "Bed", "Blanket")
+        if (!objectKey && hasAssetHost()) {
+          const capitalized =
+            pronunciationAsset.text.charAt(0).toUpperCase() + pronunciationAsset.text.slice(1);
+          if (capitalized !== pronunciationAsset.text) {
+            const capUrl = await audioUrl(capitalized, pronunciationAsset.profile);
+            if (capUrl && capUrl !== url) {
+              const capPlayed = await playStreamed(capUrl);
+              if (capPlayed) {
+                cacheInBackground(capUrl, `cdn:${capUrl}`);
+                return true;
+              }
+            }
+          }
+        }
+
+        return false;
       };
 
       /**

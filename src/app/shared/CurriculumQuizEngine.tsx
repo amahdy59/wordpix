@@ -1,7 +1,20 @@
 import { useState, useId, useRef, useEffect, type RefObject } from "react";
-import { CheckCircle2, XCircle, RotateCcw, Trophy, ArrowLeft, ArrowRight } from "lucide-react";
+import {
+  CheckCircle2,
+  XCircle,
+  RotateCcw,
+  Trophy,
+  ArrowLeft,
+  ArrowRight,
+  Volume2,
+  Compass,
+  Sparkles,
+} from "lucide-react";
 import { useI18n, type TranslationValues } from "../../i18n";
 import { ChoiceOptionGroup, type ChoiceOption } from "./ChoiceOptionGroup";
+import { playCorrectSound, playIncorrectSound } from "./useSound";
+import { useAudio } from "./useAudio";
+import { getCanDoScenarioForUnit, type CanDoTransferChallenge } from "../data/canDoScenarios";
 
 // ─── Public Types ────────────────────────────────────────────────────────────
 
@@ -40,6 +53,10 @@ interface Props {
    * Defaults to 3.
    */
   desktopPageSize?: number;
+  /** Optional unit identifier or topic (e.g. "office", "hotel", "bathroom") to show a context-specific Can-Do challenge */
+  unitId?: string;
+  /** Optional explicit Can-Do scenario */
+  canDoScenario?: CanDoTransferChallenge;
 }
 
 // ─── Pill status type ────────────────────────────────────────────────────────
@@ -222,6 +239,140 @@ function useIsDesktop(): boolean {
   return isDesktop;
 }
 
+// ─── Can-Do Action Challenge Card ──────────────────────────────────────────
+
+export function CanDoChallengeCard({
+  challenge,
+  className = "",
+}: {
+  challenge: CanDoTransferChallenge;
+  className?: string;
+}) {
+  const { t } = useI18n();
+  const audio = useAudio({ lang: "en-US", rate: 0.9, preferLocal: true });
+
+  return (
+    <section
+      aria-labelledby="can-do-heading"
+      className={`rounded-3xl border border-primary/25 bg-gradient-to-br from-primary/5 via-card to-card p-6 sm:p-7 text-start shadow-wp-xs space-y-5 ${className}`}
+    >
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border/60 pb-4">
+        <div className="flex items-center gap-2.5">
+          <div className="flex size-9 items-center justify-center rounded-xl bg-primary/10 text-primary">
+            <Compass className="size-5" aria-hidden="true" />
+          </div>
+          <div>
+            <span className="text-xs font-bold uppercase tracking-wider text-primary">
+              {t("wordDetails.canDoChallenge") || "Real-World Can-Do Challenge"}
+            </span>
+            <h3 id="can-do-heading" className="text-base font-bold text-foreground">
+              {challenge.topic}
+            </h3>
+          </div>
+        </div>
+        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-black bg-primary text-primary-foreground">
+          CEFR {challenge.cefr}
+        </span>
+      </div>
+
+      {/* Scenario context */}
+      <div className="space-y-1.5">
+        <p className="text-sm font-semibold text-foreground">{challenge.scenarioEn}</p>
+        <p
+          className="text-xs text-muted-foreground font-arabic leading-relaxed"
+          dir="rtl"
+          lang="ar"
+        >
+          {challenge.scenarioAr}
+        </p>
+      </div>
+
+      {/* Action task */}
+      <div className="rounded-2xl border border-border/80 bg-background/80 p-4 space-y-1.5">
+        <div className="flex items-center gap-1.5 text-xs font-bold text-primary">
+          <Sparkles className="size-3.5" aria-hidden="true" />
+          <span>{t("wordDetails.canDoTask") || "Your Action Task"}</span>
+        </div>
+        <p className="text-sm font-medium text-foreground">{challenge.taskEn}</p>
+        <p
+          className="text-xs text-muted-foreground font-arabic leading-relaxed"
+          dir="rtl"
+          lang="ar"
+        >
+          {challenge.taskAr}
+        </p>
+      </div>
+
+      {/* Model response with native audio */}
+      <div className="rounded-2xl border border-primary/20 bg-primary/5 p-4 space-y-3">
+        <div className="flex items-center justify-between gap-2">
+          <span className="text-xs font-bold uppercase tracking-wider text-primary">
+            {t("wordDetails.canDoModelResponse") || "Spoken Model Response"}
+          </span>
+          <button
+            type="button"
+            onClick={() => audio.speak(challenge.modelResponseEn)}
+            className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors"
+            aria-label={`${t("wordDetails.canDoListenModel") || "Listen to model answer"}: ${challenge.modelResponseEn}`}
+          >
+            <Volume2
+              className={`size-4 ${audio.isPlaying ? "animate-pulse" : ""}`}
+              aria-hidden="true"
+            />
+          </button>
+        </div>
+        <p className="text-sm sm:text-base font-semibold text-foreground italic">
+          "{challenge.modelResponseEn}"
+        </p>
+        <p
+          className="text-xs text-muted-foreground font-arabic leading-relaxed"
+          dir="rtl"
+          lang="ar"
+        >
+          {challenge.modelResponseAr}
+        </p>
+      </div>
+
+      {/* Key communicative phrases */}
+      {challenge.keyPhrases.length > 0 && (
+        <div className="space-y-2">
+          <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">
+            {t("wordDetails.canDoKeyPhrases") || "Key Communicative Phrases"}
+          </span>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+            {challenge.keyPhrases.map((phrase, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => audio.speak(phrase.en)}
+                className="group flex flex-col p-2.5 rounded-xl border border-border bg-card hover:border-primary/40 hover:bg-primary/5 text-start transition-colors min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                aria-label={`Listen to phrase: ${phrase.en}`}
+              >
+                <div className="flex items-center justify-between gap-1 w-full">
+                  <span className="text-xs font-bold text-foreground group-hover:text-primary transition-colors">
+                    {phrase.en}
+                  </span>
+                  <Volume2
+                    className="size-3 text-muted-foreground group-hover:text-primary shrink-0"
+                    aria-hidden="true"
+                  />
+                </div>
+                <span
+                  className="text-[11px] text-muted-foreground font-arabic mt-0.5"
+                  dir="rtl"
+                  lang="ar"
+                >
+                  {phrase.ar}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </section>
+  );
+}
+
 // ─── Component ───────────────────────────────────────────────────────────────
 
 export function CurriculumQuizEngine({
@@ -230,6 +381,8 @@ export function CurriculumQuizEngine({
   onAnswerChange,
   className = "",
   desktopPageSize = 3,
+  unitId,
+  canDoScenario,
 }: Props) {
   const { t } = useI18n();
   const isDesktop = useIsDesktop();
@@ -274,6 +427,14 @@ export function CurriculumQuizEngine({
 
   const handleAnswer = (questionId: string, value: string) => {
     if (answers[questionId] !== undefined) return;
+    const targetQ = questions.find((q) => q.id === questionId);
+    if (targetQ) {
+      if (value === targetQ.correctValue) {
+        playCorrectSound();
+      } else {
+        playIncorrectSound();
+      }
+    }
     const nextAnswers = { ...answers, [questionId]: value };
     setAnswers(nextAnswers);
     if (onAnswerChange) {
@@ -336,6 +497,7 @@ export function CurriculumQuizEngine({
     );
     const total = questions.length;
     const pct = Math.round((correct / total) * 100);
+    const activeChallenge = canDoScenario ?? (unitId ? getCanDoScenarioForUnit(unitId) : undefined);
 
     return (
       <div
@@ -405,6 +567,9 @@ export function CurriculumQuizEngine({
             {t("quiz.restart") || "Restart Quiz"}
           </button>
         </div>
+
+        {/* Can-Do Action Challenge */}
+        {activeChallenge && <CanDoChallengeCard challenge={activeChallenge} />}
       </div>
     );
   }

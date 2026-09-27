@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { Image as ImageIcon, LayoutGrid, Maximize2, Table, X } from "lucide-react";
+import { BookOpen, Image as ImageIcon, LayoutGrid, Maximize2, Table, X } from "lucide-react";
 import { useI18n } from "../../i18n";
 import { AudioButton } from "./AudioButton";
 import { useModalA11y } from "./useModalA11y";
+
+import type { WordFamily, WordRegister } from "../data/lexiconDictionary";
 
 export interface VocabularyTableItem {
   id: string;
@@ -16,6 +18,9 @@ export interface VocabularyTableItem {
   exampleAr?: string;
   imageSrc?: string;
   fallbackLabel?: string;
+  register?: WordRegister;
+  collocations?: string[];
+  wordFamily?: WordFamily;
 }
 
 export interface VocabularySidebars {
@@ -57,6 +62,16 @@ export function CurriculumVocabularyTable({
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
   const [viewMode, setViewMode] = useState<"table" | "gallery">(defaultView);
   const [activeModalItem, setActiveModalItem] = useState<VocabularyTableItem | null>(null);
+
+  useEffect(() => {
+    // Preload gallery images for current items to eliminate pop-in
+    items.forEach((item) => {
+      if (item.imageSrc && !imageErrors[item.id]) {
+        const img = new Image();
+        img.src = item.imageSrc;
+      }
+    });
+  }, [items, imageErrors]);
 
   const modalContainerRef = useModalA11y({
     isOpen: Boolean(activeModalItem),
@@ -197,19 +212,21 @@ export function CurriculumVocabularyTable({
                           )}
 
                           {/* Enlarge Overlay Button */}
-                          <button
-                            type="button"
-                            onClick={() => setActiveModalItem(item)}
-                            aria-label={
-                              t("vocabulary.enlargeImage", { term: item.term }) ||
-                              `Enlarge image for ${item.term}`
-                            }
-                            className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-200 group-hover/thumb:opacity-100 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white cursor-pointer"
-                          >
-                            <span className="flex size-9 items-center justify-center rounded-full bg-black/70 text-white backdrop-blur-sm border border-white/20 shadow-wp-sm hover:scale-110 transition-transform">
-                              <Maximize2 className="size-4" aria-hidden="true" />
-                            </span>
-                          </button>
+                          {hasImg && (
+                            <button
+                              type="button"
+                              onClick={() => setActiveModalItem(item)}
+                              aria-label={
+                                t("vocabulary.enlargeImage", { term: item.term }) ||
+                                `Enlarge image for ${item.term}`
+                              }
+                              className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-200 group-hover/thumb:opacity-100 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white cursor-pointer"
+                            >
+                              <span className="flex size-9 items-center justify-center rounded-full bg-black/70 text-white backdrop-blur-sm border border-white/20 shadow-wp-sm hover:scale-110 transition-transform">
+                                <Maximize2 className="size-4" aria-hidden="true" />
+                              </span>
+                            </button>
+                          )}
                         </div>
                       </td>
 
@@ -314,19 +331,21 @@ export function CurriculumVocabularyTable({
                         </div>
                       )}
 
-                      <button
-                        type="button"
-                        onClick={() => setActiveModalItem(item)}
-                        aria-label={
-                          t("vocabulary.enlargeImage", { term: item.term }) ||
-                          `Enlarge image for ${item.term}`
-                        }
-                        className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity group-hover/thumb:opacity-100 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white cursor-pointer"
-                      >
-                        <span className="flex size-7 items-center justify-center rounded-full bg-black/70 text-white shadow-wp-xs">
-                          <Maximize2 className="size-3.5" aria-hidden="true" />
-                        </span>
-                      </button>
+                      {hasImg && (
+                        <button
+                          type="button"
+                          onClick={() => setActiveModalItem(item)}
+                          aria-label={
+                            t("vocabulary.enlargeImage", { term: item.term }) ||
+                            `Enlarge image for ${item.term}`
+                          }
+                          className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity group-hover/thumb:opacity-100 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white cursor-pointer"
+                        >
+                          <span className="flex size-7 items-center justify-center rounded-full bg-black/70 text-white shadow-wp-xs">
+                            <Maximize2 className="size-3.5" aria-hidden="true" />
+                          </span>
+                        </button>
+                      )}
                     </div>
 
                     <div className="min-w-0 flex-1">
@@ -409,32 +428,50 @@ export function CurriculumVocabularyTable({
                 {/* Gallery Image Header */}
                 <div className="relative group/thumb h-48 w-full bg-muted/40 overflow-hidden shrink-0 border-b border-border/60">
                   {hasImg ? (
-                    <img
-                      src={item.imageSrc}
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      onError={() => handleImageError(item.id)}
-                      className="size-full object-cover object-center transition-transform duration-300 group-hover/thumb:scale-105"
-                    />
+                    <>
+                      <img
+                        src={item.imageSrc}
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                        decoding="async"
+                        onError={() => handleImageError(item.id)}
+                        className="size-full object-cover object-center transition-transform duration-300 group-hover/thumb:scale-105"
+                      />
+                      {/* Enlarge Overlay Button */}
+                      <button
+                        type="button"
+                        onClick={() => setActiveModalItem(item)}
+                        aria-label={
+                          t("vocabulary.enlargeImage", { term: item.term }) ||
+                          `Enlarge image for ${item.term}`
+                        }
+                        className="absolute top-3 end-3 flex size-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-sm border border-white/20 shadow-wp-sm hover:scale-110 transition-transform cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+                      >
+                        <Maximize2 className="size-4" aria-hidden="true" />
+                      </button>
+                    </>
                   ) : (
-                    <div className="flex size-full items-center justify-center text-muted-foreground/50">
-                      <ImageIcon className="size-8" aria-hidden="true" />
+                    <div className="relative flex size-full flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-primary/10 via-primary/5 to-muted/50 select-none">
+                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.1),rgba(255,255,255,0))]" />
+                      {item.termAr ? (
+                        <span
+                          dir="rtl"
+                          lang="ar"
+                          className="font-arabic text-3xl font-extrabold text-primary/85 leading-normal drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
+                        >
+                          {item.termAr}
+                        </span>
+                      ) : (
+                        <div className="flex size-14 items-center justify-center rounded-2xl bg-primary/10 text-primary mb-2 shadow-wp-xs">
+                          <BookOpen className="size-7" aria-hidden="true" />
+                        </div>
+                      )}
+                      <span className="mt-2 text-xs font-black uppercase tracking-widest text-muted-foreground/80">
+                        {item.term}
+                      </span>
                     </div>
                   )}
-
-                  {/* Enlarge Overlay Button */}
-                  <button
-                    type="button"
-                    onClick={() => setActiveModalItem(item)}
-                    aria-label={
-                      t("vocabulary.enlargeImage", { term: item.term }) ||
-                      `Enlarge image for ${item.term}`
-                    }
-                    className="absolute top-3 end-3 flex size-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-sm border border-white/20 shadow-wp-sm hover:scale-110 transition-transform cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
-                  >
-                    <Maximize2 className="size-4" aria-hidden="true" />
-                  </button>
                 </div>
 
                 {/* Card Body */}

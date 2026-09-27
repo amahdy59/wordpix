@@ -132,6 +132,8 @@ export function getImageAltText(
   return word.label;
 }
 
+const loadedUrls = new Set<string>();
+
 export const WordImage = memo(function WordImage({
   word,
   className,
@@ -158,10 +160,20 @@ export const WordImage = memo(function WordImage({
   );
   const srcSet = useMemo(() => getResponsiveSrcSet(word.img, sizePreset), [word.img, sizePreset]);
 
+  const [isLoaded, setIsLoaded] = useState(
+    () => loading === "eager" || loadedUrls.has(optimizedUrl)
+  );
+
   useEffect(() => {
     setFailed(false);
     setRetryToken(0);
-  }, [word.id, word.img]);
+    setIsLoaded(loading === "eager" || loadedUrls.has(optimizedUrl));
+  }, [word.id, word.img, optimizedUrl, loading]);
+
+  const handleLoad = useCallback(() => {
+    loadedUrls.add(optimizedUrl);
+    setIsLoaded(true);
+  }, [optimizedUrl]);
 
   const handleError = useCallback(() => {
     setRetryToken((current) => {
@@ -194,12 +206,13 @@ export const WordImage = memo(function WordImage({
       // the cache-busted src and keep requesting the same failing URL.
       srcSet={failed || retryToken > 0 ? undefined : srcSet}
       alt={altText}
-      className={className ? className + " object-center" : "object-center"}
+      className={`${className ? className + " object-center" : "object-center"} motion-safe:transition-opacity motion-safe:duration-200 ${isLoaded || failed ? "opacity-100" : "opacity-0"}`}
       style={{ objectPosition: objectPosition ?? imageObjectPosition(word) }}
       loading={loading}
       decoding={decoding}
       width={width}
       height={height}
+      onLoad={handleLoad}
       onError={handleError}
     />
   );

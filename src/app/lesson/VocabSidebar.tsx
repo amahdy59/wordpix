@@ -168,6 +168,7 @@ export const VocabSidebar = memo(function VocabSidebar({
                     word={word}
                     width="48"
                     height="48"
+                    sizePreset="thumb"
                     className="size-full object-cover"
                   />
                   {levelNum === 3 && (

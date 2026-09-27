@@ -147,6 +147,16 @@ export interface FigmaPronunciationActivityData {
   readonly recoveryCue?: string;
   /** Authored physical production guidance surfaced from the Figma curriculum. */
   readonly articulationCues: readonly string[];
+  /** Targeted L1 transfer tip for Arabic native speakers. */
+  readonly arabicSpeakerTip?: ArabicSpeakerTransferTip;
+}
+
+export interface ArabicSpeakerTransferTip {
+  readonly titleEn: string;
+  readonly titleAr: string;
+  readonly tipEn: string;
+  readonly tipAr: string;
+  readonly drillPair?: readonly [string, string];
 }
 
 const uniqueItems = (items: readonly FigmaPronunciationImage[]) => {
@@ -203,6 +213,98 @@ function getArticulationCues(lines: readonly string[]): readonly string[] {
     .slice(0, 3);
 }
 
+export function getArabicSpeakerTip(lessonNumber: number): ArabicSpeakerTransferTip | null {
+  if (lessonNumber >= 1 && lessonNumber <= 4) {
+    return {
+      titleEn: "Voiceless /p/ vs Voiced /b/",
+      titleAr: "التمييز بين صوتي /p/ المهموس و /b/ المجهور",
+      tipEn:
+        "Arabic has only /b/ (ب). To produce English /p/, press your lips tightly together, trap the air, and release with an audible puff of air (aspiration). Your vocal cords must NOT vibrate. For /b/, your vocal cords vibrate immediately.",
+      tipAr:
+        "تحتوي العربية على صوت (ب) المجهور فقط، ولا يوجد فيها صوت /p/ المهموس. لنطق /p/ بدقة: احبس الهواء بين الشفتين ثم أطلقه بدفعة هواء مسموعة دون اهتزاز الحبال الصوتية. أما مع /b/ فتهتز الحبال الصوتية فورًا.",
+      drillPair: ["Pin", "Bin"],
+    };
+  }
+  if (lessonNumber >= 5 && lessonNumber <= 8) {
+    return {
+      titleEn: "Voiced /v/ vs Voiceless /f/",
+      titleAr: "التمييز بين /v/ المجهور و /f/ المهموس",
+      tipEn:
+        "Rest your upper front teeth gently on your bottom lip. Keep air flowing smoothly while vibrating your vocal cords for /v/. Avoid substituting /f/ or /b/ for /v/.",
+      tipAr:
+        "ضع أسنانك العلوية بخفة على شفتك السفلية. دع الهواء يتدفق مع تشغيل اهتزاز الحبال الصوتية لإصدار صوت /v/، وتجنب استبداله بصوت /f/ أو /b/.",
+      drillPair: ["Fan", "Van"],
+    };
+  }
+  if (lessonNumber >= 9 && lessonNumber <= 16) {
+    return {
+      titleEn: "Consonant Clusters (No Extra Vowel)",
+      titleAr: "تسلسلات السواكن (تجنب همزة الوصل)",
+      tipEn:
+        "Arabic syllables rarely begin with two consonants. Do not insert an extra vowel before words starting with 's' clusters like 'school' (not 'eschool') or 'street'. Start directly with the hiss of /s/.",
+      tipAr:
+        "تتجنب العربية البدء بساكنين، لذا يميل المتعلمون لإضافة ألف وصل قبل كلمات مثل 'school' (فتنطق 'إسكول'). ابدأ فورًا بهسيس حرف السين الصافي دون إدخال أي حركة تسبقه.",
+      drillPair: ["School", "Street"],
+    };
+  }
+  if (lessonNumber >= 17 && lessonNumber <= 24) {
+    return {
+      titleEn: "The Relaxed Neutral Schwa (/ə/)",
+      titleAr: "صوت الشوا المحايد (/ə/) في المقاطع غير المنبورة",
+      tipEn:
+        "English has 12 pure vowel sounds. The most critical is the Schwa (/ə/)—an unstressed, completely relaxed sound (e.g. 'about', 'pencil'). Drop all tension from your jaw and tongue.",
+      tipAr:
+        "أهم حركة صوتية في الإنجليزية هي صوت الشوا (/ə/)؛ حركة محايدة وخاطفة تُنطق في المقاطع غير المنبورة باسترخاء تام للفك واللسان دون مجهود عضلي.",
+      drillPair: ["About", "Pencil"],
+    };
+  }
+  if (lessonNumber >= 25 && lessonNumber <= 32) {
+    return {
+      titleEn: "Crisp Final Consonant Endings",
+      titleAr: "وضوح الحروف الساكنة في نهايات الكلمات",
+      tipEn:
+        "Do not drop or swallow final consonants (/t/, /d/, /k/, /s/). Clearly release the ending sound so your listener can distinguish between words like 'bed' and 'bet', or 'back' and 'bat'.",
+      tipAr:
+        "احرص على إتمام نطق السواكن الأخيرة (/t/ و /d/ و /k/) وعدم بلعها أو إخفائها، لضمان وصول المعنى الدقيق وتفادي اللبس.",
+      drillPair: ["Bed", "Bet"],
+    };
+  }
+  if (lessonNumber >= 33 && lessonNumber <= 40) {
+    return {
+      titleEn: "Connected Speech & Smooth Linking",
+      titleAr: "الوصل الصوتي بين الكلمات في الكلام المتصل",
+      tipEn:
+        "Natural English links words together. When a word ends with a consonant and the next begins with a vowel, link them smoothly (e.g. 'turn off' sounds like 'tur-noff').",
+      tipAr:
+        "في الإنجليزية الطبيعية، تتصل الكلمات بمرونة؛ ينتقل الحرف الساكن الأخير ليرتبط بالحركة الأولى من الكلمة التالية (مثل: turn off تنطق ككلمة واحدة متصلة).",
+      drillPair: ["Turn off", "Stand up"],
+    };
+  }
+  if (lessonNumber >= 41 && lessonNumber <= 48) {
+    return {
+      titleEn: "Word Stress & Syllable Prominence",
+      titleAr: "النبر وبروز المقاطع الصوتية",
+      tipEn:
+        "English is stress-timed. Stressed syllables are louder, higher in pitch, and noticeably longer. Unstressed syllables must be shortened and softened.",
+      tipAr:
+        "تعتمد الإنجليزية على النبر؛ المقطع الصوتي المنبور يكون أطول وأعلى نبرة وأكثر وضوحًا، بينما تُخفف باقي المقاطع وتُنطق بسرعة.",
+      drillPair: ["PREsent (n)", "preSENT (v)"],
+    };
+  }
+  if (lessonNumber >= 49 && lessonNumber <= 68) {
+    return {
+      titleEn: "Sentence Rhythm & Information Focus",
+      titleAr: "إيقاع الجملة والتركيز على الكلمات الأساسية",
+      tipEn:
+        "Speak with natural rhythm: emphasize content words (nouns, main verbs, adjectives) and reduce grammar words ('and', 'to', 'for', 'a'). This creates clear, natural-sounding English.",
+      tipAr:
+        "حافظ على إيقاع متوازن: انبر الكلمات الحاملة للمعنى الرئيسي (الأسماء والأفعال)، وخفف حروف الجر والعطف ('and', 'to', 'of') لتصل إلى نبرة كلام طبيعية وسلسة.",
+      drillPair: ["Cup of tea", "Bread and butter"],
+    };
+  }
+  return null;
+}
+
 export function getFigmaPronunciationActivityData(number: number): FigmaPronunciationActivityData {
   const lesson = getFigmaPronunciationLesson(number);
   const title =
@@ -250,6 +352,7 @@ export function getFigmaPronunciationActivityData(number: number): FigmaPronunci
       : [recoveryCue, focus].filter((cue): cue is string =>
           Boolean(cue && ARTICULATION_LANGUAGE.test(cue))
         );
+  const arabicSpeakerTip = getArabicSpeakerTip(number) ?? undefined;
   return {
     title,
     objective,
@@ -267,6 +370,7 @@ export function getFigmaPronunciationActivityData(number: number): FigmaPronunci
     reviewSentences,
     recoveryCue,
     articulationCues,
+    arabicSpeakerTip,
   };
 }
 

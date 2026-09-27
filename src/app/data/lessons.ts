@@ -1,4 +1,5 @@
 import { CURRICULUM_SEQUENCE } from "./curriculumSequence";
+import type { WordFamily, WordRegister } from "../types";
 
 // Centralized Lesson Vocabulary Data Layer for WordPix
 // Synchronized from Figma Design (Node 44:2 — The Bedroom)
@@ -32,6 +33,9 @@ export interface VocabularyItem {
   /** Unit-specific English usage example imported from the reviewed catalogue. */
   exampleUsage?: string;
   hasWoman?: boolean;
+  collocations?: string[];
+  wordFamily?: WordFamily;
+  register?: WordRegister;
 }
 
 export interface TopicCategory {

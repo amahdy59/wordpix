@@ -51,7 +51,12 @@ export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, o
       </div>
 
       {/* Unified Quiz Engine showing 3 questions at a time on desktop */}
-      <CurriculumQuizEngine questions={questions} onComplete={handleComplete} desktopPageSize={3} />
+      <CurriculumQuizEngine
+        questions={questions}
+        onComplete={handleComplete}
+        desktopPageSize={3}
+        unitId={unit.id}
+      />
 
       {/* Proceed button (shown after engine reaches completion screen) */}
       <div className="flex justify-end">

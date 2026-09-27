@@ -239,7 +239,10 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
           )}
 
           {stage === "vocabulary" && (
-            <HadithVocabularyStage lines={lesson.stages.vocabulary.text} />
+            <HadithVocabularyStage
+              lines={lesson.stages.vocabulary.text}
+              lessonNumber={lesson.number}
+            />
           )}
 
           {stage === "practice" && exerciseSet && (

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BookOpen, Layers, Volume2, Zap } from "lucide-react";
+import { BookOpen, Layers, Sparkles, Volume2, Zap } from "lucide-react";
 import type { VocabularyItem } from "../data/lessons";
 // Type-only: erased at compile time, so this never pulls the 1.6 MB
 // dictionary into the synchronous bundle. The runtime module arrives via
@@ -166,9 +166,16 @@ export function WordDetailsContent({
             {t("wordDetails.translationNotAvailable")}
           </p>
         ) : null}
-        <span className="text-xs font-sans font-bold px-3 py-1 bg-primary/10 text-primary rounded-full uppercase tracking-wider border border-primary/20 shrink-0">
-          {entry.partOfSpeech}
-        </span>
+        <div className="flex items-center gap-1.5 shrink-0">
+          {baseEntry.register && baseEntry.register !== "general" && (
+            <span className="text-[10px] sm:text-xs font-sans font-bold px-2.5 py-0.5 bg-secondary text-foreground rounded-full uppercase tracking-wider border border-border">
+              {baseEntry.register}
+            </span>
+          )}
+          <span className="text-xs font-sans font-bold px-3 py-1 bg-primary/10 text-primary rounded-full uppercase tracking-wider border border-primary/20">
+            {entry.partOfSpeech}
+          </span>
+        </div>
       </div>
 
       {entry.sentences && entry.sentences.length > 0 && (
@@ -287,6 +294,88 @@ export function WordDetailsContent({
           </div>
         </div>
       )}
+
+      {/* Word Family Morphology */}
+      {baseEntry.wordFamily &&
+        Boolean(
+          baseEntry.wordFamily.noun ||
+          baseEntry.wordFamily.verb ||
+          baseEntry.wordFamily.adj ||
+          baseEntry.wordFamily.adv
+        ) && (
+          <div className="flex flex-col gap-2.5">
+            <span className="font-sans text-xs font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
+              <Sparkles className="size-3.5 text-primary" />
+              <span>{t("wordDetails.wordFamily") || "Word Family"}</span>
+            </span>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              {baseEntry.wordFamily.noun && (
+                <div className="flex flex-col bg-muted/30 border border-border/80 rounded-xl p-2.5">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                    {t("wordDetails.posNoun") || "Noun"}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => speak(baseEntry.wordFamily!.noun!)}
+                    className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start cursor-pointer"
+                    aria-label={`Listen to noun: ${baseEntry.wordFamily.noun}`}
+                  >
+                    <span className="truncate">{baseEntry.wordFamily.noun}</span>
+                    <Volume2 className="size-3 text-muted-foreground shrink-0" />
+                  </button>
+                </div>
+              )}
+              {baseEntry.wordFamily.verb && (
+                <div className="flex flex-col bg-muted/30 border border-border/80 rounded-xl p-2.5">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                    {t("wordDetails.posVerb") || "Verb"}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => speak(baseEntry.wordFamily!.verb!)}
+                    className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start cursor-pointer"
+                    aria-label={`Listen to verb: ${baseEntry.wordFamily.verb}`}
+                  >
+                    <span className="truncate">{baseEntry.wordFamily.verb}</span>
+                    <Volume2 className="size-3 text-muted-foreground shrink-0" />
+                  </button>
+                </div>
+              )}
+              {baseEntry.wordFamily.adj && (
+                <div className="flex flex-col bg-muted/30 border border-border/80 rounded-xl p-2.5">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                    {t("wordDetails.posAdjective") || "Adjective"}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => speak(baseEntry.wordFamily!.adj!)}
+                    className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start cursor-pointer"
+                    aria-label={`Listen to adjective: ${baseEntry.wordFamily.adj}`}
+                  >
+                    <span className="truncate">{baseEntry.wordFamily.adj}</span>
+                    <Volume2 className="size-3 text-muted-foreground shrink-0" />
+                  </button>
+                </div>
+              )}
+              {baseEntry.wordFamily.adv && (
+                <div className="flex flex-col bg-muted/30 border border-border/80 rounded-xl p-2.5">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                    {t("wordDetails.posAdverb") || "Adverb"}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => speak(baseEntry.wordFamily!.adv!)}
+                    className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start cursor-pointer"
+                    aria-label={`Listen to adverb: ${baseEntry.wordFamily.adv}`}
+                  >
+                    <span className="truncate">{baseEntry.wordFamily.adv}</span>
+                    <Volume2 className="size-3 text-muted-foreground shrink-0" />
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
     </div>
   );
 }

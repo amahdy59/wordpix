@@ -114,6 +114,8 @@ export const SceneCanvas = memo(function SceneCanvas({
             key={activeWord.id}
             word={activeWord}
             loading="eager"
+            sizePreset="hero"
+            fetchPriority="high"
             className="size-full object-contain rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
           />
         </div>
@@ -126,6 +128,7 @@ export const SceneCanvas = memo(function SceneCanvas({
                 word={activeWord}
                 width="64"
                 height="64"
+                sizePreset="thumb"
                 className="size-full object-cover"
               />
             </div>

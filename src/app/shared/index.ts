@@ -23,5 +23,5 @@ export {
   CurriculumVocabularyTable as UniversalVocabularyTable,
 } from "./CurriculumVocabularyTable";
 export type { VocabularyTableItem, VocabularySidebars } from "./CurriculumVocabularyTable";
-export { CurriculumQuizEngine } from "./CurriculumQuizEngine";
+export { CurriculumQuizEngine, CanDoChallengeCard } from "./CurriculumQuizEngine";
 export type { QuizQuestion, QuizResult } from "./CurriculumQuizEngine";

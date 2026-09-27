@@ -4,6 +4,7 @@ import type { SessionPhase } from "./types";
 import { useI18n } from "../../../context/I18nContext";
 import { formatNumber } from "../../../shared/useAccessibilityPreferences";
 import { useLearner } from "../../../context/LearnerContext";
+import { playCorrectSound, playIncorrectSound } from "../../../shared/useSound";
 
 interface Props {
   itemId: string;
@@ -55,8 +56,10 @@ export function MultipleChoiceQuiz({
       if (phase !== "idle" && phase !== "retrying") return;
       setLocalPick(i);
       if (i === correctIndex) {
+        playCorrectSound();
         onAnswerCorrect(i);
       } else {
+        playIncorrectSound();
         onAnswerWrong(i);
       }
     },

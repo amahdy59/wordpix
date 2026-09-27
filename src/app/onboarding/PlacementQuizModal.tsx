@@ -8,6 +8,7 @@ import { Sparkles, X } from "lucide-react";
 import { useI18n, type TranslationValues } from "../context/I18nContext";
 import { recommendPlacement, type PlacementRecommendation } from "./placementRecommendation";
 import { emitLearningEvent } from "../analytics/learningAnalytics";
+import { playCorrectSound, playIncorrectSound } from "../shared/useSound";
 
 // Placement always starts from the default world's vocabulary — there is only
 // one world to place a learner into today. This is also why bedroom is the
@@ -75,6 +76,11 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
 
   const handleSelectOption = (wordId: string) => {
     const isCorrect = wordId === targetWord.id;
+    if (isCorrect) {
+      playCorrectSound();
+    } else {
+      playIncorrectSound();
+    }
     const newCorrect = isCorrect ? correctCount + 1 : correctCount;
 
     if (stepIndex + 1 < QUESTIONS.length) {

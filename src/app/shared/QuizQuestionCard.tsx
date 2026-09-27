@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { useI18n } from "../context/I18nContext";
 import { ChoiceOptionGroup, type ChoiceOption } from "./ChoiceOptionGroup";
+import { playCorrectSound, playIncorrectSound } from "./useSound";
 
 interface Props<T extends string> {
   id: string;
@@ -63,7 +64,14 @@ export function QuizQuestionCard<T extends string>({
           }
           options={options}
           value={value}
-          onChange={onChange}
+          onChange={(val) => {
+            if (val === correctValue) {
+              playCorrectSound();
+            } else {
+              playIncorrectSound();
+            }
+            onChange(val);
+          }}
           disabled={answered}
           correctValue={correctValue}
           revealFeedback={answered}
