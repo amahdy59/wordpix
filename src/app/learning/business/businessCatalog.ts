@@ -1,5 +1,8 @@
-import catalogData from "./businessCatalog.json";
+import catalogUnits01To20 from "./businessCatalog.units-01-20.json";
+import catalogUnits21To40 from "./businessCatalog.units-21-40.json";
 import { businessUnitSchema, type BusinessUnit, type BusinessCefrLevel } from "./businessTypes";
+
+const catalogData = [...catalogUnits01To20, ...catalogUnits21To40];
 
 export const BUSINESS_UNITS: BusinessUnit[] = (catalogData as unknown[]).map((raw) =>
   businessUnitSchema.parse(raw)

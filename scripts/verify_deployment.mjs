@@ -15,10 +15,24 @@ function log(msg, color = colors.reset) {
 }
 
 const DEFAULT_DEPLOY_URL = "https://amahdy59.github.io/wordpix";
-const targetUrl = (process.argv[2] || process.env.DEPLOY_URL || DEFAULT_DEPLOY_URL).replace(
+const args = process.argv.slice(2);
+const expectedShaIndex = args.indexOf("--expected-sha");
+const expectedSha = (
+  expectedShaIndex >= 0 ? args[expectedShaIndex + 1] : process.env.DEPLOY_COMMIT_SHA
+)?.toLowerCase();
+const positionalArgs = args.filter((arg, index) => {
+  if (arg === "--expected-sha") return false;
+  if (expectedShaIndex >= 0 && index === expectedShaIndex + 1) return false;
+  return true;
+});
+const targetUrl = (positionalArgs[0] || process.env.DEPLOY_URL || DEFAULT_DEPLOY_URL).replace(
   /\/$/,
   ""
 );
+
+if (expectedSha && !/^[a-f0-9]{40}$/.test(expectedSha)) {
+  throw new Error("--expected-sha must be a full 40-character Git commit SHA.");
+}
 
 async function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -52,8 +66,26 @@ async function verifyDeployment() {
 
   const startTime = Date.now();
 
-  // 1. Base URL Reachability & Root Element
-  log("1. Checking root URL and HTML structure...", colors.yellow);
+  // 1. Exact deployed revision
+  log("1. Checking deployed build provenance...", colors.yellow);
+  const buildInfoRes = await fetchWithRetry(`${targetUrl}/build-info.json?cache=${Date.now()}`);
+  const buildInfo = await buildInfoRes.json();
+  if (!buildInfo || !/^[a-f0-9]{40}$/i.test(buildInfo.commitSha)) {
+    throw new Error("build-info.json does not contain a valid full Git commit SHA");
+  }
+  const deployedSha = buildInfo.commitSha.toLowerCase();
+  if (expectedSha && deployedSha !== expectedSha) {
+    throw new Error(
+      `Deployed revision ${deployedSha} does not match expected revision ${expectedSha}`
+    );
+  }
+  log(
+    `   ✅ Deployed revision verified: ${deployedSha}${expectedSha ? " (expected)" : ""}.`,
+    colors.green
+  );
+
+  // 2. Base URL Reachability & Root Element
+  log("2. Checking root URL and HTML structure...", colors.yellow);
   const rootRes = await fetchWithRetry(`${targetUrl}/`);
   const html = await rootRes.text();
 
@@ -68,8 +100,8 @@ async function verifyDeployment() {
   }
   log("   ✅ Root container verified in DOM.", colors.green);
 
-  // 2. SPA 404 Fallback page
-  log("2. Checking SPA 404 routing fallback...", colors.yellow);
+  // 3. SPA 404 Fallback page
+  log("3. Checking SPA 404 routing fallback...", colors.yellow);
   const fallbackRes = await fetchWithRetry(`${targetUrl}/404.html`);
   const fallbackHtml = await fallbackRes.text();
   if (!/<div\b[^>]*\bid=["']root["']/.test(fallbackHtml)) {
@@ -77,8 +109,8 @@ async function verifyDeployment() {
   }
   log("   ✅ SPA fallback page active and healthy.", colors.green);
 
-  // 3. Asset Links & Bundle Check
-  log("3. Discovering and verifying script & style bundles...", colors.yellow);
+  // 4. Asset Links & Bundle Check
+  log("4. Discovering and verifying script & style bundles...", colors.yellow);
   const scriptMatches = [...html.matchAll(/<script[^>]+src=["']([^"']+)["']/g)].map((m) => m[1]);
   if (scriptMatches.length === 0) {
     throw new Error("Deployment HTML contains no application script bundle");

@@ -33,7 +33,14 @@ async function checkDeploymentStatus() {
 
   log("\n2. Executing live deployment health verification...", colors.yellow);
   try {
-    execFileSync(process.execPath, ["scripts/verify_deployment.mjs", ...process.argv.slice(2)], {
+    const callerArgs = process.argv.slice(2);
+    const hasExpectedSha = callerArgs.includes("--expected-sha");
+    const expectedSha = execFileSync("git", ["rev-parse", "HEAD"], {
+      encoding: "utf8",
+      timeout: 10000,
+    }).trim();
+    const verifyArgs = hasExpectedSha ? callerArgs : [...callerArgs, "--expected-sha", expectedSha];
+    execFileSync(process.execPath, ["scripts/verify_deployment.mjs", ...verifyArgs], {
       stdio: "inherit",
     });
   } catch (err) {

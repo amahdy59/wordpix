@@ -6,6 +6,8 @@ import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 
 const runFile = promisify(execFile);
+const EXPECTED_SHA = "0123456789abcdef0123456789abcdef01234567";
+const OTHER_SHA = "89abcdef0123456789abcdef0123456789abcdef";
 
 describe("Deployment HTTP health checks", () => {
   it.each([
@@ -22,10 +24,18 @@ describe("Deployment HTTP health checks", () => {
       fault: "fallback",
       expected: "fallback does not contain",
     },
+    {
+      scenario: "a mismatched deployed revision",
+      fault: "revision",
+      expected: "does not match expected revision",
+    },
   ])("checks $scenario", async ({ fault, expected }) => {
     const html = `<div id="root"></div>${fault === "script" ? "" : '<script src="/custom/app.js"></script>'}`;
     const server = createServer((req, res) => {
-      if (req.url === "/custom/app.js") {
+      if (req.url?.startsWith("/custom/build-info.json")) {
+        res.setHeader("Content-Type", "application/json");
+        res.end(JSON.stringify({ commitSha: fault === "revision" ? OTHER_SHA : EXPECTED_SHA }));
+      } else if (req.url === "/custom/app.js") {
         res.setHeader("Content-Type", fault === "mime" ? "text/html" : "text/javascript");
         res.end(fault === "empty" ? "" : "console.log('ready');");
       } else {
@@ -40,6 +50,8 @@ describe("Deployment HTTP health checks", () => {
       const result = await runFile(process.execPath, [
         "scripts/verify_deployment.mjs",
         `http://127.0.0.1:${address.port}/custom`,
+        "--expected-sha",
+        EXPECTED_SHA,
       ]).then(
         ({ stdout }) => ({ code: 0, stdout }),
         (error: { code: number; stdout: string }) => error
@@ -81,6 +93,8 @@ describe("Deployment Integrity & SPA Architecture", () => {
 
     const workflowContent = fs.readFileSync(deployWorkflowPath, "utf8");
     expect(workflowContent).toContain("deploy:");
-    expect(workflowContent).toContain("actions/deploy-pages@v4");
+    expect(workflowContent).toContain("actions/deploy-pages@v5");
+    expect(workflowContent).toContain("WORDPIX_BUILD_SHA: ${{ github.sha }}");
+    expect(workflowContent).toContain('--expected-sha "${{ github.sha }}"');
   });
 });

@@ -1,4 +1,5 @@
 import { defineConfig, type PluginOption } from "vite";
+import { execFileSync } from "node:child_process";
 import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
@@ -11,6 +12,26 @@ function figmaAssetResolver() {
         const filename = id.replace("figma:asset/", "");
         return path.resolve(__dirname, "src/assets", filename);
       }
+    },
+  };
+}
+
+function buildProvenance() {
+  return {
+    name: "wordpix-build-provenance",
+    apply: "build" as const,
+    generateBundle(this: { emitFile: (asset: object) => void }) {
+      const environmentSha = process.env.WORDPIX_BUILD_SHA || process.env.GITHUB_SHA;
+      const gitSha =
+        environmentSha || execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
+      if (!/^[a-f0-9]{40}$/i.test(gitSha)) {
+        throw new Error("Build provenance requires a full 40-character Git commit SHA.");
+      }
+      this.emitFile({
+        type: "asset",
+        fileName: "build-info.json",
+        source: `${JSON.stringify({ commitSha: gitSha.toLowerCase() }, null, 2)}\n`,
+      });
     },
   };
 }
@@ -32,7 +53,7 @@ export default defineConfig(async () => {
   }
   return {
     base: "/wordpix/",
-    plugins: [figmaAssetResolver(), react(), tailwindcss(), ...extraPlugins],
+    plugins: [buildProvenance(), figmaAssetResolver(), react(), tailwindcss(), ...extraPlugins],
     // Must stay in step with the "paths" block in tsconfig.json. Three of the
     // previous six aliases (@shared, @types, @constants) pointed at directories
     // that do not exist — the real locations are src/app/shared, src/app/types.ts,
@@ -83,6 +104,18 @@ export default defineConfig(async () => {
             }
             if (id.includes("src/app/data/lessons")) {
               return "course-lessons";
+            }
+            if (id.includes("conversationCatalog.units-01-20.json")) {
+              return "conversation-units-01-20";
+            }
+            if (id.includes("conversationCatalog.units-21-40.json")) {
+              return "conversation-units-21-40";
+            }
+            if (id.includes("businessCatalog.units-01-20.json")) {
+              return "business-units-01-20";
+            }
+            if (id.includes("businessCatalog.units-21-40.json")) {
+              return "business-units-21-40";
             }
             if (id.includes("src/generated/figmaImageReplacements")) {
               return "asset-manifest";

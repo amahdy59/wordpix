@@ -76,7 +76,7 @@ Avoid selectors based on implementation-only class names or component internals.
 
 Maintain at least:
 
-- New child, English, light: onboarding → placement → recommendation → guest → first lesson → completion.
+- New adult learner, English, light: onboarding → placement → recommendation → guest → first lesson → completion.
 - Returning adult, Arabic RTL, dark: home → review-due practice → incorrect answer → hint → retry → completion → progress.
 - Guest-to-account migration with interruption and retry.
 - Offline lesson completion and later synchronization.

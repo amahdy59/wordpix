@@ -1,5 +1,8 @@
 import { conversationUnitSchema, type ConversationUnit, type CefrLevel } from "./conversationTypes";
-import rawCatalog from "./conversationCatalog.json";
+import catalogUnits01To20 from "./conversationCatalog.units-01-20.json";
+import catalogUnits21To40 from "./conversationCatalog.units-21-40.json";
+
+const rawCatalog = [...catalogUnits01To20, ...catalogUnits21To40];
 
 export const CONVERSATION_UNITS: readonly ConversationUnit[] = conversationUnitSchema
   .array()

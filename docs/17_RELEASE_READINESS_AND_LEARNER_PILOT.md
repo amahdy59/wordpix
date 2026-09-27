@@ -6,6 +6,8 @@ Status: `requires-accessibility-retest` and `backend-dependent`.
 
 Do not describe the application as manually WCAG 2.2 AAA certified or account-sync certified until the evidence tables below are completed. Broad specialist-topic expansion is paused until the moderated-pilot decision rule is met. Automated checks are necessary release evidence, but they are not substitutes for either activity.
 
+As of 2026-09-27, the manual accessibility rows and moderated adult-pilot rows remain intentionally `Unverified`. The staging authentication/RLS workflow is implemented, but its protected GitHub environment and six staging secrets are not configured. These are external evidence gates, not automated-test passes.
+
 The product now has one authoritative next lesson: the recommended foundation lesson. Home and Learn must display the same lesson. Picture worlds and the pronunciation pilot are optional paths and must remain progressively disclosed.
 
 ## Automated release gate
@@ -16,7 +18,7 @@ The release is blocked unless lint, TypeScript, unit/integration tests, producti
 
 | Journey                           | Required result                                                                                                                              |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| New child, English, light         | Onboarding explains each choice; placement is optional; recommendation has a reason; first lesson can be completed without account creation. |
+| New adult learner, English, light | Onboarding explains each choice; placement is optional; recommendation has a reason; first lesson can be completed without account creation. |
 | Returning adult, Arabic RTL, dark | Review-due work is visible; incorrect answers offer recovery; mixed-direction text remains readable; progress survives reload.               |
 | Keyboard-only                     | Every action is reachable in logical order, focus is visible, dialogs trap and restore focus, and no pointer gesture is required.            |
 | Reduced motion and 200% text      | Content remains operable without clipping, hidden actions, or essential animation.                                                           |
@@ -53,7 +55,7 @@ For each of the first 18 units, verify:
 
 ## Moderated pilot protocol
 
-Recruit 5–8 consenting participants across beginner adults, children with an appropriate guardian process, Arabic-speaking learners, and keyboard or screen-reader users. Do not record names, raw speech, typed answers, or video without separate informed consent.
+Recruit 5–8 consenting adult participants across beginner learners, Arabic-speaking learners, and keyboard or screen-reader users. Do not record names, raw speech, typed answers, or video without separate informed consent.
 
 Ask each participant to complete the first three recommended units without coaching. Observe time to first lesson, hesitation, backtracking, misunderstood labels, audio replay, retries, abandonment, and whether the learner can explain the unit goal and next action. Use neutral prompts such as “What do you expect this will do?” rather than teaching the interface.
 
