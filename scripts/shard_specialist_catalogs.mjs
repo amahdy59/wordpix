@@ -26,6 +26,12 @@ for (const { directory, stem } of catalogs) {
   ];
   for (const [suffix, shard] of shards) {
     const targetPath = path.resolve(directory, `${stem}.${suffix}.json`);
+    try {
+      const existingShard = JSON.parse(await readFile(targetPath, "utf8"));
+      if (JSON.stringify(existingShard) === JSON.stringify(shard)) continue;
+    } catch {
+      // A missing or invalid generated shard must be replaced from the canonical catalog.
+    }
     await writeFile(targetPath, `${JSON.stringify(shard, null, 2)}\n`, "utf8");
   }
 }
