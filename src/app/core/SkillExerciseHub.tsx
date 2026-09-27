@@ -103,6 +103,8 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
 
   return (
     <div className="flex flex-col gap-8 max-w-5xl mx-auto w-full py-2 sm:py-4">
+      <PageHeader variant="plain" headingLevel="h1" title={t("nav.practice")} />
+
       {/* ── Section 1: Reviews Due Today (Spaced-Repetition Hero) ──────────────── */}
       <section aria-label={t("masteryReview.todayReview")} className="flex flex-col gap-3">
         {totalDue > 0 ? (
@@ -129,9 +131,9 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                   )}
                 </div>
 
-                <h1 className="font-sans text-xl sm:text-2xl font-black text-foreground leading-tight">
+                <h2 className="font-sans text-xl sm:text-2xl font-black text-foreground leading-tight">
                   {t("masteryReview.title")}
-                </h1>
+                </h2>
 
                 <p className="text-sm text-muted-foreground font-medium leading-relaxed max-w-xl">
                   {t("masteryReview.countsSummary", {
@@ -197,7 +199,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               onClick={() => dispatch({ type: "GO", to: "review" })}
               className="min-h-[44px] shrink-0"
             >
-              {t("masteryReview.badge")}
+              {t("masteryReview.viewSchedule")}
             </Button>
           </div>
         )}
@@ -214,17 +216,18 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               <span>
                 {t("skillHub.multimodalExercises", {
                   count: formatNumber(availableCount, numeralSystem),
+                  level: learnerLevel,
                 })}
               </span>
             </span>
           }
           title={t("skillHub.title")}
-          subtitle={t("skillHub.subtitle", { count: formatNumber(availableCount, numeralSystem) })}
+          subtitle={t("skillHub.subtitle")}
         />
 
         {/* Category Filters */}
         <div
-          role="group"
+          role="radiogroup"
           aria-label={t("skillHub.categoriesAria")}
           className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar snap-x"
         >
@@ -246,6 +249,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                 key={id}
                 label={categoryLabel}
                 selected={activeCategory === id}
+                selectionMode="single"
                 onToggle={() => setActiveCategory(id)}
                 count={count}
                 icon={<Icon className="size-4" aria-hidden="true" />}

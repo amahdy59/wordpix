@@ -230,7 +230,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
 
   if (completedScore !== null) {
     return (
-      <main
+      <div
         className="min-h-dvh w-full bg-background pb-24"
         aria-labelledby="pronunciation-complete-title"
       >
@@ -331,12 +331,12 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             )}
           </section>
         </div>
-      </main>
+      </div>
     );
   }
 
   return (
-    <main
+    <div
       className="min-h-dvh w-full overflow-y-auto bg-background pb-24"
       aria-labelledby="pronunciation-title"
     >
@@ -838,7 +838,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 <button
                   type="button"
                   onClick={() => speak(activity.recoveryCue ?? activity.articulationCues[0])}
-                  className="inline-flex min-h-8 items-center gap-1.5 rounded-lg border border-primary/30 bg-background px-2.5 py-1 text-xs font-bold text-primary hover:bg-primary/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-primary"
+                  className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-primary/30 bg-background px-2.5 py-1 text-xs font-bold text-primary hover:bg-primary/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-primary"
                 >
                   <Volume2 className="size-3.5" aria-hidden />
                   {t("pronunciation.listenToContrast")}
@@ -896,6 +896,6 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
           </button>
         </nav>
       </div>
-    </main>
+    </div>
   );
 }

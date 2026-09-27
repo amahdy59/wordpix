@@ -1,5 +1,6 @@
 import type { Screen, Action, OnboardStep } from "../types";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, resolveGroup, resolveUnitForLesson } from "../data/lessons";
+import { MAX_LESSON_STAGE_COUNT } from "../lesson/lessonSequence";
 
 export const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
 export const TABBED_IDS: ReadonlySet<string> = new Set([
@@ -89,7 +90,9 @@ export function reducer(state: Screen, action: Action): Screen {
 
     const sessionId = "sess_" + Date.now() + "_" + Math.random().toString(36).slice(2, 7);
     const initialStep =
-      action.initialStep !== undefined ? Math.max(0, Math.min(5, action.initialStep)) : 0;
+      action.initialStep !== undefined
+        ? Math.max(0, Math.min(MAX_LESSON_STAGE_COUNT - 1, action.initialStep))
+        : 0;
 
     return {
       id: "lesson",
@@ -121,7 +124,7 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "LESSON_NEXT") {
     if (state.id !== "lesson") return state;
-    if (state.step >= 5) {
+    if (state.step >= MAX_LESSON_STAGE_COUNT - 1) {
       return {
         id: "lesson-complete",
         mode: state.mode,
@@ -144,7 +147,7 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "LESSON_GOTO_STEP") {
     if (state.id !== "lesson") return state;
-    if (action.step < 0 || action.step > 5) return state;
+    if (action.step < 0 || action.step >= MAX_LESSON_STAGE_COUNT) return state;
     if (action.step === state.step) return state;
     return { ...state, step: action.step };
   }
@@ -158,7 +161,8 @@ export function ariaLiveAnnounce(msg: string) {
 
 export function describeScreen(
   screen: Screen,
-  t: (key: string, options?: Record<string, string | number>) => string
+  t: (key: string, options?: Record<string, string | number>) => string,
+  lessonStageCount = MAX_LESSON_STAGE_COUNT
 ): string {
   switch (screen.id) {
     case "onboarding":
@@ -177,7 +181,10 @@ export function describeScreen(
     case "profile":
       return t("nav.profile");
     case "lesson":
-      return `Lesson step ${screen.step + 1} of 6`;
+      return t("lesson.stageProgress", {
+        current: screen.step + 1,
+        total: lessonStageCount,
+      });
     case "lesson-complete":
       return "Session complete";
     case "lesson-entry": {

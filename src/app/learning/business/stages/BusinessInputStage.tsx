@@ -96,12 +96,12 @@ export function BusinessInputStage({ unit, onNext }: Props) {
         <p className="text-xs font-black uppercase tracking-widest text-primary">
           {t("business.input.executiveBriefing")}
         </p>
-        <h1
+        <h2
           id="case-study-title"
           className="mt-2 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
         >
           {unit.mainInput.title}
-        </h1>
+        </h2>
 
         {unit.mainInput.context && (
           <div className="mt-4 rounded-2xl bg-muted/40 border border-border/80 p-4 sm:p-5">

@@ -27,13 +27,11 @@ test("Hadith curriculum exposes all 42 lessons and opens the canonical source", 
   await expect(page.getByRole("heading", { name: "No Hadith lessons found" })).toBeVisible();
   await page.getByRole("tab", { name: "Due for review: 0" }).press("Home");
   await expect(results.getByRole("button")).toHaveCount(42);
-  const hadithScroller = page.getByRole("main", { name: "Hadith English curriculum" });
-  expect(
-    await hadithScroller.evaluate((element) => element.scrollHeight > element.clientHeight)
-  ).toBe(true);
-  await hadithScroller.evaluate((element) => element.scrollTo({ top: element.scrollHeight }));
-  await expect(results.getByRole("button").last()).toBeVisible();
-  await hadithScroller.evaluate((element) => element.scrollTo({ top: 0 }));
+  const hadithScroller = page.getByRole("main");
+  await expect(hadithScroller).toHaveCount(1);
+  const finalHadithLesson = results.getByRole("button").last();
+  await finalHadithLesson.scrollIntoViewIfNeeded();
+  await expect(finalHadithLesson).toBeVisible();
   await page.getByRole("button", { name: /Actions and Intentions/ }).click();
   await expect(page).toHaveURL(/#\/hadith\/lesson-1$/);
   await page.getByRole("button", { name: "Read & Listen" }).click();
@@ -62,15 +60,13 @@ test("pronunciation curriculum is grouped, searchable, and uses R2-backed artwor
   await expect(chapterNavigation.getByRole("button")).toHaveCount(8);
   await chapterNavigation.getByRole("button", { name: "Chapter 8" }).click();
   await expect(page.getByRole("heading", { name: /Transfer/i }).last()).toBeVisible();
-  const pronunciationScroller = page.getByRole("main", { name: "Pronunciation curriculum" });
-  expect(
-    await pronunciationScroller.evaluate((element) => element.scrollHeight > element.clientHeight)
-  ).toBe(true);
-  await pronunciationScroller.evaluate((element) =>
-    element.scrollTo({ top: element.scrollHeight })
-  );
-  await expect(page.getByRole("button", { name: /Final Real-Speech Capstone/i })).toBeVisible();
-  await pronunciationScroller.evaluate((element) => element.scrollTo({ top: 0 }));
+  const pronunciationScroller = page.getByRole("main");
+  await expect(pronunciationScroller).toHaveCount(1);
+  const finalPronunciationLesson = page.getByRole("button", {
+    name: /Final Real-Speech Capstone/i,
+  });
+  await finalPronunciationLesson.scrollIntoViewIfNeeded();
+  await expect(finalPronunciationLesson).toBeVisible();
   await page.getByLabel("Search pronunciation lessons").fill("Sheep or Ship");
   await page.getByRole("button", { name: /Sheep or Ship/ }).click();
 

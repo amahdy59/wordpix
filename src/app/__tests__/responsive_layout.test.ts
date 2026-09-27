@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
+import { readFileSync, readdirSync, statSync } from "node:fs";
+import { join, relative, resolve } from "node:path";
 
 const appDir = resolve(__dirname, "..");
 const read = (relativePath: string) => readFileSync(resolve(appDir, relativePath), "utf8");
@@ -15,6 +15,16 @@ const stripComments = (source: string) =>
     .replace(/\{\s*\/\*[\s\S]*?\*\/\s*\}/g, "")
     .replace(/\/\*[\s\S]*?\*\//g, "")
     .replace(/^\s*\/\/.*$/gm, "");
+
+function collectTsx(dir: string, found: string[] = []): string[] {
+  for (const entry of readdirSync(dir)) {
+    if (entry === "__tests__") continue;
+    const full = join(dir, entry);
+    if (statSync(full).isDirectory()) collectTsx(full, found);
+    else if (entry.endsWith(".tsx")) found.push(full);
+  }
+  return found;
+}
 
 describe("Responsive visibility has no dead zones", () => {
   const source = stripComments(read("lesson/SceneCanvas.tsx"));
@@ -87,6 +97,12 @@ describe("AppShell responsive components", () => {
     const source = stripComments(read("shared/BottomTabBar.tsx"));
     expect(source).toMatch(/lg:hidden/);
   });
+
+  it("reserves keyboard scroll space above the fixed mobile navigation", () => {
+    const source = stripComments(read("shared/AppShell.tsx"));
+    expect(source).toContain("scroll-pb-[calc(env(safe-area-inset-bottom)+96px)]");
+    expect(source).toContain("lg:scroll-pb-6");
+  });
 });
 
 describe("Card Grid Responsive Sizing", () => {
@@ -110,6 +126,28 @@ describe("Card Grid Responsive Sizing", () => {
 });
 
 describe("Information architecture avoids nested shells", () => {
+  it("lets only router shells own the main landmark", () => {
+    const permittedOwners = new Set(["router/RouterView.tsx", "shared/AppShell.tsx"]);
+    const offenders = collectTsx(appDir)
+      .filter((file) => /<main\b/.test(stripComments(readFileSync(file, "utf8"))))
+      .map((file) => relative(appDir, file).replace(/\\/g, "/"))
+      .filter((file) => !permittedOwners.has(file));
+
+    expect(offenders).toEqual([]);
+  });
+
+  it("reserves h1 for the lesson shell instead of individual stages", () => {
+    const stageFiles = [
+      ...collectTsx(resolve(appDir, "learning/business/stages")),
+      ...collectTsx(resolve(appDir, "learning/conversation/stages")),
+    ];
+    const offenders = stageFiles
+      .filter((file) => /<h1\b/.test(stripComments(readFileSync(file, "utf8"))))
+      .map((file) => relative(appDir, file).replace(/\\/g, "/"));
+
+    expect(offenders).toEqual([]);
+  });
+
   it("lets RouterView own the single AppShell around Practice", () => {
     const hub = stripComments(read("core/SkillExerciseHub.tsx"));
     const router = stripComments(read("router/RouterView.tsx"));
@@ -133,6 +171,11 @@ describe("HomeDashboard 2-Column Responsive Desktop Grid", () => {
     expect(source).toMatch(/grid\s+grid-cols-1\s+xl:grid-cols-12/);
     expect(source).toMatch(/xl:col-span-7/);
     expect(source).toMatch(/xl:col-span-5/);
+  });
+
+  it("stacks identity and connection status on narrow phones", () => {
+    expect(source).toMatch(/flex flex-col items-stretch gap-3 sm:flex-row/);
+    expect(source).toMatch(/self-start sm:self-auto/);
   });
 });
 

@@ -113,7 +113,7 @@ export function SplashWelcome({ dispatch }: Props) {
         </header>
 
         {/* Main Content */}
-        <main className="flex-1 flex flex-col items-center md:items-start justify-center w-full max-w-md mx-auto md:mx-0 py-6 text-center md:text-start gap-6 z-10">
+        <div className="flex-1 flex flex-col items-center md:items-start justify-center w-full max-w-md mx-auto md:mx-0 py-6 text-center md:text-start gap-6 z-10">
           <div className="hidden md:flex items-center justify-between w-full">
             <span className="text-xs font-sans font-bold text-secondary-foreground bg-secondary px-3 py-1 rounded-full border border-primary/30">
               {t("onboarding.welcomeWordPix")}
@@ -157,7 +157,7 @@ export function SplashWelcome({ dispatch }: Props) {
               </span>
             </div>
           </div>
-        </main>
+        </div>
 
         {/* Footer CTA */}
         <footer className="w-full max-w-md mx-auto md:mx-0 pt-4 shrink-0 z-10">

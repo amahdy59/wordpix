@@ -2,6 +2,11 @@ import fs from "node:fs";
 import path from "node:path";
 import { expect, test } from "@playwright/test";
 
+// These assertions intentionally observe the media request itself. Blocking the
+// production service worker keeps a previously cached response from bypassing
+// Playwright's route hooks; offline behavior is covered in resilience.spec.ts.
+test.use({ serviceWorkers: "block" });
+
 test("Pin or Pen includes the spoken led answer with an edge-to-edge image", async ({ page }) => {
   const requests: string[] = [];
   const errors: string[] = [];

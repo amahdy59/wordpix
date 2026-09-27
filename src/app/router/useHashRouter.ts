@@ -15,15 +15,13 @@ import type { ConversationStageId } from "../learning/conversation/conversationT
 import { CONVERSATION_STAGE_IDS } from "../learning/conversation/conversationTypes";
 import type { BusinessStageId } from "../learning/business/businessTypes";
 import { BUSINESS_STAGE_IDS } from "../learning/business/businessTypes";
+import { MAX_LESSON_STAGE_COUNT } from "../lesson/lessonSequence";
 
 const SKILL_EXERCISE_ID_SET = new Set<string>(SKILL_EXERCISE_IDS);
 
 function isSkillExerciseId(value: string): value is SkillExerciseId {
   return SKILL_EXERCISE_ID_SET.has(value);
 }
-
-/** Number of steps in a lesson flow (5 exercises, scene removed). */
-const LESSON_STEP_COUNT = 5;
 
 /**
  * What a URL asks the app to do.
@@ -190,7 +188,7 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
     const world = resolveUnitForLesson(screen.lessonId);
     return {
       hash: `#/learn/${world.id}/step-${screen.step + 1}`,
-      title: `WordPix — ${world.name} Lesson (${screen.step + 1}/${LESSON_STEP_COUNT})`,
+      title: `WordPix — ${world.name} Lesson — Stage ${screen.step + 1}`,
     };
   }
   if (screen.id === "lesson-complete") {
@@ -288,11 +286,11 @@ export function hashToRoute(hash: string): RouteIntent | null {
   if (stepMatch) {
     const world = COURSE_UNITS[stepMatch[1]];
     const oneBased = Number(stepMatch[2]);
-    if (world && oneBased >= 1 && oneBased <= LESSON_STEP_COUNT) {
+    if (world && oneBased >= 1 && oneBased <= MAX_LESSON_STAGE_COUNT) {
       return {
         kind: "lesson-step",
         step: oneBased - 1,
-        title: `WordPix — ${world.name} Lesson (${oneBased}/${LESSON_STEP_COUNT})`,
+        title: `WordPix — ${world.name} Lesson — Stage ${oneBased}`,
       };
     }
     return null;

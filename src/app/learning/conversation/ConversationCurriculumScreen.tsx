@@ -84,7 +84,7 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
   }, [selectedLevel, searchQuery]);
 
   return (
-    <main
+    <div
       className="h-full min-h-0 overflow-y-auto bg-background pb-24 overscroll-y-contain"
       aria-labelledby="curriculum-main-title"
     >
@@ -348,6 +348,6 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
           </p>
         )}
       </div>
-    </main>
+    </div>
   );
 }

@@ -711,7 +711,7 @@ function ListenSelector({
 }) {
   return (
     <div
-      role="group"
+      role="radiogroup"
       aria-label={label}
       data-listen-selector
       className="flex rounded-xl ring-1 ring-inset ring-border bg-wp-card"
@@ -720,7 +720,8 @@ function ListenSelector({
         <button
           key={option}
           type="button"
-          aria-pressed={selected === option}
+          role="radio"
+          aria-checked={selected === option}
           onClick={() => onChange(option)}
           className={`flex-1 min-h-11 px-4 rounded-lg text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${selected === option ? "bg-secondary text-primary ring-1 ring-inset ring-primary/30" : "text-muted-foreground"}`}
         >

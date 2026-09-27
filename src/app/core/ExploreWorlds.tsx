@@ -247,7 +247,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                 </>
               ) : (
                 <span className="font-black text-2xl text-primary">
-                  {overallStats.totalUnits} {t("explore.wordsCount")}
+                  {overallStats.totalUnits} {t("explore.unitsCount")}
                 </span>
               )}
             </div>
@@ -287,13 +287,14 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
 
         {/* CEFR Stage Filter Chips */}
         <div
-          role="group"
+          role="radiogroup"
           aria-label={t("explore.collectionNavigation")}
           className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar snap-x"
         >
           <FilterChip
             label={t("explore.allLevels")}
             selected={selectedStageId === "all"}
+            selectionMode="single"
             onToggle={() => setSelectedStageId("all")}
             count={allCurriculumUnits.length}
             size="sm"
@@ -307,6 +308,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                 key={stage.id}
                 label={stage.label}
                 selected={isSelected}
+                selectionMode="single"
                 onToggle={() => setSelectedStageId(stage.id)}
                 count={count}
                 size="sm"
@@ -317,8 +319,8 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
 
         {/* Mastery Status Filter Chips */}
         <div
-          role="group"
-          aria-label="Filter by mastery status"
+          role="radiogroup"
+          aria-label={t("explore.masteryFilterAria")}
           className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar text-xs"
         >
           <span className="text-muted-foreground font-semibold text-xs shrink-0 ps-1">
@@ -327,12 +329,14 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           <FilterChip
             label={t("explore.statusAll")}
             selected={masteryFilter === "all"}
+            selectionMode="single"
             onToggle={() => setMasteryFilter("all")}
             size="sm"
           />
           <FilterChip
             label={t("explore.statusMastered")}
             selected={masteryFilter === "mastered"}
+            selectionMode="single"
             onToggle={() => setMasteryFilter("mastered")}
             count={overallStats.completedUnits}
             size="sm"
@@ -340,12 +344,14 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           <FilterChip
             label={t("explore.statusInProgress")}
             selected={masteryFilter === "in-progress"}
+            selectionMode="single"
             onToggle={() => setMasteryFilter("in-progress")}
             size="sm"
           />
           <FilterChip
             label={t("explore.statusNotStarted")}
             selected={masteryFilter === "not-started"}
+            selectionMode="single"
             onToggle={() => setMasteryFilter("not-started")}
             size="sm"
           />

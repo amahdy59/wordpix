@@ -5,6 +5,17 @@
     "skipToContent": "Skip to content",
     "loading": "Loading screen…"
   },
+  "network": {
+    "offlineTitle": "You're offline",
+    "offlineDescription": "Your progress is saved on this device and will sync after you reconnect.",
+    "onlineTitle": "Back online",
+    "onlineDescription": "WordPix will sync any pending progress.",
+    "syncFailedTitle": "Some progress needs attention",
+    "syncFailedDescription": "{count} saved update could not sync. Your progress is still safe on this device.",
+    "retrySync": "Retry sync",
+    "retrying": "Retrying…",
+    "retryFailed": "Sync still needs attention. Sign in again, then retry."
+  },
   "nav": {
     "label": "Main navigation",
     "home": "Home",
@@ -123,7 +134,7 @@
     "offlineReady": "Bedroom available offline",
     "offlineSaving": "Saving for offline: {cached} of {total}",
     "welcomeLearner": "{greeting}, Learner!",
-    "levelGoal": "Level {level} · Goal: {goal} min/day",
+    "levelGoal": "Level {level}",
     "dailyTarget": "Daily Vocabulary Target",
     "targetMet": "Target Met!",
     "wordsProgress": "{current} / {total} words",
@@ -152,7 +163,7 @@
     "specialCurricula": "Specialized learning curricula",
     "pathBadge": "Guided English pathway",
     "title": "Your learning path",
-    "subtitle": "Explore a complete picture-word route and specialized curricula at your pace.",
+    "subtitle": "Continue your guided English path, then explore optional specialist courses.",
     "foundationProgress": "Foundation pathway",
     "foundationProgressAria": "Foundation progress: {mastered} of {total} words mastered",
     "browseLibrary": "Browse vocabulary library",
@@ -165,7 +176,7 @@
     "phaseSummary": "Steps {start}–{end} · {complete} of {total} fully mastered",
     "wordsMastered": "{mastered} of {total} words mastered",
     "wordProgress": "{familiar} familiar · {mastered} strong · {due} due of {total}",
-    "pictureWorlds": "Explore picture worlds",
+    "pictureWorlds": "Browse vocabulary library",
     "readingLevels": "Learn to read · Levels 0–1",
     "readingTitle": "Sounds, Letters, and First Words",
     "readingDescription": "Follow the core reading path from careful listening to first letters and words. Every lesson remains open and progress is saved locally.",
@@ -175,8 +186,8 @@
     "startFoundation": "Start Lesson 1",
     "allFoundation": "Explore all reading foundation lessons",
     "currentFoundation": "Show only my current stage",
-    "recommendedWorld": "Recommended picture world",
-    "routeBadge": "Guided picture-word route",
+    "recommendedWorld": "Recommended guided unit",
+    "routeBadge": "Complete guided English path",
     "routeToggle": "View full learning path",
     "routeHint": "See every general English unit in order, from foundations to specialist topics.",
     "routeLabel": "Complete route",
@@ -296,6 +307,7 @@
     "inProgress": "In Progress",
     "locked": "Locked",
     "wordsCount": "words",
+    "unitsCount": "topic units",
     "pathwayBadge": "Optional topic library",
     "pageTitle": "Browse English by topic",
     "pageSubtitle": "Explore themed vocabulary collections at your own pace. Your guided sequence remains in Learn.",
@@ -307,6 +319,7 @@
     "allLevels": "All collections",
     "levelTab": "Collection {level}",
     "collectionNavigation": "Filter vocabulary collections",
+    "masteryFilterAria": "Filter by mastery status",
     "collectionBadge": "Collection {number}",
     "collectionProgress": "Collection {number} progress",
     "collectionProgressAria": "Collection {number} progress: {percent}%",
@@ -706,7 +719,8 @@
     "quitTitle": "Quit Lesson Session?",
     "quitDescription": "Your progress on the current batch of words will not be saved.",
     "keepPracticing": "Keep Practicing",
-    "leaveLesson": "Leave Lesson"
+    "leaveLesson": "Leave Lesson",
+    "stageProgress": "Lesson stage {current} of {total}"
   },
   "updatePrompt": {
     "title": "Update Available",
@@ -738,8 +752,8 @@
   },
   "skillHub": {
     "title": "Skill Exercise Hub",
-    "multimodalExercises": "{count} Multimodal Skill Exercises",
-    "subtitle": "Select a learning category below to launch any of the {count} available exercises.",
+    "multimodalExercises": "{count} exercises available at {level}",
+    "subtitle": "Choose a skill to practise. Availability reflects your level and accessibility settings.",
     "startExercise": "Start Exercise",
     "categoriesAria": "Exercise categories",
     "listening": "Listening",
@@ -756,7 +770,7 @@
   "masteryReview": {
     "badge": "Daily vocabulary review",
     "title": "Keep your vocabulary fresh",
-    "subtitle": "Review words at the right time to remember them for longer.",
+    "subtitle": "No words are due now. View your schedule or practise a skill below.",
     "dayStreak": "{count} day streak",
     "loadError": "Some vocabulary could not load. Reload the page to try again.",
     "wordsDue": "words due",
@@ -782,7 +796,8 @@
     "viewAll": "View all {count}",
     "skillDrillsTitle": "Skill Drills",
     "skillDrillsDesc": "Extra listening, reading, speaking and writing practice, separate from your review schedule.",
-    "browseDrills": "Browse drills"
+    "browseDrills": "Browse drills",
+    "viewSchedule": "View review schedule"
   },
   "exercise": {
     "questionOf": "Question {current} of {total}",

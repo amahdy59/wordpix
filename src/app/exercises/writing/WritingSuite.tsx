@@ -99,7 +99,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
           onBack={() => dispatch({ type: "GO", to: "explore" })}
           onClose={() => dispatch({ type: "GO", to: "home" })}
         />
-        <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
+        <div className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
           <div
             role="status"
             className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col items-center gap-2 text-center"
@@ -123,7 +123,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
             label="Back to Exercises"
             onClick={() => dispatch({ type: "GO", to: "explore" })}
           />
-        </main>
+        </div>
       </div>
     );
   }
@@ -137,7 +137,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
         onBack={() => dispatch({ type: "GO", to: "explore" })}
         onClose={() => dispatch({ type: "GO", to: "home" })}
       />
-      <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
+      <div className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <span className="font-sans font-bold text-sm text-foreground">
             {t("suites.wordOf", { current: index + 1, total: words.length })}
@@ -169,7 +169,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
           />
           <PrimaryButton label={isLast ? "Finish Sprint" : "Next Word"} type="submit" />
         </form>
-      </main>
+      </div>
     </div>
   );
 });

@@ -50,7 +50,7 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
         <p className="text-xs font-black uppercase tracking-widest text-primary">
           {t("conversation.centralQuestion")}
         </p>
-        <h1
+        <h2
           id="big-question-heading"
           className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-black text-foreground tracking-tight leading-snug"
         >
@@ -60,7 +60,7 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
             showArabic={showArabic}
             arabicClassName="text-primary"
           />
-        </h1>
+        </h2>
       </section>
 
       {/* Discussion Activation Prompts */}

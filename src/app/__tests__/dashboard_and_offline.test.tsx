@@ -65,6 +65,20 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
     expect(screen.getByText("General English words mastered")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /C1 Mastery/i })).toBeInTheDocument();
   });
+
+  it("leads with the guided unit before optional specialist courses", () => {
+    renderWithProviders(<LearningPath dispatch={vi.fn()} />);
+
+    const recommendedHeading = document.getElementById("recommended-heading");
+    const specialistHeading = screen.getByRole("heading", { name: /Pronunciation/i });
+
+    expect(recommendedHeading).not.toBeNull();
+    expect(
+      (recommendedHeading as HTMLElement).compareDocumentPosition(specialistHeading) &
+        Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    expect(screen.getByRole("button", { name: /Browse vocabulary library/i })).toBeInTheDocument();
+  });
 });
 
 describe("SettingsModal Offline Preloader", () => {

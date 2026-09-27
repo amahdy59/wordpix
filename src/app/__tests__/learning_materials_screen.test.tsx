@@ -15,12 +15,15 @@ import { COURSE_UNITS } from "../data/lessons";
 import { I18nProvider } from "../context/I18nContext";
 import { LearnerProvider } from "../context/LearnerContext";
 
+const LAZY_MATERIALS_TIMEOUT_MS = 10_000;
+
 describe("LearningMaterialsScreen", () => {
   it("opens on the study home with unit study path and activities", async () => {
     render(<LearningMaterialsScreen unitId="bedroom" dispatch={vi.fn()} />);
 
-    await waitFor(() =>
-      expect(screen.getByRole("heading", { name: /Bedroom/i })).toBeInTheDocument()
+    await waitFor(
+      () => expect(screen.getByRole("heading", { name: /Bedroom/i })).toBeInTheDocument(),
+      { timeout: LAZY_MATERIALS_TIMEOUT_MS }
     );
     expect(screen.getByText(/Your Study Path/i)).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Continue/i })).toBeInTheDocument();
@@ -29,10 +32,12 @@ describe("LearningMaterialsScreen", () => {
   it("opens an area-only study link on its first activity", async () => {
     render(<LearningMaterialsScreen unitId="bathroom" area="learn" dispatch={vi.fn()} />);
 
-    await waitFor(() =>
-      expect(
-        screen.getByRole("heading", { level: 1, name: /Essential language/i })
-      ).toBeInTheDocument()
+    await waitFor(
+      () =>
+        expect(
+          screen.getByRole("heading", { level: 1, name: /Essential language/i })
+        ).toBeInTheDocument(),
+      { timeout: LAZY_MATERIALS_TIMEOUT_MS }
     );
     expect(screen.queryByText(/Your Study Path/i)).not.toBeInTheDocument();
   });

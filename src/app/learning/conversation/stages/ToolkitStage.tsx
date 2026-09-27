@@ -61,9 +61,9 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
         <span className="text-xs font-black uppercase tracking-wider text-primary">
           {t("conversation.targetSpeakingSkill")}
         </span>
-        <h1 id="toolkit-title" className="mt-2 text-2xl sm:text-3xl font-black text-foreground">
+        <h2 id="toolkit-title" className="mt-2 text-2xl sm:text-3xl font-black text-foreground">
           {unit.toolkit.title}
-        </h1>
+        </h2>
         <p className="mt-2 text-sm sm:text-base font-medium text-muted-foreground leading-relaxed">
           {unit.speakingSkill}
         </p>

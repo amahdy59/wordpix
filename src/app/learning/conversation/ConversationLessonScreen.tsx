@@ -84,7 +84,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
 
   if (!unit) {
     return (
-      <main className="flex h-full min-h-0 flex-col items-center justify-center p-6 text-center">
+      <div className="flex h-full min-h-0 flex-col items-center justify-center p-6 text-center">
         <h1 className="text-xl font-black text-foreground">{t("conversation.unitNotFound")}</h1>
         <button
           type="button"
@@ -93,7 +93,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
         >
           {t("conversation.returnToUnits")}
         </button>
-      </main>
+      </div>
     );
   }
 
@@ -122,7 +122,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
   };
 
   return (
-    <main
+    <div
       className="flex h-full min-h-0 flex-col overflow-y-auto bg-background pb-20 overscroll-y-contain"
       aria-labelledby="lesson-header-title"
     >
@@ -250,6 +250,6 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
           />
         )}
       </div>
-    </main>
+    </div>
   );
 }

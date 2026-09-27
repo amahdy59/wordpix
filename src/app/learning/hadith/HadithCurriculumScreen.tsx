@@ -66,7 +66,7 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
     FIGMA_HADITH_LESSONS[0];
 
   return (
-    <main
+    <div
       className="h-full min-h-0 overflow-y-auto bg-background pb-24 overscroll-y-contain"
       aria-labelledby="hadith-curriculum-title"
     >
@@ -242,6 +242,6 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
           </section>
         )}
       </div>
-    </main>
+    </div>
   );
 }

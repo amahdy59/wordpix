@@ -39,9 +39,9 @@ export function BusinessDiscussionStage({ unit, savedNotes = {}, onSaveNote, onN
       >
         <div className="flex items-center gap-2">
           <HelpCircle className="size-5 text-primary" aria-hidden />
-          <h1 id="discussion-stage-title" className="text-2xl font-black text-foreground">
+          <h2 id="discussion-stage-title" className="text-2xl font-black text-foreground">
             {unit.discussion.title}
-          </h1>
+          </h2>
         </div>
         <p className="mt-2 text-sm text-muted-foreground font-medium">
           {t("business.discussion.subtitle")}

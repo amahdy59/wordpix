@@ -17,6 +17,7 @@ import { RouterView } from "./router/RouterView";
 import { UpdatePrompt } from "./shared/UpdatePrompt";
 import { MotionConfig } from "framer-motion";
 import { purgeLegacyAudioCredentials } from "./shared/audioSecurity";
+import { getLessonSequence } from "./lesson/lessonSequence";
 
 function AppInner() {
   const { t } = useI18n();
@@ -136,8 +137,22 @@ function AppInner() {
   }, [state]);
 
   useEffect(() => {
-    ariaLiveAnnounce(describeScreen(state, t));
-  }, [state, t]);
+    const lessonStageCount =
+      state.id === "lesson"
+        ? state.mode === "UNIT_ASSESSMENT" || state.mode === "PRE_LESSON_ASSESSMENT"
+          ? 1
+          : getLessonSequence(
+              learnerState.preferences.englishLevel,
+              learnerState.accessibility.includeListening
+            ).length
+        : undefined;
+    ariaLiveAnnounce(describeScreen(state, t, lessonStageCount));
+  }, [
+    learnerState.accessibility.includeListening,
+    learnerState.preferences.englishLevel,
+    state,
+    t,
+  ]);
 
   return (
     <ErrorBoundary>

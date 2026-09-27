@@ -42,7 +42,7 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
         onClose={() => dispatch({ type: "GO", to: "explore" })}
       />
 
-      <main className="flex-1 max-w-xl w-full mx-auto p-6 flex flex-col gap-6">
+      <div className="flex-1 max-w-xl w-full mx-auto p-6 flex flex-col gap-6">
         <div className="rounded-3xl overflow-hidden border border-border shadow-2xl aspect-[4/3] bg-muted relative">
           <WordImage
             word={target}
@@ -86,7 +86,7 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
           label={checked ? "Next →" : t("action.checkAnswer")}
           onClick={checked ? () => dispatch({ type: "GO", to: "explore" }) : handleCheck}
         />
-      </main>
+      </div>
     </div>
   );
 });

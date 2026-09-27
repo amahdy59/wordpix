@@ -279,7 +279,7 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
                       <button
                         type="button"
                         onClick={() => audio.speak(item.wordFamily!.noun!)}
-                        className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+                        className="mt-1 flex min-h-11 items-center justify-between text-start text-xs font-bold text-foreground hover:text-primary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary sm:text-sm"
                         aria-label={`Listen to noun: ${item.wordFamily.noun}`}
                       >
                         <span className="truncate">{item.wordFamily.noun}</span>
@@ -298,7 +298,7 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
                       <button
                         type="button"
                         onClick={() => audio.speak(item.wordFamily!.verb!)}
-                        className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+                        className="mt-1 flex min-h-11 items-center justify-between text-start text-xs font-bold text-foreground hover:text-primary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary sm:text-sm"
                         aria-label={`Listen to verb: ${item.wordFamily.verb}`}
                       >
                         <span className="truncate">{item.wordFamily.verb}</span>
@@ -317,7 +317,7 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
                       <button
                         type="button"
                         onClick={() => audio.speak(item.wordFamily!.adj!)}
-                        className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+                        className="mt-1 flex min-h-11 items-center justify-between text-start text-xs font-bold text-foreground hover:text-primary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary sm:text-sm"
                         aria-label={`Listen to adjective: ${item.wordFamily.adj}`}
                       >
                         <span className="truncate">{item.wordFamily.adj}</span>
@@ -336,7 +336,7 @@ export const VocabularyDetailModal = memo(function VocabularyDetailModal({
                       <button
                         type="button"
                         onClick={() => audio.speak(item.wordFamily!.adv!)}
-                        className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+                        className="mt-1 flex min-h-11 items-center justify-between text-start text-xs font-bold text-foreground hover:text-primary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary sm:text-sm"
                         aria-label={`Listen to adverb: ${item.wordFamily.adv}`}
                       >
                         <span className="truncate">{item.wordFamily.adv}</span>

@@ -79,7 +79,7 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
         onBack={() => dispatch({ type: "GO", to: "explore" })}
         onClose={() => dispatch({ type: "GO", to: "home" })}
       />
-      <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
+      <div className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="flex flex-wrap items-center justify-between gap-3 bg-wp-card border border-border rounded-2xl p-4">
           <ExerciseTimer countdown={countdown} enabled={timed} label="Dictation time remaining" />
           <button
@@ -144,7 +144,7 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
             <PrimaryButton label="Submit Dictation" type="submit" />
           )}
         </form>
-      </main>
+      </div>
     </div>
   );
 });

@@ -8,7 +8,7 @@ import { I18nProvider } from "../../i18n";
 describe("Business Learning Screens & Spaced Repetition", () => {
   it("renders Unit 02 with all 9 stages in the stepper, including Stage 0 Quick Recall", () => {
     const dispatch = vi.fn();
-    render(
+    const { container } = render(
       <I18nProvider>
         <LearnerProvider>
           <BusinessLessonScreen unitId="unit-02" dispatch={dispatch} />
@@ -16,7 +16,13 @@ describe("Business Learning Screens & Spaced Repetition", () => {
       </I18nProvider>
     );
 
-    expect(screen.getByRole("main")).toBeDefined();
+    expect(container.querySelector("main")).toBeNull();
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: "Unit 2: Roles, Teams & Responsibilities",
+      })
+    ).toBeDefined();
 
     // Verify stage navigation buttons in desktop sidebar
     const desktopNav = screen.getByRole("navigation", { name: "Lesson Path Steps" });

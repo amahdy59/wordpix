@@ -325,15 +325,29 @@
   :root {
     --wp-surface: #000000;
     --wp-card: #000000;
-    --wp-card-active: #111111;
-    --wp-foreground: #ffffff;
-    --wp-muted-foreground: #dddddd;
+    --wp-panel: #000000;
+    --wp-panel-raised: #111111;
+    --wp-panel-border: #ffffff;
+    --wp-text: #ffffff;
+    --wp-text-secondary: #f1f5f9;
+    --wp-text-on-panel: #ffffff;
+    --wp-text-on-panel-muted: #f1f5f9;
     --wp-border: #ffffff;
     --wp-brand: #ffffff;
+    --wp-brand-dark: #ffffff;
+    --wp-brand-light: #111111;
     --wp-text-on-brand: #000000;
-    --wp-accent-emerald: #00ff00;
-    --wp-text-on-emerald: #000000;
-    --wp-accent-rose: #ff0000;
+    --wp-green: #a7f3d0;
+    --wp-green-light: #052e16;
+    --wp-text-on-green: #000000;
+    --wp-rose: #fecdd3;
+    --wp-rose-light: #4c0519;
     --wp-text-on-rose: #000000;
+    --wp-amber: #fde68a;
+    --wp-text-on-amber: #000000;
+    --wp-teal: #99f6e4;
+    --wp-teal-light: #042f2e;
+    --wp-blue: #bfdbfe;
+    --wp-text-on-blue: #000000;
   }
 }

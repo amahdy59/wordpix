@@ -1,14 +1,23 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { getDB, LEARNER_STATE_KEY, queueMutation } from "../../lib/persistence/db";
-import { migrateGuestToAccount, syncQueue } from "../../lib/persistence/sync";
+import {
+  migrateGuestToAccount,
+  retryFailedSyncOperations,
+  syncQueue,
+} from "../../lib/persistence/sync";
 import { INITIAL_LEARNER_STATE } from "../context/LearnerContext";
+import { createInitialWordState } from "../../features/gamification/sm2";
 
 const mocks = vi.hoisted(() => ({ session: vi.fn(), write: vi.fn(), rpc: vi.fn() }));
 vi.mock("../../lib/supabase/client", () => ({
   supabase: {
     auth: { getSession: mocks.session },
     rpc: mocks.rpc,
-    from: () => ({ update: () => ({ eq: mocks.write }) }),
+    from: () => ({
+      update: () => ({ eq: mocks.write }),
+      upsert: mocks.write,
+      delete: () => ({ eq: mocks.write }),
+    }),
   },
 }));
 
@@ -46,6 +55,69 @@ describe("account sync queue", () => {
     const ops = await db.getAll("mutation_queue");
     expect(ops).toHaveLength(2);
     expect(ops.reduce((n, op) => n + op.retryCount, 0)).toBe(1);
+    expect(ops.find((op) => op.retryCount === 1)?.lastErrorCategory).toBe("transient");
+  });
+  it("quarantines malformed local payloads without blocking newer valid work", async () => {
+    const db = (await getDB())!;
+    await db.put("sync_metadata", { ownerId: "alice" }, "account");
+    await db.put("mutation_queue", {
+      id: "malformed",
+      ownerId: "alice",
+      payloadVersion: 1,
+      type: "add_xp",
+      payload: { xp: -1 },
+      createdAt: "2026-09-01T00:00:00.000Z",
+      status: "pending",
+      retryCount: 0,
+    });
+    await queueMutation("add_xp", { xp: 30 });
+
+    await syncQueue();
+
+    expect(mocks.write).toHaveBeenCalledOnce();
+    const remaining = await db.getAll("mutation_queue");
+    expect(remaining).toHaveLength(1);
+    expect(remaining[0]).toMatchObject({
+      id: "malformed",
+      status: "failed",
+      lastErrorCategory: "validation",
+      retryCount: 1,
+    });
+  });
+  it("stops retrying an authorization failure while preserving the operation", async () => {
+    const db = (await getDB())!;
+    await db.put("sync_metadata", { ownerId: "alice" }, "account");
+    await queueMutation("add_xp", { xp: 20 });
+    mocks.write.mockResolvedValue({ error: { code: "42501" } });
+
+    await syncQueue();
+    await syncQueue();
+
+    expect(mocks.write).toHaveBeenCalledOnce();
+    expect((await db.getAll("mutation_queue"))[0]).toMatchObject({
+      status: "failed",
+      lastErrorCategory: "authorization",
+      retryCount: 1,
+    });
+
+    mocks.write.mockResolvedValue({ error: null });
+    const summary = await retryFailedSyncOperations();
+    expect(summary).toEqual({ pending: 0, failed: 0, retryableFailed: 0 });
+    expect(mocks.write).toHaveBeenCalledTimes(2);
+    expect(await db.count("mutation_queue")).toBe(0);
+  });
+  it("syncs assessment XP and word memory with its dedicated payload", async () => {
+    const db = (await getDB())!;
+    await db.put("sync_metadata", { ownerId: "alice" }, "account");
+    await queueMutation("assessment_completed", {
+      xp: 25,
+      wordMemory: { apple: createInitialWordState("apple") },
+    });
+
+    await syncQueue();
+
+    expect(mocks.write).toHaveBeenCalledTimes(2);
+    expect(await db.count("mutation_queue")).toBe(0);
   });
   it("does not upload guest or other-account operations", async () => {
     await queueMutation("add_xp", { xp: 20 });
@@ -70,6 +142,23 @@ describe("account sync queue", () => {
     });
     await syncQueue();
     expect(await db.count("mutation_queue")).toBe(0);
+  });
+  it("pauses safely when the session expires before a queued write", async () => {
+    const db = (await getDB())!;
+    await db.put("sync_metadata", { ownerId: "alice" }, "account");
+    await queueMutation("add_xp", { xp: 30 });
+    mocks.session
+      .mockResolvedValueOnce({
+        data: { session: { user: { id: "alice" } } },
+        error: null,
+      })
+      .mockResolvedValueOnce({ data: { session: null }, error: null });
+
+    await syncQueue();
+
+    expect(mocks.write).not.toHaveBeenCalled();
+    expect(await db.count("mutation_queue")).toBe(1);
+    expect((await db.getAll("mutation_queue"))[0].status).toBe("pending");
   });
 });
 
@@ -110,5 +199,17 @@ describe("guest migration", () => {
     await migrateGuestToAccount("alice");
     expect((await db.get("learner_state", LEARNER_STATE_KEY))?.learnerProgress.xp).toBe(130);
     expect((await db.getAll("mutation_queue"))[0].payload).toEqual({ xp: 130 });
+  });
+  it("rejects an incomplete migration response without replacing local progress", async () => {
+    const db = (await getDB())!;
+    const local = structuredClone(INITIAL_LEARNER_STATE);
+    local.learnerProgress.xp = 45;
+    await db.put("learner_state", local, LEARNER_STATE_KEY);
+    mocks.rpc.mockResolvedValue({ error: null, data: { learnerProgress: { xp: 999 } } });
+
+    await expect(migrateGuestToAccount("alice")).rejects.toThrow("response was incomplete");
+
+    expect((await db.get("learner_state", LEARNER_STATE_KEY))?.learnerProgress.xp).toBe(45);
+    expect((await db.get("sync_metadata", "account"))?.migration).toBeDefined();
   });
 });

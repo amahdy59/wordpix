@@ -9,6 +9,7 @@ import { useI18n } from "../context/I18nContext";
 import { useLearner } from "../context/LearnerContext";
 import { AppShell } from "../shared/AppShell";
 import { TABBED_IDS } from "../store/reducer";
+import { NetworkStatusBanner } from "../shared/NetworkStatusBanner";
 
 // Synchronous core onboarding screens
 import { SplashWelcome } from "../onboarding/SplashWelcome";
@@ -165,7 +166,7 @@ function RouteErrorPanel({
 }) {
   const { t } = useI18n();
   return (
-    <main className="flex-1 flex items-center justify-center p-6">
+    <div className="flex-1 flex items-center justify-center p-6">
       <div
         role="alert"
         className="w-full max-w-md rounded-3xl border border-border bg-wp-card p-6 text-center shadow-wp-sm"
@@ -191,7 +192,7 @@ function RouteErrorPanel({
           </button>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
 
@@ -435,6 +436,9 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
             tabIndex={-1}
             className="min-h-dvh md:min-h-0 w-full max-w-5xl md:rounded-3xl md:overflow-hidden md:shadow-wp-md md:border md:border-border outline-none flex flex-col"
           >
+            <div className="w-full px-4 pt-4 md:px-8">
+              <NetworkStatusBanner />
+            </div>
             {animatedContent}
           </main>
         </div>
@@ -466,6 +470,9 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
             tabIndex={-1}
             className="w-full flex-1 flex flex-col outline-none overflow-hidden"
           >
+            <div className="w-full px-4 pt-4 lg:px-8">
+              <NetworkStatusBanner />
+            </div>
             {animatedContent}
           </main>
         </div>

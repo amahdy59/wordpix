@@ -4,11 +4,12 @@ import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { LessonHeader } from "./LessonHeader";
 import { HomeIndicator } from "./HomeIndicator";
 import { ExitConfirmModal } from "./ExitConfirmModal";
+import { MAX_LESSON_STAGE_COUNT } from "../lesson/lessonSequence";
 
 export type ExerciseMode = "teach" | "guided" | "retrieval" | "assessment";
 
 interface Props {
-  /** 0-based step index (1-5) */
+  /** 0-based lesson-stage index. */
   step: number;
   /** Title shown in LessonHeader */
   title: string;
@@ -27,17 +28,8 @@ interface Props {
   layout?: "standard" | "media";
 }
 
-const STEP_LABELS = [
-  "Scene Overview",
-  "Listen & Practice",
-  "Recall & Match",
-  "Complete Sentence",
-  "Build Sentence",
-  "Quick Quiz",
-];
-
 /** Number of steps in a lesson flow, derived so the two cannot drift apart. */
-const EXERCISE_STEP_COUNT = STEP_LABELS.length;
+const EXERCISE_STEP_COUNT = MAX_LESSON_STAGE_COUNT;
 
 export const ExerciseShell = memo(function ExerciseShell({
   step,

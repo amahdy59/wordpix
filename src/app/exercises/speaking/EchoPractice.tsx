@@ -58,7 +58,7 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
         onBack={() => dispatch({ type: "GO", to: "explore" })}
         onClose={() => dispatch({ type: "GO", to: "home" })}
       />
-      <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
+      <div className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col items-center text-center gap-3 shadow-wp-xs">
           <button
             type="button"
@@ -235,7 +235,7 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
           label={t("echoPractice.nextWord")}
           onClick={() => dispatch({ type: "GO", to: "explore" })}
         />
-      </main>
+      </div>
     </div>
   );
 });

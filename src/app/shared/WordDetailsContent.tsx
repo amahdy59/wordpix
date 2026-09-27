@@ -317,7 +317,7 @@ export function WordDetailsContent({
                   <button
                     type="button"
                     onClick={() => speak(baseEntry.wordFamily!.noun!)}
-                    className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start cursor-pointer"
+                    className="mt-1 flex min-h-11 items-center justify-between text-start text-xs font-bold text-foreground hover:text-primary cursor-pointer sm:text-sm"
                     aria-label={`Listen to noun: ${baseEntry.wordFamily.noun}`}
                   >
                     <span className="truncate">{baseEntry.wordFamily.noun}</span>
@@ -333,7 +333,7 @@ export function WordDetailsContent({
                   <button
                     type="button"
                     onClick={() => speak(baseEntry.wordFamily!.verb!)}
-                    className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start cursor-pointer"
+                    className="mt-1 flex min-h-11 items-center justify-between text-start text-xs font-bold text-foreground hover:text-primary cursor-pointer sm:text-sm"
                     aria-label={`Listen to verb: ${baseEntry.wordFamily.verb}`}
                   >
                     <span className="truncate">{baseEntry.wordFamily.verb}</span>
@@ -349,7 +349,7 @@ export function WordDetailsContent({
                   <button
                     type="button"
                     onClick={() => speak(baseEntry.wordFamily!.adj!)}
-                    className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start cursor-pointer"
+                    className="mt-1 flex min-h-11 items-center justify-between text-start text-xs font-bold text-foreground hover:text-primary cursor-pointer sm:text-sm"
                     aria-label={`Listen to adjective: ${baseEntry.wordFamily.adj}`}
                   >
                     <span className="truncate">{baseEntry.wordFamily.adj}</span>
@@ -365,7 +365,7 @@ export function WordDetailsContent({
                   <button
                     type="button"
                     onClick={() => speak(baseEntry.wordFamily!.adv!)}
-                    className="mt-1 flex items-center justify-between text-xs sm:text-sm font-bold text-foreground hover:text-primary min-h-[36px] text-start cursor-pointer"
+                    className="mt-1 flex min-h-11 items-center justify-between text-start text-xs font-bold text-foreground hover:text-primary cursor-pointer sm:text-sm"
                     aria-label={`Listen to adverb: ${baseEntry.wordFamily.adv}`}
                   >
                     <span className="truncate">{baseEntry.wordFamily.adv}</span>

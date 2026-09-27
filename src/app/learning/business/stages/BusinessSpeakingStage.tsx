@@ -192,12 +192,12 @@ export function BusinessSpeakingStage({
         <p className="text-xs font-black uppercase tracking-widest text-primary">
           {t("business.speaking.RolePlayBrief")}
         </p>
-        <h1
+        <h2
           id="speaking-task-title"
           className="mt-2 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
         >
           {unit.speakingTask.title}
-        </h1>
+        </h2>
 
         {/* Important Rule Banner */}
         <div className="mt-4 flex items-start gap-3 rounded-2xl bg-secondary border border-border p-4 text-foreground">

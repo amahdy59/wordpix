@@ -200,7 +200,7 @@ describe("Listen and repeat mobile focus", () => {
           dispatch={vi.fn()}
         />
       );
-      fireEvent.click(screen.getByRole("button", { name: "Continuous" }));
+      fireEvent.click(screen.getByRole("radio", { name: "Continuous" }));
       expect(audio.speak).toHaveBeenLastCalledWith(BEDROOM_VOCABULARY[0].label);
       act(() => {
         audio.ended?.();
@@ -211,10 +211,7 @@ describe("Listen and repeat mobile focus", () => {
         audio.ended?.();
         vi.advanceTimersByTime(5000);
       });
-      expect(screen.getByRole("button", { name: "Manual" })).toHaveAttribute(
-        "aria-pressed",
-        "true"
-      );
+      expect(screen.getByRole("radio", { name: "Manual" })).toHaveAttribute("aria-checked", "true");
       expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuenow", "2");
     } finally {
       vi.useRealTimers();
@@ -232,7 +229,7 @@ describe("Listen and repeat mobile focus", () => {
           dispatch={vi.fn()}
         />
       );
-      fireEvent.click(screen.getByRole("button", { name: "Continuous" }));
+      fireEvent.click(screen.getByRole("radio", { name: "Continuous" }));
       act(() => audio.ended?.());
       fireEvent.click(screen.getByRole("button", { name: "Word details" }));
       act(() => vi.advanceTimersByTime(5000));
@@ -255,7 +252,7 @@ describe("Listen and repeat mobile focus", () => {
     );
     // The Arabic gloss arrives via dynamic lexicon import — wait for it first.
     await waitFor(() => expect(document.querySelector('[lang="ar"]')).not.toBeNull());
-    fireEvent.click(screen.getAllByRole("button", { name: "Immersion" })[0]);
+    fireEvent.click(screen.getAllByRole("radio", { name: "Immersion" })[0]);
     expect(document.querySelector('[lang="ar"]')).toBeNull();
     fireEvent.click(screen.getByRole("button", { name: "Word details" }));
     expect(document.querySelector('[lang="ar"]')).toBeNull();
@@ -272,15 +269,12 @@ describe("Listen and repeat mobile focus", () => {
           dispatch={vi.fn()}
         />
       );
-      fireEvent.click(screen.getByRole("button", { name: "Continuous" }));
+      fireEvent.click(screen.getByRole("radio", { name: "Continuous" }));
       act(() => audio.ended?.());
       fireEvent.click(screen.getByRole("button", { name: /Stop audio pronunciation/ }));
       act(() => vi.advanceTimersByTime(5000));
       expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuenow", "1");
-      expect(screen.getByRole("button", { name: "Manual" })).toHaveAttribute(
-        "aria-pressed",
-        "true"
-      );
+      expect(screen.getByRole("radio", { name: "Manual" })).toHaveAttribute("aria-checked", "true");
     } finally {
       vi.useRealTimers();
     }

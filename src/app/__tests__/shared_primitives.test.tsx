@@ -154,6 +154,18 @@ describe("Shared UI Primitives", () => {
       );
       expect(chip).toHaveAttribute("aria-pressed", "true");
     });
+
+    it("uses radio semantics for a mutually exclusive filter", () => {
+      render(
+        <div role="radiogroup" aria-label="Level">
+          <FilterChip label="A1 Foundations" selected selectionMode="single" onToggle={vi.fn()} />
+        </div>
+      );
+
+      const chip = screen.getByRole("radio", { name: "A1 Foundations" });
+      expect(chip).toHaveAttribute("aria-checked", "true");
+      expect(chip).not.toHaveAttribute("aria-pressed");
+    });
   });
 
   describe("PageHeader", () => {

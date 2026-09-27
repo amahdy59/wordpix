@@ -31,14 +31,17 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Secret and dependency security checks
+        run: pnpm run check:security
+
       - name: Typecheck
         run: pnpm run typecheck
 
-      - name: Lint
-        run: pnpm run lint
-
       - name: Run Unit Tests
         run: pnpm run test
+
+      - name: Lint
+        run: pnpm run lint
 
       - name: Coverage report (report-only, no thresholds yet)
         run: pnpm run test:coverage
@@ -48,6 +51,9 @@ jobs:
 
       - name: Bundle analysis (report-only)
         run: pnpm run analyze
+
+      - name: Enforce bundle budgets
+        run: pnpm run check:bundle
 
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps chromium

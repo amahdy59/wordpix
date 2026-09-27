@@ -1,0 +1,36 @@
+name: Staging authentication and RLS verification
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  staging-auth:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 12.4.2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "pnpm"
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Verify staging session refresh and account isolation
+        run: pnpm run verify:staging:auth
+        env:
+          WORDPIX_STAGING_SUPABASE_URL: ${{ secrets.WORDPIX_STAGING_SUPABASE_URL }}
+          WORDPIX_STAGING_SUPABASE_ANON_KEY: ${{ secrets.WORDPIX_STAGING_SUPABASE_ANON_KEY }}
+          WORDPIX_STAGING_USER_A_EMAIL: ${{ secrets.WORDPIX_STAGING_USER_A_EMAIL }}
+          WORDPIX_STAGING_USER_A_PASSWORD: ${{ secrets.WORDPIX_STAGING_USER_A_PASSWORD }}
+          WORDPIX_STAGING_USER_B_EMAIL: ${{ secrets.WORDPIX_STAGING_USER_B_EMAIL }}
+          WORDPIX_STAGING_USER_B_PASSWORD: ${{ secrets.WORDPIX_STAGING_USER_B_PASSWORD }}

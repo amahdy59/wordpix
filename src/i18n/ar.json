@@ -5,6 +5,17 @@
     "skipToContent": "تخطَّ إلى المحتوى",
     "loading": "جارٍ التحميل…"
   },
+  "network": {
+    "offlineTitle": "أنت غير متصل بالإنترنت",
+    "offlineDescription": "تقدمك محفوظ على هذا الجهاز وستتم مزامنته بعد عودة الاتصال.",
+    "onlineTitle": "عاد الاتصال بالإنترنت",
+    "onlineDescription": "سيزامن وورد بيكس أي تقدم معلّق.",
+    "syncFailedTitle": "بعض التقدم يحتاج إلى متابعة",
+    "syncFailedDescription": "تعذر مزامنة {count} من التحديثات المحفوظة. لا يزال تقدمك محفوظًا على هذا الجهاز.",
+    "retrySync": "إعادة محاولة المزامنة",
+    "retrying": "جارٍ إعادة المحاولة…",
+    "retryFailed": "لا تزال المزامنة تحتاج إلى متابعة. سجّل الدخول مجددًا ثم أعد المحاولة."
+  },
   "nav": {
     "label": "التنقل الرئيسي",
     "home": "الرئيسية",
@@ -123,7 +134,7 @@
     "offlineReady": "غرفة النوم متاحة بدون اتصال",
     "offlineSaving": "جارٍ الحفظ للاستخدام دون اتصال: {cached} من {total}",
     "welcomeLearner": "{greeting} يا متعلّم!",
-    "levelGoal": "المستوى {level} · الهدف: {goal} دقيقة/يوم",
+    "levelGoal": "المستوى {level}",
     "dailyTarget": "هدف المفردات اليومي",
     "targetMet": "تم تحقيق الهدف!",
     "wordsProgress": "{current} / {total} كلمة",
@@ -152,7 +163,7 @@
     "specialCurricula": "مناهج التعلم المتخصصة",
     "pathBadge": "مسار إنجليزي موجّه",
     "title": "مسار تعلّمك",
-    "subtitle": "استكشف مسار كلمات الصور الكامل والمناهج المتخصصة بالسرعة التي تناسبك.",
+    "subtitle": "تابع مسارك الموجّه في الإنجليزية، ثم استكشف الدورات التخصصية الاختيارية.",
     "foundationProgress": "المسار التأسيسي",
     "foundationProgressAria": "تقدم المسار التأسيسي: أتقنت {mastered} من {total} كلمة",
     "browseLibrary": "تصفح مكتبة المفردات",
@@ -165,7 +176,7 @@
     "phaseSummary": "الخطوات {start}–{end} · إتقان كامل لـ {complete} من {total}",
     "wordsMastered": "أتقنت {mastered} من {total} كلمة",
     "wordProgress": "{familiar} مألوفة · {mastered} متقنة · {due} للمراجعة من {total}",
-    "pictureWorlds": "استكشف عوالم الصور",
+    "pictureWorlds": "تصفح مكتبة المفردات",
     "readingLevels": "تعلّم القراءة · المستويان 0–1",
     "readingTitle": "الأصوات والحروف والكلمات الأولى",
     "readingDescription": "اتبع مسار القراءة الأساسي من الاستماع الدقيق إلى الحروف والكلمات الأولى. يمكنك فتح كل درس، ويُحفظ تقدمك محليًا.",
@@ -175,8 +186,8 @@
     "startFoundation": "ابدأ الدرس الأول",
     "allFoundation": "استكشف جميع دروس تأسيس القراءة",
     "currentFoundation": "اعرض مرحلتي الحالية فقط",
-    "recommendedWorld": "عالم الصور المقترح",
-    "routeBadge": "مسار كلمات الصور الموجّه",
+    "recommendedWorld": "الوحدة الموجّهة المقترحة",
+    "routeBadge": "مسار الإنجليزية الموجّه الكامل",
     "routeToggle": "اعرض مسار التعلّم الكامل",
     "routeHint": "شاهد جميع وحدات الإنجليزية العامة بالترتيب، من الأساسيات إلى الموضوعات المتخصصة.",
     "routeLabel": "المسار الكامل",
@@ -296,6 +307,7 @@
     "inProgress": "قيد التقدم",
     "locked": "مغلق",
     "wordsCount": "كلمة",
+    "unitsCount": "وحدة موضوعية",
     "pathwayBadge": "مكتبة مواضيع اختيارية",
     "pageTitle": "تصفح الإنجليزية حسب الموضوع",
     "pageSubtitle": "استكشف مجموعات المفردات حسب الموضوع وبالسرعة التي تناسبك. يبقى مسارك الموجّه في قسم التعلّم.",
@@ -307,6 +319,7 @@
     "allLevels": "جميع المجموعات",
     "levelTab": "المجموعة {level}",
     "collectionNavigation": "تصفية مجموعات المفردات",
+    "masteryFilterAria": "تصفية حسب حالة الإتقان",
     "collectionBadge": "المجموعة {number}",
     "collectionProgress": "تقدم المجموعة {number}",
     "collectionProgressAria": "تقدم المجموعة {number}: {percent}%",
@@ -706,7 +719,8 @@
     "quitTitle": "هل تريد إنهاء جلسة الدرس؟",
     "quitDescription": "لن يتم حفظ تقدمك في المجموعة الحالية من الكلمات.",
     "keepPracticing": "مواصلة التدريب",
-    "leaveLesson": "مغادرة الدرس"
+    "leaveLesson": "مغادرة الدرس",
+    "stageProgress": "مرحلة الدرس {current} من {total}"
   },
   "updatePrompt": {
     "title": "تحديث متوفر",
@@ -738,8 +752,8 @@
   },
   "skillHub": {
     "title": "مركز تدريب المهارات",
-    "multimodalExercises": "{count} تدريباً متعدد الوسائط",
-    "subtitle": "حدد فئة تعليمية أدناه لبدء أي من التدريبات المتوفرة والبالغ عددها {count}.",
+    "multimodalExercises": "{count} تدريباً متاحاً في المستوى {level}",
+    "subtitle": "اختر مهارة للتدرب عليها. تعكس التدريبات المتاحة مستواك وإعدادات إمكانية الوصول.",
     "startExercise": "بدء التدريب",
     "categoriesAria": "فئات التدريبات",
     "listening": "الاستماع",
@@ -756,7 +770,7 @@
   "masteryReview": {
     "badge": "المراجعة اليومية للمفردات",
     "title": "حافظ على مفرداتك متجددة",
-    "subtitle": "راجع الكلمات في الوقت المناسب لتثبيتها في الذاكرة لفترة أطول.",
+    "subtitle": "لا توجد كلمات مستحقة الآن. اعرض جدولك أو تدرب على مهارة أدناه.",
     "dayStreak": "سلسلة يومية لمدة {count} يوم",
     "loadError": "تعذر تحميل بعض المفردات. أعد تحميل الصفحة للمحاولة مجدداً.",
     "wordsDue": "كلمات مستحقة",
@@ -782,7 +796,8 @@
     "viewAll": "عرض الكل ({count})",
     "skillDrillsTitle": "تدريبات المهارات",
     "skillDrillsDesc": "تدريبات إضافية على الاستماع والقراءة والتحدث والكتابة، منفصلة عن جدول مراجعتك.",
-    "browseDrills": "تصفح التدريبات"
+    "browseDrills": "تصفح التدريبات",
+    "viewSchedule": "عرض جدول المراجعة"
   },
   "exercise": {
     "questionOf": "السؤال {current} من {total}",

@@ -24,6 +24,15 @@ const STEP_META: Record<ExerciseStep, Omit<LessonStepLabel, "step" | "exercise">
   story: { icon: "📖", name: "Story & transfer", description: "Apply language in a new context" },
 };
 
+/**
+ * The upper bound used by navigation and persistence guards.
+ *
+ * The learner-facing sequence can be shorter (for example A1 omits the
+ * sentence-builder stage), so UI copy should use `getLessonSequence(...).length`
+ * rather than presenting this maximum as the learner's current total.
+ */
+export const MAX_LESSON_STAGE_COUNT = Object.keys(STEP_META).length;
+
 export function getLessonSequence(
   level: LearnerPreferences["englishLevel"],
   includeListening = true

@@ -24,7 +24,10 @@ test("conversation curriculum is discoverable and prevents stage skipping", asyn
     .click();
 
   await expect(page).toHaveURL(/#\/conversation\/unit-01$/);
-  await expect(page.getByRole("tab", { name: "Challenge" })).toBeDisabled();
+  // The URL updates before the large lesson chunk finishes loading. Wait for
+  // that route boundary explicitly so full-suite CPU contention cannot turn a
+  // correct loading state into a false failure.
+  await expect(page.getByRole("tab", { name: "Challenge" })).toBeDisabled({ timeout: 20_000 });
   const continueButton = page.getByRole("button", { name: "Continue to Reading" });
   await expect(continueButton).toBeDisabled();
   await page.getByRole("radio").first().click();

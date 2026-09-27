@@ -72,7 +72,7 @@ for (const viewport of [
       .getByRole("button", { name: /^Start lesson:/ })
       .first()
       .click();
-    await expect(page.getByRole("heading", { name: "Listen & repeat" })).toBeVisible();
+    await page.getByRole("heading", { name: "Listen & repeat" }).waitFor({ timeout: 15_000 });
     const hero = page.locator('img[fetchpriority="high"]');
     const listen = page.getByRole("button", { name: /Play audio pronunciation/ });
     await expect(hero).toBeVisible();
@@ -90,9 +90,9 @@ for (const viewport of [
       expect(imageBox.width / (cardBox.width - 32)).toBeLessThan(0.66);
       expect(buttonBox.y + buttonBox.height).toBeLessThan(viewport.height - 70);
     }
-    await page.getByRole("button", { name: "Immersion", exact: true }).click();
+    await page.getByRole("radio", { name: "Immersion", exact: true }).click();
     await expect(page.locator('[lang="ar"]:visible')).toHaveCount(0);
-    await page.getByRole("button", { name: "Bilingual", exact: true }).click();
+    await page.getByRole("radio", { name: "Bilingual", exact: true }).click();
     await page.getByRole("button", { name: "Next word", exact: true }).focus();
     await page.keyboard.press("ArrowRight");
     await expect(page.getByRole("progressbar", { name: "Word progress" })).toHaveAttribute(

@@ -302,7 +302,12 @@ interface LearnerContextType {
 const LearnerContext = createContext<LearnerContextType | undefined>(undefined);
 
 type MutationType =
-  "update_preferences" | "update_accessibility" | "session_completed" | "add_xp" | "reset";
+  | "update_preferences"
+  | "update_accessibility"
+  | "session_completed"
+  | "assessment_completed"
+  | "add_xp"
+  | "reset";
 
 let testStateCache: LearnerStateSchema | null = null;
 
@@ -610,7 +615,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
             },
             wordMemory: updatedMemory,
           },
-          mutationType: "session_completed", // Reusing this mutation type for sync
+          mutationType: "assessment_completed",
           mutationPayload: { wordMemory: updatedMemory, xp: nextXp },
         };
       });

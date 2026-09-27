@@ -166,20 +166,17 @@ export function PronunciationLessonCard({
           }}
           aria-label={t("pronunciation.viewLessonDetails", { lesson: lesson.number })}
           title={t("pronunciation.detailsTooltip")}
-          className="flex size-10 items-center justify-center rounded-xl text-muted-foreground transition-colors hover:bg-muted hover:text-foreground active:scale-95 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="flex size-12 items-center justify-center rounded-xl text-muted-foreground transition-colors hover:bg-muted hover:text-foreground active:scale-95 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <Info className="size-4" aria-hidden />
         </button>
 
-        <button
-          type="button"
-          tabIndex={-1}
+        <span
           aria-hidden="true"
-          onClick={() => onStartLesson(lesson.number)}
-          className="hidden sm:flex size-8 items-center justify-center text-muted-foreground/60 transition-colors group-hover:text-primary"
+          className="hidden size-11 items-center justify-center text-muted-foreground/60 transition-colors group-hover:text-primary sm:flex"
         >
           <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
-        </button>
+        </span>
       </div>
     </li>
   );

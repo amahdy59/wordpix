@@ -23,6 +23,8 @@ export function PlaybackSpeedControl({
 }: Props) {
   return (
     <fieldset
+      role="radiogroup"
+      aria-label={label}
       className={`flex min-h-11 items-center gap-1 rounded-xl border border-border bg-card p-1 ${className}`}
       disabled={disabled}
     >
@@ -33,7 +35,8 @@ export function PlaybackSpeedControl({
           <button
             key={option.value}
             type="button"
-            aria-pressed={selected}
+            role="radio"
+            aria-checked={selected}
             aria-label={option.label}
             onClick={() => onChange(option.value)}
             disabled={disabled}

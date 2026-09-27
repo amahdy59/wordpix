@@ -147,7 +147,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
 
       {/* ── Right / Mobile: Stats + Group Words ───────────────────────────── */}
       <div className="flex-1 flex flex-col justify-between min-h-dvh lg:min-h-0">
-        <main className="flex-1 flex flex-col items-center justify-center w-full max-w-md mx-auto px-6 gap-6 py-8 overflow-y-auto">
+        <div className="flex-1 flex flex-col items-center justify-center w-full max-w-md mx-auto px-6 gap-6 py-8 overflow-y-auto">
           {/* Mobile header */}
           <div className="lg:hidden flex flex-col items-center gap-3 text-center">
             <div className="size-20 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center">
@@ -303,7 +303,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
               ))}
             </div>
           </div>
-        </main>
+        </div>
 
         <footer className="w-full max-w-md mx-auto px-6 pb-8 pt-4 flex flex-col gap-2.5 shrink-0 border-t border-border/60 bg-secondary/50">
           <PrimaryButton

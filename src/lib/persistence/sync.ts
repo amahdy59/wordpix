@@ -1,5 +1,17 @@
-import { getDB, LEARNER_STATE_KEY, type SyncOperation } from "./db";
+import {
+  getDB,
+  getSyncQueueSummary,
+  LEARNER_STATE_KEY,
+  notifySyncQueueChanged,
+  type SyncErrorCategory,
+  type SyncOperation,
+} from "./db";
 import { supabase } from "../supabase/client";
+import {
+  SyncPayloadValidationError,
+  validateMigrationResponse,
+  validateSyncOperation,
+} from "./syncValidation";
 
 // Serialize timer, online and sign-in requests in this tab.
 let activeSync: Promise<void> | undefined;
@@ -26,19 +38,97 @@ async function flushQueue() {
   const pendingOps = (await db.getAll("mutation_queue"))
     .filter((op) => op.ownerId === session.user.id && op.status !== "failed")
     .sort((a, b) => a.createdAt.localeCompare(b.createdAt));
-  for (const op of pendingOps) {
+  for (const queuedOperation of pendingOps) {
+    let op: SyncOperation;
+    try {
+      op = validateSyncOperation(queuedOperation);
+    } catch (validationError) {
+      await db.put("mutation_queue", {
+        ...queuedOperation,
+        status: "failed",
+        retryCount: queuedOperation.retryCount + 1,
+        lastSyncAttemptAt: new Date().toISOString(),
+        lastErrorCategory: "validation",
+      });
+      notifySyncQueueChanged();
+      continue;
+    }
     const { data: current } = await supabase.auth.getSession();
     if (current.session?.user.id !== session.user.id) return;
     // Each IDB write completes before network I/O. Also retries interrupted 'syncing' entries.
-    await db.put("mutation_queue", { ...op, status: "syncing" });
+    const lastSyncAttemptAt = new Date().toISOString();
+    await db.put("mutation_queue", {
+      ...op,
+      status: "syncing",
+      lastSyncAttemptAt,
+      lastErrorCategory: undefined,
+    });
+    notifySyncQueueChanged();
     try {
       await processOperation(op, session.user.id);
       await db.delete("mutation_queue", op.id);
+      notifySyncQueueChanged();
     } catch (error) {
-      await db.put("mutation_queue", { ...op, status: "pending", retryCount: op.retryCount + 1 });
+      const category = classifySyncError(error);
+      await db.put("mutation_queue", {
+        ...op,
+        status: category === "validation" || category === "authorization" ? "failed" : "pending",
+        retryCount: op.retryCount + 1,
+        lastSyncAttemptAt,
+        lastErrorCategory: category,
+      });
+      notifySyncQueueChanged();
+      if (category === "validation") continue;
+      if (category === "auth_required" || category === "authorization") return;
       throw error; // Preserve ordering: a failed older snapshot must not overwrite a newer one later.
     }
   }
+}
+
+export async function retryFailedSyncOperations() {
+  const db = await getDB();
+  if (!db) throw new Error("Local storage is unavailable. Your progress remains on this device.");
+  const {
+    data: { session },
+    error,
+  } = await supabase.auth.getSession();
+  if (error) throw error;
+  if (!session) throw new Error("Sign in again before retrying progress sync.");
+  const metadata = await db.get("sync_metadata", "account");
+  if (metadata?.ownerId !== session.user.id || metadata.migration) {
+    throw new Error("Finish account migration before retrying progress sync.");
+  }
+  const operations = await db.getAll("mutation_queue");
+  for (const operation of operations) {
+    if (
+      operation.ownerId === session.user.id &&
+      operation.status === "failed" &&
+      operation.lastErrorCategory === "authorization"
+    ) {
+      await db.put("mutation_queue", {
+        ...operation,
+        status: "pending",
+        lastErrorCategory: undefined,
+      });
+    }
+  }
+  notifySyncQueueChanged();
+  await syncQueue();
+  return getSyncQueueSummary();
+}
+
+export function classifySyncError(error: unknown): SyncErrorCategory {
+  if (error instanceof SyncPayloadValidationError) return "validation";
+  if (!error || typeof error !== "object") return "transient";
+  const candidate = error as { code?: unknown; status?: unknown };
+  const code = typeof candidate.code === "string" ? candidate.code : "";
+  const status = typeof candidate.status === "number" ? candidate.status : undefined;
+  if (status === 401 || code === "PGRST301") return "auth_required";
+  if (status === 403 || code === "42501") return "authorization";
+  if (status === 400 || status === 422 || code === "22P02" || code === "23514") {
+    return "validation";
+  }
+  return "transient";
 }
 
 /**
@@ -99,6 +189,28 @@ async function processOperation(op: SyncOperation, userId: string) {
         user_id: userId,
         word_id: wordId, // Composite primary key (user_id, word_id)
         state: state,
+        updated_at: nowIso,
+      }));
+      if (wordMemoryEntries.length > 0) {
+        const { error: wordError } = await supabase
+          .from("word_memory")
+          .upsert(wordMemoryEntries, { onConflict: "user_id,word_id" });
+        if (wordError) throw wordError;
+      }
+      break;
+    }
+    case "assessment_completed": {
+      const { error: profileError } = await supabase
+        .from("profiles")
+        .update({ xp: op.payload.xp, updated_at: new Date().toISOString() })
+        .eq("id", userId);
+      if (profileError) throw profileError;
+
+      const nowIso = new Date().toISOString();
+      const wordMemoryEntries = Object.entries(op.payload.wordMemory).map(([wordId, state]) => ({
+        user_id: userId,
+        word_id: wordId,
+        state,
         updated_at: nowIso,
       }));
       if (wordMemoryEntries.length > 0) {
@@ -217,31 +329,8 @@ export async function migrateGuestToAccount(userId: string) {
     throw new Error(
       "Signed in, but progress sync could not finish. Your local progress is safe. Retry sync after the connection and database setup are ready."
     );
-  // Validate the server response before replacing any local data.
-  if (
-    !data ||
-    typeof data !== "object" ||
-    !data.learnerProgress ||
-    !data.wordMemory ||
-    typeof data.wordMemory !== "object" ||
-    Array.isArray(data.wordMemory) ||
-    ![
-      data.learnerProgress.xp,
-      data.learnerProgress.sessionsCompleted,
-      data.learnerProgress.streak,
-      data.learnerProgress.daysActive,
-    ].every((value) => typeof value === "number" && Number.isFinite(value) && value >= 0) ||
-    !Array.isArray(data.learnerProgress.completedSessionIds) ||
-    !data.learnerProgress.completedSessionIds.every((id: unknown) => typeof id === "string") ||
-    !Array.isArray(data.sessionHistory) ||
-    !data.sessionHistory.every(
-      (record: { sessionId?: unknown; completedAt?: unknown } | null) =>
-        record && typeof record.sessionId === "string" && typeof record.completedAt === "string"
-    )
-  ) {
-    throw new Error("The sync response was incomplete. Your local progress is safe.");
-  }
-  const remote = data as typeof snapshot.state;
+  // Treat the database boundary as untrusted before replacing any local data.
+  const remote = validateMigrationResponse(data);
   const finish = db.transaction(["learner_state", "sync_metadata", "mutation_queue"], "readwrite");
   const latestMetadata = await finish.objectStore("sync_metadata").get("account");
   if (latestMetadata?.migration?.id !== snapshot.id) {
@@ -310,4 +399,5 @@ export async function migrateGuestToAccount(userId: string) {
   }
   await finish.objectStore("sync_metadata").put({ ownerId: userId }, "account");
   await finish.done;
+  notifySyncQueueChanged();
 }

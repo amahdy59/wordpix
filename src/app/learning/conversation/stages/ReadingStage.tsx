@@ -206,12 +206,12 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
           <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
             {t("conversation.level", { level: unit.level })} · {unit.topic}
           </span>
-          <h1
+          <h2
             id="reading-title"
             className="mt-1.5 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
           >
             {unit.reading.title}
-          </h1>
+          </h2>
         </header>
 
         {/* Paragraphs with bold target terms */}

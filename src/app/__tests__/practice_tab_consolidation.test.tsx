@@ -99,15 +99,17 @@ describe("Practice Tab & Review Consolidation", () => {
     const dispatch = vi.fn();
     render(<SkillExerciseHub dispatch={dispatch} />);
 
+    expect(screen.getByRole("heading", { level: 1, name: "Practice" })).toBeInTheDocument();
+    expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
     expect(
       screen.getByRole("heading", { level: 2, name: /Skill Exercise Hub/i })
     ).toBeInTheDocument();
 
     // Category filter chips are present
-    expect(screen.getByRole("button", { name: /Listening/i })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Reading/i })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Speaking/i })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Writing/i })).toBeInTheDocument();
+    expect(screen.getByRole("radio", { name: /Listening/i })).toBeInTheDocument();
+    expect(screen.getByRole("radio", { name: /Reading/i })).toBeInTheDocument();
+    expect(screen.getByRole("radio", { name: /Speaking/i })).toBeInTheDocument();
+    expect(screen.getByRole("radio", { name: /Writing/i })).toBeInTheDocument();
 
     // Can start a skill exercise
     const startExerciseButtons = screen.getAllByRole("button", { name: /Start Exercise/i });

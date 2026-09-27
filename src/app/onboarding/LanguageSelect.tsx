@@ -137,7 +137,7 @@ export function LanguageSelect({ dispatch }: Props) {
         </header>
 
         {/* Main Content */}
-        <main className="flex-1 flex flex-col items-start w-full max-w-md mx-auto md:mx-0 gap-6 z-10">
+        <div className="flex-1 flex flex-col items-start w-full max-w-md mx-auto md:mx-0 gap-6 z-10">
           <div>
             <h1 className="font-sans font-black text-foreground text-2xl md:text-3xl leading-tight">
               {t("onboarding.chooseLevel")}
@@ -293,7 +293,7 @@ export function LanguageSelect({ dispatch }: Props) {
               ))}
             </div>
           </div>
-        </main>
+        </div>
 
         {/* Footer CTA */}
         <footer className="w-full max-w-md mx-auto md:mx-0 pt-4 shrink-0 z-10">

@@ -176,7 +176,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
   };
 
   return (
-    <main
+    <div
       className="min-h-dvh w-full overflow-y-auto bg-background pb-24"
       aria-labelledby="hadith-title"
     >
@@ -314,6 +314,6 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
           {liveAnnouncement}
         </div>
       </div>
-    </main>
+    </div>
   );
 }

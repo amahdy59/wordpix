@@ -98,13 +98,13 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
         <p className="text-xs font-black uppercase tracking-widest text-primary">
           {t("business.usage.linguisticFramework")}
         </p>
-        <h1
+        <h2
           id="usage-focus-title"
           className="mt-2 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
         >
           {unit.usageFocus.title.replace(/^4\.\s*Usage Focus\s*[-—]?\s*/i, "") ||
             t("business.stages.usage")}
-        </h1>
+        </h2>
         {unit.usageFocus.description && (
           <p className="mt-3 text-base font-medium text-muted-foreground leading-relaxed whitespace-pre-line">
             {unit.usageFocus.description}

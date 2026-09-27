@@ -108,7 +108,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
 
   if (!unit) {
     return (
-      <main className="flex h-full min-h-0 flex-col items-center justify-center p-6 text-center">
+      <div className="flex h-full min-h-0 flex-col items-center justify-center p-6 text-center">
         <h1 className="text-xl font-black text-foreground">{t("business.unitNotFound")}</h1>
         <button
           type="button"
@@ -117,7 +117,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
         >
           {t("business.returnToHub")}
         </button>
-      </main>
+      </div>
     );
   }
 
@@ -144,7 +144,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
   const nextUnit = BUSINESS_UNITS.find((u) => u.unitNumber === unit.unitNumber + 1);
 
   return (
-    <main
+    <div
       className="flex h-full min-h-0 flex-col bg-background overflow-hidden"
       aria-labelledby="lesson-header-title"
     >
@@ -181,12 +181,12 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
             <span className="shrink-0 rounded-lg bg-primary/15 px-2 py-0.5 text-xs font-black text-primary uppercase">
               {unit.level}
             </span>
-            <span
+            <h1
               id="lesson-header-title"
               className="truncate text-sm sm:text-base font-black text-foreground"
             >
               {t("business.unitColonTitle", { number: unit.unitNumber, title: unit.title })}
-            </span>
+            </h1>
           </div>
         </div>
 
@@ -305,6 +305,6 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
           )}
         </div>
       </div>
-    </main>
+    </div>
   );
 }

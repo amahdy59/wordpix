@@ -52,12 +52,12 @@ export function BusinessReviewStage({
           <CheckCircle2 className="size-4" aria-hidden />{" "}
           {t("business.review.lessonCompletedBadge")}
         </span>
-        <h1
+        <h2
           id="congrats-title"
           className="mt-2 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
         >
           {t("business.review.congratsTitle", { title: unit.title })}
-        </h1>
+        </h2>
         <p className="mt-2 text-sm sm:text-base font-medium text-muted-foreground">
           {t("business.review.congratsBody", { count: unit.languageBank.length })}
         </p>

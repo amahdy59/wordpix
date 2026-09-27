@@ -35,8 +35,10 @@ function parseTokens(css: string, blockSelector: string): Record<string, string>
 
 const lightTokens = parseTokens(themeCss, ":root {");
 const darkTokens = parseTokens(themeCss, ".dark {");
+const highContrastTokens = parseTokens(themeCss, "@media (prefers-contrast: more)");
 // The dark block only overrides a subset; unlisted tokens inherit from :root.
 const darkResolved = { ...lightTokens, ...darkTokens };
+const highContrastResolved = { ...lightTokens, ...highContrastTokens };
 
 /**
  * Text colour pairings the UI actually renders, as
@@ -66,6 +68,7 @@ const FILL_PAIRS: [string, string][] = [
 describe.each([
   ["light", lightTokens],
   ["dark", darkResolved],
+  ["high contrast", highContrastResolved],
 ])("Colour contrast in %s mode (WCAG 2.2 AAA, 7:1)", (_mode, tokens) => {
   it.each(TEXT_PAIRS)("%s meets 7:1", (_label, fgToken, bgToken) => {
     const fg = tokens[fgToken];
@@ -96,6 +99,20 @@ describe.each([
   });
 });
 
+describe("Enhanced-contrast component states", () => {
+  it("uses the live semantic text tokens in prefers-contrast mode", () => {
+    expect(highContrastTokens["--wp-text"]).toBe("#ffffff");
+    expect(highContrastTokens["--wp-text-secondary"]).toBe("#f1f5f9");
+    expect(highContrastTokens["--wp-foreground"]).toBeUndefined();
+    expect(highContrastTokens["--wp-muted-foreground"]).toBeUndefined();
+  });
+
+  it("does not lower the opacity of selected filter counts", () => {
+    expect(read("app/shared/FilterChip.tsx")).not.toContain("bg-primary-foreground/20");
+    expect(read("app/shared/CurriculumFilterTabs.tsx")).not.toContain("opacity-80");
+  });
+});
+
 describe("Accent fills use their paired foreground token", () => {
   const componentSources = [
     "app/core/HomeDashboard.tsx",
@@ -109,7 +126,10 @@ describe("Accent fills use their paired foreground token", () => {
     const source = read(path);
     const offenders = source
       .split("\n")
-      .filter((line) => /bg-wp-(green|rose|amber|blue|teal)(?!-)/.test(line) && /\btext-white\b/.test(line));
+      .filter(
+        (line) =>
+          /bg-wp-(green|rose|amber|blue|teal)(?!-)/.test(line) && /\btext-white\b/.test(line)
+      );
     expect(offenders).toEqual([]);
   });
 });
@@ -144,6 +164,13 @@ describe("Focus visibility (WCAG 2.4.7)", () => {
     if (suppressions.length === 1) {
       expect(themeCss).toContain("*:focus:not(:focus-visible)");
     }
+  });
+
+  it("preserves selected and current states in forced-colors mode", () => {
+    const globalsCss = read("styles/globals.css");
+    expect(globalsCss).toContain('[aria-pressed="true"]');
+    expect(globalsCss).toContain('[aria-current]:not([aria-current="false"])');
+    expect(globalsCss).toContain("outline: 2px solid SelectedItem");
   });
 });
 

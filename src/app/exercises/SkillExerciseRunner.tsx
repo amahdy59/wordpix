@@ -198,7 +198,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
           onBack={() => dispatch({ type: "GO", to: "skill-hub" })}
           onClose={() => dispatch({ type: "GO", to: "home" })}
         />
-        <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5 justify-center">
+        <div className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5 justify-center">
           <div
             role="status"
             className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col items-center gap-2 text-center"
@@ -224,7 +224,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
             label={t("skillRunner.backToHub")}
             onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
           />
-        </main>
+        </div>
       </div>
     );
   }
@@ -256,7 +256,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
         onClose={() => dispatch({ type: "GO", to: "home" })}
       />
 
-      <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
+      <div className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <p aria-live="polite" aria-atomic="true" className="sr-only">
           {announcement}
         </p>
@@ -368,7 +368,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
             {t("skillRunner.optionKeyHint")}
           </p>
         )}
-      </main>
+      </div>
     </div>
   );
 });

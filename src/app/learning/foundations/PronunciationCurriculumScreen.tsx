@@ -78,7 +78,7 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
   );
 
   return (
-    <main
+    <div
       className="h-full min-h-0 overflow-y-auto bg-background pb-24 overscroll-y-contain"
       aria-labelledby="pronunciation-curriculum-title"
     >
@@ -285,6 +285,6 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
           })
         }
       />
-    </main>
+    </div>
   );
 }

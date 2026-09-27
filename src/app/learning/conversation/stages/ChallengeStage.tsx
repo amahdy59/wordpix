@@ -77,12 +77,12 @@ export function ChallengeStage({
         <span className="text-xs font-black uppercase tracking-wider text-primary">
           {t("conversation.realWorldChallenge")}
         </span>
-        <h1
+        <h2
           id="challenge-heading"
           className="mt-2 text-2xl sm:text-3xl font-black text-foreground tracking-tight"
         >
           {unit.speakingChallenge.title}
-        </h1>
+        </h2>
         <p className="mt-3 text-base sm:text-lg font-medium text-foreground leading-relaxed">
           {unit.speakingChallenge.scenario}
         </p>

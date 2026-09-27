@@ -15,11 +15,7 @@ export default defineConfig({
     hookTimeout: 180000,
     teardownTimeout: 180000,
     pool: "threads",
-    poolOptions: {
-      threads: {
-        singleThread: true,
-      },
-    },
+    singleThread: true,
     exclude: [
       ...configDefaults.exclude,
       "tests/**",

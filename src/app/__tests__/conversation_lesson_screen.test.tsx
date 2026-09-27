@@ -7,7 +7,7 @@ import { I18nProvider } from "../../i18n";
 describe("ConversationLessonScreen Component", () => {
   it("renders Unit 1 with all 7 stages in the stepper", () => {
     const dispatch = vi.fn();
-    render(
+    const { container } = render(
       <I18nProvider>
         <LearnerProvider>
           <ConversationLessonScreen unitId="unit-01" dispatch={dispatch} />
@@ -15,11 +15,13 @@ describe("ConversationLessonScreen Component", () => {
       </I18nProvider>
     );
 
-    expect(
-      screen.getByRole("main", {
+    expect(container.querySelector("main")).toBeNull();
+    expect(screen.getAllByRole("heading", { level: 1 })).toEqual([
+      screen.getByRole("heading", {
+        level: 1,
         name: "Unit 1: Could You Live Without Your Smartphone for a Month?",
-      })
-    ).toBeDefined();
+      }),
+    ]);
     expect(screen.getByRole("tab", { name: /warm-up/i })).toBeDefined();
     expect(screen.getByRole("tab", { name: /reading/i })).toBeDefined();
     expect(screen.getByRole("tab", { name: /language bank/i })).toBeDefined();
@@ -109,10 +111,10 @@ describe("ConversationLessonScreen Component", () => {
     expect(screen.getAllByRole("button", { name: /listen to paragraph/i }).length).toBeGreaterThan(
       1
     );
-    const slow = screen.getByRole("button", { name: "Slow" });
-    const normal = screen.getByRole("button", { name: "Normal" });
-    expect(slow).toHaveAttribute("aria-pressed", "true");
+    const slow = screen.getByRole("radio", { name: "Slow" });
+    const normal = screen.getByRole("radio", { name: "Normal" });
+    expect(slow).toHaveAttribute("aria-checked", "true");
     fireEvent.click(normal);
-    expect(normal).toHaveAttribute("aria-pressed", "true");
+    expect(normal).toHaveAttribute("aria-checked", "true");
   });
 });

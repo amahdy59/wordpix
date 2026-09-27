@@ -261,7 +261,8 @@ body {
 
   [aria-selected="true"],
   [aria-checked="true"],
-  [aria-current="true"] {
+  [aria-pressed="true"],
+  [aria-current]:not([aria-current="false"]) {
     outline: 2px solid SelectedItem;
     outline-offset: 1px;
   }

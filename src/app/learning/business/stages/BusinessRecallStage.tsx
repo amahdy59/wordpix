@@ -99,7 +99,7 @@ export function BusinessRecallStage({ unit, onNext, onRecordSrsConfidence }: Pro
       >
         <div>
           <div className="flex items-center gap-2">
-            <h1
+            <h2
               id="recall-header-heading"
               className="text-xl sm:text-2xl font-black text-foreground"
             >
@@ -107,7 +107,7 @@ export function BusinessRecallStage({ unit, onNext, onRecordSrsConfidence }: Pro
                 number: recallConfig.sourceUnitNumber,
                 title: recallConfig.sourceUnitTitle,
               })}
-            </h1>
+            </h2>
           </div>
           <p className="mt-1 text-sm text-muted-foreground font-medium">
             {t("business.recall.estimatedNote", { minutes: recallConfig.estimatedMinutes || 3 })}

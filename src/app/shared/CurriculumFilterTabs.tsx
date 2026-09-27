@@ -79,7 +79,7 @@ export function CurriculumFilterTabs<T extends string>({
           >
             {option.label}
             {option.count !== undefined && (
-              <span className="ms-1.5 opacity-80" aria-hidden>
+              <span className="ms-1.5" aria-hidden>
                 {option.count}
               </span>
             )}

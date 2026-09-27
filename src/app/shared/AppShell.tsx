@@ -3,6 +3,7 @@ import type { TabId, Action } from "../types";
 import { SidebarNav } from "./SidebarNav";
 import { BottomTabBar } from "./BottomTabBar";
 import { MobileHeader } from "./MobileHeader";
+import { NetworkStatusBanner } from "./NetworkStatusBanner";
 
 interface Props {
   activeTab: TabId;
@@ -30,11 +31,14 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
         {/* Scrollable content area */}
         <main
           id="main-content"
-          className="flex-1 overflow-y-auto pb-[calc(env(safe-area-inset-bottom)+96px)] lg:pb-6 pt-6 -webkit-overflow-scrolling-touch"
+          className="flex-1 overflow-y-auto pb-[calc(env(safe-area-inset-bottom)+96px)] scroll-pb-[calc(env(safe-area-inset-bottom)+96px)] lg:pb-6 lg:scroll-pb-6 pt-6 -webkit-overflow-scrolling-touch"
           tabIndex={-1}
         >
           {/* Centered reading column for all pages */}
-          <div className="mx-auto max-w-5xl w-full px-4 lg:px-8">{children}</div>
+          <div className="mx-auto max-w-5xl w-full px-4 lg:px-8">
+            <NetworkStatusBanner />
+            {children}
+          </div>
         </main>
       </div>
 

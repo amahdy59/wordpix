@@ -623,7 +623,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                       .join(". ");
                     speak(fullDialogue);
                   }}
-                  className="flex items-center gap-1.5 text-xs font-sans font-bold text-primary bg-secondary px-3 py-1.5 rounded-xl border border-primary/20 hover:bg-primary/10 cursor-pointer min-h-[36px]"
+                  className="flex min-h-11 items-center gap-1.5 rounded-xl border border-primary/20 bg-secondary px-3 py-1.5 font-sans text-xs font-bold text-primary hover:bg-primary/10 cursor-pointer"
                 >
                   <Play className="size-3.5" />
                   <span>{t("story.playDialogue")}</span>
@@ -657,7 +657,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                         onClick={() => speak(line.text)}
                         aria-label={"Play line by " + line.speaker}
                         className={
-                          "size-7 rounded-lg flex items-center justify-center shrink-0 transition-opacity hover:opacity-80 cursor-pointer " +
+                          "size-11 rounded-lg flex items-center justify-center shrink-0 transition-opacity hover:opacity-80 cursor-pointer " +
                           (line.speaker === "Alex"
                             ? "bg-wp-card text-primary border border-border"
                             : "bg-white/20 text-white")
@@ -858,7 +858,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                         current: qIndex + 1,
                         total: storyBundle.quiz.length,
                       })}
-                      className={`flex-1 py-1.5 px-2 rounded-xl text-xs font-sans font-bold flex items-center justify-center gap-1.5 border transition-all cursor-pointer min-h-[36px] ${
+                      className={`flex min-h-11 flex-1 items-center justify-center gap-1.5 rounded-xl border px-2 py-1.5 font-sans text-xs font-bold transition-all cursor-pointer ${
                         isCurrent
                           ? "border-primary bg-primary text-primary-foreground shadow-sm"
                           : isAnswered

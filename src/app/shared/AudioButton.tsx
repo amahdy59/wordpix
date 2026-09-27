@@ -11,7 +11,7 @@ interface Props {
 }
 
 const SIZE_CLASSES = {
-  sm: "size-10 rounded-lg",
+  sm: "size-11 rounded-lg",
   md: "size-14 rounded-xl",
   lg: "size-20 rounded-2xl",
 };

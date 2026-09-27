@@ -1,5 +1,5 @@
 import { describe, expect, it, beforeEach } from "vitest";
-import { render, screen, act } from "@testing-library/react";
+import { render, screen, act, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import {
   I18nProvider,
@@ -10,6 +10,8 @@ import {
 } from "../context/I18nContext";
 import en from "../../i18n/en.json";
 import ar from "../../i18n/ar.json";
+
+const LAZY_LOCALE_TIMEOUT_MS = 10_000;
 
 /** Flattens a nested bundle to dotted keys for parity comparison. */
 function flatten(node: unknown, prefix = ""): string[] {
@@ -110,7 +112,9 @@ describe("I18nProvider", () => {
     expect(screen.getByTestId("home")).toHaveTextContent("Home");
 
     await user.click(screen.getByRole("button", { name: "to arabic" }));
-    expect(screen.getByTestId("home")).toHaveTextContent("الرئيسية");
+    await waitFor(() => expect(screen.getByTestId("home")).toHaveTextContent("الرئيسية"), {
+      timeout: LAZY_LOCALE_TIMEOUT_MS,
+    });
   });
 
   it("switches document direction and language for RTL", async () => {
@@ -142,7 +146,7 @@ describe("I18nProvider", () => {
     expect(localStorage.getItem("wordpix:interface-lang")).toBe("ar");
   });
 
-  it("restores a persisted language on mount", () => {
+  it("restores a persisted language on mount", async () => {
     localStorage.setItem("wordpix:interface-lang", "ar");
     render(
       <I18nProvider>
@@ -150,6 +154,9 @@ describe("I18nProvider", () => {
       </I18nProvider>
     );
     expect(screen.getByTestId("lang")).toHaveTextContent("ar");
+    await waitFor(() => expect(screen.getByTestId("home")).toHaveTextContent("الرئيسية"), {
+      timeout: LAZY_LOCALE_TIMEOUT_MS,
+    });
   });
 
   it("ignores a corrupted persisted language", () => {
@@ -186,8 +193,8 @@ describe("Navigation labels come from the bundle", () => {
     expect(TABS.map((tab) => tab.labelKey)).toEqual([
       "nav.home",
       "nav.learn",
-      "nav.library",
       "nav.practice",
+      "nav.library",
       "nav.profile",
     ]);
 

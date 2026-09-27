@@ -13,8 +13,8 @@ interface Props {
 export const TABS: { id: TabId; labelKey: string; icon: React.ElementType }[] = [
   { id: "home", labelKey: "nav.home", icon: Home },
   { id: "learn", labelKey: "nav.learn", icon: Route },
-  { id: "library", labelKey: "nav.library", icon: Library },
   { id: "practice", labelKey: "nav.practice", icon: Dumbbell },
+  { id: "library", labelKey: "nav.library", icon: Library },
   { id: "profile", labelKey: "nav.profile", icon: UserCircle },
 ];
 

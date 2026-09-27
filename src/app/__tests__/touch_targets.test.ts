@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join, relative, resolve } from "node:path";
+import ts from "typescript";
 
 const appDir = resolve(__dirname, "..");
 
@@ -33,13 +34,14 @@ function classNameStrings(source: string): string[] {
  * through any of the supported forms.
  */
 function declaresAdequateHeight(cls: string): boolean {
-  if (/\bmin-h-\[(4[4-9]|[5-9]\d|\d{3,})px\]/.test(cls)) return true;
-  if (/\bh-\[(4[4-9]|[5-9]\d|\d{3,})px\]/.test(cls)) return true;
+  const baseClasses = cls.replace(/^["'`]/, "");
+  if (/(?:^|\s)min-h-\[(4[4-9]|[5-9]\d|\d{3,})px\]/.test(baseClasses)) return true;
+  if (/(?:^|\s)h-\[(4[4-9]|[5-9]\d|\d{3,})px\]/.test(baseClasses)) return true;
   // Tailwind size/height scale: 11 = 2.75rem = 44px.
-  if (/\b(?:size|h)-(1[1-9]|[2-9]\d)\b/.test(cls)) return true;
-  if (/\bwp-touch-target\b/.test(cls)) return true;
+  if (/(?:^|\s)(?:size|min-h|h)-(1[1-9]|[2-9]\d)\b/.test(baseClasses)) return true;
+  if (/(?:^|\s)wp-touch-target\b/.test(baseClasses)) return true;
   // Full-height flex children inherit their track's height.
-  if (/\b(?:h|min-h)-full\b/.test(cls)) return true;
+  if (/(?:^|\s)(?:h|min-h)-full\b/.test(baseClasses)) return true;
   return false;
 }
 
@@ -74,6 +76,51 @@ describe("Touch targets (WCAG 2.5.5)", () => {
     });
 
     expect(offenders, `buttons with no >=44px height:\n  ${offenders.join("\n  ")}`).toEqual([]);
+  });
+
+  it("does not explicitly size native buttons below 44px without a 44px minimum", () => {
+    const offenders: string[] = [];
+
+    files.forEach((file) => {
+      const source = readFileSync(file, "utf8");
+      const ast = ts.createSourceFile(
+        file,
+        source,
+        ts.ScriptTarget.Latest,
+        true,
+        ts.ScriptKind.TSX
+      );
+
+      const visit = (node: ts.Node) => {
+        if (ts.isJsxOpeningElement(node) && node.tagName.getText(ast) === "button") {
+          const classAttribute = node.attributes.properties.find(
+            (attribute): attribute is ts.JsxAttribute =>
+              ts.isJsxAttribute(attribute) && attribute.name.getText(ast) === "className"
+          );
+          const classSource = classAttribute?.initializer?.getText(ast) ?? "";
+          const declaresMinimum = declaresAdequateHeight(classSource);
+          const declaresUndersized =
+            /\b(?:min-h|h)-\[(?:[1-3]?\d|4[0-3])px\]/.test(classSource) ||
+            /\b(?:size|h)-(?:[1-9]|10)\b/.test(classSource);
+
+          if (declaresUndersized && !declaresMinimum) {
+            const { line } = ast.getLineAndCharacterOfPosition(node.getStart(ast));
+            offenders.push(`${relative(appDir, file)}:${line + 1} ${classSource.slice(0, 100)}`);
+          }
+        }
+        ts.forEachChild(node, visit);
+      };
+
+      visit(ast);
+    });
+
+    expect(offenders, `explicitly undersized buttons:\n  ${offenders.join("\n  ")}`).toEqual([]);
+  });
+
+  it("keeps every shared AudioButton size at least 44px", () => {
+    const source = readFileSync(resolve(appDir, "shared/AudioButton.tsx"), "utf8");
+    expect(source).toMatch(/sm:\s*["']size-11\b/);
+    expect(source).toContain("min-h-[44px] min-w-[44px]");
   });
 });
 

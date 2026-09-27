@@ -7,7 +7,7 @@ const CACHE_NAME = "wordpix-cache-v2";
 export function registerServiceWorker() {
   if (typeof window === "undefined" || !("serviceWorker" in navigator)) return;
 
-  window.addEventListener("load", () => {
+  const register = () => {
     navigator.serviceWorker
       .register("./sw.js")
       .then((registration) => {
@@ -38,7 +38,13 @@ export function registerServiceWorker() {
       .catch((err) => {
         console.error("PWA ServiceWorker registration failed:", err);
       });
-  });
+  };
+
+  // React effects commonly run after the window load event. Waiting for an
+  // event that already fired silently disabled offline navigation in a fresh
+  // browser context, so register immediately once the document is complete.
+  if (document.readyState === "complete") register();
+  else window.addEventListener("load", register, { once: true });
 }
 
 export interface OfflineReadiness {

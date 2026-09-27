@@ -146,13 +146,40 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
       />
 
       <section
+        aria-labelledby="recommended-heading"
+        className="grid gap-5 rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 sm:p-6 lg:grid-cols-[1fr_auto] lg:items-center"
+      >
+        <div>
+          <div className="mb-2 flex items-center gap-2 text-xs font-bold text-primary">
+            <Sparkles className="size-4" aria-hidden />
+            <span>{t("learn.recommendedWorld")}</span>
+          </div>
+          <h2 id="recommended-heading" className="text-xl font-black text-foreground sm:text-2xl">
+            {recommendedUnit.name}
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            {getUnitCurriculumDesign(recommendedUnit).outcome}
+          </p>
+        </div>
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: recommendedUnit.id })}
+          className="flex min-h-[52px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-md hover:opacity-90 active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transform-none lg:w-auto"
+        >
+          <BookOpen className="size-5" aria-hidden />
+          <span>{t("learn.continueUnit")}</span>
+          <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+        </button>
+      </section>
+
+      <section
         className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
         aria-label={t("learn.specialCurricula")}
       >
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
-          className="group min-h-[180px] rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 text-start shadow-wp-xs hover:border-primary hover:bg-primary/10 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
+          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
         >
           <Headphones className="size-8 text-primary" aria-hidden />
           <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
@@ -177,7 +204,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
-          className="group min-h-[180px] rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 text-start shadow-wp-xs hover:border-primary hover:bg-primary/10 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
+          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
         >
           <BookOpen className="size-8 text-primary" aria-hidden />
           <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
@@ -200,7 +227,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
-          className="group min-h-[180px] rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 text-start shadow-wp-xs hover:border-primary hover:bg-primary/10 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
+          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
         >
           <MessagesSquare className="size-8 text-primary" aria-hidden />
           <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
@@ -223,7 +250,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
-          className="group min-h-[180px] rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 text-start shadow-wp-xs hover:border-primary hover:bg-primary/10 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
+          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
         >
           <Briefcase className="size-8 text-primary" aria-hidden />
           <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
@@ -242,33 +269,6 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
             {t("business.exploreUnits")}
             <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
           </span>
-        </button>
-      </section>
-
-      <section
-        aria-labelledby="recommended-heading"
-        className="grid gap-5 rounded-3xl border-2 border-primary/35 bg-primary/5 p-5 sm:p-6 lg:grid-cols-[1fr_auto] lg:items-center"
-      >
-        <div>
-          <div className="mb-2 flex items-center gap-2 text-xs font-bold text-primary">
-            <Sparkles className="size-4" aria-hidden />
-            <span>{t("learn.recommendedWorld")}</span>
-          </div>
-          <h2 id="recommended-heading" className="text-xl font-black text-foreground sm:text-2xl">
-            {recommendedUnit.name}
-          </h2>
-          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-            {getUnitCurriculumDesign(recommendedUnit).outcome}
-          </p>
-        </div>
-        <button
-          type="button"
-          onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: recommendedUnit.id })}
-          className="flex min-h-[52px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-md hover:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary lg:w-auto"
-        >
-          <BookOpen className="size-5" aria-hidden />
-          <span>{t("learn.continueUnit")}</span>
-          <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
       </section>
 

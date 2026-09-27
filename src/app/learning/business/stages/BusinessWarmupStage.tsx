@@ -69,12 +69,12 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
           <p className="text-xs font-black uppercase tracking-widest text-primary">
             {t("business.warmup.essentialQuestion")}
           </p>
-          <h1
+          <h2
             id="big-question-heading"
             className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-black text-foreground tracking-tight leading-snug"
           >
             {`“${unit.essentialQuestion}”`}
-          </h1>
+          </h2>
           {unit.speakingGoal && (
             <div className="mt-4 flex items-start gap-2.5 rounded-xl bg-primary/10 p-3.5 text-sm font-semibold text-primary">
               <CheckCircle2 className="size-5 shrink-0 mt-0.5" aria-hidden />

@@ -73,12 +73,12 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
       <ReleaseNotesCard />
 
       {/* Top Learner Greeting */}
-      <header className="flex items-center justify-between">
-        <div className="flex items-center gap-3.5">
+      <header className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex min-w-0 items-center gap-3.5">
           <div className="relative size-12 lg:size-14 shrink-0 rounded-full overflow-hidden border-2 border-primary/20 shadow-wp-xs">
             <LearnerAvatar />
           </div>
-          <div>
+          <div className="min-w-0">
             <h1 className="font-sans font-black text-foreground text-xl lg:text-2xl leading-tight">
               {t("dashboard.welcomeLearner", { greeting })}
             </h1>
@@ -92,13 +92,13 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         </div>
 
         {offline && offline.ready && (
-          <Badge variant="teal" size="md" className="flex">
+          <Badge variant="teal" size="md" className="self-start sm:self-auto">
             <WifiOff className="size-3.5" aria-hidden />
             <span>{t("dashboard.offlineReady")}</span>
           </Badge>
         )}
         {offline && !offline.ready && offline.cached > 0 && (
-          <Badge variant="muted" size="md" className="flex">
+          <Badge variant="muted" size="md" className="self-start sm:self-auto">
             <WifiOff className="size-3.5" aria-hidden />
             <span>
               {t("dashboard.offlineSaving", { cached: offline.cached, total: offline.total })}
@@ -106,7 +106,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           </Badge>
         )}
         {offline && !offline.ready && offline.cached === 0 && (
-          <Badge variant="muted" size="md" className="flex">
+          <Badge variant="muted" size="md" className="self-start sm:self-auto">
             <WifiOff className="size-3.5" aria-hidden />
             <span>
               {navigator.onLine

@@ -6,7 +6,14 @@ import type {
 } from "../../app/context/LearnerContext";
 import type { WordLearningState } from "../../features/gamification/sm2";
 
-export type SyncOperation = { ownerId?: string } & (
+export type SyncErrorCategory = "auth_required" | "validation" | "authorization" | "transient";
+
+export type SyncOperation = {
+  ownerId?: string;
+  payloadVersion?: 1;
+  lastSyncAttemptAt?: string;
+  lastErrorCategory?: SyncErrorCategory;
+} & (
   | {
       id: string;
       type: "update_preferences";
@@ -30,6 +37,14 @@ export type SyncOperation = { ownerId?: string } & (
         learnerProgress: LearnerProgressStats;
         wordMemory: Record<string, WordLearningState>;
       };
+      createdAt: string;
+      status: "pending" | "syncing" | "failed";
+      retryCount: number;
+    }
+  | {
+      id: string;
+      type: "assessment_completed";
+      payload: { xp: number; wordMemory: Record<string, WordLearningState> };
       createdAt: string;
       status: "pending" | "syncing" | "failed";
       retryCount: number;
@@ -88,6 +103,17 @@ const DB_NAME = "wordpix_offline_db";
 const DB_VERSION = 3;
 
 export const LEARNER_STATE_KEY = "primary_state";
+export const SYNC_QUEUE_CHANGED_EVENT = "wordpix:sync-queue-changed";
+
+export interface SyncQueueSummary {
+  pending: number;
+  failed: number;
+  retryableFailed: number;
+}
+
+export function notifySyncQueueChanged() {
+  if (typeof window !== "undefined") window.dispatchEvent(new Event(SYNC_QUEUE_CHANGED_EVENT));
+}
 
 export async function getDB() {
   if (typeof indexedDB === "undefined") {
@@ -158,14 +184,32 @@ export async function queueMutation<T extends SyncOperation["type"]>(
       id: crypto.randomUUID(),
       type,
       payload,
+      payloadVersion: 1,
       createdAt: new Date().toISOString(),
       status: "pending",
       retryCount: 0,
     } as SyncOperation;
     await db.put("mutation_queue", op);
+    notifySyncQueueChanged();
   } catch (e) {
     console.error("Failed to queue mutation", e);
   }
+}
+
+export async function getSyncQueueSummary(): Promise<SyncQueueSummary> {
+  const db = await getDB();
+  if (!db) return { pending: 0, failed: 0, retryableFailed: 0 };
+  const operations = await db.getAll("mutation_queue");
+  return operations.reduce<SyncQueueSummary>(
+    (summary, operation) => {
+      if (operation.status === "failed") {
+        summary.failed += 1;
+        if (operation.lastErrorCategory === "authorization") summary.retryableFailed += 1;
+      } else summary.pending += 1;
+      return summary;
+    },
+    { pending: 0, failed: 0, retryableFailed: 0 }
+  );
 }
 
 /**

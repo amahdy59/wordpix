@@ -72,11 +72,72 @@ test("pronunciation curriculum index has no automatically detectable accessibili
   expect(results.violations).toEqual([]);
 });
 
+test("high-contrast preference uses AAA text colours", async ({ page }) => {
+  await page.emulateMedia({ contrast: "more" });
+  await page.goto("/");
+  await expect(page.locator("#main-content")).toBeVisible();
+
+  const bodyColours = await page.evaluate(() => {
+    const style = getComputedStyle(document.body);
+    return { color: style.color, background: style.backgroundColor };
+  });
+  expect(bodyColours).toEqual({ color: "rgb(255, 255, 255)", background: "rgb(0, 0, 0)" });
+
+  const results = await new AxeBuilder({ page }).withRules(["color-contrast-enhanced"]).analyze();
+  expect(results.violations).toEqual([]);
+});
+
+test("curriculum controls retain 44px targets on mobile", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 720 });
+
+  for (const route of ["/#/pronunciation", "/#/business"]) {
+    await page.goto(route);
+    await expect(page.getByRole("main")).toBeVisible();
+
+    const undersized = await page.locator("main").evaluate((main) =>
+      Array.from(
+        main.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), [role="button"]:not([aria-disabled="true"]), [role="radio"]:not([aria-disabled="true"])'
+        )
+      ).flatMap((element) => {
+        const rect = element.getBoundingClientRect();
+        const style = getComputedStyle(element);
+        if (
+          style.display === "none" ||
+          style.visibility === "hidden" ||
+          rect.width === 0 ||
+          rect.height === 0 ||
+          element.getAttribute("aria-hidden") === "true"
+        ) {
+          return [];
+        }
+        if (element.tagName === "A" && style.display === "inline") return [];
+        if (rect.width >= 44 && rect.height >= 44) return [];
+        return [
+          {
+            name: (element.getAttribute("aria-label") || element.textContent || "")
+              .trim()
+              .slice(0, 60),
+            width: Math.round(rect.width),
+            height: Math.round(rect.height),
+          },
+        ];
+      })
+    );
+
+    expect(undersized, `${route} contains undersized controls`).toEqual([]);
+  }
+});
+
 test("conversation curriculum and warm-up have no detectable accessibility issues", async ({
   page,
 }) => {
   await page.goto("/#/conversation");
-  await expect(page.getByRole("main", { name: "Conversation & Debate" })).toBeVisible();
+  await expect(page.getByRole("main")).toBeVisible();
+  await expect(
+    page.getByRole("heading", { level: 1, name: "Conversation & Debate" })
+  ).toBeVisible();
+  await expect(page.getByRole("main")).toHaveCount(1);
 
   const curriculumResults = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
@@ -87,6 +148,8 @@ test("conversation curriculum and warm-up have no detectable accessibility issue
     .getByRole("button", { name: /Unit 01: Could You Live Without Your Smartphone/ })
     .click();
   await expect(page.getByRole("radiogroup", { name: "Quick vote options" })).toBeVisible();
+  await expect(page.getByRole("main")).toHaveCount(1);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
 
   const lessonResults = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])

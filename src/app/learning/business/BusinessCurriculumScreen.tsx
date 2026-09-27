@@ -126,7 +126,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
   };
 
   return (
-    <main
+    <div
       className="h-full min-h-0 overflow-y-auto bg-background pb-24 overscroll-y-contain"
       aria-labelledby="business-curriculum-title"
     >
@@ -369,7 +369,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search units, topics, or skills..."
                 aria-label="Search Business English units"
-                className="w-full rounded-2xl border border-border bg-card py-2.5 ps-10 pe-4 text-sm font-medium text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 shadow-wp-xs"
+                className="min-h-11 w-full rounded-2xl border border-border bg-card py-2.5 ps-10 pe-4 text-sm font-medium text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 shadow-wp-xs"
               />
             </div>
           </div>
@@ -391,7 +391,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                   key={tag}
                   type="button"
                   onClick={() => setSelectedTag(tag)}
-                  className={`inline-flex min-h-[36px] sm:min-h-[44px] items-center shrink-0 rounded-full px-3.5 py-1.5 text-xs font-bold transition-all ${
+                  className={`inline-flex min-h-11 shrink-0 items-center rounded-full px-3.5 py-1.5 text-xs font-bold transition-all ${
                     isSelected
                       ? "bg-foreground text-background shadow-wp-xs"
                       : "bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground"
@@ -530,6 +530,6 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
           </div>
         </section>
       </div>
-    </main>
+    </div>
   );
 }

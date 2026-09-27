@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { createPortal } from "react-dom";
 import { supabase } from "../../lib/supabase/client";
 import { migrateGuestToAccount } from "../../lib/persistence/sync";
 import { User, X } from "lucide-react";
@@ -78,7 +79,10 @@ export function AuthModal({ onClose }: AuthModalProps) {
     }
   };
 
-  return (
+  // Keep the dialog outside #root: useModalA11y marks #root inert while a
+  // modal is open, so rendering inside it would make this visible form
+  // impossible to click or focus in browsers that implement inert.
+  return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
       <div
         ref={containerRef}
@@ -187,6 +191,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
