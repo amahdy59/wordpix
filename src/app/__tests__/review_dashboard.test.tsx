@@ -12,7 +12,7 @@ vi.mock("../data/vocabulary", () => ({
   getWords: (ids: string[]) => ids.map((id) => ({ id, label: id, img: "test.webp" })),
   loadUnitVocabulary: async () => [],
 }));
-vi.mock("../data/lessons", () => ({
+vi.mock("../data/courseCatalog", () => ({
   REVIEW_GROUP_ID: "review",
   resolveUnitIdForWord: () => undefined,
 }));

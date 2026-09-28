@@ -8,7 +8,7 @@ import { PlacementQuizModal } from "./PlacementQuizModal";
 import type { LearnerGoal } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
 import { getStartingUnitForLevel, type PlacementRecommendation } from "./placementRecommendation";
-import { COURSE_UNITS } from "../data/lessons";
+import { COURSE_UNITS } from "../data/courseCatalog";
 import { emitLearningEvent } from "../analytics/learningAnalytics";
 
 interface Props {

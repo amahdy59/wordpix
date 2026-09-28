@@ -1,0 +1,614 @@
+﻿[
+  {
+    "lessonId": "vegetables-1",
+    "lessonName": "Vegetables 1",
+    "unitId": "vegetables",
+    "unitName": "Vegetables",
+    "unitOrder": 11,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 42,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Carrot",
+      "Potato",
+      "Sweet Potato",
+      "Beet",
+      "Turnip",
+      "Radish",
+      "Parsnip",
+      "Ginger",
+      "Yam",
+      "Rutabaga",
+      "Lettuce",
+      "Spinach",
+      "Kale",
+      "Arugula",
+      "Cabbage"
+    ],
+    "targetWordsArabic": [
+      "جزر",
+      "بطاطس",
+      "بطاطا حلوة",
+      "شمندر",
+      "لفت",
+      "فجل",
+      "جزر أبيض",
+      "زنجبيل",
+      "يام",
+      "لفت سويدي",
+      "خس",
+      "سبانخ",
+      "كرنب أجعد",
+      "جرجير",
+      "ملفوف"
+    ],
+    "usage": {
+      "goal": "Recognize common vegetables and use them in simple food and shopping contexts.",
+      "canDoStatement": "I can recognize common vegetables and use them in simple food and shopping contexts",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Carrot", "Potato", "Sweet Potato"],
+          "scenario": "At the market, I can choose a carrot, a potato, a sweet potato.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Carrot", "Potato", "Sweet Potato"],
+            "expectedAnswer": "Carrot"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a carrot, a potato, a sweet potato. Emphasize carrot, potato, and sweet potato and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Beet", "Turnip", "Radish"],
+          "scenario": "At the market, I can choose a beet, a turnip, a radish.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Beet", "Turnip", "Radish"],
+            "expectedAnswer": "Beet"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a beet, a turnip, a radish. Emphasize beet, turnip, and radish and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Parsnip", "Ginger", "Yam"],
+          "scenario": "At the market, I can choose a parsnip, a ginger, a yam.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Parsnip", "Ginger", "Yam"],
+            "expectedAnswer": "Parsnip"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a parsnip, a ginger, a yam. Emphasize parsnip, ginger, and yam and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Rutabaga", "Lettuce", "Spinach"],
+          "scenario": "At the market, I can choose a rutabaga, a lettuce, a spinach.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Rutabaga", "Lettuce", "Spinach"],
+            "expectedAnswer": "Rutabaga"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a rutabaga, a lettuce, a spinach. Emphasize rutabaga, lettuce, and spinach and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Kale", "Arugula", "Cabbage"],
+          "scenario": "At the market, I can choose a kale, an arugula, a cabbage.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Kale", "Arugula", "Cabbage"],
+            "expectedAnswer": "Kale"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a kale, an arugula, a cabbage. Emphasize kale, arugula, and cabbage and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Vegetables Mini Story",
+      "text": "Today I am at the market. I see carrot, potato, and sweet potato. I also find beet, turnip, and radish. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as fig and olive.",
+      "imageBrief": "One uncluttered vegetables scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Carrot"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Beet"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Parsnip"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Rutabaga"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Kale"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Carrot"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Potato"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Radish"
+      }
+    ],
+    "video": {
+      "title": "Vegetables: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show carrot, potato, sweet potato, beet, and turnip naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see carrot, potato, and sweet potato. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Fig, Olive from fruits-4\n3 lesson(s) back: Mulberry, Boysenberry from fruits-2\n7 lesson(s) back: Floor Lamp, Table Lamp from living-room-3"
+  },
+  {
+    "lessonId": "vegetables-2",
+    "lessonName": "Vegetables 2",
+    "unitId": "vegetables",
+    "unitName": "Vegetables",
+    "unitOrder": 11,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 43,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Chard",
+      "Collard Greens",
+      "Romaine",
+      "Watercress",
+      "Bok Choy",
+      "Broccoli",
+      "Cauliflower",
+      "Brussels Sprouts",
+      "Kohlrabi",
+      "Rapini",
+      "Napa Cabbage",
+      "Red Cabbage",
+      "Savoy Cabbage",
+      "Romanesco",
+      "Broccolini"
+    ],
+    "targetWordsArabic": [
+      "سلق",
+      "أوراق الكرنب الأخضر",
+      "خس روماني",
+      "جرجير مائي",
+      "بوك تشوي؛ ملفوف صيني",
+      "بروكلي",
+      "قرنبيط",
+      "كرنب بروكسل",
+      "كرنب ساقي",
+      "رابيني؛ بروكلي راب",
+      "ملفوف نابا",
+      "ملفوف أحمر",
+      "ملفوف سافوي",
+      "رومانسكو",
+      "بروكوليني"
+    ],
+    "usage": {
+      "goal": "Recognize common vegetables and use them in simple food and shopping contexts.",
+      "canDoStatement": "I can recognize common vegetables and use them in simple food and shopping contexts",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Chard", "Collard Greens", "Romaine"],
+          "scenario": "At the market, I can choose a chard, a collard greens, a romaine.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Chard", "Collard Greens", "Romaine"],
+            "expectedAnswer": "Chard"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a chard, a collard greens, a romaine. Emphasize chard, collard greens, and romaine and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Watercress", "Bok Choy", "Broccoli"],
+          "scenario": "At the market, I can choose a watercress, a bok choy, a broccoli.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Watercress", "Bok Choy", "Broccoli"],
+            "expectedAnswer": "Watercress"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a watercress, a bok choy, a broccoli. Emphasize watercress, bok choy, and broccoli and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Cauliflower", "Brussels Sprouts", "Kohlrabi"],
+          "scenario": "At the market, I can choose a cauliflower, a brussels sprouts, a kohlrabi.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Cauliflower", "Brussels Sprouts", "Kohlrabi"],
+            "expectedAnswer": "Cauliflower"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a cauliflower, a brussels sprouts, a kohlrabi. Emphasize cauliflower, brussels sprouts, and kohlrabi and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Rapini", "Napa Cabbage", "Red Cabbage"],
+          "scenario": "At the market, I can choose a rapini, a napa cabbage, a red cabbage.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Rapini", "Napa Cabbage", "Red Cabbage"],
+            "expectedAnswer": "Rapini"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a rapini, a napa cabbage, a red cabbage. Emphasize rapini, napa cabbage, and red cabbage and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Savoy Cabbage", "Romanesco", "Broccolini"],
+          "scenario": "At the market, I can choose a savoy cabbage, a romanesco, a broccolini.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Savoy Cabbage", "Romanesco", "Broccolini"],
+            "expectedAnswer": "Savoy Cabbage"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a savoy cabbage, a romanesco, a broccolini. Emphasize savoy cabbage, romanesco, and broccolini and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Vegetables Mini Story",
+      "text": "Today I am at the market. I see chard, collard greens, and romaine. I also find watercress, bok choy, and broccoli. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as carrot and potato.",
+      "imageBrief": "One uncluttered vegetables scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Chard"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Watercress"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Cauliflower"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Rapini"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Savoy Cabbage"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Chard"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Collard Greens"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Broccoli"
+      }
+    ],
+    "video": {
+      "title": "Vegetables: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show chard, collard greens, romaine, watercress, and bok choy naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see chard, collard greens, and romaine. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Carrot, Potato from vegetables-1\n3 lesson(s) back: Lemon, Lime from fruits-3\n7 lesson(s) back: Tablecloth, Placemat from living-room-4"
+  },
+  {
+    "lessonId": "vegetables-3",
+    "lessonName": "Vegetables 3",
+    "unitId": "vegetables",
+    "unitName": "Vegetables",
+    "unitOrder": 11,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 44,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Zucchini",
+      "Pumpkin",
+      "Butternut Squash",
+      "Acorn Squash",
+      "Spaghetti Squash",
+      "Cucumber",
+      "Gourd",
+      "Chayote",
+      "Bitter Melon",
+      "Delicata",
+      "Tomato",
+      "Bell Pepper",
+      "Chili Pepper",
+      "Eggplant",
+      "Jalapeño"
+    ],
+    "targetWordsArabic": [
+      "كوسا",
+      "قرع عسل",
+      "قرع الجوز",
+      "قرع البلوط",
+      "قرع السباغيتي",
+      "خيار",
+      "قرع",
+      "تشايوتي",
+      "القرع المُر",
+      "قرع ديليكيتا",
+      "طماطم",
+      "فلفل رومي",
+      "فلفل حار",
+      "باذنجان",
+      "فلفل هالبينو"
+    ],
+    "usage": {
+      "goal": "Recognize common vegetables and use them in simple food and shopping contexts.",
+      "canDoStatement": "I can recognize common vegetables and use them in simple food and shopping contexts",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Zucchini", "Pumpkin", "Butternut Squash"],
+          "scenario": "At the market, I can choose a zucchini, a pumpkin, a butternut squash.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Zucchini", "Pumpkin", "Butternut Squash"],
+            "expectedAnswer": "Zucchini"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a zucchini, a pumpkin, a butternut squash. Emphasize zucchini, pumpkin, and butternut squash and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Acorn Squash", "Spaghetti Squash", "Cucumber"],
+          "scenario": "At the market, I can choose an acorn squash, a spaghetti squash, a cucumber.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Acorn Squash", "Spaghetti Squash", "Cucumber"],
+            "expectedAnswer": "Acorn Squash"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose an acorn squash, a spaghetti squash, a cucumber. Emphasize acorn squash, spaghetti squash, and cucumber and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Gourd", "Chayote", "Bitter Melon"],
+          "scenario": "At the market, I can choose a gourd, a chayote, a bitter melon.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Gourd", "Chayote", "Bitter Melon"],
+            "expectedAnswer": "Gourd"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a gourd, a chayote, a bitter melon. Emphasize gourd, chayote, and bitter melon and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Delicata", "Tomato", "Bell Pepper"],
+          "scenario": "At the market, I can choose a delicata, a tomato, a bell pepper.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Delicata", "Tomato", "Bell Pepper"],
+            "expectedAnswer": "Delicata"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a delicata, a tomato, a bell pepper. Emphasize delicata, tomato, and bell pepper and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Chili Pepper", "Eggplant", "Jalapeño"],
+          "scenario": "At the market, I can choose a chili pepper, an eggplant, a jalapeño.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Chili Pepper", "Eggplant", "Jalapeño"],
+            "expectedAnswer": "Chili Pepper"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a chili pepper, an eggplant, a jalapeño. Emphasize chili pepper, eggplant, and jalapeño and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Vegetables Mini Story",
+      "text": "Today I am at the market. I see zucchini, pumpkin, and butternut squash. I also find acorn squash, spaghetti squash, and cucumber. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as chard and collard greens.",
+      "imageBrief": "One uncluttered vegetables scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Zucchini"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Acorn Squash"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Gourd"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Delicata"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Chili Pepper"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Zucchini"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Pumpkin"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Cucumber"
+      }
+    ],
+    "video": {
+      "title": "Vegetables: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show zucchini, pumpkin, butternut squash, acorn squash, and spaghetti squash naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see zucchini, pumpkin, and butternut squash. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Chard, Collard Greens from vegetables-2\n3 lesson(s) back: Fig, Olive from fruits-4\n7 lesson(s) back: Lamp, Phone from living-room-5"
+  },
+  {
+    "lessonId": "vegetables-4",
+    "lessonName": "Vegetables 4",
+    "unitId": "vegetables",
+    "unitName": "Vegetables",
+    "unitOrder": 11,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 45,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Habanero",
+      "Serrano",
+      "Poblano",
+      "Cayenne",
+      "Paprika",
+      "Onion",
+      "Garlic",
+      "Leek",
+      "Shallot",
+      "Scallion",
+      "Chive",
+      "Asparagus",
+      "Celery",
+      "Artichoke",
+      "Fennel"
+    ],
+    "targetWordsArabic": [
+      "فلفل هابانيرو حار",
+      "فلفل سيرانو",
+      "فلفل بوبلانو",
+      "فلفل كايين",
+      "بابريكا",
+      "بصل",
+      "ثوم",
+      "كراث",
+      "بصل شالوت",
+      "بصل أخضر",
+      "ثوم معمر",
+      "هليون",
+      "كرفس",
+      "خرشوف",
+      "شمر"
+    ],
+    "usage": {
+      "goal": "Recognize common vegetables and use them in simple food and shopping contexts.",
+      "canDoStatement": "I can recognize common vegetables and use them in simple food and shopping contexts",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Habanero", "Serrano", "Poblano"],
+          "scenario": "At the market, I can choose a habanero, a serrano, a poblano.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Habanero", "Serrano", "Poblano"],
+            "expectedAnswer": "Habanero"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a habanero, a serrano, a poblano. Emphasize habanero, serrano, and poblano and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Cayenne", "Paprika", "Onion"],
+          "scenario": "At the market, I can choose a cayenne, a paprika, an onion.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Cayenne", "Paprika", "Onion"],
+            "expectedAnswer": "Cayenne"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a cayenne, a paprika, an onion. Emphasize cayenne, paprika, and onion and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Garlic", "Leek", "Shallot"],
+          "scenario": "At the market, I can choose a garlic, a leek, a shallot.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Garlic", "Leek", "Shallot"],
+            "expectedAnswer": "Garlic"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a garlic, a leek, a shallot. Emphasize garlic, leek, and shallot and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Scallion", "Chive", "Asparagus"],
+          "scenario": "At the market, I can choose a scallion, a chive, an asparagus.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Scallion", "Chive", "Asparagus"],
+            "expectedAnswer": "Scallion"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a scallion, a chive, an asparagus. Emphasize scallion, chive, and asparagus and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Celery", "Artichoke", "Fennel"],
+          "scenario": "At the market, I can choose a celery, an artichoke, a fennel.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Celery", "Artichoke", "Fennel"],
+            "expectedAnswer": "Celery"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for vegetables that represents: At the market, I can choose a celery, an artichoke, a fennel. Emphasize celery, artichoke, and fennel and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Vegetables Mini Story",
+      "text": "Today I am at the market. I see habanero, serrano, and poblano. I also find cayenne, paprika, and onion. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as zucchini and pumpkin.",
+      "imageBrief": "One uncluttered vegetables scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Habanero"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Cayenne"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Garlic"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Scallion"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Celery"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Habanero"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Serrano"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Onion"
+      }
+    ],
+    "video": {
+      "title": "Vegetables: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show habanero, serrano, poblano, cayenne, and paprika naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see habanero, serrano, and poblano. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Zucchini, Pumpkin from vegetables-3\n3 lesson(s) back: Carrot, Potato from vegetables-1\n7 lesson(s) back: Apple, Banana from fruits-1"
+  }
+]

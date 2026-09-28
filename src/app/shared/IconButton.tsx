@@ -61,6 +61,7 @@ export const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(functio
       type={type}
       aria-label={ariaLabel}
       disabled={isDisabled}
+      aria-disabled={isDisabled ? "true" : undefined}
       aria-busy={loading ? "true" : undefined}
       className={`min-h-[44px] inline-flex items-center justify-center select-none cursor-pointer shrink-0
         focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary

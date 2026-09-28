@@ -1,0 +1,537 @@
+﻿[
+  {
+    "lessonId": "daily-action-verbs-1",
+    "lessonName": "Daily Action Verbs 1",
+    "unitId": "daily-action-verbs",
+    "unitName": "Daily Action Verbs",
+    "unitOrder": 14,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 54,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Wake Up",
+      "Get Up",
+      "Yawn",
+      "Stretch",
+      "Shower",
+      "Brush Teeth",
+      "Get Dressed",
+      "Eat Breakfast",
+      "Pack Lunch",
+      "Leave Home",
+      "Eat",
+      "Drink",
+      "Chew",
+      "Swallow",
+      "Sip"
+    ],
+    "targetWordsArabic": [
+      "عملية يُسمّى «واكي وب»",
+      "فعل يُسمّى «جيت وب»",
+      "يتثاءب",
+      "مرونة",
+      "دُش",
+      "فعل يُسمّى «بروش تييث»",
+      "فعل يُسمّى «جيت دريسسيد»",
+      "يتناول الإفطار",
+      "فعل أو عملية يُسمّى «باك لونتش»",
+      "فعل أو عملية يُسمّى «ليافي هومي»",
+      "يأكل",
+      "يشرب",
+      "يمضغ",
+      "يبتلع",
+      "يرتشف"
+    ],
+    "usage": {
+      "goal": "Understand and use common actions from morning to night.",
+      "canDoStatement": "I can understand and use common actions from morning to night",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Wake Up", "Get Up", "Yawn"],
+          "scenario": "In a normal day, I can wake up, get up, yawn.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Wake Up", "Get Up", "Yawn"],
+            "expectedAnswer": "Wake Up"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can wake up, get up, yawn. Emphasize wake up, get up, and yawn and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Stretch", "Shower", "Brush Teeth"],
+          "scenario": "In a normal day, I can stretch, shower, brush teeth.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Stretch", "Shower", "Brush Teeth"],
+            "expectedAnswer": "Stretch"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can stretch, shower, brush teeth. Emphasize stretch, shower, and brush teeth and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Get Dressed", "Eat Breakfast", "Pack Lunch"],
+          "scenario": "In a normal day, I can get dressed, eat breakfast, pack lunch.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Get Dressed", "Eat Breakfast", "Pack Lunch"],
+            "expectedAnswer": "Get Dressed"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can get dressed, eat breakfast, pack lunch. Emphasize get dressed, eat breakfast, and pack lunch and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Leave Home", "Eat", "Drink"],
+          "scenario": "In a normal day, I can leave home, eat, drink.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Leave Home", "Eat", "Drink"],
+            "expectedAnswer": "Leave Home"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can leave home, eat, drink. Emphasize leave home, eat, and drink and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Chew", "Swallow", "Sip"],
+          "scenario": "In a normal day, I can chew, swallow, sip.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Chew", "Swallow", "Sip"],
+            "expectedAnswer": "Chew"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can chew, swallow, sip. Emphasize chew, swallow, and sip and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Daily Action Verbs Mini Story",
+      "text": "My day has many small actions. First, I wake up. Then I get up and yawn. Later, I stretch. I also shower. These actions help me describe my routine in English. We also remember earlier words such as diary and agenda.",
+      "imageBrief": "One uncluttered daily action verbs scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Wake Up"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Stretch"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Get Dressed"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Leave Home"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Chew"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Wake Up"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Get Up"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Brush Teeth"
+      }
+    ],
+    "video": {
+      "title": "Daily Action Verbs: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily routine. Show wake up, get up, yawn, stretch, and shower naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see wake up, get up, and yawn. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Diary, Agenda from days-months-4\n3 lesson(s) back: June, July from days-months-2\n7 lesson(s) back: Noon, Midnight from telling-time-2"
+  },
+  {
+    "lessonId": "daily-action-verbs-2",
+    "lessonName": "Daily Action Verbs 2",
+    "unitId": "daily-action-verbs",
+    "unitName": "Daily Action Verbs",
+    "unitOrder": 14,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 55,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Gulp",
+      "Bite",
+      "Taste",
+      "Lick",
+      "Slurp",
+      "Cook",
+      "Clean",
+      "Wash",
+      "Sweep",
+      "Vacuum",
+      "Iron",
+      "Fold",
+      "Organize",
+      "Repair",
+      "Decorate"
+    ],
+    "targetWordsArabic": [
+      "يجرع",
+      "يعض",
+      "تذوق",
+      "يلعق",
+      "يرتشف بصوت",
+      "طاهٍ",
+      "ينظف",
+      "غسيل",
+      "يكنس",
+      "مكنسة شفط",
+      "مكواة",
+      "يطوي برفق",
+      "ينظم",
+      "إصلاح",
+      "يزين"
+    ],
+    "usage": {
+      "goal": "Understand and use common actions from morning to night.",
+      "canDoStatement": "I can understand and use common actions from morning to night",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Gulp", "Bite", "Taste"],
+          "scenario": "In a normal day, I can gulp, bite, taste.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Gulp", "Bite", "Taste"],
+            "expectedAnswer": "Gulp"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can gulp, bite, taste. Emphasize gulp, bite, and taste and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Lick", "Slurp", "Cook"],
+          "scenario": "In a normal day, I can lick, slurp, cook.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Lick", "Slurp", "Cook"],
+            "expectedAnswer": "Lick"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can lick, slurp, cook. Emphasize lick, slurp, and cook and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Clean", "Wash", "Sweep"],
+          "scenario": "In a normal day, I can clean, wash, sweep.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Clean", "Wash", "Sweep"],
+            "expectedAnswer": "Clean"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can clean, wash, sweep. Emphasize clean, wash, and sweep and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Vacuum", "Iron", "Fold"],
+          "scenario": "In a normal day, I can vacuum, iron, fold.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Vacuum", "Iron", "Fold"],
+            "expectedAnswer": "Vacuum"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can vacuum, iron, fold. Emphasize vacuum, iron, and fold and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Organize", "Repair", "Decorate"],
+          "scenario": "In a normal day, I can organize, repair, decorate.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Organize", "Repair", "Decorate"],
+            "expectedAnswer": "Organize"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can organize, repair, decorate. Emphasize organize, repair, and decorate and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Daily Action Verbs Mini Story",
+      "text": "My day has many small actions. First, I gulp. Then I bite and taste. Later, I lick. I also slurp. These actions help me describe my routine in English. We also remember earlier words such as wake up and get up.",
+      "imageBrief": "One uncluttered daily action verbs scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Gulp"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Lick"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Clean"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Vacuum"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Organize"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Gulp"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Bite"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Cook"
+      }
+    ],
+    "video": {
+      "title": "Daily Action Verbs: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily routine. Show gulp, bite, taste, lick, and slurp naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see gulp, bite, and taste. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Wake Up, Get Up from daily-action-verbs-1\n3 lesson(s) back: Today, Tomorrow from days-months-3\n7 lesson(s) back: Morning, Afternoon from telling-time-3"
+  },
+  {
+    "lessonId": "daily-action-verbs-3",
+    "lessonName": "Daily Action Verbs 3",
+    "unitId": "daily-action-verbs",
+    "unitName": "Daily Action Verbs",
+    "unitOrder": 14,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 56,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Bathe",
+      "Shave",
+      "Comb",
+      "Style",
+      "Apply",
+      "Moisturize",
+      "Trim",
+      "Floss",
+      "Gargle",
+      "Dry Off",
+      "Rest",
+      "Relax",
+      "Nap",
+      "Sleep",
+      "Dream"
+    ],
+    "targetWordsArabic": [
+      "يستحم",
+      "حلاقة",
+      "مشط",
+      "يصفف",
+      "يضع أو يطبّق",
+      "يرطب",
+      "فعل يُسمّى «تريم»",
+      "ينظف بالخيط",
+      "يغرغر",
+      "فعل يُسمّى «دري وفف»",
+      "يستريح",
+      "يسترخي",
+      "يغفو",
+      "نوم",
+      "يحلم"
+    ],
+    "usage": {
+      "goal": "Understand and use common actions from morning to night.",
+      "canDoStatement": "I can understand and use common actions from morning to night",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bathe", "Shave", "Comb"],
+          "scenario": "In a normal day, I can bathe, shave, comb.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Bathe", "Shave", "Comb"],
+            "expectedAnswer": "Bathe"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can bathe, shave, comb. Emphasize bathe, shave, and comb and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Style", "Apply", "Moisturize"],
+          "scenario": "In a normal day, I can style, apply, moisturize.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Style", "Apply", "Moisturize"],
+            "expectedAnswer": "Style"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can style, apply, moisturize. Emphasize style, apply, and moisturize and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Trim", "Floss", "Gargle"],
+          "scenario": "In a normal day, I can trim, floss, gargle.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Trim", "Floss", "Gargle"],
+            "expectedAnswer": "Trim"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can trim, floss, gargle. Emphasize trim, floss, and gargle and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Dry Off", "Rest", "Relax"],
+          "scenario": "In a normal day, I can dry off, rest, relax.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Dry Off", "Rest", "Relax"],
+            "expectedAnswer": "Dry Off"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can dry off, rest, relax. Emphasize dry off, rest, and relax and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Nap", "Sleep", "Dream"],
+          "scenario": "In a normal day, I can nap, sleep, dream.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Nap", "Sleep", "Dream"],
+            "expectedAnswer": "Nap"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can nap, sleep, dream. Emphasize nap, sleep, and dream and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Daily Action Verbs Mini Story",
+      "text": "My day has many small actions. First, I bathe. Then I shave and comb. Later, I style. I also apply. These actions help me describe my routine in English. We also remember earlier words such as gulp and bite.",
+      "imageBrief": "One uncluttered daily action verbs scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Bathe"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Style"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Trim"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Dry Off"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Nap"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Bathe"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Shave"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Moisturize"
+      }
+    ],
+    "video": {
+      "title": "Daily Action Verbs: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily routine. Show bathe, shave, comb, style, and apply naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see bathe, shave, and comb. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Gulp, Bite from daily-action-verbs-2\n3 lesson(s) back: Diary, Agenda from days-months-4\n7 lesson(s) back: Ahead of Time, Behind Schedule from telling-time-4"
+  },
+  {
+    "lessonId": "daily-action-verbs-4",
+    "lessonName": "Daily Action Verbs 4",
+    "unitId": "daily-action-verbs",
+    "unitName": "Daily Action Verbs",
+    "unitOrder": 14,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 57,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": ["Snore", "Doze", "Meditate", "Unwind", "Recharge"],
+    "targetWordsArabic": ["يشخر", "ينعس", "يتأمل", "يسترخي", "يستعيد نشاطه"],
+    "usage": {
+      "goal": "Understand and use common actions from morning to night.",
+      "canDoStatement": "I can understand and use common actions from morning to night",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Snore", "Doze", "Meditate"],
+          "scenario": "In a normal day, I can snore, doze, meditate.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Snore", "Doze", "Meditate"],
+            "expectedAnswer": "Snore"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can snore, doze, meditate. Emphasize snore, doze, and meditate and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Unwind", "Recharge"],
+          "scenario": "In a normal day, I can unwind, recharge.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Unwind", "Recharge"],
+            "expectedAnswer": "Unwind"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily action verbs that represents: In a normal day, I can unwind, recharge. Emphasize unwind and recharge and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Daily Action Verbs Mini Story",
+      "text": "My day has many small actions. First, I snore. Then I doze and meditate. Later, I unwind. I also recharge. These actions help me describe my routine in English. We also remember earlier words such as bathe and shave.",
+      "imageBrief": "One uncluttered daily action verbs scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Snore"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Unwind"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Snore"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Doze"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Recharge"
+      }
+    ],
+    "video": {
+      "title": "Daily Action Verbs: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily routine. Show snore, doze, meditate, unwind, and recharge naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see snore, doze, and meditate. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Bathe, Shave from daily-action-verbs-3\n3 lesson(s) back: Wake Up, Get Up from daily-action-verbs-1\n7 lesson(s) back: Monday, Tuesday from days-months-1"
+  }
+]

@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "drone-workshop-1",
+    "lessonName": "The Drone Workshop 1",
+    "unitId": "drone-workshop",
+    "unitName": "The Drone Workshop",
+    "unitOrder": 169,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 744,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Quadcopter",
+      "Hexacopter",
+      "Fixed Wing",
+      "Racing Drone",
+      "Fpv Drone",
+      "Nano Drone",
+      "Delivery Drone",
+      "Survey Drone",
+      "Agricultural Drone",
+      "Underwater Drone",
+      "Propeller",
+      "Motor",
+      "Frame",
+      "Battery",
+      "Esc"
+    ],
+    "targetWordsArabic": [
+      "طائرة مسيّرة رباعية المراوح",
+      "طائرة مسيّرة سداسية المراوح",
+      "طائرة مسيّرة ثابتة الجناح",
+      "طائرة مسيّرة للسباقات",
+      "طائرة مسيّرة بمنظور الشخص الأول (FPV)",
+      "طائرة مسيّرة صغيرة جدًا",
+      "طائرة مسيّرة للتوصيل",
+      "طائرة مسيّرة للمسح",
+      "طائرة مسيّرة زراعية",
+      "مركبة مسيّرة تحت الماء",
+      "مروحة دافعة",
+      "محرك",
+      "إطار",
+      "بطارية",
+      "وحدة تحكّم إلكترونية في السرعة (ESC)"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Drone Workshop to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the drone workshop vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Quadcopter", "Hexacopter", "Fixed Wing", "Racing Drone"],
+          "scenario": "The engineer or technician checks quadcopter, hexacopter, fixed wing, and racing drone. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Quadcopter", "Hexacopter", "Fixed Wing", "Racing Drone"],
+            "expectedAnswer": "Quadcopter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks quadcopter, hexacopter, fixed wing, and racing drone. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Fpv Drone", "Nano Drone", "Delivery Drone", "Survey Drone"],
+          "scenario": "The group compares the fpv drone, nano drone, delivery drone, and survey drone and notices how the vehicles differ.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fpv Drone", "Nano Drone", "Delivery Drone", "Survey Drone"],
+            "expectedAnswer": "Fpv Drone"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group compares the fpv drone, nano drone, delivery drone, and survey drone and notices how the vehicles differ. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Agricultural Drone", "Underwater Drone", "Propeller", "Motor"],
+          "scenario": "The engineer or technician checks agricultural drone, underwater drone, propeller, and motor. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Agricultural Drone", "Underwater Drone", "Propeller", "Motor"],
+            "expectedAnswer": "Agricultural Drone"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks agricultural drone, underwater drone, propeller, and motor. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Frame", "Battery", "Esc"],
+          "scenario": "The engineer or technician checks frame, battery, and esc. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Frame", "Battery", "Esc"],
+            "expectedAnswer": "Frame"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks frame, battery, and esc. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Drone Workshop: Case Note",
+      "text": "A realistic case involving the drone workshop shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks quadcopter, hexacopter, fixed wing, and racing drone. The words connect to components, systems, processes, or technical decisions. The group compares the fpv drone, nano drone, delivery drone, and survey drone and notices how the vehicles differ. The engineer or technician checks agricultural drone, underwater drone, propeller, and motor. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks frame, battery, and esc. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Drone Workshop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Quadcopter"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fpv Drone"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Agricultural Drone"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Frame"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Quadcopter"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Access Log” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Drone Workshop: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Access Log, Cage from data-center-4\n3 lesson(s) back: Ethernet, Bandwidth from data-center-2\n7 lesson(s) back: Smartphone, Tablet from tech-gadgets-1"
+  },
+  {
+    "lessonId": "drone-workshop-2",
+    "lessonName": "The Drone Workshop 2",
+    "unitId": "drone-workshop",
+    "unitName": "The Drone Workshop",
+    "unitOrder": 169,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 745,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Flight Controller",
+      "Gps Module",
+      "Antenna",
+      "Camera",
+      "Gimbal",
+      "Transmitter",
+      "Receiver",
+      "Joystick",
+      "Throttle",
+      "Yaw",
+      "Pitch",
+      "Roll",
+      "Trim",
+      "Failsafe",
+      "Return To Home"
+    ],
+    "targetWordsArabic": [
+      "متحكّم الطيران",
+      "وحدة نظام تحديد المواقع",
+      "هوائي",
+      "كاميرا",
+      "مثبت كاميرا",
+      "جهاز إرسال",
+      "جهاز استقبال",
+      "مصطلح تقني أو أداة يُسمّى «جويستيك»",
+      "مصطلح تقني أو أداة يُسمّى «ثروتتلي»",
+      "مصطلح تقني أو أداة يُسمّى «ياو»",
+      "حدّة الصوت",
+      "مصطلح تقني أو أداة يُسمّى «رولل»",
+      "سطح يُسمّى «تريم»",
+      "وضع أمان تلقائي",
+      "مصطلح تقني أو أداة يُسمّى «ريتورن تو هومي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Drone Workshop to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the drone workshop vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Flight Controller", "Gps Module", "Antenna", "Camera"],
+          "scenario": "The engineer or technician checks flight controller, gps module, antenna, and camera. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Flight Controller", "Gps Module", "Antenna", "Camera"],
+            "expectedAnswer": "Flight Controller"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks flight controller, gps module, antenna, and camera. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Gimbal", "Transmitter", "Receiver", "Joystick"],
+          "scenario": "The engineer or technician checks gimbal, transmitter, receiver, and joystick. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Gimbal", "Transmitter", "Receiver", "Joystick"],
+            "expectedAnswer": "Gimbal"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks gimbal, transmitter, receiver, and joystick. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Throttle", "Yaw", "Pitch", "Roll"],
+          "scenario": "The engineer or technician checks throttle, yaw, pitch, and roll. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Throttle", "Yaw", "Pitch", "Roll"],
+            "expectedAnswer": "Throttle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks throttle, yaw, pitch, and roll. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Trim", "Failsafe", "Return To Home"],
+          "scenario": "The engineer or technician checks trim, failsafe, and return to home. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Trim", "Failsafe", "Return To Home"],
+            "expectedAnswer": "Trim"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks trim, failsafe, and return to home. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Drone Workshop: Report Excerpt",
+      "text": "A realistic case involving the drone workshop shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks flight controller, gps module, antenna, and camera. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks gimbal, transmitter, receiver, and joystick. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks throttle, yaw, pitch, and roll. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks trim, failsafe, and return to home. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Drone Workshop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Flight Controller"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gimbal"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Throttle"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Trim"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Flight Controller"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Quadcopter” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Drone Workshop: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Quadcopter, Hexacopter from drone-workshop-1\n3 lesson(s) back: Air Conditioner, Chiller from data-center-3\n7 lesson(s) back: Smart Bulb, Security Camera from tech-gadgets-2"
+  },
+  {
+    "lessonId": "drone-workshop-3",
+    "lessonName": "The Drone Workshop 3",
+    "unitId": "drone-workshop",
+    "unitName": "The Drone Workshop",
+    "unitOrder": 169,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 746,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Soldering Iron",
+      "Multimeter",
+      "Screwdriver",
+      "Hex Wrench",
+      "Pliers",
+      "Heat Shrink",
+      "Zip Tie",
+      "Loctite",
+      "Balance Charger",
+      "Prop Balancer",
+      "Firmware",
+      "Ground Station",
+      "Flight Log",
+      "Waypoint",
+      "Geofence"
+    ],
+    "targetWordsArabic": [
+      "أداة يُسمّى «سولديرينج يرون»",
+      "ملتيميتر",
+      "مفك براغي",
+      "مصطلح تقني أو أداة يُسمّى «هيكس ورينتش»",
+      "كماشة",
+      "مصطلح تقني أو أداة يُسمّى «هيات شرينك»",
+      "رباط بلاستيكي",
+      "لاصق لولبي",
+      "شاحن توازن",
+      "مصطلح تقني أو أداة يُسمّى «بروب بالانكير»",
+      "برمجيات ثابتة",
+      "مصطلح تقني أو أداة يُسمّى «جرووند ستاتيون»",
+      "مصطلح تقني أو أداة يُسمّى «فليغت لوج»",
+      "نقطة مسار",
+      "سياج جغرافي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Drone Workshop to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the drone workshop vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Soldering Iron", "Multimeter", "Screwdriver", "Hex Wrench"],
+          "scenario": "The engineer or technician checks soldering iron, multimeter, screwdriver, and hex wrench. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Soldering Iron", "Multimeter", "Screwdriver", "Hex Wrench"],
+            "expectedAnswer": "Soldering Iron"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks soldering iron, multimeter, screwdriver, and hex wrench. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Pliers", "Heat Shrink", "Zip Tie", "Loctite"],
+          "scenario": "The engineer or technician checks pliers, heat shrink, zip tie, and loctite. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pliers", "Heat Shrink", "Zip Tie", "Loctite"],
+            "expectedAnswer": "Pliers"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks pliers, heat shrink, zip tie, and loctite. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Balance Charger", "Prop Balancer", "Firmware", "Ground Station"],
+          "scenario": "The engineer or technician checks balance charger, prop balancer, firmware, and ground station. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Balance Charger", "Prop Balancer", "Firmware", "Ground Station"],
+            "expectedAnswer": "Balance Charger"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks balance charger, prop balancer, firmware, and ground station. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Flight Log", "Waypoint", "Geofence"],
+          "scenario": "The engineer or technician checks flight log, waypoint, and geofence. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Flight Log", "Waypoint", "Geofence"],
+            "expectedAnswer": "Flight Log"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks flight log, waypoint, and geofence. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Drone Workshop: Workplace/Academic Scenario",
+      "text": "A realistic case involving the drone workshop shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks soldering iron, multimeter, screwdriver, and hex wrench. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks pliers, heat shrink, zip tie, and loctite. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks balance charger, prop balancer, firmware, and ground station. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks flight log, waypoint, and geofence. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Drone Workshop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Soldering Iron"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pliers"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Balance Charger"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Flight Log"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Soldering Iron"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Flight Controller” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Drone Workshop: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Flight Controller, Gps Module from drone-workshop-2\n3 lesson(s) back: Access Log, Cage from data-center-4\n7 lesson(s) back: Mechanical Keyboard, Ergonomic Mouse from tech-gadgets-3"
+  },
+  {
+    "lessonId": "drone-workshop-4",
+    "lessonName": "The Drone Workshop 4",
+    "unitId": "drone-workshop",
+    "unitName": "The Drone Workshop",
+    "unitOrder": 169,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 747,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Telemetry",
+      "Pid Tuning",
+      "Calibration",
+      "Simulator",
+      "Mapping",
+      "Registration",
+      "License",
+      "No Fly Zone",
+      "Visual Line Of Sight",
+      "Altitude Limit",
+      "Pre Flight Check",
+      "Spotter",
+      "Insurance",
+      "Airspace",
+      "Faa"
+    ],
+    "targetWordsArabic": [
+      "قياس عن بعد",
+      "مصطلح تقني أو أداة يُسمّى «بيد تونينج»",
+      "معايرة",
+      "محاكي",
+      "رسم خرائط",
+      "تسجيل",
+      "ترخيص",
+      "مصطلح تقني أو أداة يُسمّى «نو فلي زوني»",
+      "مصطلح تقني أو أداة يُسمّى «فيسوال ليني وف سيغت»",
+      "مصطلح تقني أو أداة يُسمّى «التيتودي ليميت»",
+      "فحص ما قبل الطيران",
+      "مراقب",
+      "تأمين",
+      "مجال جوي",
+      "إدارة الطيران الفدرالية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Drone Workshop to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the drone workshop vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "opinion paragraph",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Telemetry", "Pid Tuning", "Calibration", "Simulator"],
+          "scenario": "The engineer or technician checks telemetry, pid tuning, calibration, and simulator. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Telemetry", "Pid Tuning", "Calibration", "Simulator"],
+            "expectedAnswer": "Telemetry"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks telemetry, pid tuning, calibration, and simulator. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Mapping", "Registration", "License", "No Fly Zone"],
+          "scenario": "The engineer or technician checks mapping, registration, license, and no fly zone. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mapping", "Registration", "License", "No Fly Zone"],
+            "expectedAnswer": "Mapping"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks mapping, registration, license, and no fly zone. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Visual Line Of Sight", "Altitude Limit", "Pre Flight Check", "Spotter"],
+          "scenario": "The engineer or technician checks visual line of sight, altitude limit, pre flight check, and spotter. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Visual Line Of Sight", "Altitude Limit", "Pre Flight Check", "Spotter"],
+            "expectedAnswer": "Visual Line Of Sight"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks visual line of sight, altitude limit, pre flight check, and spotter. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Insurance", "Airspace", "Faa"],
+          "scenario": "The engineer or technician checks insurance, airspace, and faa. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Insurance", "Airspace", "Faa"],
+            "expectedAnswer": "Insurance"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks insurance, airspace, and faa. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Drone Workshop: Opinion Paragraph",
+      "text": "A realistic case involving the drone workshop shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks telemetry, pid tuning, calibration, and simulator. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks mapping, registration, license, and no fly zone. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks visual line of sight, altitude limit, pre flight check, and spotter. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks insurance, airspace, and faa. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Drone Workshop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Telemetry"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mapping"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Visual Line Of Sight"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Insurance"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Telemetry"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Soldering Iron” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Drone Workshop: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Soldering Iron, Multimeter from drone-workshop-3\n3 lesson(s) back: Quadcopter, Hexacopter from drone-workshop-1\n7 lesson(s) back: Server Rack, Blade Server from data-center-1"
+  }
+]

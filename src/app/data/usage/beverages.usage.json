@@ -1,0 +1,553 @@
+﻿[
+  {
+    "lessonId": "beverages-1",
+    "lessonName": "Beverages 1",
+    "unitId": "beverages",
+    "unitName": "Beverages",
+    "unitOrder": 37,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 179,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Coffee",
+      "Tea",
+      "Hot Chocolate",
+      "Espresso",
+      "Cappuccino",
+      "Latte",
+      "Mocha",
+      "Herbal Tea",
+      "Green Tea",
+      "Chai",
+      "Water",
+      "Iced Tea",
+      "Lemonade",
+      "Iced Coffee",
+      "Milkshake"
+    ],
+    "targetWordsArabic": [
+      "قهوة",
+      "شاي",
+      "شوكولاتة ساخن",
+      "إسبريسو",
+      "كابتشينو",
+      "لاتيه",
+      "موكا",
+      "شاي عشبي",
+      "شاي أخضر",
+      "شاي",
+      "ماء",
+      "شاي مثلج",
+      "ليمونادة",
+      "قهوة مثلج",
+      "مخفوق الحليب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Beverages to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key beverages vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Coffee", "Tea", "Hot Chocolate"],
+          "scenario": "During a busy order, the worker and customer deal with coffee, tea, and hot chocolate. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Coffee", "Tea", "Hot Chocolate"],
+            "expectedAnswer": "Coffee"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with coffee, tea, and hot chocolate. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Espresso", "Cappuccino", "Latte"],
+          "scenario": "During a busy order, the worker and customer deal with espresso, cappuccino, and latte. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Espresso", "Cappuccino", "Latte"],
+            "expectedAnswer": "Espresso"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with espresso, cappuccino, and latte. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Mocha", "Herbal Tea", "Green Tea"],
+          "scenario": "During a busy order, the worker and customer deal with mocha, herbal tea, and green tea. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Mocha", "Herbal Tea", "Green Tea"],
+            "expectedAnswer": "Mocha"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with mocha, herbal tea, and green tea. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Chai", "Water", "Iced Tea"],
+          "scenario": "During a busy order, the worker and customer deal with chai, water, and iced tea. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Chai", "Water", "Iced Tea"],
+            "expectedAnswer": "Chai"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with chai, water, and iced tea. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Lemonade", "Iced Coffee", "Milkshake"],
+          "scenario": "During a busy order, the worker and customer deal with lemonade, iced coffee, and milkshake. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Lemonade", "Iced Coffee", "Milkshake"],
+            "expectedAnswer": "Lemonade"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with lemonade, iced coffee, and milkshake. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Beverages: Mini Dialogue",
+      "text": "Maya is in a situation connected to beverages. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with coffee, tea, and hot chocolate. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with espresso, cappuccino, and latte. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with mocha, herbal tea, and green tea. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Beverages. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Coffee"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Espresso"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mocha"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Chai"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lemonade"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Coffee"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Hot Chocolate"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Seitan” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Beverages: In Context",
+      "idea": "30-45 seconds contextual scene in the shop. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Seitan, Plant Milk from grains-dairy-4\n3 lesson(s) back: Pita, Tortilla from grains-dairy-2\n7 lesson(s) back: Roast, Ground Beef from meat-seafood-2"
+  },
+  {
+    "lessonId": "beverages-2",
+    "lessonName": "Beverages 2",
+    "unitId": "beverages",
+    "unitName": "Beverages",
+    "unitOrder": 37,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 180,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Smoothie",
+      "Slushie",
+      "Sparkling Water",
+      "Tonic Water",
+      "Cold Brew",
+      "Orange Juice",
+      "Apple Juice",
+      "Grape Juice",
+      "Cranberry Juice",
+      "Tomato Juice",
+      "Carrot Juice",
+      "Pineapple Juice",
+      "Mango Juice",
+      "Pomegranate Juice",
+      "Fresh Squeeze"
+    ],
+    "targetWordsArabic": [
+      "سموثي",
+      "مشروب سلاش مثلّج",
+      "ماء غازي",
+      "ماء منشط",
+      "قهوة أو شاي مُحضَّر بالنقع البارد",
+      "عصير برتقالي",
+      "عصير تفاح",
+      "عصير عنب",
+      "عصير التوت البري",
+      "عصير طماطم",
+      "عصير جزر",
+      "عصير الأناناس",
+      "عصير المانجو",
+      "عصير الرمان",
+      "عصير طازج مُعَصَّر"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Beverages to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key beverages vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Smoothie", "Slushie", "Sparkling Water"],
+          "scenario": "During a busy order, the worker and customer deal with smoothie, slushie, and sparkling water. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Smoothie", "Slushie", "Sparkling Water"],
+            "expectedAnswer": "Smoothie"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with smoothie, slushie, and sparkling water. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Tonic Water", "Cold Brew", "Orange Juice"],
+          "scenario": "During a busy order, the worker and customer deal with tonic water, cold brew, and orange juice. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Tonic Water", "Cold Brew", "Orange Juice"],
+            "expectedAnswer": "Tonic Water"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with tonic water, cold brew, and orange juice. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Apple Juice", "Grape Juice", "Cranberry Juice"],
+          "scenario": "During a busy order, the worker and customer deal with apple juice, grape juice, and cranberry juice. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Apple Juice", "Grape Juice", "Cranberry Juice"],
+            "expectedAnswer": "Apple Juice"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with apple juice, grape juice, and cranberry juice. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Tomato Juice", "Carrot Juice", "Pineapple Juice"],
+          "scenario": "During a busy order, the worker and customer deal with tomato juice, carrot juice, and pineapple juice. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Tomato Juice", "Carrot Juice", "Pineapple Juice"],
+            "expectedAnswer": "Tomato Juice"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with tomato juice, carrot juice, and pineapple juice. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Mango Juice", "Pomegranate Juice", "Fresh Squeeze"],
+          "scenario": "During a busy order, the worker and customer deal with mango juice, pomegranate juice, and fresh squeeze. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Mango Juice", "Pomegranate Juice", "Fresh Squeeze"],
+            "expectedAnswer": "Mango Juice"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with mango juice, pomegranate juice, and fresh squeeze. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Beverages: Simple Message",
+      "text": "Maya is in a situation connected to beverages. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with smoothie, slushie, and sparkling water. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with tonic water, cold brew, and orange juice. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with apple juice, grape juice, and cranberry juice. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Beverages. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Smoothie"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tonic Water"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Apple Juice"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tomato Juice"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mango Juice"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Smoothie"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Sparkling Water"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Coffee” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Beverages: In Context",
+      "idea": "30-45 seconds contextual scene in the shop. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Coffee, Tea from beverages-1\n3 lesson(s) back: Milk, Cheese from grains-dairy-3\n7 lesson(s) back: Bacon, Sausage from meat-seafood-3"
+  },
+  {
+    "lessonId": "beverages-3",
+    "lessonName": "Beverages 3",
+    "unitId": "beverages",
+    "unitName": "Beverages",
+    "unitOrder": 37,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 181,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Soda",
+      "Cola",
+      "Ginger Ale",
+      "Root Beer",
+      "Cream Soda",
+      "Lemon-Lime",
+      "Energy Drink",
+      "Sports Drink",
+      "Kombucha",
+      "Coconut Water",
+      "Beer",
+      "Wine",
+      "Champagne",
+      "Whiskey",
+      "Vodka"
+    ],
+    "targetWordsArabic": [
+      "مشروب غازي",
+      "كولا",
+      "مشروب يُسمّى «جينجير الي»",
+      "جعة جذر",
+      "مشروب غازي كريمة",
+      "نكهة أو مشروب الليمون والليمون الأخضر",
+      "يشرب طاقة",
+      "يشرب رياضي",
+      "كومبوتشا؛ شاي مُخمَّر",
+      "ماء جوز الهند",
+      "جعة",
+      "نبيذ",
+      "شمبانيا",
+      "ويسكي",
+      "فودكا"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Beverages to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key beverages vocabulary in simple context.",
+      "textType": "notice-style text",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Soda", "Cola", "Ginger Ale"],
+          "scenario": "During a busy order, the worker and customer deal with soda, cola, and ginger ale. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Soda", "Cola", "Ginger Ale"],
+            "expectedAnswer": "Soda"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with soda, cola, and ginger ale. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Root Beer", "Cream Soda", "Lemon-Lime"],
+          "scenario": "During a busy order, the worker and customer deal with root beer, cream soda, and lemon-lime. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Root Beer", "Cream Soda", "Lemon-Lime"],
+            "expectedAnswer": "Root Beer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with root beer, cream soda, and lemon-lime. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Energy Drink", "Sports Drink", "Kombucha"],
+          "scenario": "During a busy order, the worker and customer deal with energy drink, sports drink, and kombucha. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Energy Drink", "Sports Drink", "Kombucha"],
+            "expectedAnswer": "Energy Drink"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with energy drink, sports drink, and kombucha. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Coconut Water", "Beer", "Wine"],
+          "scenario": "During a busy order, the worker and customer deal with coconut water, beer, and wine. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Coconut Water", "Beer", "Wine"],
+            "expectedAnswer": "Coconut Water"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with coconut water, beer, and wine. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Champagne", "Whiskey", "Vodka"],
+          "scenario": "During a busy order, the worker and customer deal with champagne, whiskey, and vodka. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Champagne", "Whiskey", "Vodka"],
+            "expectedAnswer": "Champagne"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with champagne, whiskey, and vodka. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Beverages: Notice-Style Text",
+      "text": "Maya is in a situation connected to beverages. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with soda, cola, and ginger ale. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with root beer, cream soda, and lemon-lime. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with energy drink, sports drink, and kombucha. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Beverages. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Soda"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Root Beer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Energy Drink"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Coconut Water"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Champagne"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Soda"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Ginger Ale"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Smoothie” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Beverages: In Context",
+      "idea": "30-45 seconds contextual scene in the shop. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Smoothie, Slushie from beverages-2\n3 lesson(s) back: Seitan, Plant Milk from grains-dairy-4\n7 lesson(s) back: Loin, Rack from meat-seafood-4"
+  },
+  {
+    "lessonId": "beverages-4",
+    "lessonName": "Beverages 4",
+    "unitId": "beverages",
+    "unitName": "Beverages",
+    "unitOrder": 37,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 182,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": ["Gin", "Rum", "Tequila", "Brandy", "Cocktail"],
+    "targetWordsArabic": ["جين", "روم", "تيكيلا", "براندي", "مشروب مختلط"],
+    "usage": {
+      "goal": "Use the vocabulary from Beverages to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key beverages vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Gin", "Rum", "Tequila"],
+          "scenario": "During a busy order, the worker and customer deal with gin, rum, and tequila. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Gin", "Rum", "Tequila"],
+            "expectedAnswer": "Gin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with gin, rum, and tequila. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Brandy", "Cocktail"],
+          "scenario": "During a busy order, the worker and customer deal with brandy and cocktail. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Brandy", "Cocktail"],
+            "expectedAnswer": "Brandy"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with brandy and cocktail. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Beverages: Short Description",
+      "text": "Maya is in a situation connected to beverages. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with gin, rum, and tequila. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with brandy and cocktail. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Beverages. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gin"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Brandy"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Gin"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Tequila"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Soda” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Beverages: In Context",
+      "idea": "30-45 seconds contextual scene in the shop. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Soda, Cola from beverages-3\n3 lesson(s) back: Coffee, Tea from beverages-1\n7 lesson(s) back: Rice, Wheat from grains-dairy-1"
+  }
+]

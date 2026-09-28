@@ -1,0 +1,646 @@
+﻿[
+  {
+    "lessonId": "shopping-mall-1",
+    "lessonName": "The Shopping Mall 1",
+    "unitId": "shopping-mall",
+    "unitName": "The Shopping Mall",
+    "unitOrder": 81,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 355,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Clothing Store",
+      "Shoe Store",
+      "Electronics Store",
+      "Bookstore",
+      "Toy Store",
+      "Jewelry Store",
+      "Sports Store",
+      "Pet Store",
+      "Pharmacy",
+      "Department Store",
+      "Escalator",
+      "Elevator",
+      "Fountain",
+      "Directory",
+      "Bench"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «كلوثينج ستوري»",
+      "مصطلح مرتبط بالموضوع يُسمّى «شوي ستوري»",
+      "متجر إلكترونيات",
+      "مكتبة بيع كتب",
+      "متجر ألعاب",
+      "مصطلح مرتبط بالموضوع يُسمّى «جيويلري ستوري»",
+      "متجر مستلزمات رياضية",
+      "متجر مستلزمات حيوانات أليفة",
+      "صيدلية",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديبارتمينت ستوري»",
+      "سلم متحرك",
+      "مصعد",
+      "نافورة",
+      "دليل",
+      "مقعد"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Shopping Mall to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the shopping mall vocabulary in connected everyday context.",
+      "textType": "email",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Clothing Store", "Shoe Store", "Electronics Store"],
+          "scenario": "The lesson places clothing store, shoe store, and electronics store in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Clothing Store", "Shoe Store", "Electronics Store"],
+            "expectedAnswer": "Clothing Store"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places clothing store, shoe store, and electronics store in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bookstore", "Toy Store", "Jewelry Store"],
+          "scenario": "The group moves between the bookstore, toy store, and jewelry store as the activity continues.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Bookstore", "Toy Store", "Jewelry Store"],
+            "expectedAnswer": "Bookstore"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group moves between the bookstore, toy store, and jewelry store as the activity continues. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Sports Store", "Pet Store", "Pharmacy"],
+          "scenario": "The lesson places sports store, pet store, and pharmacy in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Sports Store", "Pet Store", "Pharmacy"],
+            "expectedAnswer": "Sports Store"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places sports store, pet store, and pharmacy in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Department Store", "Escalator", "Elevator"],
+          "scenario": "The lesson places department store, escalator, and elevator in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Department Store", "Escalator", "Elevator"],
+            "expectedAnswer": "Department Store"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places department store, escalator, and elevator in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Fountain", "Directory", "Bench"],
+          "scenario": "The lesson places fountain, directory, and bench in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Fountain", "Directory", "Bench"],
+            "expectedAnswer": "Fountain"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places fountain, directory, and bench in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Shopping Mall: Email",
+      "text": "Omar has an everyday task connected to the shopping mall. The new vocabulary helps him follow the situation and respond clearly. The lesson places clothing store, shoe store, and electronics store in one coherent situation so the learner can connect meaning, context, and use. The group moves between the bookstore, toy store, and jewelry store as the activity continues. The lesson places sports store, pet store, and pharmacy in one coherent situation so the learner can connect meaning, context, and use. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Shopping Mall. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Clothing Store"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bookstore"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sports Store"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Department Store"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fountain"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Clothing Store"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Bookstore"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Gardening” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Shopping Mall: In Context",
+      "idea": "35-50 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Gardening, Bonsai from creative-hobbies-3\n3 lesson(s) back: Photography, Video Editing from creative-hobbies-1\n7 lesson(s) back: Confident, Insecure from personality-character-4"
+  },
+  {
+    "lessonId": "shopping-mall-2",
+    "lessonName": "The Shopping Mall 2",
+    "unitId": "shopping-mall",
+    "unitName": "The Shopping Mall",
+    "unitOrder": 81,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 356,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Restroom",
+      "Parking Garage",
+      "Entrance",
+      "Exit",
+      "Security Office",
+      "Food Court",
+      "Tray",
+      "Table",
+      "Chair",
+      "Trash Can",
+      "Fast Food",
+      "Drink Station",
+      "Menu Board",
+      "Line",
+      "High Chair"
+    ],
+    "targetWordsArabic": [
+      "دورة مياه",
+      "مرآب سيارات",
+      "مدخل",
+      "مخرج",
+      "مكتب الأمن",
+      "طعام يُسمّى «فوود كوورت»",
+      "صينية",
+      "طاولة",
+      "كُرْسِيّ",
+      "سلة مهملات",
+      "طعام يُسمّى «فاست فوود»",
+      "محطة مشروبات",
+      "لوحة قائمة الطعام",
+      "طابور",
+      "كرسي أطفال مرتفع"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Shopping Mall to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the shopping mall vocabulary in connected everyday context.",
+      "textType": "personal message",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Restroom", "Parking Garage", "Entrance"],
+          "scenario": "The lesson places restroom, parking garage, and entrance in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Restroom", "Parking Garage", "Entrance"],
+            "expectedAnswer": "Restroom"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places restroom, parking garage, and entrance in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Exit", "Security Office", "Food Court"],
+          "scenario": "The lesson places exit, security office, and food court in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Exit", "Security Office", "Food Court"],
+            "expectedAnswer": "Exit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places exit, security office, and food court in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Tray", "Table", "Chair"],
+          "scenario": "The lesson places tray, table, and chair in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Tray", "Table", "Chair"],
+            "expectedAnswer": "Tray"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places tray, table, and chair in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Trash Can", "Fast Food", "Drink Station"],
+          "scenario": "The lesson places trash can, fast food, and drink station in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Trash Can", "Fast Food", "Drink Station"],
+            "expectedAnswer": "Trash Can"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places trash can, fast food, and drink station in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Menu Board", "Line", "High Chair"],
+          "scenario": "The lesson places menu board, line, and high chair in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Menu Board", "Line", "High Chair"],
+            "expectedAnswer": "Menu Board"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places menu board, line, and high chair in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Shopping Mall: Personal Message",
+      "text": "Omar has an everyday task connected to the shopping mall. The new vocabulary helps him follow the situation and respond clearly. The lesson places restroom, parking garage, and entrance in one coherent situation so the learner can connect meaning, context, and use. The lesson places exit, security office, and food court in one coherent situation so the learner can connect meaning, context, and use. The lesson places tray, table, and chair in one coherent situation so the learner can connect meaning, context, and use. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Shopping Mall. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Restroom"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Exit"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tray"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Trash Can"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Menu Board"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Restroom"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Exit"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Clothing Store” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Shopping Mall: In Context",
+      "idea": "35-50 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Clothing Store, Shoe Store from shopping-mall-1\n3 lesson(s) back: Weaving, Macramé from creative-hobbies-2\n7 lesson(s) back: Novel, Comic Book from indoor-hobbies-1"
+  },
+  {
+    "lessonId": "shopping-mall-3",
+    "lessonName": "The Shopping Mall 3",
+    "unitId": "shopping-mall",
+    "unitName": "The Shopping Mall",
+    "unitOrder": 81,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 357,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Shopping Bag",
+      "Wallet",
+      "Credit Card",
+      "Receipt",
+      "Sale Sign",
+      "Mannequin",
+      "Fitting Room",
+      "Hanger",
+      "Size Tag",
+      "Price Tag",
+      "Cinema",
+      "Arcade",
+      "Bowling Alley",
+      "Play Area",
+      "Carousel"
+    ],
+    "targetWordsArabic": [
+      "كيس تسوق",
+      "محفظة",
+      "مصطلح مرتبط بالموضوع يُسمّى «كريديت كارد»",
+      "إيصال",
+      "لافتة تخفيضات",
+      "مانيكان",
+      "غرفة قياس",
+      "شَمَّاعَةُ مَلابِس",
+      "بطاقة المقاس",
+      "جزء يُسمّى «بريكي تاج»",
+      "سينما",
+      "صالة ألعاب",
+      "صالة بولينغ",
+      "لعبة يُسمّى «بلاي اريا»",
+      "دوامة ألعاب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Shopping Mall to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the shopping mall vocabulary in connected everyday context.",
+      "textType": "short dialogue",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Shopping Bag", "Wallet", "Credit Card"],
+          "scenario": "The lesson places shopping bag, wallet, and credit card in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Shopping Bag", "Wallet", "Credit Card"],
+            "expectedAnswer": "Shopping Bag"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places shopping bag, wallet, and credit card in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Receipt", "Sale Sign", "Mannequin"],
+          "scenario": "The lesson places receipt, sale sign, and mannequin in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Receipt", "Sale Sign", "Mannequin"],
+            "expectedAnswer": "Receipt"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places receipt, sale sign, and mannequin in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Fitting Room", "Hanger", "Size Tag"],
+          "scenario": "The lesson places fitting room, hanger, and size tag in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Fitting Room", "Hanger", "Size Tag"],
+            "expectedAnswer": "Fitting Room"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places fitting room, hanger, and size tag in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Price Tag", "Cinema", "Arcade"],
+          "scenario": "The lesson places price tag, cinema, and arcade in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Price Tag", "Cinema", "Arcade"],
+            "expectedAnswer": "Price Tag"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places price tag, cinema, and arcade in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Bowling Alley", "Play Area", "Carousel"],
+          "scenario": "The lesson places bowling alley, play area, and carousel in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Bowling Alley", "Play Area", "Carousel"],
+            "expectedAnswer": "Bowling Alley"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places bowling alley, play area, and carousel in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Shopping Mall: Short Dialogue",
+      "text": "Omar has an everyday task connected to the shopping mall. The new vocabulary helps him follow the situation and respond clearly. The lesson places shopping bag, wallet, and credit card in one coherent situation so the learner can connect meaning, context, and use. The lesson places receipt, sale sign, and mannequin in one coherent situation so the learner can connect meaning, context, and use. The lesson places fitting room, hanger, and size tag in one coherent situation so the learner can connect meaning, context, and use. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Shopping Mall. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Shopping Bag"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Receipt"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fitting Room"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Price Tag"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bowling Alley"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Shopping Bag"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Receipt"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Restroom” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Shopping Mall: In Context",
+      "idea": "35-50 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Restroom, Parking Garage from shopping-mall-2\n3 lesson(s) back: Gardening, Bonsai from creative-hobbies-3\n7 lesson(s) back: Calligraphy, Pottery from indoor-hobbies-2"
+  },
+  {
+    "lessonId": "shopping-mall-4",
+    "lessonName": "The Shopping Mall 4",
+    "unitId": "shopping-mall",
+    "unitName": "The Shopping Mall",
+    "unitOrder": 81,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 358,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Photo Booth",
+      "Karaoke",
+      "Trampoline Park",
+      "Mini Golf",
+      "Climbing Wall",
+      "Shopper",
+      "Security Guard",
+      "Janitor",
+      "Cashier",
+      "Sales Clerk",
+      "Information Desk",
+      "Gift Wrapping",
+      "Delivery Pickup",
+      "Lost And Found",
+      "Stroller"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «فوتو بووث»",
+      "كاريوكي",
+      "منتزه ترامبولين داخلي",
+      "غولف مصغر",
+      "جدار تسلق",
+      "متسوق",
+      "حارس أمن",
+      "عامل نظافة",
+      "أمين صندوق",
+      "موظف مبيعات",
+      "مبنى يُسمّى «ينفورماتيون ديسك»",
+      "تغليف الهدايا",
+      "استلام الطلبات",
+      "مكان يُسمّى «لوست اند فووند»",
+      "عربة أطفال"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Shopping Mall to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the shopping mall vocabulary in connected everyday context.",
+      "textType": "tips/notice",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Photo Booth", "Karaoke", "Trampoline Park"],
+          "scenario": "The lesson places photo booth, karaoke, and trampoline park in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Photo Booth", "Karaoke", "Trampoline Park"],
+            "expectedAnswer": "Photo Booth"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places photo booth, karaoke, and trampoline park in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Mini Golf", "Climbing Wall", "Shopper"],
+          "scenario": "The lesson places mini golf, climbing wall, and shopper in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Mini Golf", "Climbing Wall", "Shopper"],
+            "expectedAnswer": "Mini Golf"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places mini golf, climbing wall, and shopper in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Security Guard", "Janitor", "Cashier"],
+          "scenario": "The security guard, janitor, and cashier appear in the same situation, each with a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Security Guard", "Janitor", "Cashier"],
+            "expectedAnswer": "Security Guard"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The security guard, janitor, and cashier appear in the same situation, each with a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Sales Clerk", "Information Desk", "Gift Wrapping"],
+          "scenario": "The lesson places sales clerk, information desk, and gift wrapping in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Sales Clerk", "Information Desk", "Gift Wrapping"],
+            "expectedAnswer": "Sales Clerk"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places sales clerk, information desk, and gift wrapping in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Delivery Pickup", "Lost And Found", "Stroller"],
+          "scenario": "The lesson places delivery pickup, lost and found, and stroller in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Delivery Pickup", "Lost And Found", "Stroller"],
+            "expectedAnswer": "Delivery Pickup"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places delivery pickup, lost and found, and stroller in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Shopping Mall: Tips/Notice",
+      "text": "Omar has an everyday task connected to the shopping mall. The new vocabulary helps him follow the situation and respond clearly. The lesson places photo booth, karaoke, and trampoline park in one coherent situation so the learner can connect meaning, context, and use. The lesson places mini golf, climbing wall, and shopper in one coherent situation so the learner can connect meaning, context, and use. The security guard, janitor, and cashier appear in the same situation, each with a different role. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Shopping Mall. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Photo Booth"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mini Golf"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Security Guard"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sales Clerk"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Delivery Pickup"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Photo Booth"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Mini Golf"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Shopping Bag” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Shopping Mall: In Context",
+      "idea": "35-50 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Shopping Bag, Wallet from shopping-mall-3\n3 lesson(s) back: Clothing Store, Shoe Store from shopping-mall-1\n7 lesson(s) back: Stamps, Coins from indoor-hobbies-3"
+  }
+]

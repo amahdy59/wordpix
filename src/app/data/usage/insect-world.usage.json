@@ -1,0 +1,600 @@
+﻿[
+  {
+    "lessonId": "insect-world-1",
+    "lessonName": "The Insect World 1",
+    "unitId": "insect-world",
+    "unitName": "The Insect World",
+    "unitOrder": 117,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 541,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Ant",
+      "Bee",
+      "Butterfly",
+      "Ladybug",
+      "Dragonfly",
+      "Grasshopper",
+      "Beetle",
+      "Fly",
+      "Mosquito",
+      "Cricket",
+      "Wing",
+      "Antenna",
+      "Leg",
+      "Thorax",
+      "Abdomen"
+    ],
+    "targetWordsArabic": [
+      "نملة",
+      "حشرة يُسمّى «بيي»",
+      "فراشة",
+      "دعسوقة",
+      "يعسوب",
+      "جرادة",
+      "خنفساء",
+      "كائن أو عنصر طبيعي يُسمّى «فلي»",
+      "بعوضة",
+      "حشرة يُسمّى «كريكيت»",
+      "جناح",
+      "هوائي",
+      "ساق",
+      "صدر",
+      "بطن"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Insect World to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the insect world vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Ant", "Bee", "Butterfly", "Ladybug"],
+          "scenario": "The guide points out the ant, bee, butterfly, and ladybug and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Ant", "Bee", "Butterfly", "Ladybug"],
+            "expectedAnswer": "Ant"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the ant, bee, butterfly, and ladybug and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Dragonfly", "Grasshopper", "Beetle", "Fly"],
+          "scenario": "At the animal-care setting, staff and visitors focus on dragonfly, grasshopper, beetle, and fly. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dragonfly", "Grasshopper", "Beetle", "Fly"],
+            "expectedAnswer": "Dragonfly"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on dragonfly, grasshopper, beetle, and fly. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Mosquito", "Cricket", "Wing", "Antenna"],
+          "scenario": "At the animal-care setting, staff and visitors focus on mosquito, cricket, wing, and antenna. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mosquito", "Cricket", "Wing", "Antenna"],
+            "expectedAnswer": "Mosquito"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on mosquito, cricket, wing, and antenna. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Leg", "Thorax", "Abdomen"],
+          "scenario": "At the animal-care setting, staff and visitors focus on leg, thorax, and abdomen. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Leg", "Thorax", "Abdomen"],
+            "expectedAnswer": "Leg"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on leg, thorax, and abdomen. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Insect World: Practical Article",
+      "text": "A practical situation involving the insect world requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide points out the ant, bee, butterfly, and ladybug and asks the group to notice how the animals move or behave. At the animal-care setting, staff and visitors focus on dragonfly, grasshopper, beetle, and fly. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on mosquito, cricket, wing, and antenna. The words connect to caring for, observing, or learning about animals. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Insect World. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ant"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dragonfly"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mosquito"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Leg"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Ant"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Ladybug"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Camouflage” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Insect World: In Context",
+      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Camouflage, Mimicry from butterfly-garden-4\n3 lesson(s) back: Molt, Instar from butterfly-garden-2\n7 lesson(s) back: Flamingo, Crane from bird-sanctuary-2"
+  },
+  {
+    "lessonId": "insect-world-2",
+    "lessonName": "The Insect World 2",
+    "unitId": "insect-world",
+    "unitName": "The Insect World",
+    "unitOrder": 117,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 542,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Head",
+      "Eye",
+      "Mandible",
+      "Stinger",
+      "Proboscis",
+      "Hive",
+      "Anthill",
+      "Web",
+      "Cocoon",
+      "Nest",
+      "Burrow",
+      "Leaf",
+      "Bark",
+      "Soil",
+      "Pond Surface"
+    ],
+    "targetWordsArabic": [
+      "رأس",
+      "عين",
+      "فك سفلي",
+      "عضو يُسمّى «ستينجير»",
+      "خرطوم",
+      "كائن أو عنصر طبيعي يُسمّى «هيفي»",
+      "كائن أو عنصر طبيعي يُسمّى «انثيلل»",
+      "كائن أو عنصر طبيعي يُسمّى «ويب»",
+      "كائن أو عنصر طبيعي يُسمّى «كوكوون»",
+      "عش",
+      "كائن أو عنصر طبيعي يُسمّى «بورروو»",
+      "ورقة نبات",
+      "شجرة يُسمّى «بارك»",
+      "نبات يُسمّى «سويل»",
+      "كائن أو عنصر طبيعي يُسمّى «بوند سورفاكي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Insect World to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the insect world vocabulary to handle a practical situation and explain key details.",
+      "textType": "email",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Head", "Eye", "Mandible", "Stinger"],
+          "scenario": "At the animal-care setting, staff and visitors focus on head, eye, mandible, and stinger. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Head", "Eye", "Mandible", "Stinger"],
+            "expectedAnswer": "Head"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on head, eye, mandible, and stinger. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Proboscis", "Hive", "Anthill", "Web"],
+          "scenario": "At the animal-care setting, staff and visitors focus on proboscis, hive, anthill, and web. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Proboscis", "Hive", "Anthill", "Web"],
+            "expectedAnswer": "Proboscis"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on proboscis, hive, anthill, and web. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Cocoon", "Nest", "Burrow", "Leaf"],
+          "scenario": "At the animal-care setting, staff and visitors focus on cocoon, nest, burrow, and leaf. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cocoon", "Nest", "Burrow", "Leaf"],
+            "expectedAnswer": "Cocoon"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on cocoon, nest, burrow, and leaf. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Bark", "Soil", "Pond Surface"],
+          "scenario": "At the animal-care setting, staff and visitors focus on bark, soil, and pond surface. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bark", "Soil", "Pond Surface"],
+            "expectedAnswer": "Bark"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on bark, soil, and pond surface. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Insect World: Email",
+      "text": "A practical situation involving the insect world requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. At the animal-care setting, staff and visitors focus on head, eye, mandible, and stinger. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on proboscis, hive, anthill, and web. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on cocoon, nest, burrow, and leaf. The words connect to caring for, observing, or learning about animals. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Insect World. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Head"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Proboscis"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cocoon"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bark"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Head"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Stinger"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Ant” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Insect World: In Context",
+      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Ant, Bee from insect-world-1\n3 lesson(s) back: Milkweed, Lavender from butterfly-garden-3\n7 lesson(s) back: Beak, Feather from bird-sanctuary-3"
+  },
+  {
+    "lessonId": "insect-world-3",
+    "lessonName": "The Insect World 3",
+    "unitId": "insect-world",
+    "unitName": "The Insect World",
+    "unitOrder": 117,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 543,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Egg",
+      "Larva",
+      "Caterpillar",
+      "Pupa",
+      "Chrysalis",
+      "Metamorphosis",
+      "Molt",
+      "Nymph",
+      "Adult",
+      "Swarm",
+      "Pollinate",
+      "Sting",
+      "Crawl",
+      "Buzz",
+      "Dig"
+    ],
+    "targetWordsArabic": [
+      "بَيْضَة (بَيْض)",
+      "سمكة يُسمّى «لارفا»",
+      "يرقة",
+      "حشرة يُسمّى «بوبا»",
+      "عذراء الفراشة",
+      "تحول كامل",
+      "انسلاخ",
+      "حشرة يُسمّى «نيمف»",
+      "بالغ",
+      "كائن أو عنصر طبيعي يُسمّى «سوارم»",
+      "كائن أو عنصر طبيعي يُسمّى «بولليناتي»",
+      "كائن أو عنصر طبيعي يُسمّى «ستينج»",
+      "كائن أو عنصر طبيعي يُسمّى «كراول»",
+      "طنين",
+      "كائن أو عنصر طبيعي يُسمّى «ديج»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Insect World to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the insect world vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Egg", "Larva", "Caterpillar", "Pupa"],
+          "scenario": "At the animal-care setting, staff and visitors focus on egg, larva, caterpillar, and pupa. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Egg", "Larva", "Caterpillar", "Pupa"],
+            "expectedAnswer": "Egg"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on egg, larva, caterpillar, and pupa. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Chrysalis", "Metamorphosis", "Molt", "Nymph"],
+          "scenario": "At the animal-care setting, staff and visitors focus on chrysalis, metamorphosis, molt, and nymph. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Chrysalis", "Metamorphosis", "Molt", "Nymph"],
+            "expectedAnswer": "Chrysalis"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on chrysalis, metamorphosis, molt, and nymph. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Adult", "Swarm", "Pollinate", "Sting"],
+          "scenario": "At the animal-care setting, staff and visitors focus on adult, swarm, pollinate, and sting. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Adult", "Swarm", "Pollinate", "Sting"],
+            "expectedAnswer": "Adult"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on adult, swarm, pollinate, and sting. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Crawl", "Buzz", "Dig"],
+          "scenario": "At the animal-care setting, staff and visitors focus on crawl, buzz, and dig. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crawl", "Buzz", "Dig"],
+            "expectedAnswer": "Crawl"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on crawl, buzz, and dig. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Insect World: Review",
+      "text": "A practical situation involving the insect world requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. At the animal-care setting, staff and visitors focus on egg, larva, caterpillar, and pupa. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on chrysalis, metamorphosis, molt, and nymph. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on adult, swarm, pollinate, and sting. The words connect to caring for, observing, or learning about animals. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Insect World. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Egg"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Chrysalis"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Adult"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crawl"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Egg"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Pupa"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Head” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Insect World: In Context",
+      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Head, Eye from insect-world-2\n3 lesson(s) back: Camouflage, Mimicry from butterfly-garden-4\n7 lesson(s) back: Preen, Soar from bird-sanctuary-4"
+  },
+  {
+    "lessonId": "insect-world-4",
+    "lessonName": "The Insect World 4",
+    "unitId": "insect-world",
+    "unitName": "The Insect World",
+    "unitOrder": 117,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 544,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Spin",
+      "Camouflage",
+      "Migrate",
+      "Hibernate",
+      "Earthworm",
+      "Snail",
+      "Slug",
+      "Centipede",
+      "Millipede",
+      "Aphid",
+      "Praying Mantis",
+      "Firefly",
+      "Moth",
+      "Wasp"
+    ],
+    "targetWordsArabic": [
+      "كائن أو عنصر طبيعي يُسمّى «سبين»",
+      "تمويه",
+      "كائن أو عنصر طبيعي يُسمّى «ميجراتي»",
+      "كائن أو عنصر طبيعي يُسمّى «هيبيرناتي»",
+      "كائن أو عنصر طبيعي يُسمّى «يارثوورم»",
+      "كائن أو عنصر طبيعي يُسمّى «سنايل»",
+      "مشروب يُسمّى «سلوج»",
+      "حريش",
+      "كائن أو عنصر طبيعي يُسمّى «ميلليبيدي»",
+      "حشرة يُسمّى «افيد»",
+      "فرس النبي",
+      "يراعة",
+      "حشرة يُسمّى «موث»",
+      "كائن أو عنصر طبيعي يُسمّى «واسب»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Insect World to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the insect world vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Spin", "Camouflage", "Migrate", "Hibernate"],
+          "scenario": "At the animal-care setting, staff and visitors focus on spin, camouflage, migrate, and hibernate. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Spin", "Camouflage", "Migrate", "Hibernate"],
+            "expectedAnswer": "Spin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on spin, camouflage, migrate, and hibernate. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Earthworm", "Snail", "Slug", "Centipede"],
+          "scenario": "At the animal-care setting, staff and visitors focus on earthworm, snail, slug, and centipede. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Earthworm", "Snail", "Slug", "Centipede"],
+            "expectedAnswer": "Earthworm"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on earthworm, snail, slug, and centipede. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Millipede", "Aphid", "Praying Mantis", "Firefly"],
+          "scenario": "At the animal-care setting, staff and visitors focus on millipede, aphid, praying mantis, and firefly. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Millipede", "Aphid", "Praying Mantis", "Firefly"],
+            "expectedAnswer": "Millipede"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on millipede, aphid, praying mantis, and firefly. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Moth", "Wasp"],
+          "scenario": "At the animal-care setting, staff and visitors focus on moth and wasp. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Moth", "Wasp"],
+            "expectedAnswer": "Moth"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on moth and wasp. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Insect World: Travel/Visitor Guide",
+      "text": "A practical situation involving the insect world requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. At the animal-care setting, staff and visitors focus on spin, camouflage, migrate, and hibernate. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on earthworm, snail, slug, and centipede. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on millipede, aphid, praying mantis, and firefly. The words connect to caring for, observing, or learning about animals. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Insect World. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Spin"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Earthworm"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Millipede"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Moth"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Spin"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Hibernate"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Egg” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Insect World: In Context",
+      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Egg, Larva from insect-world-3\n3 lesson(s) back: Ant, Bee from insect-world-1\n7 lesson(s) back: Monarch, Swallowtail from butterfly-garden-1"
+  }
+]

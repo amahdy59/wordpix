@@ -1,0 +1,543 @@
+﻿[
+  {
+    "lessonId": "movement-verbs-1",
+    "lessonName": "Movement Verbs 1",
+    "unitId": "movement-verbs",
+    "unitName": "Movement Verbs",
+    "unitOrder": 21,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 83,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Walk",
+      "Run",
+      "Jog",
+      "Sprint",
+      "March",
+      "Stroll",
+      "Hike",
+      "Trek",
+      "Pace",
+      "Stride",
+      "Jump",
+      "Hop",
+      "Skip",
+      "Leap",
+      "Bounce"
+    ],
+    "targetWordsArabic": [
+      "فعل يُسمّى «والك»",
+      "فعل يُسمّى «رون»",
+      "فعل يُسمّى «جوج»",
+      "فعل أو عملية يُسمّى «سبرينت»",
+      "فعل يُسمّى «مارتش»",
+      "مكان يُسمّى «سترولل»",
+      "فعل يُسمّى «هيكي»",
+      "عضو يُسمّى «تريك»",
+      "فعل يُسمّى «باكي»",
+      "فعل يُسمّى «ستريدي»",
+      "فعل يُسمّى «جومب»",
+      "فعل يُسمّى «هوب»",
+      "فعل أو عملية يُسمّى «سكيب»",
+      "فعل يُسمّى «لياب»",
+      "فعل يُسمّى «بوونكي»"
+    ],
+    "usage": {
+      "goal": "Understand common body-movement actions in simple scenes.",
+      "canDoStatement": "I can understand common body-movement actions in simple scenes",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Walk", "Run", "Jog"],
+          "scenario": "At the playground, I can walk, run, jog.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Walk", "Run", "Jog"],
+            "expectedAnswer": "Walk"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can walk, run, jog. Emphasize walk, run, and jog and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Sprint", "March", "Stroll"],
+          "scenario": "At the playground, I can sprint, march, stroll.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Sprint", "March", "Stroll"],
+            "expectedAnswer": "Sprint"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can sprint, march, stroll. Emphasize sprint, march, and stroll and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Hike", "Trek", "Pace"],
+          "scenario": "At the playground, I can hike, trek, pace.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Hike", "Trek", "Pace"],
+            "expectedAnswer": "Hike"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can hike, trek, pace. Emphasize hike, trek, and pace and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Stride", "Jump", "Hop"],
+          "scenario": "At the playground, I can stride, jump, hop.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Stride", "Jump", "Hop"],
+            "expectedAnswer": "Stride"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can stride, jump, hop. Emphasize stride, jump, and hop and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Skip", "Leap", "Bounce"],
+          "scenario": "At the playground, I can skip, leap, bounce.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Skip", "Leap", "Bounce"],
+            "expectedAnswer": "Skip"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can skip, leap, bounce. Emphasize skip, leap, and bounce and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Movement Verbs Mini Story",
+      "text": "At the playground, children move in many ways. One child can walk, another can run, and another can jog. Later, they sprint and march. We watch and name each action. We also remember earlier words such as tower and church.",
+      "imageBrief": "One uncluttered movement verbs scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Walk"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Sprint"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Hike"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Stride"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Skip"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Walk"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Run"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Stroll"
+      }
+    ],
+    "video": {
+      "title": "Movement Verbs: See It, Say It",
+      "idea": "30–50 second contextual video set in a playground. Show walk, run, jog, sprint, and march naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see walk, run, and jog. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Tower, Church from giving-directions-4\n3 lesson(s) back: Northwest, Southeast from giving-directions-2\n7 lesson(s) back: Cake, Pie from market-4"
+  },
+  {
+    "lessonId": "movement-verbs-2",
+    "lessonName": "Movement Verbs 2",
+    "unitId": "movement-verbs",
+    "unitName": "Movement Verbs",
+    "unitOrder": 21,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 84,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Climb",
+      "Crawl",
+      "Scale",
+      "Vault",
+      "Hurdle",
+      "Swim",
+      "Float",
+      "Dive",
+      "Paddle",
+      "Wade",
+      "Splash",
+      "Surf",
+      "Row",
+      "Sail",
+      "Snorkel"
+    ],
+    "targetWordsArabic": [
+      "فعل يُسمّى «كليمب»",
+      "فعل يُسمّى «كراول»",
+      "مقياس رسم",
+      "قبو معماري",
+      "حاجز",
+      "فعل يُسمّى «سويم»",
+      "مشروب مع آيس كريم",
+      "فعل يُسمّى «ديفي»",
+      "قارب يُسمّى «باددلي»",
+      "فعل يُسمّى «وادي»",
+      "صوت رذاذ الماء",
+      "فعل يُسمّى «سورف»",
+      "صف",
+      "هيكل يُسمّى «سايل»",
+      "أنبوب تنفس"
+    ],
+    "usage": {
+      "goal": "Understand common body-movement actions in simple scenes.",
+      "canDoStatement": "I can understand common body-movement actions in simple scenes",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Climb", "Crawl", "Scale"],
+          "scenario": "At the playground, I can climb, crawl, scale.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Climb", "Crawl", "Scale"],
+            "expectedAnswer": "Climb"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can climb, crawl, scale. Emphasize climb, crawl, and scale and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Vault", "Hurdle", "Swim"],
+          "scenario": "At the playground, I can vault, hurdle, swim.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Vault", "Hurdle", "Swim"],
+            "expectedAnswer": "Vault"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can vault, hurdle, swim. Emphasize vault, hurdle, and swim and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Float", "Dive", "Paddle"],
+          "scenario": "At the playground, I can float, dive, paddle.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Float", "Dive", "Paddle"],
+            "expectedAnswer": "Float"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can float, dive, paddle. Emphasize float, dive, and paddle and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Wade", "Splash", "Surf"],
+          "scenario": "At the playground, I can wade, splash, surf.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Wade", "Splash", "Surf"],
+            "expectedAnswer": "Wade"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can wade, splash, surf. Emphasize wade, splash, and surf and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Row", "Sail", "Snorkel"],
+          "scenario": "At the playground, I can row, sail, snorkel.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Row", "Sail", "Snorkel"],
+            "expectedAnswer": "Row"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can row, sail, snorkel. Emphasize row, sail, and snorkel and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Movement Verbs Mini Story",
+      "text": "At the playground, children move in many ways. One child can climb, another can crawl, and another can scale. Later, they vault and hurdle. We watch and name each action. We also remember earlier words such as walk and run.",
+      "imageBrief": "One uncluttered movement verbs scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Climb"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Vault"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Float"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Wade"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Row"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Climb"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Crawl"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Swim"
+      }
+    ],
+    "video": {
+      "title": "Movement Verbs: See It, Say It",
+      "idea": "30–50 second contextual video set in a playground. Show climb, crawl, scale, vault, and hurdle naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see climb, crawl, and scale. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Walk, Run from movement-verbs-1\n3 lesson(s) back: Intersection, Corner from giving-directions-3\n7 lesson(s) back: Barcode, Shopping Bag from market-5"
+  },
+  {
+    "lessonId": "movement-verbs-3",
+    "lessonName": "Movement Verbs 3",
+    "unitId": "movement-verbs",
+    "unitName": "Movement Verbs",
+    "unitOrder": 21,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 85,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Dance",
+      "Spin",
+      "Twirl",
+      "Slide",
+      "Roll",
+      "Tumble",
+      "Swing",
+      "Somersault",
+      "Cartwheel",
+      "Pirouette",
+      "Stand",
+      "Sit",
+      "Lie Down",
+      "Kneel",
+      "Crouch"
+    ],
+    "targetWordsArabic": [
+      "رقص",
+      "فعل يُسمّى «سبين»",
+      "فعل يُسمّى «تويرل»",
+      "شريحة مجهرية",
+      "شخص يُسمّى «رولل»",
+      "فعل يُسمّى «تومبلي»",
+      "فعل يُسمّى «سوينج»",
+      "فعل يُسمّى «سوميرساولت»",
+      "فعل يُسمّى «كارتوهييل»",
+      "جزء يُسمّى «بيروويتتي»",
+      "نبات يُسمّى «ستاند»",
+      "فعل يُسمّى «سيت»",
+      "فعل يُسمّى «ليي دوون»",
+      "فعل يُسمّى «كنييل»",
+      "فعل يُسمّى «كرووتش»"
+    ],
+    "usage": {
+      "goal": "Understand common body-movement actions in simple scenes.",
+      "canDoStatement": "I can understand common body-movement actions in simple scenes",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Dance", "Spin", "Twirl"],
+          "scenario": "At the playground, I can dance, spin, twirl.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Dance", "Spin", "Twirl"],
+            "expectedAnswer": "Dance"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can dance, spin, twirl. Emphasize dance, spin, and twirl and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Slide", "Roll", "Tumble"],
+          "scenario": "At the playground, I can slide, roll, tumble.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Slide", "Roll", "Tumble"],
+            "expectedAnswer": "Slide"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can slide, roll, tumble. Emphasize slide, roll, and tumble and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Swing", "Somersault", "Cartwheel"],
+          "scenario": "At the playground, I can swing, somersault, cartwheel.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Swing", "Somersault", "Cartwheel"],
+            "expectedAnswer": "Swing"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can swing, somersault, cartwheel. Emphasize swing, somersault, and cartwheel and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Pirouette", "Stand", "Sit"],
+          "scenario": "At the playground, I can pirouette, stand, sit.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Pirouette", "Stand", "Sit"],
+            "expectedAnswer": "Pirouette"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can pirouette, stand, sit. Emphasize pirouette, stand, and sit and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Lie Down", "Kneel", "Crouch"],
+          "scenario": "At the playground, I can lie down, kneel, crouch.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Lie Down", "Kneel", "Crouch"],
+            "expectedAnswer": "Lie Down"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can lie down, kneel, crouch. Emphasize lie down, kneel, and crouch and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Movement Verbs Mini Story",
+      "text": "At the playground, children move in many ways. One child can dance, another can spin, and another can twirl. Later, they slide and roll. We watch and name each action. We also remember earlier words such as climb and crawl.",
+      "imageBrief": "One uncluttered movement verbs scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Dance"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Slide"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Swing"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pirouette"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Lie Down"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Dance"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Spin"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Tumble"
+      }
+    ],
+    "video": {
+      "title": "Movement Verbs: See It, Say It",
+      "idea": "30–50 second contextual video set in a playground. Show dance, spin, twirl, slide, and roll naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see dance, spin, and twirl. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Climb, Crawl from movement-verbs-2\n3 lesson(s) back: Tower, Church from giving-directions-4\n7 lesson(s) back: Customer, Butcher from market-6"
+  },
+  {
+    "lessonId": "movement-verbs-4",
+    "lessonName": "Movement Verbs 4",
+    "unitId": "movement-verbs",
+    "unitName": "Movement Verbs",
+    "unitOrder": 21,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 86,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": ["Bend", "Stretch", "Lean", "Squat", "Balance"],
+    "targetWordsArabic": [
+      "فعل يُسمّى «بيند»",
+      "مرونة",
+      "فعل أو عملية يُسمّى «ليان»",
+      "فعل يُسمّى «سكات»",
+      "توازن"
+    ],
+    "usage": {
+      "goal": "Understand common body-movement actions in simple scenes.",
+      "canDoStatement": "I can understand common body-movement actions in simple scenes",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bend", "Stretch", "Lean"],
+          "scenario": "At the playground, I can bend, stretch, lean.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Bend", "Stretch", "Lean"],
+            "expectedAnswer": "Bend"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can bend, stretch, lean. Emphasize bend, stretch, and lean and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Squat", "Balance"],
+          "scenario": "At the playground, I can squat, balance.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Squat", "Balance"],
+            "expectedAnswer": "Squat"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for movement verbs that represents: At the playground, I can squat, balance. Emphasize squat and balance and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Movement Verbs Mini Story",
+      "text": "At the playground, children move in many ways. One child can bend, another can stretch, and another can lean. Later, they squat and balance. We watch and name each action. We also remember earlier words such as dance and spin.",
+      "imageBrief": "One uncluttered movement verbs scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Bend"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Squat"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Bend"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Stretch"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Balance"
+      }
+    ],
+    "video": {
+      "title": "Movement Verbs: See It, Say It",
+      "idea": "30–50 second contextual video set in a playground. Show bend, stretch, lean, squat, and balance naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see bend, stretch, and lean. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Dance, Spin from movement-verbs-3\n3 lesson(s) back: Walk, Run from movement-verbs-1\n7 lesson(s) back: Left, Right from giving-directions-1"
+  }
+]

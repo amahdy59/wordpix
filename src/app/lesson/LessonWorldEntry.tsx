@@ -13,7 +13,7 @@ import {
   ChevronRight,
   Library,
 } from "lucide-react";
-import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
+import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/courseCatalog";
 import { getWords } from "../data/vocabulary";
 import { GroupThumbnail } from "./GroupThumbnail";
 import { hasLearningMaterials } from "../learning/registry";

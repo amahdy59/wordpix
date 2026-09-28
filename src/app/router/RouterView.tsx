@@ -1,13 +1,14 @@
 import { lazy, Suspense, useMemo } from "react";
 import { motion } from "framer-motion";
 import type { Screen, Action, TabId } from "../types";
-import { resolveGroup, resolveUnitForLesson, DEFAULT_UNIT_ID } from "../data/lessons";
+import { resolveGroup, resolveUnitForLesson, DEFAULT_UNIT_ID } from "../data/courseCatalog";
 import { getWords } from "../data/vocabulary";
 import type { VocabularyItem } from "../data/lessons";
 import { UnitVocabularyGate } from "./UnitVocabularyGate";
 import { useI18n } from "../context/I18nContext";
 import { useLearner } from "../context/LearnerContext";
 import { AppShell } from "../shared/AppShell";
+import { Button, FeedbackPanel } from "../shared";
 import { TABBED_IDS } from "../store/reducer";
 import { NetworkStatusBanner } from "../shared/NetworkStatusBanner";
 
@@ -101,6 +102,9 @@ const ExerciseRecallMatch = lazy(() =>
 const ExerciseContextFill = lazy(() =>
   import("../exercises/ExerciseContextFill").then((m) => ({ default: m.ExerciseContextFill }))
 );
+const ExerciseContextGapFill = lazy(() =>
+  import("../exercises/ExerciseContextGapFill").then((m) => ({ default: m.ExerciseContextGapFill }))
+);
 const ExerciseSentenceBuilder = lazy(() =>
   import("../exercises/ExerciseSentenceBuilder").then((m) => ({
     default: m.ExerciseSentenceBuilder,
@@ -112,9 +116,13 @@ const ExerciseQuickQuiz = lazy(() =>
 const ExerciseStory = lazy(() =>
   import("../exercises/ExerciseStory").then((m) => ({ default: m.ExerciseStory }))
 );
+const ExerciseReadingContext = lazy(() =>
+  import("../exercises/ExerciseReadingContext").then((m) => ({ default: m.ExerciseReadingContext }))
+);
 
 import { SKILL_EXERCISES } from "../exercises/registry";
 import { getLessonSequence, type ExerciseStep } from "../lesson/lessonSequence";
+import { getAuthoredLessonContent } from "../exercises/content/authoredLessonContent";
 
 const LoadingFallback = () => {
   const { t } = useI18n();
@@ -167,31 +175,32 @@ function RouteErrorPanel({
   const { t } = useI18n();
   return (
     <div className="flex-1 flex items-center justify-center p-6">
-      <div
-        role="alert"
-        className="w-full max-w-md rounded-3xl border border-border bg-wp-card p-6 text-center shadow-wp-sm"
-      >
-        <h1 className="font-sans text-xl font-black text-foreground">{title}</h1>
-        <p className="mt-2 text-sm font-medium leading-relaxed text-muted-foreground">
-          {description}
-        </p>
-        <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:justify-center">
-          <button
-            type="button"
-            onClick={() => dispatch({ type: "GO", to: "explore" })}
-            className="flex min-h-[48px] flex-1 items-center justify-center rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-md hover:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            {t("router.backToPath")}
-          </button>
-          <button
-            type="button"
-            onClick={() => dispatch({ type: "GO", to: "home" })}
-            className="flex min-h-[48px] flex-1 items-center justify-center rounded-2xl border border-border px-6 py-3 text-sm font-bold text-foreground hover:bg-muted/30 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            {t("router.backToHome")}
-          </button>
-        </div>
-      </div>
+      <FeedbackPanel
+        tone="error"
+        titleAs="h1"
+        title={title}
+        description={description}
+        className="max-w-md"
+        action={
+          <>
+            <Button
+              size="lg"
+              className="flex-1"
+              onClick={() => dispatch({ type: "GO", to: "explore" })}
+            >
+              {t("router.backToPath")}
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="flex-1"
+              onClick={() => dispatch({ type: "GO", to: "home" })}
+            >
+              {t("router.backToHome")}
+            </Button>
+          </>
+        }
+      />
     </div>
   );
 }
@@ -304,10 +313,22 @@ function LessonRoute({
 
   if (ex === "listen") return <ExerciseListenRepeat {...drillProps} />;
   if (ex === "recall") return <ExerciseRecallMatch {...drillProps} />;
-  if (ex === "fill") return <ExerciseContextFill {...drillProps} />;
+  if (ex === "fill") {
+    return getAuthoredLessonContent(lessonId) ? (
+      <ExerciseContextGapFill {...drillProps} />
+    ) : (
+      <ExerciseContextFill {...drillProps} />
+    );
+  }
   if (ex === "builder") return <ExerciseSentenceBuilder {...drillProps} />;
   if (ex === "quiz") return <ExerciseQuickQuiz {...drillProps} />;
-  if (ex === "story") return <ExerciseStory {...drillProps} />;
+  if (ex === "story") {
+    return getAuthoredLessonContent(lessonId) ? (
+      <ExerciseReadingContext {...drillProps} />
+    ) : (
+      <ExerciseStory {...drillProps} />
+    );
+  }
   return null;
 }
 
@@ -434,7 +455,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
           <main
             id="main-content"
             tabIndex={-1}
-            className="min-h-dvh md:min-h-0 w-full max-w-5xl md:rounded-3xl md:overflow-hidden md:shadow-wp-md md:border md:border-border outline-none flex flex-col"
+            className="wp-container-content min-h-dvh md:min-h-0 md:rounded-3xl md:overflow-hidden md:shadow-wp-md md:border md:border-border outline-none flex flex-col"
           >
             <div className="w-full px-4 pt-4 md:px-8">
               <NetworkStatusBanner />

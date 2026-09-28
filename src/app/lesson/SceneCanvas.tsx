@@ -6,6 +6,7 @@ import { HomeIndicator } from "../shared/HomeIndicator";
 import { AudioButton } from "../shared/AudioButton";
 import { WordImage } from "../shared/WordImage";
 import type { VocabularyItem } from "../data/lessons";
+import { getAuthoredWord } from "../exercises/content/authoredLessonContent";
 
 interface Props {
   activeWord: VocabularyItem;
@@ -32,6 +33,10 @@ export const SceneCanvas = memo(function SceneCanvas({
   onBrowseWords,
 }: Props) {
   const { t } = useI18n();
+  const authored = getAuthoredWord(activeWord.id);
+  const arabic = authored?.arabic ?? activeWord.arabicTranslation;
+  const exampleSentence = authored?.sentence.full ?? activeWord.exampleUsage;
+
   return (
     <section
       className="relative flex-1 lg:flex-[3] min-w-0 min-h-0 flex flex-col bg-background h-full overflow-hidden"
@@ -157,10 +162,29 @@ export const SceneCanvas = memo(function SceneCanvas({
                 {t("lesson.pronunciation", { phonetic: activeWord.phonetic })}
               </span>
 
-              {activeWord.topic && (
-                <span className="inline-flex self-start text-[10px] font-sans font-semibold text-primary bg-secondary px-2 py-0.5 rounded-full border border-primary/10 capitalize">
-                  {activeWord.topic.replace("-", " ")}
-                </span>
+              <div className="flex items-center gap-2 flex-wrap">
+                {arabic && (
+                  <span
+                    className="font-arabic font-bold text-foreground text-sm"
+                    dir="rtl"
+                    lang="ar"
+                  >
+                    {arabic}
+                  </span>
+                )}
+                {activeWord.topic && (
+                  <span className="inline-flex self-start text-[10px] font-sans font-semibold text-primary bg-secondary px-2 py-0.5 rounded-full border border-primary/10 capitalize">
+                    {activeWord.topic.replace("-", " ")}
+                  </span>
+                )}
+              </div>
+              {exampleSentence && (
+                <p
+                  className="font-sans text-xs text-muted-foreground truncate hidden sm:block"
+                  lang="en"
+                >
+                  {exampleSentence}
+                </p>
               )}
             </div>
 

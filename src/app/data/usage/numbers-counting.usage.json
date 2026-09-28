@@ -1,0 +1,543 @@
+﻿[
+  {
+    "lessonId": "numbers-counting-1",
+    "lessonName": "Numbers & Counting 1",
+    "unitId": "numbers-counting",
+    "unitName": "Numbers & Counting",
+    "unitOrder": 1,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 1,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "One",
+      "Two",
+      "Three",
+      "Four",
+      "Five",
+      "Six",
+      "Seven",
+      "Eight",
+      "Nine",
+      "Ten",
+      "Eleven",
+      "Twelve",
+      "Thirteen",
+      "Fourteen",
+      "Fifteen"
+    ],
+    "targetWordsArabic": [
+      "واحد",
+      "اثنان",
+      "ثلاثي",
+      "أربعة",
+      "خمسة",
+      "ستة",
+      "سبعة",
+      "ثمانية",
+      "تسعة",
+      "عشرة",
+      "أحد عشر",
+      "اثنا عشر",
+      "ثلاثة عشر",
+      "أربعة عشر",
+      "خمسة عشر"
+    ],
+    "usage": {
+      "goal": "Count objects from 1 to 15 and say how many things you see or have.",
+      "canDoStatement": "I can count simple objects and say how many there are.",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["One", "Two", "Three"],
+          "scenario": "I have one book, two pens, and three pencils.",
+          "check": {
+            "question": "How many pencils do I have?",
+            "options": ["One", "Two", "Three"],
+            "expectedAnswer": "three"
+          },
+          "imageBrief": "Bright desk scene with exactly 1 book, 2 pens, and 3 pencils, clearly visible and easy to count."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Four", "Five", "Six"],
+          "scenario": "I see four chairs, five bags, and six books.",
+          "check": {
+            "question": "How many bags are there?",
+            "options": ["Four", "Five", "Six"],
+            "expectedAnswer": "five"
+          },
+          "imageBrief": "Simple classroom scene with 4 chairs, 5 bags, and 6 books. Keep the layout uncluttered."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Seven", "Eight", "Nine"],
+          "scenario": "There are seven apples, eight oranges, and nine bananas.",
+          "check": {
+            "question": "Which fruit has nine?",
+            "options": ["Seven", "Eight", "Nine"],
+            "expectedAnswer": "bananas"
+          },
+          "imageBrief": "Clean fruit display showing 7 apples, 8 oranges, and 9 bananas in grouped rows."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Ten", "Eleven", "Twelve"],
+          "scenario": "We have ten pencils, eleven notebooks, and twelve crayons.",
+          "check": {
+            "question": "How many notebooks do we have?",
+            "options": ["Ten", "Eleven", "Twelve"],
+            "expectedAnswer": "eleven"
+          },
+          "imageBrief": "Neat school-supplies illustration with 10 pencils, 11 notebooks, and 12 crayons."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Thirteen", "Fourteen", "Fifteen"],
+          "scenario": "I see thirteen stars, fourteen flowers, and fifteen balloons.",
+          "check": {
+            "question": "How many balloons are there?",
+            "options": ["Thirteen", "Fourteen", "Fifteen"],
+            "expectedAnswer": "fifteen"
+          },
+          "imageBrief": "Playful celebration scene with 13 stars, 14 flowers, and 15 balloons, clear enough for counting."
+        }
+      ]
+    },
+    "reading": {
+      "title": "My Classroom",
+      "text": "This is my classroom. I have one teacher and two friends near me. There are three windows and four tables. I see five bags and six books. There are seven pictures on the wall. Our class has fifteen students.",
+      "imageBrief": "Friendly classroom scene matching the story with a teacher, students, windows, tables, bags, books, and wall pictures."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "One"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Four"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Seven"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Ten"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Thirteen"
+      },
+      {
+        "prompt": "Reading Comprehension: How many windows are there?",
+        "answer": "three"
+      },
+      {
+        "prompt": "Reading Comprehension: How many students are in the class?",
+        "answer": "fifteen"
+      },
+      {
+        "prompt": "Reading Comprehension: What is on the wall?",
+        "answer": "seven pictures"
+      }
+    ],
+    "video": {
+      "title": "Count With Me",
+      "idea": "30–45 second video. A learner looks around a room and counts objects aloud, then pauses to let the viewer answer before revealing the number.",
+      "scriptStarter": "I see one clock. There are two windows. I see three plants. How many chairs can you see?"
+    },
+    "spacedReview": null
+  },
+  {
+    "lessonId": "numbers-counting-2",
+    "lessonName": "Numbers & Counting 2",
+    "unitId": "numbers-counting",
+    "unitName": "Numbers & Counting",
+    "unitOrder": 1,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 2,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Sixteen",
+      "Seventeen",
+      "Eighteen",
+      "Nineteen",
+      "Twenty",
+      "Thirty",
+      "Forty",
+      "Fifty",
+      "Sixty",
+      "Seventy",
+      "Eighty",
+      "Ninety",
+      "Hundred",
+      "Thousand",
+      "Million"
+    ],
+    "targetWordsArabic": [
+      "ستة عشر",
+      "سبعة عشر",
+      "ثمانية عشر",
+      "تسعة عشر",
+      "عشرون",
+      "ثلاثون",
+      "أربعون",
+      "خمسون",
+      "ستون",
+      "سبعون",
+      "ثمانون",
+      "تسعون",
+      "مئة",
+      "ألف",
+      "مليون"
+    ],
+    "usage": {
+      "goal": "Understand and say larger numbers for age, quantity, and simple real-life facts.",
+      "canDoStatement": "I can understand bigger numbers in everyday situations.",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sixteen", "Seventeen", "Eighteen"],
+          "scenario": "Maya is sixteen, Adam is seventeen, and Omar is eighteen.",
+          "check": {
+            "question": "Who is eighteen?",
+            "options": ["Sixteen", "Seventeen", "Eighteen"],
+            "expectedAnswer": "Omar"
+          },
+          "imageBrief": "Three teens in a birthday or school setting representing ages 16, 17, and 18."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Nineteen", "Twenty", "Thirty"],
+          "scenario": "I see nineteen balloons, twenty stars, and thirty stickers.",
+          "check": {
+            "question": "How many stars are there?",
+            "options": ["Nineteen", "Twenty", "Thirty"],
+            "expectedAnswer": "twenty"
+          },
+          "imageBrief": "Decorative wall scene with 19 balloons, 20 stars, and 30 stickers arranged clearly."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Forty", "Fifty", "Sixty"],
+          "scenario": "The bus has forty seats, the room has fifty chairs, and the shelf has sixty books.",
+          "check": {
+            "question": "Where do you see sixty books?",
+            "options": ["Forty", "Fifty", "Sixty"],
+            "expectedAnswer": "on the shelf"
+          },
+          "imageBrief": "Three simple panels: a bus with 40 seats, a room with 50 chairs, and a shelf with 60 books."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Seventy", "Eighty", "Ninety"],
+          "scenario": "The shop sells seventy pens, eighty notebooks, and ninety erasers.",
+          "check": {
+            "question": "How many notebooks are there?",
+            "options": ["Seventy", "Eighty", "Ninety"],
+            "expectedAnswer": "eighty"
+          },
+          "imageBrief": "Stationery shop scene with grouped pens, notebooks, and erasers representing 70, 80, and 90."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Hundred", "Thousand", "Million"],
+          "scenario": "One hundred is 100, one thousand is 1,000, and one million is 1,000,000.",
+          "check": {
+            "question": "Which is the biggest number?",
+            "options": ["Hundred", "Thousand", "Million"],
+            "expectedAnswer": "one million"
+          },
+          "imageBrief": "Simple educational infographic card showing 100, 1,000, and 1,000,000 with the matching words."
+        }
+      ]
+    },
+    "reading": {
+      "title": "A School in Numbers",
+      "text": "Welcome to Green School. There are twenty students in my class. Our library has more than one thousand books. The school has forty teachers and about six hundred students. My brother is sixteen, and my sister is eighteen.",
+      "imageBrief": "School scene with a classroom, a library, students, and simple number signs that support the reading."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Sixteen"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Nineteen"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Forty"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Seventy"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Hundred"
+      },
+      {
+        "prompt": "Reading Comprehension: How many students are in the class?",
+        "answer": "twenty"
+      },
+      {
+        "prompt": "Reading Comprehension: How old is the sister?",
+        "answer": "eighteen"
+      },
+      {
+        "prompt": "Reading Comprehension: Does the library have one hundred books or more than one thousand books?",
+        "answer": "more than one thousand books"
+      }
+    ],
+    "video": {
+      "title": "A Day in Numbers",
+      "idea": "35–50 second video with quick daily scenes: age, students in a class, books in a library, and large number signs in context.",
+      "scriptStarter": "I am sixteen. There are twenty students in my class. Our library has more than one thousand books."
+    },
+    "spacedReview": "1 lesson(s) back: One, Two from numbers-counting-1"
+  },
+  {
+    "lessonId": "numbers-counting-3",
+    "lessonName": "Numbers & Counting 3",
+    "unitId": "numbers-counting",
+    "unitName": "Numbers & Counting",
+    "unitOrder": 1,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 3,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "First",
+      "Second",
+      "Third",
+      "Fourth",
+      "Fifth",
+      "Sixth",
+      "Seventh",
+      "Eighth",
+      "Ninth",
+      "Tenth",
+      "Addition",
+      "Subtraction",
+      "Multiplication",
+      "Division",
+      "Equals"
+    ],
+    "targetWordsArabic": [
+      "أول",
+      "الثاني",
+      "الثالث",
+      "الرابع",
+      "الخامس",
+      "السادس",
+      "السابع",
+      "الثامن",
+      "التاسع",
+      "العاشر",
+      "جمع",
+      "طرح",
+      "ضرب",
+      "قسمة",
+      "يساوي"
+    ],
+    "usage": {
+      "goal": "Say where something is in an order and understand very simple maths language.",
+      "canDoStatement": "I can use ordinal numbers and understand simple maths expressions.",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["First", "Second", "Third"],
+          "scenario": "Lina is first, Omar is second, and Adam is third.",
+          "check": {
+            "question": "Who is second?",
+            "options": ["First", "Second", "Third"],
+            "expectedAnswer": "Omar"
+          },
+          "imageBrief": "Sports-day race scene clearly showing 1st, 2nd, and 3rd place winners."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Fourth", "Fifth", "Sixth"],
+          "scenario": "My classroom is on the fourth floor, this is my fifth book, and Ahmed is sixth in line.",
+          "check": {
+            "question": "Which book is mine?",
+            "options": ["Fourth", "Fifth", "Sixth"],
+            "expectedAnswer": "the fifth book"
+          },
+          "imageBrief": "Three small panels: fourth floor sign, fifth book in a stack, child sixth in line."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Seventh", "Eighth", "Ninth", "Tenth"],
+          "scenario": "Today is my seventh lesson. Sara is eighth in line, Ali is ninth, and Omar is tenth.",
+          "check": {
+            "question": "Who is tenth?",
+            "options": ["Seventh", "Eighth", "Ninth", "Tenth"],
+            "expectedAnswer": "Omar"
+          },
+          "imageBrief": "Lineup of children or cards clearly showing 8th, 9th, and 10th positions."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Addition", "Equals"],
+          "scenario": "Two plus three equals five.",
+          "check": {
+            "question": "What does two plus three equal?",
+            "options": ["Addition", "Equals"],
+            "expectedAnswer": "five"
+          },
+          "imageBrief": "Clean educational card showing 2 + 3 = 5 with the words addition and equals."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Subtraction", "Multiplication", "Division"],
+          "scenario": "Five minus two equals three. Two times three equals six. Eight divided by two equals four.",
+          "check": {
+            "question": "What does eight divided by two equal?",
+            "options": ["Subtraction", "Multiplication", "Division"],
+            "expectedAnswer": "four"
+          },
+          "imageBrief": "Three-panel math card for subtraction, multiplication, and division with one easy example each."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Sports Day",
+      "text": "Today is Sports Day. Lina is first in the race. Omar is second, and Adam is third. Sara finishes fourth. After the race, the students play a number game. Two plus three equals five. Everyone answers together.",
+      "imageBrief": "Split scene: first panel shows the race winners; second panel shows a class number game on a board."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "First"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Fourth"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Seventh"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Addition"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Subtraction"
+      },
+      {
+        "prompt": "Reading Comprehension: Who is first in the race?",
+        "answer": "Lina"
+      },
+      {
+        "prompt": "Reading Comprehension: Who is second?",
+        "answer": "Omar"
+      },
+      {
+        "prompt": "Reading Comprehension: What does two plus three equal?",
+        "answer": "five"
+      }
+    ],
+    "video": {
+      "title": "Sports Day and the Number Game",
+      "idea": "35–50 second video. A short race introduces first, second, and third, then the class switches to simple spoken equations.",
+      "scriptStarter": "Lina is first. Omar is second. Adam is third. Now let’s play: two plus three equals five."
+    },
+    "spacedReview": "1 lesson(s) back: Sixteen, Seventeen from numbers-counting-2"
+  },
+  {
+    "lessonId": "numbers-counting-4",
+    "lessonName": "Numbers & Counting 4",
+    "unitId": "numbers-counting",
+    "unitName": "Numbers & Counting",
+    "unitOrder": 1,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 4,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": ["Plus", "Minus", "Times", "Divided By", "Percentage"],
+    "targetWordsArabic": [
+      "زائد",
+      "ناقص",
+      "ضرب",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديفيديد بي»",
+      "نسبة مئوية"
+    ],
+    "usage": {
+      "goal": "Recognize simple maths symbols and use a few common maths words in easy expressions.",
+      "canDoStatement": "I can understand a few basic maths words and symbols.",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Plus", "Minus", "Times"],
+          "scenario": "Two plus one is three. Four minus one is three. Two times two is four.",
+          "check": {
+            "question": "What does four minus one equal?",
+            "options": ["Plus", "Minus", "Times"],
+            "expectedAnswer": "three"
+          },
+          "imageBrief": "Three simple math symbol cards for plus, minus, and times, each with one easy example."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Divided By", "Percentage"],
+          "scenario": "Six divided by two is three. Fifty percent means half.",
+          "check": {
+            "question": "What does fifty percent mean?",
+            "options": ["Divided By", "Percentage"],
+            "expectedAnswer": "half"
+          },
+          "imageBrief": "Two-card set: one shows 6 ÷ 2 = 3, the other shows a circle half-filled to explain 50 percent."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Math Class",
+      "text": "In math class, we use plus and minus every day. Today, the teacher writes six divided by two on the board. Then she shows fifty percent on a circle chart. The class says the answers together.",
+      "imageBrief": "Simple classroom math lesson with a board and a percentage pie chart."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Plus"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Divided By"
+      },
+      {
+        "prompt": "Reading Comprehension: What does six divided by two equal?",
+        "answer": "three"
+      },
+      {
+        "prompt": "Reading Comprehension: What does fifty percent mean in the lesson?",
+        "answer": "half"
+      },
+      {
+        "prompt": "Reading Comprehension: Which words do students use every day in math class?",
+        "answer": "plus and minus"
+      }
+    ],
+    "video": {
+      "title": "Math Symbols Around Us",
+      "idea": "30–40 second video. The teacher points to symbols and students answer simple problems aloud.",
+      "scriptStarter": "This is plus. This is minus. Six divided by two is three. Fifty percent means half."
+    },
+    "spacedReview": "1 lesson(s) back: First, Second from numbers-counting-3\n3 lesson(s) back: One, Two from numbers-counting-1"
+  }
+]

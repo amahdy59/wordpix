@@ -1,7 +1,7 @@
 import { useEffect, useCallback } from "react";
 import type { Screen, SkillExerciseId } from "../types";
 import { SKILL_EXERCISE_IDS } from "../exercises/registry";
-import { COURSE_UNITS, DEFAULT_UNIT_ID, resolveUnitForLesson } from "../data/lessons";
+import { COURSE_UNITS, DEFAULT_UNIT_ID, resolveUnitForLesson } from "../data/courseCatalog";
 import {
   PRONUNCIATION_LESSON_COUNT,
   getPronunciationLessonMetadata,

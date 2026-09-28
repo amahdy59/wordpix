@@ -1,6 +1,6 @@
 import { memo, useEffect, useState } from "react";
 import type { Action } from "../../types";
-import { BEDROOM_VOCABULARY } from "../../data/lessons";
+import { BEDROOM_VOCABULARY } from "../../data/courseCatalog";
 import { LessonHeader } from "../../shared/LessonHeader";
 import { PrimaryButton } from "../../shared/PrimaryButton";
 import { Mic, Volume2, CheckCircle2, AlertCircle } from "lucide-react";

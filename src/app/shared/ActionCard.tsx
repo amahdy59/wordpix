@@ -62,8 +62,9 @@ export const ActionCard = forwardRef<HTMLButtonElement, ActionCardProps>(functio
       ref={ref}
       type={type}
       disabled={disabled}
+      aria-disabled={disabled ? "true" : undefined}
       aria-pressed={selected ? "true" : undefined}
-      className={`min-h-[56px] w-full text-start p-4 sm:p-5 rounded-2xl border transition-all duration-150 ease-out select-none cursor-pointer
+      className={`group min-h-[56px] w-full text-start p-4 sm:p-5 rounded-2xl border transition-all duration-150 ease-out select-none cursor-pointer
         grid grid-cols-[auto_1fr_auto] items-center gap-3 sm:gap-4
         focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary
         motion-safe:enabled:hover:scale-[1.01] motion-safe:enabled:active:scale-[0.985] motion-reduce:transition-none

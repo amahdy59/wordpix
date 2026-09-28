@@ -1,0 +1,427 @@
+﻿[
+  {
+    "lessonId": "university-campus-1",
+    "lessonName": "The University Campus 1",
+    "unitId": "university-campus",
+    "unitName": "The University Campus",
+    "unitOrder": 154,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 696,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Lecture Hall",
+      "Library",
+      "Laboratory",
+      "Dormitory",
+      "Student Center",
+      "Gymnasium",
+      "Cafeteria",
+      "Administration",
+      "Auditorium",
+      "Chapel",
+      "Quad",
+      "Courtyard",
+      "Fountain",
+      "Statue",
+      "Clock Tower"
+    ],
+    "targetWordsArabic": [
+      "غرفة يُسمّى «ليكتوري هالل»",
+      "-",
+      "مختبر",
+      "غرفة يُسمّى «دورميتوري»",
+      "مركز طالب",
+      "صالة رياضية",
+      "مصطلح مرتبط بالموضوع يُسمّى «كافيتيريا»",
+      "شخص يُسمّى «ادمينيستراتيون»",
+      "قاعة محاضرات",
+      "سفينة يُسمّى «تشابيل»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كاد»",
+      "فناء",
+      "نافورة",
+      "شخص يُسمّى «ستاتوي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كلوك تووير»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The University Campus to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the university campus vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Lecture Hall", "Library", "Laboratory", "Dormitory"],
+          "scenario": "The student or researcher works with lecture hall, library, laboratory, and dormitory. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lecture Hall", "Library", "Laboratory", "Dormitory"],
+            "expectedAnswer": "Lecture Hall"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with lecture hall, library, laboratory, and dormitory. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Student Center", "Gymnasium", "Cafeteria", "Administration"],
+          "scenario": "The student or researcher works with student center, gymnasium, cafeteria, and administration. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Student Center", "Gymnasium", "Cafeteria", "Administration"],
+            "expectedAnswer": "Student Center"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with student center, gymnasium, cafeteria, and administration. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Auditorium", "Chapel", "Quad", "Courtyard"],
+          "scenario": "The student or researcher works with auditorium, chapel, quad, and courtyard. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Auditorium", "Chapel", "Quad", "Courtyard"],
+            "expectedAnswer": "Auditorium"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with auditorium, chapel, quad, and courtyard. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Fountain", "Statue", "Clock Tower"],
+          "scenario": "The student or researcher works with fountain, statue, and clock tower. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fountain", "Statue", "Clock Tower"],
+            "expectedAnswer": "Fountain"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with fountain, statue, and clock tower. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The University Campus: Case Note",
+      "text": "A realistic case involving the university campus shows how precise vocabulary can influence choices, explanations, and outcomes. The student or researcher works with lecture hall, library, laboratory, and dormitory. Each term supports a different part of study, research, or campus life. The student or researcher works with student center, gymnasium, cafeteria, and administration. Each term supports a different part of study, research, or campus life. The student or researcher works with auditorium, chapel, quad, and courtyard. Each term supports a different part of study, research, or campus life. The student or researcher works with fountain, statue, and clock tower. Each term supports a different part of study, research, or campus life. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The University Campus. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lecture Hall"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Student Center"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Auditorium"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fountain"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Lecture Hall"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Trader” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The University Campus: In Context",
+      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Trader, Broker from stock-exchange-3\n3 lesson(s) back: Bull Market, Bear Market from stock-exchange-1\n7 lesson(s) back: 401k, IRA from financial-services-3"
+  },
+  {
+    "lessonId": "university-campus-2",
+    "lessonName": "The University Campus 2",
+    "unitId": "university-campus",
+    "unitName": "The University Campus",
+    "unitOrder": 154,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 697,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Gate",
+      "Pathway",
+      "Garden",
+      "Parking Lot",
+      "Sports Field",
+      "Computer Lab",
+      "Art Studio",
+      "Music Room",
+      "Theater",
+      "Swimming Pool",
+      "Track",
+      "Tennis Court",
+      "Health Center",
+      "Counseling Center",
+      "Career Center"
+    ],
+    "targetWordsArabic": [
+      "بوابة",
+      "ممر",
+      "-",
+      "موقف سيارات",
+      "منطقة يُسمّى «سبورتس فييلد»",
+      "مختبر حاسوب",
+      "مرسم فني",
+      "غرفة موسيقى",
+      "مسرح",
+      "مسبح سباحة",
+      "مسار",
+      "منطقة يُسمّى «تيننيس كوورت»",
+      "مركز صحي",
+      "مادة يُسمّى «كوونسيلينج كينتير»",
+      "مركز الإرشاد المهني"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The University Campus to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the university campus vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Gate", "Pathway", "Garden", "Parking Lot"],
+          "scenario": "The student or researcher works with gate, pathway, garden, and parking lot. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Gate", "Pathway", "Garden", "Parking Lot"],
+            "expectedAnswer": "Gate"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with gate, pathway, garden, and parking lot. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Sports Field", "Computer Lab", "Art Studio", "Music Room"],
+          "scenario": "The student or researcher works with sports field, computer lab, art studio, and music room. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sports Field", "Computer Lab", "Art Studio", "Music Room"],
+            "expectedAnswer": "Sports Field"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with sports field, computer lab, art studio, and music room. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Theater", "Swimming Pool", "Track", "Tennis Court"],
+          "scenario": "The student or researcher works with theater, swimming pool, track, and tennis court. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Theater", "Swimming Pool", "Track", "Tennis Court"],
+            "expectedAnswer": "Theater"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with theater, swimming pool, track, and tennis court. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Health Center", "Counseling Center", "Career Center"],
+          "scenario": "The group moves between the health center, counseling center, and career center as the activity continues.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Health Center", "Counseling Center", "Career Center"],
+            "expectedAnswer": "Health Center"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group moves between the health center, counseling center, and career center as the activity continues. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The University Campus: Report Excerpt",
+      "text": "A realistic case involving the university campus shows how precise vocabulary can influence choices, explanations, and outcomes. The student or researcher works with gate, pathway, garden, and parking lot. Each term supports a different part of study, research, or campus life. The student or researcher works with sports field, computer lab, art studio, and music room. Each term supports a different part of study, research, or campus life. The student or researcher works with theater, swimming pool, track, and tennis court. Each term supports a different part of study, research, or campus life. The group moves between the health center, counseling center, and career center as the activity continues. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The University Campus. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gate"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sports Field"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Theater"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Health Center"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Gate"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Lecture Hall” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The University Campus: In Context",
+      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Lecture Hall, Library from university-campus-1\n3 lesson(s) back: Spread, Limit Order from stock-exchange-2\n7 lesson(s) back: US Dollar, Euro from currency-payment-1"
+  },
+  {
+    "lessonId": "university-campus-3",
+    "lessonName": "The University Campus 3",
+    "unitId": "university-campus",
+    "unitName": "The University Campus",
+    "unitOrder": 154,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 698,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Orientation",
+      "Registration",
+      "Move-In Day",
+      "Commencement",
+      "Homecoming",
+      "Spring Break",
+      "Finals Week",
+      "Study Abroad",
+      "Internship Fair",
+      "Alumni Weekend"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «وريينتاتيون»",
+      "تسجيل",
+      "يوم الانتقال للسكن",
+      "مصطلح مرتبط بالموضوع يُسمّى «كوممينكيمينت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «هوميكومينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سبرينج برياك»",
+      "أسبوع الامتحانات النهائية",
+      "الدراسة في الخارج",
+      "معرض التدريب",
+      "عطلة نهاية أسبوع للخريجين"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The University Campus to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the university campus vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Orientation", "Registration", "Move-In Day", "Commencement"],
+          "scenario": "The student or researcher works with orientation, registration, move-in day, and commencement. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Orientation", "Registration", "Move-In Day", "Commencement"],
+            "expectedAnswer": "Orientation"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with orientation, registration, move-in day, and commencement. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Homecoming", "Spring Break", "Finals Week", "Study Abroad"],
+          "scenario": "The student or researcher works with homecoming, spring break, finals week, and study abroad. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Homecoming", "Spring Break", "Finals Week", "Study Abroad"],
+            "expectedAnswer": "Homecoming"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with homecoming, spring break, finals week, and study abroad. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Internship Fair", "Alumni Weekend"],
+          "scenario": "The student or researcher works with internship fair and alumni weekend. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Internship Fair", "Alumni Weekend"],
+            "expectedAnswer": "Internship Fair"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with internship fair and alumni weekend. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The University Campus: Workplace/Academic Scenario",
+      "text": "A realistic case involving the university campus shows how precise vocabulary can influence choices, explanations, and outcomes. The student or researcher works with orientation, registration, move-in day, and commencement. Each term supports a different part of study, research, or campus life. The student or researcher works with homecoming, spring break, finals week, and study abroad. Each term supports a different part of study, research, or campus life. The student or researcher works with internship fair and alumni weekend. Each term supports a different part of study, research, or campus life. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The University Campus. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Orientation"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Homecoming"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Internship Fair"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Orientation"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Gate” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The University Campus: In Context",
+      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Gate, Pathway from university-campus-2\n3 lesson(s) back: Trader, Broker from stock-exchange-3\n7 lesson(s) back: Mobile Payment, Contactless from currency-payment-2"
+  }
+]

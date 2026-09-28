@@ -7,6 +7,7 @@ import { useProgress } from "../data/progress";
 import { type MasteryLevel } from "../context/LearnerContext";
 import { useAudio } from "../shared/useAudio";
 import { X, CheckCircle2 } from "lucide-react";
+import { getAuthoredWord } from "../exercises/content/authoredLessonContent";
 
 interface Props {
   vocabulary: VocabularyItem[];
@@ -138,6 +139,8 @@ export const VocabSidebar = memo(function VocabSidebar({
           const isSelected = word.id === activeId;
           const levelNum = progress.wordMastery[word.id] || 0;
           const badge = MASTERY_BADGES[levelNum as MasteryLevel];
+          const authored = getAuthoredWord(word.id);
+          const arabic = authored?.arabic ?? word.arabicTranslation;
 
           return (
             /*
@@ -195,9 +198,20 @@ export const VocabSidebar = memo(function VocabSidebar({
                       </span>
                     )}
                   </div>
-                  <span className="font-sans text-muted-foreground text-xs font-medium">
-                    /{word.phonetic}/
-                  </span>
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="font-sans text-muted-foreground text-xs font-medium">
+                      /{word.phonetic}/
+                    </span>
+                    {arabic && (
+                      <span
+                        className="font-arabic font-medium text-muted-foreground text-xs"
+                        dir="rtl"
+                        lang="ar"
+                      >
+                        {arabic}
+                      </span>
+                    )}
+                  </div>
                 </div>
               </button>
 

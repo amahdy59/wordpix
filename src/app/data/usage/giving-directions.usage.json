@@ -1,0 +1,543 @@
+﻿[
+  {
+    "lessonId": "giving-directions-1",
+    "lessonName": "Giving Directions 1",
+    "unitId": "giving-directions",
+    "unitName": "Giving Directions",
+    "unitOrder": 20,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 79,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Left",
+      "Right",
+      "Straight",
+      "Forward",
+      "Backward",
+      "Up",
+      "Down",
+      "Turn",
+      "Stop",
+      "Go",
+      "North",
+      "South",
+      "East",
+      "West",
+      "Northeast"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «ليفت»",
+      "حق",
+      "مصطلح مرتبط بالموضوع يُسمّى «سترايغت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فوروارد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «باكوارد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «وب»",
+      "مصطلح مرتبط بالموضوع يُسمّى «دوون»",
+      "يدير",
+      "مكان يُسمّى «ستوب»",
+      "مكان يُسمّى «جو»",
+      "مصطلح مرتبط بالموضوع يُسمّى «نورث»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سووث»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ياست»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ويست»",
+      "مصطلح مرتبط بالموضوع يُسمّى «نورثياست»"
+    ],
+    "usage": {
+      "goal": "Understand and give very simple directions using familiar places and position words.",
+      "canDoStatement": "I can understand and give very simple directions using familiar places and position words",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Left", "Right", "Straight"],
+          "scenario": "When I move around town, I use left, right, and straight.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Left", "Right", "Straight"],
+            "expectedAnswer": "Left"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use left, right, and straight. Emphasize left, right, and straight and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Forward", "Backward", "Up"],
+          "scenario": "When I move around town, I use forward, backward, and up.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Forward", "Backward", "Up"],
+            "expectedAnswer": "Forward"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use forward, backward, and up. Emphasize forward, backward, and up and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Down", "Turn", "Stop"],
+          "scenario": "When I move around town, I use down, turn, and stop.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Down", "Turn", "Stop"],
+            "expectedAnswer": "Down"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use down, turn, and stop. Emphasize down, turn, and stop and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Go", "North", "South"],
+          "scenario": "When I move around town, I use go, north, and south.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Go", "North", "South"],
+            "expectedAnswer": "Go"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use go, north, and south. Emphasize go, north, and south and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["East", "West", "Northeast"],
+          "scenario": "When I move around town, I use east, west, and northeast.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["East", "West", "Northeast"],
+            "expectedAnswer": "East"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use east, west, and northeast. Emphasize east, west, and northeast and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Giving Directions Mini Story",
+      "text": "I walk through a small town. I use words like left, right, and straight to know where to go. Then I look for forward, backward, and up. The map is simple, and I follow one direction at a time. We also remember earlier words such as customer and butcher.",
+      "imageBrief": "One uncluttered giving directions scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Left"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Forward"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Down"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Go"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "East"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Left"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Right"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Up"
+      }
+    ],
+    "video": {
+      "title": "Giving Directions: See It, Say It",
+      "idea": "30–50 second contextual video set in a town. Show left, right, straight, forward, and backward naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see left, right, and straight. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Customer, Butcher from market-6\n3 lesson(s) back: Cake, Pie from market-4\n7 lesson(s) back: Bicycle, Skateboard from toys-games-3"
+  },
+  {
+    "lessonId": "giving-directions-2",
+    "lessonName": "Giving Directions 2",
+    "unitId": "giving-directions",
+    "unitName": "Giving Directions",
+    "unitOrder": 20,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 80,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Northwest",
+      "Southeast",
+      "Southwest",
+      "Compass",
+      "Direction",
+      "Near",
+      "Far",
+      "Close",
+      "Nearby",
+      "Distant",
+      "Here",
+      "There",
+      "Everywhere",
+      "Nowhere",
+      "Somewhere"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «نورثويست»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سووثياست»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سووثويست»",
+      "بوصلة",
+      "اتجاه",
+      "مصطلح مرتبط بالموضوع يُسمّى «نيار»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فار»",
+      "قريب",
+      "قريب",
+      "بعيد",
+      "مصطلح مرتبط بالموضوع يُسمّى «هيري»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ثيري»",
+      "مكان يُسمّى «يفيريوهيري»",
+      "مصطلح مرتبط بالموضوع يُسمّى «نووهيري»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سوميوهيري»"
+    ],
+    "usage": {
+      "goal": "Understand and give very simple directions using familiar places and position words.",
+      "canDoStatement": "I can understand and give very simple directions using familiar places and position words",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Northwest", "Southeast", "Southwest"],
+          "scenario": "When I move around town, I use northwest, southeast, and southwest.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Northwest", "Southeast", "Southwest"],
+            "expectedAnswer": "Northwest"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use northwest, southeast, and southwest. Emphasize northwest, southeast, and southwest and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Compass", "Direction", "Near"],
+          "scenario": "When I move around town, I use compass, direction, and near.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Compass", "Direction", "Near"],
+            "expectedAnswer": "Compass"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use compass, direction, and near. Emphasize compass, direction, and near and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Far", "Close", "Nearby"],
+          "scenario": "When I move around town, I use far, close, and nearby.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Far", "Close", "Nearby"],
+            "expectedAnswer": "Far"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use far, close, and nearby. Emphasize far, close, and nearby and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Distant", "Here", "There"],
+          "scenario": "When I move around town, I use distant, here, and there.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Distant", "Here", "There"],
+            "expectedAnswer": "Distant"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use distant, here, and there. Emphasize distant, here, and there and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Everywhere", "Nowhere", "Somewhere"],
+          "scenario": "When I move around town, I use everywhere, nowhere, and somewhere.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Everywhere", "Nowhere", "Somewhere"],
+            "expectedAnswer": "Everywhere"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use everywhere, nowhere, and somewhere. Emphasize everywhere, nowhere, and somewhere and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Giving Directions Mini Story",
+      "text": "I walk through a small town. I use words like northwest, southeast, and southwest to know where to go. Then I look for compass, direction, and near. The map is simple, and I follow one direction at a time. We also remember earlier words such as left and right.",
+      "imageBrief": "One uncluttered giving directions scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Northwest"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Compass"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Far"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Distant"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Everywhere"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Northwest"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Southeast"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Near"
+      }
+    ],
+    "video": {
+      "title": "Giving Directions: See It, Say It",
+      "idea": "30–50 second contextual video set in a town. Show northwest, southeast, southwest, compass, and direction naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see northwest, southeast, and southwest. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Left, Right from giving-directions-1\n3 lesson(s) back: Barcode, Shopping Bag from market-5\n7 lesson(s) back: Apple, Banana from market-1"
+  },
+  {
+    "lessonId": "giving-directions-3",
+    "lessonName": "Giving Directions 3",
+    "unitId": "giving-directions",
+    "unitName": "Giving Directions",
+    "unitOrder": 20,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 81,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Intersection",
+      "Corner",
+      "Block",
+      "Crosswalk",
+      "Traffic Light",
+      "Roundabout",
+      "One-Way",
+      "Dead End",
+      "Highway",
+      "Sidewalk",
+      "Building",
+      "Bridge",
+      "Monument",
+      "Fountain",
+      "Statue"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «ينتيرسيكتيون»",
+      "شجرة يُسمّى «كورنير»",
+      "مبنى يُسمّى «بلوك»",
+      "مكان يُسمّى «كروسسوالك»",
+      "لون يُسمّى «تراففيك ليغت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «رووندابووت»",
+      "اتجاه واحد",
+      "شجرة يُسمّى «دياد يند»",
+      "مصطلح مرتبط بالموضوع يُسمّى «هيغواي»",
+      "منطقة يُسمّى «سيديوالك»",
+      "مبنى",
+      "قوس القدم",
+      "شخص يُسمّى «مونومينت»",
+      "نافورة",
+      "شخص يُسمّى «ستاتوي»"
+    ],
+    "usage": {
+      "goal": "Understand and give very simple directions using familiar places and position words.",
+      "canDoStatement": "I can understand and give very simple directions using familiar places and position words",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Intersection", "Corner", "Block"],
+          "scenario": "When I move around town, I use intersection, corner, and block.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Intersection", "Corner", "Block"],
+            "expectedAnswer": "Intersection"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use intersection, corner, and block. Emphasize intersection, corner, and block and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Crosswalk", "Traffic Light", "Roundabout"],
+          "scenario": "When I move around town, I use crosswalk, traffic light, and roundabout.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Crosswalk", "Traffic Light", "Roundabout"],
+            "expectedAnswer": "Crosswalk"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use crosswalk, traffic light, and roundabout. Emphasize crosswalk, traffic light, and roundabout and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["One-Way", "Dead End", "Highway"],
+          "scenario": "When I move around town, I use one-way, dead end, and highway.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["One-Way", "Dead End", "Highway"],
+            "expectedAnswer": "One-Way"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use one-way, dead end, and highway. Emphasize one-way, dead end, and highway and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Sidewalk", "Building", "Bridge"],
+          "scenario": "When I move around town, I use sidewalk, building, and bridge.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Sidewalk", "Building", "Bridge"],
+            "expectedAnswer": "Sidewalk"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use sidewalk, building, and bridge. Emphasize sidewalk, building, and bridge and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Monument", "Fountain", "Statue"],
+          "scenario": "When I move around town, I use monument, fountain, and statue.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Monument", "Fountain", "Statue"],
+            "expectedAnswer": "Monument"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use monument, fountain, and statue. Emphasize monument, fountain, and statue and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Giving Directions Mini Story",
+      "text": "I walk through a small town. I use words like intersection, corner, and block to know where to go. Then I look for crosswalk, traffic light, and roundabout. The map is simple, and I follow one direction at a time. We also remember earlier words such as northwest and southeast.",
+      "imageBrief": "One uncluttered giving directions scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Intersection"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Crosswalk"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "One-Way"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Sidewalk"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Monument"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Intersection"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Corner"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Roundabout"
+      }
+    ],
+    "video": {
+      "title": "Giving Directions: See It, Say It",
+      "idea": "30–50 second contextual video set in a town. Show intersection, corner, block, crosswalk, and traffic light naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see intersection, corner, and block. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Northwest, Southeast from giving-directions-2\n3 lesson(s) back: Customer, Butcher from market-6\n7 lesson(s) back: Pepper, Tomato from market-2"
+  },
+  {
+    "lessonId": "giving-directions-4",
+    "lessonName": "Giving Directions 4",
+    "unitId": "giving-directions",
+    "unitName": "Giving Directions",
+    "unitOrder": 20,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 82,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": ["Tower", "Church", "Park", "School", "Hospital"],
+    "targetWordsArabic": [
+      "هيكل يُسمّى «تووير»",
+      "سفينة يُسمّى «تشورتش»",
+      "مركبة يُسمّى «بارك»",
+      "مبنى يُسمّى «ستشوول»",
+      "-"
+    ],
+    "usage": {
+      "goal": "Understand and give very simple directions using familiar places and position words.",
+      "canDoStatement": "I can understand and give very simple directions using familiar places and position words",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Tower", "Church", "Park"],
+          "scenario": "When I move around town, I use tower, church, and park.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Tower", "Church", "Park"],
+            "expectedAnswer": "Tower"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use tower, church, and park. Emphasize tower, church, and park and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["School", "Hospital"],
+          "scenario": "When I move around town, I use school and hospital.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["School", "Hospital"],
+            "expectedAnswer": "School"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use school and hospital. Emphasize school and hospital and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Giving Directions Mini Story",
+      "text": "I walk through a small town. I use words like tower, church, and park to know where to go. Then I look for school and hospital. The map is simple, and I follow one direction at a time. We also remember earlier words such as intersection and corner.",
+      "imageBrief": "One uncluttered giving directions scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Tower"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "School"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Tower"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Church"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Hospital"
+      }
+    ],
+    "video": {
+      "title": "Giving Directions: See It, Say It",
+      "idea": "30–50 second contextual video set in a town. Show tower, church, park, school, and hospital naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see tower, church, and park. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Intersection, Corner from giving-directions-3\n3 lesson(s) back: Left, Right from giving-directions-1\n7 lesson(s) back: Ham, Bacon from market-3"
+  }
+]

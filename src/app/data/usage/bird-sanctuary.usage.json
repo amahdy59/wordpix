@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "bird-sanctuary-1",
+    "lessonName": "The Bird Sanctuary 1",
+    "unitId": "bird-sanctuary",
+    "unitName": "The Bird Sanctuary",
+    "unitOrder": 115,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 533,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Robin",
+      "Sparrow",
+      "Blue Jay",
+      "Cardinal",
+      "Crow",
+      "Pigeon",
+      "Dove",
+      "Finch",
+      "Wren",
+      "Starling",
+      "Duck",
+      "Swan",
+      "Goose",
+      "Heron",
+      "Pelican"
+    ],
+    "targetWordsArabic": [
+      "أبو الحناء",
+      "عصفور",
+      "القيق الأزرق",
+      "مصطلح متعلق بالطيور يُسمّى «كاردينال»",
+      "غراب",
+      "حمامة",
+      "يمامة",
+      "شرشور",
+      "طائر يُسمّى «ورين»",
+      "طائر يُسمّى «ستارلينج»",
+      "بطة",
+      "بجعة",
+      "أوزة",
+      "مالك الحزين",
+      "بجع"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Bird Sanctuary to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the bird sanctuary vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Robin", "Sparrow", "Blue Jay", "Cardinal"],
+          "scenario": "At the animal-care setting, staff and visitors focus on robin, sparrow, blue jay, and cardinal. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Robin", "Sparrow", "Blue Jay", "Cardinal"],
+            "expectedAnswer": "Robin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on robin, sparrow, blue jay, and cardinal. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Crow", "Pigeon", "Dove", "Finch"],
+          "scenario": "At the animal-care setting, staff and visitors focus on crow, pigeon, dove, and finch. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crow", "Pigeon", "Dove", "Finch"],
+            "expectedAnswer": "Crow"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on crow, pigeon, dove, and finch. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Wren", "Starling", "Duck", "Swan"],
+          "scenario": "The guide points out the wren, starling, duck, and swan and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Wren", "Starling", "Duck", "Swan"],
+            "expectedAnswer": "Wren"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the wren, starling, duck, and swan and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Goose", "Heron", "Pelican"],
+          "scenario": "At the animal-care setting, staff and visitors focus on goose, heron, and pelican. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Goose", "Heron", "Pelican"],
+            "expectedAnswer": "Goose"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on goose, heron, and pelican. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bird Sanctuary: Practical Article",
+      "text": "A practical situation involving the bird sanctuary requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. At the animal-care setting, staff and visitors focus on robin, sparrow, blue jay, and cardinal. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on crow, pigeon, dove, and finch. The words connect to caring for, observing, or learning about animals. The guide points out the wren, starling, duck, and swan and asks the group to notice how the animals move or behave. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Bird Sanctuary. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Robin"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crow"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Wren"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Goose"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Robin"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Cardinal"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Mantle” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Bird Sanctuary: In Context",
+      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Mantle, Sulfur from volcano-5\n3 lesson(s) back: Seismograph, Tiltmeter from volcano-3\n7 lesson(s) back: Lagoon, Understory from jungle-4"
+  },
+  {
+    "lessonId": "bird-sanctuary-2",
+    "lessonName": "The Bird Sanctuary 2",
+    "unitId": "bird-sanctuary",
+    "unitName": "The Bird Sanctuary",
+    "unitOrder": 115,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 534,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Flamingo",
+      "Crane",
+      "Seagull",
+      "Kingfisher",
+      "Cormorant",
+      "Eagle",
+      "Hawk",
+      "Falcon",
+      "Owl",
+      "Osprey",
+      "Vulture",
+      "Kite",
+      "Harrier",
+      "Kestrel",
+      "Condor"
+    ],
+    "targetWordsArabic": [
+      "نحام",
+      "آلة يُسمّى «كراني»",
+      "نورس",
+      "رفراف",
+      "طائر يُسمّى «كورمورانت»",
+      "نسر",
+      "صقر",
+      "صقر",
+      "بومة",
+      "سمكة يُسمّى «وسبريي»",
+      "نسر آكل للجيف",
+      "حدأة",
+      "طائر يُسمّى «هارريير»",
+      "مصطلح متعلق بالطيور يُسمّى «كيستريل»",
+      "طائر يُسمّى «كوندور»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Bird Sanctuary to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the bird sanctuary vocabulary to handle a practical situation and explain key details.",
+      "textType": "email",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Flamingo", "Crane", "Seagull", "Kingfisher"],
+          "scenario": "At the animal-care setting, staff and visitors focus on flamingo, crane, seagull, and kingfisher. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Flamingo", "Crane", "Seagull", "Kingfisher"],
+            "expectedAnswer": "Flamingo"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on flamingo, crane, seagull, and kingfisher. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Cormorant", "Eagle", "Hawk", "Falcon"],
+          "scenario": "The guide points out the cormorant, eagle, hawk, and falcon and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cormorant", "Eagle", "Hawk", "Falcon"],
+            "expectedAnswer": "Cormorant"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the cormorant, eagle, hawk, and falcon and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Owl", "Osprey", "Vulture", "Kite"],
+          "scenario": "At the animal-care setting, staff and visitors focus on owl, osprey, vulture, and kite. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Owl", "Osprey", "Vulture", "Kite"],
+            "expectedAnswer": "Owl"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on owl, osprey, vulture, and kite. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Harrier", "Kestrel", "Condor"],
+          "scenario": "At the animal-care setting, staff and visitors focus on harrier, kestrel, and condor. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Harrier", "Kestrel", "Condor"],
+            "expectedAnswer": "Harrier"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on harrier, kestrel, and condor. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bird Sanctuary: Email",
+      "text": "A practical situation involving the bird sanctuary requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. At the animal-care setting, staff and visitors focus on flamingo, crane, seagull, and kingfisher. The words connect to caring for, observing, or learning about animals. The guide points out the cormorant, eagle, hawk, and falcon and asks the group to notice how the animals move or behave. At the animal-care setting, staff and visitors focus on owl, osprey, vulture, and kite. The words connect to caring for, observing, or learning about animals. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Bird Sanctuary. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Flamingo"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cormorant"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Owl"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Harrier"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Flamingo"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Kingfisher"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Robin” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Bird Sanctuary: In Context",
+      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Robin, Sparrow from bird-sanctuary-1\n3 lesson(s) back: Cave, Lake from volcano-4\n7 lesson(s) back: Splash, Echo from jungle-5"
+  },
+  {
+    "lessonId": "bird-sanctuary-3",
+    "lessonName": "The Bird Sanctuary 3",
+    "unitId": "bird-sanctuary",
+    "unitName": "The Bird Sanctuary",
+    "unitOrder": 115,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 535,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Beak",
+      "Feather",
+      "Wing",
+      "Talon",
+      "Crest",
+      "Tail",
+      "Breast",
+      "Egg",
+      "Nest",
+      "Perch",
+      "Fly",
+      "Sing",
+      "Migrate",
+      "Nest Building",
+      "Feed"
+    ],
+    "targetWordsArabic": [
+      "منقار",
+      "ريشة",
+      "جناح",
+      "مخلب",
+      "مصطلح متعلق بالطيور يُسمّى «كريست»",
+      "جزء يُسمّى «تايل»",
+      "مصطلح متعلق بالطيور يُسمّى «برياست»",
+      "بَيْضَة (بَيْض)",
+      "عش",
+      "مصطلح متعلق بالطيور يُسمّى «بيرتش»",
+      "مصطلح متعلق بالطيور يُسمّى «فلي»",
+      "يغني",
+      "مصطلح متعلق بالطيور يُسمّى «ميجراتي»",
+      "بناء العش",
+      "طعام يُسمّى «فييد»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Bird Sanctuary to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the bird sanctuary vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Beak", "Feather", "Wing", "Talon"],
+          "scenario": "At the animal-care setting, staff and visitors focus on beak, feather, wing, and talon. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Beak", "Feather", "Wing", "Talon"],
+            "expectedAnswer": "Beak"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on beak, feather, wing, and talon. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Crest", "Tail", "Breast", "Egg"],
+          "scenario": "At the animal-care setting, staff and visitors focus on crest, tail, breast, and egg. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crest", "Tail", "Breast", "Egg"],
+            "expectedAnswer": "Crest"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on crest, tail, breast, and egg. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Nest", "Perch", "Fly", "Sing"],
+          "scenario": "At the animal-care setting, staff and visitors focus on nest, perch, fly, and sing. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Nest", "Perch", "Fly", "Sing"],
+            "expectedAnswer": "Nest"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on nest, perch, fly, and sing. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Migrate", "Nest Building", "Feed"],
+          "scenario": "At the animal-care setting, staff and visitors focus on migrate, nest building, and feed. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Migrate", "Nest Building", "Feed"],
+            "expectedAnswer": "Migrate"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on migrate, nest building, and feed. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bird Sanctuary: Review",
+      "text": "A practical situation involving the bird sanctuary requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. At the animal-care setting, staff and visitors focus on beak, feather, wing, and talon. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on crest, tail, breast, and egg. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on nest, perch, fly, and sing. The words connect to caring for, observing, or learning about animals. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Bird Sanctuary. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Beak"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crest"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Nest"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Migrate"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Beak"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Talon"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Flamingo” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Bird Sanctuary: In Context",
+      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Flamingo, Crane from bird-sanctuary-2\n3 lesson(s) back: Mantle, Sulfur from volcano-5\n7 lesson(s) back: Crater, Lava from volcano-1"
+  },
+  {
+    "lessonId": "bird-sanctuary-4",
+    "lessonName": "The Bird Sanctuary 4",
+    "unitId": "bird-sanctuary",
+    "unitName": "The Bird Sanctuary",
+    "unitOrder": 115,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 536,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Preen",
+      "Soar",
+      "Dive",
+      "Flock",
+      "Roost",
+      "Tree",
+      "Branch",
+      "Birdhouse",
+      "Feeder",
+      "Bath",
+      "Pond",
+      "Wetland",
+      "Meadow",
+      "Cliff",
+      "Hedge"
+    ],
+    "targetWordsArabic": [
+      "مصطلح متعلق بالطيور يُسمّى «بريين»",
+      "مصطلح متعلق بالطيور يُسمّى «سوار»",
+      "مصطلح متعلق بالطيور يُسمّى «ديفي»",
+      "سرب",
+      "مصطلح متعلق بالطيور يُسمّى «رووست»",
+      "شجرة",
+      "شجرة يُسمّى «برانتش»",
+      "طائر يُسمّى «بيردهووسي»",
+      "آلة يُسمّى «فييدير»",
+      "عملية يُسمّى «باث»",
+      "طائر يُسمّى «بوند»",
+      "منطقة يُسمّى «ويتلاند»",
+      "مصطلح متعلق بالطيور يُسمّى «ميادوو»",
+      "مصطلح متعلق بالطيور يُسمّى «كليفف»",
+      "نبات يُسمّى «هيدجي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Bird Sanctuary to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the bird sanctuary vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Preen", "Soar", "Dive", "Flock"],
+          "scenario": "At the animal-care setting, staff and visitors focus on preen, soar, dive, and flock. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Preen", "Soar", "Dive", "Flock"],
+            "expectedAnswer": "Preen"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on preen, soar, dive, and flock. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Roost", "Tree", "Branch", "Birdhouse"],
+          "scenario": "At the animal-care setting, staff and visitors focus on roost, tree, branch, and birdhouse. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Roost", "Tree", "Branch", "Birdhouse"],
+            "expectedAnswer": "Roost"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on roost, tree, branch, and birdhouse. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Feeder", "Bath", "Pond", "Wetland"],
+          "scenario": "At the animal-care setting, staff and visitors focus on feeder, bath, pond, and wetland. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Feeder", "Bath", "Pond", "Wetland"],
+            "expectedAnswer": "Feeder"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on feeder, bath, pond, and wetland. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Meadow", "Cliff", "Hedge"],
+          "scenario": "At the animal-care setting, staff and visitors focus on meadow, cliff, and hedge. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Meadow", "Cliff", "Hedge"],
+            "expectedAnswer": "Meadow"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on meadow, cliff, and hedge. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bird Sanctuary: Travel/Visitor Guide",
+      "text": "A practical situation involving the bird sanctuary requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. At the animal-care setting, staff and visitors focus on preen, soar, dive, and flock. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on roost, tree, branch, and birdhouse. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on feeder, bath, pond, and wetland. The words connect to caring for, observing, or learning about animals. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Bird Sanctuary. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Preen"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Roost"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Feeder"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Meadow"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Preen"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Flock"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Beak” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Bird Sanctuary: In Context",
+      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Beak, Feather from bird-sanctuary-3\n3 lesson(s) back: Robin, Sparrow from bird-sanctuary-1\n7 lesson(s) back: Earthquake, Explosion from volcano-2"
+  }
+]

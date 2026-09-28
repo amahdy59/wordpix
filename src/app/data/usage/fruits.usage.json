@@ -1,0 +1,537 @@
+﻿[
+  {
+    "lessonId": "fruits-1",
+    "lessonName": "Fruits 1",
+    "unitId": "fruits",
+    "unitName": "Fruits",
+    "unitOrder": 10,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 38,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Apple",
+      "Banana",
+      "Orange",
+      "Grape",
+      "Strawberry",
+      "Watermelon",
+      "Pineapple",
+      "Mango",
+      "Peach",
+      "Pear",
+      "Blueberry",
+      "Raspberry",
+      "Blackberry",
+      "Cranberry",
+      "Gooseberry"
+    ],
+    "targetWordsArabic": [
+      "تفاح",
+      "موز",
+      "برتقال",
+      "عنب",
+      "فراولة",
+      "بطيخ",
+      "أناناس",
+      "مانجو",
+      "خوخ",
+      "كمثرى",
+      "توت أزرق",
+      "توت العليق",
+      "توت أسود",
+      "توت بري أحمر",
+      "عنب الثعلب"
+    ],
+    "usage": {
+      "goal": "Recognize common fruits and use them in simple food and shopping contexts.",
+      "canDoStatement": "I can recognize common fruits and use them in simple food and shopping contexts",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Apple", "Banana", "Orange"],
+          "scenario": "At the market, I can choose an apple, a banana, an orange.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Apple", "Banana", "Orange"],
+            "expectedAnswer": "Apple"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose an apple, a banana, an orange. Emphasize apple, banana, and orange and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Grape", "Strawberry", "Watermelon"],
+          "scenario": "At the market, I can choose a grape, a strawberry, a watermelon.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Grape", "Strawberry", "Watermelon"],
+            "expectedAnswer": "Grape"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a grape, a strawberry, a watermelon. Emphasize grape, strawberry, and watermelon and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Pineapple", "Mango", "Peach"],
+          "scenario": "At the market, I can choose a pineapple, a mango, a peach.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Pineapple", "Mango", "Peach"],
+            "expectedAnswer": "Pineapple"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a pineapple, a mango, a peach. Emphasize pineapple, mango, and peach and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Pear", "Blueberry", "Raspberry"],
+          "scenario": "At the market, I can choose a pear, a blueberry, a raspberry.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Pear", "Blueberry", "Raspberry"],
+            "expectedAnswer": "Pear"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a pear, a blueberry, a raspberry. Emphasize pear, blueberry, and raspberry and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Blackberry", "Cranberry", "Gooseberry"],
+          "scenario": "At the market, I can choose a blackberry, a cranberry, a gooseberry.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Blackberry", "Cranberry", "Gooseberry"],
+            "expectedAnswer": "Blackberry"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a blackberry, a cranberry, a gooseberry. Emphasize blackberry, cranberry, and gooseberry and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Fruits Mini Story",
+      "text": "Today I am at the market. I see apple, banana, and orange. I also find grape, strawberry, and watermelon. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as lamp and phone.",
+      "imageBrief": "One uncluttered fruits scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Apple"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Grape"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pineapple"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pear"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Blackberry"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Apple"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Banana"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Watermelon"
+      }
+    ],
+    "video": {
+      "title": "Fruits: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show apple, banana, orange, grape, and strawberry naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see apple, banana, and orange. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Lamp, Phone from living-room-5\n3 lesson(s) back: Floor Lamp, Table Lamp from living-room-3\n7 lesson(s) back: Oven Mitt, Apron from kitchen-4"
+  },
+  {
+    "lessonId": "fruits-2",
+    "lessonName": "Fruits 2",
+    "unitId": "fruits",
+    "unitName": "Fruits",
+    "unitOrder": 10,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 39,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Mulberry",
+      "Boysenberry",
+      "Acai Berry",
+      "Lingonberry",
+      "Elderberry",
+      "Papaya",
+      "Coconut",
+      "Passion Fruit",
+      "Guava",
+      "Lychee",
+      "Dragon Fruit",
+      "Star Fruit",
+      "Jackfruit",
+      "Durian",
+      "Rambutan"
+    ],
+    "targetWordsArabic": [
+      "توت شامي",
+      "توت بويسن",
+      "توت الأساي",
+      "توت لينغون الأحمر",
+      "ثمار البيلسان",
+      "بابايا",
+      "جوز الهند",
+      "باشن فروت",
+      "جوافة",
+      "ليتشي",
+      "فاكهة التنين",
+      "فاكهة النجمة",
+      "جاك فروت",
+      "دوريان",
+      "رامبوتان"
+    ],
+    "usage": {
+      "goal": "Recognize common fruits and use them in simple food and shopping contexts.",
+      "canDoStatement": "I can recognize common fruits and use them in simple food and shopping contexts",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Mulberry", "Boysenberry", "Acai Berry"],
+          "scenario": "At the market, I can choose a mulberry, a boysenberry, an acai berry.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Mulberry", "Boysenberry", "Acai Berry"],
+            "expectedAnswer": "Mulberry"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a mulberry, a boysenberry, an acai berry. Emphasize mulberry, boysenberry, and acai berry and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Lingonberry", "Elderberry", "Papaya"],
+          "scenario": "At the market, I can choose a lingonberry, an elderberry, a papaya.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Lingonberry", "Elderberry", "Papaya"],
+            "expectedAnswer": "Lingonberry"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a lingonberry, an elderberry, a papaya. Emphasize lingonberry, elderberry, and papaya and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Coconut", "Passion Fruit", "Guava"],
+          "scenario": "At the market, I can choose a coconut, a passion fruit, a guava.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Coconut", "Passion Fruit", "Guava"],
+            "expectedAnswer": "Coconut"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a coconut, a passion fruit, a guava. Emphasize coconut, passion fruit, and guava and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Lychee", "Dragon Fruit", "Star Fruit"],
+          "scenario": "At the market, I can choose a lychee, a dragon fruit, a star fruit.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Lychee", "Dragon Fruit", "Star Fruit"],
+            "expectedAnswer": "Lychee"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a lychee, a dragon fruit, a star fruit. Emphasize lychee, dragon fruit, and star fruit and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Jackfruit", "Durian", "Rambutan"],
+          "scenario": "At the market, I can choose a jackfruit, a durian, a rambutan.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Jackfruit", "Durian", "Rambutan"],
+            "expectedAnswer": "Jackfruit"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a jackfruit, a durian, a rambutan. Emphasize jackfruit, durian, and rambutan and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Fruits Mini Story",
+      "text": "Today I am at the market. I see mulberry, boysenberry, and acai berry. I also find lingonberry, elderberry, and papaya. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as apple and banana.",
+      "imageBrief": "One uncluttered fruits scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Mulberry"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Lingonberry"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Coconut"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Lychee"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Jackfruit"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Mulberry"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Boysenberry"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Papaya"
+      }
+    ],
+    "video": {
+      "title": "Fruits: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show mulberry, boysenberry, acai berry, lingonberry, and elderberry naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see mulberry, boysenberry, and acai berry. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Apple, Banana from fruits-1\n3 lesson(s) back: Tablecloth, Placemat from living-room-4\n7 lesson(s) back: Cheese, Rice from kitchen-5"
+  },
+  {
+    "lessonId": "fruits-3",
+    "lessonName": "Fruits 3",
+    "unitId": "fruits",
+    "unitName": "Fruits",
+    "unitOrder": 10,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 40,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Lemon",
+      "Lime",
+      "Grapefruit",
+      "Tangerine",
+      "Mandarin",
+      "Clementine",
+      "Kumquat",
+      "Blood Orange",
+      "Pomelo",
+      "Yuzu",
+      "Cherry",
+      "Plum",
+      "Apricot",
+      "Nectarine",
+      "Date"
+    ],
+    "targetWordsArabic": [
+      "ليمون",
+      "ليمون أخضر",
+      "جريب فروت",
+      "يوسفي",
+      "يوسفي",
+      "كليمنتين",
+      "كمكوات",
+      "برتقال دموي",
+      "بوميلو",
+      "يوزو",
+      "كرز",
+      "برقوق",
+      "مشمش",
+      "خوخ أملس",
+      "تمر"
+    ],
+    "usage": {
+      "goal": "Recognize common fruits and use them in simple food and shopping contexts.",
+      "canDoStatement": "I can recognize common fruits and use them in simple food and shopping contexts",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Lemon", "Lime", "Grapefruit"],
+          "scenario": "At the market, I can choose a lemon, a lime, a grapefruit.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Lemon", "Lime", "Grapefruit"],
+            "expectedAnswer": "Lemon"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a lemon, a lime, a grapefruit. Emphasize lemon, lime, and grapefruit and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Tangerine", "Mandarin", "Clementine"],
+          "scenario": "At the market, I can choose a tangerine, a mandarin, a clementine.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Tangerine", "Mandarin", "Clementine"],
+            "expectedAnswer": "Tangerine"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a tangerine, a mandarin, a clementine. Emphasize tangerine, mandarin, and clementine and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Kumquat", "Blood Orange", "Pomelo"],
+          "scenario": "At the market, I can choose a kumquat, a blood orange, a pomelo.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Kumquat", "Blood Orange", "Pomelo"],
+            "expectedAnswer": "Kumquat"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a kumquat, a blood orange, a pomelo. Emphasize kumquat, blood orange, and pomelo and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Yuzu", "Cherry", "Plum"],
+          "scenario": "At the market, I can choose a yuzu, a cherry, a plum.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Yuzu", "Cherry", "Plum"],
+            "expectedAnswer": "Yuzu"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a yuzu, a cherry, a plum. Emphasize yuzu, cherry, and plum and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Apricot", "Nectarine", "Date"],
+          "scenario": "At the market, I can choose an apricot, a nectarine, a date.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Apricot", "Nectarine", "Date"],
+            "expectedAnswer": "Apricot"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose an apricot, a nectarine, a date. Emphasize apricot, nectarine, and date and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Fruits Mini Story",
+      "text": "Today I am at the market. I see lemon, lime, and grapefruit. I also find tangerine, mandarin, and clementine. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as mulberry and boysenberry.",
+      "imageBrief": "One uncluttered fruits scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Lemon"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Tangerine"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Kumquat"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Yuzu"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Apricot"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Lemon"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Lime"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Clementine"
+      }
+    ],
+    "video": {
+      "title": "Fruits: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show lemon, lime, grapefruit, tangerine, and mandarin naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see lemon, lime, and grapefruit. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Mulberry, Boysenberry from fruits-2\n3 lesson(s) back: Lamp, Phone from living-room-5\n7 lesson(s) back: Sofa, Armchair from living-room-1"
+  },
+  {
+    "lessonId": "fruits-4",
+    "lessonName": "Fruits 4",
+    "unitId": "fruits",
+    "unitName": "Fruits",
+    "unitOrder": 10,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 41,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": ["Fig", "Olive", "Avocado", "Persimmon", "Pomegranate"],
+    "targetWordsArabic": ["تين", "زيتونة", "أفوكادو", "كاكي", "رمان"],
+    "usage": {
+      "goal": "Recognize common fruits and use them in simple food and shopping contexts.",
+      "canDoStatement": "I can recognize common fruits and use them in simple food and shopping contexts",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Fig", "Olive", "Avocado"],
+          "scenario": "At the market, I can choose a fig, an olive, an avocado.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Fig", "Olive", "Avocado"],
+            "expectedAnswer": "Fig"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a fig, an olive, an avocado. Emphasize fig, olive, and avocado and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Persimmon", "Pomegranate"],
+          "scenario": "At the market, I can choose a persimmon, a pomegranate.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Persimmon", "Pomegranate"],
+            "expectedAnswer": "Persimmon"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a persimmon, a pomegranate. Emphasize persimmon and pomegranate and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Fruits Mini Story",
+      "text": "Today I am at the market. I see fig, olive, and avocado. I also find persimmon and pomegranate. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as lemon and lime.",
+      "imageBrief": "One uncluttered fruits scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Fig"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Persimmon"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Fig"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Olive"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Pomegranate"
+      }
+    ],
+    "video": {
+      "title": "Fruits: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show fig, olive, avocado, persimmon, and pomegranate naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see fig, olive, and avocado. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Lemon, Lime from fruits-3\n3 lesson(s) back: Apple, Banana from fruits-1\n7 lesson(s) back: Drawer, Magazine Rack from living-room-2"
+  }
+]

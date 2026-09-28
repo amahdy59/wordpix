@@ -48,6 +48,44 @@
 }
 
 @layer utilities {
+  /* ─── Responsive layout system ───────────────────────────────────────────
+     Containers own measure only; shells own gutters. This avoids double
+     padding when a page container is rendered inside AppShell while keeping
+     the same width vocabulary available to standalone learning flows. */
+  .wp-container-reading,
+  .wp-container-content,
+  .wp-container-wide,
+  .wp-container-shell,
+  .wp-container-immersive {
+    width: 100%;
+    min-width: 0;
+    margin-inline: auto;
+  }
+
+  .wp-container-reading {
+    max-width: var(--wp-layout-reading);
+  }
+
+  .wp-container-content {
+    max-width: var(--wp-layout-content);
+  }
+
+  .wp-container-wide {
+    max-width: var(--wp-layout-wide);
+  }
+
+  .wp-container-shell {
+    max-width: var(--wp-layout-shell);
+  }
+
+  .wp-container-immersive {
+    max-width: var(--wp-layout-immersive);
+  }
+
+  .wp-layout-gutter {
+    padding-inline: var(--wp-layout-gutter-inline);
+  }
+
   .animate-wp-shake {
     animation: wp-shake 0.35s ease-in-out;
   }

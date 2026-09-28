@@ -1,0 +1,678 @@
+﻿[
+  {
+    "lessonId": "zoo-1",
+    "lessonName": "L5 Zoo 1",
+    "unitId": "zoo",
+    "unitName": "L5 Zoo",
+    "unitOrder": 119,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 549,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "lion",
+      "elephant",
+      "giraffe",
+      "zebra",
+      "hippopotamus",
+      "rhinoceros",
+      "cheetah",
+      "gorilla",
+      "hyena",
+      "wildebeest",
+      "gazelle",
+      "ostrich",
+      "tiger",
+      "panda",
+      "orangutan"
+    ],
+    "targetWordsArabic": [
+      "أسد",
+      "فيل",
+      "زرافة",
+      "حمار وحشي",
+      "كائن أو عنصر طبيعي يُسمّى «هيببوبوتاموس»",
+      "كائن أو عنصر طبيعي يُسمّى «رهينوكيروس»",
+      "فهد صائد",
+      "غوريلا",
+      "ضبع",
+      "نوّ",
+      "غزال",
+      "نعامة",
+      "شخص يُسمّى «تيجير»",
+      "حيوان ثديي يُسمّى «باندا»",
+      "إنسان الغاب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L5 Zoo to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l5 zoo vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["lion", "elephant", "giraffe", "zebra"],
+          "scenario": "At the animal-care setting, staff and visitors focus on lion, elephant, giraffe, and zebra. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["lion", "elephant", "giraffe", "zebra"],
+            "expectedAnswer": "lion"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on lion, elephant, giraffe, and zebra. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["hippopotamus", "rhinoceros", "cheetah", "gorilla"],
+          "scenario": "At the animal-care setting, staff and visitors focus on hippopotamus, rhinoceros, cheetah, and gorilla. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["hippopotamus", "rhinoceros", "cheetah", "gorilla"],
+            "expectedAnswer": "hippopotamus"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on hippopotamus, rhinoceros, cheetah, and gorilla. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["hyena", "wildebeest", "gazelle", "ostrich"],
+          "scenario": "At the animal-care setting, staff and visitors focus on hyena, wildebeest, gazelle, and ostrich. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["hyena", "wildebeest", "gazelle", "ostrich"],
+            "expectedAnswer": "hyena"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on hyena, wildebeest, gazelle, and ostrich. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["tiger", "panda", "orangutan"],
+          "scenario": "At the animal-care setting, staff and visitors focus on tiger, panda, and orangutan. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["tiger", "panda", "orangutan"],
+            "expectedAnswer": "tiger"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on tiger, panda, and orangutan. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L5 Zoo: Practical Article",
+      "text": "A practical situation involving l5 zoo requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. At the animal-care setting, staff and visitors focus on lion, elephant, giraffe, and zebra. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on hippopotamus, rhinoceros, cheetah, and gorilla. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on hyena, wildebeest, gazelle, and ostrich. The words connect to caring for, observing, or learning about animals. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Zoo. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "lion"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "hippopotamus"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "hyena"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "tiger"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "lion"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "zebra"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Sand” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L5 Zoo: In Context",
+      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Sand, Moss from reptile-house-4\n3 lesson(s) back: Bearded Dragon, Anole from reptile-house-2\n7 lesson(s) back: Head, Eye from insect-world-2"
+  },
+  {
+    "lessonId": "zoo-2",
+    "lessonName": "L5 Zoo 2",
+    "unitId": "zoo",
+    "unitName": "L5 Zoo",
+    "unitOrder": 119,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 550,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "snow leopard",
+      "red panda",
+      "komodo dragon",
+      "peacock",
+      "water buffalo",
+      "cobra",
+      "macaque",
+      "bald eagle",
+      "grizzly bear",
+      "bison",
+      "wolf",
+      "moose",
+      "raccoon",
+      "skunk",
+      "otter"
+    ],
+    "targetWordsArabic": [
+      "نمر ثلجي",
+      "باندا حمراء",
+      "تنين كومودو",
+      "طاووس",
+      "جاموس مائي",
+      "كائن أو عنصر طبيعي يُسمّى «كوبرا»",
+      "كائن أو عنصر طبيعي يُسمّى «ماكاكي»",
+      "عقاب أصلع",
+      "كائن أو عنصر طبيعي يُسمّى «جريززلي بيار»",
+      "كائن أو عنصر طبيعي يُسمّى «بيسون»",
+      "كائن أو عنصر طبيعي يُسمّى «وولف»",
+      "كائن أو عنصر طبيعي يُسمّى «مووسي»",
+      "كائن أو عنصر طبيعي يُسمّى «راككوون»",
+      "شخص يُسمّى «سكونك»",
+      "قضاعة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L5 Zoo to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l5 zoo vocabulary to handle a practical situation and explain key details.",
+      "textType": "email",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["snow leopard", "red panda", "komodo dragon", "peacock"],
+          "scenario": "At the animal-care setting, staff and visitors focus on snow leopard, red panda, komodo dragon, and peacock. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["snow leopard", "red panda", "komodo dragon", "peacock"],
+            "expectedAnswer": "snow leopard"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on snow leopard, red panda, komodo dragon, and peacock. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["water buffalo", "cobra", "macaque", "bald eagle"],
+          "scenario": "At the animal-care setting, staff and visitors focus on water buffalo, cobra, macaque, and bald eagle. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["water buffalo", "cobra", "macaque", "bald eagle"],
+            "expectedAnswer": "water buffalo"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on water buffalo, cobra, macaque, and bald eagle. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["grizzly bear", "bison", "wolf", "moose"],
+          "scenario": "At the animal-care setting, staff and visitors focus on grizzly bear, bison, wolf, and moose. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["grizzly bear", "bison", "wolf", "moose"],
+            "expectedAnswer": "grizzly bear"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on grizzly bear, bison, wolf, and moose. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["raccoon", "skunk", "otter"],
+          "scenario": "At the animal-care setting, staff and visitors focus on raccoon, skunk, and otter. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["raccoon", "skunk", "otter"],
+            "expectedAnswer": "raccoon"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on raccoon, skunk, and otter. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L5 Zoo: Email",
+      "text": "A practical situation involving l5 zoo requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. At the animal-care setting, staff and visitors focus on snow leopard, red panda, komodo dragon, and peacock. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on water buffalo, cobra, macaque, and bald eagle. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on grizzly bear, bison, wolf, and moose. The words connect to caring for, observing, or learning about animals. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Zoo. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "snow leopard"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "water buffalo"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "grizzly bear"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "raccoon"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "snow leopard"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "peacock"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “lion” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L5 Zoo: In Context",
+      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: lion, elephant from zoo-1\n3 lesson(s) back: Scale, Shell from reptile-house-3\n7 lesson(s) back: Egg, Larva from insect-world-3"
+  },
+  {
+    "lessonId": "zoo-3",
+    "lessonName": "L5 Zoo 3",
+    "unitId": "zoo",
+    "unitName": "L5 Zoo",
+    "unitOrder": 119,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 551,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "beaver",
+      "cougar",
+      "crocodile",
+      "alligator",
+      "iguana",
+      "chameleon",
+      "tortoise",
+      "python",
+      "frog",
+      "salamander",
+      "gecko",
+      "rattlesnake",
+      "parrot",
+      "flamingo",
+      "toucan"
+    ],
+    "targetWordsArabic": [
+      "كائن أو عنصر طبيعي يُسمّى «بيافير»",
+      "كائن أو عنصر طبيعي يُسمّى «كووجار»",
+      "زاحف يُسمّى «كروكوديلي»",
+      "كائن أو عنصر طبيعي يُسمّى «الليجاتور»",
+      "إغوانا",
+      "حرباء",
+      "سلحفاة برية",
+      "كائن أو عنصر طبيعي يُسمّى «بيثون»",
+      "حشرة يُسمّى «فروج»",
+      "كائن أو عنصر طبيعي يُسمّى «سالاماندير»",
+      "حشرة يُسمّى «جيكو»",
+      "أفعى جرسية",
+      "ببغاء",
+      "نحام",
+      "طوقان"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L5 Zoo to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l5 zoo vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["beaver", "cougar", "crocodile", "alligator"],
+          "scenario": "At the animal-care setting, staff and visitors focus on beaver, cougar, crocodile, and alligator. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["beaver", "cougar", "crocodile", "alligator"],
+            "expectedAnswer": "beaver"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on beaver, cougar, crocodile, and alligator. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["iguana", "chameleon", "tortoise", "python"],
+          "scenario": "At the animal-care setting, staff and visitors focus on iguana, chameleon, tortoise, and python. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["iguana", "chameleon", "tortoise", "python"],
+            "expectedAnswer": "iguana"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on iguana, chameleon, tortoise, and python. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["frog", "salamander", "gecko", "rattlesnake"],
+          "scenario": "At the animal-care setting, staff and visitors focus on frog, salamander, gecko, and rattlesnake. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["frog", "salamander", "gecko", "rattlesnake"],
+            "expectedAnswer": "frog"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on frog, salamander, gecko, and rattlesnake. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["parrot", "flamingo", "toucan"],
+          "scenario": "The guide points out the parrot, flamingo, and toucan and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["parrot", "flamingo", "toucan"],
+            "expectedAnswer": "parrot"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the parrot, flamingo, and toucan and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L5 Zoo: Review",
+      "text": "A practical situation involving l5 zoo requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. At the animal-care setting, staff and visitors focus on beaver, cougar, crocodile, and alligator. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on iguana, chameleon, tortoise, and python. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on frog, salamander, gecko, and rattlesnake. The words connect to caring for, observing, or learning about animals. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Zoo. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "beaver"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "iguana"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "frog"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "parrot"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "beaver"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "alligator"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “snow leopard” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L5 Zoo: In Context",
+      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: snow leopard, red panda from zoo-2\n3 lesson(s) back: Sand, Moss from reptile-house-4\n7 lesson(s) back: Spin, Camouflage from insect-world-4"
+  },
+  {
+    "lessonId": "zoo-4",
+    "lessonName": "L5 Zoo 4",
+    "unitId": "zoo",
+    "unitName": "L5 Zoo",
+    "unitOrder": 119,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 552,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "penguin",
+      "owl",
+      "hawk",
+      "pelican",
+      "crane",
+      "hummingbird",
+      "cockatoo",
+      "enclosure",
+      "cage",
+      "aquarium",
+      "aviary",
+      "gift shop",
+      "ticket booth",
+      "map",
+      "bench"
+    ],
+    "targetWordsArabic": [
+      "بطريق",
+      "بومة",
+      "صقر",
+      "بجع",
+      "آلة يُسمّى «كراني»",
+      "طائر يُسمّى «هوممينجبيرد»",
+      "لون يُسمّى «كوكاتوو»",
+      "هيكل يُسمّى «ينكلوسوري»",
+      "قفص",
+      "حوض أحياء مائية",
+      "طائر يُسمّى «افياري»",
+      "متجر هدية",
+      "مكان يُسمّى «تيكيت بووث»",
+      "خريطة",
+      "مقعد"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L5 Zoo to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l5 zoo vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["penguin", "owl", "hawk", "pelican"],
+          "scenario": "The guide points out the penguin, owl, hawk, and pelican and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["penguin", "owl", "hawk", "pelican"],
+            "expectedAnswer": "penguin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the penguin, owl, hawk, and pelican and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["crane", "hummingbird", "cockatoo", "enclosure"],
+          "scenario": "At the animal-care setting, staff and visitors focus on crane, hummingbird, cockatoo, and enclosure. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["crane", "hummingbird", "cockatoo", "enclosure"],
+            "expectedAnswer": "crane"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on crane, hummingbird, cockatoo, and enclosure. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["cage", "aquarium", "aviary", "gift shop"],
+          "scenario": "At the animal-care setting, staff and visitors focus on cage, aquarium, aviary, and gift shop. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["cage", "aquarium", "aviary", "gift shop"],
+            "expectedAnswer": "cage"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on cage, aquarium, aviary, and gift shop. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["ticket booth", "map", "bench"],
+          "scenario": "At the animal-care setting, staff and visitors focus on ticket booth, map, and bench. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["ticket booth", "map", "bench"],
+            "expectedAnswer": "ticket booth"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on ticket booth, map, and bench. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L5 Zoo: Travel/Visitor Guide",
+      "text": "A practical situation involving l5 zoo requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide points out the penguin, owl, hawk, and pelican and asks the group to notice how the animals move or behave. At the animal-care setting, staff and visitors focus on crane, hummingbird, cockatoo, and enclosure. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on cage, aquarium, aviary, and gift shop. The words connect to caring for, observing, or learning about animals. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Zoo. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "penguin"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "crane"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "cage"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "ticket booth"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "penguin"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "pelican"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “beaver” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L5 Zoo: In Context",
+      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: beaver, cougar from zoo-3\n3 lesson(s) back: lion, elephant from zoo-1\n7 lesson(s) back: Cobra, Python from reptile-house-1"
+  },
+  {
+    "lessonId": "zoo-5",
+    "lessonName": "L5 Zoo 5",
+    "unitId": "zoo",
+    "unitName": "L5 Zoo",
+    "unitOrder": 119,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 553,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": ["fountain", "playground", "train ride", "snack bar"],
+    "targetWordsArabic": [
+      "نافورة",
+      "منطقة يُسمّى «بلايجرووند»",
+      "كائن أو عنصر طبيعي يُسمّى «تراين ريدي»",
+      "مشروب يُسمّى «سناك بار»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L5 Zoo to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l5 zoo vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": {
+        "chunkNumber": 1,
+        "targetWords": ["fountain", "playground", "train ride", "snack bar"],
+        "scenario": "At the animal-care setting, staff and visitors focus on fountain, playground, train ride, and snack bar. The words connect to caring for, observing, or learning about animals.",
+        "check": {
+          "question": "Which target term is most central to the situation?",
+          "options": ["fountain", "playground", "train ride", "snack bar"],
+          "expectedAnswer": "fountain"
+        },
+        "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on fountain, playground, train ride, and snack bar. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+      }
+    },
+    "reading": {
+      "title": "L5 Zoo: Real-Life Scenario",
+      "text": "A practical situation involving l5 zoo requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. At the animal-care setting, staff and visitors focus on fountain, playground, train ride, and snack bar. The words connect to caring for, observing, or learning about animals. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Zoo. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "fountain"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "fountain"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "snack bar"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “penguin” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L5 Zoo: In Context",
+      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: penguin, owl from zoo-4\n3 lesson(s) back: snow leopard, red panda from zoo-2\n7 lesson(s) back: Bearded Dragon, Anole from reptile-house-2"
+  }
+]

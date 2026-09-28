@@ -36,8 +36,10 @@ export const PageHeader = memo(function PageHeader({
 
   const containerStyles =
     variant === "hero"
-      ? "rounded-3xl border border-primary/25 bg-wp-card p-5 sm:p-6 shadow-wp-sm grid gap-5 lg:grid-cols-[1fr_auto] lg:items-center"
-      : "flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-2";
+      ? "relative overflow-hidden rounded-3xl border border-primary/25 bg-wp-card p-5 shadow-wp-sm sm:p-7 grid gap-5 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center before:absolute before:inset-y-0 before:start-0 before:w-1 before:bg-primary"
+      : "flex flex-col sm:flex-row sm:items-end justify-between gap-4 py-1 sm:py-2";
+  const headingStyles =
+    headingLevel === "h1" ? "text-2xl sm:text-3xl lg:text-4xl" : "text-xl sm:text-2xl lg:text-3xl";
 
   return (
     <header className={`${containerStyles} ${className}`}>
@@ -61,12 +63,14 @@ export const PageHeader = memo(function PageHeader({
             </div>
           )}
 
-          <HeadingTag className="font-sans text-2xl sm:text-3xl font-black leading-tight text-foreground tracking-tight">
+          <HeadingTag
+            className={`font-sans ${headingStyles} font-black leading-[1.15] text-foreground tracking-tight text-balance`}
+          >
             {title}
           </HeadingTag>
 
           {subtitle && (
-            <p className="mt-2 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
+            <p className="mt-2 max-w-3xl text-sm sm:text-base font-medium leading-7 text-muted-foreground text-pretty">
               {subtitle}
             </p>
           )}

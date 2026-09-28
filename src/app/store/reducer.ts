@@ -1,5 +1,10 @@
 import type { Screen, Action, OnboardStep } from "../types";
-import { COURSE_UNITS, DEFAULT_UNIT_ID, resolveGroup, resolveUnitForLesson } from "../data/lessons";
+import {
+  COURSE_UNITS,
+  DEFAULT_UNIT_ID,
+  resolveGroup,
+  resolveUnitForLesson,
+} from "../data/courseCatalog";
 import { MAX_LESSON_STAGE_COUNT } from "../lesson/lessonSequence";
 
 export const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];

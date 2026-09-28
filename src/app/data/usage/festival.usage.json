@@ -1,0 +1,752 @@
+﻿[
+  {
+    "lessonId": "festival-1",
+    "lessonName": "The Festival 1",
+    "unitId": "festival",
+    "unitName": "The Festival",
+    "unitOrder": 128,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 589,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Banner",
+      "Bunting",
+      "Balloon",
+      "Streamer",
+      "Lantern",
+      "Garland",
+      "Flag",
+      "Ribbon",
+      "Confetti",
+      "Piñata",
+      "Wreath",
+      "Paper Flower",
+      "Barbecue",
+      "Kebab",
+      "Pizza Slice"
+    ],
+    "targetWordsArabic": [
+      "لافتة",
+      "أعلام زينة",
+      "بالون",
+      "شريط زينة",
+      "فانوس",
+      "إكليل زينة",
+      "علم",
+      "شريط",
+      "قصاصات احتفال",
+      "بينياتا",
+      "إكليل",
+      "زهرة ورقية",
+      "يشوي على الشواية",
+      "كباب",
+      "شريحة بيتزا"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Festival to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the festival vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Banner", "Bunting", "Balloon", "Streamer"],
+          "scenario": "During the creative session, the group works with banner, bunting, balloon, and streamer. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Banner", "Bunting", "Balloon", "Streamer"],
+            "expectedAnswer": "Banner"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with banner, bunting, balloon, and streamer. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Lantern", "Garland", "Flag", "Ribbon"],
+          "scenario": "During the creative session, the group works with lantern, garland, flag, and ribbon. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lantern", "Garland", "Flag", "Ribbon"],
+            "expectedAnswer": "Lantern"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with lantern, garland, flag, and ribbon. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Confetti", "Piñata", "Wreath", "Paper Flower"],
+          "scenario": "During the creative session, the group works with confetti, piñata, wreath, and paper flower. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Confetti", "Piñata", "Wreath", "Paper Flower"],
+            "expectedAnswer": "Confetti"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with confetti, piñata, wreath, and paper flower. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Barbecue", "Kebab", "Pizza Slice"],
+          "scenario": "During the creative session, the group works with barbecue, kebab, and pizza slice. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Barbecue", "Kebab", "Pizza Slice"],
+            "expectedAnswer": "Barbecue"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with barbecue, kebab, and pizza slice. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Festival: Travel/Visitor Guide",
+      "text": "A practical situation involving the festival requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with banner, bunting, balloon, and streamer. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with lantern, garland, flag, and ribbon. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with confetti, piñata, wreath, and paper flower. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Festival. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Banner"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lantern"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Confetti"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Barbecue"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Banner"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Streamer"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “catalog” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Festival: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: catalog, timeline from museum-4\n3 lesson(s) back: rotunda, courtyard from museum-2\n7 lesson(s) back: 3D glasses, recliner from cinema-2"
+  },
+  {
+    "lessonId": "festival-2",
+    "lessonName": "The Festival 2",
+    "unitId": "festival",
+    "unitName": "The Festival",
+    "unitOrder": 128,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 590,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Taco",
+      "Samosa",
+      "Spring Roll",
+      "Waffle",
+      "Crepe",
+      "Fruit Skewer",
+      "Roasted Corn",
+      "Doughnut",
+      "Fried Chicken",
+      "Lemonade",
+      "Smoothie",
+      "Hot Chocolate",
+      "Milkshake",
+      "Juice Box",
+      "Cotton Candy"
+    ],
+    "targetWordsArabic": [
+      "تاكو",
+      "سمبوسة",
+      "مصطلح مرتبط بالموضوع يُسمّى «سبرينج رولل»",
+      "وافل",
+      "كريب",
+      "سيخ فواكه",
+      "ذرة مشوية",
+      "دونات",
+      "دجاج مقلي",
+      "ليمونادة",
+      "سموثي",
+      "شوكولاتة ساخن",
+      "مخفوق الحليب",
+      "علبة عصير صغيرة",
+      "حلوى قطن"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Festival to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the festival vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Taco", "Samosa", "Spring Roll", "Waffle"],
+          "scenario": "During the creative session, the group works with taco, samosa, spring roll, and waffle. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Taco", "Samosa", "Spring Roll", "Waffle"],
+            "expectedAnswer": "Taco"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with taco, samosa, spring roll, and waffle. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Crepe", "Fruit Skewer", "Roasted Corn", "Doughnut"],
+          "scenario": "During the creative session, the group works with crepe, fruit skewer, roasted corn, and doughnut. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crepe", "Fruit Skewer", "Roasted Corn", "Doughnut"],
+            "expectedAnswer": "Crepe"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with crepe, fruit skewer, roasted corn, and doughnut. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Fried Chicken", "Lemonade", "Smoothie", "Hot Chocolate"],
+          "scenario": "During the creative session, the group works with fried chicken, lemonade, smoothie, and hot chocolate. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fried Chicken", "Lemonade", "Smoothie", "Hot Chocolate"],
+            "expectedAnswer": "Fried Chicken"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with fried chicken, lemonade, smoothie, and hot chocolate. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Milkshake", "Juice Box", "Cotton Candy"],
+          "scenario": "During the creative session, the group works with milkshake, juice box, and cotton candy. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Milkshake", "Juice Box", "Cotton Candy"],
+            "expectedAnswer": "Milkshake"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with milkshake, juice box, and cotton candy. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Festival: Review",
+      "text": "A practical situation involving the festival requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with taco, samosa, spring roll, and waffle. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with crepe, fruit skewer, roasted corn, and doughnut. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with fried chicken, lemonade, smoothie, and hot chocolate. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Festival. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Taco"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crepe"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fried Chicken"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Milkshake"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Taco"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Waffle"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Banner” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Festival: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Banner, Bunting from festival-1\n3 lesson(s) back: dynasty, archaeology from museum-3\n7 lesson(s) back: movie, trailer from cinema-3"
+  },
+  {
+    "lessonId": "festival-3",
+    "lessonName": "The Festival 3",
+    "unitId": "festival",
+    "unitName": "The Festival",
+    "unitOrder": 128,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 591,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Caramel Apple",
+      "Popcorn",
+      "Churro",
+      "Ice Cream",
+      "Stage",
+      "Band",
+      "Singer",
+      "DJ Booth",
+      "Speaker",
+      "Dance Floor",
+      "Fire Dancer",
+      "Acrobat",
+      "Stilt Walker",
+      "Face Painter",
+      "Parade"
+    ],
+    "targetWordsArabic": [
+      "تفاح كراميل",
+      "فشار",
+      "تشورو",
+      "كريمة ثلج",
+      "مرحلة",
+      "حلقة",
+      "مغنٍ",
+      "منصة دي جي",
+      "مُكَبِّرُ صَوْت (سَبِيكَر / سَمَّاعَة)",
+      "ساحة رقص",
+      "مؤدّي رقص بالنار",
+      "بهلوان",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستيلت والكير»",
+      "شخص يُسمّى «فاكي باينتير»",
+      "موكب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Festival to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the festival vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Caramel Apple", "Popcorn", "Churro", "Ice Cream"],
+          "scenario": "During the creative session, the group works with caramel apple, popcorn, churro, and ice cream. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Caramel Apple", "Popcorn", "Churro", "Ice Cream"],
+            "expectedAnswer": "Caramel Apple"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with caramel apple, popcorn, churro, and ice cream. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Stage", "Band", "Singer", "DJ Booth"],
+          "scenario": "During the creative session, the group works with stage, band, singer, and dj booth. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Stage", "Band", "Singer", "DJ Booth"],
+            "expectedAnswer": "Stage"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with stage, band, singer, and dj booth. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Speaker", "Dance Floor", "Fire Dancer", "Acrobat"],
+          "scenario": "During the creative session, the group works with speaker, dance floor, fire dancer, and acrobat. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Speaker", "Dance Floor", "Fire Dancer", "Acrobat"],
+            "expectedAnswer": "Speaker"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with speaker, dance floor, fire dancer, and acrobat. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Stilt Walker", "Face Painter", "Parade"],
+          "scenario": "During the creative session, the group works with stilt walker, face painter, and parade. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Stilt Walker", "Face Painter", "Parade"],
+            "expectedAnswer": "Stilt Walker"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with stilt walker, face painter, and parade. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Festival: Practical Article",
+      "text": "A practical situation involving the festival requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with caramel apple, popcorn, churro, and ice cream. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with stage, band, singer, and dj booth. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with speaker, dance floor, fire dancer, and acrobat. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Festival. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Caramel Apple"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stage"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Speaker"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stilt Walker"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Caramel Apple"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Ice Cream"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Taco” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Festival: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Taco, Samosa from festival-2\n3 lesson(s) back: catalog, timeline from museum-4\n7 lesson(s) back: thriller, documentary from cinema-4"
+  },
+  {
+    "lessonId": "festival-4",
+    "lessonName": "The Festival 4",
+    "unitId": "festival",
+    "unitName": "The Festival",
+    "unitOrder": 128,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 592,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Carnival Game",
+      "Photo Booth",
+      "Arts and Crafts",
+      "Puppet Show",
+      "Magic Show",
+      "Talent Contest",
+      "Treasure Hunt",
+      "Costume Contest",
+      "Raffle",
+      "Ticket",
+      "Wristband",
+      "Map",
+      "Folding Chair",
+      "Blanket",
+      "Sunscreen"
+    ],
+    "targetWordsArabic": [
+      "لعبة مهرجان",
+      "مصطلح مرتبط بالموضوع يُسمّى «فوتو بووث»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ارتس اند كرافتس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بوببيت شوو»",
+      "عرض سحري",
+      "مسابقة مواهب",
+      "لعبة يُسمّى «ترياسوري هونت»",
+      "مسابقة أزياء تنكرية",
+      "سحب جوائز",
+      "تذكرة",
+      "سوار معصم",
+      "خريطة",
+      "شكل يُسمّى «فولدينج تشاير»",
+      "بَطَّانِيَّة",
+      "واقي شمس"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Festival to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the festival vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Carnival Game", "Photo Booth", "Arts and Crafts", "Puppet Show"],
+          "scenario": "During the creative session, the group works with carnival game, photo booth, arts and crafts, and puppet show. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Carnival Game", "Photo Booth", "Arts and Crafts", "Puppet Show"],
+            "expectedAnswer": "Carnival Game"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with carnival game, photo booth, arts and crafts, and puppet show. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Magic Show", "Talent Contest", "Treasure Hunt", "Costume Contest"],
+          "scenario": "During the creative session, the group works with magic show, talent contest, treasure hunt, and costume contest. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Magic Show", "Talent Contest", "Treasure Hunt", "Costume Contest"],
+            "expectedAnswer": "Magic Show"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with magic show, talent contest, treasure hunt, and costume contest. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Raffle", "Ticket", "Wristband", "Map"],
+          "scenario": "During the creative session, the group works with raffle, ticket, wristband, and map. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Raffle", "Ticket", "Wristband", "Map"],
+            "expectedAnswer": "Raffle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with raffle, ticket, wristband, and map. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Folding Chair", "Blanket", "Sunscreen"],
+          "scenario": "During the creative session, the group works with folding chair, blanket, and sunscreen. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Folding Chair", "Blanket", "Sunscreen"],
+            "expectedAnswer": "Folding Chair"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with folding chair, blanket, and sunscreen. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Festival: Real-Life Scenario",
+      "text": "A practical situation involving the festival requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with carnival game, photo booth, arts and crafts, and puppet show. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with magic show, talent contest, treasure hunt, and costume contest. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with raffle, ticket, wristband, and map. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Festival. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Carnival Game"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Magic Show"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Raffle"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Folding Chair"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Carnival Game"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Puppet Show"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Caramel Apple” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Festival: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Caramel Apple, Popcorn from festival-3\n3 lesson(s) back: Banner, Bunting from festival-1\n7 lesson(s) back: painting, sculpture from museum-1"
+  },
+  {
+    "lessonId": "festival-5",
+    "lessonName": "The Festival 5",
+    "unitId": "festival",
+    "unitName": "The Festival",
+    "unitOrder": 128,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 593,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Water Bottle",
+      "Backpack",
+      "Rain Poncho",
+      "Portable Charger",
+      "String Lights",
+      "Fireworks",
+      "Live Music",
+      "Dance",
+      "Magician",
+      "Face Paint",
+      "Clown",
+      "Corn Dog",
+      "Funnel Cake",
+      "Pretzel",
+      "Candy Apple"
+    ],
+    "targetWordsArabic": [
+      "زجاجة ماء",
+      "حَقِيبَةُ ظَهْر",
+      "معطف مطر فضفاض",
+      "شاحن محمول",
+      "مصطلح مرتبط بالموضوع يُسمّى «سترينج ليغتس»",
+      "ألعاب نارية",
+      "موسيقى حيّة",
+      "رقص",
+      "ساحر استعراضي",
+      "طلاء للوجه",
+      "مهرج",
+      "مصطلح مرتبط بالموضوع يُسمّى «كورن دوج»",
+      "كعكة قمع",
+      "بريتزل",
+      "تفاح حلوى"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Festival to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the festival vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Water Bottle", "Backpack", "Rain Poncho", "Portable Charger"],
+          "scenario": "During the creative session, the group works with water bottle, backpack, rain poncho, and portable charger. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Water Bottle", "Backpack", "Rain Poncho", "Portable Charger"],
+            "expectedAnswer": "Water Bottle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with water bottle, backpack, rain poncho, and portable charger. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["String Lights", "Fireworks", "Live Music", "Dance"],
+          "scenario": "During the creative session, the group works with string lights, fireworks, live music, and dance. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["String Lights", "Fireworks", "Live Music", "Dance"],
+            "expectedAnswer": "String Lights"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with string lights, fireworks, live music, and dance. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Magician", "Face Paint", "Clown", "Corn Dog"],
+          "scenario": "During the creative session, the group works with magician, face paint, clown, and corn dog. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Magician", "Face Paint", "Clown", "Corn Dog"],
+            "expectedAnswer": "Magician"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with magician, face paint, clown, and corn dog. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Funnel Cake", "Pretzel", "Candy Apple"],
+          "scenario": "During the creative session, the group works with funnel cake, pretzel, and candy apple. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Funnel Cake", "Pretzel", "Candy Apple"],
+            "expectedAnswer": "Funnel Cake"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with funnel cake, pretzel, and candy apple. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Festival: Travel/Visitor Guide",
+      "text": "A practical situation involving the festival requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with water bottle, backpack, rain poncho, and portable charger. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with string lights, fireworks, live music, and dance. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with magician, face paint, clown, and corn dog. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Festival. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Water Bottle"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "String Lights"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Magician"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Funnel Cake"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Water Bottle"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Portable Charger"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Carnival Game” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Festival: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Carnival Game, Photo Booth from festival-4\n3 lesson(s) back: Taco, Samosa from festival-2\n7 lesson(s) back: rotunda, courtyard from museum-2"
+  }
+]

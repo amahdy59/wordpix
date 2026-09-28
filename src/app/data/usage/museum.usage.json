@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "museum-1",
+    "lessonName": "L6 Museum 1",
+    "unitId": "museum",
+    "unitName": "L6 Museum",
+    "unitOrder": 127,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 585,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "painting",
+      "sculpture",
+      "statue",
+      "portrait",
+      "landscape",
+      "mural",
+      "mosaic",
+      "pottery",
+      "artifact",
+      "fossil",
+      "skeleton",
+      "mummy",
+      "gallery",
+      "exhibition hall",
+      "lobby"
+    ],
+    "targetWordsArabic": [
+      "لوحة فنية",
+      "منحوتة",
+      "شخص يُسمّى «ستاتوي»",
+      "شخص يُسمّى «بورترايت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «لاندسكابي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «مورال»",
+      "مصطلح قانوني يُسمّى «موسايك»",
+      "فخار",
+      "مصطلح مرتبط بالموضوع يُسمّى «ارتيفاكت»",
+      "أحفورة",
+      "هيكل عظمي",
+      "مصطلح مرتبط بالموضوع يُسمّى «موممي»",
+      "غرفة يُسمّى «جالليري»",
+      "قاعة معرض",
+      "ردهة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L6 Museum to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l6 museum vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["painting", "sculpture", "statue", "portrait"],
+          "scenario": "During the creative session, the group works with painting, sculpture, statue, and portrait. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["painting", "sculpture", "statue", "portrait"],
+            "expectedAnswer": "painting"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with painting, sculpture, statue, and portrait. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["landscape", "mural", "mosaic", "pottery"],
+          "scenario": "During the creative session, the group works with landscape, mural, mosaic, and pottery. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["landscape", "mural", "mosaic", "pottery"],
+            "expectedAnswer": "landscape"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with landscape, mural, mosaic, and pottery. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["artifact", "fossil", "skeleton", "mummy"],
+          "scenario": "During the creative session, the group works with artifact, fossil, skeleton, and mummy. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["artifact", "fossil", "skeleton", "mummy"],
+            "expectedAnswer": "artifact"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with artifact, fossil, skeleton, and mummy. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["gallery", "exhibition hall", "lobby"],
+          "scenario": "During the creative session, the group works with gallery, exhibition hall, and lobby. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["gallery", "exhibition hall", "lobby"],
+            "expectedAnswer": "gallery"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with gallery, exhibition hall, and lobby. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L6 Museum: Travel/Visitor Guide",
+      "text": "A practical situation involving l6 museum requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with painting, sculpture, statue, and portrait. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with landscape, mural, mosaic, and pottery. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with artifact, fossil, skeleton, and mummy. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Museum. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "painting"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "landscape"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "artifact"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "gallery"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "painting"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "portrait"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “thriller” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L6 Museum: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: thriller, documentary from cinema-4\n3 lesson(s) back: 3D glasses, recliner from cinema-2\n7 lesson(s) back: Drum, Snare Drum from orchestra-3"
+  },
+  {
+    "lessonId": "museum-2",
+    "lessonName": "L6 Museum 2",
+    "unitId": "museum",
+    "unitName": "L6 Museum",
+    "unitOrder": 127,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 586,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "rotunda",
+      "courtyard",
+      "archive",
+      "storage room",
+      "auditorium",
+      "gift shop",
+      "cafe",
+      "cloakroom",
+      "restroom",
+      "ancient",
+      "medieval",
+      "Renaissance",
+      "colonial",
+      "revolution",
+      "empire"
+    ],
+    "targetWordsArabic": [
+      "غرفة يُسمّى «روتوندا»",
+      "فناء",
+      "مصطلح مرتبط بالموضوع يُسمّى «ارتشيفي»",
+      "غرفة تخزين",
+      "قاعة محاضرات",
+      "متجر هدية",
+      "مشروب يُسمّى «كافي»",
+      "غرفة معاطف",
+      "دورة مياه",
+      "مصطلح مرتبط بالموضوع يُسمّى «انكيينت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ميدييفال»",
+      "عصر النهضة",
+      "مصطلح مرتبط بالموضوع يُسمّى «كولونيال»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ريفولوتيون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يمبيري»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L6 Museum to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l6 museum vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["rotunda", "courtyard", "archive", "storage room"],
+          "scenario": "During the creative session, the group works with rotunda, courtyard, archive, and storage room. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["rotunda", "courtyard", "archive", "storage room"],
+            "expectedAnswer": "rotunda"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with rotunda, courtyard, archive, and storage room. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["auditorium", "gift shop", "cafe", "cloakroom"],
+          "scenario": "During the creative session, the group works with auditorium, gift shop, cafe, and cloakroom. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["auditorium", "gift shop", "cafe", "cloakroom"],
+            "expectedAnswer": "auditorium"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with auditorium, gift shop, cafe, and cloakroom. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["restroom", "ancient", "medieval", "Renaissance"],
+          "scenario": "During the creative session, the group works with restroom, ancient, medieval, and renaissance. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["restroom", "ancient", "medieval", "Renaissance"],
+            "expectedAnswer": "restroom"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with restroom, ancient, medieval, and renaissance. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["colonial", "revolution", "empire"],
+          "scenario": "During the creative session, the group works with colonial, revolution, and empire. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["colonial", "revolution", "empire"],
+            "expectedAnswer": "colonial"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with colonial, revolution, and empire. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L6 Museum: Review",
+      "text": "A practical situation involving l6 museum requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with rotunda, courtyard, archive, and storage room. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with auditorium, gift shop, cafe, and cloakroom. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with restroom, ancient, medieval, and renaissance. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Museum. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "rotunda"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "auditorium"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "restroom"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "colonial"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "rotunda"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "storage room"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “painting” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L6 Museum: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: painting, sculpture from museum-1\n3 lesson(s) back: movie, trailer from cinema-3\n7 lesson(s) back: Sheet Music, Score from orchestra-4"
+  },
+  {
+    "lessonId": "museum-3",
+    "lessonName": "L6 Museum 3",
+    "unitId": "museum",
+    "unitName": "L6 Museum",
+    "unitOrder": 127,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 587,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "dynasty",
+      "archaeology",
+      "civilization",
+      "monument",
+      "ruins",
+      "tomb",
+      "display case",
+      "pedestal",
+      "frame",
+      "label",
+      "plaque",
+      "spotlight",
+      "velvet rope",
+      "audio guide",
+      "brochure"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «ديناستي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ارتشايولوجي»",
+      "عضو يُسمّى «كيفيليزاتيون»",
+      "شخص يُسمّى «مونومينت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «روينس»",
+      "مكان يُسمّى «تومب»",
+      "غلاف شاشة عرض",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيديستال»",
+      "إطار",
+      "علامة",
+      "لوحة تذكارية",
+      "كشاف ضوئي",
+      "حبل مخملي حاجز",
+      "دليل صوتي",
+      "مصطلح مرتبط بالموضوع يُسمّى «بروتشوري»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L6 Museum to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l6 museum vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["dynasty", "archaeology", "civilization", "monument"],
+          "scenario": "During the creative session, the group works with dynasty, archaeology, civilization, and monument. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["dynasty", "archaeology", "civilization", "monument"],
+            "expectedAnswer": "dynasty"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with dynasty, archaeology, civilization, and monument. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["ruins", "tomb", "display case", "pedestal"],
+          "scenario": "During the creative session, the group works with ruins, tomb, display case, and pedestal. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["ruins", "tomb", "display case", "pedestal"],
+            "expectedAnswer": "ruins"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with ruins, tomb, display case, and pedestal. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["frame", "label", "plaque", "spotlight"],
+          "scenario": "During the creative session, the group works with frame, label, plaque, and spotlight. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["frame", "label", "plaque", "spotlight"],
+            "expectedAnswer": "frame"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with frame, label, plaque, and spotlight. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["velvet rope", "audio guide", "brochure"],
+          "scenario": "During the creative session, the group works with velvet rope, audio guide, and brochure. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["velvet rope", "audio guide", "brochure"],
+            "expectedAnswer": "velvet rope"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with velvet rope, audio guide, and brochure. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L6 Museum: Practical Article",
+      "text": "A practical situation involving l6 museum requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with dynasty, archaeology, civilization, and monument. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with ruins, tomb, display case, and pedestal. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with frame, label, plaque, and spotlight. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Museum. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "dynasty"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "ruins"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "frame"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "velvet rope"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "dynasty"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "monument"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “rotunda” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L6 Museum: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: rotunda, courtyard from museum-2\n3 lesson(s) back: thriller, documentary from cinema-4\n7 lesson(s) back: Podium, Symphony from orchestra-5"
+  },
+  {
+    "lessonId": "museum-4",
+    "lessonName": "L6 Museum 4",
+    "unitId": "museum",
+    "unitName": "L6 Museum",
+    "unitOrder": 127,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 588,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "catalog",
+      "timeline",
+      "interactive screen",
+      "curator",
+      "guide",
+      "visitor",
+      "guard",
+      "artist",
+      "historian",
+      "restorer",
+      "admiring",
+      "sketching",
+      "photographing",
+      "donating",
+      "exploring"
+    ],
+    "targetWordsArabic": [
+      "كتالوج",
+      "مصطلح مرتبط بالموضوع يُسمّى «تيميليني»",
+      "شاشة تفاعلية",
+      "مصطلح مرتبط بالموضوع يُسمّى «كوراتور»",
+      "دليل",
+      "شخص يُسمّى «فيسيتور»",
+      "حارس",
+      "شخص يُسمّى «ارتيست»",
+      "شخص يُسمّى «هيستوريان»",
+      "مبنى يُسمّى «ريستورير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ادميرينج»",
+      "الرسم التخطيطي",
+      "التصوير الفوتوغرافي",
+      "مصطلح مرتبط بالموضوع يُسمّى «دوناتينج»",
+      "مكان يُسمّى «يكسبلورينج»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L6 Museum to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l6 museum vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["catalog", "timeline", "interactive screen", "curator"],
+          "scenario": "During the creative session, the group works with catalog, timeline, interactive screen, and curator. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["catalog", "timeline", "interactive screen", "curator"],
+            "expectedAnswer": "catalog"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with catalog, timeline, interactive screen, and curator. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["guide", "visitor", "guard", "artist"],
+          "scenario": "During the creative session, the group works with guide, visitor, guard, and artist. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["guide", "visitor", "guard", "artist"],
+            "expectedAnswer": "guide"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with guide, visitor, guard, and artist. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["historian", "restorer", "admiring", "sketching"],
+          "scenario": "During the creative session, the group works with historian, restorer, admiring, and sketching. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["historian", "restorer", "admiring", "sketching"],
+            "expectedAnswer": "historian"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with historian, restorer, admiring, and sketching. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["photographing", "donating", "exploring"],
+          "scenario": "The learner connects photographing, donating, and exploring to the main activity and explains what each term means in context.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["photographing", "donating", "exploring"],
+            "expectedAnswer": "photographing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner connects photographing, donating, and exploring to the main activity and explains what each term means in context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L6 Museum: Real-Life Scenario",
+      "text": "A practical situation involving l6 museum requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with catalog, timeline, interactive screen, and curator. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with guide, visitor, guard, and artist. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with historian, restorer, admiring, and sketching. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Museum. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "catalog"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "guide"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "historian"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "photographing"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "catalog"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "curator"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “dynasty” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L6 Museum: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: dynasty, archaeology from museum-3\n3 lesson(s) back: painting, sculpture from museum-1\n7 lesson(s) back: screen, auditorium from cinema-1"
+  }
+]

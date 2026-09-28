@@ -2,6 +2,7 @@ import { type VocabularyItem } from "../data/lessons";
 import { loadedVocabulary } from "../data/vocabulary";
 import { shuffleArray } from "../../utils/shuffle";
 import { articleFor, classifyLabel, spokenLabel } from "../content/wordGrammar";
+import { getAuthoredSentence } from "./content/authoredLessonContent";
 
 export const CONFUSION_PAIRS: Record<string, string[]> = {
   pillow: ["blanket", "nightstand", "bed", "dresser"],
@@ -447,6 +448,15 @@ function fallbackFrame(word: VocabularyItem): { lead: string[]; spoken: string }
 }
 
 export function getRichSentence(word: VocabularyItem): RichSentence {
+  const authoredSentence = getAuthoredSentence(word.id);
+  if (authoredSentence) {
+    return {
+      clozeBefore: "",
+      clozeAfter: "",
+      full: authoredSentence.full,
+      words: authoredSentence.words,
+    };
+  }
   if (RICH_CONTEXT_SENTENCES[word.id]) {
     return RICH_CONTEXT_SENTENCES[word.id];
   }

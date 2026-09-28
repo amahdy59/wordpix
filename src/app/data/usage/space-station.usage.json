@@ -1,0 +1,823 @@
+﻿[
+  {
+    "lessonId": "space-station-1",
+    "lessonName": "The Space Station 1",
+    "unitId": "space-station",
+    "unitName": "The Space Station",
+    "unitOrder": 179,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 793,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Module",
+      "Airlock",
+      "Solar Array",
+      "Docking Port",
+      "Cupola",
+      "Truss",
+      "Radiator Panel",
+      "Antenna",
+      "Hatch",
+      "Window",
+      "Spacesuit",
+      "Helmet",
+      "Gloves",
+      "Boots",
+      "Tether"
+    ],
+    "targetWordsArabic": [
+      "وحدة",
+      "غرفة معادلة ضغط",
+      "جهاز يُسمّى «سولار ارراي»",
+      "منفذ التحام",
+      "قبة مراقبة",
+      "جمالون",
+      "لوح مُشِعّ للحرارة",
+      "هوائي",
+      "فتحة دخول",
+      "نَافِذَة (شُبَّاك)",
+      "بدلة فضاء",
+      "خوذة",
+      "قفازات",
+      "أحذية طويلة",
+      "حبل أمان"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Space Station to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the space station vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Module", "Airlock", "Solar Array", "Docking Port"],
+          "scenario": "During the visit, the patient and medical team deal with module, airlock, solar array, and docking port. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Module", "Airlock", "Solar Array", "Docking Port"],
+            "expectedAnswer": "Module"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with module, airlock, solar array, and docking port. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Cupola", "Truss", "Radiator Panel", "Antenna"],
+          "scenario": "During the visit, the patient and medical team deal with cupola, truss, radiator panel, and antenna. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cupola", "Truss", "Radiator Panel", "Antenna"],
+            "expectedAnswer": "Cupola"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with cupola, truss, radiator panel, and antenna. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Hatch", "Window", "Spacesuit", "Helmet"],
+          "scenario": "During the visit, the patient and medical team deal with hatch, window, spacesuit, and helmet. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hatch", "Window", "Spacesuit", "Helmet"],
+            "expectedAnswer": "Hatch"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with hatch, window, spacesuit, and helmet. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Gloves", "Boots", "Tether"],
+          "scenario": "During the visit, the patient and medical team deal with gloves, boots, and tether. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Gloves", "Boots", "Tether"],
+            "expectedAnswer": "Gloves"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with gloves, boots, and tether. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Space Station: Report Excerpt",
+      "text": "A realistic case involving the space station shows how precise vocabulary can influence choices, explanations, and outcomes. During the visit, the patient and medical team deal with module, airlock, solar array, and docking port. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with cupola, truss, radiator panel, and antenna. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with hatch, window, spacesuit, and helmet. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with gloves, boots, and tether. Each term belongs to a different part of the care process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Module"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cupola"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hatch"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gloves"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Module"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Telescope” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Space Station: In Context",
+      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Telescope, Flag from arctic-5\n3 lesson(s) back: Peninsula, Island from arctic-3\n7 lesson(s) back: Searchlight, Underwater Camera from submarine-4"
+  },
+  {
+    "lessonId": "space-station-2",
+    "lessonName": "The Space Station 2",
+    "unitId": "space-station",
+    "unitName": "The Space Station",
+    "unitOrder": 179,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 794,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Jet Pack",
+      "Tool Belt",
+      "Visor",
+      "Oxygen Tank",
+      "Communication Headset",
+      "Sleeping Pod",
+      "Galley",
+      "Exercise Machine",
+      "Toilet",
+      "Shower Bag",
+      "Velcro Strip",
+      "Laptop",
+      "Book",
+      "Photo",
+      "Personal Locker"
+    ],
+    "targetWordsArabic": [
+      "حقيبة نفاثة",
+      "أداة يُسمّى «توول بيلت»",
+      "واقٍ للعين",
+      "خزان أكسجين",
+      "سماعة رأس للاتصال",
+      "كبسولة نوم",
+      "مطبخ صغير",
+      "جهاز تمارين",
+      "مرحاض",
+      "كيس دُش",
+      "مصطلح مرتبط بالموضوع يُسمّى «فيلكرو ستريب»",
+      "حَاسُوبٌ مَحْمُول (لَابْتُوب)",
+      "كتاب",
+      "صورة",
+      "شخص يُسمّى «بيرسونال لوكير»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Space Station to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the space station vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Jet Pack", "Tool Belt", "Visor", "Oxygen Tank"],
+          "scenario": "During the visit, the patient and medical team deal with jet pack, tool belt, visor, and oxygen tank. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Jet Pack", "Tool Belt", "Visor", "Oxygen Tank"],
+            "expectedAnswer": "Jet Pack"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with jet pack, tool belt, visor, and oxygen tank. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Communication Headset", "Sleeping Pod", "Galley", "Exercise Machine"],
+          "scenario": "During the visit, the patient and medical team deal with communication headset, sleeping pod, galley, and exercise machine. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Communication Headset", "Sleeping Pod", "Galley", "Exercise Machine"],
+            "expectedAnswer": "Communication Headset"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with communication headset, sleeping pod, galley, and exercise machine. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Toilet", "Shower Bag", "Velcro Strip", "Laptop"],
+          "scenario": "During the visit, the patient and medical team deal with toilet, shower bag, velcro strip, and laptop. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Toilet", "Shower Bag", "Velcro Strip", "Laptop"],
+            "expectedAnswer": "Toilet"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with toilet, shower bag, velcro strip, and laptop. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Book", "Photo", "Personal Locker"],
+          "scenario": "During the visit, the patient and medical team deal with book, photo, and personal locker. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Book", "Photo", "Personal Locker"],
+            "expectedAnswer": "Book"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with book, photo, and personal locker. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Space Station: Case Note",
+      "text": "A realistic case involving the space station shows how precise vocabulary can influence choices, explanations, and outcomes. During the visit, the patient and medical team deal with jet pack, tool belt, visor, and oxygen tank. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with communication headset, sleeping pod, galley, and exercise machine. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with toilet, shower bag, velcro strip, and laptop. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with book, photo, and personal locker. Each term belongs to a different part of the care process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Jet Pack"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Communication Headset"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Toilet"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Book"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Jet Pack"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Module” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Space Station: In Context",
+      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Module, Airlock from space-station-1\n3 lesson(s) back: Snowmobile, Ice Breaker from arctic-4\n7 lesson(s) back: Sonar, Radio from submarine-5"
+  },
+  {
+    "lessonId": "space-station-3",
+    "lessonName": "The Space Station 3",
+    "unitId": "space-station",
+    "unitName": "The Space Station",
+    "unitOrder": 179,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 795,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Microscope",
+      "Centrifuge",
+      "Glove Box",
+      "Plant Growth Chamber",
+      "Water Recycler",
+      "Air Filter",
+      "Spectrometer",
+      "Sample Container",
+      "Data Logger",
+      "Experiment Rack",
+      "Control Panel",
+      "Monitor",
+      "Keyboard",
+      "Joystick",
+      "Radio"
+    ],
+    "targetWordsArabic": [
+      "مجهر",
+      "جهاز طرد مركزي",
+      "مركبة يُسمّى «جلوفي بوكس»",
+      "نبات يُسمّى «بلانت جرووث تشامبير»",
+      "جهاز يُسمّى «واتير ريكيكلير»",
+      "يرشّح هواء",
+      "مطياف",
+      "حاوية عينة",
+      "جهاز يُسمّى «داتا لوججير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يكسبيريمينت راك»",
+      "جهاز يُسمّى «كونترول بانيل»",
+      "شاشة مراقبة",
+      "لوحة مفاتيح",
+      "مصطلح مرتبط بالموضوع يُسمّى «جويستيك»",
+      "إذاعة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Space Station to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the space station vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "review",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Microscope", "Centrifuge", "Glove Box", "Plant Growth Chamber"],
+          "scenario": "During the visit, the patient and medical team deal with microscope, centrifuge, glove box, and plant growth chamber. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Microscope", "Centrifuge", "Glove Box", "Plant Growth Chamber"],
+            "expectedAnswer": "Microscope"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with microscope, centrifuge, glove box, and plant growth chamber. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Water Recycler", "Air Filter", "Spectrometer", "Sample Container"],
+          "scenario": "During the visit, the patient and medical team deal with water recycler, air filter, spectrometer, and sample container. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Water Recycler", "Air Filter", "Spectrometer", "Sample Container"],
+            "expectedAnswer": "Water Recycler"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with water recycler, air filter, spectrometer, and sample container. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Data Logger", "Experiment Rack", "Control Panel", "Monitor"],
+          "scenario": "During the visit, the patient and medical team deal with data logger, experiment rack, control panel, and monitor. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Data Logger", "Experiment Rack", "Control Panel", "Monitor"],
+            "expectedAnswer": "Data Logger"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with data logger, experiment rack, control panel, and monitor. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Keyboard", "Joystick", "Radio"],
+          "scenario": "During the visit, the patient and medical team deal with keyboard, joystick, and radio. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Keyboard", "Joystick", "Radio"],
+            "expectedAnswer": "Keyboard"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with keyboard, joystick, and radio. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Space Station: Review",
+      "text": "A realistic case involving the space station shows how precise vocabulary can influence choices, explanations, and outcomes. During the visit, the patient and medical team deal with microscope, centrifuge, glove box, and plant growth chamber. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with water recycler, air filter, spectrometer, and sample container. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with data logger, experiment rack, control panel, and monitor. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with keyboard, joystick, and radio. Each term belongs to a different part of the care process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Microscope"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Water Recycler"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Data Logger"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Keyboard"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Microscope"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Jet Pack” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Space Station: In Context",
+      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Jet Pack, Tool Belt from space-station-2\n3 lesson(s) back: Telescope, Flag from arctic-5\n7 lesson(s) back: Polar Bear, Arctic Fox from arctic-1"
+  },
+  {
+    "lessonId": "space-station-4",
+    "lessonName": "The Space Station 4",
+    "unitId": "space-station",
+    "unitName": "The Space Station",
+    "unitOrder": 179,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 796,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Clock",
+      "Map Display",
+      "Camera",
+      "Alarm",
+      "Checklist",
+      "Earth View",
+      "Stars",
+      "Moon",
+      "Sun",
+      "Satellite",
+      "Space Debris",
+      "Cargo Ship",
+      "Robotic Arm",
+      "Solar Flare",
+      "Aurora"
+    ],
+    "targetWordsArabic": [
+      "سَاعَةُ حَائِط / سَاعَة",
+      "شاشة عرض خريطة",
+      "كاميرا",
+      "إنذار",
+      "قائمة تحقق",
+      "مصطلح مرتبط بالموضوع يُسمّى «يارث فييو»",
+      "نجوم",
+      "قمر",
+      "شمس",
+      "قمر صناعي",
+      "مصطلح مرتبط بالموضوع يُسمّى «سباكي ديبريس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كارجو شيب»",
+      "مصطلح مرتبط بالموضوع يُسمّى «روبوتيك ارم»",
+      "جزء يُسمّى «سولار فلاري»",
+      "شفق قطبي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Space Station to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the space station vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "opinion paragraph",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Clock", "Map Display", "Camera", "Alarm"],
+          "scenario": "During the visit, the patient and medical team deal with clock, map display, camera, and alarm. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Clock", "Map Display", "Camera", "Alarm"],
+            "expectedAnswer": "Clock"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with clock, map display, camera, and alarm. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Checklist", "Earth View", "Stars", "Moon"],
+          "scenario": "During the visit, the patient and medical team deal with checklist, earth view, stars, and moon. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Checklist", "Earth View", "Stars", "Moon"],
+            "expectedAnswer": "Checklist"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with checklist, earth view, stars, and moon. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Sun", "Satellite", "Space Debris", "Cargo Ship"],
+          "scenario": "During the visit, the patient and medical team deal with sun, satellite, space debris, and cargo ship. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sun", "Satellite", "Space Debris", "Cargo Ship"],
+            "expectedAnswer": "Sun"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with sun, satellite, space debris, and cargo ship. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Robotic Arm", "Solar Flare", "Aurora"],
+          "scenario": "During the visit, the patient and medical team deal with robotic arm, solar flare, and aurora. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Robotic Arm", "Solar Flare", "Aurora"],
+            "expectedAnswer": "Robotic Arm"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with robotic arm, solar flare, and aurora. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Space Station: Opinion Paragraph",
+      "text": "A realistic case involving the space station shows how precise vocabulary can influence choices, explanations, and outcomes. During the visit, the patient and medical team deal with clock, map display, camera, and alarm. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with checklist, earth view, stars, and moon. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with sun, satellite, space debris, and cargo ship. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with robotic arm, solar flare, and aurora. Each term belongs to a different part of the care process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Clock"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Checklist"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sun"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Robotic Arm"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Clock"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Microscope” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Space Station: In Context",
+      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Microscope, Centrifuge from space-station-3\n3 lesson(s) back: Module, Airlock from space-station-1\n7 lesson(s) back: Ice Cap, Snowfield from arctic-2"
+  },
+  {
+    "lessonId": "space-station-5",
+    "lessonName": "The Space Station 5",
+    "unitId": "space-station",
+    "unitName": "The Space Station",
+    "unitOrder": 179,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 797,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Lab Module",
+      "Crew Quarters",
+      "Node",
+      "Jetpack",
+      "Treadmill",
+      "Oxygen Generator",
+      "Comm Dish",
+      "Viewport",
+      "Spacewalk",
+      "Experiment",
+      "Dock",
+      "Orbit",
+      "Float",
+      "Exercise",
+      "Repair"
+    ],
+    "targetWordsArabic": [
+      "وحدة مختبر",
+      "مصطلح مرتبط بالموضوع يُسمّى «كريو كارتيرس»",
+      "عقدة",
+      "حقيبة دفع نفاث",
+      "جهاز مشي",
+      "مصطلح مرتبط بالموضوع يُسمّى «وكسيجين جينيراتور»",
+      "طبق يُسمّى «كومم ديش»",
+      "نافذة مشاهدة",
+      "سير في الفضاء",
+      "تجربة",
+      "التحام",
+      "مدار",
+      "مشروب مع آيس كريم",
+      "تمرين",
+      "إصلاح"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Space Station to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the space station vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Lab Module", "Crew Quarters", "Node", "Jetpack"],
+          "scenario": "During the visit, the patient and medical team deal with lab module, crew quarters, node, and jetpack. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lab Module", "Crew Quarters", "Node", "Jetpack"],
+            "expectedAnswer": "Lab Module"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with lab module, crew quarters, node, and jetpack. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Treadmill", "Oxygen Generator", "Comm Dish", "Viewport"],
+          "scenario": "During the visit, the patient and medical team deal with treadmill, oxygen generator, comm dish, and viewport. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Treadmill", "Oxygen Generator", "Comm Dish", "Viewport"],
+            "expectedAnswer": "Treadmill"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with treadmill, oxygen generator, comm dish, and viewport. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Spacewalk", "Experiment", "Dock", "Orbit"],
+          "scenario": "During the visit, the patient and medical team deal with spacewalk, experiment, dock, and orbit. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Spacewalk", "Experiment", "Dock", "Orbit"],
+            "expectedAnswer": "Spacewalk"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with spacewalk, experiment, dock, and orbit. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Float", "Exercise", "Repair"],
+          "scenario": "During the visit, the patient and medical team deal with float, exercise, and repair. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Float", "Exercise", "Repair"],
+            "expectedAnswer": "Float"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with float, exercise, and repair. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Space Station: Workplace/Academic Scenario",
+      "text": "A realistic case involving the space station shows how precise vocabulary can influence choices, explanations, and outcomes. During the visit, the patient and medical team deal with lab module, crew quarters, node, and jetpack. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with treadmill, oxygen generator, comm dish, and viewport. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with spacewalk, experiment, dock, and orbit. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with float, exercise, and repair. Each term belongs to a different part of the care process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lab Module"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Treadmill"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Spacewalk"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Float"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Lab Module"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Clock” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Space Station: In Context",
+      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Clock, Map Display from space-station-4\n3 lesson(s) back: Jet Pack, Tool Belt from space-station-2\n7 lesson(s) back: Peninsula, Island from arctic-3"
+  },
+  {
+    "lessonId": "space-station-6",
+    "lessonName": "The Space Station 6",
+    "unitId": "space-station",
+    "unitName": "The Space Station",
+    "unitOrder": 179,
+    "lessonOrderInUnit": 6,
+    "globalOrder": 798,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": "Communicate",
+    "targetWordsArabic": "يتواصل",
+    "usage": {
+      "goal": "Use the vocabulary from The Space Station to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the space station vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": {
+        "chunkNumber": 1,
+        "targetWords": "Communicate",
+        "scenario": "During the visit, the patient and medical team deal with communicate. Each term belongs to a different part of the care process.",
+        "check": {
+          "question": "Which target term is most central to the situation?",
+          "options": "Communicate",
+          "expectedAnswer": "Communicate"
+        },
+        "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with communicate. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+      }
+    },
+    "reading": {
+      "title": "The Space Station: Report Excerpt",
+      "text": "A realistic case involving the space station shows how precise vocabulary can influence choices, explanations, and outcomes. During the visit, the patient and medical team deal with communicate. Each term belongs to a different part of the care process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Communicate"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Communicate"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Lab Module” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Space Station: In Context",
+      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Lab Module, Crew Quarters from space-station-5\n3 lesson(s) back: Microscope, Centrifuge from space-station-3\n7 lesson(s) back: Snowmobile, Ice Breaker from arctic-4"
+  }
+]

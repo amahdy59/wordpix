@@ -88,6 +88,8 @@ test("high-contrast preference uses AAA text colours", async ({ page }) => {
 });
 
 test("curriculum controls retain 44px targets on mobile", async ({ page }) => {
+  // Measure resting layout, not fractional bounds during the route's entrance translation.
+  await page.emulateMedia({ reducedMotion: "reduce" });
   await page.setViewportSize({ width: 320, height: 720 });
 
   for (const route of ["/#/pronunciation", "/#/business"]) {

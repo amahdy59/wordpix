@@ -5,6 +5,8 @@ import { HomeDashboard } from "../core/HomeDashboard";
 import { LearningPath } from "../core/LearningPath";
 import { SettingsModal } from "../core/SettingsModal";
 import { loadUnitVocabulary } from "../data/vocabulary";
+import { loadLexicon } from "../data/lexiconLoader";
+import { loadLessonStory } from "../data/lessonStoryLoader";
 import { LearnerProvider } from "../context/LearnerContext";
 import { I18nProvider } from "../context/I18nContext";
 
@@ -14,6 +16,10 @@ vi.mock("../data/vocabulary", () => ({
 }));
 
 vi.mock("../shared/useAudio", () => ({ useAudio: () => ({ speak: vi.fn() }) }));
+vi.mock("../data/lexiconLoader", () => ({ loadLexicon: vi.fn().mockResolvedValue({}) }));
+vi.mock("../data/lessonStoryLoader", () => ({
+  loadLessonStory: vi.fn().mockResolvedValue("passage"),
+}));
 
 afterEach(() => vi.unstubAllGlobals());
 
@@ -82,7 +88,11 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
 });
 
 describe("SettingsModal Offline Preloader", () => {
-  beforeEach(() => vi.mocked(loadUnitVocabulary).mockReset().mockResolvedValue([]));
+  beforeEach(() => {
+    vi.mocked(loadUnitVocabulary).mockReset().mockResolvedValue([]);
+    vi.mocked(loadLexicon).mockClear();
+    vi.mocked(loadLessonStory).mockClear();
+  });
   it("reports loading failure and allows retry without claiming offline readiness", async () => {
     vi.mocked(loadUnitVocabulary).mockRejectedValueOnce(new Error("offline"));
     const user = userEvent.setup();
@@ -116,5 +126,7 @@ describe("SettingsModal Offline Preloader", () => {
       },
       { timeout: 5000 }
     );
+    expect(loadLexicon).toHaveBeenCalledWith(expect.arrayContaining(["bed"]));
+    expect(loadLessonStory).toHaveBeenCalledWith("bathroom-1");
   });
 });

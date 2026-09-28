@@ -85,29 +85,50 @@ export function ChoiceOptionGroup<T extends string>({
                 }
               }
             }}
-            className={`flex min-h-12 items-center gap-3 rounded-2xl border-2 p-4 text-start text-sm font-bold transition-all active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-100 ${
+            className={`group relative flex min-h-[52px] items-center gap-3.5 rounded-2xl border-2 p-4 text-start text-sm sm:text-base font-bold transition-all duration-150 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed ${
               correct
-                ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground"
+                ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground shadow-wp-xs"
                 : incorrect
-                  ? "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground"
+                  ? "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground shadow-wp-xs"
                   : selected
                     ? "border-primary bg-primary/10 text-foreground shadow-wp-sm"
                     : muted
-                      ? "border-border bg-muted/30 text-muted-foreground opacity-70"
-                      : "border-border bg-background text-foreground hover:border-primary/50 hover:bg-primary/5"
+                      ? "border-border/40 bg-card/40 text-muted-foreground/60 opacity-50"
+                      : "border-border/80 bg-card text-foreground hover:border-primary/50 hover:bg-primary/5 hover:translate-y-[-1px] shadow-wp-xs"
             }`}
           >
             {option.prefix && (
-              <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-muted font-black text-xs text-foreground">
+              <span
+                className={`flex size-8 shrink-0 items-center justify-center rounded-xl text-xs font-black transition-colors ${
+                  correct
+                    ? "bg-feedback-success/20 text-feedback-success-foreground"
+                    : incorrect
+                      ? "bg-feedback-error/20 text-feedback-error-foreground"
+                      : selected
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-muted/80 text-muted-foreground group-hover:bg-primary/10 group-hover:text-primary"
+                }`}
+              >
                 {option.prefix}
               </span>
             )}
             <span className="min-w-0 flex-1 leading-snug">
               <span className="block">{option.label}</span>
-              {option.secondary && <span className="mt-1 block">{option.secondary}</span>}
+              {option.secondary && (
+                <span className="mt-1 block text-xs font-normal text-muted-foreground">
+                  {option.secondary}
+                </span>
+              )}
             </span>
-            {correct && <CheckCircle2 className="size-5 shrink-0" aria-hidden />}
-            {incorrect && <XCircle className="size-5 shrink-0" aria-hidden />}
+            {correct && (
+              <CheckCircle2
+                className="size-5 shrink-0 text-feedback-success-foreground"
+                aria-hidden
+              />
+            )}
+            {incorrect && (
+              <XCircle className="size-5 shrink-0 text-feedback-error-foreground" aria-hidden />
+            )}
           </button>
         );
       })}

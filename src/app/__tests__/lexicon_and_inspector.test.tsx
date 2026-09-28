@@ -122,4 +122,19 @@ describe("Lexicon Dictionary & Inspector", () => {
     expect(root).not.toContainElement(dialog);
     expect(dialog.closest("[inert]")).toBeNull();
   });
+
+  it("uses reviewed authored content in WordInspectorModal when available", async () => {
+    const mockWord: VocabularyItem = {
+      id: "red",
+      label: "Red",
+      phonetic: "/rɛd/",
+      img: "/word-images/colors/red.avif",
+      topic: "colors-1",
+      description: "A bright primary color.",
+    };
+
+    render(<WordInspectorModal word={mockWord} isOpen={true} onClose={() => {}} />);
+    expect(await screen.findByText("أحمر")).toBeInTheDocument();
+    expect(screen.getByText(/The apple is red\./i)).toBeInTheDocument();
+  });
 });

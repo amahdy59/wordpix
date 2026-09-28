@@ -77,7 +77,7 @@ export function StudyHome({
   const getAreaNodes = (area: StudyArea) => nodes.filter((n) => n.area === area);
 
   return (
-    <div className="max-w-4xl mx-auto w-full p-4 sm:p-6 md:p-8 space-y-6 sm:space-y-8">
+    <div className="wp-container-reading wp-layout-gutter space-y-6 py-4 sm:space-y-8 sm:py-6 md:py-8">
       {/* Breadcrumb Navigation */}
       <nav aria-label="Breadcrumb" className="flex items-center justify-between">
         <button

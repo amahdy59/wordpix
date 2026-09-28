@@ -13,6 +13,7 @@ import {
 } from "./figmaPronunciationCatalog";
 import { PronunciationLessonCard } from "./PronunciationLessonCard";
 import { PronunciationLessonInfoModal } from "./PronunciationLessonInfoModal";
+import { Button, EmptyState, MediaFrame } from "../../shared";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -82,15 +83,16 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
       className="h-full min-h-0 overflow-y-auto bg-background pb-24 overscroll-y-contain"
       aria-labelledby="pronunciation-curriculum-title"
     >
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 p-4 sm:p-8">
-        <button
-          type="button"
+      <div className="wp-container-content wp-layout-gutter flex flex-col gap-6 py-4 sm:py-8">
+        <Button
+          variant="ghost"
+          size="sm"
           onClick={() => dispatch({ type: "GO", to: "explore" })}
-          className="inline-flex min-h-11 w-fit items-center gap-2 rounded-xl px-3 font-bold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="w-fit"
+          iconLeft={<ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />}
         >
-          <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
           {t("pronunciation.backToLearningPath")}
-        </button>
+        </Button>
 
         <CurriculumHeroHeader
           titleId="pronunciation-curriculum-title"
@@ -103,26 +105,28 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
             { label: t("pronunciation.summaryLessons"), value: FIGMA_PRONUNCIATION_LESSONS.length },
           ]}
           action={
-            <button
-              type="button"
+            <Button
+              size="lg"
+              fullWidth
               onClick={() =>
                 dispatch({ type: "OPEN_FIGMA_PRONUNCIATION", lessonNumber: nextLesson.number })
               }
-              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-90 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-auto"
+              className="sm:w-auto"
+              iconLeft={<Headphones className="size-5" aria-hidden />}
             >
-              <Headphones className="size-5" aria-hidden />
               {t("pronunciation.continueCurriculum", { number: nextLesson.number })}
-            </button>
+            </Button>
           }
           media={
-            <img
-              src={resolveAssetUrl(
-                `pronunciation/v1/lesson-${String(nextLesson.number).padStart(2, "0")}.png`
-              )}
-              alt=""
-              className="hidden aspect-[4/3] w-full rounded-2xl border border-border object-cover shadow-wp-sm lg:block"
-              aria-hidden
-            />
+            <MediaFrame aspect="recognition" className="hidden w-full lg:block">
+              <img
+                src={resolveAssetUrl(
+                  `pronunciation/v1/lesson-${String(nextLesson.number).padStart(2, "0")}.png`
+                )}
+                alt=""
+                aria-hidden
+              />
+            </MediaFrame>
           }
         >
           <CurriculumFilterTabs
@@ -261,17 +265,11 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
             })}
           </div>
         ) : (
-          <section
-            className="rounded-2xl border border-border bg-card p-8 text-center"
-            role="status"
-          >
-            <h2 className="text-lg font-black text-foreground">
-              {t("pronunciation.noResultsTitle")}
-            </h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              {t("pronunciation.noResultsDescription")}
-            </p>
-          </section>
+          <EmptyState
+            title={t("pronunciation.noResultsTitle")}
+            description={t("pronunciation.noResultsDescription")}
+            live="polite"
+          />
         )}
       </div>
 

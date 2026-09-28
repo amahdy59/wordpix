@@ -128,10 +128,7 @@ export function HadithVocabularyStudy({ lines }: { lines: readonly string[] }) {
   ];
 
   return (
-    <section
-      className="mx-auto w-full max-w-6xl space-y-6"
-      aria-labelledby="hadith-vocabulary-heading"
-    >
+    <section className="wp-container-content space-y-6" aria-labelledby="hadith-vocabulary-heading">
       <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
         <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
           {t("hadith.vocabularyLabel")}

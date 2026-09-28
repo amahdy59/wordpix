@@ -1,4 +1,4 @@
-import { BEDROOM_VOCABULARY } from "../../data/lessons";
+import { BEDROOM_VOCABULARY } from "../../data/courseCatalog";
 import type { ExerciseDefinition, ChoiceOption } from "../taskTypes";
 
 const word = (id: string) => BEDROOM_VOCABULARY.find((w) => w.id === id)!;
@@ -70,14 +70,16 @@ export const LISTENING_EXERCISES: Record<string, ExerciseDefinition> = {
         id: "scene-1",
         kind: "choice",
         prompt: "Which room is being described?",
-        audioText: "A soft place to sleep, a small table beside it, and a lamp for reading at night.",
+        audioText:
+          "A soft place to sleep, a small table beside it, and a lamp for reading at night.",
         options: [
           { id: "bedroom", label: "The bedroom", correct: true },
           { id: "kitchen", label: "The kitchen" },
           { id: "library", label: "The library" },
           { id: "garden", label: "The garden" },
         ],
-        explanation: "A place to sleep plus a bedside table and a reading lamp describes a bedroom.",
+        explanation:
+          "A place to sleep plus a bedside table and a reading lamp describes a bedroom.",
       },
       {
         id: "scene-2",
@@ -136,7 +138,7 @@ export const LISTENING_EXERCISES: Record<string, ExerciseDefinition> = {
           { id: "wrong", label: "I am a pillow." },
         ],
         explanation:
-          "\"Could I please have…\" is the standard polite request form. The others are grammatical but abrupt, incomplete, or nonsense.",
+          '"Could I please have…" is the standard polite request form. The others are grammatical but abrupt, incomplete, or nonsense.',
       },
     ],
   },

@@ -8,6 +8,7 @@ import {
   pronunciationImagePath,
 } from "./figmaPronunciationCatalog";
 import type { PronunciationLessonProgress } from "./pronunciationProgress";
+import { IconButton, MediaFrame } from "../../shared";
 
 interface PronunciationLessonCardProps {
   lesson: FigmaPronunciationLessonSource;
@@ -44,7 +45,7 @@ export function PronunciationLessonCard({
         className="flex min-w-0 flex-1 items-center gap-3 text-start rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:gap-3.5"
       >
         {/* Visual Media Anchor: Dual Image Split or Phonetic Typographic Tile */}
-        <div className="relative aspect-square w-16 shrink-0 overflow-hidden rounded-xl border border-border/60 bg-muted/40 shadow-wp-xs sm:w-20">
+        <MediaFrame aspect="square" className="w-16 shrink-0 rounded-xl sm:w-20">
           {showImages && firstImage && secondImage ? (
             <div className="grid size-full grid-cols-2 divide-x divide-border/60">
               <div className="relative size-full overflow-hidden bg-muted/20">
@@ -89,7 +90,7 @@ export function PronunciationLessonCard({
           >
             {mastered ? <CheckCircle2 className="size-3.5" aria-hidden /> : lesson.number}
           </span>
-        </div>
+        </MediaFrame>
 
         {/* Center Content: Title, Phonetic Pill, Contrast Words, Status */}
         <div className="flex min-w-0 flex-1 flex-col justify-center gap-1">
@@ -158,18 +159,16 @@ export function PronunciationLessonCard({
 
       {/* Trailing Controls: Pedagogical Info Modal Trigger + Arrow */}
       <div className="ms-2 flex shrink-0 items-center gap-1">
-        <button
-          type="button"
+        <IconButton
           onClick={(e) => {
             e.stopPropagation();
             onOpenDetails(lesson.number);
           }}
           aria-label={t("pronunciation.viewLessonDetails", { lesson: lesson.number })}
           title={t("pronunciation.detailsTooltip")}
-          className="flex size-12 items-center justify-center rounded-xl text-muted-foreground transition-colors hover:bg-muted hover:text-foreground active:scale-95 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-        >
-          <Info className="size-4" aria-hidden />
-        </button>
+          size="md"
+          icon={<Info className="size-4" aria-hidden />}
+        ></IconButton>
 
         <span
           aria-hidden="true"

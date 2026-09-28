@@ -1,0 +1,449 @@
+﻿[
+  {
+    "lessonId": "architecture-styles-1",
+    "lessonName": "Architecture Styles 1",
+    "unitId": "architecture-styles",
+    "unitName": "Architecture Styles",
+    "unitOrder": 186,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 817,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Greek",
+      "Roman",
+      "Byzantine",
+      "Romanesque",
+      "Gothic",
+      "Renaissance",
+      "Baroque",
+      "Neoclassical",
+      "Beaux-Arts",
+      "Palladian",
+      "Art Nouveau",
+      "Art Deco",
+      "Bauhaus",
+      "Modernist",
+      "Brutalist"
+    ],
+    "targetWordsArabic": [
+      "يوناني",
+      "روماني",
+      "بيزنطي",
+      "رومانسكي",
+      "قوطي",
+      "عصر النهضة",
+      "باروكي",
+      "كلاسيكي جديد",
+      "أسلوب أو طراز يُسمّى «بياوكس-ارتس»",
+      "بالادي",
+      "نبات يُسمّى «ارت نووفياو»",
+      "شكل يُسمّى «ارت ديكو»",
+      "باوهاوس",
+      "حداثي",
+      "بروتالي؛ من طراز العمارة الوحشية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Architecture Styles to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use architecture styles vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "briefing note",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Greek", "Roman", "Byzantine", "Romanesque"],
+          "scenario": "The agent, designer, or client discusses greek, roman, byzantine, and romanesque. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Greek", "Roman", "Byzantine", "Romanesque"],
+            "expectedAnswer": "Greek"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses greek, roman, byzantine, and romanesque. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Gothic", "Renaissance", "Baroque", "Neoclassical"],
+          "scenario": "The agent, designer, or client discusses gothic, renaissance, baroque, and neoclassical. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Gothic", "Renaissance", "Baroque", "Neoclassical"],
+            "expectedAnswer": "Gothic"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses gothic, renaissance, baroque, and neoclassical. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Beaux-Arts", "Palladian", "Art Nouveau", "Art Deco"],
+          "scenario": "The agent, designer, or client discusses beaux-arts, palladian, art nouveau, and art deco. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Beaux-Arts", "Palladian", "Art Nouveau", "Art Deco"],
+            "expectedAnswer": "Beaux-Arts"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses beaux-arts, palladian, art nouveau, and art deco. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Bauhaus", "Modernist", "Brutalist"],
+          "scenario": "The agent, designer, or client discusses bauhaus, modernist, and brutalist. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bauhaus", "Modernist", "Brutalist"],
+            "expectedAnswer": "Bauhaus"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses bauhaus, modernist, and brutalist. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Architecture Styles: Briefing Note",
+      "text": "This text examines architecture styles through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The agent, designer, or client discusses greek, roman, byzantine, and romanesque. The words help describe the property, design choice, or building process. The agent, designer, or client discusses gothic, renaissance, baroque, and neoclassical. The words help describe the property, design choice, or building process. The agent, designer, or client discusses beaux-arts, palladian, art nouveau, and art deco. The words help describe the property, design choice, or building process. The agent, designer, or client discusses bauhaus, modernist, and brutalist. The words help describe the property, design choice, or building process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about Architecture Styles. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Greek"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gothic"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Beaux-Arts"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bauhaus"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Greek"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Byzantine"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “General Contractor” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Architecture Styles: In Context",
+      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: General Contractor, Foreman from building-construction-3\n3 lesson(s) back: Foundation, Column from building-construction-1\n7 lesson(s) back: Treaty, Convention from rights-regulations-3"
+  },
+  {
+    "lessonId": "architecture-styles-2",
+    "lessonName": "Architecture Styles 2",
+    "unitId": "architecture-styles",
+    "unitName": "Architecture Styles",
+    "unitOrder": 186,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 818,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "International Style",
+      "Mid-Century Modern",
+      "Postmodern",
+      "Deconstructivist",
+      "High-Tech",
+      "Minimalist",
+      "Sustainable",
+      "Parametric",
+      "Organic",
+      "Biophilic",
+      "Smart Building",
+      "Adaptive Reuse",
+      "Net Zero",
+      "Passive House",
+      "Modular"
+    ],
+    "targetWordsArabic": [
+      "الطراز الدولي في العمارة",
+      "منتصف قرن حديث",
+      "ما بعد حداثي",
+      "تفكيكي",
+      "تقنية مرتفع",
+      "تبسيطي",
+      "مستدام",
+      "بارامتري",
+      "عضوي",
+      "محبّ للطبيعة",
+      "مبنى ذكي",
+      "إعادة استخدام تكيفي",
+      "صفر صافي",
+      "منزل سلبي",
+      "وحداتي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Architecture Styles to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use architecture styles vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "analysis excerpt",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": [
+            "International Style",
+            "Mid-Century Modern",
+            "Postmodern",
+            "Deconstructivist"
+          ],
+          "scenario": "The agent, designer, or client discusses international style, mid-century modern, postmodern, and deconstructivist. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": [
+              "International Style",
+              "Mid-Century Modern",
+              "Postmodern",
+              "Deconstructivist"
+            ],
+            "expectedAnswer": "International Style"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses international style, mid-century modern, postmodern, and deconstructivist. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["High-Tech", "Minimalist", "Sustainable", "Parametric"],
+          "scenario": "The agent, designer, or client discusses high-tech, minimalist, sustainable, and parametric. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["High-Tech", "Minimalist", "Sustainable", "Parametric"],
+            "expectedAnswer": "High-Tech"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses high-tech, minimalist, sustainable, and parametric. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Organic", "Biophilic", "Smart Building", "Adaptive Reuse"],
+          "scenario": "The agent, designer, or client discusses organic, biophilic, smart building, and adaptive reuse. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Organic", "Biophilic", "Smart Building", "Adaptive Reuse"],
+            "expectedAnswer": "Organic"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses organic, biophilic, smart building, and adaptive reuse. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Net Zero", "Passive House", "Modular"],
+          "scenario": "The agent, designer, or client discusses net zero, passive house, and modular. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Net Zero", "Passive House", "Modular"],
+            "expectedAnswer": "Net Zero"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses net zero, passive house, and modular. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Architecture Styles: Analysis Excerpt",
+      "text": "This text examines architecture styles through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The agent, designer, or client discusses international style, mid-century modern, postmodern, and deconstructivist. The words help describe the property, design choice, or building process. The agent, designer, or client discusses high-tech, minimalist, sustainable, and parametric. The words help describe the property, design choice, or building process. The agent, designer, or client discusses organic, biophilic, smart building, and adaptive reuse. The words help describe the property, design choice, or building process. The agent, designer, or client discusses net zero, passive house, and modular. The words help describe the property, design choice, or building process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about Architecture Styles. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "International Style"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "High-Tech"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Organic"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Net Zero"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "International Style"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Postmodern"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Greek” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Architecture Styles: In Context",
+      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Greek, Roman from architecture-styles-1\n3 lesson(s) back: Stone, Aluminum from building-construction-2\n7 lesson(s) back: Blueprint, Floor Plan from architect-s-studio-1"
+  },
+  {
+    "lessonId": "architecture-styles-3",
+    "lessonName": "Architecture Styles 3",
+    "unitId": "architecture-styles",
+    "unitName": "Architecture Styles",
+    "unitOrder": 186,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 819,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Dome",
+      "Arch",
+      "Vault",
+      "Cantilever",
+      "Facade",
+      "Atrium",
+      "Skylight",
+      "Colonnade",
+      "Portico",
+      "Minaret"
+    ],
+    "targetWordsArabic": [
+      "قُبّة",
+      "قوس",
+      "قبو معماري",
+      "كابولي",
+      "واجهة",
+      "ردهة داخلية",
+      "نافذة سقفية",
+      "رواق أعمدة",
+      "رواق مدخل",
+      "مئذنة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Architecture Styles to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use architecture styles vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "professional summary",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Dome", "Arch", "Vault", "Cantilever"],
+          "scenario": "The agent, designer, or client discusses dome, arch, vault, and cantilever. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dome", "Arch", "Vault", "Cantilever"],
+            "expectedAnswer": "Dome"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses dome, arch, vault, and cantilever. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Facade", "Atrium", "Skylight", "Colonnade"],
+          "scenario": "The agent, designer, or client discusses facade, atrium, skylight, and colonnade. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Facade", "Atrium", "Skylight", "Colonnade"],
+            "expectedAnswer": "Facade"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses facade, atrium, skylight, and colonnade. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Portico", "Minaret"],
+          "scenario": "The agent, designer, or client discusses portico and minaret. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Portico", "Minaret"],
+            "expectedAnswer": "Portico"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses portico and minaret. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Architecture Styles: Professional Summary",
+      "text": "This text examines architecture styles through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The agent, designer, or client discusses dome, arch, vault, and cantilever. The words help describe the property, design choice, or building process. The agent, designer, or client discusses facade, atrium, skylight, and colonnade. The words help describe the property, design choice, or building process. The agent, designer, or client discusses portico and minaret. The words help describe the property, design choice, or building process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about Architecture Styles. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dome"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Facade"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Portico"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Dome"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Vault"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “International Style” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Architecture Styles: In Context",
+      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: International Style, Mid-Century Modern from architecture-styles-2\n3 lesson(s) back: General Contractor, Foreman from building-construction-3\n7 lesson(s) back: Drafting Table, Tracing Paper from architect-s-studio-2"
+  }
+]

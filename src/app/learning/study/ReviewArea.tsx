@@ -47,7 +47,7 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
   }
 
   return (
-    <div className="max-w-4xl mx-auto w-full p-4 sm:p-6 md:p-8 space-y-10">
+    <div className="wp-container-reading wp-layout-gutter space-y-10 py-4 sm:py-6 md:py-8">
       {/* Header */}
       <div>
         <div className="flex items-center gap-3.5 mb-2">

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { HelpCircle, ArrowRight, ArrowLeft } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
 import { useI18n } from "../../../../i18n";
@@ -14,14 +15,15 @@ interface Props {
 
 export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Props) {
   const { t } = useI18n();
+  const [isCompleted, setIsCompleted] = useState(savedScore !== undefined);
 
-  // Map conversation quiz format → unified QuizQuestion shape
+  // Map conversation quiz format → unified QuizQuestion shape with 2-column option layout
   const questions: QuizQuestion[] = unit.quiz.map((q) => ({
     id: q.id,
     stem: q.question,
     correctValue: q.correctAnswer,
     explanation: q.explanation,
-    optionColumns: "one",
+    optionColumns: "two",
     options: q.options.map((option) => ({
       value: option.key,
       label: option.text,
@@ -34,11 +36,12 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Pro
   }));
 
   const handleComplete = (result: QuizResult) => {
+    setIsCompleted(true);
     onSaveScore(result.correct);
   };
 
   return (
-    <div className="flex flex-col gap-6 max-w-6xl mx-auto w-full py-2">
+    <div className="wp-container-reading flex flex-col gap-6 py-2">
       {/* Stage Header */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
@@ -52,12 +55,24 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Pro
         )}
       </div>
 
-      {/* Unified Quiz Engine showing 3 questions at a time on desktop */}
+      {/* Unified Quiz Engine showing 1 focused question at a time */}
       <CurriculumQuizEngine
         questions={questions}
         onComplete={handleComplete}
-        desktopPageSize={3}
+        desktopPageSize={1}
         unitId={unit.id}
+        renderCompletionAction={() => (
+          <div className="flex justify-end pt-4">
+            <button
+              type="button"
+              onClick={onNext}
+              className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all"
+            >
+              <span>{t("conversation.continueDiscussion")}</span>
+              <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+            </button>
+          </div>
+        )}
       />
 
       {/* Stage Navigation Footer */}
@@ -65,20 +80,22 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Pro
         <button
           type="button"
           onClick={onPrev}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border border-border bg-card px-6 py-3 font-bold text-foreground hover:bg-muted active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border border-border bg-card px-6 py-3 font-bold text-foreground hover:bg-muted active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all"
         >
           <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
           <span>{t("conversation.previous")}</span>
         </button>
 
-        <button
-          type="button"
-          onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-        >
-          <span>{t("conversation.continueDiscussion")}</span>
-          <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-        </button>
+        {isCompleted && (
+          <button
+            type="button"
+            onClick={onNext}
+            className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all"
+          >
+            <span>{t("conversation.continueDiscussion")}</span>
+            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+          </button>
+        )}
       </div>
     </div>
   );

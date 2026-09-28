@@ -1,0 +1,678 @@
+﻿[
+  {
+    "lessonId": "orchestra-1",
+    "lessonName": "The Orchestra 1",
+    "unitId": "orchestra",
+    "unitName": "The Orchestra",
+    "unitOrder": 125,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 576,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Violin",
+      "Viola",
+      "Cello",
+      "Double Bass",
+      "Harp",
+      "Guitar",
+      "Bow",
+      "String",
+      "Tuning Peg",
+      "Chin Rest",
+      "Flute",
+      "Clarinet",
+      "Oboe",
+      "Bassoon",
+      "Piccolo"
+    ],
+    "targetWordsArabic": [
+      "كمان",
+      "فيولا",
+      "تشيلو",
+      "كونترباص",
+      "قيثارة",
+      "غيتار",
+      "فيونكة",
+      "أداة أو جهاز يُسمّى «سترينج»",
+      "مفتاح ضبط الأوتار",
+      "أداة أو جهاز يُسمّى «تشين ريست»",
+      "ناي فلوت",
+      "كلارينيت",
+      "أوبوا",
+      "باسون",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيككولو»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Orchestra to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the orchestra vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Violin", "Viola", "Cello", "Double Bass"],
+          "scenario": "During the creative session, the group works with violin, viola, cello, and double bass. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Violin", "Viola", "Cello", "Double Bass"],
+            "expectedAnswer": "Violin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with violin, viola, cello, and double bass. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Harp", "Guitar", "Bow", "String"],
+          "scenario": "During the creative session, the group works with harp, guitar, bow, and string. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Harp", "Guitar", "Bow", "String"],
+            "expectedAnswer": "Harp"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with harp, guitar, bow, and string. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Tuning Peg", "Chin Rest", "Flute", "Clarinet"],
+          "scenario": "During the creative session, the group works with tuning peg, chin rest, flute, and clarinet. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tuning Peg", "Chin Rest", "Flute", "Clarinet"],
+            "expectedAnswer": "Tuning Peg"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with tuning peg, chin rest, flute, and clarinet. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Oboe", "Bassoon", "Piccolo"],
+          "scenario": "During the creative session, the group works with oboe, bassoon, and piccolo. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Oboe", "Bassoon", "Piccolo"],
+            "expectedAnswer": "Oboe"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with oboe, bassoon, and piccolo. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Orchestra: Travel/Visitor Guide",
+      "text": "A practical situation involving the orchestra requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with violin, viola, cello, and double bass. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with harp, guitar, bow, and string. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with tuning peg, chin rest, flute, and clarinet. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Violin"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Harp"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tuning Peg"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Oboe"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Violin"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Double Bass"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Wing” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Orchestra: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Wing, Orchestra Pit from theater-5\n3 lesson(s) back: Prop, Sword from theater-3\n7 lesson(s) back: Bait, Hook from harbor-4"
+  },
+  {
+    "lessonId": "orchestra-2",
+    "lessonName": "The Orchestra 2",
+    "unitId": "orchestra",
+    "unitName": "The Orchestra",
+    "unitOrder": 125,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 577,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Recorder",
+      "Saxophone",
+      "Reed",
+      "Mouthpiece",
+      "Key",
+      "Trumpet",
+      "Trombone",
+      "French Horn",
+      "Tuba",
+      "Cornet",
+      "Bugle",
+      "Valve",
+      "Bell",
+      "Mute",
+      "Slide"
+    ],
+    "targetWordsArabic": [
+      "ناي ريكوردر",
+      "ساكسفون",
+      "مادة يُسمّى «رييد»",
+      "شخص يُسمّى «مووثبييكي»",
+      "مفتاح موسيقي",
+      "بوق ترومبيت",
+      "ترومبون",
+      "بوق فرنسي",
+      "توبا",
+      "آلة موسيقية يُسمّى «كورنيت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بوجلي»",
+      "صمام",
+      "جرس",
+      "مصطلح مرتبط بالموضوع يُسمّى «موتي»",
+      "شريحة مجهرية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Orchestra to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the orchestra vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Recorder", "Saxophone", "Reed", "Mouthpiece"],
+          "scenario": "During the creative session, the group works with recorder, saxophone, reed, and mouthpiece. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Recorder", "Saxophone", "Reed", "Mouthpiece"],
+            "expectedAnswer": "Recorder"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with recorder, saxophone, reed, and mouthpiece. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Key", "Trumpet", "Trombone", "French Horn"],
+          "scenario": "During the creative session, the group works with key, trumpet, trombone, and french horn. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Key", "Trumpet", "Trombone", "French Horn"],
+            "expectedAnswer": "Key"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with key, trumpet, trombone, and french horn. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Tuba", "Cornet", "Bugle", "Valve"],
+          "scenario": "During the creative session, the group works with tuba, cornet, bugle, and valve. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tuba", "Cornet", "Bugle", "Valve"],
+            "expectedAnswer": "Tuba"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with tuba, cornet, bugle, and valve. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Bell", "Mute", "Slide"],
+          "scenario": "During the creative session, the group works with bell, mute, and slide. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bell", "Mute", "Slide"],
+            "expectedAnswer": "Bell"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with bell, mute, and slide. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Orchestra: Review",
+      "text": "A practical situation involving the orchestra requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with recorder, saxophone, reed, and mouthpiece. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with key, trumpet, trombone, and french horn. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with tuba, cornet, bugle, and valve. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Recorder"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Key"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tuba"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bell"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Recorder"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Mouthpiece"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Violin” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Orchestra: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Violin, Viola from orchestra-1\n3 lesson(s) back: Sound Technician, Costume Designer from theater-4\n7 lesson(s) back: Tide, Wave from harbor-5"
+  },
+  {
+    "lessonId": "orchestra-3",
+    "lessonName": "The Orchestra 3",
+    "unitId": "orchestra",
+    "unitName": "The Orchestra",
+    "unitOrder": 125,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 578,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Drum",
+      "Snare Drum",
+      "Bass Drum",
+      "Timpani",
+      "Cymbal",
+      "Triangle",
+      "Xylophone",
+      "Tambourine",
+      "Gong",
+      "Drumstick",
+      "Concert Hall",
+      "Stage",
+      "Music Stand",
+      "Conductor's Podium",
+      "Baton"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «دروم»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سناري دروم»",
+      "أداة أو جهاز يُسمّى «باسس دروم»",
+      "أداة أو جهاز يُسمّى «تيمباني»",
+      "صنج",
+      "مثلث",
+      "إكسيليفون",
+      "دف",
+      "غونغ",
+      "ساق دجاج",
+      "مصطلح مرتبط بالموضوع يُسمّى «كونكيرت هالل»",
+      "مرحلة",
+      "مصطلح مرتبط بالموضوع يُسمّى «موسيك ستاند»",
+      "منصة قائد الأوركسترا",
+      "مصطلح مرتبط بالموضوع يُسمّى «باتون»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Orchestra to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the orchestra vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Drum", "Snare Drum", "Bass Drum", "Timpani"],
+          "scenario": "During the creative session, the group works with drum, snare drum, bass drum, and timpani. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Drum", "Snare Drum", "Bass Drum", "Timpani"],
+            "expectedAnswer": "Drum"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with drum, snare drum, bass drum, and timpani. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Cymbal", "Triangle", "Xylophone", "Tambourine"],
+          "scenario": "During the creative session, the group works with cymbal, triangle, xylophone, and tambourine. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cymbal", "Triangle", "Xylophone", "Tambourine"],
+            "expectedAnswer": "Cymbal"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with cymbal, triangle, xylophone, and tambourine. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Gong", "Drumstick", "Concert Hall", "Stage"],
+          "scenario": "During the creative session, the group works with gong, drumstick, concert hall, and stage. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Gong", "Drumstick", "Concert Hall", "Stage"],
+            "expectedAnswer": "Gong"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with gong, drumstick, concert hall, and stage. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Music Stand", "Conductor's Podium", "Baton"],
+          "scenario": "During the creative session, the group works with music stand, conductor's podium, and baton. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Music Stand", "Conductor's Podium", "Baton"],
+            "expectedAnswer": "Music Stand"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with music stand, conductor's podium, and baton. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Orchestra: Practical Article",
+      "text": "A practical situation involving the orchestra requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with drum, snare drum, bass drum, and timpani. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with cymbal, triangle, xylophone, and tambourine. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with gong, drumstick, concert hall, and stage. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Drum"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cymbal"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gong"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Music Stand"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Drum"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Timpani"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Recorder” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Orchestra: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Recorder, Saxophone from orchestra-2\n3 lesson(s) back: Wing, Orchestra Pit from theater-5\n7 lesson(s) back: Stage, Curtain from theater-1"
+  },
+  {
+    "lessonId": "orchestra-4",
+    "lessonName": "The Orchestra 4",
+    "unitId": "orchestra",
+    "unitName": "The Orchestra",
+    "unitOrder": 125,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 579,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Sheet Music",
+      "Score",
+      "Tuning Fork",
+      "Metronome",
+      "Orchestra Pit",
+      "Conductor",
+      "Concertmaster",
+      "Soloist",
+      "First Chair",
+      "Section Leader",
+      "Accompanist",
+      "Composer",
+      "Arranger",
+      "Page Turner",
+      "Audience"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «شييت موسيك»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سكوري»",
+      "أداة يُسمّى «تونينج فورك»",
+      "مترونوم",
+      "حلقة تداول أوركسترا",
+      "محصل أو مشرف قطار",
+      "مصطلح مرتبط بالموضوع يُسمّى «كونكيرتماستير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سولويست»",
+      "العازف الأول",
+      "قائد مجموعة الآلات",
+      "شخص يُسمّى «اككومبانيست»",
+      "شخص يُسمّى «كومبوسير»",
+      "شخص يُسمّى «اررانجير»",
+      "مقلّب صفحات النوتة",
+      "جمهور"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Orchestra to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the orchestra vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sheet Music", "Score", "Tuning Fork", "Metronome"],
+          "scenario": "During the creative session, the group works with sheet music, score, tuning fork, and metronome. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sheet Music", "Score", "Tuning Fork", "Metronome"],
+            "expectedAnswer": "Sheet Music"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with sheet music, score, tuning fork, and metronome. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Orchestra Pit", "Conductor", "Concertmaster", "Soloist"],
+          "scenario": "During the creative session, the group works with orchestra pit, conductor, concertmaster, and soloist. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Orchestra Pit", "Conductor", "Concertmaster", "Soloist"],
+            "expectedAnswer": "Orchestra Pit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with orchestra pit, conductor, concertmaster, and soloist. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["First Chair", "Section Leader", "Accompanist", "Composer"],
+          "scenario": "During the creative session, the group works with first chair, section leader, accompanist, and composer. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["First Chair", "Section Leader", "Accompanist", "Composer"],
+            "expectedAnswer": "First Chair"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with first chair, section leader, accompanist, and composer. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Arranger", "Page Turner", "Audience"],
+          "scenario": "During the creative session, the group works with arranger, page turner, and audience. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Arranger", "Page Turner", "Audience"],
+            "expectedAnswer": "Arranger"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with arranger, page turner, and audience. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Orchestra: Real-Life Scenario",
+      "text": "A practical situation involving the orchestra requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with sheet music, score, tuning fork, and metronome. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with orchestra pit, conductor, concertmaster, and soloist. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with first chair, section leader, accompanist, and composer. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sheet Music"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Orchestra Pit"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "First Chair"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Arranger"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Sheet Music"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Metronome"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Drum” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Orchestra: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Drum, Snare Drum from orchestra-3\n3 lesson(s) back: Violin, Viola from orchestra-1\n7 lesson(s) back: Row, Lobby from theater-2"
+  },
+  {
+    "lessonId": "orchestra-5",
+    "lessonName": "The Orchestra 5",
+    "unitId": "orchestra",
+    "unitName": "The Orchestra",
+    "unitOrder": 125,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 580,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": ["Podium", "Symphony", "Rehearsal", "Program"],
+    "targetWordsArabic": [
+      "شخص يُسمّى «بوديوم»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سيمفوني»",
+      "بروفة",
+      "برنامج العرض"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Orchestra to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the orchestra vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": {
+        "chunkNumber": 1,
+        "targetWords": ["Podium", "Symphony", "Rehearsal", "Program"],
+        "scenario": "During the creative session, the group works with podium, symphony, rehearsal, and program. Each term has a clear role in making, performing, or presenting the work.",
+        "check": {
+          "question": "Which target term is most central to the situation?",
+          "options": ["Podium", "Symphony", "Rehearsal", "Program"],
+          "expectedAnswer": "Podium"
+        },
+        "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with podium, symphony, rehearsal, and program. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+      }
+    },
+    "reading": {
+      "title": "The Orchestra: Travel/Visitor Guide",
+      "text": "A practical situation involving the orchestra requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with podium, symphony, rehearsal, and program. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Podium"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Podium"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Program"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Sheet Music” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Orchestra: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Sheet Music, Score from orchestra-4\n3 lesson(s) back: Recorder, Saxophone from orchestra-2\n7 lesson(s) back: Prop, Sword from theater-3"
+  }
+]

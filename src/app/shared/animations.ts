@@ -2,12 +2,14 @@ import type { Variants } from "framer-motion";
 
 /**
  * Standard stagger container for lists/grids.
- * Applies a 0.05s stagger between children appearing.
+ *
+ * Keep the container fully opaque in every state. Fading a whole page blends
+ * its foreground and background colours together during entry, which creates
+ * transient WCAG contrast failures even when the resting tokens pass AAA.
  */
 export const staggerContainer: Variants = {
-  hidden: { opacity: 0 },
+  hidden: {},
   visible: {
-    opacity: 1,
     transition: {
       staggerChildren: 0.05,
     },
@@ -15,17 +17,16 @@ export const staggerContainer: Variants = {
 };
 
 /**
- * Standard child item that slides up and fades in.
+ * Standard child item that slides up without changing colour contrast.
  */
 export const staggerItem: Variants = {
-  hidden: { opacity: 0, y: 15 },
-  visible: { 
-    opacity: 1, 
+  hidden: { y: 12 },
+  visible: {
     y: 0,
     transition: {
       type: "spring",
       bounce: 0,
-      duration: 0.4
-    }
+      duration: 0.4,
+    },
   },
 };

@@ -1,0 +1,552 @@
+﻿[
+  {
+    "lessonId": "ages-life-stages-1",
+    "lessonName": "Ages & Life Stages 1",
+    "unitId": "ages-life-stages",
+    "unitName": "Ages & Life Stages",
+    "unitOrder": 65,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 296,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Newborn",
+      "Baby",
+      "Infant",
+      "Toddler",
+      "Preschooler",
+      "Child",
+      "Kid",
+      "Youngster",
+      "Childhood",
+      "Growth",
+      "Teenager",
+      "Adolescent",
+      "Teen",
+      "Youth",
+      "Puberty"
+    ],
+    "targetWordsArabic": [
+      "مولود حديثًا",
+      "رضيع",
+      "رضيع",
+      "طفل دارج",
+      "طفل قبل المدرسة",
+      "طفل",
+      "طفل",
+      "يافع",
+      "طفولة",
+      "نمو",
+      "مراهق",
+      "مراهق",
+      "مراهق",
+      "شاب",
+      "بلوغ"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Ages & Life Stages to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key ages & life stages vocabulary in connected everyday context.",
+      "textType": "email",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Newborn", "Baby", "Infant"],
+          "scenario": "In the social situation, the people experience or discuss newborn, baby, and infant. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Newborn", "Baby", "Infant"],
+            "expectedAnswer": "Newborn"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss newborn, baby, and infant. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Toddler", "Preschooler", "Child"],
+          "scenario": "In the social situation, the people experience or discuss toddler, preschooler, and child. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Toddler", "Preschooler", "Child"],
+            "expectedAnswer": "Toddler"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss toddler, preschooler, and child. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Kid", "Youngster", "Childhood"],
+          "scenario": "In the social situation, the people experience or discuss kid, youngster, and childhood. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Kid", "Youngster", "Childhood"],
+            "expectedAnswer": "Kid"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss kid, youngster, and childhood. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Growth", "Teenager", "Adolescent"],
+          "scenario": "In the social situation, the people experience or discuss growth, teenager, and adolescent. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Growth", "Teenager", "Adolescent"],
+            "expectedAnswer": "Growth"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss growth, teenager, and adolescent. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Teen", "Youth", "Puberty"],
+          "scenario": "In the social situation, the people experience or discuss teen, youth, and puberty. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Teen", "Youth", "Puberty"],
+            "expectedAnswer": "Teen"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss teen, youth, and puberty. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Ages & Life Stages: Email",
+      "text": "Omar has an everyday task connected to ages & life stages. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss newborn, baby, and infant. The context makes the relationship between the words clear. In the social situation, the people experience or discuss toddler, preschooler, and child. The context makes the relationship between the words clear. In the social situation, the people experience or discuss kid, youngster, and childhood. The context makes the relationship between the words clear. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about Ages & Life Stages. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Newborn"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Toddler"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Kid"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Growth"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Teen"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Newborn"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Toddler"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Face Mask” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Ages & Life Stages: In Context",
+      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Face Mask, Eye Cream from skin-hair-4\n3 lesson(s) back: Bruise, Scar from skin-hair-2\n7 lesson(s) back: Coarse Hair, Fine Hair from physical-appearance-2"
+  },
+  {
+    "lessonId": "ages-life-stages-2",
+    "lessonName": "Ages & Life Stages 2",
+    "unitId": "ages-life-stages",
+    "unitName": "Ages & Life Stages",
+    "unitOrder": 65,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 297,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Growth Spurt",
+      "Young Adult",
+      "Coming of Age",
+      "Juvenile",
+      "Minor",
+      "Adult",
+      "Grown-Up",
+      "Middle-Aged",
+      "Mature",
+      "Prime",
+      "Independent",
+      "Responsible",
+      "Experienced",
+      "Professional",
+      "Elderly"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «جرووث سبورت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يوونج ادولت»",
+      "شخص يُسمّى «كومينج وف اجي»",
+      "حدث",
+      "قاصر",
+      "بالغ",
+      "شخص يُسمّى «جروون-وب»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ميددلي-اجيد»",
+      "ناضج",
+      "أوج العمر",
+      "مستقل",
+      "مسؤول",
+      "ذو خبرة",
+      "محترف",
+      "مسن"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Ages & Life Stages to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key ages & life stages vocabulary in connected everyday context.",
+      "textType": "personal message",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Growth Spurt", "Young Adult", "Coming of Age"],
+          "scenario": "In the social situation, the people experience or discuss growth spurt, young adult, and coming of age. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Growth Spurt", "Young Adult", "Coming of Age"],
+            "expectedAnswer": "Growth Spurt"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss growth spurt, young adult, and coming of age. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Juvenile", "Minor", "Adult"],
+          "scenario": "In the social situation, the people experience or discuss juvenile, minor, and adult. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Juvenile", "Minor", "Adult"],
+            "expectedAnswer": "Juvenile"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss juvenile, minor, and adult. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Grown-Up", "Middle-Aged", "Mature"],
+          "scenario": "In the social situation, the people experience or discuss grown-up, middle-aged, and mature. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Grown-Up", "Middle-Aged", "Mature"],
+            "expectedAnswer": "Grown-Up"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss grown-up, middle-aged, and mature. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Prime", "Independent", "Responsible"],
+          "scenario": "In the social situation, the people experience or discuss prime, independent, and responsible. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Prime", "Independent", "Responsible"],
+            "expectedAnswer": "Prime"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss prime, independent, and responsible. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Experienced", "Professional", "Elderly"],
+          "scenario": "In the social situation, the people experience or discuss experienced, professional, and elderly. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Experienced", "Professional", "Elderly"],
+            "expectedAnswer": "Experienced"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss experienced, professional, and elderly. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Ages & Life Stages: Personal Message",
+      "text": "Omar has an everyday task connected to ages & life stages. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss growth spurt, young adult, and coming of age. The context makes the relationship between the words clear. In the social situation, the people experience or discuss juvenile, minor, and adult. The context makes the relationship between the words clear. In the social situation, the people experience or discuss grown-up, middle-aged, and mature. The context makes the relationship between the words clear. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about Ages & Life Stages. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Growth Spurt"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Juvenile"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Grown-Up"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Prime"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Experienced"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Growth Spurt"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Juvenile"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Newborn” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Ages & Life Stages: In Context",
+      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Newborn, Baby from ages-life-stages-1\n3 lesson(s) back: Comb, Brush from skin-hair-3\n7 lesson(s) back: Ponytail, Braid from physical-appearance-3"
+  },
+  {
+    "lessonId": "ages-life-stages-3",
+    "lessonName": "Ages & Life Stages 3",
+    "unitId": "ages-life-stages",
+    "unitName": "Ages & Life Stages",
+    "unitOrder": 65,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 298,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Senior",
+      "Retiree",
+      "Grandparent",
+      "Aging",
+      "Wisdom",
+      "Retirement",
+      "Golden Years",
+      "Elder",
+      "Longevity",
+      "Birth",
+      "First Steps",
+      "First Words",
+      "School Start",
+      "Graduation",
+      "First Job"
+    ],
+    "targetWordsArabic": [
+      "كبير السن",
+      "متقاعد",
+      "مصطلح مرتبط بالموضوع يُسمّى «جراندبارينت»",
+      "تقدّم في العمر",
+      "حكمة",
+      "تقاعد",
+      "شخص يُسمّى «جولدين ييارس»",
+      "شيخ أو كبير السن",
+      "طول العمر",
+      "ميلاد",
+      "شخص يُسمّى «فيرست ستيبس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فيرست ووردس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستشوول ستارت»",
+      "تخرج",
+      "أول وظيفة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Ages & Life Stages to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key ages & life stages vocabulary in connected everyday context.",
+      "textType": "short dialogue",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Senior", "Retiree", "Grandparent"],
+          "scenario": "In the social situation, the people experience or discuss senior, retiree, and grandparent. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Senior", "Retiree", "Grandparent"],
+            "expectedAnswer": "Senior"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss senior, retiree, and grandparent. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Aging", "Wisdom", "Retirement"],
+          "scenario": "In the social situation, the people experience or discuss aging, wisdom, and retirement. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Aging", "Wisdom", "Retirement"],
+            "expectedAnswer": "Aging"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss aging, wisdom, and retirement. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Golden Years", "Elder", "Longevity"],
+          "scenario": "In the social situation, the people experience or discuss golden years, elder, and longevity. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Golden Years", "Elder", "Longevity"],
+            "expectedAnswer": "Golden Years"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss golden years, elder, and longevity. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Birth", "First Steps", "First Words"],
+          "scenario": "In the social situation, the people experience or discuss birth, first steps, and first words. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Birth", "First Steps", "First Words"],
+            "expectedAnswer": "Birth"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss birth, first steps, and first words. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["School Start", "Graduation", "First Job"],
+          "scenario": "In the social situation, the people experience or discuss school start, graduation, and first job. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["School Start", "Graduation", "First Job"],
+            "expectedAnswer": "School Start"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss school start, graduation, and first job. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Ages & Life Stages: Short Dialogue",
+      "text": "Omar has an everyday task connected to ages & life stages. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss senior, retiree, and grandparent. The context makes the relationship between the words clear. In the social situation, the people experience or discuss aging, wisdom, and retirement. The context makes the relationship between the words clear. In the social situation, the people experience or discuss golden years, elder, and longevity. The context makes the relationship between the words clear. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about Ages & Life Stages. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Senior"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Aging"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Golden Years"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Birth"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "School Start"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Senior"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Aging"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Growth Spurt” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Ages & Life Stages: In Context",
+      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Growth Spurt, Young Adult from ages-life-stages-2\n3 lesson(s) back: Face Mask, Eye Cream from skin-hair-4\n7 lesson(s) back: Dark Eyes, Light Eyes from physical-appearance-4"
+  },
+  {
+    "lessonId": "ages-life-stages-4",
+    "lessonName": "Ages & Life Stages 4",
+    "unitId": "ages-life-stages",
+    "unitName": "Ages & Life Stages",
+    "unitOrder": 65,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 299,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": ["Marriage", "Parenthood", "Legacy"],
+    "targetWordsArabic": ["زواج", "أبوّة وأمومة", "إرث"],
+    "usage": {
+      "goal": "Use the vocabulary from Ages & Life Stages to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key ages & life stages vocabulary in connected everyday context.",
+      "textType": "everyday description",
+      "readingTarget": "65-95 words",
+      "scenes": {
+        "chunkNumber": 1,
+        "targetWords": ["Marriage", "Parenthood", "Legacy"],
+        "scenario": "In the social situation, the people experience or discuss marriage, parenthood, and legacy. The context makes the relationship between the words clear.",
+        "check": {
+          "question": "Which target word best matches the key detail in this scene?",
+          "options": ["Marriage", "Parenthood", "Legacy"],
+          "expectedAnswer": "Marriage"
+        },
+        "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss marriage, parenthood, and legacy. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+      }
+    },
+    "reading": {
+      "title": "Ages & Life Stages: Everyday Description",
+      "text": "Omar has an everyday task connected to ages & life stages. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss marriage, parenthood, and legacy. The context makes the relationship between the words clear. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about Ages & Life Stages. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Marriage"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Marriage"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Legacy"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Senior” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Ages & Life Stages: In Context",
+      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Senior, Retiree from ages-life-stages-3\n3 lesson(s) back: Newborn, Baby from ages-life-stages-1\n7 lesson(s) back: Oily Skin, Dry Skin from skin-hair-1"
+  }
+]

@@ -1,0 +1,540 @@
+﻿[
+  {
+    "lessonId": "car-parts-mechanics-1",
+    "lessonName": "Car Parts & Mechanics 1",
+    "unitId": "car-parts-mechanics",
+    "unitName": "Car Parts & Mechanics",
+    "unitOrder": 163,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 723,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Engine",
+      "Transmission",
+      "Clutch",
+      "Carburetor",
+      "Spark Plug",
+      "Piston",
+      "Crankshaft",
+      "Camshaft",
+      "Turbocharger",
+      "Exhaust",
+      "Hood",
+      "Trunk",
+      "Bumper",
+      "Fender",
+      "Door"
+    ],
+    "targetWordsArabic": [
+      "محرك",
+      "ناقل حركة",
+      "حقيبة صغيرة",
+      "مكربن",
+      "مصطلح مرتبط بالموضوع يُسمّى «سبارك بلوج»",
+      "مكبس",
+      "عمود مرفقي",
+      "عمود كامات",
+      "شاحن توربيني",
+      "عادم",
+      "غطاء المحرك",
+      "صندوق السيارة",
+      "مصد",
+      "رفرف",
+      "بَاب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Car Parts & Mechanics to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use car parts & mechanics vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Engine", "Transmission", "Clutch", "Carburetor"],
+          "scenario": "The technician checks engine, transmission, clutch, and carburetor before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Engine", "Transmission", "Clutch", "Carburetor"],
+            "expectedAnswer": "Engine"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks engine, transmission, clutch, and carburetor before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Spark Plug", "Piston", "Crankshaft", "Camshaft"],
+          "scenario": "The technician checks spark plug, piston, crankshaft, and camshaft before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Spark Plug", "Piston", "Crankshaft", "Camshaft"],
+            "expectedAnswer": "Spark Plug"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks spark plug, piston, crankshaft, and camshaft before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Turbocharger", "Exhaust", "Hood", "Trunk"],
+          "scenario": "The technician checks turbocharger, exhaust, hood, and trunk before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Turbocharger", "Exhaust", "Hood", "Trunk"],
+            "expectedAnswer": "Turbocharger"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks turbocharger, exhaust, hood, and trunk before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Bumper", "Fender", "Door"],
+          "scenario": "The technician checks bumper, fender, and door before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bumper", "Fender", "Door"],
+            "expectedAnswer": "Bumper"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks bumper, fender, and door before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Car Parts & Mechanics: Report Excerpt",
+      "text": "A realistic case involving car parts & mechanics shows how precise vocabulary can influence choices, explanations, and outcomes. The technician checks engine, transmission, clutch, and carburetor before the work continues. Each item or process matters to the practical task. The technician checks spark plug, piston, crankshaft, and camshaft before the work continues. Each item or process matters to the practical task. The technician checks turbocharger, exhaust, hood, and trunk before the work continues. Each item or process matters to the practical task. The technician checks bumper, fender, and door before the work continues. Each item or process matters to the practical task. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Car Parts & Mechanics. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Engine"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Spark Plug"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Turbocharger"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bumper"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Engine"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Motorcycle” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Car Parts & Mechanics: In Context",
+      "idea": "45-70 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Motorcycle, Scooter from car-types-3\n3 lesson(s) back: Sedan, Hatchback from car-types-1\n7 lesson(s) back: HVAC, Central Air from home-features-3"
+  },
+  {
+    "lessonId": "car-parts-mechanics-2",
+    "lessonName": "Car Parts & Mechanics 2",
+    "unitId": "car-parts-mechanics",
+    "unitName": "Car Parts & Mechanics",
+    "unitOrder": 163,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 724,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Roof",
+      "Windshield",
+      "Side Mirror",
+      "Headlight",
+      "Taillight",
+      "Dashboard",
+      "Steering Wheel",
+      "Gear Shift",
+      "Pedal",
+      "Seat Belt",
+      "Airbag",
+      "Glove Box",
+      "Console",
+      "Sun Visor",
+      "Rearview Mirror"
+    ],
+    "targetWordsArabic": [
+      "سقف",
+      "زجاج أمامي",
+      "مرآة جانبية",
+      "مصباح أمامي",
+      "مصباح خلفي",
+      "لوحة معلومات",
+      "عجلة القيادة",
+      "ناقل الحركة",
+      "دواسة",
+      "حزام مقعد",
+      "وسادة هوائية",
+      "مركبة يُسمّى «جلوفي بوكس»",
+      "وحدة تحكم",
+      "واقٍ للعين شمس",
+      "مركبة يُسمّى «ريارفييو ميررور»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Car Parts & Mechanics to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use car parts & mechanics vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Roof", "Windshield", "Side Mirror", "Headlight"],
+          "scenario": "The technician checks roof, windshield, side mirror, and headlight before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Roof", "Windshield", "Side Mirror", "Headlight"],
+            "expectedAnswer": "Roof"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks roof, windshield, side mirror, and headlight before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Taillight", "Dashboard", "Steering Wheel", "Gear Shift"],
+          "scenario": "The technician checks taillight, dashboard, steering wheel, and gear shift before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Taillight", "Dashboard", "Steering Wheel", "Gear Shift"],
+            "expectedAnswer": "Taillight"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks taillight, dashboard, steering wheel, and gear shift before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Pedal", "Seat Belt", "Airbag", "Glove Box"],
+          "scenario": "The technician checks pedal, seat belt, airbag, and glove box before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pedal", "Seat Belt", "Airbag", "Glove Box"],
+            "expectedAnswer": "Pedal"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks pedal, seat belt, airbag, and glove box before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Console", "Sun Visor", "Rearview Mirror"],
+          "scenario": "The technician checks console, sun visor, and rearview mirror before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Console", "Sun Visor", "Rearview Mirror"],
+            "expectedAnswer": "Console"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks console, sun visor, and rearview mirror before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Car Parts & Mechanics: Case Note",
+      "text": "A realistic case involving car parts & mechanics shows how precise vocabulary can influence choices, explanations, and outcomes. The technician checks roof, windshield, side mirror, and headlight before the work continues. Each item or process matters to the practical task. The technician checks taillight, dashboard, steering wheel, and gear shift before the work continues. Each item or process matters to the practical task. The technician checks pedal, seat belt, airbag, and glove box before the work continues. Each item or process matters to the practical task. The technician checks console, sun visor, and rearview mirror before the work continues. Each item or process matters to the practical task. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Car Parts & Mechanics. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Roof"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Taillight"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pedal"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Console"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Roof"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Engine” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Car Parts & Mechanics: In Context",
+      "idea": "45-70 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Engine, Transmission from car-parts-mechanics-1\n3 lesson(s) back: Dump Truck, Flatbed from car-types-2\n7 lesson(s) back: Moving Box, Packing Tape from moving-settling-in-1"
+  },
+  {
+    "lessonId": "car-parts-mechanics-3",
+    "lessonName": "Car Parts & Mechanics 3",
+    "unitId": "car-parts-mechanics",
+    "unitName": "Car Parts & Mechanics",
+    "unitOrder": 163,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 725,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Tire",
+      "Wheel",
+      "Rim",
+      "Hub Cap",
+      "Brake Pad",
+      "Brake Disc",
+      "Shock Absorber",
+      "Spring",
+      "Axle",
+      "Alignment",
+      "Engine Oil",
+      "Coolant",
+      "Brake Fluid",
+      "Transmission Fluid",
+      "Windshield Washer"
+    ],
+    "targetWordsArabic": [
+      "إطار سيارة",
+      "عجلة",
+      "جنط",
+      "غطاء محور العجلة",
+      "مكان يُسمّى «براكي باد»",
+      "قرص الفرامل",
+      "مركبة يُسمّى «شوك ابسوربير»",
+      "نابض",
+      "محور",
+      "ضبط المحاذاة",
+      "زيت المحرك",
+      "سائل تبريد",
+      "سائل الفرامل",
+      "سائل ناقل الحركة",
+      "نظام غسيل الزجاج الأمامي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Car Parts & Mechanics to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use car parts & mechanics vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "review",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Tire", "Wheel", "Rim", "Hub Cap"],
+          "scenario": "The technician checks tire, wheel, rim, and hub cap before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tire", "Wheel", "Rim", "Hub Cap"],
+            "expectedAnswer": "Tire"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks tire, wheel, rim, and hub cap before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Brake Pad", "Brake Disc", "Shock Absorber", "Spring"],
+          "scenario": "The technician checks brake pad, brake disc, shock absorber, and spring before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Brake Pad", "Brake Disc", "Shock Absorber", "Spring"],
+            "expectedAnswer": "Brake Pad"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks brake pad, brake disc, shock absorber, and spring before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Axle", "Alignment", "Engine Oil", "Coolant"],
+          "scenario": "The technician checks axle, alignment, engine oil, and coolant before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Axle", "Alignment", "Engine Oil", "Coolant"],
+            "expectedAnswer": "Axle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks axle, alignment, engine oil, and coolant before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Brake Fluid", "Transmission Fluid", "Windshield Washer"],
+          "scenario": "The group compares the brake fluid, transmission fluid, and windshield washer and notices how the vehicles differ.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Brake Fluid", "Transmission Fluid", "Windshield Washer"],
+            "expectedAnswer": "Brake Fluid"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group compares the brake fluid, transmission fluid, and windshield washer and notices how the vehicles differ. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Car Parts & Mechanics: Review",
+      "text": "A realistic case involving car parts & mechanics shows how precise vocabulary can influence choices, explanations, and outcomes. The technician checks tire, wheel, rim, and hub cap before the work continues. Each item or process matters to the practical task. The technician checks brake pad, brake disc, shock absorber, and spring before the work continues. Each item or process matters to the practical task. The technician checks axle, alignment, engine oil, and coolant before the work continues. Each item or process matters to the practical task. The group compares the brake fluid, transmission fluid, and windshield washer and notices how the vehicles differ. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Car Parts & Mechanics. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tire"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Brake Pad"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Axle"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Brake Fluid"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Tire"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Roof” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Car Parts & Mechanics: In Context",
+      "idea": "45-70 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Roof, Windshield from car-parts-mechanics-2\n3 lesson(s) back: Motorcycle, Scooter from car-types-3\n7 lesson(s) back: Sort, Donate from moving-settling-in-2"
+  },
+  {
+    "lessonId": "car-parts-mechanics-4",
+    "lessonName": "Car Parts & Mechanics 4",
+    "unitId": "car-parts-mechanics",
+    "unitName": "Car Parts & Mechanics",
+    "unitOrder": 163,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 726,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": ["Power Steering Fluid", "Gas", "Diesel", "Battery Acid", "Refrigerant"],
+    "targetWordsArabic": ["سائل التوجيه المعزّز", "وقود", "ديزل", "حمض بطارية", "مادة تبريد"],
+    "usage": {
+      "goal": "Use the vocabulary from Car Parts & Mechanics to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use car parts & mechanics vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "opinion paragraph",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Power Steering Fluid", "Gas", "Diesel", "Battery Acid"],
+          "scenario": "The technician checks power steering fluid, gas, diesel, and battery acid before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Power Steering Fluid", "Gas", "Diesel", "Battery Acid"],
+            "expectedAnswer": "Power Steering Fluid"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks power steering fluid, gas, diesel, and battery acid before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": "Refrigerant",
+          "scenario": "The technician checks refrigerant before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": "Refrigerant",
+            "expectedAnswer": "Refrigerant"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks refrigerant before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Car Parts & Mechanics: Opinion Paragraph",
+      "text": "A realistic case involving car parts & mechanics shows how precise vocabulary can influence choices, explanations, and outcomes. The technician checks power steering fluid, gas, diesel, and battery acid before the work continues. Each item or process matters to the practical task. The technician checks refrigerant before the work continues. Each item or process matters to the practical task. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Car Parts & Mechanics. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Power Steering Fluid"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Refrigerant"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Power Steering Fluid"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Tire” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Car Parts & Mechanics: In Context",
+      "idea": "45-70 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Tire, Wheel from car-parts-mechanics-3\n3 lesson(s) back: Engine, Transmission from car-parts-mechanics-1\n7 lesson(s) back: Sofa, Bed Frame from moving-settling-in-3"
+  }
+]

@@ -1,7 +1,7 @@
 import { memo, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { WordImage } from "../shared/WordImage";
-import { BEDROOM_VOCABULARY } from "../data/lessons";
+import { BEDROOM_VOCABULARY } from "../data/courseCatalog";
 import { useModalA11y } from "../shared/useModalA11y";
 import { IconButton } from "../shared/IconButton";
 import { Sparkles, X } from "lucide-react";

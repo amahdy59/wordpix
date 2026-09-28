@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "forest-1",
+    "lessonName": "The Forest 1",
+    "unitId": "forest",
+    "unitName": "The Forest",
+    "unitOrder": 107,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 496,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Oak",
+      "Maple",
+      "Birch",
+      "Pine",
+      "Willow",
+      "Cedar",
+      "Elm",
+      "Redwood",
+      "Beech",
+      "Spruce",
+      "Fern",
+      "Moss",
+      "Mushroom",
+      "Ivy",
+      "Berry Bush"
+    ],
+    "targetWordsArabic": [
+      "كائن أو عنصر طبيعي يُسمّى «واك»",
+      "شجرة يُسمّى «مابلي»",
+      "شجرة يُسمّى «بيرتش»",
+      "كائن أو عنصر طبيعي يُسمّى «بيني»",
+      "شجرة يُسمّى «ويللوو»",
+      "شجرة يُسمّى «كيدار»",
+      "شجرة يُسمّى «يلم»",
+      "شجرة يُسمّى «ريدووود»",
+      "شجرة يُسمّى «بييتش»",
+      "كائن أو عنصر طبيعي يُسمّى «سبروكي»",
+      "سرخس",
+      "طحلب بري",
+      "عضو يُسمّى «موشرووم»",
+      "نبات يُسمّى «يفي»",
+      "شجيرة توت"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Forest to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the forest vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Oak", "Maple", "Birch", "Pine"],
+          "scenario": "The guide or scientist draws attention to oak, maple, birch, and pine. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Oak", "Maple", "Birch", "Pine"],
+            "expectedAnswer": "Oak"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to oak, maple, birch, and pine. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Willow", "Cedar", "Elm", "Redwood"],
+          "scenario": "The group examines the willow, cedar, elm, and redwood and notices differences in shape, color, or growth.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Willow", "Cedar", "Elm", "Redwood"],
+            "expectedAnswer": "Willow"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group examines the willow, cedar, elm, and redwood and notices differences in shape, color, or growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Beech", "Spruce", "Fern", "Moss"],
+          "scenario": "The group examines the beech, spruce, fern, and moss and notices differences in shape, color, or growth.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Beech", "Spruce", "Fern", "Moss"],
+            "expectedAnswer": "Beech"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group examines the beech, spruce, fern, and moss and notices differences in shape, color, or growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Mushroom", "Ivy", "Berry Bush"],
+          "scenario": "The guide or scientist draws attention to mushroom, ivy, and berry bush. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mushroom", "Ivy", "Berry Bush"],
+            "expectedAnswer": "Mushroom"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to mushroom, ivy, and berry bush. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Forest: Travel/Visitor Guide",
+      "text": "A practical situation involving the forest requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to oak, maple, birch, and pine. The group observes the details and connects the words to the natural or scientific setting. The group examines the willow, cedar, elm, and redwood and notices differences in shape, color, or growth. The group examines the beech, spruce, fern, and moss and notices differences in shape, color, or growth. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Forest. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Oak"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Willow"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Beech"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mushroom"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Oak"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Pine"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Photography” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Forest: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Photography, Rock Climbing from camping-site-5\n3 lesson(s) back: Signal Mirror, Trail Marker from camping-site-3\n7 lesson(s) back: Cell Division, DNA from body-systems-3"
+  },
+  {
+    "lessonId": "forest-2",
+    "lessonName": "The Forest 2",
+    "unitId": "forest",
+    "unitName": "The Forest",
+    "unitOrder": 107,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 497,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Wildflower",
+      "Lichen",
+      "Vine",
+      "Acorn",
+      "Pinecone",
+      "Deer",
+      "Squirrel",
+      "Rabbit",
+      "Fox",
+      "Bear",
+      "Owl",
+      "Woodpecker",
+      "Raccoon",
+      "Hedgehog",
+      "Badger"
+    ],
+    "targetWordsArabic": [
+      "زهرة برية",
+      "كائن أو عنصر طبيعي يُسمّى «ليتشين»",
+      "كرمة متسلقة",
+      "شجرة يُسمّى «اكورن»",
+      "شجرة يُسمّى «بينيكوني»",
+      "كائن أو عنصر طبيعي يُسمّى «ديير»",
+      "كائن أو عنصر طبيعي يُسمّى «سكيرريل»",
+      "أرنب",
+      "كائن أو عنصر طبيعي يُسمّى «فوكس»",
+      "كائن أو عنصر طبيعي يُسمّى «بيار»",
+      "بومة",
+      "نقار الخشب",
+      "كائن أو عنصر طبيعي يُسمّى «راككوون»",
+      "كائن أو عنصر طبيعي يُسمّى «هيدجيهوج»",
+      "كائن أو عنصر طبيعي يُسمّى «بادجير»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Forest to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the forest vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Wildflower", "Lichen", "Vine", "Acorn"],
+          "scenario": "The guide or scientist draws attention to wildflower, lichen, vine, and acorn. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Wildflower", "Lichen", "Vine", "Acorn"],
+            "expectedAnswer": "Wildflower"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to wildflower, lichen, vine, and acorn. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Pinecone", "Deer", "Squirrel", "Rabbit"],
+          "scenario": "The guide or scientist draws attention to pinecone, deer, squirrel, and rabbit. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pinecone", "Deer", "Squirrel", "Rabbit"],
+            "expectedAnswer": "Pinecone"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to pinecone, deer, squirrel, and rabbit. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Fox", "Bear", "Owl", "Woodpecker"],
+          "scenario": "The guide points out the fox, bear, owl, and woodpecker and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fox", "Bear", "Owl", "Woodpecker"],
+            "expectedAnswer": "Fox"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the fox, bear, owl, and woodpecker and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Raccoon", "Hedgehog", "Badger"],
+          "scenario": "The guide or scientist draws attention to raccoon, hedgehog, and badger. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Raccoon", "Hedgehog", "Badger"],
+            "expectedAnswer": "Raccoon"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to raccoon, hedgehog, and badger. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Forest: Review",
+      "text": "A practical situation involving the forest requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to wildflower, lichen, vine, and acorn. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to pinecone, deer, squirrel, and rabbit. The group observes the details and connects the words to the natural or scientific setting. The guide points out the fox, bear, owl, and woodpecker and asks the group to notice how the animals move or behave. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Forest. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Wildflower"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pinecone"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fox"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Raccoon"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Wildflower"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Acorn"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Oak” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Forest: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Oak, Maple from forest-1\n3 lesson(s) back: Mountain, Valley from camping-site-4\n7 lesson(s) back: Oil Gland, Melanin from body-systems-4"
+  },
+  {
+    "lessonId": "forest-3",
+    "lessonName": "The Forest 3",
+    "unitId": "forest",
+    "unitName": "The Forest",
+    "unitOrder": 107,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 498,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Butterfly",
+      "Beetle",
+      "Ant",
+      "Firefly",
+      "Dragonfly",
+      "Spider",
+      "Caterpillar",
+      "Ladybug",
+      "Bee",
+      "Moth",
+      "Trail",
+      "Stream",
+      "Clearing",
+      "Log",
+      "Stump"
+    ],
+    "targetWordsArabic": [
+      "فراشة",
+      "خنفساء",
+      "نملة",
+      "يراعة",
+      "يعسوب",
+      "عنكبوت",
+      "يرقة",
+      "دعسوقة",
+      "حشرة يُسمّى «بيي»",
+      "حشرة يُسمّى «موث»",
+      "مسار",
+      "جدول",
+      "فسحة في الغابة",
+      "كائن أو عنصر طبيعي يُسمّى «لوج»",
+      "كائن أو عنصر طبيعي يُسمّى «ستومب»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Forest to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the forest vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Butterfly", "Beetle", "Ant", "Firefly"],
+          "scenario": "The guide or scientist draws attention to butterfly, beetle, ant, and firefly. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Butterfly", "Beetle", "Ant", "Firefly"],
+            "expectedAnswer": "Butterfly"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to butterfly, beetle, ant, and firefly. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Dragonfly", "Spider", "Caterpillar", "Ladybug"],
+          "scenario": "The guide points out the dragonfly, spider, caterpillar, and ladybug and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dragonfly", "Spider", "Caterpillar", "Ladybug"],
+            "expectedAnswer": "Dragonfly"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the dragonfly, spider, caterpillar, and ladybug and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Bee", "Moth", "Trail", "Stream"],
+          "scenario": "The guide or scientist draws attention to bee, moth, trail, and stream. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bee", "Moth", "Trail", "Stream"],
+            "expectedAnswer": "Bee"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to bee, moth, trail, and stream. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Clearing", "Log", "Stump"],
+          "scenario": "The guide or scientist draws attention to clearing, log, and stump. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Clearing", "Log", "Stump"],
+            "expectedAnswer": "Clearing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to clearing, log, and stump. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Forest: Practical Article",
+      "text": "A practical situation involving the forest requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to butterfly, beetle, ant, and firefly. The group observes the details and connects the words to the natural or scientific setting. The guide points out the dragonfly, spider, caterpillar, and ladybug and asks the group to notice how the animals move or behave. The guide or scientist draws attention to bee, moth, trail, and stream. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Forest. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Butterfly"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dragonfly"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bee"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Clearing"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Butterfly"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Firefly"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Wildflower” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Forest: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Wildflower, Lichen from forest-2\n3 lesson(s) back: Photography, Rock Climbing from camping-site-5\n7 lesson(s) back: Tent, Sleeping Bag from camping-site-1"
+  },
+  {
+    "lessonId": "forest-4",
+    "lessonName": "The Forest 4",
+    "unitId": "forest",
+    "unitName": "The Forest",
+    "unitOrder": 107,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 499,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Canopy",
+      "Undergrowth",
+      "Bridge",
+      "Waterfall",
+      "Pond",
+      "Spring Bloom",
+      "Summer Green",
+      "Autumn Leaves",
+      "Winter Snow",
+      "Bird Nest",
+      "Migration",
+      "Hibernation",
+      "Seedling",
+      "Fallen Leaf",
+      "Icicle"
+    ],
+    "targetWordsArabic": [
+      "مظلّة",
+      "شجرة يُسمّى «ونديرجرووث»",
+      "قوس القدم",
+      "شلال",
+      "كائن أو عنصر طبيعي يُسمّى «بوند»",
+      "إزهار الربيع",
+      "خضرة الصيف",
+      "أوراق الخريف",
+      "ثلوج الشتاء",
+      "عش طائر",
+      "هجرة",
+      "كائن أو عنصر طبيعي يُسمّى «هيبيرناتيون»",
+      "نبات يُسمّى «سييدلينج»",
+      "ورقة متساقطة",
+      "سطح يُسمّى «يكيكلي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Forest to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the forest vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Canopy", "Undergrowth", "Bridge", "Waterfall"],
+          "scenario": "The guide or scientist draws attention to canopy, undergrowth, bridge, and waterfall. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Canopy", "Undergrowth", "Bridge", "Waterfall"],
+            "expectedAnswer": "Canopy"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to canopy, undergrowth, bridge, and waterfall. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Pond", "Spring Bloom", "Summer Green", "Autumn Leaves"],
+          "scenario": "The guide or scientist draws attention to pond, spring bloom, summer green, and autumn leaves. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pond", "Spring Bloom", "Summer Green", "Autumn Leaves"],
+            "expectedAnswer": "Pond"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to pond, spring bloom, summer green, and autumn leaves. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Winter Snow", "Bird Nest", "Migration", "Hibernation"],
+          "scenario": "The guide or scientist draws attention to winter snow, bird nest, migration, and hibernation. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Winter Snow", "Bird Nest", "Migration", "Hibernation"],
+            "expectedAnswer": "Winter Snow"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to winter snow, bird nest, migration, and hibernation. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Seedling", "Fallen Leaf", "Icicle"],
+          "scenario": "The guide or scientist draws attention to seedling, fallen leaf, and icicle. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Seedling", "Fallen Leaf", "Icicle"],
+            "expectedAnswer": "Seedling"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to seedling, fallen leaf, and icicle. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Forest: Real-Life Scenario",
+      "text": "A practical situation involving the forest requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to canopy, undergrowth, bridge, and waterfall. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to pond, spring bloom, summer green, and autumn leaves. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to winter snow, bird nest, migration, and hibernation. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Forest. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Canopy"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pond"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Winter Snow"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Seedling"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Canopy"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Waterfall"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Butterfly” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Forest: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Butterfly, Beetle from forest-3\n3 lesson(s) back: Oak, Maple from forest-1\n7 lesson(s) back: Camp Stove, Cooler from camping-site-2"
+  }
+]

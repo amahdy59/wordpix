@@ -1,0 +1,460 @@
+﻿[
+  {
+    "lessonId": "extended-family-1",
+    "lessonName": "Extended Family 1",
+    "unitId": "extended-family",
+    "unitName": "Extended Family",
+    "unitOrder": 69,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 312,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Grandmother",
+      "Grandfather",
+      "Grandma",
+      "Grandpa",
+      "Great-Grandmother",
+      "Great-Grandfather",
+      "Nana",
+      "Papa",
+      "Granny",
+      "Grandparent",
+      "Aunt",
+      "Uncle",
+      "Cousin",
+      "First Cousin",
+      "Second Cousin"
+    ],
+    "targetWordsArabic": [
+      "جدة",
+      "جد",
+      "مصطلح مرتبط بالموضوع يُسمّى «جراندما»",
+      "مصطلح مرتبط بالموضوع يُسمّى «جراندبا»",
+      "شخص يُسمّى «جريات-جراندموثير»",
+      "شخص يُسمّى «جريات-جراندفاثير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «نانا»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بابا»",
+      "مصطلح مرتبط بالموضوع يُسمّى «جرانني»",
+      "مصطلح مرتبط بالموضوع يُسمّى «جراندبارينت»",
+      "عمة أو خالة",
+      "عم أو خال",
+      "ابن أو ابنة العم أو الخال",
+      "ابن أو ابنة العم أو الخال أول",
+      "ابن أو ابنة العم أو الخال الثاني"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Extended Family to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key extended family vocabulary in connected everyday context.",
+      "textType": "email",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Grandmother", "Grandfather", "Grandma"],
+          "scenario": "In the social situation, the people experience or discuss grandmother, grandfather, and grandma. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Grandmother", "Grandfather", "Grandma"],
+            "expectedAnswer": "Grandmother"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss grandmother, grandfather, and grandma. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Grandpa", "Great-Grandmother", "Great-Grandfather"],
+          "scenario": "In the social situation, the people experience or discuss grandpa, great-grandmother, and great-grandfather. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Grandpa", "Great-Grandmother", "Great-Grandfather"],
+            "expectedAnswer": "Grandpa"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss grandpa, great-grandmother, and great-grandfather. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Nana", "Papa", "Granny"],
+          "scenario": "In the social situation, the people experience or discuss nana, papa, and granny. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Nana", "Papa", "Granny"],
+            "expectedAnswer": "Nana"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss nana, papa, and granny. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Grandparent", "Aunt", "Uncle"],
+          "scenario": "In the social situation, the people experience or discuss grandparent, aunt, and uncle. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Grandparent", "Aunt", "Uncle"],
+            "expectedAnswer": "Grandparent"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss grandparent, aunt, and uncle. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Cousin", "First Cousin", "Second Cousin"],
+          "scenario": "In the social situation, the people experience or discuss cousin, first cousin, and second cousin. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Cousin", "First Cousin", "Second Cousin"],
+            "expectedAnswer": "Cousin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss cousin, first cousin, and second cousin. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Extended Family: Email",
+      "text": "Omar has an everyday task connected to extended family. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss grandmother, grandfather, and grandma. The context makes the relationship between the words clear. In the social situation, the people experience or discuss grandpa, great-grandmother, and great-grandfather. The context makes the relationship between the words clear. In the social situation, the people experience or discuss nana, papa, and granny. The context makes the relationship between the words clear. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about Extended Family. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Grandmother"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Grandpa"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Nana"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Grandparent"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cousin"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Grandmother"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Grandpa"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Climbing Shoes” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Extended Family: In Context",
+      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Climbing Shoes, Cycling Shoes from footwear-4\n3 lesson(s) back: Pumps, Stilettos from footwear-2\n7 lesson(s) back: Bangle, Watch from accessories-jewelry-2"
+  },
+  {
+    "lessonId": "extended-family-2",
+    "lessonName": "Extended Family 2",
+    "unitId": "extended-family",
+    "unitName": "Extended Family",
+    "unitOrder": 69,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 313,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Great-Aunt",
+      "Great-Uncle",
+      "Niece",
+      "Nephew",
+      "Cousin-in-Law",
+      "Mother-in-Law",
+      "Father-in-Law",
+      "Sister-in-Law",
+      "Brother-in-Law",
+      "Son-in-Law",
+      "Daughter-in-Law",
+      "In-Laws",
+      "Spouse's Family",
+      "Extended In-Laws",
+      "Family-in-Law"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «جريات-اونت»",
+      "شجرة يُسمّى «جريات-ونكلي»",
+      "ابنة الأخ أو الأخت",
+      "ابن الأخ أو الأخت",
+      "مصطلح مرتبط بالموضوع يُسمّى «كووسين-ين-لاو»",
+      "مصطلح مرتبط بالموضوع يُسمّى «موثير-ين-لاو»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فاثير-ين-لاو»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سيستير-ين-لاو»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بروثير-ين-لاو»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سون-ين-لاو»",
+      "شخص يُسمّى «داوغتير-ين-لاو»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ين-لاوس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سبووسي'س فاميلي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يكستينديد ين-لاوس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فاميلي-ين-لاو»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Extended Family to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key extended family vocabulary in connected everyday context.",
+      "textType": "personal message",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Great-Aunt", "Great-Uncle", "Niece"],
+          "scenario": "In the social situation, the people experience or discuss great-aunt, great-uncle, and niece. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Great-Aunt", "Great-Uncle", "Niece"],
+            "expectedAnswer": "Great-Aunt"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss great-aunt, great-uncle, and niece. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Nephew", "Cousin-in-Law", "Mother-in-Law"],
+          "scenario": "In the social situation, the people experience or discuss nephew, cousin-in-law, and mother-in-law. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Nephew", "Cousin-in-Law", "Mother-in-Law"],
+            "expectedAnswer": "Nephew"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss nephew, cousin-in-law, and mother-in-law. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Father-in-Law", "Sister-in-Law", "Brother-in-Law"],
+          "scenario": "In the social situation, the people experience or discuss father-in-law, sister-in-law, and brother-in-law. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Father-in-Law", "Sister-in-Law", "Brother-in-Law"],
+            "expectedAnswer": "Father-in-Law"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss father-in-law, sister-in-law, and brother-in-law. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Son-in-Law", "Daughter-in-Law", "In-Laws"],
+          "scenario": "In the social situation, the people experience or discuss son-in-law, daughter-in-law, and in-laws. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Son-in-Law", "Daughter-in-Law", "In-Laws"],
+            "expectedAnswer": "Son-in-Law"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss son-in-law, daughter-in-law, and in-laws. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Spouse's Family", "Extended In-Laws", "Family-in-Law"],
+          "scenario": "In the social situation, the people experience or discuss spouse's family, extended in-laws, and family-in-law. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Spouse's Family", "Extended In-Laws", "Family-in-Law"],
+            "expectedAnswer": "Spouse's Family"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss spouse's family, extended in-laws, and family-in-law. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Extended Family: Personal Message",
+      "text": "Omar has an everyday task connected to extended family. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss great-aunt, great-uncle, and niece. The context makes the relationship between the words clear. In the social situation, the people experience or discuss nephew, cousin-in-law, and mother-in-law. The context makes the relationship between the words clear. In the social situation, the people experience or discuss father-in-law, sister-in-law, and brother-in-law. The context makes the relationship between the words clear. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about Extended Family. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Great-Aunt"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Nephew"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Father-in-Law"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Son-in-Law"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Spouse's Family"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Great-Aunt"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Nephew"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Grandmother” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Extended Family: In Context",
+      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Grandmother, Grandfather from extended-family-1\n3 lesson(s) back: Sandals, Flip-Flops from footwear-3\n7 lesson(s) back: Handbag, Backpack from accessories-jewelry-3"
+  },
+  {
+    "lessonId": "extended-family-3",
+    "lessonName": "Extended Family 3",
+    "unitId": "extended-family",
+    "unitName": "Extended Family",
+    "unitOrder": 69,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 314,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Reunion",
+      "Holiday Dinner",
+      "Thanksgiving",
+      "Christmas",
+      "Easter",
+      "Birthday Celebration",
+      "Anniversary",
+      "Barbecue",
+      "Picnic",
+      "Family Wedding"
+    ],
+    "targetWordsArabic": [
+      "جزء يُسمّى «ريونيون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «هوليداي ديننير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ثانكسجيفينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تشريستماس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ياستير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيرثداي كيليبراتيون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «اننيفيرساري»",
+      "يشوي على الشواية",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيكنيك»",
+      "زفاف عائلة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Extended Family to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key extended family vocabulary in connected everyday context.",
+      "textType": "short dialogue",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Reunion", "Holiday Dinner", "Thanksgiving"],
+          "scenario": "In the social situation, the people experience or discuss reunion, holiday dinner, and thanksgiving. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Reunion", "Holiday Dinner", "Thanksgiving"],
+            "expectedAnswer": "Reunion"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss reunion, holiday dinner, and thanksgiving. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Christmas", "Easter", "Birthday Celebration"],
+          "scenario": "In the social situation, the people experience or discuss christmas, easter, and birthday celebration. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Christmas", "Easter", "Birthday Celebration"],
+            "expectedAnswer": "Christmas"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss christmas, easter, and birthday celebration. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Anniversary", "Barbecue", "Picnic"],
+          "scenario": "In the social situation, the people experience or discuss anniversary, barbecue, and picnic. The context makes the relationship between the words clear.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Anniversary", "Barbecue", "Picnic"],
+            "expectedAnswer": "Anniversary"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the social situation, the people experience or discuss anniversary, barbecue, and picnic. The context makes the relationship between the words clear. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": "Family Wedding",
+          "scenario": "The group talks about the family wedding, comparing what usually happens at each event.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": "Family Wedding",
+            "expectedAnswer": "Family Wedding"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group talks about the family wedding, comparing what usually happens at each event. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Extended Family: Short Dialogue",
+      "text": "Omar has an everyday task connected to extended family. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss reunion, holiday dinner, and thanksgiving. The context makes the relationship between the words clear. In the social situation, the people experience or discuss christmas, easter, and birthday celebration. The context makes the relationship between the words clear. In the social situation, the people experience or discuss anniversary, barbecue, and picnic. The context makes the relationship between the words clear. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about Extended Family. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Reunion"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Christmas"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Anniversary"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Family Wedding"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Reunion"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Christmas"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Great-Aunt” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Extended Family: In Context",
+      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Great-Aunt, Great-Uncle from extended-family-2\n3 lesson(s) back: Climbing Shoes, Cycling Shoes from footwear-4\n7 lesson(s) back: Umbrella, Tie Pin from accessories-jewelry-4"
+  }
+]

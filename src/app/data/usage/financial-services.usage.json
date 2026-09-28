@@ -1,0 +1,427 @@
+﻿[
+  {
+    "lessonId": "financial-services-1",
+    "lessonName": "Financial Services 1",
+    "unitId": "financial-services",
+    "unitName": "Financial Services",
+    "unitOrder": 151,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 687,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Mortgage",
+      "Auto Loan",
+      "Personal Loan",
+      "Student Loan",
+      "Line of Credit",
+      "Credit Score",
+      "Interest Rate",
+      "Principal",
+      "Collateral",
+      "Co-Signer",
+      "Health Insurance",
+      "Car Insurance",
+      "Life Insurance",
+      "Home Insurance",
+      "Travel Insurance"
+    ],
+    "targetWordsArabic": [
+      "رهن عقاري",
+      "مصطلح مرتبط بالموضوع يُسمّى «اوتو لوان»",
+      "شخص يُسمّى «بيرسونال لوان»",
+      "قرض طلابي",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليني وف كريديت»",
+      "درجة ائتمانية",
+      "مصطلح مرتبط بالموضوع يُسمّى «ينتيريست راتي»",
+      "أصل القرض",
+      "ضمان",
+      "ضامن مشارك في التوقيع",
+      "مصطلح مرتبط بالموضوع يُسمّى «هيالث ينسورانكي»",
+      "تأمين سيارة",
+      "تأمين على الحياة",
+      "تأمين على المنزل",
+      "تأمين سفر"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Financial Services to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use financial services vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Mortgage", "Auto Loan", "Personal Loan", "Student Loan"],
+          "scenario": "During the financial task, the customer and staff member work with mortgage, auto loan, personal loan, and student loan. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mortgage", "Auto Loan", "Personal Loan", "Student Loan"],
+            "expectedAnswer": "Mortgage"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with mortgage, auto loan, personal loan, and student loan. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Line of Credit", "Credit Score", "Interest Rate", "Principal"],
+          "scenario": "During the financial task, the customer and staff member work with line of credit, credit score, interest rate, and principal. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Line of Credit", "Credit Score", "Interest Rate", "Principal"],
+            "expectedAnswer": "Line of Credit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with line of credit, credit score, interest rate, and principal. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Collateral", "Co-Signer", "Health Insurance", "Car Insurance"],
+          "scenario": "During the financial task, the customer and staff member work with collateral, co-signer, health insurance, and car insurance. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Collateral", "Co-Signer", "Health Insurance", "Car Insurance"],
+            "expectedAnswer": "Collateral"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with collateral, co-signer, health insurance, and car insurance. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Life Insurance", "Home Insurance", "Travel Insurance"],
+          "scenario": "During the financial task, the customer and staff member work with life insurance, home insurance, and travel insurance. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Life Insurance", "Home Insurance", "Travel Insurance"],
+            "expectedAnswer": "Life Insurance"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with life insurance, home insurance, and travel insurance. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Financial Services: Case Note",
+      "text": "A realistic case involving financial services shows how precise vocabulary can influence choices, explanations, and outcomes. During the financial task, the customer and staff member work with mortgage, auto loan, personal loan, and student loan. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with line of credit, credit score, interest rate, and principal. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with collateral, co-signer, health insurance, and car insurance. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with life insurance, home insurance, and travel insurance. Each term affects a different part of the transaction or decision. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Financial Services. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mortgage"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Line of Credit"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Collateral"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Life Insurance"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Mortgage"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Teller” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Financial Services: In Context",
+      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Teller, Bank Manager from bank-3\n3 lesson(s) back: Lobby, Teller Window from bank-1\n7 lesson(s) back: Batch Processing, Automation from freelancing-remote-work-4"
+  },
+  {
+    "lessonId": "financial-services-2",
+    "lessonName": "Financial Services 2",
+    "unitId": "financial-services",
+    "unitName": "Financial Services",
+    "unitOrder": 151,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 688,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Premium",
+      "Deductible",
+      "Coverage",
+      "Claim",
+      "Policy",
+      "Stock",
+      "Bond",
+      "Mutual Fund",
+      "ETF",
+      "Portfolio",
+      "Dividend",
+      "Capital Gain",
+      "Risk",
+      "Return",
+      "Diversification"
+    ],
+    "targetWordsArabic": [
+      "قسط تأمين",
+      "مبلغ تحمّل",
+      "تغطية",
+      "مطالبة",
+      "بوليصة",
+      "سهم",
+      "سند",
+      "مصطلح مرتبط بالموضوع يُسمّى «موتوال فوند»",
+      "صندوق متداول",
+      "محفظة استثمارية",
+      "توزيعات أرباح",
+      "مصطلح مرتبط بالموضوع يُسمّى «كابيتال جاين»",
+      "مخاطر",
+      "عائد",
+      "تنويع"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Financial Services to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use financial services vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Premium", "Deductible", "Coverage", "Claim"],
+          "scenario": "During the financial task, the customer and staff member work with premium, deductible, coverage, and claim. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Premium", "Deductible", "Coverage", "Claim"],
+            "expectedAnswer": "Premium"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with premium, deductible, coverage, and claim. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Policy", "Stock", "Bond", "Mutual Fund"],
+          "scenario": "During the financial task, the customer and staff member work with policy, stock, bond, and mutual fund. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Policy", "Stock", "Bond", "Mutual Fund"],
+            "expectedAnswer": "Policy"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with policy, stock, bond, and mutual fund. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["ETF", "Portfolio", "Dividend", "Capital Gain"],
+          "scenario": "During the financial task, the customer and staff member work with etf, portfolio, dividend, and capital gain. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["ETF", "Portfolio", "Dividend", "Capital Gain"],
+            "expectedAnswer": "ETF"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with etf, portfolio, dividend, and capital gain. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Risk", "Return", "Diversification"],
+          "scenario": "During the financial task, the customer and staff member work with risk, return, and diversification. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Risk", "Return", "Diversification"],
+            "expectedAnswer": "Risk"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with risk, return, and diversification. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Financial Services: Report Excerpt",
+      "text": "A realistic case involving financial services shows how precise vocabulary can influence choices, explanations, and outcomes. During the financial task, the customer and staff member work with premium, deductible, coverage, and claim. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with policy, stock, bond, and mutual fund. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with etf, portfolio, dividend, and capital gain. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with risk, return, and diversification. Each term affects a different part of the transaction or decision. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Financial Services. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Premium"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Policy"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "ETF"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Risk"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Premium"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Mortgage” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Financial Services: In Context",
+      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Mortgage, Auto Loan from financial-services-1\n3 lesson(s) back: Money Market, Retirement Account from bank-2\n7 lesson(s) back: Suit, Dress Shirt from formal-business-wear-1"
+  },
+  {
+    "lessonId": "financial-services-3",
+    "lessonName": "Financial Services 3",
+    "unitId": "financial-services",
+    "unitName": "Financial Services",
+    "unitOrder": 151,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 689,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "401k",
+      "IRA",
+      "Pension",
+      "Social Security",
+      "Annuity",
+      "Retirement Fund",
+      "Compound Interest",
+      "Contribution",
+      "Vesting",
+      "Beneficiary"
+    ],
+    "targetWordsArabic": [
+      "خطة تقاعد 401(k)",
+      "حساب تقاعد فردي",
+      "معاش تقاعدي",
+      "أمن اجتماعي",
+      "دفعات سنوية",
+      "شخص يُسمّى «ريتيريمينت فوند»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كومبووند ينتيريست»",
+      "مساهمة",
+      "استحقاق تدريجي للحقوق المالية",
+      "مستفيد"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Financial Services to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use financial services vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["401k", "IRA", "Pension", "Social Security"],
+          "scenario": "During the financial task, the customer and staff member work with 401k, ira, pension, and social security. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["401k", "IRA", "Pension", "Social Security"],
+            "expectedAnswer": "401k"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with 401k, ira, pension, and social security. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Annuity", "Retirement Fund", "Compound Interest", "Contribution"],
+          "scenario": "During the financial task, the customer and staff member work with annuity, retirement fund, compound interest, and contribution. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Annuity", "Retirement Fund", "Compound Interest", "Contribution"],
+            "expectedAnswer": "Annuity"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with annuity, retirement fund, compound interest, and contribution. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Vesting", "Beneficiary"],
+          "scenario": "During the financial task, the customer and staff member work with vesting and beneficiary. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Vesting", "Beneficiary"],
+            "expectedAnswer": "Vesting"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with vesting and beneficiary. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Financial Services: Workplace/Academic Scenario",
+      "text": "A realistic case involving financial services shows how precise vocabulary can influence choices, explanations, and outcomes. During the financial task, the customer and staff member work with 401k, ira, pension, and social security. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with annuity, retirement fund, compound interest, and contribution. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with vesting and beneficiary. Each term affects a different part of the transaction or decision. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Financial Services. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "401k"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Annuity"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Vesting"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "401k"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Premium” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Financial Services: In Context",
+      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Premium, Deductible from financial-services-2\n3 lesson(s) back: Teller, Bank Manager from bank-3\n7 lesson(s) back: Pantsuit, Wrap Dress from formal-business-wear-2"
+  }
+]

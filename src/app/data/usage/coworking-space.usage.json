@@ -1,0 +1,427 @@
+﻿[
+  {
+    "lessonId": "coworking-space-1",
+    "lessonName": "The Coworking Space 1",
+    "unitId": "coworking-space",
+    "unitName": "The Coworking Space",
+    "unitOrder": 146,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 671,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Hot Desk",
+      "Dedicated Desk",
+      "Private Office",
+      "Phone Booth",
+      "Meeting Room",
+      "Lounge Area",
+      "Kitchen",
+      "Rooftop Terrace",
+      "Event Space",
+      "Podcast Room",
+      "High-Speed WiFi",
+      "Printer",
+      "Scanner",
+      "Coffee Machine",
+      "Snack Bar"
+    ],
+    "targetWordsArabic": [
+      "مكتب مشترك غير مخصّص",
+      "مكتب مخصّص",
+      "شخص يُسمّى «بريفاتي وففيكي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فوني بووث»",
+      "غرفة اجتماع",
+      "مبنى يُسمّى «لوونجي اريا»",
+      "-",
+      "شرفة على السطح",
+      "مساحة للفعاليات",
+      "غرفة تسجيل بودكاست",
+      "واي فاي عالي السرعة",
+      "طابعة",
+      "ماسح ضوئي",
+      "ماكينة قهوة",
+      "مشروب يُسمّى «سناك بار»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Coworking Space to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the coworking space vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Hot Desk", "Dedicated Desk", "Private Office", "Phone Booth"],
+          "scenario": "During the visit, the patient and medical team deal with hot desk, dedicated desk, private office, and phone booth. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hot Desk", "Dedicated Desk", "Private Office", "Phone Booth"],
+            "expectedAnswer": "Hot Desk"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with hot desk, dedicated desk, private office, and phone booth. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Meeting Room", "Lounge Area", "Kitchen", "Rooftop Terrace"],
+          "scenario": "During the visit, the patient and medical team deal with meeting room, lounge area, kitchen, and rooftop terrace. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Meeting Room", "Lounge Area", "Kitchen", "Rooftop Terrace"],
+            "expectedAnswer": "Meeting Room"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with meeting room, lounge area, kitchen, and rooftop terrace. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Event Space", "Podcast Room", "High-Speed WiFi", "Printer"],
+          "scenario": "During the visit, the patient and medical team deal with event space, podcast room, high-speed wifi, and printer. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Event Space", "Podcast Room", "High-Speed WiFi", "Printer"],
+            "expectedAnswer": "Event Space"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with event space, podcast room, high-speed wifi, and printer. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Scanner", "Coffee Machine", "Snack Bar"],
+          "scenario": "During the visit, the patient and medical team deal with scanner, coffee machine, and snack bar. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Scanner", "Coffee Machine", "Snack Bar"],
+            "expectedAnswer": "Scanner"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with scanner, coffee machine, and snack bar. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Coworking Space: Report Excerpt",
+      "text": "A realistic case involving the coworking space shows how precise vocabulary can influence choices, explanations, and outcomes. During the visit, the patient and medical team deal with hot desk, dedicated desk, private office, and phone booth. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with meeting room, lounge area, kitchen, and rooftop terrace. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with event space, podcast room, high-speed wifi, and printer. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with scanner, coffee machine, and snack bar. Each term belongs to a different part of the care process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Coworking Space. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hot Desk"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Meeting Room"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Event Space"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Scanner"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Hot Desk"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Follow Up” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Coworking Space: In Context",
+      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Follow Up, Touch Base from business-communication-3\n3 lesson(s) back: Email, Memo from business-communication-1\n7 lesson(s) back: Pen, Pencil from office-supplies-1"
+  },
+  {
+    "lessonId": "coworking-space-2",
+    "lessonName": "The Coworking Space 2",
+    "unitId": "coworking-space",
+    "unitName": "The Coworking Space",
+    "unitOrder": 146,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 672,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Bike Storage",
+      "Shower",
+      "Locker",
+      "Mail Service",
+      "Reception",
+      "Day Pass",
+      "Monthly Plan",
+      "Annual Plan",
+      "Flex Plan",
+      "Team Plan",
+      "Virtual Office",
+      "Meeting Room Credits",
+      "Guest Pass",
+      "Community Access",
+      "24/7 Access"
+    ],
+    "targetWordsArabic": [
+      "مكان لحفظ الدراجات",
+      "دُش",
+      "خزانة",
+      "خدمة بريدية",
+      "استقبال",
+      "تصريح دخول ليوم واحد",
+      "خطة شهرية",
+      "مادة يُسمّى «اننوال بلان»",
+      "خطة مرنة",
+      "خطة للفريق",
+      "مكتب افتراضي",
+      "رصيد لاستخدام غرف الاجتماعات",
+      "تصريح للضيف",
+      "إمكانية الوصول إلى مجتمع الأعضاء",
+      "مكان يُسمّى «24/7 اككيسس»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Coworking Space to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the coworking space vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bike Storage", "Shower", "Locker", "Mail Service"],
+          "scenario": "During the visit, the patient and medical team deal with bike storage, shower, locker, and mail service. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bike Storage", "Shower", "Locker", "Mail Service"],
+            "expectedAnswer": "Bike Storage"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with bike storage, shower, locker, and mail service. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Reception", "Day Pass", "Monthly Plan", "Annual Plan"],
+          "scenario": "During the visit, the patient and medical team deal with reception, day pass, monthly plan, and annual plan. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Reception", "Day Pass", "Monthly Plan", "Annual Plan"],
+            "expectedAnswer": "Reception"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with reception, day pass, monthly plan, and annual plan. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Flex Plan", "Team Plan", "Virtual Office", "Meeting Room Credits"],
+          "scenario": "During the visit, the patient and medical team deal with flex plan, team plan, virtual office, and meeting room credits. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Flex Plan", "Team Plan", "Virtual Office", "Meeting Room Credits"],
+            "expectedAnswer": "Flex Plan"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with flex plan, team plan, virtual office, and meeting room credits. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Guest Pass", "Community Access", "24/7 Access"],
+          "scenario": "During the visit, the patient and medical team deal with guest pass, community access, and 24/7 access. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Guest Pass", "Community Access", "24/7 Access"],
+            "expectedAnswer": "Guest Pass"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with guest pass, community access, and 24/7 access. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Coworking Space: Case Note",
+      "text": "A realistic case involving the coworking space shows how precise vocabulary can influence choices, explanations, and outcomes. During the visit, the patient and medical team deal with bike storage, shower, locker, and mail service. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with reception, day pass, monthly plan, and annual plan. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with flex plan, team plan, virtual office, and meeting room credits. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with guest pass, community access, and 24/7 access. Each term belongs to a different part of the care process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Coworking Space. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bike Storage"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Reception"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Flex Plan"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Guest Pass"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Bike Storage"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Hot Desk” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Coworking Space: In Context",
+      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Hot Desk, Dedicated Desk from coworking-space-1\n3 lesson(s) back: KPI, ROI from business-communication-2\n7 lesson(s) back: Envelope, Folder from office-supplies-2"
+  },
+  {
+    "lessonId": "coworking-space-3",
+    "lessonName": "The Coworking Space 3",
+    "unitId": "coworking-space",
+    "unitName": "The Coworking Space",
+    "unitOrder": 146,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 673,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Networking Event",
+      "Workshop",
+      "Lunch & Learn",
+      "Happy Hour",
+      "Pitch Night",
+      "Demo Day",
+      "Mentorship",
+      "Slack Channel",
+      "Community Manager",
+      "Member Directory"
+    ],
+    "targetWordsArabic": [
+      "فعالية للتواصل المهني",
+      "ورشة",
+      "جلسة تعلّم وقت الغداء",
+      "مشروب يُسمّى «هاببي هوور»",
+      "ليلة عروض تقديمية",
+      "يوم العروض التجريبية",
+      "إرشاد مهني",
+      "قناة على سلاك",
+      "مدير مجتمع",
+      "دليل الأعضاء"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Coworking Space to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the coworking space vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "review",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Networking Event", "Workshop", "Lunch & Learn", "Happy Hour"],
+          "scenario": "During the visit, the patient and medical team deal with networking event, workshop, lunch & learn, and happy hour. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Networking Event", "Workshop", "Lunch & Learn", "Happy Hour"],
+            "expectedAnswer": "Networking Event"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with networking event, workshop, lunch & learn, and happy hour. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Pitch Night", "Demo Day", "Mentorship", "Slack Channel"],
+          "scenario": "During the visit, the patient and medical team deal with pitch night, demo day, mentorship, and slack channel. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pitch Night", "Demo Day", "Mentorship", "Slack Channel"],
+            "expectedAnswer": "Pitch Night"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with pitch night, demo day, mentorship, and slack channel. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Community Manager", "Member Directory"],
+          "scenario": "During the visit, the patient and medical team deal with community manager and member directory. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Community Manager", "Member Directory"],
+            "expectedAnswer": "Community Manager"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with community manager and member directory. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Coworking Space: Review",
+      "text": "A realistic case involving the coworking space shows how precise vocabulary can influence choices, explanations, and outcomes. During the visit, the patient and medical team deal with networking event, workshop, lunch & learn, and happy hour. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with pitch night, demo day, mentorship, and slack channel. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with community manager and member directory. Each term belongs to a different part of the care process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Coworking Space. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Networking Event"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pitch Night"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Community Manager"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Networking Event"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Bike Storage” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Coworking Space: In Context",
+      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Bike Storage, Shower from coworking-space-2\n3 lesson(s) back: Follow Up, Touch Base from business-communication-3\n7 lesson(s) back: Desk Organizer, Pencil Cup from office-supplies-3"
+  }
+]

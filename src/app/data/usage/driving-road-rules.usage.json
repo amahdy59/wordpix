@@ -1,0 +1,408 @@
+﻿[
+  {
+    "lessonId": "driving-road-rules-1",
+    "lessonName": "Driving & Road Rules 1",
+    "unitId": "driving-road-rules",
+    "unitName": "Driving & Road Rules",
+    "unitOrder": 165,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 730,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Stop Sign",
+      "Yield Sign",
+      "Speed Limit",
+      "One Way",
+      "No Parking",
+      "Pedestrian Crossing",
+      "School Zone",
+      "Construction Zone",
+      "Merge",
+      "Exit Sign",
+      "Lane",
+      "Shoulder",
+      "Median",
+      "Curb",
+      "Sidewalk"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «ستوب سيجن»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يييلد سيجن»",
+      "مصطلح قانوني يُسمّى «سبييد ليميت»",
+      "اتجاه واحد",
+      "ممنوع الوقوف",
+      "سطح يُسمّى «بيديستريان كروسسينج»",
+      "منطقة مدرسة",
+      "منطقة أعمال طرق",
+      "مصطلح مرتبط بالموضوع يُسمّى «ميرجي»",
+      "لافتة مخرج",
+      "مصطلح مرتبط بالموضوع يُسمّى «لاني»",
+      "مصطلح مرتبط بالموضوع يُسمّى «شوولدير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ميديان»",
+      "رصيف مرتفع",
+      "منطقة يُسمّى «سيديوالك»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Driving & Road Rules to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use driving & road rules vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Stop Sign", "Yield Sign", "Speed Limit", "One Way"],
+          "scenario": "The traveler moves through the journey using or noticing stop sign, yield sign, speed limit, and one way. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Stop Sign", "Yield Sign", "Speed Limit", "One Way"],
+            "expectedAnswer": "Stop Sign"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing stop sign, yield sign, speed limit, and one way. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["No Parking", "Pedestrian Crossing", "School Zone", "Construction Zone"],
+          "scenario": "The traveler moves through the journey using or noticing no parking, pedestrian crossing, school zone, and construction zone. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["No Parking", "Pedestrian Crossing", "School Zone", "Construction Zone"],
+            "expectedAnswer": "No Parking"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing no parking, pedestrian crossing, school zone, and construction zone. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Merge", "Exit Sign", "Lane", "Shoulder"],
+          "scenario": "The traveler moves through the journey using or noticing merge, exit sign, lane, and shoulder. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Merge", "Exit Sign", "Lane", "Shoulder"],
+            "expectedAnswer": "Merge"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing merge, exit sign, lane, and shoulder. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Median", "Curb", "Sidewalk"],
+          "scenario": "The traveler moves through the journey using or noticing median, curb, and sidewalk. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Median", "Curb", "Sidewalk"],
+            "expectedAnswer": "Median"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing median, curb, and sidewalk. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Driving & Road Rules: Report Excerpt",
+      "text": "A realistic case involving driving & road rules shows how precise vocabulary can influence choices, explanations, and outcomes. The traveler moves through the journey using or noticing stop sign, yield sign, speed limit, and one way. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing no parking, pedestrian crossing, school zone, and construction zone. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing merge, exit sign, lane, and shoulder. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing median, curb, and sidewalk. Each term marks a different part of the travel process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Driving & Road Rules. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stop Sign"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "No Parking"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Merge"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Median"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Stop Sign"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Sales Associate” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Driving & Road Rules: In Context",
+      "idea": "45-70 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Sales Associate, Finance Manager from auto-dealership-3\n3 lesson(s) back: Showroom, Lot from auto-dealership-1\n7 lesson(s) back: Engine, Transmission from car-parts-mechanics-1"
+  },
+  {
+    "lessonId": "driving-road-rules-2",
+    "lessonName": "Driving & Road Rules 2",
+    "unitId": "driving-road-rules",
+    "unitName": "Driving & Road Rules",
+    "unitOrder": 165,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 731,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Crosswalk",
+      "Traffic Light",
+      "Roundabout",
+      "Overpass",
+      "Underpass",
+      "Accelerate",
+      "Brake",
+      "Steer",
+      "Signal",
+      "Overtake",
+      "Park",
+      "Reverse",
+      "U-Turn",
+      "Yield",
+      "DUI"
+    ],
+    "targetWordsArabic": [
+      "مكان يُسمّى «كروسسوالك»",
+      "لون يُسمّى «تراففيك ليغت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «رووندابووت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «وفيرباسس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ونديرباسس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «اككيليراتي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «براكي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستيير»",
+      "إشارة",
+      "مصطلح مرتبط بالموضوع يُسمّى «وفيرتاكي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بارك»",
+      "مركبة يُسمّى «ريفيرسي»",
+      "مركبة يُسمّى «و-تورن»",
+      "غرفة يُسمّى «يييلد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «دوي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Driving & Road Rules to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use driving & road rules vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Crosswalk", "Traffic Light", "Roundabout", "Overpass"],
+          "scenario": "The traveler moves through the journey using or noticing crosswalk, traffic light, roundabout, and overpass. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crosswalk", "Traffic Light", "Roundabout", "Overpass"],
+            "expectedAnswer": "Crosswalk"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing crosswalk, traffic light, roundabout, and overpass. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Underpass", "Accelerate", "Brake", "Steer"],
+          "scenario": "The traveler moves through the journey using or noticing underpass, accelerate, brake, and steer. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Underpass", "Accelerate", "Brake", "Steer"],
+            "expectedAnswer": "Underpass"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing underpass, accelerate, brake, and steer. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Signal", "Overtake", "Park", "Reverse"],
+          "scenario": "The traveler moves through the journey using or noticing signal, overtake, park, and reverse. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Signal", "Overtake", "Park", "Reverse"],
+            "expectedAnswer": "Signal"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing signal, overtake, park, and reverse. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["U-Turn", "Yield", "DUI"],
+          "scenario": "The traveler moves through the journey using or noticing u-turn, yield, and dui. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["U-Turn", "Yield", "DUI"],
+            "expectedAnswer": "U-Turn"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing u-turn, yield, and dui. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Driving & Road Rules: Case Note",
+      "text": "A realistic case involving driving & road rules shows how precise vocabulary can influence choices, explanations, and outcomes. The traveler moves through the journey using or noticing crosswalk, traffic light, roundabout, and overpass. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing underpass, accelerate, brake, and steer. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing signal, overtake, park, and reverse. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing u-turn, yield, and dui. Each term marks a different part of the travel process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Driving & Road Rules. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crosswalk"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Underpass"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Signal"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "U-Turn"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Crosswalk"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Stop Sign” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Driving & Road Rules: In Context",
+      "idea": "45-70 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Stop Sign, Yield Sign from driving-road-rules-1\n3 lesson(s) back: Monthly Payment, MSRP from auto-dealership-2\n7 lesson(s) back: Roof, Windshield from car-parts-mechanics-2"
+  },
+  {
+    "lessonId": "driving-road-rules-3",
+    "lessonName": "Driving & Road Rules 3",
+    "unitId": "driving-road-rules",
+    "unitName": "Driving & Road Rules",
+    "unitOrder": 165,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 732,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Seat Belt Law",
+      "Right of Way",
+      "Blind Spot",
+      "Defensive Driving",
+      "Road Rage",
+      "Hit and Run",
+      "Insurance Claim",
+      "Traffic Ticket"
+    ],
+    "targetWordsArabic": [
+      "قانون حزام الأمان",
+      "حق الأولوية",
+      "شخص يُسمّى «بليند سبوت»",
+      "القيادة الدفاعية",
+      "مصطلح مرتبط بالموضوع يُسمّى «رواد راجي»",
+      "حادث فرار بعد الاصطدام",
+      "مطالبة تأمين",
+      "مخالفة مرورية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Driving & Road Rules to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use driving & road rules vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "review",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Seat Belt Law", "Right of Way", "Blind Spot", "Defensive Driving"],
+          "scenario": "The traveler moves through the journey using or noticing seat belt law, right of way, blind spot, and defensive driving. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Seat Belt Law", "Right of Way", "Blind Spot", "Defensive Driving"],
+            "expectedAnswer": "Seat Belt Law"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing seat belt law, right of way, blind spot, and defensive driving. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Road Rage", "Hit and Run", "Insurance Claim", "Traffic Ticket"],
+          "scenario": "The traveler moves through the journey using or noticing road rage, hit and run, insurance claim, and traffic ticket. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Road Rage", "Hit and Run", "Insurance Claim", "Traffic Ticket"],
+            "expectedAnswer": "Road Rage"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing road rage, hit and run, insurance claim, and traffic ticket. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Driving & Road Rules: Review",
+      "text": "A realistic case involving driving & road rules shows how precise vocabulary can influence choices, explanations, and outcomes. The traveler moves through the journey using or noticing seat belt law, right of way, blind spot, and defensive driving. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing road rage, hit and run, insurance claim, and traffic ticket. Each term marks a different part of the travel process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Driving & Road Rules. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Seat Belt Law"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Road Rage"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Seat Belt Law"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Crosswalk” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Driving & Road Rules: In Context",
+      "idea": "45-70 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Crosswalk, Traffic Light from driving-road-rules-2\n3 lesson(s) back: Sales Associate, Finance Manager from auto-dealership-3\n7 lesson(s) back: Tire, Wheel from car-parts-mechanics-3"
+  }
+]

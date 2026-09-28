@@ -1,0 +1,696 @@
+﻿[
+  {
+    "lessonId": "desert-1",
+    "lessonName": "The Desert 1",
+    "unitId": "desert",
+    "unitName": "The Desert",
+    "unitOrder": 112,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 518,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Camel",
+      "Scorpion",
+      "Rattlesnake",
+      "Lizard",
+      "Vulture",
+      "Fennec Fox",
+      "Roadrunner",
+      "Tortoise",
+      "Meerkat",
+      "Armadillo",
+      "Coyote",
+      "Hawk",
+      "Cactus",
+      "Tumbleweed",
+      "Joshua Tree"
+    ],
+    "targetWordsArabic": [
+      "جمل",
+      "عقرب",
+      "أفعى جرسية",
+      "سحلية",
+      "نسر آكل للجيف",
+      "ثعلب الفنك",
+      "طائر عدّاء الطريق",
+      "سلحفاة برية",
+      "ميركات",
+      "أرماديلو",
+      "ذئب البراري",
+      "صقر",
+      "صبّار",
+      "نبات متدحرج",
+      "شجرة جوشوا؛ نوع من اليوكا الصحراوية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Desert to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the desert vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Camel", "Scorpion", "Rattlesnake", "Lizard"],
+          "scenario": "The guide or scientist draws attention to camel, scorpion, rattlesnake, and lizard. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Camel", "Scorpion", "Rattlesnake", "Lizard"],
+            "expectedAnswer": "Camel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to camel, scorpion, rattlesnake, and lizard. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Vulture", "Fennec Fox", "Roadrunner", "Tortoise"],
+          "scenario": "The guide or scientist draws attention to vulture, fennec fox, roadrunner, and tortoise. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Vulture", "Fennec Fox", "Roadrunner", "Tortoise"],
+            "expectedAnswer": "Vulture"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to vulture, fennec fox, roadrunner, and tortoise. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Meerkat", "Armadillo", "Coyote", "Hawk"],
+          "scenario": "The guide or scientist draws attention to meerkat, armadillo, coyote, and hawk. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Meerkat", "Armadillo", "Coyote", "Hawk"],
+            "expectedAnswer": "Meerkat"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to meerkat, armadillo, coyote, and hawk. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Cactus", "Tumbleweed", "Joshua Tree"],
+          "scenario": "The group examines the cactus, tumbleweed, and joshua tree and notices differences in shape, color, or growth.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cactus", "Tumbleweed", "Joshua Tree"],
+            "expectedAnswer": "Cactus"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group examines the cactus, tumbleweed, and joshua tree and notices differences in shape, color, or growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Desert: Travel/Visitor Guide",
+      "text": "A practical situation involving the desert requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to camel, scorpion, rattlesnake, and lizard. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to vulture, fennec fox, roadrunner, and tortoise. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to meerkat, armadillo, coyote, and hawk. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Desert. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Camel"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Vulture"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Meerkat"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cactus"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Camel"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Lizard"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Shipwreck” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Desert: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Shipwreck from coral-reef-6\n3 lesson(s) back: Diving Mask, Fins from coral-reef-4\n7 lesson(s) back: Campfire, Ranger from savanna-4"
+  },
+  {
+    "lessonId": "desert-2",
+    "lessonName": "The Desert 2",
+    "unitId": "desert",
+    "unitName": "The Desert",
+    "unitOrder": 112,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 519,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Palm Tree",
+      "Aloe",
+      "Agave",
+      "Sage Brush",
+      "Prickly Pear",
+      "Barrel Cactus",
+      "Date Palm",
+      "Sand Dune",
+      "Canyon",
+      "Mesa",
+      "Butte",
+      "Plateau",
+      "Oasis",
+      "Dry Riverbed",
+      "Rocky Outcrop"
+    ],
+    "targetWordsArabic": [
+      "شجرة نخيل",
+      "ألوة",
+      "أغاف",
+      "شجيرة الشيح الصحراوية",
+      "التين الشوكي",
+      "الصبّار البرميلي",
+      "نخلة التمر",
+      "كثيب رمل",
+      "أخدود",
+      "هضبة مسطحة القمة",
+      "تل منعزل",
+      "هضبة",
+      "واحة",
+      "مجرى نهر جاف",
+      "نتوء صخري"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Desert to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the desert vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Palm Tree", "Aloe", "Agave", "Sage Brush"],
+          "scenario": "The group examines the palm tree, aloe, agave, and sage brush and notices differences in shape, color, or growth.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Palm Tree", "Aloe", "Agave", "Sage Brush"],
+            "expectedAnswer": "Palm Tree"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group examines the palm tree, aloe, agave, and sage brush and notices differences in shape, color, or growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Prickly Pear", "Barrel Cactus", "Date Palm", "Sand Dune"],
+          "scenario": "The guide or scientist draws attention to prickly pear, barrel cactus, date palm, and sand dune. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Prickly Pear", "Barrel Cactus", "Date Palm", "Sand Dune"],
+            "expectedAnswer": "Prickly Pear"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to prickly pear, barrel cactus, date palm, and sand dune. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Canyon", "Mesa", "Butte", "Plateau"],
+          "scenario": "The guide or scientist draws attention to canyon, mesa, butte, and plateau. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Canyon", "Mesa", "Butte", "Plateau"],
+            "expectedAnswer": "Canyon"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to canyon, mesa, butte, and plateau. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Oasis", "Dry Riverbed", "Rocky Outcrop"],
+          "scenario": "The guide or scientist draws attention to oasis, dry riverbed, and rocky outcrop. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Oasis", "Dry Riverbed", "Rocky Outcrop"],
+            "expectedAnswer": "Oasis"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to oasis, dry riverbed, and rocky outcrop. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Desert: Review",
+      "text": "A practical situation involving the desert requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The group examines the palm tree, aloe, agave, and sage brush and notices differences in shape, color, or growth. The guide or scientist draws attention to prickly pear, barrel cactus, date palm, and sand dune. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to canyon, mesa, butte, and plateau. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Desert. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Palm Tree"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Prickly Pear"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Canyon"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Oasis"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Palm Tree"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Sage Brush"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Camel” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Desert: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Camel, Scorpion from desert-1\n3 lesson(s) back: Research Boat, Water Sample from coral-reef-5\n7 lesson(s) back: Clownfish, Angelfish from coral-reef-1"
+  },
+  {
+    "lessonId": "desert-3",
+    "lessonName": "The Desert 3",
+    "unitId": "desert",
+    "unitName": "The Desert",
+    "unitOrder": 112,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 520,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Crater",
+      "Basin",
+      "Water Canteen",
+      "Sun Hat",
+      "Sunscreen",
+      "Sunglasses",
+      "Compass",
+      "Map",
+      "Shade",
+      "Tent",
+      "First Aid Kit",
+      "Water Filter",
+      "Sandstorm",
+      "Heat Wave",
+      "Mirage"
+    ],
+    "targetWordsArabic": [
+      "فوهة",
+      "حوض",
+      "قارورة مياه ميدانية",
+      "قبعة شمس",
+      "واقي شمس",
+      "نظارة شمسية",
+      "بوصلة",
+      "خريطة",
+      "درجة لونية",
+      "خيمة",
+      "أول إسعاف طقم",
+      "مُرشّح مياه",
+      "عاصفة رملية",
+      "يلوّح حرارة",
+      "سراب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Desert to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the desert vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Crater", "Basin", "Water Canteen", "Sun Hat"],
+          "scenario": "The guide or scientist draws attention to crater, basin, water canteen, and sun hat. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crater", "Basin", "Water Canteen", "Sun Hat"],
+            "expectedAnswer": "Crater"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to crater, basin, water canteen, and sun hat. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Sunscreen", "Sunglasses", "Compass", "Map"],
+          "scenario": "The guide or scientist draws attention to sunscreen, sunglasses, compass, and map. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sunscreen", "Sunglasses", "Compass", "Map"],
+            "expectedAnswer": "Sunscreen"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to sunscreen, sunglasses, compass, and map. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Shade", "Tent", "First Aid Kit", "Water Filter"],
+          "scenario": "The guide or scientist draws attention to shade, tent, first aid kit, and water filter. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Shade", "Tent", "First Aid Kit", "Water Filter"],
+            "expectedAnswer": "Shade"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to shade, tent, first aid kit, and water filter. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Sandstorm", "Heat Wave", "Mirage"],
+          "scenario": "The guide or scientist draws attention to sandstorm, heat wave, and mirage. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sandstorm", "Heat Wave", "Mirage"],
+            "expectedAnswer": "Sandstorm"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to sandstorm, heat wave, and mirage. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Desert: Practical Article",
+      "text": "A practical situation involving the desert requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to crater, basin, water canteen, and sun hat. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to sunscreen, sunglasses, compass, and map. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to shade, tent, first aid kit, and water filter. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Desert. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crater"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sunscreen"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Shade"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sandstorm"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Crater"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Sun Hat"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Palm Tree” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Desert: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Palm Tree, Aloe from desert-2\n3 lesson(s) back: Shipwreck from coral-reef-6\n7 lesson(s) back: Whale Shark, Manta Ray from coral-reef-2"
+  },
+  {
+    "lessonId": "desert-4",
+    "lessonName": "The Desert 4",
+    "unitId": "desert",
+    "unitName": "The Desert",
+    "unitOrder": 112,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 521,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Drought",
+      "Dry Air",
+      "Hot Sun",
+      "Cool Night",
+      "Dust Devil",
+      "Clear Sky",
+      "Starry Night",
+      "Nomad",
+      "Caravan",
+      "Campfire",
+      "Bedouin Tent",
+      "Well",
+      "Irrigation",
+      "Fossil",
+      "Petroglyph"
+    ],
+    "targetWordsArabic": [
+      "جفاف",
+      "هواء جاف",
+      "الشمس الحارّة",
+      "ليلة معتدلة البرودة",
+      "دوامة غبار",
+      "سماء صافٍ",
+      "ليلة مرصّعة بالنجوم",
+      "بدوي رحّال",
+      "قافلة",
+      "نار مخيم",
+      "خيمة بدوية",
+      "بئر",
+      "ريّ",
+      "أحفورة",
+      "نقش صخري"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Desert to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the desert vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Drought", "Dry Air", "Hot Sun", "Cool Night"],
+          "scenario": "The guide or scientist draws attention to drought, dry air, hot sun, and cool night. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Drought", "Dry Air", "Hot Sun", "Cool Night"],
+            "expectedAnswer": "Drought"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to drought, dry air, hot sun, and cool night. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Dust Devil", "Clear Sky", "Starry Night", "Nomad"],
+          "scenario": "The guide or scientist draws attention to dust devil, clear sky, starry night, and nomad. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dust Devil", "Clear Sky", "Starry Night", "Nomad"],
+            "expectedAnswer": "Dust Devil"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to dust devil, clear sky, starry night, and nomad. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Caravan", "Campfire", "Bedouin Tent", "Well"],
+          "scenario": "The guide or scientist draws attention to caravan, campfire, bedouin tent, and well. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Caravan", "Campfire", "Bedouin Tent", "Well"],
+            "expectedAnswer": "Caravan"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to caravan, campfire, bedouin tent, and well. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Irrigation", "Fossil", "Petroglyph"],
+          "scenario": "The guide or scientist draws attention to irrigation, fossil, and petroglyph. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Irrigation", "Fossil", "Petroglyph"],
+            "expectedAnswer": "Irrigation"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to irrigation, fossil, and petroglyph. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Desert: Real-Life Scenario",
+      "text": "A practical situation involving the desert requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to drought, dry air, hot sun, and cool night. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to dust devil, clear sky, starry night, and nomad. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to caravan, campfire, bedouin tent, and well. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Desert. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Drought"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dust Devil"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Caravan"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Irrigation"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Drought"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Cool Night"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Crater” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Desert: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Crater, Basin from desert-3\n3 lesson(s) back: Camel, Scorpion from desert-1\n7 lesson(s) back: Lobster, Shrimp from coral-reef-3"
+  },
+  {
+    "lessonId": "desert-5",
+    "lessonName": "The Desert 5",
+    "unitId": "desert",
+    "unitName": "The Desert",
+    "unitOrder": 112,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 522,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": ["Sand Castle", "Footprint", "Sage", "Desert Rose", "Sunset"],
+    "targetWordsArabic": [
+      "قلعة رملية",
+      "أثر قدم",
+      "مريمية",
+      "وردة الصحراء؛ نبات الأدينيوم",
+      "غروب الشمس"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Desert to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the desert vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sand Castle", "Footprint", "Sage", "Desert Rose"],
+          "scenario": "The guide or scientist draws attention to sand castle, footprint, sage, and desert rose. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sand Castle", "Footprint", "Sage", "Desert Rose"],
+            "expectedAnswer": "Sand Castle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to sand castle, footprint, sage, and desert rose. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": "Sunset",
+          "scenario": "The guide or scientist draws attention to sunset. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": "Sunset",
+            "expectedAnswer": "Sunset"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to sunset. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Desert: Travel/Visitor Guide",
+      "text": "A practical situation involving the desert requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to sand castle, footprint, sage, and desert rose. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to sunset. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Desert. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sand Castle"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sunset"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Sand Castle"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Desert Rose"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Drought” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Desert: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Drought, Dry Air from desert-4\n3 lesson(s) back: Palm Tree, Aloe from desert-2\n7 lesson(s) back: Diving Mask, Fins from coral-reef-4"
+  }
+]

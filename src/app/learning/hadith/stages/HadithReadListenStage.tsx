@@ -28,10 +28,7 @@ export function HadithReadListenStage({
   const [parallelReading, setParallelReading] = useState(false);
 
   return (
-    <section
-      className="mx-auto w-full max-w-5xl space-y-6"
-      aria-labelledby="stage-readlisten-heading"
-    >
+    <section className="wp-container-content space-y-6" aria-labelledby="stage-readlisten-heading">
       <header className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <span className="text-xs font-black uppercase tracking-[0.18em] text-primary">
@@ -166,7 +163,7 @@ export function HadithReadListenStage({
 
         {/* Listening Guide Sidebar */}
         <aside
-          className={`rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8 ${parallelReading ? "mx-auto w-full max-w-5xl" : ""}`}
+          className={`rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8 ${parallelReading ? "wp-container-content" : ""}`}
           aria-labelledby="listening-guide-heading"
         >
           <div className="flex items-center gap-2">

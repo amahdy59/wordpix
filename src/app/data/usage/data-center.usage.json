@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "data-center-1",
+    "lessonName": "The Data Center 1",
+    "unitId": "data-center",
+    "unitName": "The Data Center",
+    "unitOrder": 168,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 740,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Server Rack",
+      "Blade Server",
+      "Cable Tray",
+      "Raised Floor",
+      "Hot Aisle",
+      "Cold Aisle",
+      "Ups",
+      "Generator",
+      "Pdu",
+      "Patch Panel",
+      "Switch",
+      "Router",
+      "Firewall",
+      "Load Balancer",
+      "Fiber Optic"
+    ],
+    "targetWordsArabic": [
+      "حامل خوادم",
+      "خادم نصلي",
+      "مسار للكابلات",
+      "أرضية مرتفعة",
+      "ممر هواء ساخن",
+      "ممر هواء بارد",
+      "مزود طاقة غير منقطعة",
+      "مولّد",
+      "وحدة توزيع الطاقة (PDU)",
+      "لوحة توصيل",
+      "مبدّل شبكي",
+      "موجّه",
+      "جدار حماية",
+      "موازن أحمال",
+      "ألياف ضوئية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Data Center to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the data center vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Server Rack", "Blade Server", "Cable Tray", "Raised Floor"],
+          "scenario": "The engineer or technician checks server rack, blade server, cable tray, and raised floor. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Server Rack", "Blade Server", "Cable Tray", "Raised Floor"],
+            "expectedAnswer": "Server Rack"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks server rack, blade server, cable tray, and raised floor. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Hot Aisle", "Cold Aisle", "Ups", "Generator"],
+          "scenario": "The engineer or technician checks hot aisle, cold aisle, ups, and generator. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hot Aisle", "Cold Aisle", "Ups", "Generator"],
+            "expectedAnswer": "Hot Aisle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks hot aisle, cold aisle, ups, and generator. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Pdu", "Patch Panel", "Switch", "Router"],
+          "scenario": "The engineer or technician checks pdu, patch panel, switch, and router. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pdu", "Patch Panel", "Switch", "Router"],
+            "expectedAnswer": "Pdu"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks pdu, patch panel, switch, and router. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Firewall", "Load Balancer", "Fiber Optic"],
+          "scenario": "The engineer or technician checks firewall, load balancer, and fiber optic. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Firewall", "Load Balancer", "Fiber Optic"],
+            "expectedAnswer": "Firewall"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks firewall, load balancer, and fiber optic. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Data Center: Case Note",
+      "text": "A realistic case involving the data center shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks server rack, blade server, cable tray, and raised floor. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks hot aisle, cold aisle, ups, and generator. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks pdu, patch panel, switch, and router. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks firewall, load balancer, and fiber optic. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Server Rack"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hot Aisle"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pdu"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Firewall"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Server Rack"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Mechanical Keyboard” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Data Center: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Mechanical Keyboard, Ergonomic Mouse from tech-gadgets-3\n3 lesson(s) back: Smartphone, Tablet from tech-gadgets-1\n7 lesson(s) back: Smart Speaker, Voice Command from smart-home-1"
+  },
+  {
+    "lessonId": "data-center-2",
+    "lessonName": "The Data Center 2",
+    "unitId": "data-center",
+    "unitName": "The Data Center",
+    "unitOrder": 168,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 741,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Ethernet",
+      "Bandwidth",
+      "Latency",
+      "Dns",
+      "Vpn",
+      "Hard Drive",
+      "Ssd",
+      "Raid",
+      "Nas",
+      "San",
+      "Backup",
+      "Tape Drive",
+      "Cloud Storage",
+      "Snapshot",
+      "Replication"
+    ],
+    "targetWordsArabic": [
+      "إيثرنت",
+      "عرض النطاق",
+      "زمن الاستجابة",
+      "نظام أسماء النطاقات",
+      "شبكة خاصة افتراضية",
+      "جهاز يُسمّى «هارد دريفي»",
+      "قرص حالة صلبة",
+      "مصفوفة أقراص مستقلة",
+      "تخزين متصل بالشبكة",
+      "شبكة منطقة تخزين",
+      "نسخة احتياطية",
+      "جهاز يُسمّى «تابي دريفي»",
+      "تخزين سحابة",
+      "لقطة حالة",
+      "نسخ متماثل"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Data Center to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the data center vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Ethernet", "Bandwidth", "Latency", "Dns"],
+          "scenario": "The engineer or technician checks ethernet, bandwidth, latency, and dns. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Ethernet", "Bandwidth", "Latency", "Dns"],
+            "expectedAnswer": "Ethernet"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks ethernet, bandwidth, latency, and dns. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Vpn", "Hard Drive", "Ssd", "Raid"],
+          "scenario": "The engineer or technician checks vpn, hard drive, ssd, and raid. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Vpn", "Hard Drive", "Ssd", "Raid"],
+            "expectedAnswer": "Vpn"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks vpn, hard drive, ssd, and raid. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Nas", "San", "Backup", "Tape Drive"],
+          "scenario": "The engineer or technician checks nas, san, backup, and tape drive. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Nas", "San", "Backup", "Tape Drive"],
+            "expectedAnswer": "Nas"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks nas, san, backup, and tape drive. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Cloud Storage", "Snapshot", "Replication"],
+          "scenario": "The engineer or technician checks cloud storage, snapshot, and replication. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cloud Storage", "Snapshot", "Replication"],
+            "expectedAnswer": "Cloud Storage"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks cloud storage, snapshot, and replication. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Data Center: Report Excerpt",
+      "text": "A realistic case involving the data center shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks ethernet, bandwidth, latency, and dns. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks vpn, hard drive, ssd, and raid. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks nas, san, backup, and tape drive. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks cloud storage, snapshot, and replication. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ethernet"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Vpn"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Nas"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cloud Storage"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Ethernet"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Server Rack” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Data Center: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Server Rack, Blade Server from data-center-1\n3 lesson(s) back: Smart Bulb, Security Camera from tech-gadgets-2\n7 lesson(s) back: Schedule, Scene from smart-home-2"
+  },
+  {
+    "lessonId": "data-center-3",
+    "lessonName": "The Data Center 3",
+    "unitId": "data-center",
+    "unitName": "The Data Center",
+    "unitOrder": 168,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 742,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Air Conditioner",
+      "Chiller",
+      "Cooling Tower",
+      "Fan",
+      "Vent",
+      "Heat Exchanger",
+      "Containment",
+      "Thermostat",
+      "Humidity Control",
+      "Water Cooling",
+      "Badge Reader",
+      "Biometric",
+      "Mantrap",
+      "Cctv",
+      "Fire Suppression"
+    ],
+    "targetWordsArabic": [
+      "بلسم هواء",
+      "مُبرِّد",
+      "آلة يُسمّى «كوولينج تووير»",
+      "مروحة",
+      "فتحة تهوية",
+      "جهاز يُسمّى «هيات يكستشانجير»",
+      "احتواء",
+      "منظّم حرارة",
+      "عامل ضابط رطوبة",
+      "تبريد بالماء",
+      "قارئ بطاقات تعريف",
+      "بيومتري",
+      "بوابة أمنية مزدوجة",
+      "مراقبة تلفزيونية مغلقة",
+      "طريقة يُسمّى «فيري سوببريسسيون»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Data Center to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the data center vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Air Conditioner", "Chiller", "Cooling Tower", "Fan"],
+          "scenario": "The engineer or technician checks air conditioner, chiller, cooling tower, and fan. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Air Conditioner", "Chiller", "Cooling Tower", "Fan"],
+            "expectedAnswer": "Air Conditioner"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks air conditioner, chiller, cooling tower, and fan. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Vent", "Heat Exchanger", "Containment", "Thermostat"],
+          "scenario": "The engineer or technician checks vent, heat exchanger, containment, and thermostat. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Vent", "Heat Exchanger", "Containment", "Thermostat"],
+            "expectedAnswer": "Vent"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks vent, heat exchanger, containment, and thermostat. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Humidity Control", "Water Cooling", "Badge Reader", "Biometric"],
+          "scenario": "The engineer or technician checks humidity control, water cooling, badge reader, and biometric. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Humidity Control", "Water Cooling", "Badge Reader", "Biometric"],
+            "expectedAnswer": "Humidity Control"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks humidity control, water cooling, badge reader, and biometric. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Mantrap", "Cctv", "Fire Suppression"],
+          "scenario": "The engineer or technician checks mantrap, cctv, and fire suppression. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mantrap", "Cctv", "Fire Suppression"],
+            "expectedAnswer": "Mantrap"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks mantrap, cctv, and fire suppression. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Data Center: Workplace/Academic Scenario",
+      "text": "A realistic case involving the data center shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks air conditioner, chiller, cooling tower, and fan. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks vent, heat exchanger, containment, and thermostat. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks humidity control, water cooling, badge reader, and biometric. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks mantrap, cctv, and fire suppression. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Air Conditioner"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Vent"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Humidity Control"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mantrap"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Air Conditioner"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Ethernet” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Data Center: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Ethernet, Bandwidth from data-center-2\n3 lesson(s) back: Mechanical Keyboard, Ergonomic Mouse from tech-gadgets-3\n7 lesson(s) back: Smart Thermostat, Temperature Sensor from smart-home-3"
+  },
+  {
+    "lessonId": "data-center-4",
+    "lessonName": "The Data Center 4",
+    "unitId": "data-center",
+    "unitName": "The Data Center",
+    "unitOrder": 168,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 743,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Access Log",
+      "Cage",
+      "Lock",
+      "Guard",
+      "Monitoring",
+      "Technician",
+      "Administrator",
+      "Dashboard",
+      "Alert",
+      "Uptime",
+      "Maintenance",
+      "Migration",
+      "Deployment",
+      "Redundancy",
+      "Failover"
+    ],
+    "targetWordsArabic": [
+      "سجل الوصول",
+      "قفص",
+      "قفل",
+      "حارس",
+      "مراقبة",
+      "فني",
+      "مسؤول نظام",
+      "لوحة معلومات",
+      "مصطلح مرتبط بالموضوع يُسمّى «اليرت»",
+      "زمن التشغيل",
+      "صيانة",
+      "هجرة",
+      "نشر",
+      "تكرار احتياطي",
+      "تحويل تلقائي إلى نظام احتياطي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Data Center to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the data center vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "opinion paragraph",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Access Log", "Cage", "Lock", "Guard"],
+          "scenario": "The engineer or technician checks access log, cage, lock, and guard. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Access Log", "Cage", "Lock", "Guard"],
+            "expectedAnswer": "Access Log"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks access log, cage, lock, and guard. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Monitoring", "Technician", "Administrator", "Dashboard"],
+          "scenario": "The engineer or technician checks monitoring, technician, administrator, and dashboard. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Monitoring", "Technician", "Administrator", "Dashboard"],
+            "expectedAnswer": "Monitoring"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks monitoring, technician, administrator, and dashboard. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Alert", "Uptime", "Maintenance", "Migration"],
+          "scenario": "The engineer or technician checks alert, uptime, maintenance, and migration. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Alert", "Uptime", "Maintenance", "Migration"],
+            "expectedAnswer": "Alert"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks alert, uptime, maintenance, and migration. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Deployment", "Redundancy", "Failover"],
+          "scenario": "The engineer or technician checks deployment, redundancy, and failover. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Deployment", "Redundancy", "Failover"],
+            "expectedAnswer": "Deployment"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks deployment, redundancy, and failover. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Data Center: Opinion Paragraph",
+      "text": "A realistic case involving the data center shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks access log, cage, lock, and guard. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks monitoring, technician, administrator, and dashboard. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks alert, uptime, maintenance, and migration. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks deployment, redundancy, and failover. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Access Log"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Monitoring"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Alert"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Deployment"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Access Log"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Air Conditioner” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Data Center: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Air Conditioner, Chiller from data-center-3\n3 lesson(s) back: Server Rack, Blade Server from data-center-1\n7 lesson(s) back: Hdmi, Bluetooth from smart-home-4"
+  }
+]

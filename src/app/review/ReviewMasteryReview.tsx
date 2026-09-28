@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { REVIEW_GROUP_ID, resolveUnitIdForWord, type VocabularyItem } from "../data/lessons";
+import { REVIEW_GROUP_ID, resolveUnitIdForWord, type VocabularyItem } from "../data/courseCatalog";
 import { getWords, loadUnitVocabulary } from "../data/vocabulary";
 import { useI18n } from "../context/I18nContext";
 
@@ -149,7 +149,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     "focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary";
 
   return (
-    <div className="flex flex-col gap-4 md:gap-6 p-4 md:p-8 max-w-6xl w-full mx-auto">
+    <div className="wp-container-content flex flex-col gap-4 p-4 md:gap-6 md:p-8">
       <header className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <p className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider mb-2">

@@ -1,0 +1,897 @@
+﻿[
+  {
+    "lessonId": "market-1",
+    "lessonName": "The Market 1",
+    "unitId": "market",
+    "unitName": "The Market",
+    "unitOrder": 19,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 73,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Apple",
+      "Banana",
+      "Orange",
+      "Grape",
+      "Strawberry",
+      "Watermelon",
+      "Mango",
+      "Pear",
+      "Peach",
+      "Pineapple",
+      "Lemon",
+      "Lime",
+      "Carrot",
+      "Broccoli",
+      "Onion"
+    ],
+    "targetWordsArabic": [
+      "تفاح",
+      "شجرة يُسمّى «بانانا»",
+      "برتقالي",
+      "عنب",
+      "فراولة",
+      "مصطلح مرتبط بالموضوع يُسمّى «واتيرميلون»",
+      "مانجو",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيار»",
+      "خوخي",
+      "نبات يُسمّى «بينياببلي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليمون»",
+      "شجرة يُسمّى «ليمي»",
+      "جزر",
+      "نبات يُسمّى «بروككولي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ونيون»"
+    ],
+    "usage": {
+      "goal": "Use familiar food, shopping, money, and market-person vocabulary in context.",
+      "canDoStatement": "I can use familiar food, shopping, money, and market-person vocabulary in context",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Apple", "Banana", "Orange"],
+          "scenario": "At the market, I can buy, use, or see apple, banana, and orange.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Apple", "Banana", "Orange"],
+            "expectedAnswer": "Apple"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see apple, banana, and orange. Emphasize apple, banana, and orange and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Grape", "Strawberry", "Watermelon"],
+          "scenario": "At the market, I can buy, use, or see grape, strawberry, and watermelon.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Grape", "Strawberry", "Watermelon"],
+            "expectedAnswer": "Grape"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see grape, strawberry, and watermelon. Emphasize grape, strawberry, and watermelon and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Mango", "Pear", "Peach"],
+          "scenario": "At the market, I can buy, use, or see mango, pear, and peach.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Mango", "Pear", "Peach"],
+            "expectedAnswer": "Mango"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see mango, pear, and peach. Emphasize mango, pear, and peach and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Pineapple", "Lemon", "Lime"],
+          "scenario": "At the market, I can buy, use, or see pineapple, lemon, and lime.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Pineapple", "Lemon", "Lime"],
+            "expectedAnswer": "Pineapple"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see pineapple, lemon, and lime. Emphasize pineapple, lemon, and lime and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Carrot", "Broccoli", "Onion"],
+          "scenario": "At the market, I can buy, use, or see carrot, broccoli, and onion.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Carrot", "Broccoli", "Onion"],
+            "expectedAnswer": "Carrot"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see carrot, broccoli, and onion. Emphasize carrot, broccoli, and onion and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Market Mini Story",
+      "text": "Today I am at the market. I see apple, banana, and orange. I also find grape, strawberry, and watermelon. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as bicycle and skateboard.",
+      "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Apple"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Grape"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Mango"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pineapple"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Carrot"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Apple"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Banana"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Watermelon"
+      }
+    ],
+    "video": {
+      "title": "The Market: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show apple, banana, orange, grape, and strawberry naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see apple, banana, and orange. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Bicycle, Skateboard from toys-games-3\n3 lesson(s) back: Doll, Teddy Bear from toys-games-1\n7 lesson(s) back: Sheet of Paper, Sticky Note from classroom-2"
+  },
+  {
+    "lessonId": "market-2",
+    "lessonName": "The Market 2",
+    "unitId": "market",
+    "unitName": "The Market",
+    "unitOrder": 19,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 74,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Pepper",
+      "Tomato",
+      "Cucumber",
+      "Lettuce",
+      "Potato",
+      "Mushroom",
+      "Spinach",
+      "Garlic",
+      "Corn",
+      "Chicken",
+      "Beef",
+      "Pork",
+      "Fish",
+      "Shrimp",
+      "Sausage"
+    ],
+    "targetWordsArabic": [
+      "فُلْفُل (فُلْفُلٌ أَسْوَد)",
+      "طماطم",
+      "مصطلح مرتبط بالموضوع يُسمّى «كوكومبير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليتتوكي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بوتاتو»",
+      "عضو يُسمّى «موشرووم»",
+      "نبات يُسمّى «سبيناتش»",
+      "مصطلح مرتبط بالموضوع يُسمّى «جارليك»",
+      "نبات يُسمّى «كورن»",
+      "دجاج",
+      "لحم بقري",
+      "لحم خنزير",
+      "سمكة",
+      "روبيان",
+      "مصطلح مرتبط بالموضوع يُسمّى «ساوساجي»"
+    ],
+    "usage": {
+      "goal": "Use familiar food, shopping, money, and market-person vocabulary in context.",
+      "canDoStatement": "I can use familiar food, shopping, money, and market-person vocabulary in context",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Pepper", "Tomato", "Cucumber"],
+          "scenario": "At the market, I can buy, use, or see pepper, tomato, and cucumber.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Pepper", "Tomato", "Cucumber"],
+            "expectedAnswer": "Pepper"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see pepper, tomato, and cucumber. Emphasize pepper, tomato, and cucumber and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Lettuce", "Potato", "Mushroom"],
+          "scenario": "At the market, I can buy, use, or see lettuce, potato, and mushroom.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Lettuce", "Potato", "Mushroom"],
+            "expectedAnswer": "Lettuce"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see lettuce, potato, and mushroom. Emphasize lettuce, potato, and mushroom and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Spinach", "Garlic", "Corn"],
+          "scenario": "At the market, I can buy, use, or see spinach, garlic, and corn.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Spinach", "Garlic", "Corn"],
+            "expectedAnswer": "Spinach"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see spinach, garlic, and corn. Emphasize spinach, garlic, and corn and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Chicken", "Beef", "Pork"],
+          "scenario": "At the market, I can buy, use, or see chicken, beef, and pork.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Chicken", "Beef", "Pork"],
+            "expectedAnswer": "Chicken"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see chicken, beef, and pork. Emphasize chicken, beef, and pork and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Fish", "Shrimp", "Sausage"],
+          "scenario": "At the market, I can buy, use, or see fish, shrimp, and sausage.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Fish", "Shrimp", "Sausage"],
+            "expectedAnswer": "Fish"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see fish, shrimp, and sausage. Emphasize fish, shrimp, and sausage and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Market Mini Story",
+      "text": "Today I am at the market. I see pepper, tomato, and cucumber. I also find lettuce, potato, and mushroom. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as apple and banana.",
+      "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pepper"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Lettuce"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Spinach"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Chicken"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Fish"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Pepper"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Tomato"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Mushroom"
+      }
+    ],
+    "video": {
+      "title": "The Market: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show pepper, tomato, cucumber, lettuce, and potato naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see pepper, tomato, and cucumber. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Apple, Banana from market-1\n3 lesson(s) back: Playing Cards, Dice from toys-games-2\n7 lesson(s) back: Backpack, Scissors from classroom-3"
+  },
+  {
+    "lessonId": "market-3",
+    "lessonName": "The Market 3",
+    "unitId": "market",
+    "unitName": "The Market",
+    "unitOrder": 19,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 75,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Ham",
+      "Bacon",
+      "Turkey",
+      "Salmon",
+      "Tuna",
+      "Lamb",
+      "Milk",
+      "Cheese",
+      "Yogurt",
+      "Butter",
+      "Cream",
+      "Bread",
+      "Roll",
+      "Bagel",
+      "Croissant"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «هام»",
+      "مصطلح مرتبط بالموضوع يُسمّى «باكون»",
+      "ديك رومي",
+      "سمكة يُسمّى «سالمون»",
+      "تونة",
+      "لحم ضأن",
+      "حَلِيب (لَبَن)",
+      "جُبْن / جُبْنَة",
+      "طعام يُسمّى «يوجورت»",
+      "زُبْدَة",
+      "كريمة",
+      "خُبْز (عَيْش)",
+      "مصطلح مرتبط بالموضوع يُسمّى «رولل»",
+      "خبز بيغل",
+      "كرواسون"
+    ],
+    "usage": {
+      "goal": "Use familiar food, shopping, money, and market-person vocabulary in context.",
+      "canDoStatement": "I can use familiar food, shopping, money, and market-person vocabulary in context",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Ham", "Bacon", "Turkey"],
+          "scenario": "At the market, I can buy, use, or see ham, bacon, and turkey.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Ham", "Bacon", "Turkey"],
+            "expectedAnswer": "Ham"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see ham, bacon, and turkey. Emphasize ham, bacon, and turkey and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Salmon", "Tuna", "Lamb"],
+          "scenario": "At the market, I can buy, use, or see salmon, tuna, and lamb.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Salmon", "Tuna", "Lamb"],
+            "expectedAnswer": "Salmon"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see salmon, tuna, and lamb. Emphasize salmon, tuna, and lamb and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Milk", "Cheese", "Yogurt"],
+          "scenario": "At the market, I can buy, use, or see milk, cheese, and yogurt.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Milk", "Cheese", "Yogurt"],
+            "expectedAnswer": "Milk"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see milk, cheese, and yogurt. Emphasize milk, cheese, and yogurt and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Butter", "Cream", "Bread"],
+          "scenario": "At the market, I can buy, use, or see butter, cream, and bread.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Butter", "Cream", "Bread"],
+            "expectedAnswer": "Butter"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see butter, cream, and bread. Emphasize butter, cream, and bread and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Roll", "Bagel", "Croissant"],
+          "scenario": "At the market, I can buy, use, or see roll, bagel, and croissant.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Roll", "Bagel", "Croissant"],
+            "expectedAnswer": "Roll"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see roll, bagel, and croissant. Emphasize roll, bagel, and croissant and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Market Mini Story",
+      "text": "Today I am at the market. I see ham, bacon, and turkey. I also find salmon, tuna, and lamb. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as pepper and tomato.",
+      "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Ham"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Salmon"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Milk"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Butter"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Roll"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Ham"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Bacon"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Lamb"
+      }
+    ],
+    "video": {
+      "title": "The Market: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show ham, bacon, turkey, salmon, and tuna naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see ham, bacon, and turkey. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Pepper, Tomato from market-2\n3 lesson(s) back: Bicycle, Skateboard from toys-games-3\n7 lesson(s) back: Printer, USB Drive from classroom-4"
+  },
+  {
+    "lessonId": "market-4",
+    "lessonName": "The Market 4",
+    "unitId": "market",
+    "unitName": "The Market",
+    "unitOrder": 19,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 76,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Cake",
+      "Pie",
+      "Cookie",
+      "Produce Section",
+      "Deli Counter",
+      "Bakery",
+      "Frozen Foods",
+      "Checkout",
+      "Aisle",
+      "Shopping Cart",
+      "Basket",
+      "Cash Register",
+      "Scale",
+      "Price Tag",
+      "Receipt"
+    ],
+    "targetWordsArabic": [
+      "كعكة",
+      "طبق يُسمّى «بيي»",
+      "بسكويت",
+      "منطقة يُسمّى «برودوكي سيكتيون»",
+      "منضدة الأطعمة الجاهزة",
+      "مَخْبَز (قِسْمُ المَخْبُوزَات)",
+      "طعام يُسمّى «فروزين فوودس»",
+      "تسجيل المغادرة",
+      "ممر",
+      "عربة تسوق",
+      "مصطلح مرتبط بالموضوع يُسمّى «باسكيت»",
+      "سجل نقد",
+      "مقياس رسم",
+      "مصطلح مرتبط بالموضوع يُسمّى «بريكي تاج»",
+      "إيصال"
+    ],
+    "usage": {
+      "goal": "Use familiar food, shopping, money, and market-person vocabulary in context.",
+      "canDoStatement": "I can use familiar food, shopping, money, and market-person vocabulary in context",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Cake", "Pie", "Cookie"],
+          "scenario": "At the market, I can buy, use, or see cake, pie, and cookie.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Cake", "Pie", "Cookie"],
+            "expectedAnswer": "Cake"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see cake, pie, and cookie. Emphasize cake, pie, and cookie and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Produce Section", "Deli Counter", "Bakery"],
+          "scenario": "At the market, I can buy, use, or see produce section, deli counter, and bakery.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Produce Section", "Deli Counter", "Bakery"],
+            "expectedAnswer": "Produce Section"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see produce section, deli counter, and bakery. Emphasize produce section, deli counter, and bakery and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Frozen Foods", "Checkout", "Aisle"],
+          "scenario": "At the market, I can buy, use, or see frozen foods, checkout, and aisle.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Frozen Foods", "Checkout", "Aisle"],
+            "expectedAnswer": "Frozen Foods"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see frozen foods, checkout, and aisle. Emphasize frozen foods, checkout, and aisle and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Shopping Cart", "Basket", "Cash Register"],
+          "scenario": "At the market, I can buy, use, or see shopping cart, basket, and cash register.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Shopping Cart", "Basket", "Cash Register"],
+            "expectedAnswer": "Shopping Cart"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see shopping cart, basket, and cash register. Emphasize shopping cart, basket, and cash register and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Scale", "Price Tag", "Receipt"],
+          "scenario": "At the market, I can buy, use, or see scale, price tag, and receipt.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Scale", "Price Tag", "Receipt"],
+            "expectedAnswer": "Scale"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see scale, price tag, and receipt. Emphasize scale, price tag, and receipt and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Market Mini Story",
+      "text": "Today I am at the market. I see cake, pie, and cookie. I also find produce section, deli counter, and bakery. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as ham and bacon.",
+      "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Cake"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Produce Section"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Frozen Foods"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Shopping Cart"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Scale"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Cake"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Pie"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Bakery"
+      }
+    ],
+    "video": {
+      "title": "The Market: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show cake, pie, cookie, produce section, and deli counter naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see cake, pie, and cookie. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Ham, Bacon from market-3\n3 lesson(s) back: Apple, Banana from market-1\n7 lesson(s) back: Homework, Test from classroom-5"
+  },
+  {
+    "lessonId": "market-5",
+    "lessonName": "The Market 5",
+    "unitId": "market",
+    "unitName": "The Market",
+    "unitOrder": 19,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 77,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Barcode",
+      "Shopping Bag",
+      "Coupon",
+      "Shopping List",
+      "Credit Card",
+      "Cash",
+      "Change",
+      "Wallet",
+      "Cherry",
+      "Kiwi",
+      "Muffin",
+      "Shelf",
+      "Freezer",
+      "Counter",
+      "Cashier"
+    ],
+    "targetWordsArabic": [
+      "رمز شريطي",
+      "كيس تسوق",
+      "مصطلح مرتبط بالموضوع يُسمّى «كووبون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «شوببينج ليست»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كريديت كارد»",
+      "نقد",
+      "مصطلح مرتبط بالموضوع يُسمّى «تشانجي»",
+      "محفظة",
+      "كرز",
+      "مصطلح مرتبط بالموضوع يُسمّى «كيوي»",
+      "مافن",
+      "رف",
+      "مُجَمِّد (فِرِيزَر)",
+      "منضدة",
+      "أمين صندوق"
+    ],
+    "usage": {
+      "goal": "Use familiar food, shopping, money, and market-person vocabulary in context.",
+      "canDoStatement": "I can use familiar food, shopping, money, and market-person vocabulary in context",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Barcode", "Shopping Bag", "Coupon"],
+          "scenario": "At the market, I can buy, use, or see barcode, shopping bag, and coupon.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Barcode", "Shopping Bag", "Coupon"],
+            "expectedAnswer": "Barcode"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see barcode, shopping bag, and coupon. Emphasize barcode, shopping bag, and coupon and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Shopping List", "Credit Card", "Cash"],
+          "scenario": "At the market, I can buy, use, or see shopping list, credit card, and cash.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Shopping List", "Credit Card", "Cash"],
+            "expectedAnswer": "Shopping List"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see shopping list, credit card, and cash. Emphasize shopping list, credit card, and cash and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Change", "Wallet", "Cherry"],
+          "scenario": "At the market, I can buy, use, or see change, wallet, and cherry.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Change", "Wallet", "Cherry"],
+            "expectedAnswer": "Change"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see change, wallet, and cherry. Emphasize change, wallet, and cherry and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Kiwi", "Muffin", "Shelf"],
+          "scenario": "At the market, I can buy, use, or see kiwi, muffin, and shelf.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Kiwi", "Muffin", "Shelf"],
+            "expectedAnswer": "Kiwi"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see kiwi, muffin, and shelf. Emphasize kiwi, muffin, and shelf and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Freezer", "Counter", "Cashier"],
+          "scenario": "At the market, I can buy, use, or see freezer, counter, and cashier.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Freezer", "Counter", "Cashier"],
+            "expectedAnswer": "Freezer"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see freezer, counter, and cashier. Emphasize freezer, counter, and cashier and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Market Mini Story",
+      "text": "Today I am at the market. I see barcode, shopping bag, and coupon. I also find shopping list, credit card, and cash. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as cake and pie.",
+      "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Barcode"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Shopping List"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Change"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Kiwi"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Freezer"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Barcode"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Shopping Bag"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Cash"
+      }
+    ],
+    "video": {
+      "title": "The Market: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show barcode, shopping bag, coupon, shopping list, and credit card naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see barcode, shopping bag, and coupon. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Cake, Pie from market-4\n3 lesson(s) back: Pepper, Tomato from market-2\n7 lesson(s) back: Doll, Teddy Bear from toys-games-1"
+  },
+  {
+    "lessonId": "market-6",
+    "lessonName": "The Market 6",
+    "unitId": "market",
+    "unitName": "The Market",
+    "unitOrder": 19,
+    "lessonOrderInUnit": 6,
+    "globalOrder": 78,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Customer",
+      "Butcher",
+      "Baker",
+      "Manager",
+      "Stock Clerk",
+      "Security Guard",
+      "Delivery Driver",
+      "Shopper",
+      "Child",
+      "Cart",
+      "Bag"
+    ],
+    "targetWordsArabic": [
+      "عميل",
+      "شخص يُسمّى «بوتتشير»",
+      "شخص يُسمّى «باكير»",
+      "مدير",
+      "موظف مخزون",
+      "حارس أمن",
+      "سائق توصيل",
+      "متسوق",
+      "طفل",
+      "عربة",
+      "كيس"
+    ],
+    "usage": {
+      "goal": "Use familiar food, shopping, money, and market-person vocabulary in context.",
+      "canDoStatement": "I can use familiar food, shopping, money, and market-person vocabulary in context",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Customer", "Butcher", "Baker"],
+          "scenario": "At the market, I can buy, use, or see customer, butcher, and baker.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Customer", "Butcher", "Baker"],
+            "expectedAnswer": "Customer"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see customer, butcher, and baker. Emphasize customer, butcher, and baker and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Manager", "Stock Clerk", "Security Guard"],
+          "scenario": "At the market, I can buy, use, or see manager, stock clerk, and security guard.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Manager", "Stock Clerk", "Security Guard"],
+            "expectedAnswer": "Manager"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see manager, stock clerk, and security guard. Emphasize manager, stock clerk, and security guard and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Delivery Driver", "Shopper", "Child"],
+          "scenario": "At the market, I can buy, use, or see delivery driver, shopper, and child.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Delivery Driver", "Shopper", "Child"],
+            "expectedAnswer": "Delivery Driver"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see delivery driver, shopper, and child. Emphasize delivery driver, shopper, and child and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Cart", "Bag"],
+          "scenario": "At the market, I can buy, use, or see cart and bag.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Cart", "Bag"],
+            "expectedAnswer": "Cart"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the market that represents: At the market, I can buy, use, or see cart and bag. Emphasize cart and bag and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Market Mini Story",
+      "text": "Today I am at the market. I see customer, butcher, and baker. I also find manager, stock clerk, and security guard. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as barcode and shopping bag.",
+      "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Customer"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Manager"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Delivery Driver"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Cart"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Customer"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Butcher"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Security Guard"
+      }
+    ],
+    "video": {
+      "title": "The Market: See It, Say It",
+      "idea": "30–50 second contextual video set in a market. Show customer, butcher, baker, manager, and stock clerk naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see customer, butcher, and baker. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Barcode, Shopping Bag from market-5\n3 lesson(s) back: Ham, Bacon from market-3\n7 lesson(s) back: Playing Cards, Dice from toys-games-2"
+  }
+]

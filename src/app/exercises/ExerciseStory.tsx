@@ -1,7 +1,7 @@
 import React, { memo, useRef, useEffect, useMemo, useState, useCallback } from "react";
 import type { Action } from "../types";
 import type { VocabularyItem } from "../data/lessons";
-import { resolveGroup } from "../data/lessons";
+import { resolveGroup, getNextGroupChronological } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { playCorrectSound, playIncorrectSound } from "../shared/useSound";
 import { useAudio } from "../shared/useAudio";
@@ -29,6 +29,9 @@ import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { getOrGenerateStoryBundle } from "../data/storyTalesDictionary";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { useI18n } from "../context/I18nContext";
+import { loadLessonUsage } from "../data/usageRegistry";
+import type { LessonUsageData } from "../data/usageTypes";
+import { loadLessonStory } from "../data/lessonStoryLoader";
 
 interface Props {
   step: number;
@@ -47,7 +50,53 @@ export const ExerciseStory = memo(function ExerciseStory({
 }: Props) {
   const { t } = useI18n();
   const group = resolveGroup(lessonId);
-  const storyText = group.story || "No reading material available for this lesson yet. Stay tuned!";
+  const [usageData, setUsageData] = useState<LessonUsageData | null>(null);
+  const [activeChunkIndex, setActiveChunkIndex] = useState(0);
+  const [chunkAnswers, setChunkAnswers] = useState<Record<number, string>>({});
+  const [storyAttempt, setStoryAttempt] = useState(0);
+  const [passage, setPassage] = useState<
+    | { lessonId: string; attempt: number; status: "ready"; text?: string }
+    | { lessonId: string; attempt: number; status: "error" }
+    | null
+  >(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    void loadLessonStory(lessonId).then(
+      (text) => {
+        if (!cancelled) setPassage({ lessonId, attempt: storyAttempt, status: "ready", text });
+        // A neighbouring lesson is speculative; its failure must not block this passage.
+        const next = getNextGroupChronological(lessonId);
+        if (!cancelled && next.id !== lessonId)
+          void loadLessonStory(next.id).catch(() => undefined);
+      },
+      () => {
+        if (!cancelled) setPassage({ lessonId, attempt: storyAttempt, status: "error" });
+      }
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, [lessonId, storyAttempt]);
+
+  useEffect(() => {
+    let cancelled = false;
+    loadLessonUsage(lessonId).then((data) => {
+      if (!cancelled && data) {
+        setUsageData(data);
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [lessonId]);
+
+  const currentPassage =
+    passage?.lessonId === lessonId && passage.attempt === storyAttempt ? passage : null;
+  const storyText =
+    (currentPassage?.status === "ready" ? currentPassage.text : undefined) ||
+    usageData?.reading?.text ||
+    "No reading material available for this lesson yet. Stay tuned!";
   const [activeSection, setActiveSection] = useState<ContextSection>("passage");
   const [activeWordId, setActiveWordId] = useState<string | null>(null);
   const [inspectedWord, setInspectedWord] = useState<VocabularyItem | null>(null);
@@ -266,7 +315,11 @@ export const ExerciseStory = memo(function ExerciseStory({
             onClick={() => setActiveSection("dialogue")}
             className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
-            <span>{t("story.nextDialogue")}</span>
+            <span>
+              {usageData?.usage?.scenes?.length
+                ? t("story.nextUsageScenes")
+                : t("story.nextDialogue")}
+            </span>
             <ArrowRight className="size-5" aria-hidden />
           </button>
         </div>
@@ -381,10 +434,7 @@ export const ExerciseStory = memo(function ExerciseStory({
       }
       footer={footerContent}
     >
-      <div
-        ref={scrollContainerRef}
-        className="w-full max-w-4xl xl:max-w-5xl mx-auto flex flex-col gap-4 pb-6"
-      >
+      <div ref={scrollContainerRef} className="wp-container-content flex flex-col gap-4 pb-6">
         {/* Top 5-Section Sequential Stepper Navigation */}
         <nav
           aria-label="Story and context sections"
@@ -432,7 +482,11 @@ export const ExerciseStory = memo(function ExerciseStory({
             }
           >
             <MessageSquare className="size-3.5 shrink-0 text-primary" aria-hidden />
-            <span className="truncate">{t("story.tabDialogue")}</span>
+            <span className="truncate">
+              {usageData?.usage?.scenes?.length
+                ? t("story.tabUsageScenes")
+                : t("story.tabDialogue")}
+            </span>
           </button>
 
           <button
@@ -494,6 +548,7 @@ export const ExerciseStory = memo(function ExerciseStory({
 
                   <button
                     type="button"
+                    disabled={currentPassage?.status !== "ready"}
                     onClick={() => {
                       if (isPlaying) stop();
                       else speak(storyText);
@@ -524,9 +579,25 @@ export const ExerciseStory = memo(function ExerciseStory({
               </div>
 
               <div className="p-5 sm:p-6 flex flex-col gap-3">
-                <p className="font-sans text-foreground text-base sm:text-lg leading-relaxed">
-                  {renderHighlightedText(storyText)}
-                </p>
+                {currentPassage?.status === "ready" ? (
+                  <p className="font-sans text-foreground text-base sm:text-lg leading-relaxed">
+                    {renderHighlightedText(storyText)}
+                  </p>
+                ) : currentPassage?.status === "error" ? (
+                  <div role="alert" className="flex flex-col items-start gap-2 text-foreground">
+                    <p>{t("learningMaterials.loadErrorTitle")}</p>
+                    <p>{t("learningMaterials.loadErrorDesc")}</p>
+                    <button
+                      type="button"
+                      onClick={() => setStoryAttempt((value) => value + 1)}
+                      className="min-h-[44px] px-4 rounded-xl bg-primary text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    >
+                      {t("action.tryAgain")}
+                    </button>
+                  </div>
+                ) : (
+                  <p role="status">{t("learningMaterials.loading")}</p>
+                )}
                 <div className="flex items-center gap-2 text-xs font-sans font-medium text-muted-foreground pt-2 border-t border-border/60">
                   <Info className="size-3.5 text-primary shrink-0" />
                   <span>{t("story.tapWordHint")}</span>
@@ -604,86 +675,328 @@ export const ExerciseStory = memo(function ExerciseStory({
           </div>
         )}
 
-        {/* ── SECTION 3: CASUAL CONVERSATION DIALOGUE ─────────────────────── */}
+        {/* ── SECTION 3: USAGE SCENES (OR FALLBACK DIALOGUE) ─────────────── */}
         {activeSection === "dialogue" && (
           <div className="flex flex-col gap-4">
-            <div className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 shadow-wp-xs flex flex-col gap-4">
-              <div className="flex items-center justify-between border-b border-border/60 pb-3 flex-wrap gap-2">
-                <div className="flex items-center gap-2">
-                  <MessageSquare className="size-4 text-primary" />
-                  <h3 className="font-sans font-bold text-foreground text-sm">
-                    {t("story.dialogueTitle")}
-                  </h3>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => {
-                    const fullDialogue = dialogueLines
-                      .map((d) => d.speaker + " says: " + d.text)
-                      .join(". ");
-                    speak(fullDialogue);
-                  }}
-                  className="flex min-h-11 items-center gap-1.5 rounded-xl border border-primary/20 bg-secondary px-3 py-1.5 font-sans text-xs font-bold text-primary hover:bg-primary/10 cursor-pointer"
-                >
-                  <Play className="size-3.5" />
-                  <span>{t("story.playDialogue")}</span>
-                </button>
-              </div>
+            {usageData?.usage?.scenes && usageData.usage.scenes.length > 0 ? (
+              <div className="flex flex-col gap-4">
+                {/* Header with Goal */}
+                <div className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 shadow-wp-xs flex flex-col gap-4">
+                  <div className="flex items-center justify-between border-b border-border/60 pb-3 flex-wrap gap-2">
+                    <div className="flex items-center gap-2">
+                      <Sparkles className="size-4 text-primary" aria-hidden />
+                      <h3 className="font-sans font-bold text-foreground text-sm sm:text-base">
+                        {t("story.usageScenesTitle")}
+                      </h3>
+                    </div>
+                    {usageData.usage.canDoStatement && (
+                      <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
+                        {usageData.usage.canDoStatement}
+                      </span>
+                    )}
+                  </div>
 
-              {/* Dialogue bubbles */}
-              <div className="flex flex-col gap-3">
-                {dialogueLines.map((line, idx) => (
+                  {usageData.usage.goal && (
+                    <div className="flex items-start gap-2.5 p-3 rounded-2xl bg-secondary/70 border border-border text-xs sm:text-sm">
+                      <span className="shrink-0 font-bold text-primary px-2 py-0.5 rounded-full bg-primary/15">
+                        {t("story.usageGoalBadge")}
+                      </span>
+                      <p className="text-foreground font-medium leading-relaxed">
+                        {usageData.usage.goal}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Chunk Stepper Navigation */}
                   <div
-                    key={idx}
-                    className={
-                      "flex flex-col gap-1 " +
-                      (line.speaker === "Alex" ? "items-start" : "items-end")
-                    }
+                    className="flex items-center gap-2 overflow-x-auto pb-1"
+                    role="tablist"
+                    aria-label="Usage chunks"
                   >
-                    <span className="text-[11px] font-sans font-bold text-muted-foreground px-2">
-                      {line.speaker}
-                    </span>
+                    {usageData.usage.scenes.map((chunk, idx) => {
+                      const isCompleted = chunkAnswers[idx] !== undefined;
+                      const isCorrect = chunkAnswers[idx] === chunk.check.expectedAnswer;
+                      const isActive = activeChunkIndex === idx;
+
+                      return (
+                        <button
+                          key={chunk.chunkNumber}
+                          type="button"
+                          role="tab"
+                          aria-selected={isActive}
+                          onClick={() => setActiveChunkIndex(idx)}
+                          className={`flex min-h-[44px] min-w-[44px] items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold border transition-all cursor-pointer focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                            isActive
+                              ? "bg-primary text-primary-foreground border-primary shadow-xs"
+                              : isCompleted
+                                ? isCorrect
+                                  ? "bg-feedback-success-surface border-feedback-success text-feedback-success-foreground"
+                                  : "bg-feedback-error-surface border-feedback-error text-feedback-error-foreground"
+                                : "bg-secondary text-foreground border-border hover:bg-secondary/80"
+                          }`}
+                        >
+                          <span>
+                            {t("story.chunkLabel", {
+                              current: idx + 1,
+                              total: usageData.usage.scenes.length,
+                            })}
+                          </span>
+                          {isCompleted &&
+                            (isCorrect ? (
+                              <CheckCircle2 className="size-3.5 shrink-0" aria-hidden />
+                            ) : (
+                              <XCircle className="size-3.5 shrink-0" aria-hidden />
+                            ))}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {/* Active Chunk Content */}
+                  {(() => {
+                    const currentChunk =
+                      usageData.usage.scenes[activeChunkIndex] || usageData.usage.scenes[0];
+                    if (!currentChunk) return null;
+                    const answered = chunkAnswers[activeChunkIndex] !== undefined;
+
+                    return (
+                      <div className="flex flex-col gap-4 mt-1">
+                        {/* Target Vocabulary in this Chunk */}
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="text-xs font-bold text-muted-foreground me-1">
+                            {t("story.tabScene")}:
+                          </span>
+                          {currentChunk.targetWords.map((wordLabel) => {
+                            const matchedItem = wordMap.get(wordLabel.toLowerCase());
+                            return (
+                              <button
+                                key={wordLabel}
+                                type="button"
+                                onClick={() => handlePlayWord(wordLabel, matchedItem?.id)}
+                                aria-label={t("story.listenToWord", { word: wordLabel })}
+                                className="inline-flex min-h-[44px] items-center gap-1.5 px-3 py-1.5 rounded-xl border border-primary/30 bg-primary/10 text-primary font-bold text-xs hover:bg-primary/20 transition-colors cursor-pointer focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+                              >
+                                <span>{wordLabel}</span>
+                                <Volume2 className="size-3.5 opacity-70" aria-hidden />
+                              </button>
+                            );
+                          })}
+                        </div>
+
+                        {/* Scenario Narrative Box */}
+                        <div className="p-4 sm:p-5 rounded-2xl bg-secondary/50 border border-border flex items-start justify-between gap-3 shadow-wp-xs">
+                          <p className="font-sans text-base sm:text-lg leading-relaxed text-foreground flex-1">
+                            {renderHighlightedText(currentChunk.scenario)}
+                          </p>
+                          <button
+                            type="button"
+                            onClick={() => speak(currentChunk.scenario)}
+                            aria-label="Listen to scenario audio"
+                            className="size-11 min-h-[44px] min-w-[44px] rounded-xl bg-primary text-primary-foreground flex items-center justify-center shrink-0 hover:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-xs transition-opacity"
+                          >
+                            <Volume2 className="size-4" aria-hidden />
+                          </button>
+                        </div>
+
+                        {/* Visual Scene Context Brief */}
+                        {currentChunk.imageBrief && (
+                          <div className="text-xs text-muted-foreground bg-muted/40 p-3 rounded-xl border border-border/60">
+                            <span className="font-bold text-foreground">
+                              {t("story.chunkVisualBrief")}:{" "}
+                            </span>
+                            {currentChunk.imageBrief}
+                          </div>
+                        )}
+
+                        {/* Interactive Context Check Question */}
+                        {currentChunk.check?.question && (
+                          <div className="space-y-3 pt-3 border-t border-border/80">
+                            <div className="flex items-center gap-2">
+                              <span className="px-2.5 py-0.5 rounded-full bg-wp-amber/15 text-wp-amber font-bold text-xs">
+                                {t("story.checkContext")}
+                              </span>
+                              <h4 className="font-bold text-sm text-foreground">
+                                {currentChunk.check.question}
+                              </h4>
+                            </div>
+
+                            <p className="text-xs text-muted-foreground">
+                              {t("story.selectAnswer")}
+                            </p>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                              {currentChunk.check.options.map((opt) => {
+                                const isSelected = chunkAnswers[activeChunkIndex] === opt;
+                                const isCorrectOption = opt === currentChunk.check.expectedAnswer;
+
+                                return (
+                                  <button
+                                    key={opt}
+                                    type="button"
+                                    onClick={() => {
+                                      if (answered) return;
+                                      setChunkAnswers((prev) => ({
+                                        ...prev,
+                                        [activeChunkIndex]: opt,
+                                      }));
+                                      if (isCorrectOption) {
+                                        playCorrectSound();
+                                        speak(opt + ". Correct!");
+                                      } else {
+                                        playIncorrectSound();
+                                        speak(
+                                          "Not quite. The answer is " +
+                                            currentChunk.check.expectedAnswer
+                                        );
+                                      }
+                                    }}
+                                    disabled={answered}
+                                    className={`flex min-h-[48px] items-center justify-between px-4 py-2.5 rounded-xl border text-sm font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary ${
+                                      answered
+                                        ? isCorrectOption
+                                          ? "bg-feedback-success-surface border-feedback-success text-feedback-success-foreground"
+                                          : isSelected
+                                            ? "bg-feedback-error-surface border-feedback-error text-feedback-error-foreground"
+                                            : "bg-wp-card border-border opacity-50 text-muted-foreground"
+                                        : "bg-wp-card border-border text-foreground hover:bg-secondary cursor-pointer"
+                                    }`}
+                                  >
+                                    <span>{opt}</span>
+                                    {answered && isCorrectOption && (
+                                      <CheckCircle2
+                                        className="size-4 text-feedback-success shrink-0"
+                                        aria-hidden
+                                      />
+                                    )}
+                                    {answered && isSelected && !isCorrectOption && (
+                                      <XCircle
+                                        className="size-4 text-feedback-error shrink-0"
+                                        aria-hidden
+                                      />
+                                    )}
+                                  </button>
+                                );
+                              })}
+                            </div>
+
+                            {/* Chunk Stepper Prev / Next Footer */}
+                            <div className="flex items-center justify-between pt-2">
+                              {activeChunkIndex > 0 ? (
+                                <button
+                                  type="button"
+                                  onClick={() => setActiveChunkIndex((i) => i - 1)}
+                                  className="inline-flex min-h-[44px] items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors cursor-pointer"
+                                >
+                                  <ArrowLeft className="size-3.5" aria-hidden />
+                                  <span>{t("story.previous")}</span>
+                                </button>
+                              ) : (
+                                <div />
+                              )}
+
+                              {activeChunkIndex < usageData.usage.scenes.length - 1 && (
+                                <button
+                                  type="button"
+                                  onClick={() => setActiveChunkIndex((i) => i + 1)}
+                                  className="inline-flex min-h-[44px] items-center gap-1.5 px-3 py-1.5 rounded-xl bg-primary text-primary-foreground text-xs font-bold hover:opacity-90 transition-opacity cursor-pointer shadow-xs"
+                                >
+                                  <span>
+                                    {t("story.chunkLabel", {
+                                      current: activeChunkIndex + 2,
+                                      total: usageData.usage.scenes.length,
+                                    })}
+                                  </span>
+                                  <ArrowRight className="size-3.5" aria-hidden />
+                                </button>
+                              )}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })()}
+                </div>
+              </div>
+            ) : (
+              /* Fallback to original Casual Dialogue */
+              <div className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 shadow-wp-xs flex flex-col gap-4">
+                <div className="flex items-center justify-between border-b border-border/60 pb-3 flex-wrap gap-2">
+                  <div className="flex items-center gap-2">
+                    <MessageSquare className="size-4 text-primary" />
+                    <h3 className="font-sans font-bold text-foreground text-sm">
+                      {t("story.dialogueTitle")}
+                    </h3>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const fullDialogue = dialogueLines
+                        .map((d) => d.speaker + " says: " + d.text)
+                        .join(". ");
+                      speak(fullDialogue);
+                    }}
+                    className="flex min-h-11 items-center gap-1.5 rounded-xl border border-primary/20 bg-secondary px-3 py-1.5 font-sans text-xs font-bold text-primary hover:bg-primary/10 cursor-pointer"
+                  >
+                    <Play className="size-3.5" />
+                    <span>{t("story.playDialogue")}</span>
+                  </button>
+                </div>
+
+                {/* Dialogue bubbles */}
+                <div className="flex flex-col gap-3">
+                  {dialogueLines.map((line, idx) => (
                     <div
+                      key={idx}
                       className={
-                        "max-w-[85%] rounded-2xl px-4 py-3 text-sm font-sans leading-relaxed flex items-center gap-2.5 shadow-wp-xs " +
-                        (line.speaker === "Alex"
-                          ? "bg-secondary text-foreground rounded-tl-sm border border-border"
-                          : "bg-primary text-primary-foreground rounded-tr-sm")
+                        "flex flex-col gap-1 " +
+                        (line.speaker === "Alex" ? "items-start" : "items-end")
                       }
                     >
-                      <p className="flex-1">{line.text}</p>
-                      <button
-                        type="button"
-                        onClick={() => speak(line.text)}
-                        aria-label={"Play line by " + line.speaker}
+                      <span className="text-[11px] font-sans font-bold text-muted-foreground px-2">
+                        {line.speaker}
+                      </span>
+                      <div
                         className={
-                          "size-11 rounded-lg flex items-center justify-center shrink-0 transition-opacity hover:opacity-80 cursor-pointer " +
+                          "max-w-[85%] rounded-2xl px-4 py-3 text-sm font-sans leading-relaxed flex items-center gap-2.5 shadow-wp-xs " +
                           (line.speaker === "Alex"
-                            ? "bg-wp-card text-primary border border-border"
-                            : "bg-white/20 text-white")
+                            ? "bg-secondary text-foreground rounded-tl-sm border border-border"
+                            : "bg-primary text-primary-foreground rounded-tr-sm")
                         }
                       >
-                        <Volume2 className="size-3.5" />
-                      </button>
+                        <p className="flex-1">{line.text}</p>
+                        <button
+                          type="button"
+                          onClick={() => speak(line.text)}
+                          aria-label={"Play line by " + line.speaker}
+                          className={
+                            "size-11 rounded-lg flex items-center justify-center shrink-0 transition-opacity hover:opacity-80 cursor-pointer " +
+                            (line.speaker === "Alex"
+                              ? "bg-wp-card text-primary border border-border"
+                              : "bg-white/20 text-white")
+                          }
+                        >
+                          <Volume2 className="size-3.5" />
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+                  ))}
+                </div>
 
-            <div className="bg-primary/5 border border-primary/20 rounded-2xl p-4 flex items-center gap-3.5">
-              <div className="size-10 rounded-xl bg-primary text-primary-foreground flex items-center justify-center shrink-0">
-                <Sparkles className="size-5" />
+                <div className="bg-primary/5 border border-primary/20 rounded-2xl p-4 flex items-center gap-3.5 mt-2">
+                  <div className="size-10 rounded-xl bg-primary text-primary-foreground flex items-center justify-center shrink-0">
+                    <Sparkles className="size-5" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-sans font-bold text-foreground text-sm">
+                      {t("story.spokenDrillTitle")}
+                    </h4>
+                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
+                      {t("story.spokenDrillDesc")}
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="flex-1">
-                <h4 className="font-sans font-bold text-foreground text-sm">
-                  {t("story.spokenDrillTitle")}
-                </h4>
-                <p className="font-sans text-xs text-muted-foreground mt-0.5">
-                  {t("story.spokenDrillDesc")}
-                </p>
-              </div>
-            </div>
+            )}
           </div>
         )}
 

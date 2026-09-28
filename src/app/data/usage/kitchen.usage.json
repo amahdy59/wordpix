@@ -1,0 +1,746 @@
+﻿[
+  {
+    "lessonId": "kitchen-1",
+    "lessonName": "The Kitchen 1",
+    "unitId": "kitchen",
+    "unitName": "The Kitchen",
+    "unitOrder": 8,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 28,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Refrigerator",
+      "Stove",
+      "Oven",
+      "Microwave",
+      "Dishwasher",
+      "Toaster",
+      "Blender",
+      "Kettle",
+      "Coffee Maker",
+      "Freezer",
+      "Pot",
+      "Pan",
+      "Frying Pan",
+      "Baking Tray",
+      "Saucepan"
+    ],
+    "targetWordsArabic": [
+      "ثَلَّاجَة (بَرَّاد)",
+      "مَوْقِدُ غَاز / بُوتَاجَاز",
+      "فُرْن",
+      "مَايكْرُووِيف (فُرْنُ المَوْجَات)",
+      "غَسَّالَةُ الصُّحُون (جَلَّايَة)",
+      "مُحَمِّصَةُ الخُبْز (تُوسْتَر)",
+      "خَلَّاطٌ كَهْرَبَائِيّ",
+      "غَلَّايَةُ مَاء (كَاتِل)",
+      "مَاكِينَةُ القَهْوَة",
+      "مُجَمِّد (فِرِيزَر)",
+      "قِدْر / حَلَّة",
+      "مِقْلَاة / طَاسَة",
+      "مِقْلَاةُ القَلْي (طَاسَةُ قَلْي)",
+      "صِينِيَّةُ خَبْز (صَاج)",
+      "قِدْرُ صَلْصَة (كَاسَرُولَة)"
+    ],
+    "usage": {
+      "goal": "Name common kitchen tools, containers, foods, and basic items used for cooking.",
+      "canDoStatement": "I can name common kitchen tools, containers, foods, and basic items used for cooking",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Refrigerator", "Stove", "Oven"],
+          "scenario": "In the kitchen, I can see or use refrigerator, stove, and oven.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Refrigerator", "Stove", "Oven"],
+            "expectedAnswer": "Refrigerator"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use refrigerator, stove, and oven. Emphasize refrigerator, stove, and oven and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Microwave", "Dishwasher", "Toaster"],
+          "scenario": "In the kitchen, I can see or use microwave, dishwasher, and toaster.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Microwave", "Dishwasher", "Toaster"],
+            "expectedAnswer": "Microwave"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use microwave, dishwasher, and toaster. Emphasize microwave, dishwasher, and toaster and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Blender", "Kettle", "Coffee Maker"],
+          "scenario": "In the kitchen, I can see or use blender, kettle, and coffee maker.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Blender", "Kettle", "Coffee Maker"],
+            "expectedAnswer": "Blender"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use blender, kettle, and coffee maker. Emphasize blender, kettle, and coffee maker and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Freezer", "Pot", "Pan"],
+          "scenario": "In the kitchen, I can see or use freezer, pot, and pan.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Freezer", "Pot", "Pan"],
+            "expectedAnswer": "Freezer"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use freezer, pot, and pan. Emphasize freezer, pot, and pan and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Frying Pan", "Baking Tray", "Saucepan"],
+          "scenario": "In the kitchen, I can see or use frying pan, baking tray, and saucepan.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Frying Pan", "Baking Tray", "Saucepan"],
+            "expectedAnswer": "Frying Pan"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use frying pan, baking tray, and saucepan. Emphasize frying pan, baking tray, and saucepan and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Kitchen Mini Story",
+      "text": "I am in the kitchen. I can see refrigerator, stove, and oven. I also notice microwave, dishwasher, and toaster. I point to each item and say its English name. Then I use one more word: blender. We also remember earlier words such as sponge and brush.",
+      "imageBrief": "One uncluttered the kitchen scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Refrigerator"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Microwave"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Blender"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Freezer"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Frying Pan"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Refrigerator"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Stove"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Toaster"
+      }
+    ],
+    "video": {
+      "title": "The Kitchen: See It, Say It",
+      "idea": "30–50 second contextual video set in a kitchen. Show refrigerator, stove, oven, microwave, and dishwasher naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see refrigerator, stove, and oven. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Sponge, Brush from bathroom-6\n3 lesson(s) back: Bath Mat, Shower Curtain from bathroom-4\n7 lesson(s) back: Books, Photo Album from bedroom-4"
+  },
+  {
+    "lessonId": "kitchen-2",
+    "lessonName": "The Kitchen 2",
+    "unitId": "kitchen",
+    "unitName": "The Kitchen",
+    "unitOrder": 8,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 29,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Wok",
+      "Casserole Dish",
+      "Baking Dish",
+      "Steamer",
+      "Pressure Cooker",
+      "Fork",
+      "Knife",
+      "Spoon",
+      "Spatula",
+      "Ladle",
+      "Whisk",
+      "Tongs",
+      "Peeler",
+      "Grater",
+      "Rolling Pin"
+    ],
+    "targetWordsArabic": [
+      "مِقْلَاةٌ صِينِيَّة (وُوك)",
+      "طَاجِنُ فُرْن (صِينِيَّةُ بَايْرِكْس / كَاسَرُول)",
+      "صِينِيَّةُ طَهْيٍ بِالفُرْن (بَايْرِكْس)",
+      "قِدْرُ البُخَار (حَلَّةُ بُخَار / مِبْخَرَة)",
+      "قِدْرُ الضَّغْط (حَلَّةُ بَرِيسْتُو)",
+      "شَوْكَة",
+      "سِكِّين",
+      "مِلْعَقَة",
+      "مِلْعَقَةُ تَقْلِيب (سْبَاتْيُولا)",
+      "مِغْرَفَة",
+      "مِخْفَقَةُ بَيْض (مَضْرَبُ سِلْك)",
+      "مَاسِكُ طَعَام (مِلْقَاط)",
+      "قَشَّارَةُ خُضْرَاوَات",
+      "مِبْشَرَة",
+      "نَشَّابَة / شَوْبَك (مِدْلَاكُ العَجِين)"
+    ],
+    "usage": {
+      "goal": "Name common kitchen tools, containers, foods, and basic items used for cooking.",
+      "canDoStatement": "I can name common kitchen tools, containers, foods, and basic items used for cooking",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Wok", "Casserole Dish", "Baking Dish"],
+          "scenario": "In the kitchen, I can see or use wok, casserole dish, and baking dish.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Wok", "Casserole Dish", "Baking Dish"],
+            "expectedAnswer": "Wok"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use wok, casserole dish, and baking dish. Emphasize wok, casserole dish, and baking dish and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Steamer", "Pressure Cooker", "Fork"],
+          "scenario": "In the kitchen, I can see or use steamer, pressure cooker, and fork.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Steamer", "Pressure Cooker", "Fork"],
+            "expectedAnswer": "Steamer"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use steamer, pressure cooker, and fork. Emphasize steamer, pressure cooker, and fork and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Knife", "Spoon", "Spatula"],
+          "scenario": "In the kitchen, I can see or use knife, spoon, and spatula.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Knife", "Spoon", "Spatula"],
+            "expectedAnswer": "Knife"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use knife, spoon, and spatula. Emphasize knife, spoon, and spatula and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Ladle", "Whisk", "Tongs"],
+          "scenario": "In the kitchen, I can see or use ladle, whisk, and tongs.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Ladle", "Whisk", "Tongs"],
+            "expectedAnswer": "Ladle"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use ladle, whisk, and tongs. Emphasize ladle, whisk, and tongs and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Peeler", "Grater", "Rolling Pin"],
+          "scenario": "In the kitchen, I can see or use peeler, grater, and rolling pin.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Peeler", "Grater", "Rolling Pin"],
+            "expectedAnswer": "Peeler"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use peeler, grater, and rolling pin. Emphasize peeler, grater, and rolling pin and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Kitchen Mini Story",
+      "text": "I am in the kitchen. I can see wok, casserole dish, and baking dish. I also notice steamer, pressure cooker, and fork. I point to each item and say its English name. Then I use one more word: knife. We also remember earlier words such as refrigerator and stove.",
+      "imageBrief": "One uncluttered the kitchen scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Wok"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Steamer"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Knife"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Ladle"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Peeler"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Wok"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Casserole Dish"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Fork"
+      }
+    ],
+    "video": {
+      "title": "The Kitchen: See It, Say It",
+      "idea": "30–50 second contextual video set in a kitchen. Show wok, casserole dish, baking dish, steamer, and pressure cooker naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see wok, casserole dish, and baking dish. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Refrigerator, Stove from kitchen-1\n3 lesson(s) back: Face Cream, Sunscreen from bathroom-5\n7 lesson(s) back: Bathtub, Shower from bathroom-1"
+  },
+  {
+    "lessonId": "kitchen-3",
+    "lessonName": "The Kitchen 3",
+    "unitId": "kitchen",
+    "unitName": "The Kitchen",
+    "unitOrder": 8,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 30,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Can Opener",
+      "Corkscrew",
+      "Plate",
+      "Bowl",
+      "Mug",
+      "Glass",
+      "Cup",
+      "Saucer",
+      "Cutting Board",
+      "Colander",
+      "Measuring Cup",
+      "Measuring Spoon",
+      "Mixing Bowl",
+      "Pitcher",
+      "Dish Towel"
+    ],
+    "targetWordsArabic": [
+      "فَتَّاحَةُ عُلَب",
+      "فَتَّاحَةُ زُجَاجَات (مِفْتَاحُ الفِلِّين)",
+      "طَبَق / صَحْن",
+      "زَبْدِيَّة / سُلْطَانِيَّة (وِعَاء / طَاسَة)",
+      "كُوبٌ كَبِير (مَجّ)",
+      "كَأْسُ زُجَاج (كُوبُ مَاء)",
+      "فِنْجَان",
+      "صَحْنُ الفِنْجَان",
+      "لَوْحُ التَّقْطِيع (قَرْمَة)",
+      "مِصْفَاة (مِصْفَاةُ مَعْكَرُونَة)",
+      "كُوبُ المِعْيَار (كُوبُ قِيَاس)",
+      "مِلْعَقَةُ قِيَاس (مِلْعَقَةٌ مِعْيَارِيَّة)",
+      "وِعَاءُ الخَلْط (طَاسَةُ عَجْن)",
+      "إِبْرِيق (دَوْرَقُ مَاء / شَفْشَق)",
+      "فُوطَةُ مَطْبَخ (مِنْشَفَةُ صُحُون)"
+    ],
+    "usage": {
+      "goal": "Name common kitchen tools, containers, foods, and basic items used for cooking.",
+      "canDoStatement": "I can name common kitchen tools, containers, foods, and basic items used for cooking",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Can Opener", "Corkscrew", "Plate"],
+          "scenario": "In the kitchen, I can see or use can opener, corkscrew, and plate.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Can Opener", "Corkscrew", "Plate"],
+            "expectedAnswer": "Can Opener"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use can opener, corkscrew, and plate. Emphasize can opener, corkscrew, and plate and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bowl", "Mug", "Glass"],
+          "scenario": "In the kitchen, I can see or use bowl, mug, and glass.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Bowl", "Mug", "Glass"],
+            "expectedAnswer": "Bowl"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use bowl, mug, and glass. Emphasize bowl, mug, and glass and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Cup", "Saucer", "Cutting Board"],
+          "scenario": "In the kitchen, I can see or use cup, saucer, and cutting board.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Cup", "Saucer", "Cutting Board"],
+            "expectedAnswer": "Cup"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use cup, saucer, and cutting board. Emphasize cup, saucer, and cutting board and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Colander", "Measuring Cup", "Measuring Spoon"],
+          "scenario": "In the kitchen, I can see or use colander, measuring cup, and measuring spoon.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Colander", "Measuring Cup", "Measuring Spoon"],
+            "expectedAnswer": "Colander"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use colander, measuring cup, and measuring spoon. Emphasize colander, measuring cup, and measuring spoon and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Mixing Bowl", "Pitcher", "Dish Towel"],
+          "scenario": "In the kitchen, I can see or use mixing bowl, pitcher, and dish towel.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Mixing Bowl", "Pitcher", "Dish Towel"],
+            "expectedAnswer": "Mixing Bowl"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use mixing bowl, pitcher, and dish towel. Emphasize mixing bowl, pitcher, and dish towel and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Kitchen Mini Story",
+      "text": "I am in the kitchen. I can see can opener, corkscrew, and plate. I also notice bowl, mug, and glass. I point to each item and say its English name. Then I use one more word: cup. We also remember earlier words such as wok and casserole dish.",
+      "imageBrief": "One uncluttered the kitchen scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Can Opener"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Bowl"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Cup"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Colander"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Mixing Bowl"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Can Opener"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Corkscrew"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Glass"
+      }
+    ],
+    "video": {
+      "title": "The Kitchen: See It, Say It",
+      "idea": "30–50 second contextual video set in a kitchen. Show can opener, corkscrew, plate, bowl, and mug naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see can opener, corkscrew, and plate. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Wok, Casserole Dish from kitchen-2\n3 lesson(s) back: Sponge, Brush from bathroom-6\n7 lesson(s) back: Soap, Shampoo from bathroom-2"
+  },
+  {
+    "lessonId": "kitchen-4",
+    "lessonName": "The Kitchen 4",
+    "unitId": "kitchen",
+    "unitName": "The Kitchen",
+    "unitOrder": 8,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 31,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Oven Mitt",
+      "Apron",
+      "Trash Can",
+      "Paper Towel",
+      "Plastic Wrap",
+      "Aluminum Foil",
+      "Food Container",
+      "Sponge",
+      "Dish Soap",
+      "Dish Rack",
+      "Cling Film",
+      "Bread",
+      "Butter",
+      "Milk",
+      "Egg"
+    ],
+    "targetWordsArabic": [
+      "قُفَّازُ الفُرْن (مَاسِكُ حَرَارَة)",
+      "مِرْيَلَةُ مَطْبَخ (مِرْيَلَة)",
+      "سلة مهملات",
+      "مَنَادِيلُ مَطْبَخ (مَحَارِمُ وَرَقِيَّة)",
+      "نَايْلُون تَغْلِيف (بَلاسْتِيك غِذَائِيّ)",
+      "وَرَقُ أَلُومِنْيُوم (سُولِيفَان / وَرَقُ قَصْدِير)",
+      "حَافِظَةُ طَعَام (عُلْبَةُ ثَلَّاجَة)",
+      "إسفنجة",
+      "صَابُونُ غَسِيلِ الأَطْبَاق (سَائِلُ جَلِي)",
+      "مُجَفِّفُ الأَطْبَاق (مَطْبَقِيَّة)",
+      "غِلَافٌ بَلاسْتِيكِيٌّ لَاصِق (كْلِينْغ فِيلْم)",
+      "خُبْز (عَيْش)",
+      "زُبْدَة",
+      "حَلِيب (لَبَن)",
+      "بَيْضَة (بَيْض)"
+    ],
+    "usage": {
+      "goal": "Name common kitchen tools, containers, foods, and basic items used for cooking.",
+      "canDoStatement": "I can name common kitchen tools, containers, foods, and basic items used for cooking",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Oven Mitt", "Apron", "Trash Can"],
+          "scenario": "In the kitchen, I can see or use oven mitt, apron, and trash can.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Oven Mitt", "Apron", "Trash Can"],
+            "expectedAnswer": "Oven Mitt"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use oven mitt, apron, and trash can. Emphasize oven mitt, apron, and trash can and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Paper Towel", "Plastic Wrap", "Aluminum Foil"],
+          "scenario": "In the kitchen, I can see or use paper towel, plastic wrap, and aluminum foil.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Paper Towel", "Plastic Wrap", "Aluminum Foil"],
+            "expectedAnswer": "Paper Towel"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use paper towel, plastic wrap, and aluminum foil. Emphasize paper towel, plastic wrap, and aluminum foil and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Food Container", "Sponge", "Dish Soap"],
+          "scenario": "In the kitchen, I can see or use food container, sponge, and dish soap.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Food Container", "Sponge", "Dish Soap"],
+            "expectedAnswer": "Food Container"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use food container, sponge, and dish soap. Emphasize food container, sponge, and dish soap and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Dish Rack", "Cling Film", "Bread"],
+          "scenario": "In the kitchen, I can see or use dish rack, cling film, and bread.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Dish Rack", "Cling Film", "Bread"],
+            "expectedAnswer": "Dish Rack"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use dish rack, cling film, and bread. Emphasize dish rack, cling film, and bread and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Butter", "Milk", "Egg"],
+          "scenario": "In the kitchen, I can see or use butter, milk, and egg.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Butter", "Milk", "Egg"],
+            "expectedAnswer": "Butter"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use butter, milk, and egg. Emphasize butter, milk, and egg and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Kitchen Mini Story",
+      "text": "I am in the kitchen. I can see oven mitt, apron, and trash can. I also notice paper towel, plastic wrap, and aluminum foil. I point to each item and say its English name. Then I use one more word: food container. We also remember earlier words such as can opener and corkscrew.",
+      "imageBrief": "One uncluttered the kitchen scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Oven Mitt"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Paper Towel"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Food Container"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Dish Rack"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Butter"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Oven Mitt"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Apron"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Aluminum Foil"
+      }
+    ],
+    "video": {
+      "title": "The Kitchen: See It, Say It",
+      "idea": "30–50 second contextual video set in a kitchen. Show oven mitt, apron, trash can, paper towel, and plastic wrap naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see oven mitt, apron, and trash can. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Can Opener, Corkscrew from kitchen-3\n3 lesson(s) back: Refrigerator, Stove from kitchen-1\n7 lesson(s) back: Toilet Paper, Cotton Balls from bathroom-3"
+  },
+  {
+    "lessonId": "kitchen-5",
+    "lessonName": "The Kitchen 5",
+    "unitId": "kitchen",
+    "unitName": "The Kitchen",
+    "unitOrder": 8,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 32,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Cheese",
+      "Rice",
+      "Pasta",
+      "Cooking Oil",
+      "Salt",
+      "Sugar",
+      "Pepper",
+      "Flour",
+      "Vinegar",
+      "Honey",
+      "Apple",
+      "Juice"
+    ],
+    "targetWordsArabic": [
+      "جُبْن / جُبْنَة",
+      "أَرُزّ (رُزّ)",
+      "مَعْكَرُونَة (بَاسْتَا)",
+      "زَيْتُ الطَّهْي (زَيْت)",
+      "مِلْح",
+      "سُكَّر",
+      "فُلْفُل (فُلْفُلٌ أَسْوَد)",
+      "طَحِين (دَقِيق)",
+      "خَلّ",
+      "عَسَل (عَسَلُ نَحْل)",
+      "تُفَّاحَة",
+      "-"
+    ],
+    "usage": {
+      "goal": "Name common kitchen tools, containers, foods, and basic items used for cooking.",
+      "canDoStatement": "I can name common kitchen tools, containers, foods, and basic items used for cooking",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Cheese", "Rice", "Pasta"],
+          "scenario": "In the kitchen, I can see or use cheese, rice, and pasta.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Cheese", "Rice", "Pasta"],
+            "expectedAnswer": "Cheese"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use cheese, rice, and pasta. Emphasize cheese, rice, and pasta and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Cooking Oil", "Salt", "Sugar"],
+          "scenario": "In the kitchen, I can see or use cooking oil, salt, and sugar.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Cooking Oil", "Salt", "Sugar"],
+            "expectedAnswer": "Cooking Oil"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use cooking oil, salt, and sugar. Emphasize cooking oil, salt, and sugar and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Pepper", "Flour", "Vinegar"],
+          "scenario": "In the kitchen, I can see or use pepper, flour, and vinegar.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Pepper", "Flour", "Vinegar"],
+            "expectedAnswer": "Pepper"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use pepper, flour, and vinegar. Emphasize pepper, flour, and vinegar and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Honey", "Apple", "Juice"],
+          "scenario": "In the kitchen, I can see or use honey, apple, and juice.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Honey", "Apple", "Juice"],
+            "expectedAnswer": "Honey"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use honey, apple, and juice. Emphasize honey, apple, and juice and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Kitchen Mini Story",
+      "text": "I am in the kitchen. I can see cheese, rice, and pasta. I also notice cooking oil, salt, and sugar. I point to each item and say its English name. Then I use one more word: pepper. We also remember earlier words such as oven mitt and apron.",
+      "imageBrief": "One uncluttered the kitchen scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Cheese"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Cooking Oil"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pepper"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Honey"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Cheese"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Rice"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Sugar"
+      }
+    ],
+    "video": {
+      "title": "The Kitchen: See It, Say It",
+      "idea": "30–50 second contextual video set in a kitchen. Show cheese, rice, pasta, cooking oil, and salt naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see cheese, rice, and pasta. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Oven Mitt, Apron from kitchen-4\n3 lesson(s) back: Wok, Casserole Dish from kitchen-2\n7 lesson(s) back: Bath Mat, Shower Curtain from bathroom-4"
+  }
+]

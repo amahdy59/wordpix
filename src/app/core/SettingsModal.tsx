@@ -22,8 +22,10 @@ import { useAudio } from "../shared/useAudio";
 import { useModalA11y } from "../shared/useModalA11y";
 import { Button } from "../shared/Button";
 import { IconButton } from "../shared/IconButton";
-import { COURSE_UNITS } from "../data/lessons";
+import { COURSE_UNITS } from "../data/courseCatalog";
 import { loadUnitVocabulary } from "../data/vocabulary";
+import { loadLessonStory } from "../data/lessonStoryLoader";
+import { loadLexicon } from "../data/lexiconLoader";
 
 /** Speech rates offered in Settings, slowest first. */
 const SPEECH_RATES = [0.5, 0.75, 1] as const;
@@ -80,7 +82,15 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
     try {
       for (let i = 0; i < unitIds.length; i += batchSize) {
         const batch = unitIds.slice(i, i + batchSize);
-        await Promise.all(batch.map((id) => loadUnitVocabulary(id)));
+        await Promise.all(
+          batch.map(async (id) => {
+            await Promise.all([
+              loadUnitVocabulary(id),
+              loadLexicon(COURSE_UNITS[id].wordIds),
+              ...COURSE_UNITS[id].groups.map((group) => loadLessonStory(group.id)),
+            ]);
+          })
+        );
         completed += batch.length;
         setPreloadProgress(Math.round((completed / unitIds.length) * 100));
       }

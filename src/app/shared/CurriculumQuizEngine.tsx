@@ -50,13 +50,15 @@ interface Props {
   /**
    * How many questions to show per page on desktop (≥1024px).
    * On mobile, always shows 1 question at a time.
-   * Defaults to 3.
+   * Defaults to 1 for focused single-question flow.
    */
   desktopPageSize?: number;
   /** Optional unit identifier or topic (e.g. "office", "hotel", "bathroom") to show a context-specific Can-Do challenge */
   unitId?: string;
   /** Optional explicit Can-Do scenario */
   canDoScenario?: CanDoTransferChallenge;
+  /** Optional primary action rendered on the completion screen (e.g. "Continue to Discussion") */
+  renderCompletionAction?: (result: QuizResult) => React.ReactNode;
 }
 
 // ─── Pill status type ────────────────────────────────────────────────────────
@@ -110,11 +112,11 @@ function QuestionCard({
 
   return (
     <article
-      className="overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs"
+      className="overflow-hidden rounded-3xl border border-border/80 bg-card shadow-wp-xs hover:border-primary/30 transition-all duration-200"
       aria-labelledby={questionHeadingId}
     >
-      <div className="p-5 sm:p-6">
-        {/* Counter label (mobile single-question mode) */}
+      <div className="p-6 sm:p-8">
+        {/* Counter label (single-question mode) */}
         {showCounter && (
           <p className="mb-3 text-xs font-bold uppercase tracking-wider text-muted-foreground">
             {t("quiz.questionOf", {
@@ -129,11 +131,11 @@ function QuestionCard({
           ref={headingRef}
           id={questionHeadingId}
           tabIndex={-1}
-          className="text-lg font-black leading-snug text-foreground focus-visible:outline-none sm:text-xl"
+          className="text-xl font-black leading-snug text-foreground focus-visible:outline-none sm:text-2xl"
         >
           {/* Question number badge in desktop multi-question mode */}
           {!showCounter && (
-            <span className="me-2 inline-flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
+            <span className="me-2.5 inline-flex size-8 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-sm font-black text-primary">
               {index + 1}
             </span>
           )}
@@ -145,7 +147,7 @@ function QuestionCard({
 
         {/* Options or Custom Body */}
         {question.customBody ? (
-          <div className="mt-5">
+          <div className="mt-6">
             {question.customBody({
               answered,
               currentAnswer,
@@ -154,7 +156,11 @@ function QuestionCard({
           </div>
         ) : question.options ? (
           <ChoiceOptionGroup
-            className={`mt-5 grid gap-3 ${question.optionColumns === "two" ? "sm:grid-cols-2" : ""}`}
+            className={`mt-6 grid gap-3.5 ${
+              question.optionColumns === "two" || (!question.optionColumns && showCounter)
+                ? "sm:grid-cols-2"
+                : ""
+            }`}
             label={question.stem}
             options={question.options}
             value={currentAnswer}
@@ -173,30 +179,27 @@ function QuestionCard({
           role="status"
           aria-live="polite"
           aria-atomic="true"
-          className={`border-t px-5 py-4 sm:px-6 ${
+          className={`border-t px-6 py-5 transition-all duration-200 ${
             isCorrect
               ? "border-feedback-success-border bg-feedback-success-surface"
               : "border-feedback-error-border bg-feedback-error-surface"
           }`}
         >
-          <div className="flex gap-3">
+          <div className="flex items-center gap-3">
             {isCorrect ? (
               <CheckCircle2
-                className="mt-0.5 size-5 shrink-0 text-feedback-success-foreground"
+                className="size-5 shrink-0 text-feedback-success-foreground"
                 aria-hidden
               />
             ) : (
-              <XCircle
-                className="mt-0.5 size-5 shrink-0 text-feedback-error-foreground"
-                aria-hidden
-              />
+              <XCircle className="size-5 shrink-0 text-feedback-error-foreground" aria-hidden />
             )}
             <p
-              className={`text-sm font-semibold leading-6 ${
+              className={`text-sm sm:text-base font-bold leading-6 ${
                 isCorrect ? "text-feedback-success-foreground" : "text-feedback-error-foreground"
               }`}
             >
-              <span className="font-black">
+              <span>
                 {isCorrect
                   ? t("quiz.correctFeedback") || "Correct! Excellent work."
                   : t("quiz.incorrectFeedback") || "Incorrect. Review the explanation below."}
@@ -205,11 +208,12 @@ function QuestionCard({
           </div>
 
           {question.explanation && (
-            <div className="mt-3 rounded-xl border border-border/60 bg-card p-3.5">
-              <p className="text-xs font-black uppercase tracking-wider text-muted-foreground">
-                {t("quiz.explanation") || "Explanation"}
+            <div className="mt-3.5 rounded-2xl border border-border/80 bg-card/85 p-4 shadow-wp-xs backdrop-blur-xs">
+              <p className="text-xs font-black uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
+                <Sparkles className="size-3.5 text-primary" aria-hidden />
+                <span>{t("quiz.explanation") || "Explanation"}</span>
               </p>
-              <p className="mt-1.5 text-sm font-medium leading-relaxed text-foreground">
+              <p className="mt-1.5 text-sm sm:text-base font-medium leading-relaxed text-foreground">
                 {question.explanation}
               </p>
             </div>
@@ -380,9 +384,10 @@ export function CurriculumQuizEngine({
   onComplete,
   onAnswerChange,
   className = "",
-  desktopPageSize = 3,
+  desktopPageSize = 1,
   unitId,
   canDoScenario,
+  renderCompletionAction,
 }: Props) {
   const { t } = useI18n();
   const isDesktop = useIsDesktop();
@@ -501,23 +506,23 @@ export function CurriculumQuizEngine({
 
     return (
       <div
-        className={`space-y-6 ${className}`}
+        className={`max-w-3xl mx-auto w-full space-y-6 ${className}`}
         role="region"
         aria-label={t("quiz.completedTitle") || "Quiz Completed"}
       >
-        <div className="flex flex-col items-center gap-5 rounded-3xl border border-border bg-card p-8 text-center shadow-wp-xs">
-          <div className="flex size-16 items-center justify-center rounded-2xl bg-feedback-success-surface">
-            <Trophy className="size-8 text-feedback-success-foreground" aria-hidden />
+        <div className="flex flex-col items-center gap-5 rounded-3xl border border-border/80 bg-card p-8 sm:p-10 text-center shadow-wp-xs">
+          <div className="flex size-20 items-center justify-center rounded-3xl bg-feedback-success-surface border border-feedback-success-border shadow-wp-xs">
+            <Trophy className="size-10 text-feedback-success-foreground" aria-hidden />
           </div>
           <div>
             <h2
               ref={completionRef}
               tabIndex={-1}
-              className="text-2xl font-black text-foreground focus-visible:outline-none"
+              className="text-2xl sm:text-3xl font-black text-foreground focus-visible:outline-none"
             >
               {t("quiz.completedTitle") || "Quiz Completed!"}
             </h2>
-            <p className="mt-1 text-sm text-muted-foreground">
+            <p className="mt-1 text-sm sm:text-base text-muted-foreground">
               {t("quiz.completedSubtitle") || "Great job completing this practice exercise."}
             </p>
           </div>
@@ -525,9 +530,9 @@ export function CurriculumQuizEngine({
           {/* Score */}
           <div
             aria-label={`${t("quiz.score") || "Score"}: ${correct} out of ${total}`}
-            className="flex flex-col items-center gap-1"
+            className="flex flex-col items-center gap-1 my-1"
           >
-            <span className="text-5xl font-black text-primary">{pct}%</span>
+            <span className="text-5xl sm:text-6xl font-black text-primary">{pct}%</span>
             <span className="text-sm font-semibold text-muted-foreground">
               {t("quiz.scoreSummary", { correct, total })}
             </span>
@@ -558,18 +563,23 @@ export function CurriculumQuizEngine({
             })}
           </div>
 
-          <button
-            type="button"
-            onClick={handleReset}
-            className="flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-secondary px-5 py-2.5 text-sm font-bold text-foreground transition-colors hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            <RotateCcw className="size-4" aria-hidden />
-            {t("quiz.restart") || "Restart Quiz"}
-          </button>
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+            <button
+              type="button"
+              onClick={handleReset}
+              className="flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-secondary px-5 py-2.5 text-sm font-bold text-foreground transition-colors hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              <RotateCcw className="size-4" aria-hidden />
+              <span>{t("quiz.restart") || "Restart Quiz"}</span>
+            </button>
+          </div>
         </div>
 
         {/* Can-Do Action Challenge */}
         {activeChallenge && <CanDoChallengeCard challenge={activeChallenge} />}
+
+        {/* Optional Action passed by parent stage */}
+        {renderCompletionAction && renderCompletionAction({ correct, total })}
       </div>
     );
   }
@@ -584,13 +594,14 @@ export function CurriculumQuizEngine({
         const isMobileActive = i === mobileIndex;
         const pageStart = desktopPage * desktopPageSize;
         const pageEnd = pageStart + desktopPageSize;
-        const isDesktopActivePage = i >= pageStart && i < pageEnd;
+        const isDesktopActiveSingle = desktopPageSize === 1 && i === desktopPage;
+        const isDesktopActivePage = desktopPageSize > 1 && i >= pageStart && i < pageEnd;
 
         const status: PillStatus = isAnswered
           ? isCorrectAnswer
             ? "correct"
             : "incorrect"
-          : isMobileActive
+          : isMobileActive || isDesktopActiveSingle
             ? "active"
             : isDesktopActivePage
               ? "active-page"
@@ -606,7 +617,7 @@ export function CurriculumQuizEngine({
                 setMobileIndex(i);
               }}
               aria-label={t("quiz.questionPillLabel", { number: i + 1 }) || `Question ${i + 1}`}
-              aria-current={isMobileActive ? "step" : undefined}
+              aria-current={isMobileActive || isDesktopActiveSingle ? "step" : undefined}
               className={`flex size-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-xl border-2 text-sm font-black transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${PILL_STYLES[status]}`}
             >
               {status === "correct" ? (
@@ -626,7 +637,7 @@ export function CurriculumQuizEngine({
   // ── Mobile Layout (single question at a time) ─────────────────────────────
 
   const mobileLayout = (
-    <div className={`flex flex-col gap-5 ${className}`}>
+    <div className={`flex flex-col gap-6 max-w-3xl mx-auto w-full ${className}`}>
       {progressPills}
 
       {mobileQuestion && (
@@ -679,13 +690,16 @@ export function CurriculumQuizEngine({
   // ── Desktop Layout (desktopPageSize questions per page) ──────────────────
 
   const desktopLayout = (
-    <div className={`flex flex-col gap-5 ${className}`}>
+    <div className={`flex flex-col gap-6 max-w-3xl mx-auto w-full ${className}`}>
       {/* Progress pills + page indicator */}
       <div className="flex flex-wrap items-center justify-between gap-3">
         {progressPills}
         <span className="shrink-0 text-xs font-bold text-muted-foreground">
-          {t("quiz.pageOf", { current: desktopPage + 1, total: totalPages }) ||
-            `Page ${desktopPage + 1} of ${totalPages}`}
+          {desktopPageSize === 1
+            ? t("quiz.questionOf", { current: desktopPage + 1, total: questions.length }) ||
+              `Question ${desktopPage + 1} of ${questions.length}`
+            : t("quiz.pageOf", { current: desktopPage + 1, total: totalPages }) ||
+              `Page ${desktopPage + 1} of ${totalPages}`}
         </span>
       </div>
 
@@ -693,7 +707,7 @@ export function CurriculumQuizEngine({
       <div
         className={`grid gap-4 ${
           desktopPageQuestions.length === 1
-            ? "grid-cols-1 max-w-2xl"
+            ? "grid-cols-1 w-full"
             : desktopPageQuestions.length === 2
               ? "grid-cols-2"
               : "grid-cols-3"
@@ -716,7 +730,7 @@ export function CurriculumQuizEngine({
               engineId={engineId}
               t={t}
               headingRef={pageIdx === 0 ? headingRef : undefined}
-              showCounter={false}
+              showCounter={desktopPageSize === 1}
             />
           );
         })}
@@ -731,7 +745,11 @@ export function CurriculumQuizEngine({
             className="inline-flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-card px-5 py-2.5 text-sm font-bold text-foreground transition-all hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-            <span>{t("quiz.previousPage") || "Previous"}</span>
+            <span>
+              {desktopPageSize === 1
+                ? t("quiz.previousQuestion") || "Previous Question"
+                : t("quiz.previousPage") || "Previous"}
+            </span>
           </button>
         ) : (
           <div />
@@ -746,7 +764,9 @@ export function CurriculumQuizEngine({
             <span>
               {isLastDesktopPage
                 ? t("quiz.viewResults") || "View Results"
-                : t("quiz.nextPage") || "Next Questions"}
+                : desktopPageSize === 1
+                  ? t("quiz.nextQuestion") || "Next Question"
+                  : t("quiz.nextPage") || "Next Questions"}
             </span>
             <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
           </button>

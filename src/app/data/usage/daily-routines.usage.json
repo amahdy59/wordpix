@@ -1,0 +1,542 @@
+﻿[
+  {
+    "lessonId": "daily-routines-1",
+    "lessonName": "Daily Routines 1",
+    "unitId": "daily-routines",
+    "unitName": "Daily Routines",
+    "unitOrder": 16,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 61,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Wake Up",
+      "Alarm Clock",
+      "Get Out of Bed",
+      "Stretch",
+      "Brush Teeth",
+      "Wash Face",
+      "Take a Shower",
+      "Get Dressed",
+      "Eat Breakfast",
+      "Pack Bag",
+      "Commute",
+      "Arrive",
+      "Start Work",
+      "Attend Class",
+      "Take Notes"
+    ],
+    "targetWordsArabic": [
+      "عملية يُسمّى «واكي وب»",
+      "سَاعَةُ المُنَبِّه (مُنَبِّه)",
+      "ينهض من السرير",
+      "مرونة",
+      "مصطلح مرتبط بالموضوع يُسمّى «بروش تييث»",
+      "يغسل وجهه",
+      "يستحم بالدُش",
+      "مصطلح مرتبط بالموضوع يُسمّى «جيت دريسسيد»",
+      "يتناول الإفطار",
+      "يجهّز حقيبته",
+      "تنقل يومي",
+      "يصل",
+      "يبدأ العمل",
+      "جزء يُسمّى «اتتيند كلاسس»",
+      "يدوّن ملاحظات"
+    ],
+    "usage": {
+      "goal": "Describe a simple daily routine in short connected steps.",
+      "canDoStatement": "I can describe a simple daily routine in short connected steps",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Wake Up", "Alarm Clock", "Get Out of Bed"],
+          "scenario": "My routine includes wake up, alarm clock, and get out of bed.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Wake Up", "Alarm Clock", "Get Out of Bed"],
+            "expectedAnswer": "Wake Up"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes wake up, alarm clock, and get out of bed. Emphasize wake up, alarm clock, and get out of bed and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Stretch", "Brush Teeth", "Wash Face"],
+          "scenario": "My routine includes stretch, brush teeth, and wash face.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Stretch", "Brush Teeth", "Wash Face"],
+            "expectedAnswer": "Stretch"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes stretch, brush teeth, and wash face. Emphasize stretch, brush teeth, and wash face and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Take a Shower", "Get Dressed", "Eat Breakfast"],
+          "scenario": "My routine includes take a shower, get dressed, and eat breakfast.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Take a Shower", "Get Dressed", "Eat Breakfast"],
+            "expectedAnswer": "Take a Shower"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes take a shower, get dressed, and eat breakfast. Emphasize take a shower, get dressed, and eat breakfast and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Pack Bag", "Commute", "Arrive"],
+          "scenario": "My routine includes pack bag, commute, and arrive.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Pack Bag", "Commute", "Arrive"],
+            "expectedAnswer": "Pack Bag"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes pack bag, commute, and arrive. Emphasize pack bag, commute, and arrive and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Start Work", "Attend Class", "Take Notes"],
+          "scenario": "My routine includes start work, attend class, and take notes.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Start Work", "Attend Class", "Take Notes"],
+            "expectedAnswer": "Start Work"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes start work, attend class, and take notes. Emphasize start work, attend class, and take notes and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Daily Routines Mini Story",
+      "text": "My day has many small actions. First, I wake up. Then I alarm clock and get out of bed. Later, I stretch. I also brush teeth. These actions help me describe my routine in English. We also remember earlier words such as top and bottom.",
+      "imageBrief": "One uncluttered daily routines scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Wake Up"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Stretch"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Take a Shower"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pack Bag"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Start Work"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Wake Up"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Alarm Clock"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Wash Face"
+      }
+    ],
+    "video": {
+      "title": "Daily Routines: See It, Say It",
+      "idea": "30–50 second contextual video set in a day. Show wake up, alarm clock, get out of bed, stretch, and brush teeth naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see wake up, alarm clock, and get out of bed. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Top, Bottom from prepositions-of-place-3\n3 lesson(s) back: In, On from prepositions-of-place-1\n7 lesson(s) back: Wake Up, Get Up from daily-action-verbs-1"
+  },
+  {
+    "lessonId": "daily-routines-2",
+    "lessonName": "Daily Routines 2",
+    "unitId": "daily-routines",
+    "unitName": "Daily Routines",
+    "unitOrder": 16,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 62,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Have a Meeting",
+      "Lunch Break",
+      "Collaborate",
+      "Submit Work",
+      "Leave Office",
+      "After School",
+      "Homework",
+      "Exercise",
+      "Practice",
+      "Grocery Shop",
+      "Cook Dinner",
+      "Walk the Dog",
+      "Play Outside",
+      "Read a Book",
+      "Watch TV"
+    ],
+    "targetWordsArabic": [
+      "يعقد اجتماعًا",
+      "عامل يُسمّى «لونتش برياك»",
+      "يتعاون",
+      "يسلّم العمل",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليافي وففيكي»",
+      "بعد المدرسة",
+      "واجب منزلي",
+      "تمرين",
+      "يتدرب",
+      "يتسوّق لشراء البقالة",
+      "يُعِدّ العشاء",
+      "يُنزّه الكلب",
+      "يلعب في الخارج",
+      "يقرأ كتابًا",
+      "مصطلح مرتبط بالموضوع يُسمّى «واتتش تف»"
+    ],
+    "usage": {
+      "goal": "Describe a simple daily routine in short connected steps.",
+      "canDoStatement": "I can describe a simple daily routine in short connected steps",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Have a Meeting", "Lunch Break", "Collaborate"],
+          "scenario": "My routine includes have a meeting, lunch break, and collaborate.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Have a Meeting", "Lunch Break", "Collaborate"],
+            "expectedAnswer": "Have a Meeting"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes have a meeting, lunch break, and collaborate. Emphasize have a meeting, lunch break, and collaborate and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Submit Work", "Leave Office", "After School"],
+          "scenario": "My routine includes submit work, leave office, and after school.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Submit Work", "Leave Office", "After School"],
+            "expectedAnswer": "Submit Work"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes submit work, leave office, and after school. Emphasize submit work, leave office, and after school and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Homework", "Exercise", "Practice"],
+          "scenario": "My routine includes homework, exercise, and practice.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Homework", "Exercise", "Practice"],
+            "expectedAnswer": "Homework"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes homework, exercise, and practice. Emphasize homework, exercise, and practice and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Grocery Shop", "Cook Dinner", "Walk the Dog"],
+          "scenario": "My routine includes grocery shop, cook dinner, and walk the dog.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Grocery Shop", "Cook Dinner", "Walk the Dog"],
+            "expectedAnswer": "Grocery Shop"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes grocery shop, cook dinner, and walk the dog. Emphasize grocery shop, cook dinner, and walk the dog and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Play Outside", "Read a Book", "Watch TV"],
+          "scenario": "My routine includes play outside, read a book, and watch tv.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Play Outside", "Read a Book", "Watch TV"],
+            "expectedAnswer": "Play Outside"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes play outside, read a book, and watch tv. Emphasize play outside, read a book, and watch tv and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Daily Routines Mini Story",
+      "text": "My day has many small actions. First, I have a meeting. Then I lunch break and collaborate. Later, I submit work. I also leave office. These actions help me describe my routine in English. We also remember earlier words such as wake up and alarm clock.",
+      "imageBrief": "One uncluttered daily routines scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Have a Meeting"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Submit Work"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Homework"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Grocery Shop"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Play Outside"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Have a Meeting"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Lunch Break"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "After School"
+      }
+    ],
+    "video": {
+      "title": "Daily Routines: See It, Say It",
+      "idea": "30–50 second contextual video set in a day. Show have a meeting, lunch break, collaborate, submit work, and leave office naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see have a meeting, lunch break, and collaborate. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Wake Up, Alarm Clock from daily-routines-1\n3 lesson(s) back: Against, Around from prepositions-of-place-2\n7 lesson(s) back: Gulp, Bite from daily-action-verbs-2"
+  },
+  {
+    "lessonId": "daily-routines-3",
+    "lessonName": "Daily Routines 3",
+    "unitId": "daily-routines",
+    "unitName": "Daily Routines",
+    "unitOrder": 16,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 63,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Eat Dinner",
+      "Wash Dishes",
+      "Relax",
+      "Take a Bath",
+      "Put On Pajamas",
+      "Read",
+      "Set Alarm",
+      "Go to Bed",
+      "Fall Asleep",
+      "Sleep In",
+      "Brunch",
+      "Go Shopping",
+      "Visit Friends",
+      "Go to the Park",
+      "Play Sports"
+    ],
+    "targetWordsArabic": [
+      "يتناول العشاء",
+      "يغسل الأطباق",
+      "يسترخي",
+      "يستحم في حوض الاستحمام",
+      "يرتدي ملابس النوم",
+      "يقرأ",
+      "يضبط المنبّه",
+      "مصطلح مرتبط بالموضوع يُسمّى «جو تو بيد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فالل اسلييب»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سلييب ين»",
+      "وجبة فطور وغداء",
+      "يذهب للتسوّق",
+      "يزور الأصدقاء",
+      "يذهب إلى الحديقة",
+      "يمارس الرياضة"
+    ],
+    "usage": {
+      "goal": "Describe a simple daily routine in short connected steps.",
+      "canDoStatement": "I can describe a simple daily routine in short connected steps",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Eat Dinner", "Wash Dishes", "Relax"],
+          "scenario": "My routine includes eat dinner, wash dishes, and relax.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Eat Dinner", "Wash Dishes", "Relax"],
+            "expectedAnswer": "Eat Dinner"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes eat dinner, wash dishes, and relax. Emphasize eat dinner, wash dishes, and relax and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Take a Bath", "Put On Pajamas", "Read"],
+          "scenario": "My routine includes take a bath, put on pajamas, and read.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Take a Bath", "Put On Pajamas", "Read"],
+            "expectedAnswer": "Take a Bath"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes take a bath, put on pajamas, and read. Emphasize take a bath, put on pajamas, and read and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Set Alarm", "Go to Bed", "Fall Asleep"],
+          "scenario": "My routine includes set alarm, go to bed, and fall asleep.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Set Alarm", "Go to Bed", "Fall Asleep"],
+            "expectedAnswer": "Set Alarm"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes set alarm, go to bed, and fall asleep. Emphasize set alarm, go to bed, and fall asleep and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Sleep In", "Brunch", "Go Shopping"],
+          "scenario": "My routine includes sleep in, brunch, and go shopping.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Sleep In", "Brunch", "Go Shopping"],
+            "expectedAnswer": "Sleep In"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes sleep in, brunch, and go shopping. Emphasize sleep in, brunch, and go shopping and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Visit Friends", "Go to the Park", "Play Sports"],
+          "scenario": "My routine includes visit friends, go to the park, and play sports.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Visit Friends", "Go to the Park", "Play Sports"],
+            "expectedAnswer": "Visit Friends"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes visit friends, go to the park, and play sports. Emphasize visit friends, go to the park, and play sports and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Daily Routines Mini Story",
+      "text": "My day has many small actions. First, I eat dinner. Then I wash dishes and relax. Later, I take a bath. I also put on pajamas. These actions help me describe my routine in English. We also remember earlier words such as have a meeting and lunch break.",
+      "imageBrief": "One uncluttered daily routines scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Eat Dinner"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Take a Bath"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Set Alarm"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Sleep In"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Visit Friends"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Eat Dinner"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Wash Dishes"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Read"
+      }
+    ],
+    "video": {
+      "title": "Daily Routines: See It, Say It",
+      "idea": "30–50 second contextual video set in a day. Show eat dinner, wash dishes, relax, take a bath, and put on pajamas naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see eat dinner, wash dishes, and relax. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Have a Meeting, Lunch Break from daily-routines-2\n3 lesson(s) back: Top, Bottom from prepositions-of-place-3\n7 lesson(s) back: Bathe, Shave from daily-action-verbs-3"
+  },
+  {
+    "lessonId": "daily-routines-4",
+    "lessonName": "Daily Routines 4",
+    "unitId": "daily-routines",
+    "unitName": "Daily Routines",
+    "unitOrder": 16,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 64,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": ["Clean House", "Do Laundry", "Go Out", "Stay Home"],
+    "targetWordsArabic": [
+      "منزل ينظف",
+      "يغسل الملابس",
+      "مصطلح مرتبط بالموضوع يُسمّى «جو ووت»",
+      "يبقى في المنزل"
+    ],
+    "usage": {
+      "goal": "Describe a simple daily routine in short connected steps.",
+      "canDoStatement": "I can describe a simple daily routine in short connected steps",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Clean House", "Do Laundry", "Go Out"],
+          "scenario": "My routine includes clean house, do laundry, and go out.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Clean House", "Do Laundry", "Go Out"],
+            "expectedAnswer": "Clean House"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes clean house, do laundry, and go out. Emphasize clean house, do laundry, and go out and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": "Stay Home",
+          "scenario": "My routine includes stay home.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": "Stay Home",
+            "expectedAnswer": "Stay Home"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for daily routines that represents: My routine includes stay home. Emphasize stay home and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Daily Routines Mini Story",
+      "text": "My day has many small actions. First, I clean house. Then I do laundry and go out. Later, I stay home. I also clean house. These actions help me describe my routine in English. We also remember earlier words such as eat dinner and wash dishes.",
+      "imageBrief": "One uncluttered daily routines scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Clean House"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Stay Home"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Clean House"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Do Laundry"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Stay Home"
+      }
+    ],
+    "video": {
+      "title": "Daily Routines: See It, Say It",
+      "idea": "30–50 second contextual video set in a day. Show clean house, do laundry, go out, and stay home naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see clean house, do laundry, and go out. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Eat Dinner, Wash Dishes from daily-routines-3\n3 lesson(s) back: Wake Up, Alarm Clock from daily-routines-1\n7 lesson(s) back: Snore, Doze from daily-action-verbs-4"
+  }
+]

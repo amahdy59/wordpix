@@ -1,0 +1,543 @@
+﻿[
+  {
+    "lessonId": "shapes-geometry-1",
+    "lessonName": "Shapes & Geometry 1",
+    "unitId": "shapes-geometry",
+    "unitName": "Shapes & Geometry",
+    "unitOrder": 3,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 8,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Circle",
+      "Square",
+      "Triangle",
+      "Rectangle",
+      "Oval",
+      "Diamond",
+      "Pentagon",
+      "Hexagon",
+      "Octagon",
+      "Star",
+      "Sphere",
+      "Cube",
+      "Cylinder",
+      "Cone",
+      "Pyramid"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «كيركلي»",
+      "مربع",
+      "مثلث",
+      "مصطلح مرتبط بالموضوع يُسمّى «ريكتانجلي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «وفال»",
+      "مصطلح مرتبط بالموضوع يُسمّى «دياموند»",
+      "مبنى يُسمّى «بينتاجون»",
+      "شكل يُسمّى «هيكساجون»",
+      "شكل يُسمّى «وكتاجون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستار»",
+      "جزء يُسمّى «سفيري»",
+      "شكل يُسمّى «كوبي»",
+      "سطح يُسمّى «كيليندير»",
+      "قُمع",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيراميد»"
+    ],
+    "usage": {
+      "goal": "Identify common 2D and 3D shapes in everyday objects.",
+      "canDoStatement": "I can name simple shapes around me.",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Circle", "Square", "Triangle"],
+          "scenario": "The clock is a circle, the window is a square, and the sign is a triangle.",
+          "check": {
+            "question": "What shape is the sign?",
+            "options": ["Circle", "Square", "Triangle"],
+            "expectedAnswer": "triangle"
+          },
+          "imageBrief": "Everyday-object scene linking a clock to a circle, a window to a square, and a sign to a triangle."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Rectangle", "Oval", "Diamond"],
+          "scenario": "The door is a rectangle, the mirror is an oval, and the card is a diamond.",
+          "check": {
+            "question": "What shape is the mirror?",
+            "options": ["Rectangle", "Oval", "Diamond"],
+            "expectedAnswer": "oval"
+          },
+          "imageBrief": "Clear scene with a rectangular door, oval mirror, and diamond-shaped card."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Pentagon", "Hexagon", "Octagon"],
+          "scenario": "This tile is a pentagon, that tile is a hexagon, and the stop sign is an octagon.",
+          "check": {
+            "question": "Which shape is the stop sign?",
+            "options": ["Pentagon", "Hexagon", "Octagon"],
+            "expectedAnswer": "octagon"
+          },
+          "imageBrief": "Clean display of three labeled shapes or objects, including a recognizable octagon stop sign."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Star", "Sphere", "Cube"],
+          "scenario": "The star sticker shines, the ball is a sphere, and the box is a cube.",
+          "check": {
+            "question": "Which object is a sphere?",
+            "options": ["Star", "Sphere", "Cube"],
+            "expectedAnswer": "the ball"
+          },
+          "imageBrief": "Simple scene with a star sticker, a ball, and a cube-shaped box."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Cylinder", "Cone", "Pyramid"],
+          "scenario": "The can is a cylinder, the ice cream cone is a cone, and the toy block is a pyramid.",
+          "check": {
+            "question": "What shape is the can?",
+            "options": ["Cylinder", "Cone", "Pyramid"],
+            "expectedAnswer": "cylinder"
+          },
+          "imageBrief": "Scene with a can, an ice cream cone, and a pyramid toy block."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Shape Hunt",
+      "text": "We go on a shape hunt at school. I find a circle clock and a square window. My friend finds a triangle sign and a rectangle door. In the toy box, we see a cube, a sphere, and a cone. Learning shapes is fun.",
+      "imageBrief": "School shape-hunt scene with familiar objects matching the reading."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Circle"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Rectangle"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pentagon"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Star"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Cylinder"
+      },
+      {
+        "prompt": "Reading Comprehension: What shape is the clock?",
+        "answer": "circle"
+      },
+      {
+        "prompt": "Reading Comprehension: What does my friend find?",
+        "answer": "a triangle sign and a rectangle door"
+      },
+      {
+        "prompt": "Reading Comprehension: What shapes are in the toy box?",
+        "answer": "a cube, a sphere, and a cone"
+      }
+    ],
+    "video": {
+      "title": "Look for Shapes",
+      "idea": "35–45 second video. A guide walks through a room and points out shapes in real objects.",
+      "scriptStarter": "The clock is a circle. The window is a square. Can you find a triangle?"
+    },
+    "spacedReview": "1 lesson(s) back: Mix, Blend from colors-3\n3 lesson(s) back: Red, Blue from colors-1\n7 lesson(s) back: One, Two from numbers-counting-1"
+  },
+  {
+    "lessonId": "shapes-geometry-2",
+    "lessonName": "Shapes & Geometry 2",
+    "unitId": "shapes-geometry",
+    "unitName": "Shapes & Geometry",
+    "unitOrder": 3,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 9,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Prism",
+      "Cuboid",
+      "Hemisphere",
+      "Torus",
+      "Tetrahedron",
+      "Line",
+      "Curve",
+      "Straight",
+      "Zigzag",
+      "Spiral",
+      "Right Angle",
+      "Acute Angle",
+      "Obtuse Angle",
+      "Parallel",
+      "Perpendicular"
+    ],
+    "targetWordsArabic": [
+      "منشور بصري",
+      "شكل يُسمّى «كوبويد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «هيميسفيري»",
+      "شكل يُسمّى «توروس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تيتراهيدرون»",
+      "طابور",
+      "منحنى",
+      "مصطلح مرتبط بالموضوع يُسمّى «سترايغت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «زيجزاج»",
+      "سطح يُسمّى «سبيرال»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ريغت انجلي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «اكوتي انجلي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «وبتوسي انجلي»",
+      "متوازٍ",
+      "متعامد"
+    ],
+    "usage": {
+      "goal": "Recognize more advanced shapes, lines, and angle words in simple visual contexts.",
+      "canDoStatement": "I can notice basic line and angle words and a few new shapes.",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Prism", "Cuboid", "Hemisphere"],
+          "scenario": "The glass block is a prism, the box is a cuboid, and the bowl is a hemisphere.",
+          "check": {
+            "question": "What shape is the bowl?",
+            "options": ["Prism", "Cuboid", "Hemisphere"],
+            "expectedAnswer": "hemisphere"
+          },
+          "imageBrief": "Display of a prism, cuboid box, and hemisphere bowl with simple visual clarity."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Torus", "Tetrahedron", "Line"],
+          "scenario": "The ring is a torus, the model is a tetrahedron, and the pencil draws a line.",
+          "check": {
+            "question": "What does the pencil draw?",
+            "options": ["Torus", "Tetrahedron", "Line"],
+            "expectedAnswer": "a line"
+          },
+          "imageBrief": "A ring-shaped torus, a tetrahedron model, and a pencil drawing a line."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Curve", "Straight", "Zigzag"],
+          "scenario": "This road has a curve, this ruler is straight, and this pattern is zigzag.",
+          "check": {
+            "question": "Which thing is straight?",
+            "options": ["Curve", "Straight", "Zigzag"],
+            "expectedAnswer": "the ruler"
+          },
+          "imageBrief": "Three-panel comparison showing a curved road, straight ruler, and zigzag pattern."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Spiral", "Right Angle", "Acute Angle"],
+          "scenario": "The shell has a spiral, the book corner makes a right angle, and the small angle is acute.",
+          "check": {
+            "question": "What shape does the shell have?",
+            "options": ["Spiral", "Right Angle", "Acute Angle"],
+            "expectedAnswer": "a spiral"
+          },
+          "imageBrief": "Close-up visual showing a spiral shell, a right angle corner, and a small acute angle."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Obtuse Angle", "Parallel", "Perpendicular"],
+          "scenario": "The wide angle is obtuse, the train tracks are parallel, and the wall and floor lines are perpendicular.",
+          "check": {
+            "question": "What are parallel in the sentence?",
+            "options": ["Obtuse Angle", "Parallel", "Perpendicular"],
+            "expectedAnswer": "the train tracks"
+          },
+          "imageBrief": "Visual card showing obtuse angle, parallel lines like train tracks, and perpendicular wall-floor lines."
+        }
+      ]
+    },
+    "reading": {
+      "title": "In the Math Corner",
+      "text": "In the math corner, we look at shapes and lines. The teacher shows a cuboid box and a hemisphere bowl. Then she draws a straight line, a curve, and a zigzag. We look at a right angle on the board and parallel lines on the floor tiles.",
+      "imageBrief": "Math-corner classroom scene with a box, bowl, board lines, and floor tiles."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Prism"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Torus"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Curve"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Spiral"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Obtuse Angle"
+      },
+      {
+        "prompt": "Reading Comprehension: What two objects does the teacher show first?",
+        "answer": "a cuboid box and a hemisphere bowl"
+      },
+      {
+        "prompt": "Reading Comprehension: What three kinds of lines does she draw?",
+        "answer": "a straight line, a curve, and a zigzag"
+      },
+      {
+        "prompt": "Reading Comprehension: Where do students see parallel lines?",
+        "answer": "on the floor tiles"
+      }
+    ],
+    "video": {
+      "title": "Lines and Angles Around Us",
+      "idea": "35–50 second video. The narrator points to lines and angles in a classroom or playground: straight, curve, zigzag, right angle, parallel, perpendicular.",
+      "scriptStarter": "This line is straight. This road has a curve. These tracks are parallel."
+    },
+    "spacedReview": "1 lesson(s) back: Circle, Square from shapes-geometry-1\n3 lesson(s) back: Violet, Coral from colors-2\n7 lesson(s) back: Sixteen, Seventeen from numbers-counting-2"
+  },
+  {
+    "lessonId": "shapes-geometry-3",
+    "lessonName": "Shapes & Geometry 3",
+    "unitId": "shapes-geometry",
+    "unitName": "Shapes & Geometry",
+    "unitOrder": 3,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 10,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Area",
+      "Perimeter",
+      "Volume",
+      "Radius",
+      "Diameter",
+      "Circumference",
+      "Diagonal",
+      "Symmetry",
+      "Vertex",
+      "Edge",
+      "Repeat",
+      "Sequence",
+      "Pattern",
+      "Tessellation",
+      "Fractal"
+    ],
+    "targetWordsArabic": [
+      "سطح يُسمّى «اريا»",
+      "جهاز قياس مجال الرؤية",
+      "شدة الصوت",
+      "عظم الكعبرة",
+      "سطح يُسمّى «دياميتير»",
+      "منطقة يُسمّى «كيركومفيرينكي»",
+      "قطري",
+      "تناظر",
+      "مصطلح مرتبط بالموضوع يُسمّى «فيرتيكس»",
+      "منطقة يُسمّى «يدجي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ريبيات»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سيكينكي»",
+      "نمط",
+      "شكل يُسمّى «تيسسيللاتيون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فراكتال»"
+    ],
+    "usage": {
+      "goal": "Recognize a few basic geometry and pattern words in highly visual, beginner-friendly contexts.",
+      "canDoStatement": "I can understand some simple geometry and pattern words when I see them.",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Area", "Perimeter", "Volume"],
+          "scenario": "Area is the space inside a shape, perimeter is the line around it, and volume is the space inside a 3D shape.",
+          "check": {
+            "question": "What is the line around a shape?",
+            "options": ["Area", "Perimeter", "Volume"],
+            "expectedAnswer": "perimeter"
+          },
+          "imageBrief": "Three simple concept cards explaining area, perimeter, and volume with one friendly visual example each."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Radius", "Diameter", "Circumference"],
+          "scenario": "In a circle, the radius goes from the center to the side, the diameter goes across, and the circumference is the line around the circle.",
+          "check": {
+            "question": "Which line goes across the circle?",
+            "options": ["Radius", "Diameter", "Circumference"],
+            "expectedAnswer": "diameter"
+          },
+          "imageBrief": "Beginner-friendly circle diagram showing radius, diameter, and circumference clearly."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Diagonal", "Symmetry", "Vertex"],
+          "scenario": "The square has a diagonal line, the butterfly has symmetry, and the triangle has a vertex at the top.",
+          "check": {
+            "question": "What has symmetry?",
+            "options": ["Diagonal", "Symmetry", "Vertex"],
+            "expectedAnswer": "the butterfly"
+          },
+          "imageBrief": "Scene or card showing a square diagonal, symmetrical butterfly, and triangle with top vertex."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Edge", "Repeat", "Sequence"],
+          "scenario": "The cube has edges, the drum beat can repeat, and the cards show a sequence.",
+          "check": {
+            "question": "What do the cards show?",
+            "options": ["Edge", "Repeat", "Sequence"],
+            "expectedAnswer": "a sequence"
+          },
+          "imageBrief": "Simple visual card for cube edges, repeated drum pattern, and a sequence of cards."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Pattern", "Tessellation", "Fractal"],
+          "scenario": "The tiles make a pattern, the wall shows a tessellation, and the tree picture looks like a fractal.",
+          "check": {
+            "question": "What do the tiles make?",
+            "options": ["Pattern", "Tessellation", "Fractal"],
+            "expectedAnswer": "a pattern"
+          },
+          "imageBrief": "Pattern-focused scene with floor tiles, tessellation wall design, and a branching tree image suggesting a fractal."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Patterns in the Room",
+      "text": "Our teacher shows us shapes in a new way. We look at the radius and diameter of a big circle. Then we find symmetry in a butterfly picture and a diagonal in a square. On the wall, we see a tile pattern that looks like a tessellation.",
+      "imageBrief": "Classroom or art-room scene with a big circle diagram, butterfly picture, square, and patterned wall tiles."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Area"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Radius"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Diagonal"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Edge"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pattern"
+      },
+      {
+        "prompt": "Reading Comprehension: What two parts of the circle do students study?",
+        "answer": "the radius and the diameter"
+      },
+      {
+        "prompt": "Reading Comprehension: Where do students find symmetry?",
+        "answer": "in a butterfly picture"
+      },
+      {
+        "prompt": "Reading Comprehension: What do the students see on the wall?",
+        "answer": "a tile pattern that looks like a tessellation"
+      }
+    ],
+    "video": {
+      "title": "Shapes, Circles, and Patterns",
+      "idea": "35–50 second video. The teacher points to a circle poster, a butterfly image, and a patterned wall while naming the new words in very simple language.",
+      "scriptStarter": "This is a big circle. This line is the radius. This line is the diameter. Look at the butterfly. It has symmetry."
+    },
+    "spacedReview": "1 lesson(s) back: Prism, Cuboid from shapes-geometry-2\n3 lesson(s) back: Mix, Blend from colors-3\n7 lesson(s) back: First, Second from numbers-counting-3"
+  },
+  {
+    "lessonId": "shapes-geometry-4",
+    "lessonName": "Shapes & Geometry 4",
+    "unitId": "shapes-geometry",
+    "unitName": "Shapes & Geometry",
+    "unitOrder": 3,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 11,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": ["Grid", "Array", "Matrix", "Mosaic", "Kaleidoscope"],
+    "targetWordsArabic": [
+      "شبكة كهربائية",
+      "شكل يُسمّى «ارراي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ماتريكس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «موسايك»",
+      "لون يُسمّى «كالييدوسكوبي»"
+    ],
+    "usage": {
+      "goal": "Recognize shapes, lines, patterns, and basic geometry ideas visually.",
+      "canDoStatement": "I can recognize shapes, lines, patterns, and basic geometry ideas visually",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Grid", "Array", "Matrix"],
+          "scenario": "In the math picture, I can find grid, array, and matrix.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Grid", "Array", "Matrix"],
+            "expectedAnswer": "Grid"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for shapes & geometry that represents: In the math picture, I can find grid, array, and matrix. Emphasize grid, array, and matrix and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Mosaic", "Kaleidoscope"],
+          "scenario": "In the math picture, I can find mosaic and kaleidoscope.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Mosaic", "Kaleidoscope"],
+            "expectedAnswer": "Mosaic"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for shapes & geometry that represents: In the math picture, I can find mosaic and kaleidoscope. Emphasize mosaic and kaleidoscope and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Shapes & Geometry Mini Story",
+      "text": "In the math corner, we look at pictures and models. I can find grid, array, and matrix. The teacher also shows mosaic and kaleidoscope. We point, compare, and say each new geometry word slowly. We also remember earlier words such as area and perimeter.",
+      "imageBrief": "One uncluttered shapes & geometry scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Grid"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Mosaic"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Grid"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Array"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Kaleidoscope"
+      }
+    ],
+    "video": {
+      "title": "Shapes & Geometry: See It, Say It",
+      "idea": "30–50 second contextual video set in a math corner. Show grid, array, matrix, mosaic, and kaleidoscope naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see grid, array, and matrix. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Area, Perimeter from shapes-geometry-3\n3 lesson(s) back: Circle, Square from shapes-geometry-1\n7 lesson(s) back: Plus, Minus from numbers-counting-4"
+  }
+]

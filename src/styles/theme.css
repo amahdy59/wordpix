@@ -86,6 +86,17 @@
   --wp-text-4xl: 2rem; /* 32px */
   --wp-text-5xl: 2.5rem; /* 40px */
 
+  /* Responsive layout measures
+     Screens choose a semantic measure instead of repeating viewport-specific
+     max-width values. Rem units respect browser font scaling; the fluid gutter
+     grows gently without introducing breakpoint-specific page padding. */
+  --wp-layout-reading: 56rem;
+  --wp-layout-content: 72rem;
+  --wp-layout-wide: 90rem;
+  --wp-layout-shell: 96rem;
+  --wp-layout-immersive: 112.5rem;
+  --wp-layout-gutter-inline: clamp(1rem, 0.625rem + 1vw, 2.5rem);
+
   /* Semantic Bridge Tokens */
   --background: var(--wp-surface);
   --foreground: var(--wp-text);
@@ -124,10 +135,12 @@
      Themes can evolve (e.g., swap green for blue) without touching components. */
   --feedback-success: var(--wp-green);
   --feedback-success-surface: var(--wp-green-light);
-  --feedback-success-border: color-mix(in srgb, var(--wp-green) 30%, transparent);
+  --feedback-success-border: color-mix(in srgb, var(--wp-green) 40%, transparent);
+  --feedback-success-foreground: #065f46;
   --feedback-error: var(--wp-rose);
   --feedback-error-surface: var(--wp-rose-light);
-  --feedback-error-border: color-mix(in srgb, var(--wp-rose) 30%, transparent);
+  --feedback-error-border: color-mix(in srgb, var(--wp-rose) 40%, transparent);
+  --feedback-error-foreground: #9f1239;
   --feedback-warning: var(--wp-amber);
   --feedback-warning-surface: color-mix(in srgb, var(--wp-amber) 15%, transparent);
   --mastery-active: var(--wp-teal);
@@ -179,6 +192,16 @@
   --muted: var(--wp-surface);
   --muted-foreground: var(--wp-text-secondary);
   --border: var(--wp-border);
+
+  /* Dark Feedback Overrides with verified AAA contrast */
+  --feedback-success: #6ee7b7;
+  --feedback-success-surface: rgba(6, 78, 59, 0.45);
+  --feedback-success-border: rgba(110, 231, 183, 0.65);
+  --feedback-success-foreground: #6ee7b7;
+  --feedback-error: #fda4af;
+  --feedback-error-surface: rgba(76, 5, 25, 0.45);
+  --feedback-error-border: rgba(253, 164, 175, 0.65);
+  --feedback-error-foreground: #fda4af;
 }
 
 /* ─── High contrast mode ─────────────────────────────────────────────────────
@@ -252,6 +275,17 @@
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
   --color-ring: var(--ring);
+
+  --color-feedback-success: var(--feedback-success);
+  --color-feedback-success-surface: var(--feedback-success-surface);
+  --color-feedback-success-border: var(--feedback-success-border);
+  --color-feedback-success-foreground: var(--feedback-success-foreground);
+  --color-feedback-error: var(--feedback-error);
+  --color-feedback-error-surface: var(--feedback-error-surface);
+  --color-feedback-error-border: var(--feedback-error-border);
+  --color-feedback-error-foreground: var(--feedback-error-foreground);
+  --color-feedback-warning: var(--feedback-warning);
+  --color-feedback-warning-surface: var(--feedback-warning-surface);
 
   --color-wp-brand: var(--wp-brand);
   --color-wp-brand-dark: var(--wp-brand-dark);

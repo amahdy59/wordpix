@@ -1,0 +1,823 @@
+﻿[
+  {
+    "lessonId": "coral-reef-1",
+    "lessonName": "The Coral Reef 1",
+    "unitId": "coral-reef",
+    "unitName": "The Coral Reef",
+    "unitOrder": 111,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 512,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Clownfish",
+      "Angelfish",
+      "Parrotfish",
+      "Pufferfish",
+      "Lionfish",
+      "Surgeonfish",
+      "Butterflyfish",
+      "Grouper",
+      "Moray Eel",
+      "Barracuda",
+      "Seahorse",
+      "Triggerfish",
+      "Dolphin",
+      "Sea Turtle",
+      "Manatee"
+    ],
+    "targetWordsArabic": [
+      "سمكة المهرج",
+      "سمكة الملاك",
+      "سمكة الببغاء",
+      "سمكة منتفخة",
+      "سمكة الأسد",
+      "سمكة الجراح",
+      "سمكة الفراشة",
+      "هامور",
+      "ثعبان موراي البحري",
+      "باراكودا",
+      "فرس البحر",
+      "سمكة الزناد",
+      "دلفين",
+      "كائن أو عنصر طبيعي يُسمّى «سيا تورتلي»",
+      "خروف البحر"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Coral Reef to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the coral reef vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Clownfish", "Angelfish", "Parrotfish", "Pufferfish"],
+          "scenario": "The guide or scientist draws attention to clownfish, angelfish, parrotfish, and pufferfish. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Clownfish", "Angelfish", "Parrotfish", "Pufferfish"],
+            "expectedAnswer": "Clownfish"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to clownfish, angelfish, parrotfish, and pufferfish. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Lionfish", "Surgeonfish", "Butterflyfish", "Grouper"],
+          "scenario": "The guide or scientist draws attention to lionfish, surgeonfish, butterflyfish, and grouper. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lionfish", "Surgeonfish", "Butterflyfish", "Grouper"],
+            "expectedAnswer": "Lionfish"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to lionfish, surgeonfish, butterflyfish, and grouper. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Moray Eel", "Barracuda", "Seahorse", "Triggerfish"],
+          "scenario": "The guide points out the moray eel, barracuda, seahorse, and triggerfish and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Moray Eel", "Barracuda", "Seahorse", "Triggerfish"],
+            "expectedAnswer": "Moray Eel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the moray eel, barracuda, seahorse, and triggerfish and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Dolphin", "Sea Turtle", "Manatee"],
+          "scenario": "The guide or scientist draws attention to dolphin, sea turtle, and manatee. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dolphin", "Sea Turtle", "Manatee"],
+            "expectedAnswer": "Dolphin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to dolphin, sea turtle, and manatee. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Coral Reef: Travel/Visitor Guide",
+      "text": "A practical situation involving the coral reef requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to clownfish, angelfish, parrotfish, and pufferfish. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to lionfish, surgeonfish, butterflyfish, and grouper. The group observes the details and connects the words to the natural or scientific setting. The guide points out the moray eel, barracuda, seahorse, and triggerfish and asks the group to notice how the animals move or behave. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Clownfish"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lionfish"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Moray Eel"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dolphin"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Clownfish"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Pufferfish"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Campfire” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Coral Reef: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Campfire, Ranger from savanna-4\n3 lesson(s) back: Baboon, Gazelle from savanna-2\n7 lesson(s) back: Beaver, Dragonfly from river-2"
+  },
+  {
+    "lessonId": "coral-reef-2",
+    "lessonName": "The Coral Reef 2",
+    "unitId": "coral-reef",
+    "unitName": "The Coral Reef",
+    "unitOrder": 111,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 513,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Whale Shark",
+      "Manta Ray",
+      "Stingray",
+      "Sea Snake",
+      "Dugong",
+      "Humpback Whale",
+      "Otter",
+      "Coral",
+      "Sea Anemone",
+      "Starfish",
+      "Sea Urchin",
+      "Jellyfish",
+      "Octopus",
+      "Squid",
+      "Crab"
+    ],
+    "targetWordsArabic": [
+      "قرش الحوت",
+      "شيطان البحر؛ مانتا راي",
+      "شفنين لاسع",
+      "ثعبان بحري",
+      "أطوم",
+      "حوت أحدب",
+      "قضاعة",
+      "مرجان",
+      "سطح يُسمّى «سيا انيموني»",
+      "نجم البحر",
+      "قنفذ البحر",
+      "قنديل البحر",
+      "أخطبوط",
+      "حبار",
+      "سلطعون"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Coral Reef to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the coral reef vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Whale Shark", "Manta Ray", "Stingray", "Sea Snake"],
+          "scenario": "The guide or scientist draws attention to whale shark, manta ray, stingray, and sea snake. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Whale Shark", "Manta Ray", "Stingray", "Sea Snake"],
+            "expectedAnswer": "Whale Shark"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to whale shark, manta ray, stingray, and sea snake. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Dugong", "Humpback Whale", "Otter", "Coral"],
+          "scenario": "The guide or scientist draws attention to dugong, humpback whale, otter, and coral. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dugong", "Humpback Whale", "Otter", "Coral"],
+            "expectedAnswer": "Dugong"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to dugong, humpback whale, otter, and coral. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Sea Anemone", "Starfish", "Sea Urchin", "Jellyfish"],
+          "scenario": "The guide or scientist draws attention to sea anemone, starfish, sea urchin, and jellyfish. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sea Anemone", "Starfish", "Sea Urchin", "Jellyfish"],
+            "expectedAnswer": "Sea Anemone"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to sea anemone, starfish, sea urchin, and jellyfish. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Octopus", "Squid", "Crab"],
+          "scenario": "The guide or scientist draws attention to octopus, squid, and crab. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Octopus", "Squid", "Crab"],
+            "expectedAnswer": "Octopus"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to octopus, squid, and crab. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Coral Reef: Review",
+      "text": "A practical situation involving the coral reef requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to whale shark, manta ray, stingray, and sea snake. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to dugong, humpback whale, otter, and coral. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to sea anemone, starfish, sea urchin, and jellyfish. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Whale Shark"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dugong"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sea Anemone"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Octopus"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Whale Shark"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Sea Snake"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Clownfish” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Coral Reef: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Clownfish, Angelfish from coral-reef-1\n3 lesson(s) back: Flamingo, Eagle from savanna-3\n7 lesson(s) back: Canoe, Kayak from river-3"
+  },
+  {
+    "lessonId": "coral-reef-3",
+    "lessonName": "The Coral Reef 3",
+    "unitId": "coral-reef",
+    "unitName": "The Coral Reef",
+    "unitOrder": 111,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 514,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Lobster",
+      "Shrimp",
+      "Sea Cucumber",
+      "Sponge",
+      "Coral Reef",
+      "Seagrass",
+      "Kelp",
+      "Algae",
+      "Tide Pool",
+      "Lagoon",
+      "Sand Bar",
+      "Underwater Cave",
+      "Rock Formation",
+      "Current",
+      "Snorkel"
+    ],
+    "targetWordsArabic": [
+      "كركند",
+      "روبيان",
+      "خيار البحر",
+      "إسفنجة",
+      "شعاب مرجان",
+      "عشب بحري",
+      "عشب بحري كبير",
+      "طحالب",
+      "بركة مدّ وجزر",
+      "بحيرة ساحلية",
+      "حانة رمل",
+      "كهف تحت الماء",
+      "مادة يُسمّى «روك فورماتيون»",
+      "تيار كهربائي",
+      "أنبوب تنفس"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Coral Reef to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the coral reef vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Lobster", "Shrimp", "Sea Cucumber", "Sponge"],
+          "scenario": "The guide or scientist draws attention to lobster, shrimp, sea cucumber, and sponge. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lobster", "Shrimp", "Sea Cucumber", "Sponge"],
+            "expectedAnswer": "Lobster"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to lobster, shrimp, sea cucumber, and sponge. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Coral Reef", "Seagrass", "Kelp", "Algae"],
+          "scenario": "The guide or scientist draws attention to coral reef, seagrass, kelp, and algae. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Coral Reef", "Seagrass", "Kelp", "Algae"],
+            "expectedAnswer": "Coral Reef"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to coral reef, seagrass, kelp, and algae. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Tide Pool", "Lagoon", "Sand Bar", "Underwater Cave"],
+          "scenario": "The guide or scientist draws attention to tide pool, lagoon, sand bar, and underwater cave. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tide Pool", "Lagoon", "Sand Bar", "Underwater Cave"],
+            "expectedAnswer": "Tide Pool"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to tide pool, lagoon, sand bar, and underwater cave. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Rock Formation", "Current", "Snorkel"],
+          "scenario": "The guide or scientist draws attention to rock formation, current, and snorkel. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Rock Formation", "Current", "Snorkel"],
+            "expectedAnswer": "Rock Formation"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to rock formation, current, and snorkel. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Coral Reef: Practical Article",
+      "text": "A practical situation involving the coral reef requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to lobster, shrimp, sea cucumber, and sponge. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to coral reef, seagrass, kelp, and algae. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to tide pool, lagoon, sand bar, and underwater cave. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lobster"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Coral Reef"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tide Pool"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rock Formation"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Lobster"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Sponge"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Whale Shark” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Coral Reef: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Whale Shark, Manta Ray from coral-reef-2\n3 lesson(s) back: Campfire, Ranger from savanna-4\n7 lesson(s) back: Bucket, Waders from river-4"
+  },
+  {
+    "lessonId": "coral-reef-4",
+    "lessonName": "The Coral Reef 4",
+    "unitId": "coral-reef",
+    "unitName": "The Coral Reef",
+    "unitOrder": 111,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 515,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Diving Mask",
+      "Fins",
+      "Wetsuit",
+      "Oxygen Tank",
+      "Regulator",
+      "Dive Computer",
+      "Underwater Camera",
+      "Weight Belt",
+      "Dive Flag",
+      "Marine Reserve",
+      "Coral Bleaching",
+      "Pollution",
+      "Plastic Waste",
+      "Fishing Net",
+      "Conservation Sign"
+    ],
+    "targetWordsArabic": [
+      "قناع غوص",
+      "زعانف سباحة",
+      "بدلة غوص",
+      "أسطوانة أكسجين",
+      "منظّم تنفس",
+      "حاسوب غوص",
+      "كاميرا تحت الماء",
+      "حزام أوزان للغوص",
+      "علم الغوص",
+      "محمية بحرية",
+      "لون يُسمّى «كورال بلياتشينج»",
+      "تلوث",
+      "نفايات بلاستيكية",
+      "سمكة يُسمّى «فيشينج نيت»",
+      "لافتة حماية البيئة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Coral Reef to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the coral reef vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Diving Mask", "Fins", "Wetsuit", "Oxygen Tank"],
+          "scenario": "The guide or scientist draws attention to diving mask, fins, wetsuit, and oxygen tank. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Diving Mask", "Fins", "Wetsuit", "Oxygen Tank"],
+            "expectedAnswer": "Diving Mask"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to diving mask, fins, wetsuit, and oxygen tank. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Regulator", "Dive Computer", "Underwater Camera", "Weight Belt"],
+          "scenario": "The guide or scientist draws attention to regulator, dive computer, underwater camera, and weight belt. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Regulator", "Dive Computer", "Underwater Camera", "Weight Belt"],
+            "expectedAnswer": "Regulator"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to regulator, dive computer, underwater camera, and weight belt. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Dive Flag", "Marine Reserve", "Coral Bleaching", "Pollution"],
+          "scenario": "The guide or scientist draws attention to dive flag, marine reserve, coral bleaching, and pollution. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dive Flag", "Marine Reserve", "Coral Bleaching", "Pollution"],
+            "expectedAnswer": "Dive Flag"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to dive flag, marine reserve, coral bleaching, and pollution. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Plastic Waste", "Fishing Net", "Conservation Sign"],
+          "scenario": "The guide or scientist draws attention to plastic waste, fishing net, and conservation sign. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Plastic Waste", "Fishing Net", "Conservation Sign"],
+            "expectedAnswer": "Plastic Waste"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to plastic waste, fishing net, and conservation sign. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Coral Reef: Real-Life Scenario",
+      "text": "A practical situation involving the coral reef requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to diving mask, fins, wetsuit, and oxygen tank. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to regulator, dive computer, underwater camera, and weight belt. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to dive flag, marine reserve, coral bleaching, and pollution. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Diving Mask"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Regulator"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dive Flag"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Plastic Waste"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Diving Mask"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Oxygen Tank"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Lobster” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Coral Reef: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Lobster, Shrimp from coral-reef-3\n3 lesson(s) back: Clownfish, Angelfish from coral-reef-1\n7 lesson(s) back: Lion, Elephant from savanna-1"
+  },
+  {
+    "lessonId": "coral-reef-5",
+    "lessonName": "The Coral Reef 5",
+    "unitId": "coral-reef",
+    "unitName": "The Coral Reef",
+    "unitOrder": 111,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 516,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Research Boat",
+      "Water Sample",
+      "Reef Restoration",
+      "Aquarium",
+      "Brain Coral",
+      "Fan Coral",
+      "Staghorn Coral",
+      "Tube Coral",
+      "Fire Coral",
+      "Mushroom Coral",
+      "Table Coral",
+      "Soft Coral",
+      "Reef Wall",
+      "Anemone",
+      "Sandy Bottom"
+    ],
+    "targetWordsArabic": [
+      "قارب أبحاث",
+      "عينة ماء",
+      "ترميم الشعاب المرجانية",
+      "حوض أحياء مائية",
+      "مرجان دماغي",
+      "مرجان مروحي",
+      "كائن أو عنصر طبيعي يُسمّى «ستاغورن كورال»",
+      "مرجان أنبوبي",
+      "مرجان ناري",
+      "مرجان فطري",
+      "مرجان مائدة",
+      "مرجان لين",
+      "جدار الشعاب المرجانية",
+      "شقائق النعمان البحرية",
+      "قاع رملي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Coral Reef to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the coral reef vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Research Boat", "Water Sample", "Reef Restoration", "Aquarium"],
+          "scenario": "The guide or scientist draws attention to research boat, water sample, reef restoration, and aquarium. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Research Boat", "Water Sample", "Reef Restoration", "Aquarium"],
+            "expectedAnswer": "Research Boat"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to research boat, water sample, reef restoration, and aquarium. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Brain Coral", "Fan Coral", "Staghorn Coral", "Tube Coral"],
+          "scenario": "The guide or scientist draws attention to brain coral, fan coral, staghorn coral, and tube coral. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Brain Coral", "Fan Coral", "Staghorn Coral", "Tube Coral"],
+            "expectedAnswer": "Brain Coral"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to brain coral, fan coral, staghorn coral, and tube coral. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Fire Coral", "Mushroom Coral", "Table Coral", "Soft Coral"],
+          "scenario": "The guide or scientist draws attention to fire coral, mushroom coral, table coral, and soft coral. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fire Coral", "Mushroom Coral", "Table Coral", "Soft Coral"],
+            "expectedAnswer": "Fire Coral"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to fire coral, mushroom coral, table coral, and soft coral. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Reef Wall", "Anemone", "Sandy Bottom"],
+          "scenario": "The guide or scientist draws attention to reef wall, anemone, and sandy bottom. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Reef Wall", "Anemone", "Sandy Bottom"],
+            "expectedAnswer": "Reef Wall"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to reef wall, anemone, and sandy bottom. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Coral Reef: Travel/Visitor Guide",
+      "text": "A practical situation involving the coral reef requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to research boat, water sample, reef restoration, and aquarium. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to brain coral, fan coral, staghorn coral, and tube coral. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to fire coral, mushroom coral, table coral, and soft coral. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Research Boat"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Brain Coral"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fire Coral"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Reef Wall"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Research Boat"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Aquarium"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Diving Mask” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Coral Reef: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Diving Mask, Fins from coral-reef-4\n3 lesson(s) back: Whale Shark, Manta Ray from coral-reef-2\n7 lesson(s) back: Baboon, Gazelle from savanna-2"
+  },
+  {
+    "lessonId": "coral-reef-6",
+    "lessonName": "The Coral Reef 6",
+    "unitId": "coral-reef",
+    "unitName": "The Coral Reef",
+    "unitOrder": 111,
+    "lessonOrderInUnit": 6,
+    "globalOrder": 517,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": "Shipwreck",
+    "targetWordsArabic": "حطام سفينة",
+    "usage": {
+      "goal": "Use the vocabulary from The Coral Reef to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the coral reef vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": {
+        "chunkNumber": 1,
+        "targetWords": "Shipwreck",
+        "scenario": "The guide or scientist draws attention to shipwreck. The group observes the details and connects the words to the natural or scientific setting.",
+        "check": {
+          "question": "Which target term is most central to the situation?",
+          "options": "Shipwreck",
+          "expectedAnswer": "Shipwreck"
+        },
+        "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to shipwreck. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+      }
+    },
+    "reading": {
+      "title": "The Coral Reef: Review",
+      "text": "A practical situation involving the coral reef requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to shipwreck. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Shipwreck"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Shipwreck"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Shipwreck"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Research Boat” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Coral Reef: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Research Boat, Water Sample from coral-reef-5\n3 lesson(s) back: Lobster, Shrimp from coral-reef-3\n7 lesson(s) back: Flamingo, Eagle from savanna-3"
+  }
+]

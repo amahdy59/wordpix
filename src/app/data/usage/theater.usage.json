@@ -1,0 +1,725 @@
+﻿[
+  {
+    "lessonId": "theater-1",
+    "lessonName": "The Theater 1",
+    "unitId": "theater",
+    "unitName": "The Theater",
+    "unitOrder": 124,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 571,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Stage",
+      "Curtain",
+      "Spotlight",
+      "Backdrop",
+      "Trapdoor",
+      "Wings",
+      "Proscenium",
+      "Apron",
+      "Fly System",
+      "Cyclorama",
+      "Auditorium",
+      "Orchestra Seats",
+      "Balcony",
+      "Box Seat",
+      "Aisle"
+    ],
+    "targetWordsArabic": [
+      "مرحلة",
+      "سِتَارَة",
+      "كشاف ضوئي",
+      "خلفية",
+      "باب أرضي",
+      "أجنحة",
+      "قوس المسرح",
+      "مِرْيَلَةُ مَطْبَخ (مِرْيَلَة)",
+      "نظام تعليق ورفع المسرح",
+      "خلفية مسرحية منحنية",
+      "قاعة محاضرات",
+      "مقاعد الصالة الرئيسية",
+      "شرفة",
+      "مقعد صندوق",
+      "ممر"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Theater to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the theater vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Stage", "Curtain", "Spotlight", "Backdrop"],
+          "scenario": "During the creative session, the group works with stage, curtain, spotlight, and backdrop. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Stage", "Curtain", "Spotlight", "Backdrop"],
+            "expectedAnswer": "Stage"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with stage, curtain, spotlight, and backdrop. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Trapdoor", "Wings", "Proscenium", "Apron"],
+          "scenario": "During the creative session, the group works with trapdoor, wings, proscenium, and apron. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Trapdoor", "Wings", "Proscenium", "Apron"],
+            "expectedAnswer": "Trapdoor"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with trapdoor, wings, proscenium, and apron. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Fly System", "Cyclorama", "Auditorium", "Orchestra Seats"],
+          "scenario": "During the creative session, the group works with fly system, cyclorama, auditorium, and orchestra seats. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fly System", "Cyclorama", "Auditorium", "Orchestra Seats"],
+            "expectedAnswer": "Fly System"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with fly system, cyclorama, auditorium, and orchestra seats. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Balcony", "Box Seat", "Aisle"],
+          "scenario": "During the creative session, the group works with balcony, box seat, and aisle. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Balcony", "Box Seat", "Aisle"],
+            "expectedAnswer": "Balcony"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with balcony, box seat, and aisle. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Theater: Travel/Visitor Guide",
+      "text": "A practical situation involving the theater requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with stage, curtain, spotlight, and backdrop. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with trapdoor, wings, proscenium, and apron. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with fly system, cyclorama, auditorium, and orchestra seats. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Theater. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stage"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Trapdoor"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fly System"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Balcony"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Stage"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Backdrop"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Tide” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Theater: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Tide, Wave from harbor-5\n3 lesson(s) back: Anchor, Mooring Line from harbor-3\n7 lesson(s) back: tail, landing gear from airport-3"
+  },
+  {
+    "lessonId": "theater-2",
+    "lessonName": "The Theater 2",
+    "unitId": "theater",
+    "unitName": "The Theater",
+    "unitOrder": 124,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 572,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Row",
+      "Lobby",
+      "Box Office",
+      "Cloakroom",
+      "Program",
+      "Costume",
+      "Wig",
+      "Mask",
+      "Cape",
+      "Crown",
+      "Robe",
+      "Gloves",
+      "Stage Makeup",
+      "Face Paint",
+      "Mirror"
+    ],
+    "targetWordsArabic": [
+      "صف",
+      "ردهة",
+      "شباك التذاكر",
+      "غرفة معاطف",
+      "برنامج العرض",
+      "زي",
+      "شعر مستعار",
+      "قناع",
+      "رداء حلاقة",
+      "تاج",
+      "رُوب حَمَّام / بُرْنُس",
+      "قفازات",
+      "مكياج مسرحي",
+      "طلاء للوجه",
+      "مِرْآة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Theater to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the theater vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Row", "Lobby", "Box Office", "Cloakroom"],
+          "scenario": "During the creative session, the group works with row, lobby, box office, and cloakroom. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Row", "Lobby", "Box Office", "Cloakroom"],
+            "expectedAnswer": "Row"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with row, lobby, box office, and cloakroom. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Program", "Costume", "Wig", "Mask"],
+          "scenario": "During the creative session, the group works with program, costume, wig, and mask. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Program", "Costume", "Wig", "Mask"],
+            "expectedAnswer": "Program"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with program, costume, wig, and mask. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Cape", "Crown", "Robe", "Gloves"],
+          "scenario": "During the creative session, the group works with cape, crown, robe, and gloves. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cape", "Crown", "Robe", "Gloves"],
+            "expectedAnswer": "Cape"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with cape, crown, robe, and gloves. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Stage Makeup", "Face Paint", "Mirror"],
+          "scenario": "During the creative session, the group works with stage makeup, face paint, and mirror. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Stage Makeup", "Face Paint", "Mirror"],
+            "expectedAnswer": "Stage Makeup"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with stage makeup, face paint, and mirror. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Theater: Review",
+      "text": "A practical situation involving the theater requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with row, lobby, box office, and cloakroom. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with program, costume, wig, and mask. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with cape, crown, robe, and gloves. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Theater. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Row"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Program"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cape"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stage Makeup"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Row"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Cloakroom"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Stage” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Theater: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Stage, Curtain from theater-1\n3 lesson(s) back: Bait, Hook from harbor-4\n7 lesson(s) back: mechanic, boarding from airport-4"
+  },
+  {
+    "lessonId": "theater-3",
+    "lessonName": "The Theater 3",
+    "unitId": "theater",
+    "unitName": "The Theater",
+    "unitOrder": 124,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 573,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Prop",
+      "Sword",
+      "Goblet",
+      "Throne",
+      "Table",
+      "Chair",
+      "Candle",
+      "Lantern",
+      "Banner",
+      "Treasure Chest",
+      "Actor",
+      "Actress",
+      "Director",
+      "Stage Manager",
+      "Lighting Designer"
+    ],
+    "targetWordsArabic": [
+      "إكسسوار مسرحي",
+      "سيف",
+      "كأس",
+      "عرش",
+      "طاولة",
+      "كُرْسِيّ",
+      "شَمْعَة",
+      "فانوس",
+      "لافتة",
+      "صندوق كنز",
+      "ممثل",
+      "ممثلة",
+      "مخرج",
+      "مدير مرحلة",
+      "مصمم إضاءة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Theater to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the theater vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Prop", "Sword", "Goblet", "Throne"],
+          "scenario": "During the creative session, the group works with prop, sword, goblet, and throne. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Prop", "Sword", "Goblet", "Throne"],
+            "expectedAnswer": "Prop"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with prop, sword, goblet, and throne. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Table", "Chair", "Candle", "Lantern"],
+          "scenario": "During the creative session, the group works with table, chair, candle, and lantern. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Table", "Chair", "Candle", "Lantern"],
+            "expectedAnswer": "Table"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with table, chair, candle, and lantern. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Banner", "Treasure Chest", "Actor", "Actress"],
+          "scenario": "During the creative session, the group works with banner, treasure chest, actor, and actress. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Banner", "Treasure Chest", "Actor", "Actress"],
+            "expectedAnswer": "Banner"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with banner, treasure chest, actor, and actress. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Director", "Stage Manager", "Lighting Designer"],
+          "scenario": "The director, stage manager, and lighting designer work together in the setting, but each person has a different responsibility.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Director", "Stage Manager", "Lighting Designer"],
+            "expectedAnswer": "Director"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The director, stage manager, and lighting designer work together in the setting, but each person has a different responsibility. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Theater: Practical Article",
+      "text": "A practical situation involving the theater requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with prop, sword, goblet, and throne. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with table, chair, candle, and lantern. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with banner, treasure chest, actor, and actress. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Theater. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Prop"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Table"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Banner"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Director"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Prop"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Throne"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Row” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Theater: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Row, Lobby from theater-2\n3 lesson(s) back: Tide, Wave from harbor-5\n7 lesson(s) back: Cargo Ship, Fishing Boat from harbor-1"
+  },
+  {
+    "lessonId": "theater-4",
+    "lessonName": "The Theater 4",
+    "unitId": "theater",
+    "unitName": "The Theater",
+    "unitOrder": 124,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 574,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Sound Technician",
+      "Costume Designer",
+      "Set Builder",
+      "Prompter",
+      "Usher",
+      "Rehearsal",
+      "Opening Night",
+      "Monologue",
+      "Dialogue",
+      "Scene",
+      "Act",
+      "Intermission",
+      "Standing Ovation",
+      "Encore",
+      "Curtain Call"
+    ],
+    "targetWordsArabic": [
+      "فني صوت",
+      "مصمم أزياء مسرحية",
+      "بنّاء الديكور المسرحي",
+      "ملقّن",
+      "مرشد مقاعد",
+      "بروفة",
+      "مصطلح مرتبط بالموضوع يُسمّى «وبينينج نيغت»",
+      "مونولوج",
+      "حوار",
+      "مشهد",
+      "فصل مسرحي",
+      "استراحة",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستاندينج وفاتيون»",
+      "إعادة الأداء",
+      "مصطلح مرتبط بالموضوع يُسمّى «كورتاين كالل»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Theater to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the theater vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sound Technician", "Costume Designer", "Set Builder", "Prompter"],
+          "scenario": "The sound technician, costume designer, set builder, and prompter work together in the setting, but each person has a different responsibility.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sound Technician", "Costume Designer", "Set Builder", "Prompter"],
+            "expectedAnswer": "Sound Technician"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The sound technician, costume designer, set builder, and prompter work together in the setting, but each person has a different responsibility. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Usher", "Rehearsal", "Opening Night", "Monologue"],
+          "scenario": "During the creative session, the group works with usher, rehearsal, opening night, and monologue. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Usher", "Rehearsal", "Opening Night", "Monologue"],
+            "expectedAnswer": "Usher"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with usher, rehearsal, opening night, and monologue. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Dialogue", "Scene", "Act", "Intermission"],
+          "scenario": "During the creative session, the group works with dialogue, scene, act, and intermission. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dialogue", "Scene", "Act", "Intermission"],
+            "expectedAnswer": "Dialogue"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with dialogue, scene, act, and intermission. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Standing Ovation", "Encore", "Curtain Call"],
+          "scenario": "During the creative session, the group works with standing ovation, encore, and curtain call. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Standing Ovation", "Encore", "Curtain Call"],
+            "expectedAnswer": "Standing Ovation"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with standing ovation, encore, and curtain call. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Theater: Real-Life Scenario",
+      "text": "A practical situation involving the theater requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The sound technician, costume designer, set builder, and prompter work together in the setting, but each person has a different responsibility. During the creative session, the group works with usher, rehearsal, opening night, and monologue. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with dialogue, scene, act, and intermission. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Theater. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sound Technician"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Usher"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dialogue"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Standing Ovation"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Sound Technician"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Prompter"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Prop” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Theater: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Prop, Sword from theater-3\n3 lesson(s) back: Stage, Curtain from theater-1\n7 lesson(s) back: Jetty, Breakwater from harbor-2"
+  },
+  {
+    "lessonId": "theater-5",
+    "lessonName": "The Theater 5",
+    "unitId": "theater",
+    "unitName": "The Theater",
+    "unitOrder": 124,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 575,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Wing",
+      "Orchestra Pit",
+      "Playwright",
+      "Stagehand",
+      "Audience",
+      "Understudy",
+      "Script",
+      "Makeup",
+      "Ovation"
+    ],
+    "targetWordsArabic": [
+      "جناح",
+      "حلقة تداول أوركسترا",
+      "كاتب مسرحي",
+      "عامل مسرح",
+      "جمهور",
+      "ممثل بديل",
+      "نص مسرحي",
+      "مكياج",
+      "تصفيق حار"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Theater to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the theater vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Wing", "Orchestra Pit", "Playwright", "Stagehand"],
+          "scenario": "During the creative session, the group works with wing, orchestra pit, playwright, and stagehand. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Wing", "Orchestra Pit", "Playwright", "Stagehand"],
+            "expectedAnswer": "Wing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with wing, orchestra pit, playwright, and stagehand. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Audience", "Understudy", "Script", "Makeup"],
+          "scenario": "During the creative session, the group works with audience, understudy, script, and makeup. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Audience", "Understudy", "Script", "Makeup"],
+            "expectedAnswer": "Audience"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with audience, understudy, script, and makeup. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": "Ovation",
+          "scenario": "During the creative session, the group works with ovation. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": "Ovation",
+            "expectedAnswer": "Ovation"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with ovation. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Theater: Travel/Visitor Guide",
+      "text": "A practical situation involving the theater requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with wing, orchestra pit, playwright, and stagehand. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with audience, understudy, script, and makeup. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with ovation. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Theater. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Wing"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Audience"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ovation"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Wing"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Stagehand"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Sound Technician” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Theater: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Sound Technician, Costume Designer from theater-4\n3 lesson(s) back: Row, Lobby from theater-2\n7 lesson(s) back: Anchor, Mooring Line from harbor-3"
+  }
+]

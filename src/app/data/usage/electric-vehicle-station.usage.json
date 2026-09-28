@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "electric-vehicle-station-1",
+    "lessonName": "The Electric Vehicle Station 1",
+    "unitId": "electric-vehicle-station",
+    "unitName": "The Electric Vehicle Station",
+    "unitOrder": 170,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 748,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Charging Station",
+      "Connector",
+      "Plug",
+      "Cable",
+      "Adapter",
+      "Level 1",
+      "Level 2",
+      "Dc Fast Charger",
+      "Charging Port",
+      "Payment Terminal",
+      "Battery Pack",
+      "Electric Motor",
+      "Regenerative Braking",
+      "Inverter",
+      "Onboard Charger"
+    ],
+    "targetWordsArabic": [
+      "محطة شحن مركبات كهربائية",
+      "موصل",
+      "قابس",
+      "كابل",
+      "مهايئ",
+      "1 مستوٍ",
+      "2 مستوٍ",
+      "شاحن سريع بالتيار المستمر",
+      "منفذ الشحن",
+      "جهاز دفع إلكتروني",
+      "حزمة بطاريات",
+      "آلة يُسمّى «يليكتريك موتور»",
+      "مركبة يُسمّى «ريجينيراتيفي براكينج»",
+      "عاكس كهربائي",
+      "شاحن مدمج بالمركبة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Electric Vehicle Station to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the electric vehicle station vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Charging Station", "Connector", "Plug", "Cable"],
+          "scenario": "The engineer or technician checks charging station, connector, plug, and cable. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Charging Station", "Connector", "Plug", "Cable"],
+            "expectedAnswer": "Charging Station"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks charging station, connector, plug, and cable. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Adapter", "Level 1", "Level 2", "Dc Fast Charger"],
+          "scenario": "The engineer or technician checks adapter, level 1, level 2, and dc fast charger. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Adapter", "Level 1", "Level 2", "Dc Fast Charger"],
+            "expectedAnswer": "Adapter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks adapter, level 1, level 2, and dc fast charger. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Charging Port", "Payment Terminal", "Battery Pack", "Electric Motor"],
+          "scenario": "The engineer or technician checks charging port, payment terminal, battery pack, and electric motor. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Charging Port", "Payment Terminal", "Battery Pack", "Electric Motor"],
+            "expectedAnswer": "Charging Port"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks charging port, payment terminal, battery pack, and electric motor. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Regenerative Braking", "Inverter", "Onboard Charger"],
+          "scenario": "The engineer or technician checks regenerative braking, inverter, and onboard charger. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Regenerative Braking", "Inverter", "Onboard Charger"],
+            "expectedAnswer": "Regenerative Braking"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks regenerative braking, inverter, and onboard charger. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Electric Vehicle Station: Case Note",
+      "text": "A realistic case involving the electric vehicle station shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks charging station, connector, plug, and cable. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks adapter, level 1, level 2, and dc fast charger. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks charging port, payment terminal, battery pack, and electric motor. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks regenerative braking, inverter, and onboard charger. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Electric Vehicle Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Charging Station"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Adapter"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Charging Port"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Regenerative Braking"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Charging Station"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Telemetry” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Electric Vehicle Station: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Telemetry, Pid Tuning from drone-workshop-4\n3 lesson(s) back: Flight Controller, Gps Module from drone-workshop-2\n7 lesson(s) back: Ethernet, Bandwidth from data-center-2"
+  },
+  {
+    "lessonId": "electric-vehicle-station-2",
+    "lessonName": "The Electric Vehicle Station 2",
+    "unitId": "electric-vehicle-station",
+    "unitName": "The Electric Vehicle Station",
+    "unitOrder": 170,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 749,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Thermal Management",
+      "Drive Unit",
+      "Power Electronics",
+      "Bms",
+      "Cell",
+      "Parking Spot",
+      "Canopy",
+      "Solar Panel",
+      "Lighting",
+      "Signage",
+      "Bollard",
+      "Curb",
+      "Handicap Space",
+      "Trash Can",
+      "Bench"
+    ],
+    "targetWordsArabic": [
+      "إدارة حرارية",
+      "وحدة الدفع",
+      "إلكترونيات القدرة",
+      "نظام إدارة البطارية",
+      "خلية",
+      "مكان لوقوف السيارة",
+      "مظلّة",
+      "جهاز يُسمّى «سولار بانيل»",
+      "إضاءة",
+      "لافتات",
+      "حاجز عمودي",
+      "رصيف مرتفع",
+      "مكان مخصص لذوي الإعاقة",
+      "سلة مهملات",
+      "مقعد"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Electric Vehicle Station to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the electric vehicle station vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Thermal Management", "Drive Unit", "Power Electronics", "Bms"],
+          "scenario": "The engineer or technician checks thermal management, drive unit, power electronics, and bms. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Thermal Management", "Drive Unit", "Power Electronics", "Bms"],
+            "expectedAnswer": "Thermal Management"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks thermal management, drive unit, power electronics, and bms. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Cell", "Parking Spot", "Canopy", "Solar Panel"],
+          "scenario": "The engineer or technician checks cell, parking spot, canopy, and solar panel. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cell", "Parking Spot", "Canopy", "Solar Panel"],
+            "expectedAnswer": "Cell"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks cell, parking spot, canopy, and solar panel. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Lighting", "Signage", "Bollard", "Curb"],
+          "scenario": "The engineer or technician checks lighting, signage, bollard, and curb. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lighting", "Signage", "Bollard", "Curb"],
+            "expectedAnswer": "Lighting"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks lighting, signage, bollard, and curb. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Handicap Space", "Trash Can", "Bench"],
+          "scenario": "The engineer or technician checks handicap space, trash can, and bench. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Handicap Space", "Trash Can", "Bench"],
+            "expectedAnswer": "Handicap Space"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks handicap space, trash can, and bench. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Electric Vehicle Station: Report Excerpt",
+      "text": "A realistic case involving the electric vehicle station shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks thermal management, drive unit, power electronics, and bms. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks cell, parking spot, canopy, and solar panel. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks lighting, signage, bollard, and curb. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks handicap space, trash can, and bench. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Electric Vehicle Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Thermal Management"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cell"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lighting"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Handicap Space"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Thermal Management"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Charging Station” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Electric Vehicle Station: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Charging Station, Connector from electric-vehicle-station-1\n3 lesson(s) back: Soldering Iron, Multimeter from drone-workshop-3\n7 lesson(s) back: Air Conditioner, Chiller from data-center-3"
+  },
+  {
+    "lessonId": "electric-vehicle-station-3",
+    "lessonName": "The Electric Vehicle Station 3",
+    "unitId": "electric-vehicle-station",
+    "unitName": "The Electric Vehicle Station",
+    "unitOrder": 170,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 750,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Rfid Card",
+      "Mobile App",
+      "Qr Code",
+      "Account",
+      "Subscription",
+      "Per Kwh",
+      "Session Fee",
+      "Receipt",
+      "Network",
+      "Roaming",
+      "Kilowatt",
+      "State Of Charge",
+      "Range",
+      "Voltage",
+      "Amperage"
+    ],
+    "targetWordsArabic": [
+      "بطاقة تعريف بالترددات الراديوية (RFID)",
+      "برنامج يُسمّى «موبيلي ابب»",
+      "جهاز يُسمّى «كر كودي»",
+      "حساب",
+      "اشتراك",
+      "لكل كيلوواط ساعة",
+      "رسوم جلسة الشحن",
+      "إيصال",
+      "شبكة",
+      "التجوال بين شبكات الشحن",
+      "كيلوواط",
+      "جهاز يُسمّى «ستاتي وف تشارجي»",
+      "مدى",
+      "جهد كهربائي",
+      "شدة التيار"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Electric Vehicle Station to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the electric vehicle station vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Rfid Card", "Mobile App", "Qr Code", "Account"],
+          "scenario": "The engineer or technician checks rfid card, mobile app, qr code, and account. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Rfid Card", "Mobile App", "Qr Code", "Account"],
+            "expectedAnswer": "Rfid Card"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks rfid card, mobile app, qr code, and account. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Subscription", "Per Kwh", "Session Fee", "Receipt"],
+          "scenario": "The engineer or technician checks subscription, per kwh, session fee, and receipt. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Subscription", "Per Kwh", "Session Fee", "Receipt"],
+            "expectedAnswer": "Subscription"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks subscription, per kwh, session fee, and receipt. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Network", "Roaming", "Kilowatt", "State Of Charge"],
+          "scenario": "The engineer or technician checks network, roaming, kilowatt, and state of charge. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Network", "Roaming", "Kilowatt", "State Of Charge"],
+            "expectedAnswer": "Network"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks network, roaming, kilowatt, and state of charge. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Range", "Voltage", "Amperage"],
+          "scenario": "The engineer or technician checks range, voltage, and amperage. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Range", "Voltage", "Amperage"],
+            "expectedAnswer": "Range"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks range, voltage, and amperage. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Electric Vehicle Station: Workplace/Academic Scenario",
+      "text": "A realistic case involving the electric vehicle station shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks rfid card, mobile app, qr code, and account. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks subscription, per kwh, session fee, and receipt. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks network, roaming, kilowatt, and state of charge. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks range, voltage, and amperage. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Electric Vehicle Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rfid Card"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Subscription"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Network"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Range"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Rfid Card"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Thermal Management” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Electric Vehicle Station: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Thermal Management, Drive Unit from electric-vehicle-station-2\n3 lesson(s) back: Telemetry, Pid Tuning from drone-workshop-4\n7 lesson(s) back: Access Log, Cage from data-center-4"
+  },
+  {
+    "lessonId": "electric-vehicle-station-4",
+    "lessonName": "The Electric Vehicle Station 4",
+    "unitId": "electric-vehicle-station",
+    "unitName": "The Electric Vehicle Station",
+    "unitOrder": 170,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 751,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Charging Speed",
+      "Time Remaining",
+      "Energy Used",
+      "Cost",
+      "Efficiency",
+      "Ground Fault",
+      "Emergency Stop",
+      "Ventilation",
+      "Inspection",
+      "Firmware Update",
+      "Weatherproof",
+      "Tamper Proof",
+      "Lockout",
+      "Certification",
+      "Warranty"
+    ],
+    "targetWordsArabic": [
+      "سرعة الشحن",
+      "الوقت المتبقي",
+      "الطاقة المستخدمة",
+      "تكلفة",
+      "كفاءة",
+      "عطل تسريب أرضي",
+      "جهاز يُسمّى «يميرجينكي ستوب»",
+      "تهوية",
+      "فحص",
+      "جهاز يُسمّى «فيرمواري وبداتي»",
+      "مقاوم للعوامل الجوية",
+      "مقاوم للعبث",
+      "قفل أمان",
+      "شهادة اعتماد",
+      "ضمان"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Electric Vehicle Station to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the electric vehicle station vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "opinion paragraph",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Charging Speed", "Time Remaining", "Energy Used", "Cost"],
+          "scenario": "The engineer or technician checks charging speed, time remaining, energy used, and cost. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Charging Speed", "Time Remaining", "Energy Used", "Cost"],
+            "expectedAnswer": "Charging Speed"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks charging speed, time remaining, energy used, and cost. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Efficiency", "Ground Fault", "Emergency Stop", "Ventilation"],
+          "scenario": "The engineer or technician checks efficiency, ground fault, emergency stop, and ventilation. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Efficiency", "Ground Fault", "Emergency Stop", "Ventilation"],
+            "expectedAnswer": "Efficiency"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks efficiency, ground fault, emergency stop, and ventilation. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Inspection", "Firmware Update", "Weatherproof", "Tamper Proof"],
+          "scenario": "The engineer or technician checks inspection, firmware update, weatherproof, and tamper proof. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Inspection", "Firmware Update", "Weatherproof", "Tamper Proof"],
+            "expectedAnswer": "Inspection"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks inspection, firmware update, weatherproof, and tamper proof. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Lockout", "Certification", "Warranty"],
+          "scenario": "The engineer or technician checks lockout, certification, and warranty. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lockout", "Certification", "Warranty"],
+            "expectedAnswer": "Lockout"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks lockout, certification, and warranty. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Electric Vehicle Station: Opinion Paragraph",
+      "text": "A realistic case involving the electric vehicle station shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks charging speed, time remaining, energy used, and cost. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks efficiency, ground fault, emergency stop, and ventilation. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks inspection, firmware update, weatherproof, and tamper proof. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks lockout, certification, and warranty. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Electric Vehicle Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Charging Speed"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Efficiency"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Inspection"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lockout"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Charging Speed"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Rfid Card” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Electric Vehicle Station: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Rfid Card, Mobile App from electric-vehicle-station-3\n3 lesson(s) back: Charging Station, Connector from electric-vehicle-station-1\n7 lesson(s) back: Quadcopter, Hexacopter from drone-workshop-1"
+  }
+]

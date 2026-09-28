@@ -1,0 +1,427 @@
+﻿[
+  {
+    "lessonId": "academic-life-1",
+    "lessonName": "Academic Life 1",
+    "unitId": "academic-life",
+    "unitName": "Academic Life",
+    "unitOrder": 155,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 699,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Professor",
+      "Lecturer",
+      "Teaching Assistant",
+      "Dean",
+      "Provost",
+      "Chancellor",
+      "Advisor",
+      "Tutor",
+      "Researcher",
+      "Postdoc",
+      "Lecture",
+      "Seminar",
+      "Tutorial",
+      "Lab Session",
+      "Workshop"
+    ],
+    "targetWordsArabic": [
+      "أستاذ جامعي",
+      "محاضر",
+      "غرفة يُسمّى «تياتشينج اسسيستانت»",
+      "عميد",
+      "نائب رئيس أكاديمي",
+      "رئيس الجامعة",
+      "مرشد",
+      "مدرس خصوصي",
+      "باحث",
+      "باحث ما بعد الدكتوراه",
+      "محاضرة",
+      "ندوة",
+      "جلسة تعليمية",
+      "حصة مختبر",
+      "ورشة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Academic Life to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use academic life vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Professor", "Lecturer", "Teaching Assistant", "Dean"],
+          "scenario": "The student or researcher works with professor, lecturer, teaching assistant, and dean. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Professor", "Lecturer", "Teaching Assistant", "Dean"],
+            "expectedAnswer": "Professor"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with professor, lecturer, teaching assistant, and dean. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Provost", "Chancellor", "Advisor", "Tutor"],
+          "scenario": "The student or researcher works with provost, chancellor, advisor, and tutor. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Provost", "Chancellor", "Advisor", "Tutor"],
+            "expectedAnswer": "Provost"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with provost, chancellor, advisor, and tutor. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Researcher", "Postdoc", "Lecture", "Seminar"],
+          "scenario": "The student or researcher works with researcher, postdoc, lecture, and seminar. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Researcher", "Postdoc", "Lecture", "Seminar"],
+            "expectedAnswer": "Researcher"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with researcher, postdoc, lecture, and seminar. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Tutorial", "Lab Session", "Workshop"],
+          "scenario": "The student or researcher works with tutorial, lab session, and workshop. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tutorial", "Lab Session", "Workshop"],
+            "expectedAnswer": "Tutorial"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with tutorial, lab session, and workshop. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Academic Life: Case Note",
+      "text": "A realistic case involving academic life shows how precise vocabulary can influence choices, explanations, and outcomes. The student or researcher works with professor, lecturer, teaching assistant, and dean. Each term supports a different part of study, research, or campus life. The student or researcher works with provost, chancellor, advisor, and tutor. Each term supports a different part of study, research, or campus life. The student or researcher works with researcher, postdoc, lecture, and seminar. Each term supports a different part of study, research, or campus life. The student or researcher works with tutorial, lab session, and workshop. Each term supports a different part of study, research, or campus life. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Academic Life. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Professor"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Provost"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Researcher"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tutorial"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Professor"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Orientation” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Academic Life: In Context",
+      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Orientation, Registration from university-campus-3\n3 lesson(s) back: Lecture Hall, Library from university-campus-1\n7 lesson(s) back: Online Banking, Mobile App from currency-payment-3"
+  },
+  {
+    "lessonId": "academic-life-2",
+    "lessonName": "Academic Life 2",
+    "unitId": "academic-life",
+    "unitName": "Academic Life",
+    "unitOrder": 155,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 700,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Syllabus",
+      "Prerequisite",
+      "Elective",
+      "Core Course",
+      "Credit Hour",
+      "Grade",
+      "GPA",
+      "Pass/Fail",
+      "Dean's List",
+      "Honor Roll",
+      "Transcript",
+      "Midterm",
+      "Final Exam",
+      "Quiz",
+      "Rubric"
+    ],
+    "targetWordsArabic": [
+      "منهج المقرر",
+      "متطلب سابق",
+      "مقرر اختياري",
+      "مصطلح مرتبط بالموضوع يُسمّى «كوري كوورسي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كريديت هوور»",
+      "درجة",
+      "المعدل التراكمي",
+      "نظام ناجح/راسب",
+      "قائمة العميد للمتفوقين",
+      "قائمة الشرف",
+      "كشف درجات",
+      "اختبار منتصف الفصل",
+      "مادة يُسمّى «فينال يكسام»",
+      "اختبار قصير",
+      "معيار تقييم"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Academic Life to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use academic life vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Syllabus", "Prerequisite", "Elective", "Core Course"],
+          "scenario": "The student or researcher works with syllabus, prerequisite, elective, and core course. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Syllabus", "Prerequisite", "Elective", "Core Course"],
+            "expectedAnswer": "Syllabus"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with syllabus, prerequisite, elective, and core course. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Credit Hour", "Grade", "GPA", "Pass/Fail"],
+          "scenario": "The student or researcher works with credit hour, grade, gpa, and pass/fail. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Credit Hour", "Grade", "GPA", "Pass/Fail"],
+            "expectedAnswer": "Credit Hour"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with credit hour, grade, gpa, and pass/fail. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Dean's List", "Honor Roll", "Transcript", "Midterm"],
+          "scenario": "The student or researcher works with dean's list, honor roll, transcript, and midterm. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dean's List", "Honor Roll", "Transcript", "Midterm"],
+            "expectedAnswer": "Dean's List"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with dean's list, honor roll, transcript, and midterm. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Final Exam", "Quiz", "Rubric"],
+          "scenario": "The student or researcher works with final exam, quiz, and rubric. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Final Exam", "Quiz", "Rubric"],
+            "expectedAnswer": "Final Exam"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with final exam, quiz, and rubric. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Academic Life: Report Excerpt",
+      "text": "A realistic case involving academic life shows how precise vocabulary can influence choices, explanations, and outcomes. The student or researcher works with syllabus, prerequisite, elective, and core course. Each term supports a different part of study, research, or campus life. The student or researcher works with credit hour, grade, gpa, and pass/fail. Each term supports a different part of study, research, or campus life. The student or researcher works with dean's list, honor roll, transcript, and midterm. Each term supports a different part of study, research, or campus life. The student or researcher works with final exam, quiz, and rubric. Each term supports a different part of study, research, or campus life. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Academic Life. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Syllabus"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Credit Hour"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dean's List"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Final Exam"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Syllabus"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Professor” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Academic Life: In Context",
+      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Professor, Lecturer from academic-life-1\n3 lesson(s) back: Gate, Pathway from university-campus-2\n7 lesson(s) back: Bull Market, Bear Market from stock-exchange-1"
+  },
+  {
+    "lessonId": "academic-life-3",
+    "lessonName": "Academic Life 3",
+    "unitId": "academic-life",
+    "unitName": "Academic Life",
+    "unitOrder": 155,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 701,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Bachelor's",
+      "Master's",
+      "Doctorate",
+      "Associate's",
+      "Diploma",
+      "Certificate",
+      "Major",
+      "Minor",
+      "Double Major",
+      "Concentration"
+    ],
+    "targetWordsArabic": [
+      "درجة البكالوريوس",
+      "درجة الماجستير",
+      "دكتوراه",
+      "درجة الزمالة الجامعية",
+      "دبلوم",
+      "شهادة",
+      "تخصص رئيسي",
+      "قاصر",
+      "تخصص مزدوج",
+      "مسار تخصصي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Academic Life to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use academic life vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bachelor's", "Master's", "Doctorate", "Associate's"],
+          "scenario": "The student or researcher works with bachelor's, master's, doctorate, and associate's. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bachelor's", "Master's", "Doctorate", "Associate's"],
+            "expectedAnswer": "Bachelor's"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with bachelor's, master's, doctorate, and associate's. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Diploma", "Certificate", "Major", "Minor"],
+          "scenario": "The student or researcher works with diploma, certificate, major, and minor. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Diploma", "Certificate", "Major", "Minor"],
+            "expectedAnswer": "Diploma"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with diploma, certificate, major, and minor. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Double Major", "Concentration"],
+          "scenario": "The student or researcher works with double major and concentration. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Double Major", "Concentration"],
+            "expectedAnswer": "Double Major"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with double major and concentration. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Academic Life: Workplace/Academic Scenario",
+      "text": "A realistic case involving academic life shows how precise vocabulary can influence choices, explanations, and outcomes. The student or researcher works with bachelor's, master's, doctorate, and associate's. Each term supports a different part of study, research, or campus life. The student or researcher works with diploma, certificate, major, and minor. Each term supports a different part of study, research, or campus life. The student or researcher works with double major and concentration. Each term supports a different part of study, research, or campus life. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Academic Life. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bachelor's"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Diploma"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Double Major"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Bachelor's"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Syllabus” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Academic Life: In Context",
+      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Syllabus, Prerequisite from academic-life-2\n3 lesson(s) back: Orientation, Registration from university-campus-3\n7 lesson(s) back: Spread, Limit Order from stock-exchange-2"
+  }
+]

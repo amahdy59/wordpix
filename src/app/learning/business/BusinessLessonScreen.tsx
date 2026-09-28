@@ -225,7 +225,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
         <div
           ref={stagePanelRef}
           tabIndex={-1}
-          className="flex-1 min-h-0 overflow-y-auto p-4 sm:p-8 outline-none overscroll-y-contain"
+          className="wp-layout-gutter flex-1 min-h-0 overflow-y-auto py-4 sm:py-8 outline-none overscroll-y-contain"
         >
           {currentStageId === "recall" && (
             <BusinessRecallStage

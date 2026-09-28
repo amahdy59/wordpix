@@ -1,6 +1,6 @@
 import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
-import { resolveGroup, type VocabularyItem } from "../data/lessons";
+import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getDistractors } from "./exerciseContent";
 import { shuffleArray } from "../../utils/shuffle";
@@ -188,7 +188,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         </>
       }
     >
-      <div className="relative mx-auto flex min-h-[560px] w-full max-w-[2200px] flex-1 flex-col gap-4 sm:min-h-[640px] sm:gap-5 lg:min-h-[320px]">
+      <div className="wp-container-immersive relative flex min-h-[560px] flex-1 flex-col gap-4 sm:min-h-[640px] sm:gap-5 lg:min-h-[320px]">
         <div className="flex shrink-0 flex-col items-center justify-between gap-3 sm:flex-row">
           <div className="text-center sm:text-start">
             <p className="font-sans text-sm font-bold text-foreground sm:text-base">

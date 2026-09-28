@@ -1,0 +1,733 @@
+﻿[
+  {
+    "lessonId": "garden-1",
+    "lessonName": "The Garden 1",
+    "unitId": "garden",
+    "unitName": "The Garden",
+    "unitOrder": 24,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 97,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Rose",
+      "Tulip",
+      "Sunflower",
+      "Daisy",
+      "Lily",
+      "Daffodil",
+      "Violet",
+      "Orchid",
+      "Carnation",
+      "Lavender",
+      "Oak Tree",
+      "Pine Tree",
+      "Apple Tree",
+      "Cherry Tree",
+      "Palm Tree"
+    ],
+    "targetWordsArabic": [
+      "وَرْدَة",
+      "زَهْرَةُ التُّولِيب (خُزَامَى)",
+      "عَبَّادُ الشَّمْس (دُوَّارُ الشَّمْس)",
+      "زَهْرَةُ اللُّؤْلُؤ (أُقْحُوَان)",
+      "زَنْبَق",
+      "نَرْجِس (نَرْجِسٌ بَرِّي)",
+      "بَنَفْسَج",
+      "سَحْلَبِيَّة (أُورْكِيد)",
+      "قَرَنْفُل (زَهْرَةُ القَرَنْفُل)",
+      "خُزَامَى (لافِنْدَر)",
+      "شَجَرَةُ البَلُّوط",
+      "شَجَرَةُ الصَّنَوْبَر",
+      "شَجَرَةُ التُّفَّاح",
+      "شَجَرَةُ الكَرَز",
+      "نَخْلَة (شَجَرَةُ النَّخِيل)"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Garden to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the garden vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Rose", "Tulip", "Sunflower"],
+          "scenario": "The gardener waters the rose, tulip, and sunflower, then checks the plants for new growth.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Rose", "Tulip", "Sunflower"],
+            "expectedAnswer": "Rose"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The gardener waters the rose, tulip, and sunflower, then checks the plants for new growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Daisy", "Lily", "Daffodil"],
+          "scenario": "The gardener waters the daisy, lily, and daffodil, then checks the plants for new growth.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Daisy", "Lily", "Daffodil"],
+            "expectedAnswer": "Daisy"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The gardener waters the daisy, lily, and daffodil, then checks the plants for new growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Violet", "Orchid", "Carnation"],
+          "scenario": "The gardener waters the violet, orchid, and carnation, then checks the plants for new growth.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Violet", "Orchid", "Carnation"],
+            "expectedAnswer": "Violet"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The gardener waters the violet, orchid, and carnation, then checks the plants for new growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Lavender", "Oak Tree", "Pine Tree"],
+          "scenario": "The gardener waters the lavender, oak tree, and pine tree, then checks the plants for new growth.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Lavender", "Oak Tree", "Pine Tree"],
+            "expectedAnswer": "Lavender"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The gardener waters the lavender, oak tree, and pine tree, then checks the plants for new growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Apple Tree", "Cherry Tree", "Palm Tree"],
+          "scenario": "The gardener waters the apple tree, cherry tree, and palm tree, then checks the plants for new growth.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Apple Tree", "Cherry Tree", "Palm Tree"],
+            "expectedAnswer": "Apple Tree"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The gardener waters the apple tree, cherry tree, and palm tree, then checks the plants for new growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Garden: Short Description",
+      "text": "Maya is in a situation connected to the garden. She uses the new words to understand what she sees and what happens next. The gardener waters the rose, tulip, and sunflower, then checks the plants for new growth. The gardener waters the daisy, lily, and daffodil, then checks the plants for new growth. The gardener waters the violet, orchid, and carnation, then checks the plants for new growth. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Garden. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rose"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Daisy"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Violet"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lavender"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Apple Tree"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Rose"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Sunflower"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Straw” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Garden: In Context",
+      "idea": "30-45 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Straw, Farmer from farm-6\n3 lesson(s) back: Plow, Trailer from farm-4\n7 lesson(s) back: Tear, Cut from hand-actions-4"
+  },
+  {
+    "lessonId": "garden-2",
+    "lessonName": "The Garden 2",
+    "unitId": "garden",
+    "unitName": "The Garden",
+    "unitOrder": 24,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 98,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Hedge",
+      "Bush",
+      "Ivy",
+      "Vine",
+      "Fern",
+      "Shovel",
+      "Rake",
+      "Watering Can",
+      "Wheelbarrow",
+      "Hose",
+      "Garden Gloves",
+      "Pruner",
+      "Trowel",
+      "Lawn Mower",
+      "Spade"
+    ],
+    "targetWordsArabic": [
+      "سِيَاجٌ نَبَاتِيّ (سِيَاجُ شُجَيْرَات)",
+      "شُجَيْرَة",
+      "لَبْلاَب (عَشَقَة / آيْفِي)",
+      "عَرِيشَة (نَبَاتٌ مُتَسَلِّق / كَرْمَة)",
+      "سَرَخْس",
+      "مِجْرَفَة (كُورِيك)",
+      "مِشْطُ حَدِيقَة (مِجْرَفَةُ أَوْرَاق)",
+      "رَشَّاشُ مَاء (كَنَكَةُ رَيّ / مِرَشَّة)",
+      "عَرَبَةُ يَد (بَرُوِيطَة)",
+      "خُرْطُومُ المِيَاه",
+      "قُفَّازَاتُ الحَدِيقَة",
+      "مِقَصُّ التَّقْلِيم (مِقَصُّ الشُّجَيْرَات)",
+      "مِجْرَفَةٌ يَدَوِيَّة (مِجْرَفَةُ الشَّتْل)",
+      "جَزَّازَةُ العُشْب",
+      "مِجْرَفَة (مِجْرَفَةُ الحَفْرِ المُسَطَّحَة)"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Garden to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the garden vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Hedge", "Bush", "Ivy"],
+          "scenario": "The gardener waters the hedge, bush, and ivy, then checks the plants for new growth.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Hedge", "Bush", "Ivy"],
+            "expectedAnswer": "Hedge"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The gardener waters the hedge, bush, and ivy, then checks the plants for new growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Vine", "Fern", "Shovel"],
+          "scenario": "During the morning round, the farmer checks vine, fern, and shovel. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Vine", "Fern", "Shovel"],
+            "expectedAnswer": "Vine"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks vine, fern, and shovel. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Rake", "Watering Can", "Wheelbarrow"],
+          "scenario": "During the morning round, the farmer checks rake, watering can, and wheelbarrow. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Rake", "Watering Can", "Wheelbarrow"],
+            "expectedAnswer": "Rake"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks rake, watering can, and wheelbarrow. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Hose", "Garden Gloves", "Pruner"],
+          "scenario": "During the morning round, the farmer checks hose, garden gloves, and pruner. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Hose", "Garden Gloves", "Pruner"],
+            "expectedAnswer": "Hose"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks hose, garden gloves, and pruner. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Trowel", "Lawn Mower", "Spade"],
+          "scenario": "During the morning round, the farmer checks trowel, lawn mower, and spade. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Trowel", "Lawn Mower", "Spade"],
+            "expectedAnswer": "Trowel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks trowel, lawn mower, and spade. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Garden: Mini Dialogue",
+      "text": "Maya is in a situation connected to the garden. She uses the new words to understand what she sees and what happens next. The gardener waters the hedge, bush, and ivy, then checks the plants for new growth. During the morning round, the farmer checks vine, fern, and shovel. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks rake, watering can, and wheelbarrow. The words belong to the same farm or garden scene, but each one has a different role. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Garden. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hedge"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Vine"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rake"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hose"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Trowel"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Hedge"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Ivy"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Rose” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Garden: In Context",
+      "idea": "30-45 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Rose, Tulip from garden-1\n3 lesson(s) back: Cream, Flour from farm-5\n7 lesson(s) back: Cow, Pig from farm-1"
+  },
+  {
+    "lessonId": "garden-3",
+    "lessonName": "The Garden 3",
+    "unitId": "garden",
+    "unitName": "The Garden",
+    "unitOrder": 24,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 99,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Pitchfork",
+      "Sprinkler",
+      "Root",
+      "Stem",
+      "Leaf",
+      "Petal",
+      "Branch",
+      "Bark",
+      "Bud",
+      "Seed",
+      "Thorn",
+      "Berry",
+      "Butterfly",
+      "Ladybug",
+      "Bee"
+    ],
+    "targetWordsArabic": [
+      "مِذْرَاة (مِذْرَاةُ قَشّ)",
+      "مِرَشَّةُ مِيَاه (رَشَّاشُ الحَدِيقَة)",
+      "جَذْر (جُذُور)",
+      "سَاق (سَاقُ النَّبَات)",
+      "وَرَقَةُ شَجَر (وَرَقَةُ نَبَات)",
+      "بَتَلَة (تُوَيْجِيَّة)",
+      "غُصْن (فَرْعُ شَجَرَة)",
+      "لِحَاء (قِشْرَةُ الشَّجَرَة)",
+      "بُرْعُم (بُرْعُمُ زَهْرَة)",
+      "بَذْرَة (بُذُور)",
+      "شَوْكَة (شَوْكُ النَّبَات)",
+      "تُوت (ثَمَرَةُ عُلَّيْق / حَبَّةُ تُوت)",
+      "فَرَاشَة",
+      "دُعْسُوقَة (خُنْفُسَاءُ مَرْيَم)",
+      "نَحْلَة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Garden to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the garden vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Pitchfork", "Sprinkler", "Root"],
+          "scenario": "During the morning round, the farmer checks pitchfork, sprinkler, and root. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Pitchfork", "Sprinkler", "Root"],
+            "expectedAnswer": "Pitchfork"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks pitchfork, sprinkler, and root. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Stem", "Leaf", "Petal"],
+          "scenario": "During the morning round, the farmer checks stem, leaf, and petal. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Stem", "Leaf", "Petal"],
+            "expectedAnswer": "Stem"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks stem, leaf, and petal. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Branch", "Bark", "Bud"],
+          "scenario": "The gardener waters the branch, bark, and bud, then checks the plants for new growth.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Branch", "Bark", "Bud"],
+            "expectedAnswer": "Branch"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The gardener waters the branch, bark, and bud, then checks the plants for new growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Seed", "Thorn", "Berry"],
+          "scenario": "The gardener waters the seed, thorn, and berry, then checks the plants for new growth.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Seed", "Thorn", "Berry"],
+            "expectedAnswer": "Seed"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The gardener waters the seed, thorn, and berry, then checks the plants for new growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Butterfly", "Ladybug", "Bee"],
+          "scenario": "The farmer checks on the butterfly, ladybug, and bee during the morning round and makes sure the animals have what they need.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Butterfly", "Ladybug", "Bee"],
+            "expectedAnswer": "Butterfly"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The farmer checks on the butterfly, ladybug, and bee during the morning round and makes sure the animals have what they need. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Garden: Simple Message",
+      "text": "Maya is in a situation connected to the garden. She uses the new words to understand what she sees and what happens next. During the morning round, the farmer checks pitchfork, sprinkler, and root. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks stem, leaf, and petal. The words belong to the same farm or garden scene, but each one has a different role. The gardener waters the branch, bark, and bud, then checks the plants for new growth. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Garden. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pitchfork"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stem"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Branch"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Seed"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Butterfly"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Pitchfork"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Root"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Hedge” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Garden: In Context",
+      "idea": "30-45 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Hedge, Bush from garden-2\n3 lesson(s) back: Straw, Farmer from farm-6\n7 lesson(s) back: Potato, Tomato from farm-2"
+  },
+  {
+    "lessonId": "garden-4",
+    "lessonName": "The Garden 4",
+    "unitId": "garden",
+    "unitName": "The Garden",
+    "unitOrder": 24,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 100,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Worm",
+      "Snail",
+      "Ant",
+      "Caterpillar",
+      "Spider",
+      "Dragonfly",
+      "Grasshopper",
+      "Lawn",
+      "Flower Bed",
+      "Path",
+      "Fence",
+      "Gate",
+      "Greenhouse",
+      "Bird Feeder",
+      "Garden Shed"
+    ],
+    "targetWordsArabic": [
+      "دُودَة (دُودَةُ الأَرْض)",
+      "حَلَزُون (بَزَّاق)",
+      "نَمْلَة",
+      "يَرَقَة (يَرَقَةُ الفَرَاشَة / إِسْرُوع)",
+      "عَنْكَبُوت",
+      "يَعْسُوب (دَبُّورُ المَاءِ / رَعَّاش)",
+      "جَرَادَة (جُنْدُب)",
+      "مَرْج (مِسَاحَةُ عُشْبٍ خَضْرَاء)",
+      "حَوْضُ زُهُور (رَوْضَةُ أَزْهَار)",
+      "مَمَرّ (مَمْشَى الحَدِيقَة)",
+      "سِيَاج (سُور)",
+      "بَوَّابَة (بَوَّابَةُ الحَدِيقَة)",
+      "صَوْبَةٌ زِرَاعِيَّة (بَيْتٌ زُجَاجِيّ / دَفِيئَة)",
+      "مِطْعَمُ الطُّيُور (مِعْلَفَةُ الطُّيُور)",
+      "كُوخُ الحَدِيقَة (مُسْتَوْدَعُ أَدَوَاتِ الحَدِيقَة)"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Garden to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the garden vocabulary in simple context.",
+      "textType": "notice-style text",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Worm", "Snail", "Ant"],
+          "scenario": "The farmer checks on the worm, snail, and ant during the morning round and makes sure the animals have what they need.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Worm", "Snail", "Ant"],
+            "expectedAnswer": "Worm"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The farmer checks on the worm, snail, and ant during the morning round and makes sure the animals have what they need. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Caterpillar", "Spider", "Dragonfly"],
+          "scenario": "The farmer checks on the caterpillar, spider, and dragonfly during the morning round and makes sure the animals have what they need.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Caterpillar", "Spider", "Dragonfly"],
+            "expectedAnswer": "Caterpillar"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The farmer checks on the caterpillar, spider, and dragonfly during the morning round and makes sure the animals have what they need. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Grasshopper", "Lawn", "Flower Bed"],
+          "scenario": "During the morning round, the farmer checks grasshopper, lawn, and flower bed. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Grasshopper", "Lawn", "Flower Bed"],
+            "expectedAnswer": "Grasshopper"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks grasshopper, lawn, and flower bed. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Path", "Fence", "Gate"],
+          "scenario": "During the morning round, the farmer checks path, fence, and gate. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Path", "Fence", "Gate"],
+            "expectedAnswer": "Path"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks path, fence, and gate. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Greenhouse", "Bird Feeder", "Garden Shed"],
+          "scenario": "During the morning round, the farmer checks greenhouse, bird feeder, and garden shed. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Greenhouse", "Bird Feeder", "Garden Shed"],
+            "expectedAnswer": "Greenhouse"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks greenhouse, bird feeder, and garden shed. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Garden: Notice-Style Text",
+      "text": "Maya is in a situation connected to the garden. She uses the new words to understand what she sees and what happens next. The farmer checks on the worm, snail, and ant during the morning round and makes sure the animals have what they need. The farmer checks on the caterpillar, spider, and dragonfly during the morning round and makes sure the animals have what they need. During the morning round, the farmer checks grasshopper, lawn, and flower bed. The words belong to the same farm or garden scene, but each one has a different role. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Garden. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Worm"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Caterpillar"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Grasshopper"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Path"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Greenhouse"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Worm"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Ant"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Pitchfork” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Garden: In Context",
+      "idea": "30-45 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Pitchfork, Sprinkler from garden-3\n3 lesson(s) back: Rose, Tulip from garden-1\n7 lesson(s) back: Raspberry, Grape Vine from farm-3"
+  },
+  {
+    "lessonId": "garden-5",
+    "lessonName": "The Garden 5",
+    "unitId": "garden",
+    "unitName": "The Garden",
+    "unitOrder": 24,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 101,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": ["Birdbath", "Compost Bin", "Flower", "Tree", "Grass", "Gloves", "Bird"],
+    "targetWordsArabic": [
+      "مَغْسَلُ الطُّيُور (حَوْضُ اسْتِحْمَامِ الطُّيُور)",
+      "صُنْدُوقُ السَّمَادِ العُضْوِيّ",
+      "-",
+      "-",
+      "عُشْبٌ أَخْضَر",
+      "قُفَّازَاتُ تَنْظِيف (قُفَّازَات)",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Garden to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the garden vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Birdbath", "Compost Bin", "Flower"],
+          "scenario": "During the morning round, the farmer checks birdbath, compost bin, and flower. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Birdbath", "Compost Bin", "Flower"],
+            "expectedAnswer": "Birdbath"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks birdbath, compost bin, and flower. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Tree", "Grass", "Gloves"],
+          "scenario": "During the morning round, the farmer checks tree, grass, and gloves. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Tree", "Grass", "Gloves"],
+            "expectedAnswer": "Tree"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks tree, grass, and gloves. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": "Bird",
+          "scenario": "The farmer checks on the bird during the morning round and makes sure the animals have what they need.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": "Bird",
+            "expectedAnswer": "Bird"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The farmer checks on the bird during the morning round and makes sure the animals have what they need. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Garden: Short Description",
+      "text": "Maya is in a situation connected to the garden. She uses the new words to understand what she sees and what happens next. During the morning round, the farmer checks birdbath, compost bin, and flower. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks tree, grass, and gloves. The words belong to the same farm or garden scene, but each one has a different role. The farmer checks on the bird during the morning round and makes sure the animals have what they need. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Garden. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Birdbath"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tree"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bird"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Birdbath"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Flower"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Worm” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Garden: In Context",
+      "idea": "30-45 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Worm, Snail from garden-4\n3 lesson(s) back: Hedge, Bush from garden-2\n7 lesson(s) back: Plow, Trailer from farm-4"
+  }
+]

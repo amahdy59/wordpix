@@ -56,7 +56,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
 
   return (
     <section
-      className="mx-auto w-full max-w-4xl rounded-3xl border border-border bg-card p-5 shadow-wp-sm sm:p-8"
+      className="wp-container-reading rounded-3xl border border-border bg-card p-5 shadow-wp-sm sm:p-8"
       aria-labelledby="hadith-practice-heading"
     >
       <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">

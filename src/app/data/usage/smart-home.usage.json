@@ -1,0 +1,600 @@
+﻿[
+  {
+    "lessonId": "smart-home-1",
+    "lessonName": "The Smart Home 1",
+    "unitId": "smart-home",
+    "unitName": "The Smart Home",
+    "unitOrder": 166,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 733,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Smart Speaker",
+      "Voice Command",
+      "Wake Word",
+      "Routine",
+      "Reminder",
+      "Timer",
+      "Playlist",
+      "News Briefing",
+      "Intercom",
+      "Multi Room",
+      "Smart Bulb",
+      "Dimmer",
+      "Color Changing",
+      "Light Strip",
+      "Motion Sensor"
+    ],
+    "targetWordsArabic": [
+      "مكبر صوت ذكي",
+      "جهاز يُسمّى «فويكي كومماند»",
+      "كلمة تنبيه",
+      "روتين",
+      "تذكير",
+      "مؤقت",
+      "قائمة تشغيل",
+      "موجز إخباري",
+      "جهاز اتصال داخلي",
+      "متعدد الغرف",
+      "مصباح ذكي",
+      "مخفّض إضاءة",
+      "متغيّر الألوان",
+      "شريط إضاءة",
+      "مستشعر حركة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Smart Home to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the smart home vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Smart Speaker", "Voice Command", "Wake Word", "Routine"],
+          "scenario": "The engineer or technician checks smart speaker, voice command, wake word, and routine. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Smart Speaker", "Voice Command", "Wake Word", "Routine"],
+            "expectedAnswer": "Smart Speaker"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks smart speaker, voice command, wake word, and routine. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Reminder", "Timer", "Playlist", "News Briefing"],
+          "scenario": "The engineer or technician checks reminder, timer, playlist, and news briefing. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Reminder", "Timer", "Playlist", "News Briefing"],
+            "expectedAnswer": "Reminder"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks reminder, timer, playlist, and news briefing. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Intercom", "Multi Room", "Smart Bulb", "Dimmer"],
+          "scenario": "The engineer or technician checks intercom, multi room, smart bulb, and dimmer. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Intercom", "Multi Room", "Smart Bulb", "Dimmer"],
+            "expectedAnswer": "Intercom"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks intercom, multi room, smart bulb, and dimmer. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Color Changing", "Light Strip", "Motion Sensor"],
+          "scenario": "The engineer or technician checks color changing, light strip, and motion sensor. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Color Changing", "Light Strip", "Motion Sensor"],
+            "expectedAnswer": "Color Changing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks color changing, light strip, and motion sensor. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Smart Home: Case Note",
+      "text": "A realistic case involving the smart home shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks smart speaker, voice command, wake word, and routine. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks reminder, timer, playlist, and news briefing. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks intercom, multi room, smart bulb, and dimmer. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks color changing, light strip, and motion sensor. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Smart Home. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Smart Speaker"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Reminder"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Intercom"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Color Changing"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Smart Speaker"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Seat Belt Law” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Smart Home: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Seat Belt Law, Right of Way from driving-road-rules-3\n3 lesson(s) back: Stop Sign, Yield Sign from driving-road-rules-1\n7 lesson(s) back: Power Steering Fluid, Gas from car-parts-mechanics-4"
+  },
+  {
+    "lessonId": "smart-home-2",
+    "lessonName": "The Smart Home 2",
+    "unitId": "smart-home",
+    "unitName": "The Smart Home",
+    "unitOrder": 166,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 734,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Schedule",
+      "Scene",
+      "Brightness",
+      "Warm White",
+      "Daylight",
+      "Smart Lock",
+      "Doorbell Camera",
+      "Security Camera",
+      "Motion Detector",
+      "Alarm System",
+      "Keypad",
+      "Fingerprint",
+      "App Alert",
+      "Cloud Storage",
+      "Night Vision"
+    ],
+    "targetWordsArabic": [
+      "جدول",
+      "مشهد",
+      "سطوع",
+      "أبيض دافئ",
+      "ضوء النهار",
+      "قفل ذكي",
+      "كاميرا جرس الباب",
+      "كاميرا مراقبة",
+      "كاشف حركة",
+      "نظام إنذار",
+      "لوحة أرقام",
+      "بصمة إصبع",
+      "تنبيه من التطبيق",
+      "تخزين سحابة",
+      "مصطلح مرتبط بالموضوع يُسمّى «نيغت فيسيون»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Smart Home to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the smart home vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Schedule", "Scene", "Brightness", "Warm White"],
+          "scenario": "The engineer or technician checks schedule, scene, brightness, and warm white. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Schedule", "Scene", "Brightness", "Warm White"],
+            "expectedAnswer": "Schedule"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks schedule, scene, brightness, and warm white. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Daylight", "Smart Lock", "Doorbell Camera", "Security Camera"],
+          "scenario": "The engineer or technician checks daylight, smart lock, doorbell camera, and security camera. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Daylight", "Smart Lock", "Doorbell Camera", "Security Camera"],
+            "expectedAnswer": "Daylight"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks daylight, smart lock, doorbell camera, and security camera. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Motion Detector", "Alarm System", "Keypad", "Fingerprint"],
+          "scenario": "The engineer or technician checks motion detector, alarm system, keypad, and fingerprint. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Motion Detector", "Alarm System", "Keypad", "Fingerprint"],
+            "expectedAnswer": "Motion Detector"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks motion detector, alarm system, keypad, and fingerprint. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["App Alert", "Cloud Storage", "Night Vision"],
+          "scenario": "The engineer or technician checks app alert, cloud storage, and night vision. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["App Alert", "Cloud Storage", "Night Vision"],
+            "expectedAnswer": "App Alert"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks app alert, cloud storage, and night vision. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Smart Home: Report Excerpt",
+      "text": "A realistic case involving the smart home shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks schedule, scene, brightness, and warm white. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks daylight, smart lock, doorbell camera, and security camera. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks motion detector, alarm system, keypad, and fingerprint. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks app alert, cloud storage, and night vision. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Smart Home. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Schedule"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Daylight"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Motion Detector"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "App Alert"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Schedule"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Smart Speaker” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Smart Home: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Smart Speaker, Voice Command from smart-home-1\n3 lesson(s) back: Crosswalk, Traffic Light from driving-road-rules-2\n7 lesson(s) back: Showroom, Lot from auto-dealership-1"
+  },
+  {
+    "lessonId": "smart-home-3",
+    "lessonName": "The Smart Home 3",
+    "unitId": "smart-home",
+    "unitName": "The Smart Home",
+    "unitOrder": 166,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 735,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Smart Thermostat",
+      "Temperature Sensor",
+      "Humidity Sensor",
+      "Zone",
+      "Eco Mode",
+      "Geofencing",
+      "Vent",
+      "Air Purifier",
+      "Fan",
+      "Streaming Device",
+      "Smart Tv",
+      "Soundbar",
+      "Projector",
+      "Gaming Console",
+      "Universal Remote"
+    ],
+    "targetWordsArabic": [
+      "منظّم حرارة ذكي",
+      "مستشعر درجة الحرارة",
+      "مستشعر رطوبة",
+      "منطقة",
+      "وضع اقتصادي",
+      "سياج جغرافي افتراضي",
+      "فتحة تهوية",
+      "منقّي هواء",
+      "مروحة",
+      "جهاز بث",
+      "تلفاز ذكي",
+      "مكبر صوت شريطي",
+      "جهاز عرض",
+      "جهاز ألعاب",
+      "جهاز تحكم شامل"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Smart Home to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the smart home vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Smart Thermostat", "Temperature Sensor", "Humidity Sensor", "Zone"],
+          "scenario": "The engineer or technician checks smart thermostat, temperature sensor, humidity sensor, and zone. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Smart Thermostat", "Temperature Sensor", "Humidity Sensor", "Zone"],
+            "expectedAnswer": "Smart Thermostat"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks smart thermostat, temperature sensor, humidity sensor, and zone. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Eco Mode", "Geofencing", "Vent", "Air Purifier"],
+          "scenario": "The engineer or technician checks eco mode, geofencing, vent, and air purifier. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Eco Mode", "Geofencing", "Vent", "Air Purifier"],
+            "expectedAnswer": "Eco Mode"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks eco mode, geofencing, vent, and air purifier. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Fan", "Streaming Device", "Smart Tv", "Soundbar"],
+          "scenario": "The engineer or technician checks fan, streaming device, smart tv, and soundbar. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fan", "Streaming Device", "Smart Tv", "Soundbar"],
+            "expectedAnswer": "Fan"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks fan, streaming device, smart tv, and soundbar. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Projector", "Gaming Console", "Universal Remote"],
+          "scenario": "The engineer or technician checks projector, gaming console, and universal remote. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Projector", "Gaming Console", "Universal Remote"],
+            "expectedAnswer": "Projector"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks projector, gaming console, and universal remote. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Smart Home: Workplace/Academic Scenario",
+      "text": "A realistic case involving the smart home shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks smart thermostat, temperature sensor, humidity sensor, and zone. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks eco mode, geofencing, vent, and air purifier. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks fan, streaming device, smart tv, and soundbar. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks projector, gaming console, and universal remote. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Smart Home. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Smart Thermostat"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Eco Mode"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fan"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Projector"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Smart Thermostat"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Schedule” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Smart Home: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Schedule, Scene from smart-home-2\n3 lesson(s) back: Seat Belt Law, Right of Way from driving-road-rules-3\n7 lesson(s) back: Monthly Payment, MSRP from auto-dealership-2"
+  },
+  {
+    "lessonId": "smart-home-4",
+    "lessonName": "The Smart Home 4",
+    "unitId": "smart-home",
+    "unitName": "The Smart Home",
+    "unitOrder": 166,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 736,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Hdmi",
+      "Bluetooth",
+      "Wi Fi",
+      "Casting",
+      "Robot Vacuum",
+      "Smart Plug",
+      "Smart Oven",
+      "Coffee Maker",
+      "Washer",
+      "Dryer",
+      "Refrigerator",
+      "Dishwasher",
+      "Irrigation",
+      "Garage Opener"
+    ],
+    "targetWordsArabic": [
+      "منفذ HDMI",
+      "بلوتوث",
+      "واي فاي",
+      "اختيار العارضين",
+      "مكنسة روبوتية",
+      "قابس ذكي",
+      "فرن ذكي",
+      "مَاكِينَةُ القَهْوَة",
+      "غسالة",
+      "مجفف",
+      "ثَلَّاجَة (بَرَّاد)",
+      "غَسَّالَةُ الصُّحُون (جَلَّايَة)",
+      "ريّ",
+      "جهاز فتح باب المرآب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Smart Home to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the smart home vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "opinion paragraph",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Hdmi", "Bluetooth", "Wi Fi", "Casting"],
+          "scenario": "The engineer or technician checks hdmi, bluetooth, wi fi, and casting. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hdmi", "Bluetooth", "Wi Fi", "Casting"],
+            "expectedAnswer": "Hdmi"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks hdmi, bluetooth, wi fi, and casting. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Robot Vacuum", "Smart Plug", "Smart Oven", "Coffee Maker"],
+          "scenario": "The engineer or technician checks robot vacuum, smart plug, smart oven, and coffee maker. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Robot Vacuum", "Smart Plug", "Smart Oven", "Coffee Maker"],
+            "expectedAnswer": "Robot Vacuum"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks robot vacuum, smart plug, smart oven, and coffee maker. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Washer", "Dryer", "Refrigerator", "Dishwasher"],
+          "scenario": "The engineer or technician checks washer, dryer, refrigerator, and dishwasher. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Washer", "Dryer", "Refrigerator", "Dishwasher"],
+            "expectedAnswer": "Washer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks washer, dryer, refrigerator, and dishwasher. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Irrigation", "Garage Opener"],
+          "scenario": "The engineer or technician checks irrigation and garage opener. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Irrigation", "Garage Opener"],
+            "expectedAnswer": "Irrigation"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks irrigation and garage opener. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Smart Home: Opinion Paragraph",
+      "text": "A realistic case involving the smart home shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks hdmi, bluetooth, wi fi, and casting. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks robot vacuum, smart plug, smart oven, and coffee maker. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks washer, dryer, refrigerator, and dishwasher. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks irrigation and garage opener. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Smart Home. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hdmi"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Robot Vacuum"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Washer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Irrigation"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Hdmi"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Smart Thermostat” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Smart Home: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Smart Thermostat, Temperature Sensor from smart-home-3\n3 lesson(s) back: Smart Speaker, Voice Command from smart-home-1\n7 lesson(s) back: Sales Associate, Finance Manager from auto-dealership-3"
+  }
+]

@@ -4,7 +4,7 @@ import { getDueWordsForReview, type WordLearningState } from "../../features/gam
 import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { nextGroupToStudy, resolveUnitForLesson, REVIEW_GROUP_ID } from "../data/lessons";
+import { nextGroupToStudy, resolveUnitForLesson, REVIEW_GROUP_ID } from "../data/courseCatalog";
 import { getLocalDateString } from "../../features/gamification/streak";
 
 import { useOfflineReadiness } from "../shared/useOfflineReadiness";
@@ -69,7 +69,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
   const offline = useOfflineReadiness(activeUnit.id);
 
   return (
-    <PageContainer>
+    <PageContainer size="wide">
       <ReleaseNotesCard />
 
       {/* Top Learner Greeting */}
@@ -117,7 +117,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         )}
       </header>
 
-      <section aria-label={t("dashboard.dailyTarget")} className="max-w-5xl mx-auto w-full">
+      <section aria-label={t("dashboard.dailyTarget")} className="w-full">
         <ProgressBar
           progressPercent={dailyTargetPct}
           label={t("dashboard.dailyTarget")}
@@ -136,15 +136,15 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         />
       </section>
 
-      {/* Main Content: 1 Column on Mobile/Tablet, 2 Column Grid on Desktop (lg+) */}
+      {/* Main Content: one column beside the compact desktop shell, then split once space allows. */}
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        className="grid grid-cols-1 xl:grid-cols-12 gap-6 max-w-5xl mx-auto w-full mt-4"
+        className="grid w-full grid-cols-1 gap-5 mt-2 sm:gap-6 xl:grid-cols-12"
       >
-        {/* LEFT COLUMN: Main Learning Loop (lg:col-span-7) */}
-        <div className="xl:col-span-7 flex flex-col gap-6">
+        {/* LEFT COLUMN: Main Learning Loop */}
+        <div className="flex flex-col gap-6 xl:col-span-7">
           {/* SECTION 1: TODAY'S LESSON */}
           <motion.div variants={staggerItem}>
             <Section id="section-today" title={t("dashboard.today")}>
@@ -229,8 +229,8 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           </motion.div>
         </div>
 
-        {/* RIGHT COLUMN: Review Queue & Spaced Repetition (lg:col-span-5) */}
-        <div className="xl:col-span-5 flex flex-col gap-6">
+        {/* RIGHT COLUMN: Review Queue & Spaced Repetition */}
+        <div className="flex flex-col gap-6 xl:col-span-5">
           {/* SECTION 2: REVIEW */}
           <motion.div variants={staggerItem}>
             <Section id="section-review" title={t("dashboard.review")}>

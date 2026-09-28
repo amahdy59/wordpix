@@ -180,7 +180,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
       className="min-h-dvh w-full overflow-y-auto bg-background pb-24"
       aria-labelledby="hadith-title"
     >
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 p-4 sm:p-8">
+      <div className="wp-container-content wp-layout-gutter flex flex-col gap-6 py-4 sm:py-8">
         {/* Top Back Action */}
         <button
           type="button"

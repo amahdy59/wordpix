@@ -1,17 +1,16 @@
-import { memo, useEffect, useRef, useState } from "react";
+import { memo, useRef } from "react";
 import { createPortal } from "react-dom";
 import { X, Volume2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { VocabularyItem } from "../data/lessons";
-// No synchronous lexicon import: the 1.6 MB dictionary must not join the
-// initial bundle through this widely used modal. Details content loads it on
-// demand; the header below enhances its phonetic line the same way.
+// Header and details share the per-word loader's cache.
 import { useAudio } from "./useAudio";
 import { useModalA11y } from "./useModalA11y";
 import { useI18n } from "../context/I18nContext";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { WordDetailsContent } from "./WordDetailsContent";
 import { Button } from "./Button";
+import { useLexicon } from "./useLexicon";
 
 interface Props {
   word: VocabularyItem | null;
@@ -37,26 +36,10 @@ export const WordInspectorModal = memo(function WordInspectorModal({
   // Reviewed phonetic for the header. The unit's own phonetic renders
   // immediately and stays as the fallback, so a failed fetch changes nothing
   // visible — the details body below carries the loading/error UI.
-  const [lexiconPhonetic, setLexiconPhonetic] = useState<string | null>(null);
-  useEffect(() => {
-    if (!word) return;
-    let cancelled = false;
-    const wordId = word.id;
-    const wordLabel = word.label;
-    import("../data/lexiconDictionary").then(
-      (mod) => {
-        if (!cancelled) {
-          setLexiconPhonetic(mod.getLexiconEntry(wordId, wordLabel, unitId).phonetic ?? null);
-        }
-      },
-      () => {
-        if (!cancelled) setLexiconPhonetic(null);
-      }
-    );
-    return () => {
-      cancelled = true;
-    };
-  }, [word, unitId]);
+  const { lexicon } = useLexicon(isOpen && word ? [word.id] : []);
+  const lexiconPhonetic = word
+    ? lexicon?.getLexiconEntry(word.id, word.label, unitId).phonetic
+    : null;
 
   if (!isOpen || !word) return null;
 

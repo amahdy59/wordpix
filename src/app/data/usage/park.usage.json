@@ -1,0 +1,764 @@
+﻿[
+  {
+    "lessonId": "park-1",
+    "lessonName": "The Park 1",
+    "unitId": "park",
+    "unitName": "The Park",
+    "unitOrder": 25,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 102,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Bench",
+      "Fountain",
+      "Gazebo",
+      "Bridge",
+      "Statue",
+      "Trash Can",
+      "Lamp Post",
+      "Picnic Table",
+      "Drinking Fountain",
+      "Bike Rack",
+      "Pond",
+      "Stream",
+      "Hill",
+      "Meadow",
+      "Shade Tree"
+    ],
+    "targetWordsArabic": [
+      "مَقْعَدٌ طَوِيل (دِكَّة / بَانْك)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "سلة مهملات",
+      "-",
+      "-",
+      "-",
+      "-",
+      "بِرْكَةُ مَاء (غَدِير)",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Park to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the park vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bench", "Fountain", "Gazebo"],
+          "scenario": "Visitors move through the area and notice bench, fountain, and gazebo. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Bench", "Fountain", "Gazebo"],
+            "expectedAnswer": "Bench"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice bench, fountain, and gazebo. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bridge", "Statue", "Trash Can"],
+          "scenario": "Visitors move through the area and notice bridge, statue, and trash can. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Bridge", "Statue", "Trash Can"],
+            "expectedAnswer": "Bridge"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice bridge, statue, and trash can. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Lamp Post", "Picnic Table", "Drinking Fountain"],
+          "scenario": "Visitors move through the area and notice lamp post, picnic table, and drinking fountain. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Lamp Post", "Picnic Table", "Drinking Fountain"],
+            "expectedAnswer": "Lamp Post"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice lamp post, picnic table, and drinking fountain. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Bike Rack", "Pond", "Stream"],
+          "scenario": "Visitors move through the area and notice bike rack, pond, and stream. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Bike Rack", "Pond", "Stream"],
+            "expectedAnswer": "Bike Rack"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice bike rack, pond, and stream. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Hill", "Meadow", "Shade Tree"],
+          "scenario": "Visitors move through the area and notice hill, meadow, and shade tree. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Hill", "Meadow", "Shade Tree"],
+            "expectedAnswer": "Hill"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice hill, meadow, and shade tree. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Park: Short Description",
+      "text": "Maya is in a situation connected to the park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice bench, fountain, and gazebo. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice bridge, statue, and trash can. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice lamp post, picnic table, and drinking fountain. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bench"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bridge"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lamp Post"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bike Rack"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hill"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Bench"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Gazebo"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Birdbath” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Park: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Birdbath, Compost Bin from garden-5\n3 lesson(s) back: Pitchfork, Sprinkler from garden-3\n7 lesson(s) back: Cream, Flour from farm-5"
+  },
+  {
+    "lessonId": "park-2",
+    "lessonName": "The Park 2",
+    "unitId": "park",
+    "unitName": "The Park",
+    "unitOrder": 25,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 103,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Flower Bed",
+      "Grass",
+      "Pebble",
+      "Pinecone",
+      "Acorn",
+      "Duck",
+      "Swan",
+      "Squirrel",
+      "Pigeon",
+      "Robin",
+      "Frog",
+      "Turtle",
+      "Rabbit",
+      "Goose",
+      "Sparrow"
+    ],
+    "targetWordsArabic": [
+      "حَوْضُ زُهُور (رَوْضَةُ أَزْهَار)",
+      "عُشْبٌ أَخْضَر",
+      "-",
+      "-",
+      "-",
+      "بَطَّة",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "أَرْنَب",
+      "إِوَزَّة (إِوَزّ)",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Park to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the park vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Flower Bed", "Grass", "Pebble"],
+          "scenario": "Visitors move through the area and notice flower bed, grass, and pebble. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Flower Bed", "Grass", "Pebble"],
+            "expectedAnswer": "Flower Bed"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice flower bed, grass, and pebble. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Pinecone", "Acorn", "Duck"],
+          "scenario": "Visitors move through the area and notice pinecone, acorn, and duck. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Pinecone", "Acorn", "Duck"],
+            "expectedAnswer": "Pinecone"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice pinecone, acorn, and duck. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Swan", "Squirrel", "Pigeon"],
+          "scenario": "Visitors move through the area and notice swan, squirrel, and pigeon. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Swan", "Squirrel", "Pigeon"],
+            "expectedAnswer": "Swan"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice swan, squirrel, and pigeon. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Robin", "Frog", "Turtle"],
+          "scenario": "Visitors move through the area and notice robin, frog, and turtle. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Robin", "Frog", "Turtle"],
+            "expectedAnswer": "Robin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice robin, frog, and turtle. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Rabbit", "Goose", "Sparrow"],
+          "scenario": "The group observes the rabbit, goose, and sparrow and compares what they notice.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Rabbit", "Goose", "Sparrow"],
+            "expectedAnswer": "Rabbit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group observes the rabbit, goose, and sparrow and compares what they notice. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Park: Mini Dialogue",
+      "text": "Maya is in a situation connected to the park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice flower bed, grass, and pebble. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice pinecone, acorn, and duck. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice swan, squirrel, and pigeon. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Flower Bed"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pinecone"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Swan"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Robin"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rabbit"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Flower Bed"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Pebble"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Bench” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Park: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Bench, Fountain from park-1\n3 lesson(s) back: Worm, Snail from garden-4\n7 lesson(s) back: Straw, Farmer from farm-6"
+  },
+  {
+    "lessonId": "park-3",
+    "lessonName": "The Park 3",
+    "unitId": "park",
+    "unitName": "The Park",
+    "unitOrder": 25,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 104,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Walking",
+      "Jogging",
+      "Cycling",
+      "Picnic",
+      "Reading",
+      "Sitting",
+      "Stretching",
+      "Dog Walking",
+      "Photography",
+      "Bird Watching",
+      "Kite",
+      "Frisbee",
+      "Soccer Ball",
+      "Jump Rope",
+      "Skateboard"
+    ],
+    "targetWordsArabic": [
+      "مَشْي (المَشْيُ عَلَى رِمَالِ الشَّاطِئ)",
+      "رَكْض (الجَرْيُ الخَفِيفُ عَلَى الشَّاطِئ / هَرْوَلَة)",
+      "-",
+      "نُزْهَة (رِحْلَةُ نُزْهَةٍ وَتَنَاوُلُ طَعَامٍ فِي الهَوَاءِ الطَّلْق)",
+      "قِرَاءَة (مُمَارَسَةُ القِرَاءَةِ عَلَى الشَّاطِئ)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "فْرِيزْبِي (قُرْصٌ طَائِر)",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Park to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the park vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Walking", "Jogging", "Cycling"],
+          "scenario": "The learner connects walking, jogging, and cycling to the main activity and explains what each term means in context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Walking", "Jogging", "Cycling"],
+            "expectedAnswer": "Walking"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner connects walking, jogging, and cycling to the main activity and explains what each term means in context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Picnic", "Reading", "Sitting"],
+          "scenario": "Visitors move through the area and notice picnic, reading, and sitting. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Picnic", "Reading", "Sitting"],
+            "expectedAnswer": "Picnic"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice picnic, reading, and sitting. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Stretching", "Dog Walking", "Photography"],
+          "scenario": "Visitors move through the area and notice stretching, dog walking, and photography. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Stretching", "Dog Walking", "Photography"],
+            "expectedAnswer": "Stretching"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice stretching, dog walking, and photography. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Bird Watching", "Kite", "Frisbee"],
+          "scenario": "Visitors move through the area and notice bird watching, kite, and frisbee. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Bird Watching", "Kite", "Frisbee"],
+            "expectedAnswer": "Bird Watching"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice bird watching, kite, and frisbee. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Soccer Ball", "Jump Rope", "Skateboard"],
+          "scenario": "Visitors move through the area and notice soccer ball, jump rope, and skateboard. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Soccer Ball", "Jump Rope", "Skateboard"],
+            "expectedAnswer": "Soccer Ball"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice soccer ball, jump rope, and skateboard. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Park: Simple Message",
+      "text": "Maya is in a situation connected to the park. She uses the new words to understand what she sees and what happens next. The learner connects walking, jogging, and cycling to the main activity and explains what each term means in context. Visitors move through the area and notice picnic, reading, and sitting. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice stretching, dog walking, and photography. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Walking"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Picnic"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stretching"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bird Watching"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Soccer Ball"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Walking"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Cycling"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Flower Bed” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Park: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Flower Bed, Grass from park-2\n3 lesson(s) back: Birdbath, Compost Bin from garden-5\n7 lesson(s) back: Rose, Tulip from garden-1"
+  },
+  {
+    "lessonId": "park-4",
+    "lessonName": "The Park 4",
+    "unitId": "park",
+    "unitName": "The Park",
+    "unitOrder": 25,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 105,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Roller Skates",
+      "Badminton",
+      "Tennis Ball",
+      "Yoga Mat",
+      "Bicycle",
+      "Park Map",
+      "Trail Sign",
+      "No Swimming Sign",
+      "Keep Off Grass",
+      "Dog Allowed",
+      "Crosswalk",
+      "Speed Bump",
+      "Emergency Phone",
+      "Information Board",
+      "Recycling Bin"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "كُرَةُ الرِّيشَة (لُعْبَةُ الرِّيشَةِ الطَّائِرَة)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Park to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the park vocabulary in simple context.",
+      "textType": "notice-style text",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Roller Skates", "Badminton", "Tennis Ball"],
+          "scenario": "Visitors move through the area and notice roller skates, badminton, and tennis ball. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Roller Skates", "Badminton", "Tennis Ball"],
+            "expectedAnswer": "Roller Skates"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice roller skates, badminton, and tennis ball. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Yoga Mat", "Bicycle", "Park Map"],
+          "scenario": "Visitors move through the area and notice yoga mat, bicycle, and park map. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Yoga Mat", "Bicycle", "Park Map"],
+            "expectedAnswer": "Yoga Mat"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice yoga mat, bicycle, and park map. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Trail Sign", "No Swimming Sign", "Keep Off Grass"],
+          "scenario": "Visitors move through the area and notice trail sign, no swimming sign, and keep off grass. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Trail Sign", "No Swimming Sign", "Keep Off Grass"],
+            "expectedAnswer": "Trail Sign"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice trail sign, no swimming sign, and keep off grass. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Dog Allowed", "Crosswalk", "Speed Bump"],
+          "scenario": "Visitors move through the area and notice dog allowed, crosswalk, and speed bump. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Dog Allowed", "Crosswalk", "Speed Bump"],
+            "expectedAnswer": "Dog Allowed"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice dog allowed, crosswalk, and speed bump. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Emergency Phone", "Information Board", "Recycling Bin"],
+          "scenario": "Visitors move through the area and notice emergency phone, information board, and recycling bin. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Emergency Phone", "Information Board", "Recycling Bin"],
+            "expectedAnswer": "Emergency Phone"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice emergency phone, information board, and recycling bin. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Park: Notice-Style Text",
+      "text": "Maya is in a situation connected to the park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice roller skates, badminton, and tennis ball. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice yoga mat, bicycle, and park map. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice trail sign, no swimming sign, and keep off grass. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Roller Skates"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Yoga Mat"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Trail Sign"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dog Allowed"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Emergency Phone"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Roller Skates"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Tennis Ball"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Walking” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Park: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Walking, Jogging from park-3\n3 lesson(s) back: Bench, Fountain from park-1\n7 lesson(s) back: Hedge, Bush from garden-2"
+  },
+  {
+    "lessonId": "park-5",
+    "lessonName": "The Park 5",
+    "unitId": "park",
+    "unitName": "The Park",
+    "unitOrder": 25,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 106,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Path",
+      "Oak Tree",
+      "Shade",
+      "Grass Lawn",
+      "Walk",
+      "Jog",
+      "Cycle",
+      "Feed Ducks",
+      "Fly Kite",
+      "Roller-Skate",
+      "Sit Down"
+    ],
+    "targetWordsArabic": [
+      "مَمَرّ (مَمْشَى الحَدِيقَة)",
+      "شَجَرَةُ البَلُّوط",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Park to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the park vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Path", "Oak Tree", "Shade"],
+          "scenario": "Visitors move through the area and notice path, oak tree, and shade. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Path", "Oak Tree", "Shade"],
+            "expectedAnswer": "Path"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice path, oak tree, and shade. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Grass Lawn", "Walk", "Jog"],
+          "scenario": "Visitors move through the area and notice grass lawn, walk, and jog. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Grass Lawn", "Walk", "Jog"],
+            "expectedAnswer": "Grass Lawn"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice grass lawn, walk, and jog. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Cycle", "Feed Ducks", "Fly Kite"],
+          "scenario": "Visitors move through the area and notice cycle, feed ducks, and fly kite. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Cycle", "Feed Ducks", "Fly Kite"],
+            "expectedAnswer": "Cycle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice cycle, feed ducks, and fly kite. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Roller-Skate", "Sit Down"],
+          "scenario": "Visitors move through the area and notice roller-skate and sit down. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Roller-Skate", "Sit Down"],
+            "expectedAnswer": "Roller-Skate"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice roller-skate and sit down. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Park: Short Description",
+      "text": "Maya is in a situation connected to the park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice path, oak tree, and shade. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice grass lawn, walk, and jog. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice cycle, feed ducks, and fly kite. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Path"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Grass Lawn"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cycle"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Roller-Skate"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Path"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Shade"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Roller Skates” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Park: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Roller Skates, Badminton from park-4\n3 lesson(s) back: Flower Bed, Grass from park-2\n7 lesson(s) back: Pitchfork, Sprinkler from garden-3"
+  }
+]

@@ -1,0 +1,725 @@
+﻿[
+  {
+    "lessonId": "jungle-1",
+    "lessonName": "The Jungle 1",
+    "unitId": "jungle",
+    "unitName": "The Jungle",
+    "unitOrder": 113,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 523,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Jaguar",
+      "Toucan",
+      "Parrot",
+      "Monkey",
+      "Gorilla",
+      "Sloth",
+      "Tree Frog",
+      "Anaconda",
+      "Chameleon",
+      "Tapir",
+      "Iguana",
+      "Orangutan",
+      "Butterfly",
+      "Beetle",
+      "Ant"
+    ],
+    "targetWordsArabic": [
+      "يغور",
+      "طوقان",
+      "ببغاء",
+      "قرد",
+      "غوريلا",
+      "كسلان",
+      "كائن أو عنصر طبيعي يُسمّى «تريي فروج»",
+      "أناكوندا",
+      "حرباء",
+      "تابير",
+      "إغوانا",
+      "إنسان الغاب",
+      "فراشة",
+      "خنفساء",
+      "نملة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Jungle to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the jungle vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Jaguar", "Toucan", "Parrot", "Monkey"],
+          "scenario": "The guide or scientist draws attention to jaguar, toucan, parrot, and monkey. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Jaguar", "Toucan", "Parrot", "Monkey"],
+            "expectedAnswer": "Jaguar"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to jaguar, toucan, parrot, and monkey. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Gorilla", "Sloth", "Tree Frog", "Anaconda"],
+          "scenario": "The guide or scientist draws attention to gorilla, sloth, tree frog, and anaconda. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Gorilla", "Sloth", "Tree Frog", "Anaconda"],
+            "expectedAnswer": "Gorilla"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to gorilla, sloth, tree frog, and anaconda. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Chameleon", "Tapir", "Iguana", "Orangutan"],
+          "scenario": "The guide or scientist draws attention to chameleon, tapir, iguana, and orangutan. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Chameleon", "Tapir", "Iguana", "Orangutan"],
+            "expectedAnswer": "Chameleon"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to chameleon, tapir, iguana, and orangutan. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Butterfly", "Beetle", "Ant"],
+          "scenario": "The guide points out the butterfly, beetle, and ant and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Butterfly", "Beetle", "Ant"],
+            "expectedAnswer": "Butterfly"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the butterfly, beetle, and ant and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Jungle: Travel/Visitor Guide",
+      "text": "A practical situation involving the jungle requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to jaguar, toucan, parrot, and monkey. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to gorilla, sloth, tree frog, and anaconda. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to chameleon, tapir, iguana, and orangutan. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Jungle. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Jaguar"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gorilla"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Chameleon"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Butterfly"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Jaguar"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Monkey"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Sand Castle” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Jungle: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Sand Castle, Footprint from desert-5\n3 lesson(s) back: Crater, Basin from desert-3\n7 lesson(s) back: Research Boat, Water Sample from coral-reef-5"
+  },
+  {
+    "lessonId": "jungle-2",
+    "lessonName": "The Jungle 2",
+    "unitId": "jungle",
+    "unitName": "The Jungle",
+    "unitOrder": 113,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 524,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Mosquito",
+      "Dragonfly",
+      "Caterpillar",
+      "Spider",
+      "Scorpion",
+      "Centipede",
+      "Termite",
+      "Grasshopper",
+      "Firefly",
+      "Palm Tree",
+      "Vine",
+      "Fern",
+      "Bamboo",
+      "Orchid",
+      "Moss"
+    ],
+    "targetWordsArabic": [
+      "بعوضة",
+      "يعسوب",
+      "يرقة",
+      "عنكبوت",
+      "عقرب",
+      "حريش",
+      "أرضة",
+      "جرادة",
+      "يراعة",
+      "شجرة نخيل",
+      "كرمة متسلقة",
+      "سرخس",
+      "خيزران",
+      "أوركيد",
+      "طحلب بري"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Jungle to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the jungle vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Mosquito", "Dragonfly", "Caterpillar", "Spider"],
+          "scenario": "The guide points out the mosquito, dragonfly, caterpillar, and spider and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mosquito", "Dragonfly", "Caterpillar", "Spider"],
+            "expectedAnswer": "Mosquito"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the mosquito, dragonfly, caterpillar, and spider and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Scorpion", "Centipede", "Termite", "Grasshopper"],
+          "scenario": "The guide or scientist draws attention to scorpion, centipede, termite, and grasshopper. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Scorpion", "Centipede", "Termite", "Grasshopper"],
+            "expectedAnswer": "Scorpion"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to scorpion, centipede, termite, and grasshopper. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Firefly", "Palm Tree", "Vine", "Fern"],
+          "scenario": "The guide or scientist draws attention to firefly, palm tree, vine, and fern. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Firefly", "Palm Tree", "Vine", "Fern"],
+            "expectedAnswer": "Firefly"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to firefly, palm tree, vine, and fern. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Bamboo", "Orchid", "Moss"],
+          "scenario": "The group examines the bamboo, orchid, and moss and notices differences in shape, color, or growth.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bamboo", "Orchid", "Moss"],
+            "expectedAnswer": "Bamboo"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group examines the bamboo, orchid, and moss and notices differences in shape, color, or growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Jungle: Review",
+      "text": "A practical situation involving the jungle requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide points out the mosquito, dragonfly, caterpillar, and spider and asks the group to notice how the animals move or behave. The guide or scientist draws attention to scorpion, centipede, termite, and grasshopper. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to firefly, palm tree, vine, and fern. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Jungle. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mosquito"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Scorpion"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Firefly"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bamboo"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Mosquito"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Spider"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Jaguar” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Jungle: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Jaguar, Toucan from jungle-1\n3 lesson(s) back: Drought, Dry Air from desert-4\n7 lesson(s) back: Shipwreck from coral-reef-6"
+  },
+  {
+    "lessonId": "jungle-3",
+    "lessonName": "The Jungle 3",
+    "unitId": "jungle",
+    "unitName": "The Jungle",
+    "unitOrder": 113,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 525,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Liana",
+      "Canopy",
+      "Root",
+      "Trunk",
+      "Leaf",
+      "Flower",
+      "Waterfall",
+      "River",
+      "Stream",
+      "Swamp",
+      "Mud",
+      "Rock",
+      "Cave",
+      "Cliff",
+      "Ravine"
+    ],
+    "targetWordsArabic": [
+      "ليانا",
+      "مظلّة",
+      "جذر",
+      "صندوق السيارة",
+      "ورقة نبات",
+      "زهرة",
+      "شلال",
+      "نهر",
+      "جدول",
+      "مستنقع",
+      "طين",
+      "صخرة",
+      "كهف",
+      "كائن أو عنصر طبيعي يُسمّى «كليفف»",
+      "وادٍ ضيق"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Jungle to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the jungle vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Liana", "Canopy", "Root", "Trunk"],
+          "scenario": "The guide or scientist draws attention to liana, canopy, root, and trunk. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Liana", "Canopy", "Root", "Trunk"],
+            "expectedAnswer": "Liana"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to liana, canopy, root, and trunk. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Leaf", "Flower", "Waterfall", "River"],
+          "scenario": "The guide or scientist draws attention to leaf, flower, waterfall, and river. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Leaf", "Flower", "Waterfall", "River"],
+            "expectedAnswer": "Leaf"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to leaf, flower, waterfall, and river. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Stream", "Swamp", "Mud", "Rock"],
+          "scenario": "The guide or scientist draws attention to stream, swamp, mud, and rock. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Stream", "Swamp", "Mud", "Rock"],
+            "expectedAnswer": "Stream"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to stream, swamp, mud, and rock. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Cave", "Cliff", "Ravine"],
+          "scenario": "The guide or scientist draws attention to cave, cliff, and ravine. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cave", "Cliff", "Ravine"],
+            "expectedAnswer": "Cave"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to cave, cliff, and ravine. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Jungle: Practical Article",
+      "text": "A practical situation involving the jungle requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to liana, canopy, root, and trunk. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to leaf, flower, waterfall, and river. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to stream, swamp, mud, and rock. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Jungle. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Liana"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Leaf"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stream"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cave"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Liana"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Trunk"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Mosquito” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Jungle: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Mosquito, Dragonfly from jungle-2\n3 lesson(s) back: Sand Castle, Footprint from desert-5\n7 lesson(s) back: Camel, Scorpion from desert-1"
+  },
+  {
+    "lessonId": "jungle-4",
+    "lessonName": "The Jungle 4",
+    "unitId": "jungle",
+    "unitName": "The Jungle",
+    "unitOrder": 113,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 526,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Lagoon",
+      "Understory",
+      "Forest Floor",
+      "Clearing",
+      "Trail",
+      "Bridge",
+      "Tree House",
+      "Rope",
+      "Hammock",
+      "Campsite",
+      "Roar",
+      "Screech",
+      "Buzz",
+      "Chirp",
+      "Rustle"
+    ],
+    "targetWordsArabic": [
+      "بحيرة ساحلية",
+      "طبقة نباتية سفلية",
+      "طابق غابة",
+      "فسحة في الغابة",
+      "مسار",
+      "قوس القدم",
+      "منزل شجرة",
+      "حبل",
+      "أرجوحة شبكية",
+      "موقع تخييم",
+      "زئير",
+      "صرير حاد",
+      "طنين",
+      "زقزقة",
+      "حفيف"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Jungle to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the jungle vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Lagoon", "Understory", "Forest Floor", "Clearing"],
+          "scenario": "The guide or scientist draws attention to lagoon, understory, forest floor, and clearing. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lagoon", "Understory", "Forest Floor", "Clearing"],
+            "expectedAnswer": "Lagoon"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to lagoon, understory, forest floor, and clearing. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Trail", "Bridge", "Tree House", "Rope"],
+          "scenario": "The guide or scientist draws attention to trail, bridge, tree house, and rope. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Trail", "Bridge", "Tree House", "Rope"],
+            "expectedAnswer": "Trail"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to trail, bridge, tree house, and rope. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Hammock", "Campsite", "Roar", "Screech"],
+          "scenario": "The guide or scientist draws attention to hammock, campsite, roar, and screech. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hammock", "Campsite", "Roar", "Screech"],
+            "expectedAnswer": "Hammock"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to hammock, campsite, roar, and screech. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Buzz", "Chirp", "Rustle"],
+          "scenario": "The guide or scientist draws attention to buzz, chirp, and rustle. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Buzz", "Chirp", "Rustle"],
+            "expectedAnswer": "Buzz"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to buzz, chirp, and rustle. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Jungle: Real-Life Scenario",
+      "text": "A practical situation involving the jungle requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to lagoon, understory, forest floor, and clearing. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to trail, bridge, tree house, and rope. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to hammock, campsite, roar, and screech. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Jungle. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lagoon"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Trail"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hammock"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Buzz"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Lagoon"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Clearing"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Liana” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Jungle: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Liana, Canopy from jungle-3\n3 lesson(s) back: Jaguar, Toucan from jungle-1\n7 lesson(s) back: Palm Tree, Aloe from desert-2"
+  },
+  {
+    "lessonId": "jungle-5",
+    "lessonName": "The Jungle 5",
+    "unitId": "jungle",
+    "unitName": "The Jungle",
+    "unitOrder": 113,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 527,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Splash",
+      "Echo",
+      "Humidity",
+      "Heat",
+      "Shadow",
+      "Banana Plant",
+      "Rubber Tree",
+      "Rope Bridge",
+      "Rainfall"
+    ],
+    "targetWordsArabic": [
+      "صوت رذاذ الماء",
+      "صدى",
+      "رطوبة",
+      "حرارة",
+      "ظل",
+      "كائن أو عنصر طبيعي يُسمّى «بانانا بلانت»",
+      "كائن أو عنصر طبيعي يُسمّى «روببير تريي»",
+      "قوس القدم حبل",
+      "هطول أمطار"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Jungle to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the jungle vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Splash", "Echo", "Humidity", "Heat"],
+          "scenario": "The guide or scientist draws attention to splash, echo, humidity, and heat. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Splash", "Echo", "Humidity", "Heat"],
+            "expectedAnswer": "Splash"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to splash, echo, humidity, and heat. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Shadow", "Banana Plant", "Rubber Tree", "Rope Bridge"],
+          "scenario": "The guide or scientist draws attention to shadow, banana plant, rubber tree, and rope bridge. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Shadow", "Banana Plant", "Rubber Tree", "Rope Bridge"],
+            "expectedAnswer": "Shadow"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to shadow, banana plant, rubber tree, and rope bridge. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": "Rainfall",
+          "scenario": "The guide or scientist draws attention to rainfall. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": "Rainfall",
+            "expectedAnswer": "Rainfall"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to rainfall. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Jungle: Travel/Visitor Guide",
+      "text": "A practical situation involving the jungle requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to splash, echo, humidity, and heat. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to shadow, banana plant, rubber tree, and rope bridge. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to rainfall. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Jungle. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Splash"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Shadow"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rainfall"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Splash"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Heat"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Lagoon” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Jungle: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Lagoon, Understory from jungle-4\n3 lesson(s) back: Mosquito, Dragonfly from jungle-2\n7 lesson(s) back: Crater, Basin from desert-3"
+  }
+]

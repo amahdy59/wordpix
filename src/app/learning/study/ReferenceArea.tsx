@@ -54,7 +54,7 @@ export function ReferenceArea({ materials }: Props) {
   ].filter((section) => section.visible);
 
   return (
-    <div className="mx-auto w-full max-w-5xl p-4 pb-16 md:p-8 md:pb-20">
+    <div className="wp-container-content wp-layout-gutter py-4 pb-16 md:py-8 md:pb-20">
       <div className="mb-8 rounded-3xl border border-border bg-gradient-to-br from-primary/10 via-card to-card p-5 shadow-sm md:p-7">
         <div className="flex items-start gap-4">
           <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-sm">

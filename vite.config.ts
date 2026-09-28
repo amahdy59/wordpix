@@ -102,7 +102,7 @@ export default defineConfig(async () => {
             if (id.includes("src/app/data/lexiconDictionary")) {
               return "lexicon-dictionary";
             }
-            if (id.includes("src/app/data/lessons")) {
+            if (id.includes("src/app/data/courseCatalog")) {
               return "course-lessons";
             }
             if (id.includes("conversationCatalog.units-01-20.json")) {

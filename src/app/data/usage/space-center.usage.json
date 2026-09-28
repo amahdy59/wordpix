@@ -1,0 +1,591 @@
+﻿[
+  {
+    "lessonId": "space-center-1",
+    "lessonName": "L7 Space Center 1",
+    "unitId": "space-center",
+    "unitName": "L7 Space Center",
+    "unitOrder": 200,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 861,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "rocket",
+      "space shuttle",
+      "satellite",
+      "capsule",
+      "lander",
+      "rover",
+      "probe",
+      "booster",
+      "payload",
+      "launch pad",
+      "Sun",
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Mars"
+    ],
+    "targetWordsArabic": [
+      "مركبة يُسمّى «روكيت»",
+      "حافلة نقل فضاء",
+      "قمر صناعي",
+      "كبسولة",
+      "مركبة يُسمّى «لاندير»",
+      "شخص يُسمّى «روفير»",
+      "مسبار",
+      "مصطلح مرتبط بالموضوع يُسمّى «بووستير»",
+      "مادة كيميائية يُسمّى «بايلواد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «لاونتش باد»",
+      "شمس",
+      "مصطلح مرتبط بالموضوع يُسمّى «ميركوري»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فينوس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يارث»",
+      "طبق يُسمّى «مارس»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L7 Space Center to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use l7 space center vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "briefing note",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["rocket", "space shuttle", "satellite", "capsule"],
+          "scenario": "During the visit, the patient and medical team deal with rocket, space shuttle, satellite, and capsule. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["rocket", "space shuttle", "satellite", "capsule"],
+            "expectedAnswer": "rocket"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with rocket, space shuttle, satellite, and capsule. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["lander", "rover", "probe", "booster"],
+          "scenario": "During the visit, the patient and medical team deal with lander, rover, probe, and booster. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["lander", "rover", "probe", "booster"],
+            "expectedAnswer": "lander"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with lander, rover, probe, and booster. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["payload", "launch pad", "Sun", "Mercury"],
+          "scenario": "During the visit, the patient and medical team deal with payload, launch pad, sun, and mercury. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["payload", "launch pad", "Sun", "Mercury"],
+            "expectedAnswer": "payload"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with payload, launch pad, sun, and mercury. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Venus", "Earth", "Mars"],
+          "scenario": "During the visit, the patient and medical team deal with venus, earth, and mars. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Venus", "Earth", "Mars"],
+            "expectedAnswer": "Venus"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with venus, earth, and mars. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L7 Space Center: Briefing Note",
+      "text": "This text examines l7 space center through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. During the visit, the patient and medical team deal with rocket, space shuttle, satellite, and capsule. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with lander, rover, probe, and booster. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with payload, launch pad, sun, and mercury. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with venus, earth, and mars. Each term belongs to a different part of the care process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about L7 Space Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "rocket"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "lander"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "payload"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Venus"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "rocket"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "satellite"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Moderation” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L7 Space Center: In Context",
+      "idea": "50-80 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Moderation, Ride Share from bar-culture-3\n3 lesson(s) back: Sports Bar, Dive Bar from bar-culture-1\n7 lesson(s) back: Lemon Twist, Lime Wedge from spirits-liqueurs-3"
+  },
+  {
+    "lessonId": "space-center-2",
+    "lessonName": "L7 Space Center 2",
+    "unitId": "space-center",
+    "unitName": "L7 Space Center",
+    "unitOrder": 200,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 862,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Neptune",
+      "Moon",
+      "asteroid",
+      "comet",
+      "astronaut",
+      "spacesuit",
+      "helmet",
+      "mission control",
+      "countdown",
+      "liftoff",
+      "orbit",
+      "spacewalk"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «جوبيتير»",
+      "جزء يُسمّى «ساتورن»",
+      "جزء يُسمّى «ورانوس»",
+      "جزء يُسمّى «نيبتوني»",
+      "قمر",
+      "مصطلح مرتبط بالموضوع يُسمّى «استيرويد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كوميت»",
+      "رائد فضاء",
+      "بدلة فضاء",
+      "خوذة",
+      "مركز التحكم بالمهمة",
+      "مركبة يُسمّى «كوونتدوون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليفتوفف»",
+      "مدار",
+      "سير في الفضاء"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L7 Space Center to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use l7 space center vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "analysis excerpt",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+          "scenario": "During the visit, the patient and medical team deal with jupiter, saturn, uranus, and neptune. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+            "expectedAnswer": "Jupiter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with jupiter, saturn, uranus, and neptune. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Moon", "asteroid", "comet", "astronaut"],
+          "scenario": "During the visit, the patient and medical team deal with moon, asteroid, comet, and astronaut. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Moon", "asteroid", "comet", "astronaut"],
+            "expectedAnswer": "Moon"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with moon, asteroid, comet, and astronaut. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["spacesuit", "helmet", "mission control", "countdown"],
+          "scenario": "During the visit, the patient and medical team deal with spacesuit, helmet, mission control, and countdown. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["spacesuit", "helmet", "mission control", "countdown"],
+            "expectedAnswer": "spacesuit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with spacesuit, helmet, mission control, and countdown. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["liftoff", "orbit", "spacewalk"],
+          "scenario": "During the visit, the patient and medical team deal with liftoff, orbit, and spacewalk. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["liftoff", "orbit", "spacewalk"],
+            "expectedAnswer": "liftoff"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with liftoff, orbit, and spacewalk. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L7 Space Center: Analysis Excerpt",
+      "text": "This text examines l7 space center through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. During the visit, the patient and medical team deal with jupiter, saturn, uranus, and neptune. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with moon, asteroid, comet, and astronaut. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with spacesuit, helmet, mission control, and countdown. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with liftoff, orbit, and spacewalk. Each term belongs to a different part of the care process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about L7 Space Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Jupiter"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Moon"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "spacesuit"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "liftoff"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Jupiter"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Uranus"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “rocket” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L7 Space Center: In Context",
+      "idea": "50-80 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: rocket, space shuttle from space-center-1\n3 lesson(s) back: Toast, Cheers from bar-culture-2\n7 lesson(s) back: Martini, Old Fashioned from classic-cocktails-1"
+  },
+  {
+    "lessonId": "space-center-3",
+    "lessonName": "L7 Space Center 3",
+    "unitId": "space-center",
+    "unitName": "L7 Space Center",
+    "unitOrder": 200,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 863,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "docking",
+      "re-entry",
+      "splashdown",
+      "telescope",
+      "star",
+      "galaxy",
+      "nebula",
+      "black hole",
+      "supernova",
+      "constellation",
+      "meteor",
+      "aurora",
+      "eclipse",
+      "cosmic dust",
+      "solar panel"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «دوكينج»",
+      "عملية يُسمّى «ري-ينتري»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سبلاشدوون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تيليسكوبي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستار»",
+      "نظام يُسمّى «جالاكسي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «نيبولا»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بلاك هولي»",
+      "عملية يُسمّى «سوبيرنوفا»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كونستيللاتيون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ميتيور»",
+      "شفق قطبي",
+      "مصطلح مرتبط بالموضوع يُسمّى «يكليبسي»",
+      "مادة يُسمّى «كوسميك دوست»",
+      "جهاز يُسمّى «سولار بانيل»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L7 Space Center to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use l7 space center vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "professional summary",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["docking", "re-entry", "splashdown", "telescope"],
+          "scenario": "During the visit, the patient and medical team deal with docking, re-entry, splashdown, and telescope. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["docking", "re-entry", "splashdown", "telescope"],
+            "expectedAnswer": "docking"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with docking, re-entry, splashdown, and telescope. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["star", "galaxy", "nebula", "black hole"],
+          "scenario": "During the visit, the patient and medical team deal with star, galaxy, nebula, and black hole. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["star", "galaxy", "nebula", "black hole"],
+            "expectedAnswer": "star"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with star, galaxy, nebula, and black hole. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["supernova", "constellation", "meteor", "aurora"],
+          "scenario": "During the visit, the patient and medical team deal with supernova, constellation, meteor, and aurora. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["supernova", "constellation", "meteor", "aurora"],
+            "expectedAnswer": "supernova"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with supernova, constellation, meteor, and aurora. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["eclipse", "cosmic dust", "solar panel"],
+          "scenario": "During the visit, the patient and medical team deal with eclipse, cosmic dust, and solar panel. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["eclipse", "cosmic dust", "solar panel"],
+            "expectedAnswer": "eclipse"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with eclipse, cosmic dust, and solar panel. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L7 Space Center: Professional Summary",
+      "text": "This text examines l7 space center through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. During the visit, the patient and medical team deal with docking, re-entry, splashdown, and telescope. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with star, galaxy, nebula, and black hole. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with supernova, constellation, meteor, and aurora. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with eclipse, cosmic dust, and solar panel. Each term belongs to a different part of the care process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about L7 Space Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "docking"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "star"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "supernova"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "eclipse"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "docking"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "splashdown"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Jupiter” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L7 Space Center: In Context",
+      "idea": "50-80 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Jupiter, Saturn from space-center-2\n3 lesson(s) back: Moderation, Ride Share from bar-culture-3\n7 lesson(s) back: Tom Collins, Paloma from classic-cocktails-2"
+  },
+  {
+    "lessonId": "space-center-4",
+    "lessonName": "L7 Space Center 4",
+    "unitId": "space-center",
+    "unitName": "L7 Space Center",
+    "unitOrder": 200,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 864,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "antenna",
+      "radar",
+      "computer",
+      "fuel tank",
+      "thruster",
+      "heat shield",
+      "parachute",
+      "robotic arm",
+      "laboratory"
+    ],
+    "targetWordsArabic": [
+      "هوائي",
+      "رادار",
+      "حاسوب",
+      "خزان وقود",
+      "مصطلح مرتبط بالموضوع يُسمّى «ثروستير»",
+      "واقي حرارة",
+      "مصطلح مرتبط بالموضوع يُسمّى «باراتشوتي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «روبوتيك ارم»",
+      "مختبر"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L7 Space Center to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use l7 space center vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "case analysis",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["antenna", "radar", "computer", "fuel tank"],
+          "scenario": "During the visit, the patient and medical team deal with antenna, radar, computer, and fuel tank. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["antenna", "radar", "computer", "fuel tank"],
+            "expectedAnswer": "antenna"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with antenna, radar, computer, and fuel tank. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["thruster", "heat shield", "parachute", "robotic arm"],
+          "scenario": "During the visit, the patient and medical team deal with thruster, heat shield, parachute, and robotic arm. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["thruster", "heat shield", "parachute", "robotic arm"],
+            "expectedAnswer": "thruster"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with thruster, heat shield, parachute, and robotic arm. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": "laboratory",
+          "scenario": "During the visit, the patient and medical team deal with laboratory. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": "laboratory",
+            "expectedAnswer": "laboratory"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with laboratory. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L7 Space Center: Case Analysis",
+      "text": "This text examines l7 space center through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. During the visit, the patient and medical team deal with antenna, radar, computer, and fuel tank. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with thruster, heat shield, parachute, and robotic arm. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with laboratory. Each term belongs to a different part of the care process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about L7 Space Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "antenna"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "thruster"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "laboratory"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "antenna"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "computer"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “docking” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L7 Space Center: In Context",
+      "idea": "50-80 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: docking, re-entry from space-center-3\n3 lesson(s) back: rocket, space shuttle from space-center-1\n7 lesson(s) back: On the Rocks, Neat from classic-cocktails-3"
+  }
+]

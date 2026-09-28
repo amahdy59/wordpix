@@ -1,0 +1,598 @@
+﻿[
+  {
+    "lessonId": "airport-1",
+    "lessonName": "L6 Airport 1",
+    "unitId": "airport",
+    "unitName": "L6 Airport",
+    "unitOrder": 122,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 562,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "check-in counter",
+      "boarding pass",
+      "passport",
+      "visa",
+      "luggage",
+      "suitcase",
+      "carry-on",
+      "baggage claim",
+      "conveyor belt",
+      "security check",
+      "metal detector",
+      "scanner",
+      "terminal",
+      "gate",
+      "runway"
+    ],
+    "targetWordsArabic": [
+      "منضدة تسجيل الوصول",
+      "بطاقة صعود الطائرة",
+      "جواز سفر",
+      "تأشيرة",
+      "مصطلح مرتبط بالموضوع يُسمّى «لوججاجي»",
+      "حاوية يُسمّى «سويتكاسي»",
+      "أمتعة محمولة داخل الطائرة",
+      "منطقة استلام الأمتعة",
+      "حزام ناقل",
+      "فحص أمني",
+      "كاشف معدن",
+      "ماسح ضوئي",
+      "مصطلح مرتبط بالموضوع يُسمّى «تيرمينال»",
+      "بوابة",
+      "منصة عرض"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L6 Airport to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l6 airport vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["check-in counter", "boarding pass", "passport", "visa"],
+          "scenario": "The traveler goes to the check-in counter first and confirms the flight details. The traveler keeps the boarding pass ready before walking to the gate. The traveler shows the passport when staff check identity. The traveler checks that the visa is valid before the trip.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["check-in counter", "boarding pass", "passport", "visa"],
+            "expectedAnswer": "check-in counter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler goes to the check-in counter first and confirms the flight details. The traveler keeps the boarding pass ready before walking to the gate. The traveler shows the passport when staff check identity. The traveler checks that the visa is valid before the trip. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["luggage", "suitcase", "carry-on", "baggage claim"],
+          "scenario": "The traveler checks the luggage details before leaving the counter. The traveler puts the suitcase on the baggage scale. The traveler keeps the carry-on with them during the flight. After landing, the traveler goes to baggage claim to collect checked luggage.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["luggage", "suitcase", "carry-on", "baggage claim"],
+            "expectedAnswer": "luggage"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler checks the luggage details before leaving the counter. The traveler puts the suitcase on the baggage scale. The traveler keeps the carry-on with them during the flight. After landing, the traveler goes to baggage claim to collect checked luggage. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["conveyor belt", "security check", "metal detector", "scanner"],
+          "scenario": "Bags move along the conveyor belt during the airport process. The traveler goes through the security check before reaching the gate. Airport staff use a metal detector as part of the security process. Airport staff use a scanner to check items during security screening.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["conveyor belt", "security check", "metal detector", "scanner"],
+            "expectedAnswer": "conveyor belt"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Bags move along the conveyor belt during the airport process. The traveler goes through the security check before reaching the gate. Airport staff use a metal detector as part of the security process. Airport staff use a scanner to check items during security screening. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["terminal", "gate", "runway"],
+          "scenario": "The traveler follows the signs through the terminal. The traveler waits at the gate until boarding begins. From the terminal window, the traveler can see aircraft moving toward the runway.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["terminal", "gate", "runway"],
+            "expectedAnswer": "terminal"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler follows the signs through the terminal. The traveler waits at the gate until boarding begins. From the terminal window, the traveler can see aircraft moving toward the runway. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L6 Airport: Travel/Visitor Guide",
+      "text": "A practical situation involving l6 airport requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler goes to the check-in counter first and confirms the flight details. The traveler keeps the boarding pass ready before walking to the gate. The traveler shows the passport when staff check identity. The traveler checks that the visa is valid before the trip. The traveler checks the luggage details before leaving the counter. The traveler puts the suitcase on the baggage scale. The traveler keeps the carry-on with them during the flight. After landing, the traveler goes to baggage claim to collect checked luggage. Bags move along the conveyor belt during the airport process. The traveler goes through the security check before reaching the gate. Airport staff use a metal detector as part of the security process. Airport staff use a scanner to check items during security screening. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Airport. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "check-in counter"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "luggage"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "conveyor belt"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "terminal"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "check-in counter"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "visa"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “engineer” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L6 Airport: In Context",
+      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: engineer, porter from train-station-4\n3 lesson(s) back: information desk, newsstand from train-station-2\n7 lesson(s) back: seal, walrus from aquarium-2"
+  },
+  {
+    "lessonId": "airport-2",
+    "lessonName": "L6 Airport 2",
+    "unitId": "airport",
+    "unitName": "L6 Airport",
+    "unitOrder": 122,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 563,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "control tower",
+      "hangar",
+      "departure lounge",
+      "arrivals hall",
+      "duty-free shop",
+      "food court",
+      "restroom",
+      "elevator",
+      "escalator",
+      "airplane",
+      "jet engine",
+      "wing",
+      "cockpit",
+      "fuselage",
+      "propeller"
+    ],
+    "targetWordsArabic": [
+      "طائرة يُسمّى «كونترول تووير»",
+      "طائرة يُسمّى «هانجار»",
+      "منطقة يُسمّى «ديبارتوري لوونجي»",
+      "صالة الوصول",
+      "متجر معفى من الرسوم",
+      "طعام يُسمّى «فوود كوورت»",
+      "دورة مياه",
+      "مصعد",
+      "سلم متحرك",
+      "طائرة يُسمّى «ايربلاني»",
+      "طائرة يُسمّى «جيت ينجيني»",
+      "جناح",
+      "طائرة يُسمّى «كوكبيت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فوسيلاجي»",
+      "مروحة دافعة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L6 Airport to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l6 airport vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["control tower", "hangar", "departure lounge", "arrivals hall"],
+          "scenario": "The traveler moves through the journey using or noticing control tower, hangar, departure lounge, and arrivals hall. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["control tower", "hangar", "departure lounge", "arrivals hall"],
+            "expectedAnswer": "control tower"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing control tower, hangar, departure lounge, and arrivals hall. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["duty-free shop", "food court", "restroom", "elevator"],
+          "scenario": "The traveler moves through the journey using or noticing duty-free shop, food court, restroom, and elevator. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["duty-free shop", "food court", "restroom", "elevator"],
+            "expectedAnswer": "duty-free shop"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing duty-free shop, food court, restroom, and elevator. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["escalator", "airplane", "jet engine", "wing"],
+          "scenario": "The traveler moves through the journey using or noticing escalator, airplane, jet engine, and wing. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["escalator", "airplane", "jet engine", "wing"],
+            "expectedAnswer": "escalator"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing escalator, airplane, jet engine, and wing. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["cockpit", "fuselage", "propeller"],
+          "scenario": "The traveler moves through the journey using or noticing cockpit, fuselage, and propeller. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["cockpit", "fuselage", "propeller"],
+            "expectedAnswer": "cockpit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing cockpit, fuselage, and propeller. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L6 Airport: Review",
+      "text": "A practical situation involving l6 airport requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing control tower, hangar, departure lounge, and arrivals hall. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing duty-free shop, food court, restroom, and elevator. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing escalator, airplane, jet engine, and wing. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Airport. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "control tower"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "duty-free shop"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "escalator"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "cockpit"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "control tower"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "arrivals hall"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “check-in counter” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L6 Airport: In Context",
+      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: check-in counter, boarding pass from airport-1\n3 lesson(s) back: seat number, first class from train-station-3\n7 lesson(s) back: anemone, sea cucumber from aquarium-3"
+  },
+  {
+    "lessonId": "airport-3",
+    "lessonName": "L6 Airport 3",
+    "unitId": "airport",
+    "unitName": "L6 Airport",
+    "unitOrder": 122,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 564,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "tail",
+      "landing gear",
+      "window",
+      "aisle",
+      "overhead bin",
+      "tray table",
+      "pilot",
+      "co-pilot",
+      "flight attendant",
+      "passenger",
+      "ground crew",
+      "air traffic controller",
+      "customs officer",
+      "immigration officer",
+      "baggage handler"
+    ],
+    "targetWordsArabic": [
+      "جزء يُسمّى «تايل»",
+      "مركبة يُسمّى «لاندينج جيار»",
+      "غرفة يُسمّى «ويندوو»",
+      "ممر",
+      "خزانة علوية",
+      "طاولة قابلة للطي",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيلوت»",
+      "مساعد الطيار",
+      "مضيف طيران",
+      "راكب",
+      "طائرة يُسمّى «جرووند كريو»",
+      "مراقب حركة جوية",
+      "موظف جمارك",
+      "موظف هجرة",
+      "عامل مناولة أمتعة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L6 Airport to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l6 airport vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["tail", "landing gear", "window", "aisle"],
+          "scenario": "The traveler moves through the journey using or noticing tail, landing gear, window, and aisle. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["tail", "landing gear", "window", "aisle"],
+            "expectedAnswer": "tail"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing tail, landing gear, window, and aisle. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["overhead bin", "tray table", "pilot", "co-pilot"],
+          "scenario": "The traveler moves through the journey using or noticing overhead bin, tray table, pilot, and co-pilot. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["overhead bin", "tray table", "pilot", "co-pilot"],
+            "expectedAnswer": "overhead bin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing overhead bin, tray table, pilot, and co-pilot. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["flight attendant", "passenger", "ground crew", "air traffic controller"],
+          "scenario": "The traveler moves through the journey using or noticing flight attendant, passenger, ground crew, and air traffic controller. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["flight attendant", "passenger", "ground crew", "air traffic controller"],
+            "expectedAnswer": "flight attendant"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing flight attendant, passenger, ground crew, and air traffic controller. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["customs officer", "immigration officer", "baggage handler"],
+          "scenario": "The traveler moves through the journey using or noticing customs officer, immigration officer, and baggage handler. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["customs officer", "immigration officer", "baggage handler"],
+            "expectedAnswer": "customs officer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing customs officer, immigration officer, and baggage handler. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L6 Airport: Practical Article",
+      "text": "A practical situation involving l6 airport requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing tail, landing gear, window, and aisle. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing overhead bin, tray table, pilot, and co-pilot. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing flight attendant, passenger, ground crew, and air traffic controller. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Airport. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "tail"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "overhead bin"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "flight attendant"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "customs officer"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "tail"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "aisle"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “control tower” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L6 Airport: In Context",
+      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: control tower, hangar from airport-2\n3 lesson(s) back: engineer, porter from train-station-4\n7 lesson(s) back: touch pool, viewing window from aquarium-4"
+  },
+  {
+    "lessonId": "airport-4",
+    "lessonName": "L6 Airport 4",
+    "unitId": "airport",
+    "unitName": "L6 Airport",
+    "unitOrder": 122,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 565,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "mechanic",
+      "boarding",
+      "takeoff",
+      "landing",
+      "taxiing",
+      "turbulence",
+      "announcement",
+      "fasten seatbelt",
+      "emergency exit",
+      "life vest",
+      "oxygen mask",
+      "delay",
+      "layover"
+    ],
+    "targetWordsArabic": [
+      "ميكانيكي",
+      "طائرة يُسمّى «بواردينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تاكيوفف»",
+      "سطح يُسمّى «لاندينج»",
+      "تحرك الطائرة على الأرض",
+      "مصطلح مرتبط بالموضوع يُسمّى «توربولينكي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «اننوونكيمينت»",
+      "يربط حزام الأمان",
+      "مخرج طوارئ",
+      "سترة بلا أكمام حياة",
+      "جهاز يُسمّى «وكسيجين ماسك»",
+      "فعل أو عملية يُسمّى «ديلاي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «لايوفير»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L6 Airport to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l6 airport vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["mechanic", "boarding", "takeoff", "landing"],
+          "scenario": "The traveler moves through the journey using or noticing mechanic, boarding, takeoff, and landing. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["mechanic", "boarding", "takeoff", "landing"],
+            "expectedAnswer": "mechanic"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing mechanic, boarding, takeoff, and landing. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["taxiing", "turbulence", "announcement", "fasten seatbelt"],
+          "scenario": "The traveler moves through the journey using or noticing taxiing, turbulence, announcement, and fasten seatbelt. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["taxiing", "turbulence", "announcement", "fasten seatbelt"],
+            "expectedAnswer": "taxiing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing taxiing, turbulence, announcement, and fasten seatbelt. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["emergency exit", "life vest", "oxygen mask", "delay"],
+          "scenario": "The traveler moves through the journey using or noticing emergency exit, life vest, oxygen mask, and delay. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["emergency exit", "life vest", "oxygen mask", "delay"],
+            "expectedAnswer": "emergency exit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing emergency exit, life vest, oxygen mask, and delay. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": "layover",
+          "scenario": "The traveler moves through the journey using or noticing layover. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": "layover",
+            "expectedAnswer": "layover"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing layover. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L6 Airport: Real-Life Scenario",
+      "text": "A practical situation involving l6 airport requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing mechanic, boarding, takeoff, and landing. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing taxiing, turbulence, announcement, and fasten seatbelt. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing emergency exit, life vest, oxygen mask, and delay. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Airport. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "mechanic"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "taxiing"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "emergency exit"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "layover"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "mechanic"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "landing"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “tail” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L6 Airport: In Context",
+      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: tail, landing gear from airport-3\n3 lesson(s) back: check-in counter, boarding pass from airport-1\n7 lesson(s) back: passenger train, freight train from train-station-1"
+  }
+]

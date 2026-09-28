@@ -1,0 +1,432 @@
+﻿[
+  {
+    "lessonId": "stock-exchange-1",
+    "lessonName": "The Stock Exchange 1",
+    "unitId": "stock-exchange",
+    "unitName": "The Stock Exchange",
+    "unitOrder": 153,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 693,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Bull Market",
+      "Bear Market",
+      "IPO",
+      "Market Cap",
+      "Volume",
+      "Volatility",
+      "Index",
+      "NASDAQ",
+      "NYSE",
+      "Dow Jones",
+      "Buy",
+      "Sell",
+      "Trade",
+      "Bid",
+      "Ask"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «بولل ماركيت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيار ماركيت»",
+      "طرح عام أولي",
+      "القيمة السوقية",
+      "شدة الصوت",
+      "تقلب",
+      "مؤشر",
+      "ناسداك",
+      "بورصة نيويورك",
+      "مؤشر داو جونز",
+      "شراء",
+      "بيع",
+      "تداول",
+      "عرض شراء",
+      "يسأل"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Stock Exchange to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the stock exchange vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bull Market", "Bear Market", "IPO", "Market Cap"],
+          "scenario": "During the financial task, the customer and staff member work with bull market, bear market, ipo, and market cap. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bull Market", "Bear Market", "IPO", "Market Cap"],
+            "expectedAnswer": "Bull Market"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with bull market, bear market, ipo, and market cap. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Volume", "Volatility", "Index", "NASDAQ"],
+          "scenario": "During the financial task, the customer and staff member work with volume, volatility, index, and nasdaq. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Volume", "Volatility", "Index", "NASDAQ"],
+            "expectedAnswer": "Volume"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with volume, volatility, index, and nasdaq. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["NYSE", "Dow Jones", "Buy", "Sell"],
+          "scenario": "During the financial task, the customer and staff member work with nyse, dow jones, buy, and sell. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["NYSE", "Dow Jones", "Buy", "Sell"],
+            "expectedAnswer": "NYSE"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with nyse, dow jones, buy, and sell. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Trade", "Bid", "Ask"],
+          "scenario": "During the financial task, the customer and staff member work with trade, bid, and ask. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Trade", "Bid", "Ask"],
+            "expectedAnswer": "Trade"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with trade, bid, and ask. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Stock Exchange: Case Note",
+      "text": "A realistic case involving the stock exchange shows how precise vocabulary can influence choices, explanations, and outcomes. During the financial task, the customer and staff member work with bull market, bear market, ipo, and market cap. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with volume, volatility, index, and nasdaq. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with nyse, dow jones, buy, and sell. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with trade, bid, and ask. Each term affects a different part of the transaction or decision. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Stock Exchange. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bull Market"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Volume"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "NYSE"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Trade"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Bull Market"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Online Banking” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Stock Exchange: In Context",
+      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Online Banking, Mobile App from currency-payment-3\n3 lesson(s) back: US Dollar, Euro from currency-payment-1\n7 lesson(s) back: Teller, Bank Manager from bank-3"
+  },
+  {
+    "lessonId": "stock-exchange-2",
+    "lessonName": "The Stock Exchange 2",
+    "unitId": "stock-exchange",
+    "unitName": "The Stock Exchange",
+    "unitOrder": 153,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 694,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Spread",
+      "Limit Order",
+      "Market Order",
+      "Stop Loss",
+      "Short Selling",
+      "Technical Analysis",
+      "Fundamental Analysis",
+      "P/E Ratio",
+      "Earnings Report",
+      "Revenue",
+      "Profit Margin",
+      "Balance Sheet",
+      "Cash Flow",
+      "Market Trend",
+      "Forecast"
+    ],
+    "targetWordsArabic": [
+      "فارق السعر",
+      "أمر محدد السعر",
+      "مصطلح مرتبط بالموضوع يُسمّى «ماركيت وردير»",
+      "أمر إيقاف الخسارة",
+      "مصطلح مرتبط بالموضوع يُسمّى «شورت سيللينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تيتشنيكال اناليسيس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فوندامينتال اناليسيس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ب/ي راتيو»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يارنينجس ريبورت»",
+      "إيرادات",
+      "مصطلح مرتبط بالموضوع يُسمّى «بروفيت مارجين»",
+      "عضو يُسمّى «بالانكي شييت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كاش فلوو»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ماركيت تريند»",
+      "توقعات"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Stock Exchange to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the stock exchange vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Spread", "Limit Order", "Market Order", "Stop Loss"],
+          "scenario": "During the financial task, the customer and staff member work with spread, limit order, market order, and stop loss. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Spread", "Limit Order", "Market Order", "Stop Loss"],
+            "expectedAnswer": "Spread"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with spread, limit order, market order, and stop loss. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": [
+            "Short Selling",
+            "Technical Analysis",
+            "Fundamental Analysis",
+            "P/E Ratio"
+          ],
+          "scenario": "During the financial task, the customer and staff member work with short selling, technical analysis, fundamental analysis, and p/e ratio. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Short Selling", "Technical Analysis", "Fundamental Analysis", "P/E Ratio"],
+            "expectedAnswer": "Short Selling"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with short selling, technical analysis, fundamental analysis, and p/e ratio. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Earnings Report", "Revenue", "Profit Margin", "Balance Sheet"],
+          "scenario": "During the financial task, the customer and staff member work with earnings report, revenue, profit margin, and balance sheet. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Earnings Report", "Revenue", "Profit Margin", "Balance Sheet"],
+            "expectedAnswer": "Earnings Report"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with earnings report, revenue, profit margin, and balance sheet. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Cash Flow", "Market Trend", "Forecast"],
+          "scenario": "During the financial task, the customer and staff member work with cash flow, market trend, and forecast. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cash Flow", "Market Trend", "Forecast"],
+            "expectedAnswer": "Cash Flow"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with cash flow, market trend, and forecast. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Stock Exchange: Report Excerpt",
+      "text": "A realistic case involving the stock exchange shows how precise vocabulary can influence choices, explanations, and outcomes. During the financial task, the customer and staff member work with spread, limit order, market order, and stop loss. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with short selling, technical analysis, fundamental analysis, and p/e ratio. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with earnings report, revenue, profit margin, and balance sheet. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with cash flow, market trend, and forecast. Each term affects a different part of the transaction or decision. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Stock Exchange. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Spread"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Short Selling"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Earnings Report"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cash Flow"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Spread"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Bull Market” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Stock Exchange: In Context",
+      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Bull Market, Bear Market from stock-exchange-1\n3 lesson(s) back: Mobile Payment, Contactless from currency-payment-2\n7 lesson(s) back: Mortgage, Auto Loan from financial-services-1"
+  },
+  {
+    "lessonId": "stock-exchange-3",
+    "lessonName": "The Stock Exchange 3",
+    "unitId": "stock-exchange",
+    "unitName": "The Stock Exchange",
+    "unitOrder": 153,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 695,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Trader",
+      "Broker",
+      "Analyst",
+      "Floor",
+      "Bell",
+      "Ticker",
+      "Screen",
+      "Trading Desk",
+      "Pit",
+      "Exchange Rate"
+    ],
+    "targetWordsArabic": [
+      "متداول",
+      "وسيط",
+      "محلل",
+      "طابق",
+      "جرس",
+      "شريط أسعار",
+      "شاشة",
+      "مكتب تداول",
+      "حلقة تداول",
+      "مصطلح مرتبط بالموضوع يُسمّى «يكستشانجي راتي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Stock Exchange to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the stock exchange vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Trader", "Broker", "Analyst", "Floor"],
+          "scenario": "During the financial task, the customer and staff member work with trader, broker, analyst, and floor. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Trader", "Broker", "Analyst", "Floor"],
+            "expectedAnswer": "Trader"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with trader, broker, analyst, and floor. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bell", "Ticker", "Screen", "Trading Desk"],
+          "scenario": "During the financial task, the customer and staff member work with bell, ticker, screen, and trading desk. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bell", "Ticker", "Screen", "Trading Desk"],
+            "expectedAnswer": "Bell"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with bell, ticker, screen, and trading desk. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Pit", "Exchange Rate"],
+          "scenario": "During the financial task, the customer and staff member work with pit and exchange rate. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pit", "Exchange Rate"],
+            "expectedAnswer": "Pit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with pit and exchange rate. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Stock Exchange: Workplace/Academic Scenario",
+      "text": "A realistic case involving the stock exchange shows how precise vocabulary can influence choices, explanations, and outcomes. During the financial task, the customer and staff member work with trader, broker, analyst, and floor. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with bell, ticker, screen, and trading desk. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with pit and exchange rate. Each term affects a different part of the transaction or decision. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Stock Exchange. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Trader"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bell"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pit"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Trader"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Spread” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Stock Exchange: In Context",
+      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Spread, Limit Order from stock-exchange-2\n3 lesson(s) back: Online Banking, Mobile App from currency-payment-3\n7 lesson(s) back: Premium, Deductible from financial-services-2"
+  }
+]

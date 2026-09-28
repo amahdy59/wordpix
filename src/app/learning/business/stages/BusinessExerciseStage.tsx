@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { HelpCircle, ArrowRight } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
@@ -13,13 +14,15 @@ interface Props {
 
 export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, onNext }: Props) {
   const { t } = useI18n();
+  const [isCompleted, setIsCompleted] = useState(savedScore !== undefined);
+
   // Map BusinessExercise (A/B/C options) → unified QuizQuestion shape
   const questions: QuizQuestion[] = unit.exercises.map((ex) => ({
     id: ex.id,
     stem: ex.question,
     correctValue: ex.correctAnswer,
     explanation: ex.explanation,
-    optionColumns: "one",
+    optionColumns: "two",
     options: ex.options.map((option) => ({
       value: option.key,
       label: option.text,
@@ -29,11 +32,12 @@ export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, o
   }));
 
   const handleComplete = (result: QuizResult) => {
+    setIsCompleted(true);
     onCompleteExercises(result.correct);
   };
 
   return (
-    <div className="flex flex-col gap-6 max-w-6xl mx-auto w-full py-2">
+    <div className="wp-container-reading flex flex-col gap-6 py-2">
       {/* Stage Header */}
       <div className="flex items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">
@@ -50,25 +54,39 @@ export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, o
         )}
       </div>
 
-      {/* Unified Quiz Engine showing 3 questions at a time on desktop */}
+      {/* Unified Quiz Engine showing 1 focused question at a time */}
       <CurriculumQuizEngine
         questions={questions}
         onComplete={handleComplete}
-        desktopPageSize={3}
+        desktopPageSize={1}
         unitId={unit.id}
+        renderCompletionAction={() => (
+          <div className="flex justify-end pt-4">
+            <button
+              type="button"
+              onClick={onNext}
+              className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-md hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              <span>{t("business.exercises.proceedToDiscussion")}</span>
+              <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+            </button>
+          </div>
+        )}
       />
 
-      {/* Proceed button (shown after engine reaches completion screen) */}
-      <div className="flex justify-end">
-        <button
-          type="button"
-          onClick={onNext}
-          className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-        >
-          <span>{t("business.exercises.proceedToDiscussion")}</span>
-          <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-        </button>
-      </div>
+      {/* Proceed button (shown if previously completed and navigating back) */}
+      {isCompleted && (
+        <div className="flex justify-end">
+          <button
+            type="button"
+            onClick={onNext}
+            className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <span>{t("business.exercises.proceedToDiscussion")}</span>
+            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+          </button>
+        </div>
+      )}
     </div>
   );
 }

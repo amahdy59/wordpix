@@ -347,10 +347,7 @@ export function HadithVocabularyStage({
   );
 
   return (
-    <section
-      className="mx-auto w-full max-w-6xl space-y-6"
-      aria-labelledby="stage-vocabulary-heading"
-    >
+    <section className="wp-container-content space-y-6" aria-labelledby="stage-vocabulary-heading">
       {/* Header Banner */}
       <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
         <span className="text-xs font-black uppercase tracking-[0.18em] text-primary">

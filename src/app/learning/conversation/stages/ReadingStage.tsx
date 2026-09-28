@@ -154,7 +154,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
   }, [activeTerm, unit.languageBank, t]);
 
   return (
-    <div className="flex flex-col gap-6 max-w-4xl mx-auto w-full py-2">
+    <div className="wp-container-reading flex flex-col gap-6 py-2">
       {/* Stage Header */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">

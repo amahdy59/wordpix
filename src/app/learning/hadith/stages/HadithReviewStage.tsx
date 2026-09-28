@@ -24,7 +24,7 @@ export function HadithReviewStage({
   const { t } = useI18n();
 
   return (
-    <section className="mx-auto w-full max-w-4xl space-y-6" aria-labelledby="stage-review-heading">
+    <section className="wp-container-reading space-y-6" aria-labelledby="stage-review-heading">
       <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
         <div className="flex items-center gap-2">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-black uppercase tracking-wider text-primary">

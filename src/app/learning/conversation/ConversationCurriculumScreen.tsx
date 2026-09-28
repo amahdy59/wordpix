@@ -6,6 +6,7 @@ import { useI18n } from "../../context/I18nContext";
 import { CONVERSATION_UNITS } from "./conversationCatalog";
 import { CONVERSATION_STAGE_IDS, type CefrLevel, type ConversationUnit } from "./conversationTypes";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
+import { Button, EmptyState } from "../../shared";
 
 interface Props {
   dispatch: Dispatch<Action>;
@@ -88,16 +89,17 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
       className="h-full min-h-0 overflow-y-auto bg-background pb-24 overscroll-y-contain"
       aria-labelledby="curriculum-main-title"
     >
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 p-4 sm:p-8">
+      <div className="wp-container-content wp-layout-gutter flex flex-col gap-6 py-4 sm:py-8">
         {/* Back Button */}
-        <button
-          type="button"
+        <Button
+          variant="ghost"
+          size="sm"
           onClick={() => dispatch({ type: "GO", to: "explore" })}
-          className="inline-flex min-h-[44px] w-fit items-center gap-2 rounded-xl px-3 font-bold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="w-fit"
+          iconLeft={<ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />}
         >
-          <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
-          <span>{t("conversation.backToExplore")}</span>
-        </button>
+          {t("conversation.backToExplore")}
+        </Button>
 
         {/* Hero Header Card */}
         <header className="rounded-3xl border-2 border-primary/35 bg-gradient-to-br from-primary/15 via-card to-card p-6 sm:p-8 shadow-wp-sm">
@@ -340,12 +342,12 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
           })}
         </section>
         {filteredUnits.length === 0 && (
-          <p
-            className="rounded-2xl border border-border bg-card p-6 text-center font-semibold text-muted-foreground"
-            role="status"
-          >
-            {t("conversation.noResults")}
-          </p>
+          <EmptyState
+            titleAs="p"
+            title={t("conversation.noResults")}
+            live="polite"
+            className="min-h-36"
+          />
         )}
       </div>
     </div>

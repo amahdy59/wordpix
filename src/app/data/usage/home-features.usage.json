@@ -1,0 +1,427 @@
+﻿[
+  {
+    "lessonId": "home-features-1",
+    "lessonName": "Home Features 1",
+    "unitId": "home-features",
+    "unitName": "Home Features",
+    "unitOrder": 160,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 714,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Living Room",
+      "Bedroom",
+      "Bathroom",
+      "Kitchen",
+      "Dining Room",
+      "Home Office",
+      "Laundry Room",
+      "Basement",
+      "Attic",
+      "Pantry",
+      "Backyard",
+      "Front Yard",
+      "Patio",
+      "Deck",
+      "Balcony"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "غرفة طعام",
+      "مكتب منزل",
+      "غرفة غسيل",
+      "مصطلح مرتبط بالموضوع يُسمّى «باسيمينت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «اتتيك»",
+      "غرفة يُسمّى «بانتري»",
+      "مصطلح مرتبط بالموضوع يُسمّى «باكيارد»",
+      "شجرة يُسمّى «فرونت يارد»",
+      "منطقة يُسمّى «باتيو»",
+      "سفينة يُسمّى «ديك»",
+      "شرفة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Home Features to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use home features vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Living Room", "Bedroom", "Bathroom", "Kitchen"],
+          "scenario": "The agent, designer, or client discusses living room, bedroom, bathroom, and kitchen. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Living Room", "Bedroom", "Bathroom", "Kitchen"],
+            "expectedAnswer": "Living Room"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses living room, bedroom, bathroom, and kitchen. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Dining Room", "Home Office", "Laundry Room", "Basement"],
+          "scenario": "The agent, designer, or client discusses dining room, home office, laundry room, and basement. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dining Room", "Home Office", "Laundry Room", "Basement"],
+            "expectedAnswer": "Dining Room"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses dining room, home office, laundry room, and basement. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Attic", "Pantry", "Backyard", "Front Yard"],
+          "scenario": "The agent, designer, or client discusses attic, pantry, backyard, and front yard. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Attic", "Pantry", "Backyard", "Front Yard"],
+            "expectedAnswer": "Attic"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses attic, pantry, backyard, and front yard. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Patio", "Deck", "Balcony"],
+          "scenario": "The agent, designer, or client discusses patio, deck, and balcony. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Patio", "Deck", "Balcony"],
+            "expectedAnswer": "Patio"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses patio, deck, and balcony. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Home Features: Report Excerpt",
+      "text": "A realistic case involving home features shows how precise vocabulary can influence choices, explanations, and outcomes. The agent, designer, or client discusses living room, bedroom, bathroom, and kitchen. The words help describe the property, design choice, or building process. The agent, designer, or client discusses dining room, home office, laundry room, and basement. The words help describe the property, design choice, or building process. The agent, designer, or client discusses attic, pantry, backyard, and front yard. The words help describe the property, design choice, or building process. The agent, designer, or client discusses patio, deck, and balcony. The words help describe the property, design choice, or building process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Home Features. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Living Room"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dining Room"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Attic"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Patio"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Living Room"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Listing Agreement” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Home Features: In Context",
+      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Listing Agreement, Purchase Agreement from real-estate-agency-3\n3 lesson(s) back: Real Estate Agent, Broker from real-estate-agency-1\n7 lesson(s) back: Tuition, Scholarship from student-life-3"
+  },
+  {
+    "lessonId": "home-features-2",
+    "lessonName": "Home Features 2",
+    "unitId": "home-features",
+    "unitName": "Home Features",
+    "unitOrder": 160,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 715,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Terrace",
+      "Porch",
+      "Gazebo",
+      "Pergola",
+      "Garden Shed",
+      "Fireplace",
+      "Walk-In Closet",
+      "Built-In Shelves",
+      "Crown Molding",
+      "Hardwood Floor",
+      "Tile Floor",
+      "Vaulted Ceiling",
+      "Skylight",
+      "Bay Window",
+      "French Doors"
+    ],
+    "targetWordsArabic": [
+      "شرفة",
+      "مبنى يُسمّى «بورتش»",
+      "هيكل يُسمّى «جازيبو»",
+      "نبات يُسمّى «بيرجولا»",
+      "أداة يُسمّى «جاردين شيد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فيريبلاكي»",
+      "غرفة ملابس داخلية",
+      "رفوف مدمجة",
+      "كرانيش علوية زخرفية",
+      "أرضية خشبية",
+      "أرضية بلاط",
+      "سقف مرتفع مقبب",
+      "نافذة سقفية",
+      "هيكل يُسمّى «باي ويندوو»",
+      "أبواب فرنسية زجاجية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Home Features to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use home features vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Terrace", "Porch", "Gazebo", "Pergola"],
+          "scenario": "The agent, designer, or client discusses terrace, porch, gazebo, and pergola. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Terrace", "Porch", "Gazebo", "Pergola"],
+            "expectedAnswer": "Terrace"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses terrace, porch, gazebo, and pergola. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Garden Shed", "Fireplace", "Walk-In Closet", "Built-In Shelves"],
+          "scenario": "The agent, designer, or client discusses garden shed, fireplace, walk-in closet, and built-in shelves. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Garden Shed", "Fireplace", "Walk-In Closet", "Built-In Shelves"],
+            "expectedAnswer": "Garden Shed"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses garden shed, fireplace, walk-in closet, and built-in shelves. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Crown Molding", "Hardwood Floor", "Tile Floor", "Vaulted Ceiling"],
+          "scenario": "The agent, designer, or client discusses crown molding, hardwood floor, tile floor, and vaulted ceiling. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crown Molding", "Hardwood Floor", "Tile Floor", "Vaulted Ceiling"],
+            "expectedAnswer": "Crown Molding"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses crown molding, hardwood floor, tile floor, and vaulted ceiling. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Skylight", "Bay Window", "French Doors"],
+          "scenario": "The agent, designer, or client discusses skylight, bay window, and french doors. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Skylight", "Bay Window", "French Doors"],
+            "expectedAnswer": "Skylight"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses skylight, bay window, and french doors. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Home Features: Case Note",
+      "text": "A realistic case involving home features shows how precise vocabulary can influence choices, explanations, and outcomes. The agent, designer, or client discusses terrace, porch, gazebo, and pergola. The words help describe the property, design choice, or building process. The agent, designer, or client discusses garden shed, fireplace, walk-in closet, and built-in shelves. The words help describe the property, design choice, or building process. The agent, designer, or client discusses crown molding, hardwood floor, tile floor, and vaulted ceiling. The words help describe the property, design choice, or building process. The agent, designer, or client discusses skylight, bay window, and french doors. The words help describe the property, design choice, or building process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Home Features. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Terrace"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Garden Shed"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crown Molding"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Skylight"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Terrace"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Living Room” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Home Features: In Context",
+      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Living Room, Bedroom from home-features-1\n3 lesson(s) back: Negotiation, Appraisal from real-estate-agency-2\n7 lesson(s) back: House, Apartment from property-types-1"
+  },
+  {
+    "lessonId": "home-features-3",
+    "lessonName": "Home Features 3",
+    "unitId": "home-features",
+    "unitName": "Home Features",
+    "unitOrder": 160,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 716,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "HVAC",
+      "Central Air",
+      "Furnace",
+      "Water Heater",
+      "Plumbing",
+      "Electrical Panel",
+      "Circuit Breaker",
+      "Thermostat",
+      "Septic Tank",
+      "Well Water"
+    ],
+    "targetWordsArabic": [
+      "نظام التدفئة والتهوية وتكييف الهواء (HVAC)",
+      "تكييف مركزي",
+      "مبنى يُسمّى «فورناكي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «واتير هياتير»",
+      "سباكة",
+      "مبنى يُسمّى «يليكتريكال بانيل»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كيركويت برياكير»",
+      "منظّم حرارة",
+      "مصطلح مرتبط بالموضوع يُسمّى «سيبتيك تانك»",
+      "ماء بئر"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Home Features to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use home features vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "review",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["HVAC", "Central Air", "Furnace", "Water Heater"],
+          "scenario": "The agent, designer, or client discusses hvac, central air, furnace, and water heater. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["HVAC", "Central Air", "Furnace", "Water Heater"],
+            "expectedAnswer": "HVAC"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses hvac, central air, furnace, and water heater. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Plumbing", "Electrical Panel", "Circuit Breaker", "Thermostat"],
+          "scenario": "The agent, designer, or client discusses plumbing, electrical panel, circuit breaker, and thermostat. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Plumbing", "Electrical Panel", "Circuit Breaker", "Thermostat"],
+            "expectedAnswer": "Plumbing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses plumbing, electrical panel, circuit breaker, and thermostat. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Septic Tank", "Well Water"],
+          "scenario": "The agent, designer, or client discusses septic tank and well water. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Septic Tank", "Well Water"],
+            "expectedAnswer": "Septic Tank"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses septic tank and well water. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Home Features: Review",
+      "text": "A realistic case involving home features shows how precise vocabulary can influence choices, explanations, and outcomes. The agent, designer, or client discusses hvac, central air, furnace, and water heater. The words help describe the property, design choice, or building process. The agent, designer, or client discusses plumbing, electrical panel, circuit breaker, and thermostat. The words help describe the property, design choice, or building process. The agent, designer, or client discusses septic tank and well water. The words help describe the property, design choice, or building process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Home Features. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "HVAC"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Plumbing"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Septic Tank"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "HVAC"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Terrace” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Home Features: In Context",
+      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Terrace, Porch from home-features-2\n3 lesson(s) back: Listing Agreement, Purchase Agreement from real-estate-agency-3\n7 lesson(s) back: Shopping Center, Hotel from property-types-2"
+  }
+]

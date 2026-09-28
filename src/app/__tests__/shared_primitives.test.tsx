@@ -6,8 +6,13 @@ import {
   Surface,
   ActionCard,
   FilterChip,
+  PageContainer,
   PageHeader,
   ProgressBar,
+  MediaFrame,
+  EmptyState,
+  FeedbackPanel,
+  ExerciseFamilyTemplate,
 } from "../shared";
 
 describe("Shared UI Primitives", () => {
@@ -34,6 +39,7 @@ describe("Shared UI Primitives", () => {
 
       const btn = screen.getByRole("button", { name: "Loading..." });
       expect(btn).toHaveAttribute("aria-busy", "true");
+      expect(btn).toHaveAttribute("aria-disabled", "true");
       expect(btn).toBeDisabled();
 
       fireEvent.click(btn);
@@ -135,6 +141,73 @@ describe("Shared UI Primitives", () => {
     });
   });
 
+  describe("MediaFrame", () => {
+    it("applies a semantic media ratio and child fit", () => {
+      const { container } = render(
+        <MediaFrame as="figure" aspect="scene" fit="contain">
+          <img src="/lesson-scene.png" alt="A learner ordering at a cafe" />
+        </MediaFrame>
+      );
+
+      const frame = container.querySelector("figure");
+      expect(frame?.className).toContain("aspect-video");
+      expect(frame?.className).toContain("[&>img]:object-contain");
+      expect(screen.getByRole("img", { name: "A learner ordering at a cafe" })).toBeInTheDocument();
+    });
+  });
+
+  describe("EmptyState", () => {
+    it("presents guidance and an optional next action", () => {
+      render(
+        <EmptyState
+          title="Nothing due today"
+          description="Choose a skill to keep practising."
+          action={<Button>Browse skills</Button>}
+        />
+      );
+
+      expect(screen.getByRole("heading", { name: "Nothing due today" })).toBeInTheDocument();
+      expect(screen.getByRole("button", { name: "Browse skills" })).toBeInTheDocument();
+    });
+  });
+
+  describe("FeedbackPanel", () => {
+    it("uses assertive alert semantics for errors", () => {
+      render(
+        <FeedbackPanel
+          tone="error"
+          title="Answer not saved"
+          description="Try again when you are online."
+        />
+      );
+
+      const panel = screen.getByRole("alert");
+      expect(panel).toHaveAttribute("aria-live", "assertive");
+      expect(panel).toHaveTextContent("Answer not saved");
+    });
+  });
+
+  describe("ExerciseFamilyTemplate", () => {
+    it("keeps the instruction, activity, feedback, and action zones stable", () => {
+      const { container } = render(
+        <ExerciseFamilyTemplate
+          family="text-construction"
+          instruction="Put the words in order."
+          activityLabel="Sentence building activity"
+          activity={<button type="button">First word</button>}
+        />
+      );
+
+      expect(screen.getByRole("heading", { name: "Put the words in order." })).toBeInTheDocument();
+      expect(screen.getByRole("group", { name: "Sentence building activity" })).toBeInTheDocument();
+      expect(container.querySelector('[data-exercise-family="text-construction"]')).toHaveClass(
+        "wp-container-reading"
+      );
+      expect(container.querySelector('[data-exercise-zone="feedback"]')).toBeInTheDocument();
+      expect(container.querySelector('[data-exercise-zone="action"]')).toBeInTheDocument();
+    });
+  });
+
   describe("FilterChip", () => {
     it("renders toggle button with aria-pressed and handles onToggle", () => {
       const handleToggle = vi.fn();
@@ -198,6 +271,17 @@ describe("Shared UI Primitives", () => {
       const backBtn = screen.getByRole("button", { name: "Go back to path" });
       fireEvent.click(backBtn);
       expect(handleBack).toHaveBeenCalledTimes(1);
+    });
+  });
+
+  describe("PageContainer", () => {
+    it.each([
+      ["reading", "wp-container-reading"],
+      ["content", "wp-container-content"],
+      ["wide", "wp-container-wide"],
+    ] as const)("maps the %s measure to its semantic layout class", (size, expectedClass) => {
+      const { container } = render(<PageContainer size={size}>Content</PageContainer>);
+      expect(container.firstElementChild?.className).toContain(expectedClass);
     });
   });
 

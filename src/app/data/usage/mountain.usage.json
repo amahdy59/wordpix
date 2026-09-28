@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "mountain-1",
+    "lessonName": "The Mountain 1",
+    "unitId": "mountain",
+    "unitName": "The Mountain",
+    "unitOrder": 108,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 500,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Peak",
+      "Summit",
+      "Ridge",
+      "Cliff",
+      "Valley",
+      "Slope",
+      "Boulder",
+      "Ledge",
+      "Crevasse",
+      "Plateau",
+      "Pine Tree",
+      "Wildflower",
+      "Moss",
+      "Fern",
+      "Lichen"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «بياك»",
+      "قمة",
+      "مصطلح مرتبط بالموضوع يُسمّى «ريدجي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كليفف»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فالليي»",
+      "منحدر",
+      "لون يُسمّى «بوولدير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليدجي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كريفاسسي»",
+      "هضبة",
+      "شجرة يُسمّى «بيني تريي»",
+      "زهرة برية",
+      "طحلب بري",
+      "سرخس",
+      "نبات يُسمّى «ليتشين»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Mountain to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the mountain vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Peak", "Summit", "Ridge", "Cliff"],
+          "scenario": "The guide or scientist draws attention to peak, summit, ridge, and cliff. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Peak", "Summit", "Ridge", "Cliff"],
+            "expectedAnswer": "Peak"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to peak, summit, ridge, and cliff. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Valley", "Slope", "Boulder", "Ledge"],
+          "scenario": "The guide or scientist draws attention to valley, slope, boulder, and ledge. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Valley", "Slope", "Boulder", "Ledge"],
+            "expectedAnswer": "Valley"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to valley, slope, boulder, and ledge. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Crevasse", "Plateau", "Pine Tree", "Wildflower"],
+          "scenario": "The guide or scientist draws attention to crevasse, plateau, pine tree, and wildflower. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crevasse", "Plateau", "Pine Tree", "Wildflower"],
+            "expectedAnswer": "Crevasse"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to crevasse, plateau, pine tree, and wildflower. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Moss", "Fern", "Lichen"],
+          "scenario": "The group examines the moss, fern, and lichen and notices differences in shape, color, or growth.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Moss", "Fern", "Lichen"],
+            "expectedAnswer": "Moss"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group examines the moss, fern, and lichen and notices differences in shape, color, or growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Mountain: Travel/Visitor Guide",
+      "text": "A practical situation involving the mountain requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to peak, summit, ridge, and cliff. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to valley, slope, boulder, and ledge. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to crevasse, plateau, pine tree, and wildflower. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Mountain. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Peak"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Valley"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crevasse"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Moss"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Peak"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Cliff"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Canopy” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Mountain: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Canopy, Undergrowth from forest-4\n3 lesson(s) back: Wildflower, Lichen from forest-2\n7 lesson(s) back: Signal Mirror, Trail Marker from camping-site-3"
+  },
+  {
+    "lessonId": "mountain-2",
+    "lessonName": "The Mountain 2",
+    "unitId": "mountain",
+    "unitName": "The Mountain",
+    "unitOrder": 108,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 501,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Shrub",
+      "Alpine Meadow",
+      "Tree Line",
+      "Root",
+      "Bark",
+      "Eagle",
+      "Mountain Goat",
+      "Bear",
+      "Deer",
+      "Wolf",
+      "Marmot",
+      "Hawk",
+      "Owl",
+      "Fox",
+      "Mountain Lion"
+    ],
+    "targetWordsArabic": [
+      "نبات يُسمّى «شروب»",
+      "مرج جبلي مرتفع",
+      "طابور شجرة",
+      "جذر",
+      "شجرة يُسمّى «بارك»",
+      "نسر",
+      "ماعز جبلي",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيار»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «وولف»",
+      "مصطلح مرتبط بالموضوع يُسمّى «مارموت»",
+      "صقر",
+      "بومة",
+      "مصطلح مرتبط بالموضوع يُسمّى «فوكس»",
+      "أسد جبلي؛ كوغار"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Mountain to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the mountain vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Shrub", "Alpine Meadow", "Tree Line", "Root"],
+          "scenario": "The group examines the shrub, alpine meadow, tree line, and root and notices differences in shape, color, or growth.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Shrub", "Alpine Meadow", "Tree Line", "Root"],
+            "expectedAnswer": "Shrub"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group examines the shrub, alpine meadow, tree line, and root and notices differences in shape, color, or growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bark", "Eagle", "Mountain Goat", "Bear"],
+          "scenario": "The guide or scientist draws attention to bark, eagle, mountain goat, and bear. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bark", "Eagle", "Mountain Goat", "Bear"],
+            "expectedAnswer": "Bark"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to bark, eagle, mountain goat, and bear. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Deer", "Wolf", "Marmot", "Hawk"],
+          "scenario": "The guide or scientist draws attention to deer, wolf, marmot, and hawk. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Deer", "Wolf", "Marmot", "Hawk"],
+            "expectedAnswer": "Deer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to deer, wolf, marmot, and hawk. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Owl", "Fox", "Mountain Lion"],
+          "scenario": "The guide or scientist draws attention to owl, fox, and mountain lion. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Owl", "Fox", "Mountain Lion"],
+            "expectedAnswer": "Owl"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to owl, fox, and mountain lion. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Mountain: Review",
+      "text": "A practical situation involving the mountain requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The group examines the shrub, alpine meadow, tree line, and root and notices differences in shape, color, or growth. The guide or scientist draws attention to bark, eagle, mountain goat, and bear. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to deer, wolf, marmot, and hawk. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Mountain. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Shrub"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bark"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Deer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Owl"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Shrub"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Root"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Peak” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Mountain: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Peak, Summit from mountain-1\n3 lesson(s) back: Butterfly, Beetle from forest-3\n7 lesson(s) back: Mountain, Valley from camping-site-4"
+  },
+  {
+    "lessonId": "mountain-3",
+    "lessonName": "The Mountain 3",
+    "unitId": "mountain",
+    "unitName": "The Mountain",
+    "unitOrder": 108,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 502,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Snow",
+      "Fog",
+      "Wind",
+      "Cloud",
+      "Lightning",
+      "Sunrise",
+      "Sunset",
+      "Rainbow",
+      "Frost",
+      "Hail",
+      "Backpack",
+      "Hiking Boots",
+      "Trekking Pole",
+      "Water Bottle",
+      "Compass"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «سنوو»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فوج»",
+      "منطقة يُسمّى «ويند»",
+      "سحابة",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليغتنينج»",
+      "شروق الشمس",
+      "غروب الشمس",
+      "مصطلح مرتبط بالموضوع يُسمّى «راينبوو»",
+      "سطح يُسمّى «فروست»",
+      "مصطلح مرتبط بالموضوع يُسمّى «هايل»",
+      "حَقِيبَةُ ظَهْر",
+      "مصطلح مرتبط بالموضوع يُسمّى «هيكينج بووتس»",
+      "عصا مشي للرحلات",
+      "زجاجة ماء",
+      "بوصلة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Mountain to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the mountain vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Snow", "Fog", "Wind", "Cloud"],
+          "scenario": "The guide or scientist draws attention to snow, fog, wind, and cloud. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Snow", "Fog", "Wind", "Cloud"],
+            "expectedAnswer": "Snow"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to snow, fog, wind, and cloud. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Lightning", "Sunrise", "Sunset", "Rainbow"],
+          "scenario": "The guide or scientist draws attention to lightning, sunrise, sunset, and rainbow. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lightning", "Sunrise", "Sunset", "Rainbow"],
+            "expectedAnswer": "Lightning"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to lightning, sunrise, sunset, and rainbow. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Frost", "Hail", "Backpack", "Hiking Boots"],
+          "scenario": "The guide or scientist draws attention to frost, hail, backpack, and hiking boots. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Frost", "Hail", "Backpack", "Hiking Boots"],
+            "expectedAnswer": "Frost"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to frost, hail, backpack, and hiking boots. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Trekking Pole", "Water Bottle", "Compass"],
+          "scenario": "The guide or scientist draws attention to trekking pole, water bottle, and compass. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Trekking Pole", "Water Bottle", "Compass"],
+            "expectedAnswer": "Trekking Pole"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to trekking pole, water bottle, and compass. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Mountain: Practical Article",
+      "text": "A practical situation involving the mountain requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to snow, fog, wind, and cloud. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to lightning, sunrise, sunset, and rainbow. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to frost, hail, backpack, and hiking boots. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Mountain. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Snow"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lightning"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Frost"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Trekking Pole"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Snow"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Cloud"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Shrub” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Mountain: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Shrub, Alpine Meadow from mountain-2\n3 lesson(s) back: Canopy, Undergrowth from forest-4\n7 lesson(s) back: Photography, Rock Climbing from camping-site-5"
+  },
+  {
+    "lessonId": "mountain-4",
+    "lessonName": "The Mountain 4",
+    "unitId": "mountain",
+    "unitName": "The Mountain",
+    "unitOrder": 108,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 503,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Map",
+      "Headlamp",
+      "Tent",
+      "Sleeping Bag",
+      "Rope",
+      "Hiking",
+      "Climbing",
+      "Camping",
+      "Skiing",
+      "Snowboarding",
+      "Photography",
+      "Bird Watching",
+      "Fishing",
+      "Trail Running",
+      "Stargazing"
+    ],
+    "targetWordsArabic": [
+      "خريطة",
+      "مصطلح مرتبط بالموضوع يُسمّى «هيادلامب»",
+      "خيمة",
+      "مصطلح مرتبط بالموضوع يُسمّى «سلييبينج باج»",
+      "حبل",
+      "مصطلح مرتبط بالموضوع يُسمّى «هيكينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كليمبينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كامبينج»",
+      "جزء يُسمّى «سكيينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سنووبواردينج»",
+      "تصوير",
+      "طائر يُسمّى «بيرد واتتشينج»",
+      "سمكة يُسمّى «فيشينج»",
+      "الجري على المسارات",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستارجازينج»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Mountain to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the mountain vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Map", "Headlamp", "Tent", "Sleeping Bag"],
+          "scenario": "The guide or scientist draws attention to map, headlamp, tent, and sleeping bag. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Map", "Headlamp", "Tent", "Sleeping Bag"],
+            "expectedAnswer": "Map"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to map, headlamp, tent, and sleeping bag. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Rope", "Hiking", "Climbing", "Camping"],
+          "scenario": "The guide or scientist draws attention to rope, hiking, climbing, and camping. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Rope", "Hiking", "Climbing", "Camping"],
+            "expectedAnswer": "Rope"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to rope, hiking, climbing, and camping. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Skiing", "Snowboarding", "Photography", "Bird Watching"],
+          "scenario": "The guide or scientist draws attention to skiing, snowboarding, photography, and bird watching. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Skiing", "Snowboarding", "Photography", "Bird Watching"],
+            "expectedAnswer": "Skiing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to skiing, snowboarding, photography, and bird watching. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Fishing", "Trail Running", "Stargazing"],
+          "scenario": "The guide or scientist draws attention to fishing, trail running, and stargazing. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fishing", "Trail Running", "Stargazing"],
+            "expectedAnswer": "Fishing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to fishing, trail running, and stargazing. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Mountain: Real-Life Scenario",
+      "text": "A practical situation involving the mountain requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to map, headlamp, tent, and sleeping bag. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to rope, hiking, climbing, and camping. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to skiing, snowboarding, photography, and bird watching. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Mountain. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Map"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rope"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Skiing"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fishing"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Map"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Sleeping Bag"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Snow” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Mountain: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Snow, Fog from mountain-3\n3 lesson(s) back: Peak, Summit from mountain-1\n7 lesson(s) back: Oak, Maple from forest-1"
+  }
+]

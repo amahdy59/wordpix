@@ -1,0 +1,828 @@
+﻿[
+  {
+    "lessonId": "3d-printer-lab-1",
+    "lessonName": "The 3D Printer Lab 1",
+    "unitId": "3d-printer-lab",
+    "unitName": "The 3D Printer Lab",
+    "unitOrder": 171,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 752,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Print Head",
+      "Build Plate",
+      "Filament Spool",
+      "Extruder",
+      "Nozzle",
+      "Stepper Motor",
+      "Belt",
+      "Guide Rail",
+      "Cooling Fan",
+      "LCD Screen",
+      "PLA Filament",
+      "ABS Filament",
+      "PETG Filament",
+      "Resin",
+      "Nylon"
+    ],
+    "targetWordsArabic": [
+      "رأس الطباعة",
+      "منصّة الطباعة",
+      "بَكَرَة خيط الطباعة",
+      "وحدة بثق الخيط",
+      "فُوّهة",
+      "مُحرّك خُطوي",
+      "حزام",
+      "سِكّة توجيه",
+      "مروحة تبريد",
+      "شاشة بلّورية سائلة (LCD)",
+      "خيط PLA من حمض متعدد اللاكتيك",
+      "خيط ABS من أكريلونيتريل بوتادين ستايرين",
+      "خيط PETG للطباعة",
+      "راتنج",
+      "نايلون"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The 3D Printer Lab to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the 3d printer lab vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Print Head", "Build Plate", "Filament Spool", "Extruder"],
+          "scenario": "The engineer or technician checks print head, build plate, filament spool, and extruder. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Print Head", "Build Plate", "Filament Spool", "Extruder"],
+            "expectedAnswer": "Print Head"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks print head, build plate, filament spool, and extruder. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Nozzle", "Stepper Motor", "Belt", "Guide Rail"],
+          "scenario": "The engineer or technician checks nozzle, stepper motor, belt, and guide rail. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Nozzle", "Stepper Motor", "Belt", "Guide Rail"],
+            "expectedAnswer": "Nozzle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks nozzle, stepper motor, belt, and guide rail. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Cooling Fan", "LCD Screen", "PLA Filament", "ABS Filament"],
+          "scenario": "The engineer or technician checks cooling fan, lcd screen, pla filament, and abs filament. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cooling Fan", "LCD Screen", "PLA Filament", "ABS Filament"],
+            "expectedAnswer": "Cooling Fan"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks cooling fan, lcd screen, pla filament, and abs filament. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["PETG Filament", "Resin", "Nylon"],
+          "scenario": "The engineer or technician checks petg filament, resin, and nylon. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["PETG Filament", "Resin", "Nylon"],
+            "expectedAnswer": "PETG Filament"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks petg filament, resin, and nylon. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The 3D Printer Lab: Case Note",
+      "text": "A realistic case involving the 3d printer lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks print head, build plate, filament spool, and extruder. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks nozzle, stepper motor, belt, and guide rail. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks cooling fan, lcd screen, pla filament, and abs filament. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks petg filament, resin, and nylon. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Print Head"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Nozzle"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cooling Fan"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "PETG Filament"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Print Head"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Charging Speed” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The 3D Printer Lab: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Charging Speed, Time Remaining from electric-vehicle-station-4\n3 lesson(s) back: Thermal Management, Drive Unit from electric-vehicle-station-2\n7 lesson(s) back: Flight Controller, Gps Module from drone-workshop-2"
+  },
+  {
+    "lessonId": "3d-printer-lab-2",
+    "lessonName": "The 3D Printer Lab 2",
+    "unitId": "3d-printer-lab",
+    "unitName": "The 3D Printer Lab",
+    "unitOrder": 171,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 753,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Flexible Filament",
+      "Wood Filament",
+      "Metal Filament",
+      "Support Material",
+      "Glue Stick",
+      "Computer",
+      "3D Software",
+      "Mouse",
+      "Graphics Tablet",
+      "Ruler",
+      "Caliper",
+      "Protractor",
+      "Grid Paper",
+      "Sketchbook",
+      "Reference Model"
+    ],
+    "targetWordsArabic": [
+      "خيط طباعة مرن",
+      "خيط طباعة مركّب بجزيئات الخشب",
+      "خيط طباعة مركّب بجزيئات معدنية",
+      "مادة دعم للطباعة ثلاثية الأبعاد",
+      "عصا غراء",
+      "حاسوب",
+      "برنامج تصميم وطباعة ثلاثية الأبعاد",
+      "فأرة حاسوب",
+      "لوح رسم رقمي",
+      "مسطرة",
+      "قَدَمة قياس",
+      "منقلة",
+      "ورق شبكي",
+      "دفتر رسم",
+      "نموذج مرجعي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The 3D Printer Lab to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the 3d printer lab vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": [
+            "Flexible Filament",
+            "Wood Filament",
+            "Metal Filament",
+            "Support Material"
+          ],
+          "scenario": "The engineer or technician checks flexible filament, wood filament, metal filament, and support material. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Flexible Filament", "Wood Filament", "Metal Filament", "Support Material"],
+            "expectedAnswer": "Flexible Filament"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks flexible filament, wood filament, metal filament, and support material. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Glue Stick", "Computer", "3D Software", "Mouse"],
+          "scenario": "The engineer or technician checks glue stick, computer, 3d software, and mouse. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Glue Stick", "Computer", "3D Software", "Mouse"],
+            "expectedAnswer": "Glue Stick"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks glue stick, computer, 3d software, and mouse. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Graphics Tablet", "Ruler", "Caliper", "Protractor"],
+          "scenario": "The engineer or technician checks graphics tablet, ruler, caliper, and protractor. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Graphics Tablet", "Ruler", "Caliper", "Protractor"],
+            "expectedAnswer": "Graphics Tablet"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks graphics tablet, ruler, caliper, and protractor. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Grid Paper", "Sketchbook", "Reference Model"],
+          "scenario": "The engineer or technician checks grid paper, sketchbook, and reference model. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Grid Paper", "Sketchbook", "Reference Model"],
+            "expectedAnswer": "Grid Paper"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks grid paper, sketchbook, and reference model. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The 3D Printer Lab: Report Excerpt",
+      "text": "A realistic case involving the 3d printer lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks flexible filament, wood filament, metal filament, and support material. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks glue stick, computer, 3d software, and mouse. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks graphics tablet, ruler, caliper, and protractor. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks grid paper, sketchbook, and reference model. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Flexible Filament"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Glue Stick"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Graphics Tablet"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Grid Paper"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Flexible Filament"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Print Head” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The 3D Printer Lab: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Print Head, Build Plate from 3d-printer-lab-1\n3 lesson(s) back: Rfid Card, Mobile App from electric-vehicle-station-3\n7 lesson(s) back: Soldering Iron, Multimeter from drone-workshop-3"
+  },
+  {
+    "lessonId": "3d-printer-lab-3",
+    "lessonName": "The 3D Printer Lab 3",
+    "unitId": "3d-printer-lab",
+    "unitName": "The 3D Printer Lab",
+    "unitOrder": 171,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 754,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Sandpaper",
+      "File",
+      "Craft Knife",
+      "Pliers",
+      "Tweezers",
+      "Paint",
+      "Paintbrush",
+      "Primer",
+      "Acetone",
+      "UV Curing Lamp",
+      "Figurine",
+      "Phone Case",
+      "Gear",
+      "Bracket",
+      "Vase"
+    ],
+    "targetWordsArabic": [
+      "ورق صنفرة",
+      "ملف",
+      "سكين حِرفي",
+      "كماشة",
+      "ملقط",
+      "طلاء",
+      "فرشاة طلاء",
+      "طلاء تمهيدي",
+      "أسيتون",
+      "مصباح معالجة بالأشعة فوق البنفسجية",
+      "تمثال صغير",
+      "غلاف هاتف",
+      "ترس",
+      "دعامة",
+      "زَهْرِيَّة (فَازَة)"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The 3D Printer Lab to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the 3d printer lab vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sandpaper", "File", "Craft Knife", "Pliers"],
+          "scenario": "The engineer or technician checks sandpaper, file, craft knife, and pliers. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sandpaper", "File", "Craft Knife", "Pliers"],
+            "expectedAnswer": "Sandpaper"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks sandpaper, file, craft knife, and pliers. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Tweezers", "Paint", "Paintbrush", "Primer"],
+          "scenario": "The engineer or technician checks tweezers, paint, paintbrush, and primer. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tweezers", "Paint", "Paintbrush", "Primer"],
+            "expectedAnswer": "Tweezers"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks tweezers, paint, paintbrush, and primer. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Acetone", "UV Curing Lamp", "Figurine", "Phone Case"],
+          "scenario": "The engineer or technician checks acetone, uv curing lamp, figurine, and phone case. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Acetone", "UV Curing Lamp", "Figurine", "Phone Case"],
+            "expectedAnswer": "Acetone"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks acetone, uv curing lamp, figurine, and phone case. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Gear", "Bracket", "Vase"],
+          "scenario": "The engineer or technician checks gear, bracket, and vase. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Gear", "Bracket", "Vase"],
+            "expectedAnswer": "Gear"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks gear, bracket, and vase. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The 3D Printer Lab: Workplace/Academic Scenario",
+      "text": "A realistic case involving the 3d printer lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks sandpaper, file, craft knife, and pliers. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks tweezers, paint, paintbrush, and primer. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks acetone, uv curing lamp, figurine, and phone case. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks gear, bracket, and vase. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sandpaper"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tweezers"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Acetone"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gear"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Sandpaper"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Flexible Filament” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The 3D Printer Lab: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Flexible Filament, Wood Filament from 3d-printer-lab-2\n3 lesson(s) back: Charging Speed, Time Remaining from electric-vehicle-station-4\n7 lesson(s) back: Telemetry, Pid Tuning from drone-workshop-4"
+  },
+  {
+    "lessonId": "3d-printer-lab-4",
+    "lessonName": "The 3D Printer Lab 4",
+    "unitId": "3d-printer-lab",
+    "unitName": "The 3D Printer Lab",
+    "unitOrder": 171,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 755,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Keychain",
+      "Cookie Cutter",
+      "Whistle",
+      "Chess Piece",
+      "Architectural Model",
+      "Workstation",
+      "Storage Shelf",
+      "Ventilation Fan",
+      "Fire Extinguisher",
+      "Safety Glasses",
+      "Gloves",
+      "Trash Bin",
+      "Label Maker",
+      "Zip Bag",
+      "Desiccant Pack"
+    ],
+    "targetWordsArabic": [
+      "حلقة مفاتيح",
+      "قطّاعة بسكويت",
+      "صافرة",
+      "قطعة شطرنج",
+      "نموذج معماري",
+      "محطة عمل",
+      "رف تخزين",
+      "مروحة تهوية",
+      "طفاية حريق",
+      "نظارات واقية",
+      "قفازات",
+      "سلة مهملات",
+      "صانع علامة",
+      "كيس سحّاب",
+      "مادة يُسمّى «ديسيككانت باك»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The 3D Printer Lab to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the 3d printer lab vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "opinion paragraph",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Keychain", "Cookie Cutter", "Whistle", "Chess Piece"],
+          "scenario": "The engineer or technician checks keychain, cookie cutter, whistle, and chess piece. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Keychain", "Cookie Cutter", "Whistle", "Chess Piece"],
+            "expectedAnswer": "Keychain"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks keychain, cookie cutter, whistle, and chess piece. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Architectural Model", "Workstation", "Storage Shelf", "Ventilation Fan"],
+          "scenario": "The engineer or technician checks architectural model, workstation, storage shelf, and ventilation fan. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Architectural Model", "Workstation", "Storage Shelf", "Ventilation Fan"],
+            "expectedAnswer": "Architectural Model"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks architectural model, workstation, storage shelf, and ventilation fan. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Fire Extinguisher", "Safety Glasses", "Gloves", "Trash Bin"],
+          "scenario": "The engineer or technician checks fire extinguisher, safety glasses, gloves, and trash bin. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fire Extinguisher", "Safety Glasses", "Gloves", "Trash Bin"],
+            "expectedAnswer": "Fire Extinguisher"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks fire extinguisher, safety glasses, gloves, and trash bin. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Label Maker", "Zip Bag", "Desiccant Pack"],
+          "scenario": "The engineer or technician checks label maker, zip bag, and desiccant pack. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Label Maker", "Zip Bag", "Desiccant Pack"],
+            "expectedAnswer": "Label Maker"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks label maker, zip bag, and desiccant pack. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The 3D Printer Lab: Opinion Paragraph",
+      "text": "A realistic case involving the 3d printer lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks keychain, cookie cutter, whistle, and chess piece. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks architectural model, workstation, storage shelf, and ventilation fan. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks fire extinguisher, safety glasses, gloves, and trash bin. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks label maker, zip bag, and desiccant pack. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Keychain"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Architectural Model"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fire Extinguisher"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Label Maker"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Keychain"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Sandpaper” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The 3D Printer Lab: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Sandpaper, File from 3d-printer-lab-3\n3 lesson(s) back: Print Head, Build Plate from 3d-printer-lab-1\n7 lesson(s) back: Charging Station, Connector from electric-vehicle-station-1"
+  },
+  {
+    "lessonId": "3d-printer-lab-5",
+    "lessonName": "The 3D Printer Lab 5",
+    "unitId": "3d-printer-lab",
+    "unitName": "The 3D Printer Lab",
+    "unitOrder": 171,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 756,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Frame",
+      "Fan",
+      "Display",
+      "PLA",
+      "ABS",
+      "PETG",
+      "TPU",
+      "Carbon Fiber",
+      "Wood Fill",
+      "Design",
+      "Slice",
+      "Print",
+      "Layer",
+      "Support",
+      "Infill"
+    ],
+    "targetWordsArabic": [
+      "إطار",
+      "مروحة",
+      "شاشة عرض",
+      "بولي لاكتيك أسيد (PLA)",
+      "بلاستيك ABS",
+      "بلاستيك PETG",
+      "بولي يوريثان حراري (TPU)",
+      "ألياف كربون",
+      "حشو خشب",
+      "تصميم",
+      "يقطّع شرائح",
+      "طباعة",
+      "طبقة",
+      "دعم",
+      "حشو داخلي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The 3D Printer Lab to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the 3d printer lab vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Frame", "Fan", "Display", "PLA"],
+          "scenario": "The engineer or technician checks frame, fan, display, and pla. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Frame", "Fan", "Display", "PLA"],
+            "expectedAnswer": "Frame"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks frame, fan, display, and pla. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["ABS", "PETG", "TPU", "Carbon Fiber"],
+          "scenario": "The engineer or technician checks abs, petg, tpu, and carbon fiber. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["ABS", "PETG", "TPU", "Carbon Fiber"],
+            "expectedAnswer": "ABS"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks abs, petg, tpu, and carbon fiber. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Wood Fill", "Design", "Slice", "Print"],
+          "scenario": "The engineer or technician checks wood fill, design, slice, and print. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Wood Fill", "Design", "Slice", "Print"],
+            "expectedAnswer": "Wood Fill"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks wood fill, design, slice, and print. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Layer", "Support", "Infill"],
+          "scenario": "The engineer or technician checks layer, support, and infill. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Layer", "Support", "Infill"],
+            "expectedAnswer": "Layer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks layer, support, and infill. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The 3D Printer Lab: Case Note",
+      "text": "A realistic case involving the 3d printer lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks frame, fan, display, and pla. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks abs, petg, tpu, and carbon fiber. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks wood fill, design, slice, and print. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks layer, support, and infill. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Frame"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "ABS"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Wood Fill"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Layer"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Frame"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Keychain” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The 3D Printer Lab: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Keychain, Cookie Cutter from 3d-printer-lab-4\n3 lesson(s) back: Flexible Filament, Wood Filament from 3d-printer-lab-2\n7 lesson(s) back: Thermal Management, Drive Unit from electric-vehicle-station-2"
+  },
+  {
+    "lessonId": "3d-printer-lab-6",
+    "lessonName": "The 3D Printer Lab 6",
+    "unitId": "3d-printer-lab",
+    "unitName": "The 3D Printer Lab",
+    "unitOrder": 171,
+    "lessonOrderInUnit": 6,
+    "globalOrder": 757,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": ["Calibrate", "Prototype"],
+    "targetWordsArabic": ["يُعاير", "نموذج أولي"],
+    "usage": {
+      "goal": "Use the vocabulary from The 3D Printer Lab to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the 3d printer lab vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": {
+        "chunkNumber": 1,
+        "targetWords": ["Calibrate", "Prototype"],
+        "scenario": "The engineer or technician checks calibrate and prototype. The words connect to components, systems, processes, or technical decisions.",
+        "check": {
+          "question": "Which target term is most central to the situation?",
+          "options": ["Calibrate", "Prototype"],
+          "expectedAnswer": "Calibrate"
+        },
+        "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks calibrate and prototype. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+      }
+    },
+    "reading": {
+      "title": "The 3D Printer Lab: Report Excerpt",
+      "text": "A realistic case involving the 3d printer lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks calibrate and prototype. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Calibrate"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Calibrate"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Frame” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The 3D Printer Lab: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Frame, Fan from 3d-printer-lab-5\n3 lesson(s) back: Sandpaper, File from 3d-printer-lab-3\n7 lesson(s) back: Rfid Card, Mobile App from electric-vehicle-station-3"
+  }
+]

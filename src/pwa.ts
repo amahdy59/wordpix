@@ -1,4 +1,4 @@
-import { COURSE_UNITS, DEFAULT_UNIT_ID } from "./app/data/lessons";
+import { COURSE_UNITS, DEFAULT_UNIT_ID } from "./app/data/courseCatalog";
 import { loadUnitVocabulary } from "./app/data/vocabulary";
 import { resolveAssetUrl } from "./utils/assetUrl";
 

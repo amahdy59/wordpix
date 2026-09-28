@@ -1,0 +1,748 @@
+﻿[
+  {
+    "lessonId": "newspaper-office-1",
+    "lessonName": "The Newspaper Office 1",
+    "unitId": "newspaper-office",
+    "unitName": "The Newspaper Office",
+    "unitOrder": 133,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 615,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Newsroom",
+      "Editor's Desk",
+      "Whiteboard",
+      "Pinboard",
+      "Computer Terminal",
+      "Telephone",
+      "Coffee Cup",
+      "Filing Cabinet",
+      "Notepad",
+      "Wall Clock",
+      "Newspaper",
+      "Headline",
+      "Article",
+      "Column",
+      "Photograph"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "لَوْحٌ أَبْيَض (سَبُّورَةٌ بَيْضَاء)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "سَاعَةُ حَائِط",
+      "جَرِيدَة (صَحِيفَة)",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Newspaper Office to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the newspaper office vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Newsroom", "Editor's Desk", "Whiteboard", "Pinboard"],
+          "scenario": "During the visit, the patient and medical team deal with newsroom, editor's desk, whiteboard, and pinboard. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Newsroom", "Editor's Desk", "Whiteboard", "Pinboard"],
+            "expectedAnswer": "Newsroom"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with newsroom, editor's desk, whiteboard, and pinboard. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Computer Terminal", "Telephone", "Coffee Cup", "Filing Cabinet"],
+          "scenario": "During the visit, the patient and medical team deal with computer terminal, telephone, coffee cup, and filing cabinet. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Computer Terminal", "Telephone", "Coffee Cup", "Filing Cabinet"],
+            "expectedAnswer": "Computer Terminal"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with computer terminal, telephone, coffee cup, and filing cabinet. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Notepad", "Wall Clock", "Newspaper", "Headline"],
+          "scenario": "During the visit, the patient and medical team deal with notepad, wall clock, newspaper, and headline. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Notepad", "Wall Clock", "Newspaper", "Headline"],
+            "expectedAnswer": "Notepad"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with notepad, wall clock, newspaper, and headline. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Article", "Column", "Photograph"],
+          "scenario": "During the visit, the patient and medical team deal with article, column, and photograph. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Article", "Column", "Photograph"],
+            "expectedAnswer": "Article"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with article, column, and photograph. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Newspaper Office: Practical Article",
+      "text": "A practical situation involving the newspaper office requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the visit, the patient and medical team deal with newsroom, editor's desk, whiteboard, and pinboard. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with computer terminal, telephone, coffee cup, and filing cabinet. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with notepad, wall clock, newspaper, and headline. Each term belongs to a different part of the care process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Newspaper Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Newsroom"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Computer Terminal"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Notepad"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Article"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Newsroom"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Pinboard"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Code” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Newspaper Office: In Context",
+      "idea": "40-60 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Code from computer-lab-6\n3 lesson(s) back: Scrolling, Clicking from computer-lab-4\n7 lesson(s) back: Scissors, Pin from tailor-shop-5"
+  },
+  {
+    "lessonId": "newspaper-office-2",
+    "lessonName": "The Newspaper Office 2",
+    "unitId": "newspaper-office",
+    "unitName": "The Newspaper Office",
+    "unitOrder": 133,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 616,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Caption",
+      "Classified Ad",
+      "Editorial",
+      "Front Page",
+      "Back Page",
+      "Reporter",
+      "Editor",
+      "Photographer",
+      "Columnist",
+      "Cartoonist",
+      "Proofreader",
+      "Copy Editor",
+      "Correspondent",
+      "Intern",
+      "Publisher"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Newspaper Office to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the newspaper office vocabulary to handle a practical situation and explain key details.",
+      "textType": "email",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Caption", "Classified Ad", "Editorial", "Front Page"],
+          "scenario": "During the visit, the patient and medical team deal with caption, classified ad, editorial, and front page. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Caption", "Classified Ad", "Editorial", "Front Page"],
+            "expectedAnswer": "Caption"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with caption, classified ad, editorial, and front page. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Back Page", "Reporter", "Editor", "Photographer"],
+          "scenario": "During the visit, the patient and medical team deal with back page, reporter, editor, and photographer. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Back Page", "Reporter", "Editor", "Photographer"],
+            "expectedAnswer": "Back Page"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with back page, reporter, editor, and photographer. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Columnist", "Cartoonist", "Proofreader", "Copy Editor"],
+          "scenario": "During the visit, the patient and medical team deal with columnist, cartoonist, proofreader, and copy editor. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Columnist", "Cartoonist", "Proofreader", "Copy Editor"],
+            "expectedAnswer": "Columnist"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with columnist, cartoonist, proofreader, and copy editor. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Correspondent", "Intern", "Publisher"],
+          "scenario": "During the visit, the patient and medical team deal with correspondent, intern, and publisher. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Correspondent", "Intern", "Publisher"],
+            "expectedAnswer": "Correspondent"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with correspondent, intern, and publisher. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Newspaper Office: Email",
+      "text": "A practical situation involving the newspaper office requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the visit, the patient and medical team deal with caption, classified ad, editorial, and front page. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with back page, reporter, editor, and photographer. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with columnist, cartoonist, proofreader, and copy editor. Each term belongs to a different part of the care process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Newspaper Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Caption"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Back Page"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Columnist"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Correspondent"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Caption"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Front Page"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Newsroom” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Newspaper Office: In Context",
+      "idea": "40-60 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Newsroom, Editor's Desk from newspaper-office-1\n3 lesson(s) back: Antivirus, Spam from computer-lab-5\n7 lesson(s) back: Desktop Computer, Laptop from computer-lab-1"
+  },
+  {
+    "lessonId": "newspaper-office-3",
+    "lessonName": "The Newspaper Office 3",
+    "unitId": "newspaper-office",
+    "unitName": "The Newspaper Office",
+    "unitOrder": 133,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 617,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Press Pass",
+      "Notebook",
+      "Pen",
+      "Voice Recorder",
+      "Camera",
+      "Laptop",
+      "Microphone",
+      "Tripod",
+      "Press Release",
+      "Interview Notes",
+      "Draft",
+      "Deadline",
+      "Layout",
+      "Proof",
+      "Printing Press"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "دَفْتَر (كُرَّاسَةُ مُلَاحَظَات)",
+      "قَلَمُ حِبْر",
+      "-",
+      "-",
+      "حَاسُوبٌ مَحْمُول (لَابْتُوب)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Newspaper Office to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the newspaper office vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Press Pass", "Notebook", "Pen", "Voice Recorder"],
+          "scenario": "During the visit, the patient and medical team deal with press pass, notebook, pen, and voice recorder. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Press Pass", "Notebook", "Pen", "Voice Recorder"],
+            "expectedAnswer": "Press Pass"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with press pass, notebook, pen, and voice recorder. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Camera", "Laptop", "Microphone", "Tripod"],
+          "scenario": "During the visit, the patient and medical team deal with camera, laptop, microphone, and tripod. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Camera", "Laptop", "Microphone", "Tripod"],
+            "expectedAnswer": "Camera"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with camera, laptop, microphone, and tripod. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Press Release", "Interview Notes", "Draft", "Deadline"],
+          "scenario": "During the visit, the patient and medical team deal with press release, interview notes, draft, and deadline. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Press Release", "Interview Notes", "Draft", "Deadline"],
+            "expectedAnswer": "Press Release"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with press release, interview notes, draft, and deadline. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Layout", "Proof", "Printing Press"],
+          "scenario": "During the visit, the patient and medical team deal with layout, proof, and printing press. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Layout", "Proof", "Printing Press"],
+            "expectedAnswer": "Layout"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with layout, proof, and printing press. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Newspaper Office: Review",
+      "text": "A practical situation involving the newspaper office requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the visit, the patient and medical team deal with press pass, notebook, pen, and voice recorder. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with camera, laptop, microphone, and tripod. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with press release, interview notes, draft, and deadline. Each term belongs to a different part of the care process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Newspaper Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Press Pass"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Camera"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Press Release"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Layout"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Press Pass"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Voice Recorder"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Caption” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Newspaper Office: In Context",
+      "idea": "40-60 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Caption, Classified Ad from newspaper-office-2\n3 lesson(s) back: Code from computer-lab-6\n7 lesson(s) back: App, Icon from computer-lab-2"
+  },
+  {
+    "lessonId": "newspaper-office-4",
+    "lessonName": "The Newspaper Office 4",
+    "unitId": "newspaper-office",
+    "unitName": "The Newspaper Office",
+    "unitOrder": 133,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 618,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Ink",
+      "Paper Roll",
+      "Folding Machine",
+      "Delivery Truck",
+      "Newsstand",
+      "Breaking News",
+      "Feature Story",
+      "Opinion Piece",
+      "Review",
+      "Interview",
+      "Investigation",
+      "Weather Report",
+      "Sports Score",
+      "Obituary",
+      "Advertisement"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "شَاحِنَةُ التَّوْصِيل",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Newspaper Office to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the newspaper office vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Ink", "Paper Roll", "Folding Machine", "Delivery Truck"],
+          "scenario": "During the visit, the patient and medical team deal with ink, paper roll, folding machine, and delivery truck. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Ink", "Paper Roll", "Folding Machine", "Delivery Truck"],
+            "expectedAnswer": "Ink"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with ink, paper roll, folding machine, and delivery truck. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Newsstand", "Breaking News", "Feature Story", "Opinion Piece"],
+          "scenario": "During the visit, the patient and medical team deal with newsstand, breaking news, feature story, and opinion piece. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Newsstand", "Breaking News", "Feature Story", "Opinion Piece"],
+            "expectedAnswer": "Newsstand"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with newsstand, breaking news, feature story, and opinion piece. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Review", "Interview", "Investigation", "Weather Report"],
+          "scenario": "During the visit, the patient and medical team deal with review, interview, investigation, and weather report. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Review", "Interview", "Investigation", "Weather Report"],
+            "expectedAnswer": "Review"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with review, interview, investigation, and weather report. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Sports Score", "Obituary", "Advertisement"],
+          "scenario": "During the visit, the patient and medical team deal with sports score, obituary, and advertisement. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sports Score", "Obituary", "Advertisement"],
+            "expectedAnswer": "Sports Score"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with sports score, obituary, and advertisement. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Newspaper Office: Travel/Visitor Guide",
+      "text": "A practical situation involving the newspaper office requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the visit, the patient and medical team deal with ink, paper roll, folding machine, and delivery truck. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with newsstand, breaking news, feature story, and opinion piece. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with review, interview, investigation, and weather report. Each term belongs to a different part of the care process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Newspaper Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ink"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Newsstand"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Review"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sports Score"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Ink"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Delivery Truck"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Press Pass” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Newspaper Office: In Context",
+      "idea": "40-60 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Press Pass, Notebook from newspaper-office-3\n3 lesson(s) back: Newsroom, Editor's Desk from newspaper-office-1\n7 lesson(s) back: Firewall, Cloud Storage from computer-lab-3"
+  },
+  {
+    "lessonId": "newspaper-office-5",
+    "lessonName": "The Newspaper Office 5",
+    "unitId": "newspaper-office",
+    "unitName": "The Newspaper Office",
+    "unitOrder": 133,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 619,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Classified",
+      "Cartoon",
+      "Photo",
+      "Journalist",
+      "Printer",
+      "Layout Designer",
+      "Source",
+      "Publish",
+      "Print",
+      "Distribute",
+      "Subscribe",
+      "Proofread",
+      "Archive"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "طَابِعَة",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "أَرْشِيف (سِجِلَّاتٌ وَوَثَائِقُ تَارِيخِيَّة)"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Newspaper Office to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the newspaper office vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Classified", "Cartoon", "Photo", "Journalist"],
+          "scenario": "During the visit, the patient and medical team deal with classified, cartoon, photo, and journalist. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Classified", "Cartoon", "Photo", "Journalist"],
+            "expectedAnswer": "Classified"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with classified, cartoon, photo, and journalist. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Printer", "Layout Designer", "Source", "Publish"],
+          "scenario": "During the visit, the patient and medical team deal with printer, layout designer, source, and publish. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Printer", "Layout Designer", "Source", "Publish"],
+            "expectedAnswer": "Printer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with printer, layout designer, source, and publish. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Print", "Distribute", "Subscribe", "Proofread"],
+          "scenario": "During the visit, the patient and medical team deal with print, distribute, subscribe, and proofread. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Print", "Distribute", "Subscribe", "Proofread"],
+            "expectedAnswer": "Print"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with print, distribute, subscribe, and proofread. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": "Archive",
+          "scenario": "During the visit, the patient and medical team deal with archive. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": "Archive",
+            "expectedAnswer": "Archive"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with archive. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Newspaper Office: Real-Life Scenario",
+      "text": "A practical situation involving the newspaper office requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the visit, the patient and medical team deal with classified, cartoon, photo, and journalist. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with printer, layout designer, source, and publish. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with print, distribute, subscribe, and proofread. Each term belongs to a different part of the care process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Newspaper Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Classified"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Printer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Print"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Archive"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Classified"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Journalist"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Ink” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Newspaper Office: In Context",
+      "idea": "40-60 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Ink, Paper Roll from newspaper-office-4\n3 lesson(s) back: Caption, Classified Ad from newspaper-office-2\n7 lesson(s) back: Scrolling, Clicking from computer-lab-4"
+  }
+]

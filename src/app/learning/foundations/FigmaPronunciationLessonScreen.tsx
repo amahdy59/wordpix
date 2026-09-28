@@ -234,7 +234,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
         className="min-h-dvh w-full bg-background pb-24"
         aria-labelledby="pronunciation-complete-title"
       >
-        <div className="mx-auto flex w-full max-w-3xl flex-col gap-5 p-4 sm:p-8">
+        <div className="wp-container-reading wp-layout-gutter flex flex-col gap-5 py-4 sm:py-8">
           <section className="rounded-3xl border border-border bg-card p-6 text-center shadow-sm sm:p-10">
             <Sparkles className="mx-auto size-10 text-primary" aria-hidden />
             <p className="mt-4 text-sm font-black uppercase tracking-[0.18em] text-primary">
@@ -340,7 +340,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
       className="min-h-dvh w-full overflow-y-auto bg-background pb-24"
       aria-labelledby="pronunciation-title"
     >
-      <div className="mx-auto flex w-full max-w-4xl flex-col gap-5 p-4 sm:p-8">
+      <div className="wp-container-reading wp-layout-gutter flex flex-col gap-5 py-4 sm:py-8">
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}

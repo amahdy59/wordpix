@@ -1,0 +1,448 @@
+﻿[
+  {
+    "lessonId": "spatial-relations-1",
+    "lessonName": "Spatial Relations 1",
+    "unitId": "spatial-relations",
+    "unitName": "Spatial Relations",
+    "unitOrder": 47,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 224,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Big",
+      "Small",
+      "Large",
+      "Tiny",
+      "Huge",
+      "Enormous",
+      "Miniature",
+      "Medium",
+      "Wide",
+      "Narrow",
+      "Close",
+      "Far Away",
+      "Adjacent",
+      "Distant",
+      "Nearby"
+    ],
+    "targetWordsArabic": [
+      "كبير",
+      "صغير",
+      "كبير",
+      "ضئيل جدًا",
+      "ضخم",
+      "هائل",
+      "مصغّر",
+      "متوسط",
+      "واسع",
+      "ضيق",
+      "قريب",
+      "مكان يُسمّى «فار اواي»",
+      "مجاور",
+      "بعيد",
+      "قريب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Spatial Relations to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key spatial relations vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Big", "Small", "Large"],
+          "scenario": "During the visit, the patient and medical team deal with big, small, and large. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Big", "Small", "Large"],
+            "expectedAnswer": "Big"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with big, small, and large. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Tiny", "Huge", "Enormous"],
+          "scenario": "During the visit, the patient and medical team deal with tiny, huge, and enormous. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Tiny", "Huge", "Enormous"],
+            "expectedAnswer": "Tiny"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with tiny, huge, and enormous. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Miniature", "Medium", "Wide"],
+          "scenario": "During the visit, the patient and medical team deal with miniature, medium, and wide. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Miniature", "Medium", "Wide"],
+            "expectedAnswer": "Miniature"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with miniature, medium, and wide. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Narrow", "Close", "Far Away"],
+          "scenario": "During the visit, the patient and medical team deal with narrow, close, and far away. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Narrow", "Close", "Far Away"],
+            "expectedAnswer": "Narrow"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with narrow, close, and far away. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Adjacent", "Distant", "Nearby"],
+          "scenario": "During the visit, the patient and medical team deal with adjacent, distant, and nearby. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Adjacent", "Distant", "Nearby"],
+            "expectedAnswer": "Adjacent"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with adjacent, distant, and nearby. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Spatial Relations: Short Description",
+      "text": "Maya is in a situation connected to spatial relations. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with big, small, and large. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with tiny, huge, and enormous. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with miniature, medium, and wide. Each term belongs to a different part of the care process. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Spatial Relations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Big"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tiny"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Miniature"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Narrow"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Adjacent"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Big"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Large"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Rv” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Spatial Relations: In Context",
+      "idea": "30-45 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Rv, Trailer from gas-station-4\n3 lesson(s) back: Chips, Gum from gas-station-2\n7 lesson(s) back: Wall Chart, Clock from first-aid-room-6"
+  },
+  {
+    "lessonId": "spatial-relations-2",
+    "lessonName": "Spatial Relations 2",
+    "unitId": "spatial-relations",
+    "unitName": "Spatial Relations",
+    "unitOrder": 47,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 225,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Remote",
+      "Proximate",
+      "Within Reach",
+      "Out of Reach",
+      "Arm's Length",
+      "High",
+      "Low",
+      "Tall",
+      "Short",
+      "Deep",
+      "Shallow",
+      "Elevated",
+      "Sunken",
+      "Level",
+      "Flat"
+    ],
+    "targetWordsArabic": [
+      "عن بُعد",
+      "قريب",
+      "في متناول اليد",
+      "مصطلح مرتبط بالموضوع يُسمّى «ووت وف رياتش»",
+      "على بُعد ذراع",
+      "مرتفع",
+      "منخفض",
+      "طويل",
+      "قصير",
+      "مصطلح مرتبط بالموضوع يُسمّى «دييب»",
+      "ضحل",
+      "مرتفع",
+      "غائر",
+      "مستوٍ",
+      "مسطّح"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Spatial Relations to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key spatial relations vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Remote", "Proximate", "Within Reach"],
+          "scenario": "During the visit, the patient and medical team deal with remote, proximate, and within reach. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Remote", "Proximate", "Within Reach"],
+            "expectedAnswer": "Remote"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with remote, proximate, and within reach. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Out of Reach", "Arm's Length", "High"],
+          "scenario": "During the visit, the patient and medical team deal with out of reach, arm's length, and high. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Out of Reach", "Arm's Length", "High"],
+            "expectedAnswer": "Out of Reach"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with out of reach, arm's length, and high. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Low", "Tall", "Short"],
+          "scenario": "During the visit, the patient and medical team deal with low, tall, and short. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Low", "Tall", "Short"],
+            "expectedAnswer": "Low"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with low, tall, and short. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Deep", "Shallow", "Elevated"],
+          "scenario": "During the visit, the patient and medical team deal with deep, shallow, and elevated. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Deep", "Shallow", "Elevated"],
+            "expectedAnswer": "Deep"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with deep, shallow, and elevated. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Sunken", "Level", "Flat"],
+          "scenario": "During the visit, the patient and medical team deal with sunken, level, and flat. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Sunken", "Level", "Flat"],
+            "expectedAnswer": "Sunken"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with sunken, level, and flat. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Spatial Relations: Mini Dialogue",
+      "text": "Maya is in a situation connected to spatial relations. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with remote, proximate, and within reach. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with out of reach, arm's length, and high. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with low, tall, and short. Each term belongs to a different part of the care process. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Spatial Relations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Remote"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Out of Reach"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Low"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Deep"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sunken"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Remote"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Within Reach"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Big” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Spatial Relations: In Context",
+      "idea": "30-45 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Big, Small from spatial-relations-1\n3 lesson(s) back: Canopy, Parking Spot from gas-station-3\n7 lesson(s) back: Nosebleed, Bee Sting from first-aid-room-7"
+  },
+  {
+    "lessonId": "spatial-relations-3",
+    "lessonName": "Spatial Relations 3",
+    "unitId": "spatial-relations",
+    "unitName": "Spatial Relations",
+    "unitOrder": 47,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 226,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Horizontal",
+      "Vertical",
+      "Diagonal",
+      "Parallel",
+      "Perpendicular",
+      "Aligned",
+      "Scattered",
+      "Clustered",
+      "Stacked",
+      "Layered"
+    ],
+    "targetWordsArabic": [
+      "أفقي",
+      "رأسي",
+      "قطري",
+      "متوازٍ",
+      "متعامد",
+      "مصطفّ",
+      "متناثر",
+      "متجمّع",
+      "مكدّس",
+      "متعدد الطبقات"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Spatial Relations to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key spatial relations vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Horizontal", "Vertical", "Diagonal"],
+          "scenario": "During the visit, the patient and medical team deal with horizontal, vertical, and diagonal. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Horizontal", "Vertical", "Diagonal"],
+            "expectedAnswer": "Horizontal"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with horizontal, vertical, and diagonal. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Parallel", "Perpendicular", "Aligned"],
+          "scenario": "During the visit, the patient and medical team deal with parallel, perpendicular, and aligned. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Parallel", "Perpendicular", "Aligned"],
+            "expectedAnswer": "Parallel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with parallel, perpendicular, and aligned. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Scattered", "Clustered", "Stacked"],
+          "scenario": "During the visit, the patient and medical team deal with scattered, clustered, and stacked. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Scattered", "Clustered", "Stacked"],
+            "expectedAnswer": "Scattered"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with scattered, clustered, and stacked. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": "Layered",
+          "scenario": "During the visit, the patient and medical team deal with layered. Each term belongs to a different part of the care process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": "Layered",
+            "expectedAnswer": "Layered"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with layered. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Spatial Relations: Simple Message",
+      "text": "Maya is in a situation connected to spatial relations. She uses the new words to understand what she sees and what happens next. During the visit, the patient and medical team deal with horizontal, vertical, and diagonal. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with parallel, perpendicular, and aligned. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with scattered, clustered, and stacked. Each term belongs to a different part of the care process. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Spatial Relations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Horizontal"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Parallel"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Scattered"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Layered"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Horizontal"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Diagonal"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Remote” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Spatial Relations: In Context",
+      "idea": "30-45 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Remote, Proximate from spatial-relations-2\n3 lesson(s) back: Rv, Trailer from gas-station-4\n7 lesson(s) back: Compress, Gloves from first-aid-room-8"
+  }
+]

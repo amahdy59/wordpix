@@ -1,6 +1,6 @@
 import { memo, useState } from "react";
 import type { Action } from "../../types";
-import { BEDROOM_VOCABULARY } from "../../data/lessons";
+import { BEDROOM_VOCABULARY } from "../../data/courseCatalog";
 import { WordImage } from "../../shared/WordImage";
 import { LessonHeader } from "../../shared/LessonHeader";
 import { PrimaryButton } from "../../shared/PrimaryButton";

@@ -1,0 +1,559 @@
+﻿[
+  {
+    "lessonId": "shades-tones-1",
+    "lessonName": "Shades & Tones 1",
+    "unitId": "shades-tones",
+    "unitName": "Shades & Tones",
+    "unitOrder": 50,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 234,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Crimson",
+      "Scarlet",
+      "Maroon",
+      "Rose",
+      "Blush",
+      "Burgundy",
+      "Ruby",
+      "Cherry",
+      "Raspberry",
+      "Fuchsia",
+      "Navy",
+      "Sky Blue",
+      "Royal Blue",
+      "Aqua",
+      "Mint"
+    ],
+    "targetWordsArabic": [
+      "قرمزي داكن",
+      "قرمزي",
+      "عنابي",
+      "زهرة يُسمّى «روسي»",
+      "يحمرّ خجلًا",
+      "بورغوندي",
+      "ياقوتي",
+      "كرز",
+      "لون أو درجة لونية يُسمّى «راسببيرري»",
+      "زهرة يُسمّى «فوتشسيا»",
+      "كحلي",
+      "أزرق سماء",
+      "لون أو درجة لونية يُسمّى «رويال بلوي»",
+      "لون أو درجة لونية يُسمّى «اكا»",
+      "نعناع"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Shades & Tones to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key shades & tones vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Crimson", "Scarlet", "Maroon"],
+          "scenario": "The learner compares crimson, scarlet, and maroon, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Crimson", "Scarlet", "Maroon"],
+            "expectedAnswer": "Crimson"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares crimson, scarlet, and maroon, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Rose", "Blush", "Burgundy"],
+          "scenario": "The learner compares rose, blush, and burgundy, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Rose", "Blush", "Burgundy"],
+            "expectedAnswer": "Rose"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares rose, blush, and burgundy, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Ruby", "Cherry", "Raspberry"],
+          "scenario": "The learner compares ruby, cherry, and raspberry, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Ruby", "Cherry", "Raspberry"],
+            "expectedAnswer": "Ruby"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares ruby, cherry, and raspberry, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Fuchsia", "Navy", "Sky Blue"],
+          "scenario": "The learner compares fuchsia, navy, and sky blue, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Fuchsia", "Navy", "Sky Blue"],
+            "expectedAnswer": "Fuchsia"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares fuchsia, navy, and sky blue, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Royal Blue", "Aqua", "Mint"],
+          "scenario": "The learner compares royal blue, aqua, and mint, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Royal Blue", "Aqua", "Mint"],
+            "expectedAnswer": "Royal Blue"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares royal blue, aqua, and mint, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Shades & Tones: Short Description",
+      "text": "Maya is in a situation connected to shades & tones. She uses the new words to understand what she sees and what happens next. The learner compares crimson, scarlet, and maroon, noticing differences in appearance, measurement, material, or texture. The learner compares rose, blush, and burgundy, noticing differences in appearance, measurement, material, or texture. The learner compares ruby, cherry, and raspberry, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Shades & Tones. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crimson"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rose"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ruby"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fuchsia"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Royal Blue"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Crimson"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Maroon"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Shrug” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Shades & Tones: In Context",
+      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Shrug, Signal from communication-verbs-4\n3 lesson(s) back: Mumble, Stutter from communication-verbs-2\n7 lesson(s) back: Map, Legend from maps-navigation-1"
+  },
+  {
+    "lessonId": "shades-tones-2",
+    "lessonName": "Shades & Tones 2",
+    "unitId": "shades-tones",
+    "unitName": "Shades & Tones",
+    "unitOrder": 50,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 235,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Emerald",
+      "Olive",
+      "Forest Green",
+      "Seafoam",
+      "Jade",
+      "Gold",
+      "Amber",
+      "Mustard",
+      "Honey",
+      "Lemon",
+      "Peach",
+      "Tangerine",
+      "Rust",
+      "Copper",
+      "Bronze"
+    ],
+    "targetWordsArabic": [
+      "زمردي",
+      "زيتونة",
+      "أخضر غابة",
+      "أخضر مزرق فاتح",
+      "لون يُسمّى «جادي»",
+      "ذهبي",
+      "كهرماني",
+      "لون أو درجة لونية يُسمّى «موستارد»",
+      "عَسَل (عَسَلُ نَحْل)",
+      "لون أو درجة لونية يُسمّى «ليمون»",
+      "خوخي",
+      "لون أو درجة لونية يُسمّى «تانجيريني»",
+      "نبات يُسمّى «روست»",
+      "لون يُسمّى «كوببير»",
+      "برونزي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Shades & Tones to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key shades & tones vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Emerald", "Olive", "Forest Green"],
+          "scenario": "The learner compares emerald, olive, and forest green, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Emerald", "Olive", "Forest Green"],
+            "expectedAnswer": "Emerald"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares emerald, olive, and forest green, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Seafoam", "Jade", "Gold"],
+          "scenario": "The learner compares seafoam, jade, and gold, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Seafoam", "Jade", "Gold"],
+            "expectedAnswer": "Seafoam"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares seafoam, jade, and gold, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Amber", "Mustard", "Honey"],
+          "scenario": "The learner compares amber, mustard, and honey, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Amber", "Mustard", "Honey"],
+            "expectedAnswer": "Amber"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares amber, mustard, and honey, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Lemon", "Peach", "Tangerine"],
+          "scenario": "The learner compares lemon, peach, and tangerine, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Lemon", "Peach", "Tangerine"],
+            "expectedAnswer": "Lemon"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares lemon, peach, and tangerine, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Rust", "Copper", "Bronze"],
+          "scenario": "The learner compares rust, copper, and bronze, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Rust", "Copper", "Bronze"],
+            "expectedAnswer": "Rust"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares rust, copper, and bronze, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Shades & Tones: Mini Dialogue",
+      "text": "Maya is in a situation connected to shades & tones. She uses the new words to understand what she sees and what happens next. The learner compares emerald, olive, and forest green, noticing differences in appearance, measurement, material, or texture. The learner compares seafoam, jade, and gold, noticing differences in appearance, measurement, material, or texture. The learner compares amber, mustard, and honey, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Shades & Tones. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Emerald"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Seafoam"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Amber"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lemon"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rust"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Emerald"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Forest Green"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Crimson” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Shades & Tones: In Context",
+      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Crimson, Scarlet from shades-tones-1\n3 lesson(s) back: Write, Read from communication-verbs-3\n7 lesson(s) back: Telescope, Altimeter from maps-navigation-2"
+  },
+  {
+    "lessonId": "shades-tones-3",
+    "lessonName": "Shades & Tones 3",
+    "unitId": "shades-tones",
+    "unitName": "Shades & Tones",
+    "unitOrder": 50,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 236,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Ivory",
+      "Cream",
+      "Beige",
+      "Tan",
+      "Khaki",
+      "Taupe",
+      "Charcoal",
+      "Slate",
+      "Ash",
+      "Silver",
+      "Plum",
+      "Mauve",
+      "Lilac",
+      "Orchid",
+      "Wine"
+    ],
+    "targetWordsArabic": [
+      "عاجي",
+      "كريمة",
+      "بيج",
+      "أسمر فاتح",
+      "كاكي",
+      "لون يُسمّى «تاوبي»",
+      "فحمي",
+      "لون أو درجة لونية يُسمّى «سلاتي»",
+      "شجرة يُسمّى «اش»",
+      "فضي",
+      "لون أو درجة لونية يُسمّى «بلوم»",
+      "لون يُسمّى «ماوفي»",
+      "نبات يُسمّى «ليلاك»",
+      "أوركيد",
+      "نبيذ"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Shades & Tones to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key shades & tones vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Ivory", "Cream", "Beige"],
+          "scenario": "The learner compares ivory, cream, and beige, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Ivory", "Cream", "Beige"],
+            "expectedAnswer": "Ivory"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares ivory, cream, and beige, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Tan", "Khaki", "Taupe"],
+          "scenario": "The learner compares tan, khaki, and taupe, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Tan", "Khaki", "Taupe"],
+            "expectedAnswer": "Tan"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares tan, khaki, and taupe, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Charcoal", "Slate", "Ash"],
+          "scenario": "The learner compares charcoal, slate, and ash, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Charcoal", "Slate", "Ash"],
+            "expectedAnswer": "Charcoal"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares charcoal, slate, and ash, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Silver", "Plum", "Mauve"],
+          "scenario": "The learner compares silver, plum, and mauve, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Silver", "Plum", "Mauve"],
+            "expectedAnswer": "Silver"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares silver, plum, and mauve, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Lilac", "Orchid", "Wine"],
+          "scenario": "The learner compares lilac, orchid, and wine, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Lilac", "Orchid", "Wine"],
+            "expectedAnswer": "Lilac"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares lilac, orchid, and wine, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Shades & Tones: Simple Message",
+      "text": "Maya is in a situation connected to shades & tones. She uses the new words to understand what she sees and what happens next. The learner compares ivory, cream, and beige, noticing differences in appearance, measurement, material, or texture. The learner compares tan, khaki, and taupe, noticing differences in appearance, measurement, material, or texture. The learner compares charcoal, slate, and ash, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Shades & Tones. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ivory"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tan"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Charcoal"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Silver"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lilac"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Ivory"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Beige"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Emerald” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Shades & Tones: In Context",
+      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Emerald, Olive from shades-tones-2\n3 lesson(s) back: Shrug, Signal from communication-verbs-4\n7 lesson(s) back: Navigation App, Pin from maps-navigation-3"
+  },
+  {
+    "lessonId": "shades-tones-4",
+    "lessonName": "Shades & Tones 4",
+    "unitId": "shades-tones",
+    "unitName": "Shades & Tones",
+    "unitOrder": 50,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 237,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": ["Eggplant", "Periwinkle", "Champagne", "Sand", "Smoke"],
+    "targetWordsArabic": [
+      "شكل يُسمّى «يججبلانت»",
+      "نبات يُسمّى «بيريوينكلي»",
+      "شمبانيا",
+      "رمل",
+      "يدخّن الطعام"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Shades & Tones to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key shades & tones vocabulary in simple context.",
+      "textType": "notice-style text",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Eggplant", "Periwinkle", "Champagne"],
+          "scenario": "The learner compares eggplant, periwinkle, and champagne, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Eggplant", "Periwinkle", "Champagne"],
+            "expectedAnswer": "Eggplant"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares eggplant, periwinkle, and champagne, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Sand", "Smoke"],
+          "scenario": "The learner compares sand and smoke, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Sand", "Smoke"],
+            "expectedAnswer": "Sand"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares sand and smoke, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Shades & Tones: Notice-Style Text",
+      "text": "Maya is in a situation connected to shades & tones. She uses the new words to understand what she sees and what happens next. The learner compares eggplant, periwinkle, and champagne, noticing differences in appearance, measurement, material, or texture. The learner compares sand and smoke, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Shades & Tones. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Eggplant"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sand"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Eggplant"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Champagne"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Ivory” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Shades & Tones: In Context",
+      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Ivory, Cream from shades-tones-3\n3 lesson(s) back: Crimson, Scarlet from shades-tones-1\n7 lesson(s) back: Talk, Speak from communication-verbs-1"
+  }
+]

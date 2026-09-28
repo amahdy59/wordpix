@@ -1,0 +1,751 @@
+﻿[
+  {
+    "lessonId": "amusement-park-1",
+    "lessonName": "The Amusement Park 1",
+    "unitId": "amusement-park",
+    "unitName": "The Amusement Park",
+    "unitOrder": 58,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 267,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Roller Coaster",
+      "Ferris Wheel",
+      "Drop Tower",
+      "Spinning Ride",
+      "Water Slide",
+      "Log Flume",
+      "Pirate Ship",
+      "Loop Ride",
+      "Launch Coaster",
+      "Pendulum Ride",
+      "Carousel",
+      "Bumper Cars",
+      "Go-Karts",
+      "Train Ride",
+      "Tea Cups"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Amusement Park to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the amusement park vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Roller Coaster", "Ferris Wheel", "Drop Tower"],
+          "scenario": "Visitors move through the area and notice roller coaster, ferris wheel, and drop tower. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Roller Coaster", "Ferris Wheel", "Drop Tower"],
+            "expectedAnswer": "Roller Coaster"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice roller coaster, ferris wheel, and drop tower. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Spinning Ride", "Water Slide", "Log Flume"],
+          "scenario": "Visitors move through the area and notice spinning ride, water slide, and log flume. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Spinning Ride", "Water Slide", "Log Flume"],
+            "expectedAnswer": "Spinning Ride"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice spinning ride, water slide, and log flume. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Pirate Ship", "Loop Ride", "Launch Coaster"],
+          "scenario": "Visitors move through the area and notice pirate ship, loop ride, and launch coaster. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Pirate Ship", "Loop Ride", "Launch Coaster"],
+            "expectedAnswer": "Pirate Ship"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice pirate ship, loop ride, and launch coaster. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Pendulum Ride", "Carousel", "Bumper Cars"],
+          "scenario": "Visitors move through the area and notice pendulum ride, carousel, and bumper cars. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Pendulum Ride", "Carousel", "Bumper Cars"],
+            "expectedAnswer": "Pendulum Ride"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice pendulum ride, carousel, and bumper cars. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Go-Karts", "Train Ride", "Tea Cups"],
+          "scenario": "Visitors move through the area and notice go-karts, train ride, and tea cups. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Go-Karts", "Train Ride", "Tea Cups"],
+            "expectedAnswer": "Go-Karts"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice go-karts, train ride, and tea cups. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Amusement Park: Short Description",
+      "text": "Maya is in a situation connected to the amusement park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice roller coaster, ferris wheel, and drop tower. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice spinning ride, water slide, and log flume. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice pirate ship, loop ride, and launch coaster. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Amusement Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Roller Coaster"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Spinning Ride"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pirate Ship"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pendulum Ride"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Go-Karts"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Roller Coaster"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Drop Tower"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “seaweed” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Amusement Park: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: seaweed, sea urchin from beach-5\n3 lesson(s) back: kayaking, paddleboarding from beach-3\n7 lesson(s) back: butterfly stroke, water polo from sports-center-4"
+  },
+  {
+    "lessonId": "amusement-park-2",
+    "lessonName": "The Amusement Park 2",
+    "unitId": "amusement-park",
+    "unitName": "The Amusement Park",
+    "unitOrder": 58,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 268,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Flying Swings",
+      "Boat Ride",
+      "Monorail",
+      "Haunted House",
+      "Fun House",
+      "Ring Toss",
+      "Balloon Dart",
+      "Basketball Throw",
+      "Claw Machine",
+      "Whack-a-Mole",
+      "Strength Test",
+      "Water Gun Game",
+      "Prize Booth",
+      "Stuffed Animal",
+      "Giant Teddy Bear"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Amusement Park to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the amusement park vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Flying Swings", "Boat Ride", "Monorail"],
+          "scenario": "Visitors move through the area and notice flying swings, boat ride, and monorail. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Flying Swings", "Boat Ride", "Monorail"],
+            "expectedAnswer": "Flying Swings"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice flying swings, boat ride, and monorail. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Haunted House", "Fun House", "Ring Toss"],
+          "scenario": "Visitors move through the area and notice haunted house, fun house, and ring toss. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Haunted House", "Fun House", "Ring Toss"],
+            "expectedAnswer": "Haunted House"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice haunted house, fun house, and ring toss. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Balloon Dart", "Basketball Throw", "Claw Machine"],
+          "scenario": "Visitors move through the area and notice balloon dart, basketball throw, and claw machine. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Balloon Dart", "Basketball Throw", "Claw Machine"],
+            "expectedAnswer": "Balloon Dart"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice balloon dart, basketball throw, and claw machine. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Whack-a-Mole", "Strength Test", "Water Gun Game"],
+          "scenario": "Visitors move through the area and notice whack-a-mole, strength test, and water gun game. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Whack-a-Mole", "Strength Test", "Water Gun Game"],
+            "expectedAnswer": "Whack-a-Mole"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice whack-a-mole, strength test, and water gun game. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Prize Booth", "Stuffed Animal", "Giant Teddy Bear"],
+          "scenario": "Visitors move through the area and notice prize booth, stuffed animal, and giant teddy bear. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Prize Booth", "Stuffed Animal", "Giant Teddy Bear"],
+            "expectedAnswer": "Prize Booth"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice prize booth, stuffed animal, and giant teddy bear. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Amusement Park: Mini Dialogue",
+      "text": "Maya is in a situation connected to the amusement park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice flying swings, boat ride, and monorail. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice haunted house, fun house, and ring toss. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice balloon dart, basketball throw, and claw machine. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Amusement Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Flying Swings"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Haunted House"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Balloon Dart"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Whack-a-Mole"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Prize Booth"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Flying Swings"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Monorail"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Roller Coaster” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Amusement Park: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Roller Coaster, Ferris Wheel from amusement-park-1\n3 lesson(s) back: barbecue, bonfire from beach-4\n7 lesson(s) back: athlete, coach from sports-center-5"
+  },
+  {
+    "lessonId": "amusement-park-3",
+    "lessonName": "The Amusement Park 3",
+    "unitId": "amusement-park",
+    "unitName": "The Amusement Park",
+    "unitOrder": 58,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 269,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Cotton Candy",
+      "Funnel Cake",
+      "Corn Dog",
+      "Popcorn",
+      "Candy Apple",
+      "Churro",
+      "Soft Pretzel",
+      "Ice Cream Cone",
+      "Lemonade",
+      "Snow Cone",
+      "Entrance Gate",
+      "Ticket Booth",
+      "Map Board",
+      "Restroom",
+      "First Aid"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Amusement Park to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the amusement park vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Cotton Candy", "Funnel Cake", "Corn Dog"],
+          "scenario": "Visitors move through the area and notice cotton candy, funnel cake, and corn dog. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Cotton Candy", "Funnel Cake", "Corn Dog"],
+            "expectedAnswer": "Cotton Candy"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice cotton candy, funnel cake, and corn dog. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Popcorn", "Candy Apple", "Churro"],
+          "scenario": "Visitors move through the area and notice popcorn, candy apple, and churro. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Popcorn", "Candy Apple", "Churro"],
+            "expectedAnswer": "Popcorn"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice popcorn, candy apple, and churro. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Soft Pretzel", "Ice Cream Cone", "Lemonade"],
+          "scenario": "Visitors move through the area and notice soft pretzel, ice cream cone, and lemonade. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Soft Pretzel", "Ice Cream Cone", "Lemonade"],
+            "expectedAnswer": "Soft Pretzel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice soft pretzel, ice cream cone, and lemonade. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Snow Cone", "Entrance Gate", "Ticket Booth"],
+          "scenario": "Visitors move through the area and notice snow cone, entrance gate, and ticket booth. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Snow Cone", "Entrance Gate", "Ticket Booth"],
+            "expectedAnswer": "Snow Cone"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice snow cone, entrance gate, and ticket booth. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Map Board", "Restroom", "First Aid"],
+          "scenario": "Visitors move through the area and notice map board, restroom, and first aid. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Map Board", "Restroom", "First Aid"],
+            "expectedAnswer": "Map Board"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice map board, restroom, and first aid. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Amusement Park: Simple Message",
+      "text": "Maya is in a situation connected to the amusement park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice cotton candy, funnel cake, and corn dog. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice popcorn, candy apple, and churro. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice soft pretzel, ice cream cone, and lemonade. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Amusement Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cotton Candy"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Popcorn"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Soft Pretzel"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Snow Cone"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Map Board"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Cotton Candy"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Corn Dog"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Flying Swings” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Amusement Park: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Flying Swings, Boat Ride from amusement-park-2\n3 lesson(s) back: seaweed, sea urchin from beach-5\n7 lesson(s) back: sand, ocean from beach-1"
+  },
+  {
+    "lessonId": "amusement-park-4",
+    "lessonName": "The Amusement Park 4",
+    "unitId": "amusement-park",
+    "unitName": "The Amusement Park",
+    "unitOrder": 58,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 270,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Lost and Found",
+      "Souvenir Shop",
+      "Photo Spot",
+      "Stage",
+      "Fountain",
+      "Parade",
+      "Fireworks",
+      "Mascot",
+      "Stilt Walker",
+      "Juggler",
+      "Face Painter",
+      "Street Performer",
+      "Magician",
+      "Dance Show",
+      "Marching Band"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Amusement Park to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the amusement park vocabulary in simple context.",
+      "textType": "notice-style text",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Lost and Found", "Souvenir Shop", "Photo Spot"],
+          "scenario": "Visitors move through the area and notice lost and found, souvenir shop, and photo spot. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Lost and Found", "Souvenir Shop", "Photo Spot"],
+            "expectedAnswer": "Lost and Found"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice lost and found, souvenir shop, and photo spot. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Stage", "Fountain", "Parade"],
+          "scenario": "Visitors move through the area and notice stage, fountain, and parade. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Stage", "Fountain", "Parade"],
+            "expectedAnswer": "Stage"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice stage, fountain, and parade. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Fireworks", "Mascot", "Stilt Walker"],
+          "scenario": "Visitors move through the area and notice fireworks, mascot, and stilt walker. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Fireworks", "Mascot", "Stilt Walker"],
+            "expectedAnswer": "Fireworks"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice fireworks, mascot, and stilt walker. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Juggler", "Face Painter", "Street Performer"],
+          "scenario": "Visitors move through the area and notice juggler, face painter, and street performer. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Juggler", "Face Painter", "Street Performer"],
+            "expectedAnswer": "Juggler"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice juggler, face painter, and street performer. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Magician", "Dance Show", "Marching Band"],
+          "scenario": "Visitors move through the area and notice magician, dance show, and marching band. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Magician", "Dance Show", "Marching Band"],
+            "expectedAnswer": "Magician"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice magician, dance show, and marching band. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Amusement Park: Notice-Style Text",
+      "text": "Maya is in a situation connected to the amusement park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice lost and found, souvenir shop, and photo spot. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice stage, fountain, and parade. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice fireworks, mascot, and stilt walker. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Amusement Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lost and Found"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stage"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fireworks"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Juggler"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Magician"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Lost and Found"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Photo Spot"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Cotton Candy” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Amusement Park: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Cotton Candy, Funnel Cake from amusement-park-3\n3 lesson(s) back: Roller Coaster, Ferris Wheel from amusement-park-1\n7 lesson(s) back: beach chair, cooler from beach-2"
+  },
+  {
+    "lessonId": "amusement-park-5",
+    "lessonName": "The Amusement Park 5",
+    "unitId": "amusement-park",
+    "unitName": "The Amusement Park",
+    "unitOrder": 58,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 271,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Go-Kart",
+      "Swing Ride",
+      "Arcade",
+      "Photo Booth",
+      "Stage Show",
+      "Parade Float",
+      "Ticket",
+      "Wristband",
+      "Park Map",
+      "Souvenir"
+    ],
+    "targetWordsArabic": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+    "usage": {
+      "goal": "Use the vocabulary from The Amusement Park to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the amusement park vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Go-Kart", "Swing Ride", "Arcade"],
+          "scenario": "Visitors move through the area and notice go-kart, swing ride, and arcade. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Go-Kart", "Swing Ride", "Arcade"],
+            "expectedAnswer": "Go-Kart"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice go-kart, swing ride, and arcade. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Photo Booth", "Stage Show", "Parade Float"],
+          "scenario": "Visitors move through the area and notice photo booth, stage show, and parade float. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Photo Booth", "Stage Show", "Parade Float"],
+            "expectedAnswer": "Photo Booth"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice photo booth, stage show, and parade float. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Ticket", "Wristband", "Park Map"],
+          "scenario": "Visitors move through the area and notice ticket, wristband, and park map. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Ticket", "Wristband", "Park Map"],
+            "expectedAnswer": "Ticket"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice ticket, wristband, and park map. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": "Souvenir",
+          "scenario": "Visitors move through the area and notice souvenir. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": "Souvenir",
+            "expectedAnswer": "Souvenir"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice souvenir. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Amusement Park: Short Description",
+      "text": "Maya is in a situation connected to the amusement park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice go-kart, swing ride, and arcade. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice photo booth, stage show, and parade float. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice ticket, wristband, and park map. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Amusement Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Go-Kart"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Photo Booth"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ticket"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Souvenir"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Go-Kart"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Arcade"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Lost and Found” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Amusement Park: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Lost and Found, Souvenir Shop from amusement-park-4\n3 lesson(s) back: Flying Swings, Boat Ride from amusement-park-2\n7 lesson(s) back: kayaking, paddleboarding from beach-3"
+  }
+]

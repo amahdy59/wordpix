@@ -17,6 +17,7 @@ import { AuthModal } from "../../features/auth/AuthModal";
 import { staggerContainer, staggerItem } from "../shared/animations";
 import { LearnerAvatar } from "../shared/LearnerAvatar";
 import { useI18n } from "../context/I18nContext";
+import { Button, EmptyState, PageContainer, PageHeader, Surface } from "../shared";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -61,117 +62,153 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
   }, [memoryValues]);
 
   const STATS = [
-    { value: `${strongCount}`, label: "Strong Words", icon: ShieldCheck, color: "text-wp-green" },
-    { value: `${familiarCount}`, label: "Familiar Words", icon: Brain, color: "text-wp-blue" },
-    { value: `${learningCount}`, label: "Learning Words", icon: BookOpen, color: "text-wp-amber" },
-    { value: `${recallAccuracy}%`, label: "Recall Accuracy", icon: Target, color: "text-primary" },
-    { value: `${dueCount}`, label: "Due for Review", icon: Sparkles, color: "text-wp-teal" },
     {
-      value: `${progress.streak} days`,
-      label: "Active Streak",
+      value: `${strongCount}`,
+      label: t("profile.strongWords"),
+      icon: ShieldCheck,
+      color: "text-wp-green",
+    },
+    {
+      value: `${familiarCount}`,
+      label: t("profile.familiarWords"),
+      icon: Brain,
+      color: "text-wp-blue",
+    },
+    {
+      value: `${learningCount}`,
+      label: t("profile.learningWords"),
+      icon: BookOpen,
+      color: "text-wp-amber",
+    },
+    {
+      value: `${recallAccuracy}%`,
+      label: t("profile.recallAccuracy"),
+      icon: Target,
+      color: "text-primary",
+    },
+    {
+      value: `${dueCount}`,
+      label: t("profile.dueForReview"),
+      icon: Sparkles,
+      color: "text-wp-teal",
+    },
+    {
+      value: t("profile.dayCount", { count: progress.streak }),
+      label: t("profile.activeStreak"),
       icon: Flame,
       color: "text-wp-amber",
     },
   ];
 
   return (
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      animate="visible"
-      className="flex flex-col gap-6 max-w-3xl mx-auto w-full p-5 md:p-8 pb-8"
-    >
-      {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
+    <PageContainer size="wide">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        animate="visible"
+        className="flex w-full flex-col gap-6 pb-8"
+      >
+        {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
 
-      {/* Profile header with Settings Button */}
-      <header className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-        <motion.div
-          variants={staggerItem}
-          className="flex flex-col md:flex-row items-center md:items-start gap-4"
-        >
-          <div className="relative size-20 md:size-24 shrink-0 rounded-full overflow-hidden border-[3px] border-primary shadow-wp-xs">
-            <LearnerAvatar />
-          </div>
+        <PageHeader
+          variant="plain"
+          title={t("profile.title")}
+          subtitle={t("profile.levelGoal", { level: progress.englishLevel, goal: progress.goal })}
+        />
 
-          <div className="flex flex-col items-center md:items-start gap-1">
-            <h1 className="font-sans font-black text-foreground text-2xl md:text-3xl">
-              {t("profile.title")}
-            </h1>
-            <p className="font-sans font-medium text-muted-foreground text-sm">
-              {t("profile.levelGoal", { level: progress.englishLevel, goal: progress.goal })}
-            </p>
-            <div className="flex items-center gap-2 mt-1">
-              <span className="bg-secondary text-primary font-sans font-semibold text-xs px-3 py-1 rounded-full border border-primary/20 flex items-center gap-1.5">
-                <Flame className="size-3.5 text-wp-amber" />
-                {t("profile.streakActive", { streak: progress.streak })}
-              </span>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Account actions; global appearance and accessibility live in the sidebar. */}
-        <motion.div variants={staggerItem} className="flex flex-wrap items-center gap-2.5">
-          {user ? (
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.95 }}
-              type="button"
-              onClick={signOut}
-              className="px-4 min-h-[44px] rounded-2xl bg-primary/10 text-primary font-sans font-bold text-xs flex items-center gap-2 shadow-wp-xs hover:bg-primary/20 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+        <div className="grid gap-5 xl:grid-cols-[minmax(18rem,0.72fr)_minmax(0,1.28fr)] xl:items-stretch">
+          {/* Profile identity and account actions */}
+          <Surface
+            as="header"
+            variant="card"
+            radius="xl"
+            padding="md"
+            className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between xl:flex-col xl:items-stretch"
+          >
+            <motion.div
+              variants={staggerItem}
+              className="flex flex-col md:flex-row items-center md:items-start gap-4"
             >
-              <LogOut className="size-4" />
-              <span className="hidden md:inline">{user.email}</span>
-            </motion.button>
-          ) : (
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.95 }}
-              type="button"
-              onClick={() => setShowAuthModal(true)}
-              className="px-4 min-h-[44px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-xs flex items-center gap-2 shadow-wp-xs hover:opacity-90 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-            >
-              <UserIcon className="size-4" />
-              <span>{t("profile.signInSync")}</span>
-            </motion.button>
-          )}
-        </motion.div>
-      </header>
+              <div className="relative size-20 md:size-24 shrink-0 rounded-full overflow-hidden border-[3px] border-primary shadow-wp-xs">
+                <LearnerAvatar />
+              </div>
 
-      {/* Stats grid */}
-      <motion.section variants={staggerItem} aria-label={t("profile.statsAria")}>
-        <h2 className="font-sans font-bold text-foreground text-lg mb-3">
-          {t("profile.retentionMeasures")}
-        </h2>
-        {memoryValues.length === 0 ? (
-          <div className="rounded-2xl border border-border bg-wp-card p-5 text-center">
-            <Brain className="mx-auto size-7 text-primary" aria-hidden />
-            <p className="mt-2 font-bold text-foreground">{t("profile.statsEmptyTitle")}</p>
-            <p className="mx-auto mt-1 max-w-md text-sm leading-relaxed text-muted-foreground">
-              {t("profile.statsEmptyHint")}
-            </p>
-          </div>
-        ) : (
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-            {STATS.map(({ value, label, icon: Icon, color }) => (
-              <motion.div
-                whileHover={{ scale: 1.03, y: -2 }}
-                key={label}
-                className="flex flex-col items-center gap-1.5 rounded-2xl border border-border bg-wp-card p-3.5 text-center shadow-wp-xs transition-colors"
-              >
-                <div className="flex size-9 items-center justify-center rounded-xl bg-secondary">
-                  <Icon className={`size-4 ${color}`} />
+              <div className="flex flex-col items-center md:items-start gap-1">
+                <div className="flex items-center gap-2 mt-1">
+                  <span className="bg-secondary text-primary font-sans font-semibold text-xs px-3 py-1 rounded-full border border-primary/20 flex items-center gap-1.5">
+                    <Flame className="size-3.5 text-wp-amber" />
+                    {t("profile.streakActive", { streak: progress.streak })}
+                  </span>
                 </div>
-                <p className="mt-0.5 font-sans text-xl font-black leading-none text-foreground">
-                  {value}
-                </p>
-                <p className="text-center font-sans text-xs font-medium leading-tight text-muted-foreground">
-                  {label}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        )}
-      </motion.section>
-    </motion.div>
+              </div>
+            </motion.div>
+
+            {/* Account actions; global appearance and accessibility live in the sidebar. */}
+            <motion.div variants={staggerItem} className="flex flex-wrap items-center gap-2.5">
+              {user ? (
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  onClick={signOut}
+                  iconLeft={<LogOut className="size-4" aria-hidden />}
+                >
+                  <span className="hidden md:inline">{user.email}</span>
+                </Button>
+              ) : (
+                <Button
+                  size="sm"
+                  onClick={() => setShowAuthModal(true)}
+                  iconLeft={<UserIcon className="size-4" aria-hidden />}
+                >
+                  {t("profile.signInSync")}
+                </Button>
+              )}
+            </motion.div>
+          </Surface>
+
+          {/* Stats grid */}
+          <motion.section
+            variants={staggerItem}
+            aria-label={t("profile.statsAria")}
+            className="flex min-w-0 flex-col"
+          >
+            <h2 className="mb-3 font-sans text-lg font-bold text-foreground">
+              {t("profile.retentionMeasures")}
+            </h2>
+            {memoryValues.length === 0 ? (
+              <EmptyState
+                titleAs="p"
+                title={t("profile.statsEmptyTitle")}
+                description={t("profile.statsEmptyHint")}
+                icon={<Brain className="size-6" aria-hidden />}
+                className="min-h-56 flex-1"
+              />
+            ) : (
+              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                {STATS.map(({ value, label, icon: Icon, color }) => (
+                  <Surface
+                    key={label}
+                    variant="card"
+                    radius="lg"
+                    padding="xs"
+                    className="flex flex-col items-center gap-1.5 text-center"
+                  >
+                    <div className="flex size-9 items-center justify-center rounded-xl bg-secondary">
+                      <Icon className={`size-4 ${color}`} />
+                    </div>
+                    <p className="mt-0.5 font-sans text-xl font-black leading-none text-foreground">
+                      {value}
+                    </p>
+                    <p className="text-center font-sans text-xs font-medium leading-tight text-muted-foreground">
+                      {label}
+                    </p>
+                  </Surface>
+                ))}
+              </div>
+            )}
+          </motion.section>
+        </div>
+      </motion.div>
+    </PageContainer>
   );
 });

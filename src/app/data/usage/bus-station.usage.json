@@ -1,0 +1,646 @@
+﻿[
+  {
+    "lessonId": "bus-station-1",
+    "lessonName": "The Bus Station 1",
+    "unitId": "bus-station",
+    "unitName": "The Bus Station",
+    "unitOrder": 92,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 429,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "City Bus",
+      "Double Decker",
+      "Coach",
+      "Minibus",
+      "Shuttle",
+      "School Bus",
+      "Trolley",
+      "Articulated Bus",
+      "Night Bus",
+      "Express Bus",
+      "Platform",
+      "Shelter",
+      "Bench",
+      "Ticket Booth",
+      "Schedule"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «كيتي بوس»",
+      "حافلة ذات طابقين",
+      "حافلة سفر",
+      "حافلة صغيرة",
+      "حافلة نقل",
+      "مركبة يُسمّى «ستشوول بوس»",
+      "حافلة ترولي",
+      "حافلة مفصلية",
+      "حافلة ليلية",
+      "حافلة سريعة",
+      "رصيف",
+      "مأوى",
+      "مقعد",
+      "مكان يُسمّى «تيكيت بووث»",
+      "جدول"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Bus Station to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the bus station vocabulary in connected everyday context.",
+      "textType": "email",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["City Bus", "Double Decker", "Coach"],
+          "scenario": "The traveler moves through the journey using or noticing city bus, double decker, and coach. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["City Bus", "Double Decker", "Coach"],
+            "expectedAnswer": "City Bus"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing city bus, double decker, and coach. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Minibus", "Shuttle", "School Bus"],
+          "scenario": "The traveler moves through the journey using or noticing minibus, shuttle, and school bus. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Minibus", "Shuttle", "School Bus"],
+            "expectedAnswer": "Minibus"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing minibus, shuttle, and school bus. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Trolley", "Articulated Bus", "Night Bus"],
+          "scenario": "The customer or traveler compares the trolley, articulated bus, and night bus, thinking about where and why each type is used.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Trolley", "Articulated Bus", "Night Bus"],
+            "expectedAnswer": "Trolley"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The customer or traveler compares the trolley, articulated bus, and night bus, thinking about where and why each type is used. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Express Bus", "Platform", "Shelter"],
+          "scenario": "The traveler moves through the journey using or noticing express bus, platform, and shelter. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Express Bus", "Platform", "Shelter"],
+            "expectedAnswer": "Express Bus"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing express bus, platform, and shelter. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Bench", "Ticket Booth", "Schedule"],
+          "scenario": "The traveler moves through the journey using or noticing bench, ticket booth, and schedule. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Bench", "Ticket Booth", "Schedule"],
+            "expectedAnswer": "Bench"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing bench, ticket booth, and schedule. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bus Station: Email",
+      "text": "Omar has an everyday task connected to the bus station. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing city bus, double decker, and coach. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing minibus, shuttle, and school bus. Each term marks a different part of the travel process. The customer or traveler compares the trolley, articulated bus, and night bus, thinking about where and why each type is used. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Bus Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "City Bus"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Minibus"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Trolley"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Express Bus"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bench"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "City Bus"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Minibus"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Grease” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Bus Station: In Context",
+      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Grease, Stand from bicycle-shop-4\n3 lesson(s) back: Seat, Brake from bicycle-shop-2\n7 lesson(s) back: Gym Gloves, Wrist Wrap from gym-4"
+  },
+  {
+    "lessonId": "bus-station-2",
+    "lessonName": "The Bus Station 2",
+    "unitId": "bus-station",
+    "unitName": "The Bus Station",
+    "unitOrder": 92,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 430,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Map",
+      "Vending Machine",
+      "Trash Can",
+      "Restroom",
+      "Clock",
+      "Ticket",
+      "Pass",
+      "Fare",
+      "Tap Card",
+      "Machine",
+      "Receipt",
+      "Zone",
+      "Transfer",
+      "Day Pass",
+      "Student Discount"
+    ],
+    "targetWordsArabic": [
+      "خريطة",
+      "آلة يُسمّى «فيندينج ماتشيني»",
+      "سلة مهملات",
+      "دورة مياه",
+      "سَاعَةُ حَائِط / سَاعَة",
+      "تذكرة",
+      "بطاقة مرور",
+      "أجرة",
+      "بطاقة مواصلات لا تلامسية",
+      "آلة",
+      "إيصال",
+      "منطقة",
+      "تحويل",
+      "تذكرة يومية",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستودينت ديسكوونت»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Bus Station to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the bus station vocabulary in connected everyday context.",
+      "textType": "personal message",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Map", "Vending Machine", "Trash Can"],
+          "scenario": "The traveler moves through the journey using or noticing map, vending machine, and trash can. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Map", "Vending Machine", "Trash Can"],
+            "expectedAnswer": "Map"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing map, vending machine, and trash can. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Restroom", "Clock", "Ticket"],
+          "scenario": "The traveler moves through the journey using or noticing restroom, clock, and ticket. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Restroom", "Clock", "Ticket"],
+            "expectedAnswer": "Restroom"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing restroom, clock, and ticket. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Pass", "Fare", "Tap Card"],
+          "scenario": "The traveler moves through the journey using or noticing pass, fare, and tap card. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Pass", "Fare", "Tap Card"],
+            "expectedAnswer": "Pass"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing pass, fare, and tap card. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Machine", "Receipt", "Zone"],
+          "scenario": "The traveler moves through the journey using or noticing machine, receipt, and zone. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Machine", "Receipt", "Zone"],
+            "expectedAnswer": "Machine"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing machine, receipt, and zone. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Transfer", "Day Pass", "Student Discount"],
+          "scenario": "The traveler moves through the journey using or noticing transfer, day pass, and student discount. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Transfer", "Day Pass", "Student Discount"],
+            "expectedAnswer": "Transfer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing transfer, day pass, and student discount. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bus Station: Personal Message",
+      "text": "Omar has an everyday task connected to the bus station. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing map, vending machine, and trash can. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing restroom, clock, and ticket. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing pass, fare, and tap card. Each term marks a different part of the travel process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Bus Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Map"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Restroom"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pass"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Machine"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Transfer"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Map"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Restroom"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “City Bus” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Bus Station: In Context",
+      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: City Bus, Double Decker from bus-station-1\n3 lesson(s) back: Jersey, Shorts from bicycle-shop-3\n7 lesson(s) back: Bench Press, Sit-Up from gym-5"
+  },
+  {
+    "lessonId": "bus-station-3",
+    "lessonName": "The Bus Station 3",
+    "unitId": "bus-station",
+    "unitName": "The Bus Station",
+    "unitOrder": 92,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 431,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Seat",
+      "Aisle",
+      "Handrail",
+      "Bell",
+      "Stop Button",
+      "Window",
+      "Door",
+      "Driver Seat",
+      "Wheelchair Ramp",
+      "Luggage Rack",
+      "Driver",
+      "Passenger",
+      "Commuter",
+      "Inspector",
+      "Attendant"
+    ],
+    "targetWordsArabic": [
+      "مقعد",
+      "ممر",
+      "درابزين",
+      "جرس",
+      "زر طلب التوقف",
+      "نَافِذَة (شُبَّاك)",
+      "بَاب",
+      "مقعد السائق",
+      "منحدر للكراسي المتحركة",
+      "مصطلح مرتبط بالموضوع يُسمّى «لوججاجي راك»",
+      "سائق",
+      "راكب",
+      "متنقل يومي",
+      "مفتش",
+      "مرافق خدمة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Bus Station to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the bus station vocabulary in connected everyday context.",
+      "textType": "short dialogue",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Seat", "Aisle", "Handrail"],
+          "scenario": "The traveler moves through the journey using or noticing seat, aisle, and handrail. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Seat", "Aisle", "Handrail"],
+            "expectedAnswer": "Seat"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing seat, aisle, and handrail. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bell", "Stop Button", "Window"],
+          "scenario": "The traveler moves through the journey using or noticing bell, stop button, and window. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Bell", "Stop Button", "Window"],
+            "expectedAnswer": "Bell"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing bell, stop button, and window. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Door", "Driver Seat", "Wheelchair Ramp"],
+          "scenario": "The traveler moves through the journey using or noticing door, driver seat, and wheelchair ramp. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Door", "Driver Seat", "Wheelchair Ramp"],
+            "expectedAnswer": "Door"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing door, driver seat, and wheelchair ramp. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Luggage Rack", "Driver", "Passenger"],
+          "scenario": "The traveler moves through the journey using or noticing luggage rack, driver, and passenger. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Luggage Rack", "Driver", "Passenger"],
+            "expectedAnswer": "Luggage Rack"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing luggage rack, driver, and passenger. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Commuter", "Inspector", "Attendant"],
+          "scenario": "The traveler moves through the journey using or noticing commuter, inspector, and attendant. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Commuter", "Inspector", "Attendant"],
+            "expectedAnswer": "Commuter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing commuter, inspector, and attendant. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bus Station: Short Dialogue",
+      "text": "Omar has an everyday task connected to the bus station. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing seat, aisle, and handrail. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing bell, stop button, and window. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing door, driver seat, and wheelchair ramp. Each term marks a different part of the travel process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Bus Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Seat"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bell"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Door"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Luggage Rack"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Commuter"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Seat"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Bell"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Map” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Bus Station: In Context",
+      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Map, Vending Machine from bus-station-2\n3 lesson(s) back: Grease, Stand from bicycle-shop-4\n7 lesson(s) back: Sauna, Swimming Pool from gym-6"
+  },
+  {
+    "lessonId": "bus-station-4",
+    "lessonName": "The Bus Station 4",
+    "unitId": "bus-station",
+    "unitName": "The Bus Station",
+    "unitOrder": 92,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 432,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Tourist",
+      "Student",
+      "Elderly",
+      "Parent",
+      "Child",
+      "Route Number",
+      "Destination Sign",
+      "Timetable",
+      "Delay Notice",
+      "Stop Sign",
+      "Bus Lane",
+      "No Entry",
+      "Next Stop",
+      "Final Stop",
+      "Detour"
+    ],
+    "targetWordsArabic": [
+      "سائح",
+      "طالب",
+      "مسن",
+      "والد",
+      "طفل",
+      "رقم الخط",
+      "لافتة الوجهة",
+      "جدول مواعيد",
+      "إشعار بالتأخير",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستوب سيجن»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بوس لاني»",
+      "ممنوع الدخول",
+      "المحطة التالية",
+      "المحطة النهائية",
+      "تحويلة طريق"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Bus Station to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the bus station vocabulary in connected everyday context.",
+      "textType": "everyday description",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Tourist", "Student", "Elderly"],
+          "scenario": "The traveler moves through the journey using or noticing tourist, student, and elderly. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Tourist", "Student", "Elderly"],
+            "expectedAnswer": "Tourist"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing tourist, student, and elderly. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Parent", "Child", "Route Number"],
+          "scenario": "The traveler moves through the journey using or noticing parent, child, and route number. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Parent", "Child", "Route Number"],
+            "expectedAnswer": "Parent"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing parent, child, and route number. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Destination Sign", "Timetable", "Delay Notice"],
+          "scenario": "The traveler moves through the journey using or noticing destination sign, timetable, and delay notice. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Destination Sign", "Timetable", "Delay Notice"],
+            "expectedAnswer": "Destination Sign"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing destination sign, timetable, and delay notice. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Stop Sign", "Bus Lane", "No Entry"],
+          "scenario": "The traveler moves through the journey using or noticing stop sign, bus lane, and no entry. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Stop Sign", "Bus Lane", "No Entry"],
+            "expectedAnswer": "Stop Sign"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing stop sign, bus lane, and no entry. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Next Stop", "Final Stop", "Detour"],
+          "scenario": "The traveler moves through the journey using or noticing next stop, final stop, and detour. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Next Stop", "Final Stop", "Detour"],
+            "expectedAnswer": "Next Stop"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing next stop, final stop, and detour. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bus Station: Everyday Description",
+      "text": "Omar has an everyday task connected to the bus station. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing tourist, student, and elderly. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing parent, child, and route number. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing destination sign, timetable, and delay notice. Each term marks a different part of the travel process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Bus Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tourist"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Parent"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Destination Sign"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stop Sign"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Next Stop"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Tourist"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Parent"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Seat” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Bus Station: In Context",
+      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Seat, Aisle from bus-station-3\n3 lesson(s) back: City Bus, Double Decker from bus-station-1\n7 lesson(s) back: Road Bike, Mountain Bike from bicycle-shop-1"
+  }
+]

@@ -15,7 +15,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { COURSE_UNITS, type CourseUnit } from "../data/lessons";
+import { COURSE_UNITS, type CourseUnit } from "../data/courseCatalog";
 import { CEFR_STAGES, CURRICULUM_SEQUENCE } from "../data/curriculumSequence";
 import { Badge, ProgressBar, FilterChip, PageHeader } from "../shared";
 import { staggerContainer, staggerItem } from "../shared/animations";
@@ -211,7 +211,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
       variants={staggerContainer}
       initial="hidden"
       animate="visible"
-      className="flex flex-col gap-6 max-w-5xl mx-auto w-full p-0 sm:p-2 lg:p-4"
+      className="wp-container-wide flex flex-col gap-5 sm:gap-6"
     >
       {/* Page Header */}
       <motion.div variants={staggerItem}>
@@ -289,7 +289,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
         <div
           role="radiogroup"
           aria-label={t("explore.collectionNavigation")}
-          className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar snap-x"
+          className="flex flex-wrap items-center gap-2 pb-1"
         >
           <FilterChip
             label={t("explore.allLevels")}
@@ -321,7 +321,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
         <div
           role="radiogroup"
           aria-label={t("explore.masteryFilterAria")}
-          className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar text-xs"
+          className="flex flex-wrap items-center gap-2 pb-1 text-xs"
         >
           <span className="text-muted-foreground font-semibold text-xs shrink-0 ps-1">
             {t("explore.filterStatus")}
@@ -469,7 +469,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.25, ease: "easeInOut" }}
-                      className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 pt-2"
+                      className="grid grid-cols-1 gap-4 pt-2 md:grid-cols-2 xl:grid-cols-3"
                     >
                       {units.map((unit) => (
                         <UnitCard
@@ -489,7 +489,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
         </div>
       ) : (
         /* Flat Filtered Grid */
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
           {filteredUnits.map((unit) => (
             <UnitCard
               key={unit.id}

@@ -1,0 +1,763 @@
+﻿[
+  {
+    "lessonId": "living-room-1",
+    "lessonName": "The Living Room 1",
+    "unitId": "living-room",
+    "unitName": "The Living Room",
+    "unitOrder": 9,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 33,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Sofa",
+      "Armchair",
+      "Coffee Table",
+      "Side Table",
+      "Ottoman",
+      "Rocking Chair",
+      "Dining Table",
+      "Dining Chair",
+      "Bench",
+      "Stool",
+      "Bookshelf",
+      "TV Stand",
+      "Cabinet",
+      "Sideboard",
+      "Shelf"
+    ],
+    "targetWordsArabic": [
+      "أَرِيكَة (كَنَبَة)",
+      "كُرْسِيٌّ بِذِرَاعَيْن (فُوتِيه)",
+      "طَاوِلَةُ قَهْوَة (تَرَابِيزَةُ الصَّالُون)",
+      "طَاوِلَةٌ جَانِبِيَّة (تَرَابِيزَة صَغِيرَة)",
+      "مَقْعَدُ قَدَمَيْن (بَفّ / عُثْمَانِيَّة)",
+      "كُرْسِيٌّ هَزَّاز",
+      "طَاوِلَةُ الطَّعَام (سُفْرَة)",
+      "كُرْسِيُّ طَعَام (كُرْسِيُّ سُفْرَة)",
+      "مَقْعَدٌ طَوِيل (دِكَّة / بَانْك)",
+      "كُرْسِيٌّ صَغِير (طَبْلِيَّة / مَقْعَدٌ بِلَا ظَهْر)",
+      "رَفُّ الكُتُب / مَكْتَبَةٌ حَائِطِيَّة",
+      "طَاوِلَةُ التِّلْفَاز (مَكْتَبَةُ التِّلْفَاز)",
+      "دُولابٌ صَغِير (خِزَانَة)",
+      "بُوفَيْه (خِزَانَةُ أَدَوَاتِ المَائِدَة)",
+      "رَفّ"
+    ],
+    "usage": {
+      "goal": "Name living-room objects and talk about simple activities at home.",
+      "canDoStatement": "I can name living-room objects and talk about simple activities at home",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sofa", "Armchair", "Coffee Table"],
+          "scenario": "In the living room, I can see, use, or do sofa, armchair, and coffee table.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Sofa", "Armchair", "Coffee Table"],
+            "expectedAnswer": "Sofa"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do sofa, armchair, and coffee table. Emphasize sofa, armchair, and coffee table and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Side Table", "Ottoman", "Rocking Chair"],
+          "scenario": "In the living room, I can see, use, or do side table, ottoman, and rocking chair.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Side Table", "Ottoman", "Rocking Chair"],
+            "expectedAnswer": "Side Table"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do side table, ottoman, and rocking chair. Emphasize side table, ottoman, and rocking chair and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Dining Table", "Dining Chair", "Bench"],
+          "scenario": "In the living room, I can see, use, or do dining table, dining chair, and bench.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Dining Table", "Dining Chair", "Bench"],
+            "expectedAnswer": "Dining Table"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do dining table, dining chair, and bench. Emphasize dining table, dining chair, and bench and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Stool", "Bookshelf", "TV Stand"],
+          "scenario": "In the living room, I can see, use, or do stool, bookshelf, and tv stand.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Stool", "Bookshelf", "TV Stand"],
+            "expectedAnswer": "Stool"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do stool, bookshelf, and tv stand. Emphasize stool, bookshelf, and tv stand and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Cabinet", "Sideboard", "Shelf"],
+          "scenario": "In the living room, I can see, use, or do cabinet, sideboard, and shelf.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Cabinet", "Sideboard", "Shelf"],
+            "expectedAnswer": "Cabinet"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do cabinet, sideboard, and shelf. Emphasize cabinet, sideboard, and shelf and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Living Room Mini Story",
+      "text": "I am in the living room. I can see sofa, armchair, and coffee table. I also notice side table, ottoman, and rocking chair. I point to each item and say its English name. Then I use one more word: dining table. We also remember earlier words such as cheese and rice.",
+      "imageBrief": "One uncluttered the living room scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Sofa"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Side Table"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Dining Table"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Stool"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Cabinet"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Sofa"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Armchair"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Rocking Chair"
+      }
+    ],
+    "video": {
+      "title": "The Living Room: See It, Say It",
+      "idea": "30–50 second contextual video set in a living room. Show sofa, armchair, coffee table, side table, and ottoman naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see sofa, armchair, and coffee table. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Cheese, Rice from kitchen-5\n3 lesson(s) back: Can Opener, Corkscrew from kitchen-3\n7 lesson(s) back: Face Cream, Sunscreen from bathroom-5"
+  },
+  {
+    "lessonId": "living-room-2",
+    "lessonName": "The Living Room 2",
+    "unitId": "living-room",
+    "unitName": "The Living Room",
+    "unitOrder": 9,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 34,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Drawer",
+      "Magazine Rack",
+      "Display Case",
+      "Coat Rack",
+      "Shoe Rack",
+      "Television",
+      "Remote Control",
+      "Speaker",
+      "Game Console",
+      "DVD Player",
+      "Sound Bar",
+      "Wi-Fi Router",
+      "Power Strip",
+      "Cable",
+      "Plug"
+    ],
+    "targetWordsArabic": [
+      "دُرْج",
+      "حَامِلُ مَجَلَّات",
+      "خِزَانَةُ عَرْض (فَتْرِينَة)",
+      "شَمَّاعَةُ مَعَاطِف (عَلَّاقَةُ مَعَاطِف)",
+      "رَفُّ الأَحْذِيَة (جَزَّامَة)",
+      "تِلْفَاز (تِلِفِزْيُون)",
+      "جِهَازُ التَّحَكُّم عَنْ بُعْد (رِيمُوت)",
+      "مُكَبِّرُ صَوْت (سَبِيكَر / سَمَّاعَة)",
+      "جِهَازُ أَلْعَابِ فِيدْيُو (بْلَايْ سْتِيشِن / كُونْسُول)",
+      "مُشَغِّلُ أَقْرَاصِ الدِّي فِي دِي",
+      "مُكَبِّرُ صَوْتٍ شَرِيطِيّ (سَاوَنْد بَار)",
+      "جِهَازُ التَّوْجِيه (رَاوْتَر الوَاي فَاي)",
+      "مُشْتَرَكُ كَهْرَبَاء (تَوْصِيلَة)",
+      "كَابِل / سِلْكُ كَهْرَبَاء",
+      "قَابِسُ كَهْرَبَاء (فِيشَة)"
+    ],
+    "usage": {
+      "goal": "Name living-room objects and talk about simple activities at home.",
+      "canDoStatement": "I can name living-room objects and talk about simple activities at home",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Drawer", "Magazine Rack", "Display Case"],
+          "scenario": "In the living room, I can see, use, or do drawer, magazine rack, and display case.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Drawer", "Magazine Rack", "Display Case"],
+            "expectedAnswer": "Drawer"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do drawer, magazine rack, and display case. Emphasize drawer, magazine rack, and display case and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Coat Rack", "Shoe Rack", "Television"],
+          "scenario": "In the living room, I can see, use, or do coat rack, shoe rack, and television.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Coat Rack", "Shoe Rack", "Television"],
+            "expectedAnswer": "Coat Rack"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do coat rack, shoe rack, and television. Emphasize coat rack, shoe rack, and television and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Remote Control", "Speaker", "Game Console"],
+          "scenario": "In the living room, I can see, use, or do remote control, speaker, and game console.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Remote Control", "Speaker", "Game Console"],
+            "expectedAnswer": "Remote Control"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do remote control, speaker, and game console. Emphasize remote control, speaker, and game console and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["DVD Player", "Sound Bar", "Wi-Fi Router"],
+          "scenario": "In the living room, I can see, use, or do dvd player, sound bar, and wi-fi router.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["DVD Player", "Sound Bar", "Wi-Fi Router"],
+            "expectedAnswer": "DVD Player"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do dvd player, sound bar, and wi-fi router. Emphasize dvd player, sound bar, and wi-fi router and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Power Strip", "Cable", "Plug"],
+          "scenario": "In the living room, I can see, use, or do power strip, cable, and plug.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Power Strip", "Cable", "Plug"],
+            "expectedAnswer": "Power Strip"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do power strip, cable, and plug. Emphasize power strip, cable, and plug and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Living Room Mini Story",
+      "text": "I am in the living room. I can see drawer, magazine rack, and display case. I also notice coat rack, shoe rack, and television. I point to each item and say its English name. Then I use one more word: remote control. We also remember earlier words such as sofa and armchair.",
+      "imageBrief": "One uncluttered the living room scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Drawer"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Coat Rack"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Remote Control"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "DVD Player"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Power Strip"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Drawer"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Magazine Rack"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Television"
+      }
+    ],
+    "video": {
+      "title": "The Living Room: See It, Say It",
+      "idea": "30–50 second contextual video set in a living room. Show drawer, magazine rack, display case, coat rack, and shoe rack naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see drawer, magazine rack, and display case. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Sofa, Armchair from living-room-1\n3 lesson(s) back: Oven Mitt, Apron from kitchen-4\n7 lesson(s) back: Sponge, Brush from bathroom-6"
+  },
+  {
+    "lessonId": "living-room-3",
+    "lessonName": "The Living Room 3",
+    "unitId": "living-room",
+    "unitName": "The Living Room",
+    "unitOrder": 9,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 35,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Floor Lamp",
+      "Table Lamp",
+      "Ceiling Light",
+      "Chandelier",
+      "Light Bulb",
+      "Candle",
+      "Candle Holder",
+      "String Lights",
+      "Picture Frame",
+      "Wall Clock",
+      "Cushion",
+      "Throw Blanket",
+      "Rug",
+      "Carpet",
+      "Curtain"
+    ],
+    "targetWordsArabic": [
+      "مِصْبَاحٌ أَرْضِيّ (أَبَاجُورَةٌ طَوِيلَة / أَبَاجُورَةُ أَرْضِيَّة)",
+      "مِصْبَاحُ طَاوِلَة (أَبَاجُورَةُ تَرَابِيزَة)",
+      "إِضَاءَةُ السَّقْف (نَجَفَة / مِصْبَاحُ السَّقْف)",
+      "نَجَفَةٌ فَاخِرَة (ثُرَيَّا)",
+      "مِصْبَاحٌ كَهْرَبَائِيّ (لَمْبَة)",
+      "شَمْعَة",
+      "شَمْعَدَان (حَامِلُ الشُّمُوع)",
+      "حِبَالُ إِضَاءَة (فِرْعُ نُور / إِضَاءَةُ زِينَة)",
+      "إِطَارُ الصُّورَة (بِرْوَاز)",
+      "سَاعَةُ حَائِط",
+      "وِسَادَةُ زِينَة (خُدَّادِيَّة)",
+      "بَطَّانِيَّةٌ خَفِيفَة (شَالُ كَنَبَة / غِطَاءُ دِيكُور)",
+      "سَجَّادَةٌ صَغِيرَة (مَشَّايَة)",
+      "مَوْكِيت / سَجَّادٌ شَامِل",
+      "سِتَارَة"
+    ],
+    "usage": {
+      "goal": "Name living-room objects and talk about simple activities at home.",
+      "canDoStatement": "I can name living-room objects and talk about simple activities at home",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Floor Lamp", "Table Lamp", "Ceiling Light"],
+          "scenario": "In the living room, I can see, use, or do floor lamp, table lamp, and ceiling light.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Floor Lamp", "Table Lamp", "Ceiling Light"],
+            "expectedAnswer": "Floor Lamp"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do floor lamp, table lamp, and ceiling light. Emphasize floor lamp, table lamp, and ceiling light and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Chandelier", "Light Bulb", "Candle"],
+          "scenario": "In the living room, I can see, use, or do chandelier, light bulb, and candle.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Chandelier", "Light Bulb", "Candle"],
+            "expectedAnswer": "Chandelier"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do chandelier, light bulb, and candle. Emphasize chandelier, light bulb, and candle and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Candle Holder", "String Lights", "Picture Frame"],
+          "scenario": "In the living room, I can see, use, or do candle holder, string lights, and picture frame.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Candle Holder", "String Lights", "Picture Frame"],
+            "expectedAnswer": "Candle Holder"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do candle holder, string lights, and picture frame. Emphasize candle holder, string lights, and picture frame and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Wall Clock", "Cushion", "Throw Blanket"],
+          "scenario": "In the living room, I can see, use, or do wall clock, cushion, and throw blanket.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Wall Clock", "Cushion", "Throw Blanket"],
+            "expectedAnswer": "Wall Clock"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do wall clock, cushion, and throw blanket. Emphasize wall clock, cushion, and throw blanket and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Rug", "Carpet", "Curtain"],
+          "scenario": "In the living room, I can see, use, or do rug, carpet, and curtain.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Rug", "Carpet", "Curtain"],
+            "expectedAnswer": "Rug"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do rug, carpet, and curtain. Emphasize rug, carpet, and curtain and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Living Room Mini Story",
+      "text": "I am in the living room. I can see floor lamp, table lamp, and ceiling light. I also notice chandelier, light bulb, and candle. I point to each item and say its English name. Then I use one more word: candle holder. We also remember earlier words such as drawer and magazine rack.",
+      "imageBrief": "One uncluttered the living room scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Floor Lamp"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Chandelier"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Candle Holder"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Wall Clock"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Rug"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Floor Lamp"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Table Lamp"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Candle"
+      }
+    ],
+    "video": {
+      "title": "The Living Room: See It, Say It",
+      "idea": "30–50 second contextual video set in a living room. Show floor lamp, table lamp, ceiling light, chandelier, and light bulb naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see floor lamp, table lamp, and ceiling light. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Drawer, Magazine Rack from living-room-2\n3 lesson(s) back: Cheese, Rice from kitchen-5\n7 lesson(s) back: Refrigerator, Stove from kitchen-1"
+  },
+  {
+    "lessonId": "living-room-4",
+    "lessonName": "The Living Room 4",
+    "unitId": "living-room",
+    "unitName": "The Living Room",
+    "unitOrder": 9,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 36,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Tablecloth",
+      "Placemat",
+      "Coaster",
+      "Doormat",
+      "Tapestry",
+      "Plant",
+      "Vase",
+      "Photo Frame",
+      "Painting",
+      "Book",
+      "Magazine",
+      "Newspaper",
+      "Board Game",
+      "Puzzle",
+      "Playing Cards"
+    ],
+    "targetWordsArabic": [
+      "مَفْرَشُ طَاوِلَة",
+      "مَفْرَشُ طَبَق (مَفْرَشٌ فَرْدِيّ)",
+      "قَاعِدَةُ كُوب (كُوسْتَر)",
+      "دَوَّاسَةُ بَاب (مَمْسَحَةُ أَرْجُل)",
+      "نَسِيجٌ جِدَارِيّ (سَجَّادُ حَائِط / تَابِسْتْرِي)",
+      "نَبْتَة مَنْزِلِيَّة (زَرْع)",
+      "زَهْرِيَّة (فَازَة)",
+      "إِطَارُ صُورَة (بِرْوَازُ صُوَر)",
+      "لَوْحَةٌ فَنِّيَّة (رَسْمَة)",
+      "كِتَاب",
+      "مَجَلَّة",
+      "جَرِيدَة (صَحِيفَة)",
+      "لُعْبَةُ أَلْوَاح (لُعْبَةُ طَاوِلَة)",
+      "لُغْز / أُحْجِيَّة (بَازِل / أَلْعَابُ تَرْكِيب)",
+      "-"
+    ],
+    "usage": {
+      "goal": "Name living-room objects and talk about simple activities at home.",
+      "canDoStatement": "I can name living-room objects and talk about simple activities at home",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Tablecloth", "Placemat", "Coaster"],
+          "scenario": "In the living room, I can see, use, or do tablecloth, placemat, and coaster.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Tablecloth", "Placemat", "Coaster"],
+            "expectedAnswer": "Tablecloth"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do tablecloth, placemat, and coaster. Emphasize tablecloth, placemat, and coaster and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Doormat", "Tapestry", "Plant"],
+          "scenario": "In the living room, I can see, use, or do doormat, tapestry, and plant.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Doormat", "Tapestry", "Plant"],
+            "expectedAnswer": "Doormat"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do doormat, tapestry, and plant. Emphasize doormat, tapestry, and plant and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Vase", "Photo Frame", "Painting"],
+          "scenario": "In the living room, I can see, use, or do vase, photo frame, and painting.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Vase", "Photo Frame", "Painting"],
+            "expectedAnswer": "Vase"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do vase, photo frame, and painting. Emphasize vase, photo frame, and painting and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Book", "Magazine", "Newspaper"],
+          "scenario": "In the living room, I can see, use, or do book, magazine, and newspaper.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Book", "Magazine", "Newspaper"],
+            "expectedAnswer": "Book"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do book, magazine, and newspaper. Emphasize book, magazine, and newspaper and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Board Game", "Puzzle", "Playing Cards"],
+          "scenario": "In the living room, I can see, use, or do board game, puzzle, and playing cards.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Board Game", "Puzzle", "Playing Cards"],
+            "expectedAnswer": "Board Game"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do board game, puzzle, and playing cards. Emphasize board game, puzzle, and playing cards and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Living Room Mini Story",
+      "text": "I am in the living room. I can see tablecloth, placemat, and coaster. I also notice doormat, tapestry, and plant. I point to each item and say its English name. Then I use one more word: vase. We also remember earlier words such as floor lamp and table lamp.",
+      "imageBrief": "One uncluttered the living room scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Tablecloth"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Doormat"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Vase"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Book"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Board Game"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Tablecloth"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Placemat"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Plant"
+      }
+    ],
+    "video": {
+      "title": "The Living Room: See It, Say It",
+      "idea": "30–50 second contextual video set in a living room. Show tablecloth, placemat, coaster, doormat, and tapestry naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see tablecloth, placemat, and coaster. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Floor Lamp, Table Lamp from living-room-3\n3 lesson(s) back: Sofa, Armchair from living-room-1\n7 lesson(s) back: Wok, Casserole Dish from kitchen-2"
+  },
+  {
+    "lessonId": "living-room-5",
+    "lessonName": "The Living Room 5",
+    "unitId": "living-room",
+    "unitName": "The Living Room",
+    "unitOrder": 9,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 37,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Lamp",
+      "Phone",
+      "Tablet",
+      "Charger",
+      "Headphones",
+      "Watch TV",
+      "Read Book",
+      "Play Games",
+      "Listen to Music",
+      "Relax",
+      "Sit Down",
+      "Chat",
+      "Take a Nap"
+    ],
+    "targetWordsArabic": [
+      "مِصْبَاح (أَبَاجُورَة)",
+      "هَاتِف (مُوبَايِل)",
+      "جِهَازٌ لَوْحِيّ (تَابْلِت)",
+      "شَاحِن",
+      "سَمَّاعَاتُ الرَّأْس (هَيْدْفُونْز)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Name living-room objects and talk about simple activities at home.",
+      "canDoStatement": "I can name living-room objects and talk about simple activities at home",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Lamp", "Phone", "Tablet"],
+          "scenario": "In the living room, I can see, use, or do lamp, phone, and tablet.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Lamp", "Phone", "Tablet"],
+            "expectedAnswer": "Lamp"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do lamp, phone, and tablet. Emphasize lamp, phone, and tablet and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Charger", "Headphones", "Watch TV"],
+          "scenario": "In the living room, I can see, use, or do charger, headphones, and watch tv.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Charger", "Headphones", "Watch TV"],
+            "expectedAnswer": "Charger"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do charger, headphones, and watch tv. Emphasize charger, headphones, and watch tv and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Read Book", "Play Games", "Listen to Music"],
+          "scenario": "In the living room, I can see, use, or do read book, play games, and listen to music.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Read Book", "Play Games", "Listen to Music"],
+            "expectedAnswer": "Read Book"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do read book, play games, and listen to music. Emphasize read book, play games, and listen to music and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Relax", "Sit Down", "Chat"],
+          "scenario": "In the living room, I can see, use, or do relax, sit down, and chat.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Relax", "Sit Down", "Chat"],
+            "expectedAnswer": "Relax"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do relax, sit down, and chat. Emphasize relax, sit down, and chat and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": "Take a Nap",
+          "scenario": "In the living room, I can see, use, or do take a nap.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": "Take a Nap",
+            "expectedAnswer": "Take a Nap"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the living room that represents: In the living room, I can see, use, or do take a nap. Emphasize take a nap and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Living Room Mini Story",
+      "text": "I am in the living room. I can see lamp, phone, and tablet. I also notice charger, headphones, and watch tv. I point to each item and say its English name. Then I use one more word: read book. We also remember earlier words such as tablecloth and placemat.",
+      "imageBrief": "One uncluttered the living room scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Lamp"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Charger"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Read Book"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Relax"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Take a Nap"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Lamp"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Phone"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Watch TV"
+      }
+    ],
+    "video": {
+      "title": "The Living Room: See It, Say It",
+      "idea": "30–50 second contextual video set in a living room. Show lamp, phone, tablet, charger, and headphones naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see lamp, phone, and tablet. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Tablecloth, Placemat from living-room-4\n3 lesson(s) back: Drawer, Magazine Rack from living-room-2\n7 lesson(s) back: Can Opener, Corkscrew from kitchen-3"
+  }
+]

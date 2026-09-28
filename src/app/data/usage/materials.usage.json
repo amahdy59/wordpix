@@ -1,0 +1,559 @@
+﻿[
+  {
+    "lessonId": "materials-1",
+    "lessonName": "Materials 1",
+    "unitId": "materials",
+    "unitName": "Materials",
+    "unitOrder": 51,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 238,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Wood",
+      "Stone",
+      "Marble",
+      "Granite",
+      "Clay",
+      "Sand",
+      "Bamboo",
+      "Cork",
+      "Slate",
+      "Limestone",
+      "Steel",
+      "Iron",
+      "Aluminum",
+      "Copper",
+      "Gold"
+    ],
+    "targetWordsArabic": [
+      "خشب",
+      "حجر",
+      "رخام",
+      "مصطلح مرتبط بالموضوع يُسمّى «جرانيتي»",
+      "مادة يُسمّى «كلاي»",
+      "رمل",
+      "خيزران",
+      "فلين",
+      "مصطلح مرتبط بالموضوع يُسمّى «سلاتي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليميستوني»",
+      "فولاذ",
+      "مكواة",
+      "ألمنيوم",
+      "مادة يُسمّى «كوببير»",
+      "ذهبي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Materials to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key materials vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Wood", "Stone", "Marble"],
+          "scenario": "The learner compares wood, stone, and marble, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Wood", "Stone", "Marble"],
+            "expectedAnswer": "Wood"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares wood, stone, and marble, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Granite", "Clay", "Sand"],
+          "scenario": "The learner compares granite, clay, and sand, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Granite", "Clay", "Sand"],
+            "expectedAnswer": "Granite"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares granite, clay, and sand, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Bamboo", "Cork", "Slate"],
+          "scenario": "The learner compares bamboo, cork, and slate, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Bamboo", "Cork", "Slate"],
+            "expectedAnswer": "Bamboo"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares bamboo, cork, and slate, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Limestone", "Steel", "Iron"],
+          "scenario": "The learner compares limestone, steel, and iron, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Limestone", "Steel", "Iron"],
+            "expectedAnswer": "Limestone"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares limestone, steel, and iron, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Aluminum", "Copper", "Gold"],
+          "scenario": "The learner compares aluminum, copper, and gold, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Aluminum", "Copper", "Gold"],
+            "expectedAnswer": "Aluminum"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares aluminum, copper, and gold, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Materials: Short Description",
+      "text": "Maya is in a situation connected to materials. She uses the new words to understand what she sees and what happens next. The learner compares wood, stone, and marble, noticing differences in appearance, measurement, material, or texture. The learner compares granite, clay, and sand, noticing differences in appearance, measurement, material, or texture. The learner compares bamboo, cork, and slate, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Materials. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Wood"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Granite"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bamboo"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Limestone"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Aluminum"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Wood"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Marble"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Eggplant” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Materials: In Context",
+      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Eggplant, Periwinkle from shades-tones-4\n3 lesson(s) back: Emerald, Olive from shades-tones-2\n7 lesson(s) back: Mumble, Stutter from communication-verbs-2"
+  },
+  {
+    "lessonId": "materials-2",
+    "lessonName": "Materials 2",
+    "unitId": "materials",
+    "unitName": "Materials",
+    "unitOrder": 51,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 239,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Silver",
+      "Bronze",
+      "Brass",
+      "Titanium",
+      "Platinum",
+      "Cotton",
+      "Silk",
+      "Wool",
+      "Linen",
+      "Denim",
+      "Polyester",
+      "Nylon",
+      "Velvet",
+      "Satin",
+      "Cashmere"
+    ],
+    "targetWordsArabic": [
+      "فضي",
+      "برونزي",
+      "مصطلح مرتبط بالموضوع يُسمّى «براسس»",
+      "جزء يُسمّى «تيتانيوم»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بلاتينوم»",
+      "قطن",
+      "حرير",
+      "صوف",
+      "كتان",
+      "دنيم",
+      "بوليستر",
+      "نايلون",
+      "مخمل",
+      "ساتان",
+      "كشمير"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Materials to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key materials vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Silver", "Bronze", "Brass"],
+          "scenario": "The learner compares silver, bronze, and brass, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Silver", "Bronze", "Brass"],
+            "expectedAnswer": "Silver"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares silver, bronze, and brass, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Titanium", "Platinum", "Cotton"],
+          "scenario": "The learner compares titanium, platinum, and cotton, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Titanium", "Platinum", "Cotton"],
+            "expectedAnswer": "Titanium"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares titanium, platinum, and cotton, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Silk", "Wool", "Linen"],
+          "scenario": "The learner compares the silk, wool, and linen and notices how the materials differ in texture, strength, or appearance.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Silk", "Wool", "Linen"],
+            "expectedAnswer": "Silk"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares the silk, wool, and linen and notices how the materials differ in texture, strength, or appearance. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Denim", "Polyester", "Nylon"],
+          "scenario": "The learner compares denim, polyester, and nylon, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Denim", "Polyester", "Nylon"],
+            "expectedAnswer": "Denim"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares denim, polyester, and nylon, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Velvet", "Satin", "Cashmere"],
+          "scenario": "The learner compares the velvet, satin, and cashmere and notices how the materials differ in texture, strength, or appearance.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Velvet", "Satin", "Cashmere"],
+            "expectedAnswer": "Velvet"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares the velvet, satin, and cashmere and notices how the materials differ in texture, strength, or appearance. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Materials: Mini Dialogue",
+      "text": "Maya is in a situation connected to materials. She uses the new words to understand what she sees and what happens next. The learner compares silver, bronze, and brass, noticing differences in appearance, measurement, material, or texture. The learner compares titanium, platinum, and cotton, noticing differences in appearance, measurement, material, or texture. The learner compares the silk, wool, and linen and notices how the materials differ in texture, strength, or appearance. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Materials. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Silver"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Titanium"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Silk"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Denim"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Velvet"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Silver"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Brass"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Wood” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Materials: In Context",
+      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Wood, Stone from materials-1\n3 lesson(s) back: Ivory, Cream from shades-tones-3\n7 lesson(s) back: Write, Read from communication-verbs-3"
+  },
+  {
+    "lessonId": "materials-3",
+    "lessonName": "Materials 3",
+    "unitId": "materials",
+    "unitName": "Materials",
+    "unitOrder": 51,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 240,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Plastic",
+      "Rubber",
+      "Glass",
+      "Fiberglass",
+      "Carbon Fiber",
+      "Acrylic",
+      "Vinyl",
+      "Silicone",
+      "Foam",
+      "Resin",
+      "Concrete",
+      "Brick",
+      "Cement",
+      "Plaster",
+      "Drywall"
+    ],
+    "targetWordsArabic": [
+      "مادة يُسمّى «بلاستيك»",
+      "مادة يُسمّى «روببير»",
+      "كَأْسُ زُجَاج (كُوبُ مَاء)",
+      "مادة يُسمّى «فيبيرجلاسس»",
+      "ألياف كربون",
+      "أكريليك",
+      "مصطلح مرتبط بالموضوع يُسمّى «فينيل»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سيليكوني»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فوام»",
+      "راتنج",
+      "خرسانة",
+      "طوب",
+      "مبنى يُسمّى «كيمينت»",
+      "لاصق طبي",
+      "ألواح جبسية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Materials to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key materials vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Plastic", "Rubber", "Glass"],
+          "scenario": "The learner compares plastic, rubber, and glass, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Plastic", "Rubber", "Glass"],
+            "expectedAnswer": "Plastic"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares plastic, rubber, and glass, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Fiberglass", "Carbon Fiber", "Acrylic"],
+          "scenario": "The learner compares the fiberglass, carbon fiber, and acrylic and notices how the materials differ in texture, strength, or appearance.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Fiberglass", "Carbon Fiber", "Acrylic"],
+            "expectedAnswer": "Fiberglass"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares the fiberglass, carbon fiber, and acrylic and notices how the materials differ in texture, strength, or appearance. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Vinyl", "Silicone", "Foam"],
+          "scenario": "The learner compares vinyl, silicone, and foam, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Vinyl", "Silicone", "Foam"],
+            "expectedAnswer": "Vinyl"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares vinyl, silicone, and foam, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Resin", "Concrete", "Brick"],
+          "scenario": "The learner compares resin, concrete, and brick, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Resin", "Concrete", "Brick"],
+            "expectedAnswer": "Resin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares resin, concrete, and brick, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Cement", "Plaster", "Drywall"],
+          "scenario": "The learner compares the cement, plaster, and drywall and notices how the materials differ in texture, strength, or appearance.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Cement", "Plaster", "Drywall"],
+            "expectedAnswer": "Cement"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares the cement, plaster, and drywall and notices how the materials differ in texture, strength, or appearance. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Materials: Simple Message",
+      "text": "Maya is in a situation connected to materials. She uses the new words to understand what she sees and what happens next. The learner compares plastic, rubber, and glass, noticing differences in appearance, measurement, material, or texture. The learner compares the fiberglass, carbon fiber, and acrylic and notices how the materials differ in texture, strength, or appearance. The learner compares vinyl, silicone, and foam, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Materials. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Plastic"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fiberglass"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Vinyl"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Resin"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cement"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Plastic"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Glass"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Silver” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Materials: In Context",
+      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Silver, Bronze from materials-2\n3 lesson(s) back: Eggplant, Periwinkle from shades-tones-4\n7 lesson(s) back: Shrug, Signal from communication-verbs-4"
+  },
+  {
+    "lessonId": "materials-4",
+    "lessonName": "Materials 4",
+    "unitId": "materials",
+    "unitName": "Materials",
+    "unitOrder": 51,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 241,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": ["Insulation", "Tile", "Grout", "Mortar", "Lumber"],
+    "targetWordsArabic": [
+      "عزل",
+      "بلاط",
+      "مصطلح مرتبط بالموضوع يُسمّى «جرووت»",
+      "هاون",
+      "شجرة يُسمّى «لومبير»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Materials to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key materials vocabulary in simple context.",
+      "textType": "notice-style text",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Insulation", "Tile", "Grout"],
+          "scenario": "The learner compares insulation, tile, and grout, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Insulation", "Tile", "Grout"],
+            "expectedAnswer": "Insulation"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares insulation, tile, and grout, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Mortar", "Lumber"],
+          "scenario": "The learner compares mortar and lumber, noticing differences in appearance, measurement, material, or texture.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Mortar", "Lumber"],
+            "expectedAnswer": "Mortar"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares mortar and lumber, noticing differences in appearance, measurement, material, or texture. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Materials: Notice-Style Text",
+      "text": "Maya is in a situation connected to materials. She uses the new words to understand what she sees and what happens next. The learner compares insulation, tile, and grout, noticing differences in appearance, measurement, material, or texture. The learner compares mortar and lumber, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Materials. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Insulation"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mortar"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Insulation"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Grout"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Plastic” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Materials: In Context",
+      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Plastic, Rubber from materials-3\n3 lesson(s) back: Wood, Stone from materials-1\n7 lesson(s) back: Crimson, Scarlet from shades-tones-1"
+  }
+]

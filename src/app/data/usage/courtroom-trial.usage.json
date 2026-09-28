@@ -1,0 +1,437 @@
+﻿[
+  {
+    "lessonId": "courtroom-trial-1",
+    "lessonName": "The Courtroom Trial 1",
+    "unitId": "courtroom-trial",
+    "unitName": "The Courtroom Trial",
+    "unitOrder": 181,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 802,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Judge's Bench",
+      "Witness Stand",
+      "Jury Box",
+      "Defense Table",
+      "Prosecution Table",
+      "Gallery",
+      "Bar",
+      "Clerk's Desk",
+      "Bailiff's Post",
+      "Podium",
+      "Judge",
+      "Jury",
+      "Plaintiff",
+      "Defendant",
+      "Witness"
+    ],
+    "targetWordsArabic": [
+      "منصة القاضي",
+      "غرفة يُسمّى «ويتنيسس ستاند»",
+      "غرفة يُسمّى «جوري بوكس»",
+      "طاولة الدفاع",
+      "طاولة الادعاء",
+      "غرفة يُسمّى «جالليري»",
+      "حانة",
+      "مكتب كاتب المحكمة",
+      "موقع حاجب المحكمة",
+      "شخص يُسمّى «بوديوم»",
+      "مصطلح مرتبط بالموضوع يُسمّى «جودجي»",
+      "مصطلح قانوني يُسمّى «جوري»",
+      "شخص يُسمّى «بلاينتيفف»",
+      "شخص يُسمّى «ديفيندانت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ويتنيسس»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Courtroom Trial to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use the courtroom trial vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "briefing note",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Judge's Bench", "Witness Stand", "Jury Box", "Defense Table"],
+          "scenario": "The legal team works with judge's bench, witness stand, jury box, and defense table. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Judge's Bench", "Witness Stand", "Jury Box", "Defense Table"],
+            "expectedAnswer": "Judge's Bench"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with judge's bench, witness stand, jury box, and defense table. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Prosecution Table", "Gallery", "Bar", "Clerk's Desk"],
+          "scenario": "The legal team works with prosecution table, gallery, bar, and clerk's desk. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Prosecution Table", "Gallery", "Bar", "Clerk's Desk"],
+            "expectedAnswer": "Prosecution Table"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with prosecution table, gallery, bar, and clerk's desk. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Bailiff's Post", "Podium", "Judge", "Jury"],
+          "scenario": "The legal team works with bailiff's post, podium, judge, and jury. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bailiff's Post", "Podium", "Judge", "Jury"],
+            "expectedAnswer": "Bailiff's Post"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with bailiff's post, podium, judge, and jury. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Plaintiff", "Defendant", "Witness"],
+          "scenario": "The legal team works with plaintiff, defendant, and witness. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Plaintiff", "Defendant", "Witness"],
+            "expectedAnswer": "Plaintiff"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with plaintiff, defendant, and witness. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Courtroom Trial: Briefing Note",
+      "text": "This text examines the courtroom trial through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The legal team works with judge's bench, witness stand, jury box, and defense table. Each term has a distinct role in the case, document set, or legal process. The legal team works with prosecution table, gallery, bar, and clerk's desk. Each term has a distinct role in the case, document set, or legal process. The legal team works with bailiff's post, podium, judge, and jury. Each term has a distinct role in the case, document set, or legal process. The legal team works with plaintiff, defendant, and witness. Each term has a distinct role in the case, document set, or legal process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about The Courtroom Trial. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Judge's Bench"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Prosecution Table"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bailiff's Post"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Plaintiff"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Judge's Bench"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Jury Box"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Consult” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Courtroom Trial: In Context",
+      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Consult, Represent from law-firm-3\n3 lesson(s) back: Lawyer, Attorney from law-firm-1\n7 lesson(s) back: Microscope, Centrifuge from space-station-3"
+  },
+  {
+    "lessonId": "courtroom-trial-2",
+    "lessonName": "The Courtroom Trial 2",
+    "unitId": "courtroom-trial",
+    "unitName": "The Courtroom Trial",
+    "unitOrder": 181,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 803,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Bailiff",
+      "Court Reporter",
+      "Clerk",
+      "Foreman",
+      "Expert Witness",
+      "Opening Statement",
+      "Testimony",
+      "Cross-Examination",
+      "Objection",
+      "Sustained",
+      "Overruled",
+      "Closing Argument",
+      "Deliberation",
+      "Verdict",
+      "Sentencing"
+    ],
+    "targetWordsArabic": [
+      "عملية يُسمّى «بايليفف»",
+      "كاتب محضر المحكمة",
+      "موظف",
+      "رئيس عمال",
+      "شاهد خبير",
+      "مصطلح مرتبط بالموضوع يُسمّى «وبينينج ستاتيمينت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تيستيموني»",
+      "استجواب مضاد",
+      "مصطلح قانوني يُسمّى «وبجيكتيون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سوستاينيد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «وفيرروليد»",
+      "المرافعة الختامية",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديليبيراتيون»",
+      "مصطلح قانوني يُسمّى «فيرديكت»",
+      "إصدار الحكم بالعقوبة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Courtroom Trial to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use the courtroom trial vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "analysis excerpt",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bailiff", "Court Reporter", "Clerk", "Foreman"],
+          "scenario": "The legal team works with bailiff, court reporter, clerk, and foreman. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bailiff", "Court Reporter", "Clerk", "Foreman"],
+            "expectedAnswer": "Bailiff"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with bailiff, court reporter, clerk, and foreman. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Expert Witness", "Opening Statement", "Testimony", "Cross-Examination"],
+          "scenario": "The legal team works with expert witness, opening statement, testimony, and cross-examination. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Expert Witness", "Opening Statement", "Testimony", "Cross-Examination"],
+            "expectedAnswer": "Expert Witness"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with expert witness, opening statement, testimony, and cross-examination. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Objection", "Sustained", "Overruled", "Closing Argument"],
+          "scenario": "The legal team works with objection, sustained, overruled, and closing argument. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Objection", "Sustained", "Overruled", "Closing Argument"],
+            "expectedAnswer": "Objection"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with objection, sustained, overruled, and closing argument. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Deliberation", "Verdict", "Sentencing"],
+          "scenario": "The legal team works with deliberation, verdict, and sentencing. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Deliberation", "Verdict", "Sentencing"],
+            "expectedAnswer": "Deliberation"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with deliberation, verdict, and sentencing. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Courtroom Trial: Analysis Excerpt",
+      "text": "This text examines the courtroom trial through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The legal team works with bailiff, court reporter, clerk, and foreman. Each term has a distinct role in the case, document set, or legal process. The legal team works with expert witness, opening statement, testimony, and cross-examination. Each term has a distinct role in the case, document set, or legal process. The legal team works with objection, sustained, overruled, and closing argument. Each term has a distinct role in the case, document set, or legal process. The legal team works with deliberation, verdict, and sentencing. Each term has a distinct role in the case, document set, or legal process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about The Courtroom Trial. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bailiff"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Expert Witness"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Objection"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Deliberation"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Bailiff"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Clerk"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Judge's Bench” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Courtroom Trial: In Context",
+      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Judge's Bench, Witness Stand from courtroom-trial-1\n3 lesson(s) back: Filing Room, War Room from law-firm-2\n7 lesson(s) back: Clock, Map Display from space-station-4"
+  },
+  {
+    "lessonId": "courtroom-trial-3",
+    "lessonName": "The Courtroom Trial 3",
+    "unitId": "courtroom-trial",
+    "unitName": "The Courtroom Trial",
+    "unitOrder": 181,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 804,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Exhibit",
+      "Document",
+      "Photograph",
+      "Video",
+      "DNA Evidence",
+      "Fingerprint",
+      "Affidavit",
+      "Deposition",
+      "Forensic Evidence"
+    ],
+    "targetWordsArabic": [
+      "مصطلح قانوني يُسمّى «يكسهيبيت»",
+      "وثيقة",
+      "صورة فوتوغرافية",
+      "مصطلح مرتبط بالموضوع يُسمّى «فيديو»",
+      "شخص يُسمّى «دنا يفيدينكي»",
+      "بصمة إصبع",
+      "مصطلح مرتبط بالموضوع يُسمّى «اففيدافيت»",
+      "مصطلح قانوني يُسمّى «ديبوسيتيون»",
+      "طريقة يُسمّى «فورينسيك يفيدينكي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Courtroom Trial to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use the courtroom trial vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "professional summary",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Exhibit", "Document", "Photograph", "Video"],
+          "scenario": "The legal team works with exhibit, document, photograph, and video. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Exhibit", "Document", "Photograph", "Video"],
+            "expectedAnswer": "Exhibit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with exhibit, document, photograph, and video. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["DNA Evidence", "Fingerprint", "Affidavit", "Deposition"],
+          "scenario": "The legal team works with dna evidence, fingerprint, affidavit, and deposition. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["DNA Evidence", "Fingerprint", "Affidavit", "Deposition"],
+            "expectedAnswer": "DNA Evidence"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with dna evidence, fingerprint, affidavit, and deposition. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": "Forensic Evidence",
+          "scenario": "The legal team works with forensic evidence. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": "Forensic Evidence",
+            "expectedAnswer": "Forensic Evidence"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with forensic evidence. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Courtroom Trial: Professional Summary",
+      "text": "This text examines the courtroom trial through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The legal team works with exhibit, document, photograph, and video. Each term has a distinct role in the case, document set, or legal process. The legal team works with dna evidence, fingerprint, affidavit, and deposition. Each term has a distinct role in the case, document set, or legal process. The legal team works with forensic evidence. Each term has a distinct role in the case, document set, or legal process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about The Courtroom Trial. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Exhibit"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "DNA Evidence"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Forensic Evidence"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Exhibit"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Photograph"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Bailiff” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Courtroom Trial: In Context",
+      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Bailiff, Court Reporter from courtroom-trial-2\n3 lesson(s) back: Consult, Represent from law-firm-3\n7 lesson(s) back: Lab Module, Crew Quarters from space-station-5"
+  }
+]

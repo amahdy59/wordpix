@@ -1,0 +1,690 @@
+﻿[
+  {
+    "lessonId": "submarine-1",
+    "lessonName": "The Submarine 1",
+    "unitId": "submarine",
+    "unitName": "The Submarine",
+    "unitOrder": 177,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 783,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Hull",
+      "Conning Tower",
+      "Periscope",
+      "Hatch",
+      "Porthole",
+      "Ballast Tank",
+      "Propeller",
+      "Rudder",
+      "Torpedo Tube",
+      "Sonar Dome",
+      "Control Panel",
+      "Navigation Screen",
+      "Depth Gauge",
+      "Compass",
+      "Radar"
+    ],
+    "targetWordsArabic": [
+      "هيكل السفينة",
+      "غرفة يُسمّى «كوننينج تووير»",
+      "منظار بيريسكوبي",
+      "فتحة دخول",
+      "نافذة دائرية",
+      "مصطلح مرتبط بالموضوع يُسمّى «باللاست تانك»",
+      "مروحة دافعة",
+      "دفّة",
+      "مصطلح مرتبط بالموضوع يُسمّى «توربيدو توبي»",
+      "قُبّة سونار",
+      "جهاز يُسمّى «كونترول بانيل»",
+      "شاشة الملاحة",
+      "مقياس العمق",
+      "بوصلة",
+      "رادار"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Submarine to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the submarine vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Hull", "Conning Tower", "Periscope", "Hatch"],
+          "scenario": "The engineer or technician checks hull, conning tower, periscope, and hatch. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hull", "Conning Tower", "Periscope", "Hatch"],
+            "expectedAnswer": "Hull"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks hull, conning tower, periscope, and hatch. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Porthole", "Ballast Tank", "Propeller", "Rudder"],
+          "scenario": "The engineer or technician checks porthole, ballast tank, propeller, and rudder. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Porthole", "Ballast Tank", "Propeller", "Rudder"],
+            "expectedAnswer": "Porthole"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks porthole, ballast tank, propeller, and rudder. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Torpedo Tube", "Sonar Dome", "Control Panel", "Navigation Screen"],
+          "scenario": "The engineer or technician checks torpedo tube, sonar dome, control panel, and navigation screen. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Torpedo Tube", "Sonar Dome", "Control Panel", "Navigation Screen"],
+            "expectedAnswer": "Torpedo Tube"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks torpedo tube, sonar dome, control panel, and navigation screen. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Depth Gauge", "Compass", "Radar"],
+          "scenario": "The engineer or technician checks depth gauge, compass, and radar. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Depth Gauge", "Compass", "Radar"],
+            "expectedAnswer": "Depth Gauge"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks depth gauge, compass, and radar. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Submarine: Case Note",
+      "text": "A realistic case involving the submarine shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks hull, conning tower, periscope, and hatch. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks porthole, ballast tank, propeller, and rudder. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks torpedo tube, sonar dome, control panel, and navigation screen. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks depth gauge, compass, and radar. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hull"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Porthole"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Torpedo Tube"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Depth Gauge"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Hull"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Log Sheet” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Submarine: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Log Sheet, Report from laboratory-5\n3 lesson(s) back: Hazard Sign, Apron from laboratory-3\n7 lesson(s) back: Motion, Brief from courtroom-4"
+  },
+  {
+    "lessonId": "submarine-2",
+    "lessonName": "The Submarine 2",
+    "unitId": "submarine",
+    "unitName": "The Submarine",
+    "unitOrder": 177,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 784,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Sonar Display",
+      "Helm",
+      "Throttle",
+      "Communication Radio",
+      "Alarm",
+      "Bunk Bed",
+      "Galley",
+      "Mess Hall",
+      "Storage Locker",
+      "Bathroom",
+      "Shower",
+      "Laundry",
+      "Library",
+      "Recreation Room",
+      "Captain's Cabin"
+    ],
+    "targetWordsArabic": [
+      "شاشة السونار",
+      "دفة القيادة",
+      "مصطلح مرتبط بالموضوع يُسمّى «ثروتتلي»",
+      "جهاز اتصال لاسلكي",
+      "إنذار",
+      "مصطلح مرتبط بالموضوع يُسمّى «بونك بيد»",
+      "مطبخ صغير",
+      "عضو يُسمّى «ميسس هالل»",
+      "خزانة تخزين",
+      "-",
+      "دُش",
+      "غسيل الملابس",
+      "-",
+      "غرفة يُسمّى «ريكرياتيون رووم»",
+      "مقصورة القبطان"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Submarine to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the submarine vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sonar Display", "Helm", "Throttle", "Communication Radio"],
+          "scenario": "The engineer or technician checks sonar display, helm, throttle, and communication radio. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sonar Display", "Helm", "Throttle", "Communication Radio"],
+            "expectedAnswer": "Sonar Display"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks sonar display, helm, throttle, and communication radio. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Alarm", "Bunk Bed", "Galley", "Mess Hall"],
+          "scenario": "The engineer or technician checks alarm, bunk bed, galley, and mess hall. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Alarm", "Bunk Bed", "Galley", "Mess Hall"],
+            "expectedAnswer": "Alarm"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks alarm, bunk bed, galley, and mess hall. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Storage Locker", "Bathroom", "Shower", "Laundry"],
+          "scenario": "The engineer or technician checks storage locker, bathroom, shower, and laundry. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Storage Locker", "Bathroom", "Shower", "Laundry"],
+            "expectedAnswer": "Storage Locker"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks storage locker, bathroom, shower, and laundry. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Library", "Recreation Room", "Captain's Cabin"],
+          "scenario": "The engineer or technician checks library, recreation room, and captain's cabin. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Library", "Recreation Room", "Captain's Cabin"],
+            "expectedAnswer": "Library"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks library, recreation room, and captain's cabin. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Submarine: Report Excerpt",
+      "text": "A realistic case involving the submarine shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks sonar display, helm, throttle, and communication radio. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks alarm, bunk bed, galley, and mess hall. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks storage locker, bathroom, shower, and laundry. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks library, recreation room, and captain's cabin. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sonar Display"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Alarm"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Storage Locker"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Library"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Sonar Display"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Hull” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Submarine: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Hull, Conning Tower from submarine-1\n3 lesson(s) back: Indicator, Reagent from laboratory-4\n7 lesson(s) back: Defendant, Plaintiff from courtroom-5"
+  },
+  {
+    "lessonId": "submarine-3",
+    "lessonName": "The Submarine 3",
+    "unitId": "submarine",
+    "unitName": "The Submarine",
+    "unitOrder": 177,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 785,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Captain",
+      "Navigator",
+      "Engineer",
+      "Sonar Operator",
+      "Radio Operator",
+      "Cook",
+      "Medic",
+      "Diver",
+      "Technician",
+      "First Officer",
+      "Depth Meter",
+      "Sea Chart",
+      "GPS",
+      "Buoy",
+      "Anchor"
+    ],
+    "targetWordsArabic": [
+      "قبطان",
+      "ملاح",
+      "مهندس",
+      "مشغّل السونار",
+      "مشغّل اللاسلكي",
+      "طاهٍ",
+      "مسعف",
+      "غواص",
+      "فني",
+      "الضابط الأول",
+      "عداد العمق",
+      "خريطة بحرية",
+      "نظام تحديد المواقع",
+      "عوامة",
+      "مرساة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Submarine to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the submarine vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Captain", "Navigator", "Engineer", "Sonar Operator"],
+          "scenario": "The engineer or technician checks captain, navigator, engineer, and sonar operator. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Captain", "Navigator", "Engineer", "Sonar Operator"],
+            "expectedAnswer": "Captain"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks captain, navigator, engineer, and sonar operator. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Radio Operator", "Cook", "Medic", "Diver"],
+          "scenario": "The engineer or technician checks radio operator, cook, medic, and diver. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Radio Operator", "Cook", "Medic", "Diver"],
+            "expectedAnswer": "Radio Operator"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks radio operator, cook, medic, and diver. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Technician", "First Officer", "Depth Meter", "Sea Chart"],
+          "scenario": "The engineer or technician checks technician, first officer, depth meter, and sea chart. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Technician", "First Officer", "Depth Meter", "Sea Chart"],
+            "expectedAnswer": "Technician"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks technician, first officer, depth meter, and sea chart. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["GPS", "Buoy", "Anchor"],
+          "scenario": "The engineer or technician checks gps, buoy, and anchor. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["GPS", "Buoy", "Anchor"],
+            "expectedAnswer": "GPS"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks gps, buoy, and anchor. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Submarine: Workplace/Academic Scenario",
+      "text": "A realistic case involving the submarine shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks captain, navigator, engineer, and sonar operator. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks radio operator, cook, medic, and diver. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks technician, first officer, depth meter, and sea chart. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks gps, buoy, and anchor. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Captain"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Radio Operator"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Technician"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "GPS"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Captain"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Sonar Display” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Submarine: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Sonar Display, Helm from submarine-2\n3 lesson(s) back: Log Sheet, Report from laboratory-5\n7 lesson(s) back: Beaker, Flask from laboratory-1"
+  },
+  {
+    "lessonId": "submarine-4",
+    "lessonName": "The Submarine 4",
+    "unitId": "submarine",
+    "unitName": "The Submarine",
+    "unitOrder": 177,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 786,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Searchlight",
+      "Underwater Camera",
+      "Echo Sounder",
+      "Current Meter",
+      "Logbook",
+      "Whale",
+      "Shark",
+      "Jellyfish",
+      "Giant Squid",
+      "Anglerfish",
+      "Sea Turtle",
+      "Coral",
+      "Seaweed",
+      "Plankton",
+      "Shipwreck"
+    ],
+    "targetWordsArabic": [
+      "كشاف بحث",
+      "كاميرا تحت الماء",
+      "جهاز يُسمّى «يتشو سووندير»",
+      "مقياس تيار الماء",
+      "سجل الرحلة",
+      "حوت",
+      "قرش",
+      "قنديل البحر",
+      "حبار عملاق",
+      "سمكة أبو الشص",
+      "مصطلح مرتبط بالموضوع يُسمّى «سيا تورتلي»",
+      "مرجان",
+      "أعشاب بحرية",
+      "عوالق",
+      "حطام سفينة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Submarine to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the submarine vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "opinion paragraph",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Searchlight", "Underwater Camera", "Echo Sounder", "Current Meter"],
+          "scenario": "The engineer or technician checks searchlight, underwater camera, echo sounder, and current meter. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Searchlight", "Underwater Camera", "Echo Sounder", "Current Meter"],
+            "expectedAnswer": "Searchlight"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks searchlight, underwater camera, echo sounder, and current meter. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Logbook", "Whale", "Shark", "Jellyfish"],
+          "scenario": "The engineer or technician checks logbook, whale, shark, and jellyfish. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Logbook", "Whale", "Shark", "Jellyfish"],
+            "expectedAnswer": "Logbook"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks logbook, whale, shark, and jellyfish. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Giant Squid", "Anglerfish", "Sea Turtle", "Coral"],
+          "scenario": "The engineer or technician checks giant squid, anglerfish, sea turtle, and coral. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Giant Squid", "Anglerfish", "Sea Turtle", "Coral"],
+            "expectedAnswer": "Giant Squid"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks giant squid, anglerfish, sea turtle, and coral. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Seaweed", "Plankton", "Shipwreck"],
+          "scenario": "The engineer or technician checks seaweed, plankton, and shipwreck. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Seaweed", "Plankton", "Shipwreck"],
+            "expectedAnswer": "Seaweed"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks seaweed, plankton, and shipwreck. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Submarine: Opinion Paragraph",
+      "text": "A realistic case involving the submarine shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks searchlight, underwater camera, echo sounder, and current meter. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks logbook, whale, shark, and jellyfish. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks giant squid, anglerfish, sea turtle, and coral. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks seaweed, plankton, and shipwreck. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Searchlight"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Logbook"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Giant Squid"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Seaweed"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Searchlight"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Captain” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Submarine: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Captain, Navigator from submarine-3\n3 lesson(s) back: Hull, Conning Tower from submarine-1\n7 lesson(s) back: Hot Plate, Scale from laboratory-2"
+  },
+  {
+    "lessonId": "submarine-5",
+    "lessonName": "The Submarine 5",
+    "unitId": "submarine",
+    "unitName": "The Submarine",
+    "unitOrder": 177,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 787,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": ["Sonar", "Radio", "Engine", "Pump", "Valve", "Officer"],
+    "targetWordsArabic": ["سونار", "إذاعة", "محرك", "مضخة", "صمام", "ضابط"],
+    "usage": {
+      "goal": "Use the vocabulary from The Submarine to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the submarine vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sonar", "Radio", "Engine", "Pump"],
+          "scenario": "The engineer or technician checks sonar, radio, engine, and pump. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sonar", "Radio", "Engine", "Pump"],
+            "expectedAnswer": "Sonar"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks sonar, radio, engine, and pump. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Valve", "Officer"],
+          "scenario": "The engineer or technician checks valve and officer. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Valve", "Officer"],
+            "expectedAnswer": "Valve"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks valve and officer. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Submarine: Case Note",
+      "text": "A realistic case involving the submarine shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks sonar, radio, engine, and pump. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks valve and officer. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sonar"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Valve"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Sonar"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Searchlight” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Submarine: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Searchlight, Underwater Camera from submarine-4\n3 lesson(s) back: Sonar Display, Helm from submarine-2\n7 lesson(s) back: Hazard Sign, Apron from laboratory-3"
+  }
+]

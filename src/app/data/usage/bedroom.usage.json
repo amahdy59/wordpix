@@ -1,0 +1,610 @@
+﻿[
+  {
+    "lessonId": "bedroom-1",
+    "lessonName": "The Bedroom 1",
+    "unitId": "bedroom",
+    "unitName": "The Bedroom",
+    "unitOrder": 6,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 18,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Bed",
+      "Nightstand",
+      "Dresser",
+      "Wardrobe",
+      "Desk",
+      "Chair",
+      "Bookshelf",
+      "Mirror",
+      "Stool",
+      "Chest of Drawers",
+      "Pillow",
+      "Blanket",
+      "Sheet",
+      "Mattress",
+      "Duvet"
+    ],
+    "targetWordsArabic": [
+      "سَرِير",
+      "طَاوِلَةُ السَّرِير (كُمودِينَة)",
+      "خِزَانَةُ الأَدْرَاج (تَسْرِيحَة)",
+      "خِزَانَةُ المَلابِس (دُولاب)",
+      "مَكْتَب",
+      "كُرْسِيّ",
+      "رَفُّ الكُتُب / مَكْتَبَةٌ حَائِطِيَّة",
+      "مِرْآة",
+      "كُرْسِيٌّ صَغِير (طَبْلِيَّة / مَقْعَدٌ بِلَا ظَهْر)",
+      "خِزَانَةُ أَدْرَاج",
+      "وِسَادَة / مِخَدَّة",
+      "بَطَّانِيَّة",
+      "شَرْشَف / مِلايَةُ السَّرِير",
+      "مَرْتَبَة",
+      "لِحَاف (دُوفِيه)"
+    ],
+    "usage": {
+      "goal": "Name common bedroom objects and say where or how they are used.",
+      "canDoStatement": "I can name common bedroom objects and say where or how they are used",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bed", "Nightstand", "Dresser"],
+          "scenario": "In my bedroom, I can see or use bed, nightstand, and dresser.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Bed", "Nightstand", "Dresser"],
+            "expectedAnswer": "Bed"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use bed, nightstand, and dresser. Emphasize bed, nightstand, and dresser and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Wardrobe", "Desk", "Chair"],
+          "scenario": "In my bedroom, I can see or use wardrobe, desk, and chair.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Wardrobe", "Desk", "Chair"],
+            "expectedAnswer": "Wardrobe"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use wardrobe, desk, and chair. Emphasize wardrobe, desk, and chair and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Bookshelf", "Mirror", "Stool"],
+          "scenario": "In my bedroom, I can see or use bookshelf, mirror, and stool.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Bookshelf", "Mirror", "Stool"],
+            "expectedAnswer": "Bookshelf"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use bookshelf, mirror, and stool. Emphasize bookshelf, mirror, and stool and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Chest of Drawers", "Pillow", "Blanket"],
+          "scenario": "In my bedroom, I can see or use chest of drawers, pillow, and blanket.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Chest of Drawers", "Pillow", "Blanket"],
+            "expectedAnswer": "Chest of Drawers"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use chest of drawers, pillow, and blanket. Emphasize chest of drawers, pillow, and blanket and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Sheet", "Mattress", "Duvet"],
+          "scenario": "In my bedroom, I can see or use sheet, mattress, and duvet.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Sheet", "Mattress", "Duvet"],
+            "expectedAnswer": "Sheet"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use sheet, mattress, and duvet. Emphasize sheet, mattress, and duvet and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bedroom Mini Story",
+      "text": "I am in the bedroom. I can see bed, nightstand, and dresser. I also notice wardrobe, desk, and chair. I point to each item and say its English name. Then I use one more word: bookshelf. We also remember earlier words such as love and trust.",
+      "imageBrief": "One uncluttered the bedroom scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Bed"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Wardrobe"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Bookshelf"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Chest of Drawers"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Sheet"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Bed"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Nightstand"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Chair"
+      }
+    ],
+    "video": {
+      "title": "The Bedroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a bedroom. Show bed, nightstand, dresser, wardrobe, and desk naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see bed, nightstand, and dresser. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Love, Trust from family-3\n3 lesson(s) back: Mother, Father from family-1\n7 lesson(s) back: Grid, Array from shapes-geometry-4"
+  },
+  {
+    "lessonId": "bedroom-2",
+    "lessonName": "The Bedroom 2",
+    "unitId": "bedroom",
+    "unitName": "The Bedroom",
+    "unitOrder": 6,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 19,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Pillowcase",
+      "Comforter",
+      "Cushion",
+      "Bed Frame",
+      "Headboard",
+      "Lamp",
+      "Curtain",
+      "Window",
+      "Door",
+      "Rug",
+      "Carpet",
+      "Ceiling Light",
+      "Light Switch",
+      "Blinds",
+      "Outlet"
+    ],
+    "targetWordsArabic": [
+      "غِطَاءُ الوِسَادَة (كِيسُ المِخَدَّة)",
+      "لِحَافٌ مَحْشُوّ (كُوڤِرْتَه / لِحَاف)",
+      "وِسَادَةُ زِينَة (خُدَّادِيَّة)",
+      "هَيْكَلُ السَّرِير (شَاسِيه السَّرِير)",
+      "خَلْفِيَّةُ السَّرِير (ظَهْرُ السَّرِير)",
+      "مِصْبَاح (أَبَاجُورَة)",
+      "سِتَارَة",
+      "نَافِذَة (شُبَّاك)",
+      "بَاب",
+      "سَجَّادَةٌ صَغِيرَة (مَشَّايَة)",
+      "مَوْكِيت / سَجَّادٌ شَامِل",
+      "إِضَاءَةُ السَّقْف (نَجَفَة / مِصْبَاحُ السَّقْف)",
+      "مِفْتَاحُ الإِضَاءَة (زِرُّ النُّور)",
+      "سَتَائِرُ النَّافِذَة (شِيش / سَتَائِر مَعْدَنِيَّة)",
+      "مِقْبَسُ الكَهْرَبَاء (فِيشَة / بَرِيزَة)"
+    ],
+    "usage": {
+      "goal": "Name common bedroom objects and say where or how they are used.",
+      "canDoStatement": "I can name common bedroom objects and say where or how they are used",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Pillowcase", "Comforter", "Cushion"],
+          "scenario": "In my bedroom, I can see or use pillowcase, comforter, and cushion.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Pillowcase", "Comforter", "Cushion"],
+            "expectedAnswer": "Pillowcase"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use pillowcase, comforter, and cushion. Emphasize pillowcase, comforter, and cushion and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bed Frame", "Headboard", "Lamp"],
+          "scenario": "In my bedroom, I can see or use bed frame, headboard, and lamp.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Bed Frame", "Headboard", "Lamp"],
+            "expectedAnswer": "Bed Frame"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use bed frame, headboard, and lamp. Emphasize bed frame, headboard, and lamp and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Curtain", "Window", "Door"],
+          "scenario": "In my bedroom, I can see or use curtain, window, and door.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Curtain", "Window", "Door"],
+            "expectedAnswer": "Curtain"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use curtain, window, and door. Emphasize curtain, window, and door and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Rug", "Carpet", "Ceiling Light"],
+          "scenario": "In my bedroom, I can see or use rug, carpet, and ceiling light.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Rug", "Carpet", "Ceiling Light"],
+            "expectedAnswer": "Rug"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use rug, carpet, and ceiling light. Emphasize rug, carpet, and ceiling light and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Light Switch", "Blinds", "Outlet"],
+          "scenario": "In my bedroom, I can see or use light switch, blinds, and outlet.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Light Switch", "Blinds", "Outlet"],
+            "expectedAnswer": "Light Switch"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use light switch, blinds, and outlet. Emphasize light switch, blinds, and outlet and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bedroom Mini Story",
+      "text": "I am in the bedroom. I can see pillowcase, comforter, and cushion. I also notice bed frame, headboard, and lamp. I point to each item and say its English name. Then I use one more word: curtain. We also remember earlier words such as bed and nightstand.",
+      "imageBrief": "One uncluttered the bedroom scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pillowcase"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Bed Frame"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Curtain"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Rug"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Light Switch"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Pillowcase"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Comforter"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Lamp"
+      }
+    ],
+    "video": {
+      "title": "The Bedroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a bedroom. Show pillowcase, comforter, cushion, bed frame, and headboard naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see pillowcase, comforter, and cushion. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Bed, Nightstand from bedroom-1\n3 lesson(s) back: Youngest Child, Middle Child from family-2\n7 lesson(s) back: Happy, Joyful from basic-emotions-1"
+  },
+  {
+    "lessonId": "bedroom-3",
+    "lessonName": "The Bedroom 3",
+    "unitId": "bedroom",
+    "unitName": "The Bedroom",
+    "unitOrder": 6,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 20,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Alarm Clock",
+      "Picture Frame",
+      "Clock",
+      "Plant",
+      "Vase",
+      "Candle",
+      "Calendar",
+      "Tissue Box",
+      "Wastebasket",
+      "Hanger",
+      "Pajamas",
+      "Slippers",
+      "Robe",
+      "Teddy Bear",
+      "Poster"
+    ],
+    "targetWordsArabic": [
+      "سَاعَةُ المُنَبِّه (مُنَبِّه)",
+      "إِطَارُ الصُّورَة (بِرْوَاز)",
+      "سَاعَةُ حَائِط / سَاعَة",
+      "نَبْتَة مَنْزِلِيَّة (زَرْع)",
+      "زَهْرِيَّة (فَازَة)",
+      "شَمْعَة",
+      "تَقْوِيم (نَتِيجَة)",
+      "عُلْبَةُ المَنَادِيل",
+      "سَلَّةُ المُهْمَلات",
+      "شَمَّاعَةُ مَلابِس",
+      "بِي جَامَة / مَلابِسُ النَّوْم",
+      "شَبْشَب / خُفّ مَنْزِلِيّ",
+      "رُوب حَمَّام / بُرْنُس",
+      "دُبٌّ لُعْبَة (دُبٌّ قُمَاشِيّ)",
+      "مُلْصَقٌ جِدَارِيّ (بُوسْتَر)"
+    ],
+    "usage": {
+      "goal": "Name common bedroom objects and say where or how they are used.",
+      "canDoStatement": "I can name common bedroom objects and say where or how they are used",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Alarm Clock", "Picture Frame", "Clock"],
+          "scenario": "In my bedroom, I can see or use alarm clock, picture frame, and clock.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Alarm Clock", "Picture Frame", "Clock"],
+            "expectedAnswer": "Alarm Clock"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use alarm clock, picture frame, and clock. Emphasize alarm clock, picture frame, and clock and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Plant", "Vase", "Candle"],
+          "scenario": "In my bedroom, I can see or use plant, vase, and candle.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Plant", "Vase", "Candle"],
+            "expectedAnswer": "Plant"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use plant, vase, and candle. Emphasize plant, vase, and candle and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Calendar", "Tissue Box", "Wastebasket"],
+          "scenario": "In my bedroom, I can see or use calendar, tissue box, and wastebasket.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Calendar", "Tissue Box", "Wastebasket"],
+            "expectedAnswer": "Calendar"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use calendar, tissue box, and wastebasket. Emphasize calendar, tissue box, and wastebasket and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Hanger", "Pajamas", "Slippers"],
+          "scenario": "In my bedroom, I can see or use hanger, pajamas, and slippers.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Hanger", "Pajamas", "Slippers"],
+            "expectedAnswer": "Hanger"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use hanger, pajamas, and slippers. Emphasize hanger, pajamas, and slippers and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Robe", "Teddy Bear", "Poster"],
+          "scenario": "In my bedroom, I can see or use robe, teddy bear, and poster.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Robe", "Teddy Bear", "Poster"],
+            "expectedAnswer": "Robe"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use robe, teddy bear, and poster. Emphasize robe, teddy bear, and poster and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bedroom Mini Story",
+      "text": "I am in the bedroom. I can see alarm clock, picture frame, and clock. I also notice plant, vase, and candle. I point to each item and say its English name. Then I use one more word: calendar. We also remember earlier words such as pillowcase and comforter.",
+      "imageBrief": "One uncluttered the bedroom scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Alarm Clock"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Plant"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Calendar"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Hanger"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Robe"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Alarm Clock"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Picture Frame"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Candle"
+      }
+    ],
+    "video": {
+      "title": "The Bedroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a bedroom. Show alarm clock, picture frame, clock, plant, and vase naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see alarm clock, picture frame, and clock. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Pillowcase, Comforter from bedroom-2\n3 lesson(s) back: Love, Trust from family-3\n7 lesson(s) back: Disappointed, Upset from basic-emotions-2"
+  },
+  {
+    "lessonId": "bedroom-4",
+    "lessonName": "The Bedroom 4",
+    "unitId": "bedroom",
+    "unitName": "The Bedroom",
+    "unitOrder": 6,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 21,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Books",
+      "Photo Album",
+      "Glasses",
+      "Backpack",
+      "Jewelry Box",
+      "Phone",
+      "Charger",
+      "Laptop",
+      "Headphones",
+      "Tablet",
+      "Speaker",
+      "Reading Light",
+      "Remote Control"
+    ],
+    "targetWordsArabic": [
+      "كُتُب",
+      "أَلْبُومُ صُوَر",
+      "نَظَّارَات (نَظَّارَة)",
+      "حَقِيبَةُ ظَهْر",
+      "صُنْدُوقُ المَجَوْهَرَات",
+      "هَاتِف (مُوبَايِل)",
+      "شَاحِن",
+      "حَاسُوبٌ مَحْمُول (لَابْتُوب)",
+      "سَمَّاعَاتُ الرَّأْس (هَيْدْفُونْز)",
+      "جِهَازٌ لَوْحِيّ (تَابْلِت)",
+      "مُكَبِّرُ صَوْت (سَبِيكَر / سَمَّاعَة)",
+      "مِصْبَاحُ قِرَاءَة (كِشَّافُ القِرَاءَة)",
+      "جِهَازُ التَّحَكُّم عَنْ بُعْد (رِيمُوت)"
+    ],
+    "usage": {
+      "goal": "Name common bedroom objects and say where or how they are used.",
+      "canDoStatement": "I can name common bedroom objects and say where or how they are used",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Books", "Photo Album", "Glasses"],
+          "scenario": "In my bedroom, I can see or use books, photo album, and glasses.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Books", "Photo Album", "Glasses"],
+            "expectedAnswer": "Books"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use books, photo album, and glasses. Emphasize books, photo album, and glasses and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Backpack", "Jewelry Box", "Phone"],
+          "scenario": "In my bedroom, I can see or use backpack, jewelry box, and phone.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Backpack", "Jewelry Box", "Phone"],
+            "expectedAnswer": "Backpack"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use backpack, jewelry box, and phone. Emphasize backpack, jewelry box, and phone and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Charger", "Laptop", "Headphones"],
+          "scenario": "In my bedroom, I can see or use charger, laptop, and headphones.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Charger", "Laptop", "Headphones"],
+            "expectedAnswer": "Charger"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use charger, laptop, and headphones. Emphasize charger, laptop, and headphones and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Tablet", "Speaker", "Reading Light"],
+          "scenario": "In my bedroom, I can see or use tablet, speaker, and reading light.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Tablet", "Speaker", "Reading Light"],
+            "expectedAnswer": "Tablet"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use tablet, speaker, and reading light. Emphasize tablet, speaker, and reading light and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": "Remote Control",
+          "scenario": "In my bedroom, I can see or use remote control.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": "Remote Control",
+            "expectedAnswer": "Remote Control"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the bedroom that represents: In my bedroom, I can see or use remote control. Emphasize remote control and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bedroom Mini Story",
+      "text": "I am in the bedroom. I can see books, photo album, and glasses. I also notice backpack, jewelry box, and phone. I point to each item and say its English name. Then I use one more word: charger. We also remember earlier words such as alarm clock and picture frame.",
+      "imageBrief": "One uncluttered the bedroom scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Books"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Backpack"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Charger"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Tablet"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Remote Control"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Books"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Photo Album"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Phone"
+      }
+    ],
+    "video": {
+      "title": "The Bedroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a bedroom. Show books, photo album, glasses, backpack, and jewelry box naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see books, photo album, and glasses. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Alarm Clock, Picture Frame from bedroom-3\n3 lesson(s) back: Bed, Nightstand from bedroom-1\n7 lesson(s) back: Hungry, Thirsty from basic-emotions-3"
+  }
+]

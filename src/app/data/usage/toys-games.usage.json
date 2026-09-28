@@ -1,0 +1,436 @@
+﻿[
+  {
+    "lessonId": "toys-games-1",
+    "lessonName": "Toys & Games 1",
+    "unitId": "toys-games",
+    "unitName": "Toys & Games",
+    "unitOrder": 18,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 70,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Doll",
+      "Teddy Bear",
+      "Action Figure",
+      "Ball",
+      "Blocks",
+      "Puzzle",
+      "Yo-Yo",
+      "Kite",
+      "Top",
+      "Marbles",
+      "Chess",
+      "Checkers",
+      "Monopoly",
+      "Scrabble",
+      "Dominoes"
+    ],
+    "targetWordsArabic": [
+      "شخص يُسمّى «دولل»",
+      "دُبٌّ لُعْبَة (دُبٌّ قُمَاشِيّ)",
+      "مصطلح مرتبط بالموضوع يُسمّى «اكتيون فيجوري»",
+      "مقدمة باطن القدم",
+      "مصطلح مرتبط بالموضوع يُسمّى «بلوكس»",
+      "لعبة يُسمّى «بوززلي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يو-يو»",
+      "حدأة",
+      "مصطلح مرتبط بالموضوع يُسمّى «توب»",
+      "لعبة يُسمّى «ماربليس»",
+      "شطرنج",
+      "لعبة يُسمّى «تشيكيرس»",
+      "لعبة يُسمّى «مونوبولي»",
+      "لعبة يُسمّى «سكراببلي»",
+      "لعبة يُسمّى «دومينويس»"
+    ],
+    "usage": {
+      "goal": "Name common toys, games, and play equipment.",
+      "canDoStatement": "I can name common toys, games, and play equipment",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Doll", "Teddy Bear", "Action Figure"],
+          "scenario": "For play, I can use or play with doll, teddy bear, and action figure.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Doll", "Teddy Bear", "Action Figure"],
+            "expectedAnswer": "Doll"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with doll, teddy bear, and action figure. Emphasize doll, teddy bear, and action figure and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Ball", "Blocks", "Puzzle"],
+          "scenario": "For play, I can use or play with ball, blocks, and puzzle.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Ball", "Blocks", "Puzzle"],
+            "expectedAnswer": "Ball"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with ball, blocks, and puzzle. Emphasize ball, blocks, and puzzle and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Yo-Yo", "Kite", "Top"],
+          "scenario": "For play, I can use or play with yo-yo, kite, and top.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Yo-Yo", "Kite", "Top"],
+            "expectedAnswer": "Yo-Yo"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with yo-yo, kite, and top. Emphasize yo-yo, kite, and top and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Marbles", "Chess", "Checkers"],
+          "scenario": "For play, I can use or play with marbles, chess, and checkers.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Marbles", "Chess", "Checkers"],
+            "expectedAnswer": "Marbles"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with marbles, chess, and checkers. Emphasize marbles, chess, and checkers and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Monopoly", "Scrabble", "Dominoes"],
+          "scenario": "For play, I can use or play with monopoly, scrabble, and dominoes.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Monopoly", "Scrabble", "Dominoes"],
+            "expectedAnswer": "Monopoly"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with monopoly, scrabble, and dominoes. Emphasize monopoly, scrabble, and dominoes and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Toys & Games Mini Story",
+      "text": "It is play time. I see doll, teddy bear, and action figure. My friends also use ball, blocks, and puzzle. We take turns and say the English name of each toy or game. We also remember earlier words such as homework and test.",
+      "imageBrief": "One uncluttered toys & games scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Doll"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Ball"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Yo-Yo"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Marbles"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Monopoly"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Doll"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Teddy Bear"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Puzzle"
+      }
+    ],
+    "video": {
+      "title": "Toys & Games: See It, Say It",
+      "idea": "30–50 second contextual video set in a play area. Show doll, teddy bear, action figure, ball, and blocks naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see doll, teddy bear, and action figure. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Homework, Test from classroom-5\n3 lesson(s) back: Backpack, Scissors from classroom-3\n7 lesson(s) back: Eat Dinner, Wash Dishes from daily-routines-3"
+  },
+  {
+    "lessonId": "toys-games-2",
+    "lessonName": "Toys & Games 2",
+    "unitId": "toys-games",
+    "unitName": "Toys & Games",
+    "unitOrder": 18,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 71,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Playing Cards",
+      "Dice",
+      "Jigsaw Puzzle",
+      "Trivia",
+      "Bingo",
+      "Video Game",
+      "Console",
+      "Controller",
+      "Tablet",
+      "Robot Toy",
+      "Drone",
+      "Remote Control Car",
+      "Handheld Game",
+      "VR Headset",
+      "Electronic Pet"
+    ],
+    "targetWordsArabic": [
+      "لعبة يُسمّى «بلايينج كاردس»",
+      "يقطّع مكعبات",
+      "مصطلح مرتبط بالموضوع يُسمّى «جيجساو بوززلي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تريفيا»",
+      "لعبة يُسمّى «بينجو»",
+      "لعبة يُسمّى «فيديو جامي»",
+      "وحدة تحكم",
+      "متحكم",
+      "جِهَازٌ لَوْحِيّ (تَابْلِت)",
+      "لعبة روبوت",
+      "طائرة مسيّرة",
+      "سيارة لعبة بالتحكم عن بُعد",
+      "لعبة إلكترونية محمولة",
+      "نظارة واقع افتراضي",
+      "حيوان أليف إلكتروني"
+    ],
+    "usage": {
+      "goal": "Name common toys, games, and play equipment.",
+      "canDoStatement": "I can name common toys, games, and play equipment",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Playing Cards", "Dice", "Jigsaw Puzzle"],
+          "scenario": "For play, I can use or play with playing cards, dice, and jigsaw puzzle.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Playing Cards", "Dice", "Jigsaw Puzzle"],
+            "expectedAnswer": "Playing Cards"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with playing cards, dice, and jigsaw puzzle. Emphasize playing cards, dice, and jigsaw puzzle and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Trivia", "Bingo", "Video Game"],
+          "scenario": "For play, I can use or play with trivia, bingo, and video game.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Trivia", "Bingo", "Video Game"],
+            "expectedAnswer": "Trivia"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with trivia, bingo, and video game. Emphasize trivia, bingo, and video game and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Console", "Controller", "Tablet"],
+          "scenario": "For play, I can use or play with console, controller, and tablet.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Console", "Controller", "Tablet"],
+            "expectedAnswer": "Console"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with console, controller, and tablet. Emphasize console, controller, and tablet and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Robot Toy", "Drone", "Remote Control Car"],
+          "scenario": "For play, I can use or play with robot toy, drone, and remote control car.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Robot Toy", "Drone", "Remote Control Car"],
+            "expectedAnswer": "Robot Toy"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with robot toy, drone, and remote control car. Emphasize robot toy, drone, and remote control car and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Handheld Game", "VR Headset", "Electronic Pet"],
+          "scenario": "For play, I can use or play with handheld game, vr headset, and electronic pet.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Handheld Game", "VR Headset", "Electronic Pet"],
+            "expectedAnswer": "Handheld Game"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with handheld game, vr headset, and electronic pet. Emphasize handheld game, vr headset, and electronic pet and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Toys & Games Mini Story",
+      "text": "It is play time. I see playing cards, dice, and jigsaw puzzle. My friends also use trivia, bingo, and video game. We take turns and say the English name of each toy or game. We also remember earlier words such as doll and teddy bear.",
+      "imageBrief": "One uncluttered toys & games scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Playing Cards"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Trivia"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Console"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Robot Toy"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Handheld Game"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Playing Cards"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Dice"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Video Game"
+      }
+    ],
+    "video": {
+      "title": "Toys & Games: See It, Say It",
+      "idea": "30–50 second contextual video set in a play area. Show playing cards, dice, jigsaw puzzle, trivia, and bingo naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see playing cards, dice, and jigsaw puzzle. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Doll, Teddy Bear from toys-games-1\n3 lesson(s) back: Printer, USB Drive from classroom-4\n7 lesson(s) back: Clean House, Do Laundry from daily-routines-4"
+  },
+  {
+    "lessonId": "toys-games-3",
+    "lessonName": "Toys & Games 3",
+    "unitId": "toys-games",
+    "unitName": "Toys & Games",
+    "unitOrder": 18,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 72,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Bicycle",
+      "Skateboard",
+      "Scooter",
+      "Roller Skates",
+      "Jump Rope",
+      "Frisbee",
+      "Trampoline",
+      "Sled",
+      "Water Gun",
+      "Swing"
+    ],
+    "targetWordsArabic": [
+      "دراجة",
+      "مصطلح مرتبط بالموضوع يُسمّى «سكاتيبوارد»",
+      "قارب يُسمّى «سكووتير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «روللير سكاتيس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «جومب روبي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فريسبيي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ترامبوليني»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سليد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «واتير جون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سوينج»"
+    ],
+    "usage": {
+      "goal": "Name common toys, games, and play equipment.",
+      "canDoStatement": "I can name common toys, games, and play equipment",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bicycle", "Skateboard", "Scooter"],
+          "scenario": "For play, I can use or play with bicycle, skateboard, and scooter.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Bicycle", "Skateboard", "Scooter"],
+            "expectedAnswer": "Bicycle"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with bicycle, skateboard, and scooter. Emphasize bicycle, skateboard, and scooter and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Roller Skates", "Jump Rope", "Frisbee"],
+          "scenario": "For play, I can use or play with roller skates, jump rope, and frisbee.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Roller Skates", "Jump Rope", "Frisbee"],
+            "expectedAnswer": "Roller Skates"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with roller skates, jump rope, and frisbee. Emphasize roller skates, jump rope, and frisbee and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Trampoline", "Sled", "Water Gun"],
+          "scenario": "For play, I can use or play with trampoline, sled, and water gun.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Trampoline", "Sled", "Water Gun"],
+            "expectedAnswer": "Trampoline"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with trampoline, sled, and water gun. Emphasize trampoline, sled, and water gun and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": "Swing",
+          "scenario": "For play, I can use or play with swing.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": "Swing",
+            "expectedAnswer": "Swing"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with swing. Emphasize swing and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Toys & Games Mini Story",
+      "text": "It is play time. I see bicycle, skateboard, and scooter. My friends also use roller skates, jump rope, and frisbee. We take turns and say the English name of each toy or game. We also remember earlier words such as playing cards and dice.",
+      "imageBrief": "One uncluttered toys & games scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Bicycle"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Roller Skates"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Trampoline"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Swing"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Bicycle"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Skateboard"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Frisbee"
+      }
+    ],
+    "video": {
+      "title": "Toys & Games: See It, Say It",
+      "idea": "30–50 second contextual video set in a play area. Show bicycle, skateboard, scooter, roller skates, and jump rope naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see bicycle, skateboard, and scooter. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Playing Cards, Dice from toys-games-2\n3 lesson(s) back: Homework, Test from classroom-5\n7 lesson(s) back: Pencil, Pen from classroom-1"
+  }
+]

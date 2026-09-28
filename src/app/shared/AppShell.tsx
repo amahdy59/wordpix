@@ -31,11 +31,11 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
         {/* Scrollable content area */}
         <main
           id="main-content"
-          className="flex-1 overflow-y-auto pb-[calc(env(safe-area-inset-bottom)+96px)] scroll-pb-[calc(env(safe-area-inset-bottom)+96px)] lg:pb-6 lg:scroll-pb-6 pt-6 -webkit-overflow-scrolling-touch"
+          className="flex-1 overflow-y-auto pb-[calc(env(safe-area-inset-bottom)+96px)] scroll-pb-[calc(env(safe-area-inset-bottom)+96px)] lg:pb-8 lg:scroll-pb-6 pt-4 sm:pt-6 lg:pt-8 -webkit-overflow-scrolling-touch"
           tabIndex={-1}
         >
-          {/* Centered reading column for all pages */}
-          <div className="mx-auto max-w-5xl w-full px-4 lg:px-8">
+          {/* A single fluid canvas keeps every tab aligned while still using wide screens well. */}
+          <div className="wp-container-shell wp-layout-gutter">
             <NetworkStatusBanner />
             {children}
           </div>

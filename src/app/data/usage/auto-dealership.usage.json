@@ -1,0 +1,427 @@
+﻿[
+  {
+    "lessonId": "auto-dealership-1",
+    "lessonName": "The Auto Dealership 1",
+    "unitId": "auto-dealership",
+    "unitName": "The Auto Dealership",
+    "unitOrder": 164,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 727,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Showroom",
+      "Lot",
+      "Service Center",
+      "Parts Department",
+      "Finance Office",
+      "Waiting Room",
+      "Detail Bay",
+      "Test Drive Route",
+      "Reception",
+      "Manager's Office",
+      "Test Drive",
+      "Trade-In",
+      "Financing",
+      "Lease",
+      "Down Payment"
+    ],
+    "targetWordsArabic": [
+      "صالة عرض",
+      "ساحة سيارات",
+      "مركز صيانة",
+      "مركبة يُسمّى «بارتس ديبارتمينت»",
+      "جزء يُسمّى «فينانكي وففيكي»",
+      "غرفة انتظار",
+      "منطقة تنظيف وتجهيز السيارات",
+      "مسار تجربة القيادة",
+      "استقبال",
+      "مكتب المدير",
+      "مركبة يُسمّى «تيست دريفي»",
+      "سيارة مستبدلة ضمن صفقة",
+      "تمويل",
+      "تأجير",
+      "مصطلح مرتبط بالموضوع يُسمّى «دوون بايمينت»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Auto Dealership to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the auto dealership vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Showroom", "Lot", "Service Center", "Parts Department"],
+          "scenario": "The technician or salesperson discusses showroom, lot, service center, and parts department with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Showroom", "Lot", "Service Center", "Parts Department"],
+            "expectedAnswer": "Showroom"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses showroom, lot, service center, and parts department with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Finance Office", "Waiting Room", "Detail Bay", "Test Drive Route"],
+          "scenario": "The technician or salesperson discusses finance office, waiting room, detail bay, and test drive route with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Finance Office", "Waiting Room", "Detail Bay", "Test Drive Route"],
+            "expectedAnswer": "Finance Office"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses finance office, waiting room, detail bay, and test drive route with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Reception", "Manager's Office", "Test Drive", "Trade-In"],
+          "scenario": "The technician or salesperson discusses reception, manager's office, test drive, and trade-in with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Reception", "Manager's Office", "Test Drive", "Trade-In"],
+            "expectedAnswer": "Reception"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses reception, manager's office, test drive, and trade-in with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Financing", "Lease", "Down Payment"],
+          "scenario": "The technician or salesperson discusses financing, lease, and down payment with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Financing", "Lease", "Down Payment"],
+            "expectedAnswer": "Financing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses financing, lease, and down payment with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Auto Dealership: Report Excerpt",
+      "text": "A realistic case involving the auto dealership shows how precise vocabulary can influence choices, explanations, and outcomes. The technician or salesperson discusses showroom, lot, service center, and parts department with the customer. Each term belongs to a different part of the vehicle or buying process. The technician or salesperson discusses finance office, waiting room, detail bay, and test drive route with the customer. Each term belongs to a different part of the vehicle or buying process. The technician or salesperson discusses reception, manager's office, test drive, and trade-in with the customer. Each term belongs to a different part of the vehicle or buying process. The technician or salesperson discusses financing, lease, and down payment with the customer. Each term belongs to a different part of the vehicle or buying process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Auto Dealership. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Showroom"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Finance Office"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Reception"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Financing"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Showroom"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Power Steering Fluid” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Auto Dealership: In Context",
+      "idea": "45-70 seconds contextual scene in the automotive setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the automotive setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Power Steering Fluid, Gas from car-parts-mechanics-4\n3 lesson(s) back: Roof, Windshield from car-parts-mechanics-2\n7 lesson(s) back: Sedan, Hatchback from car-types-1"
+  },
+  {
+    "lessonId": "auto-dealership-2",
+    "lessonName": "The Auto Dealership 2",
+    "unitId": "auto-dealership",
+    "unitName": "The Auto Dealership",
+    "unitOrder": 164,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 728,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Monthly Payment",
+      "MSRP",
+      "Sticker Price",
+      "Negotiation",
+      "Closing",
+      "New",
+      "Used",
+      "Certified Pre-Owned",
+      "Demo",
+      "Mileage",
+      "Carfax",
+      "Warranty",
+      "Extended Warranty",
+      "Recall",
+      "Lemon Law"
+    ],
+    "targetWordsArabic": [
+      "دفعة شهرية",
+      "سعر التجزئة المقترح من الشركة المصنعة",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستيكير بريكي»",
+      "تفاوض",
+      "إتمام الصفقة",
+      "جديد",
+      "مستعمل",
+      "مستعملة معتمدة",
+      "عرض تجريبي",
+      "عدد الكيلومترات",
+      "كارفاكس؛ تقرير تاريخ السيارة",
+      "ضمان",
+      "ضمان ممتد",
+      "استدعاء للصيانة",
+      "قانون حماية مشتري المركبات المعيبة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Auto Dealership to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the auto dealership vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Monthly Payment", "MSRP", "Sticker Price", "Negotiation"],
+          "scenario": "The technician or salesperson discusses monthly payment, msrp, sticker price, and negotiation with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Monthly Payment", "MSRP", "Sticker Price", "Negotiation"],
+            "expectedAnswer": "Monthly Payment"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses monthly payment, msrp, sticker price, and negotiation with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Closing", "New", "Used", "Certified Pre-Owned"],
+          "scenario": "The technician or salesperson discusses closing, new, used, and certified pre-owned with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Closing", "New", "Used", "Certified Pre-Owned"],
+            "expectedAnswer": "Closing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses closing, new, used, and certified pre-owned with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Demo", "Mileage", "Carfax", "Warranty"],
+          "scenario": "The technician or salesperson discusses demo, mileage, carfax, and warranty with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Demo", "Mileage", "Carfax", "Warranty"],
+            "expectedAnswer": "Demo"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses demo, mileage, carfax, and warranty with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Extended Warranty", "Recall", "Lemon Law"],
+          "scenario": "The technician or salesperson discusses extended warranty, recall, and lemon law with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Extended Warranty", "Recall", "Lemon Law"],
+            "expectedAnswer": "Extended Warranty"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses extended warranty, recall, and lemon law with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Auto Dealership: Case Note",
+      "text": "A realistic case involving the auto dealership shows how precise vocabulary can influence choices, explanations, and outcomes. The technician or salesperson discusses monthly payment, msrp, sticker price, and negotiation with the customer. Each term belongs to a different part of the vehicle or buying process. The technician or salesperson discusses closing, new, used, and certified pre-owned with the customer. Each term belongs to a different part of the vehicle or buying process. The technician or salesperson discusses demo, mileage, carfax, and warranty with the customer. Each term belongs to a different part of the vehicle or buying process. The technician or salesperson discusses extended warranty, recall, and lemon law with the customer. Each term belongs to a different part of the vehicle or buying process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Auto Dealership. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Monthly Payment"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Closing"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Demo"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Extended Warranty"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Monthly Payment"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Showroom” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Auto Dealership: In Context",
+      "idea": "45-70 seconds contextual scene in the automotive setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the automotive setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Showroom, Lot from auto-dealership-1\n3 lesson(s) back: Tire, Wheel from car-parts-mechanics-3\n7 lesson(s) back: Dump Truck, Flatbed from car-types-2"
+  },
+  {
+    "lessonId": "auto-dealership-3",
+    "lessonName": "The Auto Dealership 3",
+    "unitId": "auto-dealership",
+    "unitName": "The Auto Dealership",
+    "unitOrder": 164,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 729,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Sales Associate",
+      "Finance Manager",
+      "Service Advisor",
+      "Technician",
+      "General Manager",
+      "Receptionist",
+      "Detailer",
+      "Parts Specialist",
+      "Lot Attendant",
+      "Title Clerk"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «ساليس اسسوكياتي»",
+      "مدير التمويل",
+      "مرشد خدمة",
+      "فني",
+      "سفينة يُسمّى «جينيرال ماناجير»",
+      "موظف استقبال",
+      "مختص تنظيف وتلميع السيارات",
+      "سفينة يُسمّى «بارتس سبيكياليست»",
+      "مرافق خدمة ساحة سيارات",
+      "سفينة يُسمّى «تيتلي كليرك»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Auto Dealership to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the auto dealership vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "review",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sales Associate", "Finance Manager", "Service Advisor", "Technician"],
+          "scenario": "The technician or salesperson discusses sales associate, finance manager, service advisor, and technician with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sales Associate", "Finance Manager", "Service Advisor", "Technician"],
+            "expectedAnswer": "Sales Associate"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses sales associate, finance manager, service advisor, and technician with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["General Manager", "Receptionist", "Detailer", "Parts Specialist"],
+          "scenario": "The general manager, receptionist, detailer, and parts specialist appear in the same situation, each with a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["General Manager", "Receptionist", "Detailer", "Parts Specialist"],
+            "expectedAnswer": "General Manager"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The general manager, receptionist, detailer, and parts specialist appear in the same situation, each with a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Lot Attendant", "Title Clerk"],
+          "scenario": "The lot attendant and title clerk appear in the same situation, each with a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lot Attendant", "Title Clerk"],
+            "expectedAnswer": "Lot Attendant"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lot attendant and title clerk appear in the same situation, each with a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Auto Dealership: Review",
+      "text": "A realistic case involving the auto dealership shows how precise vocabulary can influence choices, explanations, and outcomes. The technician or salesperson discusses sales associate, finance manager, service advisor, and technician with the customer. Each term belongs to a different part of the vehicle or buying process. The general manager, receptionist, detailer, and parts specialist appear in the same situation, each with a different role. The lot attendant and title clerk appear in the same situation, each with a different role. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Auto Dealership. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sales Associate"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "General Manager"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lot Attendant"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Sales Associate"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Monthly Payment” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Auto Dealership: In Context",
+      "idea": "45-70 seconds contextual scene in the automotive setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the automotive setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Monthly Payment, MSRP from auto-dealership-2\n3 lesson(s) back: Power Steering Fluid, Gas from car-parts-mechanics-4\n7 lesson(s) back: Motorcycle, Scooter from car-types-3"
+  }
+]

@@ -1,0 +1,436 @@
+﻿[
+  {
+    "lessonId": "basic-emotions-1",
+    "lessonName": "Basic Emotions 1",
+    "unitId": "basic-emotions",
+    "unitName": "Basic Emotions",
+    "unitOrder": 4,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 12,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Happy",
+      "Joyful",
+      "Excited",
+      "Proud",
+      "Grateful",
+      "Content",
+      "Amused",
+      "Delighted",
+      "Cheerful",
+      "Hopeful",
+      "Sad",
+      "Angry",
+      "Scared",
+      "Worried",
+      "Frustrated"
+    ],
+    "targetWordsArabic": [
+      "سعيد",
+      "مبتهج",
+      "متحمس",
+      "فخور",
+      "ممتن",
+      "راضٍ",
+      "شعور يُسمّى «اموسيد»",
+      "مسرور",
+      "مرح",
+      "متفائل",
+      "حزين",
+      "غاضب",
+      "خائف",
+      "قلق",
+      "محبط"
+    ],
+    "usage": {
+      "goal": "Name simple feelings, physical states, and reactions.",
+      "canDoStatement": "I can name simple feelings, physical states, and reactions",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Happy", "Joyful", "Excited"],
+          "scenario": "People can feel happy, joyful, and excited in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Happy", "Joyful", "Excited"],
+            "expectedAnswer": "Happy"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel happy, joyful, and excited in different situations. Emphasize happy, joyful, and excited and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Proud", "Grateful", "Content"],
+          "scenario": "People can feel proud, grateful, and content in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Proud", "Grateful", "Content"],
+            "expectedAnswer": "Proud"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel proud, grateful, and content in different situations. Emphasize proud, grateful, and content and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Amused", "Delighted", "Cheerful"],
+          "scenario": "People can feel amused, delighted, and cheerful in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Amused", "Delighted", "Cheerful"],
+            "expectedAnswer": "Amused"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel amused, delighted, and cheerful in different situations. Emphasize amused, delighted, and cheerful and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Hopeful", "Sad", "Angry"],
+          "scenario": "People can feel hopeful, sad, and angry in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Hopeful", "Sad", "Angry"],
+            "expectedAnswer": "Hopeful"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel hopeful, sad, and angry in different situations. Emphasize hopeful, sad, and angry and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Scared", "Worried", "Frustrated"],
+          "scenario": "People can feel scared, worried, and frustrated in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Scared", "Worried", "Frustrated"],
+            "expectedAnswer": "Scared"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel scared, worried, and frustrated in different situations. Emphasize scared, worried, and frustrated and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Basic Emotions Mini Story",
+      "text": "Today is a busy school day. Maya feels happy, and Omar feels joyful. Later, the class becomes excited. After the activity, one student feels proud. We look at each face and say the feeling word. We also remember earlier words such as grid and array.",
+      "imageBrief": "One uncluttered basic emotions scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Happy"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Proud"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Amused"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Hopeful"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Scared"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Happy"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Joyful"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Content"
+      }
+    ],
+    "video": {
+      "title": "Basic Emotions: See It, Say It",
+      "idea": "30–50 second contextual video set in a school day. Show happy, joyful, excited, proud, and grateful naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see happy, joyful, and excited. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Grid, Array from shapes-geometry-4\n3 lesson(s) back: Prism, Cuboid from shapes-geometry-2\n7 lesson(s) back: Red, Blue from colors-1"
+  },
+  {
+    "lessonId": "basic-emotions-2",
+    "lessonName": "Basic Emotions 2",
+    "unitId": "basic-emotions",
+    "unitName": "Basic Emotions",
+    "unitOrder": 4,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 13,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Disappointed",
+      "Upset",
+      "Annoyed",
+      "Bored",
+      "Lonely",
+      "Calm",
+      "Tired",
+      "Surprised",
+      "Confused",
+      "Curious",
+      "Thoughtful",
+      "Relaxed",
+      "Indifferent",
+      "Sleepy",
+      "Alert"
+    ],
+    "targetWordsArabic": [
+      "خاب أمله",
+      "منزعج",
+      "منزعج",
+      "ضجر",
+      "وحيد",
+      "هادئ",
+      "متعب",
+      "متفاجئ",
+      "مرتبك",
+      "فضولي",
+      "وصف شعور أو صفة يُسمّى «ثووغتفول»",
+      "مسترخٍ",
+      "وصف شعور أو صفة يُسمّى «ينديففيرينت»",
+      "نعسان",
+      "وصف شعور أو صفة يُسمّى «اليرت»"
+    ],
+    "usage": {
+      "goal": "Name simple feelings, physical states, and reactions.",
+      "canDoStatement": "I can name simple feelings, physical states, and reactions",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Disappointed", "Upset", "Annoyed"],
+          "scenario": "People can feel disappointed, upset, and annoyed in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Disappointed", "Upset", "Annoyed"],
+            "expectedAnswer": "Disappointed"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel disappointed, upset, and annoyed in different situations. Emphasize disappointed, upset, and annoyed and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bored", "Lonely", "Calm"],
+          "scenario": "People can feel bored, lonely, and calm in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Bored", "Lonely", "Calm"],
+            "expectedAnswer": "Bored"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel bored, lonely, and calm in different situations. Emphasize bored, lonely, and calm and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Tired", "Surprised", "Confused"],
+          "scenario": "People can feel tired, surprised, and confused in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Tired", "Surprised", "Confused"],
+            "expectedAnswer": "Tired"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel tired, surprised, and confused in different situations. Emphasize tired, surprised, and confused and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Curious", "Thoughtful", "Relaxed"],
+          "scenario": "People can feel curious, thoughtful, and relaxed in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Curious", "Thoughtful", "Relaxed"],
+            "expectedAnswer": "Curious"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel curious, thoughtful, and relaxed in different situations. Emphasize curious, thoughtful, and relaxed and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Indifferent", "Sleepy", "Alert"],
+          "scenario": "People can feel indifferent, sleepy, and alert in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Indifferent", "Sleepy", "Alert"],
+            "expectedAnswer": "Indifferent"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel indifferent, sleepy, and alert in different situations. Emphasize indifferent, sleepy, and alert and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Basic Emotions Mini Story",
+      "text": "Today is a busy school day. Maya feels disappointed, and Omar feels upset. Later, the class becomes annoyed. After the activity, one student feels bored. We look at each face and say the feeling word. We also remember earlier words such as happy and joyful.",
+      "imageBrief": "One uncluttered basic emotions scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Disappointed"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Bored"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Tired"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Curious"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Indifferent"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Disappointed"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Upset"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Calm"
+      }
+    ],
+    "video": {
+      "title": "Basic Emotions: See It, Say It",
+      "idea": "30–50 second contextual video set in a school day. Show disappointed, upset, annoyed, bored, and lonely naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see disappointed, upset, and annoyed. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Happy, Joyful from basic-emotions-1\n3 lesson(s) back: Area, Perimeter from shapes-geometry-3\n7 lesson(s) back: Violet, Coral from colors-2"
+  },
+  {
+    "lessonId": "basic-emotions-3",
+    "lessonName": "Basic Emotions 3",
+    "unitId": "basic-emotions",
+    "unitName": "Basic Emotions",
+    "unitOrder": 4,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 14,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Hungry",
+      "Thirsty",
+      "Full",
+      "Cold",
+      "Hot",
+      "Dizzy",
+      "Nauseous",
+      "Exhausted",
+      "Energetic",
+      "Comfortable"
+    ],
+    "targetWordsArabic": [
+      "شعور يُسمّى «هونجري»",
+      "وصف شعور أو صفة يُسمّى «ثيرستي»",
+      "وصف شعور أو صفة يُسمّى «فولل»",
+      "بارد",
+      "ساخن",
+      "وصف شعور أو صفة يُسمّى «ديززي»",
+      "وصف شعور أو صفة يُسمّى «ناوسيووس»",
+      "وصف شعور أو صفة يُسمّى «يكسهاوستيد»",
+      "نشيط",
+      "وصف شعور أو صفة يُسمّى «كومفورتابلي»"
+    ],
+    "usage": {
+      "goal": "Name simple feelings, physical states, and reactions.",
+      "canDoStatement": "I can name simple feelings, physical states, and reactions",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Hungry", "Thirsty", "Full"],
+          "scenario": "People can feel hungry, thirsty, and full in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Hungry", "Thirsty", "Full"],
+            "expectedAnswer": "Hungry"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel hungry, thirsty, and full in different situations. Emphasize hungry, thirsty, and full and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Cold", "Hot", "Dizzy"],
+          "scenario": "People can feel cold, hot, and dizzy in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Cold", "Hot", "Dizzy"],
+            "expectedAnswer": "Cold"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel cold, hot, and dizzy in different situations. Emphasize cold, hot, and dizzy and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Nauseous", "Exhausted", "Energetic"],
+          "scenario": "People can feel nauseous, exhausted, and energetic in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Nauseous", "Exhausted", "Energetic"],
+            "expectedAnswer": "Nauseous"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel nauseous, exhausted, and energetic in different situations. Emphasize nauseous, exhausted, and energetic and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": "Comfortable",
+          "scenario": "People can feel comfortable in different situations.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": "Comfortable",
+            "expectedAnswer": "Comfortable"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for basic emotions that represents: People can feel comfortable in different situations. Emphasize comfortable and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Basic Emotions Mini Story",
+      "text": "Today is a busy school day. Maya feels hungry, and Omar feels thirsty. Later, the class becomes full. After the activity, one student feels cold. We look at each face and say the feeling word. We also remember earlier words such as disappointed and upset.",
+      "imageBrief": "One uncluttered basic emotions scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Hungry"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Cold"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Nauseous"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Comfortable"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Hungry"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Thirsty"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Dizzy"
+      }
+    ],
+    "video": {
+      "title": "Basic Emotions: See It, Say It",
+      "idea": "30–50 second contextual video set in a school day. Show hungry, thirsty, full, cold, and hot naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see hungry, thirsty, and full. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Disappointed, Upset from basic-emotions-2\n3 lesson(s) back: Grid, Array from shapes-geometry-4\n7 lesson(s) back: Mix, Blend from colors-3"
+  }
+]

@@ -1,0 +1,437 @@
+﻿[
+  {
+    "lessonId": "bank-1",
+    "lessonName": "The Bank 1",
+    "unitId": "bank",
+    "unitName": "The Bank",
+    "unitOrder": 150,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 684,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Lobby",
+      "Teller Window",
+      "Vault",
+      "Safe Deposit Box",
+      "ATM",
+      "Drive-Through",
+      "Office",
+      "Waiting Area",
+      "Security Desk",
+      "Currency Exchange",
+      "Checking Account",
+      "Savings Account",
+      "Joint Account",
+      "Business Account",
+      "Certificate of Deposit"
+    ],
+    "targetWordsArabic": [
+      "ردهة",
+      "شباك الصراف",
+      "قبو معماري",
+      "صندوق أمانات",
+      "جهاز صراف آلي",
+      "خدمة من السيارة",
+      "مكتب",
+      "غرفة يُسمّى «وايتينج اريا»",
+      "مكتب الأمن",
+      "بورصة عملة",
+      "حساب جارٍ",
+      "حساب توفير",
+      "حساب مشترك",
+      "حساب تجاري",
+      "أداة أو جهاز يُسمّى «كيرتيفيكاتي وف ديبوسيت»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Bank to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the bank vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Lobby", "Teller Window", "Vault", "Safe Deposit Box"],
+          "scenario": "During the financial task, the customer and staff member work with lobby, teller window, vault, and safe deposit box. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lobby", "Teller Window", "Vault", "Safe Deposit Box"],
+            "expectedAnswer": "Lobby"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with lobby, teller window, vault, and safe deposit box. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["ATM", "Drive-Through", "Office", "Waiting Area"],
+          "scenario": "During the financial task, the customer and staff member work with atm, drive-through, office, and waiting area. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["ATM", "Drive-Through", "Office", "Waiting Area"],
+            "expectedAnswer": "ATM"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with atm, drive-through, office, and waiting area. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": [
+            "Security Desk",
+            "Currency Exchange",
+            "Checking Account",
+            "Savings Account"
+          ],
+          "scenario": "During the financial task, the customer and staff member work with security desk, currency exchange, checking account, and savings account. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": [
+              "Security Desk",
+              "Currency Exchange",
+              "Checking Account",
+              "Savings Account"
+            ],
+            "expectedAnswer": "Security Desk"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with security desk, currency exchange, checking account, and savings account. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Joint Account", "Business Account", "Certificate of Deposit"],
+          "scenario": "During the financial task, the customer and staff member work with joint account, business account, and certificate of deposit. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Joint Account", "Business Account", "Certificate of Deposit"],
+            "expectedAnswer": "Joint Account"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with joint account, business account, and certificate of deposit. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bank: Case Note",
+      "text": "A realistic case involving the bank shows how precise vocabulary can influence choices, explanations, and outcomes. During the financial task, the customer and staff member work with lobby, teller window, vault, and safe deposit box. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with atm, drive-through, office, and waiting area. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with security desk, currency exchange, checking account, and savings account. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with joint account, business account, and certificate of deposit. Each term affects a different part of the transaction or decision. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Bank. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lobby"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "ATM"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Security Desk"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Joint Account"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Lobby"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Scrubs” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Bank: In Context",
+      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Scrubs, Lab Coat from formal-business-wear-3\n3 lesson(s) back: Suit, Dress Shirt from formal-business-wear-1\n7 lesson(s) back: Freelancer, Contractor from freelancing-remote-work-1"
+  },
+  {
+    "lessonId": "bank-2",
+    "lessonName": "The Bank 2",
+    "unitId": "bank",
+    "unitName": "The Bank",
+    "unitOrder": 150,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 685,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Money Market",
+      "Retirement Account",
+      "Student Account",
+      "Trust Account",
+      "Escrow",
+      "Deposit",
+      "Withdraw",
+      "Transfer",
+      "Wire",
+      "Cash Check",
+      "Open Account",
+      "Close Account",
+      "Apply for Loan",
+      "Pay Bill",
+      "Check Balance"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «مونيي ماركيت»",
+      "حساب تقاعد",
+      "حساب طلابي",
+      "شخص يُسمّى «تروست اككوونت»",
+      "حساب ضمان",
+      "إيداع",
+      "سحب",
+      "تحويل",
+      "سلك",
+      "يصرف شيكًا",
+      "مصطلح مرتبط بالموضوع يُسمّى «وبين اككوونت»",
+      "يغلق حسابًا",
+      "يتقدّم بطلب قرض",
+      "يدفع فاتورة",
+      "يتحقق من الرصيد"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Bank to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the bank vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Money Market", "Retirement Account", "Student Account", "Trust Account"],
+          "scenario": "During the financial task, the customer and staff member work with money market, retirement account, student account, and trust account. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Money Market", "Retirement Account", "Student Account", "Trust Account"],
+            "expectedAnswer": "Money Market"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with money market, retirement account, student account, and trust account. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Escrow", "Deposit", "Withdraw", "Transfer"],
+          "scenario": "During the financial task, the customer and staff member work with escrow, deposit, withdraw, and transfer. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Escrow", "Deposit", "Withdraw", "Transfer"],
+            "expectedAnswer": "Escrow"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with escrow, deposit, withdraw, and transfer. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Wire", "Cash Check", "Open Account", "Close Account"],
+          "scenario": "During the financial task, the customer and staff member work with wire, cash check, open account, and close account. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Wire", "Cash Check", "Open Account", "Close Account"],
+            "expectedAnswer": "Wire"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with wire, cash check, open account, and close account. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Apply for Loan", "Pay Bill", "Check Balance"],
+          "scenario": "During the financial task, the customer and staff member work with apply for loan, pay bill, and check balance. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Apply for Loan", "Pay Bill", "Check Balance"],
+            "expectedAnswer": "Apply for Loan"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with apply for loan, pay bill, and check balance. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bank: Report Excerpt",
+      "text": "A realistic case involving the bank shows how precise vocabulary can influence choices, explanations, and outcomes. During the financial task, the customer and staff member work with money market, retirement account, student account, and trust account. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with escrow, deposit, withdraw, and transfer. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with wire, cash check, open account, and close account. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with apply for loan, pay bill, and check balance. Each term affects a different part of the transaction or decision. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Bank. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Money Market"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Escrow"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Wire"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Apply for Loan"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Money Market"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Lobby” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Bank: In Context",
+      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Lobby, Teller Window from bank-1\n3 lesson(s) back: Pantsuit, Wrap Dress from formal-business-wear-2\n7 lesson(s) back: Dropbox, Figma from freelancing-remote-work-2"
+  },
+  {
+    "lessonId": "bank-3",
+    "lessonName": "The Bank 3",
+    "unitId": "bank",
+    "unitName": "The Bank",
+    "unitOrder": 150,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 686,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Teller",
+      "Bank Manager",
+      "Loan Officer",
+      "Financial Advisor",
+      "Security Guard",
+      "Accountant",
+      "Auditor",
+      "Branch Manager",
+      "Customer Service",
+      "Compliance Officer"
+    ],
+    "targetWordsArabic": [
+      "موظف شباك بنك",
+      "مدير بنك",
+      "موظف قروض",
+      "مستشار مالي",
+      "حارس أمن",
+      "محاسب",
+      "مدقق",
+      "مدير فرع",
+      "خدمة عميل",
+      "ضابط امتثال"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Bank to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the bank vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Teller", "Bank Manager", "Loan Officer", "Financial Advisor"],
+          "scenario": "During the financial task, the customer and staff member work with teller, bank manager, loan officer, and financial advisor. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Teller", "Bank Manager", "Loan Officer", "Financial Advisor"],
+            "expectedAnswer": "Teller"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with teller, bank manager, loan officer, and financial advisor. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Security Guard", "Accountant", "Auditor", "Branch Manager"],
+          "scenario": "During the financial task, the customer and staff member work with security guard, accountant, auditor, and branch manager. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Security Guard", "Accountant", "Auditor", "Branch Manager"],
+            "expectedAnswer": "Security Guard"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with security guard, accountant, auditor, and branch manager. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Customer Service", "Compliance Officer"],
+          "scenario": "During the financial task, the customer and staff member work with customer service and compliance officer. Each term affects a different part of the transaction or decision.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Customer Service", "Compliance Officer"],
+            "expectedAnswer": "Customer Service"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the financial task, the customer and staff member work with customer service and compliance officer. Each term affects a different part of the transaction or decision. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Bank: Workplace/Academic Scenario",
+      "text": "A realistic case involving the bank shows how precise vocabulary can influence choices, explanations, and outcomes. During the financial task, the customer and staff member work with teller, bank manager, loan officer, and financial advisor. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with security guard, accountant, auditor, and branch manager. Each term affects a different part of the transaction or decision. During the financial task, the customer and staff member work with customer service and compliance officer. Each term affects a different part of the transaction or decision. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Bank. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Teller"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Security Guard"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Customer Service"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Teller"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Money Market” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Bank: In Context",
+      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Money Market, Retirement Account from bank-2\n3 lesson(s) back: Scrubs, Lab Coat from formal-business-wear-3\n7 lesson(s) back: Invoice, Contract from freelancing-remote-work-3"
+  }
+]

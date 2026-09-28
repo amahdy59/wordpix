@@ -1,6 +1,6 @@
 import { useEffect, useReducer, type ReactNode } from "react";
 import type { Screen } from "../types";
-import { DEFAULT_UNIT_ID, resolveUnitForLesson } from "../data/lessons";
+import { DEFAULT_UNIT_ID, resolveUnitForLesson } from "../data/courseCatalog";
 import { isUnitLoaded, loadUnitVocabulary } from "../data/vocabulary";
 
 /**

@@ -1,0 +1,731 @@
+﻿[
+  {
+    "lessonId": "costume-shop-1",
+    "lessonName": "The Costume Shop 1",
+    "unitId": "costume-shop",
+    "unitName": "The Costume Shop",
+    "unitOrder": 129,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 594,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Pirate",
+      "Princess",
+      "Knight",
+      "Wizard",
+      "Fairy",
+      "Cowboy",
+      "Astronaut",
+      "Robot",
+      "Superhero",
+      "Ninja",
+      "Cat Ears",
+      "Bunny Tail",
+      "Lion Mane",
+      "Dinosaur Suit",
+      "Butterfly Wings"
+    ],
+    "targetWordsArabic": [
+      "قرصان",
+      "أميرة",
+      "فارس",
+      "ساحر خيالي",
+      "جنية",
+      "راعي بقر",
+      "رائد فضاء",
+      "روبوت",
+      "بطل خارق",
+      "نينجا",
+      "أذنا قطة تنكريتان",
+      "ذيل أرنب تنكري",
+      "لبدة أسد تنكرية",
+      "بدلة ديناصور تنكرية",
+      "أجنحة فراشة تنكرية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Costume Shop to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the costume shop vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Pirate", "Princess", "Knight", "Wizard"],
+          "scenario": "In the shop or studio, the stylist and customer compare pirate, princess, knight, and wizard. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pirate", "Princess", "Knight", "Wizard"],
+            "expectedAnswer": "Pirate"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare pirate, princess, knight, and wizard. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Fairy", "Cowboy", "Astronaut", "Robot"],
+          "scenario": "In the shop or studio, the stylist and customer compare fairy, cowboy, astronaut, and robot. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fairy", "Cowboy", "Astronaut", "Robot"],
+            "expectedAnswer": "Fairy"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare fairy, cowboy, astronaut, and robot. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Superhero", "Ninja", "Cat Ears", "Bunny Tail"],
+          "scenario": "In the shop or studio, the stylist and customer compare superhero, ninja, cat ears, and bunny tail. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Superhero", "Ninja", "Cat Ears", "Bunny Tail"],
+            "expectedAnswer": "Superhero"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare superhero, ninja, cat ears, and bunny tail. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Lion Mane", "Dinosaur Suit", "Butterfly Wings"],
+          "scenario": "In the shop or studio, the stylist and customer compare lion mane, dinosaur suit, and butterfly wings. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lion Mane", "Dinosaur Suit", "Butterfly Wings"],
+            "expectedAnswer": "Lion Mane"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare lion mane, dinosaur suit, and butterfly wings. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Costume Shop: Practical Article",
+      "text": "A practical situation involving the costume shop requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. In the shop or studio, the stylist and customer compare pirate, princess, knight, and wizard. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare fairy, cowboy, astronaut, and robot. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare superhero, ninja, cat ears, and bunny tail. The words connect to appearance, materials, fit, or design. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Costume Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pirate"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fairy"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Superhero"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lion Mane"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Pirate"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Wizard"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Water Bottle” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Costume Shop: In Context",
+      "idea": "40-60 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Water Bottle, Backpack from festival-5\n3 lesson(s) back: Caramel Apple, Popcorn from festival-3\n7 lesson(s) back: dynasty, archaeology from museum-3"
+  },
+  {
+    "lessonId": "costume-shop-2",
+    "lessonName": "The Costume Shop 2",
+    "unitId": "costume-shop",
+    "unitName": "The Costume Shop",
+    "unitOrder": 129,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 595,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Bear Onesie",
+      "Shark Fin",
+      "Ladybug",
+      "Frog Hat",
+      "Monkey Mask",
+      "Mask",
+      "Wig",
+      "Hat",
+      "Cape",
+      "Sword",
+      "Shield",
+      "Wand",
+      "Crown",
+      "Tiara",
+      "Eye Patch"
+    ],
+    "targetWordsArabic": [
+      "بدلة دب قطعة واحدة",
+      "زعنفة قرش تنكرية",
+      "دعسوقة",
+      "قبعة على شكل ضفدع",
+      "قناع قرد",
+      "قناع",
+      "شعر مستعار",
+      "قبعة",
+      "رداء حلاقة",
+      "سيف",
+      "واقي",
+      "عصا سحرية",
+      "تاج",
+      "تاج صغير",
+      "رقعة عين"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Costume Shop to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the costume shop vocabulary to handle a practical situation and explain key details.",
+      "textType": "email",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bear Onesie", "Shark Fin", "Ladybug", "Frog Hat"],
+          "scenario": "In the shop or studio, the stylist and customer compare bear onesie, shark fin, ladybug, and frog hat. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bear Onesie", "Shark Fin", "Ladybug", "Frog Hat"],
+            "expectedAnswer": "Bear Onesie"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare bear onesie, shark fin, ladybug, and frog hat. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Monkey Mask", "Mask", "Wig", "Hat"],
+          "scenario": "In the shop or studio, the stylist and customer compare monkey mask, mask, wig, and hat. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Monkey Mask", "Mask", "Wig", "Hat"],
+            "expectedAnswer": "Monkey Mask"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare monkey mask, mask, wig, and hat. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Cape", "Sword", "Shield", "Wand"],
+          "scenario": "In the shop or studio, the stylist and customer compare cape, sword, shield, and wand. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cape", "Sword", "Shield", "Wand"],
+            "expectedAnswer": "Cape"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare cape, sword, shield, and wand. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Crown", "Tiara", "Eye Patch"],
+          "scenario": "In the shop or studio, the stylist and customer compare crown, tiara, and eye patch. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crown", "Tiara", "Eye Patch"],
+            "expectedAnswer": "Crown"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare crown, tiara, and eye patch. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Costume Shop: Email",
+      "text": "A practical situation involving the costume shop requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. In the shop or studio, the stylist and customer compare bear onesie, shark fin, ladybug, and frog hat. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare monkey mask, mask, wig, and hat. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare cape, sword, shield, and wand. The words connect to appearance, materials, fit, or design. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Costume Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bear Onesie"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Monkey Mask"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cape"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crown"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Bear Onesie"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Frog Hat"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Pirate” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Costume Shop: In Context",
+      "idea": "40-60 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Pirate, Princess from costume-shop-1\n3 lesson(s) back: Carnival Game, Photo Booth from festival-4\n7 lesson(s) back: catalog, timeline from museum-4"
+  },
+  {
+    "lessonId": "costume-shop-3",
+    "lessonName": "The Costume Shop 3",
+    "unitId": "costume-shop",
+    "unitName": "The Costume Shop",
+    "unitOrder": 129,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 596,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Face Paint Set",
+      "Makeup Brush",
+      "Sponge",
+      "Glitter",
+      "False Eyelashes",
+      "Spirit Gum",
+      "Fake Blood",
+      "Scar Wax",
+      "Color Palette",
+      "Mirror",
+      "Fabric Roll",
+      "Sequin",
+      "Feather",
+      "Velvet",
+      "Satin"
+    ],
+    "targetWordsArabic": [
+      "مجموعة طلاء الوجه",
+      "فرشاة مكياج",
+      "إسفنجة",
+      "لمعان زينة",
+      "رموش صناعية",
+      "مصطلح مرتبط بالموضوع يُسمّى «سبيريت جوم»",
+      "دم صناعي للمؤثرات",
+      "شمع مؤثرات لعمل ندبات",
+      "لون يُسمّى «كولور باليتتي»",
+      "مِرْآة",
+      "لفة قماش",
+      "ترتر",
+      "ريشة",
+      "مخمل",
+      "ساتان"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Costume Shop to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the costume shop vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Face Paint Set", "Makeup Brush", "Sponge", "Glitter"],
+          "scenario": "In the shop or studio, the stylist and customer compare face paint set, makeup brush, sponge, and glitter. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Face Paint Set", "Makeup Brush", "Sponge", "Glitter"],
+            "expectedAnswer": "Face Paint Set"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare face paint set, makeup brush, sponge, and glitter. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["False Eyelashes", "Spirit Gum", "Fake Blood", "Scar Wax"],
+          "scenario": "In the shop or studio, the stylist and customer compare false eyelashes, spirit gum, fake blood, and scar wax. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["False Eyelashes", "Spirit Gum", "Fake Blood", "Scar Wax"],
+            "expectedAnswer": "False Eyelashes"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare false eyelashes, spirit gum, fake blood, and scar wax. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Color Palette", "Mirror", "Fabric Roll", "Sequin"],
+          "scenario": "In the shop or studio, the stylist and customer compare color palette, mirror, fabric roll, and sequin. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Color Palette", "Mirror", "Fabric Roll", "Sequin"],
+            "expectedAnswer": "Color Palette"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare color palette, mirror, fabric roll, and sequin. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Feather", "Velvet", "Satin"],
+          "scenario": "In the shop or studio, the stylist and customer compare feather, velvet, and satin. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Feather", "Velvet", "Satin"],
+            "expectedAnswer": "Feather"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare feather, velvet, and satin. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Costume Shop: Review",
+      "text": "A practical situation involving the costume shop requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. In the shop or studio, the stylist and customer compare face paint set, makeup brush, sponge, and glitter. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare false eyelashes, spirit gum, fake blood, and scar wax. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare color palette, mirror, fabric roll, and sequin. The words connect to appearance, materials, fit, or design. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Costume Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Face Paint Set"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "False Eyelashes"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Color Palette"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Feather"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Face Paint Set"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Glitter"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Bear Onesie” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Costume Shop: In Context",
+      "idea": "40-60 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Bear Onesie, Shark Fin from costume-shop-2\n3 lesson(s) back: Water Bottle, Backpack from festival-5\n7 lesson(s) back: Banner, Bunting from festival-1"
+  },
+  {
+    "lessonId": "costume-shop-4",
+    "lessonName": "The Costume Shop 4",
+    "unitId": "costume-shop",
+    "unitName": "The Costume Shop",
+    "unitOrder": 129,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 597,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Tulle",
+      "Elastic",
+      "Zipper",
+      "Button",
+      "Thread",
+      "Mannequin",
+      "Display Rack",
+      "Fitting Room",
+      "Full-Length Mirror",
+      "Price Tag",
+      "Shopping Bag",
+      "Hanger",
+      "Shelf",
+      "Register",
+      "Catalog"
+    ],
+    "targetWordsArabic": [
+      "تول",
+      "مطاط مرن",
+      "سحّاب",
+      "زر",
+      "خيط",
+      "مانيكان",
+      "حامل عرض",
+      "غرفة قياس",
+      "مرآة بطول كامل",
+      "جزء يُسمّى «بريكي تاج»",
+      "كيس تسوق",
+      "شَمَّاعَةُ مَلابِس",
+      "رف",
+      "سجل",
+      "كتالوج"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Costume Shop to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the costume shop vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Tulle", "Elastic", "Zipper", "Button"],
+          "scenario": "In the shop or studio, the stylist and customer compare tulle, elastic, zipper, and button. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tulle", "Elastic", "Zipper", "Button"],
+            "expectedAnswer": "Tulle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare tulle, elastic, zipper, and button. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Thread", "Mannequin", "Display Rack", "Fitting Room"],
+          "scenario": "In the shop or studio, the stylist and customer compare thread, mannequin, display rack, and fitting room. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Thread", "Mannequin", "Display Rack", "Fitting Room"],
+            "expectedAnswer": "Thread"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare thread, mannequin, display rack, and fitting room. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Full-Length Mirror", "Price Tag", "Shopping Bag", "Hanger"],
+          "scenario": "In the shop or studio, the stylist and customer compare full-length mirror, price tag, shopping bag, and hanger. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Full-Length Mirror", "Price Tag", "Shopping Bag", "Hanger"],
+            "expectedAnswer": "Full-Length Mirror"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare full-length mirror, price tag, shopping bag, and hanger. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Shelf", "Register", "Catalog"],
+          "scenario": "In the shop or studio, the stylist and customer compare shelf, register, and catalog. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Shelf", "Register", "Catalog"],
+            "expectedAnswer": "Shelf"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare shelf, register, and catalog. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Costume Shop: Travel/Visitor Guide",
+      "text": "A practical situation involving the costume shop requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. In the shop or studio, the stylist and customer compare tulle, elastic, zipper, and button. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare thread, mannequin, display rack, and fitting room. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare full-length mirror, price tag, shopping bag, and hanger. The words connect to appearance, materials, fit, or design. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Costume Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tulle"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Thread"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Full-Length Mirror"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Shelf"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Tulle"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Button"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Face Paint Set” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Costume Shop: In Context",
+      "idea": "40-60 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Face Paint Set, Makeup Brush from costume-shop-3\n3 lesson(s) back: Pirate, Princess from costume-shop-1\n7 lesson(s) back: Taco, Samosa from festival-2"
+  },
+  {
+    "lessonId": "costume-shop-5",
+    "lessonName": "The Costume Shop 5",
+    "unitId": "costume-shop",
+    "unitName": "The Costume Shop",
+    "unitOrder": 129,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 598,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Tutu",
+      "Armor",
+      "Robe",
+      "Gown",
+      "Wings",
+      "Boots",
+      "Gloves",
+      "Belt",
+      "Fabric",
+      "Ribbon",
+      "Lace",
+      "Silk"
+    ],
+    "targetWordsArabic": [
+      "تنورة توتو",
+      "درع واقٍ",
+      "رُوب حَمَّام / بُرْنُس",
+      "ثوب طويل",
+      "أجنحة",
+      "أحذية طويلة",
+      "قفازات",
+      "حزام",
+      "قماش",
+      "شريط",
+      "دانتيل",
+      "حرير"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Costume Shop to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the costume shop vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Tutu", "Armor", "Robe", "Gown"],
+          "scenario": "In the shop or studio, the stylist and customer compare tutu, armor, robe, and gown. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tutu", "Armor", "Robe", "Gown"],
+            "expectedAnswer": "Tutu"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare tutu, armor, robe, and gown. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Wings", "Boots", "Gloves", "Belt"],
+          "scenario": "In the shop or studio, the stylist and customer compare wings, boots, gloves, and belt. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Wings", "Boots", "Gloves", "Belt"],
+            "expectedAnswer": "Wings"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare wings, boots, gloves, and belt. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Fabric", "Ribbon", "Lace", "Silk"],
+          "scenario": "In the shop or studio, the stylist and customer compare fabric, ribbon, lace, and silk. The words connect to appearance, materials, fit, or design.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fabric", "Ribbon", "Lace", "Silk"],
+            "expectedAnswer": "Fabric"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: In the shop or studio, the stylist and customer compare fabric, ribbon, lace, and silk. The words connect to appearance, materials, fit, or design. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Costume Shop: Real-Life Scenario",
+      "text": "A practical situation involving the costume shop requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. In the shop or studio, the stylist and customer compare tutu, armor, robe, and gown. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare wings, boots, gloves, and belt. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare fabric, ribbon, lace, and silk. The words connect to appearance, materials, fit, or design. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Costume Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tutu"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Wings"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fabric"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Tutu"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Gown"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Tulle” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Costume Shop: In Context",
+      "idea": "40-60 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Tulle, Elastic from costume-shop-4\n3 lesson(s) back: Bear Onesie, Shark Fin from costume-shop-2\n7 lesson(s) back: Caramel Apple, Popcorn from festival-3"
+  }
+]

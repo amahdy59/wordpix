@@ -1,0 +1,439 @@
+﻿[
+  {
+    "lessonId": "architect-s-studio-1",
+    "lessonName": "The Architect's Studio 1",
+    "unitId": "architect-s-studio",
+    "unitName": "The Architect's Studio",
+    "unitOrder": 184,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 811,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Blueprint",
+      "Floor Plan",
+      "Elevation",
+      "Cross-Section",
+      "Scale Model",
+      "Rendering",
+      "Sketch",
+      "CAD Software",
+      "3D Model",
+      "Site Plan",
+      "T-Square",
+      "Triangle",
+      "Compass",
+      "Protractor",
+      "Scale Ruler"
+    ],
+    "targetWordsArabic": [
+      "مخطط هندسي",
+      "مخطط طابق",
+      "واجهة معمارية",
+      "قطاع مقطع",
+      "نموذج مقياس رسم",
+      "إخراج بصري",
+      "رسم تخطيطي",
+      "مصطلح معماري أو تصميمي يُسمّى «كاد سوفتواري»",
+      "مصطلح معماري أو تصميمي يُسمّى «3د موديل»",
+      "مخطط موقع",
+      "مسطرة على شكل T",
+      "مثلث",
+      "بوصلة",
+      "منقلة",
+      "مسطرة مقياس رسم"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Architect's Studio to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use the architect's studio vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "briefing note",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Blueprint", "Floor Plan", "Elevation", "Cross-Section"],
+          "scenario": "The agent, designer, or client discusses blueprint, floor plan, elevation, and cross-section. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Blueprint", "Floor Plan", "Elevation", "Cross-Section"],
+            "expectedAnswer": "Blueprint"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses blueprint, floor plan, elevation, and cross-section. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Scale Model", "Rendering", "Sketch", "CAD Software"],
+          "scenario": "The agent, designer, or client discusses scale model, rendering, sketch, and cad software. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Scale Model", "Rendering", "Sketch", "CAD Software"],
+            "expectedAnswer": "Scale Model"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses scale model, rendering, sketch, and cad software. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["3D Model", "Site Plan", "T-Square", "Triangle"],
+          "scenario": "The agent, designer, or client discusses 3d model, site plan, t-square, and triangle. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["3D Model", "Site Plan", "T-Square", "Triangle"],
+            "expectedAnswer": "3D Model"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses 3d model, site plan, t-square, and triangle. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Compass", "Protractor", "Scale Ruler"],
+          "scenario": "The agent, designer, or client discusses compass, protractor, and scale ruler. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Compass", "Protractor", "Scale Ruler"],
+            "expectedAnswer": "Compass"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses compass, protractor, and scale ruler. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Architect's Studio: Briefing Note",
+      "text": "This text examines the architect's studio through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The agent, designer, or client discusses blueprint, floor plan, elevation, and cross-section. The words help describe the property, design choice, or building process. The agent, designer, or client discusses scale model, rendering, sketch, and cad software. The words help describe the property, design choice, or building process. The agent, designer, or client discusses 3d model, site plan, t-square, and triangle. The words help describe the property, design choice, or building process. The agent, designer, or client discusses compass, protractor, and scale ruler. The words help describe the property, design choice, or building process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about The Architect's Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Blueprint"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Scale Model"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "3D Model"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Compass"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Blueprint"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Elevation"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Treaty” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Architect's Studio: In Context",
+      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Treaty, Convention from rights-regulations-3\n3 lesson(s) back: Freedom of Speech, Right to Privacy from rights-regulations-1\n7 lesson(s) back: Exhibit, Document from courtroom-trial-3"
+  },
+  {
+    "lessonId": "architect-s-studio-2",
+    "lessonName": "The Architect's Studio 2",
+    "unitId": "architect-s-studio",
+    "unitName": "The Architect's Studio",
+    "unitOrder": 184,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 812,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Drafting Table",
+      "Tracing Paper",
+      "Pencil Set",
+      "Eraser Shield",
+      "French Curve",
+      "Proportion",
+      "Scale",
+      "Symmetry",
+      "Balance",
+      "Rhythm",
+      "Contrast",
+      "Unity",
+      "Emphasis",
+      "Space",
+      "Form"
+    ],
+    "targetWordsArabic": [
+      "طاولة رسم هندسي",
+      "ورق شفاف للتتبع",
+      "مصطلح معماري أو تصميمي يُسمّى «بينكيل سيت»",
+      "واقي ممحاة",
+      "مسطرة منحنيات فرنسية",
+      "تناسب",
+      "مقياس رسم",
+      "تناظر",
+      "توازن",
+      "إيقاع",
+      "تباين",
+      "وحدة",
+      "تأكيد بصري",
+      "فضاء",
+      "شكل"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Architect's Studio to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use the architect's studio vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "analysis excerpt",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Drafting Table", "Tracing Paper", "Pencil Set", "Eraser Shield"],
+          "scenario": "The agent, designer, or client discusses drafting table, tracing paper, pencil set, and eraser shield. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Drafting Table", "Tracing Paper", "Pencil Set", "Eraser Shield"],
+            "expectedAnswer": "Drafting Table"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses drafting table, tracing paper, pencil set, and eraser shield. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["French Curve", "Proportion", "Scale", "Symmetry"],
+          "scenario": "The agent, designer, or client discusses french curve, proportion, scale, and symmetry. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["French Curve", "Proportion", "Scale", "Symmetry"],
+            "expectedAnswer": "French Curve"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses french curve, proportion, scale, and symmetry. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Balance", "Rhythm", "Contrast", "Unity"],
+          "scenario": "The agent, designer, or client discusses balance, rhythm, contrast, and unity. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Balance", "Rhythm", "Contrast", "Unity"],
+            "expectedAnswer": "Balance"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses balance, rhythm, contrast, and unity. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Emphasis", "Space", "Form"],
+          "scenario": "The agent, designer, or client discusses emphasis, space, and form. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Emphasis", "Space", "Form"],
+            "expectedAnswer": "Emphasis"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses emphasis, space, and form. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Architect's Studio: Analysis Excerpt",
+      "text": "This text examines the architect's studio through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The agent, designer, or client discusses drafting table, tracing paper, pencil set, and eraser shield. The words help describe the property, design choice, or building process. The agent, designer, or client discusses french curve, proportion, scale, and symmetry. The words help describe the property, design choice, or building process. The agent, designer, or client discusses balance, rhythm, contrast, and unity. The words help describe the property, design choice, or building process. The agent, designer, or client discusses emphasis, space, and form. The words help describe the property, design choice, or building process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about The Architect's Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Drafting Table"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "French Curve"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Balance"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Emphasis"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Drafting Table"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Pencil Set"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Blueprint” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Architect's Studio: In Context",
+      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Blueprint, Floor Plan from architect-s-studio-1\n3 lesson(s) back: Ordinance, Regulation from rights-regulations-2\n7 lesson(s) back: Contract, Agreement from legal-documents-1"
+  },
+  {
+    "lessonId": "architect-s-studio-3",
+    "lessonName": "The Architect's Studio 3",
+    "unitId": "architect-s-studio",
+    "unitName": "The Architect's Studio",
+    "unitOrder": 184,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 813,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Model Making Kit",
+      "Laser Cutter",
+      "3D Printer",
+      "Light Table",
+      "Pin-Up Board",
+      "Material Samples",
+      "Color Charts",
+      "Reference Books",
+      "Projector",
+      "Plotter"
+    ],
+    "targetWordsArabic": [
+      "نموذج صناعة طقم",
+      "قاطع ليزر",
+      "آلة يُسمّى «3د برينتير»",
+      "طاولة ضوئية",
+      "لوحة عرض بالدبابيس",
+      "عينات مواد",
+      "خرائط ألوان",
+      "كتب مرجعية",
+      "جهاز عرض",
+      "راسم آلي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Architect's Studio to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use the architect's studio vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "professional summary",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Model Making Kit", "Laser Cutter", "3D Printer", "Light Table"],
+          "scenario": "The agent, designer, or client discusses model making kit, laser cutter, 3d printer, and light table. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Model Making Kit", "Laser Cutter", "3D Printer", "Light Table"],
+            "expectedAnswer": "Model Making Kit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses model making kit, laser cutter, 3d printer, and light table. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Pin-Up Board", "Material Samples", "Color Charts", "Reference Books"],
+          "scenario": "The agent, designer, or client discusses pin-up board, material samples, color charts, and reference books. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pin-Up Board", "Material Samples", "Color Charts", "Reference Books"],
+            "expectedAnswer": "Pin-Up Board"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses pin-up board, material samples, color charts, and reference books. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Projector", "Plotter"],
+          "scenario": "The agent, designer, or client discusses projector and plotter. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Projector", "Plotter"],
+            "expectedAnswer": "Projector"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses projector and plotter. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Architect's Studio: Professional Summary",
+      "text": "This text examines the architect's studio through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The agent, designer, or client discusses model making kit, laser cutter, 3d printer, and light table. The words help describe the property, design choice, or building process. The agent, designer, or client discusses pin-up board, material samples, color charts, and reference books. The words help describe the property, design choice, or building process. The agent, designer, or client discusses projector and plotter. The words help describe the property, design choice, or building process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about The Architect's Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Model Making Kit"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pin-Up Board"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Projector"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Model Making Kit"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "3D Printer"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Drafting Table” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Architect's Studio: In Context",
+      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Drafting Table, Tracing Paper from architect-s-studio-2\n3 lesson(s) back: Treaty, Convention from rights-regulations-3\n7 lesson(s) back: Petition, Order from legal-documents-2"
+  }
+]

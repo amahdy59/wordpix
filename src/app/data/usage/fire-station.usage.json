@@ -1,0 +1,598 @@
+﻿[
+  {
+    "lessonId": "fire-station-1",
+    "lessonName": "L5 Fire Station 1",
+    "unitId": "fire-station",
+    "unitName": "L5 Fire Station",
+    "unitOrder": 139,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 643,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "firefighter",
+      "fire chief",
+      "fire captain",
+      "volunteer",
+      "rescue team",
+      "fire inspector",
+      "dispatcher",
+      "paramedic",
+      "fire engine",
+      "fire truck",
+      "ladder truck",
+      "ambulance",
+      "rescue vehicle",
+      "water tanker",
+      "helicopter"
+    ],
+    "targetWordsArabic": [
+      "جزء يُسمّى «فيريفيغتير»",
+      "رئيس الإطفاء",
+      "نقيب إطفاء",
+      "متطوع",
+      "فريق إنقاذ",
+      "مفتش حرائق",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديسباتتشير»",
+      "شخص يُسمّى «باراميديك»",
+      "محرك حريق",
+      "شاحنة حريق",
+      "شاحنة سلّم",
+      "مركبة يُسمّى «امبولانكي»",
+      "مركبة إنقاذ",
+      "صهريج مياه",
+      "طائرة يُسمّى «هيليكوبتير»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L5 Fire Station to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l5 fire station vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["firefighter", "fire chief", "fire captain", "volunteer"],
+          "scenario": "A visitor to the public-service setting encounters firefighter, fire chief, fire captain, and volunteer, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["firefighter", "fire chief", "fire captain", "volunteer"],
+            "expectedAnswer": "firefighter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters firefighter, fire chief, fire captain, and volunteer, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["rescue team", "fire inspector", "dispatcher", "paramedic"],
+          "scenario": "A visitor to the public-service setting encounters rescue team, fire inspector, dispatcher, and paramedic, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["rescue team", "fire inspector", "dispatcher", "paramedic"],
+            "expectedAnswer": "rescue team"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters rescue team, fire inspector, dispatcher, and paramedic, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["fire engine", "fire truck", "ladder truck", "ambulance"],
+          "scenario": "The group compares the fire engine, fire truck, ladder truck, and ambulance and notices how the vehicles differ.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["fire engine", "fire truck", "ladder truck", "ambulance"],
+            "expectedAnswer": "fire engine"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group compares the fire engine, fire truck, ladder truck, and ambulance and notices how the vehicles differ. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["rescue vehicle", "water tanker", "helicopter"],
+          "scenario": "A visitor to the public-service setting encounters rescue vehicle, water tanker, and helicopter, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["rescue vehicle", "water tanker", "helicopter"],
+            "expectedAnswer": "rescue vehicle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters rescue vehicle, water tanker, and helicopter, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L5 Fire Station: Practical Article",
+      "text": "A practical situation involving l5 fire station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. A visitor to the public-service setting encounters firefighter, fire chief, fire captain, and volunteer, with each word connected to a different part of the service. A visitor to the public-service setting encounters rescue team, fire inspector, dispatcher, and paramedic, with each word connected to a different part of the service. The group compares the fire engine, fire truck, ladder truck, and ambulance and notices how the vehicles differ. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Fire Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "firefighter"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "rescue team"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "fire engine"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "rescue vehicle"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "firefighter"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "volunteer"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Bricklayer” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L5 Fire Station: In Context",
+      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Bricklayer, Painter from construction-site-5\n3 lesson(s) back: Chisel, Utility Knife from construction-site-3\n7 lesson(s) back: Lift, Diagnostic Scanner from mechanic-3"
+  },
+  {
+    "lessonId": "fire-station-2",
+    "lessonName": "L5 Fire Station 2",
+    "unitId": "fire-station",
+    "unitName": "L5 Fire Station",
+    "unitOrder": 139,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 644,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "fire boat",
+      "fire hose",
+      "nozzle",
+      "fire extinguisher",
+      "ladder",
+      "axe",
+      "pike pole",
+      "hydrant",
+      "breathing apparatus",
+      "oxygen tank",
+      "thermal camera",
+      "radio",
+      "siren",
+      "helmet",
+      "turnout coat"
+    ],
+    "targetWordsArabic": [
+      "قارب إطفاء",
+      "مكان يُسمّى «فيري هوسي»",
+      "فُوّهة",
+      "جهاز يُسمّى «فيري يكستينجويشير»",
+      "سلّم",
+      "أداة يُسمّى «اكسي»",
+      "أداة إطفاء طويلة بخطاف",
+      "مصطلح مرتبط بالموضوع يُسمّى «هيدرانت»",
+      "جهاز يُسمّى «برياثينج ابباراتوس»",
+      "أسطوانة أكسجين",
+      "كاميرا حرارية",
+      "إذاعة",
+      "طائر يُسمّى «سيرين»",
+      "خوذة",
+      "سترة إطفاء واقية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L5 Fire Station to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l5 fire station vocabulary to handle a practical situation and explain key details.",
+      "textType": "email",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["fire boat", "fire hose", "nozzle", "fire extinguisher"],
+          "scenario": "A visitor to the public-service setting encounters fire boat, fire hose, nozzle, and fire extinguisher, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["fire boat", "fire hose", "nozzle", "fire extinguisher"],
+            "expectedAnswer": "fire boat"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters fire boat, fire hose, nozzle, and fire extinguisher, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["ladder", "axe", "pike pole", "hydrant"],
+          "scenario": "A visitor to the public-service setting encounters ladder, axe, pike pole, and hydrant, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["ladder", "axe", "pike pole", "hydrant"],
+            "expectedAnswer": "ladder"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters ladder, axe, pike pole, and hydrant, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["breathing apparatus", "oxygen tank", "thermal camera", "radio"],
+          "scenario": "A visitor to the public-service setting encounters breathing apparatus, oxygen tank, thermal camera, and radio, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["breathing apparatus", "oxygen tank", "thermal camera", "radio"],
+            "expectedAnswer": "breathing apparatus"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters breathing apparatus, oxygen tank, thermal camera, and radio, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["siren", "helmet", "turnout coat"],
+          "scenario": "A visitor to the public-service setting encounters siren, helmet, and turnout coat, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["siren", "helmet", "turnout coat"],
+            "expectedAnswer": "siren"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters siren, helmet, and turnout coat, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L5 Fire Station: Email",
+      "text": "A practical situation involving l5 fire station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. A visitor to the public-service setting encounters fire boat, fire hose, nozzle, and fire extinguisher, with each word connected to a different part of the service. A visitor to the public-service setting encounters ladder, axe, pike pole, and hydrant, with each word connected to a different part of the service. A visitor to the public-service setting encounters breathing apparatus, oxygen tank, thermal camera, and radio, with each word connected to a different part of the service. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Fire Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "fire boat"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "ladder"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "breathing apparatus"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "siren"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "fire boat"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "fire extinguisher"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “firefighter” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L5 Fire Station: In Context",
+      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: firefighter, fire chief from fire-station-1\n3 lesson(s) back: Foundation, Frame from construction-site-4\n7 lesson(s) back: Gasket, Bolt from mechanic-4"
+  },
+  {
+    "lessonId": "fire-station-3",
+    "lessonName": "L5 Fire Station 3",
+    "unitId": "fire-station",
+    "unitName": "L5 Fire Station",
+    "unitOrder": 139,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 645,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "fire boots",
+      "gloves",
+      "face mask",
+      "visor",
+      "suspenders",
+      "fire-resistant suit",
+      "fire",
+      "smoke",
+      "flames",
+      "spark",
+      "ember",
+      "explosion",
+      "alarm",
+      "evacuation",
+      "rescue"
+    ],
+    "targetWordsArabic": [
+      "أحذية إطفاء",
+      "قفازات",
+      "قناع وجه واقٍ",
+      "واقٍ للعين",
+      "مصطلح مرتبط بالموضوع يُسمّى «سوسبينديرس»",
+      "بدلة مقاومة للحريق",
+      "حريق",
+      "يدخّن الطعام",
+      "مادة يُسمّى «فلاميس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سبارك»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يمبير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يكسبلوسيون»",
+      "إنذار",
+      "مصطلح مرتبط بالموضوع يُسمّى «يفاكواتيون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ريسكوي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L5 Fire Station to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l5 fire station vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["fire boots", "gloves", "face mask", "visor"],
+          "scenario": "A visitor to the public-service setting encounters fire boots, gloves, face mask, and visor, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["fire boots", "gloves", "face mask", "visor"],
+            "expectedAnswer": "fire boots"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters fire boots, gloves, face mask, and visor, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["suspenders", "fire-resistant suit", "fire", "smoke"],
+          "scenario": "A visitor to the public-service setting encounters suspenders, fire-resistant suit, fire, and smoke, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["suspenders", "fire-resistant suit", "fire", "smoke"],
+            "expectedAnswer": "suspenders"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters suspenders, fire-resistant suit, fire, and smoke, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["flames", "spark", "ember", "explosion"],
+          "scenario": "A visitor to the public-service setting encounters flames, spark, ember, and explosion, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["flames", "spark", "ember", "explosion"],
+            "expectedAnswer": "flames"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters flames, spark, ember, and explosion, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["alarm", "evacuation", "rescue"],
+          "scenario": "A visitor to the public-service setting encounters alarm, evacuation, and rescue, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["alarm", "evacuation", "rescue"],
+            "expectedAnswer": "alarm"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters alarm, evacuation, and rescue, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L5 Fire Station: Review",
+      "text": "A practical situation involving l5 fire station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. A visitor to the public-service setting encounters fire boots, gloves, face mask, and visor, with each word connected to a different part of the service. A visitor to the public-service setting encounters suspenders, fire-resistant suit, fire, and smoke, with each word connected to a different part of the service. A visitor to the public-service setting encounters flames, spark, ember, and explosion, with each word connected to a different part of the service. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Fire Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "fire boots"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "suspenders"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "flames"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "alarm"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "fire boots"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "visor"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “fire boat” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L5 Fire Station: In Context",
+      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: fire boat, fire hose from fire-station-2\n3 lesson(s) back: Bricklayer, Painter from construction-site-5\n7 lesson(s) back: Crane, Bulldozer from construction-site-1"
+  },
+  {
+    "lessonId": "fire-station-4",
+    "lessonName": "L5 Fire Station 4",
+    "unitId": "fire-station",
+    "unitName": "L5 Fire Station",
+    "unitOrder": 139,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 646,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "emergency exit",
+      "fire escape",
+      "sprinkler",
+      "garage bay",
+      "sleeping quarters",
+      "kitchen",
+      "pole",
+      "alarm bell",
+      "training tower",
+      "locker",
+      "control room",
+      "meeting room",
+      "flag"
+    ],
+    "targetWordsArabic": [
+      "مخرج طوارئ",
+      "مبنى يُسمّى «فيري يسكابي»",
+      "نبات يُسمّى «سبرينكلير»",
+      "حظيرة مركبات الإطفاء",
+      "أماكن نوم",
+      "مطبخ",
+      "عمود",
+      "جرس إنذار",
+      "برج تدريب الإطفاء",
+      "خزانة",
+      "غرفة عامل ضابط",
+      "غرفة اجتماع",
+      "علم"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L5 Fire Station to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l5 fire station vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["emergency exit", "fire escape", "sprinkler", "garage bay"],
+          "scenario": "A visitor to the public-service setting encounters emergency exit, fire escape, sprinkler, and garage bay, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["emergency exit", "fire escape", "sprinkler", "garage bay"],
+            "expectedAnswer": "emergency exit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters emergency exit, fire escape, sprinkler, and garage bay, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["sleeping quarters", "kitchen", "pole", "alarm bell"],
+          "scenario": "A visitor to the public-service setting encounters sleeping quarters, kitchen, pole, and alarm bell, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["sleeping quarters", "kitchen", "pole", "alarm bell"],
+            "expectedAnswer": "sleeping quarters"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters sleeping quarters, kitchen, pole, and alarm bell, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["training tower", "locker", "control room", "meeting room"],
+          "scenario": "A visitor to the public-service setting encounters training tower, locker, control room, and meeting room, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["training tower", "locker", "control room", "meeting room"],
+            "expectedAnswer": "training tower"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters training tower, locker, control room, and meeting room, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": "flag",
+          "scenario": "A visitor to the public-service setting encounters flag, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": "flag",
+            "expectedAnswer": "flag"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters flag, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L5 Fire Station: Travel/Visitor Guide",
+      "text": "A practical situation involving l5 fire station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. A visitor to the public-service setting encounters emergency exit, fire escape, sprinkler, and garage bay, with each word connected to a different part of the service. A visitor to the public-service setting encounters sleeping quarters, kitchen, pole, and alarm bell, with each word connected to a different part of the service. A visitor to the public-service setting encounters training tower, locker, control room, and meeting room, with each word connected to a different part of the service. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Fire Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "emergency exit"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "sleeping quarters"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "training tower"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "flag"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "emergency exit"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "garage bay"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “fire boots” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L5 Fire Station: In Context",
+      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: fire boots, gloves from fire-station-3\n3 lesson(s) back: firefighter, fire chief from fire-station-1\n7 lesson(s) back: Pipe, Cable from construction-site-2"
+  }
+]

@@ -1,0 +1,697 @@
+﻿[
+  {
+    "lessonId": "classroom-1",
+    "lessonName": "The Classroom 1",
+    "unitId": "classroom",
+    "unitName": "The Classroom",
+    "unitOrder": 17,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 65,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Pencil",
+      "Pen",
+      "Eraser",
+      "Ruler",
+      "Marker",
+      "Crayon",
+      "Colored Pencil",
+      "Highlighter",
+      "Pencil Sharpener",
+      "Pencil Case",
+      "Notebook",
+      "Textbook",
+      "Workbook",
+      "Folder",
+      "Binder"
+    ],
+    "targetWordsArabic": [
+      "قَلَمُ رَصَاص",
+      "قَلَمُ حِبْر",
+      "مِمْحَاة",
+      "مِسْطَرَة",
+      "قَلَمُ تَخْطِيط (مَارْكَر)",
+      "قَلَمُ تَلْوِينٍ شَمْعِيّ (أَلْوَانُ شَمْع)",
+      "قَلَمُ تَلْوِينٍ خَشَبِيّ",
+      "قَلَمُ تَمْيِيزٍ بَصَرِيّ (هَايْلَايْتَر)",
+      "مِبْرَاة (بَرَّايَةُ أَقْلَام)",
+      "مِقْلَمَة (حَقِيبَةُ أَقْلَام)",
+      "دَفْتَر (كُرَّاسَةُ مُلَاحَظَات)",
+      "كِتَابٌ مَدْرَسِيّ (مُقَرَّرٌ دِرَاسِيّ)",
+      "كُرَّاسَةُ تَمَارِين (دَفْتَرُ الأَنْشِطَة)",
+      "مِلَفّ (مُجَلَّدُ حِفْظِ الأَوْرَاق)",
+      "مِلَفٌّ حَلَقِيّ (بَايْنْدَر)"
+    ],
+    "usage": {
+      "goal": "Name classroom objects, people, and common school words.",
+      "canDoStatement": "I can name classroom objects, people, and common school words",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Pencil", "Pen", "Eraser"],
+          "scenario": "In class, I can see, use, or meet pencil, pen, and eraser.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Pencil", "Pen", "Eraser"],
+            "expectedAnswer": "Pencil"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet pencil, pen, and eraser. Emphasize pencil, pen, and eraser and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Ruler", "Marker", "Crayon"],
+          "scenario": "In class, I can see, use, or meet ruler, marker, and crayon.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Ruler", "Marker", "Crayon"],
+            "expectedAnswer": "Ruler"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet ruler, marker, and crayon. Emphasize ruler, marker, and crayon and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Colored Pencil", "Highlighter", "Pencil Sharpener"],
+          "scenario": "In class, I can see, use, or meet colored pencil, highlighter, and pencil sharpener.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Colored Pencil", "Highlighter", "Pencil Sharpener"],
+            "expectedAnswer": "Colored Pencil"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet colored pencil, highlighter, and pencil sharpener. Emphasize colored pencil, highlighter, and pencil sharpener and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Pencil Case", "Notebook", "Textbook"],
+          "scenario": "In class, I can see, use, or meet pencil case, notebook, and textbook.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Pencil Case", "Notebook", "Textbook"],
+            "expectedAnswer": "Pencil Case"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet pencil case, notebook, and textbook. Emphasize pencil case, notebook, and textbook and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Workbook", "Folder", "Binder"],
+          "scenario": "In class, I can see, use, or meet workbook, folder, and binder.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Workbook", "Folder", "Binder"],
+            "expectedAnswer": "Workbook"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet workbook, folder, and binder. Emphasize workbook, folder, and binder and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Classroom Mini Story",
+      "text": "I am in the classroom. I can see pencil, pen, and eraser. I also notice ruler, marker, and crayon. I point to each item and say its English name. Then I use one more word: colored pencil. We also remember earlier words such as clean house and do laundry.",
+      "imageBrief": "One uncluttered the classroom scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pencil"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Ruler"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Colored Pencil"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pencil Case"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Workbook"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Pencil"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Pen"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Crayon"
+      }
+    ],
+    "video": {
+      "title": "The Classroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a classroom. Show pencil, pen, eraser, ruler, and marker naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see pencil, pen, and eraser. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Clean House, Do Laundry from daily-routines-4\n3 lesson(s) back: Have a Meeting, Lunch Break from daily-routines-2\n7 lesson(s) back: In, On from prepositions-of-place-1"
+  },
+  {
+    "lessonId": "classroom-2",
+    "lessonName": "The Classroom 2",
+    "unitId": "classroom",
+    "unitName": "The Classroom",
+    "unitOrder": 17,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 66,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Sheet of Paper",
+      "Sticky Note",
+      "Index Card",
+      "Dictionary",
+      "Encyclopedia",
+      "Desk",
+      "Chair",
+      "Whiteboard",
+      "Projector",
+      "Screen",
+      "Clock",
+      "Globe",
+      "Shelf",
+      "Locker",
+      "Bulletin Board"
+    ],
+    "targetWordsArabic": [
+      "وَرَقَة (فَرْخُ وَرَق)",
+      "وَرَقَةُ مُلَاحَظَاتٍ لَاصِقَة (سْتِيكِي نُوت)",
+      "بِطَاقَةُ فَهْرَسَة (بِطَاقَةُ اسْتِذْكَار)",
+      "قَامُوس (مُعْجَم)",
+      "مَوْسُوعَة (دَائِرَةُ مَعَارِف)",
+      "مَكْتَب",
+      "كُرْسِيّ",
+      "لَوْحٌ أَبْيَض (سَبُّورَةٌ بَيْضَاء)",
+      "جِهَازُ عَرْضٍ ضَوْئِيّ (بْرُوجِكْتُور)",
+      "شَاشَةُ عَرْض",
+      "سَاعَةُ حَائِط / سَاعَة",
+      "مُجَسَّمُ الكُرَةِ الأَرْضِيَّة",
+      "رَفّ",
+      "خِزَانَةٌ مَدْرَسِيَّة (لُوكَر)",
+      "لَوْحَةُ إِعْلَانَات (لَوْحَةُ مَعْلُومَات)"
+    ],
+    "usage": {
+      "goal": "Name classroom objects, people, and common school words.",
+      "canDoStatement": "I can name classroom objects, people, and common school words",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sheet of Paper", "Sticky Note", "Index Card"],
+          "scenario": "In class, I can see, use, or meet sheet of paper, sticky note, and index card.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Sheet of Paper", "Sticky Note", "Index Card"],
+            "expectedAnswer": "Sheet of Paper"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet sheet of paper, sticky note, and index card. Emphasize sheet of paper, sticky note, and index card and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Dictionary", "Encyclopedia", "Desk"],
+          "scenario": "In class, I can see, use, or meet dictionary, encyclopedia, and desk.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Dictionary", "Encyclopedia", "Desk"],
+            "expectedAnswer": "Dictionary"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet dictionary, encyclopedia, and desk. Emphasize dictionary, encyclopedia, and desk and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Chair", "Whiteboard", "Projector"],
+          "scenario": "In class, I can see, use, or meet chair, whiteboard, and projector.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Chair", "Whiteboard", "Projector"],
+            "expectedAnswer": "Chair"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet chair, whiteboard, and projector. Emphasize chair, whiteboard, and projector and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Screen", "Clock", "Globe"],
+          "scenario": "In class, I can see, use, or meet screen, clock, and globe.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Screen", "Clock", "Globe"],
+            "expectedAnswer": "Screen"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet screen, clock, and globe. Emphasize screen, clock, and globe and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Shelf", "Locker", "Bulletin Board"],
+          "scenario": "In class, I can see, use, or meet shelf, locker, and bulletin board.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Shelf", "Locker", "Bulletin Board"],
+            "expectedAnswer": "Shelf"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet shelf, locker, and bulletin board. Emphasize shelf, locker, and bulletin board and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Classroom Mini Story",
+      "text": "I am in the classroom. I can see sheet of paper, sticky note, and index card. I also notice dictionary, encyclopedia, and desk. I point to each item and say its English name. Then I use one more word: chair. We also remember earlier words such as pencil and pen.",
+      "imageBrief": "One uncluttered the classroom scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Sheet of Paper"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Dictionary"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Chair"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Screen"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Shelf"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Sheet of Paper"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Sticky Note"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Desk"
+      }
+    ],
+    "video": {
+      "title": "The Classroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a classroom. Show sheet of paper, sticky note, index card, dictionary, and encyclopedia naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see sheet of paper, sticky note, and index card. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Pencil, Pen from classroom-1\n3 lesson(s) back: Eat Dinner, Wash Dishes from daily-routines-3\n7 lesson(s) back: Against, Around from prepositions-of-place-2"
+  },
+  {
+    "lessonId": "classroom-3",
+    "lessonName": "The Classroom 3",
+    "unitId": "classroom",
+    "unitName": "The Classroom",
+    "unitOrder": 17,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 67,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Backpack",
+      "Scissors",
+      "Glue Stick",
+      "Tape",
+      "Stapler",
+      "Paper Clip",
+      "Rubber Band",
+      "Thumbtack",
+      "Calculator",
+      "Compass",
+      "Computer",
+      "Laptop",
+      "Tablet",
+      "Keyboard",
+      "Mouse"
+    ],
+    "targetWordsArabic": [
+      "حَقِيبَةُ ظَهْر",
+      "مِقَصّ",
+      "أُصْبُوعُ صَمْغ (غِرَاءٌ لَاصِق)",
+      "شَرِيطٌ لَاصِق",
+      "دَبَّاسَة (دَبَّاسَةُ أَوْرَاق)",
+      "مَشْبَكُ وَرَق",
+      "رِبَاطٌ مَطَّاطِيّ (مَطَّاط)",
+      "دَبُّوسُ لَوْحَة (دَبُّوسُ ضَغْط)",
+      "آلَةٌ حَاسِبَة",
+      "فِرْجَار (بِرْجَل)",
+      "حَاسُوب (كَمْبِيُوتَر)",
+      "حَاسُوبٌ مَحْمُول (لَابْتُوب)",
+      "جِهَازٌ لَوْحِيّ (تَابْلِت)",
+      "لَوْحَةُ مَفَاتِيح",
+      "فَأْرَةُ حَاسُوب (مَاوْس)"
+    ],
+    "usage": {
+      "goal": "Name classroom objects, people, and common school words.",
+      "canDoStatement": "I can name classroom objects, people, and common school words",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Backpack", "Scissors", "Glue Stick"],
+          "scenario": "In class, I can see, use, or meet backpack, scissors, and glue stick.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Backpack", "Scissors", "Glue Stick"],
+            "expectedAnswer": "Backpack"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet backpack, scissors, and glue stick. Emphasize backpack, scissors, and glue stick and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Tape", "Stapler", "Paper Clip"],
+          "scenario": "In class, I can see, use, or meet tape, stapler, and paper clip.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Tape", "Stapler", "Paper Clip"],
+            "expectedAnswer": "Tape"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet tape, stapler, and paper clip. Emphasize tape, stapler, and paper clip and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Rubber Band", "Thumbtack", "Calculator"],
+          "scenario": "In class, I can see, use, or meet rubber band, thumbtack, and calculator.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Rubber Band", "Thumbtack", "Calculator"],
+            "expectedAnswer": "Rubber Band"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet rubber band, thumbtack, and calculator. Emphasize rubber band, thumbtack, and calculator and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Compass", "Computer", "Laptop"],
+          "scenario": "In class, I can see, use, or meet compass, computer, and laptop.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Compass", "Computer", "Laptop"],
+            "expectedAnswer": "Compass"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet compass, computer, and laptop. Emphasize compass, computer, and laptop and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Tablet", "Keyboard", "Mouse"],
+          "scenario": "In class, I can see, use, or meet tablet, keyboard, and mouse.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Tablet", "Keyboard", "Mouse"],
+            "expectedAnswer": "Tablet"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet tablet, keyboard, and mouse. Emphasize tablet, keyboard, and mouse and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Classroom Mini Story",
+      "text": "I am in the classroom. I can see backpack, scissors, and glue stick. I also notice tape, stapler, and paper clip. I point to each item and say its English name. Then I use one more word: rubber band. We also remember earlier words such as sheet of paper and sticky note.",
+      "imageBrief": "One uncluttered the classroom scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Backpack"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Tape"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Rubber Band"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Compass"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Tablet"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Backpack"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Scissors"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Paper Clip"
+      }
+    ],
+    "video": {
+      "title": "The Classroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a classroom. Show backpack, scissors, glue stick, tape, and stapler naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see backpack, scissors, and glue stick. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Sheet of Paper, Sticky Note from classroom-2\n3 lesson(s) back: Clean House, Do Laundry from daily-routines-4\n7 lesson(s) back: Top, Bottom from prepositions-of-place-3"
+  },
+  {
+    "lessonId": "classroom-4",
+    "lessonName": "The Classroom 4",
+    "unitId": "classroom",
+    "unitName": "The Classroom",
+    "unitOrder": 17,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 68,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Printer",
+      "USB Drive",
+      "Headphones",
+      "Projector Remote",
+      "Charger",
+      "Teacher",
+      "Student",
+      "Principal",
+      "Librarian",
+      "Janitor",
+      "School Nurse",
+      "Substitute Teacher",
+      "Teaching Assistant",
+      "Counselor",
+      "Security Guard"
+    ],
+    "targetWordsArabic": [
+      "طَابِعَة",
+      "ذَاكِرَةُ فَلَاش (فَلَاشَةُ يُو إِسْ بِي)",
+      "سَمَّاعَاتُ الرَّأْس (هَيْدْفُونْز)",
+      "جِهَازُ التَّحَكُّمِ عَنْ بُعْدٍ لِجِهَازِ العَرْض (رِيمُوتُ البْرُوجِكْتُور)",
+      "شَاحِن",
+      "مُعَلِّم (مُعَلِّمَة)",
+      "طَالِب (تِلْمِيذ)",
+      "مُدِيرُ المَدْرَسَة",
+      "أَمِينُ المَكْتَبَة",
+      "عَامِلُ نَظَافَةٍ مَدْرَسِيّ (حَارِسُ مَبْنَى)",
+      "مُمَرِّضَةُ المَدْرَسَة",
+      "مُعَلِّمٌ بَدِيل (مُدَرِّسٌ مُنْتَدَب)",
+      "مُسَاعِدُ مُعَلِّم",
+      "مُرْشِدٌ طُلَّابِيّ (مُرْشِدٌ نَفْسِيّ)",
+      "حَارِسُ أَمْنٍ مَدْرَسِيّ"
+    ],
+    "usage": {
+      "goal": "Name classroom objects, people, and common school words.",
+      "canDoStatement": "I can name classroom objects, people, and common school words",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Printer", "USB Drive", "Headphones"],
+          "scenario": "In class, I can see, use, or meet printer, usb drive, and headphones.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Printer", "USB Drive", "Headphones"],
+            "expectedAnswer": "Printer"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet printer, usb drive, and headphones. Emphasize printer, usb drive, and headphones and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Projector Remote", "Charger", "Teacher"],
+          "scenario": "In class, I can see, use, or meet projector remote, charger, and teacher.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Projector Remote", "Charger", "Teacher"],
+            "expectedAnswer": "Projector Remote"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet projector remote, charger, and teacher. Emphasize projector remote, charger, and teacher and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Student", "Principal", "Librarian"],
+          "scenario": "In class, I can see, use, or meet student, principal, and librarian.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Student", "Principal", "Librarian"],
+            "expectedAnswer": "Student"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet student, principal, and librarian. Emphasize student, principal, and librarian and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Janitor", "School Nurse", "Substitute Teacher"],
+          "scenario": "In class, I can see, use, or meet janitor, school nurse, and substitute teacher.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Janitor", "School Nurse", "Substitute Teacher"],
+            "expectedAnswer": "Janitor"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet janitor, school nurse, and substitute teacher. Emphasize janitor, school nurse, and substitute teacher and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Teaching Assistant", "Counselor", "Security Guard"],
+          "scenario": "In class, I can see, use, or meet teaching assistant, counselor, and security guard.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Teaching Assistant", "Counselor", "Security Guard"],
+            "expectedAnswer": "Teaching Assistant"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet teaching assistant, counselor, and security guard. Emphasize teaching assistant, counselor, and security guard and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Classroom Mini Story",
+      "text": "I am in the classroom. I can see printer, usb drive, and headphones. I also notice projector remote, charger, and teacher. I point to each item and say its English name. Then I use one more word: student. We also remember earlier words such as backpack and scissors.",
+      "imageBrief": "One uncluttered the classroom scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Printer"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Projector Remote"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Student"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Janitor"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Teaching Assistant"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Printer"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "USB Drive"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Teacher"
+      }
+    ],
+    "video": {
+      "title": "The Classroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a classroom. Show printer, usb drive, headphones, projector remote, and charger naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see printer, usb drive, and headphones. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Backpack, Scissors from classroom-3\n3 lesson(s) back: Pencil, Pen from classroom-1\n7 lesson(s) back: Wake Up, Alarm Clock from daily-routines-1"
+  },
+  {
+    "lessonId": "classroom-5",
+    "lessonName": "The Classroom 5",
+    "unitId": "classroom",
+    "unitName": "The Classroom",
+    "unitOrder": 17,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 69,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": ["Homework", "Test", "Recess", "Bell", "Grade", "Uniform"],
+    "targetWordsArabic": [
+      "وَاجِبٌ مَنْزِلِيّ (فَرْضٌ مَدْرَسِيّ)",
+      "اخْتِبَار (امْتِحَان)",
+      "فُسْحَة (اسْتِرَاحَةٌ مَدْرَسِيَّة)",
+      "جَرَسُ المَلْعَب",
+      "دَرَجَة (عَلَامَةٌ تَقْيِيمِيَّة)",
+      "زِيٌّ مَدْرَسِيّ (زِيٌّ مُوَحَّد)"
+    ],
+    "usage": {
+      "goal": "Name classroom objects, people, and common school words.",
+      "canDoStatement": "I can name classroom objects, people, and common school words",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Homework", "Test", "Recess"],
+          "scenario": "In class, I can see, use, or meet homework, test, and recess.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Homework", "Test", "Recess"],
+            "expectedAnswer": "Homework"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet homework, test, and recess. Emphasize homework, test, and recess and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bell", "Grade", "Uniform"],
+          "scenario": "In class, I can see, use, or meet bell, grade, and uniform.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Bell", "Grade", "Uniform"],
+            "expectedAnswer": "Bell"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the classroom that represents: In class, I can see, use, or meet bell, grade, and uniform. Emphasize bell, grade, and uniform and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Classroom Mini Story",
+      "text": "I am in the classroom. I can see homework, test, and recess. I also notice bell, grade, and uniform. I point to each item and say its English name. Then I use one more word: uniform. We also remember earlier words such as printer and usb drive.",
+      "imageBrief": "One uncluttered the classroom scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Homework"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Bell"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Homework"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Test"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Uniform"
+      }
+    ],
+    "video": {
+      "title": "The Classroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a classroom. Show homework, test, recess, bell, and grade naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see homework, test, and recess. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Printer, USB Drive from classroom-4\n3 lesson(s) back: Sheet of Paper, Sticky Note from classroom-2\n7 lesson(s) back: Have a Meeting, Lunch Break from daily-routines-2"
+  }
+]

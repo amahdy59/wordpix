@@ -112,7 +112,7 @@ describe("Card Grid Responsive Sizing", () => {
     expect(source).toMatch(/auto-rows-fr/);
     expect(source).toMatch(/lg:grid-cols-4/);
     expect(source).toMatch(/lg:grid-rows-1/);
-    expect(source).toContain("max-w-[2200px]");
+    expect(source).toContain("wp-container-immersive");
     expect(source).toContain("object-cover");
     expect(source).not.toMatch(/aspect-\[4\/3\]/);
     expect(source).not.toMatch(/max-h-\[260px\]/);
@@ -159,8 +159,8 @@ describe("Information architecture avoids nested shells", () => {
 
   it("does not vertically center media drills in unused viewport space", () => {
     const shell = stripComments(read("shared/ExerciseShell.tsx"));
-    expect(shell).toMatch(/max-w-\[2200px\]/);
-    expect(shell).not.toMatch(/max-w-\[2200px\][^\n]*my-auto/);
+    expect(shell).toContain("wp-container-immersive");
+    expect(shell).not.toMatch(/wp-container-immersive[^\n]*my-auto/);
   });
 });
 
@@ -168,7 +168,7 @@ describe("HomeDashboard 2-Column Responsive Desktop Grid", () => {
   const source = stripComments(read("core/HomeDashboard.tsx"));
 
   it("keeps the dashboard single-column beside the 1024px sidebar and splits at xl", () => {
-    expect(source).toMatch(/grid\s+grid-cols-1\s+xl:grid-cols-12/);
+    expect(source).toMatch(/grid[^\n]*grid-cols-1[^\n]*xl:grid-cols-12/);
     expect(source).toMatch(/xl:col-span-7/);
     expect(source).toMatch(/xl:col-span-5/);
   });
@@ -201,6 +201,20 @@ describe("Learning path progressive disclosure", () => {
     expect(source).toMatch(/expandedPhase/);
     expect(source).toMatch(/aria-expanded=\{isExpanded\}/);
     expect(source).toMatch(/isExpanded &&/);
+  });
+});
+
+describe("Library filters reflow without mobile clipping", () => {
+  const source = stripComments(read("core/ExploreWorlds.tsx"));
+
+  it("wraps both filter groups instead of requiring horizontal gestures", () => {
+    const filterRegion = source.slice(
+      source.indexOf("explore.collectionNavigation"),
+      source.indexOf("Results Header / Active Filters bar")
+    );
+    expect(filterRegion.match(/flex-wrap/g)?.length ?? 0).toBeGreaterThanOrEqual(2);
+    expect(filterRegion).not.toContain("overflow-x-auto");
+    expect(filterRegion).not.toContain("no-scrollbar");
   });
 });
 

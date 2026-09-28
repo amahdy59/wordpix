@@ -1,0 +1,630 @@
+﻿[
+  {
+    "lessonId": "gas-station-1",
+    "lessonName": "The Gas Station 1",
+    "unitId": "gas-station",
+    "unitName": "The Gas Station",
+    "unitOrder": 46,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 220,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Gas Pump",
+      "Nozzle",
+      "Fuel Cap",
+      "Diesel",
+      "Unleaded",
+      "Premium",
+      "Fuel Gauge",
+      "Receipt",
+      "Card Reader",
+      "Price Sign",
+      "Snacks",
+      "Drinks",
+      "Coffee",
+      "Ice",
+      "Candy"
+    ],
+    "targetWordsArabic": [
+      "مضخة وقود",
+      "فُوّهة",
+      "غطاء خزان الوقود",
+      "ديزل",
+      "بنزين خالٍ من الرصاص",
+      "قسط تأمين",
+      "أداة أو جهاز يُسمّى «فويل جاوجي»",
+      "إيصال",
+      "قارئ بطاقات",
+      "لافتة الأسعار",
+      "وجبات خفيفة",
+      "مشروبات",
+      "قهوة",
+      "ثلج",
+      "حلوى"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Gas Station to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the gas station vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Gas Pump", "Nozzle", "Fuel Cap"],
+          "scenario": "The traveler moves through the journey using or noticing gas pump, nozzle, and fuel cap. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Gas Pump", "Nozzle", "Fuel Cap"],
+            "expectedAnswer": "Gas Pump"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing gas pump, nozzle, and fuel cap. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Diesel", "Unleaded", "Premium"],
+          "scenario": "The traveler moves through the journey using or noticing diesel, unleaded, and premium. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Diesel", "Unleaded", "Premium"],
+            "expectedAnswer": "Diesel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing diesel, unleaded, and premium. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Fuel Gauge", "Receipt", "Card Reader"],
+          "scenario": "The traveler moves through the journey using or noticing fuel gauge, receipt, and card reader. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Fuel Gauge", "Receipt", "Card Reader"],
+            "expectedAnswer": "Fuel Gauge"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing fuel gauge, receipt, and card reader. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Price Sign", "Snacks", "Drinks"],
+          "scenario": "The traveler moves through the journey using or noticing price sign, snacks, and drinks. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Price Sign", "Snacks", "Drinks"],
+            "expectedAnswer": "Price Sign"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing price sign, snacks, and drinks. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Coffee", "Ice", "Candy"],
+          "scenario": "The traveler moves through the journey using or noticing coffee, ice, and candy. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Coffee", "Ice", "Candy"],
+            "expectedAnswer": "Coffee"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing coffee, ice, and candy. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Gas Station: Mini Dialogue",
+      "text": "Maya is in a situation connected to the gas station. She uses the new words to understand what she sees and what happens next. The traveler moves through the journey using or noticing gas pump, nozzle, and fuel cap. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing diesel, unleaded, and premium. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing fuel gauge, receipt, and card reader. Each term marks a different part of the travel process. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Gas Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gas Pump"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Diesel"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fuel Gauge"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Price Sign"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Coffee"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Gas Pump"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Fuel Cap"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Compress” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Gas Station: In Context",
+      "idea": "30-45 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Compress, Gloves from first-aid-room-8\n3 lesson(s) back: Wall Chart, Clock from first-aid-room-6\n7 lesson(s) back: Medical Tape, Antibiotic Ointment from first-aid-room-2"
+  },
+  {
+    "lessonId": "gas-station-2",
+    "lessonName": "The Gas Station 2",
+    "unitId": "gas-station",
+    "unitName": "The Gas Station",
+    "unitOrder": 46,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 221,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Chips",
+      "Gum",
+      "Lottery Ticket",
+      "Newspaper",
+      "Sunglasses",
+      "Air Pump",
+      "Windshield Fluid",
+      "Oil",
+      "Coolant",
+      "Wiper Blades",
+      "Car Wash",
+      "Vacuum",
+      "Tire Pressure",
+      "Antifreeze",
+      "Funnel"
+    ],
+    "targetWordsArabic": [
+      "رقائق",
+      "علكة",
+      "تذكرة يانصيب",
+      "صحيفة",
+      "نظارة شمسية",
+      "مضخة هواء",
+      "سائل تنظيف الزجاج الأمامي",
+      "زيت",
+      "سائل تبريد",
+      "شفرات ماسحات الزجاج",
+      "مغسلة سيارات",
+      "مكنسة شفط",
+      "ضغط الإطارات",
+      "مانع تجمد",
+      "قمع"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Gas Station to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the gas station vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Chips", "Gum", "Lottery Ticket"],
+          "scenario": "The traveler moves through the journey using or noticing chips, gum, and lottery ticket. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Chips", "Gum", "Lottery Ticket"],
+            "expectedAnswer": "Chips"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing chips, gum, and lottery ticket. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Newspaper", "Sunglasses", "Air Pump"],
+          "scenario": "The traveler moves through the journey using or noticing newspaper, sunglasses, and air pump. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Newspaper", "Sunglasses", "Air Pump"],
+            "expectedAnswer": "Newspaper"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing newspaper, sunglasses, and air pump. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Windshield Fluid", "Oil", "Coolant"],
+          "scenario": "The traveler moves through the journey using or noticing windshield fluid, oil, and coolant. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Windshield Fluid", "Oil", "Coolant"],
+            "expectedAnswer": "Windshield Fluid"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing windshield fluid, oil, and coolant. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Wiper Blades", "Car Wash", "Vacuum"],
+          "scenario": "The traveler moves through the journey using or noticing wiper blades, car wash, and vacuum. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Wiper Blades", "Car Wash", "Vacuum"],
+            "expectedAnswer": "Wiper Blades"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing wiper blades, car wash, and vacuum. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Tire Pressure", "Antifreeze", "Funnel"],
+          "scenario": "The traveler moves through the journey using or noticing tire pressure, antifreeze, and funnel. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Tire Pressure", "Antifreeze", "Funnel"],
+            "expectedAnswer": "Tire Pressure"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing tire pressure, antifreeze, and funnel. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Gas Station: Simple Message",
+      "text": "Maya is in a situation connected to the gas station. She uses the new words to understand what she sees and what happens next. The traveler moves through the journey using or noticing chips, gum, and lottery ticket. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing newspaper, sunglasses, and air pump. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing windshield fluid, oil, and coolant. Each term marks a different part of the travel process. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Gas Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Chips"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Newspaper"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Windshield Fluid"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Wiper Blades"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tire Pressure"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Chips"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Lottery Ticket"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Gas Pump” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Gas Station: In Context",
+      "idea": "30-45 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Gas Pump, Nozzle from gas-station-1\n3 lesson(s) back: Nosebleed, Bee Sting from first-aid-room-7\n7 lesson(s) back: AED, First Aid Manual from first-aid-room-3"
+  },
+  {
+    "lessonId": "gas-station-3",
+    "lessonName": "The Gas Station 3",
+    "unitId": "gas-station",
+    "unitName": "The Gas Station",
+    "unitOrder": 46,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 222,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Canopy",
+      "Parking Spot",
+      "Dumpster",
+      "Restroom",
+      "Ice Machine",
+      "Atm",
+      "Trash Can",
+      "Squeegee",
+      "Paper Towel",
+      "Water Hose",
+      "Car",
+      "Truck",
+      "Suv",
+      "Van",
+      "Motorcycle"
+    ],
+    "targetWordsArabic": [
+      "مظلّة",
+      "مكان لوقوف السيارة",
+      "حاوية نفايات كبيرة",
+      "دورة مياه",
+      "آلة ثلج",
+      "جهاز صراف آلي",
+      "سلة مهملات",
+      "ممسحة مطاطية",
+      "مَنَادِيلُ مَطْبَخ (مَحَارِمُ وَرَقِيَّة)",
+      "خرطوم مياه",
+      "سيارة",
+      "شاحنة",
+      "سيارة رياضية متعددة الاستخدامات",
+      "شاحنة صغيرة",
+      "دراجة نارية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Gas Station to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the gas station vocabulary in simple context.",
+      "textType": "notice-style text",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Canopy", "Parking Spot", "Dumpster"],
+          "scenario": "The traveler moves through the journey using or noticing canopy, parking spot, and dumpster. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Canopy", "Parking Spot", "Dumpster"],
+            "expectedAnswer": "Canopy"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing canopy, parking spot, and dumpster. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Restroom", "Ice Machine", "Atm"],
+          "scenario": "The traveler moves through the journey using or noticing restroom, ice machine, and atm. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Restroom", "Ice Machine", "Atm"],
+            "expectedAnswer": "Restroom"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing restroom, ice machine, and atm. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Trash Can", "Squeegee", "Paper Towel"],
+          "scenario": "The traveler moves through the journey using or noticing trash can, squeegee, and paper towel. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Trash Can", "Squeegee", "Paper Towel"],
+            "expectedAnswer": "Trash Can"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing trash can, squeegee, and paper towel. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Water Hose", "Car", "Truck"],
+          "scenario": "The traveler moves through the journey using or noticing water hose, car, and truck. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Water Hose", "Car", "Truck"],
+            "expectedAnswer": "Water Hose"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing water hose, car, and truck. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Suv", "Van", "Motorcycle"],
+          "scenario": "The traveler moves through the journey using or noticing suv, van, and motorcycle. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Suv", "Van", "Motorcycle"],
+            "expectedAnswer": "Suv"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing suv, van, and motorcycle. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Gas Station: Notice-Style Text",
+      "text": "Maya is in a situation connected to the gas station. She uses the new words to understand what she sees and what happens next. The traveler moves through the journey using or noticing canopy, parking spot, and dumpster. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing restroom, ice machine, and atm. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing trash can, squeegee, and paper towel. Each term marks a different part of the travel process. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Gas Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Canopy"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Restroom"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Trash Can"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Water Hose"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Suv"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Canopy"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Dumpster"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Chips” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Gas Station: In Context",
+      "idea": "30-45 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Chips, Gum from gas-station-2\n3 lesson(s) back: Compress, Gloves from first-aid-room-8\n7 lesson(s) back: Suture Kit, Wound Closure Strip from first-aid-room-4"
+  },
+  {
+    "lessonId": "gas-station-4",
+    "lessonName": "The Gas Station 4",
+    "unitId": "gas-station",
+    "unitName": "The Gas Station",
+    "unitOrder": 46,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 223,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Rv",
+      "Trailer",
+      "Bus",
+      "Sedan",
+      "Convertible",
+      "Attendant",
+      "Cashier",
+      "Customer",
+      "Pumping Gas",
+      "Paying",
+      "Checking Oil",
+      "Filling Tires",
+      "Washing Windshield",
+      "Fueling",
+      "Driving Away"
+    ],
+    "targetWordsArabic": [
+      "مركبة ترفيهية",
+      "مقطورة",
+      "حافلة",
+      "سيارة سيدان",
+      "سيارة مكشوفة",
+      "مرافق خدمة",
+      "أمين صندوق",
+      "عميل",
+      "تعبئة الوقود",
+      "الدفع",
+      "فحص زيت المحرك",
+      "نفخ الإطارات",
+      "تنظيف الزجاج الأمامي",
+      "التزويد بالوقود",
+      "الانطلاق بالسيارة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Gas Station to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the gas station vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Rv", "Trailer", "Bus"],
+          "scenario": "The customer or traveler compares the rv, trailer, and bus, thinking about where and why each type is used.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Rv", "Trailer", "Bus"],
+            "expectedAnswer": "Rv"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The customer or traveler compares the rv, trailer, and bus, thinking about where and why each type is used. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Sedan", "Convertible", "Attendant"],
+          "scenario": "The traveler moves through the journey using or noticing sedan, convertible, and attendant. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Sedan", "Convertible", "Attendant"],
+            "expectedAnswer": "Sedan"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing sedan, convertible, and attendant. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Cashier", "Customer", "Pumping Gas"],
+          "scenario": "The traveler moves through the journey using or noticing cashier, customer, and pumping gas. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Cashier", "Customer", "Pumping Gas"],
+            "expectedAnswer": "Cashier"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing cashier, customer, and pumping gas. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Paying", "Checking Oil", "Filling Tires"],
+          "scenario": "The traveler moves through the journey using or noticing paying, checking oil, and filling tires. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Paying", "Checking Oil", "Filling Tires"],
+            "expectedAnswer": "Paying"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing paying, checking oil, and filling tires. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Washing Windshield", "Fueling", "Driving Away"],
+          "scenario": "The traveler moves through the journey using or noticing washing windshield, fueling, and driving away. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Washing Windshield", "Fueling", "Driving Away"],
+            "expectedAnswer": "Washing Windshield"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing washing windshield, fueling, and driving away. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Gas Station: Short Description",
+      "text": "Maya is in a situation connected to the gas station. She uses the new words to understand what she sees and what happens next. The customer or traveler compares the rv, trailer, and bus, thinking about where and why each type is used. The traveler moves through the journey using or noticing sedan, convertible, and attendant. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing cashier, customer, and pumping gas. Each term marks a different part of the travel process. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Gas Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rv"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sedan"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cashier"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Paying"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Washing Windshield"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Rv"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Bus"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Canopy” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Gas Station: In Context",
+      "idea": "30-45 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Canopy, Parking Spot from gas-station-3\n3 lesson(s) back: Gas Pump, Nozzle from gas-station-1\n7 lesson(s) back: Emergency Phone, Alarm Button from first-aid-room-5"
+  }
+]

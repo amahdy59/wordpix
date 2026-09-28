@@ -8,6 +8,7 @@ import type { UnitStudyProgress } from "./types";
 import { useI18n } from "../../context/I18nContext";
 import { formatNumber } from "../../shared/useAccessibilityPreferences";
 import { useLearner } from "../../context/LearnerContext";
+import { Button, EmptyState } from "../../shared";
 import {
   ROUND_SIZE,
   initialSessionState,
@@ -178,8 +179,8 @@ export function PracticeArea({
 
   if (items.length === 0) {
     return (
-      <div className="p-8 text-center text-muted-foreground flex-1 flex items-center justify-center">
-        {t("practice.noExercises")}
+      <div className="wp-container-reading wp-layout-gutter flex min-h-full items-center py-6">
+        <EmptyState titleAs="p" title={t("practice.noExercises")} />
       </div>
     );
   }
@@ -202,7 +203,7 @@ export function PracticeArea({
 
   if (phase === "checkpoint") {
     return (
-      <div className="max-w-2xl mx-auto w-full p-4 sm:p-6 md:p-8 flex flex-col items-center">
+      <div className="wp-container-reading wp-layout-gutter flex w-full flex-col items-center py-4 sm:py-6 md:py-8">
         <h1 className="sr-only">{t("practice.roundCheckpointLabel")}</h1>
         <RoundCheckpointCard
           roundNumber={currentRound}
@@ -288,7 +289,7 @@ export function PracticeArea({
   };
 
   return (
-    <div className="max-w-2xl mx-auto w-full p-4 sm:p-6 md:p-8 flex flex-col items-center">
+    <div className="wp-container-reading wp-layout-gutter flex w-full flex-col items-center py-4 sm:py-6 md:py-8">
       {/* Header & Progress */}
       <div className="w-full mb-6">
         <div className="flex justify-between items-start gap-3 mb-3">
@@ -351,13 +352,9 @@ export function PracticeArea({
             reduceMotion ? "" : "animate-in fade-in slide-in-from-bottom-2 duration-200"
           }`}
         >
-          <button
-            onClick={handleNext}
-            className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
-          >
-            <span>{nextLabel}</span>
-            <ForwardIcon className="size-4" />
-          </button>
+          <Button onClick={handleNext} size="lg" iconRight={<ForwardIcon className="size-4" />}>
+            {nextLabel}
+          </Button>
         </div>
       )}
     </div>

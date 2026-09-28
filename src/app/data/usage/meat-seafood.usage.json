@@ -1,0 +1,559 @@
+﻿[
+  {
+    "lessonId": "meat-seafood-1",
+    "lessonName": "Meat & Seafood 1",
+    "unitId": "meat-seafood",
+    "unitName": "Meat & Seafood",
+    "unitOrder": 35,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 171,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Chicken",
+      "Turkey",
+      "Duck",
+      "Goose",
+      "Quail",
+      "Chicken Breast",
+      "Drumstick",
+      "Wing",
+      "Thigh",
+      "Ground Turkey",
+      "Beef",
+      "Pork",
+      "Lamb",
+      "Veal",
+      "Steak"
+    ],
+    "targetWordsArabic": [
+      "دجاج",
+      "ديك رومي",
+      "بطة",
+      "أوزة",
+      "سمان",
+      "عظم يُسمّى «تشيكين برياست»",
+      "ساق دجاج",
+      "جناح",
+      "فخذ",
+      "لحم ديك رومي مفروم",
+      "لحم بقري",
+      "لحم خنزير",
+      "لحم ضأن",
+      "لحم عجل",
+      "شريحة لحم"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Meat & Seafood to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key meat & seafood vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Chicken", "Turkey", "Duck"],
+          "scenario": "The group observes the chicken, turkey, and duck and compares what they notice.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Chicken", "Turkey", "Duck"],
+            "expectedAnswer": "Chicken"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group observes the chicken, turkey, and duck and compares what they notice. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Goose", "Quail", "Chicken Breast"],
+          "scenario": "During a busy order, the worker and customer deal with goose, quail, and chicken breast. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Goose", "Quail", "Chicken Breast"],
+            "expectedAnswer": "Goose"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with goose, quail, and chicken breast. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Drumstick", "Wing", "Thigh"],
+          "scenario": "During a busy order, the worker and customer deal with drumstick, wing, and thigh. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Drumstick", "Wing", "Thigh"],
+            "expectedAnswer": "Drumstick"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with drumstick, wing, and thigh. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Ground Turkey", "Beef", "Pork"],
+          "scenario": "During a busy order, the worker and customer deal with ground turkey, beef, and pork. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Ground Turkey", "Beef", "Pork"],
+            "expectedAnswer": "Ground Turkey"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with ground turkey, beef, and pork. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Lamb", "Veal", "Steak"],
+          "scenario": "During a busy order, the worker and customer deal with lamb, veal, and steak. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Lamb", "Veal", "Steak"],
+            "expectedAnswer": "Lamb"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with lamb, veal, and steak. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Meat & Seafood: Mini Dialogue",
+      "text": "Maya is in a situation connected to meat & seafood. She uses the new words to understand what she sees and what happens next. The group observes the chicken, turkey, and duck and compares what they notice. During a busy order, the worker and customer deal with goose, quail, and chicken breast. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with drumstick, wing, and thigh. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Meat & Seafood. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Chicken"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Goose"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Drumstick"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ground Turkey"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lamb"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Chicken"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Duck"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “I need a refund” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Meat & Seafood: In Context",
+      "idea": "30-45 seconds contextual scene in the shop. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: I need a refund, Where is aisle...? from supermarket-25\n3 lesson(s) back: A Gallon Of, A Bunch Of from supermarket-23\n7 lesson(s) back: Toothpaste, Toothbrush from supermarket-19"
+  },
+  {
+    "lessonId": "meat-seafood-2",
+    "lessonName": "Meat & Seafood 2",
+    "unitId": "meat-seafood",
+    "unitName": "Meat & Seafood",
+    "unitOrder": 35,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 172,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Roast",
+      "Ground Beef",
+      "Ribs",
+      "Tenderloin",
+      "Brisket",
+      "Salmon",
+      "Tuna",
+      "Cod",
+      "Shrimp",
+      "Lobster",
+      "Crab",
+      "Oyster",
+      "Mussel",
+      "Clam",
+      "Scallop"
+    ],
+    "targetWordsArabic": [
+      "يشوي في الفرن",
+      "عملية يُسمّى «جرووند بييف»",
+      "ضلوع",
+      "فيليه",
+      "صدر لحم",
+      "مصطلح مرتبط بالموضوع يُسمّى «سالمون»",
+      "تونة",
+      "مصطلح مرتبط بالموضوع يُسمّى «كود»",
+      "روبيان",
+      "كركند",
+      "سلطعون",
+      "مصطلح مرتبط بالموضوع يُسمّى «ويستير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «موسسيل»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كلام»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سكاللوب»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Meat & Seafood to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key meat & seafood vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Roast", "Ground Beef", "Ribs"],
+          "scenario": "During a busy order, the worker and customer deal with roast, ground beef, and ribs. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Roast", "Ground Beef", "Ribs"],
+            "expectedAnswer": "Roast"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with roast, ground beef, and ribs. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Tenderloin", "Brisket", "Salmon"],
+          "scenario": "During a busy order, the worker and customer deal with tenderloin, brisket, and salmon. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Tenderloin", "Brisket", "Salmon"],
+            "expectedAnswer": "Tenderloin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with tenderloin, brisket, and salmon. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Tuna", "Cod", "Shrimp"],
+          "scenario": "During a busy order, the worker and customer deal with tuna, cod, and shrimp. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Tuna", "Cod", "Shrimp"],
+            "expectedAnswer": "Tuna"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with tuna, cod, and shrimp. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Lobster", "Crab", "Oyster"],
+          "scenario": "During a busy order, the worker and customer deal with lobster, crab, and oyster. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Lobster", "Crab", "Oyster"],
+            "expectedAnswer": "Lobster"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with lobster, crab, and oyster. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Mussel", "Clam", "Scallop"],
+          "scenario": "During a busy order, the worker and customer deal with mussel, clam, and scallop. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Mussel", "Clam", "Scallop"],
+            "expectedAnswer": "Mussel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with mussel, clam, and scallop. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Meat & Seafood: Simple Message",
+      "text": "Maya is in a situation connected to meat & seafood. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with roast, ground beef, and ribs. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with tenderloin, brisket, and salmon. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with tuna, cod, and shrimp. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Meat & Seafood. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Roast"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tenderloin"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tuna"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lobster"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mussel"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Roast"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Ribs"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Chicken” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Meat & Seafood: In Context",
+      "idea": "30-45 seconds contextual scene in the shop. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Chicken, Turkey from meat-seafood-1\n3 lesson(s) back: Fresh, Frozen from supermarket-24\n7 lesson(s) back: Lip Balm, Hand Sanitizer from supermarket-20"
+  },
+  {
+    "lessonId": "meat-seafood-3",
+    "lessonName": "Meat & Seafood 3",
+    "unitId": "meat-seafood",
+    "unitName": "Meat & Seafood",
+    "unitOrder": 35,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 173,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Bacon",
+      "Sausage",
+      "Ham",
+      "Salami",
+      "Prosciutto",
+      "Pepperoni",
+      "Hot Dog",
+      "Jerky",
+      "Chorizo",
+      "Pastrami",
+      "Fillet",
+      "Chop",
+      "Cutlet",
+      "Medallion",
+      "Shank"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «باكون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ساوساجي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «هام»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سالامي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بروسكيوتتو»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيببيروني»",
+      "هوت دوغ؛ نقانق في خبز",
+      "مصطلح مرتبط بالموضوع يُسمّى «جيركي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تشوريزو»",
+      "مصطلح مرتبط بالموضوع يُسمّى «باسترامي»",
+      "عظم يُسمّى «فيلليت»",
+      "يفرم",
+      "مصطلح مرتبط بالموضوع يُسمّى «كوتليت»",
+      "طعام يُسمّى «ميدالليون»",
+      "جزء يُسمّى «شانك»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Meat & Seafood to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key meat & seafood vocabulary in simple context.",
+      "textType": "notice-style text",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bacon", "Sausage", "Ham"],
+          "scenario": "During a busy order, the worker and customer deal with bacon, sausage, and ham. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Bacon", "Sausage", "Ham"],
+            "expectedAnswer": "Bacon"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with bacon, sausage, and ham. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Salami", "Prosciutto", "Pepperoni"],
+          "scenario": "During a busy order, the worker and customer deal with salami, prosciutto, and pepperoni. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Salami", "Prosciutto", "Pepperoni"],
+            "expectedAnswer": "Salami"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with salami, prosciutto, and pepperoni. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Hot Dog", "Jerky", "Chorizo"],
+          "scenario": "During a busy order, the worker and customer deal with hot dog, jerky, and chorizo. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Hot Dog", "Jerky", "Chorizo"],
+            "expectedAnswer": "Hot Dog"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with hot dog, jerky, and chorizo. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Pastrami", "Fillet", "Chop"],
+          "scenario": "During a busy order, the worker and customer deal with pastrami, fillet, and chop. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Pastrami", "Fillet", "Chop"],
+            "expectedAnswer": "Pastrami"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with pastrami, fillet, and chop. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Cutlet", "Medallion", "Shank"],
+          "scenario": "During a busy order, the worker and customer deal with cutlet, medallion, and shank. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Cutlet", "Medallion", "Shank"],
+            "expectedAnswer": "Cutlet"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with cutlet, medallion, and shank. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Meat & Seafood: Notice-Style Text",
+      "text": "Maya is in a situation connected to meat & seafood. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with bacon, sausage, and ham. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with salami, prosciutto, and pepperoni. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with hot dog, jerky, and chorizo. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Meat & Seafood. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bacon"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Salami"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hot Dog"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pastrami"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cutlet"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Bacon"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Ham"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Roast” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Meat & Seafood: In Context",
+      "idea": "30-45 seconds contextual scene in the shop. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Roast, Ground Beef from meat-seafood-2\n3 lesson(s) back: I need a refund, Where is aisle...? from supermarket-25\n7 lesson(s) back: Tray, Bunch from supermarket-21"
+  },
+  {
+    "lessonId": "meat-seafood-4",
+    "lessonName": "Meat & Seafood 4",
+    "unitId": "meat-seafood",
+    "unitName": "Meat & Seafood",
+    "unitOrder": 35,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 174,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": ["Loin", "Rack", "Ground", "Diced", "Sliced"],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «لوين»",
+      "مصطلح مرتبط بالموضوع يُسمّى «راك»",
+      "سطح يُسمّى «جرووند»",
+      "طعام يُسمّى «ديكيد»",
+      "طعام يُسمّى «سليكيد»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Meat & Seafood to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key meat & seafood vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Loin", "Rack", "Ground"],
+          "scenario": "During a busy order, the worker and customer deal with loin, rack, and ground. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Loin", "Rack", "Ground"],
+            "expectedAnswer": "Loin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with loin, rack, and ground. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Diced", "Sliced"],
+          "scenario": "During a busy order, the worker and customer deal with diced and sliced. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Diced", "Sliced"],
+            "expectedAnswer": "Diced"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with diced and sliced. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Meat & Seafood: Short Description",
+      "text": "Maya is in a situation connected to meat & seafood. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with loin, rack, and ground. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with diced and sliced. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about Meat & Seafood. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Loin"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Diced"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Loin"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Ground"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Bacon” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Meat & Seafood: In Context",
+      "idea": "30-45 seconds contextual scene in the shop. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Bacon, Sausage from meat-seafood-3\n3 lesson(s) back: Chicken, Turkey from meat-seafood-1\n7 lesson(s) back: Carry, Check Out from supermarket-22"
+  }
+]

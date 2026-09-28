@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "skeleton-1",
+    "lessonName": "The Skeleton 1",
+    "unitId": "skeleton",
+    "unitName": "The Skeleton",
+    "unitOrder": 104,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 483,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Skull",
+      "Cranium",
+      "Jaw Bone",
+      "Cheekbone",
+      "Eye Socket",
+      "Nasal Bone",
+      "Temple Bone",
+      "Foramen Magnum",
+      "Mandible",
+      "Maxilla",
+      "Spine",
+      "Vertebra",
+      "Cervical Spine",
+      "Thoracic Spine",
+      "Lumbar Spine"
+    ],
+    "targetWordsArabic": [
+      "جمجمة",
+      "قحف",
+      "مصطلح طبي أو تشريحي يُسمّى «جاو بوني»",
+      "عظم الوجنة",
+      "محجر العين",
+      "عظم يُسمّى «ناسال بوني»",
+      "مصطلح طبي أو تشريحي يُسمّى «تيمبلي بوني»",
+      "مصطلح طبي أو تشريحي يُسمّى «فورامين ماجنوم»",
+      "فك سفلي",
+      "فك علوي",
+      "عمود فقري",
+      "فقرة",
+      "مصطلح طبي أو تشريحي يُسمّى «كيرفيكال سبيني»",
+      "مصطلح طبي أو تشريحي يُسمّى «ثوراكيك سبيني»",
+      "مصطلح طبي أو تشريحي يُسمّى «لومبار سبيني»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Skeleton to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the skeleton vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Skull", "Cranium", "Jaw Bone", "Cheekbone"],
+          "scenario": "The guide or scientist draws attention to skull, cranium, jaw bone, and cheekbone. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Skull", "Cranium", "Jaw Bone", "Cheekbone"],
+            "expectedAnswer": "Skull"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to skull, cranium, jaw bone, and cheekbone. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Eye Socket", "Nasal Bone", "Temple Bone", "Foramen Magnum"],
+          "scenario": "The guide or scientist draws attention to eye socket, nasal bone, temple bone, and foramen magnum. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Eye Socket", "Nasal Bone", "Temple Bone", "Foramen Magnum"],
+            "expectedAnswer": "Eye Socket"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to eye socket, nasal bone, temple bone, and foramen magnum. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Mandible", "Maxilla", "Spine", "Vertebra"],
+          "scenario": "The guide or scientist draws attention to mandible, maxilla, spine, and vertebra. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mandible", "Maxilla", "Spine", "Vertebra"],
+            "expectedAnswer": "Mandible"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to mandible, maxilla, spine, and vertebra. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Cervical Spine", "Thoracic Spine", "Lumbar Spine"],
+          "scenario": "The learner identifies the cervical spine, thoracic spine, and lumbar spine and connects each part to its place or function in the body.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cervical Spine", "Thoracic Spine", "Lumbar Spine"],
+            "expectedAnswer": "Cervical Spine"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner identifies the cervical spine, thoracic spine, and lumbar spine and connects each part to its place or function in the body. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Skeleton: Travel/Visitor Guide",
+      "text": "A practical situation involving the skeleton requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to skull, cranium, jaw bone, and cheekbone. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to eye socket, nasal bone, temple bone, and foramen magnum. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to mandible, maxilla, spine, and vertebra. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Skeleton. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Skull"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Eye Socket"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mandible"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cervical Spine"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Skull"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Cheekbone"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Brain Stem” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Skeleton: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Brain Stem, Reflex from internal-organs-4\n3 lesson(s) back: Appendix, Duodenum from internal-organs-2\n7 lesson(s) back: Volume, Frequency from five-senses-2"
+  },
+  {
+    "lessonId": "skeleton-2",
+    "lessonName": "The Skeleton 2",
+    "unitId": "skeleton",
+    "unitName": "The Skeleton",
+    "unitOrder": 104,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 484,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Sacrum",
+      "Coccyx",
+      "Rib",
+      "Sternum",
+      "Ribcage",
+      "Clavicle",
+      "Scapula",
+      "Humerus",
+      "Radius",
+      "Ulna",
+      "Carpals",
+      "Metacarpals",
+      "Phalanges",
+      "Shoulder Joint",
+      "Elbow Joint"
+    ],
+    "targetWordsArabic": [
+      "عظم العجز",
+      "العصعص",
+      "ضلع",
+      "عظم القص",
+      "القفص الصدري",
+      "ترقوة",
+      "لوح الكتف",
+      "عظم العضد",
+      "عظم الكعبرة",
+      "عظم الزند",
+      "عظام الرسغ",
+      "عظام مشط اليد",
+      "السلاميات",
+      "عظم يُسمّى «شوولدير جوينت»",
+      "مصطلح طبي أو تشريحي يُسمّى «يلبوو جوينت»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Skeleton to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the skeleton vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sacrum", "Coccyx", "Rib", "Sternum"],
+          "scenario": "The guide or scientist draws attention to sacrum, coccyx, rib, and sternum. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sacrum", "Coccyx", "Rib", "Sternum"],
+            "expectedAnswer": "Sacrum"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to sacrum, coccyx, rib, and sternum. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Ribcage", "Clavicle", "Scapula", "Humerus"],
+          "scenario": "The guide or scientist draws attention to ribcage, clavicle, scapula, and humerus. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Ribcage", "Clavicle", "Scapula", "Humerus"],
+            "expectedAnswer": "Ribcage"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to ribcage, clavicle, scapula, and humerus. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Radius", "Ulna", "Carpals", "Metacarpals"],
+          "scenario": "The guide or scientist draws attention to radius, ulna, carpals, and metacarpals. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Radius", "Ulna", "Carpals", "Metacarpals"],
+            "expectedAnswer": "Radius"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to radius, ulna, carpals, and metacarpals. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Phalanges", "Shoulder Joint", "Elbow Joint"],
+          "scenario": "The guide or scientist draws attention to phalanges, shoulder joint, and elbow joint. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Phalanges", "Shoulder Joint", "Elbow Joint"],
+            "expectedAnswer": "Phalanges"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to phalanges, shoulder joint, and elbow joint. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Skeleton: Review",
+      "text": "A practical situation involving the skeleton requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to sacrum, coccyx, rib, and sternum. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to ribcage, clavicle, scapula, and humerus. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to radius, ulna, carpals, and metacarpals. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Skeleton. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sacrum"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ribcage"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Radius"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Phalanges"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Sacrum"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Sternum"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Skull” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Skeleton: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Skull, Cranium from skeleton-1\n3 lesson(s) back: Aorta, Vein from internal-organs-3\n7 lesson(s) back: Tongue, Taste Bud from five-senses-3"
+  },
+  {
+    "lessonId": "skeleton-3",
+    "lessonName": "The Skeleton 3",
+    "unitId": "skeleton",
+    "unitName": "The Skeleton",
+    "unitOrder": 104,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 485,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Pelvis",
+      "Femur",
+      "Patella",
+      "Tibia",
+      "Fibula",
+      "Tarsals",
+      "Metatarsals",
+      "Toe Bones",
+      "Hip Joint",
+      "Knee Joint",
+      "Joint",
+      "Cartilage",
+      "Ligament",
+      "Tendon",
+      "Bone Marrow"
+    ],
+    "targetWordsArabic": [
+      "الحوض",
+      "عظم الفخذ",
+      "الرضفة",
+      "الظنبوب",
+      "الشظية",
+      "عظام الرصغ",
+      "عظام مشط القدم",
+      "مصطلح طبي أو تشريحي يُسمّى «توي بونيس»",
+      "عظم يُسمّى «هيب جوينت»",
+      "عظم يُسمّى «كنيي جوينت»",
+      "مفصل",
+      "غضروف",
+      "رباط",
+      "وتر",
+      "عظم يُسمّى «بوني مارروو»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Skeleton to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the skeleton vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Pelvis", "Femur", "Patella", "Tibia"],
+          "scenario": "The guide or scientist draws attention to pelvis, femur, patella, and tibia. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pelvis", "Femur", "Patella", "Tibia"],
+            "expectedAnswer": "Pelvis"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to pelvis, femur, patella, and tibia. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Fibula", "Tarsals", "Metatarsals", "Toe Bones"],
+          "scenario": "The guide or scientist draws attention to fibula, tarsals, metatarsals, and toe bones. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fibula", "Tarsals", "Metatarsals", "Toe Bones"],
+            "expectedAnswer": "Fibula"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to fibula, tarsals, metatarsals, and toe bones. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Hip Joint", "Knee Joint", "Joint", "Cartilage"],
+          "scenario": "The guide or scientist draws attention to hip joint, knee joint, joint, and cartilage. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hip Joint", "Knee Joint", "Joint", "Cartilage"],
+            "expectedAnswer": "Hip Joint"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to hip joint, knee joint, joint, and cartilage. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Ligament", "Tendon", "Bone Marrow"],
+          "scenario": "The guide or scientist draws attention to ligament, tendon, and bone marrow. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Ligament", "Tendon", "Bone Marrow"],
+            "expectedAnswer": "Ligament"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to ligament, tendon, and bone marrow. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Skeleton: Practical Article",
+      "text": "A practical situation involving the skeleton requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to pelvis, femur, patella, and tibia. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to fibula, tarsals, metatarsals, and toe bones. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to hip joint, knee joint, joint, and cartilage. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Skeleton. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pelvis"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fibula"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hip Joint"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ligament"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Pelvis"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Tibia"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Sacrum” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Skeleton: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Sacrum, Coccyx from skeleton-2\n3 lesson(s) back: Brain Stem, Reflex from internal-organs-4\n7 lesson(s) back: Pain, Tickle from five-senses-4"
+  },
+  {
+    "lessonId": "skeleton-4",
+    "lessonName": "The Skeleton 4",
+    "unitId": "skeleton",
+    "unitName": "The Skeleton",
+    "unitOrder": 104,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 486,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Periosteum",
+      "Synovial Fluid",
+      "Disc",
+      "Meniscus",
+      "Bursa",
+      "Calcium",
+      "Vitamin D",
+      "Osteoporosis",
+      "Fracture",
+      "X-Ray",
+      "Cast",
+      "Splint",
+      "Bone Density",
+      "Growth Plate",
+      "Skeleton Model"
+    ],
+    "targetWordsArabic": [
+      "السمحاق",
+      "مصطلح طبي أو تشريحي يُسمّى «سينوفيال فلويد»",
+      "قرص",
+      "غضروف هلالي",
+      "جراب زلالي",
+      "كالسيوم",
+      "مصطلح طبي أو تشريحي يُسمّى «فيتامين د»",
+      "هشاشة العظام",
+      "كسر",
+      "أشعة سينية",
+      "جبيرة جبسية",
+      "جبيرة",
+      "عظم يُسمّى «بوني دينسيتي»",
+      "مصطلح طبي أو تشريحي يُسمّى «جرووث بلاتي»",
+      "نموذج هيكل عظمي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Skeleton to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the skeleton vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Periosteum", "Synovial Fluid", "Disc", "Meniscus"],
+          "scenario": "The guide or scientist draws attention to periosteum, synovial fluid, disc, and meniscus. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Periosteum", "Synovial Fluid", "Disc", "Meniscus"],
+            "expectedAnswer": "Periosteum"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to periosteum, synovial fluid, disc, and meniscus. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bursa", "Calcium", "Vitamin D", "Osteoporosis"],
+          "scenario": "The guide or scientist draws attention to bursa, calcium, vitamin d, and osteoporosis. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bursa", "Calcium", "Vitamin D", "Osteoporosis"],
+            "expectedAnswer": "Bursa"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to bursa, calcium, vitamin d, and osteoporosis. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Fracture", "X-Ray", "Cast", "Splint"],
+          "scenario": "The guide or scientist draws attention to fracture, x-ray, cast, and splint. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fracture", "X-Ray", "Cast", "Splint"],
+            "expectedAnswer": "Fracture"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to fracture, x-ray, cast, and splint. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Bone Density", "Growth Plate", "Skeleton Model"],
+          "scenario": "The guide or scientist draws attention to bone density, growth plate, and skeleton model. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bone Density", "Growth Plate", "Skeleton Model"],
+            "expectedAnswer": "Bone Density"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to bone density, growth plate, and skeleton model. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Skeleton: Real-Life Scenario",
+      "text": "A practical situation involving the skeleton requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to periosteum, synovial fluid, disc, and meniscus. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to bursa, calcium, vitamin d, and osteoporosis. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to fracture, x-ray, cast, and splint. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Skeleton. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Periosteum"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bursa"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fracture"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bone Density"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Periosteum"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Meniscus"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Pelvis” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Skeleton: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Pelvis, Femur from skeleton-3\n3 lesson(s) back: Skull, Cranium from skeleton-1\n7 lesson(s) back: Heart, Brain from internal-organs-1"
+  }
+]

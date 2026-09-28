@@ -1,0 +1,427 @@
+﻿[
+  {
+    "lessonId": "business-communication-1",
+    "lessonName": "Business Communication 1",
+    "unitId": "business-communication",
+    "unitName": "Business Communication",
+    "unitOrder": 145,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 668,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Email",
+      "Memo",
+      "Report",
+      "Proposal",
+      "Invoice",
+      "Contract",
+      "Letter",
+      "Newsletter",
+      "Press Release",
+      "Minutes",
+      "Deadline",
+      "Milestone",
+      "Deliverable",
+      "Stakeholder",
+      "Benchmark"
+    ],
+    "targetWordsArabic": [
+      "يرسل بريدًا إلكترونيًا",
+      "مصطلح مرتبط بالموضوع يُسمّى «ميمو»",
+      "تقرير",
+      "مصطلح مرتبط بالموضوع يُسمّى «بروبوسال»",
+      "فاتورة",
+      "مصطلح مرتبط بالموضوع يُسمّى «كونتراكت»",
+      "خطاب",
+      "مصطلح مرتبط بالموضوع يُسمّى «نيوسليتتير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بريسس ريلياسي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «مينوتيس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديادليني»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ميليستوني»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديليفيرابلي»",
+      "شخص يُسمّى «ستاكيهولدير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بينتشمارك»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Business Communication to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use business communication vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Email", "Memo", "Report", "Proposal"],
+          "scenario": "The team uses or discusses email, memo, report, and proposal during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Email", "Memo", "Report", "Proposal"],
+            "expectedAnswer": "Email"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses email, memo, report, and proposal during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Invoice", "Contract", "Letter", "Newsletter"],
+          "scenario": "The team uses or discusses invoice, contract, letter, and newsletter during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Invoice", "Contract", "Letter", "Newsletter"],
+            "expectedAnswer": "Invoice"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses invoice, contract, letter, and newsletter during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Press Release", "Minutes", "Deadline", "Milestone"],
+          "scenario": "The team uses or discusses press release, minutes, deadline, and milestone during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Press Release", "Minutes", "Deadline", "Milestone"],
+            "expectedAnswer": "Press Release"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses press release, minutes, deadline, and milestone during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Deliverable", "Stakeholder", "Benchmark"],
+          "scenario": "The team uses or discusses deliverable, stakeholder, and benchmark during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Deliverable", "Stakeholder", "Benchmark"],
+            "expectedAnswer": "Deliverable"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses deliverable, stakeholder, and benchmark during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Business Communication: Case Note",
+      "text": "A realistic case involving business communication shows how precise vocabulary can influence choices, explanations, and outcomes. The team uses or discusses email, memo, report, and proposal during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses invoice, contract, letter, and newsletter during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses press release, minutes, deadline, and milestone during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses deliverable, stakeholder, and benchmark during the workday. The words connect to organization, communication, equipment, or decision-making. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Business Communication. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Email"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Invoice"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Press Release"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Deliverable"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Email"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Padded Envelope” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Business Communication: In Context",
+      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Padded Envelope, Return Label from office-supplies-4\n3 lesson(s) back: Envelope, Folder from office-supplies-2\n7 lesson(s) back: Town Hall, Workshop from meeting-room-2"
+  },
+  {
+    "lessonId": "business-communication-2",
+    "lessonName": "Business Communication 2",
+    "unitId": "business-communication",
+    "unitName": "Business Communication",
+    "unitOrder": 145,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 669,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "KPI",
+      "ROI",
+      "Strategy",
+      "Objective",
+      "Initiative",
+      "Teamwork",
+      "Brainstorm",
+      "Feedback",
+      "Review",
+      "Approval",
+      "Delegation",
+      "Coordination",
+      "Synergy",
+      "Consensus",
+      "Alignment"
+    ],
+    "targetWordsArabic": [
+      "مؤشر أداء رئيسي (KPI)",
+      "مصطلح مرتبط بالموضوع يُسمّى «روي»",
+      "نظام يُسمّى «ستراتيجي»",
+      "شخص يُسمّى «وبجيكتيفي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ينيتياتيفي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تياموورك»",
+      "مصطلح مرتبط بالموضوع يُسمّى «براينستورم»",
+      "نظام يُسمّى «فييدباك»",
+      "مراجعة",
+      "مصطلح مرتبط بالموضوع يُسمّى «اببروفال»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديليجاتيون»",
+      "فعل أو عملية يُسمّى «كوورديناتيون»",
+      "عضلة يُسمّى «سينيرجي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كونسينسوس»",
+      "ضبط المحاذاة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Business Communication to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use business communication vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["KPI", "ROI", "Strategy", "Objective"],
+          "scenario": "The team uses or discusses kpi, roi, strategy, and objective during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["KPI", "ROI", "Strategy", "Objective"],
+            "expectedAnswer": "KPI"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses kpi, roi, strategy, and objective during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Initiative", "Teamwork", "Brainstorm", "Feedback"],
+          "scenario": "The team uses or discusses initiative, teamwork, brainstorm, and feedback during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Initiative", "Teamwork", "Brainstorm", "Feedback"],
+            "expectedAnswer": "Initiative"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses initiative, teamwork, brainstorm, and feedback during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Review", "Approval", "Delegation", "Coordination"],
+          "scenario": "The team uses or discusses review, approval, delegation, and coordination during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Review", "Approval", "Delegation", "Coordination"],
+            "expectedAnswer": "Review"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses review, approval, delegation, and coordination during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Synergy", "Consensus", "Alignment"],
+          "scenario": "The team uses or discusses synergy, consensus, and alignment during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Synergy", "Consensus", "Alignment"],
+            "expectedAnswer": "Synergy"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses synergy, consensus, and alignment during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Business Communication: Report Excerpt",
+      "text": "A realistic case involving business communication shows how precise vocabulary can influence choices, explanations, and outcomes. The team uses or discusses kpi, roi, strategy, and objective during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses initiative, teamwork, brainstorm, and feedback during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses review, approval, delegation, and coordination during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses synergy, consensus, and alignment during the workday. The words connect to organization, communication, equipment, or decision-making. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Business Communication. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "KPI"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Initiative"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Review"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Synergy"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "KPI"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Email” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Business Communication: In Context",
+      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Email, Memo from business-communication-1\n3 lesson(s) back: Desk Organizer, Pencil Cup from office-supplies-3\n7 lesson(s) back: Present, Discuss from meeting-room-3"
+  },
+  {
+    "lessonId": "business-communication-3",
+    "lessonName": "Business Communication 3",
+    "unitId": "business-communication",
+    "unitName": "Business Communication",
+    "unitOrder": 145,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 670,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Follow Up",
+      "Touch Base",
+      "Circle Back",
+      "Moving Forward",
+      "Action Items",
+      "Best Practice",
+      "Takeaway",
+      "Bottleneck",
+      "Scalable",
+      "Leverage"
+    ],
+    "targetWordsArabic": [
+      "متابعة",
+      "قاعدة كيميائية يلمس",
+      "مصطلح مرتبط بالموضوع يُسمّى «كيركلي باك»",
+      "من الآن فصاعدًا",
+      "بنود عمل",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيست براكتيكي»",
+      "طعام يُسمّى «تاكياواي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بوتتلينيك»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سكالابلي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليفيراجي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Business Communication to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use business communication vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Follow Up", "Touch Base", "Circle Back", "Moving Forward"],
+          "scenario": "The team uses or discusses follow up, touch base, circle back, and moving forward during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Follow Up", "Touch Base", "Circle Back", "Moving Forward"],
+            "expectedAnswer": "Follow Up"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses follow up, touch base, circle back, and moving forward during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Action Items", "Best Practice", "Takeaway", "Bottleneck"],
+          "scenario": "The team uses or discusses action items, best practice, takeaway, and bottleneck during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Action Items", "Best Practice", "Takeaway", "Bottleneck"],
+            "expectedAnswer": "Action Items"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses action items, best practice, takeaway, and bottleneck during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Scalable", "Leverage"],
+          "scenario": "The team uses or discusses scalable and leverage during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Scalable", "Leverage"],
+            "expectedAnswer": "Scalable"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses scalable and leverage during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Business Communication: Workplace/Academic Scenario",
+      "text": "A realistic case involving business communication shows how precise vocabulary can influence choices, explanations, and outcomes. The team uses or discusses follow up, touch base, circle back, and moving forward during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses action items, best practice, takeaway, and bottleneck during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses scalable and leverage during the workday. The words connect to organization, communication, equipment, or decision-making. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Business Communication. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Follow Up"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Action Items"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Scalable"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Follow Up"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “KPI” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Business Communication: In Context",
+      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: KPI, ROI from business-communication-2\n3 lesson(s) back: Padded Envelope, Return Label from office-supplies-4\n7 lesson(s) back: Chat, Breakout Room from meeting-room-4"
+  }
+]

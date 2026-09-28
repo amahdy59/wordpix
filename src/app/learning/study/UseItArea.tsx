@@ -67,7 +67,7 @@ export function UseItArea({
 
   if (!node) {
     return (
-      <div className="p-4 sm:p-6 md:p-8 max-w-4xl mx-auto w-full space-y-6">
+      <div className="wp-container-reading wp-layout-gutter space-y-6 py-4 sm:py-6 md:py-8">
         <div>
           <span className="text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block">
             {t("study.useInContext")}
@@ -113,7 +113,7 @@ export function UseItArea({
   const Icon = meta.icon;
 
   return (
-    <div className="max-w-4xl mx-auto w-full p-3.5 sm:p-6 md:p-8 space-y-4 sm:space-y-6">
+    <div className="wp-container-reading wp-layout-gutter space-y-4 py-3.5 sm:space-y-6 sm:py-6 md:py-8">
       {/* Activity Header with Learning Goal */}
       <div className="border-b border-border/70 pb-3.5 sm:pb-5">
         <div className="flex items-center gap-2.5 sm:gap-3.5 mb-1.5 sm:mb-2">

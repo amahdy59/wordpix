@@ -12,14 +12,14 @@ import {
   Briefcase,
 } from "lucide-react";
 import type { Action } from "../types";
-import { COURSE_UNITS, LEARNING_PATH_UNIT_IDS, type CourseUnit } from "../data/lessons";
+import { COURSE_UNITS, LEARNING_PATH_UNIT_IDS, type CourseUnit } from "../data/courseCatalog";
 import { CEFR_STAGES } from "../data/curriculumSequence";
 import { getUnitCurriculumDesign } from "../learning/curriculumModel";
 import { recommendPathUnit } from "../learning/recommendPathUnit";
 import { useProgress } from "../data/progress";
 import { useLearner } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
-import { Badge, ProgressBar, PageHeader, Button } from "../shared";
+import { Badge, ProgressBar, PageContainer, PageHeader, Button } from "../shared";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
@@ -85,7 +85,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
 
   if (!recommendedUnit) {
     return (
-      <div className="mx-auto flex w-full max-w-5xl flex-col gap-6 p-0 sm:p-2 lg:p-4">
+      <PageContainer size="wide">
         <section
           aria-labelledby="learning-path-empty-heading"
           className="rounded-3xl border border-border bg-wp-card p-5 text-center sm:p-6"
@@ -117,12 +117,12 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
             </button>
           </div>
         </section>
-      </div>
+      </PageContainer>
     );
   }
 
   return (
-    <div className="mx-auto flex w-full max-w-5xl flex-col gap-6 p-0 sm:p-2 lg:p-4">
+    <PageContainer size="wide">
       <PageHeader
         variant="hero"
         eyebrow={
@@ -173,7 +173,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
       </section>
 
       <section
-        className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
+        className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4"
         aria-label={t("learn.specialCurricula")}
       >
         <button
@@ -457,6 +457,6 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           </div>
         </div>
       )}
-    </div>
+    </PageContainer>
   );
 });

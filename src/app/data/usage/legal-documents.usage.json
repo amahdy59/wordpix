@@ -1,0 +1,444 @@
+﻿[
+  {
+    "lessonId": "legal-documents-1",
+    "lessonName": "Legal Documents 1",
+    "unitId": "legal-documents",
+    "unitName": "Legal Documents",
+    "unitOrder": 182,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 805,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Contract",
+      "Agreement",
+      "Terms",
+      "Conditions",
+      "Clause",
+      "Amendment",
+      "Addendum",
+      "Breach",
+      "Void",
+      "Binding",
+      "Complaint",
+      "Summons",
+      "Subpoena",
+      "Motion",
+      "Brief"
+    ],
+    "targetWordsArabic": [
+      "شخص يُسمّى «كونتراكت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «اجرييمينت»",
+      "جزء يُسمّى «تيرمس»",
+      "جزء يُسمّى «كونديتيونس»",
+      "وثيقة يُسمّى «كلاوسي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «اميندمينت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ادديندوم»",
+      "مصطلح مرتبط بالموضوع يُسمّى «برياتش»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فويد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيندينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كومبلاينت»",
+      "شخص يُسمّى «سوممونس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سوببوينا»",
+      "مصطلح مرتبط بالموضوع يُسمّى «موتيون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «برييف»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Legal Documents to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use legal documents vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "briefing note",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Contract", "Agreement", "Terms", "Conditions"],
+          "scenario": "The legal team works with contract, agreement, terms, and conditions. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Contract", "Agreement", "Terms", "Conditions"],
+            "expectedAnswer": "Contract"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with contract, agreement, terms, and conditions. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Clause", "Amendment", "Addendum", "Breach"],
+          "scenario": "The legal team works with clause, amendment, addendum, and breach. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Clause", "Amendment", "Addendum", "Breach"],
+            "expectedAnswer": "Clause"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with clause, amendment, addendum, and breach. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Void", "Binding", "Complaint", "Summons"],
+          "scenario": "The legal team works with void, binding, complaint, and summons. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Void", "Binding", "Complaint", "Summons"],
+            "expectedAnswer": "Void"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with void, binding, complaint, and summons. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Subpoena", "Motion", "Brief"],
+          "scenario": "The legal team works with subpoena, motion, and brief. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Subpoena", "Motion", "Brief"],
+            "expectedAnswer": "Subpoena"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with subpoena, motion, and brief. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Legal Documents: Briefing Note",
+      "text": "This text examines legal documents through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The legal team works with contract, agreement, terms, and conditions. Each term has a distinct role in the case, document set, or legal process. The legal team works with clause, amendment, addendum, and breach. Each term has a distinct role in the case, document set, or legal process. The legal team works with void, binding, complaint, and summons. Each term has a distinct role in the case, document set, or legal process. The legal team works with subpoena, motion, and brief. Each term has a distinct role in the case, document set, or legal process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about Legal Documents. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Contract"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Clause"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Void"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Subpoena"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Contract"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Terms"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Exhibit” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Legal Documents: In Context",
+      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Exhibit, Document from courtroom-trial-3\n3 lesson(s) back: Judge's Bench, Witness Stand from courtroom-trial-1\n7 lesson(s) back: Communicate from space-station-6"
+  },
+  {
+    "lessonId": "legal-documents-2",
+    "lessonName": "Legal Documents 2",
+    "unitId": "legal-documents",
+    "unitName": "Legal Documents",
+    "unitOrder": 182,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 806,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Petition",
+      "Order",
+      "Injunction",
+      "Warrant",
+      "Indictment",
+      "Will",
+      "Trust",
+      "Power of Attorney",
+      "Living Will",
+      "Deed",
+      "Title",
+      "Lease",
+      "Prenuptial",
+      "Divorce Decree",
+      "Adoption Papers"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «بيتيتيون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «وردير»",
+      "مصطلح قانوني يُسمّى «ينجونكتيون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «واررانت»",
+      "شخص يُسمّى «ينديكتمينت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ويلل»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تروست»",
+      "شخص يُسمّى «بووير وف اتتورنيي»",
+      "شخص يُسمّى «ليفينج ويلل»",
+      "وثيقة يُسمّى «دييد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تيتلي»",
+      "تأجير",
+      "مصطلح مرتبط بالموضوع يُسمّى «برينوبتيال»",
+      "حكم طلاق",
+      "أوراق التبني"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Legal Documents to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use legal documents vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "analysis excerpt",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Petition", "Order", "Injunction", "Warrant"],
+          "scenario": "The legal team works with petition, order, injunction, and warrant. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Petition", "Order", "Injunction", "Warrant"],
+            "expectedAnswer": "Petition"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with petition, order, injunction, and warrant. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Indictment", "Will", "Trust", "Power of Attorney"],
+          "scenario": "The legal team works with indictment, will, trust, and power of attorney. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Indictment", "Will", "Trust", "Power of Attorney"],
+            "expectedAnswer": "Indictment"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with indictment, will, trust, and power of attorney. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Living Will", "Deed", "Title", "Lease"],
+          "scenario": "The legal team works with living will, deed, title, and lease. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Living Will", "Deed", "Title", "Lease"],
+            "expectedAnswer": "Living Will"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with living will, deed, title, and lease. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Prenuptial", "Divorce Decree", "Adoption Papers"],
+          "scenario": "The legal team works with prenuptial, divorce decree, and adoption papers. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Prenuptial", "Divorce Decree", "Adoption Papers"],
+            "expectedAnswer": "Prenuptial"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with prenuptial, divorce decree, and adoption papers. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Legal Documents: Analysis Excerpt",
+      "text": "This text examines legal documents through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The legal team works with petition, order, injunction, and warrant. Each term has a distinct role in the case, document set, or legal process. The legal team works with indictment, will, trust, and power of attorney. Each term has a distinct role in the case, document set, or legal process. The legal team works with living will, deed, title, and lease. Each term has a distinct role in the case, document set, or legal process. The legal team works with prenuptial, divorce decree, and adoption papers. Each term has a distinct role in the case, document set, or legal process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about Legal Documents. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Petition"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Indictment"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Living Will"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Prenuptial"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Petition"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Injunction"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Contract” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Legal Documents: In Context",
+      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Contract, Agreement from legal-documents-1\n3 lesson(s) back: Bailiff, Court Reporter from courtroom-trial-2\n7 lesson(s) back: Lawyer, Attorney from law-firm-1"
+  },
+  {
+    "lessonId": "legal-documents-3",
+    "lessonName": "Legal Documents 3",
+    "unitId": "legal-documents",
+    "unitName": "Legal Documents",
+    "unitOrder": 182,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 807,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Patent",
+      "Trademark",
+      "Copyright",
+      "License",
+      "NDA",
+      "Non-Compete",
+      "Partnership Agreement",
+      "Articles of Incorporation",
+      "Bylaws",
+      "Operating Agreement"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «باتينت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تراديمارك»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كوبيريغت»",
+      "ترخيص",
+      "جزء يُسمّى «ندا»",
+      "شرط عدم المنافسة",
+      "اتفاقية شراكة",
+      "هيكل يُسمّى «ارتيكليس وف ينكوربوراتيون»",
+      "عضو يُسمّى «بيلاوس»",
+      "اتفاقية تشغيل الشركة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Legal Documents to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use legal documents vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "professional summary",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Patent", "Trademark", "Copyright", "License"],
+          "scenario": "The legal team works with patent, trademark, copyright, and license. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Patent", "Trademark", "Copyright", "License"],
+            "expectedAnswer": "Patent"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with patent, trademark, copyright, and license. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": [
+            "NDA",
+            "Non-Compete",
+            "Partnership Agreement",
+            "Articles of Incorporation"
+          ],
+          "scenario": "The legal team works with nda, non-compete, partnership agreement, and articles of incorporation. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["NDA", "Non-Compete", "Partnership Agreement", "Articles of Incorporation"],
+            "expectedAnswer": "NDA"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with nda, non-compete, partnership agreement, and articles of incorporation. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Bylaws", "Operating Agreement"],
+          "scenario": "The legal team works with bylaws and operating agreement. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bylaws", "Operating Agreement"],
+            "expectedAnswer": "Bylaws"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with bylaws and operating agreement. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Legal Documents: Professional Summary",
+      "text": "This text examines legal documents through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The legal team works with patent, trademark, copyright, and license. Each term has a distinct role in the case, document set, or legal process. The legal team works with nda, non-compete, partnership agreement, and articles of incorporation. Each term has a distinct role in the case, document set, or legal process. The legal team works with bylaws and operating agreement. Each term has a distinct role in the case, document set, or legal process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about Legal Documents. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Patent"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "NDA"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bylaws"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Patent"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Copyright"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Petition” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Legal Documents: In Context",
+      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Petition, Order from legal-documents-2\n3 lesson(s) back: Exhibit, Document from courtroom-trial-3\n7 lesson(s) back: Filing Room, War Room from law-firm-2"
+  }
+]

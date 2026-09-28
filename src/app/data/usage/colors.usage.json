@@ -1,0 +1,436 @@
+﻿[
+  {
+    "lessonId": "colors-1",
+    "lessonName": "Colors 1",
+    "unitId": "colors",
+    "unitName": "Colors",
+    "unitOrder": 2,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 5,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Red",
+      "Blue",
+      "Yellow",
+      "Green",
+      "Orange",
+      "Purple",
+      "Pink",
+      "Brown",
+      "Black",
+      "White",
+      "Cyan",
+      "Magenta",
+      "Lime",
+      "Teal",
+      "Indigo"
+    ],
+    "targetWordsArabic": [
+      "أحمر",
+      "أزرق",
+      "أصفر",
+      "أخضر",
+      "برتقالي",
+      "أرجواني",
+      "وردي",
+      "بني",
+      "أسود",
+      "أبيض",
+      "سماوي",
+      "أرجواني فاقع",
+      "شجرة يُسمّى «ليمي»",
+      "أزرق مخضر",
+      "نيلي"
+    ],
+    "usage": {
+      "goal": "Name common colors and use them to describe simple objects.",
+      "canDoStatement": "I can say basic colors around me.",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Red", "Blue", "Yellow"],
+          "scenario": "I see a red apple, a blue bag, and a yellow bus.",
+          "check": {
+            "question": "Which object is blue?",
+            "options": ["Red", "Blue", "Yellow"],
+            "expectedAnswer": "the bag"
+          },
+          "imageBrief": "Three everyday objects clearly showing red apple, blue bag, and yellow bus."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Green", "Orange", "Purple"],
+          "scenario": "The green leaf is small, the orange ball is round, and the purple kite is in the sky.",
+          "check": {
+            "question": "What color is the ball?",
+            "options": ["Green", "Orange", "Purple"],
+            "expectedAnswer": "orange"
+          },
+          "imageBrief": "Outdoor scene with a green leaf, orange ball, and purple kite."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Pink", "Brown", "Black"],
+          "scenario": "My pink toy is new, the brown table is big, and the black cat is sleeping.",
+          "check": {
+            "question": "Which animal is sleeping?",
+            "options": ["Pink", "Brown", "Black"],
+            "expectedAnswer": "the black cat"
+          },
+          "imageBrief": "Cozy home scene showing a pink toy, brown table, and black cat."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["White", "Cyan", "Magenta"],
+          "scenario": "The white cloud is high, the cyan shirt is clean, and the magenta flower is bright.",
+          "check": {
+            "question": "What color is the shirt?",
+            "options": ["White", "Cyan", "Magenta"],
+            "expectedAnswer": "cyan"
+          },
+          "imageBrief": "Scene or display showing a white cloud, cyan shirt, and magenta flower with very clear colors."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Lime", "Teal", "Indigo"],
+          "scenario": "I have a lime pencil, a teal cup, and an indigo notebook.",
+          "check": {
+            "question": "Which item is indigo?",
+            "options": ["Lime", "Teal", "Indigo"],
+            "expectedAnswer": "the notebook"
+          },
+          "imageBrief": "Desk scene with a lime pencil, teal cup, and indigo notebook."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Color Day",
+      "text": "Today is Color Day at school. I bring a blue bag and a yellow pencil. My friend has a pink toy and a brown box. We draw a red apple, a green leaf, and a purple kite. Our class looks bright and happy.",
+      "imageBrief": "Happy classroom art scene featuring several clearly colored objects mentioned in the story."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Red"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Green"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pink"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "White"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Lime"
+      },
+      {
+        "prompt": "Reading Comprehension: What color is the bag?",
+        "answer": "blue"
+      },
+      {
+        "prompt": "Reading Comprehension: What do the students draw?",
+        "answer": "a red apple, a green leaf, and a purple kite"
+      },
+      {
+        "prompt": "Reading Comprehension: How does the class look?",
+        "answer": "bright and happy"
+      }
+    ],
+    "video": {
+      "title": "Find the Color",
+      "idea": "30–45 second video. A presenter looks around the room and names colored objects, then asks the viewer to find the next color.",
+      "scriptStarter": "Can you find something red? I see a red apple. Now find something blue."
+    },
+    "spacedReview": "1 lesson(s) back: Plus, Minus from numbers-counting-4\n3 lesson(s) back: Sixteen, Seventeen from numbers-counting-2"
+  },
+  {
+    "lessonId": "colors-2",
+    "lessonName": "Colors 2",
+    "unitId": "colors",
+    "unitName": "Colors",
+    "unitOrder": 2,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 6,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Violet",
+      "Coral",
+      "Salmon",
+      "Turquoise",
+      "Lavender",
+      "Light",
+      "Dark",
+      "Bright",
+      "Dull",
+      "Vivid",
+      "Pale",
+      "Deep",
+      "Warm",
+      "Cool",
+      "Neutral"
+    ],
+    "targetWordsArabic": [
+      "بنفسجي",
+      "مرجان",
+      "لون يُسمّى «سالمون»",
+      "فيروزي",
+      "خزامي",
+      "لون يُسمّى «ليغت»",
+      "داكن",
+      "ساطع",
+      "لون أو درجة لونية يُسمّى «دولل»",
+      "لون يُسمّى «فيفيد»",
+      "لون يُسمّى «بالي»",
+      "لون يُسمّى «دييب»",
+      "لون أو درجة لونية يُسمّى «وارم»",
+      "لون أو درجة لونية يُسمّى «كوول»",
+      "لون يُسمّى «نيوترال»"
+    ],
+    "usage": {
+      "goal": "Describe color qualities such as light, dark, bright, warm, cool, and neutral.",
+      "canDoStatement": "I can talk about simple color types and how colors feel.",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Violet", "Coral", "Salmon"],
+          "scenario": "The violet scarf is soft, the coral wall is pretty, and the salmon fish picture is bright.",
+          "check": {
+            "question": "Which item is violet?",
+            "options": ["Violet", "Coral", "Salmon"],
+            "expectedAnswer": "the scarf"
+          },
+          "imageBrief": "Three easy objects or surfaces showing violet, coral, and salmon clearly."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Turquoise", "Lavender", "Light"],
+          "scenario": "The turquoise cup is on the table, the lavender pillow is on the chair, and the light blue sky is clear.",
+          "check": {
+            "question": "What is on the chair?",
+            "options": ["Turquoise", "Lavender", "Light"],
+            "expectedAnswer": "the lavender pillow"
+          },
+          "imageBrief": "Calm home scene with a turquoise cup, lavender pillow, and a light blue sky seen through a window."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Dark", "Bright", "Dull"],
+          "scenario": "This shirt is dark, that star is bright, and the old poster looks dull.",
+          "check": {
+            "question": "Which thing looks dull?",
+            "options": ["Dark", "Bright", "Dull"],
+            "expectedAnswer": "the old poster"
+          },
+          "imageBrief": "Three-panel comparison showing dark shirt, bright star, and dull poster."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Vivid", "Pale", "Deep"],
+          "scenario": "The vivid flower stands out, the pale pink wall is soft, and the deep green bottle is beautiful.",
+          "check": {
+            "question": "Which wall is soft?",
+            "options": ["Vivid", "Pale", "Deep"],
+            "expectedAnswer": "the pale pink wall"
+          },
+          "imageBrief": "Simple comparison scene with vivid flower, pale wall, and deep green bottle."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Warm", "Cool", "Neutral"],
+          "scenario": "Red and orange feel warm, blue feels cool, and gray looks neutral.",
+          "check": {
+            "question": "Which color feels cool?",
+            "options": ["Warm", "Cool", "Neutral"],
+            "expectedAnswer": "blue"
+          },
+          "imageBrief": "Friendly infographic showing warm colors, cool colors, and neutral gray."
+        }
+      ]
+    },
+    "reading": {
+      "title": "In the Art Room",
+      "text": "In the art room, we talk about colors. Our teacher shows a bright poster and a dull poster. Then she shows warm colors like red and orange and cool colors like blue. I like the pale pink wall and the deep green paint.",
+      "imageBrief": "Art room with posters, paint swatches, and warm/cool color examples."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Violet"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Turquoise"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Dark"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Vivid"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Warm"
+      },
+      {
+        "prompt": "Reading Comprehension: Which posters does the teacher show?",
+        "answer": "a bright poster and a dull poster"
+      },
+      {
+        "prompt": "Reading Comprehension: Which colors are warm in the story?",
+        "answer": "red and orange"
+      },
+      {
+        "prompt": "Reading Comprehension: What paint color does the learner like?",
+        "answer": "deep green"
+      }
+    ],
+    "video": {
+      "title": "Warm, Cool, Bright",
+      "idea": "35–45 second video. The teacher or guide shows paint cards and uses simple contrast pairs: bright vs dull, warm vs cool, pale vs deep.",
+      "scriptStarter": "This poster is bright. This one is dull. Red feels warm. Blue feels cool."
+    },
+    "spacedReview": "1 lesson(s) back: Red, Blue from colors-1\n3 lesson(s) back: First, Second from numbers-counting-3"
+  },
+  {
+    "lessonId": "colors-3",
+    "lessonName": "Colors 3",
+    "unitId": "colors",
+    "unitName": "Colors",
+    "unitOrder": 2,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 7,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Mix",
+      "Blend",
+      "Shade",
+      "Tint",
+      "Hue",
+      "Saturation",
+      "Gradient",
+      "Rainbow",
+      "Spectrum",
+      "Pigment"
+    ],
+    "targetWordsArabic": [
+      "يخلط",
+      "يمزج",
+      "درجة لونية",
+      "لون يُسمّى «تينت»",
+      "لون يُسمّى «هوي»",
+      "لون أو درجة لونية يُسمّى «ساتوراتيون»",
+      "سطح يُسمّى «جراديينت»",
+      "لون أو درجة لونية يُسمّى «راينبوو»",
+      "لون أو درجة لونية يُسمّى «سبيكتروم»",
+      "سطح يُسمّى «بيجمينت»"
+    ],
+    "usage": {
+      "goal": "Understand simple art words related to mixing and color change.",
+      "canDoStatement": "I can talk about mixing colors in a simple way.",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Mix", "Blend", "Shade"],
+          "scenario": "I mix blue and yellow, I blend the paint, and I make a darker shade.",
+          "check": {
+            "question": "What do I do after I mix the paint?",
+            "options": ["Mix", "Blend", "Shade"],
+            "expectedAnswer": "I blend it"
+          },
+          "imageBrief": "Art desk scene showing paint being mixed and blended to create a darker shade."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Tint", "Hue", "Saturation"],
+          "scenario": "White makes a light tint, blue is a cool hue, and strong color has high saturation.",
+          "check": {
+            "question": "What makes a light tint?",
+            "options": ["Tint", "Hue", "Saturation"],
+            "expectedAnswer": "white"
+          },
+          "imageBrief": "Clean color-learning card explaining tint, hue, and saturation with swatches."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Gradient", "Rainbow"],
+          "scenario": "The sky picture has a blue gradient, and the rainbow has many colors.",
+          "check": {
+            "question": "What has many colors?",
+            "options": ["Gradient", "Rainbow"],
+            "expectedAnswer": "the rainbow"
+          },
+          "imageBrief": "Simple scene with a sky gradient and a rainbow."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Spectrum", "Pigment"],
+          "scenario": "The spectrum shows many colors, and pigment gives paint its color.",
+          "check": {
+            "question": "What gives paint its color?",
+            "options": ["Spectrum", "Pigment"],
+            "expectedAnswer": "pigment"
+          },
+          "imageBrief": "Friendly visual card showing a color spectrum and pigment in paint."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Painting Time",
+      "text": "It is painting time. I mix red and yellow to make orange. My friend blends blue and white to make a light tint. Our teacher shows a rainbow and says the spectrum has many colors. The pigment in the paint makes the colors strong.",
+      "imageBrief": "Art class painting scene with mixing paints, a rainbow poster, and paint trays."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Mix"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Tint"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Gradient"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Spectrum"
+      },
+      {
+        "prompt": "Reading Comprehension: What colors do I mix to make orange?",
+        "answer": "red and yellow"
+      },
+      {
+        "prompt": "Reading Comprehension: What does my friend blend to make a light tint?",
+        "answer": "blue and white"
+      },
+      {
+        "prompt": "Reading Comprehension: What makes the colors strong?",
+        "answer": "the pigment in the paint"
+      }
+    ],
+    "video": {
+      "title": "Let’s Mix Colors",
+      "idea": "35–50 second video. A child mixes paint, the camera shows the color change, and the narrator names mix, blend, tint, gradient, and rainbow.",
+      "scriptStarter": "Watch me mix red and yellow. Now I blend the paint. White makes a light tint."
+    },
+    "spacedReview": "1 lesson(s) back: Violet, Coral from colors-2\n3 lesson(s) back: Plus, Minus from numbers-counting-4"
+  }
+]

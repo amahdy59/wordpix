@@ -54,10 +54,7 @@ export function HadithOverviewStage({ overview, lessonNumber }: Props) {
   const { t } = useI18n();
 
   return (
-    <section
-      className="mx-auto w-full max-w-5xl space-y-6"
-      aria-labelledby="stage-overview-heading"
-    >
+    <section className="wp-container-content space-y-6" aria-labelledby="stage-overview-heading">
       {/* Hero Orientation Banner */}
       <header className="relative overflow-hidden rounded-3xl border-2 border-primary/20 bg-gradient-to-br from-primary/10 via-card to-card p-6 shadow-wp-sm sm:p-8">
         <div className="flex items-center gap-2">

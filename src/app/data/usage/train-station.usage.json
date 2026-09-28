@@ -1,0 +1,579 @@
+﻿[
+  {
+    "lessonId": "train-station-1",
+    "lessonName": "L6 Train Station 1",
+    "unitId": "train-station",
+    "unitName": "L6 Train Station",
+    "unitOrder": 121,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 558,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "passenger train",
+      "freight train",
+      "high-speed train",
+      "subway",
+      "locomotive",
+      "train car",
+      "dining car",
+      "sleeper car",
+      "caboose",
+      "monorail",
+      "platform",
+      "track",
+      "ticket office",
+      "waiting room",
+      "concourse"
+    ],
+    "targetWordsArabic": [
+      "قطار راكب",
+      "قطار بضائع",
+      "قطار فائق السرعة",
+      "مترو",
+      "مصطلح مرتبط بالموضوع يُسمّى «لوكوموتيفي»",
+      "عربة قطار",
+      "مشروب يُسمّى «دينينج كار»",
+      "عربة نوم",
+      "مصطلح مرتبط بالموضوع يُسمّى «كابووسي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «مونورايل»",
+      "رصيف",
+      "مسار",
+      "مكتب تذكرة",
+      "غرفة انتظار",
+      "ردهة رئيسية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L6 Train Station to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l6 train station vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["passenger train", "freight train", "high-speed train", "subway"],
+          "scenario": "The customer or traveler compares the passenger train, freight train, high-speed train, and subway, thinking about where and why each type is used.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["passenger train", "freight train", "high-speed train", "subway"],
+            "expectedAnswer": "passenger train"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The customer or traveler compares the passenger train, freight train, high-speed train, and subway, thinking about where and why each type is used. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["locomotive", "train car", "dining car", "sleeper car"],
+          "scenario": "The traveler moves through the journey using or noticing locomotive, train car, dining car, and sleeper car. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["locomotive", "train car", "dining car", "sleeper car"],
+            "expectedAnswer": "locomotive"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing locomotive, train car, dining car, and sleeper car. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["caboose", "monorail", "platform", "track"],
+          "scenario": "The traveler moves through the journey using or noticing caboose, monorail, platform, and track. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["caboose", "monorail", "platform", "track"],
+            "expectedAnswer": "caboose"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing caboose, monorail, platform, and track. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["ticket office", "waiting room", "concourse"],
+          "scenario": "The traveler moves through the journey using or noticing ticket office, waiting room, and concourse. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["ticket office", "waiting room", "concourse"],
+            "expectedAnswer": "ticket office"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing ticket office, waiting room, and concourse. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L6 Train Station: Travel/Visitor Guide",
+      "text": "A practical situation involving l6 train station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The customer or traveler compares the passenger train, freight train, high-speed train, and subway, thinking about where and why each type is used. The traveler moves through the journey using or noticing locomotive, train car, dining car, and sleeper car. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing caboose, monorail, platform, and track. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Train Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "passenger train"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "locomotive"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "caboose"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "ticket office"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "passenger train"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "subway"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “touch pool” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L6 Train Station: In Context",
+      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: touch pool, viewing window from aquarium-4\n3 lesson(s) back: seal, walrus from aquarium-2\n7 lesson(s) back: beaver, cougar from zoo-3"
+  },
+  {
+    "lessonId": "train-station-2",
+    "lessonName": "L6 Train Station 2",
+    "unitId": "train-station",
+    "unitName": "L6 Train Station",
+    "unitOrder": 121,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 559,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "information desk",
+      "newsstand",
+      "vending machine",
+      "restroom",
+      "parking garage",
+      "taxi stand",
+      "bus stop",
+      "ticket",
+      "round trip",
+      "one-way",
+      "schedule",
+      "timetable",
+      "departure board",
+      "arrival board",
+      "reservation"
+    ],
+    "targetWordsArabic": [
+      "مبنى يُسمّى «ينفورماتيون ديسك»",
+      "مصطلح مرتبط بالموضوع يُسمّى «نيوسستاند»",
+      "آلة يُسمّى «فيندينج ماتشيني»",
+      "دورة مياه",
+      "مرآب سيارات",
+      "موقف سيارات أجرة",
+      "مصطلح مرتبط بالموضوع يُسمّى «بوس ستوب»",
+      "تذكرة",
+      "مكان يُسمّى «رووند تريب»",
+      "اتجاه واحد",
+      "جدول",
+      "جدول مواعيد",
+      "لوحة المغادرة",
+      "لوحة الوصول",
+      "مصطلح مرتبط بالموضوع يُسمّى «ريسيرفاتيون»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L6 Train Station to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l6 train station vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["information desk", "newsstand", "vending machine", "restroom"],
+          "scenario": "The traveler moves through the journey using or noticing information desk, newsstand, vending machine, and restroom. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["information desk", "newsstand", "vending machine", "restroom"],
+            "expectedAnswer": "information desk"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing information desk, newsstand, vending machine, and restroom. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["parking garage", "taxi stand", "bus stop", "ticket"],
+          "scenario": "The traveler moves through the journey using or noticing parking garage, taxi stand, bus stop, and ticket. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["parking garage", "taxi stand", "bus stop", "ticket"],
+            "expectedAnswer": "parking garage"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing parking garage, taxi stand, bus stop, and ticket. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["round trip", "one-way", "schedule", "timetable"],
+          "scenario": "The traveler moves through the journey using or noticing round trip, one-way, schedule, and timetable. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["round trip", "one-way", "schedule", "timetable"],
+            "expectedAnswer": "round trip"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing round trip, one-way, schedule, and timetable. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["departure board", "arrival board", "reservation"],
+          "scenario": "The traveler moves through the journey using or noticing departure board, arrival board, and reservation. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["departure board", "arrival board", "reservation"],
+            "expectedAnswer": "departure board"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing departure board, arrival board, and reservation. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L6 Train Station: Review",
+      "text": "A practical situation involving l6 train station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing information desk, newsstand, vending machine, and restroom. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing parking garage, taxi stand, bus stop, and ticket. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing round trip, one-way, schedule, and timetable. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Train Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "information desk"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "parking garage"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "round trip"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "departure board"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "information desk"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "restroom"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “passenger train” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L6 Train Station: In Context",
+      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: passenger train, freight train from train-station-1\n3 lesson(s) back: anemone, sea cucumber from aquarium-3\n7 lesson(s) back: penguin, owl from zoo-4"
+  },
+  {
+    "lessonId": "train-station-3",
+    "lessonName": "L6 Train Station 3",
+    "unitId": "train-station",
+    "unitName": "L6 Train Station",
+    "unitOrder": 121,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 560,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "seat number",
+      "first class",
+      "economy class",
+      "pass",
+      "turnstile",
+      "signal",
+      "crossing gate",
+      "bridge",
+      "tunnel",
+      "overhead wire",
+      "rail",
+      "switch",
+      "buffer stop",
+      "clock tower",
+      "conductor"
+    ],
+    "targetWordsArabic": [
+      "رقم المقعد",
+      "الدرجة الأولى",
+      "سفينة يُسمّى «يكونومي كلاسس»",
+      "بطاقة مرور",
+      "بوابة دوارة",
+      "إشارة",
+      "حاجز معبر سكك حديدية",
+      "قوس القدم",
+      "نفق",
+      "سلك كهربائي علوي",
+      "مصطلح مرتبط بالموضوع يُسمّى «رايل»",
+      "مبدّل شبكي",
+      "حاجز نهاية السكة",
+      "مصطلح مرتبط بالموضوع يُسمّى «كلوك تووير»",
+      "محصل أو مشرف قطار"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L6 Train Station to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l6 train station vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["seat number", "first class", "economy class", "pass"],
+          "scenario": "The traveler moves through the journey using or noticing seat number, first class, economy class, and pass. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["seat number", "first class", "economy class", "pass"],
+            "expectedAnswer": "seat number"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing seat number, first class, economy class, and pass. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["turnstile", "signal", "crossing gate", "bridge"],
+          "scenario": "The traveler moves through the journey using or noticing turnstile, signal, crossing gate, and bridge. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["turnstile", "signal", "crossing gate", "bridge"],
+            "expectedAnswer": "turnstile"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing turnstile, signal, crossing gate, and bridge. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["tunnel", "overhead wire", "rail", "switch"],
+          "scenario": "The traveler moves through the journey using or noticing tunnel, overhead wire, rail, and switch. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["tunnel", "overhead wire", "rail", "switch"],
+            "expectedAnswer": "tunnel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing tunnel, overhead wire, rail, and switch. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["buffer stop", "clock tower", "conductor"],
+          "scenario": "The traveler moves through the journey using or noticing buffer stop, clock tower, and conductor. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["buffer stop", "clock tower", "conductor"],
+            "expectedAnswer": "buffer stop"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing buffer stop, clock tower, and conductor. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L6 Train Station: Practical Article",
+      "text": "A practical situation involving l6 train station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing seat number, first class, economy class, and pass. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing turnstile, signal, crossing gate, and bridge. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing tunnel, overhead wire, rail, and switch. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Train Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "seat number"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "turnstile"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "tunnel"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "buffer stop"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "seat number"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "pass"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “information desk” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L6 Train Station: In Context",
+      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: information desk, newsstand from train-station-2\n3 lesson(s) back: touch pool, viewing window from aquarium-4\n7 lesson(s) back: fountain, playground from zoo-5"
+  },
+  {
+    "lessonId": "train-station-4",
+    "lessonName": "L6 Train Station 4",
+    "unitId": "train-station",
+    "unitName": "L6 Train Station",
+    "unitOrder": 121,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 561,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "engineer",
+      "porter",
+      "commuter",
+      "traveler",
+      "boarding",
+      "departing",
+      "arriving",
+      "transferring",
+      "waiting",
+      "announcing",
+      "validating"
+    ],
+    "targetWordsArabic": [
+      "مهندس",
+      "مصطلح مرتبط بالموضوع يُسمّى «بورتير»",
+      "متنقل يومي",
+      "شخص يُسمّى «ترافيلير»",
+      "طائرة يُسمّى «بواردينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديبارتينج»",
+      "مكان يُسمّى «ارريفينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ترانسفيررينج»",
+      "مكان يُسمّى «وايتينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «اننوونكينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فاليداتينج»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L6 Train Station to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l6 train station vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["engineer", "porter", "commuter", "traveler"],
+          "scenario": "The traveler moves through the journey using or noticing engineer, porter, commuter, and traveler. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["engineer", "porter", "commuter", "traveler"],
+            "expectedAnswer": "engineer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing engineer, porter, commuter, and traveler. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["boarding", "departing", "arriving", "transferring"],
+          "scenario": "The learner connects boarding, departing, arriving, and transferring to the main activity and explains what each term means in context.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["boarding", "departing", "arriving", "transferring"],
+            "expectedAnswer": "boarding"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner connects boarding, departing, arriving, and transferring to the main activity and explains what each term means in context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["waiting", "announcing", "validating"],
+          "scenario": "The learner connects waiting, announcing, and validating to the main activity and explains what each term means in context.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["waiting", "announcing", "validating"],
+            "expectedAnswer": "waiting"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner connects waiting, announcing, and validating to the main activity and explains what each term means in context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L6 Train Station: Real-Life Scenario",
+      "text": "A practical situation involving l6 train station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing engineer, porter, commuter, and traveler. Each term marks a different part of the travel process. The learner connects boarding, departing, arriving, and transferring to the main activity and explains what each term means in context. The learner connects waiting, announcing, and validating to the main activity and explains what each term means in context. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Train Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "engineer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "boarding"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "waiting"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "engineer"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "traveler"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “seat number” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L6 Train Station: In Context",
+      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: seat number, first class from train-station-3\n3 lesson(s) back: passenger train, freight train from train-station-1\n7 lesson(s) back: clownfish, angelfish from aquarium-1"
+  }
+]

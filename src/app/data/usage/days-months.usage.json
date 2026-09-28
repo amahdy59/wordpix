@@ -1,0 +1,537 @@
+﻿[
+  {
+    "lessonId": "days-months-1",
+    "lessonName": "Days & Months 1",
+    "unitId": "days-months",
+    "unitName": "Days & Months",
+    "unitOrder": 13,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 50,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+      "Weekday",
+      "Weekend",
+      "Day Off",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May"
+    ],
+    "targetWordsArabic": [
+      "الاثنين",
+      "الثلاثاء",
+      "الأربعاء",
+      "الخميس",
+      "الجمعة",
+      "السبت",
+      "الأحد",
+      "يوم من أيام الأسبوع غير عطلة نهاية الأسبوع",
+      "عطلة نهاية الأسبوع",
+      "يوم إجازة",
+      "يناير",
+      "فبراير",
+      "مارس",
+      "أبريل",
+      "مايو"
+    ],
+    "usage": {
+      "goal": "Use basic day, month, date, and calendar words.",
+      "canDoStatement": "I can use basic day, month, date, and calendar words",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Monday", "Tuesday", "Wednesday"],
+          "scenario": "When we use a calendar, we see or say monday, tuesday, and wednesday.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Monday", "Tuesday", "Wednesday"],
+            "expectedAnswer": "Monday"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say monday, tuesday, and wednesday. Emphasize monday, tuesday, and wednesday and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Thursday", "Friday", "Saturday"],
+          "scenario": "When we use a calendar, we see or say thursday, friday, and saturday.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Thursday", "Friday", "Saturday"],
+            "expectedAnswer": "Thursday"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say thursday, friday, and saturday. Emphasize thursday, friday, and saturday and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Sunday", "Weekday", "Weekend"],
+          "scenario": "When we use a calendar, we see or say sunday, weekday, and weekend.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Sunday", "Weekday", "Weekend"],
+            "expectedAnswer": "Sunday"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say sunday, weekday, and weekend. Emphasize sunday, weekday, and weekend and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Day Off", "January", "February"],
+          "scenario": "When we use a calendar, we see or say day off, january, and february.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Day Off", "January", "February"],
+            "expectedAnswer": "Day Off"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say day off, january, and february. Emphasize day off, january, and february and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["March", "April", "May"],
+          "scenario": "When we use a calendar, we see or say march, april, and may.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["March", "April", "May"],
+            "expectedAnswer": "March"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say march, april, and may. Emphasize march, april, and may and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Days & Months Mini Story",
+      "text": "We open a calendar today. We read monday, tuesday, and wednesday. Then we find thursday, friday, and saturday. We point to the date and talk about when things happen. We also remember earlier words such as ahead of time and behind schedule.",
+      "imageBrief": "One uncluttered days & months scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Monday"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Thursday"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Sunday"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Day Off"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "March"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Monday"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Tuesday"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Saturday"
+      }
+    ],
+    "video": {
+      "title": "Days & Months: See It, Say It",
+      "idea": "30–50 second contextual video set in a calendar. Show monday, tuesday, wednesday, thursday, and friday naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see monday, tuesday, and wednesday. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Ahead of Time, Behind Schedule from telling-time-4\n3 lesson(s) back: Noon, Midnight from telling-time-2\n7 lesson(s) back: Chard, Collard Greens from vegetables-2"
+  },
+  {
+    "lessonId": "days-months-2",
+    "lessonName": "Days & Months 2",
+    "unitId": "days-months",
+    "unitName": "Days & Months",
+    "unitOrder": 13,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 51,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+      "Leap Year",
+      "Fiscal Year",
+      "Academic Year",
+      "Calendar Year",
+      "Quarter",
+      "Semester",
+      "Trimester",
+      "Biannual"
+    ],
+    "targetWordsArabic": [
+      "يونيو",
+      "يوليو",
+      "أغسطس",
+      "سبتمبر",
+      "أكتوبر",
+      "نوفمبر",
+      "ديسمبر",
+      "سنة كبيسة",
+      "سنة مالية",
+      "سنة دراسية",
+      "سنة تقويمية",
+      "ربع سنة",
+      "فصل دراسي",
+      "فصل من ثلاثة فصول دراسية",
+      "مرتين في السنة"
+    ],
+    "usage": {
+      "goal": "Use basic day, month, date, and calendar words.",
+      "canDoStatement": "I can use basic day, month, date, and calendar words",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["June", "July", "August"],
+          "scenario": "When we use a calendar, we see or say june, july, and august.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["June", "July", "August"],
+            "expectedAnswer": "June"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say june, july, and august. Emphasize june, july, and august and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["September", "October", "November"],
+          "scenario": "When we use a calendar, we see or say september, october, and november.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["September", "October", "November"],
+            "expectedAnswer": "September"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say september, october, and november. Emphasize september, october, and november and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["December", "Leap Year", "Fiscal Year"],
+          "scenario": "When we use a calendar, we see or say december, leap year, and fiscal year.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["December", "Leap Year", "Fiscal Year"],
+            "expectedAnswer": "December"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say december, leap year, and fiscal year. Emphasize december, leap year, and fiscal year and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Academic Year", "Calendar Year", "Quarter"],
+          "scenario": "When we use a calendar, we see or say academic year, calendar year, and quarter.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Academic Year", "Calendar Year", "Quarter"],
+            "expectedAnswer": "Academic Year"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say academic year, calendar year, and quarter. Emphasize academic year, calendar year, and quarter and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Semester", "Trimester", "Biannual"],
+          "scenario": "When we use a calendar, we see or say semester, trimester, and biannual.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Semester", "Trimester", "Biannual"],
+            "expectedAnswer": "Semester"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say semester, trimester, and biannual. Emphasize semester, trimester, and biannual and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Days & Months Mini Story",
+      "text": "We open a calendar today. We read june, july, and august. Then we find september, october, and november. We point to the date and talk about when things happen. We also remember earlier words such as monday and tuesday.",
+      "imageBrief": "One uncluttered days & months scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "June"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "September"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "December"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Academic Year"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Semester"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "June"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "July"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "November"
+      }
+    ],
+    "video": {
+      "title": "Days & Months: See It, Say It",
+      "idea": "30–50 second contextual video set in a calendar. Show june, july, august, september, and october naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see june, july, and august. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Monday, Tuesday from days-months-1\n3 lesson(s) back: Morning, Afternoon from telling-time-3\n7 lesson(s) back: Zucchini, Pumpkin from vegetables-3"
+  },
+  {
+    "lessonId": "days-months-3",
+    "lessonName": "Days & Months 3",
+    "unitId": "days-months",
+    "unitName": "Days & Months",
+    "unitOrder": 13,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 52,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Today",
+      "Tomorrow",
+      "Yesterday",
+      "This Week",
+      "Next Week",
+      "Last Week",
+      "This Month",
+      "Next Month",
+      "Last Month",
+      "This Year",
+      "Calendar",
+      "Date",
+      "Appointment",
+      "Schedule",
+      "Planner"
+    ],
+    "targetWordsArabic": [
+      "اليوم",
+      "غدًا",
+      "أمس",
+      "هذا الأسبوع",
+      "الأسبوع القادم",
+      "الأسبوع الماضي",
+      "هذا الشهر",
+      "الشهر القادم",
+      "الشهر الماضي",
+      "هذا العام",
+      "تَقْوِيم (نَتِيجَة)",
+      "تاريخ",
+      "موعد",
+      "جدول زمني",
+      "مفكرة تخطيط"
+    ],
+    "usage": {
+      "goal": "Use basic day, month, date, and calendar words.",
+      "canDoStatement": "I can use basic day, month, date, and calendar words",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Today", "Tomorrow", "Yesterday"],
+          "scenario": "When we use a calendar, we see or say today, tomorrow, and yesterday.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Today", "Tomorrow", "Yesterday"],
+            "expectedAnswer": "Today"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say today, tomorrow, and yesterday. Emphasize today, tomorrow, and yesterday and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["This Week", "Next Week", "Last Week"],
+          "scenario": "When we use a calendar, we see or say this week, next week, and last week.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["This Week", "Next Week", "Last Week"],
+            "expectedAnswer": "This Week"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say this week, next week, and last week. Emphasize this week, next week, and last week and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["This Month", "Next Month", "Last Month"],
+          "scenario": "When we use a calendar, we see or say this month, next month, and last month.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["This Month", "Next Month", "Last Month"],
+            "expectedAnswer": "This Month"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say this month, next month, and last month. Emphasize this month, next month, and last month and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["This Year", "Calendar", "Date"],
+          "scenario": "When we use a calendar, we see or say this year, calendar, and date.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["This Year", "Calendar", "Date"],
+            "expectedAnswer": "This Year"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say this year, calendar, and date. Emphasize this year, calendar, and date and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Appointment", "Schedule", "Planner"],
+          "scenario": "When we use a calendar, we see or say appointment, schedule, and planner.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Appointment", "Schedule", "Planner"],
+            "expectedAnswer": "Appointment"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say appointment, schedule, and planner. Emphasize appointment, schedule, and planner and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Days & Months Mini Story",
+      "text": "We open a calendar today. We read today, tomorrow, and yesterday. Then we find this week, next week, and last week. We point to the date and talk about when things happen. We also remember earlier words such as june and july.",
+      "imageBrief": "One uncluttered days & months scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Today"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "This Week"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "This Month"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "This Year"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Appointment"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Today"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Tomorrow"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Last Week"
+      }
+    ],
+    "video": {
+      "title": "Days & Months: See It, Say It",
+      "idea": "30–50 second contextual video set in a calendar. Show today, tomorrow, yesterday, this week, and next week naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see today, tomorrow, and yesterday. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: June, July from days-months-2\n3 lesson(s) back: Ahead of Time, Behind Schedule from telling-time-4\n7 lesson(s) back: Habanero, Serrano from vegetables-4"
+  },
+  {
+    "lessonId": "days-months-4",
+    "lessonName": "Days & Months 4",
+    "unitId": "days-months",
+    "unitName": "Days & Months",
+    "unitOrder": 13,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 53,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": ["Diary", "Agenda", "Deadline", "Reminder", "Event"],
+    "targetWordsArabic": ["مفكرة يومية", "جدول أعمال", "موعد نهائي", "تذكير", "فعالية"],
+    "usage": {
+      "goal": "Use basic day, month, date, and calendar words.",
+      "canDoStatement": "I can use basic day, month, date, and calendar words",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Diary", "Agenda", "Deadline"],
+          "scenario": "When we use a calendar, we see or say diary, agenda, and deadline.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Diary", "Agenda", "Deadline"],
+            "expectedAnswer": "Diary"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say diary, agenda, and deadline. Emphasize diary, agenda, and deadline and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Reminder", "Event"],
+          "scenario": "When we use a calendar, we see or say reminder and event.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Reminder", "Event"],
+            "expectedAnswer": "Reminder"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for days & months that represents: When we use a calendar, we see or say reminder and event. Emphasize reminder and event and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Days & Months Mini Story",
+      "text": "We open a calendar today. We read diary, agenda, and deadline. Then we find reminder and event. We point to the date and talk about when things happen. We also remember earlier words such as today and tomorrow.",
+      "imageBrief": "One uncluttered days & months scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Diary"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Reminder"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Diary"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Agenda"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Event"
+      }
+    ],
+    "video": {
+      "title": "Days & Months: See It, Say It",
+      "idea": "30–50 second contextual video set in a calendar. Show diary, agenda, deadline, reminder, and event naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see diary, agenda, and deadline. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Today, Tomorrow from days-months-3\n3 lesson(s) back: Monday, Tuesday from days-months-1\n7 lesson(s) back: Clock, Watch from telling-time-1"
+  }
+]

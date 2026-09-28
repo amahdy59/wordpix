@@ -39,21 +39,23 @@ vi.mock("../shared/useSpeechRecognition", () => ({
 // *order* of the loaded sections, not the dictionary payload, so it uses a
 // minimal entry: 1 sentence + 3 reviewed collocations. Full-dictionary
 // integrity is covered by lexicon_and_inspector and figma catalog tests.
-vi.mock("../data/lexiconDictionary", () => ({
-  getLexiconEntry: () => ({
-    id: "shower",
-    arabic: "دش",
-    partOfSpeech: "noun",
-    collocations: ["take a shower", "hot shower", "cold shower", "use regularly"],
-    phrasalVerbs: [],
-    sentences: [
-      { context: "Example", en: "I take a shower every morning.", ar: "آخذ دشًا كل صباح." },
-    ],
-    exampleSentence: "I take a shower every morning.",
+vi.mock("../data/lexiconLoader", () => ({
+  loadLexicon: async () => ({
+    getLexiconEntry: () => ({
+      id: "shower",
+      arabic: "دش",
+      partOfSpeech: "noun",
+      collocations: ["take a shower", "hot shower", "cold shower", "use regularly"],
+      phrasalVerbs: [],
+      sentences: [
+        { context: "Example", en: "I take a shower every morning.", ar: "آخذ دشًا كل صباح." },
+      ],
+      exampleSentence: "I take a shower every morning.",
+    }),
+    getReviewedCollocations: (entry: { collocations: string[] }) =>
+      entry.collocations.filter((collocation) => collocation !== "use regularly"),
+    hasArabicGloss: (entry: { arabic: string }) => entry.arabic !== "",
   }),
-  getReviewedCollocations: (entry: { collocations: string[] }) =>
-    entry.collocations.filter((collocation) => collocation !== "use regularly"),
-  hasArabicGloss: (entry: { arabic: string }) => entry.arabic !== "",
 }));
 
 describe("Listen and repeat mobile focus", () => {

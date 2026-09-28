@@ -1,0 +1,579 @@
+﻿[
+  {
+    "lessonId": "post-office-1",
+    "lessonName": "L5 Post Office 1",
+    "unitId": "post-office",
+    "unitName": "L5 Post Office",
+    "unitOrder": 136,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 630,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "letter",
+      "envelope",
+      "postcard",
+      "package",
+      "parcel",
+      "stamp",
+      "sticker",
+      "label",
+      "address",
+      "return address",
+      "zip code",
+      "tracking number",
+      "mailbox",
+      "post box",
+      "slot"
+    ],
+    "targetWordsArabic": [
+      "خطاب",
+      "مظروف",
+      "بطاقة بريدية",
+      "طرد",
+      "طرد بريدي",
+      "طابع",
+      "ملصق",
+      "علامة",
+      "عنوان",
+      "عنوان عائد",
+      "عامل يُسمّى «زيب كودي»",
+      "رقم تتبع",
+      "صندوق بريد",
+      "صندوق بريد",
+      "فتحة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L5 Post Office to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l5 post office vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["letter", "envelope", "postcard", "package"],
+          "scenario": "A visitor to the public-service setting encounters letter, envelope, postcard, and package, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["letter", "envelope", "postcard", "package"],
+            "expectedAnswer": "letter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters letter, envelope, postcard, and package, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["parcel", "stamp", "sticker", "label"],
+          "scenario": "A visitor to the public-service setting encounters parcel, stamp, sticker, and label, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["parcel", "stamp", "sticker", "label"],
+            "expectedAnswer": "parcel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters parcel, stamp, sticker, and label, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["address", "return address", "zip code", "tracking number"],
+          "scenario": "A visitor to the public-service setting encounters address, return address, zip code, and tracking number, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["address", "return address", "zip code", "tracking number"],
+            "expectedAnswer": "address"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters address, return address, zip code, and tracking number, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["mailbox", "post box", "slot"],
+          "scenario": "A visitor to the public-service setting encounters mailbox, post box, and slot, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["mailbox", "post box", "slot"],
+            "expectedAnswer": "mailbox"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters mailbox, post box, and slot, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L5 Post Office: Practical Article",
+      "text": "A practical situation involving l5 post office requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. A visitor to the public-service setting encounters letter, envelope, postcard, and package, with each word connected to a different part of the service. A visitor to the public-service setting encounters parcel, stamp, sticker, and label, with each word connected to a different part of the service. A visitor to the public-service setting encounters address, return address, zip code, and tracking number, with each word connected to a different part of the service. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Post Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "letter"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "parcel"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "address"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "mailbox"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "letter"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "package"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Turntable” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L5 Post Office: In Context",
+      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Turntable, Speaker from radio-station-5\n3 lesson(s) back: Playlist, Jingle from radio-station-3\n7 lesson(s) back: Sound Board, Clip-On Mic from tv-studio-4"
+  },
+  {
+    "lessonId": "post-office-2",
+    "lessonName": "L5 Post Office 2",
+    "unitId": "post-office",
+    "unitName": "L5 Post Office",
+    "unitOrder": 136,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 631,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "counter",
+      "scale",
+      "receipt",
+      "delivery",
+      "pickup",
+      "signature",
+      "registered mail",
+      "express mail",
+      "certified mail",
+      "postal worker",
+      "mail carrier",
+      "clerk",
+      "postmaster",
+      "delivery driver",
+      "sorter"
+    ],
+    "targetWordsArabic": [
+      "منضدة",
+      "مقياس رسم",
+      "إيصال",
+      "توصيل",
+      "استلام",
+      "توقيع",
+      "مصطلح مرتبط بالموضوع يُسمّى «ريجيستيريد مايل»",
+      "بريد سريع",
+      "بريد مسجّل مع إثبات",
+      "عامل بريد",
+      "ساعي بريد",
+      "موظف",
+      "مدير مكتب بريد",
+      "سائق توصيل",
+      "عامل فرز"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L5 Post Office to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l5 post office vocabulary to handle a practical situation and explain key details.",
+      "textType": "email",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["counter", "scale", "receipt", "delivery"],
+          "scenario": "A visitor to the public-service setting encounters counter, scale, receipt, and delivery, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["counter", "scale", "receipt", "delivery"],
+            "expectedAnswer": "counter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters counter, scale, receipt, and delivery, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["pickup", "signature", "registered mail", "express mail"],
+          "scenario": "A visitor to the public-service setting encounters pickup, signature, registered mail, and express mail, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["pickup", "signature", "registered mail", "express mail"],
+            "expectedAnswer": "pickup"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters pickup, signature, registered mail, and express mail, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["certified mail", "postal worker", "mail carrier", "clerk"],
+          "scenario": "A visitor to the public-service setting encounters certified mail, postal worker, mail carrier, and clerk, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["certified mail", "postal worker", "mail carrier", "clerk"],
+            "expectedAnswer": "certified mail"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters certified mail, postal worker, mail carrier, and clerk, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["postmaster", "delivery driver", "sorter"],
+          "scenario": "A visitor to the public-service setting encounters postmaster, delivery driver, and sorter, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["postmaster", "delivery driver", "sorter"],
+            "expectedAnswer": "postmaster"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters postmaster, delivery driver, and sorter, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L5 Post Office: Email",
+      "text": "A practical situation involving l5 post office requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. A visitor to the public-service setting encounters counter, scale, receipt, and delivery, with each word connected to a different part of the service. A visitor to the public-service setting encounters pickup, signature, registered mail, and express mail, with each word connected to a different part of the service. A visitor to the public-service setting encounters certified mail, postal worker, mail carrier, and clerk, with each word connected to a different part of the service. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Post Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "counter"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "pickup"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "certified mail"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "postmaster"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "counter"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "delivery"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “letter” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L5 Post Office: In Context",
+      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: letter, envelope from post-office-1\n3 lesson(s) back: Traffic Reporter, Weather Presenter from radio-station-4\n7 lesson(s) back: Monitor, Boom Mic from tv-studio-5"
+  },
+  {
+    "lessonId": "post-office-3",
+    "lessonName": "L5 Post Office 3",
+    "unitId": "post-office",
+    "unitName": "L5 Post Office",
+    "unitOrder": 136,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 632,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "courier",
+      "customer",
+      "mail bag",
+      "cart",
+      "sorting machine",
+      "scanner",
+      "tape",
+      "bubble wrap",
+      "packing peanuts",
+      "box",
+      "padded envelope",
+      "rubber band",
+      "ink pad",
+      "date stamp",
+      "lobby"
+    ],
+    "targetWordsArabic": [
+      "مندوب توصيل",
+      "عميل",
+      "حقيبة بريد",
+      "عربة",
+      "آلة فرز",
+      "ماسح ضوئي",
+      "شريط لاصق",
+      "سفينة يُسمّى «بوببلي وراب»",
+      "حبيبات تغليف واقية",
+      "صندوق",
+      "مظروف مبطّن",
+      "مصطلح مرتبط بالموضوع يُسمّى «روببير باند»",
+      "وسادة حبر",
+      "وثيقة يُسمّى «داتي ستامب»",
+      "ردهة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L5 Post Office to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l5 post office vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["courier", "customer", "mail bag", "cart"],
+          "scenario": "A visitor to the public-service setting encounters courier, customer, mail bag, and cart, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["courier", "customer", "mail bag", "cart"],
+            "expectedAnswer": "courier"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters courier, customer, mail bag, and cart, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["sorting machine", "scanner", "tape", "bubble wrap"],
+          "scenario": "A visitor to the public-service setting encounters sorting machine, scanner, tape, and bubble wrap, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["sorting machine", "scanner", "tape", "bubble wrap"],
+            "expectedAnswer": "sorting machine"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters sorting machine, scanner, tape, and bubble wrap, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["packing peanuts", "box", "padded envelope", "rubber band"],
+          "scenario": "A visitor to the public-service setting encounters packing peanuts, box, padded envelope, and rubber band, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["packing peanuts", "box", "padded envelope", "rubber band"],
+            "expectedAnswer": "packing peanuts"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters packing peanuts, box, padded envelope, and rubber band, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["ink pad", "date stamp", "lobby"],
+          "scenario": "A visitor to the public-service setting encounters ink pad, date stamp, and lobby, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["ink pad", "date stamp", "lobby"],
+            "expectedAnswer": "ink pad"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters ink pad, date stamp, and lobby, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L5 Post Office: Review",
+      "text": "A practical situation involving l5 post office requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. A visitor to the public-service setting encounters courier, customer, mail bag, and cart, with each word connected to a different part of the service. A visitor to the public-service setting encounters sorting machine, scanner, tape, and bubble wrap, with each word connected to a different part of the service. A visitor to the public-service setting encounters packing peanuts, box, padded envelope, and rubber band, with each word connected to a different part of the service. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Post Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "courier"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "sorting machine"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "packing peanuts"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "ink pad"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "courier"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "cart"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “counter” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L5 Post Office: In Context",
+      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: counter, scale from post-office-2\n3 lesson(s) back: Turntable, Speaker from radio-station-5\n7 lesson(s) back: Microphone, Mixing Console from radio-station-1"
+  },
+  {
+    "lessonId": "post-office-4",
+    "lessonName": "L5 Post Office 4",
+    "unitId": "post-office",
+    "unitName": "L5 Post Office",
+    "unitOrder": 136,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 633,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "service window",
+      "PO box",
+      "loading dock",
+      "sorting room",
+      "parking lot",
+      "drop-off area",
+      "vending machine",
+      "form",
+      "pen",
+      "waiting area",
+      "queue"
+    ],
+    "targetWordsArabic": [
+      "نافذة خدمة",
+      "جزء يُسمّى «بو بوكس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «لوادينج دوك»",
+      "غرفة فرز البريد",
+      "موقف سيارات",
+      "منطقة تسليم",
+      "آلة يُسمّى «فيندينج ماتشيني»",
+      "شكل",
+      "قلم",
+      "غرفة يُسمّى «وايتينج اريا»",
+      "طابور"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L5 Post Office to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l5 post office vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["service window", "PO box", "loading dock", "sorting room"],
+          "scenario": "A visitor to the public-service setting encounters service window, po box, loading dock, and sorting room, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["service window", "PO box", "loading dock", "sorting room"],
+            "expectedAnswer": "service window"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters service window, po box, loading dock, and sorting room, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["parking lot", "drop-off area", "vending machine", "form"],
+          "scenario": "A visitor to the public-service setting encounters parking lot, drop-off area, vending machine, and form, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["parking lot", "drop-off area", "vending machine", "form"],
+            "expectedAnswer": "parking lot"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters parking lot, drop-off area, vending machine, and form, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["pen", "waiting area", "queue"],
+          "scenario": "A visitor to the public-service setting encounters pen, waiting area, and queue, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["pen", "waiting area", "queue"],
+            "expectedAnswer": "pen"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters pen, waiting area, and queue, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L5 Post Office: Travel/Visitor Guide",
+      "text": "A practical situation involving l5 post office requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. A visitor to the public-service setting encounters service window, po box, loading dock, and sorting room, with each word connected to a different part of the service. A visitor to the public-service setting encounters parking lot, drop-off area, vending machine, and form, with each word connected to a different part of the service. A visitor to the public-service setting encounters pen, waiting area, and queue, with each word connected to a different part of the service. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Post Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "service window"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "parking lot"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "pen"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "service window"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "sorting room"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “courier” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L5 Post Office: In Context",
+      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: courier, customer from post-office-3\n3 lesson(s) back: letter, envelope from post-office-1\n7 lesson(s) back: Computer, Clock from radio-station-2"
+  }
+]

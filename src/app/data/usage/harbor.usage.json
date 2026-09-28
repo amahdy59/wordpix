@@ -1,0 +1,727 @@
+﻿[
+  {
+    "lessonId": "harbor-1",
+    "lessonName": "The Harbor 1",
+    "unitId": "harbor",
+    "unitName": "The Harbor",
+    "unitOrder": 123,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 566,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Cargo Ship",
+      "Fishing Boat",
+      "Sailboat",
+      "Tugboat",
+      "Ferry",
+      "Yacht",
+      "Kayak",
+      "Canoe",
+      "Speedboat",
+      "Lifeboat",
+      "Barge",
+      "Container Ship",
+      "Dock",
+      "Pier",
+      "Wharf"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «كارجو شيب»",
+      "سمكة يُسمّى «فيشينج بوات»",
+      "قارب شراعي",
+      "قاطرة بحرية",
+      "عبّارة",
+      "يخت",
+      "كاياك",
+      "زورق كانو",
+      "قارب سريع",
+      "قارب نجاة",
+      "صندل بحري",
+      "سفينة يُسمّى «كونتاينير شيب»",
+      "التحام",
+      "رصيف بحري",
+      "مرسى شحن"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Harbor to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the harbor vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Cargo Ship", "Fishing Boat", "Sailboat", "Tugboat"],
+          "scenario": "The traveler moves through the journey using or noticing cargo ship, fishing boat, sailboat, and tugboat. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cargo Ship", "Fishing Boat", "Sailboat", "Tugboat"],
+            "expectedAnswer": "Cargo Ship"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing cargo ship, fishing boat, sailboat, and tugboat. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Ferry", "Yacht", "Kayak", "Canoe"],
+          "scenario": "The traveler moves through the journey using or noticing ferry, yacht, kayak, and canoe. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Ferry", "Yacht", "Kayak", "Canoe"],
+            "expectedAnswer": "Ferry"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing ferry, yacht, kayak, and canoe. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Speedboat", "Lifeboat", "Barge", "Container Ship"],
+          "scenario": "The traveler moves through the journey using or noticing speedboat, lifeboat, barge, and container ship. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Speedboat", "Lifeboat", "Barge", "Container Ship"],
+            "expectedAnswer": "Speedboat"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing speedboat, lifeboat, barge, and container ship. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Dock", "Pier", "Wharf"],
+          "scenario": "The traveler moves through the journey using or noticing dock, pier, and wharf. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dock", "Pier", "Wharf"],
+            "expectedAnswer": "Dock"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing dock, pier, and wharf. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Harbor: Travel/Visitor Guide",
+      "text": "A practical situation involving the harbor requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing cargo ship, fishing boat, sailboat, and tugboat. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing ferry, yacht, kayak, and canoe. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing speedboat, lifeboat, barge, and container ship. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cargo Ship"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ferry"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Speedboat"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dock"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Cargo Ship"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Tugboat"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “mechanic” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Harbor: In Context",
+      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: mechanic, boarding from airport-4\n3 lesson(s) back: control tower, hangar from airport-2\n7 lesson(s) back: information desk, newsstand from train-station-2"
+  },
+  {
+    "lessonId": "harbor-2",
+    "lessonName": "The Harbor 2",
+    "unitId": "harbor",
+    "unitName": "The Harbor",
+    "unitOrder": 123,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 567,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Jetty",
+      "Breakwater",
+      "Lighthouse",
+      "Harbor Master's Office",
+      "Marina",
+      "Dry Dock",
+      "Shipyard",
+      "Shipping Container",
+      "Crane",
+      "Forklift",
+      "Pallet",
+      "Cargo Net",
+      "Loading Ramp",
+      "Warehouse",
+      "Freight"
+    ],
+    "targetWordsArabic": [
+      "رصيف ممتد",
+      "حاجز أمواج",
+      "منارة",
+      "مكتب مدير الميناء",
+      "مرسى يخوت",
+      "حوض جاف",
+      "حوض بناء سفن",
+      "حاوية شحن",
+      "آلة يُسمّى «كراني»",
+      "رافعة شوكية",
+      "منصة تحميل",
+      "شبكة حمولة",
+      "منحدر تحميل",
+      "مستودع",
+      "شحن"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Harbor to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the harbor vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Jetty", "Breakwater", "Lighthouse", "Harbor Master's Office"],
+          "scenario": "The traveler moves through the journey using or noticing jetty, breakwater, lighthouse, and harbor master's office. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Jetty", "Breakwater", "Lighthouse", "Harbor Master's Office"],
+            "expectedAnswer": "Jetty"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing jetty, breakwater, lighthouse, and harbor master's office. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Marina", "Dry Dock", "Shipyard", "Shipping Container"],
+          "scenario": "The traveler moves through the journey using or noticing marina, dry dock, shipyard, and shipping container. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Marina", "Dry Dock", "Shipyard", "Shipping Container"],
+            "expectedAnswer": "Marina"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing marina, dry dock, shipyard, and shipping container. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Crane", "Forklift", "Pallet", "Cargo Net"],
+          "scenario": "The traveler moves through the journey using or noticing crane, forklift, pallet, and cargo net. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crane", "Forklift", "Pallet", "Cargo Net"],
+            "expectedAnswer": "Crane"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing crane, forklift, pallet, and cargo net. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Loading Ramp", "Warehouse", "Freight"],
+          "scenario": "The traveler moves through the journey using or noticing loading ramp, warehouse, and freight. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Loading Ramp", "Warehouse", "Freight"],
+            "expectedAnswer": "Loading Ramp"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing loading ramp, warehouse, and freight. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Harbor: Review",
+      "text": "A practical situation involving the harbor requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing jetty, breakwater, lighthouse, and harbor master's office. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing marina, dry dock, shipyard, and shipping container. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing crane, forklift, pallet, and cargo net. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Jetty"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Marina"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crane"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Loading Ramp"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Jetty"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Harbor Master's Office"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Cargo Ship” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Harbor: In Context",
+      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Cargo Ship, Fishing Boat from harbor-1\n3 lesson(s) back: tail, landing gear from airport-3\n7 lesson(s) back: seat number, first class from train-station-3"
+  },
+  {
+    "lessonId": "harbor-3",
+    "lessonName": "The Harbor 3",
+    "unitId": "harbor",
+    "unitName": "The Harbor",
+    "unitOrder": 123,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 568,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Anchor",
+      "Mooring Line",
+      "Buoy",
+      "Beacon",
+      "Compass",
+      "Chart",
+      "Radar",
+      "Radio",
+      "Binoculars",
+      "Flag",
+      "Signal Light",
+      "Horn",
+      "Fishing Rod",
+      "Fishing Net",
+      "Tackle Box"
+    ],
+    "targetWordsArabic": [
+      "مرساة",
+      "قارب يُسمّى «موورينج ليني»",
+      "عوامة",
+      "منارة إرشاد",
+      "بوصلة",
+      "خريطة ملاحية",
+      "رادار",
+      "إذاعة",
+      "منظار ثنائي",
+      "علم",
+      "لون يُسمّى «سيجنال ليغت»",
+      "بوق",
+      "سمكة يُسمّى «فيشينج رود»",
+      "سمكة يُسمّى «فيشينج نيت»",
+      "سمكة يُسمّى «تاكلي بوكس»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Harbor to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the harbor vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Anchor", "Mooring Line", "Buoy", "Beacon"],
+          "scenario": "The traveler moves through the journey using or noticing anchor, mooring line, buoy, and beacon. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Anchor", "Mooring Line", "Buoy", "Beacon"],
+            "expectedAnswer": "Anchor"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing anchor, mooring line, buoy, and beacon. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Compass", "Chart", "Radar", "Radio"],
+          "scenario": "The traveler moves through the journey using or noticing compass, chart, radar, and radio. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Compass", "Chart", "Radar", "Radio"],
+            "expectedAnswer": "Compass"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing compass, chart, radar, and radio. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Binoculars", "Flag", "Signal Light", "Horn"],
+          "scenario": "The traveler moves through the journey using or noticing binoculars, flag, signal light, and horn. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Binoculars", "Flag", "Signal Light", "Horn"],
+            "expectedAnswer": "Binoculars"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing binoculars, flag, signal light, and horn. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Fishing Rod", "Fishing Net", "Tackle Box"],
+          "scenario": "The traveler moves through the journey using or noticing fishing rod, fishing net, and tackle box. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fishing Rod", "Fishing Net", "Tackle Box"],
+            "expectedAnswer": "Fishing Rod"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing fishing rod, fishing net, and tackle box. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Harbor: Practical Article",
+      "text": "A practical situation involving the harbor requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing anchor, mooring line, buoy, and beacon. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing compass, chart, radar, and radio. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing binoculars, flag, signal light, and horn. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Anchor"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Compass"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Binoculars"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fishing Rod"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Anchor"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Beacon"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Jetty” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Harbor: In Context",
+      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Jetty, Breakwater from harbor-2\n3 lesson(s) back: mechanic, boarding from airport-4\n7 lesson(s) back: engineer, porter from train-station-4"
+  },
+  {
+    "lessonId": "harbor-4",
+    "lessonName": "The Harbor 4",
+    "unitId": "harbor",
+    "unitName": "The Harbor",
+    "unitOrder": 123,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 569,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Bait",
+      "Hook",
+      "Reel",
+      "Cooler",
+      "Fish Basket",
+      "Waders",
+      "Life Jacket",
+      "Seagull",
+      "Pelican",
+      "Seal",
+      "Crab",
+      "Lobster Trap",
+      "Rope",
+      "Chain",
+      "Barnacle"
+    ],
+    "targetWordsArabic": [
+      "طُعم",
+      "خطاف",
+      "بكرة صيد",
+      "صندوق تبريد",
+      "سلة سمك",
+      "سروال خوض",
+      "سترة حياة",
+      "نورس",
+      "بجع",
+      "ختم",
+      "سلطعون",
+      "مصيدة كركند",
+      "حبل",
+      "سلسلة",
+      "برنقيل"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Harbor to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the harbor vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bait", "Hook", "Reel", "Cooler"],
+          "scenario": "The traveler moves through the journey using or noticing bait, hook, reel, and cooler. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bait", "Hook", "Reel", "Cooler"],
+            "expectedAnswer": "Bait"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing bait, hook, reel, and cooler. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Fish Basket", "Waders", "Life Jacket", "Seagull"],
+          "scenario": "The traveler moves through the journey using or noticing fish basket, waders, life jacket, and seagull. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fish Basket", "Waders", "Life Jacket", "Seagull"],
+            "expectedAnswer": "Fish Basket"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing fish basket, waders, life jacket, and seagull. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Pelican", "Seal", "Crab", "Lobster Trap"],
+          "scenario": "The traveler moves through the journey using or noticing pelican, seal, crab, and lobster trap. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pelican", "Seal", "Crab", "Lobster Trap"],
+            "expectedAnswer": "Pelican"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing pelican, seal, crab, and lobster trap. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Rope", "Chain", "Barnacle"],
+          "scenario": "The traveler moves through the journey using or noticing rope, chain, and barnacle. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Rope", "Chain", "Barnacle"],
+            "expectedAnswer": "Rope"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing rope, chain, and barnacle. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Harbor: Real-Life Scenario",
+      "text": "A practical situation involving the harbor requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing bait, hook, reel, and cooler. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing fish basket, waders, life jacket, and seagull. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing pelican, seal, crab, and lobster trap. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bait"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fish Basket"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pelican"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rope"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Bait"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Cooler"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Anchor” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Harbor: In Context",
+      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Anchor, Mooring Line from harbor-3\n3 lesson(s) back: Cargo Ship, Fishing Boat from harbor-1\n7 lesson(s) back: check-in counter, boarding pass from airport-1"
+  },
+  {
+    "lessonId": "harbor-5",
+    "lessonName": "The Harbor 5",
+    "unitId": "harbor",
+    "unitName": "The Harbor",
+    "unitOrder": 123,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 570,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Tide",
+      "Wave",
+      "Tanker",
+      "Submarine",
+      "Container",
+      "Captain",
+      "Sailor",
+      "Cargo",
+      "Navigation",
+      "Shipping Lane"
+    ],
+    "targetWordsArabic": [
+      "مد وجزر",
+      "يلوّح",
+      "ناقلة",
+      "غواصة",
+      "حاوية",
+      "قبطان",
+      "بحار",
+      "حمولة",
+      "ملاحة",
+      "ممر ملاحي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Harbor to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the harbor vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Tide", "Wave", "Tanker", "Submarine"],
+          "scenario": "The traveler moves through the journey using or noticing tide, wave, tanker, and submarine. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tide", "Wave", "Tanker", "Submarine"],
+            "expectedAnswer": "Tide"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing tide, wave, tanker, and submarine. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Container", "Captain", "Sailor", "Cargo"],
+          "scenario": "The traveler moves through the journey using or noticing container, captain, sailor, and cargo. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Container", "Captain", "Sailor", "Cargo"],
+            "expectedAnswer": "Container"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing container, captain, sailor, and cargo. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Navigation", "Shipping Lane"],
+          "scenario": "The traveler moves through the journey using or noticing navigation and shipping lane. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Navigation", "Shipping Lane"],
+            "expectedAnswer": "Navigation"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing navigation and shipping lane. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Harbor: Travel/Visitor Guide",
+      "text": "A practical situation involving the harbor requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing tide, wave, tanker, and submarine. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing container, captain, sailor, and cargo. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing navigation and shipping lane. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tide"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Container"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Navigation"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Tide"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Submarine"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Bait” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Harbor: In Context",
+      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Bait, Hook from harbor-4\n3 lesson(s) back: Jetty, Breakwater from harbor-2\n7 lesson(s) back: control tower, hangar from airport-2"
+  }
+]

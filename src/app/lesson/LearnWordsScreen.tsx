@@ -1,7 +1,7 @@
 import { memo, useState, useEffect, useCallback, useRef, useMemo } from "react";
 import type { Action } from "../types";
 import { useAudio } from "../shared/useAudio";
-import { resolveGroup, resolveUnitForLesson } from "../data/lessons";
+import { resolveGroup, resolveUnitForLesson } from "../data/courseCatalog";
 import { getWords } from "../data/vocabulary";
 import { getWordImageSrc } from "../shared/WordImage";
 import { SceneCanvas } from "./SceneCanvas";

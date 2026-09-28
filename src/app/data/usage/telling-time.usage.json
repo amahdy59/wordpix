@@ -1,0 +1,549 @@
+﻿[
+  {
+    "lessonId": "telling-time-1",
+    "lessonName": "Telling Time 1",
+    "unitId": "telling-time",
+    "unitName": "Telling Time",
+    "unitOrder": 12,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 46,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Clock",
+      "Watch",
+      "Hour Hand",
+      "Minute Hand",
+      "Second Hand",
+      "Clock Face",
+      "Alarm Clock",
+      "Digital Clock",
+      "Sundial",
+      "Hourglass",
+      "Second",
+      "Minute",
+      "Hour",
+      "Half Hour",
+      "Quarter Hour"
+    ],
+    "targetWordsArabic": [
+      "سَاعَةُ حَائِط / سَاعَة",
+      "ساعة",
+      "مصطلح مرتبط بالموضوع يُسمّى «هوور هاند»",
+      "مصطلح مرتبط بالموضوع يُسمّى «مينوتي هاند»",
+      "عقرب الثواني",
+      "مصطلح مرتبط بالموضوع يُسمّى «كلوك فاكي»",
+      "سَاعَةُ المُنَبِّه (مُنَبِّه)",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديجيتال كلوك»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سونديال»",
+      "مصطلح مرتبط بالموضوع يُسمّى «هوورجلاسس»",
+      "الثاني",
+      "مصطلح مرتبط بالموضوع يُسمّى «مينوتي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «هوور»",
+      "نصف ساعة",
+      "ربع ساعة"
+    ],
+    "usage": {
+      "goal": "Understand common clock, time-of-day, and schedule expressions.",
+      "canDoStatement": "I can understand common clock, time-of-day, and schedule expressions",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Clock", "Watch", "Hour Hand"],
+          "scenario": "When we talk about time, we use clock, watch, and hour hand.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Clock", "Watch", "Hour Hand"],
+            "expectedAnswer": "Clock"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use clock, watch, and hour hand. Emphasize clock, watch, and hour hand and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Minute Hand", "Second Hand", "Clock Face"],
+          "scenario": "When we talk about time, we use minute hand, second hand, and clock face.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Minute Hand", "Second Hand", "Clock Face"],
+            "expectedAnswer": "Minute Hand"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use minute hand, second hand, and clock face. Emphasize minute hand, second hand, and clock face and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Alarm Clock", "Digital Clock", "Sundial"],
+          "scenario": "When we talk about time, we use alarm clock, digital clock, and sundial.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Alarm Clock", "Digital Clock", "Sundial"],
+            "expectedAnswer": "Alarm Clock"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use alarm clock, digital clock, and sundial. Emphasize alarm clock, digital clock, and sundial and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Hourglass", "Second", "Minute"],
+          "scenario": "When we talk about time, we use hourglass, second, and minute.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Hourglass", "Second", "Minute"],
+            "expectedAnswer": "Hourglass"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use hourglass, second, and minute. Emphasize hourglass, second, and minute and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Hour", "Half Hour", "Quarter Hour"],
+          "scenario": "When we talk about time, we use hour, half hour, and quarter hour.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Hour", "Half Hour", "Quarter Hour"],
+            "expectedAnswer": "Hour"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use hour, half hour, and quarter hour. Emphasize hour, half hour, and quarter hour and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Telling Time Mini Story",
+      "text": "Today we practice time. We look at clock, watch, and hour hand. The teacher also shows minute hand, second hand, and clock face. We say the words slowly and connect them to a simple daily schedule. We also remember earlier words such as habanero and serrano.",
+      "imageBrief": "One uncluttered telling time scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Clock"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Minute Hand"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Alarm Clock"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Hourglass"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Hour"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Clock"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Watch"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Clock Face"
+      }
+    ],
+    "video": {
+      "title": "Telling Time: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily schedule. Show clock, watch, hour hand, minute hand, and second hand naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see clock, watch, and hour hand. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Habanero, Serrano from vegetables-4\n3 lesson(s) back: Chard, Collard Greens from vegetables-2\n7 lesson(s) back: Mulberry, Boysenberry from fruits-2"
+  },
+  {
+    "lessonId": "telling-time-2",
+    "lessonName": "Telling Time 2",
+    "unitId": "telling-time",
+    "unitName": "Telling Time",
+    "unitOrder": 12,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 47,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Noon",
+      "Midnight",
+      "Dawn",
+      "Dusk",
+      "Twilight",
+      "O'Clock",
+      "Half Past",
+      "Quarter Past",
+      "Quarter To",
+      "Five Past",
+      "Ten Past",
+      "Twenty Past",
+      "Five To",
+      "Ten To",
+      "Sharp"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «نوون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ميدنيغت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «داون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «دوسك»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تويليغت»",
+      "تمام الساعة",
+      "والنصف",
+      "والربع",
+      "إلا ربعًا",
+      "وخمس دقائق",
+      "وعشر دقائق",
+      "وعشرون دقيقة",
+      "إلا خمس دقائق",
+      "إلا عشر دقائق",
+      "مصطلح مرتبط بالموضوع يُسمّى «شارب»"
+    ],
+    "usage": {
+      "goal": "Understand common clock, time-of-day, and schedule expressions.",
+      "canDoStatement": "I can understand common clock, time-of-day, and schedule expressions",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Noon", "Midnight", "Dawn"],
+          "scenario": "When we talk about time, we use noon, midnight, and dawn.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Noon", "Midnight", "Dawn"],
+            "expectedAnswer": "Noon"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use noon, midnight, and dawn. Emphasize noon, midnight, and dawn and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Dusk", "Twilight", "O'Clock"],
+          "scenario": "When we talk about time, we use dusk, twilight, and o'clock.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Dusk", "Twilight", "O'Clock"],
+            "expectedAnswer": "Dusk"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use dusk, twilight, and o'clock. Emphasize dusk, twilight, and o'clock and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Half Past", "Quarter Past", "Quarter To"],
+          "scenario": "When we talk about time, we use half past, quarter past, and quarter to.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Half Past", "Quarter Past", "Quarter To"],
+            "expectedAnswer": "Half Past"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use half past, quarter past, and quarter to. Emphasize half past, quarter past, and quarter to and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Five Past", "Ten Past", "Twenty Past"],
+          "scenario": "When we talk about time, we use five past, ten past, and twenty past.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Five Past", "Ten Past", "Twenty Past"],
+            "expectedAnswer": "Five Past"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use five past, ten past, and twenty past. Emphasize five past, ten past, and twenty past and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Five To", "Ten To", "Sharp"],
+          "scenario": "When we talk about time, we use five to, ten to, and sharp.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Five To", "Ten To", "Sharp"],
+            "expectedAnswer": "Five To"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use five to, ten to, and sharp. Emphasize five to, ten to, and sharp and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Telling Time Mini Story",
+      "text": "Today we practice time. We look at noon, midnight, and dawn. The teacher also shows dusk, twilight, and o'clock. We say the words slowly and connect them to a simple daily schedule. We also remember earlier words such as clock and watch.",
+      "imageBrief": "One uncluttered telling time scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Noon"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Dusk"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Half Past"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Five Past"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Five To"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Noon"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Midnight"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "O'Clock"
+      }
+    ],
+    "video": {
+      "title": "Telling Time: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily schedule. Show noon, midnight, dawn, dusk, and twilight naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see noon, midnight, and dawn. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Clock, Watch from telling-time-1\n3 lesson(s) back: Zucchini, Pumpkin from vegetables-3\n7 lesson(s) back: Lemon, Lime from fruits-3"
+  },
+  {
+    "lessonId": "telling-time-3",
+    "lessonName": "Telling Time 3",
+    "unitId": "telling-time",
+    "unitName": "Telling Time",
+    "unitOrder": 12,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 48,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Morning",
+      "Afternoon",
+      "Evening",
+      "Night",
+      "Sunrise",
+      "Sunset",
+      "Midday",
+      "Late Night",
+      "Early Morning",
+      "Nightfall",
+      "A.M.",
+      "P.M.",
+      "On Time",
+      "Early",
+      "Late"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «مورنينج»",
+      "جزء يُسمّى «افتيرنوون»",
+      "جزء يُسمّى «يفينينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «نيغت»",
+      "شروق الشمس",
+      "غروب الشمس",
+      "مصطلح مرتبط بالموضوع يُسمّى «ميدداي»",
+      "وقت متأخر من الليل",
+      "جزء يُسمّى «يارلي مورنينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «نيغتفالل»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ا.م.»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ب.م.»",
+      "مكان يُسمّى «ون تيمي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يارلي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «لاتي»"
+    ],
+    "usage": {
+      "goal": "Understand common clock, time-of-day, and schedule expressions.",
+      "canDoStatement": "I can understand common clock, time-of-day, and schedule expressions",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Morning", "Afternoon", "Evening"],
+          "scenario": "When we talk about time, we use morning, afternoon, and evening.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Morning", "Afternoon", "Evening"],
+            "expectedAnswer": "Morning"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use morning, afternoon, and evening. Emphasize morning, afternoon, and evening and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Night", "Sunrise", "Sunset"],
+          "scenario": "When we talk about time, we use night, sunrise, and sunset.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Night", "Sunrise", "Sunset"],
+            "expectedAnswer": "Night"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use night, sunrise, and sunset. Emphasize night, sunrise, and sunset and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Midday", "Late Night", "Early Morning"],
+          "scenario": "When we talk about time, we use midday, late night, and early morning.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Midday", "Late Night", "Early Morning"],
+            "expectedAnswer": "Midday"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use midday, late night, and early morning. Emphasize midday, late night, and early morning and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Nightfall", "A.M.", "P.M."],
+          "scenario": "When we talk about time, we use nightfall, a.m., and p.m..",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Nightfall", "A.M.", "P.M."],
+            "expectedAnswer": "Nightfall"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use nightfall, a.m., and p.m.. Emphasize nightfall, a.m., and p.m. and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["On Time", "Early", "Late"],
+          "scenario": "When we talk about time, we use on time, early, and late.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["On Time", "Early", "Late"],
+            "expectedAnswer": "On Time"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use on time, early, and late. Emphasize on time, early, and late and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Telling Time Mini Story",
+      "text": "Today we practice time. We look at morning, afternoon, and evening. The teacher also shows night, sunrise, and sunset. We say the words slowly and connect them to a simple daily schedule. We also remember earlier words such as noon and midnight.",
+      "imageBrief": "One uncluttered telling time scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Morning"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Night"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Midday"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Nightfall"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "On Time"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Morning"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Afternoon"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Sunset"
+      }
+    ],
+    "video": {
+      "title": "Telling Time: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily schedule. Show morning, afternoon, evening, night, and sunrise naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see morning, afternoon, and evening. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Noon, Midnight from telling-time-2\n3 lesson(s) back: Habanero, Serrano from vegetables-4\n7 lesson(s) back: Fig, Olive from fruits-4"
+  },
+  {
+    "lessonId": "telling-time-4",
+    "lessonName": "Telling Time 4",
+    "unitId": "telling-time",
+    "unitName": "Telling Time",
+    "unitOrder": 12,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 49,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Ahead of Time",
+      "Behind Schedule",
+      "Overtime",
+      "Countdown",
+      "Stopwatch"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «اهياد وف تيمي»",
+      "متأخر عن الجدول",
+      "مصطلح مرتبط بالموضوع يُسمّى «وفيرتيمي»",
+      "مركبة يُسمّى «كوونتدوون»",
+      "ساعة توقيت"
+    ],
+    "usage": {
+      "goal": "Understand common clock, time-of-day, and schedule expressions.",
+      "canDoStatement": "I can understand common clock, time-of-day, and schedule expressions",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Ahead of Time", "Behind Schedule", "Overtime"],
+          "scenario": "When we talk about time, we use ahead of time, behind schedule, and overtime.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Ahead of Time", "Behind Schedule", "Overtime"],
+            "expectedAnswer": "Ahead of Time"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use ahead of time, behind schedule, and overtime. Emphasize ahead of time, behind schedule, and overtime and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Countdown", "Stopwatch"],
+          "scenario": "When we talk about time, we use countdown and stopwatch.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Countdown", "Stopwatch"],
+            "expectedAnswer": "Countdown"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use countdown and stopwatch. Emphasize countdown and stopwatch and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Telling Time Mini Story",
+      "text": "Today we practice time. We look at ahead of time, behind schedule, and overtime. The teacher also shows countdown and stopwatch. We say the words slowly and connect them to a simple daily schedule. We also remember earlier words such as morning and afternoon.",
+      "imageBrief": "One uncluttered telling time scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Ahead of Time"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Countdown"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Ahead of Time"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Behind Schedule"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Stopwatch"
+      }
+    ],
+    "video": {
+      "title": "Telling Time: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily schedule. Show ahead of time, behind schedule, overtime, countdown, and stopwatch naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see ahead of time, behind schedule, and overtime. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Morning, Afternoon from telling-time-3\n3 lesson(s) back: Clock, Watch from telling-time-1\n7 lesson(s) back: Carrot, Potato from vegetables-1"
+  }
+]

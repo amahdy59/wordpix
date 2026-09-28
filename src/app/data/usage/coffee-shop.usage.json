@@ -1,0 +1,630 @@
+﻿[
+  {
+    "lessonId": "coffee-shop-1",
+    "lessonName": "The Coffee Shop 1",
+    "unitId": "coffee-shop",
+    "unitName": "The Coffee Shop",
+    "unitOrder": 30,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 128,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Espresso",
+      "Latte",
+      "Cappuccino",
+      "Americano",
+      "Mocha",
+      "Hot Chocolate",
+      "Tea",
+      "Chai",
+      "Macchiato",
+      "Flat White",
+      "Iced Coffee",
+      "Iced Tea",
+      "Smoothie",
+      "Frappe",
+      "Lemonade"
+    ],
+    "targetWordsArabic": [
+      "إسبريسو",
+      "لاتيه",
+      "كابتشينو",
+      "قهوة أمريكانو",
+      "موكا",
+      "شوكولاتة ساخن",
+      "شاي",
+      "شاي",
+      "ماكياتو",
+      "فلات وايت",
+      "قهوة مثلج",
+      "شاي مثلج",
+      "سموثي",
+      "فرابيه",
+      "ليمونادة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Coffee Shop to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the coffee shop vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Espresso", "Latte", "Cappuccino"],
+          "scenario": "During a busy order, the worker and customer deal with espresso, latte, and cappuccino. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Espresso", "Latte", "Cappuccino"],
+            "expectedAnswer": "Espresso"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with espresso, latte, and cappuccino. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Americano", "Mocha", "Hot Chocolate"],
+          "scenario": "During a busy order, the worker and customer deal with americano, mocha, and hot chocolate. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Americano", "Mocha", "Hot Chocolate"],
+            "expectedAnswer": "Americano"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with americano, mocha, and hot chocolate. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Tea", "Chai", "Macchiato"],
+          "scenario": "During a busy order, the worker and customer deal with tea, chai, and macchiato. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Tea", "Chai", "Macchiato"],
+            "expectedAnswer": "Tea"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with tea, chai, and macchiato. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Flat White", "Iced Coffee", "Iced Tea"],
+          "scenario": "During a busy order, the worker and customer deal with flat white, iced coffee, and iced tea. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Flat White", "Iced Coffee", "Iced Tea"],
+            "expectedAnswer": "Flat White"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with flat white, iced coffee, and iced tea. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Smoothie", "Frappe", "Lemonade"],
+          "scenario": "During a busy order, the worker and customer deal with smoothie, frappe, and lemonade. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Smoothie", "Frappe", "Lemonade"],
+            "expectedAnswer": "Smoothie"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with smoothie, frappe, and lemonade. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Coffee Shop: Mini Dialogue",
+      "text": "Maya is in a situation connected to the coffee shop. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with espresso, latte, and cappuccino. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with americano, mocha, and hot chocolate. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with tea, chai, and macchiato. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Coffee Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Espresso"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Americano"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tea"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Flat White"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Smoothie"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Espresso"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Cappuccino"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Cooling Rack” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Coffee Shop: In Context",
+      "idea": "30-45 seconds contextual scene in the shop. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Cooling Rack, Bread Basket from bakery-5\n3 lesson(s) back: Chocolate Chip Cookie, Sugar Cookie from bakery-3\n7 lesson(s) back: Waiting Room, Exam Table from vet-clinic-3"
+  },
+  {
+    "lessonId": "coffee-shop-2",
+    "lessonName": "The Coffee Shop 2",
+    "unitId": "coffee-shop",
+    "unitName": "The Coffee Shop",
+    "unitOrder": 30,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 129,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Milkshake",
+      "Cold Brew",
+      "Juice",
+      "Soda",
+      "Water",
+      "Croissant",
+      "Muffin",
+      "Scone",
+      "Cookie",
+      "Cake Slice",
+      "Sandwich",
+      "Bagel",
+      "Donut",
+      "Brownie",
+      "Quiche"
+    ],
+    "targetWordsArabic": [
+      "مخفوق الحليب",
+      "قهوة باردة بالنقع",
+      "عصير",
+      "مشروب غازي",
+      "ماء",
+      "كرواسون",
+      "مافن",
+      "سكون",
+      "بسكويت",
+      "شريحة كعك",
+      "شطيرة",
+      "خبز بيغل",
+      "دونات",
+      "براوني",
+      "كيش"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Coffee Shop to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the coffee shop vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Milkshake", "Cold Brew", "Juice"],
+          "scenario": "During a busy order, the worker and customer deal with milkshake, cold brew, and juice. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Milkshake", "Cold Brew", "Juice"],
+            "expectedAnswer": "Milkshake"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with milkshake, cold brew, and juice. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Soda", "Water", "Croissant"],
+          "scenario": "During a busy order, the worker and customer deal with soda, water, and croissant. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Soda", "Water", "Croissant"],
+            "expectedAnswer": "Soda"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with soda, water, and croissant. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Muffin", "Scone", "Cookie"],
+          "scenario": "During a busy order, the worker and customer deal with muffin, scone, and cookie. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Muffin", "Scone", "Cookie"],
+            "expectedAnswer": "Muffin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with muffin, scone, and cookie. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Cake Slice", "Sandwich", "Bagel"],
+          "scenario": "During a busy order, the worker and customer deal with cake slice, sandwich, and bagel. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Cake Slice", "Sandwich", "Bagel"],
+            "expectedAnswer": "Cake Slice"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with cake slice, sandwich, and bagel. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Donut", "Brownie", "Quiche"],
+          "scenario": "During a busy order, the worker and customer deal with donut, brownie, and quiche. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Donut", "Brownie", "Quiche"],
+            "expectedAnswer": "Donut"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with donut, brownie, and quiche. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Coffee Shop: Simple Message",
+      "text": "Maya is in a situation connected to the coffee shop. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with milkshake, cold brew, and juice. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with soda, water, and croissant. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with muffin, scone, and cookie. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Coffee Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Milkshake"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Soda"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Muffin"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cake Slice"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Donut"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Milkshake"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Juice"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Espresso” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Coffee Shop: In Context",
+      "idea": "30-45 seconds contextual scene in the shop. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Espresso, Latte from coffee-shop-1\n3 lesson(s) back: Baking Powder, Chocolate from bakery-4\n7 lesson(s) back: Water Dish, Collar from vet-clinic-4"
+  },
+  {
+    "lessonId": "coffee-shop-3",
+    "lessonName": "The Coffee Shop 3",
+    "unitId": "coffee-shop",
+    "unitName": "The Coffee Shop",
+    "unitOrder": 30,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 130,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Espresso Machine",
+      "Grinder",
+      "Steam Wand",
+      "Portafilter",
+      "Tamper",
+      "Kettle",
+      "Blender",
+      "Scale",
+      "Timer",
+      "Thermometer",
+      "Cup",
+      "Mug",
+      "Lid",
+      "Straw",
+      "Sleeve"
+    ],
+    "targetWordsArabic": [
+      "ماكينة إسبريسو",
+      "مطحنة",
+      "عصا بخار",
+      "حامل فلتر الإسبريسو",
+      "مدك القهوة",
+      "غَلَّايَةُ مَاء (كَاتِل)",
+      "خَلَّاطٌ كَهْرَبَائِيّ",
+      "مقياس رسم",
+      "مؤقت",
+      "مقياس حرارة",
+      "فِنْجَان",
+      "كُوبٌ كَبِير (مَجّ)",
+      "غطاء",
+      "شفاطة",
+      "غلاف كوب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Coffee Shop to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the coffee shop vocabulary in simple context.",
+      "textType": "notice-style text",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Espresso Machine", "Grinder", "Steam Wand"],
+          "scenario": "During a busy order, the worker and customer deal with espresso machine, grinder, and steam wand. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Espresso Machine", "Grinder", "Steam Wand"],
+            "expectedAnswer": "Espresso Machine"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with espresso machine, grinder, and steam wand. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Portafilter", "Tamper", "Kettle"],
+          "scenario": "During a busy order, the worker and customer deal with portafilter, tamper, and kettle. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Portafilter", "Tamper", "Kettle"],
+            "expectedAnswer": "Portafilter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with portafilter, tamper, and kettle. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Blender", "Scale", "Timer"],
+          "scenario": "During a busy order, the worker and customer deal with blender, scale, and timer. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Blender", "Scale", "Timer"],
+            "expectedAnswer": "Blender"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with blender, scale, and timer. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Thermometer", "Cup", "Mug"],
+          "scenario": "During a busy order, the worker and customer deal with thermometer, cup, and mug. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Thermometer", "Cup", "Mug"],
+            "expectedAnswer": "Thermometer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with thermometer, cup, and mug. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Lid", "Straw", "Sleeve"],
+          "scenario": "During a busy order, the worker and customer deal with lid, straw, and sleeve. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Lid", "Straw", "Sleeve"],
+            "expectedAnswer": "Lid"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with lid, straw, and sleeve. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Coffee Shop: Notice-Style Text",
+      "text": "Maya is in a situation connected to the coffee shop. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with espresso machine, grinder, and steam wand. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with portafilter, tamper, and kettle. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with blender, scale, and timer. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Coffee Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Espresso Machine"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Portafilter"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Blender"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Thermometer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lid"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Espresso Machine"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Steam Wand"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Milkshake” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Coffee Shop: In Context",
+      "idea": "30-45 seconds contextual scene in the shop. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Milkshake, Cold Brew from coffee-shop-2\n3 lesson(s) back: Cooling Rack, Bread Basket from bakery-5\n7 lesson(s) back: White Bread, Whole Wheat Bread from bakery-1"
+  },
+  {
+    "lessonId": "coffee-shop-4",
+    "lessonName": "The Coffee Shop 4",
+    "unitId": "coffee-shop",
+    "unitName": "The Coffee Shop",
+    "unitOrder": 30,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 131,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Napkin",
+      "Sugar",
+      "Creamer",
+      "Syrup",
+      "Stirrer",
+      "Counter",
+      "Menu Board",
+      "Barista",
+      "Tip Jar",
+      "Couch",
+      "Table",
+      "Wifi Sign",
+      "Outlet",
+      "Bookshelf",
+      "Plant"
+    ],
+    "targetWordsArabic": [
+      "منديل",
+      "سُكَّر",
+      "مبيض قهوة",
+      "شراب منكّه",
+      "عود تقليب",
+      "منضدة",
+      "لوحة قائمة الطعام",
+      "باريستا",
+      "وعاء الإكراميات",
+      "أريكة",
+      "طاولة",
+      "لافتة واي فاي",
+      "مِقْبَسُ الكَهْرَبَاء (فِيشَة / بَرِيزَة)",
+      "رَفُّ الكُتُب / مَكْتَبَةٌ حَائِطِيَّة",
+      "نَبْتَة مَنْزِلِيَّة (زَرْع)"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Coffee Shop to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the coffee shop vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Napkin", "Sugar", "Creamer"],
+          "scenario": "During a busy order, the worker and customer deal with napkin, sugar, and creamer. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Napkin", "Sugar", "Creamer"],
+            "expectedAnswer": "Napkin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with napkin, sugar, and creamer. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Syrup", "Stirrer", "Counter"],
+          "scenario": "During a busy order, the worker and customer deal with syrup, stirrer, and counter. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Syrup", "Stirrer", "Counter"],
+            "expectedAnswer": "Syrup"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with syrup, stirrer, and counter. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Menu Board", "Barista", "Tip Jar"],
+          "scenario": "During a busy order, the worker and customer deal with menu board, barista, and tip jar. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Menu Board", "Barista", "Tip Jar"],
+            "expectedAnswer": "Menu Board"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with menu board, barista, and tip jar. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Couch", "Table", "Wifi Sign"],
+          "scenario": "During a busy order, the worker and customer deal with couch, table, and wifi sign. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Couch", "Table", "Wifi Sign"],
+            "expectedAnswer": "Couch"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with couch, table, and wifi sign. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Outlet", "Bookshelf", "Plant"],
+          "scenario": "During a busy order, the worker and customer deal with outlet, bookshelf, and plant. The scene shows how these words naturally belong in the same food-service context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Outlet", "Bookshelf", "Plant"],
+            "expectedAnswer": "Outlet"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with outlet, bookshelf, and plant. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Coffee Shop: Short Description",
+      "text": "Maya is in a situation connected to the coffee shop. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with napkin, sugar, and creamer. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with syrup, stirrer, and counter. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with menu board, barista, and tip jar. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Coffee Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Napkin"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Syrup"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Menu Board"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Couch"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Outlet"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Napkin"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Creamer"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Espresso Machine” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Coffee Shop: In Context",
+      "idea": "30-45 seconds contextual scene in the shop. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the shop. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Espresso Machine, Grinder from coffee-shop-3\n3 lesson(s) back: Espresso, Latte from coffee-shop-1\n7 lesson(s) back: Éclair, Scone from bakery-2"
+  }
+]

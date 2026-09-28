@@ -134,7 +134,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
       </p>
       {/* Sticky Header & Stepper */}
       <div className="sticky top-0 z-20 border-b border-border bg-background/95 backdrop-blur-md px-4 py-3 sm:px-8">
-        <div className="mx-auto flex max-w-5xl flex-col gap-3">
+        <div className="wp-container-content flex flex-col gap-3">
           {/* Top Bar with Back and Unit Metadata */}
           <div className="flex items-center justify-between gap-3">
             <button
@@ -179,7 +179,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
         role="tabpanel"
         aria-labelledby={`lesson-stage-${currentStageId}`}
         tabIndex={0}
-        className="mx-auto w-full max-w-5xl scroll-mt-40 px-4 py-6 sm:px-8 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+        className="wp-container-content wp-layout-gutter scroll-mt-40 py-6 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
       >
         {currentStageId === "warmup" && (
           <WarmupStage

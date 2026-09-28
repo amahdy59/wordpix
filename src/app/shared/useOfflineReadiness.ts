@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getOfflineReadiness, type OfflineReadiness } from "../../pwa";
-import { DEFAULT_UNIT_ID } from "../data/lessons";
+import { DEFAULT_UNIT_ID } from "../data/courseCatalog";
 
 /**
  * Live offline-readiness for a world, re-checked when the tab regains focus so

@@ -1,0 +1,427 @@
+﻿[
+  {
+    "lessonId": "student-life-1",
+    "lessonName": "Student Life 1",
+    "unitId": "student-life",
+    "unitName": "Student Life",
+    "unitOrder": 157,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 705,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Dorm Room",
+      "Roommate",
+      "Resident Advisor",
+      "Common Room",
+      "Laundry Room",
+      "Meal Plan",
+      "Dorm Key",
+      "Move-In",
+      "Move-Out",
+      "Off-Campus Housing",
+      "Club",
+      "Organization",
+      "Fraternity",
+      "Sorority",
+      "Student Government"
+    ],
+    "targetWordsArabic": [
+      "غرفة يُسمّى «دورم رووم»",
+      "زميل سكن",
+      "شخص يُسمّى «ريسيدينت ادفيسور»",
+      "غرفة يُسمّى «كوممون رووم»",
+      "غرفة غسيل",
+      "عضو يُسمّى «ميال بلان»",
+      "مصطلح مرتبط بالموضوع يُسمّى «دورم كيي»",
+      "الانتقال للسكن",
+      "مغادرة السكن",
+      "مصطلح مرتبط بالموضوع يُسمّى «وفف-كامبوس هووسينج»",
+      "نادٍ",
+      "منظمة",
+      "أخوية طلابية",
+      "جمعية طالبات",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستودينت جوفيرنمينت»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Student Life to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use student life vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Dorm Room", "Roommate", "Resident Advisor", "Common Room"],
+          "scenario": "The student or researcher works with dorm room, roommate, resident advisor, and common room. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dorm Room", "Roommate", "Resident Advisor", "Common Room"],
+            "expectedAnswer": "Dorm Room"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with dorm room, roommate, resident advisor, and common room. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Laundry Room", "Meal Plan", "Dorm Key", "Move-In"],
+          "scenario": "The student or researcher works with laundry room, meal plan, dorm key, and move-in. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Laundry Room", "Meal Plan", "Dorm Key", "Move-In"],
+            "expectedAnswer": "Laundry Room"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with laundry room, meal plan, dorm key, and move-in. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Move-Out", "Off-Campus Housing", "Club", "Organization"],
+          "scenario": "The student or researcher works with move-out, off-campus housing, club, and organization. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Move-Out", "Off-Campus Housing", "Club", "Organization"],
+            "expectedAnswer": "Move-Out"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with move-out, off-campus housing, club, and organization. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Fraternity", "Sorority", "Student Government"],
+          "scenario": "The student or researcher works with fraternity, sorority, and student government. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fraternity", "Sorority", "Student Government"],
+            "expectedAnswer": "Fraternity"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with fraternity, sorority, and student government. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Student Life: Case Note",
+      "text": "A realistic case involving student life shows how precise vocabulary can influence choices, explanations, and outcomes. The student or researcher works with dorm room, roommate, resident advisor, and common room. Each term supports a different part of study, research, or campus life. The student or researcher works with laundry room, meal plan, dorm key, and move-in. Each term supports a different part of study, research, or campus life. The student or researcher works with move-out, off-campus housing, club, and organization. Each term supports a different part of study, research, or campus life. The student or researcher works with fraternity, sorority, and student government. Each term supports a different part of study, research, or campus life. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Student Life. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dorm Room"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Laundry Room"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Move-Out"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fraternity"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Dorm Room"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Plagiarism” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Student Life: In Context",
+      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Plagiarism, Reference from research-study-3\n3 lesson(s) back: Textbook, Journal from research-study-1\n7 lesson(s) back: Orientation, Registration from university-campus-3"
+  },
+  {
+    "lessonId": "student-life-2",
+    "lessonName": "Student Life 2",
+    "unitId": "student-life",
+    "unitName": "Student Life",
+    "unitOrder": 157,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 706,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Newspaper",
+      "Radio Station",
+      "Volunteer",
+      "Intramural Sports",
+      "Drama Club",
+      "Party",
+      "Concert",
+      "Game Day",
+      "Tailgate",
+      "Study Date",
+      "Coffee Shop",
+      "Food Court",
+      "Movie Night",
+      "Road Trip",
+      "Spring Formal"
+    ],
+    "targetWordsArabic": [
+      "صحيفة",
+      "محطة إذاعة",
+      "متطوع",
+      "مصطلح مرتبط بالموضوع يُسمّى «ينترامورال سبورتس»",
+      "جزء يُسمّى «دراما كلوب»",
+      "حفلة",
+      "حفل موسيقي",
+      "يوم المباراة",
+      "تجمع قبل فعالية",
+      "موعد للمذاكرة",
+      "متجر قهوة",
+      "طعام يُسمّى «فوود كوورت»",
+      "ليلة فيلم",
+      "رحلة برية بالسيارة",
+      "حفل ربيعي رسمي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Student Life to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use student life vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Newspaper", "Radio Station", "Volunteer", "Intramural Sports"],
+          "scenario": "The student or researcher works with newspaper, radio station, volunteer, and intramural sports. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Newspaper", "Radio Station", "Volunteer", "Intramural Sports"],
+            "expectedAnswer": "Newspaper"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with newspaper, radio station, volunteer, and intramural sports. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Drama Club", "Party", "Concert", "Game Day"],
+          "scenario": "The student or researcher works with drama club, party, concert, and game day. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Drama Club", "Party", "Concert", "Game Day"],
+            "expectedAnswer": "Drama Club"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with drama club, party, concert, and game day. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Tailgate", "Study Date", "Coffee Shop", "Food Court"],
+          "scenario": "The student or researcher works with tailgate, study date, coffee shop, and food court. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tailgate", "Study Date", "Coffee Shop", "Food Court"],
+            "expectedAnswer": "Tailgate"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with tailgate, study date, coffee shop, and food court. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Movie Night", "Road Trip", "Spring Formal"],
+          "scenario": "The student or researcher works with movie night, road trip, and spring formal. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Movie Night", "Road Trip", "Spring Formal"],
+            "expectedAnswer": "Movie Night"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with movie night, road trip, and spring formal. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Student Life: Report Excerpt",
+      "text": "A realistic case involving student life shows how precise vocabulary can influence choices, explanations, and outcomes. The student or researcher works with newspaper, radio station, volunteer, and intramural sports. Each term supports a different part of study, research, or campus life. The student or researcher works with drama club, party, concert, and game day. Each term supports a different part of study, research, or campus life. The student or researcher works with tailgate, study date, coffee shop, and food court. Each term supports a different part of study, research, or campus life. The student or researcher works with movie night, road trip, and spring formal. Each term supports a different part of study, research, or campus life. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Student Life. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Newspaper"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Drama Club"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tailgate"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Movie Night"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Newspaper"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Dorm Room” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Student Life: In Context",
+      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Dorm Room, Roommate from student-life-1\n3 lesson(s) back: Literature Review, Methodology from research-study-2\n7 lesson(s) back: Professor, Lecturer from academic-life-1"
+  },
+  {
+    "lessonId": "student-life-3",
+    "lessonName": "Student Life 3",
+    "unitId": "student-life",
+    "unitName": "Student Life",
+    "unitOrder": 157,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 707,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Tuition",
+      "Scholarship",
+      "Financial Aid",
+      "Student Loan",
+      "Work-Study",
+      "Part-Time Job",
+      "Budget",
+      "Textbook Cost",
+      "Student Discount",
+      "Grant"
+    ],
+    "targetWordsArabic": [
+      "رسوم دراسية",
+      "منحة دراسية",
+      "إسعاف مالي",
+      "قرض طلابي",
+      "برنامج عمل ودراسة",
+      "عمل بدوام جزئي",
+      "ميزانية",
+      "تكلفة الكتب الدراسية",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستودينت ديسكوونت»",
+      "منحة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Student Life to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use student life vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Tuition", "Scholarship", "Financial Aid", "Student Loan"],
+          "scenario": "The student or researcher works with tuition, scholarship, financial aid, and student loan. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tuition", "Scholarship", "Financial Aid", "Student Loan"],
+            "expectedAnswer": "Tuition"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with tuition, scholarship, financial aid, and student loan. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Work-Study", "Part-Time Job", "Budget", "Textbook Cost"],
+          "scenario": "The student or researcher works with work-study, part-time job, budget, and textbook cost. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Work-Study", "Part-Time Job", "Budget", "Textbook Cost"],
+            "expectedAnswer": "Work-Study"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with work-study, part-time job, budget, and textbook cost. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Student Discount", "Grant"],
+          "scenario": "The student or researcher works with student discount and grant. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Student Discount", "Grant"],
+            "expectedAnswer": "Student Discount"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with student discount and grant. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Student Life: Workplace/Academic Scenario",
+      "text": "A realistic case involving student life shows how precise vocabulary can influence choices, explanations, and outcomes. The student or researcher works with tuition, scholarship, financial aid, and student loan. Each term supports a different part of study, research, or campus life. The student or researcher works with work-study, part-time job, budget, and textbook cost. Each term supports a different part of study, research, or campus life. The student or researcher works with student discount and grant. Each term supports a different part of study, research, or campus life. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Student Life. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tuition"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Work-Study"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Student Discount"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Tuition"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Newspaper” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Student Life: In Context",
+      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Newspaper, Radio Station from student-life-2\n3 lesson(s) back: Plagiarism, Reference from research-study-3\n7 lesson(s) back: Syllabus, Prerequisite from academic-life-2"
+  }
+]

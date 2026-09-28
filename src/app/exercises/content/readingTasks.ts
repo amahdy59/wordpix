@@ -1,4 +1,4 @@
-import { BEDROOM_VOCABULARY } from "../../data/lessons";
+import { BEDROOM_VOCABULARY } from "../../data/courseCatalog";
 import type { ExerciseDefinition } from "../taskTypes";
 
 const word = (id: string) => BEDROOM_VOCABULARY.find((w) => w.id === id)!;
@@ -16,7 +16,7 @@ export const READING_EXERCISES: Record<string, ExerciseDefinition> = {
         id: "reveal-1",
         kind: "choice",
         prompt:
-          "\"Elena stood in the sunlit bedroom, her hands smoothing the fresh blanket.\" What was she touching?",
+          '"Elena stood in the sunlit bedroom, her hands smoothing the fresh blanket." What was she touching?',
         options: [
           { id: "blanket", label: "A woven cover for warmth", correct: true },
           { id: "curtain", label: "Fabric hanging across a window" },
@@ -29,7 +29,7 @@ export const READING_EXERCISES: Record<string, ExerciseDefinition> = {
         id: "reveal-2",
         kind: "choice",
         prompt:
-          "\"Next to the bed sat a small nightstand with a glowing brass lamp.\" Where was the lamp?",
+          '"Next to the bed sat a small nightstand with a glowing brass lamp." Where was the lamp?',
         options: [
           { id: "nightstand", label: "On the small table beside the bed", correct: true },
           { id: "ceiling", label: "Fixed to the ceiling" },
@@ -41,8 +41,7 @@ export const READING_EXERCISES: Record<string, ExerciseDefinition> = {
       {
         id: "reveal-3",
         kind: "entry",
-        prompt:
-          "\"She opened the tall ______ to hang her favourite winter coat.\" Which word fits?",
+        prompt: '"She opened the tall ______ to hang her favourite winter coat." Which word fits?',
         accept: [word("wardrobe").label],
         explanation: `A ${word("wardrobe").label.toLowerCase()} is where clothes hang. ${word("wardrobe").description}`,
       },
@@ -59,27 +58,26 @@ export const READING_EXERCISES: Record<string, ExerciseDefinition> = {
       {
         id: "agreement",
         kind: "choice",
-        prompt: "Which word is wrong? \"The bedroom have two large windows and a soft carpet.\"",
+        prompt: 'Which word is wrong? "The bedroom have two large windows and a soft carpet."',
         options: [
           { id: "have", label: "have", correct: true },
           { id: "bedroom", label: "bedroom" },
           { id: "windows", label: "windows" },
           { id: "carpet", label: "carpet" },
         ],
-        explanation:
-          "Subject–verb agreement: the singular noun \"bedroom\" takes \"has\", not \"have\".",
+        explanation: 'Subject–verb agreement: the singular noun "bedroom" takes "has", not "have".',
       },
       {
         id: "article",
         kind: "choice",
-        prompt: "Which word is wrong? \"She put a pillows on the bed.\"",
+        prompt: 'Which word is wrong? "She put a pillows on the bed."',
         options: [
           { id: "pillows", label: "pillows", correct: true },
           { id: "put", label: "put" },
           { id: "bed", label: "bed" },
           { id: "she", label: "She" },
         ],
-        explanation: "\"a\" is singular, so it must be followed by \"pillow\", not \"pillows\".",
+        explanation: '"a" is singular, so it must be followed by "pillow", not "pillows".',
       },
     ],
   },
@@ -130,7 +128,8 @@ export const READING_EXERCISES: Record<string, ExerciseDefinition> = {
       {
         id: "chart-2",
         kind: "choice",
-        prompt: "Using the same figures, how much larger is the mattress share than the lamp share?",
+        prompt:
+          "Using the same figures, how much larger is the mattress share than the lamp share?",
         options: [
           { id: "35", label: "35 percentage points", correct: true },
           { id: "10", label: "10 percentage points" },
@@ -182,9 +181,9 @@ export const READING_EXERCISES: Record<string, ExerciseDefinition> = {
         id: "sub-1",
         kind: "entry",
         prompt:
-          "The subtitle reads \"He hanged his coat in the wardrope.\" Type the misspelled word correctly.",
+          'The subtitle reads "He hanged his coat in the wardrope." Type the misspelled word correctly.',
         accept: ["wardrobe"],
-        explanation: "\"Wardrope\" should be \"wardrobe\". (\"Hanged\" should also be \"hung\".)",
+        explanation: '"Wardrope" should be "wardrobe". ("Hanged" should also be "hung".)',
       },
       {
         id: "sub-2",
@@ -196,8 +195,7 @@ export const READING_EXERCISES: Record<string, ExerciseDefinition> = {
           { id: "hangs", label: "hangs" },
           { id: "hanged", label: "hanged is already correct" },
         ],
-        explanation:
-          "\"Hanged\" is only used for executions. For objects the past tense is \"hung\".",
+        explanation: '"Hanged" is only used for executions. For objects the past tense is "hung".',
       },
     ],
   },
@@ -212,7 +210,7 @@ export const READING_EXERCISES: Record<string, ExerciseDefinition> = {
       {
         id: "check-1",
         kind: "choice",
-        prompt: "\"The beauty of the morning mist was ephemeral.\" What does ephemeral mean here?",
+        prompt: '"The beauty of the morning mist was ephemeral." What does ephemeral mean here?',
         options: [
           { id: "short", label: "Lasting only a very short time", correct: true },
           { id: "bright", label: "Extremely bright" },
@@ -220,7 +218,7 @@ export const READING_EXERCISES: Record<string, ExerciseDefinition> = {
           { id: "cold", label: "Very cold" },
         ],
         explanation:
-          "Ephemeral means short-lived. The sentence's \"vanishing quickly\" is the clue.",
+          'Ephemeral means short-lived. The sentence\'s "vanishing quickly" is the clue.',
       },
     ],
   },

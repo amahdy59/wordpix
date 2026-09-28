@@ -1,0 +1,630 @@
+﻿[
+  {
+    "lessonId": "community-center-1",
+    "lessonName": "The Community Center 1",
+    "unitId": "community-center",
+    "unitName": "The Community Center",
+    "unitOrder": 43,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 204,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Gymnasium",
+      "Auditorium",
+      "Kitchen",
+      "Classroom",
+      "Art Room",
+      "Music Room",
+      "Computer Lab",
+      "Meeting Room",
+      "Library",
+      "Daycare",
+      "Yoga Class",
+      "Dance Class",
+      "Cooking Class",
+      "Painting Class",
+      "Pottery Class"
+    ],
+    "targetWordsArabic": [
+      "صالة رياضية",
+      "قاعة محاضرات",
+      "-",
+      "-",
+      "غرفة يُسمّى «ارت رووم»",
+      "غرفة موسيقى",
+      "مختبر حاسوب",
+      "غرفة اجتماع",
+      "-",
+      "رعاية نهارية",
+      "حصة يوغا",
+      "حصة رقص",
+      "حصة طبخ",
+      "حصة رسم بالألوان",
+      "حصة فخّار"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Community Center to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the community center vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Gymnasium", "Auditorium", "Kitchen"],
+          "scenario": "A visitor to the public-service setting encounters gymnasium, auditorium, and kitchen, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Gymnasium", "Auditorium", "Kitchen"],
+            "expectedAnswer": "Gymnasium"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters gymnasium, auditorium, and kitchen, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Classroom", "Art Room", "Music Room"],
+          "scenario": "A visitor to the public-service setting encounters classroom, art room, and music room, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Classroom", "Art Room", "Music Room"],
+            "expectedAnswer": "Classroom"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters classroom, art room, and music room, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Computer Lab", "Meeting Room", "Library"],
+          "scenario": "A visitor to the public-service setting encounters computer lab, meeting room, and library, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Computer Lab", "Meeting Room", "Library"],
+            "expectedAnswer": "Computer Lab"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters computer lab, meeting room, and library, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Daycare", "Yoga Class", "Dance Class"],
+          "scenario": "A visitor to the public-service setting encounters daycare, yoga class, and dance class, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Daycare", "Yoga Class", "Dance Class"],
+            "expectedAnswer": "Daycare"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters daycare, yoga class, and dance class, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Cooking Class", "Painting Class", "Pottery Class"],
+          "scenario": "A visitor to the public-service setting encounters cooking class, painting class, and pottery class, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Cooking Class", "Painting Class", "Pottery Class"],
+            "expectedAnswer": "Cooking Class"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters cooking class, painting class, and pottery class, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Community Center: Mini Dialogue",
+      "text": "Maya is in a situation connected to the community center. She uses the new words to understand what she sees and what happens next. A visitor to the public-service setting encounters gymnasium, auditorium, and kitchen, with each word connected to a different part of the service. A visitor to the public-service setting encounters classroom, art room, and music room, with each word connected to a different part of the service. A visitor to the public-service setting encounters computer lab, meeting room, and library, with each word connected to a different part of the service. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Community Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gymnasium"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Classroom"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Computer Lab"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Daycare"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cooking Class"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Gymnasium"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Kitchen"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Sunny” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Community Center: In Context",
+      "idea": "30-45 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Sunny, Cloudy from weather-station-5\n3 lesson(s) back: Thunderstorm, Lightning from weather-station-3\n7 lesson(s) back: Hot, Warm from seasons-weather-3"
+  },
+  {
+    "lessonId": "community-center-2",
+    "lessonName": "The Community Center 2",
+    "unitId": "community-center",
+    "unitName": "The Community Center",
+    "unitOrder": 43,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 205,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Language Class",
+      "Tutoring",
+      "Meditation",
+      "Book Club",
+      "Film Night",
+      "Basketball",
+      "Volleyball",
+      "Badminton",
+      "Table Tennis",
+      "Swimming",
+      "Karate",
+      "Zumba",
+      "Aerobics",
+      "Weight Training",
+      "Stretching"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «لانجواجي كلاسس»",
+      "دروس مساعدة",
+      "تأمل",
+      "نادٍ كتاب",
+      "ليلة عرض فيلم",
+      "كرة السلة",
+      "كرة الطائرة",
+      "ريشة طائرة",
+      "لعبة يُسمّى «تابلي تيننيس»",
+      "سباحة",
+      "كاراتيه",
+      "زومبا",
+      "تمارين هوائية",
+      "تمارين الأوزان",
+      "تمدد"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Community Center to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the community center vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Language Class", "Tutoring", "Meditation"],
+          "scenario": "A visitor to the public-service setting encounters language class, tutoring, and meditation, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Language Class", "Tutoring", "Meditation"],
+            "expectedAnswer": "Language Class"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters language class, tutoring, and meditation, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Book Club", "Film Night", "Basketball"],
+          "scenario": "A visitor to the public-service setting encounters book club, film night, and basketball, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Book Club", "Film Night", "Basketball"],
+            "expectedAnswer": "Book Club"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters book club, film night, and basketball, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Volleyball", "Badminton", "Table Tennis"],
+          "scenario": "A visitor to the public-service setting encounters volleyball, badminton, and table tennis, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Volleyball", "Badminton", "Table Tennis"],
+            "expectedAnswer": "Volleyball"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters volleyball, badminton, and table tennis, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Swimming", "Karate", "Zumba"],
+          "scenario": "A visitor to the public-service setting encounters swimming, karate, and zumba, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Swimming", "Karate", "Zumba"],
+            "expectedAnswer": "Swimming"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters swimming, karate, and zumba, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Aerobics", "Weight Training", "Stretching"],
+          "scenario": "A visitor to the public-service setting encounters aerobics, weight training, and stretching, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Aerobics", "Weight Training", "Stretching"],
+            "expectedAnswer": "Aerobics"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters aerobics, weight training, and stretching, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Community Center: Simple Message",
+      "text": "Maya is in a situation connected to the community center. She uses the new words to understand what she sees and what happens next. A visitor to the public-service setting encounters language class, tutoring, and meditation, with each word connected to a different part of the service. A visitor to the public-service setting encounters book club, film night, and basketball, with each word connected to a different part of the service. A visitor to the public-service setting encounters volleyball, badminton, and table tennis, with each word connected to a different part of the service. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Community Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Language Class"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Book Club"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Volleyball"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Swimming"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Aerobics"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Language Class"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Meditation"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Gymnasium” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Community Center: In Context",
+      "idea": "30-45 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Gymnasium, Auditorium from community-center-1\n3 lesson(s) back: Hygrometer, Weather Satellite from weather-station-4\n7 lesson(s) back: Weather Map, Forecast from seasons-weather-4"
+  },
+  {
+    "lessonId": "community-center-3",
+    "lessonName": "The Community Center 3",
+    "unitId": "community-center",
+    "unitName": "The Community Center",
+    "unitOrder": 43,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 206,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Bake Sale",
+      "Talent Show",
+      "Holiday Party",
+      "Workshop",
+      "Seminar",
+      "Concert",
+      "Exhibition",
+      "Farmers Market",
+      "Blood Drive",
+      "Voting",
+      "Bulletin Board",
+      "Water Fountain",
+      "Locker",
+      "Bench",
+      "Stage"
+    ],
+    "targetWordsArabic": [
+      "بازار لبيع المخبوزات",
+      "مصطلح مرتبط بالموضوع يُسمّى «تالينت شوو»",
+      "حفلة بمناسبة عطلة",
+      "ورشة",
+      "ندوة",
+      "حفل موسيقي",
+      "معرض",
+      "مكان يُسمّى «فارميرس ماركيت»",
+      "حملة تبرع بالدم",
+      "تصويت",
+      "مصطلح مرتبط بالموضوع يُسمّى «بولليتين بوارد»",
+      "نافورة ماء",
+      "خزانة",
+      "مقعد",
+      "مرحلة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Community Center to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the community center vocabulary in simple context.",
+      "textType": "notice-style text",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bake Sale", "Talent Show", "Holiday Party"],
+          "scenario": "A visitor to the public-service setting encounters bake sale, talent show, and holiday party, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Bake Sale", "Talent Show", "Holiday Party"],
+            "expectedAnswer": "Bake Sale"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters bake sale, talent show, and holiday party, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Workshop", "Seminar", "Concert"],
+          "scenario": "A visitor to the public-service setting encounters workshop, seminar, and concert, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Workshop", "Seminar", "Concert"],
+            "expectedAnswer": "Workshop"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters workshop, seminar, and concert, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Exhibition", "Farmers Market", "Blood Drive"],
+          "scenario": "A visitor to the public-service setting encounters exhibition, farmers market, and blood drive, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Exhibition", "Farmers Market", "Blood Drive"],
+            "expectedAnswer": "Exhibition"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters exhibition, farmers market, and blood drive, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Voting", "Bulletin Board", "Water Fountain"],
+          "scenario": "A visitor to the public-service setting encounters voting, bulletin board, and water fountain, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Voting", "Bulletin Board", "Water Fountain"],
+            "expectedAnswer": "Voting"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters voting, bulletin board, and water fountain, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Locker", "Bench", "Stage"],
+          "scenario": "A visitor to the public-service setting encounters locker, bench, and stage, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Locker", "Bench", "Stage"],
+            "expectedAnswer": "Locker"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters locker, bench, and stage, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Community Center: Notice-Style Text",
+      "text": "Maya is in a situation connected to the community center. She uses the new words to understand what she sees and what happens next. A visitor to the public-service setting encounters bake sale, talent show, and holiday party, with each word connected to a different part of the service. A visitor to the public-service setting encounters workshop, seminar, and concert, with each word connected to a different part of the service. A visitor to the public-service setting encounters exhibition, farmers market, and blood drive, with each word connected to a different part of the service. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Community Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bake Sale"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Workshop"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Exhibition"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Voting"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Locker"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Bake Sale"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Holiday Party"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Language Class” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Community Center: In Context",
+      "idea": "30-45 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Language Class, Tutoring from community-center-2\n3 lesson(s) back: Sunny, Cloudy from weather-station-5\n7 lesson(s) back: Sunshine, Clear Sky from weather-station-1"
+  },
+  {
+    "lessonId": "community-center-4",
+    "lessonName": "The Community Center 4",
+    "unitId": "community-center",
+    "unitName": "The Community Center",
+    "unitOrder": 43,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 207,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Projector",
+      "Whiteboard",
+      "Microphone",
+      "Speaker",
+      "Clock",
+      "Instructor",
+      "Coordinator",
+      "Volunteer",
+      "Member",
+      "Child",
+      "Senior",
+      "Lifeguard",
+      "Coach",
+      "Receptionist",
+      "Janitor"
+    ],
+    "targetWordsArabic": [
+      "جهاز عرض",
+      "سبورة بيضاء",
+      "ميكروفون",
+      "مُكَبِّرُ صَوْت (سَبِيكَر / سَمَّاعَة)",
+      "سَاعَةُ حَائِط / سَاعَة",
+      "مدرب",
+      "منسق",
+      "متطوع",
+      "عضو",
+      "طفل",
+      "كبير السن",
+      "منقذ سباحة",
+      "حافلة سفر",
+      "موظف استقبال",
+      "عامل نظافة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Community Center to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the community center vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Projector", "Whiteboard", "Microphone"],
+          "scenario": "A visitor to the public-service setting encounters projector, whiteboard, and microphone, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Projector", "Whiteboard", "Microphone"],
+            "expectedAnswer": "Projector"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters projector, whiteboard, and microphone, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Speaker", "Clock", "Instructor"],
+          "scenario": "A visitor to the public-service setting encounters speaker, clock, and instructor, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Speaker", "Clock", "Instructor"],
+            "expectedAnswer": "Speaker"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters speaker, clock, and instructor, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Coordinator", "Volunteer", "Member"],
+          "scenario": "A visitor to the public-service setting encounters coordinator, volunteer, and member, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Coordinator", "Volunteer", "Member"],
+            "expectedAnswer": "Coordinator"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters coordinator, volunteer, and member, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Child", "Senior", "Lifeguard"],
+          "scenario": "A visitor to the public-service setting encounters child, senior, and lifeguard, with each word connected to a different part of the service.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Child", "Senior", "Lifeguard"],
+            "expectedAnswer": "Child"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A visitor to the public-service setting encounters child, senior, and lifeguard, with each word connected to a different part of the service. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Coach", "Receptionist", "Janitor"],
+          "scenario": "The coach, receptionist, and janitor appear in the same situation, each with a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Coach", "Receptionist", "Janitor"],
+            "expectedAnswer": "Coach"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The coach, receptionist, and janitor appear in the same situation, each with a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Community Center: Short Description",
+      "text": "Maya is in a situation connected to the community center. She uses the new words to understand what she sees and what happens next. A visitor to the public-service setting encounters projector, whiteboard, and microphone, with each word connected to a different part of the service. A visitor to the public-service setting encounters speaker, clock, and instructor, with each word connected to a different part of the service. A visitor to the public-service setting encounters coordinator, volunteer, and member, with each word connected to a different part of the service. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Community Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Projector"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Speaker"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Coordinator"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Child"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Coach"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Projector"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Microphone"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Bake Sale” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Community Center: In Context",
+      "idea": "30-45 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Bake Sale, Talent Show from community-center-3\n3 lesson(s) back: Gymnasium, Auditorium from community-center-1\n7 lesson(s) back: Rainbow, Umbrella from weather-station-2"
+  }
+]

@@ -1,0 +1,427 @@
+﻿[
+  {
+    "lessonId": "real-estate-agency-1",
+    "lessonName": "The Real Estate Agency 1",
+    "unitId": "real-estate-agency",
+    "unitName": "The Real Estate Agency",
+    "unitOrder": 159,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 711,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Real Estate Agent",
+      "Broker",
+      "Appraiser",
+      "Inspector",
+      "Mortgage Lender",
+      "Title Agent",
+      "Property Manager",
+      "Developer",
+      "Contractor",
+      "Architect",
+      "Listing",
+      "Open House",
+      "Showing",
+      "Offer",
+      "Counter Offer"
+    ],
+    "targetWordsArabic": [
+      "وكيل عقارات",
+      "وسيط",
+      "شخص يُسمّى «اببرايسير»",
+      "مفتش",
+      "جهة إقراض عقاري",
+      "وكيل سند الملكية",
+      "مدير عقارات",
+      "شخص يُسمّى «ديفيلوبير»",
+      "شخص يُسمّى «كونتراكتور»",
+      "مبنى يُسمّى «ارتشيتيكت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليستينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «وبين هووسي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «شووينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «وففير»",
+      "عرض مقابل"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Real Estate Agency to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the real estate agency vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Real Estate Agent", "Broker", "Appraiser", "Inspector"],
+          "scenario": "The agent, designer, or client discusses real estate agent, broker, appraiser, and inspector. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Real Estate Agent", "Broker", "Appraiser", "Inspector"],
+            "expectedAnswer": "Real Estate Agent"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses real estate agent, broker, appraiser, and inspector. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Mortgage Lender", "Title Agent", "Property Manager", "Developer"],
+          "scenario": "The agent, designer, or client discusses mortgage lender, title agent, property manager, and developer. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mortgage Lender", "Title Agent", "Property Manager", "Developer"],
+            "expectedAnswer": "Mortgage Lender"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses mortgage lender, title agent, property manager, and developer. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Contractor", "Architect", "Listing", "Open House"],
+          "scenario": "The agent, designer, or client discusses contractor, architect, listing, and open house. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Contractor", "Architect", "Listing", "Open House"],
+            "expectedAnswer": "Contractor"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses contractor, architect, listing, and open house. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Showing", "Offer", "Counter Offer"],
+          "scenario": "The agent, designer, or client discusses showing, offer, and counter offer. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Showing", "Offer", "Counter Offer"],
+            "expectedAnswer": "Showing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses showing, offer, and counter offer. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Real Estate Agency: Report Excerpt",
+      "text": "A realistic case involving the real estate agency shows how precise vocabulary can influence choices, explanations, and outcomes. The agent, designer, or client discusses real estate agent, broker, appraiser, and inspector. The words help describe the property, design choice, or building process. The agent, designer, or client discusses mortgage lender, title agent, property manager, and developer. The words help describe the property, design choice, or building process. The agent, designer, or client discusses contractor, architect, listing, and open house. The words help describe the property, design choice, or building process. The agent, designer, or client discusses showing, offer, and counter offer. The words help describe the property, design choice, or building process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Real Estate Agency. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Real Estate Agent"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mortgage Lender"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Contractor"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Showing"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Real Estate Agent"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Square Footage” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Real Estate Agency: In Context",
+      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Square Footage, Lot Size from property-types-3\n3 lesson(s) back: House, Apartment from property-types-1\n7 lesson(s) back: Plagiarism, Reference from research-study-3"
+  },
+  {
+    "lessonId": "real-estate-agency-2",
+    "lessonName": "The Real Estate Agency 2",
+    "unitId": "real-estate-agency",
+    "unitName": "The Real Estate Agency",
+    "unitOrder": 159,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 712,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Negotiation",
+      "Appraisal",
+      "Inspection",
+      "Closing",
+      "Escrow",
+      "Mortgage",
+      "Down Payment",
+      "Interest Rate",
+      "Closing Costs",
+      "Equity",
+      "Appreciation",
+      "Depreciation",
+      "Tax Assessment",
+      "HOA Fee",
+      "Pre-Approval"
+    ],
+    "targetWordsArabic": [
+      "تفاوض",
+      "وثيقة يُسمّى «اببرايسال»",
+      "فحص",
+      "إتمام الصفقة",
+      "حساب ضمان",
+      "رهن عقاري",
+      "جزء يُسمّى «دوون بايمينت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ينتيريست راتي»",
+      "تكاليف إتمام الصفقة",
+      "مصطلح مرتبط بالموضوع يُسمّى «يكيتي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «اببريكياتيون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديبريكياتيون»",
+      "تقييم ضريبي",
+      "رسوم جمعية ملاك المنازل",
+      "موافقة مبدئية على التمويل"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Real Estate Agency to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the real estate agency vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Negotiation", "Appraisal", "Inspection", "Closing"],
+          "scenario": "The agent, designer, or client discusses negotiation, appraisal, inspection, and closing. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Negotiation", "Appraisal", "Inspection", "Closing"],
+            "expectedAnswer": "Negotiation"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses negotiation, appraisal, inspection, and closing. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Escrow", "Mortgage", "Down Payment", "Interest Rate"],
+          "scenario": "The agent, designer, or client discusses escrow, mortgage, down payment, and interest rate. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Escrow", "Mortgage", "Down Payment", "Interest Rate"],
+            "expectedAnswer": "Escrow"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses escrow, mortgage, down payment, and interest rate. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Closing Costs", "Equity", "Appreciation", "Depreciation"],
+          "scenario": "The agent, designer, or client discusses closing costs, equity, appreciation, and depreciation. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Closing Costs", "Equity", "Appreciation", "Depreciation"],
+            "expectedAnswer": "Closing Costs"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses closing costs, equity, appreciation, and depreciation. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Tax Assessment", "HOA Fee", "Pre-Approval"],
+          "scenario": "The agent, designer, or client discusses tax assessment, hoa fee, and pre-approval. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tax Assessment", "HOA Fee", "Pre-Approval"],
+            "expectedAnswer": "Tax Assessment"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses tax assessment, hoa fee, and pre-approval. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Real Estate Agency: Case Note",
+      "text": "A realistic case involving the real estate agency shows how precise vocabulary can influence choices, explanations, and outcomes. The agent, designer, or client discusses negotiation, appraisal, inspection, and closing. The words help describe the property, design choice, or building process. The agent, designer, or client discusses escrow, mortgage, down payment, and interest rate. The words help describe the property, design choice, or building process. The agent, designer, or client discusses closing costs, equity, appreciation, and depreciation. The words help describe the property, design choice, or building process. The agent, designer, or client discusses tax assessment, hoa fee, and pre-approval. The words help describe the property, design choice, or building process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Real Estate Agency. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Negotiation"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Escrow"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Closing Costs"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tax Assessment"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Negotiation"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Real Estate Agent” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Real Estate Agency: In Context",
+      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Real Estate Agent, Broker from real-estate-agency-1\n3 lesson(s) back: Shopping Center, Hotel from property-types-2\n7 lesson(s) back: Dorm Room, Roommate from student-life-1"
+  },
+  {
+    "lessonId": "real-estate-agency-3",
+    "lessonName": "The Real Estate Agency 3",
+    "unitId": "real-estate-agency",
+    "unitName": "The Real Estate Agency",
+    "unitOrder": 159,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 713,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Listing Agreement",
+      "Purchase Agreement",
+      "Deed",
+      "Title",
+      "Mortgage Note",
+      "Disclosure",
+      "Survey",
+      "Insurance Policy",
+      "Tax Return",
+      "Proof of Income"
+    ],
+    "targetWordsArabic": [
+      "اتفاقية إدراج عقار",
+      "جزء يُسمّى «بورتشاسي اجرييمينت»",
+      "وثيقة يُسمّى «دييد»",
+      "وثيقة يُسمّى «تيتلي»",
+      "سند قرض عقاري",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديسكلوسوري»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سورفيي»",
+      "وثيقة تأمين",
+      "شخص يُسمّى «تاكس ريتورن»",
+      "إثبات الدخل"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Real Estate Agency to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the real estate agency vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "review",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Listing Agreement", "Purchase Agreement", "Deed", "Title"],
+          "scenario": "The agent, designer, or client discusses listing agreement, purchase agreement, deed, and title. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Listing Agreement", "Purchase Agreement", "Deed", "Title"],
+            "expectedAnswer": "Listing Agreement"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses listing agreement, purchase agreement, deed, and title. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Mortgage Note", "Disclosure", "Survey", "Insurance Policy"],
+          "scenario": "The agent, designer, or client discusses mortgage note, disclosure, survey, and insurance policy. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mortgage Note", "Disclosure", "Survey", "Insurance Policy"],
+            "expectedAnswer": "Mortgage Note"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses mortgage note, disclosure, survey, and insurance policy. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Tax Return", "Proof of Income"],
+          "scenario": "The learner compares the tax return and proof of income and notices what information each one contains.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tax Return", "Proof of Income"],
+            "expectedAnswer": "Tax Return"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner compares the tax return and proof of income and notices what information each one contains. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Real Estate Agency: Review",
+      "text": "A realistic case involving the real estate agency shows how precise vocabulary can influence choices, explanations, and outcomes. The agent, designer, or client discusses listing agreement, purchase agreement, deed, and title. The words help describe the property, design choice, or building process. The agent, designer, or client discusses mortgage note, disclosure, survey, and insurance policy. The words help describe the property, design choice, or building process. The learner compares the tax return and proof of income and notices what information each one contains. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Real Estate Agency. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Listing Agreement"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mortgage Note"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tax Return"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Listing Agreement"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Negotiation” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Real Estate Agency: In Context",
+      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Negotiation, Appraisal from real-estate-agency-2\n3 lesson(s) back: Square Footage, Lot Size from property-types-3\n7 lesson(s) back: Newspaper, Radio Station from student-life-2"
+  }
+]

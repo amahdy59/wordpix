@@ -1,0 +1,752 @@
+﻿[
+  {
+    "lessonId": "laboratory-1",
+    "lessonName": "The Laboratory 1",
+    "unitId": "laboratory",
+    "unitName": "The Laboratory",
+    "unitOrder": 176,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 778,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Beaker",
+      "Flask",
+      "Test Tube",
+      "Pipette",
+      "Graduated Cylinder",
+      "Petri Dish",
+      "Funnel",
+      "Burette",
+      "Erlenmeyer Flask",
+      "Volumetric Flask",
+      "Watch Glass",
+      "Dropper",
+      "Microscope",
+      "Bunsen Burner",
+      "Centrifuge"
+    ],
+    "targetWordsArabic": [
+      "كأس مخبري",
+      "دورق",
+      "حاوية يُسمّى «تيست توبي»",
+      "ماصة",
+      "حاوية يُسمّى «جرادواتيد كيليندير»",
+      "طبق بتري",
+      "قمع",
+      "سحاحة",
+      "أداة أو جهاز يُسمّى «يرلينمييير فلاسك»",
+      "أداة أو جهاز يُسمّى «فولوميتريك فلاسك»",
+      "زجاج ساعة",
+      "قطّارة",
+      "مجهر",
+      "موقد بنسن",
+      "جهاز طرد مركزي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Laboratory to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the laboratory vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Beaker", "Flask", "Test Tube", "Pipette"],
+          "scenario": "The engineer or technician checks beaker, flask, test tube, and pipette. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Beaker", "Flask", "Test Tube", "Pipette"],
+            "expectedAnswer": "Beaker"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks beaker, flask, test tube, and pipette. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Graduated Cylinder", "Petri Dish", "Funnel", "Burette"],
+          "scenario": "The engineer or technician checks graduated cylinder, petri dish, funnel, and burette. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Graduated Cylinder", "Petri Dish", "Funnel", "Burette"],
+            "expectedAnswer": "Graduated Cylinder"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks graduated cylinder, petri dish, funnel, and burette. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Erlenmeyer Flask", "Volumetric Flask", "Watch Glass", "Dropper"],
+          "scenario": "The engineer or technician checks erlenmeyer flask, volumetric flask, watch glass, and dropper. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Erlenmeyer Flask", "Volumetric Flask", "Watch Glass", "Dropper"],
+            "expectedAnswer": "Erlenmeyer Flask"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks erlenmeyer flask, volumetric flask, watch glass, and dropper. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Microscope", "Bunsen Burner", "Centrifuge"],
+          "scenario": "The engineer or technician checks microscope, bunsen burner, and centrifuge. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Microscope", "Bunsen Burner", "Centrifuge"],
+            "expectedAnswer": "Microscope"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks microscope, bunsen burner, and centrifuge. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Laboratory: Case Note",
+      "text": "A realistic case involving the laboratory shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks beaker, flask, test tube, and pipette. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks graduated cylinder, petri dish, funnel, and burette. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks erlenmeyer flask, volumetric flask, watch glass, and dropper. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks microscope, bunsen burner, and centrifuge. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Beaker"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Graduated Cylinder"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Erlenmeyer Flask"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Microscope"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Beaker"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Defendant” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Laboratory: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Defendant, Plaintiff from courtroom-5\n3 lesson(s) back: Trial, Hearing from courtroom-3\n7 lesson(s) back: Protocol Officer, Cultural Attaché from embassy-4"
+  },
+  {
+    "lessonId": "laboratory-2",
+    "lessonName": "The Laboratory 2",
+    "unitId": "laboratory",
+    "unitName": "The Laboratory",
+    "unitOrder": 176,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 779,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Hot Plate",
+      "Scale",
+      "Thermometer",
+      "pH Meter",
+      "Spectrometer",
+      "Incubator",
+      "Fume Hood",
+      "Lab Coat",
+      "Safety Goggles",
+      "Latex Gloves",
+      "Face Shield",
+      "Fire Extinguisher",
+      "Eyewash Station",
+      "Chemical Shower",
+      "First Aid Kit"
+    ],
+    "targetWordsArabic": [
+      "طعام يُسمّى «هوت بلاتي»",
+      "مقياس رسم",
+      "مقياس حرارة",
+      "جهاز يُسمّى «ف ميتير»",
+      "مطياف",
+      "حاضنة",
+      "أداة أو جهاز يُسمّى «فومي هوود»",
+      "معطف مختبر",
+      "نظارات واقية سلامة",
+      "مادة كيميائية يُسمّى «لاتيكس جلوفيس»",
+      "واقي وجه",
+      "جهاز يُسمّى «فيري يكستينجويشير»",
+      "أداة أو جهاز يُسمّى «يييواش ستاتيون»",
+      "دُش طوارئ للمواد الكيميائية",
+      "أول إسعاف طقم"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Laboratory to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the laboratory vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Hot Plate", "Scale", "Thermometer", "pH Meter"],
+          "scenario": "The engineer or technician checks hot plate, scale, thermometer, and ph meter. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hot Plate", "Scale", "Thermometer", "pH Meter"],
+            "expectedAnswer": "Hot Plate"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks hot plate, scale, thermometer, and ph meter. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Spectrometer", "Incubator", "Fume Hood", "Lab Coat"],
+          "scenario": "The engineer or technician checks spectrometer, incubator, fume hood, and lab coat. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Spectrometer", "Incubator", "Fume Hood", "Lab Coat"],
+            "expectedAnswer": "Spectrometer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks spectrometer, incubator, fume hood, and lab coat. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Safety Goggles", "Latex Gloves", "Face Shield", "Fire Extinguisher"],
+          "scenario": "The engineer or technician checks safety goggles, latex gloves, face shield, and fire extinguisher. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Safety Goggles", "Latex Gloves", "Face Shield", "Fire Extinguisher"],
+            "expectedAnswer": "Safety Goggles"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks safety goggles, latex gloves, face shield, and fire extinguisher. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Eyewash Station", "Chemical Shower", "First Aid Kit"],
+          "scenario": "The engineer or technician checks eyewash station, chemical shower, and first aid kit. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Eyewash Station", "Chemical Shower", "First Aid Kit"],
+            "expectedAnswer": "Eyewash Station"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks eyewash station, chemical shower, and first aid kit. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Laboratory: Report Excerpt",
+      "text": "A realistic case involving the laboratory shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks hot plate, scale, thermometer, and ph meter. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks spectrometer, incubator, fume hood, and lab coat. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks safety goggles, latex gloves, face shield, and fire extinguisher. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks eyewash station, chemical shower, and first aid kit. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hot Plate"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Spectrometer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Safety Goggles"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Eyewash Station"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Hot Plate"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Beaker” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Laboratory: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Beaker, Flask from laboratory-1\n3 lesson(s) back: Motion, Brief from courtroom-4\n7 lesson(s) back: Application, Identification from embassy-5"
+  },
+  {
+    "lessonId": "laboratory-3",
+    "lessonName": "The Laboratory 3",
+    "unitId": "laboratory",
+    "unitName": "The Laboratory",
+    "unitOrder": 176,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 780,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Hazard Sign",
+      "Apron",
+      "Tongs",
+      "Clamp",
+      "Ring Stand",
+      "Spatula",
+      "Stirring Rod",
+      "Mortar and Pestle",
+      "Scalpel",
+      "Forceps",
+      "Syringe",
+      "Magnifying Glass",
+      "Acid",
+      "Base",
+      "Solution"
+    ],
+    "targetWordsArabic": [
+      "علامة خطر",
+      "مِرْيَلَةُ مَطْبَخ (مِرْيَلَة)",
+      "مَاسِكُ طَعَام (مِلْقَاط)",
+      "ملقط تثبيت",
+      "حامل مختبري رأسي",
+      "مِلْعَقَةُ تَقْلِيب (سْبَاتْيُولا)",
+      "قضيب تحريك",
+      "هاون ومدقّة",
+      "مشرط",
+      "ملقط جراحي",
+      "حقنة",
+      "أداة يُسمّى «ماجنيفيينج جلاسس»",
+      "حمض",
+      "قاعدة كيميائية",
+      "محلول"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Laboratory to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the laboratory vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Hazard Sign", "Apron", "Tongs", "Clamp"],
+          "scenario": "The engineer or technician checks hazard sign, apron, tongs, and clamp. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hazard Sign", "Apron", "Tongs", "Clamp"],
+            "expectedAnswer": "Hazard Sign"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks hazard sign, apron, tongs, and clamp. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Ring Stand", "Spatula", "Stirring Rod", "Mortar and Pestle"],
+          "scenario": "The engineer or technician checks ring stand, spatula, stirring rod, and mortar and pestle. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Ring Stand", "Spatula", "Stirring Rod", "Mortar and Pestle"],
+            "expectedAnswer": "Ring Stand"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks ring stand, spatula, stirring rod, and mortar and pestle. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Scalpel", "Forceps", "Syringe", "Magnifying Glass"],
+          "scenario": "The engineer or technician checks scalpel, forceps, syringe, and magnifying glass. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Scalpel", "Forceps", "Syringe", "Magnifying Glass"],
+            "expectedAnswer": "Scalpel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks scalpel, forceps, syringe, and magnifying glass. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Acid", "Base", "Solution"],
+          "scenario": "The engineer or technician checks acid, base, and solution. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Acid", "Base", "Solution"],
+            "expectedAnswer": "Acid"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks acid, base, and solution. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Laboratory: Workplace/Academic Scenario",
+      "text": "A realistic case involving the laboratory shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks hazard sign, apron, tongs, and clamp. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks ring stand, spatula, stirring rod, and mortar and pestle. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks scalpel, forceps, syringe, and magnifying glass. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks acid, base, and solution. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hazard Sign"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ring Stand"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Scalpel"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Acid"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Hazard Sign"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Hot Plate” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Laboratory: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Hot Plate, Scale from laboratory-2\n3 lesson(s) back: Defendant, Plaintiff from courtroom-5\n7 lesson(s) back: Judge, Lawyer from courtroom-1"
+  },
+  {
+    "lessonId": "laboratory-4",
+    "lessonName": "The Laboratory 4",
+    "unitId": "laboratory",
+    "unitName": "The Laboratory",
+    "unitOrder": 176,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 781,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Indicator",
+      "Reagent",
+      "Sample",
+      "Specimen",
+      "Slide",
+      "Stain",
+      "Crystal",
+      "Lab Notebook",
+      "Graph Paper",
+      "Calculator",
+      "Computer",
+      "Data Chart",
+      "Timer",
+      "Label",
+      "Barcode"
+    ],
+    "targetWordsArabic": [
+      "دليل كيميائي",
+      "كاشف كيميائي",
+      "عينة",
+      "عينة اختبار",
+      "شريحة مجهرية",
+      "صبغة",
+      "بلورة",
+      "مادة يُسمّى «لاب نوتيبووك»",
+      "ورق رسم بياني",
+      "آلة حاسبة",
+      "حاسوب",
+      "خريطة ملاحية بيانات",
+      "مؤقت",
+      "علامة",
+      "رمز شريطي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Laboratory to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the laboratory vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "opinion paragraph",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Indicator", "Reagent", "Sample", "Specimen"],
+          "scenario": "The engineer or technician checks indicator, reagent, sample, and specimen. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Indicator", "Reagent", "Sample", "Specimen"],
+            "expectedAnswer": "Indicator"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks indicator, reagent, sample, and specimen. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Slide", "Stain", "Crystal", "Lab Notebook"],
+          "scenario": "The engineer or technician checks slide, stain, crystal, and lab notebook. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Slide", "Stain", "Crystal", "Lab Notebook"],
+            "expectedAnswer": "Slide"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks slide, stain, crystal, and lab notebook. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Graph Paper", "Calculator", "Computer", "Data Chart"],
+          "scenario": "The engineer or technician checks graph paper, calculator, computer, and data chart. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Graph Paper", "Calculator", "Computer", "Data Chart"],
+            "expectedAnswer": "Graph Paper"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks graph paper, calculator, computer, and data chart. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Timer", "Label", "Barcode"],
+          "scenario": "The engineer or technician checks timer, label, and barcode. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Timer", "Label", "Barcode"],
+            "expectedAnswer": "Timer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks timer, label, and barcode. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Laboratory: Opinion Paragraph",
+      "text": "A realistic case involving the laboratory shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks indicator, reagent, sample, and specimen. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks slide, stain, crystal, and lab notebook. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks graph paper, calculator, computer, and data chart. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks timer, label, and barcode. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Indicator"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Slide"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Graph Paper"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Timer"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Indicator"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Hazard Sign” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Laboratory: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Hazard Sign, Apron from laboratory-3\n3 lesson(s) back: Beaker, Flask from laboratory-1\n7 lesson(s) back: Prosecution Table, Lectern from courtroom-2"
+  },
+  {
+    "lessonId": "laboratory-5",
+    "lessonName": "The Laboratory 5",
+    "unitId": "laboratory",
+    "unitName": "The Laboratory",
+    "unitOrder": 176,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 782,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Log Sheet",
+      "Report",
+      "Autoclave",
+      "Compound",
+      "Catalyst",
+      "Solvent",
+      "Enzyme",
+      "Analyze",
+      "Synthesize",
+      "Calibrate",
+      "Filter",
+      "Extract",
+      "Sterilize",
+      "Document",
+      "Peer Review"
+    ],
+    "targetWordsArabic": [
+      "ورقة سجل",
+      "تقرير",
+      "جهاز تعقيم بالبخار",
+      "مركب",
+      "حفاز",
+      "مذيب",
+      "إنزيم",
+      "يحلل",
+      "يركّب",
+      "يُعاير",
+      "يرشّح",
+      "يستخلص",
+      "يعقّم",
+      "وثيقة",
+      "غرفة يُسمّى «بيير ريفييو»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Laboratory to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the laboratory vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Log Sheet", "Report", "Autoclave", "Compound"],
+          "scenario": "The engineer or technician checks log sheet, report, autoclave, and compound. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Log Sheet", "Report", "Autoclave", "Compound"],
+            "expectedAnswer": "Log Sheet"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks log sheet, report, autoclave, and compound. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Catalyst", "Solvent", "Enzyme", "Analyze"],
+          "scenario": "The engineer or technician checks catalyst, solvent, enzyme, and analyze. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Catalyst", "Solvent", "Enzyme", "Analyze"],
+            "expectedAnswer": "Catalyst"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks catalyst, solvent, enzyme, and analyze. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Synthesize", "Calibrate", "Filter", "Extract"],
+          "scenario": "The engineer or technician checks synthesize, calibrate, filter, and extract. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Synthesize", "Calibrate", "Filter", "Extract"],
+            "expectedAnswer": "Synthesize"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks synthesize, calibrate, filter, and extract. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Sterilize", "Document", "Peer Review"],
+          "scenario": "The engineer or technician checks sterilize, document, and peer review. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sterilize", "Document", "Peer Review"],
+            "expectedAnswer": "Sterilize"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks sterilize, document, and peer review. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Laboratory: Case Note",
+      "text": "A realistic case involving the laboratory shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks log sheet, report, autoclave, and compound. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks catalyst, solvent, enzyme, and analyze. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks synthesize, calibrate, filter, and extract. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks sterilize, document, and peer review. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Log Sheet"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Catalyst"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Synthesize"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sterilize"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Log Sheet"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Indicator” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Laboratory: In Context",
+      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Indicator, Reagent from laboratory-4\n3 lesson(s) back: Hot Plate, Scale from laboratory-2\n7 lesson(s) back: Trial, Hearing from courtroom-3"
+  }
+]

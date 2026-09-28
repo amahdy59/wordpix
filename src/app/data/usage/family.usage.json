@@ -1,0 +1,436 @@
+﻿[
+  {
+    "lessonId": "family-1",
+    "lessonName": "The Family 1",
+    "unitId": "family",
+    "unitName": "The Family",
+    "unitOrder": 5,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 15,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Mother",
+      "Father",
+      "Sister",
+      "Brother",
+      "Son",
+      "Daughter",
+      "Parents",
+      "Siblings",
+      "Baby",
+      "Twin",
+      "Mom",
+      "Dad",
+      "Big Sister",
+      "Little Brother",
+      "Oldest Child"
+    ],
+    "targetWordsArabic": [
+      "أم",
+      "أب",
+      "أخت",
+      "أخ",
+      "ابن",
+      "ابنة",
+      "والدان",
+      "إخوة وأخوات",
+      "رضيع",
+      "توأم",
+      "أم",
+      "أب",
+      "الأخت الكبرى",
+      "الأخ الأصغر",
+      "أكبر الأبناء"
+    ],
+    "usage": {
+      "goal": "Talk about family members, family activities, and simple family values.",
+      "canDoStatement": "I can talk about family members, family activities, and simple family values",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Mother", "Father", "Sister"],
+          "scenario": "In my family, I can talk about mother, father, and sister.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Mother", "Father", "Sister"],
+            "expectedAnswer": "Mother"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: In my family, I can talk about mother, father, and sister. Emphasize mother, father, and sister and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Brother", "Son", "Daughter"],
+          "scenario": "In my family, I can talk about brother, son, and daughter.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Brother", "Son", "Daughter"],
+            "expectedAnswer": "Brother"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: In my family, I can talk about brother, son, and daughter. Emphasize brother, son, and daughter and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Parents", "Siblings", "Baby"],
+          "scenario": "In my family, I can talk about parents, siblings, and baby.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Parents", "Siblings", "Baby"],
+            "expectedAnswer": "Parents"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: In my family, I can talk about parents, siblings, and baby. Emphasize parents, siblings, and baby and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Twin", "Mom", "Dad"],
+          "scenario": "In my family, I can talk about twin, mom, and dad.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Twin", "Mom", "Dad"],
+            "expectedAnswer": "Twin"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: In my family, I can talk about twin, mom, and dad. Emphasize twin, mom, and dad and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Big Sister", "Little Brother", "Oldest Child"],
+          "scenario": "In my family, I can talk about big sister, little brother, and oldest child.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Big Sister", "Little Brother", "Oldest Child"],
+            "expectedAnswer": "Big Sister"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: In my family, I can talk about big sister, little brother, and oldest child. Emphasize big sister, little brother, and oldest child and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Family Mini Story",
+      "text": "Today we are at home with the family. We talk about mother, father, sister, and brother. Later, everyone spends time together and uses words like son, daughter, and parents. It is a simple family moment, and we practice the new words together. We also remember earlier words such as hungry and thirsty.",
+      "imageBrief": "One uncluttered the family scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Mother"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Brother"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Parents"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Twin"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Big Sister"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Mother"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Father"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Daughter"
+      }
+    ],
+    "video": {
+      "title": "The Family: See It, Say It",
+      "idea": "30–50 second contextual video set in a home. Show mother, father, sister, brother, and son naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see mother, father, and sister. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Hungry, Thirsty from basic-emotions-3\n3 lesson(s) back: Happy, Joyful from basic-emotions-1\n7 lesson(s) back: Circle, Square from shapes-geometry-1"
+  },
+  {
+    "lessonId": "family-2",
+    "lessonName": "The Family 2",
+    "unitId": "family",
+    "unitName": "The Family",
+    "unitOrder": 5,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 16,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Youngest Child",
+      "Middle Child",
+      "Only Child",
+      "Stepmother",
+      "Stepfather",
+      "Family Dinner",
+      "Game Night",
+      "Road Trip",
+      "Holiday Gathering",
+      "Movie Night",
+      "Cooking Together",
+      "Bedtime Story",
+      "Morning Routine",
+      "Family Photo",
+      "Homework Help"
+    ],
+    "targetWordsArabic": [
+      "أصغر الأبناء",
+      "الابن الأوسط",
+      "ابن وحيد",
+      "زوجة الأب",
+      "زوج الأم",
+      "عشاء عائلي",
+      "ليلة ألعاب",
+      "رحلة برية بالسيارة",
+      "تجمع بمناسبة عطلة",
+      "ليلة فيلم",
+      "الطبخ معًا",
+      "قصة قبل النوم",
+      "مصطلح مرتبط بالموضوع يُسمّى «مورنينج رووتيني»",
+      "صورة عائلية",
+      "مصطلح مرتبط بالموضوع يُسمّى «هوميوورك هيلب»"
+    ],
+    "usage": {
+      "goal": "Talk about family members, family activities, and simple family values.",
+      "canDoStatement": "I can talk about family members, family activities, and simple family values",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Youngest Child", "Middle Child", "Only Child"],
+          "scenario": "Our family enjoys youngest child, middle child, and only child together.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Youngest Child", "Middle Child", "Only Child"],
+            "expectedAnswer": "Youngest Child"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: Our family enjoys youngest child, middle child, and only child together. Emphasize youngest child, middle child, and only child and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Stepmother", "Stepfather", "Family Dinner"],
+          "scenario": "Our family enjoys stepmother, stepfather, and family dinner together.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Stepmother", "Stepfather", "Family Dinner"],
+            "expectedAnswer": "Stepmother"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: Our family enjoys stepmother, stepfather, and family dinner together. Emphasize stepmother, stepfather, and family dinner and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Game Night", "Road Trip", "Holiday Gathering"],
+          "scenario": "Our family enjoys game night, road trip, and holiday gathering together.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Game Night", "Road Trip", "Holiday Gathering"],
+            "expectedAnswer": "Game Night"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: Our family enjoys game night, road trip, and holiday gathering together. Emphasize game night, road trip, and holiday gathering and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Movie Night", "Cooking Together", "Bedtime Story"],
+          "scenario": "Our family enjoys movie night, cooking together, and bedtime story together.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Movie Night", "Cooking Together", "Bedtime Story"],
+            "expectedAnswer": "Movie Night"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: Our family enjoys movie night, cooking together, and bedtime story together. Emphasize movie night, cooking together, and bedtime story and avoid clutter."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Morning Routine", "Family Photo", "Homework Help"],
+          "scenario": "Our family enjoys morning routine, family photo, and homework help together.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Morning Routine", "Family Photo", "Homework Help"],
+            "expectedAnswer": "Morning Routine"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: Our family enjoys morning routine, family photo, and homework help together. Emphasize morning routine, family photo, and homework help and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Family Mini Story",
+      "text": "Today we are at home with the family. We talk about youngest child, middle child, only child, and stepmother. Later, everyone spends time together and uses words like stepfather, family dinner, and game night. It is a simple family moment, and we practice the new words together. We also remember earlier words such as mother and father.",
+      "imageBrief": "One uncluttered the family scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Youngest Child"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Stepmother"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Game Night"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Movie Night"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Morning Routine"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Youngest Child"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Middle Child"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Family Dinner"
+      }
+    ],
+    "video": {
+      "title": "The Family: See It, Say It",
+      "idea": "30–50 second contextual video set in a home. Show youngest child, middle child, only child, stepmother, and stepfather naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see youngest child, middle child, and only child. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Mother, Father from family-1\n3 lesson(s) back: Disappointed, Upset from basic-emotions-2\n7 lesson(s) back: Prism, Cuboid from shapes-geometry-2"
+  },
+  {
+    "lessonId": "family-3",
+    "lessonName": "The Family 3",
+    "unitId": "family",
+    "unitName": "The Family",
+    "unitOrder": 5,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 17,
+    "cefrStage": "Pre-A1",
+    "stageName": "Pre-A1 Starter",
+    "targetWordsEnglish": [
+      "Love",
+      "Trust",
+      "Support",
+      "Care",
+      "Protection",
+      "Guidance",
+      "Discipline",
+      "Affection",
+      "Bond",
+      "Heritage"
+    ],
+    "targetWordsArabic": [
+      "شعور يُسمّى «لوفي»",
+      "جزء يُسمّى «تروست»",
+      "دعم",
+      "رعاية",
+      "حماية",
+      "توجيه",
+      "انضباط",
+      "شعور يُسمّى «اففيكتيون»",
+      "سند",
+      "تراث"
+    ],
+    "usage": {
+      "goal": "Talk about family members, family activities, and simple family values.",
+      "canDoStatement": "I can talk about family members, family activities, and simple family values",
+      "textType": "Mini story / visual reading",
+      "readingTarget": "35-60 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Love", "Trust", "Support"],
+          "scenario": "A strong family can show love, trust, and support.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Love", "Trust", "Support"],
+            "expectedAnswer": "Love"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: A strong family can show love, trust, and support. Emphasize love, trust, and support and avoid clutter."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Care", "Protection", "Guidance"],
+          "scenario": "A strong family can show care, protection, and guidance.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Care", "Protection", "Guidance"],
+            "expectedAnswer": "Care"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: A strong family can show care, protection, and guidance. Emphasize care, protection, and guidance and avoid clutter."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Discipline", "Affection", "Bond"],
+          "scenario": "A strong family can show discipline, affection, and bond.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": ["Discipline", "Affection", "Bond"],
+            "expectedAnswer": "Discipline"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: A strong family can show discipline, affection, and bond. Emphasize discipline, affection, and bond and avoid clutter."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": "Heritage",
+          "scenario": "A strong family can show heritage.",
+          "check": {
+            "question": "Which word is shown in the picture?",
+            "options": "Heritage",
+            "expectedAnswer": "Heritage"
+          },
+          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: A strong family can show heritage. Emphasize heritage and avoid clutter."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Family Mini Story",
+      "text": "Today we are at home with the family. We talk about love, trust, support, and care. Later, everyone spends time together and uses words like protection, guidance, and discipline. It is a simple family moment, and we practice the new words together. We also remember earlier words such as youngest child and middle child.",
+      "imageBrief": "One uncluttered the family scene supporting the reading and showing the first six target words."
+    },
+    "exercises": [
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Love"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Care"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Discipline"
+      },
+      {
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Heritage"
+      },
+      {
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Love"
+      },
+      {
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Trust"
+      },
+      {
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Guidance"
+      }
+    ],
+    "video": {
+      "title": "The Family: See It, Say It",
+      "idea": "30–50 second contextual video set in a home. Show love, trust, support, care, and protection naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Look closely. I can see love, trust, and support. What can you find next?"
+    },
+    "spacedReview": "1 lesson(s) back: Youngest Child, Middle Child from family-2\n3 lesson(s) back: Hungry, Thirsty from basic-emotions-3\n7 lesson(s) back: Area, Perimeter from shapes-geometry-3"
+  }
+]

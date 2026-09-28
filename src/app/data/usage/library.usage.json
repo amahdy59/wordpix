@@ -1,0 +1,646 @@
+﻿[
+  {
+    "lessonId": "library-1",
+    "lessonName": "The Library 1",
+    "unitId": "library",
+    "unitName": "The Library",
+    "unitOrder": 97,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 451,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Novel",
+      "Picture Book",
+      "Reference Book",
+      "Comic Book",
+      "Magazine",
+      "Newspaper",
+      "Encyclopedia",
+      "Atlas",
+      "Biography",
+      "Poetry Book",
+      "Bookshelf",
+      "Reading Table",
+      "Study Desk",
+      "Chair",
+      "Bean Bag"
+    ],
+    "targetWordsArabic": [
+      "رواية",
+      "كتاب مصوّر",
+      "كتاب مرجعي",
+      "كتاب قصص مصورة",
+      "مجلة",
+      "صحيفة",
+      "موسوعة",
+      "أطلس خرائط",
+      "سيرة شخص",
+      "كتاب شعر",
+      "رَفُّ الكُتُب / مَكْتَبَةٌ حَائِطِيَّة",
+      "طاولة قراءة",
+      "مكتب دراسة",
+      "كُرْسِيّ",
+      "مقعد مملوء بحبيبات"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Library to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the library vocabulary in connected everyday context.",
+      "textType": "email",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Novel", "Picture Book", "Reference Book"],
+          "scenario": "The student or researcher works with novel, picture book, and reference book. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Novel", "Picture Book", "Reference Book"],
+            "expectedAnswer": "Novel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with novel, picture book, and reference book. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Comic Book", "Magazine", "Newspaper"],
+          "scenario": "The student or researcher works with comic book, magazine, and newspaper. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Comic Book", "Magazine", "Newspaper"],
+            "expectedAnswer": "Comic Book"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with comic book, magazine, and newspaper. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Encyclopedia", "Atlas", "Biography"],
+          "scenario": "The student or researcher works with encyclopedia, atlas, and biography. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Encyclopedia", "Atlas", "Biography"],
+            "expectedAnswer": "Encyclopedia"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with encyclopedia, atlas, and biography. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Poetry Book", "Bookshelf", "Reading Table"],
+          "scenario": "The student or researcher works with poetry book, bookshelf, and reading table. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Poetry Book", "Bookshelf", "Reading Table"],
+            "expectedAnswer": "Poetry Book"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with poetry book, bookshelf, and reading table. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Study Desk", "Chair", "Bean Bag"],
+          "scenario": "The student or researcher works with study desk, chair, and bean bag. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Study Desk", "Chair", "Bean Bag"],
+            "expectedAnswer": "Study Desk"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with study desk, chair, and bean bag. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Library: Email",
+      "text": "Omar has an everyday task connected to the library. The new vocabulary helps him follow the situation and respond clearly. The student or researcher works with novel, picture book, and reference book. Each term supports a different part of study, research, or campus life. The student or researcher works with comic book, magazine, and newspaper. Each term supports a different part of study, research, or campus life. The student or researcher works with encyclopedia, atlas, and biography. Each term supports a different part of study, research, or campus life. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Library. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Novel"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Comic Book"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Encyclopedia"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Poetry Book"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Study Desk"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Novel"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Comic Book"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Timer” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Library: In Context",
+      "idea": "35-50 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Timer, Basket from laundromat-5\n3 lesson(s) back: Sort, Load from laundromat-3\n7 lesson(s) back: Breakfast Buffet, Shuttle from hotel-4"
+  },
+  {
+    "lessonId": "library-2",
+    "lessonName": "The Library 2",
+    "unitId": "library",
+    "unitName": "The Library",
+    "unitOrder": 97,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 452,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Step Stool",
+      "Cart",
+      "Lamp",
+      "Computer Desk",
+      "Armchair",
+      "Fiction",
+      "Non-Fiction",
+      "Children's Section",
+      "Reference Section",
+      "Periodicals",
+      "Media Center",
+      "Study Room",
+      "Return Desk",
+      "Help Desk",
+      "Archive"
+    ],
+    "targetWordsArabic": [
+      "مقعد صغير بدرجات",
+      "عربة",
+      "مِصْبَاح (أَبَاجُورَة)",
+      "مكتب حاسوب",
+      "كرسي بذراعين",
+      "أدب خيالي",
+      "كتب غير خيالية",
+      "قسم الأطفال",
+      "قسم المراجع",
+      "دوريات",
+      "مركز مصادر التعلم",
+      "غرفة دراسة",
+      "مكتب الإرجاع",
+      "مكتب المساعدة",
+      "أرشيف"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Library to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the library vocabulary in connected everyday context.",
+      "textType": "personal message",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Step Stool", "Cart", "Lamp"],
+          "scenario": "The student or researcher works with step stool, cart, and lamp. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Step Stool", "Cart", "Lamp"],
+            "expectedAnswer": "Step Stool"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with step stool, cart, and lamp. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Computer Desk", "Armchair", "Fiction"],
+          "scenario": "The student or researcher works with computer desk, armchair, and fiction. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Computer Desk", "Armchair", "Fiction"],
+            "expectedAnswer": "Computer Desk"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with computer desk, armchair, and fiction. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Non-Fiction", "Children's Section", "Reference Section"],
+          "scenario": "The student or researcher works with non-fiction, children's section, and reference section. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Non-Fiction", "Children's Section", "Reference Section"],
+            "expectedAnswer": "Non-Fiction"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with non-fiction, children's section, and reference section. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Periodicals", "Media Center", "Study Room"],
+          "scenario": "The student or researcher works with periodicals, media center, and study room. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Periodicals", "Media Center", "Study Room"],
+            "expectedAnswer": "Periodicals"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with periodicals, media center, and study room. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Return Desk", "Help Desk", "Archive"],
+          "scenario": "The student or researcher works with return desk, help desk, and archive. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Return Desk", "Help Desk", "Archive"],
+            "expectedAnswer": "Return Desk"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with return desk, help desk, and archive. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Library: Personal Message",
+      "text": "Omar has an everyday task connected to the library. The new vocabulary helps him follow the situation and respond clearly. The student or researcher works with step stool, cart, and lamp. Each term supports a different part of study, research, or campus life. The student or researcher works with computer desk, armchair, and fiction. Each term supports a different part of study, research, or campus life. The student or researcher works with non-fiction, children's section, and reference section. Each term supports a different part of study, research, or campus life. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Library. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Step Stool"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Computer Desk"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Non-Fiction"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Periodicals"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Return Desk"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Step Stool"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Computer Desk"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Novel” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Library: In Context",
+      "idea": "35-50 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Novel, Picture Book from library-1\n3 lesson(s) back: Clock, Sign from laundromat-4\n7 lesson(s) back: Bellhop, Checkout from hotel-5"
+  },
+  {
+    "lessonId": "library-3",
+    "lessonName": "The Library 3",
+    "unitId": "library",
+    "unitName": "The Library",
+    "unitOrder": 97,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 453,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Reading",
+      "Borrowing",
+      "Returning",
+      "Searching",
+      "Studying",
+      "Browsing",
+      "Reserving",
+      "Photocopying",
+      "Typing",
+      "Whispering",
+      "Library Card",
+      "Barcode Scanner",
+      "Stamp",
+      "Bookmark",
+      "Book Cover"
+    ],
+    "targetWordsArabic": [
+      "القراءة",
+      "استعارة الكتب",
+      "إرجاع الكتب",
+      "البحث",
+      "الدراسة",
+      "تصفّح الكتب",
+      "حجز الكتب",
+      "تصوير المستندات",
+      "الكتابة على لوحة المفاتيح",
+      "الهمس",
+      "بطاقة مكتبة",
+      "ماسح باركود",
+      "طابع",
+      "علامة كتاب",
+      "غلاف الكتاب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Library to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the library vocabulary in connected everyday context.",
+      "textType": "short dialogue",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Reading", "Borrowing", "Returning"],
+          "scenario": "The learner connects reading, borrowing, and returning to the main activity and explains what each term means in context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Reading", "Borrowing", "Returning"],
+            "expectedAnswer": "Reading"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner connects reading, borrowing, and returning to the main activity and explains what each term means in context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Searching", "Studying", "Browsing"],
+          "scenario": "The learner connects searching, studying, and browsing to the main activity and explains what each term means in context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Searching", "Studying", "Browsing"],
+            "expectedAnswer": "Searching"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner connects searching, studying, and browsing to the main activity and explains what each term means in context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Reserving", "Photocopying", "Typing"],
+          "scenario": "The student or researcher works with reserving, photocopying, and typing. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Reserving", "Photocopying", "Typing"],
+            "expectedAnswer": "Reserving"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with reserving, photocopying, and typing. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Whispering", "Library Card", "Barcode Scanner"],
+          "scenario": "The student or researcher works with whispering, library card, and barcode scanner. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Whispering", "Library Card", "Barcode Scanner"],
+            "expectedAnswer": "Whispering"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with whispering, library card, and barcode scanner. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Stamp", "Bookmark", "Book Cover"],
+          "scenario": "The student or researcher works with stamp, bookmark, and book cover. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Stamp", "Bookmark", "Book Cover"],
+            "expectedAnswer": "Stamp"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with stamp, bookmark, and book cover. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Library: Short Dialogue",
+      "text": "Omar has an everyday task connected to the library. The new vocabulary helps him follow the situation and respond clearly. The learner connects reading, borrowing, and returning to the main activity and explains what each term means in context. The learner connects searching, studying, and browsing to the main activity and explains what each term means in context. The student or researcher works with reserving, photocopying, and typing. Each term supports a different part of study, research, or campus life. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Library. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Reading"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Searching"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Reserving"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Whispering"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stamp"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Reading"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Searching"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Step Stool” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Library: In Context",
+      "idea": "35-50 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Step Stool, Cart from library-2\n3 lesson(s) back: Timer, Basket from laundromat-5\n7 lesson(s) back: Washing Machine, Dryer from laundromat-1"
+  },
+  {
+    "lessonId": "library-4",
+    "lessonName": "The Library 4",
+    "unitId": "library",
+    "unitName": "The Library",
+    "unitOrder": 97,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 454,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Label",
+      "Catalog",
+      "Computer",
+      "Printer",
+      "Scanner",
+      "Librarian",
+      "Assistant",
+      "Volunteer",
+      "Reader",
+      "Student",
+      "Researcher",
+      "Author",
+      "Storyteller",
+      "Guard",
+      "Cleaner"
+    ],
+    "targetWordsArabic": [
+      "علامة",
+      "فهرس المكتبة",
+      "حاسوب",
+      "طابعة",
+      "ماسح ضوئي",
+      "أمين مكتبة",
+      "مساعد المكتبة",
+      "متطوع",
+      "قارئ",
+      "طالب",
+      "باحث",
+      "مؤلف",
+      "راوي قصص",
+      "حارس",
+      "عامل نظافة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Library to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the library vocabulary in connected everyday context.",
+      "textType": "everyday description",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Label", "Catalog", "Computer"],
+          "scenario": "The student or researcher works with label, catalog, and computer. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Label", "Catalog", "Computer"],
+            "expectedAnswer": "Label"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with label, catalog, and computer. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Printer", "Scanner", "Librarian"],
+          "scenario": "The student or researcher works with printer, scanner, and librarian. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Printer", "Scanner", "Librarian"],
+            "expectedAnswer": "Printer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with printer, scanner, and librarian. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Assistant", "Volunteer", "Reader"],
+          "scenario": "The assistant, volunteer, and reader work together in the setting, but each person has a different responsibility.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Assistant", "Volunteer", "Reader"],
+            "expectedAnswer": "Assistant"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The assistant, volunteer, and reader work together in the setting, but each person has a different responsibility. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Student", "Researcher", "Author"],
+          "scenario": "The student, researcher, and author work together in the setting, but each person has a different responsibility.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Student", "Researcher", "Author"],
+            "expectedAnswer": "Student"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student, researcher, and author work together in the setting, but each person has a different responsibility. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Storyteller", "Guard", "Cleaner"],
+          "scenario": "The storyteller, guard, and cleaner work together in the setting, but each person has a different responsibility.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Storyteller", "Guard", "Cleaner"],
+            "expectedAnswer": "Storyteller"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The storyteller, guard, and cleaner work together in the setting, but each person has a different responsibility. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Library: Everyday Description",
+      "text": "Omar has an everyday task connected to the library. The new vocabulary helps him follow the situation and respond clearly. The student or researcher works with label, catalog, and computer. Each term supports a different part of study, research, or campus life. The student or researcher works with printer, scanner, and librarian. Each term supports a different part of study, research, or campus life. The assistant, volunteer, and reader work together in the setting, but each person has a different responsibility. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Library. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Label"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Printer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Assistant"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Student"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Storyteller"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Label"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Printer"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Reading” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Library: In Context",
+      "idea": "35-50 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Reading, Borrowing from library-3\n3 lesson(s) back: Novel, Picture Book from library-1\n7 lesson(s) back: Lint Roller, Clothespin from laundromat-2"
+  }
+]

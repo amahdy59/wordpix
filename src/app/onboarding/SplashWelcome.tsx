@@ -2,7 +2,7 @@ import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { useProgress } from "../data/progress";
-import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
+import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/courseCatalog";
 import { Sparkles, ArrowRight, BookOpen, Layers, CheckCircle2, Globe } from "lucide-react";
 import { useI18n } from "../context/I18nContext";
 

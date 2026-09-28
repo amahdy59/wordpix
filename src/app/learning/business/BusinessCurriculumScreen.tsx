@@ -20,6 +20,7 @@ import {
   type BusinessUnitProgress,
 } from "./businessTypes";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
+import { Button } from "../../shared";
 
 interface Props {
   dispatch: Dispatch<Action>;
@@ -130,16 +131,17 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
       className="h-full min-h-0 overflow-y-auto bg-background pb-24 overscroll-y-contain"
       aria-labelledby="business-curriculum-title"
     >
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 p-4 sm:p-8">
+      <div className="wp-container-content wp-layout-gutter flex flex-col gap-6 py-4 sm:py-8">
         {/* Back Button */}
-        <button
-          type="button"
+        <Button
+          variant="ghost"
+          size="sm"
           onClick={() => dispatch({ type: "GO", to: "explore" })}
-          className="inline-flex min-h-[44px] w-fit items-center gap-2 rounded-xl px-3 font-bold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="w-fit"
+          iconLeft={<ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />}
         >
-          <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
-          <span>{t("business.backToExplore")}</span>
-        </button>
+          {t("business.backToExplore")}
+        </Button>
 
         {/* Hero Section */}
         <header className="flex flex-col gap-4 rounded-3xl border border-border bg-gradient-to-br from-primary/10 via-card to-card p-6 sm:p-10 shadow-wp-sm">

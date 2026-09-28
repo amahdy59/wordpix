@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "mechanic-1",
+    "lessonName": "The Mechanic 1",
+    "unitId": "mechanic",
+    "unitName": "The Mechanic",
+    "unitOrder": 137,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 634,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Wrench",
+      "Screwdriver",
+      "Socket Set",
+      "Pliers",
+      "Jack",
+      "Torque Wrench",
+      "Hammer",
+      "Pry Bar",
+      "Multimeter",
+      "Drill",
+      "Engine",
+      "Tire",
+      "Brake Pad",
+      "Battery",
+      "Alternator"
+    ],
+    "targetWordsArabic": [
+      "مفتاح ربط",
+      "مفك براغي",
+      "أداة يُسمّى «سوكيت سيت»",
+      "كماشة",
+      "جهاز يُسمّى «جاك»",
+      "مصطلح مرتبط بالموضوع يُسمّى «توركي ورينتش»",
+      "أداة يُسمّى «هاممير»",
+      "أداة يُسمّى «بري بار»",
+      "ملتيميتر",
+      "مثقاب",
+      "محرك",
+      "إطار سيارة",
+      "مكان يُسمّى «براكي باد»",
+      "بطارية",
+      "مصطلح مرتبط بالموضوع يُسمّى «التيرناتور»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Mechanic to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the mechanic vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Wrench", "Screwdriver", "Socket Set", "Pliers"],
+          "scenario": "The technician checks wrench, screwdriver, socket set, and pliers before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Wrench", "Screwdriver", "Socket Set", "Pliers"],
+            "expectedAnswer": "Wrench"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks wrench, screwdriver, socket set, and pliers before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Jack", "Torque Wrench", "Hammer", "Pry Bar"],
+          "scenario": "The technician checks jack, torque wrench, hammer, and pry bar before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Jack", "Torque Wrench", "Hammer", "Pry Bar"],
+            "expectedAnswer": "Jack"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks jack, torque wrench, hammer, and pry bar before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Multimeter", "Drill", "Engine", "Tire"],
+          "scenario": "The technician checks multimeter, drill, engine, and tire before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Multimeter", "Drill", "Engine", "Tire"],
+            "expectedAnswer": "Multimeter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks multimeter, drill, engine, and tire before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Brake Pad", "Battery", "Alternator"],
+          "scenario": "The technician checks brake pad, battery, and alternator before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Brake Pad", "Battery", "Alternator"],
+            "expectedAnswer": "Brake Pad"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks brake pad, battery, and alternator before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Mechanic: Practical Article",
+      "text": "A practical situation involving the mechanic requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The technician checks wrench, screwdriver, socket set, and pliers before the work continues. Each item or process matters to the practical task. The technician checks jack, torque wrench, hammer, and pry bar before the work continues. Each item or process matters to the practical task. The technician checks multimeter, drill, engine, and tire before the work continues. Each item or process matters to the practical task. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Mechanic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Wrench"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Jack"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Multimeter"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Brake Pad"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Wrench"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Pliers"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “service window” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Mechanic: In Context",
+      "idea": "40-60 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: service window, PO box from post-office-4\n3 lesson(s) back: counter, scale from post-office-2\n7 lesson(s) back: Playlist, Jingle from radio-station-3"
+  },
+  {
+    "lessonId": "mechanic-2",
+    "lessonName": "The Mechanic 2",
+    "unitId": "mechanic",
+    "unitName": "The Mechanic",
+    "unitOrder": 137,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 635,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Radiator",
+      "Muffler",
+      "Spark Plug",
+      "Air Filter",
+      "Oil Filter",
+      "Transmission",
+      "Suspension",
+      "Exhaust",
+      "Cooling System",
+      "Steering",
+      "Fuel System",
+      "Electrical",
+      "Brakes",
+      "Drivetrain",
+      "Ac System"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «رادياتور»",
+      "جهاز يُسمّى «موففلير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سبارك بلوج»",
+      "يرشّح هواء",
+      "يرشّح زيت",
+      "ناقل حركة",
+      "جزء يُسمّى «سوسبينسيون»",
+      "عادم",
+      "جزء يُسمّى «كوولينج سيستيم»",
+      "سفينة يُسمّى «ستييرينج»",
+      "طائرة يُسمّى «فويل سيستيم»",
+      "أعمال كهربائية",
+      "مصطلح مرتبط بالموضوع يُسمّى «براكيس»",
+      "مجموعة نقل الحركة",
+      "نظام تكييف الهواء"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Mechanic to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the mechanic vocabulary to handle a practical situation and explain key details.",
+      "textType": "email",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Radiator", "Muffler", "Spark Plug", "Air Filter"],
+          "scenario": "The technician checks radiator, muffler, spark plug, and air filter before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Radiator", "Muffler", "Spark Plug", "Air Filter"],
+            "expectedAnswer": "Radiator"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks radiator, muffler, spark plug, and air filter before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Oil Filter", "Transmission", "Suspension", "Exhaust"],
+          "scenario": "The technician checks oil filter, transmission, suspension, and exhaust before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Oil Filter", "Transmission", "Suspension", "Exhaust"],
+            "expectedAnswer": "Oil Filter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks oil filter, transmission, suspension, and exhaust before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Cooling System", "Steering", "Fuel System", "Electrical"],
+          "scenario": "The technician checks cooling system, steering, fuel system, and electrical before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cooling System", "Steering", "Fuel System", "Electrical"],
+            "expectedAnswer": "Cooling System"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks cooling system, steering, fuel system, and electrical before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Brakes", "Drivetrain", "Ac System"],
+          "scenario": "The technician checks brakes, drivetrain, and ac system before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Brakes", "Drivetrain", "Ac System"],
+            "expectedAnswer": "Brakes"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks brakes, drivetrain, and ac system before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Mechanic: Email",
+      "text": "A practical situation involving the mechanic requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The technician checks radiator, muffler, spark plug, and air filter before the work continues. Each item or process matters to the practical task. The technician checks oil filter, transmission, suspension, and exhaust before the work continues. Each item or process matters to the practical task. The technician checks cooling system, steering, fuel system, and electrical before the work continues. Each item or process matters to the practical task. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Mechanic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Radiator"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Oil Filter"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cooling System"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Brakes"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Radiator"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Air Filter"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Wrench” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Mechanic: In Context",
+      "idea": "40-60 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Wrench, Screwdriver from mechanic-1\n3 lesson(s) back: courier, customer from post-office-3\n7 lesson(s) back: Traffic Reporter, Weather Presenter from radio-station-4"
+  },
+  {
+    "lessonId": "mechanic-3",
+    "lessonName": "The Mechanic 3",
+    "unitId": "mechanic",
+    "unitName": "The Mechanic",
+    "unitOrder": 137,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 636,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Lift",
+      "Diagnostic Scanner",
+      "Air Compressor",
+      "Creeper",
+      "Toolbox",
+      "Oil Drain",
+      "Tire Changer",
+      "Balancer",
+      "Welder",
+      "Grinder",
+      "Motor Oil",
+      "Coolant",
+      "Brake Fluid",
+      "Transmission Fluid",
+      "Grease"
+    ],
+    "targetWordsArabic": [
+      "يرفع",
+      "جهاز فحص تشخيصي",
+      "آلة يُسمّى «اير كومبريسسور»",
+      "طائر يُسمّى «كرييبير»",
+      "أداة يُسمّى «توولبوكس»",
+      "فتحة تصريف الزيت",
+      "آلة تغيير الإطارات",
+      "مصطلح مرتبط بالموضوع يُسمّى «بالانكير»",
+      "عامل يُسمّى «ويلدير»",
+      "مطحنة",
+      "زيت محرك",
+      "سائل تبريد",
+      "سائل الفرامل",
+      "سائل ناقل الحركة",
+      "آلة يُسمّى «جرياسي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Mechanic to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the mechanic vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Lift", "Diagnostic Scanner", "Air Compressor", "Creeper"],
+          "scenario": "The technician checks lift, diagnostic scanner, air compressor, and creeper before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lift", "Diagnostic Scanner", "Air Compressor", "Creeper"],
+            "expectedAnswer": "Lift"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks lift, diagnostic scanner, air compressor, and creeper before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Toolbox", "Oil Drain", "Tire Changer", "Balancer"],
+          "scenario": "The technician checks toolbox, oil drain, tire changer, and balancer before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Toolbox", "Oil Drain", "Tire Changer", "Balancer"],
+            "expectedAnswer": "Toolbox"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks toolbox, oil drain, tire changer, and balancer before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Welder", "Grinder", "Motor Oil", "Coolant"],
+          "scenario": "The technician checks welder, grinder, motor oil, and coolant before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Welder", "Grinder", "Motor Oil", "Coolant"],
+            "expectedAnswer": "Welder"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks welder, grinder, motor oil, and coolant before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Brake Fluid", "Transmission Fluid", "Grease"],
+          "scenario": "The technician checks brake fluid, transmission fluid, and grease before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Brake Fluid", "Transmission Fluid", "Grease"],
+            "expectedAnswer": "Brake Fluid"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks brake fluid, transmission fluid, and grease before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Mechanic: Review",
+      "text": "A practical situation involving the mechanic requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The technician checks lift, diagnostic scanner, air compressor, and creeper before the work continues. Each item or process matters to the practical task. The technician checks toolbox, oil drain, tire changer, and balancer before the work continues. Each item or process matters to the practical task. The technician checks welder, grinder, motor oil, and coolant before the work continues. Each item or process matters to the practical task. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Mechanic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lift"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Toolbox"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Welder"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Brake Fluid"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Lift"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Creeper"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Radiator” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Mechanic: In Context",
+      "idea": "40-60 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Radiator, Muffler from mechanic-2\n3 lesson(s) back: service window, PO box from post-office-4\n7 lesson(s) back: Turntable, Speaker from radio-station-5"
+  },
+  {
+    "lessonId": "mechanic-4",
+    "lessonName": "The Mechanic 4",
+    "unitId": "mechanic",
+    "unitName": "The Mechanic",
+    "unitOrder": 137,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 637,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Gasket",
+      "Bolt",
+      "Nut",
+      "Washer",
+      "Hose Clamp",
+      "Oil Change",
+      "Tire Rotation",
+      "Brake Repair",
+      "Tune Up",
+      "Alignment",
+      "Inspection",
+      "Bodywork",
+      "Paint Job",
+      "Tow Truck",
+      "Estimate"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «جاسكيت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بولت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «نوت»",
+      "غسالة",
+      "مشبك خرطوم",
+      "آلة يُسمّى «ويل تشانجي»",
+      "مركبة يُسمّى «تيري روتاتيون»",
+      "إصلاح الفرامل",
+      "مصطلح مرتبط بالموضوع يُسمّى «توني وب»",
+      "ضبط المحاذاة",
+      "فحص",
+      "مركبة يُسمّى «بوديوورك»",
+      "مبنى يُسمّى «باينت جوب»",
+      "مركبة يُسمّى «توو تروك»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يستيماتي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Mechanic to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the mechanic vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Gasket", "Bolt", "Nut", "Washer"],
+          "scenario": "The technician checks gasket, bolt, nut, and washer before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Gasket", "Bolt", "Nut", "Washer"],
+            "expectedAnswer": "Gasket"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks gasket, bolt, nut, and washer before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Hose Clamp", "Oil Change", "Tire Rotation", "Brake Repair"],
+          "scenario": "The technician checks hose clamp, oil change, tire rotation, and brake repair before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hose Clamp", "Oil Change", "Tire Rotation", "Brake Repair"],
+            "expectedAnswer": "Hose Clamp"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks hose clamp, oil change, tire rotation, and brake repair before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Tune Up", "Alignment", "Inspection", "Bodywork"],
+          "scenario": "The technician checks tune up, alignment, inspection, and bodywork before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tune Up", "Alignment", "Inspection", "Bodywork"],
+            "expectedAnswer": "Tune Up"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks tune up, alignment, inspection, and bodywork before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Paint Job", "Tow Truck", "Estimate"],
+          "scenario": "The technician checks paint job, tow truck, and estimate before the work continues. Each item or process matters to the practical task.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Paint Job", "Tow Truck", "Estimate"],
+            "expectedAnswer": "Paint Job"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks paint job, tow truck, and estimate before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Mechanic: Travel/Visitor Guide",
+      "text": "A practical situation involving the mechanic requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The technician checks gasket, bolt, nut, and washer before the work continues. Each item or process matters to the practical task. The technician checks hose clamp, oil change, tire rotation, and brake repair before the work continues. Each item or process matters to the practical task. The technician checks tune up, alignment, inspection, and bodywork before the work continues. Each item or process matters to the practical task. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Mechanic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gasket"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hose Clamp"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tune Up"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Paint Job"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Gasket"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Washer"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Lift” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Mechanic: In Context",
+      "idea": "40-60 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Lift, Diagnostic Scanner from mechanic-3\n3 lesson(s) back: Wrench, Screwdriver from mechanic-1\n7 lesson(s) back: letter, envelope from post-office-1"
+  }
+]

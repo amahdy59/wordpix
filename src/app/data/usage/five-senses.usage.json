@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "five-senses-1",
+    "lessonName": "The Five Senses 1",
+    "unitId": "five-senses",
+    "unitName": "The Five Senses",
+    "unitOrder": 102,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 475,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Vision",
+      "Eye",
+      "Pupil",
+      "Lens",
+      "Retina",
+      "Cornea",
+      "Optic Nerve",
+      "Color Vision",
+      "Depth Perception",
+      "Peripheral Vision",
+      "Sound",
+      "Ear",
+      "Eardrum",
+      "Cochlea",
+      "Pitch"
+    ],
+    "targetWordsArabic": [
+      "الرؤية",
+      "عين",
+      "بؤبؤ",
+      "عدسة",
+      "شبكية",
+      "قرنية",
+      "عصب بصري",
+      "الرؤية لون",
+      "إدراك عمق",
+      "الرؤية محيطي",
+      "صوت",
+      "أذن",
+      "طبلة الأذن",
+      "قوقعة الأذن",
+      "حدّة الصوت"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Five Senses to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the five senses vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Vision", "Eye", "Pupil", "Lens"],
+          "scenario": "The guide or scientist draws attention to vision, eye, pupil, and lens. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Vision", "Eye", "Pupil", "Lens"],
+            "expectedAnswer": "Vision"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to vision, eye, pupil, and lens. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Retina", "Cornea", "Optic Nerve", "Color Vision"],
+          "scenario": "The guide or scientist draws attention to retina, cornea, optic nerve, and color vision. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Retina", "Cornea", "Optic Nerve", "Color Vision"],
+            "expectedAnswer": "Retina"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to retina, cornea, optic nerve, and color vision. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Depth Perception", "Peripheral Vision", "Sound", "Ear"],
+          "scenario": "The guide or scientist draws attention to depth perception, peripheral vision, sound, and ear. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Depth Perception", "Peripheral Vision", "Sound", "Ear"],
+            "expectedAnswer": "Depth Perception"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to depth perception, peripheral vision, sound, and ear. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Eardrum", "Cochlea", "Pitch"],
+          "scenario": "The guide or scientist draws attention to eardrum, cochlea, and pitch. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Eardrum", "Cochlea", "Pitch"],
+            "expectedAnswer": "Eardrum"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to eardrum, cochlea, and pitch. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Five Senses: Travel/Visitor Guide",
+      "text": "A practical situation involving the five senses requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to vision, eye, pupil, and lens. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to retina, cornea, optic nerve, and color vision. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to depth perception, peripheral vision, sound, and ear. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Five Senses. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Vision"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Retina"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Depth Perception"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Eardrum"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Vision"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Lens"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “harmony” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Five Senses: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: harmony, dynamics from music-room-4\n3 lesson(s) back: oboe, bassoon from music-room-2\n7 lesson(s) back: Brush Tool, Layer from photography-studio-4"
+  },
+  {
+    "lessonId": "five-senses-2",
+    "lessonName": "The Five Senses 2",
+    "unitId": "five-senses",
+    "unitName": "The Five Senses",
+    "unitOrder": 102,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 476,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Volume",
+      "Frequency",
+      "Echo",
+      "Vibration",
+      "Auditory Nerve",
+      "Nose",
+      "Nostril",
+      "Olfactory",
+      "Aroma",
+      "Fragrance",
+      "Odor",
+      "Scent",
+      "Stench",
+      "Pungent",
+      "Nasal Cavity"
+    ],
+    "targetWordsArabic": [
+      "شدة الصوت",
+      "تردد",
+      "صدى",
+      "اهتزاز",
+      "عصب سمعي",
+      "أنف",
+      "فتحة الأنف",
+      "شَمّي",
+      "رائحة عطرية",
+      "عِطر",
+      "رائحة",
+      "رائحة",
+      "رائحة كريهة",
+      "نفّاذ",
+      "تجويف أنفي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Five Senses to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the five senses vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Volume", "Frequency", "Echo", "Vibration"],
+          "scenario": "The guide or scientist draws attention to volume, frequency, echo, and vibration. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Volume", "Frequency", "Echo", "Vibration"],
+            "expectedAnswer": "Volume"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to volume, frequency, echo, and vibration. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Auditory Nerve", "Nose", "Nostril", "Olfactory"],
+          "scenario": "The guide or scientist draws attention to auditory nerve, nose, nostril, and olfactory. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Auditory Nerve", "Nose", "Nostril", "Olfactory"],
+            "expectedAnswer": "Auditory Nerve"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to auditory nerve, nose, nostril, and olfactory. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Aroma", "Fragrance", "Odor", "Scent"],
+          "scenario": "The guide or scientist draws attention to aroma, fragrance, odor, and scent. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Aroma", "Fragrance", "Odor", "Scent"],
+            "expectedAnswer": "Aroma"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to aroma, fragrance, odor, and scent. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Stench", "Pungent", "Nasal Cavity"],
+          "scenario": "The guide or scientist draws attention to stench, pungent, and nasal cavity. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Stench", "Pungent", "Nasal Cavity"],
+            "expectedAnswer": "Stench"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to stench, pungent, and nasal cavity. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Five Senses: Review",
+      "text": "A practical situation involving the five senses requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to volume, frequency, echo, and vibration. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to auditory nerve, nose, nostril, and olfactory. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to aroma, fragrance, odor, and scent. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Five Senses. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Volume"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Auditory Nerve"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Aroma"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stench"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Volume"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Vibration"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Vision” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Five Senses: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Vision, Eye from five-senses-1\n3 lesson(s) back: piano, keyboard from music-room-3\n7 lesson(s) back: Camera, Light Box from photography-studio-5"
+  },
+  {
+    "lessonId": "five-senses-3",
+    "lessonName": "The Five Senses 3",
+    "unitId": "five-senses",
+    "unitName": "The Five Senses",
+    "unitOrder": 102,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 477,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Tongue",
+      "Taste Bud",
+      "Sweet",
+      "Sour",
+      "Salty",
+      "Bitter",
+      "Umami",
+      "Flavor",
+      "Palate",
+      "Savor",
+      "Skin",
+      "Nerve Ending",
+      "Pressure",
+      "Temperature",
+      "Texture"
+    ],
+    "targetWordsArabic": [
+      "لسان",
+      "برعم تذوق",
+      "حلو",
+      "حامض",
+      "مالح",
+      "مُرّ",
+      "أومامي",
+      "نكهة",
+      "حنك",
+      "يتذوّق",
+      "جلد",
+      "نهاية عصبية",
+      "ضغط",
+      "درجة الحرارة",
+      "ملمس"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Five Senses to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the five senses vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Tongue", "Taste Bud", "Sweet", "Sour"],
+          "scenario": "The guide or scientist draws attention to tongue, taste bud, sweet, and sour. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tongue", "Taste Bud", "Sweet", "Sour"],
+            "expectedAnswer": "Tongue"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to tongue, taste bud, sweet, and sour. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Salty", "Bitter", "Umami", "Flavor"],
+          "scenario": "The guide or scientist draws attention to salty, bitter, umami, and flavor. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Salty", "Bitter", "Umami", "Flavor"],
+            "expectedAnswer": "Salty"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to salty, bitter, umami, and flavor. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Palate", "Savor", "Skin", "Nerve Ending"],
+          "scenario": "The guide or scientist draws attention to palate, savor, skin, and nerve ending. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Palate", "Savor", "Skin", "Nerve Ending"],
+            "expectedAnswer": "Palate"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to palate, savor, skin, and nerve ending. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Pressure", "Temperature", "Texture"],
+          "scenario": "The guide or scientist draws attention to pressure, temperature, and texture. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pressure", "Temperature", "Texture"],
+            "expectedAnswer": "Pressure"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to pressure, temperature, and texture. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Five Senses: Practical Article",
+      "text": "A practical situation involving the five senses requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to tongue, taste bud, sweet, and sour. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to salty, bitter, umami, and flavor. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to palate, savor, skin, and nerve ending. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Five Senses. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tongue"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Salty"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Palate"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pressure"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Tongue"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Sour"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Volume” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Five Senses: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Volume, Frequency from five-senses-2\n3 lesson(s) back: harmony, dynamics from music-room-4\n7 lesson(s) back: Portfolio, Gallery from photography-studio-6"
+  },
+  {
+    "lessonId": "five-senses-4",
+    "lessonName": "The Five Senses 4",
+    "unitId": "five-senses",
+    "unitName": "The Five Senses",
+    "unitOrder": 102,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 478,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Pain",
+      "Tickle",
+      "Itch",
+      "Smooth",
+      "Rough",
+      "Bright",
+      "Loud",
+      "Fragrant",
+      "Delicious",
+      "Soft",
+      "Dark",
+      "Quiet",
+      "Stinky",
+      "Bland",
+      "Hard"
+    ],
+    "targetWordsArabic": [
+      "ألم",
+      "دغدغة",
+      "حكّة",
+      "ناعم",
+      "خشن",
+      "ساطع",
+      "مرتفع الصوت",
+      "عَطِر",
+      "لذيذ",
+      "طري",
+      "داكن",
+      "هادئ",
+      "كريه الرائحة",
+      "عديم النكهة",
+      "صلب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Five Senses to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the five senses vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Pain", "Tickle", "Itch", "Smooth"],
+          "scenario": "The guide or scientist draws attention to pain, tickle, itch, and smooth. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pain", "Tickle", "Itch", "Smooth"],
+            "expectedAnswer": "Pain"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to pain, tickle, itch, and smooth. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Rough", "Bright", "Loud", "Fragrant"],
+          "scenario": "The guide or scientist draws attention to rough, bright, loud, and fragrant. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Rough", "Bright", "Loud", "Fragrant"],
+            "expectedAnswer": "Rough"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to rough, bright, loud, and fragrant. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Delicious", "Soft", "Dark", "Quiet"],
+          "scenario": "The guide or scientist draws attention to delicious, soft, dark, and quiet. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Delicious", "Soft", "Dark", "Quiet"],
+            "expectedAnswer": "Delicious"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to delicious, soft, dark, and quiet. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Stinky", "Bland", "Hard"],
+          "scenario": "The guide or scientist draws attention to stinky, bland, and hard. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Stinky", "Bland", "Hard"],
+            "expectedAnswer": "Stinky"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to stinky, bland, and hard. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Five Senses: Real-Life Scenario",
+      "text": "A practical situation involving the five senses requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to pain, tickle, itch, and smooth. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to rough, bright, loud, and fragrant. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to delicious, soft, dark, and quiet. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Five Senses. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pain"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rough"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Delicious"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stinky"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Pain"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Smooth"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Tongue” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Five Senses: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Tongue, Taste Bud from five-senses-3\n3 lesson(s) back: Vision, Eye from five-senses-1\n7 lesson(s) back: guitar, violin from music-room-1"
+  }
+]

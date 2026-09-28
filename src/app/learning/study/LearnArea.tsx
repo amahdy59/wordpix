@@ -5,14 +5,13 @@ import type { UnitLearningMaterials } from "../types";
 import { getWords } from "../../data/vocabulary";
 import { WordImage } from "../../shared/WordImage";
 import { useAudio } from "../../shared/useAudio";
-// Type-only: erased at compile time, so the word list paints before the
-// 1.6 MB dictionary is parsed. Glosses and example flags enhance in place
-// once the module arrives via dynamic import() below.
+// Unit fields paint first; dictionary shards enhance only this lesson's words.
 import type { LexiconEntry } from "../../data/lexiconDictionary";
 import { WordInspectorModal } from "../../shared/WordInspectorModal";
 import { Select } from "../../shared/Select";
 import type { VocabularyItem } from "../../data/lessons";
 import { useI18n } from "../../../i18n";
+import { useLexicon } from "../../shared/useLexicon";
 
 interface Props {
   node: StudyNode;
@@ -41,28 +40,7 @@ export function LearnArea({
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<"all" | StudyWordStatus>("all");
   const [announcement, setAnnouncement] = useState("");
-  // Dictionary arrives on demand; the list renders from unit fields first
-  // and glosses enhance in place once the module resolves.
-  const [lexicon, setLexicon] = useState<typeof import("../../data/lexiconDictionary") | null>(
-    null
-  );
-  const [lexiconFailed, setLexiconFailed] = useState(false);
-  const [lexiconRetry, setLexiconRetry] = useState(0);
-
-  useEffect(() => {
-    let cancelled = false;
-    import("../../data/lexiconDictionary").then(
-      (mod) => {
-        if (!cancelled) setLexicon(mod);
-      },
-      () => {
-        if (!cancelled) setLexiconFailed(true);
-      }
-    );
-    return () => {
-      cancelled = true;
-    };
-  }, [lexiconRetry]);
+  const { lexicon, lexiconFailed, retryLexicon } = useLexicon(words.map((word) => word.id));
   const { speak, stop, isPlaying } = useAudio({
     lang: "en-US",
     rate: 0.95,
@@ -112,7 +90,7 @@ export function LearnArea({
     return <p className="p-8 text-center text-muted-foreground">{t("study.noVocabFound")}</p>;
 
   return (
-    <div className="w-full max-w-7xl mx-auto p-4 md:p-6 flex flex-col gap-5">
+    <div className="wp-container-wide wp-layout-gutter flex flex-col gap-5 py-4 md:py-6">
       <header className="flex flex-col sm:flex-row sm:items-end gap-3 justify-between">
         <div>
           <p className="text-xs font-bold uppercase tracking-wider text-primary flex items-center gap-2">
@@ -174,10 +152,7 @@ export function LearnArea({
           </p>
           <button
             type="button"
-            onClick={() => {
-              setLexiconFailed(false);
-              setLexiconRetry((count) => count + 1);
-            }}
+            onClick={retryLexicon}
             className="min-h-[44px] px-4 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             {t("action.tryAgain")}

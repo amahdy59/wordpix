@@ -1,4 +1,4 @@
-import { BEDROOM_VOCABULARY } from "../../data/lessons";
+import { BEDROOM_VOCABULARY } from "../../data/courseCatalog";
 import type { ExerciseDefinition } from "../taskTypes";
 
 const word = (id: string) => BEDROOM_VOCABULARY.find((w) => w.id === id)!;
@@ -34,15 +34,15 @@ export const SPEAKING_EXERCISES: Record<string, ExerciseDefinition> = {
           { id: "need", label: "I need pillow now." },
         ],
         explanation:
-          "\"Could I please have…\" softens a request. \"I want\" and \"Give me\" are direct to the point of rudeness, and the last drops the article.",
+          '"Could I please have…" softens a request. "I want" and "Give me" are direct to the point of rudeness, and the last drops the article.',
       },
       {
         id: "say-it",
         kind: "practice",
         prompt: "Now say your request aloud to the receptionist.",
         guidance: [
-          "Open with \"Excuse me\" before the request.",
-          "Use \"Could I please have…\".",
+          'Open with "Excuse me" before the request.',
+          'Use "Could I please have…".',
           "Name the item clearly: an extra pillow.",
         ],
         explanation: "Politeness in English is carried by the sentence frame more than by tone.",
@@ -90,7 +90,7 @@ export const SPEAKING_EXERCISES: Record<string, ExerciseDefinition> = {
           { id: "have", label: "You have lamp?" },
           { id: "buying", label: "Lamp buying me." },
         ],
-        explanation: "\"I would like to buy…\" is the standard frame for a purchase.",
+        explanation: '"I would like to buy…" is the standard frame for a purchase.',
       },
       {
         id: "roleplay",
@@ -101,7 +101,8 @@ export const SPEAKING_EXERCISES: Record<string, ExerciseDefinition> = {
           "State what you want to buy.",
           "Ask one follow-up question, such as the price.",
         ],
-        explanation: "Real exchanges are three or four turns; practising only the first turn is not enough.",
+        explanation:
+          "Real exchanges are three or four turns; practising only the first turn is not enough.",
       },
     ],
   },
@@ -124,7 +125,7 @@ export const SPEAKING_EXERCISES: Record<string, ExerciseDefinition> = {
           { id: "most", label: "The wardrobe is the most tall of the nightstand." },
         ],
         explanation:
-          "Short adjectives take -er, not \"more\": taller, not \"more tall\". Superlatives need \"the … -est\" and at least three things.",
+          'Short adjectives take -er, not "more": taller, not "more tall". Superlatives need "the … -est" and at least three things.',
       },
       {
         id: "compare-speak",
@@ -152,14 +153,14 @@ export const SPEAKING_EXERCISES: Record<string, ExerciseDefinition> = {
         id: "chain-1",
         kind: "entry",
         prompt:
-          "Word chain: the next word must start with the last letter of \"pillow\". Type a bedroom word starting with W.",
+          'Word chain: the next word must start with the last letter of "pillow". Type a bedroom word starting with W.',
         accept: [word("wardrobe").label, word("window").label],
-        explanation: "\"Pillow\" ends in W, so wardrobe or window both continue the chain.",
+        explanation: '"Pillow" ends in W, so wardrobe or window both continue the chain.',
       },
       {
         id: "chain-2",
         kind: "entry",
-        prompt: "\"Wardrobe\" ends in E. Type a bedroom word starting with E… or with D, from \"bed\".",
+        prompt: '"Wardrobe" ends in E. Type a bedroom word starting with E… or with D, from "bed".',
         accept: ["desk", "duvet", "door", "dresser"],
         explanation:
           "Few bedroom words start with E, so the chain usually restarts from another word's final letter.",
@@ -177,9 +178,9 @@ export const SPEAKING_EXERCISES: Record<string, ExerciseDefinition> = {
       {
         id: "repair-1",
         kind: "entry",
-        prompt: "Fix this sentence: \"The woman is go to bed.\" Type the corrected verb form.",
+        prompt: 'Fix this sentence: "The woman is go to bed." Type the corrected verb form.',
         accept: ["going", "is going", "going to bed"],
-        explanation: "The present continuous needs \"is\" plus the -ing form: \"is going\".",
+        explanation: 'The present continuous needs "is" plus the -ing form: "is going".',
       },
       {
         id: "repair-2",
@@ -217,7 +218,7 @@ export const WRITING_EXERCISES: Record<string, ExerciseDefinition> = {
         prompt: "Build a caption for this picture.",
         imageWordId: "bed",
         solution: ["The", "bed", "is", "soft", "and", "clean"],
-        explanation: "English word order is subject, verb, then the adjectives joined by \"and\".",
+        explanation: 'English word order is subject, verb, then the adjectives joined by "and".',
       },
     ],
   },
@@ -242,7 +243,7 @@ export const WRITING_EXERCISES: Record<string, ExerciseDefinition> = {
         kind: "order",
         prompt: "Arrange these words into a correct sentence.",
         solution: ["She", "hung", "her", "coat", "in", "the", "wardrobe"],
-        explanation: "Past tense \"hung\", then the object, then where it went.",
+        explanation: 'Past tense "hung", then the object, then where it went.',
       },
     ],
   },
@@ -311,16 +312,16 @@ export const WRITING_EXERCISES: Record<string, ExerciseDefinition> = {
       {
         id: "was-were",
         kind: "entry",
-        prompt: "Correct the verb: \"The students was studying furniture vocabulary.\"",
+        prompt: 'Correct the verb: "The students was studying furniture vocabulary."',
         accept: ["were", "were studying"],
-        explanation: "\"Students\" is plural, so it takes \"were\".",
+        explanation: '"Students" is plural, so it takes "were".',
       },
       {
         id: "article",
         kind: "entry",
-        prompt: "Correct the article: \"She bought a umbrella for the rain.\"",
+        prompt: 'Correct the article: "She bought a umbrella for the rain."',
         accept: ["an", "an umbrella"],
-        explanation: "\"Umbrella\" starts with a vowel sound, so it takes \"an\".",
+        explanation: '"Umbrella" starts with a vowel sound, so it takes "an".',
       },
     ],
   },
@@ -336,9 +337,9 @@ export const WRITING_EXERCISES: Record<string, ExerciseDefinition> = {
         id: "para-1",
         kind: "entry",
         prompt:
-          "Rewrite using one word: \"The athlete was very tired after the marathon.\" Type the word that replaces \"very tired\".",
+          'Rewrite using one word: "The athlete was very tired after the marathon." Type the word that replaces "very tired".',
         accept: ["exhausted"],
-        explanation: "\"Exhausted\" carries \"very tired\" in a single word.",
+        explanation: '"Exhausted" carries "very tired" in a single word.',
       },
       {
         id: "para-2",
@@ -366,7 +367,7 @@ export const WRITING_EXERCISES: Record<string, ExerciseDefinition> = {
       {
         id: "connector",
         kind: "choice",
-        prompt: "\"She woke up early. ______ she opened the curtains.\" Which connector fits?",
+        prompt: '"She woke up early. ______ she opened the curtains." Which connector fits?',
         options: [
           { id: "then", label: "Then", correct: true },
           { id: "however", label: "However" },
@@ -374,7 +375,7 @@ export const WRITING_EXERCISES: Record<string, ExerciseDefinition> = {
           { id: "although", label: "Although" },
         ],
         explanation:
-          "\"Then\" marks the next event in a sequence. The others signal contrast or cause, which does not fit here.",
+          '"Then" marks the next event in a sequence. The others signal contrast or cause, which does not fit here.',
       },
       {
         id: "story",

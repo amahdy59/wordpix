@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "cinema-1",
+    "lessonName": "L7 Cinema 1",
+    "unitId": "cinema",
+    "unitName": "L7 Cinema",
+    "unitOrder": 126,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 581,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "screen",
+      "auditorium",
+      "lobby",
+      "box office",
+      "concession stand",
+      "hallway",
+      "emergency exit",
+      "projection room",
+      "restroom",
+      "parking lot",
+      "seat",
+      "row",
+      "aisle",
+      "armrest",
+      "cup holder"
+    ],
+    "targetWordsArabic": [
+      "شاشة",
+      "قاعة محاضرات",
+      "ردهة",
+      "شباك التذاكر",
+      "منضدة الوجبات الخفيفة",
+      "ممر",
+      "مخرج طوارئ",
+      "غرفة العرض",
+      "دورة مياه",
+      "موقف سيارات",
+      "مقعد",
+      "صف",
+      "ممر",
+      "مسند ذراع",
+      "حامل أكواب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L7 Cinema to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l7 cinema vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["screen", "auditorium", "lobby", "box office"],
+          "scenario": "During the creative session, the group works with screen, auditorium, lobby, and box office. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["screen", "auditorium", "lobby", "box office"],
+            "expectedAnswer": "screen"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with screen, auditorium, lobby, and box office. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["concession stand", "hallway", "emergency exit", "projection room"],
+          "scenario": "During the creative session, the group works with concession stand, hallway, emergency exit, and projection room. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["concession stand", "hallway", "emergency exit", "projection room"],
+            "expectedAnswer": "concession stand"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with concession stand, hallway, emergency exit, and projection room. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["restroom", "parking lot", "seat", "row"],
+          "scenario": "During the creative session, the group works with restroom, parking lot, seat, and row. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["restroom", "parking lot", "seat", "row"],
+            "expectedAnswer": "restroom"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with restroom, parking lot, seat, and row. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["aisle", "armrest", "cup holder"],
+          "scenario": "During the creative session, the group works with aisle, armrest, and cup holder. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["aisle", "armrest", "cup holder"],
+            "expectedAnswer": "aisle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with aisle, armrest, and cup holder. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L7 Cinema: Travel/Visitor Guide",
+      "text": "A practical situation involving l7 cinema requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with screen, auditorium, lobby, and box office. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with concession stand, hallway, emergency exit, and projection room. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with restroom, parking lot, seat, and row. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Cinema. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "screen"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "concession stand"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "restroom"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "aisle"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "screen"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "box office"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Podium” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L7 Cinema: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Podium, Symphony from orchestra-5\n3 lesson(s) back: Drum, Snare Drum from orchestra-3\n7 lesson(s) back: Sound Technician, Costume Designer from theater-4"
+  },
+  {
+    "lessonId": "cinema-2",
+    "lessonName": "L7 Cinema 2",
+    "unitId": "cinema",
+    "unitName": "L7 Cinema",
+    "unitOrder": 126,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 582,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "3D glasses",
+      "recliner",
+      "balcony",
+      "front row",
+      "back row",
+      "popcorn",
+      "soda",
+      "nachos",
+      "candy",
+      "hot dog",
+      "ice cream",
+      "pretzel",
+      "slushie",
+      "water bottle",
+      "combo meal"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «3د جلاسسيس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ريكلينير»",
+      "شرفة",
+      "غرفة يُسمّى «فرونت روو»",
+      "الصف الخلفي",
+      "فشار",
+      "مشروب غازي",
+      "مصطلح مرتبط بالموضوع يُسمّى «ناتشوس»",
+      "حلوى",
+      "هوت دوغ؛ نقانق في خبز",
+      "كريمة ثلج",
+      "بريتزل",
+      "مشروب سلاش مثلج",
+      "زجاجة ماء",
+      "وجبة كومبو"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L7 Cinema to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l7 cinema vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["3D glasses", "recliner", "balcony", "front row"],
+          "scenario": "During the creative session, the group works with 3d glasses, recliner, balcony, and front row. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["3D glasses", "recliner", "balcony", "front row"],
+            "expectedAnswer": "3D glasses"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with 3d glasses, recliner, balcony, and front row. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["back row", "popcorn", "soda", "nachos"],
+          "scenario": "During the creative session, the group works with back row, popcorn, soda, and nachos. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["back row", "popcorn", "soda", "nachos"],
+            "expectedAnswer": "back row"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with back row, popcorn, soda, and nachos. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["candy", "hot dog", "ice cream", "pretzel"],
+          "scenario": "During the creative session, the group works with candy, hot dog, ice cream, and pretzel. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["candy", "hot dog", "ice cream", "pretzel"],
+            "expectedAnswer": "candy"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with candy, hot dog, ice cream, and pretzel. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["slushie", "water bottle", "combo meal"],
+          "scenario": "During the creative session, the group works with slushie, water bottle, and combo meal. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["slushie", "water bottle", "combo meal"],
+            "expectedAnswer": "slushie"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with slushie, water bottle, and combo meal. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L7 Cinema: Review",
+      "text": "A practical situation involving l7 cinema requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with 3d glasses, recliner, balcony, and front row. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with back row, popcorn, soda, and nachos. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with candy, hot dog, ice cream, and pretzel. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Cinema. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "3D glasses"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "back row"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "candy"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "slushie"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "3D glasses"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "front row"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “screen” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L7 Cinema: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: screen, auditorium from cinema-1\n3 lesson(s) back: Sheet Music, Score from orchestra-4\n7 lesson(s) back: Wing, Orchestra Pit from theater-5"
+  },
+  {
+    "lessonId": "cinema-3",
+    "lessonName": "L7 Cinema 3",
+    "unitId": "cinema",
+    "unitName": "L7 Cinema",
+    "unitOrder": 126,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 583,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "movie",
+      "trailer",
+      "credits",
+      "director",
+      "actor",
+      "actress",
+      "scene",
+      "soundtrack",
+      "subtitle",
+      "animation",
+      "comedy",
+      "drama",
+      "action",
+      "horror",
+      "romance"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «موفيي»",
+      "مقطورة",
+      "مصطلح مرتبط بالموضوع يُسمّى «كريديتس»",
+      "مخرج",
+      "ممثل",
+      "ممثلة",
+      "مشهد",
+      "مصطلح مرتبط بالموضوع يُسمّى «سووندتراك»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سوبتيتلي»",
+      "رسوم متحركة",
+      "مصطلح مرتبط بالموضوع يُسمّى «كوميدي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «دراما»",
+      "فعل",
+      "مصطلح مرتبط بالموضوع يُسمّى «هوررور»",
+      "مصطلح مرتبط بالموضوع يُسمّى «رومانكي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L7 Cinema to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l7 cinema vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["movie", "trailer", "credits", "director"],
+          "scenario": "During the creative session, the group works with movie, trailer, credits, and director. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["movie", "trailer", "credits", "director"],
+            "expectedAnswer": "movie"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with movie, trailer, credits, and director. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["actor", "actress", "scene", "soundtrack"],
+          "scenario": "During the creative session, the group works with actor, actress, scene, and soundtrack. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["actor", "actress", "scene", "soundtrack"],
+            "expectedAnswer": "actor"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with actor, actress, scene, and soundtrack. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["subtitle", "animation", "comedy", "drama"],
+          "scenario": "During the creative session, the group works with subtitle, animation, comedy, and drama. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["subtitle", "animation", "comedy", "drama"],
+            "expectedAnswer": "subtitle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with subtitle, animation, comedy, and drama. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["action", "horror", "romance"],
+          "scenario": "During the creative session, the group works with action, horror, and romance. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["action", "horror", "romance"],
+            "expectedAnswer": "action"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with action, horror, and romance. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L7 Cinema: Practical Article",
+      "text": "A practical situation involving l7 cinema requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with movie, trailer, credits, and director. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with actor, actress, scene, and soundtrack. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with subtitle, animation, comedy, and drama. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Cinema. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "movie"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "actor"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "subtitle"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "action"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "movie"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "director"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “3D glasses” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L7 Cinema: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: 3D glasses, recliner from cinema-2\n3 lesson(s) back: Podium, Symphony from orchestra-5\n7 lesson(s) back: Violin, Viola from orchestra-1"
+  },
+  {
+    "lessonId": "cinema-4",
+    "lessonName": "L7 Cinema 4",
+    "unitId": "cinema",
+    "unitName": "L7 Cinema",
+    "unitOrder": 126,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 584,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "thriller",
+      "documentary",
+      "fantasy",
+      "science fiction",
+      "musical",
+      "ticket",
+      "showtime",
+      "premiere",
+      "poster",
+      "marquee",
+      "rating",
+      "review",
+      "audience",
+      "applause",
+      "intermission"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «ثريللير»",
+      "وثيقة يُسمّى «دوكومينتاري»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فانتاسي»",
+      "خيال علمي",
+      "مصطلح مرتبط بالموضوع يُسمّى «موسيكال»",
+      "تذكرة",
+      "مصطلح مرتبط بالموضوع يُسمّى «شووتيمي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بريمييري»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بوستير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ماركيي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «راتينج»",
+      "مراجعة",
+      "جمهور",
+      "مصطلح مرتبط بالموضوع يُسمّى «اببلاوسي»",
+      "استراحة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L7 Cinema to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l7 cinema vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["thriller", "documentary", "fantasy", "science fiction"],
+          "scenario": "During the creative session, the group works with thriller, documentary, fantasy, and science fiction. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["thriller", "documentary", "fantasy", "science fiction"],
+            "expectedAnswer": "thriller"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with thriller, documentary, fantasy, and science fiction. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["musical", "ticket", "showtime", "premiere"],
+          "scenario": "During the creative session, the group works with musical, ticket, showtime, and premiere. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["musical", "ticket", "showtime", "premiere"],
+            "expectedAnswer": "musical"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with musical, ticket, showtime, and premiere. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["poster", "marquee", "rating", "review"],
+          "scenario": "During the creative session, the group works with poster, marquee, rating, and review. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["poster", "marquee", "rating", "review"],
+            "expectedAnswer": "poster"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with poster, marquee, rating, and review. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["audience", "applause", "intermission"],
+          "scenario": "During the creative session, the group works with audience, applause, and intermission. Each term has a clear role in making, performing, or presenting the work.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["audience", "applause", "intermission"],
+            "expectedAnswer": "audience"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the creative session, the group works with audience, applause, and intermission. Each term has a clear role in making, performing, or presenting the work. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L7 Cinema: Real-Life Scenario",
+      "text": "A practical situation involving l7 cinema requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. During the creative session, the group works with thriller, documentary, fantasy, and science fiction. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with musical, ticket, showtime, and premiere. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with poster, marquee, rating, and review. Each term has a clear role in making, performing, or presenting the work. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Cinema. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "thriller"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "musical"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "poster"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "audience"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "thriller"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "science fiction"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “movie” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L7 Cinema: In Context",
+      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: movie, trailer from cinema-3\n3 lesson(s) back: screen, auditorium from cinema-1\n7 lesson(s) back: Recorder, Saxophone from orchestra-2"
+  }
+]

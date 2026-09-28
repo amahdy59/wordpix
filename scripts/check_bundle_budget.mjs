@@ -4,17 +4,15 @@ import path from "node:path";
 const assetsDir = path.resolve("dist/assets");
 const files = (await readdir(assetsDir)).filter((file) => file.endsWith(".js"));
 const budgets = [
-  { pattern: /^index-/, limit: 900 * 1024, label: "initial runtime" },
-  {
-    pattern:
-      /^(?!index-)(?!conversation-units)(?!business-units)(?!course-lessons)(?!lexicon-dictionary).*\.js$/,
-    limit: 600 * 1024,
-    label: "runtime chunk",
-  },
+  { pattern: /^index-/, limit: 500 * 1024, label: "initial runtime" },
+  // A monolithic dictionary must never re-enter the browser graph.
+  { pattern: /^lexicon-dictionary/, limit: 0, label: "forbidden monolithic dictionary" },
+  { pattern: /^lexicon-\d+-/, limit: 48 * 1024, label: "dictionary shard" },
+  { pattern: /^story-/, limit: 16 * 1024, label: "lesson passage shard" },
   { pattern: /^conversation-units/, limit: 400 * 1024, label: "conversation data shard" },
   { pattern: /^business-units/, limit: 400 * 1024, label: "business data shard" },
-  { pattern: /^course-lessons/, limit: 800 * 1024, label: "course data" },
-  { pattern: /^lexicon-dictionary/, limit: 2 * 1024 * 1024, label: "lexicon data" },
+  { pattern: /^course-lessons/, limit: 550 * 1024, label: "curriculum summaries" },
+  { pattern: /\.js$/, limit: 600_000, label: "runtime chunk" },
 ];
 
 let failed = false;

@@ -6,7 +6,7 @@ import { StatusBar } from "../shared/StatusBar";
 import { BackButton } from "../shared/BackButton";
 import { Select } from "../shared/Select";
 import { StudyShell } from "./study/StudyShell";
-import { COURSE_UNITS, DEFAULT_UNIT_ID, type VocabularyItem } from "../data/lessons";
+import { COURSE_UNITS, DEFAULT_UNIT_ID, type VocabularyItem } from "../data/courseCatalog";
 import { loadLearningMaterials } from "./registry";
 import { BLANK_TOKEN, type PhraseKind, type UnitLearningMaterials } from "./types";
 import { resolveAssetUrl } from "../../utils/assetUrl";

@@ -1,0 +1,750 @@
+﻿[
+  {
+    "lessonId": "embassy-1",
+    "lessonName": "The Embassy 1",
+    "unitId": "embassy",
+    "unitName": "The Embassy",
+    "unitOrder": 174,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 768,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Embassy Building",
+      "Flag Pole",
+      "National Flag",
+      "Security Gate",
+      "Guard Booth",
+      "Reception Hall",
+      "Waiting Room",
+      "Conference Room",
+      "Garden",
+      "Courtyard",
+      "Passport",
+      "Visa",
+      "Application Form",
+      "Identity Card",
+      "Birth Certificate"
+    ],
+    "targetWordsArabic": [
+      "مبنى السفارة",
+      "سارية علم",
+      "علم وطني",
+      "بوابة أمنية",
+      "كشك حراسة",
+      "قاعة استقبال",
+      "غرفة انتظار",
+      "غرفة مؤتمر",
+      "-",
+      "فناء",
+      "جواز سفر",
+      "تأشيرة",
+      "شكل طلب",
+      "بطاقة هوية",
+      "شهادة ميلاد"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Embassy to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the embassy vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Embassy Building", "Flag Pole", "National Flag", "Security Gate"],
+          "scenario": "The legal team works with embassy building, flag pole, national flag, and security gate. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Embassy Building", "Flag Pole", "National Flag", "Security Gate"],
+            "expectedAnswer": "Embassy Building"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with embassy building, flag pole, national flag, and security gate. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Guard Booth", "Reception Hall", "Waiting Room", "Conference Room"],
+          "scenario": "The legal team works with guard booth, reception hall, waiting room, and conference room. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Guard Booth", "Reception Hall", "Waiting Room", "Conference Room"],
+            "expectedAnswer": "Guard Booth"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with guard booth, reception hall, waiting room, and conference room. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Garden", "Courtyard", "Passport", "Visa"],
+          "scenario": "The legal team works with garden, courtyard, passport, and visa. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Garden", "Courtyard", "Passport", "Visa"],
+            "expectedAnswer": "Garden"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with garden, courtyard, passport, and visa. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Application Form", "Identity Card", "Birth Certificate"],
+          "scenario": "The legal team works with application form, identity card, and birth certificate. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Application Form", "Identity Card", "Birth Certificate"],
+            "expectedAnswer": "Application Form"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with application form, identity card, and birth certificate. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Embassy: Case Note",
+      "text": "A realistic case involving the embassy shows how precise vocabulary can influence choices, explanations, and outcomes. The legal team works with embassy building, flag pole, national flag, and security gate. Each term has a distinct role in the case, document set, or legal process. The legal team works with guard booth, reception hall, waiting room, and conference room. Each term has a distinct role in the case, document set, or legal process. The legal team works with garden, courtyard, passport, and visa. Each term has a distinct role in the case, document set, or legal process. The legal team works with application form, identity card, and birth certificate. Each term has a distinct role in the case, document set, or legal process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Embassy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Embassy Building"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Guard Booth"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Garden"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Application Form"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Embassy Building"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Battery” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Embassy: In Context",
+      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Battery, Cable from solar-farm-5\n3 lesson(s) back: Sunlight, Solar Cell from solar-farm-3\n7 lesson(s) back: Wheeled Robot, Walking Robot from robotics-lab-4"
+  },
+  {
+    "lessonId": "embassy-2",
+    "lessonName": "The Embassy 2",
+    "unitId": "embassy",
+    "unitName": "The Embassy",
+    "unitOrder": 174,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 769,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Photograph",
+      "Stamp",
+      "Seal",
+      "Letter",
+      "Envelope",
+      "Desk",
+      "Computer",
+      "Printer",
+      "Telephone",
+      "Fax Machine",
+      "Scanner",
+      "Filing Cabinet",
+      "Safe",
+      "Shredder",
+      "Laminator"
+    ],
+    "targetWordsArabic": [
+      "صورة فوتوغرافية",
+      "طابع",
+      "ختم",
+      "خطاب",
+      "مظروف",
+      "مَكْتَب",
+      "حاسوب",
+      "طابعة",
+      "هاتف",
+      "جهاز فاكس",
+      "ماسح ضوئي",
+      "خزانة ملفات",
+      "خزنة",
+      "آلة تمزيق الورق",
+      "آلة تغليف حراري"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Embassy to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the embassy vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Photograph", "Stamp", "Seal", "Letter"],
+          "scenario": "The legal team works with photograph, stamp, seal, and letter. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Photograph", "Stamp", "Seal", "Letter"],
+            "expectedAnswer": "Photograph"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with photograph, stamp, seal, and letter. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Envelope", "Desk", "Computer", "Printer"],
+          "scenario": "The legal team works with envelope, desk, computer, and printer. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Envelope", "Desk", "Computer", "Printer"],
+            "expectedAnswer": "Envelope"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with envelope, desk, computer, and printer. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Telephone", "Fax Machine", "Scanner", "Filing Cabinet"],
+          "scenario": "The legal team works with telephone, fax machine, scanner, and filing cabinet. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Telephone", "Fax Machine", "Scanner", "Filing Cabinet"],
+            "expectedAnswer": "Telephone"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with telephone, fax machine, scanner, and filing cabinet. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Safe", "Shredder", "Laminator"],
+          "scenario": "The legal team works with safe, shredder, and laminator. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Safe", "Shredder", "Laminator"],
+            "expectedAnswer": "Safe"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with safe, shredder, and laminator. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Embassy: Report Excerpt",
+      "text": "A realistic case involving the embassy shows how precise vocabulary can influence choices, explanations, and outcomes. The legal team works with photograph, stamp, seal, and letter. Each term has a distinct role in the case, document set, or legal process. The legal team works with envelope, desk, computer, and printer. Each term has a distinct role in the case, document set, or legal process. The legal team works with telephone, fax machine, scanner, and filing cabinet. Each term has a distinct role in the case, document set, or legal process. The legal team works with safe, shredder, and laminator. Each term has a distinct role in the case, document set, or legal process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Embassy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Photograph"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Envelope"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Telephone"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Safe"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Photograph"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Embassy Building” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Embassy: In Context",
+      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Embassy Building, Flag Pole from embassy-1\n3 lesson(s) back: Hard Hat, Gloves from solar-farm-4\n7 lesson(s) back: Power Supply, Testing Mat from robotics-lab-5"
+  },
+  {
+    "lessonId": "embassy-3",
+    "lessonName": "The Embassy 3",
+    "unitId": "embassy",
+    "unitName": "The Embassy",
+    "unitOrder": 174,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 770,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Security Camera",
+      "Metal Detector",
+      "X-Ray Machine",
+      "Security Guard",
+      "Badge",
+      "Visitor Pass",
+      "Turnstile",
+      "Alarm System",
+      "Intercom",
+      "Bulletproof Glass",
+      "Ambassador",
+      "Consul",
+      "Diplomat",
+      "Secretary",
+      "Translator"
+    ],
+    "targetWordsArabic": [
+      "كاميرا مراقبة",
+      "كاشف معدن",
+      "جهاز أشعة سينية",
+      "حارس أمن",
+      "شارة",
+      "بطاقة زائر",
+      "بوابة دوارة",
+      "نظام إنذار",
+      "جهاز اتصال داخلي",
+      "زجاج مضاد للرصاص",
+      "سفير",
+      "قنصل",
+      "دبلوماسي",
+      "سكرتير",
+      "مترجم"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Embassy to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the embassy vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Security Camera", "Metal Detector", "X-Ray Machine", "Security Guard"],
+          "scenario": "The legal team works with security camera, metal detector, x-ray machine, and security guard. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Security Camera", "Metal Detector", "X-Ray Machine", "Security Guard"],
+            "expectedAnswer": "Security Camera"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with security camera, metal detector, x-ray machine, and security guard. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Badge", "Visitor Pass", "Turnstile", "Alarm System"],
+          "scenario": "The legal team works with badge, visitor pass, turnstile, and alarm system. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Badge", "Visitor Pass", "Turnstile", "Alarm System"],
+            "expectedAnswer": "Badge"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with badge, visitor pass, turnstile, and alarm system. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Intercom", "Bulletproof Glass", "Ambassador", "Consul"],
+          "scenario": "The legal team works with intercom, bulletproof glass, ambassador, and consul. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Intercom", "Bulletproof Glass", "Ambassador", "Consul"],
+            "expectedAnswer": "Intercom"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with intercom, bulletproof glass, ambassador, and consul. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Diplomat", "Secretary", "Translator"],
+          "scenario": "The diplomat, secretary, and translator take different roles in the legal process, from preparing information to making or presenting decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Diplomat", "Secretary", "Translator"],
+            "expectedAnswer": "Diplomat"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The diplomat, secretary, and translator take different roles in the legal process, from preparing information to making or presenting decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Embassy: Workplace/Academic Scenario",
+      "text": "A realistic case involving the embassy shows how precise vocabulary can influence choices, explanations, and outcomes. The legal team works with security camera, metal detector, x-ray machine, and security guard. Each term has a distinct role in the case, document set, or legal process. The legal team works with badge, visitor pass, turnstile, and alarm system. Each term has a distinct role in the case, document set, or legal process. The legal team works with intercom, bulletproof glass, ambassador, and consul. Each term has a distinct role in the case, document set, or legal process. The diplomat, secretary, and translator take different roles in the legal process, from preparing information to making or presenting decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Embassy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Security Camera"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Badge"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Intercom"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Diplomat"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Security Camera"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Photograph” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Embassy: In Context",
+      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Photograph, Stamp from embassy-2\n3 lesson(s) back: Battery, Cable from solar-farm-5\n7 lesson(s) back: Solar Panel, Inverter from solar-farm-1"
+  },
+  {
+    "lessonId": "embassy-4",
+    "lessonName": "The Embassy 4",
+    "unitId": "embassy",
+    "unitName": "The Embassy",
+    "unitOrder": 174,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 771,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Protocol Officer",
+      "Cultural Attaché",
+      "Legal Advisor",
+      "Driver",
+      "Receptionist",
+      "National Emblem",
+      "Map",
+      "Globe",
+      "Clock with Time Zones",
+      "Painting",
+      "Sculpture",
+      "Book",
+      "Gift",
+      "Certificate",
+      "Plaque"
+    ],
+    "targetWordsArabic": [
+      "مسؤول المراسم والبروتوكول",
+      "ملحق ثقافي",
+      "مستشار قانوني",
+      "سائق",
+      "موظف استقبال",
+      "شعار وطني",
+      "خريطة",
+      "كرة أرضية",
+      "ساعة تعرض مناطق زمنية متعددة",
+      "لوحة فنية",
+      "منحوتة",
+      "كتاب",
+      "هدية",
+      "شهادة",
+      "لوحة تذكارية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Embassy to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the embassy vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "opinion paragraph",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Protocol Officer", "Cultural Attaché", "Legal Advisor", "Driver"],
+          "scenario": "The legal team works with protocol officer, cultural attaché, legal advisor, and driver. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Protocol Officer", "Cultural Attaché", "Legal Advisor", "Driver"],
+            "expectedAnswer": "Protocol Officer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with protocol officer, cultural attaché, legal advisor, and driver. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Receptionist", "National Emblem", "Map", "Globe"],
+          "scenario": "The legal team works with receptionist, national emblem, map, and globe. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Receptionist", "National Emblem", "Map", "Globe"],
+            "expectedAnswer": "Receptionist"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with receptionist, national emblem, map, and globe. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Clock with Time Zones", "Painting", "Sculpture", "Book"],
+          "scenario": "The legal team works with clock with time zones, painting, sculpture, and book. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Clock with Time Zones", "Painting", "Sculpture", "Book"],
+            "expectedAnswer": "Clock with Time Zones"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with clock with time zones, painting, sculpture, and book. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Gift", "Certificate", "Plaque"],
+          "scenario": "The legal team works with gift, certificate, and plaque. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Gift", "Certificate", "Plaque"],
+            "expectedAnswer": "Gift"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with gift, certificate, and plaque. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Embassy: Opinion Paragraph",
+      "text": "A realistic case involving the embassy shows how precise vocabulary can influence choices, explanations, and outcomes. The legal team works with protocol officer, cultural attaché, legal advisor, and driver. Each term has a distinct role in the case, document set, or legal process. The legal team works with receptionist, national emblem, map, and globe. Each term has a distinct role in the case, document set, or legal process. The legal team works with clock with time zones, painting, sculpture, and book. Each term has a distinct role in the case, document set, or legal process. The legal team works with gift, certificate, and plaque. Each term has a distinct role in the case, document set, or legal process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Embassy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Protocol Officer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Receptionist"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Clock with Time Zones"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gift"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Protocol Officer"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Security Camera” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Embassy: In Context",
+      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Security Camera, Metal Detector from embassy-3\n3 lesson(s) back: Embassy Building, Flag Pole from embassy-1\n7 lesson(s) back: Conduit, Ground Rod from solar-farm-2"
+  },
+  {
+    "lessonId": "embassy-5",
+    "lessonName": "The Embassy 5",
+    "unitId": "embassy",
+    "unitName": "The Embassy",
+    "unitOrder": 174,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 772,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Application",
+      "Identification",
+      "Form",
+      "Interpreter",
+      "Guard",
+      "Clerk",
+      "Attaché",
+      "Flag",
+      "Reception",
+      "Ceremony",
+      "Treaty",
+      "Negotiation",
+      "Alliance",
+      "Summit"
+    ],
+    "targetWordsArabic": [
+      "طلب",
+      "إثبات هوية",
+      "شكل",
+      "مترجم شفهي",
+      "حارس",
+      "موظف",
+      "ملحق دبلوماسي",
+      "علم",
+      "استقبال",
+      "مراسم",
+      "معاهدة",
+      "تفاوض",
+      "تحالف",
+      "قمة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Embassy to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the embassy vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Application", "Identification", "Form", "Interpreter"],
+          "scenario": "The legal team works with application, identification, form, and interpreter. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Application", "Identification", "Form", "Interpreter"],
+            "expectedAnswer": "Application"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with application, identification, form, and interpreter. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Guard", "Clerk", "Attaché", "Flag"],
+          "scenario": "The legal team works with guard, clerk, attaché, and flag. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Guard", "Clerk", "Attaché", "Flag"],
+            "expectedAnswer": "Guard"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with guard, clerk, attaché, and flag. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Reception", "Ceremony", "Treaty", "Negotiation"],
+          "scenario": "The legal team works with reception, ceremony, treaty, and negotiation. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Reception", "Ceremony", "Treaty", "Negotiation"],
+            "expectedAnswer": "Reception"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with reception, ceremony, treaty, and negotiation. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Alliance", "Summit"],
+          "scenario": "The legal team works with alliance and summit. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Alliance", "Summit"],
+            "expectedAnswer": "Alliance"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with alliance and summit. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Embassy: Case Note",
+      "text": "A realistic case involving the embassy shows how precise vocabulary can influence choices, explanations, and outcomes. The legal team works with application, identification, form, and interpreter. Each term has a distinct role in the case, document set, or legal process. The legal team works with guard, clerk, attaché, and flag. Each term has a distinct role in the case, document set, or legal process. The legal team works with reception, ceremony, treaty, and negotiation. Each term has a distinct role in the case, document set, or legal process. The legal team works with alliance and summit. Each term has a distinct role in the case, document set, or legal process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Embassy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Application"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Guard"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Reception"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Alliance"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Application"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Protocol Officer” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Embassy: In Context",
+      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Protocol Officer, Cultural Attaché from embassy-4\n3 lesson(s) back: Photograph, Stamp from embassy-2\n7 lesson(s) back: Sunlight, Solar Cell from solar-farm-3"
+  }
+]

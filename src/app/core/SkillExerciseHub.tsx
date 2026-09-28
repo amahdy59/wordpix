@@ -20,9 +20,9 @@ import { useAccessibility, formatNumber } from "../shared/useAccessibilityPrefer
 import { useLearner } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
 import { useProgress } from "../data/progress";
-import { REVIEW_GROUP_ID } from "../data/lessons";
+import { REVIEW_GROUP_ID } from "../data/courseCatalog";
 import { calculateDaysBetween, getLocalDateString } from "../../features/gamification/streak";
-import { Button, FilterChip, PageHeader } from "../shared";
+import { Button, FilterChip, PageContainer, PageHeader } from "../shared";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -102,7 +102,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
   const availableCount = countAvailableExercises(includeSpeaking, includeListening, learnerLevel);
 
   return (
-    <div className="flex flex-col gap-8 max-w-5xl mx-auto w-full py-2 sm:py-4">
+    <PageContainer size="wide" className="gap-7 sm:gap-8">
       <PageHeader variant="plain" headingLevel="h1" title={t("nav.practice")} />
 
       {/* ── Section 1: Reviews Due Today (Spaced-Repetition Hero) ──────────────── */}
@@ -260,7 +260,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
         </div>
 
         {/* Exercises Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+        <div className="grid grid-cols-1 gap-3.5 md:grid-cols-2 xl:grid-cols-3">
           {categoryExercises.map((ex) => (
             <button
               key={ex.id}
@@ -293,6 +293,6 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
           ))}
         </div>
       </section>
-    </div>
+    </PageContainer>
   );
 });

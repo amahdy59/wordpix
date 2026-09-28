@@ -1,0 +1,823 @@
+﻿[
+  {
+    "lessonId": "computer-lab-1",
+    "lessonName": "The Computer Lab 1",
+    "unitId": "computer-lab",
+    "unitName": "The Computer Lab",
+    "unitOrder": 132,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 609,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Desktop Computer",
+      "Laptop",
+      "Monitor",
+      "Keyboard",
+      "Mouse",
+      "Trackpad",
+      "Webcam",
+      "Headset",
+      "Printer",
+      "Scanner",
+      "USB Drive",
+      "External Hard Drive",
+      "Operating System",
+      "Browser",
+      "Search Engine"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "حَاسُوبٌ مَحْمُول (لَابْتُوب)",
+      "-",
+      "لَوْحَةُ مَفَاتِيح",
+      "فَأْرَةُ حَاسُوب (مَاوْس)",
+      "-",
+      "-",
+      "-",
+      "طَابِعَة",
+      "مَاسِحٌ ضَوْئِيّ (سْكَانَر)",
+      "ذَاكِرَةُ فَلَاش (فَلَاشَةُ يُو إِسْ بِي)",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Computer Lab to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the computer lab vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Desktop Computer", "Laptop", "Monitor", "Keyboard"],
+          "scenario": "The engineer or technician checks desktop computer, laptop, monitor, and keyboard. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Desktop Computer", "Laptop", "Monitor", "Keyboard"],
+            "expectedAnswer": "Desktop Computer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks desktop computer, laptop, monitor, and keyboard. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Mouse", "Trackpad", "Webcam", "Headset"],
+          "scenario": "The engineer or technician checks mouse, trackpad, webcam, and headset. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mouse", "Trackpad", "Webcam", "Headset"],
+            "expectedAnswer": "Mouse"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks mouse, trackpad, webcam, and headset. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Printer", "Scanner", "USB Drive", "External Hard Drive"],
+          "scenario": "The engineer or technician checks printer, scanner, usb drive, and external hard drive. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Printer", "Scanner", "USB Drive", "External Hard Drive"],
+            "expectedAnswer": "Printer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks printer, scanner, usb drive, and external hard drive. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Operating System", "Browser", "Search Engine"],
+          "scenario": "The engineer or technician checks operating system, browser, and search engine. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Operating System", "Browser", "Search Engine"],
+            "expectedAnswer": "Operating System"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks operating system, browser, and search engine. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Computer Lab: Practical Article",
+      "text": "A practical situation involving the computer lab requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The engineer or technician checks desktop computer, laptop, monitor, and keyboard. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks mouse, trackpad, webcam, and headset. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks printer, scanner, usb drive, and external hard drive. The words connect to components, systems, processes, or technical decisions. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Computer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Desktop Computer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mouse"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Printer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Operating System"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Desktop Computer"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Keyboard"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Scissors” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Computer Lab: In Context",
+      "idea": "40-60 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Scissors, Pin from tailor-shop-5\n3 lesson(s) back: Button, Zipper from tailor-shop-3\n7 lesson(s) back: Teapot, Tile from pottery-studio-4"
+  },
+  {
+    "lessonId": "computer-lab-2",
+    "lessonName": "The Computer Lab 2",
+    "unitId": "computer-lab",
+    "unitName": "The Computer Lab",
+    "unitOrder": 132,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 610,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "App",
+      "Icon",
+      "Menu",
+      "Toolbar",
+      "Cursor",
+      "Folder",
+      "File",
+      "Window",
+      "Tab",
+      "Wi-Fi Router",
+      "Ethernet Cable",
+      "Server",
+      "Modem",
+      "Network Switch",
+      "Hotspot"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "قَائِمَةُ الطَّعَام (مِنْيُو / لَائِحَةُ المَأْكُولَات)",
+      "-",
+      "-",
+      "مِلَفّ (مُجَلَّدُ حِفْظِ الأَوْرَاق)",
+      "-",
+      "نَافِذَة (شُبَّاك)",
+      "-",
+      "جِهَازُ التَّوْجِيه (رَاوْتَر الوَاي فَاي)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Computer Lab to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the computer lab vocabulary to handle a practical situation and explain key details.",
+      "textType": "email",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["App", "Icon", "Menu", "Toolbar"],
+          "scenario": "The engineer or technician checks app, icon, menu, and toolbar. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["App", "Icon", "Menu", "Toolbar"],
+            "expectedAnswer": "App"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks app, icon, menu, and toolbar. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Cursor", "Folder", "File", "Window"],
+          "scenario": "The engineer or technician checks cursor, folder, file, and window. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cursor", "Folder", "File", "Window"],
+            "expectedAnswer": "Cursor"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks cursor, folder, file, and window. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Tab", "Wi-Fi Router", "Ethernet Cable", "Server"],
+          "scenario": "The engineer or technician checks tab, wi-fi router, ethernet cable, and server. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tab", "Wi-Fi Router", "Ethernet Cable", "Server"],
+            "expectedAnswer": "Tab"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks tab, wi-fi router, ethernet cable, and server. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Modem", "Network Switch", "Hotspot"],
+          "scenario": "The engineer or technician checks modem, network switch, and hotspot. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Modem", "Network Switch", "Hotspot"],
+            "expectedAnswer": "Modem"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks modem, network switch, and hotspot. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Computer Lab: Email",
+      "text": "A practical situation involving the computer lab requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The engineer or technician checks app, icon, menu, and toolbar. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks cursor, folder, file, and window. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks tab, wi-fi router, ethernet cable, and server. The words connect to components, systems, processes, or technical decisions. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Computer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "App"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cursor"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tab"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Modem"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "App"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Toolbar"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Desktop Computer” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Computer Lab: In Context",
+      "idea": "40-60 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Desktop Computer, Laptop from computer-lab-1\n3 lesson(s) back: Lapel, Waistband from tailor-shop-4\n7 lesson(s) back: Wheel, Sculpting Tool from pottery-studio-5"
+  },
+  {
+    "lessonId": "computer-lab-3",
+    "lessonName": "The Computer Lab 3",
+    "unitId": "computer-lab",
+    "unitName": "The Computer Lab",
+    "unitOrder": 132,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 611,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Firewall",
+      "Cloud Storage",
+      "Download",
+      "Upload",
+      "Charger",
+      "Power Strip",
+      "Surge Protector",
+      "USB Cable",
+      "Adapter",
+      "Mouse Pad",
+      "Laptop Stand",
+      "Docking Station",
+      "Stylus",
+      "Screen Protector",
+      "Typing"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "شَاحِن",
+      "مُشْتَرَكُ كَهْرَبَاء (تَوْصِيلَة)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "الكِتَابَةُ عَلَى لَوْحَةِ المَفَاتِيح (الطِّبَاعَةُ رَقْمِيًّا)"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Computer Lab to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the computer lab vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Firewall", "Cloud Storage", "Download", "Upload"],
+          "scenario": "The engineer or technician checks firewall, cloud storage, download, and upload. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Firewall", "Cloud Storage", "Download", "Upload"],
+            "expectedAnswer": "Firewall"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks firewall, cloud storage, download, and upload. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Charger", "Power Strip", "Surge Protector", "USB Cable"],
+          "scenario": "The engineer or technician checks charger, power strip, surge protector, and usb cable. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Charger", "Power Strip", "Surge Protector", "USB Cable"],
+            "expectedAnswer": "Charger"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks charger, power strip, surge protector, and usb cable. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Adapter", "Mouse Pad", "Laptop Stand", "Docking Station"],
+          "scenario": "The engineer or technician checks adapter, mouse pad, laptop stand, and docking station. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Adapter", "Mouse Pad", "Laptop Stand", "Docking Station"],
+            "expectedAnswer": "Adapter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks adapter, mouse pad, laptop stand, and docking station. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Stylus", "Screen Protector", "Typing"],
+          "scenario": "The engineer or technician checks stylus, screen protector, and typing. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Stylus", "Screen Protector", "Typing"],
+            "expectedAnswer": "Stylus"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks stylus, screen protector, and typing. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Computer Lab: Review",
+      "text": "A practical situation involving the computer lab requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The engineer or technician checks firewall, cloud storage, download, and upload. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks charger, power strip, surge protector, and usb cable. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks adapter, mouse pad, laptop stand, and docking station. The words connect to components, systems, processes, or technical decisions. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Computer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Firewall"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Charger"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Adapter"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stylus"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Firewall"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Upload"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “App” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Computer Lab: In Context",
+      "idea": "40-60 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: App, Icon from computer-lab-2\n3 lesson(s) back: Scissors, Pin from tailor-shop-5\n7 lesson(s) back: Sewing Machine, Needle from tailor-shop-1"
+  },
+  {
+    "lessonId": "computer-lab-4",
+    "lessonName": "The Computer Lab 4",
+    "unitId": "computer-lab",
+    "unitName": "The Computer Lab",
+    "unitOrder": 132,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 612,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Scrolling",
+      "Clicking",
+      "Dragging",
+      "Copying",
+      "Pasting",
+      "Saving",
+      "Printing",
+      "Editing",
+      "Searching",
+      "Password",
+      "Username",
+      "Log In",
+      "Log Out",
+      "Update",
+      "Backup"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "البَحْث (البَحْثُ عَنِ الكُتُبِ وَالمَصَادِر)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Computer Lab to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the computer lab vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Scrolling", "Clicking", "Dragging", "Copying"],
+          "scenario": "The learner connects scrolling, clicking, dragging, and copying to the main activity and explains what each term means in context.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Scrolling", "Clicking", "Dragging", "Copying"],
+            "expectedAnswer": "Scrolling"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner connects scrolling, clicking, dragging, and copying to the main activity and explains what each term means in context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Pasting", "Saving", "Printing", "Editing"],
+          "scenario": "The engineer or technician checks pasting, saving, printing, and editing. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pasting", "Saving", "Printing", "Editing"],
+            "expectedAnswer": "Pasting"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks pasting, saving, printing, and editing. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Searching", "Password", "Username", "Log In"],
+          "scenario": "The engineer or technician checks searching, password, username, and log in. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Searching", "Password", "Username", "Log In"],
+            "expectedAnswer": "Searching"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks searching, password, username, and log in. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Log Out", "Update", "Backup"],
+          "scenario": "The engineer or technician checks log out, update, and backup. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Log Out", "Update", "Backup"],
+            "expectedAnswer": "Log Out"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks log out, update, and backup. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Computer Lab: Travel/Visitor Guide",
+      "text": "A practical situation involving the computer lab requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The learner connects scrolling, clicking, dragging, and copying to the main activity and explains what each term means in context. The engineer or technician checks pasting, saving, printing, and editing. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks searching, password, username, and log in. The words connect to components, systems, processes, or technical decisions. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Computer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Scrolling"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pasting"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Searching"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Log Out"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Scrolling"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Copying"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Firewall” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Computer Lab: In Context",
+      "idea": "40-60 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Firewall, Cloud Storage from computer-lab-3\n3 lesson(s) back: Desktop Computer, Laptop from computer-lab-1\n7 lesson(s) back: Cutting Mat, Dress Form from tailor-shop-2"
+  },
+  {
+    "lessonId": "computer-lab-5",
+    "lessonName": "The Computer Lab 5",
+    "unitId": "computer-lab",
+    "unitName": "The Computer Lab",
+    "unitOrder": 132,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 613,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Antivirus",
+      "Spam",
+      "Pop-Up",
+      "Privacy Settings",
+      "Computer",
+      "Speaker",
+      "Email",
+      "Document",
+      "Spreadsheet",
+      "Presentation",
+      "Type",
+      "Click",
+      "Scroll",
+      "Save",
+      "Search"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "حَاسُوب (كَمْبِيُوتَر)",
+      "مُكَبِّرُ صَوْت (سَبِيكَر / سَمَّاعَة)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Computer Lab to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the computer lab vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Antivirus", "Spam", "Pop-Up", "Privacy Settings"],
+          "scenario": "The engineer or technician checks antivirus, spam, pop-up, and privacy settings. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Antivirus", "Spam", "Pop-Up", "Privacy Settings"],
+            "expectedAnswer": "Antivirus"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks antivirus, spam, pop-up, and privacy settings. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Computer", "Speaker", "Email", "Document"],
+          "scenario": "The engineer or technician checks computer, speaker, email, and document. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Computer", "Speaker", "Email", "Document"],
+            "expectedAnswer": "Computer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks computer, speaker, email, and document. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Spreadsheet", "Presentation", "Type", "Click"],
+          "scenario": "The engineer or technician checks spreadsheet, presentation, type, and click. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Spreadsheet", "Presentation", "Type", "Click"],
+            "expectedAnswer": "Spreadsheet"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks spreadsheet, presentation, type, and click. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Scroll", "Save", "Search"],
+          "scenario": "The engineer or technician checks scroll, save, and search. The words connect to components, systems, processes, or technical decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Scroll", "Save", "Search"],
+            "expectedAnswer": "Scroll"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks scroll, save, and search. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Computer Lab: Real-Life Scenario",
+      "text": "A practical situation involving the computer lab requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The engineer or technician checks antivirus, spam, pop-up, and privacy settings. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks computer, speaker, email, and document. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks spreadsheet, presentation, type, and click. The words connect to components, systems, processes, or technical decisions. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Computer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Antivirus"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Computer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Spreadsheet"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Scroll"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Antivirus"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Privacy Settings"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Scrolling” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Computer Lab: In Context",
+      "idea": "40-60 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Scrolling, Clicking from computer-lab-4\n3 lesson(s) back: App, Icon from computer-lab-2\n7 lesson(s) back: Button, Zipper from tailor-shop-3"
+  },
+  {
+    "lessonId": "computer-lab-6",
+    "lessonName": "The Computer Lab 6",
+    "unitId": "computer-lab",
+    "unitName": "The Computer Lab",
+    "unitOrder": 132,
+    "lessonOrderInUnit": 6,
+    "globalOrder": 614,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": "Code",
+    "targetWordsArabic": "-",
+    "usage": {
+      "goal": "Use the vocabulary from The Computer Lab to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the computer lab vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": {
+        "chunkNumber": 1,
+        "targetWords": "Code",
+        "scenario": "The engineer or technician checks code. The words connect to components, systems, processes, or technical decisions.",
+        "check": {
+          "question": "Which target term is most central to the situation?",
+          "options": "Code",
+          "expectedAnswer": "Code"
+        },
+        "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks code. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+      }
+    },
+    "reading": {
+      "title": "The Computer Lab: Practical Article",
+      "text": "A practical situation involving the computer lab requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The engineer or technician checks code. The words connect to components, systems, processes, or technical decisions. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Computer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Code"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Code"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Code"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Antivirus” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Computer Lab: In Context",
+      "idea": "40-60 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Antivirus, Spam from computer-lab-5\n3 lesson(s) back: Firewall, Cloud Storage from computer-lab-3\n7 lesson(s) back: Lapel, Waistband from tailor-shop-4"
+  }
+]

@@ -1,0 +1,708 @@
+﻿[
+  {
+    "lessonId": "volcano-1",
+    "lessonName": "The Volcano 1",
+    "unitId": "volcano",
+    "unitName": "The Volcano",
+    "unitOrder": 114,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 528,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Crater",
+      "Lava",
+      "Magma",
+      "Vent",
+      "Caldera",
+      "Cone",
+      "Lava Tube",
+      "Hot Spring",
+      "Geyser",
+      "Fumarole",
+      "Eruption",
+      "Lava Flow",
+      "Ash Cloud",
+      "Pyroclastic Flow",
+      "Tremor"
+    ],
+    "targetWordsArabic": [
+      "فوهة",
+      "مصطلح مرتبط بالموضوع يُسمّى «لافا»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ماجما»",
+      "فتحة تهوية",
+      "مصطلح مرتبط بالموضوع يُسمّى «كالديرا»",
+      "قُمع",
+      "أنبوب حمم بركانية",
+      "نابض ساخن",
+      "مصطلح مرتبط بالموضوع يُسمّى «جييسير»",
+      "فوهة بخارية بركانية",
+      "مادة يُسمّى «يروبتيون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «لافا فلوو»",
+      "سحابة رماد بركاني",
+      "تدفّق فتاتي بركاني",
+      "مصطلح مرتبط بالموضوع يُسمّى «تريمور»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Volcano to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the volcano vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Crater", "Lava", "Magma", "Vent"],
+          "scenario": "The guide or scientist draws attention to crater, lava, magma, and vent. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crater", "Lava", "Magma", "Vent"],
+            "expectedAnswer": "Crater"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to crater, lava, magma, and vent. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Caldera", "Cone", "Lava Tube", "Hot Spring"],
+          "scenario": "The guide or scientist draws attention to caldera, cone, lava tube, and hot spring. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Caldera", "Cone", "Lava Tube", "Hot Spring"],
+            "expectedAnswer": "Caldera"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to caldera, cone, lava tube, and hot spring. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Geyser", "Fumarole", "Eruption", "Lava Flow"],
+          "scenario": "The guide or scientist draws attention to geyser, fumarole, eruption, and lava flow. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Geyser", "Fumarole", "Eruption", "Lava Flow"],
+            "expectedAnswer": "Geyser"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to geyser, fumarole, eruption, and lava flow. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Ash Cloud", "Pyroclastic Flow", "Tremor"],
+          "scenario": "The guide or scientist draws attention to ash cloud, pyroclastic flow, and tremor. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Ash Cloud", "Pyroclastic Flow", "Tremor"],
+            "expectedAnswer": "Ash Cloud"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to ash cloud, pyroclastic flow, and tremor. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Volcano: Travel/Visitor Guide",
+      "text": "A practical situation involving the volcano requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to crater, lava, magma, and vent. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to caldera, cone, lava tube, and hot spring. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to geyser, fumarole, eruption, and lava flow. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crater"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Caldera"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Geyser"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ash Cloud"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Crater"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Vent"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Splash” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Volcano: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Splash, Echo from jungle-5\n3 lesson(s) back: Liana, Canopy from jungle-3\n7 lesson(s) back: Drought, Dry Air from desert-4"
+  },
+  {
+    "lessonId": "volcano-2",
+    "lessonName": "The Volcano 2",
+    "unitId": "volcano",
+    "unitName": "The Volcano",
+    "unitOrder": 114,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 529,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Earthquake",
+      "Explosion",
+      "Steam Vent",
+      "Mudflow",
+      "Gas Emission",
+      "Basalt",
+      "Obsidian",
+      "Pumice",
+      "Granite",
+      "Limestone",
+      "Tuff",
+      "Lava Rock",
+      "Volcanic Glass",
+      "Mineral Crystal",
+      "Fossil"
+    ],
+    "targetWordsArabic": [
+      "سطح يُسمّى «يارثكاكي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يكسبلوسيون»",
+      "فتحة تهوية يطبخ بالبخار",
+      "تدفّق طيني",
+      "انبعاث وقود",
+      "مصطلح مرتبط بالموضوع يُسمّى «باسالت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «وبسيديان»",
+      "سطح يُسمّى «بوميكي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «جرانيتي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليميستوني»",
+      "مصطلح مرتبط بالموضوع يُسمّى «توفف»",
+      "صخر بركاني",
+      "مصطلح مرتبط بالموضوع يُسمّى «فولكانيك جلاسس»",
+      "بلورة معدنية",
+      "أحفورة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Volcano to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the volcano vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Earthquake", "Explosion", "Steam Vent", "Mudflow"],
+          "scenario": "The guide or scientist draws attention to earthquake, explosion, steam vent, and mudflow. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Earthquake", "Explosion", "Steam Vent", "Mudflow"],
+            "expectedAnswer": "Earthquake"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to earthquake, explosion, steam vent, and mudflow. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Gas Emission", "Basalt", "Obsidian", "Pumice"],
+          "scenario": "The guide or scientist draws attention to gas emission, basalt, obsidian, and pumice. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Gas Emission", "Basalt", "Obsidian", "Pumice"],
+            "expectedAnswer": "Gas Emission"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to gas emission, basalt, obsidian, and pumice. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Granite", "Limestone", "Tuff", "Lava Rock"],
+          "scenario": "The guide or scientist draws attention to granite, limestone, tuff, and lava rock. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Granite", "Limestone", "Tuff", "Lava Rock"],
+            "expectedAnswer": "Granite"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to granite, limestone, tuff, and lava rock. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Volcanic Glass", "Mineral Crystal", "Fossil"],
+          "scenario": "The guide or scientist draws attention to volcanic glass, mineral crystal, and fossil. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Volcanic Glass", "Mineral Crystal", "Fossil"],
+            "expectedAnswer": "Volcanic Glass"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to volcanic glass, mineral crystal, and fossil. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Volcano: Review",
+      "text": "A practical situation involving the volcano requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to earthquake, explosion, steam vent, and mudflow. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to gas emission, basalt, obsidian, and pumice. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to granite, limestone, tuff, and lava rock. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Earthquake"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gas Emission"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Granite"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Volcanic Glass"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Earthquake"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Mudflow"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Crater” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Volcano: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Crater, Lava from volcano-1\n3 lesson(s) back: Lagoon, Understory from jungle-4\n7 lesson(s) back: Sand Castle, Footprint from desert-5"
+  },
+  {
+    "lessonId": "volcano-3",
+    "lessonName": "The Volcano 3",
+    "unitId": "volcano",
+    "unitName": "The Volcano",
+    "unitOrder": 114,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 530,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Seismograph",
+      "Tiltmeter",
+      "Gas Analyzer",
+      "Thermal Camera",
+      "GPS Station",
+      "Weather Station",
+      "Drone",
+      "Satellite Image",
+      "Sample Kit",
+      "Radiation Detector",
+      "Lava Field",
+      "Volcanic Island",
+      "Mountain Peak",
+      "Valley",
+      "Cliff"
+    ],
+    "targetWordsArabic": [
+      "أداة أو جهاز يُسمّى «سييسموجراف»",
+      "مقياس الميل",
+      "محلل غازات",
+      "كاميرا حرارية",
+      "محطة GPS للرصد",
+      "محطة طقس",
+      "طائرة مسيّرة",
+      "صورة قمر صناعي",
+      "عدة أخذ عينات",
+      "كاشف إشعاع",
+      "حقل حمم",
+      "عملية يُسمّى «فولكانيك يسلاند»",
+      "قمة جبل",
+      "مصطلح مرتبط بالموضوع يُسمّى «فالليي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كليفف»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Volcano to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the volcano vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Seismograph", "Tiltmeter", "Gas Analyzer", "Thermal Camera"],
+          "scenario": "The guide or scientist draws attention to seismograph, tiltmeter, gas analyzer, and thermal camera. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Seismograph", "Tiltmeter", "Gas Analyzer", "Thermal Camera"],
+            "expectedAnswer": "Seismograph"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to seismograph, tiltmeter, gas analyzer, and thermal camera. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["GPS Station", "Weather Station", "Drone", "Satellite Image"],
+          "scenario": "The guide or scientist draws attention to gps station, weather station, drone, and satellite image. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["GPS Station", "Weather Station", "Drone", "Satellite Image"],
+            "expectedAnswer": "GPS Station"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to gps station, weather station, drone, and satellite image. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Sample Kit", "Radiation Detector", "Lava Field", "Volcanic Island"],
+          "scenario": "The guide or scientist draws attention to sample kit, radiation detector, lava field, and volcanic island. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sample Kit", "Radiation Detector", "Lava Field", "Volcanic Island"],
+            "expectedAnswer": "Sample Kit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to sample kit, radiation detector, lava field, and volcanic island. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Mountain Peak", "Valley", "Cliff"],
+          "scenario": "The guide or scientist draws attention to mountain peak, valley, and cliff. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mountain Peak", "Valley", "Cliff"],
+            "expectedAnswer": "Mountain Peak"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to mountain peak, valley, and cliff. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Volcano: Practical Article",
+      "text": "A practical situation involving the volcano requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to seismograph, tiltmeter, gas analyzer, and thermal camera. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to gps station, weather station, drone, and satellite image. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to sample kit, radiation detector, lava field, and volcanic island. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Seismograph"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "GPS Station"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sample Kit"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mountain Peak"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Seismograph"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Thermal Camera"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Earthquake” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Volcano: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Earthquake, Explosion from volcano-2\n3 lesson(s) back: Splash, Echo from jungle-5\n7 lesson(s) back: Jaguar, Toucan from jungle-1"
+  },
+  {
+    "lessonId": "volcano-4",
+    "lessonName": "The Volcano 4",
+    "unitId": "volcano",
+    "unitName": "The Volcano",
+    "unitOrder": 114,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 531,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Cave",
+      "Lake",
+      "Steam Cloud",
+      "Black Sand Beach",
+      "Rock Formation",
+      "Evacuation Route",
+      "Warning Siren",
+      "Gas Mask",
+      "Hard Hat",
+      "Protective Suit",
+      "Emergency Shelter",
+      "Helicopter",
+      "Rescue Team",
+      "Barrier",
+      "Hazard Zone"
+    ],
+    "targetWordsArabic": [
+      "كهف",
+      "منطقة يُسمّى «لاكي»",
+      "سحابة بخار",
+      "شاطئ برمال سوداء",
+      "مادة يُسمّى «روك فورماتيون»",
+      "مسار إخلاء",
+      "جهاز يُسمّى «وارنينج سيرين»",
+      "قناع واقٍ من الغازات",
+      "قبعة صلب",
+      "بدلة واقية",
+      "مأوى طوارئ",
+      "طائرة يُسمّى «هيليكوبتير»",
+      "فريق إنقاذ",
+      "حاجز",
+      "منطقة خطر"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Volcano to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the volcano vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Cave", "Lake", "Steam Cloud", "Black Sand Beach"],
+          "scenario": "The guide or scientist draws attention to cave, lake, steam cloud, and black sand beach. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cave", "Lake", "Steam Cloud", "Black Sand Beach"],
+            "expectedAnswer": "Cave"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to cave, lake, steam cloud, and black sand beach. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Rock Formation", "Evacuation Route", "Warning Siren", "Gas Mask"],
+          "scenario": "The guide or scientist draws attention to rock formation, evacuation route, warning siren, and gas mask. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Rock Formation", "Evacuation Route", "Warning Siren", "Gas Mask"],
+            "expectedAnswer": "Rock Formation"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to rock formation, evacuation route, warning siren, and gas mask. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Hard Hat", "Protective Suit", "Emergency Shelter", "Helicopter"],
+          "scenario": "The guide or scientist draws attention to hard hat, protective suit, emergency shelter, and helicopter. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hard Hat", "Protective Suit", "Emergency Shelter", "Helicopter"],
+            "expectedAnswer": "Hard Hat"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to hard hat, protective suit, emergency shelter, and helicopter. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Rescue Team", "Barrier", "Hazard Zone"],
+          "scenario": "The guide or scientist draws attention to rescue team, barrier, and hazard zone. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Rescue Team", "Barrier", "Hazard Zone"],
+            "expectedAnswer": "Rescue Team"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to rescue team, barrier, and hazard zone. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Volcano: Real-Life Scenario",
+      "text": "A practical situation involving the volcano requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to cave, lake, steam cloud, and black sand beach. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to rock formation, evacuation route, warning siren, and gas mask. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to hard hat, protective suit, emergency shelter, and helicopter. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cave"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rock Formation"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hard Hat"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rescue Team"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Cave"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Black Sand Beach"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Seismograph” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Volcano: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Seismograph, Tiltmeter from volcano-3\n3 lesson(s) back: Crater, Lava from volcano-1\n7 lesson(s) back: Mosquito, Dragonfly from jungle-2"
+  },
+  {
+    "lessonId": "volcano-5",
+    "lessonName": "The Volcano 5",
+    "unitId": "volcano",
+    "unitName": "The Volcano",
+    "unitOrder": 114,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 532,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Mantle",
+      "Sulfur",
+      "Quartz",
+      "Feldspar",
+      "Crystal",
+      "Tectonic Plate",
+      "Thermal Vent",
+      "Dormant"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «مانتلي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سولفور»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كارتز»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فيلدسبار»",
+      "بلورة",
+      "صفيحة تكتونية",
+      "فتحة حرارية",
+      "مصطلح مرتبط بالموضوع يُسمّى «دورمانت»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Volcano to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the volcano vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Mantle", "Sulfur", "Quartz", "Feldspar"],
+          "scenario": "The guide or scientist draws attention to mantle, sulfur, quartz, and feldspar. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mantle", "Sulfur", "Quartz", "Feldspar"],
+            "expectedAnswer": "Mantle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to mantle, sulfur, quartz, and feldspar. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Crystal", "Tectonic Plate", "Thermal Vent", "Dormant"],
+          "scenario": "The guide or scientist draws attention to crystal, tectonic plate, thermal vent, and dormant. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crystal", "Tectonic Plate", "Thermal Vent", "Dormant"],
+            "expectedAnswer": "Crystal"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to crystal, tectonic plate, thermal vent, and dormant. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Volcano: Travel/Visitor Guide",
+      "text": "A practical situation involving the volcano requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to mantle, sulfur, quartz, and feldspar. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to crystal, tectonic plate, thermal vent, and dormant. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mantle"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crystal"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Mantle"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Feldspar"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Cave” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Volcano: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Cave, Lake from volcano-4\n3 lesson(s) back: Earthquake, Explosion from volcano-2\n7 lesson(s) back: Liana, Canopy from jungle-3"
+  }
+]

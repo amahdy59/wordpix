@@ -1,0 +1,725 @@
+﻿[
+  {
+    "lessonId": "courtroom-1",
+    "lessonName": "The Courtroom 1",
+    "unitId": "courtroom",
+    "unitName": "The Courtroom",
+    "unitOrder": 175,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 773,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Judge",
+      "Lawyer",
+      "Prosecutor",
+      "Defense Attorney",
+      "Bailiff",
+      "Court Reporter",
+      "Jury Member",
+      "Witness",
+      "Clerk",
+      "Interpreter",
+      "Judge's Bench",
+      "Witness Stand",
+      "Jury Box",
+      "Gallery",
+      "Defense Table"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «جودجي»",
+      "شخص يُسمّى «لاويير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بروسيكوتور»",
+      "شخص يُسمّى «ديفينسي اتتورنيي»",
+      "عملية يُسمّى «بايليفف»",
+      "كاتب محضر المحكمة",
+      "عضو هيئة محلفين",
+      "شخص يُسمّى «ويتنيسس»",
+      "موظف",
+      "مترجم شفهي",
+      "منصة القاضي",
+      "غرفة يُسمّى «ويتنيسس ستاند»",
+      "غرفة يُسمّى «جوري بوكس»",
+      "غرفة يُسمّى «جالليري»",
+      "طاولة الدفاع"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Courtroom to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the courtroom vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Judge", "Lawyer", "Prosecutor", "Defense Attorney"],
+          "scenario": "The judge, lawyer, prosecutor, and defense attorney take different roles in the legal process, from preparing information to making or presenting decisions.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Judge", "Lawyer", "Prosecutor", "Defense Attorney"],
+            "expectedAnswer": "Judge"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The judge, lawyer, prosecutor, and defense attorney take different roles in the legal process, from preparing information to making or presenting decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bailiff", "Court Reporter", "Jury Member", "Witness"],
+          "scenario": "The legal team works with bailiff, court reporter, jury member, and witness. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bailiff", "Court Reporter", "Jury Member", "Witness"],
+            "expectedAnswer": "Bailiff"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with bailiff, court reporter, jury member, and witness. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Clerk", "Interpreter", "Judge's Bench", "Witness Stand"],
+          "scenario": "The legal team works with clerk, interpreter, judge's bench, and witness stand. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Clerk", "Interpreter", "Judge's Bench", "Witness Stand"],
+            "expectedAnswer": "Clerk"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with clerk, interpreter, judge's bench, and witness stand. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Jury Box", "Gallery", "Defense Table"],
+          "scenario": "The legal team works with jury box, gallery, and defense table. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Jury Box", "Gallery", "Defense Table"],
+            "expectedAnswer": "Jury Box"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with jury box, gallery, and defense table. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Courtroom: Case Note",
+      "text": "A realistic case involving the courtroom shows how precise vocabulary can influence choices, explanations, and outcomes. The judge, lawyer, prosecutor, and defense attorney take different roles in the legal process, from preparing information to making or presenting decisions. The legal team works with bailiff, court reporter, jury member, and witness. Each term has a distinct role in the case, document set, or legal process. The legal team works with clerk, interpreter, judge's bench, and witness stand. Each term has a distinct role in the case, document set, or legal process. The legal team works with jury box, gallery, and defense table. Each term has a distinct role in the case, document set, or legal process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Courtroom. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Judge"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bailiff"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Clerk"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Jury Box"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Judge"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Application” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Courtroom: In Context",
+      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Application, Identification from embassy-5\n3 lesson(s) back: Security Camera, Metal Detector from embassy-3\n7 lesson(s) back: Hard Hat, Gloves from solar-farm-4"
+  },
+  {
+    "lessonId": "courtroom-2",
+    "lessonName": "The Courtroom 2",
+    "unitId": "courtroom",
+    "unitName": "The Courtroom",
+    "unitOrder": 175,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 774,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Prosecution Table",
+      "Lectern",
+      "Court Seal",
+      "Railing",
+      "Exit",
+      "Gavel",
+      "Law Book",
+      "Case File",
+      "Evidence Bag",
+      "Badge",
+      "Handcuffs",
+      "Oath Card",
+      "Subpoena",
+      "Verdict Form",
+      "Witness List"
+    ],
+    "targetWordsArabic": [
+      "طاولة الادعاء",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليكتيرن»",
+      "ختم المحكمة",
+      "مصطلح مرتبط بالموضوع يُسمّى «رايلينج»",
+      "مخرج",
+      "مصطلح مرتبط بالموضوع يُسمّى «جافيل»",
+      "كتاب قانون",
+      "ملف غلاف",
+      "كيس أدلة",
+      "شارة",
+      "مصطلح مرتبط بالموضوع يُسمّى «هاندكوففس»",
+      "بطاقة القسم",
+      "مصطلح مرتبط بالموضوع يُسمّى «سوببوينا»",
+      "نموذج الحكم",
+      "قائمة الشهود"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Courtroom to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the courtroom vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Prosecution Table", "Lectern", "Court Seal", "Railing"],
+          "scenario": "The legal team works with prosecution table, lectern, court seal, and railing. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Prosecution Table", "Lectern", "Court Seal", "Railing"],
+            "expectedAnswer": "Prosecution Table"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with prosecution table, lectern, court seal, and railing. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Exit", "Gavel", "Law Book", "Case File"],
+          "scenario": "The legal team works with exit, gavel, law book, and case file. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Exit", "Gavel", "Law Book", "Case File"],
+            "expectedAnswer": "Exit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with exit, gavel, law book, and case file. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Evidence Bag", "Badge", "Handcuffs", "Oath Card"],
+          "scenario": "The legal team works with evidence bag, badge, handcuffs, and oath card. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Evidence Bag", "Badge", "Handcuffs", "Oath Card"],
+            "expectedAnswer": "Evidence Bag"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with evidence bag, badge, handcuffs, and oath card. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Subpoena", "Verdict Form", "Witness List"],
+          "scenario": "The legal team works with subpoena, verdict form, and witness list. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Subpoena", "Verdict Form", "Witness List"],
+            "expectedAnswer": "Subpoena"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with subpoena, verdict form, and witness list. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Courtroom: Report Excerpt",
+      "text": "A realistic case involving the courtroom shows how precise vocabulary can influence choices, explanations, and outcomes. The legal team works with prosecution table, lectern, court seal, and railing. Each term has a distinct role in the case, document set, or legal process. The legal team works with exit, gavel, law book, and case file. Each term has a distinct role in the case, document set, or legal process. The legal team works with evidence bag, badge, handcuffs, and oath card. Each term has a distinct role in the case, document set, or legal process. The legal team works with subpoena, verdict form, and witness list. Each term has a distinct role in the case, document set, or legal process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Courtroom. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Prosecution Table"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Exit"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Evidence Bag"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Subpoena"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Prosecution Table"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Judge” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Courtroom: In Context",
+      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Judge, Lawyer from courtroom-1\n3 lesson(s) back: Protocol Officer, Cultural Attaché from embassy-4\n7 lesson(s) back: Battery, Cable from solar-farm-5"
+  },
+  {
+    "lessonId": "courtroom-3",
+    "lessonName": "The Courtroom 3",
+    "unitId": "courtroom",
+    "unitName": "The Courtroom",
+    "unitOrder": 175,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 775,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Trial",
+      "Hearing",
+      "Testimony",
+      "Cross-Examination",
+      "Objection",
+      "Ruling",
+      "Sentence",
+      "Appeal",
+      "Acquittal",
+      "Conviction",
+      "Contract",
+      "Affidavit",
+      "Warrant",
+      "Summons",
+      "Complaint"
+    ],
+    "targetWordsArabic": [
+      "محاكمة",
+      "مصطلح قانوني يُسمّى «هيارينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تيستيموني»",
+      "استجواب مضاد",
+      "مصطلح قانوني يُسمّى «وبجيكتيون»",
+      "مصطلح مرتبط بالموضوع يُسمّى «رولينج»",
+      "حكم قضائي",
+      "استئناف",
+      "براءة",
+      "إدانة",
+      "شخص يُسمّى «كونتراكت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «اففيدافيت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «واررانت»",
+      "مصطلح قانوني يُسمّى «سوممونس»",
+      "مصطلح قانوني يُسمّى «كومبلاينت»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Courtroom to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the courtroom vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Trial", "Hearing", "Testimony", "Cross-Examination"],
+          "scenario": "The legal team works with trial, hearing, testimony, and cross-examination. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Trial", "Hearing", "Testimony", "Cross-Examination"],
+            "expectedAnswer": "Trial"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with trial, hearing, testimony, and cross-examination. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Objection", "Ruling", "Sentence", "Appeal"],
+          "scenario": "The legal team works with objection, ruling, sentence, and appeal. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Objection", "Ruling", "Sentence", "Appeal"],
+            "expectedAnswer": "Objection"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with objection, ruling, sentence, and appeal. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Acquittal", "Conviction", "Contract", "Affidavit"],
+          "scenario": "The legal team works with acquittal, conviction, contract, and affidavit. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Acquittal", "Conviction", "Contract", "Affidavit"],
+            "expectedAnswer": "Acquittal"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with acquittal, conviction, contract, and affidavit. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Warrant", "Summons", "Complaint"],
+          "scenario": "The legal team works with warrant, summons, and complaint. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Warrant", "Summons", "Complaint"],
+            "expectedAnswer": "Warrant"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with warrant, summons, and complaint. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Courtroom: Workplace/Academic Scenario",
+      "text": "A realistic case involving the courtroom shows how precise vocabulary can influence choices, explanations, and outcomes. The legal team works with trial, hearing, testimony, and cross-examination. Each term has a distinct role in the case, document set, or legal process. The legal team works with objection, ruling, sentence, and appeal. Each term has a distinct role in the case, document set, or legal process. The legal team works with acquittal, conviction, contract, and affidavit. Each term has a distinct role in the case, document set, or legal process. The legal team works with warrant, summons, and complaint. Each term has a distinct role in the case, document set, or legal process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Courtroom. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Trial"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Objection"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Acquittal"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Warrant"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Trial"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Prosecution Table” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Courtroom: In Context",
+      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Prosecution Table, Lectern from courtroom-2\n3 lesson(s) back: Application, Identification from embassy-5\n7 lesson(s) back: Embassy Building, Flag Pole from embassy-1"
+  },
+  {
+    "lessonId": "courtroom-4",
+    "lessonName": "The Courtroom 4",
+    "unitId": "courtroom",
+    "unitName": "The Courtroom",
+    "unitOrder": 175,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 776,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Motion",
+      "Brief",
+      "Deposition",
+      "Injunction",
+      "Plea",
+      "Robe",
+      "Wig",
+      "Suit",
+      "Tie",
+      "Briefcase",
+      "Lanyard",
+      "ID Badge",
+      "Pen",
+      "Notepad",
+      "Folder"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «موتيون»",
+      "وثيقة يُسمّى «برييف»",
+      "مصطلح قانوني يُسمّى «ديبوسيتيون»",
+      "مصطلح قانوني يُسمّى «ينجونكتيون»",
+      "دفع أو إقرار قضائي",
+      "رُوب حَمَّام / بُرْنُس",
+      "شعر مستعار",
+      "بدلة",
+      "مادة يُسمّى «تيي»",
+      "حقيبة أوراق",
+      "مصطلح مرتبط بالموضوع يُسمّى «لانيارد»",
+      "شخص يُسمّى «يد بادجي»",
+      "قلم",
+      "مصطلح مرتبط بالموضوع يُسمّى «نوتيباد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فولدير»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Courtroom to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the courtroom vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "opinion paragraph",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Motion", "Brief", "Deposition", "Injunction"],
+          "scenario": "The legal team works with motion, brief, deposition, and injunction. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Motion", "Brief", "Deposition", "Injunction"],
+            "expectedAnswer": "Motion"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with motion, brief, deposition, and injunction. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Plea", "Robe", "Wig", "Suit"],
+          "scenario": "The legal team works with plea, robe, wig, and suit. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Plea", "Robe", "Wig", "Suit"],
+            "expectedAnswer": "Plea"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with plea, robe, wig, and suit. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Tie", "Briefcase", "Lanyard", "ID Badge"],
+          "scenario": "The legal team works with tie, briefcase, lanyard, and id badge. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tie", "Briefcase", "Lanyard", "ID Badge"],
+            "expectedAnswer": "Tie"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with tie, briefcase, lanyard, and id badge. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Pen", "Notepad", "Folder"],
+          "scenario": "The legal team works with pen, notepad, and folder. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Pen", "Notepad", "Folder"],
+            "expectedAnswer": "Pen"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with pen, notepad, and folder. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Courtroom: Opinion Paragraph",
+      "text": "A realistic case involving the courtroom shows how precise vocabulary can influence choices, explanations, and outcomes. The legal team works with motion, brief, deposition, and injunction. Each term has a distinct role in the case, document set, or legal process. The legal team works with plea, robe, wig, and suit. Each term has a distinct role in the case, document set, or legal process. The legal team works with tie, briefcase, lanyard, and id badge. Each term has a distinct role in the case, document set, or legal process. The legal team works with pen, notepad, and folder. Each term has a distinct role in the case, document set, or legal process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Courtroom. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Motion"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Plea"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tie"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pen"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Motion"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Trial” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Courtroom: In Context",
+      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Trial, Hearing from courtroom-3\n3 lesson(s) back: Judge, Lawyer from courtroom-1\n7 lesson(s) back: Photograph, Stamp from embassy-2"
+  },
+  {
+    "lessonId": "courtroom-5",
+    "lessonName": "The Courtroom 5",
+    "unitId": "courtroom",
+    "unitName": "The Courtroom",
+    "unitOrder": 175,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 777,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Defendant",
+      "Plaintiff",
+      "Jury",
+      "Evidence",
+      "Document",
+      "Oath",
+      "Verdict",
+      "Cross-Examine",
+      "Deliberate"
+    ],
+    "targetWordsArabic": [
+      "شخص يُسمّى «ديفيندانت»",
+      "شخص يُسمّى «بلاينتيفف»",
+      "مصطلح قانوني يُسمّى «جوري»",
+      "مصطلح قانوني يُسمّى «يفيدينكي»",
+      "وثيقة",
+      "مصطلح قانوني يُسمّى «واث»",
+      "مصطلح قانوني يُسمّى «فيرديكت»",
+      "يستجوب شاهدًا استجوابًا مضادًا",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديليبيراتي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Courtroom to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the courtroom vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Defendant", "Plaintiff", "Jury", "Evidence"],
+          "scenario": "The legal team works with defendant, plaintiff, jury, and evidence. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Defendant", "Plaintiff", "Jury", "Evidence"],
+            "expectedAnswer": "Defendant"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with defendant, plaintiff, jury, and evidence. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Document", "Oath", "Verdict", "Cross-Examine"],
+          "scenario": "The legal team works with document, oath, verdict, and cross-examine. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Document", "Oath", "Verdict", "Cross-Examine"],
+            "expectedAnswer": "Document"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with document, oath, verdict, and cross-examine. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": "Deliberate",
+          "scenario": "The legal team works with deliberate. Each term has a distinct role in the case, document set, or legal process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": "Deliberate",
+            "expectedAnswer": "Deliberate"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with deliberate. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Courtroom: Case Note",
+      "text": "A realistic case involving the courtroom shows how precise vocabulary can influence choices, explanations, and outcomes. The legal team works with defendant, plaintiff, jury, and evidence. Each term has a distinct role in the case, document set, or legal process. The legal team works with document, oath, verdict, and cross-examine. Each term has a distinct role in the case, document set, or legal process. The legal team works with deliberate. Each term has a distinct role in the case, document set, or legal process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Courtroom. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Defendant"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Document"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Deliberate"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Defendant"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Motion” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Courtroom: In Context",
+      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Motion, Brief from courtroom-4\n3 lesson(s) back: Prosecution Table, Lectern from courtroom-2\n7 lesson(s) back: Security Camera, Metal Detector from embassy-3"
+  }
+]

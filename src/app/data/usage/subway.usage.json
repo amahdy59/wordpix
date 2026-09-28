@@ -1,0 +1,646 @@
+﻿[
+  {
+    "lessonId": "subway-1",
+    "lessonName": "The Subway 1",
+    "unitId": "subway",
+    "unitName": "The Subway",
+    "unitOrder": 93,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 433,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Platform",
+      "Tunnel",
+      "Track",
+      "Escalator",
+      "Elevator",
+      "Turnstile",
+      "Mezzanine",
+      "Concourse",
+      "Entrance",
+      "Exit",
+      "Car",
+      "Door",
+      "Window",
+      "Seat",
+      "Handrail"
+    ],
+    "targetWordsArabic": [
+      "رصيف",
+      "نفق",
+      "مسار",
+      "سلم متحرك",
+      "مصعد",
+      "بوابة دوارة",
+      "طابق نصفي",
+      "ردهة رئيسية",
+      "مدخل",
+      "مخرج",
+      "سيارة",
+      "بَاب",
+      "نَافِذَة (شُبَّاك)",
+      "مقعد",
+      "درابزين"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Subway to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the subway vocabulary in connected everyday context.",
+      "textType": "email",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Platform", "Tunnel", "Track"],
+          "scenario": "The traveler moves through the journey using or noticing platform, tunnel, and track. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Platform", "Tunnel", "Track"],
+            "expectedAnswer": "Platform"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing platform, tunnel, and track. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Escalator", "Elevator", "Turnstile"],
+          "scenario": "The traveler moves through the journey using or noticing escalator, elevator, and turnstile. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Escalator", "Elevator", "Turnstile"],
+            "expectedAnswer": "Escalator"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing escalator, elevator, and turnstile. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Mezzanine", "Concourse", "Entrance"],
+          "scenario": "The traveler moves through the journey using or noticing mezzanine, concourse, and entrance. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Mezzanine", "Concourse", "Entrance"],
+            "expectedAnswer": "Mezzanine"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing mezzanine, concourse, and entrance. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Exit", "Car", "Door"],
+          "scenario": "The traveler moves through the journey using or noticing exit, car, and door. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Exit", "Car", "Door"],
+            "expectedAnswer": "Exit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing exit, car, and door. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Window", "Seat", "Handrail"],
+          "scenario": "The traveler moves through the journey using or noticing window, seat, and handrail. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Window", "Seat", "Handrail"],
+            "expectedAnswer": "Window"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing window, seat, and handrail. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Subway: Email",
+      "text": "Omar has an everyday task connected to the subway. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing platform, tunnel, and track. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing escalator, elevator, and turnstile. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing mezzanine, concourse, and entrance. Each term marks a different part of the travel process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Subway. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Platform"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Escalator"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mezzanine"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Exit"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Window"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Platform"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Escalator"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Tourist” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Subway: In Context",
+      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Tourist, Student from bus-station-4\n3 lesson(s) back: Map, Vending Machine from bus-station-2\n7 lesson(s) back: Seat, Brake from bicycle-shop-2"
+  },
+  {
+    "lessonId": "subway-2",
+    "lessonName": "The Subway 2",
+    "unitId": "subway",
+    "unitName": "The Subway",
+    "unitOrder": 93,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 434,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Pole",
+      "Map",
+      "Speaker",
+      "Emergency Brake",
+      "Connecting Door",
+      "Ticket Machine",
+      "Metro Card",
+      "Tap",
+      "Fare",
+      "Gate",
+      "Top Up",
+      "Single Ride",
+      "Weekly Pass",
+      "Monthly Pass",
+      "Contactless"
+    ],
+    "targetWordsArabic": [
+      "عمود",
+      "خريطة",
+      "مُكَبِّرُ صَوْت (سَبِيكَر / سَمَّاعَة)",
+      "مصطلح مرتبط بالموضوع يُسمّى «يميرجينكي براكي»",
+      "باب اتصال بين العربات",
+      "آلة بيع التذاكر",
+      "بطاقة مترو",
+      "تمرير البطاقة أو اللمس",
+      "أجرة",
+      "بوابة",
+      "مصطلح مرتبط بالموضوع يُسمّى «توب وب»",
+      "تذكرة لرحلة واحدة",
+      "اشتراك أسبوعي",
+      "اشتراك شهري",
+      "دون تلامس"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Subway to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the subway vocabulary in connected everyday context.",
+      "textType": "personal message",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Pole", "Map", "Speaker"],
+          "scenario": "The traveler moves through the journey using or noticing pole, map, and speaker. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Pole", "Map", "Speaker"],
+            "expectedAnswer": "Pole"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing pole, map, and speaker. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Emergency Brake", "Connecting Door", "Ticket Machine"],
+          "scenario": "The traveler moves through the journey using or noticing emergency brake, connecting door, and ticket machine. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Emergency Brake", "Connecting Door", "Ticket Machine"],
+            "expectedAnswer": "Emergency Brake"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing emergency brake, connecting door, and ticket machine. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Metro Card", "Tap", "Fare"],
+          "scenario": "The traveler moves through the journey using or noticing metro card, tap, and fare. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Metro Card", "Tap", "Fare"],
+            "expectedAnswer": "Metro Card"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing metro card, tap, and fare. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Gate", "Top Up", "Single Ride"],
+          "scenario": "The traveler moves through the journey using or noticing gate, top up, and single ride. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Gate", "Top Up", "Single Ride"],
+            "expectedAnswer": "Gate"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing gate, top up, and single ride. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Weekly Pass", "Monthly Pass", "Contactless"],
+          "scenario": "The traveler moves through the journey using or noticing weekly pass, monthly pass, and contactless. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Weekly Pass", "Monthly Pass", "Contactless"],
+            "expectedAnswer": "Weekly Pass"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing weekly pass, monthly pass, and contactless. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Subway: Personal Message",
+      "text": "Omar has an everyday task connected to the subway. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing pole, map, and speaker. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing emergency brake, connecting door, and ticket machine. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing metro card, tap, and fare. Each term marks a different part of the travel process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Subway. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Pole"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Emergency Brake"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Metro Card"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gate"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Weekly Pass"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Pole"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Emergency Brake"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Platform” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Subway: In Context",
+      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Platform, Tunnel from subway-1\n3 lesson(s) back: Seat, Aisle from bus-station-3\n7 lesson(s) back: Jersey, Shorts from bicycle-shop-3"
+  },
+  {
+    "lessonId": "subway-3",
+    "lessonName": "The Subway 3",
+    "unitId": "subway",
+    "unitName": "The Subway",
+    "unitOrder": 93,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 435,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Line Map",
+      "Direction Sign",
+      "Exit Sign",
+      "Transfer Sign",
+      "Platform Number",
+      "Next Train",
+      "Last Train",
+      "Gap Warning",
+      "No Smoking",
+      "Emergency",
+      "Commuter",
+      "Tourist",
+      "Busker",
+      "Vendor",
+      "Guard"
+    ],
+    "targetWordsArabic": [
+      "خريطة الخطوط",
+      "علامة اتجاه",
+      "لافتة خروج",
+      "لافتة تحويل بين الخطوط",
+      "رقم الرصيف",
+      "القطار التالي",
+      "آخر قطار",
+      "تحذير من الفجوة",
+      "ممنوع التدخين",
+      "طوارئ",
+      "متنقل يومي",
+      "سائح",
+      "فنان شارع",
+      "بائع",
+      "حارس"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Subway to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the subway vocabulary in connected everyday context.",
+      "textType": "short dialogue",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Line Map", "Direction Sign", "Exit Sign"],
+          "scenario": "The traveler moves through the journey using or noticing line map, direction sign, and exit sign. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Line Map", "Direction Sign", "Exit Sign"],
+            "expectedAnswer": "Line Map"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing line map, direction sign, and exit sign. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Transfer Sign", "Platform Number", "Next Train"],
+          "scenario": "The traveler moves through the journey using or noticing transfer sign, platform number, and next train. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Transfer Sign", "Platform Number", "Next Train"],
+            "expectedAnswer": "Transfer Sign"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing transfer sign, platform number, and next train. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Last Train", "Gap Warning", "No Smoking"],
+          "scenario": "The traveler moves through the journey using or noticing last train, gap warning, and no smoking. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Last Train", "Gap Warning", "No Smoking"],
+            "expectedAnswer": "Last Train"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing last train, gap warning, and no smoking. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Emergency", "Commuter", "Tourist"],
+          "scenario": "The traveler moves through the journey using or noticing emergency, commuter, and tourist. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Emergency", "Commuter", "Tourist"],
+            "expectedAnswer": "Emergency"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing emergency, commuter, and tourist. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Busker", "Vendor", "Guard"],
+          "scenario": "The traveler moves through the journey using or noticing busker, vendor, and guard. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Busker", "Vendor", "Guard"],
+            "expectedAnswer": "Busker"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing busker, vendor, and guard. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Subway: Short Dialogue",
+      "text": "Omar has an everyday task connected to the subway. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing line map, direction sign, and exit sign. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing transfer sign, platform number, and next train. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing last train, gap warning, and no smoking. Each term marks a different part of the travel process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Subway. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Line Map"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Transfer Sign"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Last Train"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Emergency"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Busker"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Line Map"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Transfer Sign"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Pole” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Subway: In Context",
+      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Pole, Map from subway-2\n3 lesson(s) back: Tourist, Student from bus-station-4\n7 lesson(s) back: Grease, Stand from bicycle-shop-4"
+  },
+  {
+    "lessonId": "subway-4",
+    "lessonName": "The Subway 4",
+    "unitId": "subway",
+    "unitName": "The Subway",
+    "unitOrder": 93,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 436,
+    "cefrStage": "A2",
+    "stageName": "A2 Everyday Life",
+    "targetWordsEnglish": [
+      "Conductor",
+      "Cleaner",
+      "Crowd",
+      "Rush Hour",
+      "Queue",
+      "Yellow Line",
+      "Cctv",
+      "Emergency Phone",
+      "Fire Extinguisher",
+      "Defibrillator",
+      "Help Point",
+      "Alarm",
+      "Barrier",
+      "Evacuation Sign",
+      "First Aid Kit"
+    ],
+    "targetWordsArabic": [
+      "محصل أو مشرف قطار",
+      "عامل نظافة",
+      "حشد",
+      "مصطلح مرتبط بالموضوع يُسمّى «روش هوور»",
+      "طابور",
+      "الخط الأصفر",
+      "مراقبة تلفزيونية مغلقة",
+      "هاتف طوارئ",
+      "جهاز يُسمّى «فيري يكستينجويشير»",
+      "جهاز مزيل الرجفان",
+      "نقطة مساعدة",
+      "إنذار",
+      "حاجز",
+      "لافتة إخلاء",
+      "أول إسعاف طقم"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Subway to understand and communicate in a realistic A2-appropriate context.",
+      "canDoStatement": "I can use key the subway vocabulary in connected everyday context.",
+      "textType": "everyday description",
+      "readingTarget": "65-95 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Conductor", "Cleaner", "Crowd"],
+          "scenario": "The traveler moves through the journey using or noticing conductor, cleaner, and crowd. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Conductor", "Cleaner", "Crowd"],
+            "expectedAnswer": "Conductor"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing conductor, cleaner, and crowd. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Rush Hour", "Queue", "Yellow Line"],
+          "scenario": "The traveler moves through the journey using or noticing rush hour, queue, and yellow line. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Rush Hour", "Queue", "Yellow Line"],
+            "expectedAnswer": "Rush Hour"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing rush hour, queue, and yellow line. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Cctv", "Emergency Phone", "Fire Extinguisher"],
+          "scenario": "The traveler moves through the journey using or noticing cctv, emergency phone, and fire extinguisher. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Cctv", "Emergency Phone", "Fire Extinguisher"],
+            "expectedAnswer": "Cctv"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing cctv, emergency phone, and fire extinguisher. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Defibrillator", "Help Point", "Alarm"],
+          "scenario": "The traveler moves through the journey using or noticing defibrillator, help point, and alarm. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Defibrillator", "Help Point", "Alarm"],
+            "expectedAnswer": "Defibrillator"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing defibrillator, help point, and alarm. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Barrier", "Evacuation Sign", "First Aid Kit"],
+          "scenario": "The traveler moves through the journey using or noticing barrier, evacuation sign, and first aid kit. Each term marks a different part of the travel process.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Barrier", "Evacuation Sign", "First Aid Kit"],
+            "expectedAnswer": "Barrier"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing barrier, evacuation sign, and first aid kit. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Subway: Everyday Description",
+      "text": "Omar has an everyday task connected to the subway. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing conductor, cleaner, and crowd. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing rush hour, queue, and yellow line. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing cctv, emergency phone, and fire extinguisher. Each term marks a different part of the travel process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Subway. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Conductor"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rush Hour"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cctv"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Defibrillator"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Barrier"
+      },
+      {
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Conductor"
+      },
+      {
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Rush Hour"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Line Map” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Subway: In Context",
+      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Line Map, Direction Sign from subway-3\n3 lesson(s) back: Platform, Tunnel from subway-1\n7 lesson(s) back: City Bus, Double Decker from bus-station-1"
+  }
+]

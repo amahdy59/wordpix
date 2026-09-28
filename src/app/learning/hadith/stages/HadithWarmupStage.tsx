@@ -24,7 +24,7 @@ export function HadithWarmupStage({ warmup, selectedChoice, onChoiceSelect }: Pr
 
   return (
     <section
-      className="mx-auto w-full max-w-4xl rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8"
+      className="wp-container-reading rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8"
       aria-labelledby="stage-warmup-heading"
     >
       {/* Eyebrow and Title */}

@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "science-lab-1",
+    "lessonName": "L7 Science Lab 1",
+    "unitId": "science-lab",
+    "unitName": "L7 Science Lab",
+    "unitOrder": 141,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 652,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "microscope",
+      "test tube",
+      "beaker",
+      "flask",
+      "Bunsen burner",
+      "petri dish",
+      "pipette",
+      "graduated cylinder",
+      "funnel",
+      "tongs",
+      "safety goggles",
+      "lab coat",
+      "chemical",
+      "element",
+      "compound"
+    ],
+    "targetWordsArabic": [
+      "مجهر",
+      "حاوية يُسمّى «تيست توبي»",
+      "كأس مخبري",
+      "دورق",
+      "موقد بنسن",
+      "طبق بتري",
+      "ماصة",
+      "حاوية يُسمّى «جرادواتيد كيليندير»",
+      "قمع",
+      "ملقط",
+      "نظارات واقية سلامة",
+      "معطف مختبر",
+      "مادة كيميائية",
+      "عنصر",
+      "مركب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L7 Science Lab to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l7 science lab vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["microscope", "test tube", "beaker", "flask"],
+          "scenario": "The guide or scientist draws attention to microscope, test tube, beaker, and flask. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["microscope", "test tube", "beaker", "flask"],
+            "expectedAnswer": "microscope"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to microscope, test tube, beaker, and flask. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bunsen burner", "petri dish", "pipette", "graduated cylinder"],
+          "scenario": "The guide or scientist draws attention to bunsen burner, petri dish, pipette, and graduated cylinder. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bunsen burner", "petri dish", "pipette", "graduated cylinder"],
+            "expectedAnswer": "Bunsen burner"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to bunsen burner, petri dish, pipette, and graduated cylinder. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["funnel", "tongs", "safety goggles", "lab coat"],
+          "scenario": "The guide or scientist draws attention to funnel, tongs, safety goggles, and lab coat. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["funnel", "tongs", "safety goggles", "lab coat"],
+            "expectedAnswer": "funnel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to funnel, tongs, safety goggles, and lab coat. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["chemical", "element", "compound"],
+          "scenario": "The guide or scientist draws attention to chemical, element, and compound. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["chemical", "element", "compound"],
+            "expectedAnswer": "chemical"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to chemical, element, and compound. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L7 Science Lab: Travel/Visitor Guide",
+      "text": "A practical situation involving l7 science lab requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to microscope, test tube, beaker, and flask. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to bunsen burner, petri dish, pipette, and graduated cylinder. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to funnel, tongs, safety goggles, and lab coat. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Science Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "microscope"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bunsen burner"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "funnel"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "chemical"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "microscope"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "flask"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Telescope” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L7 Science Lab: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Telescope, Camera from observatory-5\n3 lesson(s) back: Spectrograph, CCD Camera from observatory-3\n7 lesson(s) back: fire boots, gloves from fire-station-3"
+  },
+  {
+    "lessonId": "science-lab-2",
+    "lessonName": "L7 Science Lab 2",
+    "unitId": "science-lab",
+    "unitName": "L7 Science Lab",
+    "unitOrder": 141,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 653,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "molecule",
+      "atom",
+      "reaction",
+      "acid",
+      "base",
+      "solution",
+      "crystal",
+      "gas",
+      "liquid",
+      "cell",
+      "bacteria",
+      "virus",
+      "DNA",
+      "gene",
+      "organism"
+    ],
+    "targetWordsArabic": [
+      "جزيء",
+      "ذرة",
+      "تفاعل",
+      "حمض",
+      "قاعدة كيميائية",
+      "محلول",
+      "بلورة",
+      "وقود",
+      "سائل",
+      "خلية",
+      "بكتيريا",
+      "فيروس",
+      "الحمض النووي DNA",
+      "جين",
+      "كائن حي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L7 Science Lab to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l7 science lab vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["molecule", "atom", "reaction", "acid"],
+          "scenario": "The guide or scientist draws attention to molecule, atom, reaction, and acid. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["molecule", "atom", "reaction", "acid"],
+            "expectedAnswer": "molecule"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to molecule, atom, reaction, and acid. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["base", "solution", "crystal", "gas"],
+          "scenario": "The guide or scientist draws attention to base, solution, crystal, and gas. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["base", "solution", "crystal", "gas"],
+            "expectedAnswer": "base"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to base, solution, crystal, and gas. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["liquid", "cell", "bacteria", "virus"],
+          "scenario": "The guide or scientist draws attention to liquid, cell, bacteria, and virus. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["liquid", "cell", "bacteria", "virus"],
+            "expectedAnswer": "liquid"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to liquid, cell, bacteria, and virus. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["DNA", "gene", "organism"],
+          "scenario": "The guide or scientist draws attention to dna, gene, and organism. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["DNA", "gene", "organism"],
+            "expectedAnswer": "DNA"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to dna, gene, and organism. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L7 Science Lab: Review",
+      "text": "A practical situation involving l7 science lab requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to molecule, atom, reaction, and acid. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to base, solution, crystal, and gas. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to liquid, cell, bacteria, and virus. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Science Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "molecule"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "base"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "liquid"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "DNA"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "molecule"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "acid"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “microscope” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L7 Science Lab: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: microscope, test tube from science-lab-1\n3 lesson(s) back: Saturn, Uranus from observatory-4\n7 lesson(s) back: emergency exit, fire escape from fire-station-4"
+  },
+  {
+    "lessonId": "science-lab-3",
+    "lessonName": "L7 Science Lab 3",
+    "unitId": "science-lab",
+    "unitName": "L7 Science Lab",
+    "unitOrder": 141,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 654,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "tissue",
+      "organ",
+      "photosynthesis",
+      "evolution",
+      "ecosystem",
+      "specimen",
+      "magnet",
+      "prism",
+      "lens",
+      "pendulum",
+      "circuit",
+      "battery",
+      "wire",
+      "switch",
+      "pulley"
+    ],
+    "targetWordsArabic": [
+      "نسيج",
+      "عضو",
+      "تمثيل ضوئي",
+      "تطور",
+      "نظام بيئي",
+      "عينة اختبار",
+      "مغناطيس",
+      "منشور بصري",
+      "عدسة",
+      "بندول",
+      "دائرة كهربائية",
+      "بطارية",
+      "سلك",
+      "مبدّل شبكي",
+      "بكرة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L7 Science Lab to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l7 science lab vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["tissue", "organ", "photosynthesis", "evolution"],
+          "scenario": "The guide or scientist draws attention to tissue, organ, photosynthesis, and evolution. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["tissue", "organ", "photosynthesis", "evolution"],
+            "expectedAnswer": "tissue"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to tissue, organ, photosynthesis, and evolution. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["ecosystem", "specimen", "magnet", "prism"],
+          "scenario": "The guide or scientist draws attention to ecosystem, specimen, magnet, and prism. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["ecosystem", "specimen", "magnet", "prism"],
+            "expectedAnswer": "ecosystem"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to ecosystem, specimen, magnet, and prism. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["lens", "pendulum", "circuit", "battery"],
+          "scenario": "The guide or scientist draws attention to lens, pendulum, circuit, and battery. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["lens", "pendulum", "circuit", "battery"],
+            "expectedAnswer": "lens"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to lens, pendulum, circuit, and battery. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["wire", "switch", "pulley"],
+          "scenario": "The guide or scientist draws attention to wire, switch, and pulley. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["wire", "switch", "pulley"],
+            "expectedAnswer": "wire"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to wire, switch, and pulley. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L7 Science Lab: Practical Article",
+      "text": "A practical situation involving l7 science lab requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to tissue, organ, photosynthesis, and evolution. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to ecosystem, specimen, magnet, and prism. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to lens, pendulum, circuit, and battery. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Science Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "tissue"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "ecosystem"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "lens"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "wire"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "tissue"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "evolution"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “molecule” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L7 Science Lab: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: molecule, atom from science-lab-2\n3 lesson(s) back: Telescope, Camera from observatory-5\n7 lesson(s) back: Optical Telescope, Reflecting Telescope from observatory-1"
+  },
+  {
+    "lessonId": "science-lab-4",
+    "lessonName": "L7 Science Lab 4",
+    "unitId": "science-lab",
+    "unitName": "L7 Science Lab",
+    "unitOrder": 141,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 655,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "lever",
+      "spring",
+      "thermometer",
+      "hypothesis",
+      "experiment",
+      "observation",
+      "data",
+      "graph",
+      "chart",
+      "conclusion",
+      "variable",
+      "control",
+      "measurement",
+      "scale",
+      "calculator"
+    ],
+    "targetWordsArabic": [
+      "رافعة",
+      "نابض",
+      "مقياس حرارة",
+      "فرضية",
+      "تجربة",
+      "ملاحظة",
+      "بيانات",
+      "رسم بياني",
+      "خريطة ملاحية",
+      "استنتاج",
+      "متغير",
+      "عامل ضابط",
+      "قياس",
+      "مقياس رسم",
+      "آلة حاسبة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L7 Science Lab to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use l7 science lab vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["lever", "spring", "thermometer", "hypothesis"],
+          "scenario": "The guide or scientist draws attention to lever, spring, thermometer, and hypothesis. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["lever", "spring", "thermometer", "hypothesis"],
+            "expectedAnswer": "lever"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to lever, spring, thermometer, and hypothesis. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["experiment", "observation", "data", "graph"],
+          "scenario": "The guide or scientist draws attention to experiment, observation, data, and graph. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["experiment", "observation", "data", "graph"],
+            "expectedAnswer": "experiment"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to experiment, observation, data, and graph. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["chart", "conclusion", "variable", "control"],
+          "scenario": "The guide or scientist draws attention to chart, conclusion, variable, and control. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["chart", "conclusion", "variable", "control"],
+            "expectedAnswer": "chart"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to chart, conclusion, variable, and control. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["measurement", "scale", "calculator"],
+          "scenario": "The guide or scientist draws attention to measurement, scale, and calculator. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["measurement", "scale", "calculator"],
+            "expectedAnswer": "measurement"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to measurement, scale, and calculator. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L7 Science Lab: Real-Life Scenario",
+      "text": "A practical situation involving l7 science lab requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to lever, spring, thermometer, and hypothesis. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to experiment, observation, data, and graph. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to chart, conclusion, variable, and control. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Science Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "lever"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "experiment"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "chart"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "measurement"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "lever"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "hypothesis"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “tissue” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L7 Science Lab: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: tissue, organ from science-lab-3\n3 lesson(s) back: microscope, test tube from science-lab-1\n7 lesson(s) back: Asteroid, Nebula from observatory-2"
+  }
+]

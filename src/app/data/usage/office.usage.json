@@ -1,0 +1,552 @@
+﻿[
+  {
+    "lessonId": "office-1",
+    "lessonName": "The Office 1",
+    "unitId": "office",
+    "unitName": "The Office",
+    "unitOrder": 142,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 656,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Desk",
+      "Office Chair",
+      "Filing Cabinet",
+      "Bookshelf",
+      "Cubicle",
+      "Standing Desk",
+      "Conference Table",
+      "Whiteboard",
+      "Bulletin Board",
+      "Partition",
+      "Computer",
+      "Monitor",
+      "Keyboard",
+      "Mouse",
+      "Printer"
+    ],
+    "targetWordsArabic": [
+      "مَكْتَب",
+      "كرسي مكتب",
+      "خزانة ملفات",
+      "رَفُّ الكُتُب / مَكْتَبَةٌ حَائِطِيَّة",
+      "غرفة يُسمّى «كوبيكلي»",
+      "مكتب للوقوف",
+      "طاولة مؤتمر",
+      "سبورة بيضاء",
+      "مصطلح مرتبط بالموضوع يُسمّى «بولليتين بوارد»",
+      "نظام يُسمّى «بارتيتيون»",
+      "حاسوب",
+      "شاشة مراقبة",
+      "لوحة مفاتيح",
+      "فأرة حاسوب",
+      "طابعة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Office to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the office vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Desk", "Office Chair", "Filing Cabinet", "Bookshelf"],
+          "scenario": "A team member works at the desk with the computer close by. The office chair is adjusted so the employee can sit comfortably at the desk. Paper records are stored in the filing cabinet. Reference books are kept on the bookshelf.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Desk", "Office Chair", "Filing Cabinet", "Bookshelf"],
+            "expectedAnswer": "Desk"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: A team member works at the desk with the computer close by. The office chair is adjusted so the employee can sit comfortably at the desk. Paper records are stored in the filing cabinet. Reference books are kept on the bookshelf. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Cubicle", "Standing Desk", "Conference Table", "Whiteboard"],
+          "scenario": "The employee works in a cubicle beside the main aisle. A colleague uses the standing desk for part of the day. The team sits around the conference table during meetings. Ideas and action points are written on the whiteboard.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cubicle", "Standing Desk", "Conference Table", "Whiteboard"],
+            "expectedAnswer": "Cubicle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The employee works in a cubicle beside the main aisle. A colleague uses the standing desk for part of the day. The team sits around the conference table during meetings. Ideas and action points are written on the whiteboard. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Bulletin Board", "Partition", "Computer", "Monitor"],
+          "scenario": "Notices and reminders are pinned to the bulletin board. A partition separates one work area from another. The employee uses the computer to complete daily tasks. The monitor displays the document the employee is editing.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bulletin Board", "Partition", "Computer", "Monitor"],
+            "expectedAnswer": "Bulletin Board"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Notices and reminders are pinned to the bulletin board. A partition separates one work area from another. The employee uses the computer to complete daily tasks. The monitor displays the document the employee is editing. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Keyboard", "Mouse", "Printer"],
+          "scenario": "The employee types the message on the keyboard. The employee uses the mouse to move the pointer on screen. The printer produces a paper copy of the report.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Keyboard", "Mouse", "Printer"],
+            "expectedAnswer": "Keyboard"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The employee types the message on the keyboard. The employee uses the mouse to move the pointer on screen. The printer produces a paper copy of the report. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Office: Case Note",
+      "text": "A realistic case involving the office shows how precise vocabulary can influence choices, explanations, and outcomes. A team member works at the desk with the computer close by. The office chair is adjusted so the employee can sit comfortably at the desk. Paper records are stored in the filing cabinet. Reference books are kept on the bookshelf. The employee works in a cubicle beside the main aisle. A colleague uses the standing desk for part of the day. The team sits around the conference table during meetings. Ideas and action points are written on the whiteboard. Notices and reminders are pinned to the bulletin board. A partition separates one work area from another. The employee uses the computer to complete daily tasks. The monitor displays the document the employee is editing. The employee types the message on the keyboard. The employee uses the mouse to move the pointer on screen. The printer produces a paper copy of the report. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Desk"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cubicle"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bulletin Board"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Keyboard"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Desk"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “lever” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Office: In Context",
+      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: lever, spring from science-lab-4\n3 lesson(s) back: molecule, atom from science-lab-2\n7 lesson(s) back: Spectrograph, CCD Camera from observatory-3"
+  },
+  {
+    "lessonId": "office-2",
+    "lessonName": "The Office 2",
+    "unitId": "office",
+    "unitName": "The Office",
+    "unitOrder": 142,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 657,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Scanner",
+      "Projector",
+      "Shredder",
+      "Fax Machine",
+      "Copier",
+      "Laptop",
+      "Headset",
+      "Webcam",
+      "Router",
+      "Server",
+      "USB Drive",
+      "External Hard Drive",
+      "Docking Station",
+      "Phone System",
+      "Video Conferencing"
+    ],
+    "targetWordsArabic": [
+      "ماسح ضوئي",
+      "جهاز عرض",
+      "آلة تمزيق الورق",
+      "جهاز فاكس",
+      "مادة يُسمّى «كوبيير»",
+      "حَاسُوبٌ مَحْمُول (لَابْتُوب)",
+      "مصطلح مرتبط بالموضوع يُسمّى «هيادسيت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ويبكام»",
+      "موجّه",
+      "مصطلح مرتبط بالموضوع يُسمّى «سيرفير»",
+      "ذاكرة USB",
+      "جهاز يُسمّى «يكستيرنال هارد دريفي»",
+      "جهاز يُسمّى «دوكينج ستاتيون»",
+      "نظام هاتف",
+      "جهاز يُسمّى «فيديو كونفيرينكينج»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Office to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the office vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Scanner", "Projector", "Shredder", "Fax Machine"],
+          "scenario": "The worker uses the scanner, projector, shredder, and fax machine during the task, choosing each tool for a different job.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Scanner", "Projector", "Shredder", "Fax Machine"],
+            "expectedAnswer": "Scanner"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The worker uses the scanner, projector, shredder, and fax machine during the task, choosing each tool for a different job. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Copier", "Laptop", "Headset", "Webcam"],
+          "scenario": "The team uses or discusses copier, laptop, headset, and webcam during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Copier", "Laptop", "Headset", "Webcam"],
+            "expectedAnswer": "Copier"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses copier, laptop, headset, and webcam during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Router", "Server", "USB Drive", "External Hard Drive"],
+          "scenario": "The team uses or discusses router, server, usb drive, and external hard drive during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Router", "Server", "USB Drive", "External Hard Drive"],
+            "expectedAnswer": "Router"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses router, server, usb drive, and external hard drive during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Docking Station", "Phone System", "Video Conferencing"],
+          "scenario": "The team uses or discusses docking station, phone system, and video conferencing during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Docking Station", "Phone System", "Video Conferencing"],
+            "expectedAnswer": "Docking Station"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses docking station, phone system, and video conferencing during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Office: Report Excerpt",
+      "text": "A realistic case involving the office shows how precise vocabulary can influence choices, explanations, and outcomes. The worker uses the scanner, projector, shredder, and fax machine during the task, choosing each tool for a different job. The team uses or discusses copier, laptop, headset, and webcam during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses router, server, usb drive, and external hard drive during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses docking station, phone system, and video conferencing during the workday. The words connect to organization, communication, equipment, or decision-making. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Scanner"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Copier"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Router"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Docking Station"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Scanner"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Desk” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Office: In Context",
+      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Desk, Office Chair from office-1\n3 lesson(s) back: tissue, organ from science-lab-3\n7 lesson(s) back: Saturn, Uranus from observatory-4"
+  },
+  {
+    "lessonId": "office-3",
+    "lessonName": "The Office 3",
+    "unitId": "office",
+    "unitName": "The Office",
+    "unitOrder": 142,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 658,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Reception",
+      "Lobby",
+      "Break Room",
+      "Kitchen",
+      "Meeting Room",
+      "Corner Office",
+      "Open Floor Plan",
+      "Mailroom",
+      "Storage Room",
+      "Restroom",
+      "Dress Code",
+      "Happy Hour",
+      "Team Building",
+      "Performance Review",
+      "Onboarding"
+    ],
+    "targetWordsArabic": [
+      "استقبال",
+      "ردهة",
+      "غرفة استراحة",
+      "-",
+      "غرفة اجتماع",
+      "مكتب في زاوية المبنى",
+      "مخطط مكتبي مفتوح",
+      "غرفة البريد",
+      "غرفة تخزين",
+      "دورة مياه",
+      "مكان يُسمّى «دريسس كودي»",
+      "مشروب يُسمّى «هاببي هوور»",
+      "بناء الفريق",
+      "عامل يُسمّى «بيرفورمانكي ريفييو»",
+      "تهيئة الموظف الجديد"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Office to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the office vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Reception", "Lobby", "Break Room", "Kitchen"],
+          "scenario": "The team uses or discusses reception, lobby, break room, and kitchen during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Reception", "Lobby", "Break Room", "Kitchen"],
+            "expectedAnswer": "Reception"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses reception, lobby, break room, and kitchen during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Meeting Room", "Corner Office", "Open Floor Plan", "Mailroom"],
+          "scenario": "The team uses or discusses meeting room, corner office, open floor plan, and mailroom during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Meeting Room", "Corner Office", "Open Floor Plan", "Mailroom"],
+            "expectedAnswer": "Meeting Room"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses meeting room, corner office, open floor plan, and mailroom during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Storage Room", "Restroom", "Dress Code", "Happy Hour"],
+          "scenario": "The team uses or discusses storage room, restroom, dress code, and happy hour during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Storage Room", "Restroom", "Dress Code", "Happy Hour"],
+            "expectedAnswer": "Storage Room"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses storage room, restroom, dress code, and happy hour during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Team Building", "Performance Review", "Onboarding"],
+          "scenario": "The team uses or discusses team building, performance review, and onboarding during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Team Building", "Performance Review", "Onboarding"],
+            "expectedAnswer": "Team Building"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses team building, performance review, and onboarding during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Office: Workplace/Academic Scenario",
+      "text": "A realistic case involving the office shows how precise vocabulary can influence choices, explanations, and outcomes. The team uses or discusses reception, lobby, break room, and kitchen during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses meeting room, corner office, open floor plan, and mailroom during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses storage room, restroom, dress code, and happy hour during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses team building, performance review, and onboarding during the workday. The words connect to organization, communication, equipment, or decision-making. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Reception"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Meeting Room"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Storage Room"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Team Building"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Reception"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Scanner” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Office: In Context",
+      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Scanner, Projector from office-2\n3 lesson(s) back: lever, spring from science-lab-4\n7 lesson(s) back: Telescope, Camera from observatory-5"
+  },
+  {
+    "lessonId": "office-4",
+    "lessonName": "The Office 4",
+    "unitId": "office",
+    "unitName": "The Office",
+    "unitOrder": 142,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 659,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Remote Work",
+      "Flex Hours",
+      "Open Door Policy",
+      "Water Cooler",
+      "Office Party"
+    ],
+    "targetWordsArabic": [
+      "العمل عن بُعد",
+      "ساعات عمل مرنة",
+      "سياسة الباب المفتوح",
+      "صندوق تبريد ماء",
+      "حفلة مكتب"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Office to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the office vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "opinion paragraph",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Remote Work", "Flex Hours", "Open Door Policy", "Water Cooler"],
+          "scenario": "The team uses or discusses remote work, flex hours, open door policy, and water cooler during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Remote Work", "Flex Hours", "Open Door Policy", "Water Cooler"],
+            "expectedAnswer": "Remote Work"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses remote work, flex hours, open door policy, and water cooler during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": "Office Party",
+          "scenario": "The group talks about the office party, comparing what usually happens at each event.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": "Office Party",
+            "expectedAnswer": "Office Party"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group talks about the office party, comparing what usually happens at each event. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Office: Opinion Paragraph",
+      "text": "A realistic case involving the office shows how precise vocabulary can influence choices, explanations, and outcomes. The team uses or discusses remote work, flex hours, open door policy, and water cooler during the workday. The words connect to organization, communication, equipment, or decision-making. The group talks about the office party, comparing what usually happens at each event. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Remote Work"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Office Party"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Remote Work"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Reception” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Office: In Context",
+      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Reception, Lobby from office-3\n3 lesson(s) back: Desk, Office Chair from office-1\n7 lesson(s) back: microscope, test tube from science-lab-1"
+  }
+]

@@ -1,9 +1,9 @@
 import { test, expect } from "@playwright/test";
 
 test("library defers the dictionary until a lesson needs it", async ({ page }) => {
-  const dictionaryRequests: string[] = [];
+  const lexiconShardRequests = new Set<string>();
   page.on("request", (request) => {
-    if (request.url().includes("lexicon-dictionary-")) dictionaryRequests.push(request.url());
+    if (/\/lexicon-\d+-/.test(request.url())) lexiconShardRequests.add(request.url());
   });
   await page.addInitScript(() => {
     localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "library" }));
@@ -14,14 +14,16 @@ test("library defers the dictionary until a lesson needs it", async ({ page }) =
     .first()
     .click();
   await expect(page.getByText("The Garden", { exact: true })).toBeVisible();
-  expect(dictionaryRequests).toHaveLength(0);
+  expect(lexiconShardRequests.size).toBe(0);
 
   // The empty review screen has no words to look up, so it fetches nothing.
   await page.goto("/#/review");
   await expect(page.getByRole("heading", { name: "No memory data yet" })).toBeVisible();
-  expect(dictionaryRequests).toHaveLength(0);
+  expect(lexiconShardRequests.size).toBe(0);
 
-  // Starting a lesson needs dictionary insights — exactly one deferred fetch.
+  // Starting a lesson requests only the active word shard and, at most, one
+  // speculative next-word shard. The former monolithic dictionary chunk no
+  // longer exists, so this assertion follows the bounded shard contract.
   await page.goto("/#/learn/construction-site");
   await page.getByRole("heading", { name: /Construction Site/i }).waitFor({ timeout: 15000 });
   await page
@@ -29,7 +31,8 @@ test("library defers the dictionary until a lesson needs it", async ({ page }) =
     .first()
     .click();
   await expect(page.getByRole("heading", { name: "Listen & repeat" })).toBeVisible();
-  await expect.poll(() => dictionaryRequests.length, { timeout: 15000 }).toBe(1);
+  await expect.poll(() => lexiconShardRequests.size, { timeout: 15000 }).toBeGreaterThan(0);
+  expect(lexiconShardRequests.size).toBeLessThanOrEqual(2);
 });
 
 test("learn path links to the optional library", async ({ page }) => {

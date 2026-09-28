@@ -28,9 +28,9 @@ describe("Vocabulary descriptions", () => {
     // Full bilingual catalogue imported — 10332 words have Arabic translations
     // (one intentional exclusion: "1099" has no Arabic equivalent).
     // Generic "The term X was used in Y lesson." examples have been stripped;
-    // 3464 words have curated example sentences from the approved catalogue.
+    // 3496 words have curated example sentences from the approved catalogue.
     expect(translated).toHaveLength(10332);
-    expect(examples).toHaveLength(3464);
+    expect(examples).toHaveLength(3496);
     expect(
       vocabulary.filter(
         (word) =>
@@ -83,6 +83,15 @@ describe("Vocabulary descriptions", () => {
     expect(unitWords.get("vegetables")?.find((word) => word.id === "ginger")?.exampleUsage).toBe(
       "She grated fresh ginger into the soup."
     );
+    expect(
+      unitWords.get("numbers-counting")?.find((word) => word.id === "three")?.arabicTranslation
+    ).toBe("ثلاثة");
+    expect(
+      unitWords.get("numbers-counting")?.find((word) => word.id === "divided-by")?.arabicTranslation
+    ).toBe("مقسوم على");
+    expect(
+      unitWords.get("numbers-counting")?.find((word) => word.id === "seventeen")?.exampleUsage
+    ).toBe("I can see seventeen birds.");
 
     const correctedFruitImages = [
       "lemon",

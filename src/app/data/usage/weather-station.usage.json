@@ -1,0 +1,751 @@
+﻿[
+  {
+    "lessonId": "weather-station-1",
+    "lessonName": "The Weather Station 1",
+    "unitId": "weather-station",
+    "unitName": "The Weather Station",
+    "unitOrder": 42,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 199,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Sunshine",
+      "Clear Sky",
+      "Partly Cloudy",
+      "Warm Breeze",
+      "Dry Air",
+      "Blue Sky",
+      "Calm",
+      "Mild Temperature",
+      "Pleasant",
+      "Balmy",
+      "Rain",
+      "Drizzle",
+      "Downpour",
+      "Puddle",
+      "Flood"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "مَطَر (غَيْث)",
+      "-",
+      "-",
+      "بِرْكَةُ مَاءٍ صَغِيرَة",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Weather Station to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the weather station vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sunshine", "Clear Sky", "Partly Cloudy"],
+          "scenario": "The lesson places sunshine, clear sky, and partly cloudy in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Sunshine", "Clear Sky", "Partly Cloudy"],
+            "expectedAnswer": "Sunshine"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places sunshine, clear sky, and partly cloudy in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Warm Breeze", "Dry Air", "Blue Sky"],
+          "scenario": "The lesson places warm breeze, dry air, and blue sky in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Warm Breeze", "Dry Air", "Blue Sky"],
+            "expectedAnswer": "Warm Breeze"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places warm breeze, dry air, and blue sky in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Calm", "Mild Temperature", "Pleasant"],
+          "scenario": "The lesson places calm, mild temperature, and pleasant in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Calm", "Mild Temperature", "Pleasant"],
+            "expectedAnswer": "Calm"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places calm, mild temperature, and pleasant in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Balmy", "Rain", "Drizzle"],
+          "scenario": "The lesson places balmy, rain, and drizzle in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Balmy", "Rain", "Drizzle"],
+            "expectedAnswer": "Balmy"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places balmy, rain, and drizzle in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Downpour", "Puddle", "Flood"],
+          "scenario": "The lesson places downpour, puddle, and flood in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Downpour", "Puddle", "Flood"],
+            "expectedAnswer": "Downpour"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places downpour, puddle, and flood in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Weather Station: Short Description",
+      "text": "Maya is in a situation connected to the weather station. She uses the new words to understand what she sees and what happens next. The lesson places sunshine, clear sky, and partly cloudy in one coherent situation so the learner can connect meaning, context, and use. The lesson places warm breeze, dry air, and blue sky in one coherent situation so the learner can connect meaning, context, and use. The lesson places calm, mild temperature, and pleasant in one coherent situation so the learner can connect meaning, context, and use. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Weather Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sunshine"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Warm Breeze"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Calm"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Balmy"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Downpour"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Sunshine"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Partly Cloudy"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Weather Map” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Weather Station: In Context",
+      "idea": "30-45 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Weather Map, Forecast from seasons-weather-4\n3 lesson(s) back: Foggy, Stormy from seasons-weather-2\n7 lesson(s) back: Cilantro, Dill from seasonings-condiments-2"
+  },
+  {
+    "lessonId": "weather-station-2",
+    "lessonName": "The Weather Station 2",
+    "unitId": "weather-station",
+    "unitName": "The Weather Station",
+    "unitOrder": 42,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 200,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Rainbow",
+      "Umbrella",
+      "Raincoat",
+      "Rain Boots",
+      "Wet Road",
+      "Snow",
+      "Snowflake",
+      "Ice",
+      "Frost",
+      "Hail",
+      "Sleet",
+      "Icicle",
+      "Snowstorm",
+      "Frozen Pond",
+      "Fog"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "مِظَلَّة (شَمْسِيَّةُ الشَّاطِئ)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Weather Station to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the weather station vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Rainbow", "Umbrella", "Raincoat"],
+          "scenario": "The lesson places rainbow, umbrella, and raincoat in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Rainbow", "Umbrella", "Raincoat"],
+            "expectedAnswer": "Rainbow"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places rainbow, umbrella, and raincoat in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Rain Boots", "Wet Road", "Snow"],
+          "scenario": "The lesson places rain boots, wet road, and snow in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Rain Boots", "Wet Road", "Snow"],
+            "expectedAnswer": "Rain Boots"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places rain boots, wet road, and snow in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Snowflake", "Ice", "Frost"],
+          "scenario": "The lesson places snowflake, ice, and frost in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Snowflake", "Ice", "Frost"],
+            "expectedAnswer": "Snowflake"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places snowflake, ice, and frost in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Hail", "Sleet", "Icicle"],
+          "scenario": "The lesson places hail, sleet, and icicle in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Hail", "Sleet", "Icicle"],
+            "expectedAnswer": "Hail"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places hail, sleet, and icicle in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Snowstorm", "Frozen Pond", "Fog"],
+          "scenario": "The lesson places snowstorm, frozen pond, and fog in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Snowstorm", "Frozen Pond", "Fog"],
+            "expectedAnswer": "Snowstorm"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places snowstorm, frozen pond, and fog in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Weather Station: Mini Dialogue",
+      "text": "Maya is in a situation connected to the weather station. She uses the new words to understand what she sees and what happens next. The lesson places rainbow, umbrella, and raincoat in one coherent situation so the learner can connect meaning, context, and use. The lesson places rain boots, wet road, and snow in one coherent situation so the learner can connect meaning, context, and use. The lesson places snowflake, ice, and frost in one coherent situation so the learner can connect meaning, context, and use. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Weather Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rainbow"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rain Boots"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Snowflake"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hail"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Snowstorm"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Rainbow"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Raincoat"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Sunshine” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Weather Station: In Context",
+      "idea": "30-45 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Sunshine, Clear Sky from weather-station-1\n3 lesson(s) back: Hot, Warm from seasons-weather-3\n7 lesson(s) back: Olive Oil, Vegetable Oil from seasonings-condiments-3"
+  },
+  {
+    "lessonId": "weather-station-3",
+    "lessonName": "The Weather Station 3",
+    "unitId": "weather-station",
+    "unitName": "The Weather Station",
+    "unitOrder": 42,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 201,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Thunderstorm",
+      "Lightning",
+      "Thunder",
+      "Tornado",
+      "Hurricane",
+      "Strong Wind",
+      "Dust Storm",
+      "Heat Wave",
+      "Drought",
+      "Blizzard",
+      "Thermometer",
+      "Barometer",
+      "Anemometer",
+      "Rain Gauge",
+      "Weather Vane"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "مِقْيَاسُ الحَرَارَة (تِرْمُومِتْر)",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Weather Station to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the weather station vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Thunderstorm", "Lightning", "Thunder"],
+          "scenario": "The lesson places thunderstorm, lightning, and thunder in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Thunderstorm", "Lightning", "Thunder"],
+            "expectedAnswer": "Thunderstorm"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places thunderstorm, lightning, and thunder in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Tornado", "Hurricane", "Strong Wind"],
+          "scenario": "The lesson places tornado, hurricane, and strong wind in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Tornado", "Hurricane", "Strong Wind"],
+            "expectedAnswer": "Tornado"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places tornado, hurricane, and strong wind in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Dust Storm", "Heat Wave", "Drought"],
+          "scenario": "The lesson places dust storm, heat wave, and drought in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Dust Storm", "Heat Wave", "Drought"],
+            "expectedAnswer": "Dust Storm"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places dust storm, heat wave, and drought in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Blizzard", "Thermometer", "Barometer"],
+          "scenario": "The lesson places blizzard, thermometer, and barometer in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Blizzard", "Thermometer", "Barometer"],
+            "expectedAnswer": "Blizzard"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places blizzard, thermometer, and barometer in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Anemometer", "Rain Gauge", "Weather Vane"],
+          "scenario": "The worker uses the anemometer, rain gauge, and weather vane during the task, choosing each tool for a different job.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Anemometer", "Rain Gauge", "Weather Vane"],
+            "expectedAnswer": "Anemometer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The worker uses the anemometer, rain gauge, and weather vane during the task, choosing each tool for a different job. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Weather Station: Simple Message",
+      "text": "Maya is in a situation connected to the weather station. She uses the new words to understand what she sees and what happens next. The lesson places thunderstorm, lightning, and thunder in one coherent situation so the learner can connect meaning, context, and use. The lesson places tornado, hurricane, and strong wind in one coherent situation so the learner can connect meaning, context, and use. The lesson places dust storm, heat wave, and drought in one coherent situation so the learner can connect meaning, context, and use. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Weather Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Thunderstorm"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tornado"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dust Storm"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Blizzard"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Anemometer"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Thunderstorm"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Thunder"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Rainbow” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Weather Station: In Context",
+      "idea": "30-45 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Rainbow, Umbrella from weather-station-2\n3 lesson(s) back: Weather Map, Forecast from seasons-weather-4\n7 lesson(s) back: Peanut Butter, Nutella from seasonings-condiments-4"
+  },
+  {
+    "lessonId": "weather-station-4",
+    "lessonName": "The Weather Station 4",
+    "unitId": "weather-station",
+    "unitName": "The Weather Station",
+    "unitOrder": 42,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 202,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Hygrometer",
+      "Weather Satellite",
+      "Radar Dish",
+      "Weather Balloon",
+      "Wind Sock",
+      "Spring",
+      "Summer",
+      "Autumn",
+      "Winter",
+      "Temperature",
+      "Humidity",
+      "Wind Speed",
+      "Cloud Cover",
+      "Sunrise",
+      "Sunset"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "شُرُوقُ الشَّمْس",
+      "غُرُوبُ الشَّمْس (مَغْرِب)"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Weather Station to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the weather station vocabulary in simple context.",
+      "textType": "notice-style text",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Hygrometer", "Weather Satellite", "Radar Dish"],
+          "scenario": "The lesson places hygrometer, weather satellite, and radar dish in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Hygrometer", "Weather Satellite", "Radar Dish"],
+            "expectedAnswer": "Hygrometer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places hygrometer, weather satellite, and radar dish in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Weather Balloon", "Wind Sock", "Spring"],
+          "scenario": "The lesson places weather balloon, wind sock, and spring in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Weather Balloon", "Wind Sock", "Spring"],
+            "expectedAnswer": "Weather Balloon"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places weather balloon, wind sock, and spring in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Summer", "Autumn", "Winter"],
+          "scenario": "The lesson places summer, autumn, and winter in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Summer", "Autumn", "Winter"],
+            "expectedAnswer": "Summer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places summer, autumn, and winter in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Temperature", "Humidity", "Wind Speed"],
+          "scenario": "The lesson places temperature, humidity, and wind speed in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Temperature", "Humidity", "Wind Speed"],
+            "expectedAnswer": "Temperature"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places temperature, humidity, and wind speed in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Cloud Cover", "Sunrise", "Sunset"],
+          "scenario": "The lesson places cloud cover, sunrise, and sunset in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Cloud Cover", "Sunrise", "Sunset"],
+            "expectedAnswer": "Cloud Cover"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places cloud cover, sunrise, and sunset in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Weather Station: Notice-Style Text",
+      "text": "Maya is in a situation connected to the weather station. She uses the new words to understand what she sees and what happens next. The lesson places hygrometer, weather satellite, and radar dish in one coherent situation so the learner can connect meaning, context, and use. The lesson places weather balloon, wind sock, and spring in one coherent situation so the learner can connect meaning, context, and use. The lesson places summer, autumn, and winter in one coherent situation so the learner can connect meaning, context, and use. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Weather Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hygrometer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Weather Balloon"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Summer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Temperature"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cloud Cover"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Hygrometer"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Radar Dish"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Thunderstorm” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Weather Station: In Context",
+      "idea": "30-45 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Thunderstorm, Lightning from weather-station-3\n3 lesson(s) back: Sunshine, Clear Sky from weather-station-1\n7 lesson(s) back: Spring, Summer from seasons-weather-1"
+  },
+  {
+    "lessonId": "weather-station-5",
+    "lessonName": "The Weather Station 5",
+    "unitId": "weather-station",
+    "unitName": "The Weather Station",
+    "unitOrder": 42,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 203,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Sunny",
+      "Cloudy",
+      "Rainy",
+      "Snowy",
+      "Windy",
+      "Stormy",
+      "Foggy",
+      "Radar",
+      "Satellite",
+      "Dew"
+    ],
+    "targetWordsArabic": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+    "usage": {
+      "goal": "Use the vocabulary from The Weather Station to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the weather station vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sunny", "Cloudy", "Rainy"],
+          "scenario": "The lesson places sunny, cloudy, and rainy in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Sunny", "Cloudy", "Rainy"],
+            "expectedAnswer": "Sunny"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places sunny, cloudy, and rainy in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Snowy", "Windy", "Stormy"],
+          "scenario": "The lesson places snowy, windy, and stormy in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Snowy", "Windy", "Stormy"],
+            "expectedAnswer": "Snowy"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places snowy, windy, and stormy in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Foggy", "Radar", "Satellite"],
+          "scenario": "The lesson places foggy, radar, and satellite in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Foggy", "Radar", "Satellite"],
+            "expectedAnswer": "Foggy"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places foggy, radar, and satellite in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": "Dew",
+          "scenario": "The lesson places dew in one coherent situation so the learner can connect meaning, context, and use.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": "Dew",
+            "expectedAnswer": "Dew"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The lesson places dew in one coherent situation so the learner can connect meaning, context, and use. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Weather Station: Short Description",
+      "text": "Maya is in a situation connected to the weather station. She uses the new words to understand what she sees and what happens next. The lesson places sunny, cloudy, and rainy in one coherent situation so the learner can connect meaning, context, and use. The lesson places snowy, windy, and stormy in one coherent situation so the learner can connect meaning, context, and use. The lesson places foggy, radar, and satellite in one coherent situation so the learner can connect meaning, context, and use. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Weather Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sunny"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Snowy"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Foggy"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dew"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Sunny"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Rainy"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Hygrometer” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Weather Station: In Context",
+      "idea": "30-45 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Hygrometer, Weather Satellite from weather-station-4\n3 lesson(s) back: Rainbow, Umbrella from weather-station-2\n7 lesson(s) back: Foggy, Stormy from seasons-weather-2"
+  }
+]

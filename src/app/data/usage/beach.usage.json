@@ -1,0 +1,766 @@
+﻿[
+  {
+    "lessonId": "beach-1",
+    "lessonName": "L4 Beach 1",
+    "unitId": "beach",
+    "unitName": "L4 Beach",
+    "unitOrder": 57,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 262,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "sand",
+      "ocean",
+      "wave",
+      "shore",
+      "cliff",
+      "dune",
+      "tide pool",
+      "horizon",
+      "reef",
+      "cove",
+      "bay",
+      "lagoon",
+      "towel",
+      "sunscreen",
+      "umbrella"
+    ],
+    "targetWordsArabic": [
+      "رمل",
+      "محيط",
+      "يلوّح",
+      "شاطئ",
+      "مصطلح مرتبط بالموضوع يُسمّى «كليفف»",
+      "كثيب",
+      "بركة مدّ وجزر",
+      "أفق",
+      "شعاب",
+      "خليج صغير",
+      "حجرة خدمة",
+      "بحيرة ساحلية",
+      "منشفة",
+      "واقي شمس",
+      "مظلة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L4 Beach to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key l4 beach vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["sand", "ocean", "wave"],
+          "scenario": "Visitors move through the area and notice sand, ocean, and wave. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["sand", "ocean", "wave"],
+            "expectedAnswer": "sand"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice sand, ocean, and wave. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["shore", "cliff", "dune"],
+          "scenario": "Visitors move through the area and notice shore, cliff, and dune. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["shore", "cliff", "dune"],
+            "expectedAnswer": "shore"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice shore, cliff, and dune. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["tide pool", "horizon", "reef"],
+          "scenario": "Visitors move through the area and notice tide pool, horizon, and reef. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["tide pool", "horizon", "reef"],
+            "expectedAnswer": "tide pool"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice tide pool, horizon, and reef. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["cove", "bay", "lagoon"],
+          "scenario": "Visitors move through the area and notice cove, bay, and lagoon. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["cove", "bay", "lagoon"],
+            "expectedAnswer": "cove"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice cove, bay, and lagoon. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["towel", "sunscreen", "umbrella"],
+          "scenario": "Visitors move through the area and notice towel, sunscreen, and umbrella. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["towel", "sunscreen", "umbrella"],
+            "expectedAnswer": "towel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice towel, sunscreen, and umbrella. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L4 Beach: Short Description",
+      "text": "Maya is in a situation connected to l4 beach. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice sand, ocean, and wave. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice shore, cliff, and dune. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice tide pool, horizon, and reef. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Beach. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "sand"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "shore"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "tide pool"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "cove"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "towel"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "sand"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "wave"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “athlete” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L4 Beach: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: athlete, coach from sports-center-5\n3 lesson(s) back: long jump, high jump from sports-center-3\n7 lesson(s) back: Dumbbell, Barbell from sports-equipment-3"
+  },
+  {
+    "lessonId": "beach-2",
+    "lessonName": "L4 Beach 2",
+    "unitId": "beach",
+    "unitName": "L4 Beach",
+    "unitOrder": 57,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 263,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "beach chair",
+      "cooler",
+      "flip-flops",
+      "sunglasses",
+      "hat",
+      "swimsuit",
+      "bikini",
+      "swim trunks",
+      "goggles",
+      "snorkel",
+      "fins",
+      "swimming",
+      "surfing",
+      "snorkeling",
+      "diving"
+    ],
+    "targetWordsArabic": [
+      "كرسي شاطئ",
+      "صندوق تبريد",
+      "شبشب إصبع",
+      "نظارة شمسية",
+      "قبعة",
+      "ملابس سباحة",
+      "بيكيني",
+      "شورت سباحة",
+      "نظارات واقية",
+      "أنبوب تنفس",
+      "زعانف سباحة",
+      "سباحة",
+      "ركوب الأمواج",
+      "غطس سطحي بأنبوب تنفس",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديفينج»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L4 Beach to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key l4 beach vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["beach chair", "cooler", "flip-flops"],
+          "scenario": "Visitors move through the area and notice beach chair, cooler, and flip-flops. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["beach chair", "cooler", "flip-flops"],
+            "expectedAnswer": "beach chair"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice beach chair, cooler, and flip-flops. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["sunglasses", "hat", "swimsuit"],
+          "scenario": "Visitors move through the area and notice sunglasses, hat, and swimsuit. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["sunglasses", "hat", "swimsuit"],
+            "expectedAnswer": "sunglasses"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice sunglasses, hat, and swimsuit. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["bikini", "swim trunks", "goggles"],
+          "scenario": "Visitors move through the area and notice bikini, swim trunks, and goggles. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["bikini", "swim trunks", "goggles"],
+            "expectedAnswer": "bikini"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice bikini, swim trunks, and goggles. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["snorkel", "fins", "swimming"],
+          "scenario": "Visitors move through the area and notice snorkel, fins, and swimming. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["snorkel", "fins", "swimming"],
+            "expectedAnswer": "snorkel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice snorkel, fins, and swimming. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["surfing", "snorkeling", "diving"],
+          "scenario": "The learner connects surfing, snorkeling, and diving to the main activity and explains what each term means in context.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["surfing", "snorkeling", "diving"],
+            "expectedAnswer": "surfing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner connects surfing, snorkeling, and diving to the main activity and explains what each term means in context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L4 Beach: Mini Dialogue",
+      "text": "Maya is in a situation connected to l4 beach. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice beach chair, cooler, and flip-flops. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice sunglasses, hat, and swimsuit. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice bikini, swim trunks, and goggles. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Beach. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "beach chair"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "sunglasses"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "bikini"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "snorkel"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "surfing"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "beach chair"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "flip-flops"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “sand” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L4 Beach: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: sand, ocean from beach-1\n3 lesson(s) back: butterfly stroke, water polo from sports-center-4\n7 lesson(s) back: Scoreboard, Cones from sports-equipment-4"
+  },
+  {
+    "lessonId": "beach-3",
+    "lessonName": "L4 Beach 3",
+    "unitId": "beach",
+    "unitName": "L4 Beach",
+    "unitOrder": 57,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 264,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "kayaking",
+      "paddleboarding",
+      "boogie boarding",
+      "jet skiing",
+      "sailing",
+      "windsurfing",
+      "water skiing",
+      "fishing",
+      "sandcastle",
+      "frisbee",
+      "volleyball",
+      "sunbathing",
+      "picnic",
+      "kite flying",
+      "shell collecting"
+    ],
+    "targetWordsArabic": [
+      "التجديف بالكاياك",
+      "التجديف على لوح الوقوف",
+      "ركوب الأمواج بلوح الجسم",
+      "ركوب دراجة مائية بمحرك",
+      "إبحار شراعي",
+      "تزلج شراعي على الماء",
+      "التزلج على الماء",
+      "سمكة يُسمّى «فيشينج»",
+      "قلعة رملية",
+      "مصطلح مرتبط بالموضوع يُسمّى «فريسبيي»",
+      "كرة الطائرة",
+      "تشمس",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيكنيك»",
+      "تطيير طائرة ورقية",
+      "جمع الأصداف"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L4 Beach to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key l4 beach vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["kayaking", "paddleboarding", "boogie boarding"],
+          "scenario": "Visitors move through the area and notice kayaking, paddleboarding, and boogie boarding. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["kayaking", "paddleboarding", "boogie boarding"],
+            "expectedAnswer": "kayaking"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice kayaking, paddleboarding, and boogie boarding. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["jet skiing", "sailing", "windsurfing"],
+          "scenario": "Visitors move through the area and notice jet skiing, sailing, and windsurfing. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["jet skiing", "sailing", "windsurfing"],
+            "expectedAnswer": "jet skiing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice jet skiing, sailing, and windsurfing. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["water skiing", "fishing", "sandcastle"],
+          "scenario": "Visitors move through the area and notice water skiing, fishing, and sandcastle. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["water skiing", "fishing", "sandcastle"],
+            "expectedAnswer": "water skiing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice water skiing, fishing, and sandcastle. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["frisbee", "volleyball", "sunbathing"],
+          "scenario": "Visitors move through the area and notice frisbee, volleyball, and sunbathing. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["frisbee", "volleyball", "sunbathing"],
+            "expectedAnswer": "frisbee"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice frisbee, volleyball, and sunbathing. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["picnic", "kite flying", "shell collecting"],
+          "scenario": "Visitors move through the area and notice picnic, kite flying, and shell collecting. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["picnic", "kite flying", "shell collecting"],
+            "expectedAnswer": "picnic"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice picnic, kite flying, and shell collecting. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L4 Beach: Simple Message",
+      "text": "Maya is in a situation connected to l4 beach. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice kayaking, paddleboarding, and boogie boarding. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice jet skiing, sailing, and windsurfing. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice water skiing, fishing, and sandcastle. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Beach. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "kayaking"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "jet skiing"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "water skiing"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "frisbee"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "picnic"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "kayaking"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "boogie boarding"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “beach chair” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L4 Beach: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: beach chair, cooler from beach-2\n3 lesson(s) back: athlete, coach from sports-center-5\n7 lesson(s) back: soccer, basketball from sports-center-1"
+  },
+  {
+    "lessonId": "beach-4",
+    "lessonName": "L4 Beach 4",
+    "unitId": "beach",
+    "unitName": "L4 Beach",
+    "unitOrder": 57,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 265,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "barbecue",
+      "bonfire",
+      "reading",
+      "walking",
+      "jogging",
+      "seagull",
+      "crab",
+      "starfish",
+      "jellyfish",
+      "dolphin",
+      "sea turtle",
+      "pelican",
+      "seahorse",
+      "clam",
+      "coral"
+    ],
+    "targetWordsArabic": [
+      "يشوي على الشواية",
+      "نار مخيم",
+      "مصطلح مرتبط بالموضوع يُسمّى «ريادينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «والكينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «جوججينج»",
+      "نورس",
+      "سلطعون",
+      "نجم البحر",
+      "قنديل البحر",
+      "دلفين",
+      "مصطلح مرتبط بالموضوع يُسمّى «سيا تورتلي»",
+      "بجع",
+      "فرس البحر",
+      "مصطلح مرتبط بالموضوع يُسمّى «كلام»",
+      "مرجان"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L4 Beach to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key l4 beach vocabulary in simple context.",
+      "textType": "notice-style text",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["barbecue", "bonfire", "reading"],
+          "scenario": "Visitors move through the area and notice barbecue, bonfire, and reading. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["barbecue", "bonfire", "reading"],
+            "expectedAnswer": "barbecue"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice barbecue, bonfire, and reading. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["walking", "jogging", "seagull"],
+          "scenario": "Visitors move through the area and notice walking, jogging, and seagull. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["walking", "jogging", "seagull"],
+            "expectedAnswer": "walking"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice walking, jogging, and seagull. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["crab", "starfish", "jellyfish"],
+          "scenario": "Visitors move through the area and notice crab, starfish, and jellyfish. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["crab", "starfish", "jellyfish"],
+            "expectedAnswer": "crab"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice crab, starfish, and jellyfish. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["dolphin", "sea turtle", "pelican"],
+          "scenario": "Visitors move through the area and notice dolphin, sea turtle, and pelican. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["dolphin", "sea turtle", "pelican"],
+            "expectedAnswer": "dolphin"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice dolphin, sea turtle, and pelican. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["seahorse", "clam", "coral"],
+          "scenario": "Visitors move through the area and notice seahorse, clam, and coral. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["seahorse", "clam", "coral"],
+            "expectedAnswer": "seahorse"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice seahorse, clam, and coral. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L4 Beach: Notice-Style Text",
+      "text": "Maya is in a situation connected to l4 beach. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice barbecue, bonfire, and reading. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice walking, jogging, and seagull. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice crab, starfish, and jellyfish. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Beach. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "barbecue"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "walking"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "crab"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "dolphin"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "seahorse"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "barbecue"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "reading"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “kayaking” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L4 Beach: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: kayaking, paddleboarding from beach-3\n3 lesson(s) back: sand, ocean from beach-1\n7 lesson(s) back: helmet, shin guard from sports-center-2"
+  },
+  {
+    "lessonId": "beach-5",
+    "lessonName": "L4 Beach 5",
+    "unitId": "beach",
+    "unitName": "L4 Beach",
+    "unitOrder": 57,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 266,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "seaweed",
+      "sea urchin",
+      "lifeguard",
+      "lifeguard tower",
+      "warning flag",
+      "first aid kit",
+      "shower",
+      "changing room",
+      "boardwalk",
+      "pier",
+      "parking lot",
+      "trash can"
+    ],
+    "targetWordsArabic": [
+      "أعشاب بحرية",
+      "قنفذ البحر",
+      "منقذ سباحة",
+      "برج منقذ",
+      "علم تحذير",
+      "أول إسعاف طقم",
+      "دُش",
+      "غرفة تبديل الملابس",
+      "ممشى خشبي",
+      "رصيف بحري",
+      "موقف سيارات",
+      "حاوية يُسمّى «تراش كان»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from L4 Beach to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key l4 beach vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["seaweed", "sea urchin", "lifeguard"],
+          "scenario": "Visitors move through the area and notice seaweed, sea urchin, and lifeguard. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["seaweed", "sea urchin", "lifeguard"],
+            "expectedAnswer": "seaweed"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice seaweed, sea urchin, and lifeguard. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["lifeguard tower", "warning flag", "first aid kit"],
+          "scenario": "Visitors move through the area and notice lifeguard tower, warning flag, and first aid kit. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["lifeguard tower", "warning flag", "first aid kit"],
+            "expectedAnswer": "lifeguard tower"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice lifeguard tower, warning flag, and first aid kit. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["shower", "changing room", "boardwalk"],
+          "scenario": "Visitors move through the area and notice shower, changing room, and boardwalk. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["shower", "changing room", "boardwalk"],
+            "expectedAnswer": "shower"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice shower, changing room, and boardwalk. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["pier", "parking lot", "trash can"],
+          "scenario": "Visitors move through the area and notice pier, parking lot, and trash can. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["pier", "parking lot", "trash can"],
+            "expectedAnswer": "pier"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice pier, parking lot, and trash can. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "L4 Beach: Short Description",
+      "text": "Maya is in a situation connected to l4 beach. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice seaweed, sea urchin, and lifeguard. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice lifeguard tower, warning flag, and first aid kit. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice shower, changing room, and boardwalk. The scene gives each word a clear place in the outdoor setting. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Beach. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "seaweed"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "lifeguard tower"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "shower"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "pier"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "seaweed"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "lifeguard"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “barbecue” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "L4 Beach: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: barbecue, bonfire from beach-4\n3 lesson(s) back: beach chair, cooler from beach-2\n7 lesson(s) back: long jump, high jump from sports-center-3"
+  }
+]

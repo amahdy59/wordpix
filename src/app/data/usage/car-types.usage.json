@@ -1,0 +1,427 @@
+﻿[
+  {
+    "lessonId": "car-types-1",
+    "lessonName": "Car Types 1",
+    "unitId": "car-types",
+    "unitName": "Car Types",
+    "unitOrder": 162,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 720,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Sedan",
+      "Hatchback",
+      "Coupe",
+      "Convertible",
+      "Station Wagon",
+      "Crossover",
+      "SUV",
+      "Minivan",
+      "Sports Car",
+      "Luxury Car",
+      "Pickup Truck",
+      "Van",
+      "Box Truck",
+      "Semi-Truck",
+      "Tow Truck"
+    ],
+    "targetWordsArabic": [
+      "سيارة سيدان",
+      "مصطلح مرتبط بالموضوع يُسمّى «هاتتشباك»",
+      "جزء يُسمّى «كووبي»",
+      "سيارة مكشوفة",
+      "منطقة يُسمّى «ستاتيون واجون»",
+      "أسلوب أو طراز يُسمّى «كروسسوفير»",
+      "سيارة رياضية متعددة الاستخدامات",
+      "شكل يُسمّى «مينيفان»",
+      "سيارة رياضي",
+      "مادة يُسمّى «لوكسوري كار»",
+      "شاحنة استلام",
+      "شاحنة صغيرة",
+      "شاحنة صندوق",
+      "شاحنة نصف مقطورة",
+      "مركبة يُسمّى «توو تروك»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Car Types to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use car types vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sedan", "Hatchback", "Coupe", "Convertible"],
+          "scenario": "The technician or salesperson discusses sedan, hatchback, coupe, and convertible with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sedan", "Hatchback", "Coupe", "Convertible"],
+            "expectedAnswer": "Sedan"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses sedan, hatchback, coupe, and convertible with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Station Wagon", "Crossover", "SUV", "Minivan"],
+          "scenario": "The technician or salesperson discusses station wagon, crossover, suv, and minivan with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Station Wagon", "Crossover", "SUV", "Minivan"],
+            "expectedAnswer": "Station Wagon"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses station wagon, crossover, suv, and minivan with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Sports Car", "Luxury Car", "Pickup Truck", "Van"],
+          "scenario": "The customer or traveler compares the sports car, luxury car, pickup truck, and van, thinking about where and why each type is used.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sports Car", "Luxury Car", "Pickup Truck", "Van"],
+            "expectedAnswer": "Sports Car"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The customer or traveler compares the sports car, luxury car, pickup truck, and van, thinking about where and why each type is used. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Box Truck", "Semi-Truck", "Tow Truck"],
+          "scenario": "The customer or traveler compares the box truck, semi-truck, and tow truck, thinking about where and why each type is used.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Box Truck", "Semi-Truck", "Tow Truck"],
+            "expectedAnswer": "Box Truck"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The customer or traveler compares the box truck, semi-truck, and tow truck, thinking about where and why each type is used. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Car Types: Report Excerpt",
+      "text": "A realistic case involving car types shows how precise vocabulary can influence choices, explanations, and outcomes. The technician or salesperson discusses sedan, hatchback, coupe, and convertible with the customer. Each term belongs to a different part of the vehicle or buying process. The technician or salesperson discusses station wagon, crossover, suv, and minivan with the customer. Each term belongs to a different part of the vehicle or buying process. The customer or traveler compares the sports car, luxury car, pickup truck, and van, thinking about where and why each type is used. The customer or traveler compares the box truck, semi-truck, and tow truck, thinking about where and why each type is used. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Car Types. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sedan"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Station Wagon"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sports Car"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Box Truck"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Sedan"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Sofa” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Car Types: In Context",
+      "idea": "45-70 seconds contextual scene in the automotive setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the automotive setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Sofa, Bed Frame from moving-settling-in-3\n3 lesson(s) back: Moving Box, Packing Tape from moving-settling-in-1\n7 lesson(s) back: Listing Agreement, Purchase Agreement from real-estate-agency-3"
+  },
+  {
+    "lessonId": "car-types-2",
+    "lessonName": "Car Types 2",
+    "unitId": "car-types",
+    "unitName": "Car Types",
+    "unitOrder": 162,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 721,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Dump Truck",
+      "Flatbed",
+      "Tanker",
+      "Delivery Van",
+      "Food Truck",
+      "Electric Car",
+      "Hybrid",
+      "Muscle Car",
+      "Classic Car",
+      "Race Car",
+      "Off-Road Vehicle",
+      "Limousine",
+      "Hearse",
+      "Armored Car",
+      "Golf Cart"
+    ],
+    "targetWordsArabic": [
+      "حاوية يُسمّى «دومب تروك»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فلاتبيد»",
+      "ناقلة",
+      "شاحنة صغيرة توصيل",
+      "شاحنة طعام",
+      "مركبة يُسمّى «يليكتريك كار»",
+      "مصطلح مرتبط بالموضوع يُسمّى «هيبريد»",
+      "سيارة عضلية عالية الأداء",
+      "سيارة كلاسيكية",
+      "مصطلح مرتبط بالموضوع يُسمّى «راكي كار»",
+      "مركبة للطرق الوعرة",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليمووسيني»",
+      "مركبة يُسمّى «هيارسي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ارموريد كار»",
+      "مركبة يُسمّى «جولف كارت»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Car Types to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use car types vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Dump Truck", "Flatbed", "Tanker", "Delivery Van"],
+          "scenario": "The technician or salesperson discusses dump truck, flatbed, tanker, and delivery van with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dump Truck", "Flatbed", "Tanker", "Delivery Van"],
+            "expectedAnswer": "Dump Truck"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses dump truck, flatbed, tanker, and delivery van with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Food Truck", "Electric Car", "Hybrid", "Muscle Car"],
+          "scenario": "The technician or salesperson discusses food truck, electric car, hybrid, and muscle car with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Food Truck", "Electric Car", "Hybrid", "Muscle Car"],
+            "expectedAnswer": "Food Truck"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses food truck, electric car, hybrid, and muscle car with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Classic Car", "Race Car", "Off-Road Vehicle", "Limousine"],
+          "scenario": "The technician or salesperson discusses classic car, race car, off-road vehicle, and limousine with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Classic Car", "Race Car", "Off-Road Vehicle", "Limousine"],
+            "expectedAnswer": "Classic Car"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses classic car, race car, off-road vehicle, and limousine with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Hearse", "Armored Car", "Golf Cart"],
+          "scenario": "The customer or traveler compares the hearse, armored car, and golf cart, thinking about where and why each type is used.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hearse", "Armored Car", "Golf Cart"],
+            "expectedAnswer": "Hearse"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The customer or traveler compares the hearse, armored car, and golf cart, thinking about where and why each type is used. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Car Types: Case Note",
+      "text": "A realistic case involving car types shows how precise vocabulary can influence choices, explanations, and outcomes. The technician or salesperson discusses dump truck, flatbed, tanker, and delivery van with the customer. Each term belongs to a different part of the vehicle or buying process. The technician or salesperson discusses food truck, electric car, hybrid, and muscle car with the customer. Each term belongs to a different part of the vehicle or buying process. The technician or salesperson discusses classic car, race car, off-road vehicle, and limousine with the customer. Each term belongs to a different part of the vehicle or buying process. The customer or traveler compares the hearse, armored car, and golf cart, thinking about where and why each type is used. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Car Types. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dump Truck"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Food Truck"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Classic Car"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hearse"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Dump Truck"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Sedan” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Car Types: In Context",
+      "idea": "45-70 seconds contextual scene in the automotive setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the automotive setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Sedan, Hatchback from car-types-1\n3 lesson(s) back: Sort, Donate from moving-settling-in-2\n7 lesson(s) back: Living Room, Bedroom from home-features-1"
+  },
+  {
+    "lessonId": "car-types-3",
+    "lessonName": "Car Types 3",
+    "unitId": "car-types",
+    "unitName": "Car Types",
+    "unitOrder": 162,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 722,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Motorcycle",
+      "Scooter",
+      "Moped",
+      "Dirt Bike",
+      "Chopper",
+      "Cruiser",
+      "Sport Bike",
+      "Touring Bike",
+      "Electric Scooter",
+      "Vespa"
+    ],
+    "targetWordsArabic": [
+      "دراجة نارية",
+      "قارب يُسمّى «سكووتير»",
+      "مصطلح مرتبط بالموضوع يُسمّى «موبيد»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديرت بيكي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تشوببير»",
+      "شجرة يُسمّى «كرويسير»",
+      "دراجة نارية رياضية",
+      "دراجة نارية سياحية",
+      "سكوتر كهربائي",
+      "مصطلح مرتبط بالموضوع يُسمّى «فيسبا»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Car Types to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use car types vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "review",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Motorcycle", "Scooter", "Moped", "Dirt Bike"],
+          "scenario": "The technician or salesperson discusses motorcycle, scooter, moped, and dirt bike with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Motorcycle", "Scooter", "Moped", "Dirt Bike"],
+            "expectedAnswer": "Motorcycle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses motorcycle, scooter, moped, and dirt bike with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Chopper", "Cruiser", "Sport Bike", "Touring Bike"],
+          "scenario": "The technician or salesperson discusses chopper, cruiser, sport bike, and touring bike with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Chopper", "Cruiser", "Sport Bike", "Touring Bike"],
+            "expectedAnswer": "Chopper"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses chopper, cruiser, sport bike, and touring bike with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Electric Scooter", "Vespa"],
+          "scenario": "The technician or salesperson discusses electric scooter and vespa with the customer. Each term belongs to a different part of the vehicle or buying process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Electric Scooter", "Vespa"],
+            "expectedAnswer": "Electric Scooter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The technician or salesperson discusses electric scooter and vespa with the customer. Each term belongs to a different part of the vehicle or buying process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Car Types: Review",
+      "text": "A realistic case involving car types shows how precise vocabulary can influence choices, explanations, and outcomes. The technician or salesperson discusses motorcycle, scooter, moped, and dirt bike with the customer. Each term belongs to a different part of the vehicle or buying process. The technician or salesperson discusses chopper, cruiser, sport bike, and touring bike with the customer. Each term belongs to a different part of the vehicle or buying process. The technician or salesperson discusses electric scooter and vespa with the customer. Each term belongs to a different part of the vehicle or buying process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Car Types. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Motorcycle"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Chopper"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Electric Scooter"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Motorcycle"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Dump Truck” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Car Types: In Context",
+      "idea": "45-70 seconds contextual scene in the automotive setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the automotive setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Dump Truck, Flatbed from car-types-2\n3 lesson(s) back: Sofa, Bed Frame from moving-settling-in-3\n7 lesson(s) back: Terrace, Porch from home-features-2"
+  }
+]

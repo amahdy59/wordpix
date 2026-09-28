@@ -30,10 +30,7 @@ export function HadithDiscussionStage({ lessonTitle, translation, reviewItems }:
   ].slice(0, 4);
 
   return (
-    <section
-      className="mx-auto w-full max-w-4xl space-y-5"
-      aria-labelledby="stage-discussion-heading"
-    >
+    <section className="wp-container-reading space-y-5" aria-labelledby="stage-discussion-heading">
       <header className="rounded-3xl border border-border bg-card p-6 shadow-wp-sm sm:p-8">
         <p className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-primary">
           <MessagesSquare className="size-4" aria-hidden />

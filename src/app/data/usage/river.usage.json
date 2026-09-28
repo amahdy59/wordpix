@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "river-1",
+    "lessonName": "The River 1",
+    "unitId": "river",
+    "unitName": "The River",
+    "unitOrder": 109,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 504,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Current",
+      "Rapids",
+      "Waterfall",
+      "Pool",
+      "Bend",
+      "Delta",
+      "Tributary",
+      "Bank",
+      "Bed",
+      "Estuary",
+      "Fish",
+      "Frog",
+      "Turtle",
+      "Heron",
+      "Otter"
+    ],
+    "targetWordsArabic": [
+      "تيار كهربائي",
+      "جزء يُسمّى «رابيدس»",
+      "شلال",
+      "مسبح",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيند»",
+      "منطقة يُسمّى «ديلتا»",
+      "مصطلح مرتبط بالموضوع يُسمّى «تريبوتاري»",
+      "-",
+      "سَرِير",
+      "جزء يُسمّى «يستواري»",
+      "سمكة",
+      "حشرة يُسمّى «فروج»",
+      "سلحفاة",
+      "مالك الحزين",
+      "قضاعة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The River to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the river vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Current", "Rapids", "Waterfall", "Pool"],
+          "scenario": "The guide or scientist draws attention to current, rapids, waterfall, and pool. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Current", "Rapids", "Waterfall", "Pool"],
+            "expectedAnswer": "Current"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to current, rapids, waterfall, and pool. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bend", "Delta", "Tributary", "Bank"],
+          "scenario": "The guide or scientist draws attention to bend, delta, tributary, and bank. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bend", "Delta", "Tributary", "Bank"],
+            "expectedAnswer": "Bend"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to bend, delta, tributary, and bank. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Bed", "Estuary", "Fish", "Frog"],
+          "scenario": "The guide or scientist draws attention to bed, estuary, fish, and frog. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bed", "Estuary", "Fish", "Frog"],
+            "expectedAnswer": "Bed"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to bed, estuary, fish, and frog. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Turtle", "Heron", "Otter"],
+          "scenario": "The guide points out the turtle, heron, and otter and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Turtle", "Heron", "Otter"],
+            "expectedAnswer": "Turtle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the turtle, heron, and otter and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The River: Travel/Visitor Guide",
+      "text": "A practical situation involving the river requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to current, rapids, waterfall, and pool. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to bend, delta, tributary, and bank. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to bed, estuary, fish, and frog. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The River. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Current"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bend"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bed"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Turtle"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Current"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Pool"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Map” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The River: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Map, Headlamp from mountain-4\n3 lesson(s) back: Shrub, Alpine Meadow from mountain-2\n7 lesson(s) back: Wildflower, Lichen from forest-2"
+  },
+  {
+    "lessonId": "river-2",
+    "lessonName": "The River 2",
+    "unitId": "river",
+    "unitName": "The River",
+    "unitOrder": 109,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 505,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Beaver",
+      "Dragonfly",
+      "Duck",
+      "Salmon",
+      "Crayfish",
+      "Reed",
+      "Lily Pad",
+      "Cattail",
+      "Algae",
+      "Willow",
+      "Duckweed",
+      "Water Lily",
+      "Moss",
+      "Riverside Grass",
+      "Mangrove"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «بيافير»",
+      "يعسوب",
+      "بطة",
+      "مصطلح مرتبط بالموضوع يُسمّى «سالمون»",
+      "مصطلح قانوني يُسمّى «كرايفيش»",
+      "مادة يُسمّى «رييد»",
+      "سطح يُسمّى «ليلي باد»",
+      "شكل يُسمّى «كاتتايل»",
+      "طحالب",
+      "شجرة يُسمّى «ويللوو»",
+      "نبات يُسمّى «دوكوييد»",
+      "زهرة يُسمّى «واتير ليلي»",
+      "طحلب بري",
+      "عشب ضفة النهر",
+      "شجرة يُسمّى «مانجروفي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The River to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the river vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Beaver", "Dragonfly", "Duck", "Salmon"],
+          "scenario": "The guide or scientist draws attention to beaver, dragonfly, duck, and salmon. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Beaver", "Dragonfly", "Duck", "Salmon"],
+            "expectedAnswer": "Beaver"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to beaver, dragonfly, duck, and salmon. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Crayfish", "Reed", "Lily Pad", "Cattail"],
+          "scenario": "The guide or scientist draws attention to crayfish, reed, lily pad, and cattail. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crayfish", "Reed", "Lily Pad", "Cattail"],
+            "expectedAnswer": "Crayfish"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to crayfish, reed, lily pad, and cattail. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Algae", "Willow", "Duckweed", "Water Lily"],
+          "scenario": "The group examines the algae, willow, duckweed, and water lily and notices differences in shape, color, or growth.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Algae", "Willow", "Duckweed", "Water Lily"],
+            "expectedAnswer": "Algae"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group examines the algae, willow, duckweed, and water lily and notices differences in shape, color, or growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Moss", "Riverside Grass", "Mangrove"],
+          "scenario": "The group examines the moss, riverside grass, and mangrove and notices differences in shape, color, or growth.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Moss", "Riverside Grass", "Mangrove"],
+            "expectedAnswer": "Moss"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The group examines the moss, riverside grass, and mangrove and notices differences in shape, color, or growth. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The River: Review",
+      "text": "A practical situation involving the river requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to beaver, dragonfly, duck, and salmon. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to crayfish, reed, lily pad, and cattail. The group observes the details and connects the words to the natural or scientific setting. The group examines the algae, willow, duckweed, and water lily and notices differences in shape, color, or growth. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The River. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Beaver"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crayfish"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Algae"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Moss"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Beaver"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Salmon"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Current” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The River: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Current, Rapids from river-1\n3 lesson(s) back: Snow, Fog from mountain-3\n7 lesson(s) back: Butterfly, Beetle from forest-3"
+  },
+  {
+    "lessonId": "river-3",
+    "lessonName": "The River 3",
+    "unitId": "river",
+    "unitName": "The River",
+    "unitOrder": 109,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 506,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Canoe",
+      "Kayak",
+      "Raft",
+      "Rowboat",
+      "Motorboat",
+      "Paddleboard",
+      "Inner Tube",
+      "Pontoon",
+      "Sailboat",
+      "Fishing Boat",
+      "Paddle",
+      "Life Jacket",
+      "Fishing Rod",
+      "Tackle Box",
+      "Net"
+    ],
+    "targetWordsArabic": [
+      "زورق كانو",
+      "كاياك",
+      "مصطلح مرتبط بالموضوع يُسمّى «رافت»",
+      "قارب يُسمّى «رووبوات»",
+      "قارب يُسمّى «موتوربوات»",
+      "لوح تجديف",
+      "مكان يُسمّى «يننير توبي»",
+      "قارب يُسمّى «بونتوون»",
+      "قارب شراعي",
+      "سمكة يُسمّى «فيشينج بوات»",
+      "قارب يُسمّى «باددلي»",
+      "سترة حياة",
+      "سمكة يُسمّى «فيشينج رود»",
+      "سمكة يُسمّى «تاكلي بوكس»",
+      "صافي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The River to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the river vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Canoe", "Kayak", "Raft", "Rowboat"],
+          "scenario": "The guide or scientist draws attention to canoe, kayak, raft, and rowboat. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Canoe", "Kayak", "Raft", "Rowboat"],
+            "expectedAnswer": "Canoe"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to canoe, kayak, raft, and rowboat. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Motorboat", "Paddleboard", "Inner Tube", "Pontoon"],
+          "scenario": "The guide or scientist draws attention to motorboat, paddleboard, inner tube, and pontoon. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Motorboat", "Paddleboard", "Inner Tube", "Pontoon"],
+            "expectedAnswer": "Motorboat"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to motorboat, paddleboard, inner tube, and pontoon. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Sailboat", "Fishing Boat", "Paddle", "Life Jacket"],
+          "scenario": "The guide or scientist draws attention to sailboat, fishing boat, paddle, and life jacket. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sailboat", "Fishing Boat", "Paddle", "Life Jacket"],
+            "expectedAnswer": "Sailboat"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to sailboat, fishing boat, paddle, and life jacket. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Fishing Rod", "Tackle Box", "Net"],
+          "scenario": "The guide or scientist draws attention to fishing rod, tackle box, and net. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Fishing Rod", "Tackle Box", "Net"],
+            "expectedAnswer": "Fishing Rod"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to fishing rod, tackle box, and net. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The River: Practical Article",
+      "text": "A practical situation involving the river requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to canoe, kayak, raft, and rowboat. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to motorboat, paddleboard, inner tube, and pontoon. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to sailboat, fishing boat, paddle, and life jacket. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The River. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Canoe"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Motorboat"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sailboat"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Fishing Rod"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Canoe"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Rowboat"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Beaver” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The River: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Beaver, Dragonfly from river-2\n3 lesson(s) back: Map, Headlamp from mountain-4\n7 lesson(s) back: Canopy, Undergrowth from forest-4"
+  },
+  {
+    "lessonId": "river-4",
+    "lessonName": "The River 4",
+    "unitId": "river",
+    "unitName": "The River",
+    "unitOrder": 109,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 507,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Bucket",
+      "Waders",
+      "Anchor",
+      "Rope",
+      "Cooler",
+      "Fishing",
+      "Swimming",
+      "Kayaking",
+      "Rafting",
+      "Canoeing",
+      "Tubing",
+      "Wading",
+      "Bird Watching",
+      "Picnic",
+      "Skipping Stones"
+    ],
+    "targetWordsArabic": [
+      "دلو",
+      "سروال خوض",
+      "مرساة",
+      "حبل",
+      "صندوق تبريد",
+      "سمكة يُسمّى «فيشينج»",
+      "سباحة",
+      "التجديف بالكاياك",
+      "التجديف بالقارب المطاطي",
+      "قارب يُسمّى «كانويينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «توبينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «وادينج»",
+      "طائر يُسمّى «بيرد واتتشينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بيكنيك»",
+      "تقفيز الحجارة على الماء"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The River to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the river vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Bucket", "Waders", "Anchor", "Rope"],
+          "scenario": "The guide or scientist draws attention to bucket, waders, anchor, and rope. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bucket", "Waders", "Anchor", "Rope"],
+            "expectedAnswer": "Bucket"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to bucket, waders, anchor, and rope. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Cooler", "Fishing", "Swimming", "Kayaking"],
+          "scenario": "The guide or scientist draws attention to cooler, fishing, swimming, and kayaking. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cooler", "Fishing", "Swimming", "Kayaking"],
+            "expectedAnswer": "Cooler"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to cooler, fishing, swimming, and kayaking. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Rafting", "Canoeing", "Tubing", "Wading"],
+          "scenario": "The guide or scientist draws attention to rafting, canoeing, tubing, and wading. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Rafting", "Canoeing", "Tubing", "Wading"],
+            "expectedAnswer": "Rafting"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to rafting, canoeing, tubing, and wading. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Bird Watching", "Picnic", "Skipping Stones"],
+          "scenario": "The guide or scientist draws attention to bird watching, picnic, and skipping stones. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bird Watching", "Picnic", "Skipping Stones"],
+            "expectedAnswer": "Bird Watching"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to bird watching, picnic, and skipping stones. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The River: Real-Life Scenario",
+      "text": "A practical situation involving the river requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to bucket, waders, anchor, and rope. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to cooler, fishing, swimming, and kayaking. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to rafting, canoeing, tubing, and wading. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The River. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bucket"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cooler"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rafting"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bird Watching"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Bucket"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Rope"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Canoe” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The River: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Canoe, Kayak from river-3\n3 lesson(s) back: Current, Rapids from river-1\n7 lesson(s) back: Peak, Summit from mountain-1"
+  }
+]

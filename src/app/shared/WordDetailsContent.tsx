@@ -1,15 +1,11 @@
-import { useEffect, useState } from "react";
+import { useLexicon } from "./useLexicon";
 import { BookOpen, Layers, Sparkles, Volume2, Zap } from "lucide-react";
 import type { VocabularyItem } from "../data/lessons";
-// Type-only: erased at compile time, so this never pulls the 1.6 MB
-// dictionary into the synchronous bundle. The runtime module arrives via
-// dynamic import() below, the first time word details actually open.
+// Type-only: details arrive through the shared per-word shard loader.
 import type { LexiconEntry } from "../data/lexiconDictionary";
 import { useAudio } from "./useAudio";
 import { useI18n } from "../context/I18nContext";
-
-/** Runtime shape of the lazily loaded dictionary module. */
-type LexiconModule = typeof import("../data/lexiconDictionary");
+import { getAuthoredWord } from "../exercises/content/authoredLessonContent";
 
 export function WordDetailsContent({
   word,
@@ -24,26 +20,7 @@ export function WordDetailsContent({
 }) {
   const { t } = useI18n();
   const { speak } = useAudio();
-  // The dictionary is fetched on demand so opening a lesson paints before
-  // parsing ~1.6 MB of entries. The module cache makes repeat opens free.
-  const [lexicon, setLexicon] = useState<LexiconModule | null>(null);
-  const [lexiconFailed, setLexiconFailed] = useState(false);
-  const [lexiconRetry, setLexiconRetry] = useState(0);
-
-  useEffect(() => {
-    let cancelled = false;
-    import("../data/lexiconDictionary").then(
-      (mod) => {
-        if (!cancelled) setLexicon(mod);
-      },
-      () => {
-        if (!cancelled) setLexiconFailed(true);
-      }
-    );
-    return () => {
-      cancelled = true;
-    };
-  }, [lexiconRetry]);
+  const { lexicon, lexiconFailed, retryLexicon } = useLexicon([word.id]);
 
   const loaded = lexicon
     ? { mod: lexicon, base: lexicon.getLexiconEntry(word.id, word.label, unitId) }
@@ -83,10 +60,7 @@ export function WordDetailsContent({
             </p>
             <button
               type="button"
-              onClick={() => {
-                setLexiconFailed(false);
-                setLexiconRetry((count) => count + 1);
-              }}
+              onClick={retryLexicon}
               className="mt-1 self-start min-h-[44px] px-4 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               {t("action.tryAgain")}
@@ -116,22 +90,26 @@ export function WordDetailsContent({
   }
 
   const baseEntry: LexiconEntry = loaded.base;
+  const authored = getAuthoredWord(word.id);
+  const resolvedArabic = authored?.arabic ?? word.arabicTranslation ?? baseEntry.arabic;
+  const resolvedExample = authored?.sentence.full ?? word.exampleUsage ?? baseEntry.exampleSentence;
+
   const entry = {
     ...baseEntry,
     collocations: loaded.mod.getReviewedCollocations(baseEntry),
-    arabic: word.arabicTranslation ?? baseEntry.arabic,
-    sentences: word.exampleUsage
+    arabic: resolvedArabic,
+    sentences: resolvedExample
       ? [
           {
             context: "Example",
-            en: word.exampleUsage,
-            ar: baseEntry.sentences.find((sentence) => sentence.en === word.exampleUsage)?.ar ?? "",
+            en: resolvedExample,
+            ar: baseEntry.sentences.find((sentence) => sentence.en === resolvedExample)?.ar ?? "",
           },
         ]
       : word.arabicTranslation !== undefined
         ? []
         : baseEntry.sentences,
-    exampleSentence: word.exampleUsage ?? baseEntry.exampleSentence,
+    exampleSentence: resolvedExample,
   };
   return (
     <div

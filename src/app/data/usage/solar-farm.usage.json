@@ -1,0 +1,752 @@
+﻿[
+  {
+    "lessonId": "solar-farm-1",
+    "lessonName": "The Solar Farm 1",
+    "unitId": "solar-farm",
+    "unitName": "The Solar Farm",
+    "unitOrder": 173,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 763,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Solar Panel",
+      "Inverter",
+      "Battery Storage",
+      "Charge Controller",
+      "Mounting Frame",
+      "Tracker",
+      "Junction Box",
+      "Combiner Box",
+      "Transformer",
+      "Grid Connection",
+      "Drill",
+      "Wrench",
+      "Wire Cutter",
+      "Crimping Tool",
+      "Cable Tie"
+    ],
+    "targetWordsArabic": [
+      "جهاز يُسمّى «سولار بانيل»",
+      "عاكس كهربائي",
+      "تخزين بطارية",
+      "منظّم شحن",
+      "إطار تثبيت",
+      "متعقّب",
+      "صندوق توصيل كهربائي",
+      "صندوق تجميع كهربائي",
+      "محوّل كهربائي",
+      "اتصال بالشبكة الكهربائية",
+      "مثقاب",
+      "مفتاح ربط",
+      "قطّاعة سلك",
+      "أداة كبس الوصلات",
+      "مصطلح مرتبط بالموضوع يُسمّى «كابلي تيي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Solar Farm to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the solar farm vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Solar Panel", "Inverter", "Battery Storage", "Charge Controller"],
+          "scenario": "During the morning round, the farmer checks solar panel, inverter, battery storage, and charge controller. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Solar Panel", "Inverter", "Battery Storage", "Charge Controller"],
+            "expectedAnswer": "Solar Panel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks solar panel, inverter, battery storage, and charge controller. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Mounting Frame", "Tracker", "Junction Box", "Combiner Box"],
+          "scenario": "During the morning round, the farmer checks mounting frame, tracker, junction box, and combiner box. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mounting Frame", "Tracker", "Junction Box", "Combiner Box"],
+            "expectedAnswer": "Mounting Frame"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks mounting frame, tracker, junction box, and combiner box. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Transformer", "Grid Connection", "Drill", "Wrench"],
+          "scenario": "During the morning round, the farmer checks transformer, grid connection, drill, and wrench. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Transformer", "Grid Connection", "Drill", "Wrench"],
+            "expectedAnswer": "Transformer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks transformer, grid connection, drill, and wrench. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Wire Cutter", "Crimping Tool", "Cable Tie"],
+          "scenario": "During the morning round, the farmer checks wire cutter, crimping tool, and cable tie. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Wire Cutter", "Crimping Tool", "Cable Tie"],
+            "expectedAnswer": "Wire Cutter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks wire cutter, crimping tool, and cable tie. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Solar Farm: Report Excerpt",
+      "text": "A realistic case involving the solar farm shows how precise vocabulary can influence choices, explanations, and outcomes. During the morning round, the farmer checks solar panel, inverter, battery storage, and charge controller. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks mounting frame, tracker, junction box, and combiner box. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks transformer, grid connection, drill, and wrench. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks wire cutter, crimping tool, and cable tie. The words belong to the same farm or garden scene, but each one has a different role. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Solar Panel"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mounting Frame"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Transformer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Wire Cutter"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Solar Panel"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Power Supply” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Solar Farm: In Context",
+      "idea": "45-70 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Power Supply, Testing Mat from robotics-lab-5\n3 lesson(s) back: Magnifying Glass, Helping Hands from robotics-lab-3\n7 lesson(s) back: Frame, Fan from 3d-printer-lab-5"
+  },
+  {
+    "lessonId": "solar-farm-2",
+    "lessonName": "The Solar Farm 2",
+    "unitId": "solar-farm",
+    "unitName": "The Solar Farm",
+    "unitOrder": 173,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 764,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Conduit",
+      "Ground Rod",
+      "Multimeter",
+      "Level",
+      "Ladder",
+      "Control Room",
+      "Security Fence",
+      "Access Road",
+      "Gate",
+      "Weather Station",
+      "Camera",
+      "Substation",
+      "Cable Tray",
+      "Lightning Rod",
+      "Grounding System"
+    ],
+    "targetWordsArabic": [
+      "قناة أسلاك",
+      "مصطلح مرتبط بالموضوع يُسمّى «جرووند رود»",
+      "ملتيميتر",
+      "مستوٍ",
+      "سلّم",
+      "غرفة عامل ضابط",
+      "مصطلح مرتبط بالموضوع يُسمّى «سيكوريتي فينكي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «اككيسس رواد»",
+      "بوابة",
+      "محطة طقس",
+      "كاميرا",
+      "محطة فرعية",
+      "مسار للكابلات",
+      "مصطلح مرتبط بالموضوع يُسمّى «ليغتنينج رود»",
+      "نظام يُسمّى «جرووندينج سيستيم»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Solar Farm to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the solar farm vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Conduit", "Ground Rod", "Multimeter", "Level"],
+          "scenario": "During the morning round, the farmer checks conduit, ground rod, multimeter, and level. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Conduit", "Ground Rod", "Multimeter", "Level"],
+            "expectedAnswer": "Conduit"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks conduit, ground rod, multimeter, and level. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Ladder", "Control Room", "Security Fence", "Access Road"],
+          "scenario": "During the morning round, the farmer checks ladder, control room, security fence, and access road. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Ladder", "Control Room", "Security Fence", "Access Road"],
+            "expectedAnswer": "Ladder"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks ladder, control room, security fence, and access road. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Gate", "Weather Station", "Camera", "Substation"],
+          "scenario": "During the morning round, the farmer checks gate, weather station, camera, and substation. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Gate", "Weather Station", "Camera", "Substation"],
+            "expectedAnswer": "Gate"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks gate, weather station, camera, and substation. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Cable Tray", "Lightning Rod", "Grounding System"],
+          "scenario": "During the morning round, the farmer checks cable tray, lightning rod, and grounding system. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cable Tray", "Lightning Rod", "Grounding System"],
+            "expectedAnswer": "Cable Tray"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks cable tray, lightning rod, and grounding system. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Solar Farm: Case Note",
+      "text": "A realistic case involving the solar farm shows how precise vocabulary can influence choices, explanations, and outcomes. During the morning round, the farmer checks conduit, ground rod, multimeter, and level. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks ladder, control room, security fence, and access road. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks gate, weather station, camera, and substation. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks cable tray, lightning rod, and grounding system. The words belong to the same farm or garden scene, but each one has a different role. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Conduit"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ladder"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Gate"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cable Tray"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Conduit"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Solar Panel” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Solar Farm: In Context",
+      "idea": "45-70 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Solar Panel, Inverter from solar-farm-1\n3 lesson(s) back: Wheeled Robot, Walking Robot from robotics-lab-4\n7 lesson(s) back: Calibrate, Prototype from 3d-printer-lab-6"
+  },
+  {
+    "lessonId": "solar-farm-3",
+    "lessonName": "The Solar Farm 3",
+    "unitId": "solar-farm",
+    "unitName": "The Solar Farm",
+    "unitOrder": 173,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 765,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Sunlight",
+      "Solar Cell",
+      "Electricity",
+      "Voltage",
+      "Current",
+      "Watt",
+      "Kilowatt",
+      "Energy Meter",
+      "Power Line",
+      "Distribution Panel",
+      "Cleaning Brush",
+      "Water Hose",
+      "Inspection Drone",
+      "Thermal Camera",
+      "Safety Vest"
+    ],
+    "targetWordsArabic": [
+      "ضوء الشمس",
+      "خلية شمسي",
+      "كهرباء",
+      "جهد كهربائي",
+      "تيار كهربائي",
+      "واط",
+      "كيلوواط",
+      "عداد طاقة",
+      "مصطلح مرتبط بالموضوع يُسمّى «بووير ليني»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديستريبوتيون بانيل»",
+      "فرشاة تنظيف",
+      "خرطوم مياه",
+      "طائرة مسيّرة فحص",
+      "كاميرا حرارية",
+      "سترة بلا أكمام سلامة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Solar Farm to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the solar farm vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "review",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Sunlight", "Solar Cell", "Electricity", "Voltage"],
+          "scenario": "During the morning round, the farmer checks sunlight, solar cell, electricity, and voltage. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sunlight", "Solar Cell", "Electricity", "Voltage"],
+            "expectedAnswer": "Sunlight"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks sunlight, solar cell, electricity, and voltage. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Current", "Watt", "Kilowatt", "Energy Meter"],
+          "scenario": "During the morning round, the farmer checks current, watt, kilowatt, and energy meter. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Current", "Watt", "Kilowatt", "Energy Meter"],
+            "expectedAnswer": "Current"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks current, watt, kilowatt, and energy meter. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Power Line", "Distribution Panel", "Cleaning Brush", "Water Hose"],
+          "scenario": "During the morning round, the farmer checks power line, distribution panel, cleaning brush, and water hose. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Power Line", "Distribution Panel", "Cleaning Brush", "Water Hose"],
+            "expectedAnswer": "Power Line"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks power line, distribution panel, cleaning brush, and water hose. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Inspection Drone", "Thermal Camera", "Safety Vest"],
+          "scenario": "During the morning round, the farmer checks inspection drone, thermal camera, and safety vest. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Inspection Drone", "Thermal Camera", "Safety Vest"],
+            "expectedAnswer": "Inspection Drone"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks inspection drone, thermal camera, and safety vest. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Solar Farm: Review",
+      "text": "A realistic case involving the solar farm shows how precise vocabulary can influence choices, explanations, and outcomes. During the morning round, the farmer checks sunlight, solar cell, electricity, and voltage. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks current, watt, kilowatt, and energy meter. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks power line, distribution panel, cleaning brush, and water hose. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks inspection drone, thermal camera, and safety vest. The words belong to the same farm or garden scene, but each one has a different role. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sunlight"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Current"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Power Line"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Inspection Drone"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Sunlight"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Conduit” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Solar Farm: In Context",
+      "idea": "45-70 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Conduit, Ground Rod from solar-farm-2\n3 lesson(s) back: Power Supply, Testing Mat from robotics-lab-5\n7 lesson(s) back: Motor, Sensor from robotics-lab-1"
+  },
+  {
+    "lessonId": "solar-farm-4",
+    "lessonName": "The Solar Farm 4",
+    "unitId": "solar-farm",
+    "unitName": "The Solar Farm",
+    "unitOrder": 173,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 766,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Hard Hat",
+      "Gloves",
+      "Tool Belt",
+      "Logbook",
+      "Clipboard",
+      "Open Field",
+      "Clear Sky",
+      "Shadow",
+      "Cloud",
+      "Sunrise",
+      "Sunset",
+      "Grassland",
+      "Wildflower",
+      "Bird",
+      "Fence Post"
+    ],
+    "targetWordsArabic": [
+      "قبعة صلب",
+      "قفازات",
+      "أداة يُسمّى «توول بيلت»",
+      "سجل الرحلة",
+      "لوح كتابة",
+      "عضو يُسمّى «وبين فييلد»",
+      "سماء صافٍ",
+      "ظل",
+      "سحابة",
+      "شروق الشمس",
+      "غروب الشمس",
+      "أرض عشبية",
+      "زهرة برية",
+      "طائر",
+      "مصطلح مرتبط بالموضوع يُسمّى «فينكي بوست»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Solar Farm to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the solar farm vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "opinion paragraph",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Hard Hat", "Gloves", "Tool Belt", "Logbook"],
+          "scenario": "During the morning round, the farmer checks hard hat, gloves, tool belt, and logbook. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hard Hat", "Gloves", "Tool Belt", "Logbook"],
+            "expectedAnswer": "Hard Hat"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks hard hat, gloves, tool belt, and logbook. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Clipboard", "Open Field", "Clear Sky", "Shadow"],
+          "scenario": "During the morning round, the farmer checks clipboard, open field, clear sky, and shadow. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Clipboard", "Open Field", "Clear Sky", "Shadow"],
+            "expectedAnswer": "Clipboard"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks clipboard, open field, clear sky, and shadow. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Cloud", "Sunrise", "Sunset", "Grassland"],
+          "scenario": "During the morning round, the farmer checks cloud, sunrise, sunset, and grassland. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cloud", "Sunrise", "Sunset", "Grassland"],
+            "expectedAnswer": "Cloud"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks cloud, sunrise, sunset, and grassland. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Wildflower", "Bird", "Fence Post"],
+          "scenario": "During the morning round, the farmer checks wildflower, bird, and fence post. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Wildflower", "Bird", "Fence Post"],
+            "expectedAnswer": "Wildflower"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks wildflower, bird, and fence post. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Solar Farm: Opinion Paragraph",
+      "text": "A realistic case involving the solar farm shows how precise vocabulary can influence choices, explanations, and outcomes. During the morning round, the farmer checks hard hat, gloves, tool belt, and logbook. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks clipboard, open field, clear sky, and shadow. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks cloud, sunrise, sunset, and grassland. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks wildflower, bird, and fence post. The words belong to the same farm or garden scene, but each one has a different role. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hard Hat"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Clipboard"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cloud"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Wildflower"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Hard Hat"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Sunlight” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Solar Farm: In Context",
+      "idea": "45-70 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Sunlight, Solar Cell from solar-farm-3\n3 lesson(s) back: Solar Panel, Inverter from solar-farm-1\n7 lesson(s) back: Transistor, Diode from robotics-lab-2"
+  },
+  {
+    "lessonId": "solar-farm-5",
+    "lessonName": "The Solar Farm 5",
+    "unitId": "solar-farm",
+    "unitName": "The Solar Farm",
+    "unitOrder": 173,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 767,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Battery",
+      "Cable",
+      "Mounting Rack",
+      "Meter",
+      "Grid",
+      "Charge",
+      "Discharge",
+      "Clean Energy",
+      "Renewable",
+      "Carbon",
+      "Emission",
+      "Sustainability",
+      "Efficiency",
+      "Conservation",
+      "Recycle"
+    ],
+    "targetWordsArabic": [
+      "بطارية",
+      "كابل",
+      "مصطلح مرتبط بالموضوع يُسمّى «موونتينج راك»",
+      "عداد",
+      "شبكة كهربائية",
+      "شحن",
+      "تفريغ",
+      "طاقة ينظف",
+      "متجدد",
+      "كربون",
+      "انبعاث",
+      "استدامة",
+      "كفاءة",
+      "حفاظ",
+      "إعادة تدوير"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Solar Farm to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use the solar farm vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Battery", "Cable", "Mounting Rack", "Meter"],
+          "scenario": "During the morning round, the farmer checks battery, cable, mounting rack, and meter. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Battery", "Cable", "Mounting Rack", "Meter"],
+            "expectedAnswer": "Battery"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks battery, cable, mounting rack, and meter. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Grid", "Charge", "Discharge", "Clean Energy"],
+          "scenario": "During the morning round, the farmer checks grid, charge, discharge, and clean energy. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Grid", "Charge", "Discharge", "Clean Energy"],
+            "expectedAnswer": "Grid"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks grid, charge, discharge, and clean energy. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Renewable", "Carbon", "Emission", "Sustainability"],
+          "scenario": "During the morning round, the farmer checks renewable, carbon, emission, and sustainability. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Renewable", "Carbon", "Emission", "Sustainability"],
+            "expectedAnswer": "Renewable"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks renewable, carbon, emission, and sustainability. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Efficiency", "Conservation", "Recycle"],
+          "scenario": "During the morning round, the farmer checks efficiency, conservation, and recycle. The words belong to the same farm or garden scene, but each one has a different role.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Efficiency", "Conservation", "Recycle"],
+            "expectedAnswer": "Efficiency"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: During the morning round, the farmer checks efficiency, conservation, and recycle. The words belong to the same farm or garden scene, but each one has a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Solar Farm: Workplace/Academic Scenario",
+      "text": "A realistic case involving the solar farm shows how precise vocabulary can influence choices, explanations, and outcomes. During the morning round, the farmer checks battery, cable, mounting rack, and meter. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks grid, charge, discharge, and clean energy. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks renewable, carbon, emission, and sustainability. The words belong to the same farm or garden scene, but each one has a different role. During the morning round, the farmer checks efficiency, conservation, and recycle. The words belong to the same farm or garden scene, but each one has a different role. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Battery"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Grid"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Renewable"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Efficiency"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Battery"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Hard Hat” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Solar Farm: In Context",
+      "idea": "45-70 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Hard Hat, Gloves from solar-farm-4\n3 lesson(s) back: Conduit, Ground Rod from solar-farm-2\n7 lesson(s) back: Magnifying Glass, Helping Hands from robotics-lab-3"
+  }
+]

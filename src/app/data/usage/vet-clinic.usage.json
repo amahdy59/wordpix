@@ -1,0 +1,630 @@
+﻿[
+  {
+    "lessonId": "vet-clinic-1",
+    "lessonName": "The Vet Clinic 1",
+    "unitId": "vet-clinic",
+    "unitName": "The Vet Clinic",
+    "unitOrder": 28,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 119,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Dog",
+      "Cat",
+      "Rabbit",
+      "Hamster",
+      "Parrot",
+      "Turtle",
+      "Guinea Pig",
+      "Fish",
+      "Snake",
+      "Ferret",
+      "Stethoscope",
+      "Thermometer",
+      "Scale",
+      "Otoscope",
+      "X Ray"
+    ],
+    "targetWordsArabic": [
+      "كلب",
+      "قطة",
+      "أرنب",
+      "هامستر",
+      "ببغاء",
+      "سلحفاة",
+      "خنزير غينيا",
+      "سمكة",
+      "ثعبان",
+      "ابن عرس أليف",
+      "سماعة طبية",
+      "مقياس حرارة",
+      "مقياس رسم",
+      "منظار الأذن",
+      "أشعة سينية"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Vet Clinic to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the vet clinic vocabulary in simple context.",
+      "textType": "short description",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Dog", "Cat", "Rabbit"],
+          "scenario": "The guide points out the dog, cat, and rabbit and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Dog", "Cat", "Rabbit"],
+            "expectedAnswer": "Dog"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the dog, cat, and rabbit and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Hamster", "Parrot", "Turtle"],
+          "scenario": "The guide points out the hamster, parrot, and turtle and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Hamster", "Parrot", "Turtle"],
+            "expectedAnswer": "Hamster"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the hamster, parrot, and turtle and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Guinea Pig", "Fish", "Snake"],
+          "scenario": "At the animal-care setting, staff and visitors focus on guinea pig, fish, and snake. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Guinea Pig", "Fish", "Snake"],
+            "expectedAnswer": "Guinea Pig"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on guinea pig, fish, and snake. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Ferret", "Stethoscope", "Thermometer"],
+          "scenario": "At the animal-care setting, staff and visitors focus on ferret, stethoscope, and thermometer. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Ferret", "Stethoscope", "Thermometer"],
+            "expectedAnswer": "Ferret"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on ferret, stethoscope, and thermometer. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Scale", "Otoscope", "X Ray"],
+          "scenario": "At the animal-care setting, staff and visitors focus on scale, otoscope, and x ray. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Scale", "Otoscope", "X Ray"],
+            "expectedAnswer": "Scale"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on scale, otoscope, and x ray. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Vet Clinic: Short Description",
+      "text": "Maya is in a situation connected to the vet clinic. She uses the new words to understand what she sees and what happens next. The guide points out the dog, cat, and rabbit and asks the group to notice how the animals move or behave. The guide points out the hamster, parrot, and turtle and asks the group to notice how the animals move or behave. At the animal-care setting, staff and visitors focus on guinea pig, fish, and snake. The words connect to caring for, observing, or learning about animals. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Vet Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dog"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hamster"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Guinea Pig"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ferret"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Scale"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Dog"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Rabbit"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Pet” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Vet Clinic: In Context",
+      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Pet, Adopt from pet-shop-8\n3 lesson(s) back: Terrarium, Fish Bowl from pet-shop-6\n7 lesson(s) back: Beagle, Chihuahua from pet-shop-2"
+  },
+  {
+    "lessonId": "vet-clinic-2",
+    "lessonName": "The Vet Clinic 2",
+    "unitId": "vet-clinic",
+    "unitName": "The Vet Clinic",
+    "unitOrder": 28,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 120,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Ultrasound",
+      "Blood Test",
+      "Microscope",
+      "Syringe",
+      "Bandage",
+      "Vaccination",
+      "Surgery",
+      "Dental Cleaning",
+      "Microchip",
+      "Spay",
+      "Neuter",
+      "Medication",
+      "Stitches",
+      "Cast",
+      "Cone Collar"
+    ],
+    "targetWordsArabic": [
+      "موجات فوق صوتية",
+      "مصطلح مرتبط بالموضوع يُسمّى «بلوود تيست»",
+      "مجهر",
+      "حقنة",
+      "ضمادة",
+      "تطعيم",
+      "جراحة",
+      "تنظيف أسنان بيطري",
+      "شريحة إلكترونية",
+      "تعقيم الأنثى",
+      "تعقيم الحيوان",
+      "دواء",
+      "غُرز جراحية",
+      "جبيرة جبسية",
+      "طوق مخروطي واقٍ"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Vet Clinic to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the vet clinic vocabulary in simple context.",
+      "textType": "mini dialogue",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Ultrasound", "Blood Test", "Microscope"],
+          "scenario": "At the animal-care setting, staff and visitors focus on ultrasound, blood test, and microscope. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Ultrasound", "Blood Test", "Microscope"],
+            "expectedAnswer": "Ultrasound"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on ultrasound, blood test, and microscope. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Syringe", "Bandage", "Vaccination"],
+          "scenario": "At the animal-care setting, staff and visitors focus on syringe, bandage, and vaccination. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Syringe", "Bandage", "Vaccination"],
+            "expectedAnswer": "Syringe"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on syringe, bandage, and vaccination. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Surgery", "Dental Cleaning", "Microchip"],
+          "scenario": "At the animal-care setting, staff and visitors focus on surgery, dental cleaning, and microchip. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Surgery", "Dental Cleaning", "Microchip"],
+            "expectedAnswer": "Surgery"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on surgery, dental cleaning, and microchip. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Spay", "Neuter", "Medication"],
+          "scenario": "At the animal-care setting, staff and visitors focus on spay, neuter, and medication. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Spay", "Neuter", "Medication"],
+            "expectedAnswer": "Spay"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on spay, neuter, and medication. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Stitches", "Cast", "Cone Collar"],
+          "scenario": "At the animal-care setting, staff and visitors focus on stitches, cast, and cone collar. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Stitches", "Cast", "Cone Collar"],
+            "expectedAnswer": "Stitches"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on stitches, cast, and cone collar. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Vet Clinic: Mini Dialogue",
+      "text": "Maya is in a situation connected to the vet clinic. She uses the new words to understand what she sees and what happens next. At the animal-care setting, staff and visitors focus on ultrasound, blood test, and microscope. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on syringe, bandage, and vaccination. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on surgery, dental cleaning, and microchip. The words connect to caring for, observing, or learning about animals. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Vet Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Ultrasound"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Syringe"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Surgery"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Spay"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stitches"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Ultrasound"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Microscope"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Dog” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Vet Clinic: In Context",
+      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Dog, Cat from vet-clinic-1\n3 lesson(s) back: Shelf, Tank from pet-shop-7\n7 lesson(s) back: Dog Food, Cat Food from pet-shop-3"
+  },
+  {
+    "lessonId": "vet-clinic-3",
+    "lessonName": "The Vet Clinic 3",
+    "unitId": "vet-clinic",
+    "unitName": "The Vet Clinic",
+    "unitOrder": 28,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 121,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Waiting Room",
+      "Exam Table",
+      "Operating Room",
+      "Kennel",
+      "Pharmacy",
+      "Reception",
+      "Lab",
+      "Recovery Room",
+      "Grooming Area",
+      "Outdoor Run",
+      "Leash",
+      "Carrier",
+      "Muzzle",
+      "Treats",
+      "Food Bowl"
+    ],
+    "targetWordsArabic": [
+      "غرفة انتظار",
+      "طاولة فحص",
+      "غرفة يُسمّى «وبيراتينج رووم»",
+      "بيت كلاب",
+      "صيدلية",
+      "استقبال",
+      "مختبر",
+      "غرفة يُسمّى «ريكوفيري رووم»",
+      "منطقة العناية بالحيوانات",
+      "ساحة خارجية مسوّرة للحيوانات",
+      "مقود",
+      "حاملة حيوان",
+      "كمامة حيوان",
+      "مكافآت للحيوان",
+      "وعاء طعام"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Vet Clinic to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the vet clinic vocabulary in simple context.",
+      "textType": "simple message",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Waiting Room", "Exam Table", "Operating Room"],
+          "scenario": "At the animal-care setting, staff and visitors focus on waiting room, exam table, and operating room. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Waiting Room", "Exam Table", "Operating Room"],
+            "expectedAnswer": "Waiting Room"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on waiting room, exam table, and operating room. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Kennel", "Pharmacy", "Reception"],
+          "scenario": "At the animal-care setting, staff and visitors focus on kennel, pharmacy, and reception. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Kennel", "Pharmacy", "Reception"],
+            "expectedAnswer": "Kennel"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on kennel, pharmacy, and reception. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Lab", "Recovery Room", "Grooming Area"],
+          "scenario": "At the animal-care setting, staff and visitors focus on lab, recovery room, and grooming area. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Lab", "Recovery Room", "Grooming Area"],
+            "expectedAnswer": "Lab"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on lab, recovery room, and grooming area. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Outdoor Run", "Leash", "Carrier"],
+          "scenario": "At the animal-care setting, staff and visitors focus on outdoor run, leash, and carrier. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Outdoor Run", "Leash", "Carrier"],
+            "expectedAnswer": "Outdoor Run"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on outdoor run, leash, and carrier. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Muzzle", "Treats", "Food Bowl"],
+          "scenario": "At the animal-care setting, staff and visitors focus on muzzle, treats, and food bowl. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Muzzle", "Treats", "Food Bowl"],
+            "expectedAnswer": "Muzzle"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on muzzle, treats, and food bowl. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Vet Clinic: Simple Message",
+      "text": "Maya is in a situation connected to the vet clinic. She uses the new words to understand what she sees and what happens next. At the animal-care setting, staff and visitors focus on waiting room, exam table, and operating room. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on kennel, pharmacy, and reception. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on lab, recovery room, and grooming area. The words connect to caring for, observing, or learning about animals. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Vet Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Waiting Room"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Kennel"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lab"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Outdoor Run"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Muzzle"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Waiting Room"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Operating Room"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Ultrasound” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Vet Clinic: In Context",
+      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Ultrasound, Blood Test from vet-clinic-2\n3 lesson(s) back: Pet, Adopt from pet-shop-8\n7 lesson(s) back: Aquarium, Litter Box from pet-shop-4"
+  },
+  {
+    "lessonId": "vet-clinic-4",
+    "lessonName": "The Vet Clinic 4",
+    "unitId": "vet-clinic",
+    "unitName": "The Vet Clinic",
+    "unitOrder": 28,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 122,
+    "cefrStage": "A1",
+    "stageName": "A1 Foundations",
+    "targetWordsEnglish": [
+      "Water Dish",
+      "Collar",
+      "Tag",
+      "Nail Clippers",
+      "Brush",
+      "Veterinarian",
+      "Vet Tech",
+      "Receptionist",
+      "Groomer",
+      "Kennel Attendant",
+      "Surgeon",
+      "Specialist",
+      "Intern",
+      "Volunteer",
+      "Pet Owner"
+    ],
+    "targetWordsArabic": [
+      "حاوية يُسمّى «واتير ديش»",
+      "طوق",
+      "بطاقة تعريف",
+      "ماكينة حلاقة ظفر",
+      "فرشاة",
+      "طبيب بيطري",
+      "فني بيطري",
+      "موظف استقبال",
+      "مصفف حيوانات",
+      "عامل رعاية بيوت الحيوانات",
+      "جرّاح",
+      "أخصائي",
+      "متدرب",
+      "متطوع",
+      "مالك حيوان أليف"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Vet Clinic to understand and communicate in a realistic A1-appropriate context.",
+      "canDoStatement": "I can use key the vet clinic vocabulary in simple context.",
+      "textType": "notice-style text",
+      "readingTarget": "45-70 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Water Dish", "Collar", "Tag"],
+          "scenario": "At the animal-care setting, staff and visitors focus on water dish, collar, and tag. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Water Dish", "Collar", "Tag"],
+            "expectedAnswer": "Water Dish"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on water dish, collar, and tag. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Nail Clippers", "Brush", "Veterinarian"],
+          "scenario": "At the animal-care setting, staff and visitors focus on nail clippers, brush, and veterinarian. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Nail Clippers", "Brush", "Veterinarian"],
+            "expectedAnswer": "Nail Clippers"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on nail clippers, brush, and veterinarian. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Vet Tech", "Receptionist", "Groomer"],
+          "scenario": "At the animal-care setting, staff and visitors focus on vet tech, receptionist, and groomer. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Vet Tech", "Receptionist", "Groomer"],
+            "expectedAnswer": "Vet Tech"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on vet tech, receptionist, and groomer. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Kennel Attendant", "Surgeon", "Specialist"],
+          "scenario": "The kennel attendant, surgeon, and specialist appear in the same situation, each with a different role.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Kennel Attendant", "Surgeon", "Specialist"],
+            "expectedAnswer": "Kennel Attendant"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The kennel attendant, surgeon, and specialist appear in the same situation, each with a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 5,
+          "targetWords": ["Intern", "Volunteer", "Pet Owner"],
+          "scenario": "At the animal-care setting, staff and visitors focus on intern, volunteer, and pet owner. The words connect to caring for, observing, or learning about animals.",
+          "check": {
+            "question": "Which target word best matches the key detail in this scene?",
+            "options": ["Intern", "Volunteer", "Pet Owner"],
+            "expectedAnswer": "Intern"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: At the animal-care setting, staff and visitors focus on intern, volunteer, and pet owner. The words connect to caring for, observing, or learning about animals. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Vet Clinic: Notice-Style Text",
+      "text": "Maya is in a situation connected to the vet clinic. She uses the new words to understand what she sees and what happens next. At the animal-care setting, staff and visitors focus on water dish, collar, and tag. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on nail clippers, brush, and veterinarian. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on vet tech, receptionist, and groomer. The words connect to caring for, observing, or learning about animals. The words now belong to one memorable scene instead of an isolated list.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about The Vet Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Water Dish"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Nail Clippers"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Vet Tech"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Kennel Attendant"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Intern"
+      },
+      {
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "Water Dish"
+      },
+      {
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "Tag"
+      },
+      {
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Waiting Room” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Vet Clinic: In Context",
+      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Waiting Room, Exam Table from vet-clinic-3\n3 lesson(s) back: Dog, Cat from vet-clinic-1\n7 lesson(s) back: Parakeet, Kitten from pet-shop-5"
+  }
+]

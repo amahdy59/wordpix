@@ -1,0 +1,425 @@
+﻿[
+  {
+    "lessonId": "research-study-1",
+    "lessonName": "Research & Study 1",
+    "unitId": "research-study",
+    "unitName": "Research & Study",
+    "unitOrder": 156,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 702,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Textbook",
+      "Journal",
+      "Database",
+      "Search Engine",
+      "Bibliography",
+      "Citation",
+      "Footnote",
+      "Index",
+      "Abstract",
+      "Peer Review",
+      "Essay",
+      "Thesis",
+      "Dissertation",
+      "Paper",
+      "Report"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «تيكستبووك»",
+      "شخص يُسمّى «جوورنال»",
+      "عضو يُسمّى «داتاباسي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سيارتش ينجيني»",
+      "وثيقة يُسمّى «بيبليوجرافي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كيتاتيون»",
+      "مكان يُسمّى «فووتنوتي»",
+      "مؤشر",
+      "شكل يُسمّى «ابستراكت»",
+      "غرفة يُسمّى «بيير ريفييو»",
+      "مصطلح مرتبط بالموضوع يُسمّى «يسساي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ثيسيس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ديسسيرتاتيون»",
+      "ورق",
+      "تقرير"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Research & Study to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use research & study vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "case note",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Textbook", "Journal", "Database", "Search Engine"],
+          "scenario": "The student or researcher works with textbook, journal, database, and search engine. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Textbook", "Journal", "Database", "Search Engine"],
+            "expectedAnswer": "Textbook"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with textbook, journal, database, and search engine. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Bibliography", "Citation", "Footnote", "Index"],
+          "scenario": "The student or researcher works with bibliography, citation, footnote, and index. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Bibliography", "Citation", "Footnote", "Index"],
+            "expectedAnswer": "Bibliography"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with bibliography, citation, footnote, and index. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Abstract", "Peer Review", "Essay", "Thesis"],
+          "scenario": "The student or researcher works with abstract, peer review, essay, and thesis. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Abstract", "Peer Review", "Essay", "Thesis"],
+            "expectedAnswer": "Abstract"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with abstract, peer review, essay, and thesis. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Dissertation", "Paper", "Report"],
+          "scenario": "The student or researcher works with dissertation, paper, and report. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dissertation", "Paper", "Report"],
+            "expectedAnswer": "Dissertation"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with dissertation, paper, and report. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Research & Study: Case Note",
+      "text": "A realistic case involving research & study shows how precise vocabulary can influence choices, explanations, and outcomes. The student or researcher works with textbook, journal, database, and search engine. Each term supports a different part of study, research, or campus life. The student or researcher works with bibliography, citation, footnote, and index. Each term supports a different part of study, research, or campus life. The student or researcher works with abstract, peer review, essay, and thesis. Each term supports a different part of study, research, or campus life. The student or researcher works with dissertation, paper, and report. Each term supports a different part of study, research, or campus life. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Research & Study. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Textbook"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Bibliography"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Abstract"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dissertation"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Textbook"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Bachelor's” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Research & Study: In Context",
+      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Bachelor's, Master's from academic-life-3\n3 lesson(s) back: Professor, Lecturer from academic-life-1\n7 lesson(s) back: Trader, Broker from stock-exchange-3"
+  },
+  {
+    "lessonId": "research-study-2",
+    "lessonName": "Research & Study 2",
+    "unitId": "research-study",
+    "unitName": "Research & Study",
+    "unitOrder": 156,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 703,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Literature Review",
+      "Methodology",
+      "Conclusion",
+      "Introduction",
+      "Appendix",
+      "Note-Taking",
+      "Flashcard",
+      "Mind Map",
+      "Outline",
+      "Highlight",
+      "Summarize",
+      "Review",
+      "Memorize",
+      "Practice Test",
+      "Study Group"
+    ],
+    "targetWordsArabic": [
+      "جزء يُسمّى «ليتيراتوري ريفييو»",
+      "جزء يُسمّى «ميثودولوجي»",
+      "استنتاج",
+      "مصطلح مرتبط بالموضوع يُسمّى «ينترودوكتيون»",
+      "مادة يُسمّى «اببينديكس»",
+      "مصطلح مرتبط بالموضوع يُسمّى «نوتي-تاكينج»",
+      "مصطلح مرتبط بالموضوع يُسمّى «فلاشكارد»",
+      "عضو يُسمّى «ميند ماب»",
+      "شكل يُسمّى «ووتليني»",
+      "منطقة يُسمّى «هيغليغت»",
+      "مصطلح مرتبط بالموضوع يُسمّى «سومماريزي»",
+      "مراجعة",
+      "مصطلح مرتبط بالموضوع يُسمّى «ميموريزي»",
+      "مادة يُسمّى «براكتيكي تيست»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستودي جرووب»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Research & Study to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use research & study vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "report excerpt",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Literature Review", "Methodology", "Conclusion", "Introduction"],
+          "scenario": "The student or researcher works with literature review, methodology, conclusion, and introduction. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Literature Review", "Methodology", "Conclusion", "Introduction"],
+            "expectedAnswer": "Literature Review"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with literature review, methodology, conclusion, and introduction. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Appendix", "Note-Taking", "Flashcard", "Mind Map"],
+          "scenario": "The student or researcher works with appendix, note-taking, flashcard, and mind map. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Appendix", "Note-Taking", "Flashcard", "Mind Map"],
+            "expectedAnswer": "Appendix"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with appendix, note-taking, flashcard, and mind map. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Outline", "Highlight", "Summarize", "Review"],
+          "scenario": "The student or researcher works with outline, highlight, summarize, and review. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Outline", "Highlight", "Summarize", "Review"],
+            "expectedAnswer": "Outline"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with outline, highlight, summarize, and review. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Memorize", "Practice Test", "Study Group"],
+          "scenario": "The student or researcher works with memorize, practice test, and study group. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Memorize", "Practice Test", "Study Group"],
+            "expectedAnswer": "Memorize"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with memorize, practice test, and study group. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Research & Study: Report Excerpt",
+      "text": "A realistic case involving research & study shows how precise vocabulary can influence choices, explanations, and outcomes. The student or researcher works with literature review, methodology, conclusion, and introduction. Each term supports a different part of study, research, or campus life. The student or researcher works with appendix, note-taking, flashcard, and mind map. Each term supports a different part of study, research, or campus life. The student or researcher works with outline, highlight, summarize, and review. Each term supports a different part of study, research, or campus life. The student or researcher works with memorize, practice test, and study group. Each term supports a different part of study, research, or campus life. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Research & Study. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Literature Review"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Appendix"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Outline"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Memorize"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Literature Review"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Textbook” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Research & Study: In Context",
+      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Textbook, Journal from research-study-1\n3 lesson(s) back: Syllabus, Prerequisite from academic-life-2\n7 lesson(s) back: Lecture Hall, Library from university-campus-1"
+  },
+  {
+    "lessonId": "research-study-3",
+    "lessonName": "Research & Study 3",
+    "unitId": "research-study",
+    "unitName": "Research & Study",
+    "unitOrder": 156,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 704,
+    "cefrStage": "B2",
+    "stageName": "B2 Fluency & Work",
+    "targetWordsEnglish": [
+      "Plagiarism",
+      "Reference",
+      "Original Work",
+      "Paraphrase",
+      "Quote",
+      "Source",
+      "Academic Honesty",
+      "Turnitin",
+      "Honor Code"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «بلاجياريسم»",
+      "مرجعي",
+      "شخص يُسمّى «وريجينال وورك»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بارافراسي»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كوتي»",
+      "شخص يُسمّى «سووركي»",
+      "النزاهة الأكاديمية",
+      "تيرنيتن؛ منصة لفحص تشابه النصوص",
+      "مصطلح مرتبط بالموضوع يُسمّى «هونور كودي»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Research & Study to understand and communicate in a realistic B2-appropriate context.",
+      "canDoStatement": "I can use research & study vocabulary to discuss choices, consequences, and more precise meanings.",
+      "textType": "workplace/academic scenario",
+      "readingTarget": "120-170 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Plagiarism", "Reference", "Original Work", "Paraphrase"],
+          "scenario": "The student or researcher works with plagiarism, reference, original work, and paraphrase. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Plagiarism", "Reference", "Original Work", "Paraphrase"],
+            "expectedAnswer": "Plagiarism"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with plagiarism, reference, original work, and paraphrase. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Quote", "Source", "Academic Honesty", "Turnitin"],
+          "scenario": "The student or researcher works with quote, source, academic honesty, and turnitin. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Quote", "Source", "Academic Honesty", "Turnitin"],
+            "expectedAnswer": "Quote"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with quote, source, academic honesty, and turnitin. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": "Honor Code",
+          "scenario": "The student or researcher works with honor code. Each term supports a different part of study, research, or campus life.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": "Honor Code",
+            "expectedAnswer": "Honor Code"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The student or researcher works with honor code. Each term supports a different part of study, research, or campus life. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Research & Study: Workplace/Academic Scenario",
+      "text": "A realistic case involving research & study shows how precise vocabulary can influence choices, explanations, and outcomes. The student or researcher works with plagiarism, reference, original work, and paraphrase. Each term supports a different part of study, research, or campus life. The student or researcher works with quote, source, academic honesty, and turnitin. Each term supports a different part of study, research, or campus life. The student or researcher works with honor code. Each term supports a different part of study, research, or campus life. The text highlights relationships between terms, consequences, and more precise choices.",
+      "imageBrief": "Create one coherent B2-level visual for the reading about Research & Study. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Plagiarism"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Quote"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Honor Code"
+      },
+      {
+        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
+        "answer": "The main case described"
+      },
+      {
+        "prompt": "Precision: Which target term gives the most precise description early in the text?",
+        "answer": "Plagiarism"
+      },
+      {
+        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
+        "answer": "The outcome or response"
+      },
+      {
+        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
+        "answer": "A context-supported inference"
+      },
+      {
+        "prompt": "Production: Summarize the case using three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Literature Review” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Research & Study: In Context",
+      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Literature Review, Methodology from research-study-2\n3 lesson(s) back: Bachelor's, Master's from academic-life-3\n7 lesson(s) back: Gate, Pathway from university-campus-2"
+  }
+]

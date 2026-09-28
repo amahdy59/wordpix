@@ -1,6 +1,6 @@
 import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
-import { resolveGroup, resolveUnitForLesson, type VocabularyItem } from "../data/lessons";
+import { resolveGroup, resolveUnitForLesson, type VocabularyItem } from "../data/courseCatalog";
 import { ExitConfirmModal } from "../shared/ExitConfirmModal";
 import { useAudio } from "../shared/useAudio";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
@@ -8,13 +8,14 @@ import { ChevronRight, ChevronLeft, Mic, CheckCircle2, BookOpen, X } from "lucid
 import { WordImage } from "../shared/WordImage";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useSpeechRecognition } from "../shared/useSpeechRecognition";
-// Type-only: erased at compile time, so the drill screen paints before the
-// 1.6 MB dictionary is parsed. The gloss enhances in place via dynamic
-// import() once the screen mounts.
+// Unit fields paint first; the shared loader enhances the active word.
 import type { LexiconEntry } from "../data/lexiconDictionary";
 import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { WordDetailsContent } from "../shared/WordDetailsContent";
 import { useI18n } from "../context/I18nContext";
+import { useLexicon } from "../shared/useLexicon";
+import { loadLexicon } from "../data/lexiconLoader";
+import { getAuthoredWord } from "./content/authoredLessonContent";
 
 interface Props {
   step: number;
@@ -39,25 +40,14 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   const [continuous, setContinuous] = useState(false);
   const [playbackError, setPlaybackError] = useState(false);
   const [showExit, setShowExit] = useState(false);
-  // Dictionary arrives on demand; the card renders from unit fields first.
-  const [lexicon, setLexicon] = useState<typeof import("../data/lexiconDictionary") | null>(null);
-  const [lexiconFailed, setLexiconFailed] = useState(false);
-  const [lexiconRetry, setLexiconRetry] = useState(0);
-
+  const { lexicon, lexiconFailed, retryLexicon } = useLexicon(
+    words.slice(activeWordIndex, activeWordIndex + 1).map((word) => word.id)
+  );
+  // Warm only the next card. A speculative failure never blocks the current one.
   useEffect(() => {
-    let cancelled = false;
-    import("../data/lexiconDictionary").then(
-      (mod) => {
-        if (!cancelled) setLexicon(mod);
-      },
-      () => {
-        if (!cancelled) setLexiconFailed(true);
-      }
-    );
-    return () => {
-      cancelled = true;
-    };
-  }, [lexiconRetry]);
+    const next = words[activeWordIndex + 1];
+    if (next) void loadLexicon([next.id]).catch(() => undefined);
+  }, [words, activeWordIndex]);
   const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const unit = resolveUnitForLesson(lessonId);
   const { accessibility } = useAccessibility();
@@ -262,13 +252,17 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     currentWord.label,
     unit.id
   );
-  const arabicTranslation = currentWord.arabicTranslation ?? lexiconEntry?.arabic;
-  // Before the dictionary arrives, unit-provided translations render as-is;
+  const authoredWord = getAuthoredWord(currentWord.id);
+  const arabicTranslation =
+    authoredWord?.arabic ?? currentWord.arabicTranslation ?? lexiconEntry?.arabic;
+  // Before the dictionary arrives, unit-provided or authored translations render as-is;
   // the Arabic-script check applies once it is available.
   const showArabicTranslation =
-    lexicon !== null
-      ? lexicon.hasArabicGloss({ arabic: arabicTranslation ?? "" })
-      : currentWord.arabicTranslation !== undefined && currentWord.arabicTranslation !== "";
+    authoredWord?.arabic !== undefined
+      ? true
+      : lexicon !== null
+        ? lexicon.hasArabicGloss({ arabic: arabicTranslation ?? "" })
+        : currentWord.arabicTranslation !== undefined && currentWord.arabicTranslation !== "";
 
   return (
     <div className="h-dvh bg-background flex flex-col overflow-hidden">
@@ -347,7 +341,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               })}
         </div>
 
-        <div className="relative flex flex-col gap-4 w-full max-w-[1440px] mx-auto min-h-0">
+        <div className="wp-container-wide relative flex min-h-0 flex-col gap-4">
           {/* Direct word selection is useful on larger screens but duplicates
             progress and navigation on a phone. */}
           {/* Main Flashcard Container with Swipe Support */}
@@ -428,10 +422,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                       </p>
                       <button
                         type="button"
-                        onClick={() => {
-                          setLexiconFailed(false);
-                          setLexiconRetry((count) => count + 1);
-                        }}
+                        onClick={retryLexicon}
                         className="min-h-[44px] px-4 rounded-xl bg-secondary border border-border text-primary font-sans font-bold text-xs sm:text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
                       >
                         {t("action.tryAgain")}

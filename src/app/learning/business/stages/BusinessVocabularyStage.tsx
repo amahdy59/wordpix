@@ -61,7 +61,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
   }));
 
   return (
-    <div className="flex flex-col gap-6 max-w-5xl mx-auto w-full py-2">
+    <div className="wp-container-content flex flex-col gap-6 py-2">
       {/* Stage Header Tag */}
       <div className="flex items-center justify-between gap-4">
         <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-primary">

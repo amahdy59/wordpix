@@ -1,0 +1,731 @@
+﻿[
+  {
+    "lessonId": "camping-site-1",
+    "lessonName": "The Camping Site 1",
+    "unitId": "camping-site",
+    "unitName": "The Camping Site",
+    "unitOrder": 106,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 491,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Tent",
+      "Sleeping Bag",
+      "Air Mattress",
+      "Tarp",
+      "Hammock",
+      "Tent Pole",
+      "Tent Peg",
+      "Rain Fly",
+      "Groundsheet",
+      "Pillow",
+      "Campfire",
+      "Firewood",
+      "Matches",
+      "Lighter",
+      "Grill"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "وِسَادَة / مِخَدَّة",
+      "-",
+      "-",
+      "-",
+      "-",
+      "شَوَّايَة (مِشْوَاةُ اللُّحُومِ وَالخُضْرَاوَات)"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Camping Site to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the camping site vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Tent", "Sleeping Bag", "Air Mattress", "Tarp"],
+          "scenario": "Visitors move through the area and notice tent, sleeping bag, air mattress, and tarp. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Tent", "Sleeping Bag", "Air Mattress", "Tarp"],
+            "expectedAnswer": "Tent"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice tent, sleeping bag, air mattress, and tarp. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Hammock", "Tent Pole", "Tent Peg", "Rain Fly"],
+          "scenario": "Visitors move through the area and notice hammock, tent pole, tent peg, and rain fly. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hammock", "Tent Pole", "Tent Peg", "Rain Fly"],
+            "expectedAnswer": "Hammock"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice hammock, tent pole, tent peg, and rain fly. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Groundsheet", "Pillow", "Campfire", "Firewood"],
+          "scenario": "Visitors move through the area and notice groundsheet, pillow, campfire, and firewood. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Groundsheet", "Pillow", "Campfire", "Firewood"],
+            "expectedAnswer": "Groundsheet"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice groundsheet, pillow, campfire, and firewood. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Matches", "Lighter", "Grill"],
+          "scenario": "Visitors move through the area and notice matches, lighter, and grill. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Matches", "Lighter", "Grill"],
+            "expectedAnswer": "Matches"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice matches, lighter, and grill. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Camping Site: Practical Article",
+      "text": "A practical situation involving the camping site requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. Visitors move through the area and notice tent, sleeping bag, air mattress, and tarp. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice hammock, tent pole, tent peg, and rain fly. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice groundsheet, pillow, campfire, and firewood. The scene gives each word a clear place in the outdoor setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Camping Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Tent"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hammock"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Groundsheet"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Matches"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Tent"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Tarp"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Oil Gland” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Camping Site: In Context",
+      "idea": "40-60 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Oil Gland, Melanin from body-systems-4\n3 lesson(s) back: Thymus, Bone Marrow from body-systems-2\n7 lesson(s) back: Sacrum, Coccyx from skeleton-2"
+  },
+  {
+    "lessonId": "camping-site-2",
+    "lessonName": "The Camping Site 2",
+    "unitId": "camping-site",
+    "unitName": "The Camping Site",
+    "unitOrder": 106,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 492,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Camp Stove",
+      "Cooler",
+      "Water Jug",
+      "Thermos",
+      "Camping Pot",
+      "Marshmallow",
+      "Skewer",
+      "Compass",
+      "Map",
+      "GPS Device",
+      "Flashlight",
+      "Headlamp",
+      "Lantern",
+      "Binoculars",
+      "Whistle"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "صُنْدُوقُ تَبْرِيد (حَافِظَةُ المَشْرُوبَاتِ المُثَلَّجَة / كُولَر)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "فِرْجَار (بِرْجَل)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "صَفَّارَة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Camping Site to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the camping site vocabulary to handle a practical situation and explain key details.",
+      "textType": "email",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Camp Stove", "Cooler", "Water Jug", "Thermos"],
+          "scenario": "Visitors move through the area and notice camp stove, cooler, water jug, and thermos. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Camp Stove", "Cooler", "Water Jug", "Thermos"],
+            "expectedAnswer": "Camp Stove"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice camp stove, cooler, water jug, and thermos. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Camping Pot", "Marshmallow", "Skewer", "Compass"],
+          "scenario": "Visitors move through the area and notice camping pot, marshmallow, skewer, and compass. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Camping Pot", "Marshmallow", "Skewer", "Compass"],
+            "expectedAnswer": "Camping Pot"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice camping pot, marshmallow, skewer, and compass. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Map", "GPS Device", "Flashlight", "Headlamp"],
+          "scenario": "Visitors move through the area and notice map, gps device, flashlight, and headlamp. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Map", "GPS Device", "Flashlight", "Headlamp"],
+            "expectedAnswer": "Map"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice map, gps device, flashlight, and headlamp. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Lantern", "Binoculars", "Whistle"],
+          "scenario": "Visitors move through the area and notice lantern, binoculars, and whistle. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lantern", "Binoculars", "Whistle"],
+            "expectedAnswer": "Lantern"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice lantern, binoculars, and whistle. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Camping Site: Email",
+      "text": "A practical situation involving the camping site requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. Visitors move through the area and notice camp stove, cooler, water jug, and thermos. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice camping pot, marshmallow, skewer, and compass. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice map, gps device, flashlight, and headlamp. The scene gives each word a clear place in the outdoor setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Camping Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Camp Stove"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Camping Pot"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Map"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lantern"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Camp Stove"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Thermos"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Tent” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Camping Site: In Context",
+      "idea": "40-60 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Tent, Sleeping Bag from camping-site-1\n3 lesson(s) back: Cell Division, DNA from body-systems-3\n7 lesson(s) back: Pelvis, Femur from skeleton-3"
+  },
+  {
+    "lessonId": "camping-site-3",
+    "lessonName": "The Camping Site 3",
+    "unitId": "camping-site",
+    "unitName": "The Camping Site",
+    "unitOrder": 106,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 493,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Signal Mirror",
+      "Trail Marker",
+      "Backpack",
+      "Hiking Boots",
+      "Walking Stick",
+      "Water Bottle",
+      "Pocket Knife",
+      "Rope",
+      "Carabiner",
+      "Dry Bag",
+      "First Aid Kit",
+      "Sunscreen",
+      "Trail",
+      "River",
+      "Waterfall"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "حَقِيبَةُ ظَهْر",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "حَقِيبَةُ الإِسْعَافَاتِ الأَوَّلِيَّة (صُنْدُوقُ الإِسْعَاف)",
+      "وَاقِي الشَّمْس",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Camping Site to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the camping site vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Signal Mirror", "Trail Marker", "Backpack", "Hiking Boots"],
+          "scenario": "Visitors move through the area and notice signal mirror, trail marker, backpack, and hiking boots. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Signal Mirror", "Trail Marker", "Backpack", "Hiking Boots"],
+            "expectedAnswer": "Signal Mirror"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice signal mirror, trail marker, backpack, and hiking boots. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Walking Stick", "Water Bottle", "Pocket Knife", "Rope"],
+          "scenario": "Visitors move through the area and notice walking stick, water bottle, pocket knife, and rope. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Walking Stick", "Water Bottle", "Pocket Knife", "Rope"],
+            "expectedAnswer": "Walking Stick"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice walking stick, water bottle, pocket knife, and rope. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Carabiner", "Dry Bag", "First Aid Kit", "Sunscreen"],
+          "scenario": "Visitors move through the area and notice carabiner, dry bag, first aid kit, and sunscreen. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Carabiner", "Dry Bag", "First Aid Kit", "Sunscreen"],
+            "expectedAnswer": "Carabiner"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice carabiner, dry bag, first aid kit, and sunscreen. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Trail", "River", "Waterfall"],
+          "scenario": "Visitors move through the area and notice trail, river, and waterfall. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Trail", "River", "Waterfall"],
+            "expectedAnswer": "Trail"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice trail, river, and waterfall. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Camping Site: Review",
+      "text": "A practical situation involving the camping site requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. Visitors move through the area and notice signal mirror, trail marker, backpack, and hiking boots. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice walking stick, water bottle, pocket knife, and rope. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice carabiner, dry bag, first aid kit, and sunscreen. The scene gives each word a clear place in the outdoor setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Camping Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Signal Mirror"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Walking Stick"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Carabiner"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Trail"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Signal Mirror"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Hiking Boots"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Camp Stove” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Camping Site: In Context",
+      "idea": "40-60 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Camp Stove, Cooler from camping-site-2\n3 lesson(s) back: Oil Gland, Melanin from body-systems-4\n7 lesson(s) back: Periosteum, Synovial Fluid from skeleton-4"
+  },
+  {
+    "lessonId": "camping-site-4",
+    "lessonName": "The Camping Site 4",
+    "unitId": "camping-site",
+    "unitName": "The Camping Site",
+    "unitOrder": 106,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 494,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Mountain",
+      "Valley",
+      "Pine Tree",
+      "Wildflower",
+      "Mushroom",
+      "Rock",
+      "Cliff",
+      "Meadow",
+      "Lake",
+      "Hiking",
+      "Fishing",
+      "Swimming",
+      "Canoeing",
+      "Bird Watching",
+      "Star Gazing"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "شَجَرَةُ الصَّنَوْبَر",
+      "-",
+      "فِطْر (عُشُّ الغُرَاب / مَشْرُوم)",
+      "-",
+      "جُرْف (مُنْحَدَرٌ صَخْرِيٌّ سَاحِلِيّ)",
+      "-",
+      "-",
+      "-",
+      "صَيْدُ الأَسْمَاك (الصَّيْدُ البَحْرِيّ)",
+      "سِبَاحَة (مُمَارَسَةُ السِّبَاحَة)",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Camping Site to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the camping site vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Mountain", "Valley", "Pine Tree", "Wildflower"],
+          "scenario": "Visitors move through the area and notice mountain, valley, pine tree, and wildflower. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mountain", "Valley", "Pine Tree", "Wildflower"],
+            "expectedAnswer": "Mountain"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice mountain, valley, pine tree, and wildflower. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Mushroom", "Rock", "Cliff", "Meadow"],
+          "scenario": "Visitors move through the area and notice mushroom, rock, cliff, and meadow. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mushroom", "Rock", "Cliff", "Meadow"],
+            "expectedAnswer": "Mushroom"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice mushroom, rock, cliff, and meadow. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Lake", "Hiking", "Fishing", "Swimming"],
+          "scenario": "Visitors move through the area and notice lake, hiking, fishing, and swimming. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lake", "Hiking", "Fishing", "Swimming"],
+            "expectedAnswer": "Lake"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice lake, hiking, fishing, and swimming. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Canoeing", "Bird Watching", "Star Gazing"],
+          "scenario": "The learner connects canoeing, bird watching, and star gazing to the main activity and explains what each term means in context.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Canoeing", "Bird Watching", "Star Gazing"],
+            "expectedAnswer": "Canoeing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The learner connects canoeing, bird watching, and star gazing to the main activity and explains what each term means in context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Camping Site: Travel/Visitor Guide",
+      "text": "A practical situation involving the camping site requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. Visitors move through the area and notice mountain, valley, pine tree, and wildflower. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice mushroom, rock, cliff, and meadow. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice lake, hiking, fishing, and swimming. The scene gives each word a clear place in the outdoor setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Camping Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mountain"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mushroom"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lake"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Canoeing"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Mountain"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Wildflower"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Signal Mirror” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Camping Site: In Context",
+      "idea": "40-60 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Signal Mirror, Trail Marker from camping-site-3\n3 lesson(s) back: Tent, Sleeping Bag from camping-site-1\n7 lesson(s) back: Muscle, Bicep from body-systems-1"
+  },
+  {
+    "lessonId": "camping-site-5",
+    "lessonName": "The Camping Site 5",
+    "unitId": "camping-site",
+    "unitName": "The Camping Site",
+    "unitOrder": 106,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 495,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Photography",
+      "Rock Climbing",
+      "Mountain Biking",
+      "Cooking",
+      "Hike",
+      "Fish",
+      "Cook",
+      "Roast Marshmallow",
+      "Star Gaze",
+      "Paddle",
+      "Set Up Tent",
+      "Explore"
+    ],
+    "targetWordsArabic": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "سَمَك (سَمَكَة)",
+      "طَبَّاخ (مُعِدُّ الوَجَبَاتِ وَالأَطْعِمَة)",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Camping Site to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the camping site vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Photography", "Rock Climbing", "Mountain Biking", "Cooking"],
+          "scenario": "Visitors move through the area and notice photography, rock climbing, mountain biking, and cooking. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Photography", "Rock Climbing", "Mountain Biking", "Cooking"],
+            "expectedAnswer": "Photography"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice photography, rock climbing, mountain biking, and cooking. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Hike", "Fish", "Cook", "Roast Marshmallow"],
+          "scenario": "Visitors move through the area and notice hike, fish, cook, and roast marshmallow. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hike", "Fish", "Cook", "Roast Marshmallow"],
+            "expectedAnswer": "Hike"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice hike, fish, cook, and roast marshmallow. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Star Gaze", "Paddle", "Set Up Tent", "Explore"],
+          "scenario": "Visitors move through the area and notice star gaze, paddle, set up tent, and explore. The scene gives each word a clear place in the outdoor setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Star Gaze", "Paddle", "Set Up Tent", "Explore"],
+            "expectedAnswer": "Star Gaze"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: Visitors move through the area and notice star gaze, paddle, set up tent, and explore. The scene gives each word a clear place in the outdoor setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Camping Site: Real-Life Scenario",
+      "text": "A practical situation involving the camping site requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. Visitors move through the area and notice photography, rock climbing, mountain biking, and cooking. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice hike, fish, cook, and roast marshmallow. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice star gaze, paddle, set up tent, and explore. The scene gives each word a clear place in the outdoor setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Camping Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Photography"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hike"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Star Gaze"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Photography"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Cooking"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Mountain” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Camping Site: In Context",
+      "idea": "40-60 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Mountain, Valley from camping-site-4\n3 lesson(s) back: Camp Stove, Cooler from camping-site-2\n7 lesson(s) back: Thymus, Bone Marrow from body-systems-2"
+  }
+]

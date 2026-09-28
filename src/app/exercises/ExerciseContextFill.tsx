@@ -1,8 +1,12 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
+import { ArrowRight, CheckCircle2, XCircle } from "lucide-react";
+import { motion, useReducedMotion } from "framer-motion";
 import type { Action } from "../types";
-import { resolveGroup, type VocabularyItem } from "../data/lessons";
+import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { identifyParts, identifySentence } from "../content/wordGrammar";
+import { Button, ExerciseFamilyTemplate, FeedbackPanel, MediaFrame } from "../shared";
+import { identifySentence } from "../content/wordGrammar";
+import { getAuthoredSentence } from "./content/authoredLessonContent";
 import { WordImage } from "../shared/WordImage";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
@@ -12,8 +16,6 @@ import { useSpokenFeedback } from "../shared/useSpokenFeedback";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
-import { Keyboard, CheckCircle2, XCircle, ArrowRight } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 import { useI18n } from "../context/I18nContext";
 
 interface Props {
@@ -30,36 +32,30 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   dispatch,
 }: Props) {
   const { t } = useI18n();
+  const reduceMotion = useReducedMotion();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
   const spoken = useSpokenFeedback();
-
   const queue = useDrillQueue(words);
   const currentTargetWord = queue.current ?? words[0];
   usePrefetchImage(queue.next);
 
   const options = useMemo(() => {
-    const otherWords = words.filter((w) => w.id !== currentTargetWord.id);
-    const shuffled = shuffleArray(otherWords).slice(0, 3);
-    return shuffleArray([currentTargetWord, ...shuffled]);
+    const otherWords = words.filter((word) => word.id !== currentTargetWord.id);
+    return shuffleArray([currentTargetWord, ...shuffleArray(otherWords).slice(0, 3)]);
   }, [currentTargetWord, words]);
-
-  // Split so the word itself can carry the accent colour while the frame
-  // around it stays plain — and so the frame is the grammatical one for this
-  // word, not an unconditional "This is a ".
-  const answerParts = useMemo(
-    () => identifyParts(currentTargetWord.label, currentTargetWord.topic),
-    [currentTargetWord]
-  );
+  const answerSentence = useMemo(() => {
+    const authored = getAuthoredSentence(currentTargetWord.id);
+    return authored?.full ?? identifySentence(currentTargetWord.label, currentTargetWord.topic);
+  }, [currentTargetWord]);
 
   const advanceNext = useCallback(() => {
     if (feedback !== null) queue.submit(feedback === "correct");
     setSelectedId(null);
     setFeedback(null);
   }, [feedback, queue]);
-
   const autoAdvance = useAutoAdvance({
     enabled: accessibility.autoAdvance,
     onAdvance: advanceNext,
@@ -74,18 +70,16 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       if (feedback !== null) return;
       playClick();
       setSelectedId(id);
-
       const correct = id === currentTargetWord.id;
       setFeedback(correct ? "correct" : "incorrect");
       if (correct) playCorrect();
       else playIncorrect();
-
       spoken.speakFeedback(
         {
           correct,
           targetLabel: currentTargetWord.label,
           targetTopic: currentTargetWord.topic,
-          chosenLabel: options.find((o) => o.id === id)?.label,
+          chosenLabel: options.find((option) => option.id === id)?.label,
           chosenTopic: currentTargetWord.topic,
         },
         () => {
@@ -94,7 +88,6 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
           );
         }
       );
-
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
     },
     [
@@ -102,9 +95,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       playClick,
       playCorrect,
       playIncorrect,
-      currentTargetWord.id,
-      currentTargetWord.label,
-      currentTargetWord.topic,
+      currentTargetWord,
       options,
       spoken,
       dispatch,
@@ -117,7 +108,6 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
     spoken.cancel();
     advanceNext();
   }, [autoAdvance, spoken, advanceNext]);
-
   const selectByIndex = useCallback(
     (index: number) => {
       const option = options[index];
@@ -125,7 +115,6 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
     },
     [options, handleSelect]
   );
-
   useExerciseHotkeys({
     optionCount: options.length,
     onSelectIndex: selectByIndex,
@@ -136,7 +125,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
     () =>
       resolveGroup(
         lessonId,
-        words.map((w) => w.id)
+        words.map((word) => word.id)
       ),
     [lessonId, words]
   );
@@ -144,7 +133,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   return (
     <ExerciseShell
       step={step}
-      title="Context Fill"
+      title={t("exercise.pictureMatchTitle")}
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
@@ -152,123 +141,78 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       subtitle={
         <>
           <span className="uppercase tracking-wider">{group.name}</span>
-          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full">
+          <span className="rounded-full border border-primary/20 bg-secondary px-2.5 py-0.5 font-semibold text-primary">
             {t("exercise.sentenceOf", { current: queue.position, total: queue.total })}
           </span>
         </>
       }
-      footer={
-        <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
-          <div className="flex items-center gap-1.5 text-wp-amber font-bold">
-            <Keyboard className="size-4" aria-hidden />
-            <span>{t("exercise.pressNumberToChooseWord", { count: options.length })}</span>
-          </div>
-        </div>
-      }
     >
-      <div className="relative flex flex-col gap-3 sm:gap-4 w-full max-w-2xl mx-auto my-auto">
-        <h2 className="sr-only">{t("exercise.chooseCorrectWord")}</h2>
-
-        {/* Image with centered feedback overlay */}
-        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[3/2] sm:aspect-[16/9] max-h-[38dvh] sm:max-h-[46dvh]">
-          <WordImage
-            word={currentTargetWord}
-            className="w-full h-full absolute inset-0 object-cover"
-            // The question's own picture is the largest thing on screen and
-            // the one the answer depends on, so it is the LCP element. It
-            // inherited WordImage's lazy default, which defers discovery of
-            // exactly the image the learner is waiting for.
-            loading="eager"
-            fetchPriority="high"
-          />
-
-          <AnimatePresence>
-            {feedback !== null && (
-              <motion.div
-                key="feedback-overlay"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.2 }}
-                className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/45 backdrop-blur-[2px]"
+      <ExerciseFamilyTemplate
+        family="visual-choice"
+        instruction={t("exercise.chooseCorrectWord")}
+        helper={t("exercise.pressNumberToChooseWord", { count: options.length })}
+        activityLabel={t("exercise.wordChoicesAria")}
+        media={
+          <MediaFrame aspect="scene" className="max-h-[38dvh] sm:max-h-[46dvh]">
+            <WordImage
+              word={currentTargetWord}
+              className="size-full object-cover"
+              loading="eager"
+              fetchPriority="high"
+            />
+          </MediaFrame>
+        }
+        activity={
+          <div className="grid w-full grid-cols-2 gap-2 sm:gap-3" dir="ltr" lang="en">
+            {options.map((option, index) => (
+              <motion.button
+                key={option.id}
+                type="button"
+                whileTap={!reduceMotion && feedback === null ? { scale: 0.95 } : {}}
+                transition={{ duration: 0.1 }}
+                aria-pressed={selectedId === option.id}
+                aria-disabled={feedback !== null || undefined}
+                onClick={() => handleSelect(option.id)}
+                className="flex min-h-[48px] items-center justify-between rounded-xl border-2 border-border bg-wp-card p-2.5 font-sans text-base font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary motion-reduce:transition-none sm:min-h-[52px] sm:p-3 sm:text-lg"
               >
-                <motion.div
-                  initial={{ scale: 0.4, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  transition={{ type: "spring", stiffness: 420, damping: 18, delay: 0.05 }}
-                  className={`rounded-full p-3 shadow-xl ${
-                    feedback === "correct" ? "bg-wp-green" : "bg-wp-rose"
-                  }`}
-                >
-                  {feedback === "correct" ? (
-                    <CheckCircle2 className="size-10 sm:size-12 text-white" aria-hidden />
-                  ) : (
-                    <XCircle className="size-10 sm:size-12 text-white" aria-hidden />
-                  )}
-                </motion.div>
-
-                <motion.p
-                  initial={{ y: 10, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.18 }}
-                  className="font-sans font-black text-white text-lg sm:text-xl drop-shadow-lg text-center px-6"
-                >
-                  {answerParts.before}
-                  <span className="text-wp-amber">{answerParts.word}</span>
-                  {answerParts.after}
-                </motion.p>
-
-                {!accessibility.autoAdvance && (
-                  <motion.button
-                    initial={{ y: 10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.3 }}
-                    type="button"
-                    onClick={handleContinue}
-                    className="flex items-center gap-2 px-6 min-h-[44px] rounded-full bg-primary text-primary-foreground font-sans font-bold text-sm shadow-lg hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
-                  >
-                    {t("action.continue")}
-                    <ArrowRight className="size-4" aria-hidden />
-                  </motion.button>
-                )}
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          <span aria-live="polite" aria-atomic="true" className="sr-only">
-            {feedback === "correct"
-              ? `Correct. ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`
-              : feedback === "incorrect"
-                ? `Incorrect. ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`
-                : ""}
-          </span>
-        </div>
-
-        {/* Word choice buttons — always neutral styling, no feedback colours */}
-        <div
-          role="group"
-          aria-label="Word choices"
-          className="grid grid-cols-2 gap-2 sm:gap-3 w-full"
-        >
-          {options.map((option, idx) => (
-            <motion.button
-              key={option.id}
-              type="button"
-              whileTap={feedback === null ? { scale: 0.95 } : {}}
-              transition={{ duration: 0.1 }}
-              aria-pressed={selectedId === option.id}
-              aria-disabled={feedback !== null}
-              onClick={() => handleSelect(option.id)}
-              className="rounded-xl p-2.5 sm:p-3 font-sans font-bold text-base sm:text-lg border-2 min-h-[48px] sm:min-h-[52px] flex items-center justify-between shadow-wp-xs bg-wp-card border-border text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+                <span className="capitalize">{option.label.toLowerCase()}</span>
+                <span className="hidden rounded-md bg-muted px-2 py-0.5 text-xs font-bold text-muted-foreground sm:inline-block">
+                  {index + 1}
+                </span>
+              </motion.button>
+            ))}
+          </div>
+        }
+        feedback={
+          feedback ? (
+            <FeedbackPanel
+              tone={feedback === "correct" ? "success" : "error"}
+              title={
+                feedback === "correct" ? t("exercise.correctTitle") : t("exercise.notQuiteTitle")
+              }
+              description={answerSentence}
+              icon={
+                feedback === "correct" ? (
+                  <CheckCircle2 className="size-6 text-wp-green" aria-hidden />
+                ) : (
+                  <XCircle className="size-6 text-destructive" aria-hidden />
+                )
+              }
+            />
+          ) : undefined
+        }
+        action={
+          feedback !== null && !accessibility.autoAdvance ? (
+            <Button
+              size="lg"
+              iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
+              onClick={handleContinue}
             >
-              <span className="capitalize">{option.label.toLowerCase()}</span>
-              <span className="hidden sm:inline-block text-[11px] px-2 py-0.5 rounded-md font-bold bg-muted text-muted-foreground">
-                [{idx + 1}]
-              </span>
-            </motion.button>
-          ))}
-        </div>
-      </div>
+              {t("action.continue")}
+            </Button>
+          ) : undefined
+        }
+      />
     </ExerciseShell>
   );
 });

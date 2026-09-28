@@ -1,0 +1,439 @@
+﻿[
+  {
+    "lessonId": "building-construction-1",
+    "lessonName": "Building & Construction 1",
+    "unitId": "building-construction",
+    "unitName": "Building & Construction",
+    "unitOrder": 185,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 814,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Foundation",
+      "Column",
+      "Beam",
+      "Wall",
+      "Floor",
+      "Roof",
+      "Staircase",
+      "Elevator Shaft",
+      "Load-Bearing Wall",
+      "Truss",
+      "Concrete",
+      "Steel",
+      "Brick",
+      "Glass",
+      "Timber"
+    ],
+    "targetWordsArabic": [
+      "أساس",
+      "عمود",
+      "يبتسم بإشراق",
+      "جدار",
+      "طابق",
+      "سقف",
+      "درج",
+      "مبنى يُسمّى «يليفاتور شافت»",
+      "جدار حامل",
+      "جمالون",
+      "خرسانة",
+      "فولاذ",
+      "طوب",
+      "كَأْسُ زُجَاج (كُوبُ مَاء)",
+      "خشب إنشائي"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Building & Construction to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use building & construction vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "briefing note",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Foundation", "Column", "Beam", "Wall"],
+          "scenario": "The agent, designer, or client discusses foundation, column, beam, and wall. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Foundation", "Column", "Beam", "Wall"],
+            "expectedAnswer": "Foundation"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses foundation, column, beam, and wall. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Floor", "Roof", "Staircase", "Elevator Shaft"],
+          "scenario": "The agent, designer, or client discusses floor, roof, staircase, and elevator shaft. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Floor", "Roof", "Staircase", "Elevator Shaft"],
+            "expectedAnswer": "Floor"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses floor, roof, staircase, and elevator shaft. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Load-Bearing Wall", "Truss", "Concrete", "Steel"],
+          "scenario": "The agent, designer, or client discusses load-bearing wall, truss, concrete, and steel. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Load-Bearing Wall", "Truss", "Concrete", "Steel"],
+            "expectedAnswer": "Load-Bearing Wall"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses load-bearing wall, truss, concrete, and steel. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Brick", "Glass", "Timber"],
+          "scenario": "The agent, designer, or client discusses brick, glass, and timber. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Brick", "Glass", "Timber"],
+            "expectedAnswer": "Brick"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses brick, glass, and timber. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Building & Construction: Briefing Note",
+      "text": "This text examines building & construction through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The agent, designer, or client discusses foundation, column, beam, and wall. The words help describe the property, design choice, or building process. The agent, designer, or client discusses floor, roof, staircase, and elevator shaft. The words help describe the property, design choice, or building process. The agent, designer, or client discusses load-bearing wall, truss, concrete, and steel. The words help describe the property, design choice, or building process. The agent, designer, or client discusses brick, glass, and timber. The words help describe the property, design choice, or building process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about Building & Construction. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Foundation"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Floor"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Load-Bearing Wall"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Brick"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Foundation"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Beam"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Model Making Kit” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Building & Construction: In Context",
+      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Model Making Kit, Laser Cutter from architect-s-studio-3\n3 lesson(s) back: Blueprint, Floor Plan from architect-s-studio-1\n7 lesson(s) back: Patent, Trademark from legal-documents-3"
+  },
+  {
+    "lessonId": "building-construction-2",
+    "lessonName": "Building & Construction 2",
+    "unitId": "building-construction",
+    "unitName": "Building & Construction",
+    "unitOrder": 185,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 815,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "Stone",
+      "Aluminum",
+      "Insulation",
+      "Drywall",
+      "Rebar",
+      "Excavation",
+      "Pouring Foundation",
+      "Framing",
+      "Roofing",
+      "Plumbing",
+      "Electrical",
+      "Drywall Installation",
+      "Painting",
+      "Flooring",
+      "Inspection"
+    ],
+    "targetWordsArabic": [
+      "حجر",
+      "ألمنيوم",
+      "عزل",
+      "ألواح جبسية",
+      "حديد تسليح",
+      "حفر",
+      "صبّ الأساس",
+      "هيكل تأطير",
+      "أعمال سقف",
+      "سباكة",
+      "أعمال كهربائية",
+      "تركيب ألواح الجبس",
+      "لوحة فنية",
+      "أرضيات",
+      "فحص"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Building & Construction to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use building & construction vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "analysis excerpt",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Stone", "Aluminum", "Insulation", "Drywall"],
+          "scenario": "The agent, designer, or client discusses stone, aluminum, insulation, and drywall. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Stone", "Aluminum", "Insulation", "Drywall"],
+            "expectedAnswer": "Stone"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses stone, aluminum, insulation, and drywall. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Rebar", "Excavation", "Pouring Foundation", "Framing"],
+          "scenario": "The agent, designer, or client discusses rebar, excavation, pouring foundation, and framing. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Rebar", "Excavation", "Pouring Foundation", "Framing"],
+            "expectedAnswer": "Rebar"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses rebar, excavation, pouring foundation, and framing. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Roofing", "Plumbing", "Electrical", "Drywall Installation"],
+          "scenario": "The agent, designer, or client discusses roofing, plumbing, electrical, and drywall installation. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Roofing", "Plumbing", "Electrical", "Drywall Installation"],
+            "expectedAnswer": "Roofing"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses roofing, plumbing, electrical, and drywall installation. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Painting", "Flooring", "Inspection"],
+          "scenario": "The agent, designer, or client discusses painting, flooring, and inspection. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Painting", "Flooring", "Inspection"],
+            "expectedAnswer": "Painting"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses painting, flooring, and inspection. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Building & Construction: Analysis Excerpt",
+      "text": "This text examines building & construction through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The agent, designer, or client discusses stone, aluminum, insulation, and drywall. The words help describe the property, design choice, or building process. The agent, designer, or client discusses rebar, excavation, pouring foundation, and framing. The words help describe the property, design choice, or building process. The agent, designer, or client discusses roofing, plumbing, electrical, and drywall installation. The words help describe the property, design choice, or building process. The agent, designer, or client discusses painting, flooring, and inspection. The words help describe the property, design choice, or building process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about Building & Construction. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Stone"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Rebar"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Roofing"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Painting"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Stone"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Insulation"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Foundation” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Building & Construction: In Context",
+      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Foundation, Column from building-construction-1\n3 lesson(s) back: Drafting Table, Tracing Paper from architect-s-studio-2\n7 lesson(s) back: Freedom of Speech, Right to Privacy from rights-regulations-1"
+  },
+  {
+    "lessonId": "building-construction-3",
+    "lessonName": "Building & Construction 3",
+    "unitId": "building-construction",
+    "unitName": "Building & Construction",
+    "unitOrder": 185,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 816,
+    "cefrStage": "C1",
+    "stageName": "C1 Mastery",
+    "targetWordsEnglish": [
+      "General Contractor",
+      "Foreman",
+      "Carpenter",
+      "Electrician",
+      "Plumber",
+      "Mason",
+      "Ironworker",
+      "Crane Operator",
+      "Surveyor",
+      "Safety Inspector"
+    ],
+    "targetWordsArabic": [
+      "مبنى يُسمّى «جينيرال كونتراكتور»",
+      "رئيس عمال",
+      "نجار",
+      "كهربائي",
+      "سباك",
+      "بنّاء",
+      "عامل حديد",
+      "شخص يُسمّى «كراني وبيراتور»",
+      "مسّاح",
+      "مفتش سلامة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from Building & Construction to understand and communicate in a realistic C1-appropriate context.",
+      "canDoStatement": "I can use building & construction vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
+      "textType": "professional summary",
+      "readingTarget": "150-220 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["General Contractor", "Foreman", "Carpenter", "Electrician"],
+          "scenario": "The agent, designer, or client discusses general contractor, foreman, carpenter, and electrician. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["General Contractor", "Foreman", "Carpenter", "Electrician"],
+            "expectedAnswer": "General Contractor"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses general contractor, foreman, carpenter, and electrician. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Plumber", "Mason", "Ironworker", "Crane Operator"],
+          "scenario": "The agent, designer, or client discusses plumber, mason, ironworker, and crane operator. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Plumber", "Mason", "Ironworker", "Crane Operator"],
+            "expectedAnswer": "Plumber"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses plumber, mason, ironworker, and crane operator. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Surveyor", "Safety Inspector"],
+          "scenario": "The agent, designer, or client discusses surveyor and safety inspector. The words help describe the property, design choice, or building process.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Surveyor", "Safety Inspector"],
+            "expectedAnswer": "Surveyor"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses surveyor and safety inspector. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "Building & Construction: Professional Summary",
+      "text": "This text examines building & construction through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The agent, designer, or client discusses general contractor, foreman, carpenter, and electrician. The words help describe the property, design choice, or building process. The agent, designer, or client discusses plumber, mason, ironworker, and crane operator. The words help describe the property, design choice, or building process. The agent, designer, or client discusses surveyor and safety inspector. The words help describe the property, design choice, or building process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about Building & Construction. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "General Contractor"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Plumber"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Surveyor"
+      },
+      {
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
+      },
+      {
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "General Contractor"
+      },
+      {
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Carpenter"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Stone” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "Building & Construction: In Context",
+      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Stone, Aluminum from building-construction-2\n3 lesson(s) back: Model Making Kit, Laser Cutter from architect-s-studio-3\n7 lesson(s) back: Ordinance, Regulation from rights-regulations-2"
+  }
+]

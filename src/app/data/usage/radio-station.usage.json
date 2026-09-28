@@ -1,0 +1,741 @@
+﻿[
+  {
+    "lessonId": "radio-station-1",
+    "lessonName": "The Radio Station 1",
+    "unitId": "radio-station",
+    "unitName": "The Radio Station",
+    "unitOrder": 135,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 625,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Microphone",
+      "Mixing Console",
+      "Headphones",
+      "Monitor Speaker",
+      "Transmitter",
+      "Antenna",
+      "Amplifier",
+      "Equalizer",
+      "Compressor",
+      "Pop Filter",
+      "Sound Booth",
+      "Acoustic Panel",
+      "On-Air Sign",
+      "Desk",
+      "Chair"
+    ],
+    "targetWordsArabic": [
+      "ميكروفون",
+      "منضدة مزج صوتي",
+      "سَمَّاعَاتُ الرَّأْس (هَيْدْفُونْز)",
+      "سماعة مراقبة صوتية",
+      "جهاز إرسال",
+      "هوائي",
+      "مضخم",
+      "مصطلح مرتبط بالموضوع يُسمّى «يكاليزير»",
+      "جهاز يُسمّى «كومبريسسور»",
+      "مصطلح مرتبط بالموضوع يُسمّى «بوب فيلتير»",
+      "كابينة صوت",
+      "لوح معالجة صوتية",
+      "لافتة على الهواء",
+      "مَكْتَب",
+      "كُرْسِيّ"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Radio Station to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the radio station vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Microphone", "Mixing Console", "Headphones", "Monitor Speaker"],
+          "scenario": "The media team works with microphone, mixing console, headphones, and monitor speaker while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Microphone", "Mixing Console", "Headphones", "Monitor Speaker"],
+            "expectedAnswer": "Microphone"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with microphone, mixing console, headphones, and monitor speaker while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Transmitter", "Antenna", "Amplifier", "Equalizer"],
+          "scenario": "The media team works with transmitter, antenna, amplifier, and equalizer while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Transmitter", "Antenna", "Amplifier", "Equalizer"],
+            "expectedAnswer": "Transmitter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with transmitter, antenna, amplifier, and equalizer while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Compressor", "Pop Filter", "Sound Booth", "Acoustic Panel"],
+          "scenario": "The media team works with compressor, pop filter, sound booth, and acoustic panel while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Compressor", "Pop Filter", "Sound Booth", "Acoustic Panel"],
+            "expectedAnswer": "Compressor"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with compressor, pop filter, sound booth, and acoustic panel while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["On-Air Sign", "Desk", "Chair"],
+          "scenario": "The media team works with on-air sign, desk, and chair while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["On-Air Sign", "Desk", "Chair"],
+            "expectedAnswer": "On-Air Sign"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with on-air sign, desk, and chair while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Radio Station: Practical Article",
+      "text": "A practical situation involving the radio station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The media team works with microphone, mixing console, headphones, and monitor speaker while preparing the content. Each term connects to a different step in communication or production. The media team works with transmitter, antenna, amplifier, and equalizer while preparing the content. Each term connects to a different step in communication or production. The media team works with compressor, pop filter, sound booth, and acoustic panel while preparing the content. Each term connects to a different step in communication or production. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Microphone"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Transmitter"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Compressor"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "On-Air Sign"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Microphone"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Monitor Speaker"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Monitor” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Radio Station: In Context",
+      "idea": "40-60 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Monitor, Boom Mic from tv-studio-5\n3 lesson(s) back: Live Broadcast, Recording from tv-studio-3\n7 lesson(s) back: Ink, Paper Roll from newspaper-office-4"
+  },
+  {
+    "lessonId": "radio-station-2",
+    "lessonName": "The Radio Station 2",
+    "unitId": "radio-station",
+    "unitName": "The Radio Station",
+    "unitOrder": 135,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 626,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Computer",
+      "Clock",
+      "Script Stand",
+      "Water Glass",
+      "Cable Management",
+      "Audio Interface",
+      "Digital Recorder",
+      "Sound Card",
+      "Phantom Power",
+      "XLR Cable",
+      "Headphone Amplifier",
+      "Audio Software",
+      "Waveform",
+      "Playback Button",
+      "Record Button"
+    ],
+    "targetWordsArabic": [
+      "حاسوب",
+      "سَاعَةُ حَائِط / سَاعَة",
+      "حامل نص",
+      "زجاج ماء",
+      "تنظيم الكابلات",
+      "واجهة صوتية",
+      "مسجل رقمي",
+      "بطاقة صوت",
+      "طاقة فانتوم",
+      "كابل XLR",
+      "مضخم سماعات رأس",
+      "برامج صوتية",
+      "شكل يُسمّى «وافيفورم»",
+      "زر التشغيل",
+      "زر التسجيل"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Radio Station to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the radio station vocabulary to handle a practical situation and explain key details.",
+      "textType": "email",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Computer", "Clock", "Script Stand", "Water Glass"],
+          "scenario": "The media team works with computer, clock, script stand, and water glass while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Computer", "Clock", "Script Stand", "Water Glass"],
+            "expectedAnswer": "Computer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with computer, clock, script stand, and water glass while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Cable Management", "Audio Interface", "Digital Recorder", "Sound Card"],
+          "scenario": "The media team works with cable management, audio interface, digital recorder, and sound card while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Cable Management", "Audio Interface", "Digital Recorder", "Sound Card"],
+            "expectedAnswer": "Cable Management"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with cable management, audio interface, digital recorder, and sound card while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Phantom Power", "XLR Cable", "Headphone Amplifier", "Audio Software"],
+          "scenario": "The media team works with phantom power, xlr cable, headphone amplifier, and audio software while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Phantom Power", "XLR Cable", "Headphone Amplifier", "Audio Software"],
+            "expectedAnswer": "Phantom Power"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with phantom power, xlr cable, headphone amplifier, and audio software while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Waveform", "Playback Button", "Record Button"],
+          "scenario": "The media team works with waveform, playback button, and record button while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Waveform", "Playback Button", "Record Button"],
+            "expectedAnswer": "Waveform"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with waveform, playback button, and record button while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Radio Station: Email",
+      "text": "A practical situation involving the radio station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The media team works with computer, clock, script stand, and water glass while preparing the content. Each term connects to a different step in communication or production. The media team works with cable management, audio interface, digital recorder, and sound card while preparing the content. Each term connects to a different step in communication or production. The media team works with phantom power, xlr cable, headphone amplifier, and audio software while preparing the content. Each term connects to a different step in communication or production. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Computer"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Cable Management"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Phantom Power"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Waveform"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Computer"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Water Glass"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Microphone” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Radio Station: In Context",
+      "idea": "40-60 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Microphone, Mixing Console from radio-station-1\n3 lesson(s) back: Sound Board, Clip-On Mic from tv-studio-4\n7 lesson(s) back: Classified, Cartoon from newspaper-office-5"
+  },
+  {
+    "lessonId": "radio-station-3",
+    "lessonName": "The Radio Station 3",
+    "unitId": "radio-station",
+    "unitName": "The Radio Station",
+    "unitOrder": 135,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 627,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Playlist",
+      "Jingle",
+      "Sound Effect",
+      "Station ID",
+      "Commercial Break",
+      "News Bulletin",
+      "Weather Update",
+      "Traffic Report",
+      "Interview Segment",
+      "Music Block",
+      "Radio Host",
+      "DJ",
+      "Producer",
+      "Sound Engineer",
+      "News Anchor"
+    ],
+    "targetWordsArabic": [
+      "قائمة تشغيل",
+      "مصطلح مرتبط بالموضوع يُسمّى «جينجلي»",
+      "لعبة يُسمّى «سووند يففيكت»",
+      "تعريف المحطة",
+      "فاصل إعلاني",
+      "مصطلح مرتبط بالموضوع يُسمّى «نيوس بولليتين»",
+      "تحديث الطقس",
+      "تقرير المرور",
+      "فقرة مقابلة",
+      "فقرة موسيقية",
+      "مقدّم إذاعي",
+      "منسق موسيقى",
+      "شخص يُسمّى «برودوكير»",
+      "مهندس صوت",
+      "مصطلح مرتبط بالموضوع يُسمّى «نيوس انتشور»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Radio Station to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the radio station vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Playlist", "Jingle", "Sound Effect", "Station ID"],
+          "scenario": "The media team works with playlist, jingle, sound effect, and station id while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Playlist", "Jingle", "Sound Effect", "Station ID"],
+            "expectedAnswer": "Playlist"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with playlist, jingle, sound effect, and station id while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Commercial Break", "News Bulletin", "Weather Update", "Traffic Report"],
+          "scenario": "The media team works with commercial break, news bulletin, weather update, and traffic report while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Commercial Break", "News Bulletin", "Weather Update", "Traffic Report"],
+            "expectedAnswer": "Commercial Break"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with commercial break, news bulletin, weather update, and traffic report while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Interview Segment", "Music Block", "Radio Host", "DJ"],
+          "scenario": "The media team works with interview segment, music block, radio host, and dj while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Interview Segment", "Music Block", "Radio Host", "DJ"],
+            "expectedAnswer": "Interview Segment"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with interview segment, music block, radio host, and dj while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Producer", "Sound Engineer", "News Anchor"],
+          "scenario": "The media team works with producer, sound engineer, and news anchor while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Producer", "Sound Engineer", "News Anchor"],
+            "expectedAnswer": "Producer"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with producer, sound engineer, and news anchor while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Radio Station: Review",
+      "text": "A practical situation involving the radio station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The media team works with playlist, jingle, sound effect, and station id while preparing the content. Each term connects to a different step in communication or production. The media team works with commercial break, news bulletin, weather update, and traffic report while preparing the content. Each term connects to a different step in communication or production. The media team works with interview segment, music block, radio host, and dj while preparing the content. Each term connects to a different step in communication or production. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Playlist"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Commercial Break"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Interview Segment"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Producer"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Playlist"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Station ID"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Computer” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Radio Station: In Context",
+      "idea": "40-60 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Computer, Clock from radio-station-2\n3 lesson(s) back: Monitor, Boom Mic from tv-studio-5\n7 lesson(s) back: Camera, Tripod from tv-studio-1"
+  },
+  {
+    "lessonId": "radio-station-4",
+    "lessonName": "The Radio Station 4",
+    "unitId": "radio-station",
+    "unitName": "The Radio Station",
+    "unitOrder": 135,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 628,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Traffic Reporter",
+      "Weather Presenter",
+      "Sales Manager",
+      "Program Director",
+      "Intern",
+      "Radio Receiver",
+      "Car Radio",
+      "Portable Radio",
+      "Smartphone App",
+      "Podcast",
+      "Streaming",
+      "Listener",
+      "Frequency Dial",
+      "Volume Knob",
+      "Tuner"
+    ],
+    "targetWordsArabic": [
+      "مراسل مرور",
+      "مقدّم الطقس",
+      "مدير مبيعات",
+      "مخرج برنامج العرض",
+      "متدرب",
+      "مستقبل راديو",
+      "راديو سيارة",
+      "راديو محمول",
+      "تطبيق هاتف ذكي",
+      "مصطلح مرتبط بالموضوع يُسمّى «بودكاست»",
+      "مصطلح مرتبط بالموضوع يُسمّى «ستريامينج»",
+      "شخص يُسمّى «ليستينير»",
+      "قرص ضبط التردد",
+      "جهاز يُسمّى «فولومي كنوب»",
+      "جهاز ضبط النغم"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Radio Station to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the radio station vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": [
+            "Traffic Reporter",
+            "Weather Presenter",
+            "Sales Manager",
+            "Program Director"
+          ],
+          "scenario": "The media team works with traffic reporter, weather presenter, sales manager, and program director while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": [
+              "Traffic Reporter",
+              "Weather Presenter",
+              "Sales Manager",
+              "Program Director"
+            ],
+            "expectedAnswer": "Traffic Reporter"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with traffic reporter, weather presenter, sales manager, and program director while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Intern", "Radio Receiver", "Car Radio", "Portable Radio"],
+          "scenario": "The media team works with intern, radio receiver, car radio, and portable radio while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Intern", "Radio Receiver", "Car Radio", "Portable Radio"],
+            "expectedAnswer": "Intern"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with intern, radio receiver, car radio, and portable radio while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Smartphone App", "Podcast", "Streaming", "Listener"],
+          "scenario": "The media team works with smartphone app, podcast, streaming, and listener while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Smartphone App", "Podcast", "Streaming", "Listener"],
+            "expectedAnswer": "Smartphone App"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with smartphone app, podcast, streaming, and listener while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Frequency Dial", "Volume Knob", "Tuner"],
+          "scenario": "The media team works with frequency dial, volume knob, and tuner while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Frequency Dial", "Volume Knob", "Tuner"],
+            "expectedAnswer": "Frequency Dial"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with frequency dial, volume knob, and tuner while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Radio Station: Travel/Visitor Guide",
+      "text": "A practical situation involving the radio station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The media team works with traffic reporter, weather presenter, sales manager, and program director while preparing the content. Each term connects to a different step in communication or production. The media team works with intern, radio receiver, car radio, and portable radio while preparing the content. Each term connects to a different step in communication or production. The media team works with smartphone app, podcast, streaming, and listener while preparing the content. Each term connects to a different step in communication or production. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Traffic Reporter"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Intern"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Smartphone App"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Frequency Dial"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Traffic Reporter"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Program Director"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Playlist” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Radio Station: In Context",
+      "idea": "40-60 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Playlist, Jingle from radio-station-3\n3 lesson(s) back: Microphone, Mixing Console from radio-station-1\n7 lesson(s) back: Props, Clock from tv-studio-2"
+  },
+  {
+    "lessonId": "radio-station-5",
+    "lessonName": "The Radio Station 5",
+    "unitId": "radio-station",
+    "unitName": "The Radio Station",
+    "unitOrder": 135,
+    "lessonOrderInUnit": 5,
+    "globalOrder": 629,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Turntable",
+      "Speaker",
+      "Soundproof Booth",
+      "On-Air Light",
+      "Control Room",
+      "Recording Booth",
+      "Cue Card",
+      "Script",
+      "Frequency",
+      "Channel",
+      "Commercial",
+      "Interview"
+    ],
+    "targetWordsArabic": [
+      "مصطلح مرتبط بالموضوع يُسمّى «تورنتابلي»",
+      "مُكَبِّرُ صَوْت (سَبِيكَر / سَمَّاعَة)",
+      "كابينة عازلة للصوت",
+      "ضوء البث المباشر",
+      "غرفة عامل ضابط",
+      "كابينة تسجيل",
+      "بطاقة تذكير",
+      "نص مسرحي",
+      "تردد",
+      "مصطلح مرتبط بالموضوع يُسمّى «تشاننيل»",
+      "مصطلح مرتبط بالموضوع يُسمّى «كومميركيال»",
+      "شخص يُسمّى «ينتيرفييو»"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Radio Station to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the radio station vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Turntable", "Speaker", "Soundproof Booth", "On-Air Light"],
+          "scenario": "The media team works with turntable, speaker, soundproof booth, and on-air light while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Turntable", "Speaker", "Soundproof Booth", "On-Air Light"],
+            "expectedAnswer": "Turntable"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with turntable, speaker, soundproof booth, and on-air light while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Control Room", "Recording Booth", "Cue Card", "Script"],
+          "scenario": "The media team works with control room, recording booth, cue card, and script while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Control Room", "Recording Booth", "Cue Card", "Script"],
+            "expectedAnswer": "Control Room"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with control room, recording booth, cue card, and script while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Frequency", "Channel", "Commercial", "Interview"],
+          "scenario": "The media team works with frequency, channel, commercial, and interview while preparing the content. Each term connects to a different step in communication or production.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Frequency", "Channel", "Commercial", "Interview"],
+            "expectedAnswer": "Frequency"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The media team works with frequency, channel, commercial, and interview while preparing the content. Each term connects to a different step in communication or production. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Radio Station: Real-Life Scenario",
+      "text": "A practical situation involving the radio station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The media team works with turntable, speaker, soundproof booth, and on-air light while preparing the content. Each term connects to a different step in communication or production. The media team works with control room, recording booth, cue card, and script while preparing the content. Each term connects to a different step in communication or production. The media team works with frequency, channel, commercial, and interview while preparing the content. Each term connects to a different step in communication or production. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Turntable"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Control Room"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Frequency"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Turntable"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "On-Air Light"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Traffic Reporter” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Radio Station: In Context",
+      "idea": "40-60 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Traffic Reporter, Weather Presenter from radio-station-4\n3 lesson(s) back: Computer, Clock from radio-station-2\n7 lesson(s) back: Live Broadcast, Recording from tv-studio-3"
+  }
+]

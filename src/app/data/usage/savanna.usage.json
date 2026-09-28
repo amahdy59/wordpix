@@ -1,0 +1,602 @@
+﻿[
+  {
+    "lessonId": "savanna-1",
+    "lessonName": "The Savanna 1",
+    "unitId": "savanna",
+    "unitName": "The Savanna",
+    "unitOrder": 110,
+    "lessonOrderInUnit": 1,
+    "globalOrder": 508,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Lion",
+      "Elephant",
+      "Giraffe",
+      "Zebra",
+      "Hippo",
+      "Rhino",
+      "Buffalo",
+      "Cheetah",
+      "Leopard",
+      "Wildebeest",
+      "Meerkat",
+      "Warthog",
+      "Mongoose",
+      "Hyena",
+      "Jackal"
+    ],
+    "targetWordsArabic": [
+      "أسد",
+      "فيل",
+      "زرافة",
+      "حمار وحشي",
+      "فرس النهر",
+      "وحيد القرن",
+      "جاموس",
+      "فهد صائد",
+      "نمر مرقط",
+      "نوّ",
+      "ميركات",
+      "خنزير ثؤلولي",
+      "نمس",
+      "ضبع",
+      "ابن آوى"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Savanna to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the savanna vocabulary to handle a practical situation and explain key details.",
+      "textType": "travel/visitor guide",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Lion", "Elephant", "Giraffe", "Zebra"],
+          "scenario": "The guide or scientist draws attention to lion, elephant, giraffe, and zebra. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Lion", "Elephant", "Giraffe", "Zebra"],
+            "expectedAnswer": "Lion"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to lion, elephant, giraffe, and zebra. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Hippo", "Rhino", "Buffalo", "Cheetah"],
+          "scenario": "The guide or scientist draws attention to hippo, rhino, buffalo, and cheetah. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hippo", "Rhino", "Buffalo", "Cheetah"],
+            "expectedAnswer": "Hippo"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to hippo, rhino, buffalo, and cheetah. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Leopard", "Wildebeest", "Meerkat", "Warthog"],
+          "scenario": "The guide or scientist draws attention to leopard, wildebeest, meerkat, and warthog. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Leopard", "Wildebeest", "Meerkat", "Warthog"],
+            "expectedAnswer": "Leopard"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to leopard, wildebeest, meerkat, and warthog. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Mongoose", "Hyena", "Jackal"],
+          "scenario": "The guide or scientist draws attention to mongoose, hyena, and jackal. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Mongoose", "Hyena", "Jackal"],
+            "expectedAnswer": "Mongoose"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to mongoose, hyena, and jackal. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Savanna: Travel/Visitor Guide",
+      "text": "A practical situation involving the savanna requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to lion, elephant, giraffe, and zebra. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to hippo, rhino, buffalo, and cheetah. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to leopard, wildebeest, meerkat, and warthog. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Savanna. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Lion"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hippo"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Leopard"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Mongoose"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Lion"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Zebra"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Bucket” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Savanna: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Bucket, Waders from river-4\n3 lesson(s) back: Beaver, Dragonfly from river-2\n7 lesson(s) back: Shrub, Alpine Meadow from mountain-2"
+  },
+  {
+    "lessonId": "savanna-2",
+    "lessonName": "The Savanna 2",
+    "unitId": "savanna",
+    "unitName": "The Savanna",
+    "unitOrder": 110,
+    "lessonOrderInUnit": 2,
+    "globalOrder": 509,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Baboon",
+      "Gazelle",
+      "Impala",
+      "Ostrich",
+      "Vulture",
+      "Grassland",
+      "Acacia Tree",
+      "Baobab",
+      "Termite Mound",
+      "Watering Hole",
+      "Horizon",
+      "Sunset",
+      "Dry Riverbed",
+      "Kopje",
+      "Dust"
+    ],
+    "targetWordsArabic": [
+      "رباح",
+      "غزال",
+      "إمبالا",
+      "نعامة",
+      "نسر آكل للجيف",
+      "أرض عشبية",
+      "شجرة الأكاسيا",
+      "باوباب",
+      "تلّ النمل الأبيض",
+      "مشروب يُسمّى «واتيرينج هولي»",
+      "أفق",
+      "غروب الشمس",
+      "مجرى نهر جاف",
+      "تل صخري",
+      "غبار"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Savanna to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the savanna vocabulary to handle a practical situation and explain key details.",
+      "textType": "review",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Baboon", "Gazelle", "Impala", "Ostrich"],
+          "scenario": "The guide or scientist draws attention to baboon, gazelle, impala, and ostrich. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Baboon", "Gazelle", "Impala", "Ostrich"],
+            "expectedAnswer": "Baboon"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to baboon, gazelle, impala, and ostrich. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Vulture", "Grassland", "Acacia Tree", "Baobab"],
+          "scenario": "The guide or scientist draws attention to vulture, grassland, acacia tree, and baobab. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Vulture", "Grassland", "Acacia Tree", "Baobab"],
+            "expectedAnswer": "Vulture"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to vulture, grassland, acacia tree, and baobab. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Termite Mound", "Watering Hole", "Horizon", "Sunset"],
+          "scenario": "The guide or scientist draws attention to termite mound, watering hole, horizon, and sunset. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Termite Mound", "Watering Hole", "Horizon", "Sunset"],
+            "expectedAnswer": "Termite Mound"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to termite mound, watering hole, horizon, and sunset. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Dry Riverbed", "Kopje", "Dust"],
+          "scenario": "The guide or scientist draws attention to dry riverbed, kopje, and dust. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Dry Riverbed", "Kopje", "Dust"],
+            "expectedAnswer": "Dry Riverbed"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to dry riverbed, kopje, and dust. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Savanna: Review",
+      "text": "A practical situation involving the savanna requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to baboon, gazelle, impala, and ostrich. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to vulture, grassland, acacia tree, and baobab. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to termite mound, watering hole, horizon, and sunset. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Savanna. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Baboon"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Vulture"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Termite Mound"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Dry Riverbed"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Baboon"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Ostrich"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Lion” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Savanna: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Lion, Elephant from savanna-1\n3 lesson(s) back: Canoe, Kayak from river-3\n7 lesson(s) back: Snow, Fog from mountain-3"
+  },
+  {
+    "lessonId": "savanna-3",
+    "lessonName": "The Savanna 3",
+    "unitId": "savanna",
+    "unitName": "The Savanna",
+    "unitOrder": 110,
+    "lessonOrderInUnit": 3,
+    "globalOrder": 510,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Flamingo",
+      "Eagle",
+      "Stork",
+      "Weaver Bird",
+      "Hornbill",
+      "Secretary Bird",
+      "Guinea Fowl",
+      "Kingfisher",
+      "Crane",
+      "Heron",
+      "Jeep",
+      "Binoculars",
+      "Camera",
+      "Guide",
+      "Tent"
+    ],
+    "targetWordsArabic": [
+      "نحام",
+      "نسر",
+      "لقلق",
+      "طائر النسّاج",
+      "أبو قرن",
+      "طائر السكرتير",
+      "دجاج غينيا",
+      "رفراف",
+      "آلة يُسمّى «كراني»",
+      "مالك الحزين",
+      "سيارة جيب",
+      "منظار ثنائي",
+      "كاميرا",
+      "دليل",
+      "خيمة"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Savanna to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the savanna vocabulary to handle a practical situation and explain key details.",
+      "textType": "practical article",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Flamingo", "Eagle", "Stork", "Weaver Bird"],
+          "scenario": "The guide points out the flamingo, eagle, stork, and weaver bird and asks the group to notice how the animals move or behave.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Flamingo", "Eagle", "Stork", "Weaver Bird"],
+            "expectedAnswer": "Flamingo"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide points out the flamingo, eagle, stork, and weaver bird and asks the group to notice how the animals move or behave. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Hornbill", "Secretary Bird", "Guinea Fowl", "Kingfisher"],
+          "scenario": "The guide or scientist draws attention to hornbill, secretary bird, guinea fowl, and kingfisher. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Hornbill", "Secretary Bird", "Guinea Fowl", "Kingfisher"],
+            "expectedAnswer": "Hornbill"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to hornbill, secretary bird, guinea fowl, and kingfisher. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Crane", "Heron", "Jeep", "Binoculars"],
+          "scenario": "The guide or scientist draws attention to crane, heron, jeep, and binoculars. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Crane", "Heron", "Jeep", "Binoculars"],
+            "expectedAnswer": "Crane"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to crane, heron, jeep, and binoculars. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Camera", "Guide", "Tent"],
+          "scenario": "The guide or scientist draws attention to camera, guide, and tent. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Camera", "Guide", "Tent"],
+            "expectedAnswer": "Camera"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to camera, guide, and tent. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Savanna: Practical Article",
+      "text": "A practical situation involving the savanna requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide points out the flamingo, eagle, stork, and weaver bird and asks the group to notice how the animals move or behave. The guide or scientist draws attention to hornbill, secretary bird, guinea fowl, and kingfisher. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to crane, heron, jeep, and binoculars. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Savanna. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Flamingo"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Hornbill"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Crane"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Camera"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Flamingo"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Weaver Bird"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Baboon” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Savanna: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Baboon, Gazelle from savanna-2\n3 lesson(s) back: Bucket, Waders from river-4\n7 lesson(s) back: Map, Headlamp from mountain-4"
+  },
+  {
+    "lessonId": "savanna-4",
+    "lessonName": "The Savanna 4",
+    "unitId": "savanna",
+    "unitName": "The Savanna",
+    "unitOrder": 110,
+    "lessonOrderInUnit": 4,
+    "globalOrder": 511,
+    "cefrStage": "B1",
+    "stageName": "B1 Wider World",
+    "targetWordsEnglish": [
+      "Campfire",
+      "Ranger",
+      "Tracks",
+      "Map",
+      "Sunhat",
+      "Predator",
+      "Prey",
+      "Herd",
+      "Migration",
+      "Drought",
+      "Rainy Season",
+      "Food Chain",
+      "Camouflage",
+      "Territory",
+      "Den"
+    ],
+    "targetWordsArabic": [
+      "نار مخيم",
+      "حارس محمية",
+      "آثار",
+      "خريطة",
+      "قبعة شمس",
+      "مفترس",
+      "فريسة",
+      "قطيع",
+      "هجرة",
+      "جفاف",
+      "كائن أو عنصر طبيعي يُسمّى «رايني سياسون»",
+      "عضو يُسمّى «فوود تشاين»",
+      "تمويه",
+      "إقليم",
+      "وكر"
+    ],
+    "usage": {
+      "goal": "Use the vocabulary from The Savanna to understand and communicate in a realistic B1-appropriate context.",
+      "canDoStatement": "I can use the savanna vocabulary to handle a practical situation and explain key details.",
+      "textType": "real-life scenario",
+      "readingTarget": "90-130 words",
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Campfire", "Ranger", "Tracks", "Map"],
+          "scenario": "The guide or scientist draws attention to campfire, ranger, tracks, and map. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Campfire", "Ranger", "Tracks", "Map"],
+            "expectedAnswer": "Campfire"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to campfire, ranger, tracks, and map. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 2,
+          "targetWords": ["Sunhat", "Predator", "Prey", "Herd"],
+          "scenario": "The guide or scientist draws attention to sunhat, predator, prey, and herd. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Sunhat", "Predator", "Prey", "Herd"],
+            "expectedAnswer": "Sunhat"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to sunhat, predator, prey, and herd. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 3,
+          "targetWords": ["Migration", "Drought", "Rainy Season", "Food Chain"],
+          "scenario": "The guide or scientist draws attention to migration, drought, rainy season, and food chain. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Migration", "Drought", "Rainy Season", "Food Chain"],
+            "expectedAnswer": "Migration"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to migration, drought, rainy season, and food chain. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        },
+        {
+          "chunkNumber": 4,
+          "targetWords": ["Camouflage", "Territory", "Den"],
+          "scenario": "The guide or scientist draws attention to camouflage, territory, and den. The group observes the details and connects the words to the natural or scientific setting.",
+          "check": {
+            "question": "Which target term is most central to the situation?",
+            "options": ["Camouflage", "Territory", "Den"],
+            "expectedAnswer": "Camouflage"
+          },
+          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to camouflage, territory, and den. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+        }
+      ]
+    },
+    "reading": {
+      "title": "The Savanna: Real-Life Scenario",
+      "text": "A practical situation involving the savanna requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to campfire, ranger, tracks, and map. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to sunhat, predator, prey, and herd. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to migration, drought, rainy season, and food chain. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about The Savanna. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+    },
+    "exercises": [
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Campfire"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Sunhat"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Migration"
+      },
+      {
+        "prompt": "Context choice: Which target word best fits the scene?",
+        "answer": "Camouflage"
+      },
+      {
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
+      },
+      {
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "Campfire"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "Map"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Flamingo” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      }
+    ],
+    "video": {
+      "title": "The Savanna: In Context",
+      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+    },
+    "spacedReview": "1 lesson(s) back: Flamingo, Eagle from savanna-3\n3 lesson(s) back: Lion, Elephant from savanna-1\n7 lesson(s) back: Current, Rapids from river-1"
+  }
+]
