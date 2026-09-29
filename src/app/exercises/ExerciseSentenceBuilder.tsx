@@ -6,7 +6,7 @@ import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { Button, ExerciseFamilyTemplate, FeedbackPanel, MediaFrame, Surface } from "../shared";
 import { WordImage } from "../shared/WordImage";
-import { getRichSentence } from "./exerciseContent";
+import { buildSentenceCompletion, getRichSentence } from "./exerciseContent";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
@@ -44,7 +44,11 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
     () => getRichSentence(currentTargetWord, usage, 1),
     [currentTargetWord, usage]
   );
-  const answer = useMemo(() => richSentence.words, [richSentence]);
+  const completion = useMemo(
+    () => buildSentenceCompletion(richSentence.full, currentTargetWord.label),
+    [currentTargetWord.label, richSentence.full]
+  );
+  const answer = completion.answer;
   const shuffled = useMemo(() => shuffleArray([...answer]), [answer]);
 
   const advanceNext = useCallback(() => {
@@ -127,7 +131,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
     [lessonId, words]
   );
   const remaining = answer.length - placed.length;
-  const sentence = answer.join(" ");
+  const sentence = richSentence.full;
 
   return (
     <ExerciseShell
@@ -152,122 +156,152 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
         instruction={t("exercise.buildSentence")}
         helper={t("exercise.wordsRemaining", { count: remaining })}
         activityLabel={t("exercise.sentenceBuilderActivityAria")}
-        media={
-          <MediaFrame aspect="scene" className="max-h-[30dvh] sm:max-h-[36dvh]">
-            <WordImage
-              word={currentTargetWord}
-              className="size-full object-cover"
-              loading="eager"
-              fetchPriority="high"
-            />
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 flex items-end bg-gradient-to-t from-black/80 via-black/50 to-transparent px-4 pb-3 pt-8 sm:px-5">
-              <span className="font-sans text-base font-bold tracking-wide text-white drop-shadow-md sm:text-xl">
-                {currentTargetWord.label}
-              </span>
-            </div>
-          </MediaFrame>
-        }
         activity={
-          <div className="flex flex-col gap-4">
-            <Surface
-              variant="card"
-              radius="lg"
-              padding="xs"
-              className="flex w-full flex-col gap-2 border-2 border-primary/30"
-            >
-              <div className="flex items-center justify-between gap-3">
-                <span className="flex items-center gap-1.5 font-sans text-xs font-bold text-primary">
-                  {t("exercise.sentenceAssemblyCanvas")}
-                  {feedback === "correct" && (
-                    <CheckCircle2 className="size-4 text-wp-green" aria-hidden />
-                  )}
-                  {feedback === "incorrect" && (
-                    <XCircle className="size-4 text-destructive" aria-hidden />
-                  )}
+          <div className="grid w-full gap-4 lg:grid-cols-[minmax(15rem,0.8fr)_minmax(0,1.2fr)] lg:items-start lg:gap-6">
+            <MediaFrame aspect="recognition" className="mx-auto w-full max-w-lg lg:sticky lg:top-3">
+              <WordImage
+                word={currentTargetWord}
+                className="size-full object-cover"
+                loading="eager"
+                fetchPriority="high"
+              />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 flex items-end bg-gradient-to-t from-black/80 via-black/50 to-transparent px-4 pb-3 pt-8 sm:px-5">
+                <span className="font-sans text-base font-bold tracking-wide text-white drop-shadow-md sm:text-xl">
+                  {currentTargetWord.label}
                 </span>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  iconLeft={<Undo2 className="size-4" aria-hidden />}
-                  onClick={() => handleRemoveTile(placed.length - 1)}
-                  disabled={placed.length === 0 || feedback !== null}
-                >
-                  {t("exercise.undo")}
-                </Button>
               </div>
+            </MediaFrame>
+
+            <div className="flex min-w-0 flex-col gap-3 sm:gap-4">
+              <Surface
+                variant="card"
+                radius="lg"
+                padding="xs"
+                className="flex w-full flex-col gap-2 border-2 border-primary/30"
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <span className="flex items-center gap-1.5 font-sans text-xs font-bold text-primary">
+                    {t("exercise.sentenceAssemblyCanvas")}
+                    {feedback === "correct" && (
+                      <CheckCircle2 className="size-4 text-wp-green" aria-hidden />
+                    )}
+                    {feedback === "incorrect" && (
+                      <XCircle className="size-4 text-destructive" aria-hidden />
+                    )}
+                  </span>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    iconLeft={<Undo2 className="size-4" aria-hidden />}
+                    onClick={() => handleRemoveTile(placed.length - 1)}
+                    disabled={placed.length === 0 || feedback !== null}
+                  >
+                    {t("exercise.undo")}
+                  </Button>
+                </div>
+                <div
+                  className={`flex min-h-[88px] flex-wrap items-center justify-center gap-x-2 gap-y-3 rounded-xl border border-dashed p-3 text-center font-sans text-base font-bold leading-relaxed transition-colors motion-reduce:transition-none sm:min-h-[96px] sm:p-4 sm:text-lg ${
+                    feedback === "correct"
+                      ? "border-wp-green bg-wp-green-light/30"
+                      : feedback === "incorrect"
+                        ? "border-destructive bg-destructive/10"
+                        : "border-primary/40 bg-secondary/40"
+                  }`}
+                  aria-label={t("exercise.sentenceWithMissingWordsAria")}
+                  dir="ltr"
+                  lang="en"
+                >
+                  {completion.tokens.map((token, tokenIndex) => {
+                    const blankIndex = tokenIndex - completion.blankStart;
+                    const isBlank = blankIndex >= 0 && blankIndex < answer.length;
+                    if (!isBlank) {
+                      return <span key={`${token}-${tokenIndex}`}>{token}</span>;
+                    }
+
+                    const placedWord = placed[blankIndex];
+                    const trailingPunctuation = token.match(/[.,!?;:]+$/u)?.[0] ?? "";
+                    return (
+                      <span
+                        key={`blank-${tokenIndex}`}
+                        className="inline-flex items-center gap-0.5"
+                      >
+                        {placedWord ? (
+                          <motion.button
+                            type="button"
+                            whileTap={!reduceMotion && feedback === null ? { scale: 0.95 } : {}}
+                            transition={{ duration: 0.1 }}
+                            disabled={feedback !== null}
+                            aria-label={t("exercise.removePlacedWord", {
+                              word: placedWord,
+                              position: blankIndex + 1,
+                            })}
+                            onClick={() => handleRemoveTile(blankIndex)}
+                            className="min-h-11 rounded-xl bg-primary px-3.5 py-2 font-sans text-sm font-black text-primary-foreground shadow-wp-xs transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transition-none disabled:cursor-not-allowed disabled:opacity-70 sm:text-base"
+                          >
+                            {placedWord}
+                          </motion.button>
+                        ) : (
+                          <span className="inline-flex min-h-11 min-w-20 items-center justify-center rounded-xl border-2 border-dashed border-primary/60 bg-card px-3 py-2 text-primary">
+                            <span className="sr-only">
+                              {t("exercise.sentenceBlank", {
+                                position: blankIndex + 1,
+                                total: answer.length,
+                              })}
+                            </span>
+                            <span aria-hidden>___</span>
+                          </span>
+                        )}
+                        {trailingPunctuation && <span aria-hidden>{trailingPunctuation}</span>}
+                      </span>
+                    );
+                  })}
+                </div>
+              </Surface>
               <div
-                className={`flex min-h-[76px] flex-wrap items-center gap-2 rounded-xl border border-dashed p-2.5 transition-colors motion-reduce:transition-none sm:min-h-[84px] ${
-                  feedback === "correct"
-                    ? "border-wp-green bg-wp-green-light/30"
-                    : feedback === "incorrect"
-                      ? "border-destructive bg-destructive/10"
-                      : "border-primary/40 bg-secondary/40"
-                }`}
-                aria-label={t("exercise.builtSentenceAria")}
+                role="group"
+                aria-label={t("exercise.availableWordsAria")}
+                className="grid w-full grid-cols-2 gap-2.5 sm:grid-cols-3"
                 dir="ltr"
                 lang="en"
               >
-                {placed.map((item, index) => (
-                  <motion.button
-                    key={`${item}-${index}`}
-                    type="button"
-                    whileTap={!reduceMotion && feedback === null ? { scale: 0.95 } : {}}
-                    transition={{ duration: 0.1 }}
-                    aria-disabled={feedback !== null || undefined}
-                    onClick={() => handleRemoveTile(index)}
-                    className="min-h-[44px] rounded-xl bg-primary px-3.5 py-2 font-sans text-sm font-black text-primary-foreground shadow-wp-xs transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary motion-reduce:transition-none sm:text-base"
-                  >
-                    {item}
-                  </motion.button>
-                ))}
-                {placed.length === 0 && (
-                  <span className="px-2 font-sans text-xs font-medium text-muted-foreground sm:text-sm">
-                    {t("exercise.sentencePlaceholder")}
-                  </span>
-                )}
-              </div>
-            </Surface>
-            <div
-              role="group"
-              aria-label={t("exercise.availableWordsAria")}
-              className="flex w-full flex-wrap justify-center gap-2.5"
-              dir="ltr"
-              lang="en"
-            >
-              {shuffled.map((item, index) => {
-                const usedCount = placed.filter((placedItem) => placedItem === item).length;
-                const availableCount = shuffled
-                  .slice(0, index + 1)
-                  .filter((tile) => tile === item).length;
-                const used = usedCount >= availableCount;
-                return (
-                  <motion.button
-                    key={`${item}-${index}`}
-                    type="button"
-                    whileTap={!reduceMotion && !used && feedback === null ? { scale: 0.95 } : {}}
-                    transition={{ duration: 0.1 }}
-                    disabled={used}
-                    aria-disabled={feedback !== null || undefined}
-                    onClick={() => handleTileClick(item)}
-                    className={`min-h-[44px] rounded-xl border-2 border-border bg-wp-card px-5 py-2.5 font-sans text-sm font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary motion-reduce:transition-none disabled:opacity-30 sm:text-base ${feedback !== null ? "opacity-40" : ""}`}
-                  >
-                    {item}
-                  </motion.button>
-                );
-              })}
-            </div>
-            <span aria-live="polite" aria-atomic="true" className="sr-only">
-              {feedback === "correct"
-                ? t("exercise.correctSentence", { sentence })
-                : feedback === "incorrect"
-                  ? t("exercise.incorrectSentence", { sentence })
-                  : placed.length === 0
-                    ? t("exercise.noWordsPlaced")
-                    : t("exercise.sentenceProgress", {
-                        sentence: placed.join(" "),
-                        count: remaining,
+                {shuffled.map((item, index) => {
+                  const usedCount = placed.filter((placedItem) => placedItem === item).length;
+                  const availableCount = shuffled
+                    .slice(0, index + 1)
+                    .filter((tile) => tile === item).length;
+                  const used = usedCount >= availableCount;
+                  return (
+                    <motion.button
+                      key={`${item}-${index}`}
+                      type="button"
+                      whileTap={!reduceMotion && !used && feedback === null ? { scale: 0.95 } : {}}
+                      transition={{ duration: 0.1 }}
+                      disabled={used || feedback !== null}
+                      aria-label={t("exercise.placeWord", {
+                        word: item,
+                        position: placed.length + 1,
                       })}
-            </span>
+                      onClick={() => handleTileClick(item)}
+                      className="min-h-11 rounded-xl border-2 border-border bg-wp-card px-4 py-2.5 font-sans text-sm font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transition-none disabled:cursor-not-allowed disabled:opacity-30 sm:text-base"
+                    >
+                      {item}
+                    </motion.button>
+                  );
+                })}
+              </div>
+              <span aria-live="polite" aria-atomic="true" className="sr-only">
+                {feedback === "correct"
+                  ? t("exercise.correctSentence", { sentence })
+                  : feedback === "incorrect"
+                    ? t("exercise.incorrectSentence", { sentence })
+                    : placed.length === 0
+                      ? t("exercise.noWordsPlaced")
+                      : t("exercise.sentenceProgress", {
+                          sentence: placed.join(" "),
+                          count: remaining,
+                        })}
+              </span>
+            </div>
           </div>
         }
         feedback={

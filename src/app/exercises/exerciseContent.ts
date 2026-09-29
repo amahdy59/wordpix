@@ -26,6 +26,12 @@ export interface RichSentence {
   words: string[];
 }
 
+export interface SentenceCompletion {
+  tokens: string[];
+  blankStart: number;
+  answer: string[];
+}
+
 export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
   bed: {
     clozeBefore: "I rest comfortably on my wooden",
@@ -451,6 +457,55 @@ function fallbackFrame(word: VocabularyItem): { lead: string[]; spoken: string }
 
 function sentenceToTiles(sentence: string): string[] {
   return sentence.trim().split(/\s+/u).filter(Boolean);
+}
+
+function normaliseSentenceToken(token: string): string {
+  return token.toLocaleLowerCase("en-US").replace(/[^a-z0-9'-]/gu, "");
+}
+
+function sentenceChoiceToken(token: string): string {
+  return token.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}'-]+$/gu, "");
+}
+
+/**
+ * Keeps sentence construction focused: the learner completes one useful
+ * two- or three-word chunk instead of rebuilding an entire sentence token by
+ * token. The selected chunk always includes as much of the target label as a
+ * three-word task permits.
+ */
+export function buildSentenceCompletion(sentence: string, targetLabel: string): SentenceCompletion {
+  const tokens = sentenceToTiles(sentence);
+  if (tokens.length === 0) return { tokens: [], blankStart: 0, answer: [] };
+
+  const normalisedTokens = tokens.map(normaliseSentenceToken);
+  const targetTokens = sentenceToTiles(targetLabel).map(normaliseSentenceToken).filter(Boolean);
+  const completeTargetStart = normalisedTokens.findIndex((_, candidateStart) =>
+    targetTokens.every(
+      (targetToken, offset) => normalisedTokens[candidateStart + offset] === targetToken
+    )
+  );
+  const targetStart =
+    completeTargetStart >= 0
+      ? completeTargetStart
+      : Math.max(
+          0,
+          normalisedTokens.findIndex((token) => token === targetTokens[0])
+        );
+  const targetSpan = Math.max(1, Math.min(3, targetTokens.length));
+  const blankCount = Math.min(tokens.length <= 3 ? 2 : 3, tokens.length);
+  const earliestStartContainingTarget = Math.max(0, targetStart + targetSpan - blankCount);
+  const latestStartContainingTarget = Math.min(targetStart, tokens.length - blankCount);
+  const preferredStart = targetStart - Math.floor((blankCount - targetSpan) / 2);
+  const blankStart = Math.min(
+    latestStartContainingTarget,
+    Math.max(earliestStartContainingTarget, preferredStart)
+  );
+
+  return {
+    tokens,
+    blankStart,
+    answer: tokens.slice(blankStart, blankStart + blankCount).map(sentenceChoiceToken),
+  };
 }
 
 function isUsefulExample(value: string | undefined): value is string {

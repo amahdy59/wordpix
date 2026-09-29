@@ -6,7 +6,7 @@ import {
   buildAuthoredLessonRegistry,
   rawCurriculumLessonSchema,
 } from "../exercises/content/curriculumContentPipeline";
-import { getRichSentence } from "../exercises/exerciseContent";
+import { buildSentenceCompletion, getRichSentence } from "../exercises/exerciseContent";
 import { COURSE_UNITS, type VocabularyItem } from "../data/lessons";
 
 const incompleteLesson = rawCurriculumLessonSchema.parse({
@@ -169,5 +169,18 @@ describe("curriculum content pipeline", () => {
       full: "The sky is blue.",
       words: ["The", "sky", "is", "blue"],
     });
+  });
+
+  it("limits sentence construction to a useful two- or three-word phrase", () => {
+    expect(
+      buildSentenceCompletion("He wore a clean white shirt to Friday prayer.", "White")
+    ).toMatchObject({
+      blankStart: 3,
+      answer: ["clean", "white", "shirt"],
+    });
+
+    const shortSentence = buildSentenceCompletion("This is blue.", "Blue");
+    expect(shortSentence.answer).toEqual(["is", "blue"]);
+    expect(shortSentence.answer.length).toBeLessThanOrEqual(3);
   });
 });

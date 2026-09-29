@@ -74,6 +74,53 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     }
   });
 
+  test("sentence building completes one short phrase without viewport overflow", async ({
+    page,
+  }) => {
+    test.setTimeout(60_000);
+    const errors: string[] = [];
+    page.on("console", (message) => {
+      if (message.type() === "error") errors.push(message.text());
+    });
+    page.on("pageerror", (error) => errors.push(error.message));
+
+    await page.addInitScript(() => {
+      localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
+    });
+    await page.goto("/#/learn/colors");
+    await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
+    await page
+      .getByRole("button", { name: /^Start lesson:/ })
+      .first()
+      .click();
+    await page.evaluate(() => {
+      window.location.hash = "/learn/colors/step-4";
+    });
+
+    await expect(page.getByRole("heading", { name: "Complete the missing phrase." })).toBeVisible();
+    const choices = page.getByRole("group", { name: "Available words" }).getByRole("button");
+    await expect(choices.first()).toBeVisible();
+    const choiceCount = await choices.count();
+    expect(choiceCount).toBeGreaterThanOrEqual(2);
+    expect(choiceCount).toBeLessThanOrEqual(3);
+
+    for (let index = 0; index < choiceCount; index += 1) {
+      const choiceHeight = await choices
+        .nth(index)
+        .evaluate((element) => element.getBoundingClientRect().height);
+      expect(choiceHeight).toBeGreaterThanOrEqual(44);
+    }
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)
+    ).toBe(false);
+
+    const a11yScan = await new AxeBuilder({ page })
+      .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+      .analyze();
+    expect(a11yScan.violations).toEqual([]);
+    expect(errors).toEqual([]);
+  });
+
   test("final retrieval keeps contextual transfer practice available before completion", async ({
     page,
   }) => {
