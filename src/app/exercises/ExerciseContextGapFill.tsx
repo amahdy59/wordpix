@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle2, XCircle } from "lucide-react";
 import type { Action } from "../types";
 import type { VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { Button, ExerciseFamilyTemplate, FeedbackPanel } from "../shared";
+import { Button, ExerciseFamilyTemplate, FeedbackPanel, MediaFrame } from "../shared";
 import { getAuthoredSentence } from "./content/authoredLessonContent";
 import { getRichSentence } from "./exerciseContent";
 import { resolveGroup } from "../data/courseCatalog";
@@ -15,6 +15,8 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
+import { findLessonContextSentences } from "../data/lessonContext";
+import { WordImage } from "../shared/WordImage";
 
 interface Props {
   step: number;
@@ -51,13 +53,26 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
 
   const authoredSentence = getAuthoredSentence(currentTargetWord.id);
   const usage = usageState.status === "ready" ? usageState.data : null;
-  const fullSentence = authoredSentence?.full ?? getRichSentence(currentTargetWord, usage).full;
-  const clozeSentence = fullSentence
+  const authoredFullSentence =
+    authoredSentence?.full ?? getRichSentence(currentTargetWord, usage).full;
+  const contextSentences = findLessonContextSentences(currentTargetWord, usage);
+  const variant = (queue.position - 1) % 3;
+  const variantSentence =
+    variant === 1
+      ? (contextSentences[0] ?? authoredFullSentence)
+      : variant === 2
+        ? (contextSentences[1] ?? contextSentences[0] ?? authoredFullSentence)
+        : authoredFullSentence;
+  const fullSentence = variantSentence;
+  const clozeSentence = variantSentence
     .replace(toWordPattern(currentTargetWord.label), "_____ ")
+    .trim();
+  const contextClue = contextSentences[0]
+    ?.replace(toWordPattern(currentTargetWord.label), "_____ ")
     .trim();
   const options = useMemo(() => {
     const distractors = words.filter((word) => word.id !== currentTargetWord.id);
-    return shuffleArray([currentTargetWord, ...shuffleArray(distractors).slice(0, 3)]);
+    return shuffleArray([currentTargetWord, ...shuffleArray(distractors).slice(0, 2)]);
   }, [currentTargetWord, words]);
 
   const advanceNext = useCallback(() => {
@@ -150,11 +165,32 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
     >
       <ExerciseFamilyTemplate
         family="reading-context"
-        instruction={t("exercise.gapFillInstruction")}
+        instruction={
+          variant === 1
+            ? t("exercise.gapFillImageInstruction")
+            : variant === 2
+              ? t("exercise.gapFillTransferInstruction")
+              : t("exercise.gapFillInstruction")
+        }
         helper={t("exercise.pressNumberToChooseWord", { count: options.length })}
         activityLabel={t("exercise.gapFillActivityAria")}
         activity={
           <div className="space-y-4">
+            {variant === 1 && (
+              <MediaFrame aspect="scene" className="max-h-[32dvh] sm:max-h-[38dvh]">
+                <WordImage
+                  word={currentTargetWord}
+                  className="size-full object-cover"
+                  loading="eager"
+                  fetchPriority="high"
+                />
+              </MediaFrame>
+            )}
+            {variant === 2 && contextClue && (
+              <p className="rounded-2xl border border-primary/20 bg-primary/5 p-4 text-start font-sans text-sm font-semibold leading-relaxed text-foreground">
+                {contextClue}
+              </p>
+            )}
             <p
               lang="en"
               dir="ltr"

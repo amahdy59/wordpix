@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-import { MAX_ACTIVE_WORDS_PER_LESSON } from "../src/app/learning/study/curriculum";
+import { FOCUSED_LESSON_WORD_LIMIT } from "../src/app/lesson/lessonSequence";
 
 test.use({ viewport: { width: 390, height: 844 } });
 
@@ -36,13 +36,13 @@ test("mobile listen-and-repeat keeps one focused learning path", async ({ page }
   await expect(hero.locator("xpath=..").getByRole("button")).toHaveCount(0);
   await expect(page.getByRole("progressbar", { name: "Word progress" })).toHaveAttribute(
     "aria-valuetext",
-    `Word 1 of ${MAX_ACTIVE_WORDS_PER_LESSON}`
+    `Word 1 of ${FOCUSED_LESSON_WORD_LIMIT}`
   );
 
   await page.getByRole("button", { name: "Next word" }).click();
   await expect(page.getByRole("progressbar", { name: "Word progress" })).toHaveAttribute(
     "aria-valuetext",
-    `Word 2 of ${MAX_ACTIVE_WORDS_PER_LESSON}`
+    `Word 2 of ${FOCUSED_LESSON_WORD_LIMIT}`
   );
   await expect(page.getByRole("heading", { name: "Bulldozer" })).toBeVisible();
 

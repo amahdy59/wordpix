@@ -227,7 +227,7 @@ describe("lesson and assessment progression", () => {
     expect(getStoryStepIndex("A1", false)).toBe(4);
   });
 
-  it("prioritises new and due words in an eight-item practice set", () => {
+  it("prioritises new and due words in a focused practice set", () => {
     const strong = {
       ...createInitialWordState("a"),
       exposures: 3,
@@ -243,6 +243,11 @@ describe("lesson and assessment progression", () => {
     expect(
       selectPracticeWordQueue(["a", "b", "c"], { a: strong, b: due }, 2, new Date("2026-01-01"))
     ).toEqual(["c", "b"]);
+  });
+
+  it("keeps the default lesson batch focused instead of repeating one activity too long", () => {
+    const ids = ["a", "b", "c", "d", "e", "f", "g", "h"];
+    expect(selectPracticeWordQueue(ids, {})).toHaveLength(5);
   });
 
   it("samples every group before taking a second item from any group", () => {

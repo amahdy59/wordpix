@@ -32,6 +32,7 @@ const STEP_META: Record<ExerciseStep, Omit<LessonStepLabel, "step" | "exercise">
  * rather than presenting this maximum as the learner's current total.
  */
 export const MAX_LESSON_STAGE_COUNT = Object.keys(STEP_META).length;
+export const FOCUSED_LESSON_WORD_LIMIT = 5;
 
 export function getLessonSequence(
   _level: LearnerPreferences["englishLevel"],
@@ -63,7 +64,7 @@ export function getStoryStepIndex(
 export function selectPracticeWordQueue(
   wordIds: string[],
   wordMemory: Record<string, WordLearningState>,
-  limit = 8,
+  limit = FOCUSED_LESSON_WORD_LIMIT,
   now = new Date()
 ): string[] {
   const nowIso = now.toISOString();

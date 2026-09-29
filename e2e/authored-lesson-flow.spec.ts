@@ -121,6 +121,40 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     expect(errors).toEqual([]);
   });
 
+  test("context practice rotates through focused three-choice modes", async ({ page }) => {
+    test.setTimeout(60_000);
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.addInitScript(() => {
+      localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
+    });
+    await page.goto("/#/learn/colors");
+    await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
+    await page
+      .getByRole("button", { name: /^Start lesson:/ })
+      .first()
+      .click();
+    await page.evaluate(() => {
+      window.location.hash = "/learn/colors/step-3";
+    });
+
+    const choices = page
+      .getByRole("group", { name: "Words for the missing part" })
+      .getByRole("button");
+    await expect(choices).toHaveCount(3);
+    await choices.first().click();
+    await page.waitForTimeout(1_800);
+    await expect(page.locator("img")).toHaveCount(1);
+    await expect(page.getByText(/Look at the scene/i)).toBeVisible();
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)
+    ).toBe(false);
+
+    const a11yScan = await new AxeBuilder({ page })
+      .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+      .analyze();
+    expect(a11yScan.violations).toEqual([]);
+  });
+
   test("final retrieval keeps contextual transfer practice available before completion", async ({
     page,
   }) => {
