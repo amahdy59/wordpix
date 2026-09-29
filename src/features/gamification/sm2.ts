@@ -1,5 +1,34 @@
 export type MasteryCategory = "new" | "learning" | "familiar" | "strong";
 
+export const MASTERY_DIMENSIONS = [
+  "visual-recognition",
+  "listening-recognition",
+  "contextual-comprehension",
+  "controlled-production",
+  "spoken-production",
+  "independent-transfer",
+] as const;
+
+export type MasteryDimension = (typeof MASTERY_DIMENSIONS)[number];
+
+export interface SkillMasteryState {
+  attempts: number;
+  correct: number;
+  lastAttemptAt: string | null;
+  mastery: MasteryCategory;
+}
+
+export type SkillMastery = Record<MasteryDimension, SkillMasteryState>;
+
+export interface SkillMasterySummary {
+  dimension: MasteryDimension;
+  attempts: number;
+  correct: number;
+  practicedWords: number;
+  establishedWords: number;
+  accuracy: number;
+}
+
 export interface WordLearningState {
   wordId: string;
   exposures: number;
@@ -13,6 +42,110 @@ export interface WordLearningState {
   intervalDays: number;
   easeFactor: number;
   mastery: MasteryCategory;
+  /** Optional only for compatibility with learner records saved before v3. */
+  skillMastery?: SkillMastery;
+}
+
+function createInitialSkillState(): SkillMasteryState {
+  return { attempts: 0, correct: 0, lastAttemptAt: null, mastery: "new" };
+}
+
+export function createInitialSkillMastery(): SkillMastery {
+  return Object.fromEntries(
+    MASTERY_DIMENSIONS.map((dimension) => [dimension, createInitialSkillState()])
+  ) as SkillMastery;
+}
+
+export function summarizeSkillMastery(states: readonly WordLearningState[]): SkillMasterySummary[] {
+  return MASTERY_DIMENSIONS.map((dimension) => {
+    const facets = states
+      .map((state) => state.skillMastery?.[dimension])
+      .filter((facet): facet is SkillMasteryState => Boolean(facet));
+    const attempts = facets.reduce((total, facet) => total + facet.attempts, 0);
+    const correct = facets.reduce((total, facet) => total + facet.correct, 0);
+    return {
+      dimension,
+      attempts,
+      correct,
+      practicedWords: facets.filter((facet) => facet.attempts > 0).length,
+      establishedWords: facets.filter((facet) => ["familiar", "strong"].includes(facet.mastery))
+        .length,
+      accuracy: attempts === 0 ? 0 : Math.round((correct / attempts) * 100),
+    };
+  });
+}
+
+function getSkillMasteryCategory(attempts: number, correct: number): MasteryCategory {
+  if (attempts === 0) return "new";
+  const accuracy = correct / attempts;
+  if (attempts >= 6 && accuracy >= 0.85) return "strong";
+  if (attempts >= 3 && accuracy >= 0.7) return "familiar";
+  return "learning";
+}
+
+export function normalizeWordLearningState(
+  wordId: string,
+  value: Partial<WordLearningState>
+): WordLearningState {
+  const initial = createInitialWordState(wordId);
+  const rawSkills = value.skillMastery;
+  const skillMastery = createInitialSkillMastery();
+
+  if (rawSkills) {
+    MASTERY_DIMENSIONS.forEach((dimension) => {
+      const raw = rawSkills[dimension];
+      if (!raw) return;
+      skillMastery[dimension] = {
+        attempts: Number.isFinite(raw.attempts) ? Math.max(0, raw.attempts) : 0,
+        correct: Number.isFinite(raw.correct) ? Math.max(0, raw.correct) : 0,
+        lastAttemptAt: raw.lastAttemptAt ?? null,
+        mastery: raw.mastery ?? "new",
+      };
+    });
+  }
+
+  return { ...initial, ...value, wordId, skillMastery };
+}
+
+export function recordMasteryEvidence(
+  state: WordLearningState,
+  dimension: MasteryDimension,
+  correct: number,
+  total: number,
+  now: Date = new Date()
+): WordLearningState {
+  const skillMastery = { ...(state.skillMastery ?? createInitialSkillMastery()) };
+  const previous = skillMastery[dimension] ?? createInitialSkillState();
+  const attempts = previous.attempts + Math.max(0, total);
+  const correctAttempts = previous.correct + Math.max(0, Math.min(correct, total));
+
+  skillMastery[dimension] = {
+    attempts,
+    correct: correctAttempts,
+    lastAttemptAt: total > 0 ? now.toISOString() : previous.lastAttemptAt,
+    mastery: getSkillMasteryCategory(attempts, correctAttempts),
+  };
+
+  return { ...state, skillMastery };
+}
+
+/**
+ * Recognition alone cannot establish durable word mastery. Strong status is
+ * capped until the learner has contextual comprehension and production proof.
+ */
+export function getBalancedMasteryCategory(state: WordLearningState): MasteryCategory {
+  if (state.mastery !== "strong") return state.mastery;
+  const skills = state.skillMastery;
+  if (!skills) return "familiar";
+  const required: MasteryDimension[] = [
+    "contextual-comprehension",
+    "controlled-production",
+    "independent-transfer",
+  ];
+  const hasTransferEvidence = required.every((dimension) =>
+    ["familiar", "strong"].includes(skills[dimension].mastery)
+  );
+  return hasTransferEvidence ? "strong" : "familiar";
 }
 
 export function getMasteryCategory(
@@ -43,6 +176,7 @@ export function createInitialWordState(wordId: string): WordLearningState {
     intervalDays: 0,
     easeFactor: 2.5,
     mastery: "new",
+    skillMastery: createInitialSkillMastery(),
   };
 }
 

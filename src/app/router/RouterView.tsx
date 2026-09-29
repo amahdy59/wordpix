@@ -99,9 +99,6 @@ const ExerciseListenRepeat = lazy(() =>
 const ExerciseRecallMatch = lazy(() =>
   import("../exercises/ExerciseRecallMatch").then((m) => ({ default: m.ExerciseRecallMatch }))
 );
-const ExerciseContextFill = lazy(() =>
-  import("../exercises/ExerciseContextFill").then((m) => ({ default: m.ExerciseContextFill }))
-);
 const ExerciseContextGapFill = lazy(() =>
   import("../exercises/ExerciseContextGapFill").then((m) => ({ default: m.ExerciseContextGapFill }))
 );
@@ -314,11 +311,7 @@ function LessonRoute({
   if (ex === "listen") return <ExerciseListenRepeat {...drillProps} />;
   if (ex === "recall") return <ExerciseRecallMatch {...drillProps} />;
   if (ex === "fill") {
-    return getAuthoredLessonContent(lessonId) ? (
-      <ExerciseContextGapFill {...drillProps} />
-    ) : (
-      <ExerciseContextFill {...drillProps} />
-    );
+    return <ExerciseContextGapFill {...drillProps} />;
   }
   if (ex === "builder") return <ExerciseSentenceBuilder {...drillProps} />;
   if (ex === "quiz") return <ExerciseQuickQuiz {...drillProps} />;

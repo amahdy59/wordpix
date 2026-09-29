@@ -6,7 +6,7 @@ import { useI18n } from "../../context/I18nContext";
 import { CONVERSATION_UNITS } from "./conversationCatalog";
 import { CONVERSATION_STAGE_IDS, type CefrLevel, type ConversationUnit } from "./conversationTypes";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
-import { Button, EmptyState } from "../../shared";
+import { Button, CurriculumTopicCard, EmptyState } from "../../shared";
 
 interface Props {
   dispatch: Dispatch<Action>;
@@ -242,7 +242,7 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
         {/* 40 Units Grid */}
         <section
           aria-label={t("conversation.unitsList")}
-          className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
         >
           {filteredUnits.map((unit: ConversationUnit) => {
             const p = progressState[unit.id];
@@ -251,13 +251,45 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
             const completedStageCount = p?.completedStages.length ?? 0;
 
             return (
-              <button
+              <CurriculumTopicCard
                 key={unit.id}
-                type="button"
-                aria-label={t("conversation.unitAccessibleName", {
+                ariaLabel={t("conversation.unitAccessibleName", {
                   number: String(unit.unitNumber).padStart(2, "0"),
                   title: unit.title,
                 })}
+                numberBadge={t("conversation.unitNumber", {
+                  number: String(unit.unitNumber).padStart(2, "0"),
+                })}
+                levelBadge={unit.level}
+                isMastered={isMastered}
+                eyebrow={unit.topic}
+                title={unit.title}
+                imageSrc={unit.heroImage ? resolveAssetUrl(unit.heroImage) : undefined}
+                fallbackIcon={<BookOpen className="size-10" aria-hidden />}
+                priority={unit.unitNumber <= 3}
+                tooltipText={t("conversation.skill", { skill: unit.speakingSkill })}
+                statusIcon={
+                  isMastered ? (
+                    <CheckCircle2 className="size-3.5 shrink-0" aria-hidden />
+                  ) : isInProgress ? (
+                    <Clock className="size-3.5 shrink-0" aria-hidden />
+                  ) : undefined
+                }
+                statusText={
+                  isMastered
+                    ? t("conversation.mastered")
+                    : isInProgress
+                      ? t("conversation.stagesProgress", { completed: completedStageCount })
+                      : t("conversation.notStarted")
+                }
+                statusClassName={
+                  isMastered
+                    ? "text-accent"
+                    : isInProgress
+                      ? "text-primary"
+                      : "text-muted-foreground font-semibold"
+                }
+                actionLabel={t("conversation.start")}
                 onClick={() =>
                   dispatch({
                     type: "OPEN_CONVERSATION_LESSON",
@@ -265,79 +297,7 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
                     stage: p ? CONVERSATION_STAGE_IDS[p.currentStage] : undefined,
                   })
                 }
-                className="group flex min-h-[44px] flex-col justify-between overflow-hidden rounded-3xl border border-border bg-card text-start transition-all hover:border-primary/50 hover:shadow-wp-sm active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-              >
-                <div>
-                  {/* Hero scene cover */}
-                  <div className="relative aspect-video w-full overflow-hidden bg-muted">
-                    {unit.heroImage ? (
-                      <img
-                        src={resolveAssetUrl(unit.heroImage)}
-                        alt=""
-                        className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                        loading="lazy"
-                      />
-                    ) : (
-                      <div className="flex size-full items-center justify-center bg-primary/10 text-primary">
-                        <BookOpen className="size-10" aria-hidden />
-                      </div>
-                    )}
-                    <div className="absolute top-3 start-3 flex items-center gap-1.5">
-                      <span className="rounded-lg bg-background/90 backdrop-blur-sm px-2.5 py-1 text-xs font-black text-foreground shadow-sm">
-                        {t("conversation.unitNumber", {
-                          number: String(unit.unitNumber).padStart(2, "0"),
-                        })}
-                      </span>
-                      <span className="rounded-lg bg-primary px-2.5 py-1 text-xs font-black text-primary-foreground shadow-sm">
-                        {unit.level}
-                      </span>
-                    </div>
-
-                    {isMastered && (
-                      <div className="absolute top-3 end-3 rounded-full bg-accent p-1 text-accent-foreground shadow-sm">
-                        <CheckCircle2 className="size-4" aria-hidden />
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Body */}
-                  <div className="p-5 flex flex-col gap-2">
-                    <span className="text-xs font-bold text-muted-foreground uppercase tracking-wide">
-                      {unit.topic}
-                    </span>
-                    <h2 className="text-base sm:text-lg font-black text-foreground group-hover:text-primary transition-colors leading-snug">
-                      {unit.title}
-                    </h2>
-                    <p className="text-xs text-muted-foreground font-medium line-clamp-2 mt-1">
-                      {t("conversation.skill", { skill: unit.speakingSkill })}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Footer status */}
-                <div className="border-t border-border/60 bg-muted/20 px-5 py-3 flex items-center justify-between">
-                  {isMastered ? (
-                    <span className="text-xs font-bold text-accent flex items-center gap-1">
-                      <CheckCircle2 className="size-3.5" aria-hidden />
-                      {t("conversation.mastered")}
-                    </span>
-                  ) : isInProgress ? (
-                    <span className="text-xs font-bold text-primary flex items-center gap-1">
-                      <Clock className="size-3.5" aria-hidden />
-                      {t("conversation.stagesProgress", { completed: completedStageCount })}
-                    </span>
-                  ) : (
-                    <span className="text-xs font-semibold text-muted-foreground">
-                      {t("conversation.notStarted")}
-                    </span>
-                  )}
-
-                  <span className="text-xs font-bold text-primary group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform inline-flex items-center gap-1">
-                    <span>{t("conversation.start")}</span>
-                    <ArrowRight className="size-3.5 rtl:rotate-180" aria-hidden />
-                  </span>
-                </div>
-              </button>
+              />
             );
           })}
         </section>

@@ -2,7 +2,6 @@ import { memo, useMemo, useState } from "react";
 import {
   ArrowRight,
   BookOpen,
-  CheckCircle2,
   ChevronDown,
   Library,
   Route,
@@ -19,7 +18,7 @@ import { recommendPathUnit } from "../learning/recommendPathUnit";
 import { useProgress } from "../data/progress";
 import { useLearner } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
-import { Badge, ProgressBar, PageContainer, PageHeader, Button } from "../shared";
+import { CurriculumTopicCard, ProgressBar, PageContainer, PageHeader, Button } from "../shared";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
@@ -360,7 +359,10 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                   </button>
 
                   {isExpanded && (
-                    <ol id={`path-phase-content-${phaseIndex}`} className="mt-3 grid gap-3">
+                    <ol
+                      id={`path-phase-content-${phaseIndex}`}
+                      className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+                    >
                       {units.map(({ unit, familiar, mastered, due, percent }, index) => {
                         const step = stage.start + index + 1;
                         const design = getUnitCurriculumDesign(unit);
@@ -369,83 +371,41 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
 
                         return (
                           <li key={unit.id}>
-                            <button
-                              type="button"
-                              onClick={() =>
-                                dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
+                            <CurriculumTopicCard
+                              numberBadge={step}
+                              levelBadge={
+                                design.reviewStatus === "authored"
+                                  ? design.cefr
+                                  : t("study.suggestedLevel", { level: design.cefr })
                               }
-                              className={`group flex min-h-[96px] w-full items-center justify-between gap-3.5 rounded-2xl border p-3 text-start transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:gap-4 sm:p-3.5 ${
-                                isCurrent
-                                  ? "border-primary/50 bg-primary/10 shadow-wp-xs"
-                                  : "border-border bg-wp-card hover:border-primary/35 hover:bg-muted/30"
-                              }`}
-                              aria-current={isCurrent ? "step" : undefined}
-                            >
-                              {/* Media Anchor with Floating Step Badge */}
-                              <div className="relative aspect-square w-16 shrink-0 overflow-hidden rounded-xl border border-border/60 bg-muted/40 shadow-wp-xs sm:w-20">
-                                {unit.heroImage ? (
-                                  <img
-                                    src={resolveAssetUrl(unit.heroImage)}
-                                    alt=""
-                                    loading="lazy"
-                                    decoding="async"
-                                    className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                  />
-                                ) : (
-                                  <div className="flex size-full items-center justify-center bg-primary/10 text-primary">
-                                    <BookOpen className="size-6" aria-hidden />
-                                  </div>
-                                )}
-                                <span
-                                  className={`absolute start-1 top-1 flex size-6 items-center justify-center rounded-md text-xs font-black shadow-wp-xs backdrop-blur-sm ${
-                                    isComplete
-                                      ? "bg-wp-green text-wp-text-on-green"
-                                      : isCurrent
-                                        ? "bg-primary text-primary-foreground"
-                                        : "border border-border/50 bg-card/90 text-foreground"
-                                  }`}
-                                >
-                                  {isComplete ? (
-                                    <CheckCircle2 className="size-3.5" aria-hidden />
-                                  ) : (
-                                    step
-                                  )}
-                                </span>
-                              </div>
-
-                              {/* Center Information */}
-                              <div className="min-w-0 flex-1 flex-col justify-center gap-1">
-                                <div className="flex flex-wrap items-center gap-2">
-                                  <span className="font-sans text-sm font-black text-foreground sm:text-base leading-snug">
-                                    {unit.name}
-                                  </span>
-                                  <Badge variant="primary" size="sm">
-                                    {design.reviewStatus === "authored"
-                                      ? design.cefr
-                                      : t("study.suggestedLevel", { level: design.cefr })}
-                                  </Badge>
-                                </div>
-                                <p className="mt-0.5 line-clamp-1 text-xs font-medium text-muted-foreground sm:text-sm">
-                                  {design.outcome}
-                                </p>
-                                {(familiar > 0 || mastered > 0 || isCurrent) && (
-                                  <span className="mt-1 block text-xs font-semibold text-primary">
-                                    {t("learn.wordProgress", {
+                              isMastered={isComplete}
+                              isCurrent={isCurrent}
+                              title={unit.name}
+                              imageSrc={
+                                unit.heroImage ? resolveAssetUrl(unit.heroImage) : undefined
+                              }
+                              fallbackIcon={<BookOpen className="size-8" aria-hidden />}
+                              priority={index < 3}
+                              tooltipText={design.outcome}
+                              statusText={
+                                familiar > 0 || mastered > 0 || isCurrent
+                                  ? t("learn.wordProgress", {
                                       familiar,
                                       mastered,
                                       due,
                                       total: unit.wordIds.length,
-                                    })}
-                                  </span>
-                                )}
-                              </div>
-
-                              {/* Trailing Arrow */}
-                              <ArrowRight
-                                className="size-5 shrink-0 text-muted-foreground/60 transition-colors group-hover:text-primary rtl:rotate-180"
-                                aria-hidden
-                              />
-                            </button>
+                                    })
+                                  : t("explore.wordsBadge", { count: unit.wordIds.length })
+                              }
+                              statusClassName={
+                                familiar > 0 || mastered > 0 || isCurrent
+                                  ? "text-primary"
+                                  : "text-muted-foreground font-semibold"
+                              }
+                              onClick={() =>
+                                dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
+                              }
+                            />
                           </li>
                         );
                       })}

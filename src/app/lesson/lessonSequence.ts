@@ -34,13 +34,10 @@ const STEP_META: Record<ExerciseStep, Omit<LessonStepLabel, "step" | "exercise">
 export const MAX_LESSON_STAGE_COUNT = Object.keys(STEP_META).length;
 
 export function getLessonSequence(
-  level: LearnerPreferences["englishLevel"],
+  _level: LearnerPreferences["englishLevel"],
   includeListening = true
 ): ExerciseStep[] {
-  const sequence: ExerciseStep[] =
-    level === "A1" || level === "A2"
-      ? ["listen", "recall", "fill", "quiz", "story"]
-      : ["listen", "recall", "fill", "builder", "quiz", "story"];
+  const sequence: ExerciseStep[] = ["listen", "recall", "fill", "builder", "quiz", "story"];
   return includeListening ? sequence : sequence.filter((step) => step !== "listen");
 }
 

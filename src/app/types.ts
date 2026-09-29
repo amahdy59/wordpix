@@ -1,5 +1,7 @@
 // Shared TypeScript types for the WordPix app state machine
 
+import type { MasteryDimension } from "../features/gamification/sm2";
+
 export interface WordFamily {
   noun?: string;
   verb?: string;
@@ -62,6 +64,7 @@ export interface AnswerAttempt {
   wordId: string;
   correct: boolean;
   answeredAt: string;
+  dimension?: MasteryDimension;
 }
 
 export type Screen =
@@ -168,7 +171,12 @@ export type Action =
       unitId?: string;
       initialStep?: number;
     }
-  | { type: "LESSON_ATTEMPT"; wordId?: string; correct: boolean }
+  | {
+      type: "LESSON_ATTEMPT";
+      wordId?: string;
+      correct: boolean;
+      dimension?: MasteryDimension;
+    }
   | { type: "LESSON_NEXT" }
   | { type: "LESSON_PREVIOUS" }
   /** Jump to a specific 0-based step, used when the browser Back/Forward

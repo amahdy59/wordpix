@@ -14,6 +14,7 @@ import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { useI18n } from "../context/I18nContext";
+import { useLessonUsage } from "../data/useLessonUsage";
 
 interface Props {
   step: number;
@@ -43,12 +44,14 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
   const queue = useDrillQueue(words);
+  const usageState = useLessonUsage(lessonId);
   const currentTargetWord = queue.current ?? words[0];
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
 
   const authoredSentence = getAuthoredSentence(currentTargetWord.id);
-  const fullSentence = authoredSentence?.full ?? getRichSentence(currentTargetWord).full;
+  const usage = usageState.status === "ready" ? usageState.data : null;
+  const fullSentence = authoredSentence?.full ?? getRichSentence(currentTargetWord, usage).full;
   const clozeSentence = fullSentence
     .replace(toWordPattern(currentTargetWord.label), "_____ ")
     .trim();
@@ -80,7 +83,12 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
       setFeedback(correct ? "correct" : "incorrect");
       if (correct) playCorrect();
       else playIncorrect();
-      dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
+      dispatch({
+        type: "LESSON_ATTEMPT",
+        wordId: currentTargetWord.id,
+        correct,
+        dimension: "contextual-comprehension",
+      });
       if (accessibility.autoAdvance) {
         autoAdvance.schedule(correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect);
       }

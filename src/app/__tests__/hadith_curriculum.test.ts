@@ -89,4 +89,23 @@ describe("Hadith curriculum", () => {
       expect.objectContaining({ term: "worldly gain" }),
     ]);
   });
+
+  it("parses clean warmup questions, non-noisy choices, and deduplicated preview terms for all 42 lessons", async () => {
+    const { getParsedHadithStages } = await import("../learning/hadith/hadithLessonContent");
+    for (const lesson of HADITH_LESSONS) {
+      const { warmup } = getParsedHadithStages(lesson);
+      expect(warmup.question, lesson.id).not.toMatch(/^quick (?:poll|self-rating):/i);
+      expect(warmup.choices.length, lesson.id).toBeGreaterThanOrEqual(2);
+      for (const choice of warmup.choices) {
+        expect(choice, `${lesson.id} choice`).not.toMatch(
+          /^(?:think about this|preview:|scenario\s+[a-z]:)/i
+        );
+        expect(choice.endsWith("?"), `${lesson.id} choice should not be a question`).toBe(false);
+      }
+      const termKeys = warmup.previewTerms.map((t) => t.term.toLowerCase().trim());
+      expect(new Set(termKeys).size, `${lesson.id} preview terms deduplicated`).toBe(
+        termKeys.length
+      );
+    }
+  });
 });

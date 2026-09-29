@@ -123,7 +123,12 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         }
       );
 
-      dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
+      dispatch({
+        type: "LESSON_ATTEMPT",
+        wordId: currentTargetWord.id,
+        correct,
+        dimension: "listening-recognition",
+      });
     },
     [
       feedback,

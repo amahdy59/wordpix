@@ -46,7 +46,7 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       expect.objectContaining({
         type: "START_LESSON",
         unitId: "bedroom",
-        initialStep: 4,
+        initialStep: 5,
       })
     );
   });

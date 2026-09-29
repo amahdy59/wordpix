@@ -61,6 +61,11 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
             arabicClassName="text-primary"
           />
         </h2>
+        {unit.speakingSkill && (
+          <p className="mt-4 rounded-xl bg-primary/10 px-4 py-3 text-sm font-semibold text-primary">
+            {t("conversation.skill", { skill: unit.speakingSkill })}
+          </p>
+        )}
       </section>
 
       {/* Discussion Activation Prompts */}

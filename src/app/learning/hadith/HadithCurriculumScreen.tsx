@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Clock3, Search } from "lucide-react";
+import { ArrowLeft, BookOpen, Clock3, Search } from "lucide-react";
 import type { Action } from "../../types";
 import { useLearner } from "../../context/LearnerContext";
 import { useI18n } from "../../../i18n";
@@ -8,7 +8,7 @@ import { HADITH_THEMES } from "./hadithThemes";
 import { CurriculumFilterTabs } from "../../shared/CurriculumFilterTabs";
 import { CurriculumHeroHeader } from "../../shared/CurriculumHeroHeader";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
-import { Button, EmptyState } from "../../shared";
+import { Button, CurriculumTopicCard, EmptyState } from "../../shared";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -164,70 +164,40 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
                     {t("hadith.themeLessonCount", { count: theme.lessons.length })}
                   </p>
                 </div>
-                <ol className="mt-4 grid gap-3 md:grid-cols-2" aria-label={t(theme.titleKey)}>
+                <ol
+                  className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+                  aria-label={t(theme.titleKey)}
+                >
                   {theme.lessons.map((lesson) => {
                     const progress = state.hadithProgress[lesson.id];
                     const isMastered = progress?.status === "mastered";
                     const isDue = Boolean(progress?.nextReviewAt && progress.nextReviewAt <= now);
                     const thumbnail = getHadithLessonThumbnail(lesson);
+                    const purpose = lessonPurpose(lesson.stages.overview.text);
+                    const statusText = isDue
+                      ? t("hadith.dueNow")
+                      : progress?.status === "in-progress"
+                        ? t("hadith.resumeStage", { stage: progress.currentStage + 1 })
+                        : isMastered
+                          ? t("hadith.masteredStatus", {
+                              score: progress.bestScorePercent,
+                            })
+                          : t("hadith.estimatedTime");
                     return (
                       <li key={lesson.id}>
-                        <button
-                          type="button"
+                        <CurriculumTopicCard
+                          numberBadge={lesson.number}
+                          isMastered={isMastered}
+                          title={lesson.title}
+                          imageSrc={resolveAssetUrl(`hadith/v1/images/${thumbnail.imageRef}.png`)}
+                          priority={lesson.number <= 2}
+                          tooltipText={purpose}
+                          statusIcon={<Clock3 className="size-3.5 shrink-0" aria-hidden />}
+                          statusText={statusText}
                           onClick={() =>
                             dispatch({ type: "OPEN_HADITH_LESSON", lessonId: lesson.id })
                           }
-                          className="group flex min-h-[96px] w-full items-center justify-between gap-3.5 rounded-2xl border border-border bg-card p-3 text-start shadow-wp-xs transition-all hover:border-primary/50 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:gap-4 sm:p-3.5"
-                        >
-                          <span className="relative aspect-square w-16 shrink-0 overflow-hidden rounded-xl border border-border/60 bg-muted/40 shadow-wp-xs sm:w-20">
-                            <img
-                              src={resolveAssetUrl(`hadith/v1/images/${thumbnail.imageRef}.png`)}
-                              alt=""
-                              width={224}
-                              height={224}
-                              loading={lesson.number <= 2 ? "eager" : "lazy"}
-                              decoding="async"
-                              className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                            />
-                            <span
-                              className={`absolute start-1 top-1 flex size-6 items-center justify-center rounded-md text-xs font-black shadow-wp-xs backdrop-blur-sm ${
-                                isMastered
-                                  ? "bg-wp-green text-wp-text-on-green"
-                                  : "border border-border/50 bg-card/90 text-foreground"
-                              }`}
-                            >
-                              {isMastered ? (
-                                <CheckCircle2 className="size-3.5" aria-hidden />
-                              ) : (
-                                lesson.number
-                              )}
-                            </span>
-                          </span>
-                          <span className="min-w-0 flex-1 flex-col justify-center gap-1">
-                            <span className="block text-sm font-black text-foreground sm:text-base leading-snug">
-                              {lesson.title}
-                            </span>
-                            <span className="mt-0.5 line-clamp-1 block text-xs font-medium text-muted-foreground sm:text-sm">
-                              {lessonPurpose(lesson.stages.overview.text)}
-                            </span>
-                            <span className="mt-1 inline-flex items-center gap-1 text-xs font-bold text-primary">
-                              <Clock3 className="size-3.5" aria-hidden />
-                              {isDue
-                                ? t("hadith.dueNow")
-                                : progress?.status === "in-progress"
-                                  ? t("hadith.resumeStage", { stage: progress.currentStage + 1 })
-                                  : isMastered
-                                    ? t("hadith.masteredStatus", {
-                                        score: progress.bestScorePercent,
-                                      })
-                                    : t("hadith.estimatedTime")}
-                            </span>
-                          </span>
-                          <ArrowRight
-                            className="size-5 shrink-0 text-muted-foreground/60 transition-colors group-hover:text-primary rtl:rotate-180"
-                            aria-hidden
-                          />
-                        </button>
+                        />
                       </li>
                     );
                   })}

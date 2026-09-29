@@ -3,6 +3,8 @@ import { loadedVocabulary } from "../data/vocabulary";
 import { shuffleArray } from "../../utils/shuffle";
 import { articleFor, classifyLabel, spokenLabel } from "../content/wordGrammar";
 import { getAuthoredSentence } from "./content/authoredLessonContent";
+import type { LessonUsageData } from "../data/usageTypes";
+import { findLessonContextSentences } from "../data/lessonContext";
 
 export const CONFUSION_PAIRS: Record<string, string[]> = {
   pillow: ["blanket", "nightstand", "bed", "dresser"],
@@ -447,18 +449,49 @@ function fallbackFrame(word: VocabularyItem): { lead: string[]; spoken: string }
   }
 }
 
-export function getRichSentence(word: VocabularyItem): RichSentence {
+function sentenceToTiles(sentence: string): string[] {
+  return sentence.trim().split(/\s+/u).filter(Boolean);
+}
+
+function isUsefulExample(value: string | undefined): value is string {
+  if (!value?.trim()) return false;
+  return !/was used during the activity|glossary uses the term|lesson used .+ to describe|in an educational description/iu.test(
+    value
+  );
+}
+
+export function getRichSentence(
+  word: VocabularyItem,
+  usage?: LessonUsageData | null,
+  contextIndex = 0
+): RichSentence {
   const authoredSentence = getAuthoredSentence(word.id);
-  if (authoredSentence) {
+  const curatedSentence = RICH_CONTEXT_SENTENCES[word.id];
+  const candidates = [
+    authoredSentence?.full,
+    curatedSentence?.full,
+    isUsefulExample(word.exampleUsage) ? word.exampleUsage.trim() : undefined,
+    ...findLessonContextSentences(word, usage),
+  ].filter((sentence): sentence is string => Boolean(sentence));
+  const uniqueCandidates = [...new Set(candidates)];
+  const selected =
+    uniqueCandidates[Math.min(Math.max(0, contextIndex), uniqueCandidates.length - 1)];
+  if (selected) {
+    if (selected === authoredSentence?.full) {
+      return {
+        clozeBefore: "",
+        clozeAfter: "",
+        full: selected,
+        words: authoredSentence.words,
+      };
+    }
+    if (selected === curatedSentence?.full) return curatedSentence;
     return {
       clozeBefore: "",
       clozeAfter: "",
-      full: authoredSentence.full,
-      words: authoredSentence.words,
+      full: selected,
+      words: sentenceToTiles(selected),
     };
-  }
-  if (RICH_CONTEXT_SENTENCES[word.id]) {
-    return RICH_CONTEXT_SENTENCES[word.id];
   }
   const { lead, spoken } = fallbackFrame(word);
   const clozeBefore = lead.join(" ");

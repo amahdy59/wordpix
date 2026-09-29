@@ -33,3 +33,5 @@ export {
 export type { VocabularyTableItem, VocabularySidebars } from "./CurriculumVocabularyTable";
 export { CurriculumQuizEngine, CanDoChallengeCard } from "./CurriculumQuizEngine";
 export type { QuizQuestion, QuizResult } from "./CurriculumQuizEngine";
+export { CurriculumTopicCard } from "./CurriculumTopicCard";
+export type { CurriculumTopicCardProps } from "./CurriculumTopicCard";

@@ -76,12 +76,12 @@ Keep `AGENTS.md` short enough to load for every task. Keep domain detail in the 
 
 ## Requirement language
 
-| Word | Meaning |
-|---|---|
-| **MUST** | Required for merge or release. |
+| Word         | Meaning                                                                  |
+| ------------ | ------------------------------------------------------------------------ |
+| **MUST**     | Required for merge or release.                                           |
 | **MUST NOT** | Prohibited unless the relevant document explicitly defines an exception. |
-| **SHOULD** | Expected default; deviation needs a documented reason. |
-| **MAY** | Optional and context-dependent. |
+| **SHOULD**   | Expected default; deviation needs a documented reason.                   |
+| **MAY**      | Optional and context-dependent.                                          |
 
 ## Status labels
 
@@ -154,6 +154,12 @@ A result is trustworthy when:
 - The agent reports uncertainty instead of hiding it.
 
 ## Core references
+
+For contextual vocabulary design and validation, also use:
+
+- [`16_CONTEXTUAL_LANGUAGE_LEARNER_TEST_PROTOCOL.md`](16_CONTEXTUAL_LANGUAGE_LEARNER_TEST_PROTOCOL.md) — adult learner testing for recognition, comprehension, production, and delayed transfer.
+- [`17_CONTEXTUAL_LANGUAGE_EDITORIAL_RUBRIC.md`](17_CONTEXTUAL_LANGUAGE_EDITORIAL_RUBRIC.md) — lesson-writing contract, reference-unit gate, and rollout priorities.
+- [`18_CONTEXTUAL_LANGUAGE_PILOT_STATUS.md`](18_CONTEXTUAL_LANGUAGE_PILOT_STATUS.md) — current automated evidence and outstanding human-validation status.
 
 - [AGENTS.md open format](https://agents.md/)
 - [OpenAI Codex: custom instructions with AGENTS.md](https://developers.openai.com/codex/agent-configuration/agents-md)

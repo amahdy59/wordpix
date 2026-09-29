@@ -47,7 +47,7 @@ describe("Vocabulary descriptions", () => {
       expect(
         word.description,
         `${word.topic}/${word.id} retained generic catalogue copy`
-      ).not.toMatch(/^A term used in the .+ context\.$/i);
+      ).not.toMatch(/^An? .+ used in the .+ context\.$/i);
       expect(
         word.exampleUsage,
         `${word.topic}/${word.id} retained a generic catalogue example`

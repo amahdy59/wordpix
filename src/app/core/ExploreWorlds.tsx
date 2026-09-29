@@ -1,23 +1,11 @@
 import { memo, useState, useId, useMemo } from "react";
-import {
-  Compass,
-  ArrowRight,
-  Sparkles,
-  ChevronDown,
-  CheckCircle2,
-  Award,
-  Search,
-  X,
-  Library,
-  Play,
-  BookOpen,
-} from "lucide-react";
+import { Compass, ChevronDown, Award, Search, X, Library, Play, BookOpen } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { COURSE_UNITS, type CourseUnit } from "../data/courseCatalog";
 import { CEFR_STAGES, CURRICULUM_SEQUENCE } from "../data/curriculumSequence";
-import { Badge, ProgressBar, FilterChip, PageHeader } from "../shared";
+import { Badge, CurriculumTopicCard, ProgressBar, FilterChip, PageHeader } from "../shared";
 import { staggerContainer, staggerItem } from "../shared/animations";
 import { useI18n } from "../context/I18nContext";
 import { resolveAssetUrl } from "../../utils/assetUrl";
@@ -525,77 +513,30 @@ const UnitCard = memo(function UnitCard({ unit, stats, dispatch, t }: UnitCardPr
   const isComplete = stats?.isComplete ?? false;
 
   return (
-    <div className="relative flex flex-col justify-between gap-3 overflow-hidden rounded-2xl border border-border bg-wp-card p-3.5 shadow-wp-xs transition-colors hover:border-primary/50">
-      {/* Unit Image Banner with responsive aspect ratio */}
-      <div className="relative aspect-[16/9] min-h-[120px] max-h-[170px] shrink-0 overflow-hidden rounded-xl border border-border shadow-wp-xs">
-        {unit.heroImage ? (
-          <img
-            alt={`${unit.name} visual learning scene`}
-            className="absolute inset-0 object-cover size-full"
-            src={resolveAssetUrl(unit.heroImage)}
-            loading="lazy"
-          />
-        ) : (
-          <div
-            className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/25 via-primary/10 to-transparent p-4"
-            aria-hidden
-          >
-            <span className="font-sans font-bold text-center text-balance text-foreground/70 text-sm sm:text-base">
-              {unit.name}
-            </span>
-          </div>
-        )}
-        {isComplete ? (
-          <Badge variant="green" size="sm" className="absolute top-2.5 start-2.5 shadow-wp-xs">
-            <CheckCircle2 className="size-3.5" aria-hidden="true" />
-            <span>{t("gamification.mastered")}</span>
-          </Badge>
-        ) : (
-          <Badge variant="primary" size="sm" className="absolute top-2.5 start-2.5 shadow-wp-xs">
-            <Sparkles className="size-3.5" aria-hidden="true" />
-            <span>{curriculum.cefr}</span>
-          </Badge>
-        )}
-      </div>
-
-      {/* Unit Details */}
-      <div className="flex flex-col gap-1.5 flex-1">
-        <div className="flex items-center justify-between flex-wrap gap-1">
-          <h3 className="font-sans font-black text-foreground text-base sm:text-lg leading-tight">
-            {unit.name}
-          </h3>
-          <span className="font-sans text-xs text-muted-foreground font-semibold">
-            {t("explore.wordsBadge", { count: totalWords })}
-          </span>
-        </div>
-        <p className="line-clamp-2 font-sans text-xs leading-relaxed text-muted-foreground">
-          {curriculum.outcome}
-        </p>
-      </div>
-
-      {/* Progress & Actions */}
-      <div className="flex flex-col gap-2.5 border-t border-border/60 pt-2.5">
-        {wordsPracticedCount > 0 && (
-          <ProgressBar
-            progressPercent={unitPercent}
-            label="Unit progress"
-            labelRight={`${unitPercent}%`}
-            ariaLabel={`${unit.name} progress: ${unitPercent}%`}
-            size="sm"
-            variant={isComplete ? "success" : "brand"}
-          />
-        )}
-
-        <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })}
-            className="min-h-[44px] flex-1 bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-2 px-3 font-sans font-bold text-wp-text-on-blue text-xs sm:text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer"
-          >
-            <Play className="size-3.5 shrink-0" aria-hidden="true" />
-            <span>{wordsPracticedCount > 0 ? t("action.continue") : t("explore.startUnit")}</span>
-            <ArrowRight className="size-3.5 rtl:rotate-180 shrink-0" aria-hidden="true" />
-          </button>
+    <CurriculumTopicCard
+      className="[&_img]:aspect-[16/9]"
+      levelBadge={curriculum.cefr}
+      isMastered={isComplete}
+      title={unit.name}
+      imageSrc={unit.heroImage ? resolveAssetUrl(unit.heroImage) : undefined}
+      imageAlt={`${unit.name} visual learning scene`}
+      tooltipText={curriculum.outcome}
+      statusIcon={<Play className="size-3.5 shrink-0" aria-hidden="true" />}
+      statusText={t("explore.wordsBadge", { count: totalWords })}
+      actionLabel={wordsPracticedCount > 0 ? t("action.continue") : t("explore.startUnit")}
+      onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })}
+      secondaryAction={
+        <div className="flex flex-col gap-2.5">
+          {wordsPracticedCount > 0 && (
+            <ProgressBar
+              progressPercent={unitPercent}
+              label="Unit progress"
+              labelRight={`${unitPercent}%`}
+              ariaLabel={`${unit.name} progress: ${unitPercent}%`}
+              size="sm"
+              variant={isComplete ? "success" : "brand"}
+            />
+          )}
 
           <button
             type="button"
@@ -609,13 +550,13 @@ const UnitCard = memo(function UnitCard({ unit, stats, dispatch, t }: UnitCardPr
             }
             title={t("dashboard.studyGuideAria", { unit: unit.name })}
             aria-label={t("dashboard.studyGuideAria", { unit: unit.name })}
-            className="min-h-[44px] px-3 py-2 bg-secondary text-primary hover:bg-secondary/80 border border-primary/20 rounded-xl font-sans font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0 cursor-pointer"
+            className="min-h-[44px] w-full px-3 py-2 bg-secondary text-primary hover:bg-secondary/80 border border-primary/20 rounded-xl font-sans font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
             <BookOpen className="size-4 shrink-0" aria-hidden="true" />
             <span>{t("explore.studyButton")}</span>
           </button>
         </div>
-      </div>
-    </div>
+      }
+    />
   );
 });

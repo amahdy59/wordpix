@@ -89,7 +89,12 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         }
       );
 
-      dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
+      dispatch({
+        type: "LESSON_ATTEMPT",
+        wordId: currentTargetWord.id,
+        correct,
+        dimension: "visual-recognition",
+      });
     },
     [
       feedback,

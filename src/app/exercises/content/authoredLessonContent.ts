@@ -142,12 +142,12 @@ const numbersCountingOne = authoredLessonContentSchema.parse({
       targetWordIds: ["six", "seven", "eight", "nine", "ten"],
       microReading: {
         title: "In the classroom",
-        text: "There are six cups and seven books. Eight students bring nine boxes and ten pencils.",
+        text: "I see six books on the desk and seven apples in the basket. We count eight chairs, nine bags, and ten pencils.",
       },
       retrieval: {
-        prompt: "How many boxes do the students bring?",
-        options: ["Eight", "Nine", "Ten"],
-        answer: "Nine",
+        prompt: "How many books are on the desk?",
+        options: ["Six", "Eight", "Ten"],
+        answer: "Six",
       },
     },
     {

@@ -26,6 +26,7 @@
     "content:definitions:review": "vite-node scripts/audit_vocabulary_definitions.ts --json",
     "content:definitions:apply-review": "python scripts/apply_vocabulary_definition_review.py docs/vocabulary-definition-review.csv",
     "content:curriculum:audit": "node --experimental-strip-types scripts/audit-curriculum-content.ts",
+    "content:context:audit": "vitest run src/app/__tests__/contextual_quality.test.ts --reporter=verbose",
     "content:pronunciation:r2-audit": "node scripts/audit_pronunciation_r2.cjs",
     "content:conversation:images": "node scripts/import_conversation_figma_images.cjs",
     "audio:pronunciation:manifest": "node scripts/reconcile_pronunciation_audio.cjs --inspect-metadata=10000",

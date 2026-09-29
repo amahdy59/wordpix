@@ -42,6 +42,26 @@ const xpBreakdownSchema = z
   })
   .strict();
 
+const skillMasteryStateSchema = z
+  .object({
+    attempts: nonNegativeInteger,
+    correct: nonNegativeInteger,
+    lastAttemptAt: nullableTimestamp,
+    mastery: z.enum(["new", "learning", "familiar", "strong"]),
+  })
+  .strict();
+
+const skillMasterySchema = z
+  .object({
+    "visual-recognition": skillMasteryStateSchema,
+    "listening-recognition": skillMasteryStateSchema,
+    "contextual-comprehension": skillMasteryStateSchema,
+    "controlled-production": skillMasteryStateSchema,
+    "spoken-production": skillMasteryStateSchema,
+    "independent-transfer": skillMasteryStateSchema,
+  })
+  .strict();
+
 const wordLearningStateSchema = z
   .object({
     wordId: z.string().min(1).max(200),
@@ -56,6 +76,7 @@ const wordLearningStateSchema = z
     intervalDays: nonNegativeInteger,
     easeFactor: nonNegativeNumber,
     mastery: z.enum(["new", "learning", "familiar", "strong"]),
+    skillMastery: skillMasterySchema.optional(),
   })
   .strict();
 

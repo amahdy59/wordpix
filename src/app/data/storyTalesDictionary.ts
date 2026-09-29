@@ -1,3 +1,6 @@
+import type { LessonUsageData } from "./usageTypes";
+import { rotateOptions } from "./lessonContext";
+
 // Comprehensive 3-Passage Extended Narrative Stories and Comprehension MCQ Quizzes
 // Designed for maximum vocabulary retention, context immersion, and active recall.
 
@@ -2638,10 +2641,67 @@ export const STORY_TALES_DICTIONARY: Record<string, GroupStoryBundle> = {
 export function getOrGenerateStoryBundle(
   groupId: string,
   groupName: string,
-  words: { id: string; label: string; topic?: string }[]
+  words: { id: string; label: string; topic?: string }[],
+  usage?: LessonUsageData | null
 ): GroupStoryBundle {
   if (STORY_TALES_DICTIONARY[groupId]) {
     return STORY_TALES_DICTIONARY[groupId];
+  }
+
+  if (usage) {
+    const midpoint = Math.max(1, Math.ceil(usage.usage.scenes.length / 2));
+    const firstScenes = usage.usage.scenes.slice(0, midpoint);
+    const laterScenes = usage.usage.scenes.slice(midpoint);
+    const joinScenes = (scenes: typeof usage.usage.scenes) =>
+      scenes.map((scene) => scene.scenario).join(" ");
+    const contextualQuiz = usage.usage.scenes.slice(0, 3).map((scene, index) => {
+      const options = rotateOptions(scene.check.options, usage.globalOrder + index);
+      const targetPattern = new RegExp(
+        scene.check.expectedAnswer.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
+        "iu"
+      );
+      const cloze = targetPattern.test(scene.scenario)
+        ? scene.scenario.replace(targetPattern, "_____")
+        : scene.scenario;
+      return {
+        id: `${groupId}-context-${scene.chunkNumber}`,
+        question: `Which word completes this situation? ${cloze}`,
+        options,
+        correctIndex: options.indexOf(scene.check.expectedAnswer),
+        explanation: scene.scenario,
+        explanationArabic: "",
+      };
+    });
+
+    return {
+      groupId,
+      groupName,
+      themeTitle: usage.reading.title,
+      passages: [
+        {
+          partNumber: 1,
+          title: usage.reading.title,
+          titleArabic: "",
+          text: usage.reading.text,
+          textArabic: "",
+        },
+        {
+          partNumber: 2,
+          title: "The situation in action",
+          titleArabic: "الموقف أثناء الاستخدام",
+          text: joinScenes(firstScenes) || usage.reading.text,
+          textArabic: "",
+        },
+        {
+          partNumber: 3,
+          title: "Transfer to a new context",
+          titleArabic: "التطبيق في سياق جديد",
+          text: joinScenes(laterScenes) || `${usage.usage.goal} ${usage.usage.canDoStatement}`,
+          textArabic: "",
+        },
+      ],
+      quiz: contextualQuiz,
+    };
   }
 
   const labels = words.map((w) => w.label);

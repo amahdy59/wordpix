@@ -4,6 +4,10 @@ import { updateStreak, getLocalDateString } from "../../features/gamification/st
 import {
   calculateSM2State,
   createInitialWordState,
+  getBalancedMasteryCategory,
+  normalizeWordLearningState,
+  recordMasteryEvidence,
+  type MasteryDimension,
   type WordLearningState,
 } from "../../features/gamification/sm2";
 import { calculateXPBreakdown, type XPBreakdown } from "../../features/gamification/xp";
@@ -160,7 +164,7 @@ export interface LearnerStateSchema {
 const STORAGE_KEY = "wordpix:learner:v2";
 
 export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
-  version: 2,
+  version: 3,
   preferences: {
     englishLevel: "A1",
     startingUnitId: "numbers-counting",
@@ -202,7 +206,10 @@ function migrateState(savedData: unknown): LearnerStateSchema {
   Object.keys(rawMemory).forEach((wordId) => {
     const val = rawMemory[wordId];
     if (val && typeof val === "object" && "wordId" in val) {
-      normalizedMemory[wordId] = val as WordLearningState;
+      normalizedMemory[wordId] = normalizeWordLearningState(
+        wordId,
+        val as Partial<WordLearningState>
+      );
     } else if (typeof val === "number") {
       // Migrate legacy numeric mastery levels (1, 2, 3) to SM-2 WordLearningState
       const base = createInitialWordState(wordId);
@@ -213,7 +220,7 @@ function migrateState(savedData: unknown): LearnerStateSchema {
   });
 
   return {
-    version: 2,
+    version: 3,
     preferences: {
       englishLevel: (saved.preferences as Partial<LearnerPreferences>)?.englishLevel ?? "A1",
       startingUnitId:
@@ -503,13 +510,30 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         );
         const xpEarned = xpBreakdown.total;
 
-        const wordAttempts: Record<string, { correct: number; total: number }> = {};
+        const wordAttempts: Record<
+          string,
+          {
+            correct: number;
+            total: number;
+            dimensions: Partial<Record<MasteryDimension, { correct: number; total: number }>>;
+          }
+        > = {};
         attempts.forEach((a) => {
           if (!wordAttempts[a.wordId]) {
-            wordAttempts[a.wordId] = { correct: 0, total: 0 };
+            wordAttempts[a.wordId] = { correct: 0, total: 0, dimensions: {} };
           }
           wordAttempts[a.wordId].total += 1;
           if (a.correct) wordAttempts[a.wordId].correct += 1;
+          if (a.dimension) {
+            const current = wordAttempts[a.wordId].dimensions[a.dimension] ?? {
+              correct: 0,
+              total: 0,
+            };
+            wordAttempts[a.wordId].dimensions[a.dimension] = {
+              correct: current.correct + (a.correct ? 1 : 0),
+              total: current.total + 1,
+            };
+          }
         });
 
         const updatedMemory = { ...prev.wordMemory };
@@ -527,7 +551,20 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
           } else {
             const accuracy = perf.correct / perf.total;
             const quality = accuracy >= 0.9 ? 5 : accuracy >= 0.7 ? 4 : accuracy >= 0.5 ? 3 : 1;
-            updatedMemory[wordId] = calculateSM2State(existingState, quality);
+            let nextState = calculateSM2State(existingState, quality);
+            Object.entries(perf.dimensions).forEach(([dimension, evidence]) => {
+              if (!evidence) return;
+              nextState = recordMasteryEvidence(
+                nextState,
+                dimension as MasteryDimension,
+                evidence.correct,
+                evidence.total
+              );
+            });
+            updatedMemory[wordId] = {
+              ...nextState,
+              mastery: getBalancedMasteryCategory(nextState),
+            };
           }
         });
 

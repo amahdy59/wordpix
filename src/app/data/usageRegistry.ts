@@ -1,4 +1,5 @@
-import type { UnitUsageData, LessonUsageData } from "./usageTypes";
+import { unitUsageDataSchema, type UnitUsageData, type LessonUsageData } from "./usageTypes";
+import { enrichReferenceLesson } from "./referenceUnitEnrichment";
 
 /**
  * Lazy registry for unit curriculum usage data.
@@ -13,7 +14,7 @@ export async function loadUnitUsage(unitId: string): Promise<UnitUsageData | nul
   if (!loader) return null;
   try {
     const mod = await loader();
-    return (mod.default ?? mod) as UnitUsageData;
+    return unitUsageDataSchema.parse(mod.default ?? mod).map(enrichReferenceLesson);
   } catch {
     return null;
   }

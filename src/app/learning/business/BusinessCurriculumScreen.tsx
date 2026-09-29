@@ -20,7 +20,7 @@ import {
   type BusinessUnitProgress,
 } from "./businessTypes";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
-import { Button } from "../../shared";
+import { Button, CurriculumTopicCard } from "../../shared";
 
 interface Props {
   dispatch: Dispatch<Action>;
@@ -408,125 +408,74 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
 
         {/* Units Grid */}
         <section aria-label="Business English Units">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {filteredUnits.map((unit) => {
               const progress = progressState[unit.id];
               const isMastered = progress?.status === "mastered";
               const isInProgress =
                 progress?.status === "in-progress" &&
                 (progress.completedStages.length > 0 || progress.currentStage > 0);
+              const tooltipText = [
+                unit.essentialQuestion ? `“${unit.essentialQuestion}”` : "",
+                unit.speakingGoal ? `${t("business.goalPrefix")}${unit.speakingGoal}` : "",
+              ]
+                .filter(Boolean)
+                .join(" ");
 
               return (
-                <article
+                <CurriculumTopicCard
                   key={unit.id}
-                  className="flex flex-col justify-between overflow-hidden rounded-3xl border border-border bg-card shadow-wp-xs hover:border-primary/40 hover:shadow-wp-sm transition-all"
-                >
-                  {unit.heroImageSrc && (
-                    <div className="relative h-40 w-full overflow-hidden bg-muted/40 border-b border-border/60">
-                      <img
-                        src={resolveAssetUrl(unit.heroImageSrc)}
-                        alt=""
-                        aria-hidden="true"
-                        className="h-full w-full object-cover object-center transition-transform duration-300 hover:scale-105"
-                        loading="lazy"
-                        onError={(e) => {
-                          (e.currentTarget as HTMLElement).style.display = "none";
-                        }}
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-60" />
-                    </div>
-                  )}
-
-                  <div className="flex flex-col justify-between flex-1 p-5 sm:p-6">
-                    <div className="flex flex-col gap-3">
-                      <div className="flex items-center justify-between gap-2">
-                        <div className="flex items-center gap-2">
-                          <span className="flex size-7 items-center justify-center rounded-lg bg-primary/15 font-black text-xs text-primary">
-                            {unit.unitNumber}
-                          </span>
-                          <span className="rounded-md bg-muted px-2 py-0.5 text-xs font-black uppercase text-foreground">
-                            {unit.level}
-                          </span>
-                          {unit.estimatedMinutes && (
-                            <span className="inline-flex items-center gap-1 rounded-md bg-secondary px-2 py-0.5 text-xs font-bold text-foreground">
-                              <Hourglass className="size-3" aria-hidden />
-                              {t("business.estimatedMinutes", { minutes: unit.estimatedMinutes })}
-                            </span>
-                          )}
-                        </div>
-
-                        {isMastered ? (
-                          <span className="inline-flex items-center gap-1 rounded-full bg-accent/15 px-2.5 py-0.5 text-xs font-black text-accent">
-                            <CheckCircle2 className="size-3.5" aria-hidden />
-                            {t("business.masteredBadge")}
-                          </span>
-                        ) : isInProgress ? (
-                          <span className="inline-flex items-center gap-1 rounded-full bg-primary/15 px-2.5 py-0.5 text-xs font-black text-primary">
-                            <Clock className="size-3.5" aria-hidden />
-                            {t("business.stageFraction", {
-                              current: progress.currentStage + 1,
-                              total: 8,
-                            })}
-                          </span>
-                        ) : null}
-                      </div>
-
-                      <h2 className="text-lg font-black text-foreground tracking-tight leading-snug">
-                        {unit.title}
-                      </h2>
-
-                      <p className="text-sm font-semibold text-primary/90 italic">
-                        {`“${unit.essentialQuestion}”`}
-                      </p>
-
-                      <p className="text-xs sm:text-sm font-medium text-muted-foreground line-clamp-2">
-                        <span className="font-bold text-foreground">
-                          {t("business.goalPrefix")}
-                        </span>
-                        {unit.speakingGoal}
-                      </p>
-
-                      {unit.tags && unit.tags.length > 0 && (
-                        <div className="flex flex-wrap gap-1.5 mt-1">
-                          {unit.tags.map((tag, idx) => (
-                            <span
-                              key={idx}
-                              className="rounded-md bg-muted/60 px-2 py-0.5 text-[11px] font-bold text-muted-foreground"
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-
-                    <div className="mt-5 flex items-center justify-between pt-4 border-t border-border/80">
-                      <span className="text-xs font-bold text-muted-foreground">
-                        {t("business.termsAndSteps", { count: unit.languageBank.length })}
-                      </span>
-
-                      <button
-                        type="button"
-                        onClick={() =>
-                          dispatch({
-                            type: "OPEN_BUSINESS_LESSON",
-                            unitId: unit.id,
+                  numberBadge={unit.unitNumber}
+                  levelBadge={unit.level}
+                  isMastered={isMastered}
+                  eyebrow={unit.tags?.[0]}
+                  title={unit.title}
+                  imageSrc={unit.heroImageSrc ? resolveAssetUrl(unit.heroImageSrc) : undefined}
+                  fallbackIcon={<Briefcase className="size-10" aria-hidden />}
+                  priority={unit.unitNumber <= 3}
+                  tooltipText={tooltipText}
+                  statusIcon={
+                    isMastered ? (
+                      <CheckCircle2 className="size-3.5 shrink-0" aria-hidden />
+                    ) : isInProgress ? (
+                      <Clock className="size-3.5 shrink-0" aria-hidden />
+                    ) : unit.estimatedMinutes ? (
+                      <Hourglass className="size-3.5 shrink-0" aria-hidden />
+                    ) : undefined
+                  }
+                  statusText={
+                    isMastered
+                      ? t("business.masteredBadge")
+                      : isInProgress
+                        ? t("business.stageFraction", {
+                            current: progress.currentStage + 1,
+                            total: 8,
                           })
-                        }
-                        className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl bg-primary px-4 py-2 font-bold text-primary-foreground shadow-wp-xs hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
-                      >
-                        <span>
-                          {isMastered
-                            ? t("business.reviewUnitCta")
-                            : isInProgress
-                              ? t("business.resumeCta")
-                              : t("business.startUnitCta")}
-                        </span>
-                        <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
-                      </button>
-                    </div>
-                  </div>
-                </article>
+                        : unit.estimatedMinutes
+                          ? t("business.estimatedMinutes", { minutes: unit.estimatedMinutes })
+                          : t("business.termsAndSteps", { count: unit.languageBank.length })
+                  }
+                  statusClassName={
+                    isMastered
+                      ? "text-accent"
+                      : isInProgress
+                        ? "text-primary"
+                        : "text-muted-foreground font-semibold"
+                  }
+                  actionLabel={
+                    isMastered
+                      ? t("business.reviewUnitCta")
+                      : isInProgress
+                        ? t("business.resumeCta")
+                        : t("business.startUnitCta")
+                  }
+                  onClick={() =>
+                    dispatch({
+                      type: "OPEN_BUSINESS_LESSON",
+                      unitId: unit.id,
+                    })
+                  }
+                />
               );
             })}
           </div>

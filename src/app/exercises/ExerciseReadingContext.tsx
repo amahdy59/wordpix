@@ -9,6 +9,8 @@ import { resolveGroup } from "../data/courseCatalog";
 import { useSound } from "../shared/useSound";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useI18n } from "../context/I18nContext";
+import { useLessonUsage } from "../data/useLessonUsage";
+import { LessonTransferPractice } from "./LessonTransferPractice";
 
 interface Props {
   step: number;
@@ -27,9 +29,11 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
   const lesson = getAuthoredLessonContent(lessonId);
+  const usageState = useLessonUsage(lessonId);
   const [clusterIndex, setClusterIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const cluster = lesson?.clusters[clusterIndex] ?? null;
+  const isLastCluster = Boolean(lesson && clusterIndex === lesson.clusters.length - 1);
   const group = useMemo(
     () =>
       resolveGroup(
@@ -48,7 +52,12 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
       if (option === cluster.retrieval.answer) playCorrect();
       else playIncorrect();
       cluster.targetWordIds.forEach((wordId) =>
-        dispatch({ type: "LESSON_ATTEMPT", wordId, correct: option === cluster.retrieval.answer })
+        dispatch({
+          type: "LESSON_ATTEMPT",
+          wordId,
+          correct: option === cluster.retrieval.answer,
+          dimension: "independent-transfer",
+        })
       );
     },
     [cluster, dispatch, playClick, playCorrect, playIncorrect, selected]
@@ -60,12 +69,14 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
     setSelected(null);
   }, [cluster, clusterIndex, dispatch, lesson]);
   useEffect(() => {
-    if (selected && accessibility.autoAdvance) {
+    // The final answer opens independent production and spaced transfer.
+    // Never auto-dismiss that work before the learner can use it.
+    if (selected && accessibility.autoAdvance && !isLastCluster) {
       const timer = window.setTimeout(handleContinue, 1200);
       return () => window.clearTimeout(timer);
     }
     return undefined;
-  }, [accessibility.autoAdvance, handleContinue, selected]);
+  }, [accessibility.autoAdvance, handleContinue, isLastCluster, selected]);
   if (!lesson || !cluster) return null;
 
   return (
@@ -100,9 +111,18 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
               {cluster.microReading.text}
             </p>
             <div className="space-y-3">
-              <h3 className="font-sans text-base font-bold text-foreground">
-                {t("exercise.readingContextQuestion")}
-              </h3>
+              <div className="flex flex-col gap-1">
+                <span className="font-sans text-xs font-bold uppercase tracking-wider text-primary">
+                  {t("exercise.readingContextQuestion")}
+                </span>
+                <p
+                  className="font-sans text-base sm:text-lg font-bold text-foreground"
+                  lang="en"
+                  dir="ltr"
+                >
+                  {cluster.retrieval.prompt}
+                </p>
+              </div>
               <div
                 className="grid gap-2 sm:grid-cols-3"
                 role="group"
@@ -124,6 +144,11 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
                 ))}
               </div>
             </div>
+            {selected &&
+              lesson &&
+              isLastCluster &&
+              usageState.status === "ready" &&
+              usageState.data && <LessonTransferPractice usage={usageState.data} />}
           </div>
         }
         feedback={
@@ -147,7 +172,7 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
           ) : undefined
         }
         action={
-          selected && !accessibility.autoAdvance ? (
+          selected && (!accessibility.autoAdvance || isLastCluster) ? (
             <Button
               size="lg"
               iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}

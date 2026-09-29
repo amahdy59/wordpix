@@ -15,7 +15,7 @@ test("conversation curriculum is discoverable and prevents stage skipping", asyn
   await page.goto("/#/conversation");
 
   await expect(page.getByRole("heading", { name: "Conversation & Debate" })).toBeVisible();
-  const units = page.getByRole("region", { name: "Units list" }).getByRole("button");
+  const units = page.getByRole("region", { name: "Units list" }).getByRole("article");
   await expect(units).toHaveCount(40);
 
   await page.getByLabel("Search conversation units").fill("smartphone");

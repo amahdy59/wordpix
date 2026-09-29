@@ -88,7 +88,12 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
           );
         }
       );
-      dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
+      dispatch({
+        type: "LESSON_ATTEMPT",
+        wordId: currentTargetWord.id,
+        correct,
+        dimension: "contextual-comprehension",
+      });
     },
     [
       feedback,

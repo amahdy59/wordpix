@@ -175,44 +175,81 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
     }
   };
 
+  const scrollToHadithText = () => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const section = document.getElementById("hadith-read-listen-section");
+    const heading = document.getElementById("stage-readlisten-heading");
+    section?.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+    heading?.focus();
+  };
+
   return (
     <div
       className="min-h-dvh w-full overflow-y-auto bg-background pb-24"
       aria-labelledby="hadith-title"
     >
       <div className="wp-container-content wp-layout-gutter flex flex-col gap-6 py-4 sm:py-8">
-        {/* Top Back Action */}
-        <button
-          type="button"
-          onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
-          className={`inline-flex min-h-11 w-fit items-center gap-2 rounded-xl px-3 font-bold text-foreground hover:bg-muted active:scale-[0.98] ${focusRing}`}
-        >
-          <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-          <span>{t("hadith.backToCurriculum") || "Back to curriculum"}</span>
-        </button>
+        {/* Top Action Bar */}
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
+            className={`inline-flex min-h-11 w-fit items-center gap-2 rounded-xl border border-border bg-card px-3.5 font-bold text-foreground shadow-wp-xs transition-colors hover:bg-muted active:scale-[0.98] ${focusRing}`}
+          >
+            <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
+            <span>{t("hadith.backToCurriculum") || "Back to curriculum"}</span>
+          </button>
+
+          <div className="flex flex-wrap items-center gap-2.5">
+            {savedProgress && (
+              <p
+                className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary"
+                role="status"
+              >
+                <Check className="size-3.5" aria-hidden />
+                <span>{t("hadith.progressRestored") || "Saved progress restored"}</span>
+              </p>
+            )}
+
+            <p className="rounded-full border border-border bg-card px-3 py-1 text-xs font-bold text-muted-foreground">
+              {t("hadith.lessonProgress", {
+                current: lesson.number,
+                total: HADITH_LESSONS.length,
+              }) || `Lesson ${lesson.number} of ${HADITH_LESSONS.length}`}
+            </p>
+          </div>
+        </div>
 
         {/* Lesson Header & Stepper */}
         <header className="rounded-3xl border border-border bg-card p-5 shadow-wp-sm sm:p-7">
-          <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
-            {t("hadith.badge", { number: lesson.number }) || `Hadith ${lesson.number} · B1`}
-          </p>
-          <h1 id="hadith-title" className="mt-2 text-3xl font-black tracking-tight sm:text-4xl">
-            {lesson.title}
-          </h1>
-          <p className="mt-2 text-sm font-bold text-muted-foreground">
-            {t("hadith.lessonProgress", { current: lesson.number, total: HADITH_LESSONS.length }) ||
-              `Lesson ${lesson.number} of ${HADITH_LESSONS.length}`}
-          </p>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
+                {t("hadith.badge", { number: lesson.number }) || `Hadith ${lesson.number} · B1`}
+              </p>
+              <h1
+                id="hadith-title"
+                className="mt-1.5 text-2xl font-black tracking-tight sm:text-3xl"
+              >
+                {lesson.title}
+              </h1>
+              {parsedStages.overview.purpose && (
+                <p className="mt-1.5 max-w-3xl text-sm font-semibold leading-relaxed text-muted-foreground">
+                  {parsedStages.overview.purpose}
+                </p>
+              )}
+            </div>
 
-          {savedProgress && (
-            <p className="mt-2 text-sm font-bold text-primary" role="status">
-              <Check className="me-1.5 inline size-4" aria-hidden />
-              {t("hadith.progressRestored") || "Saved progress restored"}
-            </p>
-          )}
-
-          <div className="mt-5">
-            <HadithOverviewSummary overview={parsedStages.overview} />
+            <details className="group shrink-0">
+              <summary
+                className={`inline-flex min-h-11 cursor-pointer list-none items-center gap-2 rounded-xl border border-border bg-background px-3.5 py-2 text-xs font-black text-foreground transition-colors hover:bg-muted ${focusRing}`}
+              >
+                <span>{t("hadith.lessonDetails") || "Lesson overview & goals"}</span>
+              </summary>
+              <div className="mt-3 sm:w-96">
+                <HadithOverviewSummary overview={parsedStages.overview} />
+              </div>
+            </details>
           </div>
 
           {/* Accessible responsive lesson stepper */}
@@ -227,7 +264,10 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
         <div ref={stageContainerRef} className="w-full">
           {stage === "read-listen" && (
             <div className="space-y-6">
-              <HadithWarmupStage warmup={parsedStages.warmup} />
+              <HadithWarmupStage
+                warmup={parsedStages.warmup}
+                onProceedToText={scrollToHadithText}
+              />
               <HadithReadListenStage
                 source={lesson.source}
                 onPlayAudio={playTrack}

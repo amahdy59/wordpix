@@ -14,6 +14,7 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
+import { useLessonUsage } from "../data/useLessonUsage";
 
 interface Props {
   step: number;
@@ -35,9 +36,14 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
   const queue = useDrillQueue(words);
+  const usageState = useLessonUsage(lessonId);
   const currentTargetWord = queue.current ?? words[0];
   usePrefetchImage(queue.next);
-  const richSentence = useMemo(() => getRichSentence(currentTargetWord), [currentTargetWord]);
+  const usage = usageState.status === "ready" ? usageState.data : null;
+  const richSentence = useMemo(
+    () => getRichSentence(currentTargetWord, usage, 1),
+    [currentTargetWord, usage]
+  );
   const answer = useMemo(() => richSentence.words, [richSentence]);
   const shuffled = useMemo(() => shuffleArray([...answer]), [answer]);
 
@@ -61,7 +67,12 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       setFeedback(correct ? "correct" : "incorrect");
       if (correct) playCorrect();
       else playIncorrect();
-      dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
+      dispatch({
+        type: "LESSON_ATTEMPT",
+        wordId: currentTargetWord.id,
+        correct,
+        dimension: "controlled-production",
+      });
       autoAdvance.schedule(correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect);
     },
     [answer, playCorrect, playIncorrect, dispatch, currentTargetWord.id, autoAdvance]

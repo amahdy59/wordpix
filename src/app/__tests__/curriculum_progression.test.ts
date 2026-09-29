@@ -214,10 +214,17 @@ describe("lesson and assessment progression", () => {
   });
 
   it("keeps the displayed story jump aligned with the actual beginner route", () => {
-    expect(getLessonSequence("A1")).toEqual(["listen", "recall", "fill", "quiz", "story"]);
-    expect(getStoryStepIndex("A1")).toBe(4);
+    expect(getLessonSequence("A1")).toEqual([
+      "listen",
+      "recall",
+      "fill",
+      "builder",
+      "quiz",
+      "story",
+    ]);
+    expect(getStoryStepIndex("A1")).toBe(5);
     expect(getStoryStepIndex("B1")).toBe(5);
-    expect(getStoryStepIndex("A1", false)).toBe(3);
+    expect(getStoryStepIndex("A1", false)).toBe(4);
   });
 
   it("prioritises new and due words in an eight-item practice set", () => {

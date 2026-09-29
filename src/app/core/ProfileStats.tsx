@@ -8,6 +8,12 @@ import {
   Brain,
   User as UserIcon,
   LogOut,
+  Eye,
+  Ear,
+  MessageSquareText,
+  PenLine,
+  Mic,
+  Route,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
@@ -18,6 +24,7 @@ import { staggerContainer, staggerItem } from "../shared/animations";
 import { LearnerAvatar } from "../shared/LearnerAvatar";
 import { useI18n } from "../context/I18nContext";
 import { Button, EmptyState, PageContainer, PageHeader, Surface } from "../shared";
+import { summarizeSkillMastery, type MasteryDimension } from "../../features/gamification/sm2";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -60,6 +67,43 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
     return memoryValues.filter((w) => !w.nextReviewAt || new Date(w.nextReviewAt).getTime() <= now)
       .length;
   }, [memoryValues]);
+
+  const skillSummaries = useMemo(() => summarizeSkillMastery(memoryValues), [memoryValues]);
+  const skillMeta: Record<
+    MasteryDimension,
+    { label: string; description: string; icon: typeof Eye }
+  > = {
+    "visual-recognition": {
+      label: t("profile.skillVisual"),
+      description: t("profile.skillVisualDesc"),
+      icon: Eye,
+    },
+    "listening-recognition": {
+      label: t("profile.skillListening"),
+      description: t("profile.skillListeningDesc"),
+      icon: Ear,
+    },
+    "contextual-comprehension": {
+      label: t("profile.skillContext"),
+      description: t("profile.skillContextDesc"),
+      icon: MessageSquareText,
+    },
+    "controlled-production": {
+      label: t("profile.skillGuidedProduction"),
+      description: t("profile.skillGuidedProductionDesc"),
+      icon: PenLine,
+    },
+    "spoken-production": {
+      label: t("profile.skillSpeaking"),
+      description: t("profile.skillSpeakingDesc"),
+      icon: Mic,
+    },
+    "independent-transfer": {
+      label: t("profile.skillTransfer"),
+      description: t("profile.skillTransferDesc"),
+      icon: Route,
+    },
+  };
 
   const STATS = [
     {
@@ -208,6 +252,72 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
             )}
           </motion.section>
         </div>
+
+        <motion.section variants={staggerItem} aria-labelledby="skill-mastery-heading">
+          <div className="mb-3">
+            <h2 id="skill-mastery-heading" className="font-sans text-lg font-bold text-foreground">
+              {t("profile.skillMasteryTitle")}
+            </h2>
+            <p className="mt-1 max-w-3xl font-sans text-sm leading-relaxed text-muted-foreground">
+              {t("profile.skillMasteryDescription")}
+            </p>
+          </div>
+          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+            {skillSummaries.map((summary) => {
+              const meta = skillMeta[summary.dimension];
+              const Icon = meta.icon;
+              return (
+                <Surface
+                  key={summary.dimension}
+                  variant="card"
+                  radius="lg"
+                  padding="sm"
+                  className="flex min-w-0 flex-col gap-3"
+                >
+                  <div className="flex items-start gap-3">
+                    <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-secondary text-primary">
+                      <Icon className="size-5" aria-hidden />
+                    </span>
+                    <div className="min-w-0">
+                      <h3 className="font-sans text-sm font-bold text-foreground">{meta.label}</h3>
+                      <p className="mt-1 font-sans text-xs leading-relaxed text-muted-foreground">
+                        {meta.description}
+                      </p>
+                    </div>
+                  </div>
+                  {summary.attempts > 0 ? (
+                    <div className="space-y-2">
+                      <div className="flex items-baseline justify-between gap-3 text-sm">
+                        <span className="font-semibold text-foreground">
+                          {t("profile.skillEvidence", {
+                            established: summary.establishedWords,
+                            practiced: summary.practicedWords,
+                          })}
+                        </span>
+                        <span className="font-black text-primary">
+                          {t("profile.skillAccuracy", { percent: summary.accuracy })}
+                        </span>
+                      </div>
+                      <progress
+                        value={summary.accuracy}
+                        max={100}
+                        aria-label={t("profile.skillProgressAria", {
+                          skill: meta.label,
+                          percent: summary.accuracy,
+                        })}
+                        className="h-2 w-full overflow-hidden rounded-full accent-primary"
+                      />
+                    </div>
+                  ) : (
+                    <p className="rounded-xl border border-border bg-secondary/40 p-3 font-sans text-xs font-semibold text-muted-foreground">
+                      {t("profile.skillNotPracticed")}
+                    </p>
+                  )}
+                </Surface>
+              );
+            })}
+          </div>
+        </motion.section>
       </motion.div>
     </PageContainer>
   );

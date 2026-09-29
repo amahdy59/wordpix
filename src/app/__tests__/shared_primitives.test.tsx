@@ -13,6 +13,7 @@ import {
   EmptyState,
   FeedbackPanel,
   ExerciseFamilyTemplate,
+  CurriculumTopicCard,
 } from "../shared";
 
 describe("Shared UI Primitives", () => {
@@ -302,6 +303,53 @@ describe("Shared UI Primitives", () => {
       expect(bar).toHaveAttribute("aria-valuenow", "65");
       expect(bar).toHaveAttribute("aria-label", "Overall course completion");
       expect(bar.firstElementChild?.className).toContain("bg-wp-green");
+    });
+  });
+
+  describe("CurriculumTopicCard", () => {
+    it("prioritizes image and title while keeping description in an accessible tooltip", () => {
+      const handleClick = vi.fn();
+      const { container } = render(
+        <CurriculumTopicCard
+          numberBadge={2}
+          levelBadge="B1"
+          title="Questions That Teach Religion"
+          imageSrc="/hadith/v1/images/sample.png"
+          tooltipText="Follow a question-and-answer conversation and understand key English vocabulary."
+          statusText="Approximately 25 minutes"
+          onClick={handleClick}
+        />
+      );
+
+      // Card renders as an article with no nested buttons
+      expect(screen.getByRole("article")).toBeInTheDocument();
+      expect(container.querySelectorAll("button button")).toHaveLength(0);
+
+      // Title and status are visible; tooltip text is not cluttering the card face initially
+      expect(screen.getByText("Questions That Teach Religion")).toBeInTheDocument();
+      expect(screen.getByText("Approximately 25 minutes")).toBeInTheDocument();
+      expect(screen.queryByRole("tooltip")).not.toBeInTheDocument();
+
+      // Focusing or clicking the info button reveals the accessible tooltip without firing card onClick
+      const infoBtn = screen.getByRole("button", {
+        name: /Topic overview/i,
+      });
+      fireEvent.click(infoBtn);
+      expect(handleClick).not.toHaveBeenCalled();
+
+      const tooltip = screen.getByRole("tooltip");
+      expect(tooltip).toHaveTextContent(
+        "Follow a question-and-answer conversation and understand key English vocabulary."
+      );
+
+      // Pressing Escape dismisses the tooltip (WCAG 1.4.13)
+      fireEvent.keyDown(infoBtn, { key: "Escape" });
+      expect(screen.queryByRole("tooltip")).not.toBeInTheDocument();
+
+      // Clicking the primary card button triggers onClick
+      const cardBtn = screen.getByRole("button", { name: /Questions That Teach Religion/i });
+      fireEvent.click(cardBtn);
+      expect(handleClick).toHaveBeenCalledTimes(1);
     });
   });
 });

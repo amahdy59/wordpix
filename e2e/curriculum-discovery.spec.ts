@@ -10,7 +10,8 @@ test("Hadith curriculum exposes all 42 lessons and opens the canonical source", 
 
   await expect(page.getByRole("heading", { name: "Hadith English curriculum" })).toBeVisible();
   const results = page.getByRole("tabpanel");
-  await expect(results.getByRole("button")).toHaveCount(42);
+  const lessonCards = results.getByRole("article");
+  await expect(lessonCards).toHaveCount(42);
   await expect(
     page.getByRole("heading", { name: "Foundations, intention, and clear choices" })
   ).toBeVisible();
@@ -26,10 +27,10 @@ test("Hadith curriculum exposes all 42 lessons and opens the canonical source", 
   );
   await expect(page.getByRole("heading", { name: "No Hadith lessons found" })).toBeVisible();
   await page.getByRole("tab", { name: "Due for review: 0" }).press("Home");
-  await expect(results.getByRole("button")).toHaveCount(42);
+  await expect(lessonCards).toHaveCount(42);
   const hadithScroller = page.getByRole("main");
   await expect(hadithScroller).toHaveCount(1);
-  const finalHadithLesson = results.getByRole("button").last();
+  const finalHadithLesson = lessonCards.last();
   await finalHadithLesson.scrollIntoViewIfNeeded();
   await expect(finalHadithLesson).toBeVisible();
   await page.getByRole("button", { name: /Actions and Intentions/ }).click();

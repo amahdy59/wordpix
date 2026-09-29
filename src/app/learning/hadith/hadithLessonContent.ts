@@ -54,8 +54,8 @@ export interface ParsedLessonStages {
 
 const FIGMA_NOISE: readonly RegExp[] = [
   /^progress$/i,
-  /^\d+\s+of\s+\d+\s+steps$/i,
-  /^\d+%\s+complete$/i,
+  /^\d+\s*(?:of|\/)\s*\d+.*$/i,
+  /^\d+%\s*complete$/i,
   /^\d+%$/i,
   /^begin lesson$/i,
   /^submit\s*&\s*continue$/i,
@@ -68,6 +68,17 @@ const FIGMA_NOISE: readonly RegExp[] = [
   /^complete translation/i,
   /^learner flow$/i,
   /^three simple steps to practice/i,
+  /^warm-up(?:\s+activity|\s+exercise)?$/i,
+  /^stage \d+ of \d+.*$/i,
+  /^think about this\.{0,3}$/i,
+  /^progress check$/i,
+  /^instructional focus$/i,
+  /^you are (?:in|on) the .* step.*$/i,
+  /^warm-up step complete$/i,
+  /^you have activated vocabulary knowledge.*$/i,
+  /^• focus is entirely lexical.*$/i,
+  /^hadith\s+\d+.*$/i,
+  /^you will study these verbs.*$/i,
 ];
 
 function isFigmaNoise(line: string): boolean {
@@ -155,53 +166,123 @@ function parseOverview(rawLines: readonly string[], lesson: FigmaHadithLesson): 
 
 function parseWarmup(rawLines: readonly string[], lesson: FigmaHadithLesson): ParsedWarmup {
   const lines = cleanLines(rawLines);
-  const title = lines[1] && lines[1].length < 80 ? lines[1] : "Notice Before Reading";
+  const titleCandidate =
+    lines[0] && !/^warm-up/i.test(lines[0]) ? lines[0] : (lines[1] ?? "Notice Before Reading");
+  const title = titleCandidate.length < 80 ? titleCandidate : "Notice Before Reading";
 
   const scenario =
-    lines.slice(1, 4).find((l) => l.length > 40) ??
+    lines.slice(1, 4).find((l) => l.length > 35) ??
     "Consider an everyday situation before reading the sacred text.";
 
   const prompt =
-    lines.slice(3, 7).find((l) => /think|reflect|notice|prompt/i.test(l) && l.length > 30) ??
-    "Notice how small details in intention and context shape meaning.";
+    lines
+      .slice(2, 6)
+      .find(
+        (l) =>
+          l !== scenario &&
+          !/^quick (?:poll|self-rating):/i.test(l) &&
+          !/^preview:/i.test(l) &&
+          l.length > 30
+      ) ?? `Connect your prior experience to the theme of ${lesson.title}.`;
 
-  const pollIdx = lines.findIndex(
-    (l) => /\?$/.test(l) || /poll|question|what changes|how familiar/i.test(l)
-  );
-  const question =
-    pollIdx >= 0 ? lines[pollIdx] : "Reflect on how this theme connects to everyday choices:";
+  const previewIdx = lines.findIndex((l) => /^preview:/i.test(l));
+  const prePreviewLines = previewIdx >= 0 ? lines.slice(0, previewIdx) : lines;
+
+  let qIdx = prePreviewLines.findIndex((l) => /^quick (?:poll|self-rating):/i.test(l));
+  if (qIdx < 0) {
+    qIdx = prePreviewLines.findIndex((l) => /classify the following/i.test(l));
+  }
+  if (qIdx < 0) {
+    for (let i = prePreviewLines.length - 1; i >= 1; i--) {
+      if (prePreviewLines[i].endsWith("?") && !prePreviewLines[i].includes("...")) {
+        qIdx = i;
+        break;
+      }
+    }
+  }
+
+  let question =
+    qIdx >= 0 ? prePreviewLines[qIdx] : "Reflect on how this theme connects to everyday choices:";
+  question = question.replace(/^quick (?:poll|self-rating):\s*/i, "").trim();
 
   let choices: string[] = [];
-  if (pollIdx >= 0) {
-    let i = pollIdx + 1;
-    while (
-      i < lines.length &&
-      choices.length < 4 &&
-      !/preview|useful expression|frame/i.test(lines[i])
-    ) {
-      if (lines[i].length > 3 && lines[i].length < 90) choices.push(lines[i]);
+  if (qIdx >= 0) {
+    let i = qIdx + 1;
+    while (i < prePreviewLines.length && choices.length < 4) {
+      const s = prePreviewLines[i];
+      if (
+        /^preview:/i.test(s) ||
+        /frame/i.test(s) ||
+        /^scenario\s+[a-z]:/i.test(s) ||
+        s.startsWith("-") ||
+        s.startsWith("–") ||
+        s.endsWith("?") ||
+        s.length < 3 ||
+        s.length > 95
+      ) {
+        break;
+      }
+      choices.push(s);
       i++;
     }
   }
+
   if (choices.length < 2) {
-    choices = [
-      "I can connect this easily to my experience",
-      "I can explain simple reasons with support",
-      "I prefer to listen and reflect first",
-    ];
+    if (/five pillars/i.test(question) || lesson.number === 3) {
+      choices = [
+        "I know the Five Pillars and their English terms well",
+        "I know the Five Pillars, but want to practice their English names",
+        "I am new to this topic — ready to learn the core vocabulary",
+      ];
+    } else if (/familiar|comfortable|rating|poll/i.test(question)) {
+      choices = [
+        "Very familiar — I know the core English concepts well",
+        "Somewhat familiar — I recognize them, but need English practice",
+        "New to me — I am ready to learn this foundational vocabulary",
+      ];
+    } else if (/change|intention|motive|reason/i.test(question)) {
+      choices = [
+        "Their inner motive or intention",
+        "The physical action or behavior",
+        "Nothing changes — both appear identical",
+      ];
+    } else {
+      choices = [
+        "I can connect this easily to my personal experience",
+        "I can explain simple reasons with support",
+        "I prefer to listen to the Hadith and reflect first",
+      ];
+    }
   }
 
   const frameIdx = lines.findIndex((l) => /frame/i.test(l));
   const frame = frameIdx >= 0 && frameIdx + 1 < lines.length ? lines[frameIdx + 1] : undefined;
 
-  const previewIdx = lines.findIndex((l) => /preview|useful/i.test(l));
   const previewTerms: PreviewTerm[] = [];
+  const seenTerms = new Set<string>();
   if (previewIdx >= 0) {
     let i = previewIdx + 1;
     while (i < lines.length && previewTerms.length < 5) {
-      if (lines[i].length < 35 && i + 1 < lines.length && lines[i + 1].length >= 10) {
-        previewTerms.push({ term: lines[i], meaning: lines[i + 1].replace(/^[-–]\s*/, "") });
-        i += 2;
+      const term = lines[i];
+      if (
+        term.length < 35 &&
+        !/^preview:/i.test(term) &&
+        !term.startsWith("-") &&
+        !term.startsWith("–") &&
+        i + 1 < lines.length
+      ) {
+        let meaning = lines[i + 1];
+        if (/^\((?:noun|verb|adjective|phrase)\)$/i.test(meaning) && i + 2 < lines.length) {
+          meaning = lines[i + 2];
+          i += 3;
+        } else {
+          i += 2;
+        }
+        const normKey = term.toLowerCase().trim();
+        if (!seenTerms.has(normKey)) {
+          seenTerms.add(normKey);
+          previewTerms.push({ term, meaning: meaning.replace(/^[-–]\s*/, "").trim() });
+        }
       } else {
         i++;
       }
@@ -215,7 +296,7 @@ function parseWarmup(rawLines: readonly string[], lesson: FigmaHadithLesson): Pa
     question,
     choices,
     frame,
-    feedback: `Keep this contrast in mind as you read and listen to Hadith ${lesson.number}.`,
+    feedback: `Great reflection. Keep the theme of "${lesson.title}" in mind as you read and listen to Hadith ${lesson.number}.`,
     previewTerms,
   };
 }

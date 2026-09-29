@@ -123,6 +123,7 @@ export function reducer(state: Screen, action: Action): Screen {
           wordId,
           correct: action.correct,
           answeredAt: new Date().toISOString(),
+          dimension: action.dimension,
         },
       ],
     };

@@ -73,4 +73,78 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
       expect(h).toBeGreaterThanOrEqual(44);
     }
   });
+
+  test("final retrieval keeps contextual transfer practice available before completion", async ({
+    page,
+  }) => {
+    test.setTimeout(60_000);
+    await page.setViewportSize({ width: 1280, height: 900 });
+    const errors: string[] = [];
+    page.on("console", (message) => {
+      if (message.type() === "error") errors.push(message.text());
+    });
+    page.on("pageerror", (error) => errors.push(error.message));
+
+    await page.addInitScript(() => {
+      localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
+    });
+    await page.goto("/#/learn/colors");
+    await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
+    await page
+      .getByRole("button", { name: /^Start lesson:/ })
+      .first()
+      .click();
+    await page.evaluate(() => {
+      window.location.hash = "/learn/colors/step-6";
+    });
+
+    await page.getByRole("button", { name: "Red", exact: true }).click();
+    await expect(page.getByRole("button", { name: "Purple", exact: true })).toBeVisible();
+    await page.getByRole("button", { name: "Purple", exact: true }).click();
+    await expect(page.getByRole("button", { name: "Indigo", exact: true })).toBeVisible();
+    await page.getByRole("button", { name: "Indigo", exact: true }).click();
+
+    await expect(page.getByRole("heading", { name: "Use the language yourself" })).toBeVisible();
+    await expect(
+      page.getByText(/Compare Red and Blue.*Which would you use for the heading/iu)
+    ).toBeVisible();
+    await expect(page.getByRole("button", { name: "Continue", exact: true })).toBeVisible();
+    await expect(page).toHaveURL(/step-6$/u);
+
+    const a11yScan = await new AxeBuilder({ page })
+      .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+      .analyze();
+    expect(a11yScan.violations).toEqual([]);
+    expect(errors).toEqual([]);
+  });
+
+  test("profile explains the six mastery dimensions without implying recognition is mastery", async ({
+    page,
+  }) => {
+    await page.addInitScript(() => {
+      localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "home" }));
+    });
+    await page.goto("/#/home");
+    await page.getByRole("button", { name: "Profile", exact: true }).click();
+
+    await expect(page.getByRole("heading", { name: "How you can use your words" })).toBeVisible();
+    for (const skill of [
+      "Visual recognition",
+      "Listening recognition",
+      "Context understanding",
+      "Guided production",
+      "Spoken production",
+      "Independent transfer",
+    ]) {
+      await expect(page.getByRole("heading", { name: skill, exact: true })).toBeVisible();
+    }
+    await expect(
+      page.getByText(/strong mastery also needs understanding and independent use/iu)
+    ).toBeVisible();
+
+    const a11yScan = await new AxeBuilder({ page })
+      .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+      .analyze();
+    expect(a11yScan.violations).toEqual([]);
+  });
 });

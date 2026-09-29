@@ -2,11 +2,83 @@ import { describe, it, expect } from "vitest";
 import {
   calculateSM2State,
   createInitialWordState,
+  getBalancedMasteryCategory,
   getDueWordsForReview,
+  normalizeWordLearningState,
+  recordMasteryEvidence,
+  summarizeSkillMastery,
   type WordLearningState,
 } from "../../features/gamification/sm2";
 
 describe("Phase 6: Spaced Repetition (SRS) Engine", () => {
+  it("migrates older word records into separate skill-mastery dimensions", () => {
+    const migrated = normalizeWordLearningState("ticket", {
+      exposures: 3,
+      mastery: "familiar",
+    });
+    expect(migrated.skillMastery?.["visual-recognition"].mastery).toBe("new");
+    expect(migrated.skillMastery?.["independent-transfer"].attempts).toBe(0);
+  });
+
+  it("tracks contextual and productive evidence separately", () => {
+    const initial = createInitialWordState("ticket");
+    const contextual = recordMasteryEvidence(
+      initial,
+      "contextual-comprehension",
+      3,
+      3,
+      new Date("2026-08-24T12:00:00Z")
+    );
+    const produced = recordMasteryEvidence(contextual, "controlled-production", 1, 2);
+
+    expect(produced.skillMastery?.["contextual-comprehension"].mastery).toBe("familiar");
+    expect(produced.skillMastery?.["controlled-production"].mastery).toBe("learning");
+    expect(produced.skillMastery?.["visual-recognition"].mastery).toBe("new");
+  });
+
+  it("summarizes learner-facing evidence by skill without blending dimensions", () => {
+    const visual = recordMasteryEvidence(
+      createInitialWordState("ticket"),
+      "visual-recognition",
+      2,
+      3
+    );
+    const contextual = recordMasteryEvidence(
+      createInitialWordState("gate"),
+      "contextual-comprehension",
+      3,
+      3
+    );
+    const summaries = summarizeSkillMastery([visual, contextual]);
+
+    expect(summaries.find((summary) => summary.dimension === "visual-recognition")).toMatchObject({
+      attempts: 3,
+      correct: 2,
+      practicedWords: 1,
+      accuracy: 67,
+    });
+    expect(
+      summaries.find((summary) => summary.dimension === "contextual-comprehension")
+    ).toMatchObject({ attempts: 3, correct: 3, practicedWords: 1, establishedWords: 1 });
+    expect(summaries.find((summary) => summary.dimension === "spoken-production")).toMatchObject({
+      attempts: 0,
+      practicedWords: 0,
+    });
+  });
+
+  it("does not call a word strong without comprehension, production, and transfer evidence", () => {
+    const recognitionOnly = {
+      ...createInitialWordState("ticket"),
+      mastery: "strong" as const,
+    };
+    expect(getBalancedMasteryCategory(recognitionOnly)).toBe("familiar");
+
+    const contextual = recordMasteryEvidence(recognitionOnly, "contextual-comprehension", 3, 3);
+    const production = recordMasteryEvidence(contextual, "controlled-production", 3, 3);
+    const transfer = recordMasteryEvidence(production, "independent-transfer", 3, 3);
+    expect(getBalancedMasteryCategory(transfer)).toBe("strong");
+  });
+
   it("initializes new word state with zero intervals and standard ease factor", () => {
     const word = createInitialWordState("pillow");
     expect(word.wordId).toBe("pillow");

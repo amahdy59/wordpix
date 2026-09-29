@@ -32,6 +32,8 @@ import { useI18n } from "../context/I18nContext";
 import { loadLessonUsage } from "../data/usageRegistry";
 import type { LessonUsageData } from "../data/usageTypes";
 import { loadLessonStory } from "../data/lessonStoryLoader";
+import { rotateOptions } from "../data/lessonContext";
+import { LessonTransferPractice } from "./LessonTransferPractice";
 
 interface Props {
   step: number;
@@ -94,8 +96,8 @@ export const ExerciseStory = memo(function ExerciseStory({
   const currentPassage =
     passage?.lessonId === lessonId && passage.attempt === storyAttempt ? passage : null;
   const storyText =
-    (currentPassage?.status === "ready" ? currentPassage.text : undefined) ||
     usageData?.reading?.text ||
+    (currentPassage?.status === "ready" ? currentPassage.text : undefined) ||
     "No reading material available for this lesson yet. Stay tuned!";
   const [activeSection, setActiveSection] = useState<ContextSection>("passage");
   const [activeWordId, setActiveWordId] = useState<string | null>(null);
@@ -125,8 +127,8 @@ export const ExerciseStory = memo(function ExerciseStory({
 
   // Retrieve or generate 3-passage story & comprehension quiz
   const storyBundle = useMemo(() => {
-    return getOrGenerateStoryBundle(group.id, group.name, words);
-  }, [group.id, group.name, words]);
+    return getOrGenerateStoryBundle(group.id, group.name, words, usageData);
+  }, [group.id, group.name, usageData, words]);
 
   const wordMap = useMemo(() => {
     const map = new Map<string, VocabularyItem>();
@@ -236,6 +238,16 @@ export const ExerciseStory = memo(function ExerciseStory({
 
         const q = storyBundle.quiz.find((q) => q.id === questionId);
         if (q) {
+          const questionIndex = storyBundle.quiz.findIndex((item) => item.id === questionId);
+          const assessedWord = words[Math.max(0, questionIndex) % Math.max(1, words.length)];
+          if (assessedWord) {
+            dispatch({
+              type: "LESSON_ATTEMPT",
+              wordId: assessedWord.id,
+              correct: q.correctIndex === optionIdx,
+              dimension: "independent-transfer",
+            });
+          }
           if (q.correctIndex === optionIdx) {
             playCorrectSound();
           } else {
@@ -251,7 +263,7 @@ export const ExerciseStory = memo(function ExerciseStory({
         };
       });
     },
-    [storyBundle.quiz, speak]
+    [dispatch, storyBundle.quiz, speak, words]
   );
 
   // Keyboard number hotkeys (1, 2, 3, 4) for active quiz question
@@ -758,6 +770,10 @@ export const ExerciseStory = memo(function ExerciseStory({
                       usageData.usage.scenes[activeChunkIndex] || usageData.usage.scenes[0];
                     if (!currentChunk) return null;
                     const answered = chunkAnswers[activeChunkIndex] !== undefined;
+                    const chunkOptions = rotateOptions(
+                      currentChunk.check.options,
+                      usageData.globalOrder + activeChunkIndex
+                    );
 
                     return (
                       <div className="flex flex-col gap-4 mt-1">
@@ -825,7 +841,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                             </p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
-                              {currentChunk.check.options.map((opt) => {
+                              {chunkOptions.map((opt) => {
                                 const isSelected = chunkAnswers[activeChunkIndex] === opt;
                                 const isCorrectOption = opt === currentChunk.check.expectedAnswer;
 
@@ -1066,33 +1082,37 @@ export const ExerciseStory = memo(function ExerciseStory({
                       <span className="text-xs font-sans font-bold text-primary">
                         {passage.title}
                       </span>
-                      <span
-                        className="text-[11px] font-arabic font-semibold text-muted-foreground"
-                        dir="rtl"
-                      >
-                        {passage.titleArabic}
-                      </span>
+                      {passage.titleArabic && (
+                        <span
+                          className="text-[11px] font-arabic font-semibold text-muted-foreground"
+                          dir="rtl"
+                        >
+                          {passage.titleArabic}
+                        </span>
+                      )}
                     </div>
 
                     <div className="flex items-center gap-1.5">
-                      <button
-                        type="button"
-                        onClick={() => toggleTranslation(idx)}
-                        aria-label={t("story.toggleArabicTranslation")}
-                        className={
-                          "flex items-center gap-1 px-2.5 py-1 min-h-[44px] rounded-xl font-sans font-semibold text-xs border transition-colors cursor-pointer " +
-                          (expandedTranslations[idx]
-                            ? "bg-primary/10 text-primary border-primary/30"
-                            : "bg-secondary text-muted-foreground border-border hover:text-foreground")
-                        }
-                      >
-                        <Languages className="size-3.5" />
-                        <span>
-                          {expandedTranslations[idx]
-                            ? t("story.hideArabic")
-                            : t("story.showArabic")}
-                        </span>
-                      </button>
+                      {passage.textArabic && (
+                        <button
+                          type="button"
+                          onClick={() => toggleTranslation(idx)}
+                          aria-label={t("story.toggleArabicTranslation")}
+                          className={
+                            "flex items-center gap-1 px-2.5 py-1 min-h-[44px] rounded-xl font-sans font-semibold text-xs border transition-colors cursor-pointer " +
+                            (expandedTranslations[idx]
+                              ? "bg-primary/10 text-primary border-primary/30"
+                              : "bg-secondary text-muted-foreground border-border hover:text-foreground")
+                          }
+                        >
+                          <Languages className="size-3.5" />
+                          <span>
+                            {expandedTranslations[idx]
+                              ? t("story.hideArabic")
+                              : t("story.showArabic")}
+                          </span>
+                        </button>
+                      )}
 
                       <button
                         type="button"
@@ -1111,7 +1131,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                   </p>
 
                   {/* Optional Collapsible Arabic Translation */}
-                  {expandedTranslations[idx] && (
+                  {expandedTranslations[idx] && passage.textArabic && (
                     <div
                       className="bg-secondary/60 border border-border rounded-2xl p-3.5 mt-1 animate-fadeIn"
                       dir="rtl"
@@ -1124,6 +1144,8 @@ export const ExerciseStory = memo(function ExerciseStory({
                 </article>
               ))}
             </div>
+
+            {usageData && <LessonTransferPractice usage={usageData} />}
           </div>
         )}
 
