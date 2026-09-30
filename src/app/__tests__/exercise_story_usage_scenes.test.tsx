@@ -2,6 +2,7 @@ import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { ExerciseStory } from "../exercises/ExerciseStory";
 import { COURSE_UNITS, type VocabularyItem } from "../data/lessons";
+import { loadUnitVocabulary } from "../data/vocabulary";
 
 const mockFarmWords: VocabularyItem[] = [
   {
@@ -31,64 +32,15 @@ const mockFarmWords: VocabularyItem[] = [
 ];
 
 describe("ExerciseStory — Curriculum Usage Scenes Integration", () => {
-  it("renders authentic Usage Scenes tab and scenario chunks for lessons with curriculum data", async () => {
+  it("keeps an unapproved usage package out of the learner experience", async () => {
     const dispatch = vi.fn();
 
     render(<ExerciseStory step={5} words={mockFarmWords} lessonId="farm-1" dispatch={dispatch} />);
 
-    // Wait for async lazy-load of farm usage data
     await waitFor(() => {
-      expect(screen.getByText(/3\. Usage Scenes/i)).toBeInTheDocument();
+      expect(screen.getByRole("button", { name: /3\. Dialogue/i })).toBeInTheDocument();
     });
-
-    // Click the Usage Scenes tab
-    const usageTab = screen.getByRole("button", { name: /3\. Usage Scenes/i });
-    fireEvent.click(usageTab);
-
-    // Goal and Can-Do statement are displayed
-    expect(screen.getByText(/Lesson Mission/i)).toBeInTheDocument();
-    expect(
-      screen.getByText(/Use the vocabulary from The Farm to understand and communicate/i)
-    ).toBeInTheDocument();
-
-    // Chunk stepper buttons are present
-    const chunk1Btn = screen.getByRole("tab", { name: /Chunk 1 of 5/i });
-    const chunk2Btn = screen.getByRole("tab", { name: /Chunk 2 of 5/i });
-    expect(chunk1Btn).toBeInTheDocument();
-    expect(chunk2Btn).toBeInTheDocument();
-
-    // Chunk 1 scenario text and check question are displayed
-    expect(
-      screen.getAllByText(
-        /The farmer checks on the cow, pig, and chicken during the morning round/i
-      ).length
-    ).toBeGreaterThan(0);
-    expect(
-      screen.getByText(/Which target word best matches the key detail in this scene\?/i)
-    ).toBeInTheDocument();
-
-    // Target word buttons are present
-    const cowOption = screen.getByRole("button", { name: /^Cow$/i });
-    const pigOption = screen.getByRole("button", { name: /^Pig$/i });
-    expect(cowOption).toBeInTheDocument();
-    expect(pigOption).toBeInTheDocument();
-
-    // Answer the question by clicking Cow
-    fireEvent.click(cowOption);
-
-    // Check that Cow option now has success indication
-    expect(cowOption).toHaveClass("bg-feedback-success-surface");
-
-    // Switch to Chunk 2
-    fireEvent.click(chunk2Btn);
-
-    // Chunk 2 target words and scenario are displayed
-    expect(
-      screen.getAllByText(
-        /The farmer checks on the horse, sheep, and goat during the morning round/i
-      ).length
-    ).toBeGreaterThan(0);
-    expect(screen.getByRole("button", { name: /^Horse$/i })).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /3\. Usage Scenes/i })).not.toBeInTheDocument();
   });
 
   it("gracefully falls back to dialogue for lessons without curriculum usage JSON", async () => {
@@ -117,5 +69,28 @@ describe("ExerciseStory — Curriculum Usage Scenes Integration", () => {
 
     // Casual dialogue title is displayed
     expect(screen.getByText(/Casual Conversation Practice \(Alex & Sam\)/i)).toBeInTheDocument();
+  });
+
+  it("holds a dictionary-reviewed phrase until its whole lesson is approved", async () => {
+    const dispatch = vi.fn();
+    const socialGroup = COURSE_UNITS["social-situations"].groups[0];
+    const socialWords = await loadUnitVocabulary("social-situations");
+    const lessonWords = socialGroup.wordIds
+      .map((wordId) => socialWords.find((word) => word.id === wordId))
+      .filter((word): word is VocabularyItem => Boolean(word));
+
+    render(
+      <ExerciseStory
+        step={5}
+        words={lessonWords}
+        lessonId="social-situations-1"
+        dispatch={dispatch}
+      />
+    );
+
+    expect(await screen.findByRole("button", { name: /3\. Dialogue/i })).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /3\. Usage Scenes/i })).not.toBeInTheDocument();
+    expect(screen.queryByText(/^break the ice$/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/^Dictionary reviewed$/i)).not.toBeInTheDocument();
   });
 });

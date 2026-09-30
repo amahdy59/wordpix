@@ -16,6 +16,7 @@ import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { motion, AnimatePresence } from "framer-motion";
 import { useI18n } from "../context/I18nContext";
+import { ImmersiveImageChoiceGrid } from "../shared/ImmersiveImageChoiceGrid";
 
 interface Props {
   step: number;
@@ -224,11 +225,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 : "Choose the picture you hear."}
           </p>
         </div>
-        <div
-          role="group"
-          aria-label="Choose matching picture for audio prompt"
-          className="grid min-h-0 w-full flex-1 auto-rows-fr grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4 lg:grid-rows-1 xl:gap-6"
-        >
+        <ImmersiveImageChoiceGrid aria-label="Choose matching picture for audio prompt">
           {displayCards.map((card, idx) => {
             const isSelected = selectedId === card.id;
             const isRevealedAnswer = feedback === "incorrect" && card.id === currentTargetWord.id;
@@ -328,7 +325,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
               </motion.button>
             );
           })}
-        </div>
+        </ImmersiveImageChoiceGrid>
 
         {/* Continue strip — replaces old AnswerFeedback bar */}
         <AnimatePresence>

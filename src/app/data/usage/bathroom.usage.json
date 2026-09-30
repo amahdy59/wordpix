@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "bathroom-1",
     "lessonName": "Fixtures & Fittings",
@@ -23,7 +23,7 @@
     ],
     "targetWordsArabic": [
       "حَوْضُ الاسْتِحْمَام (بَانْيُو)",
-      "دُشُّ الشَّاطِئ (مِرَشَّةُ الاسْتِحْمَامِ السَّاحِلِيَّة)",
+      "دُشّ (مِرَشَّةُ الاسْتِحْمَام)",
       "مِرْحَاض",
       "حَوْضُ الغَسِيل",
       "صنبور",
@@ -34,96 +34,110 @@
       "بَلَاط (سِيرَامِيك الحَمَّام)"
     ],
     "usage": {
-      "goal": "Name bathroom objects, personal-care items, and simple bathroom actions.",
-      "canDoStatement": "I can name bathroom objects, personal-care items, and simple bathroom actions",
+      "goal": "Recognize and use common the bathroom vocabulary in practical everyday situations.",
+      "canDoStatement": "I can understand and use common the bathroom words in a simple situation",
       "textType": "Mini story / visual reading",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bathtub", "Shower", "Toilet"],
-          "scenario": "In the bathroom, I can see or use bathtub, shower, and toilet.",
+          "scenario": "The shower is above the bathtub, and the toilet is beside it.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What is above the bathtub?",
             "options": ["Bathtub", "Shower", "Toilet"],
-            "expectedAnswer": "Bathtub"
+            "expectedAnswer": "Shower"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use bathtub, shower, and toilet. Emphasize bathtub, shower, and toilet and avoid clutter."
+          "imageBrief": "A clean bathroom showing a shower above a bathtub and a toilet beside the bathtub."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sink", "Faucet", "Drain"],
-          "scenario": "In the bathroom, I can see or use sink, faucet, and drain.",
+          "scenario": "Water runs from the faucet into the sink and goes down the drain.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Where does the water go after it enters the sink?",
             "options": ["Sink", "Faucet", "Drain"],
-            "expectedAnswer": "Sink"
+            "expectedAnswer": "Drain"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use sink, faucet, and drain. Emphasize sink, faucet, and drain and avoid clutter."
+          "imageBrief": "A close view of water running from a faucet into a sink and flowing toward the visible drain."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Mirror", "Towel Rack", "Cabinet"],
-          "scenario": "In the bathroom, I can see or use mirror, towel rack, and cabinet.",
+          "scenario": "Rami looks in the mirror while a clean towel hangs on the towel rack beside the cabinet.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Rami look in?",
             "options": ["Mirror", "Towel Rack", "Cabinet"],
             "expectedAnswer": "Mirror"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use mirror, towel rack, and cabinet. Emphasize mirror, towel rack, and cabinet and avoid clutter."
+          "imageBrief": "An adult facing a mirror, with a towel on a rack and a bathroom cabinet nearby."
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Tiles",
-          "scenario": "In the bathroom, I can see or use tiles.",
+          "targetWords": ["Tiles"],
+          "scenario": "The blue tiles make the bathroom wall easy to clean.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": "Tiles",
+            "question": "What covers the bathroom wall?",
+            "options": ["Tiles"],
             "expectedAnswer": "Tiles"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use tiles. Emphasize tiles and avoid clutter."
+          "imageBrief": "A clean bathroom wall clearly covered with blue ceramic tiles."
         }
       ]
     },
     "reading": {
-      "title": "The Bathroom Mini Story",
-      "text": "I am in the bathroom. I can see bathtub, shower, and toilet. I also notice sink, faucet, and drain. I point to each item and say its English name. Then I use one more word: mirror. We also remember earlier words such as books and photo album.",
-      "imageBrief": "One uncluttered the bathroom scene supporting the reading and showing the first six target words."
+      "title": "A Quick Bathroom Check",
+      "text": "Rami checks the bathroom before a guest arrives. The shower and bathtub are clean. Water runs from the faucet into the sink and down the drain. A towel hangs on the towel rack, and supplies are inside the cabinet. He wipes the mirror and checks the tiles.",
+      "imageBrief": "Show the main adult everyday situation from “A Quick Bathroom Check” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Bathtub"
+        "prompt": "What is above the bathtub?",
+        "answer": "Shower",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-1-scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Sink"
+        "prompt": "Where does the water go after it enters the sink?",
+        "answer": "Drain",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-1-scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Mirror"
+        "prompt": "What does Rami look in?",
+        "answer": "Mirror",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-1-scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Tiles"
+        "prompt": "What covers the bathroom wall?",
+        "answer": "Tiles",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-1-scene-4"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Bathtub"
+        "prompt": "Use “Bathtub” in one short sentence about an everyday situation.",
+        "answer": "The shower is above the bathtub, and the toilet is beside it.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "bathroom-1-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Shower"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Drain"
+        "prompt": "Name another lesson word that can be used with “Tiles” in the same situation.",
+        "answer": "Tiles",
+        "questionType": "transfer",
+        "responseMode": "short-answer",
+        "contextTag": "bathroom-1-transfer"
       }
     ],
     "video": {
-      "title": "The Bathroom: See It, Say It",
-      "idea": "30–50 second contextual video set in a bathroom. Show bathtub, shower, toilet, sink, and faucet naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see bathtub, shower, and toilet. What can you find next?"
+      "title": "Fixtures & Fittings: Words in Action",
+      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
+      "scriptStarter": "The shower is above the bathtub, and the toilet is beside it."
     },
     "spacedReview": "1 lesson(s) back: Books, Photo Album from bedroom-4\n3 lesson(s) back: Pillowcase, Comforter from bedroom-2\n7 lesson(s) back: Mother, Father from family-1"
   },
@@ -162,96 +176,110 @@
       "مزيل عرق"
     ],
     "usage": {
-      "goal": "Name bathroom objects, personal-care items, and simple bathroom actions.",
-      "canDoStatement": "I can name bathroom objects, personal-care items, and simple bathroom actions",
+      "goal": "Recognize and use common the bathroom vocabulary in practical everyday situations.",
+      "canDoStatement": "I can understand and use common the bathroom words in a simple situation",
       "textType": "Mini story / visual reading",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Soap", "Shampoo", "Conditioner"],
-          "scenario": "In the bathroom, I can see or use soap, shampoo, and conditioner.",
+          "scenario": "Nour washes her hair with shampoo, then uses conditioner; the soap stays by the sink.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Nour use after shampoo?",
             "options": ["Soap", "Shampoo", "Conditioner"],
-            "expectedAnswer": "Soap"
+            "expectedAnswer": "Conditioner"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use soap, shampoo, and conditioner. Emphasize soap, shampoo, and conditioner and avoid clutter."
+          "imageBrief": "An adult shower routine with shampoo and conditioner bottles in use and a bar of soap by the sink."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Toothbrush", "Toothpaste", "Towel"],
-          "scenario": "In the bathroom, I can see or use toothbrush, toothpaste, and towel.",
+          "scenario": "After brushing, Sami puts the toothbrush beside the toothpaste and dries his face with a towel.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Sami use to dry his face?",
             "options": ["Toothbrush", "Toothpaste", "Towel"],
-            "expectedAnswer": "Toothbrush"
+            "expectedAnswer": "Towel"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use toothbrush, toothpaste, and towel. Emphasize toothbrush, toothpaste, and towel and avoid clutter."
+          "imageBrief": "An adult holding a towel near a sink, with a toothbrush and toothpaste together on the counter."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Comb", "Hairbrush", "Lotion"],
-          "scenario": "In my bathroom routine, I comb, then hairbrush, then lotion.",
+          "scenario": "Leila uses a comb for the ends of her hair, a hairbrush for the rest, and lotion for her hands.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Leila put on her hands?",
             "options": ["Comb", "Hairbrush", "Lotion"],
-            "expectedAnswer": "Comb"
+            "expectedAnswer": "Lotion"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In my bathroom routine, I comb, then hairbrush, then lotion. Emphasize comb, hairbrush, and lotion and avoid clutter."
+          "imageBrief": "An adult applying lotion to one hand; a comb and hairbrush are clearly visible on the counter."
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Deodorant",
-          "scenario": "In the bathroom, I can see or use deodorant.",
+          "targetWords": ["Deodorant"],
+          "scenario": "Before work, Kareem uses deodorant after his shower.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": "Deodorant",
+            "question": "What does Kareem use after his shower?",
+            "options": ["Deodorant"],
             "expectedAnswer": "Deodorant"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use deodorant. Emphasize deodorant and avoid clutter."
+          "imageBrief": "An adult completing a morning routine and holding an unbranded deodorant container."
         }
       ]
     },
     "reading": {
-      "title": "The Bathroom Mini Story",
-      "text": "I am in the bathroom. I can see soap, shampoo, and conditioner. I also notice toothbrush, toothpaste, and towel. I point to each item and say its English name. Then I use one more word: comb. We also remember earlier words such as bathtub and shower.",
-      "imageBrief": "One uncluttered the bathroom scene supporting the reading and showing the first six target words."
+      "title": "Nour's Morning Routine",
+      "text": "Nour washes her hair with shampoo and conditioner. She brushes her teeth with a toothbrush and toothpaste, then dries her face with a towel. She uses a comb and hairbrush before applying lotion. Her deodorant is the last item she uses before leaving for work.",
+      "imageBrief": "Show the main adult everyday situation from “Nour's Morning Routine” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Soap"
+        "prompt": "What does Nour use after shampoo?",
+        "answer": "Conditioner",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-2-scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Toothbrush"
+        "prompt": "What does Sami use to dry his face?",
+        "answer": "Towel",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-2-scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Comb"
+        "prompt": "What does Leila put on her hands?",
+        "answer": "Lotion",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-2-scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Deodorant"
+        "prompt": "What does Kareem use after his shower?",
+        "answer": "Deodorant",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-2-scene-4"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Soap"
+        "prompt": "Use “Soap” in one short sentence about an everyday situation.",
+        "answer": "Nour washes her hair with shampoo, then uses conditioner; the soap stays by the sink.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "bathroom-2-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Shampoo"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Towel"
+        "prompt": "Name another lesson word that can be used with “Deodorant” in the same situation.",
+        "answer": "Deodorant",
+        "questionType": "transfer",
+        "responseMode": "short-answer",
+        "contextTag": "bathroom-2-transfer"
       }
     ],
     "video": {
-      "title": "The Bathroom: See It, Say It",
-      "idea": "30–50 second contextual video set in a bathroom. Show soap, shampoo, conditioner, toothbrush, and toothpaste naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see soap, shampoo, and conditioner. What can you find next?"
+      "title": "Toiletries: Words in Action",
+      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
+      "scriptStarter": "Nour washes her hair with shampoo, then uses conditioner; the soap stays by the sink."
     },
     "spacedReview": "1 lesson(s) back: Bathtub, Shower from bathroom-1\n3 lesson(s) back: Alarm Clock, Picture Frame from bedroom-3\n7 lesson(s) back: Youngest Child, Middle Child from family-2"
   },
@@ -290,96 +318,110 @@
       "مِقْيَاسُ الحَرَارَة (تِرْمُومِتْر)"
     ],
     "usage": {
-      "goal": "Name bathroom objects, personal-care items, and simple bathroom actions.",
-      "canDoStatement": "I can name bathroom objects, personal-care items, and simple bathroom actions",
+      "goal": "Recognize and use common the bathroom vocabulary in practical everyday situations.",
+      "canDoStatement": "I can understand and use common the bathroom words in a simple situation",
       "textType": "Mini story / visual reading",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Toilet Paper", "Cotton Balls", "Cotton Swab"],
-          "scenario": "In the bathroom, I can see or use toilet paper, cotton balls, and cotton swab.",
+          "scenario": "A roll of toilet paper is beside a jar of cotton balls and a small pack of cotton swabs.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which item is on a roll?",
             "options": ["Toilet Paper", "Cotton Balls", "Cotton Swab"],
             "expectedAnswer": "Toilet Paper"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use toilet paper, cotton balls, and cotton swab. Emphasize toilet paper, cotton balls, and cotton swab and avoid clutter."
+          "imageBrief": "A bathroom shelf with one toilet-paper roll, a clear jar of cotton balls, and a small pack of cotton swabs."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Razor", "Nail Clipper", "Hair Dryer"],
-          "scenario": "In the bathroom, I can see or use razor, nail clipper, and hair dryer.",
+          "scenario": "After shaving with a razor, Amir uses the nail clipper; the hair dryer stays unplugged.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Amir use for shaving?",
             "options": ["Razor", "Nail Clipper", "Hair Dryer"],
             "expectedAnswer": "Razor"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use razor, nail clipper, and hair dryer. Emphasize razor, nail clipper, and hair dryer and avoid clutter."
+          "imageBrief": "A safe grooming scene with an adult using a razor, a nail clipper nearby, and an unplugged hair dryer."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Scale", "Laundry Basket", "First Aid Kit"],
-          "scenario": "In the bathroom, I can see or use scale, laundry basket, and first aid kit.",
+          "scenario": "The scale is on the floor, the laundry basket holds clothes, and the first aid kit is in the cabinet.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What holds the clothes?",
             "options": ["Scale", "Laundry Basket", "First Aid Kit"],
-            "expectedAnswer": "Scale"
+            "expectedAnswer": "Laundry Basket"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use scale, laundry basket, and first aid kit. Emphasize scale, laundry basket, and first aid kit and avoid clutter."
+          "imageBrief": "A bathroom with a floor scale, a laundry basket containing clothes, and an open cabinet with a first aid kit."
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Thermometer",
-          "scenario": "In the bathroom, I can see or use thermometer.",
+          "targetWords": ["Thermometer"],
+          "scenario": "Mona checks her temperature with a thermometer because she feels unwell.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": "Thermometer",
+            "question": "What does Mona use to check her temperature?",
+            "options": ["Thermometer"],
             "expectedAnswer": "Thermometer"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use thermometer. Emphasize thermometer and avoid clutter."
+          "imageBrief": "An adult safely using a digital thermometer in a home bathroom."
         }
       ]
     },
     "reading": {
-      "title": "The Bathroom Mini Story",
-      "text": "I am in the bathroom. I can see toilet paper, cotton balls, and cotton swab. I also notice razor, nail clipper, and hair dryer. I point to each item and say its English name. Then I use one more word: scale. We also remember earlier words such as soap and shampoo.",
-      "imageBrief": "One uncluttered the bathroom scene supporting the reading and showing the first six target words."
+      "title": "Getting Ready Safely",
+      "text": "Amir keeps bathroom supplies in clear places. Toilet paper, cotton balls, and a cotton swab are on a shelf. His razor, nail clipper, and hair dryer are in a drawer. The scale is on the floor, clean clothes are in the laundry basket, and the first aid kit is in the cabinet.",
+      "imageBrief": "Show the main adult everyday situation from “Getting Ready Safely” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Toilet Paper"
+        "prompt": "Which item is on a roll?",
+        "answer": "Toilet Paper",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-3-scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Razor"
+        "prompt": "What does Amir use for shaving?",
+        "answer": "Razor",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-3-scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Scale"
+        "prompt": "What holds the clothes?",
+        "answer": "Laundry Basket",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-3-scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Thermometer"
+        "prompt": "What does Mona use to check her temperature?",
+        "answer": "Thermometer",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-3-scene-4"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Toilet Paper"
+        "prompt": "Use “Toilet Paper” in one short sentence about an everyday situation.",
+        "answer": "A roll of toilet paper is beside a jar of cotton balls and a small pack of cotton swabs.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "bathroom-3-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Cotton Balls"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Hair Dryer"
+        "prompt": "Name another lesson word that can be used with “Thermometer” in the same situation.",
+        "answer": "Thermometer",
+        "questionType": "transfer",
+        "responseMode": "short-answer",
+        "contextTag": "bathroom-3-transfer"
       }
     ],
     "video": {
-      "title": "The Bathroom: See It, Say It",
-      "idea": "30–50 second contextual video set in a bathroom. Show toilet paper, cotton balls, cotton swab, razor, and nail clipper naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see toilet paper, cotton balls, and cotton swab. What can you find next?"
+      "title": "Bathroom Supplies: Words in Action",
+      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
+      "scriptStarter": "A roll of toilet paper is beside a jar of cotton balls and a small pack of cotton swabs."
     },
     "spacedReview": "1 lesson(s) back: Soap, Shampoo from bathroom-2\n3 lesson(s) back: Books, Photo Album from bedroom-4\n7 lesson(s) back: Love, Trust from family-3"
   },
@@ -418,96 +460,110 @@
       "سَائِلُ الاسْتِحْمَام (جِل الاسْتِحْمَام)"
     ],
     "usage": {
-      "goal": "Name bathroom objects, personal-care items, and simple bathroom actions.",
-      "canDoStatement": "I can name bathroom objects, personal-care items, and simple bathroom actions",
+      "goal": "Recognize and use common the bathroom vocabulary in practical everyday situations.",
+      "canDoStatement": "I can understand and use common the bathroom words in a simple situation",
       "textType": "Mini story / visual reading",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bath Mat", "Shower Curtain", "Shower Head"],
-          "scenario": "In the bathroom, I can see or use bath mat, shower curtain, and shower head.",
+          "scenario": "The bath mat is outside the shower curtain, directly below the shower head.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What is on the floor outside the shower?",
             "options": ["Bath Mat", "Shower Curtain", "Shower Head"],
             "expectedAnswer": "Bath Mat"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use bath mat, shower curtain, and shower head. Emphasize bath mat, shower curtain, and shower head and avoid clutter."
+          "imageBrief": "A shower area with a shower curtain, shower head, and bath mat clearly positioned outside on the floor."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bath Towel", "Hand Towel", "Washcloth"],
-          "scenario": "In the bathroom, I can see or use bath towel, hand towel, and washcloth.",
+          "scenario": "After her shower, Dina uses the bath towel; a hand towel and washcloth remain by the sink.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Dina use after her shower?",
             "options": ["Bath Towel", "Hand Towel", "Washcloth"],
             "expectedAnswer": "Bath Towel"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use bath towel, hand towel, and washcloth. Emphasize bath towel, hand towel, and washcloth and avoid clutter."
+          "imageBrief": "An adult wrapping up in a bath towel, with a smaller hand towel and washcloth beside the sink."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Soap Dish", "Shampoo Bottle", "Rubber Duck"],
-          "scenario": "In the bathroom, I can see or use soap dish, shampoo bottle, and rubber duck.",
+          "scenario": "The soap sits in the soap dish beside the shampoo bottle, while a rubber duck floats in the bath.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Where is the soap?",
             "options": ["Soap Dish", "Shampoo Bottle", "Rubber Duck"],
             "expectedAnswer": "Soap Dish"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use soap dish, shampoo bottle, and rubber duck. Emphasize soap dish, shampoo bottle, and rubber duck and avoid clutter."
+          "imageBrief": "A soap bar in a soap dish beside a shampoo bottle, with a rubber duck floating in the bathtub."
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Shower Gel",
-          "scenario": "In the bathroom, I can see or use shower gel.",
+          "targetWords": ["Shower Gel"],
+          "scenario": "Yousef squeezes shower gel onto his hand before washing.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": "Shower Gel",
+            "question": "What does Yousef put on his hand?",
+            "options": ["Shower Gel"],
             "expectedAnswer": "Shower Gel"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use shower gel. Emphasize shower gel and avoid clutter."
+          "imageBrief": "An adult squeezing unbranded shower gel onto one hand in a shower area."
         }
       ]
     },
     "reading": {
-      "title": "The Bathroom Mini Story",
-      "text": "I am in the bathroom. I can see bath mat, shower curtain, and shower head. I also notice bath towel, hand towel, and washcloth. I point to each item and say its English name. Then I use one more word: soap dish. We also remember earlier words such as toilet paper and cotton balls.",
-      "imageBrief": "One uncluttered the bathroom scene supporting the reading and showing the first six target words."
+      "title": "After the Shower",
+      "text": "Dina closes the shower curtain and turns on the shower head. The bath mat stays dry outside. After washing, she uses a bath towel. A hand towel and washcloth remain by the sink. Soap rests in its dish, and the shower gel goes back beside the shampoo bottle.",
+      "imageBrief": "Show the main adult everyday situation from “After the Shower” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Bath Mat"
+        "prompt": "What is on the floor outside the shower?",
+        "answer": "Bath Mat",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-4-scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Bath Towel"
+        "prompt": "What does Dina use after her shower?",
+        "answer": "Bath Towel",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-4-scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Soap Dish"
+        "prompt": "Where is the soap?",
+        "answer": "Soap Dish",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-4-scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Shower Gel"
+        "prompt": "What does Yousef put on his hand?",
+        "answer": "Shower Gel",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-4-scene-4"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Bath Mat"
+        "prompt": "Use “Bath Mat” in one short sentence about an everyday situation.",
+        "answer": "The bath mat is outside the shower curtain, directly below the shower head.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "bathroom-4-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Shower Curtain"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Washcloth"
+        "prompt": "Name another lesson word that can be used with “Shower Gel” in the same situation.",
+        "answer": "Shower Gel",
+        "questionType": "transfer",
+        "responseMode": "short-answer",
+        "contextTag": "bathroom-4-transfer"
       }
     ],
     "video": {
-      "title": "The Bathroom: See It, Say It",
-      "idea": "30–50 second contextual video set in a bathroom. Show bath mat, shower curtain, shower head, bath towel, and hand towel naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see bath mat, shower curtain, and shower head. What can you find next?"
+      "title": "Bath & Shower: Words in Action",
+      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
+      "scriptStarter": "The bath mat is outside the shower curtain, directly below the shower head."
     },
     "spacedReview": "1 lesson(s) back: Toilet Paper, Cotton Balls from bathroom-3\n3 lesson(s) back: Bathtub, Shower from bathroom-1\n7 lesson(s) back: Bed, Nightstand from bedroom-1"
   },
@@ -546,96 +602,110 @@
       "مَنَادِيلُ مُبَلَّلَة (مَنَادِيلُ مَرْطُوبَة)"
     ],
     "usage": {
-      "goal": "Name bathroom objects, personal-care items, and simple bathroom actions.",
-      "canDoStatement": "I can name bathroom objects, personal-care items, and simple bathroom actions",
+      "goal": "Recognize and use common the bathroom vocabulary in practical everyday situations.",
+      "canDoStatement": "I can understand and use common the bathroom words in a simple situation",
       "textType": "Mini story / visual reading",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Face Cream", "Sunscreen", "Lip Balm"],
-          "scenario": "In the bathroom, I can see or use face cream, sunscreen, and lip balm.",
+          "scenario": "Before going outside, Salma uses face cream, sunscreen, and lip balm.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What protects Salma's skin from the sun?",
             "options": ["Face Cream", "Sunscreen", "Lip Balm"],
-            "expectedAnswer": "Face Cream"
+            "expectedAnswer": "Sunscreen"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use face cream, sunscreen, and lip balm. Emphasize face cream, sunscreen, and lip balm and avoid clutter."
+          "imageBrief": "An adult preparing to go outdoors, applying sunscreen with face cream and lip balm nearby."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Hand Soap", "Body Wash", "Mouthwash"],
-          "scenario": "In the bathroom, I can see or use hand soap, body wash, and mouthwash.",
+          "scenario": "At the sink, Ali uses hand soap; the body wash is in the shower and the mouthwash is by his toothbrush.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Ali use at the sink?",
             "options": ["Hand Soap", "Body Wash", "Mouthwash"],
             "expectedAnswer": "Hand Soap"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use hand soap, body wash, and mouthwash. Emphasize hand soap, body wash, and mouthwash and avoid clutter."
+          "imageBrief": "An adult washing hands at a sink; body wash is in the shower and mouthwash is near a toothbrush."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Dental Floss", "Face Wash", "Hand Sanitizer"],
-          "scenario": "In the bathroom, I can see or use dental floss, face wash, and hand sanitizer.",
+          "scenario": "After washing her face with face wash, Huda uses dental floss; the hand sanitizer stays in her bag.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Huda use between her teeth?",
             "options": ["Dental Floss", "Face Wash", "Hand Sanitizer"],
             "expectedAnswer": "Dental Floss"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use dental floss, face wash, and hand sanitizer. Emphasize dental floss, face wash, and hand sanitizer and avoid clutter."
+          "imageBrief": "An adult using dental floss safely, with face wash on the counter and hand sanitizer visible in an open bag."
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Wet Wipes",
-          "scenario": "In the bathroom, I can see or use wet wipes.",
+          "targetWords": ["Wet Wipes"],
+          "scenario": "Tariq keeps wet wipes in his travel bag for quick cleanups.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": "Wet Wipes",
+            "question": "What does Tariq keep in his travel bag?",
+            "options": ["Wet Wipes"],
             "expectedAnswer": "Wet Wipes"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use wet wipes. Emphasize wet wipes and avoid clutter."
+          "imageBrief": "An adult packing an unbranded packet of wet wipes into a small travel bag."
         }
       ]
     },
     "reading": {
-      "title": "The Bathroom Mini Story",
-      "text": "I am in the bathroom. I can see face cream, sunscreen, and lip balm. I also notice hand soap, body wash, and mouthwash. I point to each item and say its English name. Then I use one more word: dental floss. We also remember earlier words such as bath mat and shower curtain.",
-      "imageBrief": "One uncluttered the bathroom scene supporting the reading and showing the first six target words."
+      "title": "Personal Care for a Day Out",
+      "text": "Before going outside, Salma washes her face and uses face cream, sunscreen, and lip balm. At the sink, she washes her hands with hand soap. She also packs dental floss, hand sanitizer, and wet wipes. The body wash and mouthwash stay in the bathroom.",
+      "imageBrief": "Show the main adult everyday situation from “Personal Care for a Day Out” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Face Cream"
+        "prompt": "What protects Salma's skin from the sun?",
+        "answer": "Sunscreen",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-5-scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Hand Soap"
+        "prompt": "What does Ali use at the sink?",
+        "answer": "Hand Soap",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-5-scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Dental Floss"
+        "prompt": "What does Huda use between her teeth?",
+        "answer": "Dental Floss",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-5-scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Wet Wipes"
+        "prompt": "What does Tariq keep in his travel bag?",
+        "answer": "Wet Wipes",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-5-scene-4"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Face Cream"
+        "prompt": "Use “Face Cream” in one short sentence about an everyday situation.",
+        "answer": "Before going outside, Salma uses face cream, sunscreen, and lip balm.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "bathroom-5-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Sunscreen"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Mouthwash"
+        "prompt": "Name another lesson word that can be used with “Wet Wipes” in the same situation.",
+        "answer": "Wet Wipes",
+        "questionType": "transfer",
+        "responseMode": "short-answer",
+        "contextTag": "bathroom-5-transfer"
       }
     ],
     "video": {
-      "title": "The Bathroom: See It, Say It",
-      "idea": "30–50 second contextual video set in a bathroom. Show face cream, sunscreen, lip balm, hand soap, and body wash naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see face cream, sunscreen, and lip balm. What can you find next?"
+      "title": "Personal Care: Words in Action",
+      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
+      "scriptStarter": "Before going outside, Salma uses face cream, sunscreen, and lip balm."
     },
     "spacedReview": "1 lesson(s) back: Bath Mat, Shower Curtain from bathroom-4\n3 lesson(s) back: Soap, Shampoo from bathroom-2\n7 lesson(s) back: Pillowcase, Comforter from bedroom-2"
   },
@@ -661,7 +731,7 @@
       "Tissue",
       "Wash Hands",
       "Brush Teeth",
-      "Take Shower",
+      "Take a Shower",
       "Dry Off",
       "Flush",
       "Comb Hair",
@@ -675,7 +745,7 @@
       "قُفَّازَاتُ تَنْظِيف (قُفَّازَات)",
       "بَخَّاخ (قَارُورَةُ رَش)",
       "قِمَاشَةُ تَنْظِيف (فُوطَةُ مَسْح)",
-      "مكبس",
+      "سَلَّاكَةُ المِرْحَاض (مِكْبَس)",
       "مِمْسَحَةُ زُجَاجٍ مَطَّاطِيَّة (قَشَّاطَة)",
       "مَنْدِيلٌ وَرَقِيّ (مَحَارِم)",
       "غَسْلُ اليَدَيْن",
@@ -688,126 +758,146 @@
       "الغَرْغَرَة"
     ],
     "usage": {
-      "goal": "Name bathroom objects, personal-care items, and simple bathroom actions.",
-      "canDoStatement": "I can name bathroom objects, personal-care items, and simple bathroom actions",
+      "goal": "Recognize and use common the bathroom vocabulary in practical everyday situations.",
+      "canDoStatement": "I can understand and use common the bathroom words in a simple situation",
       "textType": "Mini story / visual reading",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sponge", "Brush", "Bucket"],
-          "scenario": "In my bathroom routine, I sponge, then brush, then bucket.",
+          "scenario": "Mariam fills the bucket, wets the sponge, and scrubs the bath with a brush.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Mariam fill with water?",
             "options": ["Sponge", "Brush", "Bucket"],
-            "expectedAnswer": "Sponge"
+            "expectedAnswer": "Bucket"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In my bathroom routine, I sponge, then brush, then bucket. Emphasize sponge, brush, and bucket and avoid clutter."
+          "imageBrief": "An adult cleaning a bathtub with a sponge and brush beside a bucket of water."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Gloves", "Spray Bottle", "Cloth"],
-          "scenario": "In the bathroom, I can see or use gloves, spray bottle, and cloth.",
+          "scenario": "Omar wears gloves, sprays the mirror with a spray bottle, and wipes it with a cloth.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Omar use to wipe the mirror?",
             "options": ["Gloves", "Spray Bottle", "Cloth"],
-            "expectedAnswer": "Gloves"
+            "expectedAnswer": "Cloth"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use gloves, spray bottle, and cloth. Emphasize gloves, spray bottle, and cloth and avoid clutter."
+          "imageBrief": "An adult wearing cleaning gloves and wiping a mirror with a cloth; a spray bottle is in the other hand."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Plunger", "Squeegee", "Tissue"],
-          "scenario": "In the bathroom, I can see or use plunger, squeegee, and tissue.",
+          "scenario": "The plunger is beside the toilet, the squeegee is by the shower, and the tissue is near the sink.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What is beside the toilet?",
             "options": ["Plunger", "Squeegee", "Tissue"],
             "expectedAnswer": "Plunger"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In the bathroom, I can see or use plunger, squeegee, and tissue. Emphasize plunger, squeegee, and tissue and avoid clutter."
+          "imageBrief": "A bathroom with a plunger beside the toilet, a squeegee by the shower, and tissues near the sink."
         },
         {
           "chunkNumber": 4,
-          "targetWords": ["Wash Hands", "Brush Teeth", "Take Shower"],
-          "scenario": "In my bathroom routine, I wash hands, then brush teeth, then take shower.",
+          "targetWords": ["Wash Hands", "Brush Teeth", "Take a Shower"],
+          "scenario": "Nadia washes her hands, brushes her teeth, and then takes a shower.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Wash Hands", "Brush Teeth", "Take Shower"],
+            "question": "What does Nadia do before brushing her teeth?",
+            "options": ["Wash Hands", "Brush Teeth", "Take a Shower"],
             "expectedAnswer": "Wash Hands"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In my bathroom routine, I wash hands, then brush teeth, then take shower. Emphasize wash hands, brush teeth, and take shower and avoid clutter."
+          "imageBrief": "A three-step morning-routine composition showing handwashing, toothbrushing, and shower preparation without text or numbers."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Dry Off", "Flush", "Comb Hair"],
-          "scenario": "In my bathroom routine, I dry off, then flush, then comb hair.",
+          "scenario": "After his shower, Samir dries off, flushes the toilet, and combs his hair.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Samir do to his wet hair?",
             "options": ["Dry Off", "Flush", "Comb Hair"],
-            "expectedAnswer": "Dry Off"
+            "expectedAnswer": "Comb Hair"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In my bathroom routine, I dry off, then flush, then comb hair. Emphasize dry off, flush, and comb hair and avoid clutter."
+          "imageBrief": "An adult in a bathrobe combing damp hair; a towel and toilet are also visible in the bathroom."
         },
         {
           "chunkNumber": 6,
           "targetWords": ["Apply Lotion", "Gargle"],
-          "scenario": "In my bathroom routine, I apply lotion, then gargle.",
+          "scenario": "Rana applies lotion to her arms, then gargles with water at the sink.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Rana do first?",
             "options": ["Apply Lotion", "Gargle"],
             "expectedAnswer": "Apply Lotion"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the bathroom that represents: In my bathroom routine, I apply lotion, then gargle. Emphasize apply lotion and gargle and avoid clutter."
+          "imageBrief": "An adult applying lotion to one arm before holding a glass of water near the sink for gargling."
         }
       ]
     },
     "reading": {
-      "title": "The Bathroom Mini Story",
-      "text": "I am in the bathroom. I can see sponge, brush, and bucket. I also notice gloves, spray bottle, and cloth. I point to each item and say its English name. Then I use one more word: plunger. We also remember earlier words such as face cream and sunscreen.",
-      "imageBrief": "One uncluttered the bathroom scene supporting the reading and showing the first six target words."
+      "title": "Cleaning and Getting Ready",
+      "text": "Mariam cleans the bathroom with a sponge, brush, and bucket. She wears gloves and wipes the mirror with a cloth. Her routine is to wash hands, brush teeth, then take a shower. Afterward, she remembers to dry off and flush, then combs her hair, applies lotion, and gargles before leaving.",
+      "imageBrief": "Show the main adult everyday situation from “Cleaning and Getting Ready” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Sponge"
+        "prompt": "What does Mariam fill with water?",
+        "answer": "Bucket",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-6-scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Gloves"
+        "prompt": "What does Omar use to wipe the mirror?",
+        "answer": "Cloth",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-6-scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Plunger"
+        "prompt": "What is beside the toilet?",
+        "answer": "Plunger",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-6-scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Wash Hands"
+        "prompt": "What does Nadia do before brushing her teeth?",
+        "answer": "Wash Hands",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-6-scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Dry Off"
+        "prompt": "What does Samir do to his wet hair?",
+        "answer": "Comb Hair",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-6-scene-5"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Apply Lotion"
+        "prompt": "What does Rana do first?",
+        "answer": "Apply Lotion",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "bathroom-6-scene-6"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Sponge"
+        "prompt": "Use “Sponge” in one short sentence about an everyday situation.",
+        "answer": "Mariam fills the bucket, wets the sponge, and scrubs the bath with a brush.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "bathroom-6-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Brush"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Cloth"
+        "prompt": "Name another lesson word that can be used with “Apply Lotion” in the same situation.",
+        "answer": "Gargle",
+        "questionType": "transfer",
+        "responseMode": "short-answer",
+        "contextTag": "bathroom-6-transfer"
       }
     ],
     "video": {
-      "title": "The Bathroom: See It, Say It",
-      "idea": "30–50 second contextual video set in a bathroom. Show sponge, brush, bucket, gloves, and spray bottle naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see sponge, brush, and bucket. What can you find next?"
+      "title": "Cleaning Items: Words in Action",
+      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
+      "scriptStarter": "Mariam fills the bucket, wets the sponge, and scrubs the bath with a brush."
     },
     "spacedReview": "1 lesson(s) back: Face Cream, Sunscreen from bathroom-5\n3 lesson(s) back: Toilet Paper, Cotton Balls from bathroom-3\n7 lesson(s) back: Alarm Clock, Picture Frame from bedroom-3"
   }

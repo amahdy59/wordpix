@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "shapes-geometry-1",
     "lessonName": "Shapes & Geometry 1",
@@ -27,21 +27,21 @@
       "Pyramid"
     ],
     "targetWordsArabic": [
-      "مصطلح مرتبط بالموضوع يُسمّى «كيركلي»",
+      "دائرة",
       "مربع",
       "مثلث",
-      "مصطلح مرتبط بالموضوع يُسمّى «ريكتانجلي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «وفال»",
-      "مصطلح مرتبط بالموضوع يُسمّى «دياموند»",
-      "مبنى يُسمّى «بينتاجون»",
-      "شكل يُسمّى «هيكساجون»",
-      "شكل يُسمّى «وكتاجون»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ستار»",
-      "جزء يُسمّى «سفيري»",
-      "شكل يُسمّى «كوبي»",
-      "سطح يُسمّى «كيليندير»",
-      "قُمع",
-      "مصطلح مرتبط بالموضوع يُسمّى «بيراميد»"
+      "مستطيل",
+      "بيضاوي",
+      "مُعَيَّن",
+      "خماسي الأضلاع",
+      "سداسي الأضلاع",
+      "ثماني الأضلاع",
+      "نجمة",
+      "كرة",
+      "مكعّب",
+      "أسطوانة",
+      "مخروط",
+      "هرم"
     ],
     "usage": {
       "goal": "Identify common 2D and 3D shapes in everyday objects.",
@@ -56,9 +56,11 @@
           "check": {
             "question": "What shape is the sign?",
             "options": ["Circle", "Square", "Triangle"],
-            "expectedAnswer": "triangle"
+            "expectedAnswer": "Triangle"
           },
-          "imageBrief": "Everyday-object scene linking a clock to a circle, a window to a square, and a sign to a triangle."
+          "imageBrief": "Everyday-object scene linking a clock to a circle, a window to a square, and a sign to a triangle.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-1-scene-1.avif",
+          "imageAlt": "A clock, window, and road sign arranged in one uncluttered room scene."
         },
         {
           "chunkNumber": 2,
@@ -67,9 +69,11 @@
           "check": {
             "question": "What shape is the mirror?",
             "options": ["Rectangle", "Oval", "Diamond"],
-            "expectedAnswer": "oval"
+            "expectedAnswer": "Oval"
           },
-          "imageBrief": "Clear scene with a rectangular door, oval mirror, and diamond-shaped card."
+          "imageBrief": "Clear scene with a rectangular door, oval mirror, and diamond-shaped card.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-1-scene-2.avif",
+          "imageAlt": "A wooden door, wall mirror, and plain card displayed side by side."
         },
         {
           "chunkNumber": 3,
@@ -78,9 +82,11 @@
           "check": {
             "question": "Which shape is the stop sign?",
             "options": ["Pentagon", "Hexagon", "Octagon"],
-            "expectedAnswer": "octagon"
+            "expectedAnswer": "Octagon"
           },
-          "imageBrief": "Clean display of three labeled shapes or objects, including a recognizable octagon stop sign."
+          "imageBrief": "Clean display of three labeled shapes or objects, including a recognizable octagon stop sign.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-1-scene-3.avif",
+          "imageAlt": "Three blank roadside signs with visibly different outlines."
         },
         {
           "chunkNumber": 4,
@@ -89,9 +95,11 @@
           "check": {
             "question": "Which object is a sphere?",
             "options": ["Star", "Sphere", "Cube"],
-            "expectedAnswer": "the ball"
+            "expectedAnswer": "Sphere"
           },
-          "imageBrief": "Simple scene with a star sticker, a ball, and a cube-shaped box."
+          "imageBrief": "Simple scene with a star sticker, a ball, and a cube-shaped box.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-1-scene-4.avif",
+          "imageAlt": "A shiny sticker, round ball, and solid box on a clean tabletop."
         },
         {
           "chunkNumber": 5,
@@ -100,9 +108,11 @@
           "check": {
             "question": "What shape is the can?",
             "options": ["Cylinder", "Cone", "Pyramid"],
-            "expectedAnswer": "cylinder"
+            "expectedAnswer": "Cylinder"
           },
-          "imageBrief": "Scene with a can, an ice cream cone, and a pyramid toy block."
+          "imageBrief": "Scene with a can, an ice cream cone, and a pyramid toy block.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-1-scene-5.avif",
+          "imageAlt": "A food can, ice cream cone, and pointed toy block on a table."
         }
       ]
     },
@@ -180,19 +190,19 @@
       "Perpendicular"
     ],
     "targetWordsArabic": [
-      "منشور بصري",
-      "شكل يُسمّى «كوبويد»",
-      "مصطلح مرتبط بالموضوع يُسمّى «هيميسفيري»",
-      "شكل يُسمّى «توروس»",
-      "مصطلح مرتبط بالموضوع يُسمّى «تيتراهيدرون»",
-      "طابور",
+      "منشور",
+      "متوازي المستطيلات",
+      "نصف كرة",
+      "سطح حلقي",
+      "رباعي الوجوه",
+      "خط",
       "منحنى",
-      "مصطلح مرتبط بالموضوع يُسمّى «سترايغت»",
-      "مصطلح مرتبط بالموضوع يُسمّى «زيجزاج»",
-      "سطح يُسمّى «سبيرال»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ريغت انجلي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «اكوتي انجلي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «وبتوسي انجلي»",
+      "مستقيم",
+      "متعرّج",
+      "حلزوني",
+      "زاوية قائمة",
+      "زاوية حادّة",
+      "زاوية منفرجة",
       "متوازٍ",
       "متعامد"
     ],
@@ -209,9 +219,11 @@
           "check": {
             "question": "What shape is the bowl?",
             "options": ["Prism", "Cuboid", "Hemisphere"],
-            "expectedAnswer": "hemisphere"
+            "expectedAnswer": "Hemisphere"
           },
-          "imageBrief": "Display of a prism, cuboid box, and hemisphere bowl with simple visual clarity."
+          "imageBrief": "Display of a prism, cuboid box, and hemisphere bowl with simple visual clarity.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-2-scene-1.avif",
+          "imageAlt": "Two wooden blocks and a rounded bowl displayed on a craft table."
         },
         {
           "chunkNumber": 2,
@@ -220,9 +232,11 @@
           "check": {
             "question": "What does the pencil draw?",
             "options": ["Torus", "Tetrahedron", "Line"],
-            "expectedAnswer": "a line"
+            "expectedAnswer": "Line"
           },
-          "imageBrief": "A ring-shaped torus, a tetrahedron model, and a pencil drawing a line."
+          "imageBrief": "A ring-shaped torus, a tetrahedron model, and a pencil drawing a line.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-2-scene-2.avif",
+          "imageAlt": "A ring model, pointed solid model, and pencil mark arranged for comparison."
         },
         {
           "chunkNumber": 3,
@@ -231,9 +245,11 @@
           "check": {
             "question": "Which thing is straight?",
             "options": ["Curve", "Straight", "Zigzag"],
-            "expectedAnswer": "the ruler"
+            "expectedAnswer": "Straight"
           },
-          "imageBrief": "Three-panel comparison showing a curved road, straight ruler, and zigzag pattern."
+          "imageBrief": "Three-panel comparison showing a curved road, straight ruler, and zigzag pattern.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-2-scene-3.avif",
+          "imageAlt": "Three panels compare a winding road, ruler, and angular path."
         },
         {
           "chunkNumber": 4,
@@ -242,9 +258,11 @@
           "check": {
             "question": "What shape does the shell have?",
             "options": ["Spiral", "Right Angle", "Acute Angle"],
-            "expectedAnswer": "a spiral"
+            "expectedAnswer": "Spiral"
           },
-          "imageBrief": "Close-up visual showing a spiral shell, a right angle corner, and a small acute angle."
+          "imageBrief": "Close-up visual showing a spiral shell, a right angle corner, and a small acute angle.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-2-scene-4.avif",
+          "imageAlt": "A shell and two differently sized corners shown in a close comparison."
         },
         {
           "chunkNumber": 5,
@@ -253,9 +271,11 @@
           "check": {
             "question": "What are parallel in the sentence?",
             "options": ["Obtuse Angle", "Parallel", "Perpendicular"],
-            "expectedAnswer": "the train tracks"
+            "expectedAnswer": "Parallel"
           },
-          "imageBrief": "Visual card showing obtuse angle, parallel lines like train tracks, and perpendicular wall-floor lines."
+          "imageBrief": "Visual card showing obtuse angle, parallel lines like train tracks, and perpendicular wall-floor lines.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-2-scene-5.avif",
+          "imageAlt": "A wide corner, railway tracks, and meeting wall-and-floor lines in three panels."
         }
       ]
     },
@@ -333,21 +353,21 @@
       "Fractal"
     ],
     "targetWordsArabic": [
-      "سطح يُسمّى «اريا»",
-      "جهاز قياس مجال الرؤية",
-      "شدة الصوت",
-      "عظم الكعبرة",
-      "سطح يُسمّى «دياميتير»",
-      "منطقة يُسمّى «كيركومفيرينكي»",
-      "قطري",
+      "مساحة",
+      "محيط",
+      "حجم",
+      "نصف القطر",
+      "قُطر",
+      "محيط الدائرة",
+      "قطر مائل",
       "تناظر",
-      "مصطلح مرتبط بالموضوع يُسمّى «فيرتيكس»",
-      "منطقة يُسمّى «يدجي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ريبيات»",
-      "مصطلح مرتبط بالموضوع يُسمّى «سيكينكي»",
+      "رأس الشكل",
+      "حافة",
+      "تكرار",
+      "تسلسل",
       "نمط",
-      "شكل يُسمّى «تيسسيللاتيون»",
-      "مصطلح مرتبط بالموضوع يُسمّى «فراكتال»"
+      "تبليط هندسي",
+      "شكل كسيري"
     ],
     "usage": {
       "goal": "Recognize a few basic geometry and pattern words in highly visual, beginner-friendly contexts.",
@@ -362,9 +382,11 @@
           "check": {
             "question": "What is the line around a shape?",
             "options": ["Area", "Perimeter", "Volume"],
-            "expectedAnswer": "perimeter"
+            "expectedAnswer": "Perimeter"
           },
-          "imageBrief": "Three simple concept cards explaining area, perimeter, and volume with one friendly visual example each."
+          "imageBrief": "Three simple concept cards explaining area, perimeter, and volume with one friendly visual example each.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-3-scene-1.avif",
+          "imageAlt": "A flat tiled surface, outlined shape, and filled clear box shown together."
         },
         {
           "chunkNumber": 2,
@@ -373,9 +395,11 @@
           "check": {
             "question": "Which line goes across the circle?",
             "options": ["Radius", "Diameter", "Circumference"],
-            "expectedAnswer": "diameter"
+            "expectedAnswer": "Diameter"
           },
-          "imageBrief": "Beginner-friendly circle diagram showing radius, diameter, and circumference clearly."
+          "imageBrief": "Beginner-friendly circle diagram showing radius, diameter, and circumference clearly.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-3-scene-2.avif",
+          "imageAlt": "A simple circular model with lines from and through its center."
         },
         {
           "chunkNumber": 3,
@@ -384,9 +408,11 @@
           "check": {
             "question": "What has symmetry?",
             "options": ["Diagonal", "Symmetry", "Vertex"],
-            "expectedAnswer": "the butterfly"
+            "expectedAnswer": "Symmetry"
           },
-          "imageBrief": "Scene or card showing a square diagonal, symmetrical butterfly, and triangle with top vertex."
+          "imageBrief": "Scene or card showing a square diagonal, symmetrical butterfly, and triangle with top vertex.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-3-scene-3.avif",
+          "imageAlt": "A marked square, balanced butterfly, and pointed triangle shown in three panels."
         },
         {
           "chunkNumber": 4,
@@ -395,9 +421,11 @@
           "check": {
             "question": "What do the cards show?",
             "options": ["Edge", "Repeat", "Sequence"],
-            "expectedAnswer": "a sequence"
+            "expectedAnswer": "Sequence"
           },
-          "imageBrief": "Simple visual card for cube edges, repeated drum pattern, and a sequence of cards."
+          "imageBrief": "Simple visual card for cube edges, repeated drum pattern, and a sequence of cards.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-3-scene-4.avif",
+          "imageAlt": "A solid block, repeating percussion beats, and ordered cards shown together."
         },
         {
           "chunkNumber": 5,
@@ -406,9 +434,11 @@
           "check": {
             "question": "What do the tiles make?",
             "options": ["Pattern", "Tessellation", "Fractal"],
-            "expectedAnswer": "a pattern"
+            "expectedAnswer": "Pattern"
           },
-          "imageBrief": "Pattern-focused scene with floor tiles, tessellation wall design, and a branching tree image suggesting a fractal."
+          "imageBrief": "Pattern-focused scene with floor tiles, tessellation wall design, and a branching tree image suggesting a fractal.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-3-scene-5.avif",
+          "imageAlt": "Decorative tiles and a branching tree design fill an art-room display."
         }
       ]
     },
@@ -469,13 +499,7 @@
     "cefrStage": "Pre-A1",
     "stageName": "Pre-A1 Starter",
     "targetWordsEnglish": ["Grid", "Array", "Matrix", "Mosaic", "Kaleidoscope"],
-    "targetWordsArabic": [
-      "شبكة كهربائية",
-      "شكل يُسمّى «ارراي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ماتريكس»",
-      "مصطلح مرتبط بالموضوع يُسمّى «موسايك»",
-      "لون يُسمّى «كالييدوسكوبي»"
-    ],
+    "targetWordsArabic": ["شبكة", "مصفوفة", "مصفوفة رياضية", "فسيفساء", "منظار الأشكال المتكررة"],
     "usage": {
       "goal": "Recognize shapes, lines, patterns, and basic geometry ideas visually.",
       "canDoStatement": "I can recognize shapes, lines, patterns, and basic geometry ideas visually",
@@ -491,7 +515,9 @@
             "options": ["Grid", "Array", "Matrix"],
             "expectedAnswer": "Grid"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for shapes & geometry that represents: In the math picture, I can find grid, array, and matrix. Emphasize grid, array, and matrix and avoid clutter."
+          "imageBrief": "Create one clear Pre-A1 visual for shapes & geometry that represents: In the math picture, I can find grid, array, and matrix. Emphasize grid, array, and matrix and avoid clutter.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-4-scene-1.avif",
+          "imageAlt": "Three panels show ruled squares, organized wooden beads, and colored tiles."
         },
         {
           "chunkNumber": 2,
@@ -502,7 +528,9 @@
             "options": ["Mosaic", "Kaleidoscope"],
             "expectedAnswer": "Mosaic"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for shapes & geometry that represents: In the math picture, I can find mosaic and kaleidoscope. Emphasize mosaic and kaleidoscope and avoid clutter."
+          "imageBrief": "Create one clear Pre-A1 visual for shapes & geometry that represents: In the math picture, I can find mosaic and kaleidoscope. Emphasize mosaic and kaleidoscope and avoid clutter.",
+          "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-4-scene-2.avif",
+          "imageAlt": "A colorful tile artwork and mirrored viewing toy on a craft table."
         }
       ]
     },

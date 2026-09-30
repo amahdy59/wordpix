@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, KeyboardEvent } from "react";
+import { useState, useRef, useEffect, useId, useLayoutEffect, KeyboardEvent } from "react";
 import { ChevronDown, Check } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -25,8 +25,10 @@ export function Select({
   placeholder = "Select...",
 }: SelectProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [opensAbove, setOpensAbove] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const listboxRef = useRef<HTMLUListElement>(null);
+  const listboxId = useId();
 
   const selectedOption = options.find((o) => o.value === value);
 
@@ -41,6 +43,30 @@ export function Select({
     document.addEventListener("mousedown", handleDocumentClick);
     return () => document.removeEventListener("mousedown", handleDocumentClick);
   }, [isOpen]);
+
+  // Keep the popup inside the usable viewport. Selects commonly appear near the
+  // bottom of scroll panels, where always opening downward makes the final
+  // options visually present but impossible to click.
+  useLayoutEffect(() => {
+    if (!isOpen || !containerRef.current) return;
+
+    const updatePlacement = () => {
+      const rect = containerRef.current?.getBoundingClientRect();
+      if (!rect) return;
+      const estimatedListHeight = Math.min(options.length * 44 + 8, 240);
+      const spaceBelow = window.innerHeight - rect.bottom;
+      const spaceAbove = rect.top;
+      setOpensAbove(spaceBelow < estimatedListHeight && spaceAbove > spaceBelow);
+    };
+
+    updatePlacement();
+    window.addEventListener("resize", updatePlacement);
+    window.addEventListener("scroll", updatePlacement, true);
+    return () => {
+      window.removeEventListener("resize", updatePlacement);
+      window.removeEventListener("scroll", updatePlacement, true);
+    };
+  }, [isOpen, options.length]);
 
   const handleKeyDown = (e: KeyboardEvent<HTMLButtonElement>) => {
     if (!isOpen) {
@@ -78,7 +104,7 @@ export function Select({
       <button
         type="button"
         role="combobox"
-        aria-controls="listbox"
+        aria-controls={listboxId}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
         aria-label={ariaLabel}
@@ -103,14 +129,17 @@ export function Select({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.15 }}
-            className="absolute z-50 w-full min-w-[200px] mt-1 bg-wp-card border border-border shadow-wp-lg rounded-2xl overflow-hidden end-0"
+            className={`absolute end-0 z-50 w-full min-w-[200px] overflow-hidden rounded-2xl border border-border bg-wp-card shadow-wp-lg ${
+              opensAbove ? "bottom-full mb-1" : "top-full mt-1"
+            }`}
           >
             <ul
               ref={listboxRef}
+              id={listboxId}
               role="listbox"
               tabIndex={-1}
               aria-activedescendant={value}
-              className="py-1 max-h-60 overflow-y-auto"
+              className="max-h-[min(15rem,calc(100dvh-2rem))] overflow-y-auto overscroll-contain py-1"
             >
               {options.map((option) => {
                 const isSelected = option.value === value;

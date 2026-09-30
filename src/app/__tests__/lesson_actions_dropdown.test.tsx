@@ -94,6 +94,33 @@ describe("Lesson Actions Dropdown & Navigation", () => {
     expect(trigger).toHaveAttribute("aria-expanded", "false");
   });
 
+  it("opens Jump to Step as an accessible desktop flyout", () => {
+    const dispatch = vi.fn();
+    render(
+      <I18nProvider>
+        <LessonWorldEntry unitId="bedroom" dispatch={dispatch} />
+      </I18nProvider>
+    );
+
+    fireEvent.click(
+      screen.getAllByLabelText(
+        new RegExp(`More options and quick navigation for ${firstGroupName}`, "i")
+      )[0]
+    );
+
+    const stepMenuTrigger = screen.getByRole("menuitem", { name: /Jump to Step/i });
+    expect(stepMenuTrigger).toHaveAttribute("aria-haspopup", "menu");
+    expect(stepMenuTrigger).toHaveAttribute("aria-expanded", "false");
+
+    fireEvent.click(stepMenuTrigger);
+
+    const stepMenu = document.getElementById(stepMenuTrigger.getAttribute("aria-controls")!);
+    expect(stepMenuTrigger).toHaveAttribute("aria-expanded", "true");
+    expect(stepMenu).toHaveAttribute("role", "menu");
+    expect(stepMenu).toHaveClass("lg:start-full", "lg:ms-2", "lg:w-72");
+    expect(stepMenu?.querySelectorAll('[role="menuitem"]').length).toBeGreaterThan(0);
+  });
+
   it("opens the first study activity directly from the unit entry", () => {
     const dispatch = vi.fn();
     render(

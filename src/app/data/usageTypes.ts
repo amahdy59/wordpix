@@ -17,12 +17,14 @@ export const usageCheckSchema = z
     options: oneOrManyStrings,
     expectedAnswer: z.string().trim().min(1),
   })
-  .transform((check) => {
-    const canonicalAnswer = check.options.find(
-      (option) => option.toLocaleLowerCase() === check.expectedAnswer.toLocaleLowerCase()
-    );
-    if (canonicalAnswer) return { ...check, expectedAnswer: canonicalAnswer };
-    return { ...check, options: [...check.options, check.expectedAnswer] };
+  .superRefine((check, context) => {
+    if (!check.options.includes(check.expectedAnswer)) {
+      context.addIssue({
+        code: "custom",
+        path: ["expectedAnswer"],
+        message: "The expected answer must exactly match one of the authored options.",
+      });
+    }
   });
 
 export const usageSceneChunkSchema = z
@@ -32,6 +34,10 @@ export const usageSceneChunkSchema = z
     scenario: z.string().trim().min(1),
     check: usageCheckSchema,
     imageBrief: z.string(),
+    /** Optional scene-specific visual; R2 vocabulary mappings remain untouched. */
+    imagePath: z.string().trim().min(1).optional(),
+    /** Describes the scene without spelling out an assessed answer. */
+    imageAlt: z.string().trim().min(1).optional(),
   })
   .superRefine((scene, context) => {
     if (!scene.check.options.includes(scene.check.expectedAnswer)) {
@@ -77,6 +83,81 @@ export const contextExtensionSchema = z.object({
   register: z.enum(["everyday", "service", "professional", "academic"]),
 });
 
+/** Only approved workbook records cross this runtime boundary. */
+export const usagePhraseSchema = z
+  .object({
+    id: z.string().trim().min(1),
+    lessonId: z.string().trim().min(1),
+    slot: z.enum(["core-1", "core-2", "optional-1"]),
+    unitId: z.string().trim().min(1),
+    phrase: z.string().trim().min(1),
+    kind: z.enum(["collocation", "phrasal-verb", "idiom", "everyday-expression"]),
+    meaning: z.string().trim().min(1),
+    arabicMeaning: z.string().trim().min(1),
+    example: z.string().trim().min(1),
+    learnerPurpose: z.string().trim().min(1),
+    pattern: z.string().trim().min(1),
+    cefrStage: z.enum(["Pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"]),
+    register: z.string().trim().min(1),
+    frequencyEvidence: z.string().trim().min(1),
+    evidenceUrl: z.string().url(),
+    check: z.object({
+      question: z.string().trim().min(1),
+      expectedAnswer: z.string().trim().min(1),
+      explanation: z.string().trim().min(1),
+    }),
+    practice: z.object({
+      retrieval: z.string().trim().min(1),
+      personalUse: z.string().trim().min(1),
+      laterReview: z.string().trim().min(1),
+    }),
+    sceneId: z.string().trim().min(1),
+    sourceStatus: z.string().trim().min(1),
+    sourceReview: z
+      .object({
+        status: z.literal("verified-online"),
+        reviewedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/u),
+        primaryUrl: z.string().url(),
+        secondaryUrl: z.string().url(),
+        finding: z.string().trim().min(1),
+      })
+      .strict(),
+    editorial: z.object({
+      status: z.literal("approved"),
+      reviewer: z.string().trim().min(1),
+      revision: z.string().trim().min(1),
+    }),
+  })
+  .strict();
+
+export const unitUsagePhraseDataSchema = z.array(usagePhraseSchema);
+
+/** A whole usage lesson may ship only after every learner-facing field is reviewed. */
+export const usageLessonApprovalSchema = z
+  .object({
+    lessonId: z.string().trim().min(1),
+    unitId: z.string().trim().min(1),
+    contentRevision: z.string().trim().min(1),
+    status: z.literal("approved"),
+    reviewedBy: z.string().trim().min(1),
+    reviewedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/u),
+    sources: z.array(z.string().url()).min(2),
+    checks: z
+      .object({
+        scenarios: z.literal("approved"),
+        questions: z.literal("approved"),
+        reading: z.literal("approved"),
+        exercises: z.literal("approved"),
+        imageBriefs: z.literal("approved"),
+        cefr: z.literal("approved"),
+        arabic: z.literal("approved"),
+      })
+      .strict(),
+  })
+  .strict();
+
+export const unitUsageApprovalDataSchema = z.array(usageLessonApprovalSchema);
+
 export const lessonUsageDataSchema = z.object({
   lessonId: z.string().trim().min(1),
   lessonName: z.string().trim().min(1),
@@ -98,6 +179,7 @@ export const lessonUsageDataSchema = z.object({
       (value) => (Array.isArray(value) ? value : [value]),
       z.array(usageSceneChunkSchema).min(1)
     ),
+    phrases: z.array(usagePhraseSchema).default([]),
   }),
   reading: z.object({
     title: z.string().trim().min(1),
@@ -129,6 +211,7 @@ export interface LessonUsageMetadata {
   textType: string;
   readingTarget: string;
   scenes: UsageSceneChunk[];
+  phrases: UsagePhrase[];
 }
 
 export interface LessonReading {
@@ -141,6 +224,8 @@ export type LessonExercise = z.infer<typeof lessonExerciseSchema>;
 export type QuestionType = z.infer<typeof questionTypeSchema>;
 export type ResponseMode = z.infer<typeof responseModeSchema>;
 export type ContextExtension = z.infer<typeof contextExtensionSchema>;
+export type UsagePhrase = z.infer<typeof usagePhraseSchema>;
+export type UsageLessonApproval = z.infer<typeof usageLessonApprovalSchema>;
 
 export interface LessonVideoPlan {
   title: string;

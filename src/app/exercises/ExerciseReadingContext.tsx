@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle2, XCircle } from "lucide-react";
 import type { Action } from "../types";
 import type { VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { Button, ExerciseFamilyTemplate, FeedbackPanel } from "../shared";
+import { Button, ExerciseFamilyTemplate, FeedbackPanel, MediaFrame } from "../shared";
 import { getAuthoredLessonContent } from "./content/authoredLessonContent";
 import { resolveGroup } from "../data/courseCatalog";
 import { useSound } from "../shared/useSound";
@@ -11,6 +11,7 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
 import { LessonTransferPractice } from "./LessonTransferPractice";
+import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
   step: number;
@@ -103,6 +104,15 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
         activityLabel={t("exercise.readingContextActivityAria")}
         activity={
           <div className="space-y-5">
+            {cluster.microReading.media && (
+              <MediaFrame as="figure" aspect="recognition" className="mx-auto w-full max-w-3xl">
+                <img
+                  src={resolveAssetUrl(cluster.microReading.media.imagePath)}
+                  alt={cluster.microReading.media.imageAlt}
+                  decoding="async"
+                />
+              </MediaFrame>
+            )}
             <p
               lang="en"
               dir="ltr"

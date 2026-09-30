@@ -384,7 +384,9 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                             items[next]?.focus();
                           }}
                           aria-labelledby={`menu-trigger-${g.id}`}
-                          className="fixed inset-x-4 bottom-6 sm:bottom-auto sm:inset-x-auto sm:absolute sm:end-0 sm:top-full sm:mt-2 w-auto sm:w-72 z-50 bg-wp-card rounded-2xl border border-border shadow-2xl p-2.5 focus:outline-none animate-in fade-in zoom-in-95 duration-150"
+                          className={`fixed inset-x-4 bottom-6 z-50 max-h-[calc(100dvh-3rem)] w-auto overflow-y-auto overscroll-contain rounded-2xl border border-border bg-wp-card p-2.5 shadow-2xl focus:outline-none animate-in fade-in zoom-in-95 duration-150 motion-reduce:animate-none sm:inset-x-auto sm:end-6 sm:w-80 lg:overflow-visible ${
+                            expandedStepMenuId === g.id ? "lg:end-[calc(18rem+2rem)]" : "lg:end-6"
+                          }`}
                         >
                           <div className="px-3 py-2 border-b border-border/60 mb-1">
                             <p className="font-sans font-bold text-xs text-foreground uppercase tracking-wider">
@@ -464,15 +466,19 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                           </button>
 
                           {/* 4. Jump to Specific Step Accordion / Submenu */}
-                          <div className="border-t border-border/60 mt-1 pt-1">
+                          <div className="relative mt-1 border-t border-border/60 pt-1">
                             <button
                               type="button"
+                              id={`step-menu-trigger-${g.id}`}
+                              role="menuitem"
                               onClick={(e) => {
                                 e.stopPropagation();
                                 setExpandedStepMenuId(expandedStepMenuId === g.id ? null : g.id);
                               }}
                               className="cursor-pointer w-full text-start flex items-center justify-between px-3 py-2 rounded-xl hover:bg-secondary transition-colors text-muted-foreground hover:text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                               aria-expanded={expandedStepMenuId === g.id}
+                              aria-controls={`step-menu-${g.id}`}
+                              aria-haspopup="menu"
                             >
                               <div className="flex items-center gap-2">
                                 <ListOrdered className="size-4 text-primary" />
@@ -481,14 +487,20 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                                 </span>
                               </div>
                               <ChevronRight
-                                className={`size-3.5 transition-transform ${
+                                className={`size-3.5 transition-transform motion-reduce:transition-none rtl:rotate-180 ${
                                   expandedStepMenuId === g.id ? "rotate-90" : ""
                                 }`}
+                                aria-hidden
                               />
                             </button>
 
                             {expandedStepMenuId === g.id && (
-                              <div className="ps-2 pe-1 py-1 space-y-0.5 max-h-48 overflow-y-auto">
+                              <div
+                                id={`step-menu-${g.id}`}
+                                role="menu"
+                                aria-labelledby={`step-menu-trigger-${g.id}`}
+                                className="space-y-0.5 py-1 ps-2 pe-1 lg:absolute lg:bottom-0 lg:start-full lg:z-10 lg:ms-2 lg:max-h-[min(24rem,calc(100dvh-3rem))] lg:w-72 lg:overflow-y-auto lg:overscroll-contain lg:rounded-2xl lg:border lg:border-border lg:bg-wp-card lg:p-2 lg:shadow-2xl lg:animate-in lg:fade-in lg:slide-in-from-start-2 motion-reduce:lg:animate-none"
+                              >
                                 {stepLabels.map((item) => (
                                   <button
                                     key={item.step}

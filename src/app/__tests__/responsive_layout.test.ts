@@ -57,9 +57,7 @@ describe("Quiz question legibility", () => {
   });
 
   it("lets the question row wrap instead of squeezing the heading", () => {
-    // The question card now uses a two-row layout: group/counter on top,
-    // heading + phonetic below — so flex-col is correct, not flex-wrap.
-    expect(source).toMatch(/flex flex-col gap-3/);
+    expect(source).toMatch(/flex flex-col items-start[^\n]*sm:flex-row sm:items-center/);
   });
 });
 
@@ -106,22 +104,28 @@ describe("AppShell responsive components", () => {
 });
 
 describe("Card Grid Responsive Sizing", () => {
-  it("ExerciseRecallMatch lets image choices expand across large viewports", () => {
-    const source = stripComments(read("exercises/ExerciseRecallMatch.tsx"));
-    expect(source).toMatch(/flex-1/);
-    expect(source).toMatch(/auto-rows-fr/);
-    expect(source).toMatch(/lg:grid-cols-4/);
-    expect(source).toMatch(/lg:grid-rows-1/);
-    expect(source).toContain("wp-container-immersive");
-    expect(source).toContain("object-cover");
-    expect(source).not.toMatch(/aspect-\[4\/3\]/);
-    expect(source).not.toMatch(/max-h-\[260px\]/);
+  const imageChoiceGrid = stripComments(read("shared/ImmersiveImageChoiceGrid.tsx"));
+
+  it("uses one shared immersive grid for full-screen image-choice questions", () => {
+    const quickQuiz = stripComments(read("exercises/ExerciseQuickQuiz.tsx"));
+    const recallMatch = stripComments(read("exercises/ExerciseRecallMatch.tsx"));
+
+    expect(quickQuiz).toContain("<ImmersiveImageChoiceGrid");
+    expect(recallMatch).toContain("<ImmersiveImageChoiceGrid");
+    expect(imageChoiceGrid).toMatch(/flex-1/);
+    expect(imageChoiceGrid).toMatch(/auto-rows-fr/);
+    expect(imageChoiceGrid).toMatch(/grid-cols-2/);
+    expect(imageChoiceGrid).toMatch(/lg:grid-cols-4/);
+    expect(imageChoiceGrid).toMatch(/lg:grid-rows-1/);
   });
 
-  it("ExerciseQuickQuiz uses aspect-[4/3] to prevent image squashing", () => {
+  it("lets quick-quiz cards fill the available stage instead of capping their size", () => {
     const source = stripComments(read("exercises/ExerciseQuickQuiz.tsx"));
-    expect(source).toMatch(/aspect-\[4\/3\]/);
-    expect(source).not.toMatch(/grid-rows-2/);
+
+    expect(source).toContain('layout="media"');
+    expect(source).toContain("object-cover");
+    expect(source).not.toMatch(/aspect-\[4\/3\]/);
+    expect(source).not.toMatch(/max-h-\[min\(30dvh,220px\)\]/);
   });
 });
 

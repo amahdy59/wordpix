@@ -48,6 +48,26 @@ for (const width of [320, 390, 768, 1280, 1600]) {
     const options = cards.first().getByRole("button", { name: /More options/ });
     await options.click();
     await expect(page.getByRole("menuitem", { name: /Read Story/ })).toBeFocused();
+
+    if (width >= 1280) {
+      const stepMenuTrigger = page.getByRole("menuitem", { name: /Jump to Step/ });
+      await stepMenuTrigger.click();
+      const stepMenu = page.getByRole("menu", { name: /Jump to Step/ });
+      await expect(stepMenu).toBeVisible();
+
+      await expect
+        .poll(async () => {
+          const triggerBox = await stepMenuTrigger.boundingBox();
+          const stepMenuBox = await stepMenu.boundingBox();
+          if (!triggerBox || !stepMenuBox) return false;
+          return (
+            stepMenuBox.x >= triggerBox.x + triggerBox.width &&
+            stepMenuBox.x + stepMenuBox.width <= width
+          );
+        })
+        .toBe(true);
+    }
+
     await page.keyboard.press("Escape");
     await expect(options).toBeFocused();
     await cards

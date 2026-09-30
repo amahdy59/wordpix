@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "skin-hair-1",
     "lessonName": "Skin & Hair 1",
@@ -52,20 +52,20 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Oily Skin", "Dry Skin", "Combination Skin"],
-          "scenario": "The learner identifies the oily skin, dry skin, and combination skin and connects each part to its place or function in the body.",
+          "scenario": "At a skincare consultation, Lina says her forehead becomes oily but her cheeks feel dry. The specialist explains that combination skin can have both patterns.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What kind of skin can be oily in one area and dry in another?",
             "options": ["Oily Skin", "Dry Skin", "Combination Skin"],
-            "expectedAnswer": "Oily Skin"
+            "expectedAnswer": "Combination Skin"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: The learner identifies the oily skin, dry skin, and combination skin and connects each part to its place or function in the body. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sensitive Skin", "Normal Skin", "Acne-Prone"],
-          "scenario": "During the visit, the patient and medical team deal with sensitive skin, normal skin, and acne-prone. Each term belongs to a different part of the care process.",
+          "scenario": "Before choosing a new face wash, Omar tells the pharmacist that his skin becomes red easily. She recommends a gentle product for sensitive skin and asks whether he is acne-prone.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What kind of skin becomes red easily for Omar?",
             "options": ["Sensitive Skin", "Normal Skin", "Acne-Prone"],
             "expectedAnswer": "Sensitive Skin"
           },
@@ -74,9 +74,9 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Mature Skin", "Fair Skin", "Dark Skin"],
-          "scenario": "The learner identifies the mature skin, fair skin, and dark skin and connects each part to its place or function in the body.",
+          "scenario": "At a photography workshop, the tutor adjusts the light for three adult models. She explains that fair skin and dark skin reflect light differently, while mature skin may show more lines.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which type of skin may show more lines?",
             "options": ["Mature Skin", "Fair Skin", "Dark Skin"],
             "expectedAnswer": "Mature Skin"
           },
@@ -85,22 +85,22 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Olive Skin", "Acne", "Eczema"],
-          "scenario": "During the visit, the patient and medical team deal with olive skin, acne, and eczema. Each term belongs to a different part of the care process.",
+          "scenario": "At the clinic, a nurse asks about a dry patch on Farah's olive skin. Farah explains that the patch is not acne, and the doctor checks whether eczema is causing the irritation.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What skin condition does the doctor check for?",
             "options": ["Olive Skin", "Acne", "Eczema"],
-            "expectedAnswer": "Olive Skin"
+            "expectedAnswer": "Eczema"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with olive skin, acne, and eczema. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Rash", "Sunburn", "Blister"],
-          "scenario": "During the visit, the patient and medical team deal with rash, sunburn, and blister. Each term belongs to a different part of the care process.",
+          "scenario": "After a long hike, Ben has a red rash on his shoulder and a small blister on his heel. The pharmacist asks whether the rash began after the sunburn.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does Ben have on his heel?",
             "options": ["Rash", "Sunburn", "Blister"],
-            "expectedAnswer": "Rash"
+            "expectedAnswer": "Blister"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with rash, sunburn, and blister. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         }
@@ -213,9 +213,9 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Bruise", "Scar", "Stretch Mark"],
-          "scenario": "During the visit, the patient and medical team deal with bruise, scar, and stretch mark. Each term belongs to a different part of the care process.",
+          "scenario": "While preparing for a beach trip, Nadia notices an old scar and a stretch mark. She also has a small bruise from yesterday's suitcase, so she decides to pack a first-aid kit.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What came from yesterday's suitcase?",
             "options": ["Bruise", "Scar", "Stretch Mark"],
             "expectedAnswer": "Bruise"
           },
@@ -224,20 +224,20 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Wrinkles", "Dry Patch", "Shampoo"],
-          "scenario": "During the visit, the patient and medical team deal with wrinkles, dry patch, and shampoo. Each term belongs to a different part of the care process.",
+          "scenario": "At a salon consultation, the stylist recommends a mild shampoo for a dry patch near Maya's hairline. Maya also asks about a cream for wrinkles.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does the stylist recommend for Maya's hair?",
             "options": ["Wrinkles", "Dry Patch", "Shampoo"],
-            "expectedAnswer": "Wrinkles"
+            "expectedAnswer": "Shampoo"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with wrinkles, dry patch, and shampoo. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Conditioner", "Hair Mask", "Serum"],
-          "scenario": "During the visit, the patient and medical team deal with conditioner, hair mask, and serum. Each term belongs to a different part of the care process.",
+          "scenario": "On a self-care evening, Rami washes his hair, applies conditioner, and leaves a hair mask on for ten minutes. He finishes with a small amount of serum on the ends.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does Rami apply first after washing his hair?",
             "options": ["Conditioner", "Hair Mask", "Serum"],
             "expectedAnswer": "Conditioner"
           },
@@ -246,9 +246,9 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Hair Oil", "Dry Shampoo", "Leave-In"],
-          "scenario": "During the visit, the patient and medical team deal with hair oil, dry shampoo, and leave-in. Each term belongs to a different part of the care process.",
+          "scenario": "Before an early meeting, Salma uses dry shampoo because she has no time to wash her hair. She adds leave-in conditioner and a drop of hair oil to the ends.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does Salma add to the ends of her hair?",
             "options": ["Hair Oil", "Dry Shampoo", "Leave-In"],
             "expectedAnswer": "Hair Oil"
           },
@@ -257,11 +257,11 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Detangler", "Hair Spray", "Mousse"],
-          "scenario": "During the visit, the patient and medical team deal with detangler, hair spray, and mousse. Each term belongs to a different part of the care process.",
+          "scenario": "Before a presentation, the stylist uses detangler to smooth Jo's hair, mousse to add shape, and a light hair spray to hold the finished style.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What holds Jo's finished style in place?",
             "options": ["Detangler", "Hair Spray", "Mousse"],
-            "expectedAnswer": "Detangler"
+            "expectedAnswer": "Hair Spray"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with detangler, hair spray, and mousse. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         }
@@ -374,55 +374,55 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Comb", "Brush", "Hair Dryer"],
-          "scenario": "During the visit, the patient and medical team deal with comb, brush, and hair dryer. Each term belongs to a different part of the care process.",
+          "scenario": "At the salon, the stylist uses a comb to separate sections, a brush to smooth them, and a hair dryer to finish the blow-dry before the client leaves.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does the stylist use to finish the blow-dry?",
             "options": ["Comb", "Brush", "Hair Dryer"],
-            "expectedAnswer": "Comb"
+            "expectedAnswer": "Hair Dryer"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with comb, brush, and hair dryer. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Flat Iron", "Curling Iron", "Hair Clip"],
-          "scenario": "During the visit, the patient and medical team deal with flat iron, curling iron, and hair clip. Each term belongs to a different part of the care process.",
+          "scenario": "For a dinner event, Mei secures one section with a hair clip, uses a curling iron on the ends, and then straightens one front section with a flat iron.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What secures one section of Mei's hair?",
             "options": ["Flat Iron", "Curling Iron", "Hair Clip"],
-            "expectedAnswer": "Flat Iron"
+            "expectedAnswer": "Hair Clip"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with flat iron, curling iron, and hair clip. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bobby Pin", "Hair Tie", "Headband"],
-          "scenario": "During the visit, the patient and medical team deal with bobby pin, hair tie, and headband. Each term belongs to a different part of the care process.",
+          "scenario": "During a workout, Aisha pulls her hair back with a hair tie and keeps short strands away from her face with a headband. A bobby pin fixes one loose piece.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What keeps short strands away from Aisha's face?",
             "options": ["Bobby Pin", "Hair Tie", "Headband"],
-            "expectedAnswer": "Bobby Pin"
+            "expectedAnswer": "Headband"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with bobby pin, hair tie, and headband. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Hair Roller", "Cleanser", "Toner"],
-          "scenario": "During the visit, the patient and medical team deal with hair roller, cleanser, and toner. Each term belongs to a different part of the care process.",
+          "scenario": "At home, Karim follows his evening routine: he washes his face with cleanser, applies toner, and sets a hair roller before reading.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does Karim use to wash his face?",
             "options": ["Hair Roller", "Cleanser", "Toner"],
-            "expectedAnswer": "Hair Roller"
+            "expectedAnswer": "Cleanser"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with hair roller, cleanser, and toner. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Moisturizer", "Sunscreen", "Exfoliant"],
-          "scenario": "During the visit, the patient and medical team deal with moisturizer, sunscreen, and exfoliant. Each term belongs to a different part of the care process.",
+          "scenario": "Before leaving for the beach, Dalia uses an exfoliant on a different day from her usual routine. Today she applies moisturizer and sunscreen to protect her skin.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does Dalia apply to protect her skin?",
             "options": ["Moisturizer", "Sunscreen", "Exfoliant"],
-            "expectedAnswer": "Moisturizer"
+            "expectedAnswer": "Sunscreen"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with moisturizer, sunscreen, and exfoliant. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         }
@@ -508,24 +508,24 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Face Mask", "Eye Cream", "Lip Balm"],
-          "scenario": "During the visit, the patient and medical team deal with face mask, eye cream, and lip balm. Each term belongs to a different part of the care process.",
+          "scenario": "Before work, Maya checks her skin and hair in the bathroom mirror. Maya notices Lip Balm while also considering Face Mask and Eye Cream. She chooses the right product and explains her routine to a friend.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which target does Maya notice first in this situation?",
             "options": ["Face Mask", "Eye Cream", "Lip Balm"],
-            "expectedAnswer": "Face Mask"
+            "expectedAnswer": "Lip Balm"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with face mask, eye cream, and lip balm. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Show an adult in a morning routine, with Face Mask, Eye Cream, and Lip Balm visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis."
         },
         {
           "chunkNumber": 2,
           "targetWords": "Night Cream",
-          "scenario": "During the visit, the patient and medical team deal with night cream. Each term belongs to a different part of the care process.",
+          "scenario": "Before work, Maya checks her skin and hair in the bathroom mirror. Maya notices Night Cream while also considering undefined, undefined, and undefined. She chooses the right product and explains her routine to a friend.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which target does Maya notice first in this situation?",
             "options": "Night Cream",
             "expectedAnswer": "Night Cream"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with night cream. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Show an adult in a morning routine, with Night Cream, undefined, and undefined visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis."
         }
       ]
     },

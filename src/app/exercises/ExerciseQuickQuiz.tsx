@@ -16,6 +16,7 @@ import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { HelpCircle, Keyboard, CheckCircle2, XCircle, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useI18n } from "../context/I18nContext";
+import { ImmersiveImageChoiceGrid } from "../shared/ImmersiveImageChoiceGrid";
 
 interface Props {
   step: number;
@@ -147,6 +148,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
+      layout="media"
       progress={{ current: queue.position, total: queue.total }}
       subtitle={
         <>
@@ -171,10 +173,10 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         </div>
       }
     >
-      <div className="relative flex flex-col gap-3.5 sm:gap-5 w-full max-w-2xl mx-auto my-auto">
+      <div className="relative flex min-h-[560px] w-full flex-1 flex-col gap-3.5 sm:min-h-[640px] sm:gap-5 lg:min-h-[320px]">
         {/* Question card */}
-        <div className="bg-wp-card border border-border rounded-2xl p-4 sm:p-5 shadow-wp-xs shrink-0 flex flex-col gap-3">
-          <div className="flex items-center justify-between gap-3">
+        <div className="flex shrink-0 flex-col gap-3 rounded-2xl border border-border bg-wp-card p-4 shadow-wp-xs sm:p-5 lg:p-6">
+          <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
             <h2
               className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl flex-1 text-balance"
               data-question="Which picture shows"
@@ -187,12 +189,8 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
           </div>
         </div>
 
-        {/* 2×2 image grid with explicit responsive aspect ratio */}
-        <div
-          role="group"
-          aria-label={`Which image matches ${currentTargetWord.label}?`}
-          className="grid grid-cols-2 [@media(min-width:640px)_and_(max-height:700px)]:grid-cols-4 gap-3 sm:gap-4 md:gap-5 w-full"
-        >
+        {/* Immersive 2x2 grid that becomes a full-width row on large screens. */}
+        <ImmersiveImageChoiceGrid aria-label={`Which image matches ${currentTargetWord.label}?`}>
           {options.map((option, idx) => {
             const isSelected = selectedId === option.id;
             const isCorrectAnswer = option.id === currentTargetWord.id;
@@ -219,7 +217,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleSelect(option.id)}
-                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full aspect-[4/3] min-h-[110px] max-h-[min(30dvh,220px)] border-2 block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-sm ${borderStyle}`}
+                className={`group relative block min-h-[120px] w-full overflow-hidden rounded-2xl border-2 shadow-wp-sm transition-colors duration-200 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:rounded-3xl ${borderStyle}`}
               >
                 {/* Keyboard shortcut badge */}
                 <span
@@ -290,7 +288,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
               </motion.button>
             );
           })}
-        </div>
+        </ImmersiveImageChoiceGrid>
 
         {/* Screen-reader announcement */}
         <span aria-live="polite" aria-atomic="true" className="sr-only">

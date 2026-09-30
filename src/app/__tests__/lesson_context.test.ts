@@ -6,7 +6,12 @@ import {
   parseSpacedReview,
   rotateOptions,
 } from "../data/lessonContext";
-import { lessonUsageDataSchema, unitUsageDataSchema } from "../data/usageTypes";
+import {
+  lessonUsageDataSchema,
+  unitUsageDataSchema,
+  unitUsagePhraseDataSchema,
+  usageLessonApprovalSchema,
+} from "../data/usageTypes";
 import { getRichSentence } from "../exercises/exerciseContent";
 
 const usage = lessonUsageDataSchema.parse({
@@ -104,6 +109,27 @@ describe("lesson context helpers", () => {
 });
 
 describe("curriculum usage boundary", () => {
+  it("rejects a usage check whose answer is not an exact authored option", () => {
+    expect(() =>
+      lessonUsageDataSchema.parse({
+        ...usage,
+        usage: {
+          ...usage.usage,
+          scenes: [
+            {
+              ...usage.usage.scenes[0],
+              check: {
+                question: "Which word completes the sentence?",
+                options: ["Basket", "Bag"],
+                expectedAnswer: "basket",
+              },
+            },
+          ],
+        },
+      })
+    ).toThrow(/exactly match one of the authored options/i);
+  });
+
   it("validates every generated unit payload", async () => {
     const modules = import.meta.glob<{ default: unknown }>("../data/usage/*.usage.json", {
       eager: true,
@@ -112,5 +138,58 @@ describe("curriculum usage boundary", () => {
     for (const [path, module] of Object.entries(modules)) {
       expect(() => unitUsageDataSchema.parse(module.default), path).not.toThrow();
     }
+  });
+
+  it("validates every approved phrase export and rejects draft states", () => {
+    const modules = import.meta.glob<{ default: unknown }>("../data/usagePhrases/*.phrases.json", {
+      eager: true,
+    });
+    expect(Object.keys(modules)).toHaveLength(5);
+    for (const [path, module] of Object.entries(modules)) {
+      expect(() => unitUsagePhraseDataSchema.parse(module.default), path).not.toThrow();
+    }
+
+    const approved = Object.values(modules)[0]?.default;
+    expect(() =>
+      unitUsagePhraseDataSchema.parse(
+        Array.isArray(approved)
+          ? approved.map((phrase) => ({
+              ...(phrase as Record<string, unknown>),
+              editorial: { status: "draft", reviewer: "Editor", revision: "1" },
+            }))
+          : approved
+      )
+    ).toThrow();
+  });
+
+  it("requires a complete, two-source approval before a lesson can ship", () => {
+    const approval = {
+      lessonId: "market-1",
+      unitId: "market",
+      contentRevision: "2026-09-30.1",
+      status: "approved",
+      reviewedBy: "Editor",
+      reviewedAt: "2026-09-30",
+      sources: ["https://dictionary.cambridge.org/", "https://www.oxfordlearnersdictionaries.com/"],
+      checks: {
+        scenarios: "approved",
+        questions: "approved",
+        reading: "approved",
+        exercises: "approved",
+        imageBriefs: "approved",
+        cefr: "approved",
+        arabic: "approved",
+      },
+    } as const;
+    expect(() => usageLessonApprovalSchema.parse(approval)).not.toThrow();
+    expect(() =>
+      usageLessonApprovalSchema.parse({
+        ...approval,
+        checks: { ...approval.checks, arabic: "pending" },
+      })
+    ).toThrow();
+    expect(() =>
+      usageLessonApprovalSchema.parse({ ...approval, sources: [approval.sources[0]] })
+    ).toThrow();
   });
 });

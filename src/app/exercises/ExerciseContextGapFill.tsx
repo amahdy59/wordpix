@@ -17,6 +17,7 @@ import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
 import { findLessonContextSentences } from "../data/lessonContext";
 import { WordImage } from "../shared/WordImage";
+import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
   step: number;
@@ -52,11 +53,15 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
 
   const authoredSentence = getAuthoredSentence(currentTargetWord.id);
+  const authoredMedia = authoredSentence?.media;
   const usage = usageState.status === "ready" ? usageState.data : null;
   const authoredFullSentence =
     authoredSentence?.full ?? getRichSentence(currentTargetWord, usage).full;
   const contextSentences = findLessonContextSentences(currentTargetWord, usage);
+  // Start with visual recognition, keep the first transfer item visual too,
+  // then rotate through a contextual clue and a sentence-only prompt.
   const variant = (queue.position - 1) % 3;
+  const showImage = variant === 1 || queue.position === 1;
   const variantSentence =
     variant === 1
       ? (contextSentences[0] ?? authoredFullSentence)
@@ -166,7 +171,7 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
       <ExerciseFamilyTemplate
         family="reading-context"
         instruction={
-          variant === 1
+          showImage
             ? t("exercise.gapFillImageInstruction")
             : variant === 2
               ? t("exercise.gapFillTransferInstruction")
@@ -176,14 +181,24 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
         activityLabel={t("exercise.gapFillActivityAria")}
         activity={
           <div className="space-y-4">
-            {variant === 1 && (
+            {showImage && (
               <MediaFrame aspect="scene" className="max-h-[32dvh] sm:max-h-[38dvh]">
-                <WordImage
-                  word={currentTargetWord}
-                  className="size-full object-cover"
-                  loading="eager"
-                  fetchPriority="high"
-                />
+                {authoredMedia ? (
+                  <img
+                    src={resolveAssetUrl(authoredMedia.imagePath)}
+                    alt={authoredMedia.imageAlt}
+                    className="size-full object-cover"
+                    loading="eager"
+                    fetchPriority="high"
+                  />
+                ) : (
+                  <WordImage
+                    word={currentTargetWord}
+                    className="size-full object-cover"
+                    loading="eager"
+                    fetchPriority="high"
+                  />
+                )}
               </MediaFrame>
             )}
             {variant === 2 && contextClue && (

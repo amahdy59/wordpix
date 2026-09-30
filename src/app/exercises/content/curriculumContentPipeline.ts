@@ -243,6 +243,13 @@ export function auditCurriculumContent(
 const sentenceSchema = z.object({
   full: z.string().trim().min(1),
   words: z.array(z.string().trim().min(1)).min(3).max(9),
+  media: z
+    .object({
+      imagePath: z.string().trim().min(1),
+      /** Describes the visual clue without naming the assessed answer. */
+      imageAlt: z.string().trim().min(1),
+    })
+    .optional(),
 });
 
 const authoredWordSchema = z.object({
@@ -255,7 +262,17 @@ const authoredWordSchema = z.object({
 const authoredClusterSchema = z.object({
   id: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
   targetWordIds: z.array(z.string()).min(4).max(5),
-  microReading: z.object({ title: z.string().trim().min(1), text: z.string().trim().min(1) }),
+  microReading: z.object({
+    title: z.string().trim().min(1),
+    text: z.string().trim().min(1),
+    media: z
+      .object({
+        imagePath: z.string().trim().min(1),
+        /** Describes the supporting scene without disclosing the retrieval answer. */
+        imageAlt: z.string().trim().min(1),
+      })
+      .optional(),
+  }),
   retrieval: z.object({
     prompt: z.string().trim().min(1),
     options: z.array(z.string().trim().min(1)).min(2).max(4),

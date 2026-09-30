@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "colors-1",
     "lessonName": "Colors 1",
@@ -39,7 +39,7 @@
       "أبيض",
       "سماوي",
       "أرجواني فاقع",
-      "شجرة يُسمّى «ليمي»",
+      "أخضر ليموني",
       "أزرق مخضر",
       "نيلي"
     ],
@@ -56,7 +56,7 @@
           "check": {
             "question": "Which object is blue?",
             "options": ["Red", "Blue", "Yellow"],
-            "expectedAnswer": "the bag"
+            "expectedAnswer": "Blue"
           },
           "imageBrief": "Three everyday objects clearly showing red apple, blue bag, and yellow bus."
         },
@@ -67,7 +67,7 @@
           "check": {
             "question": "What color is the ball?",
             "options": ["Green", "Orange", "Purple"],
-            "expectedAnswer": "orange"
+            "expectedAnswer": "Orange"
           },
           "imageBrief": "Outdoor scene with a green leaf, orange ball, and purple kite."
         },
@@ -78,7 +78,7 @@
           "check": {
             "question": "Which animal is sleeping?",
             "options": ["Pink", "Brown", "Black"],
-            "expectedAnswer": "the black cat"
+            "expectedAnswer": "Black"
           },
           "imageBrief": "Cozy home scene showing a pink toy, brown table, and black cat."
         },
@@ -89,9 +89,11 @@
           "check": {
             "question": "What color is the shirt?",
             "options": ["White", "Cyan", "Magenta"],
-            "expectedAnswer": "cyan"
+            "expectedAnswer": "Cyan"
           },
-          "imageBrief": "Scene or display showing a white cloud, cyan shirt, and magenta flower with very clear colors."
+          "imageBrief": "Scene or display showing a white cloud, cyan shirt, and magenta flower with very clear colors.",
+          "imagePath": "./learning-scenes/colors/colors-1-scene-4.avif",
+          "imageAlt": "A white cloud on the left, a bright blue-green shirt in the center, and a vivid reddish-purple flower on the right."
         },
         {
           "chunkNumber": 5,
@@ -100,7 +102,7 @@
           "check": {
             "question": "Which item is indigo?",
             "options": ["Lime", "Teal", "Indigo"],
-            "expectedAnswer": "the notebook"
+            "expectedAnswer": "Indigo"
           },
           "imageBrief": "Desk scene with a lime pencil, teal cup, and indigo notebook."
         }
@@ -181,20 +183,20 @@
     ],
     "targetWordsArabic": [
       "بنفسجي",
-      "مرجان",
-      "لون يُسمّى «سالمون»",
+      "مرجاني",
+      "سلموني",
       "فيروزي",
       "خزامي",
-      "لون يُسمّى «ليغت»",
+      "فاتح",
       "داكن",
       "ساطع",
-      "لون أو درجة لونية يُسمّى «دولل»",
-      "لون يُسمّى «فيفيد»",
-      "لون يُسمّى «بالي»",
-      "لون يُسمّى «دييب»",
-      "لون أو درجة لونية يُسمّى «وارم»",
-      "لون أو درجة لونية يُسمّى «كوول»",
-      "لون يُسمّى «نيوترال»"
+      "باهت",
+      "زاهٍ",
+      "شاحب",
+      "داكن",
+      "دافئ",
+      "بارد",
+      "محايد"
     ],
     "usage": {
       "goal": "Describe color qualities such as light, dark, bright, warm, cool, and neutral.",
@@ -209,7 +211,7 @@
           "check": {
             "question": "Which item is violet?",
             "options": ["Violet", "Coral", "Salmon"],
-            "expectedAnswer": "the scarf"
+            "expectedAnswer": "Violet"
           },
           "imageBrief": "Three easy objects or surfaces showing violet, coral, and salmon clearly."
         },
@@ -220,7 +222,7 @@
           "check": {
             "question": "What is on the chair?",
             "options": ["Turquoise", "Lavender", "Light"],
-            "expectedAnswer": "the lavender pillow"
+            "expectedAnswer": "Lavender"
           },
           "imageBrief": "Calm home scene with a turquoise cup, lavender pillow, and a light blue sky seen through a window."
         },
@@ -231,7 +233,7 @@
           "check": {
             "question": "Which thing looks dull?",
             "options": ["Dark", "Bright", "Dull"],
-            "expectedAnswer": "the old poster"
+            "expectedAnswer": "Dull"
           },
           "imageBrief": "Three-panel comparison showing dark shirt, bright star, and dull poster."
         },
@@ -242,7 +244,7 @@
           "check": {
             "question": "Which wall is soft?",
             "options": ["Vivid", "Pale", "Deep"],
-            "expectedAnswer": "the pale pink wall"
+            "expectedAnswer": "Pale"
           },
           "imageBrief": "Simple comparison scene with vivid flower, pale wall, and deep green bottle."
         },
@@ -253,7 +255,7 @@
           "check": {
             "question": "Which color feels cool?",
             "options": ["Warm", "Cool", "Neutral"],
-            "expectedAnswer": "blue"
+            "expectedAnswer": "Cool"
           },
           "imageBrief": "Friendly infographic showing warm colors, cool colors, and neutral gray."
         }
@@ -330,14 +332,14 @@
     "targetWordsArabic": [
       "يخلط",
       "يمزج",
+      "درجة لونية داكنة",
+      "صبغة لونية فاتحة",
       "درجة لونية",
-      "لون يُسمّى «تينت»",
-      "لون يُسمّى «هوي»",
-      "لون أو درجة لونية يُسمّى «ساتوراتيون»",
-      "سطح يُسمّى «جراديينت»",
-      "لون أو درجة لونية يُسمّى «راينبوو»",
-      "لون أو درجة لونية يُسمّى «سبيكتروم»",
-      "سطح يُسمّى «بيجمينت»"
+      "التشبّع اللوني",
+      "تدرّج لوني",
+      "قوس قزح",
+      "طيف",
+      "صبغة"
     ],
     "usage": {
       "goal": "Understand simple art words related to mixing and color change.",
@@ -352,7 +354,7 @@
           "check": {
             "question": "What do I do after I mix the paint?",
             "options": ["Mix", "Blend", "Shade"],
-            "expectedAnswer": "I blend it"
+            "expectedAnswer": "Blend"
           },
           "imageBrief": "Art desk scene showing paint being mixed and blended to create a darker shade."
         },
@@ -361,9 +363,9 @@
           "targetWords": ["Tint", "Hue", "Saturation"],
           "scenario": "White makes a light tint, blue is a cool hue, and strong color has high saturation.",
           "check": {
-            "question": "What makes a light tint?",
+            "question": "Which word means a color made lighter with white?",
             "options": ["Tint", "Hue", "Saturation"],
-            "expectedAnswer": "white"
+            "expectedAnswer": "Tint"
           },
           "imageBrief": "Clean color-learning card explaining tint, hue, and saturation with swatches."
         },
@@ -374,7 +376,7 @@
           "check": {
             "question": "What has many colors?",
             "options": ["Gradient", "Rainbow"],
-            "expectedAnswer": "the rainbow"
+            "expectedAnswer": "Rainbow"
           },
           "imageBrief": "Simple scene with a sky gradient and a rainbow."
         },
@@ -385,7 +387,7 @@
           "check": {
             "question": "What gives paint its color?",
             "options": ["Spectrum", "Pigment"],
-            "expectedAnswer": "pigment"
+            "expectedAnswer": "Pigment"
           },
           "imageBrief": "Friendly visual card showing a color spectrum and pigment in paint."
         }

@@ -1,5 +1,11 @@
 import { describe, it, expect } from "vitest";
-import { loadUnitUsage, hasUnitUsage, loadLessonUsage } from "../data/usageRegistry";
+import {
+  loadUnitUsage,
+  hasUnitUsage,
+  loadLessonUsage,
+  loadLessonUsageForEditorial,
+  loadUnitUsageForEditorial,
+} from "../data/usageRegistry";
 
 describe("Curriculum Usage Data Layer", () => {
   it("confirms registered units exist in the registry", () => {
@@ -9,7 +15,7 @@ describe("Curriculum Usage Data Layer", () => {
   });
 
   it("loads the Farm unit (A1) with structured chunks and check questions", async () => {
-    const farmUsage = await loadUnitUsage("farm");
+    const farmUsage = await loadUnitUsageForEditorial("farm");
     expect(farmUsage).not.toBeNull();
     expect(farmUsage?.length).toBe(6);
 
@@ -36,10 +42,13 @@ describe("Curriculum Usage Data Layer", () => {
     expect(firstLesson?.reading.title).toContain("Farm");
     expect(firstLesson?.reading.text.length).toBeGreaterThan(50);
     expect(firstLesson?.exercises.length).toBeGreaterThan(0);
+
+    // Draft workbook candidates fail closed and never reach learners.
+    expect(firstLesson?.usage.phrases).toEqual([]);
   });
 
   it("loads the Office unit (B2) with professional context", async () => {
-    const officeUsage = await loadUnitUsage("office");
+    const officeUsage = await loadUnitUsageForEditorial("office");
     expect(officeUsage).not.toBeNull();
     expect(officeUsage?.length).toBe(4);
 
@@ -51,13 +60,41 @@ describe("Curriculum Usage Data Layer", () => {
     const scenes = lesson?.usage.scenes ?? [];
     expect(scenes.length).toBe(4);
     expect(scenes[0].targetWords).toEqual(["Desk", "Office Chair", "Filing Cabinet", "Bookshelf"]);
+    expect(lesson?.usage.phrases).toHaveLength(1);
+    expect(lesson?.usage.phrases[0]).toMatchObject({
+      phrase: "write down",
+      editorial: { status: "approved" },
+      cefrStage: "B1",
+    });
+  });
+
+  it("loads only approved phrase records for an authored lesson", async () => {
+    const lesson = await loadLessonUsageForEditorial("everyday-clothing-1");
+    expect(lesson?.usage.phrases.map((phrase) => phrase.phrase)).toEqual([
+      "try on",
+      "a larger size",
+    ]);
+    expect(lesson?.usage.phrases.every((phrase) => phrase.arabicMeaning.length > 0)).toBe(true);
+    expect(
+      lesson?.usage.phrases.every(
+        (phrase) =>
+          phrase.sourceReview.status === "verified-online" &&
+          phrase.sourceReview.primaryUrl.startsWith("https://") &&
+          phrase.sourceReview.secondaryUrl.startsWith("https://")
+      )
+    ).toBe(true);
   });
 
   it("resolves a single lesson directly by lessonId", async () => {
-    const lesson = await loadLessonUsage("farm-2");
+    const lesson = await loadLessonUsageForEditorial("farm-2");
     expect(lesson).not.toBeNull();
     expect(lesson?.lessonId).toBe("farm-2");
     expect(lesson?.unitId).toBe("farm");
+  });
+
+  it("keeps every unapproved whole-lesson package out of the learner-facing loader", async () => {
+    expect(await loadUnitUsage("farm")).toBeNull();
+    expect(await loadLessonUsage("everyday-clothing-1")).toBeNull();
   });
 
   it("verifies core units across all CEFR stages are registered in the glob loader", () => {

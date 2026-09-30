@@ -1,5 +1,5 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
-import { ArrowRight, CheckCircle2, PenTool, Undo2, XCircle } from "lucide-react";
+import { ArrowRight, BookOpen, CheckCircle2, PenTool, Undo2, XCircle } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
@@ -122,6 +122,10 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
     autoAdvance.cancel();
     advanceNext();
   }, [autoAdvance, advanceNext]);
+  const handleSkipToReading = useCallback(() => {
+    autoAdvance.cancel();
+    dispatch({ type: "LESSON_GOTO_STEP", step: step + 2 });
+  }, [autoAdvance, dispatch, step]);
   const group = useMemo(
     () =>
       resolveGroup(
@@ -327,15 +331,25 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
           ) : undefined
         }
         action={
-          feedback !== null && !accessibility.autoAdvance ? (
+          <div className="flex w-full flex-wrap items-center justify-between gap-3">
             <Button
-              size="lg"
-              iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
-              onClick={handleContinue}
+              variant="outline"
+              size="md"
+              iconLeft={<BookOpen className="size-4" aria-hidden />}
+              onClick={handleSkipToReading}
             >
-              {t("action.continue")}
+              {t("exercise.skipToReading")}
             </Button>
-          ) : undefined
+            {feedback !== null && !accessibility.autoAdvance && (
+              <Button
+                size="lg"
+                iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
+                onClick={handleContinue}
+              >
+                {t("action.continue")}
+              </Button>
+            )}
+          </div>
         }
       />
     </ExerciseShell>

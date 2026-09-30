@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "numbers-counting-1",
     "lessonName": "Numbers & Counting 1",
@@ -29,7 +29,7 @@
     "targetWordsArabic": [
       "واحد",
       "اثنان",
-      "ثلاثي",
+      "ثلاثة",
       "أربعة",
       "خمسة",
       "ستة",
@@ -56,7 +56,7 @@
           "check": {
             "question": "How many pencils do I have?",
             "options": ["One", "Two", "Three"],
-            "expectedAnswer": "three"
+            "expectedAnswer": "Three"
           },
           "imageBrief": "Bright desk scene with exactly 1 book, 2 pens, and 3 pencils, clearly visible and easy to count."
         },
@@ -67,7 +67,7 @@
           "check": {
             "question": "How many bags are there?",
             "options": ["Four", "Five", "Six"],
-            "expectedAnswer": "five"
+            "expectedAnswer": "Five"
           },
           "imageBrief": "Simple classroom scene with 4 chairs, 5 bags, and 6 books. Keep the layout uncluttered."
         },
@@ -78,7 +78,7 @@
           "check": {
             "question": "Which fruit has nine?",
             "options": ["Seven", "Eight", "Nine"],
-            "expectedAnswer": "bananas"
+            "expectedAnswer": "Nine"
           },
           "imageBrief": "Clean fruit display showing 7 apples, 8 oranges, and 9 bananas in grouped rows."
         },
@@ -89,7 +89,7 @@
           "check": {
             "question": "How many notebooks do we have?",
             "options": ["Ten", "Eleven", "Twelve"],
-            "expectedAnswer": "eleven"
+            "expectedAnswer": "Eleven"
           },
           "imageBrief": "Neat school-supplies illustration with 10 pencils, 11 notebooks, and 12 crayons."
         },
@@ -100,7 +100,7 @@
           "check": {
             "question": "How many balloons are there?",
             "options": ["Thirteen", "Fourteen", "Fifteen"],
-            "expectedAnswer": "fifteen"
+            "expectedAnswer": "Fifteen"
           },
           "imageBrief": "Playful celebration scene with 13 stars, 14 flowers, and 15 balloons, clear enough for counting."
         }
@@ -209,7 +209,7 @@
           "check": {
             "question": "Who is eighteen?",
             "options": ["Sixteen", "Seventeen", "Eighteen"],
-            "expectedAnswer": "Omar"
+            "expectedAnswer": "Eighteen"
           },
           "imageBrief": "Three teens in a birthday or school setting representing ages 16, 17, and 18."
         },
@@ -220,7 +220,7 @@
           "check": {
             "question": "How many stars are there?",
             "options": ["Nineteen", "Twenty", "Thirty"],
-            "expectedAnswer": "twenty"
+            "expectedAnswer": "Twenty"
           },
           "imageBrief": "Decorative wall scene with 19 balloons, 20 stars, and 30 stickers arranged clearly."
         },
@@ -229,9 +229,9 @@
           "targetWords": ["Forty", "Fifty", "Sixty"],
           "scenario": "The bus has forty seats, the room has fifty chairs, and the shelf has sixty books.",
           "check": {
-            "question": "Where do you see sixty books?",
+            "question": "How many books are on the shelf?",
             "options": ["Forty", "Fifty", "Sixty"],
-            "expectedAnswer": "on the shelf"
+            "expectedAnswer": "Sixty"
           },
           "imageBrief": "Three simple panels: a bus with 40 seats, a room with 50 chairs, and a shelf with 60 books."
         },
@@ -242,7 +242,7 @@
           "check": {
             "question": "How many notebooks are there?",
             "options": ["Seventy", "Eighty", "Ninety"],
-            "expectedAnswer": "eighty"
+            "expectedAnswer": "Eighty"
           },
           "imageBrief": "Stationery shop scene with grouped pens, notebooks, and erasers representing 70, 80, and 90."
         },
@@ -253,7 +253,7 @@
           "check": {
             "question": "Which is the biggest number?",
             "options": ["Hundred", "Thousand", "Million"],
-            "expectedAnswer": "one million"
+            "expectedAnswer": "Million"
           },
           "imageBrief": "Simple educational infographic card showing 100, 1,000, and 1,000,000 with the matching words."
         }
@@ -362,7 +362,7 @@
           "check": {
             "question": "Who is second?",
             "options": ["First", "Second", "Third"],
-            "expectedAnswer": "Omar"
+            "expectedAnswer": "Second"
           },
           "imageBrief": "Sports-day race scene clearly showing 1st, 2nd, and 3rd place winners."
         },
@@ -373,7 +373,7 @@
           "check": {
             "question": "Which book is mine?",
             "options": ["Fourth", "Fifth", "Sixth"],
-            "expectedAnswer": "the fifth book"
+            "expectedAnswer": "Fifth"
           },
           "imageBrief": "Three small panels: fourth floor sign, fifth book in a stack, child sixth in line."
         },
@@ -384,7 +384,7 @@
           "check": {
             "question": "Who is tenth?",
             "options": ["Seventh", "Eighth", "Ninth", "Tenth"],
-            "expectedAnswer": "Omar"
+            "expectedAnswer": "Tenth"
           },
           "imageBrief": "Lineup of children or cards clearly showing 8th, 9th, and 10th positions."
         },
@@ -393,9 +393,9 @@
           "targetWords": ["Addition", "Equals"],
           "scenario": "Two plus three equals five.",
           "check": {
-            "question": "What does two plus three equal?",
+            "question": "Which word connects the calculation to its result?",
             "options": ["Addition", "Equals"],
-            "expectedAnswer": "five"
+            "expectedAnswer": "Equals"
           },
           "imageBrief": "Clean educational card showing 2 + 3 = 5 with the words addition and equals."
         },
@@ -404,9 +404,9 @@
           "targetWords": ["Subtraction", "Multiplication", "Division"],
           "scenario": "Five minus two equals three. Two times three equals six. Eight divided by two equals four.",
           "check": {
-            "question": "What does eight divided by two equal?",
+            "question": "Which operation is used in eight divided by two?",
             "options": ["Subtraction", "Multiplication", "Division"],
-            "expectedAnswer": "four"
+            "expectedAnswer": "Division"
           },
           "imageBrief": "Three-panel math card for subtraction, multiplication, and division with one easy example each."
         }
@@ -469,13 +469,7 @@
     "cefrStage": "Pre-A1",
     "stageName": "Pre-A1 Starter",
     "targetWordsEnglish": ["Plus", "Minus", "Times", "Divided By", "Percentage"],
-    "targetWordsArabic": [
-      "زائد",
-      "ناقص",
-      "ضرب",
-      "مصطلح مرتبط بالموضوع يُسمّى «ديفيديد بي»",
-      "نسبة مئوية"
-    ],
+    "targetWordsArabic": ["زائد", "ناقص", "ضرب", "مقسوم على", "نسبة مئوية"],
     "usage": {
       "goal": "Recognize simple maths symbols and use a few common maths words in easy expressions.",
       "canDoStatement": "I can understand a few basic maths words and symbols.",
@@ -487,9 +481,9 @@
           "targetWords": ["Plus", "Minus", "Times"],
           "scenario": "Two plus one is three. Four minus one is three. Two times two is four.",
           "check": {
-            "question": "What does four minus one equal?",
+            "question": "Which operation is used in four minus one?",
             "options": ["Plus", "Minus", "Times"],
-            "expectedAnswer": "three"
+            "expectedAnswer": "Minus"
           },
           "imageBrief": "Three simple math symbol cards for plus, minus, and times, each with one easy example."
         },
@@ -498,9 +492,9 @@
           "targetWords": ["Divided By", "Percentage"],
           "scenario": "Six divided by two is three. Fifty percent means half.",
           "check": {
-            "question": "What does fifty percent mean?",
+            "question": "Which concept describes fifty percent?",
             "options": ["Divided By", "Percentage"],
-            "expectedAnswer": "half"
+            "expectedAnswer": "Percentage"
           },
           "imageBrief": "Two-card set: one shows 6 ÷ 2 = 3, the other shows a circle half-filled to explain 50 percent."
         }

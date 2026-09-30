@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "kitchen-1",
     "lessonName": "The Kitchen 1",
@@ -44,111 +44,128 @@
       "قِدْرُ صَلْصَة (كَاسَرُولَة)"
     ],
     "usage": {
-      "goal": "Name common kitchen tools, containers, foods, and basic items used for cooking.",
-      "canDoStatement": "I can name common kitchen tools, containers, foods, and basic items used for cooking",
+      "goal": "Recognize and use common the kitchen vocabulary in practical everyday situations.",
+      "canDoStatement": "I can understand and use common the kitchen words in a simple situation",
       "textType": "Mini story / visual reading",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Refrigerator", "Stove", "Oven"],
-          "scenario": "In the kitchen, I can see or use refrigerator, stove, and oven.",
+          "scenario": "Mona takes vegetables from the refrigerator, cooks them on the stove, and warms bread in the oven.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Where does Mona keep the vegetables?",
             "options": ["Refrigerator", "Stove", "Oven"],
             "expectedAnswer": "Refrigerator"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use refrigerator, stove, and oven. Emphasize refrigerator, stove, and oven and avoid clutter."
+          "imageBrief": "An adult taking vegetables from a refrigerator, with a stove and oven clearly visible in the same kitchen."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Microwave", "Dishwasher", "Toaster"],
-          "scenario": "In the kitchen, I can see or use microwave, dishwasher, and toaster.",
+          "scenario": "After lunch, Karim puts the plates in the dishwasher and reheats soup in the microwave; the toaster is ready for breakfast.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Where does Karim put the plates?",
             "options": ["Microwave", "Dishwasher", "Toaster"],
-            "expectedAnswer": "Microwave"
+            "expectedAnswer": "Dishwasher"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use microwave, dishwasher, and toaster. Emphasize microwave, dishwasher, and toaster and avoid clutter."
+          "imageBrief": "An adult loading plates into a dishwasher, with a microwave and toaster visible on the counter."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Blender", "Kettle", "Coffee Maker"],
-          "scenario": "In the kitchen, I can see or use blender, kettle, and coffee maker.",
+          "scenario": "For breakfast, Dalia uses the blender for fruit, the kettle for tea, and the coffee maker for coffee.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Dalia use for fruit?",
             "options": ["Blender", "Kettle", "Coffee Maker"],
             "expectedAnswer": "Blender"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use blender, kettle, and coffee maker. Emphasize blender, kettle, and coffee maker and avoid clutter."
+          "imageBrief": "A breakfast counter with an adult using a blender; a kettle and coffee maker are clearly separate."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Freezer", "Pot", "Pan"],
-          "scenario": "In the kitchen, I can see or use freezer, pot, and pan.",
+          "scenario": "The frozen peas are in the freezer, while a pot and a pan are ready on the stove.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Where are the frozen peas?",
             "options": ["Freezer", "Pot", "Pan"],
             "expectedAnswer": "Freezer"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use freezer, pot, and pan. Emphasize freezer, pot, and pan and avoid clutter."
+          "imageBrief": "An open freezer with a bag of peas; a pot and pan sit safely on an unlit stove."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Frying Pan", "Baking Tray", "Saucepan"],
-          "scenario": "In the kitchen, I can see or use frying pan, baking tray, and saucepan.",
+          "scenario": "Rami fries an egg in the frying pan, warms sauce in the saucepan, and puts vegetables on the baking tray.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Rami use to fry the egg?",
             "options": ["Frying Pan", "Baking Tray", "Saucepan"],
             "expectedAnswer": "Frying Pan"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use frying pan, baking tray, and saucepan. Emphasize frying pan, baking tray, and saucepan and avoid clutter."
+          "imageBrief": "An adult cooking an egg in a frying pan, with sauce in a saucepan and vegetables arranged on a baking tray."
         }
       ]
     },
     "reading": {
-      "title": "The Kitchen Mini Story",
-      "text": "I am in the kitchen. I can see refrigerator, stove, and oven. I also notice microwave, dishwasher, and toaster. I point to each item and say its English name. Then I use one more word: blender. We also remember earlier words such as sponge and brush.",
-      "imageBrief": "One uncluttered the kitchen scene supporting the reading and showing the first six target words."
+      "title": "Breakfast in a Busy Kitchen",
+      "text": "Dalia takes fruit from the refrigerator and blends it. The kettle heats water while the coffee maker makes coffee. A pot sits on the stove, and bread warms in the oven. After breakfast, she puts the dishes in the dishwasher and stores frozen food in the freezer.",
+      "imageBrief": "Show the main adult everyday situation from “Breakfast in a Busy Kitchen” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Refrigerator"
+        "prompt": "Where does Mona keep the vegetables?",
+        "answer": "Refrigerator",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-1-scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Microwave"
+        "prompt": "Where does Karim put the plates?",
+        "answer": "Dishwasher",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-1-scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Blender"
+        "prompt": "What does Dalia use for fruit?",
+        "answer": "Blender",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-1-scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Freezer"
+        "prompt": "Where are the frozen peas?",
+        "answer": "Freezer",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-1-scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Frying Pan"
+        "prompt": "What does Rami use to fry the egg?",
+        "answer": "Frying Pan",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-1-scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Refrigerator"
+        "prompt": "Use “Refrigerator” in one short sentence about an everyday situation.",
+        "answer": "Mona takes vegetables from the refrigerator, cooks them on the stove, and warms bread in the oven.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "kitchen-1-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Stove"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Toaster"
+        "prompt": "Name another lesson word that can be used with “Frying Pan” in the same situation.",
+        "answer": "Baking Tray",
+        "questionType": "transfer",
+        "responseMode": "short-answer",
+        "contextTag": "kitchen-1-transfer"
       }
     ],
     "video": {
-      "title": "The Kitchen: See It, Say It",
-      "idea": "30–50 second contextual video set in a kitchen. Show refrigerator, stove, oven, microwave, and dishwasher naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see refrigerator, stove, and oven. What can you find next?"
+      "title": "The Kitchen 1: Words in Action",
+      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
+      "scriptStarter": "Mona takes vegetables from the refrigerator, cooks them on the stove, and warms bread in the oven."
     },
     "spacedReview": "1 lesson(s) back: Sponge, Brush from bathroom-6\n3 lesson(s) back: Bath Mat, Shower Curtain from bathroom-4\n7 lesson(s) back: Books, Photo Album from bedroom-4"
   },
@@ -197,111 +214,128 @@
       "نَشَّابَة / شَوْبَك (مِدْلَاكُ العَجِين)"
     ],
     "usage": {
-      "goal": "Name common kitchen tools, containers, foods, and basic items used for cooking.",
-      "canDoStatement": "I can name common kitchen tools, containers, foods, and basic items used for cooking",
+      "goal": "Recognize and use common the kitchen vocabulary in practical everyday situations.",
+      "canDoStatement": "I can understand and use common the kitchen words in a simple situation",
       "textType": "Mini story / visual reading",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Wok", "Casserole Dish", "Baking Dish"],
-          "scenario": "In the kitchen, I can see or use wok, casserole dish, and baking dish.",
+          "scenario": "At dinner, Chen cooks vegetables in a wok and serves baked food from a casserole dish and a baking dish.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Chen use to cook the vegetables?",
             "options": ["Wok", "Casserole Dish", "Baking Dish"],
             "expectedAnswer": "Wok"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use wok, casserole dish, and baking dish. Emphasize wok, casserole dish, and baking dish and avoid clutter."
+          "imageBrief": "An adult cooking vegetables in a wok, with distinct casserole and baking dishes ready for serving."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Steamer", "Pressure Cooker", "Fork"],
-          "scenario": "In the kitchen, I can see or use steamer, pressure cooker, and fork.",
+          "scenario": "Sara cooks rice in the pressure cooker, steams vegetables in the steamer, and places a fork beside the plate.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Sara use for the rice?",
             "options": ["Steamer", "Pressure Cooker", "Fork"],
-            "expectedAnswer": "Steamer"
+            "expectedAnswer": "Pressure Cooker"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use steamer, pressure cooker, and fork. Emphasize steamer, pressure cooker, and fork and avoid clutter."
+          "imageBrief": "An adult preparing rice in a pressure cooker and vegetables in a steamer, with a fork beside a plate."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Knife", "Spoon", "Spatula"],
-          "scenario": "In the kitchen, I can see or use knife, spoon, and spatula.",
+          "scenario": "Khaled cuts a tomato with a knife, tastes the soup with a spoon, and turns food with a spatula.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Khaled use to cut the tomato?",
             "options": ["Knife", "Spoon", "Spatula"],
             "expectedAnswer": "Knife"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use knife, spoon, and spatula. Emphasize knife, spoon, and spatula and avoid clutter."
+          "imageBrief": "A safe kitchen scene with an adult cutting a tomato with a knife, a spoon by soup, and a spatula by a pan."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Ladle", "Whisk", "Tongs"],
-          "scenario": "In the kitchen, I can see or use ladle, whisk, and tongs.",
+          "scenario": "Nora serves soup with a ladle, mixes eggs with a whisk, and lifts salad with tongs.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Nora use for the soup?",
             "options": ["Ladle", "Whisk", "Tongs"],
             "expectedAnswer": "Ladle"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use ladle, whisk, and tongs. Emphasize ladle, whisk, and tongs and avoid clutter."
+          "imageBrief": "An adult serving soup with a ladle; a whisk is in a bowl of eggs and tongs are beside salad."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Peeler", "Grater", "Rolling Pin"],
-          "scenario": "In the kitchen, I can see or use peeler, grater, and rolling pin.",
+          "scenario": "For the pie, Adam uses a peeler on the apples, a grater on the cheese, and a rolling pin on the dough.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Adam use on the dough?",
             "options": ["Peeler", "Grater", "Rolling Pin"],
-            "expectedAnswer": "Peeler"
+            "expectedAnswer": "Rolling Pin"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use peeler, grater, and rolling pin. Emphasize peeler, grater, and rolling pin and avoid clutter."
+          "imageBrief": "An adult rolling dough with a rolling pin, with a peeler near apples and a grater near cheese."
         }
       ]
     },
     "reading": {
-      "title": "The Kitchen Mini Story",
-      "text": "I am in the kitchen. I can see wok, casserole dish, and baking dish. I also notice steamer, pressure cooker, and fork. I point to each item and say its English name. Then I use one more word: knife. We also remember earlier words such as refrigerator and stove.",
-      "imageBrief": "One uncluttered the kitchen scene supporting the reading and showing the first six target words."
+      "title": "Preparing Dinner",
+      "text": "Sara cooks rice in the pressure cooker and vegetables in the steamer. She cuts tomatoes with a knife and turns food with a spatula. A ladle is ready for the soup, and tongs are beside the salad. Last, she uses a whisk and rolling pin for dessert.",
+      "imageBrief": "Show the main adult everyday situation from “Preparing Dinner” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Wok"
+        "prompt": "What does Chen use to cook the vegetables?",
+        "answer": "Wok",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-2-scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Steamer"
+        "prompt": "What does Sara use for the rice?",
+        "answer": "Pressure Cooker",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-2-scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Knife"
+        "prompt": "What does Khaled use to cut the tomato?",
+        "answer": "Knife",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-2-scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Ladle"
+        "prompt": "What does Nora use for the soup?",
+        "answer": "Ladle",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-2-scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Peeler"
+        "prompt": "What does Adam use on the dough?",
+        "answer": "Rolling Pin",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-2-scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Wok"
+        "prompt": "Use “Wok” in one short sentence about an everyday situation.",
+        "answer": "At dinner, Chen cooks vegetables in a wok and serves baked food from a casserole dish and a baking dish.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "kitchen-2-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Casserole Dish"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Fork"
+        "prompt": "Name another lesson word that can be used with “Peeler” in the same situation.",
+        "answer": "Grater",
+        "questionType": "transfer",
+        "responseMode": "short-answer",
+        "contextTag": "kitchen-2-transfer"
       }
     ],
     "video": {
-      "title": "The Kitchen: See It, Say It",
-      "idea": "30–50 second contextual video set in a kitchen. Show wok, casserole dish, baking dish, steamer, and pressure cooker naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see wok, casserole dish, and baking dish. What can you find next?"
+      "title": "The Kitchen 2: Words in Action",
+      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
+      "scriptStarter": "At dinner, Chen cooks vegetables in a wok and serves baked food from a casserole dish and a baking dish."
     },
     "spacedReview": "1 lesson(s) back: Refrigerator, Stove from kitchen-1\n3 lesson(s) back: Face Cream, Sunscreen from bathroom-5\n7 lesson(s) back: Bathtub, Shower from bathroom-1"
   },
@@ -350,111 +384,128 @@
       "فُوطَةُ مَطْبَخ (مِنْشَفَةُ صُحُون)"
     ],
     "usage": {
-      "goal": "Name common kitchen tools, containers, foods, and basic items used for cooking.",
-      "canDoStatement": "I can name common kitchen tools, containers, foods, and basic items used for cooking",
+      "goal": "Recognize and use common the kitchen vocabulary in practical everyday situations.",
+      "canDoStatement": "I can understand and use common the kitchen words in a simple situation",
       "textType": "Mini story / visual reading",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Can Opener", "Corkscrew", "Plate"],
-          "scenario": "In the kitchen, I can see or use can opener, corkscrew, and plate.",
+          "scenario": "At dinner, Layla opens a can with the can opener, opens a bottle with the corkscrew, and sets out a plate.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Layla use for the can?",
             "options": ["Can Opener", "Corkscrew", "Plate"],
             "expectedAnswer": "Can Opener"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use can opener, corkscrew, and plate. Emphasize can opener, corkscrew, and plate and avoid clutter."
+          "imageBrief": "An adult using a can opener, with a corkscrew beside a bottle and an empty plate nearby."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bowl", "Mug", "Glass"],
-          "scenario": "In the kitchen, I can see or use bowl, mug, and glass.",
+          "scenario": "Hassan pours soup into a bowl, coffee into a mug, and water into a glass.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which item holds the soup?",
             "options": ["Bowl", "Mug", "Glass"],
             "expectedAnswer": "Bowl"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use bowl, mug, and glass. Emphasize bowl, mug, and glass and avoid clutter."
+          "imageBrief": "An adult serving soup in a bowl, coffee in a mug, and water in a clear glass."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cup", "Saucer", "Cutting Board"],
-          "scenario": "In the kitchen, I can see or use cup, saucer, and cutting board.",
+          "scenario": "The cup sits on its saucer beside the cutting board.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What is directly under the cup?",
             "options": ["Cup", "Saucer", "Cutting Board"],
-            "expectedAnswer": "Cup"
+            "expectedAnswer": "Saucer"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use cup, saucer, and cutting board. Emphasize cup, saucer, and cutting board and avoid clutter."
+          "imageBrief": "A cup resting on a saucer next to a clean cutting board."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Colander", "Measuring Cup", "Measuring Spoon"],
-          "scenario": "In the kitchen, I can see or use colander, measuring cup, and measuring spoon.",
+          "scenario": "Amal drains pasta in the colander and uses a measuring cup and measuring spoon for the sauce.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Amal use to drain the pasta?",
             "options": ["Colander", "Measuring Cup", "Measuring Spoon"],
             "expectedAnswer": "Colander"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use colander, measuring cup, and measuring spoon. Emphasize colander, measuring cup, and measuring spoon and avoid clutter."
+          "imageBrief": "An adult draining pasta in a colander, with a measuring cup and measuring spoon beside sauce ingredients."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Mixing Bowl", "Pitcher", "Dish Towel"],
-          "scenario": "In the kitchen, I can see or use mixing bowl, pitcher, and dish towel.",
+          "scenario": "Yara mixes juice in the pitcher, dries the mixing bowl with a dish towel, and sets both on the counter.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Yara dry?",
             "options": ["Mixing Bowl", "Pitcher", "Dish Towel"],
             "expectedAnswer": "Mixing Bowl"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use mixing bowl, pitcher, and dish towel. Emphasize mixing bowl, pitcher, and dish towel and avoid clutter."
+          "imageBrief": "An adult drying a mixing bowl with a dish towel while a pitcher of juice sits on the counter."
         }
       ]
     },
     "reading": {
-      "title": "The Kitchen Mini Story",
-      "text": "I am in the kitchen. I can see can opener, corkscrew, and plate. I also notice bowl, mug, and glass. I point to each item and say its English name. Then I use one more word: cup. We also remember earlier words such as wok and casserole dish.",
-      "imageBrief": "One uncluttered the kitchen scene supporting the reading and showing the first six target words."
+      "title": "Setting the Table",
+      "text": "Layla opens a can and begins dinner. She serves soup in a bowl and water in a glass. A cup rests on a saucer. She measures the sauce with a measuring cup and spoon, drains pasta in a colander, and dries the mixing bowl with a dish towel.",
+      "imageBrief": "Show the main adult everyday situation from “Setting the Table” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Can Opener"
+        "prompt": "What does Layla use for the can?",
+        "answer": "Can Opener",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-3-scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Bowl"
+        "prompt": "Which item holds the soup?",
+        "answer": "Bowl",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-3-scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Cup"
+        "prompt": "What is directly under the cup?",
+        "answer": "Saucer",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-3-scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Colander"
+        "prompt": "What does Amal use to drain the pasta?",
+        "answer": "Colander",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-3-scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Mixing Bowl"
+        "prompt": "What does Yara dry?",
+        "answer": "Mixing Bowl",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-3-scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Can Opener"
+        "prompt": "Use “Can Opener” in one short sentence about an everyday situation.",
+        "answer": "At dinner, Layla opens a can with the can opener, opens a bottle with the corkscrew, and sets out a plate.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "kitchen-3-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Corkscrew"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Glass"
+        "prompt": "Name another lesson word that can be used with “Mixing Bowl” in the same situation.",
+        "answer": "Pitcher",
+        "questionType": "transfer",
+        "responseMode": "short-answer",
+        "contextTag": "kitchen-3-transfer"
       }
     ],
     "video": {
-      "title": "The Kitchen: See It, Say It",
-      "idea": "30–50 second contextual video set in a kitchen. Show can opener, corkscrew, plate, bowl, and mug naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see can opener, corkscrew, and plate. What can you find next?"
+      "title": "The Kitchen 3: Words in Action",
+      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
+      "scriptStarter": "At dinner, Layla opens a can with the can opener, opens a bottle with the corkscrew, and sets out a plate."
     },
     "spacedReview": "1 lesson(s) back: Wok, Casserole Dish from kitchen-2\n3 lesson(s) back: Sponge, Brush from bathroom-6\n7 lesson(s) back: Soap, Shampoo from bathroom-2"
   },
@@ -503,111 +554,128 @@
       "بَيْضَة (بَيْض)"
     ],
     "usage": {
-      "goal": "Name common kitchen tools, containers, foods, and basic items used for cooking.",
-      "canDoStatement": "I can name common kitchen tools, containers, foods, and basic items used for cooking",
+      "goal": "Recognize and use common the kitchen vocabulary in practical everyday situations.",
+      "canDoStatement": "I can understand and use common the kitchen words in a simple situation",
       "textType": "Mini story / visual reading",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Oven Mitt", "Apron", "Trash Can"],
-          "scenario": "In the kitchen, I can see or use oven mitt, apron, and trash can.",
+          "scenario": "While baking, Tarek wears an apron, uses an oven mitt, and puts scraps in the trash can.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What protects Tarek's hand from the hot tray?",
             "options": ["Oven Mitt", "Apron", "Trash Can"],
             "expectedAnswer": "Oven Mitt"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use oven mitt, apron, and trash can. Emphasize oven mitt, apron, and trash can and avoid clutter."
+          "imageBrief": "An adult baker wearing an apron and oven mitt while placing food scraps in a kitchen trash can."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Paper Towel", "Plastic Wrap", "Aluminum Foil"],
-          "scenario": "In the kitchen, I can see or use paper towel, plastic wrap, and aluminum foil.",
+          "scenario": "Heba covers one dish with plastic wrap, another with aluminum foil, and cleans a spill with a paper towel.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Heba use to clean the spill?",
             "options": ["Paper Towel", "Plastic Wrap", "Aluminum Foil"],
             "expectedAnswer": "Paper Towel"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use paper towel, plastic wrap, and aluminum foil. Emphasize paper towel, plastic wrap, and aluminum foil and avoid clutter."
+          "imageBrief": "An adult wiping a small spill with paper towel; two dishes are separately covered with plastic wrap and aluminum foil."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Food Container", "Sponge", "Dish Soap"],
-          "scenario": "In the kitchen, I can see or use food container, sponge, and dish soap.",
+          "scenario": "After dinner, Walid washes a food container with dish soap and a sponge.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Walid wash?",
             "options": ["Food Container", "Sponge", "Dish Soap"],
             "expectedAnswer": "Food Container"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use food container, sponge, and dish soap. Emphasize food container, sponge, and dish soap and avoid clutter."
+          "imageBrief": "An adult washing a reusable food container at the sink with dish soap and a sponge."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Dish Rack", "Cling Film", "Bread"],
-          "scenario": "In the kitchen, I can see or use dish rack, cling film, and bread.",
+          "scenario": "The clean dishes dry in the dish rack while bread is covered with cling film.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Where do the clean dishes dry?",
             "options": ["Dish Rack", "Cling Film", "Bread"],
             "expectedAnswer": "Dish Rack"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use dish rack, cling film, and bread. Emphasize dish rack, cling film, and bread and avoid clutter."
+          "imageBrief": "Clean dishes drying in a dish rack, with a loaf of bread partly covered by transparent cling film."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Butter", "Milk", "Egg"],
-          "scenario": "In the kitchen, I can see or use butter, milk, and egg.",
+          "scenario": "For breakfast, Reem fries an egg and serves it with bread, butter, and milk.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Reem fry?",
             "options": ["Butter", "Milk", "Egg"],
-            "expectedAnswer": "Butter"
+            "expectedAnswer": "Egg"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use butter, milk, and egg. Emphasize butter, milk, and egg and avoid clutter."
+          "imageBrief": "An adult frying an egg and setting a breakfast table with bread, butter, and a glass of milk."
         }
       ]
     },
     "reading": {
-      "title": "The Kitchen Mini Story",
-      "text": "I am in the kitchen. I can see oven mitt, apron, and trash can. I also notice paper towel, plastic wrap, and aluminum foil. I point to each item and say its English name. Then I use one more word: food container. We also remember earlier words such as can opener and corkscrew.",
-      "imageBrief": "One uncluttered the kitchen scene supporting the reading and showing the first six target words."
+      "title": "Cooking and Cleaning",
+      "text": "Tarek wears an apron and uses an oven mitt for the hot tray. Heba covers leftover food with plastic wrap and aluminum foil. After dinner, they wash a food container with a sponge and dish soap. Clean plates dry in the dish rack, ready for breakfast.",
+      "imageBrief": "Show the main adult everyday situation from “Cooking and Cleaning” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Oven Mitt"
+        "prompt": "What protects Tarek's hand from the hot tray?",
+        "answer": "Oven Mitt",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-4-scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Paper Towel"
+        "prompt": "What does Heba use to clean the spill?",
+        "answer": "Paper Towel",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-4-scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Food Container"
+        "prompt": "What does Walid wash?",
+        "answer": "Food Container",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-4-scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Dish Rack"
+        "prompt": "Where do the clean dishes dry?",
+        "answer": "Dish Rack",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-4-scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Butter"
+        "prompt": "What does Reem fry?",
+        "answer": "Egg",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-4-scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Oven Mitt"
+        "prompt": "Use “Oven Mitt” in one short sentence about an everyday situation.",
+        "answer": "While baking, Tarek wears an apron, uses an oven mitt, and puts scraps in the trash can.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "kitchen-4-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Apron"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Aluminum Foil"
+        "prompt": "Name another lesson word that can be used with “Butter” in the same situation.",
+        "answer": "Milk",
+        "questionType": "transfer",
+        "responseMode": "short-answer",
+        "contextTag": "kitchen-4-transfer"
       }
     ],
     "video": {
-      "title": "The Kitchen: See It, Say It",
-      "idea": "30–50 second contextual video set in a kitchen. Show oven mitt, apron, trash can, paper towel, and plastic wrap naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see oven mitt, apron, and trash can. What can you find next?"
+      "title": "The Kitchen 4: Words in Action",
+      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
+      "scriptStarter": "While baking, Tarek wears an apron, uses an oven mitt, and puts scraps in the trash can."
     },
     "spacedReview": "1 lesson(s) back: Can Opener, Corkscrew from kitchen-3\n3 lesson(s) back: Refrigerator, Stove from kitchen-1\n7 lesson(s) back: Toilet Paper, Cotton Balls from bathroom-3"
   },
@@ -647,99 +715,113 @@
       "خَلّ",
       "عَسَل (عَسَلُ نَحْل)",
       "تُفَّاحَة",
-      "-"
+      "عَصِير"
     ],
     "usage": {
-      "goal": "Name common kitchen tools, containers, foods, and basic items used for cooking.",
-      "canDoStatement": "I can name common kitchen tools, containers, foods, and basic items used for cooking",
+      "goal": "Recognize and use common the kitchen vocabulary in practical everyday situations.",
+      "canDoStatement": "I can understand and use common the kitchen words in a simple situation",
       "textType": "Mini story / visual reading",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Cheese", "Rice", "Pasta"],
-          "scenario": "In the kitchen, I can see or use cheese, rice, and pasta.",
+          "scenario": "For a quick dinner, Bilal cooks pasta and rice, then adds cheese to the pasta.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Bilal add to the pasta?",
             "options": ["Cheese", "Rice", "Pasta"],
             "expectedAnswer": "Cheese"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use cheese, rice, and pasta. Emphasize cheese, rice, and pasta and avoid clutter."
+          "imageBrief": "An adult adding grated cheese to cooked pasta, with a separate bowl of rice nearby."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cooking Oil", "Salt", "Sugar"],
-          "scenario": "In the kitchen, I can see or use cooking oil, salt, and sugar.",
+          "scenario": "Maha pours cooking oil into the pan and adds a little salt, but no sugar.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Maha pour into the pan?",
             "options": ["Cooking Oil", "Salt", "Sugar"],
             "expectedAnswer": "Cooking Oil"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use cooking oil, salt, and sugar. Emphasize cooking oil, salt, and sugar and avoid clutter."
+          "imageBrief": "An adult pouring cooking oil into a pan, with separate unlabelled containers of salt and sugar nearby."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pepper", "Flour", "Vinegar"],
-          "scenario": "In the kitchen, I can see or use pepper, flour, and vinegar.",
+          "scenario": "To make the sauce, Fadi mixes flour with vinegar and adds pepper.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Fadi add for a spicy taste?",
             "options": ["Pepper", "Flour", "Vinegar"],
             "expectedAnswer": "Pepper"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use pepper, flour, and vinegar. Emphasize pepper, flour, and vinegar and avoid clutter."
+          "imageBrief": "An adult making sauce with flour and vinegar, sprinkling visible ground pepper into the bowl."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Honey", "Apple", "Juice"],
-          "scenario": "In the kitchen, I can see or use honey, apple, and juice.",
+          "scenario": "At breakfast, Amina puts honey on apple slices and drinks a glass of juice.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does Amina put on the apple slices?",
             "options": ["Honey", "Apple", "Juice"],
             "expectedAnswer": "Honey"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the kitchen that represents: In the kitchen, I can see or use honey, apple, and juice. Emphasize honey, apple, and juice and avoid clutter."
+          "imageBrief": "An adult drizzling honey over apple slices, with a glass of juice beside the plate."
         }
       ]
     },
     "reading": {
-      "title": "The Kitchen Mini Story",
-      "text": "I am in the kitchen. I can see cheese, rice, and pasta. I also notice cooking oil, salt, and sugar. I point to each item and say its English name. Then I use one more word: pepper. We also remember earlier words such as oven mitt and apron.",
-      "imageBrief": "One uncluttered the kitchen scene supporting the reading and showing the first six target words."
+      "title": "A Simple Meal",
+      "text": "Maha pours cooking oil into a pan and adds a little salt and pepper. Bilal cooks rice and pasta, then adds cheese to the pasta. For dessert, they cut an apple and add honey. They drink juice with the meal and store the flour, sugar, and vinegar.",
+      "imageBrief": "Show the main adult everyday situation from “A Simple Meal” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Cheese"
+        "prompt": "What does Bilal add to the pasta?",
+        "answer": "Cheese",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-5-scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Cooking Oil"
+        "prompt": "What does Maha pour into the pan?",
+        "answer": "Cooking Oil",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-5-scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Pepper"
+        "prompt": "What does Fadi add for a spicy taste?",
+        "answer": "Pepper",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-5-scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Honey"
+        "prompt": "What does Amina put on the apple slices?",
+        "answer": "Honey",
+        "questionType": "context-cloze",
+        "responseMode": "choice",
+        "contextTag": "kitchen-5-scene-4"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Cheese"
+        "prompt": "Use “Cheese” in one short sentence about an everyday situation.",
+        "answer": "For a quick dinner, Bilal cooks pasta and rice, then adds cheese to the pasta.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "kitchen-5-personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Rice"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Sugar"
+        "prompt": "Name another lesson word that can be used with “Honey” in the same situation.",
+        "answer": "Apple",
+        "questionType": "transfer",
+        "responseMode": "short-answer",
+        "contextTag": "kitchen-5-transfer"
       }
     ],
     "video": {
-      "title": "The Kitchen: See It, Say It",
-      "idea": "30–50 second contextual video set in a kitchen. Show cheese, rice, pasta, cooking oil, and salt naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see cheese, rice, and pasta. What can you find next?"
+      "title": "The Kitchen 5: Words in Action",
+      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
+      "scriptStarter": "For a quick dinner, Bilal cooks pasta and rice, then adds cheese to the pasta."
     },
     "spacedReview": "1 lesson(s) back: Oven Mitt, Apron from kitchen-4\n3 lesson(s) back: Wok, Casserole Dish from kitchen-2\n7 lesson(s) back: Bath Mat, Shower Curtain from bathroom-4"
   }

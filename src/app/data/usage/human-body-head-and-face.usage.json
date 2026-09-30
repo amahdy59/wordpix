@@ -52,104 +52,104 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Head", "Skull", "Scalp"],
-          "scenario": "During the visit, the patient and medical team deal with head, skull, and scalp. Each term belongs to a different part of the care process.",
+          "scenario": "After bumping her head on an open cupboard, Lina feels a tender spot on her scalp. The doctor checks her skull and asks whether she felt dizzy.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which part of Lina's head feels tender?",
             "options": ["Head", "Skull", "Scalp"],
-            "expectedAnswer": "Head"
+            "expectedAnswer": "Scalp"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with head, skull, and scalp. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Show an adult patient at a clinic pointing to a tender spot on her scalp while a doctor carefully examines her head after a minor household bump. Keep the cupboard incident implied rather than showing an injury, and use no written labels."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Temple", "Crown", "Forehead"],
-          "scenario": "During the visit, the patient and medical team deal with temple, crown, and forehead. Each term belongs to a different part of the care process.",
+          "scenario": "At the salon, Maya points to her temple. \"Please cut this hair shorter, but leave more on the crown of my head. Keep my forehead clear, too.\"",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Where does Maya want to leave more hair?",
             "options": ["Temple", "Crown", "Forehead"],
-            "expectedAnswer": "Temple"
+            "expectedAnswer": "Crown"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with temple, crown, and forehead. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Show an adult client discussing a haircut with a stylist at a salon mirror. Her temple, forehead, and the crown of her head are visible. Use no written labels; the text supplies her preferences."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Jaw", "Chin", "Neck"],
-          "scenario": "During the visit, the patient and medical team deal with jaw, chin, and neck. Each term belongs to a different part of the care process.",
+          "scenario": "Sam is having a passport photo taken. \"Relax your jaw and lift your chin a little,\" says the photographer. \"Is that comfortable for your neck?\"",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does the photographer ask Sam to lift?",
             "options": ["Jaw", "Chin", "Neck"],
-            "expectedAnswer": "Jaw"
+            "expectedAnswer": "Chin"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with jaw, chin, and neck. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Show an adult seated for a passport photograph while a photographer gives directions. Keep the client's jaw, chin, and neck visible in a three-quarter view. Use no written labels."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Throat", "Eye", "Eyebrow"],
-          "scenario": "During the visit, the patient and medical team deal with throat, eye, and eyebrow. Each term belongs to a different part of the care process.",
+          "scenario": "Noor tells the pharmacist that her throat is sore and one eye feels itchy. She raises an eyebrow when he asks whether she has changed her face cream.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which body part does Noor say is sore?",
             "options": ["Throat", "Eye", "Eyebrow"],
             "expectedAnswer": "Throat"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with throat, eye, and eyebrow. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Show an adult customer speaking with a pharmacist, lightly touching her throat and indicating one irritated eye while one eyebrow is raised. Keep the pharmacy setting recognizable without readable text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Eyelid", "Eyelash", "Pupil"],
-          "scenario": "During the visit, the patient and medical team deal with eyelid, eyelash, and pupil. Each term belongs to a different part of the care process.",
+          "scenario": "Amir notices an eyelash on his cheek before his eye test. \"Keep your eyelid open, please,\" says the optometrist as she checks his pupil with a small light.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does the optometrist check with the light?",
             "options": ["Eyelid", "Eyelash", "Pupil"],
-            "expectedAnswer": "Eyelid"
+            "expectedAnswer": "Pupil"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with eyelid, eyelash, and pupil. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Show an optometrist conducting an adult eye examination with a small light. The patient's eye is open, and a loose eyelash rests on his cheek. Use a close view with no written labels."
         }
       ]
     },
     "reading": {
       "title": "The Human Body (Head & Face): Email",
-      "text": "Omar has an everyday task connected to the human body (head & face). The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with head, skull, and scalp. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with temple, crown, and forehead. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with jaw, chin, and neck. Each term belongs to a different part of the care process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "text": "Hi Maya, I have three appointments tomorrow. First, I need a passport photo. Last time, the photographer asked me to lift my chin and relax my jaw. Then I'm going to the salon. I want shorter hair around my temples, but more hair on the crown of my head. Finally, I have an eye test. I'll tell the optometrist that my eyes feel dry after work. Can we meet for coffee afterwards? Sam",
       "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Head & Face). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Head"
+        "prompt": "Where does Lina feel a tender spot after bumping her head?",
+        "answer": "Scalp"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Temple"
+        "prompt": "Where does Maya want the stylist to leave more hair?",
+        "answer": "Crown"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Jaw"
+        "prompt": "What does the photographer ask Sam to lift?",
+        "answer": "Chin"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
+        "prompt": "Which body part does Noor describe as sore?",
         "answer": "Throat"
       },
       {
-        "prompt": "Context choice: Which target word best fits the scene?",
-        "answer": "Eyelid"
+        "prompt": "What does the optometrist check with a small light?",
+        "answer": "Pupil"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Head"
+        "prompt": "In Sam's email, what does he need before his visit to the salon?",
+        "answer": "A passport photo"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Temple"
+        "prompt": "What will Sam tell the optometrist about his eyes?",
+        "answer": "They feel dry after work."
       },
       {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
+        "prompt": "Why does Sam mention the crown of his head when describing his haircut?",
+        "answer": "He wants to leave more hair there."
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
+        "prompt": "Use it: Tell a photographer how you feel about your pose. Use chin, jaw, or neck in your reply.",
         "answer": "Open response"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “Go-Kart” in a sentence connected to this lesson.",
+        "prompt": "Use it: Ask a stylist for a haircut. Say where you want shorter hair and where you want to keep it longer.",
         "answer": "Open response"
       }
     ],
@@ -213,20 +213,20 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Iris", "Retina", "Cornea"],
-          "scenario": "During the visit, the patient and medical team deal with iris, retina, and cornea. Each term belongs to a different part of the care process.",
+          "scenario": "At an eye clinic, Salma looks at a bright target while the optometrist examines her eye. The coloured iris surrounds the pupil, the clear cornea is at the front, and the retina is at the back.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which part of the eye is at the back and receives the image?",
             "options": ["Iris", "Retina", "Cornea"],
-            "expectedAnswer": "Iris"
+            "expectedAnswer": "Retina"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with iris, retina, and cornea. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Tear Duct", "Eye Socket", "Nose"],
-          "scenario": "During the visit, the patient and medical team deal with tear duct, eye socket, and nose. Each term belongs to a different part of the care process.",
+          "scenario": "After a windy walk, Omar's eye waters. The nurse explains that tears drain through a tear duct near the nose, while the eye socket protects the eye behind the face.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Where do Omar's tears drain?",
             "options": ["Tear Duct", "Eye Socket", "Nose"],
             "expectedAnswer": "Tear Duct"
           },
@@ -235,9 +235,9 @@
         {
           "chunkNumber": 3,
           "targetWords": ["Nostril", "Bridge of Nose", "Mouth"],
-          "scenario": "During the visit, the patient and medical team deal with nostril, bridge of nose, and mouth. Each term belongs to a different part of the care process.",
+          "scenario": "Before a portrait session, the photographer asks Hana to turn her face slightly. The bridge of her nose catches the light, and she checks that one nostril is not blocked before she smiles.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does Hana check before she smiles?",
             "options": ["Nostril", "Bridge of Nose", "Mouth"],
             "expectedAnswer": "Nostril"
           },
@@ -246,9 +246,9 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Lip", "Upper Lip", "Lower Lip"],
-          "scenario": "During the visit, the patient and medical team deal with lip, upper lip, and lower lip. Each term belongs to a different part of the care process.",
+          "scenario": "At a makeup counter, Rania tests a lip balm. She applies a little to her upper lip and lower lip, then checks the colour in a small mirror.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Where does Rania apply the lip balm?",
             "options": ["Lip", "Upper Lip", "Lower Lip"],
             "expectedAnswer": "Lip"
           },
@@ -257,11 +257,11 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Tongue", "Palate", "Gums"],
-          "scenario": "During the visit, the patient and medical team deal with tongue, palate, and gums. Each term belongs to a different part of the care process.",
+          "scenario": "At a dental check-up, the dentist asks David to open his mouth. She checks his gums, asks him to lift his tongue, and looks at the roof of his mouth, called the palate.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What is the roof of David's mouth called?",
             "options": ["Tongue", "Palate", "Gums"],
-            "expectedAnswer": "Tongue"
+            "expectedAnswer": "Palate"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with tongue, palate, and gums. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         }
@@ -374,31 +374,31 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Ear", "Earlobe", "Ear Canal"],
-          "scenario": "During the visit, the patient and medical team deal with ear, earlobe, and ear canal. Each term belongs to a different part of the care process.",
+          "scenario": "At a jewellery shop, Leila tries on a small earring. The assistant checks that the clasp is comfortable on her earlobe and reminds her never to push it into the ear canal.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Where does the earring sit?",
             "options": ["Ear", "Earlobe", "Ear Canal"],
-            "expectedAnswer": "Ear"
+            "expectedAnswer": "Earlobe"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with ear, earlobe, and ear canal. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Eardrum", "Inner Ear", "Outer Ear"],
-          "scenario": "During the visit, the patient and medical team deal with eardrum, inner ear, and outer ear. Each term belongs to a different part of the care process.",
+          "scenario": "During a hearing test, the specialist looks at Maya's outer ear before checking the eardrum. She explains that the inner ear helps the body hear and stay balanced.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does the specialist look at first?",
             "options": ["Eardrum", "Inner Ear", "Outer Ear"],
-            "expectedAnswer": "Eardrum"
+            "expectedAnswer": "Outer Ear"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with eardrum, inner ear, and outer ear. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Hearing", "Sound Wave", "Balance"],
-          "scenario": "During the visit, the patient and medical team deal with hearing, sound wave, and balance. Each term belongs to a different part of the care process.",
+          "scenario": "At the clinic, a short sound wave plays through Daniel's headphones. The specialist records his hearing and asks whether he feels any change in his balance.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does the specialist record?",
             "options": ["Hearing", "Sound Wave", "Balance"],
             "expectedAnswer": "Hearing"
           },
@@ -407,22 +407,22 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Cochlea", "Tooth", "Incisor"],
-          "scenario": "During the visit, the patient and medical team deal with cochlea, tooth, and incisor. Each term belongs to a different part of the care process.",
+          "scenario": "At a science museum, the guide compares a model of the cochlea with a model tooth. She points out that an incisor is the sharp front tooth used for cutting food.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which tooth is used for cutting food?",
             "options": ["Cochlea", "Tooth", "Incisor"],
-            "expectedAnswer": "Cochlea"
+            "expectedAnswer": "Incisor"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with cochlea, tooth, and incisor. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Canine", "Molar", "Premolar"],
-          "scenario": "During the visit, the patient and medical team deal with canine, molar, and premolar. Each term belongs to a different part of the care process.",
+          "scenario": "At a dental lesson, the teacher asks students to compare their teeth. A canine tears food, a premolar helps crush it, and a molar does most of the grinding.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which tooth does most of the grinding?",
             "options": ["Canine", "Molar", "Premolar"],
-            "expectedAnswer": "Canine"
+            "expectedAnswer": "Molar"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with canine, molar, and premolar. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         }
@@ -533,9 +533,9 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Wisdom Tooth", "Baby Tooth", "Enamel"],
-          "scenario": "During the visit, the patient and medical team deal with wisdom tooth, baby tooth, and enamel. Each term belongs to a different part of the care process.",
+          "scenario": "At a dental appointment, Yasmin asks why her wisdom tooth hurts. The dentist explains that enamel protects each tooth, while a baby tooth is the first kind of tooth children have.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What is hurting Yasmin?",
             "options": ["Wisdom Tooth", "Baby Tooth", "Enamel"],
             "expectedAnswer": "Wisdom Tooth"
           },
@@ -544,31 +544,31 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Root", "Hair", "Hairline"],
-          "scenario": "During the visit, the patient and medical team deal with root, hair, and hairline. Each term belongs to a different part of the care process.",
+          "scenario": "At the salon, Karim asks for a shorter haircut but wants a clean hairline. The barber trims each section of hair carefully and avoids pulling at the root.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does Karim want the barber to keep clean?",
             "options": ["Root", "Hair", "Hairline"],
-            "expectedAnswer": "Root"
+            "expectedAnswer": "Hairline"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with root, hair, and hairline. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Part", "Strand", "Beard"],
-          "scenario": "During the visit, the patient and medical team deal with part, strand, and beard. Each term belongs to a different part of the care process.",
+          "scenario": "Before a job interview, Nabil checks his beard in the mirror. He changes the part of his hair and removes one loose strand from his jacket.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does Nabil check in the mirror?",
             "options": ["Part", "Strand", "Beard"],
-            "expectedAnswer": "Part"
+            "expectedAnswer": "Beard"
           },
           "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with part, strand, and beard. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Mustache", "Sideburns", "Stubble"],
-          "scenario": "During the visit, the patient and medical team deal with mustache, sideburns, and stubble. Each term belongs to a different part of the care process.",
+          "scenario": "For a formal event, Tarek trims his stubble and shortens his sideburns. He leaves his mustache neat so his face looks tidy in the photographs.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "What does Tarek leave neat?",
             "options": ["Mustache", "Sideburns", "Stubble"],
             "expectedAnswer": "Mustache"
           },

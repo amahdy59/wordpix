@@ -17,6 +17,9 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
+import { findLessonSceneImage, loadLessonUsage } from "../data/usageRegistry";
+import type { UsageSceneChunk } from "../data/usageTypes";
+import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
   step: number;
@@ -40,16 +43,45 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   const spoken = useSpokenFeedback();
   const queue = useDrillQueue(words);
   const currentTargetWord = queue.current ?? words[0];
+  const [contextScene, setContextScene] = useState<UsageSceneChunk | null>(null);
+  const [sceneImageFailed, setSceneImageFailed] = useState(false);
   usePrefetchImage(queue.next);
+
+  useEffect(() => {
+    let cancelled = false;
+    setContextScene(null);
+    setSceneImageFailed(false);
+
+    void loadLessonUsage(lessonId).then((usage) => {
+      if (cancelled || !usage) return;
+      const matchingScene = findLessonSceneImage(usage, currentTargetWord.label);
+      if (matchingScene) setContextScene(matchingScene);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [currentTargetWord.label, lessonId]);
 
   const options = useMemo(() => {
     const otherWords = words.filter((word) => word.id !== currentTargetWord.id);
     return shuffleArray([currentTargetWord, ...shuffleArray(otherWords).slice(0, 3)]);
   }, [currentTargetWord, words]);
-  const answerSentence = useMemo(() => {
-    const authored = getAuthoredSentence(currentTargetWord.id);
-    return authored?.full ?? identifySentence(currentTargetWord.label, currentTargetWord.topic);
-  }, [currentTargetWord]);
+  const authoredSentence = useMemo(
+    () => getAuthoredSentence(currentTargetWord.id),
+    [currentTargetWord.id]
+  );
+  const answerSentence = useMemo(
+    () =>
+      authoredSentence?.full ?? identifySentence(currentTargetWord.label, currentTargetWord.topic),
+    [authoredSentence, currentTargetWord]
+  );
+  const questionImagePath = authoredSentence?.media?.imagePath ?? contextScene?.imagePath;
+  const questionImageAlt =
+    authoredSentence?.media?.imageAlt ??
+    contextScene?.imageAlt ??
+    contextScene?.imageBrief ??
+    currentTargetWord.description;
 
   const advanceNext = useCallback(() => {
     if (feedback !== null) queue.submit(feedback === "correct");
@@ -159,12 +191,25 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         activityLabel={t("exercise.wordChoicesAria")}
         media={
           <MediaFrame aspect="scene" className="max-h-[38dvh] sm:max-h-[46dvh]">
-            <WordImage
-              word={currentTargetWord}
-              className="size-full object-cover"
-              loading="eager"
-              fetchPriority="high"
-            />
+            {questionImagePath && !sceneImageFailed ? (
+              // onError is an image lifecycle event used only to select the safe fallback.
+              // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
+              <img
+                src={resolveAssetUrl(questionImagePath)}
+                alt={questionImageAlt}
+                loading="eager"
+                fetchPriority="high"
+                className="size-full object-cover"
+                onError={() => setSceneImageFailed(true)}
+              />
+            ) : (
+              <WordImage
+                word={currentTargetWord}
+                className="size-full object-cover"
+                loading="eager"
+                fetchPriority="high"
+              />
+            )}
           </MediaFrame>
         }
         activity={
