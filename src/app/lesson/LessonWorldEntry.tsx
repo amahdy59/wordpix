@@ -166,9 +166,9 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                   })}
                 </span>
               </div>
-              <h2 className="mt-2 text-xl sm:text-2xl font-black text-foreground leading-snug">
+              <p className="mt-2 text-xl sm:text-2xl font-black text-foreground leading-snug">
                 {curriculum.outcome}
-              </h2>
+              </p>
               <p className="mt-1 text-sm text-muted-foreground leading-relaxed">
                 {world.description}
               </p>
@@ -217,9 +217,9 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
             </div>
 
             <div className="flex items-center justify-between">
-              <h3 className="font-sans font-black text-lg text-foreground">
+              <h2 className="font-sans font-black text-lg text-foreground">
                 {t("lesson.selectWordGroup")}
-              </h3>
+              </h2>
               <span className="text-xs font-medium text-muted-foreground">
                 {t("lesson.groupCount", {
                   count: world.groups.length,

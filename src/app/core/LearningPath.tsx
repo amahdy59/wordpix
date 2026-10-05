@@ -317,15 +317,12 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           </div>
         </div>
       )}
-      <section className="flex flex-col gap-4 mt-2" aria-labelledby="optional-courses-heading">
+      <section className="flex flex-col gap-4 mt-2" aria-label={t("learn.specialCurricula")}>
         <div className="flex flex-col gap-1">
           <div className="flex items-center gap-2">
             <Sparkles className="size-4 text-primary" aria-hidden="true" />
-            <h2
-              id="optional-courses-heading"
-              className="font-sans text-xl font-black text-foreground"
-            >
-              {t("learn.specialCurriculaHeading", { defaultValue: "Optional specialist courses" })}
+            <h2 className="font-sans text-xl font-black text-foreground">
+              {t("learn.specialCurricula")}
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-muted-foreground font-medium">
