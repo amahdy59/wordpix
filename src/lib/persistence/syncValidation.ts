@@ -8,7 +8,7 @@ const nullableTimestamp = z.string().datetime({ offset: true }).nullable();
 
 const preferencesSchema = z
   .object({
-    englishLevel: z.enum(["A1", "A2", "B1"]),
+    englishLevel: z.enum(["A1", "A2", "B1", "B2", "C1", "C2"]),
     startingUnitId: z.string().min(1).max(200),
     dailyGoalMinutes: z.number().int().min(1).max(240),
     goal: z.enum(["everyday", "travel", "work", "school", "conversation", "kids"]),

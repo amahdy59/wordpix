@@ -11,7 +11,6 @@ import {
   Play,
   ListOrdered,
   ChevronRight,
-  Library,
 } from "lucide-react";
 import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/courseCatalog";
 import { getWords } from "../data/vocabulary";
@@ -154,82 +153,80 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
       </header>
       <section aria-label="Word groups" className="flex-1 overflow-y-auto min-h-0">
         <div className="w-full max-w-[1040px] mx-auto p-4 lg:p-8 pb-[max(6rem,env(safe-area-inset-bottom))]">
-          <div className="mb-6">
-            <p className="text-primary font-bold text-sm uppercase tracking-wider">
-              {t("lesson.immersionBadge")}
-            </p>
-            <h2 className="font-black text-foreground text-3xl sm:text-4xl mt-2">
-              {t("lesson.selectWordGroup")}
-            </h2>
-            <p className="text-muted-foreground mt-2">{t("lesson.chooseGroupDesc")}</p>
-            <div className="mt-4 rounded-2xl border border-primary/30 bg-primary/5 p-4 sm:p-5">
-              <p className="text-xs font-black uppercase tracking-wider text-primary">
-                {t("lesson.unitOutcome")}
-              </p>
-              <p className="mt-1 text-sm font-semibold leading-relaxed text-foreground">
+          <div className="mb-6 flex flex-col gap-4">
+            <div className="rounded-3xl border border-primary/30 bg-primary/5 p-5 sm:p-6 shadow-wp-xs">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-xs font-black uppercase tracking-wider text-primary">
+                  {t("lesson.unitOutcome")}
+                </span>
+                <span className="text-xs font-bold text-muted-foreground">
+                  {t("lesson.groupsStarted", {
+                    started: startedGroups,
+                    total: world.groups.length,
+                  })}
+                </span>
+              </div>
+              <p className="mt-2 text-xl sm:text-2xl font-black text-foreground leading-snug">
                 {curriculum.outcome}
               </p>
-              {hasLearningMaterials(world.id) && (
+              <p className="mt-1 text-sm text-muted-foreground leading-relaxed">
+                {world.description}
+              </p>
+
+              <div className="mt-4 flex flex-wrap items-center gap-3">
+                {hasLearningMaterials(world.id) && (
+                  <button
+                    type="button"
+                    onClick={() =>
+                      isHadithUnit
+                        ? dispatch({ type: "OPEN_HADITH_LESSON", lessonId: "hadith-01" })
+                        : dispatch({
+                            type: "GO",
+                            to: "learning-materials",
+                            unitId: world.id,
+                            area: "learn",
+                          })
+                    }
+                    className="min-h-12 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary inline-flex items-center gap-2 shadow-wp-xs"
+                  >
+                    <BookOpen className="size-4 shrink-0" aria-hidden="true" />
+                    <span>
+                      {isHadithUnit ? t("hadith.startGuidedLesson") : t("lesson.studyMaterialsBtn")}
+                    </span>
+                    <ArrowRight className="size-4 shrink-0 rtl:rotate-180" aria-hidden="true" />
+                  </button>
+                )}
+
                 <button
                   type="button"
-                  onClick={() =>
-                    isHadithUnit
-                      ? dispatch({ type: "OPEN_HADITH_LESSON", lessonId: "hadith-01" })
-                      : dispatch({ type: "GO", to: "learning-materials", unitId: world.id })
-                  }
-                  className="mt-4 min-h-12 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-                >
-                  {isHadithUnit ? t("hadith.startGuidedLesson") : t("lesson.startGuidedPath")}
-                </button>
-              )}
-            </div>
-            <div className="flex flex-wrap gap-3 mt-4">
-              <button type="button" onClick={handleTakeAssessment} className={secondaryAction}>
-                <GraduationCap className="size-5" aria-hidden />
-                {t("lesson.testOut")}
-                <span className="hidden sm:inline"> {t("lesson.ofThisUnit")}</span>
-              </button>
-              {hasLearningMaterials(world.id) && (
-                <button
-                  type="button"
-                  onClick={() =>
-                    isHadithUnit
-                      ? dispatch({ type: "OPEN_HADITH_LESSON", lessonId: "hadith-01" })
-                      : dispatch({
-                          type: "GO",
-                          to: "learning-materials",
-                          unitId: world.id,
-                          area: "learn",
-                        })
-                  }
+                  onClick={handleTakeAssessment}
                   className={secondaryAction}
+                  title="Demonstrate mastery of this unit to skip ahead"
                 >
-                  <Library className="size-5" aria-hidden />
-                  {isHadithUnit ? t("hadith.openLesson") : t("lesson.studyMaterialsBtn")}
+                  <GraduationCap className="size-5 shrink-0" aria-hidden="true" />
+                  <span>{t("lesson.testOut")}</span>
                 </button>
-              )}
+              </div>
+
+              <p className="mt-2.5 text-xs text-muted-foreground">
+                {t("lesson.testOutHint", {
+                  defaultValue:
+                    "Test out: complete a quick assessment covering all unit words to mark them mastered.",
+                })}
+              </p>
             </div>
-          </div>
-          <div className="rounded-xl bg-secondary/50 p-4 mb-4 sm:hidden">
-            <p className="font-semibold text-foreground">
-              {t("lesson.groupsStarted", { started: startedGroups, total: world.groups.length })}
-            </p>
-            <div
-              role="progressbar"
-              aria-label="Groups started"
-              aria-valuemin={0}
-              aria-valuemax={world.groups.length}
-              aria-valuenow={startedGroups}
-              className="h-2 my-2 bg-border rounded-full overflow-hidden"
-            >
-              <div
-                className="h-full bg-primary rounded-full"
-                style={{ width: `${(startedGroups / world.groups.length) * 100}%` }}
-              />
+
+            <div className="flex items-center justify-between">
+              <h2 className="font-sans font-black text-lg text-foreground">
+                {t("lesson.selectWordGroup")}
+              </h2>
+              <span className="text-xs font-medium text-muted-foreground">
+                {t("lesson.groupCount", {
+                  count: world.groups.length,
+                  defaultValue: `${world.groups.length} groups`,
+                })}
+              </span>
             </div>
-            <p className="text-muted-foreground">
-              {startedGroups ? "Continue where you left off" : "Choose a group to begin"}
-            </p>
           </div>
           <ul className="flex flex-col gap-4">
             {world.groups.map((g, index) => {

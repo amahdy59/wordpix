@@ -1,5 +1,13 @@
 import { memo, useMemo } from "react";
-import { ArrowRight, RotateCcw, WifiOff, CheckCircle2, Library, BookOpen } from "lucide-react";
+import {
+  ArrowRight,
+  RotateCcw,
+  WifiOff,
+  CheckCircle2,
+  Library,
+  BookOpen,
+  Sparkles,
+} from "lucide-react";
 import { getDueWordsForReview, type WordLearningState } from "../../features/gamification/sm2";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
@@ -44,8 +52,20 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
     () => activeLesson.wordIds.filter((wordId) => Boolean(progress.wordMemory[wordId])).length,
     [activeLesson.wordIds, progress.wordMemory]
   );
-  const estimatedMinutes = Math.max(2, Math.round(activeLesson.wordIds.length * 0.6));
-  const dueWords = useMemo(() => getDueWordsForReview(progress.wordMemory), [progress.wordMemory]);
+  const remainingWords = useMemo(
+    () =>
+      activeLesson.wordIds.filter(
+        (wordId) => (progress.wordMemory[wordId]?.mastery ?? "new") !== "strong"
+      ).length,
+    [activeLesson.wordIds, progress.wordMemory]
+  );
+  const estimatedMinutes = Math.max(2, Math.ceil(Math.max(1, remainingWords) * 0.75));
+  const { dueWords, overdueWords } = useMemo(() => {
+    const all = getDueWordsForReview(progress.wordMemory);
+    const startOfTodayIso = new Date(new Date().setHours(0, 0, 0, 0)).toISOString();
+    const overdue = all.filter((w) => w.nextReviewAt && w.nextReviewAt < startOfTodayIso);
+    return { dueWords: all, overdueWords: overdue };
+  }, [progress.wordMemory]);
   const hasLearningHistory =
     learnerState.learnerProgress.sessionsCompleted > 0 ||
     Object.keys(progress.wordMemory).length > 0;
@@ -171,6 +191,14 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   <p className="font-sans text-muted-foreground text-sm mt-1 leading-relaxed">
                     {activeLesson.description}
                   </p>
+                  <div className="mt-2.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold text-primary">
+                    <Sparkles className="size-3.5 shrink-0" aria-hidden="true" />
+                    <span>
+                      {t("dashboard.lessonOutcome", {
+                        defaultValue: `Outcome: Master core vocabulary in ${activeLesson.name}`,
+                      })}
+                    </span>
+                  </div>
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center gap-3 mt-4">
@@ -239,9 +267,16 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                       <RotateCcw className="size-4 text-primary" />
                       <span>{t("dashboard.srsReview")}</span>
                     </div>
-                    <Badge variant="amber" size="sm">
-                      {t("dashboard.dueToday", { count: num(dueWords.length) })}
-                    </Badge>
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      {overdueWords.length > 0 && (
+                        <Badge variant="rose" size="sm">
+                          {t("dashboard.overdueBadge", { count: num(overdueWords.length) })}
+                        </Badge>
+                      )}
+                      <Badge variant="amber" size="sm">
+                        {t("dashboard.dueToday", { count: num(dueWords.length) })}
+                      </Badge>
+                    </div>
                   </div>
                   <p className="font-sans text-muted-foreground text-xs leading-relaxed mt-2">
                     {t("dashboard.retentionPractice", { count: num(dueWords.length) })}
@@ -303,6 +338,21 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     <p className="mt-1 font-sans text-xs leading-relaxed text-muted-foreground">
                       {t("dashboard.reviewReadyDesc")}
                     </p>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        dispatch({
+                          type: "START_LESSON",
+                          lessonId: activeLesson.id,
+                          unitId: activeUnit.id,
+                          mode: "NEW_LESSON",
+                          wordQueue: activeLesson.wordIds,
+                        })
+                      }
+                      className="mt-2.5 min-h-11 rounded-xl bg-primary px-4 py-2 text-xs font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    >
+                      {t("dashboard.startFirstLesson", { defaultValue: "Start First Lesson" })}
+                    </button>
                   </div>
                 </div>
               )}

@@ -65,6 +65,11 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
     return firstUnmastered ?? CONVERSATION_UNITS[0];
   }, [progressState]);
 
+  const isFirstTime =
+    inProgressCount === 0 &&
+    masteredCount === 0 &&
+    !(continueUnit && (progressState[continueUnit.id]?.completedStages?.length ?? 0) > 0);
+
   // Filtered units
   const filteredUnits = useMemo(() => {
     let units = CONVERSATION_UNITS;
@@ -155,7 +160,9 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
             <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-primary/30 bg-primary/10 p-4 sm:p-5">
               <div className="flex flex-col">
                 <span className="text-xs font-bold uppercase text-primary">
-                  {t("conversation.continueLabel")}
+                  {isFirstTime
+                    ? t("conversation.getStartedLabel")
+                    : t("conversation.continueLabel")}
                 </span>
                 <span className="text-base sm:text-lg font-black text-foreground mt-0.5">
                   {t("conversation.unitTitle", {
@@ -176,7 +183,9 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
                 }
                 className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-primary px-6 py-2.5 font-bold text-primary-foreground shadow-wp-xs hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
               >
-                <span>{t("conversation.resumeLesson")}</span>
+                <span>
+                  {isFirstTime ? t("conversation.startLesson") : t("conversation.resumeLesson")}
+                </span>
                 <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
               </button>
             </div>
@@ -289,7 +298,9 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
                       ? "text-primary"
                       : "text-muted-foreground font-semibold"
                 }
-                actionLabel={t("conversation.start")}
+                actionLabel={
+                  isInProgress ? t("conversation.resumeLesson") : t("conversation.start")
+                }
                 onClick={() =>
                   dispatch({
                     type: "OPEN_CONVERSATION_LESSON",
