@@ -30,7 +30,7 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: Props) {
+export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
   const { t } = useI18n();
   const { progress } = useProgress();
   const { user, signOut } = useAuth();
@@ -157,7 +157,10 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
         <PageHeader
           variant="plain"
           title={t("profile.title")}
-          subtitle={t("profile.levelGoal", { level: progress.englishLevel, goal: progress.goal })}
+          subtitle={t("profile.levelGoal", {
+            level: progress.englishLevel,
+            goal: t(`profile.goals.${progress.goal}`),
+          })}
         />
 
         <div className="grid gap-5 xl:grid-cols-[minmax(18rem,0.72fr)_minmax(0,1.28fr)] xl:items-stretch">
@@ -169,11 +172,8 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
             padding="md"
             className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between xl:flex-col xl:items-stretch"
           >
-            <motion.div
-              variants={staggerItem}
-              className="flex flex-col md:flex-row items-center md:items-start gap-4"
-            >
-              <div className="relative size-20 md:size-24 shrink-0 rounded-full overflow-hidden border-[3px] border-primary shadow-wp-xs">
+            <motion.div variants={staggerItem} className="flex flex-row items-center gap-4">
+              <div className="relative size-12 md:size-24 shrink-0 rounded-full overflow-hidden border-[3px] border-primary shadow-wp-xs">
                 <LearnerAvatar />
               </div>
 
@@ -181,7 +181,9 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
                 <div className="flex items-center gap-2 mt-1">
                   <span className="bg-secondary text-primary font-sans font-semibold text-xs px-3 py-1 rounded-full border border-primary/20 flex items-center gap-1.5">
                     <Flame className="size-3.5 text-wp-amber" />
-                    {t("profile.streakActive", { streak: progress.streak })}
+                    {progress.streak > 0
+                      ? t("profile.streakActive", { streak: progress.streak })
+                      : t("profile.streakReady")}
                   </span>
                 </div>
               </div>
@@ -194,9 +196,10 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
                   variant="secondary"
                   size="sm"
                   onClick={signOut}
+                  aria-label={t("profile.signOut")}
                   iconLeft={<LogOut className="size-4" aria-hidden />}
                 >
-                  <span className="hidden md:inline">{user.email}</span>
+                  <span>{t("profile.signOut")}</span>
                 </Button>
               ) : (
                 <Button
@@ -225,7 +228,12 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
                 title={t("profile.statsEmptyTitle")}
                 description={t("profile.statsEmptyHint")}
                 icon={<Brain className="size-6" aria-hidden />}
-                className="min-h-56 flex-1"
+                className="min-h-48 flex-1"
+                action={
+                  <Button onClick={() => dispatch({ type: "GO", to: "practice" })}>
+                    {t("dashboard.practiseSkill")}
+                  </Button>
+                }
               />
             ) : (
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">

@@ -29,6 +29,7 @@ export const FilterChip = forwardRef<HTMLButtonElement, FilterChipProps>(functio
     disabled = false,
     type = "button",
     className = "",
+    onKeyDown,
     ...rest
   },
   ref
@@ -52,8 +53,37 @@ export const FilterChip = forwardRef<HTMLButtonElement, FilterChipProps>(functio
       disabled={disabled}
       aria-checked={selectionMode === "single" ? selected : undefined}
       aria-pressed={selectionMode === "toggle" ? selected : undefined}
+      aria-disabled={disabled || undefined}
+      tabIndex={selectionMode === "single" ? (selected ? 0 : -1) : undefined}
+      onKeyDown={(event) => {
+        onKeyDown?.(event);
+        if (event.defaultPrevented || selectionMode !== "single") return;
+        const group = event.currentTarget.closest('[role="radiogroup"]');
+        if (
+          !group ||
+          !["ArrowRight", "ArrowLeft", "ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)
+        )
+          return;
+        const radios = Array.from(
+          group.querySelectorAll<HTMLButtonElement>('button[role="radio"]:not(:disabled)')
+        );
+        const index = radios.indexOf(event.currentTarget);
+        if (index < 0) return;
+        event.preventDefault();
+        const rtl = getComputedStyle(group).direction === "rtl";
+        const forward =
+          event.key === "ArrowDown" || event.key === (rtl ? "ArrowLeft" : "ArrowRight");
+        const next =
+          event.key === "Home"
+            ? 0
+            : event.key === "End"
+              ? radios.length - 1
+              : (index + (forward ? 1 : -1) + radios.length) % radios.length;
+        radios[next]?.focus();
+        radios[next]?.click();
+      }}
       onClick={handleClick}
-      className={`min-h-[44px] font-sans inline-flex items-center justify-center select-none cursor-pointer border
+      className={`min-h-[44px] min-w-[44px] max-w-full font-sans inline-flex items-center justify-center select-none cursor-pointer border
         focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary
         transition-all duration-150 ease-out
         motion-safe:enabled:hover:scale-[1.02] motion-safe:enabled:active:scale-[0.97] motion-reduce:transition-none
@@ -72,7 +102,7 @@ export const FilterChip = forwardRef<HTMLButtonElement, FilterChipProps>(functio
           {icon}
         </span>
       )}
-      <span className="leading-tight">{label}</span>
+      <span className="min-w-0 break-words leading-tight">{label}</span>
       {count !== undefined && (
         <span
           className={`shrink-0 rounded-full px-1.5 py-0.5 text-[10px] font-extrabold leading-none transition-colors ${

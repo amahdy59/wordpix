@@ -171,106 +171,6 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         </button>
       </section>
 
-      <section
-        className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4"
-        aria-label={t("learn.specialCurricula")}
-      >
-        <button
-          type="button"
-          onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
-          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
-        >
-          <Headphones className="size-8 text-primary" aria-hidden />
-          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
-            {t("pronunciation.curriculumBadge")}
-          </p>
-          <h2 className="mt-1 text-xl font-black text-foreground">
-            {t("pronunciation.curriculumTitle")}
-          </h2>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">
-            {t("pronunciation.curriculumCardDescription", {
-              completed: Object.values(learnerState.pronunciationProgress).filter(
-                (item) => item.status === "mastered"
-              ).length,
-              total: 68,
-            })}
-          </p>
-          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
-            {t("pronunciation.viewCurriculum")}
-            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-          </span>
-        </button>
-        <button
-          type="button"
-          onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
-          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
-        >
-          <BookOpen className="size-8 text-primary" aria-hidden />
-          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
-            {t("hadith.curriculumBadge")}
-          </p>
-          <h2 className="mt-1 text-xl font-black text-foreground">{t("hadith.curriculumTitle")}</h2>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">
-            {t("hadith.curriculumCardDescription", {
-              completed: Object.values(learnerState.hadithProgress).filter(
-                (item) => item.status === "mastered"
-              ).length,
-              total: 42,
-            })}
-          </p>
-          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
-            {t("hadith.viewCurriculum")}
-            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-          </span>
-        </button>
-        <button
-          type="button"
-          onClick={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
-          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
-        >
-          <MessagesSquare className="size-8 text-primary" aria-hidden />
-          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
-            {t("conversation.badge")}
-          </p>
-          <h2 className="mt-1 text-xl font-black text-foreground">{t("conversation.title")}</h2>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">
-            {t("conversation.completedUnits", {
-              completed: Object.values(learnerState.conversationProgress ?? {}).filter(
-                (item) => item.status === "mastered"
-              ).length,
-              total: 40,
-            })}
-          </p>
-          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
-            {t("conversation.exploreUnits")}
-            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-          </span>
-        </button>
-        <button
-          type="button"
-          onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
-          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
-        >
-          <Briefcase className="size-8 text-primary" aria-hidden />
-          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
-            {t("business.badge")}
-          </p>
-          <h2 className="mt-1 text-xl font-black text-foreground">{t("business.title")}</h2>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">
-            {t("business.completedUnits", {
-              completed: Object.values(learnerState.businessProgress ?? {}).filter(
-                (item) => item.status === "mastered"
-              ).length,
-              total: 40,
-            })}
-          </p>
-          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
-            {t("business.exploreUnits")}
-            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-          </span>
-        </button>
-      </section>
-
       <button
         type="button"
         onClick={() => setShowPictureWorldPath((value) => !value)}
@@ -290,7 +190,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           </span>
         </span>
         <ChevronDown
-          className={`size-5 shrink-0 text-muted-foreground transition-transform ${showPictureWorldPath ? "rotate-180" : ""}`}
+          className={`size-5 shrink-0 text-muted-foreground motion-safe:transition-transform ${showPictureWorldPath ? "rotate-180" : ""}`}
           aria-hidden
         />
       </button>
@@ -353,7 +253,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                       </span>
                     </span>
                     <ChevronDown
-                      className={`size-5 shrink-0 text-muted-foreground transition-transform ${isExpanded ? "rotate-180" : ""}`}
+                      className={`size-5 shrink-0 text-muted-foreground motion-safe:transition-transform ${isExpanded ? "rotate-180" : ""}`}
                       aria-hidden
                     />
                   </button>
@@ -417,6 +317,105 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           </div>
         </div>
       )}
+      <section
+        className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4"
+        aria-label={t("learn.specialCurricula")}
+      >
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
+          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
+        >
+          <Headphones className="size-8 text-primary" aria-hidden />
+          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
+            {t("pronunciation.curriculumBadge")}
+          </p>
+          <h2 className="mt-1 text-xl font-black text-foreground">
+            {t("pronunciation.curriculumTitle")}
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+            {t("pronunciation.curriculumCardDescription", {
+              completed: Object.values(learnerState.pronunciationProgress).filter(
+                (item) => item.status === "mastered"
+              ).length,
+              total: 68,
+            })}
+          </p>
+          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
+            {t("pronunciation.viewCurriculum")}
+            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+          </span>
+        </button>
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
+          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
+        >
+          <BookOpen className="size-8 text-primary" aria-hidden />
+          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
+            {t("hadith.curriculumBadge")}
+          </p>
+          <h2 className="mt-1 text-xl font-black text-foreground">{t("hadith.curriculumTitle")}</h2>
+          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+            {t("hadith.curriculumCardDescription", {
+              completed: Object.values(learnerState.hadithProgress).filter(
+                (item) => item.status === "mastered"
+              ).length,
+              total: 42,
+            })}
+          </p>
+          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
+            {t("hadith.viewCurriculum")}
+            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+          </span>
+        </button>
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
+          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
+        >
+          <MessagesSquare className="size-8 text-primary" aria-hidden />
+          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
+            {t("conversation.badge")}
+          </p>
+          <h2 className="mt-1 text-xl font-black text-foreground">{t("conversation.title")}</h2>
+          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+            {t("conversation.completedUnits", {
+              completed: Object.values(learnerState.conversationProgress ?? {}).filter(
+                (item) => item.status === "mastered"
+              ).length,
+              total: 40,
+            })}
+          </p>
+          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
+            {t("conversation.exploreUnits")}
+            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+          </span>
+        </button>
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
+          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
+        >
+          <Briefcase className="size-8 text-primary" aria-hidden />
+          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
+            {t("business.badge")}
+          </p>
+          <h2 className="mt-1 text-xl font-black text-foreground">{t("business.title")}</h2>
+          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+            {t("business.completedUnits", {
+              completed: Object.values(learnerState.businessProgress ?? {}).filter(
+                (item) => item.status === "mastered"
+              ).length,
+              total: 40,
+            })}
+          </p>
+          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
+            {t("business.exploreUnits")}
+            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+          </span>
+        </button>
+      </section>
     </PageContainer>
   );
 });

@@ -44,7 +44,6 @@ const GOAL_OPTIONS: Array<{ id: LearnerGoal; labelKey: string }> = [
   { id: "work", labelKey: "onboarding.goalWork" },
   { id: "school", labelKey: "onboarding.goalSchool" },
   { id: "conversation", labelKey: "onboarding.goalConversation" },
-  { id: "kids", labelKey: "onboarding.goalKids" },
 ];
 
 export function LanguageSelect({ dispatch }: Props) {
@@ -282,7 +281,8 @@ export function LanguageSelect({ dispatch }: Props) {
                   key={g.id}
                   type="button"
                   onClick={() => setSelectedGoal(g.id)}
-                  className={`py-2.5 px-3 rounded-xl border text-xs font-sans font-semibold transition-all min-h-[44px] text-center ${
+                  aria-pressed={selectedGoal === g.id}
+                  className={`py-2.5 px-3 rounded-xl border text-xs font-sans font-semibold motion-safe:transition-colors min-h-[44px] text-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                     selectedGoal === g.id
                       ? "bg-secondary border-primary border-[2px] text-primary font-bold shadow-xs"
                       : "bg-wp-card border-border text-muted-foreground hover:border-primary/40"

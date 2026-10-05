@@ -14,7 +14,10 @@ test("conversation curriculum is discoverable and prevents stage skipping", asyn
 
   await page.goto("/#/conversation");
 
-  await expect(page.getByRole("heading", { name: "Conversation & Debate" })).toBeVisible();
+  // Wait for the lazy curriculum route, as we do for its lesson route below.
+  await expect(page.getByRole("heading", { name: "Conversation & Debate" })).toBeVisible({
+    timeout: 20_000,
+  });
   const units = page.getByRole("region", { name: "Units list" }).getByRole("article");
   await expect(units).toHaveCount(40);
 

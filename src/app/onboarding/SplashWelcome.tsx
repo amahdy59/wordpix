@@ -2,7 +2,6 @@ import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { useProgress } from "../data/progress";
-import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/courseCatalog";
 import { Sparkles, ArrowRight, BookOpen, Layers, CheckCircle2, Globe } from "lucide-react";
 import { useI18n } from "../context/I18nContext";
 
@@ -15,7 +14,6 @@ interface Props {
 export function SplashWelcome({ dispatch }: Props) {
   const { t } = useI18n();
   const { setPreferences } = useProgress();
-  const flagshipWorld = COURSE_UNITS[DEFAULT_UNIT_ID];
   const advance = () => dispatch({ type: "ONBOARD_NEXT" });
 
   // Bypasses the level/goal picker for a learner who just wants in. Sets the
@@ -86,12 +84,7 @@ export function SplashWelcome({ dispatch }: Props) {
         {/* Footer Left */}
         <div className="relative z-10 flex items-center gap-2 text-wp-text-on-panel-muted text-xs font-sans font-semibold">
           <Globe className="size-4" />
-          <span>
-            {t("onboarding.startWithWorld", {
-              world: flagshipWorld.name,
-              count: flagshipWorld.wordIds.length,
-            })}
-          </span>
+          <span>{t("onboarding.startWithFoundations")}</span>
         </div>
       </aside>
 
@@ -142,7 +135,7 @@ export function SplashWelcome({ dispatch }: Props) {
           {/* Mobile Hero Illustration (Hidden on Desktop) */}
           <div className="md:hidden w-full h-48 relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted">
             <img
-              alt={t("onboarding.sceneAlt", { world: flagshipWorld.name })}
+              alt={t("onboarding.heroPhotoAlt")}
               className="absolute inset-0 object-cover size-full"
               src={imgHero}
             />
@@ -150,10 +143,7 @@ export function SplashWelcome({ dispatch }: Props) {
             <div className="absolute bottom-3 start-4 flex items-center gap-2 text-white">
               <Layers className="size-4" />
               <span className="font-sans font-bold text-xs">
-                {t("onboarding.wordsReady", {
-                  count: flagshipWorld.wordIds.length,
-                  world: flagshipWorld.name,
-                })}
+                {t("onboarding.heroPhotoCaption")}
               </span>
             </div>
           </div>

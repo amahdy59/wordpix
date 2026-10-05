@@ -123,7 +123,7 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
           </p>
 
           {/* Progress Overview Bar & Metrics */}
-          <div className="mt-6 grid gap-3 sm:grid-cols-4">
+          <div className="mt-4 grid grid-cols-2 gap-3 sm:mt-6 sm:grid-cols-4">
             <div className="rounded-2xl border border-border bg-background/80 p-4">
               <span className="text-xs font-bold uppercase text-muted-foreground">
                 {t("conversation.totalUnits")}
@@ -191,12 +191,12 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
               aria-hidden
             />
             <input
-              type="text"
+              type="search"
               aria-label={t("conversation.searchLabel")}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={t("conversation.searchPlaceholder")}
-              className="w-full min-h-[48px] rounded-2xl border border-border bg-card ps-12 pe-4 py-3 text-sm font-medium text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+              className="w-full min-h-[48px] rounded-2xl border border-border bg-card ps-12 pe-4 py-3 text-base font-medium text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             />
           </div>
 

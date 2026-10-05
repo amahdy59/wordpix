@@ -6,6 +6,7 @@ export type PageHeaderVariant = "hero" | "plain";
 
 export interface PageHeaderProps {
   title: ReactNode;
+  titleId?: string;
   subtitle?: ReactNode;
   eyebrow?: ReactNode;
   actions?: ReactNode;
@@ -23,6 +24,7 @@ export interface PageHeaderProps {
  */
 export const PageHeader = memo(function PageHeader({
   title,
+  titleId,
   subtitle,
   eyebrow,
   actions,
@@ -64,6 +66,7 @@ export const PageHeader = memo(function PageHeader({
           )}
 
           <HeadingTag
+            id={titleId}
             className={`font-sans ${headingStyles} font-black leading-[1.15] text-foreground tracking-tight text-balance`}
           >
             {title}
