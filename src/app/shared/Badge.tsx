@@ -2,7 +2,7 @@ import { memo } from "react";
 
 interface Props {
   children: React.ReactNode;
-  variant?: "primary" | "amber" | "green" | "muted" | "teal";
+  variant?: "primary" | "amber" | "green" | "muted" | "teal" | "rose";
   className?: string;
   size?: "sm" | "md";
 }
@@ -10,18 +10,23 @@ interface Props {
 /**
  * A pill-shaped badge for statuses, counts, and minor attributes.
  */
-export const Badge = memo(function Badge({ children, variant = "primary", size = "sm", className = "" }: Props) {
-  const baseStyles = "font-sans font-bold rounded-full border flex items-center justify-center gap-1.5 whitespace-nowrap";
-  
-  const sizeStyles = size === "sm" 
-    ? "text-xs px-2.5 py-0.5" 
-    : "text-sm px-3 py-1";
+export const Badge = memo(function Badge({
+  children,
+  variant = "primary",
+  size = "sm",
+  className = "",
+}: Props) {
+  const baseStyles =
+    "font-sans font-bold rounded-full border flex items-center justify-center gap-1.5 whitespace-nowrap";
+
+  const sizeStyles = size === "sm" ? "text-xs px-2.5 py-0.5" : "text-sm px-3 py-1";
 
   const variants = {
     primary: "bg-secondary text-primary border-primary/20",
     amber: "bg-wp-amber/10 text-wp-amber border-wp-amber/20",
     green: "bg-wp-green-light/40 text-wp-green border-wp-green/20",
     teal: "bg-wp-teal/10 text-wp-teal border-wp-teal/20",
+    rose: "bg-wp-rose/10 text-wp-rose border-wp-rose/20",
     muted: "bg-muted text-muted-foreground border-border",
   };
 

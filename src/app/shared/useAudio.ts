@@ -543,6 +543,7 @@ export function useAudio({
     stop,
     status,
     isPlaying: status === "playing" || status === "loading",
+    isLoading: status === "loading",
     isSupported: status !== "unsupported",
     isError: status === "error",
   };

@@ -203,6 +203,30 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             </p>
           </div>
 
+          {/* Progress save confirmation banner */}
+          <div
+            className="w-full flex items-center justify-between gap-3 rounded-2xl bg-card border border-border p-3.5 shadow-wp-xs"
+            role="status"
+            aria-live="polite"
+          >
+            <div className="flex items-center gap-2.5 min-w-0">
+              <div className="flex size-8 shrink-0 items-center justify-center rounded-xl bg-wp-green-light">
+                <CheckCircle2 className="size-4 text-wp-green" aria-hidden />
+              </div>
+              <div className="text-start min-w-0">
+                <p className="font-sans text-xs font-bold text-foreground truncate">
+                  {t("lesson.progressSavedTitle")}
+                </p>
+                <p className="font-sans text-[11px] text-muted-foreground truncate">
+                  {t("lesson.progressSavedDevice")}
+                </p>
+              </div>
+            </div>
+            <span className="font-sans text-[10px] font-black uppercase tracking-wider text-wp-green bg-wp-green-light px-2.5 py-1 rounded-full shrink-0">
+              {t("lesson.savedStatus")}
+            </span>
+          </div>
+
           {/* Stats grid */}
           <div className="grid grid-cols-3 gap-3 w-full">
             {[
@@ -310,24 +334,58 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
         </div>
 
         <footer className="w-full max-w-md mx-auto px-6 pb-8 pt-4 flex flex-col gap-2.5 shrink-0 border-t border-border/60 bg-secondary/50">
-          <PrimaryButton
-            label={isAssessment ? "Return to Unit" : "Continue to Lessons"}
-            onClick={() =>
-              dispatch({ type: "GO", to: isAssessment ? "lesson-entry" : "explore", unitId })
-            }
-          />
-          {!isAssessment && (
-            <SecondaryButton
-              label="Practice Next Group"
-              onClick={() =>
-                dispatch({
-                  type: "START_LESSON",
-                  lessonId: nextGroup.id,
-                  mode: "NEW_LESSON",
-                  wordQueue: nextGroup.wordIds,
-                })
-              }
-            />
+          {isAssessment ? (
+            <>
+              <PrimaryButton
+                label={assessmentPassed ? t("lesson.continueCurriculum") : t("lesson.returnToUnit")}
+                onClick={() =>
+                  dispatch({
+                    type: "GO",
+                    to: assessmentPassed ? "explore" : "lesson-entry",
+                    unitId,
+                  })
+                }
+              />
+              <SecondaryButton
+                label={
+                  assessmentPassed ? t("lesson.viewUnitOverview") : t("lesson.backToLearningPath")
+                }
+                onClick={() =>
+                  dispatch({
+                    type: "GO",
+                    to: assessmentPassed ? "lesson-entry" : "explore",
+                    unitId,
+                  })
+                }
+              />
+            </>
+          ) : (
+            <>
+              {nextGroup ? (
+                <>
+                  <PrimaryButton
+                    label={t("lesson.practiceNextGroup")}
+                    onClick={() =>
+                      dispatch({
+                        type: "START_LESSON",
+                        lessonId: nextGroup.id,
+                        mode: "NEW_LESSON",
+                        wordQueue: nextGroup.wordIds,
+                      })
+                    }
+                  />
+                  <SecondaryButton
+                    label={t("lesson.backToLearningPath")}
+                    onClick={() => dispatch({ type: "GO", to: "explore" })}
+                  />
+                </>
+              ) : (
+                <PrimaryButton
+                  label={t("lesson.continueCurriculum")}
+                  onClick={() => dispatch({ type: "GO", to: "explore" })}
+                />
+              )}
+            </>
           )}
         </footer>
         <HomeIndicator />

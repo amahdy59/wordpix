@@ -12,7 +12,7 @@ interface Props {
 }
 
 export function SplashWelcome({ dispatch }: Props) {
-  const { t } = useI18n();
+  const { t, interfaceLang, setInterfaceLang } = useI18n();
   const { setPreferences } = useProgress();
   const advance = () => dispatch({ type: "ONBOARD_NEXT" });
 
@@ -100,9 +100,41 @@ export function SplashWelcome({ dispatch }: Props) {
               {t("app.title")}
             </span>
           </div>
-          <span className="text-xs font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full border border-border">
-            {t("onboarding.step1")}
-          </span>
+          <div className="flex items-center gap-2">
+            <div
+              className="flex items-center rounded-xl bg-muted p-0.5 border border-border"
+              role="group"
+              aria-label={t("onboarding.selectLanguage")}
+            >
+              <button
+                type="button"
+                onClick={() => setInterfaceLang("en")}
+                className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all min-h-[44px] ${
+                  interfaceLang === "en"
+                    ? "bg-card text-foreground shadow-wp-xs"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+                aria-pressed={interfaceLang === "en"}
+              >
+                {t("settings.english")}
+              </button>
+              <button
+                type="button"
+                onClick={() => setInterfaceLang("ar")}
+                className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all min-h-[44px] ${
+                  interfaceLang === "ar"
+                    ? "bg-card text-foreground shadow-wp-xs"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+                aria-pressed={interfaceLang === "ar"}
+              >
+                {t("settings.arabic")}
+              </button>
+            </div>
+            <span className="text-xs font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full border border-border">
+              {t("onboarding.step1")}
+            </span>
+          </div>
         </header>
 
         {/* Main Content */}
@@ -111,9 +143,41 @@ export function SplashWelcome({ dispatch }: Props) {
             <span className="text-xs font-sans font-bold text-secondary-foreground bg-secondary px-3 py-1 rounded-full border border-primary/30">
               {t("onboarding.welcomeWordPix")}
             </span>
-            <span className="text-xs font-sans font-semibold text-muted-foreground">
-              {t("onboarding.step1")}
-            </span>
+            <div className="flex items-center gap-2">
+              <div
+                className="flex items-center rounded-xl bg-muted p-0.5 border border-border"
+                role="group"
+                aria-label={t("onboarding.selectLanguage")}
+              >
+                <button
+                  type="button"
+                  onClick={() => setInterfaceLang("en")}
+                  className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all min-h-[44px] ${
+                    interfaceLang === "en"
+                      ? "bg-card text-foreground shadow-wp-xs"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                  aria-pressed={interfaceLang === "en"}
+                >
+                  {t("settings.english")}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setInterfaceLang("ar")}
+                  className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all min-h-[44px] ${
+                    interfaceLang === "ar"
+                      ? "bg-card text-foreground shadow-wp-xs"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                  aria-pressed={interfaceLang === "ar"}
+                >
+                  {t("settings.arabic")}
+                </button>
+              </div>
+              <span className="text-xs font-sans font-semibold text-muted-foreground">
+                {t("onboarding.step1")}
+              </span>
+            </div>
           </div>
 
           <div className="md:hidden inline-flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-full border border-primary/30 shadow-wp-xs">
@@ -151,6 +215,12 @@ export function SplashWelcome({ dispatch }: Props) {
 
         {/* Footer CTA */}
         <footer className="w-full max-w-md mx-auto md:mx-0 pt-4 shrink-0 z-10">
+          <div className="flex items-center gap-2 rounded-xl bg-card border border-border px-3.5 py-2.5 text-start mb-3 shadow-wp-xs">
+            <CheckCircle2 className="size-4 text-wp-green shrink-0" aria-hidden />
+            <p className="text-xs font-medium text-muted-foreground leading-relaxed">
+              {t("onboarding.guestSavingNote")}
+            </p>
+          </div>
           <button
             type="button"
             onClick={advance}

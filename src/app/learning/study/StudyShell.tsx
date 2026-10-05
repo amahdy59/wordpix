@@ -310,12 +310,12 @@ export function StudyShell({
             <ArrowLeft className="size-5" aria-hidden />
           </button>
 
-          <div className="min-w-0">
+          <div className="min-w-0 flex-1">
             <nav
               aria-label="Breadcrumb"
-              className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-muted-foreground truncate"
+              className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-muted-foreground flex-wrap"
             >
-              <span className="truncate">{unit.name}</span>
+              <span className="truncate max-w-[120px] sm:max-w-none">{unit.name}</span>
               {currentArea !== "home" && (
                 <>
                   <span className="opacity-40" aria-hidden>
@@ -325,7 +325,7 @@ export function StudyShell({
                 </>
               )}
             </nav>
-            <div className="truncate text-sm sm:text-base font-extrabold text-foreground mt-0.5 tracking-tight">
+            <div className="text-sm sm:text-base font-extrabold text-foreground mt-0.5 tracking-tight line-clamp-2 break-words">
               {currentArea === "home"
                 ? `${unit.name} Overview`
                 : (activeNode?.title ?? areaMeta[currentArea].label)}
@@ -402,10 +402,10 @@ export function StudyShell({
             ref={contentsBtnRef}
             onClick={() => setIsMobileDrawerOpen(true)}
             className="lg:hidden flex items-center gap-1.5 px-3 py-2 rounded-xl bg-secondary text-foreground text-xs font-bold border border-border hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
-            aria-label="Open study curriculum contents menu"
+            aria-label="Open unit activities menu"
           >
             <Menu className="size-4" aria-hidden />
-            <span>{t("study.contents")}</span>
+            <span>{t("study.unitActivities", { defaultValue: "Unit Activities" })}</span>
           </button>
         </div>
       </header>

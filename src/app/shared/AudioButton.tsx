@@ -4,6 +4,7 @@ import { Volume2, Loader2, VolumeX } from "lucide-react";
 interface Props {
   onPlay: () => void;
   isPlaying?: boolean;
+  isLoading?: boolean;
   isError?: boolean;
   label?: string;
   size?: "sm" | "md" | "lg";
@@ -25,24 +26,34 @@ const ICON_CLASSES = {
 export const AudioButton = memo(function AudioButton({
   onPlay,
   isPlaying = false,
+  isLoading = false,
   isError = false,
   label = "Play pronunciation",
   size = "md",
   className = "",
 }: Props) {
+  const isActive = isPlaying || isLoading;
   const stateClasses = isError
     ? "bg-muted border-border text-muted-foreground opacity-60 cursor-not-allowed"
-    : isPlaying
+    : isActive
       ? "bg-primary border-primary text-primary-foreground shadow-wp-sm"
       : "bg-secondary border-border text-primary hover:bg-primary hover:text-primary-foreground active:scale-95";
+
+  const computedLabel = isError
+    ? `${label} (audio unavailable)`
+    : isLoading
+      ? `${label} (loading audio)`
+      : isPlaying
+        ? `${label} (playing)`
+        : label;
 
   return (
     <button
       type="button"
       onClick={isError ? undefined : onPlay}
-      aria-label={isPlaying ? `${label} (playing)` : label}
+      aria-label={computedLabel}
       aria-pressed={isPlaying}
-      aria-busy={isPlaying}
+      aria-busy={isLoading}
       disabled={isError}
       className={[
         "flex items-center justify-center shrink-0 min-h-[44px] min-w-[44px]",
@@ -55,15 +66,14 @@ export const AudioButton = memo(function AudioButton({
       ].join(" ")}
     >
       {isError ? (
-        <VolumeX className={ICON_CLASSES[size]} aria-hidden />
+        <VolumeX className={ICON_CLASSES[size]} aria-hidden="true" />
+      ) : isLoading ? (
+        <Loader2 className={`${ICON_CLASSES[size]} motion-safe:animate-spin`} aria-hidden="true" />
       ) : isPlaying ? (
-        <Loader2 className={`${ICON_CLASSES[size]} motion-safe:animate-spin`} aria-hidden />
+        <Volume2 className={`${ICON_CLASSES[size]} motion-safe:animate-pulse`} aria-hidden="true" />
       ) : (
-        <Volume2 className={ICON_CLASSES[size]} aria-hidden />
+        <Volume2 className={ICON_CLASSES[size]} aria-hidden="true" />
       )}
-      <span className="sr-only">
-        {isError ? "Audio unavailable" : isPlaying ? "Playing audio…" : label}
-      </span>
     </button>
   );
 });

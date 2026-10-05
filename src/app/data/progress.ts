@@ -1,15 +1,20 @@
 import { useMemo } from "react";
-import { useLearner, type LearnerGoal, type SessionRecord } from "../context/LearnerContext";
+import {
+  useLearner,
+  type LearnerGoal,
+  type SessionRecord,
+  type EnglishLevel,
+} from "../context/LearnerContext";
 import type { WordLearningState, MasteryCategory } from "../../features/gamification/sm2";
 
-export type { WordLearningState, MasteryCategory, LearnerGoal };
+export type { WordLearningState, MasteryCategory, LearnerGoal, EnglishLevel };
 
 export interface LearnerProgress {
   xp: number;
   streak: number;
   lastStudiedDate: string | null;
   daysActive: number;
-  englishLevel: "A1" | "A2" | "B1";
+  englishLevel: EnglishLevel;
   dailyGoalMinutes: number;
   goal: LearnerGoal;
   wordMemory: Record<string, WordLearningState>;
@@ -26,7 +31,14 @@ const MASTERY_TO_LEGACY_LEVEL: Record<MasteryCategory, number> = {
 };
 
 export function useProgress() {
-  const { state, addXP, recordSessionCompletion, recordUnitAssessmentCompletion, setPreferences, resetToZero } = useLearner();
+  const {
+    state,
+    addXP,
+    recordSessionCompletion,
+    recordUnitAssessmentCompletion,
+    setPreferences,
+    resetToZero,
+  } = useLearner();
 
   // Both of these were rebuilt on every render, so `progress` was a fresh
   // object each time and every memo() downstream of it was defeated. They only
@@ -57,7 +69,21 @@ export function useProgress() {
   );
 
   return useMemo(
-    () => ({ progress, addXP, recordSessionCompletion, recordUnitAssessmentCompletion, setPreferences, resetToZero }),
-    [progress, addXP, recordSessionCompletion, recordUnitAssessmentCompletion, setPreferences, resetToZero]
+    () => ({
+      progress,
+      addXP,
+      recordSessionCompletion,
+      recordUnitAssessmentCompletion,
+      setPreferences,
+      resetToZero,
+    }),
+    [
+      progress,
+      addXP,
+      recordSessionCompletion,
+      recordUnitAssessmentCompletion,
+      setPreferences,
+      resetToZero,
+    ]
   );
 }

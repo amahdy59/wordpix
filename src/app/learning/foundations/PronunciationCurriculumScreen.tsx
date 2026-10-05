@@ -98,7 +98,10 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
           titleId="pronunciation-curriculum-title"
           badge={t("pronunciation.curriculumBadge")}
           title={t("pronunciation.curriculumTitle")}
-          description={t("pronunciation.curriculumDescription")}
+          description={t("pronunciation.curriculumShortOutcome", {
+            defaultValue:
+              "Master English phonemes, vowel lengths, and stress patterns through targeted listen-and-repeat acoustic drills.",
+          })}
           metrics={[
             { label: t("pronunciation.summaryMastered"), value: completed },
             { label: t("pronunciation.summaryDue"), value: due },
@@ -129,6 +132,17 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
             </MediaFrame>
           }
         >
+          <details className="text-xs text-muted-foreground group mb-2">
+            <summary className="cursor-pointer font-bold text-primary flex items-center gap-1 hover:underline">
+              <span>
+                {t("pronunciation.methodologySummary", {
+                  defaultValue: "Teaching methodology details",
+                })}
+              </span>
+            </summary>
+            <p className="mt-1.5 leading-relaxed">{t("pronunciation.curriculumDescription")}</p>
+          </details>
+
           <CurriculumFilterTabs
             label={t("pronunciation.filtersLabel")}
             value={filter}
