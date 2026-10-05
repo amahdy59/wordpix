@@ -2,6 +2,8 @@ packages:
   - "."
 overrides:
   nanoid: ">=3.3.18"
+  brace-expansion@<1.1.20: ">=1.1.21"
+  brace-expansion@>=4.0.0 <5.0.10: ">=5.0.12"
 allowBuilds:
   esbuild: true
   # MSW's optional postinstall only prints a sponsorship message; no runtime
