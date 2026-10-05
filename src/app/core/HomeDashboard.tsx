@@ -70,8 +70,6 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
 
   return (
     <PageContainer size="wide">
-      <ReleaseNotesCard />
-
       {/* Top Learner Greeting */}
       <header className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex min-w-0 items-center gap-3.5">
@@ -149,7 +147,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           <motion.div variants={staggerItem}>
             <Section id="section-today" title={t("dashboard.today")}>
               <Card variant="primary">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between gap-2">
                   <span className="font-sans font-semibold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full">
                     {t("dashboard.unitEstimate", {
                       unit: activeUnit.name,
@@ -236,7 +234,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
             <Section id="section-review" title={t("dashboard.review")}>
               {dueWords.length > 0 ? (
                 <Card variant="default">
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
                     <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
                       <RotateCcw className="size-4 text-primary" />
                       <span>{t("dashboard.srsReview")}</span>
@@ -312,6 +310,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           </motion.div>
         </div>
       </motion.div>
+      <ReleaseNotesCard />
     </PageContainer>
   );
 });

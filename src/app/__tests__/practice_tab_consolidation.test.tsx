@@ -102,7 +102,7 @@ describe("Practice Tab & Review Consolidation", () => {
     expect(screen.getByRole("heading", { level: 1, name: "Practice" })).toBeInTheDocument();
     expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
     expect(
-      screen.getByRole("heading", { level: 2, name: /Skill Exercise Hub/i })
+      screen.getByRole("heading", { level: 2, name: /Practice by skill/i })
     ).toBeInTheDocument();
 
     // Category filter chips are present

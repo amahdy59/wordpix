@@ -210,6 +210,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
         <PageHeader
           variant="plain"
           headingLevel="h2"
+          titleId="skill-drills-heading"
           eyebrow={
             <span className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-primary">
               <Sparkles className="size-4 text-wp-amber" aria-hidden="true" />
@@ -229,7 +230,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
         <div
           role="radiogroup"
           aria-label={t("skillHub.categoriesAria")}
-          className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar snap-x"
+          className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,9rem),1fr))] gap-2 p-1 sm:flex sm:flex-wrap"
         >
           {categories.map(({ id, labelBase, icon: Icon }) => {
             const count = availableExercises.filter((e) => e.category === id).length;
@@ -271,14 +272,14 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               <div>
                 <div className="flex items-center justify-between gap-2">
                   <h3 className="font-sans font-bold text-foreground text-base group-hover:text-primary transition-colors leading-tight">
-                    {ex.title}
+                    {t(`skillHub.exercises.${ex.id}.title`)}
                   </h3>
                   <span className="shrink-0 rounded-full bg-secondary px-2 py-0.5 font-sans text-[10px] font-extrabold text-primary border border-primary/20">
                     {`${ex.minimumLevel ?? "A1"}+`}
                   </span>
                 </div>
-                <p className="font-sans text-xs text-muted-foreground leading-relaxed mt-1.5 line-clamp-2">
-                  {ex.description}
+                <p className="font-sans text-sm text-muted-foreground leading-relaxed mt-1.5">
+                  {t(`skillHub.exercises.${ex.id}.description`)}
                 </p>
               </div>
 

@@ -157,7 +157,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
             <div className="bg-muted/30 rounded-2xl p-4 border border-border flex flex-col gap-4">
               {/* Light / Dark Mode Toggle */}
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-wrap items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
                     {t("settings.themeMode")}
@@ -190,7 +190,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 purely decorative: setInterfaceLang and t() had zero consumers,
                 so there was no way to reach Arabic or RTL from the UI.
               */}
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-wrap items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
                     {t("settings.interfaceLanguage")}
@@ -226,7 +226,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <hr className="border-border/60" />
 
               {/* High Contrast Mode */}
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-wrap items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
                     {t("settings.highContrast")}
@@ -239,6 +239,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   type="button"
                   onClick={() => setAccessibility({ highContrast: !highContrast })}
                   aria-pressed={highContrast}
+                  aria-label={t("settings.toggleLabel", {
+                    setting: t("settings.highContrast"),
+                    state: highContrast ? t("settings.enabled") : t("settings.disabled"),
+                  })}
                   className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                     highContrast
                       ? "bg-wp-green text-wp-text-on-green border-wp-green"
@@ -252,7 +256,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <hr className="border-border/60" />
 
               {/* Reduce Motion */}
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-wrap items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
                     {t("settings.reduceMotion")}
@@ -265,6 +269,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   type="button"
                   onClick={() => setAccessibility({ reduceMotion: !reduceMotion })}
                   aria-pressed={reduceMotion}
+                  aria-label={t("settings.toggleLabel", {
+                    setting: t("settings.reduceMotion"),
+                    state: reduceMotion ? t("settings.enabled") : t("settings.disabled"),
+                  })}
                   className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                     reduceMotion
                       ? "bg-wp-green text-wp-text-on-green border-wp-green"
@@ -286,7 +294,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
             <div className="bg-muted/30 rounded-2xl p-4 border border-border flex flex-col gap-4">
               {/* Text Size Scaler */}
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-wrap items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
                     {t("settings.textSize")}
@@ -317,7 +325,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <hr className="border-border/60" />
 
               {/* Numeral System */}
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-wrap items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
                     {t("settings.numeralSystem")}
@@ -365,7 +373,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
             <div className="bg-muted/30 rounded-2xl p-4 border border-border flex flex-col gap-4">
               {/* Audio Speed */}
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-wrap items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
                     {t("settings.speechRate")}
@@ -443,7 +451,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
               {/* Inclusive Modalities (Enable/Disable Speaking & Listening for Quiet/Deaf environments) */}
               <div className="flex flex-col gap-3">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.speakingDrills")}
@@ -456,6 +464,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     type="button"
                     onClick={() => setAccessibility({ includeSpeaking: !includeSpeaking })}
                     aria-pressed={includeSpeaking}
+                    aria-label={t("settings.toggleLabel", {
+                      setting: t("settings.speakingDrills"),
+                      state: includeSpeaking ? t("settings.enabled") : t("settings.disabled"),
+                    })}
                     className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                       includeSpeaking
                         ? "bg-wp-green text-wp-text-on-green border-wp-green"
@@ -466,7 +478,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   </button>
                 </div>
 
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.timedExercises")}
@@ -479,6 +491,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     type="button"
                     onClick={() => setAccessibility({ timedExercises: !timedExercises })}
                     aria-pressed={timedExercises}
+                    aria-label={t("settings.toggleLabel", {
+                      setting: t("settings.timedExercises"),
+                      state: timedExercises ? t("settings.enabled") : t("settings.disabled"),
+                    })}
                     className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                       timedExercises
                         ? "bg-wp-green text-wp-text-on-green border-wp-green"
@@ -489,7 +505,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   </button>
                 </div>
 
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.autoAdvance")}
@@ -502,6 +518,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     type="button"
                     onClick={() => setAccessibility({ autoAdvance: !autoAdvance })}
                     aria-pressed={autoAdvance}
+                    aria-label={t("settings.toggleLabel", {
+                      setting: t("settings.autoAdvance"),
+                      state: autoAdvance ? t("settings.enabled") : t("settings.disabled"),
+                    })}
                     className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                       autoAdvance
                         ? "bg-wp-green text-wp-text-on-green border-wp-green"
@@ -525,6 +545,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     type="button"
                     onClick={() => setAccessibility({ spokenFeedback: !spokenFeedback })}
                     aria-pressed={spokenFeedback}
+                    aria-label={t("settings.toggleLabel", {
+                      setting: t("settings.spokenFeedback"),
+                      state: spokenFeedback ? t("settings.enabled") : t("settings.disabled"),
+                    })}
                     className={`shrink-0 px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                       spokenFeedback
                         ? "bg-wp-green text-wp-text-on-green border-wp-green"
@@ -535,7 +559,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   </button>
                 </div>
 
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.listeningDrills")}
@@ -548,6 +572,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     type="button"
                     onClick={() => setAccessibility({ includeListening: !includeListening })}
                     aria-pressed={includeListening}
+                    aria-label={t("settings.toggleLabel", {
+                      setting: t("settings.listeningDrills"),
+                      state: includeListening ? t("settings.enabled") : t("settings.disabled"),
+                    })}
                     className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                       includeListening
                         ? "bg-wp-green text-wp-text-on-green border-wp-green"
@@ -569,7 +597,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
             </h3>
 
             <div className="bg-muted/30 rounded-2xl p-4 border border-border flex flex-col gap-4">
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-wrap items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">
                     {t("settings.targetLevel")}
@@ -584,6 +612,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       key={lvl}
                       type="button"
                       onClick={() => setPreferences({ englishLevel: lvl })}
+                      aria-pressed={state.preferences.englishLevel === lvl}
                       className={`min-h-[44px] min-w-[44px] px-3 py-1.5 rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                         state.preferences.englishLevel === lvl
                           ? "bg-primary text-primary-foreground shadow-xs"

@@ -37,15 +37,15 @@ export function PronunciationLessonCard({
   const showImages = !hasImageError && Boolean(firstImage && secondImage);
 
   return (
-    <li className="group relative flex min-h-[96px] w-full items-center justify-between rounded-2xl border border-border bg-card p-3 shadow-wp-xs transition-all hover:border-primary/50 hover:bg-primary/5 sm:p-3.5">
+    <li className="group relative flex min-h-[96px] min-w-0 w-full items-center justify-between rounded-2xl border border-border bg-card p-3 shadow-wp-xs motion-safe:transition-colors hover:border-primary/50 hover:bg-primary/5 sm:p-3.5">
       {/* Primary Lesson Action Trigger */}
       <button
         type="button"
         onClick={() => onStartLesson(lesson.number)}
-        className="flex min-w-0 flex-1 items-center gap-3 text-start rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:gap-3.5"
+        className="flex min-h-11 min-w-0 flex-1 flex-col items-start gap-3 text-start rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:flex-row sm:items-center sm:gap-3.5"
       >
         {/* Visual Media Anchor: Dual Image Split or Phonetic Typographic Tile */}
-        <MediaFrame aspect="square" className="w-16 shrink-0 rounded-xl sm:w-20">
+        <MediaFrame aspect="square" className="w-16 max-w-full shrink-0 rounded-xl sm:w-20">
           {showImages && firstImage && secondImage ? (
             <div className="grid size-full grid-cols-2 divide-x divide-border/60">
               <div className="relative size-full overflow-hidden bg-muted/20">
@@ -56,7 +56,7 @@ export function PronunciationLessonCard({
                   loading="lazy"
                   decoding="async"
                   onError={() => setHasImageError(true)}
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-cover motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-105"
                 />
               </div>
               <div className="relative size-full overflow-hidden bg-muted/20">
@@ -67,7 +67,7 @@ export function PronunciationLessonCard({
                   loading="lazy"
                   decoding="async"
                   onError={() => setHasImageError(true)}
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-cover motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-105"
                 />
               </div>
             </div>
@@ -93,10 +93,10 @@ export function PronunciationLessonCard({
         </MediaFrame>
 
         {/* Center Content: Title, Phonetic Pill, Contrast Words, Status */}
-        <div className="flex min-w-0 flex-1 flex-col justify-center gap-1">
+        <div className="flex w-full min-w-0 flex-1 flex-col justify-center gap-1">
           <div className="flex flex-wrap items-center gap-1.5">
             <span
-              className="truncate text-sm font-black text-foreground sm:text-base leading-snug"
+              className="min-w-0 break-words text-sm font-black text-foreground sm:text-base leading-snug"
               lang="en"
               dir="ltr"
             >
@@ -104,7 +104,7 @@ export function PronunciationLessonCard({
             </span>
             {phoneticBadge && (
               <span
-                className="shrink-0 rounded-md bg-primary/10 px-1.5 py-0.5 font-mono text-xs font-bold text-primary"
+                className="max-w-full break-words rounded-md bg-primary/10 px-1.5 py-0.5 font-mono text-xs font-bold text-primary"
                 dir="ltr"
               >
                 {phoneticBadge}
@@ -115,21 +115,23 @@ export function PronunciationLessonCard({
           {/* Minimal Pair Words or Contrast Tags */}
           {primaryWords.length >= 2 && (
             <div
-              className="flex items-center gap-1 text-xs font-semibold text-muted-foreground"
+              className="flex flex-wrap items-center gap-1 text-xs font-semibold text-muted-foreground"
               dir="ltr"
             >
-              <span className="rounded bg-muted/70 px-1.5 py-0.5 text-foreground">
+              <span className="max-w-full break-words rounded bg-muted/70 px-1.5 py-0.5 text-foreground">
                 {primaryWords[0]}
               </span>
-              <span className="text-muted-foreground/50">/</span>
-              <span className="rounded bg-muted/70 px-1.5 py-0.5 text-foreground">
+              <span className="text-muted-foreground" aria-hidden>
+                /
+              </span>
+              <span className="max-w-full break-words rounded bg-muted/70 px-1.5 py-0.5 text-foreground">
                 {primaryWords[1]}
               </span>
             </div>
           )}
 
           {/* Status & Review indicator */}
-          <div className="mt-0.5 flex items-center gap-1.5 text-xs font-bold text-primary">
+          <div className="mt-0.5 flex min-w-0 items-center gap-1.5 text-xs font-bold text-primary [&>span]:min-w-0 [&>span]:break-words">
             <Volume2 className="size-3.5 shrink-0" aria-hidden />
             {isDue ? (
               <>

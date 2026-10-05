@@ -2,6 +2,9 @@ import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 for (const width of [320, 390, 768, 1280, 1600]) {
   test(`word group layout at ${width}px`, async ({ page }, testInfo) => {
+    // This journey captures every group plus the page, runs axe, and opens a lesson.
+    // Allow the complete audit to finish without relaxing individual assertions.
+    test.setTimeout(60_000);
     await page.setViewportSize({ width, height: 900 });
     await page.addInitScript(() =>
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }))
