@@ -606,8 +606,8 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     {t("settings.currentLevel", { level: state.preferences.englishLevel })}
                   </p>
                 </div>
-                <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
-                  {(["A1", "A2", "B1"] as const).map((lvl) => (
+                <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl flex-wrap">
+                  {(["A1", "A2", "B1", "B2", "C1", "C2"] as const).map((lvl) => (
                     <button
                       key={lvl}
                       type="button"
@@ -689,12 +689,17 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
           {/* SECTION 6: DATA MANAGEMENT */}
           <section className="flex flex-col gap-3 pt-2">
-            <div className="bg-wp-rose/10 border border-wp-rose/20 rounded-2xl p-4 flex items-center justify-between gap-4">
+            <div className="bg-wp-rose/10 border border-wp-rose/20 rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <span className="font-sans font-bold text-wp-rose text-sm">
                   {t("settings.resetHeading")}
                 </span>
-                <p className="font-sans text-xs text-muted-foreground">{t("settings.resetHint")}</p>
+                <p className="font-sans text-xs text-muted-foreground mt-0.5">
+                  {t("settings.resetHint", {
+                    defaultValue:
+                      "Permanently clears local study progress, review intervals, and streak on this device.",
+                  })}
+                </p>
               </div>
 
               {confirmReset ? (

@@ -52,8 +52,10 @@ export type LearnerGoal = "everyday" | "travel" | "work" | "school" | "conversat
 export type ThemePreference = "system" | "light" | "dark";
 export type LearnerExpression = "child" | "adult";
 
+export type EnglishLevel = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
+
 export interface LearnerPreferences {
-  englishLevel: "A1" | "A2" | "B1";
+  englishLevel: EnglishLevel;
   startingUnitId: string;
   dailyGoalMinutes: number;
   goal: LearnerGoal;

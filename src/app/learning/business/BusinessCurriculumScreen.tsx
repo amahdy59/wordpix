@@ -240,84 +240,6 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
           </div>
         </header>
 
-        {/* Executive Milestone Credentials Section */}
-        <section
-          aria-labelledby="credentials-heading"
-          className="flex flex-col gap-4 rounded-3xl border border-border bg-card p-6 shadow-wp-xs"
-        >
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Award className="size-5 text-primary" aria-hidden />
-              <h2 id="credentials-heading" className="text-lg font-black text-foreground">
-                {t("business.credentialsTitle")}
-              </h2>
-            </div>
-            <span className="text-xs font-bold text-muted-foreground">
-              {t("business.credentialsSubtitle")}
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
-            {BUSINESS_SECTION_MILESTONES.map((milestone) => {
-              const sectionUnits = BUSINESS_UNITS.filter(
-                (u) => u.sectionNumber === milestone.sectionNumber
-              );
-              const sectionMastered = sectionUnits.filter(
-                (u) => progressState[u.id]?.status === "mastered"
-              ).length;
-              const isSectionCertified =
-                sectionUnits.length > 0 && sectionMastered === sectionUnits.length;
-              const isStarted = sectionMastered > 0;
-
-              return (
-                <div
-                  key={milestone.sectionNumber}
-                  className={`flex flex-col justify-between p-4 rounded-2xl border transition-all ${
-                    isSectionCertified
-                      ? "border-accent/40 bg-accent/5 shadow-wp-xs ring-1 ring-accent/30"
-                      : isStarted
-                        ? "border-primary/40 bg-primary/5"
-                        : "border-border bg-muted/20 opacity-80"
-                  }`}
-                >
-                  <div className="flex items-start justify-between gap-2">
-                    <span className="text-2xl" role="img" aria-label={milestone.title}>
-                      {milestone.badge}
-                    </span>
-                    {isSectionCertified ? (
-                      <span className="inline-flex items-center gap-1 rounded-full bg-accent/15 px-2 py-0.5 text-[10px] font-black text-accent uppercase">
-                        <CheckCircle2 className="size-3" aria-hidden />
-                        {t("business.certifiedBadge")}
-                      </span>
-                    ) : (
-                      <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-[10px] font-bold text-muted-foreground">
-                        {t("business.sectionUnitsCount", {
-                          mastered: sectionMastered,
-                          total: sectionUnits.length,
-                        })}
-                      </span>
-                    )}
-                  </div>
-
-                  <div className="mt-3">
-                    <div className="flex items-center gap-1.5">
-                      <span className="rounded bg-primary/15 px-1.5 py-0.2 text-[10px] font-black text-primary">
-                        {milestone.level}
-                      </span>
-                      <h3 className="text-sm font-black text-foreground line-clamp-1">
-                        {milestone.title}
-                      </h3>
-                    </div>
-                    <p className="mt-1 text-xs text-muted-foreground font-medium line-clamp-2">
-                      {milestone.description}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
         {/* Controls: Search and CEFR Level Filter */}
         <div className="flex flex-col gap-3">
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
@@ -476,6 +398,84 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                     })
                   }
                 />
+              );
+            })}
+          </div>
+        </section>
+
+        {/* Course Section Milestones */}
+        <section
+          aria-labelledby="milestones-heading"
+          className="flex flex-col gap-4 rounded-3xl border border-border bg-card p-6 shadow-wp-xs"
+        >
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Award className="size-5 text-primary" aria-hidden />
+              <h2 id="milestones-heading" className="text-lg font-black text-foreground">
+                {t("business.credentialsTitle")}
+              </h2>
+            </div>
+            <span className="text-xs font-bold text-muted-foreground">
+              {t("business.credentialsSubtitle")}
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+            {BUSINESS_SECTION_MILESTONES.map((milestone) => {
+              const sectionUnits = BUSINESS_UNITS.filter(
+                (u) => u.sectionNumber === milestone.sectionNumber
+              );
+              const sectionMastered = sectionUnits.filter(
+                (u) => progressState[u.id]?.status === "mastered"
+              ).length;
+              const isSectionCertified =
+                sectionUnits.length > 0 && sectionMastered === sectionUnits.length;
+              const isStarted = sectionMastered > 0;
+
+              return (
+                <div
+                  key={milestone.sectionNumber}
+                  className={`flex flex-col justify-between p-4 rounded-2xl border transition-all ${
+                    isSectionCertified
+                      ? "border-accent/40 bg-accent/5 shadow-wp-xs ring-1 ring-accent/30"
+                      : isStarted
+                        ? "border-primary/40 bg-primary/5"
+                        : "border-border bg-muted/20 opacity-80"
+                  }`}
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <span className="text-2xl" role="img" aria-label={milestone.title}>
+                      {milestone.badge}
+                    </span>
+                    {isSectionCertified ? (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-accent/15 px-2 py-0.5 text-[10px] font-black text-accent uppercase">
+                        <CheckCircle2 className="size-3" aria-hidden />
+                        {t("business.certifiedBadge")}
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-[10px] font-bold text-muted-foreground">
+                        {t("business.sectionUnitsCount", {
+                          mastered: sectionMastered,
+                          total: sectionUnits.length,
+                        })}
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="mt-3">
+                    <div className="flex items-center gap-1.5">
+                      <span className="rounded bg-primary/15 px-1.5 py-0.2 text-[10px] font-black text-primary">
+                        {milestone.level}
+                      </span>
+                      <h3 className="text-sm font-black text-foreground line-clamp-1">
+                        {milestone.title}
+                      </h3>
+                    </div>
+                    <p className="mt-1 text-xs text-muted-foreground font-medium line-clamp-2">
+                      {milestone.description}
+                    </p>
+                  </div>
+                </div>
               );
             })}
           </div>

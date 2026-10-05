@@ -194,6 +194,16 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
     setMasteryFilter("all");
   };
 
+  const activeStage = stageGroups.find((g) => g.stage.id === selectedStageId);
+  const masteryLabel =
+    masteryFilter === "mastered"
+      ? t("explore.masteredUnits")
+      : masteryFilter === "in-progress"
+        ? t("explore.inProgressUnits")
+        : masteryFilter === "not-started"
+          ? t("explore.notStartedUnits")
+          : null;
+
   return (
     <motion.div
       variants={staggerContainer}
@@ -272,10 +282,31 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
             </button>
           )}
         </div>
+        <p className="text-xs text-muted-foreground px-1 -mt-1">
+          {t("explore.searchClarification", {
+            defaultValue: "Word searches return topic units containing matching vocabulary.",
+          })}
+        </p>
 
         <details className="group rounded-2xl border border-border bg-wp-card p-3">
           <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 rounded-xl px-1 font-bold text-sm text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
-            <span>{t("explore.filterOptions")}</span>
+            <div className="flex items-center gap-2 flex-wrap min-w-0">
+              <span>{t("explore.filterOptions")}</span>
+              {(selectedStageId !== "all" || masteryFilter !== "all") && (
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  {selectedStageId !== "all" && (
+                    <span className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-semibold text-primary border border-primary/20">
+                      {activeStage?.stage.label ?? selectedStageId}
+                    </span>
+                  )}
+                  {masteryFilter !== "all" && masteryLabel && (
+                    <span className="rounded-full bg-secondary px-2 py-0.5 text-xs font-semibold text-primary border border-primary/20">
+                      {masteryLabel}
+                    </span>
+                  )}
+                </div>
+              )}
+            </div>
             <ChevronDown
               className="size-5 shrink-0 group-open:rotate-180 motion-safe:transition-transform"
               aria-hidden

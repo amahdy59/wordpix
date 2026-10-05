@@ -15,6 +15,7 @@ import {
   Play,
   RotateCcw,
   BookOpen,
+  Mic,
 } from "lucide-react";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { useLearner } from "../context/LearnerContext";
@@ -69,6 +70,22 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
 
   const totalDue = overdueList.length + dueTodayList.length;
   const sessionSize = Math.min(REVIEW_SESSION_SIZE, totalDue);
+
+  const hasLearningHistory =
+    (learnerState.learnerProgress?.sessionsCompleted ?? 0) > 0 ||
+    Object.keys(progress.wordMemory ?? {}).length > 0;
+
+  const nextScheduledDateStr = useMemo(() => {
+    const futureItems = memoryItems.filter((item) => item.daysDiff > 0);
+    if (futureItems.length === 0) return null;
+    futureItems.sort((a, b) => a.daysDiff - b.daysDiff);
+    const closest = futureItems[0];
+    if (closest.daysDiff === 1) return t("practice.tomorrow", { defaultValue: "tomorrow" });
+    return t("practice.inDays", {
+      count: closest.daysDiff,
+      defaultValue: `in ${closest.daysDiff} days`,
+    });
+  }, [memoryItems, t]);
 
   const startReviewSession = () => {
     const queue = [...overdueList, ...dueTodayList]
@@ -168,7 +185,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               </Button>
             </div>
           </div>
-        ) : (
+        ) : hasLearningHistory ? (
           <div className="rounded-3xl border border-border bg-wp-card p-5 sm:p-6 shadow-wp-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-3.5">
               <div className="size-12 rounded-xl bg-wp-green/10 text-wp-green flex items-center justify-center shrink-0">
@@ -187,7 +204,12 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                   )}
                 </div>
                 <p className="text-xs sm:text-sm text-muted-foreground font-medium">
-                  {t("masteryReview.subtitle")}
+                  {nextScheduledDateStr
+                    ? t("practice.nextScheduled", {
+                        time: nextScheduledDateStr,
+                        defaultValue: `Next reviews scheduled for ${nextScheduledDateStr}. Great job keeping your memory strong!`,
+                      })
+                    : t("masteryReview.subtitle")}
                 </p>
               </div>
             </div>
@@ -200,6 +222,35 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               className="min-h-[44px] shrink-0"
             >
               {t("masteryReview.viewSchedule")}
+            </Button>
+          </div>
+        ) : (
+          <div className="rounded-3xl border border-primary/25 bg-primary/5 p-5 sm:p-6 shadow-wp-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <div className="size-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                <BookOpen className="size-6" aria-hidden="true" />
+              </div>
+              <div className="flex flex-col gap-0.5">
+                <h2 className="font-sans font-black text-base sm:text-lg text-foreground">
+                  {t("practice.noReviewsTitle", { defaultValue: "No reviews due yet" })}
+                </h2>
+                <p className="text-xs sm:text-sm text-muted-foreground font-medium">
+                  {t("practice.noReviewsDesc", {
+                    defaultValue:
+                      "Spaced-repetition reviews appear here after you study your first vocabulary unit.",
+                  })}
+                </p>
+              </div>
+            </div>
+
+            <Button
+              variant="primary"
+              size="sm"
+              iconLeft={<Play className="size-4 fill-current" aria-hidden="true" />}
+              onClick={() => dispatch({ type: "GO", to: "learn" })}
+              className="min-h-[44px] shrink-0"
+            >
+              {t("practice.startLearning", { defaultValue: "Start First Lesson" })}
             </Button>
           </div>
         )}
@@ -281,6 +332,27 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                 <p className="font-sans text-sm text-muted-foreground leading-relaxed mt-1.5">
                   {t(`skillHub.exercises.${ex.id}.description`)}
                 </p>
+                <div className="flex items-center gap-1.5 flex-wrap mt-3">
+                  {ex.requiresMic && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 font-sans text-[10px] font-bold text-primary border border-primary/20">
+                      <Mic className="size-3" aria-hidden="true" />
+                      <span>
+                        {t("skillHub.micRequired", { defaultValue: "Microphone required" })}
+                      </span>
+                    </span>
+                  )}
+                  {ex.isTimed && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-wp-amber/10 px-2 py-0.5 font-sans text-[10px] font-bold text-wp-amber border border-wp-amber/20">
+                      <Clock className="size-3" aria-hidden="true" />
+                      <span>{t("skillHub.timedDrill", { defaultValue: "Timed drill" })}</span>
+                    </span>
+                  )}
+                  {!ex.isTimed && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-muted/60 px-2 py-0.5 font-sans text-[10px] font-semibold text-muted-foreground">
+                      <span>{t("skillHub.selfPaced", { defaultValue: "Self-paced" })}</span>
+                    </span>
+                  )}
+                </div>
               </div>
 
               <div className="flex items-center gap-1.5 text-xs font-sans font-bold text-primary pt-2 border-t border-border/40">

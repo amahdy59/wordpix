@@ -317,104 +317,154 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           </div>
         </div>
       )}
-      <section
-        className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4"
-        aria-label={t("learn.specialCurricula")}
-      >
-        <button
-          type="button"
-          onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
-          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
-        >
-          <Headphones className="size-8 text-primary" aria-hidden />
-          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
-            {t("pronunciation.curriculumBadge")}
-          </p>
-          <h2 className="mt-1 text-xl font-black text-foreground">
-            {t("pronunciation.curriculumTitle")}
-          </h2>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">
-            {t("pronunciation.curriculumCardDescription", {
-              completed: Object.values(learnerState.pronunciationProgress).filter(
-                (item) => item.status === "mastered"
-              ).length,
-              total: 68,
+      <section className="flex flex-col gap-4 mt-2" aria-labelledby="optional-courses-heading">
+        <div className="flex flex-col gap-1">
+          <div className="flex items-center gap-2">
+            <Sparkles className="size-4 text-primary" aria-hidden="true" />
+            <h2
+              id="optional-courses-heading"
+              className="font-sans text-xl font-black text-foreground"
+            >
+              {t("learn.specialCurriculaHeading", { defaultValue: "Optional specialist courses" })}
+            </h2>
+          </div>
+          <p className="text-xs sm:text-sm text-muted-foreground font-medium">
+            {t("learn.specialCurriculaSubheading", {
+              defaultValue:
+                "Targeted courses to deepen pronunciation, sacred texts, spoken fluency, and workplace English alongside your main path.",
             })}
           </p>
-          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
-            {t("pronunciation.viewCurriculum")}
-            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-          </span>
-        </button>
-        <button
-          type="button"
-          onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
-          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
-        >
-          <BookOpen className="size-8 text-primary" aria-hidden />
-          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
-            {t("hadith.curriculumBadge")}
-          </p>
-          <h2 className="mt-1 text-xl font-black text-foreground">{t("hadith.curriculumTitle")}</h2>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">
-            {t("hadith.curriculumCardDescription", {
-              completed: Object.values(learnerState.hadithProgress).filter(
-                (item) => item.status === "mastered"
-              ).length,
-              total: 42,
-            })}
-          </p>
-          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
-            {t("hadith.viewCurriculum")}
-            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-          </span>
-        </button>
-        <button
-          type="button"
-          onClick={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
-          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
-        >
-          <MessagesSquare className="size-8 text-primary" aria-hidden />
-          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
-            {t("conversation.badge")}
-          </p>
-          <h2 className="mt-1 text-xl font-black text-foreground">{t("conversation.title")}</h2>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">
-            {t("conversation.completedUnits", {
-              completed: Object.values(learnerState.conversationProgress ?? {}).filter(
-                (item) => item.status === "mastered"
-              ).length,
-              total: 40,
-            })}
-          </p>
-          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
-            {t("conversation.exploreUnits")}
-            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-          </span>
-        </button>
-        <button
-          type="button"
-          onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
-          className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6"
-        >
-          <Briefcase className="size-8 text-primary" aria-hidden />
-          <p className="mt-4 text-xs font-black uppercase tracking-wide text-primary">
-            {t("business.badge")}
-          </p>
-          <h2 className="mt-1 text-xl font-black text-foreground">{t("business.title")}</h2>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">
-            {t("business.completedUnits", {
-              completed: Object.values(learnerState.businessProgress ?? {}).filter(
-                (item) => item.status === "mastered"
-              ).length,
-              total: 40,
-            })}
-          </p>
-          <span className="mt-4 inline-flex items-center gap-2 font-black text-primary">
-            {t("business.exploreUnits")}
-            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-          </span>
-        </button>
+        </div>
+
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
+            className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center justify-between gap-2">
+                <Headphones className="size-7 text-primary" aria-hidden />
+                <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-extrabold text-primary border border-primary/20">
+                  {t("learn.pronunciationScope")}
+                </span>
+              </div>
+              <p className="mt-3 text-xs font-black uppercase tracking-wide text-primary">
+                {t("pronunciation.curriculumBadge")}
+              </p>
+              <h3 className="mt-1 text-lg font-black text-foreground">
+                {t("pronunciation.curriculumTitle")}
+              </h3>
+              <p className="mt-1.5 text-xs leading-5 text-muted-foreground">
+                {t("pronunciation.curriculumCardDescription", {
+                  completed: Object.values(learnerState.pronunciationProgress).filter(
+                    (item) => item.status === "mastered"
+                  ).length,
+                  total: 68,
+                })}
+              </p>
+            </div>
+            <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-black text-primary">
+              {t("pronunciation.viewCurriculum")}
+              <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+            </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
+            className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center justify-between gap-2">
+                <BookOpen className="size-7 text-primary" aria-hidden />
+                <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-extrabold text-primary border border-primary/20">
+                  {t("learn.hadithScope")}
+                </span>
+              </div>
+              <p className="mt-3 text-xs font-black uppercase tracking-wide text-primary">
+                {t("hadith.curriculumBadge")}
+              </p>
+              <h3 className="mt-1 text-lg font-black text-foreground">
+                {t("hadith.curriculumTitle")}
+              </h3>
+              <p className="mt-1.5 text-xs leading-5 text-muted-foreground">
+                {t("hadith.curriculumCardDescription", {
+                  completed: Object.values(learnerState.hadithProgress).filter(
+                    (item) => item.status === "mastered"
+                  ).length,
+                  total: 42,
+                })}
+              </p>
+            </div>
+            <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-black text-primary">
+              {t("hadith.viewCurriculum")}
+              <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+            </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
+            className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center justify-between gap-2">
+                <MessagesSquare className="size-7 text-primary" aria-hidden />
+                <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-extrabold text-primary border border-primary/20">
+                  {t("learn.conversationScope")}
+                </span>
+              </div>
+              <p className="mt-3 text-xs font-black uppercase tracking-wide text-primary">
+                {t("conversation.badge")}
+              </p>
+              <h3 className="mt-1 text-lg font-black text-foreground">{t("conversation.title")}</h3>
+              <p className="mt-1.5 text-xs leading-5 text-muted-foreground">
+                {t("conversation.completedUnits", {
+                  completed: Object.values(learnerState.conversationProgress ?? {}).filter(
+                    (item) => item.status === "mastered"
+                  ).length,
+                  total: 40,
+                })}
+              </p>
+            </div>
+            <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-black text-primary">
+              {t("conversation.exploreUnits")}
+              <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+            </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
+            className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center justify-between gap-2">
+                <Briefcase className="size-7 text-primary" aria-hidden />
+                <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-extrabold text-primary border border-primary/20">
+                  {t("learn.businessScope")}
+                </span>
+              </div>
+              <p className="mt-3 text-xs font-black uppercase tracking-wide text-primary">
+                {t("business.badge")}
+              </p>
+              <h3 className="mt-1 text-lg font-black text-foreground">{t("business.title")}</h3>
+              <p className="mt-1.5 text-xs leading-5 text-muted-foreground">
+                {t("business.completedUnits", {
+                  completed: Object.values(learnerState.businessProgress ?? {}).filter(
+                    (item) => item.status === "mastered"
+                  ).length,
+                  total: 40,
+                })}
+              </p>
+            </div>
+            <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-black text-primary">
+              {t("business.exploreUnits")}
+              <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+            </span>
+          </button>
+        </div>
       </section>
     </PageContainer>
   );

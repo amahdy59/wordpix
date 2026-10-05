@@ -59,7 +59,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
       totalCorrect += w.correctRecalls;
       totalRecalls += w.correctRecalls + w.incorrectRecalls;
     });
-    return totalRecalls === 0 ? 0 : Math.round((totalCorrect / totalRecalls) * 100);
+    return totalRecalls === 0 ? null : Math.round((totalCorrect / totalRecalls) * 100);
   }, [memoryValues]);
 
   const dueCount = useMemo(() => {
@@ -109,36 +109,45 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
     {
       value: `${strongCount}`,
       label: t("profile.strongWords"),
+      description: t("profile.strongWordsDesc", { defaultValue: "Multi-interval mastery" }),
       icon: ShieldCheck,
       color: "text-wp-green",
     },
     {
       value: `${familiarCount}`,
       label: t("profile.familiarWords"),
+      description: t("profile.familiarWordsDesc", { defaultValue: "Recognized & recalled" }),
       icon: Brain,
       color: "text-wp-blue",
     },
     {
       value: `${learningCount}`,
       label: t("profile.learningWords"),
+      description: t("profile.learningWordsDesc", { defaultValue: "Introduced recently" }),
       icon: BookOpen,
       color: "text-wp-amber",
     },
     {
-      value: `${recallAccuracy}%`,
+      value: recallAccuracy === null ? "—" : `${recallAccuracy}%`,
       label: t("profile.recallAccuracy"),
+      description:
+        recallAccuracy === null
+          ? t("profile.recallNotTestedDesc", { defaultValue: "No drills completed yet" })
+          : t("profile.recallAccuracyDesc", { defaultValue: "Prompt recall accuracy" }),
       icon: Target,
       color: "text-primary",
     },
     {
       value: `${dueCount}`,
       label: t("profile.dueForReview"),
+      description: t("profile.dueForReviewDesc", { defaultValue: "Scheduled for retention" }),
       icon: Sparkles,
       color: "text-wp-teal",
     },
     {
       value: t("profile.dayCount", { count: progress.streak }),
       label: t("profile.activeStreak"),
+      description: t("profile.activeStreakDesc", { defaultValue: "Consecutive study days" }),
       icon: Flame,
       color: "text-wp-amber",
     },
@@ -186,6 +195,13 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                       : t("profile.streakReady")}
                   </span>
                 </div>
+                <p className="text-xs text-muted-foreground font-medium mt-1">
+                  {user
+                    ? t("profile.signedInStatus", { defaultValue: "Signed in · Cloud sync active" })
+                    : t("profile.guestStorageStatus", {
+                        defaultValue: "Stored on this device · Sign in to back up and sync",
+                      })}
+                </p>
               </div>
             </motion.div>
 
@@ -237,13 +253,13 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
               />
             ) : (
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-                {STATS.map(({ value, label, icon: Icon, color }) => (
+                {STATS.map(({ value, label, description, icon: Icon, color }) => (
                   <Surface
                     key={label}
                     variant="card"
                     radius="lg"
                     padding="xs"
-                    className="flex flex-col items-center gap-1.5 text-center"
+                    className="flex flex-col items-center gap-1 text-center p-3"
                   >
                     <div className="flex size-9 items-center justify-center rounded-xl bg-secondary">
                       <Icon className={`size-4 ${color}`} />
@@ -251,8 +267,11 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                     <p className="mt-0.5 font-sans text-xl font-black leading-none text-foreground">
                       {value}
                     </p>
-                    <p className="text-center font-sans text-xs font-medium leading-tight text-muted-foreground">
+                    <p className="text-center font-sans text-xs font-bold leading-tight text-foreground">
                       {label}
+                    </p>
+                    <p className="text-center font-sans text-[11px] font-medium leading-tight text-muted-foreground">
+                      {description}
                     </p>
                   </Surface>
                 ))}

@@ -1,5 +1,6 @@
 import { Headphones, BookOpen, Mic, PenTool } from "lucide-react";
 import type { SkillCategory, SkillExerciseId } from "../types";
+import type { EnglishLevel } from "../context/LearnerContext";
 
 /**
  * Single source of truth for the skill-exercise catalogue.
@@ -14,6 +15,8 @@ export interface ExerciseDef {
   category: SkillCategory;
   description: string;
   minimumLevel?: "A2" | "B1";
+  requiresMic?: boolean;
+  isTimed?: boolean;
 }
 
 /**
@@ -51,6 +54,7 @@ export const EXERCISES: ExerciseDef[] = [
     category: "listening",
     title: "Dictation Sprint",
     description: "Cloze text input with countdown timer and limited replays.",
+    isTimed: true,
   },
   {
     id: "listen-vocab-spotting",
@@ -70,12 +74,14 @@ export const EXERCISES: ExerciseDef[] = [
     title: "Selective Shadowing",
     description: "Repeat a model sentence aloud and check your own rhythm and stress.",
     minimumLevel: "B1",
+    requiresMic: true,
   },
   {
     id: "listen-warmup-review",
     category: "listening",
     title: "Warm-up Refresher",
     description: "30-second flashcard review with memory strength indicators.",
+    isTimed: true,
   },
   {
     id: "listen-podcast-comprehension",
@@ -144,24 +150,28 @@ export const EXERCISES: ExerciseDef[] = [
     category: "speaking",
     title: "Echo Practice",
     description: "Say the word and have it checked against what you meant to say.",
+    requiresMic: true,
   },
   {
     id: "speak-scenario-response",
     category: "speaking",
     title: "Scenario Response",
     description: "Situational speaking prompt with cultural tips.",
+    requiresMic: true,
   },
   {
     id: "speak-photo-narration",
     category: "speaking",
     title: "Photo Narration",
     description: "Use a clear prompt and word guide to describe a photo aloud.",
+    requiresMic: true,
   },
   {
     id: "speak-video-roleplay",
     category: "speaking",
     title: "Scenario Roleplay",
     description: "Practice a useful spoken exchange with guided conversation turns.",
+    requiresMic: true,
   },
   {
     id: "speak-compare-contrast",
@@ -169,12 +179,15 @@ export const EXERCISES: ExerciseDef[] = [
     title: "Compare & Contrast",
     description: "Compare two photos aloud using a simple language guide.",
     minimumLevel: "A2",
+    requiresMic: true,
   },
   {
     id: "speak-word-chain",
     category: "speaking",
     title: "Word Chain Arcade",
     description: "Fast-paced memory chain game with combo streaks and hearts.",
+    requiresMic: true,
+    isTimed: true,
   },
   {
     id: "speak-self-repair",
@@ -182,6 +195,7 @@ export const EXERCISES: ExerciseDef[] = [
     title: "Self-Repair",
     description: "Correct a model sentence, then say the improved version aloud.",
     minimumLevel: "A2",
+    requiresMic: true,
   },
 
   // Writing
@@ -196,6 +210,7 @@ export const EXERCISES: ExerciseDef[] = [
     category: "writing",
     title: "Sentence Assembly Arcade",
     description: "Timed word tile ordering with combo multipliers.",
+    isTimed: true,
   },
   {
     id: "write-photo-journal",
@@ -236,6 +251,7 @@ export const EXERCISES: ExerciseDef[] = [
     category: "writing",
     title: "Timed Writing Sprint",
     description: "Arcade speed vocabulary typing with live score and streak fire.",
+    isTimed: true,
   },
 ];
 
@@ -252,19 +268,23 @@ export function availableCategories(includeSpeaking: boolean, includeListening: 
   );
 }
 
-const LEVEL_RANK = { A1: 1, A2: 2, B1: 3 } as const;
+const LEVEL_RANK: Record<EnglishLevel, number> = {
+  A1: 1,
+  A2: 2,
+  B1: 3,
+  B2: 4,
+  C1: 5,
+  C2: 6,
+};
 
-export function isExerciseAvailableForLevel(
-  exercise: ExerciseDef,
-  level: keyof typeof LEVEL_RANK
-): boolean {
+export function isExerciseAvailableForLevel(exercise: ExerciseDef, level: EnglishLevel): boolean {
   return !exercise.minimumLevel || LEVEL_RANK[level] >= LEVEL_RANK[exercise.minimumLevel];
 }
 
 export function countAvailableExercises(
   includeSpeaking: boolean,
   includeListening: boolean,
-  level?: keyof typeof LEVEL_RANK
+  level?: EnglishLevel
 ): number {
   const categories = availableCategories(includeSpeaking, includeListening);
   return EXERCISES.filter(

@@ -86,7 +86,7 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
           titleId="hadith-curriculum-title"
           badge={t("hadith.curriculumBadge")}
           title={t("hadith.curriculumTitle")}
-          description={t("hadith.curriculumDescription")}
+          description={t("hadith.curriculumShortOutcome")}
           metrics={[
             { label: t("hadith.totalLessons"), value: FIGMA_HADITH_LESSONS.length },
             { label: t("hadith.masteredLessons"), value: completed },
@@ -104,6 +104,16 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
             </Button>
           }
         >
+          <details className="mb-4 text-xs text-muted-foreground group">
+            <summary className="cursor-pointer font-semibold text-foreground hover:text-primary list-none flex items-center gap-1.5 focus-visible:outline-2 focus-visible:outline-primary rounded-md">
+              <span className="underline underline-offset-2">{t("hadith.pedagogyDetails")}</span>
+            </summary>
+            <div className="mt-1.5 space-y-1.5 leading-relaxed">
+              <p>{t("hadith.curriculumDescription")}</p>
+              <p className="text-[11px] text-muted-foreground">{t("hadith.canonicalScopeNote")}</p>
+            </div>
+          </details>
+
           <CurriculumFilterTabs
             label={t("hadith.filtersLabel")}
             value={filter}
