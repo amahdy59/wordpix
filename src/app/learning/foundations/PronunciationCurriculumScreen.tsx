@@ -235,7 +235,7 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
                       })}
                     </p>
                   </div>
-                  <ol className="mt-4 grid gap-3 md:grid-cols-2">
+                  <ol className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2">
                     {chapter.lessons.map((lesson) => {
                       const progress =
                         state.pronunciationProgress[

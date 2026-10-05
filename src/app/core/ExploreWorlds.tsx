@@ -214,7 +214,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           title={t("explore.pageTitle")}
           subtitle={t("explore.pageSubtitle")}
           actions={
-            <div className="flex shrink-0 flex-col gap-1.5 rounded-2xl border border-primary/20 bg-primary/5 p-4 sm:items-end">
+            <div className="hidden shrink-0 flex-col gap-1.5 sm:flex rounded-2xl border border-primary/20 bg-primary/5 p-4 sm:items-end">
               <div className="flex items-center gap-2">
                 <Award className="size-5 text-primary" aria-hidden="true" />
                 <span className="font-bold text-foreground text-sm">
@@ -259,13 +259,13 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder={t("explore.searchPlaceholder")}
-            className="w-full bg-wp-card text-foreground placeholder:text-muted-foreground border border-border rounded-xl py-2.5 ps-10 pe-9 text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary min-h-[44px]"
+            className="w-full bg-wp-card text-foreground placeholder:text-muted-foreground border border-border rounded-xl py-2.5 ps-10 pe-12 text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary min-h-[44px]"
           />
           {searchQuery && (
             <button
               type="button"
               onClick={() => setSearchQuery("")}
-              aria-label="Clear search"
+              aria-label={t("explore.clearSearchInput")}
               className="absolute inset-y-0 end-0 flex items-center pe-3 text-muted-foreground hover:text-foreground min-h-[44px] min-w-[44px] justify-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
             >
               <X className="size-4" aria-hidden="true" />
@@ -273,83 +273,96 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           )}
         </div>
 
-        {/* CEFR Stage Filter Chips */}
-        <div
-          role="radiogroup"
-          aria-label={t("explore.collectionNavigation")}
-          className="flex flex-wrap items-center gap-2 pb-1"
-        >
-          <FilterChip
-            label={t("explore.allLevels")}
-            selected={selectedStageId === "all"}
-            selectionMode="single"
-            onToggle={() => setSelectedStageId("all")}
-            count={allCurriculumUnits.length}
-            size="sm"
-          />
-
-          {CEFR_STAGES.map((stage) => {
-            const isSelected = selectedStageId === stage.id;
-            const count = stage.end - stage.start;
-            return (
+        <details className="group rounded-2xl border border-border bg-wp-card p-3">
+          <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 rounded-xl px-1 font-bold text-sm text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
+            <span>{t("explore.filterOptions")}</span>
+            <ChevronDown
+              className="size-5 shrink-0 group-open:rotate-180 motion-safe:transition-transform"
+              aria-hidden
+            />
+          </summary>
+          <div className="mt-3 flex flex-col gap-3">
+            {/* CEFR Stage Filter Chips */}
+            <div
+              role="radiogroup"
+              aria-label={t("explore.collectionNavigation")}
+              className="flex flex-wrap items-center gap-2 pb-1"
+            >
               <FilterChip
-                key={stage.id}
-                label={stage.label}
-                selected={isSelected}
+                label={t("explore.allLevels")}
+                selected={selectedStageId === "all"}
                 selectionMode="single"
-                onToggle={() => setSelectedStageId(stage.id)}
-                count={count}
+                onToggle={() => setSelectedStageId("all")}
+                count={allCurriculumUnits.length}
                 size="sm"
               />
-            );
-          })}
-        </div>
 
-        {/* Mastery Status Filter Chips */}
-        <div
-          role="radiogroup"
-          aria-label={t("explore.masteryFilterAria")}
-          className="flex flex-wrap items-center gap-2 pb-1 text-xs"
-        >
-          <span className="text-muted-foreground font-semibold text-xs shrink-0 ps-1">
-            {t("explore.filterStatus")}
-          </span>
-          <FilterChip
-            label={t("explore.statusAll")}
-            selected={masteryFilter === "all"}
-            selectionMode="single"
-            onToggle={() => setMasteryFilter("all")}
-            size="sm"
-          />
-          <FilterChip
-            label={t("explore.statusMastered")}
-            selected={masteryFilter === "mastered"}
-            selectionMode="single"
-            onToggle={() => setMasteryFilter("mastered")}
-            count={overallStats.completedUnits}
-            size="sm"
-          />
-          <FilterChip
-            label={t("explore.statusInProgress")}
-            selected={masteryFilter === "in-progress"}
-            selectionMode="single"
-            onToggle={() => setMasteryFilter("in-progress")}
-            size="sm"
-          />
-          <FilterChip
-            label={t("explore.statusNotStarted")}
-            selected={masteryFilter === "not-started"}
-            selectionMode="single"
-            onToggle={() => setMasteryFilter("not-started")}
-            size="sm"
-          />
-        </div>
+              {CEFR_STAGES.map((stage) => {
+                const isSelected = selectedStageId === stage.id;
+                const count = stage.end - stage.start;
+                return (
+                  <FilterChip
+                    key={stage.id}
+                    label={stage.label}
+                    selected={isSelected}
+                    selectionMode="single"
+                    onToggle={() => setSelectedStageId(stage.id)}
+                    count={count}
+                    size="sm"
+                  />
+                );
+              })}
+            </div>
+
+            {/* Mastery Status Filter Chips */}
+            <div
+              role="radiogroup"
+              aria-label={t("explore.masteryFilterAria")}
+              className="flex flex-wrap items-center gap-2 pb-1 text-xs"
+            >
+              <span className="text-muted-foreground font-semibold text-xs shrink-0 ps-1">
+                {t("explore.filterStatus")}
+              </span>
+              <FilterChip
+                label={t("explore.statusAll")}
+                selected={masteryFilter === "all"}
+                selectionMode="single"
+                onToggle={() => setMasteryFilter("all")}
+                size="sm"
+              />
+              <FilterChip
+                label={t("explore.statusMastered")}
+                selected={masteryFilter === "mastered"}
+                selectionMode="single"
+                onToggle={() => setMasteryFilter("mastered")}
+                count={overallStats.completedUnits}
+                size="sm"
+              />
+              <FilterChip
+                label={t("explore.statusInProgress")}
+                selected={masteryFilter === "in-progress"}
+                selectionMode="single"
+                onToggle={() => setMasteryFilter("in-progress")}
+                size="sm"
+              />
+              <FilterChip
+                label={t("explore.statusNotStarted")}
+                selected={masteryFilter === "not-started"}
+                selectionMode="single"
+                onToggle={() => setMasteryFilter("not-started")}
+                size="sm"
+              />
+            </div>
+          </div>
+        </details>
       </motion.div>
 
       {/* Results Header / Active Filters bar */}
-      {hasActiveFilters && (
-        <div className="flex items-center justify-between text-xs text-muted-foreground font-medium px-1">
-          <span>{t("explore.unitsFound", { count: filteredUnits.length })}</span>
+      <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground font-medium px-1">
+        <span role="status" aria-live="polite" aria-atomic="true">
+          {t("explore.unitsFound", { count: filteredUnits.length })}
+        </span>
+        {hasActiveFilters && (
           <button
             type="button"
             onClick={clearAllFilters}
@@ -357,15 +370,15 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           >
             {t("explore.clearSearch")}
           </button>
-        </div>
-      )}
+        )}
+      </div>
 
       {/* Main Content: Grouped Stages vs Flat Filtered Grid */}
       {filteredUnits.length === 0 ? (
         <div className="p-8 text-center bg-wp-card rounded-3xl border border-border flex flex-col items-center gap-3">
           <Compass className="size-10 text-muted-foreground opacity-50" aria-hidden="true" />
           <p className="font-bold text-foreground text-base">
-            {t("explore.noUnitsFound", { query: searchQuery || "selected filters" })}
+            {t("explore.noUnitsFound", { query: searchQuery || t("explore.selectedFilters") })}
           </p>
           <button
             type="button"

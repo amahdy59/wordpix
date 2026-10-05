@@ -34,7 +34,10 @@ describe("mobile header fits the viewport", () => {
   });
 
   it("gives the brand button a full-size touch target", () => {
-    const button = source.slice(source.indexOf("WordPix Home"), source.indexOf("Utilities"));
+    const button = source.slice(
+      source.indexOf('aria-label={t("nav.brandHome")}'),
+      source.indexOf("Utilities")
+    );
     expect(button).toMatch(/min-h-\[44px\]/);
   });
 });

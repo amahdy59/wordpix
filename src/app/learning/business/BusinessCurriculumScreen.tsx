@@ -168,8 +168,8 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
           </div>
 
           {/* Progress Overview Bar */}
-          <div className="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4 border-t border-border/80">
-            <div className="flex items-center gap-3 rounded-2xl bg-card p-4 border border-border">
+          <div className="mt-2 grid grid-cols-2 sm:grid-cols-3 gap-3 pt-4 border-t border-border/80">
+            <div className="flex min-w-0 flex-wrap items-center gap-3 rounded-2xl bg-card p-4 border border-border">
               <CheckCircle2 className="size-8 text-accent shrink-0" aria-hidden />
               <div>
                 <p className="text-xl font-black text-foreground">
@@ -185,7 +185,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
               </div>
             </div>
 
-            <div className="flex items-center gap-3 rounded-2xl bg-card p-4 border border-border">
+            <div className="flex min-w-0 flex-wrap items-center gap-3 rounded-2xl bg-card p-4 border border-border">
               <Clock className="size-8 text-primary shrink-0" aria-hidden />
               <div>
                 <p className="text-xl font-black text-foreground">{inProgressCount}</p>
@@ -195,7 +195,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
               </div>
             </div>
 
-            <div className="flex items-center justify-between gap-4 rounded-2xl bg-card p-4 border border-border sm:col-span-1">
+            <div className="col-span-2 flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-card p-4 border border-border sm:col-span-1">
               <div className="flex items-center gap-3 min-w-0">
                 {continueUnit.heroImageSrc && (
                   <div className="size-12 shrink-0 overflow-hidden rounded-xl border border-border/80 bg-muted/40 relative">
@@ -215,7 +215,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                   <p className="text-xs font-bold text-muted-foreground uppercase">
                     {t("business.nextLessonLabel")}
                   </p>
-                  <p className="text-sm font-black text-foreground truncate">
+                  <p className="text-sm font-black text-foreground break-words">
                     {t("business.unitColonTitle", {
                       number: continueUnit.unitNumber,
                       title: continueUnit.title,

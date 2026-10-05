@@ -62,7 +62,7 @@ test("practice renders one application shell", async ({ page }) => {
   });
 
   await page.goto("/#/practice");
-  await expect(page.getByRole("heading", { name: "Skill Exercise Hub" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Practice by skill" })).toBeVisible();
   await expect(page.getByRole("navigation", { name: "Main navigation" })).toHaveCount(1);
   await expect(page.locator("#main-content")).toHaveCount(1);
 });

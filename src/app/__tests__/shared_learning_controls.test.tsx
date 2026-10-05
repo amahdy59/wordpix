@@ -6,6 +6,24 @@ import { BilingualTextBlock, LanguageToggle } from "../shared/BilingualText";
 import { ChoiceOptionGroup } from "../shared/ChoiceOptionGroup";
 import { TaskChecklist } from "../shared/TaskChecklist";
 import { QuizQuestionCard } from "../shared/QuizQuestionCard";
+import { FilterChip } from "../shared/FilterChip";
+
+function FilterHarness() {
+  const [value, setValue] = useState("listening");
+  return (
+    <div role="radiogroup" aria-label="Practice skills">
+      {["listening", "reading", "speaking"].map((id) => (
+        <FilterChip
+          key={id}
+          label={id}
+          selectionMode="single"
+          selected={value === id}
+          onToggle={() => setValue(id)}
+        />
+      ))}
+    </div>
+  );
+}
 
 function ChoiceHarness() {
   const [value, setValue] = useState<"a" | "b" | "c">("a");
@@ -61,6 +79,25 @@ function LanguageHarness() {
 }
 
 describe("shared learning controls", () => {
+  it("lets keyboard users select filter chips with arrows and a single Tab stop", async () => {
+    const user = userEvent.setup();
+    render(<FilterHarness />);
+    const listening = screen.getByRole("radio", { name: "listening" });
+    const reading = screen.getByRole("radio", { name: "reading" });
+    const speaking = screen.getByRole("radio", { name: "speaking" });
+    await user.tab();
+    expect(listening).toHaveFocus();
+    await user.keyboard("{ArrowRight}");
+    expect(reading).toHaveFocus();
+    expect(reading).toHaveAttribute("aria-checked", "true");
+    expect(listening).toHaveAttribute("tabindex", "-1");
+    await user.keyboard("{End}");
+    expect(speaking).toHaveFocus();
+    await user.keyboard("{ArrowRight}");
+    expect(listening).toHaveFocus();
+    await user.keyboard("{Home}");
+    expect(listening).toHaveAttribute("aria-checked", "true");
+  });
   it("supports APG radio navigation with wrapping, Home, and End", async () => {
     const user = userEvent.setup();
     render(<ChoiceHarness />);

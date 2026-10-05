@@ -24,7 +24,9 @@
     "library": "المكتبة",
     "practice": "التدريب",
     "profile": "الملف الشخصي",
-    "settings": "الإعدادات"
+    "settings": "الإعدادات",
+    "mobileHeader": "التنقل على الهاتف",
+    "brandHome": "الصفحة الرئيسية في WordPix"
   },
   "action": {
     "getStarted": "ابدأ الآن",
@@ -85,7 +87,7 @@
     "startLearning": "ابدأ التعلم",
     "aboutWordPix": "عن WordPix",
     "previewAlt": "معاينة لمشاهد WordPix المصوّرة",
-    "visualEngine": "محرك تعلم الإنجليزية بالصور",
+    "visualEngine": "تعلّم الإنجليزية بالصور",
     "learnPictures": "تعلّم الإنجليزية عبر مشاهد واقعية مصوّرة",
     "featureScene": "اكتشاف المشاهد التفاعلية والنطق الصوتي الواضح",
     "featureDrills": "تمارين المطابقة والانغماس اللغوي البصري",
@@ -95,7 +97,7 @@
     "step1": "الخطوة 1 من 2",
     "welcomeWordPix": "مرحباً بك في WordPix",
     "masterFaster": "أتقن المفردات بسرعة وسلاسة",
-    "connectWords": "اربط الكلمات بالصور مباشرة دون ترجمة حرفية. تدرّب على الاستماع، التحدث، التهجئة، وتركيب الجمل.",
+    "connectWords": "تعلّم الكلمات من خلال الصور. تدرّب على الاستماع والتحدث والإملاء وبناء الجمل.",
     "sceneAlt": "مشهد {world} كما يظهر في دروس WordPix",
     "wordsReady": "{count} كلمات جاهزة في {world}",
     "skipSetup": "تخطي الإعداد — استخدام الإعدادات الافتراضية",
@@ -114,7 +116,9 @@
     "optionNum": "الخيار {num}",
     "quizPrompt1": "أي صورة تُظهر '{word}'؟",
     "quizPrompt2": "أكمل: '{sentence}'",
-    "quizPrompt3": "ركّب الجملة: '{sentence}'"
+    "quizPrompt3": "ركّب الجملة: '{sentence}'",
+    "heroPhotoAlt": "شخصان ينظران إلى حاسوب محمول",
+    "heroPhotoCaption": "الإنجليزية للحياة اليومية"
   },
   "dashboard": {
     "greetingMorning": "صباح الخير",
@@ -309,8 +313,8 @@
     "wordsCount": "كلمة",
     "unitsCount": "وحدة موضوعية",
     "pathwayBadge": "مكتبة مواضيع اختيارية",
-    "pageTitle": "تصفح الإنجليزية حسب الموضوع",
-    "pageSubtitle": "استكشف مجموعات المفردات حسب الموضوع وبالسرعة التي تناسبك. يبقى مسارك الموجّه في قسم التعلّم.",
+    "pageTitle": "مكتبة المفردات",
+    "pageSubtitle": "ابحث عن موضوع أو كلمة. تابع مسارك الدراسي في تبويب التعلّم.",
     "curriculumMastery": "إتقان المكتبة",
     "topicsAvailable": "وحدات موضوعية متاحة",
     "masteryFraction": "{mastered} / {total} كلمة متقنة",
@@ -338,7 +342,10 @@
     "statusAll": "الكل",
     "statusMastered": "متقنة",
     "statusInProgress": "قيد التعلّم",
-    "statusNotStarted": "لم تبدأ"
+    "statusNotStarted": "لم تبدأ",
+    "filterOptions": "تصفية حسب المستوى أو التقدم",
+    "clearSearchInput": "مسح البحث",
+    "selectedFilters": "عوامل التصفية المحددة"
   },
   "gamification": {
     "mastered": "متقن",
@@ -352,11 +359,11 @@
     "levelGoal": "المستوى {level} · الهدف: {goal}",
     "streakActive": "{streak} أيام حماس متتالية",
     "settings": "الإعدادات",
-    "signInSync": "تسجيل الدخول / المزامنة",
-    "retentionMeasures": "مقاييس الذاكرة التكيفية والحفظ",
+    "signInSync": "سجّل الدخول لمزامنة تقدمك",
+    "retentionMeasures": "تقدمك في التعلّم",
     "statsEmptyTitle": "ستظهر مؤشرات تعلمك هنا",
     "statsEmptyHint": "أكمل أول جلسة تدريب لبدء تتبع التذكر والإتقان ومواعيد المراجعة.",
-    "statsAria": "إحصائيات الذاكرة",
+    "statsAria": "التقدم في التعلّم",
     "strongWords": "كلمات متقنة",
     "familiarWords": "كلمات مألوفة",
     "learningWords": "كلمات قيد التعلم",
@@ -381,7 +388,17 @@
     "skillEvidence": "ترسخت {established} من {practiced} كلمات تم التدرب عليها",
     "skillAccuracy": "دقة {percent}%",
     "skillProgressAria": "{skill}: دقة الأدلة {percent}%",
-    "skillNotPracticed": "لم تتم ممارستها بعد"
+    "skillNotPracticed": "لم تتم ممارستها بعد",
+    "signOut": "تسجيل الخروج",
+    "streakReady": "ابدأ سلسلة أيام التعلّم",
+    "goals": {
+      "everyday": "الإنجليزية اليومية",
+      "travel": "السفر",
+      "work": "العمل",
+      "school": "الدراسة",
+      "conversation": "المحادثة",
+      "kids": "تعلّم الإنجليزية"
+    }
   },
   "wordDetails": {
     "meaning": "المعنى",
@@ -444,7 +461,7 @@
     "title": "الإعدادات وإمكانية الوصول",
     "subtitle": "إدارة أوضاع المظهر، وسرعة الصوت، وحجم النصوص، والخيارات الشاملة.",
     "closeLabel": "إغلاق الإعدادات",
-    "appearanceHeading": "المظهر والتباين العالي (WCAG AAA)",
+    "appearanceHeading": "المظهر",
     "themeMode": "وضع المظهر",
     "themeModeHint": "التبديل بين الوضع الداكن، والفاتح، ومطابقة إعدادات النظام.",
     "learnerMode": "نمط المتعلّم (واجهة المستخدم)",
@@ -458,7 +475,7 @@
     "disabled": "معطّل",
     "reduceMotion": "تقليل الحركة",
     "reduceMotionHint": "تقليل أو إيقاف التأثيرات الحركية والانتقالات في التطبيق.",
-    "typographyHeading": "الخطوط والأرقام",
+    "typographyHeading": "النص والأرقام",
     "textSize": "تكبير حجم النصوص",
     "textSizeHint": "تكبير حجم النص حتى 150% دون التأثير على وظائف الواجهة.",
     "numeralSystem": "نظام الأرقام",
@@ -507,7 +524,8 @@
       "light": "فاتح",
       "dark": "داكن",
       "system": "النظام"
-    }
+    },
+    "toggleLabel": "{setting}: {state}"
   },
   "vocabularyPreload": {
     "title": "تحميل المفردات ({count} وحدة)",
@@ -776,15 +794,141 @@
     "toggleCheatSheet": "فتح/إغلاق دليل اختصارات لوحة المفاتيح هذا"
   },
   "skillHub": {
-    "title": "مركز تدريب المهارات",
+    "title": "تدرّب حسب المهارة",
     "multimodalExercises": "{count} تدريباً متاحاً في المستوى {level}",
-    "subtitle": "اختر مهارة للتدرب عليها. تعكس التدريبات المتاحة مستواك وإعدادات إمكانية الوصول.",
+    "subtitle": "اختر الاستماع أو القراءة أو التحدث أو الكتابة.",
     "startExercise": "بدء التدريب",
     "categoriesAria": "فئات التدريبات",
     "listening": "الاستماع",
     "reading": "القراءة",
     "speaking": "التحدث",
-    "writing": "الكتابة"
+    "writing": "الكتابة",
+    "exercises": {
+      "listen-word-match": {
+        "title": "مطابقة الكلمات",
+        "description": "استمع إلى كلمة واختر المعنى المناسب."
+      },
+      "listen-audio-scene-match": {
+        "title": "مطابقة المشهد المسموع",
+        "description": "استمع إلى وصف واختر الصورة المناسبة."
+      },
+      "listen-dictation-sprint": {
+        "title": "تدريب الإملاء",
+        "description": "استمع واكتب الكلمات الناقصة."
+      },
+      "listen-vocab-spotting": {
+        "title": "التقاط الكلمات",
+        "description": "استمع إلى مقطع واضغط على الكلمات التي تسمعها."
+      },
+      "listen-dialogue-roleplay": {
+        "title": "التدرّب على الحوار",
+        "description": "استمع إلى محادثة واختر ردًا مناسبًا."
+      },
+      "listen-selective-shadowing": {
+        "title": "الترديد مع النموذج",
+        "description": "كرّر جملة وراجع الإيقاع والنبر."
+      },
+      "listen-warmup-review": {
+        "title": "مراجعة سريعة",
+        "description": "راجع الكلمات واختبر مدى تذكّرك لها."
+      },
+      "listen-podcast-comprehension": {
+        "title": "فهم مقطع صوتي",
+        "description": "استمع إلى مقطع وحدّد موضوعاته."
+      },
+      "read-visual-context": {
+        "title": "فهم المعنى من الصورة",
+        "description": "استخدم صورة لاختيار المعنى المناسب."
+      },
+      "read-progressive-reveal": {
+        "title": "القراءة خطوة بخطوة",
+        "description": "اقرأ مقطعًا جملةً جملةً ثم أجب عن الأسئلة."
+      },
+      "read-error-detection": {
+        "title": "اكتشاف الأخطاء",
+        "description": "اقرأ فقرة واعثر على الأخطاء النحوية."
+      },
+      "read-comic-strip": {
+        "title": "قراءة قصة مصوّرة",
+        "description": "تابع قصة من خلال الصور وفقاعات الحوار."
+      },
+      "read-infographic": {
+        "title": "قراءة الرسوم المعلوماتية",
+        "description": "اقرأ رسمًا بيانيًا وأجب عن أسئلة حول أرقامه."
+      },
+      "read-category-sort": {
+        "title": "تصنيف الكلمات",
+        "description": "صنّف الكلمات في مجموعات ذات معانٍ مترابطة."
+      },
+      "read-subtitle-correction": {
+        "title": "تصحيح النصوص القصيرة",
+        "description": "اعثر على الأخطاء في نصوص قصيرة وصحّحها."
+      },
+      "read-confidence-check": {
+        "title": "تقييم فهم المفردات",
+        "description": "راجع فهمك للمفردات قبل بدء الدرس."
+      },
+      "speak-echo-practice": {
+        "title": "تدريب النطق",
+        "description": "انطق كلمة بصوت عالٍ وراجع النتيجة."
+      },
+      "speak-scenario-response": {
+        "title": "الرد في موقف يومي",
+        "description": "تدرّب على ما يمكنك قوله في موقف يومي."
+      },
+      "speak-photo-narration": {
+        "title": "وصف صورة",
+        "description": "صِف صورة بصوت عالٍ بمساعدة دليل للكلمات."
+      },
+      "speak-video-roleplay": {
+        "title": "تمثيل حوار",
+        "description": "تدرّب على محادثة خطوةً خطوةً."
+      },
+      "speak-compare-contrast": {
+        "title": "المقارنة بين صورتين",
+        "description": "قارن بين صورتين بصوت عالٍ باستخدام دليل لغوي."
+      },
+      "speak-word-chain": {
+        "title": "سلسلة الكلمات",
+        "description": "كوّن سلسلة من الكلمات وتدرّب على تذكّرها."
+      },
+      "speak-self-repair": {
+        "title": "تصحيح كلامك",
+        "description": "صحّح جملة ثم انطق الصياغة المحسّنة."
+      },
+      "write-caption-builder": {
+        "title": "كتابة وصف للصورة",
+        "description": "استخدم قائمة كلمات لكتابة وصف لصورة."
+      },
+      "write-sentence-assembly": {
+        "title": "ترتيب الجملة",
+        "description": "رتّب بطاقات الكلمات لتكوين جملة."
+      },
+      "write-photo-journal": {
+        "title": "يوميات الصور",
+        "description": "اكتب عن صورة بمساعدة إرشادات. لا يُقيَّم نصك بدرجة."
+      },
+      "write-video-summary": {
+        "title": "كتابة ملخص قصير",
+        "description": "اكتب ملخصًا من جملتين بمساعدة إرشادات."
+      },
+      "write-error-correction": {
+        "title": "تصحيح الأخطاء",
+        "description": "اعثر على الأخطاء النحوية وصحّحها بمساعدة شرح قصير."
+      },
+      "write-paraphrase-challenge": {
+        "title": "إعادة الصياغة",
+        "description": "أعد كتابة جملة مع الحفاظ على معناها."
+      },
+      "write-image-story-chain": {
+        "title": "قصة من الصور",
+        "description": "اكتب قصة قصيرة باستخدام كلمات تربط الأفكار."
+      },
+      "write-timed-sprint": {
+        "title": "تدريب كتابة المفردات",
+        "description": "تدرّب على كتابة كلمات المفردات بدقة."
+      }
+    }
   },
   "releaseNotes": {
     "whatsNewInVersion": "ما الجديد في الإصدار {version}",
@@ -1427,9 +1571,18 @@
         "feedback": "قد يبدو الفعل متطابقًا بينما تتغير النية. تذكّر هذا الفرق أثناء القراءة والاستماع.",
         "previewTitle": "معاينة ثلاثة مفاهيم أساسية",
         "preview": {
-          "intention": { "term": "intention (اسم)", "meaning": "سببك أو خطتك الواضحة" },
-          "intend": { "term": "intend to (فعل)", "meaning": "تخطط للقيام بفعل" },
-          "motive": { "term": "motive (اسم)", "meaning": "السبب الداخلي وراء الفعل" }
+          "intention": {
+            "term": "intention (اسم)",
+            "meaning": "سببك أو خطتك الواضحة"
+          },
+          "intend": {
+            "term": "intend to (فعل)",
+            "meaning": "تخطط للقيام بفعل"
+          },
+          "motive": {
+            "term": "motive (اسم)",
+            "meaning": "السبب الداخلي وراء الفعل"
+          }
         }
       },
       "speak": {
@@ -1511,7 +1664,7 @@
     "completedUnits": "اكتملت {completed} من {total} وحدة",
     "masteredUnits": "أُتقنت {completed} من {total} وحدة",
     "progressLabel": "تقدم المنهج",
-    "backToExplore": "العودة إلى الاستكشاف",
+    "backToExplore": "العودة إلى مسار التعلّم",
     "advancedPathway": "مسار متقدم B1–C2",
     "unitCountLabel": "40 وحدة نقاش معمق",
     "heroDescription": "انتقل من التعبير عن الآراء اليومية إلى الدفاع عن الادعاءات وتحليل الافتراضات والتعامل مع النقاشات المجتمعية المعقدة.",

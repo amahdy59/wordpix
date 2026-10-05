@@ -2,6 +2,7 @@ import { lazy, memo, Suspense, useState } from "react";
 import { BookOpen, Sliders } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import type { Action } from "../types";
+import { useI18n } from "../context/I18nContext";
 
 const SettingsModal = lazy(() =>
   import("../core/SettingsModal").then((m) => ({ default: m.SettingsModal }))
@@ -18,6 +19,7 @@ interface Props {
  */
 export const MobileHeader = memo(function MobileHeader({ dispatch }: Props) {
   const [showSettingsModal, setShowSettingsModal] = useState(false);
+  const { t } = useI18n();
 
   return (
     <>
@@ -40,20 +42,20 @@ export const MobileHeader = memo(function MobileHeader({ dispatch }: Props) {
       */}
       <header
         className="lg:hidden sticky top-0 z-40 shrink-0 w-full flex items-center justify-between px-4 h-[calc(3.5rem+env(safe-area-inset-top))] pt-[env(safe-area-inset-top)] bg-background/85 backdrop-blur-xl border-b border-border"
-        aria-label="Mobile top navigation"
+        aria-label={t("nav.mobileHeader")}
       >
         {/* Brand / Home Shortcut */}
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "home" })}
-          title="WordPix Home"
-          aria-label="WordPix Home"
+          title={t("nav.brandHome")}
+          aria-label={t("nav.brandHome")}
           // 44px tall because it is a real control — it navigates home — and
           // the 32px logo row was below the minimum touch target everywhere.
           className="flex items-center gap-2 min-h-[44px] pe-2 group focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary rounded-lg"
         >
           <div className="size-8 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs group-hover:opacity-90 transition-all">
-            <BookOpen className="size-4 text-primary-foreground" />
+            <BookOpen className="size-4 text-primary-foreground" aria-hidden />
           </div>
           <span className="font-sans font-bold text-foreground tracking-tight text-lg">
             {`WordPix`}
@@ -67,11 +69,11 @@ export const MobileHeader = memo(function MobileHeader({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => setShowSettingsModal(true)}
-            title="Settings & Accessibility"
-            aria-label="Settings & Accessibility"
+            title={t("settings.title")}
+            aria-label={t("settings.title")}
             className="size-10 min-h-[44px] min-w-[44px] rounded-full flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            <Sliders className="size-5" />
+            <Sliders className="size-5" aria-hidden />
           </button>
         </div>
       </header>

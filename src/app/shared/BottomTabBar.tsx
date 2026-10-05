@@ -37,10 +37,10 @@ export const BottomTabBar = memo(function BottomTabBar({ activeTab, dispatch }: 
               aria-label={label}
               aria-current={isActive ? "page" : undefined}
               onClick={() => dispatch({ type: "GO", to: id })}
-              className={`flex min-w-[56px] max-w-[76px] flex-1 flex-col items-center justify-center gap-1 rounded-xl min-h-[56px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:transition-colors ${isActive ? "text-primary bg-primary/10" : "text-muted-foreground hover:bg-muted/50"}`}
+              className={`flex min-w-[56px] flex-1 flex-col items-center justify-center gap-1 rounded-xl min-h-[56px] py-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:transition-colors ${isActive ? "text-primary bg-primary/10" : "text-muted-foreground hover:bg-muted/50"}`}
             >
               <Icon className="size-[22px]" aria-hidden />
-              <span className="font-sans font-bold text-[11px] leading-tight px-1 text-balance text-center min-w-0">
+              <span className="font-sans font-bold text-xs leading-tight px-1 text-balance break-words text-center min-w-0 max-w-full">
                 {label}
               </span>
             </button>

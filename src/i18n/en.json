@@ -24,7 +24,9 @@
     "library": "Library",
     "practice": "Practice",
     "profile": "Profile",
-    "settings": "Settings"
+    "settings": "Settings",
+    "mobileHeader": "Mobile navigation",
+    "brandHome": "WordPix Home"
   },
   "action": {
     "getStarted": "Get Started",
@@ -85,7 +87,7 @@
     "startLearning": "Start Learning",
     "aboutWordPix": "About WordPix",
     "previewAlt": "Preview of WordPix visual scenes",
-    "visualEngine": "Visual English Learning Engine",
+    "visualEngine": "Visual English learning",
     "learnPictures": "Learn English Through Real-World Pictures",
     "featureScene": "Interactive 2D scene discovery & audio pronunciation",
     "featureDrills": "Visual language immersion matching drills",
@@ -95,7 +97,7 @@
     "step1": "Step 1 of 2",
     "welcomeWordPix": "Welcome to WordPix",
     "masterFaster": "Master Vocabulary Faster",
-    "connectWords": "Connect words directly to pictures without translation. Practice listening, speaking, spelling, and sentence building.",
+    "connectWords": "Learn words through pictures. Practise listening, speaking, spelling, and sentence building.",
     "sceneAlt": "{world} scene as shown in a WordPix lesson",
     "wordsReady": "{count} {world} Words Ready",
     "skipSetup": "Skip setup — use default settings",
@@ -114,7 +116,9 @@
     "optionNum": "Option {num}",
     "quizPrompt1": "Which picture shows a '{word}'?",
     "quizPrompt2": "Complete: '{sentence}'",
-    "quizPrompt3": "Build: '{sentence}'"
+    "quizPrompt3": "Build: '{sentence}'",
+    "heroPhotoAlt": "Two people looking at a laptop",
+    "heroPhotoCaption": "English for everyday life"
   },
   "dashboard": {
     "greetingMorning": "Good morning",
@@ -309,8 +313,8 @@
     "wordsCount": "words",
     "unitsCount": "topic units",
     "pathwayBadge": "Optional topic library",
-    "pageTitle": "Browse English by topic",
-    "pageSubtitle": "Explore themed vocabulary collections at your own pace. Your guided sequence remains in Learn.",
+    "pageTitle": "Vocabulary library",
+    "pageSubtitle": "Find a topic or word. Follow your learning path in Learn.",
     "curriculumMastery": "Library mastery",
     "topicsAvailable": "Topic units available",
     "masteryFraction": "{mastered} / {total} words mastered",
@@ -338,7 +342,10 @@
     "statusAll": "All",
     "statusMastered": "Mastered",
     "statusInProgress": "In Progress",
-    "statusNotStarted": "Not Started"
+    "statusNotStarted": "Not Started",
+    "filterOptions": "Filter by level or progress",
+    "clearSearchInput": "Clear search",
+    "selectedFilters": "selected filters"
   },
   "gamification": {
     "mastered": "Mastered",
@@ -352,11 +359,11 @@
     "levelGoal": "Level {level} · Goal: {goal}",
     "streakActive": "{streak}-day streak active",
     "settings": "Settings",
-    "signInSync": "Sign In / Sync",
-    "retentionMeasures": "Adaptive Memory & Retention Measures",
+    "signInSync": "Sign in to sync progress",
+    "retentionMeasures": "Your learning progress",
     "statsEmptyTitle": "Your learning insights will appear here",
     "statsEmptyHint": "Complete your first practice session to begin tracking recall, mastery, and review timing.",
-    "statsAria": "Genuine memory statistics",
+    "statsAria": "Learning progress",
     "strongWords": "Strong words",
     "familiarWords": "Familiar words",
     "learningWords": "Learning words",
@@ -381,7 +388,17 @@
     "skillEvidence": "{established} of {practiced} practiced words established",
     "skillAccuracy": "{percent}% accurate",
     "skillProgressAria": "{skill}: {percent}% evidence accuracy",
-    "skillNotPracticed": "Not practiced yet"
+    "skillNotPracticed": "Not practiced yet",
+    "signOut": "Sign out",
+    "streakReady": "Start your first learning streak",
+    "goals": {
+      "everyday": "Everyday English",
+      "travel": "Travel",
+      "work": "Work",
+      "school": "Study",
+      "conversation": "Conversation",
+      "kids": "English learning"
+    }
   },
   "wordDetails": {
     "meaning": "Meaning",
@@ -444,7 +461,7 @@
     "title": "Settings & Accessibility",
     "subtitle": "Manage theme modes, audio rates, text sizing, and learning accessibility.",
     "closeLabel": "Close settings",
-    "appearanceHeading": "Appearance & WCAG 2.2 AAA Contrast",
+    "appearanceHeading": "Appearance",
     "themeMode": "Theme Mode",
     "themeModeHint": "Cycle between Dark, Light, and following your system setting.",
     "learnerMode": "Learner Mode (UI Expression)",
@@ -458,7 +475,7 @@
     "disabled": "Disabled",
     "reduceMotion": "Reduce Motion",
     "reduceMotionHint": "Minimize or disable animations across the app.",
-    "typographyHeading": "Typography & Bidi Numerals",
+    "typographyHeading": "Text and numbers",
     "textSize": "Text Size Scaling",
     "textSizeHint": "Resize text up to 150% without loss of function.",
     "numeralSystem": "Numeral System",
@@ -507,7 +524,8 @@
       "light": "Light",
       "dark": "Dark",
       "system": "System"
-    }
+    },
+    "toggleLabel": "{setting}: {state}"
   },
   "vocabularyPreload": {
     "title": "Load vocabulary ({count} units)",
@@ -776,15 +794,141 @@
     "toggleCheatSheet": "Toggle this keyboard shortcuts cheat-sheet"
   },
   "skillHub": {
-    "title": "Skill Exercise Hub",
+    "title": "Practice by skill",
     "multimodalExercises": "{count} exercises available at {level}",
-    "subtitle": "Choose a skill to practise. Availability reflects your level and accessibility settings.",
+    "subtitle": "Choose listening, reading, speaking, or writing.",
     "startExercise": "Start Exercise",
     "categoriesAria": "Exercise categories",
     "listening": "Listening",
     "reading": "Reading",
     "speaking": "Speaking",
-    "writing": "Writing"
+    "writing": "Writing",
+    "exercises": {
+      "listen-word-match": {
+        "title": "Word Match",
+        "description": "Listen to a word and choose the matching meaning."
+      },
+      "listen-audio-scene-match": {
+        "title": "Audio Scene Match",
+        "description": "Listen to a description and choose the matching picture."
+      },
+      "listen-dictation-sprint": {
+        "title": "Dictation Sprint",
+        "description": "Listen and type the missing words."
+      },
+      "listen-vocab-spotting": {
+        "title": "Vocabulary Spotting",
+        "description": "Listen to a passage and tap the words you hear."
+      },
+      "listen-dialogue-roleplay": {
+        "title": "Dialogue Role-Play",
+        "description": "Listen to a conversation and choose a useful reply."
+      },
+      "listen-selective-shadowing": {
+        "title": "Selective Shadowing",
+        "description": "Repeat a sentence and check your rhythm and stress."
+      },
+      "listen-warmup-review": {
+        "title": "Warm-up Refresher",
+        "description": "Review words and check how well you remember them."
+      },
+      "listen-podcast-comprehension": {
+        "title": "Podcast Comprehension",
+        "description": "Listen to a passage and identify its topics."
+      },
+      "read-visual-context": {
+        "title": "Visual Context",
+        "description": "Use a picture to choose the meaning that fits."
+      },
+      "read-progressive-reveal": {
+        "title": "Progressive Reveal",
+        "description": "Read a passage one sentence at a time, then answer questions."
+      },
+      "read-error-detection": {
+        "title": "Error Detection",
+        "description": "Read a paragraph and find the grammar mistakes."
+      },
+      "read-comic-strip": {
+        "title": "Comic Strip",
+        "description": "Follow a story through pictures and speech bubbles."
+      },
+      "read-infographic": {
+        "title": "Infographic Reading",
+        "description": "Read a chart and answer questions about its numbers."
+      },
+      "read-category-sort": {
+        "title": "Category Sort",
+        "description": "Sort words into groups with related meanings."
+      },
+      "read-subtitle-correction": {
+        "title": "Subtitle Correction",
+        "description": "Find and fix mistakes in short captions."
+      },
+      "read-confidence-check": {
+        "title": "Confidence Check",
+        "description": "Check your understanding of vocabulary before a lesson."
+      },
+      "speak-echo-practice": {
+        "title": "Echo Practice",
+        "description": "Say a word aloud and check the result."
+      },
+      "speak-scenario-response": {
+        "title": "Scenario Response",
+        "description": "Practise what to say in an everyday situation."
+      },
+      "speak-photo-narration": {
+        "title": "Photo Narration",
+        "description": "Describe a photo aloud with help from a word guide."
+      },
+      "speak-video-roleplay": {
+        "title": "Scenario Roleplay",
+        "description": "Practise a spoken exchange one turn at a time."
+      },
+      "speak-compare-contrast": {
+        "title": "Compare & Contrast",
+        "description": "Compare two photos aloud using a language guide."
+      },
+      "speak-word-chain": {
+        "title": "Word Chain Arcade",
+        "description": "Build a chain of words and practise remembering them."
+      },
+      "speak-self-repair": {
+        "title": "Self-Repair",
+        "description": "Correct a sentence, then say the improved version aloud."
+      },
+      "write-caption-builder": {
+        "title": "Caption Builder",
+        "description": "Use a word bank to write a caption for a picture."
+      },
+      "write-sentence-assembly": {
+        "title": "Sentence Assembly Arcade",
+        "description": "Put word tiles in order to build a sentence."
+      },
+      "write-photo-journal": {
+        "title": "Photo Journal",
+        "description": "Write about a photo with guidance. Your writing is not graded."
+      },
+      "write-video-summary": {
+        "title": "Short Summary",
+        "description": "Write a short, two-sentence summary with guidance."
+      },
+      "write-error-correction": {
+        "title": "Error Correction",
+        "description": "Find and fix grammar mistakes with short explanations."
+      },
+      "write-paraphrase-challenge": {
+        "title": "Paraphrase Challenge",
+        "description": "Rewrite a sentence while keeping its meaning."
+      },
+      "write-image-story-chain": {
+        "title": "Image Story Chain",
+        "description": "Write a short story using words that connect ideas."
+      },
+      "write-timed-sprint": {
+        "title": "Timed Writing Sprint",
+        "description": "Practise typing vocabulary words accurately."
+      }
+    }
   },
   "releaseNotes": {
     "whatsNewInVersion": "What's New in v{version}",
@@ -1427,9 +1571,18 @@
         "feedback": "The action can look identical while the intention changes. Keep that contrast in mind as you read and listen.",
         "previewTitle": "Preview three key ideas",
         "preview": {
-          "intention": { "term": "intention (noun)", "meaning": "your clear reason or plan" },
-          "intend": { "term": "intend to (verb)", "meaning": "plan to carry out an action" },
-          "motive": { "term": "motive (noun)", "meaning": "the internal reason behind an action" }
+          "intention": {
+            "term": "intention (noun)",
+            "meaning": "your clear reason or plan"
+          },
+          "intend": {
+            "term": "intend to (verb)",
+            "meaning": "plan to carry out an action"
+          },
+          "motive": {
+            "term": "motive (noun)",
+            "meaning": "the internal reason behind an action"
+          }
         }
       },
       "speak": {
@@ -1511,7 +1664,7 @@
     "completedUnits": "{completed} of {total} units completed",
     "masteredUnits": "{completed} of {total} units mastered",
     "progressLabel": "Curriculum progress",
-    "backToExplore": "Back to Explore",
+    "backToExplore": "Back to learning path",
     "advancedPathway": "B1–C2 Advanced Pathway",
     "unitCountLabel": "40 Substantive Discussion Units",
     "heroDescription": "Move from expressing everyday opinions to defending claims, analyzing assumptions, and navigating complex societal debates.",

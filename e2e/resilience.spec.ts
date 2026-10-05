@@ -112,7 +112,7 @@ test("a rejected sign-in preserves credentials and guest access", async ({ page 
   });
 
   await page.goto("/wordpix/#/profile");
-  await page.getByRole("button", { name: "Sign In / Sync" }).click();
+  await page.getByRole("button", { name: "Sign in to sync progress", exact: true }).click();
   const email = page.getByLabel("Email address");
   const password = page.getByLabel("Password");
   await email.fill("offline-test@example.invalid");
