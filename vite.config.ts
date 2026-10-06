@@ -120,6 +120,9 @@ export default defineConfig(async () => {
             if (id.includes("src/generated/figmaImageReplacements")) {
               return "asset-manifest";
             }
+            if (id.includes("curriculumAudioManifest")) {
+              return "curriculum-audio-manifest";
+            }
             if (id.includes("src/i18n/")) {
               // en.json ships synchronously (default + fallback locale); ar.json
               // arrives via dynamic import() on language switch and must not be
