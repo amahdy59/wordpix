@@ -6,6 +6,7 @@ import { RichPassageText } from "../../../shared/RichPassageText";
 import { VocabularyDetailModal } from "../../../shared/VocabularyDetailModal";
 import type { VocabularyTableItem } from "../../../shared/CurriculumVocabularyTable";
 import { resolveAssetUrl } from "../../../../utils/assetUrl";
+import { useAudio } from "../../../shared/useAudio";
 
 interface Props {
   unit: BusinessUnit;
@@ -16,6 +17,13 @@ export function BusinessInputStage({ unit, onNext }: Props) {
   const { t } = useI18n();
   const [playingIdx, setPlayingIdx] = useState<number | null>(null);
   const [activeTerm, setActiveTerm] = useState<string | null>(null);
+
+  const audio = useAudio({
+    lang: "en-US",
+    rate: 0.95,
+    onEnded: () => setPlayingIdx(null),
+    onError: () => setPlayingIdx(null),
+  });
 
   // Extract unique speakers (excluding Narrator)
   const speakers = useMemo(() => {
@@ -63,16 +71,13 @@ export function BusinessInputStage({ unit, onNext }: Props) {
   }, [activeTerm, unit.languageBank]);
 
   const handleSpeak = (text: string, idx: number) => {
-    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
-    window.speechSynthesis.cancel();
-
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "en-US";
-    utterance.rate = 0.95;
+    if (playingIdx === idx && audio.isPlaying) {
+      audio.stop();
+      setPlayingIdx(null);
+      return;
+    }
     setPlayingIdx(idx);
-    utterance.onend = () => setPlayingIdx(null);
-    utterance.onerror = () => setPlayingIdx(null);
-    window.speechSynthesis.speak(utterance);
+    audio.speak(text);
   };
 
   return (
