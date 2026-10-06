@@ -44,81 +44,81 @@
       "هرم"
     ],
     "usage": {
-      "goal": "Identify common 2D and 3D shapes in everyday objects.",
-      "canDoStatement": "I can name simple shapes around me.",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to identify common two-dimensional and three-dimensional shapes in everyday objects.",
+      "canDoStatement": "Can name familiar shapes and match them to common objects and designs.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Circle", "Square", "Triangle"],
-          "scenario": "The clock is a circle, the window is a square, and the sign is a triangle.",
+          "scenario": "During a practical design review, a technician compares examples of circle, square, and triangle. The specification gives this description: A flat shape with three straight sides and three angles..",
           "check": {
-            "question": "What shape is the sign?",
-            "options": ["Circle", "Square", "Triangle"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Triangle", "Circle", "Square"],
             "expectedAnswer": "Triangle"
           },
-          "imageBrief": "Everyday-object scene linking a clock to a circle, a window to a square, and a sign to a triangle.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Circle, Square, and Triangle; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-1-scene-1.avif",
           "imageAlt": "A clock, window, and road sign arranged in one uncluttered room scene."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Rectangle", "Oval", "Diamond"],
-          "scenario": "The door is a rectangle, the mirror is an oval, and the card is a diamond.",
+          "scenario": "During a practical design review, a technician compares examples of rectangle, oval, and diamond. The specification gives this description: A rounded two-dimensional shape like a stretched circle..",
           "check": {
-            "question": "What shape is the mirror?",
-            "options": ["Rectangle", "Oval", "Diamond"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Rectangle", "Diamond", "Oval"],
             "expectedAnswer": "Oval"
           },
-          "imageBrief": "Clear scene with a rectangular door, oval mirror, and diamond-shaped card.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Rectangle, Oval, and Diamond; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-1-scene-2.avif",
           "imageAlt": "A wooden door, wall mirror, and plain card displayed side by side."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pentagon", "Hexagon", "Octagon"],
-          "scenario": "This tile is a pentagon, that tile is a hexagon, and the stop sign is an octagon.",
+          "scenario": "During a practical design review, a technician compares examples of pentagon, hexagon, and octagon. The specification gives this description: A flat shape with eight sides..",
           "check": {
-            "question": "Which shape is the stop sign?",
-            "options": ["Pentagon", "Hexagon", "Octagon"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Hexagon", "Octagon", "Pentagon"],
             "expectedAnswer": "Octagon"
           },
-          "imageBrief": "Clean display of three labeled shapes or objects, including a recognizable octagon stop sign.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Pentagon, Hexagon, and Octagon; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-1-scene-3.avif",
           "imageAlt": "Three blank roadside signs with visibly different outlines."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Star", "Sphere", "Cube"],
-          "scenario": "The star sticker shines, the ball is a sphere, and the box is a cube.",
+          "scenario": "During a practical design review, a technician compares examples of star, sphere, and cube. The specification gives this description: A perfectly round three-dimensional shape like a ball..",
           "check": {
-            "question": "Which object is a sphere?",
-            "options": ["Star", "Sphere", "Cube"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Sphere", "Star", "Cube"],
             "expectedAnswer": "Sphere"
           },
-          "imageBrief": "Simple scene with a star sticker, a ball, and a cube-shaped box.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Star, Sphere, and Cube; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-1-scene-4.avif",
           "imageAlt": "A shiny sticker, round ball, and solid box on a clean tabletop."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Cylinder", "Cone", "Pyramid"],
-          "scenario": "The can is a cylinder, the ice cream cone is a cone, and the toy block is a pyramid.",
+          "scenario": "During a practical design review, a technician compares examples of cylinder, cone, and pyramid. The specification gives this description: A solid with two circular ends and one curved surface..",
           "check": {
-            "question": "What shape is the can?",
-            "options": ["Cylinder", "Cone", "Pyramid"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Cone", "Pyramid", "Cylinder"],
             "expectedAnswer": "Cylinder"
           },
-          "imageBrief": "Scene with a can, an ice cream cone, and a pyramid toy block.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Cylinder, Cone, and Pyramid; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-1-scene-5.avif",
           "imageAlt": "A food can, ice cream cone, and pointed toy block on a table."
         }
       ]
     },
     "reading": {
-      "title": "Shape Hunt",
-      "text": "We go on a shape hunt at school. I find a circle clock and a square window. My friend finds a triangle sign and a rectangle door. In the toy box, we see a cube, a sphere, and a cone. Learning shapes is fun.",
+      "title": "Shapes in a Packaging Mock-up",
+      "text": "A packaging designer reviews several simple product containers. A label uses a circle and a square, while the front panel includes a triangle and rectangle. Nearby samples show a cube, cylinder, cone, and pyramid. The designer checks each shape carefully so the cutting template and product layout are easy for the production team to follow.",
       "imageBrief": "School shape-hunt scene with familiar objects matching the reading."
     },
     "exercises": [
@@ -193,7 +193,7 @@
       "منشور",
       "متوازي المستطيلات",
       "نصف كرة",
-      "سطح حلقي",
+      "شكل حلقي",
       "رباعي الوجوه",
       "خط",
       "منحنى",
@@ -207,81 +207,81 @@
       "متعامد"
     ],
     "usage": {
-      "goal": "Recognize more advanced shapes, lines, and angle words in simple visual contexts.",
-      "canDoStatement": "I can notice basic line and angle words and a few new shapes.",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to identify common lines, angles, and less familiar solid shapes in simple diagrams.",
+      "canDoStatement": "Can recognize basic line and angle terms and distinguish simple geometric forms.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Prism", "Cuboid", "Hemisphere"],
-          "scenario": "The glass block is a prism, the box is a cuboid, and the bowl is a hemisphere.",
+          "scenario": "During a practical design review, a technician compares examples of prism, cuboid, and hemisphere. The specification gives this description: One half of a sphere..",
           "check": {
-            "question": "What shape is the bowl?",
+            "question": "Which term best fits the feature required by the specification?",
             "options": ["Prism", "Cuboid", "Hemisphere"],
             "expectedAnswer": "Hemisphere"
           },
-          "imageBrief": "Display of a prism, cuboid box, and hemisphere bowl with simple visual clarity.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Prism, Cuboid, and Hemisphere; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-2-scene-1.avif",
           "imageAlt": "Two wooden blocks and a rounded bowl displayed on a craft table."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Torus", "Tetrahedron", "Line"],
-          "scenario": "The ring is a torus, the model is a tetrahedron, and the pencil draws a line.",
+          "scenario": "During a practical design review, a technician compares examples of torus, tetrahedron, and line. The specification gives this description: A long narrow mark or geometric path extending in a direction..",
           "check": {
-            "question": "What does the pencil draw?",
-            "options": ["Torus", "Tetrahedron", "Line"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Tetrahedron", "Line", "Torus"],
             "expectedAnswer": "Line"
           },
-          "imageBrief": "A ring-shaped torus, a tetrahedron model, and a pencil drawing a line.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Torus, Tetrahedron, and Line; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-2-scene-2.avif",
           "imageAlt": "A ring model, pointed solid model, and pencil mark arranged for comparison."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Curve", "Straight", "Zigzag"],
-          "scenario": "This road has a curve, this ruler is straight, and this pattern is zigzag.",
+          "scenario": "During a practical design review, a technician compares examples of curve, straight, and zigzag. The specification gives this description: Adjective describing a line or edge that does not bend..",
           "check": {
-            "question": "Which thing is straight?",
-            "options": ["Curve", "Straight", "Zigzag"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Straight", "Curve", "Zigzag"],
             "expectedAnswer": "Straight"
           },
-          "imageBrief": "Three-panel comparison showing a curved road, straight ruler, and zigzag pattern.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Curve, Straight, and Zigzag; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-2-scene-3.avif",
           "imageAlt": "Three panels compare a winding road, ruler, and angular path."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Spiral", "Right Angle", "Acute Angle"],
-          "scenario": "The shell has a spiral, the book corner makes a right angle, and the small angle is acute.",
+          "scenario": "During a practical design review, a technician compares examples of spiral, right angle, and acute angle. The specification gives this description: A curve that winds around a central point while moving outward or inward..",
           "check": {
-            "question": "What shape does the shell have?",
-            "options": ["Spiral", "Right Angle", "Acute Angle"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Right Angle", "Acute Angle", "Spiral"],
             "expectedAnswer": "Spiral"
           },
-          "imageBrief": "Close-up visual showing a spiral shell, a right angle corner, and a small acute angle.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Spiral, Right Angle, and Acute Angle; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-2-scene-4.avif",
           "imageAlt": "A shell and two differently sized corners shown in a close comparison."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Obtuse Angle", "Parallel", "Perpendicular"],
-          "scenario": "The wide angle is obtuse, the train tracks are parallel, and the wall and floor lines are perpendicular.",
+          "scenario": "During a practical design review, a technician compares examples of obtuse angle, parallel, and perpendicular. The specification gives this description: Describes lines that stay the same distance apart and do not meet..",
           "check": {
-            "question": "What are parallel in the sentence?",
-            "options": ["Obtuse Angle", "Parallel", "Perpendicular"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Perpendicular", "Parallel", "Obtuse Angle"],
             "expectedAnswer": "Parallel"
           },
-          "imageBrief": "Visual card showing obtuse angle, parallel lines like train tracks, and perpendicular wall-floor lines.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Obtuse Angle, Parallel, and Perpendicular; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-2-scene-5.avif",
           "imageAlt": "A wide corner, railway tracks, and meeting wall-and-floor lines in three panels."
         }
       ]
     },
     "reading": {
-      "title": "In the Math Corner",
-      "text": "In the math corner, we look at shapes and lines. The teacher shows a cuboid box and a hemisphere bowl. Then she draws a straight line, a curve, and a zigzag. We look at a right angle on the board and parallel lines on the floor tiles.",
+      "title": "Reading a Technical Sketch",
+      "text": "An apprentice looks at a simple technical sketch with a straight line, a curve, and a zigzag path. The trainer points out a right angle and shows how parallel lines stay apart while perpendicular lines meet at ninety degrees. A prism and a hemisphere appear in a separate diagram. The apprentice uses the labels to compare each feature.",
       "imageBrief": "Math-corner classroom scene with a box, bowl, board lines, and floor tiles."
     },
     "exercises": [
@@ -370,81 +370,81 @@
       "شكل كسيري"
     ],
     "usage": {
-      "goal": "Recognize a few basic geometry and pattern words in highly visual, beginner-friendly contexts.",
-      "canDoStatement": "I can understand some simple geometry and pattern words when I see them.",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to understand basic measurement and pattern vocabulary used in rooms, diagrams, and designs.",
+      "canDoStatement": "Can identify simple geometry terms such as area, perimeter, radius, pattern, and symmetry.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Area", "Perimeter", "Volume"],
-          "scenario": "Area is the space inside a shape, perimeter is the line around it, and volume is the space inside a 3D shape.",
+          "scenario": "During a practical design review, a technician compares examples of area, perimeter, and volume. The specification gives this description: The total distance around the outside of a flat shape..",
           "check": {
-            "question": "What is the line around a shape?",
-            "options": ["Area", "Perimeter", "Volume"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Volume", "Perimeter", "Area"],
             "expectedAnswer": "Perimeter"
           },
-          "imageBrief": "Three simple concept cards explaining area, perimeter, and volume with one friendly visual example each.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Area, Perimeter, and Volume; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-3-scene-1.avif",
           "imageAlt": "A flat tiled surface, outlined shape, and filled clear box shown together."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Radius", "Diameter", "Circumference"],
-          "scenario": "In a circle, the radius goes from the center to the side, the diameter goes across, and the circumference is the line around the circle.",
+          "scenario": "During a practical design review, a technician compares examples of radius, diameter, and circumference. The specification gives this description: A straight line across a circle through its centre..",
           "check": {
-            "question": "Which line goes across the circle?",
-            "options": ["Radius", "Diameter", "Circumference"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Diameter", "Radius", "Circumference"],
             "expectedAnswer": "Diameter"
           },
-          "imageBrief": "Beginner-friendly circle diagram showing radius, diameter, and circumference clearly.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Radius, Diameter, and Circumference; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-3-scene-2.avif",
           "imageAlt": "A simple circular model with lines from and through its center."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Diagonal", "Symmetry", "Vertex"],
-          "scenario": "The square has a diagonal line, the butterfly has symmetry, and the triangle has a vertex at the top.",
+          "scenario": "During a practical design review, a technician compares examples of diagonal, symmetry, and vertex. The specification gives this description: A balanced arrangement in which matching parts correspond across a line or point..",
           "check": {
-            "question": "What has symmetry?",
-            "options": ["Diagonal", "Symmetry", "Vertex"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Diagonal", "Vertex", "Symmetry"],
             "expectedAnswer": "Symmetry"
           },
-          "imageBrief": "Scene or card showing a square diagonal, symmetrical butterfly, and triangle with top vertex.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Diagonal, Symmetry, and Vertex; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-3-scene-3.avif",
           "imageAlt": "A marked square, balanced butterfly, and pointed triangle shown in three panels."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Edge", "Repeat", "Sequence"],
-          "scenario": "The cube has edges, the drum beat can repeat, and the cards show a sequence.",
+          "scenario": "During a practical design review, a technician compares examples of edge, repeat, and sequence. The specification gives this description: A set of items arranged in a particular order..",
           "check": {
-            "question": "What do the cards show?",
-            "options": ["Edge", "Repeat", "Sequence"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Repeat", "Sequence", "Edge"],
             "expectedAnswer": "Sequence"
           },
-          "imageBrief": "Simple visual card for cube edges, repeated drum pattern, and a sequence of cards.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Edge, Repeat, and Sequence; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-3-scene-4.avif",
           "imageAlt": "A solid block, repeating percussion beats, and ordered cards shown together."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Pattern", "Tessellation", "Fractal"],
-          "scenario": "The tiles make a pattern, the wall shows a tessellation, and the tree picture looks like a fractal.",
+          "scenario": "During a practical design review, a technician compares examples of pattern, tessellation, and fractal. The specification gives this description: A design or arrangement that repeats or follows a recognizable rule..",
           "check": {
-            "question": "What do the tiles make?",
+            "question": "Which term best fits the feature required by the specification?",
             "options": ["Pattern", "Tessellation", "Fractal"],
             "expectedAnswer": "Pattern"
           },
-          "imageBrief": "Pattern-focused scene with floor tiles, tessellation wall design, and a branching tree image suggesting a fractal.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Pattern, Tessellation, and Fractal; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-3-scene-5.avif",
           "imageAlt": "Decorative tiles and a branching tree design fill an art-room display."
         }
       ]
     },
     "reading": {
-      "title": "Patterns in the Room",
-      "text": "Our teacher shows us shapes in a new way. We look at the radius and diameter of a big circle. Then we find symmetry in a butterfly picture and a diagonal in a square. On the wall, we see a tile pattern that looks like a tessellation.",
+      "title": "Measuring a Room Plan",
+      "text": "An interior designer checks a room plan before ordering materials. She measures the area and perimeter, then reviews the radius and diameter of a round table. A diagonal line helps position the furniture, while symmetry keeps the layout balanced. She also checks a repeating floor pattern so the tiles continue neatly across the room.",
       "imageBrief": "Classroom or art-room scene with a big circle diagram, butterfly picture, square, and patterned wall tiles."
     },
     "exercises": [
@@ -499,44 +499,44 @@
     "cefrStage": "Pre-A1",
     "stageName": "Pre-A1 Starter",
     "targetWordsEnglish": ["Grid", "Array", "Matrix", "Mosaic", "Kaleidoscope"],
-    "targetWordsArabic": ["شبكة", "مصفوفة", "مصفوفة رياضية", "فسيفساء", "منظار الأشكال المتكررة"],
+    "targetWordsArabic": ["شبكة", "ترتيب مصفوفي", "مصفوفة", "فسيفساء", "منظار الأشكال المتناظرة"],
     "usage": {
-      "goal": "Recognize shapes, lines, patterns, and basic geometry ideas visually.",
-      "canDoStatement": "I can recognize shapes, lines, patterns, and basic geometry ideas visually",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize grid-based layouts and repeated visual arrangements in everyday design.",
+      "canDoStatement": "Can identify a grid, array, matrix, mosaic, and kaleidoscope in simple visual contexts.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Grid", "Array", "Matrix"],
-          "scenario": "In the math picture, I can find grid, array, and matrix.",
+          "scenario": "During a practical design review, a technician compares examples of grid, array, and matrix. The specification gives this description: A pattern of crossing horizontal and vertical lines that forms rows and columns..",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which term best fits the feature required by the specification?",
             "options": ["Grid", "Array", "Matrix"],
             "expectedAnswer": "Grid"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for shapes & geometry that represents: In the math picture, I can find grid, array, and matrix. Emphasize grid, array, and matrix and avoid clutter.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Grid, Array, and Matrix; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-4-scene-1.avif",
           "imageAlt": "Three panels show ruled squares, organized wooden beads, and colored tiles."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Mosaic", "Kaleidoscope"],
-          "scenario": "In the math picture, I can find mosaic and kaleidoscope.",
+          "scenario": "During a practical design review, a technician compares examples of mosaic and kaleidoscope. The specification gives this description: A picture or pattern made from many small pieces placed together..",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Mosaic", "Kaleidoscope"],
+            "question": "Which term best fits the feature required by the specification?",
+            "options": ["Kaleidoscope", "Grid", "Mosaic"],
             "expectedAnswer": "Mosaic"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for shapes & geometry that represents: In the math picture, I can find mosaic and kaleidoscope. Emphasize mosaic and kaleidoscope and avoid clutter.",
+          "imageBrief": "Photorealistic adult technical-design workspace with clear unlabeled geometric models or diagrams representing Mosaic and Kaleidoscope; drafting tools and neutral background, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/shapes-geometry/shapes-geometry-4-scene-2.avif",
           "imageAlt": "A colorful tile artwork and mirrored viewing toy on a craft table."
         }
       ]
     },
     "reading": {
-      "title": "Shapes & Geometry Mini Story",
-      "text": "In the math corner, we look at pictures and models. I can find grid, array, and matrix. The teacher also shows mosaic and kaleidoscope. We point, compare, and say each new geometry word slowly. We also remember earlier words such as area and perimeter.",
+      "title": "Building a Repeating Layout",
+      "text": "A graphic designer arranges small icons in a grid for a wall display. The icons form a regular array, and the working file stores their positions in a simple matrix. Another section uses a mosaic made from repeated shapes. For inspiration, the designer also studies a kaleidoscope pattern with strong symmetry and repetition.",
       "imageBrief": "One uncluttered shapes & geometry scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -564,7 +564,7 @@
     "video": {
       "title": "Shapes & Geometry: See It, Say It",
       "idea": "30–50 second contextual video set in a math corner. Show grid, array, matrix, mosaic, and kaleidoscope naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see grid, array, and matrix. What can you find next?"
+      "scriptStarter": "Watch the situation: During a floor-plan meeting, a designer compares clear visual examples of grid, array, and matrix. The highlighted example shows grid."
     },
     "spacedReview": "1 lesson(s) back: Area, Perimeter from shapes-geometry-3\n3 lesson(s) back: Circle, Square from shapes-geometry-1\n7 lesson(s) back: Plus, Minus from numbers-counting-4"
   }

@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "toys-games-1",
     "lessonName": "Toys & Games 1",
@@ -27,88 +27,93 @@
       "Dominoes"
     ],
     "targetWordsArabic": [
-      "شخص يُسمّى «دولل»",
-      "دُبٌّ لُعْبَة (دُبٌّ قُمَاشِيّ)",
-      "مصطلح مرتبط بالموضوع يُسمّى «اكتيون فيجوري»",
+      "دمية",
+      "دب لعبة (دب قماشي)",
+      "مجسم شخصية",
       "مقدمة باطن القدم",
-      "مصطلح مرتبط بالموضوع يُسمّى «بلوكس»",
-      "لعبة يُسمّى «بوززلي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «يو-يو»",
+      "مكعبات لعب",
+      "أحجية / لعبة تركيب",
+      "يويو",
       "حدأة",
-      "مصطلح مرتبط بالموضوع يُسمّى «توب»",
-      "لعبة يُسمّى «ماربليس»",
+      "لعبة دوارة",
+      "كرات زجاجية",
       "شطرنج",
-      "لعبة يُسمّى «تشيكيرس»",
-      "لعبة يُسمّى «مونوبولي»",
-      "لعبة يُسمّى «سكراببلي»",
-      "لعبة يُسمّى «دومينويس»"
+      "لعبة الداما",
+      "لعبة مونوبولي",
+      "لعبة سكرابل",
+      "دومينو"
     ],
     "usage": {
-      "goal": "Name common toys, games, and play equipment.",
-      "canDoStatement": "I can name common toys, games, and play equipment",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key toys & games 1 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to toys & games in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Doll", "Teddy Bear", "Action Figure"],
-          "scenario": "For play, I can use or play with doll, teddy bear, and action figure.",
+          "scenario": "At a weekend gathering, adults choose between doll, teddy bear, and action figure. The selected activity or item is doll.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Doll", "Teddy Bear", "Action Figure"],
+            "question": "Which item is selected for the break?",
+            "options": ["Action Figure", "Doll", "Teddy Bear"],
             "expectedAnswer": "Doll"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with doll, teddy bear, and action figure. Emphasize doll, teddy bear, and action figure and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a weekend gathering, adults choose between doll, teddy bear, and action figure. The selected activity or item is doll. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Doll, Teddy Bear, Action Figure in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Ball", "Blocks", "Puzzle"],
-          "scenario": "For play, I can use or play with ball, blocks, and puzzle.",
+          "scenario": "At a recreation centre, adults choose between ball, blocks, and puzzle. The selected activity or item is ball.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What activity or game does the group choose?",
             "options": ["Ball", "Blocks", "Puzzle"],
             "expectedAnswer": "Ball"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with ball, blocks, and puzzle. Emphasize ball, blocks, and puzzle and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a recreation centre, adults choose between ball, blocks, and puzzle. The selected activity or item is ball. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Ball, Blocks, Puzzle in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Yo-Yo", "Kite", "Top"],
-          "scenario": "For play, I can use or play with yo-yo, kite, and top.",
+          "scenario": "At a family visit, adults choose between yo-yo, kite, and top. The selected activity or item is yo-yo.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Yo-Yo", "Kite", "Top"],
+            "question": "What does the group decide to use or play?",
+            "options": ["Kite", "Top", "Yo-Yo"],
             "expectedAnswer": "Yo-Yo"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with yo-yo, kite, and top. Emphasize yo-yo, kite, and top and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a family visit, adults choose between yo-yo, kite, and top. The selected activity or item is yo-yo. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Yo-Yo, Kite, Top in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Marbles", "Chess", "Checkers"],
-          "scenario": "For play, I can use or play with marbles, chess, and checkers.",
+          "scenario": "At a social club, adults choose between marbles, chess, and checkers. The selected activity or item is marbles.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Marbles", "Chess", "Checkers"],
+            "question": "What activity or game does the group choose in the example with marbles, chess?",
+            "options": ["Checkers", "Marbles", "Chess"],
             "expectedAnswer": "Marbles"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with marbles, chess, and checkers. Emphasize marbles, chess, and checkers and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a social club, adults choose between marbles, chess, and checkers. The selected activity or item is marbles. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Marbles, Chess, Checkers in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Monopoly", "Scrabble", "Dominoes"],
-          "scenario": "For play, I can use or play with monopoly, scrabble, and dominoes.",
+          "scenario": "At a community game night, adults choose between monopoly, scrabble, and dominoes. The selected activity or item is monopoly.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does the group decide to use or play in the example with monopoly, scrabble?",
             "options": ["Monopoly", "Scrabble", "Dominoes"],
             "expectedAnswer": "Monopoly"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with monopoly, scrabble, and dominoes. Emphasize monopoly, scrabble, and dominoes and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a community game night, adults choose between monopoly, scrabble, and dominoes. The selected activity or item is monopoly. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Monopoly, Scrabble, Dominoes in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Toys & Games Mini Story",
-      "text": "It is play time. I see doll, teddy bear, and action figure. My friends also use ball, blocks, and puzzle. We take turns and say the English name of each toy or game. We also remember earlier words such as homework and test.",
+      "title": "Toys & Games 1: Community Recreation Night",
+      "text": "A community centre is preparing activities for adults and families. One table offers doll, teddy bear, action figure, ball, and blocks. Another area has puzzle, yo-yo, kite, top, and marbles. For active or electronic recreation, people can choose chess, checkers, monopoly, scrabble, and dominoes. Participants choose activities that suit the space and the group.",
       "imageBrief": "One uncluttered toys & games scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -148,7 +153,7 @@
     "video": {
       "title": "Toys & Games: See It, Say It",
       "idea": "30–50 second contextual video set in a play area. Show doll, teddy bear, action figure, ball, and blocks naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see doll, teddy bear, and action figure. What can you find next?"
+      "scriptStarter": "Watch the situation: At a weekend gathering, adults choose between doll, teddy bear, and action figure. The selected activity or item is doll."
     },
     "spacedReview": "1 lesson(s) back: Homework, Test from classroom-5\n3 lesson(s) back: Backpack, Scissors from classroom-3\n7 lesson(s) back: Eat Dinner, Wash Dishes from daily-routines-3"
   },
@@ -180,88 +185,93 @@
       "Electronic Pet"
     ],
     "targetWordsArabic": [
-      "لعبة يُسمّى «بلايينج كاردس»",
-      "يقطّع مكعبات",
-      "مصطلح مرتبط بالموضوع يُسمّى «جيجساو بوززلي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «تريفيا»",
-      "لعبة يُسمّى «بينجو»",
-      "لعبة يُسمّى «فيديو جامي»",
+      "أوراق لعب",
+      "يقطع مكعبات",
+      "أحجية تركيب الصور",
+      "أسئلة معلومات عامة",
+      "لعبة بينغو",
+      "لعبة فيديو",
       "وحدة تحكم",
       "متحكم",
-      "جِهَازٌ لَوْحِيّ (تَابْلِت)",
+      "جهاز لوحي (تابلت)",
       "لعبة روبوت",
-      "طائرة مسيّرة",
-      "سيارة لعبة بالتحكم عن بُعد",
+      "طائرة مسيرة",
+      "سيارة لعبة بالتحكم عن بعد",
       "لعبة إلكترونية محمولة",
       "نظارة واقع افتراضي",
       "حيوان أليف إلكتروني"
     ],
     "usage": {
-      "goal": "Name common toys, games, and play equipment.",
-      "canDoStatement": "I can name common toys, games, and play equipment",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key toys & games 2 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to toys & games in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Playing Cards", "Dice", "Jigsaw Puzzle"],
-          "scenario": "For play, I can use or play with playing cards, dice, and jigsaw puzzle.",
+          "scenario": "At a recreation centre, adults choose between playing cards, dice, and jigsaw puzzle. The selected activity or item is playing cards.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What does the group decide to use or play in the example with playing cards, dice?",
             "options": ["Playing Cards", "Dice", "Jigsaw Puzzle"],
             "expectedAnswer": "Playing Cards"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with playing cards, dice, and jigsaw puzzle. Emphasize playing cards, dice, and jigsaw puzzle and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a recreation centre, adults choose between playing cards, dice, and jigsaw puzzle. The selected activity or item is playing cards. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Playing Cards, Dice, Jigsaw Puzzle in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Trivia", "Bingo", "Video Game"],
-          "scenario": "For play, I can use or play with trivia, bingo, and video game.",
+          "scenario": "At a family visit, adults choose between trivia, bingo, and video game. The selected activity or item is trivia.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Trivia", "Bingo", "Video Game"],
+            "question": "Which item is selected for the break in the example with trivia, bingo?",
+            "options": ["Bingo", "Video Game", "Trivia"],
             "expectedAnswer": "Trivia"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with trivia, bingo, and video game. Emphasize trivia, bingo, and video game and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a family visit, adults choose between trivia, bingo, and video game. The selected activity or item is trivia. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Trivia, Bingo, Video Game in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Console", "Controller", "Tablet"],
-          "scenario": "For play, I can use or play with console, controller, and tablet.",
+          "scenario": "At a social club, adults choose between console, controller, and tablet. The selected activity or item is console.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Console", "Controller", "Tablet"],
+            "question": "Which recreation option matches the scene?",
+            "options": ["Tablet", "Console", "Controller"],
             "expectedAnswer": "Console"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with console, controller, and tablet. Emphasize console, controller, and tablet and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a social club, adults choose between console, controller, and tablet. The selected activity or item is console. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Console, Controller, Tablet in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Robot Toy", "Drone", "Remote Control Car"],
-          "scenario": "For play, I can use or play with robot toy, drone, and remote control car.",
+          "scenario": "At a community game night, adults choose between robot toy, drone, and remote control car. The selected activity or item is robot toy.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which item is selected for the break in the example with robot toy, drone?",
             "options": ["Robot Toy", "Drone", "Remote Control Car"],
             "expectedAnswer": "Robot Toy"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with robot toy, drone, and remote control car. Emphasize robot toy, drone, and remote control car and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a community game night, adults choose between robot toy, drone, and remote control car. The selected activity or item is robot toy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Robot Toy, Drone, Remote Control Car in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Handheld Game", "VR Headset", "Electronic Pet"],
-          "scenario": "For play, I can use or play with handheld game, vr headset, and electronic pet.",
+          "scenario": "At a weekend gathering, adults choose between handheld game, vr headset, and electronic pet. The selected activity or item is handheld game.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Handheld Game", "VR Headset", "Electronic Pet"],
+            "question": "What activity or game does the group choose in the example with handheld game, vr headset?",
+            "options": ["VR Headset", "Electronic Pet", "Handheld Game"],
             "expectedAnswer": "Handheld Game"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with handheld game, vr headset, and electronic pet. Emphasize handheld game, vr headset, and electronic pet and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a weekend gathering, adults choose between handheld game, vr headset, and electronic pet. The selected activity or item is handheld game. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Handheld Game, VR Headset, Electronic Pet in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Toys & Games Mini Story",
-      "text": "It is play time. I see playing cards, dice, and jigsaw puzzle. My friends also use trivia, bingo, and video game. We take turns and say the English name of each toy or game. We also remember earlier words such as doll and teddy bear.",
+      "title": "Toys & Games 2: Community Recreation Night",
+      "text": "A community centre is preparing activities for adults and families. One table offers playing cards, dice, jigsaw puzzle, trivia, and bingo. Another area has video game, console, controller, tablet, and robot toy. For active or electronic recreation, people can choose drone, remote control car, handheld game, vr headset, and electronic pet. Participants choose activities that suit the space and the group.",
       "imageBrief": "One uncluttered toys & games scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -301,7 +311,7 @@
     "video": {
       "title": "Toys & Games: See It, Say It",
       "idea": "30–50 second contextual video set in a play area. Show playing cards, dice, jigsaw puzzle, trivia, and bingo naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see playing cards, dice, and jigsaw puzzle. What can you find next?"
+      "scriptStarter": "Watch the situation: At a recreation centre, adults choose between playing cards, dice, and jigsaw puzzle. The selected activity or item is playing cards."
     },
     "spacedReview": "1 lesson(s) back: Doll, Teddy Bear from toys-games-1\n3 lesson(s) back: Printer, USB Drive from classroom-4\n7 lesson(s) back: Clean House, Do Laundry from daily-routines-4"
   },
@@ -329,71 +339,75 @@
     ],
     "targetWordsArabic": [
       "دراجة",
-      "مصطلح مرتبط بالموضوع يُسمّى «سكاتيبوارد»",
-      "قارب يُسمّى «سكووتير»",
-      "مصطلح مرتبط بالموضوع يُسمّى «روللير سكاتيس»",
-      "مصطلح مرتبط بالموضوع يُسمّى «جومب روبي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «فريسبيي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ترامبوليني»",
-      "مصطلح مرتبط بالموضوع يُسمّى «سليد»",
-      "مصطلح مرتبط بالموضوع يُسمّى «واتير جون»",
-      "مصطلح مرتبط بالموضوع يُسمّى «سوينج»"
+      "لوح تزلج",
+      "دراجة سكوتر صغيرة",
+      "أحذية تزلج بعجلات",
+      "حبل قفز",
+      "قرص طائر",
+      "منطة قفز",
+      "مزلجة",
+      "مسدس ماء",
+      "أرجوحة"
     ],
     "usage": {
-      "goal": "Name common toys, games, and play equipment.",
-      "canDoStatement": "I can name common toys, games, and play equipment",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key toys & games 3 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to toys & games in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bicycle", "Skateboard", "Scooter"],
-          "scenario": "For play, I can use or play with bicycle, skateboard, and scooter.",
+          "scenario": "At a family visit, adults choose between bicycle, skateboard, and scooter. The selected activity or item is bicycle.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Bicycle", "Skateboard", "Scooter"],
+            "question": "What activity or game does the group choose in the example with bicycle, skateboard?",
+            "options": ["Skateboard", "Scooter", "Bicycle"],
             "expectedAnswer": "Bicycle"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with bicycle, skateboard, and scooter. Emphasize bicycle, skateboard, and scooter and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a family visit, adults choose between bicycle, skateboard, and scooter. The selected activity or item is bicycle. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Bicycle, Skateboard, Scooter in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Roller Skates", "Jump Rope", "Frisbee"],
-          "scenario": "For play, I can use or play with roller skates, jump rope, and frisbee.",
+          "scenario": "At a social club, adults choose between roller skates, jump rope, and frisbee. The selected activity or item is roller skates.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Roller Skates", "Jump Rope", "Frisbee"],
+            "question": "What does the group decide to use or play in the example with roller skates, jump rope?",
+            "options": ["Frisbee", "Roller Skates", "Jump Rope"],
             "expectedAnswer": "Roller Skates"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with roller skates, jump rope, and frisbee. Emphasize roller skates, jump rope, and frisbee and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a social club, adults choose between roller skates, jump rope, and frisbee. The selected activity or item is roller skates. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Roller Skates, Jump Rope, Frisbee in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Trampoline", "Sled", "Water Gun"],
-          "scenario": "For play, I can use or play with trampoline, sled, and water gun.",
+          "scenario": "At a community game night, adults choose between trampoline, sled, and water gun. The selected activity or item is trampoline.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What activity or game does the group choose in the example with trampoline, sled?",
             "options": ["Trampoline", "Sled", "Water Gun"],
             "expectedAnswer": "Trampoline"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with trampoline, sled, and water gun. Emphasize trampoline, sled, and water gun and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a community game night, adults choose between trampoline, sled, and water gun. The selected activity or item is trampoline. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Trampoline, Sled, Water Gun in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": "Swing",
-          "scenario": "For play, I can use or play with swing.",
+          "scenario": "At a park, an adult gently pushes an empty swing to check that it moves freely.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": "Swing",
+            "question": "What does the group decide to use or play in the example with swing?",
+            "options": ["Bicycle", "Skateboard", "Swing"],
             "expectedAnswer": "Swing"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for toys & games that represents: For play, I can use or play with swing. Emphasize swing and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a park, an adult gently pushes an empty swing to check that it moves freely. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Swing in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Toys & Games Mini Story",
-      "text": "It is play time. I see bicycle, skateboard, and scooter. My friends also use roller skates, jump rope, and frisbee. We take turns and say the English name of each toy or game. We also remember earlier words such as playing cards and dice.",
+      "title": "Toys & Games 3: Community Recreation Night",
+      "text": "A community centre is preparing activities for adults and families. One table offers bicycle, skateboard, scooter, roller skates, and jump rope. Another area has frisbee, trampoline, sled, water gun, and swing. Participants choose activities that suit the space and the group. The vocabulary is used in a realistic toys & games context that an adult could meet at home, at work, or in the community.",
       "imageBrief": "One uncluttered toys & games scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -429,7 +443,7 @@
     "video": {
       "title": "Toys & Games: See It, Say It",
       "idea": "30–50 second contextual video set in a play area. Show bicycle, skateboard, scooter, roller skates, and jump rope naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see bicycle, skateboard, and scooter. What can you find next?"
+      "scriptStarter": "Watch the situation: At a family visit, adults choose between bicycle, skateboard, and scooter. The selected activity or item is bicycle."
     },
     "spacedReview": "1 lesson(s) back: Playing Cards, Dice from toys-games-2\n3 lesson(s) back: Homework, Test from classroom-5\n7 lesson(s) back: Pencil, Pen from classroom-1"
   }

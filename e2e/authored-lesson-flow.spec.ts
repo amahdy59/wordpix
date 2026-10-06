@@ -155,9 +155,7 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     expect(a11yScan.violations).toEqual([]);
   });
 
-  test("final retrieval keeps unapproved usage content out of the learner flow", async ({
-    page,
-  }) => {
+  test("final retrieval displays released usage content in the learner flow", async ({ page }) => {
     test.setTimeout(60_000);
     await page.setViewportSize({ width: 1280, height: 900 });
     const errors: string[] = [];
@@ -186,7 +184,7 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await page.getByRole("button", { name: "Indigo", exact: true }).click();
 
     await expect(page.getByRole("button", { name: "Continue", exact: true })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Use the language yourself" })).toHaveCount(0);
+    await expect(page.getByRole("heading", { name: "Use the language yourself" })).toBeVisible();
     await expect(page).toHaveURL(/step-6$/u);
 
     const a11yScan = await new AxeBuilder({ page })

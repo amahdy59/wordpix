@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "legal-documents-1",
     "lessonName": "Legal Documents 1",
@@ -27,77 +27,81 @@
       "Brief"
     ],
     "targetWordsArabic": [
-      "شخص يُسمّى «كونتراكت»",
-      "مصطلح مرتبط بالموضوع يُسمّى «اجرييمينت»",
-      "جزء يُسمّى «تيرمس»",
-      "جزء يُسمّى «كونديتيونس»",
-      "وثيقة يُسمّى «كلاوسي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «اميندمينت»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ادديندوم»",
-      "مصطلح مرتبط بالموضوع يُسمّى «برياتش»",
-      "مصطلح مرتبط بالموضوع يُسمّى «فويد»",
-      "مصطلح مرتبط بالموضوع يُسمّى «بيندينج»",
-      "مصطلح مرتبط بالموضوع يُسمّى «كومبلاينت»",
-      "شخص يُسمّى «سوممونس»",
-      "مصطلح مرتبط بالموضوع يُسمّى «سوببوينا»",
-      "مصطلح مرتبط بالموضوع يُسمّى «موتيون»",
-      "مصطلح مرتبط بالموضوع يُسمّى «برييف»"
+      "شخص يسمى «كونتراكت»",
+      "اتفاقية",
+      "جزء يسمى «تيرمس»",
+      "جزء يسمى «كونديتيونس»",
+      "وثيقة يسمى «كلاوسي»",
+      "تعديل",
+      "ملحق",
+      "إخلال",
+      "باطل",
+      "ملزم قانونيا",
+      "شكوى قانونية",
+      "شخص يسمى «سوممونس»",
+      "أمر استدعاء قضائي",
+      "طلب قضائي",
+      "مذكرة قانونية"
     ],
     "usage": {
-      "goal": "Use the vocabulary from Legal Documents to understand and communicate in a realistic C1-appropriate context.",
-      "canDoStatement": "I can use legal documents vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
-      "textType": "briefing note",
+      "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
+      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
+      "textType": "workplace-email",
       "readingTarget": "150-220 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Contract", "Agreement", "Terms", "Conditions"],
-          "scenario": "The legal team works with contract, agreement, terms, and conditions. Each term has a distinct role in the case, document set, or legal process.",
+          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contract, Agreement, Terms, and Conditions and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Contract", "Agreement", "Terms", "Conditions"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Contract", "Agreement", "Terms"],
             "expectedAnswer": "Contract"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with contract, agreement, terms, and conditions. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Contract as the central item; include Contract, Agreement, and Terms naturally where visually appropriate, but make the real-world use of Contract the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Clause", "Amendment", "Addendum", "Breach"],
-          "scenario": "The legal team works with clause, amendment, addendum, and breach. Each term has a distinct role in the case, document set, or legal process.",
+          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clause, Amendment, Addendum, and Breach and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Clause", "Amendment", "Addendum", "Breach"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Clause", "Amendment", "Addendum"],
             "expectedAnswer": "Clause"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with clause, amendment, addendum, and breach. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Clause as the central item; include Clause, Amendment, and Addendum naturally where visually appropriate, but make the real-world use of Clause the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Void", "Binding", "Complaint", "Summons"],
-          "scenario": "The legal team works with void, binding, complaint, and summons. Each term has a distinct role in the case, document set, or legal process.",
+          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Void, Binding, Complaint, and Summons and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Void", "Binding", "Complaint", "Summons"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Void", "Binding", "Complaint"],
             "expectedAnswer": "Void"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with void, binding, complaint, and summons. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Void as the central item; include Void, Binding, and Complaint naturally where visually appropriate, but make the real-world use of Void the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Subpoena", "Motion", "Brief"],
-          "scenario": "The legal team works with subpoena, motion, and brief. Each term has a distinct role in the case, document set, or legal process.",
+          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Subpoena, Motion, and Brief and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Subpoena", "Motion", "Brief"],
             "expectedAnswer": "Subpoena"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with subpoena, motion, and brief. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Subpoena as the central item; include Subpoena, Motion, and Brief naturally where visually appropriate, but make the real-world use of Subpoena the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "Legal Documents: Briefing Note",
-      "text": "This text examines legal documents through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The legal team works with contract, agreement, terms, and conditions. Each term has a distinct role in the case, document set, or legal process. The legal team works with clause, amendment, addendum, and breach. Each term has a distinct role in the case, document set, or legal process. The legal team works with void, binding, complaint, and summons. Each term has a distinct role in the case, document set, or legal process. The legal team works with subpoena, motion, and brief. Each term has a distinct role in the case, document set, or legal process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "title": "A Practical Update: Legal Documents",
+      "text": "At the legal documents, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Contract, Agreement, Terms, and Conditions. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Clause, Amendment, Addendum, and Breach. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Void, Binding, Complaint, and Summons. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Subpoena, Motion, and Brief. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about Legal Documents. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -144,6 +148,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Exhibit” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the legal documents task. Use Contract, Agreement, Terms, Conditions, Clause, Amendment, Addendum, Breach, Void, Binding, Complaint, Summons, Subpoena, Motion, and Brief in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -181,77 +192,81 @@
       "Adoption Papers"
     ],
     "targetWordsArabic": [
-      "مصطلح مرتبط بالموضوع يُسمّى «بيتيتيون»",
-      "مصطلح مرتبط بالموضوع يُسمّى «وردير»",
-      "مصطلح قانوني يُسمّى «ينجونكتيون»",
-      "مصطلح مرتبط بالموضوع يُسمّى «واررانت»",
-      "شخص يُسمّى «ينديكتمينت»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ويلل»",
-      "مصطلح مرتبط بالموضوع يُسمّى «تروست»",
-      "شخص يُسمّى «بووير وف اتتورنيي»",
-      "شخص يُسمّى «ليفينج ويلل»",
-      "وثيقة يُسمّى «دييد»",
-      "مصطلح مرتبط بالموضوع يُسمّى «تيتلي»",
+      "التماس",
+      "أمر قضائي",
+      "مصطلح قانوني يسمى «ينجونكتيون»",
+      "مذكرة قانونية",
+      "شخص يسمى «ينديكتمينت»",
+      "وصية",
+      "ثقة",
+      "شخص يسمى «بووير وف اتتورنيي»",
+      "شخص يسمى «ليفينج ويلل»",
+      "وثيقة يسمى «دييد»",
+      "سند ملكية",
       "تأجير",
-      "مصطلح مرتبط بالموضوع يُسمّى «برينوبتيال»",
+      "اتفاق ما قبل الزواج",
       "حكم طلاق",
       "أوراق التبني"
     ],
     "usage": {
-      "goal": "Use the vocabulary from Legal Documents to understand and communicate in a realistic C1-appropriate context.",
-      "canDoStatement": "I can use legal documents vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
-      "textType": "analysis excerpt",
+      "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
+      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
+      "textType": "dialogue",
       "readingTarget": "150-220 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Petition", "Order", "Injunction", "Warrant"],
-          "scenario": "The legal team works with petition, order, injunction, and warrant. Each term has a distinct role in the case, document set, or legal process.",
+          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Petition, Order, Injunction, and Warrant and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Petition", "Order", "Injunction", "Warrant"],
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "options": ["Petition", "Order", "Injunction"],
             "expectedAnswer": "Petition"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with petition, order, injunction, and warrant. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Petition through a realistic adult task; include Petition, Order, and Injunction naturally where visually appropriate, but make the real-world use of Petition the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Indictment", "Will", "Trust", "Power of Attorney"],
-          "scenario": "The legal team works with indictment, will, trust, and power of attorney. Each term has a distinct role in the case, document set, or legal process.",
+          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indictment, Will, Trust, and Power of Attorney and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Indictment", "Will", "Trust", "Power of Attorney"],
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "options": ["Indictment", "Will", "Trust"],
             "expectedAnswer": "Indictment"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with indictment, will, trust, and power of attorney. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Indictment through a realistic adult task; include Indictment, Will, and Trust naturally where visually appropriate, but make the real-world use of Indictment the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Living Will", "Deed", "Title", "Lease"],
-          "scenario": "The legal team works with living will, deed, title, and lease. Each term has a distinct role in the case, document set, or legal process.",
+          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Living Will, Deed, Title, and Lease and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Living Will", "Deed", "Title", "Lease"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Living Will", "Deed", "Title"],
             "expectedAnswer": "Living Will"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with living will, deed, title, and lease. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Living Will as the central item; include Living Will, Deed, and Title naturally where visually appropriate, but make the real-world use of Living Will the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Prenuptial", "Divorce Decree", "Adoption Papers"],
-          "scenario": "The legal team works with prenuptial, divorce decree, and adoption papers. Each term has a distinct role in the case, document set, or legal process.",
+          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prenuptial, Divorce Decree, and Adoption Papers and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Prenuptial", "Divorce Decree", "Adoption Papers"],
             "expectedAnswer": "Prenuptial"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with prenuptial, divorce decree, and adoption papers. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Prenuptial through a realistic adult task; include Prenuptial, Divorce Decree, and Adoption Papers naturally where visually appropriate, but make the real-world use of Prenuptial the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "Legal Documents: Analysis Excerpt",
-      "text": "This text examines legal documents through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The legal team works with petition, order, injunction, and warrant. Each term has a distinct role in the case, document set, or legal process. The legal team works with indictment, will, trust, and power of attorney. Each term has a distinct role in the case, document set, or legal process. The legal team works with living will, deed, title, and lease. Each term has a distinct role in the case, document set, or legal process. The legal team works with prenuptial, divorce decree, and adoption papers. Each term has a distinct role in the case, document set, or legal process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "title": "Clarifying the Next Step: Legal Documents",
+      "text": "At the legal documents, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Petition, Order, Injunction, and Warrant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Indictment, Will, Trust, and Power of Attorney. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Living Will, Deed, Title, and Lease. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Prenuptial, Divorce Decree, and Adoption Papers. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about Legal Documents. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -298,6 +313,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Contract” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the legal documents task. Use Petition, Order, Injunction, Warrant, Indictment, Will, Trust, Power of Attorney, Living Will, Deed, Title, Lease, Prenuptial, Divorce Decree, and Adoption Papers in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -330,33 +352,34 @@
       "Operating Agreement"
     ],
     "targetWordsArabic": [
-      "مصطلح مرتبط بالموضوع يُسمّى «باتينت»",
-      "مصطلح مرتبط بالموضوع يُسمّى «تراديمارك»",
-      "مصطلح مرتبط بالموضوع يُسمّى «كوبيريغت»",
+      "براءة اختراع",
+      "علامة تجارية",
+      "حق مؤلف",
       "ترخيص",
-      "جزء يُسمّى «ندا»",
+      "جزء يسمى «ندا»",
       "شرط عدم المنافسة",
       "اتفاقية شراكة",
-      "هيكل يُسمّى «ارتيكليس وف ينكوربوراتيون»",
-      "عضو يُسمّى «بيلاوس»",
+      "هيكل يسمى «ارتيكليس وف ينكوربوراتيون»",
+      "عضو يسمى «بيلاوس»",
       "اتفاقية تشغيل الشركة"
     ],
     "usage": {
-      "goal": "Use the vocabulary from Legal Documents to understand and communicate in a realistic C1-appropriate context.",
-      "canDoStatement": "I can use legal documents vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
-      "textType": "professional summary",
+      "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
+      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
+      "textType": "workplace-email",
       "readingTarget": "150-220 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Patent", "Trademark", "Copyright", "License"],
-          "scenario": "The legal team works with patent, trademark, copyright, and license. Each term has a distinct role in the case, document set, or legal process.",
+          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Patent, Trademark, Copyright, and License and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Patent", "Trademark", "Copyright", "License"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Patent", "Trademark", "Copyright"],
             "expectedAnswer": "Patent"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with patent, trademark, copyright, and license. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Patent as the central item; include Patent, Trademark, and Copyright naturally where visually appropriate, but make the real-world use of Patent the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
@@ -366,30 +389,32 @@
             "Partnership Agreement",
             "Articles of Incorporation"
           ],
-          "scenario": "The legal team works with nda, non-compete, partnership agreement, and articles of incorporation. Each term has a distinct role in the case, document set, or legal process.",
+          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare NDA, Non-Compete, Partnership Agreement, and Articles of Incorporation and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["NDA", "Non-Compete", "Partnership Agreement", "Articles of Incorporation"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["NDA", "Non-Compete", "Partnership Agreement"],
             "expectedAnswer": "NDA"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with nda, non-compete, partnership agreement, and articles of incorporation. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the NDA as the central item; include NDA, Non-Compete, and Partnership Agreement naturally where visually appropriate, but make the real-world use of NDA the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bylaws", "Operating Agreement"],
-          "scenario": "The legal team works with bylaws and operating agreement. Each term has a distinct role in the case, document set, or legal process.",
+          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bylaws, and Operating Agreement and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Bylaws", "Operating Agreement"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Bylaws", "Operating Agreement", "Patent"],
             "expectedAnswer": "Bylaws"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The legal team works with bylaws and operating agreement. Each term has a distinct role in the case, document set, or legal process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Bylaws as the central item; include Bylaws, Operating Agreement, and Patent naturally where visually appropriate, but make the real-world use of Bylaws the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "Legal Documents: Professional Summary",
-      "text": "This text examines legal documents through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The legal team works with patent, trademark, copyright, and license. Each term has a distinct role in the case, document set, or legal process. The legal team works with nda, non-compete, partnership agreement, and articles of incorporation. Each term has a distinct role in the case, document set, or legal process. The legal team works with bylaws and operating agreement. Each term has a distinct role in the case, document set, or legal process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "title": "An Update Before the Next Step",
+      "text": "At the legal documents, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Patent, Trademark, Copyright, and License. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers NDA, Non-Compete, Partnership Agreement, and Articles of Incorporation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bylaws and Operating Agreement. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about Legal Documents. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -432,6 +457,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Petition” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the legal documents task. Use Patent, Trademark, Copyright, License, NDA, Non-Compete, Partnership Agreement, Articles of Incorporation, Bylaws, and Operating Agreement in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {

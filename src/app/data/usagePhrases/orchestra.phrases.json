@@ -1,0 +1,617 @@
+[
+  {
+    "id": "orchestra-1-core-1",
+    "lessonId": "orchestra-1",
+    "slot": "core-1",
+    "unitId": "orchestra",
+    "phrase": "read sheet music",
+    "kind": "collocation",
+    "meaning": "read music written in standard notation",
+    "arabicMeaning": "يقرأ النوتة الموسيقية",
+    "example": "The musician read the sheet music before rehearsal.",
+    "learnerPurpose": "Use “read sheet music” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "B1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/read",
+    "check": {
+      "question": "Which phrase matches this meaning: read music written in standard notation",
+      "expectedAnswer": "read sheet music",
+      "explanation": "read music written in standard notation"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “read sheet music”.",
+      "personalUse": "Write one realistic adult-life sentence using “read sheet music”.",
+      "laterReview": "Reuse “read sheet music” in a later review or conversation."
+    },
+    "sceneId": "orchestra-1-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/read",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/read-sheet-music",
+      "finding": "Workbook evidence supports the taught sense and pattern for read sheet music; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-1-core-2",
+    "lessonId": "orchestra-1",
+    "slot": "core-2",
+    "unitId": "orchestra",
+    "phrase": "Which part are we rehearsing?",
+    "kind": "everyday-expression",
+    "meaning": "ask which section of music the group will practise",
+    "arabicMeaning": "أي جزء سنتدرب عليه؟",
+    "example": "Which part are we rehearsing before the break?",
+    "learnerPurpose": "Use “Which part are we rehearsing?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "B1",
+    "register": "everyday spoken",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/rehearse",
+    "check": {
+      "question": "Which phrase matches this meaning: ask which section of music the group will practise",
+      "expectedAnswer": "Which part are we rehearsing?",
+      "explanation": "ask which section of music the group will practise"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Which part are we rehearsing?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Which part are we rehearsing?”.",
+      "laterReview": "Reuse “Which part are we rehearsing?” in a later review or conversation."
+    },
+    "sceneId": "orchestra-1-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/rehearse",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/which-part-are-we-rehearsing",
+      "finding": "Workbook evidence supports the taught sense and pattern for Which part are we rehearsing?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-1-optional-1",
+    "lessonId": "orchestra-1",
+    "slot": "optional-1",
+    "unitId": "orchestra",
+    "phrase": "warm up",
+    "kind": "phrasal-verb",
+    "meaning": "prepare for a performance with light practice",
+    "arabicMeaning": "يقوم بتمارين الإحماء",
+    "example": "The musicians warmed up before the rehearsal started.",
+    "learnerPurpose": "Use “warm up” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "B2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/warm-up",
+    "check": {
+      "question": "Which phrase matches this meaning: prepare for a performance with light practice",
+      "expectedAnswer": "warm up",
+      "explanation": "prepare for a performance with light practice"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “warm up”.",
+      "personalUse": "Write one realistic adult-life sentence using “warm up”.",
+      "laterReview": "Reuse “warm up” in a later review or conversation."
+    },
+    "sceneId": "orchestra-1-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/warm-up",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/warm-up",
+      "finding": "Workbook evidence supports the taught sense and pattern for warm up; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-2-core-1",
+    "lessonId": "orchestra-2",
+    "slot": "core-1",
+    "unitId": "orchestra",
+    "phrase": "tune an instrument",
+    "kind": "collocation",
+    "meaning": "adjust an instrument to the correct pitch",
+    "arabicMeaning": "يضبط آلة موسيقية",
+    "example": "She tuned the instrument before the ensemble began.",
+    "learnerPurpose": "Use “tune an instrument” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "B1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/tune",
+    "check": {
+      "question": "Which phrase matches this meaning: adjust an instrument to the correct pitch",
+      "expectedAnswer": "tune an instrument",
+      "explanation": "adjust an instrument to the correct pitch"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “tune an instrument”.",
+      "personalUse": "Write one realistic adult-life sentence using “tune an instrument”.",
+      "laterReview": "Reuse “tune an instrument” in a later review or conversation."
+    },
+    "sceneId": "orchestra-2-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/tune",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/tune-an-instrument",
+      "finding": "Workbook evidence supports the taught sense and pattern for tune an instrument; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-2-core-2",
+    "lessonId": "orchestra-2",
+    "slot": "core-2",
+    "unitId": "orchestra",
+    "phrase": "Could you play that once more?",
+    "kind": "everyday-expression",
+    "meaning": "politely ask someone to repeat a musical passage",
+    "arabicMeaning": "هل يمكنك عزف ذلك مرة أخرى؟",
+    "example": "Could you play that once more so I can check the rhythm?",
+    "learnerPurpose": "Use “Could you play that once more?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "B1",
+    "register": "everyday spoken",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/play",
+    "check": {
+      "question": "Which phrase matches this meaning: politely ask someone to repeat a musical passage",
+      "expectedAnswer": "Could you play that once more?",
+      "explanation": "politely ask someone to repeat a musical passage"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Could you play that once more?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Could you play that once more?”.",
+      "laterReview": "Reuse “Could you play that once more?” in a later review or conversation."
+    },
+    "sceneId": "orchestra-2-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/play",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/could-you-play-that-once-more",
+      "finding": "Workbook evidence supports the taught sense and pattern for Could you play that once more?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-2-optional-1",
+    "lessonId": "orchestra-2",
+    "slot": "optional-1",
+    "unitId": "orchestra",
+    "phrase": "join in",
+    "kind": "phrasal-verb",
+    "meaning": "begin taking part in a group activity",
+    "arabicMeaning": "ينضم إلى المشاركة",
+    "example": "The soloist joined in after the introduction.",
+    "learnerPurpose": "Use “join in” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "B2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/join-in",
+    "check": {
+      "question": "Which phrase matches this meaning: begin taking part in a group activity",
+      "expectedAnswer": "join in",
+      "explanation": "begin taking part in a group activity"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “join in”.",
+      "personalUse": "Write one realistic adult-life sentence using “join in”.",
+      "laterReview": "Reuse “join in” in a later review or conversation."
+    },
+    "sceneId": "orchestra-2-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/join-in",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/join-in",
+      "finding": "Workbook evidence supports the taught sense and pattern for join in; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-3-core-1",
+    "lessonId": "orchestra-3",
+    "slot": "core-1",
+    "unitId": "orchestra",
+    "phrase": "keep the beat",
+    "kind": "collocation",
+    "meaning": "maintain a steady musical rhythm",
+    "arabicMeaning": "يحافظ على الإيقاع",
+    "example": "The percussion section kept the beat throughout the piece.",
+    "learnerPurpose": "Use “keep the beat” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "B1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/keep",
+    "check": {
+      "question": "Which phrase matches this meaning: maintain a steady musical rhythm",
+      "expectedAnswer": "keep the beat",
+      "explanation": "maintain a steady musical rhythm"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “keep the beat”.",
+      "personalUse": "Write one realistic adult-life sentence using “keep the beat”.",
+      "laterReview": "Reuse “keep the beat” in a later review or conversation."
+    },
+    "sceneId": "orchestra-3-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/keep",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/keep-the-beat",
+      "finding": "Workbook evidence supports the taught sense and pattern for keep the beat; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-3-core-2",
+    "lessonId": "orchestra-3",
+    "slot": "core-2",
+    "unitId": "orchestra",
+    "phrase": "Can we start from the beginning?",
+    "kind": "everyday-expression",
+    "meaning": "ask the group to restart a piece",
+    "arabicMeaning": "هل يمكننا البدء من البداية؟",
+    "example": "Can we start from the beginning after the tuning check?",
+    "learnerPurpose": "Use “Can we start from the beginning?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "B1",
+    "register": "everyday spoken",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/beginning",
+    "check": {
+      "question": "Which phrase matches this meaning: ask the group to restart a piece",
+      "expectedAnswer": "Can we start from the beginning?",
+      "explanation": "ask the group to restart a piece"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Can we start from the beginning?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Can we start from the beginning?”.",
+      "laterReview": "Reuse “Can we start from the beginning?” in a later review or conversation."
+    },
+    "sceneId": "orchestra-3-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/beginning",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/can-we-start-from-the-beginning",
+      "finding": "Workbook evidence supports the taught sense and pattern for Can we start from the beginning?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-3-optional-1",
+    "lessonId": "orchestra-3",
+    "slot": "optional-1",
+    "unitId": "orchestra",
+    "phrase": "go over",
+    "kind": "phrasal-verb",
+    "meaning": "review or practise something again",
+    "arabicMeaning": "يراجع",
+    "example": "The ensemble went over the difficult passage before the concert.",
+    "learnerPurpose": "Use “go over” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "B2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/go-over",
+    "check": {
+      "question": "Which phrase matches this meaning: review or practise something again",
+      "expectedAnswer": "go over",
+      "explanation": "review or practise something again"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “go over”.",
+      "personalUse": "Write one realistic adult-life sentence using “go over”.",
+      "laterReview": "Reuse “go over” in a later review or conversation."
+    },
+    "sceneId": "orchestra-3-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/go-over",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/go-over",
+      "finding": "Workbook evidence supports the taught sense and pattern for go over; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-4-core-1",
+    "lessonId": "orchestra-4",
+    "slot": "core-1",
+    "unitId": "orchestra",
+    "phrase": "read sheet music",
+    "kind": "collocation",
+    "meaning": "read music written in standard notation",
+    "arabicMeaning": "يقرأ النوتة الموسيقية",
+    "example": "The musician read the sheet music before rehearsal.",
+    "learnerPurpose": "Use “read sheet music” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "B1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/read",
+    "check": {
+      "question": "Which phrase matches this meaning: read music written in standard notation",
+      "expectedAnswer": "read sheet music",
+      "explanation": "read music written in standard notation"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “read sheet music”.",
+      "personalUse": "Write one realistic adult-life sentence using “read sheet music”.",
+      "laterReview": "Reuse “read sheet music” in a later review or conversation."
+    },
+    "sceneId": "orchestra-4-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/read",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/read-sheet-music",
+      "finding": "Workbook evidence supports the taught sense and pattern for read sheet music; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-4-core-2",
+    "lessonId": "orchestra-4",
+    "slot": "core-2",
+    "unitId": "orchestra",
+    "phrase": "Which part are we rehearsing?",
+    "kind": "everyday-expression",
+    "meaning": "ask which section of music the group will practise",
+    "arabicMeaning": "أي جزء سنتدرب عليه؟",
+    "example": "Which part are we rehearsing before the break?",
+    "learnerPurpose": "Use “Which part are we rehearsing?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "B1",
+    "register": "everyday spoken",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/rehearse",
+    "check": {
+      "question": "Which phrase matches this meaning: ask which section of music the group will practise",
+      "expectedAnswer": "Which part are we rehearsing?",
+      "explanation": "ask which section of music the group will practise"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Which part are we rehearsing?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Which part are we rehearsing?”.",
+      "laterReview": "Reuse “Which part are we rehearsing?” in a later review or conversation."
+    },
+    "sceneId": "orchestra-4-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/rehearse",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/which-part-are-we-rehearsing",
+      "finding": "Workbook evidence supports the taught sense and pattern for Which part are we rehearsing?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-4-optional-1",
+    "lessonId": "orchestra-4",
+    "slot": "optional-1",
+    "unitId": "orchestra",
+    "phrase": "warm up",
+    "kind": "phrasal-verb",
+    "meaning": "prepare for a performance with light practice",
+    "arabicMeaning": "يقوم بتمارين الإحماء",
+    "example": "The musicians warmed up before the rehearsal started.",
+    "learnerPurpose": "Use “warm up” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "B2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/warm-up",
+    "check": {
+      "question": "Which phrase matches this meaning: prepare for a performance with light practice",
+      "expectedAnswer": "warm up",
+      "explanation": "prepare for a performance with light practice"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “warm up”.",
+      "personalUse": "Write one realistic adult-life sentence using “warm up”.",
+      "laterReview": "Reuse “warm up” in a later review or conversation."
+    },
+    "sceneId": "orchestra-4-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/warm-up",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/warm-up",
+      "finding": "Workbook evidence supports the taught sense and pattern for warm up; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-5-core-1",
+    "lessonId": "orchestra-5",
+    "slot": "core-1",
+    "unitId": "orchestra",
+    "phrase": "tune an instrument",
+    "kind": "collocation",
+    "meaning": "adjust an instrument to the correct pitch",
+    "arabicMeaning": "يضبط آلة موسيقية",
+    "example": "She tuned the instrument before the ensemble began.",
+    "learnerPurpose": "Use “tune an instrument” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "B1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/tune",
+    "check": {
+      "question": "Which phrase matches this meaning: adjust an instrument to the correct pitch",
+      "expectedAnswer": "tune an instrument",
+      "explanation": "adjust an instrument to the correct pitch"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “tune an instrument”.",
+      "personalUse": "Write one realistic adult-life sentence using “tune an instrument”.",
+      "laterReview": "Reuse “tune an instrument” in a later review or conversation."
+    },
+    "sceneId": "orchestra-5-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/tune",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/tune-an-instrument",
+      "finding": "Workbook evidence supports the taught sense and pattern for tune an instrument; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-5-core-2",
+    "lessonId": "orchestra-5",
+    "slot": "core-2",
+    "unitId": "orchestra",
+    "phrase": "Could you play that once more?",
+    "kind": "everyday-expression",
+    "meaning": "politely ask someone to repeat a musical passage",
+    "arabicMeaning": "هل يمكنك عزف ذلك مرة أخرى؟",
+    "example": "Could you play that once more so I can check the rhythm?",
+    "learnerPurpose": "Use “Could you play that once more?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "B1",
+    "register": "everyday spoken",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/play",
+    "check": {
+      "question": "Which phrase matches this meaning: politely ask someone to repeat a musical passage",
+      "expectedAnswer": "Could you play that once more?",
+      "explanation": "politely ask someone to repeat a musical passage"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Could you play that once more?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Could you play that once more?”.",
+      "laterReview": "Reuse “Could you play that once more?” in a later review or conversation."
+    },
+    "sceneId": "orchestra-5-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/play",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/could-you-play-that-once-more",
+      "finding": "Workbook evidence supports the taught sense and pattern for Could you play that once more?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "orchestra-5-optional-1",
+    "lessonId": "orchestra-5",
+    "slot": "optional-1",
+    "unitId": "orchestra",
+    "phrase": "join in",
+    "kind": "phrasal-verb",
+    "meaning": "begin taking part in a group activity",
+    "arabicMeaning": "ينضم إلى المشاركة",
+    "example": "The soloist joined in after the introduction.",
+    "learnerPurpose": "Use “join in” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "B2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/join-in",
+    "check": {
+      "question": "Which phrase matches this meaning: begin taking part in a group activity",
+      "expectedAnswer": "join in",
+      "explanation": "begin taking part in a group activity"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “join in”.",
+      "personalUse": "Write one realistic adult-life sentence using “join in”.",
+      "laterReview": "Reuse “join in” in a later review or conversation."
+    },
+    "sceneId": "orchestra-5-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/join-in",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/join-in",
+      "finding": "Workbook evidence supports the taught sense and pattern for join in; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  }
+]

@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "giving-directions-1",
     "lessonName": "Giving Directions 1",
@@ -27,88 +27,93 @@
       "Northeast"
     ],
     "targetWordsArabic": [
-      "مصطلح مرتبط بالموضوع يُسمّى «ليفت»",
-      "حق",
-      "مصطلح مرتبط بالموضوع يُسمّى «سترايغت»",
-      "مصطلح مرتبط بالموضوع يُسمّى «فوروارد»",
-      "مصطلح مرتبط بالموضوع يُسمّى «باكوارد»",
-      "مصطلح مرتبط بالموضوع يُسمّى «وب»",
-      "مصطلح مرتبط بالموضوع يُسمّى «دوون»",
+      "يسار",
+      "يمين",
+      "مستقيم",
+      "إلى الأمام",
+      "إلى الخلف",
+      "إلى أعلى",
+      "إلى أسفل",
       "يدير",
-      "مكان يُسمّى «ستوب»",
-      "مكان يُسمّى «جو»",
-      "مصطلح مرتبط بالموضوع يُسمّى «نورث»",
-      "مصطلح مرتبط بالموضوع يُسمّى «سووث»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ياست»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ويست»",
-      "مصطلح مرتبط بالموضوع يُسمّى «نورثياست»"
+      "يتوقف",
+      "يذهب",
+      "شمال",
+      "جنوب",
+      "شرق",
+      "غرب",
+      "شمال شرق"
     ],
     "usage": {
-      "goal": "Understand and give very simple directions using familiar places and position words.",
-      "canDoStatement": "I can understand and give very simple directions using familiar places and position words",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key giving directions 1 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to giving directions in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Left", "Right", "Straight"],
-          "scenario": "When I move around town, I use left, right, and straight.",
+          "scenario": "A visitor checks a route where left, right, straight are possible movement cues. The route arrow at the current point indicates left.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Left", "Right", "Straight"],
+            "question": "What direction matches the route?",
+            "options": ["Straight", "Left", "Right"],
             "expectedAnswer": "Left"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use left, right, and straight. Emphasize left, right, and straight and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: A visitor checks a route where left, right, straight are possible movement cues. The route arrow at the current point indicates left. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Left, Right, Straight in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Forward", "Backward", "Up"],
-          "scenario": "When I move around town, I use forward, backward, and up.",
+          "scenario": "A visitor checks a route where forward, backward, up are possible movement cues. The route arrow at the current point indicates forward.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which way should the visitor go?",
             "options": ["Forward", "Backward", "Up"],
             "expectedAnswer": "Forward"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use forward, backward, and up. Emphasize forward, backward, and up and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: A visitor checks a route where forward, backward, up are possible movement cues. The route arrow at the current point indicates forward. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Forward, Backward, Up in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Down", "Turn", "Stop"],
-          "scenario": "When I move around town, I use down, turn, and stop.",
+          "scenario": "A visitor checks a route where down, turn, stop are possible movement cues. The route arrow at the current point indicates down.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Down", "Turn", "Stop"],
+            "question": "Which direction word fits the next step?",
+            "options": ["Turn", "Stop", "Down"],
             "expectedAnswer": "Down"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use down, turn, and stop. Emphasize down, turn, and stop and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: A visitor checks a route where down, turn, stop are possible movement cues. The route arrow at the current point indicates down. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Down, Turn, Stop in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Go", "North", "South"],
-          "scenario": "When I move around town, I use go, north, and south.",
+          "scenario": "In the office area, a visitor follows a route that uses go, north, and south. The highlighted route cue or landmark is go.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Go", "North", "South"],
+            "question": "Which way should the visitor go in the example with go, north?",
+            "options": ["South", "Go", "North"],
             "expectedAnswer": "Go"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use go, north, and south. Emphasize go, north, and south and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the office area, a visitor follows a route that uses go, north, and south. The highlighted route cue or landmark is go. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Go, North, South in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["East", "West", "Northeast"],
-          "scenario": "When I move around town, I use east, west, and northeast.",
+          "scenario": "In the neighbourhood route, a visitor follows a route that uses east, west, and northeast. The highlighted route cue or landmark is east.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which direction word fits the next step in the example with east, west?",
             "options": ["East", "West", "Northeast"],
             "expectedAnswer": "East"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use east, west, and northeast. Emphasize east, west, and northeast and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the neighbourhood route, a visitor follows a route that uses east, west, and northeast. The highlighted route cue or landmark is east. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including East, West, Northeast in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Giving Directions Mini Story",
-      "text": "I walk through a small town. I use words like left, right, and straight to know where to go. Then I look for forward, backward, and up. The map is simple, and I follow one direction at a time. We also remember earlier words such as customer and butcher.",
+      "title": "Giving Directions 1: Finding an Appointment",
+      "text": "A visitor is trying to reach an appointment in an unfamiliar area. The first instructions use left, right, straight, forward, and backward. The map also shows up, down, turn, stop, and go. Near the destination, the visitor looks for north, south, east, west, and northeast. The visitor checks the route at each major turn instead of guessing.",
       "imageBrief": "One uncluttered giving directions scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -148,7 +153,7 @@
     "video": {
       "title": "Giving Directions: See It, Say It",
       "idea": "30–50 second contextual video set in a town. Show left, right, straight, forward, and backward naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see left, right, and straight. What can you find next?"
+      "scriptStarter": "Watch the situation: A visitor checks a route where left, right, straight are possible movement cues. The route arrow at the current point indicates left."
     },
     "spacedReview": "1 lesson(s) back: Customer, Butcher from market-6\n3 lesson(s) back: Cake, Pie from market-4\n7 lesson(s) back: Bicycle, Skateboard from toys-games-3"
   },
@@ -180,88 +185,93 @@
       "Somewhere"
     ],
     "targetWordsArabic": [
-      "مصطلح مرتبط بالموضوع يُسمّى «نورثويست»",
-      "مصطلح مرتبط بالموضوع يُسمّى «سووثياست»",
-      "مصطلح مرتبط بالموضوع يُسمّى «سووثويست»",
+      "شمال غرب",
+      "جنوب شرق",
+      "جنوب غرب",
       "بوصلة",
       "اتجاه",
-      "مصطلح مرتبط بالموضوع يُسمّى «نيار»",
-      "مصطلح مرتبط بالموضوع يُسمّى «فار»",
+      "قريب",
+      "بعيد",
       "قريب",
       "قريب",
       "بعيد",
-      "مصطلح مرتبط بالموضوع يُسمّى «هيري»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ثيري»",
-      "مكان يُسمّى «يفيريوهيري»",
-      "مصطلح مرتبط بالموضوع يُسمّى «نووهيري»",
-      "مصطلح مرتبط بالموضوع يُسمّى «سوميوهيري»"
+      "هنا",
+      "هناك",
+      "في كل مكان",
+      "ليس في أي مكان",
+      "في مكان ما"
     ],
     "usage": {
-      "goal": "Understand and give very simple directions using familiar places and position words.",
-      "canDoStatement": "I can understand and give very simple directions using familiar places and position words",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key giving directions 2 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to giving directions in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Northwest", "Southeast", "Southwest"],
-          "scenario": "When I move around town, I use northwest, southeast, and southwest.",
+          "scenario": "At the station exit, a visitor follows a route that uses northwest, southeast, and southwest. The highlighted route cue or landmark is northwest.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which direction word fits the next step in the example with northwest, southeast?",
             "options": ["Northwest", "Southeast", "Southwest"],
             "expectedAnswer": "Northwest"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use northwest, southeast, and southwest. Emphasize northwest, southeast, and southwest and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: At the station exit, a visitor follows a route that uses northwest, southeast, and southwest. The highlighted route cue or landmark is northwest. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Northwest, Southeast, Southwest in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Compass", "Direction", "Near"],
-          "scenario": "When I move around town, I use compass, direction, and near.",
+          "scenario": "In the hospital district, a visitor follows a route that uses compass, direction, and near. The highlighted route cue or landmark is compass.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Compass", "Direction", "Near"],
+            "question": "What direction matches the route in the example with compass, direction?",
+            "options": ["Direction", "Near", "Compass"],
             "expectedAnswer": "Compass"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use compass, direction, and near. Emphasize compass, direction, and near and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the hospital district, a visitor follows a route that uses compass, direction, and near. The highlighted route cue or landmark is compass. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Compass, Direction, Near in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Far", "Close", "Nearby"],
-          "scenario": "When I move around town, I use far, close, and nearby.",
+          "scenario": "A visitor compares the location words far, close, nearby on a simple map. The marked destination is described as far.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Far", "Close", "Nearby"],
+            "question": "How should the visitor continue from here?",
+            "options": ["Nearby", "Far", "Close"],
             "expectedAnswer": "Far"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use far, close, and nearby. Emphasize far, close, and nearby and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: A visitor compares the location words far, close, nearby on a simple map. The marked destination is described as far. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Far, Close, Nearby in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Distant", "Here", "There"],
-          "scenario": "When I move around town, I use distant, here, and there.",
+          "scenario": "In the neighbourhood route, a visitor follows a route that uses distant, here, and there. The highlighted route cue or landmark is distant.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What direction matches the route in the example with distant, here?",
             "options": ["Distant", "Here", "There"],
             "expectedAnswer": "Distant"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use distant, here, and there. Emphasize distant, here, and there and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the neighbourhood route, a visitor follows a route that uses distant, here, and there. The highlighted route cue or landmark is distant. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Distant, Here, There in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Everywhere", "Nowhere", "Somewhere"],
-          "scenario": "When I move around town, I use everywhere, nowhere, and somewhere.",
+          "scenario": "In the city centre, a visitor follows a route that uses everywhere, nowhere, and somewhere. The highlighted route cue or landmark is everywhere.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Everywhere", "Nowhere", "Somewhere"],
+            "question": "Which way should the visitor go in the example with everywhere, nowhere?",
+            "options": ["Nowhere", "Somewhere", "Everywhere"],
             "expectedAnswer": "Everywhere"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use everywhere, nowhere, and somewhere. Emphasize everywhere, nowhere, and somewhere and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the city centre, a visitor follows a route that uses everywhere, nowhere, and somewhere. The highlighted route cue or landmark is everywhere. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Everywhere, Nowhere, Somewhere in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Giving Directions Mini Story",
-      "text": "I walk through a small town. I use words like northwest, southeast, and southwest to know where to go. Then I look for compass, direction, and near. The map is simple, and I follow one direction at a time. We also remember earlier words such as left and right.",
+      "title": "Giving Directions 2: Finding an Appointment",
+      "text": "A visitor is trying to reach an appointment in an unfamiliar area. The first instructions use northwest, southeast, southwest, compass, and direction. The map also shows near, far, close, nearby, and distant. Near the destination, the visitor looks for here, there, everywhere, nowhere, and somewhere. The visitor checks the route at each major turn instead of guessing.",
       "imageBrief": "One uncluttered giving directions scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -301,7 +311,7 @@
     "video": {
       "title": "Giving Directions: See It, Say It",
       "idea": "30–50 second contextual video set in a town. Show northwest, southeast, southwest, compass, and direction naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see northwest, southeast, and southwest. What can you find next?"
+      "scriptStarter": "Watch the situation: At the station exit, a visitor follows a route that uses northwest, southeast, and southwest. The highlighted route cue or landmark is northwest."
     },
     "spacedReview": "1 lesson(s) back: Left, Right from giving-directions-1\n3 lesson(s) back: Barcode, Shopping Bag from market-5\n7 lesson(s) back: Apple, Banana from market-1"
   },
@@ -333,88 +343,93 @@
       "Statue"
     ],
     "targetWordsArabic": [
-      "مصطلح مرتبط بالموضوع يُسمّى «ينتيرسيكتيون»",
-      "شجرة يُسمّى «كورنير»",
-      "مبنى يُسمّى «بلوك»",
-      "مكان يُسمّى «كروسسوالك»",
-      "لون يُسمّى «تراففيك ليغت»",
-      "مصطلح مرتبط بالموضوع يُسمّى «رووندابووت»",
+      "تقاطع",
+      "ناصية",
+      "مربع سكني",
+      "ممر مشاة",
+      "إشارة مرور",
+      "دوار",
       "اتجاه واحد",
-      "شجرة يُسمّى «دياد يند»",
-      "مصطلح مرتبط بالموضوع يُسمّى «هيغواي»",
-      "منطقة يُسمّى «سيديوالك»",
+      "طريق مسدود",
+      "طريق سريع",
+      "رصيف",
       "مبنى",
       "قوس القدم",
-      "شخص يُسمّى «مونومينت»",
+      "نصب تذكاري",
       "نافورة",
-      "شخص يُسمّى «ستاتوي»"
+      "تمثال"
     ],
     "usage": {
-      "goal": "Understand and give very simple directions using familiar places and position words.",
-      "canDoStatement": "I can understand and give very simple directions using familiar places and position words",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key giving directions 3 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to giving directions in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Intersection", "Corner", "Block"],
-          "scenario": "When I move around town, I use intersection, corner, and block.",
+          "scenario": "In the hospital district, a visitor follows a route that uses intersection, corner, and block. The highlighted route cue or landmark is intersection.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Intersection", "Corner", "Block"],
+            "question": "Which landmark or street feature should the visitor look for?",
+            "options": ["Corner", "Block", "Intersection"],
             "expectedAnswer": "Intersection"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use intersection, corner, and block. Emphasize intersection, corner, and block and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the hospital district, a visitor follows a route that uses intersection, corner, and block. The highlighted route cue or landmark is intersection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Intersection, Corner, Block in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Crosswalk", "Traffic Light", "Roundabout"],
-          "scenario": "When I move around town, I use crosswalk, traffic light, and roundabout.",
+          "scenario": "In the office area, a visitor follows a route that uses crosswalk, traffic light, and roundabout. The highlighted route cue or landmark is crosswalk.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Crosswalk", "Traffic Light", "Roundabout"],
+            "question": "Which landmark helps the visitor continue?",
+            "options": ["Roundabout", "Crosswalk", "Traffic Light"],
             "expectedAnswer": "Crosswalk"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use crosswalk, traffic light, and roundabout. Emphasize crosswalk, traffic light, and roundabout and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the office area, a visitor follows a route that uses crosswalk, traffic light, and roundabout. The highlighted route cue or landmark is crosswalk. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Crosswalk, Traffic Light, Roundabout in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["One-Way", "Dead End", "Highway"],
-          "scenario": "When I move around town, I use one-way, dead end, and highway.",
+          "scenario": "In the neighbourhood route, a visitor follows a route that uses one-way, dead end, and highway. The highlighted route cue or landmark is one-way.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which landmark or street feature should the visitor look for in the example with one-way, dead end?",
             "options": ["One-Way", "Dead End", "Highway"],
             "expectedAnswer": "One-Way"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use one-way, dead end, and highway. Emphasize one-way, dead end, and highway and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the neighbourhood route, a visitor follows a route that uses one-way, dead end, and highway. The highlighted route cue or landmark is one-way. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including One-Way, Dead End, Highway in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Sidewalk", "Building", "Bridge"],
-          "scenario": "When I move around town, I use sidewalk, building, and bridge.",
+          "scenario": "In the city centre, a visitor follows a route that uses sidewalk, building, and bridge. The highlighted route cue or landmark is sidewalk.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Sidewalk", "Building", "Bridge"],
+            "question": "Which landmark helps the visitor continue in the example with sidewalk, building?",
+            "options": ["Building", "Bridge", "Sidewalk"],
             "expectedAnswer": "Sidewalk"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use sidewalk, building, and bridge. Emphasize sidewalk, building, and bridge and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the city centre, a visitor follows a route that uses sidewalk, building, and bridge. The highlighted route cue or landmark is sidewalk. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Sidewalk, Building, Bridge in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Monument", "Fountain", "Statue"],
-          "scenario": "When I move around town, I use monument, fountain, and statue.",
+          "scenario": "At the station exit, a visitor follows a route that uses monument, fountain, and statue. The highlighted route cue or landmark is monument.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Monument", "Fountain", "Statue"],
+            "question": "What place or road feature is marked on the route?",
+            "options": ["Statue", "Monument", "Fountain"],
             "expectedAnswer": "Monument"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use monument, fountain, and statue. Emphasize monument, fountain, and statue and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: At the station exit, a visitor follows a route that uses monument, fountain, and statue. The highlighted route cue or landmark is monument. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Monument, Fountain, Statue in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Giving Directions Mini Story",
-      "text": "I walk through a small town. I use words like intersection, corner, and block to know where to go. Then I look for crosswalk, traffic light, and roundabout. The map is simple, and I follow one direction at a time. We also remember earlier words such as northwest and southeast.",
+      "title": "Giving Directions 3: Finding an Appointment",
+      "text": "A visitor is trying to reach an appointment in an unfamiliar area. The first instructions use intersection, corner, block, crosswalk, and traffic light. The map also shows roundabout, one-way, dead end, highway, and sidewalk. Near the destination, the visitor looks for building, bridge, monument, fountain, and statue. The visitor checks the route at each major turn instead of guessing.",
       "imageBrief": "One uncluttered giving directions scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -454,7 +469,7 @@
     "video": {
       "title": "Giving Directions: See It, Say It",
       "idea": "30–50 second contextual video set in a town. Show intersection, corner, block, crosswalk, and traffic light naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see intersection, corner, and block. What can you find next?"
+      "scriptStarter": "Watch the situation: In the hospital district, a visitor follows a route that uses intersection, corner, and block. The highlighted route cue or landmark is intersection."
     },
     "spacedReview": "1 lesson(s) back: Northwest, Southeast from giving-directions-2\n3 lesson(s) back: Customer, Butcher from market-6\n7 lesson(s) back: Pepper, Tomato from market-2"
   },
@@ -469,46 +484,42 @@
     "cefrStage": "Pre-A1",
     "stageName": "Pre-A1 Starter",
     "targetWordsEnglish": ["Tower", "Church", "Park", "School", "Hospital"],
-    "targetWordsArabic": [
-      "هيكل يُسمّى «تووير»",
-      "سفينة يُسمّى «تشورتش»",
-      "مركبة يُسمّى «بارك»",
-      "مبنى يُسمّى «ستشوول»",
-      "-"
-    ],
+    "targetWordsArabic": ["برج", "كنيسة", "حديقة", "مدرسة", "-"],
     "usage": {
-      "goal": "Understand and give very simple directions using familiar places and position words.",
-      "canDoStatement": "I can understand and give very simple directions using familiar places and position words",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key giving directions 4 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to giving directions in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Tower", "Church", "Park"],
-          "scenario": "When I move around town, I use tower, church, and park.",
+          "scenario": "In the office area, a visitor follows a route that uses tower, church, and park. The highlighted route cue or landmark is tower.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Tower", "Church", "Park"],
+            "question": "What place or road feature is marked on the route in the example with tower, church?",
+            "options": ["Park", "Tower", "Church"],
             "expectedAnswer": "Tower"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use tower, church, and park. Emphasize tower, church, and park and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the office area, a visitor follows a route that uses tower, church, and park. The highlighted route cue or landmark is tower. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Tower, Church, Park in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["School", "Hospital"],
-          "scenario": "When I move around town, I use school and hospital.",
+          "scenario": "In the neighbourhood route, a visitor follows a route that uses school and hospital. The highlighted route cue or landmark is school.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["School", "Hospital"],
+            "question": "What route feature should the visitor identify?",
+            "options": ["School", "Hospital", "Tower"],
             "expectedAnswer": "School"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for giving directions that represents: When I move around town, I use school and hospital. Emphasize school and hospital and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the neighbourhood route, a visitor follows a route that uses school and hospital. The highlighted route cue or landmark is school. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including School, Hospital in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Giving Directions Mini Story",
-      "text": "I walk through a small town. I use words like tower, church, and park to know where to go. Then I look for school and hospital. The map is simple, and I follow one direction at a time. We also remember earlier words such as intersection and corner.",
+      "title": "Giving Directions 4: Finding an Appointment",
+      "text": "A visitor is trying to reach an appointment in an unfamiliar area. The first instructions use tower, church, park, school, and hospital. The visitor checks the route at each major turn instead of guessing. The vocabulary is used in a realistic giving directions context that an adult could meet at home, at work, or in the community.",
       "imageBrief": "One uncluttered giving directions scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -536,7 +547,7 @@
     "video": {
       "title": "Giving Directions: See It, Say It",
       "idea": "30–50 second contextual video set in a town. Show tower, church, park, school, and hospital naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see tower, church, and park. What can you find next?"
+      "scriptStarter": "Watch the situation: In the office area, a visitor follows a route that uses tower, church, and park. The highlighted route cue or landmark is tower."
     },
     "spacedReview": "1 lesson(s) back: Intersection, Corner from giving-directions-3\n3 lesson(s) back: Left, Right from giving-directions-1\n7 lesson(s) back: Ham, Bacon from market-3"
   }

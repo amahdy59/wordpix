@@ -144,7 +144,7 @@ describe("curriculum usage boundary", () => {
     const modules = import.meta.glob<{ default: unknown }>("../data/usagePhrases/*.phrases.json", {
       eager: true,
     });
-    expect(Object.keys(modules)).toHaveLength(5);
+    expect(Object.keys(modules).length).toBeGreaterThanOrEqual(5);
     for (const [path, module] of Object.entries(modules)) {
       expect(() => unitUsagePhraseDataSchema.parse(module.default), path).not.toThrow();
     }

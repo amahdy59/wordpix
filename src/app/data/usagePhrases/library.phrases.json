@@ -1,0 +1,494 @@
+[
+  {
+    "id": "library-1-core-1",
+    "lessonId": "library-1",
+    "slot": "core-1",
+    "unitId": "library",
+    "phrase": "check the catalogue",
+    "kind": "collocation",
+    "meaning": "search the library catalogue for an item",
+    "arabicMeaning": "يفحص الفهرس",
+    "example": "I checked the catalogue before asking the librarian.",
+    "learnerPurpose": "Use “check the catalogue” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "A2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/check",
+    "check": {
+      "question": "Which phrase matches this meaning: search the library catalogue for an item",
+      "expectedAnswer": "check the catalogue",
+      "explanation": "search the library catalogue for an item"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “check the catalogue”.",
+      "personalUse": "Write one realistic adult-life sentence using “check the catalogue”.",
+      "laterReview": "Reuse “check the catalogue” in a later review or conversation."
+    },
+    "sceneId": "library-1-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/check",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/check-the-catalogue",
+      "finding": "Workbook evidence supports the taught sense and pattern for check the catalogue; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "library-1-core-2",
+    "lessonId": "library-1",
+    "slot": "core-2",
+    "unitId": "library",
+    "phrase": "Where is the reference section?",
+    "kind": "everyday-expression",
+    "meaning": "ask for the location of reference materials",
+    "arabicMeaning": "أين قسم المراجع؟",
+    "example": "Excuse me, where is the reference section?",
+    "learnerPurpose": "Use “Where is the reference section?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "A2",
+    "register": "everyday spoken",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/where",
+    "check": {
+      "question": "Which phrase matches this meaning: ask for the location of reference materials",
+      "expectedAnswer": "Where is the reference section?",
+      "explanation": "ask for the location of reference materials"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Where is the reference section?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Where is the reference section?”.",
+      "laterReview": "Reuse “Where is the reference section?” in a later review or conversation."
+    },
+    "sceneId": "library-1-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/where",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/where-is-the-reference-section",
+      "finding": "Workbook evidence supports the taught sense and pattern for Where is the reference section?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "library-1-optional-1",
+    "lessonId": "library-1",
+    "slot": "optional-1",
+    "unitId": "library",
+    "phrase": "look up",
+    "kind": "phrasal-verb",
+    "meaning": "search for information in a reference source",
+    "arabicMeaning": "يبحث عن معلومة",
+    "example": "I looked up the term before writing my report.",
+    "learnerPurpose": "Use “look up” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "B1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/look-up",
+    "check": {
+      "question": "Which phrase matches this meaning: search for information in a reference source",
+      "expectedAnswer": "look up",
+      "explanation": "search for information in a reference source"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “look up”.",
+      "personalUse": "Write one realistic adult-life sentence using “look up”.",
+      "laterReview": "Reuse “look up” in a later review or conversation."
+    },
+    "sceneId": "library-1-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/look-up",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/look-up",
+      "finding": "Workbook evidence supports the taught sense and pattern for look up; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "library-2-core-1",
+    "lessonId": "library-2",
+    "slot": "core-1",
+    "unitId": "library",
+    "phrase": "reserve a title",
+    "kind": "collocation",
+    "meaning": "ask the library to hold a particular book or item",
+    "arabicMeaning": "يحجز عنوانا",
+    "example": "She reserved a title that was currently on loan.",
+    "learnerPurpose": "Use “reserve a title” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "A2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/reserve",
+    "check": {
+      "question": "Which phrase matches this meaning: ask the library to hold a particular book or item",
+      "expectedAnswer": "reserve a title",
+      "explanation": "ask the library to hold a particular book or item"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “reserve a title”.",
+      "personalUse": "Write one realistic adult-life sentence using “reserve a title”.",
+      "laterReview": "Reuse “reserve a title” in a later review or conversation."
+    },
+    "sceneId": "library-2-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/reserve",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/reserve-a-title",
+      "finding": "Workbook evidence supports the taught sense and pattern for reserve a title; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "library-2-core-2",
+    "lessonId": "library-2",
+    "slot": "core-2",
+    "unitId": "library",
+    "phrase": "Could you help me find this?",
+    "kind": "everyday-expression",
+    "meaning": "ask politely for help locating something",
+    "arabicMeaning": "هل يمكنك مساعدتي في العثور على هذا؟",
+    "example": "Could you help me find this in the reference section?",
+    "learnerPurpose": "Use “Could you help me find this?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "A2",
+    "register": "everyday spoken",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/help",
+    "check": {
+      "question": "Which phrase matches this meaning: ask politely for help locating something",
+      "expectedAnswer": "Could you help me find this?",
+      "explanation": "ask politely for help locating something"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Could you help me find this?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Could you help me find this?”.",
+      "laterReview": "Reuse “Could you help me find this?” in a later review or conversation."
+    },
+    "sceneId": "library-2-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/help",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/could-you-help-me-find-this",
+      "finding": "Workbook evidence supports the taught sense and pattern for Could you help me find this?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "library-2-optional-1",
+    "lessonId": "library-2",
+    "slot": "optional-1",
+    "unitId": "library",
+    "phrase": "check out",
+    "kind": "phrasal-verb",
+    "meaning": "borrow an item officially from a library",
+    "arabicMeaning": "يستعير من المكتبة",
+    "example": "She checked out two books after class.",
+    "learnerPurpose": "Use “check out” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "B1",
+    "register": "everyday spoken",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/check-out",
+    "check": {
+      "question": "Which phrase matches this meaning: borrow an item officially from a library",
+      "expectedAnswer": "check out",
+      "explanation": "borrow an item officially from a library"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “check out”.",
+      "personalUse": "Write one realistic adult-life sentence using “check out”.",
+      "laterReview": "Reuse “check out” in a later review or conversation."
+    },
+    "sceneId": "library-2-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/check-out",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/check-out",
+      "finding": "Workbook evidence supports the taught sense and pattern for check out; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "library-3-core-1",
+    "lessonId": "library-3",
+    "slot": "core-1",
+    "unitId": "library",
+    "phrase": "borrow a book",
+    "kind": "collocation",
+    "meaning": "take a book from a library for a limited time",
+    "arabicMeaning": "يستعير كتابا",
+    "example": "I borrowed a book for my evening course.",
+    "learnerPurpose": "Use “borrow a book” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "A2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/borrow",
+    "check": {
+      "question": "Which phrase matches this meaning: take a book from a library for a limited time",
+      "expectedAnswer": "borrow a book",
+      "explanation": "take a book from a library for a limited time"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “borrow a book”.",
+      "personalUse": "Write one realistic adult-life sentence using “borrow a book”.",
+      "laterReview": "Reuse “borrow a book” in a later review or conversation."
+    },
+    "sceneId": "library-3-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/borrow",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/borrow-a-book",
+      "finding": "Workbook evidence supports the taught sense and pattern for borrow a book; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "library-3-core-2",
+    "lessonId": "library-3",
+    "slot": "core-2",
+    "unitId": "library",
+    "phrase": "Is this available to borrow?",
+    "kind": "everyday-expression",
+    "meaning": "ask whether an item can be borrowed",
+    "arabicMeaning": "هل هذا متاح للاستعارة؟",
+    "example": "Is this available to borrow over the weekend?",
+    "learnerPurpose": "Use “Is this available to borrow?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "A2",
+    "register": "everyday spoken",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/available",
+    "check": {
+      "question": "Which phrase matches this meaning: ask whether an item can be borrowed",
+      "expectedAnswer": "Is this available to borrow?",
+      "explanation": "ask whether an item can be borrowed"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Is this available to borrow?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Is this available to borrow?”.",
+      "laterReview": "Reuse “Is this available to borrow?” in a later review or conversation."
+    },
+    "sceneId": "library-3-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/available",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/is-this-available-to-borrow",
+      "finding": "Workbook evidence supports the taught sense and pattern for Is this available to borrow?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "library-3-optional-1",
+    "lessonId": "library-3",
+    "slot": "optional-1",
+    "unitId": "library",
+    "phrase": "go through",
+    "kind": "phrasal-verb",
+    "meaning": "review something carefully from beginning to end",
+    "arabicMeaning": "يراجع بعناية",
+    "example": "I went through the references before submitting the assignment.",
+    "learnerPurpose": "Use “go through” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "B1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/go-through",
+    "check": {
+      "question": "Which phrase matches this meaning: review something carefully from beginning to end",
+      "expectedAnswer": "go through",
+      "explanation": "review something carefully from beginning to end"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “go through”.",
+      "personalUse": "Write one realistic adult-life sentence using “go through”.",
+      "laterReview": "Reuse “go through” in a later review or conversation."
+    },
+    "sceneId": "library-3-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/go-through",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/go-through",
+      "finding": "Workbook evidence supports the taught sense and pattern for go through; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "library-4-core-1",
+    "lessonId": "library-4",
+    "slot": "core-1",
+    "unitId": "library",
+    "phrase": "check the catalogue",
+    "kind": "collocation",
+    "meaning": "search the library catalogue for an item",
+    "arabicMeaning": "يفحص الفهرس",
+    "example": "I checked the catalogue before asking the librarian.",
+    "learnerPurpose": "Use “check the catalogue” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "A2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/check",
+    "check": {
+      "question": "Which phrase matches this meaning: search the library catalogue for an item",
+      "expectedAnswer": "check the catalogue",
+      "explanation": "search the library catalogue for an item"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “check the catalogue”.",
+      "personalUse": "Write one realistic adult-life sentence using “check the catalogue”.",
+      "laterReview": "Reuse “check the catalogue” in a later review or conversation."
+    },
+    "sceneId": "library-4-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/check",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/check-the-catalogue",
+      "finding": "Workbook evidence supports the taught sense and pattern for check the catalogue; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "library-4-core-2",
+    "lessonId": "library-4",
+    "slot": "core-2",
+    "unitId": "library",
+    "phrase": "Where is the reference section?",
+    "kind": "everyday-expression",
+    "meaning": "ask for the location of reference materials",
+    "arabicMeaning": "أين قسم المراجع؟",
+    "example": "Excuse me, where is the reference section?",
+    "learnerPurpose": "Use “Where is the reference section?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "A2",
+    "register": "everyday spoken",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/where",
+    "check": {
+      "question": "Which phrase matches this meaning: ask for the location of reference materials",
+      "expectedAnswer": "Where is the reference section?",
+      "explanation": "ask for the location of reference materials"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Where is the reference section?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Where is the reference section?”.",
+      "laterReview": "Reuse “Where is the reference section?” in a later review or conversation."
+    },
+    "sceneId": "library-4-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/where",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/where-is-the-reference-section",
+      "finding": "Workbook evidence supports the taught sense and pattern for Where is the reference section?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "library-4-optional-1",
+    "lessonId": "library-4",
+    "slot": "optional-1",
+    "unitId": "library",
+    "phrase": "look up",
+    "kind": "phrasal-verb",
+    "meaning": "search for information in a reference source",
+    "arabicMeaning": "يبحث عن معلومة",
+    "example": "I looked up the term before writing my report.",
+    "learnerPurpose": "Use “look up” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "B1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/look-up",
+    "check": {
+      "question": "Which phrase matches this meaning: search for information in a reference source",
+      "expectedAnswer": "look up",
+      "explanation": "search for information in a reference source"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “look up”.",
+      "personalUse": "Write one realistic adult-life sentence using “look up”.",
+      "laterReview": "Reuse “look up” in a later review or conversation."
+    },
+    "sceneId": "library-4-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/look-up",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/look-up",
+      "finding": "Workbook evidence supports the taught sense and pattern for look up; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  }
+]

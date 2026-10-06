@@ -41,6 +41,7 @@
     "content:conversation:images": "node scripts/import_conversation_figma_images.cjs",
     "audio:pronunciation:manifest": "node scripts/reconcile_pronunciation_audio.cjs --inspect-metadata=10000",
     "audio:plan": "node scripts/generate_audio.cjs --dry-run",
+    "audio:subscription": "node scripts/check_elevenlabs_subscription.mjs",
     "audio:reconcile": "node scripts/generate_audio.cjs --reconcile",
     "build": "node scripts/build_group_thumbnails.mjs && node scripts/shard_specialist_catalogs.mjs && node scripts/shard_learning_content.mjs && vite build",
     "check:bundle": "node scripts/check_bundle_budget.mjs",

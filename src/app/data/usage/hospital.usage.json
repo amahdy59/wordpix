@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "hospital-1",
     "lessonName": "L5 Hospital 1",
@@ -28,87 +28,92 @@
     ],
     "targetWordsArabic": [
       "طبيب",
-      "مصطلح طبي أو تشريحي يُسمّى «نورسي»",
-      "جرّاح",
-      "شخص يُسمّى «باراميديك»",
+      "ممرض",
+      "جراح",
+      "مسعف",
       "موظف استقبال",
       "صيدلي",
-      "مصطلح طبي أو تشريحي يُسمّى «انيسثيسيولوجيست»",
-      "مصطلح طبي أو تشريحي يُسمّى «راديولوجيست»",
-      "مصطلح طبي أو تشريحي يُسمّى «بيدياتريكيان»",
-      "مصطلح طبي أو تشريحي يُسمّى «بسيتشياتريست»",
-      "مصطلح طبي أو تشريحي يُسمّى «ميدويفي»",
-      "مصطلح طبي أو تشريحي يُسمّى «ورديرلي»",
-      "مصطلح طبي أو تشريحي يُسمّى «وفثالمولوجيست»",
-      "مصطلح طبي أو تشريحي يُسمّى «ديرماتولوجيست»",
-      "مصطلح طبي أو تشريحي يُسمّى «كارديولوجيست»"
+      "طبيب تخدير",
+      "طبيب أشعة",
+      "طبيب أطفال",
+      "طبيب نفسي",
+      "قابلة",
+      "مساعد خدمات مرضى",
+      "طبيب عيون",
+      "طبيب جلدية",
+      "طبيب قلب"
     ],
     "usage": {
-      "goal": "Use the vocabulary from L5 Hospital to understand and communicate in a realistic A2-appropriate context.",
-      "canDoStatement": "I can use key l5 hospital vocabulary in connected everyday context.",
-      "textType": "email",
+      "goal": "Learn to use l5 hospital 1 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
+      "textType": "workplace-email",
       "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["doctor", "nurse", "surgeon"],
-          "scenario": "The patient may meet a doctor during the visit. A nurse handles one part of the care process and explains what happens next. A surgeon is part of the team supporting the patient.",
+          "scenario": "During a routine care or examination situation, an adult reviews doctor, nurse, surgeon. The next step focuses on doctor.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["doctor", "nurse", "surgeon"],
             "expectedAnswer": "doctor"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The patient may meet a doctor during the visit. A nurse handles one part of the care process and explains what happens next. A surgeon is part of the team supporting the patient. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews doctor, nurse, surgeon. The next step focuses on doctor. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including doctor, nurse, surgeon in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["paramedic", "receptionist", "pharmacist"],
-          "scenario": "A paramedic handles one part of the care process and explains what happens next. A receptionist is part of the team supporting the patient. The patient may meet a pharmacist during the visit.",
+          "scenario": "During a routine care or examination situation, an adult reviews paramedic, receptionist, pharmacist. The next step focuses on paramedic.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["paramedic", "receptionist", "pharmacist"],
             "expectedAnswer": "paramedic"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: A paramedic handles one part of the care process and explains what happens next. A receptionist is part of the team supporting the patient. The patient may meet a pharmacist during the visit. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews paramedic, receptionist, pharmacist. The next step focuses on paramedic. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including paramedic, receptionist, pharmacist in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["anesthesiologist", "radiologist", "pediatrician"],
-          "scenario": "An anesthesiologist is part of the team supporting the patient. The patient may meet a radiologist during the visit. A pediatrician handles one part of the care process and explains what happens next.",
+          "scenario": "During a routine care or examination situation, an adult reviews anesthesiologist, radiologist, pediatrician. The next step focuses on anesthesiologist.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["anesthesiologist", "radiologist", "pediatrician"],
             "expectedAnswer": "anesthesiologist"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: An anesthesiologist is part of the team supporting the patient. The patient may meet a radiologist during the visit. A pediatrician handles one part of the care process and explains what happens next. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews anesthesiologist, radiologist, pediatrician. The next step focuses on anesthesiologist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including anesthesiologist, radiologist, pediatrician in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["psychiatrist", "midwife", "orderly"],
-          "scenario": "The patient may meet a psychiatrist during the visit. A midwife handles one part of the care process and explains what happens next. An orderly is part of the team supporting the patient.",
+          "scenario": "During a routine care or examination situation, an adult reviews psychiatrist, midwife, orderly. The next step focuses on psychiatrist.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["psychiatrist", "midwife", "orderly"],
             "expectedAnswer": "psychiatrist"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The patient may meet a psychiatrist during the visit. A midwife handles one part of the care process and explains what happens next. An orderly is part of the team supporting the patient. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews psychiatrist, midwife, orderly. The next step focuses on psychiatrist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including psychiatrist, midwife, orderly in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["ophthalmologist", "dermatologist", "cardiologist"],
-          "scenario": "An ophthalmologist handles one part of the care process and explains what happens next. A dermatologist is part of the team supporting the patient. The patient may meet a cardiologist during the visit.",
+          "scenario": "During a routine care or examination situation, an adult reviews ophthalmologist, dermatologist, cardiologist. The next step focuses on ophthalmologist.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["ophthalmologist", "dermatologist", "cardiologist"],
             "expectedAnswer": "ophthalmologist"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: An ophthalmologist handles one part of the care process and explains what happens next. A dermatologist is part of the team supporting the patient. The patient may meet a cardiologist during the visit. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews ophthalmologist, dermatologist, cardiologist. The next step focuses on ophthalmologist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including ophthalmologist, dermatologist, cardiologist in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "L5 Hospital: Email",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. The patient may meet a doctor during the visit. A nurse handles one part of the care process and explains what happens next. A surgeon is part of the team supporting the patient. A paramedic handles one part of the care process and explains what happens next. A receptionist is part of the team supporting the patient. The patient may meet a pharmacist during the visit. An anesthesiologist is part of the team supporting the patient. The patient may meet a radiologist during the visit. A pediatrician handles one part of the care process and explains what happens next. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. The patient may meet a doctor during the visit. A nurse handles one part of the care process and explains what happens next. A surgeon is part of the team supporting the patient. A paramedic handles one part of the care process and explains what happens next.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -188,88 +193,93 @@
       "recovery room"
     ],
     "targetWordsArabic": [
-      "نظام يُسمّى «نيورولوجيست»",
-      "نظام يُسمّى «ورثوبيديست»",
+      "طبيب أعصاب",
+      "طبيب عظام",
       "اختصاصي أنف وأذن وحنجرة",
-      "مصطلح طبي أو تشريحي يُسمّى «ورولوجيست»",
-      "مصطلح طبي أو تشريحي يُسمّى «ونكولوجيست»",
-      "مصطلح طبي أو تشريحي يُسمّى «جاستروينتيرولوجيست»",
+      "طبيب مسالك بولية",
+      "طبيب أورام",
+      "طبيب جهاز هضمي",
       "اختصاصي أمراض الرئة",
-      "مصطلح طبي أو تشريحي يُسمّى «فيسيوثيرابيست»",
-      "مصطلح طبي أو تشريحي يُسمّى «دييتيتيان»",
+      "أخصائي علاج طبيعي",
+      "أخصائي تغذية",
       "فني مختبر",
-      "مصطلح طبي أو تشريحي يُسمّى «يمت»",
+      "فني طب طوارئ",
       "غرفة طوارئ",
       "غرفة انتظار",
-      "غرفة يُسمّى «وبيراتينج رووم»",
-      "غرفة يُسمّى «ريكوفيري رووم»"
+      "غرفة العمليات",
+      "غرفة الإفاقة"
     ],
     "usage": {
-      "goal": "Use the vocabulary from L5 Hospital to understand and communicate in a realistic A2-appropriate context.",
-      "canDoStatement": "I can use key l5 hospital vocabulary in connected everyday context.",
-      "textType": "personal message",
+      "goal": "Learn to use l5 hospital 2 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
+      "textType": "workplace-email",
       "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["neurologist", "orthopedist", "ENT specialist"],
-          "scenario": "During the visit, the patient and medical team deal with neurologist, orthopedist, and ent specialist. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews neurologist, orthopedist, ENT specialist. The next step focuses on neurologist.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["neurologist", "orthopedist", "ENT specialist"],
             "expectedAnswer": "neurologist"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with neurologist, orthopedist, and ent specialist. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews neurologist, orthopedist, ENT specialist. The next step focuses on neurologist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including neurologist, orthopedist, ENT specialist in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["urologist", "oncologist", "gastroenterologist"],
-          "scenario": "The patient may meet the urologist, oncologist, and gastroenterologist during different parts of a visit, with each professional handling a different role.",
+          "scenario": "During a routine care or examination situation, an adult reviews urologist, oncologist, gastroenterologist. The next step focuses on urologist.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["urologist", "oncologist", "gastroenterologist"],
             "expectedAnswer": "urologist"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The patient may meet the urologist, oncologist, and gastroenterologist during different parts of a visit, with each professional handling a different role. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews urologist, oncologist, gastroenterologist. The next step focuses on urologist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including urologist, oncologist, gastroenterologist in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["pulmonologist", "physiotherapist", "dietitian"],
-          "scenario": "During the visit, the patient and medical team deal with pulmonologist, physiotherapist, and dietitian. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews pulmonologist, physiotherapist, dietitian. The next step focuses on pulmonologist.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["pulmonologist", "physiotherapist", "dietitian"],
             "expectedAnswer": "pulmonologist"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with pulmonologist, physiotherapist, and dietitian. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews pulmonologist, physiotherapist, dietitian. The next step focuses on pulmonologist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including pulmonologist, physiotherapist, dietitian in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["lab technician", "EMT", "emergency room"],
-          "scenario": "During the visit, the patient and medical team deal with lab technician, emt, and emergency room. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews lab technician, EMT, emergency room. The next step focuses on lab technician.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["lab technician", "EMT", "emergency room"],
             "expectedAnswer": "lab technician"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with lab technician, emt, and emergency room. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews lab technician, EMT, emergency room. The next step focuses on lab technician. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including lab technician, EMT, emergency room in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["waiting room", "operating room", "recovery room"],
-          "scenario": "The group moves between the waiting room, operating room, and recovery room as the activity continues.",
+          "scenario": "During a routine care or examination situation, an adult reviews waiting room, operating room, recovery room. The next step focuses on waiting room.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["waiting room", "operating room", "recovery room"],
             "expectedAnswer": "waiting room"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The group moves between the waiting room, operating room, and recovery room as the activity continues. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews waiting room, operating room, recovery room. The next step focuses on waiting room. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including waiting room, operating room, recovery room in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "L5 Hospital: Personal Message",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with neurologist, orthopedist, and ent specialist. Each term belongs to a different part of the care process. The patient may meet the urologist, oncologist, and gastroenterologist during different parts of a visit, with each professional handling a different role. During the visit, the patient and medical team deal with pulmonologist, physiotherapist, and dietitian. Each term belongs to a different part of the care process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with neurologist, orthopedist, and ent specialist. Each term belongs to a different part of the care process. The patient may meet the urologist, oncologist, and gastroenterologist during different parts of a visit, with each professional handling a different role. During the visit, the patient and medical team deal with pulmonologist, physiotherapist, and dietitian.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -351,86 +361,91 @@
     "targetWordsArabic": [
       "غرفة مريض",
       "وحدة العناية المركزة",
-      "مصطلح طبي أو تشريحي يُسمّى «ماتيرنيتي وارد»",
-      "غرفة يُسمّى «نورسيري»",
+      "جناح الولادة",
+      "حضانة حديثي الولادة",
       "مختبر",
-      "هيكل يُسمّى «راديولوجي»",
-      "مصطلح طبي أو تشريحي يُسمّى «كافيتيريا»",
+      "قسم الأشعة",
+      "كافتيريا",
       "صيدلية",
       "غرفة استشارة",
       "منطقة الفرز الطبي",
       "وحدة علاج الحروق",
       "وحدة غسيل الكلى",
-      "غرفة يُسمّى «يسولاتيون رووم»",
+      "غرفة عزل",
       "غرفة التعقيم",
       "غرفة إعادة التأهيل"
     ],
     "usage": {
-      "goal": "Use the vocabulary from L5 Hospital to understand and communicate in a realistic A2-appropriate context.",
-      "canDoStatement": "I can use key l5 hospital vocabulary in connected everyday context.",
-      "textType": "short dialogue",
+      "goal": "Learn to use l5 hospital 3 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
+      "textType": "dialogue",
       "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["patient room", "intensive care unit", "maternity ward"],
-          "scenario": "During the visit, the patient and medical team deal with patient room, intensive care unit, and maternity ward. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews patient room, intensive care unit, maternity ward. The next step focuses on patient room.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["patient room", "intensive care unit", "maternity ward"],
             "expectedAnswer": "patient room"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with patient room, intensive care unit, and maternity ward. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews patient room, intensive care unit, maternity ward. The next step focuses on patient room. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including patient room, intensive care unit, maternity ward in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["nursery", "laboratory", "radiology"],
-          "scenario": "During the visit, the patient and medical team deal with nursery, laboratory, and radiology. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews nursery, laboratory, radiology. The next step focuses on nursery.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["nursery", "laboratory", "radiology"],
             "expectedAnswer": "nursery"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with nursery, laboratory, and radiology. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews nursery, laboratory, radiology. The next step focuses on nursery. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including nursery, laboratory, radiology in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["cafeteria", "pharmacy", "consulting room"],
-          "scenario": "During the visit, the patient and medical team deal with cafeteria, pharmacy, and consulting room. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews cafeteria, pharmacy, consulting room. The next step focuses on cafeteria.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["cafeteria", "pharmacy", "consulting room"],
             "expectedAnswer": "cafeteria"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with cafeteria, pharmacy, and consulting room. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews cafeteria, pharmacy, consulting room. The next step focuses on cafeteria. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including cafeteria, pharmacy, consulting room in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["triage area", "burn unit", "dialysis unit"],
-          "scenario": "During the visit, the patient and medical team deal with triage area, burn unit, and dialysis unit. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews triage area, burn unit, dialysis unit. The next step focuses on triage area.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["triage area", "burn unit", "dialysis unit"],
             "expectedAnswer": "triage area"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with triage area, burn unit, and dialysis unit. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews triage area, burn unit, dialysis unit. The next step focuses on triage area. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including triage area, burn unit, dialysis unit in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["isolation room", "sterilization room", "rehabilitation room"],
-          "scenario": "The group moves between the isolation room, sterilization room, and rehabilitation room as the activity continues.",
+          "scenario": "During a routine care or examination situation, an adult reviews isolation room, sterilization room, rehabilitation room. The next step focuses on isolation room.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["isolation room", "sterilization room", "rehabilitation room"],
             "expectedAnswer": "isolation room"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The group moves between the isolation room, sterilization room, and rehabilitation room as the activity continues. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews isolation room, sterilization room, rehabilitation room. The next step focuses on isolation room. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including isolation room, sterilization room, rehabilitation room in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "L5 Hospital: Short Dialogue",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with patient room, intensive care unit, and maternity ward. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with nursery, laboratory, and radiology. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with cafeteria, pharmacy, and consulting room. Each term belongs to a different part of the care process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with patient room, intensive care unit, and maternity ward. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with nursery, laboratory, and radiology. Each term belongs to a different part of the care process.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -510,88 +525,93 @@
       "catheter"
     ],
     "targetWordsArabic": [
-      "مصطلح طبي أو تشريحي يُسمّى «بلوود بانك»",
+      "بنك الدم",
       "سماعة طبية",
       "حقنة",
       "مقياس حرارة",
       "جهاز قياس ضغط الدم",
       "محلول وريدي بالتنقيط",
-      "مصطلح طبي أو تشريحي يُسمّى «وهييلتشاير»",
-      "مصطلح طبي أو تشريحي يُسمّى «ستريتتشير»",
-      "جهاز يُسمّى «وكسيجين ماسك»",
+      "كرسي متحرك",
+      "نقالة",
+      "قناع أكسجين",
       "جهاز مزيل الرجفان",
       "مشرط",
       "ضمادة",
       "جبيرة جبسية",
-      "جهاز يُسمّى «فينتيلاتور»",
-      "مصطلح طبي أو تشريحي يُسمّى «كاثيتير»"
+      "جهاز تنفس صناعي",
+      "قسطرة"
     ],
     "usage": {
-      "goal": "Use the vocabulary from L5 Hospital to understand and communicate in a realistic A2-appropriate context.",
-      "canDoStatement": "I can use key l5 hospital vocabulary in connected everyday context.",
-      "textType": "tips/notice",
+      "goal": "Learn to use l5 hospital 4 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
+      "textType": "service-notice",
       "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["blood bank", "stethoscope", "syringe"],
-          "scenario": "During the visit, the patient and medical team deal with blood bank, stethoscope, and syringe. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews blood bank, stethoscope, syringe. The next step focuses on blood bank.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["blood bank", "stethoscope", "syringe"],
             "expectedAnswer": "blood bank"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with blood bank, stethoscope, and syringe. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews blood bank, stethoscope, syringe. The next step focuses on blood bank. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including blood bank, stethoscope, syringe in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["thermometer", "blood pressure monitor", "IV drip"],
-          "scenario": "During the visit, the patient and medical team deal with thermometer, blood pressure monitor, and iv drip. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews thermometer, blood pressure monitor, IV drip. The next step focuses on thermometer.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["thermometer", "blood pressure monitor", "IV drip"],
             "expectedAnswer": "thermometer"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with thermometer, blood pressure monitor, and iv drip. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews thermometer, blood pressure monitor, IV drip. The next step focuses on thermometer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including thermometer, blood pressure monitor, IV drip in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["wheelchair", "stretcher", "oxygen mask"],
-          "scenario": "During the visit, the patient and medical team deal with wheelchair, stretcher, and oxygen mask. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews wheelchair, stretcher, oxygen mask. The next step focuses on wheelchair.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["wheelchair", "stretcher", "oxygen mask"],
             "expectedAnswer": "wheelchair"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with wheelchair, stretcher, and oxygen mask. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews wheelchair, stretcher, oxygen mask. The next step focuses on wheelchair. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including wheelchair, stretcher, oxygen mask in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["defibrillator", "scalpel", "bandage"],
-          "scenario": "During the visit, the patient and medical team deal with defibrillator, scalpel, and bandage. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews defibrillator, scalpel, bandage. The next step focuses on defibrillator.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["defibrillator", "scalpel", "bandage"],
             "expectedAnswer": "defibrillator"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with defibrillator, scalpel, and bandage. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews defibrillator, scalpel, bandage. The next step focuses on defibrillator. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including defibrillator, scalpel, bandage in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["cast", "ventilator", "catheter"],
-          "scenario": "During the visit, the patient and medical team deal with cast, ventilator, and catheter. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews cast, ventilator, catheter. The next step focuses on cast.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["cast", "ventilator", "catheter"],
             "expectedAnswer": "cast"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with cast, ventilator, and catheter. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews cast, ventilator, catheter. The next step focuses on cast. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including cast, ventilator, catheter in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "L5 Hospital: Tips/Notice",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with blood bank, stethoscope, and syringe. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with thermometer, blood pressure monitor, and iv drip. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with wheelchair, stretcher, and oxygen mask. Each term belongs to a different part of the care process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with blood bank, stethoscope, and syringe. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with thermometer, blood pressure monitor, and iv drip. Each term belongs to a different part of the care process.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -673,86 +693,91 @@
     "targetWordsArabic": [
       "مقياس التأكسج النبضي",
       "جهاز تخطيط القلب الكهربائي",
-      "مصطلح طبي أو تشريحي يُسمّى «نيبوليزير»",
-      "مصطلح طبي أو تشريحي يُسمّى «توورنيكيت»",
+      "جهاز استنشاق",
+      "عاصبة",
       "كمامة جراحية",
       "مطرقة فحص المنعكسات",
-      "عضو يُسمّى «هيارت»",
-      "عضو يُسمّى «لونجس»",
-      "شعور يُسمّى «براين»",
-      "عظم يُسمّى «بوني»",
-      "مصطلح طبي أو تشريحي يُسمّى «بلوود»",
-      "فعل أو عملية يُسمّى «بولسي»",
-      "مصطلح طبي أو تشريحي يُسمّى «فيفير»",
+      "القلب",
+      "الرئتان",
+      "الدماغ",
+      "عظمة",
+      "الدم",
+      "النبض",
+      "حمى",
       "عدوى",
-      "مصطلح طبي أو تشريحي يُسمّى «ينجوري»"
+      "إصابة"
     ],
     "usage": {
-      "goal": "Use the vocabulary from L5 Hospital to understand and communicate in a realistic A2-appropriate context.",
-      "canDoStatement": "I can use key l5 hospital vocabulary in connected everyday context.",
-      "textType": "everyday description",
+      "goal": "Learn to use l5 hospital 5 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
+      "textType": "dialogue",
       "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["pulse oximeter", "ECG machine", "nebulizer"],
-          "scenario": "During the visit, the patient and medical team deal with pulse oximeter, ecg machine, and nebulizer. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews pulse oximeter, ECG machine, nebulizer. The next step focuses on pulse oximeter.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["pulse oximeter", "ECG machine", "nebulizer"],
             "expectedAnswer": "pulse oximeter"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with pulse oximeter, ecg machine, and nebulizer. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews pulse oximeter, ECG machine, nebulizer. The next step focuses on pulse oximeter. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including pulse oximeter, ECG machine, nebulizer in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["tourniquet", "surgical mask", "reflex hammer"],
-          "scenario": "During the visit, the patient and medical team deal with tourniquet, surgical mask, and reflex hammer. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews tourniquet, surgical mask, reflex hammer. The next step focuses on tourniquet.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["tourniquet", "surgical mask", "reflex hammer"],
             "expectedAnswer": "tourniquet"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with tourniquet, surgical mask, and reflex hammer. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews tourniquet, surgical mask, reflex hammer. The next step focuses on tourniquet. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including tourniquet, surgical mask, reflex hammer in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["heart", "lungs", "brain"],
-          "scenario": "The learner identifies the heart, lungs, and brain and connects each part to its place or function in the body.",
+          "scenario": "During a routine care or examination situation, an adult reviews heart, lungs, brain. The next step focuses on heart.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["heart", "lungs", "brain"],
             "expectedAnswer": "heart"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The learner identifies the heart, lungs, and brain and connects each part to its place or function in the body. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews heart, lungs, brain. The next step focuses on heart. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including heart, lungs, brain in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["bone", "blood", "pulse"],
-          "scenario": "During the visit, the patient and medical team deal with bone, blood, and pulse. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews bone, blood, pulse. The next step focuses on bone.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["bone", "blood", "pulse"],
             "expectedAnswer": "bone"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with bone, blood, and pulse. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews bone, blood, pulse. The next step focuses on bone. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including bone, blood, pulse in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["fever", "infection", "injury"],
-          "scenario": "During the visit, the patient and medical team deal with fever, infection, and injury. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews fever, infection, injury. The next step focuses on fever.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["fever", "infection", "injury"],
             "expectedAnswer": "fever"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with fever, infection, and injury. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews fever, infection, injury. The next step focuses on fever. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including fever, infection, injury in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "L5 Hospital: Everyday Description",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with pulse oximeter, ecg machine, and nebulizer. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with tourniquet, surgical mask, and reflex hammer. Each term belongs to a different part of the care process. The learner identifies the heart, lungs, and brain and connects each part to its place or function in the body. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with pulse oximeter, ecg machine, and nebulizer. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with tourniquet, surgical mask, and reflex hammer. Each term belongs to a different part of the care process.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -833,87 +858,92 @@
     ],
     "targetWordsArabic": [
       "كسر",
-      "فعل أو عملية يُسمّى «الليرجي»",
+      "حساسية",
       "طفح جلدي",
-      "طبق يُسمّى «ليفير»",
-      "عضو يُسمّى «كيدنييس»",
+      "الكبد",
+      "الكليتان",
       "عمود فقري",
-      "مصطلح طبي أو تشريحي يُسمّى «ستوماتش»",
-      "جزء يُسمّى «ينتيستينيس»",
-      "عضو يُسمّى «موسكليس»",
+      "المعدة",
+      "الأمعاء",
+      "العضلات",
       "الشرايين",
-      "مادة يُسمّى «اببينديكس»",
-      "شعور يُسمّى «ينفلامماتيون»",
-      "مصطلح طبي أو تشريحي يُسمّى «ناوسيا»",
-      "مصطلح طبي أو تشريحي يُسمّى «يكساميناتيون»",
-      "مصطلح طبي أو تشريحي يُسمّى «دياجنوسيس»"
+      "الزائدة الدودية",
+      "التهاب",
+      "غثيان",
+      "فحص",
+      "تشخيص"
     ],
     "usage": {
-      "goal": "Use the vocabulary from L5 Hospital to understand and communicate in a realistic A2-appropriate context.",
-      "canDoStatement": "I can use key l5 hospital vocabulary in connected everyday context.",
-      "textType": "email",
+      "goal": "Learn to use l5 hospital 6 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
+      "textType": "workplace-email",
       "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["fracture", "allergy", "rash"],
-          "scenario": "During the visit, the patient and medical team deal with fracture, allergy, and rash. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews fracture, allergy, rash. The next step focuses on fracture.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["fracture", "allergy", "rash"],
             "expectedAnswer": "fracture"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with fracture, allergy, and rash. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews fracture, allergy, rash. The next step focuses on fracture. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including fracture, allergy, rash in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["liver", "kidneys", "spine"],
-          "scenario": "The learner identifies the liver, kidneys, and spine and connects each part to its place or function in the body.",
+          "scenario": "During a routine care or examination situation, an adult reviews liver, kidneys, spine. The next step focuses on liver.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["liver", "kidneys", "spine"],
             "expectedAnswer": "liver"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The learner identifies the liver, kidneys, and spine and connects each part to its place or function in the body. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews liver, kidneys, spine. The next step focuses on liver. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including liver, kidneys, spine in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["stomach", "intestines", "muscles"],
-          "scenario": "During the visit, the patient and medical team deal with stomach, intestines, and muscles. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews stomach, intestines, muscles. The next step focuses on stomach.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["stomach", "intestines", "muscles"],
             "expectedAnswer": "stomach"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with stomach, intestines, and muscles. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews stomach, intestines, muscles. The next step focuses on stomach. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including stomach, intestines, muscles in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["arteries", "appendix", "inflammation"],
-          "scenario": "During the visit, the patient and medical team deal with arteries, appendix, and inflammation. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews arteries, appendix, inflammation. The next step focuses on arteries.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["arteries", "appendix", "inflammation"],
             "expectedAnswer": "arteries"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with arteries, appendix, and inflammation. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews arteries, appendix, inflammation. The next step focuses on arteries. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including arteries, appendix, inflammation in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["nausea", "examination", "diagnosis"],
-          "scenario": "During the visit, the patient and medical team deal with nausea, examination, and diagnosis. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews nausea, examination, diagnosis. The next step focuses on nausea.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["nausea", "examination", "diagnosis"],
             "expectedAnswer": "nausea"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with nausea, examination, and diagnosis. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews nausea, examination, diagnosis. The next step focuses on nausea. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including nausea, examination, diagnosis in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "L5 Hospital: Email",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with fracture, allergy, and rash. Each term belongs to a different part of the care process. The learner identifies the liver, kidneys, and spine and connects each part to its place or function in the body. During the visit, the patient and medical team deal with stomach, intestines, and muscles. Each term belongs to a different part of the care process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with fracture, allergy, and rash. Each term belongs to a different part of the care process. The learner identifies the liver, kidneys, and spine and connects each part to its place or function in the body. During the visit, the patient and medical team deal with stomach, intestines, and muscles.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -996,85 +1026,90 @@
       "وصفة طبية",
       "جراحة",
       "أشعة سينية",
-      "مصطلح طبي أو تشريحي يُسمّى «بلوود تيست»",
+      "تحليل دم",
       "حقنة",
       "تطعيم",
       "موجات فوق صوتية",
       "فحص بالرنين المغناطيسي",
-      "غُرز جراحية",
+      "غرز جراحية",
       "علاج جسدي",
-      "مصطلح طبي أو تشريحي يُسمّى «بيوبسي»",
-      "مصطلح طبي أو تشريحي يُسمّى «دياليسيس»",
-      "مصطلح طبي أو تشريحي يُسمّى «ترانسفوسيون»",
-      "مادة كيميائية يُسمّى «تشيموثيرابي»",
-      "عضو يُسمّى «يندوسكوبي»"
+      "خزعة",
+      "غسيل الكلى",
+      "نقل دم",
+      "علاج كيميائي",
+      "تنظير"
     ],
     "usage": {
-      "goal": "Use the vocabulary from L5 Hospital to understand and communicate in a realistic A2-appropriate context.",
-      "canDoStatement": "I can use key l5 hospital vocabulary in connected everyday context.",
-      "textType": "personal message",
+      "goal": "Learn to use l5 hospital 7 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
+      "textType": "workplace-email",
       "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["prescription", "surgery", "X-ray"],
-          "scenario": "During the visit, the patient and medical team deal with prescription, surgery, and x-ray. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews prescription, surgery, X-ray. The next step focuses on prescription.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["prescription", "surgery", "X-ray"],
             "expectedAnswer": "prescription"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with prescription, surgery, and x-ray. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews prescription, surgery, X-ray. The next step focuses on prescription. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including prescription, surgery, X-ray in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["blood test", "injection", "vaccination"],
-          "scenario": "During the visit, the patient and medical team deal with blood test, injection, and vaccination. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews blood test, injection, vaccination. The next step focuses on blood test.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["blood test", "injection", "vaccination"],
             "expectedAnswer": "blood test"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with blood test, injection, and vaccination. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews blood test, injection, vaccination. The next step focuses on blood test. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including blood test, injection, vaccination in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["ultrasound", "MRI scan", "stitches"],
-          "scenario": "During the visit, the patient and medical team deal with ultrasound, mri scan, and stitches. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews ultrasound, MRI scan, stitches. The next step focuses on ultrasound.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["ultrasound", "MRI scan", "stitches"],
             "expectedAnswer": "ultrasound"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with ultrasound, mri scan, and stitches. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews ultrasound, MRI scan, stitches. The next step focuses on ultrasound. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including ultrasound, MRI scan, stitches in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["physical therapy", "biopsy", "dialysis"],
-          "scenario": "During the visit, the patient and medical team deal with physical therapy, biopsy, and dialysis. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews physical therapy, biopsy, dialysis. The next step focuses on physical therapy.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["physical therapy", "biopsy", "dialysis"],
             "expectedAnswer": "physical therapy"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with physical therapy, biopsy, and dialysis. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews physical therapy, biopsy, dialysis. The next step focuses on physical therapy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including physical therapy, biopsy, dialysis in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["transfusion", "chemotherapy", "endoscopy"],
-          "scenario": "During the visit, the patient and medical team deal with transfusion, chemotherapy, and endoscopy. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews transfusion, chemotherapy, endoscopy. The next step focuses on transfusion.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["transfusion", "chemotherapy", "endoscopy"],
             "expectedAnswer": "transfusion"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with transfusion, chemotherapy, and endoscopy. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews transfusion, chemotherapy, endoscopy. The next step focuses on transfusion. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including transfusion, chemotherapy, endoscopy in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "L5 Hospital: Personal Message",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with prescription, surgery, and x-ray. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with blood test, injection, and vaccination. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with ultrasound, mri scan, and stitches. Each term belongs to a different part of the care process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with prescription, surgery, and x-ray. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with blood test, injection, and vaccination. Each term belongs to a different part of the care process.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -1154,88 +1189,93 @@
       "ambulance"
     ],
     "targetWordsArabic": [
-      "مصطلح طبي أو تشريحي يُسمّى «كت سكان»",
-      "مصطلح طبي أو تشريحي يُسمّى «كولونوسكوبي»",
-      "نبات يُسمّى «ترانسبلانت»",
-      "مصطلح طبي أو تشريحي يُسمّى «هوسبيتال بيد»",
-      "مصطلح طبي أو تشريحي يُسمّى «بيللوو»",
-      "مصطلح طبي أو تشريحي يُسمّى «بلانكيت»",
+      "أشعة مقطعية",
+      "تنظير القولون",
+      "زراعة عضو",
+      "سرير مستشفى",
+      "وسادة",
+      "بطانية",
       "ثوب طويل",
       "خريطة ملاحية",
       "لوح كتابة",
-      "فعل أو عملية يُسمّى «ميديكيني»",
-      "شكل يُسمّى «بيللس»",
+      "دواء",
+      "أقراص دواء",
       "مرهم",
       "عكازات",
-      "شخص يُسمّى «والكير»",
-      "مركبة يُسمّى «امبولانكي»"
+      "مشاية",
+      "سيارة إسعاف"
     ],
     "usage": {
-      "goal": "Use the vocabulary from L5 Hospital to understand and communicate in a realistic A2-appropriate context.",
-      "canDoStatement": "I can use key l5 hospital vocabulary in connected everyday context.",
-      "textType": "short dialogue",
+      "goal": "Learn to use l5 hospital 8 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
+      "textType": "dialogue",
       "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["CT scan", "colonoscopy", "transplant"],
-          "scenario": "During the visit, the patient and medical team deal with ct scan, colonoscopy, and transplant. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews CT scan, colonoscopy, transplant. The next step focuses on CT scan.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["CT scan", "colonoscopy", "transplant"],
             "expectedAnswer": "CT scan"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with ct scan, colonoscopy, and transplant. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews CT scan, colonoscopy, transplant. The next step focuses on CT scan. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including CT scan, colonoscopy, transplant in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["hospital bed", "pillow", "blanket"],
-          "scenario": "During the visit, the patient and medical team deal with hospital bed, pillow, and blanket. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews hospital bed, pillow, blanket. The next step focuses on hospital bed.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["hospital bed", "pillow", "blanket"],
             "expectedAnswer": "hospital bed"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with hospital bed, pillow, and blanket. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews hospital bed, pillow, blanket. The next step focuses on hospital bed. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including hospital bed, pillow, blanket in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["gown", "chart", "clipboard"],
-          "scenario": "During the visit, the patient and medical team deal with gown, chart, and clipboard. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews gown, chart, clipboard. The next step focuses on gown.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["gown", "chart", "clipboard"],
             "expectedAnswer": "gown"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with gown, chart, and clipboard. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews gown, chart, clipboard. The next step focuses on gown. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including gown, chart, clipboard in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["medicine", "pills", "ointment"],
-          "scenario": "During the visit, the patient and medical team deal with medicine, pills, and ointment. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews medicine, pills, ointment. The next step focuses on medicine.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["medicine", "pills", "ointment"],
             "expectedAnswer": "medicine"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with medicine, pills, and ointment. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews medicine, pills, ointment. The next step focuses on medicine. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including medicine, pills, ointment in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["crutches", "walker", "ambulance"],
-          "scenario": "During the visit, the patient and medical team deal with crutches, walker, and ambulance. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews crutches, walker, ambulance. The next step focuses on crutches.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["crutches", "walker", "ambulance"],
             "expectedAnswer": "crutches"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with crutches, walker, and ambulance. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews crutches, walker, ambulance. The next step focuses on crutches. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including crutches, walker, ambulance in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "L5 Hospital: Short Dialogue",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with ct scan, colonoscopy, and transplant. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with hospital bed, pillow, and blanket. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with gown, chart, and clipboard. Each term belongs to a different part of the care process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with ct scan, colonoscopy, and transplant. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with hospital bed, pillow, and blanket. Each term belongs to a different part of the care process.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -1309,58 +1349,61 @@
     ],
     "targetWordsArabic": [
       "واقي وجه",
-      "مصطلح طبي أو تشريحي يُسمّى «هاند سانيتيزير»",
+      "معقم اليدين (مطهر اليدين)",
       "حاوية الأدوات الحادة",
-      "مصطلح طبي أو تشريحي يُسمّى «بيدبان»",
+      "وعاء سريري",
       "سوار تعريف المريض",
       "زر استدعاء",
       "حامل المحاليل الوريدية",
       "أسطوانة أكسجين طبي"
     ],
     "usage": {
-      "goal": "Use the vocabulary from L5 Hospital to understand and communicate in a realistic A2-appropriate context.",
-      "canDoStatement": "I can use key l5 hospital vocabulary in connected everyday context.",
-      "textType": "tips/notice",
+      "goal": "Learn to use l5 hospital 9 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
+      "textType": "service-notice",
       "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["face shield", "hand sanitizer", "sharps container"],
-          "scenario": "During the visit, the patient and medical team deal with face shield, hand sanitizer, and sharps container. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews face shield, hand sanitizer, sharps container. The next step focuses on face shield.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["face shield", "hand sanitizer", "sharps container"],
             "expectedAnswer": "face shield"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with face shield, hand sanitizer, and sharps container. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews face shield, hand sanitizer, sharps container. The next step focuses on face shield. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including face shield, hand sanitizer, sharps container in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["bedpan", "patient wristband", "call button"],
-          "scenario": "During the visit, the patient and medical team deal with bedpan, patient wristband, and call button. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews bedpan, patient wristband, call button. The next step focuses on bedpan.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option is the focus of the next step?",
             "options": ["bedpan", "patient wristband", "call button"],
             "expectedAnswer": "bedpan"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with bedpan, patient wristband, and call button. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews bedpan, patient wristband, call button. The next step focuses on bedpan. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including bedpan, patient wristband, call button in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["IV pole", "oxygen tank"],
-          "scenario": "During the visit, the patient and medical team deal with iv pole and oxygen tank. Each term belongs to a different part of the care process.",
+          "scenario": "During a routine care or examination situation, an adult reviews IV pole, oxygen tank, face shield. The next step focuses on IV pole.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
-            "options": ["IV pole", "oxygen tank"],
+            "question": "Which option is the focus of the next step?",
+            "options": ["IV pole", "oxygen tank", "face shield"],
             "expectedAnswer": "IV pole"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During the visit, the patient and medical team deal with iv pole and oxygen tank. Each term belongs to a different part of the care process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews IV pole, oxygen tank, face shield. The next step focuses on IV pole. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including IV pole, oxygen tank in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "L5 Hospital: Tips/Notice",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with face shield, hand sanitizer, and sharps container. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with bedpan, patient wristband, and call button. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with iv pole and oxygen tank. Each term belongs to a different part of the care process. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
+      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. During the visit, the patient and medical team deal with face shield, hand sanitizer, and sharps container. Each term belongs to a different part of the care process. During the visit, the patient and medical team deal with bedpan, patient wristband, and call button. Each term belongs to a different part of the care process.",
       "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [

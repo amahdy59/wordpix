@@ -1,0 +1,494 @@
+[
+  {
+    "id": "science-lab-1-core-1",
+    "lessonId": "science-lab-1",
+    "slot": "core-1",
+    "unitId": "science-lab",
+    "phrase": "review the data",
+    "kind": "collocation",
+    "meaning": "examine collected information carefully",
+    "arabicMeaning": "يراجع البيانات",
+    "example": "The team reviewed the data before discussing the result.",
+    "learnerPurpose": "Use “review the data” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "B1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/review",
+    "check": {
+      "question": "Which phrase matches this meaning: examine collected information carefully",
+      "expectedAnswer": "review the data",
+      "explanation": "examine collected information carefully"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “review the data”.",
+      "personalUse": "Write one realistic adult-life sentence using “review the data”.",
+      "laterReview": "Reuse “review the data” in a later review or conversation."
+    },
+    "sceneId": "science-lab-1-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/review",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/review-the-data",
+      "finding": "Workbook evidence supports the taught sense and pattern for review the data; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "science-lab-1-core-2",
+    "lessonId": "science-lab-1",
+    "slot": "core-2",
+    "unitId": "science-lab",
+    "phrase": "Has this been checked?",
+    "kind": "everyday-expression",
+    "meaning": "ask whether information or equipment has been verified",
+    "arabicMeaning": "هل تم التحقق من هذا؟",
+    "example": "Has this been checked before the report is released?",
+    "learnerPurpose": "Use “Has this been checked?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "B1",
+    "register": "workplace professional",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/check",
+    "check": {
+      "question": "Which phrase matches this meaning: ask whether information or equipment has been verified",
+      "expectedAnswer": "Has this been checked?",
+      "explanation": "ask whether information or equipment has been verified"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Has this been checked?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Has this been checked?”.",
+      "laterReview": "Reuse “Has this been checked?” in a later review or conversation."
+    },
+    "sceneId": "science-lab-1-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/check",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/has-this-been-checked",
+      "finding": "Workbook evidence supports the taught sense and pattern for Has this been checked?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "science-lab-1-optional-1",
+    "lessonId": "science-lab-1",
+    "slot": "optional-1",
+    "unitId": "science-lab",
+    "phrase": "carry out",
+    "kind": "phrasal-verb",
+    "meaning": "perform or complete a planned task, study, or procedure",
+    "arabicMeaning": "يجري",
+    "example": "The team carried out the approved observation plan.",
+    "learnerPurpose": "Use “carry out” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "B2",
+    "register": "formal written",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/carry-out",
+    "check": {
+      "question": "Which phrase matches this meaning: perform or complete a planned task, study, or procedure",
+      "expectedAnswer": "carry out",
+      "explanation": "perform or complete a planned task, study, or procedure"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “carry out”.",
+      "personalUse": "Write one realistic adult-life sentence using “carry out”.",
+      "laterReview": "Reuse “carry out” in a later review or conversation."
+    },
+    "sceneId": "science-lab-1-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/carry-out",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/carry-out",
+      "finding": "Workbook evidence supports the taught sense and pattern for carry out; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "science-lab-2-core-1",
+    "lessonId": "science-lab-2",
+    "slot": "core-1",
+    "unitId": "science-lab",
+    "phrase": "follow safety guidance",
+    "kind": "collocation",
+    "meaning": "act according to established safety information",
+    "arabicMeaning": "يتبع إرشادات السلامة",
+    "example": "Visitors followed safety guidance during the demonstration.",
+    "learnerPurpose": "Use “follow safety guidance” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "B1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/follow",
+    "check": {
+      "question": "Which phrase matches this meaning: act according to established safety information",
+      "expectedAnswer": "follow safety guidance",
+      "explanation": "act according to established safety information"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “follow safety guidance”.",
+      "personalUse": "Write one realistic adult-life sentence using “follow safety guidance”.",
+      "laterReview": "Reuse “follow safety guidance” in a later review or conversation."
+    },
+    "sceneId": "science-lab-2-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/follow",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/follow-safety-guidance",
+      "finding": "Workbook evidence supports the taught sense and pattern for follow safety guidance; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "science-lab-2-core-2",
+    "lessonId": "science-lab-2",
+    "slot": "core-2",
+    "unitId": "science-lab",
+    "phrase": "What does the data show?",
+    "kind": "everyday-expression",
+    "meaning": "ask what information or pattern can be seen in data",
+    "arabicMeaning": "ماذا تظهر البيانات؟",
+    "example": "What does the data show about the latest observation?",
+    "learnerPurpose": "Use “What does the data show?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "B1",
+    "register": "everyday spoken",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/data",
+    "check": {
+      "question": "Which phrase matches this meaning: ask what information or pattern can be seen in data",
+      "expectedAnswer": "What does the data show?",
+      "explanation": "ask what information or pattern can be seen in data"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “What does the data show?”.",
+      "personalUse": "Write one realistic adult-life sentence using “What does the data show?”.",
+      "laterReview": "Reuse “What does the data show?” in a later review or conversation."
+    },
+    "sceneId": "science-lab-2-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/data",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/what-does-the-data-show",
+      "finding": "Workbook evidence supports the taught sense and pattern for What does the data show?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "science-lab-2-optional-1",
+    "lessonId": "science-lab-2",
+    "slot": "optional-1",
+    "unitId": "science-lab",
+    "phrase": "set up",
+    "kind": "phrasal-verb",
+    "meaning": "prepare equipment or a system for use",
+    "arabicMeaning": "يجهز",
+    "example": "The technician set up the display for the public demonstration.",
+    "learnerPurpose": "Use “set up” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "B2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/set-up",
+    "check": {
+      "question": "Which phrase matches this meaning: prepare equipment or a system for use",
+      "expectedAnswer": "set up",
+      "explanation": "prepare equipment or a system for use"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “set up”.",
+      "personalUse": "Write one realistic adult-life sentence using “set up”.",
+      "laterReview": "Reuse “set up” in a later review or conversation."
+    },
+    "sceneId": "science-lab-2-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/set-up",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/set-up",
+      "finding": "Workbook evidence supports the taught sense and pattern for set up; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "science-lab-3-core-1",
+    "lessonId": "science-lab-3",
+    "slot": "core-1",
+    "unitId": "science-lab",
+    "phrase": "record an observation",
+    "kind": "collocation",
+    "meaning": "write down something noticed during a scientific activity",
+    "arabicMeaning": "يسجل ملاحظة",
+    "example": "The researcher recorded an observation in the lab notebook.",
+    "learnerPurpose": "Use “record an observation” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "B1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/record",
+    "check": {
+      "question": "Which phrase matches this meaning: write down something noticed during a scientific activity",
+      "expectedAnswer": "record an observation",
+      "explanation": "write down something noticed during a scientific activity"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “record an observation”.",
+      "personalUse": "Write one realistic adult-life sentence using “record an observation”.",
+      "laterReview": "Reuse “record an observation” in a later review or conversation."
+    },
+    "sceneId": "science-lab-3-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/record",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/record-an-observation",
+      "finding": "Workbook evidence supports the taught sense and pattern for record an observation; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "science-lab-3-core-2",
+    "lessonId": "science-lab-3",
+    "slot": "core-2",
+    "unitId": "science-lab",
+    "phrase": "Could you explain the result?",
+    "kind": "everyday-expression",
+    "meaning": "ask for clarification of a result",
+    "arabicMeaning": "هل يمكنك شرح النتيجة؟",
+    "example": "Could you explain the result in non-technical language?",
+    "learnerPurpose": "Use “Could you explain the result?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "B1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/result",
+    "check": {
+      "question": "Which phrase matches this meaning: ask for clarification of a result",
+      "expectedAnswer": "Could you explain the result?",
+      "explanation": "ask for clarification of a result"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Could you explain the result?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Could you explain the result?”.",
+      "laterReview": "Reuse “Could you explain the result?” in a later review or conversation."
+    },
+    "sceneId": "science-lab-3-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/result",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/could-you-explain-the-result",
+      "finding": "Workbook evidence supports the taught sense and pattern for Could you explain the result?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "science-lab-3-optional-1",
+    "lessonId": "science-lab-3",
+    "slot": "optional-1",
+    "unitId": "science-lab",
+    "phrase": "shut down",
+    "kind": "phrasal-verb",
+    "meaning": "stop a system or operation in a controlled way",
+    "arabicMeaning": "يوقف التشغيل",
+    "example": "The operator shut down the system after the scheduled session.",
+    "learnerPurpose": "Use “shut down” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "B2",
+    "register": "workplace professional",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/shut-down",
+    "check": {
+      "question": "Which phrase matches this meaning: stop a system or operation in a controlled way",
+      "expectedAnswer": "shut down",
+      "explanation": "stop a system or operation in a controlled way"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “shut down”.",
+      "personalUse": "Write one realistic adult-life sentence using “shut down”.",
+      "laterReview": "Reuse “shut down” in a later review or conversation."
+    },
+    "sceneId": "science-lab-3-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/shut-down",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/shut-down",
+      "finding": "Workbook evidence supports the taught sense and pattern for shut down; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "science-lab-4-core-1",
+    "lessonId": "science-lab-4",
+    "slot": "core-1",
+    "unitId": "science-lab",
+    "phrase": "review the data",
+    "kind": "collocation",
+    "meaning": "examine collected information carefully",
+    "arabicMeaning": "يراجع البيانات",
+    "example": "The team reviewed the data before discussing the result.",
+    "learnerPurpose": "Use “review the data” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "B1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/review",
+    "check": {
+      "question": "Which phrase matches this meaning: examine collected information carefully",
+      "expectedAnswer": "review the data",
+      "explanation": "examine collected information carefully"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “review the data”.",
+      "personalUse": "Write one realistic adult-life sentence using “review the data”.",
+      "laterReview": "Reuse “review the data” in a later review or conversation."
+    },
+    "sceneId": "science-lab-4-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/review",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/review-the-data",
+      "finding": "Workbook evidence supports the taught sense and pattern for review the data; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "science-lab-4-core-2",
+    "lessonId": "science-lab-4",
+    "slot": "core-2",
+    "unitId": "science-lab",
+    "phrase": "Has this been checked?",
+    "kind": "everyday-expression",
+    "meaning": "ask whether information or equipment has been verified",
+    "arabicMeaning": "هل تم التحقق من هذا؟",
+    "example": "Has this been checked before the report is released?",
+    "learnerPurpose": "Use “Has this been checked?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "B1",
+    "register": "workplace professional",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/check",
+    "check": {
+      "question": "Which phrase matches this meaning: ask whether information or equipment has been verified",
+      "expectedAnswer": "Has this been checked?",
+      "explanation": "ask whether information or equipment has been verified"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Has this been checked?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Has this been checked?”.",
+      "laterReview": "Reuse “Has this been checked?” in a later review or conversation."
+    },
+    "sceneId": "science-lab-4-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/check",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/has-this-been-checked",
+      "finding": "Workbook evidence supports the taught sense and pattern for Has this been checked?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "science-lab-4-optional-1",
+    "lessonId": "science-lab-4",
+    "slot": "optional-1",
+    "unitId": "science-lab",
+    "phrase": "carry out",
+    "kind": "phrasal-verb",
+    "meaning": "perform or complete a planned task, study, or procedure",
+    "arabicMeaning": "يجري",
+    "example": "The team carried out the approved observation plan.",
+    "learnerPurpose": "Use “carry out” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "B2",
+    "register": "formal written",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/carry-out",
+    "check": {
+      "question": "Which phrase matches this meaning: perform or complete a planned task, study, or procedure",
+      "expectedAnswer": "carry out",
+      "explanation": "perform or complete a planned task, study, or procedure"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “carry out”.",
+      "personalUse": "Write one realistic adult-life sentence using “carry out”.",
+      "laterReview": "Reuse “carry out” in a later review or conversation."
+    },
+    "sceneId": "science-lab-4-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/carry-out",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/carry-out",
+      "finding": "Workbook evidence supports the taught sense and pattern for carry out; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  }
+]

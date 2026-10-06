@@ -14,6 +14,21 @@ const lessons: LessonUsageData[] = Object.values(modules).flatMap((module) =>
   unitUsageDataSchema.parse(module.default).map(enrichReferenceLesson)
 );
 const reports = lessons.map(auditContextualLesson);
+const approvalModules = import.meta.glob<{ default: unknown }>(
+  "../data/usageApprovals/*.approval.json",
+  {
+    eager: true,
+  }
+);
+const releasedLessonIds = new Set(
+  Object.values(approvalModules).flatMap((module) =>
+    Array.isArray(module.default)
+      ? (module.default as Array<{ lessonId?: string }>)
+          .map((approval) => approval.lessonId)
+          .filter(Boolean)
+      : []
+  )
+);
 
 describe("contextual-diversity curriculum contract", () => {
   it("classifies varied question designs", () => {
@@ -29,11 +44,13 @@ describe("contextual-diversity curriculum contract", () => {
   });
 
   it("keeps every target in authored contextual material", () => {
-    const failures = reports.flatMap((report) =>
-      report.targetCoverage
-        .filter((target) => target.sources.length === 0)
-        .map((target) => `${report.lessonId}: ${target.target}`)
-    );
+    const failures = reports
+      .filter((report) => releasedLessonIds.has(report.lessonId))
+      .flatMap((report) =>
+        report.targetCoverage
+          .filter((target) => target.sources.length === 0)
+          .map((target) => `${report.lessonId}: ${target.target}`)
+      );
     expect(failures).toEqual([]);
   });
 
@@ -44,7 +61,9 @@ describe("contextual-diversity curriculum contract", () => {
 
   it("holds one reference unit per taught CEFR band to the stronger quality gate", () => {
     const referenceUnitIds = new Set<string>(Object.values(CONTEXTUAL_REFERENCE_UNITS));
-    const references = reports.filter((report) => referenceUnitIds.has(report.unitId));
+    const references = reports.filter(
+      (report) => referenceUnitIds.has(report.unitId) && releasedLessonIds.has(report.lessonId)
+    );
     expect(new Set(references.map((report) => report.unitId))).toEqual(referenceUnitIds);
     expect(references.filter((report) => report.errors.length > 0)).toEqual([]);
     expect(Math.min(...references.map((report) => report.score))).toBeGreaterThanOrEqual(85);

@@ -22,21 +22,21 @@
       "Tiles"
     ],
     "targetWordsArabic": [
-      "حَوْضُ الاسْتِحْمَام (بَانْيُو)",
-      "دُشّ (مِرَشَّةُ الاسْتِحْمَام)",
-      "مِرْحَاض",
-      "حَوْضُ الغَسِيل",
+      "حوض الاستحمام (بانيو)",
+      "دش (مرشة الاستحمام)",
+      "مرحاض",
+      "حوض الغسيل",
       "صنبور",
       "بالوعة",
-      "مِرْآة",
-      "حَامِلُ المَنَاشِف (عَلَّاقَةُ الفُوَط)",
-      "دُولابٌ صَغِير (خِزَانَة)",
-      "بَلَاط (سِيرَامِيك الحَمَّام)"
+      "مرآة",
+      "حامل المناشف (علاقة الفوط)",
+      "دولاب صغير (خزانة)",
+      "بلاط (سيراميك الحمام)"
     ],
     "usage": {
-      "goal": "Recognize and use common the bathroom vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the bathroom words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key fixtures & fittings vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the bathroom in very simple everyday situations.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -44,50 +44,54 @@
           "targetWords": ["Bathtub", "Shower", "Toilet"],
           "scenario": "The shower is above the bathtub, and the toilet is beside it.",
           "check": {
-            "question": "What is above the bathtub?",
-            "options": ["Bathtub", "Shower", "Toilet"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Toilet", "Shower", "Bathtub"],
             "expectedAnswer": "Shower"
           },
-          "imageBrief": "A clean bathroom showing a shower above a bathtub and a toilet beside the bathtub."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: The shower is above the bathtub, and the toilet is beside it. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Bathtub, Shower, Toilet in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sink", "Faucet", "Drain"],
-          "scenario": "Water runs from the faucet into the sink and goes down the drain.",
+          "scenario": "During a cleaning check, an adult checks or uses sink, faucet, and drain. The highlighted item is the drain.",
           "check": {
-            "question": "Where does the water go after it enters the sink?",
-            "options": ["Sink", "Faucet", "Drain"],
+            "question": "Where does the water leave the sink?",
+            "options": ["Drain", "Sink", "Faucet"],
             "expectedAnswer": "Drain"
           },
-          "imageBrief": "A close view of water running from a faucet into a sink and flowing toward the visible drain."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: During a cleaning check, an adult checks or uses sink, faucet, and drain. The highlighted item is the drain. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Sink, Faucet, Drain in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Mirror", "Towel Rack", "Cabinet"],
-          "scenario": "Rami looks in the mirror while a clean towel hangs on the towel rack beside the cabinet.",
+          "scenario": "In a home bathroom, an adult checks or uses mirror, towel rack, and cabinet. The highlighted item is the mirror.",
           "check": {
-            "question": "What does Rami look in?",
-            "options": ["Mirror", "Towel Rack", "Cabinet"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Towel Rack", "Cabinet", "Mirror"],
             "expectedAnswer": "Mirror"
           },
-          "imageBrief": "An adult facing a mirror, with a towel on a rack and a bathroom cabinet nearby."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: In a home bathroom, an adult checks or uses mirror, towel rack, and cabinet. The highlighted item is the mirror. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Mirror, Towel Rack, Cabinet in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Tiles"],
           "scenario": "The blue tiles make the bathroom wall easy to clean.",
           "check": {
-            "question": "What covers the bathroom wall?",
-            "options": ["Tiles"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Shower", "Tiles", "Bathtub"],
             "expectedAnswer": "Tiles"
           },
-          "imageBrief": "A clean bathroom wall clearly covered with blue ceramic tiles."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: The blue tiles make the bathroom wall easy to clean. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Tiles in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "A Quick Bathroom Check",
-      "text": "Rami checks the bathroom before a guest arrives. The shower and bathtub are clean. Water runs from the faucet into the sink and down the drain. A towel hangs on the towel rack, and supplies are inside the cabinet. He wipes the mirror and checks the tiles.",
+      "title": "Fixtures & Fittings: Home Bathroom Check",
+      "text": "Before guests arrive, an adult checks the bathroom. The first check covers bathtub, shower, toilet, sink, and faucet. The next shelf contains drain, mirror, towel rack, cabinet, and tiles. Empty items are replaced and wet surfaces are left clean and safe. The vocabulary is used in a realistic the bathroom context that an adult could meet at home, at work, or in the community.",
       "imageBrief": "Show the main adult everyday situation from “A Quick Bathroom Check” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -169,16 +173,16 @@
       "بلسم الشعر",
       "فرشاة أسنان",
       "معجون أسنان",
-      "مَنْشَفَة (فُوطَة)",
+      "منشفة (فوطة)",
       "مشط",
       "فرشاة شعر",
       "لوشن",
       "مزيل عرق"
     ],
     "usage": {
-      "goal": "Recognize and use common the bathroom vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the bathroom words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key toiletries vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the bathroom in very simple everyday situations.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -186,11 +190,12 @@
           "targetWords": ["Soap", "Shampoo", "Conditioner"],
           "scenario": "Nour washes her hair with shampoo, then uses conditioner; the soap stays by the sink.",
           "check": {
-            "question": "What does Nour use after shampoo?",
-            "options": ["Soap", "Shampoo", "Conditioner"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Conditioner", "Soap", "Shampoo"],
             "expectedAnswer": "Conditioner"
           },
-          "imageBrief": "An adult shower routine with shampoo and conditioner bottles in use and a bar of soap by the sink."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: Nour washes her hair with shampoo, then uses conditioner; the soap stays by the sink. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Soap, Shampoo, Conditioner in a natural setting."
         },
         {
           "chunkNumber": 2,
@@ -201,35 +206,38 @@
             "options": ["Toothbrush", "Toothpaste", "Towel"],
             "expectedAnswer": "Towel"
           },
-          "imageBrief": "An adult holding a towel near a sink, with a toothbrush and toothpaste together on the counter."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: After brushing, Sami puts the toothbrush beside the toothpaste and dries his face with a towel. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Toothbrush, Toothpaste, Towel in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Comb", "Hairbrush", "Lotion"],
           "scenario": "Leila uses a comb for the ends of her hair, a hairbrush for the rest, and lotion for her hands.",
           "check": {
-            "question": "What does Leila put on her hands?",
-            "options": ["Comb", "Hairbrush", "Lotion"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Hairbrush", "Lotion", "Comb"],
             "expectedAnswer": "Lotion"
           },
-          "imageBrief": "An adult applying lotion to one hand; a comb and hairbrush are clearly visible on the counter."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: Leila uses a comb for the ends of her hair, a hairbrush for the rest, and lotion for her hands. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Comb, Hairbrush, Lotion in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Deodorant"],
           "scenario": "Before work, Kareem uses deodorant after his shower.",
           "check": {
-            "question": "What does Kareem use after his shower?",
-            "options": ["Deodorant"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Deodorant", "Soap", "Shampoo"],
             "expectedAnswer": "Deodorant"
           },
-          "imageBrief": "An adult completing a morning routine and holding an unbranded deodorant container."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: Before work, Kareem uses deodorant after his shower. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Deodorant in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Nour's Morning Routine",
-      "text": "Nour washes her hair with shampoo and conditioner. She brushes her teeth with a toothbrush and toothpaste, then dries her face with a towel. She uses a comb and hairbrush before applying lotion. Her deodorant is the last item she uses before leaving for work.",
+      "title": "Packing Toiletries for a Trip",
+      "text": "Before a short trip, Kareem packs the bathroom items he uses every day. He puts soap, shampoo, and conditioner into a small bag. Then he adds a toothbrush and toothpaste. A clean towel goes into the suitcase with a comb and hairbrush. He packs a small bottle of lotion and checks that his deodorant is closed tightly before he leaves.",
       "imageBrief": "Show the main adult everyday situation from “Nour's Morning Routine” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -307,71 +315,75 @@
     ],
     "targetWordsArabic": [
       "ورق تواليت",
-      "كُرَاتُ القُطْن",
+      "كرات القطن",
       "عود قطن",
       "شفرة حلاقة",
-      "قَصَّاصَةُ الأَظَافِر (مَقَصُّ الأَظَافِر)",
-      "مُجَفِّفُ الشَّعْر (سِشْوَار)",
+      "قصاصة الأظافر (مقص الأظافر)",
+      "مجفف الشعر (سشوار)",
       "ميزان",
       "سلة غسيل",
-      "حَقِيبَةُ الإِسْعَافَاتِ الأَوَّلِيَّة (صُنْدُوقُ الإِسْعَاف)",
-      "مِقْيَاسُ الحَرَارَة (تِرْمُومِتْر)"
+      "حقيبة الإسعافات الأولية (صندوق الإسعاف)",
+      "مقياس الحرارة (ترمومتر)"
     ],
     "usage": {
-      "goal": "Recognize and use common the bathroom vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the bathroom words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key bathroom supplies vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the bathroom in very simple everyday situations.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Toilet Paper", "Cotton Balls", "Cotton Swab"],
-          "scenario": "A roll of toilet paper is beside a jar of cotton balls and a small pack of cotton swabs.",
+          "scenario": "In a home bathroom, an adult checks or uses toilet paper, cotton balls, and cotton swab. The highlighted item is the toilet paper.",
           "check": {
-            "question": "Which item is on a roll?",
-            "options": ["Toilet Paper", "Cotton Balls", "Cotton Swab"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Cotton Balls", "Cotton Swab", "Toilet Paper"],
             "expectedAnswer": "Toilet Paper"
           },
-          "imageBrief": "A bathroom shelf with one toilet-paper roll, a clear jar of cotton balls, and a small pack of cotton swabs."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: In a home bathroom, an adult checks or uses toilet paper, cotton balls, and cotton swab. The highlighted item is the toilet paper. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Toilet Paper, Cotton Balls, Cotton Swab in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Razor", "Nail Clipper", "Hair Dryer"],
-          "scenario": "After shaving with a razor, Amir uses the nail clipper; the hair dryer stays unplugged.",
+          "scenario": "In a hotel room, an adult checks or uses razor, nail clipper, and hair dryer. The highlighted item is the razor.",
           "check": {
-            "question": "What does Amir use for shaving?",
-            "options": ["Razor", "Nail Clipper", "Hair Dryer"],
+            "question": "What does the guest use to shave?",
+            "options": ["Hair Dryer", "Razor", "Nail Clipper"],
             "expectedAnswer": "Razor"
           },
-          "imageBrief": "A safe grooming scene with an adult using a razor, a nail clipper nearby, and an unplugged hair dryer."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: In a hotel room, an adult checks or uses razor, nail clipper, and hair dryer. The highlighted item is the razor. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Razor, Nail Clipper, Hair Dryer in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Scale", "Laundry Basket", "First Aid Kit"],
-          "scenario": "The scale is on the floor, the laundry basket holds clothes, and the first aid kit is in the cabinet.",
+          "scenario": "In a guest bathroom, an adult checks or uses scale, laundry basket, and first aid kit. The highlighted item is the laundry basket.",
           "check": {
-            "question": "What holds the clothes?",
-            "options": ["Scale", "Laundry Basket", "First Aid Kit"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Laundry Basket", "Scale", "First Aid Kit"],
             "expectedAnswer": "Laundry Basket"
           },
-          "imageBrief": "A bathroom with a floor scale, a laundry basket containing clothes, and an open cabinet with a first aid kit."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: In a guest bathroom, an adult checks or uses scale, laundry basket, and first aid kit. The highlighted item is the laundry basket. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Scale, Laundry Basket, First Aid Kit in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Thermometer"],
           "scenario": "Mona checks her temperature with a thermometer because she feels unwell.",
           "check": {
-            "question": "What does Mona use to check her temperature?",
-            "options": ["Thermometer"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Toilet Paper", "Cotton Balls", "Thermometer"],
             "expectedAnswer": "Thermometer"
           },
-          "imageBrief": "An adult safely using a digital thermometer in a home bathroom."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: Mona checks her temperature with a thermometer because she feels unwell. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Thermometer in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Getting Ready Safely",
-      "text": "Amir keeps bathroom supplies in clear places. Toilet paper, cotton balls, and a cotton swab are on a shelf. His razor, nail clipper, and hair dryer are in a drawer. The scale is on the floor, clean clothes are in the laundry basket, and the first aid kit is in the cabinet.",
+      "title": "Bathroom Supplies: Home Bathroom Check",
+      "text": "Before guests arrive, an adult checks the bathroom. The first check covers toilet paper, cotton balls, cotton swab, razor, and nail clipper. The next shelf contains hair dryer, scale, laundry basket, first aid kit, and thermometer. Empty items are replaced and wet surfaces are left clean and safe. The vocabulary is used in a realistic the bathroom context that an adult could meet at home, at work, or in the community.",
       "imageBrief": "Show the main adult everyday situation from “Getting Ready Safely” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -450,70 +462,74 @@
     "targetWordsArabic": [
       "سجادة حمام",
       "ستارة الدش",
-      "رَأْسُ الدُّش (مِرَشَّةُ الاسْتِحْمَام)",
+      "رأس الدش (مرشة الاستحمام)",
       "منشفة استحمام",
       "منشفة يد",
       "منشفة وجه",
-      "صَحْنُ الصَّابُون (صَبَّانَة)",
-      "قَارُورَةُ الشَّامْبُو (عُلْبَةُ الشَّامْبُو)",
-      "بَطَّةُ اسْتِحْمَامٍ مَطَّاطِيَّة",
-      "سَائِلُ الاسْتِحْمَام (جِل الاسْتِحْمَام)"
+      "صحن الصابون (صبانة)",
+      "قارورة الشامبو (علبة الشامبو)",
+      "بطة استحمام مطاطية",
+      "سائل الاستحمام (جل الاستحمام)"
     ],
     "usage": {
-      "goal": "Recognize and use common the bathroom vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the bathroom words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key bath & shower vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the bathroom in very simple everyday situations.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bath Mat", "Shower Curtain", "Shower Head"],
-          "scenario": "The bath mat is outside the shower curtain, directly below the shower head.",
+          "scenario": "In a hotel room, an adult checks or uses bath mat, shower curtain, and shower head. The highlighted item is the bath mat.",
           "check": {
-            "question": "What is on the floor outside the shower?",
-            "options": ["Bath Mat", "Shower Curtain", "Shower Head"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Shower Head", "Bath Mat", "Shower Curtain"],
             "expectedAnswer": "Bath Mat"
           },
-          "imageBrief": "A shower area with a shower curtain, shower head, and bath mat clearly positioned outside on the floor."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: In a hotel room, an adult checks or uses bath mat, shower curtain, and shower head. The highlighted item is the bath mat. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Bath Mat, Shower Curtain, Shower Head in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bath Towel", "Hand Towel", "Washcloth"],
-          "scenario": "After her shower, Dina uses the bath towel; a hand towel and washcloth remain by the sink.",
+          "scenario": "In a guest bathroom, an adult checks or uses bath towel, hand towel, and washcloth. The highlighted item is the bath towel.",
           "check": {
-            "question": "What does Dina use after her shower?",
+            "question": "Which towel is large enough to use after a bath?",
             "options": ["Bath Towel", "Hand Towel", "Washcloth"],
             "expectedAnswer": "Bath Towel"
           },
-          "imageBrief": "An adult wrapping up in a bath towel, with a smaller hand towel and washcloth beside the sink."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: In a guest bathroom, an adult checks or uses bath towel, hand towel, and washcloth. The highlighted item is the bath towel. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Bath Towel, Hand Towel, Washcloth in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Soap Dish", "Shampoo Bottle", "Rubber Duck"],
-          "scenario": "The soap sits in the soap dish beside the shampoo bottle, while a rubber duck floats in the bath.",
+          "scenario": "During a morning routine, an adult checks or uses soap dish, shampoo bottle, and rubber duck. The highlighted item is the soap dish.",
           "check": {
-            "question": "Where is the soap?",
-            "options": ["Soap Dish", "Shampoo Bottle", "Rubber Duck"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Shampoo Bottle", "Rubber Duck", "Soap Dish"],
             "expectedAnswer": "Soap Dish"
           },
-          "imageBrief": "A soap bar in a soap dish beside a shampoo bottle, with a rubber duck floating in the bathtub."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: During a morning routine, an adult checks or uses soap dish, shampoo bottle, and rubber duck. The highlighted item is the soap dish. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Soap Dish, Shampoo Bottle, Rubber Duck in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Shower Gel"],
-          "scenario": "Yousef squeezes shower gel onto his hand before washing.",
+          "scenario": "During a cleaning check, an adult checks or uses shower gel. The highlighted item is the shower gel.",
           "check": {
-            "question": "What does Yousef put on his hand?",
-            "options": ["Shower Gel"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Shower Curtain", "Shower Gel", "Bath Mat"],
             "expectedAnswer": "Shower Gel"
           },
-          "imageBrief": "An adult squeezing unbranded shower gel onto one hand in a shower area."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: During a cleaning check, an adult checks or uses shower gel. The highlighted item is the shower gel. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Shower Gel in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "After the Shower",
-      "text": "Dina closes the shower curtain and turns on the shower head. The bath mat stays dry outside. After washing, she uses a bath towel. A hand towel and washcloth remain by the sink. Soap rests in its dish, and the shower gel goes back beside the shampoo bottle.",
+      "title": "Bath & Shower: Home Bathroom Check",
+      "text": "Before guests arrive, an adult checks the bathroom. The first check covers bath mat, shower curtain, shower head, bath towel, and hand towel. The next shelf contains washcloth, soap dish, shampoo bottle, rubber duck, and shower gel. Empty items are replaced and wet surfaces are left clean and safe. The vocabulary is used in a realistic the bathroom context that an adult could meet at home, at work, or in the community.",
       "imageBrief": "Show the main adult everyday situation from “After the Shower” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -590,72 +606,76 @@
       "Wet Wipes"
     ],
     "targetWordsArabic": [
-      "كَرِيمُ الوَجْه (مُرَطِّبُ البَشَرَة)",
-      "وَاقِي الشَّمْس",
-      "مُرَطِّبُ الشِّفَاه (زُبْدَةُ الشِّفَاه)",
-      "صَابُونُ اليَدَيْن",
-      "سَائِلُ غَسِيلِ الجِسْم (غَسُولُ الجِسْم)",
+      "كريم الوجه (مرطب البشرة)",
+      "واقي الشمس",
+      "مرطب الشفاه (زبدة الشفاه)",
+      "صابون اليدين",
+      "سائل غسيل الجسم (غسول الجسم)",
       "غسول الفم",
-      "خَيْطُ الأَسْنَان (خَيْطُ التَّنْظِيف)",
-      "غَسُولُ الوَجْه (مُنَظِّفُ الوَجْه)",
-      "مُعَقِّمُ اليَدَيْن (مُطَهِّرُ اليَدَيْن)",
-      "مَنَادِيلُ مُبَلَّلَة (مَنَادِيلُ مَرْطُوبَة)"
+      "خيط الأسنان (خيط التنظيف)",
+      "غسول الوجه (منظف الوجه)",
+      "معقم اليدين (مطهر اليدين)",
+      "مناديل مبللة (مناديل مرطوبة)"
     ],
     "usage": {
-      "goal": "Recognize and use common the bathroom vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the bathroom words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key personal care vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the bathroom in very simple everyday situations.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Face Cream", "Sunscreen", "Lip Balm"],
-          "scenario": "Before going outside, Salma uses face cream, sunscreen, and lip balm.",
+          "scenario": "In a guest bathroom, an adult checks or uses face cream, sunscreen, and lip balm. The highlighted item is the sunscreen.",
           "check": {
-            "question": "What protects Salma's skin from the sun?",
-            "options": ["Face Cream", "Sunscreen", "Lip Balm"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Sunscreen", "Face Cream", "Lip Balm"],
             "expectedAnswer": "Sunscreen"
           },
-          "imageBrief": "An adult preparing to go outdoors, applying sunscreen with face cream and lip balm nearby."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: In a guest bathroom, an adult checks or uses face cream, sunscreen, and lip balm. The highlighted item is the sunscreen. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Face Cream, Sunscreen, Lip Balm in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Hand Soap", "Body Wash", "Mouthwash"],
-          "scenario": "At the sink, Ali uses hand soap; the body wash is in the shower and the mouthwash is by his toothbrush.",
+          "scenario": "During a morning routine, an adult checks or uses hand soap, body wash, and mouthwash. The highlighted item is the hand soap.",
           "check": {
-            "question": "What does Ali use at the sink?",
-            "options": ["Hand Soap", "Body Wash", "Mouthwash"],
+            "question": "What does the person use to wash their hands?",
+            "options": ["Body Wash", "Mouthwash", "Hand Soap"],
             "expectedAnswer": "Hand Soap"
           },
-          "imageBrief": "An adult washing hands at a sink; body wash is in the shower and mouthwash is near a toothbrush."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: During a morning routine, an adult checks or uses hand soap, body wash, and mouthwash. The highlighted item is the hand soap. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Hand Soap, Body Wash, Mouthwash in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Dental Floss", "Face Wash", "Hand Sanitizer"],
-          "scenario": "After washing her face with face wash, Huda uses dental floss; the hand sanitizer stays in her bag.",
+          "scenario": "During a cleaning check, an adult checks or uses dental floss, face wash, and hand sanitizer. The highlighted item is the dental floss.",
           "check": {
-            "question": "What does Huda use between her teeth?",
-            "options": ["Dental Floss", "Face Wash", "Hand Sanitizer"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Hand Sanitizer", "Dental Floss", "Face Wash"],
             "expectedAnswer": "Dental Floss"
           },
-          "imageBrief": "An adult using dental floss safely, with face wash on the counter and hand sanitizer visible in an open bag."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: During a cleaning check, an adult checks or uses dental floss, face wash, and hand sanitizer. The highlighted item is the dental floss. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Dental Floss, Face Wash, Hand Sanitizer in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Wet Wipes"],
-          "scenario": "Tariq keeps wet wipes in his travel bag for quick cleanups.",
+          "scenario": "In a home bathroom, an adult checks or uses wet wipes. The highlighted item is the wet wipes.",
           "check": {
-            "question": "What does Tariq keep in his travel bag?",
-            "options": ["Wet Wipes"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Wet Wipes", "Face Cream", "Sunscreen"],
             "expectedAnswer": "Wet Wipes"
           },
-          "imageBrief": "An adult packing an unbranded packet of wet wipes into a small travel bag."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: In a home bathroom, an adult checks or uses wet wipes. The highlighted item is the wet wipes. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Wet Wipes in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Personal Care for a Day Out",
-      "text": "Before going outside, Salma washes her face and uses face cream, sunscreen, and lip balm. At the sink, she washes her hands with hand soap. She also packs dental floss, hand sanitizer, and wet wipes. The body wash and mouthwash stay in the bathroom.",
+      "title": "Personal Care: Home Bathroom Check",
+      "text": "Before guests arrive, an adult checks the bathroom. The first check covers face cream, sunscreen, lip balm, hand soap, and body wash. The next shelf contains mouthwash, dental floss, face wash, hand sanitizer, and wet wipes. Empty items are replaced and wet surfaces are left clean and safe. The vocabulary is used in a realistic the bathroom context that an adult could meet at home, at work, or in the community.",
       "imageBrief": "Show the main adult everyday situation from “Personal Care for a Day Out” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -740,27 +760,27 @@
     ],
     "targetWordsArabic": [
       "إسفنجة",
-      "فُرْشَاةُ تَنْظِيف (فُرْشَاة)",
-      "دَلْو (جَرْدَل)",
-      "قُفَّازَاتُ تَنْظِيف (قُفَّازَات)",
-      "بَخَّاخ (قَارُورَةُ رَش)",
-      "قِمَاشَةُ تَنْظِيف (فُوطَةُ مَسْح)",
-      "سَلَّاكَةُ المِرْحَاض (مِكْبَس)",
-      "مِمْسَحَةُ زُجَاجٍ مَطَّاطِيَّة (قَشَّاطَة)",
-      "مَنْدِيلٌ وَرَقِيّ (مَحَارِم)",
-      "غَسْلُ اليَدَيْن",
-      "تَنْظِيفُ الأَسْنَان (فَرْكُ الأَسْنَانِ بِالفُرْشَاة)",
-      "الاسْتِحْمَام (أَخْذُ حَمَّامٍ سَرِيع)",
-      "التَّجْفِيف (تَنْشِيفُ الجِسْم)",
-      "شَطْفُ المِرْحَاض (سَحْبُ السَّيْفُون)",
-      "تَمْشِيطُ الشَّعْر",
-      "وَضْعُ المُرَطِّب (دَهْنُ الكَرِيمِ المُرَطِّب)",
-      "الغَرْغَرَة"
+      "فرشاة تنظيف (فرشاة)",
+      "دلو (جردل)",
+      "قفازات تنظيف (قفازات)",
+      "بخاخ (قارورة رش)",
+      "قماشة تنظيف (فوطة مسح)",
+      "سلاكة المرحاض (مكبس)",
+      "ممسحة زجاج مطاطية (قشاطة)",
+      "منديل ورقي (محارم)",
+      "غسل اليدين",
+      "تنظيف الأسنان (فرك الأسنان بالفرشاة)",
+      "الاستحمام (أخذ حمام سريع)",
+      "التجفيف (تنشيف الجسم)",
+      "شطف المرحاض (سحب السيفون)",
+      "تمشيط الشعر",
+      "وضع المرطب (دهن الكريم المرطب)",
+      "الغرغرة"
     ],
     "usage": {
-      "goal": "Recognize and use common the bathroom vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the bathroom words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key cleaning items vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the bathroom in very simple everyday situations.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -768,11 +788,12 @@
           "targetWords": ["Sponge", "Brush", "Bucket"],
           "scenario": "Mariam fills the bucket, wets the sponge, and scrubs the bath with a brush.",
           "check": {
-            "question": "What does Mariam fill with water?",
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
             "options": ["Sponge", "Brush", "Bucket"],
             "expectedAnswer": "Bucket"
           },
-          "imageBrief": "An adult cleaning a bathtub with a sponge and brush beside a bucket of water."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: Mariam fills the bucket, wets the sponge, and scrubs the bath with a brush. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Sponge, Brush, Bucket in a natural setting."
         },
         {
           "chunkNumber": 2,
@@ -780,60 +801,65 @@
           "scenario": "Omar wears gloves, sprays the mirror with a spray bottle, and wipes it with a cloth.",
           "check": {
             "question": "What does Omar use to wipe the mirror?",
-            "options": ["Gloves", "Spray Bottle", "Cloth"],
+            "options": ["Spray Bottle", "Cloth", "Gloves"],
             "expectedAnswer": "Cloth"
           },
-          "imageBrief": "An adult wearing cleaning gloves and wiping a mirror with a cloth; a spray bottle is in the other hand."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: Omar wears gloves, sprays the mirror with a spray bottle, and wipes it with a cloth. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Gloves, Spray Bottle, Cloth in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Plunger", "Squeegee", "Tissue"],
-          "scenario": "The plunger is beside the toilet, the squeegee is by the shower, and the tissue is near the sink.",
+          "scenario": "In a home bathroom, an adult checks or uses plunger, squeegee, and tissue. The highlighted item is the plunger.",
           "check": {
-            "question": "What is beside the toilet?",
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
             "options": ["Plunger", "Squeegee", "Tissue"],
             "expectedAnswer": "Plunger"
           },
-          "imageBrief": "A bathroom with a plunger beside the toilet, a squeegee by the shower, and tissues near the sink."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: In a home bathroom, an adult checks or uses plunger, squeegee, and tissue. The highlighted item is the plunger. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Plunger, Squeegee, Tissue in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Wash Hands", "Brush Teeth", "Take a Shower"],
-          "scenario": "Nadia washes her hands, brushes her teeth, and then takes a shower.",
+          "scenario": "In a hotel room, an adult may wash hands, brush teeth, and take a shower. The highlighted action is wash hands.",
           "check": {
-            "question": "What does Nadia do before brushing her teeth?",
-            "options": ["Wash Hands", "Brush Teeth", "Take a Shower"],
+            "question": "Which action is taking place in the scene?",
+            "options": ["Brush Teeth", "Take a Shower", "Wash Hands"],
             "expectedAnswer": "Wash Hands"
           },
-          "imageBrief": "A three-step morning-routine composition showing handwashing, toothbrushing, and shower preparation without text or numbers."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: In a hotel room, an adult may wash hands, brush teeth, and take a shower. The highlighted action is wash hands. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Wash Hands, Brush Teeth, Take a Shower in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Dry Off", "Flush", "Comb Hair"],
-          "scenario": "After his shower, Samir dries off, flushes the toilet, and combs his hair.",
+          "scenario": "In a guest bathroom, an adult may dry off, flush, and comb hair. The highlighted action is comb hair.",
           "check": {
-            "question": "What does Samir do to his wet hair?",
-            "options": ["Dry Off", "Flush", "Comb Hair"],
+            "question": "Which routine action does the scene show?",
+            "options": ["Flush", "Comb Hair", "Dry Off"],
             "expectedAnswer": "Comb Hair"
           },
-          "imageBrief": "An adult in a bathrobe combing damp hair; a towel and toilet are also visible in the bathroom."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: In a guest bathroom, an adult may dry off, flush, and comb hair. The highlighted action is comb hair. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Dry Off, Flush, Comb Hair in a natural setting."
         },
         {
           "chunkNumber": 6,
           "targetWords": ["Apply Lotion", "Gargle"],
-          "scenario": "Rana applies lotion to her arms, then gargles with water at the sink.",
+          "scenario": "During a morning routine, an adult may apply lotion and gargle. The highlighted action is apply lotion.",
           "check": {
-            "question": "What does Rana do first?",
-            "options": ["Apply Lotion", "Gargle"],
+            "question": "Which action is taking place in the scene in the example with apply lotion, gargle?",
+            "options": ["Apply Lotion", "Gargle", "Sponge"],
             "expectedAnswer": "Apply Lotion"
           },
-          "imageBrief": "An adult applying lotion to one arm before holding a glass of water near the sink for gargling."
+          "imageBrief": "Photorealistic adult real-world scene in a the bathroom context illustrating this situation: During a morning routine, an adult may apply lotion and gargle. The highlighted action is apply lotion. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bathroom scene showing lesson-related items or actions including Apply Lotion, Gargle in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Cleaning and Getting Ready",
-      "text": "Mariam cleans the bathroom with a sponge, brush, and bucket. She wears gloves and wipes the mirror with a cloth. Her routine is to wash hands, brush teeth, then take a shower. Afterward, she remembers to dry off and flush, then combs her hair, applies lotion, and gargles before leaving.",
+      "title": "Cleaning Items: Home Bathroom Check",
+      "text": "Before guests arrive, an adult checks the bathroom. The first check covers sponge, brush, bucket, gloves, and spray bottle. The next shelf contains cloth, plunger, squeegee, tissue, and wash hands. For cleaning and personal care, the list includes brush teeth, take a shower, dry off, flush, and comb hair. Before leaving, the person remembers apply lotion and gargle. Empty items are replaced and wet surfaces are left clean and safe.",
       "imageBrief": "Show the main adult everyday situation from “Cleaning and Getting Ready” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [

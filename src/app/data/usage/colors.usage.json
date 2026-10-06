@@ -44,73 +44,77 @@
       "نيلي"
     ],
     "usage": {
-      "goal": "Name common colors and use them to describe simple objects.",
-      "canDoStatement": "I can say basic colors around me.",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to identify and name common colours in clothing, signs, products, and everyday objects.",
+      "canDoStatement": "Can understand and use common colour words to describe familiar objects.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Red", "Blue", "Yellow"],
-          "scenario": "I see a red apple, a blue bag, and a yellow bus.",
+          "scenario": "At a design review, an adult client compares red, blue, and yellow colour samples. The final choice must match this description: a colour like a clear daytime sky.",
           "check": {
-            "question": "Which object is blue?",
-            "options": ["Red", "Blue", "Yellow"],
+            "question": "Which option best matches the client's requirement?",
+            "options": ["Blue", "Red", "Yellow"],
             "expectedAnswer": "Blue"
           },
-          "imageBrief": "Three everyday objects clearly showing red apple, blue bag, and yellow bus."
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing Red, Blue, and Yellow on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult designer compares several colour samples on a professional worktable."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Green", "Orange", "Purple"],
-          "scenario": "The green leaf is small, the orange ball is round, and the purple kite is in the sky.",
+          "scenario": "At a design review, an adult client compares green, orange, and purple colour samples. The final choice must match this description: a bright colour often used on high-visibility clothing.",
           "check": {
-            "question": "What color is the ball?",
-            "options": ["Green", "Orange", "Purple"],
+            "question": "Which option best matches the client's requirement?",
+            "options": ["Green", "Purple", "Orange"],
             "expectedAnswer": "Orange"
           },
-          "imageBrief": "Outdoor scene with a green leaf, orange ball, and purple kite."
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing Green, Orange, and Purple on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult designer compares several colour samples on a professional worktable."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pink", "Brown", "Black"],
-          "scenario": "My pink toy is new, the brown table is big, and the black cat is sleeping.",
+          "scenario": "At a design review, an adult client compares pink, brown, and black colour samples. The final choice must match this description: the darkest common colour, often used for strong text.",
           "check": {
-            "question": "Which animal is sleeping?",
-            "options": ["Pink", "Brown", "Black"],
+            "question": "Which option best matches the client's requirement?",
+            "options": ["Brown", "Black", "Pink"],
             "expectedAnswer": "Black"
           },
-          "imageBrief": "Cozy home scene showing a pink toy, brown table, and black cat."
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing Pink, Brown, and Black on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult designer compares several colour samples on a professional worktable."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["White", "Cyan", "Magenta"],
-          "scenario": "The white cloud is high, the cyan shirt is clean, and the magenta flower is bright.",
+          "scenario": "At a design review, an adult client compares white, cyan, and magenta colour samples. The final choice must match this description: a bright blue-green colour used in printing and screens.",
           "check": {
-            "question": "What color is the shirt?",
-            "options": ["White", "Cyan", "Magenta"],
+            "question": "Which option best matches the client's requirement?",
+            "options": ["Cyan", "White", "Magenta"],
             "expectedAnswer": "Cyan"
           },
-          "imageBrief": "Scene or display showing a white cloud, cyan shirt, and magenta flower with very clear colors.",
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing White, Cyan, and Magenta on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
           "imagePath": "./learning-scenes/colors/colors-1-scene-4.avif",
           "imageAlt": "A white cloud on the left, a bright blue-green shirt in the center, and a vivid reddish-purple flower on the right."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Lime", "Teal", "Indigo"],
-          "scenario": "I have a lime pencil, a teal cup, and an indigo notebook.",
+          "scenario": "At a design review, an adult client compares lime, teal, and indigo colour samples. The final choice must match this description: a deep blue-violet colour.",
           "check": {
-            "question": "Which item is indigo?",
+            "question": "Which option best matches the client's requirement?",
             "options": ["Lime", "Teal", "Indigo"],
             "expectedAnswer": "Indigo"
           },
-          "imageBrief": "Desk scene with a lime pencil, teal cup, and indigo notebook."
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing Lime, Teal, and Indigo on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult designer compares several colour samples on a professional worktable."
         }
       ]
     },
     "reading": {
-      "title": "Color Day",
-      "text": "Today is Color Day at school. I bring a blue bag and a yellow pencil. My friend has a pink toy and a brown box. We draw a red apple, a green leaf, and a purple kite. Our class looks bright and happy.",
+      "title": "Choosing Colours for a Display",
+      "text": "A shop manager and a designer are preparing a window display. They compare red, blue, yellow, green, black, and white items, then add orange and pink details for contrast. The manager wants the colours to be easy to distinguish from a distance. They agree on a simple palette that customers can recognize quickly.",
       "imageBrief": "Happy classroom art scene featuring several clearly colored objects mentioned in the story."
     },
     "exercises": [
@@ -199,71 +203,76 @@
       "محايد"
     ],
     "usage": {
-      "goal": "Describe color qualities such as light, dark, bright, warm, cool, and neutral.",
-      "canDoStatement": "I can talk about simple color types and how colors feel.",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to describe colour shades and visual intensity in practical design and shopping contexts.",
+      "canDoStatement": "Can use simple colour modifiers such as light, dark, bright, pale, warm, and cool.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Violet", "Coral", "Salmon"],
-          "scenario": "The violet scarf is soft, the coral wall is pretty, and the salmon fish picture is bright.",
+          "scenario": "At a design review, an adult client compares violet, coral, and salmon colour samples. The final choice must match this description: a blue-purple colour near the end of the visible spectrum.",
           "check": {
-            "question": "Which item is violet?",
-            "options": ["Violet", "Coral", "Salmon"],
+            "question": "Which option best matches the client's requirement?",
+            "options": ["Coral", "Salmon", "Violet"],
             "expectedAnswer": "Violet"
           },
-          "imageBrief": "Three easy objects or surfaces showing violet, coral, and salmon clearly."
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing Violet, Coral, and Salmon on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult designer compares several colour samples on a professional worktable."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Turquoise", "Lavender", "Light"],
-          "scenario": "The turquoise cup is on the table, the lavender pillow is on the chair, and the light blue sky is clear.",
+          "scenario": "At a design review, an adult client compares turquoise, lavender, and light colour samples. The final choice must match this description: a pale purple colour.",
           "check": {
-            "question": "What is on the chair?",
-            "options": ["Turquoise", "Lavender", "Light"],
+            "question": "Which option best matches the client's requirement?",
+            "options": ["Light", "Lavender", "Turquoise"],
             "expectedAnswer": "Lavender"
           },
-          "imageBrief": "Calm home scene with a turquoise cup, lavender pillow, and a light blue sky seen through a window."
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing Turquoise, Lavender, and Light on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult designer compares several colour samples on a professional worktable."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Dark", "Bright", "Dull"],
-          "scenario": "This shirt is dark, that star is bright, and the old poster looks dull.",
+          "scenario": "At a design review, an adult client compares dark, bright, and dull colour samples. The final choice must match this description: not bright or vivid.",
           "check": {
-            "question": "Which thing looks dull?",
-            "options": ["Dark", "Bright", "Dull"],
+            "question": "Which option best matches the client's requirement?",
+            "options": ["Dull", "Dark", "Bright"],
             "expectedAnswer": "Dull"
           },
-          "imageBrief": "Three-panel comparison showing dark shirt, bright star, and dull poster."
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing Dark, Bright, and Dull on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult designer compares several colour samples on a professional worktable."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Vivid", "Pale", "Deep"],
-          "scenario": "The vivid flower stands out, the pale pink wall is soft, and the deep green bottle is beautiful.",
+          "scenario": "At a design review, an adult client compares vivid, pale, and deep colour samples. The final choice must match this description: light and not strongly coloured.",
           "check": {
-            "question": "Which wall is soft?",
-            "options": ["Vivid", "Pale", "Deep"],
+            "question": "Which option best matches the client's requirement?",
+            "options": ["Vivid", "Deep", "Pale"],
             "expectedAnswer": "Pale"
           },
-          "imageBrief": "Simple comparison scene with vivid flower, pale wall, and deep green bottle."
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing Vivid, Pale, and Deep on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult designer compares several colour samples on a professional worktable."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Warm", "Cool", "Neutral"],
-          "scenario": "Red and orange feel warm, blue feels cool, and gray looks neutral.",
+          "scenario": "At a design review, an adult client compares warm, cool, and neutral colour samples. The final choice must match this description: visually associated with blues or greens.",
           "check": {
-            "question": "Which color feels cool?",
-            "options": ["Warm", "Cool", "Neutral"],
+            "question": "Which option best matches the client's requirement?",
+            "options": ["Neutral", "Cool", "Warm"],
             "expectedAnswer": "Cool"
           },
-          "imageBrief": "Friendly infographic showing warm colors, cool colors, and neutral gray."
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing Warm, Cool, and Neutral on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult designer compares several colour samples on a professional worktable."
         }
       ]
     },
     "reading": {
-      "title": "In the Art Room",
-      "text": "In the art room, we talk about colors. Our teacher shows a bright poster and a dull poster. Then she shows warm colors like red and orange and cool colors like blue. I like the pale pink wall and the deep green paint.",
+      "title": "Comparing Paint Samples",
+      "text": "At a paint counter, an adult customer compares several colour samples for a home office. One green is light, another is dark, and a blue sample looks pale beside a vivid turquoise. The assistant explains which colours feel warm, cool, or neutral in the room. The customer chooses a bright but calm shade for the main wall.",
       "imageBrief": "Art room with posters, paint swatches, and warm/cool color examples."
     },
     "exercises": [
@@ -342,60 +351,64 @@
       "صبغة"
     ],
     "usage": {
-      "goal": "Understand simple art words related to mixing and color change.",
-      "canDoStatement": "I can talk about mixing colors in a simple way.",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to talk about mixing colours and basic colour properties used in design and printing.",
+      "canDoStatement": "Can understand simple language about mixing colours, shades, tints, and colour changes.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Mix", "Blend", "Shade"],
-          "scenario": "I mix blue and yellow, I blend the paint, and I make a darker shade.",
+          "scenario": "At a print and design studio, an adult designer needs to mix two colours, blend neighbouring colours, and choose a darker shade. For the next step, the brief gives this description: combine colours smoothly so the transition is less visible.",
           "check": {
-            "question": "What do I do after I mix the paint?",
-            "options": ["Mix", "Blend", "Shade"],
+            "question": "Which option best matches the client's requirement?",
+            "options": ["Shade", "Blend", "Mix"],
             "expectedAnswer": "Blend"
           },
-          "imageBrief": "Art desk scene showing paint being mixed and blended to create a darker shade."
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing Mix, Blend, and Shade on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult designer compares several colour samples on a professional worktable."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Tint", "Hue", "Saturation"],
-          "scenario": "White makes a light tint, blue is a cool hue, and strong color has high saturation.",
+          "scenario": "At a print and design studio, an adult designer needs to add a light tint, compare the hue, and adjust the saturation. For the next step, the brief gives this description: a lighter version or touch of a colour.",
           "check": {
-            "question": "Which word means a color made lighter with white?",
+            "question": "Which option best matches the client's requirement?",
             "options": ["Tint", "Hue", "Saturation"],
             "expectedAnswer": "Tint"
           },
-          "imageBrief": "Clean color-learning card explaining tint, hue, and saturation with swatches."
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing Tint, Hue, and Saturation on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult designer compares several colour samples on a professional worktable."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Gradient", "Rainbow"],
-          "scenario": "The sky picture has a blue gradient, and the rainbow has many colors.",
+          "scenario": "At a print and design studio, an adult designer needs to apply a smooth gradient and use a rainbow reference. For the next step, the brief gives this description: a natural arc showing several colours after light is split by water droplets.",
           "check": {
-            "question": "What has many colors?",
-            "options": ["Gradient", "Rainbow"],
+            "question": "Which option best matches the client's requirement?",
+            "options": ["Gradient", "Mix", "Rainbow"],
             "expectedAnswer": "Rainbow"
           },
-          "imageBrief": "Simple scene with a sky gradient and a rainbow."
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing Gradient and Rainbow on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult designer compares several colour samples on a professional worktable."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Spectrum", "Pigment"],
-          "scenario": "The spectrum shows many colors, and pigment gives paint its color.",
+          "scenario": "At a print and design studio, an adult designer needs to check a colour spectrum and test a paint pigment. For the next step, the brief gives this description: a coloured substance used in paint, ink, or material.",
           "check": {
-            "question": "What gives paint its color?",
-            "options": ["Spectrum", "Pigment"],
+            "question": "Which option best matches the client's requirement?",
+            "options": ["Mix", "Pigment", "Spectrum"],
             "expectedAnswer": "Pigment"
           },
-          "imageBrief": "Friendly visual card showing a color spectrum and pigment in paint."
+          "imageBrief": "Photorealistic adult design studio with three unlabeled colour samples representing Spectrum and Pigment on a professional worktable; realistic print or paint materials, neutral lighting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult designer compares several colour samples on a professional worktable."
         }
       ]
     },
     "reading": {
-      "title": "Painting Time",
-      "text": "It is painting time. I mix red and yellow to make orange. My friend blends blue and white to make a light tint. Our teacher shows a rainbow and says the spectrum has many colors. The pigment in the paint makes the colors strong.",
+      "title": "Preparing a Colour Sample",
+      "text": "A junior designer prepares a colour sample for a poster. She mixes two pigments, then blends them until the hue looks even. Next, she adjusts the tint and saturation and checks the gradient on screen. Before sending the file, she compares the final colours with a printed spectrum to make sure the result is consistent.",
       "imageBrief": "Art class painting scene with mixing paints, a rainbow poster, and paint trays."
     },
     "exercises": [

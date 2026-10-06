@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "3d-printer-lab-1",
     "lessonName": "The 3D Printer Lab 1",
@@ -28,15 +28,15 @@
     ],
     "targetWordsArabic": [
       "رأس الطباعة",
-      "منصّة الطباعة",
-      "بَكَرَة خيط الطباعة",
+      "منصة الطباعة",
+      "بكرة خيط الطباعة",
       "وحدة بثق الخيط",
-      "فُوّهة",
-      "مُحرّك خُطوي",
+      "فوهة",
+      "محرك خطوي",
       "حزام",
-      "سِكّة توجيه",
+      "سكة توجيه",
       "مروحة تبريد",
-      "شاشة بلّورية سائلة (LCD)",
+      "شاشة بلورية سائلة (LCD)",
       "خيط PLA من حمض متعدد اللاكتيك",
       "خيط ABS من أكريلونيتريل بوتادين ستايرين",
       "خيط PETG للطباعة",
@@ -44,60 +44,64 @@
       "نايلون"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The 3D Printer Lab to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the 3d printer lab vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "case note",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "instructional-guide",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Print Head", "Build Plate", "Filament Spool", "Extruder"],
-          "scenario": "The engineer or technician checks print head, build plate, filament spool, and extruder. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Print Head, Build Plate, Filament Spool, and Extruder and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Print Head", "Build Plate", "Filament Spool", "Extruder"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Print Head", "Build Plate", "Filament Spool"],
             "expectedAnswer": "Print Head"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks print head, build plate, filament spool, and extruder. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Print Head as the central item; include Print Head, Build Plate, and Filament Spool naturally where visually appropriate, but make the real-world use of Print Head the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Nozzle", "Stepper Motor", "Belt", "Guide Rail"],
-          "scenario": "The engineer or technician checks nozzle, stepper motor, belt, and guide rail. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nozzle, Stepper Motor, Belt, and Guide Rail and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Nozzle", "Stepper Motor", "Belt", "Guide Rail"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Nozzle", "Stepper Motor", "Belt"],
             "expectedAnswer": "Nozzle"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks nozzle, stepper motor, belt, and guide rail. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Nozzle as the central item; include Nozzle, Stepper Motor, and Belt naturally where visually appropriate, but make the real-world use of Nozzle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cooling Fan", "LCD Screen", "PLA Filament", "ABS Filament"],
-          "scenario": "The engineer or technician checks cooling fan, lcd screen, pla filament, and abs filament. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooling Fan, LCD Screen, PLA Filament, and ABS Filament and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Cooling Fan", "LCD Screen", "PLA Filament", "ABS Filament"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Cooling Fan", "LCD Screen", "PLA Filament"],
             "expectedAnswer": "Cooling Fan"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks cooling fan, lcd screen, pla filament, and abs filament. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Cooling Fan as the central item; include Cooling Fan, LCD Screen, and PLA Filament naturally where visually appropriate, but make the real-world use of Cooling Fan the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["PETG Filament", "Resin", "Nylon"],
-          "scenario": "The engineer or technician checks petg filament, resin, and nylon. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare PETG Filament, Resin, and Nylon and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["PETG Filament", "Resin", "Nylon"],
             "expectedAnswer": "PETG Filament"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks petg filament, resin, and nylon. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating PETG Filament through a realistic adult task; include PETG Filament, Resin, and Nylon naturally where visually appropriate, but make the real-world use of PETG Filament the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The 3D Printer Lab: Case Note",
-      "text": "A realistic case involving the 3d printer lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks print head, build plate, filament spool, and extruder. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks nozzle, stepper motor, belt, and guide rail. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks cooling fan, lcd screen, pla filament, and abs filament. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks petg filament, resin, and nylon. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Getting Ready: The 3D Printer Lab",
+      "text": "At the the 3d printer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Print Head, Build Plate, Filament Spool, and Extruder. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Nozzle, Stepper Motor, Belt, and Guide Rail. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Cooling Fan, LCD Screen, PLA Filament, and ABS Filament. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers PETG Filament, Resin, and Nylon. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -140,6 +144,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Charging Speed” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the 3d printer lab task. Use Print Head, Build Plate, Filament Spool, Extruder, Nozzle, Stepper Motor, Belt, Guide Rail, Cooling Fan, LCD Screen, PLA Filament, ABS Filament, PETG Filament, Resin, and Nylon in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -178,8 +189,8 @@
     ],
     "targetWordsArabic": [
       "خيط طباعة مرن",
-      "خيط طباعة مركّب بجزيئات الخشب",
-      "خيط طباعة مركّب بجزيئات معدنية",
+      "خيط طباعة مركب بجزيئات الخشب",
+      "خيط طباعة مركب بجزيئات معدنية",
       "مادة دعم للطباعة ثلاثية الأبعاد",
       "عصا غراء",
       "حاسوب",
@@ -187,16 +198,16 @@
       "فأرة حاسوب",
       "لوح رسم رقمي",
       "مسطرة",
-      "قَدَمة قياس",
+      "قدمة قياس",
       "منقلة",
       "ورق شبكي",
       "دفتر رسم",
       "نموذج مرجعي"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The 3D Printer Lab to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the 3d printer lab vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "report excerpt",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "workplace-email",
       "readingTarget": "120-170 words",
       "scenes": [
         {
@@ -207,52 +218,56 @@
             "Metal Filament",
             "Support Material"
           ],
-          "scenario": "The engineer or technician checks flexible filament, wood filament, metal filament, and support material. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flexible Filament, Wood Filament, Metal Filament, and Support Material and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Flexible Filament", "Wood Filament", "Metal Filament", "Support Material"],
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "options": ["Flexible Filament", "Wood Filament", "Metal Filament"],
             "expectedAnswer": "Flexible Filament"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks flexible filament, wood filament, metal filament, and support material. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Flexible Filament through a realistic adult task; include Flexible Filament, Wood Filament, and Metal Filament naturally where visually appropriate, but make the real-world use of Flexible Filament the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Glue Stick", "Computer", "3D Software", "Mouse"],
-          "scenario": "The engineer or technician checks glue stick, computer, 3d software, and mouse. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Glue Stick, Computer, 3D Software, and Mouse and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Glue Stick", "Computer", "3D Software", "Mouse"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Glue Stick", "Computer", "3D Software"],
             "expectedAnswer": "Glue Stick"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks glue stick, computer, 3d software, and mouse. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Glue Stick as the central item; include Glue Stick, Computer, and 3D Software naturally where visually appropriate, but make the real-world use of Glue Stick the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Graphics Tablet", "Ruler", "Caliper", "Protractor"],
-          "scenario": "The engineer or technician checks graphics tablet, ruler, caliper, and protractor. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graphics Tablet, Ruler, Caliper, and Protractor and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Graphics Tablet", "Ruler", "Caliper", "Protractor"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Graphics Tablet", "Ruler", "Caliper"],
             "expectedAnswer": "Graphics Tablet"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks graphics tablet, ruler, caliper, and protractor. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Graphics Tablet as the central item; include Graphics Tablet, Ruler, and Caliper naturally where visually appropriate, but make the real-world use of Graphics Tablet the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Grid Paper", "Sketchbook", "Reference Model"],
-          "scenario": "The engineer or technician checks grid paper, sketchbook, and reference model. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Grid Paper, Sketchbook, and Reference Model and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Grid Paper", "Sketchbook", "Reference Model"],
             "expectedAnswer": "Grid Paper"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks grid paper, sketchbook, and reference model. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Grid Paper as the central item; include Grid Paper, Sketchbook, and Reference Model naturally where visually appropriate, but make the real-world use of Grid Paper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The 3D Printer Lab: Report Excerpt",
-      "text": "A realistic case involving the 3d printer lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks flexible filament, wood filament, metal filament, and support material. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks glue stick, computer, 3d software, and mouse. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks graphics tablet, ruler, caliper, and protractor. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks grid paper, sketchbook, and reference model. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Preparing for the Next Task: The 3D Printer Lab",
+      "text": "At the the 3d printer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Flexible Filament, Wood Filament, Metal Filament, and Support Material. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Glue Stick, Computer, 3D Software, and Mouse. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Graphics Tablet, Ruler, Caliper, and Protractor. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Grid Paper, Sketchbook, and Reference Model. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -295,6 +310,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Print Head” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the 3d printer lab task. Use Flexible Filament, Wood Filament, Metal Filament, Support Material, Glue Stick, Computer, 3D Software, Mouse, Graphics Tablet, Ruler, Caliper, Protractor, Grid Paper, Sketchbook, and Reference Model in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -334,7 +356,7 @@
     "targetWordsArabic": [
       "ورق صنفرة",
       "ملف",
-      "سكين حِرفي",
+      "سكين حرفي",
       "كماشة",
       "ملقط",
       "طلاء",
@@ -346,63 +368,67 @@
       "غلاف هاتف",
       "ترس",
       "دعامة",
-      "زَهْرِيَّة (فَازَة)"
+      "زهرية (فازة)"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The 3D Printer Lab to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the 3d printer lab vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "workplace/academic scenario",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "dialogue",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sandpaper", "File", "Craft Knife", "Pliers"],
-          "scenario": "The engineer or technician checks sandpaper, file, craft knife, and pliers. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sandpaper, File, Craft Knife, and Pliers and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Sandpaper", "File", "Craft Knife", "Pliers"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Sandpaper", "File", "Craft Knife"],
             "expectedAnswer": "Sandpaper"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks sandpaper, file, craft knife, and pliers. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Sandpaper as the central item; include Sandpaper, File, and Craft Knife naturally where visually appropriate, but make the real-world use of Sandpaper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Tweezers", "Paint", "Paintbrush", "Primer"],
-          "scenario": "The engineer or technician checks tweezers, paint, paintbrush, and primer. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tweezers, Paint, Paintbrush, and Primer and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Tweezers", "Paint", "Paintbrush", "Primer"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Tweezers", "Paint", "Paintbrush"],
             "expectedAnswer": "Tweezers"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks tweezers, paint, paintbrush, and primer. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Tweezers as the central item; include Tweezers, Paint, and Paintbrush naturally where visually appropriate, but make the real-world use of Tweezers the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Acetone", "UV Curing Lamp", "Figurine", "Phone Case"],
-          "scenario": "The engineer or technician checks acetone, uv curing lamp, figurine, and phone case. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acetone, UV Curing Lamp, Figurine, and Phone Case and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Acetone", "UV Curing Lamp", "Figurine", "Phone Case"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Acetone", "UV Curing Lamp", "Figurine"],
             "expectedAnswer": "Acetone"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks acetone, uv curing lamp, figurine, and phone case. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Acetone as the central item; include Acetone, UV Curing Lamp, and Figurine naturally where visually appropriate, but make the real-world use of Acetone the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Gear", "Bracket", "Vase"],
-          "scenario": "The engineer or technician checks gear, bracket, and vase. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gear, Bracket, and Vase and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Gear", "Bracket", "Vase"],
             "expectedAnswer": "Gear"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks gear, bracket, and vase. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Gear as the central item; include Gear, Bracket, and Vase naturally where visually appropriate, but make the real-world use of Gear the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The 3D Printer Lab: Workplace/Academic Scenario",
-      "text": "A realistic case involving the 3d printer lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks sandpaper, file, craft knife, and pliers. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks tweezers, paint, paintbrush, and primer. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks acetone, uv curing lamp, figurine, and phone case. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks gear, bracket, and vase. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Getting the Information You Need: The 3D Printer Lab",
+      "text": "At the the 3d printer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Sandpaper, File, Craft Knife, and Pliers. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Tweezers, Paint, Paintbrush, and Primer. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Acetone, UV Curing Lamp, Figurine, and Phone Case. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Gear, Bracket, and Vase. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -445,6 +471,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Flexible Filament” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the 3d printer lab task. Use Sandpaper, File, Craft Knife, Pliers, Tweezers, Paint, Paintbrush, Primer, Acetone, UV Curing Lamp, Figurine, Phone Case, Gear, Bracket, and Vase in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -483,7 +516,7 @@
     ],
     "targetWordsArabic": [
       "حلقة مفاتيح",
-      "قطّاعة بسكويت",
+      "قطاعة بسكويت",
       "صافرة",
       "قطعة شطرنج",
       "نموذج معماري",
@@ -495,64 +528,68 @@
       "قفازات",
       "سلة مهملات",
       "صانع علامة",
-      "كيس سحّاب",
-      "مادة يُسمّى «ديسيككانت باك»"
+      "كيس سحاب",
+      "مادة يسمى «ديسيككانت باك»"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The 3D Printer Lab to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the 3d printer lab vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "opinion paragraph",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "instructional-guide",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Keychain", "Cookie Cutter", "Whistle", "Chess Piece"],
-          "scenario": "The engineer or technician checks keychain, cookie cutter, whistle, and chess piece. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keychain, Cookie Cutter, Whistle, and Chess Piece and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Keychain", "Cookie Cutter", "Whistle", "Chess Piece"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Keychain", "Cookie Cutter", "Whistle"],
             "expectedAnswer": "Keychain"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks keychain, cookie cutter, whistle, and chess piece. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Keychain as the central item; include Keychain, Cookie Cutter, and Whistle naturally where visually appropriate, but make the real-world use of Keychain the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Architectural Model", "Workstation", "Storage Shelf", "Ventilation Fan"],
-          "scenario": "The engineer or technician checks architectural model, workstation, storage shelf, and ventilation fan. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Architectural Model, Workstation, Storage Shelf, and Ventilation Fan and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Architectural Model", "Workstation", "Storage Shelf", "Ventilation Fan"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Architectural Model", "Workstation", "Storage Shelf"],
             "expectedAnswer": "Architectural Model"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks architectural model, workstation, storage shelf, and ventilation fan. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Architectural Model as the central item; include Architectural Model, Workstation, and Storage Shelf naturally where visually appropriate, but make the real-world use of Architectural Model the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Fire Extinguisher", "Safety Glasses", "Gloves", "Trash Bin"],
-          "scenario": "The engineer or technician checks fire extinguisher, safety glasses, gloves, and trash bin. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fire Extinguisher, Safety Glasses, Gloves, and Trash Bin and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Fire Extinguisher", "Safety Glasses", "Gloves", "Trash Bin"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Fire Extinguisher", "Safety Glasses", "Gloves"],
             "expectedAnswer": "Fire Extinguisher"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks fire extinguisher, safety glasses, gloves, and trash bin. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Fire Extinguisher as the central item; include Fire Extinguisher, Safety Glasses, and Gloves naturally where visually appropriate, but make the real-world use of Fire Extinguisher the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Label Maker", "Zip Bag", "Desiccant Pack"],
-          "scenario": "The engineer or technician checks label maker, zip bag, and desiccant pack. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label Maker, Zip Bag, and Desiccant Pack and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Label Maker", "Zip Bag", "Desiccant Pack"],
             "expectedAnswer": "Label Maker"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks label maker, zip bag, and desiccant pack. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Label Maker as the central item; include Label Maker, Zip Bag, and Desiccant Pack naturally where visually appropriate, but make the real-world use of Label Maker the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The 3D Printer Lab: Opinion Paragraph",
-      "text": "A realistic case involving the 3d printer lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks keychain, cookie cutter, whistle, and chess piece. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks architectural model, workstation, storage shelf, and ventilation fan. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks fire extinguisher, safety glasses, gloves, and trash bin. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks label maker, zip bag, and desiccant pack. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Getting Ready: The 3D Printer Lab",
+      "text": "At the the 3d printer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Keychain, Cookie Cutter, Whistle, and Chess Piece. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Architectural Model, Workstation, Storage Shelf, and Ventilation Fan. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Fire Extinguisher, Safety Glasses, Gloves, and Trash Bin. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Label Maker, Zip Bag, and Desiccant Pack. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -595,6 +632,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Sandpaper” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the 3d printer lab task. Use Keychain, Cookie Cutter, Whistle, Chess Piece, Architectural Model, Workstation, Storage Shelf, Ventilation Fan, Fire Extinguisher, Safety Glasses, Gloves, Trash Bin, Label Maker, Zip Bag, and Desiccant Pack in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -642,67 +686,71 @@
       "ألياف كربون",
       "حشو خشب",
       "تصميم",
-      "يقطّع شرائح",
+      "يقطع شرائح",
       "طباعة",
       "طبقة",
       "دعم",
       "حشو داخلي"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The 3D Printer Lab to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the 3d printer lab vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "case note",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "workplace-email",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Frame", "Fan", "Display", "PLA"],
-          "scenario": "The engineer or technician checks frame, fan, display, and pla. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frame, Fan, Display, and PLA and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Frame", "Fan", "Display", "PLA"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Frame", "Fan", "Display"],
             "expectedAnswer": "Frame"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks frame, fan, display, and pla. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Frame as the central item; include Frame, Fan, and Display naturally where visually appropriate, but make the real-world use of Frame the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["ABS", "PETG", "TPU", "Carbon Fiber"],
-          "scenario": "The engineer or technician checks abs, petg, tpu, and carbon fiber. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ABS, PETG, TPU, and Carbon Fiber and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["ABS", "PETG", "TPU", "Carbon Fiber"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["ABS", "PETG", "TPU"],
             "expectedAnswer": "ABS"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks abs, petg, tpu, and carbon fiber. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the ABS as the central item; include ABS, PETG, and TPU naturally where visually appropriate, but make the real-world use of ABS the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Wood Fill", "Design", "Slice", "Print"],
-          "scenario": "The engineer or technician checks wood fill, design, slice, and print. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wood Fill, Design, Slice, and Print and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Wood Fill", "Design", "Slice", "Print"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Wood Fill", "Design", "Slice"],
             "expectedAnswer": "Wood Fill"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks wood fill, design, slice, and print. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Wood Fill as the central item; include Wood Fill, Design, and Slice naturally where visually appropriate, but make the real-world use of Wood Fill the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Layer", "Support", "Infill"],
-          "scenario": "The engineer or technician checks layer, support, and infill. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Layer, Support, and Infill and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Layer", "Support", "Infill"],
             "expectedAnswer": "Layer"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks layer, support, and infill. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Layer as the central item; include Layer, Support, and Infill naturally where visually appropriate, but make the real-world use of Layer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The 3D Printer Lab: Case Note",
-      "text": "A realistic case involving the 3d printer lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks frame, fan, display, and pla. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks abs, petg, tpu, and carbon fiber. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks wood fill, design, slice, and print. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks layer, support, and infill. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Preparing for the Next Task: The 3D Printer Lab",
+      "text": "At the the 3d printer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Frame, Fan, Display, and PLA. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers ABS, PETG, TPU, and Carbon Fiber. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Wood Fill, Design, Slice, and Print. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Layer, Support, and Infill. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -745,6 +793,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Keychain” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the 3d printer lab task. Use Frame, Fan, Display, PLA, ABS, PETG, TPU, Carbon Fiber, Wood Fill, Design, Slice, Print, Layer, Support, and Infill in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -765,27 +820,30 @@
     "cefrStage": "B2",
     "stageName": "B2 Fluency & Work",
     "targetWordsEnglish": ["Calibrate", "Prototype"],
-    "targetWordsArabic": ["يُعاير", "نموذج أولي"],
+    "targetWordsArabic": ["يعاير", "نموذج أولي"],
     "usage": {
-      "goal": "Use the vocabulary from The 3D Printer Lab to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the 3d printer lab vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "report excerpt",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "dialogue",
       "readingTarget": "120-170 words",
-      "scenes": {
-        "chunkNumber": 1,
-        "targetWords": ["Calibrate", "Prototype"],
-        "scenario": "The engineer or technician checks calibrate and prototype. The words connect to components, systems, processes, or technical decisions.",
-        "check": {
-          "question": "Which target term is most central to the situation?",
-          "options": ["Calibrate", "Prototype"],
-          "expectedAnswer": "Calibrate"
-        },
-        "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks calibrate and prototype. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
-      }
+      "scenes": [
+        {
+          "chunkNumber": 1,
+          "targetWords": ["Calibrate", "Prototype"],
+          "scenario": "In the the 3d printer lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Calibrate, and Prototype and choose the option that fits the situation.",
+          "check": {
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "options": ["Calibrate", "Prototype", "Option 1"],
+            "expectedAnswer": "Calibrate"
+          },
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Calibrate through a realistic adult task; include Calibrate, Prototype, and Option 1 naturally where visually appropriate, but make the real-world use of Calibrate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+        }
+      ]
     },
     "reading": {
-      "title": "The 3D Printer Lab: Report Excerpt",
-      "text": "A realistic case involving the 3d printer lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks calibrate and prototype. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Getting the Information You Need: The 3D Printer Lab",
+      "text": "At the the 3d printer lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Calibrate and Prototype. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The 3D Printer Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -816,6 +874,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Frame” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the 3d printer lab task. Use Calibrate, and Prototype in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {

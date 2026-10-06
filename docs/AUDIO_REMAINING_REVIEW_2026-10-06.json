@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-10-06",
+  "profile": null,
+  "corpusClips": 21831,
+  "alreadyLedgerClips": 9569,
+  "pendingClips": 12262,
+  "pendingCharacters": 984927,
+  "byTier": {
+    "feedback": {
+      "clips": 17,
+      "characters": 185
+    },
+    "words": {
+      "clips": 6,
+      "characters": 110
+    },
+    "materials": {
+      "clips": 5016,
+      "characters": 638513
+    },
+    "lexicon": {
+      "clips": 7120,
+      "characters": 287930
+    },
+    "stories": {
+      "clips": 103,
+      "characters": 58189
+    }
+  },
+  "note": "This is a dry-run inventory. It does not call ElevenLabs or modify R2."
+}

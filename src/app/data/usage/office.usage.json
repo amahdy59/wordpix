@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "office-1",
     "lessonName": "The Office 1",
@@ -27,16 +27,16 @@
       "Printer"
     ],
     "targetWordsArabic": [
-      "مَكْتَب",
+      "مكتب",
       "كرسي مكتب",
       "خزانة ملفات",
-      "رَفُّ الكُتُب / مَكْتَبَةٌ حَائِطِيَّة",
-      "غرفة يُسمّى «كوبيكلي»",
+      "رف الكتب / مكتبة حائطية",
+      "غرفة يسمى «كوبيكلي»",
       "مكتب للوقوف",
       "طاولة مؤتمر",
       "سبورة بيضاء",
-      "مصطلح مرتبط بالموضوع يُسمّى «بولليتين بوارد»",
-      "نظام يُسمّى «بارتيتيون»",
+      "لوحة إعلانات (لوحة معلومات)",
+      "نظام يسمى «بارتيتيون»",
       "حاسوب",
       "شاشة مراقبة",
       "لوحة مفاتيح",
@@ -44,60 +44,64 @@
       "طابعة"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Office to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the office vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "case note",
+      "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
+      "textType": "workplace-email",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Desk", "Office Chair", "Filing Cabinet", "Bookshelf"],
-          "scenario": "A team member works at the desk with the computer close by. The office chair is adjusted so the employee can sit comfortably at the desk. Paper records are stored in the filing cabinet. Reference books are kept on the bookshelf.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desk, Office Chair, Filing Cabinet, and Bookshelf and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Desk", "Office Chair", "Filing Cabinet", "Bookshelf"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Desk", "Office Chair", "Filing Cabinet"],
             "expectedAnswer": "Desk"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: A team member works at the desk with the computer close by. The office chair is adjusted so the employee can sit comfortably at the desk. Paper records are stored in the filing cabinet. Reference books are kept on the bookshelf. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Desk as the central item; include Desk, Office Chair, and Filing Cabinet naturally where visually appropriate, but make the real-world use of Desk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cubicle", "Standing Desk", "Conference Table", "Whiteboard"],
-          "scenario": "The employee works in a cubicle beside the main aisle. A colleague uses the standing desk for part of the day. The team sits around the conference table during meetings. Ideas and action points are written on the whiteboard.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cubicle, Standing Desk, Conference Table, and Whiteboard and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Cubicle", "Standing Desk", "Conference Table", "Whiteboard"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Cubicle", "Standing Desk", "Conference Table"],
             "expectedAnswer": "Cubicle"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The employee works in a cubicle beside the main aisle. A colleague uses the standing desk for part of the day. The team sits around the conference table during meetings. Ideas and action points are written on the whiteboard. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Cubicle as the central item; include Cubicle, Standing Desk, and Conference Table naturally where visually appropriate, but make the real-world use of Cubicle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bulletin Board", "Partition", "Computer", "Monitor"],
-          "scenario": "Notices and reminders are pinned to the bulletin board. A partition separates one work area from another. The employee uses the computer to complete daily tasks. The monitor displays the document the employee is editing.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bulletin Board, Partition, Computer, and Monitor and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Bulletin Board", "Partition", "Computer", "Monitor"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Bulletin Board", "Partition", "Computer"],
             "expectedAnswer": "Bulletin Board"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: Notices and reminders are pinned to the bulletin board. A partition separates one work area from another. The employee uses the computer to complete daily tasks. The monitor displays the document the employee is editing. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Bulletin Board as the central item; include Bulletin Board, Partition, and Computer naturally where visually appropriate, but make the real-world use of Bulletin Board the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Keyboard", "Mouse", "Printer"],
-          "scenario": "The employee types the message on the keyboard. The employee uses the mouse to move the pointer on screen. The printer produces a paper copy of the report.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, and Printer and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Keyboard", "Mouse", "Printer"],
             "expectedAnswer": "Keyboard"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The employee types the message on the keyboard. The employee uses the mouse to move the pointer on screen. The printer produces a paper copy of the report. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Keyboard as the central item; include Keyboard, Mouse, and Printer naturally where visually appropriate, but make the real-world use of Keyboard the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Office: Case Note",
-      "text": "A realistic case involving the office shows how precise vocabulary can influence choices, explanations, and outcomes. A team member works at the desk with the computer close by. The office chair is adjusted so the employee can sit comfortably at the desk. Paper records are stored in the filing cabinet. Reference books are kept on the bookshelf. The employee works in a cubicle beside the main aisle. A colleague uses the standing desk for part of the day. The team sits around the conference table during meetings. Ideas and action points are written on the whiteboard. Notices and reminders are pinned to the bulletin board. A partition separates one work area from another. The employee uses the computer to complete daily tasks. The monitor displays the document the employee is editing. The employee types the message on the keyboard. The employee uses the mouse to move the pointer on screen. The printer produces a paper copy of the report. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "A Practical Update: The Office",
+      "text": "At the the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Desk, Office Chair, Filing Cabinet, and Bookshelf. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Cubicle, Standing Desk, Conference Table, and Whiteboard. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Bulletin Board, Partition, Computer, and Monitor. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Keyboard, Mouse, and Printer. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -140,6 +144,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “lever” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the office task. Use Desk, Office Chair, Filing Cabinet, Bookshelf, Cubicle, Standing Desk, Conference Table, Whiteboard, Bulletin Board, Partition, Computer, Monitor, Keyboard, Mouse, and Printer in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -181,73 +192,77 @@
       "جهاز عرض",
       "آلة تمزيق الورق",
       "جهاز فاكس",
-      "مادة يُسمّى «كوبيير»",
-      "حَاسُوبٌ مَحْمُول (لَابْتُوب)",
-      "مصطلح مرتبط بالموضوع يُسمّى «هيادسيت»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ويبكام»",
-      "موجّه",
-      "مصطلح مرتبط بالموضوع يُسمّى «سيرفير»",
+      "مادة يسمى «كوبيير»",
+      "حاسوب محمول (لابتوب)",
+      "-",
+      "-",
+      "موجه",
+      "-",
       "ذاكرة USB",
-      "جهاز يُسمّى «يكستيرنال هارد دريفي»",
-      "جهاز يُسمّى «دوكينج ستاتيون»",
+      "جهاز يسمى «يكستيرنال هارد دريفي»",
+      "جهاز يسمى «دوكينج ستاتيون»",
       "نظام هاتف",
-      "جهاز يُسمّى «فيديو كونفيرينكينج»"
+      "جهاز يسمى «فيديو كونفيرينكينج»"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Office to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the office vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "report excerpt",
+      "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
+      "textType": "dialogue",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Scanner", "Projector", "Shredder", "Fax Machine"],
-          "scenario": "The worker uses the scanner, projector, shredder, and fax machine during the task, choosing each tool for a different job.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Projector, Shredder, and Fax Machine and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Scanner", "Projector", "Shredder", "Fax Machine"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Scanner", "Projector", "Shredder"],
             "expectedAnswer": "Scanner"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The worker uses the scanner, projector, shredder, and fax machine during the task, choosing each tool for a different job. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Scanner as the central item; include Scanner, Projector, and Shredder naturally where visually appropriate, but make the real-world use of Scanner the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Copier", "Laptop", "Headset", "Webcam"],
-          "scenario": "The team uses or discusses copier, laptop, headset, and webcam during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Copier, Laptop, Headset, and Webcam and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Copier", "Laptop", "Headset", "Webcam"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Copier", "Laptop", "Headset"],
             "expectedAnswer": "Copier"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses copier, laptop, headset, and webcam during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Copier as the central item; include Copier, Laptop, and Headset naturally where visually appropriate, but make the real-world use of Copier the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Router", "Server", "USB Drive", "External Hard Drive"],
-          "scenario": "The team uses or discusses router, server, usb drive, and external hard drive during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Router, Server, USB Drive, and External Hard Drive and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Router", "Server", "USB Drive", "External Hard Drive"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Router", "Server", "USB Drive"],
             "expectedAnswer": "Router"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses router, server, usb drive, and external hard drive during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Router as the central item; include Router, Server, and USB Drive naturally where visually appropriate, but make the real-world use of Router the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Docking Station", "Phone System", "Video Conferencing"],
-          "scenario": "The team uses or discusses docking station, phone system, and video conferencing during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Docking Station, Phone System, and Video Conferencing and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Docking Station", "Phone System", "Video Conferencing"],
             "expectedAnswer": "Docking Station"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses docking station, phone system, and video conferencing during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or approaching the Docking Station as the main location; include Docking Station, Phone System, and Video Conferencing naturally where visually appropriate, but make the real-world use of Docking Station the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Office: Report Excerpt",
-      "text": "A realistic case involving the office shows how precise vocabulary can influence choices, explanations, and outcomes. The worker uses the scanner, projector, shredder, and fax machine during the task, choosing each tool for a different job. The team uses or discusses copier, laptop, headset, and webcam during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses router, server, usb drive, and external hard drive during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses docking station, phone system, and video conferencing during the workday. The words connect to organization, communication, equipment, or decision-making. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Clarifying the Next Step: The Office",
+      "text": "At the the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Scanner, Projector, Shredder, and Fax Machine. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Copier, Laptop, Headset, and Webcam. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Router, Server, USB Drive, and External Hard Drive. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Docking Station, Phone System, and Video Conferencing. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -290,6 +305,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Desk” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the office task. Use Scanner, Projector, Shredder, Fax Machine, Copier, Laptop, Headset, Webcam, Router, Server, USB Drive, External Hard Drive, Docking Station, Phone System, and Video Conferencing in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -337,67 +359,71 @@
       "غرفة البريد",
       "غرفة تخزين",
       "دورة مياه",
-      "مكان يُسمّى «دريسس كودي»",
-      "مشروب يُسمّى «هاببي هوور»",
+      "مكان يسمى «دريسس كودي»",
+      "مشروب يسمى «هاببي هوور»",
       "بناء الفريق",
-      "عامل يُسمّى «بيرفورمانكي ريفييو»",
+      "عامل يسمى «بيرفورمانكي ريفييو»",
       "تهيئة الموظف الجديد"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Office to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the office vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "workplace/academic scenario",
+      "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
+      "textType": "instructional-guide",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Reception", "Lobby", "Break Room", "Kitchen"],
-          "scenario": "The team uses or discusses reception, lobby, break room, and kitchen during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Lobby, Break Room, and Kitchen and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Reception", "Lobby", "Break Room", "Kitchen"],
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "options": ["Reception", "Lobby", "Break Room"],
             "expectedAnswer": "Reception"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses reception, lobby, break room, and kitchen during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult illustrating Reception through a realistic adult task; include Reception, Lobby, and Break Room naturally where visually appropriate, but make the real-world use of Reception the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Meeting Room", "Corner Office", "Open Floor Plan", "Mailroom"],
-          "scenario": "The team uses or discusses meeting room, corner office, open floor plan, and mailroom during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Corner Office, Open Floor Plan, and Mailroom and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Meeting Room", "Corner Office", "Open Floor Plan", "Mailroom"],
+            "question": "Which option identifies the main place or facility shown in the scene?",
+            "options": ["Meeting Room", "Corner Office", "Open Floor Plan"],
             "expectedAnswer": "Meeting Room"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses meeting room, corner office, open floor plan, and mailroom during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or approaching the Meeting Room as the main location; include Meeting Room, Corner Office, and Open Floor Plan naturally where visually appropriate, but make the real-world use of Meeting Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Storage Room", "Restroom", "Dress Code", "Happy Hour"],
-          "scenario": "The team uses or discusses storage room, restroom, dress code, and happy hour during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Room, Restroom, Dress Code, and Happy Hour and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Storage Room", "Restroom", "Dress Code", "Happy Hour"],
+            "question": "Which option identifies the main place or facility shown in the scene?",
+            "options": ["Storage Room", "Restroom", "Dress Code"],
             "expectedAnswer": "Storage Room"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses storage room, restroom, dress code, and happy hour during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or approaching the Storage Room as the main location; include Storage Room, Restroom, and Dress Code naturally where visually appropriate, but make the real-world use of Storage Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Team Building", "Performance Review", "Onboarding"],
-          "scenario": "The team uses or discusses team building, performance review, and onboarding during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Team Building, Performance Review, and Onboarding and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option identifies the person or role central to the situation shown?",
             "options": ["Team Building", "Performance Review", "Onboarding"],
             "expectedAnswer": "Team Building"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses team building, performance review, and onboarding during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult working with or speaking to the Team Building; include Team Building, Performance Review, and Onboarding naturally where visually appropriate, but make the real-world use of Team Building the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Office: Workplace/Academic Scenario",
-      "text": "A realistic case involving the office shows how precise vocabulary can influence choices, explanations, and outcomes. The team uses or discusses reception, lobby, break room, and kitchen during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses meeting room, corner office, open floor plan, and mailroom during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses storage room, restroom, dress code, and happy hour during the workday. The words connect to organization, communication, equipment, or decision-making. The team uses or discusses team building, performance review, and onboarding during the workday. The words connect to organization, communication, equipment, or decision-making. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Before You Begin: The Office",
+      "text": "At the the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Reception, Lobby, Break Room, and Kitchen. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Meeting Room, Corner Office, Open Floor Plan, and Mailroom. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Storage Room, Restroom, Dress Code, and Happy Hour. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Team Building, Performance Review, and Onboarding. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -440,6 +466,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Scanner” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the office task. Use Reception, Lobby, Break Room, Kitchen, Meeting Room, Corner Office, Open Floor Plan, Mailroom, Storage Room, Restroom, Dress Code, Happy Hour, Team Building, Performance Review, and Onboarding in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -467,45 +500,47 @@
       "Office Party"
     ],
     "targetWordsArabic": [
-      "العمل عن بُعد",
+      "العمل عن بعد",
       "ساعات عمل مرنة",
       "سياسة الباب المفتوح",
       "صندوق تبريد ماء",
       "حفلة مكتب"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Office to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the office vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "opinion paragraph",
+      "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
+      "textType": "workplace-email",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Remote Work", "Flex Hours", "Open Door Policy", "Water Cooler"],
-          "scenario": "The team uses or discusses remote work, flex hours, open door policy, and water cooler during the workday. The words connect to organization, communication, equipment, or decision-making.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Remote Work, Flex Hours, Open Door Policy, and Water Cooler and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Remote Work", "Flex Hours", "Open Door Policy", "Water Cooler"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Remote Work", "Flex Hours", "Open Door Policy"],
             "expectedAnswer": "Remote Work"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The team uses or discusses remote work, flex hours, open door policy, and water cooler during the workday. The words connect to organization, communication, equipment, or decision-making. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Remote Work as the central item; include Remote Work, Flex Hours, and Open Door Policy naturally where visually appropriate, but make the real-world use of Remote Work the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": "Office Party",
-          "scenario": "The group talks about the office party, comparing what usually happens at each event.",
+          "scenario": "In the the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Office Party and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": "Office Party",
+            "question": "Which option identifies the main place or facility shown in the scene?",
+            "options": ["Office Party", "Remote Work", "Flex Hours"],
             "expectedAnswer": "Office Party"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The group talks about the office party, comparing what usually happens at each event. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or approaching the Office Party as the main location; include Office Party, Remote Work, and Flex Hours naturally where visually appropriate, but make the real-world use of Office Party the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Office: Opinion Paragraph",
-      "text": "A realistic case involving the office shows how precise vocabulary can influence choices, explanations, and outcomes. The team uses or discusses remote work, flex hours, open door policy, and water cooler during the workday. The words connect to organization, communication, equipment, or decision-making. The group talks about the office party, comparing what usually happens at each event. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "A Practical Update: The Office",
+      "text": "At the the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Remote Work, Flex Hours, Open Door Policy, and Water Cooler. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Office Party. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -540,6 +575,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Reception” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the office task. Use Remote Work, Flex Hours, Open Door Policy, Water Cooler, and Office Party in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {

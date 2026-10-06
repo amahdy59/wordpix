@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "home-features-1",
     "lessonName": "Home Features 1",
@@ -34,70 +34,74 @@
       "غرفة طعام",
       "مكتب منزل",
       "غرفة غسيل",
-      "مصطلح مرتبط بالموضوع يُسمّى «باسيمينت»",
-      "مصطلح مرتبط بالموضوع يُسمّى «اتتيك»",
-      "غرفة يُسمّى «بانتري»",
-      "مصطلح مرتبط بالموضوع يُسمّى «باكيارد»",
-      "شجرة يُسمّى «فرونت يارد»",
-      "منطقة يُسمّى «باتيو»",
-      "سفينة يُسمّى «ديك»",
+      "قبو",
+      "علية",
+      "غرفة يسمى «بانتري»",
+      "فناء خلفي",
+      "شجرة يسمى «فرونت يارد»",
+      "منطقة يسمى «باتيو»",
+      "سفينة يسمى «ديك»",
       "شرفة"
     ],
     "usage": {
-      "goal": "Use the vocabulary from Home Features to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use home features vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "report excerpt",
+      "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the housing or property setting with reasonable fluency.",
+      "textType": "dialogue",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Living Room", "Bedroom", "Bathroom", "Kitchen"],
-          "scenario": "The agent, designer, or client discusses living room, bedroom, bathroom, and kitchen. The words help describe the property, design choice, or building process.",
+          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Living Room, Bedroom, Bathroom, and Kitchen and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Living Room", "Bedroom", "Bathroom", "Kitchen"],
+            "question": "Which option identifies the main place or facility shown in the scene?",
+            "options": ["Living Room", "Bedroom", "Bathroom"],
             "expectedAnswer": "Living Room"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses living room, bedroom, bathroom, and kitchen. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or approaching the Living Room as the main location; include Living Room, Bedroom, and Bathroom naturally where visually appropriate, but make the real-world use of Living Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Dining Room", "Home Office", "Laundry Room", "Basement"],
-          "scenario": "The agent, designer, or client discusses dining room, home office, laundry room, and basement. The words help describe the property, design choice, or building process.",
+          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dining Room, Home Office, Laundry Room, and Basement and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Dining Room", "Home Office", "Laundry Room", "Basement"],
+            "question": "Which option identifies the main place or facility shown in the scene?",
+            "options": ["Dining Room", "Home Office", "Laundry Room"],
             "expectedAnswer": "Dining Room"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses dining room, home office, laundry room, and basement. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or approaching the Dining Room as the main location; include Dining Room, Home Office, and Laundry Room naturally where visually appropriate, but make the real-world use of Dining Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Attic", "Pantry", "Backyard", "Front Yard"],
-          "scenario": "The agent, designer, or client discusses attic, pantry, backyard, and front yard. The words help describe the property, design choice, or building process.",
+          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Attic, Pantry, Backyard, and Front Yard and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Attic", "Pantry", "Backyard", "Front Yard"],
+            "question": "Which option identifies the main place or facility shown in the scene?",
+            "options": ["Attic", "Pantry", "Backyard"],
             "expectedAnswer": "Attic"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses attic, pantry, backyard, and front yard. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or approaching the Attic as the main location; include Attic, Pantry, and Backyard naturally where visually appropriate, but make the real-world use of Attic the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Patio", "Deck", "Balcony"],
-          "scenario": "The agent, designer, or client discusses patio, deck, and balcony. The words help describe the property, design choice, or building process.",
+          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Patio, Deck, and Balcony and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Patio", "Deck", "Balcony"],
             "expectedAnswer": "Patio"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses patio, deck, and balcony. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or approaching the Patio as the main location; include Patio, Deck, and Balcony naturally where visually appropriate, but make the real-world use of Patio the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "Home Features: Report Excerpt",
-      "text": "A realistic case involving home features shows how precise vocabulary can influence choices, explanations, and outcomes. The agent, designer, or client discusses living room, bedroom, bathroom, and kitchen. The words help describe the property, design choice, or building process. The agent, designer, or client discusses dining room, home office, laundry room, and basement. The words help describe the property, design choice, or building process. The agent, designer, or client discusses attic, pantry, backyard, and front yard. The words help describe the property, design choice, or building process. The agent, designer, or client discusses patio, deck, and balcony. The words help describe the property, design choice, or building process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "A Practical Conversation: Home Features",
+      "text": "At the home features, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Living Room, Bedroom, Bathroom, and Kitchen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dining Room, Home Office, Laundry Room, and Basement. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Attic, Pantry, Backyard, and Front Yard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Patio, Deck, and Balcony. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about Home Features. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -140,6 +144,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Listing Agreement” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the home features task. Use Living Room, Bedroom, Bathroom, Kitchen, Dining Room, Home Office, Laundry Room, Basement, Attic, Pantry, Backyard, Front Yard, Patio, Deck, and Balcony in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -178,11 +189,11 @@
     ],
     "targetWordsArabic": [
       "شرفة",
-      "مبنى يُسمّى «بورتش»",
-      "هيكل يُسمّى «جازيبو»",
-      "نبات يُسمّى «بيرجولا»",
-      "أداة يُسمّى «جاردين شيد»",
-      "مصطلح مرتبط بالموضوع يُسمّى «فيريبلاكي»",
+      "مبنى يسمى «بورتش»",
+      "هيكل يسمى «جازيبو»",
+      "نبات يسمى «بيرجولا»",
+      "أداة يسمى «جاردين شيد»",
+      "مدفأة",
       "غرفة ملابس داخلية",
       "رفوف مدمجة",
       "كرانيش علوية زخرفية",
@@ -190,64 +201,68 @@
       "أرضية بلاط",
       "سقف مرتفع مقبب",
       "نافذة سقفية",
-      "هيكل يُسمّى «باي ويندوو»",
+      "هيكل يسمى «باي ويندوو»",
       "أبواب فرنسية زجاجية"
     ],
     "usage": {
-      "goal": "Use the vocabulary from Home Features to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use home features vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "case note",
+      "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the housing or property setting with reasonable fluency.",
+      "textType": "service-notice",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Terrace", "Porch", "Gazebo", "Pergola"],
-          "scenario": "The agent, designer, or client discusses terrace, porch, gazebo, and pergola. The words help describe the property, design choice, or building process.",
+          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Terrace, Porch, Gazebo, and Pergola and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Terrace", "Porch", "Gazebo", "Pergola"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Terrace", "Porch", "Gazebo"],
             "expectedAnswer": "Terrace"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses terrace, porch, gazebo, and pergola. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Terrace as the central item; include Terrace, Porch, and Gazebo naturally where visually appropriate, but make the real-world use of Terrace the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Garden Shed", "Fireplace", "Walk-In Closet", "Built-In Shelves"],
-          "scenario": "The agent, designer, or client discusses garden shed, fireplace, walk-in closet, and built-in shelves. The words help describe the property, design choice, or building process.",
+          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Garden Shed, Fireplace, Walk-In Closet, and Built-In Shelves and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Garden Shed", "Fireplace", "Walk-In Closet", "Built-In Shelves"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Garden Shed", "Fireplace", "Walk-In Closet"],
             "expectedAnswer": "Garden Shed"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses garden shed, fireplace, walk-in closet, and built-in shelves. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Garden Shed as the central item; include Garden Shed, Fireplace, and Walk-In Closet naturally where visually appropriate, but make the real-world use of Garden Shed the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Crown Molding", "Hardwood Floor", "Tile Floor", "Vaulted Ceiling"],
-          "scenario": "The agent, designer, or client discusses crown molding, hardwood floor, tile floor, and vaulted ceiling. The words help describe the property, design choice, or building process.",
+          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crown Molding, Hardwood Floor, Tile Floor, and Vaulted Ceiling and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Crown Molding", "Hardwood Floor", "Tile Floor", "Vaulted Ceiling"],
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "options": ["Crown Molding", "Hardwood Floor", "Tile Floor"],
             "expectedAnswer": "Crown Molding"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses crown molding, hardwood floor, tile floor, and vaulted ceiling. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult illustrating Crown Molding through a realistic adult task; include Crown Molding, Hardwood Floor, and Tile Floor naturally where visually appropriate, but make the real-world use of Crown Molding the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Skylight", "Bay Window", "French Doors"],
-          "scenario": "The agent, designer, or client discusses skylight, bay window, and french doors. The words help describe the property, design choice, or building process.",
+          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skylight, Bay Window, and French Doors and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Skylight", "Bay Window", "French Doors"],
             "expectedAnswer": "Skylight"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses skylight, bay window, and french doors. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Skylight as the central item; include Skylight, Bay Window, and French Doors naturally where visually appropriate, but make the real-world use of Skylight the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "Home Features: Case Note",
-      "text": "A realistic case involving home features shows how precise vocabulary can influence choices, explanations, and outcomes. The agent, designer, or client discusses terrace, porch, gazebo, and pergola. The words help describe the property, design choice, or building process. The agent, designer, or client discusses garden shed, fireplace, walk-in closet, and built-in shelves. The words help describe the property, design choice, or building process. The agent, designer, or client discusses crown molding, hardwood floor, tile floor, and vaulted ceiling. The words help describe the property, design choice, or building process. The agent, designer, or client discusses skylight, bay window, and french doors. The words help describe the property, design choice, or building process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "What You Need to Know: Home Features",
+      "text": "At the home features, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Terrace, Porch, Gazebo, and Pergola. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Garden Shed, Fireplace, Walk-In Closet, and Built-In Shelves. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crown Molding, Hardwood Floor, Tile Floor, and Vaulted Ceiling. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Skylight, Bay Window, and French Doors. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about Home Features. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -290,6 +305,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Living Room” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the home features task. Use Terrace, Porch, Gazebo, Pergola, Garden Shed, Fireplace, Walk-In Closet, Built-In Shelves, Crown Molding, Hardwood Floor, Tile Floor, Vaulted Ceiling, Skylight, Bay Window, and French Doors in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -324,59 +346,62 @@
     "targetWordsArabic": [
       "نظام التدفئة والتهوية وتكييف الهواء (HVAC)",
       "تكييف مركزي",
-      "مبنى يُسمّى «فورناكي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «واتير هياتير»",
+      "مبنى يسمى «فورناكي»",
+      "سخان مياه",
       "سباكة",
-      "مبنى يُسمّى «يليكتريكال بانيل»",
-      "مصطلح مرتبط بالموضوع يُسمّى «كيركويت برياكير»",
-      "منظّم حرارة",
-      "مصطلح مرتبط بالموضوع يُسمّى «سيبتيك تانك»",
+      "مبنى يسمى «يليكتريكال بانيل»",
+      "قاطع كهربائي",
+      "منظم حرارة",
+      "خزان صرف صحي",
       "ماء بئر"
     ],
     "usage": {
-      "goal": "Use the vocabulary from Home Features to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use home features vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "review",
+      "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the housing or property setting with reasonable fluency.",
+      "textType": "workplace-email",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["HVAC", "Central Air", "Furnace", "Water Heater"],
-          "scenario": "The agent, designer, or client discusses hvac, central air, furnace, and water heater. The words help describe the property, design choice, or building process.",
+          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare HVAC, Central Air, Furnace, and Water Heater and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["HVAC", "Central Air", "Furnace", "Water Heater"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["HVAC", "Central Air", "Furnace"],
             "expectedAnswer": "HVAC"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses hvac, central air, furnace, and water heater. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the HVAC as the central item; include HVAC, Central Air, and Furnace naturally where visually appropriate, but make the real-world use of HVAC the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Plumbing", "Electrical Panel", "Circuit Breaker", "Thermostat"],
-          "scenario": "The agent, designer, or client discusses plumbing, electrical panel, circuit breaker, and thermostat. The words help describe the property, design choice, or building process.",
+          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plumbing, Electrical Panel, Circuit Breaker, and Thermostat and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Plumbing", "Electrical Panel", "Circuit Breaker", "Thermostat"],
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "options": ["Plumbing", "Electrical Panel", "Circuit Breaker"],
             "expectedAnswer": "Plumbing"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses plumbing, electrical panel, circuit breaker, and thermostat. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult illustrating Plumbing through a realistic adult task; include Plumbing, Electrical Panel, and Circuit Breaker naturally where visually appropriate, but make the real-world use of Plumbing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Septic Tank", "Well Water"],
-          "scenario": "The agent, designer, or client discusses septic tank and well water. The words help describe the property, design choice, or building process.",
+          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Septic Tank, and Well Water and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Septic Tank", "Well Water"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Septic Tank", "Well Water", "HVAC"],
             "expectedAnswer": "Septic Tank"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses septic tank and well water. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Septic Tank as the central item; include Septic Tank, Well Water, and HVAC naturally where visually appropriate, but make the real-world use of Septic Tank the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "Home Features: Review",
-      "text": "A realistic case involving home features shows how precise vocabulary can influence choices, explanations, and outcomes. The agent, designer, or client discusses hvac, central air, furnace, and water heater. The words help describe the property, design choice, or building process. The agent, designer, or client discusses plumbing, electrical panel, circuit breaker, and thermostat. The words help describe the property, design choice, or building process. The agent, designer, or client discusses septic tank and well water. The words help describe the property, design choice, or building process. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "An Update Before the Next Step",
+      "text": "At the home features, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers HVAC, Central Air, Furnace, and Water Heater. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Plumbing, Electrical Panel, Circuit Breaker, and Thermostat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Septic Tank and Well Water. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about Home Features. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -415,6 +440,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Terrace” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the home features task. Use HVAC, Central Air, Furnace, Water Heater, Plumbing, Electrical Panel, Circuit Breaker, Thermostat, Septic Tank, and Well Water in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {

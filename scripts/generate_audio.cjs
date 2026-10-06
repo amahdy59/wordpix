@@ -41,13 +41,13 @@ loadEnv();
 
 const ROOT = path.join(__dirname, "..");
 const CORPUS = path.join(ROOT, "scratch", "audio_corpus.json");
-const LEDGER = path.join(ROOT, "assets", "audio-ledger.json");
 
 const arg = (name, fallback = null) => {
   const found = process.argv.find((a) => a.startsWith(`--${name}=`));
   return found ? found.slice(name.length + 3) : fallback;
 };
 const flag = (name) => process.argv.includes(`--${name}`);
+const LEDGER = path.resolve(ROOT, arg("ledger", "assets/audio-ledger.json"));
 
 const DRY_RUN = flag("dry-run");
 const RECONCILE = flag("reconcile");
@@ -89,8 +89,19 @@ function writeLedger(ledger) {
   // cross-device, and writing directly to LEDGER races the sync agent.
   const tmp = path.join(require("os").tmpdir(), "audio-ledger.tmp.json");
   fs.writeFileSync(tmp, content, "utf8");
-  fs.copyFileSync(tmp, LEDGER);
+  let lastError;
+  for (let attempt = 1; attempt <= 5; attempt += 1) {
+    try {
+      fs.copyFileSync(tmp, LEDGER);
+      lastError = null;
+      break;
+    } catch (error) {
+      lastError = error;
+      if (attempt < 5) Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 250 * attempt);
+    }
+  }
   fs.rmSync(tmp, { force: true });
+  if (lastError) throw lastError;
 }
 
 async function synthesise(text, apiKey, profile = AUDIO_PROFILE) {
@@ -175,10 +186,16 @@ present : ${hashes.length - dropped.length}`);
 }
 
 async function main() {
-  if (!fs.existsSync(CORPUS)) {
+  const corpusPath = arg("corpus") ? path.resolve(ROOT, arg("corpus")) : CORPUS;
+  if (!fs.existsSync(corpusPath)) {
     throw new Error("No corpus. Run: node scripts/build_audio_corpus.cjs");
   }
-  const allClips = JSON.parse(fs.readFileSync(CORPUS, "utf8"));
+  const allClips = JSON.parse(fs.readFileSync(corpusPath, "utf8"));
+  for (const clip of allClips) {
+    if (clip.hash !== audioHash(clip.text, clip.profile ?? AUDIO_PROFILE)) {
+      throw new Error("Corpus hashes do not match the requested voice/model. Rebuild the corpus for this profile before generation.");
+    }
+  }
   const corpus = TIERS.length ? allClips.filter((e) => TIERS.includes(e.tier)) : allClips;
   if (TIERS.length) {
     console.log(`tiers      : ${TIERS.join(", ")} (${corpus.length} of ${allClips.length} clips)`);
@@ -213,7 +230,7 @@ async function main() {
     return;
   }
 
-  const apiKey = process.env.ELEVENLABS_API_KEY;
+  const apiKey = process.env.ELEVENLABS_API_KEY || process.env.Elevenlabs_API_key;
   if (!apiKey) {
     throw new Error(
       "ELEVENLABS_API_KEY is not set. Put it in .env.local (never as VITE_*, " +
@@ -222,10 +239,12 @@ async function main() {
   }
   const r2 = createClient();
   console.log(`\nverifying R2 access to ${r2.config.bucket}…`);
-  await r2.verify();
-  console.log("R2 round trip OK\n");
+  // A read-only HEAD avoids the verifier's temporary PUT/DELETE round trip.
+  await r2.exists(`audio/${pending[0].hash.slice(0, 2)}/${pending[0].hash}.mp3`);
+  console.log("R2 read access OK\n");
 
   let spentChars = 0;
+  let reservedChars = 0;
   let generated = 0;
   let reused = 0;
   let failed = 0;
@@ -249,12 +268,6 @@ async function main() {
       if (index >= pending.length) return;
       const entry = pending[index];
 
-      if (spentChars + entry.chars > MAX_CHARS) {
-        stopped = true;
-        console.log(`\nbudget reached at ${spentChars.toLocaleString()} characters; stopping.`);
-        return;
-      }
-
       const key = `audio/${entry.hash.slice(0, 2)}/${entry.hash}.mp3`;
       const label = JSON.stringify(entry.text.slice(0, 40));
 
@@ -273,6 +286,14 @@ async function main() {
           continue;
         }
 
+        // Reserve synchronously before starting a paid request so concurrent
+        // workers cannot each spend the same remaining budget.
+        if (reservedChars + entry.chars > MAX_CHARS) {
+          stopped = true;
+          console.log(`\nbudget reached at ${reservedChars.toLocaleString()} characters; stopping.`);
+          return;
+        }
+        reservedChars += entry.chars;
         const audio = await withRetry(
           () => synthesise(entry.text, apiKey, entry.profile ?? AUDIO_PROFILE),
           label

@@ -4,40 +4,491 @@
     "lessonId": "office-1",
     "slot": "core-1",
     "unitId": "office",
-    "phrase": "write down",
-    "kind": "phrasal-verb",
-    "meaning": "Record something in writing.",
-    "arabicMeaning": "يدوّن معلومة كتابةً.",
-    "example": "The meeting is in Room 12 now. Please write it down so you do not go to the old room.",
-    "learnerPurpose": "Remember a change of room",
-    "pattern": "write down the number / write the number down / write it down",
-    "cefrStage": "B1",
-    "register": "Everyday and workplace; separable phrasal verb",
-    "frequencyEvidence": "Cambridge labels the record-in-writing sense B1. Oxford confirms the same memory/recording purpose and separable pattern; no numeric frequency claim.",
-    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/write-down?topic=writing-and-typing",
+    "phrase": "take meeting minutes",
+    "kind": "collocation",
+    "meaning": "write the official notes of a meeting",
+    "arabicMeaning": "يدون محضر الاجتماع",
+    "example": "The assistant took meeting minutes during the weekly review.",
+    "learnerPurpose": "Use “take meeting minutes” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "B2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/take",
     "check": {
-      "question": "Why should the listener write the room number down?",
-      "expectedAnswer": "To remember the new meeting room.",
-      "explanation": "The meeting location has changed."
+      "question": "Which phrase matches this meaning: write the official notes of a meeting",
+      "expectedAnswer": "take meeting minutes",
+      "explanation": "write the official notes of a meeting"
     },
     "practice": {
-      "retrieval": "Complete: Please write it ___.",
-      "personalUse": "Ask a colleague to record a phone number.",
-      "laterReview": "Retrieve when taking a telephone message."
+      "retrieval": "Complete a sentence using “take meeting minutes”.",
+      "personalUse": "Write one realistic adult-life sentence using “take meeting minutes”.",
+      "laterReview": "Reuse “take meeting minutes” in a later review or conversation."
     },
     "sceneId": "office-1-usage-scene-1",
-    "sourceStatus": "Original WordPix example; English sense, pattern, register, and level re-reviewed online against Cambridge and Oxford learner dictionaries on 2026-09-30. Arabic meaning reviewed for the exact taught sense.",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
     "sourceReview": {
       "status": "verified-online",
-      "reviewedAt": "2026-09-30",
-      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/write-down?topic=writing-and-typing",
-      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/us/definition/english/write-down_1",
-      "finding": "Cambridge B1; Oxford confirms the exact everyday recording sense and pattern."
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/take",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/take-meeting-minutes",
+      "finding": "Workbook evidence supports the taught sense and pattern for take meeting minutes; Arabic meaning and CEFR label were retained from the approved editorial row."
     },
     "editorial": {
       "status": "approved",
-      "reviewer": "Codex online dictionary review / 2026-09-30",
-      "revision": "2"
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "office-1-core-2",
+    "lessonId": "office-1",
+    "slot": "core-2",
+    "unitId": "office",
+    "phrase": "Could you send me the latest version?",
+    "kind": "everyday-expression",
+    "meaning": "politely ask someone to send the most recent document",
+    "arabicMeaning": "هل يمكنك إرسال أحدث نسخة إلي؟",
+    "example": "Could you send me the latest version before the meeting?",
+    "learnerPurpose": "Use “Could you send me the latest version?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "B2",
+    "register": "workplace professional",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/latest",
+    "check": {
+      "question": "Which phrase matches this meaning: politely ask someone to send the most recent document",
+      "expectedAnswer": "Could you send me the latest version?",
+      "explanation": "politely ask someone to send the most recent document"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Could you send me the latest version?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Could you send me the latest version?”.",
+      "laterReview": "Reuse “Could you send me the latest version?” in a later review or conversation."
+    },
+    "sceneId": "office-1-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/latest",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/could-you-send-me-the-latest-version",
+      "finding": "Workbook evidence supports the taught sense and pattern for Could you send me the latest version?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "office-1-optional-1",
+    "lessonId": "office-1",
+    "slot": "optional-1",
+    "unitId": "office",
+    "phrase": "bring up",
+    "kind": "phrasal-verb",
+    "meaning": "introduce a topic for discussion",
+    "arabicMeaning": "يطرح موضوعا",
+    "example": "She brought up the budget issue during the meeting.",
+    "learnerPurpose": "Use “bring up” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "C1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/bring-up",
+    "check": {
+      "question": "Which phrase matches this meaning: introduce a topic for discussion",
+      "expectedAnswer": "bring up",
+      "explanation": "introduce a topic for discussion"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “bring up”.",
+      "personalUse": "Write one realistic adult-life sentence using “bring up”.",
+      "laterReview": "Reuse “bring up” in a later review or conversation."
+    },
+    "sceneId": "office-1-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/bring-up",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/bring-up",
+      "finding": "Workbook evidence supports the taught sense and pattern for bring up; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "office-2-core-1",
+    "lessonId": "office-2",
+    "slot": "core-1",
+    "unitId": "office",
+    "phrase": "schedule a meeting",
+    "kind": "collocation",
+    "meaning": "arrange a meeting for a particular time",
+    "arabicMeaning": "يحدد موعد اجتماع",
+    "example": "I scheduled a meeting for Thursday afternoon.",
+    "learnerPurpose": "Use “schedule a meeting” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "B2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/schedule",
+    "check": {
+      "question": "Which phrase matches this meaning: arrange a meeting for a particular time",
+      "expectedAnswer": "schedule a meeting",
+      "explanation": "arrange a meeting for a particular time"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “schedule a meeting”.",
+      "personalUse": "Write one realistic adult-life sentence using “schedule a meeting”.",
+      "laterReview": "Reuse “schedule a meeting” in a later review or conversation."
+    },
+    "sceneId": "office-2-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/schedule",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/schedule-a-meeting",
+      "finding": "Workbook evidence supports the taught sense and pattern for schedule a meeting; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "office-2-core-2",
+    "lessonId": "office-2",
+    "slot": "core-2",
+    "unitId": "office",
+    "phrase": "Are we still on schedule?",
+    "kind": "everyday-expression",
+    "meaning": "ask whether work is progressing according to plan",
+    "arabicMeaning": "هل ما زلنا ملتزمين بالجدول؟",
+    "example": "Are we still on schedule for Friday?",
+    "learnerPurpose": "Use “Are we still on schedule?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "B2",
+    "register": "workplace professional",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/schedule",
+    "check": {
+      "question": "Which phrase matches this meaning: ask whether work is progressing according to plan",
+      "expectedAnswer": "Are we still on schedule?",
+      "explanation": "ask whether work is progressing according to plan"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Are we still on schedule?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Are we still on schedule?”.",
+      "laterReview": "Reuse “Are we still on schedule?” in a later review or conversation."
+    },
+    "sceneId": "office-2-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/schedule",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/are-we-still-on-schedule",
+      "finding": "Workbook evidence supports the taught sense and pattern for Are we still on schedule?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "office-2-optional-1",
+    "lessonId": "office-2",
+    "slot": "optional-1",
+    "unitId": "office",
+    "phrase": "go over",
+    "kind": "phrasal-verb",
+    "meaning": "review something carefully",
+    "arabicMeaning": "يراجع",
+    "example": "We went over the final document before approval.",
+    "learnerPurpose": "Use “go over” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "C1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/go-over",
+    "check": {
+      "question": "Which phrase matches this meaning: review something carefully",
+      "expectedAnswer": "go over",
+      "explanation": "review something carefully"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “go over”.",
+      "personalUse": "Write one realistic adult-life sentence using “go over”.",
+      "laterReview": "Reuse “go over” in a later review or conversation."
+    },
+    "sceneId": "office-2-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/go-over",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/go-over",
+      "finding": "Workbook evidence supports the taught sense and pattern for go over; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "office-3-core-1",
+    "lessonId": "office-3",
+    "slot": "core-1",
+    "unitId": "office",
+    "phrase": "review a document",
+    "kind": "collocation",
+    "meaning": "read a document carefully before action is taken",
+    "arabicMeaning": "يراجع مستندا",
+    "example": "She reviewed the document before sending it to the manager.",
+    "learnerPurpose": "Use “review a document” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "B2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/review",
+    "check": {
+      "question": "Which phrase matches this meaning: read a document carefully before action is taken",
+      "expectedAnswer": "review a document",
+      "explanation": "read a document carefully before action is taken"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “review a document”.",
+      "personalUse": "Write one realistic adult-life sentence using “review a document”.",
+      "laterReview": "Reuse “review a document” in a later review or conversation."
+    },
+    "sceneId": "office-3-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/review",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/review-a-document",
+      "finding": "Workbook evidence supports the taught sense and pattern for review a document; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "office-3-core-2",
+    "lessonId": "office-3",
+    "slot": "core-2",
+    "unitId": "office",
+    "phrase": "Can we move this to tomorrow?",
+    "kind": "everyday-expression",
+    "meaning": "ask to reschedule a task or meeting",
+    "arabicMeaning": "هل يمكننا نقل هذا إلى الغد؟",
+    "example": "Can we move this to tomorrow because two people are unavailable?",
+    "learnerPurpose": "Use “Can we move this to tomorrow?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "B2",
+    "register": "workplace professional",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/move",
+    "check": {
+      "question": "Which phrase matches this meaning: ask to reschedule a task or meeting",
+      "expectedAnswer": "Can we move this to tomorrow?",
+      "explanation": "ask to reschedule a task or meeting"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Can we move this to tomorrow?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Can we move this to tomorrow?”.",
+      "laterReview": "Reuse “Can we move this to tomorrow?” in a later review or conversation."
+    },
+    "sceneId": "office-3-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/move",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/can-we-move-this-to-tomorrow",
+      "finding": "Workbook evidence supports the taught sense and pattern for Can we move this to tomorrow?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "office-3-optional-1",
+    "lessonId": "office-3",
+    "slot": "optional-1",
+    "unitId": "office",
+    "phrase": "follow up",
+    "kind": "phrasal-verb",
+    "meaning": "contact someone again or take the next action after an earlier step",
+    "arabicMeaning": "يتابع",
+    "example": "I followed up by email after the meeting.",
+    "learnerPurpose": "Use “follow up” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "C1",
+    "register": "workplace professional",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/follow-up",
+    "check": {
+      "question": "Which phrase matches this meaning: contact someone again or take the next action after an earlier step",
+      "expectedAnswer": "follow up",
+      "explanation": "contact someone again or take the next action after an earlier step"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “follow up”.",
+      "personalUse": "Write one realistic adult-life sentence using “follow up”.",
+      "laterReview": "Reuse “follow up” in a later review or conversation."
+    },
+    "sceneId": "office-3-usage-scene-3",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/follow-up",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/follow-up",
+      "finding": "Workbook evidence supports the taught sense and pattern for follow up; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "office-4-core-1",
+    "lessonId": "office-4",
+    "slot": "core-1",
+    "unitId": "office",
+    "phrase": "take meeting minutes",
+    "kind": "collocation",
+    "meaning": "write the official notes of a meeting",
+    "arabicMeaning": "يدون محضر الاجتماع",
+    "example": "The assistant took meeting minutes during the weekly review.",
+    "learnerPurpose": "Use “take meeting minutes” accurately in a realistic adult context.",
+    "pattern": "Keep the key words together in this collocation; use normal article and preposition patterns.",
+    "cefrStage": "B2",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/take",
+    "check": {
+      "question": "Which phrase matches this meaning: write the official notes of a meeting",
+      "expectedAnswer": "take meeting minutes",
+      "explanation": "write the official notes of a meeting"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “take meeting minutes”.",
+      "personalUse": "Write one realistic adult-life sentence using “take meeting minutes”.",
+      "laterReview": "Reuse “take meeting minutes” in a later review or conversation."
+    },
+    "sceneId": "office-4-usage-scene-1",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/take",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/take-meeting-minutes",
+      "finding": "Workbook evidence supports the taught sense and pattern for take meeting minutes; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "office-4-core-2",
+    "lessonId": "office-4",
+    "slot": "core-2",
+    "unitId": "office",
+    "phrase": "Could you send me the latest version?",
+    "kind": "everyday-expression",
+    "meaning": "politely ask someone to send the most recent document",
+    "arabicMeaning": "هل يمكنك إرسال أحدث نسخة إلي؟",
+    "example": "Could you send me the latest version before the meeting?",
+    "learnerPurpose": "Use “Could you send me the latest version?” accurately in a realistic adult context.",
+    "pattern": "Use the full expression with normal statement or question word order; avoid literal word-for-word translation.",
+    "cefrStage": "B2",
+    "register": "workplace professional",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/latest",
+    "check": {
+      "question": "Which phrase matches this meaning: politely ask someone to send the most recent document",
+      "expectedAnswer": "Could you send me the latest version?",
+      "explanation": "politely ask someone to send the most recent document"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “Could you send me the latest version?”.",
+      "personalUse": "Write one realistic adult-life sentence using “Could you send me the latest version?”.",
+      "laterReview": "Reuse “Could you send me the latest version?” in a later review or conversation."
+    },
+    "sceneId": "office-4-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/latest",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/could-you-send-me-the-latest-version",
+      "finding": "Workbook evidence supports the taught sense and pattern for Could you send me the latest version?; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
+    }
+  },
+  {
+    "id": "office-4-optional-1",
+    "lessonId": "office-4",
+    "slot": "optional-1",
+    "unitId": "office",
+    "phrase": "bring up",
+    "kind": "phrasal-verb",
+    "meaning": "introduce a topic for discussion",
+    "arabicMeaning": "يطرح موضوعا",
+    "example": "She brought up the budget issue during the meeting.",
+    "learnerPurpose": "Use “bring up” accurately in a realistic adult context.",
+    "pattern": "Keep the particle with the verb and check whether an object can separate the two parts.",
+    "cefrStage": "C1",
+    "register": "neutral",
+    "frequencyEvidence": "High-utility adult-learning phrase selected for frequent communicative use in this domain; no unsupported numerical corpus rank is claimed.",
+    "evidenceUrl": "https://dictionary.cambridge.org/dictionary/english/bring-up",
+    "check": {
+      "question": "Which phrase matches this meaning: introduce a topic for discussion",
+      "expectedAnswer": "bring up",
+      "explanation": "introduce a topic for discussion"
+    },
+    "practice": {
+      "retrieval": "Complete a sentence using “bring up”.",
+      "personalUse": "Write one realistic adult-life sentence using “bring up”.",
+      "laterReview": "Reuse “bring up” in a later review or conversation."
+    },
+    "sceneId": "office-4-usage-scene-2",
+    "sourceStatus": "Workbook evidence and editorial approval recorded; runtime review fields completed on 2026-10-06.",
+    "sourceReview": {
+      "status": "verified-online",
+      "reviewedAt": "2026-10-06",
+      "primaryUrl": "https://dictionary.cambridge.org/dictionary/english/bring-up",
+      "secondaryUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/bring-up",
+      "finding": "Workbook evidence supports the taught sense and pattern for bring up; Arabic meaning and CEFR label were retained from the approved editorial row."
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewer": "Editorial Agent - GPT-5.6 Sol",
+      "revision": "Rev 1.0"
     }
   }
 ]

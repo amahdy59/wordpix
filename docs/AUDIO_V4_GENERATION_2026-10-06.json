@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-10-06T18:01:55.636Z",
+  "model": "eleven_v4",
+  "voiceId": "XfNU2rGpBa01ckF309OY",
+  "storage": "Cloudflare R2; content-addressed additive uploads; existing objects skipped",
+  "corpusTotals": {
+    "total": 1376,
+    "phrases": 240,
+    "phraseExamples": 272,
+    "paragraphs": 864
+  },
+  "ledgerTotals": {
+    "total": 1238,
+    "phrases": 240,
+    "paragraphs": 726,
+    "phrase-examples": 272
+  },
+  "remaining": {
+    "clips": 138,
+    "characters": 97018,
+    "byTier": {
+      "phrases": 0,
+      "phrase-examples": 0,
+      "paragraphs": 138
+    }
+  },
+  "notes": [
+    "Existing v2.5 audio was preserved.",
+    "No audio object was deleted or overwritten.",
+    "The app tries the current profile first and v4 as a fallback for legacy/current asset URLs."
+  ]
+}

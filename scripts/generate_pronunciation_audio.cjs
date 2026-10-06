@@ -133,7 +133,7 @@ async function main() {
       `Planned corpus is ${plannedChars} characters; provide --max-chars at or above that amount.`
     );
   }
-  const apiKey = process.env.ELEVENLABS_API_KEY;
+  const apiKey = process.env.ELEVENLABS_API_KEY || process.env.Elevenlabs_API_key;
   if (!apiKey) throw new Error("ELEVENLABS_API_KEY is missing from .env.local.");
   await r2.verify();
 

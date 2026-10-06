@@ -44,71 +44,76 @@
       "أكبر الأبناء"
     ],
     "usage": {
-      "goal": "Talk about family members, family activities, and simple family values.",
-      "canDoStatement": "I can talk about family members, family activities, and simple family values",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to identify close family members and describe basic family relationships.",
+      "canDoStatement": "Can name close family members and understand simple statements about family relationships.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Mother", "Father", "Sister"],
-          "scenario": "In my family, I can talk about mother, father, and sister.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Mother, Father, and Sister. The person, activity, or relationship to identify is the female parent.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Mother", "Father", "Sister"],
+            "question": "Which option best matches the family relationship, activity, or value described?",
+            "options": ["Father", "Sister", "Mother"],
             "expectedAnswer": "Mother"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: In my family, I can talk about mother, father, and sister. Emphasize mother, father, and sister and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Mother, Father, and Sister through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Brother", "Son", "Daughter"],
-          "scenario": "In my family, I can talk about brother, son, and daughter.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Brother, Son, and Daughter. The person, activity, or relationship to identify is a male sibling.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Brother", "Son", "Daughter"],
+            "question": "Which option best matches the family relationship, activity, or value described?",
+            "options": ["Daughter", "Brother", "Son"],
             "expectedAnswer": "Brother"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: In my family, I can talk about brother, son, and daughter. Emphasize brother, son, and daughter and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Brother, Son, and Daughter through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Parents", "Siblings", "Baby"],
-          "scenario": "In my family, I can talk about parents, siblings, and baby.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Parents, Siblings, and Baby. The person, activity, or relationship to identify are the mother and father or people acting as parents.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which option best matches the family relationship, activity, or value described?",
             "options": ["Parents", "Siblings", "Baby"],
             "expectedAnswer": "Parents"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: In my family, I can talk about parents, siblings, and baby. Emphasize parents, siblings, and baby and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Parents, Siblings, and Baby through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Twin", "Mom", "Dad"],
-          "scenario": "In my family, I can talk about twin, mom, and dad.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Twin, Mom, and Dad. The person, activity, or relationship to identify is one of two children born at the same time to the same mother.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Twin", "Mom", "Dad"],
+            "question": "Which option best matches the family relationship, activity, or value described?",
+            "options": ["Mom", "Dad", "Twin"],
             "expectedAnswer": "Twin"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: In my family, I can talk about twin, mom, and dad. Emphasize twin, mom, and dad and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Twin, Mom, and Dad through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Big Sister", "Little Brother", "Oldest Child"],
-          "scenario": "In my family, I can talk about big sister, little brother, and oldest child.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Big Sister, Little Brother, and Oldest Child. The person, activity, or relationship to identify is an older sister.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Big Sister", "Little Brother", "Oldest Child"],
+            "question": "Which option best matches the family relationship, activity, or value described?",
+            "options": ["Oldest Child", "Big Sister", "Little Brother"],
             "expectedAnswer": "Big Sister"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: In my family, I can talk about big sister, little brother, and oldest child. Emphasize big sister, little brother, and oldest child and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Big Sister, Little Brother, and Oldest Child through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         }
       ]
     },
     "reading": {
-      "title": "The Family Mini Story",
-      "text": "Today we are at home with the family. We talk about mother, father, sister, and brother. Later, everyone spends time together and uses words like son, daughter, and parents. It is a simple family moment, and we practice the new words together. We also remember earlier words such as hungry and thirsty.",
+      "title": "Talking About a Family Photo",
+      "text": "Nadia shows a new colleague a family photo on her phone. She points to her mother and father, then introduces her sister and brother. She also explains which people are her parents and siblings and mentions that one relative has a baby. The conversation stays simple and friendly, helping the colleague understand who each person is.",
       "imageBrief": "One uncluttered the family scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -148,7 +153,7 @@
     "video": {
       "title": "The Family: See It, Say It",
       "idea": "30–50 second contextual video set in a home. Show mother, father, sister, brother, and son naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see mother, father, and sister. What can you find next?"
+      "scriptStarter": "Watch the situation: In a family photo, the mother stands on the left, the father in the centre, and their adult daughter, who is also a sister, stands on the right. The mother is holding the photo album."
     },
     "spacedReview": "1 lesson(s) back: Hungry, Thirsty from basic-emotions-3\n3 lesson(s) back: Happy, Joyful from basic-emotions-1\n7 lesson(s) back: Circle, Square from shapes-geometry-1"
   },
@@ -197,71 +202,76 @@
       "مساعدة في الواجب المنزلي"
     ],
     "usage": {
-      "goal": "Talk about family members, family activities, and simple family values.",
-      "canDoStatement": "I can talk about family members, family activities, and simple family values",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to talk about family roles, shared routines, and common activities.",
+      "canDoStatement": "Can understand simple descriptions of family roles and everyday activities done together.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Youngest Child", "Middle Child", "Only Child"],
-          "scenario": "Our family enjoys youngest child, middle child, and only child together.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Youngest Child, Middle Child, and Only Child. The person, activity, or relationship to identify is younger than all the other children in the family.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Youngest Child", "Middle Child", "Only Child"],
+            "question": "Which option best matches the family relationship, activity, or value described?",
+            "options": ["Only Child", "Youngest Child", "Middle Child"],
             "expectedAnswer": "Youngest Child"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: Our family enjoys youngest child, middle child, and only child together. Emphasize youngest child, middle child, and only child and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Youngest Child, Middle Child, and Only Child through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Stepmother", "Stepfather", "Family Dinner"],
-          "scenario": "Our family enjoys stepmother, stepfather, and family dinner together.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Stepmother, Stepfather, and Family Dinner. The person, activity, or relationship to identify is the father's wife who is not the biological mother.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which option best matches the family relationship, activity, or value described?",
             "options": ["Stepmother", "Stepfather", "Family Dinner"],
             "expectedAnswer": "Stepmother"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: Our family enjoys stepmother, stepfather, and family dinner together. Emphasize stepmother, stepfather, and family dinner and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Stepmother, Stepfather, and Family Dinner through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Game Night", "Road Trip", "Holiday Gathering"],
-          "scenario": "Our family enjoys game night, road trip, and holiday gathering together.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Game Night, Road Trip, and Holiday Gathering. The person, activity, or relationship to identify is an evening planned for playing games together.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Game Night", "Road Trip", "Holiday Gathering"],
+            "question": "Which option best matches the family relationship, activity, or value described?",
+            "options": ["Road Trip", "Holiday Gathering", "Game Night"],
             "expectedAnswer": "Game Night"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: Our family enjoys game night, road trip, and holiday gathering together. Emphasize game night, road trip, and holiday gathering and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Game Night, Road Trip, and Holiday Gathering through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Movie Night", "Cooking Together", "Bedtime Story"],
-          "scenario": "Our family enjoys movie night, cooking together, and bedtime story together.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Movie Night, Cooking Together, and Bedtime Story. The person, activity, or relationship to identify is an evening planned for watching a film together.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Movie Night", "Cooking Together", "Bedtime Story"],
+            "question": "Which option best matches the family relationship, activity, or value described?",
+            "options": ["Bedtime Story", "Movie Night", "Cooking Together"],
             "expectedAnswer": "Movie Night"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: Our family enjoys movie night, cooking together, and bedtime story together. Emphasize movie night, cooking together, and bedtime story and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Movie Night, Cooking Together, and Bedtime Story through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Morning Routine", "Family Photo", "Homework Help"],
-          "scenario": "Our family enjoys morning routine, family photo, and homework help together.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Morning Routine, Family Photo, and Homework Help. The person, activity, or relationship to identify is the usual set of activities done after waking.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which option best matches the family relationship, activity, or value described?",
             "options": ["Morning Routine", "Family Photo", "Homework Help"],
             "expectedAnswer": "Morning Routine"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: Our family enjoys morning routine, family photo, and homework help together. Emphasize morning routine, family photo, and homework help and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Morning Routine, Family Photo, and Homework Help through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         }
       ]
     },
     "reading": {
-      "title": "The Family Mini Story",
-      "text": "Today we are at home with the family. We talk about youngest child, middle child, only child, and stepmother. Later, everyone spends time together and uses words like stepfather, family dinner, and game night. It is a simple family moment, and we practice the new words together. We also remember earlier words such as mother and father.",
+      "title": "Planning a Family Weekend",
+      "text": "A family is planning a weekend together. The youngest child wants game night, while the middle child suggests a movie night and the only child from another household joins the visit. Their stepmother and stepfather help organize a family dinner and a short road trip. Everyone also plans a family photo before the weekend ends.",
       "imageBrief": "One uncluttered the family scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -301,7 +311,7 @@
     "video": {
       "title": "The Family: See It, Say It",
       "idea": "30–50 second contextual video set in a home. Show youngest child, middle child, only child, stepmother, and stepfather naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see youngest child, middle child, and only child. What can you find next?"
+      "scriptStarter": "Watch the situation: At a video call, the people or family ideas youngest child, middle child, and only child are part of the situation. The highlighted detail represents youngest child."
     },
     "spacedReview": "1 lesson(s) back: Mother, Father from family-1\n3 lesson(s) back: Disappointed, Upset from basic-emotions-2\n7 lesson(s) back: Prism, Cuboid from shapes-geometry-2"
   },
@@ -336,64 +346,68 @@
       "توجيه",
       "انضباط",
       "مودة",
-      "سند",
+      "رابطة",
       "تراث"
     ],
     "usage": {
-      "goal": "Talk about family members, family activities, and simple family values.",
-      "canDoStatement": "I can talk about family members, family activities, and simple family values",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to talk about support, care, trust, and other qualities in family relationships.",
+      "canDoStatement": "Can understand and use simple words for positive family support and relationships.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Love", "Trust", "Support"],
-          "scenario": "A strong family can show love, trust, and support.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Love, Trust, and Support. The person, activity, or relationship to identify is a strong feeling of affection and care.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which option best matches the family relationship, activity, or value described?",
             "options": ["Love", "Trust", "Support"],
             "expectedAnswer": "Love"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: A strong family can show love, trust, and support. Emphasize love, trust, and support and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Love, Trust, and Support through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Care", "Protection", "Guidance"],
-          "scenario": "A strong family can show care, protection, and guidance.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Care, Protection, and Guidance. The person, activity, or relationship to identify means attending to someone's needs and well-being.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Care", "Protection", "Guidance"],
+            "question": "Which option best matches the family relationship, activity, or value described?",
+            "options": ["Protection", "Guidance", "Care"],
             "expectedAnswer": "Care"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: A strong family can show care, protection, and guidance. Emphasize care, protection, and guidance and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Care, Protection, and Guidance through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Discipline", "Affection", "Bond"],
-          "scenario": "A strong family can show discipline, affection, and bond.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Discipline, Affection, and Bond. The person, activity, or relationship to identify means controlled behaviour and fair rules.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Discipline", "Affection", "Bond"],
+            "question": "Which option best matches the family relationship, activity, or value described?",
+            "options": ["Bond", "Discipline", "Affection"],
             "expectedAnswer": "Discipline"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: A strong family can show discipline, affection, and bond. Emphasize discipline, affection, and bond and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Discipline, Affection, and Bond through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         },
         {
           "chunkNumber": 4,
           "targetWords": "Heritage",
-          "scenario": "A strong family can show heritage.",
+          "scenario": "At an adult family conversation or gathering, the situation includes Heritage. The person, activity, or relationship to identify includes traditions and culture passed through generations.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": "Heritage",
+            "question": "Which option best matches the family relationship, activity, or value described?",
+            "options": ["Heritage", "Love", "Trust"],
             "expectedAnswer": "Heritage"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for the family that represents: A strong family can show heritage. Emphasize heritage and avoid clutter."
+          "imageBrief": "Photorealistic respectful adult family setting illustrating Heritage through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "Family members take part in an everyday home or gathering scene."
         }
       ]
     },
     "reading": {
-      "title": "The Family Mini Story",
-      "text": "Today we are at home with the family. We talk about love, trust, support, and care. Later, everyone spends time together and uses words like protection, guidance, and discipline. It is a simple family moment, and we practice the new words together. We also remember earlier words such as youngest child and middle child.",
+      "title": "Supporting Each Other",
+      "text": "Strong family relationships often grow through love, trust, support, and care. Adults may offer protection and guidance when someone faces a difficult decision. Affection can strengthen a bond, while fair discipline helps set clear limits. Families may also share stories, traditions, and heritage that connect younger and older generations. over time.",
       "imageBrief": "One uncluttered the family scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -429,7 +443,7 @@
     "video": {
       "title": "The Family: See It, Say It",
       "idea": "30–50 second contextual video set in a home. Show love, trust, support, care, and protection naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see love, trust, and support. What can you find next?"
+      "scriptStarter": "Watch the situation: At a holiday gathering, the people or family ideas love, trust, and support are part of the situation. The highlighted detail represents love."
     },
     "spacedReview": "1 lesson(s) back: Youngest Child, Middle Child from family-2\n3 lesson(s) back: Hungry, Thirsty from basic-emotions-3\n7 lesson(s) back: Area, Perimeter from shapes-geometry-3"
   }

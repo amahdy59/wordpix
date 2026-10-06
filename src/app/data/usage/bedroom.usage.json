@@ -27,88 +27,93 @@
       "Duvet"
     ],
     "targetWordsArabic": [
-      "سَرِير",
-      "طَاوِلَةُ السَّرِير (كُمودِينَة)",
-      "خِزَانَةُ الأَدْرَاج (تَسْرِيحَة)",
-      "خِزَانَةُ المَلابِس (دُولاب)",
-      "مَكْتَب",
-      "كُرْسِيّ",
-      "رَفُّ الكُتُب / مَكْتَبَةٌ حَائِطِيَّة",
-      "مِرْآة",
-      "كُرْسِيٌّ صَغِير (طَبْلِيَّة / مَقْعَدٌ بِلَا ظَهْر)",
-      "خِزَانَةُ أَدْرَاج",
-      "وِسَادَة / مِخَدَّة",
-      "بَطَّانِيَّة",
-      "شَرْشَف / مِلايَةُ السَّرِير",
-      "مَرْتَبَة",
-      "لِحَاف (دُوفِيه)"
+      "سرير",
+      "طاولة بجانب السرير",
+      "خزانة ذات أدراج",
+      "خزانة ملابس",
+      "مكتب",
+      "كرسي",
+      "رف كتب",
+      "مرآة",
+      "مقعد بلا ظهر",
+      "خزانة أدراج",
+      "وسادة",
+      "بطانية",
+      "ملاءة سرير",
+      "مرتبة",
+      "لحاف"
     ],
     "usage": {
-      "goal": "Recognize and use common bedroom vocabulary in practical home routines.",
-      "canDoStatement": "I can describe where common bedroom objects are and how I use them",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to name common bedroom furniture and bedding and describe where items are placed.",
+      "canDoStatement": "Can identify common bedroom furniture and bedding and say where basic items are.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bed", "Nightstand", "Dresser"],
-          "scenario": "Maya makes the bed, leaves her phone on the nightstand, and puts clean clothes in the dresser.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews bed, nightstand, and dresser. They need the item that is a small table kept beside a bed.",
           "check": {
-            "question": "Where does Maya leave her phone?",
-            "options": ["Bed", "Nightstand", "Dresser"],
+            "question": "Which item best matches what the tenant needs?",
+            "options": ["Bed", "Dresser", "Nightstand"],
             "expectedAnswer": "Nightstand"
           },
-          "imageBrief": "An adult making a bed, with a phone on the nightstand and folded clothes going into a dresser."
+          "imageBrief": "Photorealistic adult bedroom showing Bed, Nightstand, and Dresser naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Wardrobe", "Desk", "Chair"],
-          "scenario": "Omar hangs his jacket in the wardrobe, then sits on the chair at his desk.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews wardrobe, desk, and chair. They need the item that is a tall cupboard for hanging and storing clothes.",
           "check": {
-            "question": "Where does Omar hang his jacket?",
-            "options": ["Wardrobe", "Desk", "Chair"],
+            "question": "Which item best matches what the tenant needs?",
+            "options": ["Chair", "Wardrobe", "Desk"],
             "expectedAnswer": "Wardrobe"
           },
-          "imageBrief": "An adult hanging a jacket inside a wardrobe before sitting on a chair at a bedroom desk."
+          "imageBrief": "Photorealistic adult bedroom showing Wardrobe, Desk, and Chair naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bookshelf", "Mirror", "Stool"],
-          "scenario": "A stool stands below the mirror, and the bookshelf beside it holds Maya's books.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews bookshelf, mirror, and stool. They need the item that is a simple seat without a back.",
           "check": {
-            "question": "What stands below the mirror?",
-            "options": ["Bookshelf", "Mirror", "Stool"],
+            "question": "Which item best matches what the tenant needs?",
+            "options": ["Stool", "Bookshelf", "Mirror"],
             "expectedAnswer": "Stool"
           },
-          "imageBrief": "A bedroom corner with a stool directly below a mirror and a bookshelf full of books beside it."
+          "imageBrief": "Photorealistic adult bedroom showing Bookshelf, Mirror, and Stool naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Chest of Drawers", "Pillow", "Blanket"],
-          "scenario": "Leila takes a blanket from the chest of drawers and places a pillow at the top of the bed.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews chest of drawers, pillow, and blanket. They need the item that has several drawers for storing clothes.",
           "check": {
-            "question": "Where was the blanket?",
-            "options": ["Chest of Drawers", "Pillow", "Blanket"],
+            "question": "Which piece of furniture is highlighted for the move?",
+            "options": ["Pillow", "Blanket", "Chest of Drawers"],
             "expectedAnswer": "Chest of Drawers"
           },
-          "imageBrief": "An adult taking a folded blanket from a chest of drawers while a pillow rests at the top of the bed."
+          "imageBrief": "Photorealistic adult bedroom showing Chest of Drawers, Pillow, and Blanket naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Sheet", "Mattress", "Duvet"],
-          "scenario": "Samir spreads the sheet over the mattress and lays the duvet on top.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews sheet, mattress, and duvet. They need the item that is a piece of bed linen placed on or over the mattress.",
           "check": {
-            "question": "What does Samir put directly over the mattress?",
-            "options": ["Sheet", "Mattress", "Duvet"],
+            "question": "Which item best matches what the tenant needs?",
+            "options": ["Duvet", "Sheet", "Mattress"],
             "expectedAnswer": "Sheet"
           },
-          "imageBrief": "An adult making a bed by spreading a sheet over the mattress and placing a duvet on top."
+          "imageBrief": "Photorealistic adult bedroom showing Sheet, Mattress, and Duvet naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         }
       ]
     },
     "reading": {
-      "title": "Making the Bedroom Ready",
-      "text": "Maya makes the bed before work. She spreads a sheet over the mattress and places the duvet and blanket on top. Her phone stays on the nightstand. She hangs a jacket in the wardrobe, puts clean clothes in the dresser, and sits at the desk to check her plans.",
+      "title": "Setting Up a New Bedroom",
+      "text": "A tenant checks the bedroom before unpacking. The bed is beside a nightstand, while a dresser and wardrobe provide storage for clothes. A desk, chair, bookshelf, mirror, and stool complete the work and dressing area. The tenant also checks the pillow, blanket, sheet, mattress, and duvet before reporting any damaged or missing item.",
       "imageBrief": "Show the adult home routine from “Making the Bedroom Ready” with the important bedroom objects naturally arranged and no written labels."
     },
     "exercises": [
@@ -197,88 +202,93 @@
       "Outlet"
     ],
     "targetWordsArabic": [
-      "غِطَاءُ الوِسَادَة (كِيسُ المِخَدَّة)",
-      "لِحَافٌ مَحْشُوّ (كُوڤِرْتَه / لِحَاف)",
-      "وِسَادَةُ زِينَة (خُدَّادِيَّة)",
-      "هَيْكَلُ السَّرِير (شَاسِيه السَّرِير)",
-      "خَلْفِيَّةُ السَّرِير (ظَهْرُ السَّرِير)",
-      "مِصْبَاح (أَبَاجُورَة)",
-      "سِتَارَة",
-      "نَافِذَة (شُبَّاك)",
-      "بَاب",
-      "سَجَّادَةٌ صَغِيرَة (مَشَّايَة)",
-      "مَوْكِيت / سَجَّادٌ شَامِل",
-      "إِضَاءَةُ السَّقْف (نَجَفَة / مِصْبَاحُ السَّقْف)",
-      "مِفْتَاحُ الإِضَاءَة (زِرُّ النُّور)",
-      "سَتَائِرُ النَّافِذَة (شِيش / سَتَائِر مَعْدَنِيَّة)",
-      "مِقْبَسُ الكَهْرَبَاء (فِيشَة / بَرِيزَة)"
+      "غطاء وسادة",
+      "لحاف سميك مبطن",
+      "وسادة زينة",
+      "هيكل السرير",
+      "لوح رأس السرير",
+      "مصباح",
+      "ستارة",
+      "نافذة",
+      "باب",
+      "سجادة صغيرة",
+      "سجاد",
+      "مصباح سقفي",
+      "مفتاح الإضاءة",
+      "ستائر شرائحية",
+      "مقبس كهربائي"
     ],
     "usage": {
-      "goal": "Recognize and use common bedroom vocabulary in practical home routines.",
-      "canDoStatement": "I can describe where common bedroom objects are and how I use them",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to name bedroom fittings, soft furnishings, and basic electrical features.",
+      "canDoStatement": "Can identify common bedroom fittings and say how simple items such as lamps, curtains, and outlets are used.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pillowcase", "Comforter", "Cushion"],
-          "scenario": "Nadia puts a pillowcase on the pillow, pulls the comforter over the bed, and adds a cushion for decoration.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews pillowcase, comforter, and cushion. They need the item that is a thick padded bed covering.",
           "check": {
-            "question": "What does Nadia pull over the bed?",
-            "options": ["Pillowcase", "Comforter", "Cushion"],
+            "question": "Which item best matches what the tenant needs?",
+            "options": ["Cushion", "Comforter", "Pillowcase"],
             "expectedAnswer": "Comforter"
           },
-          "imageBrief": "An adult making a bed with a pillowcase, a comforter covering the bed, and a decorative cushion."
+          "imageBrief": "Photorealistic adult bedroom showing Pillowcase, Comforter, and Cushion naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bed Frame", "Headboard", "Lamp"],
-          "scenario": "The bed frame supports the mattress, the headboard is behind it, and a lamp stands beside the bed.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews bed frame, headboard, and lamp. They need the item that supports the mattress.",
           "check": {
-            "question": "What supports the mattress?",
+            "question": "Which item best matches what the tenant needs?",
             "options": ["Bed Frame", "Headboard", "Lamp"],
             "expectedAnswer": "Bed Frame"
           },
-          "imageBrief": "A cutaway-style bedroom view clearly showing a bed frame below the mattress, a headboard behind it, and a bedside lamp."
+          "imageBrief": "Photorealistic adult bedroom showing Bed Frame, Headboard, and Lamp naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Curtain", "Window", "Door"],
-          "scenario": "Hassan opens the curtain to let light through the window, then closes the bedroom door.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews curtain, window, and door. They need the item that covers a window for privacy or to block light.",
           "check": {
-            "question": "What does Hassan open at the window?",
-            "options": ["Curtain", "Window", "Door"],
+            "question": "Which item best matches what the tenant needs?",
+            "options": ["Window", "Door", "Curtain"],
             "expectedAnswer": "Curtain"
           },
-          "imageBrief": "An adult opening a curtain at a bright bedroom window while the room door is partly closed."
+          "imageBrief": "Photorealistic adult bedroom showing Curtain, Window, and Door naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Rug", "Carpet", "Ceiling Light"],
-          "scenario": "A small rug lies over part of the carpet, and the ceiling light shines above both.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews rug, carpet, and ceiling light. They need the item that covers a large part or all of the floor.",
           "check": {
-            "question": "What is under the small rug?",
-            "options": ["Rug", "Carpet", "Ceiling Light"],
+            "question": "Which item best matches what the tenant needs?",
+            "options": ["Ceiling Light", "Carpet", "Rug"],
             "expectedAnswer": "Carpet"
           },
-          "imageBrief": "A clearly bounded rug lying over a larger fitted carpet, with a ceiling light above."
+          "imageBrief": "Photorealistic adult bedroom showing Rug, Carpet, and Ceiling Light naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Light Switch", "Blinds", "Outlet"],
-          "scenario": "Rana presses the light switch, lowers the blinds, and plugs her charger into the outlet.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews light switch, blinds, and outlet. They need the item that provides a socket for an electrical plug.",
           "check": {
-            "question": "Where does Rana plug in her charger?",
-            "options": ["Light Switch", "Blinds", "Outlet"],
+            "question": "Which item best matches what the tenant needs?",
+            "options": ["Outlet", "Light Switch", "Blinds"],
             "expectedAnswer": "Outlet"
           },
-          "imageBrief": "An adult plugging a charger into a wall outlet; a light switch and lowered window blinds are also clearly visible."
+          "imageBrief": "Photorealistic adult bedroom showing Light Switch, Blinds, and Outlet naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         }
       ]
     },
     "reading": {
-      "title": "A Brighter, Tidier Room",
-      "text": "Nadia changes the pillowcase and pulls the comforter over the bed. She opens the curtain and raises the blinds to let light through the window. A small rug lies over the carpet. Before leaving, she switches off the ceiling light and checks the outlet.",
+      "title": "Finishing the Guest Room",
+      "text": "Before a guest arrives, Sara checks the bedding and room fittings. She puts a clean pillowcase on the pillow, straightens the comforter, and moves a cushion onto the chair. She checks the bed frame, headboard, lamp, curtains, blinds, and window. Finally, she tests the ceiling light, light switch, and electrical outlet.",
       "imageBrief": "Show the adult home routine from “A Brighter, Tidier Room” with the important bedroom objects naturally arranged and no written labels."
     },
     "exercises": [
@@ -367,88 +377,93 @@
       "Poster"
     ],
     "targetWordsArabic": [
-      "سَاعَةُ المُنَبِّه (مُنَبِّه)",
-      "إِطَارُ الصُّورَة (بِرْوَاز)",
-      "سَاعَةُ حَائِط / سَاعَة",
-      "نَبْتَة مَنْزِلِيَّة (زَرْع)",
-      "زَهْرِيَّة (فَازَة)",
-      "شَمْعَة",
-      "تَقْوِيم (نَتِيجَة)",
-      "عُلْبَةُ المَنَادِيل",
-      "سَلَّةُ المُهْمَلات",
-      "شَمَّاعَةُ مَلابِس",
-      "بِي جَامَة / مَلابِسُ النَّوْم",
-      "شَبْشَب / خُفّ مَنْزِلِيّ",
-      "رُوب حَمَّام / بُرْنُس",
-      "دُبٌّ لُعْبَة (دُبٌّ قُمَاشِيّ)",
-      "مُلْصَقٌ جِدَارِيّ (بُوسْتَر)"
+      "ساعة منبه",
+      "إطار صورة",
+      "ساعة",
+      "نبتة منزلية",
+      "مزهرية",
+      "شمعة",
+      "تقويم",
+      "علبة مناديل",
+      "سلة مهملات",
+      "شماعة ملابس",
+      "ملابس نوم",
+      "خف منزلي",
+      "رداء منزلي",
+      "دمية دب",
+      "ملصق جداري"
     ],
     "usage": {
-      "goal": "Recognize and use common bedroom vocabulary in practical home routines.",
-      "canDoStatement": "I can describe where common bedroom objects are and how I use them",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to name small bedroom objects, clothing items, and personal room accessories.",
+      "canDoStatement": "Can identify common bedroom accessories and understand simple statements about where they belong.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Alarm Clock", "Picture Frame", "Clock"],
-          "scenario": "The alarm clock wakes Karim at seven; a picture frame is beside it, and a wall clock hangs above the desk.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews alarm clock, picture frame, and clock. They need the item that makes a sound at a set time.",
           "check": {
-            "question": "What wakes Karim at seven?",
+            "question": "Which item best matches what the tenant needs?",
             "options": ["Alarm Clock", "Picture Frame", "Clock"],
             "expectedAnswer": "Alarm Clock"
           },
-          "imageBrief": "A ringing alarm clock beside a picture frame, with a separate wall clock above a bedroom desk."
+          "imageBrief": "Photorealistic adult bedroom showing Alarm Clock, Picture Frame, and Clock naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Plant", "Vase", "Candle"],
-          "scenario": "Salma waters the plant beside the vase while an unlit candle stays safely on the shelf.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews plant, vase, and candle. They need the item that is a living decorative plant kept indoors.",
           "check": {
-            "question": "What does Salma water?",
-            "options": ["Plant", "Vase", "Candle"],
+            "question": "Which item best matches what the tenant needs?",
+            "options": ["Vase", "Candle", "Plant"],
             "expectedAnswer": "Plant"
           },
-          "imageBrief": "An adult watering a bedroom plant beside a vase, with an unlit candle safely placed on a separate shelf."
+          "imageBrief": "Photorealistic adult bedroom showing Plant, Vase, and Candle naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Calendar", "Tissue Box", "Wastebasket"],
-          "scenario": "Tariq checks the calendar, takes a tissue from the tissue box, and puts the used tissue in the wastebasket.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews calendar, tissue box, and wastebasket. They need the item that holds small pieces of rubbish.",
           "check": {
-            "question": "Where does Tariq put the used tissue?",
-            "options": ["Calendar", "Tissue Box", "Wastebasket"],
+            "question": "Where should the used tissue go?",
+            "options": ["Tissue Box", "Wastebasket", "Calendar"],
             "expectedAnswer": "Wastebasket"
           },
-          "imageBrief": "An adult placing a used tissue into a wastebasket, with a calendar and tissue box clearly visible."
+          "imageBrief": "Photorealistic adult bedroom showing Calendar, Tissue Box, and Wastebasket naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Hanger", "Pajamas", "Slippers"],
-          "scenario": "Mona puts her shirt on a hanger, folds her pajamas, and leaves her slippers beside the wardrobe.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews hanger, pajamas, and slippers. They need the item that holds clothes in a wardrobe.",
           "check": {
-            "question": "What holds Mona's shirt?",
+            "question": "Which item best matches what the tenant needs?",
             "options": ["Hanger", "Pajamas", "Slippers"],
             "expectedAnswer": "Hanger"
           },
-          "imageBrief": "An adult placing a shirt on a hanger; folded pajamas and slippers beside a wardrobe remain visible."
+          "imageBrief": "Photorealistic adult bedroom showing Hanger, Pajamas, and Slippers naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Robe", "Teddy Bear", "Poster"],
-          "scenario": "A robe hangs behind the door, a teddy bear sits on the bed, and a poster is above the headboard.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews robe, teddy bear, and poster. They need the item that is a loose garment worn at home.",
           "check": {
-            "question": "What hangs behind the door?",
-            "options": ["Robe", "Teddy Bear", "Poster"],
+            "question": "Which item best matches what the tenant needs?",
+            "options": ["Teddy Bear", "Poster", "Robe"],
             "expectedAnswer": "Robe"
           },
-          "imageBrief": "A robe hanging behind a bedroom door, a teddy bear on the bed, and a poster above the headboard."
+          "imageBrief": "Photorealistic adult bedroom showing Robe, Teddy Bear, and Poster naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         }
       ]
     },
     "reading": {
-      "title": "Karim's Evening Routine",
-      "text": "Karim checks the calendar and sets his alarm clock. He puts a clean shirt on a hanger and folds his pajamas. His slippers stay beside the wardrobe, and his robe hangs behind the door. Before sleeping, he waters the plant and places the teddy bear on the bed.",
+      "title": "A Quick Evening Tidy-up",
+      "text": "Before sleeping, Yusuf tidies the room for the next morning. He sets the alarm clock, straightens a picture frame, and checks the calendar beside the desk. A tissue box and wastebasket stay within easy reach, while clothes go on a hanger. He places his pajamas, slippers, and robe neatly away and leaves the room ready for the night.",
       "imageBrief": "Show the adult home routine from “Karim's Evening Routine” with the important bedroom objects naturally arranged and no written labels."
     },
     "exercises": [
@@ -535,86 +550,91 @@
       "Remote Control"
     ],
     "targetWordsArabic": [
-      "كُتُب",
-      "أَلْبُومُ صُوَر",
-      "نَظَّارَات (نَظَّارَة)",
-      "حَقِيبَةُ ظَهْر",
-      "صُنْدُوقُ المَجَوْهَرَات",
-      "هَاتِف (مُوبَايِل)",
-      "شَاحِن",
-      "حَاسُوبٌ مَحْمُول (لَابْتُوب)",
-      "سَمَّاعَاتُ الرَّأْس (هَيْدْفُونْز)",
-      "جِهَازٌ لَوْحِيّ (تَابْلِت)",
-      "مُكَبِّرُ صَوْت (سَبِيكَر / سَمَّاعَة)",
-      "مِصْبَاحُ قِرَاءَة (كِشَّافُ القِرَاءَة)",
-      "جِهَازُ التَّحَكُّم عَنْ بُعْد (رِيمُوت)"
+      "كتب",
+      "ألبوم صور",
+      "نظارات",
+      "حقيبة ظهر",
+      "صندوق مجوهرات",
+      "هاتف محمول",
+      "شاحن",
+      "حاسوب محمول",
+      "سماعات رأس",
+      "جهاز لوحي",
+      "مكبر صوت",
+      "مصباح قراءة",
+      "جهاز تحكم عن بعد"
     ],
     "usage": {
-      "goal": "Recognize and use common the bedroom vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the bedroom words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to name common personal and electronic items kept in a bedroom.",
+      "canDoStatement": "Can identify everyday personal devices and belongings and say where they are kept or used.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Books", "Photo Album", "Glasses"],
-          "scenario": "Before bed, Hana puts her glasses on the photo album beside two books.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews books, photo album, and glasses. They need the item that are worn to help vision.",
           "check": {
-            "question": "What does Hana put on the photo album?",
+            "question": "Which item best matches what the tenant needs?",
             "options": ["Books", "Photo Album", "Glasses"],
             "expectedAnswer": "Glasses"
           },
-          "imageBrief": "A bedside table with two books, a closed photo album, and glasses resting on the album."
+          "imageBrief": "Photorealistic adult bedroom showing Books, Photo Album, and Glasses naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Backpack", "Jewelry Box", "Phone"],
-          "scenario": "Omar puts his phone in his backpack and leaves the jewelry box on the dresser.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews backpack, jewelry box, and phone. They need the item that is carried on the back with shoulder straps.",
           "check": {
-            "question": "Where does Omar put his phone?",
-            "options": ["Backpack", "Jewelry Box", "Phone"],
+            "question": "Which item best matches what the tenant needs?",
+            "options": ["Phone", "Backpack", "Jewelry Box"],
             "expectedAnswer": "Backpack"
           },
-          "imageBrief": "An adult placing a phone into an open backpack while a jewelry box sits on a nearby dresser."
+          "imageBrief": "Photorealistic adult bedroom showing Backpack, Jewelry Box, and Phone naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Charger", "Laptop", "Headphones"],
-          "scenario": "Maya connects the charger to her laptop and sets her headphones beside it.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews charger, laptop, and headphones. They need the item that puts electrical energy into a battery.",
           "check": {
-            "question": "What does Maya connect to the laptop?",
+            "question": "Which item best matches what the tenant needs?",
             "options": ["Charger", "Laptop", "Headphones"],
             "expectedAnswer": "Charger"
           },
-          "imageBrief": "A tidy bedroom desk with a laptop connected to a charger and headphones beside the computer."
+          "imageBrief": "Photorealistic adult bedroom showing Charger, Laptop, and Headphones naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Tablet", "Speaker", "Reading Light"],
-          "scenario": "The tablet is playing music through the speaker under the reading light.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews tablet, speaker, and reading light. They need the item that is a portable touchscreen computer.",
           "check": {
-            "question": "What is playing music?",
-            "options": ["Tablet", "Speaker", "Reading Light"],
+            "question": "Which item best matches what the tenant needs?",
+            "options": ["Speaker", "Reading Light", "Tablet"],
             "expectedAnswer": "Tablet"
           },
-          "imageBrief": "A tablet on a bedroom desk, a small speaker nearby, and a reading light illuminating both."
+          "imageBrief": "Photorealistic adult bedroom showing Tablet, Speaker, and Reading Light naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Remote Control"],
-          "scenario": "Before she sleeps, Lina leaves the remote control on the nightstand.",
+          "scenario": "During an adult bedroom setup or home check, the tenant reviews remote control. They need the item that operates equipment from a distance.",
           "check": {
-            "question": "What does Lina leave on the nightstand?",
-            "options": ["Remote Control"],
+            "question": "Which item best matches what the tenant needs?",
+            "options": ["Photo Album", "Remote Control", "Books"],
             "expectedAnswer": "Remote Control"
           },
-          "imageBrief": "A hand placing a remote control on a nightstand beside a neatly made bed."
+          "imageBrief": "Photorealistic adult bedroom showing Remote Control naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
+          "imageAlt": "An adult bedroom contains several everyday furniture or personal items."
         }
       ]
     },
     "reading": {
-      "title": "A Tidy Evening",
-      "text": "Hana gets ready for bed. She puts her books and photo album on the shelf, then places her glasses on top. Her phone goes into her backpack. At the desk, she charges her laptop and leaves her headphones beside it. Finally, she puts the remote control on the nightstand.",
+      "title": "Getting Ready for Tomorrow",
+      "text": "Before bed, Mariam prepares the things she will need in the morning. She places her glasses beside a photo album and books, then packs a backpack and checks her phone. The charger, laptop, headphones, and tablet are ready on the desk. A speaker, reading light, and remote control remain nearby so the room stays organized.",
       "imageBrief": "Show the main adult everyday situation from “A Tidy Evening” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [

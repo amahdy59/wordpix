@@ -27,26 +27,26 @@
       "Shelf"
     ],
     "targetWordsArabic": [
-      "أَرِيكَة (كَنَبَة)",
-      "كُرْسِيٌّ بِذِرَاعَيْن (فُوتِيه)",
-      "طَاوِلَةُ قَهْوَة (تَرَابِيزَةُ الصَّالُون)",
-      "طَاوِلَةٌ جَانِبِيَّة (تَرَابِيزَة صَغِيرَة)",
-      "مَقْعَدُ قَدَمَيْن (بَفّ / عُثْمَانِيَّة)",
-      "كُرْسِيٌّ هَزَّاز",
-      "طَاوِلَةُ الطَّعَام (سُفْرَة)",
-      "كُرْسِيُّ طَعَام (كُرْسِيُّ سُفْرَة)",
-      "مَقْعَدٌ طَوِيل (دِكَّة / بَانْك)",
-      "كُرْسِيٌّ صَغِير (طَبْلِيَّة / مَقْعَدٌ بِلَا ظَهْر)",
-      "رَفُّ الكُتُب / مَكْتَبَةٌ حَائِطِيَّة",
-      "طَاوِلَةُ التِّلْفَاز (مَكْتَبَةُ التِّلْفَاز)",
-      "دُولابٌ صَغِير (خِزَانَة)",
-      "بُوفَيْه (خِزَانَةُ أَدَوَاتِ المَائِدَة)",
-      "رَفّ"
+      "أريكة (كنبة)",
+      "كرسي بذراعين (فوتيه)",
+      "طاولة قهوة (ترابيزة الصالون)",
+      "طاولة جانبية (ترابيزة صغيرة)",
+      "مقعد قدمين (بف / عثمانية)",
+      "كرسي هزاز",
+      "طاولة الطعام (سفرة)",
+      "كرسي طعام (كرسي سفرة)",
+      "مقعد طويل (دكة / بانك)",
+      "كرسي صغير (طبلية / مقعد بلا ظهر)",
+      "رف الكتب / مكتبة حائطية",
+      "طاولة التلفاز (مكتبة التلفاز)",
+      "دولاب صغير (خزانة)",
+      "بوفيه (خزانة أدوات المائدة)",
+      "رف"
     ],
     "usage": {
-      "goal": "Recognize and use common the living room vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the living room words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key the living room 1 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the living room in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -54,61 +54,66 @@
           "targetWords": ["Sofa", "Armchair", "Coffee Table"],
           "scenario": "Maya sits on the sofa, her guest uses the armchair, and their drinks rest on the coffee table.",
           "check": {
-            "question": "Where do the drinks rest?",
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
             "options": ["Sofa", "Armchair", "Coffee Table"],
             "expectedAnswer": "Coffee Table"
           },
-          "imageBrief": "Two adults seated on a sofa and armchair with drinks on the coffee table between them."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: Maya sits on the sofa, her guest uses the armchair, and their drinks rest on the coffee table. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Sofa, Armchair, Coffee Table in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Side Table", "Ottoman", "Rocking Chair"],
-          "scenario": "A book lies on the side table while Omar rests his feet on the ottoman beside the rocking chair.",
+          "scenario": "During a home visit, an adult checks or uses side table, ottoman, and rocking chair. The highlighted item is the ottoman.",
           "check": {
-            "question": "Where does Omar rest his feet?",
-            "options": ["Side Table", "Ottoman", "Rocking Chair"],
+            "question": "Which object should the learner identify in the example with side table, ottoman?",
+            "options": ["Rocking Chair", "Ottoman", "Side Table"],
             "expectedAnswer": "Ottoman"
           },
-          "imageBrief": "An adult resting feet on an ottoman, with a book on a side table and an empty rocking chair nearby."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During a home visit, an adult checks or uses side table, ottoman, and rocking chair. The highlighted item is the ottoman. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Side Table, Ottoman, Rocking Chair in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Dining Table", "Dining Chair", "Bench"],
           "scenario": "The family eats at the dining table; two people use dining chairs and one sits on the bench.",
           "check": {
-            "question": "Where does one person sit instead of a chair?",
-            "options": ["Dining Table", "Dining Chair", "Bench"],
+            "question": "What item is being used or checked in the family situation?",
+            "options": ["Bench", "Dining Table", "Dining Chair"],
             "expectedAnswer": "Bench"
           },
-          "imageBrief": "Adults eating at a dining table, with dining chairs and one person seated on a bench."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: The family eats at the dining table; two people use dining chairs and one sits on the bench. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Dining Table, Dining Chair, Bench in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Stool", "Bookshelf", "TV Stand"],
-          "scenario": "A small plant sits on the stool between the bookshelf and the TV stand.",
+          "scenario": "During an evening at home, an adult checks or uses stool, bookshelf, and tv stand. The highlighted item is the stool.",
           "check": {
-            "question": "What holds the small plant?",
-            "options": ["Stool", "Bookshelf", "TV Stand"],
+            "question": "What item is being used or checked in the scene in the example with stool, bookshelf?",
+            "options": ["Bookshelf", "TV Stand", "Stool"],
             "expectedAnswer": "Stool"
           },
-          "imageBrief": "A small plant on a stool positioned between a bookshelf and a TV stand."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During an evening at home, an adult checks or uses stool, bookshelf, and tv stand. The highlighted item is the stool. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Stool, Bookshelf, TV Stand in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Cabinet", "Sideboard", "Shelf"],
-          "scenario": "The cabinet has doors, the sideboard holds serving dishes, and the wall shelf displays a vase.",
+          "scenario": "During a guest preparation, an adult checks or uses cabinet, sideboard, and shelf. The highlighted item is the sideboard.",
           "check": {
-            "question": "What holds the serving dishes?",
-            "options": ["Cabinet", "Sideboard", "Shelf"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Shelf", "Sideboard", "Cabinet"],
             "expectedAnswer": "Sideboard"
           },
-          "imageBrief": "A living room with a closed cabinet, a sideboard holding serving dishes, and a wall shelf displaying a vase."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During a guest preparation, an adult checks or uses cabinet, sideboard, and shelf. The highlighted item is the sideboard. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Cabinet, Sideboard, Shelf in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Guests in the Living Room",
-      "text": "Maya welcomes two friends. She sits on the sofa, and they use the armchair and rocking chair. The dining chair is beside the dining table, while drinks go on the coffee table. A book rests on the side table, and a plant stands on a stool between the bookshelf and the TV stand.",
+      "title": "The Living Room 1: Getting the Room Ready",
+      "text": "Before visitors arrive, an adult gets the living room ready. The seating area includes sofa, armchair, coffee table, side table, and ottoman. The media area has rocking chair, dining table, dining chair, bench, and stool. For lighting and decoration, the room uses bookshelf, tv stand, cabinet, sideboard, and shelf. The aim is to make the room comfortable, tidy, and easy to use.",
       "imageBrief": "Show the main adult everyday situation from “Guests in the Living Room” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -197,88 +202,93 @@
       "Plug"
     ],
     "targetWordsArabic": [
-      "دُرْج",
-      "حَامِلُ مَجَلَّات",
-      "خِزَانَةُ عَرْض (فَتْرِينَة)",
-      "شَمَّاعَةُ مَعَاطِف (عَلَّاقَةُ مَعَاطِف)",
-      "رَفُّ الأَحْذِيَة (جَزَّامَة)",
-      "تِلْفَاز (تِلِفِزْيُون)",
-      "جِهَازُ التَّحَكُّم عَنْ بُعْد (رِيمُوت)",
-      "مُكَبِّرُ صَوْت (سَبِيكَر / سَمَّاعَة)",
-      "جِهَازُ أَلْعَابِ فِيدْيُو (بْلَايْ سْتِيشِن / كُونْسُول)",
-      "مُشَغِّلُ أَقْرَاصِ الدِّي فِي دِي",
-      "مُكَبِّرُ صَوْتٍ شَرِيطِيّ (سَاوَنْد بَار)",
-      "جِهَازُ التَّوْجِيه (رَاوْتَر الوَاي فَاي)",
-      "مُشْتَرَكُ كَهْرَبَاء (تَوْصِيلَة)",
-      "كَابِل / سِلْكُ كَهْرَبَاء",
-      "قَابِسُ كَهْرَبَاء (فِيشَة)"
+      "درج",
+      "حامل مجلات",
+      "خزانة عرض (فترينة)",
+      "شماعة معاطف (علاقة معاطف)",
+      "رف الأحذية (جزامة)",
+      "تلفاز (تلفزيون)",
+      "جهاز التحكم عن بعد (ريموت)",
+      "مكبر صوت (سبيكر / سماعة)",
+      "جهاز ألعاب فيديو (بلاي ستيشن / كونسول)",
+      "مشغل أقراص الدي في دي",
+      "مكبر صوت شريطي (ساوند بار)",
+      "جهاز التوجيه (راوتر الواي فاي)",
+      "مشترك كهرباء (توصيلة)",
+      "كابل / سلك كهرباء",
+      "قابس كهرباء (فيشة)"
     ],
     "usage": {
-      "goal": "Recognize and use common the living room vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the living room words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key the living room 2 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the living room in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Drawer", "Magazine Rack", "Display Case"],
-          "scenario": "Nadia puts keys in the drawer, magazines in the magazine rack, and a model in the display case.",
+          "scenario": "During a home visit, an adult checks or uses drawer, magazine rack, and display case. The highlighted item is the magazine rack.",
           "check": {
-            "question": "Where does Nadia put the magazines?",
-            "options": ["Drawer", "Magazine Rack", "Display Case"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Display Case", "Magazine Rack", "Drawer"],
             "expectedAnswer": "Magazine Rack"
           },
-          "imageBrief": "An adult organizing keys into a drawer, magazines into a rack, and a model into a glass display case."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During a home visit, an adult checks or uses drawer, magazine rack, and display case. The highlighted item is the magazine rack. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Drawer, Magazine Rack, Display Case in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Coat Rack", "Shoe Rack", "Television"],
-          "scenario": "Guests leave coats on the coat rack and shoes on the shoe rack before watching television.",
+          "scenario": "During a moving day, an adult checks or uses coat rack, shoe rack, and television. The highlighted item is the shoe rack.",
           "check": {
-            "question": "Where do guests leave their shoes?",
-            "options": ["Coat Rack", "Shoe Rack", "Television"],
+            "question": "Where should the shoes be stored?",
+            "options": ["Shoe Rack", "Coat Rack", "Television"],
             "expectedAnswer": "Shoe Rack"
           },
-          "imageBrief": "Adults entering a living room, hanging coats on a coat rack and placing shoes on a shoe rack near a television."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During a moving day, an adult checks or uses coat rack, shoe rack, and television. The highlighted item is the shoe rack. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Coat Rack, Shoe Rack, Television in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Remote Control", "Speaker", "Game Console"],
-          "scenario": "Sam uses the remote control to start the game console, and the sound comes through the speaker.",
+          "scenario": "During an evening at home, an adult checks or uses remote control, speaker, and game console. The highlighted item is the remote control.",
           "check": {
-            "question": "What does Sam use to start the console?",
-            "options": ["Remote Control", "Speaker", "Game Console"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Speaker", "Game Console", "Remote Control"],
             "expectedAnswer": "Remote Control"
           },
-          "imageBrief": "An adult holding a remote control near a game console, with sound represented subtly from a speaker."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During an evening at home, an adult checks or uses remote control, speaker, and game console. The highlighted item is the remote control. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Remote Control, Speaker, Game Console in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["DVD Player", "Sound Bar", "Wi-Fi Router"],
-          "scenario": "The DVD player and sound bar sit below the television, while the Wi-Fi router is on a higher shelf.",
+          "scenario": "During a guest preparation, an adult checks or uses dvd player, sound bar, and wi-fi router. The highlighted item is the wi-fi router.",
           "check": {
-            "question": "What provides the wireless internet connection?",
-            "options": ["DVD Player", "Sound Bar", "Wi-Fi Router"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Sound Bar", "Wi-Fi Router", "DVD Player"],
             "expectedAnswer": "Wi-Fi Router"
           },
-          "imageBrief": "A media unit with a DVD player and sound bar below a television and a Wi-Fi router on a higher shelf."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During a guest preparation, an adult checks or uses dvd player, sound bar, and wi-fi router. The highlighted item is the wi-fi router. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including DVD Player, Sound Bar, Wi-Fi Router in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Power Strip", "Cable", "Plug"],
-          "scenario": "A cable connects the television to the power strip, and the strip's plug goes into the wall socket.",
+          "scenario": "During an apartment setup, an adult checks or uses power strip, cable, and plug. The highlighted item is the plug.",
           "check": {
-            "question": "What goes into the wall socket?",
-            "options": ["Power Strip", "Cable", "Plug"],
+            "question": "Which object should the learner identify in the example with power strip, cable?",
+            "options": ["Plug", "Power Strip", "Cable"],
             "expectedAnswer": "Plug"
           },
-          "imageBrief": "A safe close-up showing a television cable connected to a power strip and its plug inserted into a wall socket."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During an apartment setup, an adult checks or uses power strip, cable, and plug. The highlighted item is the plug. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Power Strip, Cable, Plug in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "A Connected Living Room",
-      "text": "Before watching television, Sam puts his shoes on the shoe rack and his coat on the coat rack. He starts the game console with the remote control. The speaker and sound bar play clearly, while the Wi-Fi router connects the devices to the internet.",
+      "title": "The Living Room 2: Getting the Room Ready",
+      "text": "Before visitors arrive, an adult gets the living room ready. The seating area includes drawer, magazine rack, display case, coat rack, and shoe rack. The media area has television, remote control, speaker, game console, and dvd player. For lighting and decoration, the room uses sound bar, wi-fi router, power strip, cable, and plug. The aim is to make the room comfortable, tidy, and easy to use.",
       "imageBrief": "Show the main adult everyday situation from “A Connected Living Room” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -367,26 +377,26 @@
       "Curtain"
     ],
     "targetWordsArabic": [
-      "مِصْبَاحٌ أَرْضِيّ (أَبَاجُورَةٌ طَوِيلَة / أَبَاجُورَةُ أَرْضِيَّة)",
-      "مِصْبَاحُ طَاوِلَة (أَبَاجُورَةُ تَرَابِيزَة)",
-      "إِضَاءَةُ السَّقْف (نَجَفَة / مِصْبَاحُ السَّقْف)",
-      "نَجَفَةٌ فَاخِرَة (ثُرَيَّا)",
-      "مِصْبَاحٌ كَهْرَبَائِيّ (لَمْبَة)",
-      "شَمْعَة",
-      "شَمْعَدَان (حَامِلُ الشُّمُوع)",
-      "حِبَالُ إِضَاءَة (فِرْعُ نُور / إِضَاءَةُ زِينَة)",
-      "إِطَارُ الصُّورَة (بِرْوَاز)",
-      "سَاعَةُ حَائِط",
-      "وِسَادَةُ زِينَة (خُدَّادِيَّة)",
-      "بَطَّانِيَّةٌ خَفِيفَة (شَالُ كَنَبَة / غِطَاءُ دِيكُور)",
-      "سَجَّادَةٌ صَغِيرَة (مَشَّايَة)",
-      "مَوْكِيت / سَجَّادٌ شَامِل",
-      "سِتَارَة"
+      "مصباح أرضي (أباجورة طويلة / أباجورة أرضية)",
+      "مصباح طاولة (أباجورة ترابيزة)",
+      "إضاءة السقف (نجفة / مصباح السقف)",
+      "نجفة فاخرة (ثريا)",
+      "مصباح كهربائي (لمبة)",
+      "شمعة",
+      "شمعدان (حامل الشموع)",
+      "حبال إضاءة (فرع نور / إضاءة زينة)",
+      "إطار الصورة (برواز)",
+      "ساعة حائط",
+      "وسادة زينة (خدادية)",
+      "بطانية خفيفة (شال كنبة / غطاء ديكور)",
+      "سجادة صغيرة (مشاية)",
+      "موكيت / سجاد شامل",
+      "ستارة"
     ],
     "usage": {
-      "goal": "Recognize and use common the living room vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the living room words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key the living room 3 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the living room in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -394,61 +404,66 @@
           "targetWords": ["Floor Lamp", "Table Lamp", "Ceiling Light"],
           "scenario": "The floor lamp stands by the sofa, the table lamp sits beside it, and the ceiling light lights the whole room.",
           "check": {
-            "question": "Which light stands on the floor?",
+            "question": "Which object should the learner identify in the example with floor lamp, table lamp?",
             "options": ["Floor Lamp", "Table Lamp", "Ceiling Light"],
             "expectedAnswer": "Floor Lamp"
           },
-          "imageBrief": "A living room clearly showing a floor lamp beside a sofa, a table lamp on a side table, and a ceiling light."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: The floor lamp stands by the sofa, the table lamp sits beside it, and the ceiling light lights the whole room. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Floor Lamp, Table Lamp, Ceiling Light in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Chandelier", "Light Bulb", "Candle"],
-          "scenario": "A chandelier hangs above the table, a candle burns safely below, and a spare light bulb rests nearby.",
+          "scenario": "During an evening at home, an adult checks or uses chandelier, light bulb, and candle. The highlighted item is the chandelier.",
           "check": {
-            "question": "What hangs above the table?",
-            "options": ["Chandelier", "Light Bulb", "Candle"],
+            "question": "What item is being used or checked in the scene in the example with chandelier, light bulb?",
+            "options": ["Light Bulb", "Candle", "Chandelier"],
             "expectedAnswer": "Chandelier"
           },
-          "imageBrief": "A chandelier above a table, a safely contained candle below, and an unused light bulb nearby."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During an evening at home, an adult checks or uses chandelier, light bulb, and candle. The highlighted item is the chandelier. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Chandelier, Light Bulb, Candle in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Candle Holder", "String Lights", "Picture Frame"],
-          "scenario": "The candle sits in a candle holder beside the picture frame, with string lights on the wall behind them.",
+          "scenario": "During a guest preparation, an adult checks or uses candle holder, string lights, and picture frame. The highlighted item is the candle holder.",
           "check": {
-            "question": "What holds the candle?",
-            "options": ["Candle Holder", "String Lights", "Picture Frame"],
+            "question": "What item is being used or checked in the scene in the example with candle holder, string lights?",
+            "options": ["Picture Frame", "Candle Holder", "String Lights"],
             "expectedAnswer": "Candle Holder"
           },
-          "imageBrief": "A candle safely seated in a candle holder beside a picture frame, with unlettered string lights behind them."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During a guest preparation, an adult checks or uses candle holder, string lights, and picture frame. The highlighted item is the candle holder. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Candle Holder, String Lights, Picture Frame in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Wall Clock", "Cushion", "Throw Blanket"],
-          "scenario": "The wall clock hangs above the sofa, where a cushion and throw blanket make the seat comfortable.",
+          "scenario": "During an apartment setup, an adult checks or uses wall clock, cushion, and throw blanket. The highlighted item is the wall clock.",
           "check": {
-            "question": "What tells the time?",
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
             "options": ["Wall Clock", "Cushion", "Throw Blanket"],
             "expectedAnswer": "Wall Clock"
           },
-          "imageBrief": "A wall clock above a sofa furnished with one cushion and a folded throw blanket."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During an apartment setup, an adult checks or uses wall clock, cushion, and throw blanket. The highlighted item is the wall clock. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Wall Clock, Cushion, Throw Blanket in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Rug", "Carpet", "Curtain"],
-          "scenario": "A small rug lies over part of the carpet, and a curtain hangs beside the window.",
+          "scenario": "During a home visit, an adult checks or uses rug, carpet, and curtain. The highlighted item is the rug.",
           "check": {
-            "question": "What covers only part of the carpet?",
-            "options": ["Rug", "Carpet", "Curtain"],
+            "question": "Which floor covering is highlighted?",
+            "options": ["Carpet", "Curtain", "Rug"],
             "expectedAnswer": "Rug"
           },
-          "imageBrief": "A clearly bounded small rug laid over a larger carpet, with a curtain beside the window."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During a home visit, an adult checks or uses rug, carpet, and curtain. The highlighted item is the rug. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Rug, Carpet, Curtain in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Warm Light",
-      "text": "In the evening, the ceiling light and floor lamp brighten the room. A table lamp helps Nora read. A candle sits safely in its holder beneath the chandelier. She adds a cushion and throw blanket to the sofa, closes the curtain, and places her feet on the rug.",
+      "title": "The Living Room 3: Getting the Room Ready",
+      "text": "Before visitors arrive, an adult gets the living room ready. The seating area includes floor lamp, table lamp, ceiling light, chandelier, and light bulb. The media area has candle, candle holder, string lights, picture frame, and wall clock. For lighting and decoration, the room uses cushion, throw blanket, rug, carpet, and curtain. The aim is to make the room comfortable, tidy, and easy to use.",
       "imageBrief": "Show the main adult everyday situation from “Warm Light” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -537,88 +552,93 @@
       "Playing Cards"
     ],
     "targetWordsArabic": [
-      "مَفْرَشُ طَاوِلَة",
-      "مَفْرَشُ طَبَق (مَفْرَشٌ فَرْدِيّ)",
-      "قَاعِدَةُ كُوب (كُوسْتَر)",
-      "دَوَّاسَةُ بَاب (مَمْسَحَةُ أَرْجُل)",
-      "نَسِيجٌ جِدَارِيّ (سَجَّادُ حَائِط / تَابِسْتْرِي)",
-      "نَبْتَة مَنْزِلِيَّة (زَرْع)",
-      "زَهْرِيَّة (فَازَة)",
-      "إِطَارُ صُورَة (بِرْوَازُ صُوَر)",
-      "لَوْحَةٌ فَنِّيَّة (رَسْمَة)",
-      "كِتَاب",
-      "مَجَلَّة",
-      "جَرِيدَة (صَحِيفَة)",
-      "لُعْبَةُ أَلْوَاح (لُعْبَةُ طَاوِلَة)",
-      "لُغْز / أُحْجِيَّة (بَازِل / أَلْعَابُ تَرْكِيب)",
-      "أَوْرَاقُ اللَّعِب (وَرَقُ الكُوتْشِينَة)"
+      "مفرش طاولة",
+      "مفرش طبق (مفرش فردي)",
+      "قاعدة كوب (كوستر)",
+      "دواسة باب (ممسحة أرجل)",
+      "نسيج جداري (سجاد حائط / تابستري)",
+      "نبتة منزلية (زرع)",
+      "زهرية (فازة)",
+      "إطار صورة (برواز صور)",
+      "لوحة فنية (رسمة)",
+      "كتاب",
+      "مجلة",
+      "جريدة (صحيفة)",
+      "لعبة ألواح (لعبة طاولة)",
+      "لغز / أحجية (بازل / ألعاب تركيب)",
+      "أوراق اللعب (ورق الكوتشينة)"
     ],
     "usage": {
-      "goal": "Recognize and use common the living room vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the living room words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key the living room 4 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the living room in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Tablecloth", "Placemat", "Coaster"],
-          "scenario": "At dinner, the tablecloth covers the table, each plate sits on a placemat, and each glass has a coaster.",
+          "scenario": "During an evening at home, an adult checks or uses tablecloth, placemat, and coaster. The highlighted item is the coaster.",
           "check": {
-            "question": "What is under each glass?",
+            "question": "What protects the table from the drink?",
             "options": ["Tablecloth", "Placemat", "Coaster"],
             "expectedAnswer": "Coaster"
           },
-          "imageBrief": "A dining table with a tablecloth, visible placemats under plates, and coasters under glasses."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During an evening at home, an adult checks or uses tablecloth, placemat, and coaster. The highlighted item is the coaster. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Tablecloth, Placemat, Coaster in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Doormat", "Tapestry", "Plant"],
-          "scenario": "A plant stands just inside the door, a doormat lies outside, and a tapestry hangs on the wall.",
+          "scenario": "During a guest preparation, an adult checks or uses doormat, tapestry, and plant. The highlighted item is the doormat.",
           "check": {
-            "question": "What lies outside the door?",
-            "options": ["Doormat", "Tapestry", "Plant"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Plant", "Doormat", "Tapestry"],
             "expectedAnswer": "Doormat"
           },
-          "imageBrief": "A doorway with a doormat outside, a plant inside, and a tapestry on the interior wall."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During a guest preparation, an adult checks or uses doormat, tapestry, and plant. The highlighted item is the doormat. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Doormat, Tapestry, Plant in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Vase", "Photo Frame", "Painting"],
           "scenario": "Fresh flowers fill the vase beside a photo frame, with a painting hanging above them.",
           "check": {
-            "question": "What holds the fresh flowers?",
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
             "options": ["Vase", "Photo Frame", "Painting"],
             "expectedAnswer": "Vase"
           },
-          "imageBrief": "Fresh flowers in a vase beside a photo frame, with a painting hanging above the arrangement."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: Fresh flowers fill the vase beside a photo frame, with a painting hanging above them. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Vase, Photo Frame, Painting in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Book", "Magazine", "Newspaper"],
-          "scenario": "On Sunday morning, Farah reads a newspaper while a book and magazine wait on the table.",
+          "scenario": "During a home visit, an adult checks or uses book, magazine, and newspaper. The highlighted item is the newspaper.",
           "check": {
-            "question": "What is Farah reading?",
+            "question": "Which object should the learner identify in the example with book, magazine?",
             "options": ["Book", "Magazine", "Newspaper"],
             "expectedAnswer": "Newspaper"
           },
-          "imageBrief": "An adult reading a newspaper, with a closed book and magazine separately visible on the table."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During a home visit, an adult checks or uses book, magazine, and newspaper. The highlighted item is the newspaper. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Book, Magazine, Newspaper in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Board Game", "Puzzle", "Playing Cards"],
-          "scenario": "Friends play a board game while a puzzle and a pack of playing cards wait on the shelf.",
+          "scenario": "During a moving day, an adult checks or uses board game, puzzle, and playing cards. The highlighted item is the board game.",
           "check": {
-            "question": "What are the friends playing?",
-            "options": ["Board Game", "Puzzle", "Playing Cards"],
+            "question": "What item is being used or checked in the scene in the example with board game, puzzle?",
+            "options": ["Playing Cards", "Board Game", "Puzzle"],
             "expectedAnswer": "Board Game"
           },
-          "imageBrief": "Adults playing a board game, with a puzzle box and a pack of playing cards on a shelf."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During a moving day, an adult checks or uses board game, puzzle, and playing cards. The highlighted item is the board game. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Board Game, Puzzle, Playing Cards in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "A Relaxed Sunday",
-      "text": "Farah sets the table with a tablecloth, placemats, and coasters. After lunch, she reads the newspaper beside a vase of flowers. Her friends arrive and choose a board game. A puzzle and playing cards stay on the shelf for another day.",
+      "title": "The Living Room 4: Getting the Room Ready",
+      "text": "Before visitors arrive, an adult gets the living room ready. The seating area includes tablecloth, placemat, coaster, doormat, and tapestry. The media area has plant, vase, photo frame, painting, and book. For lighting and decoration, the room uses magazine, newspaper, board game, puzzle, and playing cards. The aim is to make the room comfortable, tidy, and easy to use.",
       "imageBrief": "Show the main adult everyday situation from “A Relaxed Sunday” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -705,24 +725,24 @@
       "Take a Nap"
     ],
     "targetWordsArabic": [
-      "مِصْبَاح (أَبَاجُورَة)",
-      "هَاتِف (مُوبَايِل)",
-      "جِهَازٌ لَوْحِيّ (تَابْلِت)",
-      "شَاحِن",
-      "سَمَّاعَاتُ الرَّأْس (هَيْدْفُونْز)",
-      "مُشَاهَدَةُ التِّلْفَاز",
-      "قِرَاءَةُ كِتَاب",
-      "لَعِبُ الأَلْعَاب",
-      "الاسْتِمَاعُ إِلَى المُوسِيقَى",
-      "الاسْتِرْخَاء",
-      "الجُلُوس",
-      "الدَّرْدَشَة (التَّحَدُّث)",
-      "أَخْذُ قَيْلُولَة"
+      "مصباح (أباجورة)",
+      "هاتف (موبايل)",
+      "جهاز لوحي (تابلت)",
+      "شاحن",
+      "سماعات الرأس (هيدفونز)",
+      "مشاهدة التلفاز",
+      "قراءة كتاب",
+      "لعب الألعاب",
+      "الاستماع إلى الموسيقى",
+      "الاسترخاء",
+      "الجلوس",
+      "الدردشة (التحدث)",
+      "أخذ قيلولة"
     ],
     "usage": {
-      "goal": "Recognize and use common the living room vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the living room words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key the living room 5 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the living room in very simple everyday situations.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -730,61 +750,66 @@
           "targetWords": ["Lamp", "Phone", "Tablet"],
           "scenario": "The lamp lights the table while Lina checks her phone and her tablet charges nearby.",
           "check": {
-            "question": "What lights the table?",
-            "options": ["Lamp", "Phone", "Tablet"],
+            "question": "What item is being used or checked in the scene in the example with lamp, phone?",
+            "options": ["Tablet", "Lamp", "Phone"],
             "expectedAnswer": "Lamp"
           },
-          "imageBrief": "A lamp illuminating a table where an adult checks a phone and a tablet rests nearby."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: The lamp lights the table while Lina checks her phone and her tablet charges nearby. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Lamp, Phone, Tablet in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Charger", "Headphones", "Watch TV"],
           "scenario": "Kareem connects the charger to his phone, puts on his headphones, and watches TV.",
           "check": {
-            "question": "What does Kareem put on his ears?",
-            "options": ["Charger", "Headphones", "Watch TV"],
+            "question": "What is the person doing?",
+            "options": ["Headphones", "Charger", "Watch TV"],
             "expectedAnswer": "Headphones"
           },
-          "imageBrief": "An adult wearing headphones while watching television, with a phone visibly connected to a charger."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: Kareem connects the charger to his phone, puts on his headphones, and watches TV. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Charger, Headphones, Watch TV in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Read a Book", "Play Games", "Listen to Music"],
           "scenario": "After dinner, the family reads a book, plays games, and listens to music together.",
           "check": {
-            "question": "What do they do with the book?",
-            "options": ["Read a Book", "Play Games", "Listen to Music"],
+            "question": "What activity should the learner identify?",
+            "options": ["Play Games", "Listen to Music", "Read a Book"],
             "expectedAnswer": "Read a Book"
           },
-          "imageBrief": "Adults sharing a living room: one reads a book, others play a game, and music plays from a speaker."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: After dinner, the family reads a book, plays games, and listens to music together. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Read a Book, Play Games, Listen to Music in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Relax", "Sit Down", "Chat"],
-          "scenario": "Two friends sit down to chat while their host relaxes on the sofa.",
+          "scenario": "During a moving day, an adult may relax, sit down, and chat. The highlighted action is chat.",
           "check": {
-            "question": "What do the two friends do together?",
-            "options": ["Relax", "Sit Down", "Chat"],
+            "question": "What is the person doing in the example with relax, sit down?",
+            "options": ["Sit Down", "Chat", "Relax"],
             "expectedAnswer": "Chat"
           },
-          "imageBrief": "Two adults seated and talking together while another adult relaxes comfortably on a sofa."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During a moving day, an adult may relax, sit down, and chat. The highlighted action is chat. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Relax, Sit Down, Chat in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Take a Nap"],
-          "scenario": "After lunch, Ibrahim takes a nap on the sofa.",
+          "scenario": "During an evening at home, an adult may take a nap. The highlighted action is take a nap.",
           "check": {
-            "question": "What does Ibrahim do on the sofa?",
-            "options": ["Take a Nap"],
+            "question": "What activity should the learner identify in the example with take a nap?",
+            "options": ["Take a Nap", "Lamp", "Phone"],
             "expectedAnswer": "Take a Nap"
           },
-          "imageBrief": "An adult taking a short daytime nap on a sofa in a quiet living room."
+          "imageBrief": "Photorealistic adult real-world scene in a the living room context illustrating this situation: During an evening at home, an adult may take a nap. The highlighted action is take a nap. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the living room scene showing lesson-related items or actions including Take a Nap in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "An Evening at Home",
-      "text": "Kareem connects his phone to the charger and puts on his headphones. His family plans to watch TV, read a book, and play games. Later, they listen to music and chat. When the room becomes quiet, Kareem can relax, sit down, or take a nap on the sofa.",
+      "title": "A Quiet Evening at Home",
+      "text": "After dinner, Omar turns on a lamp and puts his phone and tablet on charge. He wears headphones for a short online call, then decides to watch TV for a while. Later, he and a friend play games and listen to music. When the room becomes quiet, he reads a book, sits down to chat, and relaxes on the sofa. Before getting ready for bed, he decides to take a nap.",
       "imageBrief": "Show the main adult everyday situation from “An Evening at Home” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [

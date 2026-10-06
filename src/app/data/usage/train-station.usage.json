@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "train-station-1",
     "lessonName": "L6 Train Station 1",
@@ -31,12 +31,12 @@
       "قطار بضائع",
       "قطار فائق السرعة",
       "مترو",
-      "مصطلح مرتبط بالموضوع يُسمّى «لوكوموتيفي»",
+      "قاطرة",
       "عربة قطار",
-      "مشروب يُسمّى «دينينج كار»",
+      "مشروب يسمى «دينينج كار»",
       "عربة نوم",
-      "مصطلح مرتبط بالموضوع يُسمّى «كابووسي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «مونورايل»",
+      "عربة مؤخرة القطار",
+      "-",
       "رصيف",
       "مسار",
       "مكتب تذكرة",
@@ -44,60 +44,64 @@
       "ردهة رئيسية"
     ],
     "usage": {
-      "goal": "Use the vocabulary from L6 Train Station to understand and communicate in a realistic B1-appropriate context.",
-      "canDoStatement": "I can use l6 train station vocabulary to handle a practical situation and explain key details.",
-      "textType": "travel/visitor guide",
+      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
+      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
+      "textType": "logistics-schedule",
       "readingTarget": "90-130 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["passenger train", "freight train", "high-speed train", "subway"],
-          "scenario": "The customer or traveler compares the passenger train, freight train, high-speed train, and subway, thinking about where and why each type is used.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare passenger train, freight train, high-speed train, and subway and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["passenger train", "freight train", "high-speed train", "subway"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["passenger train", "freight train", "high-speed train"],
             "expectedAnswer": "passenger train"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The customer or traveler compares the passenger train, freight train, high-speed train, and subway, thinking about where and why each type is used. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the passenger train as the central item; include passenger train, freight train, and high-speed train naturally where visually appropriate, but make the real-world use of passenger train the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["locomotive", "train car", "dining car", "sleeper car"],
-          "scenario": "The traveler moves through the journey using or noticing locomotive, train car, dining car, and sleeper car. Each term marks a different part of the travel process.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare locomotive, train car, dining car, and sleeper car and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["locomotive", "train car", "dining car", "sleeper car"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["locomotive", "train car", "dining car"],
             "expectedAnswer": "locomotive"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing locomotive, train car, dining car, and sleeper car. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the locomotive as the central item; include locomotive, train car, and dining car naturally where visually appropriate, but make the real-world use of locomotive the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["caboose", "monorail", "platform", "track"],
-          "scenario": "The traveler moves through the journey using or noticing caboose, monorail, platform, and track. Each term marks a different part of the travel process.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare caboose, monorail, platform, and track and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["caboose", "monorail", "platform", "track"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["caboose", "monorail", "platform"],
             "expectedAnswer": "caboose"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing caboose, monorail, platform, and track. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the caboose as the central item; include caboose, monorail, and platform naturally where visually appropriate, but make the real-world use of caboose the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["ticket office", "waiting room", "concourse"],
-          "scenario": "The traveler moves through the journey using or noticing ticket office, waiting room, and concourse. Each term marks a different part of the travel process.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ticket office, waiting room, and concourse and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["ticket office", "waiting room", "concourse"],
             "expectedAnswer": "ticket office"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing ticket office, waiting room, and concourse. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or approaching the ticket office as the main location; include ticket office, waiting room, and concourse naturally where visually appropriate, but make the real-world use of ticket office the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "L6 Train Station: Travel/Visitor Guide",
-      "text": "A practical situation involving l6 train station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The customer or traveler compares the passenger train, freight train, high-speed train, and subway, thinking about where and why each type is used. The traveler moves through the journey using or noticing locomotive, train car, dining car, and sleeper car. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing caboose, monorail, platform, and track. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "title": "Planning the Next Stage of the Journey",
+      "text": "At the train station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers passenger train, freight train, high-speed train, and subway. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers locomotive, train car, dining car, and sleeper car. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers caboose, monorail, platform, and track. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers ticket office, waiting room, and concourse. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about L6 Train Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -140,6 +144,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “touch pool” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the l6 train station task. Use passenger train, freight train, high-speed train, subway, locomotive, train car, dining car, sleeper car, caboose, monorail, platform, track, ticket office, waiting room, and concourse in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -177,77 +188,81 @@
       "reservation"
     ],
     "targetWordsArabic": [
-      "مبنى يُسمّى «ينفورماتيون ديسك»",
-      "مصطلح مرتبط بالموضوع يُسمّى «نيوسستاند»",
-      "آلة يُسمّى «فيندينج ماتشيني»",
+      "مبنى يسمى «ينفورماتيون ديسك»",
+      "-",
+      "آلة يسمى «فيندينج ماتشيني»",
       "دورة مياه",
       "مرآب سيارات",
       "موقف سيارات أجرة",
-      "مصطلح مرتبط بالموضوع يُسمّى «بوس ستوب»",
+      "موقف حافلات",
       "تذكرة",
-      "مكان يُسمّى «رووند تريب»",
+      "مكان يسمى «رووند تريب»",
       "اتجاه واحد",
       "جدول",
       "جدول مواعيد",
       "لوحة المغادرة",
       "لوحة الوصول",
-      "مصطلح مرتبط بالموضوع يُسمّى «ريسيرفاتيون»"
+      "حجز"
     ],
     "usage": {
-      "goal": "Use the vocabulary from L6 Train Station to understand and communicate in a realistic B1-appropriate context.",
-      "canDoStatement": "I can use l6 train station vocabulary to handle a practical situation and explain key details.",
-      "textType": "review",
+      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
+      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
+      "textType": "dialogue",
       "readingTarget": "90-130 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["information desk", "newsstand", "vending machine", "restroom"],
-          "scenario": "The traveler moves through the journey using or noticing information desk, newsstand, vending machine, and restroom. Each term marks a different part of the travel process.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare information desk, newsstand, vending machine, and restroom and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["information desk", "newsstand", "vending machine", "restroom"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["information desk", "newsstand", "vending machine"],
             "expectedAnswer": "information desk"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing information desk, newsstand, vending machine, and restroom. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the information desk as the central item; include information desk, newsstand, and vending machine naturally where visually appropriate, but make the real-world use of information desk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["parking garage", "taxi stand", "bus stop", "ticket"],
-          "scenario": "The traveler moves through the journey using or noticing parking garage, taxi stand, bus stop, and ticket. Each term marks a different part of the travel process.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare parking garage, taxi stand, bus stop, and ticket and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["parking garage", "taxi stand", "bus stop", "ticket"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["parking garage", "taxi stand", "bus stop"],
             "expectedAnswer": "parking garage"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing parking garage, taxi stand, bus stop, and ticket. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the parking garage as the central item; include parking garage, taxi stand, and bus stop naturally where visually appropriate, but make the real-world use of parking garage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["round trip", "one-way", "schedule", "timetable"],
-          "scenario": "The traveler moves through the journey using or noticing round trip, one-way, schedule, and timetable. Each term marks a different part of the travel process.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare round trip, one-way, schedule, and timetable and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["round trip", "one-way", "schedule", "timetable"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["round trip", "one-way", "schedule"],
             "expectedAnswer": "round trip"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing round trip, one-way, schedule, and timetable. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the round trip as the central item; include round trip, one-way, and schedule naturally where visually appropriate, but make the real-world use of round trip the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["departure board", "arrival board", "reservation"],
-          "scenario": "The traveler moves through the journey using or noticing departure board, arrival board, and reservation. Each term marks a different part of the travel process.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare departure board, arrival board, and reservation and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["departure board", "arrival board", "reservation"],
             "expectedAnswer": "departure board"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing departure board, arrival board, and reservation. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the departure board as the central item; include departure board, arrival board, and reservation naturally where visually appropriate, but make the real-world use of departure board the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "L6 Train Station: Review",
-      "text": "A practical situation involving l6 train station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing information desk, newsstand, vending machine, and restroom. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing parking garage, taxi stand, bus stop, and ticket. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing round trip, one-way, schedule, and timetable. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "title": "Clarifying the Next Step: Train Station",
+      "text": "At the train station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers information desk, newsstand, vending machine, and restroom. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers parking garage, taxi stand, bus stop, and ticket. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers round trip, one-way, schedule, and timetable. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers departure board, arrival board, and reservation. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about L6 Train Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -290,6 +305,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “passenger train” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the l6 train station task. Use information desk, newsstand, vending machine, restroom, parking garage, taxi stand, bus stop, ticket, round trip, one-way, schedule, timetable, departure board, arrival board, and reservation in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -329,7 +351,7 @@
     "targetWordsArabic": [
       "رقم المقعد",
       "الدرجة الأولى",
-      "سفينة يُسمّى «يكونومي كلاسس»",
+      "سفينة يسمى «يكونومي كلاسس»",
       "بطاقة مرور",
       "بوابة دوارة",
       "إشارة",
@@ -337,67 +359,71 @@
       "قوس القدم",
       "نفق",
       "سلك كهربائي علوي",
-      "مصطلح مرتبط بالموضوع يُسمّى «رايل»",
-      "مبدّل شبكي",
+      "سكة حديدية",
+      "مبدل شبكي",
       "حاجز نهاية السكة",
-      "مصطلح مرتبط بالموضوع يُسمّى «كلوك تووير»",
+      "برج ساعة",
       "محصل أو مشرف قطار"
     ],
     "usage": {
-      "goal": "Use the vocabulary from L6 Train Station to understand and communicate in a realistic B1-appropriate context.",
-      "canDoStatement": "I can use l6 train station vocabulary to handle a practical situation and explain key details.",
-      "textType": "practical article",
+      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
+      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
+      "textType": "service-notice",
       "readingTarget": "90-130 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["seat number", "first class", "economy class", "pass"],
-          "scenario": "The traveler moves through the journey using or noticing seat number, first class, economy class, and pass. Each term marks a different part of the travel process.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare seat number, first class, economy class, and pass and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["seat number", "first class", "economy class", "pass"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["seat number", "first class", "economy class"],
             "expectedAnswer": "seat number"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing seat number, first class, economy class, and pass. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the seat number as the central item; include seat number, first class, and economy class naturally where visually appropriate, but make the real-world use of seat number the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["turnstile", "signal", "crossing gate", "bridge"],
-          "scenario": "The traveler moves through the journey using or noticing turnstile, signal, crossing gate, and bridge. Each term marks a different part of the travel process.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare turnstile, signal, crossing gate, and bridge and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["turnstile", "signal", "crossing gate", "bridge"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["turnstile", "signal", "crossing gate"],
             "expectedAnswer": "turnstile"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing turnstile, signal, crossing gate, and bridge. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the turnstile as the central item; include turnstile, signal, and crossing gate naturally where visually appropriate, but make the real-world use of turnstile the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["tunnel", "overhead wire", "rail", "switch"],
-          "scenario": "The traveler moves through the journey using or noticing tunnel, overhead wire, rail, and switch. Each term marks a different part of the travel process.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare tunnel, overhead wire, rail, and switch and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["tunnel", "overhead wire", "rail", "switch"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["tunnel", "overhead wire", "rail"],
             "expectedAnswer": "tunnel"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing tunnel, overhead wire, rail, and switch. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the tunnel as the central item; include tunnel, overhead wire, and rail naturally where visually appropriate, but make the real-world use of tunnel the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["buffer stop", "clock tower", "conductor"],
-          "scenario": "The traveler moves through the journey using or noticing buffer stop, clock tower, and conductor. Each term marks a different part of the travel process.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare buffer stop, clock tower, and conductor and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["buffer stop", "clock tower", "conductor"],
             "expectedAnswer": "buffer stop"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing buffer stop, clock tower, and conductor. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the buffer stop as the central item; include buffer stop, clock tower, and conductor naturally where visually appropriate, but make the real-world use of buffer stop the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "L6 Train Station: Practical Article",
-      "text": "A practical situation involving l6 train station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing seat number, first class, economy class, and pass. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing turnstile, signal, crossing gate, and bridge. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing tunnel, overhead wire, rail, and switch. Each term marks a different part of the travel process. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "title": "Important Information: Train Station",
+      "text": "At the train station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers seat number, first class, economy class, and pass. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers turnstile, signal, crossing gate, and bridge. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers tunnel, overhead wire, rail, and switch. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers buffer stop, clock tower, and conductor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about L6 Train Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -440,6 +466,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “information desk” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the l6 train station task. Use seat number, first class, economy class, pass, turnstile, signal, crossing gate, bridge, tunnel, overhead wire, rail, switch, buffer stop, clock tower, and conductor in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -474,61 +507,64 @@
     ],
     "targetWordsArabic": [
       "مهندس",
-      "مصطلح مرتبط بالموضوع يُسمّى «بورتير»",
+      "حمّال",
       "متنقل يومي",
-      "شخص يُسمّى «ترافيلير»",
-      "طائرة يُسمّى «بواردينج»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ديبارتينج»",
-      "مكان يُسمّى «ارريفينج»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ترانسفيررينج»",
-      "مكان يُسمّى «وايتينج»",
-      "مصطلح مرتبط بالموضوع يُسمّى «اننوونكينج»",
-      "مصطلح مرتبط بالموضوع يُسمّى «فاليداتينج»"
+      "شخص يسمى «ترافيلير»",
+      "طائرة يسمى «بواردينج»",
+      "مغادرة",
+      "مكان يسمى «ارريفينج»",
+      "تبديل وسيلة النقل",
+      "مكان يسمى «وايتينج»",
+      "إعلان",
+      "التحقق من صلاحية التذكرة"
     ],
     "usage": {
-      "goal": "Use the vocabulary from L6 Train Station to understand and communicate in a realistic B1-appropriate context.",
-      "canDoStatement": "I can use l6 train station vocabulary to handle a practical situation and explain key details.",
-      "textType": "real-life scenario",
+      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
+      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
+      "textType": "logistics-schedule",
       "readingTarget": "90-130 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["engineer", "porter", "commuter", "traveler"],
-          "scenario": "The traveler moves through the journey using or noticing engineer, porter, commuter, and traveler. Each term marks a different part of the travel process.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare engineer, porter, commuter, and traveler and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["engineer", "porter", "commuter", "traveler"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["engineer", "porter", "commuter"],
             "expectedAnswer": "engineer"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The traveler moves through the journey using or noticing engineer, porter, commuter, and traveler. Each term marks a different part of the travel process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the engineer as the central item; include engineer, porter, and commuter naturally where visually appropriate, but make the real-world use of engineer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["boarding", "departing", "arriving", "transferring"],
-          "scenario": "The learner connects boarding, departing, arriving, and transferring to the main activity and explains what each term means in context.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare boarding, departing, arriving, and transferring and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["boarding", "departing", "arriving", "transferring"],
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "options": ["boarding", "departing", "arriving"],
             "expectedAnswer": "boarding"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The learner connects boarding, departing, arriving, and transferring to the main activity and explains what each term means in context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult illustrating boarding through a realistic adult task; include boarding, departing, and arriving naturally where visually appropriate, but make the real-world use of boarding the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["waiting", "announcing", "validating"],
-          "scenario": "The learner connects waiting, announcing, and validating to the main activity and explains what each term means in context.",
+          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare waiting, announcing, and validating and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["waiting", "announcing", "validating"],
             "expectedAnswer": "waiting"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The learner connects waiting, announcing, and validating to the main activity and explains what each term means in context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult illustrating waiting through a realistic adult task; include waiting, announcing, and validating naturally where visually appropriate, but make the real-world use of waiting the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "L6 Train Station: Real-Life Scenario",
-      "text": "A practical situation involving l6 train station requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The traveler moves through the journey using or noticing engineer, porter, commuter, and traveler. Each term marks a different part of the travel process. The learner connects boarding, departing, arriving, and transferring to the main activity and explains what each term means in context. The learner connects waiting, announcing, and validating to the main activity and explains what each term means in context. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "title": "Planning the Next Stage of the Journey",
+      "text": "At the train station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers engineer, porter, commuter, and traveler. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers boarding, departing, arriving, and transferring. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers waiting, announcing, and validating. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about L6 Train Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -567,6 +603,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “seat number” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the l6 train station task. Use engineer, porter, commuter, traveler, boarding, departing, arriving, transferring, waiting, announcing, and validating in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {

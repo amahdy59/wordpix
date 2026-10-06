@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "bakery-1",
     "lessonName": "The Bakery 1",
@@ -27,88 +27,93 @@
       "Cinnamon Roll"
     ],
     "targetWordsArabic": [
-      "خُبْزٌ أَبْيَض",
-      "خُبْزُ القَمْحِ الكَامِل (خُبْزُ الحُبُوبِ الكَامِلَة / خُبْزُ الأَسْمَر)",
-      "بَاغِيت (خُبْزٌ فَرَنْسِيٌّ طَوِيل)",
-      "عَجِينَةٌ مُخَمَّرَة (خُبْزُ السَّاوِرْدُو / خُبْزٌ حَامِض)",
-      "خُبْزُ الشَّيْلَم (خُبْزُ الرَّاي)",
-      "خُبْزُ البِيتَا (خُبْزٌ عَرَبِيّ / عَيْشٌ بَلَدِيّ)",
-      "فُوكَاتْشْيَا (خُبْزٌ إِيطَالِيٌّ بِزَيْتِ الزَّيْتُونِ وَالأَعْشَاب)",
-      "تْشَابَاتَّا (خُبْزٌ إِيطَالِيٌّ رِيفِيّ)",
-      "بِرْيُوش (خُبْزٌ فَرَنْسِيٌّ حُلْوٌ بِالزُّبْدَة)",
-      "خُبْزٌ مَفْرُود (خُبْزٌ مُسَطَّح)",
-      "كْرَوَاسُون (خُبْزٌ هِلَالِيّ)",
-      "مَافِن (كَعْكَةٌ فَرْدِيَّةٌ إِسْفَنْجِيَّة)",
-      "دُونَات (كَعْكَةٌ مَقْلِيَّةٌ حَلَقِيَّة)",
-      "دَانِيش (مُعَجَّنَاتٌ دَانِمَارْكِيَّةٌ هَشَّة)",
-      "لَفَائِفُ القِرْفَة (سِينَابُون / لَفِيفَةُ قِرْفَة)"
+      "خبز أبيض",
+      "خبز القمح الكامل (خبز الحبوب الكاملة / خبز الأسمر)",
+      "باغيت (خبز فرنسي طويل)",
+      "عجينة مخمرة (خبز الساوردو / خبز حامض)",
+      "خبز الشيلم (خبز الراي)",
+      "خبز البيتا (خبز عربي / عيش بلدي)",
+      "فوكاتشيا (خبز إيطالي بزيت الزيتون والأعشاب)",
+      "تشاباتا (خبز إيطالي ريفي)",
+      "بريوش (خبز فرنسي حلو بالزبدة)",
+      "خبز مفرود (خبز مسطح)",
+      "كرواسون (خبز هلالي)",
+      "مافن (كعكة فردية إسفنجية)",
+      "دونات (كعكة مقلية حلقية)",
+      "دانيش (معجنات دانماركية هشة)",
+      "لفائف القرفة (سينابون / لفيفة قرفة)"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Bakery to understand and communicate in a realistic A1-appropriate context.",
-      "canDoStatement": "I can use key the bakery vocabulary in simple context.",
-      "textType": "mini dialogue",
+      "goal": "Learn to use common the bakery 1 vocabulary to handle a familiar adult everyday task.",
+      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the bakery.",
+      "textType": "dialogue",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["White Bread", "Whole Wheat Bread", "Baguette"],
-          "scenario": "During a busy order, the worker and customer deal with white bread, whole wheat bread, and baguette. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares White Bread, Whole Wheat Bread, Baguette. The person selects White Bread for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["White Bread", "Whole Wheat Bread", "Baguette"],
             "expectedAnswer": "White Bread"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with white bread, whole wheat bread, and baguette. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares White Bread, Whole Wheat Bread, Baguette. The person selects White Bread for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including White Bread, Whole Wheat Bread, Baguette in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sourdough", "Rye Bread", "Pita"],
-          "scenario": "During a busy order, the worker and customer deal with sourdough, rye bread, and pita. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Sourdough, Rye Bread, Pita. The person selects Sourdough for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Sourdough", "Rye Bread", "Pita"],
             "expectedAnswer": "Sourdough"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with sourdough, rye bread, and pita. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Sourdough, Rye Bread, Pita. The person selects Sourdough for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Sourdough, Rye Bread, Pita in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Focaccia", "Ciabatta", "Brioche"],
-          "scenario": "During a busy order, the worker and customer deal with focaccia, ciabatta, and brioche. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Focaccia, Ciabatta, Brioche. The person selects Focaccia for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Focaccia", "Ciabatta", "Brioche"],
             "expectedAnswer": "Focaccia"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with focaccia, ciabatta, and brioche. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Focaccia, Ciabatta, Brioche. The person selects Focaccia for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Focaccia, Ciabatta, Brioche in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Flatbread", "Croissant", "Muffin"],
-          "scenario": "During a busy order, the worker and customer deal with flatbread, croissant, and muffin. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Flatbread, Croissant, Muffin. The person selects Flatbread for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Flatbread", "Croissant", "Muffin"],
             "expectedAnswer": "Flatbread"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with flatbread, croissant, and muffin. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Flatbread, Croissant, Muffin. The person selects Flatbread for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Flatbread, Croissant, Muffin in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Donut", "Danish", "Cinnamon Roll"],
-          "scenario": "During a busy order, the worker and customer deal with donut, danish, and cinnamon roll. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Donut, Danish, Cinnamon Roll. The person selects Donut for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Donut", "Danish", "Cinnamon Roll"],
             "expectedAnswer": "Donut"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with donut, danish, and cinnamon roll. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Donut, Danish, Cinnamon Roll. The person selects Donut for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Donut, Danish, Cinnamon Roll in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "The Bakery: Mini Dialogue",
-      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with white bread, whole wheat bread, and baguette. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with sourdough, rye bread, and pita. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with focaccia, ciabatta, and brioche. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with white bread, whole wheat bread, and baguette. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with sourdough, rye bread, and pita. The scene shows how these words naturally belong in the same food-service context.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Bakery. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -185,87 +190,92 @@
     ],
     "targetWordsArabic": [
       "-",
-      "سْكُون (كَعْكٌ بَرِيطَانِيٌّ يُقَدَّمُ مَعَ الشَّاي)",
-      "سْتْرُودِل (فَطِيرَةٌ نِمْسَاوِيَّةٌ مَلْفُوفَةٌ بِالتُّفَّاح)",
-      "مَاكَارُون (حَلْوَى اللَّوْزِ الفَرَنْسِيَّة)",
-      "بْرُوفِيتِرُول (كُرَاتُ حَلْوَى مَحْشُوَّةٌ بِالكْرِيمَة)",
-      "كَعْكَةُ عِيدِ المِيلَاد (تَوْرْتَةُ عِيدِ المِيلَاد)",
-      "كَعْكَةُ الزِّفَاف (تَوْرْتَةُ العُرْس)",
-      "كَبْ كَيْك (كَعْكَةُ الفِنْجَانِ الفَرْدِيَّة)",
-      "تْشِيز كَيْك (كَعْكَةُ الجُبْن)",
-      "كَعْكَةُ الشُّوكُولَاتَة (كَيْكُ الشُّوكُولَاتَة)",
-      "كَعْكَةُ الجَزَر (كَيْكُ الجَزَر)",
-      "فَطِيرَةُ التُّفَّاح",
-      "فَطِيرَةُ الكَرَز",
-      "تَارْتُ اللَّيْمُون (فَطِيرَةُ اللَّيْمُونِ الهَشَّة)",
-      "بْرَاوْنِيز (كَعْكَةُ الشُّوكُولَاتَةِ الدَّسِمَة)"
+      "سكون (كعك بريطاني يقدم مع الشاي)",
+      "سترودل (فطيرة نمساوية ملفوفة بالتفاح)",
+      "ماكارون (حلوى اللوز الفرنسية)",
+      "بروفيترول (كرات حلوى محشوة بالكريمة)",
+      "كعكة عيد الميلاد (تورتة عيد الميلاد)",
+      "كعكة الزفاف (تورتة العرس)",
+      "كب كيك (كعكة الفنجان الفردية)",
+      "تشيز كيك (كعكة الجبن)",
+      "كعكة الشوكولاتة (كيك الشوكولاتة)",
+      "كعكة الجزر (كيك الجزر)",
+      "فطيرة التفاح",
+      "فطيرة الكرز",
+      "تارت الليمون (فطيرة الليمون الهشة)",
+      "براونيز (كعكة الشوكولاتة الدسمة)"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Bakery to understand and communicate in a realistic A1-appropriate context.",
-      "canDoStatement": "I can use key the bakery vocabulary in simple context.",
-      "textType": "simple message",
+      "goal": "Learn to use common the bakery 2 vocabulary to handle a familiar adult everyday task.",
+      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the bakery.",
+      "textType": "workplace-email",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Éclair", "Scone", "Strudel"],
-          "scenario": "During a busy order, the worker and customer deal with éclair, scone, and strudel. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Éclair, Scone, Strudel. The person selects Éclair for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Éclair", "Scone", "Strudel"],
             "expectedAnswer": "Éclair"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with éclair, scone, and strudel. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Éclair, Scone, Strudel. The person selects Éclair for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Éclair, Scone, Strudel in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Macaron", "Profiterole", "Birthday Cake"],
-          "scenario": "During a busy order, the worker and customer deal with macaron, profiterole, and birthday cake. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Macaron, Profiterole, Birthday Cake. The person selects Macaron for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Macaron", "Profiterole", "Birthday Cake"],
             "expectedAnswer": "Macaron"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with macaron, profiterole, and birthday cake. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Macaron, Profiterole, Birthday Cake. The person selects Macaron for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Macaron, Profiterole, Birthday Cake in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Wedding Cake", "Cupcake", "Cheesecake"],
-          "scenario": "During a busy order, the worker and customer deal with wedding cake, cupcake, and cheesecake. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Wedding Cake, Cupcake, Cheesecake. The person selects Wedding Cake for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Wedding Cake", "Cupcake", "Cheesecake"],
             "expectedAnswer": "Wedding Cake"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with wedding cake, cupcake, and cheesecake. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Wedding Cake, Cupcake, Cheesecake. The person selects Wedding Cake for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Wedding Cake, Cupcake, Cheesecake in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Chocolate Cake", "Carrot Cake", "Apple Pie"],
-          "scenario": "During a busy order, the worker and customer deal with chocolate cake, carrot cake, and apple pie. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Chocolate Cake, Carrot Cake, Apple Pie. The person selects Chocolate Cake for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Chocolate Cake", "Carrot Cake", "Apple Pie"],
             "expectedAnswer": "Chocolate Cake"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with chocolate cake, carrot cake, and apple pie. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Chocolate Cake, Carrot Cake, Apple Pie. The person selects Chocolate Cake for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Chocolate Cake, Carrot Cake, Apple Pie in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Cherry Pie", "Lemon Tart", "Brownie"],
-          "scenario": "During a busy order, the worker and customer deal with cherry pie, lemon tart, and brownie. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Cherry Pie, Lemon Tart, Brownie. The person selects Cherry Pie for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Cherry Pie", "Lemon Tart", "Brownie"],
             "expectedAnswer": "Cherry Pie"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with cherry pie, lemon tart, and brownie. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Cherry Pie, Lemon Tart, Brownie. The person selects Cherry Pie for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Cherry Pie, Lemon Tart, Brownie in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "The Bakery: Simple Message",
-      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with éclair, scone, and strudel. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with macaron, profiterole, and birthday cake. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with wedding cake, cupcake, and cheesecake. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with éclair, scone, and strudel. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with macaron, profiterole, and birthday cake. The scene shows how these words naturally belong in the same food-service context.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Bakery. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -341,88 +351,93 @@
       "Yeast"
     ],
     "targetWordsArabic": [
-      "بَسْكُويْتُ حَبِيبَاتِ الشُّوكُولَاتَة (كُوكِيز بِالشُّوكُولَاتَة)",
-      "بَسْكُويْتُ السُّكَّر (كُوكِيز السُّكَّر)",
-      "خُبْزُ الزَّنْجَبِيل (بَسْكُويْتُ الزَّنْجَبِيل / جِنْجَرْبْرِيد)",
-      "شُورْت بْرِيد (بَسْكُويْتُ الزُّبْدَةِ الإِسْكُتْلَنْدِيّ)",
-      "بَسْكُويْتُ الشُّوفَان (كُوكِيز الشُّوفَان)",
-      "وِيفَر (بَسْكُويْتٌ رَقِيقٌ هَشّ)",
-      "بَسْكُويْت (بَسْكَوِيت / قُرْصٌ مَخْبُوز)",
-      "بْرِتْزِل (كَعْكٌ مَمْلُوحٌ مُعَقَّدُ الشَّكْل)",
-      "مُقَرْمَشَات (بَسْكُويْتٌ مَالِحٌ مُقَرْمَش)",
-      "لَوْحُ جْرَانُولَا (لَوْحُ شُوفَانٍ وَمُكَسَّرَات)",
-      "طَحِين (دَقِيق)",
-      "سُكَّر",
-      "زُبْدَة",
-      "بَيْض",
-      "خَمِيرَة"
+      "بسكويت حبيبات الشوكولاتة (كوكيز بالشوكولاتة)",
+      "بسكويت السكر (كوكيز السكر)",
+      "خبز الزنجبيل (بسكويت الزنجبيل / جنجربريد)",
+      "شورت بريد (بسكويت الزبدة الإسكتلندي)",
+      "بسكويت الشوفان (كوكيز الشوفان)",
+      "ويفر (بسكويت رقيق هش)",
+      "بسكويت (بسكويت / قرص مخبوز)",
+      "برتزل (كعك مملوح معقد الشكل)",
+      "مقرمشات (بسكويت مالح مقرمش)",
+      "لوح جرانولا (لوح شوفان ومكسرات)",
+      "طحين (دقيق)",
+      "سكر",
+      "زبدة",
+      "بيض",
+      "خميرة"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Bakery to understand and communicate in a realistic A1-appropriate context.",
-      "canDoStatement": "I can use key the bakery vocabulary in simple context.",
-      "textType": "notice-style text",
+      "goal": "Learn to use common the bakery 3 vocabulary to handle a familiar adult everyday task.",
+      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the bakery.",
+      "textType": "service-notice",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Chocolate Chip Cookie", "Sugar Cookie", "Gingerbread"],
-          "scenario": "During a busy order, the worker and customer deal with chocolate chip cookie, sugar cookie, and gingerbread. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Chocolate Chip Cookie, Sugar Cookie, Gingerbread. The person selects Chocolate Chip Cookie for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Chocolate Chip Cookie", "Sugar Cookie", "Gingerbread"],
             "expectedAnswer": "Chocolate Chip Cookie"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with chocolate chip cookie, sugar cookie, and gingerbread. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Chocolate Chip Cookie, Sugar Cookie, Gingerbread. The person selects Chocolate Chip Cookie for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Chocolate Chip Cookie, Sugar Cookie, Gingerbread in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Shortbread", "Oatmeal Cookie", "Wafer"],
-          "scenario": "During a busy order, the worker and customer deal with shortbread, oatmeal cookie, and wafer. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Shortbread, Oatmeal Cookie, Wafer. The person selects Shortbread for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Shortbread", "Oatmeal Cookie", "Wafer"],
             "expectedAnswer": "Shortbread"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with shortbread, oatmeal cookie, and wafer. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Shortbread, Oatmeal Cookie, Wafer. The person selects Shortbread for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Shortbread, Oatmeal Cookie, Wafer in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Biscuit", "Pretzel", "Cracker"],
-          "scenario": "During a busy order, the worker and customer deal with biscuit, pretzel, and cracker. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Biscuit, Pretzel, Cracker. The person selects Biscuit for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Biscuit", "Pretzel", "Cracker"],
             "expectedAnswer": "Biscuit"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with biscuit, pretzel, and cracker. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Biscuit, Pretzel, Cracker. The person selects Biscuit for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Biscuit, Pretzel, Cracker in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Granola Bar", "Flour", "Sugar"],
-          "scenario": "During a busy order, the worker and customer deal with granola bar, flour, and sugar. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Granola Bar, Flour, Sugar. The person selects Granola Bar for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Granola Bar", "Flour", "Sugar"],
             "expectedAnswer": "Granola Bar"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with granola bar, flour, and sugar. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Granola Bar, Flour, Sugar. The person selects Granola Bar for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Granola Bar, Flour, Sugar in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Butter", "Eggs", "Yeast"],
-          "scenario": "During a busy order, the worker and customer deal with butter, eggs, and yeast. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Butter, Eggs, Yeast. The person selects Butter for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Butter", "Eggs", "Yeast"],
             "expectedAnswer": "Butter"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with butter, eggs, and yeast. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Butter, Eggs, Yeast. The person selects Butter for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Butter, Eggs, Yeast in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "The Bakery: Notice-Style Text",
-      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with chocolate chip cookie, sugar cookie, and gingerbread. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with shortbread, oatmeal cookie, and wafer. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with biscuit, pretzel, and cracker. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with chocolate chip cookie, sugar cookie, and gingerbread. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with shortbread, oatmeal cookie, and wafer. The scene shows how these words naturally belong in the same food-service context.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Bakery. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -498,88 +513,93 @@
       "Muffin Tin"
     ],
     "targetWordsArabic": [
-      "بِيكِنْج بَاوْدَر (مَسْحُوقُ الخَبْز)",
-      "شُوكُولَاتَة",
-      "فَانِيلْيَا (خُلَاصَةُ الفَانِيلْيَا)",
-      "قِشْطَة (كْرِيمَة)",
-      "بُودْرَةُ الكَاكَاو (مَسْحُوقُ الكَاكَاو)",
-      "قِرْفَة (قِرْفَةٌ مَطْحُونَة / عِيدَانُ قِرْفَة)",
-      "عَسَل (عَسَلُ نَحْل)",
-      "فُرْن",
-      "خَلَّاط (عَجَّانَة / خَفَّاقَةٌ كَهْرَبَائِيَّة)",
-      "نَشَّابَة / شَوْبَك (مِدْلَاكُ العَجِين)",
-      "صِينِيَّةُ خَبْز (صَاج)",
-      "مِخْفَقَةُ بَيْض (مَضْرَبُ سِلْك)",
-      "مِلْعَقَةُ تَقْلِيب (سْبَاتْيُولا)",
-      "كِيسُ الحَلْوَانِيّ (كِيسُ التَّزْيِين)",
-      "صِينِيَّةُ المَافِن (قَالِبُ الكَبْ كَيْك)"
+      "بيكنج باودر (مسحوق الخبز)",
+      "شوكولاتة",
+      "فانيليا (خلاصة الفانيليا)",
+      "قشطة (كريمة)",
+      "بودرة الكاكاو (مسحوق الكاكاو)",
+      "قرفة (قرفة مطحونة / عيدان قرفة)",
+      "عسل (عسل نحل)",
+      "فرن",
+      "خلاط (عجانة / خفاقة كهربائية)",
+      "نشابة / شوبك (مدلاك العجين)",
+      "صينية خبز (صاج)",
+      "مخفقة بيض (مضرب سلك)",
+      "ملعقة تقليب (سباتيولا)",
+      "كيس الحلواني (كيس التزيين)",
+      "صينية المافن (قالب الكب كيك)"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Bakery to understand and communicate in a realistic A1-appropriate context.",
-      "canDoStatement": "I can use key the bakery vocabulary in simple context.",
-      "textType": "short description",
+      "goal": "Learn to use common the bakery 4 vocabulary to handle a familiar adult everyday task.",
+      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the bakery.",
+      "textType": "dialogue",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Baking Powder", "Chocolate", "Vanilla"],
-          "scenario": "During a busy order, the worker and customer deal with baking powder, chocolate, and vanilla. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Baking Powder, Chocolate, Vanilla. The person selects Baking Powder for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Baking Powder", "Chocolate", "Vanilla"],
             "expectedAnswer": "Baking Powder"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with baking powder, chocolate, and vanilla. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Baking Powder, Chocolate, Vanilla. The person selects Baking Powder for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Baking Powder, Chocolate, Vanilla in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cream", "Cocoa Powder", "Cinnamon"],
-          "scenario": "During a busy order, the worker and customer deal with cream, cocoa powder, and cinnamon. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Cream, Cocoa Powder, Cinnamon. The person selects Cream for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Cream", "Cocoa Powder", "Cinnamon"],
             "expectedAnswer": "Cream"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with cream, cocoa powder, and cinnamon. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Cream, Cocoa Powder, Cinnamon. The person selects Cream for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Cream, Cocoa Powder, Cinnamon in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Honey", "Oven", "Mixer"],
-          "scenario": "During a busy order, the worker and customer deal with honey, oven, and mixer. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Honey, Oven, Mixer. The person selects Honey for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Honey", "Oven", "Mixer"],
             "expectedAnswer": "Honey"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with honey, oven, and mixer. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Honey, Oven, Mixer. The person selects Honey for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Honey, Oven, Mixer in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Rolling Pin", "Baking Tray", "Whisk"],
-          "scenario": "During a busy order, the worker and customer deal with rolling pin, baking tray, and whisk. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Rolling Pin, Baking Tray, Whisk. The person selects Rolling Pin for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Rolling Pin", "Baking Tray", "Whisk"],
             "expectedAnswer": "Rolling Pin"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with rolling pin, baking tray, and whisk. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Rolling Pin, Baking Tray, Whisk. The person selects Rolling Pin for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Rolling Pin, Baking Tray, Whisk in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Spatula", "Piping Bag", "Muffin Tin"],
-          "scenario": "During a busy order, the worker and customer deal with spatula, piping bag, and muffin tin. The scene shows how these words naturally belong in the same food-service context.",
+          "scenario": "During a routine the bakery task, an adult compares Spatula, Piping Bag, Muffin Tin. The person selects Spatula for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Spatula", "Piping Bag", "Muffin Tin"],
             "expectedAnswer": "Spatula"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: During a busy order, the worker and customer deal with spatula, piping bag, and muffin tin. The scene shows how these words naturally belong in the same food-service context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Spatula, Piping Bag, Muffin Tin. The person selects Spatula for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Spatula, Piping Bag, Muffin Tin in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "The Bakery: Short Description",
-      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with baking powder, chocolate, and vanilla. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with cream, cocoa powder, and cinnamon. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with honey, oven, and mixer. The scene shows how these words naturally belong in the same food-service context. The words now belong to one memorable scene instead of an isolated list.",
+      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. During a busy order, the worker and customer deal with baking powder, chocolate, and vanilla. The scene shows how these words naturally belong in the same food-service context. During a busy order, the worker and customer deal with cream, cocoa powder, and cinnamon. The scene shows how these words naturally belong in the same food-service context.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Bakery. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -649,60 +669,63 @@
       "Egg"
     ],
     "targetWordsArabic": [
-      "شَبَكَةُ التَّبْرِيد (رَفُّ تَبْرِيدِ المَخْبُوزَات)",
-      "سَلَّةُ الخُبْز (سَلَّةُ تَقْدِيمِ الخُبْز)",
-      "مِرْيَلَةُ مَطْبَخ (مِرْيَلَة)",
-      "مُؤَقِّت (مُؤَقِّتُ المَطْبَخ / سَاعَةُ التَّوْقِيت)",
-      "خُبْز (عَيْش)",
-      "كَعْكَة (كَيْك / تَوْرْتَة)",
-      "كَعْكَةٌ صَغِيرَة (بَسْكُويْت / كُوكِيز)",
-      "فَطِيرَة",
-      "بَيْضَة (بَيْض)"
+      "شبكة التبريد (رف تبريد المخبوزات)",
+      "سلة الخبز (سلة تقديم الخبز)",
+      "مريلة مطبخ (مريلة)",
+      "مؤقت (مؤقت المطبخ / ساعة التوقيت)",
+      "خبز (عيش)",
+      "كعكة (كيك / تورتة)",
+      "كعكة صغيرة (بسكويت / كوكيز)",
+      "فطيرة",
+      "بيضة (بيض)"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Bakery to understand and communicate in a realistic A1-appropriate context.",
-      "canDoStatement": "I can use key the bakery vocabulary in simple context.",
-      "textType": "mini dialogue",
+      "goal": "Learn to use common the bakery 5 vocabulary to handle a familiar adult everyday task.",
+      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the bakery.",
+      "textType": "dialogue",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Cooling Rack", "Bread Basket", "Apron"],
-          "scenario": "Fresh bread rests on the cooling rack after it comes out of the oven. The bread basket sits on the counter ready for the next order. The baker wears an apron while working in the kitchen.",
+          "scenario": "During a routine the bakery task, an adult compares Cooling Rack, Bread Basket, Apron. The person selects Cooling Rack for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Cooling Rack", "Bread Basket", "Apron"],
             "expectedAnswer": "Cooling Rack"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: Fresh bread rests on the cooling rack after it comes out of the oven. The bread basket sits on the counter ready for the next order. The baker wears an apron while working in the kitchen. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Cooling Rack, Bread Basket, Apron. The person selects Cooling Rack for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Cooling Rack, Bread Basket, Apron in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Timer", "Bread", "Cake"],
-          "scenario": "The baker checks the timer before opening the oven. Fresh bread is arranged on the shelf for customers. A decorated cake is waiting in the display case.",
+          "scenario": "During a routine the bakery task, an adult compares Timer, Bread, Cake. The person selects Timer for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Timer", "Bread", "Cake"],
             "expectedAnswer": "Timer"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The baker checks the timer before opening the oven. Fresh bread is arranged on the shelf for customers. A decorated cake is waiting in the display case. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Timer, Bread, Cake. The person selects Timer for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Timer, Bread, Cake in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cookie", "Pie", "Egg"],
-          "scenario": "At the counter, a customer asks for a cookie. Another customer chooses a slice of pie from the display. In the kitchen, the baker cracks an egg into a bowl for the next batch.",
+          "scenario": "During a routine the bakery task, an adult compares Cookie, Pie, Egg. The person selects Cookie for the next step.",
           "check": {
-            "question": "Which target word best matches the key detail in this scene?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Cookie", "Pie", "Egg"],
             "expectedAnswer": "Cookie"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: At the counter, a customer asks for a cookie. Another customer chooses a slice of pie from the display. In the kitchen, the baker cracks an egg into a bowl for the next batch. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a the bakery context illustrating this situation: During a routine the bakery task, an adult compares Cookie, Pie, Egg. The person selects Cookie for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the bakery scene showing lesson-related items or actions including Cookie, Pie, Egg in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "The Bakery: Mini Dialogue",
-      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. Fresh bread rests on the cooling rack after it comes out of the oven. The bread basket sits on the counter ready for the next order. The baker wears an apron while working in the kitchen. The baker checks the timer before opening the oven. Fresh bread is arranged on the shelf for customers. A decorated cake is waiting in the display case. At the counter, a customer asks for a cookie. Another customer chooses a slice of pie from the display. In the kitchen, the baker cracks an egg into a bowl for the next batch. The words now belong to one memorable scene instead of an isolated list.",
+      "text": "Maya is in a situation connected to the bakery. She uses the new words to understand what she sees and what happens next. Fresh bread rests on the cooling rack after it comes out of the oven. The bread basket sits on the counter ready for the next order. The baker wears an apron while working in the kitchen. The baker checks the timer before opening the oven.",
       "imageBrief": "Create one coherent A1-level visual for the reading about The Bakery. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [

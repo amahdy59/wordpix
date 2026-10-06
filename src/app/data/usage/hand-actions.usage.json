@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "hand-actions-1",
     "lessonName": "Hand Actions 1",
@@ -30,7 +30,7 @@
       "يمسك بسرعة",
       "يمسك",
       "قبضة",
-      "حقيبة صغيرة",
+      "يمسك بإحكام",
       "إمساك",
       "عصر",
       "قبض بإحكام",
@@ -44,71 +44,76 @@
       "يشد"
     ],
     "usage": {
-      "goal": "Understand common hand actions used with everyday objects.",
-      "canDoStatement": "I can understand common hand actions used with everyday objects",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key hand actions 1 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to hand actions in very simple everyday situations.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Grab", "Hold", "Grip"],
-          "scenario": "With my hands, I can grab, hold, grip.",
+          "scenario": "At a packing station, an adult demonstrates how to grab, hold, and grip a light object safely. The highlighted action is grab.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Grab", "Hold", "Grip"],
+            "question": "What hand action is being demonstrated?",
+            "options": ["Hold", "Grip", "Grab"],
             "expectedAnswer": "Grab"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can grab, hold, grip. Emphasize grab, hold, and grip and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: At a packing station, an adult demonstrates how to grab, hold, and grip a light object safely. The highlighted action is grab. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Grab, Hold, Grip in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Clutch", "Grasp", "Squeeze"],
-          "scenario": "With my hands, I can clutch, grasp, squeeze.",
+          "scenario": "At a storeroom, an adult demonstrates how to clutch, grasp, and squeeze a light object safely. The highlighted action is clutch.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Clutch", "Grasp", "Squeeze"],
+            "question": "What action should the worker use here?",
+            "options": ["Squeeze", "Clutch", "Grasp"],
             "expectedAnswer": "Clutch"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can clutch, grasp, squeeze. Emphasize clutch, grasp, and squeeze and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: At a storeroom, an adult demonstrates how to clutch, grasp, and squeeze a light object safely. The highlighted action is clutch. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Clutch, Grasp, Squeeze in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Clench", "Pinch", "Carry"],
-          "scenario": "With my hands, I can clench, pinch, carry.",
+          "scenario": "At a warehouse training, an adult demonstrates how to clench, pinch, and carry a light object safely. The highlighted action is clench.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What hand action is being demonstrated in the example with clench, pinch?",
             "options": ["Clench", "Pinch", "Carry"],
             "expectedAnswer": "Clench"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can clench, pinch, carry. Emphasize clench, pinch, and carry and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: At a warehouse training, an adult demonstrates how to clench, pinch, and carry a light object safely. The highlighted action is clench. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Clench, Pinch, Carry in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Lift", "Push", "Pull"],
-          "scenario": "With my hands, I can lift, push, pull.",
+          "scenario": "While moving light office supplies, an adult demonstrates how to lift, push, and pull an object. The highlighted action is lift.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Lift", "Push", "Pull"],
+            "question": "What action should the worker use here in the example with lift, push?",
+            "options": ["Push", "Pull", "Lift"],
             "expectedAnswer": "Lift"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can lift, push, pull. Emphasize lift, push, and pull and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: While moving light office supplies, an adult demonstrates how to lift, push, and pull an object. The highlighted action is lift. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Lift, Push, Pull in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Drag", "Shove", "Tug"],
-          "scenario": "With my hands, I can drag, shove, tug.",
+          "scenario": "At a delivery desk, an adult demonstrates how to drag, shove, and tug a light object safely. The highlighted action is drag.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Drag", "Shove", "Tug"],
+            "question": "Which verb describes how the object is being handled?",
+            "options": ["Tug", "Drag", "Shove"],
             "expectedAnswer": "Drag"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can drag, shove, tug. Emphasize drag, shove, and tug and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: At a delivery desk, an adult demonstrates how to drag, shove, and tug a light object safely. The highlighted action is drag. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Drag, Shove, Tug in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Hand Actions Mini Story",
-      "text": "At the activity table, I use my hands in different ways. I grab, hold, and grip. Then I clutch and grasp. I practice each action with safe classroom objects. We also remember earlier words such as bend and stretch.",
+      "title": "Handling Supplies Safely",
+      "text": "During a workplace training session, adults practise handling light supplies safely. For small objects, a person may grab, hold, grip, clutch, and grasp. For boxes and packages, they may squeeze, clench, pinch, carry, and lift. When an item must move across a surface, they may push, pull, drag, shove, and tug. People choose the action that fits the object instead of using unnecessary force.",
       "imageBrief": "One uncluttered hand actions scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -148,7 +153,7 @@
     "video": {
       "title": "Hand Actions: See It, Say It",
       "idea": "30–50 second contextual video set in a activity table. Show grab, hold, grip, clutch, and grasp naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see grab, hold, and grip. What can you find next?"
+      "scriptStarter": "Watch the situation: At a packing station, an adult demonstrates how to grab, hold, and grip a light object safely. The highlighted action is grab."
     },
     "spacedReview": "1 lesson(s) back: Bend, Stretch from movement-verbs-4\n3 lesson(s) back: Climb, Crawl from movement-verbs-2\n7 lesson(s) back: Northwest, Southeast from giving-directions-2"
   },
@@ -187,8 +192,8 @@
       "يعصر",
       "يرمي",
       "يلتقط",
-      "فعل يُسمّى «توسس»",
-      "حدّة الصوت",
+      "يرمي بخفة",
+      "حدة الصوت",
       "يقذف",
       "يرمي بقوة",
       "يرمي في قوس",
@@ -197,9 +202,9 @@
       "يلعب بالكرات"
     ],
     "usage": {
-      "goal": "Understand common hand actions used with everyday objects.",
-      "canDoStatement": "I can understand common hand actions used with everyday objects",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key hand actions 2 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to hand actions in very simple everyday situations.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -211,7 +216,8 @@
             "options": ["Yank", "Press", "Twist"],
             "expectedAnswer": "Yank"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can yank, press, twist. Emphasize yank, press, and twist and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can yank, press, twist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Yank, Press, Twist in a natural setting."
         },
         {
           "chunkNumber": 2,
@@ -222,7 +228,8 @@
             "options": ["Turn", "Wring", "Throw"],
             "expectedAnswer": "Turn"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can turn, wring, throw. Emphasize turn, wring, and throw and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can turn, wring, throw. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Turn, Wring, Throw in a natural setting."
         },
         {
           "chunkNumber": 3,
@@ -233,7 +240,8 @@
             "options": ["Catch", "Toss", "Pitch"],
             "expectedAnswer": "Catch"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can catch, toss, pitch. Emphasize catch, toss, and pitch and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can catch, toss, pitch. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Catch, Toss, Pitch in a natural setting."
         },
         {
           "chunkNumber": 4,
@@ -244,7 +252,8 @@
             "options": ["Fling", "Hurl", "Lob"],
             "expectedAnswer": "Fling"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can fling, hurl, lob. Emphasize fling, hurl, and lob and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can fling, hurl, lob. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Fling, Hurl, Lob in a natural setting."
         },
         {
           "chunkNumber": 5,
@@ -255,13 +264,14 @@
             "options": ["Pass", "Drop", "Juggle"],
             "expectedAnswer": "Pass"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can pass, drop, juggle. Emphasize pass, drop, and juggle and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can pass, drop, juggle. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Pass, Drop, Juggle in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "Hand Actions Mini Story",
-      "text": "At the activity table, I use my hands in different ways. I yank, press, and twist. Then I turn and wring. I practice each action with safe classroom objects. We also remember earlier words such as grab and hold.",
+      "text": "At the activity table, I use my hands in different ways. I yank, press, and twist. Then I turn and wring. I practice each action with safe classroom objects. We also remember earlier words such as grab and hold. The vocabulary is used in a realistic hand actions context that an adult could meet at home, at work, or in the community.",
       "imageBrief": "One uncluttered hand actions scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -301,7 +311,7 @@
     "video": {
       "title": "Hand Actions: See It, Say It",
       "idea": "30–50 second contextual video set in a activity table. Show yank, press, twist, turn, and wring naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see yank, press, and twist. What can you find next?"
+      "scriptStarter": "Watch the situation: With my hands, I can yank, press, twist."
     },
     "spacedReview": "1 lesson(s) back: Grab, Hold from hand-actions-1\n3 lesson(s) back: Dance, Spin from movement-verbs-3\n7 lesson(s) back: Intersection, Corner from giving-directions-3"
   },
@@ -350,9 +360,9 @@
       "يطوي برفق"
     ],
     "usage": {
-      "goal": "Understand common hand actions used with everyday objects.",
-      "canDoStatement": "I can understand common hand actions used with everyday objects",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key hand actions 3 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to hand actions in very simple everyday situations.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -364,7 +374,8 @@
             "options": ["Touch", "Tap", "Poke"],
             "expectedAnswer": "Touch"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can touch, tap, poke. Emphasize touch, tap, and poke and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can touch, tap, poke. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Touch, Tap, Poke in a natural setting."
         },
         {
           "chunkNumber": 2,
@@ -375,7 +386,8 @@
             "options": ["Stroke", "Pat", "Rub"],
             "expectedAnswer": "Stroke"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can stroke, pat, rub. Emphasize stroke, pat, and rub and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can stroke, pat, rub. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Stroke, Pat, Rub in a natural setting."
         },
         {
           "chunkNumber": 3,
@@ -386,7 +398,8 @@
             "options": ["Scratch", "Tickle", "Caress"],
             "expectedAnswer": "Scratch"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can scratch, tickle, caress. Emphasize scratch, tickle, and caress and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can scratch, tickle, caress. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Scratch, Tickle, Caress in a natural setting."
         },
         {
           "chunkNumber": 4,
@@ -397,7 +410,8 @@
             "options": ["Massage", "Write", "Draw"],
             "expectedAnswer": "Massage"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can massage, write, draw. Emphasize massage, write, and draw and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can massage, write, draw. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Massage, Write, Draw in a natural setting."
         },
         {
           "chunkNumber": 5,
@@ -408,13 +422,14 @@
             "options": ["Paint", "Type", "Fold"],
             "expectedAnswer": "Paint"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can paint, type, fold. Emphasize paint, type, and fold and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can paint, type, fold. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Paint, Type, Fold in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "Hand Actions Mini Story",
-      "text": "At the activity table, I use my hands in different ways. I touch, tap, and poke. Then I stroke and pat. I practice each action with safe classroom objects. We also remember earlier words such as yank and press.",
+      "text": "At the activity table, I use my hands in different ways. I touch, tap, and poke. Then I stroke and pat. I practice each action with safe classroom objects. We also remember earlier words such as yank and press. The vocabulary is used in a realistic hand actions context that an adult could meet at home, at work, or in the community.",
       "imageBrief": "One uncluttered hand actions scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -454,7 +469,7 @@
     "video": {
       "title": "Hand Actions: See It, Say It",
       "idea": "30–50 second contextual video set in a activity table. Show touch, tap, poke, stroke, and pat naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see touch, tap, and poke. What can you find next?"
+      "scriptStarter": "Watch the situation: With my hands, I can touch, tap, poke."
     },
     "spacedReview": "1 lesson(s) back: Yank, Press from hand-actions-2\n3 lesson(s) back: Bend, Stretch from movement-verbs-4\n7 lesson(s) back: Tower, Church from giving-directions-4"
   },
@@ -471,9 +486,9 @@
     "targetWordsEnglish": ["Tear", "Cut", "Glue", "Sew", "Knit"],
     "targetWordsArabic": ["دمعة", "يقطع", "يلصق", "يخيط", "حياكة"],
     "usage": {
-      "goal": "Understand common hand actions used with everyday objects.",
-      "canDoStatement": "I can understand common hand actions used with everyday objects",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key hand actions 4 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to hand actions in very simple everyday situations.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -485,7 +500,8 @@
             "options": ["Tear", "Cut", "Glue"],
             "expectedAnswer": "Tear"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can tear, cut, glue. Emphasize tear, cut, and glue and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can tear, cut, glue. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Tear, Cut, Glue in a natural setting."
         },
         {
           "chunkNumber": 2,
@@ -493,16 +509,17 @@
           "scenario": "With my hands, I can sew, knit.",
           "check": {
             "question": "Which word is shown in the picture?",
-            "options": ["Sew", "Knit"],
+            "options": ["Sew", "Knit", "Tear"],
             "expectedAnswer": "Sew"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for hand actions that represents: With my hands, I can sew, knit. Emphasize sew and knit and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can sew, knit. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Sew, Knit in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "Hand Actions Mini Story",
-      "text": "At the activity table, I use my hands in different ways. I tear, cut, and glue. Then I sew and knit. I practice each action with safe classroom objects. We also remember earlier words such as touch and tap.",
+      "text": "At the activity table, I use my hands in different ways. I tear, cut, and glue. Then I sew and knit. I practice each action with safe classroom objects. We also remember earlier words such as touch and tap. The vocabulary is used in a realistic hand actions context that an adult could meet at home, at work, or in the community.",
       "imageBrief": "One uncluttered hand actions scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -530,7 +547,7 @@
     "video": {
       "title": "Hand Actions: See It, Say It",
       "idea": "30–50 second contextual video set in a activity table. Show tear, cut, glue, sew, and knit naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see tear, cut, and glue. What can you find next?"
+      "scriptStarter": "Watch the situation: With my hands, I can tear, cut, glue."
     },
     "spacedReview": "1 lesson(s) back: Touch, Tap from hand-actions-3\n3 lesson(s) back: Grab, Hold from hand-actions-1\n7 lesson(s) back: Walk, Run from movement-verbs-1"
   }

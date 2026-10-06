@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "robotics-lab-1",
     "lessonName": "The Robotics Lab 1",
@@ -29,75 +29,79 @@
     "targetWordsArabic": [
       "محرك",
       "مستشعر",
-      "سطح يُسمّى «كيركويت بوارد»",
+      "سطح يسمى «كيركويت بوارد»",
       "حزمة بطاريات",
       "ترس",
       "عجلة",
       "محور",
       "إطار",
-      "مصطلح تقني أو أداة يُسمّى «ارم»",
-      "جزء يُسمّى «جريببير»",
+      "مصطلح تقني أو أداة يسمى «ارم»",
+      "جزء يسمى «جريببير»",
       "وحدة كاميرا",
-      "مصطلح تقني أو أداة يُسمّى «ليد»",
+      "مصطلح تقني أو أداة يسمى «ليد»",
       "سلك",
-      "جهاز يُسمّى «ريسيستور»",
-      "جهاز يُسمّى «كاباكيتور»"
+      "جهاز يسمى «ريسيستور»",
+      "جهاز يسمى «كاباكيتور»"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Robotics Lab to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the robotics lab vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "case note",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "instructional-guide",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Motor", "Sensor", "Circuit Board", "Battery Pack"],
-          "scenario": "The engineer or technician checks motor, sensor, circuit board, and battery pack. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motor, Sensor, Circuit Board, and Battery Pack and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Motor", "Sensor", "Circuit Board", "Battery Pack"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Motor", "Sensor", "Circuit Board"],
             "expectedAnswer": "Motor"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks motor, sensor, circuit board, and battery pack. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Motor as the central item; include Motor, Sensor, and Circuit Board naturally where visually appropriate, but make the real-world use of Motor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Gear", "Wheel", "Axle", "Frame"],
-          "scenario": "The engineer or technician checks gear, wheel, axle, and frame. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gear, Wheel, Axle, and Frame and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Gear", "Wheel", "Axle", "Frame"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Gear", "Wheel", "Axle"],
             "expectedAnswer": "Gear"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks gear, wheel, axle, and frame. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Gear as the central item; include Gear, Wheel, and Axle naturally where visually appropriate, but make the real-world use of Gear the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Arm", "Gripper", "Camera Module", "LED"],
-          "scenario": "The engineer or technician checks arm, gripper, camera module, and led. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arm, Gripper, Camera Module, and LED and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Arm", "Gripper", "Camera Module", "LED"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Arm", "Gripper", "Camera Module"],
             "expectedAnswer": "Arm"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks arm, gripper, camera module, and led. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Arm as the central item; include Arm, Gripper, and Camera Module naturally where visually appropriate, but make the real-world use of Arm the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Wire", "Resistor", "Capacitor"],
-          "scenario": "The engineer or technician checks wire, resistor, and capacitor. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Resistor, and Capacitor and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Wire", "Resistor", "Capacitor"],
             "expectedAnswer": "Wire"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks wire, resistor, and capacitor. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Wire as the central item; include Wire, Resistor, and Capacitor naturally where visually appropriate, but make the real-world use of Wire the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Robotics Lab: Case Note",
-      "text": "A realistic case involving the robotics lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks motor, sensor, circuit board, and battery pack. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks gear, wheel, axle, and frame. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks arm, gripper, camera module, and led. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks wire, resistor, and capacitor. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Getting Ready: The Robotics Lab",
+      "text": "At the the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Motor, Sensor, Circuit Board, and Battery Pack. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Gear, Wheel, Axle, and Frame. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Arm, Gripper, Camera Module, and LED. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Wire, Resistor, and Capacitor. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -140,6 +144,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Calibrate” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the robotics lab task. Use Motor, Sensor, Circuit Board, Battery Pack, Gear, Wheel, Axle, Frame, Arm, Gripper, Camera Module, LED, Wire, Resistor, and Capacitor in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -177,77 +188,81 @@
       "Tweezers"
     ],
     "targetWordsArabic": [
-      "جهاز يُسمّى «ترانسيستور»",
-      "مصطلح تقني أو أداة يُسمّى «ديودي»",
+      "جهاز يسمى «ترانسيستور»",
+      "مصطلح تقني أو أداة يسمى «ديودي»",
       "شريحة إلكترونية",
-      "مصطلح تقني أو أداة يُسمّى «بريادبوارد»",
-      "أداة يُسمّى «سولديرينج يرون»",
-      "مصطلح تقني أو أداة يُسمّى «سولدير»",
+      "مصطلح تقني أو أداة يسمى «بريادبوارد»",
+      "أداة يسمى «سولديرينج يرون»",
+      "مصطلح تقني أو أداة يسمى «سولدير»",
       "ملتيميتر",
       "طقم مفكات",
       "كماشة",
-      "قطّاعة سلك",
-      "أداة يُسمّى «ويري ستريببير»",
+      "قطاعة سلك",
+      "أداة يسمى «ويري ستريببير»",
       "مسدس غراء ساخن",
-      "أداة يُسمّى «اللين كيي»",
+      "أداة يسمى «اللين كيي»",
       "مفتاح ربط",
       "ملقط"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Robotics Lab to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the robotics lab vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "report excerpt",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "workplace-email",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Transistor", "Diode", "Microchip", "Breadboard"],
-          "scenario": "The engineer or technician checks transistor, diode, microchip, and breadboard. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transistor, Diode, Microchip, and Breadboard and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Transistor", "Diode", "Microchip", "Breadboard"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Transistor", "Diode", "Microchip"],
             "expectedAnswer": "Transistor"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks transistor, diode, microchip, and breadboard. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Transistor as the central item; include Transistor, Diode, and Microchip naturally where visually appropriate, but make the real-world use of Transistor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Soldering Iron", "Solder", "Multimeter", "Screwdriver Set"],
-          "scenario": "The engineer or technician checks soldering iron, solder, multimeter, and screwdriver set. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Solder, Multimeter, and Screwdriver Set and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Soldering Iron", "Solder", "Multimeter", "Screwdriver Set"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Soldering Iron", "Solder", "Multimeter"],
             "expectedAnswer": "Soldering Iron"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks soldering iron, solder, multimeter, and screwdriver set. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Soldering Iron as the central item; include Soldering Iron, Solder, and Multimeter naturally where visually appropriate, but make the real-world use of Soldering Iron the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pliers", "Wire Cutter", "Wire Stripper", "Hot Glue Gun"],
-          "scenario": "The engineer or technician checks pliers, wire cutter, wire stripper, and hot glue gun. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Wire Cutter, Wire Stripper, and Hot Glue Gun and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Pliers", "Wire Cutter", "Wire Stripper", "Hot Glue Gun"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Pliers", "Wire Cutter", "Wire Stripper"],
             "expectedAnswer": "Pliers"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks pliers, wire cutter, wire stripper, and hot glue gun. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Pliers as the central item; include Pliers, Wire Cutter, and Wire Stripper naturally where visually appropriate, but make the real-world use of Pliers the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Allen Key", "Wrench", "Tweezers"],
-          "scenario": "The engineer or technician checks allen key, wrench, and tweezers. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Allen Key, Wrench, and Tweezers and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Allen Key", "Wrench", "Tweezers"],
             "expectedAnswer": "Allen Key"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks allen key, wrench, and tweezers. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Allen Key as the central item; include Allen Key, Wrench, and Tweezers naturally where visually appropriate, but make the real-world use of Allen Key the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Robotics Lab: Report Excerpt",
-      "text": "A realistic case involving the robotics lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks transistor, diode, microchip, and breadboard. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks soldering iron, solder, multimeter, and screwdriver set. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks pliers, wire cutter, wire stripper, and hot glue gun. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks allen key, wrench, and tweezers. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Preparing for the Next Task: The Robotics Lab",
+      "text": "At the the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Transistor, Diode, Microchip, and Breadboard. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Soldering Iron, Solder, Multimeter, and Screwdriver Set. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Pliers, Wire Cutter, Wire Stripper, and Hot Glue Gun. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Allen Key, Wrench, and Tweezers. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -290,6 +305,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Motor” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the robotics lab task. Use Transistor, Diode, Microchip, Breadboard, Soldering Iron, Solder, Multimeter, Screwdriver Set, Pliers, Wire Cutter, Wire Stripper, Hot Glue Gun, Allen Key, Wrench, and Tweezers in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -327,77 +349,81 @@
       "Robotic Arm"
     ],
     "targetWordsArabic": [
-      "أداة يُسمّى «ماجنيفيينج جلاسس»",
-      "أداة أيدٍ مساعدة",
+      "أداة يسمى «ماجنيفيينج جلاسس»",
+      "أداة أيد مساعدة",
       "حاسوب",
       "شاشة مراقبة",
       "لوحة مفاتيح",
       "فأرة حاسوب",
-      "لون يُسمّى «كودي يديتور»",
-      "جهاز يُسمّى «وسب كابلي»",
+      "لون يسمى «كودي يديتور»",
+      "جهاز يسمى «وسب كابلي»",
       "متحكم",
-      "مصطلح تقني أو أداة يُسمّى «جويستيك»",
-      "جِهَازُ التَّحَكُّم عَنْ بُعْد (رِيمُوت)",
-      "جِهَازٌ لَوْحِيّ (تَابْلِت)",
-      "آلة يُسمّى «هومانويد روبوت»",
-      "طائرة مسيّرة",
-      "مصطلح تقني أو أداة يُسمّى «روبوتيك ارم»"
+      "مصطلح تقني أو أداة يسمى «جويستيك»",
+      "جهاز التحكم عن بعد (ريموت)",
+      "جهاز لوحي (تابلت)",
+      "آلة يسمى «هومانويد روبوت»",
+      "طائرة مسيرة",
+      "مصطلح تقني أو أداة يسمى «روبوتيك ارم»"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Robotics Lab to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the robotics lab vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "workplace/academic scenario",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "dialogue",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Magnifying Glass", "Helping Hands", "Computer", "Monitor"],
-          "scenario": "The engineer or technician checks magnifying glass, helping hands, computer, and monitor. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Magnifying Glass, Helping Hands, Computer, and Monitor and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Magnifying Glass", "Helping Hands", "Computer", "Monitor"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Magnifying Glass", "Helping Hands", "Computer"],
             "expectedAnswer": "Magnifying Glass"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks magnifying glass, helping hands, computer, and monitor. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Magnifying Glass as the central item; include Magnifying Glass, Helping Hands, and Computer naturally where visually appropriate, but make the real-world use of Magnifying Glass the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Keyboard", "Mouse", "Code Editor", "USB Cable"],
-          "scenario": "The engineer or technician checks keyboard, mouse, code editor, and usb cable. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, Code Editor, and USB Cable and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Keyboard", "Mouse", "Code Editor", "USB Cable"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Keyboard", "Mouse", "Code Editor"],
             "expectedAnswer": "Keyboard"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks keyboard, mouse, code editor, and usb cable. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Keyboard as the central item; include Keyboard, Mouse, and Code Editor naturally where visually appropriate, but make the real-world use of Keyboard the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Controller", "Joystick", "Remote Control", "Tablet"],
-          "scenario": "The engineer or technician checks controller, joystick, remote control, and tablet. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Controller, Joystick, Remote Control, and Tablet and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Controller", "Joystick", "Remote Control", "Tablet"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Controller", "Joystick", "Remote Control"],
             "expectedAnswer": "Controller"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks controller, joystick, remote control, and tablet. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Controller as the central item; include Controller, Joystick, and Remote Control naturally where visually appropriate, but make the real-world use of Controller the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Humanoid Robot", "Drone", "Robotic Arm"],
-          "scenario": "The engineer or technician checks humanoid robot, drone, and robotic arm. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humanoid Robot, Drone, and Robotic Arm and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Humanoid Robot", "Drone", "Robotic Arm"],
             "expectedAnswer": "Humanoid Robot"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks humanoid robot, drone, and robotic arm. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Humanoid Robot as the central item; include Humanoid Robot, Drone, and Robotic Arm naturally where visually appropriate, but make the real-world use of Humanoid Robot the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Robotics Lab: Workplace/Academic Scenario",
-      "text": "A realistic case involving the robotics lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks magnifying glass, helping hands, computer, and monitor. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks keyboard, mouse, code editor, and usb cable. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks controller, joystick, remote control, and tablet. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks humanoid robot, drone, and robotic arm. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Getting the Information You Need: The Robotics Lab",
+      "text": "At the the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Magnifying Glass, Helping Hands, Computer, and Monitor. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Keyboard, Mouse, Code Editor, and USB Cable. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Controller, Joystick, Remote Control, and Tablet. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Humanoid Robot, Drone, and Robotic Arm. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -440,6 +466,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Transistor” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the robotics lab task. Use Magnifying Glass, Helping Hands, Computer, Monitor, Keyboard, Mouse, Code Editor, USB Cable, Controller, Joystick, Remote Control, Tablet, Humanoid Robot, Drone, and Robotic Arm in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -484,70 +517,74 @@
       "روبوت تحت الماء",
       "روبوت طائر",
       "روبوت ثعباني",
-      "مصطلح تقني أو أداة يُسمّى «ووركبينتش»",
+      "مصطلح تقني أو أداة يسمى «ووركبينتش»",
       "صندوق تخزين",
-      "مصطلح تقني أو أداة يُسمّى «بيجبوارد»",
-      "مصطلح تقني أو أداة يُسمّى «سافيتي جلاسسيس»",
-      "مادة يُسمّى «لاب نوتيبووك»",
-      "جهاز يُسمّى «3د برينتير»",
+      "مصطلح تقني أو أداة يسمى «بيجبوارد»",
+      "مصطلح تقني أو أداة يسمى «سافيتي جلاسسيس»",
+      "مادة يسمى «لاب نوتيبووك»",
+      "جهاز يسمى «3د برينتير»",
       "قاطع ليزر",
-      "مصطلح تقني أو أداة يُسمّى «وسكيللوسكوبي»"
+      "مصطلح تقني أو أداة يسمى «وسكيللوسكوبي»"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Robotics Lab to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the robotics lab vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "opinion paragraph",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "instructional-guide",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Wheeled Robot", "Walking Robot", "Line Follower", "Sumo Robot"],
-          "scenario": "The engineer or technician checks wheeled robot, walking robot, line follower, and sumo robot. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wheeled Robot, Walking Robot, Line Follower, and Sumo Robot and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Wheeled Robot", "Walking Robot", "Line Follower", "Sumo Robot"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Wheeled Robot", "Walking Robot", "Line Follower"],
             "expectedAnswer": "Wheeled Robot"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks wheeled robot, walking robot, line follower, and sumo robot. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Wheeled Robot as the central item; include Wheeled Robot, Walking Robot, and Line Follower naturally where visually appropriate, but make the real-world use of Wheeled Robot the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Underwater Robot", "Flying Robot", "Snake Robot", "Workbench"],
-          "scenario": "The engineer or technician checks underwater robot, flying robot, snake robot, and workbench. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Underwater Robot, Flying Robot, Snake Robot, and Workbench and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Underwater Robot", "Flying Robot", "Snake Robot", "Workbench"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Underwater Robot", "Flying Robot", "Snake Robot"],
             "expectedAnswer": "Underwater Robot"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks underwater robot, flying robot, snake robot, and workbench. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Underwater Robot as the central item; include Underwater Robot, Flying Robot, and Snake Robot naturally where visually appropriate, but make the real-world use of Underwater Robot the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Storage Bin", "Pegboard", "Safety Glasses", "Lab Notebook"],
-          "scenario": "The engineer or technician checks storage bin, pegboard, safety glasses, and lab notebook. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Bin, Pegboard, Safety Glasses, and Lab Notebook and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Storage Bin", "Pegboard", "Safety Glasses", "Lab Notebook"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Storage Bin", "Pegboard", "Safety Glasses"],
             "expectedAnswer": "Storage Bin"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks storage bin, pegboard, safety glasses, and lab notebook. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Storage Bin as the central item; include Storage Bin, Pegboard, and Safety Glasses naturally where visually appropriate, but make the real-world use of Storage Bin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["3D Printer", "Laser Cutter", "Oscilloscope"],
-          "scenario": "The engineer or technician checks 3d printer, laser cutter, and oscilloscope. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Printer, Laser Cutter, and Oscilloscope and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["3D Printer", "Laser Cutter", "Oscilloscope"],
             "expectedAnswer": "3D Printer"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks 3d printer, laser cutter, and oscilloscope. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the 3D Printer as the central item; include 3D Printer, Laser Cutter, and Oscilloscope naturally where visually appropriate, but make the real-world use of 3D Printer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Robotics Lab: Opinion Paragraph",
-      "text": "A realistic case involving the robotics lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks wheeled robot, walking robot, line follower, and sumo robot. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks underwater robot, flying robot, snake robot, and workbench. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks storage bin, pegboard, safety glasses, and lab notebook. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks 3d printer, laser cutter, and oscilloscope. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Getting Ready: The Robotics Lab",
+      "text": "At the the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Wheeled Robot, Walking Robot, Line Follower, and Sumo Robot. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Underwater Robot, Flying Robot, Snake Robot, and Workbench. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Storage Bin, Pegboard, Safety Glasses, and Lab Notebook. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers 3D Printer, Laser Cutter, and Oscilloscope. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -590,6 +627,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Magnifying Glass” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the robotics lab task. Use Wheeled Robot, Walking Robot, Line Follower, Sumo Robot, Underwater Robot, Flying Robot, Snake Robot, Workbench, Storage Bin, Pegboard, Safety Glasses, Lab Notebook, 3D Printer, Laser Cutter, and Oscilloscope in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -627,77 +671,81 @@
       "Input"
     ],
     "targetWordsArabic": [
-      "جهاز يُسمّى «بووير سوببلي»",
+      "جهاز يسمى «بووير سوببلي»",
       "حصيرة اختبار",
       "بطارية",
-      "مصطلح تقني أو أداة يُسمّى «هومانويد»",
-      "شخص يُسمّى «روفير»",
-      "مركبة يُسمّى «تشاسسيس»",
+      "مصطلح تقني أو أداة يسمى «هومانويد»",
+      "شخص يسمى «روفير»",
+      "مركبة يسمى «تشاسسيس»",
       "مسار",
-      "مصطلح تقني أو أداة يُسمّى «كودي»",
-      "مصطلح تقني أو أداة يُسمّى «الجوريثم»",
-      "مصطلح تقني أو أداة يُسمّى «لووب»",
-      "مصطلح تقني أو أداة يُسمّى «فونكتيون»",
-      "مصطلح تقني أو أداة يُسمّى «ديبوج»",
-      "آلة يُسمّى «كومبيلي»",
+      "مصطلح تقني أو أداة يسمى «كودي»",
+      "مصطلح تقني أو أداة يسمى «الجوريثم»",
+      "مصطلح تقني أو أداة يسمى «لووب»",
+      "مصطلح تقني أو أداة يسمى «فونكتيون»",
+      "مصطلح تقني أو أداة يسمى «ديبوج»",
+      "آلة يسمى «كومبيلي»",
       "متغير",
-      "شخص يُسمّى «ينبوت»"
+      "شخص يسمى «ينبوت»"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Robotics Lab to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the robotics lab vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "case note",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "workplace-email",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Power Supply", "Testing Mat", "Battery", "Humanoid"],
-          "scenario": "The engineer or technician checks power supply, testing mat, battery, and humanoid. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Supply, Testing Mat, Battery, and Humanoid and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Power Supply", "Testing Mat", "Battery", "Humanoid"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Power Supply", "Testing Mat", "Battery"],
             "expectedAnswer": "Power Supply"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks power supply, testing mat, battery, and humanoid. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Power Supply as the central item; include Power Supply, Testing Mat, and Battery naturally where visually appropriate, but make the real-world use of Power Supply the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Rover", "Chassis", "Track", "Code"],
-          "scenario": "The engineer or technician checks rover, chassis, track, and code. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rover, Chassis, Track, and Code and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Rover", "Chassis", "Track", "Code"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Rover", "Chassis", "Track"],
             "expectedAnswer": "Rover"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks rover, chassis, track, and code. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Rover as the central item; include Rover, Chassis, and Track naturally where visually appropriate, but make the real-world use of Rover the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Algorithm", "Loop", "Function", "Debug"],
-          "scenario": "The engineer or technician checks algorithm, loop, function, and debug. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algorithm, Loop, Function, and Debug and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Algorithm", "Loop", "Function", "Debug"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Algorithm", "Loop", "Function"],
             "expectedAnswer": "Algorithm"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks algorithm, loop, function, and debug. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Algorithm as the central item; include Algorithm, Loop, and Function naturally where visually appropriate, but make the real-world use of Algorithm the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Compile", "Variable", "Input"],
-          "scenario": "The engineer or technician checks compile, variable, and input. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compile, Variable, and Input and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best describes the main action shown in the scene?",
             "options": ["Compile", "Variable", "Input"],
             "expectedAnswer": "Compile"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks compile, variable, and input. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult clearly carrying out the action Compile; include Compile, Variable, and Input naturally where visually appropriate, but make the real-world use of Compile the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Robotics Lab: Case Note",
-      "text": "A realistic case involving the robotics lab shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks power supply, testing mat, battery, and humanoid. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks rover, chassis, track, and code. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks algorithm, loop, function, and debug. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks compile, variable, and input. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Preparing for the Next Task: The Robotics Lab",
+      "text": "At the the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Power Supply, Testing Mat, Battery, and Humanoid. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Rover, Chassis, Track, and Code. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Algorithm, Loop, Function, and Debug. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Compile, Variable, and Input. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -740,6 +788,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Wheeled Robot” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the robotics lab task. Use Power Supply, Testing Mat, Battery, Humanoid, Rover, Chassis, Track, Code, Algorithm, Loop, Function, Debug, Compile, Variable, and Input in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {

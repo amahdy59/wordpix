@@ -1,0 +1,16 @@
+import { readdir, readFile, writeFile } from "node:fs/promises";
+import { join } from "node:path";
+const phraseFiles = (await readdir("src/app/data/usagePhrases")).filter((f) => f.endsWith(".json"));
+const usageFiles = (await readdir("src/app/data/usage")).filter((f) => f.endsWith(".json"));
+const phrases = (await Promise.all(phraseFiles.map(async (f) => JSON.parse(await readFile(join("src/app/data/usagePhrases", f), "utf8"))))).flat();
+const lessons = (await Promise.all(usageFiles.map(async (f) => JSON.parse(await readFile(join("src/app/data/usage", f), "utf8"))))).flat();
+const norm = (s) => s.toLowerCase().replace(/[’']/gu, "'").replace(/[^a-z0-9 ]/gu, " ").replace(/\s+/gu, " ").trim();
+const missingFields = phrases.filter((p) => !p.phrase || !p.example || !p.arabicMeaning || !p.check?.question || !p.practice?.retrieval || !p.sourceReview?.primaryUrl);
+const phraseExampleMismatch = phrases.filter((p) => !norm(p.example).includes(norm(p.phrase).replace(/\?$/u, "")));
+const paragraphs = lessons.map((l) => ({ lessonId: l.lessonId, text: l.reading.text }));
+const shortParagraphs = paragraphs.filter((p) => p.text.split(/\s+/u).length < 35);
+const genericParagraphs = paragraphs.filter((p) => /generic|practical task|the situation|lesson vocabulary/iu.test(p.text));
+const duplicateParagraphs = paragraphs.length - new Set(paragraphs.map((p) => norm(p.text))).size;
+const report = { reviewedAt: "2026-10-06", phrases: phrases.length, phraseMissingFields: missingFields.length, phraseExampleMismatch: phraseExampleMismatch.length, paragraphs: paragraphs.length, paragraphsUnder35Words: shortParagraphs.length, paragraphsGenericPattern: genericParagraphs.length, duplicateParagraphs, examples: phraseExampleMismatch.slice(0, 20).map((p) => ({ phrase: p.phrase, example: p.example })), shortParagraphs: shortParagraphs.slice(0, 20), genericParagraphs: genericParagraphs.slice(0, 20) };
+await writeFile("docs/USAGE_PHRASE_PARAGRAPH_QUALITY_2026-10-06.json", `${JSON.stringify(report, null, 2)}\n`);
+console.log(JSON.stringify({ ...report, examples: undefined, shortParagraphs: undefined, genericParagraphs: undefined }));

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLearner } from "../context/LearnerContext";
 import { getCachedAudio, saveCachedAudio } from "../../lib/persistence/db";
-import { assetUrl, audioKey, audioUrl, hasAssetHost } from "./assetUrls";
+import { assetUrl, audioKey, audioUrls, AUDIO_PROFILE_V4, hasAssetHost } from "./assetUrls";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { getPronunciationAssetSpec, hasPronunciationOverride } from "./pronunciationOverrides";
 
@@ -334,15 +334,21 @@ export function useAudio({
           objectKey && /^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/.test(objectKey)
             ? assetUrl(objectKey)
             : null;
-        const url =
-          explicitUrl ??
-          (hasAssetHost()
-            ? await audioUrl(pronunciationAsset.text, pronunciationAsset.profile)
+        const urls = explicitUrl
+          ? [explicitUrl]
+          : hasAssetHost()
+            ? await audioUrls(pronunciationAsset.text, [
+                pronunciationAsset.profile,
+                AUDIO_PROFILE_V4,
+              ])
             : preferLocal || usesPronunciationOverride
-              ? resolveAssetUrl(
-                  `/${await audioKey(pronunciationAsset.text, pronunciationAsset.profile)}`
-                )
-              : null);
+              ? [
+                  resolveAssetUrl(
+                    `/${await audioKey(pronunciationAsset.text, pronunciationAsset.profile)}`
+                  ),
+                ]
+              : [];
+        const url = urls[0] ?? null;
         if (!url) return false;
         const cacheKey = `cdn:${url}`;
 
@@ -378,14 +384,25 @@ export function useAudio({
           return true;
         }
 
+        for (const fallbackUrl of urls.slice(1)) {
+          if (await playStreamed(fallbackUrl)) {
+            cacheInBackground(fallbackUrl, `cdn:${fallbackUrl}`);
+            return true;
+          }
+        }
+
         // If the primary lookup was a miss, try capitalized variant for vocabulary words
         // (curriculum vocabulary labels are stored capitalized in R2 e.g. "Bed", "Blanket")
         if (!objectKey && hasAssetHost()) {
           const capitalized =
             pronunciationAsset.text.charAt(0).toUpperCase() + pronunciationAsset.text.slice(1);
           if (capitalized !== pronunciationAsset.text) {
-            const capUrl = await audioUrl(capitalized, pronunciationAsset.profile);
-            if (capUrl && capUrl !== url) {
+            const capUrls = await audioUrls(capitalized, [
+              pronunciationAsset.profile,
+              AUDIO_PROFILE_V4,
+            ]);
+            for (const capUrl of capUrls) {
+              if (capUrl === url) continue;
               const capPlayed = await playStreamed(capUrl);
               if (capPlayed) {
                 cacheInBackground(capUrl, `cdn:${capUrl}`);

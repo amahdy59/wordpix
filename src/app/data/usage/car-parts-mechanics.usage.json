@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "car-parts-mechanics-1",
     "lessonName": "Car Parts & Mechanics 1",
@@ -31,7 +31,7 @@
       "ناقل حركة",
       "حقيبة صغيرة",
       "مكربن",
-      "مصطلح مرتبط بالموضوع يُسمّى «سبارك بلوج»",
+      "شمعة إشعال",
       "مكبس",
       "عمود مرفقي",
       "عمود كامات",
@@ -41,63 +41,67 @@
       "صندوق السيارة",
       "مصد",
       "رفرف",
-      "بَاب"
+      "باب"
     ],
     "usage": {
-      "goal": "Use the vocabulary from Car Parts & Mechanics to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use car parts & mechanics vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "report excerpt",
+      "goal": "Use precise, practical vocabulary to understand non-technical service information and discuss vehicle maintenance safely and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the vehicle service center with reasonable fluency.",
+      "textType": "service-notice",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Engine", "Transmission", "Clutch", "Carburetor"],
-          "scenario": "The technician checks engine, transmission, clutch, and carburetor before the work continues. Each item or process matters to the practical task.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Engine, Transmission, Clutch, and Carburetor and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Engine", "Transmission", "Clutch", "Carburetor"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Engine", "Transmission", "Clutch"],
             "expectedAnswer": "Engine"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks engine, transmission, clutch, and carburetor before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Engine as the central item; include Engine, Transmission, and Clutch naturally where visually appropriate, but make the real-world use of Engine the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Spark Plug", "Piston", "Crankshaft", "Camshaft"],
-          "scenario": "The technician checks spark plug, piston, crankshaft, and camshaft before the work continues. Each item or process matters to the practical task.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spark Plug, Piston, Crankshaft, and Camshaft and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Spark Plug", "Piston", "Crankshaft", "Camshaft"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Spark Plug", "Piston", "Crankshaft"],
             "expectedAnswer": "Spark Plug"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks spark plug, piston, crankshaft, and camshaft before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Spark Plug as the central item; include Spark Plug, Piston, and Crankshaft naturally where visually appropriate, but make the real-world use of Spark Plug the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Turbocharger", "Exhaust", "Hood", "Trunk"],
-          "scenario": "The technician checks turbocharger, exhaust, hood, and trunk before the work continues. Each item or process matters to the practical task.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turbocharger, Exhaust, Hood, and Trunk and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Turbocharger", "Exhaust", "Hood", "Trunk"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Turbocharger", "Exhaust", "Hood"],
             "expectedAnswer": "Turbocharger"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks turbocharger, exhaust, hood, and trunk before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Turbocharger as the central item; include Turbocharger, Exhaust, and Hood naturally where visually appropriate, but make the real-world use of Turbocharger the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Bumper", "Fender", "Door"],
-          "scenario": "The technician checks bumper, fender, and door before the work continues. Each item or process matters to the practical task.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bumper, Fender, and Door and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Bumper", "Fender", "Door"],
             "expectedAnswer": "Bumper"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks bumper, fender, and door before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Bumper as the central item; include Bumper, Fender, and Door naturally where visually appropriate, but make the real-world use of Bumper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "Car Parts & Mechanics: Report Excerpt",
-      "text": "A realistic case involving car parts & mechanics shows how precise vocabulary can influence choices, explanations, and outcomes. The technician checks engine, transmission, clutch, and carburetor before the work continues. Each item or process matters to the practical task. The technician checks spark plug, piston, crankshaft, and camshaft before the work continues. Each item or process matters to the practical task. The technician checks turbocharger, exhaust, hood, and trunk before the work continues. Each item or process matters to the practical task. The technician checks bumper, fender, and door before the work continues. Each item or process matters to the practical task. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Car Parts & Mechanics: Practical Information",
+      "text": "At the car parts & mechanics, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Engine, Transmission, Clutch, and Carburetor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Spark Plug, Piston, Crankshaft, and Camshaft. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Turbocharger, Exhaust, Hood, and Trunk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bumper, Fender, and Door. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about Car Parts & Mechanics. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -140,6 +144,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Motorcycle” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the car parts & mechanics task. Use Engine, Transmission, Clutch, Carburetor, Spark Plug, Piston, Crankshaft, Camshaft, Turbocharger, Exhaust, Hood, Trunk, Bumper, Fender, and Door in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -188,66 +199,70 @@
       "دواسة",
       "حزام مقعد",
       "وسادة هوائية",
-      "مركبة يُسمّى «جلوفي بوكس»",
+      "مركبة يسمى «جلوفي بوكس»",
       "وحدة تحكم",
-      "واقٍ للعين شمس",
-      "مركبة يُسمّى «ريارفييو ميررور»"
+      "واق للعين شمس",
+      "مركبة يسمى «ريارفييو ميررور»"
     ],
     "usage": {
-      "goal": "Use the vocabulary from Car Parts & Mechanics to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use car parts & mechanics vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "case note",
+      "goal": "Use precise, practical vocabulary to understand non-technical service information and discuss vehicle maintenance safely and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the vehicle service center with reasonable fluency.",
+      "textType": "dialogue",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Roof", "Windshield", "Side Mirror", "Headlight"],
-          "scenario": "The technician checks roof, windshield, side mirror, and headlight before the work continues. Each item or process matters to the practical task.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Roof, Windshield, Side Mirror, and Headlight and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Roof", "Windshield", "Side Mirror", "Headlight"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Roof", "Windshield", "Side Mirror"],
             "expectedAnswer": "Roof"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks roof, windshield, side mirror, and headlight before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Roof as the central item; include Roof, Windshield, and Side Mirror naturally where visually appropriate, but make the real-world use of Roof the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Taillight", "Dashboard", "Steering Wheel", "Gear Shift"],
-          "scenario": "The technician checks taillight, dashboard, steering wheel, and gear shift before the work continues. Each item or process matters to the practical task.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Taillight, Dashboard, Steering Wheel, and Gear Shift and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Taillight", "Dashboard", "Steering Wheel", "Gear Shift"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Taillight", "Dashboard", "Steering Wheel"],
             "expectedAnswer": "Taillight"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks taillight, dashboard, steering wheel, and gear shift before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Taillight as the central item; include Taillight, Dashboard, and Steering Wheel naturally where visually appropriate, but make the real-world use of Taillight the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pedal", "Seat Belt", "Airbag", "Glove Box"],
-          "scenario": "The technician checks pedal, seat belt, airbag, and glove box before the work continues. Each item or process matters to the practical task.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pedal, Seat Belt, Airbag, and Glove Box and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Pedal", "Seat Belt", "Airbag", "Glove Box"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Pedal", "Seat Belt", "Airbag"],
             "expectedAnswer": "Pedal"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks pedal, seat belt, airbag, and glove box before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Pedal as the central item; include Pedal, Seat Belt, and Airbag naturally where visually appropriate, but make the real-world use of Pedal the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Console", "Sun Visor", "Rearview Mirror"],
-          "scenario": "The technician checks console, sun visor, and rearview mirror before the work continues. Each item or process matters to the practical task.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Console, Sun Visor, and Rearview Mirror and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Console", "Sun Visor", "Rearview Mirror"],
             "expectedAnswer": "Console"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks console, sun visor, and rearview mirror before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Console as the central item; include Console, Sun Visor, and Rearview Mirror naturally where visually appropriate, but make the real-world use of Console the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "Car Parts & Mechanics: Case Note",
-      "text": "A realistic case involving car parts & mechanics shows how precise vocabulary can influence choices, explanations, and outcomes. The technician checks roof, windshield, side mirror, and headlight before the work continues. Each item or process matters to the practical task. The technician checks taillight, dashboard, steering wheel, and gear shift before the work continues. Each item or process matters to the practical task. The technician checks pedal, seat belt, airbag, and glove box before the work continues. Each item or process matters to the practical task. The technician checks console, sun visor, and rearview mirror before the work continues. Each item or process matters to the practical task. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Clarifying the Next Step: Car Parts & Mechanics",
+      "text": "At the car parts & mechanics, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Roof, Windshield, Side Mirror, and Headlight. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Taillight, Dashboard, Steering Wheel, and Gear Shift. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pedal, Seat Belt, Airbag, and Glove Box. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Console, Sun Visor, and Rearview Mirror. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about Car Parts & Mechanics. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -290,6 +305,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Engine” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the car parts & mechanics task. Use Roof, Windshield, Side Mirror, Headlight, Taillight, Dashboard, Steering Wheel, Gear Shift, Pedal, Seat Belt, Airbag, Glove Box, Console, Sun Visor, and Rearview Mirror in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -331,9 +353,9 @@
       "عجلة",
       "جنط",
       "غطاء محور العجلة",
-      "مكان يُسمّى «براكي باد»",
+      "مكان يسمى «براكي باد»",
       "قرص الفرامل",
-      "مركبة يُسمّى «شوك ابسوربير»",
+      "مركبة يسمى «شوك ابسوربير»",
       "نابض",
       "محور",
       "ضبط المحاذاة",
@@ -344,60 +366,64 @@
       "نظام غسيل الزجاج الأمامي"
     ],
     "usage": {
-      "goal": "Use the vocabulary from Car Parts & Mechanics to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use car parts & mechanics vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "review",
+      "goal": "Use precise, practical vocabulary to understand non-technical service information and discuss vehicle maintenance safely and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the vehicle service center with reasonable fluency.",
+      "textType": "workplace-email",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Tire", "Wheel", "Rim", "Hub Cap"],
-          "scenario": "The technician checks tire, wheel, rim, and hub cap before the work continues. Each item or process matters to the practical task.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tire, Wheel, Rim, and Hub Cap and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Tire", "Wheel", "Rim", "Hub Cap"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Tire", "Wheel", "Rim"],
             "expectedAnswer": "Tire"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks tire, wheel, rim, and hub cap before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Tire as the central item; include Tire, Wheel, and Rim naturally where visually appropriate, but make the real-world use of Tire the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Brake Pad", "Brake Disc", "Shock Absorber", "Spring"],
-          "scenario": "The technician checks brake pad, brake disc, shock absorber, and spring before the work continues. Each item or process matters to the practical task.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Pad, Brake Disc, Shock Absorber, and Spring and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Brake Pad", "Brake Disc", "Shock Absorber", "Spring"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Brake Pad", "Brake Disc", "Shock Absorber"],
             "expectedAnswer": "Brake Pad"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks brake pad, brake disc, shock absorber, and spring before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Brake Pad as the central item; include Brake Pad, Brake Disc, and Shock Absorber naturally where visually appropriate, but make the real-world use of Brake Pad the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Axle", "Alignment", "Engine Oil", "Coolant"],
-          "scenario": "The technician checks axle, alignment, engine oil, and coolant before the work continues. Each item or process matters to the practical task.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Axle, Alignment, Engine Oil, and Coolant and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Axle", "Alignment", "Engine Oil", "Coolant"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Axle", "Alignment", "Engine Oil"],
             "expectedAnswer": "Axle"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks axle, alignment, engine oil, and coolant before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Axle as the central item; include Axle, Alignment, and Engine Oil naturally where visually appropriate, but make the real-world use of Axle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Brake Fluid", "Transmission Fluid", "Windshield Washer"],
-          "scenario": "The group compares the brake fluid, transmission fluid, and windshield washer and notices how the vehicles differ.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Fluid, Transmission Fluid, and Windshield Washer and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Brake Fluid", "Transmission Fluid", "Windshield Washer"],
             "expectedAnswer": "Brake Fluid"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The group compares the brake fluid, transmission fluid, and windshield washer and notices how the vehicles differ. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Brake Fluid as the central item; include Brake Fluid, Transmission Fluid, and Windshield Washer naturally where visually appropriate, but make the real-world use of Brake Fluid the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "Car Parts & Mechanics: Review",
-      "text": "A realistic case involving car parts & mechanics shows how precise vocabulary can influence choices, explanations, and outcomes. The technician checks tire, wheel, rim, and hub cap before the work continues. Each item or process matters to the practical task. The technician checks brake pad, brake disc, shock absorber, and spring before the work continues. Each item or process matters to the practical task. The technician checks axle, alignment, engine oil, and coolant before the work continues. Each item or process matters to the practical task. The group compares the brake fluid, transmission fluid, and windshield washer and notices how the vehicles differ. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "An Update Before the Next Step",
+      "text": "At the car parts & mechanics, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tire, Wheel, Rim, and Hub Cap. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Brake Pad, Brake Disc, Shock Absorber, and Spring. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Axle, Alignment, Engine Oil, and Coolant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Brake Fluid, Transmission Fluid, and Windshield Washer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about Car Parts & Mechanics. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -440,6 +466,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Roof” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the car parts & mechanics task. Use Tire, Wheel, Rim, Hub Cap, Brake Pad, Brake Disc, Shock Absorber, Spring, Axle, Alignment, Engine Oil, Coolant, Brake Fluid, Transmission Fluid, and Windshield Washer in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -460,40 +493,42 @@
     "cefrStage": "B2",
     "stageName": "B2 Fluency & Work",
     "targetWordsEnglish": ["Power Steering Fluid", "Gas", "Diesel", "Battery Acid", "Refrigerant"],
-    "targetWordsArabic": ["سائل التوجيه المعزّز", "وقود", "ديزل", "حمض بطارية", "مادة تبريد"],
+    "targetWordsArabic": ["سائل التوجيه المعزز", "وقود", "ديزل", "حمض بطارية", "مادة تبريد"],
     "usage": {
-      "goal": "Use the vocabulary from Car Parts & Mechanics to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use car parts & mechanics vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "opinion paragraph",
+      "goal": "Use precise, practical vocabulary to understand non-technical service information and discuss vehicle maintenance safely and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the vehicle service center with reasonable fluency.",
+      "textType": "service-notice",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Power Steering Fluid", "Gas", "Diesel", "Battery Acid"],
-          "scenario": "The technician checks power steering fluid, gas, diesel, and battery acid before the work continues. Each item or process matters to the practical task.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Steering Fluid, Gas, Diesel, and Battery Acid and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Power Steering Fluid", "Gas", "Diesel", "Battery Acid"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Power Steering Fluid", "Gas", "Diesel"],
             "expectedAnswer": "Power Steering Fluid"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks power steering fluid, gas, diesel, and battery acid before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Power Steering Fluid as the central item; include Power Steering Fluid, Gas, and Diesel naturally where visually appropriate, but make the real-world use of Power Steering Fluid the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": "Refrigerant",
-          "scenario": "The technician checks refrigerant before the work continues. Each item or process matters to the practical task.",
+          "scenario": "In the car parts & mechanics setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Refrigerant and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": "Refrigerant",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Refrigerant", "Power Steering Fluid", "Gas"],
             "expectedAnswer": "Refrigerant"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The technician checks refrigerant before the work continues. Each item or process matters to the practical task. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Refrigerant as the central item; include Refrigerant, Power Steering Fluid, and Gas naturally where visually appropriate, but make the real-world use of Refrigerant the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "Car Parts & Mechanics: Opinion Paragraph",
-      "text": "A realistic case involving car parts & mechanics shows how precise vocabulary can influence choices, explanations, and outcomes. The technician checks power steering fluid, gas, diesel, and battery acid before the work continues. Each item or process matters to the practical task. The technician checks refrigerant before the work continues. Each item or process matters to the practical task. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Car Parts & Mechanics: Practical Information",
+      "text": "At the car parts & mechanics, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Power Steering Fluid, Gas, Diesel, and Battery Acid. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Refrigerant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about Car Parts & Mechanics. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -528,6 +563,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Tire” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the car parts & mechanics task. Use Power Steering Fluid, Gas, Diesel, Battery Acid, and Refrigerant in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {

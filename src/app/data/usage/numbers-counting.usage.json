@@ -44,71 +44,76 @@
       "خمسة عشر"
     ],
     "usage": {
-      "goal": "Count objects from 1 to 15 and say how many things you see or have.",
-      "canDoStatement": "I can count simple objects and say how many there are.",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to count and confirm small quantities in everyday adult tasks.",
+      "canDoStatement": "Can understand and use numbers from one to fifteen to count familiar people and objects.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["One", "Two", "Three"],
-          "scenario": "I have one book, two pens, and three pencils.",
+          "scenario": "At a small office, one folder is on the first tray, two folders are on the second, and three folders are on the third. The tray beside the clipboard has three folders.",
           "check": {
-            "question": "How many pencils do I have?",
-            "options": ["One", "Two", "Three"],
+            "question": "According to the situation, which option gives the correct number or quantity?",
+            "options": ["Two", "Three", "One"],
             "expectedAnswer": "Three"
           },
-          "imageBrief": "Bright desk scene with exactly 1 book, 2 pens, and 3 pencils, clearly visible and easy to count."
+          "imageBrief": "Office desk with three clearly separated trays holding exactly 1, 2, and 3 identical folders. Put the 3-folder tray beside a clipboard and make it the focal tray. Every folder must be individually countable; no written numbers, labels, logos or watermarks.",
+          "imageAlt": "Three office trays hold one, two and three folders; the three-folder tray is beside a clipboard."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Four", "Five", "Six"],
-          "scenario": "I see four chairs, five bags, and six books.",
+          "scenario": "At a café counter, four cups are on one tray, five on another, and six on a third. The tray nearest the kettle holds five cups.",
           "check": {
-            "question": "How many bags are there?",
-            "options": ["Four", "Five", "Six"],
+            "question": "How many cups are on the tray nearest the kettle?",
+            "options": ["Five", "Four", "Six"],
             "expectedAnswer": "Five"
           },
-          "imageBrief": "Simple classroom scene with 4 chairs, 5 bags, and 6 books. Keep the layout uncluttered."
+          "imageBrief": "Café counter with three separated trays holding exactly 4, 5, and 6 identical cups. Place the 5-cup tray nearest a kettle. Keep all cups easy to count; no labels or logos.",
+          "imageAlt": "Three trays hold four, five and six cups; the five-cup tray is nearest a kettle."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Seven", "Eight", "Nine"],
-          "scenario": "There are seven apples, eight oranges, and nine bananas.",
+          "scenario": "A storeroom has three neat groups of boxes: seven, eight, and nine. The group beside the open door contains nine boxes.",
           "check": {
-            "question": "Which fruit has nine?",
+            "question": "Which quantity matches the selected group?",
             "options": ["Seven", "Eight", "Nine"],
             "expectedAnswer": "Nine"
           },
-          "imageBrief": "Clean fruit display showing 7 apples, 8 oranges, and 9 bananas in grouped rows."
+          "imageBrief": "Storeroom with three separated groups of identical boxes: exactly 7, 8, and 9. Put the 9-box group beside an open door and make it easy to distinguish.",
+          "imageAlt": "Three groups contain seven, eight and nine boxes; nine boxes are beside the open door."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Ten", "Eleven", "Twelve"],
-          "scenario": "We have ten pencils, eleven notebooks, and twelve crayons.",
+          "scenario": "At a reception desk, three ticket stacks contain ten, eleven, and twelve tickets. The middle stack contains eleven tickets.",
           "check": {
-            "question": "How many notebooks do we have?",
-            "options": ["Ten", "Eleven", "Twelve"],
+            "question": "How many tickets are in the middle stack?",
+            "options": ["Twelve", "Eleven", "Ten"],
             "expectedAnswer": "Eleven"
           },
-          "imageBrief": "Neat school-supplies illustration with 10 pencils, 11 notebooks, and 12 crayons."
+          "imageBrief": "Reception desk with three tidy ticket stacks representing 10, 11, and 12. Make the 11-ticket stack clearly central; use countable tickets with no printed text.",
+          "imageAlt": "Three ticket stacks show ten, eleven and twelve tickets; eleven are in the middle."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Thirteen", "Fourteen", "Fifteen"],
-          "scenario": "I see thirteen stars, fourteen flowers, and fifteen balloons.",
+          "scenario": "A course coordinator prepares three sets of notebooks: thirteen, fourteen, and fifteen. The set on the right contains fifteen notebooks.",
           "check": {
-            "question": "How many balloons are there?",
-            "options": ["Thirteen", "Fourteen", "Fifteen"],
+            "question": "How many notebooks are in the set on the right?",
+            "options": ["Fifteen", "Thirteen", "Fourteen"],
             "expectedAnswer": "Fifteen"
           },
-          "imageBrief": "Playful celebration scene with 13 stars, 14 flowers, and 15 balloons, clear enough for counting."
+          "imageBrief": "Adult training-room supply table with three neat notebook sets of exactly 13, 14, and 15. Make the 15-notebook set clearly on the right; no written labels.",
+          "imageAlt": "Three notebook sets show thirteen, fourteen and fifteen; fifteen are on the right."
         }
       ]
     },
     "reading": {
-      "title": "My Classroom",
-      "text": "This is my classroom. I have one teacher and two friends near me. There are three windows and four tables. I see five bags and six books. There are seven pictures on the wall. Our class has fifteen students.",
+      "title": "Checking the Meeting Supplies",
+      "text": "Maya is preparing a small meeting room before colleagues arrive. She counts six chairs, eight water bottles, and ten printed agendas, then checks whether the numbers match the booking. A coworker brings three more cups and one spare notebook. Together they recount the supplies and confirm that the room is ready without using complicated calculations.",
       "imageBrief": "Friendly classroom scene matching the story with a teacher, students, windows, tables, bags, books, and wall pictures."
     },
     "exercises": [
@@ -197,71 +202,76 @@
       "مليون"
     ],
     "usage": {
-      "goal": "Understand and say larger numbers for age, quantity, and simple real-life facts.",
-      "canDoStatement": "I can understand bigger numbers in everyday situations.",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to understand and state larger numbers used in prices, rooms, queues, and totals.",
+      "canDoStatement": "Can recognize and say common numbers from sixteen to one million in familiar practical contexts.",
+      "textType": "service-notice",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sixteen", "Seventeen", "Eighteen"],
-          "scenario": "Maya is sixteen, Adam is seventeen, and Omar is eighteen.",
+          "scenario": "A queue display shows the numbers 16, 17, and 18. The highlighted ticket number is 18.",
           "check": {
-            "question": "Who is eighteen?",
-            "options": ["Sixteen", "Seventeen", "Eighteen"],
+            "question": "Which ticket number is highlighted?",
+            "options": ["Eighteen", "Sixteen", "Seventeen"],
             "expectedAnswer": "Eighteen"
           },
-          "imageBrief": "Three teens in a birthday or school setting representing ages 16, 17, and 18."
+          "imageBrief": "Clean service-counter queue display showing only the numerals 16, 17, and 18. Highlight 18 with a simple border or light. Numerals are essential educational content; no other text or logos.",
+          "imageAlt": "A queue display shows 16, 17 and 18, with 18 highlighted."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Nineteen", "Twenty", "Thirty"],
-          "scenario": "I see nineteen balloons, twenty stars, and thirty stickers.",
+          "scenario": "A booking screen shows room numbers 19, 20, and 30. Room 20 is highlighted.",
           "check": {
-            "question": "How many stars are there?",
-            "options": ["Nineteen", "Twenty", "Thirty"],
+            "question": "According to the situation, which option gives the correct number or quantity?",
+            "options": ["Nineteen", "Thirty", "Twenty"],
             "expectedAnswer": "Twenty"
           },
-          "imageBrief": "Decorative wall scene with 19 balloons, 20 stars, and 30 stickers arranged clearly."
+          "imageBrief": "Simple hotel booking screen showing only 19, 20, and 30 as large room numbers. Highlight 20; no other words, logos or interface clutter.",
+          "imageAlt": "Room numbers 19, 20 and 30 appear, with 20 highlighted."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Forty", "Fifty", "Sixty"],
-          "scenario": "The bus has forty seats, the room has fifty chairs, and the shelf has sixty books.",
+          "scenario": "A digital counter compares 40, 50, and 60. The centre display shows 60.",
           "check": {
-            "question": "How many books are on the shelf?",
-            "options": ["Forty", "Fifty", "Sixty"],
+            "question": "Which number appears on the centre display?",
+            "options": ["Fifty", "Sixty", "Forty"],
             "expectedAnswer": "Sixty"
           },
-          "imageBrief": "Three simple panels: a bus with 40 seats, a room with 50 chairs, and a shelf with 60 books."
+          "imageBrief": "Three clean digital displays showing 40, 50, and 60. Make 60 the central highlighted display; no other text.",
+          "imageAlt": "Digital displays show 40, 50 and 60, with 60 in the centre."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Seventy", "Eighty", "Ninety"],
-          "scenario": "The shop sells seventy pens, eighty notebooks, and ninety erasers.",
+          "scenario": "A timetable screen shows the numbers 70, 80, and 90. The highlighted number is 80.",
           "check": {
-            "question": "How many notebooks are there?",
-            "options": ["Seventy", "Eighty", "Ninety"],
+            "question": "According to the situation, which option gives the correct number or quantity?",
+            "options": ["Eighty", "Seventy", "Ninety"],
             "expectedAnswer": "Eighty"
           },
-          "imageBrief": "Stationery shop scene with grouped pens, notebooks, and erasers representing 70, 80, and 90."
+          "imageBrief": "Simple timetable-style screen with large numerals 70, 80, and 90 only. Highlight 80; no other text, labels or logos.",
+          "imageAlt": "A screen shows 70, 80 and 90, with 80 highlighted."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Hundred", "Thousand", "Million"],
-          "scenario": "One hundred is 100, one thousand is 1,000, and one million is 1,000,000.",
+          "scenario": "At a booking screen, a digital display compares hundred, thousand, and million. The highlighted figure represents million.",
           "check": {
-            "question": "Which is the biggest number?",
+            "question": "Which word describes the highlighted figure?",
             "options": ["Hundred", "Thousand", "Million"],
             "expectedAnswer": "Million"
           },
-          "imageBrief": "Simple educational infographic card showing 100, 1,000, and 1,000,000 with the matching words."
+          "imageBrief": "Adult booking screen with a clean digital display showing the quantities hundred, thousand, and million as numerals. Highlight Million; no unrelated text or branding.",
+          "imageAlt": "Booking screen scene illustrating hundred, thousand, and million, with Million highlighted."
         }
       ]
     },
     "reading": {
-      "title": "A School in Numbers",
-      "text": "Welcome to Green School. There are twenty students in my class. Our library has more than one thousand books. The school has forty teachers and about six hundred students. My brother is sixteen, and my sister is eighteen.",
+      "title": "Numbers at the Service Desk",
+      "text": "A hotel worker checks a booking screen before a busy weekend. Room requests include sixteen, seventeen, eighteen, nineteen, and twenty guests. Larger group bookings show thirty, forty, fifty, sixty, seventy, eighty, and ninety people. The conference summary shows one hundred places. One report records one thousand bookings, while the company website records one million visits across all its locations.",
       "imageBrief": "School scene with a classroom, a library, students, and simple number signs that support the reading."
     },
     "exercises": [
@@ -350,71 +360,76 @@
       "يساوي"
     ],
     "usage": {
-      "goal": "Say where something is in an order and understand very simple maths language.",
-      "canDoStatement": "I can use ordinal numbers and understand simple maths expressions.",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to use ordinal numbers and basic calculation words in simple practical tasks.",
+      "canDoStatement": "Can understand basic position words and simple arithmetic language in familiar situations.",
+      "textType": "instructional-guide",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["First", "Second", "Third"],
-          "scenario": "Lina is first, Omar is second, and Adam is third.",
+          "scenario": "Three adults wait in a queue. One person is first, one is second, and one is third. The person holding a blue folder is second.",
           "check": {
-            "question": "Who is second?",
-            "options": ["First", "Second", "Third"],
+            "question": "Where is the marked person or item in the order?",
+            "options": ["First", "Third", "Second"],
             "expectedAnswer": "Second"
           },
-          "imageBrief": "Sports-day race scene clearly showing 1st, 2nd, and 3rd place winners."
+          "imageBrief": "Side view of an adult queue with exactly three people in first, second and third positions. The second person holds a blue folder. No written ordinal labels.",
+          "imageAlt": "Three adults stand in a queue; the second person holds a blue folder."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Fourth", "Fifth", "Sixth"],
-          "scenario": "My classroom is on the fourth floor, this is my fifth book, and Ahmed is sixth in line.",
+          "scenario": "A lift stops on the fourth, fifth, and sixth floors. The highlighted stop is the fifth floor.",
           "check": {
-            "question": "Which book is mine?",
-            "options": ["Fourth", "Fifth", "Sixth"],
+            "question": "Which ordinal word matches the selected position?",
+            "options": ["Sixth", "Fifth", "Fourth"],
             "expectedAnswer": "Fifth"
           },
-          "imageBrief": "Three small panels: fourth floor sign, fifth book in a stack, child sixth in line."
+          "imageBrief": "Simple lift/elevator indicator with essential numerals 4, 5, and 6, highlighting floor 5. No other written text or branding.",
+          "imageAlt": "A lift indicator shows floors four, five and six, with the fifth highlighted."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Seventh", "Eighth", "Ninth", "Tenth"],
-          "scenario": "Today is my seventh lesson. Sara is eighth in line, Ali is ninth, and Omar is tenth.",
+          "scenario": "A race result board shows seventh, eighth, ninth, and tenth places. The highlighted runner finished tenth.",
           "check": {
-            "question": "Who is tenth?",
-            "options": ["Seventh", "Eighth", "Ninth", "Tenth"],
+            "question": "Which place in the sequence is being shown?",
+            "options": ["Tenth", "Seventh", "Eighth"],
             "expectedAnswer": "Tenth"
           },
-          "imageBrief": "Lineup of children or cards clearly showing 8th, 9th, and 10th positions."
+          "imageBrief": "Adult fun-run finish area with four result positions represented clearly as 7th, 8th, 9th and 10th; highlight the runner in 10th. Essential ordinal numerals only.",
+          "imageAlt": "A race result shows seventh through tenth place, with tenth highlighted."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Addition", "Equals"],
-          "scenario": "Two plus three equals five.",
+          "scenario": "On a booking screen, a simple calculation demonstrates addition and equals. The highlighted operation or result is equals.",
           "check": {
-            "question": "Which word connects the calculation to its result?",
-            "options": ["Addition", "Equals"],
+            "question": "What operation does the example in the booking screen show?",
+            "options": ["Addition", "First", "Equals"],
             "expectedAnswer": "Equals"
           },
-          "imageBrief": "Clean educational card showing 2 + 3 = 5 with the words addition and equals."
+          "imageBrief": "Adult training-style visual at a booking screen showing separate, simple calculation examples for addition and equals. Highlight Equals; use only essential mathematical symbols.",
+          "imageAlt": "Booking screen scene illustrating addition and equals, with Equals highlighted."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Subtraction", "Multiplication", "Division"],
-          "scenario": "Five minus two equals three. Two times three equals six. Eight divided by two equals four.",
+          "scenario": "During an invoice review, a simple calculation demonstrates subtraction, multiplication, and division. The highlighted operation or result is division.",
           "check": {
-            "question": "Which operation is used in eight divided by two?",
-            "options": ["Subtraction", "Multiplication", "Division"],
+            "question": "Which calculation term is being used in the invoice?",
+            "options": ["Multiplication", "Division", "Subtraction"],
             "expectedAnswer": "Division"
           },
-          "imageBrief": "Three-panel math card for subtraction, multiplication, and division with one easy example each."
+          "imageBrief": "Adult training-style visual at a invoice review showing separate, simple calculation examples for subtraction, multiplication, and division. Highlight Division; use only essential mathematical symbols.",
+          "imageAlt": "Invoice review scene illustrating subtraction, multiplication, and division, with Division highlighted."
         }
       ]
     },
     "reading": {
-      "title": "Sports Day",
-      "text": "Today is Sports Day. Lina is first in the race. Omar is second, and Adam is third. Sara finishes fourth. After the race, the students play a number game. Two plus three equals five. Everyone answers together.",
+      "title": "Reading a Simple Score Sheet",
+      "text": "A training coordinator checks a short score sheet after a workshop. One team is first, another is second, and a third team is third. The coordinator also reviews a simple total using addition and subtraction, then checks whether the final figures equal the expected result. Multiplication and division appear only in a few basic examples on the sheet.",
       "imageBrief": "Split scene: first panel shows the race winners; second panel shows a class number game on a board."
     },
     "exercises": [
@@ -471,38 +486,40 @@
     "targetWordsEnglish": ["Plus", "Minus", "Times", "Divided By", "Percentage"],
     "targetWordsArabic": ["زائد", "ناقص", "ضرب", "مقسوم على", "نسبة مئوية"],
     "usage": {
-      "goal": "Recognize simple maths symbols and use a few common maths words in easy expressions.",
-      "canDoStatement": "I can understand a few basic maths words and symbols.",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to understand common calculation symbols and percentage language in everyday transactions.",
+      "canDoStatement": "Can follow very simple calculations using plus, minus, times, divided by, and percentage.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Plus", "Minus", "Times"],
-          "scenario": "Two plus one is three. Four minus one is three. Two times two is four.",
+          "scenario": "A simple calculation card compares plus, minus, and times. The highlighted example removes two objects from a group, so it represents minus.",
           "check": {
-            "question": "Which operation is used in four minus one?",
-            "options": ["Plus", "Minus", "Times"],
+            "question": "Which calculation term is being used in the scene?",
+            "options": ["Times", "Minus", "Plus"],
             "expectedAnswer": "Minus"
           },
-          "imageBrief": "Three simple math symbol cards for plus, minus, and times, each with one easy example."
+          "imageBrief": "Three clean visual calculation examples using objects: combining for plus, removing for minus, equal repeated groups for times. Highlight the minus example. Symbols may appear, but no explanatory text.",
+          "imageAlt": "Three arithmetic examples with the subtraction/minus example highlighted."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Divided By", "Percentage"],
-          "scenario": "Six divided by two is three. Fifty percent means half.",
+          "scenario": "At a reception desk, a simple calculation demonstrates divided by and percentage. The highlighted operation or result is percentage.",
           "check": {
-            "question": "Which concept describes fifty percent?",
-            "options": ["Divided By", "Percentage"],
+            "question": "Which maths word matches the selected calculation?",
+            "options": ["Percentage", "Divided By", "Plus"],
             "expectedAnswer": "Percentage"
           },
-          "imageBrief": "Two-card set: one shows 6 ÷ 2 = 3, the other shows a circle half-filled to explain 50 percent."
+          "imageBrief": "Adult training-style visual at a reception desk showing separate, simple calculation examples for divided by and percentage. Highlight Percentage; use only essential mathematical symbols.",
+          "imageAlt": "Reception desk scene illustrating divided by and percentage, with Percentage highlighted."
         }
       ]
     },
     "reading": {
-      "title": "Math Class",
-      "text": "In math class, we use plus and minus every day. Today, the teacher writes six divided by two on the board. Then she shows fifty percent on a circle chart. The class says the answers together.",
+      "title": "Checking the Bill",
+      "text": "At a café, Karim checks the bill before paying. The cashier explains that one item is added with plus, a discount is shown with minus, and a percentage applies to the final amount. Karim asks how the total was calculated. The cashier shows the simple steps, including times and divided by, so he can confirm the amount.",
       "imageBrief": "Simple classroom math lesson with a board and a percentage pie chart."
     },
     "exercises": [

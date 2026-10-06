@@ -3,6 +3,7 @@ import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { ExerciseStory } from "../exercises/ExerciseStory";
 import { COURSE_UNITS, type VocabularyItem } from "../data/lessons";
 import { loadUnitVocabulary } from "../data/vocabulary";
+import { loadLessonUsage } from "../data/usageRegistry";
 
 const mockFarmWords: VocabularyItem[] = [
   {
@@ -32,7 +33,7 @@ const mockFarmWords: VocabularyItem[] = [
 ];
 
 describe("ExerciseStory — Curriculum Usage Scenes Integration", () => {
-  it("keeps an unapproved usage package out of the learner experience", async () => {
+  it("shows released usage scenes in the learner experience", async () => {
     const dispatch = vi.fn();
 
     render(<ExerciseStory step={5} words={mockFarmWords} lessonId="farm-1" dispatch={dispatch} />);
@@ -40,7 +41,7 @@ describe("ExerciseStory — Curriculum Usage Scenes Integration", () => {
     await waitFor(() => {
       expect(screen.getByRole("button", { name: /3\. Dialogue/i })).toBeInTheDocument();
     });
-    expect(screen.queryByRole("button", { name: /3\. Usage Scenes/i })).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /3\. Usage Scenes/i })).toBeInTheDocument();
   });
 
   it("gracefully falls back to dialogue for lessons without curriculum usage JSON", async () => {
@@ -88,9 +89,18 @@ describe("ExerciseStory — Curriculum Usage Scenes Integration", () => {
       />
     );
 
-    expect(await screen.findByRole("button", { name: /3\. Dialogue/i })).toBeInTheDocument();
-    expect(screen.queryByRole("button", { name: /3\. Usage Scenes/i })).not.toBeInTheDocument();
-    expect(screen.queryByText(/^break the ice$/i)).not.toBeInTheDocument();
-    expect(screen.queryByText(/^Dictionary reviewed$/i)).not.toBeInTheDocument();
+    const usageButton = await screen.findByRole("button", { name: /3\. (Dialogue|Usage Scenes)/i });
+    expect(usageButton).toBeInTheDocument();
+    expect(await screen.findByText(/Usage Scenes/i)).toBeInTheDocument();
+    fireEvent.click(usageButton);
+    const socialUsage = await loadLessonUsage("social-situations-1");
+    expect(socialUsage?.usage.phrases).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          phrase: "break the ice",
+          editorial: expect.objectContaining({ status: "approved" }),
+        }),
+      ])
+    );
   });
 });

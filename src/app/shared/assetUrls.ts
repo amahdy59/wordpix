@@ -36,6 +36,14 @@ export const AUDIO_PROFILE = {
   similarityBoost: 0.75,
 } as const;
 
+/** Additive premium profile used for newly generated v4 clips. */
+export const AUDIO_PROFILE_V4 = {
+  voiceId: VOICES.nichalia,
+  modelId: "eleven_v4",
+  stability: 0.7,
+  similarityBoost: 0.75,
+} as const;
+
 export interface AudioProfile {
   voiceId: string;
   modelId: string;
@@ -66,12 +74,7 @@ export function normaliseText(text: string): string {
 }
 
 function profileFingerprint(profile: AudioProfile = AUDIO_PROFILE): string {
-  return [
-    profile.voiceId,
-    profile.modelId,
-    profile.stability,
-    profile.similarityBoost,
-  ].join("|");
+  return [profile.voiceId, profile.modelId, profile.stability, profile.similarityBoost].join("|");
 }
 
 function toHex(buffer: ArrayBuffer): string {
@@ -120,6 +123,14 @@ export async function audioUrl(
   if (!hasAssetHost()) return null;
   const key = await audioKey(text, profile);
   return key ? `${ASSET_BASE_URL}/${key}` : null;
+}
+
+export async function audioUrls(
+  text: string,
+  profiles: readonly AudioProfile[] = [AUDIO_PROFILE]
+): Promise<string[]> {
+  const urls = await Promise.all(profiles.map((profile) => audioUrl(text, profile)));
+  return urls.filter((url): url is string => Boolean(url));
 }
 
 /** Public URL for a static asset already uploaded under a known path. */

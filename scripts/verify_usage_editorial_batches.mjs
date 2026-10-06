@@ -1,12 +1,19 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
-import { FileBlob, SpreadsheetFile } from "@oai/artifact-tool";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const DIRECTORY = path.join(ROOT, "docs", "usage-editorial-batches");
+const DIRECTORY = path.resolve(process.argv[2] ?? path.join(ROOT, "docs", "usage-editorial-batches"));
+
+const DEFAULT_ARTIFACT_TOOL =
+  "C:/Users/AhmedMahdy/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs";
+const ARTIFACT_TOOL_URL = process.env.WORDPIX_ARTIFACT_TOOL_URL
+  ? pathToFileURL(process.env.WORDPIX_ARTIFACT_TOOL_URL).href
+  : pathToFileURL(DEFAULT_ARTIFACT_TOOL).href;
+const { FileBlob, SpreadsheetFile } = await import(ARTIFACT_TOOL_URL);
+
 const REQUIRED_SHEETS = ["Instructions", "Lessons", "Words", "Scenes", "Phrases"];
-const EXPECTED_TOTALS = { files: 10, lessons: 864, words: 11847, scenes: 3657, phrases: 2592 };
+const EXPECTED_TOTALS = { files: 38, lessons: 864, words: 11847, scenes: 3657, phrases: 2592 };
 
 function assert(condition, message) {
   if (!condition) throw new Error(message);

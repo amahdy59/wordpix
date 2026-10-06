@@ -44,71 +44,76 @@
       "عنب الثعلب"
     ],
     "usage": {
-      "goal": "Recognize and use common fruits vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common fruits words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key fruits 1 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to fruits in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Apple", "Banana", "Orange"],
-          "scenario": "At the market, Jo chooses an apple for lunch, a banana for breakfast, and an orange for juice.",
+          "scenario": "At the fresh-fruit display, a shopper sees apple, banana, and orange and compares banana with the other options.",
           "check": {
-            "question": "Which fruit is for breakfast?",
-            "options": ["Apple", "Banana", "Orange"],
+            "question": "What does the shopper choose?",
+            "options": ["Banana", "Apple", "Orange"],
             "expectedAnswer": "Banana"
           },
-          "imageBrief": "An adult shopper placing an apple with lunch items, a banana with breakfast items, and oranges beside a juicer."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the fresh-fruit display, a shopper sees apple, banana, and orange and compares banana with the other options. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Apple, Banana, Orange in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Grape", "Strawberry", "Watermelon"],
-          "scenario": "The fruit salad has grapes and strawberries, and a large watermelon is ready to slice.",
+          "scenario": "At the morning produce stall, a shopper sees grape, strawberry, and watermelon and chooses watermelon for breakfast.",
           "check": {
-            "question": "Which fruit is ready to slice?",
+            "question": "Which item does the shopper ask about?",
             "options": ["Grape", "Strawberry", "Watermelon"],
             "expectedAnswer": "Watermelon"
           },
-          "imageBrief": "A fruit-salad bowl with grapes and strawberries beside a whole watermelon and a safe cutting area."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the morning produce stall, a shopper sees grape, strawberry, and watermelon and chooses watermelon for breakfast. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Grape, Strawberry, Watermelon in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pineapple", "Mango", "Peach"],
-          "scenario": "Mina buys a pineapple and a mango, then chooses a soft peach to eat today.",
+          "scenario": "At the weekend market counter, a shopper sees pineapple, mango, and peach and asks whether peach is ripe.",
           "check": {
-            "question": "Which fruit will Mina eat today?",
-            "options": ["Pineapple", "Mango", "Peach"],
+            "question": "Which item is set aside for the meal?",
+            "options": ["Mango", "Peach", "Pineapple"],
             "expectedAnswer": "Peach"
           },
-          "imageBrief": "An adult shopper holding a ripe peach, with a pineapple and mango already in the shopping basket."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the weekend market counter, a shopper sees pineapple, mango, and peach and asks whether peach is ripe. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Pineapple, Mango, Peach in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Pear", "Blueberry", "Raspberry"],
-          "scenario": "A pear is in the lunch box, while blueberries and raspberries top the yogurt.",
+          "scenario": "In the grocery aisle, a shopper sees pear, blueberry, and raspberry and puts pear into a reusable bag.",
           "check": {
-            "question": "What is in the lunch box?",
+            "question": "Which produce item is the focus of the purchase?",
             "options": ["Pear", "Blueberry", "Raspberry"],
             "expectedAnswer": "Pear"
           },
-          "imageBrief": "A pear inside an open lunch box, with separate blueberries and raspberries on a bowl of yogurt."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: In the grocery aisle, a shopper sees pear, blueberry, and raspberry and puts pear into a reusable bag. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Pear, Blueberry, Raspberry in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Blackberry", "Cranberry", "Gooseberry"],
-          "scenario": "The baker decorates one tart with blackberries, one with cranberries, and one with gooseberries.",
+          "scenario": "At the meal-prep table, a shopper sees blackberry, cranberry, and gooseberry and sets blackberry aside for dinner.",
           "check": {
-            "question": "Which berries are on the first tart?",
-            "options": ["Blackberry", "Cranberry", "Gooseberry"],
+            "question": "What does the shopper choose in the example with blackberry, cranberry?",
+            "options": ["Cranberry", "Gooseberry", "Blackberry"],
             "expectedAnswer": "Blackberry"
           },
-          "imageBrief": "Three separate fruit tarts: the first with blackberries, the second with cranberries, and the third with gooseberries, without labels."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the meal-prep table, a shopper sees blackberry, cranberry, and gooseberry and sets blackberry aside for dinner. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Blackberry, Cranberry, Gooseberry in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Fruit for the Week",
-      "text": "Jo shops for fruit on Sunday. He buys bananas for breakfast and apples for lunch. He chooses oranges for juice and a grape and strawberry for a fruit salad. At home, he slices a watermelon, packs a pear, and adds a blueberry and raspberry to yogurt. A baker uses a blackberry, cranberry, and gooseberry in three tarts.",
+      "title": "Fruits 1: Choosing Fruit at the Market",
+      "text": "At a produce market, a shopper chooses fruit for breakfast, snacks, and a weekend meal. The first stall has apple, banana, orange, grape, and strawberry. Another display offers watermelon, pineapple, mango, peach, and pear. For a mixed fruit dish, the shopper considers blueberry, raspberry, blackberry, cranberry, and gooseberry. The shopper checks ripeness and buys only what will be used.",
       "imageBrief": "Show the main adult everyday situation from “Fruit for the Week” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -214,71 +219,76 @@
       "رامبوتان"
     ],
     "usage": {
-      "goal": "Recognize and use common fruits vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common fruits words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key fruits 2 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to fruits in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Mulberry", "Boysenberry", "Acai Berry"],
-          "scenario": "At the café, the bowls contain mulberries, boysenberries, and açaí berries for three different smoothies.",
+          "scenario": "At the morning produce stall, a shopper sees mulberry, boysenberry, and acai berry and chooses boysenberry for breakfast.",
           "check": {
-            "question": "Which berries are in the middle bowl?",
-            "options": ["Mulberry", "Boysenberry", "Acai Berry"],
+            "question": "What does the shopper choose in the example with mulberry, boysenberry?",
+            "options": ["Mulberry", "Acai Berry", "Boysenberry"],
             "expectedAnswer": "Boysenberry"
           },
-          "imageBrief": "Three distinct bowls arranged left to right with mulberries, boysenberries, and acai berries for smoothies."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the morning produce stall, a shopper sees mulberry, boysenberry, and acai berry and chooses boysenberry for breakfast. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Mulberry, Boysenberry, Acai Berry in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Lingonberry", "Elderberry", "Papaya"],
-          "scenario": "The market stall displays lingonberries and elderberries beside one ripe papaya.",
+          "scenario": "At the weekend market counter, a shopper sees lingonberry, elderberry, and papaya and asks whether papaya is ripe.",
           "check": {
-            "question": "Which fruit is the largest?",
-            "options": ["Lingonberry", "Elderberry", "Papaya"],
+            "question": "What goes into the basket?",
+            "options": ["Elderberry", "Papaya", "Lingonberry"],
             "expectedAnswer": "Papaya"
           },
-          "imageBrief": "A market display with small piles of lingonberries and elderberries beside one clearly larger ripe papaya."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the weekend market counter, a shopper sees lingonberry, elderberry, and papaya and asks whether papaya is ripe. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Lingonberry, Elderberry, Papaya in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Coconut", "Passion Fruit", "Guava"],
-          "scenario": "Nina opens a coconut, slices a guava, and spoons out the inside of a passion fruit.",
+          "scenario": "In the grocery aisle, a shopper sees coconut, passion fruit, and guava and puts coconut into a reusable bag.",
           "check": {
-            "question": "Which fruit does Nina open?",
+            "question": "What is the shopper comparing with the alternatives?",
             "options": ["Coconut", "Passion Fruit", "Guava"],
             "expectedAnswer": "Coconut"
           },
-          "imageBrief": "An adult preparing fruit: opening a coconut, slicing a guava, and spooning pulp from a passion fruit."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: In the grocery aisle, a shopper sees coconut, passion fruit, and guava and puts coconut into a reusable bag. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Coconut, Passion Fruit, Guava in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Lychee", "Dragon Fruit", "Star Fruit"],
-          "scenario": "For a tasting plate, the chef peels a lychee and slices dragon fruit and star fruit.",
+          "scenario": "At the meal-prep table, a shopper sees lychee, dragon fruit, and star fruit and sets lychee aside for dinner.",
           "check": {
-            "question": "Which fruit does the chef peel?",
-            "options": ["Lychee", "Dragon Fruit", "Star Fruit"],
+            "question": "What does the shopper choose in the example with lychee, dragon fruit?",
+            "options": ["Dragon Fruit", "Star Fruit", "Lychee"],
             "expectedAnswer": "Lychee"
           },
-          "imageBrief": "A chef peeling a lychee, with sliced dragon fruit and star fruit displayed separately on a tasting plate."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the meal-prep table, a shopper sees lychee, dragon fruit, and star fruit and sets lychee aside for dinner. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Lychee, Dragon Fruit, Star Fruit in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Jackfruit", "Durian", "Rambutan"],
-          "scenario": "The shopkeeper cuts the jackfruit, keeps the durian closed, and places rambutan in a basket.",
+          "scenario": "At the fresh-fruit display, a shopper sees jackfruit, durian, and rambutan and compares jackfruit with the other options.",
           "check": {
-            "question": "Which fruit does the shopkeeper cut?",
-            "options": ["Jackfruit", "Durian", "Rambutan"],
+            "question": "Which item does the shopper ask about in the example with jackfruit, durian?",
+            "options": ["Rambutan", "Jackfruit", "Durian"],
             "expectedAnswer": "Jackfruit"
           },
-          "imageBrief": "A market worker cutting a jackfruit, with a closed durian and a basket of rambutan nearby."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the fresh-fruit display, a shopper sees jackfruit, durian, and rambutan and compares jackfruit with the other options. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Jackfruit, Durian, Rambutan in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "A Fruit-Tasting Market",
-      "text": "Nina visits a market with fruit from many regions. She tries mulberry, boysenberry, and acai berry in a smoothie. A seller displays lingonberry and elderberry beside papaya. Nearby, another seller opens a coconut and slices guava, lychee, dragon fruit, star fruit, jackfruit, durian, and rambutan.",
+      "title": "Fruits 2: Choosing Fruit at the Market",
+      "text": "At a produce market, a shopper chooses fruit for breakfast, snacks, and a weekend meal. The first stall has mulberry, boysenberry, acai berry, lingonberry, and elderberry. Another display offers papaya, coconut, passion fruit, guava, and lychee. For a mixed fruit dish, the shopper considers dragon fruit, star fruit, jackfruit, durian, and rambutan. The shopper checks ripeness and buys only what will be used.",
       "imageBrief": "Show the main adult everyday situation from “A Fruit-Tasting Market” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -384,71 +394,76 @@
       "تمر"
     ],
     "usage": {
-      "goal": "Recognize and use common fruits vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common fruits words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key fruits 3 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to fruits in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Lemon", "Lime", "Grapefruit"],
-          "scenario": "For breakfast, Salma squeezes a lemon, slices a lime, and halves a grapefruit.",
+          "scenario": "At the weekend market counter, a shopper sees lemon, lime, and grapefruit and asks whether lemon is ripe.",
           "check": {
-            "question": "Which fruit does Salma squeeze?",
-            "options": ["Lemon", "Lime", "Grapefruit"],
+            "question": "Which item does the shopper ask about in the example with lemon, lime?",
+            "options": ["Grapefruit", "Lemon", "Lime"],
             "expectedAnswer": "Lemon"
           },
-          "imageBrief": "An adult squeezing a lemon, with a sliced lime and halved grapefruit clearly separate."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the weekend market counter, a shopper sees lemon, lime, and grapefruit and asks whether lemon is ripe. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Lemon, Lime, Grapefruit in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Tangerine", "Mandarin", "Clementine"],
-          "scenario": "The fruit bowl holds a tangerine, a mandarin, and two small clementines.",
+          "scenario": "In the grocery aisle, a shopper sees tangerine, mandarin, and clementine and puts clementine into a reusable bag.",
           "check": {
-            "question": "Which fruit appears twice?",
-            "options": ["Tangerine", "Mandarin", "Clementine"],
+            "question": "Which item is set aside for the meal in the example with tangerine, mandarin?",
+            "options": ["Clementine", "Tangerine", "Mandarin"],
             "expectedAnswer": "Clementine"
           },
-          "imageBrief": "A fruit bowl with exactly one tangerine, one mandarin, and two clearly smaller clementines."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: In the grocery aisle, a shopper sees tangerine, mandarin, and clementine and puts clementine into a reusable bag. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Tangerine, Mandarin, Clementine in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Kumquat", "Blood Orange", "Pomelo"],
-          "scenario": "At the citrus stall, the kumquat is the smallest fruit, the pomelo is the largest, and the blood orange is cut open.",
+          "scenario": "At the meal-prep table, a shopper sees kumquat, blood orange, and pomelo and sets pomelo aside for dinner.",
           "check": {
-            "question": "Which fruit is the largest?",
+            "question": "Which produce item is the focus of the purchase in the example with kumquat, blood orange?",
             "options": ["Kumquat", "Blood Orange", "Pomelo"],
             "expectedAnswer": "Pomelo"
           },
-          "imageBrief": "A citrus display comparing a small kumquat, a large pomelo, and a cut blood orange."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the meal-prep table, a shopper sees kumquat, blood orange, and pomelo and sets pomelo aside for dinner. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Kumquat, Blood Orange, Pomelo in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Yuzu", "Cherry", "Plum"],
-          "scenario": "The cook adds yuzu to a sauce while a cherry and a plum remain on the plate.",
+          "scenario": "At the fresh-fruit display, a shopper sees yuzu, cherry, and plum and compares yuzu with the other options.",
           "check": {
-            "question": "What does the cook add to the sauce?",
-            "options": ["Yuzu", "Cherry", "Plum"],
+            "question": "What does the shopper choose in the example with yuzu, cherry?",
+            "options": ["Plum", "Yuzu", "Cherry"],
             "expectedAnswer": "Yuzu"
           },
-          "imageBrief": "A cook adding yuzu juice to a sauce, with one cherry and one plum remaining on a plate."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the fresh-fruit display, a shopper sees yuzu, cherry, and plum and compares yuzu with the other options. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Yuzu, Cherry, Plum in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Apricot", "Nectarine", "Date"],
-          "scenario": "For a snack, Adil packs an apricot, a nectarine, and three dates.",
+          "scenario": "At the morning produce stall, a shopper sees apricot, nectarine, and date and chooses date for breakfast.",
           "check": {
-            "question": "Which fruit does Adil pack three of?",
-            "options": ["Apricot", "Nectarine", "Date"],
+            "question": "What goes into the basket in the example with apricot, nectarine?",
+            "options": ["Date", "Apricot", "Nectarine"],
             "expectedAnswer": "Date"
           },
-          "imageBrief": "An open snack box with one apricot, one nectarine, and exactly three dates."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the morning produce stall, a shopper sees apricot, nectarine, and date and chooses date for breakfast. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Apricot, Nectarine, Date in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Choosing Citrus and Stone Fruit",
-      "text": "Salma buys lemon and lime for cooking, plus grapefruit for breakfast. She compares a small kumquat with a large pomelo. At another stall, she chooses cherries, plums, apricots, and nectarines. Before leaving, she adds a box of dates for quick snacks.",
+      "title": "Fruits 3: Choosing Fruit at the Market",
+      "text": "At a produce market, a shopper chooses fruit for breakfast, snacks, and a weekend meal. The first stall has lemon, lime, grapefruit, tangerine, and mandarin. Another display offers clementine, kumquat, blood orange, pomelo, and yuzu. For a mixed fruit dish, the shopper considers cherry, plum, apricot, nectarine, and date. The shopper checks ripeness and buys only what will be used.",
       "imageBrief": "Show the main adult everyday situation from “Choosing Citrus and Stone Fruit” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -522,38 +537,40 @@
     "targetWordsEnglish": ["Fig", "Olive", "Avocado", "Persimmon", "Pomegranate"],
     "targetWordsArabic": ["تين", "زيتونة", "أفوكادو", "كاكي", "رمان"],
     "usage": {
-      "goal": "Recognize common fruits and use them in simple food and shopping contexts.",
-      "canDoStatement": "I can recognize common fruits and use them in simple food and shopping contexts",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key fruits 4 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to fruits in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Fig", "Olive", "Avocado"],
-          "scenario": "At the market, I can choose a fig, an olive, an avocado.",
+          "scenario": "In the grocery aisle, a shopper sees fig, olive, and avocado and puts fig into a reusable bag.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What goes into the basket in the example with fig, olive?",
             "options": ["Fig", "Olive", "Avocado"],
             "expectedAnswer": "Fig"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a fig, an olive, an avocado. Emphasize fig, olive, and avocado and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: In the grocery aisle, a shopper sees fig, olive, and avocado and puts fig into a reusable bag. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Fig, Olive, Avocado in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Persimmon", "Pomegranate"],
-          "scenario": "At the market, I can choose a persimmon, a pomegranate.",
+          "scenario": "At the meal-prep table, a shopper sees persimmon and pomegranate and sets persimmon aside for dinner.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Persimmon", "Pomegranate"],
+            "question": "What is the shopper comparing with the alternatives in the example with persimmon, pomegranate?",
+            "options": ["Pomegranate", "Fig", "Persimmon"],
             "expectedAnswer": "Persimmon"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for fruits that represents: At the market, I can choose a persimmon, a pomegranate. Emphasize persimmon and pomegranate and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a fruits context illustrating this situation: At the meal-prep table, a shopper sees persimmon and pomegranate and sets persimmon aside for dinner. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Persimmon, Pomegranate in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Fruits Mini Story",
-      "text": "Today I am at the market. I see fig, olive, and avocado. I also find persimmon and pomegranate. I choose a few things and put them in my bag. Then I practice the new English words while I shop. We also remember earlier words such as lemon and lime.",
+      "title": "Fruits 4: Choosing Fruit at the Market",
+      "text": "At a produce market, a shopper chooses fruit for breakfast, snacks, and a weekend meal. The first stall has fig, olive, avocado, persimmon, and pomegranate. The shopper checks ripeness and buys only what will be used. The vocabulary is used in a realistic fruits context that an adult could meet at home, at work, or in the community.",
       "imageBrief": "One uncluttered fruits scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -581,7 +598,7 @@
     "video": {
       "title": "Fruits: See It, Say It",
       "idea": "30–50 second contextual video set in a market. Show fig, olive, avocado, persimmon, and pomegranate naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see fig, olive, and avocado. What can you find next?"
+      "scriptStarter": "Watch the situation: In the grocery aisle, a shopper sees fig, olive, and avocado and puts fig into a reusable bag."
     },
     "spacedReview": "1 lesson(s) back: Lemon, Lime from fruits-3\n3 lesson(s) back: Apple, Banana from fruits-1\n7 lesson(s) back: Drawer, Magazine Rack from living-room-2"
   }

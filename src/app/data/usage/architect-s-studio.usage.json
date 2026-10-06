@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "architect-s-studio-1",
     "lessonName": "The Architect's Studio 1",
@@ -34,8 +34,8 @@
       "نموذج مقياس رسم",
       "إخراج بصري",
       "رسم تخطيطي",
-      "مصطلح معماري أو تصميمي يُسمّى «كاد سوفتواري»",
-      "مصطلح معماري أو تصميمي يُسمّى «3د موديل»",
+      "مصطلح معماري أو تصميمي يسمى «كاد سوفتواري»",
+      "مصطلح معماري أو تصميمي يسمى «3د موديل»",
       "مخطط موقع",
       "مسطرة على شكل T",
       "مثلث",
@@ -44,60 +44,64 @@
       "مسطرة مقياس رسم"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Architect's Studio to understand and communicate in a realistic C1-appropriate context.",
-      "canDoStatement": "I can use the architect's studio vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
-      "textType": "briefing note",
+      "goal": "Develop precise control of language for situations where learners need to discuss plans, design choices, and construction-related information, and respond flexibly in complex professional or public contexts.",
+      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
+      "textType": "workplace-email",
       "readingTarget": "150-220 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Blueprint", "Floor Plan", "Elevation", "Cross-Section"],
-          "scenario": "The agent, designer, or client discusses blueprint, floor plan, elevation, and cross-section. The words help describe the property, design choice, or building process.",
+          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Blueprint, Floor Plan, Elevation, and Cross-Section and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Blueprint", "Floor Plan", "Elevation", "Cross-Section"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Blueprint", "Floor Plan", "Elevation"],
             "expectedAnswer": "Blueprint"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses blueprint, floor plan, elevation, and cross-section. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Blueprint as the central item; include Blueprint, Floor Plan, and Elevation naturally where visually appropriate, but make the real-world use of Blueprint the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Scale Model", "Rendering", "Sketch", "CAD Software"],
-          "scenario": "The agent, designer, or client discusses scale model, rendering, sketch, and cad software. The words help describe the property, design choice, or building process.",
+          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale Model, Rendering, Sketch, and CAD Software and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Scale Model", "Rendering", "Sketch", "CAD Software"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Scale Model", "Rendering", "Sketch"],
             "expectedAnswer": "Scale Model"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses scale model, rendering, sketch, and cad software. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Scale Model as the central item; include Scale Model, Rendering, and Sketch naturally where visually appropriate, but make the real-world use of Scale Model the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["3D Model", "Site Plan", "T-Square", "Triangle"],
-          "scenario": "The agent, designer, or client discusses 3d model, site plan, t-square, and triangle. The words help describe the property, design choice, or building process.",
+          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Model, Site Plan, T-Square, and Triangle and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["3D Model", "Site Plan", "T-Square", "Triangle"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["3D Model", "Site Plan", "T-Square"],
             "expectedAnswer": "3D Model"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses 3d model, site plan, t-square, and triangle. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the 3D Model as the central item; include 3D Model, Site Plan, and T-Square naturally where visually appropriate, but make the real-world use of 3D Model the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Compass", "Protractor", "Scale Ruler"],
-          "scenario": "The agent, designer, or client discusses compass, protractor, and scale ruler. The words help describe the property, design choice, or building process.",
+          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Protractor, and Scale Ruler and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Compass", "Protractor", "Scale Ruler"],
             "expectedAnswer": "Compass"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses compass, protractor, and scale ruler. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Compass as the central item; include Compass, Protractor, and Scale Ruler naturally where visually appropriate, but make the real-world use of Compass the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Architect's Studio: Briefing Note",
-      "text": "This text examines the architect's studio through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The agent, designer, or client discusses blueprint, floor plan, elevation, and cross-section. The words help describe the property, design choice, or building process. The agent, designer, or client discusses scale model, rendering, sketch, and cad software. The words help describe the property, design choice, or building process. The agent, designer, or client discusses 3d model, site plan, t-square, and triangle. The words help describe the property, design choice, or building process. The agent, designer, or client discusses compass, protractor, and scale ruler. The words help describe the property, design choice, or building process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "title": "A Practical Update: The Architect's Studio",
+      "text": "At the the architect's studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Blueprint, Floor Plan, Elevation, and Cross-Section. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Scale Model, Rendering, Sketch, and CAD Software. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers 3D Model, Site Plan, T-Square, and Triangle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Compass, Protractor, and Scale Ruler. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Architect's Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -144,6 +148,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Treaty” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the architect's studio task. Use Blueprint, Floor Plan, Elevation, Cross-Section, Scale Model, Rendering, Sketch, CAD Software, 3D Model, Site Plan, T-Square, Triangle, Compass, Protractor, and Scale Ruler in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -183,7 +194,7 @@
     "targetWordsArabic": [
       "طاولة رسم هندسي",
       "ورق شفاف للتتبع",
-      "مصطلح معماري أو تصميمي يُسمّى «بينكيل سيت»",
+      "مصطلح معماري أو تصميمي يسمى «بينكيل سيت»",
       "واقي ممحاة",
       "مسطرة منحنيات فرنسية",
       "تناسب",
@@ -198,60 +209,64 @@
       "شكل"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Architect's Studio to understand and communicate in a realistic C1-appropriate context.",
-      "canDoStatement": "I can use the architect's studio vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
-      "textType": "analysis excerpt",
+      "goal": "Develop precise control of language for situations where learners need to discuss plans, design choices, and construction-related information, and respond flexibly in complex professional or public contexts.",
+      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
+      "textType": "instructional-guide",
       "readingTarget": "150-220 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Drafting Table", "Tracing Paper", "Pencil Set", "Eraser Shield"],
-          "scenario": "The agent, designer, or client discusses drafting table, tracing paper, pencil set, and eraser shield. The words help describe the property, design choice, or building process.",
+          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drafting Table, Tracing Paper, Pencil Set, and Eraser Shield and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Drafting Table", "Tracing Paper", "Pencil Set", "Eraser Shield"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Drafting Table", "Tracing Paper", "Pencil Set"],
             "expectedAnswer": "Drafting Table"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses drafting table, tracing paper, pencil set, and eraser shield. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Drafting Table as the central item; include Drafting Table, Tracing Paper, and Pencil Set naturally where visually appropriate, but make the real-world use of Drafting Table the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["French Curve", "Proportion", "Scale", "Symmetry"],
-          "scenario": "The agent, designer, or client discusses french curve, proportion, scale, and symmetry. The words help describe the property, design choice, or building process.",
+          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare French Curve, Proportion, Scale, and Symmetry and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["French Curve", "Proportion", "Scale", "Symmetry"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["French Curve", "Proportion", "Scale"],
             "expectedAnswer": "French Curve"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses french curve, proportion, scale, and symmetry. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the French Curve as the central item; include French Curve, Proportion, and Scale naturally where visually appropriate, but make the real-world use of French Curve the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Balance", "Rhythm", "Contrast", "Unity"],
-          "scenario": "The agent, designer, or client discusses balance, rhythm, contrast, and unity. The words help describe the property, design choice, or building process.",
+          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance, Rhythm, Contrast, and Unity and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Balance", "Rhythm", "Contrast", "Unity"],
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "options": ["Balance", "Rhythm", "Contrast"],
             "expectedAnswer": "Balance"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses balance, rhythm, contrast, and unity. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult illustrating Balance through a realistic adult task; include Balance, Rhythm, and Contrast naturally where visually appropriate, but make the real-world use of Balance the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Emphasis", "Space", "Form"],
-          "scenario": "The agent, designer, or client discusses emphasis, space, and form. The words help describe the property, design choice, or building process.",
+          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Emphasis, Space, and Form and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Emphasis", "Space", "Form"],
             "expectedAnswer": "Emphasis"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses emphasis, space, and form. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult illustrating Emphasis through a realistic adult task; include Emphasis, Space, and Form naturally where visually appropriate, but make the real-world use of Emphasis the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Architect's Studio: Analysis Excerpt",
-      "text": "This text examines the architect's studio through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The agent, designer, or client discusses drafting table, tracing paper, pencil set, and eraser shield. The words help describe the property, design choice, or building process. The agent, designer, or client discusses french curve, proportion, scale, and symmetry. The words help describe the property, design choice, or building process. The agent, designer, or client discusses balance, rhythm, contrast, and unity. The words help describe the property, design choice, or building process. The agent, designer, or client discusses emphasis, space, and form. The words help describe the property, design choice, or building process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "title": "A Practical Guide: The Architect's Studio",
+      "text": "At the the architect's studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Drafting Table, Tracing Paper, Pencil Set, and Eraser Shield. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers French Curve, Proportion, Scale, and Symmetry. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Balance, Rhythm, Contrast, and Unity. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Emphasis, Space, and Form. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Architect's Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -298,6 +313,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Blueprint” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the architect's studio task. Use Drafting Table, Tracing Paper, Pencil Set, Eraser Shield, French Curve, Proportion, Scale, Symmetry, Balance, Rhythm, Contrast, Unity, Emphasis, Space, and Form in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -332,7 +354,7 @@
     "targetWordsArabic": [
       "نموذج صناعة طقم",
       "قاطع ليزر",
-      "آلة يُسمّى «3د برينتير»",
+      "آلة يسمى «3د برينتير»",
       "طاولة ضوئية",
       "لوحة عرض بالدبابيس",
       "عينات مواد",
@@ -342,49 +364,52 @@
       "راسم آلي"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Architect's Studio to understand and communicate in a realistic C1-appropriate context.",
-      "canDoStatement": "I can use the architect's studio vocabulary precisely to interpret, analyse, and communicate nuanced meaning.",
-      "textType": "professional summary",
+      "goal": "Develop precise control of language for situations where learners need to discuss plans, design choices, and construction-related information, and respond flexibly in complex professional or public contexts.",
+      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
+      "textType": "dialogue",
       "readingTarget": "150-220 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Model Making Kit", "Laser Cutter", "3D Printer", "Light Table"],
-          "scenario": "The agent, designer, or client discusses model making kit, laser cutter, 3d printer, and light table. The words help describe the property, design choice, or building process.",
+          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Model Making Kit, Laser Cutter, 3D Printer, and Light Table and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Model Making Kit", "Laser Cutter", "3D Printer", "Light Table"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Model Making Kit", "Laser Cutter", "3D Printer"],
             "expectedAnswer": "Model Making Kit"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses model making kit, laser cutter, 3d printer, and light table. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Model Making Kit as the central item; include Model Making Kit, Laser Cutter, and 3D Printer naturally where visually appropriate, but make the real-world use of Model Making Kit the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pin-Up Board", "Material Samples", "Color Charts", "Reference Books"],
-          "scenario": "The agent, designer, or client discusses pin-up board, material samples, color charts, and reference books. The words help describe the property, design choice, or building process.",
+          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin-Up Board, Material Samples, Color Charts, and Reference Books and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Pin-Up Board", "Material Samples", "Color Charts", "Reference Books"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Pin-Up Board", "Material Samples", "Color Charts"],
             "expectedAnswer": "Pin-Up Board"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses pin-up board, material samples, color charts, and reference books. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Pin-Up Board as the central item; include Pin-Up Board, Material Samples, and Color Charts naturally where visually appropriate, but make the real-world use of Pin-Up Board the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Projector", "Plotter"],
-          "scenario": "The agent, designer, or client discusses projector and plotter. The words help describe the property, design choice, or building process.",
+          "scenario": "In the the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, and Plotter and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Projector", "Plotter"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Projector", "Plotter", "Model Making Kit"],
             "expectedAnswer": "Projector"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The agent, designer, or client discusses projector and plotter. The words help describe the property, design choice, or building process. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Projector as the central item; include Projector, Plotter, and Model Making Kit naturally where visually appropriate, but make the real-world use of Projector the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Architect's Studio: Professional Summary",
-      "text": "This text examines the architect's studio through a focused professional or analytical context, using the target vocabulary to support precise interpretation and nuance. The agent, designer, or client discusses model making kit, laser cutter, 3d printer, and light table. The words help describe the property, design choice, or building process. The agent, designer, or client discusses pin-up board, material samples, color charts, and reference books. The words help describe the property, design choice, or building process. The agent, designer, or client discusses projector and plotter. The words help describe the property, design choice, or building process. The goal is controlled use, register awareness, nuance, and accurate interpretation.",
+      "title": "Getting the Information You Need: The Architect's Studio",
+      "text": "At the the architect's studio, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Model Making Kit, Laser Cutter, 3D Printer, and Light Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pin-Up Board, Material Samples, Color Charts, and Reference Books. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Projector and Plotter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent C1-level visual for the reading about The Architect's Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -427,6 +452,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Drafting Table” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the architect's studio task. Use Model Making Kit, Laser Cutter, 3D Printer, Light Table, Pin-Up Board, Material Samples, Color Charts, Reference Books, Projector, and Plotter in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {

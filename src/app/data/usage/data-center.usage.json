@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "data-center-1",
     "lessonName": "The Data Center 1",
@@ -34,70 +34,74 @@
       "ممر هواء ساخن",
       "ممر هواء بارد",
       "مزود طاقة غير منقطعة",
-      "مولّد",
+      "مولد",
       "وحدة توزيع الطاقة (PDU)",
       "لوحة توصيل",
-      "مبدّل شبكي",
-      "موجّه",
+      "مبدل شبكي",
+      "موجه",
       "جدار حماية",
       "موازن أحمال",
       "ألياف ضوئية"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Data Center to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the data center vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "case note",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "instructional-guide",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Server Rack", "Blade Server", "Cable Tray", "Raised Floor"],
-          "scenario": "The engineer or technician checks server rack, blade server, cable tray, and raised floor. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Server Rack, Blade Server, Cable Tray, and Raised Floor and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Server Rack", "Blade Server", "Cable Tray", "Raised Floor"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Server Rack", "Blade Server", "Cable Tray"],
             "expectedAnswer": "Server Rack"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks server rack, blade server, cable tray, and raised floor. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Server Rack as the central item; include Server Rack, Blade Server, and Cable Tray naturally where visually appropriate, but make the real-world use of Server Rack the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Hot Aisle", "Cold Aisle", "Ups", "Generator"],
-          "scenario": "The engineer or technician checks hot aisle, cold aisle, ups, and generator. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Aisle, Cold Aisle, Ups, and Generator and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Hot Aisle", "Cold Aisle", "Ups", "Generator"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Hot Aisle", "Cold Aisle", "Ups"],
             "expectedAnswer": "Hot Aisle"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks hot aisle, cold aisle, ups, and generator. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Hot Aisle as the central item; include Hot Aisle, Cold Aisle, and Ups naturally where visually appropriate, but make the real-world use of Hot Aisle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pdu", "Patch Panel", "Switch", "Router"],
-          "scenario": "The engineer or technician checks pdu, patch panel, switch, and router. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pdu, Patch Panel, Switch, and Router and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Pdu", "Patch Panel", "Switch", "Router"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Pdu", "Patch Panel", "Switch"],
             "expectedAnswer": "Pdu"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks pdu, patch panel, switch, and router. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Pdu as the central item; include Pdu, Patch Panel, and Switch naturally where visually appropriate, but make the real-world use of Pdu the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Firewall", "Load Balancer", "Fiber Optic"],
-          "scenario": "The engineer or technician checks firewall, load balancer, and fiber optic. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firewall, Load Balancer, and Fiber Optic and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Firewall", "Load Balancer", "Fiber Optic"],
             "expectedAnswer": "Firewall"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks firewall, load balancer, and fiber optic. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Firewall as the central item; include Firewall, Load Balancer, and Fiber Optic naturally where visually appropriate, but make the real-world use of Firewall the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Data Center: Case Note",
-      "text": "A realistic case involving the data center shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks server rack, blade server, cable tray, and raised floor. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks hot aisle, cold aisle, ups, and generator. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks pdu, patch panel, switch, and router. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks firewall, load balancer, and fiber optic. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Getting Ready: The Data Center",
+      "text": "At the the data center, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Server Rack, Blade Server, Cable Tray, and Raised Floor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hot Aisle, Cold Aisle, Ups, and Generator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pdu, Patch Panel, Switch, and Router. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Firewall, Load Balancer, and Fiber Optic. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -140,6 +144,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Mechanical Keyboard” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the data center task. Use Server Rack, Blade Server, Cable Tray, Raised Floor, Hot Aisle, Cold Aisle, Ups, Generator, Pdu, Patch Panel, Switch, Router, Firewall, Load Balancer, and Fiber Optic in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -182,72 +193,76 @@
       "زمن الاستجابة",
       "نظام أسماء النطاقات",
       "شبكة خاصة افتراضية",
-      "جهاز يُسمّى «هارد دريفي»",
+      "جهاز يسمى «هارد دريفي»",
       "قرص حالة صلبة",
       "مصفوفة أقراص مستقلة",
       "تخزين متصل بالشبكة",
       "شبكة منطقة تخزين",
       "نسخة احتياطية",
-      "جهاز يُسمّى «تابي دريفي»",
+      "جهاز يسمى «تابي دريفي»",
       "تخزين سحابة",
       "لقطة حالة",
       "نسخ متماثل"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Data Center to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the data center vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "report excerpt",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "workplace-email",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Ethernet", "Bandwidth", "Latency", "Dns"],
-          "scenario": "The engineer or technician checks ethernet, bandwidth, latency, and dns. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ethernet, Bandwidth, Latency, and Dns and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Ethernet", "Bandwidth", "Latency", "Dns"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Ethernet", "Bandwidth", "Latency"],
             "expectedAnswer": "Ethernet"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks ethernet, bandwidth, latency, and dns. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Ethernet as the central item; include Ethernet, Bandwidth, and Latency naturally where visually appropriate, but make the real-world use of Ethernet the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Vpn", "Hard Drive", "Ssd", "Raid"],
-          "scenario": "The engineer or technician checks vpn, hard drive, ssd, and raid. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vpn, Hard Drive, Ssd, and Raid and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Vpn", "Hard Drive", "Ssd", "Raid"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Vpn", "Hard Drive", "Ssd"],
             "expectedAnswer": "Vpn"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks vpn, hard drive, ssd, and raid. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Vpn as the central item; include Vpn, Hard Drive, and Ssd naturally where visually appropriate, but make the real-world use of Vpn the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Nas", "San", "Backup", "Tape Drive"],
-          "scenario": "The engineer or technician checks nas, san, backup, and tape drive. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nas, San, Backup, and Tape Drive and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Nas", "San", "Backup", "Tape Drive"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Nas", "San", "Backup"],
             "expectedAnswer": "Nas"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks nas, san, backup, and tape drive. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Nas as the central item; include Nas, San, and Backup naturally where visually appropriate, but make the real-world use of Nas the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Cloud Storage", "Snapshot", "Replication"],
-          "scenario": "The engineer or technician checks cloud storage, snapshot, and replication. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud Storage, Snapshot, and Replication and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cloud Storage", "Snapshot", "Replication"],
             "expectedAnswer": "Cloud Storage"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks cloud storage, snapshot, and replication. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Cloud Storage as the central item; include Cloud Storage, Snapshot, and Replication naturally where visually appropriate, but make the real-world use of Cloud Storage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Data Center: Report Excerpt",
-      "text": "A realistic case involving the data center shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks ethernet, bandwidth, latency, and dns. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks vpn, hard drive, ssd, and raid. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks nas, san, backup, and tape drive. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks cloud storage, snapshot, and replication. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Preparing for the Next Task: The Data Center",
+      "text": "At the the data center, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Ethernet, Bandwidth, Latency, and Dns. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Vpn, Hard Drive, Ssd, and Raid. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Nas, San, Backup, and Tape Drive. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cloud Storage, Snapshot, and Replication. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -290,6 +305,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Server Rack” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the data center task. Use Ethernet, Bandwidth, Latency, Dns, Vpn, Hard Drive, Ssd, Raid, Nas, San, Backup, Tape Drive, Cloud Storage, Snapshot, and Replication in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -328,76 +350,80 @@
     ],
     "targetWordsArabic": [
       "بلسم هواء",
-      "مُبرِّد",
-      "آلة يُسمّى «كوولينج تووير»",
+      "مبرد",
+      "آلة يسمى «كوولينج تووير»",
       "مروحة",
       "فتحة تهوية",
-      "جهاز يُسمّى «هيات يكستشانجير»",
+      "جهاز يسمى «هيات يكستشانجير»",
       "احتواء",
-      "منظّم حرارة",
+      "منظم حرارة",
       "عامل ضابط رطوبة",
       "تبريد بالماء",
       "قارئ بطاقات تعريف",
       "بيومتري",
       "بوابة أمنية مزدوجة",
       "مراقبة تلفزيونية مغلقة",
-      "طريقة يُسمّى «فيري سوببريسسيون»"
+      "طريقة يسمى «فيري سوببريسسيون»"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Data Center to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the data center vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "workplace/academic scenario",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "dialogue",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Air Conditioner", "Chiller", "Cooling Tower", "Fan"],
-          "scenario": "The engineer or technician checks air conditioner, chiller, cooling tower, and fan. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Air Conditioner, Chiller, Cooling Tower, and Fan and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Air Conditioner", "Chiller", "Cooling Tower", "Fan"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Air Conditioner", "Chiller", "Cooling Tower"],
             "expectedAnswer": "Air Conditioner"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks air conditioner, chiller, cooling tower, and fan. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Air Conditioner as the central item; include Air Conditioner, Chiller, and Cooling Tower naturally where visually appropriate, but make the real-world use of Air Conditioner the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Vent", "Heat Exchanger", "Containment", "Thermostat"],
-          "scenario": "The engineer or technician checks vent, heat exchanger, containment, and thermostat. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vent, Heat Exchanger, Containment, and Thermostat and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Vent", "Heat Exchanger", "Containment", "Thermostat"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Vent", "Heat Exchanger", "Containment"],
             "expectedAnswer": "Vent"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks vent, heat exchanger, containment, and thermostat. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Vent as the central item; include Vent, Heat Exchanger, and Containment naturally where visually appropriate, but make the real-world use of Vent the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Humidity Control", "Water Cooling", "Badge Reader", "Biometric"],
-          "scenario": "The engineer or technician checks humidity control, water cooling, badge reader, and biometric. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humidity Control, Water Cooling, Badge Reader, and Biometric and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Humidity Control", "Water Cooling", "Badge Reader", "Biometric"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Humidity Control", "Water Cooling", "Badge Reader"],
             "expectedAnswer": "Humidity Control"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks humidity control, water cooling, badge reader, and biometric. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Humidity Control as the central item; include Humidity Control, Water Cooling, and Badge Reader naturally where visually appropriate, but make the real-world use of Humidity Control the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Mantrap", "Cctv", "Fire Suppression"],
-          "scenario": "The engineer or technician checks mantrap, cctv, and fire suppression. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantrap, Cctv, and Fire Suppression and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Mantrap", "Cctv", "Fire Suppression"],
             "expectedAnswer": "Mantrap"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks mantrap, cctv, and fire suppression. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Mantrap as the central item; include Mantrap, Cctv, and Fire Suppression naturally where visually appropriate, but make the real-world use of Mantrap the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Data Center: Workplace/Academic Scenario",
-      "text": "A realistic case involving the data center shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks air conditioner, chiller, cooling tower, and fan. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks vent, heat exchanger, containment, and thermostat. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks humidity control, water cooling, badge reader, and biometric. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks mantrap, cctv, and fire suppression. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Getting the Information You Need: The Data Center",
+      "text": "At the the data center, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Air Conditioner, Chiller, Cooling Tower, and Fan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Vent, Heat Exchanger, Containment, and Thermostat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Humidity Control, Water Cooling, Badge Reader, and Biometric. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mantrap, Cctv, and Fire Suppression. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -440,6 +466,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Ethernet” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the data center task. Use Air Conditioner, Chiller, Cooling Tower, Fan, Vent, Heat Exchanger, Containment, Thermostat, Humidity Control, Water Cooling, Badge Reader, Biometric, Mantrap, Cctv, and Fire Suppression in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -485,7 +518,7 @@
       "فني",
       "مسؤول نظام",
       "لوحة معلومات",
-      "مصطلح مرتبط بالموضوع يُسمّى «اليرت»",
+      "يقظ",
       "زمن التشغيل",
       "صيانة",
       "هجرة",
@@ -494,60 +527,64 @@
       "تحويل تلقائي إلى نظام احتياطي"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Data Center to understand and communicate in a realistic B2-appropriate context.",
-      "canDoStatement": "I can use the data center vocabulary to discuss choices, consequences, and more precise meanings.",
-      "textType": "opinion paragraph",
+      "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
+      "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
+      "textType": "instructional-guide",
       "readingTarget": "120-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Access Log", "Cage", "Lock", "Guard"],
-          "scenario": "The engineer or technician checks access log, cage, lock, and guard. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Access Log, Cage, Lock, and Guard and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Access Log", "Cage", "Lock", "Guard"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Access Log", "Cage", "Lock"],
             "expectedAnswer": "Access Log"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks access log, cage, lock, and guard. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Access Log as the central item; include Access Log, Cage, and Lock naturally where visually appropriate, but make the real-world use of Access Log the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Monitoring", "Technician", "Administrator", "Dashboard"],
-          "scenario": "The engineer or technician checks monitoring, technician, administrator, and dashboard. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monitoring, Technician, Administrator, and Dashboard and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Monitoring", "Technician", "Administrator", "Dashboard"],
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "options": ["Monitoring", "Technician", "Administrator"],
             "expectedAnswer": "Monitoring"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks monitoring, technician, administrator, and dashboard. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Monitoring through a realistic adult task; include Monitoring, Technician, and Administrator naturally where visually appropriate, but make the real-world use of Monitoring the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Alert", "Uptime", "Maintenance", "Migration"],
-          "scenario": "The engineer or technician checks alert, uptime, maintenance, and migration. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alert, Uptime, Maintenance, and Migration and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Alert", "Uptime", "Maintenance", "Migration"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Alert", "Uptime", "Maintenance"],
             "expectedAnswer": "Alert"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks alert, uptime, maintenance, and migration. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Alert as the central item; include Alert, Uptime, and Maintenance naturally where visually appropriate, but make the real-world use of Alert the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Deployment", "Redundancy", "Failover"],
-          "scenario": "The engineer or technician checks deployment, redundancy, and failover. The words connect to components, systems, processes, or technical decisions.",
+          "scenario": "In the the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deployment, Redundancy, and Failover and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Deployment", "Redundancy", "Failover"],
             "expectedAnswer": "Deployment"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The engineer or technician checks deployment, redundancy, and failover. The words connect to components, systems, processes, or technical decisions. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Deployment through a realistic adult task; include Deployment, Redundancy, and Failover naturally where visually appropriate, but make the real-world use of Deployment the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Data Center: Opinion Paragraph",
-      "text": "A realistic case involving the data center shows how precise vocabulary can influence choices, explanations, and outcomes. The engineer or technician checks access log, cage, lock, and guard. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks monitoring, technician, administrator, and dashboard. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks alert, uptime, maintenance, and migration. The words connect to components, systems, processes, or technical decisions. The engineer or technician checks deployment, redundancy, and failover. The words connect to components, systems, processes, or technical decisions. The text highlights relationships between terms, consequences, and more precise choices.",
+      "title": "Getting Ready: The Data Center",
+      "text": "At the the data center, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Access Log, Cage, Lock, and Guard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Monitoring, Technician, Administrator, and Dashboard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Alert, Uptime, Maintenance, and Migration. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Deployment, Redundancy, and Failover. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -590,6 +627,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Air Conditioner” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the data center task. Use Access Log, Cage, Lock, Guard, Monitoring, Technician, Administrator, Dashboard, Alert, Uptime, Maintenance, Migration, Deployment, Redundancy, and Failover in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {

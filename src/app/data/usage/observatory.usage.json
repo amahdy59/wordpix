@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "observatory-1",
     "lessonName": "The Observatory 1",
@@ -27,26 +27,26 @@
       "Comet"
     ],
     "targetWordsArabic": [
-      "مصطلح مرتبط بالموضوع يُسمّى «وبتيكال تيليسكوبي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ريفليكتينج تيليسكوبي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ريفراكتينج تيليسكوبي»",
-      "أداة أو جهاز يُسمّى «راديو تيليسكوبي»",
+      "تلسكوب بصري",
+      "تلسكوب عاكس",
+      "تلسكوب كاسر",
+      "أداة أو جهاز يسمى «راديو تيليسكوبي»",
       "حامل تلسكوب",
-      "أداة أو جهاز يُسمّى «يييبييكي»",
+      "أداة أو جهاز يسمى «يييبييكي»",
       "منظار توجيه للتلسكوب",
       "عدسة",
-      "مِرْآة",
-      "مصطلح مرتبط بالموضوع يُسمّى «تريبود»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ستار»",
-      "نظام يُسمّى «بلانيت»",
+      "مرآة",
+      "-",
+      "نجمة",
+      "نظام يسمى «بلانيت»",
       "قمر",
       "شمس",
-      "مصطلح مرتبط بالموضوع يُسمّى «كوميت»"
+      "مذنب"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Observatory to understand and communicate in a realistic B1-appropriate context.",
-      "canDoStatement": "I can use the observatory vocabulary to handle a practical situation and explain key details.",
-      "textType": "travel/visitor guide",
+      "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
+      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
+      "textType": "instructional-guide",
       "readingTarget": "90-130 words",
       "scenes": [
         {
@@ -57,57 +57,56 @@
             "Refracting Telescope",
             "Radio Telescope"
           ],
-          "scenario": "The guide or scientist draws attention to optical telescope, reflecting telescope, refracting telescope, and radio telescope. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Optical Telescope, Reflecting Telescope, Refracting Telescope, and Radio Telescope and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": [
-              "Optical Telescope",
-              "Reflecting Telescope",
-              "Refracting Telescope",
-              "Radio Telescope"
-            ],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Optical Telescope", "Reflecting Telescope", "Refracting Telescope"],
             "expectedAnswer": "Optical Telescope"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to optical telescope, reflecting telescope, refracting telescope, and radio telescope. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Optical Telescope as the central item; include Optical Telescope, Reflecting Telescope, and Refracting Telescope naturally where visually appropriate, but make the real-world use of Optical Telescope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Telescope Mount", "Eyepiece", "Finder Scope", "Lens"],
-          "scenario": "The guide or scientist draws attention to telescope mount, eyepiece, finder scope, and lens. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope Mount, Eyepiece, Finder Scope, and Lens and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Telescope Mount", "Eyepiece", "Finder Scope", "Lens"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Telescope Mount", "Eyepiece", "Finder Scope"],
             "expectedAnswer": "Telescope Mount"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to telescope mount, eyepiece, finder scope, and lens. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Telescope Mount as the central item; include Telescope Mount, Eyepiece, and Finder Scope naturally where visually appropriate, but make the real-world use of Telescope Mount the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Mirror", "Tripod", "Star", "Planet"],
-          "scenario": "The guide or scientist draws attention to mirror, tripod, star, and planet. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mirror, Tripod, Star, and Planet and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Mirror", "Tripod", "Star", "Planet"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Mirror", "Tripod", "Star"],
             "expectedAnswer": "Mirror"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to mirror, tripod, star, and planet. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Mirror as the central item; include Mirror, Tripod, and Star naturally where visually appropriate, but make the real-world use of Mirror the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Moon", "Sun", "Comet"],
-          "scenario": "The guide or scientist draws attention to moon, sun, and comet. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moon, Sun, and Comet and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Moon", "Sun", "Comet"],
             "expectedAnswer": "Moon"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to moon, sun, and comet. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Moon as the central item; include Moon, Sun, and Comet naturally where visually appropriate, but make the real-world use of Moon the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Observatory: Travel/Visitor Guide",
-      "text": "A practical situation involving the observatory requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to optical telescope, reflecting telescope, refracting telescope, and radio telescope. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to telescope mount, eyepiece, finder scope, and lens. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to mirror, tripod, star, and planet. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "title": "Getting Ready: The Observatory",
+      "text": "At the the observatory, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Optical Telescope, Reflecting Telescope, Refracting Telescope, and Radio Telescope. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Telescope Mount, Eyepiece, Finder Scope, and Lens. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mirror, Tripod, Star, and Planet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Moon, Sun, and Comet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -150,6 +149,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “emergency exit” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the observatory task. Use Optical Telescope, Reflecting Telescope, Refracting Telescope, Radio Telescope, Telescope Mount, Eyepiece, Finder Scope, Lens, Mirror, Tripod, Star, Planet, Moon, Sun, and Comet in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -187,77 +193,81 @@
       "Pathway"
     ],
     "targetWordsArabic": [
-      "مصطلح مرتبط بالموضوع يُسمّى «استيرويد»",
-      "مصطلح مرتبط بالموضوع يُسمّى «نيبولا»",
-      "نظام يُسمّى «جالاكسي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «كونستيللاتيون»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ميتيور»",
-      "قُبّة",
-      "سقف دوّار",
+      "كويكب",
+      "سديم",
+      "نظام يسمى «جالاكسي»",
+      "كوكبة",
+      "شهاب",
+      "قبة",
+      "سقف دوار",
       "منصة مشاهدة",
       "غرفة عامل ضابط",
       "مختبر حاسوب",
       "-",
-      "غرفة يُسمّى «ليكتوري هالل»",
+      "غرفة يسمى «ليكتوري هالل»",
       "متجر هدية",
-      "منطقة يُسمّى «باركينج اريا»",
+      "منطقة يسمى «باركينج اريا»",
       "ممر"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Observatory to understand and communicate in a realistic B1-appropriate context.",
-      "canDoStatement": "I can use the observatory vocabulary to handle a practical situation and explain key details.",
-      "textType": "review",
+      "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
+      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
+      "textType": "narrative",
       "readingTarget": "90-130 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Asteroid", "Nebula", "Galaxy", "Constellation"],
-          "scenario": "The guide or scientist draws attention to asteroid, nebula, galaxy, and constellation. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid, Nebula, Galaxy, and Constellation and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Asteroid", "Nebula", "Galaxy", "Constellation"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Asteroid", "Nebula", "Galaxy"],
             "expectedAnswer": "Asteroid"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to asteroid, nebula, galaxy, and constellation. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Asteroid as the central item; include Asteroid, Nebula, and Galaxy naturally where visually appropriate, but make the real-world use of Asteroid the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Meteor", "Dome", "Rotating Roof", "Observation Deck"],
-          "scenario": "The guide or scientist draws attention to meteor, dome, rotating roof, and observation deck. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meteor, Dome, Rotating Roof, and Observation Deck and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Meteor", "Dome", "Rotating Roof", "Observation Deck"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Meteor", "Dome", "Rotating Roof"],
             "expectedAnswer": "Meteor"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to meteor, dome, rotating roof, and observation deck. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Meteor as the central item; include Meteor, Dome, and Rotating Roof naturally where visually appropriate, but make the real-world use of Meteor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Control Room", "Computer Lab", "Library", "Lecture Hall"],
-          "scenario": "The guide or scientist draws attention to control room, computer lab, library, and lecture hall. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Computer Lab, Library, and Lecture Hall and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Control Room", "Computer Lab", "Library", "Lecture Hall"],
+            "question": "Which option identifies the main place or facility shown in the scene?",
+            "options": ["Control Room", "Computer Lab", "Library"],
             "expectedAnswer": "Control Room"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to control room, computer lab, library, and lecture hall. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or approaching the Control Room as the main location; include Control Room, Computer Lab, and Library naturally where visually appropriate, but make the real-world use of Control Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Gift Shop", "Parking Area", "Pathway"],
-          "scenario": "The guide or scientist draws attention to gift shop, parking area, and pathway. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gift Shop, Parking Area, and Pathway and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option identifies the main place or facility shown in the scene?",
             "options": ["Gift Shop", "Parking Area", "Pathway"],
             "expectedAnswer": "Gift Shop"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to gift shop, parking area, and pathway. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or approaching the Gift Shop as the main location; include Gift Shop, Parking Area, and Pathway naturally where visually appropriate, but make the real-world use of Gift Shop the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Observatory: Review",
-      "text": "A practical situation involving the observatory requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to asteroid, nebula, galaxy, and constellation. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to meteor, dome, rotating roof, and observation deck. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to control room, computer lab, library, and lecture hall. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "title": "An Adult Learner at The Observatory",
+      "text": "At the the observatory, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Asteroid, Nebula, Galaxy, and Constellation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Meteor, Dome, Rotating Roof, and Observation Deck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Control Room, Computer Lab, Library, and Lecture Hall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Gift Shop, Parking Area, and Pathway. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -300,6 +310,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Optical Telescope” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the observatory task. Use Asteroid, Nebula, Galaxy, Constellation, Meteor, Dome, Rotating Roof, Observation Deck, Control Room, Computer Lab, Library, Lecture Hall, Gift Shop, Parking Area, and Pathway in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -337,77 +354,81 @@
       "Jupiter"
     ],
     "targetWordsArabic": [
-      "مصطلح مرتبط بالموضوع يُسمّى «سبيكتروجراف»",
+      "مطياف تصويري",
       "كاميرا CCD",
-      "مصطلح مرتبط بالموضوع يُسمّى «ستار تشارت»",
+      "خريطة نجوم",
       "جهاز عرض القبة السماوية",
       "شاشة مراقبة حاسوب",
       "خادم بيانات",
-      "سَاعَةُ حَائِط / سَاعَة",
+      "ساعة حائط / ساعة",
       "مؤشر ليزر",
       "مصباح يدوي أحمر",
       "سجل الرحلة",
-      "مصطلح مرتبط بالموضوع يُسمّى «ميركوري»",
-      "مصطلح مرتبط بالموضوع يُسمّى «فينوس»",
-      "مصطلح مرتبط بالموضوع يُسمّى «يارث»",
-      "طبق يُسمّى «مارس»",
-      "مصطلح مرتبط بالموضوع يُسمّى «جوبيتير»"
+      "عطارد",
+      "الزهرة",
+      "الأرض",
+      "طبق يسمى «مارس»",
+      "المشتري"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Observatory to understand and communicate in a realistic B1-appropriate context.",
-      "canDoStatement": "I can use the observatory vocabulary to handle a practical situation and explain key details.",
-      "textType": "practical article",
+      "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
+      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
+      "textType": "dialogue",
       "readingTarget": "90-130 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Spectrograph", "CCD Camera", "Star Chart", "Planetarium Projector"],
-          "scenario": "The guide or scientist draws attention to spectrograph, ccd camera, star chart, and planetarium projector. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrograph, CCD Camera, Star Chart, and Planetarium Projector and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Spectrograph", "CCD Camera", "Star Chart", "Planetarium Projector"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Spectrograph", "CCD Camera", "Star Chart"],
             "expectedAnswer": "Spectrograph"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to spectrograph, ccd camera, star chart, and planetarium projector. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Spectrograph as the central item; include Spectrograph, CCD Camera, and Star Chart naturally where visually appropriate, but make the real-world use of Spectrograph the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Computer Monitor", "Data Server", "Clock", "Laser Pointer"],
-          "scenario": "The guide or scientist draws attention to computer monitor, data server, clock, and laser pointer. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Monitor, Data Server, Clock, and Laser Pointer and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Computer Monitor", "Data Server", "Clock", "Laser Pointer"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Computer Monitor", "Data Server", "Clock"],
             "expectedAnswer": "Computer Monitor"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to computer monitor, data server, clock, and laser pointer. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Computer Monitor as the central item; include Computer Monitor, Data Server, and Clock naturally where visually appropriate, but make the real-world use of Computer Monitor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Red Flashlight", "Logbook", "Mercury", "Venus"],
-          "scenario": "The guide or scientist draws attention to red flashlight, logbook, mercury, and venus. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Red Flashlight, Logbook, Mercury, and Venus and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Red Flashlight", "Logbook", "Mercury", "Venus"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Red Flashlight", "Logbook", "Mercury"],
             "expectedAnswer": "Red Flashlight"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to red flashlight, logbook, mercury, and venus. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Red Flashlight as the central item; include Red Flashlight, Logbook, and Mercury naturally where visually appropriate, but make the real-world use of Red Flashlight the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Earth", "Mars", "Jupiter"],
-          "scenario": "The guide or scientist draws attention to earth, mars, and jupiter. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earth, Mars, and Jupiter and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Earth", "Mars", "Jupiter"],
             "expectedAnswer": "Earth"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to earth, mars, and jupiter. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Earth as the central item; include Earth, Mars, and Jupiter naturally where visually appropriate, but make the real-world use of Earth the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Observatory: Practical Article",
-      "text": "A practical situation involving the observatory requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to spectrograph, ccd camera, star chart, and planetarium projector. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to computer monitor, data server, clock, and laser pointer. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to red flashlight, logbook, mercury, and venus. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "title": "Getting the Information You Need: The Observatory",
+      "text": "At the the observatory, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Spectrograph, CCD Camera, Star Chart, and Planetarium Projector. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Computer Monitor, Data Server, Clock, and Laser Pointer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Red Flashlight, Logbook, Mercury, and Venus. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Earth, Mars, and Jupiter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -450,6 +471,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Asteroid” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the observatory task. Use Spectrograph, CCD Camera, Star Chart, Planetarium Projector, Computer Monitor, Data Server, Clock, Laser Pointer, Red Flashlight, Logbook, Mercury, Venus, Earth, Mars, and Jupiter in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -487,77 +515,81 @@
       "Meteor Shower"
     ],
     "targetWordsArabic": [
-      "جزء يُسمّى «ساتورن»",
-      "جزء يُسمّى «ورانوس»",
-      "جزء يُسمّى «نيبتوني»",
-      "مصطلح مرتبط بالموضوع يُسمّى «بلوتو»",
-      "نظام يُسمّى «استيرويد بيلت»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ستار جازينج»",
+      "جزء يسمى «ساتورن»",
+      "جزء يسمى «ورانوس»",
+      "جزء يسمى «نيبتوني»",
+      "بلوتو",
+      "نظام يسمى «استيرويد بيلت»",
+      "-",
       "تصوير",
-      "مصطلح مرتبط بالموضوع يُسمّى «داتا اناليسيس»",
+      "تحليل البيانات",
       "رصد فلكي للجمهور",
       "جولة ليلية",
       "محاضرة",
       "بحث",
       "رسم خرائط السماء",
       "مشاهدة الكسوف",
-      "مصطلح مرتبط بالموضوع يُسمّى «ميتيور شووير»"
+      "زخة شهب"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Observatory to understand and communicate in a realistic B1-appropriate context.",
-      "canDoStatement": "I can use the observatory vocabulary to handle a practical situation and explain key details.",
-      "textType": "real-life scenario",
+      "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
+      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
+      "textType": "instructional-guide",
       "readingTarget": "90-130 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Saturn", "Uranus", "Neptune", "Pluto"],
-          "scenario": "The guide or scientist draws attention to saturn, uranus, neptune, and pluto. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Saturn, Uranus, Neptune, and Pluto and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Saturn", "Uranus", "Neptune", "Pluto"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Saturn", "Uranus", "Neptune"],
             "expectedAnswer": "Saturn"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to saturn, uranus, neptune, and pluto. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Saturn as the central item; include Saturn, Uranus, and Neptune naturally where visually appropriate, but make the real-world use of Saturn the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Asteroid Belt", "Star Gazing", "Photography", "Data Analysis"],
-          "scenario": "The guide or scientist draws attention to asteroid belt, star gazing, photography, and data analysis. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid Belt, Star Gazing, Photography, and Data Analysis and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Asteroid Belt", "Star Gazing", "Photography", "Data Analysis"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Asteroid Belt", "Star Gazing", "Photography"],
             "expectedAnswer": "Asteroid Belt"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to asteroid belt, star gazing, photography, and data analysis. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Asteroid Belt as the central item; include Asteroid Belt, Star Gazing, and Photography naturally where visually appropriate, but make the real-world use of Asteroid Belt the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Public Viewing", "Night Tour", "Lecture", "Research"],
-          "scenario": "The guide or scientist draws attention to public viewing, night tour, lecture, and research. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Viewing, Night Tour, Lecture, and Research and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Public Viewing", "Night Tour", "Lecture", "Research"],
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "options": ["Public Viewing", "Night Tour", "Lecture"],
             "expectedAnswer": "Public Viewing"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to public viewing, night tour, lecture, and research. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult illustrating Public Viewing through a realistic adult task; include Public Viewing, Night Tour, and Lecture naturally where visually appropriate, but make the real-world use of Public Viewing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Sky Mapping", "Eclipse Watching", "Meteor Shower"],
-          "scenario": "The guide or scientist draws attention to sky mapping, eclipse watching, and meteor shower. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sky Mapping, Eclipse Watching, and Meteor Shower and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Sky Mapping", "Eclipse Watching", "Meteor Shower"],
             "expectedAnswer": "Sky Mapping"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to sky mapping, eclipse watching, and meteor shower. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult illustrating Sky Mapping through a realistic adult task; include Sky Mapping, Eclipse Watching, and Meteor Shower naturally where visually appropriate, but make the real-world use of Sky Mapping the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Observatory: Real-Life Scenario",
-      "text": "A practical situation involving the observatory requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to saturn, uranus, neptune, and pluto. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to asteroid belt, star gazing, photography, and data analysis. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to public viewing, night tour, lecture, and research. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "title": "Getting Ready: The Observatory",
+      "text": "At the the observatory, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Saturn, Uranus, Neptune, and Pluto. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Asteroid Belt, Star Gazing, Photography, and Data Analysis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Public Viewing, Night Tour, Lecture, and Research. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sky Mapping, Eclipse Watching, and Meteor Shower. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -600,6 +632,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Spectrograph” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the observatory task. Use Saturn, Uranus, Neptune, Pluto, Asteroid Belt, Star Gazing, Photography, Data Analysis, Public Viewing, Night Tour, Lecture, Research, Sky Mapping, Eclipse Watching, and Meteor Shower in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
@@ -635,75 +674,79 @@
       "Discovery"
     ],
     "targetWordsArabic": [
-      "مصطلح مرتبط بالموضوع يُسمّى «تيليسكوبي»",
+      "منظار",
       "كاميرا",
-      "أداة أو جهاز يُسمّى «فوتوميتير»",
+      "أداة أو جهاز يسمى «فوتوميتير»",
       "حاسوب",
       "هوائي",
-      "مصطلح مرتبط بالموضوع يُسمّى «ماجنيتودي»",
+      "قدر ظاهري",
       "مدار",
       "سنة ضوئية",
-      "مصطلح مرتبط بالموضوع يُسمّى «سبيكتروم»",
-      "مصطلح مرتبط بالموضوع يُسمّى «روتاتيون»",
-      "مصطلح مرتبط بالموضوع يُسمّى «يكليبسي»",
-      "أداة أو جهاز يُسمّى «ترانسيت»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ديسكوفيري»"
+      "طيف",
+      "دوران",
+      "كسوف أو خسوف",
+      "أداة أو جهاز يسمى «ترانسيت»",
+      "اكتشاف"
     ],
     "usage": {
-      "goal": "Use the vocabulary from The Observatory to understand and communicate in a realistic B1-appropriate context.",
-      "canDoStatement": "I can use the observatory vocabulary to handle a practical situation and explain key details.",
-      "textType": "travel/visitor guide",
+      "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
+      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
+      "textType": "narrative",
       "readingTarget": "90-130 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Telescope", "Camera", "Photometer", "Computer"],
-          "scenario": "The guide or scientist draws attention to telescope, camera, photometer, and computer. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Camera, Photometer, and Computer and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Telescope", "Camera", "Photometer", "Computer"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Telescope", "Camera", "Photometer"],
             "expectedAnswer": "Telescope"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to telescope, camera, photometer, and computer. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Telescope as the central item; include Telescope, Camera, and Photometer naturally where visually appropriate, but make the real-world use of Telescope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Antenna", "Magnitude", "Orbit", "Light-Year"],
-          "scenario": "The guide or scientist draws attention to antenna, magnitude, orbit, and light-year. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antenna, Magnitude, Orbit, and Light-Year and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Antenna", "Magnitude", "Orbit", "Light-Year"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Antenna", "Magnitude", "Orbit"],
             "expectedAnswer": "Antenna"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to antenna, magnitude, orbit, and light-year. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Antenna as the central item; include Antenna, Magnitude, and Orbit naturally where visually appropriate, but make the real-world use of Antenna the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Spectrum", "Rotation", "Eclipse", "Transit"],
-          "scenario": "The guide or scientist draws attention to spectrum, rotation, eclipse, and transit. The group observes the details and connects the words to the natural or scientific setting.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrum, Rotation, Eclipse, and Transit and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": ["Spectrum", "Rotation", "Eclipse", "Transit"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Spectrum", "Rotation", "Eclipse"],
             "expectedAnswer": "Spectrum"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The guide or scientist draws attention to spectrum, rotation, eclipse, and transit. The group observes the details and connects the words to the natural or scientific setting. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Spectrum as the central item; include Spectrum, Rotation, and Eclipse naturally where visually appropriate, but make the real-world use of Spectrum the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": "Discovery",
-          "scenario": "The learner connects discovery to the main activity and explains what each term means in context.",
+          "scenario": "In the the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Discovery and choose the option that fits the situation.",
           "check": {
-            "question": "Which target term is most central to the situation?",
-            "options": "Discovery",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["Discovery", "Telescope", "Camera"],
             "expectedAnswer": "Discovery"
           },
-          "imageBrief": "Create one coherent scene for this learning chunk: The learner connects discovery to the main activity and explains what each term means in context. Make the target vocabulary visually identifiable without written labels. Reuse the same image for the context question."
+          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Discovery as the central item; include Discovery, Telescope, and Camera naturally where visually appropriate, but make the real-world use of Discovery the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ]
     },
     "reading": {
-      "title": "The Observatory: Travel/Visitor Guide",
-      "text": "A practical situation involving the observatory requires several key terms. The learner follows the task and notices how the vocabulary supports clear communication. The guide or scientist draws attention to telescope, camera, photometer, and computer. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to antenna, magnitude, orbit, and light-year. The group observes the details and connects the words to the natural or scientific setting. The guide or scientist draws attention to spectrum, rotation, eclipse, and transit. The group observes the details and connects the words to the natural or scientific setting. The context connects vocabulary to practical communication, explanation, and problem-solving.",
+      "title": "An Adult Learner at The Observatory",
+      "text": "At the the observatory, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Telescope, Camera, Photometer, and Computer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Antenna, Magnitude, Orbit, and Light-Year. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Spectrum, Rotation, Eclipse, and Transit. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Discovery. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
       "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
@@ -746,6 +789,13 @@
       {
         "prompt": "Spaced retrieval: Use the earlier word “Saturn” in a sentence connected to this lesson.",
         "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the the observatory task. Use Telescope, Camera, Photometer, Computer, Antenna, Magnitude, Orbit, Light-Year, Spectrum, Rotation, Eclipse, Transit, and Discovery in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {

@@ -27,26 +27,26 @@
       "Saucepan"
     ],
     "targetWordsArabic": [
-      "ثَلَّاجَة (بَرَّاد)",
-      "مَوْقِدُ غَاز / بُوتَاجَاز",
-      "فُرْن",
-      "مَايكْرُووِيف (فُرْنُ المَوْجَات)",
-      "غَسَّالَةُ الصُّحُون (جَلَّايَة)",
-      "مُحَمِّصَةُ الخُبْز (تُوسْتَر)",
-      "خَلَّاطٌ كَهْرَبَائِيّ",
-      "غَلَّايَةُ مَاء (كَاتِل)",
-      "مَاكِينَةُ القَهْوَة",
-      "مُجَمِّد (فِرِيزَر)",
-      "قِدْر / حَلَّة",
-      "مِقْلَاة / طَاسَة",
-      "مِقْلَاةُ القَلْي (طَاسَةُ قَلْي)",
-      "صِينِيَّةُ خَبْز (صَاج)",
-      "قِدْرُ صَلْصَة (كَاسَرُولَة)"
+      "ثلاجة (براد)",
+      "موقد غاز / بوتاجاز",
+      "فرن",
+      "مايكروويف (فرن الموجات)",
+      "غسالة الصحون (جلاية)",
+      "محمصة الخبز (توستر)",
+      "خلاط كهربائي",
+      "غلاية ماء (كاتل)",
+      "ماكينة القهوة",
+      "مجمد (فريزر)",
+      "قدر / حلة",
+      "مقلاة / طاسة",
+      "مقلاة القلي (طاسة قلي)",
+      "صينية خبز (صاج)",
+      "قدر صلصة (كاسرولة)"
     ],
     "usage": {
-      "goal": "Recognize and use common the kitchen vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the kitchen words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key the kitchen 1 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the kitchen in very simple everyday situations.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -54,61 +54,66 @@
           "targetWords": ["Refrigerator", "Stove", "Oven"],
           "scenario": "Mona takes vegetables from the refrigerator, cooks them on the stove, and warms bread in the oven.",
           "check": {
-            "question": "Where does Mona keep the vegetables?",
-            "options": ["Refrigerator", "Stove", "Oven"],
+            "question": "Where were the vegetables kept before cooking?",
+            "options": ["Oven", "Refrigerator", "Stove"],
             "expectedAnswer": "Refrigerator"
           },
-          "imageBrief": "An adult taking vegetables from a refrigerator, with a stove and oven clearly visible in the same kitchen."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: Mona takes vegetables from the refrigerator, cooks them on the stove, and warms bread in the oven. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Refrigerator, Stove, Oven in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Microwave", "Dishwasher", "Toaster"],
           "scenario": "After lunch, Karim puts the plates in the dishwasher and reheats soup in the microwave; the toaster is ready for breakfast.",
           "check": {
-            "question": "Where does Karim put the plates?",
-            "options": ["Microwave", "Dishwasher", "Toaster"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Dishwasher", "Microwave", "Toaster"],
             "expectedAnswer": "Dishwasher"
           },
-          "imageBrief": "An adult loading plates into a dishwasher, with a microwave and toaster visible on the counter."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: After lunch, Karim puts the plates in the dishwasher and reheats soup in the microwave; the toaster is ready for breakfast. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Microwave, Dishwasher, Toaster in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Blender", "Kettle", "Coffee Maker"],
           "scenario": "For breakfast, Dalia uses the blender for fruit, the kettle for tea, and the coffee maker for coffee.",
           "check": {
-            "question": "What does Dalia use for fruit?",
-            "options": ["Blender", "Kettle", "Coffee Maker"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Kettle", "Coffee Maker", "Blender"],
             "expectedAnswer": "Blender"
           },
-          "imageBrief": "A breakfast counter with an adult using a blender; a kettle and coffee maker are clearly separate."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: For breakfast, Dalia uses the blender for fruit, the kettle for tea, and the coffee maker for coffee. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Blender, Kettle, Coffee Maker in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Freezer", "Pot", "Pan"],
-          "scenario": "The frozen peas are in the freezer, while a pot and a pan are ready on the stove.",
+          "scenario": "In a shared kitchen, an adult checks or uses freezer, pot, and pan. The highlighted item is the freezer.",
           "check": {
-            "question": "Where are the frozen peas?",
-            "options": ["Freezer", "Pot", "Pan"],
+            "question": "Which object should the learner identify in the example with freezer, pot?",
+            "options": ["Pan", "Freezer", "Pot"],
             "expectedAnswer": "Freezer"
           },
-          "imageBrief": "An open freezer with a bag of peas; a pot and pan sit safely on an unlit stove."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: In a shared kitchen, an adult checks or uses freezer, pot, and pan. The highlighted item is the freezer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Freezer, Pot, Pan in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Frying Pan", "Baking Tray", "Saucepan"],
-          "scenario": "Rami fries an egg in the frying pan, warms sauce in the saucepan, and puts vegetables on the baking tray.",
+          "scenario": "During a meal preparation, an adult checks or uses frying pan, baking tray, and saucepan. The highlighted item is the frying pan.",
           "check": {
-            "question": "What does Rami use to fry the egg?",
+            "question": "What item is being used or checked in the scene in the example with frying pan, baking tray?",
             "options": ["Frying Pan", "Baking Tray", "Saucepan"],
             "expectedAnswer": "Frying Pan"
           },
-          "imageBrief": "An adult cooking an egg in a frying pan, with sauce in a saucepan and vegetables arranged on a baking tray."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: During a meal preparation, an adult checks or uses frying pan, baking tray, and saucepan. The highlighted item is the frying pan. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Frying Pan, Baking Tray, Saucepan in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Breakfast in a Busy Kitchen",
-      "text": "Dalia takes fruit from the refrigerator and blends it. The kettle heats water while the coffee maker makes coffee. A pot sits on the stove, and bread warms in the oven. After breakfast, she puts the dishes in the dishwasher and stores frozen food in the freezer.",
+      "title": "Cooking Dinner in a Small Kitchen",
+      "text": "Leila takes vegetables from the refrigerator and checks a frozen ingredient in the freezer. She heats soup on the stove while bread warms in the oven. She uses the microwave for one side dish and loads dirty plates into the dishwasher. A toaster, blender, kettle, and coffee maker sit on the counter. For cooking, she chooses a pot, pan, frying pan, baking tray, and saucepan according to the food she is preparing.",
       "imageBrief": "Show the main adult everyday situation from “Breakfast in a Busy Kitchen” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -197,88 +202,93 @@
       "Rolling Pin"
     ],
     "targetWordsArabic": [
-      "مِقْلَاةٌ صِينِيَّة (وُوك)",
-      "طَاجِنُ فُرْن (صِينِيَّةُ بَايْرِكْس / كَاسَرُول)",
-      "صِينِيَّةُ طَهْيٍ بِالفُرْن (بَايْرِكْس)",
-      "قِدْرُ البُخَار (حَلَّةُ بُخَار / مِبْخَرَة)",
-      "قِدْرُ الضَّغْط (حَلَّةُ بَرِيسْتُو)",
-      "شَوْكَة",
-      "سِكِّين",
-      "مِلْعَقَة",
-      "مِلْعَقَةُ تَقْلِيب (سْبَاتْيُولا)",
-      "مِغْرَفَة",
-      "مِخْفَقَةُ بَيْض (مَضْرَبُ سِلْك)",
-      "مَاسِكُ طَعَام (مِلْقَاط)",
-      "قَشَّارَةُ خُضْرَاوَات",
-      "مِبْشَرَة",
-      "نَشَّابَة / شَوْبَك (مِدْلَاكُ العَجِين)"
+      "مقلاة صينية (ووك)",
+      "طاجن فرن (صينية بايركس / كاسرول)",
+      "صينية طهي بالفرن (بايركس)",
+      "قدر البخار (حلة بخار / مبخرة)",
+      "قدر الضغط (حلة بريستو)",
+      "شوكة",
+      "سكين",
+      "ملعقة",
+      "ملعقة تقليب (سباتيولا)",
+      "مغرفة",
+      "مخفقة بيض (مضرب سلك)",
+      "ماسك طعام (ملقاط)",
+      "قشارة خضراوات",
+      "مبشرة",
+      "نشابة / شوبك (مدلاك العجين)"
     ],
     "usage": {
-      "goal": "Recognize and use common the kitchen vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the kitchen words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key the kitchen 2 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the kitchen in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Wok", "Casserole Dish", "Baking Dish"],
-          "scenario": "At dinner, Chen cooks vegetables in a wok and serves baked food from a casserole dish and a baking dish.",
+          "scenario": "In a home kitchen, an adult checks or uses wok, casserole dish, and baking dish. The highlighted item is the wok.",
           "check": {
-            "question": "What does Chen use to cook the vegetables?",
+            "question": "What item is being used or checked in the kitchen?",
             "options": ["Wok", "Casserole Dish", "Baking Dish"],
             "expectedAnswer": "Wok"
           },
-          "imageBrief": "An adult cooking vegetables in a wok, with distinct casserole and baking dishes ready for serving."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: In a home kitchen, an adult checks or uses wok, casserole dish, and baking dish. The highlighted item is the wok. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Wok, Casserole Dish, Baking Dish in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Steamer", "Pressure Cooker", "Fork"],
-          "scenario": "Sara cooks rice in the pressure cooker, steams vegetables in the steamer, and places a fork beside the plate.",
+          "scenario": "During a cooking class, an adult checks or uses steamer, pressure cooker, and fork. The highlighted item is the pressure cooker.",
           "check": {
-            "question": "What does Sara use for the rice?",
-            "options": ["Steamer", "Pressure Cooker", "Fork"],
+            "question": "What item is being used or checked in the class?",
+            "options": ["Steamer", "Fork", "Pressure Cooker"],
             "expectedAnswer": "Pressure Cooker"
           },
-          "imageBrief": "An adult preparing rice in a pressure cooker and vegetables in a steamer, with a fork beside a plate."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: During a cooking class, an adult checks or uses steamer, pressure cooker, and fork. The highlighted item is the pressure cooker. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Steamer, Pressure Cooker, Fork in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Knife", "Spoon", "Spatula"],
-          "scenario": "Khaled cuts a tomato with a knife, tastes the soup with a spoon, and turns food with a spatula.",
+          "scenario": "In a shared kitchen, an adult checks or uses knife, spoon, and spatula. The highlighted item is the knife.",
           "check": {
-            "question": "What does Khaled use to cut the tomato?",
-            "options": ["Knife", "Spoon", "Spatula"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Spatula", "Knife", "Spoon"],
             "expectedAnswer": "Knife"
           },
-          "imageBrief": "A safe kitchen scene with an adult cutting a tomato with a knife, a spoon by soup, and a spatula by a pan."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: In a shared kitchen, an adult checks or uses knife, spoon, and spatula. The highlighted item is the knife. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Knife, Spoon, Spatula in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Ladle", "Whisk", "Tongs"],
-          "scenario": "Nora serves soup with a ladle, mixes eggs with a whisk, and lifts salad with tongs.",
+          "scenario": "During a meal preparation, an adult checks or uses ladle, whisk, and tongs. The highlighted item is the ladle.",
           "check": {
-            "question": "What does Nora use for the soup?",
+            "question": "Which utensil is used to serve the soup?",
             "options": ["Ladle", "Whisk", "Tongs"],
             "expectedAnswer": "Ladle"
           },
-          "imageBrief": "An adult serving soup with a ladle; a whisk is in a bowl of eggs and tongs are beside salad."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: During a meal preparation, an adult checks or uses ladle, whisk, and tongs. The highlighted item is the ladle. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Ladle, Whisk, Tongs in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Peeler", "Grater", "Rolling Pin"],
-          "scenario": "For the pie, Adam uses a peeler on the apples, a grater on the cheese, and a rolling pin on the dough.",
+          "scenario": "During a kitchen cleanup, an adult checks or uses peeler, grater, and rolling pin. The highlighted item is the rolling pin.",
           "check": {
-            "question": "What does Adam use on the dough?",
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
             "options": ["Peeler", "Grater", "Rolling Pin"],
             "expectedAnswer": "Rolling Pin"
           },
-          "imageBrief": "An adult rolling dough with a rolling pin, with a peeler near apples and a grater near cheese."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: During a kitchen cleanup, an adult checks or uses peeler, grater, and rolling pin. The highlighted item is the rolling pin. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Peeler, Grater, Rolling Pin in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Preparing Dinner",
-      "text": "Sara cooks rice in the pressure cooker and vegetables in the steamer. She cuts tomatoes with a knife and turns food with a spatula. A ladle is ready for the soup, and tongs are beside the salad. Last, she uses a whisk and rolling pin for dessert.",
+      "title": "The Kitchen 2: Preparing Dinner",
+      "text": "Before cooking, an adult prepares the kitchen and checks what is needed. For cooking, the counter has wok, casserole dish, baking dish, steamer, and pressure cooker. For serving and preparation, the person uses fork, knife, spoon, spatula, and ladle. The cupboard also contains whisk, tongs, peeler, grater, and rolling pin. Everything is returned to the right place after the meal.",
       "imageBrief": "Show the main adult everyday situation from “Preparing Dinner” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -367,88 +377,93 @@
       "Dish Towel"
     ],
     "targetWordsArabic": [
-      "فَتَّاحَةُ عُلَب",
-      "فَتَّاحَةُ زُجَاجَات (مِفْتَاحُ الفِلِّين)",
-      "طَبَق / صَحْن",
-      "زَبْدِيَّة / سُلْطَانِيَّة (وِعَاء / طَاسَة)",
-      "كُوبٌ كَبِير (مَجّ)",
-      "كَأْسُ زُجَاج (كُوبُ مَاء)",
-      "فِنْجَان",
-      "صَحْنُ الفِنْجَان",
-      "لَوْحُ التَّقْطِيع (قَرْمَة)",
-      "مِصْفَاة (مِصْفَاةُ مَعْكَرُونَة)",
-      "كُوبُ المِعْيَار (كُوبُ قِيَاس)",
-      "مِلْعَقَةُ قِيَاس (مِلْعَقَةٌ مِعْيَارِيَّة)",
-      "وِعَاءُ الخَلْط (طَاسَةُ عَجْن)",
-      "إِبْرِيق (دَوْرَقُ مَاء / شَفْشَق)",
-      "فُوطَةُ مَطْبَخ (مِنْشَفَةُ صُحُون)"
+      "فتاحة علب",
+      "فتاحة زجاجات (مفتاح الفلين)",
+      "طبق / صحن",
+      "زبدية / سلطانية (وعاء / طاسة)",
+      "كوب كبير (مج)",
+      "كأس زجاج (كوب ماء)",
+      "فنجان",
+      "صحن الفنجان",
+      "لوح التقطيع (قرمة)",
+      "مصفاة (مصفاة معكرونة)",
+      "كوب المعيار (كوب قياس)",
+      "ملعقة قياس (ملعقة معيارية)",
+      "وعاء الخلط (طاسة عجن)",
+      "إبريق (دورق ماء / شفشق)",
+      "فوطة مطبخ (منشفة صحون)"
     ],
     "usage": {
-      "goal": "Recognize and use common the kitchen vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the kitchen words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key the kitchen 3 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the kitchen in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Can Opener", "Corkscrew", "Plate"],
-          "scenario": "At dinner, Layla opens a can with the can opener, opens a bottle with the corkscrew, and sets out a plate.",
+          "scenario": "During a cooking class, an adult checks or uses can opener, corkscrew, and plate. The highlighted item is the can opener.",
           "check": {
-            "question": "What does Layla use for the can?",
-            "options": ["Can Opener", "Corkscrew", "Plate"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Corkscrew", "Plate", "Can Opener"],
             "expectedAnswer": "Can Opener"
           },
-          "imageBrief": "An adult using a can opener, with a corkscrew beside a bottle and an empty plate nearby."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: During a cooking class, an adult checks or uses can opener, corkscrew, and plate. The highlighted item is the can opener. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Can Opener, Corkscrew, Plate in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bowl", "Mug", "Glass"],
           "scenario": "Hassan pours soup into a bowl, coffee into a mug, and water into a glass.",
           "check": {
-            "question": "Which item holds the soup?",
-            "options": ["Bowl", "Mug", "Glass"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Glass", "Bowl", "Mug"],
             "expectedAnswer": "Bowl"
           },
-          "imageBrief": "An adult serving soup in a bowl, coffee in a mug, and water in a clear glass."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: Hassan pours soup into a bowl, coffee into a mug, and water into a glass. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Bowl, Mug, Glass in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cup", "Saucer", "Cutting Board"],
-          "scenario": "The cup sits on its saucer beside the cutting board.",
+          "scenario": "During a meal preparation, an adult checks or uses cup, saucer, and cutting board. The highlighted item is the saucer.",
           "check": {
-            "question": "What is directly under the cup?",
-            "options": ["Cup", "Saucer", "Cutting Board"],
+            "question": "Which object should the learner identify in the example with cup, saucer?",
+            "options": ["Saucer", "Cup", "Cutting Board"],
             "expectedAnswer": "Saucer"
           },
-          "imageBrief": "A cup resting on a saucer next to a clean cutting board."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: During a meal preparation, an adult checks or uses cup, saucer, and cutting board. The highlighted item is the saucer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Cup, Saucer, Cutting Board in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Colander", "Measuring Cup", "Measuring Spoon"],
-          "scenario": "Amal drains pasta in the colander and uses a measuring cup and measuring spoon for the sauce.",
+          "scenario": "During a kitchen cleanup, an adult checks or uses colander, measuring cup, and measuring spoon. The highlighted item is the colander.",
           "check": {
-            "question": "What does Amal use to drain the pasta?",
-            "options": ["Colander", "Measuring Cup", "Measuring Spoon"],
+            "question": "What item is being used or checked in the kitchen in the example with colander, measuring cup?",
+            "options": ["Measuring Cup", "Measuring Spoon", "Colander"],
             "expectedAnswer": "Colander"
           },
-          "imageBrief": "An adult draining pasta in a colander, with a measuring cup and measuring spoon beside sauce ingredients."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: During a kitchen cleanup, an adult checks or uses colander, measuring cup, and measuring spoon. The highlighted item is the colander. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Colander, Measuring Cup, Measuring Spoon in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Mixing Bowl", "Pitcher", "Dish Towel"],
-          "scenario": "Yara mixes juice in the pitcher, dries the mixing bowl with a dish towel, and sets both on the counter.",
+          "scenario": "In a home kitchen, an adult checks or uses mixing bowl, pitcher, and dish towel. The highlighted item is the mixing bowl.",
           "check": {
-            "question": "What does Yara dry?",
-            "options": ["Mixing Bowl", "Pitcher", "Dish Towel"],
+            "question": "What item is being used or checked in the kitchen in the example with mixing bowl, pitcher?",
+            "options": ["Dish Towel", "Mixing Bowl", "Pitcher"],
             "expectedAnswer": "Mixing Bowl"
           },
-          "imageBrief": "An adult drying a mixing bowl with a dish towel while a pitcher of juice sits on the counter."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: In a home kitchen, an adult checks or uses mixing bowl, pitcher, and dish towel. The highlighted item is the mixing bowl. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Mixing Bowl, Pitcher, Dish Towel in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Setting the Table",
-      "text": "Layla opens a can and begins dinner. She serves soup in a bowl and water in a glass. A cup rests on a saucer. She measures the sauce with a measuring cup and spoon, drains pasta in a colander, and dries the mixing bowl with a dish towel.",
+      "title": "The Kitchen 3: Preparing Dinner",
+      "text": "Before cooking, an adult prepares the kitchen and checks what is needed. For cooking, the counter has can opener, corkscrew, plate, bowl, and mug. For serving and preparation, the person uses glass, cup, saucer, cutting board, and colander. The cupboard also contains measuring cup, measuring spoon, mixing bowl, pitcher, and dish towel. Everything is returned to the right place after the meal.",
       "imageBrief": "Show the main adult everyday situation from “Setting the Table” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -537,88 +552,93 @@
       "Egg"
     ],
     "targetWordsArabic": [
-      "قُفَّازُ الفُرْن (مَاسِكُ حَرَارَة)",
-      "مِرْيَلَةُ مَطْبَخ (مِرْيَلَة)",
+      "قفاز الفرن (ماسك حرارة)",
+      "مريلة مطبخ (مريلة)",
       "سلة مهملات",
-      "مَنَادِيلُ مَطْبَخ (مَحَارِمُ وَرَقِيَّة)",
-      "نَايْلُون تَغْلِيف (بَلاسْتِيك غِذَائِيّ)",
-      "وَرَقُ أَلُومِنْيُوم (سُولِيفَان / وَرَقُ قَصْدِير)",
-      "حَافِظَةُ طَعَام (عُلْبَةُ ثَلَّاجَة)",
+      "مناديل مطبخ (محارم ورقية)",
+      "نايلون تغليف (بلاستيك غذائي)",
+      "ورق ألومنيوم (سوليفان / ورق قصدير)",
+      "حافظة طعام (علبة ثلاجة)",
       "إسفنجة",
-      "صَابُونُ غَسِيلِ الأَطْبَاق (سَائِلُ جَلِي)",
-      "مُجَفِّفُ الأَطْبَاق (مَطْبَقِيَّة)",
-      "غِلَافٌ بَلاسْتِيكِيٌّ لَاصِق (كْلِينْغ فِيلْم)",
-      "خُبْز (عَيْش)",
-      "زُبْدَة",
-      "حَلِيب (لَبَن)",
-      "بَيْضَة (بَيْض)"
+      "صابون غسيل الأطباق (سائل جلي)",
+      "مجفف الأطباق (مطبقية)",
+      "غلاف بلاستيكي لاصق (كلينغ فيلم)",
+      "خبز (عيش)",
+      "زبدة",
+      "حليب (لبن)",
+      "بيضة (بيض)"
     ],
     "usage": {
-      "goal": "Recognize and use common the kitchen vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the kitchen words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key the kitchen 4 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the kitchen in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Oven Mitt", "Apron", "Trash Can"],
-          "scenario": "While baking, Tarek wears an apron, uses an oven mitt, and puts scraps in the trash can.",
+          "scenario": "In a shared kitchen, an adult checks or uses oven mitt, apron, and trash can. The highlighted item is the oven mitt.",
           "check": {
-            "question": "What protects Tarek's hand from the hot tray?",
-            "options": ["Oven Mitt", "Apron", "Trash Can"],
+            "question": "What item is being used or checked in the kitchen in the example with oven mitt, apron?",
+            "options": ["Trash Can", "Oven Mitt", "Apron"],
             "expectedAnswer": "Oven Mitt"
           },
-          "imageBrief": "An adult baker wearing an apron and oven mitt while placing food scraps in a kitchen trash can."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: In a shared kitchen, an adult checks or uses oven mitt, apron, and trash can. The highlighted item is the oven mitt. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Oven Mitt, Apron, Trash Can in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Paper Towel", "Plastic Wrap", "Aluminum Foil"],
-          "scenario": "Heba covers one dish with plastic wrap, another with aluminum foil, and cleans a spill with a paper towel.",
+          "scenario": "During a meal preparation, an adult checks or uses paper towel, plastic wrap, and aluminum foil. The highlighted item is the paper towel.",
           "check": {
-            "question": "What does Heba use to clean the spill?",
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
             "options": ["Paper Towel", "Plastic Wrap", "Aluminum Foil"],
             "expectedAnswer": "Paper Towel"
           },
-          "imageBrief": "An adult wiping a small spill with paper towel; two dishes are separately covered with plastic wrap and aluminum foil."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: During a meal preparation, an adult checks or uses paper towel, plastic wrap, and aluminum foil. The highlighted item is the paper towel. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Paper Towel, Plastic Wrap, Aluminum Foil in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Food Container", "Sponge", "Dish Soap"],
-          "scenario": "After dinner, Walid washes a food container with dish soap and a sponge.",
+          "scenario": "During a kitchen cleanup, an adult checks or uses food container, sponge, and dish soap. The highlighted item is the food container.",
           "check": {
-            "question": "What does Walid wash?",
-            "options": ["Food Container", "Sponge", "Dish Soap"],
+            "question": "What is being washed at the sink?",
+            "options": ["Sponge", "Dish Soap", "Food Container"],
             "expectedAnswer": "Food Container"
           },
-          "imageBrief": "An adult washing a reusable food container at the sink with dish soap and a sponge."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: During a kitchen cleanup, an adult checks or uses food container, sponge, and dish soap. The highlighted item is the food container. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Food Container, Sponge, Dish Soap in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Dish Rack", "Cling Film", "Bread"],
-          "scenario": "The clean dishes dry in the dish rack while bread is covered with cling film.",
+          "scenario": "In a home kitchen, an adult checks or uses dish rack, cling film, and bread. The highlighted item is the dish rack.",
           "check": {
-            "question": "Where do the clean dishes dry?",
-            "options": ["Dish Rack", "Cling Film", "Bread"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Bread", "Dish Rack", "Cling Film"],
             "expectedAnswer": "Dish Rack"
           },
-          "imageBrief": "Clean dishes drying in a dish rack, with a loaf of bread partly covered by transparent cling film."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: In a home kitchen, an adult checks or uses dish rack, cling film, and bread. The highlighted item is the dish rack. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Dish Rack, Cling Film, Bread in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Butter", "Milk", "Egg"],
-          "scenario": "For breakfast, Reem fries an egg and serves it with bread, butter, and milk.",
+          "scenario": "During a cooking class, an adult checks or uses butter, milk, and egg. The highlighted item is the egg.",
           "check": {
-            "question": "What does Reem fry?",
-            "options": ["Butter", "Milk", "Egg"],
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
+            "options": ["Egg", "Butter", "Milk"],
             "expectedAnswer": "Egg"
           },
-          "imageBrief": "An adult frying an egg and setting a breakfast table with bread, butter, and a glass of milk."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: During a cooking class, an adult checks or uses butter, milk, and egg. The highlighted item is the egg. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Butter, Milk, Egg in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Cooking and Cleaning",
-      "text": "Tarek wears an apron and uses an oven mitt for the hot tray. Heba covers leftover food with plastic wrap and aluminum foil. After dinner, they wash a food container with a sponge and dish soap. Clean plates dry in the dish rack, ready for breakfast.",
+      "title": "The Kitchen 4: Preparing Dinner",
+      "text": "Before cooking, an adult prepares the kitchen and checks what is needed. For cooking, the counter has oven mitt, apron, trash can, paper towel, and plastic wrap. For serving and preparation, the person uses aluminum foil, food container, sponge, dish soap, and dish rack. The cupboard also contains cling film, bread, butter, milk, and egg. Everything is returned to the right place after the meal.",
       "imageBrief": "Show the main adult everyday situation from “Cooking and Cleaning” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [
@@ -704,23 +724,23 @@
       "Juice"
     ],
     "targetWordsArabic": [
-      "جُبْن / جُبْنَة",
-      "أَرُزّ (رُزّ)",
-      "مَعْكَرُونَة (بَاسْتَا)",
-      "زَيْتُ الطَّهْي (زَيْت)",
-      "مِلْح",
-      "سُكَّر",
-      "فُلْفُل (فُلْفُلٌ أَسْوَد)",
-      "طَحِين (دَقِيق)",
-      "خَلّ",
-      "عَسَل (عَسَلُ نَحْل)",
-      "تُفَّاحَة",
-      "عَصِير"
+      "جبن / جبنة",
+      "أرز (رز)",
+      "معكرونة (باستا)",
+      "زيت الطهي (زيت)",
+      "ملح",
+      "سكر",
+      "فلفل (فلفل أسود)",
+      "طحين (دقيق)",
+      "خل",
+      "عسل (عسل نحل)",
+      "تفاحة",
+      "عصير"
     ],
     "usage": {
-      "goal": "Recognize and use common the kitchen vocabulary in practical everyday situations.",
-      "canDoStatement": "I can understand and use common the kitchen words in a simple situation",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key the kitchen 5 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to the kitchen in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -728,50 +748,54 @@
           "targetWords": ["Cheese", "Rice", "Pasta"],
           "scenario": "For a quick dinner, Bilal cooks pasta and rice, then adds cheese to the pasta.",
           "check": {
-            "question": "What does Bilal add to the pasta?",
+            "question": "Based on the situation, which option best fits what the person is doing, using, or needs?",
             "options": ["Cheese", "Rice", "Pasta"],
             "expectedAnswer": "Cheese"
           },
-          "imageBrief": "An adult adding grated cheese to cooked pasta, with a separate bowl of rice nearby."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: For a quick dinner, Bilal cooks pasta and rice, then adds cheese to the pasta. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Cheese, Rice, Pasta in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cooking Oil", "Salt", "Sugar"],
-          "scenario": "Maha pours cooking oil into the pan and adds a little salt, but no sugar.",
+          "scenario": "During a kitchen cleanup, an adult checks or uses cooking oil, salt, and sugar. The highlighted item is the cooking oil.",
           "check": {
-            "question": "What does Maha pour into the pan?",
-            "options": ["Cooking Oil", "Salt", "Sugar"],
+            "question": "Which object should the learner identify in the example with cooking oil, salt?",
+            "options": ["Salt", "Sugar", "Cooking Oil"],
             "expectedAnswer": "Cooking Oil"
           },
-          "imageBrief": "An adult pouring cooking oil into a pan, with separate unlabelled containers of salt and sugar nearby."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: During a kitchen cleanup, an adult checks or uses cooking oil, salt, and sugar. The highlighted item is the cooking oil. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Cooking Oil, Salt, Sugar in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pepper", "Flour", "Vinegar"],
-          "scenario": "To make the sauce, Fadi mixes flour with vinegar and adds pepper.",
+          "scenario": "In a home kitchen, an adult checks or uses pepper, flour, and vinegar. The highlighted item is the pepper.",
           "check": {
-            "question": "What does Fadi add for a spicy taste?",
-            "options": ["Pepper", "Flour", "Vinegar"],
+            "question": "What item is being used or checked in the kitchen in the example with pepper, flour?",
+            "options": ["Vinegar", "Pepper", "Flour"],
             "expectedAnswer": "Pepper"
           },
-          "imageBrief": "An adult making sauce with flour and vinegar, sprinkling visible ground pepper into the bowl."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: In a home kitchen, an adult checks or uses pepper, flour, and vinegar. The highlighted item is the pepper. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Pepper, Flour, Vinegar in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Honey", "Apple", "Juice"],
-          "scenario": "At breakfast, Amina puts honey on apple slices and drinks a glass of juice.",
+          "scenario": "During a cooking class, an adult checks or uses honey, apple, and juice. The highlighted item is the honey.",
           "check": {
-            "question": "What does Amina put on the apple slices?",
+            "question": "What item is being used or checked in the class in the example with honey, apple?",
             "options": ["Honey", "Apple", "Juice"],
             "expectedAnswer": "Honey"
           },
-          "imageBrief": "An adult drizzling honey over apple slices, with a glass of juice beside the plate."
+          "imageBrief": "Photorealistic adult real-world scene in a the kitchen context illustrating this situation: During a cooking class, an adult checks or uses honey, apple, and juice. The highlighted item is the honey. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the kitchen scene showing lesson-related items or actions including Honey, Apple, Juice in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "A Simple Meal",
-      "text": "Maha pours cooking oil into a pan and adds a little salt and pepper. Bilal cooks rice and pasta, then adds cheese to the pasta. For dessert, they cut an apple and add honey. They drink juice with the meal and store the flour, sugar, and vinegar.",
+      "title": "The Kitchen 5: Preparing Dinner",
+      "text": "Before cooking, an adult prepares the kitchen and checks what is needed. For cooking, the counter has cheese, rice, pasta, cooking oil, and salt. For serving and preparation, the person uses sugar, pepper, flour, vinegar, and honey. The cupboard also contains apple and juice. Everything is returned to the right place after the meal.",
       "imageBrief": "Show the main adult everyday situation from “A Simple Meal” with the key objects clearly visible, naturally arranged, and free of written labels."
     },
     "exercises": [

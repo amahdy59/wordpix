@@ -47,6 +47,7 @@ function containsTarget(text: string, target: string): boolean {
     division: ["divided by"],
     percentage: ["percent"],
     "acute angle": ["angle is acute", "acute"],
+    "bridge of nose": ["bridge of the nose", "bridge of her nose", "bridge of his nose"],
   };
   return [normalizedTarget, ...(conceptAliases[normalizedTarget] ?? [])].some((candidate) =>
     normalizedText.includes(` ${normalize(candidate)} `)

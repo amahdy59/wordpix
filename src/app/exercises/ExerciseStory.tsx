@@ -24,6 +24,7 @@ import {
   Award,
   ChevronRight,
   Check,
+  ImageOff,
 } from "lucide-react";
 import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { getOrGenerateStoryBundle } from "../data/storyTalesDictionary";
@@ -838,22 +839,36 @@ export const ExerciseStory = memo(function ExerciseStory({
                         {currentChunk.imageBrief && (
                           <figure className="overflow-hidden rounded-2xl border border-border/60 bg-muted/40">
                             {currentChunk.imagePath &&
-                              !failedSceneImages[currentChunk.imagePath] && (
-                                // onError is an image lifecycle event used only to hide a broken asset.
-                                // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
-                                <img
-                                  src={resolveAssetUrl(currentChunk.imagePath)}
-                                  alt={currentChunk.imageAlt ?? currentChunk.imageBrief}
-                                  loading="eager"
-                                  className="aspect-[4/3] w-full object-cover"
-                                  onError={() =>
-                                    setFailedSceneImages((current) => ({
-                                      ...current,
-                                      [currentChunk.imagePath!]: true,
-                                    }))
-                                  }
-                                />
-                              )}
+                            !failedSceneImages[currentChunk.imagePath] ? (
+                              // onError is an image lifecycle event used only to hide a broken asset.
+                              // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
+                              <img
+                                src={resolveAssetUrl(currentChunk.imagePath)}
+                                alt={currentChunk.imageAlt ?? currentChunk.imageBrief}
+                                loading="eager"
+                                className="aspect-[4/3] w-full object-cover"
+                                onError={() =>
+                                  setFailedSceneImages((current) => ({
+                                    ...current,
+                                    [currentChunk.imagePath!]: true,
+                                  }))
+                                }
+                              />
+                            ) : (
+                              <div
+                                role="img"
+                                aria-label={t("story.imagePendingAria")}
+                                className="flex aspect-[4/3] w-full flex-col items-center justify-center gap-2 bg-secondary px-6 text-center text-muted-foreground"
+                              >
+                                <ImageOff className="size-8 text-primary" aria-hidden="true" />
+                                <span className="font-bold text-foreground">
+                                  {t("story.imagePending")}
+                                </span>
+                                <span className="text-xs">
+                                  {t("story.imagePendingDescription")}
+                                </span>
+                              </div>
+                            )}
                             <figcaption className="p-3 text-xs text-muted-foreground">
                               <span className="font-bold text-foreground">
                                 {t("story.chunkVisualBrief")}:{" "}

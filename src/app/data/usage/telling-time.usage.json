@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "lessonId": "telling-time-1",
     "lessonName": "Telling Time 1",
@@ -27,88 +27,93 @@
       "Quarter Hour"
     ],
     "targetWordsArabic": [
-      "سَاعَةُ حَائِط / سَاعَة",
+      "ساعة حائط / ساعة",
       "ساعة",
-      "مصطلح مرتبط بالموضوع يُسمّى «هوور هاند»",
-      "مصطلح مرتبط بالموضوع يُسمّى «مينوتي هاند»",
+      "عقرب الساعات",
+      "عقرب الدقائق",
       "عقرب الثواني",
-      "مصطلح مرتبط بالموضوع يُسمّى «كلوك فاكي»",
-      "سَاعَةُ المُنَبِّه (مُنَبِّه)",
-      "مصطلح مرتبط بالموضوع يُسمّى «ديجيتال كلوك»",
-      "مصطلح مرتبط بالموضوع يُسمّى «سونديال»",
-      "مصطلح مرتبط بالموضوع يُسمّى «هوورجلاسس»",
+      "وجه الساعة",
+      "ساعة المنبه (منبه)",
+      "ساعة رقمية",
+      "مزولة شمسية",
+      "ساعة رملية",
       "الثاني",
-      "مصطلح مرتبط بالموضوع يُسمّى «مينوتي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «هوور»",
+      "دقيقة",
+      "ساعة",
       "نصف ساعة",
       "ربع ساعة"
     ],
     "usage": {
-      "goal": "Understand common clock, time-of-day, and schedule expressions.",
-      "canDoStatement": "I can understand common clock, time-of-day, and schedule expressions",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key telling time 1 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to telling time in very simple everyday situations.",
+      "textType": "logistics-schedule",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Clock", "Watch", "Hour Hand"],
-          "scenario": "When we talk about time, we use clock, watch, and hour hand.",
+          "scenario": "On a desk are a clock and a watch. A nearby wall clock clearly shows its hour hand. The highlighted object is the clock.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Clock", "Watch", "Hour Hand"],
+            "question": "Which time expression fits this appointment or clock?",
+            "options": ["Hour Hand", "Clock", "Watch"],
             "expectedAnswer": "Clock"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use clock, watch, and hour hand. Emphasize clock, watch, and hour hand and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: On a desk are a clock and a watch. A nearby wall clock clearly shows its hour hand. The highlighted object is the clock. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Clock, Watch, Hour Hand in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Minute Hand", "Second Hand", "Clock Face"],
-          "scenario": "When we talk about time, we use minute hand, second hand, and clock face.",
+          "scenario": "A large clock face shows both hands clearly. The longer minute hand is highlighted, while the second hand remains visible.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What time detail is being shown?",
             "options": ["Minute Hand", "Second Hand", "Clock Face"],
             "expectedAnswer": "Minute Hand"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use minute hand, second hand, and clock face. Emphasize minute hand, second hand, and clock face and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: A large clock face shows both hands clearly. The longer minute hand is highlighted, while the second hand remains visible. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Minute Hand, Second Hand, Clock Face in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Alarm Clock", "Digital Clock", "Sundial"],
-          "scenario": "When we talk about time, we use alarm clock, digital clock, and sundial.",
+          "scenario": "In a meeting reminder, an adult compares examples of alarm clock, digital clock, and sundial. The highlighted time detail represents alarm clock.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Alarm Clock", "Digital Clock", "Sundial"],
+            "question": "What time detail is being shown in the example with alarm clock, digital clock?",
+            "options": ["Digital Clock", "Sundial", "Alarm Clock"],
             "expectedAnswer": "Alarm Clock"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use alarm clock, digital clock, and sundial. Emphasize alarm clock, digital clock, and sundial and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In a meeting reminder, an adult compares examples of alarm clock, digital clock, and sundial. The highlighted time detail represents alarm clock. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Alarm Clock, Digital Clock, Sundial in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Hourglass", "Second", "Minute"],
-          "scenario": "When we talk about time, we use hourglass, second, and minute.",
+          "scenario": "In an appointment planner, an adult compares examples of hourglass, second, and minute. The highlighted time detail represents hourglass.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Hourglass", "Second", "Minute"],
+            "question": "What part of the clock or day should the learner identify?",
+            "options": ["Minute", "Hourglass", "Second"],
             "expectedAnswer": "Hourglass"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use hourglass, second, and minute. Emphasize hourglass, second, and minute and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In an appointment planner, an adult compares examples of hourglass, second, and minute. The highlighted time detail represents hourglass. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Hourglass, Second, Minute in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Hour", "Half Hour", "Quarter Hour"],
-          "scenario": "When we talk about time, we use hour, half hour, and quarter hour.",
+          "scenario": "On a station clock, an adult compares examples of hour, half hour, and quarter hour. The highlighted time detail represents hour.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which time term matches the clock or schedule?",
             "options": ["Hour", "Half Hour", "Quarter Hour"],
             "expectedAnswer": "Hour"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use hour, half hour, and quarter hour. Emphasize hour, half hour, and quarter hour and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: On a station clock, an adult compares examples of hour, half hour, and quarter hour. The highlighted time detail represents hour. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Hour, Half Hour, Quarter Hour in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Telling Time Mini Story",
-      "text": "Today we practice time. We look at clock, watch, and hour hand. The teacher also shows minute hand, second hand, and clock face. We say the words slowly and connect them to a simple daily schedule. We also remember earlier words such as habanero and serrano.",
+      "title": "Telling Time 1: Managing a Busy Schedule",
+      "text": "An adult checks a schedule before a day of meetings and appointments. The first part of the schedule uses clock, watch, hour hand, minute hand, and second hand. To read and describe time, the person checks clock face, alarm clock, digital clock, sundial, and hourglass. Later entries refer to second, minute, hour, half hour, and quarter hour. The person confirms each time before leaving for the next appointment.",
       "imageBrief": "One uncluttered telling time scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -148,7 +153,7 @@
     "video": {
       "title": "Telling Time: See It, Say It",
       "idea": "30–50 second contextual video set in a daily schedule. Show clock, watch, hour hand, minute hand, and second hand naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see clock, watch, and hour hand. What can you find next?"
+      "scriptStarter": "Watch the situation: On a desk are a clock and a watch. A nearby wall clock clearly shows its hour hand. The highlighted object is the clock."
     },
     "spacedReview": "1 lesson(s) back: Habanero, Serrano from vegetables-4\n3 lesson(s) back: Chard, Collard Greens from vegetables-2\n7 lesson(s) back: Mulberry, Boysenberry from fruits-2"
   },
@@ -180,88 +185,93 @@
       "Sharp"
     ],
     "targetWordsArabic": [
-      "مصطلح مرتبط بالموضوع يُسمّى «نوون»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ميدنيغت»",
-      "مصطلح مرتبط بالموضوع يُسمّى «داون»",
-      "مصطلح مرتبط بالموضوع يُسمّى «دوسك»",
-      "مصطلح مرتبط بالموضوع يُسمّى «تويليغت»",
+      "الظهر",
+      "منتصف الليل",
+      "الفجر",
+      "الغسق",
+      "الشفق",
       "تمام الساعة",
       "والنصف",
       "والربع",
-      "إلا ربعًا",
+      "إلا ربعا",
       "وخمس دقائق",
       "وعشر دقائق",
       "وعشرون دقيقة",
       "إلا خمس دقائق",
       "إلا عشر دقائق",
-      "مصطلح مرتبط بالموضوع يُسمّى «شارب»"
+      "بالضبط"
     ],
     "usage": {
-      "goal": "Understand common clock, time-of-day, and schedule expressions.",
-      "canDoStatement": "I can understand common clock, time-of-day, and schedule expressions",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key telling time 2 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to telling time in very simple everyday situations.",
+      "textType": "logistics-schedule",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Noon", "Midnight", "Dawn"],
-          "scenario": "When we talk about time, we use noon, midnight, and dawn.",
+          "scenario": "At a phone calendar, an adult compares examples of noon, midnight, and dawn. The highlighted time detail represents noon.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which time term matches the clock or schedule in the example with noon, midnight?",
             "options": ["Noon", "Midnight", "Dawn"],
             "expectedAnswer": "Noon"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use noon, midnight, and dawn. Emphasize noon, midnight, and dawn and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: At a phone calendar, an adult compares examples of noon, midnight, and dawn. The highlighted time detail represents noon. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Noon, Midnight, Dawn in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Dusk", "Twilight", "O'Clock"],
-          "scenario": "When we talk about time, we use dusk, twilight, and o'clock.",
+          "scenario": "In a meeting reminder, an adult compares examples of dusk, twilight, and o'clock. The highlighted time detail represents dusk.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Dusk", "Twilight", "O'Clock"],
+            "question": "Which time term matches the clock or schedule in the example with dusk, twilight?",
+            "options": ["Twilight", "O'Clock", "Dusk"],
             "expectedAnswer": "Dusk"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use dusk, twilight, and o'clock. Emphasize dusk, twilight, and o'clock and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In a meeting reminder, an adult compares examples of dusk, twilight, and o'clock. The highlighted time detail represents dusk. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Dusk, Twilight, O'Clock in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Half Past", "Quarter Past", "Quarter To"],
-          "scenario": "When we talk about time, we use half past, quarter past, and quarter to.",
+          "scenario": "In an appointment planner, an adult compares examples of half past, quarter past, and quarter to. The highlighted time detail represents half past.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Half Past", "Quarter Past", "Quarter To"],
+            "question": "Which expression best describes the selected time?",
+            "options": ["Quarter To", "Half Past", "Quarter Past"],
             "expectedAnswer": "Half Past"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use half past, quarter past, and quarter to. Emphasize half past, quarter past, and quarter to and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In an appointment planner, an adult compares examples of half past, quarter past, and quarter to. The highlighted time detail represents half past. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Half Past, Quarter Past, Quarter To in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Five Past", "Ten Past", "Twenty Past"],
-          "scenario": "When we talk about time, we use five past, ten past, and twenty past.",
+          "scenario": "On a station clock, an adult compares examples of five past, ten past, and twenty past. The highlighted time detail represents five past.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which time expression fits this appointment or clock in the example with five past, ten past?",
             "options": ["Five Past", "Ten Past", "Twenty Past"],
             "expectedAnswer": "Five Past"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use five past, ten past, and twenty past. Emphasize five past, ten past, and twenty past and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: On a station clock, an adult compares examples of five past, ten past, and twenty past. The highlighted time detail represents five past. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Five Past, Ten Past, Twenty Past in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Five To", "Ten To", "Sharp"],
-          "scenario": "When we talk about time, we use five to, ten to, and sharp.",
+          "scenario": "In an office schedule, an adult compares examples of five to, ten to, and sharp. The highlighted time detail represents five to.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Five To", "Ten To", "Sharp"],
+            "question": "What time detail is being shown in the example with five to, ten to?",
+            "options": ["Ten To", "Sharp", "Five To"],
             "expectedAnswer": "Five To"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use five to, ten to, and sharp. Emphasize five to, ten to, and sharp and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In an office schedule, an adult compares examples of five to, ten to, and sharp. The highlighted time detail represents five to. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Five To, Ten To, Sharp in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Telling Time Mini Story",
-      "text": "Today we practice time. We look at noon, midnight, and dawn. The teacher also shows dusk, twilight, and o'clock. We say the words slowly and connect them to a simple daily schedule. We also remember earlier words such as clock and watch.",
+      "title": "Telling Time 2: Managing a Busy Schedule",
+      "text": "An adult checks a schedule before a day of meetings and appointments. The first part of the schedule uses noon, midnight, dawn, dusk, and twilight. To read and describe time, the person checks o'clock, half past, quarter past, quarter to, and five past. Later entries refer to ten past, twenty past, five to, ten to, and sharp. The person confirms each time before leaving for the next appointment.",
       "imageBrief": "One uncluttered telling time scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -301,7 +311,7 @@
     "video": {
       "title": "Telling Time: See It, Say It",
       "idea": "30–50 second contextual video set in a daily schedule. Show noon, midnight, dawn, dusk, and twilight naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see noon, midnight, and dawn. What can you find next?"
+      "scriptStarter": "Watch the situation: At a phone calendar, an adult compares examples of noon, midnight, and dawn. The highlighted time detail represents noon."
     },
     "spacedReview": "1 lesson(s) back: Clock, Watch from telling-time-1\n3 lesson(s) back: Zucchini, Pumpkin from vegetables-3\n7 lesson(s) back: Lemon, Lime from fruits-3"
   },
@@ -333,88 +343,93 @@
       "Late"
     ],
     "targetWordsArabic": [
-      "مصطلح مرتبط بالموضوع يُسمّى «مورنينج»",
-      "جزء يُسمّى «افتيرنوون»",
-      "جزء يُسمّى «يفينينج»",
-      "مصطلح مرتبط بالموضوع يُسمّى «نيغت»",
+      "الصباح",
+      "بعد الظهر",
+      "المساء",
+      "الليل",
       "شروق الشمس",
       "غروب الشمس",
-      "مصطلح مرتبط بالموضوع يُسمّى «ميدداي»",
+      "منتصف النهار",
       "وقت متأخر من الليل",
-      "جزء يُسمّى «يارلي مورنينج»",
-      "مصطلح مرتبط بالموضوع يُسمّى «نيغتفالل»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ا.م.»",
-      "مصطلح مرتبط بالموضوع يُسمّى «ب.م.»",
-      "مكان يُسمّى «ون تيمي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «يارلي»",
-      "مصطلح مرتبط بالموضوع يُسمّى «لاتي»"
+      "الصباح الباكر",
+      "حلول الليل",
+      "صباحا",
+      "مساء",
+      "في الموعد",
+      "مبكرا",
+      "متأخرا"
     ],
     "usage": {
-      "goal": "Understand common clock, time-of-day, and schedule expressions.",
-      "canDoStatement": "I can understand common clock, time-of-day, and schedule expressions",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key telling time 3 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to telling time in very simple everyday situations.",
+      "textType": "logistics-schedule",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Morning", "Afternoon", "Evening"],
-          "scenario": "When we talk about time, we use morning, afternoon, and evening.",
+          "scenario": "A daily planner separates the day into morning, afternoon, and evening. The highlighted appointment is in the morning.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Morning", "Afternoon", "Evening"],
+            "question": "What time detail is being shown in the example with morning, afternoon?",
+            "options": ["Afternoon", "Evening", "Morning"],
             "expectedAnswer": "Morning"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use morning, afternoon, and evening. Emphasize morning, afternoon, and evening and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: A daily planner separates the day into morning, afternoon, and evening. The highlighted appointment is in the morning. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Morning, Afternoon, Evening in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Night", "Sunrise", "Sunset"],
-          "scenario": "When we talk about time, we use night, sunrise, and sunset.",
+          "scenario": "Three photographs show night, sunrise, and sunset. The highlighted photograph shows night.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Night", "Sunrise", "Sunset"],
+            "question": "What time detail is being shown in the example with night, sunrise?",
+            "options": ["Sunset", "Night", "Sunrise"],
             "expectedAnswer": "Night"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use night, sunrise, and sunset. Emphasize night, sunrise, and sunset and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: Three photographs show night, sunrise, and sunset. The highlighted photograph shows night. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Night, Sunrise, Sunset in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Midday", "Late Night", "Early Morning"],
-          "scenario": "When we talk about time, we use midday, late night, and early morning.",
+          "scenario": "On a station clock, an adult compares examples of midday, late night, and early morning. The highlighted time detail represents midday.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "What part of the clock or day should the learner identify in the example with midday, late night?",
             "options": ["Midday", "Late Night", "Early Morning"],
             "expectedAnswer": "Midday"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use midday, late night, and early morning. Emphasize midday, late night, and early morning and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: On a station clock, an adult compares examples of midday, late night, and early morning. The highlighted time detail represents midday. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Midday, Late Night, Early Morning in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Nightfall", "A.M.", "P.M."],
-          "scenario": "When we talk about time, we use nightfall, a.m., and p.m..",
+          "scenario": "In an office schedule, an adult compares examples of nightfall, a.m., and p.m. The highlighted time detail represents nightfall.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Nightfall", "A.M.", "P.M."],
+            "question": "Which time term matches the clock or schedule in the example with nightfall, a.m.?",
+            "options": ["A.M.", "P.M.", "Nightfall"],
             "expectedAnswer": "Nightfall"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use nightfall, a.m., and p.m.. Emphasize nightfall, a.m., and p.m. and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In an office schedule, an adult compares examples of nightfall, a.m., and p.m. The highlighted time detail represents nightfall. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Nightfall, A.M., P.M. in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["On Time", "Early", "Late"],
-          "scenario": "When we talk about time, we use on time, early, and late.",
+          "scenario": "Three people arrive for appointments: one is early, one is on time, and one is late. The highlighted person is on time.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["On Time", "Early", "Late"],
+            "question": "Which time term matches the clock or schedule in the example with on time, early?",
+            "options": ["Late", "On Time", "Early"],
             "expectedAnswer": "On Time"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use on time, early, and late. Emphasize on time, early, and late and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: Three people arrive for appointments: one is early, one is on time, and one is late. The highlighted person is on time. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including On Time, Early, Late in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Telling Time Mini Story",
-      "text": "Today we practice time. We look at morning, afternoon, and evening. The teacher also shows night, sunrise, and sunset. We say the words slowly and connect them to a simple daily schedule. We also remember earlier words such as noon and midnight.",
+      "title": "Telling Time 3: Managing a Busy Schedule",
+      "text": "An adult checks a schedule before a day of meetings and appointments. The first part of the schedule uses morning, afternoon, evening, night, and sunrise. To read and describe time, the person checks sunset, midday, late night, early morning, and nightfall. Later entries refer to a.m., p.m., on time, early, and late. The person confirms each time before leaving for the next appointment.",
       "imageBrief": "One uncluttered telling time scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -454,7 +469,7 @@
     "video": {
       "title": "Telling Time: See It, Say It",
       "idea": "30–50 second contextual video set in a daily schedule. Show morning, afternoon, evening, night, and sunrise naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see morning, afternoon, and evening. What can you find next?"
+      "scriptStarter": "Watch the situation: A daily planner separates the day into morning, afternoon, and evening. The highlighted appointment is in the morning."
     },
     "spacedReview": "1 lesson(s) back: Noon, Midnight from telling-time-2\n3 lesson(s) back: Habanero, Serrano from vegetables-4\n7 lesson(s) back: Fig, Olive from fruits-4"
   },
@@ -475,46 +490,42 @@
       "Countdown",
       "Stopwatch"
     ],
-    "targetWordsArabic": [
-      "مصطلح مرتبط بالموضوع يُسمّى «اهياد وف تيمي»",
-      "متأخر عن الجدول",
-      "مصطلح مرتبط بالموضوع يُسمّى «وفيرتيمي»",
-      "مركبة يُسمّى «كوونتدوون»",
-      "ساعة توقيت"
-    ],
+    "targetWordsArabic": ["قبل الموعد", "متأخر عن الجدول", "وقت إضافي", "عد تنازلي", "ساعة توقيت"],
     "usage": {
-      "goal": "Understand common clock, time-of-day, and schedule expressions.",
-      "canDoStatement": "I can understand common clock, time-of-day, and schedule expressions",
-      "textType": "Mini story / visual reading",
+      "goal": "Learn to recognize and use key telling time 4 vocabulary in a simple adult everyday situation.",
+      "canDoStatement": "Can recognize and use a few familiar words related to telling time in very simple everyday situations.",
+      "textType": "logistics-schedule",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Ahead of Time", "Behind Schedule", "Overtime"],
-          "scenario": "When we talk about time, we use ahead of time, behind schedule, and overtime.",
+          "scenario": "In an appointment planner, an adult compares examples of ahead of time, behind schedule, and overtime. The highlighted time detail represents ahead of time.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Ahead of Time", "Behind Schedule", "Overtime"],
+            "question": "Which time term matches the clock or schedule in the example with ahead of time, behind schedule?",
+            "options": ["Overtime", "Ahead of Time", "Behind Schedule"],
             "expectedAnswer": "Ahead of Time"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use ahead of time, behind schedule, and overtime. Emphasize ahead of time, behind schedule, and overtime and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In an appointment planner, an adult compares examples of ahead of time, behind schedule, and overtime. The highlighted time detail represents ahead of time. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Ahead of Time, Behind Schedule, Overtime in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Countdown", "Stopwatch"],
-          "scenario": "When we talk about time, we use countdown and stopwatch.",
+          "scenario": "On a station clock, an adult compares examples of countdown and stopwatch. The highlighted time detail represents countdown.",
           "check": {
-            "question": "Which word is shown in the picture?",
-            "options": ["Countdown", "Stopwatch"],
+            "question": "Which expression best describes the selected time in the example with countdown, stopwatch?",
+            "options": ["Countdown", "Stopwatch", "Ahead of Time"],
             "expectedAnswer": "Countdown"
           },
-          "imageBrief": "Create one clear Pre-A1 visual for telling time that represents: When we talk about time, we use countdown and stopwatch. Emphasize countdown and stopwatch and avoid clutter."
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: On a station clock, an adult compares examples of countdown and stopwatch. The highlighted time detail represents countdown. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Countdown, Stopwatch in a natural setting."
         }
       ]
     },
     "reading": {
-      "title": "Telling Time Mini Story",
-      "text": "Today we practice time. We look at ahead of time, behind schedule, and overtime. The teacher also shows countdown and stopwatch. We say the words slowly and connect them to a simple daily schedule. We also remember earlier words such as morning and afternoon.",
+      "title": "Telling Time 4: Managing a Busy Schedule",
+      "text": "An adult checks a schedule before a day of meetings and appointments. The first part of the schedule uses ahead of time, behind schedule, overtime, countdown, and stopwatch. The person confirms each time before leaving for the next appointment. The vocabulary is used in a realistic telling time context that an adult could meet at home, at work, or in the community.",
       "imageBrief": "One uncluttered telling time scene supporting the reading and showing the first six target words."
     },
     "exercises": [
@@ -542,7 +553,7 @@
     "video": {
       "title": "Telling Time: See It, Say It",
       "idea": "30–50 second contextual video set in a daily schedule. Show ahead of time, behind schedule, overtime, countdown, and stopwatch naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Look closely. I can see ahead of time, behind schedule, and overtime. What can you find next?"
+      "scriptStarter": "Watch the situation: In an appointment planner, an adult compares examples of ahead of time, behind schedule, and overtime. The highlighted time detail represents ahead of time."
     },
     "spacedReview": "1 lesson(s) back: Morning, Afternoon from telling-time-3\n3 lesson(s) back: Clock, Watch from telling-time-1\n7 lesson(s) back: Carrot, Potato from vegetables-1"
   }

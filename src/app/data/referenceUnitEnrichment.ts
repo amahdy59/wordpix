@@ -207,10 +207,17 @@ export function enrichReferenceLesson(lesson: LessonUsageData): LessonUsageData 
       answer: model,
       contextTag: profile.contextTag,
     }));
+  const targetPractice: LessonExercise[] = extensionTargets.map((targets) => ({
+    prompt: `Explain ${joinNatural(targets)} to ${profile.audience} in ${profile.setting}. Use each term in a connected response and explain its role.`,
+    questionType: "production",
+    responseMode: "extended-response",
+    answer: "Open response",
+    contextTag: profile.contextTag,
+  }));
 
   return {
     ...lesson,
-    exercises: [...lesson.exercises, ...editorialExercises],
+    exercises: [...lesson.exercises, ...editorialExercises, ...targetPractice],
     contextExtensions,
   };
 }
