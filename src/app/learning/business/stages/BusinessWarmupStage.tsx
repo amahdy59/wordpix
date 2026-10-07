@@ -11,6 +11,7 @@ import {
 import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
 import { resolveAssetUrl } from "../../../../utils/assetUrl";
+import { ChoiceOptionGroup } from "../../../shared/ChoiceOptionGroup";
 
 interface Props {
   unit: BusinessUnit;
@@ -227,14 +228,28 @@ export function BusinessWarmupStage({ unit, savedNotes = {}, onSaveNote, onNext 
                     })}
                   </div>
                 ) : (
-                  /* Fallback open textarea if no options */
-                  <textarea
-                    id={prompt.id}
-                    rows={2}
-                    value={selectedKey || ""}
-                    onChange={(e) => handleSelectOption(prompt.id, e.target.value)}
-                    placeholder="Type your reflection notes or key takeaways here..."
-                    className="mt-1 w-full rounded-xl border border-input bg-background p-3 text-sm font-medium text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-primary/40"
+                  <ChoiceOptionGroup
+                    label={prompt.question}
+                    value={selectedKey}
+                    onChange={(value) => handleSelectOption(prompt.id, value)}
+                    options={[
+                      {
+                        value: "agree",
+                        label: t("business.choiceAgree"),
+                        accessibleLabel: t("business.choiceAgree"),
+                      },
+                      {
+                        value: "unsure",
+                        label: t("business.choiceUnsure"),
+                        accessibleLabel: t("business.choiceUnsure"),
+                      },
+                      {
+                        value: "disagree",
+                        label: t("business.choiceDisagree"),
+                        accessibleLabel: t("business.choiceDisagree"),
+                      },
+                    ]}
+                    className="grid gap-2 sm:grid-cols-3"
                   />
                 )}
 

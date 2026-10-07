@@ -2,7 +2,6 @@ import { useState } from "react";
 import {
   ArrowDown,
   BookOpen,
-  Check,
   ChevronDown,
   Lightbulb,
   MessageSquareQuote,
@@ -10,6 +9,7 @@ import {
 } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import type { ParsedWarmup } from "../hadithLessonContent";
+import { ChoiceOptionGroup } from "../../../shared/ChoiceOptionGroup";
 
 interface Props {
   warmup: ParsedWarmup;
@@ -138,51 +138,18 @@ export function HadithWarmupStage({
               {warmup.question}
             </legend>
 
-            <div className="mt-4 grid gap-2.5">
-              {warmup.choices.map((choice, idx) => {
-                const isSelected = activeChoice === choice;
-                const optionLetter = String.fromCharCode(65 + idx);
-                return (
-                  <button
-                    key={choice}
-                    type="button"
-                    role="radio"
-                    aria-checked={isSelected}
-                    onClick={() => handleSelect(choice)}
-                    className={`group flex min-h-12 w-full items-center justify-between gap-3 rounded-2xl border-2 px-4 py-3 text-start text-sm font-bold transition-all active:scale-[0.99] motion-reduce:transition-none ${focusRing} ${
-                      isSelected
-                        ? "border-primary bg-primary/10 text-foreground shadow-wp-xs"
-                        : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-muted/40"
-                    }`}
-                  >
-                    <span className="flex items-center gap-3">
-                      <span
-                        className={`flex size-7 shrink-0 items-center justify-center rounded-lg text-xs font-black transition-colors ${
-                          isSelected
-                            ? "bg-primary text-primary-foreground"
-                            : "bg-muted text-muted-foreground group-hover:bg-primary/15 group-hover:text-primary"
-                        }`}
-                        aria-hidden
-                      >
-                        {optionLetter}
-                      </span>
-                      <span className="leading-snug">{choice}</span>
-                    </span>
-
-                    <span
-                      className={`flex size-5 shrink-0 items-center justify-center rounded-full border-2 transition-all ${
-                        isSelected
-                          ? "border-primary bg-primary text-primary-foreground"
-                          : "border-border"
-                      }`}
-                      aria-hidden
-                    >
-                      {isSelected && <Check className="size-3 stroke-[3]" />}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
+            <ChoiceOptionGroup
+              label={warmup.question}
+              value={activeChoice ?? undefined}
+              onChange={handleSelect}
+              options={warmup.choices.map((choice, idx) => ({
+                value: choice,
+                label: choice,
+                accessibleLabel: `${String.fromCharCode(65 + idx)}: ${choice}`,
+                prefix: String.fromCharCode(65 + idx),
+              }))}
+              className="mt-4 grid gap-2.5"
+            />
           </fieldset>
 
           {/* Immediate Pedagogical Feedback */}

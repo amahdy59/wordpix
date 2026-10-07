@@ -4,6 +4,7 @@ import type { ConversationUnit } from "../conversationTypes";
 import { useI18n } from "../../../../i18n";
 import { SpeechRecordCompare } from "../../../shared/SpeechRecordCompare";
 import { TaskChecklist } from "../../../shared/TaskChecklist";
+import { ChoiceOptionGroup } from "../../../shared/ChoiceOptionGroup";
 
 interface Props {
   unit: ConversationUnit;
@@ -49,8 +50,7 @@ export function ChallengeStage({
   const allTasksComplete = unit.speakingChallenge.tasks.every((_, index) =>
     completedTasks.has(index)
   );
-  const hasSubstantiveResponse = response.trim().length >= 20;
-  const canFinish = prerequisitesComplete && allTasksComplete && hasSubstantiveResponse;
+  const canFinish = prerequisitesComplete && allTasksComplete && response.length > 0;
 
   return (
     <div className="wp-container-reading flex flex-col gap-6 py-2">
@@ -98,17 +98,34 @@ export function ChallengeStage({
         <p id="challenge-response-help" className="mt-1 text-sm font-medium text-muted-foreground">
           {t("conversation.challengeResponseHelp")}
         </p>
-        <textarea
-          value={response}
-          onChange={(event) => setResponse(event.target.value.slice(0, 6000))}
-          onBlur={() => onSaveResponse(response)}
-          aria-describedby="challenge-response-help challenge-response-count"
-          className="mt-4 min-h-40 w-full resize-y rounded-2xl border border-border bg-background p-4 text-base leading-relaxed text-foreground shadow-inner focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-          placeholder={t("conversation.challengeResponsePlaceholder")}
-        />
-        <p id="challenge-response-count" className="mt-2 text-xs font-bold text-muted-foreground">
-          {t("conversation.challengeResponseCount", { count: response.trim().length })}
-        </p>
+        <div className="mt-4">
+          <ChoiceOptionGroup
+            label={t("conversation.challengeResponse")}
+            value={response}
+            onChange={(value) => {
+              setResponse(value);
+              onSaveResponse(value);
+            }}
+            options={[
+              {
+                value: "direct",
+                label: t("conversation.responseOptionDirect"),
+                accessibleLabel: t("conversation.responseOptionDirect"),
+              },
+              {
+                value: "clarify",
+                label: t("conversation.responseOptionClarify"),
+                accessibleLabel: t("conversation.responseOptionClarify"),
+              },
+              {
+                value: "compromise",
+                label: t("conversation.responseOptionCompromise"),
+                accessibleLabel: t("conversation.responseOptionCompromise"),
+              },
+            ]}
+            className="grid gap-2 sm:grid-cols-3"
+          />
+        </div>
       </section>
 
       <SpeechRecordCompare

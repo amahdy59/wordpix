@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MessageSquareText, ArrowRight, ArrowLeft, PenLine, Mic } from "lucide-react";
+import { MessageSquareText, ArrowRight, ArrowLeft, Mic } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
 import { useI18n } from "../../../../i18n";
 import { SpeechRecordCompare } from "../../../shared/SpeechRecordCompare";
@@ -13,10 +13,9 @@ interface Props {
   onPrev: () => void;
 }
 
-export function DiscussionStage({ unit, initialNotes, onSaveNotes, onNext, onPrev }: Props) {
+export function DiscussionStage({ unit, onNext, onPrev }: Props) {
   const { t } = useI18n();
   const [showArabic, setShowArabic] = useState(false);
-  const [notes, setNotes] = useState<string>(initialNotes);
   const [practicePromptIndex, setPracticePromptIndex] = useState(0);
   const hasArabicTranslation = unit.discussion.some((item) =>
     /[\u0600-\u06ff]/.test(item.promptAr ?? "")
@@ -93,26 +92,9 @@ export function DiscussionStage({ unit, initialNotes, onSaveNotes, onNext, onPre
         maxDurationSeconds={90}
       />
 
-      {/* Reflection Notes Scratchpad */}
-      <section
-        className="rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-wp-xs"
-        aria-labelledby="notes-scratchpad-title"
-      >
-        <div className="flex items-center gap-2">
-          <PenLine className="size-4 text-primary" aria-hidden />
-          <h2 id="notes-scratchpad-title" className="text-sm font-black text-foreground">
-            {t("conversation.notesLabel")}
-          </h2>
-        </div>
-        <textarea
-          aria-labelledby="notes-scratchpad-title"
-          value={notes}
-          onChange={(e) => setNotes(e.target.value)}
-          onBlur={() => onSaveNotes(notes)}
-          placeholder={t("conversation.notesPlaceholder")}
-          className="mt-3 w-full min-h-[100px] rounded-xl border border-border bg-background p-3.5 text-sm font-medium text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
-        />
-      </section>
+      <p className="rounded-2xl border border-primary/20 bg-primary/5 p-4 text-sm font-semibold text-foreground">
+        {t("conversation.discussionSpeakingHelp")}
+      </p>
 
       {/* Stage Navigation Footer */}
       <div className="mt-2 flex items-center justify-between">
@@ -128,7 +110,6 @@ export function DiscussionStage({ unit, initialNotes, onSaveNotes, onNext, onPre
         <button
           type="button"
           onClick={() => {
-            onSaveNotes(notes);
             onNext();
           }}
           className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"

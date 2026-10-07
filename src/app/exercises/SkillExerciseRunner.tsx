@@ -594,18 +594,9 @@ function TaskBody({
       </div>
 
       {task.freeText && (
-        <>
-          <label htmlFor="practice-entry" className="font-sans font-bold text-sm text-foreground">
-            {t("skillRunner.notesLabel")}
-          </label>
-          <textarea
-            id="practice-entry"
-            value={entry}
-            onChange={(e) => setEntry(e.target.value)}
-            rows={5}
-            className="w-full bg-wp-card border-2 border-border rounded-2xl p-4 font-sans text-foreground text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-          />
-        </>
+        <p className="rounded-xl border border-border bg-wp-card p-3 text-sm font-semibold text-foreground">
+          {t("skillRunner.cannotGradeOpen")}
+        </p>
       )}
     </div>
   );

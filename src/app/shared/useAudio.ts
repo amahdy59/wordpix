@@ -16,6 +16,8 @@ interface Options {
   volume?: number;
   /** Prefer a matching content-addressed clip bundled in public/audio. */
   preferLocal?: boolean;
+  /** Reports native media progress for synchronized transcript highlighting. */
+  onTimeUpdate?: (currentTime: number, duration: number) => void;
 }
 
 /** How long to wait for onstart before treating the utterance as failed. */
@@ -136,13 +138,16 @@ export function useAudio({
   preferLocal = false,
   onEnded,
   onError,
+  onTimeUpdate,
 }: Options = {}) {
   const endedRef = useRef(onEnded);
   const errorRef = useRef(onError);
+  const timeUpdateRef = useRef(onTimeUpdate);
   useEffect(() => {
     endedRef.current = onEnded;
     errorRef.current = onError;
-  }, [onEnded, onError]);
+    timeUpdateRef.current = onTimeUpdate;
+  }, [onEnded, onError, onTimeUpdate]);
   // The learner's Settings speech rate is the default; an explicit `rate` prop
   // still wins so individual drills can slow playback further.
   const { state } = useLearner();
@@ -452,6 +457,9 @@ export function useAudio({
             clearStall();
             publish("playing");
             settle(true);
+          };
+          audio.ontimeupdate = () => {
+            if (isCurrent()) timeUpdateRef.current?.(audio.currentTime, audio.duration || 0);
           };
           audio.onended = () => {
             if (!isCurrent()) return;

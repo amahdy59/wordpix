@@ -2,6 +2,7 @@ import { useState } from "react";
 import { MessageSquareText, ArrowRight, HelpCircle } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
+import { ChoiceOptionGroup } from "../../../shared/ChoiceOptionGroup";
 
 interface Props {
   unit: BusinessUnit;
@@ -55,23 +56,34 @@ export function BusinessDiscussionStage({ unit, savedNotes = {}, onSaveNote, onN
             key={prompt.id}
             className="flex flex-col gap-2.5 rounded-2xl border border-border bg-card p-5 shadow-wp-xs hover:border-primary/40 transition-colors"
           >
-            <label
-              htmlFor={prompt.id}
-              className="flex items-start gap-3 text-base font-bold text-foreground"
-            >
+            <div className="flex items-start gap-3 text-base font-bold text-foreground">
               <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/15 font-black text-xs text-primary">
                 {idx + 1}
               </span>
               <span className="leading-snug pt-0.5">{prompt.prompt}</span>
-            </label>
-
-            <textarea
-              id={prompt.id}
-              rows={2}
-              value={notes[prompt.id] || ""}
-              onChange={(e) => handleNoteChange(prompt.id, e.target.value)}
-              placeholder="Your perspective / notes on this question..."
-              className="mt-1 w-full rounded-xl border border-input bg-muted/20 p-3 text-sm font-medium text-foreground placeholder:text-muted-foreground/60 focus:bg-background focus:outline-none focus:ring-2 focus:ring-primary/40"
+            </div>
+            <ChoiceOptionGroup
+              label={prompt.prompt}
+              value={notes[prompt.id]}
+              onChange={(value) => handleNoteChange(prompt.id, value)}
+              options={[
+                {
+                  value: "agree",
+                  label: t("business.choiceAgree"),
+                  accessibleLabel: t("business.choiceAgree"),
+                },
+                {
+                  value: "unsure",
+                  label: t("business.choiceUnsure"),
+                  accessibleLabel: t("business.choiceUnsure"),
+                },
+                {
+                  value: "disagree",
+                  label: t("business.choiceDisagree"),
+                  accessibleLabel: t("business.choiceDisagree"),
+                },
+              ]}
+              className="grid gap-2 sm:grid-cols-3"
             />
           </div>
         ))}

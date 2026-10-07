@@ -74,9 +74,9 @@ try {
   await page.reload();
   await page.getByRole("button", { name: "Listen to Toilet", exact: true }).waitFor();
   await context.setOffline(true);
-  await page
-    .getByRole("combobox", { name: "Toilet learning status", exact: true })
-    .selectOption("review");
+  const learningStatus = page.getByRole("combobox", { name: "Toilet learning status", exact: true });
+  await learningStatus.click();
+  await page.getByRole("option", { name: /review/i, exact: true }).click();
   await play();
   await page
     .waitForFunction(() => window.audioEvidence.some((url) => url.startsWith("blob:")))
@@ -95,9 +95,7 @@ try {
   console.log("PASS: after reload, the app played the persisted clip offline through a blob URL.");
   await context.setOffline(false);
   await page.reload();
-  await expect(
-    page.getByRole("combobox", { name: "Toilet learning status", exact: true })
-  ).toHaveValue("review");
+  await expect(learningStatus).toContainText(/review/i);
   console.log("PASS: a guest study status saved offline survived reconnection and reload.");
 } finally {
   await browser.close();

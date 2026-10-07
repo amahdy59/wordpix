@@ -329,7 +329,7 @@ function RewriteExerciseComponent({ exercises }: { exercises: RewriteExercise[] 
                     : "border-destructive bg-destructive/10"
                   : "border-border"
               }`}
-              placeholder="Type your rewritten sentence…"
+              placeholder={t("learningMaterials.rewritePlaceholder")}
             />
             {checked && !isCorrect && (
               <p className="text-wp-green text-xs sm:text-sm font-bold mt-2">

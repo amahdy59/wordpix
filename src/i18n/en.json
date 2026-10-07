@@ -635,7 +635,8 @@
     "suggestedWords": "Suggested words:",
     "selfAssessment": "Self-Assessment & Can-Do Checklist",
     "selfAssessmentDesc": "Rate your confidence: 1 = Recognize · 2 = Can use · 3 = Can explain",
-    "selectWord": "Select a word…"
+    "selectWord": "Select a word…",
+    "rewritePlaceholder": "Rewrite the sentence using the hint…"
   },
   "study": {
     "backToUnit": "Back to {unit}",
@@ -1815,7 +1816,10 @@
     "completeUnit": "Complete Unit",
     "backToUnits": "Back to All Units",
     "requirementsMet": "All requirements are complete. You can finish this unit.",
-    "requirementsPending": "Complete the earlier stages, write your response, and check every challenge task before finishing."
+    "requirementsPending": "Complete the earlier stages, write your response, and check every challenge task before finishing.",
+    "responseOptionDirect": "Use a direct answer",
+    "responseOptionClarify": "Ask a clarifying question",
+    "responseOptionCompromise": "Offer a balanced compromise"
   },
   "business": {
     "title": "Beyond Business English",
@@ -1912,7 +1916,8 @@
       "beginLessonWarmup": "Begin Lesson Warm-Up",
       "remainingPrompts": "Remaining Prompts ({count})",
       "statusActive": "Active",
-      "statusQueued": "Queued"
+      "statusQueued": "Queued",
+      "choicesLabel": "Recall choices"
     },
     "warmup": {
       "stageTag": "Stage 1 · Warm-Up Discussions",
@@ -1998,7 +2003,12 @@
       "selfRatingHeading": "Spaced Repetition & Self-Rating",
       "selfRatingPrompt": "Rate your confidence in applying this unit's language at work:",
       "proceedToNextUnit": "Proceed to Next Unit"
-    }
+    },
+    "choiceAgree": "Agree",
+    "choiceUnsure": "Not sure",
+    "choiceDisagree": "Disagree",
+    "searchPlaceholder": "Search units, topics, or skills…",
+    "vocabularySearchPlaceholder": "Search terms, definitions, or examples…"
   },
   "wordInspector": {
     "pronounce": "Pronounce {word}"
@@ -2042,5 +2052,8 @@
     "pageOf": "Page {current} of {total}",
     "previousPage": "Previous",
     "nextPage": "Next Questions"
+  },
+  "listening": {
+    "missingWordPlaceholder": "Type the missing word…"
   }
 }

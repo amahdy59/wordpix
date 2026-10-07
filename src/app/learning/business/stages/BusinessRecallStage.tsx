@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Zap, HelpCircle, CheckCircle2, ArrowRight, Star, RotateCcw } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import type { BusinessUnit, BusinessRecallPrompt } from "../businessTypes";
+import { ChoiceOptionGroup } from "../../../shared/ChoiceOptionGroup";
 
 interface Props {
   unit: BusinessUnit;
@@ -169,47 +170,24 @@ export function BusinessRecallStage({ unit, onNext, onRecordSrsConfidence }: Pro
           <div className="mt-6 flex flex-col gap-4">
             {/* Multiple Choice Mode */}
             {currentPrompt.options && currentPrompt.options.length > 0 ? (
-              <div
-                className="grid grid-cols-1 sm:grid-cols-2 gap-3"
-                role="radiogroup"
-                aria-label="Recall choices"
-              >
-                {currentPrompt.options.map((opt) => {
-                  const isSelected = selectedOption === opt;
-                  const isCorrect =
-                    opt.toLowerCase() === currentPrompt.correctAnswer?.toLowerCase();
-                  let style = "border-border bg-muted/20 text-foreground hover:border-primary/40";
-                  if (isSelected && !isSubmitted) {
-                    style = "border-primary bg-primary/10 text-primary font-bold shadow-wp-xs";
-                  } else if (isSubmitted) {
-                    if (isCorrect) {
-                      style = "border-accent bg-accent/15 text-accent font-black";
-                    } else if (isSelected) {
-                      style = "border-destructive bg-destructive/15 text-destructive";
-                    } else {
-                      style = "border-border bg-muted/10 opacity-60 text-muted-foreground";
-                    }
-                  }
-
-                  return (
-                    <button
-                      key={opt}
-                      type="button"
-                      role="radio"
-                      aria-checked={isSelected}
-                      disabled={isSubmitted}
-                      onClick={() => {
-                        setSelectedOption(opt);
-                        setTypedAnswer(opt);
-                      }}
-                      className={`flex min-h-[44px] items-center gap-3 rounded-2xl border p-4 text-start transition-all ${style}`}
-                    >
-                      <span className="size-2.5 rounded-full bg-current shrink-0" aria-hidden />
-                      <span className="text-base font-semibold">{opt}</span>
-                    </button>
-                  );
-                })}
-              </div>
+              <ChoiceOptionGroup
+                label={t("business.recall.choicesLabel")}
+                value={selectedOption ?? undefined}
+                onChange={(value) => {
+                  setSelectedOption(value);
+                  setTypedAnswer(value);
+                }}
+                disabled={isSubmitted}
+                correctValue={currentPrompt.correctAnswer}
+                revealFeedback={isSubmitted}
+                className="grid gap-3 sm:grid-cols-2"
+                options={currentPrompt.options.map((option, index) => ({
+                  value: option,
+                  label: option,
+                  accessibleLabel: `${index + 1}: ${option}`,
+                  prefix: String(index + 1),
+                }))}
+              />
             ) : (
               /* Open Text Input Mode */
               <div className="flex flex-col gap-2">

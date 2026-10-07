@@ -116,7 +116,7 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
             onChange={(e) => setTyped(e.target.value)}
             disabled={result !== null}
             autoComplete="off"
-            placeholder="Type missing word..."
+            placeholder={t("listening.missingWordPlaceholder")}
             className="w-full min-h-[52px] bg-background border border-border rounded-xl p-4 font-sans font-bold text-foreground text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-60"
           />
 

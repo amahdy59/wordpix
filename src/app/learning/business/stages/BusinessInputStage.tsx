@@ -162,16 +162,18 @@ export function BusinessInputStage({ unit, onNext }: Props) {
             const speakerIndex = speakers.indexOf(line.speaker.trim());
             const isAltSpeaker = speakerIndex % 2 === 1;
 
+            const isPlaying = playingIdx === idx && audio.isPlaying;
             return (
               <div
                 key={idx}
+                aria-current={isPlaying ? "true" : undefined}
                 className={`flex flex-col gap-2 p-4 sm:p-5 rounded-2xl transition-all ${
                   isNarrator
                     ? "bg-muted/30 border border-dashed border-border text-muted-foreground"
                     : isAltSpeaker
                       ? "bg-secondary/40 border border-border hover:border-primary/40"
                       : "bg-muted/50 border border-border hover:border-primary/40"
-                }`}
+                } ${isPlaying ? "ring-2 ring-primary border-primary bg-primary/10 shadow-wp-sm" : ""}`}
               >
                 {!isNarrator && (
                   <div className="flex items-center justify-between gap-2">

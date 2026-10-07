@@ -29,7 +29,7 @@
     "content:context:audit": "vitest run src/app/__tests__/contextual_quality.test.ts --reporter=verbose",
     "content:usage:manifests": "node scripts/build_usage_authoring_manifests.mjs",
     "content:usage:manifests:check": "node scripts/build_usage_authoring_manifests.mjs --check",
-    "content:usage:relevance": "vite-node scripts/audit_usage_relevance.ts",
+    "content:usage:relevance": "tsx scripts/audit_usage_relevance.ts",
     "content:usage:diversity": "node scripts/audit_usage_sentence_diversity.mjs",
     "content:usage:workbook:check": "node output/usage-authoring/verify_all_lesson_packages.mjs && node output/usage-authoring/verify_approvals.mjs",
     "content:usage:export-approved": "node output/usage-authoring/export_approved_usage_phrases.mjs",

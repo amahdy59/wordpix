@@ -13,6 +13,7 @@ import { resolveAssetUrl } from "../../utils/assetUrl";
 import { InteractiveText } from "./study/InteractiveText";
 import { useI18n } from "../context/I18nContext";
 import { QuizQuestionCard } from "../shared/QuizQuestionCard";
+import { activeTimedTextSegment, buildTimedTextSegments } from "../shared/timedText";
 
 interface Props {
   unitId?: string;
@@ -244,8 +245,17 @@ export function PassageSection({
 }) {
   const { t } = useI18n();
   const passage = materials.passage;
-  const { speak, stop, isPlaying } = useAudio({ lang: "en-US", rate: 0.85 });
+  const [audioProgress, setAudioProgress] = useState(0);
+  const segments = useMemo(() => buildTimedTextSegments(passage?.text ?? ""), [passage?.text]);
+  const { speak, stop, isPlaying } = useAudio({
+    lang: "en-US",
+    rate: 0.85,
+    onTimeUpdate: (currentTime, duration) =>
+      setAudioProgress(duration > 0 ? currentTime / duration : 0),
+    onEnded: () => setAudioProgress(0),
+  });
   if (!passage) return null;
+  const activeSegment = isPlaying ? activeTimedTextSegment(segments, audioProgress) : -1;
   return (
     <div className="space-y-6">
       <section className={CARD} aria-labelledby="passage-heading">
@@ -262,7 +272,10 @@ export function PassageSection({
             type="button"
             onClick={() => {
               if (isPlaying) stop();
-              else speak(passage.text);
+              else {
+                setAudioProgress(0);
+                speak(passage.text);
+              }
             }}
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-secondary text-primary hover:bg-primary hover:text-primary-foreground font-bold text-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
             aria-label={
@@ -282,11 +295,29 @@ export function PassageSection({
           lang="en"
           dir="ltr"
         >
-          {unitId && onInspectWord ? (
-            <InteractiveText text={passage.text} unitId={unitId} onInspectWord={onInspectWord} />
-          ) : (
-            <p>{passage.text}</p>
-          )}
+          <p>
+            {segments.map((segment, index) => (
+              <span
+                key={`${segment.startRatio}-${segment.text}`}
+                className={
+                  index === activeSegment
+                    ? "rounded-md bg-primary/15 px-0.5 transition-colors"
+                    : undefined
+                }
+              >
+                {unitId && onInspectWord ? (
+                  <InteractiveText
+                    text={segment.text}
+                    unitId={unitId}
+                    onInspectWord={onInspectWord}
+                  />
+                ) : (
+                  segment.text
+                )}
+                {index < segments.length - 1 ? " " : ""}
+              </span>
+            ))}
+          </p>
         </div>
       </section>
 

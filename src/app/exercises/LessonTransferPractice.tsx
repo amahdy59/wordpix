@@ -25,10 +25,7 @@ export function LessonTransferPractice({ usage }: Props) {
     () => parseSpacedReview(usage.spacedReview),
     [usage.spacedReview]
   );
-  const [responses, setResponses] = useState<Record<number, string>>({});
-  const [revealed, setRevealed] = useState<Record<number, boolean>>({});
-  const [reviewResponse, setReviewResponse] = useState("");
-  const [reviewChecked, setReviewChecked] = useState(false);
+  const [responses, setResponses] = useState<Record<string, boolean>>({});
 
   return (
     <section className="space-y-4" aria-labelledby="lesson-transfer-heading">
@@ -56,34 +53,18 @@ export function LessonTransferPractice({ usage }: Props) {
               key={`${task.prompt}-${index}`}
               className="rounded-2xl border border-border bg-wp-card p-4"
             >
-              <label
-                htmlFor={`transfer-response-${index}`}
-                className="block font-sans text-sm font-bold leading-relaxed text-foreground"
-              >
+              <p className="block font-sans text-sm font-bold leading-relaxed text-foreground">
                 {task.prompt.replace(/^Use it:\s*/iu, "")}
-              </label>
-              <textarea
-                id={`transfer-response-${index}`}
-                value={responses[index] ?? ""}
-                onChange={(event) =>
-                  setResponses((current) => ({ ...current, [index]: event.target.value }))
-                }
-                rows={3}
-                dir="ltr"
-                lang="en"
-                placeholder={t("story.transferResponsePlaceholder")}
-                className="mt-3 w-full rounded-xl border-2 border-border bg-background p-3 font-sans text-base text-foreground outline-none focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-primary/30"
-              />
+              </p>
               <button
                 type="button"
-                disabled={!responses[index]?.trim()}
-                onClick={() => setRevealed((current) => ({ ...current, [index]: true }))}
+                onClick={() => setResponses((current) => ({ ...current, [index]: true }))}
                 className="mt-3 inline-flex min-h-11 items-center gap-2 rounded-xl bg-primary px-4 py-2 font-sans text-sm font-bold text-primary-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 <CheckCircle2 className="size-4" aria-hidden />
                 {t("story.compareResponse")}
               </button>
-              {revealed[index] && (
+              {responses[index] && (
                 <div className="mt-3 rounded-xl border border-feedback-success/40 bg-feedback-success-surface p-3 text-sm text-feedback-success-foreground">
                   <span className="font-bold">{t("story.modelResponseLabel")}</span>{" "}
                   <span dir="ltr" lang="en">
@@ -129,35 +110,15 @@ export function LessonTransferPractice({ usage }: Props) {
           <p className="mt-4 rounded-xl border border-primary/20 bg-primary/5 p-3 text-sm font-semibold text-foreground">
             {t("story.reviewTransferPrompt", { current: usage.targetWordsEnglish[0] })}
           </p>
-          <label
-            htmlFor="contextual-review-response"
-            className="mt-4 block font-sans text-sm font-bold text-foreground"
-          >
-            {t("story.reviewResponseLabel")}
-          </label>
-          <textarea
-            id="contextual-review-response"
-            value={reviewResponse}
-            onChange={(event) => {
-              setReviewResponse(event.target.value);
-              setReviewChecked(false);
-            }}
-            rows={3}
-            dir="ltr"
-            lang="en"
-            placeholder={t("story.reviewResponsePlaceholder")}
-            className="mt-2 w-full rounded-xl border-2 border-border bg-background p-3 font-sans text-base text-foreground outline-none focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-primary/30"
-          />
           <button
             type="button"
-            disabled={!reviewResponse.trim()}
-            onClick={() => setReviewChecked(true)}
+            onClick={() => setResponses((current) => ({ ...current, review: true }))}
             className="mt-3 inline-flex min-h-11 items-center gap-2 rounded-xl bg-primary px-4 py-2 font-sans text-sm font-bold text-primary-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <CheckCircle2 className="size-4" aria-hidden />
             {t("story.checkTransferSentence")}
           </button>
-          {reviewChecked && (
+          {responses.review && (
             <div
               role="status"
               className="mt-3 rounded-xl border border-feedback-success/40 bg-feedback-success-surface p-3 text-sm text-feedback-success-foreground"

@@ -34,13 +34,13 @@ export const AudioButton = memo(function AudioButton({
 }: Props) {
   const isActive = isPlaying || isLoading;
   const stateClasses = isError
-    ? "bg-muted border-border text-muted-foreground opacity-60 cursor-not-allowed"
+    ? "bg-secondary border-feedback-error-border text-feedback-error-foreground hover:bg-feedback-error-surface active:scale-95"
     : isActive
       ? "bg-primary border-primary text-primary-foreground shadow-wp-sm"
       : "bg-secondary border-border text-primary hover:bg-primary hover:text-primary-foreground active:scale-95";
 
   const computedLabel = isError
-    ? `${label} (audio unavailable)`
+    ? `${label} (retry audio)`
     : isLoading
       ? `${label} (loading audio)`
       : isPlaying
@@ -50,11 +50,11 @@ export const AudioButton = memo(function AudioButton({
   return (
     <button
       type="button"
-      onClick={isError ? undefined : onPlay}
+      onClick={onPlay}
       aria-label={computedLabel}
       aria-pressed={isPlaying}
       aria-busy={isLoading}
-      disabled={isError}
+      disabled={isLoading}
       className={[
         "flex items-center justify-center shrink-0 min-h-[44px] min-w-[44px]",
         "border font-sans",

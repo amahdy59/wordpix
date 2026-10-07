@@ -291,7 +291,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                 type="search"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search units, topics, or skills..."
+                placeholder={t("business.searchPlaceholder")}
                 aria-label="Search Business English units"
                 className="min-h-11 w-full rounded-2xl border border-border bg-card py-2.5 ps-10 pe-4 text-sm font-medium text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 shadow-wp-xs"
               />

@@ -635,7 +635,8 @@
     "suggestedWords": "الكلمات المقترحة:",
     "selfAssessment": "التقييم الذاتي وقائمة الكفاءات",
     "selfAssessmentDesc": "قيّم مستوى ثقتك: 1 = أتعرف عليها · 2 = أستطيع استخدامها · 3 = أستطيع شرحها",
-    "selectWord": "اختر كلمة…"
+    "selectWord": "اختر كلمة…",
+    "rewritePlaceholder": "أعد كتابة الجملة باستخدام التلميح…"
   },
   "study": {
     "backToUnit": "العودة إلى {unit}",
@@ -1815,7 +1816,10 @@
     "completeUnit": "إكمال الوحدة",
     "backToUnits": "العودة إلى كل الوحدات",
     "requirementsMet": "اكتملت كل المتطلبات. يمكنك إنهاء الوحدة.",
-    "requirementsPending": "أكمل المراحل السابقة، واكتب إجابتك، وحدد كل مهام التحدي قبل الإنهاء."
+    "requirementsPending": "أكمل المراحل السابقة، واكتب إجابتك، وحدد كل مهام التحدي قبل الإنهاء.",
+    "responseOptionDirect": "استخدم إجابة مباشرة",
+    "responseOptionClarify": "اطرح سؤالًا للتوضيح",
+    "responseOptionCompromise": "اقترح حلًا متوازنًا"
   },
   "business": {
     "title": "الإنجليزية المهنية المتقدمة",
@@ -1912,7 +1916,8 @@
       "beginLessonWarmup": "بدء تهيئة الدرس",
       "remainingPrompts": "الأسئلة المتبقية ({count})",
       "statusActive": "نشط",
-      "statusQueued": "في الانتظار"
+      "statusQueued": "في الانتظار",
+      "choicesLabel": "خيارات الاسترجاع"
     },
     "warmup": {
       "stageTag": "المرحلة 1 · مناقشات التهيئة",
@@ -1998,7 +2003,12 @@
       "selfRatingHeading": "التكرار المتباعد والتقييم الذاتي",
       "selfRatingPrompt": "قيّم مدى ثقتك في تطبيق لغة هذه الوحدة في العمل:",
       "proceedToNextUnit": "الانتقال إلى الوحدة التالية"
-    }
+    },
+    "choiceAgree": "أوافق",
+    "choiceUnsure": "لست متأكدًا",
+    "choiceDisagree": "لا أوافق",
+    "searchPlaceholder": "ابحث عن الوحدات أو الموضوعات أو المهارات…",
+    "vocabularySearchPlaceholder": "ابحث عن المصطلحات أو التعريفات أو الأمثلة…"
   },
   "wordInspector": {
     "pronounce": "انطق {word}"
@@ -2042,5 +2052,8 @@
     "pageOf": "الصفحة {current} من {total}",
     "previousPage": "السابق",
     "nextPage": "الأسئلة التالية"
+  },
+  "listening": {
+    "missingWordPlaceholder": "اكتب الكلمة الناقصة…"
   }
 }

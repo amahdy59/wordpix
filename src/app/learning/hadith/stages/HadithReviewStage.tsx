@@ -2,6 +2,7 @@ import { CheckCircle2, ChevronDown, HelpCircle, Lightbulb, Target } from "lucide
 import { useI18n } from "../../../../i18n";
 import { getHadithReviewIntervalDays, type HadithConfidence } from "../hadithProgress";
 import type { ParsedReviewItem } from "../hadithLessonContent";
+import { ChoiceOptionGroup } from "../../../shared/ChoiceOptionGroup";
 
 interface Props {
   reviewItems: ParsedReviewItem[];
@@ -117,44 +118,30 @@ export function HadithReviewStage({
 
           <p className="mt-1 text-xs text-muted-foreground">{t("hadith.confidenceDescription")}</p>
 
-          <div className="mt-4 grid gap-3 sm:grid-cols-3">
-            {(["again", "supported", "ready"] as const).map((value) => {
-              const isSelected = confidence === value;
+          <ChoiceOptionGroup
+            label={t("hadith.confidenceHeading")}
+            value={confidence ?? undefined}
+            onChange={onSelectConfidence}
+            className="mt-4 grid gap-3 sm:grid-cols-3"
+            options={(["again", "supported", "ready"] as const).map((value) => {
               const reviewDays = getHadithReviewIntervalDays(practiceScore, value);
-              return (
-                <button
-                  key={value}
-                  type="button"
-                  role="radio"
-                  aria-checked={isSelected}
-                  onClick={() => onSelectConfidence(value)}
-                  className={`flex min-h-12 items-center justify-center rounded-2xl border-2 px-4 py-3 text-center text-sm font-black transition-all active:scale-[0.98] ${focusRing} ${
-                    isSelected
-                      ? "border-primary bg-primary text-primary-foreground shadow-sm"
-                      : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-muted/40"
-                  }`}
-                >
-                  <span>
-                    <span className="block">
-                      {t(`hadith.confidence.${value}`) ||
-                        (value === "again"
-                          ? "I need more practice"
-                          : value === "supported"
-                            ? "I can continue with support"
-                            : "I feel ready")}
-                    </span>
-                    <span
-                      className={`mt-1 block text-xs ${isSelected ? "text-primary-foreground/90" : "text-muted-foreground"}`}
-                    >
-                      {reviewDays === 1
-                        ? t("hadith.reviewTomorrow")
-                        : t("hadith.reviewInDays", { days: reviewDays })}
-                    </span>
-                  </span>
-                </button>
-              );
+              return {
+                value,
+                label:
+                  t(`hadith.confidence.${value}`) ||
+                  (value === "again"
+                    ? "I need more practice"
+                    : value === "supported"
+                      ? "I can continue with support"
+                      : "I feel ready"),
+                accessibleLabel: t(`hadith.confidence.${value}`) || value,
+                secondary:
+                  reviewDays === 1
+                    ? t("hadith.reviewTomorrow")
+                    : t("hadith.reviewInDays", { days: reviewDays }),
+              };
             })}
-          </div>
+          />
 
           {confidenceError && (
             <p className="mt-3 text-sm font-bold text-feedback-error-foreground" role="alert">

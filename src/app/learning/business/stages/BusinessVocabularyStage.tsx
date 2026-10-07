@@ -99,7 +99,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
               type="search"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search terms, definitions, or examples..."
+              placeholder={t("business.vocabularySearchPlaceholder")}
               aria-label={t("business.vocabStage.searchAria")}
               className="w-full min-h-[44px] rounded-xl border border-border bg-background ps-9 pe-4 text-xs sm:text-sm font-medium text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary transition-all"
             />
