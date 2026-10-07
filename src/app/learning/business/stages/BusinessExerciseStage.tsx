@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { HelpCircle, ArrowRight } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
@@ -14,7 +13,6 @@ interface Props {
 
 export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, onNext }: Props) {
   const { t } = useI18n();
-  const [isCompleted, setIsCompleted] = useState(savedScore !== undefined);
 
   // Map BusinessExercise (A/B/C options) → unified QuizQuestion shape
   const questions: QuizQuestion[] = unit.exercises.map((ex) => ({
@@ -32,7 +30,6 @@ export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, o
   }));
 
   const handleComplete = (result: QuizResult) => {
-    setIsCompleted(true);
     onCompleteExercises(result.correct);
   };
 
@@ -75,18 +72,6 @@ export function BusinessExerciseStage({ unit, savedScore, onCompleteExercises, o
       />
 
       {/* Proceed button (shown if previously completed and navigating back) */}
-      {isCompleted && (
-        <div className="flex justify-end">
-          <button
-            type="button"
-            onClick={onNext}
-            className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-bold text-primary-foreground shadow-wp-sm hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            <span>{t("business.exercises.proceedToDiscussion")}</span>
-            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-          </button>
-        </div>
-      )}
     </div>
   );
 }

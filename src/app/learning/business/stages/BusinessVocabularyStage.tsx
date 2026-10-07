@@ -87,9 +87,6 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
           <h2 id="vocab-stage-heading" className="text-xl sm:text-2xl font-black text-foreground">
             {t("business.vocabStage.heading")}
           </h2>
-          <p className="mt-1 text-sm text-muted-foreground font-medium">
-            {t("business.vocabStage.subtitle")}
-          </p>
         </div>
 
         {/* Filter bar: Search input + Category Filter Chips */}

@@ -1,3 +1,4 @@
+import { HelpDisclosure } from "../../shared/HelpDisclosure";
 import type { CourseUnit } from "../../data/lessons";
 import type { StudyNode, UnitStudyProgress, StudyArea } from "./types";
 import type { Action } from "../../types";
@@ -29,26 +30,13 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-const AREA_META: Record<StudyArea, { label: string; description: string; icon: typeof BookOpen }> =
-  {
-    learn: { label: "Learn", description: "Build core topic vocabulary", icon: BookOpen },
-    use: {
-      label: "Use in Context",
-      description: "Authentic reading, dialogue & expressions",
-      icon: MessageCircleMore,
-    },
-    practice: {
-      label: "Practice",
-      description: "Test recall across varied exercises",
-      icon: Dumbbell,
-    },
-    review: { label: "Review", description: "Spaced repetition & confidence check", icon: Check },
-    reference: {
-      label: "Reference Toolkit",
-      description: "Lookup tables, pronunciation & grammar",
-      icon: LibraryBig,
-    },
-  };
+const AREA_META: Record<StudyArea, { icon: typeof BookOpen }> = {
+  learn: { icon: BookOpen },
+  use: { icon: MessageCircleMore },
+  practice: { icon: Dumbbell },
+  review: { icon: Check },
+  reference: { icon: LibraryBig },
+};
 
 export function StudyHome({
   unit,
@@ -99,55 +87,54 @@ export function StudyHome({
           <h1 className="text-2xl sm:text-4xl font-extrabold text-foreground mt-2 tracking-tight">
             {unit.name}
           </h1>
-          <p className="text-muted-foreground text-sm sm:text-base mt-1.5 max-w-2xl leading-relaxed">
-            {t("study.unitDescription", { unit: unit.name.toLowerCase() })}
-          </p>
         </div>
 
-        <section
-          aria-labelledby="unit-outcome-heading"
-          className="rounded-2xl sm:rounded-3xl border border-primary/30 bg-primary/5 p-4 sm:p-6"
-        >
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-full bg-primary px-3 py-1 text-xs font-black text-primary-foreground">
-              {curriculumDesign.reviewStatus === "authored"
-                ? `CEFR ${curriculumDesign.cefr}`
-                : t("study.suggestedLevel", { level: curriculumDesign.cefr })}
-            </span>
-            {curriculumDesign.reviewStatus === "authored" && (
-              <span className="rounded-full border border-primary/30 bg-card px-3 py-1 text-xs font-bold text-foreground">
-                GSE {curriculumDesign.gseRange[0]}–{curriculumDesign.gseRange[1]}
+        <HelpDisclosure label={t("help.aboutLesson")}>
+          <section
+            aria-labelledby="unit-outcome-heading"
+            className="rounded-2xl sm:rounded-3xl border border-primary/30 bg-primary/5 p-4 sm:p-6"
+          >
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="rounded-full bg-primary px-3 py-1 text-xs font-black text-primary-foreground">
+                {curriculumDesign.reviewStatus === "authored"
+                  ? `CEFR ${curriculumDesign.cefr}`
+                  : t("study.suggestedLevel", { level: curriculumDesign.cefr })}
               </span>
+              {curriculumDesign.reviewStatus === "authored" && (
+                <span className="rounded-full border border-primary/30 bg-card px-3 py-1 text-xs font-bold text-foreground">
+                  GSE {curriculumDesign.gseRange[0]}–{curriculumDesign.gseRange[1]}
+                </span>
+              )}
+              <span className="rounded-full border border-border bg-card px-3 py-1 text-xs font-bold capitalize text-muted-foreground">
+                {t("study.pathwayType", { type: curriculumDesign.archetype })}
+              </span>
+            </div>
+            {curriculumDesign.reviewStatus === "provisional" && (
+              <p className="mt-3 text-sm text-muted-foreground">{t("study.provisionalUnit")}</p>
             )}
-            <span className="rounded-full border border-border bg-card px-3 py-1 text-xs font-bold capitalize text-muted-foreground">
-              {t("study.pathwayType", { type: curriculumDesign.archetype })}
-            </span>
-          </div>
-          {curriculumDesign.reviewStatus === "provisional" && (
-            <p className="mt-3 text-sm text-muted-foreground">{t("study.provisionalUnit")}</p>
-          )}
-          <h2 id="unit-outcome-heading" className="mt-4 text-lg font-black text-foreground">
-            {t("study.outcomeHeading")}
-          </h2>
-          <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-            {curriculumDesign.outcome}
-          </p>
-          <ul className="mt-4 grid gap-2 sm:grid-cols-2" aria-label="Unit can-do goals">
-            {curriculumDesign.canDo.map((goal) => (
-              <li
-                key={goal}
-                className="flex items-start gap-2 text-sm leading-relaxed text-foreground"
-              >
-                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-wp-green" aria-hidden />
-                <span>{goal}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-4 border-t border-primary/20 pt-3 text-sm font-semibold text-foreground">
-            <span className="text-primary">{t("study.finalMissionLabel")} </span>
-            {curriculumDesign.finalTask}
-          </p>
-        </section>
+            <h2 id="unit-outcome-heading" className="mt-4 text-lg font-black text-foreground">
+              {t("study.outcomeHeading")}
+            </h2>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              {curriculumDesign.outcome}
+            </p>
+            <ul className="mt-4 grid gap-2 sm:grid-cols-2" aria-label="Unit can-do goals">
+              {curriculumDesign.canDo.map((goal) => (
+                <li
+                  key={goal}
+                  className="flex items-start gap-2 text-sm leading-relaxed text-foreground"
+                >
+                  <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-wp-green" aria-hidden />
+                  <span>{goal}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 border-t border-primary/20 pt-3 text-sm font-semibold text-foreground">
+              <span className="text-primary">{t("study.finalMissionLabel")} </span>
+              {curriculumDesign.finalTask}
+            </p>
+          </section>
+        </HelpDisclosure>
 
         {unit.heroImage && (
           <div className="rounded-2xl sm:rounded-3xl overflow-hidden bg-muted h-36 sm:h-52 relative border border-border/60 shadow-xs">
@@ -211,13 +198,6 @@ export function StudyHome({
           <h2 className="text-lg sm:text-xl font-bold text-foreground truncate">
             {continueNode ? continueNode.title : t("study.startLearning")}
           </h2>
-          <p className="text-xs sm:text-sm text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">
-            {continueNode?.description
-              ? continueNode.description
-              : continueNode?.estimatedMinutes
-                ? t("study.selfPacedActivity", { minutes: continueNode.estimatedMinutes })
-                : t("study.selfPacedModule")}
-          </p>
         </div>
         <div className="w-full sm:w-auto shrink-0">
           <PrimaryButton onClick={onContinue} label={t("action.continue")} />
@@ -259,8 +239,9 @@ export function StudyHome({
                       <Icon className="size-5" aria-hidden />
                     </span>
                     <div className="min-w-0">
-                      <h3 className="font-bold text-lg text-foreground truncate">{meta.label}</h3>
-                      <p className="text-xs text-muted-foreground truncate">{meta.description}</p>
+                      <h3 className="font-bold text-lg text-foreground truncate">
+                        {t(`help.studyAreas.${area}`)}
+                      </h3>
                     </div>
                   </div>
                   <span className="text-xs font-bold text-muted-foreground bg-secondary/80 px-3 py-1 rounded-full shrink-0">
@@ -302,11 +283,6 @@ export function StudyHome({
                                   {node.isCore === false ? " · Optional" : ""}
                                 </span>
                               )}
-                              {node.description && (
-                                <span className="text-xs text-muted-foreground block truncate">
-                                  {node.description}
-                                </span>
-                              )}
                             </div>
                           </div>
                           {node.estimatedMinutes && (
@@ -343,9 +319,6 @@ export function StudyHome({
               <h3 className="font-bold text-lg text-foreground mt-0.5 truncate">
                 {t("study.referenceGuideTitle")}
               </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground mt-0.5 leading-relaxed">
-                {t("study.referenceGuideDesc")}
-              </p>
             </div>
           </div>
           <span className="inline-flex items-center gap-1.5 text-sm font-bold text-primary px-4 py-2 rounded-full bg-primary/10 shrink-0 ms-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors min-h-[44px]">

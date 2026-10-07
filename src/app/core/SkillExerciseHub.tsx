@@ -1,3 +1,4 @@
+import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useMemo, useState } from "react";
 import type { Action, SkillCategory } from "../types";
 import {
@@ -157,8 +158,6 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                     overdue: overdueList.length,
                     due: dueTodayList.length,
                   })}
-                  {" — "}
-                  {t("masteryReview.retentionTip")}
                 </p>
               </div>
             </div>
@@ -274,7 +273,6 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
             </span>
           }
           title={t("skillHub.title")}
-          subtitle={t("skillHub.subtitle")}
         />
 
         {/* Category Filters */}
@@ -314,55 +312,61 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
         {/* Exercises Grid */}
         <div className="grid grid-cols-1 gap-3.5 md:grid-cols-2 xl:grid-cols-3">
           {categoryExercises.map((ex) => (
-            <button
-              key={ex.id}
-              type="button"
-              onClick={() => dispatch({ type: "OPEN_SKILL_EXERCISE", exerciseId: ex.id })}
-              className="min-h-[44px] bg-wp-card border border-border hover:border-primary/60 hover:bg-primary/5 rounded-2xl p-5 text-start flex flex-col justify-between gap-3 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all group shadow-wp-xs hover:shadow-wp-sm cursor-pointer"
-            >
-              <div>
-                <div className="flex items-center justify-between gap-2">
-                  <h3 className="font-sans font-bold text-foreground text-base group-hover:text-primary transition-colors leading-tight">
-                    {t(`skillHub.exercises.${ex.id}.title`)}
-                  </h3>
-                  <span className="shrink-0 rounded-full bg-secondary px-2 py-0.5 font-sans text-[10px] font-extrabold text-primary border border-primary/20">
-                    {`${ex.minimumLevel ?? "A1"}+`}
-                  </span>
-                </div>
-                <p className="font-sans text-sm text-muted-foreground leading-relaxed mt-1.5">
-                  {t(`skillHub.exercises.${ex.id}.description`)}
-                </p>
-                <div className="flex items-center gap-1.5 flex-wrap mt-3">
-                  {ex.requiresMic && (
-                    <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 font-sans text-[10px] font-bold text-primary border border-primary/20">
-                      <Mic className="size-3" aria-hidden="true" />
-                      <span>
-                        {t("skillHub.micRequired", { defaultValue: "Microphone required" })}
-                      </span>
+            <article key={ex.id} className="relative">
+              <button
+                type="button"
+                onClick={() => dispatch({ type: "OPEN_SKILL_EXERCISE", exerciseId: ex.id })}
+                className="h-full w-full min-h-[44px] bg-wp-card border border-border hover:border-primary/60 hover:bg-primary/5 rounded-2xl p-5 pe-16 text-start flex flex-col justify-between gap-3 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all group shadow-wp-xs hover:shadow-wp-sm cursor-pointer"
+              >
+                <div>
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="font-sans font-bold text-foreground text-base group-hover:text-primary transition-colors leading-tight">
+                      {t(`skillHub.exercises.${ex.id}.title`)}
+                    </h3>
+                    <span className="shrink-0 rounded-full bg-secondary px-2 py-0.5 font-sans text-[10px] font-extrabold text-primary border border-primary/20">
+                      {`${ex.minimumLevel ?? "A1"}+`}
                     </span>
-                  )}
-                  {ex.isTimed && (
-                    <span className="inline-flex items-center gap-1 rounded-full bg-wp-amber/10 px-2 py-0.5 font-sans text-[10px] font-bold text-wp-amber border border-wp-amber/20">
-                      <Clock className="size-3" aria-hidden="true" />
-                      <span>{t("skillHub.timedDrill", { defaultValue: "Timed drill" })}</span>
-                    </span>
-                  )}
-                  {!ex.isTimed && (
-                    <span className="inline-flex items-center gap-1 rounded-full bg-muted/60 px-2 py-0.5 font-sans text-[10px] font-semibold text-muted-foreground">
-                      <span>{t("skillHub.selfPaced", { defaultValue: "Self-paced" })}</span>
-                    </span>
-                  )}
-                </div>
-              </div>
+                  </div>
 
-              <div className="flex items-center gap-1.5 text-xs font-sans font-bold text-primary pt-2 border-t border-border/40">
-                <span>{t("skillHub.startExercise")}</span>
-                <ArrowRight
-                  className="size-3.5 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180 transition-transform"
-                  aria-hidden="true"
-                />
-              </div>
-            </button>
+                  <div className="flex items-center gap-1.5 flex-wrap mt-3">
+                    {ex.requiresMic && (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 font-sans text-[10px] font-bold text-primary border border-primary/20">
+                        <Mic className="size-3" aria-hidden="true" />
+                        <span>
+                          {t("skillHub.micRequired", { defaultValue: "Microphone required" })}
+                        </span>
+                      </span>
+                    )}
+                    {ex.isTimed && (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-wp-amber/10 px-2 py-0.5 font-sans text-[10px] font-bold text-wp-amber border border-wp-amber/20">
+                        <Clock className="size-3" aria-hidden="true" />
+                        <span>{t("skillHub.timedDrill", { defaultValue: "Timed drill" })}</span>
+                      </span>
+                    )}
+                    {!ex.isTimed && (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-muted/60 px-2 py-0.5 font-sans text-[10px] font-semibold text-muted-foreground">
+                        <span>{t("skillHub.selfPaced", { defaultValue: "Self-paced" })}</span>
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-1.5 text-xs font-sans font-bold text-primary pt-2 border-t border-border/40">
+                  <span>{t("skillHub.startExercise")}</span>
+                  <ArrowRight
+                    className="size-3.5 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180 transition-transform"
+                    aria-hidden="true"
+                  />
+                </div>
+              </button>
+              <HelpDisclosure
+                variant="icon"
+                label={t("help.aboutTopic", { title: t(`skillHub.exercises.${ex.id}.title`) })}
+                className="absolute end-2 top-2 z-10"
+              >
+                {t(`skillHub.exercises.${ex.id}.description`)}
+              </HelpDisclosure>
+            </article>
           ))}
         </div>
       </section>

@@ -307,49 +307,30 @@ describe("Shared UI Primitives", () => {
   });
 
   describe("CurriculumTopicCard", () => {
-    it("prioritizes image and title while keeping description in an accessible tooltip", () => {
+    it("opens card help deliberately without activating the lesson and dismisses with Escape", () => {
       const handleClick = vi.fn();
       const { container } = render(
         <CurriculumTopicCard
-          numberBadge={2}
-          levelBadge="B1"
           title="Questions That Teach Religion"
-          imageSrc="/hadith/v1/images/sample.png"
-          tooltipText="Follow a question-and-answer conversation and understand key English vocabulary."
-          statusText="Approximately 25 minutes"
+          tooltipText="Follow a question-and-answer conversation."
           onClick={handleClick}
         />
       );
-
-      // Card renders as an article with no nested buttons
-      expect(screen.getByRole("article")).toBeInTheDocument();
-      expect(container.querySelectorAll("button button")).toHaveLength(0);
-
-      // Title and status are visible; tooltip text is not cluttering the card face initially
-      expect(screen.getByText("Questions That Teach Religion")).toBeInTheDocument();
-      expect(screen.getByText("Approximately 25 minutes")).toBeInTheDocument();
-      expect(screen.queryByRole("tooltip")).not.toBeInTheDocument();
-
-      // Focusing or clicking the info button reveals the accessible tooltip without firing card onClick
-      const infoBtn = screen.getByRole("button", {
-        name: /Topic overview/i,
-      });
-      fireEvent.click(infoBtn);
+      const info = screen.getByLabelText("About Questions That Teach Religion");
+      const disclosure = container.querySelector("details")!;
+      expect(disclosure.open).toBe(false);
+      fireEvent.focus(info);
+      fireEvent.mouseEnter(info);
+      expect(disclosure.open).toBe(false);
+      fireEvent.click(info);
+      expect(disclosure.open).toBe(true);
       expect(handleClick).not.toHaveBeenCalled();
-
-      const tooltip = screen.getByRole("tooltip");
-      expect(tooltip).toHaveTextContent(
-        "Follow a question-and-answer conversation and understand key English vocabulary."
-      );
-
-      // Pressing Escape dismisses the tooltip (WCAG 1.4.13)
-      fireEvent.keyDown(infoBtn, { key: "Escape" });
-      expect(screen.queryByRole("tooltip")).not.toBeInTheDocument();
-
-      // Clicking the primary card button triggers onClick
-      const cardBtn = screen.getByRole("button", { name: /Questions That Teach Religion/i });
-      fireEvent.click(cardBtn);
+      fireEvent.keyDown(info, { key: "Escape" });
+      expect(disclosure.open).toBe(false);
+      expect(info).toHaveFocus();
+      fireEvent.click(screen.getByRole("button", { name: "Questions That Teach Religion" }));
       expect(handleClick).toHaveBeenCalledTimes(1);
+      expect(container.querySelectorAll("button summary, button button")).toHaveLength(0);
     });
   });
 });

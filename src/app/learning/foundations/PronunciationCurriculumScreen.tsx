@@ -3,7 +3,6 @@ import { ArrowLeft, Headphones, Search } from "lucide-react";
 import type { Action } from "../../types";
 import { useLearner } from "../../context/LearnerContext";
 import { useI18n } from "../../../i18n";
-import { resolveAssetUrl } from "../../../utils/assetUrl";
 import { CurriculumFilterTabs } from "../../shared/CurriculumFilterTabs";
 import { CurriculumHeroHeader } from "../../shared/CurriculumHeroHeader";
 import {
@@ -13,7 +12,7 @@ import {
 } from "./figmaPronunciationCatalog";
 import { PronunciationLessonCard } from "./PronunciationLessonCard";
 import { PronunciationLessonInfoModal } from "./PronunciationLessonInfoModal";
-import { Button, EmptyState, MediaFrame } from "../../shared";
+import { Button, EmptyState } from "../../shared";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -98,10 +97,7 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
           titleId="pronunciation-curriculum-title"
           badge={t("pronunciation.curriculumBadge")}
           title={t("pronunciation.curriculumTitle")}
-          description={t("pronunciation.curriculumShortOutcome", {
-            defaultValue:
-              "Master English phonemes, vowel lengths, and stress patterns through targeted listen-and-repeat acoustic drills.",
-          })}
+          description={t("pronunciation.curriculumDescription")}
           metrics={[
             { label: t("pronunciation.summaryMastered"), value: completed },
             { label: t("pronunciation.summaryDue"), value: due },
@@ -120,29 +116,7 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
               {t("pronunciation.continueCurriculum", { number: nextLesson.number })}
             </Button>
           }
-          media={
-            <MediaFrame aspect="recognition" className="hidden w-full lg:block">
-              <img
-                src={resolveAssetUrl(
-                  `pronunciation/v1/lesson-${String(nextLesson.number).padStart(2, "0")}.png`
-                )}
-                alt=""
-                aria-hidden
-              />
-            </MediaFrame>
-          }
         >
-          <details className="text-xs text-muted-foreground group mb-2">
-            <summary className="cursor-pointer font-bold text-primary flex items-center gap-1 hover:underline">
-              <span>
-                {t("pronunciation.methodologySummary", {
-                  defaultValue: "Teaching methodology details",
-                })}
-              </span>
-            </summary>
-            <p className="mt-1.5 leading-relaxed">{t("pronunciation.curriculumDescription")}</p>
-          </details>
-
           <CurriculumFilterTabs
             label={t("pronunciation.filtersLabel")}
             value={filter}
@@ -200,9 +174,14 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
                   onClick={() =>
                     document
                       .getElementById(`pronunciation-chapter-${chapter.index + 1}`)
-                      ?.scrollIntoView({ behavior: "smooth", block: "start" })
+                      ?.scrollIntoView({
+                        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+                          ? "auto"
+                          : "smooth",
+                        block: "start",
+                      })
                   }
-                  className="min-h-11 shrink-0 snap-start rounded-xl border border-border bg-card px-3 text-sm font-black text-foreground hover:border-primary/50 hover:bg-primary/5 active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  className="min-h-11 shrink-0 snap-start rounded-xl border border-border bg-card px-3 text-sm font-black text-foreground hover:border-primary/50 hover:bg-primary/5 motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   {t("pronunciation.chapterShort", { number: chapter.index + 1 })}
                 </button>
@@ -238,9 +217,6 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
                       <h2 className="mt-1 text-xl font-black text-foreground">
                         {t(chapter.titleKey)}
                       </h2>
-                      <p className="mt-1 max-w-3xl text-sm font-medium leading-6 text-muted-foreground">
-                        {t(chapter.descriptionKey)}
-                      </p>
                     </div>
                     <p className="text-sm font-bold text-muted-foreground">
                       {t("pronunciation.chapterProgress", {

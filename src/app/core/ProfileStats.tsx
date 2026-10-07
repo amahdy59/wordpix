@@ -1,3 +1,4 @@
+import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useMemo, useState } from "react";
 import {
   Flame,
@@ -253,7 +254,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
               />
             ) : (
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-                {STATS.map(({ value, label, description, icon: Icon, color }) => (
+                {STATS.map(({ value, label, icon: Icon, color }) => (
                   <Surface
                     key={label}
                     variant="card"
@@ -270,13 +271,28 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                     <p className="text-center font-sans text-xs font-bold leading-tight text-foreground">
                       {label}
                     </p>
-                    <p className="text-center font-sans text-[11px] font-medium leading-tight text-muted-foreground">
-                      {description}
-                    </p>
                   </Surface>
                 ))}
               </div>
             )}
+            <HelpDisclosure label={t("help.aboutProgress")}>
+              <dl className="space-y-3">
+                {STATS.map(({ label, description }) => (
+                  <div key={label}>
+                    <dt className="font-bold">{label}</dt>
+                    <dd>{description}</dd>
+                  </div>
+                ))}
+              </dl>
+              <dl className="mt-4 space-y-3">
+                {Object.values(skillMeta).map(({ label, description }) => (
+                  <div key={label}>
+                    <dt className="font-bold">{label}</dt>
+                    <dd>{description}</dd>
+                  </div>
+                ))}
+              </dl>
+            </HelpDisclosure>
           </motion.section>
         </div>
 
@@ -307,9 +323,6 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                     </span>
                     <div className="min-w-0">
                       <h3 className="font-sans text-sm font-bold text-foreground">{meta.label}</h3>
-                      <p className="mt-1 font-sans text-xs leading-relaxed text-muted-foreground">
-                        {meta.description}
-                      </p>
                     </div>
                   </div>
                   {summary.attempts > 0 ? (

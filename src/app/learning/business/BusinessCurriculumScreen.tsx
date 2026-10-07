@@ -1,3 +1,4 @@
+import { HelpDisclosure } from "../../shared/HelpDisclosure";
 import { useState, useMemo, type Dispatch, type KeyboardEvent } from "react";
 import {
   ArrowLeft,
@@ -20,7 +21,7 @@ import {
   type BusinessUnitProgress,
 } from "./businessTypes";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
-import { Button, CurriculumTopicCard } from "../../shared";
+import { Button, CurriculumHeroHeader, CurriculumTopicCard } from "../../shared";
 
 interface Props {
   dispatch: Dispatch<Action>;
@@ -71,14 +72,6 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
   const masteredCount = useMemo(() => {
     return Object.values(progressState).filter((p) => p.status === "mastered").length;
   }, [progressState]);
-
-  const inProgressCount = useMemo(() => {
-    return Object.values(progressState).filter(
-      (p) => p.status === "in-progress" && p.completedStages.length > 0
-    ).length;
-  }, [progressState]);
-
-  const completionPercent = Math.round((masteredCount / BUSINESS_UNITS.length) * 100);
 
   // Resume or start unit
   const continueUnit = useMemo(() => {
@@ -143,102 +136,34 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
           {t("business.backToExplore")}
         </Button>
 
-        {/* Hero Section */}
-        <header className="flex flex-col gap-4 rounded-3xl border border-border bg-gradient-to-br from-primary/10 via-card to-card p-6 sm:p-10 shadow-wp-sm">
-          <div className="flex flex-wrap items-center gap-2.5">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/20 px-3 py-1 text-xs font-black text-primary uppercase tracking-wider">
-              <Briefcase className="size-3.5" aria-hidden />
-              {t("business.heroBadge")}
-            </span>
-            <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2.5 py-0.5 text-xs font-bold text-muted-foreground">
-              {t("business.heroLevelPill")}
-            </span>
-          </div>
-
-          <div>
-            <h1
-              id="business-curriculum-title"
-              className="text-2xl sm:text-4xl font-black text-foreground tracking-tight"
-            >
-              {t("business.title")}
-            </h1>
-            <p className="mt-2 text-base sm:text-lg font-medium text-muted-foreground leading-relaxed max-w-3xl">
-              {t("business.heroSubtitle")}
-            </p>
-          </div>
-
-          {/* Progress Overview Bar */}
-          <div className="mt-2 grid grid-cols-2 sm:grid-cols-3 gap-3 pt-4 border-t border-border/80">
-            <div className="flex min-w-0 flex-wrap items-center gap-3 rounded-2xl bg-card p-4 border border-border">
-              <CheckCircle2 className="size-8 text-accent shrink-0" aria-hidden />
-              <div>
-                <p className="text-xl font-black text-foreground">
-                  {t("business.masteredStats", {
-                    mastered: masteredCount,
-                    total: 40,
-                    percent: completionPercent,
-                  })}
-                </p>
-                <p className="text-xs font-semibold text-muted-foreground">
-                  {t("business.unitsMasteredLabel")}
-                </p>
-              </div>
-            </div>
-
-            <div className="flex min-w-0 flex-wrap items-center gap-3 rounded-2xl bg-card p-4 border border-border">
-              <Clock className="size-8 text-primary shrink-0" aria-hidden />
-              <div>
-                <p className="text-xl font-black text-foreground">{inProgressCount}</p>
-                <p className="text-xs font-semibold text-muted-foreground">
-                  {t("business.inProgressBadge")}
-                </p>
-              </div>
-            </div>
-
-            <div className="col-span-2 flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-card p-4 border border-border sm:col-span-1">
-              <div className="flex items-center gap-3 min-w-0">
-                {continueUnit.heroImageSrc && (
-                  <div className="size-12 shrink-0 overflow-hidden rounded-xl border border-border/80 bg-muted/40 relative">
-                    <img
-                      src={resolveAssetUrl(continueUnit.heroImageSrc)}
-                      alt=""
-                      aria-hidden="true"
-                      className="size-full object-cover"
-                      loading="lazy"
-                      onError={(e) => {
-                        (e.currentTarget as HTMLElement).style.display = "none";
-                      }}
-                    />
-                  </div>
-                )}
-                <div className="min-w-0">
-                  <p className="text-xs font-bold text-muted-foreground uppercase">
-                    {t("business.nextLessonLabel")}
-                  </p>
-                  <p className="text-sm font-black text-foreground break-words">
-                    {t("business.unitColonTitle", {
-                      number: continueUnit.unitNumber,
-                      title: continueUnit.title,
-                    })}
-                  </p>
-                </div>
-              </div>
-              <button
-                type="button"
-                onClick={() =>
-                  dispatch({
-                    type: "OPEN_BUSINESS_LESSON",
-                    unitId: continueUnit.id,
-                  })
-                }
-                className="shrink-0 inline-flex min-h-[44px] items-center gap-1.5 rounded-xl bg-primary px-4 py-2 font-bold text-primary-foreground shadow-wp-xs hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+        <CurriculumHeroHeader
+          titleId="business-curriculum-title"
+          title={t("business.title")}
+          badge={t("business.heroLevelPill")}
+          description={t("business.heroSubtitle")}
+          metrics={[
+            {
+              label: t("business.unitsMasteredLabel"),
+              value: `${masteredCount} / ${BUSINESS_UNITS.length}`,
+            },
+          ]}
+          action={
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <p className="font-semibold text-foreground">
+                {t("business.unitColonTitle", {
+                  number: continueUnit.unitNumber,
+                  title: continueUnit.title,
+                })}
+              </p>
+              <Button
+                onClick={() => dispatch({ type: "OPEN_BUSINESS_LESSON", unitId: continueUnit.id })}
+                iconLeft={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
               >
-                <span>{t("business.continueCta")}</span>
-                <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
-              </button>
+                {t("business.continueCta")}
+              </Button>
             </div>
-          </div>
-        </header>
+          }
+        />
 
         {/* Controls: Search and CEFR Level Filter */}
         <div className="flex flex-col gap-3">
@@ -246,7 +171,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
             {/* CEFR Level Tabs */}
             <div
               role="tablist"
-              aria-label="Filter by CEFR Level"
+              aria-label={t("conversation.levelsLabel")}
               className="flex items-center gap-1.5 overflow-x-auto rounded-2xl border border-border bg-card p-1.5 shadow-wp-xs"
             >
               {CEFR_TABS.map((tab, idx) => {
@@ -266,7 +191,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                         : "text-muted-foreground hover:bg-muted/60 hover:text-foreground"
                     }`}
                   >
-                    <span>{tab.label}</span>
+                    <span>{tab.id === "ALL" ? t("conversation.allLevels") : tab.id}</span>
                     <span
                       className={`rounded-full px-1.5 py-0.2 text-[10px] font-black ${
                         isSelected
@@ -292,40 +217,49 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder={t("business.searchPlaceholder")}
-                aria-label="Search Business English units"
+                aria-label={t("business.searchPlaceholder")}
                 className="min-h-11 w-full rounded-2xl border border-border bg-card py-2.5 ps-10 pe-4 text-sm font-medium text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 shadow-wp-xs"
               />
             </div>
           </div>
 
-          {/* Domain / Competency Topic Filter Pills */}
-          <div
-            className="flex items-center gap-1.5 overflow-x-auto py-1"
-            role="toolbar"
-            aria-label="Filter by Topic"
+          <HelpDisclosure
+            label={
+              selectedTag === "All Topics"
+                ? t("help.topicFilters")
+                : t("help.topicFiltersActive", { topic: selectedTag })
+            }
           >
-            <span className="inline-flex items-center gap-1 text-xs font-bold text-muted-foreground me-1 shrink-0">
-              <Tag className="size-3" aria-hidden />
-              {t("business.topicsLabel")}
-            </span>
-            {DOMAIN_TAGS.map((tag) => {
-              const isSelected = selectedTag === tag;
-              return (
-                <button
-                  key={tag}
-                  type="button"
-                  onClick={() => setSelectedTag(tag)}
-                  className={`inline-flex min-h-11 shrink-0 items-center rounded-full px-3.5 py-1.5 text-xs font-bold transition-all ${
-                    isSelected
-                      ? "bg-foreground text-background shadow-wp-xs"
-                      : "bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground"
-                  }`}
-                >
-                  {tag}
-                </button>
-              );
-            })}
-          </div>
+            {/* Domain / Competency Topic Filter Pills */}
+            <div
+              className="flex items-center gap-1.5 overflow-x-auto py-1"
+              role="group"
+              aria-label={t("help.topicFilters")}
+            >
+              <span className="inline-flex items-center gap-1 text-xs font-bold text-muted-foreground me-1 shrink-0">
+                <Tag className="size-3" aria-hidden />
+                {t("business.topicsLabel")}
+              </span>
+              {DOMAIN_TAGS.map((tag) => {
+                const isSelected = selectedTag === tag;
+                return (
+                  <button
+                    key={t(`help.businessTopics.${DOMAIN_TAGS.indexOf(tag)}`)}
+                    type="button"
+                    aria-pressed={isSelected}
+                    onClick={() => setSelectedTag(tag)}
+                    className={`inline-flex min-h-11 shrink-0 items-center rounded-full px-3.5 py-1.5 text-xs font-bold transition-all ${
+                      isSelected
+                        ? "bg-foreground text-background shadow-wp-xs"
+                        : "bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground"
+                    }`}
+                  >
+                    {t(`help.businessTopics.${DOMAIN_TAGS.indexOf(tag)}`)}
+                  </button>
+                );
+              })}
+            </div>
+          </HelpDisclosure>
         </div>
 
         {/* Units Grid */}
@@ -404,82 +338,84 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
         </section>
 
         {/* Course Section Milestones */}
-        <section
-          aria-labelledby="milestones-heading"
-          className="flex flex-col gap-4 rounded-3xl border border-border bg-card p-6 shadow-wp-xs"
-        >
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Award className="size-5 text-primary" aria-hidden />
-              <h2 id="milestones-heading" className="text-lg font-black text-foreground">
-                {t("business.credentialsTitle")}
-              </h2>
+        <HelpDisclosure label={t("business.credentialsTitle")}>
+          <section
+            aria-labelledby="milestones-heading"
+            className="flex flex-col gap-4 rounded-3xl border border-border bg-card p-6 shadow-wp-xs"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Award className="size-5 text-primary" aria-hidden />
+                <h2 id="milestones-heading" className="text-lg font-black text-foreground">
+                  {t("business.credentialsTitle")}
+                </h2>
+              </div>
+              <span className="text-xs font-bold text-muted-foreground">
+                {t("business.credentialsSubtitle")}
+              </span>
             </div>
-            <span className="text-xs font-bold text-muted-foreground">
-              {t("business.credentialsSubtitle")}
-            </span>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
-            {BUSINESS_SECTION_MILESTONES.map((milestone) => {
-              const sectionUnits = BUSINESS_UNITS.filter(
-                (u) => u.sectionNumber === milestone.sectionNumber
-              );
-              const sectionMastered = sectionUnits.filter(
-                (u) => progressState[u.id]?.status === "mastered"
-              ).length;
-              const isSectionCertified =
-                sectionUnits.length > 0 && sectionMastered === sectionUnits.length;
-              const isStarted = sectionMastered > 0;
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+              {BUSINESS_SECTION_MILESTONES.map((milestone) => {
+                const sectionUnits = BUSINESS_UNITS.filter(
+                  (u) => u.sectionNumber === milestone.sectionNumber
+                );
+                const sectionMastered = sectionUnits.filter(
+                  (u) => progressState[u.id]?.status === "mastered"
+                ).length;
+                const isSectionCertified =
+                  sectionUnits.length > 0 && sectionMastered === sectionUnits.length;
+                const isStarted = sectionMastered > 0;
 
-              return (
-                <div
-                  key={milestone.sectionNumber}
-                  className={`flex flex-col justify-between p-4 rounded-2xl border transition-all ${
-                    isSectionCertified
-                      ? "border-accent/40 bg-accent/5 shadow-wp-xs ring-1 ring-accent/30"
-                      : isStarted
-                        ? "border-primary/40 bg-primary/5"
-                        : "border-border bg-muted/20 opacity-80"
-                  }`}
-                >
-                  <div className="flex items-start justify-between gap-2">
-                    <span className="text-2xl" role="img" aria-label={milestone.title}>
-                      {milestone.badge}
-                    </span>
-                    {isSectionCertified ? (
-                      <span className="inline-flex items-center gap-1 rounded-full bg-accent/15 px-2 py-0.5 text-[10px] font-black text-accent uppercase">
-                        <CheckCircle2 className="size-3" aria-hidden />
-                        {t("business.certifiedBadge")}
+                return (
+                  <div
+                    key={milestone.sectionNumber}
+                    className={`flex flex-col justify-between p-4 rounded-2xl border transition-all ${
+                      isSectionCertified
+                        ? "border-accent/40 bg-accent/5 shadow-wp-xs ring-1 ring-accent/30"
+                        : isStarted
+                          ? "border-primary/40 bg-primary/5"
+                          : "border-border bg-muted/20 opacity-80"
+                    }`}
+                  >
+                    <div className="flex items-start justify-between gap-2">
+                      <span className="text-2xl" role="img" aria-label={milestone.title}>
+                        {milestone.badge}
                       </span>
-                    ) : (
-                      <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-[10px] font-bold text-muted-foreground">
-                        {t("business.sectionUnitsCount", {
-                          mastered: sectionMastered,
-                          total: sectionUnits.length,
-                        })}
-                      </span>
-                    )}
-                  </div>
-
-                  <div className="mt-3">
-                    <div className="flex items-center gap-1.5">
-                      <span className="rounded bg-primary/15 px-1.5 py-0.2 text-[10px] font-black text-primary">
-                        {milestone.level}
-                      </span>
-                      <h3 className="text-sm font-black text-foreground line-clamp-1">
-                        {milestone.title}
-                      </h3>
+                      {isSectionCertified ? (
+                        <span className="inline-flex items-center gap-1 rounded-full bg-accent/15 px-2 py-0.5 text-[10px] font-black text-accent uppercase">
+                          <CheckCircle2 className="size-3" aria-hidden />
+                          {t("business.certifiedBadge")}
+                        </span>
+                      ) : (
+                        <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-[10px] font-bold text-muted-foreground">
+                          {t("business.sectionUnitsCount", {
+                            mastered: sectionMastered,
+                            total: sectionUnits.length,
+                          })}
+                        </span>
+                      )}
                     </div>
-                    <p className="mt-1 text-xs text-muted-foreground font-medium line-clamp-2">
-                      {milestone.description}
-                    </p>
+
+                    <div className="mt-3">
+                      <div className="flex items-center gap-1.5">
+                        <span className="rounded bg-primary/15 px-1.5 py-0.2 text-[10px] font-black text-primary">
+                          {milestone.level}
+                        </span>
+                        <h3 className="text-sm font-black text-foreground line-clamp-1">
+                          {milestone.title}
+                        </h3>
+                      </div>
+                      <p className="mt-1 text-xs text-muted-foreground font-medium line-clamp-2">
+                        {milestone.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
-        </section>
+                );
+              })}
+            </div>
+          </section>
+        </HelpDisclosure>
       </div>
     </div>
   );

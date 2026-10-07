@@ -57,11 +57,7 @@ export function QuizQuestionCard<T extends string>({
 
         <ChoiceOptionGroup
           className={`mt-5 grid gap-3 ${optionColumns === "two" ? "sm:grid-cols-2" : ""}`}
-          label={
-            typeof question === "string"
-              ? question
-              : t("practice.questionOf", { current: index + 1, total: options.length })
-          }
+          label={typeof question === "string" ? question : t("help.chooseAnswer")}
           options={options}
           value={value}
           onChange={(val) => {
@@ -82,7 +78,7 @@ export function QuizQuestionCard<T extends string>({
         <div
           role="status"
           aria-live="polite"
-          className={`flex gap-3 border-t px-5 py-4 text-sm font-semibold leading-6 sm:px-6 ${
+          className={`flex flex-wrap gap-3 border-t px-5 py-4 text-sm font-semibold leading-6 sm:px-6 ${
             correct
               ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground"
               : "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground"
@@ -97,8 +93,8 @@ export function QuizQuestionCard<T extends string>({
             <span className="font-black">
               {correct ? t("practice.correct") : t("practice.notYet")}
             </span>
-            {feedback && <span className="ms-1">{feedback}</span>}
           </p>
+          {feedback && <div className="w-full text-sm leading-relaxed">{feedback}</div>}
         </div>
       )}
     </article>

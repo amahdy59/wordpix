@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { HelpCircle, ArrowRight, ArrowLeft } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
 import { useI18n } from "../../../../i18n";
@@ -15,7 +14,6 @@ interface Props {
 
 export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Props) {
   const { t } = useI18n();
-  const [isCompleted, setIsCompleted] = useState(savedScore !== undefined);
 
   // Map conversation quiz format → unified QuizQuestion shape with 2-column option layout
   const questions: QuizQuestion[] = unit.quiz.map((q) => ({
@@ -36,7 +34,6 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Pro
   }));
 
   const handleComplete = (result: QuizResult) => {
-    setIsCompleted(true);
     onSaveScore(result.correct);
   };
 
@@ -85,17 +82,6 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev }: Pro
           <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
           <span>{t("conversation.previous")}</span>
         </button>
-
-        {isCompleted && (
-          <button
-            type="button"
-            onClick={onNext}
-            className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-3 font-black text-primary-foreground shadow-wp-md hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all"
-          >
-            <span>{t("conversation.continueDiscussion")}</span>
-            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-          </button>
-        )}
       </div>
     </div>
   );

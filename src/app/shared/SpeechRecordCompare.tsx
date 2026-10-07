@@ -1,3 +1,4 @@
+import { HelpDisclosure } from "./HelpDisclosure";
 import { useEffect, useId, useState } from "react";
 import {
   CheckCircle2,
@@ -125,13 +126,13 @@ export function SpeechRecordCompare({
           <span className="block text-base font-black text-foreground">
             {title ?? t("speechPractice.title")}
           </span>
-          <span className="mt-0.5 block text-sm font-semibold text-muted-foreground">
-            {description ?? t("speechPractice.subtitle")}
-          </span>
         </span>
       </summary>
 
       <div className="space-y-5 border-t border-border p-5 sm:p-6">
+        <HelpDisclosure label={t("help.howItWorks")}>
+          <p>{description ?? t("speechPractice.subtitle")}</p>
+        </HelpDisclosure>
         <div className="flex items-start gap-3 rounded-2xl border border-primary/25 bg-primary/5 p-4">
           <ShieldCheck className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
           <p id={`${id}-privacy`} className="text-sm font-semibold leading-relaxed text-foreground">

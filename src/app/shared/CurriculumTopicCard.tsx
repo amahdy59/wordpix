@@ -1,5 +1,7 @@
-import { memo, useId, useState, type ReactNode } from "react";
-import { ArrowRight, BookOpen, CheckCircle2, Info } from "lucide-react";
+import { useI18n } from "../context/I18nContext";
+import { HelpDisclosure } from "./HelpDisclosure";
+import { memo, useState, type ReactNode } from "react";
+import { ArrowRight, BookOpen, CheckCircle2 } from "lucide-react";
 
 export interface CurriculumTopicCardProps {
   /** Primary accessible name for the card trigger button */
@@ -47,8 +49,7 @@ export interface CurriculumTopicCardProps {
 /**
  * Unified, media-forward topic card used across WordPix curricula.
  * Prioritizes visual recognition (prominent image + clean title) while
- * housing secondary pedagogical descriptions in a WCAG 2.2 AAA 1.4.13
- * compliant tooltip (hoverable, focusable, persistent, and Escape-dismissible).
+ * housing secondary descriptions in deliberate click/tap help disclosures.
  */
 export const CurriculumTopicCard = memo(function CurriculumTopicCard({
   ariaLabel,
@@ -72,15 +73,9 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
   onClick,
   className = "",
 }: CurriculumTopicCardProps) {
-  const tooltipId = useId();
+  const { t } = useI18n();
   const [imageError, setImageError] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
-  const [isFocused, setIsFocused] = useState(false);
-  const [isPinned, setIsPinned] = useState(false);
-  const [isDismissed, setIsDismissed] = useState(false);
-
-  const hasTooltip = Boolean(tooltipText && tooltipText.trim().length > 0);
-  const showTooltip = hasTooltip && !isDismissed && (isHovered || isFocused || isPinned);
+  const hasTooltip = Boolean(tooltipText?.trim());
   const showImage = Boolean(imageSrc) && !imageError;
 
   return (
@@ -97,16 +92,7 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
         onClick={onClick}
         aria-label={ariaLabel}
         aria-current={isCurrent ? "step" : undefined}
-        aria-describedby={showTooltip ? tooltipId : undefined}
-        title={hasTooltip ? tooltipText : undefined}
-        onKeyDown={(e) => {
-          if (e.key === "Escape" && showTooltip) {
-            e.stopPropagation();
-            setIsDismissed(true);
-            setIsPinned(false);
-          }
-        }}
-        className="flex flex-1 flex-col justify-between overflow-hidden rounded-3xl text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.99]"
+        className="flex min-h-11 min-w-11 flex-1 flex-col justify-between overflow-hidden rounded-3xl text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.99]"
       >
         {/* Prominent Media Cover */}
         <div className="relative aspect-[16/9] w-full shrink-0 overflow-hidden border-b border-border/50 bg-muted/40">
@@ -201,61 +187,14 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
         <div className="border-t border-border/60 px-4 py-3 sm:px-5">{secondaryAction}</div>
       )}
 
-      {/* Top-End Accessible Tooltip Trigger (44x44px AAA touch target, sibling to primary button) */}
       {hasTooltip && (
-        <div className="absolute end-1.5 top-1.5 z-20">
-          <button
-            type="button"
-            aria-label={infoAriaLabel || "Topic overview"}
-            aria-expanded={showTooltip}
-            aria-describedby={showTooltip ? tooltipId : undefined}
-            onMouseEnter={() => {
-              setIsDismissed(false);
-              setIsHovered(true);
-            }}
-            onMouseLeave={() => setIsHovered(false)}
-            onClick={(e) => {
-              e.stopPropagation();
-              setIsDismissed(false);
-              setIsPinned((prev) => !prev);
-            }}
-            onFocus={() => {
-              setIsDismissed(false);
-              setIsFocused(true);
-            }}
-            onBlur={() => {
-              setIsFocused(false);
-              setIsPinned(false);
-            }}
-            onKeyDown={(e) => {
-              if (e.key === "Escape") {
-                e.stopPropagation();
-                setIsDismissed(true);
-                setIsPinned(false);
-              }
-            }}
-            className="flex size-11 items-center justify-center rounded-full focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            <span className="flex size-8 items-center justify-center rounded-full border border-border/60 bg-card/95 text-foreground shadow-wp-xs backdrop-blur-md transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground">
-              <Info className="size-4" aria-hidden />
-            </span>
-          </button>
-
-          {showTooltip && (
-            <div
-              id={tooltipId}
-              role="tooltip"
-              className="
-                absolute end-1 top-12 z-30 w-64 max-w-[calc(100vw-3rem)]
-                rounded-2xl border border-wp-panel-border bg-wp-panel p-3.5
-                text-start text-xs font-medium leading-relaxed text-wp-text-on-panel
-                shadow-wp-lg sm:w-72
-              "
-            >
-              {tooltipText}
-            </div>
-          )}
-        </div>
+        <HelpDisclosure
+          variant="icon"
+          label={infoAriaLabel || t("help.aboutTopic", { title })}
+          className="absolute end-1.5 top-1.5 z-20"
+        >
+          {tooltipText}
+        </HelpDisclosure>
       )}
     </article>
   );

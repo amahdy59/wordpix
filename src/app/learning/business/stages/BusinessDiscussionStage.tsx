@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MessageSquareText, ArrowRight, HelpCircle } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
-import { ChoiceOptionGroup } from "../../../shared/ChoiceOptionGroup";
+import { SpeechRecordCompare } from "../../../shared/SpeechRecordCompare";
 
 interface Props {
   unit: BusinessUnit;
@@ -11,14 +11,12 @@ interface Props {
   onNext: () => void;
 }
 
-export function BusinessDiscussionStage({ unit, savedNotes = {}, onSaveNote, onNext }: Props) {
+export function BusinessDiscussionStage({ unit, onNext }: Props) {
   const { t } = useI18n();
-  const [notes, setNotes] = useState<Record<string, string>>(savedNotes);
-
-  const handleNoteChange = (id: string, text: string) => {
-    setNotes((prev) => ({ ...prev, [id]: text }));
-    onSaveNote(id, text);
-  };
+  const [selectedPrompt, setSelectedPrompt] = useState(0);
+  const prompts = unit.discussion.prompts.filter(
+    (prompt) => !/^Write down your personal insights/i.test(prompt.prompt)
+  );
 
   return (
     <div className="wp-container-reading flex flex-col gap-6 py-2">
@@ -44,14 +42,11 @@ export function BusinessDiscussionStage({ unit, savedNotes = {}, onSaveNote, onN
             {unit.discussion.title}
           </h2>
         </div>
-        <p className="mt-2 text-sm text-muted-foreground font-medium">
-          {t("business.discussion.subtitle")}
-        </p>
       </section>
 
       {/* Discussion Prompts */}
       <section className="flex flex-col gap-4" aria-label="Discussion Questions List">
-        {unit.discussion.prompts.map((prompt, idx) => (
+        {prompts.map((prompt, idx) => (
           <div
             key={prompt.id}
             className="flex flex-col gap-2.5 rounded-2xl border border-border bg-card p-5 shadow-wp-xs hover:border-primary/40 transition-colors"
@@ -62,33 +57,29 @@ export function BusinessDiscussionStage({ unit, savedNotes = {}, onSaveNote, onN
               </span>
               <span className="leading-snug pt-0.5">{prompt.prompt}</span>
             </div>
-            <ChoiceOptionGroup
-              label={prompt.prompt}
-              value={notes[prompt.id]}
-              onChange={(value) => handleNoteChange(prompt.id, value)}
-              options={[
-                {
-                  value: "agree",
-                  label: t("business.choiceAgree"),
-                  accessibleLabel: t("business.choiceAgree"),
-                },
-                {
-                  value: "unsure",
-                  label: t("business.choiceUnsure"),
-                  accessibleLabel: t("business.choiceUnsure"),
-                },
-                {
-                  value: "disagree",
-                  label: t("business.choiceDisagree"),
-                  accessibleLabel: t("business.choiceDisagree"),
-                },
-              ]}
-              className="grid gap-2 sm:grid-cols-3"
-            />
+            <button
+              type="button"
+              aria-pressed={selectedPrompt === idx}
+              onClick={() => setSelectedPrompt(idx)}
+              className="min-h-11 rounded-xl border border-border px-3 text-sm font-semibold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              {selectedPrompt === idx
+                ? t("conversation.speakingPromptSelected")
+                : t("conversation.practiceThisPrompt")}
+            </button>
           </div>
         ))}
       </section>
 
+      {prompts.length > 0 && (
+        <SpeechRecordCompare
+          key={prompts[selectedPrompt]?.id}
+          target={prompts[selectedPrompt]?.prompt ?? prompts[0].prompt}
+          modelText={unit.languageBank.map((item) => item.example).join(" ")}
+          title={t("conversation.discussionSpeakingStudio")}
+          description={t("conversation.discussionSpeakingHelp")}
+        />
+      )}
       {/* Action Button */}
       <div className="flex justify-end pt-2">
         <button

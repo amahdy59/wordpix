@@ -274,18 +274,13 @@ export function StudyShell({
       )
     : 0;
 
-  const areaMeta: Record<StudyArea, { label: string; description: string; icon: typeof BookOpen }> =
-    {
-      learn: { label: "Learn", description: "Build core vocabulary", icon: BookOpen },
-      use: {
-        label: "Use in Context",
-        description: "Apply language in context",
-        icon: MessageCircleMore,
-      },
-      practice: { label: "Practice", description: "Strengthen recall", icon: Dumbbell },
-      review: { label: "Review", description: "Check your confidence", icon: Check },
-      reference: { label: "Reference", description: "Browse language details", icon: LibraryBig },
-    };
+  const areaMeta: Record<StudyArea, { label: string; icon: typeof BookOpen }> = {
+    learn: { label: t("help.studyAreas.learn"), icon: BookOpen },
+    use: { label: t("help.studyAreas.use"), icon: MessageCircleMore },
+    practice: { label: t("help.studyAreas.practice"), icon: Dumbbell },
+    review: { label: t("help.studyAreas.review"), icon: Check },
+    reference: { label: t("help.studyAreas.reference"), icon: LibraryBig },
+  };
 
   return (
     <div className="flex flex-col h-full bg-background text-foreground overflow-hidden">
@@ -391,7 +386,7 @@ export function StudyShell({
                       : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
                   }`}
                 >
-                  {areaMeta[area].label}
+                  {t(`help.studyAreas.${area}`)}
                 </button>
               );
             })}
@@ -513,7 +508,7 @@ export function StudyShell({
                       <span className="min-w-0 flex-1">
                         <span className="flex items-center justify-between gap-2">
                           <span className="font-bold text-sm text-foreground">
-                            {areaMeta[area].label}
+                            {t(`help.studyAreas.${area}`)}
                           </span>
                           {area !== "reference" && (
                             <span className="text-xs font-bold text-muted-foreground">
@@ -521,9 +516,7 @@ export function StudyShell({
                             </span>
                           )}
                         </span>
-                        <span className="mt-0.5 block text-xs text-muted-foreground truncate">
-                          {areaMeta[area].description}
-                        </span>
+
                         {area !== "reference" && (
                           <span
                             className="mt-1.5 block h-1.5 overflow-hidden rounded-full bg-secondary"

@@ -1,4 +1,33 @@
 {
+  "help": {
+    "chooseAnswer": "Choose an answer",
+    "completed": "{completed}/{total} complete",
+    "aboutLesson": "About this lesson",
+    "aboutCourse": "About this course",
+    "aboutTopic": "About {title}",
+    "aboutProgress": "About your progress",
+    "howItWorks": "How it works",
+    "sourceDetails": "Source and context",
+    "topicFiltersActive": "Topic: {topic}",
+    "topicFilters": "Topic filters",
+    "conversationLevel": "B1–C2",
+    "businessTopics": {
+      "0": "All topics",
+      "1": "Meetings",
+      "2": "Negotiation",
+      "3": "Leadership",
+      "4": "Crisis and strategy",
+      "5": "Sales and pitching",
+      "6": "Teamwork"
+    },
+    "studyAreas": {
+      "learn": "Learn",
+      "use": "Use in context",
+      "practice": "Practice",
+      "review": "Review",
+      "reference": "Reference"
+    }
+  },
   "app": {
     "title": "WordPix",
     "tagline": "Learn English Through Pictures",
@@ -657,7 +686,7 @@
     "reviewQueueCount": "{count} {word} in Review queue",
     "word": "word",
     "words": "words",
-    "nextStep": "Next Recommended Step",
+    "nextStep": "Next activity",
     "startLearning": "Start Learning",
     "selfPacedActivity": "{minutes} min self-paced activity",
     "selfPacedModule": "Self-paced study module",
@@ -665,7 +694,7 @@
     "doneCount": "{completed} / {total} Done",
     "minutesShort": "{minutes} min",
     "languageToolkit": "Language Toolkit",
-    "referenceGuideTitle": "Reference & Pronunciation Guide",
+    "referenceGuideTitle": "Reference",
     "referenceGuideDesc": "Browse full vocabulary tables, word families, register, and pronunciation IPA",
     "open": "Open",
     "noVocabFound": "No vocabulary found for this topic.",
@@ -702,7 +731,7 @@
     "rememberedIt": "I remembered it",
     "allCaughtUp": "All caught up!",
     "allCaughtUpDesc": "You don't have any difficult words queued for review. Any words you struggle with during Learn or Practice will automatically appear here.",
-    "useInContext": "Use in Context",
+    "useInContext": "Use in context",
     "applyEveryday": "Apply in Everyday Situations",
     "applyEverydayDesc": "Explore authentic reading passages, spoken dialogues, idioms, common mistakes, and cultural insights.",
     "useInContextStep": "Use in Context · {current} of {total}",
@@ -1551,7 +1580,7 @@
     "pilot": {
       "overview": {
         "eyebrow": "Lesson map",
-        "title": "What this lesson will help you do",
+        "title": "Your goal",
         "purpose": "Connect an action with the reason behind it, understand the Hadith's main message, and explain a personal purpose in clear English.",
         "timeLabel": "Time",
         "time": "About 25 minutes",
@@ -1582,7 +1611,7 @@
       "warmup": {
         "eyebrow": "Notice before reading",
         "title": "One action, different reasons",
-        "description": "Start with a familiar reflection. There is no score here—the goal is to activate your prior knowledge before reading.",
+        "description": "Choose your view. This activity is not scored.",
         "scenario": "Two people help clean the same room.",
         "prompt": "One wants to support the family. The other wants a reward. Their action looks the same, but their reasons are different.",
         "question": "What changes between the two people?",
@@ -1624,7 +1653,7 @@
       },
       "review": {
         "title": "Retrieve, check, and plan your review",
-        "description": "Answer from memory before opening each model answer. This strengthens recall more than rereading.",
+        "description": "Try from memory, then check the answer.",
         "items": {
           "message": {
             "question": "What is the main message of the Hadith?",
@@ -1690,7 +1719,7 @@
     "backToExplore": "Back to learning path",
     "advancedPathway": "B1–C2 Advanced Pathway",
     "unitCountLabel": "40 Substantive Discussion Units",
-    "heroDescription": "Practise structured spoken English for real-world workplace and academic scenarios (B1–C2). Move from expressing everyday opinions to defending claims, analyzing assumptions, and navigating complex discussions.",
+    "heroDescription": "Practise opinions, explanations, and discussion in English.",
     "totalUnits": "Total Units",
     "inProgress": "In Progress",
     "mastered": "Mastered",
@@ -1911,7 +1940,7 @@
       "reviewLater": "Review later",
       "masteryCompletedTitle": "Spaced Repetition Mastery Completed!",
       "masteryCompletedSubtitle": "You successfully reviewed all {count} target items from Unit {number}.",
-      "masteryCompletedNote": "Finishing all prompts helps schedule the next review for each item. Mistakes are an active part of the spaced recall cycle and keep your vocabulary retention sharp.",
+      "masteryCompletedNote": "Your answers help schedule your next review.",
       "reviewAgain": "Review Prompts Again",
       "beginLessonWarmup": "Begin Lesson Warm-Up",
       "remainingPrompts": "Remaining Prompts ({count})",
@@ -1946,7 +1975,7 @@
       "stageTag": "Stage 3 · Language Bank",
       "targetTermsCount": "{count} Target Workplace Terms",
       "heading": "3. Language Bank — Core Vocabulary",
-      "subtitle": "Reference matrix of target terminology, authentic workplace collocations, and idiomatic expressions with concept artwork.",
+      "subtitle": "Learn useful words and phrases.",
       "searchAria": "Search vocabulary",
       "filterAll": "All ({count})",
       "showingCount": "Showing {shown} of {total} terms",
@@ -1969,7 +1998,7 @@
     "discussion": {
       "stageTag": "Stage 6 · Discussion Questions",
       "analysisTag": "{level} · Deep Strategic Analysis",
-      "subtitle": "Write down your personal insights or prepare these discussion answers before your live meetings or speaking task.",
+      "subtitle": "Choose your view.",
       "continueToSpeaking": "Continue to Speaking Task"
     },
     "speaking": {
@@ -2045,8 +2074,8 @@
     "completedTitle": "Quiz Completed!",
     "completedSubtitle": "Great job completing this practice exercise.",
     "restart": "Restart Quiz",
-    "correctFeedback": "Correct! Excellent work.",
-    "incorrectFeedback": "Incorrect. Review the explanation below.",
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not yet. Check the answer.",
     "explanation": "Explanation",
     "questionPillLabel": "Question {number}",
     "pageOf": "Page {current} of {total}",

@@ -24,8 +24,8 @@ import { HomeDashboard } from "../core/HomeDashboard";
 const LearningPath = lazy(() =>
   import("../core/LearningPath").then((m) => ({ default: m.LearningPath }))
 );
-const ExploreWorlds = lazy(() =>
-  import("../core/ExploreWorlds").then((m) => ({ default: m.ExploreWorlds }))
+const LibraryScreen = lazy(() =>
+  import("../core/ExploreWorlds").then((m) => ({ default: m.LibraryScreen }))
 );
 const ProfileStats = lazy(() =>
   import("../core/ProfileStats").then((m) => ({ default: m.ProfileStats }))
@@ -342,7 +342,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
     }
     if (state.id === "home") return <HomeDashboard dispatch={dispatch} />;
     if (state.id === "learn" || state.id === "explore") return <LearningPath dispatch={dispatch} />;
-    if (state.id === "library") return <ExploreWorlds dispatch={dispatch} />;
+    if (state.id === "library") return <LibraryScreen dispatch={dispatch} />;
     if (state.id === "practice") return <SkillExerciseHub dispatch={dispatch} />;
     if (state.id === "review") return <ReviewMasteryReview dispatch={dispatch} />;
     if (state.id === "profile") return <ProfileStats dispatch={dispatch} />;

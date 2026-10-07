@@ -6,7 +6,7 @@ import { useI18n } from "../../context/I18nContext";
 import { CONVERSATION_UNITS } from "./conversationCatalog";
 import { CONVERSATION_STAGE_IDS, type CefrLevel, type ConversationUnit } from "./conversationTypes";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
-import { Button, CurriculumTopicCard, EmptyState } from "../../shared";
+import { Button, CurriculumHeroHeader, CurriculumTopicCard, EmptyState } from "../../shared";
 
 interface Props {
   dispatch: Dispatch<Action>;
@@ -49,8 +49,6 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
       (p) => p.status === "in-progress" && p.completedStages.length > 0
     ).length;
   }, [progressState]);
-
-  const completionPercent = Math.round((masteredCount / CONVERSATION_UNITS.length) * 100);
 
   // Active / resume unit
   const continueUnit = useMemo(() => {
@@ -106,91 +104,43 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
           {t("conversation.backToExplore")}
         </Button>
 
-        {/* Hero Header Card */}
-        <header className="rounded-3xl border-2 border-primary/35 bg-gradient-to-br from-primary/15 via-card to-card p-6 sm:p-8 shadow-wp-sm">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-lg bg-primary/20 px-2.5 py-1 text-xs font-black uppercase tracking-wider text-primary">
-              {t("conversation.advancedPathway")}
-            </span>
-            <span className="text-xs font-semibold text-muted-foreground">
-              {t("conversation.unitCountLabel")}
-            </span>
-          </div>
-
-          <h1
-            id="curriculum-main-title"
-            className="mt-3 text-3xl sm:text-4xl font-black tracking-tight text-foreground"
-          >
-            {t("conversation.title")}
-          </h1>
-          <p className="mt-2 text-sm sm:text-base font-medium text-muted-foreground max-w-3xl leading-relaxed">
-            {t("conversation.heroDescription")}
-          </p>
-
-          {/* Progress Overview Bar & Metrics */}
-          <div className="mt-4 grid grid-cols-2 gap-3 sm:mt-6 sm:grid-cols-4">
-            <div className="rounded-2xl border border-border bg-background/80 p-4">
-              <span className="text-xs font-bold uppercase text-muted-foreground">
-                {t("conversation.totalUnits")}
-              </span>
-              <p className="mt-1 text-2xl font-black text-foreground">40</p>
-            </div>
-            <div className="rounded-2xl border border-border bg-background/80 p-4">
-              <span className="text-xs font-bold uppercase text-muted-foreground">
-                {t("conversation.inProgress")}
-              </span>
-              <p className="mt-1 text-2xl font-black text-foreground">{inProgressCount}</p>
-            </div>
-            <div className="rounded-2xl border border-border bg-background/80 p-4">
-              <span className="text-xs font-bold uppercase text-muted-foreground">
-                {t("conversation.mastered")}
-              </span>
-              <p className="mt-1 text-2xl font-black text-foreground">{masteredCount}</p>
-            </div>
-            <div className="rounded-2xl border border-border bg-background/80 p-4">
-              <span className="text-xs font-bold uppercase text-muted-foreground">
-                {t("conversation.overallProgress")}
-              </span>
-              <p className="mt-1 text-2xl font-black text-primary">{completionPercent}%</p>
-            </div>
-          </div>
-
-          {/* Continue Learning CTA */}
-          {continueUnit && (
-            <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-primary/30 bg-primary/10 p-4 sm:p-5">
-              <div className="flex flex-col">
-                <span className="text-xs font-bold uppercase text-primary">
-                  {isFirstTime
-                    ? t("conversation.getStartedLabel")
-                    : t("conversation.continueLabel")}
-                </span>
-                <span className="text-base sm:text-lg font-black text-foreground mt-0.5">
+        <CurriculumHeroHeader
+          titleId="curriculum-main-title"
+          title={t("conversation.title")}
+          badge={t("help.conversationLevel")}
+          description={t("conversation.heroDescription")}
+          metrics={[
+            {
+              label: t("conversation.mastered"),
+              value: `${masteredCount} / ${CONVERSATION_UNITS.length}`,
+            },
+          ]}
+          action={
+            continueUnit && (
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <p className="font-semibold text-foreground">
                   {t("conversation.unitTitle", {
                     number: continueUnit.unitNumber,
                     title: continueUnit.title,
                   })}
-                </span>
-              </div>
-              <button
-                type="button"
-                onClick={() =>
-                  dispatch({
-                    type: "OPEN_CONVERSATION_LESSON",
-                    unitId: continueUnit.id,
-                    stage:
-                      CONVERSATION_STAGE_IDS[progressState[continueUnit.id]?.currentStage ?? 0],
-                  })
-                }
-                className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-primary px-6 py-2.5 font-bold text-primary-foreground shadow-wp-xs hover:opacity-95 active:scale-[0.99] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
-              >
-                <span>
+                </p>
+                <Button
+                  onClick={() =>
+                    dispatch({
+                      type: "OPEN_CONVERSATION_LESSON",
+                      unitId: continueUnit.id,
+                      stage:
+                        CONVERSATION_STAGE_IDS[progressState[continueUnit.id]?.currentStage ?? 0],
+                    })
+                  }
+                  iconLeft={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
+                >
                   {isFirstTime ? t("conversation.startLesson") : t("conversation.resumeLesson")}
-                </span>
-                <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
-              </button>
-            </div>
-          )}
-        </header>
+                </Button>
+              </div>
+            )
+          }
+        />
 
         {/* Search Bar & CEFR Level Filter Tabs */}
         <div className="flex flex-col gap-4">

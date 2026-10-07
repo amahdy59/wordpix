@@ -1,13 +1,6 @@
+import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useMemo } from "react";
-import {
-  ArrowRight,
-  RotateCcw,
-  WifiOff,
-  CheckCircle2,
-  Library,
-  BookOpen,
-  Sparkles,
-} from "lucide-react";
+import { ArrowRight, RotateCcw, WifiOff, CheckCircle2, Library, BookOpen } from "lucide-react";
 import { getDueWordsForReview, type WordLearningState } from "../../features/gamification/sm2";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
@@ -188,17 +181,9 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   <h2 className="font-sans font-black text-foreground text-2xl lg:text-3xl mt-4">
                     {activeLesson.name}
                   </h2>
-                  <p className="font-sans text-muted-foreground text-sm mt-1 leading-relaxed">
-                    {activeLesson.description}
-                  </p>
-                  <div className="mt-2.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold text-primary">
-                    <Sparkles className="size-3.5 shrink-0" aria-hidden="true" />
-                    <span>
-                      {t("dashboard.lessonOutcome", {
-                        defaultValue: `Outcome: Master core vocabulary in ${activeLesson.name}`,
-                      })}
-                    </span>
-                  </div>
+                  <HelpDisclosure label={t("help.aboutLesson")}>
+                    <p>{activeLesson.description}</p>
+                  </HelpDisclosure>
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center gap-3 mt-4">
@@ -244,7 +229,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     }
                     title={t("dashboard.studyGuideAria", { unit: activeUnit.name })}
                     aria-label={t("dashboard.studyGuideAria", { unit: activeUnit.name })}
-                    className="w-full sm:w-auto px-5 py-3.5 bg-secondary text-primary hover:bg-primary/10 border border-primary/20 rounded-2xl font-sans font-bold text-sm min-h-[52px] flex items-center justify-center gap-2 transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
+                    className="w-full sm:w-auto px-3 py-2 text-foreground hover:bg-muted rounded-xl font-sans font-bold text-sm min-h-[52px] flex items-center justify-center gap-2 transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
                   >
                     <Library className="size-4 shrink-0" />
                     <span>{t("dashboard.studyGuide")}</span>

@@ -85,13 +85,10 @@ export function ReferenceArea({ materials }: Props) {
               <h3 className="flex items-center gap-4">
                 <span className="min-w-0 flex-1">
                   <span className="block font-bold">{section.title}</span>
-                  <span className="mt-0.5 block text-sm font-normal text-muted-foreground">
-                    {section.description}
-                  </span>
                 </span>
                 <ChevronDown
                   aria-hidden
-                  className="shrink-0 text-muted-foreground transition-transform group-open:rotate-180"
+                  className="shrink-0 text-muted-foreground motion-safe:transition-transform group-open:rotate-180"
                   size={20}
                 />
               </h3>

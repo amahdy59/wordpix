@@ -1,5 +1,5 @@
 import { memo, useState, useId, useMemo } from "react";
-import { Compass, ChevronDown, Award, Search, X, Library, Play, BookOpen } from "lucide-react";
+import { Compass, ChevronDown, Search, X, Play, BookOpen } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
@@ -43,7 +43,7 @@ function searchUnits(units: CourseUnit[], query: string): CourseUnit[] {
  * Pure reference & search tool for all 200 curriculum vocabulary units.
  * Features instant lookup, CEFR stage filters, mastery tracking, and direct study access.
  */
-export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
+export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
   const { progress } = useProgress();
   const { t } = useI18n();
 
@@ -213,44 +213,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
     >
       {/* Page Header */}
       <motion.div variants={staggerItem}>
-        <PageHeader
-          variant="hero"
-          eyebrow={
-            <span className="flex items-center gap-1.5 uppercase tracking-wider font-extrabold text-xs">
-              <Library className="size-4" aria-hidden="true" />
-              <span>{t("explore.pathwayBadge")}</span>
-            </span>
-          }
-          title={t("explore.pageTitle")}
-          subtitle={t("explore.pageSubtitle")}
-          actions={
-            <div className="hidden shrink-0 flex-col gap-1.5 sm:flex rounded-2xl border border-primary/20 bg-primary/5 p-4 sm:items-end">
-              <div className="flex items-center gap-2">
-                <Award className="size-5 text-primary" aria-hidden="true" />
-                <span className="font-bold text-foreground text-sm">
-                  {overallStats.masteredWords > 0
-                    ? t("explore.curriculumMastery")
-                    : t("explore.topicsAvailable")}
-                </span>
-              </div>
-              {overallStats.masteredWords > 0 ? (
-                <>
-                  <span className="font-black text-2xl text-primary">{overallStats.percent}%</span>
-                  <span className="text-xs text-muted-foreground font-medium">
-                    {t("explore.masteryFraction", {
-                      mastered: overallStats.masteredWords,
-                      total: overallStats.totalWords,
-                    })}
-                  </span>
-                </>
-              ) : (
-                <span className="font-black text-2xl text-primary">
-                  {overallStats.totalUnits} {t("explore.unitsCount")}
-                </span>
-              )}
-            </div>
-          }
-        />
+        <PageHeader variant="plain" title={t("nav.library")} />
       </motion.div>
 
       {/* Search & Filter Controls */}

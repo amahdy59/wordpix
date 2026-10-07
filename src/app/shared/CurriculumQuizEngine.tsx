@@ -208,15 +208,7 @@ function QuestionCard({
           </div>
 
           {question.explanation && (
-            <div className="mt-3.5 rounded-2xl border border-border/80 bg-card/85 p-4 shadow-wp-xs backdrop-blur-xs">
-              <p className="text-xs font-black uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
-                <Sparkles className="size-3.5 text-primary" aria-hidden />
-                <span>{t("quiz.explanation") || "Explanation"}</span>
-              </p>
-              <p className="mt-1.5 text-sm sm:text-base font-medium leading-relaxed text-foreground">
-                {question.explanation}
-              </p>
-            </div>
+            <p className="mt-3 text-sm leading-relaxed text-foreground">{question.explanation}</p>
           )}
         </div>
       )}

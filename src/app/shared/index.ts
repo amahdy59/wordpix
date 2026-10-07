@@ -35,3 +35,7 @@ export { CurriculumQuizEngine, CanDoChallengeCard } from "./CurriculumQuizEngine
 export type { QuizQuestion, QuizResult } from "./CurriculumQuizEngine";
 export { CurriculumTopicCard } from "./CurriculumTopicCard";
 export type { CurriculumTopicCardProps } from "./CurriculumTopicCard";
+
+export { HelpDisclosure } from "./HelpDisclosure";
+
+export { CurriculumHeroHeader } from "./CurriculumHeroHeader";

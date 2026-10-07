@@ -141,7 +141,7 @@ describe("initial runtime bundle stays lean", () => {
   it("lazy-loads non-default tabs in RouterView", () => {
     const routerView = readFileSync(join(appDir, "router", "RouterView.tsx"), "utf8");
     expect(routerView).toMatch(/const LearningPath = lazy\(/);
-    expect(routerView).toMatch(/const ExploreWorlds = lazy\(/);
+    expect(routerView).toMatch(/const LibraryScreen = lazy\(/);
     expect(routerView).toMatch(/const ProfileStats = lazy\(/);
     expect(routerView).toMatch(/const SkillExerciseHub = lazy\(/);
   });

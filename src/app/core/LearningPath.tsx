@@ -1,3 +1,4 @@
+import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useMemo, useState } from "react";
 import {
   ArrowRight,
@@ -131,7 +132,6 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           </span>
         }
         title={t("learn.title")}
-        subtitle={t("learn.subtitle")}
         actions={
           <Button
             variant="outline"
@@ -156,9 +156,9 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <h2 id="recommended-heading" className="text-xl font-black text-foreground sm:text-2xl">
             {recommendedUnit.name}
           </h2>
-          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-            {getUnitCurriculumDesign(recommendedUnit).outcome}
-          </p>
+          <HelpDisclosure label={t("help.aboutLesson")}>
+            <p>{getUnitCurriculumDesign(recommendedUnit).outcome}</p>
+          </HelpDisclosure>
         </div>
         <button
           type="button"
@@ -202,9 +202,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
               {t("learn.routeLabel")}
             </p>
             <h2 className="mt-1 text-xl font-black text-foreground">{t("learn.routeHeading")}</h2>
-            <p className="mt-1 max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground">
-              {t("learn.routeDescription")}
-            </p>
+
             <div className="mt-4 max-w-xl">
               <ProgressBar
                 progressPercent={pathPercent}
@@ -325,19 +323,13 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
               {t("learn.specialCurricula")}
             </h2>
           </div>
-          <p className="text-xs sm:text-sm text-muted-foreground font-medium">
-            {t("learn.specialCurriculaSubheading", {
-              defaultValue:
-                "Targeted courses to deepen pronunciation, sacred texts, spoken fluency, and workplace English alongside your main path.",
-            })}
-          </p>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
-            className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[140px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
@@ -346,14 +338,12 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                   {t("learn.pronunciationScope")}
                 </span>
               </div>
-              <p className="mt-3 text-xs font-black uppercase tracking-wide text-primary">
-                {t("pronunciation.curriculumBadge")}
-              </p>
+
               <h3 className="mt-1 text-lg font-black text-foreground">
                 {t("pronunciation.curriculumTitle")}
               </h3>
               <p className="mt-1.5 text-xs leading-5 text-muted-foreground">
-                {t("pronunciation.curriculumCardDescription", {
+                {t("help.completed", {
                   completed: Object.values(learnerState.pronunciationProgress).filter(
                     (item) => item.status === "mastered"
                   ).length,
@@ -370,7 +360,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
-            className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[140px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
@@ -379,14 +369,12 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                   {t("learn.hadithScope")}
                 </span>
               </div>
-              <p className="mt-3 text-xs font-black uppercase tracking-wide text-primary">
-                {t("hadith.curriculumBadge")}
-              </p>
+
               <h3 className="mt-1 text-lg font-black text-foreground">
                 {t("hadith.curriculumTitle")}
               </h3>
               <p className="mt-1.5 text-xs leading-5 text-muted-foreground">
-                {t("hadith.curriculumCardDescription", {
+                {t("help.completed", {
                   completed: Object.values(learnerState.hadithProgress).filter(
                     (item) => item.status === "mastered"
                   ).length,
@@ -403,7 +391,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
-            className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[140px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
@@ -412,9 +400,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                   {t("learn.conversationScope")}
                 </span>
               </div>
-              <p className="mt-3 text-xs font-black uppercase tracking-wide text-primary">
-                {t("conversation.badge")}
-              </p>
+
               <h3 className="mt-1 text-lg font-black text-foreground">{t("conversation.title")}</h3>
               <p className="mt-1.5 text-xs leading-5 text-muted-foreground">
                 {t("conversation.completedUnits", {
@@ -434,7 +420,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
-            className="group min-h-[180px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
+            className="group min-h-[140px] rounded-3xl border border-border bg-wp-card p-5 text-start shadow-wp-xs hover:border-primary/60 hover:bg-primary/5 motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-6 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2">
@@ -443,9 +429,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                   {t("learn.businessScope")}
                 </span>
               </div>
-              <p className="mt-3 text-xs font-black uppercase tracking-wide text-primary">
-                {t("business.badge")}
-              </p>
+
               <h3 className="mt-1 text-lg font-black text-foreground">{t("business.title")}</h3>
               <p className="mt-1.5 text-xs leading-5 text-muted-foreground">
                 {t("business.completedUnits", {

@@ -1,3 +1,4 @@
+import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useState } from "react";
 import { createPortal } from "react-dom";
 import {
@@ -130,9 +131,6 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               >
                 {t("settings.title")}
               </h2>
-              <p className="font-sans text-xs text-muted-foreground mt-0.5">
-                {t("settings.subtitle")}
-              </p>
             </div>
           </div>
 
@@ -442,9 +440,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     </button>
                   </div>
                 </div>
-                <p className="font-sans text-xs text-muted-foreground leading-relaxed">
-                  {t("settings.audioEngineDesc")}
-                </p>
+                <HelpDisclosure label={t("help.howItWorks")}>
+                  <p>{t("settings.audioEngineDesc")}</p>
+                </HelpDisclosure>
               </div>
 
               <hr className="border-border/60" />
@@ -456,9 +454,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.speakingDrills")}
                     </span>
-                    <p className="font-sans text-xs text-muted-foreground">
-                      {t("settings.speakingDrillsHint")}
-                    </p>
+                    <HelpDisclosure label={t("help.howItWorks")}>
+                      <p>{t("settings.speakingDrillsHint")}</p>
+                    </HelpDisclosure>
                   </div>
                   <button
                     type="button"
@@ -483,9 +481,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.timedExercises")}
                     </span>
-                    <p className="font-sans text-xs text-muted-foreground">
-                      {t("settings.timedExercisesHint")}
-                    </p>
+                    <HelpDisclosure label={t("help.howItWorks")}>
+                      <p>{t("settings.timedExercisesHint")}</p>
+                    </HelpDisclosure>
                   </div>
                   <button
                     type="button"
@@ -510,9 +508,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.autoAdvance")}
                     </span>
-                    <p className="font-sans text-xs text-muted-foreground">
-                      {t("settings.autoAdvanceHint")}
-                    </p>
+                    <HelpDisclosure label={t("help.howItWorks")}>
+                      <p>{t("settings.autoAdvanceHint")}</p>
+                    </HelpDisclosure>
                   </div>
                   <button
                     type="button"
@@ -537,9 +535,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.speakAnswers")}
                     </span>
-                    <p className="font-sans text-xs text-muted-foreground">
-                      {t("settings.speakAnswersHint")}
-                    </p>
+                    <HelpDisclosure label={t("help.howItWorks")}>
+                      <p>{t("settings.speakAnswersHint")}</p>
+                    </HelpDisclosure>
                   </div>
                   <button
                     type="button"
@@ -564,9 +562,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.listeningDrills")}
                     </span>
-                    <p className="font-sans text-xs text-muted-foreground">
-                      {t("settings.listeningDrillsHint")}
-                    </p>
+                    <HelpDisclosure label={t("help.howItWorks")}>
+                      <p>{t("settings.listeningDrillsHint")}</p>
+                    </HelpDisclosure>
                   </div>
                   <button
                     type="button"
