@@ -44,7 +44,8 @@ function readConfig(env = process.env) {
   const accessKeyId = env.R2_ACCESS_KEY_ID || env.WORDPIX_R2_ACCESS_KEY_ID;
   const secretAccessKey = env.R2_SECRET_ACCESS_KEY || env.WORDPIX_R2_SECRET_ACCESS_KEY;
   const bucket = env.R2_BUCKET || env.WORDPIX_R2_BUCKET_NAME;
-  const endpoint = env.R2_ENDPOINT || (accountId ? `https://${accountId}.r2.cloudflarestorage.com` : "");
+  const endpoint =
+    env.R2_ENDPOINT || (accountId ? `https://${accountId}.r2.cloudflarestorage.com` : "");
   const missing = Object.entries({
     "R2_ACCOUNT_ID or CLOUDFLARE_ACCOUNT_ID": accountId,
     "R2_ACCESS_KEY_ID or WORDPIX_R2_ACCESS_KEY_ID": accessKeyId,
@@ -127,12 +128,7 @@ function sign({ config, method, key, query = "", payloadHash, extraHeaders = {},
   ].join("\n");
 
   const scope = `${dateStamp}/${REGION}/${SERVICE}/aws4_request`;
-  const stringToSign = [
-    "AWS4-HMAC-SHA256",
-    amzDate,
-    scope,
-    sha256Hex(canonicalRequest),
-  ].join("\n");
+  const stringToSign = ["AWS4-HMAC-SHA256", amzDate, scope, sha256Hex(canonicalRequest)].join("\n");
 
   let signingKey = hmac(`AWS4${config.secretAccessKey}`, dateStamp);
   signingKey = hmac(signingKey, REGION);
@@ -233,6 +229,22 @@ function createClient(env = process.env) {
       return buffer.length;
     },
 
+    /** Create-only upload: the signed condition protects existing objects. */
+    async putIfAbsent(key, body, { contentType } = {}) {
+      const buffer = Buffer.isBuffer(body) ? body : Buffer.from(body);
+      const response = await request("PUT", key, {
+        body: buffer,
+        extraHeaders: {
+          "if-none-match": "*",
+          "content-type": contentType || "application/octet-stream",
+          "content-length": String(buffer.length),
+          "cache-control": "public, max-age=31536000, immutable",
+        },
+        expect: [200, 201, 412],
+      });
+      return response.status !== 412;
+    },
+
     async get(key) {
       const res = await request("GET", key, { expect: [200, 404] });
       if (res.status === 404) return null;
@@ -265,7 +277,9 @@ function createClient(env = process.env) {
             .replace(/&gt;/g, ">")
             .replace(/&quot;/g, '"')
             .replace(/&apos;/g, "'");
-        keys.push(...[...xml.matchAll(/<Key>([\s\S]*?)<\/Key>/g)].map((match) => decodeXml(match[1])));
+        keys.push(
+          ...[...xml.matchAll(/<Key>([\s\S]*?)<\/Key>/g)].map((match) => decodeXml(match[1]))
+        );
         continuationToken =
           xml.match(/<NextContinuationToken>([\s\S]*?)<\/NextContinuationToken>/)?.[1] ?? "";
         if (continuationToken) continuationToken = decodeXml(continuationToken);

@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import { ExerciseStory } from "../exercises/ExerciseStory";
 import { COURSE_UNITS, type VocabularyItem } from "../data/lessons";
 import { loadUnitVocabulary } from "../data/vocabulary";
@@ -38,10 +38,7 @@ describe("ExerciseStory — Curriculum Usage Scenes Integration", () => {
 
     render(<ExerciseStory step={5} words={mockFarmWords} lessonId="farm-1" dispatch={dispatch} />);
 
-    await waitFor(() => {
-      expect(screen.getByRole("button", { name: /3\. Dialogue/i })).toBeInTheDocument();
-    });
-    expect(screen.getByRole("button", { name: /3\. Usage Scenes/i })).toBeInTheDocument();
+    expect(await screen.findByRole("button", { name: /3\. Usage Scenes/i })).toBeInTheDocument();
   });
 
   it("gracefully falls back to dialogue for lessons without curriculum usage JSON", async () => {

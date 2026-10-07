@@ -69,6 +69,8 @@ export default defineConfig(async () => {
       },
     },
     build: {
+      // Opt-in for release sessions that must preserve every existing local file.
+      emptyOutDir: process.env.WORDPIX_PRESERVE_BUILD_FILES !== "1",
       chunkSizeWarningLimit: 600,
       rollupOptions: {
         output: {

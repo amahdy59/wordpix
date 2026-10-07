@@ -2,7 +2,10 @@ import { useMemo, useState } from "react";
 import { BookOpen, ArrowRight, UserCheck, MessageSquareQuote, Volume2, Users } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
-import { RichPassageText } from "../../../shared/RichPassageText";
+import { TimedPassageText } from "../../../shared/TimedPassageText";
+import { getBusinessReadingAudio } from "../businessReadingAudio";
+import { useLearner } from "../../../context/LearnerContext";
+import { PlaybackSpeedControl } from "../../../shared/PlaybackSpeedControl";
 import { VocabularyDetailModal } from "../../../shared/VocabularyDetailModal";
 import type { VocabularyTableItem } from "../../../shared/CurriculumVocabularyTable";
 import { resolveAssetUrl } from "../../../../utils/assetUrl";
@@ -15,14 +18,25 @@ interface Props {
 
 export function BusinessInputStage({ unit, onNext }: Props) {
   const { t } = useI18n();
-  const [playingIdx, setPlayingIdx] = useState<number | null>(null);
+  const [playingIdx, setPlayingIdx] = useState<number | "full" | null>(null);
   const [activeTerm, setActiveTerm] = useState<string | null>(null);
+  const [mediaTime, setMediaTime] = useState(0);
+  const [hasMediaTiming, setHasMediaTiming] = useState(false);
+  const [playbackRate, setPlaybackRate] = useState(0.85);
+  const { state: learnerState } = useLearner();
+  const listeningEnabled = learnerState.accessibility.includeListening;
+  const fullText = `${unit.mainInput.title}. ${unit.mainInput.context} ${unit.mainInput.dialogue.map((line) => line.text).join(" ")}`;
+  const fullRecording = getBusinessReadingAudio(unit.id, fullText);
 
   const audio = useAudio({
     lang: "en-US",
-    rate: 0.95,
+    rate: playbackRate,
     onEnded: () => setPlayingIdx(null),
     onError: () => setPlayingIdx(null),
+    onTimeUpdate: (time, duration) => {
+      setMediaTime(time);
+      setHasMediaTiming(duration > 0);
+    },
   });
 
   // Extract unique speakers (excluding Narrator)
@@ -70,14 +84,17 @@ export function BusinessInputStage({ unit, onNext }: Props) {
     return null;
   }, [activeTerm, unit.languageBank]);
 
-  const handleSpeak = (text: string, idx: number) => {
+  const handleSpeak = (text: string, idx: number | "full") => {
+    if (!listeningEnabled || !audio.isSupported) return;
     if (playingIdx === idx && audio.isPlaying) {
       audio.stop();
       setPlayingIdx(null);
       return;
     }
     setPlayingIdx(idx);
-    audio.speak(text);
+    setMediaTime(0);
+    setHasMediaTiming(false);
+    audio.speak(text, "en-US", getBusinessReadingAudio(unit.id, text)?.key);
   };
 
   return (
@@ -108,13 +125,52 @@ export function BusinessInputStage({ unit, onNext }: Props) {
           {unit.mainInput.title}
         </h2>
 
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <button
+            type="button"
+            onClick={() => handleSpeak(fullText, "full")}
+            disabled={!listeningEnabled || !audio.isSupported}
+            aria-pressed={playingIdx === "full" && audio.isPlaying}
+            className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-border px-4 text-sm font-bold text-foreground disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <Volume2 className="size-4" aria-hidden />
+            {playingIdx === "full" && audio.isPlaying
+              ? t("conversation.pauseNarration")
+              : t("conversation.listenReading")}
+          </button>
+          <PlaybackSpeedControl
+            value={playbackRate}
+            onChange={(rate) => {
+              audio.stop();
+              setPlayingIdx(null);
+              setPlaybackRate(rate);
+            }}
+            label={t("conversation.playbackSpeed")}
+            disabled={!listeningEnabled}
+            options={[
+              { value: 0.85, label: t("conversation.slowSpeed") },
+              { value: 1, label: t("conversation.normalSpeed") },
+            ]}
+          />
+        </div>
+        {(audio.status === "error" || audio.status === "unsupported") && (
+          <p role="status" className="mt-2 text-sm text-foreground">
+            {t("conversation.audioUnavailable")}
+          </p>
+        )}
+
         {unit.mainInput.context && (
           <div className="mt-4 rounded-2xl bg-muted/40 border border-border/80 p-4 sm:p-5">
             <span className="text-xs font-black uppercase tracking-wider text-muted-foreground block mb-1">
               {t("business.input.contextAndSetting")}
             </span>
             <p className="text-sm sm:text-base font-medium text-foreground leading-relaxed">
-              {unit.mainInput.context}
+              <TimedPassageText
+                text={unit.mainInput.context}
+                spans={fullRecording?.spans}
+                time={playingIdx === "full" && audio.isPlaying && hasMediaTiming ? mediaTime : null}
+                offset={unit.mainInput.title.length + 2}
+              />
             </p>
           </div>
         )}
@@ -163,6 +219,18 @@ export function BusinessInputStage({ unit, onNext }: Props) {
             const isAltSpeaker = speakerIndex % 2 === 1;
 
             const isPlaying = playingIdx === idx && audio.isPlaying;
+            const recording =
+              playingIdx === "full" ? fullRecording : getBusinessReadingAudio(unit.id, line.text);
+            const offset =
+              playingIdx === "full"
+                ? unit.mainInput.title.length +
+                  2 +
+                  unit.mainInput.context.length +
+                  1 +
+                  unit.mainInput.dialogue
+                    .slice(0, idx)
+                    .reduce((sum, previous) => sum + previous.text.length + 1, 0)
+                : 0;
             return (
               <div
                 key={idx}
@@ -190,17 +258,20 @@ export function BusinessInputStage({ unit, onNext }: Props) {
                       </span>
                     </div>
 
-                    <button
-                      type="button"
-                      onClick={() => handleSpeak(line.text, idx)}
-                      aria-label={`Listen to ${line.speaker}: "${line.text.slice(0, 30)}..."`}
-                      className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-xl text-muted-foreground hover:bg-muted hover:text-foreground transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
-                    >
-                      <Volume2
-                        className={`size-4 ${playingIdx === idx ? "text-primary animate-pulse" : ""}`}
-                        aria-hidden
-                      />
-                    </button>
+                    {listeningEnabled && (
+                      <button
+                        type="button"
+                        onClick={() => handleSpeak(line.text, idx)}
+                        aria-label={`Listen to ${line.speaker}: "${line.text.slice(0, 30)}..."`}
+                        aria-pressed={isPlaying}
+                        className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-xl text-muted-foreground hover:bg-muted hover:text-foreground transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+                      >
+                        <Volume2
+                          className={`size-4 ${playingIdx === idx ? "text-primary motion-safe:animate-pulse" : ""}`}
+                          aria-hidden
+                        />
+                      </button>
+                    )}
                   </div>
                 )}
 
@@ -209,8 +280,17 @@ export function BusinessInputStage({ unit, onNext }: Props) {
                     isNarrator ? "italic font-normal" : "font-medium text-foreground"
                   }`}
                 >
-                  <RichPassageText
+                  <TimedPassageText
                     text={line.text}
+                    spans={recording?.spans}
+                    time={
+                      audio.isPlaying &&
+                      hasMediaTiming &&
+                      (playingIdx === "full" || playingIdx === idx)
+                        ? mediaTime
+                        : null
+                    }
+                    offset={offset}
                     vocabTerms={vocabTerms}
                     onTermClick={(term) => setActiveTerm(term)}
                   />

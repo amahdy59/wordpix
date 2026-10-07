@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { BookOpen, Volume2, ArrowRight, ArrowLeft, CheckCircle2 } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
+import { getConversationReadingAudioKey } from "../conversationReadingAudio";
 import { useI18n } from "../../../../i18n";
 import { useLearner } from "../../../context/LearnerContext";
 import { useAudio } from "../../../shared/useAudio";
@@ -9,6 +10,8 @@ import { RichPassageText } from "../../../shared/RichPassageText";
 import { VocabularyDetailModal } from "../../../shared/VocabularyDetailModal";
 import type { VocabularyTableItem } from "../../../shared/CurriculumVocabularyTable";
 import { resolveAssetUrl } from "../../../../utils/assetUrl";
+import timing from "../conversationTranscriptTiming.json";
+import { TimedPassageText, type TranscriptSpan } from "../../../shared/TimedPassageText";
 
 interface Props {
   unit: ConversationUnit;
@@ -23,6 +26,9 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
   const [manualAudioStatus, setManualAudioStatus] = useState("");
   const [playbackRate, setPlaybackRate] = useState(0.85);
   const [activeTrack, setActiveTrack] = useState<"full" | number | null>(null);
+  const [mediaTime, setMediaTime] = useState(0);
+  const [hasMediaTiming, setHasMediaTiming] = useState(false);
+  const unitTiming: Partial<Record<string, TranscriptSpan[][]>> = timing;
   const listeningEnabled = learnerState.accessibility.includeListening;
   const audio = useAudio({
     lang: "en-US",
@@ -30,6 +36,10 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
     preferLocal: true,
     onEnded: () => setActiveTrack(null),
     onError: () => setActiveTrack(null),
+    onTimeUpdate: (time, duration) => {
+      setMediaTime(time);
+      setHasMediaTiming(duration > 0);
+    },
   });
   const isPlaying = audio.isPlaying;
 
@@ -54,7 +64,9 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
     audio.stop();
     setManualAudioStatus("");
     setActiveTrack(track);
-    audio.speak(text);
+    setMediaTime(0);
+    setHasMediaTiming(false);
+    audio.speak(text, "en-US", getConversationReadingAudioKey(unit.id, track, text));
   };
 
   const handleToggleAudio = () =>
@@ -224,8 +236,35 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
                 className={`relative rounded-2xl border p-4 pe-16 transition-colors ${paragraphIsPlaying ? "border-primary bg-primary/5 shadow-wp-xs" : "border-transparent hover:border-border hover:bg-muted/30"}`}
               >
                 <p>
-                  <RichPassageText
+                  <TimedPassageText
                     text={paragraph}
+                    time={isPlaying && hasMediaTiming ? mediaTime : null}
+                    spans={
+                      getConversationReadingAudioKey(
+                        unit.id,
+                        activeTrack === "full" ? "full" : pIdx,
+                        activeTrack === "full"
+                          ? `${unit.reading.title}. ${unit.reading.paragraphs.join(" ")}`
+                          : paragraph
+                      )
+                        ? unitTiming[unit.id]?.[
+                            activeTrack === "full"
+                              ? 0
+                              : typeof activeTrack === "number" && activeTrack === pIdx
+                                ? activeTrack + 1
+                                : -1
+                          ]
+                        : undefined
+                    }
+                    offset={
+                      activeTrack === "full"
+                        ? unit.reading.title.length +
+                          2 +
+                          unit.reading.paragraphs
+                            .slice(0, pIdx)
+                            .reduce((sum, text) => sum + text.length + 1, 0)
+                        : 0
+                    }
                     vocabTerms={allVocabTerms}
                     onTermClick={(term) => setActiveTerm(term)}
                   />

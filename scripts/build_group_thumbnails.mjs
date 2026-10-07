@@ -69,5 +69,7 @@ try {
     !resolve(temporary).startsWith(resolve(tmpdir()) + "/")
   )
     throw new Error("Unexpected temporary directory");
-  await rm(temporary, { recursive: true, force: true });
+  if (process.env.WORDPIX_PRESERVE_BUILD_FILES !== "1") {
+    await rm(temporary, { recursive: true, force: true });
+  }
 }

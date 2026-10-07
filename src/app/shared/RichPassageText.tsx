@@ -1,4 +1,4 @@
-import { memo, Fragment } from "react";
+import { memo, Fragment, useMemo } from "react";
 import { useI18n } from "../context/I18nContext";
 
 /**
@@ -23,12 +23,15 @@ interface Props {
   onTermClick?: (term: string) => void;
   /** Extra className applied to the wrapping `<span>`. */
   className?: string;
+  /** Raw-text offsets of the provider-timed sentence. Keeps controls mounted. */
+  highlightRange?: { start: number; end: number };
 }
 
-type PlainToken = { kind: "plain"; text: string };
-type BoldToken = { kind: "bold"; text: string };
-type VocabToken = { kind: "vocab"; text: string; term: string; bold: boolean };
+type PlainToken = { kind: "plain"; text: string; start: number };
+type BoldToken = { kind: "bold"; text: string; start: number };
+type VocabToken = { kind: "vocab"; text: string; term: string; bold: boolean; start: number };
 type Token = PlainToken | BoldToken | VocabToken;
+const EMPTY_TERMS: string[] = [];
 
 function escapeRegex(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -63,23 +66,26 @@ function tokeniseForVocab(
   segmentText: string,
   matchers: TermMatcher[],
   combinedRegex: RegExp | null,
-  bold: boolean
+  bold: boolean,
+  offset: number
 ): Token[] {
   if (!matchers.length || !combinedRegex) {
-    return [{ kind: bold ? "bold" : "plain", text: segmentText }];
+    return [{ kind: bold ? "bold" : "plain", text: segmentText, start: offset }];
   }
 
   const parts = segmentText.split(combinedRegex);
   const result: Token[] = [];
+  let cursor = offset;
 
   for (const part of parts) {
     if (!part) continue;
     const matched = matchers.find((m) => m.testRegex.test(part));
     if (matched) {
-      result.push({ kind: "vocab", text: part, term: matched.canonical, bold });
+      result.push({ kind: "vocab", text: part, term: matched.canonical, bold, start: cursor });
     } else {
-      result.push({ kind: bold ? "bold" : "plain", text: part });
+      result.push({ kind: bold ? "bold" : "plain", text: part, start: cursor });
     }
+    cursor += part.length;
   }
 
   return result;
@@ -100,16 +106,16 @@ function tokenise(text: string, vocabTerms: string[]): Token[] {
     // Plain segment before this bold span
     if (match.index > cursor) {
       const plain = text.slice(cursor, match.index);
-      result.push(...tokeniseForVocab(plain, matchers, combinedRegex, false));
+      result.push(...tokeniseForVocab(plain, matchers, combinedRegex, false, cursor));
     }
     // Bold segment inside **
-    result.push(...tokeniseForVocab(match[1], matchers, combinedRegex, true));
+    result.push(...tokeniseForVocab(match[1], matchers, combinedRegex, true, match.index + 2));
     cursor = match.index + match[0].length;
   }
 
   // Trailing plain segment
   if (cursor < text.length) {
-    result.push(...tokeniseForVocab(text.slice(cursor), matchers, combinedRegex, false));
+    result.push(...tokeniseForVocab(text.slice(cursor), matchers, combinedRegex, false, cursor));
   }
 
   return result;
@@ -117,24 +123,39 @@ function tokenise(text: string, vocabTerms: string[]): Token[] {
 
 export const RichPassageText = memo(function RichPassageText({
   text,
-  vocabTerms = [],
+  vocabTerms = EMPTY_TERMS,
   onTermClick,
   className,
+  highlightRange,
 }: Props) {
   const { t } = useI18n();
-  const tokens = tokenise(text, vocabTerms);
+  const tokens = useMemo(() => tokenise(text, vocabTerms), [text, vocabTerms]);
+  const content = (token: Token) => {
+    const from = Math.max(0, (highlightRange?.start ?? 0) - token.start);
+    const to = Math.min(token.text.length, (highlightRange?.end ?? 0) - token.start);
+    if (to <= from) return token.text;
+    return (
+      <>
+        {token.text.slice(0, from)}
+        <mark className="rounded bg-muted text-foreground underline decoration-primary decoration-2 underline-offset-4">
+          {token.text.slice(from, to)}
+        </mark>
+        {token.text.slice(to)}
+      </>
+    );
+  };
 
   return (
     <span className={className}>
       {tokens.map((token, i) => {
         switch (token.kind) {
           case "plain":
-            return <Fragment key={i}>{token.text}</Fragment>;
+            return <Fragment key={i}>{content(token)}</Fragment>;
 
           case "bold":
             return (
               <strong key={i} className="font-black text-foreground">
-                {token.text}
+                {content(token)}
               </strong>
             );
 
@@ -149,17 +170,17 @@ export const RichPassageText = memo(function RichPassageText({
                   `Learn more about ${token.term}`
                 }
                 className={[
-                  "inline-flex items-baseline rounded-md px-1 py-0.5 mx-0.5 align-baseline cursor-pointer transition-all",
+                  "inline-flex min-h-11 min-w-11 items-baseline rounded-md px-1 py-0.5 mx-0.5 align-baseline cursor-pointer motion-safe:transition-colors",
                   "bg-primary/10 text-primary border border-primary/25",
                   "underline decoration-primary/60 decoration-2 underline-offset-2",
-                  "hover:bg-primary/20 hover:border-primary/50 active:scale-[0.98]",
+                  "hover:bg-primary/20 hover:border-primary/50 motion-safe:active:scale-[0.98]",
                   "focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary",
                   token.bold ? "font-black" : "font-bold",
                 ]
                   .filter(Boolean)
                   .join(" ")}
               >
-                {token.text}
+                {content(token)}
               </button>
             );
         }

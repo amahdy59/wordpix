@@ -155,7 +155,9 @@ export function useAudio({
   // Support is knowable at first render, so it is the initial state rather than
   // a setState fired from inside an effect (which causes a cascading render).
   const [status, setStatus] = useState<AudioStatus>(() =>
-    typeof window === "undefined" || !window.speechSynthesis ? "unsupported" : "idle"
+    typeof window === "undefined" || (!window.speechSynthesis && typeof window.Audio !== "function")
+      ? "unsupported"
+      : "idle"
   );
   const synthRef = useRef<SpeechSynthesis | null>(
     typeof window !== "undefined" && window.speechSynthesis ? window.speechSynthesis : null
@@ -238,6 +240,7 @@ export function useAudio({
 
       const fallbackToSynthesis = (fallbackText: string, fallbackLang: string) => {
         if (!isCurrent()) return;
+        timeUpdateRef.current?.(0, 0);
         const synth = synthRef.current;
         if (!synth) {
           publish("unsupported");
@@ -302,6 +305,10 @@ export function useAudio({
         if (!isCurrent()) return;
         const audio = new Audio(blobUrl);
         audio.playbackRate = effectiveRate;
+        audio.volume = volume;
+        audio.ontimeupdate = () => {
+          if (isCurrent()) timeUpdateRef.current?.(audio.currentTime, audio.duration || 0);
+        };
         audio.onplaying = () => {
           clearStall();
           publish("playing");

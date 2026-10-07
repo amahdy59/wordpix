@@ -8,6 +8,7 @@ import { useLearner } from "../../../context/LearnerContext";
 import { CurriculumVocabularyTable } from "../../../shared/CurriculumVocabularyTable";
 import type { VocabularyTableItem } from "../../../shared/CurriculumVocabularyTable";
 import { getCurriculumAudioKey } from "../../shared/curriculumAudioManifest";
+import { getBusinessReadingAudio } from "../businessReadingAudio";
 
 interface Props {
   unit: BusinessUnit;
@@ -26,7 +27,11 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
   const handleSpeakTerm = (term: string) => {
     if (!listeningEnabled || !audio.isSupported) return;
     setActiveAudioText(term);
-    audio.speak(term, undefined, getCurriculumAudioKey(term) ?? undefined);
+    audio.speak(
+      term,
+      undefined,
+      getBusinessReadingAudio(unit.id, term)?.key ?? getCurriculumAudioKey(term) ?? undefined
+    );
   };
 
   // Extract unique types present in this unit
