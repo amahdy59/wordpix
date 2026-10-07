@@ -1,8 +1,20 @@
 import { expect, test } from "@playwright/test";
+import path from "node:path";
 import AxeBuilder from "@axe-core/playwright";
 import { FOCUSED_LESSON_WORD_LIMIT } from "../src/app/lesson/lessonSequence";
 
-test.use({ viewport: { width: 390, height: 844 } });
+// Layout checks decode the real local image corpus without relying on live R2.
+// Keep the service worker from bypassing these deterministic request fixtures.
+test.use({ viewport: { width: 390, height: 844 }, serviceWorkers: "block" });
+test.beforeEach(async ({ page }) => {
+  await page.route("**/word-images/construction-site/*.avif", async (route) => {
+    const filename = new URL(route.request().url()).pathname.split("/").pop()!;
+    await route.fulfill({
+      path: path.resolve("public/word-images/construction-site", filename),
+      contentType: "image/avif",
+    });
+  });
+});
 
 // Seed localStorage so the app boots past onboarding directly into the dashboard.
 // The nav state key is "wordpix:learner-state:v4" — set it to the explore screen
